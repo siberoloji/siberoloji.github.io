@@ -8,7 +8,7 @@ baseurl: ''
 url: ''
 twitter_username: portlinux
 github_username: siberoloji
-theme: minima
+# theme: minima
 gems:
 - jekyll-feed
 exclude:

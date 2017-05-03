@@ -1,13 +1,5 @@
 ---
 title: Speech-dispatcher sistemden nasıl kaldırılır?
-date: 2017-04-18 22:49
-categories: "k2"
-tags: ["linux komutları", "strings", "komut satırı"]
-permalink: "linux-strings-komutu-kulanimi"
-summary: "Bu yazıda, komut satırında ikili (binary) dosyalarda arama yapmada kolaylık sağlayan 'strings' komutu ele alınmıştır."
-image: "linux-strings-komutu-kulanimi.jpg"
-thumb: "linux-strings-komutu-kulanimi.jpg"
-author: "siberoloji"
 ---
 
 Linux sisteminizde yüklü olan ve kullanma ihtiyacı hissettiğiniz gereksiz servisleri kaldırmak akıllıca bir yaklaşımdır. Ekran okuyucuyu kullanmıyorsanız bu yazıda anlatılanları kullanarak sisteminizden kaldırabilirsiniz.
