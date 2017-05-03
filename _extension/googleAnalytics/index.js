@@ -1,13 +1,13 @@
 ---
-accountID: "UA-43820124-4"
-
-
+title: Index
+accountID: UA-61059215-13
 index: js
 post: js
 category: js
 tag: js
 other: js
 ---
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', '{{ page.accountID }}']);
 _gaq.push(['_trackPageview']);
