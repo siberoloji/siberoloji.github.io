@@ -22,4 +22,3 @@ speech-dispatcher olarak geçen ekran okuyucu, görme problemi olanlar için gel
 * speech-dispacther, ayarlarını ve bağımlılıklarını kaldırma
 
 `sudo apt-get purge --auto-remove speech-dispatcher`
-
