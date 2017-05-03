@@ -1,1 +1,0 @@
-<div id="toc" class="ui items divided link"></div>

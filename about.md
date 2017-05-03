@@ -1,5 +1,5 @@
 ---
-layout: layout121
+layout: page
 title: About
 permalink: /about/
 ---
