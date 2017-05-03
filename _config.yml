@@ -10,6 +10,7 @@ twitter_username: portlinux
 github_username: siberoloji
 # Google services
 google_analytics: UA-61059215-13
+disqus.shortname: siberoloji.1
 # theme: minima
 gems:
 - jekyll-feed
