@@ -1,0 +1,24 @@
+---
+---
+{
+    "posts": [
+        {% assign posts = site.posts %}
+        {% for post in posts %}
+            {% if forloop.index != 1 %},{% endif %}
+          {
+            "title": "{{ post.title | escape }}",
+            "url": "{{ post.url }}",
+            "image": "{{ post.image }}",
+            "tags": "{{ post.tags | join:',' }}",
+            "category": "{{ post.categories }}"
+          }
+        {% endfor %}
+    ],
+    "categories": {
+        {% assign posts = site.category %}
+        {% for post in posts %}
+        {% if forloop.index != 1 %},{% endif %}
+          "{{ post.code }}": "{{ post.title }}"
+        {% endfor %}
+    }
+}

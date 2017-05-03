@@ -6,13 +6,71 @@ description: 'Bu blog sitesinde Siber Konularda yazılar ve NASIL? dokümanları
 '
 baseurl: ''
 url: ''
-theme: minima
-twitter_username: jekyllrb
-github_username: jekyll
-markdown: kramdown
+twitter_username: portlinux
+github_username: siberoloji
 gems:
 - jekyll-feed
 exclude:
 - Gemfile
 - Gemfile.lock
 
+
+themeDir: theme/ubuntu-tr
+listDir: _theme/ubuntu-tr/layouts/list
+blockDir: _theme/ubuntu-tr/layouts/block
+layouts_dir:  ./_theme/ubuntu-tr/layouts
+assetsDir: assets/post/
+includes_dir: .
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
+
+timezone: Europe/Istanbul
+
+collections:
+  theme:
+    output: false
+  extension:
+    output: false
+  category:
+    output: true
+    permalink: /:title/
+  tag:
+    output: true
+    permalink: /etiket/:path
+  other:
+    output: true
+    permalink: /o/:title
+  root:
+    output: true
+    permalink: /:path
+
+defaults:
+  - scope:
+      path: ""
+      type: category
+    values:
+      type: category
+      layout: layout121
+  - scope:
+      path: ""
+      type: tag
+    values:
+      type: tag
+      layout: layout121
+  - scope:
+      path: ""
+      type: posts
+    values:
+      type: post
+      layout: layout121
+  - scope:
+      path: ""
+      type: other
+    values:
+      type: other
+      layout: layout121
