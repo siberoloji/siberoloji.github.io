@@ -2,7 +2,6 @@
 git add .
 echo Adding....
 git commit -m "update"
-echo Comminting...
+echo Commiting...
 git push -u origin master
-echo Pushed!
-done
+echo Pushed
