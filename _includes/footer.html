@@ -17,6 +17,7 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            <li><a href="{{ "/sitemap.xml" | relative_url }}">Sitemap</a></li>
         </ul>
       </div>
 
@@ -38,7 +39,7 @@
 
       <div class="footer-col footer-col-3">
         <p>{{ site.description | escape }}</p>
-        <p class="rss-subscribe"> <a href="{{ "/sitemap.xml" | relative_url }}">Sitemap</a></p>
+        
       </div>
     </div>
 
