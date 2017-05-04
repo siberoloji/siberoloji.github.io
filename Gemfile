@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -12,7 +17,7 @@ ruby RUBY_VERSION
 # gem "jekyll", "3.4.3"
 
 gem 'jekyll-admin', group: :jekyll_plugins
-gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
 
