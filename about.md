@@ -1,8 +1,11 @@
 ---
 layout: page
-title: About
+title: Hakkımda
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Bu blog sitesi github pages kullanılarak oluşturulmuştur. Sitede bulunan içerikleri kullanmakta özgürsünüz. 
+Tüm mesajlara cevap yazmak içn çok fazla boş vaktm olmasa da bana yazdıklarınızı okuduğumdan emin olabilirsiniz.
+İyi çalışmalar.
+siberoloji@protonmail.com
 
