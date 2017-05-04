@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Speech-dispatcher sistemden nasıl kaldırılır?
 comments: true
 ---
