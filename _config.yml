@@ -16,6 +16,7 @@ disqus.shortname: siberoloji-1
 theme: minima
 gems:
 - jekyll-feed
+- jekyll-sitemap
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -23,6 +24,4 @@ exclude:
 defaults:
   comments: true
   published: true
-  date: '`r Sys.Date()`'
-  tags: 
-  categories:
+

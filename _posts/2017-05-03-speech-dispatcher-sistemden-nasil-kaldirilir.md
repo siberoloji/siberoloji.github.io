@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: Speech-dispatcher sistemden nasıl kaldırılır?
 comments: true
+author: siberoloji
 ---
 
 Linux sisteminizde yüklü olan ve kullanma ihtiyacı hissettiğiniz gereksiz servisleri kaldırmak akıllıca bir yaklaşımdır. Ekran okuyucuyu kullanmıyorsanız bu yazıda anlatılanları kullanarak sisteminizden kaldırabilirsiniz.
