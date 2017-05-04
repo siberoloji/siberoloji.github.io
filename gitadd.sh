@@ -1,8 +1,8 @@
 #!/bin/bash
 git add .
-print "Adding...."
+echo Adding....
 git commit -m "update"
-print "Comminting..."
+echo Comminting...
 git push -u origin master
-print "Pushed"
+echo Pushed!
 done
