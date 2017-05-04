@@ -7,13 +7,13 @@ description: 'Bu blog sitesinde Siber Konularda yazılar ve NASIL? dokümanları
 
 '
 baseurl: ''
-url: ''
+url: 'https://siberoloji.github.io'
 twitter_username: portlinux
 github_username: siberoloji
 # Google services
 google_analytics: UA-61059215-13
 disqus.shortname: siberoloji-1
-theme: minima
+# theme: minima
 gems:
 - jekyll-feed
 - jekyll-sitemap
