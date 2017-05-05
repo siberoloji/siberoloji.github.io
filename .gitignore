@@ -2,5 +2,10 @@ _site/
 .sass-cache/
 .jekyll-metadata
 gitadd.sh
-_posts/documentation/
+_posts/2016-05-07-documentation.md
+_posts/2016-06-09-no-image.markdown
+_posts/2016-06-10-elements.markdown
+_posts/2016-06-12-usage.markdown
+_posts/2016-06-13-welcome-to-jekyll.markdown
+_posts/installation.markdown
 _posts/template.markdown
