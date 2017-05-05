@@ -6,6 +6,7 @@ categories: linux vnc server
 img: linux-howto.jpg
 published: true
 ---
+
 Bir Linux bilgisayarınız var ve onun ekranını başka bilgisayarlarla paylaşmak mı istiyorsunuz. Bunun için bilgisayarınıza masaüstü paylaşım sunucusu kurmanız gerekir. Bu yazıda, Linux Mint ve benzeri Ubuntu tabanlı dağıtımlarda VNC Server nasıl kurulur sorusuna bakacağız.
 
 * Varsayılan VNC server olan Vino'yu kaldıralım:
