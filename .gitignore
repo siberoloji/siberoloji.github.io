@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 .jekyll-metadata
 gitadd.sh
+_posts/documentation/
+_posts/template.markdown
