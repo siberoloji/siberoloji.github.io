@@ -7,4 +7,4 @@ permalink: /about/
 
 
 
-Bu sitede siber konularda yazılar yayınlanmatadır. İletişim için [Eposta](mailto: siberoloji@protonmail.com){: target="_blank"} gönderebilirsiniz.  
+Bu sitede siber konularda yazılar yayınlanmaktadır. 
