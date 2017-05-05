@@ -29,7 +29,7 @@ copyright:
 # Build settings
 markdown: kramdown
 permalink: /:title/
-paginate: 6
+paginate: 12
 paginate_path: /page:num/
 
 # Tracker
@@ -62,3 +62,4 @@ sass:
 
 # Ruby Gems jekyll-seo-tag
 gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap]
+
