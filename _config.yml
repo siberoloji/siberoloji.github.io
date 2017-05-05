@@ -22,8 +22,8 @@ default-image: webjeda-logo-big.jpg # If there is no featured image in a post th
 #footer
 built-by: webjeda
 copyright:
-   name: webjeda
-   link: 'http://blog.webjeda.com'
+   name: siberoloji
+   link: 'http://siberoloji.github.io'
 
 # Build settings
 markdown: kramdown
@@ -38,8 +38,15 @@ analytics: UA-61059215-13
 disqus-shortname: siberoloji-1
 
 #social
-twitter: http://twitter.com/@portlinux
-github: http://github.com/siberoloji
+twitter:
+  username: portlinux
+twitter: https://twitter.com/@portlinux
+github: https://github.com/siberoloji
+links:
+  - https://twitter.com/@portlinux
+  - https://github.com/siberoloji
+  - https://plus.google.com/u/0/106526272070375055367
+  - https://www.youtube.com/channel/UCalHdyzmz5W7L8BXQSUOXig
 
 #facebook like box
 fb-app-id: 348907038833482
