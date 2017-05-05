@@ -42,13 +42,13 @@ twitter: http://twitter.com/@portlinux
 github: http://github.com/siberoloji
 
 #facebook like box
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+fb-app-id: 348907038833482
+fb-page-url: https://www.facebook.com/Port-Linux-338514219818942/
+fb-page-title: Siber Konular
 
 # Sass style
 sass:
   style: compressed
 
-# Ruby Gems
+# Ruby Gems jekyll-seo-tag
 gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap]
