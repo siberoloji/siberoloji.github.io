@@ -8,6 +8,7 @@
 # Site settings
 title: Siber Blog 
 email: siberoloji@protonmail.com
+lang: tr_TR
 description: > # this means to ignore newlines until "baseurl:"
   Bu sitede siber konularda yazılar yayınlanmaktadır.
   
