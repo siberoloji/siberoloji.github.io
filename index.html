@@ -20,8 +20,10 @@ layout: default
                   <img width="100%" src="{{site.baseurl}}/images/webjeda-logo-big.jpg" alt="{{site.title}}">
                   {% endif %}
                   <div class="panel-body"><small>
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</small><span class="post-meta pull-right"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm pull-right mt10">Devamı...</a>
+                    {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</small>
+                    <p><span class="post-meta pull-left"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
+                    </p>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm pull-right mt10">Oku...</a>
                   </div>
                 </div>
             </div>
