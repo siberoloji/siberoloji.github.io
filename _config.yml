@@ -1,27 +1,54 @@
----
-title: Blog
-author: siberoloji
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Siber Blog 
 email: siberoloji@protonmail.com
-description: 'Bu blog sitesinde Siber Konularda yazılar ve NASIL? dokümanları  yayınlamaktadır.
+description: > # this means to ignore newlines until "baseurl:"
+  Bu sitede siber konularda yazılar yayınlanmaktadır.
+  
+  
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
+#sidebar
+default-image: webjeda-logo-big.jpg # If there is no featured image in a post then this image will be showed. Also on all pages this image will be showed. Use a 500x250 image.
 
-'
-baseurl: ''
-url: 'https://siberoloji.github.io'
-twitter_username: portlinux
-github_username: siberoloji
-# Google services
-google_analytics: UA-61059215-13
-disqus.shortname: siberoloji-1
-theme: minima
-gems:
-- jekyll-feed
-- jekyll-sitemap
-exclude:
-- Gemfile
-- Gemfile.lock
+#footer
+built-by: webjeda
+copyright:
+   name: webjeda
+   link: 'http://blog.webjeda.com'
 
-defaults:
-  comments: true
-  published: true
+# Build settings
+markdown: kramdown
+permalink: /:title/
+paginate: 6
+paginate_path: /page:num/
 
+# Tracker
+analytics: UA-61059215-13
+
+# Comments
+disqus-shortname: siberoloji-1
+
+#social
+twitter: http://twitter.com/@portlinux
+github: http://github.com/siberoloji
+
+#facebook like box
+fb-app-id: 549480635219583
+fb-page-url: https://www.facebook.com/webjeda/
+fb-page-title: webjeda
+
+# Sass style
+sass:
+  style: compressed
+
+# Ruby Gems
+gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap]

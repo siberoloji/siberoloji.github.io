@@ -223,8 +223,6 @@ DEPENDENCIES
   jekyll-admin
   jekyll-feed (~> 0.6)
   jekyll-sitemap
-  json
-  minima (~> 2.0)
   tzinfo-data
 
 RUBY VERSION
