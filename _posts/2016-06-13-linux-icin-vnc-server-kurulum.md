@@ -24,13 +24,13 @@ sudo apt-get -y install x11vnc
 
 ```sh
 sudo mkdir /etc/x11vnc
-```sh
+```
 
 * Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim:
 
 ```sh
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
-```sh
+```
 
 Bu adımda size yeni parolanızı sorulacaktır. Ekranda gösterien adımları uygulayın ve kaydedin.
 
@@ -38,7 +38,7 @@ Bu adımda size yeni parolanızı sorulacaktır. Ekranda gösterien adımları u
 
 ```sh
 sudo xed /lib/systemd/system/x11vnc.service
-```sh
+```
 
 * Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin. 
 
@@ -57,13 +57,13 @@ WantedBy=multi-user.target
 
 ```sh
 sudo systemctl daemon-reload
-```sh
+```
 
 * Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz:
 
 ```sh
 sudo systemctl enable x11vnc.service
-```sh
+```
 
 * Son adımda sunucuyu başlatalım:
 
