@@ -222,6 +222,7 @@ DEPENDENCIES
   github-pages (= 136)
   jekyll-admin
   jekyll-feed (~> 0.6)
+  jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
 
