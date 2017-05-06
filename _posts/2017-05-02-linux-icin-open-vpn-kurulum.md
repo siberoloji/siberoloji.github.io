@@ -29,6 +29,7 @@ sudo apt-get install openvpn
 ## OpenVPN Aktivasyon
 
 1.Yol: Hızlı Yöntem
+
 Aşağıdaki komutları kullanarak OpenVPN bağlantısını hızlı şekilde yapabilirsiniz.
 
 ```sh
@@ -44,7 +45,7 @@ Enter Auth Password: 5VHZEps
 
 ### 2.Yol: Açıklamalı Yaklaşım Yöntemi
 
-Bağlantıda bulunan adresten http://www.vpnbook.com/[OpenVPN Bundle] OpenVPN için olan anahtar setlerinden uygun olanı indirin. Aşağıdaki resimde görünen Server #1 kullanabilirsiniz.
+Bağlantıda bulunan adresten [OpenVPN Bundle](http://www.vpnbook.com) OpenVPN için olan anahtar setlerinden uygun olanı indirin. Aşağıdaki resimde görünen Server #1 kullanabilirsiniz.
 
 ![OpenVPN](/images/openvpn.png)
 
