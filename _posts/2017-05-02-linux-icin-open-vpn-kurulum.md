@@ -3,7 +3,7 @@ layout: post
 title: Linux için OpenVPN Kurulum
 date: 2017-05-02 18:43:56.000000000 +03:00
 type: post
-img: linux-howto.jpg
+img: cyber6.jpg
 published: true
 status: publish
 categories:
@@ -19,6 +19,7 @@ tags:
 Bu anlatımda, OpenVPN bağlantının nasıl kurulup aktif edileceğini ele alacağız. OpenVPN kullanımının 2 ayrı metodu bulunmakta. İlk metod, komut satırı ile aktivasyon. Diğeri ise Görsel arayüzden Network Manager kullanarak aktivasyon. Bu yazıda, daha kolay olduğu için komut satırı metodu açıklanacaktır. 
 
 ** OpenVPN Kurulum
+
 Aşağıdaki komut yardımıyla OpenVPN kuralım.
 
 ```sh
