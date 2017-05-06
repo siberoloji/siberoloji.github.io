@@ -18,7 +18,7 @@ tags:
 
 Bu anlatımda, OpenVPN bağlantının nasıl kurulup aktif edileceğini ele alacağız. OpenVPN kullanımının 2 ayrı metodu bulunmakta. İlk metod, komut satırı ile aktivasyon. Diğeri ise Görsel arayüzden Network Manager kullanarak aktivasyon. Bu yazıda, daha kolay olduğu için komut satırı metodu açıklanacaktır. 
 
-** OpenVPN Kurulum
+## OpenVPN Kurulum
 
 Aşağıdaki komut yardımıyla OpenVPN kuralım.
 
@@ -26,7 +26,7 @@ Aşağıdaki komut yardımıyla OpenVPN kuralım.
 sudo apt-get install openvpn
 ```
 
-** OpenVPN Aktivasyon
+## OpenVPN Aktivasyon
 
 1.Yol: Hızlı Yöntem
 Aşağıdaki komutları kullanarak OpenVPN bağlantısını hızlı şekilde yapabilirsiniz.
@@ -42,7 +42,7 @@ Enter Auth Username: vpnbook
 Enter Auth Password: 5VHZEps
 ```
 
-=== 2.Yol: Açıklamalı Yaklaşım Yöntemi
+### 2.Yol: Açıklamalı Yaklaşım Yöntemi
 
 Bağlantıda bulunan adresten http://www.vpnbook.com/[OpenVPN Bundle] OpenVPN için olan anahtar setlerinden uygun olanı indirin. Aşağıdaki resimde görünen Server #1 kullanabilirsiniz.
 
