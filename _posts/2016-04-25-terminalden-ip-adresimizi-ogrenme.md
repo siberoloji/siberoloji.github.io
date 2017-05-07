@@ -30,4 +30,4 @@ echo "Açık IP adresim: ${myip}"</pre>
 curl ipecho.net/plain
 curl ifconfig.co
 </pre>
-<p>[highlight bgcolor="#DDFF99" txtcolor="#000"]Linux kullanıcılarının işini kolaylaştıracak bildiğiniz komut örneklerini bizimle paylaşır mısınız?[/highlight] Yorum bölümünü kullanabilir veya twitter adresimizden bize iletebilirsiniz. Burada yayınlamaktan mutluluk duyarız.</p>
+<span class="label label-info">!!!</span>Linux kullanıcılarının işini kolaylaştıracak bildiğiniz komut örneklerini bizimle paylaşır mısınız? Yorum bölümünü kullanabilir veya twitter adresimizden bize iletebilirsiniz. Burada yayınlamaktan mutluluk duyarız.</p>
