@@ -13,11 +13,11 @@ tags:
 - sızma testi bilgi toplama
 
 ---
-Bu yazımızdan itibaren, Sızma Testinin 2.Safhası olan Bilgi Toplama işlemleri ve detaylarına başlangıç yapıyoruz. Aşağıda listesi bulunan konuları sırasıyla ayrı ayrı yazılarla açıklama yolunu takip edeceğiz. Genel safhaları bu <a href="https://siberoloji.github.com/arastirma/sizma-testi-safhalari-nelerdir/" target="_blank">yazımızdan</a> tekrar gözden geçirebilirsiniz.
-Doğru ve etkin olarak gerçekleştirilecek bilgi toplama işlemleri, ilerleyen safhalara girdi sağlayacaktır. Bu safhada anlatılacaklar, bilgi güvenliğini gerçekleştirmek isteyen tüm kurum ve firmalara da bilgiyi korumak adına almaları gereken tedbirleri gösterecektir. Bilgi toplama safhasının neleri kapsadığının ortaya konulması, her düzeyde yöneticiye hangi tedbirleri alması gerektiği konusunda ışık tutacaktır çünkü  testi yapan güvenlik ekibinin takip ettiği bilgi toplama işlemleri gerçek hayatta kötü niyetli yapıların da takip ettikleri işlemlere çok benzer. <a href="https://siberoloji.github.com/arastirma/siber-uzay-tanimi-aktorleri/" target="_blank">Siber Uzay tanımı ve Aktörleri</a> konulu yazıyı incelemenizi tavsiye ediyoruz.</p>
+Bu yazımızdan itibaren, Sızma Testinin 2.Safhası olan Bilgi Toplama işlemleri ve detaylarına başlangıç yapıyoruz. Aşağıda listesi bulunan konuları sırasıyla ayrı ayrı yazılarla açıklama yolunu takip edeceğiz. Genel safhaları bu <a href="https://siberoloji.github.io/arastirma/sizma-testi-safhalari-nelerdir/" target="_blank">yazımızdan</a> tekrar gözden geçirebilirsiniz.
+Doğru ve etkin olarak gerçekleştirilecek bilgi toplama işlemleri, ilerleyen safhalara girdi sağlayacaktır. Bu safhada anlatılacaklar, bilgi güvenliğini gerçekleştirmek isteyen tüm kurum ve firmalara da bilgiyi korumak adına almaları gereken tedbirleri gösterecektir. Bilgi toplama safhasının neleri kapsadığının ortaya konulması, her düzeyde yöneticiye hangi tedbirleri alması gerektiği konusunda ışık tutacaktır çünkü  testi yapan güvenlik ekibinin takip ettiği bilgi toplama işlemleri gerçek hayatta kötü niyetli yapıların da takip ettikleri işlemlere çok benzer. <a href="https://siberoloji.github.io/arastirma/siber-uzay-tanimi-aktorleri/" target="_blank">Siber Uzay tanımı ve Aktörleri</a> konulu yazıyı incelemenizi tavsiye ediyoruz.</p>
 <p>Konuyu aşağıdaki başlıklar altında araştıracağız. Yazının devamında Bilgi Toplama konusunda temel yaklaşımı açıkladık.</p>
 <h3>Temel Yaklaşım<br />
-Hedef Seçimi (<a href="https://siberoloji.github.com/arastirma/bilgi-toplama-islemleri-2-hedef-secimi/" target="_blank">bkz</a>.)<br />
+Hedef Seçimi (<a href="https://siberoloji.github.io/bilgi-toplama-islemleri-2-hedef-secimi/" target="_blank">bkz</a>.)<br />
 Açık Kaynak İstihbaratı<br />
 Örtülü Bilgi Toplama<br />
 Koruma Mekanizmalarını Tespit</h3>
