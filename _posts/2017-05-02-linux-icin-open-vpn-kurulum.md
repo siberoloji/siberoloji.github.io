@@ -38,7 +38,7 @@ mkdir vpn
 cd vpn
 wget https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro1.zip
 unzip VPNBook.com-OpenVPN-Euro1.zip
-sudo openvpn --auth-nocache--config vpnbook-euro1-tcp443.ovpn
+sudo openvpn --auth-nocache --config vpnbook-euro1-tcp443.ovpn
 Enter Auth Username: vpnbook
 Enter Auth Password: qm67kgm
 ```
@@ -55,7 +55,7 @@ Az önce çıkarttığınız dosyalar profil dosyalarıdır. Bunlardan bir tanes
 
 
 ```sh
-sudo openvpn --config vpnbook-euro1-tcp443.ovpn
+sudo openvpn --auth-nocache --config vpnbook-euro1-tcp443.ovpn
 ```
 
 Güncel kullanıcı adı ve parola, [VPN Book](https://www.vpnbook.com) adresinde bulunan OpenVPN sekmesinden kontrol edilmelidir.
