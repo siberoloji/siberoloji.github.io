@@ -30,7 +30,7 @@ sudo apt-get install openvpn
 
 1.Yol: Hızlı Yöntem
 
-Aşağıdaki komutları kullanarak OpenVPN bağlantısını hızlı şekilde yapabilirsiniz.
+Aşağıdaki komutları kullanarak OpenVPN bağlantısını hızlı şekilde yapabilirsiniz. Parola sık sık değişir. [VPN Book](https://www.vpnbook.com) bağlantıdan OpenVPN sekesinden kontrol etmelisiniz.
 
 ```sh
 cd
@@ -38,9 +38,9 @@ mkdir vpn
 cd vpn
 wget https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro1.zip
 unzip VPNBook.com-OpenVPN-Euro1.zip
-sudo openvpn --config vpnbook-euro1-tcp443.ovpn
+sudo openvpn --auth-nocache--config vpnbook-euro1-tcp443.ovpn
 Enter Auth Username: vpnbook
-Enter Auth Password: 5VHZEps
+Enter Auth Password: qm67kgm
 ```
 
 ### 2.Yol: Açıklamalı Yaklaşım Yöntemi
