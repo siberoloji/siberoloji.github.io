@@ -14,7 +14,7 @@ tags:
 - sızma testi safhaları
 
 ---
-<p>Sızma Testi hazırlıkları esnasında 1.Safha olan koordinasyon işlemlerinin genel yapısını bu <a href="https://www.siberoloji.com/arastirma/sizma-testi-safhalari-koordinasyon-1/">bağlantıdaki</a> yazımızda incelemiştik. Şimdi ise, yine toplantı esnasında görüşülecek konulardan bir tanesini detaylı olarak inceleyeceğiz.</p>
+<p>Sızma Testi hazırlıkları esnasında 1.Safha olan koordinasyon işlemlerinin genel yapısını bu <a href="https://siberoloji.github.io/arastirma/sizma-testi-safhalari-koordinasyon-1/">bağlantıdaki</a> yazımızda incelemiştik. Şimdi ise, yine toplantı esnasında görüşülecek konulardan bir tanesini detaylı olarak inceleyeceğiz.</p>
 <p>Bahsettiğimiz koordinasyon işlemleri içerisinde bulunan <strong>Kapsamın</strong> tespiti esnasında, hizmet alan firmanın amacını ortaya çıkarabilmek için hizmet veren güvenlik firması bazı sorular sorar. Aşağıda, yapılacak testin tipine göre sorulabilecek soruları açıklayacağız. Hizmet alacak firma, toplantı esnasında meydana gelebilecek belirsizliklerin önüne geçmek maksadıyla, bu sorulara verilecek cevaplar konusunda koordinasyon toplantısı öncesinde hazırlık yapmalıdır.</p>
 <h1 class="western">Ağ Testi</h1>
 <ol>
