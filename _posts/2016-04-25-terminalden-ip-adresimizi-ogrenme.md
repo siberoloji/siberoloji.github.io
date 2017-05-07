@@ -14,9 +14,10 @@ tags:
 - açık ip
 - ip öğrenme
 - myip
-
 ---
-<p>Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.</p>
+
+Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.
+
 <p>Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.</p>
 <pre class="lang:default decode:true" title="1.Yöntem">dig +short myip.opendns.com @resolver1.opendns.com</pre>
 <pre class="lang:default decode:true" title="2.Yöntem">dig TXT +short o-o.myaddr.l.google.com @ns1.google.com</pre>
@@ -30,4 +31,5 @@ echo "Açık IP adresim: ${myip}"</pre>
 curl ipecho.net/plain
 curl ifconfig.co
 </pre>
-<span class="label label-info">!!!</span>Linux kullanıcılarının işini kolaylaştıracak bildiğiniz komut örneklerini bizimle paylaşır mısınız? Yorum bölümünü kullanabilir veya twitter adresimizden bize iletebilirsiniz. Burada yayınlamaktan mutluluk duyarız.</p>
+<span class="label label-info">!!!</span> 
+Linux kullanıcılarının işini kolaylaştıracak bildiğiniz komut örneklerini bizimle paylaşır mısınız? Yorum bölümünü kullanabilir veya twitter adresimizden bize iletebilirsiniz. Burada yayınlamaktan mutluluk duyarız.
