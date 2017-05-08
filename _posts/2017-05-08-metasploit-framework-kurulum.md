@@ -41,9 +41,7 @@ Komutun sudo su bölümünden sonraki satırların hepsini tek seferde kopyalay�
 
 ```sh
 sudo su
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-  chmod 755 msfinstall && \
-  ./msfinstall
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \ chmod 755 msfinstall && \ ./msfinstall
 ```
 İşlem başladığında ekran aşağıdaki gibi devam edecektir.
 ```sh
