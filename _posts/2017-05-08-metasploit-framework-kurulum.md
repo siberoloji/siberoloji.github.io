@@ -4,7 +4,7 @@ title: Metasploit Framework Kurulum
 date: 2017-05-08 08:39:06.000000000 +02:00
 type: post
 img: cyber9.jpg
-published: true
+published: false
 status: publish
 categories:
 - Nasıl
