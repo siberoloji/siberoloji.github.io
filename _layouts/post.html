@@ -14,6 +14,8 @@ layout: default
           <div class="post-content" itemprop="articleBody">
             {{ content }}
             <hr>
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+            <hr>
           </div>
 
     </article>
@@ -34,7 +36,7 @@ layout: default
               {% endif %}
             </ul>
     </div>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  
 </div>
 
 {% include sidebar.html %}
