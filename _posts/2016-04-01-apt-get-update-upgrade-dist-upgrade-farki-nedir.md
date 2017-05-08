@@ -16,8 +16,9 @@ tags:
 - apt-get upgrade
 
 ---
-<p><span style="font-weight: 400;"><img class=" wp-image-2553 alignleft" src="{{ site.baseurl }}/assets/apt-get400200-1.jpg" alt="apt-get update" width="90" height="67" />Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em> apt-get update</em> ve benzeri komutları mutlaka kullanmışsınızdır. <em>apt-get update</em>, <em>apt-get upgrade</em> ve <em>apt-get dist-upgrade</em> komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.</span></p>
-<p><span style="font-weight: 400;">Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler </span><span style="font-weight: 400; font-family: 'courier new', courier, monospace;">/etc/apt/sources.list</span><span style="font-weight: 400;"> dosyasında <a href="http://askubuntu.com/questions/194651/why-use-apt-get-upgrade-instead-of-apt-get-dist-upgrade" target="_blank">tutulur</a>. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.</span></p>
+
+Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em> apt-get update</em> ve benzeri komutları mutlaka kullanmışsınızdır. <em>apt-get update</em>, <em>apt-get upgrade</em> ve <em>apt-get dist-upgrade</em> komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.</span></p>
+<p><span style="font-weight: 400;">Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler </span><span style="font-weight: 400; font-family: 'courier new', courier, monospace;">/etc/apt/sources.list</span><span style="font-weight: 400;"> dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.</span></p>
 <p><span style="font-weight: 400;">Sisteminizin, paketlerini güncellemek amacıyla hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.</span></p>
 <pre class="lang:default decode:true"># Komut
 cat /etc/apt/sources.list
