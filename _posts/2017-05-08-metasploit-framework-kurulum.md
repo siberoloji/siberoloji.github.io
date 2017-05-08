@@ -64,7 +64,7 @@ Get:1 http://downloads.metasploit.com/data/...[176 MB]
 ```
 Yukarıdaki komut, Rapid7 APT Deposunu sisteme ekleyecek ve gerekli paketleri yükleyecektir. 
 
-Kurulumdan sonra ```exit``` komutuyla root yetkilerinden normal kulanıcı yetkilerine dönün. Komut satırındaki # işareti $ şekline dönmelidir.
+Kurulumdan sonra ```exit``` komutuyla root yetkilerinden normal kullanıcı yetkilerine dönün. Komut satırındaki # işareti $ şekline dönmelidir.
 
 ```sh
 umut-X550JX umut # exit
@@ -134,7 +134,7 @@ Database started at /home/umut/.msf4/db
 msf > 
 ```
 
-Birkaç dakika içerisinde veritabanı exploit indeksini oluşturacaktır. Ardından ```search``` komuyula exploit aramasını daha hızlı yapabileceksiniz.
+Birkaç dakika içerisinde veri tabanı exploit indeksini oluşturacaktır. Ardından ```search``` komutuyla exploit aramasını daha hızlı yapabileceksiniz.
 
 Örneğin, samba ile ilgili bir exploit arayacaksanız aşağıdaki ```search samba```komutu işinize yarayabilir.
 ```sh
