@@ -36,13 +36,10 @@ Bu tür script kodları güvenli olmayan kaynaklardan indirmeniz tavsiye edilmez
 
 Aşağıdaki komut root yetkileriyle çalıştırılmalıdır.
 
-<span class="label label-warning">!!!</span> 
-Komutun sudo su bölümünden sonraki satırların hepsini tek seferde kopyalayıp terminale yapıştırın (Shift+Ctrl+V) ve enter ile devam edin:
-
 ```sh
 sudo su
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
-chmod 755 msfinstall && \
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod 755 msfinstall
 ./msfinstall
 ```
 İşlem başladığında ekran aşağıdaki gibi devam edecektir.
