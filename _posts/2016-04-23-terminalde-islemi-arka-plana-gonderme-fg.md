@@ -38,9 +38,9 @@ Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olab
 
 ```sh
 >~$ cd /tmp/
-/tmp$ echo 'Selam, ben 0 numaralı belgeyim' &gt;deneme1.txt
-/tmp$ echo 'Selam, ben 2 numaralı belgeyim' &gt;deneme2.txt
-/tmp$ echo 'Selam, ben 3 numaralı belgeyim' &gt;deneme3.txt
+/tmp$ echo 'Selam, ben 0 numaralı belgeyim' >deneme1.txt
+/tmp$ echo 'Selam, ben 2 numaralı belgeyim' >deneme2.txt
+/tmp$ echo 'Selam, ben 3 numaralı belgeyim' >deneme3.txt
 ```
 
 2.Adım: Nano editör ile belgeleri açıp Ctrl+z tuşları ile arka plana gönderiyoruz. Bu sayede belge kapatılmadan tekrar komut satırına ulaşmış oluyoruz.
