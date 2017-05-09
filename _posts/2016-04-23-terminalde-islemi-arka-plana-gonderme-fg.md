@@ -70,6 +70,7 @@ Komut satırına sadece fg yazarsanız en son kapatılan işleme geri dönersini
 ```sh
 >$ fg 1
 ```
-Arka planda çalışan tüm işlemleri görmek isterseniz ```jobs``` komutunu kullanabilirsiniz.
+
+*Düzenleme:(10.05.2017)* Arka planda çalışan tüm işlemleri görmek isterseniz ```jobs``` komutunu kullanabilirsiniz.
 
 Bu yazıda nano editör üzerinden konu anlatılsa da vi veya diğer editörlerle de aynı geri plana gönderme yapmanız mümkün.
