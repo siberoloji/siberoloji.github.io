@@ -40,20 +40,20 @@ disqus-shortname: siberoloji-1
 
 #social
 twitter:
-  username: portlinux
-twitter: https://twitter.com/@portlinux
+  username: siberolojii
+twitter: https://twitter.com/@siberolojii
 github: https://github.com/siberoloji
 youtube: https://www.youtube.com/channel/UCalHdyzmz5W7L8BXQSUOXig
-facebook: https://www.facebook.com/Port-Linux-338514219818942/
+facebook: https://www.facebook.com/Siber-Konular-338514219818942/
 links:
-  - https://twitter.com/@portlinux
+  - https://twitter.com/@siberolojii
   - https://github.com/siberoloji
   - https://plus.google.com/u/0/106526272070375055367
   - https://www.youtube.com/channel/UCalHdyzmz5W7L8BXQSUOXig
 
 #facebook like box
 fb-app-id: 348907038833482
-fb-page-url: https://www.facebook.com/Port-Linux-338514219818942/
+fb-page-url: https://www.facebook.com/Siber-Konular-338514219818942/
 fb-page-title: Siber Konular
 
 # Sass style

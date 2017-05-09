@@ -39,9 +39,9 @@ Aşağıdaki komut root yetkileriyle çalıştırılmalıdır.
 ```sh
 cd
 sudo su
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-chmod 755 msfinstall
-./msfinstall
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
 ```
 İşlem başladığında ekran aşağıdaki gibi devam edecektir.
 ```sh
