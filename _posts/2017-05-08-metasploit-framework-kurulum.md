@@ -4,7 +4,7 @@ title: Metasploit Framework Kurulum
 date: 2017-05-08 08:39:06.000000000 +02:00
 type: post
 img: cyber9.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -72,7 +72,7 @@ umut@umut-X550JX ~ $
 
 ### İlk çalıştırma:
 
-Komut satırında ```msfconsole``` komutunu çalıştırın ve veri tabanı oluşturmak için bir kaç soruya cevap verin:
+Komut satırında ```msfconsole``` komutunu çalıştırın ve veri tabanı oluşturun:
 **Would you like to use and setup a new database (recommended)?** sorusunu ```yes``` olarak cevaplayın.
 
 ```sh
