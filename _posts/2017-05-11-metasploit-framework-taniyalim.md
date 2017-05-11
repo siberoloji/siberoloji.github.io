@@ -138,3 +138,7 @@ msf > loadpath /home/umut/.msf4/modules
 Loaded 0 modules:
 msf > 
 ```
+
+# Video Anlatım
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5B8EftRWxGY" frameborder="0" allowfullscreen></iframe>
