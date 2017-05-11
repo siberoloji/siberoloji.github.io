@@ -49,7 +49,7 @@ Metasploit Pro -- type 'go_pro' to launch it now.
 
 # check
 
-Bu komutu her exploit desteklemese de ne işe yaradığını açıklayalım. Bir modül seçtiniz ve hedef sistemde uygulamadan önce işe yarayıp yaramayacağını merak ediyorsunuz. Gerekli ayarları ```set`` komutuyla yaptıktan sonra ```check``` komutuyla ön test yapabilirsiniz. 
+Bu komutu her exploit desteklemese de ne işe yaradığını açıklayalım. Bir modül seçtiniz ve hedef sistemde uygulamadan önce işe yarayıp yaramayacağını merak ediyorsunuz. Gerekli ayarları ```set``` komutuyla yaptıktan sonra ```check``` komutuyla ön test yapabilirsiniz. 
 ```sh
 msf exploit(ms08_067_netapi) > show options
 
