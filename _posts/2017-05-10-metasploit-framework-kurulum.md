@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Metasploit Framework Kurulum
-date: 2017-05-08 08:39:06.000000000 +02:00
+date: 2017-05-10 08:39:06.000000000 +02:00
 type: post
 img: cyber9.jpg
 published: true
@@ -20,6 +20,7 @@ Metasploit Framework sızma testlerinde ve güvenlik testlerinde kullanılan bir
 Metasploit Framework Kali vb. dağıtımlarda kurulu olarak gelmektedir. Kali kullanmıyor olsanız bile kendi Linux dağıtımınıza kurulum yapabilisiniz. Bu yazıda Community sürümü olan ve komut satırından çalışan ücretsiz sürümü kurmayı inceleyeceğiz. Anlatımda kullanılan komutların Ubuntu temelli tüm dağıtımlarda çalışacağı tahmin edilmektedir. Biz testlerimizi ve denemeyi Linux Mint 18.1 Cinnamon Linux dağıtımında gerçekleştirdik.
 
 ### Linux Mint Güncelleyelim:
+
 Aşağıdaki komutlar ile Linux güncelenecek ve tekrar başlatılacaktır.
 
 ```sh
