@@ -3,7 +3,7 @@ layout: post
 title: Metasploit Framework Kurulum
 date: 2017-05-10 08:39:06.000000000 +02:00
 type: post
-img: cyber9.jpg
+img: metasploit.jpg
 published: true
 status: publish
 categories:
