@@ -157,7 +157,7 @@ msfconsole'dan çıkmaya yarar.
 ```sh
 msf exploit(ms10_061_spoolss) > exit
 root@kali:~#
-```sh
+```
 
 # help
 
@@ -302,7 +302,7 @@ msf > load
 Usage: load <path> [var=val var=val ...]
 ```
 
-```load``` komutuyla eklentinin tam yolunu vermezseniz, öncelikle kullanıcı klasörlerine ```~/.msf4/plugins``` bakılır. Orada bulunamaz ise eklenti için metasploit-framework ana klasörlerine ```/usr/share/metasploit-framework/plugins```
+```load``` komutuyla eklentinin tam yolunu vermezseniz, öncelikle kullanıcı klasörlerine ```~/.msf4/plugins``` bakılır. Orada bulunamaz ise eklenti için metasploit-framework ana klasörlerine ```/usr/share/metasploit-framework/plugins``` bakılır.
 
 ```sh
 msf > load pcap_log
