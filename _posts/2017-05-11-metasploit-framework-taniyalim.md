@@ -34,7 +34,11 @@ Rex kütüphanesi üzerine bina edilen Core katmanı, dışarıdan modül ve ekl
 
 ## Msf::Base
 
-Bu katman, kullanıcının gördüğü kısımdır. Arayüz ve komutların girişinin yapıldığı kısımlar burada bulunur. 
+Bu katman, temel API lerin daha da basitleştirildiği kısımdır.
+
+## Msf::GUI 
+
+Kullanıcının gördüğü kısımdır. Arayüz ve komutların girişinin yapıldığı kısımlar burada bulunur. 
 
 # Dosya sistemi 
 
