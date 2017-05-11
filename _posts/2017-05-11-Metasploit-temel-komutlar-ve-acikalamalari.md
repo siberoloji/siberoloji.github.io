@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Metasploit Framework Temel Komutlar
-date: 2017-05-11 08:39:06.000000000 +02:00
+date: 2017-05-11 08:40:06.000000000 +02:00
 type: post
 img: metasploit.jpg
 published: true
