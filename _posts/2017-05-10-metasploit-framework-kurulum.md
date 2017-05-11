@@ -174,3 +174,7 @@ Matching Modules
 Metasploit Framework çok sık güncelleme almaktadır. Paket deposu sisteminize eklendiğinden ```apt update``` ile veya msfconsole içerisinden ```msfupdate``` komutu ile güncelleyebilirsiniz. 
 
 Bu yazı hakkında ve uygulamadan kaynaklanan problemlerinizi buradan bizimle paylaşabilirsiniz.
+
+## Video Anlatım
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FZvrukt9B-c?list=PL2Q2UedYW5s1jrKxaQPmAHsboQFXHDEal" frameborder="0" allowfullscreen></iframe>
