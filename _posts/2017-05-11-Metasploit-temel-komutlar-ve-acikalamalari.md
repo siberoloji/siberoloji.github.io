@@ -506,7 +506,7 @@ Matching Modules
    payload/aix/ppc/shell_find_port                        normal  AIX Command Shell, Find Port Inline
    payload/aix/ppc/shell_interact                         normal  AIX execve shell for inetd
 ...snip...
-```sh
+```
 
 ## type
 
