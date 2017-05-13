@@ -15,5 +15,5 @@ permalink: /search/
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search queryParameterName="searchString"></gcse:search>
+<gcse:search></gcse:search>
 </div>
