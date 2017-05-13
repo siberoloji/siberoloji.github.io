@@ -12,18 +12,26 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework payload
-- msf payload türleri
-excerpt: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
+- Metasploit Framework database
+- Metasploit Framework database kullanım
+
+excerpt: Metasploit Framework içerisinde, Postgresql desteğiyle sunulan veri tabanı özelliği çok kullanışlıdır ve yapılacak tarama sonuçlarını bir yerde kayıt altına alır. Bulunan sonuçların kayıt altına alınması, sonraki adımlarda kullanılacak IP adresleri, Port numaraları veya Hash Dump vb. bilgilerin exploitlere aktarılmasına kolaylık sağlar.
 ---
 
-Setup our Metasploit Database
+Metasploit Framework içerisinde, Postgresql desteğiyle sunulan veri tabanı özelliği çok kullanışlıdır ve yapılacak tarama sonuçlarını bir yerde kayıt altına alır. Bulunan sonuçların kayıt altına alınması, sonraki adımlarda kullanılacak IP adresleri, Port numaraları veya Hash Dump vb. bilgilerin exploitlere aktarılmasına kolaylık sağlar.
 
-In Kali, you will need to start up the postgresql server before using the database.
+Aşağıdaki anlatımda, Kali işletim sistemi temel alınmıştır ve komutlar Kali'de denemiştir.
 
+# Metasploit Veritabanını Ayarlama
+
+Öncelikle başlamaış ise postgresql başlatılmalıdır. 
+
+```sh
 root@kali:~# systemctl start postgresql
-After starting postgresql you need to create and initialize the msf database with msfdb init
+```
+Postgresql başladıktan sonra Veri tabanı ilk kullanıma hazırlanmalıdır. Bunun için ```msfdb init`` scriptini kullanabiliriz.
 
+```sh
 root@kali:~# msfdb init
 Creating database user 'msf'
 Enter password for new role: 
@@ -31,18 +39,24 @@ Enter it again:
 Creating databases 'msf' and 'msf_test'
 Creating configuration file in /usr/share/metasploit-framework/config/database.yml
 Creating initial database schema
- 
+``` 
 
-Using Workspaces in Metasploit
+# Workspace Kullanımı
 
-When we load up msfconsole, and run ‘db_status‘, we can confirm that Metasploit is successfully connected to the database.
+msfconsole başladığında öncelikle ```db_status``` komutuyla veri tabanı bağlantısını kontrol edelim. 
 
+```sh
 msf > db_status 
 [*] postgresql connected to msf
-Seeing this capability is a meant to keep track of our activities and scans in order. It’s imperative we start off on the right foot. Once connected to the database, we can start organizing our different movements by using what are called ‘workspaces’. This gives us the ability to save different scans from different locations/networks/subnets for example.
+```
 
-Issuing the ‘workspace‘ command from the msfconsole, will display the currently selected workspaces. The ‘default‘ workspace is selected when connecting to the database, which is represented by the * beside its name.
+Veri tabanı bağlantısını sağladıktan sonra yapacağımız işleri **Workspace** olarak ifade edilen klasörlerde kayıt altına alarak organize edebiliriz. Normal bilgisayarlarda kayıtlarımızı nasıl klasörlerde konularına göre kayıt altına alıyorsak, msfconsole içinde aynı yaklaşım geçerlidir. 
 
+## Workspace Listeleme
+
+Basitçe hiçbir parametre vermeden ```workspace``` komutunu verdiğinizde, mevcut kayıtlı çalışma klasörleri listelenir. O an için aktif olan workspace başında * işaretiyle belirtilir.
+
+```sh
 msf > workspace
 * default
   msfu
@@ -50,9 +64,33 @@ msf > workspace
   lab2
   lab3
   lab4
-msf > 
-As we can see this can be quite handy when it comes to keeping things ‘neat’. Let’s change the current workspace to ‘msfu’.
+msf >
+```
+## Workspace Oluşturma ve Silme
 
+Yeni bir Worksace oluşturmak için ```-a``` parametresi, silme için ise ```-d``` parametresi kullanılır. Parametrenin ardından oluşturmak veya silmek istediğimiz Workspace adını yazmanız yeterlidir.
+
+### lab4 workspace oluşturulur
+
+```sh
+msf > workspace -a lab4
+[*] Added workspace: lab4
+msf > 
+```
+
+### lab4 workspace silinir
+
+```sh
+msf > workspace -d lab4 
+[*] Deleted workspace: lab4
+msf > workspace
+```
+
+### workspace değiştirme
+
+```workspace``` komutuyla mevcut klasörleri listeledikten sonra aktif olan dışında başka bir klasöre geçmek istersek, aşağıdaki gibi ```workspace``` komutunun ardından geçmek istediğimiz klasörün adını yazmamız yeterlidir. 
+
+```sh
 msf > workspace msfu
 [*] Workspace: msfu
 msf > workspace
@@ -62,20 +100,14 @@ msf > workspace
   lab2
   lab3
   lab4
-msf > 
-Creating and deleting a workspace one simply uses the ‘-a‘ or ‘-d‘ followed by the name at the msfconsole prompt.
+msf >
+```
 
-msf > workspace -a lab4
-[*] Added workspace: lab4
-msf > 
+### Workspace Yardım
 
+Detaylı yardım için ```-h``` parametresini kullanabilirsiniz.
 
-msf > workspace -d lab4 
-[*] Deleted workspace: lab4
-msf > workspace
-It’s that simple, using the same command and adding the ‘-h‘ switch will provide us with the command’s other capabilities.
-
- 
+```sh
 msf > workspace -h
 Usage:
     workspace                  List workspaces
@@ -88,10 +120,13 @@ Usage:
     workspace -h               Show this help information
 
 msf > 
-From now on any scan or imports from 3rd party applications will be saved into this workspace.
+```
 
-Now that we are connected to our database and workspace setup, lets look at populating it with some data. First we’ll look at the different ‘db_’ commands available to use using the ‘help’ command from the msfconsole.
+Artık yapacağınız taramalarda elde edeceğiniz sonuçlar aktif olan workspace içerisinde kayıt edilecektir. Şimdi, sonraki adım olarak veri tabanı ile ilgili kullanabileceğimiz diğer komutlara bakalım.
 
+Öncelikle, msfconsole veri tabanı ile ilgili hangi komutları bize sağlıyor ona bakalım. ```msfconsole``` içerisinde ```help``` komutu verdiğimizde veri tabanı komutları ayrı bir başlıkta aşağıdaki gibi bize gösterilir.
+
+```sh
 msf > help
 ...snip...
 
@@ -114,11 +149,19 @@ Database Backend Commands
     services          List all services in the database
     vulns             List all vulnerabilities in the database
     workspace         Switch between database workspaces
+```
 
-Importing and Scanning
+# Veri Tabanı Kullanımı
 
-There are several ways we can do this, from scanning a host or network directly from the console, or importing a file from an earlier scan. Let’s start by importing an nmap scan of the ‘metasploitable 2’ host. This is done using the ‘db_import‘ followed by the path to our file.
+Yukarıda, ```help``` komutuyla görüntülediğimiz komutları detaylı örnekleriyle görelim.
 
+## db_import
+
+Bu komut, msfconsole dışında nmap ile yaptığınız tarama sonuçlarını içeri aktarmamızı sağlar. ```nmap`` taramasının çıktısını **xml** formatında kaydetmiş olmalısınız. 
+
+Aşağıdaki örnekte, ```/root/msfu/nmapScan``` isimli dosya, msfconsole içerisine aktarılmaktadır. Tarama dosyasında bulunan IP adresleri, portlar, servisler ve diğer tüm sonuç bilgileri artık içeri aktarılmış olacaktır. ```db_import``` komutunun ardından verilen ```hosts``` komutuyla kontrol yapılmıştır.
+
+```sh
 msf >  db_import /root/msfu/nmapScan 
 [*] Importing 'Nmap XML' data
 [*] Import: Parsing with 'Rex::Parser::NmapXMLStreamParser'
@@ -134,8 +177,13 @@ address         mac                name  os_name  os_flavor  os_sp  purpose  inf
 172.16.194.172  00:0C:29:D1:62:80        Linux    Ubuntu            server         
 
 msf > 
-Once completed we can confirm the import by issuing the ‘hosts’ command. This will display all the hosts stored in our current workspace. We can also scan a host directly from the console using the ‘db_nmap’ command. Scan results will be saved in our current database. The command works the same way as the command line version of ‘nmap’
+```
 
+## db_nmap
+
+nmap tarama sonuçlarını dışarıdan içeri aktarabileceğiniz gibi ```msfconsole``` sayesinde, içeride de dışarı çıkmadan nmap taraması yapabilirsiniz. Bunun için ```db_nmap``` komutu kullanılmaktadır. ```db_nmap``` ile yapacağınız taramalar, otomatik olarak aktif olan ```workspace``` içine kayıt edilecetir. 
+
+```sh
 msf > db_nmap -A 172.16.194.134
 [*] Nmap: Starting Nmap 5.51SVN ( http://nmap.org ) at 2012-06-18 12:36 EDT
 [*] Nmap: Nmap scan report for 172.16.194.134
@@ -164,16 +212,23 @@ address         mac                name  os_name            os_flavor  os_sp  pu
 172.16.194.172  00:0C:29:D1:62:80        Linux              Ubuntu            server         
 
 msf > 
-Backing Up Our Data
+```
 
-Exporting our data outside the Metasploit environment is very simple. Using the ‘db_export‘ command all our gathered information can be saved in a XML file. This format can be easily used and manipulated later for reporting purposes. The command has 2 outputs, the ‘xml‘ format which will export all of the information currently stored in our active workspace, and the ‘pwdump‘ format which exports everything related to used/gathered credentials.
+## db_export
 
+Çalıştığınız bir projede yaptığınız tarama sonuçlarını dışarı aktarmak ve raporlarınızda kullanmak isteyebilirsiniz. Bunun için ```db_export``` komutunu bulunmaktadır. ```db_export``` komutuna ```-f``` parametresiyle beraber dosya ismini verdiğinizde, istediğiniz dosya belirttiğiniz dış klasöre aktarılır. Dışarı aktarımda iki farklı dosya çeşidi bulunur. ```xml``` formatında tüm bilgiler veya ```pwdump``` formatında kullanıcı adı ve parola vb. bilgiler.
+
+Öncelikle yardım bilgisini görelim;
+```sh
 msf >  db_export -h
 Usage:
     db_export -f  [-a] [filename]
     Format can be one of: xml, pwdump
 [-] No output file was specified
+```
+Şimdi aktif olarak bulunduğumuz workspace içindeki bilgileri ```xml``` formatında dışa aktaralım.
 
+```sh
 msf > db_export -f xml /root/msfu/Exported.xml
 [*] Starting export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
 [*]     >> Starting export of report
@@ -187,14 +242,13 @@ msf > db_export -f xml /root/msfu/Exported.xml
 [*]     >> Starting export of web vulns
 [*]     >> Finished export of report
 [*] Finished export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
+```
 
+## hosts
 
-Using the Hosts Command
+```hosts``` komutu, o ana kadar yapılan taramaların sonucunda bulunan IP bilgileri, PORT biligileri vb. bilgileri bize gösterir. Öncelikle, ```hosts``` komutunun yardım bilgilerini görüntüleyelim.
 
-Now that we can import and export information to and from our database, let us look at how we can use this information within the msfconsole. Many commands are available to search for specific information stored in our database. Hosts names, address, discovered services etc. We can even use the resulting data to populate module settings such as RHOSTS. We’ll look how this is done a bit later.
-
-The ‘hosts‘ command was used earlier to confirm the presence of data in our database. Let’s look at the different options available and see how we use it to provide us with quick and useful information. Issuing the command with ‘-h’ will display the help menu.
-
+```sh
 msf > hosts -h
 Usage: hosts [ options ] [addr1 addr2 ...]
 
@@ -212,11 +266,17 @@ OPTIONS:
   -n,--name         Change the name of a host
   -m,--comment      Change the comment of a host
   -t,--tag          Add or specify a tag to a range of hosts
+```
 
-Available columns: address, arch, comm, comments, created_at, cred_count, detected_arch, exploit_attempt_count, host_detail_count, info, mac, name, note_count, os_family, os_flavor, os_lang, os_name, os_sp, purpose, scope, service_count, state, updated_at, virtual_host, vuln_count, tags
+### Hosts içinde istenen sütunları görüntüleme
 
-We’ll start by asking the ‘hosts‘ command to display only the IP address and OS type using the ‘-c‘ switch.
+```hosts``` komutunu tek başına kullandığınızda kayıtlı bilgiler, aşağıda listesi bulunan sütunlarda organize edilerek gösterilir.
 
+**Kullanılabilir Sütunlar:** address, arch, comm, comments, created_at, cred_count, detected_arch, exploit_attempt_count, host_detail_count, info, mac, name, note_count, os_family, os_flavor, os_lang, os_name, os_sp, purpose, scope, service_count, state, updated_at, virtual_host, vuln_count, tags
+
+Şimdi, sadece bilgilerini kullanacağımız sütunları ve bilgileri görünteleyelim. Bunun için ```-c``` parametresini ve istediğimiz sütun adlarını yazmalyız. Aşağıdaki örnekte, address, os_flavor sütunları ve bilgileri gösterilsin istenmiştir.
+
+```sh
 msf > hosts -c address,os_flavor
 
 Hosts
@@ -226,11 +286,14 @@ address         os_flavor
 -------         ---------
 172.16.194.134  XP
 172.16.194.172  Ubuntu
+```
 
-Setting up Modules
+# Hosts Bilgilerini Modüllerde Kullanma
 
-Another interesting feature available to us, it the ability to search all our entries for something specific. Imagine if we wished to find only the Linux based machines from our scan. For this we’d use the ‘-S‘ option. This option can be combined with our previous example and help fine tune our results.
 
+Yaptığımız taramalarda elde edilen bilgilerin tutulduğu hosts listesinden bir takım bilgileri, kullanmak istediğimiz modüllere aktarabiliriz. Yukarıda kullandığımız ```hosts -c address,os_flavor``` komutuyla istediğimiz sütunları görüntülemiştik. Şimdi bu listede arama yapalım ve sonuçların içerisinde "Ubuntu" geçen satırı arayalım.
+
+```sh
 msf > hosts -c address,os_flavor -S Linux
 
 Hosts
@@ -241,9 +304,11 @@ address         os_flavor
 172.16.194.172  Ubuntu
 
 msf >
+```
 
-Using the output of our previous example, we’ll feed that into the ‘tcp’ scan auxiliary module.
+İşte kullanacağımız IP Adresini bulduk. Şimdi bir modül içerisine girelim ve modülün ihtiyacı olan değişkenlere bakalım. 
 
+```sh
 msf  auxiliary(tcp) > show options
 
 Module options (auxiliary/scanner/portscan/tcp):
@@ -259,9 +324,13 @@ Module options (auxiliary/scanner/portscan/tcp):
    SNAPLEN      65535            yes       The number of bytes to capture
    THREADS      1                yes       The number of concurrent threads
    TIMEOUT      1000             yes       The socket connect timeout in milliseconds
+```
 
-We can see by default, nothing is set in ‘RHOSTS‘, we’ll add the ‘-R‘ switch to the hosts command and run the module. Hopefully it will run and scan our target without any problems.
+Yukarıda çıktıda, RHOSTS değişken boş olarak görülmektedir. Buraya Remote Host IP adresinin girilmesi gerekiyor. Normalde işlemi ```set RHOSTS 172.16.194.172``` komutuyla girebilirsiniz. Ancak bunu birden çok modül içinde ayarlamak, her seferinde hata yapa ihtimalinizi de arttıracaktır.
 
+Bu durumda ```hosts -c address,os_flavor -S Linux``` komutuyla yaptığımız arama ile bulduğumuz IP adresini, sonuna ```-R``` parametresini ekleyerek doğrudan içinde bulunduğumuz modüle aktarabiliriz. Aşağıdaki örnekte görüldüğü gibi "Ubuntu" IP adresi direkt olarak ```tcp``` modülüne aktarılmıştır.
+
+```sh
 msf  auxiliary(tcp) > hosts -c address,os_flavor -S Linux -R
 
 Hosts
@@ -294,9 +363,11 @@ msf  auxiliary(tcp) > run
 [*] 172.16.194.172:8787 - TCP OPEN
 [*] Scanned 1 of 1 hosts (100% complete)
 [*] Auxiliary module execution completed
+```
 
-Of course this also works if our results contain more than one address.
+hosts listesinde arama ile filtre yapmadan, mevcut bulunan tüm IP adreslerini de aktif olan modüle aktarabiliriz. Bu durumda ```hosts``` komutuna hiçbir arama ifadesi girmeden sadece ```-R``` parametresi vermeniz yeterli olacaktır.
 
+```sh
 msf  auxiliary(tcp) > hosts -R
 
 Hosts
@@ -324,14 +395,19 @@ Module options (auxiliary/scanner/portscan/tcp):
    SNAPLEN      65535                          yes       The number of bytes to capture
    THREADS      1                              yes       The number of concurrent threads
    TIMEOUT      1000                           yes       The socket connect timeout in milliseconds
+```
 
-You can see how useful this may be if our database contained hundreds of entries. We could search for Windows machines only, then set the RHOSTS option for the smb_version auxiliary module very quickly. The set RHOSTS switch is available in almost all of the commands that interact with the database.
+Yukarıda gördüğünüz gibi tüm IP adresleri RHOSTS içine aktarılmıştır. Birkaç IP adresini elle girmek zaman alıcı olmasa da yüzlerce IP adresinde bir modülü çalıştırmak istediğinizde bu özelliğe mutlaka ihtiyaç duyacaksınız. 
 
-Services
+Örneğin, bir ağda tarama yaptınız ve 112 adet aktif olarak açık cihaz ve IP adresi buldunuz. Bunların hepsine **smb_version** modülünü denemek istiyorsunuz. İşte bu noktada ```hosts -R``` komutu işleri çok kolaylaştıracaktır.
 
-Another way to search the database is by using the ‘services‘ command. Like the previous examples, we can extract very specific information with little effort.
+## Services
 
- 
+```hosts``` komutu taramalarda bulunan IP ve diğer bilgileri verirken, ```services``` komutu da bu IP adreslerinde çalışan ve keşfedilen servisleri listeler. Tabii ki ```db_nmap``` komutu ile servis ve versiyon taraması yapmış olmanız gerekmektedir. 
+
+Öncelikle yardım bilgilerini görüntüleyelim.
+
+```sh 
 msf > services -h
 
 Usage: services [-h] [-u] [-a] [-r ] [-p >port1,port2>] [-s >name1,name2>] [-o ] [addr1 addr2 ...]
@@ -347,11 +423,17 @@ Usage: services [-h] [-u] [-a] [-r ] [-p >port1,port2>] [-s >name1,name2>] [-o ]
   -o          Send output to a file in csv format
   -R,--rhosts       Set RHOSTS from the results of the search
   -S,--search       Search string to filter by
+```
 
-Available columns: created_at, info, name, port, proto, state, updated_at
+```services``` komutu, bilgileri aşağıdaki sütunlarda organize ederek bize gösterir.
 
-Much in the same way as the hosts command, we can specify which fields to be displayed. Coupled with the ‘-S‘ switch, we can also search for a service containing a particular string.
+**Kullanılabilir sütunlar:** created_at, info, name, port, proto, state, updated_at
 
+```hosts``` komutunda nasıl arama yapıyorsak ```services``` içinde ```-c``` parametresi ile sütunlarda ve ```-S``` parameteresi ile de belirli bir ifadeyi arayabiliriz.
+
+### Belirli Sütunlarda Arama
+
+```sh
 msf > services -c name,info 172.16.194.134
 
 Services
@@ -365,9 +447,11 @@ host            name          info
 172.16.194.134  http          Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1 
 172.16.194.134  microsoft-ds  Microsoft Windows XP microsoft-ds 
 172.16.194.134  mysql 
+```
 
-Here we are searching all hosts contained in our database with a service name containing the string ‘http’.
+### Belirli Sütunlarda Özel Bir İfadeyi Arama
 
+```sh
 msf > services -c name,info -S http
 
 Services
@@ -379,9 +463,11 @@ host            name  info
 172.16.194.134  http  Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1 
 172.16.194.172  http  Apache httpd 2.2.8 (Ubuntu) DAV/2 
 172.16.194.172  http  Apache Tomcat/Coyote JSP engine 1.1 
+```
 
-The combinations for searching are enormous. We can use specific ports, or port ranges. Full or partial service name when using the ‘-s’ or ‘-S’ switches. For all hosts or just a select few… The list goes on and on. Here are a few examples, but you may need to experiment with these features in order to get what you want and need out your searches.
+### Belirli Bir Portun Bulunduğu Sütunları Arama
 
+```sh
 msf > services -c info,name -p 445
 
 Services
@@ -391,7 +477,11 @@ host            info                                  name
 ----            ----                                  ----
 172.16.194.134  Microsoft Windows XP microsoft-ds     microsoft-ds
 172.16.194.172  Samba smbd 3.X workgroup: WORKGROUP   netbios-ssn
+```
 
+### Belirli Bir Port Aralığında İstenen Sütunları Arama
+
+```sh
 msf > services -c port,proto,state -p 70-81
 Services
 ========
@@ -410,6 +500,13 @@ host           port proto state
 172.16.194.172 79   tcp   closed
 172.16.194.172 80   tcp   open
 172.16.194.172 81   tcp  closed
+```
+
+### Belirli Bir Servisin ve IP Adresinin Port Bilgisini Arama
+
+Yukarıda bir kaç örnekte ```-S``` büyük S ile belli bir ifadeyi aratmıştık. ```-s``` parametreside özellikle servisler listesinde arama yapmayı kolaylaştırır.
+
+```sh
 msf > services -s http -c port 172.16.194.134
 Services
 ========
@@ -417,17 +514,26 @@ host           port
 ----           ----
 172.16.194.134 80
 172.16.194.134 443
+```
+
+### Servisler İçinde Bir ifadeyi arama
+
+```sh
 msf > services -S Unr
+
 Services
 ========
 host           port proto name state info
 ----           ---- ----- ---- ----- ----
 172.16.194.172 6667 tcp   irc  open  Unreal ircd
 172.16.194.172 6697 tcp   irc  open  Unreal ircd
-CSV Export
+```
 
-Both the hosts and services commands give us a means of saving our query results into a file. The file format is a comma separated value, or CSV. Followed by the ‘-o’ with path and filename, the information that has been displayed on the screen at this point will now be saved to disk.
+## CSV Export
 
+Hem ```hosts``` hem de ```services``` listelerinde kayıtlı bulunan bilgilerde yaptığımız arama sonuçlarını ekrana yazdırmak ile birlikte CSV formatında virgülle ayrılmış dosya biçiminde dışarı da aktarabilirsiniz. Aşağıda bir kaç örnek görülmektedir.
+
+```sh
 msf > services -s http -c port 172.16.194.134 -o /root/msfu/http.csv
 
 [*] Wrote services to /root/msfu/http.csv
@@ -447,11 +553,14 @@ msf > cat /root/msfu/http.csv
 host,port
 "172.16.194.134","80"
 "172.16.194.134","443"
+```
 
-Creds
 
-The ‘creds’ command is used to manage found and used credentials for targets in our database. Running this command without any options will display currently saved credentials.
+## Creds
 
+```creds``` komutu da ```hosts``` ve ```services``` komutlarına benzer olarak taramalarda elde edilen kullanıcı bilgileri ve parolaları bize gösterir. Hiçbir ek parametre girmeden ```creds``` komutunu verdiğinizde kayıtlı tüm kullanıcı bilgileri listelenir.
+
+```sh
 msf > creds
 
 Credentials
@@ -461,9 +570,12 @@ host  port  user  pass  type  active?
 ----  ----  ----  ----  ----  -------
 
 [*] Found 0 credentials.
+```
 
-As with ‘db_nmap‘ command, successful results relating to credentials will be automatically saved to our active workspace. Let’s run the auxiliary module ‘mysql_login‘ and see what happens when Metasploit scans our server.
 
+```db_nmap``` komutuyla yapılan aramalarda bulunan sonuçlar nasıl ```hosts``` ve ```services``` tablolarında tutuluyorsa, herhangi bir kullanıcı adı, parola bulma modülü kullandığınızda elde ettiğiniz bilgiler de ```creds``` tablosu içinde tutulur. Bir örnek görelim. Bu örnekte ```mysql_login``` modülü çalıştırılmakta ve 172.16.194.172 Ip adresinde çalışan MySql servisine login olarak oturum açma denemesi yapılmaktadır. Başarılı olunduğunda, başarılı olan kullanıcı adı ve parola bilgisi ```creds``` tablosuna sonradan kullanım için kayıt edilmektedir.
+
+```sh
 msf  auxiliary(mysql_login) > run
 
 [*] 172.16.194.172:3306 MYSQL - Found remote MySQL version 5.0.51a
@@ -484,10 +596,13 @@ host            port  user  pass  type      active?
 
 [*] Found 1 credential.
 msf  auxiliary(mysql_login) >
-We can see the module was able to connect to our mysql server, and because of this Metasploit saved the credentials in our database automatically for future reference.
+```
 
-During post-exploitation of a host, gathering user credentials is an important activity in order to further penetrate a target network. As we gather sets of credentials, we can add them to our database with the ‘creds -a’ command.
+### Creds Tablosuna Elle Veri Ekleme
 
+Bir sistemde oturum açtığınızda, modül kullanmadan kendiniz bulduğunuz kullanıcı adı ve parola bilgilerini de, aşağıdaki örnekteki formatı kullanarak, sonradan kullanmak üzere ```creds``` tablosuna aktarabilirsiniz 
+
+```sh
 msf > creds -a 172.16.194.134 -p 445 -u Administrator -P 7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e:::
 [*] Time: 2012-06-20 20:31:42 UTC Credential: host=172.16.194.134 port=445 proto=tcp sname= type=password user=Administrator pass=7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e::: active=true
 
@@ -501,12 +616,13 @@ host            port  user           pass                                       
 172.16.194.134  445   Administrator  7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e:::  password  true
 
 [*] Found 1 credential.
+```
 
+## Loot
 
-Loot
+Oturum açılan bir sistemde, genellikle ilk olarak ```hashdump``` yapılarak hash tablosu çıkarılır. İşte ```loot``` komutuyla, tarama sonucu elde edilen hash değerlerinin bilgisi görülebilir.  Aşağıdaki örnekte, ```loot``` yardım görüntülenmektedir.
 
-Once you’ve compromised a system (or three), one of the objective may be to retrieve hash dumps. From either a Windows or *nix system. In the event of a successful hash dump, this information will be stored in our database. We can view this dumps using the ‘loot’ command. As with almost every command, adding the ‘-h’ switch will display a little more information.
-
+```sh
 msf > loot -h
 Usage: loot 
  Info: loot [-h] [addr1 addr2 ...] [-t ]
@@ -520,8 +636,10 @@ Usage: loot
   -t   Search for a list of types
   -h,--help         Show this help information
   -S,--search       Search string to filter by
-Here’s an example of how one would populate the database with some ‘loot’.
+```
+Ardından **usermap_script** modülü kullanılarak karşı sistemde oturum açılmakta ve açılan sessio yani oturum için, **hashdump** modülü ile hash değerleri bulunmaktadır. Başarılı olunduğu takdirde bulunan hash değerleri sonradan kullanım için ```loot``` tablosuna kayıt edilmektedir.    
 
+```sh
 msf  exploit(usermap_script) > exploit
 
 [*] Started reverse double handler
@@ -569,9 +687,11 @@ msf  post(hashdump) > run
 [+] service:$1$kR3ue7JZ$7GxELDupr5Ohp6cjZ3Bu//:1002:1002:,,,:/home/service:/bin/bash
 [+] Unshadowed Password File: /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.hashes_264208.txt
 [*] Post module execution completed
+```
 
+Veri tabanında kayıtlı hash değerlerini görmek için ```loot``` komutunu vermeniz yeterlidir.
 
-
+```sh
 msf  post(hashdump) > loot
 
 Loot
@@ -582,3 +702,30 @@ host            service  type          name                   content     info  
 172.16.194.172           linux.hashes  unshadowed_passwd.pwd  text/plain  Linux Unshadowed Password File  /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.hashes_264208.txt
 172.16.194.172           linux.passwd  passwd.tx              text/plain  Linux Passwd File               /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.passwd_953644.txt
 172.16.194.172           linux.shadow  shadow.tx              text/plain  Linux Password Shadow File      /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.shadow_492948.txt
+```
+
+Bu yazımızda, ```msfconsole``` içerisinde verilen ```help``` komutunda gösterilen ```Database``` ile ilgili komutları açıklamaya çalıştık.
+
+```sh
+Database Backend Commands
+=========================
+
+    Command           Description
+    -------           -----------
+    creds             List all credentials in the database
+    db_connect        Connect to an existing database
+    db_disconnect     Disconnect from the current database instance
+    db_export         Export a file containing the contents of the database
+    db_import         Import a scan result file (filetype will be auto-detected)
+    db_nmap           Executes nmap and records the output automatically
+    db_rebuild_cache  Rebuilds the database-stored module cache
+    db_status         Show the current database status
+    hosts             List all hosts in the database
+    loot              List all loot in the database
+    notes             List all notes in the database
+    services          List all services in the database
+    vulns             List all vulnerabilities in the database
+    workspace         Switch between database workspaces
+```
+
+```vulns``` komutunu eksik bıraktığımızı düşünebilirsiniz. ```vulns``` komutunun ne işe yaradığını az çok tahmin etmek mümkündür. Yazı yeterince uzun oldu. ```vulns``` komutunu size bırakıyorum.
