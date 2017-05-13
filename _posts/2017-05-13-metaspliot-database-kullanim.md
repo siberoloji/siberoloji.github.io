@@ -4,7 +4,7 @@ title: MSF İçinde Database Kullanımı
 date: 2017-05-13 08:50:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -22,9 +22,9 @@ Metasploit Framework içerisinde, Postgresql desteğiyle sunulan veri tabanı ö
 
 Aşağıdaki anlatımda, Kali işletim sistemi temel alınmıştır ve komutlar Kali'de denemiştir.
 
-# Metasploit Veritabanını Ayarlama
+# Metasploit Veri tabanını Ayarlama
 
-Öncelikle başlamaış ise postgresql başlatılmalıdır. 
+Öncelikle başlamamış ise postgresql başlatılmalıdır. 
 
 ```sh
 root@kali:~# systemctl start postgresql
@@ -88,7 +88,7 @@ msf > workspace
 
 ### workspace değiştirme
 
-```workspace``` komutuyla mevcut klasörleri listeledikten sonra aktif olan dışında başka bir klasöre geçmek istersek, aşağıdaki gibi ```workspace``` komutunun ardından geçmek istediğimiz klasörün adını yazmamız yeterlidir. 
+```workspace``` komutuyla mevcut klasörler listelendikten sonra aktif olan dışında başka bir klasöre geçmek istersek, aşağıdaki gibi ```workspace``` komutunun ardından geçmek istediğimiz klasörün adını yazmamız yeterlidir. 
 
 ```sh
 msf > workspace msfu
@@ -181,7 +181,7 @@ msf >
 
 ## db_nmap
 
-nmap tarama sonuçlarını dışarıdan içeri aktarabileceğiniz gibi ```msfconsole``` sayesinde, içeride de dışarı çıkmadan nmap taraması yapabilirsiniz. Bunun için ```db_nmap``` komutu kullanılmaktadır. ```db_nmap``` ile yapacağınız taramalar, otomatik olarak aktif olan ```workspace``` içine kayıt edilecetir. 
+nmap tarama sonuçlarını dışarıdan içeri aktarabileceğiniz gibi ```msfconsole``` sayesinde, içeride de dışarı çıkmadan nmap taraması yapabilirsiniz. Bunun için ```db_nmap``` komutu kullanılmaktadır. ```db_nmap``` ile yapacağınız taramalar, otomatik olarak aktif olan ```workspace``` içine kayıt edilecektir. 
 
 ```sh
 msf > db_nmap -A 172.16.194.134
@@ -246,7 +246,7 @@ msf > db_export -f xml /root/msfu/Exported.xml
 
 ## hosts
 
-```hosts``` komutu, o ana kadar yapılan taramaların sonucunda bulunan IP bilgileri, PORT biligileri vb. bilgileri bize gösterir. Öncelikle, ```hosts``` komutunun yardım bilgilerini görüntüleyelim.
+```hosts``` komutu, o ana kadar yapılan taramaların sonucunda bulunan IP bilgileri, PORT bilgileri vb. bilgileri bize gösterir. Öncelikle, ```hosts``` komutunun yardım bilgilerini görüntüleyelim.
 
 ```sh
 msf > hosts -h
@@ -274,7 +274,7 @@ OPTIONS:
 
 **Kullanılabilir Sütunlar:** address, arch, comm, comments, created_at, cred_count, detected_arch, exploit_attempt_count, host_detail_count, info, mac, name, note_count, os_family, os_flavor, os_lang, os_name, os_sp, purpose, scope, service_count, state, updated_at, virtual_host, vuln_count, tags
 
-Şimdi, sadece bilgilerini kullanacağımız sütunları ve bilgileri görünteleyelim. Bunun için ```-c``` parametresini ve istediğimiz sütun adlarını yazmalyız. Aşağıdaki örnekte, address, os_flavor sütunları ve bilgileri gösterilsin istenmiştir.
+Şimdi, sadece bilgilerini kullanacağımız sütunları ve bilgileri görüntüleyelim. Bunun için ```-c``` parametresini ve istediğimiz sütun adlarını yazmalıyız. Aşağıdaki örnekte, address, os_flavor sütunları ve bilgileri gösterilsin istenmiştir.
 
 ```sh
 msf > hosts -c address,os_flavor
@@ -429,7 +429,7 @@ Usage: services [-h] [-u] [-a] [-r ] [-p >port1,port2>] [-s >name1,name2>] [-o ]
 
 **Kullanılabilir sütunlar:** created_at, info, name, port, proto, state, updated_at
 
-```hosts``` komutunda nasıl arama yapıyorsak ```services``` içinde ```-c``` parametresi ile sütunlarda ve ```-S``` parameteresi ile de belirli bir ifadeyi arayabiliriz.
+```hosts``` komutunda nasıl arama yapıyorsak ```services``` içinde ```-c``` parametresi ile sütunlarda ve ```-S``` parametresi ile de belirli bir ifadeyi arayabiliriz.
 
 ### Belirli Sütunlarda Arama
 
@@ -504,7 +504,7 @@ host           port proto state
 
 ### Belirli Bir Servisin ve IP Adresinin Port Bilgisini Arama
 
-Yukarıda bir kaç örnekte ```-S``` büyük S ile belli bir ifadeyi aratmıştık. ```-s``` parametreside özellikle servisler listesinde arama yapmayı kolaylaştırır.
+Yukarıda bir kaç örnekte ```-S``` büyük S ile belli bir ifadeyi aramıştık. ```-s``` parametresi de özellikle servisler listesinde arama yapmayı kolaylaştırır.
 
 ```sh
 msf > services -s http -c port 172.16.194.134
@@ -637,7 +637,7 @@ Usage: loot
   -h,--help         Show this help information
   -S,--search       Search string to filter by
 ```
-Ardından **usermap_script** modülü kullanılarak karşı sistemde oturum açılmakta ve açılan sessio yani oturum için, **hashdump** modülü ile hash değerleri bulunmaktadır. Başarılı olunduğu takdirde bulunan hash değerleri sonradan kullanım için ```loot``` tablosuna kayıt edilmektedir.    
+Ardından **usermap_script** modülü kullanılarak karşı sistemde oturum açılmakta ve açılan session yani oturum için, **hashdump** modülü ile hash değerleri bulunmaktadır. Başarılı olunduğu takdirde bulunan hash değerleri sonradan kullanım için ```loot``` tablosuna kayıt edilmektedir.    
 
 ```sh
 msf  exploit(usermap_script) > exploit
