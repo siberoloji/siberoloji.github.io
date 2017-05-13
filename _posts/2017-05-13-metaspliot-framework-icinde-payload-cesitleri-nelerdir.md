@@ -1,10 +1,10 @@
 ---
 layout: post
-title: MSF İçinde Exploit Çeşitleri?
-date: 2017-05-13 08:40:06.000000000 +02:00
+title: MSF İçinde Payload Çeşitleri?
+date: 2017-05-13 08:45:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: true
+published: false
 status: publish
 categories:
 - Nasıl
@@ -12,8 +12,8 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework exploit
-- msf exploit türleri
+- Metasploit Framework payload
+- msf payload türleri
 excerpt:
 ---
 
