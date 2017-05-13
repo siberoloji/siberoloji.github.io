@@ -23,17 +23,13 @@ Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisin
 
 ## Tekil payloadlar (Singles)
 
-Bu tür payload modülleri, ihtiyaç duydukları bütün kodları ve işlemleri kendi bünyesinde barındırlar. Çalışmak için herhangi bir yardımcıya ihtiyaç duymazlar. Örneğin, hedef sisteme bir kullanıcı ekleyen payload, işlemini yapar ve durur. Başka bir komut satırına vb. ihtiyaç duymaz. 
+Bu tür payload modülleri, ihtiyaç duydukları bütün kodları ve işlemleri kendi bünyesinde barındırırlar. Çalışmak için herhangi bir yardımcıya ihtiyaç duymazlar. Örneğin, hedef sisteme bir kullanıcı ekleyen payload, işlemini yapar ve durur. Başka bir komut satırına vb. ihtiyaç duymaz. 
 
 Tek başlarına bir program olduklarında netcat vb. programlar tarafından fark edilip yakalanabilirler.
 
 “windows/shell_bind_tcp” isimlendirmesine dikkat edelim. Windows için shell_bind_tcp tekil bir payload olarak çalışır. Bir sonraki bölümde farklı bir isimlendirme göreceğiz.
 
-, bütün . These different types allow for a great deal of versatility and can be useful across numerous types of scenarios. Whether or not a payload is staged, is represented by ‘/’ in the payload name. For example, “windows/shell_bind_tcp” is a single payload with no stage, whereas “windows/shell/bind_tcp” consists of a stager (bind_tcp) and a stage (shell).
-
-
 ## Sahneleyiciler (Stagers)
-
 
 Sahneleyici payload modülleri, hedef bilgisayar ile yerel bilgisayar arasında ağ bağlantısı kuran kodlardır. Genellikle küçük kodlar barındırırlar. Çalışabilmek için bir sahneye ihtiyaç duyarlar. Metasploit Framework, en uygun olan payload modülünü kullanacak, başarılı olmaz ise daha az başarı vadeden payload otomatik olarak seçilecektir. 
 
