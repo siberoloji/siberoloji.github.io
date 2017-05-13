@@ -4,6 +4,7 @@ title: Arama
 permalink: /search/
 ---
 <div id="home-search" class="home">
+
 <script>
   (function() {
     var cx = '000688360185781879140:kcvupy53t7m';
