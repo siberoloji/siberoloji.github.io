@@ -225,6 +225,7 @@ DEPENDENCIES
   jekyll-admin
   jekyll-feed (~> 0.6)
   jekyll-google_cse
+  jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
