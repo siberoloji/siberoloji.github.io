@@ -18,6 +18,8 @@ tags:
 excerpt: Meterpreter, ileri düzey bir Metasploit payload tipidir. Dinamik olarak hedef bilgisayarda DLL Enjeksiyon mantığı ile çalışır. Ağda, sahneleyici payloadları ve soketleri kullanarak yerel bilgisayarla haberleşir.
 ---
 
+Bu yazımızda, Metasploit Framework tarafından kullanıcıya sağlanan komut satırı ortamı olarak bilinen Meterpreter'in kısaca tanımaya çalışacağız. İlerleyen yazılarda Meterpreter içerisinde kullanılan komutlar ve örneklerini bol bol göreceğiz. Burada kısaca giriş yapıyoruz.
+
 # Meterpreter Nedir?
 
 Meterpreter, ileri düzey bir Metasploit payload tipidir. Dinamik olarak hedef bilgisayarda DLL Enjeksiyon mantığı ile çalışır. Ağda, sahneleyici payloadları ve soketleri kullanarak yerel bilgisayarla haberleşir. Komut geçmişi, komut tamamlama vb. kabiliyetleri bulunur. Kısaca, Karşı taraf bilgisayarda çalışan çok etkili bir komut satırıdır diyebiliriz. 
