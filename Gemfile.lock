@@ -104,6 +104,8 @@ GEM
     jekyll-github-metadata (2.3.1)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-google_cse (1.0.0)
+      jekyll (~> 3.0)
     jekyll-mentions (1.2.0)
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
@@ -222,6 +224,7 @@ DEPENDENCIES
   github-pages (= 136)
   jekyll-admin
   jekyll-feed (~> 0.6)
+  jekyll-google_cse
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data

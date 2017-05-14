@@ -34,7 +34,7 @@ paginate_path: /page:num/
 
 # Tracker
 analytics: UA-61059215-13
-google_cse_id: 000688360185781879140:kcvupy53t7m
+google_cse_id: "000688360185781879140:kcvupy53t7m"
 
 # Comments
 disqus-shortname: siberoloji-1
@@ -63,4 +63,5 @@ sass:
 
 # Ruby Gems jekyll-seo-tag
 gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap]
-
+gems:
+  - jekyll-google_cse

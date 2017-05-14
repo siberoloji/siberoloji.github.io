@@ -7,7 +7,7 @@
             {% endif %}
         </div>
         <hr>
-        {% include googlecustomsearch.html %}    
+        {% if jekyll.environment == "production" %}{% google_cse %}{% endif %}
         <hr>
         <div class="mt10 recent">
                
