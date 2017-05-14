@@ -199,7 +199,7 @@ Netmask     : 255.255.0.0
 meterpreter >
 ``` 
 
-lpwd > lcd
+## lpwd > lcd
 
 Meterpreter komut satırı açık iken vereceğiniz komutlar karşı taraf bilgisayarda işlem yaparlar. Halbuki biz kendi bilgisayarımızda bulunduğumuz klasörü görmek veya değiştirmek isteyebiliriz. Bu durumda Meterpreter'i geri plana göndermeden ```lpwd``` ve ```lcd``` komutlarıyla bu işlemi yapabiliriz. 
 ```lpwd```: Yerel bilgisayarda hangi klasörde olduğumuzu gösterir. (local print working directory)
