@@ -74,3 +74,7 @@ Bu tip payload modülleri IPv6 ağ haberleşmesi için kullanılmak üzere tasar
 ## Reflective DLL injection
 
 Bu tür payload modülleri, hedef sistemin hafızasına yerleşirler. Hard Diske dokunmazlar ve VNC, Meterpreter gibi payload tiplerinin çalışmasına yardım ederler. 
+
+## Video Anlatım
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ocULVGGYTOs" frameborder="0" allowfullscreen></iframe>

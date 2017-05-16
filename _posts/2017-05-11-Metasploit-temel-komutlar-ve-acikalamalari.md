@@ -934,3 +934,7 @@ msf auxiliary(ms09_001_write) >
 ```
 
 Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde ```help``` komutunu kullanabilirsiniz. 
+
+## Video Anlatım
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UOtw6CfPGlo" frameborder="0" allowfullscreen></iframe>
