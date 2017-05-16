@@ -19,7 +19,7 @@ excerpt: Metasploit Framework içerisinden bir Windows işletim sistemine Meterp
 
 Metasploit Framework içerisinden bir Windows işletim sistemine Meterpreter shell açtığınızda, işletim sisteminin hangi güncellemeleri ve yamaları yaptığını, hangilerini yapmadığını keşfetmek isteyebilirsiniz. 
 
-Bunun için kullanılan ```post/windows/gather/enum_patches``` modülünün kullanımına ait bir örneği aşağıda bulabilirsiniz. Modül, isminden de anlaşılacağı gibi bir **post explotation** modülüdür ve öncelikle hedef bilgisayarda bir ```meterpreter``` açık olmalıdır.
+Bunun için kullanılan ```post/windows/gather/enum_patches``` modülünün kullanımına ait bir örneği aşağıda bulabilirsiniz. Modül, isminden de anlaşılacağı gibi bir **post exploitation** modülüdür ve öncelikle hedef bilgisayarda bir ```meterpreter``` açık olmalıdır.
 
 Aşağıdaki çıktıda, ```use``` komutu ile modül yüklenmiş ve seçenekleri görüntülenmiştir.
 
