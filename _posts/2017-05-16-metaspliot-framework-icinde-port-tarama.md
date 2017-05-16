@@ -4,7 +4,7 @@ title: MSF İçinde Port Tarama
 date: 2017-05-16 08:00:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -14,26 +14,36 @@ tags:
 - metasploit Framework
 - Metasploit Framework port tarama
 - msf port tarama
-excerpt: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
+excerpt: Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 ---
 
-Preparing Metapsloit for Port Scanning
+Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 
-Scanners and most other auxiliary modules use the RHOSTS option instead of RHOST. RHOSTS can take IP ranges (192.168.1.20-192.168.1.30), CIDR ranges (192.168.1.0/24), multiple ranges separated by commas (192.168.1.0/24, 192.168.3.0/24), and line separated host list files (file:/tmp/hostlist.txt). This is another use for our grepable Nmap output file.
+# Metasploit İçinde Port Tarama
 
-Note also that, by default, all of the scanner modules will have the THREADS value set to ‘1’. The THREADS value sets the number of concurrent threads to use while scanning. Set this value to a higher number in order to speed up your scans or keep it lower in order to reduce network traffic but be sure to adhere to the following guidelines:
+Tarayıcılar ve hemen hemen tüm auxiliary modülleri RHOST yerine RHOSTS değişkenini kullanırlar. RHOSTS değişkeni farklı formatlarda girilebilen IP aralıkları alabilir.
+* IP Aralıkları (192.168.1.20-192.168.1.30) 
+* CIDR Gösterimi (192.168.1.0/24), 
+* Çoklu format (192.168.1.0/24, 192.168.3.0/24), 
+* Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). _Her satırda 1 IP olmalı_
 
-Keep the THREADS value under 16 on native Win32 systems
-Keep THREADS under 200 when running MSF under Cygwin
-On Unix-like operating systems, THREADS can be set to 256.
- 
 
-Nmap & db_nmap
+## THREADS
 
-We can use the db_nmap command to run an Nmap against our targets and our scan results would than be stored automatically in our database. However, if you also wish to import the scan results into another application or framework later on, you will likely want to export the scan results in XML format. It is always nice to have all three Nmap outputs (xml, grepable, and normal). So we can run the Nmap scan using the ‘-oA‘ flag followed by the desired filename to generate the three output files then issue the db_import command to populate the Metasploit database.
+Metasploit içerisinde kullanılan tarama modüllerinin içinde ```THREADS``` isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. ```THREADS``` değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede ```THREADS``` değişkeni ile ilgili tavsiyeleri dikkate almalısınız. 
 
-Simply run Nmap with the options you would normally use from the command line. If we wished for our scan to be saved to our database, we would omit the output flag and use db_nmap. The example below would then be “db_nmap -v -sV 192.168.1.0/24”.
+* MSF programı Win32 sistemlerde çalışıyorsa ```THREADS``` değerini 16 ve altında ayarlayın.
+* MSF programı Cygwin sistemde çalışıyorsa ```THREADS``` değerini 200 ve altında ayarlayın
+* MSF programı Unix-like sistemde çalışıyorsa ```THREADS``` değerini 256 yapabilirsiniz.  
 
+## Nmap & db_nmap
+
+Metasploit içerisinde bildiğiniz klasik ```nmap``` komutunu kullanabileceğiniz gibi ```db_nmap``` komutunu da kullanabilirsiniz. ```db_nmap``` komutunu kullandığınızda bulunan sonuçlar otomatik olarak hosts tablolarına aktarılır. ```nmap``` ile tarama yaptığınızda, sonuçları ```-oA``` parametresiyle sonradan kullanmak için (xml, grepable ve normal) formatlarda bir dosyaya kaydederseniz, o dosyayı Metasplot içerisine ```db_import``` komutuyla alabilirsiniz. 
+
+Aşağıda, nmap komutunun kullanımına bir örnek görebilirsiniz. İşletim sisteminin komut satırından ```nmap``` komutunu kullanabileceğiniz gibi ```msf >``` komut satırından da ```nmap``` kullanılabilir. Örnekteki ```nmap``` komutu, sonuçları ```subnet_1``` isimli dosyalara kaydedecektir. Bu dosyaları isterseniz Metasploit'ed aktarabilirsiniz. Bunun yerine ```db_nmap -v -sV 192.168.1.0/24``` komutunu verirseniz, sonuçlar otomatik olarak ```hosts``` tablosuna kayıt edilir.
+
+
+```sh
 msf > nmap -v -sV 192.168.1.0/24 -oA subnet_1
 [*] exec: nmap -v -sV 192.168.1.0/24 -oA subnet_1
 
@@ -44,11 +54,13 @@ Scanning 101 hosts [1 port/host]
 ...
 Nmap done: 256 IP addresses (16 hosts up) scanned in 499.41 seconds
 Raw packets sent: 19973 (877.822KB) | Rcvd: 15125 (609.512KB)
+```
 
-Port Scanning
+## Port Tarama
 
-In addition to running Nmap, there are a variety of other port scanners that are available to us within the framework.
+Port tarama için sadece ```nmap``` veya ```db_nmap``` kullanmak zorunda değilsiniz. Metasploit içerisinde başka bir takım Port tarama modülleri de bulunmaktadır. Bunları ```search portscan``` komutuyla listeletebilirsiniz. 
 
+```sh
 msf > search portscan
 
 Matching Modules
@@ -62,9 +74,13 @@ Matching Modules
    auxiliary/scanner/portscan/syn                             normal  TCP SYN Port Scanner
    auxiliary/scanner/portscan/tcp                             normal  TCP Port Scanner
    auxiliary/scanner/portscan/xmas                            normal  TCP "XMas" Port Scanner
+```
 
-For the sake of comparison, we’ll compare our Nmap scan results for port 80 with a Metasploit scanning module. First, let’s determine what hosts had port 80 open according to Nmap.
+Şimdi ```nmap``` ile yapılmış bir tarama ve Metasploit içinde ```auxiliary/scanner/portscan/syn``` tarama modülü ile yapılmış tarama sonuçlarını karşılaştıralım.
 
+### nmap SYN Tarama sonuçları
+
+```sh
 msf > cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 [*] exec: cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 
@@ -74,8 +90,11 @@ msf > cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 192.168.1.109
 192.168.1.116
 192.168.1.150
-The Nmap scan we ran earlier was a SYN scan so we’ll run the same scan across the subnet looking for port 80 through our eth0 interface using Metasploit.
+```
 
+### Metasploit SYN Modülü Tarama ve Sonuçları
+
+```sh
 msf > use auxiliary/scanner/portscan/syn
 msf auxiliary(syn) > show options
 
@@ -90,7 +109,7 @@ Module options (auxiliary/scanner/portscan/syn):
    PORTS      1-10000          yes       Ports to scan (e.g. 22-25,80,110-900)
    RHOSTS                      yes       The target address range or CIDR identifier
    SNAPLEN    65535            yes       The number of bytes to capture
-   THREADS    1                yes       The number of concurrent threads
+   THREADS    1                yes       The number of concurrent THREADS
    TIMEOUT    500              yes       The reply read timeout in milliseconds
 
 msf auxiliary(syn) > set INTERFACE eth0
@@ -111,8 +130,11 @@ msf auxiliary(syn) > run
 [*] TCP OPEN 192.168.1.150:80
 [*] Scanned 256 of 256 hosts (100% complete)
 [*] Auxiliary module execution completed
-Here we’ll load up the ‘tcp’ scanner and we’ll use it against another target. As with all the previously mentioned plugins, this uses the RHOSTS option. Remember we can issue the ‘hosts -R‘ command to automatically set this option with the hosts found in our database.
+```
 
+Metasploit ```auxiliary/scanner/portscan/syn``` modülü ile yukarıda yaptığımız taramanın ```hosts``` tablosuna kaydedildiğini biliyoruz. Şimdi bu sonuçları kullanarak TCP taraması yapalım. Aktif olan bir modülün ihtiyacı olan IP bilgileri RHOSTS değişkenine, ```hosts``` tablosundan ```hosts -R``` komutuyla aktarıldığını hatırlayın. 
+
+```sh
 msf > use auxiliary/scanner/portscan/tcp
 msf  auxiliary(tcp) > show options
 
@@ -125,7 +147,7 @@ Module options (auxiliary/scanner/portscan/tcp):
    JITTER       0                yes       The delay jitter factor (maximum value by which to +/- DELAY) in milliseconds.
    PORTS        1-10000          yes       Ports to scan (e.g. 22-25,80,110-900)
    RHOSTS                        yes       The target address range or CIDR identifier
-   THREADS      1                yes       The number of concurrent threads
+   THREADS      1                yes       The number of concurrent THREADS
    TIMEOUT      1000             yes       The socket connect timeout in milliseconds
 
 msf  auxiliary(tcp) > hosts -R
@@ -152,7 +174,7 @@ Module options (auxiliary/scanner/portscan/tcp):
    PORTS        1-1024           yes       Ports to scan (e.g. 22-25,80,110-900)
    RHOSTS       172.16.194.172   yes       The target address range or CIDR identifier
    SNAPLEN      65535            yes       The number of bytes to capture
-   THREADS      10                yes       The number of concurrent threads
+   THREADS      10                yes       The number of concurrent THREADS
    TIMEOUT      1000             yes       The socket connect timeout in milliseconds
 
 msf  auxiliary(tcp) > run
@@ -172,15 +194,15 @@ msf  auxiliary(tcp) > run
 [*] Scanned 1 of 1 hosts (100% complete)
 [*] Auxiliary module execution completed
 msf  auxiliary(tcp) > 
+```
 
-So we can see that Metasploit’s built-in scanner modules are more than capable of finding systems and open port for us. It’s just another excellent tool to have in your arsenal if you happen to be running Metasploit on a system without Nmap installed.
+İşletim sisteminde ```nmap``` yüklü olmayan bilgisayarlar için, Metasploit tarama modülleri büyük kolaylık sağlar.
 
-SMB Version Scanning
+## SMB Versiyon Taraması
 
-Now that we have determined which hosts are available on the network, we can attempt to determine which operating systems they are running. This will help us narrow down our attacks to target a specific system and will stop us from wasting time on those that aren’t vulnerable to a particular exploit.
+Yaptığımız SYN ve TCP taramalarında bir kısım IP adreslerinin açık olduğunu ve 445 numaralı Portların aktif olduğunu gördüğümüzü farz edelim. Bu durumda Windows için ```smb`` ve Linux için ```samba``` olarak ifade edilen taramayı kullanabiliriz. 
 
-Since there are many systems in our scan that have port 445 open, we will use the scanner/smb/version module to determine which version of Windows is running on a target and which Samba version is on a Linux host.
-
+```sh
 msf > use auxiliary/scanner/smb/smb_version
 msf auxiliary(smb_version) > set RHOSTS 192.168.1.200-210
 RHOSTS => 192.168.1.200-210
@@ -195,8 +217,11 @@ msf auxiliary(smb_version) > run
 [*] Scanned 09 of 11 hosts (081% complete)
 [*] Scanned 11 of 11 hosts (100% complete)
 [*] Auxiliary module execution completed
-Also notice that if we issue the hosts command now, the newly acquired information is stored in Metasploit’s database.
+```
 
+Şimdi tekrar ```hosts``` komutunu verirseniz, en son yapılan ```smb``` tarama sonuçlarının da tabloya ilave edildiğini görebilirsiniz.
+
+```sh
 msf auxiliary(smb_version) > hosts
 
 Hosts
@@ -207,14 +232,13 @@ address        mac  name  os_name            os_flavor  os_sp  purpose  info  co
 192.168.1.201             Microsoft Windows  XP         SP3    client         
 192.168.1.202             Microsoft Windows  XP         SP3    client         
 192.168.1.209             Microsoft Windows  2003 R2    SP2    server
- 
+``` 
 
-Idle Scanning
+## Idle Tarama
 
-Nmap’s IPID Idle scanning allows us to be a little stealthy scanning a target while spoofing the IP address of another host on the network. In order for this type of scan to work, we will need to locate a host that is idle on the network and uses IPID sequences of either Incremental or Broken Little-Endian Incremental. Metasploit contains the module scanner/ip/ipidseq to scan and look for a host that fits the requirements.
+Nmap tarafından kullanıcıya sağlanan tarama türlerinden bir tanesi de Idle taramadır. Bir ağda, boşta bulunan bir bilgisayar bulunur ve onun IP numarası üzerinden ağda bulunan diğer IP adresleri taranır. Öncelikle Idle tarama için kullanılacak bir IP adresi bulmalıyız. Bunu bulmak için ```auxiliary/scanner/ip/ipidseq``` modülünü kullanalım.
 
-In the free online Nmap book, you can find out more information on Nmap Idle Scanning.
-
+```sh
 msf > use auxiliary/scanner/ip/ipidseq
 msf auxiliary(ipidseq) > show options
 
@@ -226,7 +250,7 @@ Module options (auxiliary/scanner/ip/ipidseq):
    RHOSTS                      yes       The target address range or CIDR identifier
    RPORT      80               yes       The target port
    SNAPLEN    65535            yes       The number of bytes to capture
-   THREADS    1                yes       The number of concurrent threads
+   THREADS    1                yes       The number of concurrent THREADS
    TIMEOUT    500              yes       The reply read timeout in milliseconds
 
 msf auxiliary(ipidseq) > set RHOSTS 192.168.1.0/24
@@ -249,8 +273,12 @@ msf auxiliary(ipidseq) > run
 [*] 192.168.1.150's IPID sequence class: All zeros
 [*] 192.168.1.151's IPID sequence class: Incremental!
 [*] Auxiliary module execution completed
-Judging by the results of our scan, we have a number of potential zombies we can use to perform idle scanning. We’ll try scanning a host using the zombie at 192.168.1.109 and see if we get the same results we had earlier.
+```
 
+Çıktıda görülen IP adresleri Idle Tarama için kullanılabilir. aşağıdaki örnekte, ```192.168.1.109``` IP adresi zombie olarak kullanılmıştır ve onun üzerinden sistemdeki başka bir IP (```192.168.1.114```) adresine Port taraması gerçekleştirilmiştir.
+
+
+```sh
 msf auxiliary(ipidseq) > nmap -PN -sI 192.168.1.109 192.168.1.114
 [*] exec: nmap -PN -sI 192.168.1.109 192.168.1.114
 
@@ -266,3 +294,6 @@ PORT STATE SERVICE
 MAC Address: 00:0C:29:41:F2:E8 (VMware)
 
 Nmap done: 1 IP address (1 host up) scanned in 5.56 seconds
+```
+
+Bu tarama sonucunda bulunan açık portlar ve servisler çıktıda görülebilir. Aynı işlemi, ```db_nmap``` komutuyla da yapabilirsiniz.
