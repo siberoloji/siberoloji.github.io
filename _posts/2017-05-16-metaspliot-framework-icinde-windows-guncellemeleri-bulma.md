@@ -52,7 +52,7 @@ Module advanced options (post/windows/gather/enum_patches):
    Description    : Specify the workspace for this module
 ```
 
-Bir ```exploit``` kullanarak Windows işletim sisteminizde Meterpreter shell açtıktan sonra oturumu arka plana gönderin ve ```use``` komutuyla ```enum_patches``` modülünü yükleyin. Aşağıdaki ```show options``` komutundaki çıktıda bulunan ```SESSION``` değişkeni, arka plana gönderdiğimiz meterpreter shell in oturum numarası olmalıdır. Arka plandaki oturumları ```sessions -l``` komutu ile görebilirsiniz. Gerekli kontrolleri yaptıktan sonra ```run``` komutunu verdiğinizde Windows bilgisayarın hangi güncellemeleri yapıp yapmadığını görebilirsiniz. 
+Bir ```exploit``` kullanarak Windows işletim sistemin Meterpreter shell açtıktan sonra oturumu arka plana gönderin ve ```use``` komutuyla ```enum_patches``` modülünü yükleyin. Aşağıdaki ```show options``` komutundaki çıktıda bulunan ```SESSION``` değişkeni, arka plana gönderdiğimiz meterpreter shell in oturum numarası olmalıdır. Arka plandaki oturumları ```sessions -l``` komutu ile görebilirsiniz. Gerekli kontrolleri yaptıktan sonra ```run``` komutunu verdiğinizde Windows bilgisayarın hangi güncellemeleri yapıp yapmadığını görebilirsiniz. 
 
 ```sh
 msf post(enum_patches) > show options

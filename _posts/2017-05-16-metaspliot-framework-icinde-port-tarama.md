@@ -26,12 +26,6 @@ Note also that, by default, all of the scanner modules will have the THREADS val
 Keep the THREADS value under 16 on native Win32 systems
 Keep THREADS under 200 when running MSF under Cygwin
 On Unix-like operating systems, THREADS can be set to 256.
-Contents
-
-1 Nmap & db_nmap
-2 Port Scanning
-3 SMB Version Scanning
-4 Idle Scanning
  
 
 Nmap & db_nmap
