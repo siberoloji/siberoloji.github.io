@@ -14,10 +14,10 @@ tags:
 - metasploit Framework
 - Metasploit Framework mssql tarama
 - msf mssql tarama
-excerpt: Metasploit Framework ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer IP adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
+excerpt: Metasploit Framework'ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer IP adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
 ---
 
-Metasploit Framework ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer Ip adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
+Metasploit Framework'ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer Ip adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
 
 MSSQL ilk kurulduğunda varsayılan olara 1433 numaralı porttan dinleme yapar. Dinlemenin, 1433 portundan değil de rastgele seçilen portlardan yapılması ayarlanmış olabilir. Bu durumda da 1434 numaralı porta, dinlemenin hangi porttan yapıldığı sorulabilir. 
 
