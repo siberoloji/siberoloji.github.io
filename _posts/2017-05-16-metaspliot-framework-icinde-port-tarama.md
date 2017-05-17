@@ -200,7 +200,7 @@ msf  auxiliary(tcp) >
 
 ## SMB Versiyon Taraması
 
-Yaptığımız SYN ve TCP taramalarında bir kısım IP adreslerinin açık olduğunu ve 445 numaralı Portların aktif olduğunu gördüğümüzü farz edelim. Bu durumda Windows için ```smb`` ve Linux için ```samba``` olarak ifade edilen taramayı kullanabiliriz. 
+Yaptığımız SYN ve TCP taramalarında bir kısım IP adreslerinin açık olduğunu ve 445 numaralı Portların aktif olduğunu gördüğümüzü farz edelim. Bu durumda Windows için ```smb``` ve Linux için ```samba``` olarak ifade edilen taramayı kullanabiliriz. 
 
 ```sh
 msf > use auxiliary/scanner/smb/smb_version
