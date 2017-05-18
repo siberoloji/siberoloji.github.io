@@ -1,0 +1,49 @@
+---
+layout: post
+title: MSF İçinde VNC Server Tarama
+date: 2017-05-18 08:10:06.000000000 +02:00
+type: post
+img: metasploit.jpg
+published: true
+status: publish
+categories:
+- Nasıl
+- Araştırma
+tags:
+- msfconsole
+- metasploit Framework
+- Metasploit Framework VNC tarama
+- msf vnc tarama
+excerpt: Bazen sistem yöneticileri, kurdukları servislerin güvenlik ayarlarını yapmayı eksik bırakırlar. Klasik yapılan hatalardan bir tanesi de ağda çalışan servislerin ```guest``` olarak tabir edilen kullanıcılara kapatılmamasıdır. VNC Server, bir bilgisayara uzaktan bağlanılmasını sağlayan servistir.
+---
+
+Bazen sistem yöneticileri, kurdukları servislerin güvenlik ayarlarını yapmayı eksik bırakırlar. Klasik yapılan hatalardan bir tanesi de ağda çalışan servislerin ```guest``` olarak tabir edilen kullanıcılara kapatılmamasıdır. VNC Server, bir bilgisayara uzaktan bağlanılmasını sağlayan servistir. 
+
+Aşağıdaki örnekte, belli bir IP aralığında çalışan ve parolasız erişime izin verilen VNC Server olup olmadıını arayan modül kulanılmıştır. Bu modüle Metasploit Framework içinde **VNC Authentication None Scanner** adı verilmektedir. 
+
+Sistem yöneticisi iseniz, servislerinizi yapılandırırken, bu tür açıkları sürekli arayan birileri olduğunu aklınızdan çıkartmamalısınız.
+
+```sh
+msf auxiliary(vnc_none_auth) > use auxiliary/scanner/vnc/vnc_none_auth
+msf auxiliary(vnc_none_auth) > show options
+
+Module options:
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   RHOSTS                    yes       The target address range or CIDR identifier
+   RPORT    5900             yes       The target port
+   THREADS  1                yes       The number of concurrent threads
+
+msf auxiliary(vnc_none_auth) > set RHOSTS 192.168.1.0/24
+RHOSTS => 192.168.1.0/24
+msf auxiliary(vnc_none_auth) > set THREADS 50
+THREADS => 50
+msf auxiliary(vnc_none_auth) > run
+
+[*] 192.168.1.121:5900, VNC server protocol version : RFB 003.008
+[*] 192.168.1.121:5900, VNC server security types supported : None, free access!
+[*] Auxiliary module execution completed
+```
+
+Çıktıda görüldüğü gibi, ```192.168.1.121:5900``` adresinde VNC Server, parolasız olarak bağlanmaya izin vermektedir.
