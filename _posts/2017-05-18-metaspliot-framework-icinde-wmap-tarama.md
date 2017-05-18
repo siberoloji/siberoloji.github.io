@@ -39,7 +39,7 @@ msf > load wmap
 [*] Successfully loaded plugin: wmap
 ```
 
-```help komutuyla, wmap eklentisinin sağladığı komutları görüntüleyelim.
+```help``` komutuyla, wmap eklentisinin sağladığı komutları görüntüleyelim.
 
 ```sh
 msf >  help
@@ -83,7 +83,7 @@ msf > wmap_sites -l
 ```
 ## wmap_targets Ayarlama
 
-```wmap_sites``` tabloları, kayır tutan bir tablodur. İleride kullanabileceğiniz adresleri listeler. Taramanın gerçekleştirileceği adresi ```wmap_targets``` tablosuna ```-t``` parametresiyle ayarlamamız gerekiyor.
+```wmap_sites``` tabloları, kayıt tutan bir tablodur. İleride kullanabileceğiniz adresleri listeler. Taramanın gerçekleştirileceği adresi ```wmap_targets``` tablosuna ```-t``` parametresiyle ayarlamamız gerekiyor.
 
 ```sh
 msf > wmap_targets -h
