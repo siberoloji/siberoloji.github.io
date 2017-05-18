@@ -19,7 +19,7 @@ excerpt: Bazen sistem yöneticileri, kurdukları servislerin güvenlik ayarları
 
 Bazen sistem yöneticileri, kurdukları servislerin güvenlik ayarlarını yapmayı eksik bırakırlar. Klasik yapılan hatalardan bir tanesi de ağda çalışan servislerin ```guest``` olarak tabir edilen kullanıcılara kapatılmamasıdır. VNC Server, bir bilgisayara uzaktan bağlanılmasını sağlayan servistir. 
 
-Aşağıdaki örnekte, belli bir IP aralığında çalışan ve parolasız erişime izin verilen VNC Server olup olmadıını arayan modül kulanılmıştır. Bu modüle Metasploit Framework içinde **VNC Authentication None Scanner** adı verilmektedir. 
+Aşağıdaki örnekte, belli bir IP aralığında çalışan ve parolasız erişime izin verilen VNC Server olup olmadığını arayan modül kullanılmıştır. Bu modüle Metasploit Framework içinde **VNC Authentication None Scanner** adı verilmektedir. 
 
 Sistem yöneticisi iseniz, servislerinizi yapılandırırken, bu tür açıkları sürekli arayan birileri olduğunu aklınızdan çıkartmamalısınız.
 
