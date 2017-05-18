@@ -14,10 +14,10 @@ tags:
 - metasploit Framework
 - Metasploit Framework kendi tayarıcını yazma
 - msf tarayıcı script yazma
-excerpt: Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar içn kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
+excerpt: Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
 ---
 
-Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar içn kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
+Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
 
 Programlama diliyle söyleyecek olursak, Metasploit Framework içinde kullanılan bütün sınıflara (class) erişim ve kullanım imkanınız bulunmaktadır. 
 
@@ -87,7 +87,7 @@ Detaylı kullanım örnekleri için Metasploit içerisinde bulunan modülleri in
 
 ## Sonuçları Kaydetme
 
-Raporlama metodu ```report_*()``` kulanıcıya aşağıdaki imkanları sunar. Bunun için veri tabanı kullanıyor olmalısınız.
+Raporlama metodu ```report_*()``` kullanıcıya aşağıdaki imkanları sunar. Bunun için veri tabanı kullanıyor olmalısınız.
 
 * Veri tabanı bağlantısı olup olmadığını kontrol eder.
 * Çift kayıt olup olmadığını kontrol eder.
