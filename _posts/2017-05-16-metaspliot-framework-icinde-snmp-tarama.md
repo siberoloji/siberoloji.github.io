@@ -29,6 +29,7 @@ SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -I -smux -p /var/run/snmpd.pid 127.0.0.1'
 to
 
 SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -I -smux -p /var/run/snmpd.pid 0.0.0.0'
+
 A service restart will be needed in order for the changes to take effect. Once restarted, you will now be able to scan the service from your attacking machine.
 
 What is a MIB?
