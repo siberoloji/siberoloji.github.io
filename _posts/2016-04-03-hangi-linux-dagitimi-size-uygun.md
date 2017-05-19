@@ -3,6 +3,7 @@ layout: post
 title: Hangi Linux Dağıtımı Size Uygun?
 date: 2016-04-03 09:03:09.000000000 +03:00
 type: post
+author: siberoloji
 img: linux1.png
 published: true
 status: publish

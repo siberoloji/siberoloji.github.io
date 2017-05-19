@@ -3,6 +3,7 @@ layout: post
 title: MSF Başlangıçta Database Hatası
 date: 2017-05-13 08:50:06.000000000 +02:00
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: 5 Adımda LAMP Kurulum (Ubuntu 14.04)
 date: 2016-04-01 22:33:14.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber9.jpg
 published: true
 status: publish

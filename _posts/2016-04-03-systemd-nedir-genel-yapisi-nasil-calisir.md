@@ -3,6 +3,7 @@ layout: post
 title: systemd nedir? Genel Yapısı Nasıldır?
 date: 2016-04-03 08:57:23.000000000 +03:00
 type: post
+author: siberoloji
 img: linux1.png
 published: true
 status: publish

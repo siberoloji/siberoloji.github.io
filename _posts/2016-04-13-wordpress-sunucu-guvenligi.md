@@ -3,6 +3,7 @@ layout: post
 title: Wordpress Sunucu Güvenliği Dinlemek İster misiniz?
 date: 2016-04-13 22:26:00.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber5.jpg
 published: true
 status: publish

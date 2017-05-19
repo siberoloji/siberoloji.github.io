@@ -2,7 +2,9 @@
 layout: post
 title: MSF İçinde WMAP Tarama
 date: 2017-05-18 08:20:06.000000000 +02:00
+author: siberoloji
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

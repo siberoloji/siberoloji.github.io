@@ -3,6 +3,7 @@ layout: post
 title: Linux ile Metin Filtreleri (head tail sort nl wc uniq sed tac cut)
 date: 2016-05-08 14:45:35.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber10.jpg
 published: true
 status: publish

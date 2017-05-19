@@ -3,6 +3,7 @@ layout: post
 title: Linux Sisteminiz İçin 13 Tavsiye
 date: 2016-04-22 01:26:58.000000000 +03:00
 type: post
+author: siberoloji
 img: linux1.png
 published: true
 status: publish

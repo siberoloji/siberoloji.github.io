@@ -3,6 +3,7 @@ layout: post
 title: Dmitry, a simple and powerful tool
 date: 2016-03-22 01:01:47.000000000 +02:00
 type: post
+author: siberoloji
 img: cyber1.jpg
 published: true
 status: publish

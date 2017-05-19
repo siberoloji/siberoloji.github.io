@@ -65,3 +65,16 @@ sass:
 
 # Ruby Gems jekyll-seo-tag
 gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap, jekyll-google_cse]
+
+
+# Author Informations:
+authors:
+  siberoloji:
+    display_name: Siberoloji
+    about: İnternette araştırdığı faydalı bilgileri bu blogta yayınlamaktadır.</br>Genel olarak Linux ve güvenlik konularına ilgi duyar.</br>Yazara ait blog yazıları eğitim amaçlıdır.</br>Etik kuralların dışında kullanım sorumluluğu kullanıcıya aittir.
+    email: mailto:siberoloji@protonmail.com
+    web: http://www.siberoloji.com/
+    twitter: https://twitter.com/siberegitim
+    github: https://github.com/siberoloji/
+    facebook:
+    gravatar: https://s.gravatar.com/avatar/83caf090ae24adba6077ab468449ea16?s=80

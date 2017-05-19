@@ -3,6 +3,7 @@ layout: post
 title: Fish - Komut Satırına Farklı Bir Yaklaşım
 date: 2016-04-27 00:31:55.000000000 +03:00
 type: post
+author: siberoloji
 img: linux-howto.jpg
 published: true
 status: publish

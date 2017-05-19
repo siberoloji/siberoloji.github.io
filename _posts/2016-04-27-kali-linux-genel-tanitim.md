@@ -3,6 +3,7 @@ layout: post
 title: Kali Linux Genel Tanıtım
 date: 2016-04-27 00:51:26.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber4.jpg
 published: true
 status: publish

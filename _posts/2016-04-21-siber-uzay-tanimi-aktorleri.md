@@ -3,6 +3,7 @@ layout: post
 title: Siber Uzay Tanımı ve Aktörleri
 date: 2016-04-21 00:26:16.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber1.jpg
 published: true
 status: publish

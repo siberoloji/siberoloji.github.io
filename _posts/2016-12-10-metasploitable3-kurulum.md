@@ -3,6 +3,7 @@ layout: post
 title: Metasploitable3 Kurulum
 date: 2016-12-10 08:39:06.000000000 +02:00
 type: post
+author: siberoloji
 img: cyber2.jpg
 published: true
 status: publish

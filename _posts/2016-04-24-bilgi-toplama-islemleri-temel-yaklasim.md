@@ -3,6 +3,7 @@ layout: post
 title: Bilgi Toplama İşlemleri -1- Temel Yaklaşım
 date: 2016-04-24 10:37:25.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber7.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: MSF İçinde Nessus Kullanmak
 date: 2017-05-18 08:50:06.000000000 +02:00
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

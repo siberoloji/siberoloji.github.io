@@ -3,6 +3,7 @@ layout: post
 title: Hangi Linux Dağıtımı kullanmalıyım?
 date: 2016-04-03 09:04:33.000000000 +03:00
 type: post
+author: siberoloji
 img: linux1.png
 published: true
 status: publish

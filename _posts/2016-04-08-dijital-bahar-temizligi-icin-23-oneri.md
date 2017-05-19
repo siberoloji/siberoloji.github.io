@@ -3,6 +3,7 @@ layout: post
 title: Dijital Bahar Temizliği için 23 Öneri
 date: 2016-04-08 19:28:49.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber10.jpg
 published: true
 status: publish

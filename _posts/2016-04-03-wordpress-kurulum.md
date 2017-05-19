@@ -3,6 +3,7 @@ layout: post
 title: Ubuntu 14.04 Wordpress Kurulum
 date: 2016-04-03 18:10:33.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber8.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: Linux Redirecting ve Piping Nedir?
 date: 2016-05-10 16:54:14.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber5.jpg
 published: true
 status: publish

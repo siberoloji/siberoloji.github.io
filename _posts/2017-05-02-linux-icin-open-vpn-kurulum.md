@@ -3,6 +3,7 @@ layout: post
 title: Linux için OpenVPN Kurulum
 date: 2017-05-02 18:43:56.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber6.jpg
 published: true
 status: publish

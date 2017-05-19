@@ -3,6 +3,7 @@ layout: post
 title: Kişisel Bilgi Güvenliği İçin 5 Önemli Tespit
 date: 2016-01-16 08:39:06.000000000 +02:00
 type: post
+author: siberoloji
 img: cyber6.jpg
 published: true
 status: publish

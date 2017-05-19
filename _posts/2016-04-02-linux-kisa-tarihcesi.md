@@ -3,6 +3,7 @@ layout: post
 title: Linux'un Kısa Tarihçesi
 date: 2016-04-02 08:50:39.000000000 +03:00
 type: post
+author: siberoloji
 img: linux2.png
 published: true
 status: publish

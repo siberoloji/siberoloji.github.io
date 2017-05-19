@@ -3,6 +3,7 @@ layout: post
 title: MSF İçinde Parola Dinleme
 date: 2017-05-16 08:30:06.000000000 +02:00
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: Linux Terminalde İşlemi Arka Plana Gönderme (Ctrl+Z ve fg)
 date: 2016-04-23 11:42:21.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber10.jpg
 published: true
 status: publish

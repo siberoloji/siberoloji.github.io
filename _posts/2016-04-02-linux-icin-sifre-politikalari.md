@@ -3,6 +3,7 @@ layout: post
 title: Linux İçin Parola Politikaları
 date: 2016-04-02 08:46:10.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber8.jpg
 published: true
 status: publish

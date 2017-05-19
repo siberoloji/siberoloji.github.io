@@ -3,6 +3,7 @@ layout: post
 title: Linux RAM SWAP Dengesi
 date: 2016-04-23 12:02:00.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber9.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: apt-get update / upgrade / dist-upgrade farkı nedir?
 date: 2016-04-01 08:41:24.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber2.jpg
 published: true
 status: publish

@@ -2,44 +2,68 @@
 layout: default
 ---
 <div class="row">
-<div class="col-md-8">
+  <div class="col-md-8">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          <header class="post-header">
-            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-                 
-          </header>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}
+          </time>
+          {% if page.author %} • <b>Yazar: </b> 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ page.author }}
+            </span>
+          </span>
+          {% endif %}
+          <span class="post-categories">
+            {% if post %}
+            {% assign categories = post.categories %}
+            {% else %}
+            {% assign categories = page.categories %}
+            {% endif %}
+            <b>Kategori: </b> 
+            {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+          </span>
+        </p>
+        <hr>
+      </header>
 
-          <div class="post-content" itemprop="articleBody">
-            {{ content }}
-            <hr>
-            <p style="text-align: center;" class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-            <hr>
-          </div>
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+        <hr>
+        {% assign author = site.authors[page.author] %}
+        {% include  author.html %}
+        <hr>
+        <p style="text-align: center;" class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+        <hr>
+      </div>
 
     </article>
     <div class="row">
-        {% if site.disqus-shortname %}
-         {% include disqus.html %}
-        {% endif %}
+      {% if site.disqus-shortname %}
+      {% include disqus.html %}
+      {% endif %}
     </div>
     
     
     <div class="row">
-            <ul class="pager">
-             {% if page.next.url %}
-                    <li><a class="next" href="{{page.next.url | prepend: site.baseurl}}">&laquo; {{page.next.title}}</a></li>
-              {% endif %}
-              {% if page.previous.url %}
-                <li><a class="previous" href="{{page.previous.url | prepend: site.baseurl}}">{{page.previous.title}} &raquo;</a></li>
-              {% endif %}
-            </ul>
-    </div>
-  
-</div>
+      <ul class="pager">
+       {% if page.next.url %}
+       <li><a class="next" href="{{page.next.url | prepend: site.baseurl}}">&laquo; {{page.next.title}}</a></li>
+       {% endif %}
+       {% if page.previous.url %}
+       <li><a class="previous" href="{{page.previous.url | prepend: site.baseurl}}">{{page.previous.title}} &raquo;</a></li>
+       {% endif %}
+     </ul>
+   </div>
 
-{% include sidebar.html %}
+ </div>
+
+ {% include sidebar.html %}
 
 </div>
 

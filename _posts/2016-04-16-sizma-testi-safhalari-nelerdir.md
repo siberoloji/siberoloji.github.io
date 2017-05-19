@@ -3,6 +3,7 @@ layout: post
 title: Sızma Testi Safhaları Nelerdir?
 date: 2016-04-16 17:04:42.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber4.jpg
 published: true
 status: publish

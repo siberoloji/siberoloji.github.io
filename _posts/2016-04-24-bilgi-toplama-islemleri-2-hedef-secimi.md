@@ -3,6 +3,7 @@ layout: post
 title: Bilgi Toplama İşlemleri -2- Hedef Seçimi
 date: 2016-04-24 23:59:24.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber3.jpg
 published: true
 status: publish

@@ -3,6 +3,7 @@ layout: post
 title: Açık anahtar şifreleme (Public Key Cryptography) nedir?
 date: 2016-04-01 02:02:02.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber4.jpg
 published: true
 status: publish

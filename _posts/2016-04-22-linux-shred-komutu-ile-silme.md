@@ -3,6 +3,7 @@ layout: post
 title: Linux Shred Komutu ile Silme
 date: 2016-04-22 12:30:42.000000000 +03:00
 type: post
+author: siberoloji
 img: linux2.png
 published: true
 status: publish

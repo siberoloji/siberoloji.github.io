@@ -3,6 +3,7 @@ layout: post
 title: Linux ile BASH Script Temelleri
 date: 2016-05-11 18:43:56.000000000 +03:00
 type: post
+author: siberoloji
 img: linux-howto.jpg
 published: true
 status: publish

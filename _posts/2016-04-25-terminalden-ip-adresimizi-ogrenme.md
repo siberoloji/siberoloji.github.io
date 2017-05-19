@@ -3,6 +3,7 @@ layout: post
 title: Terminalden IP Adresimizi öğrenme
 date: 2016-04-25 21:48:14.000000000 +03:00
 type: post
+author: siberoloji
 img: linux2.png
 published: true
 status: publish

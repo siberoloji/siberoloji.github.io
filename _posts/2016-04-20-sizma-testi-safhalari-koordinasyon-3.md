@@ -3,6 +3,7 @@ layout: post
 title: Sızma Testi Safhaları (Koordinasyon -3)
 date: 2016-04-20 19:31:04.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber2.jpg
 published: true
 status: publish

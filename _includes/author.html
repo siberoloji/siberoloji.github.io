@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+div#author-content {
+    width:90%;
+    margin:0 auto;
+    padding-bottom: 35px;
+}
+
+img#image-author {
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+#social-author {
+    float:right;    
+
+}
+
+#im-ab {
+    padding-bottom: 2px;
+}
+</style>
+<div class="w3-card-2">
+  <div id="author-content">
+    <h3>Yazar</h3>
+    <hr>
+     <div itemprop="author" id="name-author"><strong>{{ author.display_name }}</strong></div>
+
+     <img itemprop="image" id="image-author" src="{{ author.gravatar }}">
+      <div id="about-author">{{ author.about }}</div>
+      <div id="social-author"> 
+<!--            <a href="{{ author.facebook }}" ><i class="fa fa-facebook-square fa"></i></a> -->
+            <a href="{{ author.twitter }}" target="_blank" ><i class="fa fa-twitter-square fa"></i></a>
+            <a href="{{ author.github }}" target="_blank"><i class="fa fa-github-square fa"></i></a>
+            <a href="{{ author.email }}" target="_blank"><i class="fa fa-envelope-square fa"></i></a>
+      </div>
+    </div>
+</div>

@@ -3,6 +3,7 @@ layout: post
 title: Metasploit Framework Tanıyalım
 date: 2017-05-11 08:39:06.000000000 +02:00
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

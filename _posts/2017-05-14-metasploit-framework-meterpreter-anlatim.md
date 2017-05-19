@@ -3,6 +3,7 @@ layout: post
 title: Metasploit İçinde Meterpreter Tanıyalım
 date: 2017-05-14 08:00:06.000000000 +02:00
 type: post
+author: siberoloji
 img: metasploit.jpg
 published: true
 status: publish

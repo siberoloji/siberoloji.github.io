@@ -3,6 +3,7 @@ layout: post
 title: Siber Güvenlik Alanında Kullanılan Bazı Terimler
 date: 2016-04-13 15:38:28.000000000 +03:00
 type: post
+author: siberoloji
 img: cyber7.jpg
 published: true
 status: publish

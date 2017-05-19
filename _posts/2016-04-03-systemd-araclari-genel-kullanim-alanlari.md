@@ -3,6 +3,7 @@ layout: post
 title: systemd Araçları - Genel Kullanım Alanları
 date: 2016-04-03 08:56:33.000000000 +03:00
 type: post
+author: siberoloji
 img: linux-howto.jpg
 published: true
 status: publish
