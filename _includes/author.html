@@ -9,8 +9,8 @@ div#author-content {
 
 img#image-author {
     margin-left: 0px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 5px;
+    padding-right: 5px;
     float: left;
 }
 
@@ -22,10 +22,16 @@ img#image-author {
 #im-ab {
     padding-bottom: 2px;
 }
+
+#author-header {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
 </style>
 <div class="w3-card-2">
   <div id="author-content">
-    <h3>Yazar</h3>
+    <h3 id="author-header">Yazar</h3>
     <hr>
      <div itemprop="author" id="name-author"><strong>{{ author.display_name }}</strong></div>
 
