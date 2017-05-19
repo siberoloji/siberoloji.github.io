@@ -8,7 +8,6 @@ img: cyber5.jpg
 published: true
 status: publish
 categories:
-- Güvenlik
 - Haberler
 tags:
 - doruk fişek

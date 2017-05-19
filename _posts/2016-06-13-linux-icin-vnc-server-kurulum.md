@@ -2,7 +2,8 @@
 layout: post
 title:  "Linux için VNC Server Kurulum"
 date:   2016-06-13 10:51:47 +0530
-categories: linux vnc server
+categories: 
+- Linux
 img: linux-howto.jpg
 published: true
 author: siberoloji
