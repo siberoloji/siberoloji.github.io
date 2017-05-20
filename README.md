@@ -4,7 +4,7 @@ Bazen internette kafam karışıyor. Önceden arayıp bulduklarımı, tekrar bul
 
 # Biraz Detay
 
-3-4 Sene Wordpress ile takıldıktan sonra Jekyll dünyasına geçmeye karar verdim. Wordpress çok iyi, çok güzel, çok başarılı, çok esnek, çok herkese faydalı, çok çok ancak; güvenlik, temalar, eklentiler, yok öyle yok böyle, yok şöyle derken değişkilik yapmanın vaktinin geldiğini anladım.
+3-4 Sene Wordpress ile takıldıktan sonra Jekyll dünyasına geçmeye karar verdim. Wordpress çok iyi, çok güzel, çok başarılı, çok esnek, çok herkese faydalı, çok çok ancak; güvenlik, temalar, eklentiler, yok öyle yok böyle, yok şöyle derken değişiklik yapmanın vaktinin geldiğini anladım.
 
 Bunun için GitHub'a teşekkür ediyorum. Gerçekten çok iyi, çok kullanışlı. Umarım bundan sonra da böyle devam eder.
 
