@@ -13,7 +13,7 @@ tags:
 - netstat
 - netstat komutu
 
-excerpt: netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.
+excerpt: Netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.
 ---
 
 Netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.

