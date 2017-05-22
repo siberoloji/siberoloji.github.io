@@ -7,7 +7,6 @@ published: true
 status: publish
 categories:
 - Linux
-- Linux Blog
 tags:
 - bağıl adres
 - linux dosya yapısı
