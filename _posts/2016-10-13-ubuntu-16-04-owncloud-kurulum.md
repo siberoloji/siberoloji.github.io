@@ -20,7 +20,7 @@ author: siberoloji
 <p>Bu yazıda anlatılanların başarılı olabilmesi için, sisteminizde önceden bulunması gerekenleri mutlaka kontrol etmelisiniz.</p>
 <ul>
 <li><strong>sudo yetkili kullanıcı</strong></li>
-<li><strong>LAMP Paketleri</strong>: ownCloud, çalışmak için bir sunucuya, veritabanına ve PHP yazılımına ihtiyaç duyar. Bu gerekliliklerin güncel olarak sisteminizde bulunması gerekir. LAMP(Linux, Apache, MySQL, PHP)bu gereklilikleri karşılar. LAMP kurulum için bu <a href="http://www.portlinux.com/linux/5-adimda-lamp-kurulum-ubuntu-16-04/" target="_blank">yazımızı</a> kullanabilirsiniz.</li>
+<li><strong>LAMP Paketleri</strong>: ownCloud, çalışmak için bir sunucuya, veritabanına ve PHP yazılımına ihtiyaç duyar. Bu gerekliliklerin güncel olarak sisteminizde bulunması gerekir. LAMP(Linux, Apache, MySQL, PHP)bu gereklilikleri karşılar. LAMP kurulum için bu <a href="https://siberoloji.github.io/linux/5-adimda-lamp-kurulum-ubuntu-16-04/" target="_blank">yazımızı</a> kullanabilirsiniz.</li>
 <li><strong>SSL sertifikası (Zorunlu değil)</strong>: Sistemin SSL güvenliği için SSL sertifikası kullanmayı tercih edebilirsiniz. Kritik ve hassas bilgiler depolanacaksa mutlaka tavsiye ediyoruz. SSL sertifikanız yoksa ownCloud size uyarı verecek fakat çalışmaya devam edecektir.</li>
 </ul>
 <h2 id="step-1-—-owncloud-installation">1.Adım — ownCloud Kurulum</h2>

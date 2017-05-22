@@ -17,7 +17,7 @@ author: siberoloji
 <p id="step-1-create-a-mysql-database-and-user-for-wordpress">Günümüzde blog yayımcılığı veya içerik yönetim sistemi (CMS) denildiğinde ilk akla gelen sistemlerden birisi de şüphesiz Wordpress uygulamasıdır. MySql veritabanı ve PHP işlemleri temelinde çalışan Wordpress kullanıcılarına çok büyük bir esneklik sağlamaktadır. Bu sebeple çok popüler hale gelmiştir. Bu yazımızda Ubuntu 16.04 İşletim Sistemimize Wordpress Kurulum adımlarını göstereceğiz. Aşağıda açıklanan adımları sırayla takip ederek Wordpress Kurulumunu sunucunuza veya yerel bilgisayarınıza yapabilirsiniz.</p>
 <p><!--more--></p>
 <h2>Wordpress kurulum için ön gereksinimler</h2>
-<p>Sisteminizde LAMP Stack kurulu olması gerekmektedir. Kurulu değilse, bu <a href="http://www.portlinux.com/5-adimda-lamp-kurulum-ubuntu-16-04/" target="_blank">adresteki</a> çalışmada belirtilen adımları takip ederek kurabilirsiniz.</p>
+<p>Sisteminizde LAMP Stack kurulu olması gerekmektedir. Kurulu değilse, bu <a href="https://siberoloji.github.io/5-adimda-lamp-kurulum-ubuntu-16-04/" target="_blank">adresteki</a> çalışmada belirtilen adımları takip ederek kurabilirsiniz.</p>
 <p>İnternet bağlantınız olmalıdır.</p>
 <h2>Wordpress kurulum – 1.Adım – Veri Tabanı ve Kullanıcı Oluşturma</h2>
 <p>Burada yapacağımız işlemler, Wordpress Kurulum için hazırlık işlemleridir. Wordpress, ihtiyaç duyduğu bilgileri MySql veri tabanından almak ister. Bu sebeple bir veri tabanına ve bu veri tabanı tablolarını kullanma yetkisine sahip bir kullanıcıya ihtiyaç vardır. Sırayla bunları oluşturalım. Komutların sonundaki ; (noktalı virgül) işaretleri komutlara dahildir. Eksik bırakmamalısınız.</p>
