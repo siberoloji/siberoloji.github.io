@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 20 Örnek İle Netstat Komutu
-date: 2017-05-21 08:00:06.000000000 +02:00
+date: 2017-05-15 08:00:06.000000000 +02:00
 type: post
 author: siberoloji
 img: linux-howto.jpg
