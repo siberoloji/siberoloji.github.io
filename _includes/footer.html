@@ -2,15 +2,15 @@
     <div class="container">
         <div class="row p20">
             {% if site.copyright.name %}
-                <div class="col-md-4 text-center mt25">MIT Licensed by <a target="_blank" href="{{site.copyright.link}}">{{site.copyright.name}}</a> - <a target="_blank" href="{{site.baseurl}}/sitemap.xml">sitemap</a>
-
+                <div class="col-md-4 text-center mt25">MIT Licensed by <a target="_blank" href="{{site.copyright.link}}">{{site.copyright.name}}</a>
                 </div>
             {% endif %}
 
             <div class="col-md-4 text-center mt25" >
                 {% if site.built-by %}
-                <a target="_blank" href="http://webjeda.com"><img src="https://img.shields.io/badge/Built%20by-webjeda-blue.svg" alt="{{site.built-by}}"></a>
+                <a target="_blank" href="http://webjeda.com"><img src="https://img.shields.io/badge/Built%20by-webjeda-blue.svg" alt="{{site.built-by}}"></a>&nbsp;<a target="_blank" href="{{site.baseurl}}/sitemap.xml"><i class="fa fa-sitemap" aria-hidden="true"></i></a>
                 {% endif %}
+
             </div>
             <div class="col-md-4 text-center mt25">
                 <a target="_blank" href="{{site.facebook}}"><li class="social facebook"><img src="{{site.baseurl}}/images/facebook.svg" alt="{{site.facebook}}"></li></a>      
