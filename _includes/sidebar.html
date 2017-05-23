@@ -1,27 +1,27 @@
 <div class="col-md-4 mt20">
-        <div class="post-img">
-           {% if page.img %}
-            <img width="600" src="{{site.baseurl}}/images/{{page.img}}" alt="{{page.title}}">
-            {% else %}
-            <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="site image">
-            {% endif %}
-        </div>
-        <hr>
-        <div class="mt10 recent">
-               
-             <h2>Son Yazılar</h2>        
-             <ul>
-                {% for post in site.related_posts limit:6 %}
+  <div class="post-img">
+   {% if page.img %}
+   <img width="600" src="{{site.baseurl}}/images/{{page.img}}" alt="{{page.title}}">
+   {% else %}
+   <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="site image">
+   {% endif %}
+ </div>
+ <hr>
+ <div class="mt10 recent">
+   
+   <h2>Son Yazılar</h2>        
+   <ul>
+    {% for post in site.related_posts limit:6 %}
 
-                      <li>
-                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
-                      </li>
+    <li>
+      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
+    </li>
 
-                {% endfor %}
-              </ul>
-             
-        </div>
-         <div class="mt10">
+    {% endfor %}
+  </ul>
+  
+</div>
+<div class="mt10">
  <script>
   (function() {
     var cx = '000688360185781879140:kcvupy53t7m';
@@ -34,15 +34,14 @@
   })();
 </script>
 <gcse:search></gcse:search>
-         </div>
-        <div class="mt10">
-            <div class="fb-page" data-href="https://www.facebook.com/Port-Linux-338514219818942/" data-width="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Port-Linux-338514219818942/" class="fb-xfbml-parse-ignore"><a href="{{site.fb-page-url}}">{{site.fb-page-title}}</a></blockquote></div>
-            </div>
-        <div class="mt10 recent">
-        <h2>YouTube Kanalı</h2> 
-        <iframe width="330" height="250" src="https://www.youtube.com/embed/videoseries?list=PL2Q2UedYW5s1jrKxaQPmAHsboQFXHDEal" frameborder="0" allowfullscreen></iframe>
-      <hr>
-      <a class="twitter-timeline" data-lang="tr" data-height="1000" href="https://twitter.com/siberegitim">Tweets by siberegitim</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-
+</div>
+<div class="mt10">
+  <div class="fb-page" data-href="https://www.facebook.com/Port-Linux-338514219818942/" data-width="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Port-Linux-338514219818942/" class="fb-xfbml-parse-ignore"><a href="{{site.fb-page-url}}">{{site.fb-page-title}}</a></blockquote></div>
+</div>
+<div class="mt10 recent">
+  <h2>YouTube Kanalı</h2> 
+  <iframe width="330" height="250" src="https://www.youtube.com/embed/videoseries?list=PL2Q2UedYW5s1jrKxaQPmAHsboQFXHDEal" frameborder="0" allowfullscreen></iframe>
+  <hr>
+  <a class="twitter-timeline" data-lang="tr" data-height="700" href="https://twitter.com/siberegitim">Tweets by siberegitim</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 </div>
