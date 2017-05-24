@@ -41,14 +41,14 @@ disqus-shortname: siberoloji-1
 
 #social
 twitter:
-  username: siberegitim
-twitter: https://twitter.com/@siberegitim
+  username: cyberolog
+twitter: https://twitter.com/@cyberolog
 github: https://github.com/siberoloji
 youtube: https://www.youtube.com/channel/UCalHdyzmz5W7L8BXQSUOXig
 facebook: https://www.facebook.com/Siber-Konular-338514219818942/
 moodle: http://egitim.siberoloji.com
 links:
-  - https://twitter.com/@siberegitim
+  - https://twitter.com/@cyberolog
   - https://github.com/siberoloji
   - https://plus.google.com/u/0/106526272070375055367
   - https://www.youtube.com/channel/UCalHdyzmz5W7L8BXQSUOXig
@@ -74,7 +74,7 @@ authors:
     about: İnternette araştırdığı faydalı bilgileri bu blogta yayınlamaktadır.</br>Genel olarak Linux ve güvenlik konularına ilgi duyar.</br>Yazara ait blog yazıları eğitim amaçlıdır.</br>Etik kuralların dışında kullanım sorumluluğu kullanıcıya aittir.
     email: mailto:siberoloji@protonmail.com
     web: http://www.siberoloji.com/
-    twitter: https://twitter.com/siberegitim
+    twitter: https://twitter.com/cyberolog
     github: https://github.com/siberoloji/
     facebook:
     gravatar: https://s.gravatar.com/avatar/83caf090ae24adba6077ab468449ea16?s=80
