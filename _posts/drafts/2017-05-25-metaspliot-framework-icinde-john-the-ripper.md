@@ -1,7 +1,7 @@
 ---
 title: MSF İçinde John The Ripper
 layout: post
-date: '2017-05-25 09:12:06 +0300'
+date: 2017-05-25 09:12:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg

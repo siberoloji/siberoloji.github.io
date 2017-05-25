@@ -16,7 +16,7 @@ tags:
 - Metasploit Framework client exploit
 - msf client side exploit
 
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa da içerisine zararlı kodlar gömülebilir. 
+excerpt: Bu yazımızdan itibaren yetki yükseltme olarak ifade edilen (İng: Privilege Escalation) kavramı inceleyeceğiz. Karşı sisteme erişim sağlayan güvenlik denetçisini bu aşamadan itibaren ilerleme sağlamayı hedeflemelidir. Ağda devam eden iletişimi kontrol etme, hash değerlerini elde etme bunlara örnek olarak verilebilir. 
 ---
 
 ## Ya sonra?
