@@ -1,7 +1,7 @@
 ---
 title: MSF Registry Üzerinde Çalışma
 layout: post
-date: '2017-05-25 09:04:06.000000000 +02:00
+date: 2017-05-25 09:04:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
