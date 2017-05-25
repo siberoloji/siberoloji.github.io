@@ -23,6 +23,7 @@ GEM
       jekyll (~> 3.3)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-email-protect (1.0.3)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-google_cse (1.0.0)
@@ -75,6 +76,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-admin
+  jekyll-email-protect
   jekyll-feed (~> 0.6)
   jekyll-google_cse
   jekyll-paginate
