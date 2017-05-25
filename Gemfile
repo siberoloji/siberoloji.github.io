@@ -38,4 +38,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-google_cse'
 gem 'jekyll-paginate'
-gem 'jekyll-email-protect'
+

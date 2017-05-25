@@ -64,7 +64,7 @@ sass:
   style: compressed
 
 # Ruby Gems jekyll-seo-tag
-gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap, jekyll-google_cse, jekyll-email-protect]
+gems: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-sitemap, jekyll-google_cse]
 
 
 # Author Informations:
