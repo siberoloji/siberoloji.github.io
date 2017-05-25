@@ -5,7 +5,7 @@ date: 2017-05-25 09:12:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: true
+published: false
 status: publish
 categories:
 - Nasıl
