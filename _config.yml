@@ -72,7 +72,7 @@ authors:
   siberoloji:
     display_name: Siberoloji
     about: İnternette araştırdığı faydalı bilgileri bu blogta yayınlamaktadır.</br>Genel olarak Linux ve güvenlik konularına ilgi duyar.</br>Yazara ait blog yazıları eğitim amaçlıdır.</br>Etik kuralların dışında kullanım sorumluluğu kullanıcıya aittir.
-    email: siberoloji@protonmail.com
+#    email: siberoloji@protonmail.com
     web: http://www.siberoloji.com/
     twitter: https://twitter.com/cyberolog
     github: https://github.com/siberoloji/
