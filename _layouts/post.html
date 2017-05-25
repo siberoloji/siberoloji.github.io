@@ -27,11 +27,6 @@ layout: default
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
             {% unless forloop.last %}{% endunless %}
             {% endfor %}
-          
-          {% capture time %}{{ content | reading_time }}{% endcapture %}
-          • <b> Okuma Süresi</b> {{ time }} dk. 
-          {% capture words %}{{ content | count_words }}{% endcapture %}
-          {{ words }} Kelime
          </span>
         </p>
         <hr>
