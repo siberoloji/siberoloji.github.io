@@ -38,4 +38,5 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem 'jekyll-google_cse'
 gem 'jekyll-paginate'
-
+gem 'liquid_reading_time'
+gem 'nokogiri'

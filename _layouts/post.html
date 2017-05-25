@@ -22,12 +22,17 @@ layout: default
             {% else %}
             {% assign categories = page.categories %}
             {% endif %}
-            <b>Kategori: </b> 
+            • <b>Kategori: </b> 
             {% for category in categories %}
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% unless forloop.last %}{% endunless %}
             {% endfor %}
-          </span>
+          
+          {% capture time %}{{ content | reading_time }}{% endcapture %}
+          • <b> Okuma Süresi</b> {{ time }} dk. 
+          {% capture words %}{{ content | count_words }}{% endcapture %}
+          {{ words }} Kelime
+         </span>
         </p>
         <hr>
       </header>
