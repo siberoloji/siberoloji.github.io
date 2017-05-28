@@ -16,5 +16,5 @@ permalink: /search/
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search enableAutoComplete="true"></gcse:search>
 </div>
