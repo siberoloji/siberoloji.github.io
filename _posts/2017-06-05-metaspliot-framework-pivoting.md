@@ -1,7 +1,7 @@
 ---
 title: MSF Pivoting
 layout: post
-date: 2017-05-25 09:07:06.000000000 +02:00
+date: 2017-06-05 09:07:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
