@@ -10,8 +10,40 @@ apt sistemlerinde apt-get update, apt-get upgrade ve apt-get dist-upgrade ne iş
 
 **CEVAP:**
 
-[İlgili blog yazısı](https://siberoloji.github.io/apt-get-update-upgrade-dist-upgrade-farki-nedir/)
+[Cevap ilgili blog yazısında](https://siberoloji.github.io/apt-get-update-upgrade-dist-upgrade-farki-nedir/)
+
+---
 
 **SORU:** 
 
+systemd kullanan sistemlerde, işletim sisteminin açılış süresini hangi komutla görebilirim?
+
 **CEVAP:**
+
+```sh
+systemd-analyze
+```
+
+---
+
+**SORU:** 
+
+systemd kullanan sistemlerde, hangi servisin başlangıçta ne kadar sürede başladığını nasıl görebilirim?
+
+**CEVAP:**
+
+```sh
+systemd-analyze blame
+```
+
+---
+
+**SORU:** 
+
+
+
+**CEVAP:**
+
+
+
+---
