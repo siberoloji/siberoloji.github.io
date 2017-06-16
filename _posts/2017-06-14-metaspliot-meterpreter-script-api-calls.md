@@ -5,7 +5,7 @@ date: 2017-06-14 09:03:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -16,51 +16,78 @@ tags:
 - Metasploit Framework timestomp
 - msf meterpreter timestomp
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Önceki script düzenleme yazımızda, meterpreter oturumunda kullanılan script dosyasının genel mimari yapısını açıklamaya çalışmıştık. Bu yazımızda, sürekli kullanılan ve işimize yarayacak API çağrı kodlarını tek tek görelim ve ne işe yaradığını açıklayalım.
 ---
 
-Useful API Calls
-We will cover some common API calls for scripting the Meterpreter and write a script using some of these API calls. For further API calls and examples, look at the Command Dispacher code and the REX documentation that was mentioned earlier.
+# Kullanışlı API Çağrıları
 
-For this, it is easiest for us to use the irb shell which can be used to run API calls directly and see what is returned by these calls. We get into the irb by running the ‘irb’ command from the Meterpreter shell.
+Önceki script düzenleme yazımızda, meterpreter oturumunda kullanılan script dosyasının genel mimari yapısını açıklamaya çalışmıştık. Bu yazımızda, sürekli kullanılan ve işimize yarayacak API çağrı kodlarını tek tek görelim ve ne işe yaradığını açıklayalım.
 
+Bu çağrıları kendi dosyanızı oluşturarak deneyebileceğiniz gibi Meterpreter oturumu içerisinden ```irb``` komutuyla Ruby girişimcisini kullanarak direk hedef sistemde de çalıştırabilirsiniz. ```irb``` girişimcisini, meterpreter oturumu açık durumdayken, aşağıdaki örnekte olduğu gibi başlatabilirsiniz.
+
+```sh
 meterpreter > irb
 [*] Starting IRB shell
 [*] The 'client' variable holds the meterpreter client
 
 >>
-We will start with calls for gathering information on the target. Let’s get the machine name of the target host. The API call for this is ‘client.sys.config.sysinfo’
+```
 
+## client.sys.config.sysinfo
+
+Bu komut, sistem hakkında bir takım bilgileri öğrenmemizi sağlar. Aşağıda, ```client.sys.config.sysinfo``` API çağrısının bir kaç örneğini görebilirsiniz.
+
+```sh
 >> client.sys.config.sysinfo
 => {"OS"=>"Windows XP (Build 2600, Service Pack 3).", "Computer"=>"WINXPVM01"}
 >>
-As we can see in irb, a series of values were returned. If we want to know the type of values returned, we can use the class object to learn what is returned:
+```
+Komut çıktısında görüldüğü gibi, ekrana getirilen bilginin aslında farklı alt sınıfları bulunmaktadır. Örneğin, "OS" ve "Computer" bu çağrının alt sınıfıdır. İstersek, sadece bu sınıf bilgilerini de öğrenebiliriz. Bunun için çağrı komutu aşağıdaki gibi kullanılabilir.
 
+```sh
 >> client.sys.config.sysinfo.class
 => Hash
 >>
-We can see that we got a hash, so we can call elements of this hash through its key. Let’s say we want the OS version only:
+```
 
+```sh
 >> client.sys.config.sysinfo['OS']
 => "Windows XP (Build 2600, Service Pack 3)."
 >>
-Now let’s get the credentials under which the payload is running. For this, we use the ‘client.sys.config.getuid’ API call:
+```
 
+## client.sys.config.getuid
+
+Bu çağrı kullanıcı bilgilerini elde etmek için kullanılır.
+
+```sh
 >> client.sys.config.getuid
 => "WINXPVM01\labuser"
 >>
-To get the process ID under which the session is running, we use the ‘client.sys.process.getpid’ call which can be used for determining what process the session is running under:
+```
 
+## client.sys.process.getpid
+
+Bu çağrı sayesinde, Meterpreter oturumunun hangi program içine gömülü olarak çalıştığını öğrenebiliriz.
+
+```sh
 >> client.sys.process.getpid
 => 684
-We can use API calls under ‘client.sys.net’ to gather information about the network configuration and environment in the target host. To get a list of interfaces and their configuration we use the API call ‘client.net.config.interfaces’:
 
+## client.net.config.interfaces
+
+Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde edebilirsiniz.
+
+```sh
 >> client.net.config.interfaces
 => [#, #]
 >> client.net.config.interfaces.class
 => Array
-As we can see it returns an array of objects that are of type Rex::Post::Meterpreter::Extensions::Stdapi::Net::Interface that represents each of the interfaces. We can iterate through this array of objects and get what is called a pretty output of each one of the interfaces like this:
+```
 
+Gördüğünüz gibi, API çağrısı array tipi bir değişken kullanmaktadır. Bu değişken tipini aşağıdaki gibi döngüde kullanarak sonuçları görebiliriz.
+
+```sh
  >> interfaces = client.net.config.interfaces
  => [#, #]
  >> interfaces.each do |i|
@@ -75,3 +102,4 @@ As we can see it returns an array of objects that are of type Rex::Post::Meterpr
  Hardware MAC: 00:0c:29:dc:aa:e4
  IP Address  : 192.168.1.104
  Netmask     : 255.255.255.0
+```

@@ -13,8 +13,8 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework script düzenleme
+- msf meterpreter düzenleme
 
 excerpt: Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için "Hello World" ruby kodu yazalım,
 ---

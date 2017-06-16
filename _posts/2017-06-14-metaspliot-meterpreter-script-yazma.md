@@ -13,8 +13,8 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework script
+- msf meterpreter script
 
 excerpt: Meterpreter script yazmak için göz önünde bulundurulması gereken kuralları göreceğiz. Ardından, basit bir .exe dosyası üreteceğiz.
 ---
