@@ -19,37 +19,51 @@ tags:
 excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
 ---
 
-Custom Scripting
-Now that we have a feel for how to use irb to test API calls, let’s look at what objects are returned and test basic constructs. Now, no first script would be complete without the standard Hello World, so lets create a script named helloworld.rb and save it to /usr/share/metasploit-framework/scripts/meterpreter.
+# Script Yazma
 
+Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için "Hello World" ruby kodu yazalım ve ```helloworld.rb``` olarak ```/usr/share/metasploit-framework/scripts/meterpreter``` klaösrüne kayıt edelim.
+
+```sh
 root@kali:~# echo “print_status(“Hello World”)” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
-We now execute our script from the console by using the run command.
+```
 
+Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
+
+```sh
 meterpreter > run helloworld
 [*] Hello World
 meterpreter >
-Now, lets build upon this base. We will add a couple of other API calls to the script. Add these lines to the script:
+```
 
+Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise ibr kaç API çağrısını ```helloworld.rb``` dosyamızın içine ekleyelim. Aşağıdaki satırları metin editör kullanarak ekleyebilirsiniz.
+
+```sh
 print_error(“this is an error!”)
 print_line(“this is a line”)
-Much like the concept of standard in, standard out, and standard error, these different lines for status, error, and line all serve different purposes on giving information to the user running the script.
+```
 
-Now, when we execute our file we get:
+Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.
 
+```sh
 meterpreter > run helloworld
 [*] Hello World
 [-] this is an error!
 this is a line
 meterpreter >
- 
+```
 
-helloworld.rb
+# helloworld.rb
 
+Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.
+
+```
 print_status("Hello World")
 print_error("this is an error!")
 print_line("This is a line")
-Wonderful! Let’s go a bit further and create a function to print some general information and add error handling to it in a second file. This new function will have the following architecture:
+```
+Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.
 
+```sh
  def geninfo(session)
     begin
     …..
@@ -57,6 +71,9 @@ Wonderful! Let’s go a bit further and create a function to print some general 
     …..
     end
  end
+```
+
+Bu yapıyı oluşturmak için 
 The use of functions allows us to make our code modular and more re-usable. This error handling will aid us in the troubleshooting of our scripts, so using some of the API calls we covered previously, we could build a function that looks like this:
 
  def getinfo(session)
@@ -71,6 +88,8 @@ The use of functions allows us to make our code modular and more re-usable. This
        print_error("The following error was encountered #{e}")
     end
  end
+
+
 Let’s break down what we are doing here. We define a function named getinfo which takes one paramater that we are placing in a local variable named ‘session’. This variable has a couple methods that are called on it to extract system and user information, after which we print a couple of status lines that report the findings from the methods. In some cases, the information we are printing comes out from a hash, so we have to be sure to call the variable correctly. We also have an error handler placed in there that will return what ever error message we might encounter.
 
 Now that we have this function, we just have to call it and give it the Meterpreter client session. To call it, we just place the following at the end of our script:
