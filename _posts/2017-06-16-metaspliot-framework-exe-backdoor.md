@@ -1,5 +1,5 @@
 ---
-title: MSF EXE Arkakapısı
+title: MSF EXE Arka Kapısı
 layout: post
 date: 2017-06-16 09:01:06.000000000 +02:00
 type: post

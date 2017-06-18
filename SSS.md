@@ -40,6 +40,36 @@ systemd-analyze blame
 
 **SORU:** 
 
+Bir web adresinin IP adresini nasıl bulabilirim?
+
+**CEVAP:**
+
+```resolveip www.example.com```
+
+---
+
+**SORU:** 
+
+Bir Linux sisteminde kimler oturum açmış durumda ve ne yapıyorlar, Nasıl görüntülenir?
+
+**CEVAP:**
+
+```w```
+
+---
+
+**SORU:** 
+
+Dosya adında uzantı olmayan bir dosyanın türünü (jpg,doc,exe,pdf?) nasıl öğrenebiliriz?
+
+**CEVAP:**
+
+```file dosya```
+
+---
+
+**SORU:** 
+
 
 
 **CEVAP:**
