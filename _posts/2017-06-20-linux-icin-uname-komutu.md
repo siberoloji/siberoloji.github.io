@@ -10,7 +10,7 @@ published: true
 status: publish
 categories:
 - Nasıl
-- Araştırma
+- Linux
 tags:
 - uname
 - uname komutu
