@@ -9,7 +9,7 @@ featured: true
 published: true
 status: publish
 categories:
-- Nasıl
+- Haberler
 - Araştırma
 tags:
 - online eğitim
