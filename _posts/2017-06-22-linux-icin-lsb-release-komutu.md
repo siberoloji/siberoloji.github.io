@@ -23,7 +23,7 @@ Bu yazıda, Linux İşletim sisteminizde kullanabileceğiniz ```lsb_release``` k
 
 # lsb_relase
 
-```lsb_relase``` komutu sisteminiz hakkında kullanabileceğiniz komutlardan bir tanesidir. Bukomut, ```lsb-core``` olarak adlandırılan paketin bir parçasıdır. ```lsb_release``` komutunu verdiğinizde herhangi bir çıktı alamıyorsanız ```sudo apt install lsb-core``` komutuyla gerekli paketleri yükleyebilirsiniz. 
+```lsb_relase``` komutu sisteminiz hakkında kullanabileceğiniz komutlardan bir tanesidir. Bu komut, ```lsb-core``` olarak adlandırılan paketin bir parçasıdır. ```lsb_release``` komutunu verdiğinizde herhangi bir çıktı alamıyorsanız ```sudo apt install lsb-core``` komutuyla gerekli paketleri yükleyebilirsiniz. 
 
 Öncelikle, yardım bilgilerini görüntüleyelim ve seçenekleri görelim.
 
