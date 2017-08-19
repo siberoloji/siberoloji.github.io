@@ -80,6 +80,17 @@ FreeBSD klavye düzenini değiştirme
 
 **SORU:** 
 
+FreeBSD klavye düzenini sistem başlangıcında Türkçe yapma
+
+**CEVAP:**
+
+/etc/rc.conf dosyasına aşağıdaki ayarlama satırını ekleyin.
+```keymap="/usr/share/syscons/keymaps/tr.iso9.q.kbd"```
+
+---
+
+**SORU:** 
+
 
 
 **CEVAP:**
