@@ -70,6 +70,16 @@ Dosya adında uzantı olmayan bir dosyanın türünü (jpg,doc,exe,pdf?) nasıl 
 
 **SORU:** 
 
+FreeBSD klavye düzenini değiştirme
+
+**CEVAP:**
+
+```kbdmap```
+
+---
+
+**SORU:** 
+
 
 
 **CEVAP:**
