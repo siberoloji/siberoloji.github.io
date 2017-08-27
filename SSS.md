@@ -71,6 +71,7 @@ FreeBSD güncelleme komutları
 **CEVAP:**
 
 ```freebsd-update fetch```
+
 ```freebsd-update install```
 
 ---
@@ -189,21 +190,34 @@ FreeBSD içine php ve uyumluluk modüllerinin kurulumu (myslq veya postgresql ku
 **CEVAP:**
 
 ```pkg install php71 php71-mysqli php71-xml  php71-gd php71-curl php71-zlib php71-zip php71-hash php71-tokenizer php71-pgsql```
-```cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini```
-```nano /usr/local/etc/php.ini```
-```cgi.fix_pathinfo=0```
-```rehash```
-```sysrc nginx_enable=yes mysql_enable=yes php_fpm_enable=yes postgresql_enable=yes```
-```service mysql-server start```
-```service php-fpm start```
-```nano /usr/local/etc/php-fpm.d/www.conf```
-```;listen = 127.0.0.1:9000``` bu satırın başına ; ekleyelim ve hemen altına aşağıdaki satırı ekleyelim.
-```listen = /var/run/php-fpm.sock```
-ardından aşağıdaki satırların başındaki ; işaretlerini kaldıralım.
-```listen.owner = www```
-```listen.group = www```
-```listen.mode = 0660```
 
+```cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini```
+
+```nano /usr/local/etc/php.ini```
+
+```cgi.fix_pathinfo=0```
+
+```rehash```
+
+```sysrc nginx_enable=yes mysql_enable=yes php_fpm_enable=yes postgresql_enable=yes```
+
+```service mysql-server start```
+
+```service php-fpm start```
+
+```nano /usr/local/etc/php-fpm.d/www.conf```
+
+```;listen = 127.0.0.1:9000``` bu satırın başına ; ekleyelim ve hemen altına aşağıdaki satırı ekleyelim.
+
+```listen = /var/run/php-fpm.sock```
+
+ardından aşağıdaki satırların başındaki ; işaretlerini kaldıralım.
+
+```listen.owner = www```
+
+```listen.group = www```
+
+```listen.mode = 0660```
 
 
 ---
@@ -226,12 +240,19 @@ SSH üzerinden dosya transferine dair ```scp``` örnekleri
 **CEVAP:**
 
 **İki farklı** uzak makinada arasında transfer:
+
 ```scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file```
+
 **Yerel** makinadan **Uzak** Makinaya transfer:
+
 ```scp /path/to/local/file username@hostname:/path/to/remote/file```
+
 **Uzak** Makinadan **Yerel** Makinaya Transfer:
+
 ```scp username@hostname:/path/to/remote/file /path/to/local/file```
+
 Uzak Makinadan Yerel Makinaya **Farklı Port** ile transfer:
+
 ```scp -P 1234 username@hostname:/path/to/remote/file /path/to/local/file```
 
 ---
