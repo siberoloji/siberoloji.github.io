@@ -188,23 +188,21 @@ FreeBSD içine php ve uyumluluk modüllerinin kurulumu (myslq veya postgresql ku
 
 **CEVAP:**
 
-```sh
-pkg install php71 php71-mysqli php71-xml  php71-gd php71-curl php71-zlib php71-zip php71-hash php71-tokenizer php71-pgsql
-cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini
-nano /usr/local/etc/php.ini
-cgi.fix_pathinfo=0
-rehash
-sysrc nginx_enable=yes mysql_enable=yes php_fpm_enable=yes postgresql_enable=yes
-service mysql-server start
-service php-fpm start
-nano /usr/local/etc/php-fpm.d/www.conf
-# ;listen = 127.0.0.1:9000 bu satırın başına ; ekleyelim ve hemen altına aşağıdaki satırı ekleyelim.
-listen = /var/run/php-fpm.sock
+```pkg install php71 php71-mysqli php71-xml  php71-gd php71-curl php71-zlib php71-zip php71-hash php71-tokenizer php71-pgsql```
+```cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini```
+```nano /usr/local/etc/php.ini```
+```cgi.fix_pathinfo=0```
+```rehash```
+```sysrc nginx_enable=yes mysql_enable=yes php_fpm_enable=yes postgresql_enable=yes```
+```service mysql-server start```
+```service php-fpm start```
+```nano /usr/local/etc/php-fpm.d/www.conf```
+```;listen = 127.0.0.1:9000``` bu satırın başına ; ekleyelim ve hemen altına aşağıdaki satırı ekleyelim.
+```listen = /var/run/php-fpm.sock```
 ardından aşağıdaki satırların başındaki ; işaretlerini kaldıralım.
-listen.owner = www
-listen.group = www
-listen.mode = 0660
-```
+```listen.owner = www```
+```listen.group = www```
+```listen.mode = 0660```
 
 
 
