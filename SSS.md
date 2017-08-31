@@ -237,6 +237,7 @@ veya
 ---
 
 **SORU:** 
+
 SSH üzerinden dosya transferine dair ```scp``` örnekleri
 
 **CEVAP:**
@@ -318,10 +319,8 @@ FreeBSD içinde bir NIC kart nasıl test edilir?
 
 NIC kartının kendisine ping sinyali gönderilir. Cevap alınırsa, diğer NIC kartlarının IP adreslerine ping sinyali gönderilir.
 
-```sh
-ping -c5 192.168.1.13
-ping -c5 192.168.2.27
-```
+```ping -c5 192.168.1.13```
+```ping -c5 192.168.2.27```
 
 ---
 
@@ -333,10 +332,8 @@ FreeBSD içinde DHCP Server aktif değilse (Bkz.: ```cat /etc/rc.conf```) manual
 
 ```/etc/rc.conf``` içine aşağıdaki örneğe benzer şekilde satırlar eklenmelidir.
 
-```sh
-ifconfig_dc0="inet 192.168.1.3 netmask 255.255.255.0"
-ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"
-```
+```ifconfig_dc0="inet 192.168.1.3 netmask 255.255.255.0"```
+```ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"```
 
 ---
 
