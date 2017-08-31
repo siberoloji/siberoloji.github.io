@@ -102,6 +102,8 @@ FreeBSD klavye düzenini sistem başlangıcında Türkçe yapma
 
 **CEVAP:**
 
+Freebsd klavye kod dosyaları ```/usr/share/syscons/keymaps/``` klasörünün içinde bulunur. İçeriği görmek için ```ls /usr/share/syscons/keymaps/``` komutunu kulanabilirsiniz.
+
 /etc/rc.conf dosyasına aşağıdaki ayarlama satırını ekleyin.
 ```keymap="/usr/share/syscons/keymaps/tr.iso9.q.kbd"```
 
@@ -259,7 +261,154 @@ Uzak Makinadan Yerel Makinaya **Farklı Port** ile transfer:
 
 **SORU:** 
 
+FreeBSD boot mesajlarını görme
 
 **CEVAP:**
+
+```more /var/run/dmesg.boot```
+
+---
+
+
+**SORU:** 
+
+FreeBSD Boot Configuration dosyası hangisidir?
+
+```/boot/loader.conf```
+
+**CEVAP:**
+
+---
+
+**SORU:** 
+
+FreeBSD Örnek ayar dosyaları nerede bulunur?
+
+**CEVAP:**
+
+```/usr/share/examples/etc/hosts```
+
+---
+
+**SORU:** 
+
+FreeBSD Network ayarlarını yaptıktan sonra ağ ayarlarını tekrar başlatma
+
+**CEVAP:**
+
+```service netif restart```
+
+---
+
+**SORU:** 
+
+FreeBSD içinde ```/etc/rc.conf``` dosyasında default gateway tanımlanmışsa, ```service netif restart``` komutunu ilave olarak hangi komut çalıştırılır?
+
+**CEVAP:**
+
+```service routing restart```
+
+---
+
+**SORU:** 
+
+FreeBSD içinde bir NIC kart nasıl test edilir?
+
+**CEVAP:**
+
+NIC kartının kendisine ping sinyali gönderilir. Cevap alınırsa, diğer NIC kartlarının IP adreslerine ping sinyali gönderilir.
+
+```sh
+ping -c5 192.168.1.13
+ping -c5 192.168.2.27
+```
+
+---
+
+**SORU:** 
+
+FreeBSD içinde DHCP Server aktif değilse (Bkz.: ```cat /etc/rc.conf```) manual ayar nasıl yapılır.
+
+**CEVAP:**
+
+```/etc/rc.conf``` içine aşağıdaki örneğe benzer şekilde satırlar eklenmelidir.
+
+```sh
+ifconfig_dc0="inet 192.168.1.3 netmask 255.255.255.0"
+ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"
+```
+
+---
+
+**SORU:** 
+
+FreeBSD DNS ayarları yapılmamış ise nasıl yapılır?
+
+**CEVAP:**
+
+```/etc/hosts``` dosyasının içine domain ve IP adrese manual olarak eklenmelidir.
+
+---
+
+**SORU:** 
+
+FreeBSD aktif rotalama tablosunu görme
+
+**CEVAP:**
+
+```netstat -rn```
+
+---
+
+**SORU:** 
+
+FreeBSD içinde dinleme yapan portları görme
+
+**CEVAP:**
+
+```netstat -ln```
+
+---
+
+**SORU:** 
+
+FreeBSD için RAM ve SWAP planlaması nasıl olmalıdır?
+
+**CEVAP:**
+
+RAM miktarı 4GB ve aşağısındaysa, SWAP miktarı RAM miktarnın 2 katı olmalıdır.
+RAM miktarı 4GB dan daha büyükse, SWAP miktarı RAM miktarıyla eşit olmalıdır.
+
+---
+
+**SORU:** 
+
+FreeBSD sistem durumunu öğrenmek için kullanılabilecek komutlar nelerdir?
+
+**CEVAP:**
+
+```ps -x```
+```systat```
+```netstat```
+
+---
+
+**SORU:** 
+
+FreeBSD çalışan prosesleri &CPU sıralı inceleme
+
+**CEVAP:**
+
+```ps ax --no-headings -o user,pid,%cpu,%mem,vsz,sgi_rss,tname,stat,start_time,time,ucmd |sort -nrk 3```
+
+---
+
+**SORU:** 
+
+
+
+**CEVAP:**
+
+
 
 ---
