@@ -319,8 +319,11 @@ FreeBSD içinde bir NIC kart nasıl test edilir?
 
 NIC kartının kendisine ping sinyali gönderilir. Cevap alınırsa, diğer NIC kartlarının IP adreslerine ping sinyali gönderilir.
 
-```ping -c5 192.168.1.13```
-```ping -c5 192.168.2.27```
+```sh
+ping -c5 192.168.1.13
+
+ping -c5 192.168.2.27
+```
 
 ---
 
