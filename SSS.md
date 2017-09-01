@@ -170,7 +170,9 @@ FreeBSD için apache kurulum komutları
 **CEVAP:**
 
 ```pkg install apache24```
+
 ```sysrc apache24_enable="yes"```
+
 ```service apache24 start```
 
 ---
@@ -334,6 +336,7 @@ FreeBSD içinde DHCP Server aktif değilse (Bkz.: ```cat /etc/rc.conf```) manual
 ```/etc/rc.conf``` içine aşağıdaki örneğe benzer şekilde satırlar eklenmelidir.
 
 ```ifconfig_dc0="inet 192.168.1.3 netmask 255.255.255.0"```
+
 ```ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"```
 
 ---
