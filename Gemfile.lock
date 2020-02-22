@@ -5,7 +5,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     backports (3.8.0)
     colorator (1.1.0)
-    ffi (1.9.18)
+    ffi (1.12.2)
     forwardable-extended (2.6.0)
     jekyll (3.4.3)
       addressable (~> 2.4)
