@@ -157,6 +157,30 @@
                 href="http://localhost:1313/tr/about/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tr/docs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr-TR"
+                href="http://localhost:1313/tr/docs/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tr/docs/folder/leaf/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/docs/folder/leaf/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr-TR"
+                href="http://localhost:1313/tr/docs/folder/leaf/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tr/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -181,18 +205,6 @@
                 href="http://localhost:1313/tr/docs/first-page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tr/docs/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/docs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/docs/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tr/docs/folder/</loc>
     <xhtml:link
                 rel="alternate"
@@ -203,18 +215,6 @@
                 rel="alternate"
                 hreflang="tr-TR"
                 href="http://localhost:1313/tr/docs/folder/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tr/docs/folder/leaf/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/docs/folder/leaf/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/docs/folder/leaf/"
                 />
   </url>
 </urlset>

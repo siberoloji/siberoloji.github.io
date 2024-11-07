@@ -1,6 +1,7 @@
 ---
-title: Documentation
+title: Belgeler
 next: first-page
+toc: true
 ---
 
 Tema yerleşim demosu.

@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Siberoloji – Documentation</title>
+    <title>Siberoloji – Belgeler</title>
     <link>http://localhost:1313/tr/docs/</link>
-    <description>Recent content in Documentation on Siberoloji</description>
+    <description>Recent content in Belgeler on Siberoloji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     
@@ -15,6 +15,20 @@
     
     
     <item>
+      <title>Bilgi Sayfası</title>
+      <link>http://localhost:1313/tr/docs/folder/leaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/docs/folder/leaf/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu sayfa bir klasörün altındadır&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Demo Page</title>
       <link>http://localhost:1313/tr/docs/first-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,20 +38,6 @@
         
         
         &lt;p&gt;Demo sayfası&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Leaf Page</title>
-      <link>http://localhost:1313/tr/docs/folder/leaf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tr/docs/folder/leaf/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Bu sayfa bir klasörün altındadır&lt;/p&gt;
 
       </description>
     </item>

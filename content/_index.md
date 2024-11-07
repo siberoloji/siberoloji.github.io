@@ -2,6 +2,7 @@
 date: '2024-11-07T16:37:49+03:00'
 draft: false
 title: 'Siberoloji Center'
+toc: true
 ---
 
 This is the landing page. Last update:06.11.2024 22:02

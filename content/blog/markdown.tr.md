@@ -1,5 +1,6 @@
 ---
 title: Markdown Syntax Kılavuzu
+toc: false
 date: 2020-01-01
 authors:
   - name: İbrahim Korucuoğlu

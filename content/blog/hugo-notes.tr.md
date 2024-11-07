@@ -5,7 +5,7 @@ authors:
   - name: İbrahim Korucuoğlu
     link: https://github.com/siberoloji
     image: https://github.com/siberoloji.png
-
+toc: true
 tags:
   - Hugo
   - Notes

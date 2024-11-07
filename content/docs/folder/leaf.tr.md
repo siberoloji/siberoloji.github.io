@@ -1,5 +1,6 @@
 ---
-title: Leaf Page
+title: Bilgi Sayfası
+toc: false
 type: docs
 prev: docs/folder/
 ---

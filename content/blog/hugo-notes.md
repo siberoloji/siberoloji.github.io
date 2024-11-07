@@ -5,7 +5,7 @@ authors:
   - name: İbrahim Korucuoğlu
     link: https://github.com/siberoloji
     image: https://github.com/siberoloji.png
-
+toc: true
 tags:
   - Hugo
   - Notes
@@ -14,3 +14,7 @@ excludeSearch: false
 ---
 
 ## Notes for Hugo
+
+### Quickstart
+
+You should install Hugo, Git before creating a web site.

@@ -1,12 +1,11 @@
 ---
 title: Siberoloji
-toc: false
+toc: true
 ---
 
 Başlangıç sayfası. Last update:06.11.2024 22:02
 
 ## Explore
-
 
 {{< cards >}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
