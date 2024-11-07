@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Categories</title>
+    <link>http://localhost:1313/tr/categories/</link>
+    <description>Recent content in Categories on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    
+	  <atom:link href="http://localhost:1313/tr/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

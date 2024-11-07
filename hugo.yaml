@@ -1,0 +1,127 @@
+baseURL: https://siberoloji.github.io/
+languageCode: en-us
+title: Siberoloji
+theme: 'hextra'
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: Siberoloji
+  tr:
+    languageName: Turkish
+    languageCode: tr-TR
+    weight: 2
+    title: Siberoloji
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - identifier: documentation
+      name: Documentation
+      pageRef: /docs
+      weight: 1
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      weight: 3
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/siberoloji"
+      params:
+        icon: github
+    - name: Twitter
+      weight: 7
+      url: "https://twitter.com/siberoloji_ltd"
+      params:
+        icon: x-twitter
+
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
+#    - identifier: hugoDocs
+#      name: "Hugo Docs ↗"
+#      url: "https://gohugo.io/documentation/"
+#      weight: 3
+
+
+params:
+  description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      # width: 40
+      # height: 20
+      # link: /
+    width: wide
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+    width: normal
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  editURL:
+    enable: false
+    base: "https://github.com/siberoloji/siberoloji.github.io/edit/main/content"
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
