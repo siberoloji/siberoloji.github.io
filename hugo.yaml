@@ -14,11 +14,8 @@ languages:
     languageName: English
     weight: 1
     title: Siberoloji
-  tr:
-    languageName: Turkish
-    languageCode: tr-TR
-    weight: 2
-    title: Siberoloji
+    params:
+      subtitle: Useful content and news
 
 markup:
   # allow raw html
