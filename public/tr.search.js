@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!resultsElement) return;
 
     if (!results.length) {
-      resultsElement.innerHTML = `<span class="no-result">No results found.</span>`;
+      resultsElement.innerHTML = `<span class="no-result">Sonuç bulunamadı.</span>`;
       return;
     }
 

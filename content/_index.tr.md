@@ -1,4 +1,6 @@
 ---
+date: '2024-11-07T16:37:49+03:00'
+draft: false
 title: Siberoloji
 toc: true
 ---
