@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Notes</title>
+    <link>http://localhost:1313/en/tags/notes/</link>
+    <description>Recent content in Notes on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Nov 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/en/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Hugo Static Generated Web Site</title>
+      <link>http://localhost:1313/hugo-static-generated-web-site/</link>
+      <pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/hugo-static-generated-web-site/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Notes for Hugo&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;notes-for-hugo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#notes-for-hugo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Quickstart&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;quickstart&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#quickstart&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You should install Hugo, Git before creating a web site.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

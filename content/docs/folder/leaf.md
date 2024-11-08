@@ -3,6 +3,7 @@ title: Leaf Page
 toc: true
 type: docs
 prev: docs/folder/
+url: leaf-page
 ---
 
 ## Header 2

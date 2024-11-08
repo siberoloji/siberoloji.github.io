@@ -1,0 +1,47 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Docs</title>
+    <link>http://localhost:1313/en/tr/docs/</link>
+    <description>Recent content in Docs on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Nov 2024 16:38:02 +0300</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/en/tr/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Demo Page</title>
+      <link>http://localhost:1313/en/demo-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/demo-page/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A simple demo page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Folder</title>
+      <link>http://localhost:1313/en/tr/docs/folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/tr/docs/folder/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Pages can be organized into folders.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

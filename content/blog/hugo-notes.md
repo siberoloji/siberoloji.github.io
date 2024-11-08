@@ -1,5 +1,6 @@
 ---
 title: Hugo Static Generated Web Site
+url: /hugo-static-generated-web-site/
 date: 2024-11-07
 authors:
   - name: İbrahim Korucuoğlu

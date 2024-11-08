@@ -6,7 +6,7 @@
     <lastmod>2024-11-07T16:38:02+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/docs/"
                 />
     <xhtml:link
@@ -19,7 +19,7 @@
     <lastmod>2024-11-07T16:37:49+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/"
                 />
     <xhtml:link
@@ -32,7 +32,7 @@
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/blog/"
                 />
     <xhtml:link
@@ -45,7 +45,7 @@
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/hugo/"
                 />
     <xhtml:link
@@ -58,7 +58,7 @@
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/hugo-guide/"
                 />
     <xhtml:link
@@ -67,24 +67,24 @@
                 href="http://localhost:1313/tags/hugo-guide/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/hugo-notes/</loc>
+    <loc>http://localhost:1313/hugo-static-generated-web-site/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/blog/hugo-notes/"
+                hreflang="tr"
+                href="http://localhost:1313/hugo-statik-web-sitesi-araci/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/blog/hugo-notes/"
+                href="http://localhost:1313/hugo-static-generated-web-site/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/notes/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/notes/"
                 />
     <xhtml:link
@@ -97,7 +97,7 @@
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/"
                 />
     <xhtml:link
@@ -106,11 +106,63 @@
                 href="http://localhost:1313/tags/"
                 />
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-11-03T00:47:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm/</loc>
+    <lastmod>2024-11-03T00:47:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm-nasil-kurulur/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/raspberry-pi/</loc>
+    <lastmod>2024-11-03T00:47:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/categories/raspberry-pi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/raspberry-pi/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/zabbix/</loc>
+    <lastmod>2024-11-03T00:47:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/zabbix/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/zabbix/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/example/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/example/"
                 />
     <xhtml:link
@@ -123,7 +175,7 @@
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/guide/"
                 />
     <xhtml:link
@@ -136,7 +188,7 @@
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/tags/markdown/"
                 />
     <xhtml:link
@@ -145,23 +197,23 @@
                 href="http://localhost:1313/tags/markdown/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/markdown/</loc>
+    <loc>http://localhost:1313/markdown-syntax-guide/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/blog/markdown/"
+                hreflang="tr"
+                href="http://localhost:1313/markdown-kilavuzu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/blog/markdown/"
+                href="http://localhost:1313/markdown-syntax-guide/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/about/"
                 />
     <xhtml:link
@@ -170,34 +222,22 @@
                 href="http://localhost:1313/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/demo-page/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/categories/"
+                hreflang="tr"
+                href="http://localhost:1313/tr/demo-sayfasi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/docs/first-page/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/docs/first-page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/docs/first-page/"
+                href="http://localhost:1313/demo-page/"
                 />
   </url><url>
     <loc>http://localhost:1313/docs/folder/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
+                hreflang="tr"
                 href="http://localhost:1313/tr/docs/folder/"
                 />
     <xhtml:link
@@ -206,16 +246,16 @@
                 href="http://localhost:1313/docs/folder/"
                 />
   </url><url>
-    <loc>http://localhost:1313/docs/folder/leaf/</loc>
+    <loc>http://localhost:1313/leaf-page/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="tr-TR"
-                href="http://localhost:1313/tr/docs/folder/leaf/"
+                hreflang="tr"
+                href="http://localhost:1313/tr/alt-sayfa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/docs/folder/leaf/"
+                href="http://localhost:1313/leaf-page/"
                 />
   </url>
 </urlset>

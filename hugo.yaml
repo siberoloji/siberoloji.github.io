@@ -16,7 +16,12 @@ languages:
     title: Siberoloji
     params:
       subtitle: Useful content and news
-
+  tr:
+    languageName: Turkish
+    weight: 2
+    title: Siberoloji
+    params:
+      subtitle: Faydalı içerik ve haberler
 markup:
   # allow raw html
   goldmark:

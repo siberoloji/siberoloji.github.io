@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Docs</title>
+    <link>http://localhost:1313/en/docs/</link>
+    <description>Recent content in Docs on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Nov 2024 16:38:02 +0300</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/en/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Demo Page</title>
+      <link>http://localhost:1313/en/demo-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/demo-page/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A simple demo page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Leaf Page</title>
+      <link>http://localhost:1313/en/leaf-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/leaf-page/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Header 2&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;header-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#header-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt; Header 3&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;header-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#header-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This page is under a folder.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+---
+date: '2024-11-07T16:38:02+03:00'
+title: 'Belgeler'
+---
+Theme demo
+
+## Merhaba, Dünya
+
+```go {filename="main.go"}
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```

@@ -1,7 +1,7 @@
 ---
 title: Markdown Syntax Guide
-toc: false
-
+url: /markdown-syntax-guide/
+toc: true
 date: 2020-01-01
 authors:
   - name: İbrahim Korucuoğlu
