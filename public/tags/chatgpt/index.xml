@@ -1,0 +1,168 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Chatgpt</title>
+    <link>http://localhost:1313/tags/chatgpt/</link>
+    <description>Recent content in Chatgpt on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Oct 2024 14:08:52 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>What Amount of Resources Does ChatGPT Use on My Computer?</title>
+      <link>http://localhost:1313/what-amount-of-resources-does-chatgpt-use-on-my-computer/</link>
+      <pubDate>Mon, 28 Oct 2024 14:08:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/what-amount-of-resources-does-chatgpt-use-on-my-computer/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongintroductionstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongintroductionstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As the popularity of ChatGPT has grown, so has the curiosity around how it functions and what resources it utilizes on your computer. Unlike traditional software that runs entirely on your system, &lt;a href=&#34;https://openai.com/index/chatgpt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;&#34;&gt;ChatGPT&lt;/a&gt; operates mainly through cloud-based processing. In this blog post, we’ll explore the specific ways ChatGPT interacts with your computer and what impact it has on your device’s performance.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;Understanding How ChatGPT Works&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongunderstanding-how-chatgpt-worksstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongunderstanding-how-chatgpt-worksstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Overview of Cloud-Based AI Processing&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;To understand ChatGPT’s impact on your computer’s resources, it’s helpful first to know how cloud-based AI works. ChatGPT performs most of its processing on servers owned and managed by OpenAI. When you interact with ChatGPT, your inputs are sent to OpenAI&#39;s servers, which handle the bulk of processing and generate responses.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Client-Server Architecture&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;In this architecture, your computer (the “client”) acts as an interface, sending queries to and receiving responses from OpenAI’s server. This server performs all the heavy lifting and returns the result, meaning that your computer doesn’t run the AI model.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;What Resources Does ChatGPT Use on Your Computer?&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongwhat-resources-does-chatgpt-use-on-your-computerstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongwhat-resources-does-chatgpt-use-on-your-computerstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Since ChatGPT primarily operates in the cloud, the resources it uses locally on your device are minimal. Here’s a breakdown of what ChatGPT typically uses:&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1. CPU (Central Processing Unit)&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;Your computer’s CPU power comes into play mainly in processing the browser and rendering text, images, and animations. Since there is minimal local computation, the CPU load remains light—limited to tasks like browser tab management and page loading.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2. RAM (Random Access Memory)&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;ChatGPT’s primary memory usage comes from your browser, particularly if you have multiple tabs or complex pages open. Generally, interacting with ChatGPT might require about 100-300 MB of memory. However, with more tabs open or heavy multitasking, browser memory usage could increase, which could impact devices with limited RAM.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3. Network Bandwidth&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;Internet bandwidth is crucial when using ChatGPT because it’s an online service. Text-based responses consume minimal data (usually in the range of a few kilobytes per query), but with prolonged or intensive use, data consumption can increase. It’s worth noting that a stable connection improves interaction speed and reliability.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4. Storage&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;ChatGPT stores little to no data locally. Any cached elements, such as images or small web assets, are temporary and minimal, amounting to a few megabytes at most. Storage demands are almost negligible, as most data is stored on OpenAI’s servers.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;Resource Comparison with Locally-Run AI Models&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongresource-comparison-with-locally-run-ai-modelsstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongresource-comparison-with-locally-run-ai-modelsstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It’s worth comparing ChatGPT with locally-run AI tools to put its resource consumption in perspective. Locally installed AI models like language generators or image-processing software require significantly more CPU, GPU, and storage because your device needs to load the entire model. For example, a language model similar to GPT-3 could require multiple gigabytes of RAM and a high-performance GPU to run effectively.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;ChatGPT’s cloud-based nature makes it accessible to a wider range of devices without specialized hardware. Users don’t need high-end processors or extra RAM, as these requirements are handled server-side.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;Benefits of Cloud-Based Processing for Users&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongbenefits-of-cloud-based-processing-for-usersstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongbenefits-of-cloud-based-processing-for-usersstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Cloud-based processing brings multiple advantages, particularly for users with lower-spec devices. Here’s a breakdown of the benefits:&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1. Accessibility on Low-Power Devices&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;With ChatGPT offloading processing to OpenAI’s servers, even basic devices like budget laptops, tablets, or smartphones can access the model smoothly.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2. Reduced Hardware Requirements&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;If ChatGPT were a locally run application, it would require significant hardware resources. Offloading to the cloud reduces demand on your system, allowing it to run alongside other applications seamlessly.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3. Minimal Impact on Device Lifespan&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;Computationally intensive applications increase wear and tear on components. By reducing the load on your device’s processor and memory, ChatGPT’s cloud-based approach has a minimal impact on device longevity.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;Potential Drawbacks of Cloud-Based AI Models&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongpotential-drawbacks-of-cloud-based-ai-modelsstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongpotential-drawbacks-of-cloud-based-ai-modelsstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;While cloud-based AI models have many benefits, they do come with some limitations.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1. Dependency on Internet Connectivity&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;Since ChatGPT relies on a stable internet connection, network interruptions can disrupt interactions. This can be an inconvenience if you’re in an area with spotty connectivity or data caps.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2. Privacy and Security Concerns&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;With cloud-based processing, users may worry about the security and privacy of their data. OpenAI has measures in place to protect user data, but data sent to the cloud is always subject to privacy policies and security considerations.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3. Network Data Costs&lt;/em&gt;&lt;br&gt;&lt;/strong&gt;Using ChatGPT over mobile data might consume more bandwidth over time, which could incur costs depending on your internet plan. Although the bandwidth demand is minimal, extended usage can add up, especially on limited data plans.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;&lt;strong&gt;Tips for Optimizing ChatGPT Use on Your Device&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongtips-for-optimizing-chatgpt-use-on-your-devicestrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongtips-for-optimizing-chatgpt-use-on-your-devicestrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;To make the most out of ChatGPT with minimal impact on your computer, here are a few tips:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Limit Background Applications&lt;/strong&gt;: Closing background apps can free up RAM, allowing smoother interactions.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Data Usage&lt;/strong&gt;: If you’re using ChatGPT on a data-limited plan, keep track of your usage. Web browsers often have built-in tools or extensions to monitor data usage.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Clear Cache Regularly&lt;/strong&gt;: Browsers store cached data, which can add up over time. Clearing your cache can help maintain browser speed.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;ChatGPT’s reliance on cloud processing reduces its impact on your computer’s resources, enabling a smooth and responsive experience on almost any device. By understanding how ChatGPT interacts with your computer’s CPU, RAM, storage, and network, you can optimize your setup for the best possible experience.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>10 tips for asking questions to get accurate answers from ChatGPT</title>
+      <link>http://localhost:1313/10-tips-for-asking-questions-to-get-accurate-answers-from-chatgpt/</link>
+      <pubDate>Sun, 18 Aug 2024 11:42:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/10-tips-for-asking-questions-to-get-accurate-answers-from-chatgpt/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here are 10 tips for asking questions to get accurate answers from ChatGPT:&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Be Specific:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongbe-specificstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongbe-specificstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Clearly define what you want to know. Avoid vague questions. Instead of asking, &amp;ldquo;Tell me about the weather,&amp;rdquo; ask, &amp;ldquo;What&amp;rsquo;s the weather like in New York City today?&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Provide Context:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongprovide-contextstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongprovide-contextstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If your question is part of a broader topic, give some background information. For example, &amp;ldquo;I’m writing a report on renewable energy. Can you explain how solar panels work?&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Use Clear Language:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronguse-clear-languagestrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#stronguse-clear-languagestrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Avoid jargon or overly complex language, especially if you&amp;rsquo;re asking about a new topic. Simple and straightforward questions often yield the best results.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Break Down Complex Questions:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongbreak-down-complex-questionsstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongbreak-down-complex-questionsstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;f your question has multiple parts, consider asking them one at a time. For example, instead of, &amp;ldquo;Can you tell me about the history, types, and future of artificial intelligence?&amp;rdquo; you could ask about each aspect separately.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Ask for Examples:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongask-for-examplesstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongask-for-examplesstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you&amp;rsquo;re learning something new, ask for examples to clarify concepts. For instance, &amp;ldquo;Can you give me an example of a metaphor in literature?&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Specify the Format:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongspecify-the-formatstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongspecify-the-formatstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you need information in a specific format, mention it. For example, &amp;ldquo;Can you summarize the book in three sentences?&amp;rdquo; or &amp;ldquo;Can you list the key points?&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;State Your Purpose:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongstate-your-purposestrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongstate-your-purposestrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Letting ChatGPT know what you’re aiming to achieve can help tailor the response. For example, &amp;ldquo;I&amp;rsquo;m preparing for an interview. How should I answer questions about my strengths and weaknesses?&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Use Follow-Up Questions:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronguse-follow-up-questionsstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#stronguse-follow-up-questionsstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If the first answer isn’t clear or doesn’t cover everything, feel free to ask follow-up questions for more detail.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Be Open to Rephrasing:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongbe-open-to-rephrasingstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongbe-open-to-rephrasingstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If the response doesn’t seem to match your expectation, try rephrasing the question. Sometimes a slight change in wording can make a big difference.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Stay Focused:&lt;/strong&gt; &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongstay-focusedstrong-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongstay-focusedstrong-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Try to keep your questions on one topic at a time. If you have multiple unrelated questions, ask them separately to keep the answers focused and relevant.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;These tips should help you get the most accurate and useful responses from ChatGPT!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

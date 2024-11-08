@@ -1,0 +1,64 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Pointer</title>
+    <link>http://localhost:1313/tags/pointer/</link>
+    <description>Recent content in Pointer on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Jun 2024 23:57:30 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/pointer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; Pointer tanımlama ve değerini değiştirme</title>
+      <link>http://localhost:1313/tr/c-pointer-tanimlama-ve-degerini-degistirme/</link>
+      <pubDate>Fri, 28 Jun 2024 23:57:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-pointer-tanimlama-ve-degerini-degistirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde bir pointer tanımlayıp değerini görüntüleyip değiştirmeyi gösteriyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
+* @brief Main function that demonstrates pointer manipulation.
+ *
+ * This function initializes an integer variable `value` with the value 10.
+ * It then creates a pointer `pointer` that points to the memory address of `value`.
+ * The program prints the initial value of `value`, its address,
+ * and the value pointed to by `pointer`.
+ * 
+ * The program then updates the value pointed to by `pointer` to 20.
+ * Finally, it prints the new value of `value`.
+ *
+ * @return 0 indicating successful execution of the program
+ */
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int value = 10; // Initialize an integer variable with the value 10
+    int* pointer = &amp;amp;value; // Create a pointer that points to the memory address of value
+
+    cout &amp;lt;&amp;lt; &#34;Initial value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the initial value of value
+    cout &amp;lt;&amp;lt; &#34;Address of value: &#34; &amp;lt;&amp;lt; &amp;amp;value &amp;lt;&amp;lt; endl; // Print the memory address of value
+    cout &amp;lt;&amp;lt; &#34;Value pointed to by pointer: &#34; &amp;lt;&amp;lt; *pointer &amp;lt;&amp;lt; endl; // Print the value pointed to by pointer
+
+    *pointer = 20; // Update the value pointed to by pointer to 20
+
+    cout &amp;lt;&amp;lt; &#34;New value of value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the new value of value
+
+    return 0; // Return 0 indicating successful execution of the program
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

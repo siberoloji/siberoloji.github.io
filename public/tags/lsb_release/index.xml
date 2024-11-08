@@ -1,0 +1,116 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Lsb_release</title>
+    <link>http://localhost:1313/tags/lsb_release/</link>
+    <description>Recent content in Lsb_release on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jun 2017 14:07:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/lsb_release/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Linux İçin lsb_release Komutu</title>
+      <link>http://localhost:1313/tr/linux-icin-lsb_release-komutu/</link>
+      <pubDate>Thu, 22 Jun 2017 14:07:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linux-icin-lsb_release-komutu/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazıda, Linux İşletim sisteminizde kullanabileceğiniz &lt;code&gt;lsb_release&lt;/code&gt; komutunu açıklayacağız. Bu komut sayesinde kullandığınız Linux dağıtımınıza özel bilgileri elde edebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1 class=&#34;wp-block-heading&#34; id=&#34;lsb_relase&#34;&gt;lsb_relase 
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;code&gt;lsb_relase&lt;/code&gt; komutu sisteminiz hakkında kullanabileceğiniz komutlardan bir tanesidir. Bu komut, &lt;code&gt;lsb-core&lt;/code&gt; olarak adlandırılan paketin bir parçasıdır. &lt;code&gt;lsb_release&lt;/code&gt; komutunu verdiğinizde herhangi bir çıktı alamıyorsanız &lt;code&gt;sudo apt install lsb-core&lt;/code&gt; komutuyla gerekli paketleri yükleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Öncelikle, yardım bilgilerini görüntüleyelim ve seçenekleri görelim.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release --help
+
+
+Options:
+  -h, --help         show this help message and exit
+  -v, --version      show LSB modules this system supports
+  -i, --id           show distributor ID
+  -d, --description  show description of this distribution
+  -r, --release      show release number of this distribution
+  -c, --codename     show code name of this distribution
+  -a, --all          show all of the above information
+  -s, --short        show requested information &lt;strong&gt;in &lt;/strong&gt;short format
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;&lt;code&gt;lsb_release&lt;/code&gt; komutunu, hiçbir seçenek olmadan verirseniz, &lt;code&gt;-v&lt;/code&gt; seçeneği varsayılan olarak kullanılır.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--v&#34;&gt;&lt;code&gt;lsb_release -v&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kullandığınız dağıtımın desteklediği, sisteminizde yüklü olan ilave LSB modüllerini listeler. &lt;code&gt;No LSB modules are available.&lt;/code&gt; sonucu alıyorsanız, &lt;code&gt;sudo apt install lsb-core&lt;/code&gt; komutunu vererek kurabileceğiniz LSB modüllerini görebilirsiniz. İhtiyacınız yoksa kurmanıza gerek yoktur.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -v
+No LSB modules are available.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--i&#34;&gt;&lt;code&gt;lsb_release -i&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Linux dağıtımını sağlayan otoritenin ID kimlik bilgisini görüntüler.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -i
+Distributor ID:	LinuxMint
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--d&#34;&gt;&lt;code&gt;lsb_release -d&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kullandığınız dağıtımın açıklamasını görüntüler.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -d
+Description:	Linux Mint 18.1 Serena
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--r&#34;&gt;&lt;code&gt;lsb_release -r&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kullandığınız dağıtımın sürüm numarasını görüntüler.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -r
+Release:	18.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--c&#34;&gt;&lt;code&gt;lsb_release -c&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kullandığınız dağıtımın kod adını görüntüler.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -c
+Codename:	serena
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--a&#34;&gt;&lt;code&gt;lsb_release -a&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yukarıda açıklanan seçeneklerin tamamını bir seferde görüntüler.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -a
+No LSB modules are available.
+Distributor ID:	LinuxMint
+Description:	Linux Mint 18.1 Serena
+Release:	18.1
+Codename:	serena
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--as&#34;&gt;&lt;code&gt;lsb_release -as&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;code&gt;-s&lt;/code&gt; seçeneği yardımcı bir seçenektir. Kısa bilgi anlamına gelir. Görüntülenmek istenen bilginin, sol tarafındaki başlık adı olmadan sadece bilginin kendisini görüntülemeye yarar. Bash proglamada kullanımda oldukça faydalı olabilir.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;lsb_release -as
+No LSB modules are available.
+LinuxMint
+Linux Mint 18.1 Serena
+18.1
+serena&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

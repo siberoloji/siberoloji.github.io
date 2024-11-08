@@ -1,0 +1,58 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Class()</title>
+    <link>http://localhost:1313/tags/class/</link>
+    <description>Recent content in Class() on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Feb 2022 20:55:17 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/class/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Creating a Class() example in Kotlin</title>
+      <link>http://localhost:1313/creating-a-class-example-in-kotlin/</link>
+      <pubDate>Mon, 28 Feb 2022 20:55:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/creating-a-class-example-in-kotlin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Object-Oriented Programming Languages, the classes are important. You can find a simple Class creating example in this post.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
+    var personA = Person(&#34;Mike&#34;,&#34;Sunshine&#34;)
+    var personB = Person()
+    var personC = Person(lastName = &#34;Peterson&#34;)
+
+}
+
+class Person (firstName:String =&#34;John&#34; , lastName:String=&#34;Doe&#34;){
+
+    init {
+        println(&#34;A new person object created with First Name: $firstName and &#34; +
+                &#34;Last Name: $lastName&#34; )
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Output&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;A new person object created with First Name: Mike and Last Name: Sunshine
+A new person object created with First Name: John and Last Name: Doe
+A new person object created with First Name: John and Last Name: Peterson
+
+Process finished with exit code 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

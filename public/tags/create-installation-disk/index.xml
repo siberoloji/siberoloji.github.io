@@ -1,0 +1,265 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Create Installation Disk</title>
+    <link>http://localhost:1313/tags/create-installation-disk/</link>
+    <description>Recent content in Create Installation Disk on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Oct 2024 21:27:42 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/create-installation-disk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AlmaLinux 9: How to Create an Installation Disk</title>
+      <link>http://localhost:1313/almalinux-9-how-to-create-an-installation-disk/</link>
+      <pubDate>Wed, 02 Oct 2024 21:27:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/almalinux-9-how-to-create-an-installation-disk/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;AlmaLinux is a popular, community-driven open-source Linux distribution that offers a stable, secure, and reliable alternative to CentOS. After CentOS shifted to its new rolling release model (CentOS Stream), AlmaLinux has become a go-to choice for users who need a Red Hat Enterprise Linux (RHEL) compatible operating system. AlmaLinux 9 brings several improvements in performance, security, and usability, making it an excellent choice for both server and desktop environments.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;One of the first steps in setting up AlmaLinux is creating an installation disk. In this blog post, we’ll guide you through the process of creating an AlmaLinux 9 installation disk. Whether you&#39;re a Linux beginner or an experienced user, this guide will cover everything you need, from downloading the ISO file to writing it onto a USB drive, ensuring you’re ready to install AlmaLinux 9 on your system.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;prerequisitesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#prerequisitesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Before we dive into the steps for creating an installation disk for AlmaLinux 9, let’s cover the prerequisites you&#39;ll need:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;A USB drive&lt;/strong&gt;: At least 4 GB of storage space (preferably 8 GB or more).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;AlmaLinux 9 ISO file&lt;/strong&gt;: You will need to download the official AlmaLinux 9 ISO.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Disk writing software&lt;/strong&gt;: Tools like &lt;strong&gt;Etcher&lt;/strong&gt;, &lt;strong&gt;Rufus&lt;/strong&gt;, or the Linux &lt;code&gt;dd&lt;/code&gt; command can be used to write the ISO file onto your USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;A computer for creating the disk&lt;/strong&gt;: Running Windows, macOS, or another Linux distribution.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Downloading the AlmaLinux 9 ISO&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;downloading-the-almalinux-9-isoh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#downloading-the-almalinux-9-isoh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The first step is to download the AlmaLinux 9 ISO file from the official website.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Go to the AlmaLinux website&lt;/strong&gt;: Visit &lt;a href=&#34;https://almalinux.org&#34;&gt;https://almalinux.org&lt;/a&gt; and navigate to the &lt;strong&gt;Downloads&lt;/strong&gt; section.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Select the appropriate ISO&lt;/strong&gt;: AlmaLinux 9 is available for different architectures. If you’re using a standard PC, select the x86_64 architecture. For servers, you might want to choose the minimal ISO, while for desktops, the full installation ISO is recommended.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Download the ISO&lt;/strong&gt;: Choose a mirror close to your location to download the ISO faster.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Step-by-Step Guide to Creating an AlmaLinux 9 Installation Disk&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-by-step-guide-to-creating-an-almalinux-9-installation-diskh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-by-step-guide-to-creating-an-almalinux-9-installation-diskh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Step 1: Prepare Your USB Drive&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-1-prepare-your-usb-driveh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-1-prepare-your-usb-driveh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Before we write the AlmaLinux 9 ISO file to the USB drive, make sure your USB drive is properly prepared.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Back up your data&lt;/strong&gt;: Writing the ISO file to the USB drive will erase all the data currently on the drive. If you have important files on it, be sure to back them up elsewhere before proceeding.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Format the USB drive&lt;/strong&gt;: Although many disk-writing tools will format the drive for you, it’s a good idea to format it manually before starting. You can use your operating system’s built-in disk utility for this.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;On Windows:&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Insert the USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Open &lt;strong&gt;File Explorer&lt;/strong&gt; and right-click on the USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select &lt;strong&gt;Format&lt;/strong&gt;, choose the &lt;strong&gt;FAT32&lt;/strong&gt; or &lt;strong&gt;NTFS&lt;/strong&gt; file system, and click &lt;strong&gt;Start&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;On macOS:&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Insert the USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Open &lt;strong&gt;Disk Utility&lt;/strong&gt; (you can find this in &lt;strong&gt;Applications&lt;/strong&gt; &amp;gt; &lt;strong&gt;Utilities&lt;/strong&gt;).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the USB drive from the sidebar and click &lt;strong&gt;Erase&lt;/strong&gt;. Set the format to &lt;strong&gt;MS-DOS (FAT)&lt;/strong&gt; or &lt;strong&gt;exFAT&lt;/strong&gt;, then click &lt;strong&gt;Erase&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;On Linux:&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Insert the USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Use the &lt;code&gt;gparted&lt;/code&gt; utility to format the drive. If you don&#39;t have it installed, you can install it via your package manager (&lt;code&gt;sudo apt install gparted&lt;/code&gt; on Ubuntu, for example).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the drive and format it to &lt;strong&gt;FAT32&lt;/strong&gt; or &lt;strong&gt;NTFS&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Step 2: Use Disk Writing Software to Write the ISO&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-2-use-disk-writing-software-to-write-the-isoh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-2-use-disk-writing-software-to-write-the-isoh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;There are several tools you can use to create an installation disk for AlmaLinux 9. The tool you choose will depend on the operating system you’re using. Here, we’ll cover instructions for three common tools: &lt;strong&gt;Etcher&lt;/strong&gt;, &lt;strong&gt;Rufus&lt;/strong&gt;, and the &lt;strong&gt;dd&lt;/strong&gt; command.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Option 1: Using Etcher (Cross-platform: Windows, macOS, and Linux)&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Etcher is a user-friendly tool that works on Windows, macOS, and Linux. It&#39;s highly recommended for beginners due to its simple interface.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Download Etcher&lt;/strong&gt;: Visit &lt;a href=&#34;https://www.balena.io/etcher/&#34;&gt;https://www.balena.io/etcher/&lt;/a&gt; and download the installer for your operating system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Install Etcher&lt;/strong&gt;: Run the installer and follow the prompts to install it on your system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Open Etcher&lt;/strong&gt;: Once installed, open the application.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Select the AlmaLinux ISO&lt;/strong&gt;: Click on &lt;strong&gt;Flash from file&lt;/strong&gt; and browse to the location where you downloaded the AlmaLinux 9 ISO.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Choose your USB drive&lt;/strong&gt;: Insert your USB drive and select it in Etcher.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Start flashing&lt;/strong&gt;: Click &lt;strong&gt;Flash!&lt;/strong&gt; to begin the process. Etcher will write the ISO file to the USB drive and automatically verify the contents once the process is complete.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Eject the USB&lt;/strong&gt;: Once the flashing process is finished, you’ll be notified. You can now safely eject the USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Option 2: Using Rufus (Windows)&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Rufus is a lightweight tool for creating bootable USB drives on Windows. It&#39;s fast and reliable, making it a popular choice among Windows users.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Download Rufus&lt;/strong&gt;: Visit &lt;a href=&#34;https://rufus.ie&#34;&gt;https://rufus.ie&lt;/a&gt; and download the latest version.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Open Rufus&lt;/strong&gt;: Run the executable file (no installation required).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Select the USB drive&lt;/strong&gt;: Rufus will automatically detect your USB drive. Make sure the correct drive is selected.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Select the AlmaLinux ISO&lt;/strong&gt;: Click &lt;strong&gt;Select&lt;/strong&gt; and browse to where you downloaded the AlmaLinux 9 ISO.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Partition scheme&lt;/strong&gt;: Rufus will set the partition scheme to &lt;strong&gt;GPT&lt;/strong&gt; by default, which is suitable for UEFI systems. If you’re installing on an older BIOS system, you may need to switch it to &lt;strong&gt;MBR&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;File system&lt;/strong&gt;: Choose &lt;strong&gt;FAT32&lt;/strong&gt; or &lt;strong&gt;NTFS&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Start the process&lt;/strong&gt;: Click &lt;strong&gt;Start&lt;/strong&gt;. Rufus will write the ISO to the USB drive and notify you when it’s finished.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Eject the USB drive&lt;/strong&gt;: Once Rufus has completed the process, safely eject your USB drive.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Option 3: Using the &lt;code&gt;dd&lt;/code&gt; Command (Linux)&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;For experienced Linux users, the &lt;code&gt;dd&lt;/code&gt; command is a powerful way to write ISO files to USB drives.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Insert your USB drive&lt;/strong&gt;: Identify the device path for your USB drive using the &lt;code&gt;lsblk&lt;/code&gt; command. The device will typically be something like &lt;code&gt;/dev/sdb&lt;/code&gt; or &lt;code&gt;/dev/sdc&lt;/code&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Write the ISO&lt;/strong&gt;: Open a terminal and use the following command to write the ISO file to the USB drive. Be very careful with this command, as using the wrong device path can overwrite important data.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;   sudo dd if=/path/to/almalinux9.iso of=/dev/sdX bs=4M status=progress &amp;amp;&amp;amp; sync&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Replace &lt;code&gt;/path/to/almalinux9.iso&lt;/code&gt; with the path to the downloaded ISO file, and &lt;code&gt;/dev/sdX&lt;/code&gt; with the device path for your USB drive.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:3} --&gt;
+&lt;ol start=&#34;3&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Wait for the process to complete&lt;/strong&gt;: The &lt;code&gt;dd&lt;/code&gt; command will take some time to complete, and there won&#39;t be much visual feedback. Once it finishes, you’ll see a message indicating the number of bytes written.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Eject the USB drive&lt;/strong&gt;: Use the following command to safely eject the USB drive:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;   sudo eject /dev/sdX&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Step 3: Boot from the USB Drive&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-3-boot-from-the-usb-driveh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-3-boot-from-the-usb-driveh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Once you’ve created your AlmaLinux 9 installation disk, it’s time to boot from it and begin the installation process.&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Insert the USB drive&lt;/strong&gt;: Plug the USB drive into the computer where you want to install AlmaLinux 9.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Restart your computer&lt;/strong&gt;: Reboot the system and enter the &lt;strong&gt;BIOS&lt;/strong&gt; or &lt;strong&gt;UEFI&lt;/strong&gt; settings by pressing a key like &lt;code&gt;F2&lt;/code&gt;, &lt;code&gt;F10&lt;/code&gt;, or &lt;code&gt;Delete&lt;/code&gt; during startup (the specific key depends on your computer&#39;s manufacturer).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Select the USB drive as the boot device&lt;/strong&gt;: In the BIOS/UEFI menu, find the &lt;strong&gt;Boot Order&lt;/strong&gt; or &lt;strong&gt;Boot Device&lt;/strong&gt; settings and select the USB drive as the first boot option.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Save and exit&lt;/strong&gt;: Save your settings and exit the BIOS. Your computer will now boot from the USB drive and begin the AlmaLinux 9 installation process.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Creating an installation disk for AlmaLinux 9 is a straightforward process, whether you’re using Windows, macOS, or Linux. With the right tools and a few steps, you’ll have a bootable USB drive ready to install AlmaLinux 9 on your system. This powerful, enterprise-ready Linux distribution offers a robust solution for users and organizations seeking a stable, RHEL-compatible environment.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Once you’ve successfully booted from the USB drive, you can proceed with the installation and enjoy the many features and benefits AlmaLinux 9 has to offer. Whether you&#39;re setting up a server, desktop, or virtual machine, AlmaLinux 9 provides a secure and reliable operating system that’s well-suited for a wide range of use cases.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

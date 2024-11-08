@@ -1,0 +1,57 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Nested If</title>
+    <link>http://localhost:1313/tags/nested-if/</link>
+    <description>Recent content in Nested If on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 23:33:59 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/nested-if/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; Nested if statement</title>
+      <link>http://localhost:1313/c-nested-if-statement/</link>
+      <pubDate>Sat, 22 Jun 2024 23:33:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-nested-if-statement/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this article, we share an example showing C++ nested if statement.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* nested if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+        if (a &amp;lt; 10)
+            cout &amp;lt;&amp;lt; &#34;a is less than 10\n&#34;;
+        else
+            cout &amp;lt;&amp;lt; &#34;a is not less than 10\n&#34;;
+    } else {
+        if (a == 20) {
+            cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+        } else
+            cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

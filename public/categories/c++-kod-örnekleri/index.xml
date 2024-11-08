@@ -1,0 +1,434 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – C&#43;&#43; Kod Örnekleri</title>
+    <link>http://localhost:1313/categories/c&#43;&#43;-kod-%C3%B6rnekleri/</link>
+    <description>Recent content in C&#43;&#43; Kod Örnekleri on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Jun 2024 23:57:30 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/c++-kod-%C3%B6rnekleri/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; Pointer tanımlama ve değerini değiştirme</title>
+      <link>http://localhost:1313/tr/c-pointer-tanimlama-ve-degerini-degistirme/</link>
+      <pubDate>Fri, 28 Jun 2024 23:57:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-pointer-tanimlama-ve-degerini-degistirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde bir pointer tanımlayıp değerini görüntüleyip değiştirmeyi gösteriyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
+* @brief Main function that demonstrates pointer manipulation.
+ *
+ * This function initializes an integer variable `value` with the value 10.
+ * It then creates a pointer `pointer` that points to the memory address of `value`.
+ * The program prints the initial value of `value`, its address,
+ * and the value pointed to by `pointer`.
+ * 
+ * The program then updates the value pointed to by `pointer` to 20.
+ * Finally, it prints the new value of `value`.
+ *
+ * @return 0 indicating successful execution of the program
+ */
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int value = 10; // Initialize an integer variable with the value 10
+    int* pointer = &amp;amp;value; // Create a pointer that points to the memory address of value
+
+    cout &amp;lt;&amp;lt; &#34;Initial value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the initial value of value
+    cout &amp;lt;&amp;lt; &#34;Address of value: &#34; &amp;lt;&amp;lt; &amp;amp;value &amp;lt;&amp;lt; endl; // Print the memory address of value
+    cout &amp;lt;&amp;lt; &#34;Value pointed to by pointer: &#34; &amp;lt;&amp;lt; *pointer &amp;lt;&amp;lt; endl; // Print the value pointed to by pointer
+
+    *pointer = 20; // Update the value pointed to by pointer to 20
+
+    cout &amp;lt;&amp;lt; &#34;New value of value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the new value of value
+
+    return 0; // Return 0 indicating successful execution of the program
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; do-while döngüsü ile faktöriyel hesaplama</title>
+      <link>http://localhost:1313/tr/c-do-while-dongusu-ile-faktoriyel-hesaplama/</link>
+      <pubDate>Fri, 28 Jun 2024 23:19:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-do-while-dongusu-ile-faktoriyel-hesaplama/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int calculateFactorial(int number) {
+    int result = 1;
+    for (int i = 1; i &amp;lt;= number; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int inputNumber;
+    char exitKey;
+    
+    do {
+        cout &amp;lt;&amp;lt; &#34;Enter a number between 1 and 10: &#34;;
+        cin &amp;gt;&amp;gt; inputNumber;
+        
+        if (inputNumber &amp;lt; 1) {
+            cout &amp;lt;&amp;lt; &#34;Number must be greater than 0.\n&#34;;
+        } else if (inputNumber &amp;gt; 10) {
+            cout &amp;lt;&amp;lt; &#34;Number must be less than or equal to 10.\n&#34;;
+        } else {
+            int factorial = calculateFactorial(inputNumber);
+            cout &amp;lt;&amp;lt; &#34;Result: &#34; &amp;lt;&amp;lt; factorial &amp;lt;&amp;lt; endl;
+        }
+        
+        cout &amp;lt;&amp;lt; &#34;Press &#39;h&#39; to exit, any other key to continue: &#34;;
+        cin &amp;gt;&amp;gt; exitKey;
+    } while (exitKey != &#39;h&#39;);
+    
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Girilen sayının faktöriyelini hesaplayan örnek</title>
+      <link>http://localhost:1313/tr/c-girilen-sayinin-faktoriyelini-hesaplayan-ornek/</link>
+      <pubDate>Fri, 28 Jun 2024 16:19:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-girilen-sayinin-faktoriyelini-hesaplayan-ornek/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int factorial(int num) {
+    int result = 1;
+    for (int i = 2; i &amp;lt;= num; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int number;
+    cout &amp;lt;&amp;lt; &#34;Enter a number: &#34;;
+    cin &amp;gt;&amp;gt; number;
+    int factorialResult = factorial(number);
+    cout &amp;lt;&amp;lt; &#34;Factorial: &#34; &amp;lt;&amp;lt; factorialResult &amp;lt;&amp;lt; endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; int ile float değişkenlerinin toplanması</title>
+      <link>http://localhost:1313/tr/c-int-ile-float-degiskenlerinin-toplanmasi/</link>
+      <pubDate>Fri, 28 Jun 2024 16:03:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-int-ile-float-degiskenlerinin-toplanmasi/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+int main() {
+    int firstNumber = 11;
+    float secondNumber = 12.8;
+    float sum = firstNumber + secondNumber;
+
+    std::cout &amp;lt;&amp;lt; &#34;Sum: &#34; &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; std::endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Fahrenheit sıcaklığı Celsius Derececeye çeviren kod örneği</title>
+      <link>http://localhost:1313/tr/c-fahrenheit-sicakligi-celsius-derececeye-ceviren-kod-ornegi/</link>
+      <pubDate>Fri, 28 Jun 2024 01:36:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-fahrenheit-sicakligi-celsius-derececeye-ceviren-kod-ornegi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örnekte, girilen Fahrenheit sıcaklık değeri bir fonksiyon yardımı ile Celsius değerine dönüştürülmektedir.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;iomanip&amp;gt;
+#include &amp;lt;limits&amp;gt;
+
+float temperatureConversion(const float temperatureInFahrenheit) {
+    constexpr float conversionFactor = 5.0 / 9.0;
+    return (temperatureInFahrenheit - 32) * conversionFactor;
+}
+
+int main() {
+    float fahrenheitTemperature;
+    std::cout &amp;lt;&amp;lt; &#34;Enter the Fahrenheit temperature: &#34;;
+    std::cin &amp;gt;&amp;gt; fahrenheitTemperature;
+
+    float celsiusTemperature = temperatureConversion(fahrenheitTemperature);
+    std::cout &amp;lt;&amp;lt; std::fixed &amp;lt;&amp;lt; std::setprecision(std::numeric_limits&amp;lt;float&amp;gt;::digits10) &amp;lt;&amp;lt; &#34;Celsius value: &#34; &amp;lt;&amp;lt;
+            celsiusTemperature &amp;lt;&amp;lt; std::endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; int, float ve string değerlerini printf ile yazdırma</title>
+      <link>http://localhost:1313/tr/c-int-float-ve-string-degerlerini-printf-ile-yazdirma/</link>
+      <pubDate>Fri, 28 Jun 2024 01:17:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-int-float-ve-string-degerlerini-printf-ile-yazdirma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu kod, int ve float değişkenlerinin sabit, metin değişkenin sabit olmadığı bir main işlevi tanımlar. number, realNumber ve text değerlerini yazdırır ve ardından 0 değerini döndürür.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;string&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr int number = 123;
+    constexpr float realNumber = 3.146;
+    string text = &#34;Hello World&#34;;
+    printf(&#34;Number: %d\n&#34;, number);
+    printf(&#34;Pi value: %.2f\n&#34;, realNumber);
+    printf(&#34;Text: %s\n&#34;, text.c_str());
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; 2 string değişkeni birleştirme</title>
+      <link>http://localhost:1313/tr/c-2-string-degiskeni-birlestirme/</link>
+      <pubDate>Thu, 27 Jun 2024 23:56:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-2-string-degiskeni-birlestirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda, 2 adet string değişkeni birleştirme örneğini gösteriyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    std::string firstString = &#34;prs&#34;;
+    std::string secondString = &#34;def&#34;;
+    std::string result;
+    result = firstString + secondString;
+    std::cout &amp;lt;&amp;lt; result &amp;lt;&amp;lt; std::endl;
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; char tipinde 2 değişkeni birleştirme</title>
+      <link>http://localhost:1313/tr/c-char-tipinde-2-degiskeni-birlestirme/</link>
+      <pubDate>Thu, 27 Jun 2024 23:37:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-char-tipinde-2-degiskeni-birlestirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr size_t bufferSize = 50;
+    char firstString[bufferSize] = &#34;abc&#34;;
+    char secondString[bufferSize] = &#34;def&#34;;
+
+    cout &amp;lt;&amp;lt; &#34;First string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+    cout &amp;lt;&amp;lt; &#34;Second string: &#34; &amp;lt;&amp;lt; secondString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    strcat(firstString, secondString);
+
+    cout &amp;lt;&amp;lt; &#34;Concatenated string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; ile bir sayının pozitif mi negatif mi olduğunu bulma</title>
+      <link>http://localhost:1313/tr/c-ile-bir-sayinin-pozitif-mi-negatif-mi-oldugunu-bulma/</link>
+      <pubDate>Thu, 27 Jun 2024 23:18:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-ile-bir-sayinin-pozitif-mi-negatif-mi-oldugunu-bulma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, klavyeden girilen sayının pozitif, negatif veya sıfır mı olduğunu if- else if kullanımı ile kontrol ediyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int number;
+    cout &amp;lt;&amp;lt; &#34;Please enter a number: &#34;;
+    cin &amp;gt;&amp;gt; number;
+
+    if (number &amp;gt; 0) {
+        cout &amp;lt;&amp;lt; &#34;Number is positive&#34;;
+    } else if (number &amp;lt; 0) {
+        cout &amp;lt;&amp;lt; &#34;Number is negative&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;Number is zero&#34;;
+    }
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; if else kullanımı</title>
+      <link>http://localhost:1313/tr/c-if-else-kullanimi/</link>
+      <pubDate>Sat, 22 Jun 2024 23:37:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-if-else-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda, C++ if else kullanımını inceleyebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;a is not less than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; iç içe if kullanımı</title>
+      <link>http://localhost:1313/tr/c-ic-ice-if-kullanimi/</link>
+      <pubDate>Sat, 22 Jun 2024 23:32:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-ic-ice-if-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* nested if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+        if (a &amp;lt; 10)
+            cout &amp;lt;&amp;lt; &#34;a is less than 10\n&#34;;
+        else
+            cout &amp;lt;&amp;lt; &#34;a is not less than 10\n&#34;;
+    } else {
+        if (a == 20) {
+            cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+        } else
+            cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; kademeli if else kullanımı</title>
+      <link>http://localhost:1313/tr/c-kademeli-if-else-kullanimi/</link>
+      <pubDate>Sat, 22 Jun 2024 14:05:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-kademeli-if-else-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Aşağıda, C++ için kademeli if-else kullanım örneğini bulabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* cascade if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+    } else if (a == 20) {
+        cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

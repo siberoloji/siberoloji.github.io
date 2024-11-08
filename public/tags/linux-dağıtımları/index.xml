@@ -1,0 +1,180 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Dağıtımları</title>
+    <link>http://localhost:1313/tags/linux-da%C4%9F%C4%B1t%C4%B1mlar%C4%B1/</link>
+    <description>Recent content in Linux Dağıtımları on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Sep 2024 01:20:05 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/linux-da%C4%9F%C4%B1t%C4%B1mlar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>En Popüler Linux dağıtımları listesi</title>
+      <link>http://localhost:1313/tr/populer-linux-dagitimlarinin-listesi/</link>
+      <pubDate>Fri, 20 Sep 2024 01:20:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/populer-linux-dagitimlarinin-listesi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda Linux dağıtımları ana kolları veya temel sistemlerine göre kategorize edilmiş bir listesini hazırladık. Bu liste kapsamlı tam liste değildir, çünkü piyasada yüzlerce Linux dağıtımı var, ancak en yaygın kullanılanlardan bazılarını kapsıyor.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;1. Debian Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong1-debian-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong1-debian-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-debian-linux-a-comprehensive-guide-for-newcomers/&#34;&gt;Debian&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Diğer birçok dağıtımın temelidir ve kararlılığıyla bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-ubuntu-linux-a-beginners-guide&#34;&gt;Ubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kullanım kolaylığıyla bilinen en popüler dağıtımlardan biridir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-kubuntu-linux-a-beginners-guide&#34;&gt;Kubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: KDE Plazma masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-lubuntu-linux-a-beginners-guide/&#34;&gt;Lubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: LXQt masaüstüne sahip hafif Ubuntu çeşidi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-xubuntu-the-lightweight-and-user-friendly-linux-distribution/&#34;&gt;Xubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Xfce masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu MATE&lt;/strong&gt;&amp;nbsp;: MATE masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Studio&lt;/strong&gt;&amp;nbsp;: Multimedya prodüksiyonuna özel Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-linux-mint-the-ideal-linux-distribution-for-new-users&#34;&gt;Linux Mint&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Ubuntu tabanlı, Cinnamon, MATE ve Xfce sürümleri bulunan kullanıcı dostu dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-pop_os-linux-distribution&#34;&gt;Pop!_OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: System76 tarafından geliştirilmiştir ve kendi donanımları için optimize edilmiştir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/an-introduction-to-elementary-os-the-perfect-linux-distribution-for-beginners/&#34;&gt;Elementary OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sadeliğe odaklanmış estetik açıdan hoş bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-zorin-os-the-best-linux-distribution-for-new-users/&#34;&gt;Zorin OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Özellikle yeni başlayanlar için kullanıcı dostu olacak şekilde tasarlanmıştır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-mx-linux-a-fast-reliable-and-user-friendly-distribution&#34;&gt;MX Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Hafif ve kararlı, Debian Stable tabanlı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;2. Red Hat Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong2-red-hat-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong2-red-hat-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-red-hat-enterprise-linux-rhel/&#34;&gt;Red Hat Enterprise Linux (RHEL)&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Ticari olarak desteklenen, kurumsal odaklı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;CentOS&lt;/strong&gt;&amp;nbsp;: RHEL&#39;in özgür ve açık kaynaklı sürümü, artık CentOS Stream ile değiştirildi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;CentOS Stream&lt;/strong&gt;&amp;nbsp;: RHEL için bir üst akış görevi gören CentOS&#39;un sürekli yayınlanan bir sürümü.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-fedora-linux-distribution/&#34;&gt;Fedora&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: En son özelliklere sahip olmasıyla bilinen&amp;nbsp;&amp;nbsp;Fedora&amp;nbsp;, RHEL için üst akış görevi görür.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;AlmaLinux&lt;/strong&gt;&amp;nbsp;: CentOS&#39;un topluluk odaklı bir alternatifi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Rocky Linux&lt;/strong&gt;&amp;nbsp;: CentOS&#39;un orijinal kurucularından birinin liderliğinde, CentOS&#39;un yerini alan bir diğer Linux.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;3. Arch Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong3-arch-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong3-arch-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-arch-linux-distribution/&#34;&gt;Arch Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sistem üzerindeki kontrolü ve basitliğiyle bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-manjaro-linux-distribution/&#34;&gt;Manjaro&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Arch tabanlı, birçok masaüstü ortamında kullanılabilen, kullanıcı dostu dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;EndeavourOS&lt;/strong&gt;&amp;nbsp;: Özelleştirmeye odaklanan, daha erişilebilir bir Arch tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/garuda-linux-distribution-a-beginners-guide/&#34;&gt;Garuda Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Oyun odaklı, modern bir Arch tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;4. SUSE Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong4-suse-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong4-suse-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/opensuse-linux-distribution-a-beginners-guide/&#34;&gt;openSUSE&lt;/a&gt;&amp;nbsp;Leap&lt;/strong&gt;&amp;nbsp;: Kararlı, düzenli sürüm.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;openSUSE Tumbleweed&lt;/strong&gt;&amp;nbsp;: Sürekli yayımlanan sürüm.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;SUSE Linux Enterprise&lt;/strong&gt;&amp;nbsp;: RHEL&#39;e benzer, kurumsal odaklı versiyon.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;5. Gentoo Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong5-gentoo-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong5-gentoo-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-gentoo-linux-what-you-need-to-know/&#34;&gt;Gentoo&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kullanıcıların paketleri kaynaktan derlemesine olanak tanıyan esnekliğiyle bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Calculate Linux&lt;/strong&gt;&amp;nbsp;: İşletmelere yönelik tasarlanmış Gentoo tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sabayon&lt;/strong&gt;&amp;nbsp;: Kullanım kolaylığına odaklanan Gentoo tabanlı bir yazılımdır, artık üretilmiyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;6. Slackware Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong6-slackware-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong6-slackware-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-slackware-linux-distribution/&#34;&gt;Slackware&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Basitliğiyle bilinen en eski dağıtımlardan biridir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Salix OS&lt;/strong&gt;&amp;nbsp;: Masaüstü kullanımı için optimize edilmiş Slackware tabanlı bir dağıtımdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/getting-started-with-porteus-linux-a-lightweight-and-versatile-distribution-for-beginners/&#34;&gt;Porteus&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Slackware tabanlı taşınabilir, hafif bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;7. Diğer Önemli Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong7-diğer-önemli-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong7-di%c4%9fer-%c3%b6nemli-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/linux-from-scratch-lfs-for-beginners-a-comprehensive-guide-to-building-your-own-linux-distribution/&#34;&gt;Linux From Scratch (LFS)&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kendi özel Linux sisteminizi kurmak için adım adım talimatlar sağlayan bir proje.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-void-linux-distribution/&#34;&gt;Void Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Minimalizm ve verimliliğe odaklanan bağımsız bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-nixos-linux-distribution/&#34;&gt;NixOS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sistemin kararlılığını ve yeniden üretilebilirliğini sağlamak için Nix paket yöneticisini kullanır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-solus-linux-distribution/&#34;&gt;Solus&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kendi Budgie masaüstü ortamına sahip, sürekli yayınlanan bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-deepin-linux-distribution/&#34;&gt;Deepin&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Estetik açıdan hoş Deepin Masaüstü Ortamı (DDE) ile tanınır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Clear Linux&lt;/strong&gt;&amp;nbsp;: Intel donanımlarında performans için optimize edilmiş, Intel tarafından geliştirilen bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bunlar mevcut Linux dağıtımlarından sadece birkaçı. Her birinin kendine özgü güçlü yönleri vardır ve ister yeni başlayanlar, ister ileri düzey kullanıcılar, ister geliştiriciler veya işletmeler olsun, farklı kullanıcı tiplerine uygundur.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

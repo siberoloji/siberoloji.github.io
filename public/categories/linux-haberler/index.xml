@@ -1,0 +1,75 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Haberler</title>
+    <link>http://localhost:1313/categories/linux-haberler/</link>
+    <description>Recent content in Linux Haberler on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Jan 2022 20:48:22 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/linux-haberler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Linux Mint 20.3 &amp;#8220;Una&amp;#8221; Yayınlandı</title>
+      <link>http://localhost:1313/tr/linux-mint-20-3-una-yayinlandi/</link>
+      <pubDate>Sat, 15 Jan 2022 20:48:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linux-mint-20-3-una-yayinlandi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux Mint 20.3, 2025&amp;rsquo;e kadar desteklenecek uzun vadeli bir destek sürümüdür. Güncellenmiş yazılımla birlikte gelir ve masaüstü deneyiminizi daha konforlu hale getirmek için iyileştirmeler ve birçok yeni özellik sunar.&lt;/p&gt;
+&lt;p&gt;Bu yazının yazıldığı sırada, Linux nane dağıtım izleme sitesinde 4. sıradaydı. Ubuntu tabanlı dağıtım, birçok yeni özellik ve iyileştirmeye sahiptir. Yeni özellikleri aşağıda özetleyelim.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hipnotix IPTV Oynatıcı&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Thingy Belge Yöneticisi&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yapışkan notlar&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Tema Değişiklikleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Takvim Entegrasyonu&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sanat geliştirmeleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sistem iyileştirmeleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Yeniliklerin ve özelliklerin detaylarını Linux Mint duyuru sayfasından inceleyebilirsiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Linux Kernel 25 Yaşında</title>
+      <link>http://localhost:1313/tr/linux-kernel-25-yasinda/</link>
+      <pubDate>Sat, 17 Sep 2016 17:56:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linux-kernel-25-yasinda/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux kullanıcıları için 17 Eylül 1991 tarihinin ayrı bir anlamı olmalı. Günümüzde, hayatın hemen her alanında kullanılmakta olan Linux işletim sisteminin ilk sürümü olarak bilinen Kernel 0.01, bundan tam 25 yıl önce yayınlanmıştı.&lt;/p&gt;
+&lt;p&gt;Yayınlanmasının hemen ardından Kasım 1991&amp;rsquo;de Manchester Computer Centre (MCC), dosyaları FTP sunucusundan yayınlamaya başladı. Şubat 1992 tarihinde ilk kurulabilir Linux sürümü Owen Le Blanc tarafından hayata geçirildi. Mayıs 1992&amp;rsquo;de ise Softlanding Linux System (SLS) içerisinde X Windows sistemi bulunan Linux sürümünü yayınladı. İşte bu sürüm, Slackware&amp;rsquo;in ilk temelini teşkil etmektedir.&lt;/p&gt;
+&lt;p&gt;Sonraki 3 yıl boyunca meydana gelen iyileştirme ve gelişmelerden sonra 1994 yılı ortalarında Slackware, Debian GNU/Linux, S.u.S.E ve Red Hat Linux dağıtımları ortaya çıktı ve halen kullanılmaya devam ediyor.&lt;/p&gt;
+&lt;p&gt;Tam 25 yıl boyunca, Linux hakkında sayısız kitap ve makale yazıldı. İnanılmaz derecede fazla cihazda işletim sistemi olarak kullanıldı. Halen daha kullanılmaya devam ediyor. Milyarlarca dolarlık büyük bir ekonomik sistemin içerisinde bulunan Linux, ortaya koyduğu açık kaynak yaklaşımıyla ayrıca takdir edilmeyi hak ediyor. Bu başarıda, en büyük pay Linus Torvalds ve onunla birlikte gönüllü katkıda bulunanların olsa gerek.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

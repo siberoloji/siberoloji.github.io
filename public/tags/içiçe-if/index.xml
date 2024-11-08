@@ -1,0 +1,57 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Içiçe If</title>
+    <link>http://localhost:1313/tags/i%C3%A7i%C3%A7e-if/</link>
+    <description>Recent content in Içiçe If on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 23:32:25 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/i%C3%A7i%C3%A7e-if/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; iç içe if kullanımı</title>
+      <link>http://localhost:1313/tr/c-ic-ice-if-kullanimi/</link>
+      <pubDate>Sat, 22 Jun 2024 23:32:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-ic-ice-if-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* nested if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+        if (a &amp;lt; 10)
+            cout &amp;lt;&amp;lt; &#34;a is less than 10\n&#34;;
+        else
+            cout &amp;lt;&amp;lt; &#34;a is not less than 10\n&#34;;
+    } else {
+        if (a == 20) {
+            cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+        } else
+            cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Systemctl</title>
+    <link>http://localhost:1313/tags/systemctl/</link>
+    <description>Recent content in Systemctl on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Apr 2016 14:18:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/systemctl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>systemd &amp;#8211; systemctl kullanımına başlangıç</title>
+      <link>http://localhost:1313/tr/systemd-systemctl-kullanimina-baslangic/</link>
+      <pubDate>Sun, 03 Apr 2016 14:18:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-systemctl-kullanimina-baslangic/</guid>
+      <description>
+        
+        
+         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.&lt;/p&gt;
+ &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl
+çıktı:
+UNIT &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; LOAD &amp;nbsp; ACTIVE SUB &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DESCRIPTION
+...
+rc-local.service &amp;nbsp; &amp;nbsp; loaded failed failed &amp;nbsp; &amp;nbsp; &amp;nbsp;/etc/rc.local Compatibility
+resolvconf.service &amp;nbsp; loaded active exited &amp;nbsp; &amp;nbsp; &amp;nbsp;Nameserver information manager rsyslog.service &amp;nbsp; &amp;nbsp; &amp;nbsp;loaded active running &amp;nbsp; &amp;nbsp; System Logging Service
+...
+LOAD &amp;nbsp;&amp;nbsp;= Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB &amp;nbsp;&amp;nbsp;&amp;nbsp;= The low-level unit activation state, values depend on unit type.
+152 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use &#39;systemctl list-unit-files&#39;.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Bunun sonucunda sisteminizin başlama durumunda yüklenen, yüklenmeyen tüm servisler ile ilgili bir rapor ekrana görüntülenir. Bu ekranda, LOAD - ACTIVE - SUB sütünları, yüklenen ünitenin durumu hakkında bilgiler verir. Bu sütunlardaki bilgilere göre sisteminizin hatalarını tespit edip, diğer systemd araçlarının da yardımıyla hataları düzeltebilirsiniz.&lt;/p&gt;
+ &lt;p&gt;Yukarıda verilen komutun çıktısı, normalde çok daha detaylı ve uzundur ancak buraya kısa halini aldık.&amp;nbsp;Raporun sonunda,&amp;nbsp;&lt;em&gt;152 loaded units listed &amp;nbsp;&lt;/em&gt;ifadesiyle, toplam 152 ünitenin listelendiğini görebiliyoruz.&lt;/p&gt;
+ &lt;p&gt;Komutun çıktısında, kırmızı ikaz ile gösterilen problem hakkında detaylı bilgi almak için&amp;nbsp;&lt;strong&gt;systemctl&lt;/strong&gt;&amp;nbsp;aracının&amp;nbsp;&lt;strong&gt;status&lt;/strong&gt;&amp;nbsp;unite komutunu ve bilgi almak istediğimiz unitenin ismini kullanacağız.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl status rc-local.service
+çıktı:
+● rc-local.service - /etc/rc.local Compatibility
+Loaded: loaded (/lib/systemd/system/rc-local.service; static; vendor preset: enabled)
+Active: failed (Result: exit-code) since Paz 2015-05-10 10:04:17 EEST; 42min ago
+Process: 696 ExecStart=/etc/rc.local start (code=exited, status=1/FAILURE)
+May 10 10:04:17 ubuntu systemd[1]: Starting /etc/rc.local Compatibility...
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service: control process exited, code=exited status=1
+May 10 10:04:17 ubuntu systemd[1]: Failed to start /etc/rc.local Compatibility.
+May 10 10:04:17 ubuntu systemd[1]: Unit rc-local.service entered failed state.
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service failed.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Detaylarını daha sonra açıklayacağımız bu durum raporları, sistemimiz hakkında nerelerde problem yaşandığını öğrenmekte oldukça faydalı olacaktır. Systemctl aracının kullanımı, yukarıda gösterilen ve benzeri şekillerde, durum komutları ve parametrelerle olmaktadır.&lt;/p&gt;
+ &lt;p&gt;Systemd araçlarından systemctrl aracına kısaca bakmış olduk. İlerleyen yazılarda, unite komutları, unite dosya komutları ve sistem komutlarını systemctl aracı ile kullanmayı inceleyeceğiz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

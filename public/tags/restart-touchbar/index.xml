@@ -1,0 +1,42 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Restart Touchbar</title>
+    <link>http://localhost:1313/tags/restart-touchbar/</link>
+    <description>Recent content in Restart Touchbar on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 13:27:54 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/restart-touchbar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to restart TouchBar on MacOS?</title>
+      <link>http://localhost:1313/how-to-restart-touchbar-on-macos/</link>
+      <pubDate>Sat, 22 Jun 2024 13:27:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-restart-touchbar-on-macos/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The touchbar on Macbook Pro models provides very good ease of use. You may notice that some touch bars work differently than they should or are not responsive at all. We have prepared a recommendation to solve this problem. You should try these commands when your touch bar becomes unresponsive.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Open the Terminal application. (You can open Spotlight with Command+Space keys and search for the &amp;ldquo;Terminal&amp;rdquo; application.) &lt;br&gt;Stop and restart the Touchbar server with the following commands.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:931,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/06/Screenshot-2024-06-22-at-13.12.28-1024x234.png&#34; alt=&#34;&#34; class=&#34;wp-image-931&#34; /&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo pkill TouchBarServer
+sudo killall ControlStrip&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;You will see that the Touchbar restarts and the problem is most likely resolved. If this does not solve your problem, you may have a hardware problem. In this case, we recommend that you contact an authorized service.&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

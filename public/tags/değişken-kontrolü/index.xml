@@ -1,0 +1,47 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Değişken Kontrolü</title>
+    <link>http://localhost:1313/tags/de%C4%9Fi%C5%9Fken-kontrol%C3%BC/</link>
+    <description>Recent content in Değişken Kontrolü on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jan 2022 09:14:23 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/de%C4%9Fi%C5%9Fken-kontrol%C3%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Değişkenin tipini when() metodu ile kontrol etme</title>
+      <link>http://localhost:1313/tr/degiskenin-tipini-when-metodu-ile-kontrol-etme/</link>
+      <pubDate>Sun, 16 Jan 2022 09:14:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/degiskenin-tipini-when-metodu-ile-kontrol-etme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazıda, veri tipi ile When() kullanımına bir örnek görebilirsiniz. Veri türü, çalıştırılacak kodu belirleyecektir.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt; val x : Any = 12.75
+    when(x){
+        is Int -&amp;gt; println(&#34;$x is an Integer&#34;)
+        is Double -&amp;gt; println(&#34;$x is a Double&#34;)
+        is String -&amp;gt; println(&#34;$x is a String&#34;)
+        else -&amp;gt; println(&#34;$x is not Int,Double or String&#34;)
+
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:image {&#34;id&#34;:157,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/02/when_datatype_check_kotlin.png-1024x593.webp&#34; alt=&#34;&#34; class=&#34;wp-image-157&#34; /&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

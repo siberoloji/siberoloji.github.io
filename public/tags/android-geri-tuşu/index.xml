@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Android Geri Tuşu</title>
+    <link>http://localhost:1313/tags/android-geri-tu%C5%9Fu/</link>
+    <description>Recent content in Android Geri Tuşu on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Mar 2022 13:40:58 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/android-geri-tu%C5%9Fu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Android Uygulamada &amp;#8220;Geri Tuşu&amp;#8221; Ekleme Nasıl Yapılır?</title>
+      <link>http://localhost:1313/tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/</link>
+      <pubDate>Tue, 01 Mar 2022 13:40:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Android yazılımında, MainActivity dışında, kullanıcı navigasyonu için YUKARI düğmesini eklemeniz gerekecektir. Projenizin AndroidManifest.xml dosyasına gerekli kodları ekleyerek işlem çubuğunda YUKARI butonunu görüntüleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Projemizde iki aktivitemiz var. Biri MainActivity, diğeri DisplayMessageActivity. Kullanıcı MainActivity ekranındaki düğmeye dokunduğunda, program DisplayMessageActiviy&amp;rsquo;e girer. Kullanıcı nasıl GERİ gidebilir?&lt;/p&gt;
+&lt;p&gt;ANA etkinliğin adını ALT etkinliğine bildirebiliriz, böylece Android, DisplayMessageActivity&amp;rsquo;de YUKARI(Geri) düğmesini gösterebilir.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Before adding UP button&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:exported=&#34;false&#34; /&amp;gt;
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;AndroidManifest.xml dosyanızda gerekli değişiklikleri yaptıktan sonra kodunuz bu şekilde olmalıdır.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After declaring parent activity&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:parentActivityName=&#34;.MainActivity&#34;
+            android:exported=&#34;false&#34; &amp;gt;
+        &amp;lt;meta-data
+            android:name=&#34;android.support.PARENT_ACTIVITY&#34;
+            android:value=&#34;.MainActivity&#34; /&amp;gt;
+        &amp;lt;/activity&amp;gt;
+
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;android:parentActivityName özelliği Android 4.1&amp;rsquo;de (API düzeyi 16) kullanıma sunuldu. Android&amp;rsquo;in eski sürümlerine sahip cihazları desteklemek için, adın &amp;ldquo;android.support.PARENT_ACTIVITY&amp;rdquo; olduğu ve değerin üst etkinliğin adı olduğu bir  ad-değer çifti tanımlayın.&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:198,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/03/upbuttonscreenshot-524x1024.png&#34; alt=&#34;up button for Android&#34; class=&#34;wp-image-198&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Screenshot after adding UP button.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

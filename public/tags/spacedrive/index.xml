@@ -1,0 +1,53 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Spacedrive</title>
+    <link>http://localhost:1313/tags/spacedrive/</link>
+    <description>Recent content in Spacedrive on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Sep 2024 12:23:21 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/spacedrive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Spacedrive: A Modern Rust-Based Open-Source File Manager</title>
+      <link>http://localhost:1313/spacedrive-a-modern-rust-based-open-source-file-manager/</link>
+      <pubDate>Thu, 26 Sep 2024 12:23:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/spacedrive-a-modern-rust-based-open-source-file-manager/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Spacedrive file manager is emerging as a promising tool for creatives like filmmakers and musicians, offering a seamless blend of local and cloud file management through its innovative Virtual Distributed Filesystem (VDFS). Developed using a tech stack including Rust, React, and TypeScript, Spacedrive is open-source and cross-platform, supporting Linux, Windows, and macOS. Though still in development, features like unified search, tabbed browsing, and media views already showcase its versatility. Future updates will enhance cloud sync and P2P file sharing.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Overview of Spacedrive&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;overview-of-spacedriveh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#overview-of-spacedriveh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Spacedrive is powered by VDFS, a decentralized database system that mimics a traditional filesystem while offering advanced search and file organization. This architecture allows it to handle files across multiple devices without storing them directly. For users, this means a cleaner, more intuitive experience, as files are merely indexed rather than duplicated or cluttered.&lt;/p&gt;
+&lt;p&gt;The current release (version 0.4.2) allows users to organize files into libraries, create tags, and sort files in various layouts, like grid or list views. Spacedrive also comes with a rich context menu for managing files and folders, offering the flexibility and control that users expect from modern file management systems.&lt;/p&gt;
+&lt;p&gt;One standout feature is its media view mode, where users can preview and interact with large media collections. Designed with creators in mind, Spacedrive is geared towards handling a broad array of files, from videos and photos to music and other media formats.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Development and Future Outlook&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;development-and-future-outlookh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#development-and-future-outlookh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;While Spacedrive is still under heavy development, its future looks bright. Developers are working on introducing cloud sync and peer-to-peer (P2P) features in upcoming versions, allowing users to sync their libraries across devices or collaborate with others seamlessly. Plans are also in place for mobile versions on Android and iOS.&lt;/p&gt;
+&lt;p&gt;Unlike traditional file managers, Spacedrive aims to build an ecosystem around its core free software by offering premium hosting and storage services. These optional services will allow users to support the development of the tool while enjoying enhanced features.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Installation and Availability&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installation-and-availabilityh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#installation-and-availabilityh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Spacedrive is available for download on Linux, Windows, and macOS from its &lt;a href=&#34;https://www.spacedrive.com&#34;&gt;official website&lt;/a&gt; or GitHub page. The Linux version currently supports .deb packages, with future plans to add Flatpak or RPM formats for broader distribution.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Final Thoughts&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;final-thoughtsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#final-thoughtsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Spacedrive&amp;rsquo;s innovative approach to file management, combined with its focus on privacy and creative workflows, positions it as a strong alternative to existing file managers. Its continued development, community contributions, and the vision for future features make it a tool worth keeping an eye on. As it matures, Spacedrive has the potential to reshape how users manage their digital lives, offering flexibility and control with the benefits of modern, decentralized technology.&lt;/p&gt;
+&lt;p&gt;For a more in-depth look at Spacedrive and its development journey, you can visit the original article &lt;a href=&#34;https://news.itsfoss.com/spacedrive/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

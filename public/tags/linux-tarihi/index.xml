@@ -1,0 +1,64 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Tarihi</title>
+    <link>http://localhost:1313/tags/linux-tarihi/</link>
+    <description>Recent content in Linux Tarihi on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Apr 2016 14:13:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/linux-tarihi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Linux&amp;#8217;un Kısa Tarihçesi</title>
+      <link>http://localhost:1313/tr/linuxun-kisa-tarihcesi/</link>
+      <pubDate>Sat, 02 Apr 2016 14:13:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linuxun-kisa-tarihcesi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux İşletim Sistemlerinin kısa bir tarihsel gelişimini okumak isteyenlere göre bir yazı.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;1969&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Günümüzde kullanılan tüm modern işletim sistemlerinin başlangıcı, 1969 yılında Dennis Ritchie ve Ken Thompson&amp;rsquo;un AT&amp;amp;T® Bell Laboratuvarlarında, C programlama dilini ve Unix İşletim Sistemini geliştirmesine dayanır. Dennis Ritchie ve Ken Thompson, programlarının kaynak kodlarını tüm dünyayla ve Berkley California ile paylaşırlar. Unix programları bu sayede bir çok gönüllü tarafından geliştirilmeye başlanır. 1975 yılında, AT&amp;amp;T® firması, Unix işletim sistemini ticari olarak satmaya başladığında, kodları gönüllü olarak geliştirenler bundan pek mutlu olmazlar. Sürdürülen hukuki çalışmalar neticesinde, ticari olarak satılan AT&amp;amp;T® Unix ve ticari olmayan BSD Unix sistemleri ortaya çıkar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;BSD ve alt sürümleri olan FreeBSD, openBSD, NetBSD, DragonFly BSD ve PC-BSD benzeri dağıtımlar halen aktif olarak geliştirilmektedir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Dennis_Ritchie&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Dennis_Ritchie&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Dennis_Ritchie&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Ken_Thompson&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Ken_Thompson&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Ken_Thompson&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/BSD&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/BSD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/BSD&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;1980&amp;rsquo;ler&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;80&amp;rsquo;li yıllara gelindiğinde, bir çok firma kendi Unix sistemini geliştirmeye başlar. IBM® AIX, Sun® SunOS (Solaris), HP® HP-UX ve diğerleri sahneye çıkar. Bunun sonucunda, ortaya bir çok Unix sürümü çıkar ancak komutlar, ifadeler ve tanımlar oldukça karışmıştır. İşte tam bu aşamada Linux&amp;rsquo;un temelleri atılmaya başlanır. Richard Stallman, bu parçalanmışlık ve karışıklığa bir son verilmesi gerektiği düşüncesiyle, GNU Projesini (GNU is Not Unix) başlatır. Richard Stallman&amp;rsquo;ın amacı, herkesin üzerinde çalışabileceği (70&amp;rsquo;lerde olduğu gibi) ve ücretsiz olarak kullanılabilecek bir İşletim Sistemi ortaya koymaktır. Günümüzde Linux içerisinde kullanılan bir çok komut ve araç, GNU projesinin sonucudur.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Richard_Stallman&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Richard_Stallman&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Richard_Stallman&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/IBM_AIX&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/IBM_AIX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/IBM_AIX&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HP-UX&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HP-UX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/HP-UX&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;1990&amp;rsquo;lar&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;90&amp;rsquo;ların başında, Linux Torvalds isimli Finlandiyalı bir öğrenci, 386 işlemcili bir bilgisayarda POSIX standartlarının çalışabildiği çekirdek (kernel) adı verilen bir program geliştirir. Programının kaynak kodlarını insanlarla paylaşır. Tek amacı, 386 işlemcilerde GNU araçlarının çalışabilmesini sağlamaktır. Beklenmedik şekilde ilgi gören çekirdek program kısa zamanda yayılır ve kendisinin deyimiyle tarihi gelişim başlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Linus_Torvalds%20&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Linus_Torvalds&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://en.wikipedia.org/wiki/Linus_Torvalds&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/History_of_Linux&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/History_of_Linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/History_of_Linux&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Linux&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Linux&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lwn.net&#34;&gt;&lt;a href=&#34;https://lwn.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lwn.net&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.levenez.com/unix/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;http://www.levenez.com/unix/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.levenez.com/unix/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;2015&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Günümüzde, dünyada bulunan süper bilgisayarların %97&amp;rsquo;si (İlk 10&amp;rsquo;un tamamı), akıllı telefonların %80&amp;rsquo;den fazlası, milyonlarca Masaüstü bilgisayar, tüm web sunucularının %70 kadarı, bir çok tablet bilgisayar ve diğer cihazlar (dvd oynatıcılar, bulaşık makineleri, dsl modemler, routerlar, otomatik sürüş sistemli arabalar, uzay istasyonu bilgisayarları) Linux ile çalışmaktadır. Linux, dünyada en çok kullanılan işletim sistemidir diye ifade etsek sanırım yanlış olmaz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Nisan 2015 tarihinde, Linux Kernel 4.0 sürümü yayınlanmıştır. Şubat 2015 3.9 sürümüne göre bir kaç yüz bin program satırı ilave edilen çekirdek sürümüne, binlerce geliştirici katkı sağlamaktadır. Bu geliştiricilerin katkıları, Red Hat®, Intel®, Samsung®, Broadcom®, Texas Instruments®, IBM®, Novell®, Qualcomm®, Nokia®, Oracle®, Google®, AMD®, Microsoft® ve daha bir çok firma tarafında mali olarak desteklenmektedir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kernelnewbies.org/DevelopmentStatistics&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;http://kernelnewbies.org/DevelopmentStatistics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://kernelnewbies.org/DevelopmentStatistics&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://kernel.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;http://kernel.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://kernel.org&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.top500.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;http://www.top500.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.top500.org&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Kaynaklar:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://linux-training.be/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Linux Fundamentals&lt;/a&gt;, Paul Cobault, 2015&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

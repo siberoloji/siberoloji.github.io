@@ -1,0 +1,211 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Adders</title>
+    <link>http://localhost:1313/tags/adders/</link>
+    <description>Recent content in Adders on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Oct 2024 10:04:25 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/adders/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Understanding Logic Circuits: Adders and Subtractors</title>
+      <link>http://localhost:1313/understanding-logic-circuits-adders-and-subtractors/</link>
+      <pubDate>Tue, 08 Oct 2024 10:04:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/understanding-logic-circuits-adders-and-subtractors/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Logic circuits form the backbone of digital electronics, enabling computers and various electronic devices to perform arithmetic operations. Among these circuits, &lt;strong&gt;adders&lt;/strong&gt; and &lt;strong&gt;subtractors&lt;/strong&gt; play crucial roles in arithmetic logic units (ALUs), which are fundamental components of processors. This blog post will delve into the design, types, and applications of adders and subtractors, providing a comprehensive understanding of their significance in digital systems.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What Are Adders and Subtractors?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-adders-and-subtractorsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-are-adders-and-subtractorsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Adders&lt;/strong&gt; are digital circuits that perform addition of binary numbers, while &lt;strong&gt;subtractors&lt;/strong&gt; perform subtraction. Both circuits utilize basic logic gates—AND, OR, NOT, and XOR—to execute their functions. The design of these circuits is essential for arithmetic operations in computers and other digital devices.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Types of Adders&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;types-of-addersh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#types-of-addersh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Half Adder&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A half adder is the simplest form of an adder circuit that adds two single binary digits.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Inputs:&lt;/strong&gt; Two bits (A and B).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Outputs:&lt;/strong&gt; Two outputs—Sum (S) and Carry (C).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;The logic equations are:&lt;ul&gt;&lt;li&gt;S = A ⊕  B (XOR operation)&lt;/li&gt;&lt;li&gt;C = A ⋅ B (AND operation)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:image {&#34;id&#34;:2731,&#34;width&#34;:&#34;471px&#34;,&#34;height&#34;:&#34;auto&#34;,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large is-resized&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/10/Half-Adder-2-1024x835.png&#34; alt=&#34;&#34; class=&#34;wp-image-2731&#34; style=&#34;width:471px;height:auto&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Half Adder Diagram&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Full Adder&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A full adder extends the half adder by adding an additional input for carry-in from a previous addition.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Inputs:&lt;/strong&gt; Three bits (A, B, Carry-in).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Outputs:&lt;/strong&gt; Two outputs—Sum (S) and Carry-out (C).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;The logic equations are:&lt;ul&gt;&lt;li&gt;S = A ⊕ B ⊕ Carry-inC = (A ⋅ B) + (Carry-in ⋅ (A ⊕ B))&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:image {&#34;id&#34;:2732,&#34;sizeSlug&#34;:&#34;full&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/10/3-57.png&#34; alt=&#34;&#34; class=&#34;wp-image-2732&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Full Adder&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ripple Carry Adder&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;This is a series connection of full adders where the carry-out from one adder becomes the carry-in for the next.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Although simple to design, it suffers from propagation delay as each carry must ripple through all adders.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Carry Lookahead Adder&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;To overcome the delay in ripple carry adders, carry lookahead adders use additional logic to calculate carry signals in advance.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;This significantly speeds up addition by reducing the time taken for carries to propagate through the circuit.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Types of Subtractors&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;types-of-subtractorsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#types-of-subtractorsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Half Subtractor&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A half subtractor is designed to subtract one binary digit from another.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Inputs:&lt;/strong&gt; Two bits (A and B).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Outputs:&lt;/strong&gt; Two outputs—Difference (D) and Borrow (B).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;The logic equations are:&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;D = A ⊕ B&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;B = Ā⋅&lt;em&gt;B&lt;/em&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Full Subtractor&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A full subtractor can handle borrowing from a previous subtraction.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Inputs:&lt;/strong&gt; Three bits (A, B, Borrow-in).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Outputs:&lt;/strong&gt; Two outputs—Difference (D) and Borrow-out (B).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;The logic equations are:&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;D = A ⊕ B ⊕Borrow-in&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;B =(Ā ⋅ B) + (Borrow-in .  overline(A ⊕ B))&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Applications of Adders and Subtractors&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;applications-of-adders-and-subtractorsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#applications-of-adders-and-subtractorsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Adders and subtractors are integral to various applications in digital electronics:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Arithmetic Logic Units (ALUs):&lt;/strong&gt; These circuits perform all arithmetic operations in processors, including addition, subtraction, multiplication, and division.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Digital Signal Processing:&lt;/strong&gt; Adders are used in algorithms for audio and video processing where signal manipulation is required.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Computer Graphics:&lt;/strong&gt; In rendering images, adders help compute pixel values based on color data.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Embedded Systems:&lt;/strong&gt; Many microcontrollers use adders/subtractors for control algorithms in robotics and automation.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Designing Adders and Subtractors&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;designing-adders-and-subtractorsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#designing-adders-and-subtractorsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The design process typically involves:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Defining Requirements:&lt;/strong&gt; Determine the number of bits for inputs and outputs based on the application.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Choosing Logic Gates:&lt;/strong&gt; Select appropriate gates to implement the required logic functions.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Creating Truth Tables:&lt;/strong&gt; Develop truth tables to understand how inputs relate to outputs.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Implementing Circuit Diagrams:&lt;/strong&gt; Draw circuit diagrams based on the chosen gates and their connections.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Adders and subtractors are fundamental components in digital electronics that enable arithmetic operations crucial for computing tasks. Understanding their design and functionality is essential for anyone interested in electronics or computer engineering. As technology advances, these basic circuits continue to evolve, becoming faster and more efficient while remaining integral to modern computing systems.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;By grasping how these circuits operate, engineers can innovate new applications that leverage their capabilities in increasingly complex digital environments. Whether you&amp;rsquo;re designing a simple calculator or developing sophisticated algorithms for artificial intelligence, mastering adders and subtractors is a vital step in your journey through digital electronics.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;p&gt;This post provides an overview of adders and subtractors within logic circuits while emphasizing their importance in various applications. By understanding these basic components, readers can appreciate their role in the broader context of digital systems design.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Citations:&lt;br&gt;[1] &lt;a href=&#34;https://www.coursehero.com/file/172102346/DLC-3docx/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.coursehero.com/file/172102346/DLC-3docx/&lt;/a&gt;&lt;br&gt;[2] &lt;a href=&#34;https://cse.gecgudlavalleru.ac.in/images/admin/pdf/1638683991_Digital-Logic-Design.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cse.gecgudlavalleru.ac.in/images/admin/pdf/1638683991_Digital-Logic-Design.pdf&lt;/a&gt;&lt;br&gt;[3] &lt;a href=&#34;https://www.uni-potsdam.de/en/dtm/teaching/archive/digital-hardware-from-binary-arithmetic-to-processor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.uni-potsdam.de/en/dtm/teaching/archive/digital-hardware-from-binary-arithmetic-to-processor&lt;/a&gt;&lt;br&gt;[4] &lt;a href=&#34;https://www.coursehero.com/file/232195641/LAB-3-GROUP-4pdf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.coursehero.com/file/232195641/LAB-3-GROUP-4pdf/&lt;/a&gt;&lt;br&gt;[5] &lt;a href=&#34;https://www.studocu.com/row/document/american-international-university-bangladesh/digital-logic-and-circuit/dlc-lab-03-student-manual/99104506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.studocu.com/row/document/american-international-university-bangladesh/digital-logic-and-circuit/dlc-lab-03-student-manual/99104506&lt;/a&gt;&lt;br&gt;[6] &lt;a href=&#34;https://www.youtube.com/watch?v=hb59vE-eRmQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=hb59vE-eRmQ&lt;/a&gt;&lt;br&gt;[7] &lt;a href=&#34;https://www.studocu.com/row/document/american-international-university-bangladesh/digital-logic-and-circuit/dlc-lab-03-student-manual-mod/74793095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.studocu.com/row/document/american-international-university-bangladesh/digital-logic-and-circuit/dlc-lab-03-student-manual-mod/74793095&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

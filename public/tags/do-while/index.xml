@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Do While</title>
+    <link>http://localhost:1313/tags/do-while/</link>
+    <description>Recent content in Do While on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Jun 2024 23:19:21 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/do-while/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; do-while döngüsü ile faktöriyel hesaplama</title>
+      <link>http://localhost:1313/tr/c-do-while-dongusu-ile-faktoriyel-hesaplama/</link>
+      <pubDate>Fri, 28 Jun 2024 23:19:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-do-while-dongusu-ile-faktoriyel-hesaplama/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int calculateFactorial(int number) {
+    int result = 1;
+    for (int i = 1; i &amp;lt;= number; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int inputNumber;
+    char exitKey;
+    
+    do {
+        cout &amp;lt;&amp;lt; &#34;Enter a number between 1 and 10: &#34;;
+        cin &amp;gt;&amp;gt; inputNumber;
+        
+        if (inputNumber &amp;lt; 1) {
+            cout &amp;lt;&amp;lt; &#34;Number must be greater than 0.\n&#34;;
+        } else if (inputNumber &amp;gt; 10) {
+            cout &amp;lt;&amp;lt; &#34;Number must be less than or equal to 10.\n&#34;;
+        } else {
+            int factorial = calculateFactorial(inputNumber);
+            cout &amp;lt;&amp;lt; &#34;Result: &#34; &amp;lt;&amp;lt; factorial &amp;lt;&amp;lt; endl;
+        }
+        
+        cout &amp;lt;&amp;lt; &#34;Press &#39;h&#39; to exit, any other key to continue: &#34;;
+        cin &amp;gt;&amp;gt; exitKey;
+    } while (exitKey != &#39;h&#39;);
+    
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

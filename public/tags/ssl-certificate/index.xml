@@ -1,0 +1,236 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Ssl Certificate</title>
+    <link>http://localhost:1313/tags/ssl-certificate/</link>
+    <description>Recent content in Ssl Certificate on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2024 20:12:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/ssl-certificate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AlmaLinux 9: How to Configure SSL/TLS and Obtain Let’s Encrypt Certificates on Apache Server</title>
+      <link>http://localhost:1313/almalinux-9-how-to-configure-ssl-tls-and-obtain-lets-encrypt-certificates-on-apache-server/</link>
+      <pubDate>Fri, 04 Oct 2024 20:12:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/almalinux-9-how-to-configure-ssl-tls-and-obtain-lets-encrypt-certificates-on-apache-server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In today’s world, where online security is paramount, encrypting the communication between a web server and its users has become essential. Using SSL/TLS (Secure Sockets Layer/Transport Layer Security) certificates provides that layer of security, ensuring that sensitive information exchanged between a browser and a server is encrypted. One of the most popular and cost-effective ways to implement SSL/TLS is by using Let’s Encrypt, a free certificate authority that provides trusted SSL/TLS certificates for your websites.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;In this guide, we will walk you through the steps to configure SSL/TLS and obtain a Let’s Encrypt certificate on an Apache web server running AlmaLinux 9.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;table-of-contentsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#table-of-contentsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Understanding SSL/TLS and Let’s Encrypt&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Prerequisites&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 1: Installing Apache on AlmaLinux 9&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 2: Installing Certbot for Let’s Encrypt&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 3: Setting Up the Firewall&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 5: Configuring Apache to Use SSL/TLS Certificates&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 6: Auto-Renewal of Let’s Encrypt Certificates&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;1. Understanding SSL/TLS and Let’s Encrypt&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-understanding-ssltls-and-lets-encrypth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-understanding-ssltls-and-lets-encrypth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What is SSL/TLS?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-ssltlsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-ssltlsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are cryptographic protocols designed to secure communications over a computer network. SSL/TLS certificates authenticate the identity of websites and enable an encrypted connection. When a website has an SSL/TLS certificate, a padlock icon appears in the browser&amp;rsquo;s address bar, and the site’s URL begins with &amp;ldquo;https,&amp;rdquo; indicating a secure connection.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What is Let’s Encrypt?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-lets-encrypth3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-lets-encrypth3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Let’s Encrypt is a free, automated, and open Certificate Authority (CA) that provides SSL/TLS certificates to encrypt web traffic. It simplifies the process of setting up SSL/TLS by automating the certificate issuance and renewal processes, allowing website administrators to secure their sites quickly and with minimal effort.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;2. Prerequisites&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-prerequisitesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-prerequisitesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before we begin, you need to make sure the following prerequisites are met:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;A server running AlmaLinux 9&lt;/strong&gt; with root or sudo user access.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;A domain name&lt;/strong&gt; that points to your server&#39;s public IP address.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Apache web server&lt;/strong&gt; installed and running.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Firewall configuration&lt;/strong&gt; that allows HTTP and HTTPS traffic.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A tool like &lt;strong&gt;Certbot&lt;/strong&gt;, which simplifies the process of obtaining and managing Let’s Encrypt SSL certificates.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;3. Step 1: Installing Apache on AlmaLinux 9&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-step-1-installing-apache-on-almalinux-9h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-step-1-installing-apache-on-almalinux-9h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If Apache is not already installed on your server, the first step is to install it. Here’s how to do it:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Install Apache:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-apacheh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-apacheh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Enable and Start Apache:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;enable-and-start-apacheh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#enable-and-start-apacheh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once Apache is installed, enable it to start automatically on system boot and start the service.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable httpd
+sudo systemctl start httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Check Apache Status:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check-apache-statush3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check-apache-statush3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To ensure Apache is running, check its status:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl status httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;If the service is active and running, you’re good to go.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;4. Step 2: Installing Certbot for Let’s Encrypt&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-step-2-installing-certbot-for-lets-encrypth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-step-2-installing-certbot-for-lets-encrypth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Next, you’ll need to install Certbot, the tool that automates the process of obtaining and renewing Let’s Encrypt certificates.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Install the Required Packages:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-the-required-packagesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-the-required-packagesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Run the following command to install the Certbot and the Certbot Apache plugin:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install certbot python3-certbot-apache&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The Certbot Apache plugin will automatically configure SSL/TLS for your Apache web server.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;5. Step 3: Setting Up the Firewall&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-step-3-setting-up-the-firewallh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-step-3-setting-up-the-firewallh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To ensure that your server can handle both HTTP and HTTPS traffic, you’ll need to update the firewall settings.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Allow HTTP and HTTPS Traffic:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;allow-http-and-https-traffich3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#allow-http-and-https-traffich3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Run the following commands to open the necessary ports:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;By doing this, you’ve allowed HTTP traffic on port 80 and HTTPS traffic on port 443, which are essential for web traffic and secure communication.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once Apache is installed and the firewall is configured, the next step is to obtain an SSL/TLS certificate from Let’s Encrypt.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Obtain the SSL/TLS Certificate:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;obtain-the-ssltls-certificateh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#obtain-the-ssltls-certificateh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To obtain a Let’s Encrypt SSL certificate for your domain, use the following Certbot command:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo certbot --apache -d yourdomain.com -d www.yourdomain.com&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Replace &lt;code&gt;yourdomain.com&lt;/code&gt; and &lt;code&gt;&lt;a href=&#34;https://www.yourdomain.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.yourdomain.com&lt;/a&gt;&lt;/code&gt; with your actual domain name. Certbot will handle the following:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Verify ownership of the domain.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Automatically obtain and install the SSL certificate.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Configure your Apache server to serve your site over HTTPS.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Follow the Certbot Prompts:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;follow-the-certbot-promptsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#follow-the-certbot-promptsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Certbot will prompt you with a few questions, such as whether you want to redirect HTTP traffic to HTTPS (which is recommended). Once the process is complete, Certbot will automatically configure Apache with your new SSL/TLS certificate.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Verify the SSL/TLS Certificate:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;verify-the-ssltls-certificateh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#verify-the-ssltls-certificateh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;You can verify that the SSL certificate is installed correctly by visiting your website using &lt;code&gt;&lt;a href=&#34;https://yourdomain.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yourdomain.com&lt;/a&gt;&lt;/code&gt;. You should see the padlock icon next to your URL, indicating that the site is secure.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;7. Step 5: Configuring Apache to Use SSL/TLS Certificates&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-step-5-configuring-apache-to-use-ssltls-certificatesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-step-5-configuring-apache-to-use-ssltls-certificatesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Certbot usually handles most of the configuration automatically. However, if you want to manually configure your SSL/TLS settings or customize them further, you can do so in the Apache configuration files.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;SSL Configuration File:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ssl-configuration-fileh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ssl-configuration-fileh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The SSL configuration file is usually located in &lt;code&gt;/etc/httpd/conf.d/ssl.conf&lt;/code&gt; or &lt;code&gt;/etc/httpd/conf.d/yourdomain-le-ssl.conf&lt;/code&gt; (if Certbot created it). This file contains directives to control how Apache uses the SSL certificate.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Here’s an example configuration:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;VirtualHost *:443&amp;gt;
+    ServerName yourdomain.com
+    ServerAlias www.yourdomain.com
+
+    DocumentRoot /var/www/html
+
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/yourdomain.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/yourdomain.com/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+&amp;lt;/VirtualHost&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;In this file, you’ll find references to the Let’s Encrypt SSL certificate files, which Certbot has installed. These include:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;SSLCertificateFile&lt;/strong&gt;: The location of the SSL certificate.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;SSLCertificateKeyFile&lt;/strong&gt;: The location of the private key.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Include /etc/letsencrypt/options-ssl-apache.conf&lt;/strong&gt;: This line ensures that Apache uses the recommended security settings.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Redirect HTTP to HTTPS:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redirect-http-to-httpsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#redirect-http-to-httpsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To ensure that all traffic to your site uses HTTPS, you can set up a redirect from HTTP to HTTPS in the Apache configuration:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;VirtualHost *:80&amp;gt;
+    ServerName yourdomain.com
+    ServerAlias www.yourdomain.com
+
+    Redirect permanent / https://yourdomain.com/
+&amp;lt;/VirtualHost&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This configuration automatically redirects visitors accessing &lt;code&gt;&lt;a href=&#34;http://yourdomain.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://yourdomain.com&lt;/a&gt;&lt;/code&gt; to the secure &lt;code&gt;&lt;a href=&#34;https://yourdomain.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yourdomain.com&lt;/a&gt;&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;8. Step 6: Auto-Renewal of Let’s Encrypt Certificates&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-step-6-auto-renewal-of-lets-encrypt-certificatesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-step-6-auto-renewal-of-lets-encrypt-certificatesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Let’s Encrypt certificates are valid for 90 days, but Certbot can automatically renew them for you. To ensure your SSL certificates are renewed before they expire, Certbot includes a renewal script.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Enable Auto-Renewal:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;enable-auto-renewalh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#enable-auto-renewalh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Certbot automatically adds a cron job to handle certificate renewals. However, you can manually test the renewal process to ensure it works correctly:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo certbot renew --dry-run&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This command performs a dry run to simulate the renewal process without actually renewing the certificate. If successful, Certbot will automatically renew your certificates as they approach expiration.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;9. Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;9-conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#9-conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Setting up SSL/TLS with Let’s Encrypt on AlmaLinux 9 is a straightforward process, thanks to the powerful Certbot tool and its tight integration with Apache. By following the steps outlined in this guide, you can secure your website with trusted SSL/TLS certificates, ensuring that your users&amp;rsquo; data is encrypted and safe.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Not only will SSL/TLS improve your site&amp;rsquo;s security, but it also boosts SEO rankings and builds user trust. Remember to keep an eye on certificate renewal to ensure continuous protection for your website, though Certbot automates most of this process.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;With this setup, your AlmaLinux 9 server is now ready to securely serve content over HTTPS, providing peace of mind to both you and your site’s visitors. Happy hosting!&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

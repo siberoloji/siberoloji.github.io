@@ -1,0 +1,119 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Toast Message</title>
+    <link>http://localhost:1313/tags/toast-message/</link>
+    <description>Recent content in Toast Message on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Feb 2022 20:43:12 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/toast-message/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to make Toast message?</title>
+      <link>http://localhost:1313/how-to-make-toast-message/</link>
+      <pubDate>Mon, 28 Feb 2022 20:43:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-make-toast-message/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;You can find a code sample to make a Toast message in Android Studio&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;h2&gt;Example-1&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-1h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&lt;code&gt;val text = &#34;Hello toast!&#34;
+val duration = Toast.LENGTH_SHORT
+
+val toast = Toast.makeText(applicationContext, text, duration)
+toast.show()&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;or you can call directly&lt;/p&gt;
+&lt;h2&gt;Example-2&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-2h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-2h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&lt;code&gt;Toast.makeText(context, text, duration).show()&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Example-3&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-3h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-3h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;With this example, you can display a &#34;click counter&#34; and a &#34;toast message&#34; together.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val clkButton = findViewById&amp;lt;Button&amp;gt;(R.id.button)
+        val myTextView = findViewById&amp;lt;TextView&amp;gt;(R.id.textView)
+        var timesClicked = 0
+
+        clkButton.setOnClickListener{
+            timesClicked += 1
+            myTextView.text = timesClicked.toString()
+            Toast.makeText(this@MainActivity, &#34;Hi friend&#34;, Toast.LENGTH_LONG).show()
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Important&amp;hellip;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;importanth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#importanth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As you can see, there must be a button and textView element in your activity_main.xml file. You can find an example below.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;xml&#34; class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+    xmlns:tools=&#34;http://schemas.android.com/tools&#34;
+    xmlns:app=&#34;http://schemas.android.com/apk/res-auto&#34;
+    android:layout_width=&#34;match_parent&#34;
+    android:layout_height=&#34;match_parent&#34;
+    tools:context=&#34;.MainActivity&#34;&amp;gt;
+
+    &amp;lt;TextView
+        android:id=&#34;@+id/textView&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:text=&#34;@string/salutation&#34;
+        app:layout_constraintBottom_toBottomOf=&#34;parent&#34;
+        app:layout_constraintLeft_toLeftOf=&#34;parent&#34;
+        app:layout_constraintRight_toRightOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34;
+        tools:text=&#34;this is for developer&#34; /&amp;gt;
+
+    &amp;lt;Button
+        android:id=&#34;@+id/button&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:layout_marginStart=&#34;149dp&#34;
+        android:layout_marginTop=&#34;248dp&#34;
+        android:layout_marginEnd=&#34;149dp&#34;
+        android:layout_marginBottom=&#34;23dp&#34;
+        android:text=&#34;@string/button&#34;
+        app:layout_constraintBottom_toTopOf=&#34;@+id/textView&#34;
+        app:layout_constraintEnd_toEndOf=&#34;parent&#34;
+        app:layout_constraintStart_toStartOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34; /&amp;gt;
+
+&amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:buttons --&gt;
+&lt;div class=&#34;wp-block-buttons&#34;&gt;&lt;!-- wp:button {&#34;backgroundColor&#34;:&#34;subtle-background&#34;,&#34;textColor&#34;:&#34;primary&#34;,&#34;className&#34;:&#34;is-style-fill&#34;} --&gt;
+&lt;div class=&#34;wp-block-button is-style-fill&#34;&gt;&lt;a class=&#34;wp-block-button__link has-primary-color has-subtle-background-background-color has-text-color has-background wp-element-button&#34; href=&#34;https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;see on gıthub&lt;/a&gt;&lt;/div&gt;
+&lt;!-- /wp:button --&gt;&lt;/div&gt;
+&lt;!-- /wp:buttons --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

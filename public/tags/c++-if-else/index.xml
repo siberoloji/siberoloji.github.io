@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – C&#43;&#43; if Else</title>
+    <link>http://localhost:1313/tags/c&#43;&#43;-if-else/</link>
+    <description>Recent content in C&#43;&#43; if Else on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Jun 2024 23:37:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/c++-if-else/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; if else kullanımı</title>
+      <link>http://localhost:1313/tr/c-if-else-kullanimi/</link>
+      <pubDate>Sat, 22 Jun 2024 23:37:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-if-else-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda, C++ if else kullanımını inceleyebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;a is not less than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,79 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Printf</title>
+    <link>http://localhost:1313/tags/printf/</link>
+    <description>Recent content in Printf on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Jun 2024 01:19:55 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/printf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Printing int, float and string values ​​with printf in C&#43;&#43;</title>
+      <link>http://localhost:1313/printing-int-float-and-string-values-with-printf-in-c/</link>
+      <pubDate>Fri, 28 Jun 2024 01:19:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/printing-int-float-and-string-values-with-printf-in-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;string&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr int number = 123;
+    constexpr float realNumber = 3.146;
+    string text = &#34;Hello World&#34;;
+    printf(&#34;Number: %d\n&#34;, number);
+    printf(&#34;Pi value: %.2f\n&#34;, realNumber);
+    printf(&#34;Text: %s\n&#34;, text.c_str());
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; int, float ve string değerlerini printf ile yazdırma</title>
+      <link>http://localhost:1313/tr/c-int-float-ve-string-degerlerini-printf-ile-yazdirma/</link>
+      <pubDate>Fri, 28 Jun 2024 01:17:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-int-float-ve-string-degerlerini-printf-ile-yazdirma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu kod, int ve float değişkenlerinin sabit, metin değişkenin sabit olmadığı bir main işlevi tanımlar. number, realNumber ve text değerlerini yazdırır ve ardından 0 değerini döndürür.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;string&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr int number = 123;
+    constexpr float realNumber = 3.146;
+    string text = &#34;Hello World&#34;;
+    printf(&#34;Number: %d\n&#34;, number);
+    printf(&#34;Pi value: %.2f\n&#34;, realNumber);
+    printf(&#34;Text: %s\n&#34;, text.c_str());
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

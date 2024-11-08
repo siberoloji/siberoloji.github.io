@@ -1,0 +1,80 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Cyber News</title>
+    <link>http://localhost:1313/tags/cyber-news/</link>
+    <description>Recent content in Cyber News on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Oct 2024 16:40:09 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/cyber-news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>The Internet Archive is under attack, with a breach revealing info for 31 million accounts</title>
+      <link>http://localhost:1313/the-internet-archive-is-under-attack-with-a-breach-revealing-info-for-31-million-accounts/</link>
+      <pubDate>Thu, 10 Oct 2024 16:40:09 +0000</pubDate>
+      
+      <guid>http://localhost:1313/the-internet-archive-is-under-attack-with-a-breach-revealing-info-for-31-million-accounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The recent data breach affecting the Internet Archive has raised significant concerns about cybersecurity and the protection of user data. This incident, which exposed the personal information of approximately 31 million accounts, highlights vulnerabilities in digital platforms that serve critical roles in preserving internet history and access to information. In this blog post, we will delve into the details of the breach, its implications for users, and the broader context of cybersecurity in nonprofit organizations.&lt;/p&gt;
+&lt;h2&gt;Overview of the Incident&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;overview-of-the-incidenth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#overview-of-the-incidenth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;On October 9, 2024, the Internet Archive, a nonprofit organization renowned for its vast digital library and the Wayback Machine, suffered a significant cyberattack. The breach was confirmed by Brewster Kahle, the founder of the Internet Archive, who reported that a JavaScript alert appeared on the site indicating that user data had been compromised. The alert stated:&lt;/p&gt;
+&lt;!-- wp:quote --&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &#34;Have you ever felt like the Internet Archive runs on sticks and is constantly on the verge of suffering a catastrophic security breach? It just happened. See 31 million of you on HIBP!&#34;[1][2]. 
+ &lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+&lt;p&gt;This alarming message pointed users to &amp;ldquo;Have I Been Pwned&amp;rdquo; (HIBP), a service that allows individuals to check if their personal information has been involved in any data breaches.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Details of the Breach&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;details-of-the-breachh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#details-of-the-breachh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The compromised data includes usernames, email addresses, bcrypt-hashed passwords, and timestamps for password changes[3][4]. The database containing this information is approximately 6.4GB in size and was shared with HIBP shortly after the breach occurred[2][4]. Notably, it was revealed that around 54% of the compromised accounts had already been part of previous breaches, indicating a troubling trend in user data security[1][5].&lt;/p&gt;
+&lt;p&gt;Troy Hunt, the creator of HIBP, confirmed that he had communicated with users whose data was included in the leaked database. This validation process involved cross-referencing their details with those stored in his service[2][4]. The breach&amp;rsquo;s authenticity was further corroborated when cybersecurity researcher Scott Helme confirmed that his account details matched those in the leaked records[2].&lt;/p&gt;
+&lt;h2&gt;Attack Mechanism&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;attack-mechanismh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#attack-mechanismh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The attack appears to have exploited vulnerabilities within a JavaScript library used by the Internet Archive. This allowed hackers to deface the website and display the pop-up message to users[4][5]. Additionally, a Distributed Denial-of-Service (DDoS) attack was reported concurrently with the breach, which temporarily incapacitated access to archive.org[3][6]. The group claiming responsibility for these attacks is known as SN_BlackMeta, which has been linked to pro-Palestinian hacktivist initiatives[4][6].&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Implications for Users&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;implications-for-usersh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#implications-for-usersh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The ramifications of this breach are profound for both individual users and the Internet Archive as an organization. Users whose data has been compromised are at increased risk for identity theft and phishing attacks. Even though bcrypt-hashed passwords are generally secure against brute-force attacks, users are still advised to change their passwords immediately and enable two-factor authentication where possible[3][4].&lt;/p&gt;
+&lt;p&gt;For many users who rely on the Internet Archive for access to historical web content and digital resources, this incident raises questions about trust and reliability. The Internet Archive has long been viewed as a bastion of free information; however, this breach may deter users from utilizing its services in the future.&lt;/p&gt;
+&lt;h2&gt;Broader Context: Cybersecurity Challenges for Nonprofits&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;broader-context-cybersecurity-challenges-for-nonprofitsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#broader-context-cybersecurity-challenges-for-nonprofitsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;This incident underscores a critical issue facing nonprofit organizations: cybersecurity preparedness. Many nonprofits operate with limited resources and may not prioritize cybersecurity as highly as larger corporations. This can leave them vulnerable to attacks that exploit their weaker defenses.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Importance of Cybersecurity Measures&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;importance-of-cybersecurity-measuresh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#importance-of-cybersecurity-measuresh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To mitigate risks associated with cyberattacks, nonprofits should consider implementing robust cybersecurity measures such as:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Regular Security Audits&lt;/strong&gt;: Conducting frequent assessments of digital infrastructure can help identify vulnerabilities before they can be exploited.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;User Education&lt;/strong&gt;: Providing training for staff and users about safe online practices can reduce the likelihood of successful phishing attempts.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Incident Response Plans&lt;/strong&gt;: Developing clear protocols for responding to data breaches can help organizations manage crises more effectively.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Investing in Technology&lt;/strong&gt;: Allocating budget towards advanced security technologies can enhance protection against cyber threats.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The recent breach at the Internet Archive serves as a stark reminder of the vulnerabilities inherent in digital platforms that serve vital public interests. With 31 million accounts exposed, both users and organizations must take proactive steps to safeguard their data against future attacks. As we continue to navigate an increasingly digital world, prioritizing cybersecurity will be essential not only for protecting individual privacy but also for maintaining trust in institutions dedicated to preserving knowledge and history.&lt;/p&gt;
+&lt;p&gt;As we reflect on this incident, it becomes evident that collaboration between technology providers, cybersecurity experts, and end-users is crucial in building a more secure digital landscape. The Internet Archive&amp;rsquo;s commitment to restoring its services while enhancing security measures will be pivotal in regaining user trust and ensuring its continued role as a valuable resource for accessing historical web content.&lt;/p&gt;
+&lt;p&gt;Citations:&lt;br&gt;[1] &lt;a href=&#34;https://www.moneycontrol.com/technology/internet-archive-faces-major-data-breach-exposing-31-million-accounts-article-12839319.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.moneycontrol.com/technology/internet-archive-faces-major-data-breach-exposing-31-million-accounts-article-12839319.html&lt;/a&gt;&lt;br&gt;[2] &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/&lt;/a&gt;&lt;br&gt;[3] &lt;a href=&#34;https://www.standard.co.uk/news/tech/internet-archive-hack-31-million-users-b1186998.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.standard.co.uk/news/tech/internet-archive-hack-31-million-users-b1186998.html&lt;/a&gt;&lt;br&gt;[4] &lt;a href=&#34;https://www.newsweek.com/catastrophic-internet-archive-hack-hits-31-million-people-1966866&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.newsweek.com/catastrophic-internet-archive-hack-hits-31-million-people-1966866&lt;/a&gt;&lt;br&gt;[5] &lt;a href=&#34;https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.theverge.com/2024/10/9/24266419/internet-archive-ddos-attack-pop-up-message&lt;/a&gt;&lt;br&gt;[6] &lt;a href=&#34;https://www.wired.com/story/internet-archive-hacked/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.wired.com/story/internet-archive-hacked/&lt;/a&gt;&lt;br&gt;[7] &lt;a href=&#34;https://www.securityweek.com/31-million-users-affected-by-internet-archive-hack/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.securityweek.com/31-million-users-affected-by-internet-archive-hack/&lt;/a&gt;&lt;br&gt;[8] &lt;a href=&#34;https://www.forbes.com/sites/daveywinder/2024/10/10/internet-hacked-wayback-machine-down-31-million-passwords-stolen/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.forbes.com/sites/daveywinder/2024/10/10/internet-hacked-wayback-machine-down-31-million-passwords-stolen/&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

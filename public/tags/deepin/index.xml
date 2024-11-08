@@ -1,0 +1,215 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Deepin</title>
+    <link>http://localhost:1313/tags/deepin/</link>
+    <description>Recent content in Deepin on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Sep 2024 01:11:32 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/deepin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Deepin Linux Dağıtımına Yeni Başlayanlar İçin Bir Kılavuz</title>
+      <link>http://localhost:1313/tr/deepin-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</link>
+      <pubDate>Fri, 20 Sep 2024 01:11:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/deepin-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</guid>
+      <description>
+        
+        
+        &lt;p&gt; Linux&amp;rsquo;a yeni başladıysanız ve çekici, kullanıcı dostu bir işletim sistemi arıyorsanız, &lt;strong&gt;Deepin Linux&lt;/strong&gt; sizin için mükemmel bir seçim olabilir. Zarif tasarımı, kullanım kolaylığı ve güçlü performansıyla bilinen Deepin Linux, Windows veya macOS gibi sistemlerden geçiş yapan, yeni başlayanlar için tasarlanmış bir masaüstü deneyimi sunan Linux dağıtımıdır .&lt;/p&gt;
+&lt;p&gt;Bu kılavuzda, Deepin Linux&amp;rsquo;u öne çıkaran şeyleri, nasıl yükleneceğini ve benzersiz özelliklerinden en iyi şekilde nasıl yararlanabileceğinizi inceleyeceğiz. İster güzel bir masaüstü ortamı, ister günlük kullanım için güvenilir bir yazılım arıyor olun, Deepin&amp;rsquo;in sunabileceği bir şey var.&lt;/p&gt;
+&lt;h2&gt;1. Deepin Linux Nedir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-deepin-linux-nedirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-deepin-linux-nedirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Deepin Linux,&lt;/strong&gt; Çinli yazılım şirketi Deepin Technology tarafından geliştirilen Debian tabanlı bir Linux dağıtımıdır. Estetik ve işlevselliğe vurgu yaparak akıcı, kullanıcı dostu bir deneyim sunmak için tasarlanmıştır. &lt;strong&gt;Deepin Masaüstü Ortamı (DDE),&lt;/strong&gt; son derece özelleştirilebilir ve zarif bir kullanıcı arayüzüne sahip olan gösterinin yıldızıdır.&lt;/p&gt;
+&lt;p&gt;Deepin&amp;rsquo;in misyonu, Linux dünyasında çok az veya hiç deneyimi olmayan kullanıcılar için Linux&amp;rsquo;u erişilebilir kılmaktır. Deepin, sezgisel tasarımıyla Linux&amp;rsquo;un teknik esnekliği ile günlük kullanıcıların ihtiyaç duyduğu basitlik arasındaki boşluğu kapatmayı amaçlamaktadır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Deepin Linux&amp;rsquo;un Temel Özellikleri:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;deepin-linuxun-temel-özelliklerih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deepin-linuxun-temel-%c3%b6zelliklerih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Masaüstü Ortamı (DDE)&lt;/strong&gt;&amp;nbsp;: Sıfırdan tasarlanmış, zarif ve duyarlı bir masaüstü ortamı olup, kullanıcılara rafine bir deneyim sunar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Debian Tabanlı&lt;/strong&gt;&amp;nbsp;: Deepin, istikrarlı ve popüler Debian Linux üzerine inşa edilmiştir ve güvenlik ve sağlamlığı garanti eder.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kullanım Kolaylığı&lt;/strong&gt;&amp;nbsp;: Minimum öğrenme eğrisi ile Linux&#39;a yeni başlayanlar için ideal bir başlangıç ​​noktasıdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Önceden Yüklenmiş Yazılımlar&lt;/strong&gt;&amp;nbsp;: Deepin, günlük görevler için zengin bir önceden yüklenmiş uygulama seçeneğiyle birlikte gelir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Store&lt;/strong&gt;&amp;nbsp;: Yazılım kurulumunu ve güncellemelerini basitleştiren iyi organize edilmiş bir yazılım mağazası.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;2. Deepin Neden Yeni Başlayanlar İçin Mükemmeldir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-deepin-neden-yeni-başlayanlar-için-mükemmeldirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-deepin-neden-yeni-ba%c5%9flayanlar-i%c3%a7in-m%c3%bckemmeldirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, zarif arayüzü ve sezgisel tasarımı sayesinde Linux&amp;rsquo;a yeni başlayanlar için en iyi tercih olarak öne çıkıyor. Deepin&amp;rsquo;in Linux dünyasına yeni başlayanlar için ideal olmasının birkaç nedeni şunlardır:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Çarpıcı ve Sezgisel Masaüstü Ortamı&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-çarpıcı-ve-sezgisel-masaüstü-ortamıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-%c3%a7arp%c4%b1c%c4%b1-ve-sezgisel-masa%c3%bcst%c3%bc-ortam%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Masaüstü Ortamı (DDE),&lt;/strong&gt; Linux ekosisteminde bulunan görsel olarak en çarpıcı masaüstü ortamlarından biridir. Modern estetiği kullanımı kolay işlevsellikle birleştirerek macOS ve Windows kullanıcılarına tanıdık gelen bir deneyim sunar.&lt;/p&gt;
+&lt;p&gt;Ekranın alt kısmındaki dock (macOS&amp;rsquo;a benzer) sık kullanılan uygulamalara kolay erişim sağlarken, uygulama başlatıcısı tüm yüklü yazılımların temiz bir genel görünümünü sunar. Düzen özelleştirilebilir, bu nedenle daha geleneksel bir Windows benzeri görev çubuğu &lt;strong&gt;tercih&lt;/strong&gt; ederseniz, farklı dock modları arasında kolayca geçiş yapabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Kullanıcı Dostu Tasarım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-kullanıcı-dostu-tasarımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-kullan%c4%b1c%c4%b1-dostu-tasar%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin kullanıcı deneyimine güçlü bir vurgu yapar. Arayüzü akıcıdır ve seçenekler açıkça etiketlenmiştir, bu da tamamen yeni başlayan birinin bile gezinmesini kolaylaştırır. Ekranın sağ tarafındaki bir paneli kaydırarak erişilebilen kontrol merkezi, ekran, ağ ve temalar gibi sistem ayarlarını yalnızca birkaç tıklamayla ayarlamanıza olanak tanır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Önceden Yüklenmiş Yazılım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-önceden-yüklenmiş-yazılımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-%c3%b6nceden-y%c3%bcklenmi%c5%9f-yaz%c4%b1l%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, günlük işlerin çoğunu kapsayan çeşitli temel yazılımlarla önceden yüklenmiş olarak gelir:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&amp;nbsp;: Web&#39;de gezinmek için.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;LibreOffice&lt;/strong&gt;&amp;nbsp;: Belge düzenleme, elektronik tablolar ve sunumlar için güçlü bir ofis paketi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Music&lt;/strong&gt;&amp;nbsp;: Şık ve kullanımı kolay bir müzik çalar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Movie&lt;/strong&gt;&amp;nbsp;: Çeşitli formatları destekleyen bir video oynatıcısı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Terminal&lt;/strong&gt;&amp;nbsp;: Komut satırı görevleri için temiz ve güçlü bir terminal.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bu temel yazılımın önceden yüklenmiş olması, yeni başlayanların programları manuel olarak arayıp yüklemeye gerek kalmadan sistemlerini kullanmaya başlamalarını sağlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Deepin Mağazası&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-deepin-mağazasıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-deepin-ma%c4%9fazas%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Store&lt;/strong&gt; , ek yazılım yüklemek isteyen yeni başlayanlar için harika bir araçtır. Basit ve kullanıcı dostu bir arayüze sahip olan mağaza, Office, Grafikler, Oyunlar, Multimedya ve daha fazlası gibi işlevlere göre kategorize edilmiş çeşitli uygulamalar sunar.&lt;/p&gt;
+&lt;p&gt;Her uygulamanın bir derecelendirme sistemi ve kullanıcı yorumları vardır, bu da yeni kullanıcıların yüklemek için yazılım seçerken bilinçli kararlar almasına yardımcı olabilir. Deepin Store ayrıca yüklenen yazılımlar için güncellemeleri yönetir ve tüm uygulamaların en son özellikler ve güvenlik yamalarıyla güncel olmasını sağlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;e) Düzenli Güncellemeler ve Güçlü Destek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;e-düzenli-güncellemeler-ve-güçlü-destekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#e-d%c3%bczenli-g%c3%bcncellemeler-ve-g%c3%bc%c3%a7l%c3%bc-destekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, sistem kararlılığını iyileştiren, yeni özellikler sunan ve güvenliği artıran düzenli güncellemeler alır. Bazı  Linux dağıtımları güncellemeleri yönetmek için dik bir öğrenme eğrisi gerektirebilirken, Deepin işin çoğunu otomatikleştiren grafiksel araçlar sağlayarak süreci basitleştirir.&lt;/p&gt;
+&lt;p&gt;Ayrıca Deepin&amp;rsquo;in aktif topluluk ve destek kanalları, yeni başlayanların ihtiyaç duyduklarında yardım bulmalarını kolaylaştırıyor.&lt;/p&gt;
+&lt;h2&gt;3. Deepin Linux Nasıl Kurulur&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-deepin-linux-nasıl-kurulurh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-deepin-linux-nas%c4%b1l-kurulurh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt; Deepin Linux&amp;rsquo;u kurmak , yeni başlayanlar için bile basittir. Başlamak için aşağıdaki adımları izleyin:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Deepin ISO&amp;rsquo;yu indirin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-deepin-isoyu-indirinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-deepin-isoyu-indirinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.deepin.org/&#34;&gt;Resmi Deepin web sitesini&lt;/a&gt; ziyaret edin ve dağıtım için en son ISO görüntüsünü indirin. Önyüklenebilir bir kurulum diski oluşturmak için bir USB sürücüye (en az 4 GB) ihtiyacınız olacak.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Önyüklenebilir bir USB Sürücüsü Oluşturun&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-önyüklenebilir-bir-usb-sürücüsü-oluşturunh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-%c3%b6ny%c3%bcklenebilir-bir-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bc-olu%c5%9fturunh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Önyüklenebilir bir USB sürücüsü oluşturmak için Rufus&lt;/strong&gt; (Windows için) veya &lt;strong&gt;Etcher&lt;/strong&gt; (Linux ve macOS için) gibi araçları kullanın . Aracı açın, Deepin ISO dosyasını seçin ve ardından USB sürücünüze yazın.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) USB Sürücüsünden Önyükleme Yapın&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-usb-sürücüsünden-önyükleme-yapınh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bcnden-%c3%b6ny%c3%bckleme-yap%c4%b1nh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Önyüklenebilir USB hazır olduğunda, bilgisayarınızı yeniden başlatın ve önyükleme menüsüne girmek için uygun tuşa basın (genellikle sisteminize bağlı olarak &lt;strong&gt;F12&lt;/strong&gt; , &lt;strong&gt;ESC&lt;/strong&gt; veya &lt;strong&gt;DEL ). Buradan, Deepin canlı ortamına önyükleme yapmak için USB sürücüsünü seçin.&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Deepin&amp;rsquo;i yükleyin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-deepini-yükleyinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-deepini-y%c3%bckleyinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Canlı ortamda, masaüstünde &amp;ldquo;Deepin&amp;rsquo;i Yükle&amp;rdquo; simgesini göreceksiniz. Yükleme sürecini başlatmak için üzerine tıklayın. Yükleme sihirbazı sizi aşağıdaki adımlarda yönlendirecektir:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Dil Seçimi&lt;/strong&gt;&amp;nbsp;: Tercih ettiğiniz dili seçin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bölüm Kurulumu&lt;/strong&gt;&amp;nbsp;: Kurulum bölümünü seçin. Tüm diski kullanabilir veya başka bir işletim sistemiyle çift önyükleme yapıyorsanız sürücüyü manuel olarak bölümlendirebilirsiniz.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kullanıcı Ayrıntıları&lt;/strong&gt;&amp;nbsp;: Kullanıcı adınızı, şifrenizi ve ana bilgisayar adınızı ayarlayın.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kurulum&lt;/strong&gt;&amp;nbsp;: Gerekli seçenekleri yapılandırdıktan sonra “Yükle” butonuna tıklayın ve işlemin tamamlanmasını bekleyin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Kurulum tamamlandıktan sonra bilgisayarınızı yeniden başlattığınızda Deepin karşılama ekranıyla karşılaşacaksınız.&lt;/p&gt;
+&lt;h2&gt;4. Deepin&amp;rsquo;e Başlarken&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-deepine-başlarkenh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-deepine-ba%c5%9flarkenh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin Linux&amp;rsquo;u kurduktan sonra özelliklerini keşfetmeye başlayabilirsiniz. Başlamanıza yardımcı olacak birkaç ipucu:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Sisteminizi Güncelleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-sisteminizi-güncellemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-sisteminizi-g%c3%bcncellemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Kurulumdan sonra yapmanız gereken ilk şey, tüm son yamaların ve yazılım sürümlerinin kurulu olduğundan emin olmak için sisteminizi güncellemektir. Deepin&amp;rsquo;i grafiksel Deepin Güncelleme Yöneticisi&lt;/strong&gt; aracılığıyla veya aşağıdaki komutla terminali kullanarak güncelleyebilirsiniz :&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Kontrol Merkezini Keşfetmek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-kontrol-merkezini-keşfetmekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-kontrol-merkezini-ke%c5%9ffetmekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Control Center,&lt;/strong&gt; sistem ayarlarını yönetmek için tek adresinizdir. Burada, ekranınızı, sesinizi, ağınızı ve duvar kağıtları ve temalar gibi kişiselleştirme seçeneklerinizi yapılandırabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ekran Ayarları&lt;/strong&gt;&amp;nbsp;: Çözünürlüğü, yenileme hızını ve diğer ekranla ilgili ayarları düzenleyin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Tema Ayarları&lt;/strong&gt;&amp;nbsp;: Deepin birçok yerleşik tema ve duvar kağıdı sunar. Ayrıca Deepin Store&#39;dan daha fazlasını indirebilirsiniz.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Ek Yazılım Yükleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-ek-yazılım-yüklemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-ek-yaz%c4%b1l%c4%b1m-y%c3%bcklemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin önceden yüklenmiş çok sayıda uygulama ile birlikte gelirken, ihtiyaçlarınıza göre ek yazılımlar yüklemek isteyebilirsiniz. &lt;strong&gt;Deepin Store&lt;/strong&gt; bu süreci inanılmaz derecede kolaylaştırır. Sadece mağazayı açın, istediğiniz uygulamayı arayın ve &amp;ldquo;Yükle&amp;quot;ye tıklayın.&lt;/p&gt;
+&lt;p&gt;Örneğin, &lt;strong&gt;VLC Media Player&amp;rsquo;ı&lt;/strong&gt; yüklemek için Deepin Store&amp;rsquo;da arayabilir veya terminal üzerinden şu komutla yükleyebilirsiniz:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo apt install vlc&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Masaüstünüzü Özelleştirme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-masaüstünüzü-özelleştirmeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-masa%c3%bcst%c3%bcn%c3%bcz%c3%bc-%c3%b6zelle%c5%9ftirmeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, masaüstü ortamını tercihlerinize göre kişiselleştirmenize olanak tanır. Şunları yapabilirsiniz:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Temaları değiştir&lt;/strong&gt;&amp;nbsp;: Kontrol Merkezi&#39;ne gidin ve açık ve koyu temalar arasında geçiş yapabileceğiniz veya ek temalar indirebileceğiniz &#34;Kişiselleştirme&#34; sekmesini bulun.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Dock&#39;u özelleştirin&lt;/strong&gt;&amp;nbsp;: Boyutunu, konumunu ve davranışını ayarlamak için dock&#39;a sağ tıklayın (örneğin, otomatik olarak gizlenecek şekilde ayarlayabilirsiniz).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;e) Temel Terminal Komutlarını Öğrenmek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;e-temel-terminal-komutlarını-öğrenmekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#e-temel-terminal-komutlar%c4%b1n%c4%b1-%c3%b6%c4%9frenmekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin birçok görev için terminali kullanmaktan kaçınmayı mümkün kılarken, birkaç temel  Linux komutunu öğrenmek uzun vadede faydalı olabilir. İşte size faydalı olabilecek birkaçı:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sistemi güncelle&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Yazılımı yükleyin&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;sudo apt install [package-name]&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Disk kullanımını kontrol edin&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;df -h&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bir dizindeki dosyaları listele&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;5. Deepin Topluluğu ve Desteği&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-deepin-topluluğu-ve-desteğih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-deepin-toplulu%c4%9fu-ve-deste%c4%9fih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt; Herhangi bir Linux dağıtımında olduğu gibi , yardım için nereye gideceğinizi bilmek önemlidir. Deepin, yeni başlayanlara yardımcı olabilecek canlı bir topluluğa ve çeşitli destek kanallarına sahiptir:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Forum&lt;/strong&gt;&amp;nbsp;: Resmi Deepin forumu, deneyimli kullanıcıların yardımıyla soru sormak, bilgi paylaşmak ve sorunları gidermek için harika bir yerdir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Wiki&lt;/strong&gt;&amp;nbsp;: Deepin&#39;in resmi wiki&#39;si kurulumdan gelişmiş özelleştirmeye kadar her şeyi kapsayan kapsamlı belgeler içerir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Çevrimiçi Topluluklar&lt;/strong&gt;&amp;nbsp;: Reddit, Facebook ve Telegram&#39;da kullanıcıların ipuçlarını ve çözümleri paylaşabileceği çeşitli Deepin ile ilgili gruplar bulunmaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Son Düşünceler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-düşüncelerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#son-d%c3%bc%c5%9f%c3%bcncelerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Linux dünyasına adım atan yeni başlayanlar için Deepin Linux, çarpıcı, kullanıcı dostu ve iyi cilalanmış bir deneyim sunar. Estetik ve işlevselliğe odaklanması, kurulum ve yazılım yönetiminin kolaylığıyla birleştiğinde, onu yeni kullanıcılar için ideal bir seçim haline getirir.&lt;/p&gt;
+&lt;p&gt;Görsel olarak çekici masaüstü ortamından Deepin Store&amp;rsquo;un sadeliğine kadar, bu dağıtım güzellik ve performansın mükemmel bir dengesini sunar. Bu kılavuzu takip ederek artık Deepin Linux&amp;rsquo;u günlük bilgisayar ihtiyaçlarınızı karşılayacak şekilde kurmak, keşfetmek ve özelleştirmek için donanımlı olmalısınız. Keyifli keşifler!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.siberoloji.com/tr/populer-linux-dagitimlarinin-listesi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;&#34;&gt;Linux Dağıtımları Listesi&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

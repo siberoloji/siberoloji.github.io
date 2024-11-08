@@ -1,0 +1,215 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Tags</title>
+    <link>http://localhost:1313/tags/tags/</link>
+    <description>Recent content in Tags on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 26 Oct 2024 16:49:46 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tags and Elements: Proper Use of Opening and Closing Tags</title>
+      <link>http://localhost:1313/tags-and-elements-proper-use-of-opening-and-closing-tags/</link>
+      <pubDate>Sat, 26 Oct 2024 16:49:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags-and-elements-proper-use-of-opening-and-closing-tags/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In web development, particularly in HTML (Hypertext Markup Language), understanding how to use tags and elements is fundamental to creating well-structured, functioning web pages. HTML tags and elements are the building blocks of web content, determining everything from layout to functionality. Knowing how to use opening and closing tags properly is essential, as even small errors in syntax can cause display issues or functionality problems across a website.&lt;/p&gt;
+&lt;p&gt;In this guide, we’ll take an in-depth look at HTML tags and elements, focusing on the correct use of opening and closing tags, the purpose they serve, and best practices for ensuring that your code is clean, readable, and functional.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What Are HTML Tags and Elements?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-html-tags-and-elementsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-are-html-tags-and-elementsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;HTML tags are pieces of code that tell the browser how to display and structure content. These tags are enclosed within angle brackets, like &lt;code&gt;&amp;lt;tagname&amp;gt;&lt;/code&gt;. When placed within HTML code, tags create elements, which combine to form the complete structure of a webpage.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Tags&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;HTML tags come in two main types:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Opening tags&lt;/strong&gt;: &lt;code&gt;&amp;lt;tagname&amp;gt;&lt;/code&gt;, which signal the start of an element.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Closing tags&lt;/strong&gt;: &lt;code&gt;&amp;lt;/tagname&amp;gt;&lt;/code&gt;, which indicate the end of an element.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;An element is formed by pairing an opening tag with its corresponding closing tag and placing content (text, images, etc.) between them. For instance:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;p&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;In this example, &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; is the opening tag, and &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt; is the closing tag. Together, they form a paragraph element that contains the text &amp;ldquo;This is a paragraph.&amp;rdquo;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Self-Closing Tags&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Not all tags require a closing counterpart. Tags like &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; are self-closing, meaning they don’t need a closing tag because they don’t encapsulate content. In HTML5, self-closing tags don’t require the trailing slash (&lt;code&gt;&amp;lt;img src=&amp;ldquo;image.jpg&amp;rdquo;&amp;gt;&lt;/code&gt;), but it’s still commonly used for readability and compatibility, especially when transitioning from XHTML.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;The Importance of Proper Tagging&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;the-importance-of-proper-taggingh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-importance-of-proper-taggingh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Using tags correctly impacts how your content is rendered by browsers and how accessible your website is to search engines. Tags and elements are essential for web page structure, enabling search engines to &amp;ldquo;read&amp;rdquo; your content and categorize it, which can directly influence SEO (Search Engine Optimization).&lt;/p&gt;
+&lt;p&gt;Moreover, correct tag usage is crucial for:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Cross-browser compatibility&lt;/strong&gt;: Consistent rendering across different web browsers.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: Facilitating screen readers and assistive technologies.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Debugging&lt;/strong&gt;: Cleaner and easier-to-read code.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Maintaining Standards&lt;/strong&gt;: Ensuring adherence to W3C (World Wide Web Consortium) standards.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;A Closer Look at Opening and Closing Tags&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-closer-look-at-opening-and-closing-tagsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-closer-look-at-opening-and-closing-tagsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;1. &lt;strong&gt;Basic Structure of HTML Document&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Every HTML document starts with a &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt; declaration, followed by the &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; element, which contains everything else in the document. It generally looks like this:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Title of the document&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p&amp;gt;Hello, world!&amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Here’s a breakdown:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; wraps the entire document.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; contains metadata and links to stylesheets and scripts.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; holds the visible content of the page.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Each of these tags must be opened and closed properly to ensure that the document is structured correctly. If tags are left unclosed or opened in the wrong order, the page may not render as expected.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;2. &lt;strong&gt;Paragraphs and Headings&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag is one of the most basic HTML tags, used for paragraphs. It requires an opening and a closing tag around the text content:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;p&amp;gt;This is a sample paragraph.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Headings, represented by &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; to &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; tags, create a hierarchy on the page, with &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; as the main heading and &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; as the smallest subheading. Each heading tag also needs a closing tag to function correctly:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;h1&amp;gt;Main Heading&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;Subheading&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Some paragraph text under the subheading.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;3. &lt;strong&gt;Lists&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;HTML supports ordered and unordered lists using &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;, respectively, with &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tags for each list item. All these tags need proper opening and closing:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Failure to close a &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; tag can disrupt the list formatting, which can break the page layout or cause rendering issues.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;4. &lt;strong&gt;Links&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Links are created with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag, which takes an &lt;code&gt;href&lt;/code&gt; attribute to specify the URL destination:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;a href=&#34;https://example.com&#34;&amp;gt;Visit Example&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag should always be closed, as leaving it unclosed can result in incorrectly formatted links or unclickable text.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;5. &lt;strong&gt;Images&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Images in HTML are represented by the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag. Since &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; is a self-closing tag, it doesn’t need a separate closing tag but requires attributes like &lt;code&gt;src&lt;/code&gt; for the image source and &lt;code&gt;alt&lt;/code&gt; for accessibility:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;img src=&#34;image.jpg&#34; alt=&#34;Description of image&#34;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Remembering to add &lt;code&gt;alt&lt;/code&gt; text improves accessibility by allowing screen readers to interpret the image content.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Common Mistakes in Using Opening and Closing Tags&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-in-using-opening-and-closing-tagsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-in-using-opening-and-closing-tagsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Unclosed Tags&lt;/strong&gt;: Forgetting to close tags is a common mistake, especially in nested tags. For instance, failing to close a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; tag can cause layout issues.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Incorrect Nesting&lt;/strong&gt;: HTML requires tags to be opened and closed in a specific order. If &lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt; is used, it creates a nesting error. Tags should close in the reverse order in which they were opened.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Extra Closing Tags&lt;/strong&gt;: Adding an extra closing tag like &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt; when it isn’t needed can lead to validation errors.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Case Sensitivity&lt;/strong&gt;: Although HTML tags are not case-sensitive, it’s good practice to keep all tags in lowercase for consistency and readability.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Tips for Correct Tag Usage&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tips-for-correct-tag-usageh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tips-for-correct-tag-usageh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Validate Your Code&lt;/strong&gt;: Tools like the W3C Markup Validation Service help identify and correct mistakes.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Use Indentation for Readability&lt;/strong&gt;: Indent nested tags for easier reading and debugging.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Practice Consistent Coding Standards&lt;/strong&gt;: Using lowercase for tags, proper spacing, and consistent formatting makes your code more maintainable.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Comment Sections&lt;/strong&gt;: For large blocks of code, comments can help keep track of where sections begin and end, like this:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;!-- Header Section --&amp;gt;
+&amp;lt;header&amp;gt;
+  &amp;lt;h1&amp;gt;Website Title&amp;lt;/h1&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;!-- End of Header Section --&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Understanding the proper use of opening and closing tags is a fundamental aspect of web development. Following best practices, such as validating your code, maintaining consistent formatting, and using comments, will help keep your HTML structured and functional. Mastery of HTML tags and elements is an important step toward becoming proficient in web development, ensuring that your content is not only user-friendly but also accessible and SEO-friendly.&lt;/p&gt;
+&lt;p&gt;Whether you’re a beginner or a seasoned developer, maintaining clean and well-organized code will make your work easier to debug, understand, and scale as your projects grow.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

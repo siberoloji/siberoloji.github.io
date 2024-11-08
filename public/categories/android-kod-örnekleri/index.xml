@@ -1,0 +1,264 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Android Kod Örnekleri</title>
+    <link>http://localhost:1313/categories/android-kod-%C3%B6rnekleri/</link>
+    <description>Recent content in Android Kod Örnekleri on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Mar 2022 13:09:28 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/android-kod-%C3%B6rnekleri/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Android Projelerinizde View Binding Kullanımı</title>
+      <link>http://localhost:1313/tr/android-projelerinizde-view-binding-kullanimi/</link>
+      <pubDate>Wed, 02 Mar 2022 13:09:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-projelerinizde-view-binding-kullanimi/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:quote --&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Çoğu durumda, viewBinding, findViewById&amp;rsquo;nin yerini alır&lt;/p&gt;
+&lt;cite&gt;Credit: &lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://developer.android.com/topic/libraries/view-binding&#34; target=&#34;_blank&#34;&gt;developer.android.com&lt;/a&gt;&lt;/cite&gt;&lt;/blockquote&gt;&lt;/p&gt;
+&lt;!-- /wp:quote --&gt;
+&lt;p&gt;ViewBinding&amp;rsquo;i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Build.gradle code&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android {
+    compileSdk 32
+
+    buildFeatures {
+        viewBinding  true
+    }
+....
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding&amp;rsquo;i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After changing findViewById lines&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val EXTRA_MESSAGE = &#34;com.example.myfirstapp.MESSAGE&#34;
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // setContentView(R.layout.activity_main) önce
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // val sendButton = findViewById&amp;lt;Button&amp;gt;(R.id.sendButton) önce
+        val sendButton = binding.sendButton
+        // val myTextView = findViewById&amp;lt;EditText&amp;gt;(R.id.message) önce
+        val myTextView = binding.message
+
+        /** Called when the user taps the Send button */
+        sendButton.setOnClickListener {
+            val message = myTextView.text.toString()
+            val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+                putExtra(EXTRA_MESSAGE, message)
+            }
+            startActivity(intent)
+        }
+     }
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Android Ekran Klavyesi açıldığında yerleşimi tekrar ayarlama nasıl yapılır?</title>
+      <link>http://localhost:1313/tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapilir/</link>
+      <pubDate>Tue, 01 Mar 2022 17:38:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android:windowSoftInputMode=&#34;adjustResize&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;
+            android:screenOrientation=&#34;fullSensor&#34;
+            android:theme=&#34;@style/NoActionBarTheme&#34;
+            android:windowSoftInputMode=&#34;adjustResize&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+  &lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Android Uygulamada &amp;#8220;Geri Tuşu&amp;#8221; Ekleme Nasıl Yapılır?</title>
+      <link>http://localhost:1313/tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/</link>
+      <pubDate>Tue, 01 Mar 2022 13:40:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Android yazılımında, MainActivity dışında, kullanıcı navigasyonu için YUKARI düğmesini eklemeniz gerekecektir. Projenizin AndroidManifest.xml dosyasına gerekli kodları ekleyerek işlem çubuğunda YUKARI butonunu görüntüleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Projemizde iki aktivitemiz var. Biri MainActivity, diğeri DisplayMessageActivity. Kullanıcı MainActivity ekranındaki düğmeye dokunduğunda, program DisplayMessageActiviy&amp;rsquo;e girer. Kullanıcı nasıl GERİ gidebilir?&lt;/p&gt;
+&lt;p&gt;ANA etkinliğin adını ALT etkinliğine bildirebiliriz, böylece Android, DisplayMessageActivity&amp;rsquo;de YUKARI(Geri) düğmesini gösterebilir.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Before adding UP button&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:exported=&#34;false&#34; /&amp;gt;
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;AndroidManifest.xml dosyanızda gerekli değişiklikleri yaptıktan sonra kodunuz bu şekilde olmalıdır.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After declaring parent activity&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:parentActivityName=&#34;.MainActivity&#34;
+            android:exported=&#34;false&#34; &amp;gt;
+        &amp;lt;meta-data
+            android:name=&#34;android.support.PARENT_ACTIVITY&#34;
+            android:value=&#34;.MainActivity&#34; /&amp;gt;
+        &amp;lt;/activity&amp;gt;
+
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;android:parentActivityName özelliği Android 4.1&amp;rsquo;de (API düzeyi 16) kullanıma sunuldu. Android&amp;rsquo;in eski sürümlerine sahip cihazları desteklemek için, adın &amp;ldquo;android.support.PARENT_ACTIVITY&amp;rdquo; olduğu ve değerin üst etkinliğin adı olduğu bir  ad-değer çifti tanımlayın.&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:198,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/03/upbuttonscreenshot-524x1024.png&#34; alt=&#34;up button for Android&#34; class=&#34;wp-image-198&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Screenshot after adding UP button.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Android Studio Toast Mesajı Nasıl Gösterilir?</title>
+      <link>http://localhost:1313/tr/android-studio-toast-mesaji-nasil-gosterilir/</link>
+      <pubDate>Sun, 16 Jan 2022 09:25:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-studio-toast-mesaji-nasil-gosterilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Android Studio&amp;rsquo;da Toast mesajı yapmak için kod örneğini bulabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Örnek-1&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-1h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val text = &#34;Hello toast!&#34;
+val duration = Toast.LENGTH_SHORT
+val toast = Toast.makeText(applicationContext, text, duration)
+toast.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;veya direk çağırabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Örnek-2&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-2h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-2h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;Toast.makeText(context, text, duration).show()&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Örnek-3&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-3h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-3h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu örnekte, bir butona basınca sayacı arttırıp ekrana Toast mesajı görüntüleyen kod bulunmaktadır.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val clkButton = findViewById&amp;lt;Button&amp;gt;(R.id.button)
+        val myTextView = findViewById&amp;lt;TextView&amp;gt;(R.id.textView)
+        var timesClicked = 0
+
+        clkButton.setOnClickListener{
+            timesClicked += 1
+            myTextView.text = timesClicked.toString()
+            Toast.makeText(this@MainActivity, &#34;Hi friend&#34;, Toast.LENGTH_LONG).show()
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Önemli&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;önemlih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6nemlih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.xml dosyanızda bir button ve bir textView elemanının önceden tanımlanmış olması gerekiyor.  activity_main.xml  dosyanızın içini aşağıdaki kod ile değiştirebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;xml&#34; class=&#34;language-xml&#34;&gt;
+
+&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+    xmlns:tools=&#34;http://schemas.android.com/tools&#34;
+    xmlns:app=&#34;http://schemas.android.com/apk/res-auto&#34;
+    android:layout_width=&#34;match_parent&#34;
+    android:layout_height=&#34;match_parent&#34;
+    tools:context=&#34;.MainActivity&#34;&amp;gt;
+
+    &amp;lt;TextView
+        android:id=&#34;@+id/textView&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:text=&#34;@string/salutation&#34;
+        app:layout_constraintBottom_toBottomOf=&#34;parent&#34;
+        app:layout_constraintLeft_toLeftOf=&#34;parent&#34;
+        app:layout_constraintRight_toRightOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34;
+        tools:text=&#34;this is for developer&#34; /&amp;gt;
+
+    &amp;lt;Button
+        android:id=&#34;@+id/button&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:layout_marginStart=&#34;149dp&#34;
+        android:layout_marginTop=&#34;248dp&#34;
+        android:layout_marginEnd=&#34;149dp&#34;
+        android:layout_marginBottom=&#34;23dp&#34;
+        android:text=&#34;@string/button&#34;
+        app:layout_constraintBottom_toTopOf=&#34;@+id/textView&#34;
+        app:layout_constraintEnd_toEndOf=&#34;parent&#34;
+        app:layout_constraintStart_toStartOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34; /&amp;gt;
+
+&amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:buttons --&gt;
+&lt;div class=&#34;wp-block-buttons&#34;&gt;&lt;!-- wp:button --&gt;
+&lt;div class=&#34;wp-block-button&#34;&gt;&lt;a class=&#34;wp-block-button__link wp-element-button&#34; href=&#34;https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Github Görüntüle&lt;/a&gt;&lt;/div&gt;
+&lt;!-- /wp:button --&gt;&lt;/div&gt;
+&lt;!-- /wp:buttons --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

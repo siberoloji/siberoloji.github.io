@@ -1,0 +1,267 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Android Code Samples</title>
+    <link>http://localhost:1313/categories/android-code-samples/</link>
+    <description>Recent content in Android Code Samples on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Mar 2022 12:59:34 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/android-code-samples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>View Binding with Activities in an Android Project</title>
+      <link>http://localhost:1313/view-binding-with-activities-in-an-android-project/</link>
+      <pubDate>Wed, 02 Mar 2022 12:59:34 +0000</pubDate>
+      
+      <guid>http://localhost:1313/view-binding-with-activities-in-an-android-project/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:quote --&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;View binding&lt;/em&gt;&amp;nbsp;is a feature that allows you to more easily write code that interacts with views. Once view binding is enabled in a module, it generates a&amp;nbsp;&lt;em&gt;binding class&lt;/em&gt;&amp;nbsp;for each XML layout file present in that module. An instance of a binding class contains direct references to all views that have an ID in the corresponding layout. &lt;/p&gt;
+&lt;p&gt;In most cases, view binding replaces &lt;code&gt;findViewById&lt;/code&gt;&lt;/p&gt;
+&lt;cite&gt;Credit: &lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://developer.android.com/topic/libraries/view-binding&#34; target=&#34;_blank&#34;&gt;developer.android.com&lt;/a&gt;&lt;/cite&gt;&lt;/blockquote&gt;&lt;/p&gt;
+&lt;!-- /wp:quote --&gt;
+&lt;p&gt;To activate View Binding, we need to add a build option in the module-level build.gradle file. Modify your build.gradle (Module) file as shown below.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Build.gradle code&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android {
+    compileSdk 32
+
+    buildFeatures {
+        viewBinding  true
+    }
+....
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;For example, in the beginning, we have an activity_main.xml layout file. After activating View Binding, a new Class will be created named ActivityMainBinding. Now we can use this class in our activity file.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After changing findViewById lines&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val EXTRA_MESSAGE = &#34;com.example.myfirstapp.MESSAGE&#34;
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // setContentView(R.layout.activity_main) before
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // val sendButton = findViewById&amp;lt;Button&amp;gt;(R.id.sendButton) before
+        val sendButton = binding.sendButton
+        // val myTextView = findViewById&amp;lt;EditText&amp;gt;(R.id.message) before
+        val myTextView = binding.message
+
+        /** Called when the user taps the Send button */
+        sendButton.setOnClickListener {
+            val message = myTextView.text.toString()
+            val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+                putExtra(EXTRA_MESSAGE, message)
+            }
+            startActivity(intent)
+        }
+     }
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>How to move the layout up when the soft keyboard is shown Android?</title>
+      <link>http://localhost:1313/how-to-move-the-layout-up-when-the-soft-keyboard-is-shown-android/</link>
+      <pubDate>Tue, 01 Mar 2022 17:34:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-move-the-layout-up-when-the-soft-keyboard-is-shown-android/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sometimes, you need to change the layout when the soft keyboard appeared on the screen. You can fix this by adding a line of code into the AndroidManifest.xml file within the relevant activity section.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Code to xml file&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android:windowSoftInputMode=&#34;adjustResize&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Add this code to the activity.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;
+            android:screenOrientation=&#34;fullSensor&#34;
+            android:theme=&#34;@style/NoActionBarTheme&#34;
+            android:windowSoftInputMode=&#34;adjustResize&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Adding Upward Navigation Arrow</title>
+      <link>http://localhost:1313/adding-upward-navigation-arrow/</link>
+      <pubDate>Tue, 01 Mar 2022 13:29:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/adding-upward-navigation-arrow/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In software for Android, except for the main activity, you will need to add the UP button for the user navigation. You can display the UP button in the action bar by adding the necessary codes to the AndroidManifest.xml file of your Project.&lt;/p&gt;
+&lt;p&gt;In our project, we have two activities. One is Main Activity, the other one is DisplayMessageActivity. When the user taps the button in the MainActivity screen, the program enters the DisplayMessageActiviy. How can the user go BACK?&lt;/p&gt;
+&lt;p&gt;We can declare the PARENT activity name to the CHILD activity so Android will be able to show UP(Back) button in the DisplayMessageActiviy.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Before adding UP button&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:exported=&#34;false&#34; /&amp;gt;
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;After making necessary changes in your AndroidManifest.xml file, your code should be like this.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After declaring parent activity&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:parentActivityName=&#34;.MainActivity&#34;
+            android:exported=&#34;false&#34; &amp;gt;
+        &amp;lt;meta-data
+            android:name=&#34;android.support.PARENT_ACTIVITY&#34;
+            android:value=&#34;.MainActivity&#34; /&amp;gt;
+        &amp;lt;/activity&amp;gt;
+
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;android:parentActivityName&lt;/code&gt; attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a &lt;a href=&#34;https://developer.android.com/guide/topics/manifest/meta-data-element&#34;&gt;&lt;code&gt;&amp;lt;meta-data&amp;gt;&lt;/code&gt;&lt;/a&gt; name-value pair, where the name is &lt;code&gt;&amp;ldquo;android.support.PARENT_ACTIVITY&amp;rdquo;&lt;/code&gt; and the value is the name of the parent activity.&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:198,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/03/upbuttonscreenshot-524x1024.png&#34; alt=&#34;up button for Android&#34; class=&#34;wp-image-198&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Screenshot after adding UP button.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>How to make Toast message?</title>
+      <link>http://localhost:1313/how-to-make-toast-message/</link>
+      <pubDate>Mon, 28 Feb 2022 20:43:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-make-toast-message/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;You can find a code sample to make a Toast message in Android Studio&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;h2&gt;Example-1&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-1h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&lt;code&gt;val text = &#34;Hello toast!&#34;
+val duration = Toast.LENGTH_SHORT
+
+val toast = Toast.makeText(applicationContext, text, duration)
+toast.show()&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;or you can call directly&lt;/p&gt;
+&lt;h2&gt;Example-2&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-2h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-2h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&lt;code&gt;Toast.makeText(context, text, duration).show()&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Example-3&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-3h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-3h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;With this example, you can display a &#34;click counter&#34; and a &#34;toast message&#34; together.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val clkButton = findViewById&amp;lt;Button&amp;gt;(R.id.button)
+        val myTextView = findViewById&amp;lt;TextView&amp;gt;(R.id.textView)
+        var timesClicked = 0
+
+        clkButton.setOnClickListener{
+            timesClicked += 1
+            myTextView.text = timesClicked.toString()
+            Toast.makeText(this@MainActivity, &#34;Hi friend&#34;, Toast.LENGTH_LONG).show()
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Important&amp;hellip;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;importanth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#importanth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As you can see, there must be a button and textView element in your activity_main.xml file. You can find an example below.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;xml&#34; class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+    xmlns:tools=&#34;http://schemas.android.com/tools&#34;
+    xmlns:app=&#34;http://schemas.android.com/apk/res-auto&#34;
+    android:layout_width=&#34;match_parent&#34;
+    android:layout_height=&#34;match_parent&#34;
+    tools:context=&#34;.MainActivity&#34;&amp;gt;
+
+    &amp;lt;TextView
+        android:id=&#34;@+id/textView&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:text=&#34;@string/salutation&#34;
+        app:layout_constraintBottom_toBottomOf=&#34;parent&#34;
+        app:layout_constraintLeft_toLeftOf=&#34;parent&#34;
+        app:layout_constraintRight_toRightOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34;
+        tools:text=&#34;this is for developer&#34; /&amp;gt;
+
+    &amp;lt;Button
+        android:id=&#34;@+id/button&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:layout_marginStart=&#34;149dp&#34;
+        android:layout_marginTop=&#34;248dp&#34;
+        android:layout_marginEnd=&#34;149dp&#34;
+        android:layout_marginBottom=&#34;23dp&#34;
+        android:text=&#34;@string/button&#34;
+        app:layout_constraintBottom_toTopOf=&#34;@+id/textView&#34;
+        app:layout_constraintEnd_toEndOf=&#34;parent&#34;
+        app:layout_constraintStart_toStartOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34; /&amp;gt;
+
+&amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:buttons --&gt;
+&lt;div class=&#34;wp-block-buttons&#34;&gt;&lt;!-- wp:button {&#34;backgroundColor&#34;:&#34;subtle-background&#34;,&#34;textColor&#34;:&#34;primary&#34;,&#34;className&#34;:&#34;is-style-fill&#34;} --&gt;
+&lt;div class=&#34;wp-block-button is-style-fill&#34;&gt;&lt;a class=&#34;wp-block-button__link has-primary-color has-subtle-background-background-color has-text-color has-background wp-element-button&#34; href=&#34;https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;see on gıthub&lt;/a&gt;&lt;/div&gt;
+&lt;!-- /wp:button --&gt;&lt;/div&gt;
+&lt;!-- /wp:buttons --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

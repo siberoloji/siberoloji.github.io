@@ -1,5 +1,11 @@
 ---
-author: İbrahim Korucuoğlu
+
+authors:
+  - name: İbrahim Korucuoğlu
+    link: https://github.com/siberoloji
+    image: https://github.com/siberoloji.png
+
+
 categories:
 - Raspberry Pi
 classic-editor-remember:

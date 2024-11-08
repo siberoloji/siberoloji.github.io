@@ -1,0 +1,545 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Dağıtımları</title>
+    <link>http://localhost:1313/categories/linux-da%C4%9F%C4%B1t%C4%B1mlar%C4%B1/</link>
+    <description>Recent content in Linux Dağıtımları on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Sep 2024 01:20:05 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/linux-da%C4%9F%C4%B1t%C4%B1mlar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>En Popüler Linux dağıtımları listesi</title>
+      <link>http://localhost:1313/tr/populer-linux-dagitimlarinin-listesi/</link>
+      <pubDate>Fri, 20 Sep 2024 01:20:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/populer-linux-dagitimlarinin-listesi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda Linux dağıtımları ana kolları veya temel sistemlerine göre kategorize edilmiş bir listesini hazırladık. Bu liste kapsamlı tam liste değildir, çünkü piyasada yüzlerce Linux dağıtımı var, ancak en yaygın kullanılanlardan bazılarını kapsıyor.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;1. Debian Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong1-debian-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong1-debian-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-debian-linux-a-comprehensive-guide-for-newcomers/&#34;&gt;Debian&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Diğer birçok dağıtımın temelidir ve kararlılığıyla bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-ubuntu-linux-a-beginners-guide&#34;&gt;Ubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kullanım kolaylığıyla bilinen en popüler dağıtımlardan biridir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-kubuntu-linux-a-beginners-guide&#34;&gt;Kubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: KDE Plazma masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/introduction-to-lubuntu-linux-a-beginners-guide/&#34;&gt;Lubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: LXQt masaüstüne sahip hafif Ubuntu çeşidi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-xubuntu-the-lightweight-and-user-friendly-linux-distribution/&#34;&gt;Xubuntu&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Xfce masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu MATE&lt;/strong&gt;&amp;nbsp;: MATE masaüstüne sahip Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Studio&lt;/strong&gt;&amp;nbsp;: Multimedya prodüksiyonuna özel Ubuntu.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-linux-mint-the-ideal-linux-distribution-for-new-users&#34;&gt;Linux Mint&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Ubuntu tabanlı, Cinnamon, MATE ve Xfce sürümleri bulunan kullanıcı dostu dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-pop_os-linux-distribution&#34;&gt;Pop!_OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: System76 tarafından geliştirilmiştir ve kendi donanımları için optimize edilmiştir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/an-introduction-to-elementary-os-the-perfect-linux-distribution-for-beginners/&#34;&gt;Elementary OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sadeliğe odaklanmış estetik açıdan hoş bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-zorin-os-the-best-linux-distribution-for-new-users/&#34;&gt;Zorin OS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Özellikle yeni başlayanlar için kullanıcı dostu olacak şekilde tasarlanmıştır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-mx-linux-a-fast-reliable-and-user-friendly-distribution&#34;&gt;MX Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Hafif ve kararlı, Debian Stable tabanlı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;2. Red Hat Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong2-red-hat-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong2-red-hat-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-red-hat-enterprise-linux-rhel/&#34;&gt;Red Hat Enterprise Linux (RHEL)&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Ticari olarak desteklenen, kurumsal odaklı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;CentOS&lt;/strong&gt;&amp;nbsp;: RHEL&#39;in özgür ve açık kaynaklı sürümü, artık CentOS Stream ile değiştirildi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;CentOS Stream&lt;/strong&gt;&amp;nbsp;: RHEL için bir üst akış görevi gören CentOS&#39;un sürekli yayınlanan bir sürümü.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-fedora-linux-distribution/&#34;&gt;Fedora&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: En son özelliklere sahip olmasıyla bilinen&amp;nbsp;&amp;nbsp;Fedora&amp;nbsp;, RHEL için üst akış görevi görür.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;AlmaLinux&lt;/strong&gt;&amp;nbsp;: CentOS&#39;un topluluk odaklı bir alternatifi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Rocky Linux&lt;/strong&gt;&amp;nbsp;: CentOS&#39;un orijinal kurucularından birinin liderliğinde, CentOS&#39;un yerini alan bir diğer Linux.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;3. Arch Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong3-arch-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong3-arch-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-arch-linux-distribution/&#34;&gt;Arch Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sistem üzerindeki kontrolü ve basitliğiyle bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-manjaro-linux-distribution/&#34;&gt;Manjaro&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Arch tabanlı, birçok masaüstü ortamında kullanılabilen, kullanıcı dostu dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;EndeavourOS&lt;/strong&gt;&amp;nbsp;: Özelleştirmeye odaklanan, daha erişilebilir bir Arch tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/garuda-linux-distribution-a-beginners-guide/&#34;&gt;Garuda Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Oyun odaklı, modern bir Arch tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;4. SUSE Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong4-suse-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong4-suse-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/opensuse-linux-distribution-a-beginners-guide/&#34;&gt;openSUSE&lt;/a&gt;&amp;nbsp;Leap&lt;/strong&gt;&amp;nbsp;: Kararlı, düzenli sürüm.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;openSUSE Tumbleweed&lt;/strong&gt;&amp;nbsp;: Sürekli yayımlanan sürüm.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;SUSE Linux Enterprise&lt;/strong&gt;&amp;nbsp;: RHEL&#39;e benzer, kurumsal odaklı versiyon.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;5. Gentoo Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong5-gentoo-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong5-gentoo-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-gentoo-linux-what-you-need-to-know/&#34;&gt;Gentoo&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kullanıcıların paketleri kaynaktan derlemesine olanak tanıyan esnekliğiyle bilinir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Calculate Linux&lt;/strong&gt;&amp;nbsp;: İşletmelere yönelik tasarlanmış Gentoo tabanlı dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sabayon&lt;/strong&gt;&amp;nbsp;: Kullanım kolaylığına odaklanan Gentoo tabanlı bir yazılımdır, artık üretilmiyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;6. Slackware Tabanlı Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong6-slackware-tabanlı-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong6-slackware-tabanl%c4%b1-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-slackware-linux-distribution/&#34;&gt;Slackware&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Basitliğiyle bilinen en eski dağıtımlardan biridir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Salix OS&lt;/strong&gt;&amp;nbsp;: Masaüstü kullanımı için optimize edilmiş Slackware tabanlı bir dağıtımdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/getting-started-with-porteus-linux-a-lightweight-and-versatile-distribution-for-beginners/&#34;&gt;Porteus&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Slackware tabanlı taşınabilir, hafif bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;7. Diğer Önemli Dağıtımlar&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strong7-diğer-önemli-dağıtımlarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strong7-di%c4%9fer-%c3%b6nemli-da%c4%9f%c4%b1t%c4%b1mlarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/linux-from-scratch-lfs-for-beginners-a-comprehensive-guide-to-building-your-own-linux-distribution/&#34;&gt;Linux From Scratch (LFS)&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kendi özel Linux sisteminizi kurmak için adım adım talimatlar sağlayan bir proje.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-void-linux-distribution/&#34;&gt;Void Linux&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Minimalizm ve verimliliğe odaklanan bağımsız bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-nixos-linux-distribution/&#34;&gt;NixOS&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Sistemin kararlılığını ve yeniden üretilebilirliğini sağlamak için Nix paket yöneticisini kullanır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-solus-linux-distribution/&#34;&gt;Solus&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Kendi Budgie masaüstü ortamına sahip, sürekli yayınlanan bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.siberoloji.com/a-beginners-guide-to-deepin-linux-distribution/&#34;&gt;Deepin&lt;/a&gt;&lt;/strong&gt;&amp;nbsp;: Estetik açıdan hoş Deepin Masaüstü Ortamı (DDE) ile tanınır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Clear Linux&lt;/strong&gt;&amp;nbsp;: Intel donanımlarında performans için optimize edilmiş, Intel tarafından geliştirilen bir dağıtım.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bunlar mevcut Linux dağıtımlarından sadece birkaçı. Her birinin kendine özgü güçlü yönleri vardır ve ister yeni başlayanlar, ister ileri düzey kullanıcılar, ister geliştiriciler veya işletmeler olsun, farklı kullanıcı tiplerine uygundur.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Solus Linux: Performans ve Sadelik</title>
+      <link>http://localhost:1313/tr/solus-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</link>
+      <pubDate>Fri, 20 Sep 2024 01:16:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/solus-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Temiz, verimli ve yeni başlayanlara uygun bir işletim sistemi arayan bir Linux kullanıcısıysanız, &lt;strong&gt;Solus  Linux dağıtımı&lt;/strong&gt; mükemmel bir seçimdir. Solus, Linux ekosisteminde nispeten yeni bir oyuncudur ancak kullanıcı arayüzü, performansı ve sadeliğiyle yenilik getirmektedir. Sıfırdan, diğer dağıtımlardan bağımsız olarak oluşturulmuştur ve masaüstleri için iyi optimize edilmiştir, bu da onu Windows veya macOS gibi diğer işletim sistemlerinden geçiş yapan kişiler için mükemmel bir giriş noktası yapar.&lt;/p&gt;
+&lt;p&gt;Bu blog yazısında, &lt;a href=&#34;https://getsol.us&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;Solus Linux&#34;&gt;Solus Linux&lt;/a&gt; dağıtımının temellerini ele alacağız ve yeni başlayanlar için neden harika bir seçenek olduğunu açıklayacağız. Özelliklerini, nasıl yükleneceğini ve bilgi işlem deneyiminizi daha iyi ve daha verimli hale getirecek yazılıma nasıl başlayacağınızı öğreneceksiniz.&lt;/p&gt;
+&lt;h2&gt;1. Solus Linux nedir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-solus-linux-nedirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-solus-linux-nedirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus, masaüstü bilişimine odaklanarak geliştirilen bir Linux dağıtımıdır. Kullanıcı dostu, hızlı ve duyarlı olacak şekilde tasarlanmıştır ve özellikle Linux&amp;rsquo;a yeni başlayanlar için sezgisel bir deneyim sağlamayı hedefler.&lt;/p&gt;
+&lt;p&gt;Ubuntu, Fedora veya Debian gibi daha eski, daha yerleşik dağıtımlar üzerine inşa edilmiş diğer bazı Linux dağıtımlarının aksine, &lt;strong&gt;Solus sıfırdan inşa edilmiştir&lt;/strong&gt; . Bu, onu geliştirme ve işlevselliğe yaklaşımında benzersiz kılar. Gelişimi topluluk odaklı ve bağımsızdır, bu da Solus&amp;rsquo;un yukarı akış dağıtımlarının kararlarıyla kısıtlanmadan yenilik yapmasına olanak tanır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Solus’un Temel Özellikleri:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;solusun-temel-özelliklerih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#solusun-temel-%c3%b6zelliklerih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bağımsız Dağıtım&lt;/strong&gt;&amp;nbsp;: Solus, Ubuntu veya Debian gibi başka bir dağıtıma dayanmamaktadır. Sıfırdan oluşturulmuştur.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sürekli Yayın&lt;/strong&gt;&amp;nbsp;: Bazı sabit noktalı yayınların aksine, Solus sürekli yayın modelini kullanır; bu da büyük yükseltmeler yapmanıza gerek kalmadan her zaman en son yazılım güncellemelerine erişebileceğiniz anlamına gelir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Masaüstü Deneyimine Odaklanma&lt;/strong&gt;&amp;nbsp;: Solus&#39;un temel odak noktası, optimize edilmiş ve kullanıcı dostu bir masaüstü ortamı sağlamaktır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Yazılım Seçenekleri&lt;/strong&gt;&amp;nbsp;: Solus, temel yazılımlarla önceden yüklenmiş olarak gelir ve paket yöneticisi aracılığıyla çeşitli uygulamalar sunar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;2. Solus Neden Yeni Başlayanlar İçin İdealdir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-solus-neden-yeni-başlayanlar-için-idealdirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-solus-neden-yeni-ba%c5%9flayanlar-i%c3%a7in-idealdirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Doğru Linux dağıtımını seçmek, özellikle de yeni başlıyorsanız, göz korkutucu olabilir. Solus&amp;rsquo;un yeni başlayanlar için ideal bir seçenek olmasının nedenleri şunlardır:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Kullanıcı Dostu Arayüz&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-kullanıcı-dostu-arayüzh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-kullan%c4%b1c%c4%b1-dostu-aray%c3%bczh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Solus, Solus ekibi tarafından geliştirilen Budgie&lt;/strong&gt; adlı modern ve zarif bir masaüstü ortamı sunar . Budgie masaüstü sezgisel ve görsel olarak çekicidir ve bu da onu Windows veya macOS gibi daha geleneksel işletim sistemlerinden geçiş yapan kullanıcılar için harika bir seçim haline getirir.&lt;/p&gt;
+&lt;p&gt;Budgie&amp;rsquo;nin düzeni basittir, altta bir görev çubuğu (Windows&amp;rsquo;a benzer), gezinmesi kolay bir menü ve bildirimler bulunur. Yeni başlayanları gereksiz seçeneklerle boğmaz, bunun yerine basit bir kullanıcı deneyimi sunmaya odaklanır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solus ayrıca GNOME, KDE Plasma&lt;/strong&gt; ve &lt;strong&gt;MATE&lt;/strong&gt; gibi diğer masaüstü ortamlarını da sunuyor , böylece kullanıcılar kendileri için en rahat masaüstü ortamını seçebiliyorlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Önceden Yüklenmiş Uygulamalar&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-önceden-yüklenmiş-uygulamalarh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-%c3%b6nceden-y%c3%bcklenmi%c5%9f-uygulamalarh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus, günlük bilgisayar görevlerini kapsayan birçok önceden yüklenmiş uygulama ile birlikte gelir. Bunlar şunları içerir:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Web&#39;de gezinmek için&amp;nbsp;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;E-posta yönetimi için&amp;nbsp;&lt;strong&gt;Thunderbird&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Üretkenlik için LibreOffice&lt;/strong&gt;&amp;nbsp;(kelime işleme, elektronik tablolar, sunumlar)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Müzik için&amp;nbsp;&lt;strong&gt;Rhythmbox&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Video oynatma için&amp;nbsp;&lt;strong&gt;GNOME MPV&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bu temel uygulamaların kullanıma hazır olması, yeni başlayanları sistemi kurduktan sonra temel yazılımları arama ve yükleme zahmetinden kurtarır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Rolling Sürüm Modeli&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-rolling-sürüm-modelih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-rolling-s%c3%bcr%c3%bcm-modelih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus&amp;rsquo;un önemli avantajlarından biri de rolling sürüm modelidir. Bu modelle, Ubuntu gibi iki yılda bir sürüm çıkaran dağıtımların aksine, tam sistem yükseltmeleri yapmanıza gerek kalmadan sürekli olarak en son güncellemeleri ve yeni özellikleri alırsınız.&lt;/p&gt;
+&lt;p&gt;Bu, sisteminizin her zaman güncel olmasını sağlayarak, en son özellikleri edinmek için  işletim sisteminizi yeniden yüklemenize gerek kalmadan istikrarlı ve güvenli bir bilgisayar deneyimi sunar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Kolay  Yazılım Yönetimi&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-kolaynbspnbspyazılımnbspyönetimih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-kolaynbspnbspyaz%c4%b1l%c4%b1mnbspy%c3%b6netimih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus , yazılım yüklemeyi, güncellemeyi ve kaldırmayı kolaylaştıran paket yönetim sistemi &lt;strong&gt;eopkg&amp;rsquo;yi&lt;/strong&gt; kullanır . Yeni başlayanlar , uygulamaları yönetme sürecini basitleştiren grafiksel bir araç olan &lt;strong&gt;Yazılım Merkezi&amp;rsquo;ni takdir edeceklerdir. İnternet, Ofis, Oyunlar, Multimedya ve daha fazlası gibi kategorilere sadece birkaç tıklamayla göz atabilirsiniz.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ayrıca Solus, Solus&amp;rsquo;un yerel depolarında bulunmayan yazılımların kurulumunu kolaylaştıran evrensel bir paket biçimi olan &lt;strong&gt;Flatpak&amp;rsquo;ı destekler.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;3. Solus Linux Nasıl Kurulur&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-solus-linux-nasıl-kurulurh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-solus-linux-nas%c4%b1l-kurulurh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus&amp;rsquo;u yüklemek basit ve akıcı bir işlemdir. İşte Solus&amp;rsquo;u bilgisayarınıza yüklemenize yardımcı olacak adım adım bir kılavuz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Solus ISO&amp;rsquo;yu indirin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-solus-isoyu-indirinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-solus-isoyu-indirinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Başlamak için, Solus ISO imajını resmi web sitesinden indirmeniz gerekir. Farklı sürümler arasından seçim yapabilirsiniz:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus Budgie&lt;/strong&gt;&amp;nbsp;: Basitlik ve kullanım kolaylığı için optimize edilmiş Budgie masaüstünü sunar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus GNOME&lt;/strong&gt;&amp;nbsp;: Daha modern ve özelleştirilebilir bir masaüstü deneyimi tercih eden kullanıcılar için uygun olan GNOME masaüstünü kullanır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus KDE Plasma&lt;/strong&gt;&amp;nbsp;: Zengin özelleştirme seçeneklerine sahip daha geleneksel bir masaüstü isteyen kullanıcılar için.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus MATE&lt;/strong&gt;&amp;nbsp;: Kaynak açısından verimli, hafif ve geleneksel bir masaüstü ortamı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Önyüklenebilir bir USB Sürücüsü Oluşturun&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-önyüklenebilir-bir-usb-sürücüsü-oluşturunh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-%c3%b6ny%c3%bcklenebilir-bir-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bc-olu%c5%9fturunh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;ISO&amp;rsquo;yu indirdikten sonra önyüklenebilir bir USB sürücü oluşturmanız gerekir. ISO dosyasını bir USB sürücüye yazmak için &lt;strong&gt;Rufus&lt;/strong&gt; (Windows için) veya &lt;strong&gt;Etcher&lt;/strong&gt; (macOS ve Linux için) gibi bir araç kullanabilirsiniz .&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) USB Sürücüsünden Önyükleme Yapın&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-usb-sürücüsünden-önyükleme-yapınh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bcnden-%c3%b6ny%c3%bckleme-yap%c4%b1nh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Önyüklenebilir USB&amp;rsquo;yi bilgisayarınıza takın ve yeniden başlatın. Önyükleme sırasında, BIOS&amp;rsquo;unuza veya önyükleme menünüze girmek için uygun tuşa basın (bu tuş genellikle bilgisayarınıza bağlı olarak F12, F2, ESC veya DEL&amp;rsquo;dir). Önyükleme seçeneğiniz olarak USB sürücüsünü seçin ve Solus canlı ortamına yönlendirileceksiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Solus&amp;rsquo;u yükleyin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-solusu-yükleyinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-solusu-y%c3%bckleyinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Canlı ortama önyükleme yaptıktan sonra, Solus&amp;rsquo;u yüklemeden önce deneyebilirsiniz. Yüklemeye hazırsanız, masaüstündeki &lt;strong&gt;İşletim Sistemini Yükle simgesine tıklayın. Yükleyici sizi süreç boyunca yönlendirecektir:&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Dilinizi ve bölgenizi seçin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Klavye düzeninizi ayarlayın.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kurulum türünüzü seçin (özel bölümlendirme veya otomatik).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kullanıcı adınızı ve şifrenizi ayarlayın.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bu adımları tamamladıktan sonra kurulum başlayacaktır. Tamamlandığında bilgisayarınızı yeniden başlatmanız istenecektir.&lt;/p&gt;
+&lt;h2&gt;4. Solus&amp;rsquo;a Başlarken&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-solusa-başlarkenh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-solusa-ba%c5%9flarkenh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus&amp;rsquo;u kurduktan sonra, başlamanız için birkaç temel şey şunlardır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Sisteminizi Güncelleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-sisteminizi-güncellemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-sisteminizi-g%c3%bcncellemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kurulumdan sonra sisteminizin güncel olduğundan emin olmak önemlidir. Solus&amp;rsquo;u güncellemek için terminali açın ve şunu yazın:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo eopkg upgrade&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Alternatif olarak, güncellemeleri kontrol etmek ve grafiksel bir arayüz aracılığıyla yüklemek için &lt;strong&gt;Yazılım Merkezi&amp;rsquo;ni&lt;/strong&gt; kullanabilirsiniz .&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Ek Yazılım Yükleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-ek-yazılım-yüklemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-ek-yaz%c4%b1l%c4%b1m-y%c3%bcklemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus zengin bir yazılım deposuna sahip, ancak ek uygulamalara ihtiyaç duyarsanız bunları Yazılım Merkezi üzerinden veya terminali kullanarak kolayca kurabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Örneğin, &lt;strong&gt;VLC medya oynatıcısını&lt;/strong&gt; yüklemek için aşağıdaki komutu kullanabilirsiniz:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo eopkg install vlc&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Varsayılan depolarda bulunmayan yazılımlar için &lt;strong&gt;Flatpak&amp;rsquo;ı&lt;/strong&gt; da kullanabilirsiniz . Flatpak, Solus&amp;rsquo;a önceden yüklenmiş olarak gelir, böylece hemen kullanmaya başlayabilirsiniz. Flatpak uygulamalarının resmi deposu olan Flathub&amp;rsquo;da ihtiyacınız olan uygulamayı arayın ve kurulum talimatlarını izleyin.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Masaüstünüzü Özelleştirme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-masaüstünüzü-özelleştirmeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-masa%c3%bcst%c3%bcn%c3%bcz%c3%bc-%c3%b6zelle%c5%9ftirmeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus&amp;rsquo;u kullanmanın faydalarından biri, özellikle Budgie masaüstüyle, özelleştirme kolaylığıdır. &lt;strong&gt;Budgie Masaüstü Ayarları&lt;/strong&gt; aracılığıyla temaları, simgeleri ve pencere davranışlarını değiştirebilirsiniz . GNOME, KDE veya MATE kullanıyorsanız, ilgili özelleştirme seçeneklerine sahip olacaksınız.&lt;/p&gt;
+&lt;p&gt;Masaüstü ortamınızın tam olarak istediğiniz gibi görünmesini ve hissettirmesini sağlamak için temalar ve uzantılarla oynayın.&lt;/p&gt;
+&lt;h2&gt;5. Solus Topluluğu ve Desteği&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-solus-topluluğu-ve-desteğih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-solus-toplulu%c4%9fu-ve-deste%c4%9fih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus kullanıcı dostu olsa da, yeni başlayanlar yine de ara sıra zorluklarla karşılaşabilir. Neyse ki Solus topluluğu aktif ve yardımseverdir. Destek için şuraya bakabilirsiniz:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus Forum&lt;/strong&gt;&amp;nbsp;: Soru sormak ve yaygın sorunlara çözüm bulmak için harika bir yer.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Solus Dokümantasyonu&lt;/strong&gt;&amp;nbsp;: Solus&#39;u kullanmak için kapsamlı kılavuzlar ve kaynaklar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;IRC ve Reddit&lt;/strong&gt;&amp;nbsp;: Daha acil yardım veya gündelik tartışmalar için.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Son Düşünceler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-düşüncelerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#son-d%c3%bc%c5%9f%c3%bcncelerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Solus  Linux, istikrarlı, kullanıcı dostu ve iyi desteklenen bir  Linux dağıtımı isteyen yeni başlayanlar için sağlam bir seçimdir . Sadeliğe odaklanması, sürekli bir sürüm modelinin gücüyle birleştiğinde, onu verimli bir masaüstü deneyimi arayan kullanıcılar için harika bir işletim sistemi haline getirir. Şık bir arayüz, basit kurulum süreci ve çok sayıda önceden yüklenmiş yazılımla Solus, Linux dünyasına başlarken sıklıkla ilişkilendirilen sürtünmenin çoğunu ortadan kaldırır.&lt;/p&gt;
+&lt;p&gt;Bu kılavuzu takip ederek artık Solus&amp;rsquo;u kullanmaya başlayabilir ve sunduğu tüm özellikleri ve özelleştirmeleri keşfetmeye başlayabilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.siberoloji.com/tr/populer-linux-dagitimlarinin-listesi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;&#34;&gt;Popüler Linux Dağıtımları Listesi&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Deepin Linux Dağıtımına Yeni Başlayanlar İçin Bir Kılavuz</title>
+      <link>http://localhost:1313/tr/deepin-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</link>
+      <pubDate>Fri, 20 Sep 2024 01:11:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/deepin-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/</guid>
+      <description>
+        
+        
+        &lt;p&gt; Linux&amp;rsquo;a yeni başladıysanız ve çekici, kullanıcı dostu bir işletim sistemi arıyorsanız, &lt;strong&gt;Deepin Linux&lt;/strong&gt; sizin için mükemmel bir seçim olabilir. Zarif tasarımı, kullanım kolaylığı ve güçlü performansıyla bilinen Deepin Linux, Windows veya macOS gibi sistemlerden geçiş yapan, yeni başlayanlar için tasarlanmış bir masaüstü deneyimi sunan Linux dağıtımıdır .&lt;/p&gt;
+&lt;p&gt;Bu kılavuzda, Deepin Linux&amp;rsquo;u öne çıkaran şeyleri, nasıl yükleneceğini ve benzersiz özelliklerinden en iyi şekilde nasıl yararlanabileceğinizi inceleyeceğiz. İster güzel bir masaüstü ortamı, ister günlük kullanım için güvenilir bir yazılım arıyor olun, Deepin&amp;rsquo;in sunabileceği bir şey var.&lt;/p&gt;
+&lt;h2&gt;1. Deepin Linux Nedir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-deepin-linux-nedirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-deepin-linux-nedirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Deepin Linux,&lt;/strong&gt; Çinli yazılım şirketi Deepin Technology tarafından geliştirilen Debian tabanlı bir Linux dağıtımıdır. Estetik ve işlevselliğe vurgu yaparak akıcı, kullanıcı dostu bir deneyim sunmak için tasarlanmıştır. &lt;strong&gt;Deepin Masaüstü Ortamı (DDE),&lt;/strong&gt; son derece özelleştirilebilir ve zarif bir kullanıcı arayüzüne sahip olan gösterinin yıldızıdır.&lt;/p&gt;
+&lt;p&gt;Deepin&amp;rsquo;in misyonu, Linux dünyasında çok az veya hiç deneyimi olmayan kullanıcılar için Linux&amp;rsquo;u erişilebilir kılmaktır. Deepin, sezgisel tasarımıyla Linux&amp;rsquo;un teknik esnekliği ile günlük kullanıcıların ihtiyaç duyduğu basitlik arasındaki boşluğu kapatmayı amaçlamaktadır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Deepin Linux&amp;rsquo;un Temel Özellikleri:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;deepin-linuxun-temel-özelliklerih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deepin-linuxun-temel-%c3%b6zelliklerih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Masaüstü Ortamı (DDE)&lt;/strong&gt;&amp;nbsp;: Sıfırdan tasarlanmış, zarif ve duyarlı bir masaüstü ortamı olup, kullanıcılara rafine bir deneyim sunar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Debian Tabanlı&lt;/strong&gt;&amp;nbsp;: Deepin, istikrarlı ve popüler Debian Linux üzerine inşa edilmiştir ve güvenlik ve sağlamlığı garanti eder.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kullanım Kolaylığı&lt;/strong&gt;&amp;nbsp;: Minimum öğrenme eğrisi ile Linux&#39;a yeni başlayanlar için ideal bir başlangıç ​​noktasıdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Önceden Yüklenmiş Yazılımlar&lt;/strong&gt;&amp;nbsp;: Deepin, günlük görevler için zengin bir önceden yüklenmiş uygulama seçeneğiyle birlikte gelir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Store&lt;/strong&gt;&amp;nbsp;: Yazılım kurulumunu ve güncellemelerini basitleştiren iyi organize edilmiş bir yazılım mağazası.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;2. Deepin Neden Yeni Başlayanlar İçin Mükemmeldir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-deepin-neden-yeni-başlayanlar-için-mükemmeldirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-deepin-neden-yeni-ba%c5%9flayanlar-i%c3%a7in-m%c3%bckemmeldirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, zarif arayüzü ve sezgisel tasarımı sayesinde Linux&amp;rsquo;a yeni başlayanlar için en iyi tercih olarak öne çıkıyor. Deepin&amp;rsquo;in Linux dünyasına yeni başlayanlar için ideal olmasının birkaç nedeni şunlardır:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Çarpıcı ve Sezgisel Masaüstü Ortamı&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-çarpıcı-ve-sezgisel-masaüstü-ortamıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-%c3%a7arp%c4%b1c%c4%b1-ve-sezgisel-masa%c3%bcst%c3%bc-ortam%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Masaüstü Ortamı (DDE),&lt;/strong&gt; Linux ekosisteminde bulunan görsel olarak en çarpıcı masaüstü ortamlarından biridir. Modern estetiği kullanımı kolay işlevsellikle birleştirerek macOS ve Windows kullanıcılarına tanıdık gelen bir deneyim sunar.&lt;/p&gt;
+&lt;p&gt;Ekranın alt kısmındaki dock (macOS&amp;rsquo;a benzer) sık kullanılan uygulamalara kolay erişim sağlarken, uygulama başlatıcısı tüm yüklü yazılımların temiz bir genel görünümünü sunar. Düzen özelleştirilebilir, bu nedenle daha geleneksel bir Windows benzeri görev çubuğu &lt;strong&gt;tercih&lt;/strong&gt; ederseniz, farklı dock modları arasında kolayca geçiş yapabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Kullanıcı Dostu Tasarım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-kullanıcı-dostu-tasarımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-kullan%c4%b1c%c4%b1-dostu-tasar%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin kullanıcı deneyimine güçlü bir vurgu yapar. Arayüzü akıcıdır ve seçenekler açıkça etiketlenmiştir, bu da tamamen yeni başlayan birinin bile gezinmesini kolaylaştırır. Ekranın sağ tarafındaki bir paneli kaydırarak erişilebilen kontrol merkezi, ekran, ağ ve temalar gibi sistem ayarlarını yalnızca birkaç tıklamayla ayarlamanıza olanak tanır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Önceden Yüklenmiş Yazılım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-önceden-yüklenmiş-yazılımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-%c3%b6nceden-y%c3%bcklenmi%c5%9f-yaz%c4%b1l%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, günlük işlerin çoğunu kapsayan çeşitli temel yazılımlarla önceden yüklenmiş olarak gelir:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&amp;nbsp;: Web&#39;de gezinmek için.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;LibreOffice&lt;/strong&gt;&amp;nbsp;: Belge düzenleme, elektronik tablolar ve sunumlar için güçlü bir ofis paketi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Music&lt;/strong&gt;&amp;nbsp;: Şık ve kullanımı kolay bir müzik çalar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Movie&lt;/strong&gt;&amp;nbsp;: Çeşitli formatları destekleyen bir video oynatıcısı.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Terminal&lt;/strong&gt;&amp;nbsp;: Komut satırı görevleri için temiz ve güçlü bir terminal.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bu temel yazılımın önceden yüklenmiş olması, yeni başlayanların programları manuel olarak arayıp yüklemeye gerek kalmadan sistemlerini kullanmaya başlamalarını sağlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Deepin Mağazası&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-deepin-mağazasıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-deepin-ma%c4%9fazas%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Store&lt;/strong&gt; , ek yazılım yüklemek isteyen yeni başlayanlar için harika bir araçtır. Basit ve kullanıcı dostu bir arayüze sahip olan mağaza, Office, Grafikler, Oyunlar, Multimedya ve daha fazlası gibi işlevlere göre kategorize edilmiş çeşitli uygulamalar sunar.&lt;/p&gt;
+&lt;p&gt;Her uygulamanın bir derecelendirme sistemi ve kullanıcı yorumları vardır, bu da yeni kullanıcıların yüklemek için yazılım seçerken bilinçli kararlar almasına yardımcı olabilir. Deepin Store ayrıca yüklenen yazılımlar için güncellemeleri yönetir ve tüm uygulamaların en son özellikler ve güvenlik yamalarıyla güncel olmasını sağlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;e) Düzenli Güncellemeler ve Güçlü Destek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;e-düzenli-güncellemeler-ve-güçlü-destekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#e-d%c3%bczenli-g%c3%bcncellemeler-ve-g%c3%bc%c3%a7l%c3%bc-destekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, sistem kararlılığını iyileştiren, yeni özellikler sunan ve güvenliği artıran düzenli güncellemeler alır. Bazı  Linux dağıtımları güncellemeleri yönetmek için dik bir öğrenme eğrisi gerektirebilirken, Deepin işin çoğunu otomatikleştiren grafiksel araçlar sağlayarak süreci basitleştirir.&lt;/p&gt;
+&lt;p&gt;Ayrıca Deepin&amp;rsquo;in aktif topluluk ve destek kanalları, yeni başlayanların ihtiyaç duyduklarında yardım bulmalarını kolaylaştırıyor.&lt;/p&gt;
+&lt;h2&gt;3. Deepin Linux Nasıl Kurulur&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-deepin-linux-nasıl-kurulurh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-deepin-linux-nas%c4%b1l-kurulurh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt; Deepin Linux&amp;rsquo;u kurmak , yeni başlayanlar için bile basittir. Başlamak için aşağıdaki adımları izleyin:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Deepin ISO&amp;rsquo;yu indirin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-deepin-isoyu-indirinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-deepin-isoyu-indirinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.deepin.org/&#34;&gt;Resmi Deepin web sitesini&lt;/a&gt; ziyaret edin ve dağıtım için en son ISO görüntüsünü indirin. Önyüklenebilir bir kurulum diski oluşturmak için bir USB sürücüye (en az 4 GB) ihtiyacınız olacak.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Önyüklenebilir bir USB Sürücüsü Oluşturun&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-önyüklenebilir-bir-usb-sürücüsü-oluşturunh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-%c3%b6ny%c3%bcklenebilir-bir-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bc-olu%c5%9fturunh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Önyüklenebilir bir USB sürücüsü oluşturmak için Rufus&lt;/strong&gt; (Windows için) veya &lt;strong&gt;Etcher&lt;/strong&gt; (Linux ve macOS için) gibi araçları kullanın . Aracı açın, Deepin ISO dosyasını seçin ve ardından USB sürücünüze yazın.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) USB Sürücüsünden Önyükleme Yapın&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-usb-sürücüsünden-önyükleme-yapınh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-usb-s%c3%bcr%c3%bcc%c3%bcs%c3%bcnden-%c3%b6ny%c3%bckleme-yap%c4%b1nh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Önyüklenebilir USB hazır olduğunda, bilgisayarınızı yeniden başlatın ve önyükleme menüsüne girmek için uygun tuşa basın (genellikle sisteminize bağlı olarak &lt;strong&gt;F12&lt;/strong&gt; , &lt;strong&gt;ESC&lt;/strong&gt; veya &lt;strong&gt;DEL ). Buradan, Deepin canlı ortamına önyükleme yapmak için USB sürücüsünü seçin.&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Deepin&amp;rsquo;i yükleyin&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-deepini-yükleyinh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-deepini-y%c3%bckleyinh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Canlı ortamda, masaüstünde &amp;ldquo;Deepin&amp;rsquo;i Yükle&amp;rdquo; simgesini göreceksiniz. Yükleme sürecini başlatmak için üzerine tıklayın. Yükleme sihirbazı sizi aşağıdaki adımlarda yönlendirecektir:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Dil Seçimi&lt;/strong&gt;&amp;nbsp;: Tercih ettiğiniz dili seçin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bölüm Kurulumu&lt;/strong&gt;&amp;nbsp;: Kurulum bölümünü seçin. Tüm diski kullanabilir veya başka bir işletim sistemiyle çift önyükleme yapıyorsanız sürücüyü manuel olarak bölümlendirebilirsiniz.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kullanıcı Ayrıntıları&lt;/strong&gt;&amp;nbsp;: Kullanıcı adınızı, şifrenizi ve ana bilgisayar adınızı ayarlayın.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Kurulum&lt;/strong&gt;&amp;nbsp;: Gerekli seçenekleri yapılandırdıktan sonra “Yükle” butonuna tıklayın ve işlemin tamamlanmasını bekleyin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Kurulum tamamlandıktan sonra bilgisayarınızı yeniden başlattığınızda Deepin karşılama ekranıyla karşılaşacaksınız.&lt;/p&gt;
+&lt;h2&gt;4. Deepin&amp;rsquo;e Başlarken&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-deepine-başlarkenh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-deepine-ba%c5%9flarkenh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin Linux&amp;rsquo;u kurduktan sonra özelliklerini keşfetmeye başlayabilirsiniz. Başlamanıza yardımcı olacak birkaç ipucu:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;a) Sisteminizi Güncelleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;a-sisteminizi-güncellemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a-sisteminizi-g%c3%bcncellemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Kurulumdan sonra yapmanız gereken ilk şey, tüm son yamaların ve yazılım sürümlerinin kurulu olduğundan emin olmak için sisteminizi güncellemektir. Deepin&amp;rsquo;i grafiksel Deepin Güncelleme Yöneticisi&lt;/strong&gt; aracılığıyla veya aşağıdaki komutla terminali kullanarak güncelleyebilirsiniz :&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;b) Kontrol Merkezini Keşfetmek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;b-kontrol-merkezini-keşfetmekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b-kontrol-merkezini-ke%c5%9ffetmekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin &lt;strong&gt;Control Center,&lt;/strong&gt; sistem ayarlarını yönetmek için tek adresinizdir. Burada, ekranınızı, sesinizi, ağınızı ve duvar kağıtları ve temalar gibi kişiselleştirme seçeneklerinizi yapılandırabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ekran Ayarları&lt;/strong&gt;&amp;nbsp;: Çözünürlüğü, yenileme hızını ve diğer ekranla ilgili ayarları düzenleyin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Tema Ayarları&lt;/strong&gt;&amp;nbsp;: Deepin birçok yerleşik tema ve duvar kağıdı sunar. Ayrıca Deepin Store&#39;dan daha fazlasını indirebilirsiniz.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;c) Ek Yazılım Yükleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;c-ek-yazılım-yüklemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c-ek-yaz%c4%b1l%c4%b1m-y%c3%bcklemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin önceden yüklenmiş çok sayıda uygulama ile birlikte gelirken, ihtiyaçlarınıza göre ek yazılımlar yüklemek isteyebilirsiniz. &lt;strong&gt;Deepin Store&lt;/strong&gt; bu süreci inanılmaz derecede kolaylaştırır. Sadece mağazayı açın, istediğiniz uygulamayı arayın ve &amp;ldquo;Yükle&amp;quot;ye tıklayın.&lt;/p&gt;
+&lt;p&gt;Örneğin, &lt;strong&gt;VLC Media Player&amp;rsquo;ı&lt;/strong&gt; yüklemek için Deepin Store&amp;rsquo;da arayabilir veya terminal üzerinden şu komutla yükleyebilirsiniz:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;sudo apt install vlc&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;d) Masaüstünüzü Özelleştirme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;d-masaüstünüzü-özelleştirmeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#d-masa%c3%bcst%c3%bcn%c3%bcz%c3%bc-%c3%b6zelle%c5%9ftirmeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin, masaüstü ortamını tercihlerinize göre kişiselleştirmenize olanak tanır. Şunları yapabilirsiniz:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Temaları değiştir&lt;/strong&gt;&amp;nbsp;: Kontrol Merkezi&#39;ne gidin ve açık ve koyu temalar arasında geçiş yapabileceğiniz veya ek temalar indirebileceğiniz &#34;Kişiselleştirme&#34; sekmesini bulun.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Dock&#39;u özelleştirin&lt;/strong&gt;&amp;nbsp;: Boyutunu, konumunu ve davranışını ayarlamak için dock&#39;a sağ tıklayın (örneğin, otomatik olarak gizlenecek şekilde ayarlayabilirsiniz).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;e) Temel Terminal Komutlarını Öğrenmek&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;e-temel-terminal-komutlarını-öğrenmekh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#e-temel-terminal-komutlar%c4%b1n%c4%b1-%c3%b6%c4%9frenmekh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Deepin birçok görev için terminali kullanmaktan kaçınmayı mümkün kılarken, birkaç temel  Linux komutunu öğrenmek uzun vadede faydalı olabilir. İşte size faydalı olabilecek birkaçı:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sistemi güncelle&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Yazılımı yükleyin&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;sudo apt install [package-name]&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Disk kullanımını kontrol edin&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;df -h&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bir dizindeki dosyaları listele&lt;/strong&gt;&amp;nbsp;:&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;5. Deepin Topluluğu ve Desteği&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-deepin-topluluğu-ve-desteğih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-deepin-toplulu%c4%9fu-ve-deste%c4%9fih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt; Herhangi bir Linux dağıtımında olduğu gibi , yardım için nereye gideceğinizi bilmek önemlidir. Deepin, yeni başlayanlara yardımcı olabilecek canlı bir topluluğa ve çeşitli destek kanallarına sahiptir:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Forum&lt;/strong&gt;&amp;nbsp;: Resmi Deepin forumu, deneyimli kullanıcıların yardımıyla soru sormak, bilgi paylaşmak ve sorunları gidermek için harika bir yerdir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Deepin Wiki&lt;/strong&gt;&amp;nbsp;: Deepin&#39;in resmi wiki&#39;si kurulumdan gelişmiş özelleştirmeye kadar her şeyi kapsayan kapsamlı belgeler içerir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Çevrimiçi Topluluklar&lt;/strong&gt;&amp;nbsp;: Reddit, Facebook ve Telegram&#39;da kullanıcıların ipuçlarını ve çözümleri paylaşabileceği çeşitli Deepin ile ilgili gruplar bulunmaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Son Düşünceler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-düşüncelerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#son-d%c3%bc%c5%9f%c3%bcncelerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Linux dünyasına adım atan yeni başlayanlar için Deepin Linux, çarpıcı, kullanıcı dostu ve iyi cilalanmış bir deneyim sunar. Estetik ve işlevselliğe odaklanması, kurulum ve yazılım yönetiminin kolaylığıyla birleştiğinde, onu yeni kullanıcılar için ideal bir seçim haline getirir.&lt;/p&gt;
+&lt;p&gt;Görsel olarak çekici masaüstü ortamından Deepin Store&amp;rsquo;un sadeliğine kadar, bu dağıtım güzellik ve performansın mükemmel bir dengesini sunar. Bu kılavuzu takip ederek artık Deepin Linux&amp;rsquo;u günlük bilgisayar ihtiyaçlarınızı karşılayacak şekilde kurmak, keşfetmek ve özelleştirmek için donanımlı olmalısınız. Keyifli keşifler!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.siberoloji.com/tr/populer-linux-dagitimlarinin-listesi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; title=&#34;&#34;&gt;Linux Dağıtımları Listesi&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

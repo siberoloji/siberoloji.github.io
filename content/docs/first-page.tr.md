@@ -1,9 +1,20 @@
 ---
-title: Demo Sayfası
+title: Proje Listesi
 type: docs
 prev: /
-next: docs/folder/
-url: demo-sayfasi
+next: docs/kalibook/
+url: proje-listesi
+weight: 1
 ---
 
-Basit bir demo sayfası.
+## Devam Eden Çalışmalar
+
+- [ ] [Kali Kitabı](/docs/kalibook)
+- [ ] Linux Kitabı
+- [x] SEO Kitabı
+- [ ] Kotlin Kitabı
+- [ ] C++ Kitabı
+
+## Kısmen Tamamlananlar
+
+## Tamamlananlar

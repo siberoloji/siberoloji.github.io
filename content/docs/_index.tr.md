@@ -2,16 +2,13 @@
 date: '2024-11-07T16:38:02+03:00'
 title: 'Belgeler'
 ---
-Theme demo
 
-## Merhaba, Dünya
+## Giriş
 
-```go {filename="main.go"}
-package main
+Bu döküman bölümü, bilgilerin kitap formatında derlenmiş şeklidir. Devam eden kitaplaştırma çalışmalarını aşağıda bulabilirsiniz.
 
-import "fmt"
+## Keşfedin
 
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+{{< cards >}}
+  {{< card link="kalibook/" title="Kali Kitabı" icon="book-open" >}}
+{{< /cards >}}

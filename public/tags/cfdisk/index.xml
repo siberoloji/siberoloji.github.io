@@ -1,0 +1,288 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Cfdisk</title>
+    <link>http://localhost:1313/tags/cfdisk/</link>
+    <description>Recent content in Cfdisk on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Sep 2024 17:58:07 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/cfdisk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Understanding the cfdisk Command in Linux: A Guide for Advanced Users</title>
+      <link>http://localhost:1313/understanding-the-cfdisk-command-in-linux-a-guide-for-advanced-users/</link>
+      <pubDate>Sat, 21 Sep 2024 17:58:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/understanding-the-cfdisk-command-in-linux-a-guide-for-advanced-users/</guid>
+      <description>
+        
+        
+         &lt;p&gt;Disk partitioning is an essential task in Linux, especially for system administrators or users managing multiple drives. One of the tools available for partition management is the &lt;code&gt;cfdisk&lt;/code&gt; command, a simple yet powerful text-based partition editor. While graphical partition editors like GParted provide a user-friendly interface, &lt;code&gt;cfdisk&lt;/code&gt; offers greater control through the command line, making it ideal for advanced users who prefer working without a graphical environment.&lt;/p&gt;
+ &lt;p&gt;In this blog post, we’ll explore the &lt;code&gt;cfdisk&lt;/code&gt; command in detail, discussing its use cases, advantages, and practical examples to help you master disk partitioning tasks on Linux.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;What is &lt;code&gt;cfdisk&lt;/code&gt;?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-codecfdiskcodeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-codecfdiskcodeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;&lt;code&gt;cfdisk&lt;/code&gt; stands for &lt;strong&gt;curses-based fdisk&lt;/strong&gt;. It is a simplified version of the more traditional &lt;code&gt;fdisk&lt;/code&gt; command but with a menu-driven interface based on the curses library. This allows users to interactively manage disk partitions in a text-based environment.&lt;/p&gt;
+ &lt;p&gt;&lt;code&gt;cfdisk&lt;/code&gt; is particularly useful for those who find &lt;code&gt;fdisk&lt;/code&gt;&#39;s command-line interface too complex or want a faster way to create, delete, and modify partitions. While it lacks some of the advanced features of &lt;code&gt;parted&lt;/code&gt;, it is perfect for common partitioning tasks such as:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Creating partitions&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Deleting partitions&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Changing partition types (e.g., setting a partition as Linux, swap, or NTFS)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Setting partitions as bootable&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+ &lt;p&gt;&lt;code&gt;cfdisk&lt;/code&gt; operates on block devices such as &lt;code&gt;/dev/sda&lt;/code&gt;, &lt;code&gt;/dev/nvme0n1&lt;/code&gt;, or &lt;code&gt;/dev/mmcblk0&lt;/code&gt;, and changes are only committed when you write them to the disk. Until that point, no data is altered, making it a relatively safe tool to experiment with.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Installing &lt;code&gt;cfdisk&lt;/code&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installing-codecfdiskcodeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#installing-codecfdiskcodeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Before you begin, ensure that &lt;code&gt;cfdisk&lt;/code&gt; is installed on your system. Most Linux distributions include &lt;code&gt;cfdisk&lt;/code&gt; by default, but if it is missing, you can install it using your package manager.&lt;/p&gt;
+ &lt;p&gt;For &lt;strong&gt;Debian/Ubuntu&lt;/strong&gt; systems:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get install util-linux&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;For &lt;strong&gt;Fedora&lt;/strong&gt;:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install util-linux&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;For &lt;strong&gt;Arch Linux&lt;/strong&gt;:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo pacman -S util-linux&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;The &lt;code&gt;cfdisk&lt;/code&gt; tool is part of the &lt;code&gt;util-linux&lt;/code&gt; package, which is widely available on almost all Linux distributions.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Basic Usage and Interface&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;basic-usage-and-interfaceh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#basic-usage-and-interfaceh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;To begin working with &lt;code&gt;cfdisk&lt;/code&gt;, you need to specify the disk you want to manage. For example, to work on the first disk (&lt;code&gt;/dev/sda&lt;/code&gt;), run the following command:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo cfdisk /dev/sda&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;This command will open an interactive text-based interface where you can perform various partitioning tasks.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Key Sections of the Interface:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;key-sections-of-the-interfaceh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-sections-of-the-interfaceh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Disk Information&lt;/strong&gt;: At the top of the screen, you’ll see information about the disk you’re working on, including the size of the disk and the partition table type (e.g., DOS or GPT).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Partition Table&lt;/strong&gt;: Below the disk information is a list of current partitions on the disk. Each partition is displayed with its start and end points, size, file system type, and label.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Menu Options&lt;/strong&gt;: At the bottom, you’ll find a menu that provides options such as &lt;strong&gt;Create&lt;/strong&gt;, &lt;strong&gt;Delete&lt;/strong&gt;, &lt;strong&gt;Type&lt;/strong&gt;, &lt;strong&gt;Write&lt;/strong&gt;, and &lt;strong&gt;Quit&lt;/strong&gt;. You can navigate through these options using the arrow keys and select them by pressing &lt;strong&gt;Enter&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Working with Partition Tables&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;working-with-partition-tablesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#working-with-partition-tablesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Before creating or modifying partitions, you must ensure that the partition table is correctly set up. &lt;code&gt;cfdisk&lt;/code&gt; supports both &lt;strong&gt;DOS&lt;/strong&gt; and &lt;strong&gt;GPT&lt;/strong&gt; partition tables.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Creating a New Partition Table&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;creating-a-new-partition-tableh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#creating-a-new-partition-tableh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;To create a new partition table:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Open &lt;code&gt;cfdisk&lt;/code&gt; on the disk you want to partition: &lt;code&gt;sudo cfdisk /dev/sda&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Use the arrow keys to select the &lt;strong&gt;[Label]&lt;/strong&gt; option, which allows you to create a new partition table.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select either &lt;strong&gt;gpt&lt;/strong&gt; or &lt;strong&gt;dos&lt;/strong&gt; depending on your requirements:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;GPT&lt;/strong&gt; (GUID Partition Table) is suitable for disks larger than 2 TB or when using UEFI boot.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;DOS&lt;/strong&gt; is more common for legacy BIOS systems and smaller disks.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+ &lt;p&gt;Choosing the correct partition table is crucial for compatibility with your system’s boot method.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Creating Partitions with &lt;code&gt;cfdisk&lt;/code&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;creating-partitions-with-codecfdiskcodeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#creating-partitions-with-codecfdiskcodeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Once the partition table is set, you can begin creating partitions. Here’s an example where we create three partitions:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A root partition (&lt;code&gt;/&lt;/code&gt;) of 50 GB&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A swap partition of 8 GB&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A home partition (&lt;code&gt;/home&lt;/code&gt;) with the remaining space&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Create Root Partition&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;In the &lt;code&gt;cfdisk&lt;/code&gt; interface, select &lt;strong&gt;[New]&lt;/strong&gt; to create a new partition.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Choose the size of the partition. For this example, enter &lt;strong&gt;50G&lt;/strong&gt; for the root partition.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;After setting the size, you&#39;ll be prompted to choose whether the partition should be &lt;strong&gt;Primary&lt;/strong&gt; or &lt;strong&gt;Logical&lt;/strong&gt;. For the first partition on a DOS table, select &lt;strong&gt;Primary&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Now, mark the partition as bootable by selecting &lt;strong&gt;[Bootable]&lt;/strong&gt;. This is required for the partition from which you will boot your system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Create Swap Partition&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;After creating the root partition, select &lt;strong&gt;[New]&lt;/strong&gt; again to create another partition.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Enter &lt;strong&gt;8G&lt;/strong&gt; as the size of this partition for the swap area.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Use the &lt;strong&gt;[Type]&lt;/strong&gt; option to change the partition type to &lt;strong&gt;82 (Linux swap)&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Create Home Partition&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Finally, use the remaining space to create the home partition. Select &lt;strong&gt;[New]&lt;/strong&gt; and assign the remaining size.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;No special settings are required for the home partition unless you want to change the file system type.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;exampleh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exampleh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;After completing these steps, the partition table might look something like this:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;/dev/sda1   50G   Linux filesystem
+/dev/sda2   8G    Linux swap
+/dev/sda3   Remaining size  Linux filesystem&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Once the partitions are set, navigate to &lt;strong&gt;[Write]&lt;/strong&gt; to commit your changes to disk. &lt;code&gt;cfdisk&lt;/code&gt; will ask you to type &#34;yes&#34; to confirm that you want to write the changes. Afterward, you can quit the program by selecting &lt;strong&gt;[Quit]&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Deleting and Modifying Partitions&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;deleting-and-modifying-partitionsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deleting-and-modifying-partitionsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Deleting a Partition&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;deleting-a-partitionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#deleting-a-partitionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;If you need to delete a partition, use the &lt;strong&gt;[Delete]&lt;/strong&gt; option in the &lt;code&gt;cfdisk&lt;/code&gt; interface:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the partition you want to delete using the arrow keys.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select &lt;strong&gt;[Delete]&lt;/strong&gt;, and the partition will be removed from the partition table.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+ &lt;p&gt;Deleted partitions remain uncommitted until you choose to write the changes. This gives you the flexibility to undo changes before they are final.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Changing Partition Types&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;changing-partition-typesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#changing-partition-typesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Sometimes you might want to change the type of an existing partition (e.g., setting a partition as &lt;strong&gt;swap&lt;/strong&gt; or &lt;strong&gt;EFI system&lt;/strong&gt;). Use the &lt;strong&gt;[Type]&lt;/strong&gt; option to assign a different type to the selected partition.&lt;/p&gt;
+ &lt;p&gt;For example:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;Type -&amp;gt; 82 (Linux swap)&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;or&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;Type -&amp;gt; EF00 (EFI system)&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Practical &lt;code&gt;cfdisk&lt;/code&gt; Use Cases&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;practical-codecfdiskcode-use-casesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practical-codecfdiskcode-use-casesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;1. Preparing a Disk for Linux Installation&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-preparing-a-disk-for-linux-installationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-preparing-a-disk-for-linux-installationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;When installing a new Linux distribution, partitioning is often required. Using &lt;code&gt;cfdisk&lt;/code&gt;, you can easily create partitions for &lt;strong&gt;root&lt;/strong&gt;, &lt;strong&gt;home&lt;/strong&gt;, &lt;strong&gt;swap&lt;/strong&gt;, and &lt;strong&gt;boot&lt;/strong&gt; partitions before installation.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo cfdisk /dev/sda&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Then create the necessary partitions (e.g., &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;/boot&lt;/code&gt;, &lt;code&gt;/home&lt;/code&gt;, swap) and set the appropriate types and bootable flags.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;2. Partitioning a New External Drive&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-partitioning-a-new-external-driveh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-partitioning-a-new-external-driveh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Suppose you have a new external drive (&lt;code&gt;/dev/sdb&lt;/code&gt;) that you want to partition for use as a backup drive. Using &lt;code&gt;cfdisk&lt;/code&gt;, you can create a large partition and set the partition type to &lt;strong&gt;Linux filesystem&lt;/strong&gt; for ext4 formatting later.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo cfdisk /dev/sdb&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Create a partition with the desired size and write the changes. Once done, format the partition using the &lt;code&gt;mkfs&lt;/code&gt; command:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo mkfs.ext4 /dev/sdb1&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Advantages and Limitations of &lt;code&gt;cfdisk&lt;/code&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;advantages-and-limitations-of-codecfdiskcodeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#advantages-and-limitations-of-codecfdiskcodeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Advantages:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;advantagesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#advantagesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Intuitive Interface&lt;/strong&gt;: The text-based interface is easy to navigate compared to &lt;code&gt;fdisk&lt;/code&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Safe to Use&lt;/strong&gt;: Until changes are written to disk, &lt;code&gt;cfdisk&lt;/code&gt; does not modify your data.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Wide Compatibility&lt;/strong&gt;: Supports both DOS and GPT partition tables.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Limitations:&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;limitationsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#limitationsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Limited Features&lt;/strong&gt;: Compared to &lt;code&gt;parted&lt;/code&gt;, &lt;code&gt;cfdisk&lt;/code&gt; lacks advanced features such as resizing partitions or aligning them to sector boundaries.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Non-Graphical&lt;/strong&gt;: While more user-friendly than &lt;code&gt;fdisk&lt;/code&gt;, it still requires working in a text-based interface, which might not be ideal for all users.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;The &lt;code&gt;cfdisk&lt;/code&gt; command is a straightforward yet powerful tool for managing partitions in Linux. For advanced users, it offers an efficient way to perform common partitioning tasks without the complexity of &lt;code&gt;fdisk&lt;/code&gt; or the need for a full graphical interface. Whether you’re setting up a new disk, preparing for an installation, or managing storage on a server, &lt;code&gt;cfdisk&lt;/code&gt; provides a reliable method to create, delete, and modify partitions with ease.&lt;/p&gt;
+ &lt;p&gt;By mastering &lt;code&gt;cfdisk&lt;/code&gt;, you gain the ability to handle disk management tasks in almost any environment, from desktop setups to headless servers.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

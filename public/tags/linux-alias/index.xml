@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Alias</title>
+    <link>http://localhost:1313/tags/linux-alias/</link>
+    <description>Recent content in Linux Alias on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Apr 2016 16:16:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/linux-alias/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Ubuntu Alias Kısaltma Tanımlama</title>
+      <link>http://localhost:1313/tr/ubuntu-alias-kisaltma-tanimlama/</link>
+      <pubDate>Thu, 21 Apr 2016 16:16:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/ubuntu-alias-kisaltma-tanimlama/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda, Linux komut satırında sürekli kullandığımız uzun komutları, alias kullanarak kısaltmayı gösterdik. Ubuntu İşletim sistemi kullanarak göstermemize rağmen, diğer Linux dağıtımlarında da kullanılabilir.&lt;/p&gt;
+&lt;p&gt;Alias kullanımı, komut satırında yaptığınız işlemleri çok hızlı olarak hayata geçirmenize yardımcı olur. Bir kaç harfle tanımladığınız kısaltma, çok uzun bir komutu ekrana getirir ve derhal işleme koyar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOT&lt;/strong&gt;:Kalıcı kullanım esnasında ilk defa oluşturulan bash_aliases dosyasını, daha sonra tekrar oluşturmaya gerek yoktur. Home klasöründe ve gizli halde bulunan bu dosyayı herhangi bir editör ile açarak düzenleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bu videoda kullanılan komutları aşağıdan kopyalayıp kullanabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Alias geçici kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-geçici-kullanımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alias-ge%c3%a7ici-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;alias lsa=&#39;ls -al&#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Alias kalıcı kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-kalıcı-kullanımh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alias-kal%c4%b1c%c4%b1-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cd 
+touch .bash_aliases 
+nano .bash_aliases 
+alias upd=&#39;sudo apt-get update; sudo apt-get -y upgrade&#39; 
+Ctrl-x ile çıkış 
+Evet cevabı ile kayıt 
+source .bashrc 
+upd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Nasıl yapıldığının anlatılmasını istediğiniz diğer konuları bize bildirebilirsiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

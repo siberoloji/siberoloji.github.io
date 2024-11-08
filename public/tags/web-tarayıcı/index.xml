@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Web Tarayıcı</title>
+    <link>http://localhost:1313/tags/web-taray%C4%B1c%C4%B1/</link>
+    <description>Recent content in Web Tarayıcı on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jun 2024 14:42:52 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/web-taray%C4%B1c%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Safari&amp;#8217;de sayfa kodları nasıl görüntülenir?</title>
+      <link>http://localhost:1313/tr/safaride-sayfa-kodlari-nasil-goruntulenir/</link>
+      <pubDate>Thu, 20 Jun 2024 14:42:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/safaride-sayfa-kodlari-nasil-goruntulenir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bir sayfanın kaynak kodunu görüntülemek, web tasarımcılarının ve geliştiricilerin tercih ettikleri düzeni elde etmelerini sağlar. Yalnızca web sayfalarının kaynağını görüntüleyerek web sitelerinde hızlı bir şekilde hata ayıklamalarına yardımcı olur. İleri düzey Mac kullanıcıları, bir web sayfasındaki sayfa kaynaklarını görüntülemekten büyük ölçüde yararlanabilir. Web sayfasıyla ilgili sorunları giderebilir ve düzeltebilir, koddaki stili ayarlayabilir ve farklı optimizasyon tekniklerini öğrenebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Kaynak kodunu Safari tarayıcısında görüntülemek için gereken adımlar aşağıdadır.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Safari tarayıcınızı açın ve görüntülemek istediğiniz web sayfasına gidin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Üst menü çubuğundan Geliştir &gt; Sayfa Kaynağını Göster&#39;i seçin. Klavyenizde Option+Command+U tuşlarına da basabilirsiniz.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Geliştirme menüsü görünmüyorsa Tercihler &amp;gt; Gelişmiş&amp;rsquo;e gidin ve menü çubuğunda Geliştirmeyi Göster menüsünü seçin.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

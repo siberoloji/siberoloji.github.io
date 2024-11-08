@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Parola Politikası</title>
+    <link>http://localhost:1313/tags/parola-politikas%C4%B1/</link>
+    <description>Recent content in Parola Politikası on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Apr 2016 14:03:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/parola-politikas%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Linux İçin Parola Politikaları</title>
+      <link>http://localhost:1313/tr/linux-icin-parola-politikalari/</link>
+      <pubDate>Sat, 02 Apr 2016 14:03:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linux-icin-parola-politikalari/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux kullanıcılarının büyük bir kısmı, düzenli olarak güvenlik güncellemelerini yükler ve en yeni sürümü kullanırlar. Bildiğimiz kadarıyla, hassas ve dikkatlidirler. Fakat bu hassasiyet ve dikkat tek başına yeterli olmayabilir. Güvenli, kuralları her kullanıcıya eşit olarak uygulanan bir parola politikanız yoksa güvenlik güncellemelerini yüklemek tek başına yeterli olmayabilir.&lt;/p&gt;
+&lt;p&gt;Linux dağıtımlarının bir çoğu, kurulum esnasında kullanıcıyı rahatsız etmeyecek kuralların bulunduğu politikaları varsayılan olarak seçerler. Parolanın değiştirilme zorunluluğu, kaç gün arayla değiştirilmesi gerektiği veya kaç gün değiştirilmez ise hesabın kilitleneceği gibi kuralları sonradan belirlemek gerekir.  &lt;/p&gt;
+&lt;p&gt;Bu tür ayarları yapmak isterseniz, &lt;strong&gt;chage&lt;/strong&gt; olarak adlandırılan bir komutu kullanmalısınız. Kullanımı kolay ve basit olan bu komut, seçeceğiniz parola politikalarının oluşturulmasında size çok yardım olacaktır. Yardım (help) ve Kılavuz (man) sayfalarından seçenekleri ve yapabileceklerinizi görmeniz mümkün.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;chage --help
+man chage&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Komut satırından alttaki komutu çalıştırırsanız, istediğiniz kullanıcının parola kurallarını görebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# siberoloji kısmını, kendi kullanıcı adınız ile değiştirin
+
+$ chage -l siberoloji
+
+Last password change : May 04, 2015
+Password expires : never
+Password inactive : never
+Account expires : never
+Minimum number of days between password change : 0
+Maximum number of days between password change : 99999
+Number of days of warning before password expires : 7
+$ _&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Üstteki raporda görüldüğü gibi kullanıcının parolası, asla zaman aşımına uğramayacak, pasif hale gelmeyecek, hesap pasif hale gelmeyecek ve parolanın değişiminin üzerinden 99999 gün geçmeden yeni parola belirleme zorunluluğu ortaya çıkmayacaktır.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo chage -M 90 siberoloji&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Bu komut, belirttiğiniz kullanıcının, en son parola değişiminden itibaren 90 gün sonra parolasını değiştirmek zorunda olduğunu kural olarak belirlemenizi sağlar.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Komut içerisinde kullanılan seçenekleri tek tek açıklayalım.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;-m 5&lt;/em&gt;) seçeneği ile, bir parola değiştirildikten sonra yeniden değiştirilmesi için, en az 5 günün geçmesi gerektiği belirlenmiştir.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;-M 90&lt;/em&gt;) seçeneği sayesinde, parola değişiminden itibaren 90 gün geçtiğinde, kullanıcı mecburen parolasını değiştirmek zorunda bırakılmıştır.&lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;-I 30&lt;/em&gt;) kullanıcı, en son oturum açtığından itibaren 30 gün oturum açmamış ise, hesabın pasif hale geçirilmesi kural olarak belirlenmiştir. Tatile çıkıyorsanız veya uzun süre bilgisayarınızdan uzak kalacaksanız dikkatli kullanmanızı öneriyoruz. &lt;/p&gt;
+&lt;p&gt;(&lt;em&gt;-W 14&lt;/em&gt;) seçeneği, kullanıcıya parolasının zamanının dolmasına 14 gün kaldığından itibaren uyarı ile ikaz edilmesini sağlayacaktır.&lt;/p&gt;
+&lt;p&gt;Daha güvenli bir şekilde bilgisayar kullanımına devam etmek için işe kendinizden başlayın ve kendi kullanıcı parola politikalarınızı biraz sıkılaştırmayı deneyin. Bir süre garip gelse de, inanın insan kullandığı sistemi daha güvenli hissediyor.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,114 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Toast Mesajı Nasıl Gösterilir?</title>
+    <link>http://localhost:1313/tags/toast-mesaj%C4%B1-nas%C4%B1l-g%C3%B6sterilir/</link>
+    <description>Recent content in Toast Mesajı Nasıl Gösterilir? on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jan 2022 09:25:43 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/toast-mesaj%C4%B1-nas%C4%B1l-g%C3%B6sterilir/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Android Studio Toast Mesajı Nasıl Gösterilir?</title>
+      <link>http://localhost:1313/tr/android-studio-toast-mesaji-nasil-gosterilir/</link>
+      <pubDate>Sun, 16 Jan 2022 09:25:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-studio-toast-mesaji-nasil-gosterilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Android Studio&amp;rsquo;da Toast mesajı yapmak için kod örneğini bulabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Örnek-1&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-1h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val text = &#34;Hello toast!&#34;
+val duration = Toast.LENGTH_SHORT
+val toast = Toast.makeText(applicationContext, text, duration)
+toast.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;veya direk çağırabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Örnek-2&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-2h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-2h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;Toast.makeText(context, text, duration).show()&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Örnek-3&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;örnek-3h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6rnek-3h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu örnekte, bir butona basınca sayacı arttırıp ekrana Toast mesajı görüntüleyen kod bulunmaktadır.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val clkButton = findViewById&amp;lt;Button&amp;gt;(R.id.button)
+        val myTextView = findViewById&amp;lt;TextView&amp;gt;(R.id.textView)
+        var timesClicked = 0
+
+        clkButton.setOnClickListener{
+            timesClicked += 1
+            myTextView.text = timesClicked.toString()
+            Toast.makeText(this@MainActivity, &#34;Hi friend&#34;, Toast.LENGTH_LONG).show()
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Önemli&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;önemlih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6nemlih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.xml dosyanızda bir button ve bir textView elemanının önceden tanımlanmış olması gerekiyor.  activity_main.xml  dosyanızın içini aşağıdaki kod ile değiştirebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;xml&#34; class=&#34;language-xml&#34;&gt;
+
+&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+    xmlns:tools=&#34;http://schemas.android.com/tools&#34;
+    xmlns:app=&#34;http://schemas.android.com/apk/res-auto&#34;
+    android:layout_width=&#34;match_parent&#34;
+    android:layout_height=&#34;match_parent&#34;
+    tools:context=&#34;.MainActivity&#34;&amp;gt;
+
+    &amp;lt;TextView
+        android:id=&#34;@+id/textView&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:text=&#34;@string/salutation&#34;
+        app:layout_constraintBottom_toBottomOf=&#34;parent&#34;
+        app:layout_constraintLeft_toLeftOf=&#34;parent&#34;
+        app:layout_constraintRight_toRightOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34;
+        tools:text=&#34;this is for developer&#34; /&amp;gt;
+
+    &amp;lt;Button
+        android:id=&#34;@+id/button&#34;
+        android:layout_width=&#34;wrap_content&#34;
+        android:layout_height=&#34;wrap_content&#34;
+        android:layout_marginStart=&#34;149dp&#34;
+        android:layout_marginTop=&#34;248dp&#34;
+        android:layout_marginEnd=&#34;149dp&#34;
+        android:layout_marginBottom=&#34;23dp&#34;
+        android:text=&#34;@string/button&#34;
+        app:layout_constraintBottom_toTopOf=&#34;@+id/textView&#34;
+        app:layout_constraintEnd_toEndOf=&#34;parent&#34;
+        app:layout_constraintStart_toStartOf=&#34;parent&#34;
+        app:layout_constraintTop_toTopOf=&#34;parent&#34; /&amp;gt;
+
+&amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:buttons --&gt;
+&lt;div class=&#34;wp-block-buttons&#34;&gt;&lt;!-- wp:button --&gt;
+&lt;div class=&#34;wp-block-button&#34;&gt;&lt;a class=&#34;wp-block-button__link wp-element-button&#34; href=&#34;https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Github Görüntüle&lt;/a&gt;&lt;/div&gt;
+&lt;!-- /wp:button --&gt;&lt;/div&gt;
+&lt;!-- /wp:buttons --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

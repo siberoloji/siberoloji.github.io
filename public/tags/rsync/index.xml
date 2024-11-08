@@ -1,0 +1,207 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Rsync</title>
+    <link>http://localhost:1313/tags/rsync/</link>
+    <description>Recent content in Rsync on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Sep 2024 01:14:31 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Mastering the rsync Command in Linux: A Guide for Advanced Users</title>
+      <link>http://localhost:1313/mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/</link>
+      <pubDate>Sat, 21 Sep 2024 01:14:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;code&gt;rsync&lt;/code&gt; command is a powerful tool for file synchronization and data transfer in Linux. It’s commonly used for copying files and directories locally or across a network. What makes &lt;code&gt;rsync&lt;/code&gt; particularly valuable is its ability to minimize data transfer by only copying the differences between source and destination. For system administrators, developers, or any advanced user managing large-scale data, mastering &lt;code&gt;rsync&lt;/code&gt; can save significant time and resources.&lt;/p&gt;
+&lt;p&gt;In this post, we’ll dive into advanced usage of the &lt;code&gt;rsync&lt;/code&gt; command, covering practical examples that will help you optimize file synchronization, backups, and data migration tasks.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;What Is &lt;code&gt;rsync&lt;/code&gt;?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-codersynccodeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-codersynccodeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The &lt;code&gt;rsync&lt;/code&gt; command stands for &lt;strong&gt;remote sync&lt;/strong&gt;, and it was designed to efficiently synchronize files and directories between two locations. Whether those locations are on the same machine or across different machines, &lt;code&gt;rsync&lt;/code&gt; is reliable and extremely efficient.&lt;/p&gt;
+&lt;p&gt;Key features of &lt;code&gt;rsync&lt;/code&gt; include:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Efficient data transfer:&lt;/strong&gt; Only changes between files are transferred, reducing bandwidth.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Preservation of file attributes:&lt;/strong&gt; Permissions, modification times, symbolic links, and ownership can be preserved.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Versatile transfer methods:&lt;/strong&gt; Local-to-local, local-to-remote, and remote-to-local file transfers are supported.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;SSH integration:&lt;/strong&gt; Data can be securely transferred using SSH for remote operations.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bandwidth limitation:&lt;/strong&gt; You can throttle the speed of data transfer to conserve network resources.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Basic Syntax&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;basic-syntaxh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#basic-syntaxh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before diving into advanced scenarios, here’s the basic structure of the &lt;code&gt;rsync&lt;/code&gt; command:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync [options] source destination&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Here:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: The path to the file(s) or directory you wish to sync.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Destination&lt;/strong&gt;: The target location where the files should be copied.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Advanced Rsync Usage&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;advanced-rsync-usageh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#advanced-rsync-usageh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Let’s explore advanced use cases of the &lt;code&gt;rsync&lt;/code&gt; command, which will help you take full advantage of its capabilities.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;1. Synchronizing with Compression&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-synchronizing-with-compressionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-synchronizing-with-compressionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Transferring large files over a network can be time-consuming. Fortunately, &lt;code&gt;rsync&lt;/code&gt; allows you to compress data during transfer with the &lt;code&gt;-z&lt;/code&gt; flag. This is particularly helpful for remote backups or synchronizations over slow network connections.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -avz /source/directory/ user@remote:/destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;In this example:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;-a&lt;/strong&gt;: Archive mode to preserve file attributes (e.g., ownership, timestamps).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;-v&lt;/strong&gt;: Verbose mode, which provides detailed output of the files being transferred.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;-z&lt;/strong&gt;: Compresses file data during transfer to speed up synchronization.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;2. Partial Transfer Resumption&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-partial-transfer-resumptionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-partial-transfer-resumptionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Large file transfers may be interrupted due to network failures or other issues. In these cases, you don’t want to start the process over from scratch. The &lt;code&gt;&amp;ndash;partial&lt;/code&gt; option allows you to resume incomplete file transfers from where they left off.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync --partial --progress user@remote:/source/file /destination/file&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;--partial&lt;/strong&gt;: Keeps partially transferred files, allowing you to resume the transfer without starting over.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;--progress&lt;/strong&gt;: Shows real-time progress of the transfer.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;3. Excluding Files from Synchronization&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-excluding-files-from-synchronizationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-excluding-files-from-synchronizationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sometimes you may want to exclude certain files or directories from being synchronized. You can achieve this by using the &lt;code&gt;&amp;ndash;exclude&lt;/code&gt; option. This is useful in scenarios where you’re copying an entire directory but want to avoid unnecessary files like logs or temporary data.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -av --exclude &#39;*.log&#39; /source/directory/ /destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This example skips any files with the &lt;code&gt;.log&lt;/code&gt; extension during the synchronization process.&lt;/p&gt;
+&lt;p&gt;You can also use an &lt;strong&gt;exclude file&lt;/strong&gt; that contains a list of patterns to ignore. This is particularly helpful for complex exclusion rules.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -av --exclude-from=&#39;/path/to/exclude-file.txt&#39; /source/ /destination/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;exclude-file.txt&lt;/code&gt; may contain patterns such as:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;*.log
+*.tmp
+/cache/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;4. Preserving Hard Links&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-preserving-hard-linksh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-preserving-hard-linksh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;When dealing with backups or complex directory structures that use hard links, it’s crucial to preserve these links during synchronization. By default, &lt;code&gt;rsync&lt;/code&gt; does not preserve hard links, but using the &lt;code&gt;-H&lt;/code&gt; option solves this.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -aH /source/directory/ /destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;-H&lt;/code&gt; option ensures that hard links between files are maintained in the destination directory.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;5. Deleting Files in Destination&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-deleting-files-in-destinationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-deleting-files-in-destinationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;By default, &lt;code&gt;rsync&lt;/code&gt; will only add new or updated files to the destination. However, sometimes you want the destination to be an exact replica of the source. This is where the &lt;code&gt;&amp;ndash;delete&lt;/code&gt; option comes into play. It removes any files from the destination that no longer exist in the source.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -av --delete /source/directory/ /destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This is particularly useful for creating backups or mirroring directories, but use it with caution as it can permanently delete files from the destination.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;6. Synchronizing Files with Checksums&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-synchronizing-files-with-checksumsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-synchronizing-files-with-checksumsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Normally, &lt;code&gt;rsync&lt;/code&gt; checks whether files need to be synchronized based on modification times and file sizes. However, if you need a more thorough comparison, you can use the &lt;code&gt;-c&lt;/code&gt; option to compare files using checksums. This is more accurate but comes with a performance cost due to the additional computation required for the checksums.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -avc /source/directory/ /destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;-c&lt;/strong&gt;: Uses checksums to compare files instead of just timestamps.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;7. Limiting Bandwidth Usage&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-limiting-bandwidth-usageh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-limiting-bandwidth-usageh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you’re synchronizing over a network and want to avoid saturating the connection, you can limit the bandwidth used by &lt;code&gt;rsync&lt;/code&gt; with the &lt;code&gt;&amp;ndash;bwlimit&lt;/code&gt; option.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -av --bwlimit=5000 /source/directory/ user@remote:/destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;In this case, the bandwidth is limited to &lt;strong&gt;5000 KB/s&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;8. Dry Run Option for Testing&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-dry-run-option-for-testingh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-dry-run-option-for-testingh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;When performing large or critical file transfers, it’s always a good idea to preview the changes that will be made without actually transferring any data. The &lt;code&gt;&amp;ndash;dry-run&lt;/code&gt; option allows you to see exactly what will happen when you run the command for real.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -av --dry-run /source/directory/ /destination/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This shows the files that will be transferred, modified, or deleted without actually executing any changes.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Examples of Advanced Scenarios&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;examples-of-advanced-scenariosh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#examples-of-advanced-scenariosh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Now, let’s combine some of these options for more complex synchronization tasks.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Imagine you’re backing up a remote web server. You want to transfer all data but exclude log files, compress the transfer, and limit bandwidth usage.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -avz --exclude &#39;*.log&#39; --bwlimit=2000 user@remote:/var/www/ /backup/www/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This command synchronizes the web files from a remote server to your local backup directory, excluding log files and limiting bandwidth to 2 MB/s.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-filesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-filesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Suppose you want to create a backup that mirrors the exact state of the source directory, preserving hard links and deleting files in the destination that no longer exist in the source.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;rsync -aH --delete /source/directory/ /backup/directory/&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This will ensure that your backup directory is an exact copy of the source, with all hard links preserved and old files deleted.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The &lt;code&gt;rsync&lt;/code&gt; command is a versatile and essential tool for any advanced Linux user who deals with file synchronization or data transfers. From its ability to optimize file transfers with compression and bandwidth limitations to its more specialized options for preserving hard links or using checksums, &lt;code&gt;rsync&lt;/code&gt; is a command that can handle a wide range of tasks.&lt;/p&gt;
+&lt;p&gt;Whether you&amp;rsquo;re creating backups, migrating data, or synchronizing files between remote systems, understanding the advanced usage of &lt;code&gt;rsync&lt;/code&gt; will make your workflow more efficient and reliable. Try incorporating these examples into your own projects to leverage the full power of &lt;code&gt;rsync&lt;/code&gt; in your daily operations.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

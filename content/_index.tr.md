@@ -10,9 +10,9 @@ Giriş sayfası Son güncelleme:06.11.2024 22:02
 ## Explore
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
+  {{< card link="docs" title="Dokümanlar" icon="book-open" >}}
   {{< card link="blog" title="Blog" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="about" title="Hakkımızda" icon="user" >}}
 {{< /cards >}}
 
 ## Documentation

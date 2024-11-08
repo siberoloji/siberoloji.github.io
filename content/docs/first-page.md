@@ -1,10 +1,20 @@
 ---
-title: Demo Page
+title: Project List
 type: docs
 prev: /
-next: docs/folder/
-url: demo-page
+next: docs/kalibook/
+url: project-list
+weight: 1
 ---
 
-A simple demo page.
+## Ongoing Efforts
 
+- [ ] [Kali Book](/docs/kalibook)
+- [ ] Linux Book
+- [x] SEO Book
+- [ ] Kotlin Book
+- [ ] C++ Book
+
+## Partially Finished
+
+## Finished

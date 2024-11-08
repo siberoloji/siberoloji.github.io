@@ -1,0 +1,52 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Android Kod Örnekleri</title>
+    <link>http://localhost:1313/tags/android-kod-%C3%B6rnekleri/</link>
+    <description>Recent content in Android Kod Örnekleri on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Mar 2022 17:38:28 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/android-kod-%C3%B6rnekleri/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Android Ekran Klavyesi açıldığında yerleşimi tekrar ayarlama nasıl yapılır?</title>
+      <link>http://localhost:1313/tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapilir/</link>
+      <pubDate>Tue, 01 Mar 2022 17:38:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android:windowSoftInputMode=&#34;adjustResize&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;
+            android:screenOrientation=&#34;fullSensor&#34;
+            android:theme=&#34;@style/NoActionBarTheme&#34;
+            android:windowSoftInputMode=&#34;adjustResize&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+  &lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

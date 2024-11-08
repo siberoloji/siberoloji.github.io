@@ -1,3 +1,6 @@
+
+#baseURL: https://blog.siberoloji.com/
+#baseURL: https://www.siberoloji.com/
 baseURL: https://siberoloji.github.io/
 languageCode: en-us
 title: Siberoloji
@@ -14,14 +17,23 @@ languages:
     languageName: English
     weight: 1
     title: Siberoloji
+    pagination:
+      disableAliases: true
+      pagerSize: 20
+      path: page
     params:
       subtitle: Useful content and news
   tr:
     languageName: Turkish
     weight: 2
     title: Siberoloji
+    pagination:
+      disableAliases: true
+      pagerSize: 10
+      path: page
     params:
       subtitle: Faydalı içerik ve haberler
+      
 markup:
   # allow raw html
   goldmark:

@@ -1,0 +1,266 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Userdir</title>
+    <link>http://localhost:1313/tags/userdir/</link>
+    <description>Recent content in Userdir on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2024 20:15:55 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/userdir/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AlmaLinux 9: How to Create Userdir on Apache Web Server</title>
+      <link>http://localhost:1313/almalinux-9-how-to-create-userdir-on-apache-web-server/</link>
+      <pubDate>Fri, 04 Oct 2024 20:15:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/almalinux-9-how-to-create-userdir-on-apache-web-server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;AlmaLinux is a powerful, stable Linux distribution, often chosen for web hosting and server management due to its similarity with CentOS. One of the most useful features you can set up on an Apache web server is &lt;strong&gt;user directories&lt;/strong&gt; (UserDir). This allows individual users to host personal websites on a shared server environment without interfering with one another’s content.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;In this blog post, we’ll walk through the steps to enable and configure the UserDir module in Apache on AlmaLinux 9, allowing users to have their own web directories under &lt;code&gt;/home/username/public_html&lt;/code&gt;. We&amp;rsquo;ll cover everything from setting up the necessary modules, adjusting permissions, to configuring the server correctly to ensure proper security.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;table-of-contentsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#table-of-contentsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Introduction to UserDir in Apache&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Prerequisites&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 1: Install Apache on AlmaLinux 9&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 2: Enable the UserDir Module&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 3: Creating User Directories&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 4: Configuring Apache for UserDir&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 5: Testing the UserDir Configuration&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Step 6: Adjusting Permissions for Security&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;1. Introduction to UserDir in Apache&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-introduction-to-userdir-in-apacheh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-introduction-to-userdir-in-apacheh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The &lt;strong&gt;UserDir&lt;/strong&gt; feature in Apache allows each user on a system to have a personal web directory, typically located in their home folder. By default, this directory is named &lt;code&gt;public_html&lt;/code&gt;, and it is accessed through a browser via a URL like:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;http://yourdomain.com/~username&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This feature is beneficial when managing shared hosting environments, where multiple users or developers may need to host individual websites on a single server. Each user’s content is stored in a separate home directory, preventing conflicts and allowing for easier organization.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;2. Prerequisites&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-prerequisitesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-prerequisitesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before we start, ensure the following requirements are met:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;AlmaLinux 9&lt;/strong&gt; installed on your server.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Apache Web Server&lt;/strong&gt; installed and running.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Root or sudo user privileges&lt;/strong&gt; to configure the system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Basic knowledge of terminal commands and file management.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;3. Step 1: Install Apache on AlmaLinux 9&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-step-1-install-apache-on-almalinux-9h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-step-1-install-apache-on-almalinux-9h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before we can configure the UserDir feature, ensure that Apache is installed and running on your AlmaLinux 9 system.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Installing Apache&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installing-apacheh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#installing-apacheh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If Apache is not yet installed, you can install it using the &lt;code&gt;dnf&lt;/code&gt; package manager:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Starting Apache&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;starting-apacheh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#starting-apacheh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;After installation, enable Apache to start on boot and then start the service:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable httpd
+sudo systemctl start httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Verifying Apache Installation&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;verifying-apache-installationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#verifying-apache-installationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;You can check if Apache is running correctly by typing the following command:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl status httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;You should see an output indicating that the Apache service is active and running.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;4. Step 2: Enable the UserDir Module&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-step-2-enable-the-userdir-moduleh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-step-2-enable-the-userdir-moduleh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Apache has a built-in &lt;strong&gt;mod_userdir&lt;/strong&gt; module that allows individual users to have their own directories served by Apache. To enable this, we need to ensure that the module is activated and properly configured.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Enabling mod_userdir&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;enabling-mod_userdirh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#enabling-mod_userdirh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The UserDir module should be installed by default with Apache. To confirm that it’s enabled, use the following command:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install mod_userdir&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Next, we need to ensure that the module is loaded in the Apache configuration file. Open the configuration file for user directories, which is located at &lt;code&gt;/etc/httpd/conf.d/userdir.conf&lt;/code&gt;:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo nano /etc/httpd/conf.d/userdir.conf&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;In this file, you should see configuration directives that look something like this:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;IfModule mod_userdir.c&amp;gt;
+    UserDir public_html
+    UserDir disabled root
+&amp;lt;/IfModule&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;UserDir public_html&lt;/code&gt; line means that users’ websites will be served from the &lt;code&gt;public_html&lt;/code&gt; directory within their home directories.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;5. Step 3: Creating User Directories&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-step-3-creating-user-directoriesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-step-3-creating-user-directoriesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Now that the UserDir module is enabled, we need to create directories for each user who wants to host content.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Creating the User’s Public Directory&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;creating-the-users-public-directoryh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#creating-the-users-public-directoryh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;For each user, create a directory named &lt;code&gt;public_html&lt;/code&gt; inside their home directory. If you don’t already have a user account set up, you can create one like this:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo useradd username&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Replace &lt;code&gt;username&lt;/code&gt; with the actual name of the user.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Next, create the &lt;code&gt;public_html&lt;/code&gt; directory:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo mkdir /home/username/public_html&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This directory is where the user will place their web content. Ensure that the ownership and permissions are set correctly:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo chown username:username /home/username/public_html
+sudo chmod 755 /home/username/public_html&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;755&lt;/code&gt; permission ensures that the web server can read the files, while the user has full control over their directory.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;6. Step 4: Configuring Apache for UserDir&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-step-4-configuring-apache-for-userdirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-step-4-configuring-apache-for-userdirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;We’ve set up the user directories, but now we need to make sure Apache knows how to handle them.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Adjusting the UserDir Configuration&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;adjusting-the-userdir-configurationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#adjusting-the-userdir-configurationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The default configuration of Apache should work for most cases, but you may want to review and customize the settings in &lt;code&gt;/etc/httpd/conf.d/userdir.conf&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Ensure that the &lt;code&gt;UserDir&lt;/code&gt; directive is correctly pointing to &lt;code&gt;public_html&lt;/code&gt;, as shown earlier.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;You may also want to disable the feature for the &lt;code&gt;root&lt;/code&gt; user for security reasons, which should already be configured as follows:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;UserDir disabled root&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Restart Apache to Apply Changes&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;restart-apache-to-apply-changesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#restart-apache-to-apply-changesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once you&amp;rsquo;ve made changes to the configuration file, restart Apache to apply the changes:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl restart httpd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;7. Step 5: Testing the UserDir Configuration&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-step-5-testing-the-userdir-configurationh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-step-5-testing-the-userdir-configurationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;With the configuration complete, it’s time to test the setup. Each user’s web directory should now be accessible via a URL like:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;http://yourdomain.com/~username&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Create an Index File&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;create-an-index-fileh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#create-an-index-fileh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To test the configuration, create a simple HTML file in the &lt;code&gt;public_html&lt;/code&gt; directory of a user. For example:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;nano /home/username/public_html/index.html&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Add the following content:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Test UserDir&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;Welcome to UserDir for username&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Save the file, then navigate to &lt;code&gt;&lt;a href=&#34;http://yourdomain.com/~username&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://yourdomain.com/~username&lt;/a&gt;&lt;/code&gt; in your browser. If everything is configured correctly, you should see the test HTML page.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;8. Step 6: Adjusting Permissions for Security&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-step-6-adjusting-permissions-for-securityh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-step-6-adjusting-permissions-for-securityh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Set Directory Permissions&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;set-directory-permissionsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#set-directory-permissionsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;While the &lt;code&gt;public_html&lt;/code&gt; directory is set to &lt;code&gt;755&lt;/code&gt;, it’s crucial that other files within the user’s home directory have the appropriate permissions to maintain security. Ensure the following permissions:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;The user’s home directory should have the permissions set to &lt;code&gt;711&lt;/code&gt;, so others can access the &lt;code&gt;public_html&lt;/code&gt; directory, but not view the contents of the home directory itself:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo chmod 711 /home/username&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Any files inside the &lt;code&gt;public_html&lt;/code&gt; directory should be readable by Apache, so set permissions for files and subdirectories appropriately:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo chmod 644 /home/username/public_html/*&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This ensures that files can be read by the web server but not modified by unauthorized users.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Protecting Other User Directories&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;protecting-other-user-directoriesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#protecting-other-user-directoriesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It’s important to ensure that users cannot access each other’s files. The permissions we&amp;rsquo;ve set ensure that users have restricted access to home directories while allowing public access to &lt;code&gt;public_html&lt;/code&gt;. However, always review your system’s security configuration to prevent privilege escalation.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;h2&gt;9. Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;9-conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#9-conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Enabling the &lt;strong&gt;UserDir&lt;/strong&gt; feature in Apache on AlmaLinux 9 allows individual users to host their own websites in a shared hosting environment. With just a few steps, we installed Apache, enabled the UserDir module, created user directories, configured permissions, and tested the setup.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;This configuration is ideal for multi-user environments, web hosting companies, or development teams working on the same server. The setup offers flexibility while keeping the system secure, as users can manage their own content independently.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;By following this guide, you now have a fully functional UserDir setup on Apache, giving users the ability to host personal web pages on your server.&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,278 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Ntp Server</title>
+    <link>http://localhost:1313/tags/ntp-server/</link>
+    <description>Recent content in Ntp Server on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2024 17:30:25 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/ntp-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AlmaLinux 9: How to Install Chrony to Configure NTP Server for Time Synchronization</title>
+      <link>http://localhost:1313/almalinux-9-how-to-install-chrony-to-configure-ntp-server-for-time-synchronization/</link>
+      <pubDate>Fri, 04 Oct 2024 17:30:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/almalinux-9-how-to-install-chrony-to-configure-ntp-server-for-time-synchronization/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Time synchronization is essential for maintaining the accuracy of time across multiple systems, especially in network environments. Consistent time settings are crucial for system logs, security protocols, file timestamps, and even distributed systems. In AlmaLinux 9, &lt;strong&gt;Chrony&lt;/strong&gt; is the recommended tool for time synchronization. Chrony is a versatile and lightweight implementation of &lt;strong&gt;Network Time Protocol (NTP)&lt;/strong&gt;, offering fast and accurate synchronization, even for systems with occasional network disconnections.&lt;/p&gt;
+&lt;p&gt;This guide will walk you through the installation of &lt;strong&gt;Chrony&lt;/strong&gt;, configuring it as an NTP server, and how to verify that time synchronization is functioning correctly on AlmaLinux 9.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;table-of-contentsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#table-of-contentsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Introduction to Time Synchronization and NTP&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Why Choose Chrony over Other NTP Solutions?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Installing Chrony on AlmaLinux 9&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Configuring Chrony as an NTP Server&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Allowing Client Systems to Sync Time with Chrony&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Verifying Time Synchronization&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Troubleshooting Common Issues with Chrony&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Best Practices for Time Synchronization in AlmaLinux 9&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Conclusion&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;1. Introduction to Time Synchronization and NTP&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-introduction-to-time-synchronization-and-ntph3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-introduction-to-time-synchronization-and-ntph3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Network Time Protocol (NTP)&lt;/strong&gt; is a protocol designed to synchronize clocks across a network. For distributed computing environments, having accurate time across all systems is essential to ensure the smooth functioning of applications, security services, databases, and event logging.&lt;/p&gt;
+&lt;p&gt;Traditionally, the &lt;strong&gt;ntpd&lt;/strong&gt; daemon was used for this purpose. However, &lt;strong&gt;Chrony&lt;/strong&gt; has emerged as a faster, more accurate, and flexible replacement, particularly in environments where systems experience periodic network outages or are connected to a network with high latency.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;2. Why Choose Chrony Over Other NTP Solutions?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-why-choose-chrony-over-other-ntp-solutionsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-why-choose-chrony-over-other-ntp-solutionsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Chrony offers several advantages over traditional NTP solutions like &lt;strong&gt;ntpd&lt;/strong&gt;:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Faster Synchronization&lt;/strong&gt;: Chrony can quickly adjust the system clock to the correct time, even if the initial clock drift is large.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Better Performance on Unstable Networks&lt;/strong&gt;: Chrony is optimized for environments where the server is disconnected from the network for extended periods, such as laptops or edge devices.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Low Resource Usage&lt;/strong&gt;: It is lightweight and uses fewer resources compared to other NTP implementations.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Robustness&lt;/strong&gt;: It can handle large time offsets without requiring a system reboot and adjusts the time smoothly rather than jumping straight to the correct time.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Given these benefits, Chrony is a perfect fit for AlmaLinux 9, ensuring efficient and reliable time management across server fleets.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;3. Installing Chrony on AlmaLinux 9&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-installing-chrony-on-almalinux-9h3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-installing-chrony-on-almalinux-9h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Chrony is included in the default AlmaLinux 9 repositories, so installation is straightforward using the &lt;strong&gt;dnf&lt;/strong&gt; package manager.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Update Your System&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before installing Chrony, ensure your system is updated:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf update -y&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Install Chrony&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To install Chrony, use the following command:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install chrony -y&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Enable and Start the Chrony Service&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once installed, you need to enable Chrony to start automatically at boot and start the service:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable chronyd
+sudo systemctl start chronyd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 4: Verify the Status of Chrony&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To confirm that the Chrony service is running:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl status chronyd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;You should see a message indicating that the Chrony service is active and running.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;4. Configuring Chrony as an NTP Server&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-configuring-chrony-as-an-ntp-serverh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-configuring-chrony-as-an-ntp-serverh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Chrony is configured via the &lt;strong&gt;/etc/chrony.conf&lt;/strong&gt; file. This configuration file allows you to specify NTP servers, control access to the NTP service, and adjust synchronization parameters.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Open the Chrony Configuration File&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To modify the Chrony configuration, open the file in your favorite text editor:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo nano /etc/chrony.conf&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Specify NTP Servers&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;By default, the file will contain a list of public NTP servers. You can add or replace these with your preferred servers. For example, to use the &lt;strong&gt;pool.ntp.org&lt;/strong&gt; servers, ensure your configuration includes:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;pool 2.centos.pool.ntp.org iburst&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;iburst&lt;/code&gt; option ensures that Chrony makes several requests in quick succession when the server is unreachable, improving the speed of initial synchronization.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Configure Chrony as an NTP Server for Your Network&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you want to configure your AlmaLinux 9 server to serve time for other machines in your network, you will need to allow other systems to synchronize with it. Add the following lines to your &lt;strong&gt;/etc/chrony.conf&lt;/strong&gt; file to allow access from a specific subnet:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;allow 192.168.1.0/24&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This example grants access to all machines within the &lt;strong&gt;192.168.1.0/24&lt;/strong&gt; subnet.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 4: Restart the Chrony Service&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;After making changes to the &lt;strong&gt;/etc/chrony.conf&lt;/strong&gt; file, restart Chrony for the changes to take effect:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl restart chronyd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;5. Allowing Client Systems to Sync Time with Chrony&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-allowing-client-systems-to-sync-time-with-chronyh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-allowing-client-systems-to-sync-time-with-chronyh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you’ve configured your AlmaLinux server to act as an NTP server, client systems in your network can now synchronize time with it.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Install Chrony on Client Systems&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Just like on the server, install Chrony on the client system:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf install chrony -y&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Configure the Client to Use Your NTP Server&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;On each client, edit the &lt;strong&gt;/etc/chrony.conf&lt;/strong&gt; file to include your AlmaLinux 9 server as the NTP server:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;server &amp;lt;your-almalinux-server-ip&amp;gt; iburst&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Replace &lt;code&gt;&amp;lt;your-almalinux-server-ip&amp;gt;&lt;/code&gt; with the IP address of the server you configured in Step 4.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Start and Enable Chrony on the Client&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Start the Chrony service on the client machine:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable --now chronyd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;6. Verifying Time Synchronization&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-verifying-time-synchronizationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-verifying-time-synchronizationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once Chrony is configured, you can verify that the synchronization is working properly.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Check Chrony Sources&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;On both the server and client systems, use the following command to view the list of NTP sources Chrony is using:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;chronyc sources&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;You should see your NTP servers listed along with their status.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Check Synchronization Status&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To verify if the system clock is synchronized, use the following command:&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;chronyc tracking&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This command shows the current state of time synchronization, including the reference NTP server, current system time offset, and other important metrics.&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;7. Troubleshooting Common Issues with Chrony&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-troubleshooting-common-issues-with-chronyh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-troubleshooting-common-issues-with-chronyh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you run into issues with time synchronization, here are a few troubleshooting steps:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Check Firewall Settings&lt;/strong&gt;: Ensure that NTP traffic is allowed on your server by configuring your firewall to allow port &lt;strong&gt;123/UDP&lt;/strong&gt;. You can use &lt;strong&gt;firewall-cmd&lt;/strong&gt; to enable NTP on the firewall:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo firewall-cmd --permanent --add-service=ntp
+sudo firewall-cmd --reload&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Verify Network Connectivity&lt;/strong&gt;: Ensure that the client can reach the NTP server over the network. Use &lt;code&gt;ping&lt;/code&gt; or &lt;code&gt;telnet&lt;/code&gt; to verify connectivity.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Check Log Files&lt;/strong&gt;: If Chrony is not working as expected, check the logs for more details:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;journalctl -u chronyd&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;8. Best Practices for Time Synchronization in AlmaLinux 9&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-best-practices-for-time-synchronization-in-almalinux-9h3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-best-practices-for-time-synchronization-in-almalinux-9h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To ensure reliable time synchronization, follow these best practices:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Use Multiple NTP Servers&lt;/strong&gt;: Configure more than one NTP server for redundancy, ensuring accurate time even if one server becomes unreachable.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Time Drift&lt;/strong&gt;: Use tools like &lt;strong&gt;chronyc tracking&lt;/strong&gt; to regularly monitor time drift and ensure accurate synchronization.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Ensure Firewall Rules&lt;/strong&gt;: Confirm that NTP traffic is allowed through firewalls on both server and client systems to prevent connectivity issues.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;9. Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;9-conclusionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#9-conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Chrony is a powerful and efficient tool for time synchronization in AlmaLinux 9, offering numerous advantages over traditional NTP solutions like &lt;strong&gt;ntpd&lt;/strong&gt;. By following the steps in this guide, you can easily install and configure Chrony to act as both an NTP client and server. This ensures that your systems have accurate time synchronization, which is crucial for logging, security, and network operations.&lt;/p&gt;
+&lt;p&gt;By using Chrony, you not only improve the precision of your system’s timekeeping but also make your network more resilient to connection outages and time drifts. Ensure you follow best practices for time synchronization and regularly verify your setup to avoid any future issues.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

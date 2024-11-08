@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – String Birleştirme</title>
+    <link>http://localhost:1313/tags/string-birle%C5%9Ftirme/</link>
+    <description>Recent content in String Birleştirme on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jun 2024 23:56:31 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/string-birle%C5%9Ftirme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; 2 string değişkeni birleştirme</title>
+      <link>http://localhost:1313/tr/c-2-string-degiskeni-birlestirme/</link>
+      <pubDate>Thu, 27 Jun 2024 23:56:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-2-string-degiskeni-birlestirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu yazımızda, 2 adet string değişkeni birleştirme örneğini gösteriyoruz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    std::string firstString = &#34;prs&#34;;
+    std::string secondString = &#34;def&#34;;
+    std::string result;
+    result = firstString + secondString;
+    std::cout &amp;lt;&amp;lt; result &amp;lt;&amp;lt; std::endl;
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

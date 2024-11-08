@@ -1,0 +1,85 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Strcat</title>
+    <link>http://localhost:1313/tags/strcat/</link>
+    <description>Recent content in Strcat on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jun 2024 23:39:08 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/strcat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Combining 2 variables of type char in C&#43;&#43;</title>
+      <link>http://localhost:1313/combining-2-variables-of-type-char-in-c/</link>
+      <pubDate>Thu, 27 Jun 2024 23:39:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/combining-2-variables-of-type-char-in-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, you can see how to combine 2 char variables with a length of 50 characters using the strcat method.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr size_t bufferSize = 50;
+    char firstString[bufferSize] = &#34;abc&#34;;
+    char secondString[bufferSize] = &#34;def&#34;;
+
+    cout &amp;lt;&amp;lt; &#34;First string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+    cout &amp;lt;&amp;lt; &#34;Second string: &#34; &amp;lt;&amp;lt; secondString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    strcat(firstString, secondString);
+
+    cout &amp;lt;&amp;lt; &#34;Concatenated string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; char tipinde 2 değişkeni birleştirme</title>
+      <link>http://localhost:1313/tr/c-char-tipinde-2-degiskeni-birlestirme/</link>
+      <pubDate>Thu, 27 Jun 2024 23:37:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/c-char-tipinde-2-degiskeni-birlestirme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr size_t bufferSize = 50;
+    char firstString[bufferSize] = &#34;abc&#34;;
+    char secondString[bufferSize] = &#34;def&#34;;
+
+    cout &amp;lt;&amp;lt; &#34;First string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+    cout &amp;lt;&amp;lt; &#34;Second string: &#34; &amp;lt;&amp;lt; secondString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    strcat(firstString, secondString);
+
+    cout &amp;lt;&amp;lt; &#34;Concatenated string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

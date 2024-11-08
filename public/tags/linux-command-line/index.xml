@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Linux Command Line</title>
+    <link>http://localhost:1313/tags/linux-command-line/</link>
+    <description>Recent content in Linux Command Line on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Jun 2023 17:29:41 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/linux-command-line/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to reboot network card from Linux command line?</title>
+      <link>http://localhost:1313/how-to-reboot-network-card-from-linux-command-line/</link>
+      <pubDate>Wed, 14 Jun 2023 17:29:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-reboot-network-card-from-linux-command-line/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You may need to reboot your network card when there is a connection problem in your Linux operating system or when you change the IP settings. You do not need to restart your computer or server to do this. You can turn your network card off and on with the commands we have explained below.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING: This method is used if you have direct access to your computer. If you are remotely connected to your server via SSH, etc., you will lose access because your network card will be disabled. WARNING!!!&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;To stop the network card&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;to-stop-the-network-cardh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to-stop-the-network-cardh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# nmcli networking off&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;To initialize the network card&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;to-initialize-the-network-cardh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to-initialize-the-network-cardh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code class=&#34;&#34;&gt;# nmcli networking on&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;If you don&amp;rsquo;t have direct access to your server, you can try the &amp;ldquo;restart&amp;rdquo; method instead of the shutdown/on method.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;To Restart the network card&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;to-restart-the-network-cardh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to-restart-the-network-cardh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code class=&#34;&#34;&gt;systemctl restart NetworkManager&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;To check the status of the network card&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;to-check-the-status-of-the-network-cardh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to-check-the-status-of-the-network-cardh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code class=&#34;&#34;&gt;systemctl status NetworkManager&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The commands listed above work on almost all Linux systems. If you have a different network manager on your system, you can refer to the man pages.&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

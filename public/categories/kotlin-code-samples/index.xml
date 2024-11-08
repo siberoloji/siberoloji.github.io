@@ -1,0 +1,87 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Kotlin Code Samples</title>
+    <link>http://localhost:1313/categories/kotlin-code-samples/</link>
+    <description>Recent content in Kotlin Code Samples on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Feb 2022 20:55:17 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/kotlin-code-samples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Creating a Class() example in Kotlin</title>
+      <link>http://localhost:1313/creating-a-class-example-in-kotlin/</link>
+      <pubDate>Mon, 28 Feb 2022 20:55:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/creating-a-class-example-in-kotlin/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In Object-Oriented Programming Languages, the classes are important. You can find a simple Class creating example in this post.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
+    var personA = Person(&#34;Mike&#34;,&#34;Sunshine&#34;)
+    var personB = Person()
+    var personC = Person(lastName = &#34;Peterson&#34;)
+
+}
+
+class Person (firstName:String =&#34;John&#34; , lastName:String=&#34;Doe&#34;){
+
+    init {
+        println(&#34;A new person object created with First Name: $firstName and &#34; +
+                &#34;Last Name: $lastName&#34; )
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Output&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;A new person object created with First Name: Mike and Last Name: Sunshine
+A new person object created with First Name: John and Last Name: Doe
+A new person object created with First Name: John and Last Name: Peterson
+
+Process finished with exit code 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking data type with when() example</title>
+      <link>http://localhost:1313/checking-data-type-with-when-example/</link>
+      <pubDate>Mon, 28 Feb 2022 20:50:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/checking-data-type-with-when-example/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this short note, you can see an example of when() usage with data type. The type of data will determine the code to run.&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;when condition is the type of data&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt; val x : Any = 12.75
+    when(x){
+        is Int -&amp;gt; println(&#34;$x is an Integer&#34;)
+        is Double -&amp;gt; println(&#34;$x is a Double&#34;)
+        is String -&amp;gt; println(&#34;$x is a String&#34;)
+        else -&amp;gt; println(&#34;$x is not Int,Double or String&#34;)
+
+    }&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;You can see the output below.&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:157,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/02/when_datatype_check_kotlin.png-1024x593.webp&#34; alt=&#34;&#34; class=&#34;wp-image-157&#34; /&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

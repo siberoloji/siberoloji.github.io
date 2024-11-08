@@ -1,0 +1,514 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Systemd</title>
+    <link>http://localhost:1313/tags/systemd/</link>
+    <description>Recent content in Systemd on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Dec 2016 02:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Systemd ile Açılışta Başlayan Servisleri Kontrol Etme</title>
+      <link>http://localhost:1313/tr/systemd-ile-acilista-baslayan-servisleri-kontrol-etme/</link>
+      <pubDate>Thu, 22 Dec 2016 02:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-ile-acilista-baslayan-servisleri-kontrol-etme/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Bilgisayarınızı kullanırken ihtiyacınız olan bir çok programı indirir, yükler ve denersiniz. Bunların bir kısmı yüklü olarak dururken, bir kısmını da beğenmez ve kaldırırsınız. Yüklü olan programların bir kısmını da çok sık kullanmazsınız. Örneğin, bilgisayarınıza yüklediğiniz Virtualbox Sanallaştırma yazılımını her zaman kullanmıyor olabilirsiniz. Şunu bilmelisiniz ki, bu tür programlar bilgisayarın açılışında başlatılmak üzere bir takım servisleri çalıştırırlar. Sisteminizi açtığınızda kullanmayacağınız bu servisler, açılışta otomatik yüklendiklerinden başlangıç süresini arttırırlar. Sistemde arka planda çalıştıkları için kaynak israfına da yol açarlar. Bu yazıda sizlere, systemd , systemd-analyze  ve systemctl  kullanarak bilgisayarınızın açılışında başlamasını istemediğiniz servisleri nasıl iptal edebileceğinizi açıklayacağım.&lt;/p&gt;
+&lt;h2&gt;Sisteminizde systemd Var mı?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizde-systemd-var-mıh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sisteminizde-systemd-var-m%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu yazıda anlatılanlar, &lt;strong&gt;systemd&lt;/strong&gt; sistem yönetim altyapısını kullandığından, bilmiyorsanız öncelikle işletim sisteminizin systemd kullanıp kullanmadığını tespit etmelisiniz. Bunu, aşağıdaki komut ile yapabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd --version
+systemd 229
++PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Yukarıdaki örneğe benzer bir çıktı aldıysanız, sisteminizde systemd var demektir. Bu çıktıdan; sürüm numarasının 229 olduğu görebiliriz.&lt;/p&gt;
+&lt;h2&gt;Sisteminizin Boot Süresi Ne kadar?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizin-boot-süresi-ne-kadarh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sisteminizin-boot-s%c3%bcresi-ne-kadarh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bilgisayarınız açılmaya başladığında arka planda öncelikle kernel, ardından kullanıcı düzeyi servisler yüklenir. Bu sürenin kısaca özetini aşağıdaki komutu kullanarak görebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd-analyze
+
+Startup finished in 4.891s (kernel) + 38.844s (userspace) = 43.735s&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Yukarıdaki çıktıda görülüyor ki sistem topam &lt;strong&gt;43&lt;/strong&gt; saniyede açılmış. Bu sürenin ~4.8 saniyesini kernel yükleme işlemi kullanırken, ~38.8 saniyesi kullanıcı düzeyi uygulamalar için harcanmış. Peki bu uygulamaların hepsini, gerçekten kullanıyor musunuz veya ihtiyacınız var mı? Bunlardan bazıları açılışı geciktirirken aynı zamanda arka planda sistem kaynağı kullanıyor olabilirler.&lt;/p&gt;
+&lt;h2&gt;Açılış Raporunu Detaylı İnceleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılış-raporunu-detaylı-incelemeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9f-raporunu-detayl%c4%b1-incelemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir önceki başlıkta verdiğimiz komut çıktısı, özet raporu verirken, şimdi kullanacağımız komut ise detaylı olarak servis düzeyinde zaman miktarını bize verecektir.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd-analyze blame
+         16.351s mysql.service
+          9.098s apache2.service
+          8.162s NetworkManager-wait-online.service
+          5.641s activdevices.service
+          5.566s dev-sda1.device
+          4.645s NetworkManager.service
+          4.074s accounts-daemon.service
+          3.413s qemu-kvm.service
+          3.234s rsyslog.service
+          3.131s arpalert.service
+          3.065s speech-dispatcher.service
+          2.677s rc-local.service
+          2.524s gpu-manager.service
+          2.511s console-kit-log-system-start.service
+          2.440s ufw.service
+          2.430s vboxdrv.service
+          2.212s networking.service
+          2.107s thermald.service
+          1.802s grub-common.service
+          1.616s apparmor.service
+          1.571s systemd-udevd.service
+          1.291s systemd-tmpfiles-setup-dev.service
+          1.201s irqbalance.service
+          1.068s keyboard-setup.service
+          1.058s loadcpufreq.service
+          1.025s avahi-daemon.service
+           845ms ondemand.service
+&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Çıktıyı incelediğimizde, en fazla sürenin 16.351s mysql.service tarafından kullanıldığını görmekteyiz. Bu servis veya listede bulunan diğer servislerden hangilerine sürekli ihtiyaç duymuyorsak, açılışta yüklenmesini iptal edebiliriz. Dikkat etmelisiniz ki, sistemden tamamen kaldırmıyoruz. Sadece başlangıçta yüklenmesini devre dışı bırakıyoruz.&lt;/p&gt;
+&lt;h2&gt;Açılışta Yüklenen Bir Servisi Devre Dışı Bırakma&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılışta-yüklenen-bir-servisi-devre-dışı-bırakmah2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9fta-y%c3%bcklenen-bir-servisi-devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rakmah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Farz edelim ki mysql.service bu servisin açılışta başlamasına ihtiyacımız yok. İstediğimiz zaman kendimiz başlatabiliriz veya ileride tekrar başlangıçta yüklenecekler listesine ekleyebiliriz. Bunun için systemctl  tarafından sağlanan enabled  - disabled  anahtarlarını kullanabiliriz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl disable mysql.service
+
+Synchronizing state of mysql.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install disable mysql&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:quote --&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  Bazı servisler, doğrudan sistemin kararlılığı ile ilgilidir. Tam olarak ne işe yaradığını araştırmadan, bir servisi iptal etmemenizi tavsiye ediyorum. 
+ &lt;/blockquote&gt;
+&lt;!-- /wp:quote --&gt;
+&lt;h2&gt;Devre Dışı Bırakılan Servisi Başlatma&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;devre-dışı-bırakılan-servisi-başlatmah2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rak%c4%b1lan-servisi-ba%c5%9flatmah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sisteminizi kullandığınız esnada, açılış esnasında yüklenmesini iptal ettiğiniz sistemi başlatmak isteyebilirsiniz. Bu durum 2 farklı şekilde ortay çıkabilir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Bilgisayarınızda çalışırken servisi hemen başlatmak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgisayarınızda-çalışırken-servisi-hemen-başlatmakh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgisayar%c4%b1n%c4%b1zda-%c3%a7al%c4%b1%c5%9f%c4%b1rken-servisi-hemen-ba%c5%9flatmakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yukarıdaki örnekte gördüğümüz mysql.service  servisini hemen kullanmak için başlatmak isteyebilirsiniz. Bu durumda systemctl  tarafından sağlanan start  anahtarını kullanmanız yeterli.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl start&amp;nbsp;mysql.service&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Servisi tekrar açılış esnasında başlatmak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;servisi-tekrar-açılış-esnasında-başlatmakh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#servisi-tekrar-a%c3%a7%c4%b1l%c4%b1%c5%9f-esnas%c4%b1nda-ba%c5%9flatmakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Önceden iptal ettiğiniz servise çok sık ihtiyaç duymaya başladınız. Üzerinde çalıştığınız proje farklılaştı ve açılışta başlamasını istiyorsunuz. O zaman, aşağıdaki komut örneğindeki yöntemle servisi tekrar başlangıçta yüklenecek şekilde ayarlayabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl enable mysql.service
+
+Synchronizing state of mysql.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install enable mysql&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;h2&gt;Son Notlar&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-notlarh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#son-notlarh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;İptal ettiğiniz servisin adını unutabilirsiniz. İptal ederken kullandığınız sistemin adını tekrar bulmak için, sisteminizde bulunan servislerin listesini ve durumunu aşağıdaki komut yardımıyla görebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl list-unit-files --type=service
+
+UNIT FILE                                  STATE   
+accounts-daemon.service                    enabled 
+acpid.service                              disabled
+alsa-restore.service                       static  
+alsa-state.service                         static  
+alsa-utils.service                         masked  
+anacron-resume.service                     enabled 
+anacron.service                            enabled 
+apt-daily.service                          static  
+atd.service                                enabled 
+auditd.service                             enabled 
+autovt@.service                            enabled 
+avahi-daemon.service                       disabled
+binfmt-support.service                     enabled 
+bluetooth.service                          disabled
+bootlogd.service                           masked  
+bootlogs.service                           masked  
+bootmisc.service                           masked  
+brltty-udev.service                        static&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Systemd konusunda detaylı bilgi için &lt;a href=&#34;https://wiki.archlinux.org/index.php/Systemd&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;ArchLinux Wiki&lt;/a&gt; sayfalarını size tavsiye edebilirim. &lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Systemd İçerisinde Runlevel Durumları</title>
+      <link>http://localhost:1313/tr/systemd-icerisinde-runlevel-durumlari/</link>
+      <pubDate>Mon, 10 Oct 2016 01:45:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-icerisinde-runlevel-durumlari/</guid>
+      <description>
+        
+        
+         &lt;p&gt;Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız &#34;Nasıl yapılır?&#34; dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de &lt;a href=&#34;https://siberoloji.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;siberoloji.com&lt;/a&gt; olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.&lt;/p&gt;
+ &lt;p&gt;Bu yazımızda, önceden sysV init olarak bilinen yapıda bulunan çalışma seviyelerinin systemd ile birlikte nasıl değiştiğini açıklayacağız. Aşağıdaki tabloda, çalışma seviyelerinin init ve systemd içerisinde nasıl isimlendirildiğini görebilirsiniz.&lt;/p&gt;
+ &lt;p&gt;Runlevel Target&lt;br&gt;0 poweroff.target&lt;br&gt;1 rescue.target&lt;br&gt;2,3,4 multi-user.target&lt;br&gt;5 graphical.target&lt;br&gt;6 reboot.target&lt;/p&gt;
+ &lt;p&gt;Tablodan da göreceğiniz gibi, init içerisinde çalışma seviyesi (runlevel) olarak adlandırılan kademeler systemd ile birlikte hedef (target) olarak ifade edilmeye başlamıştır. Komutlarda İngilizce yazımı kullanmanız gereken hedefleri şimdi tek tek açıklayalım.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;poweroff.target&lt;/strong&gt;: Sistemi, tüm servisleri durdurarak kapanma durumuna getirir.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;rescue.target&lt;/strong&gt;: Sistemi, yönetimsel işlemler için tek kullanıcı moduna getirir. Dosya ve disklere erişim ile bazı temel servisler çalışmaya devam eder.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;multi-user.target&lt;/strong&gt;: Text modunu ifade eder. Grafik arayüz olmadan çok kullanıcının oturum açabileceği durumdur.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;graphical.target&lt;/strong&gt;: Sistemi, görüntü yöneticisinin de çalıştığı konuma getirmeyi ifade eder.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;reboot.target&lt;/strong&gt;: Sistemi, tüm servisleri durdurarak kapatmayı ve tekrar başlatmayı ifade eder.&lt;/p&gt;
+ &lt;p&gt;Yukarıda bahsedilen çalışma seviyeleri için ortak bir kriter bulunmaktadır. “Sistem aynı anda sadece bir durumda bulunabilir.” Sisteminiz multiuser.target durumunda iken aynı anda graphical.target durumunda bulunamaz.&lt;/p&gt;
+ &lt;p&gt;Sisteminizde şu an aktif olan .&lt;strong&gt;target&lt;/strong&gt;&amp;nbsp;durumlarını aşağıdaki komut ile listelediğinizde&amp;nbsp;&lt;strong&gt;active&lt;/strong&gt;&amp;nbsp;durumunda olan .target uzantılı üniteleri görebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemctl list-units --type target
+
+UNIT                   LOAD   ACTIVE SUB    DESCRIPTION
+basic.target           loaded active active Basic System
+cryptsetup.target      loaded active active Encrypted Volumes
+getty.target           loaded active active Login Prompts
+graphical.target       loaded active active Graphical Interface
+local-fs-pre.target    loaded active active Local File Systems (Pre)
+local-fs.target        loaded active active Local File Systems
+multi-user.target      loaded active active Multi-User System
+network-online.target  loaded active active Network is Online
+network.target         loaded active active Network
+nss-user-lookup.target loaded active active User and Group Name Lookups
+paths.target           loaded active active Paths
+remote-fs-pre.target   loaded active active Remote File Systems (Pre)
+remote-fs.target       loaded active active Remote File Systems
+slices.target          loaded active active Slices
+sockets.target         loaded active active Sockets
+sound.target           loaded active active Sound Card
+swap.target            loaded active active Swap
+sysinit.target         loaded active active System Initialization
+time-sync.target       loaded active active System Time Synchronized
+timers.target          loaded active active Timers
+&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+ &lt;p&gt;7.sırada görülebileceği gibi&amp;nbsp;&lt;strong&gt;graphical.target&lt;/strong&gt;&amp;nbsp;durumu aktif ve çalışıyor.&lt;/p&gt;
+ &lt;p&gt;Şimdi birlikte sistemi&amp;nbsp;isolate&amp;nbsp; fonksiyonunu kullanarak multiuser.target durumuna geçirelim. Bu durumda, tüm grafik uygulamalar kapanacak ve ekranınız komut satırına dönüşecek (Alt+Ctrl+F1,F2,....F6 kullanın). Oturum açma ekranı text modunda karşınıza gelecek. Kayıt etmediğiniz çalışmalarınızı kaydetmenizi öneriyoruz çünkü hepsi kapanacak. Ayrıca tekrar grafik arayüzüne geri dönmek için gerekli komutu da bir yere not etmek isteyebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl isolate multi-user.target&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+ &lt;p&gt;Multiuser durumuna geçince, Alt+Ctrl+F1 ile komut satırına girebilirsiniz. Text modunda oturum açarak ulaşacağınız komut satırında, aşağıdaki komutu yazarak tekrar grafik arayüzüne dönebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl isolate graphical.target&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+ &lt;p&gt;Geçmişe dönük olarak işlerliği sürdürmek açısından systemd .&lt;strong&gt;target&lt;/strong&gt;&amp;nbsp;durumlarına runlevel1,2,3 vb. şekilde isimlendirme de yapılmıştır. Aşağıdaki iki örnek örnek komut aslında aynı işlem yapılmaktadır.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl isolate graphical.target
+sudo systemctl isolate runlevel5.target&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+ &lt;p&gt;Bir sonraki yazımızda sistemi varsayılan olarak grafik arayüzde (graphical.target) değil de doğrudan text modunda (multi-user.target) açmayı açıklayacağız.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What is systemd? What is its general structure?</title>
+      <link>http://localhost:1313/what-is-systemd-what-is-its-general-structure/</link>
+      <pubDate>Sun, 03 Apr 2016 14:49:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/what-is-systemd-what-is-its-general-structure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you are using Linux Operating System, you must have come across the term “systemd”. At least you must have come across systemd news. In our search on this subject, we had difficulty finding a detailed Turkish source. For this reason, we did a study about systemd.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Brief Systemd Story&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;brief-systemd-storyh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#brief-systemd-storyh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In 2010, Lennart Poettering explained the subject in a  &lt;a href=&#34;http://0pointer.de/blog/projects/systemd.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;blog&lt;/a&gt;  post. The first version of the software, developed in the C programming language by Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, and David Herrmann, was published on March 30, 2010. You can reach the official &lt;a href=&#34;http://www.freedesktop.org/wiki/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;website&lt;/a&gt; of the program  from here.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The program called systemd was developed for Linux operating systems. Its purpose is to organize the operation of systems and services on the computer. It performs this management through tools called systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl and nspawn. We leave the details of these tools to another article.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;The basic approach used by systemd&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;the-basic-approach-used-by-systemdh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-basic-approach-used-by-systemdh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In Linux systems that do not use systemd , the boot manager, as PID 1, first runs the program that will manage the boot process (init). Other services are then started. For example, the Avahi service needs the D-Bus service. In that case, D-Bus will be started first at boot, and Avahi will wait in line. livirtd and X11 services need the HAL service. In that case, the HAL service will start first. Since all these services need the syslog service, syslog will start first. Classic Linux boot works with this logic.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;These programs communicate with each other through sockets. Without D-Bus starting, the socket will not open and Avahi cannot connect to the D-Bus socket. Systemd aims to change this approach. Systemd aims to pre-start the connection points -sockets- needed by all services and services, even if the relevant service does not start, and to eliminate the waiting of other waiting programs in the queue. If X11 is waiting for the HAL socket to open to start, the X11 service is given a socket to connect to. Notice that the HAL service has not actually started. The computer&amp;rsquo;s currently idle processing power is used to the maximum extent possible. Efforts are made to minimize the time loss caused by services waiting for each other. In this case, messages sent by the X11 service are kept in a temporary queue and are fulfilled as the services start.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;These processes are not only related to the startup process. We should also mention that the systemd service has many functions related to  the software and hardware that are running during the operation of your operating system. We tried to briefly explain the logic on which the systemd approach is based. We think that it is unnecessary to go into too much detail and turn the text into a technical document for now.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Objections, reservations&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;objections-reservationsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#objections-reservationsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd performs these operations described above with precompiled binary programs. It does not allow much user intervention. Although you are allowed to control some parameters, the operations are generally preset. Service programs used before systemd (Upstart or sysvinit) perform the procedures they apply via shell. For this reason, users have the opportunity to make personal adjustments using shell. systemd does not perform operations via shell. For this reason, there is a lot of discussion on its advantages and disadvantages. Those who do not accept it because it is against the logic of open source and free  software , state that systemd is a candidate to become Windows svchost.exe. There are also those who find it usable and include it in their distributions by preference or default. In the last part of the article, a few distributions that have started using systemd are listed.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Paul Venezia, in his article published in InfoWorld in August 2014, stated that the systemd approach violates the Unix philosophy because it is a structure that tries to do all the operations itself, which means &amp;ldquo;claiming that it is a program that never makes errors.&amp;quot;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;We recommend that you read the ZDNet&lt;/a&gt; article that summarizes the thoughts of prominent figures on this subject   . In the article in question, Linus Torvalds seems to be not very clear on the subject and says that these are details.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;heartsmagic, Forum Manager and General Manager at the Ubuntu Turkey  &lt;a href=&#34;https://forum.ubuntu-tr.net/index.php?topic=45368.5&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;forum&lt;/a&gt; ; “For my part, I can&amp;rsquo;t understand how one project (systemd) tries to do so much work. We are already moving further and further away from the Unix philosophy due to end user decisions of major distributions. Whatever the decisions at the top are, now this has become one of the backbones of the system. In Unix philosophy - if I&amp;rsquo;m not mistaken - you write a tool and it does whatever its job is. Systemd, thank God, tries to take over everything and works on the binary system, which developers hate - even though I&amp;rsquo;m not into coding. He expresses his thoughts as follows: &amp;ldquo;Whether we like it or not, Ubuntu and other major distributions will switch to systemd, with all its merits and demerits.&amp;rdquo; He states that large distributions will switch to this and end users will have to keep up.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Below you can see a few of the Linux distributions  that have started using systemd  by &lt;strong&gt;default&lt;/strong&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Distribution and start dates&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;distribution-and-start-datesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#distribution-and-start-datesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Fedora, May 2011&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;openSUSE, September 2012&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;ArchLinux, October 2012&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Red Hat Enterprise Release, June 2014&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Debian, April 2015&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Ubuntu, Nisan 2015&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;For those who do not accept the use of systemd in Debian, the Devuan distribution has been released without systemd installed. Linux, which has created many different distributions in its historical development, has come to a crossroads on a new issue.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;As a brief introduction, in this article where we tried to give some basic information about systemd, we tried to reflect different opinions, both positive and negative. We will follow the developments closely.&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>systemd Tools – General Usage Areas</title>
+      <link>http://localhost:1313/systemd-tools-general-usage-areas/</link>
+      <pubDate>Sun, 03 Apr 2016 14:45:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/systemd-tools-general-usage-areas/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Nowadays, Debian, Fedora, Red Hat, Ubuntu and ArchLinux etc. Linux operating systems, which are considered the main distribution , have started to use systemd. Developments show that its use will become widespread. Linux users will need to improve themselves in this area.&lt;/p&gt;
+&lt;p&gt;When we search for resources on the internet on this subject, we usually come across English manpages ( &lt;a href=&#34;http://www.freedesktop.org/software/systemd/man/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;wiki&lt;/a&gt; ) or short blog posts prepared by the developers. It is quite difficult to find a detailed source in Turkish. There is no problem for those who use the operating system visually and do not want to interfere with the rest. However, those who are curious about what is going on in the background or want to have knowledge in problem solving will inevitably need to learn systemd tools. Based on this idea, we plan to continue the articles in a sequential order.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;In the introduction&lt;/a&gt; article about systemd   , we tried to give brief explanatory information. In this article, what tools does systemd offer to users? We will explain what these tools are.&lt;/p&gt;
+&lt;p&gt;systemd is a program defined as a system and service manager. It is similar to the services program that runs when Windows Operating System users type the services.msc command in the Run box. It can be controlled from the command line and also has a visual user interface (systemd-ui).&lt;/p&gt;
+&lt;h2&gt;What can be done about the services available on the computer?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-can-be-done-about-the-services-available-on-the-computerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-can-be-done-about-the-services-available-on-the-computerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Examples of operations that can be done are Start, Stop, Restart, Disable, Enable. It is possible to do these with systemd. It was already done with sysvinit, but now it can be done faster. At least systemd should be that the main distributions preferred to switch.&lt;/p&gt;
+&lt;p&gt;It is important to go step by step and understand the basics about systemd. All of the computer services we have mentioned as services so far are called units in the systemd literature. In our articles, the term &amp;ldquo;unit&amp;rdquo; will be used for conceptual integrity. The service expression is used slightly separately from the unit expression in systemd.&lt;/p&gt;
+&lt;h2&gt;Systemd Tools&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-toolsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-toolsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If systemd is running on your system, you can ask any question you want and get an answer. Then, as users, we need to learn how to “ask questions” and know which tool to use to do this. In systemd, there are 8 tools in the outermost layer that interact with the user. These are called systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl and nspawn. You can interact with systemd using the options, parameters and unit names of these tools. You query the status and wait for an answer, and depending on the answer you receive, you can start, stop or disable a service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIP:&lt;/strong&gt;  If you want, you can even use the snapshot service to photograph the status of your system&amp;rsquo;s running services and restore your system to this state in case of a malfunction. (Unless you turn off your computer. When you do, the snapshot is deleted.)&lt;/p&gt;
+&lt;h2&gt;Systemd Tools&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-toolsh2-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-toolsh2-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It refers to the tool that controls the systemd system and its services.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;journalctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;journalctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#journalctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It refers to the tool that checks systemd log files to check and report events.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-notify&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-notifyh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-notifyh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It is a tool used to notify other services and users when there is a change in the status of the units. It is usually related to errors that occur during startup.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-analyze&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-analyzeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-analyzeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It analyzes the statistics and analysis of the time spent during the startup of your system. Kernel startup time and user processes startup time are measured and displayed separately. This is the tool used to analyze times.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-cgls&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-cglsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-cglsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It is a tool that is used to check the status of control groups in the systemd operating logic and which services are running in which control group and sub-steps.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-cgtop&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-cgtoph3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-cgtoph3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In the systemd-cgls tool, all main groups and their members are displayed hierarchically, while in the systemd-cgtop tool, the main group and system usage at the top are displayed. It is similar to the “service –status-all” command in sysvinit.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-loginctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-loginctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-loginctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It is the tool that controls the login processes of the Operating System. It can be defined as the login manager.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-nspawn&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-nspawnh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-nspawnh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It is a tool used for debugging and simulation. It is similar to the chroot tool but more. It allows a program, even another operating system, to be run in isolation, without harming the real resources of the system. It is very useful for software developers.&lt;br&gt;In this article, we talked about the most important systemd tools as clearly as possible. In the following articles, we will try to give detailed explanations and examples.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>systemd – Getting started with systemctl</title>
+      <link>http://localhost:1313/systemd-getting-started-with-systemctl/</link>
+      <pubDate>Sun, 03 Apr 2016 14:40:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/systemd-getting-started-with-systemctl/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Let&#39;s start examining the systemctl tool, one of the tools mentioned in the previous introduction  and  general usage articles on systemd .&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As you know, the systemctl tool is used to control systemd itself and its service manager. It is the abbreviation of System Control. First, let&#39;s check the initial state of our system with the systemctl command. To do this, just type systemctl on the command line.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl
+çıktı:
+UNIT                 LOAD   ACTIVE SUB         DESCRIPTION
+...
+rc-local.service     loaded failed failed      /etc/rc.local Compatibility
+resolvconf.service   loaded active exited      Nameserver information manager rsyslog.service      loaded active running     System Logging Service
+...
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+152 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use &#39;systemctl list-unit-files&#39;.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As a result, a report regarding all installed and unloaded services when your system starts is displayed on the screen. On this screen, the LOAD – ACTIVE – SUB columns provide information about the status of the loaded unit. According to the information in these columns, you can detect the errors of your system and fix the errors with the help of other systemd tools.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The output of the command given above is normally much more detailed and longer, but we have included it here in short. At the end of the report,  we can see that a total of 152 units are listed with the statement &lt;em&gt;152 loaded units listed&lt;/em&gt;.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;To get detailed information about the problem shown with a red warning in the output of the command,  we will use &lt;strong&gt;the status&lt;/strong&gt; unit command of &lt;strong&gt;the systemctl&lt;/strong&gt;  tool  and the name of the unit we want to get information about.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl status rc-local.service
+çıktı:
+● rc-local.service - /etc/rc.local Compatibility
+Loaded: loaded (/lib/systemd/system/rc-local.service; static; vendor preset: enabled)
+Active: failed (Result: exit-code) since Paz 2015-05-10 10:04:17 EEST; 42min ago
+Process: 696 ExecStart=/etc/rc.local start (code=exited, status=1/FAILURE)
+May 10 10:04:17 ubuntu systemd[1]: Starting /etc/rc.local Compatibility...
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service: control process exited, code=exited status=1
+May 10 10:04:17 ubuntu systemd[1]: Failed to start /etc/rc.local Compatibility.
+May 10 10:04:17 ubuntu systemd[1]: Unit rc-local.service entered failed state.
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service failed.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;These status reports, the details of which we will explain later, will be very useful in finding out where there are problems with our system. The use of the Systemctl tool is done with status commands and parameters, as shown above and similar.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We have briefly looked at the systemctl tool from the systemd tools. In the following articles, we will examine using unit commands, unit file commands and system commands with the systemctl tool.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>systemd nedir? Genel Yapısı Nasıldır?</title>
+      <link>http://localhost:1313/tr/systemd-nedir-genel-yapisi-nasildir/</link>
+      <pubDate>Sun, 03 Apr 2016 14:24:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-nedir-genel-yapisi-nasildir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux İşletim Sistemi kullanıyorsanız, &amp;ldquo;systemd&amp;rdquo; ifadesiyle mutlaka karşılaşmışsınızdır. En azından systemd haberlerine rastlamışsınızdır. Bu konuda yaptığımız aramada, detaylı bir Türkçe kaynak bulmakta zorlandık. Bu sebeple, systemd hakkında bir çalışma yaptık.&lt;/p&gt;
+&lt;h2&gt;Kısaca systemd Hikayesi&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kısaca-systemd-hikayesih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#k%c4%b1saca-systemd-hikayesih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;2010 yılında, Lennart Poettering, bir &lt;a href=&#34;http://0pointer.de/blog/projects/systemd.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;blog&lt;/a&gt; yazısıyla konuyu açıklar.  Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, ve David Herrmann tarafından, C programlama diliyle geliştirilen yazılımın ilk sürümü 30 Mart  2010 tarihinde yayınlanmıştır. Programın resmi &lt;a href=&#34;http://www.freedesktop.org/wiki/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;web sitesine&lt;/a&gt; buradan ulaşabilirsiniz.&lt;/p&gt;
+&lt;p&gt;systemd olarak adlandırılan program, Linux işletim sistemleri için geliştirilmiştir. Amacı; bilgisayardaki sistem ve servislerin çalışmasını organize etmektir. Bu yönetimi, systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl ve nspawn olarak adlandırılan araçlar sayesinde gerçekleştirir. Bu araçların detaylarını başka bir yazıya bırakıyoruz.&lt;/p&gt;
+&lt;h2&gt;systemd kullandığı temel yaklaşım&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-kullandığı-temel-yaklaşımh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-kulland%c4%b1%c4%9f%c4%b1-temel-yakla%c5%9f%c4%b1mh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd kullanmayan Linux sistemlerinde, açılış yöneticisi, PID 1 numara olarak, öncelikle açılış işlemlerini yönetecek programı (init) çalıştırır. Devamında diğer servisler başlatılır. Örneğin, Avahi hizmeti, D-Bus hizmetine ihtiyaç duyar. O zaman, açılışta önce D-Bus başlatılacak, Avahi sırada bekleyecektir. livirtd ve X11 servisleri, HAL hizmetine ihtiyaç duyarlar. O zaman önce HAL servisi başlayacaktır. Tüm bu servisler, syslog servisine ihtiyaç duyduklarından, hepsinden önce syslog başlayacaktır. Klasik Linux açılışı bu mantıkla çalışır.&lt;/p&gt;
+&lt;p&gt;Bu programlar, birbirleriyle soketler üzerinden haberleşirler. D-Bus başlamadan, soketi açılmaz ve Avahi, D-Bus soketine bağlanamaz. Systemd, bu yaklaşımı değiştirmeyi amaçlamıştır. Systemd, tüm hizmet ve servislerin ihtiyaç duyduğu bağlanma noktalarını -soketleri-, ilgili hizmet başlamasa dahi önceden başlatma ve diğer bekleyen programların sırada beklemesini ortadan kaldırmayı amaçlar.  X11,  başlamak için HAL  soketinin açılmasını bekliyorsa, X11 servisine bağlanacağı bir soket verilir. Dikkat edilirse, HAL servisi gerçekte başlamamıştır.  Bilgisayarın, o anda boşta bekleyen işlemci gücü, mümkün olan kapasiteyle azami oranda kullanılır. Servislerin, birbirlerini beklemesinden meydana gelen zaman kaybı en aza indirilmeye çalışılır. Bu durumda, X11 servisinin gönderdiği mesajlar, geçici bir kuyrukta bekletilir ve hizmetler başladıkça yerine getirilir.&lt;/p&gt;
+&lt;p&gt;Bu işlemler, sadece başlangıç süreci ile ilgili değildir. İşletim sisteminizin çalışması esnasında, systemd servisinin, çalışan yazılım ve donanımlarla ilgili bir çok işlevi olduğunu da belirtmeliyiz. systemd yaklaşımının, kısaca hangi mantık üzerine kurulduğunu anlatmaya çalıştık. Çok detaya girip, yazıyı teknik dokümana çevirmenin, şu an için gereksiz olduğunu düşünüyoruz.&lt;/p&gt;
+&lt;h2&gt;İtirazlar, çekinceler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;itirazlar-çekincelerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#itirazlar-%c3%a7ekincelerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd, anlatılan bu işlemleri, önceden derlenmiş binary programlarla yapar. Kullanıcının müdahalesine pek müsaade etmez. Bir takım parametreleri kontrol etmenize izin verilse de genelde işlemler önceden ayarlanmıştır. systemd öncesinde kullanılan hizmet programları (Upstart veya sysvinit), uyguladıkları prosedürleri kabuk -shell- aracılığıyla yaparlar. Bu sebeple, kullanıcıların, kabuk -shell- kullanarak kişisel ayarlamalar yapabilme imkanı vardır. systemd ise kabuk üzerinden işlem yapmaz. Bu nedenle, fayda ve mahzurları üzerinde çok tartışılmaktadır. Açık kaynak kodlu, özgür yazılım mantığına ters olduğu için kabul etmeyenler, systemd programının, windows svchost.exe olmaya aday olduğu belirtmektedir. Kullanılabilir bularak, tercihli veya varsayılan olarak dağıtımlara dahil edenler de bulunmaktadır. Yazının son kısmında, systemd kullanmaya başlayan bir kaç dağıtım listelenmiştir.&lt;/p&gt;
+&lt;p&gt;Paul Venezia, 2014 Ağustos ayında InfoWorld’te yayınlanan makalesinde, systemd yaklaşımının, tüm işlemleri kendisi yapmaya çalışan bir yapı olduğunu, bunun “hiç hata yapmayan bir program olduğunu iddia etmesi” demek olduğundan, Unix felsefesini ihlal ettiğini belirtmiştir.&lt;/p&gt;
+&lt;p&gt;Bu konuda, önde gelen isimlerin düşüncelerinin özetlendiği &lt;a href=&#34;http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;ZDNet&lt;/a&gt; makalesini incelemenizi öneriyoruz. Söz konusu makalede, Linus Torvalds&amp;rsquo;ın konu hakkında çok fazla net bir ifade kullanmadığı ve bunların detay olduğunu söylediği görülüyor.&lt;/p&gt;
+&lt;p&gt;Ubuntu Türkiye &lt;a href=&#34;https://forum.ubuntu-tr.net/index.php?topic=45368.5&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;forumunda&lt;/a&gt; Forum Sorumlusu ve Genel Yönetici olan heartsmagic; “Kendi adıma, ben de bir projenin (systemd) bu kadar fazla işi yapmaya çalışmasını anlayamıyorum. Büyük dağıtımların son kullanıcı kararları nedeniyle, Unix felsefesinden zaten gittikçe uzaklaşıyoruz. Hadi üst taraftaki kararlar neyse de, şimdi ise sistemin bel kemiklerinden biri bu hâle getiriliyor. Unix felsefesinde -eğer yanlış bilmiyorsam- bir araç yazarsın, görevi neyse onu yapar. Systemd, maşallah her işe el atmaya çalışıyor ve ikilik sistem üzerinde çalışıyor ki -kodlama tarafım olmasa da- geliştiriciler bundan nefret ediyor. “ şeklinde düşüncelerini ifade ediyor ve “Beğensek de, beğenmesek de, sevabıyla, günahıyla, Ubuntu ve diğer büyük dağıtımlar systemd&amp;rsquo;ye geçecek .” ifadesiyle büyük dağıtımların buna geçeceğini, son kullanıcıların da ayak uydurmak durumunda kalacaklarını belirtiyor.&lt;/p&gt;
+&lt;p&gt;Aşağıda, systemd programını &lt;strong&gt;varsayılan&lt;/strong&gt; olarak kullanmaya başlayan Linux dağıtımlarından bir kaçını görebilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Dağıtım ve başlangıç tarihleri&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dağıtım-ve-başlangıç-tarihlerih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#da%c4%9f%c4%b1t%c4%b1m-ve-ba%c5%9flang%c4%b1%c3%a7-tarihlerih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Fedora, Mayıs 2011&lt;/p&gt;
+&lt;p&gt;openSUSE, Eylül 2012&lt;/p&gt;
+&lt;p&gt;ArchLinux, Ekim 2012&lt;/p&gt;
+&lt;p&gt;Red Hat Şirket Sürümü, Haziran 2014&lt;/p&gt;
+&lt;p&gt;Debian, Nisan 2015&lt;/p&gt;
+&lt;p&gt;Ubuntu, Nisan 2015&lt;/p&gt;
+&lt;p&gt;Debian içerisinde systemd kullanımını kabul etmeyenler, systemd yüklenmemiş halde, &lt;a href=&#34;https://devuan.org/&#34;&gt;Devuan&lt;/a&gt; dağıtımı yayınlanmıştır. Tarihsel gelişimi içerisinde, bir çok konuda farklı dağıtımlar oluşturan Linux, yeni bir konuda da yol ayrımına gelmiş bulunuyor.&lt;/p&gt;
+&lt;p&gt;Kısa bir giriş olarak, systemd hakkında temel bir takım bilgiler vermeye çalıştığımız bu yazıda, olumlu ve olumsuz farklı görüşleri yansıtmaya çalıştık. Gelişmeleri yakından takip edeceğiz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>systemd Araçları &amp;#8211; Genel Kullanım Alanları</title>
+      <link>http://localhost:1313/tr/systemd-araclari-genel-kullanim-alanlari/</link>
+      <pubDate>Sun, 03 Apr 2016 14:22:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-araclari-genel-kullanim-alanlari/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Günümüzde, Debian, Fedora, Red Hat, Ubuntu ve ArchLinux vb. ana dağıtım olarak kabul edilen linux işletim sistemleri, systemd kullanmaya başlamıştır.  Gelişmeler, kullanımın yaygınlaşacağını göstermektedir. Linux kullanıcılarının, bu alanda kendini geliştirmeleri gerekecektir.&lt;/p&gt;
+&lt;p&gt;Bu konuda internette kaynak arandığında, genelde geliştiricilerin hazırladığı İngilizce manpages (&lt;a href=&#34;http://www.freedesktop.org/software/systemd/man/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;wiki&lt;/a&gt;) veya kısa blog yazıları ile karşılaşıyoruz. Türkçe, detaylı bir kaynak bulmak oldukça zor. İşletim sistemini, görsel olarak kullananlar ve gerisine karışmam diyenler için sorun yok. Ancak, arka planda olanları merak edenler veya sorun çözme işlemlerinde bilgi sahibi olmak isteyenlerin, systemd araçlarını öğrenmesi kaçınılmaz olacak. Bu düşünceden hareketle, yazıları bir sıra dahilinde devam ettirmeyi düşünüyoruz.&lt;/p&gt;
+&lt;p&gt;systemd hakkında &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; yazısında, kısaca açıklayıcı bilgi vermeye çalışmıştık. Bu yazıda ise systemd, kullanıcılara hangi  araçları sunuyor? Bu araçların neler olduğunu açıklayacağız.&lt;/p&gt;
+&lt;p&gt;systemd, sistem ve servis yöneticisi olarak tanımlanan bir program. Windows İşletim Sistemi kullanıcılarının, Çalıştır kutusuna services.msc komutunu yazdığında çalışan servisler programının bir benzeri. Komut satırından kontrol edilebildiği gibi görsel bir kullanıcı arayüzü de bulunuyor (systemd-ui).&lt;/p&gt;
+&lt;h2&gt;Bilgisayarda mevcut servislerle ilgili neler yapılabilir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgisayarda-mevcut-servislerle-ilgili-neler-yapılabilirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgisayarda-mevcut-servislerle-ilgili-neler-yap%c4%b1labilirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yapılabilecek işlemlere Başlatmak (start), Durdurmak (stop), Tekrar Başlatmak (restart), İptal Etmek (disable), Kullanıma Sokmak (enable) örnek olarak verilebilir.  İşte systemd ile bunları yapmak mümkün. Zaten sysvinit ile yapılıyordu ancak şimdi daha hızlı yapılabiliyor. En azından systemd öyle olmalı ki ana dağıtımlar geçmeyi tercih ettiler.&lt;/p&gt;
+&lt;p&gt;systemd konusunda adım adım gitmek ve temel bilgileri anlamak önemli. Şu ana kadar servisler olarak bahsettiğimiz bilgisayar hizmetlerinin tamamına, systemd literatüründe ünite (unit) adı verilmektedir. Yazılarımızda kavram bütünlüğü olması açısından “ünite” ifadesi kullanılacaktır. Servis (service) ifadesi, systemd içerisinde ünite ifadesinden biraz ayrı kullanılıyor.&lt;/p&gt;
+&lt;h2&gt;Systemd Araçları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-araçlarıh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-ara%c3%a7lar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sisteminizde, systemd çalışıyorsa, istediğiniz soruyu sorup cevabını alabilirsiniz. O zaman, kullanıcılar olarak bizim “soru sormayı” öğrenmemiz ve hangi aracı kullanarak bunu yapacağımızı bilmemiz gerekiyor. systemd içerisinde, en dış katmanda, kullanıcı ile etkileşimli, 8 adet araç bulunmaktadır. Bunlar, systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl ve nspawn olarak isimlendirilirler. Bu araçların  seçeneklerini, parametrelerini ve ünite isimlerini kullanarak systemd ile etkileşim kurabilirsiniz. Durum sorgulayıp cevap beklersiniz, aldığınız cevaba göre bir hizmeti başlatıp, durdurabilir veya devre dışı bırakabilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;İPUCU:&lt;/strong&gt; Hatta isterseniz, snapshot hizmetini kullanarak, sisteminizin çalışan servislerinin durumunu fotoğraflayıp, bir arıza olduğunda bu duruma sisteminizi geri yükleme imkanınız da var. (Bilgisayarınızı kapatmadığınız sürece. Kapatınca, snapshot silinir.)&lt;/p&gt;
+&lt;h2&gt;Systemd Araçları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-araçlarıh2-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-ara%c3%a7lar%c4%b1h2-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd sistemini ve servislerini kontrol eden aracı ifade eder.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;journalctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;journalctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#journalctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;olayları kontrol edip raporlayabilmek için systemd log dosyalarını kontrol eden aracı ifade eder.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-notify&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-notifyh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-notifyh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Ünitelerin durumlarında bir değişiklik olduğunda, diğer hizmetleri ve kullanıcıları bilgilendirmek için kullanılan bir araçtır. Genelde, açılış esnasında meydana gelen hatalarla ilgilidir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-analyze&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-analyzeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-analyzeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sisteminizin açılış esnasında geçen zamanın istatistik ve incelemesini analiz eder. Çekirdek (kernel) başlangıç zamanı ve kullanıcı işlemleri başlangıç zamanı ayrı ayrı ölçülür ve gösterilir. Bu süreleri analiz etmeye yarayan araçtır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-cgls&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-cglsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-cglsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd çalışma mantığında yer alan kontrol gruplarının durumunu ve hangi kontrol grubunda ve alt basamaklarında hangi servislerin çalıştığını kontrol etmeye yarayan araçtır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-cgtop&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-cgtoph3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-cgtoph3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;systemd-cgls aracında, tüm ana grup ve üyeleri hiyerarşik olarak gösterilirken, systemd-cgtop aracında ise en üstte bulunan ana grup ve sistem kullanımı görüntülenir. sysvinit içerisinde  “service &amp;ndash;status-all” komutuna benzer.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-loginctl&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-loginctlh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-loginctlh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;İşletim Sisteminin oturum açma işlemlerini kontrol eden araçtır. Oturum açma yöneticisi diye tanımlanabilir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;systemd-nspawn&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemd-nspawnh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemd-nspawnh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Hata ayıklama ve simülasyon yapmak için kullanılan bir araçtır. chroot aracına benzer ancak daha fazlasıdır. Bir programın, hatta başka bir işletim sisteminin, izole edilmiş halde, sistemin gerçek kaynaklarına zarar vermeden çalıştırılmasını sağlar. Yazılım geliştiriciler için oldukça kullanışlıdır.&lt;br&gt;Bu yazımızda, mümkün olduğunca anlaşılır şekilde systemd araçların en önemlilerinden bahsettik. İlerleyen yazılarda, detaylı anlatım ve örnekler vermeye çalışacağız.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>systemd &amp;#8211; systemctl kullanımına başlangıç</title>
+      <link>http://localhost:1313/tr/systemd-systemctl-kullanimina-baslangic/</link>
+      <pubDate>Sun, 03 Apr 2016 14:18:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/systemd-systemctl-kullanimina-baslangic/</guid>
+      <description>
+        
+        
+         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.&lt;/p&gt;
+ &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl
+çıktı:
+UNIT &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; LOAD &amp;nbsp; ACTIVE SUB &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DESCRIPTION
+...
+rc-local.service &amp;nbsp; &amp;nbsp; loaded failed failed &amp;nbsp; &amp;nbsp; &amp;nbsp;/etc/rc.local Compatibility
+resolvconf.service &amp;nbsp; loaded active exited &amp;nbsp; &amp;nbsp; &amp;nbsp;Nameserver information manager rsyslog.service &amp;nbsp; &amp;nbsp; &amp;nbsp;loaded active running &amp;nbsp; &amp;nbsp; System Logging Service
+...
+LOAD &amp;nbsp;&amp;nbsp;= Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB &amp;nbsp;&amp;nbsp;&amp;nbsp;= The low-level unit activation state, values depend on unit type.
+152 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use &#39;systemctl list-unit-files&#39;.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Bunun sonucunda sisteminizin başlama durumunda yüklenen, yüklenmeyen tüm servisler ile ilgili bir rapor ekrana görüntülenir. Bu ekranda, LOAD - ACTIVE - SUB sütünları, yüklenen ünitenin durumu hakkında bilgiler verir. Bu sütunlardaki bilgilere göre sisteminizin hatalarını tespit edip, diğer systemd araçlarının da yardımıyla hataları düzeltebilirsiniz.&lt;/p&gt;
+ &lt;p&gt;Yukarıda verilen komutun çıktısı, normalde çok daha detaylı ve uzundur ancak buraya kısa halini aldık.&amp;nbsp;Raporun sonunda,&amp;nbsp;&lt;em&gt;152 loaded units listed &amp;nbsp;&lt;/em&gt;ifadesiyle, toplam 152 ünitenin listelendiğini görebiliyoruz.&lt;/p&gt;
+ &lt;p&gt;Komutun çıktısında, kırmızı ikaz ile gösterilen problem hakkında detaylı bilgi almak için&amp;nbsp;&lt;strong&gt;systemctl&lt;/strong&gt;&amp;nbsp;aracının&amp;nbsp;&lt;strong&gt;status&lt;/strong&gt;&amp;nbsp;unite komutunu ve bilgi almak istediğimiz unitenin ismini kullanacağız.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
+systemctl status rc-local.service
+çıktı:
+● rc-local.service - /etc/rc.local Compatibility
+Loaded: loaded (/lib/systemd/system/rc-local.service; static; vendor preset: enabled)
+Active: failed (Result: exit-code) since Paz 2015-05-10 10:04:17 EEST; 42min ago
+Process: 696 ExecStart=/etc/rc.local start (code=exited, status=1/FAILURE)
+May 10 10:04:17 ubuntu systemd[1]: Starting /etc/rc.local Compatibility...
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service: control process exited, code=exited status=1
+May 10 10:04:17 ubuntu systemd[1]: Failed to start /etc/rc.local Compatibility.
+May 10 10:04:17 ubuntu systemd[1]: Unit rc-local.service entered failed state.
+May 10 10:04:17 ubuntu systemd[1]: rc-local.service failed.&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Detaylarını daha sonra açıklayacağımız bu durum raporları, sistemimiz hakkında nerelerde problem yaşandığını öğrenmekte oldukça faydalı olacaktır. Systemctl aracının kullanımı, yukarıda gösterilen ve benzeri şekillerde, durum komutları ve parametrelerle olmaktadır.&lt;/p&gt;
+ &lt;p&gt;Systemd araçlarından systemctrl aracına kısaca bakmış olduk. İlerleyen yazılarda, unite komutları, unite dosya komutları ve sistem komutlarını systemctl aracı ile kullanmayı inceleyeceğiz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

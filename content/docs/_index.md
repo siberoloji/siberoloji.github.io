@@ -1,17 +1,14 @@
 ---
 date: '2024-11-07T16:38:02+03:00'
-title: 'Docs'
+title: 'Documents'
 ---
-Theme demo
 
-## Hello, World
+## Introduction
 
-```go {filename="main.go"}
-package main
+We have prepared this Document section with a book style. You can find ongoing book efforts below.
 
-import "fmt"
+## Explore
 
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+{{< cards >}}
+  {{< card link="kalibook/" title="Kali Book" icon="book-open" >}}
+{{< /cards >}}

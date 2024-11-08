@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Gentoo</title>
+    <link>http://localhost:1313/tags/gentoo/</link>
+    <description>Recent content in Gentoo on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Sep 2024 16:44:49 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>A Beginner’s Guide to Gentoo Linux: What You Need to Know</title>
+      <link>http://localhost:1313/a-beginners-guide-to-gentoo-linux-what-you-need-to-know/</link>
+      <pubDate>Tue, 17 Sep 2024 16:44:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/a-beginners-guide-to-gentoo-linux-what-you-need-to-know/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When it comes to Linux distributions, there are plenty of options catering to users of all levels—from beginners to experts. Some distros like Ubuntu or Fedora are tailored for simplicity, making them an ideal starting point for those new to Linux. Others, such as Arch or Gentoo Linux, are for more experienced users who seek greater control and customization over their systems.&lt;/p&gt;
+&lt;p&gt;Gentoo Linux, in particular, stands out for its flexibility, power, and the deep level of customization it offers. If you’re a beginner who is intrigued by the idea of creating a Linux environment that is tailored specifically to your needs, Gentoo could be a rewarding journey. This guide will introduce you to Gentoo Linux, explain its core features, and provide a high-level overview of how to get started as a beginner.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What is Gentoo Linux?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-gentoo-linuxh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-gentoo-linuxh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo is a source-based Linux distribution that is known for offering complete control over your operating system. Unlike binary-based distributions, where you install pre-compiled software, Gentoo allows you to compile software from source code based on your specific hardware and configuration preferences. This ensures that your system is optimized for your specific use case.&lt;/p&gt;
+&lt;p&gt;Key to Gentoo’s uniqueness is the Portage package management system. It enables users to install, update, and configure software by compiling it from source, providing more granularity and control over what gets included. Gentoo is often considered a distribution for power users, but with the right approach, even beginners can get started.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Why Choose Gentoo?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-choose-gentooh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-choose-gentooh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Choosing Gentoo as a Linux distribution comes with several benefits, especially for those who want to explore the deeper workings of Linux:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Gentoo is all about making your system &lt;em&gt;your&lt;/em&gt; system. Every package you install can be optimized for your hardware and needs. This is a major benefit for those who have specific software requirements or want a minimalistic system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: Because Gentoo compiles software from source, you can fine-tune performance for your exact hardware. This can lead to faster, more efficient applications.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Learning Opportunity&lt;/strong&gt;: Gentoo is a hands-on distribution. Installing and maintaining a Gentoo system forces you to learn the inner workings of Linux, making it an excellent choice for those who wish to deepen their Linux knowledge.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Control&lt;/strong&gt;: From kernel options to package dependencies, Gentoo gives you control over every aspect of your system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;These features make Gentoo an attractive choice for those who are comfortable taking a deep dive into system administration and learning how Linux really works.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Who Should Avoid Gentoo?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;who-should-avoid-gentooh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#who-should-avoid-gentooh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo isn’t for everyone. Here are a few reasons why you might consider another distribution if you’re a beginner:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Steep Learning Curve&lt;/strong&gt;: If you&#39;re not familiar with Linux or working from the command line, Gentoo can be overwhelming. It requires more hands-on involvement, especially during the installation process.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Time-Consuming&lt;/strong&gt;: Compiling software from source can take a long time, especially on slower machines. While the end result is a highly optimized system, it can be a time investment that some users may not find worth it.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Not Ideal for Quick Setup&lt;/strong&gt;: If you’re looking for an out-of-the-box experience, Gentoo isn’t the best option. It requires time, patience, and careful configuration to get everything working.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;However, if you’re willing to invest the time, Gentoo can be a deeply rewarding experience.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Key Features of Gentoo Linux&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;key-features-of-gentoo-linuxh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features-of-gentoo-linuxh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;For beginners, understanding some of Gentoo&amp;rsquo;s core features will give you insight into what makes this distribution unique and how it might fit your needs.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;1. &lt;strong&gt;Portage Package Manager&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Portage is Gentoo’s package management system and the heart of the distribution. Unlike package managers like APT (Debian/Ubuntu) or DNF (Fedora), Portage compiles software from source code using what are called &amp;ldquo;ebuilds.&amp;rdquo; These ebuilds contain the instructions necessary to compile and install software. With Portage, you have:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;USE Flags&lt;/strong&gt;: These allow you to customize software packages by enabling or disabling specific features. For example, you can compile software with or without support for certain protocols, languages, or libraries, optimizing it for your system’s exact needs.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;World File&lt;/strong&gt;: This file contains a list of packages that have been manually installed, which helps in maintaining and upgrading the system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;2. &lt;strong&gt;Rolling Release Model&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo uses a rolling release model, meaning that instead of waiting for major version updates, users receive continuous, incremental updates. This ensures that your system is always up-to-date with the latest features and security patches. For beginners, this can be a double-edged sword: while you get the latest software, updates require regular attention to ensure stability.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;3. &lt;strong&gt;Kernel Customization&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;One of the most exciting aspects of Gentoo is the ability to compile your own kernel. During installation, users are prompted to either configure and compile the kernel themselves or use a pre-configured version. While this can seem daunting, compiling your own kernel gives you the ability to include only the features you need, optimizing the kernel for your specific hardware.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;4. &lt;strong&gt;Gentoo Documentation&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo has some of the best documentation available in the Linux world. The Gentoo Handbook, for example, is a detailed and comprehensive guide that walks you through installation and configuration. As a beginner, the documentation can be a lifesaver, helping you understand complex tasks step by step.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Getting Started with Gentoo Linux&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;getting-started-with-gentoo-linuxh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#getting-started-with-gentoo-linuxh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Installing Gentoo is a more involved process compared to user-friendly distros like Ubuntu or Linux Mint. Here’s a high-level overview of how to approach installation as a beginner:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;1. &lt;strong&gt;Preparation&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before you dive into installing Gentoo, it’s crucial to gather the necessary information about your system. You’ll need to know details like your CPU architecture (x86_64, ARM, etc.), as this will influence the compilation process. You should also back up any important data before proceeding, as partitioning your disk for Gentoo can lead to data loss if not done carefully.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;2. &lt;strong&gt;Booting from a Live Environment&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;To install Gentoo, you’ll first need to boot into a live environment from a USB or DVD. Gentoo doesn’t offer a GUI installer, so everything will be done from the command line. Once booted, you’ll follow the steps outlined in the Gentoo Handbook, which includes partitioning your disk, configuring your network, and downloading the necessary installation files.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;3. &lt;strong&gt;Setting Up Partitions&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo requires you to manually partition your disk. You’ll need to create separate partitions for root, swap, and boot. Tools like &lt;code&gt;fdisk&lt;/code&gt; or &lt;code&gt;parted&lt;/code&gt; are typically used for this task. Once partitions are set up, you’ll format them and mount them, preparing them for the installation process.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;4. &lt;strong&gt;Compiling the Kernel&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;After configuring your system’s basic settings, you’ll move on to compiling the Linux kernel. Gentoo gives you two main options: manually configuring the kernel or using a pre-configured kernel. As a beginner, it’s recommended to use the pre-configured kernel unless you’re ready to dive into more advanced kernel customization.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;5. &lt;strong&gt;Installing and Configuring Software&lt;/strong&gt;&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once the kernel is installed, the next step is to install and configure the system’s software packages using Portage. You’ll also configure the system to start up correctly, including setting up init systems, such as OpenRC or systemd.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Tips for Gentoo Beginners&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tips-for-gentoo-beginnersh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tips-for-gentoo-beginnersh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;As a beginner, the process of installing and configuring Gentoo can seem overwhelming. Here are some tips to make your experience smoother:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Take Your Time&lt;/strong&gt;: Installing Gentoo can be a lengthy process. Don’t rush it. Read the documentation carefully, and don’t be afraid to do some extra research if something doesn’t make sense.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Use the Gentoo Forums&lt;/strong&gt;: The Gentoo community is very active and supportive. If you run into issues, the forums are a great place to get help.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Start with the Minimal Install&lt;/strong&gt;: It’s tempting to jump straight into customizing everything, but as a beginner, it’s a good idea to start small. Get the minimal install up and running first before moving on to more advanced features like kernel customization.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gentoo Linux is an exceptional distribution for users who want complete control over their system’s software and performance. While it may not be the best choice for those new to Linux, its steep learning curve is rewarding for those willing to invest the time. By starting slow, utilizing Gentoo’s excellent documentation, and learning through experience, beginners can eventually master this powerful distribution and enjoy a highly customized Linux environment tailored to their needs.&lt;/p&gt;
+&lt;p&gt;If you’re ready to embark on a deep dive into Linux, Gentoo is a great place to start!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

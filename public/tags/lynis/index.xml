@@ -1,0 +1,211 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Lynis</title>
+    <link>http://localhost:1313/tags/lynis/</link>
+    <description>Recent content in Lynis on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Oct 2016 01:36:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/lynis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Lynis Sistem Tarama Programı</title>
+      <link>http://localhost:1313/tr/lynis-sistem-tarama-programi/</link>
+      <pubDate>Fri, 07 Oct 2016 01:36:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/lynis-sistem-tarama-programi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux Ev kullanıcıları veya sistem yöneticileri tarafından kullanılan veya kullanılması gereken önemli tarama programlarından bir tanesi de lynis isimli programdır. Bu yazıda, sistemimizin çalışmasını sağlayan servislerin ve hizmetlerin entegre ve hatasız çalışıp çalışmadığını kontrol etmek amacıyla kullanılan &amp;ldquo;lynis&amp;rdquo; aracının kurulum ve kullanımı açıklanacaktır.&lt;/p&gt;
+&lt;p&gt;Program, GPLv3 lisansıyla dağıtılmaktadır ve komut satırından çalışmaktadır. Şirketler için ticari sürümü de bulunan programın, tüm sisteminizi tarayıp sonuç raporunu &amp;lsquo;&amp;rsquo;.log&amp;rsquo;&amp;rsquo; dosyası şeklinde bilgisayarınıza kaydettiğini belirtelim. Bulunan HATA ve TAVSİYELER konusunda, ticari sürümde doğrudan çözümler sunulduğu halde ücretsiz sürümde hataları, &amp;lsquo;&amp;rsquo;log&amp;rsquo;&amp;rsquo; dosyası içerisinden kendiniz bulup, gerekli tedbiri de kendiniz almak durumundasınız. Ancak bunu yapmak o kadar da zor değil.&lt;/p&gt;
+&lt;p&gt;Aşağıdaki komutlarda bu yazının hazırlandığı tarihte en güncel sürüm olan &amp;ldquo;2.3.4&amp;rdquo; kullanılmıştır. Siz, en son sürümü bu &lt;a href=&#34;https://cisofy.com/downloads/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bağlantıdan&lt;/a&gt; kontrol ederek komutlara &amp;lsquo;&amp;lsquo;&amp;lsquo;2.3.4&amp;rsquo;&amp;rsquo;&amp;rsquo; yerine en son sürümün numarasını yazabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Lynis Kurulum&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-kurulumh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Aşağıdaki komutlar yardımıyla sıkıştırılmış arşiv dosyasını /tmp klasörüne indiriyoruz. İndirilen dosyayı /usr/local klasörüne açıyoruz. Arşiv açıldığında /usr/local klasörünün içerisine /lynis isimli klasörü oluşturacaktır.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;cd /tmp
+wget &lt;a href=&#34;https://cisofy.com/files/lynis-2.3.4.tar.gz&#34;&gt;https://cisofy.com/files/lynis-2.3.4.tar.gz&lt;/a&gt;
+sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;h2&gt;Lynis Tarama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-taramah2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-taramah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Açılan dosyaların olduğu klasöre girerek lynis programını kurulum yapmadan doğrudan çalıştırabilirsiniz. Çalıştırabilmek için sistemde yönetici yetkilerine sahip olmalısınız.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;cd /usr/local/lynis
+sudo ./lynis -c -Q&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;&lt;strong&gt;-c seçeneği&lt;/strong&gt;: (&amp;ndash;check-all) tüm kontrolleri yapmayı sağlar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-Q seçeneği&lt;/strong&gt;: Her adımda kullanıcıdan onaya gerek olmadan otomatik devam etmesini sağlar.&lt;/p&gt;
+&lt;p&gt;Tarama aşağıdaki tüm başlıklarda sisteminizi kontrol edecektir.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sistem Araçları: Sistemdeki ikilik (binary) dosyaları&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Boot ve Servisler: Açılış yükleyicisi, başlangıç hizmetleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Çekirdek: Çalışma seviyesi (run level), yüklenmiş modüller, çekirdek ayarları&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hafıza ve İşlemler: zombi işlemler, G/Ç bekleyen işlemler&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kullanıcılar, Gruplar, Yetkilendirme: Grup Kimlikleri, sudo Yetkilileri, Parola süreleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kabuklar, Terminaller&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Dosya Sistemleri: Bağlanma noktaları, /tmp dosyaları, kök (root) dosya sistemi&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Veri Depolarıo: usb-kayıt yerleri, firewire ohci&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;NFS&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılımlar: isim servileri: DNS arama, BIND&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Portlar ve Paketler: İstismar edilebilir, zaafiyet içeren/Yükseltilebilir paketler&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Ağ: İsim sunucularınız, sözde ağ arayüzleri, bağlantılar&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazıcılar: cups ayarları&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: e-posta ve mesajlaşma&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: firewall: iptables, pf&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: Web sunucu: Apache, nginx&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;SSH Desteği: SSH Ayarları&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;SNMP Desteği&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Varitabanları: MySQL root parolası&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;LDAP Servisleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: php: php seçenekleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Squid Desteği&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Log Dosyaları: syslog yönetici, log klasörleri&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Güvenli Olmayan Servisler: inetd&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Banner ve Kimlik Doğrulama&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Zamanlanmış Görevler: crontab/cronjob, atd&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hesap Yönetimi: sysstat data, auditd&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Zaman ve Senkronizasyon: ntp yöneticisi&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kriptolama: SSL sertifika zaman aşımı&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sanallaştırma&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Güvenlik Çerçeve Hizmetleri: AppArmor, SELinux, grsecurity durumu&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: Dosya bütünlüğü&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Yazılım: Zararlı Tarayıcılar&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Ev Klasörleri: Kabuk geçmiş dosyaları&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Tarama sona erdiğinde tüm sonuçlar oluşturulan &amp;lsquo;&amp;rsquo;&lt;em&gt;/var/log/lynis.log&lt;/em&gt;&amp;rsquo;&amp;rsquo; dosyasına kaydedilir.&lt;/p&gt;
+&lt;h2&gt;Lynis Tarama Sonuçlarını İnceleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-tarama-sonuçlarını-incelemeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-tarama-sonu%c3%a7lar%c4%b1n%c4%b1-incelemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Tarama ve testlerin sonucunda oluşturulan sonuçların yazıldığı /var/log/lynis.log dosyasını incelememiz gerekmektedir. İşte bu işlem ticari sürümde otomatik yapılırken biz elle yapacağız. Bunun için rapor dosyasını 3 şekilde inceleme imkanımız var;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Tüm dosyayı inceleme&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Önemli İkazları İnceleme&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Tavsiyeleri İnceleme&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Tüm dosyayı inceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tüm-dosyayı-incelemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#t%c3%bcm-dosyay%c4%b1-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bol zamanınız varsa ve tüm analizleri incelemek isterseniz, aşağıdaki komut raporu terminale yazdıracaktır. Terminalin geriye dönük tarihsel geçmiş satır ayarlarının oldukça büyük olması gerektiğini hatırlatalım. Aksi takdirde raporun ilk satırları hafızada kalmayabilir.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo cat /var/log/lynis.log&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Önemli İkazları İnceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;önemli-ikazları-incelemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6nemli-ikazlar%c4%b1-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Rapor dosyasında önemli ikazlar &amp;ldquo;Warning&amp;rdquo; ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok işe yarayacaktır.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo grep Warning /var/log/lynis.log&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;[18:51:33] Warning: Found one or more vulnerable packages. [PKGS-7392]  
+[18:51:33] Warning: Couldn&#39;t find 2 responsive nameservers [NETW-2705]&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Uç birim çıktısında görüldüğü gibi, bu sistemde PKGS-7392 ve NETW-2705 kodlu iki adet önemli ve ilgilenilmesi gereken konu bulunmaktadır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Tavsiyeleri İnceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiyeleri-incelemeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tavsiyeleri-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Rapor dosyasında Tavsiye edilen konular &amp;ldquo;Suggestion&amp;rdquo; ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok kullanılabilir. Komutun hemen altında uçbirim çıktısı da görülmektedir.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo grep Suggestion /var/log/lynis.log
+&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;20:02:44] Suggestion: Default umask in /etc/login.defs could be more strict like 027 [AUTH-9328]  
+20:02:44] Suggestion: Default umask in /etc/init.d/rc could be more strict like 027 [AUTH-9328]&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;h2&gt;Yardım Bilgilerini Görüntüleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yardım-bilgilerini-görüntülemeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#yard%c4%b1m-bilgilerini-g%c3%b6r%c3%bcnt%c3%bclemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Aşağıdaki komutlar ile özet ve detaylı yardım sayfalarını görüntüleyebilirsiniz.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo ./lynis --help
+sudo ./lynis show options&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;Tarama programının sonucunda oluşturulan tavsiyeler (Suggestion) sisteminizi sıkılaştırmak için dikkate almanız konusunda tavsiye niteliğinde olsa da önemli ikazları (Warning) ciddi olarak değerlendirmelisiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

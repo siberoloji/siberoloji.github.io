@@ -1,0 +1,667 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – C&#43;&#43; Code Samples</title>
+    <link>http://localhost:1313/tags/c&#43;&#43;-code-samples/</link>
+    <description>Recent content in C&#43;&#43; Code Samples on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2024 21:56:55 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/c++-code-samples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Local Network Scanner C&#43;&#43;</title>
+      <link>http://localhost:1313/local-network-scanner-c/</link>
+      <pubDate>Fri, 04 Oct 2024 21:56:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/local-network-scanner-c/</guid>
+      <description>
+        
+        
+         &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.&lt;/p&gt;
+ &lt;p&gt;To compile and run this program:&lt;/p&gt;
+ &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;&lt;/p&gt;
+ &lt;p&gt;Compile it: &lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;g++ -std=c++17 -o network_scanner network_scanner.cpp&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Run it with sudo: &lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;sudo ./network_scanner&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+ &lt;p&gt;Here is the complete code.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;fstream&amp;gt;
+#include &amp;lt;string&amp;gt;
+#include &amp;lt;stdexcept&amp;gt;
+#include &amp;lt;array&amp;gt;
+#include &amp;lt;chrono&amp;gt;
+#include &amp;lt;thread&amp;gt;
+#include &amp;lt;unistd.h&amp;gt;
+#include &amp;lt;arpa/inet.h&amp;gt;
+#include &amp;lt;sys/socket.h&amp;gt;
+#include &amp;lt;netinet/in.h&amp;gt;
+#include &amp;lt;netinet/ip_icmp.h&amp;gt;
+
+constexpr size_t PACKET_SIZE = 64;
+constexpr std::chrono::seconds MAX_WAIT_TIME(1);
+
+class NetworkScanner {
+private:
+    static uint16_t calculateChecksum(uint16_t *buf, int len) {
+        uint32_t sum = 0;
+        while (len &amp;gt; 1) {
+            sum += *buf++;
+            len -= 2;
+        }
+        if (len == 1) {
+            sum += *reinterpret_cast&amp;lt;uint8_t *&amp;gt;(buf);
+        }
+        sum = (sum &amp;gt;&amp;gt; 16) + (sum &amp;amp; 0xFFFF);
+        sum += (sum &amp;gt;&amp;gt; 16);
+        return static_cast&amp;lt;uint16_t&amp;gt;(~sum);
+    }
+
+    static int ping(const std::string&amp;amp; ip_addr) {
+        int sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
+        if (sockfd &amp;lt; 0) {
+            throw std::runtime_error(&#34;Socket creation failed&#34;);
+        }
+
+        sockaddr_in addr{};
+        addr.sin_family = AF_INET;
+        addr.sin_addr.s_addr = inet_addr(ip_addr.c_str());
+
+        std::array&amp;lt;char, PACKET_SIZE&amp;gt; packet{};
+        auto* icmp_header = reinterpret_cast&amp;lt;struct icmp*&amp;gt;(packet.data());
+        icmp_header-&amp;gt;icmp_type = ICMP_ECHO;
+        icmp_header-&amp;gt;icmp_code = 0;
+        icmp_header-&amp;gt;icmp_id = getpid();
+        icmp_header-&amp;gt;icmp_seq = 0;
+        icmp_header-&amp;gt;icmp_cksum = 0;
+        icmp_header-&amp;gt;icmp_cksum = calculateChecksum(reinterpret_cast&amp;lt;uint16_t*&amp;gt;(icmp_header), PACKET_SIZE);
+
+        timeval tv{};
+        tv.tv_sec = MAX_WAIT_TIME.count();
+        tv.tv_usec = 0;
+        setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &amp;amp;tv, sizeof(tv));
+
+        if (sendto(sockfd, packet.data(), PACKET_SIZE, 0, reinterpret_cast&amp;lt;sockaddr*&amp;gt;(&amp;amp;addr), sizeof(addr)) &amp;lt;= 0) {
+            close(sockfd);
+            return -1;
+        }
+
+        if (recvfrom(sockfd, packet.data(), packet.size(), 0, nullptr, nullptr) &amp;lt;= 0) {
+            close(sockfd);
+            return -1;
+        }
+
+        close(sockfd);
+        return 0;
+    }
+
+public:
+    static void scanNetwork(const std::string&amp;amp; base_ip) {
+        std::ofstream file(&#34;scan_results.txt&#34;);
+        if (!file) {
+            throw std::runtime_error(&#34;Error opening file&#34;);
+        }
+
+        for (int i = 1; i &amp;lt;= 254; ++i) {
+            std::string ip = base_ip + std::to_string(i);
+            std::cout &amp;lt;&amp;lt; &#34;Pinging &#34; &amp;lt;&amp;lt; ip &amp;lt;&amp;lt; &#34;...\n&#34;;
+
+            try {
+                if (ping(ip) == 0) {
+                    std::cout &amp;lt;&amp;lt; ip &amp;lt;&amp;lt; &#34; is reachable\n&#34;;
+                    file &amp;lt;&amp;lt; ip &amp;lt;&amp;lt; &#39;\n&#39;;
+                } else {
+                    std::cout &amp;lt;&amp;lt; ip &amp;lt;&amp;lt; &#34; is not reachable\n&#34;;
+                }
+            } catch (const std::exception&amp;amp; e) {
+                std::cerr &amp;lt;&amp;lt; &#34;Error pinging &#34; &amp;lt;&amp;lt; ip &amp;lt;&amp;lt; &#34;: &#34; &amp;lt;&amp;lt; e.what() &amp;lt;&amp;lt; &#39;\n&#39;;
+            }
+
+            // Add a small delay between pings to avoid overwhelming the network
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+
+        std::cout &amp;lt;&amp;lt; &#34;Scan complete. Results saved in scan_results.txt\n&#34;;
+    }
+};
+
+int main() {
+    try {
+        NetworkScanner::scanNetwork(&#34;192.168.1.&#34;);
+    } catch (const std::exception&amp;amp; e) {
+        std::cerr &amp;lt;&amp;lt; &#34;Error: &#34; &amp;lt;&amp;lt; e.what() &amp;lt;&amp;lt; &#39;\n&#39;;
+        return 1;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Count even and odd numbers with while loop in C&#43;&#43;</title>
+      <link>http://localhost:1313/count-even-and-odd-numbers-with-while-loop-in-c/</link>
+      <pubDate>Sun, 07 Jul 2024 17:26:02 +0000</pubDate>
+      
+      <guid>http://localhost:1313/count-even-and-odd-numbers-with-while-loop-in-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0.&lt;/p&gt;
+&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/*
+* Program to count even and odd numbers.
+ *
+ * This program prompts the user to enter a sequence of integers, ending the sequence with a 0.
+ * It then counts the number of even and odd numbers entered (excluding the final 0) and displays the counts.
+ *
+ * How it works:
+ * 1. The program initializes two counters for even and odd numbers.
+ * 2. It prompts the user to enter a number and reads the user input.
+ * 3. If the number is not 0, it checks if the number is even or odd and increments the respective counter.
+ * 4. The program repeats steps 2 and 3 until the user enters 0.
+ * 5. Finally, it displays the counts of even and odd numbers.
+ *
+ * Note: The program considers 0 as neither even nor odd for the purpose of this count.
+ */
+
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int evenCount = 0; // Counter for even numbers
+    int oddCount = 0;  // Counter for odd numbers
+    int userInput;     // Variable to store the user&#39;s input
+
+    cout &amp;lt;&amp;lt; &#34;Enter a number: &#34;;
+    cin &amp;gt;&amp;gt; userInput;
+
+    while (userInput != 0) {
+        if (userInput % 2 == 1)
+            oddCount++; // Increment odd counter if the number is odd
+        else
+            evenCount++; // Increment even counter if the number is even
+
+        cout &amp;lt;&amp;lt; &#34;Enter a number: &#34;;
+        cin &amp;gt;&amp;gt; userInput;
+    }
+
+    cout &amp;lt;&amp;lt; &#34;Even numbers : &#34; &amp;lt;&amp;lt; evenCount &amp;lt;&amp;lt; endl; // Display the count of even numbers
+    cout &amp;lt;&amp;lt; &#34;Odd numbers : &#34; &amp;lt;&amp;lt; oddCount &amp;lt;&amp;lt; endl;   // Display the count of odd numbers
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0. The program operates in a loop, prompting the user to input integers until a 0 is entered, which signals the end of input. It utilizes the modulo operator (&lt;code&gt;%&lt;/code&gt;) to distinguish between even and odd numbers.&lt;/p&gt;
+&lt;p&gt;Initially, the program declares and initializes two integer variables, &lt;code&gt;evenCount&lt;/code&gt; and &lt;code&gt;oddCount&lt;/code&gt;, to zero. These variables serve as counters for the even and odd numbers, respectively.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;int evenCount = 0; // Counter for even numbers
+int oddCount = 0;  // Counter for odd numbers&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The program then enters a loop, first prompting the user to enter a number. This is achieved using &lt;code&gt;cout&lt;/code&gt; for the prompt and &lt;code&gt;cin&lt;/code&gt; to read the user&amp;rsquo;s input into the variable &lt;code&gt;userInput&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Enter a number: &#34;;
+cin &amp;gt;&amp;gt; userInput;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Within the loop, the program checks if the input is not 0. If it&amp;rsquo;s not, it determines whether the number is even or odd by using the modulo operation (&lt;code&gt;userInput % 2&lt;/code&gt;). If the result is 1, the number is odd, and &lt;code&gt;oddCount&lt;/code&gt; is incremented. Otherwise, the number is even, and &lt;code&gt;evenCount&lt;/code&gt; is incremented.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;if (userInput % 2 == 1)
+    oddCount++; // Increment odd counter if the number is odd
+else
+    evenCount++; // Increment even counter if the number is even&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This process repeats until the user inputs 0, at which point the loop terminates. Finally, the program outputs the counts of even and odd numbers using &lt;code&gt;cout&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Even numbers : &#34; &amp;lt;&amp;lt; evenCount &amp;lt;&amp;lt; endl;
+cout &amp;lt;&amp;lt; &#34;Odd numbers : &#34; &amp;lt;&amp;lt; oddCount &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This code snippet effectively demonstrates basic C++ input/output operations, conditional statements, and loop control structures, making it a straightforward example for developers familiar with C++ but new to this specific logic.&lt;/p&gt;
+&lt;h2&gt;Output &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output-h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter a number: 13
+Enter a number: 212
+Enter a number: 345
+Enter a number: 23
+Enter a number: 0
+Even numbers : 1
+Odd numbers : 3
+
+Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Defining a Pointer and changing its value</title>
+      <link>http://localhost:1313/c-defining-a-pointer-and-changing-its-value/</link>
+      <pubDate>Fri, 28 Jun 2024 23:59:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-defining-a-pointer-and-changing-its-value/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, we define a pointer and show how to view and change its value.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
+* @brief Main function that demonstrates pointer manipulation.
+ *
+ * This function initializes an integer variable `value` with the value 10.
+ * It then creates a pointer `pointer` that points to the memory address of `value`.
+ * The program prints the initial value of `value`, its address,
+ * and the value pointed to by `pointer`.
+ * 
+ * The program then updates the value pointed to by `pointer` to 20.
+ * Finally, it prints the new value of `value`.
+ *
+ * @return 0 indicating successful execution of the program
+ */
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int value = 10; // Initialize an integer variable with the value 10
+    int* pointer = &amp;amp;value; // Create a pointer that points to the memory address of value
+
+    cout &amp;lt;&amp;lt; &#34;Initial value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the initial value of value
+    cout &amp;lt;&amp;lt; &#34;Address of value: &#34; &amp;lt;&amp;lt; &amp;amp;value &amp;lt;&amp;lt; endl; // Print the memory address of value
+    cout &amp;lt;&amp;lt; &#34;Value pointed to by pointer: &#34; &amp;lt;&amp;lt; *pointer &amp;lt;&amp;lt; endl; // Print the value pointed to by pointer
+
+    *pointer = 20; // Update the value pointed to by pointer to 20
+
+    cout &amp;lt;&amp;lt; &#34;New value of value: &#34; &amp;lt;&amp;lt; value &amp;lt;&amp;lt; endl; // Print the new value of value
+
+    return 0; // Return 0 indicating successful execution of the program
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Factorial calculation with C&#43;&#43; do-while loop</title>
+      <link>http://localhost:1313/factorial-calculation-with-c-do-while-loop/</link>
+      <pubDate>Fri, 28 Jun 2024 23:21:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/factorial-calculation-with-c-do-while-loop/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, we show how to calculate factorial using the do while loop.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int calculateFactorial(int number) {
+    int result = 1;
+    for (int i = 1; i &amp;lt;= number; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int inputNumber;
+    char exitKey;
+    
+    do {
+        cout &amp;lt;&amp;lt; &#34;Enter a number between 1 and 10: &#34;;
+        cin &amp;gt;&amp;gt; inputNumber;
+        
+        if (inputNumber &amp;lt; 1) {
+            cout &amp;lt;&amp;lt; &#34;Number must be greater than 0.\n&#34;;
+        } else if (inputNumber &amp;gt; 10) {
+            cout &amp;lt;&amp;lt; &#34;Number must be less than or equal to 10.\n&#34;;
+        } else {
+            int factorial = calculateFactorial(inputNumber);
+            cout &amp;lt;&amp;lt; &#34;Result: &#34; &amp;lt;&amp;lt; factorial &amp;lt;&amp;lt; endl;
+        }
+        
+        cout &amp;lt;&amp;lt; &#34;Press &#39;h&#39; to exit, any other key to continue: &#34;;
+        cin &amp;gt;&amp;gt; exitKey;
+    } while (exitKey != &#39;h&#39;);
+    
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Example calculating the factorial of the entered number</title>
+      <link>http://localhost:1313/c-example-calculating-the-factorial-of-the-entered-number/</link>
+      <pubDate>Fri, 28 Jun 2024 16:20:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-example-calculating-the-factorial-of-the-entered-number/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;In this example, we show how to calculate the factorial of the entered number with the help of a function.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int factorial(int num) {
+    int result = 1;
+    for (int i = 2; i &amp;lt;= num; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int number;
+    cout &amp;lt;&amp;lt; &#34;Enter a number: &#34;;
+    cin &amp;gt;&amp;gt; number;
+    int factorialResult = factorial(number);
+    cout &amp;lt;&amp;lt; &#34;Factorial: &#34; &amp;lt;&amp;lt; factorialResult &amp;lt;&amp;lt; endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; adding int and float variables</title>
+      <link>http://localhost:1313/c-adding-int-and-float-variables/</link>
+      <pubDate>Fri, 28 Jun 2024 16:06:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-adding-int-and-float-variables/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, we show how to find the sum of 2 variables of type int and float.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+int main() {
+    int firstNumber = 11;
+    float secondNumber = 12.8;
+    float sum = firstNumber + secondNumber;
+
+    std::cout &amp;lt;&amp;lt; &#34;Sum: &#34; &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; std::endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Code example to convert Fahrenheit temperature to Celsius</title>
+      <link>http://localhost:1313/c-code-example-to-convert-fahrenheit-temperature-to-celsius/</link>
+      <pubDate>Fri, 28 Jun 2024 01:38:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-code-example-to-convert-fahrenheit-temperature-to-celsius/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, the entered Fahrenheit temperature value is converted to Celsius value with the help of a function.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;iomanip&amp;gt;
+#include &amp;lt;limits&amp;gt;
+
+float temperatureConversion(const float temperatureInFahrenheit) {
+    constexpr float conversionFactor = 5.0 / 9.0;
+    return (temperatureInFahrenheit - 32) * conversionFactor;
+}
+
+int main() {
+    float fahrenheitTemperature;
+    std::cout &amp;lt;&amp;lt; &#34;Enter the Fahrenheit temperature: &#34;;
+    std::cin &amp;gt;&amp;gt; fahrenheitTemperature;
+
+    float celsiusTemperature = temperatureConversion(fahrenheitTemperature);
+    std::cout &amp;lt;&amp;lt; std::fixed &amp;lt;&amp;lt; std::setprecision(std::numeric_limits&amp;lt;float&amp;gt;::digits10) &amp;lt;&amp;lt; &#34;Celsius value: &#34; &amp;lt;&amp;lt;
+            celsiusTemperature &amp;lt;&amp;lt; std::endl;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Printing int, float and string values ​​with printf in C&#43;&#43;</title>
+      <link>http://localhost:1313/printing-int-float-and-string-values-with-printf-in-c/</link>
+      <pubDate>Fri, 28 Jun 2024 01:19:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/printing-int-float-and-string-values-with-printf-in-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;string&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr int number = 123;
+    constexpr float realNumber = 3.146;
+    string text = &#34;Hello World&#34;;
+    printf(&#34;Number: %d\n&#34;, number);
+    printf(&#34;Pi value: %.2f\n&#34;, realNumber);
+    printf(&#34;Text: %s\n&#34;, text.c_str());
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; 2 string variable concatenation</title>
+      <link>http://localhost:1313/c-2-string-variable-concatenation/</link>
+      <pubDate>Thu, 27 Jun 2024 23:58:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-2-string-variable-concatenation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this article, we show an example of combining 2 string variables.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    std::string firstString = &#34;prs&#34;;
+    std::string secondString = &#34;def&#34;;
+    std::string result;
+    result = firstString + secondString;
+    std::cout &amp;lt;&amp;lt; result &amp;lt;&amp;lt; std::endl;
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Combining 2 variables of type char in C&#43;&#43;</title>
+      <link>http://localhost:1313/combining-2-variables-of-type-char-in-c/</link>
+      <pubDate>Thu, 27 Jun 2024 23:39:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/combining-2-variables-of-type-char-in-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, you can see how to combine 2 char variables with a length of 50 characters using the strcat method.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+using namespace std;
+
+int main() {
+    constexpr size_t bufferSize = 50;
+    char firstString[bufferSize] = &#34;abc&#34;;
+    char secondString[bufferSize] = &#34;def&#34;;
+
+    cout &amp;lt;&amp;lt; &#34;First string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+    cout &amp;lt;&amp;lt; &#34;Second string: &#34; &amp;lt;&amp;lt; secondString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    strcat(firstString, secondString);
+
+    cout &amp;lt;&amp;lt; &#34;Concatenated string: &#34; &amp;lt;&amp;lt; firstString &amp;lt;&amp;lt; &#39;\n&#39;;
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Finding whether a number is positive or negative with C&#43;&#43;</title>
+      <link>http://localhost:1313/finding-whether-a-number-is-positive-or-negative-with-c/</link>
+      <pubDate>Thu, 27 Jun 2024 23:24:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/finding-whether-a-number-is-positive-or-negative-with-c/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this example, we check whether the number entered from the keyboard is positive, negative or zero by using if-else if.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main() {
+    int number;
+    cout &amp;lt;&amp;lt; &#34;Please enter a number: &#34;;
+    cin &amp;gt;&amp;gt; number;
+
+    if (number &amp;gt; 0) {
+        cout &amp;lt;&amp;lt; &#34;Number is positive&#34;;
+    } else if (number &amp;lt; 0) {
+        cout &amp;lt;&amp;lt; &#34;Number is negative&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;Number is zero&#34;;
+    }
+
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; if else statement</title>
+      <link>http://localhost:1313/c-if-else-statement/</link>
+      <pubDate>Sat, 22 Jun 2024 23:39:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-if-else-statement/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this article, you can examine the use of C++ if else statement.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;a is not less than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Nested if statement</title>
+      <link>http://localhost:1313/c-nested-if-statement/</link>
+      <pubDate>Sat, 22 Jun 2024 23:33:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-nested-if-statement/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this article, we share an example showing C++ nested if statement.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* nested if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+        if (a &amp;lt; 10)
+            cout &amp;lt;&amp;lt; &#34;a is less than 10\n&#34;;
+        else
+            cout &amp;lt;&amp;lt; &#34;a is not less than 10\n&#34;;
+    } else {
+        if (a == 20) {
+            cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+        } else
+            cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; Cascade if else statement</title>
+      <link>http://localhost:1313/c-cascade-if-else-statement/</link>
+      <pubDate>Sat, 22 Jun 2024 14:08:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-cascade-if-else-statement/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can see the usage of cascade if-else statement example below.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main() {
+/* cascade if else statement */
+    int a;
+    cout &amp;lt;&amp;lt; &#34;Enter a positive integer number: &#34;;
+    cin &amp;gt;&amp;gt; a;
+    if (a &amp;lt; 20) {
+        cout &amp;lt;&amp;lt; &#34;a is less than 20\n&#34;;
+    } else if (a == 20) {
+        cout &amp;lt;&amp;lt; &#34;a is equal to 20\n&#34;;
+    } else {
+        cout &amp;lt;&amp;lt; &#34;a is greater than 20\n&#34;;
+    }
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

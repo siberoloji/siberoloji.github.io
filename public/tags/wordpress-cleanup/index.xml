@@ -1,0 +1,173 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Wordpress Cleanup</title>
+    <link>http://localhost:1313/tags/wordpress-cleanup/</link>
+    <description>Recent content in Wordpress Cleanup on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Sep 2024 12:47:21 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/wordpress-cleanup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to Clear WordPress Autosave Drafts with SQL Query?</title>
+      <link>http://localhost:1313/how-to-clear-wordpress-autosave-drafts-with-sql-query/</link>
+      <pubDate>Tue, 17 Sep 2024 12:47:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-clear-wordpress-autosave-drafts-with-sql-query/</guid>
+      <description>
+        
+        
+        &lt;p&gt;WordPress automatically saves drafts of your posts and pages as you work on them, ensuring that your content is not lost in case of any mishaps. This autosave feature is incredibly useful, but over time, these drafts can accumulate and take up unnecessary space in your database. Clearing these autosave drafts can help improve your website&amp;rsquo;s performance and reduce clutter in the database.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;In this post, we’ll explain how you can clear WordPress autosave drafts using an SQL query, a quick and effective method to manage your WordPress database.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;What Are WordPress Autosave Drafts?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-wordpress-autosave-draftsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-are-wordpress-autosave-draftsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before diving into the technical details, it’s important to understand what autosave drafts are. WordPress automatically saves a draft of your posts or pages at regular intervals (every 60 seconds by default) as you write. This draft is stored in the &lt;strong&gt;wp_posts&lt;/strong&gt; table of your WordPress database.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Autosaves are a safeguard against potential loss of content, especially if your browser crashes or if you accidentally close the editor before manually saving your work. However, WordPress does not automatically delete these autosaved drafts after publishing or updating a post, which can lead to the accumulation of unnecessary data in your database.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Why Clear Autosave Drafts?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;why-clear-autosave-draftsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-clear-autosave-draftsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;While autosaves are beneficial during the content creation process, leftover autosave drafts can have some downsides:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Database Bloat:&lt;/strong&gt; Over time, unused autosave drafts accumulate in your database, which increases its size unnecessarily. This can impact the performance of your website, especially if you have a large volume of content.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Cluttered Database Management:&lt;/strong&gt; For developers and administrators managing the WordPress database, too many unwanted drafts can clutter the database, making it harder to maintain.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Improved Performance:&lt;/strong&gt; By clearing out old autosaves, you can reduce the number of rows in your &lt;strong&gt;wp_posts&lt;/strong&gt; table, helping to optimize database queries and overall performance.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;How to Identify Autosave Drafts in Your Database&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-identify-autosave-drafts-in-your-databaseh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-identify-autosave-drafts-in-your-databaseh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In the WordPress database, drafts (including autosaves) are stored in the &lt;strong&gt;wp_posts&lt;/strong&gt; table, and they are marked with a post status of &lt;code&gt;auto-draft&lt;/code&gt;. Each autosave draft also corresponds to an existing post, page, or custom post type, with WordPress creating a new record in the database for each autosave.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;To identify the autosave drafts, you can use the following SQL query. This query fetches all records in the &lt;strong&gt;wp_posts&lt;/strong&gt; table with a post status of &lt;code&gt;auto-draft&lt;/code&gt;:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;SELECT * FROM wp_posts WHERE post_status = &#39;auto-draft&#39;;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;Running this query will display all the autosave drafts in your database, showing you the exact rows that are consuming unnecessary space.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;How to Clear WordPress Autosave Drafts Using an SQL Query&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-clear-wordpress-autosave-drafts-using-an-sql-queryh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-clear-wordpress-autosave-drafts-using-an-sql-queryh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Clearing autosave drafts from your WordPress database is a straightforward process when using an SQL query. However, &lt;strong&gt;always remember to back up your database before running any queries&lt;/strong&gt;, as SQL operations can’t be undone easily if something goes wrong.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Follow these steps to delete autosave drafts:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Backup Your Database&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Before performing any SQL operations, it’s crucial to back up your database. You can do this using your web hosting provider&amp;rsquo;s tools (like &lt;strong&gt;cPanel&lt;/strong&gt;) or plugins such as &lt;strong&gt;UpdraftPlus&lt;/strong&gt; or &lt;strong&gt;WPvivid&lt;/strong&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Access Your Database via phpMyAdmin&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once you’ve backed up your database, access your &lt;strong&gt;phpMyAdmin&lt;/strong&gt; tool through your hosting provider’s control panel (e.g., cPanel, Plesk, etc.).&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Log in to your hosting control panel.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Navigate to &lt;strong&gt;phpMyAdmin&lt;/strong&gt; (usually found under the &#34;Databases&#34; section).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select your WordPress database from the left sidebar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Run the SQL Query to Delete Autosave Drafts&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Once inside &lt;strong&gt;phpMyAdmin&lt;/strong&gt;, locate the &lt;strong&gt;SQL&lt;/strong&gt; tab, where you can run custom SQL queries. To remove all autosave drafts, enter the following SQL query:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;DELETE FROM wp_posts WHERE post_status = &#39;auto-draft&#39;;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This query will delete all posts and pages with the &lt;code&gt;auto-draft&lt;/code&gt; status, effectively clearing out all WordPress autosave drafts from your database.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 4: Verify the Changes&lt;/h4&gt;
+&lt;!-- /wp:heading --&gt;
+&lt;p&gt;After running the query, you can verify that the autosave drafts have been deleted by running the following query:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;SELECT * FROM wp_posts WHERE post_status = &#39;auto-draft&#39;;&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;If no results are returned, it means that the autosave drafts have been successfully deleted.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Automating the Process for Regular Cleanup&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;automating-the-process-for-regular-cleanuph3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#automating-the-process-for-regular-cleanuph3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you find yourself needing to clean up autosave drafts regularly, you can automate the process using a plugin like &lt;strong&gt;WP-Optimize&lt;/strong&gt;. This plugin offers database cleanup and optimization features, including the ability to remove autosave drafts, post revisions, and other redundant content.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Here’s how you can automate cleanup using &lt;strong&gt;WP-Optimize&lt;/strong&gt;:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Install and activate the &lt;strong&gt;WP-Optimize&lt;/strong&gt; plugin.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Navigate to &lt;strong&gt;WP-Optimize&lt;/strong&gt; in your WordPress dashboard.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Under the &#34;Database&#34; tab, you’ll see options to clean up various types of data, including autosave drafts and post revisions.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the &lt;strong&gt;Auto Drafts&lt;/strong&gt; checkbox and click &lt;strong&gt;Run Optimization&lt;/strong&gt;.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;You can also schedule automatic cleanups to ensure your database stays optimized over time.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Additional Tips for Database Optimization&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;additional-tips-for-database-optimizationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#additional-tips-for-database-optimizationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Beyond clearing autosave drafts, here are some additional tips to keep your WordPress database optimized:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Limit Post Revisions:&lt;/strong&gt;&lt;br&gt;WordPress saves multiple revisions of posts by default, which can also lead to database bloat. You can limit the number of revisions saved by adding the following line to your &lt;strong&gt;wp-config.php&lt;/strong&gt; file:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   define( &#39;WP_POST_REVISIONS&#39;, 5 );&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;This will limit the number of revisions stored for each post to 5.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:2} --&gt;
+&lt;ol start=&#34;2&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Delete Unused Plugins and Themes:&lt;/strong&gt;&lt;br&gt;Unused plugins and themes can create additional database entries, which may slow down your website. Regularly remove any plugins or themes that you no longer use.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Use a Caching Plugin:&lt;/strong&gt;&lt;br&gt;Plugins like &lt;strong&gt;W3 Total Cache&lt;/strong&gt; or &lt;strong&gt;WP Super Cache&lt;/strong&gt; can improve website performance by storing static versions of your content, reducing the load on your database.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Optimize Database Tables:&lt;/strong&gt;&lt;br&gt;You can run an SQL command to optimize your tables, ensuring that any gaps in data are filled in, making the database more efficient. In &lt;strong&gt;phpMyAdmin&lt;/strong&gt;, simply click the &lt;strong&gt;Optimize&lt;/strong&gt; option for each table or use a plugin like &lt;strong&gt;WP-Optimize&lt;/strong&gt; for automatic optimization.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:separator --&gt;
+&lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34;/&gt;
+&lt;!-- /wp:separator --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Clearing autosave drafts is an easy way to optimize your WordPress database and improve site performance. Using an SQL query, you can quickly remove these unnecessary drafts and reduce database bloat. Remember to always back up your database before performing SQL operations and consider automating the cleanup process with plugins like WP-Optimize to keep your WordPress site running smoothly over time.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;By following these simple steps, you can maintain a lean and efficient database, ensuring that your WordPress website remains fast and responsive!&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

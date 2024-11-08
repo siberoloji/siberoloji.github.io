@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Browser</title>
+    <link>http://localhost:1313/tags/browser/</link>
+    <description>Recent content in Browser on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jun 2024 14:37:12 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to view source code in Safari?</title>
+      <link>http://localhost:1313/how-to-view-source-code-in-safari/</link>
+      <pubDate>Thu, 20 Jun 2024 14:37:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/how-to-view-source-code-in-safari/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Viewing the source code of a page lets web designers and developers achieve their preferred layout. It helps them debug websites quickly by just viewing the source of web pages. Advanced Mac users can benefit greatly from viewing the page sources on a webpage. You can troubleshoot and fix webpage-related issues, adjust styling in the code, and learn different optimization techniques.&lt;/p&gt;
+&lt;p&gt;Following are steps to view source code in Safari browser.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Open your Safari browser and navigate to the web page you wish to view.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;From the top menu bar, select &lt;strong&gt;Develop &gt; Show Page Source&lt;/strong&gt;. You can also press &lt;strong&gt;Option+Command+U &lt;/strong&gt;on your keyboard.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;If the Develop menu is not visible, go to &lt;strong&gt;Preferences &amp;gt; Advanced&lt;/strong&gt;, and choose the &lt;strong&gt;Show Develop menu in menu bar&lt;/strong&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

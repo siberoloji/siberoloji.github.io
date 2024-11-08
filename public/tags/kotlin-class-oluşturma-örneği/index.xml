@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Kotlin Class Oluşturma Örneği</title>
+    <link>http://localhost:1313/tags/kotlin-class-olu%C5%9Fturma-%C3%B6rne%C4%9Fi/</link>
+    <description>Recent content in Kotlin Class Oluşturma Örneği on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jan 2022 08:50:29 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/kotlin-class-olu%C5%9Fturma-%C3%B6rne%C4%9Fi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Kotlin ile Class() oluşturma örneği</title>
+      <link>http://localhost:1313/tr/kotlin-ile-class-olusturma-ornegi/</link>
+      <pubDate>Sun, 16 Jan 2022 08:50:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/kotlin-ile-class-olusturma-ornegi/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
+    var personA = Person(&#34;Mike&#34;,&#34;Sunshine&#34;)
+    var personB = Person()
+    var personC = Person(lastName = &#34;Peterson&#34;)
+
+}
+
+class Person (firstName:String =&#34;John&#34; , lastName:String=&#34;Doe&#34;){
+
+    init {
+        println(&#34;A new person object created with First Name: $firstName and &#34; +
+                &#34;Last Name: $lastName&#34; )
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Sonuç&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;A new person object created with First Name: Mike and Last Name: Sunshine
+A new person object created with First Name: John and Last Name: Doe
+A new person object created with First Name: John and Last Name: Peterson
+
+Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

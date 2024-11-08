@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – String Concatenation</title>
+    <link>http://localhost:1313/tags/string-concatenation/</link>
+    <description>Recent content in String Concatenation on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jun 2024 23:58:54 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/string-concatenation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>C&#43;&#43; 2 string variable concatenation</title>
+      <link>http://localhost:1313/c-2-string-variable-concatenation/</link>
+      <pubDate>Thu, 27 Jun 2024 23:58:54 +0000</pubDate>
+      
+      <guid>http://localhost:1313/c-2-string-variable-concatenation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In this article, we show an example of combining 2 string variables.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+
+int main() {
+    std::string firstString = &#34;prs&#34;;
+    std::string secondString = &#34;def&#34;;
+    std::string result;
+    result = firstString + secondString;
+    std::cout &amp;lt;&amp;lt; result &amp;lt;&amp;lt; std::endl;
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Temel Kotlin Kavramları</title>
+    <link>http://localhost:1313/tags/temel-kotlin-kavramlar%C4%B1/</link>
+    <description>Recent content in Temel Kotlin Kavramları on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jan 2022 09:05:48 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/temel-kotlin-kavramlar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Kotlin için Temel ifadeler</title>
+      <link>http://localhost:1313/tr/kotlin-icin-temel-ifadeler/</link>
+      <pubDate>Sun, 16 Jan 2022 09:05:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/kotlin-icin-temel-ifadeler/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Programlama dokümanlarını okuduğunuzda bazen kavramların karıştığını farkedersiniz. Kotlin Programlama Dili Temel terminolojisini başlangıçta öğrenmeliyiz.&lt;/p&gt;
+&lt;!-- wp:more --&gt;
+&lt;!-- /wp:more --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bir &lt;strong&gt;program&lt;/strong&gt;, birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;statement &lt;/strong&gt;- &lt;strong&gt;komut: &lt;/strong&gt;(veya bir programlama ifadesi), yürütülecek tek bir komuttur (bir metni yazdırmak gibi);&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;expression&lt;/strong&gt; - &lt;strong&gt;ifade: &lt;/strong&gt;, tek bir değer üreten bir kod parçasıdır (örneğin, 2*2 bir ifadedir);&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Block&lt;/strong&gt; - &lt;strong&gt;Kod Bloğu:&lt;/strong&gt; bir çift kaşlı ayraç {…} içine alınmış sıfır veya daha fazla ifade grubudur; programımız tek bir bloktan oluşmaktadır;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;keyword&lt;/strong&gt; - &lt;strong&gt;anahtar kelime&lt;/strong&gt;: programlama dilinde özel bir anlamı olan bir kelimedir. Anahtar kelimelerin adları değiştirilemez;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bir &lt;strong&gt;identifier&lt;/strong&gt; - &lt;strong&gt;belirteç &lt;/strong&gt;:(veya bir isim), programcı tarafından bir şeyi tanımlamak için yazılan bir kelimedir;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Comment&lt;/strong&gt; - &lt;strong&gt;Yorum&lt;/strong&gt;: program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar &lt;code&gt;//&lt;/code&gt; ile başlar;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Whitespace&lt;/strong&gt; - &lt;strong&gt;Boşluk&lt;/strong&gt;: boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Free Course</title>
+    <link>http://localhost:1313/tags/free-course/</link>
+    <description>Recent content in Free Course on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jun 2023 18:28:39 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/free-course/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Free Python Course from Harvard University</title>
+      <link>http://localhost:1313/free-python-course-from-harvard-university/</link>
+      <pubDate>Sun, 18 Jun 2023 18:28:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/free-python-course-from-harvard-university/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Harvard University has the &amp;ldquo;&lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://cs50.harvard.edu/&#34; target=&#34;_blank&#34;&gt;Harvard CS50&lt;/a&gt;&amp;rdquo; program, which includes programs within the scope of introductory computer science training. You can also take the &amp;ldquo;Introduction to Programming with Python&amp;rdquo; course, which is one of the trainings given within the scope of this program, free of charge.&lt;/p&gt;
+&lt;p&gt;The course, which includes basic information, has 15 hours of content and is completely free. You can access the course material and course content from this link.&lt;/p&gt;
+&lt;p&gt;The content, which starts with functions, variables, conditional expressions and loops in Python, continues with exceptions, libraries and other topics.&lt;/p&gt;
+&lt;p&gt;You can access the course content from this &lt;a href=&#34;https://cs50.harvard.edu/python/2022/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;link&lt;/a&gt;, or if you want to enroll in the certificate program, you can register with your edX account &lt;a href=&#34;https://www.edx.org/course/cs50s-introduction-to-programming-with-python&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lecture is delivered by Harvard University Computer Science Professor David J. Malan. The course content is prepared in English.&lt;/p&gt;
+&lt;!-- wp:buttons --&gt;
+&lt;div class=&#34;wp-block-buttons&#34;&gt;&lt;!-- wp:button --&gt;
+&lt;div class=&#34;wp-block-button&#34;&gt;&lt;a class=&#34;wp-block-button__link wp-element-button&#34; href=&#34;https://www.edx.org/course/cs50s-introduction-to-programming-with-python&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Register&lt;/a&gt;&lt;/div&gt;
+&lt;!-- /wp:button --&gt;&lt;/div&gt;
+&lt;!-- /wp:buttons --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

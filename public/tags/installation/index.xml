@@ -1,0 +1,297 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Installation</title>
+    <link>http://localhost:1313/tags/installation/</link>
+    <description>Recent content in Installation on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Oct 2024 21:31:19 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AlmaLinux 9: How to Install with Prepared Installation Disk</title>
+      <link>http://localhost:1313/almalinux-9-how-to-install-with-prepared-installation-disk/</link>
+      <pubDate>Wed, 02 Oct 2024 21:31:19 +0000</pubDate>
+      
+      <guid>http://localhost:1313/almalinux-9-how-to-install-with-prepared-installation-disk/</guid>
+      <description>
+        
+        
+         &lt;p&gt;AlmaLinux has quickly become a popular choice for those seeking a stable, enterprise-grade Linux distribution. As a 1:1 binary compatible fork of Red Hat Enterprise Linux (RHEL), it offers a robust and reliable platform for various applications. In this comprehensive guide, we&#39;ll walk you through the process of installing AlmaLinux 9 using a prepared installation disk.&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;prerequisitesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#prerequisitesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Before we begin, ensure you have the following:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A computer with at least 2GB of RAM (4GB recommended for GUI installations)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;20GB of free disk space (more is recommended for production use)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;A prepared AlmaLinux 9 installation disk (USB drive or DVD)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Internet connection (optional, but recommended for updates during installation)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 1: Obtaining the Installation Media&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-1-obtaining-the-installation-mediah2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-1-obtaining-the-installation-mediah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;If you haven&#39;t already prepared your installation media, you&#39;ll need to:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Visit the official AlmaLinux website (https://almalinux.org/)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Navigate to the Downloads section&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Choose AlmaLinux 9 and select the appropriate ISO file (usually the DVD ISO)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Download the ISO file&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Create a bootable USB drive or burn the ISO to a DVD&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+ &lt;p&gt;There are various tools available for creating bootable USB drives, such as Rufus for Windows or dd for Linux systems.&lt;/p&gt;
+&lt;h2&gt;Step 2: Booting from the Installation Media&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-2-booting-from-the-installation-mediah2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-2-booting-from-the-installation-mediah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Insert your prepared installation disk (USB or DVD) into your computer&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Restart your computer&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Access your computer&#39;s boot menu (usually by pressing F12, F2, or Del during startup)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the installation media as the boot device&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;When the AlmaLinux boot menu appears, select &#34;Install AlmaLinux 9&#34;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 3: Language Selection&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-3-language-selectionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-3-language-selectionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;The first screen you&#39;ll encounter is the language selection. Choose your preferred language for the installation process and click &#34;Continue.&#34;&lt;/p&gt;
+&lt;h2&gt;Step 4: Installation Summary&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-4-installation-summaryh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-4-installation-summaryh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;You&#39;ll now see the Installation Summary screen, which provides an overview of various installation options. We&#39;ll go through each section:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Localization&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;localizationh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#localizationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Keyboard&lt;/strong&gt;: Set your keyboard layout&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Language Support&lt;/strong&gt;: Add additional language support if needed&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Time &amp;amp; Date&lt;/strong&gt;: Set your time zone and configure NTP (Network Time Protocol) if desired&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Software&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;softwareh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#softwareh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Installation Source&lt;/strong&gt;: This should be set to &#34;Local media&#34; by default&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Software Selection&lt;/strong&gt;: Choose your base environment (e.g., Server with GUI, Minimal Install, Workstation)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;System&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;systemh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#systemh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Installation Destination&lt;/strong&gt;: Select the drive where you want to install AlmaLinux&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;KDUMP&lt;/strong&gt;: Enable or disable the kernel crash dumping mechanism&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Network &amp;amp; Host Name&lt;/strong&gt;: Configure network settings and set your system&#39;s hostname&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;User Settings&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;user-settingsh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#user-settingsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Root Password&lt;/strong&gt;: Set a strong password for the root account&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;User Creation&lt;/strong&gt;: Create a non-root user account (recommended)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 5: Installation Destination&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-5-installation-destinationh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-5-installation-destinationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Click on &#34;Installation Destination&#34; to configure your disk partitioning:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select the disk(s) you want to use for installation&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Choose between &#34;Automatic&#34; or &#34;Custom&#34; partitioning&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;For most users, &#34;Automatic&#34; is sufficient&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;If you need specific partitioning schemes, select &#34;Custom&#34;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;If using &#34;Custom,&#34; create the following partitions at minimum:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;/boot (1GB)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;/ (root, allocate remaining space)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;swap (typically 1.5x your RAM size, up to 8GB)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click &#34;Done&#34; when finished&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 6: Software Selection&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-6-software-selectionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-6-software-selectionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Click on &#34;Software Selection&#34; to choose your desired installation type:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Select a base environment (e.g., &#34;Server with GUI&#34; or &#34;Minimal Install&#34;)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Choose additional software packages if needed&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click &#34;Done&#34; to confirm your selection&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 7: Network &amp;amp; Host Name&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-7-network-amp-host-nameh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-7-network-amp-host-nameh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Configure your network settings:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click on &#34;Network &amp;amp; Host Name&#34;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Set your desired hostname&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Toggle the network adapter to &#34;ON&#34; if you want to configure it during installation&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Configure IPv4/IPv6 settings as needed&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click &#34;Done&#34; to save your settings&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 8: Begin Installation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-8-begin-installationh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-8-begin-installationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Once you&#39;ve configured all necessary options:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Review the Installation Summary screen&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click &#34;Begin Installation&#34; to start the process&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 9: User Settings&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-9-user-settingsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-9-user-settingsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;While the installation is running:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Set the root password when prompted&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Create a non-root user account (recommended for daily use)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Step 10: Complete Installation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-10-complete-installationh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#step-10-complete-installationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Wait for the installation to complete (this may take several minutes)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Click &#34;Reboot&#34; when prompted&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Remove the installation media before the system restarts&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Post-Installation Steps&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;post-installation-stepsh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#post-installation-stepsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;After your system reboots:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Log in using your created user account&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Open a terminal and run &lt;code&gt;sudo dnf update&lt;/code&gt; to ensure your system is up-to-date&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Install any additional software you need using &lt;code&gt;sudo dnf install &amp;lt;package-name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Configure your firewall settings using &lt;code&gt;firewall-cmd&lt;/code&gt; if necessary&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Set up any additional users or groups as needed&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Troubleshooting Common Issues&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;troubleshooting-common-issuesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#troubleshooting-common-issuesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Here are some common issues you might encounter during installation and how to resolve them:&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Boot media not recognized&lt;/strong&gt;: Ensure your BIOS/UEFI settings allow booting from USB/DVD and that the installation media is properly created.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Network not detected&lt;/strong&gt;: Check your network cable connection or Wi-Fi adapter. You may need to load additional drivers during installation.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Partitioning errors&lt;/strong&gt;: If using custom partitioning, ensure you&#39;ve allocated enough space for each partition and that you&#39;ve included all necessary mount points.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Package installation failures&lt;/strong&gt;: This could be due to corrupt installation media. Try re-downloading the ISO and creating a new installation disk.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Congratulations! You&#39;ve successfully installed AlmaLinux 9 on your system. AlmaLinux offers a stable, secure, and free enterprise-grade operating system that&#39;s perfect for servers, workstations, and development environments.&lt;/p&gt;
+ &lt;p&gt;Remember to keep your system updated regularly using &lt;code&gt;sudo dnf update&lt;/code&gt; and explore the wealth of software available in the AlmaLinux repositories. If you encounter any issues or need community support, don&#39;t hesitate to visit the official AlmaLinux forums or documentation.&lt;/p&gt;
+ &lt;p&gt;AlmaLinux 9 provides a solid foundation for your computing needs, whether you&#39;re running a web server, developing software, or using it as a daily driver. Enjoy your new AlmaLinux 9 installation!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

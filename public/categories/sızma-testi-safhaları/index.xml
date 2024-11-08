@@ -1,0 +1,547 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Sızma Testi Safhaları</title>
+    <link>http://localhost:1313/categories/s%C4%B1zma-testi-safhalar%C4%B1/</link>
+    <description>Recent content in Sızma Testi Safhaları on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Apr 2016 16:31:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/s%C4%B1zma-testi-safhalar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Bilgi Toplama İşlemleri -2- Hedef Seçimi</title>
+      <link>http://localhost:1313/tr/bilgi-toplama-islemleri-2-hedef-secimi/</link>
+      <pubDate>Sun, 24 Apr 2016 16:31:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/bilgi-toplama-islemleri-2-hedef-secimi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sızma Testi 2. Safhası olan Bilgi Toplama işlemlerine bu &lt;a href=&#34;https://www.siberoloji.com/bilgi-toplama-islemleri-1-temel-yaklasim/&#34; data-type=&#34;post&#34; data-id=&#34;1070&#34;&gt;bağlantıda&lt;/a&gt; bulunan yazımızla giriş yapmıştık. O yazı içerisinde belirttiğimiz ana konulardan birisi olan Hedef Seçimi başlığını açıklamaya çalışacağız.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Hedefin Net Tanımı&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hedefin-net-tanımıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hedefin-net-tan%c4%b1m%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir bilişim sistemi hakkında bilgi toplama işlemleri başladığında, kaçınılmaz olarak bir çok alan adı veya IP adresi keşfedilecektir. Bazen, organizasyonların .com uzantılı sistemleri olmakla birlikte .net veya .xyz tarzında adresleri de bulunur. Bu noktada, testi yapan ekibin, koordinasyon esnasında tespit edilen kapsamın dışına kesinlikle çıkmaması gerektiği net olarak belirtilmelidir.&lt;/p&gt;
+&lt;p&gt;Kapsam, kısıtlayıcı kurallara bağlanmışsa ana çerçevenin dışına çıkılmaz. Bazı sistemler, çok faydalı ve kullanışlı bilgiler içerse dahi, aşağıda açıklayacağımız angajman kurallarına sıkı sıkıya bağlı kalmak esas olmalıdır. Aksi takdirde hem yasal hem de etik olarak problemin meydana gelmesi kaçınılmazdır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Angajman Kuralları ve Sınırlar&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;angajman-kuralları-ve-sınırlarh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#angajman-kurallar%c4%b1-ve-s%c4%b1n%c4%b1rlarh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Koordinasyon toplantılarında tespit edilen kapsamın, detaylı olarak kurallara bağlanmasıyla ortaya çıkan -net ve şüpheye yer bırakmayan- kurallara angajman kuralları denilmektedir. Örneğin, X sunucusu test edilirken kapsam dışı bir veri kaynağından gelen paketler, analiz yazılımına kayıt edilebilir. Bu veriler tespit edildiği anda, hangi davranış tarzının izleneceğini dikte eden kurallar, test ekibine hem sınır koyar hem de serbestliğinin derecesini belirler.&lt;/p&gt;
+&lt;p&gt;Angajman kuralları ve sınırların tespitinde, güvenlik hizmeti veren firmanın geçmiş tecrübeleri önemli bir kriterdir. Bu sebeple koordinasyon toplantısında bu kurallar tespit edilirken güvenlik firmasının hizmet alacak firmayı uyarması ve yönlendirmesi büyük öneme sahiptir.&lt;/p&gt;
+&lt;p&gt;Test ekibinin bir üyesi, konsantre olduğu başka bir konu sebebiyle bazı durumlarda bu kuralları unutabilir. İşte bu sebeple, sızma testlerinin bir kişi tarafından yapılması arzu edilmez. Mümkünse en az iki kişi olması tercih edilmelidir. Eğer ekip 3 kişiden oluşur ise, görev paylaşımı, zaman planlaması daha etkili olacak ve verimlilik de artacaktır. Bu sayede, bir ekip üyesinin gözünden kaçan kural ve kısıtın diğer üye tarafından fark edilmesi mümkün olabilecektir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Test Süresi ve Zaman Planına Uymak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;test-süresi-ve-zaman-planına-uymakh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#test-s%c3%bcresi-ve-zaman-plan%c4%b1na-uymakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sızma Testi için planlanan toplam sürenin ne kadarı Bilgi Toplama safhasına ayrılmıştır? Bu süre içerisinde gerçekleştirilebilecek ve gerçekleştirilemeyecek tarzda testler bulunabilir. Bazı testler ve analizler özelliklerine göre 1-2 ay sürebilmektedir.&lt;/p&gt;
+&lt;p&gt;Planlanan zamanın dışına çıkacak testler, hesapta olmayan zaman ihtiyacı ve iş gücü anlamına gelir. Bu durum hizmet alan firmaya hesapta olmayan maliyet yükü getirebilir. Angajman kurallarına bağlı olarak yapılacak testlerin, zaman kalırsa yapılacak testlerin ve gerçekleştirilmesi mümkün olmayan testlerin belirlenmesi ve test ekibine talimat olarak verilmesi çok önemlidir.&lt;/p&gt;
+&lt;p&gt;Örneğin, bir sunucunun Ağ bağlantıları keşfi yapılır iken bir yandan da tespit edilen bir grup IP adresinin ilettiği paketleri analiz etmek ilk anda hızlı ve etkin bir karar gibi görünebilir. Ancak ağ keşfi esnasında ortaya çıkacak bir aksaklık ve hata, diğer paket analiz işlemlerini de boşa çıkarabilir. Bu durumda toplam 5 saat sürecek bir işlem, kaynakların bölünerek teksif edilmesinden dolayı daha uzun sürecektir. Bu karar, test ekibi lideri tarafından geçmiş tecrübelerine dayanarak verilmelidir.&lt;/p&gt;
+&lt;p&gt;Buradan varacağımız sonuç, zamanı en baştan koordinasyon esnasında doğru planlamanın esas olduğudur. Toplam 10 saat ihtiyaç gerektiren bir işlemi 5 saat olarak planlamak, gerçekçilikten uzak olacak ve test ekibini de stres altına sokacaktır.&lt;/p&gt;
+&lt;p&gt;Geçmiş tecrübeler göstermiştir ki toplam planlanan zamana, hesapta olmayan gecikmeler için %20 pay ilave edilmelidir. Bu %20 zamanca ihtiyat tedbiri, duruma göre kullanılabilir veya gerek kalmayabilir. Kullanılmadığı takdirde, hizmet alan firmaya bildirilmeli ve maliyet hesabından düşülmelidir. Aksi takdirde faturalanması da etik bir davranış olmayacaktır.&lt;/p&gt;
+&lt;p&gt;Bu zaman planlaması Koordinasyon safhasının alt maddesi olan &lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kontrol Tedbirleri&lt;/a&gt; bölümünde ve diğer konular altında yer alan Ödeme Yöntemi bölümünde net olarak ortaya konulmalı ve yazılı hale getirilmelidir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Testin Nihai Hedefini Unutmamak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;testin-nihai-hedefini-unutmamakh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#testin-nihai-hedefini-unutmamakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bilgi toplama işlemleri esnasında, testin nihai amacını unutmamak gerekir. Bu işlemler, testin nihai hedefini destekleyen tarzda araçlar kullanılarak yapılmalıdır.&lt;/p&gt;
+&lt;p&gt;Nihai hedefe katkısı olmayacak yazılımları kullanmak boşa zaman kaybı olacaktır. Bu sebeple, her adımda “Toplanacak bu bilgi, nihai hedefe ulaşmada ne derecede kritik öneme sahip?” sorusu dikkate alınmalıdır.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Siber Uzay Tanımı ve Aktörleri</title>
+      <link>http://localhost:1313/tr/siber-uzay-tanimi-ve-aktorleri/</link>
+      <pubDate>Wed, 20 Apr 2016 16:14:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/siber-uzay-tanimi-ve-aktorleri/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Hayatımızın her alanında, vazgeçilemez hale gelmeye devam eden teknoloji ve birbirine bağlı sistemler, insanlık tarihinde yeni bir kavramın ortaya çıkmasına sebep olmuştur. Başına siber ön eki ilave edilerek kullanılan kavramlar, teknolojik alanı, özellikle de internet benzeri ağlarla birbirine bağlı yapıların oluşturduğu alanı ifade etmekte kullanılıyorlar. Siber uzay, siber saldırı, siber tehdit bunlara verilebilecek örneklerden bazıları.&lt;/p&gt;
+&lt;p&gt;Ortaya çıkan bu (siber) yeni kavram, hayatın içinde olduğu kadar normal hayatın dışındaymış gibi farklı bir boyuta da sahip. Normal yaşamda kendisini gayet iyi tanıdığımız bir insanın, siber ortamda hareket ederken hiç tanımadığımız veya ortaya çıkmayan yönlerine de şahit olabilmek mümkün.&lt;/p&gt;
+&lt;p&gt;Tüm bu kavramlar ve davranış tarzları, bilime yeni araştırma alanları oluşturmakta.&lt;/p&gt;
+&lt;p&gt;Bu yazımızda, öncelikle siber uzayın tanımını yapacağız. Bu tanımla birlikte siber uzayın aktörlerini ortaya koymaya çalışacağız. Konunun çok farklı boyutları bulunduğundan, biz burada sadece aktörlerden bahsedeceğiz. Ekonomik, psikolojik ve davranışlar ile ilgili konulara diğer yazılarımızda yer vermeyi düşünüyoruz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Siber Uzay Tanımı&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Geçtiğimiz günlerde Ulaştırma, Denizcilik ve Haberleşme Bakanlığı tarafından 2016-2019 &lt;a href=&#34;http://www.udhb.gov.tr/doc/siberg/2016-2019guvenlik.pdf&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Ulusal Siber Güvenlik Strateji belgesi&lt;/a&gt; yayımlandı. Strateji Belgesinde, tespit edilen ve stratejik olarak öngörülen gelişmeler yer alıyor. Bu belgede “&lt;strong&gt;Siber Uzay&lt;/strong&gt;: Tüm dünyaya ve uzaya yayılmış durumda bulunan bilişim sistemlerinden ve bunları birbirine bağlayan ağlardan oluşan veya bağımsız bilgi sistemlerinden oluşan sayısal ortam” olarak tanımlanıyor.&lt;/p&gt;
+&lt;p&gt;Tüm bu Siber Uzayı analiz etmek için, içerisinde bulunan aktörleri ortaya koymadan ilerlememiz mümkün görünmüyor. Kendi zayıf ve kuvvetli taraflarımızı tespit edebilmek için oyunun içerisinde bulunan oyuncuları tanımak mutlak bir gereklilik. Öyleyse bu ortamın aktörlerini kategorilere ayıralım.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Aktörlerin Kategorileri&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Hükümet Destekli Yapılar:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronghükümet-destekli-yapılarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongh%c3%bck%c3%bcmet-destekli-yap%c4%b1larstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu aktörler, ülkelerin milli çıkarları göz önünde tutularak finanse edilen ve karmaşık alt yapılar kurup işletebilecek imkana sahiptir. Genellikle politik, ekonomik, teknik veya askeri bir takım motivasyona sahiptirler.&lt;/p&gt;
+&lt;p&gt;Gerçekleştirdikleri saldırılar, rastgele olmayan, özel seçilmiş hedeflere yöneliktir. Günümüzde siber alanda nispeten gelişmiş ülkelerin, bir mücadelede kuvvet çarpanı olarak kullanmak amacıyla hazırladığı, geliştirdiği ve kullanıma hazır halde tuttukları sistemleri ve yapıları bu grup içerisinde kabul edebiliriz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Organize Suç Yapıları:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongorganize-suç-yapılarıstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongorganize-su%c3%a7-yap%c4%b1lar%c4%b1strongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu yapılar, ciddi oranda menfaat elde edebilmek için, geçici süreyle ve belli bir zaman kısıtı içerisinde toplu saldırılar yapma imkanına sahiptirler. Yaptıkları saldırılarda hedefleri Kişisel bilgileri ele geçirmektir. Sosyal güvenlik numaraları, kredi kart bilgileri ve hesap numaraları benzeri kıymetli bilgileri elde etmek ve pazarlamak amacındadırlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Hacktivistler:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronghacktivistlerstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#stronghacktivistlerstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir takım politik düşünce ve fikirlerin propagandasını yaymak için meydana gelen oluşumlardır. Karşı oldukları fikir veya sistemlere saldırı yaparak kendi propagandalarını yaparlar. Ortaya çıkan sansasyonel gündemden faydalanarak varlıklarını duyurmak ve devam ettirmek amacındadırlar. Yaptıkları açıklamalarla, haklılıklarını savunma yolunu takip ederler.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;İç Tehditler:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongiç-tehditlerstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongi%c3%a7-tehditlerstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu tür aktörler genellikle eski çalışanlar veya işten çıkarılanlardan oluşur. İntikam almak ya da belli bir miktar kazanç elde etmek niyetindedirler. Bu amaçları doğrultusunda rakip firmalarla işbirliği de yapabilirler.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Fırsatçılar:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongfırsatçılarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongf%c4%b1rsat%c3%a7%c4%b1larstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Literatürde Script Kiddies olarak tanımlanan bu grup aktörler, sistemlerin açıklarını, zafiyetlerini keşfederek menfaat elde etme amacındadırlar. Profesyonel hacker olabilecekleri gibi, bir kaç teknik öğrenmiş ve heyecan arayan kişilere kadar çeşitli profile sahip olabilirler.&lt;/p&gt;
+&lt;p&gt;Büyük bir yapının üyesi olabilmek için kendilerini ispat etme gayreti gösterebilirler. Profesyonel hacker iseler, daha büyük bir aktörler grubuna dahil olma niyetiyle sistemleri araştırırlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Dahili Hatalı Kullanıcılar:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongdahili-hatalı-kullanıcılarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongdahili-hatal%c4%b1-kullan%c4%b1c%c4%b1larstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Tam olarak ne yaptığını bilmeyen çalışanların, sistem ayarlarında yaptıkları bir takım hataların neticesinde sistemler dışarıya karşı zayıf hale düşebilir. Böyle eğitim eksikliği bulunanlar bu gruba dahildir.&lt;/p&gt;
+&lt;p&gt;Güvenlik bilinci eksik kullanıcıları, gelen her türlü postaya tıklayarak tehlikeyi farkında olmadan içeri alanları da hata yapan dahili kullanıcılara ilave edebiliriz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Aktörlerin Takip Ettikleri Aşamalar&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Keşif:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongkeşifstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongke%c5%9fifstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu aşamada saldırganlar, hedef hakkında olabildiğince bilgi toplamaya çalışırlar. Sistemin yapısını öğrenmeye çalışır ve hangi durumda ne tepki veriliyor anlamak isterler. Sistem tarama yöntemlerini kullanarak, zayıflıkları bulunan cihazları tespit etmeye gayret ederler.&lt;/p&gt;
+&lt;p&gt;Sosyal medya ve açık kaynaklardan hedef firma ve yapı hakkında bilgi elde etmek için bir takım teknikler kullanırlar. Hedefin iş ilişkisi bulunan 3.taraflar üzerinde de keşif ve tarama yaparlar.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Hazırlık:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronghazırlıkstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#stronghaz%c4%b1rl%c4%b1kstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Hazılık aşamasında, keşif sonucu elde edilen bilgiler ışığında hedefe yönelik program hazırlama ve kodlama yöntemleri kullanılır. Fark edilmemek için gerekli teknikleri geliştirilir. Arkalarında yeterince maddi destek bulunan aktörler, genellikle herkesin bildiği açıklıkları değil, Zero-Day olarak ifade edilen zafiyetleri kullanmayı tercih ederler. Bu zafiyetleri keşfetmek için kendileri çalışma yürütebilecekleri gibi satın alma yöntemi de kullanabilirler.&lt;/p&gt;
+&lt;p&gt;Maddi imkanları kısıtlı olan aktörler, herkes tarafından satın alınabilecek türde yazılmış programları kullanmayı tercih ederler. Bu tür zararlı yazılımlar nispeten daha ucuzdur. Her türlü durumda, bu zararlı yazılımlar, sistemleri koruyan firewall benzeri sistemleri atlatmak üzere dizayn edilmiş yapılardır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Teslimat:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongteslimatstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongteslimatstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Hazırlık aşamasında elde edilen yazılım, bu aşamada hedef sisteme bulaştırılmak istenir. Bunun için başarı ihtimali en yüksek yöntem seçilmelidir. Bu yöntemi bulmak için genellikle sosyal mühendislik teknikleri ile desteklenen denemeler yapılır. Yazılımın bulaşması için gereken tek işlem, bir linke tıklamaktır. Hedef sistemi koruyan firewall benzeri önlemler, dışarıdan içeri girişleri engellemesine rağmen, sistem içerisinden dışarı çıkışları denetlemede yetersiz kalırlar.&lt;/p&gt;
+&lt;p&gt;Bir çalışanın posta kutusuna gelen mesajın içerisine yerleştirilen link, tıklanması için her türlü inandırıcılık ile dizayn edilir. Gönderici kaynağı, konusu ve insan merakı ile ilgili tüm zafiyetler kullanılabilir.&lt;/p&gt;
+&lt;p&gt;Bu teknik işe yaramadığı takdirde, zararlı yazılımlar web siteleri ve reklamlar aracılığı ile hedefe ulaştırılmaya çalışılır. Her hal ve şartta, kullanıcı eğitimi göz ardı edilemeyecek kadar önem arz etmektedir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;İstismar:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongistismarstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongistismarstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Teslimat aşaması başarılı olduğu takdirde, zararlı yazılımın ilk önceliği içerisinde bulunduğu sistemde fark edilmeden var olaya devam etmeye çalışmasıdır. Bunun için, işletim sisteminin güvenlik mekanizmalarını atlatmak ve sistemde kalıcılık sağlamak gerekir.&lt;/p&gt;
+&lt;p&gt;Sistem kullanıcısının iznine tabi web tarayıcı eklentilerinin içerisine gizlenebilecekleri gibi, çalıştırılmayan (executable) doküman ve resim türü veri dosyalarının içerisine de gizlenebilirler. Son zamanlarda sıkça duyduğumuz Advanced Persistent Thread (APT) yazılımları, bu türden ve tespit edilmesi en zor kod örnekleridir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Komuta Kontrol:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongkomuta-kontrolstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongkomuta-kontrolstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Sistemde yerleşen ve fark edilmeden gizlenen program, uygun bir zaman bulduğunda asıl merkezi sunucuna bağlanır ve daha geniş kabiliyete sahip yazılımları indirmeye çalışır. Bu işlem için kullandığı iletişimi, bulunduğu sistemin izin verdiği protokoller üzerinden gerçekleştirir. İstekleri, her sistemin kabul ettiği HTTPS, DNS veya TOR benzeri yollarla gönderirler. Günümüzde bu protokoller de güvenli sertifikalar kullandığından, zararlı yazılımların keşfedilmesi de zorlaşmıştır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Dahili Keşif:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongdahili-keşifstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongdahili-ke%c5%9fifstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Komuta kontrol bağlantı ve iletişimi sağlanarak indirilen diğer yazılım parçaları da sisteme dahil olduğunda, detaylı keşif ve kullanıcı bilgileri elde edilmeye çalışılır. Yerleşik olarak bulunduğu sistemin, ağ üzerinde bağlı bulunduğu diğer sunucu ve üyelere ulaşılmaya çalışılır. Tüm bu elde edilen veriler yine güvenli protokoller ardına gizlenerek Komuta Kontrol sunucusuna iletilir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;Devamlılık:&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongdevamlılıkstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongdevaml%c4%b1l%c4%b1kstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yeterince bilgi elde edilip dahili yapı ortaya çıkarıldıktan sonra sistemde tam kalıcılık elde edilmeye çalışılacaktır. Bunun için sistem kapatılıp açılsa dahi, sistemin başlangıcında ve fark edilmeden çalışabilen bootkit yazılımları MBR bölümüne yerleştirilir. Bir başka yöntem ise kullanıcı denetimi yapan veri tabanlarına, en yetkili kullanıcı ilave ederek sisteme her zaman giriş yetkisi elde etmektir.&lt;/p&gt;
+&lt;p&gt;Siber Uzay olarak ifade edilen ortamda aktörlerin kimler olabileceğini ve yaklaşık olarak hayata geçirilen aşamaları anlattığımız bu yazı başlangıç olarak yeterli duruma geldi. Yukarıda bahsedilen başlıkların her birisi detaylı olarak incelenmesi ve üzerinde çalışılması gereken konulara kapı aralıyor. İlerleyen günlerde bu konuları da açıklamaya çalışacağız. Görüş ve önerilerinizi bizimle paylaşabilirsiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Sızma Testi Safhaları (Koordinasyon -3)</title>
+      <link>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-3/</link>
+      <pubDate>Wed, 20 Apr 2016 16:11:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-3/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sızma Testi işlemlerini açıklayan yazılarımız devam ediyor. Bu çalışmamızda Sızma Testi Safhalarından 1.Safha olan Koordinasyon maddesi içerisinde görüşülecek &lt;strong&gt;hedefleri&lt;/strong&gt; açıklayacağız.&lt;/p&gt;
+&lt;p&gt;Bildiğiniz gibi Koordinasyon faaliyetin ilk bölümünü AMAÇ (&lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bkz&lt;/a&gt;.) başlığı oluşturur. Ulaşılmak istenen birincil, ikincil ve nihai hedefler, gerçekleştirilecek olan testlere yön verir. Tüm bu hedefler doğrultusunda gerçekleştirilen testler, hizmet alan firmanın genel hedef ve politikalarına katkı sağlar. Dolayısıyla doğru bir yaklaşımla tespit edilen hedefler, her zaman için hizmet alan firmaya büyük fayda meydana getirir.&lt;/p&gt;
+&lt;p&gt;Hedeflerin tespitinde dikkat edilmesi gereken konular ve yapılan genel hataları aşağıda açıkladık. Bu başlıklar, Birincil, ikincil ve nihai hedefler olarak 3 alt kısma ayrılmıştır. Siber uzayın esnekliğini de göz önüne alırsak, bu alt kısım ve maddeler değişebilir. İhtiyaca göre yeniden dizayn edilebilir. Hatta, yeni kontrol listeleri ve soru cevap formları da geliştirilebilir. Örnek olması açısından biz 3 alt madde kullanıyoruz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Birincil Hedefler&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yapılacak olan testin öncelikli hedeflerini belirleyen husus, standartları sağlamak olmamalıdır. Firma, bir standardı sağlamak için Sızma Testi yaptırıyorsa, bilinmelidir ki Standart ile Güvenlik aynı şey değildir.&lt;/p&gt;
+&lt;p&gt;Örneğin, sistemde müşteri bilgilerinin veya kredi kartlarının işlendiği bir bilişim altyapısı varsayalım. Burada tespit edilmesi gerekli birincil hedefler, sistemin ne kadar güvenli olduğu ve risklere karşı direnç, dayanıklılık düzeyini tespit olabilir. Bu hedefler genellikle yönetim kademesini ve karar mekanizmalarını doğrudan ilgilendirir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;İkincil Hedefler&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;İlk maddede olmaması gereken olarak ifade ettiğimiz tarzda hedefler burada belirtilir. Örneğin, standarda uygunluk tespiti, tam da bu ikincil hedeflerin konusudur. Yine aynı kredi kartı sistemini örnek verecek olursak, iletişim esnasında kullanılan şifreleme algoritmasının güvenlik düzeyi veya kullanılan iletişimin protokolünün zayıf taraflarının tespiti gibi konular örnek verilebilir.&lt;/p&gt;
+&lt;p&gt;Birincil ve İkincil hedefleri kesin kural ve çizgilerle ayırmak mümkün olmadığından bazen karıştırılır. Bu hedeflerin ayırımını yapabilmek için şu nokta dikkate alınır. Birincil hedefler, doğrudan şirket yönetimini ilgilendiren ve dikkatlerine sunulması gereken genel stratejik sonuçları elde etmeye yarayan hedeflerdir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Nihai Hedefler&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu madde bahsedeceğimiz nihai hedefler, birincil ve ikincil hedeflerden farklıdır. Yapılan testlerin firmanın uzun vadede gerçekleştirmek istediği hedeflerine katkı sağlayan noktalarıdır. Genellikle, test hizmeti veren firma ile uzun vadeli ve farklı zamanlarda test için anlaşılmış ise tespit edilebilirler.&lt;/p&gt;
+&lt;p&gt;Tek sefere mahsus testlerde birincil ve ikincil hedefleri tespit ve onlara göre testi şekillendirmek yeterli olabilir. Nihai hedefler ise orta ve uzun vadeli planlar ile ilgilidir. Örneğin, firma önümüzdeki 2 sene sonunda güvenli veri depolama ve yedekleme hizmeti vermek için alt yapı yatırımı kararı almıştır. Bu hizmeti vermeye başlamadan önce, 2 yıl boyunca her ay sistemini test ettirmek ve bu test sonuçlarıyla müşterilerine güvence vermek istiyor olabilir. İşte bu tür konular, istenirse nihai hedefler olarak tespit edilebilir.&lt;/p&gt;
+&lt;p&gt;Bu yazıyla birlikte Koordinasyon Safhası ile ilgili incelememizi tamamlamış olduk. Gelecek yazılarımızla Bilgi Toplama Safhasını detaylı incelemeye başlayacağız. Görüş ve yorumlarınızı bize bildirebilirsiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Sızma Testi Safhaları (Koordinasyon – 2)</title>
+      <link>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-2/</link>
+      <pubDate>Mon, 18 Apr 2016 16:08:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-2/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sızma Testi hazırlıkları esnasında 1.Safha olan koordinasyon işlemlerinin genel yapısını bu &lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34;&gt;bağlantıdaki&lt;/a&gt; yazımızda incelemiştik. Şimdi ise, yine toplantı esnasında görüşülecek konulardan bir tanesini detaylı olarak inceleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Bahsettiğimiz koordinasyon işlemleri içerisinde bulunan &lt;strong&gt;Kapsamın&lt;/strong&gt; tespiti esnasında, hizmet alan firmanın amacını ortaya çıkarabilmek için hizmet veren güvenlik firması bazı sorular sorar. Aşağıda, yapılacak testin tipine göre sorulabilecek soruları açıklayacağız. Hizmet alacak firma, toplantı esnasında meydana gelebilecek belirsizliklerin önüne geçmek maksadıyla, bu sorulara verilecek cevaplar konusunda koordinasyon toplantısı öncesinde hazırlık yapmalıdır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Ağ Testi&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Firma, sistem elemanlarına neden ağ testi yaptıracak?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Ağ testi, bir standardın yerine getirilmesi zorunluluğundan mı yaptırılıyor?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Firma, testin aktif olarak hangi zaman dilimlerinde yapılmasını daha uygun buluyor?&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Mesai saatlerinde mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Mesai saatleri dışında mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hafta sonlarında mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Toplam kaç IP adresi test edilecek?&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Test edilecek dahili ağ IP adres sayısı nedir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Test edilecek harici ağ IP adres sayısı nedir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Test edilecek Ağ topolojisi içerisinde Firewall, IPS / IDS veya Yük Dengeleyici sistem var mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sisteme giriş gerçekleştirilebilirse, testi yapan ekip nasıl hareket edecek?&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Giriş sağlanan sistemde yerel zafiyet taraması gerçekleştirilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Giriş sağlanan sistemde en yetkili kullanıcı olmak için çalışılacak mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Giriş sağlanan sistemde parolaları elde etmek için sözlük saldırıları gerçekleştirilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Web Uygulama Testi&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kaç adet uygulama için test yapılacak?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kaç adet oturum açma sistemi test edilecek?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kaç adet statik sayfa için test yapılacak?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kaç adet dinamik sayfa için test yapılacak?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Testi yapılacak uygulamanın kaynak kodları verilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Uygulamaya ait herhangi bir doküman verilecek mi?&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Cevap evet ise, bu dokümanlar nelerdir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Uygulama üzerinde statik analizler yapılacak mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Talep edilen diğer konular nelerdir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Kablosuz Ağ Testi&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sistemde kaç adet kablosuz ağ var?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bunlardan hangileri test edilecek?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sistemde, misafir kullanımı için kablosuz ağ var mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kablosuz ağların kriptolama teknikleri nelerdir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Misafir ağlara bağlı kullanıcılar test edilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Kablosuz ağların yayın mesafeleri nedir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bu kablosuz ağları ortalama kaç kişi kullanıyor?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Fiziksel Güvenlik Testleri&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Test edilecek mekan sayısı ve yerleri nelerdir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Test edilecek mekan, başka birimlerle ortak kullanılıyor mu?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Mekanda kaç kat var?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bulunan katlardan hangileri kapsama dahildir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Mekanda, geçilmesi gereken güvenlik görevlileri var mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Görevlileri teçhizat durumları ve yetkileri nelerdir?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Güvenlik hizmeti, 3.taraf bir firmadan mı alınıyor?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Mekanın kaç girişi mevcut?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Video kayıt güvenlik önlemi var mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Testi yapacak ekip, video kayıt cihazlarına erişimi test edecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Alarm sistemi var mı?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Sosyal Mühendislik Testi&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sosyal Mühendislik testleri için e-posta adres listesi verilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sosyal Mühendislik testleri için telefon numaraları listesi verilecek mi?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sosyal mühendislik sonucu sisteme fiziksel olarak giriş yetkisi veriliyor mu?&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Yukarıda belirtilen testlerle ilgili sorular genişletilebilir. Tecrübelere dayanarak farklılaştırmak da mümkündür.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Sızma Testi Safhaları (Koordinasyon -1)</title>
+      <link>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-1/</link>
+      <pubDate>Sun, 17 Apr 2016 16:05:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/sizma-testi-safhalari-koordinasyon-1/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sızma Testi Safhaları Nelerdir? başlıklı yazımızda (&lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bkz.&lt;/a&gt;), safhaların genel tanım ve içeriğini incelemiştik. Bu yazımızda, 1. Safha olan Koordinasyon konusuna detaylı olarak bakacağız.&lt;/p&gt;
+&lt;p&gt;Hazırladığımız bu yazılarda, Sızma Testi süreçlerini Hizmet veren firma ve müşteri ilişkisi içerisinde inceleme niyetindeyiz. Testi gerçekleştiren Sızma Testi uzmanları için teknik yazılar ve NASIL dokümanlarını hazırlamak ise projemizin bir sonraki aşamasını oluşturacak.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Koordinasyon&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir süreç hayata geçirilmek isteniyorsa, gerçekleştirilecek uygulama safhasından önce her zaman koordinasyon gereklidir. Planlamanın vazgeçilmez bir parçası olarak koordinasyon; tarafların birbirleriyle ortak anlayış içerisinde ve etkili iletişim mekanizmalarını çalıştırmaları olarak tanımlanabilir. Birbiriyle ortak dil kullanma, zaman açısından uyumlu çalışma ve bir konu ifade edildiğinde aynı şeyi anlama vb. anlamları bulunan koordinasyon ve koordinasyon tedbirleri taraflar arasında 1.Safhada tespit edilir ve karara bağlanır.&lt;/p&gt;
+&lt;p&gt;Koordinasyon tedbirleri, uyum ve verimli çalışma için tarafların aynı amaca yoğunlaşması ve hedeften sapılmasını engelleyen tedbirleri ifade eder. Örneğin, bir işlemin en geç başlama zamanı, en geç bitirilme zamanı, incelenecek uygulama veya IP aralığı gibi tüm kapsam ve kararlaştırılan noktalara koordinasyon tedbiri olarak bakılabilir.&lt;/p&gt;
+&lt;p&gt;Aşağıda bulunan şablon, uzun tecrübeler sonucu elde edilen bilgiler ışığında hazırlanmış bir listedir. Koordinasyon toplantıları için yol göstermesi amacıyla burada yer veriyoruz. İhtiyaca göre genişletip daraltmak mümkündür.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Koordinasyon Toplantı Başlıkları&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;&lt;strong&gt;Amaç&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongamaçstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongama%c3%a7strongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu nokta, hizmet alan tarafın beklenti ve düşüncelerinin firmayla paylaşıldığı kısımdır. Gerçekleştirilmek istenen testlerin neler olduğu ve hangi düşünceler ile bu testleri yapılacağı ortaya konulur. Böylece hizmet veren firma yetkilileri, gerçekleştirmekle yükümlü olacakları testlerin mahiyetini kavrayarak, genel çerçeveyi zihinlerinde oluşturabilirler.&lt;/p&gt;
+&lt;p&gt;Testler sonucunda ulaşılmak istenen birincil, ikincil ve nihai hedefler (&lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bkz.&lt;/a&gt;) tespit edilir. Bazı durumlarda, yapılmak istenen testlerin birbiriyle uyumsuz ve eş zamanlı yapılamayacağı ortaya çıkabilir. Bu nokta hizmet sağlayan firma, danışmanlık hizmeti olarak farklı önerileri sunabilir. Bütün bu görüşmeler neticesinde amaç ve hedefler belirlenir ve karara bağlanır.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Kapsam&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongkapsamstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongkapsamstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yapılacak olan Sızma Testinin teknik anlamda hangi sistemleri kapsayacağının net olarak belirlendiği aşamadır. Kısaca, Amaç bölümünde tespit edilen hedefler çerçevesinde detayların belirlenmesidir. Bu detaylar neticesinde gerçekleştirilecek olan testlerin süresi ve iş gücü ihtiyacı da ortaya çıkacaktır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Teste Konu Sistemler&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;teste-konu-sistemlerh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#teste-konu-sistemlerh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Halen çalışır durumda bulunan sistemin bir çok katman ve üyeleri bulunur. Bu sistemlerden hangilerinin test edileceği tam olarak belirlenmelidir. Örneğin, hizmet alan firmanın stok ve muhasebe sistemlerinin teste dahil edilip edilmeyeceği veya bu sistemlerin, sadece yedekleme kısımlarının testinin yeterli olacağı vb. konular görüşülür. Genel ifadeyle söylemek gerekirse, topoloji üzerinde bulunan elemanların kapsama dahil olanları veya hariç olanları tespit edilir.&lt;/p&gt;
+&lt;p&gt;Ağ Testi, Web Uygulamaları Testi, Kablosuz Sistemler Testi, Fiziksel Güvenlik Testi, Sosyal Mühendislik Testlerinden hangilerinin yapılacağı ve bu testlere hangi topoloji elemanlarının dahil olup olmayacağı hassasiyetle belirlenir.&lt;/p&gt;
+&lt;p&gt;Uygulama konusu olacak bu testlerle ilgili detaylı soruları bu bağlantıdaki (&lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34;&gt;bkz.&lt;/a&gt;) yazımızda bulabilirsiniz.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Yasal Kısıtlama ve İzinler&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yasal-kısıtlama-ve-izinlerh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#yasal-k%c4%b1s%c4%b1tlama-ve-izinlerh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Teste konu sistemlerin belirlenmesinden sonra, bu konuda yasal kısıtlamaların bulunup bulunmadığına mutlaka dikkat edilmesi gerekmektedir. Kişisel verilerin korunması, özel hayatın gizliliği ve diğer benzeri kanuni çerçevelerin hükümleri doğrultusunda hareket edilmesi gerektiği hatırdan çıkarılmamalıdır.&lt;/p&gt;
+&lt;p&gt;Yapılacak testlerin çok kritik bir başka bağıl sistemi aksatması veya devre dışı bırakması durumunda, hukuki sorumluluk doğma ihtimali bulunur. Önceden izin alınması gerekli merciler varsa bunun için atılması gerekli adımlar da bu noktada belirlenir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Çerçeve ve IP Aralıkları&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;çerçeve-ve-ip-aralıklarıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%a7er%c3%a7eve-ve-ip-aral%c4%b1klar%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bazı durumlarda, hizmet alan firmanın alt yapısı geniş bir coğrafi alana yayılmış olabilir. Coğrafi olarak geniş alana yayılmış sistemlerin tek bir noktadan testi, maliyet ve zaman planlaması açısından uygunluk göstermeyebilir. Bu tür durumlarda testler, zaman ve mekanca parçalara ayrılabilir.&lt;/p&gt;
+&lt;p&gt;Bununla birlikte, alan geniş olmasa dahi sistemde belli IP aralıkları özel maksatlarla tahsis edilmiş ve kısıtlı istemcilerle iletişim kuruyor olabilir. Yapılacak testlerde, bu kısıtlı iletişim kanallarında trafik yoğunluğu oluşacağından, hariç tutma veya farklı bir zamanda (Örneğin gece) yapılması kararlaştırılır.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Koordinasyon Tedbirleri&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongkoordinasyon-tedbirleristrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongkoordinasyon-tedbirleristrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kararlaştırılacak koordinasyon tedbirleri, ekiplerin kurulması ve uyumlu çalışması için vazgeçilmezdir. Kaynakların israfını engeller ve amaç birliğinin sağlanmasına katkıda bulunur. Bu sebeple en ince detaylarına kadar belirlenmeye çalışılmalıdır. Geçmiş tecrübeleri de dikkate alarak yapılan bir planlanma, meydana gelebilecek aksaklıkları önler.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Zaman Planlaması&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;zaman-planlamasıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#zaman-planlamas%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kapsam bölümünde tespit edilen konular ışığında, yürütülecek sürecin zaman planlaması yapılır. İhtiyaç duyulan toplam zaman ve bu toplam zamanın parçalara bölünerek aşama aşama planlanması kritik öneme sahiptir. Bir fikir vermesi açısından KİM? NEREDE? NE ZAMAN? NASIL? NE YAPACAK? Sorularına cevap aradığımız koordinasyon işlemlerindeki NE ZAMAN? sorusuna cevap aranır ve açıklığa kavuşturulur.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Mekan ve Güvenlik Planlaması&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;mekan-ve-güvenlik-planlamasıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mekan-ve-g%c3%bcvenlik-planlamas%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Gerçekleştirilecek testler esnasında görevlendirilen ekiplerin çalışma alanları ve tesislere giriş çıkışları, geçmiş güvenlik kayıtları (clearance) bu noktada görüşülür. Ayrıca ekiplere sağlanacak sosyal imkanlar ve ihtiyaçlarbu aşamada belirlenir.&lt;/p&gt;
+&lt;p&gt;Hizmet alan tarafın, kendi içerisinde uyguladığı güvenlik politikaları ile ekiplerin çalışma usulleri arasında bir uyumsuzluk çıkmaması için gerekli olan müsaadeler kararlaştırılır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;İletişim Konuları&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;iletişim-konularıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ileti%c5%9fim-konular%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Test sürecinin planlanması ve icrası esnasında hem yönetim hem de testi yapan ekiplerin kimlerle irtibat halinde olacakları belirlenir. İletişimin sağlıklı yapılamaması aksamalara yol açar, zaman planlaması kesintiye uğrayabilir. Bu tür istenmeyen durumların oluşmaması için, irtibat sisteminin etkili bir şekilde kurulması ve tüm taraflara bilgi verilmesi esastır.&lt;/p&gt;
+&lt;p&gt;İşlemler esnasında normal iletişim ihtiyaçları haricinde ortaya çıkan olağan dışı durumlar için aşağıda ayrı bir başlık bulunmaktadır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;3. Taraflarla Koordinasyon&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-taraflarla-koordinasyonh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-taraflarla-koordinasyonh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Hizmet alan tarafın sistemleri, 3.taraf firmalardan hizmet alıyor olabilir. Örneğin, bulut sistemleri, İnternet servis sağlayıcıları veya güvenlik çözümleri sağlayıcıları. Böyle bir 3.taraf söz konusu ile onlarla koordinasyon mutlak yapılmalıdır. Gerekirse, tarafların zamanca koordinasyonu için ayrı bir inceleme yapılmalıdır. Bazı durumlarda saat farklarından dolayı koordinasyon eksiklikleri oluşabilmektedir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Sosyal Mühendislik Konuları&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sosyal-mühendislik-konularıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sosyal-m%c3%bchendislik-konular%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kapsam maddesinde tespit edilen testler içerisinde Sosyal Mühendislik testi mevcut ise, bununla ilgili hususlar netleştirilmelidir. Yapılacak sosyal mühendislik testlerinde kullanılacak teknikler veya gerekiyorsa çalışanların eposta listeleri gibi konular karara bağlanmalıdır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Acil Durum Konuları&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;acil-durum-konularıh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#acil-durum-konular%c4%b1h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Testler esnasında istenmeyen durumlar ortaya çıkabilir. Bu tür durumlarda olayın ne şekilde, kime rapor edileceği mutlaka önceden tespit edilmelidir. Bu raporlama işleminin, hangi güvenli iletişim tekniği kullanılarak yapılacağı belirlenmelidir. Gerekirse açık ve kapalı anahtar değişiminin kimler arasında yapılacağı belirlenir.&lt;/p&gt;
+&lt;p&gt;İstenmeyen durumların neler olabileceği önceden bir miktar tahmin edilebilse de mümkün olan her türlü ihtimal öngörülemeyebilir. Bu durumlar, hizmet alan firmanın kapsamı, büyüklüğü veya fiziksel yapısına göre değişiklik gösterebilir.&lt;/p&gt;
+&lt;p&gt;Örneğin, küçük bir komut hatası bir Router cihazının kullanım dışı kalmasına yol açabilir. Bu durumda, cihazın tekrar yükleme ve kurulum yazılımının hazır bulundurulması, alınabilecek tedbirler arasında gösterilebilir. İlave olarak, bunun kime haber verileceği ve kim tarafından yapılacağının da tespit edilmesi gerekir.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Diğer Konular&lt;/strong&gt;&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongdiğer-konularstrongh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strongdi%c4%9fer-konularstrongh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Kapsam Dışı Veriler&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kapsam-dışı-verilerh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#kapsam-d%c4%b1%c5%9f%c4%b1-verilerh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Tüm bu testler esnasında, belirlenen çerçeve dışına çıkılmamaya çalışılsa da bazen kapsam dışı veriler elde edilebilir. Bu konuda ne yapılacağı net ve açık bir şekilde karara bağlanmalıdır. Örneğin, “bir sisteme ulaşıldığını ispat için sadece dosya listesi kayıt altına alınacak, web kamerasından fotoğraf çekme, dosya indirme yapılmayacak” vb. kurallar belirlenmelidir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Ödeme Yöntemi&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ödeme-yöntemih3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6deme-y%c3%b6ntemih3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Ödeme yöntemi, icra edilecek faaliyetin büyüklüğü, kaynak ihtiyacı ve koordinasyonun sonunda görüşülmeli ve taraflar arasında kararlaştırılmalıdır. Genellikle takip edilen yöntem, nihai sonuç raporunun tesliminden sonra ödeme şeklindedir. Taraflar arasında uzun süreli bir tedarik veya hizmet anlaşması mevcut ise belli bir oranın peşin, geri kalanının rapor tesliminden sonra ödenmesi şeklinde karar da verilebilir.&lt;/p&gt;
+&lt;p&gt;Yukarıda genel olarak açıklamaya çalıştığımız konular, Sızma Testi faaliyetinin 1. Safhası olan Koordinasyonun içeriğidir. Burada bahsedilen konular daraltılıp genişletilebilir. Umarız hizmet alacak ve verecek olan taraflara yol gösterici ve bilgilendirici olmuştur. Görüş ve önerilerinizi bize bildirebilirsiniz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Bilgi Toplama İşlemleri -1- Temel Yaklaşım</title>
+      <link>http://localhost:1313/tr/bilgi-toplama-islemleri-1-temel-yaklasim/</link>
+      <pubDate>Sat, 16 Apr 2016 16:28:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/bilgi-toplama-islemleri-1-temel-yaklasim/</guid>
+      <description>
+        
+        
+        &lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Bu yazımızdan itibaren, Sızma Testinin 2.Safhası olan Bilgi Toplama işlemleri ve detaylarına başlangıç yapıyoruz. Aşağıda listesi bulunan konuları sırasıyla ayrı ayrı yazılarla açıklama yolunu takip edeceğiz. Genel safhaları bu&amp;nbsp;&lt;a href=&#34;https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/&#34; data-type=&#34;post&#34; data-id=&#34;1049&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;yazımızdan&lt;/a&gt;&amp;nbsp;tekrar gözden geçirebilirsiniz. Doğru ve etkin olarak gerçekleştirilecek bilgi toplama işlemleri, ilerleyen safhalara girdi sağlayacaktır. Bu safhada anlatılacaklar, bilgi güvenliğini gerçekleştirmek isteyen tüm kurum ve firmalara da bilgiyi korumak adına almaları gereken tedbirleri gösterecektir. Bilgi toplama safhasının neleri kapsadığının ortaya konulması, her düzeyde yöneticiye hangi tedbirleri alması gerektiği konusunda ışık tutacaktır çünkü&amp;nbsp; testi yapan güvenlik ekibinin takip ettiği bilgi toplama işlemleri gerçek hayatta kötü niyetli yapıların da takip ettikleri işlemlere çok benzer.&amp;nbsp;&lt;a href=&#34;https://www.siberoloji.com/siber-uzay-tanimi-ve-aktorleri/&#34; data-type=&#34;post&#34; data-id=&#34;1058&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Siber Uzay tanımı ve Aktörleri&lt;/a&gt;&amp;nbsp;konulu yazıyı incelemenizi tavsiye ediyoruz.&lt;/p&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Konuyu aşağıdaki başlıklar altında araştıracağız. Yazının devamında Bilgi Toplama konusunda temel yaklaşımı açıkladık.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Temel Yaklaşım&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hedef Seçimi&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Açık Kaynak İstihbaratı&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Örtülü Bilgi Toplama&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Koruma Mekanizmalarını Tespit&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
+&lt;h1&gt;Temel Yaklaşım&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Bilgi toplama işlemlerini, kullanılan araçlar ve elde edilen çıktılara göre belli gruplara ayırmak gerekmektedir. Bu ayırım yapılmadığı takdirde elde edilen sonuçlar, tespit edilen kapsam ve amacın dışına çok kolay taşabilir. Araçların ayırımı, kapsam dahilinde kalmayı sağlar. Bu sebeple, gerçekleştirilecek işlemleri 3 Katmana ayıracağız. Bu konuda hazırlanacak diğer yazılarda açıklanan konuların yanında, hangi katmanda işlem yapılabileceğini belirteceğiz. Örneğin, bir konunun yanında 1K-2K ifadesi gördüğünüzde, bu 1.Katman ve 2.Katman bilgi toplama işlemlerinin kastedildiği anlamına gelmektedir. Böylece, işlemler daha net olarak kavranabilir.&lt;/p&gt;
+&lt;h2&gt;1.Katman&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1katmanh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1katmanh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Bu katman, bilgi toplamanın en hızlı ve otomatik programlar aracılığı ile gerçekleştirilen kısmıdır. Bu otomatik bilgi toplama araçları, arama motorları ve internet arşivlerini tarayarak hedef hakkında sonuçlar üretirler.&lt;br&gt;Ayrıca, hedefin belli standart bilgi güvenliği politikaları olup olmadığını ve bu standartlara ne kadar uyulduğunu araştırmayı da kapsar. Bilgi Toplama safhasının gerçekleştirildiğini söyleyebilmek için bu katman mutlaka uygulanmalıdır.&lt;br&gt;Bir firma, sektör standardına uygunluk testi yaptırmak istiyorsa (Örn.: ISO 27001) bu katman yeterli olacaktır.&lt;/p&gt;
+&lt;h2&gt;2. Katman&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-katmanh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-katmanh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;1.Katmanda gerçekleştirilen işlemlerin yanında özellikle elle yapılan detaylı bilgi toplama işlemleridir. Belli bir takım sorulara cevap arayan bilgi toplama yöntemleri ve Açık Kaynak İstihbaratını da kapsar. Daha çok fiziksel yerleşim, adres bilgisi ve iş ilişkilerinin detayları incelenir.&lt;br&gt;Bir firma, sektör standardına uygunlukla birlikte uzun dönem bilgi güvenliği hedefliyorsa ve 3. taraf tedarikçilerle iş anlaşması yapmayı planlıyorsa bu katmanı da kullanmayı düşünmelidir.&lt;/p&gt;
+&lt;h2&gt;3. Katman&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-katmanh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-katmanh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Çok ileri düzey sızma testlerinde gerekli olabilecek ve detaylı bilgi toplama işlemleridir. Uzun zamana yayılmış ve mümkün olan her türlü tekniğin kullanıldığı katmandır. Her sızma testinde yapılma zorunluluğu yoktur. Bu katmana ait bilgi toplama daha çok devletler düzeyini ilgilendirir.&lt;br&gt;Bilgi toplamanın yanında, sürekli ve kadrolu siber savunma teşkilatı kurmayı planlayan yapılar bu katmanı kullanmalıdır.&lt;/p&gt;
+&lt;h2&gt;Bilgi Toplama Nedir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgi-toplama-nedirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgi-toplama-nedirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Sızma Testinin ilerleyen safhalarında zafiyet analizi ve sisteme giriş işlemleri yapılacaktır. Bu safhaların sonuçsuz kalmaması için bir takım temel bilgilere ihtiyaç vardır. Bu safhada ne kadar bilgi toplanırsa, ortaya konabilecek saldırı vektörleri sayısı ve başarı ihtimali artacaktır.&lt;br&gt;Saldırı vektörü, saldırının yolunu tarif eder. Toplanan bilgiler ışığında 10 ayrı yöntem kullanılabileceği ve bunların hangi aşamaları takip ederek gerçekleştirilebileceğinin ortaya çıkarıldığını düşünelim. Bu 10 ayrı yöntemin her birisine saldırı vektörü denir fakat bunlar da kendi arasında başarı ihtimali hesaplanarak derecelendirilir. Hepsini birden uygulama ihtimali yoktur.&lt;br&gt;Sızma Testi sonuç raporunda firmaya tüm vektörler ve potansiyel tehlikeler mutlaka rapor edilmelidir.&lt;/p&gt;
+&lt;h2&gt;Bilgi Toplama Niçin Yapılır?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgi-toplama-niçin-yapılırh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgi-toplama-ni%c3%a7in-yap%c4%b1l%c4%b1rh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Sızma Testi Bilgi Toplama işlemi tamamen Açık Kaynak İstihbaratı ile ilgilidir. Bu sayede, firma kendisine ait bilgilerin ne kadarının açık kaynakların elinde olduğunu tespit edecek ve gerekli önlemleri alabilecektir.&lt;br&gt;Bu süreçte, sisteme giriş ihtimali olan noktalar ortaya çıkarılmaya çalışılır. Bunlar, elektronik olabileceği gibi fiziki ve insan kaynaklı da olabilir. Fiziksel zafiyetler, fiziki güvenlik alanında alınması gereken tedbirleri, insan kaynaklı zafiyetler sosyal mühendislik ve çalışan eğitimlerine ışık tutacaktır.&lt;/p&gt;
+&lt;h2&gt;Bilgi Toplama Ne Değildir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgi-toplama-ne-değildirh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgi-toplama-ne-de%c4%9fildirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Bilgi toplama işlemleri esnasında kullanılan katmanlar aracılığı ile istenilen bir bilgiye ulaşılamaz ise mutlaka bulmak için standart dışı yöntemlere başvurulmaz. Bu yaklaşım Sızma Testinin kapsamı dışındadır. Örneğin, çöp karıştırma tarzı işlemler kapsam dışıdır.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Sızma Testi Safhaları Nelerdir?</title>
+      <link>http://localhost:1313/tr/sizma-testi-safhalari-nelerdir/</link>
+      <pubDate>Sat, 16 Apr 2016 16:02:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/sizma-testi-safhalari-nelerdir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Kullanılan bilişim sisteminin mevcut durumu ve alınması gereken tedbirleri belirlemek amacıyla yapılan testlere Sızma Testi (Penetration Test) adı verilmektedir. Sızma Testi olarak ifade edilen süreç 7 safhadan oluşur. Sızma Testi Safhaları, bazen net olarak birbirinden ayrılmasa da karakter olarak önemli farlılıklar da  ihtiva etmektedirler.&lt;/p&gt;
+&lt;p&gt;Planlamanın ve uygulamanın belli bir prosedüre bağlanması için genel olarak kabul edilen, sürecin 7 safhası bulunduğu yönündedir. Bu safhaları 5 adet olarak ifade eden kaynaklar da bulunmaktadır. Biz çalışmalarımızda 7 safhayı esas alacağız.&lt;/p&gt;
+&lt;p&gt;Standart olarak bahsedilen konular, hizmet veren taraf olarak güvenlik firmalarına yol gösterdiği gibi hizmet alan taraflara da kontrol ve denetim imkanı sağlamaktadır. Bu sebeple, yazılarımızda açıklayacağımız safhalar ve detaylar, sızma testinin tüm taraflarını ilgilendirmektedir.&lt;/p&gt;
+&lt;p&gt;Aşağıdaki bölümde Sızma Testi Safhaları listesini ve genel tanımlarını inceleyebilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Sızma Testi Safhaları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sızma-testi-safhaları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#s%c4%b1zma-testi-safhalar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;1. Koordinasyon&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-koordinasyon&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-koordinasyon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bu safha, yapılacak olan testlerin maksadını tespit ve testte yer alacak sistemlerin neler olacağını belirlemek amacı güder. Hizmet alan ve veren tarafların, birbirlerinin talep ve kabiliyetlerini anlamak için, karşılıklı soruların sorulduğu ve üzerinde konuşulan tüm konularda mutabakat sağlandığı safhadır.&lt;/p&gt;
+&lt;p&gt;İlerleyen safhalarda, sürecin tıkanıp gecikmelerin yaşanmaması adına “Koordinasyon” olarak adlandırılan bölümde, gerekli tüm koordinasyonun yapılıp tamamlanması beklenir. Sızma Testi hizmeti verecek tarafın, sistem ve kapsam ile ilgili sorularının yanında hizmet alacak tarafın da bir çok konuyu sorarak, kesinliğe kavuşturması gerekir. Şu an için Sızma Testi Safhaları hakkında genel bir açıklama yapmakla yetiniyoruz.&lt;/p&gt;
+&lt;h3&gt;2. Bilgi Toplama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-bilgi-toplama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-bilgi-toplama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sızma Testi yapılacak sistem veya hedef hakkında bilgi toplama, sürecin 2. safhasıdır. Bu safhada, bilgi toplama işlemleri genellikle “aktif bilgi toplama” ve “pasif bilgi toplama” olarak ayrılmaktadır. Ancak bu ayrım, gerçekte sadece hedefle iletişime geçme durumuna göre bilgi toplamanın çeşitlerini ifade eder.&lt;/p&gt;
+&lt;p&gt;Bizim burada ifade edeceğimiz bilgi toplama safhası ise, 3 ayrı katmandan oluşmaktadır. Her bir katmanda elde edilen bilgiler başlı başına bir anlam ifade edebileceği gibi, bir sonraki katmana girdi sağlayacak şekilde de kullanılabilir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;1.Katman&lt;/h4&gt;
+&lt;p&gt;Bu katman, bilgi toplamanın en hızlı ve otomatik programlar aracılığı ile gerçekleştirilen kısmıdır. Bu otomatik bilgi toplama araçları, arama motorları ve internet arşivlerini tarayarak hedef hakkında sonuçlar üretirler.&lt;/p&gt;
+&lt;p&gt;Ayrıca, hedefin belli standart bilgi güvenliği politikaları olup olmadığını ve bu standartlara ne kadar uyulduğunu araştırmayı da kapsar. Bilgi Toplama safhasının gerçekleştirildiğini söyleyebilmek için bu katman mutlaka uygulanmalıdır.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;2. Katman&lt;/h4&gt;
+&lt;p&gt;1.Katmanda gerçekleştirilen işlemlerin yanında özellikle elle yapılan detaylı bilgi toplama işlemleridir. Belli bir takım sorulara cevap arayan bilgi toplama yöntemleri ve Açık Kaynak İstihbaratını da kapsar. Daha çok fiziksel yerleşim, adres bilgisi ve iş ilişkilerinin detayları incelenir.&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;3. Katman&lt;/h4&gt;
+&lt;p&gt;Çok ileri düzey sızma testlerinde gerekli olabilecek ve detaylı bilgi toplama işlemleridir. Uzun zamana yayılmış ve mümkün olan her türlü tekniğin kullanıldığı katmandır. Her sızma testinde yapılma zorunluluğu yoktur. Bu katmana ait bilgi toplama daha çok devletler düzeyini ilgilendirir.&lt;/p&gt;
+&lt;h3&gt;3. Tehdit Modelleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-tehdit-modelleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-tehdit-modelleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bu safhada, hizmet alan tarafın Varlıkları ve bu varlıklara karşı mevcut olabilecek Potansiyel Tehditler analiz edilir. Klasik SWOT analizi yaklaşımına benzer bir yöntem izlenebilir. Burada önemli nokta, varlıkların ve değerlerinin doğru tespit edilerek, önem derecesine göre tehditlerin doğru analiz edilmesidir.&lt;/p&gt;
+&lt;p&gt;En önemli kriterlerden bir tanesi de tehdidin tekrar tekrar meydana gelme olasılığıdır. Bu durum genellikle, hizmet alan tarafın kullandığı sistemler konusunda, hangi tedarikçiye ne kadar vazgeçilmeyecek derecede bağlandığıyla doğrudan ilgilidir.&lt;/p&gt;
+&lt;p&gt;Tüm bu yapılan analizler neticesinde tehditler ve potansiyel tehditler ortaya konulur.&lt;/p&gt;
+&lt;h3&gt;4. Zafiyet Analizi&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-zafiyet-analizi&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-zafiyet-analizi&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Hedef sistemin fiziksel veya programlardan kaynaklanan mantıksal açıklarını, zayıf yönlerini ortaya çıkarma amacı ile ilgilidir. Bu zafiyetleri tespit için gerçekleştirilecek deneme ve test yöntemlerinin uygulanması safhasıdır.&lt;/p&gt;
+&lt;p&gt;Uygulama esnasında 1. Safha olan koordinasyon esnasında belirlenmiş kısıtlayıcı kurallara mutlaka uygun hareket edilmelidir. Zaman ve imkanlar da dikkate alınarak tespit edilen hedefleri gerçekleştirmek esastır.&lt;/p&gt;
+&lt;p&gt;Örneğin: Hedefimiz, yetkili kullanıcı olarak web sunucuya erişim sağlamak ise, bu hedefe yönelik olarak zafiyet tespit edilmeye çalışılmalıdır. Bu çalışmalar esnasında testi yapanın karşısına başka zafiyetler çıkabilir. Bunlar ayrıca raporlanmak üzere kaydedilse dahi asıl hedeften sapılmamalıdır.&lt;/p&gt;
+&lt;h3&gt;5. Sisteme Giriş&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-sisteme-giriş&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-sisteme-giri%c5%9f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sisteme giriş safhası, önceden gerçekleştirilen 4 safhanın sonucunda, mevcut bulunan güvenlik tedbirlerini devre dışı bırakarak sisteme giriş noktasını kullanmak ile ilgilidir.&lt;/p&gt;
+&lt;p&gt;Zafiyet analizi ve bilgi toplama safhaları yeterince verimli olarak gerçekleştirilmiş ise bu safha, belirli tekniklerin uygulanmasından ibarettir. Çünkü elde edilen bilgiler ve analizler sistemde hangi zafiyetlerin bulunduğunu önceki safhada zaten ortaya çıkarmıştır. Geriye kalan, bu zafiyeti istismar eden uygulamayı devreye sokmaktır.&lt;/p&gt;
+&lt;h3&gt;6. Giriş Sonrası İşlemler&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-giriş-sonrası-işlemler&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-giri%c5%9f-sonras%c4%b1-i%c5%9flemler&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bu safhanın ilk amacı, içerisine erişim sağlanılan sistemin üzerinden bulundurduğu bilgileri ve kıymet derecesidir.&lt;/p&gt;
+&lt;p&gt;Sistemin diskinde kayıtlı veriler ne derecede hassas? Bu sistem, diğer sistemlere erişim için kullanışlı mı? Bir sonraki adım için kalıcılık sağlamak gerekli ise bu sistem kullanılabilir mi?&lt;/p&gt;
+&lt;p&gt;Bütün bu sorulara vereceğimiz cevapların yanında 1.safha olan Koordinasyon safhasında tespit edilen kurallar ve kapsamın sınırları çok önemlidir.&lt;/p&gt;
+&lt;h3&gt;7. Raporlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-raporlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-raporlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sızma Testi Safhaları sonunda elde edilen bulgular ve sonuçlar bir rapor halinde hizmet alan tarafa sunulur. Bu raporun belirli bir formatı yoktur. Aslında her firma kendine özgün bir rapor üretebilir. Bir şablon kısıtı olmasa da, raporun belli bir takım özellikleri taşıması beklenmelidir.&lt;/p&gt;
+&lt;p&gt;Genellikle ilk kısımda, konuyu özetleyen ve teknik detaylardan arındırılmış bir “Uygulama Özeti” olması beklenir. İkici kısım, gerekli çalışmaları yapacak teknik personele yol gösteren “Teknik Rapor” kısımdır. Bu bölümde, tüm safhalar esnasında gerçekleştirilen işlemler teknik detaylarıyla raporlanır. Tespit edilen zafiyetler, önem derecesi ifade edilir. Son olarak, sonuç kısmında ise düşünce ve tavsiyelere yer verilerek rapor tamamlanır.&lt;/p&gt;
+&lt;p&gt;Bu yazımızda kısaca açıklamasını yaptığımız safhaların detaylarına ilerleyen yazılarımızda yer vereceğiz.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

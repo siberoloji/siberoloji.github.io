@@ -1,0 +1,219 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Data Transmission Modes</title>
+    <link>http://localhost:1313/tags/data-transmission-modes/</link>
+    <description>Recent content in Data Transmission Modes on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Oct 2024 12:09:12 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/data-transmission-modes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Data Transmission Modes</title>
+      <link>http://localhost:1313/data-transmission-modes/</link>
+      <pubDate>Wed, 30 Oct 2024 12:09:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-transmission-modes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Data transmission is a fundamental aspect of computer networking, facilitating communication between devices. Understanding the various modes of data transmission is essential for optimizing network performance and ensuring efficient communication. This blog post delves into the three primary data transmission modes: &lt;strong&gt;Simplex&lt;/strong&gt;, &lt;strong&gt;Half-Duplex&lt;/strong&gt;, and &lt;strong&gt;Full-Duplex&lt;/strong&gt;. Each mode has unique characteristics, advantages, and applications, making them suitable for different scenarios.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Overview of Data Transmission Modes&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;overview-of-data-transmission-modesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#overview-of-data-transmission-modesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Data transmission modes refer to the directionality of data flow between two connected devices. The choice of transmission mode can significantly impact the efficiency and reliability of communication. Below are the three primary modes:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Simplex Mode&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Half-Duplex Mode&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Full-Duplex Mode&lt;/strong&gt;&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Simplex Mode&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;simplex-modeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#simplex-modeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In &lt;strong&gt;Simplex Mode&lt;/strong&gt;, data transmission occurs in one direction only. This means that one device sends data while the other device only receives it, with no capability for sending data back to the sender. This unidirectional communication is ideal for situations where feedback from the receiver is unnecessary.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Characteristics:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Directionality:&lt;/strong&gt; Unidirectional&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bandwidth Usage:&lt;/strong&gt; Utilizes maximum bandwidth since all available capacity is dedicated to one direction.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Error Handling:&lt;/strong&gt; Limited error checking since there is no return path for acknowledgments.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Broadcasting Systems:&lt;/strong&gt; Television and radio broadcasts where information flows from the broadcaster to the audience.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Keyboards:&lt;/strong&gt; Data flows from the keyboard to the computer, with no need for the keyboard to receive any data back.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sensors:&lt;/strong&gt; Devices like temperature sensors that send readings to a central monitoring system.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;High efficiency in scenarios where only one-way communication is needed.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Minimal complexity in design and implementation.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Lack of feedback can lead to challenges in error detection and correction.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Not suitable for interactive applications where two-way communication is essential.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Half-Duplex Mode&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;half-duplex-modeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#half-duplex-modeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;strong&gt;Half-Duplex Mode&lt;/strong&gt; allows data transmission in both directions, but not simultaneously. This means that while one device sends data, the other must wait until it has finished before it can respond.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Characteristics:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Directionality:&lt;/strong&gt; Bidirectional but alternating.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bandwidth Usage:&lt;/strong&gt; More efficient than simplex as it allows for two-way communication without requiring additional channels.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Error Handling:&lt;/strong&gt; Improved error detection capabilities since both devices can communicate back and forth.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Walkie-Talkies:&lt;/strong&gt; Users take turns speaking; one must finish before the other can respond.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;CB Radios:&lt;/strong&gt; Similar to walkie-talkies, where users communicate in turns.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Fax Machines:&lt;/strong&gt; Sending documents in one direction at a time.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Allows for two-way communication without needing separate channels.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;More efficient use of bandwidth compared to simplex mode.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Slower communication as devices must wait for their turn to transmit.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Potential delays in communication can occur if multiple messages are queued.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Full-Duplex Mode&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;full-duplex-modeh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#full-duplex-modeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In &lt;strong&gt;Full-Duplex Mode&lt;/strong&gt;, data can be transmitted in both directions simultaneously. This mode allows for continuous two-way communication, enhancing interaction between devices.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Characteristics:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Directionality:&lt;/strong&gt; Bidirectional and simultaneous.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Bandwidth Usage:&lt;/strong&gt; Requires more bandwidth since both channels are utilized at once.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Error Handling:&lt;/strong&gt; Enhanced error detection due to continuous feedback between devices.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Telephone Networks:&lt;/strong&gt; Both parties can speak and listen at the same time.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Video Conferencing Systems:&lt;/strong&gt; Participants can interact without waiting for turns.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Modern Local Area Networks (LANs):&lt;/strong&gt; Devices communicate simultaneously over a shared medium.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Fast and efficient communication as there are no delays between responses.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Ideal for applications requiring real-time interaction, such as voice calls or online gaming.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Increased complexity in design and implementation due to simultaneous data handling.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Requires more sophisticated hardware to manage concurrent transmissions effectively.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Comparison Table of Transmission Modes&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;comparison-table-of-transmission-modesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#comparison-table-of-transmission-modesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:table --&gt;
+&lt;figure class=&#34;wp-block-table&#34;&gt;&lt;table class=&#34;has-fixed-layout&#34;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mode&lt;/th&gt;&lt;th&gt;Directionality&lt;/th&gt;&lt;th&gt;Bandwidth Usage&lt;/th&gt;&lt;th&gt;Advantages&lt;/th&gt;&lt;th&gt;Disadvantages&lt;/th&gt;&lt;th&gt;Examples&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Simplex&lt;/td&gt;&lt;td&gt;Unidirectional&lt;/td&gt;&lt;td&gt;Maximum available&lt;/td&gt;&lt;td&gt;High efficiency for one-way communication&lt;/td&gt;&lt;td&gt;No feedback or error checking&lt;/td&gt;&lt;td&gt;TV broadcasting, keyboards&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Half-Duplex&lt;/td&gt;&lt;td&gt;Bidirectional (alternating)&lt;/td&gt;&lt;td&gt;Moderate&lt;/td&gt;&lt;td&gt;Allows two-way communication&lt;/td&gt;&lt;td&gt;Slower due to turn-taking&lt;/td&gt;&lt;td&gt;Walkie-talkies, fax machines&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Full-Duplex&lt;/td&gt;&lt;td&gt;Bidirectional (simultaneous)&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Fast real-time interaction&lt;/td&gt;&lt;td&gt;More complex hardware requirements&lt;/td&gt;&lt;td&gt;Telephone networks, video calls&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- /wp:table --&gt;
+&lt;h2&gt;Factors Affecting Data Transmission Modes&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;factors-affecting-data-transmission-modesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#factors-affecting-data-transmission-modesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;When selecting a data transmission mode, several factors should be considered:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
+&lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Application Requirements:&lt;/strong&gt; Determine whether real-time interaction is necessary or if one-way communication suffices.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Network Infrastructure:&lt;/strong&gt; Assess whether existing hardware supports full-duplex capabilities or if half-duplex would be more feasible.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Cost Considerations:&lt;/strong&gt; Evaluate budget constraints as full-duplex systems may require more investment in technology and infrastructure.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Synchronization Types&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;synchronization-typesh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#synchronization-typesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In addition to directionality, synchronization plays a crucial role in data transmission:&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Synchronous Transmission&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;synchronous-transmissionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#synchronous-transmissionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Synchronous transmission involves sending data in a continuous stream with synchronized timing between sender and receiver. This method is often used in high-speed networks where efficiency is paramount.&lt;/p&gt;&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Asynchronous Transmission&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;asynchronous-transmissionh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#asynchronous-transmissionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Asynchronous transmission sends data in discrete packets rather than a continuous stream. Each packet includes start and stop bits, allowing the receiver to identify when a new byte begins and ends. This method is common in applications like serial communications (e.g., USB).&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Understanding data transmission modes—simplex, half-duplex, and full-duplex—is essential for anyone involved in networking or telecommunications. Each mode has its strengths and weaknesses, making them suitable for different applications based on requirements such as speed, efficiency, and interaction needs. By carefully considering these factors, network designers can optimize their systems for better performance and reliability.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Citations:&lt;br&gt;[1] &lt;a href=&#34;https://findtodaysnotes.wordpress.com/transmission-modes-in-computer-networks/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://findtodaysnotes.wordpress.com/transmission-modes-in-computer-networks/&lt;/a&gt;&lt;br&gt;[2] &lt;a href=&#34;https://gcore.com/learning/data-transmission-guide-everything-you-need-to-know/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gcore.com/learning/data-transmission-guide-everything-you-need-to-know/&lt;/a&gt;&lt;br&gt;[3] &lt;a href=&#34;https://computerscienceigsce.wordpress.com/chapter-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://computerscienceigsce.wordpress.com/chapter-2/&lt;/a&gt;&lt;br&gt;[4] &lt;a href=&#34;https://nsaaleaict.wordpress.com/computer-networking/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nsaaleaict.wordpress.com/computer-networking/&lt;/a&gt;&lt;br&gt;[5] &lt;a href=&#34;https://computernetworks969.wordpress.com/2016/06/19/transmission-modes-in-computer-networks/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://computernetworks969.wordpress.com/2016/06/19/transmission-modes-in-computer-networks/&lt;/a&gt;&lt;br&gt;[6] &lt;a href=&#34;https://avcreatians.wordpress.com/2020/08/10/types-of-transmission-modes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://avcreatians.wordpress.com/2020/08/10/types-of-transmission-modes/&lt;/a&gt;&lt;br&gt;[7] &lt;a href=&#34;https://nripeshnrip.wordpress.com/2018/09/20/data-communication-computer-networks/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nripeshnrip.wordpress.com/2018/09/20/data-communication-computer-networks/&lt;/a&gt;&lt;br&gt;[8] &lt;a href=&#34;https://telecommunicationhub.wordpress.com/2018/08/19/different-mode-of-transmission/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://telecommunicationhub.wordpress.com/2018/08/19/different-mode-of-transmission/&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

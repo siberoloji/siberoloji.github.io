@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Hibp</title>
+    <link>http://localhost:1313/tags/hibp/</link>
+    <description>Recent content in Hibp on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Oct 2024 17:11:31 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/hibp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>What are some notable breaches that have been added to HIBP recently?</title>
+      <link>http://localhost:1313/what-are-some-notable-breaches-that-have-been-added-to-hibp-recently/</link>
+      <pubDate>Thu, 10 Oct 2024 17:11:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/what-are-some-notable-breaches-that-have-been-added-to-hibp-recently/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Recently, several notable breaches have been added to the Have I Been Pwned (HIBP) database, highlighting the ongoing challenges of online security. Here are some significant incidents:&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;1. &lt;strong&gt;Wayback Machine Breach&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-strongwayback-machine-breachstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-strongwayback-machine-breachstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Breach Date:&lt;/strong&gt; September 28, 2024&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Date Added to HIBP:&lt;/strong&gt; October 9, 2024&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Compromised Accounts:&lt;/strong&gt; Approximately 31,081,179&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Compromised Data:&lt;/strong&gt; Email addresses, screen names, bcrypt-hashed passwords, and other internal data.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;The Internet Archive&amp;rsquo;s Wayback Machine suffered a significant breach that exposed data from over 31 million users. The breach was confirmed after hackers defaced the site and left a taunting message regarding the incident. Troy Hunt, the creator of HIBP, received the compromised data and incorporated it into the database shortly after verifying its authenticity[3][4][5].&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;2. &lt;strong&gt;Blooms Today Breach&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-strongblooms-today-breachstrongh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-strongblooms-today-breachstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Breach Date:&lt;/strong&gt; November 11, 2023&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Date Added to HIBP:&lt;/strong&gt; September 3, 2024&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Compromised Accounts:&lt;/strong&gt; 3,184,010&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Compromised Data:&lt;/strong&gt; Email addresses, names, phone numbers, physical addresses, and partial credit card data.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;In April 2024, it was reported that records from Blooms Today were being sold on a hacking forum. The breach included sensitive information but did not expose enough credit card data to facilitate fraudulent purchases[1].&lt;/p&gt;
+&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
+&lt;h3&gt;Overview of Recent Breaches&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;overview-of-recent-breachesh3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#overview-of-recent-breachesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:table --&gt;
+&lt;figure class=&#34;wp-block-table&#34;&gt;&lt;table class=&#34;has-fixed-layout&#34;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Breach Name&lt;/th&gt;&lt;th&gt;Breach Date&lt;/th&gt;&lt;th&gt;Date Added to HIBP&lt;/th&gt;&lt;th&gt;Compromised Accounts&lt;/th&gt;&lt;th&gt;Compromised Data&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Wayback Machine&lt;/td&gt;&lt;td&gt;September 28, 2024&lt;/td&gt;&lt;td&gt;October 9, 2024&lt;/td&gt;&lt;td&gt;~31 million&lt;/td&gt;&lt;td&gt;Email addresses, screen names, bcrypt passwords&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Blooms Today&lt;/td&gt;&lt;td&gt;November 11, 2023&lt;/td&gt;&lt;td&gt;September 3, 2024&lt;/td&gt;&lt;td&gt;3.18 million&lt;/td&gt;&lt;td&gt;Email addresses, names, phone numbers&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;!-- /wp:table --&gt;
+&lt;p&gt;These recent breaches underscore the importance of monitoring your online presence through tools like HIBP. Users are encouraged to regularly check their email addresses against the database to stay informed about potential compromises and take necessary actions to secure their accounts.&lt;/p&gt;
+&lt;p&gt;Citations:&lt;br&gt;[1] &lt;a href=&#34;https://haveibeenpwned.com/PwnedWebsites&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://haveibeenpwned.com/PwnedWebsites&lt;/a&gt;&lt;br&gt;[2] &lt;a href=&#34;https://en.wikipedia.org/wiki/Have_I_Been_Pwned%3F&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://en.wikipedia.org/wiki/Have_I_Been_Pwned%3F&lt;/a&gt;&lt;br&gt;[3] &lt;a href=&#34;https://appleinsider.com/articles/24/10/10/wayback-machine-breach-affects-31-million-people&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://appleinsider.com/articles/24/10/10/wayback-machine-breach-affects-31-million-people&lt;/a&gt;&lt;br&gt;[4] &lt;a href=&#34;https://tribune.com.pk/story/2501932/internet-archive-hacked-31-million-accounts-compromised-in-data-breach&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://tribune.com.pk/story/2501932/internet-archive-hacked-31-million-accounts-compromised-in-data-breach&lt;/a&gt;&lt;br&gt;[5] &lt;a href=&#34;https://www.infosecurity-magazine.com/news/internet-archive-breach-31m/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.infosecurity-magazine.com/news/internet-archive-breach-31m/&lt;/a&gt;&lt;br&gt;[6] &lt;a href=&#34;https://haveibeenpwned.com/FAQs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://haveibeenpwned.com/FAQs&lt;/a&gt;&lt;br&gt;[7] &lt;a href=&#34;https://haveibeenpwned.com/privacy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://haveibeenpwned.com/privacy&lt;/a&gt;&lt;br&gt;[8] &lt;a href=&#34;https://haveibeenpwned.com/Passwords&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://haveibeenpwned.com/Passwords&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

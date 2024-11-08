@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Kernel</title>
+    <link>http://localhost:1313/tags/kernel/</link>
+    <description>Recent content in Kernel on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Sep 2016 17:56:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/kernel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Linux Kernel 25 Yaşında</title>
+      <link>http://localhost:1313/tr/linux-kernel-25-yasinda/</link>
+      <pubDate>Sat, 17 Sep 2016 17:56:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/linux-kernel-25-yasinda/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Linux kullanıcıları için 17 Eylül 1991 tarihinin ayrı bir anlamı olmalı. Günümüzde, hayatın hemen her alanında kullanılmakta olan Linux işletim sisteminin ilk sürümü olarak bilinen Kernel 0.01, bundan tam 25 yıl önce yayınlanmıştı.&lt;/p&gt;
+&lt;p&gt;Yayınlanmasının hemen ardından Kasım 1991&amp;rsquo;de Manchester Computer Centre (MCC), dosyaları FTP sunucusundan yayınlamaya başladı. Şubat 1992 tarihinde ilk kurulabilir Linux sürümü Owen Le Blanc tarafından hayata geçirildi. Mayıs 1992&amp;rsquo;de ise Softlanding Linux System (SLS) içerisinde X Windows sistemi bulunan Linux sürümünü yayınladı. İşte bu sürüm, Slackware&amp;rsquo;in ilk temelini teşkil etmektedir.&lt;/p&gt;
+&lt;p&gt;Sonraki 3 yıl boyunca meydana gelen iyileştirme ve gelişmelerden sonra 1994 yılı ortalarında Slackware, Debian GNU/Linux, S.u.S.E ve Red Hat Linux dağıtımları ortaya çıktı ve halen kullanılmaya devam ediyor.&lt;/p&gt;
+&lt;p&gt;Tam 25 yıl boyunca, Linux hakkında sayısız kitap ve makale yazıldı. İnanılmaz derecede fazla cihazda işletim sistemi olarak kullanıldı. Halen daha kullanılmaya devam ediyor. Milyarlarca dolarlık büyük bir ekonomik sistemin içerisinde bulunan Linux, ortaya koyduğu açık kaynak yaklaşımıyla ayrıca takdir edilmeyi hak ediyor. Bu başarıda, en büyük pay Linus Torvalds ve onunla birlikte gönüllü katkıda bulunanların olsa gerek.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

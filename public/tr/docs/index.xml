@@ -16,6 +16,29 @@
     
     
     <item>
+      <title>Proje Listesi</title>
+      <link>http://localhost:1313/tr/proje-listesi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/proje-listesi/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Devam Eden Çalışmalar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;devam-eden-çalışmalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#devam-eden-%c3%a7al%c4%b1%c5%9fmalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;http://localhost:1313/docs/kalibook&#34; &gt;Kali Kitabı&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Linux Kitabı&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; SEO Kitabı&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Kotlin Kitabı&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; C++ Kitabı&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kısmen Tamamlananlar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kısmen-tamamlananlar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#k%c4%b1smen-tamamlananlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2&gt;Tamamlananlar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tamamlananlar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tamamlananlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Alt Sayfa</title>
       <link>http://localhost:1313/tr/alt-sayfa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,20 +50,6 @@
         &lt;h2&gt;Header 2&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;header-2&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#header-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt; Header 3&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;header-3&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#header-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This page is under a folder.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Demo Sayfası</title>
-      <link>http://localhost:1313/tr/demo-sayfasi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tr/demo-sayfasi/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Basit bir demo sayfası.&lt;/p&gt;
 
       </description>
     </item>

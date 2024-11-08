@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Android Navigation Arrow</title>
+    <link>http://localhost:1313/tags/android-navigation-arrow/</link>
+    <description>Recent content in Android Navigation Arrow on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Mar 2022 13:29:12 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/android-navigation-arrow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Adding Upward Navigation Arrow</title>
+      <link>http://localhost:1313/adding-upward-navigation-arrow/</link>
+      <pubDate>Tue, 01 Mar 2022 13:29:12 +0000</pubDate>
+      
+      <guid>http://localhost:1313/adding-upward-navigation-arrow/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In software for Android, except for the main activity, you will need to add the UP button for the user navigation. You can display the UP button in the action bar by adding the necessary codes to the AndroidManifest.xml file of your Project.&lt;/p&gt;
+&lt;p&gt;In our project, we have two activities. One is Main Activity, the other one is DisplayMessageActivity. When the user taps the button in the MainActivity screen, the program enters the DisplayMessageActiviy. How can the user go BACK?&lt;/p&gt;
+&lt;p&gt;We can declare the PARENT activity name to the CHILD activity so Android will be able to show UP(Back) button in the DisplayMessageActiviy.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;Before adding UP button&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:exported=&#34;false&#34; /&amp;gt;
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;After making necessary changes in your AndroidManifest.xml file, your code should be like this.&lt;/p&gt;
+&lt;!-- wp:code --&gt;
+&lt;pre title=&#34;After declaring parent activity&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;...
+&amp;lt;activity
+            android:name=&#34;.DisplayMessageActivity&#34;
+            android:parentActivityName=&#34;.MainActivity&#34;
+            android:exported=&#34;false&#34; &amp;gt;
+        &amp;lt;meta-data
+            android:name=&#34;android.support.PARENT_ACTIVITY&#34;
+            android:value=&#34;.MainActivity&#34; /&amp;gt;
+        &amp;lt;/activity&amp;gt;
+
+        &amp;lt;activity
+            android:name=&#34;.MainActivity&#34;
+            android:exported=&#34;true&#34;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&#34;android.intent.action.MAIN&#34; /&amp;gt;
+
+                &amp;lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+        &amp;lt;/activity&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- /wp:code --&gt;
+&lt;p&gt;The &lt;code&gt;android:parentActivityName&lt;/code&gt; attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a &lt;a href=&#34;https://developer.android.com/guide/topics/manifest/meta-data-element&#34;&gt;&lt;code&gt;&amp;lt;meta-data&amp;gt;&lt;/code&gt;&lt;/a&gt; name-value pair, where the name is &lt;code&gt;&amp;ldquo;android.support.PARENT_ACTIVITY&amp;rdquo;&lt;/code&gt; and the value is the name of the parent activity.&lt;/p&gt;
+&lt;!-- wp:image {&#34;id&#34;:198,&#34;sizeSlug&#34;:&#34;large&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
+&lt;figure class=&#34;wp-block-image size-large&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2022/03/upbuttonscreenshot-524x1024.png&#34; alt=&#34;up button for Android&#34; class=&#34;wp-image-198&#34; /&gt;&lt;figcaption class=&#34;wp-element-caption&#34;&gt;Screenshot after adding UP button.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

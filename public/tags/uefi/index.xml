@@ -1,0 +1,340 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Uefi</title>
+    <link>http://localhost:1313/tags/uefi/</link>
+    <description>Recent content in Uefi on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Oct 2016 01:40:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/uefi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>UEFI Kavramları Hakkında Detaylar</title>
+      <link>http://localhost:1313/tr/uefi-kavramlari-hakkinda-detaylar/</link>
+      <pubDate>Sat, 08 Oct 2016 01:40:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/uefi-kavramlari-hakkinda-detaylar/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Ubuntu Forum dan &lt;a href=&#34;https://forum.ubuntu-tr.net/index.php?action=profile;u=31663&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;ThomasK1907&lt;/a&gt; isimli kullanıcının hazırlamış olduğu detaylı UEFI kavramları hakkındaki yazıyı, bir kaç harf hatasını düzelterek burada yayınlamak istedik. Başvuru kaynağı niteliğinde bir çalışma olmuş. Sizlerin de Linux bilişim ile ilgili yazılarınız varsa, burada yayınlanmasını teklif edebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Kaynak: &lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=UEFI_ve_BIOS_hakk%C4%B1nda_detayl%C4%B1_bilgiler&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Ubuntu Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Sleep, hibernate, hybrid sleep&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sleep-hibernate-hybrid-sleeph2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sleep-hibernate-hybrid-sleeph2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Sleep&lt;/strong&gt; (Uyku = Stand By = Suspend = Suspend to RAM) ile işletim sistemi tüm uygulamaları durdurur (pause) ve sistmein az enerji harcamasını sağlar. Sistem kapanmaz, bu sebeple saniyeler içerisinde açılarak devam edebilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Hibernate&lt;/strong&gt; (Hazırda beklet = Suspend to Disk), sleep ile aynı mantıktadır. Fakat sistemi tamamen kapatabilmek için RAM&#39;deki bilgileri sabit diskte saklar, yeniden açılması zaman almaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Sleep&lt;/strong&gt; (Suspend to both) modunda kullanıcı oturumu kapatılır (logout). Sadece işletim sistemi ve servisleri hazırda bekletilir (hibernate). Windows, 8 ve sonrası sürümlerde &#34;shut down&#34; işlemi ile &#34;Hybrid Sleep&#34; uygulamaktadır. Gerçek bir sistem kapanması için &#34;yeniden başlat&#34; işlemi yapılmalıdır. Windows ayalarında &#34;fast startup&#34; (ya da fast boot) isimli bu özellik devre dışı bırakılabilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;Bazı işletim sistemlerinde &amp;ldquo;Hybrit Sleep&amp;rdquo; aynı işlevi yapmamaktadır. Bazı sistemlerde şu yapılıyor: Sistemdeki tüm uygulamalar durduruluyor (sleep&amp;rsquo;te olduğu gibi). RAM bellekteki veriler Hibernate&amp;rsquo;deki gibi HDD&amp;rsquo;de saklanıyor. RAM&amp;rsquo;deki veriler silinmiyor, aynen bırakılıyor. Yani sleep moduna fazladan RAM&amp;rsquo;deki veriler HDD&amp;rsquo;de de saklanmış oluyor. Bu şekilde; makine aksi bir durumda kapanır ise en kötü ihtimalle hibernate tarzı bir açılış yapıyor. Eğer sistem kapatılmamış ise, sleep gibi hızlı açılıyor.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;strong&gt;Connected Standby (ya da InstantGo)&lt;/strong&gt; mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Özet açılış(boot) süreci&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;özet-açılışboot-sürecih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6zet-a%c3%a7%c4%b1l%c4%b1%c5%9fboot-s%c3%bcrecih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;BIOS süreci (eski süreç)&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;code&gt;BIOS &amp;mdash;-(HDD)&amp;mdash;-&amp;gt; MBR &amp;mdash;-&amp;gt; Bootloader &amp;mdash;-&amp;gt; OS&lt;/code&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;UEFI sonrası yeni süreç:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;code&gt;UEFI &amp;mdash;-(HDD)&amp;mdash;-&amp;gt; Bootloader &amp;mdash;-&amp;gt; OS&lt;/code&gt;&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;UEFI sonrası, BIOS uyumlu kurulmuş bir disk üzerinde işletim sistemini başlatma:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;code&gt;UEFI &amp;mdash;-(HDD)&amp;mdash;-&amp;gt; MBR &amp;mdash;-&amp;gt; Bootloader &amp;mdash;-&amp;gt; OS&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Uyku ve diğer kapanma metodları sonrası boot süreçleri nasıl değişiyor?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uyku-ve-diğer-kapanma-metodları-sonrası-boot-süreçleri-nasıl-değişiyorh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uyku-ve-di%c4%9fer-kapanma-metodlar%c4%b1-sonras%c4%b1-boot-s%c3%bcre%c3%a7leri-nas%c4%b1l-de%c4%9fi%c5%9fiyorh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Uyku&amp;rsquo;ya alınan cihazın açılması Firmware&amp;rsquo;den (aygıt yazılımı) itibaren olmuyor. Sistem hiç kapanmamış olduğu için direk olarak işletim sistemi devam ediyor.&lt;br&gt;Hibernate işleminde işletim sistemi normal kapanma metodunu uyguluyor. Açılışta da normal açılma süreci işleniyor. İşletim sistemleri otomatik olarak son durumunu algılayıp, Hibernate edilmiş ise dosyadan RAM&amp;rsquo;e aktarım yapıp devam ediyor. Eğer Hibernate edilmemiş ise; normal olarak açılıyor. Boot sürecinde bir değişiklik söz konusu değil.&lt;/p&gt;
+&lt;h2&gt;MacOS boot işlemi&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;macos-boot-işlemih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macos-boot-i%c5%9flemih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Apple, EFI&amp;rsquo;yi ilk kullanan şirketlerden biri. 2005 yılında, Apple Intel işlemcilere geçiş yaptığında klasik BIOS yerine EFI kullanmayı tercih etmişti. Yıllar sonra, UEFI spesifikasyonu sayesinde tüm PC&amp;rsquo;lerde UEFI kullanılmaya başlandı ve bu bir standart haline geldi. Mac&amp;rsquo;lerde şu an Apple&amp;rsquo;ın kendine göre uyarladığı bir EFI bulunmakta. Mac&amp;rsquo;lerdeki firmware tıpkı normal PC&amp;rsquo;lerde olduğu gibi UEFI ve Legacy modda işletim sistemi boot edebilir. Ancak Apple&amp;rsquo;ın yaptığı düzenlemeler olmadan MacOS önyüklenemez.&lt;/p&gt;
+&lt;h2&gt;CSM (Compatibility Support Module)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;csm-compatibility-support-moduleh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#csm-compatibility-support-moduleh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;UEFI&amp;rsquo;nin &amp;lsquo;BIOS compatibility mode&amp;rsquo;una verilen özel isim. UEFI devre dışı bırakılamaz. UEFI MBR-tarzı bölümlü sabit disklerden işletim sistemi açabilir. Bu da UEFI&amp;rsquo;nin geriye uyumlu çalıştığı anlamına gelir. Fakat CSM, her UEFI&amp;rsquo;de olmak zorunda değildir.&lt;/p&gt;
+&lt;h2&gt;BIOS&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;biosh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#biosh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bir aygıt yazılımıdır (firmware).&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;BIOS ana kartın üstündedir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Makine başlatıldığında hangi aygıttan (CD, DVD, HDD, USB gibi) boot edileceğini belirler.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;HDD ile başlatılırsa; HDD&#39;nin ilk sektörünü okur. Burada okuduğu kısmı çalıştırır (execute). Çalıştırılan bu bölge MBR (Master Boot Record) olarak adlandırılır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;MBR&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;mbrh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mbrh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;MBR (Master Boot Record), sabit diskin ilk sektörüdür. İki kısımdan oluşur:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Master Boot Code: Çalıştırılabilir (execute) olan kısım.&lt;br&gt;&lt;strong&gt;2.&lt;/strong&gt; Master Partition Table: HDD için bölümlerin haritası. En çok 4 bölüm tutabilir. Bu sebeple 4 bölümden (birincil bölüm veya primary partition) fazlaya ayırmak gerekirse, diskin &amp;ldquo;genişletilmiş bölüm (extensable partititon)&amp;rdquo; özelliğinden yararlanılır. Genişletilmiş bölüm en fazla 1 adet olabilir. Fakat altında sınırsız bölüm barındırabilir. Altında olan her bölüme &amp;ldquo;mantıksal bölüm (logical partititon)&amp;rdquo; denir.&lt;/p&gt;
+&lt;h2&gt;Bootloader (önyükleyici)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bootloader-önyükleyicih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bootloader-%c3%b6ny%c3%bckleyicih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;MBR tarafından çalıştırılabilen bir sistemdir. Bu sistem ile işletim sistemleri baslatılır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Her işletim sisteminin bootloader dosyalarını bir yerde saklaması gereklidir ki MBR o dizini okusun ve çalıştırsın.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Önyükleyici dosyaları Ubuntu&#39;da varsayılan olarak &lt;code&gt;/boot/grub&lt;/code&gt; dizinindedir. Bu dizinin Ubuntu&#39;da, başlatılacak işletim sistemi ile aynı bölümde olma şartı yoktur. Örnegin &lt;code&gt;/boot/grub&lt;/code&gt; , &lt;code&gt;/dev/sda9&lt;/code&gt;&#39;da iken, Ubuntu&#39;nun tüm dosyaları &lt;code&gt;/dev/sda5&lt;/code&gt;&#39;te olabilir. Eğer bölümleri ayırırsak, Ubuntu&#39;yu sildiğimizde &lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=GRUB&#34;&gt;GRUB&lt;/a&gt; sistemi de silinmeyeceği için HDD&#39;de kurulu diğer işletim sistemleri hala başlatılabilir olacaktır. Fakat Grub, Ubuntu ile aynı disk bölümünde olursa, Ubuntu bölüm silindiğinde (ya da formatlandığında), Grup başlamayacağı için HDD&#39;de kurulu diğer işletim sistemleri de başlamayacaktır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Windows&#39;un ön yükleyicisi (bootloader&#39;i) &#34;&lt;strong&gt;Windows Boot Manager (BOOTMGR&lt;/strong&gt;)&#34; olarak isimlendirilmektedir. Dosyaları; &#34;System Reserved&#34; isimli disk bölümünde durmaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Herhangi bir işletim sistemi HDD&#39;ye kurulduğunda, MBR dizini üzerinde değişiklik yapar. Bu değişiklikler:&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; MBR içine hangi bölümün master boot (active) olduğu yazılır. Yani; hangi bölümdeki ön yükleyicinin (bootloader) başlatılacağının adresidir. (her disk bölümü altında bir bootloader olabilir, ama sadece 1 tanesi başlayacaktır). İşletim sistemi kurulumunda yeni bir önyükleyici kurulmayacak ise bu işlemin yapılmasına gerek yoktur.&lt;strong&gt;2.&lt;/strong&gt; GRUB normal koşullarda MBR alanına kurulur. Fakat MBR alanı çok küçük olduğundan, Grub kendini 2 parçaya böler. Bir kısmı MBR içinde, ikinci kısmı farklı bir (boot bayrağının olduğu) disk bölümünde saklanır. 2-stage bootloader kavramı burada ortaya çıkmıştır. Normal koşullarda MBR&amp;rsquo;nin içindeki çalıştırıcı (executor), &lt;a href=&#34;http://tr.wikipedia.org/wiki/ext4&#34;&gt;ext4&lt;/a&gt; dosya sistemini okuyamaz. Ubuntu&amp;rsquo;da Grub dosyaları ext bölümünde bulunur. MBR&amp;rsquo;nin Grub&amp;rsquo;u çalıştırması için ext dosya sistemini tanıması lazım. İşte bu ext-tanıma kısmı modülü 1&amp;rsquo;inci stage bootloader kısmı ile çözülmüş oluyor.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Windows, her kurulumdan sonra sürekli MBR&#39;yi kendi ön yükleyicisine (bootloader) yönlendirir. Windows&#39;un ön yükleyicisi diğer işletim sistemlerini zaten tanımaz. Bu sebeple her Windows kurulumu sonrası, Linux ve diğer işletim sistemler ile Grub&#39;u tekrar kurmak gerekmektedir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;fixmbr&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fixmbrh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fixmbrh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Windows&amp;rsquo;un bir komut satırı uygulaması. Bu komut ile MBR tamamen sıfırdan değiştirilmektedir. &lt;code&gt;fixmbr&lt;/code&gt; komutu sonrası Windows kendi ön yükleyicisine yönlendirme yapacak şekilde MBR&amp;rsquo;yi yeniden yazmaktadır.&lt;/p&gt;
+&lt;h2&gt;ntldr&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ntldrh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ntldrh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Windows NT için ön yükleyicidir (bootloader). Günümüzde tamamen yeniden tasarlandığı için artık kullanılmamaktadır. Yeni tasarım Windows Boot Manager (BOOTMGR) üzerinedir. BOOTMGR başladığında eski bir Windows sürümü seçilirse, BOOTMGR, ntldr&amp;rsquo;yi başlatmaktadır.&lt;/p&gt;
+&lt;h2&gt;GRUB vs GRUB2&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;grub-vs-grub2h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#grub-vs-grub2h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=GRUB&#34;&gt;GRUB&lt;/a&gt; (GRand Unified Bootloader) önyükleme yazılımı, ikinci sürümde neredeyse sıfırdan tasarlandı. Bu yüzden çoğu yerde farklı yazılım gibi algılanmaktadır. Oysa Grub2, Grub&amp;rsquo;un güncel sürümüdür. Grub&amp;rsquo;un eski sürümüne &amp;ldquo;GRUB Legacy&amp;rdquo; adı da verilir. &amp;ldquo;Grub legacy&amp;rdquo; sadece BIOS uyumlu bölümlendirmeleri destekler.&lt;/p&gt;
+&lt;h2&gt;SYSLINUX&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;syslinuxh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#syslinuxh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;a href=&#34;http://tr.wikipedia.org/wiki/NTFS&#34;&gt;NTFS&lt;/a&gt; veya &lt;a href=&#34;http://tr.wikipedia.org/wiki/NTFS&#34;&gt;FAT32&lt;/a&gt; dosya sistemlerine kurulu Linux dağıtımını başlatmak için gerekli bir önyükleyici (bootloader) çeşididir.&lt;/p&gt;
+&lt;h2&gt;LILO (LInux LOader)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lilo-linux-loaderh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lilo-linux-loaderh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir BIOS uyumlu önyükleyici çeşididir. Daha sonra UEFI&amp;rsquo;ler için ELILO isminde bir türevi çıkarılmıştır.&lt;/p&gt;
+&lt;h2&gt;OS-Loader&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;os-loaderh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#os-loaderh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bootloader yani önyükleyici, ismi gereği genel bir terimdir. MBR&amp;rsquo;nin içindeki sisteme de, MBR&amp;rsquo;nin başlattığı sisteme de aslında bootloader denilebilir. Çünkü sistemi boot/load ediyorlar. Bu sebeple bazı insanlar, günümüzdeki sistemlere &amp;ldquo;2 stage bootloader&amp;rdquo; olarak varsayıyor. 1&amp;rsquo;inci stage: MBR ön yükleyicisinin çalıştırıcısı (execution). 2&amp;rsquo;inci stage ise: GRUB, BOOTMGR gibi yazılımların çalıştırıcısıdır. Dolayısı ile bir makalede; MBR&amp;rsquo;ye bootloader yazınca, 2&amp;rsquo;inci aşamaya OS-Loader diyen kaynaklar olabiliyor.&lt;/p&gt;
+&lt;h2&gt;UEFI (EFI)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uefi-efih2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uefi-efih2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;UEFI (Unified Extensible Firmware Interface) ya da eski adıyla EFI, yeni gelen bir sistemdir. BIOS&amp;rsquo;a alternatif bir aygıt yazılımıdır (firmware). UEFI her konuda çok daha gelişmiştir diyebiliriz. Sadece süreç olarak bakıldığında; MBR gereksinimi ortadan kalkmıştır. Sürecin işleyişi konusunda bilgi almak için yukarıdaki &amp;ldquo;Özet boot süreci&amp;rdquo; başlığına bakabilirsiniz. Bazı UEFI ara yüzlerinde &amp;ldquo;BIOS&amp;rdquo; kelimesi görülebilmektedir. Bunun sebebi BIOS tabanlı sistemler üzerinde ekstra modül olarak UEFI kullanılmasıdır.&lt;/p&gt;
+&lt;h2&gt;UEFI boot manager&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uefi-boot-managerh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uefi-boot-managerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bağlı olan tüm diskler içindeki tüm başlatılabilir sistemlerin (işletim sistemi, bootloader, MBR) listesini tutar ve bunlara ekleme/çıkarma/değişiklik yapılmasını sağlar. Kısmen Grub&amp;rsquo;un görevini görmektedir diyebiliriz. Listenin veritabanı ana kartın içindedir. Bu listedeki öncelik sırasına göre, ana kartı üzerinde olan UEFI ilgili sistemi başlatacaktır.&lt;br&gt;Bu liste dışarıdan düzenlenebilmektedir. Örneğin Linux&amp;rsquo;ta &amp;ldquo;efibootmgr&amp;rdquo; uygulaması bunu yapıyor. Her işletim sistemi, kurulumunda bu listeye ekler ya da siler ya da düzenler. Aynı şekilde ana karttaki UEFI yazılımı grafik arayüzü ile son kullanıcı manuel olarak da ekleme/silme/değiştirme yapabilir.&lt;br&gt;Listenin içinde BIOS-uyumlu bölümlerde olabilir. Çünkü UEFI, geriye uyumlu, yani BIOS uyumludur.&lt;/p&gt;
+&lt;p&gt;Aşağıda, örnek bir &lt;strong&gt;efibootmgr&lt;/strong&gt; komut satırı çıktısı verilmiş ve açıklaması yapılmıştır.&lt;/p&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;BootCurrent: 0002
+Timeout: 3 seconds
+BootOrder: 0003,0002,0000,0004&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;Boot0000* CD/DVD Drive  BIOS(3,0,00)&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;Boot0001* Hard Drive    HD(2,0,00)&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;Boot0002* Fedora        HD(1,800,61800,6d98f360-cb3e-4727-8fed-5ce0c040365d)File(\EFI\fedora\grubx64.efi)&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;!-- wp:preformatted --&gt;
+&lt;pre class=&#34;wp-block-preformatted&#34;&gt;Boot0003* opensuse      HD(1,800,61800,6d98f360-cb3e-4727-8fed-5ce0c040365d)File(\EFI\opensuse\grubx64.efi)
+Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G&lt;/pre&gt;
+&lt;!-- /wp:preformatted --&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Açıklamalar:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(1) Boot deneme sırasını temsil eder.&lt;/p&gt;
+&lt;p&gt;(2) Buradaki BIOS kelimesi, eski BIOS uyumlu açılışı temsil eder.&lt;/p&gt;
+&lt;p&gt;(3) HDD&amp;rsquo;yi aç diyor. Özellikle disk bölümü belirtmemiş. Bu durumda UEFI native mod&amp;rsquo;da HDD&amp;rsquo;yi açar. GPT bölümlü olan bu HDD içerisinde, UEFI disk bölümünü bulur. &amp;ldquo;Fallback path mode (ya da fallback mode)&amp;rdquo; denir buna, yani; native uefi mode (Bios değil) fakat HDD karar veriyor hangi disk bölümünün açılacağına. Detaylar için ESP ile ilgili başlıklarına bakınız.&lt;/p&gt;
+&lt;p&gt;(4) uefi native mode disk bölümü belirtilmiş. &amp;ldquo;.efi&amp;rdquo; uzantısı UEFI aygıt yazılımının çalıştırılabilir bootloader dosyası uzantısıdır.&lt;/p&gt;
+&lt;p&gt;(5) HDD&amp;rsquo;yi aç der. Özellikle disk bölümü belirtmemiş. Fakat BIOS uyumlu olsun demiş. Bu durumda HDD içerisinden MBR&amp;rsquo;yi okur eskisi gibi. Yukarıdaki Boot0001&amp;rsquo;da, UEFI geri uyumlu modda olmadığı için GPT&amp;rsquo;yi okumuştu. Burada ise MBR okunacak.&lt;/p&gt;
+&lt;h2&gt;Secure boot&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;secure-booth2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#secure-booth2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;UEFI ile gelen bir özellik. Manuel olarak devre dışı bırakılabilmektedir. Açılacak olan işletim sisteminin ön yükleyicisinin anahtarı, UEFI içerisindeki anahtarlarla uyuşması gerekiyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bu sistemle rastgele bir kullanıcının USB&#39;den istediği gibi işletim sistemini çalıştırması engellenmiş oluyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Makine ile kurulu gelen işletim sistemlerinin anahtarı UEFI içerisine kaydedilmiş oluyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Microsoft, Windows&#39;un anahtarını bazı farklı işletim sistemleri firmalarına da veriyor, örneğin [[v:Fedora (işletim sistemi)|Fedora). Bu şekilde o makinede, güncel Fedora ISO&#39;su ile direk işletim sistemi başlatılabiliyor oluyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;UEFI based botloaders&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uefi-based-botloadersh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uefi-based-botloadersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;UEFI aygıt yazılımı, direk olarak önyükleyiciyi (bootloader) çalıştırır. BIOS tabanlı sistemlerde ise, MBR ön yükleyiciyi çalıştırırdı. UEFI çok daha gelişmiş oluğundan çalıştırdığı önyükleyici de daha gelişmiştir. Farklı executable dosyası çalıştırırlar. Bu sebeple ön yükleyiciler de kendilerini güncellemişlerdir. Eğer HDD içerisinde sadece UEFI&amp;rsquo;nin çalıştırabileceği bir önyükleyici var ise; aynı HDD BIOS&amp;rsquo;lu ana kartlarda işletilemeyecektir.&lt;/p&gt;
+&lt;h2&gt;Volume Boot Record (VBR ya da partition boot sector)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;volume-boot-record-vbr-ya-da-partition-boot-sectorh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#volume-boot-record-vbr-ya-da-partition-boot-sectorh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;VBR; &amp;ldquo;volume boot sector&amp;rdquo;, &amp;ldquo;partition boot record&amp;rdquo; ya da &amp;ldquo;partition boot sector&amp;rdquo; tanımlarıyla ifade edilebilir.&lt;/p&gt;
+&lt;p&gt;MBR çok ufak olduğundan, tüm detayları üzerinde tutmak mümkün değildir. Bu sebeple her mantıksal ve birincil bölümün başında VBR olur. VBR&amp;rsquo;ler de MBR&amp;rsquo;ler gibidir. Bölüm bilgilerini daha detaylı şekilde tutarlar.&lt;/p&gt;
+&lt;h2&gt;GPT (GUID Partition Table)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;gpt-guid-partition-tableh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gpt-guid-partition-tableh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;UEFI&#39;nin tanıdığı, MBR&#39;ye göre çok daha gelişmiş bir bölüm tutma şemasıdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Eski Bios-mbr uyumlu bölümlendirmelere &#34;msdos partition table&#34; adı verilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;GPT bilgileri diskin en başındadır. GPT olan bir HDD&#39;de MBR&#39;de vardır. MBR bölümü her zaman bırakılır. Bu şekilde geriye uyumluluk sağlanmış olur.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;GPT olarak tasarlanmış bir diski makineye taktığınızda BIOS ana kartlar ile buradaki işletim sistemlerini başlatamazsınız. Fakat burada yanlış anlaşılma olmasın: Sadece işletim sistemini boot edemezsiniz. Onun dışında, bir işletim sistemi yürütülür durumdayken, GPT bölünlenmiş HDD&#39;yi bağlayıp (mount edip), hem Windows hem de diğer tüm işletim sistemleri ile okuyup yazabilirsiniz (ön tanımlı olarak işletim sistemi okuyamasa bile üçüncü parti uygulamalarla yapılabilir). Çünkü HDD&#39;yi okuyan bir yazılımdır. BIOS değil. Yani işletim sistemi boot etmekle, HDD&#39;yi sadece veri olarak kullanmak tamamen ayrı kavramlardır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Windows recovery partititon&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;windows-recovery-partititonh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#windows-recovery-partititonh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Windows&#39;un çökmesi halinde Windows&#39;u yeniden kurmak için gerekli dosyaları ve yazılımı barındıran disk bölümüdür. Bu bölüm Windows yüklemesi sırasında otomatik oluşturulur.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Bölüm winRE dosyalarını içeriyor. WinRE, Windows kurtarma işlemlerini yapan yazılımın adıdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;ESP (EFI System Partition ya da EFISYS)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;esp-efi-system-partition-ya-da-efisysh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#esp-efi-system-partition-ya-da-efisysh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Diskte varolan işletim sistemlerinin EFI dosyaları (bootloader&#39;ları) + Bootloader için gerekli sistem sürücüleri (driver) dosyaları bu bölümdedir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;FAT32 olmak zorundadır. FAT16 olması UEFI implementasyonunda yazmaktadır. Fakat Windows işletim sistemi fat16 olması durumunda sorun çıkardığı için, artık her yerde FAT32 kullanılmaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Boyutu değişkendir. Örnek boyut: Ortalama 40 MB sadece Windows-10 ve Ubuntu yüklü bir makine için yeterlidir. Fakat ilerde yapılabilecek ek işletim sistemi kurulumlarının EFI dosyaları için bu bölümün boyutunu yüksek tutmakta yarar var.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında her işletim sisteminin kendi ön yükleyicisi ayrı dizinlerde mevcuttur. &lt;code&gt;\EFI\BOOT&lt;/code&gt; dizini HDD &#34;fallback mode&#34; ile yürütüldüğünde devreye girer. Yani; UEFI, hiçbir disk bölümünü belirtmeden HDD&#39;yi açtığında (boot ettiğinde) UEFI, ESP bölümünü bulur. Daha sonra içerisinde &lt;code&gt;\EFI\BOOT\BOOTx64.EFI&lt;/code&gt; (gibi ya da standart önceden belirlenmiş farklı önyükleyici adresleri) dosyasını çalıştırır. Yani işletim sistemlerinin ön yükleyicileri dışında genel bir UEFI arayüzü (bootloader&#39;i) mevcuttur. Bu bootloader &#34;default bootloader&#34; olarak da adlandırılmaktadır. Bazı UEFI aygıt yazılımları bu bootloader&#39;i bulamadığı zaman Windowsun ön tanımlı bootloader&#39;ini da açmayı denemektedir: EFI/Microsoft/BOOT/bootmgfw.efi.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında sürücüler ve işletim sistemi çekirdekleri de mevcuttur. EFI dosyası executable&#39;ı olarak Linux çekirdeği çalıştırılabiliyor. Linux güncel sürümleri bunu desteklemektedir. Bu özellik; EFI Boot Stub (ya da EFI Stub) olarak isimlendiriliyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;MSR (&amp;ldquo;Microsoft System Reserved Partition&amp;rdquo; ya da &amp;ldquo;Sistem ayrıldı&amp;rdquo; bölümü)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;msr-microsoft-system-reserved-partition-ya-da-sistem-ayrıldı-bölümüh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#msr-microsoft-system-reserved-partition-ya-da-sistem-ayr%c4%b1ld%c4%b1-b%c3%b6l%c3%bcm%c3%bch2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sadece GPT disklerde oluşan bir bölümdür.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;ESP&#39;den sonra ve Windows kurulu bölümden önce olmak zorundadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Windows sürümüne göre dosya sistemi biçimi NTFS ya da FAT32 olabilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Boyutu Windows sürümü ve disk boyutuna göre değişebilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;bootmgr bu bölümde yüklüdür.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;RAID&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;raidh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#raidh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Açık adı: Redundant Array of Inexpensive Disks ya da Redundant Array of Independent Disks.&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Birden fazla diski tek bir disk gibi gösterme özelliğidir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;RAID kendi içerisinde birçok özelliği vardır: RAID0, RAID1 gibi... Bunlardan sadece bir tanesi seçilmek zorundadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;RAID0: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da farklı bilgiler tutuluyor. Performans artışı sağlıyor. Çünkü bazı durumlarda iki diskten ayrı ayrı dosyaları aynı anda okuyabiliyor. Tek diskte olsaydık aynı anda bir dosya okuyabilecektir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;RAID1: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da aynı datalar tutuluyor. Bu şekilde birine bir zarar geldiğinde diğerine devam edilebiliyor. Performans açısından kötü.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Sadece donanımsal ya da sadece yazılımsal çözümlerle sağlanmaktadırlar.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Flag (bayrak)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;flag-bayrakh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#flag-bayrakh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;GPT ve MBR, her disk bölümü için bir bayrak bulundururlar. Bayrakların birer anlamı vardır:&lt;/p&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Boot: tüm HDD&#39;de sadece bir bölümde bu set edilebilir. İlk o bölümün boot edileceği anlamına gelir. MBR sistemlerde çalıştırılacak ön yükleyicinin olduğu bölüm iken, GPT sitemlerde EFI kurulu bölüme atanmalıdır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Diag: O bölümün diagnostics/recovery amaçlı kullanıldığını belirtir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Hidden: Microsoft otomatik bağlamak (mount) istenmediği bölümlere bu bayrağı atıyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;RAID: Raid teknoloji için kullanılan bir bölüm olduğunu gösterir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Msftres: Sadece GPT&#39;de disklerin içindeki bölümlerde mevcuttur. Bölümün &#34;Microsoft Reserved partition&#34; olduğunu gösterir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;msftdata: Microsoft kendi oluşturduğu dizinlere bunu atıyor. Bazı Linux sistemleri de kendi dizinlerine bu bayrağı attığı görülüyor.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;swap: HDD üzerinde kurulu tüm Linux sistemler bu bölümü swap (takas) alanı olarak kullanabileceklerini belirtir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;BIOS_GRUB: GPT kurulu bir HDD&#39;de, sadece &#34;grub legacy&#34;&#39;nin kurulu olduğu bir bölüm var ise, o bölüme bu bayrak atanır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;legacy_boot: GPT yapılı disklerde, SYSLINUX önyükleyicisinin bulunduğu bölüme atanmaktadır.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;Partititon name, partititon label&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;partititon-name-partititon-labelh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#partititon-name-partititon-labelh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Name, GPT alanında olan bir etikettir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Label ise disk bölümünün içinde olan bir etikettir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+&lt;h2&gt;GParted&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;gpartedh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gpartedh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=GParted&#34;&gt;GParted&lt;/a&gt;, Linux üzerinde çalışan, GUI içeren bir disk yönetim aracıdır. GParted&amp;rsquo;in &lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=Canl%C4%B1_sistem&#34;&gt;canlı CD/USB&lt;/a&gt; sürümü, bilgisayardaki işletim sisteminden bağımsız olarak her sistemde kullanılabilir.&lt;/p&gt;
+&lt;h2&gt;GParted anahtar ikonu&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;gparted-anahtar-ikonuh2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gparted-anahtar-ikonuh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Her disk bölümünün yanında bu ikon olabilir. Bu icon o disk bölümünün bağlanmış (mount edilmiş) olduğu ve bu sebeple üzerinde işlem yapılmasına izin vermeyeceği anlamına gelir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;
+&lt;!-- wp:list-item --&gt;
+&lt;li&gt;Anahtar işaretli bir bölüm üzerinde işlem yapmak için o bölüm önce ayrılmalıdır (unmount). Eğer ilgili bölüm, çalıştırılan işletim sistemi dosyalarını içerir ise ayrılamaz. Böyle bir durumda ilgili bölüm ancak &lt;a href=&#34;http://tr.wikipedia.org/wiki/canl%C4%B1_sistem&#34;&gt;canlı CD&lt;/a&gt; üzerinden ya da aynı HDD üzerinde farklı bir bölümdeki işletim sistemi çalıştırılarak yapılabilir.&lt;/li&gt;
+&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
