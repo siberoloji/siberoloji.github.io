@@ -9721,7 +9721,13 @@
   </div>
 
         <h1 class="hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">Linux ve systemd ile grafik arayüz ve konsol arayüz geçişi nasıl yapılır?</h1>
-        <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2"><span class="hx-mr-1">January 24, 2024</span></div>
+        <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2"><span class="hx-mr-1">January 24, 2024</span><span class="hx-mx-1">·</span><a
+                  href="https://github.com/siberoloji" target="_blank"
+                  class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
+                  title="İbrahim Korucuoğlu"
+                ><img src="https://github.com/siberoloji.png" alt="İbrahim Korucuoğlu" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" loading="lazy" />
+                  <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
+                </a></div>
         <div class="content">
           <p>Linux işletim sistemini başlattığınızda, sırasıyla gerçekleşen açılış işlemlerini kontrol eden sisteme &ldquo;init sistem&rdquo; adı verilir. Bir takım Linux dağıtımları SysV başlatıcı, bir kısım dağıtımlar ise systemd kullanırlar. Masaüstü bilgisayar kullanıyorsanız, başlangıç işlemleri tamamlandığında grafik arayüze ulaşmak istersiniz. Sunucu bilgisayarda ise masaüstü ihtiyacınız yoksa, grafik arayüze değil komut satırına ulaşmak istersiniz. Bu yazımızda, systemd yönetim sistemini kullanan Linux dağıtımında grafik ve konsol arasında geçişler ve varsayılan açılış hedefini nasıl ayarlayabileceğimizi göreceğiz.</p>
 <p>Öncelikle, sistemimizde yüklü ve aktif olan hedef durumlarını görelim. Bunun için &ldquo;systemctl list-units &ndash;type=target&rdquo; komutunu kullanabilirsiniz.</p>

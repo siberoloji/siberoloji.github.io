@@ -9721,7 +9721,13 @@
   </div>
 
         <h1 class="hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">How to change targets with systemd on Linux</h1>
-        <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2"><span class="hx-mr-1">January 24, 2024</span></div>
+        <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2"><span class="hx-mr-1">January 24, 2024</span><span class="hx-mx-1">·</span><a
+                  href="https://github.com/siberoloji" target="_blank"
+                  class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
+                  title="İbrahim Korucuoğlu"
+                ><img src="https://github.com/siberoloji.png" alt="İbrahim Korucuoğlu" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" loading="lazy" />
+                  <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
+                </a></div>
         <div class="content">
            <p>When you start the Linux operating system, the system that controls the startup processes that occur respectively is called "init system". Some Linux distributions use SysV launcher, and some distributions use systemd. If you're using a desktop computer, you'll want to access the graphical interface once the startup process is complete. If you don't need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.</p>
  <p>First, let's see the target states that are installed and active in our system. You can use the "<code>systemctl list-units --type=target</code>" command for this.</p>

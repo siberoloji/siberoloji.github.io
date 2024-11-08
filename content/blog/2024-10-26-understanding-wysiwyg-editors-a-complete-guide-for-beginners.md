@@ -1,5 +1,11 @@
 ---
-author: Tarık Korucuoğlu
+
+authors:
+  - name: Tarık Korucuoğlu
+    link: https://github.com/taro544
+    image: https://github.com/taro544.png
+
+
 categories:
 - HTML
 date: "2024-10-26T15:28:41Z"

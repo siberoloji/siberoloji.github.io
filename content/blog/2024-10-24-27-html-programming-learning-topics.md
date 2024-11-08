@@ -1,5 +1,11 @@
 ---
-author: Tarık Korucuoğlu
+
+authors:
+  - name: Tarık Korucuoğlu
+    link: https://github.com/taro544
+    image: https://github.com/taro544.png
+
+
 categories:
 - HTML
 cmplz_hide_cookiebanner:
