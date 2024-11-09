@@ -38,16 +38,16 @@
 &lt;p&gt;Metastabilitenin birincil nedeni, kurulum ve tutma zamanlarıyla ilgili zamanlama ihlalleridir. İşte metastabilite koşullarına yol açan bazı yaygın senaryolar:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Asenkron Sinyal Arayüzü***  : Farklı saat alanlarından gelen sinyallerin uygun senkronizasyon olmadan etkileşime girmesidir. 
+- ***Asenkron Sinyal Arayüzü*** : Farklı saat alanlarından gelen sinyallerin uygun senkronizasyon olmadan etkileşime girmesidir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Saat Eğimi&lt;/strong&gt;&lt;/em&gt;  : Saat sinyallerinin zamanlamasındaki değişimler, yükselme ve düşme süreleri kabul edilebilir sınırları aşarsa metastabil durumlara yol açabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Saat Eğimi&lt;/strong&gt;&lt;/em&gt; : Saat sinyallerinin zamanlamasındaki değişimler, yükselme ve düşme süreleri kabul edilebilir sınırları aşarsa metastabil durumlara yol açabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eşzamanlı Geçişler&lt;/strong&gt;&lt;/em&gt;  : Birden fazla giriş neredeyse aynı anda geçiş yaptığında, bir flip-flop&amp;rsquo;u metastabil bir duruma itebilirler [6].&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eşzamanlı Geçişler&lt;/strong&gt;&lt;/em&gt; : Birden fazla giriş neredeyse aynı anda geçiş yaptığında, bir flip-flop&amp;rsquo;u metastabil bir duruma itebilirler [6].&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -57,11 +57,11 @@
 &lt;p&gt;Metastabiliteyi tam olarak kavramak için kurulum ve tutma sürelerini anlamak gerekir:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kurulum Süresi***  : Giriş sinyalinin saat kenarından önce sabit kalması gereken minimum süre. 
+- ***Kurulum Süresi*** : Giriş sinyalinin saat kenarından önce sabit kalması gereken minimum süre. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tutma Süresi&lt;/strong&gt;&lt;/em&gt;  : Saat kenarından sonra giriş sinyalinin de sabit kalması gereken en kısa süre.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tutma Süresi&lt;/strong&gt;&lt;/em&gt; : Saat kenarından sonra giriş sinyalinin de sabit kalması gereken en kısa süre.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -94,16 +94,16 @@
 &lt;p&gt;Metastabilite, dijital sistemler için ciddi sonuçlar doğurabilir:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Öngörülemeyen Çıktılar***  : En acil sonuç, devrelerin beklenen mantık seviyelerine uymayan güvenilir olmayan çıktılar üretebilmesidir. 
+- ***Öngörülemeyen Çıktılar*** : En acil sonuç, devrelerin beklenen mantık seviyelerine uymayan güvenilir olmayan çıktılar üretebilmesidir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hataların Yayılması&lt;/strong&gt;&lt;/em&gt;  : Eğer bir bileşen metastabil bir duruma girerse, devredeki sonraki aşamalara hataları yayabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hataların Yayılması&lt;/strong&gt;&lt;/em&gt; : Eğer bir bileşen metastabil bir duruma girerse, devredeki sonraki aşamalara hataları yayabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sistem Arızaları&lt;/strong&gt;&lt;/em&gt;  : Tıbbi cihazlar veya havacılık sistemleri gibi kritik uygulamalarda, metastabilite uygun şekilde yönetilmezse felaketle sonuçlanacak arızalara yol açabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sistem Arızaları&lt;/strong&gt;&lt;/em&gt; : Tıbbi cihazlar veya havacılık sistemleri gibi kritik uygulamalarda, metastabilite uygun şekilde yönetilmezse felaketle sonuçlanacak arızalara yol açabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -113,11 +113,11 @@
 &lt;p&gt;Metastabiliteyi nicel olarak analiz etmek için mühendisler sıklıkla çeşitli ölçüm tekniklerini kullanırlar:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Arıza Oranı Hesaplaması***  : Tasarımcılar, metastabil olayların meydana gelme oranını ve bunların çözülme olasılığını belirleyerek arıza oranlarını tahmin edebilirler. 
+- ***Arıza Oranı Hesaplaması*** : Tasarımcılar, metastabil olayların meydana gelme oranını ve bunların çözülme olasılığını belirleyerek arıza oranlarını tahmin edebilirler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;MTBF Analizi&lt;/strong&gt;&lt;/em&gt;  : MTBF&amp;rsquo;yi hesaplamak, zaman içinde metastabilite nedeniyle meydana gelen arızaların ne sıklıkla beklendiğinin değerlendirilmesini içerir [3][4].&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;MTBF Analizi&lt;/strong&gt;&lt;/em&gt; : MTBF&amp;rsquo;yi hesaplamak, zaman içinde metastabilite nedeniyle meydana gelen arızaların ne sıklıkla beklendiğinin değerlendirilmesini içerir [3][4].&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -139,11 +139,11 @@
 &lt;p&gt;Devre tasarımı yaparken:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Daha Uzun Saat Periyotları***  : Saat periyotlarının artırılması, örneklemeden önce sinyallerin dengelenmesi için daha fazla zamana olanak tanır. 
+- ***Daha Uzun Saat Periyotları*** : Saat periyotlarının artırılması, örneklemeden önce sinyallerin dengelenmesi için daha fazla zamana olanak tanır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dikkatli Zamanlama Analizi&lt;/strong&gt;&lt;/em&gt;  : Kurulum ve tutma sürelerine kesinlikle uyulması, metastabil bir duruma girme şansını en aza indirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dikkatli Zamanlama Analizi&lt;/strong&gt;&lt;/em&gt; : Kurulum ve tutma sürelerine kesinlikle uyulması, metastabil bir duruma girme şansını en aza indirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

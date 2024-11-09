@@ -36,27 +36,27 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Oluşturulma Tarihi:***  Dosyanın ilk oluşturulduğu tarih. 
+- ***Oluşturulma Tarihi:*** Dosyanın ilk oluşturulduğu tarih. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Değişiklik Tarihi:***  Dosyanın en son düzenlendiği tarih. 
+- ***Değişiklik Tarihi:*** Dosyanın en son düzenlendiği tarih. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dosya Türü:***  Dosyanın biçimi (örneğin JPEG, PNG, MP4). 
+- ***Dosya Türü:*** Dosyanın biçimi (örneğin JPEG, PNG, MP4). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yazar Bilgileri:***  Dosyanın yaratıcısı. 
+- ***Yazar Bilgileri:*** Dosyanın yaratıcısı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Konum Verileri:***  Görüntünün veya videonun çekildiği yerin GPS koordinatları. 
+- ***Konum Verileri:*** Görüntünün veya videonun çekildiği yerin GPS koordinatları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Aygıt Bilgileri:***  Dosyayı oluşturmak için kullanılan aygıta ilişkin ayrıntılar. 
+- ***Aygıt Bilgileri:*** Dosyayı oluşturmak için kullanılan aygıta ilişkin ayrıntılar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -71,15 +71,15 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gizlilik Riskleri:***  Görüntülerdeki GPS verileri kişisel konumlarınızı açığa çıkarabilir. 
+- ***Gizlilik Riskleri:*** Görüntülerdeki GPS verileri kişisel konumlarınızı açığa çıkarabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik Açıkları:***  Yazar adları ve kullanılan yazılımlar sosyal mühendislik saldırılarında kullanılabilir. 
+- ***Güvenlik Açıkları:*** Yazar adları ve kullanılan yazılımlar sosyal mühendislik saldırılarında kullanılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hukuki Sonuçlar:***  Fikri mülkiyetle ilgili hukuki uyuşmazlıklarda değişiklik tarihleri ​​kritik öneme sahip olabilir. 
+- ***Hukuki Sonuçlar:*** Fikri mülkiyetle ilgili hukuki uyuşmazlıklarda değişiklik tarihleri ​​kritik öneme sahip olabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -204,7 +204,7 @@ pip install -r requirements.txt</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">metagoofil -d targetdomain.com -t pdf,xls -l 20 -n 10 -o output_directory</code></pre>
 <!-- /wp:code -->
 
-  Bu komut belirtilen etki alanındaki PDF ve Excel dosyalarını  arayacak ve ilgili meta verileri belirtilen dizine çıktı olarak gönderecektir. 
+  Bu komut belirtilen etki alanındaki PDF ve Excel dosyalarınıarayacakve ilgili meta verileri belirtilen dizine çıktı olarak gönderecektir. 
  
 
  

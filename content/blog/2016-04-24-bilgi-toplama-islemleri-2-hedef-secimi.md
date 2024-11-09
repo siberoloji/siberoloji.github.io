@@ -30,7 +30,7 @@ title: Bilgi Toplama İşlemleri -2- Hedef Seçimi
 url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
 ---
 
-  Sızma Testi 2. Safhası olan Bilgi Toplama işlemlerine bu <a href="https://www.siberoloji.com/bilgi-toplama-islemleri-1-temel-yaklasim/" data-type="post" data-id="1070">bağlantıda</a> bulunan yazımızla giriş yapmıştık. O yazı içerisinde belirttiğimiz ana konulardan birisi olan Hedef Seçimi başlığını açıklamaya çalışacağız. 
+  Sızma Testi 2. Safhası olan Bilgi Toplama işlemlerine bu<a href="https://www.siberoloji.com/bilgi-toplama-islemleri-1-temel-yaklasim/" data-type="post" data-id="1070">bağlantıda</a>bulunan yazımızla giriş yapmıştık. O yazı içerisinde belirttiğimiz ana konulardan birisi olan Hedef Seçimi başlığını açıklamaya çalışacağız. 
  
 
 
@@ -75,7 +75,7 @@ url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
   Geçmiş tecrübeler göstermiştir ki toplam planlanan zamana, hesapta olmayan gecikmeler için %20 pay ilave edilmelidir. Bu %20 zamanca ihtiyat tedbiri, duruma göre kullanılabilir veya gerek kalmayabilir. Kullanılmadığı takdirde, hizmet alan firmaya bildirilmeli ve maliyet hesabından düşülmelidir. Aksi takdirde faturalanması da etik bir davranış olmayacaktır. 
  
 
-  Bu zaman planlaması Koordinasyon safhasının alt maddesi olan <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049" target="_blank" rel="noreferrer noopener">Kontrol Tedbirleri</a> bölümünde ve diğer konular altında yer alan Ödeme Yöntemi bölümünde net olarak ortaya konulmalı ve yazılı hale getirilmelidir. 
+  Bu zaman planlaması Koordinasyon safhasının alt maddesi olan<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049" target="_blank" rel="noreferrer noopener">Kontrol Tedbirleri</a>bölümünde ve diğer konular altında yer alan Ödeme Yöntemi bölümünde net olarak ortaya konulmalı ve yazılı hale getirilmelidir. 
  
 
 

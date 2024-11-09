@@ -344,147 +344,157 @@
           <h1>Etkili Keşif İçin Araçlar: Shodan, Maltego ve Google Dorking</h1>
           <p>Siber güvenlik dünyasında keşif, bir hedefin sistemlerini, ağlarını ve olası güvenlik açıklarını anlamanın ilk adımıdır. Bilgi toplama olarak da bilinen keşif, etik hackerların bir hedefin ortamını haritalandırmasını, yapısını anlamasını ve zayıflıkları belirlemesini sağlar. Üç son derece etkili araç—Shodan, Maltego ve Google Dorking—keşif aşamasında istihbarat toplamada önemli bir rol oynar. Bu araçların her biri benzersiz içgörüler sunarak siber güvenlik uzmanlarına bilinçli kararlar almak için ihtiyaç duydukları verileri sağlar.</p>
 <p>Bu yazımızda Shodan, Maltego ve Google Dorking&rsquo;in keşif araçları olarak nasıl çalıştıklarını, özel özelliklerini ve bunları etkili bir şekilde kullanmak için en iyi uygulamaları inceleyeceğiz.</p>
-<hr />
+<hr>
 <h3><em><strong>1. Shodan: İnternete Bağlı Cihazlar İçin Arama Motoru</strong></em><span class="hx-absolute -hx-mt-20" id="1-shodan-internete-bağlı-cihazlar-için-arama-motoru"></span>
     <a href="#1-shodan-internete-ba%c4%9fl%c4%b1-cihazlar-i%c3%a7in-arama-motoru" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Shodan sıklıkla &ldquo;Nesnelerin İnterneti için arama motoru&rdquo; (IoT) olarak anılır. Web sitelerini dizinleyen geleneksel arama motorlarının aksine, Shodan interneti kendisine bağlı cihazlar için tarar; örneğin sunucular, yönlendiriciler, web kameraları, akıllı televizyonlar ve endüstriyel kontrol sistemleri. Shodan, IP adresleri, bağlantı noktası yapılandırmaları, çalışan hizmetler ve güvenlik açıkları dahil olmak üzere bu cihazlar hakkında değerli veriler sağlar.</p>
 <h4><em><strong>Shodan Nasıl Çalışır?</strong></em><span class="hx-absolute -hx-mt-20" id="shodan-nasıl-çalışır"></span>
     <a href="#shodan-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Shodan, IP adresleri ve bağlantı noktalarına göre internete bağlı cihazları aramak için web tarayıcılarını kullanır. Bu cihazları analiz ederek işletim sistemleri, açık bağlantı noktaları ve protokoller hakkında ayrıntılar toplar. Shodan daha sonra bu verileri kolayca aranabilir bir biçimde düzenleyerek siber güvenlik uzmanlarının ağ güvenliğini değerlendirmesi için erişilebilir hale getirir.</p>
 <h4><em><strong>Keşifte Shodan&rsquo;ın Kullanımları</strong></em><span class="hx-absolute -hx-mt-20" id="keşifte-shodanın-kullanımları"></span>
-    <a href="#ke%c5%9fifte-shodan%c4%b1n-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Açık Portları ve Hizmetleri Belirleme*** 
-</code></pre>
-<p>Shodan, hedef sistemde hangi portların açık olduğunu ve bu portlarda çalışan hizmetleri belirleyebilir. Bu bilgi, bilgisayar korsanları için giriş noktalarını ortaya çıkarabilir ve etik bilgisayar korsanlarının olası güvenlik açıklarını anlamalarına yardımcı olabilir.
-- <em><strong>Güvenlik Açığı Olan Cihazları Bulma</strong></em>
-Shodan&rsquo;ın arama filtreleri kullanıcıların bilinen güvenlik açıklarına sahip cihazları bulmasını sağlar. Örneğin, etik bir bilgisayar korsanı popüler yazılımların eski sürümlerini çalıştıran sistemleri arayabilir ve güvenlik açığı değerlendirmesi için bir başlangıç ​​noktası sağlayabilir.
-- <em><strong>IoT Güvenlik Risklerini Anlama</strong></em>
-Birçok IoT cihazı varsayılan veya zayıf güvenlik yapılandırmaları nedeniyle savunmasızdır. Shodan, siber güvenlik uzmanlarının potansiyel güvenlik risklerini değerlendirmesine ve ele almasına olanak tanıyarak, savunmasız IoT cihazlarını belirlemeye yardımcı olur.
-- <em><strong>Ağ Altyapısının Haritalanması</strong></em>
-Etik hackerlar, ilgili cihazları arayarak bir organizasyonun ağ altyapısının üst düzey bir haritasını oluşturabilir. Bu veriler, bağlı cihazlar hakkında ayrıntılar içerir ve olası saldırı yüzeylerinin belirlenmesine yardımcı olabilir.</p>
+    <a href="#ke%c5%9fifte-shodan%c4%b1n-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ol>
+<li><em><strong>Açık Portları ve Hizmetleri Belirleme</strong></em>
+Shodan, hedef sistemde hangi portların açık olduğunu ve bu portlarda çalışan hizmetleri belirleyebilir. Bu bilgi, bilgisayar korsanları için giriş noktalarını ortaya çıkarabilir ve etik bilgisayar korsanlarının olası güvenlik açıklarını anlamalarına yardımcı olabilir.</li>
+<li><em><strong>Güvenlik Açığı Olan Cihazları Bulma</strong></em>
+Shodan&rsquo;ın arama filtreleri kullanıcıların bilinen güvenlik açıklarına sahip cihazları bulmasını sağlar. Örneğin, etik bir bilgisayar korsanı popüler yazılımların eski sürümlerini çalıştıran sistemleri arayabilir ve güvenlik açığı değerlendirmesi için bir başlangıç ​​noktası sağlayabilir.</li>
+<li><em><strong>IoT Güvenlik Risklerini Anlama</strong></em>
+Birçok IoT cihazı varsayılan veya zayıf güvenlik yapılandırmaları nedeniyle savunmasızdır. Shodan, siber güvenlik uzmanlarının potansiyel güvenlik risklerini değerlendirmesine ve ele almasına olanak tanıyarak, savunmasız IoT cihazlarını belirlemeye yardımcı olur.</li>
+<li><em><strong>Ağ Altyapısının Haritalanması</strong></em>
+Etik hackerlar, ilgili cihazları arayarak bir organizasyonun ağ altyapısının üst düzey bir haritasını oluşturabilir. Bu veriler, bağlı cihazlar hakkında ayrıntılar içerir ve olası saldırı yüzeylerinin belirlenmesine yardımcı olabilir.</li>
+</ol>
 <h4><em><strong>Shodan Arama Filtreleri ve Teknikleri</strong></em><span class="hx-absolute -hx-mt-20" id="shodan-arama-filtreleri-ve-teknikleri"></span>
     <a href="#shodan-arama-filtreleri-ve-teknikleri" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Shodan&rsquo;ın gücü, kullanıcıların arama sonuçlarını konuma, porta, ürüne ve diğer parametrelere göre daraltmasına olanak tanıyan gelişmiş arama filtrelerinde yatmaktadır:</p>
-<pre><code>- ***ana bilgisayar adı:***  &lt;code&gt;hostname:example.com&lt;/code&gt; – Belirli bir ana bilgisayar adıyla ilişkili cihazları arar. 
-- ***port:***  &lt;code&gt;port:80&lt;/code&gt; – Belirli açık porta göre cihazları filtreler. 
-- ***os:***  &lt;code&gt;os:&quot;Windows 10&quot;&lt;/code&gt; – Belirli bir işletim sistemini çalıştıran cihazları bulur. 
-- ***ülke:***  &lt;code&gt;country:&quot;US&quot;&lt;/code&gt; – Arama sonuçlarını belirli bir ülkede bulunan cihazlarla sınırlar. 
-</code></pre>
+<ul>
+<li><em><strong>ana bilgisayar adı:</strong></em> <code>hostname:example.com</code>– Belirli bir ana bilgisayar adıyla ilişkili cihazları arar.</li>
+<li><em><strong>port:</strong></em> <code>port:80</code>– Belirli açık porta göre cihazları filtreler.</li>
+<li><em><strong>os:</strong></em> <code>os:&ldquo;Windows 10&rdquo;</code>– Belirli bir işletim sistemini çalıştıran cihazları bulur.</li>
+<li><em><strong>ülke:</strong></em> <code>country:&ldquo;US&rdquo;</code>– Arama sonuçlarını belirli bir ülkede bulunan cihazlarla sınırlar.</li>
+</ul>
 <h4><em><strong>Shodan&rsquo;ı Kullanmak İçin En İyi Uygulamalar</strong></em><span class="hx-absolute -hx-mt-20" id="shodanı-kullanmak-için-en-iyi-uygulamalar"></span>
-    <a href="#shodan%c4%b1-kullanmak-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Geniş Aramalarla Başlayın***  : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın. 
-- ***Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın***  : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin. 
-- ***Aramaları Yetkili IP Aralıklarıyla Sınırlandırın***  : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun. 
-</code></pre>
-<hr />
+    <a href="#shodan%c4%b1-kullanmak-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><em><strong>Geniş Aramalarla Başlayın</strong></em> : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın.</li>
+<li><em><strong>Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın</strong></em> : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin.</li>
+<li><em><strong>Aramaları Yetkili IP Aralıklarıyla Sınırlandırın</strong></em> : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun.</li>
+</ul>
+<hr>
 <h3><em><strong>2. Maltego: Veri Görselleştirme ve Bağlantıları Eşleme Aracı</strong></em><span class="hx-absolute -hx-mt-20" id="2-maltego-veri-görselleştirme-ve-bağlantıları-eşleme-aracı"></span>
     <a href="#2-maltego-veri-g%c3%b6rselle%c5%9ftirme-ve-ba%c4%9flant%c4%b1lar%c4%b1-e%c5%9fleme-arac%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Maltego, siber güvenlikte veri görselleştirme ve ilişki haritalama için kullanılan güçlü bir araçtır. Kullanıcıların birden fazla kaynaktan bilgi toplamasını, bağlantıları görselleştirmesini ve veri noktaları arasındaki ilişkileri belirlemesini sağlar. Maltego ile siber güvenlik uzmanları, alan adları, sosyal medya profilleri ve e-posta adresleri gibi verileri inceleyip analiz edebilir ve gizli bağlantıları ortaya çıkarmalarına yardımcı olabilir.</p>
 <h4><em><strong>Maltego Nasıl Çalışır?</strong></em><span class="hx-absolute -hx-mt-20" id="maltego-nasıl-çalışır"></span>
     <a href="#maltego-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Maltego, çeşitli kaynaklardan veri toplamak ve bağlamak için &ldquo;dönüşümler&rdquo; kullanır. Her dönüşüm, bir etki alanında alt etki alanları aramak veya ilişkili IP adreslerini haritalamak gibi belirli bir görevi gerçekleştirir. Bu veriler daha sonra çeşitli varlıklar arasındaki bağlantıları gösteren bir grafikte görüntülenir ve bu da kalıpları ve ilişkileri tespit etmeyi kolaylaştırır.</p>
 <h4><em><strong>Keşifte Maltego&rsquo;nun Kullanımları</strong></em><span class="hx-absolute -hx-mt-20" id="keşifte-maltegonun-kullanımları"></span>
-    <a href="#ke%c5%9fifte-maltegonun-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Sosyal Ağları Haritalama*** 
-</code></pre>
-<p>Maltego, sosyal medyada bireyler, şirketler ve kuruluşlar arasındaki bağlantıları görselleştirebilir ve bu da onu sosyal mühendislik keşfi için değerli bir araç haline getirir.
-- <em><strong>Alan Adı İlişkilerini Keşfetme</strong></em>
-Maltego, bir alan adının ilişkili IP adreslerini, alt alan adlarını ve e-posta adreslerini analiz ederek kullanıcıların hedefin çevrimiçi varlığı ve altyapısı hakkında kapsamlı bir profil oluşturmasına olanak tanır.
-- <em><strong>Veri Noktaları Arasındaki İlişkileri Belirleme</strong></em>
-Maltego&rsquo;nun dönüşümleri, etik hacker&rsquo;ların paylaşılan IP adresleri veya e-posta hesapları gibi görünüşte ilgisiz veri noktaları arasındaki ilişkileri haritalandırmasını sağlıyor.
-- <em><strong>Kamuya Açık Bilgilerin Ortaya Çıkarılması</strong></em>
-Maltego, DNS kayıtları, WHOIS bilgileri ve sosyal medya gibi çeşitli kamuya açık kaynaklardan veri çekerek kullanıcıların hedef hakkında geniş yelpazede kamuya açık bilgileri toplamasına yardımcı olur.</p>
+    <a href="#ke%c5%9fifte-maltegonun-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><em><strong>Sosyal Ağları Haritalama</strong></em>
+Maltego, sosyal medyada bireyler, şirketler ve kuruluşlar arasındaki bağlantıları görselleştirebilir ve bu da onu sosyal mühendislik keşfi için değerli bir araç haline getirir.</li>
+<li><em><strong>Alan Adı İlişkilerini Keşfetme</strong></em>
+Maltego, bir alan adının ilişkili IP adreslerini, alt alan adlarını ve e-posta adreslerini analiz ederek kullanıcıların hedefin çevrimiçi varlığı ve altyapısı hakkında kapsamlı bir profil oluşturmasına olanak tanır.</li>
+<li><em><strong>Veri Noktaları Arasındaki İlişkileri Belirleme</strong></em>
+Maltego&rsquo;nun dönüşümleri, etik hacker&rsquo;ların paylaşılan IP adresleri veya e-posta hesapları gibi görünüşte ilgisiz veri noktaları arasındaki ilişkileri haritalandırmasını sağlıyor.</li>
+<li><em><strong>Kamuya Açık Bilgilerin Ortaya Çıkarılması</strong></em>
+Maltego, DNS kayıtları, WHOIS bilgileri ve sosyal medya gibi çeşitli kamuya açık kaynaklardan veri çekerek kullanıcıların hedef hakkında geniş yelpazede kamuya açık bilgileri toplamasına yardımcı olur.</li>
+</ul>
 <h4><em><strong>Popüler Maltego Dönüşümleri</strong></em><span class="hx-absolute -hx-mt-20" id="popüler-maltego-dönüşümleri"></span>
     <a href="#pop%c3%bcler-maltego-d%c3%b6n%c3%bc%c5%9f%c3%bcmleri" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Maltego, farklı veri türlerini toplamak için çeşitli dönüşümler sağlar:</p>
-<pre><code>- ***Alan Adından IP'ye Dönüşüm***  : Bir alan adıyla ilişkili IP adreslerini alır. 
-- ***WHOIS Veri Dönüşümü***  : Bir alan adına ait WHOIS bilgilerini çıkararak kayıt sahibi bilgileri gibi ayrıntıları ortaya çıkarır. 
-- ***Sosyal Ağ Dönüşümleri***  : Twitter ve LinkedIn gibi sosyal medya platformlarındaki bağlantıları haritalandırır. 
-- ***Kişiden E-postaya Dönüşüm***  : Bir kişiyle ilişkili olası e-posta adreslerini bulur. 
-</code></pre>
+<ul>
+<li><em><strong>Alan Adından IP&rsquo;ye Dönüşüm</strong></em> : Bir alan adıyla ilişkili IP adreslerini alır.</li>
+<li><em><strong>WHOIS Veri Dönüşümü</strong></em> : Bir alan adına ait WHOIS bilgilerini çıkararak kayıt sahibi bilgileri gibi ayrıntıları ortaya çıkarır.</li>
+<li><em><strong>Sosyal Ağ Dönüşümleri</strong></em> : Twitter ve LinkedIn gibi sosyal medya platformlarındaki bağlantıları haritalandırır.</li>
+<li><em><strong>Kişiden E-postaya Dönüşüm</strong></em> : Bir kişiyle ilişkili olası e-posta adreslerini bulur.</li>
+</ul>
 <h4><em><strong>Maltego&rsquo;yu Kullanmak İçin En İyi Uygulamalar</strong></em><span class="hx-absolute -hx-mt-20" id="maltegoyu-kullanmak-için-en-iyi-uygulamalar"></span>
-    <a href="#maltegoyu-kullanmak-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Öncelikle Önemli Varlıklara Odaklanın***  : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin. 
-- ***Derin Analiz İçin Çoklu Dönüşümler Kullanın***  : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın. 
-- ***Verileri Görsel Olarak Organize Edin***  : Maltego'nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın. 
-</code></pre>
-<hr />
+    <a href="#maltegoyu-kullanmak-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><em><strong>Öncelikle Önemli Varlıklara Odaklanın</strong></em> : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin.</li>
+<li><em><strong>Derin Analiz İçin Çoklu Dönüşümler Kullanın</strong></em> : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın.</li>
+<li><em><strong>Verileri Görsel Olarak Organize Edin</strong></em> : Maltego&rsquo;nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın.</li>
+</ul>
+<hr>
 <h3><em><strong>3. Google Dorking: Hedeflenen Bilgiler İçin Gelişmiş Arama Operatörlerinden Yararlanma</strong></em><span class="hx-absolute -hx-mt-20" id="3-google-dorking-hedeflenen-bilgiler-için-gelişmiş-arama-operatörlerinden-yararlanma"></span>
     <a href="#3-google-dorking-hedeflenen-bilgiler-i%c3%a7in-geli%c5%9fmi%c5%9f-arama-operat%c3%b6rlerinden-yararlanma" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Google Dorking, internetteki tipik arama sonuçlarından sıklıkla gizlenen bilgileri ortaya çıkarmak için gelişmiş arama operatörleri kullanan bir tekniktir. Arama operatörlerini birleştirerek, etik hacker&rsquo;lar hassas bilgiler içerebilecek dosyalar, dizinler ve diğer açık kaynaklar gibi web sitelerinden belirli bilgileri çıkarabilir.</p>
 <h4><em><strong>Google Dorking Nasıl Çalışır?</strong></em><span class="hx-absolute -hx-mt-20" id="google-dorking-nasıl-çalışır"></span>
-    <a href="#google-dorking-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Google Dorking, belirli veriler için hedefli aramalar gerçekleştirmek üzere Google&rsquo;ın gelişmiş arama yeteneklerine güvenir. <code>intitle:</code>, <code>inurl:</code>, <code>filetype:</code>ve <code>site:</code> gibi arama operatörlerini kullanarak kullanıcılar, arama sonuçlarını yalnızca belirli dosya türlerini, dizinleri veya web sitesi bölümlerini içerecek şekilde daraltabilir.</p>
+    <a href="#google-dorking-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Google Dorking, belirli veriler için hedefli aramalar gerçekleştirmek üzere Google&rsquo;ın gelişmiş arama yeteneklerine güvenir. <code>intitle:</code>, <code>inurl:</code>,<code>filetype:</code>ve <code>site:</code>gibi arama operatörlerini kullanarak kullanıcılar, arama sonuçlarını yalnızca belirli dosya türlerini, dizinleri veya web sitesi bölümlerini içerecek şekilde daraltabilir.</p>
 <h4><em><strong>Keşifte Google Dorking&rsquo;in Kullanımları</strong></em><span class="hx-absolute -hx-mt-20" id="keşifte-google-dorkingin-kullanımları"></span>
-    <a href="#ke%c5%9fifte-google-dorkingin-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Hassas Dosya ve Dizinleri Bulma*** 
-</code></pre>
-<p>Google Dorking, etik hackerların Excel sayfaları, PDF&rsquo;ler veya yapılandırma dosyaları gibi hassas bilgiler içerebilecek ifşa edilmiş dosyaları aramasına olanak tanır.
-- <em><strong>Güvenli Olmayan Giriş Sayfalarını Bulma</strong></em>
-Google Dorking ile kullanıcılar, HTTPS&rsquo;si olmayan veya iki faktörlü kimlik doğrulaması gerektiren güvenli olmayan giriş sayfalarını bulabilirler.
-- <em><strong>Açığa Çıkmış Yönetim Panellerini Belirleme</strong></em>
-Birçok web sitesinde düzgün bir şekilde güvence altına alınmamış veya gizlenmemiş yönetim oturum açma sayfaları bulunur. Google Dorking bu sayfaları bulmanıza yardımcı olarak olası güvenlik açıklarına ilişkin içgörüler sağlayabilir.
-- <em><strong>E-posta Adreslerini ve İletişim Bilgilerini Ortaya Çıkarma</strong></em>
-Google Dorking, herkese açık iletişim sayfalarını veya dizinlerini arayarak e-posta adreslerini ortaya çıkarabilir; bu da sosyal mühendislik amaçları için yararlı olabilir.</p>
+    <a href="#ke%c5%9fifte-google-dorkingin-kullan%c4%b1mlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><em><strong>Hassas Dosya ve Dizinleri Bulma</strong></em>
+Google Dorking, etik hackerların Excel sayfaları, PDF&rsquo;ler veya yapılandırma dosyaları gibi hassas bilgiler içerebilecek ifşa edilmiş dosyaları aramasına olanak tanır.</li>
+<li><em><strong>Güvenli Olmayan Giriş Sayfalarını Bulma</strong></em>
+Google Dorking ile kullanıcılar, HTTPS&rsquo;si olmayan veya iki faktörlü kimlik doğrulaması gerektiren güvenli olmayan giriş sayfalarını bulabilirler.</li>
+<li><em><strong>Açığa Çıkmış Yönetim Panellerini Belirleme</strong></em>
+Birçok web sitesinde düzgün bir şekilde güvence altına alınmamış veya gizlenmemiş yönetim oturum açma sayfaları bulunur. Google Dorking bu sayfaları bulmanıza yardımcı olarak olası güvenlik açıklarına ilişkin içgörüler sağlayabilir.</li>
+<li><em><strong>E-posta Adreslerini ve İletişim Bilgilerini Ortaya Çıkarma</strong></em>
+Google Dorking, herkese açık iletişim sayfalarını veya dizinlerini arayarak e-posta adreslerini ortaya çıkarabilir; bu da sosyal mühendislik amaçları için yararlı olabilir.</li>
+</ul>
 <h4><em><strong>Yaygın Google Dorking Operatörleri</strong></em><span class="hx-absolute -hx-mt-20" id="yaygın-google-dorking-operatörleri"></span>
     <a href="#yayg%c4%b1n-google-dorking-operat%c3%b6rleri" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>Google Dorking için bazı yararlı operatörler şunlardır:</p>
-<pre><code>- ***site:***  &lt;code&gt;site:example.com&lt;/code&gt; – Arama sonuçlarını belirli bir etki alanıyla sınırlar. 
-- ***filetype:***  &lt;code&gt;filetype:pdf&lt;/code&gt; – PDF'ler gibi belirli dosya türlerini arar. 
-- ***intitle:***  &lt;code&gt;intitle:&quot;index of&quot;&lt;/code&gt; – Başlığında belirli anahtar kelimeler bulunan sayfaları bulur; genellikle dizinleri bulmak için kullanılır. 
-- ***inurl:***  &lt;code&gt;inurl:login&lt;/code&gt; – URL'de belirli anahtar sözcükleri olan sayfaları arar, genellikle giriş sayfalarını bulmak için kullanılır. 
-</code></pre>
+<ul>
+<li><em><strong>site:</strong></em> <code>site:example.com</code>– Arama sonuçlarını belirli bir etki alanıyla sınırlar.</li>
+<li><em><strong>filetype:</strong></em> <code>filetype:pdf</code>– PDF&rsquo;ler gibi belirli dosya türlerini arar.</li>
+<li><em><strong>intitle:</strong></em> <code>intitle:&ldquo;index of&rdquo;</code>– Başlığında belirli anahtar kelimeler bulunan sayfaları bulur; genellikle dizinleri bulmak için kullanılır.</li>
+<li><em><strong>inurl:</strong></em> <code>inurl:login</code>– URL&rsquo;de belirli anahtar sözcükleri olan sayfaları arar, genellikle giriş sayfalarını bulmak için kullanılır.</li>
+</ul>
 <h4><em><strong>Google Dorking için En İyi Uygulamalar</strong></em><span class="hx-absolute -hx-mt-20" id="google-dorking-için-en-iyi-uygulamalar"></span>
-    <a href="#google-dorking-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><pre><code>- ***Operatörleri Birleştirme***  : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir. 
-- ***Hassas Verilere Erişimden Kaçının***  : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır. 
-- ***Dikkatli ve İzinli Kullanın***  : Tüm keşif araçlarında olduğu gibi, Google Dorking'i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun. 
-</code></pre>
-<hr />
+    <a href="#google-dorking-i%c3%a7in-en-iyi-uygulamalar" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><em><strong>Operatörleri Birleştirme</strong></em> : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir.</li>
+<li><em><strong>Hassas Verilere Erişimden Kaçının</strong></em> : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır.</li>
+<li><em><strong>Dikkatli ve İzinli Kullanın</strong></em> : Tüm keşif araçlarında olduğu gibi, Google Dorking&rsquo;i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun.</li>
+</ul>
+<hr>
 <h3><em><strong>Shodan, Maltego ve Google Dorking&rsquo;i karşılaştırma</strong></em><span class="hx-absolute -hx-mt-20" id="shodan-maltego-ve-google-dorkingi-karşılaştırma"></span>
     <a href="#shodan-maltego-ve-google-dorkingi-kar%c5%9f%c4%b1la%c5%9ft%c4%b1rma" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Bu araçların her biri keşif için benzersiz güçler ve yetenekler sunmaktadır:</p>
 <table>
-<thead>
-<tr>
-<th>***Alet*** </th>
-<th>***En İyisi İçin*** </th>
-<th>***Temel Özellikler*** </th>
-<th>***Sınırlamalar*** </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>***Şodan*** </td>
-<td>Nesnelerin İnterneti (IoT) ve ağ cihazı keşfi</td>
-<td>Bağlı cihazları arar, açık portları ortaya çıkarır</td>
-<td>Genel cihazları ifşa edebilir ancak tüm özel sistemleri ifşa edemez</td>
-</tr>
-<tr>
-<td>***Malta*** </td>
-<td>İlişki haritalama ve veri görselleştirme</td>
-<td>Bağlantıları görselleştirir, birden fazla veri dönüşümü kullanır</td>
-<td>Tam kullanım için dönüşüm bilgisi gerekir</td>
-</tr>
-<tr>
-<td>***Google Dorking*** </td>
-<td>Dosyaları, dizinleri ve genel kaynakları bulma</td>
-<td>Hedeflenen bilgiler için gelişmiş arama operatörleri</td>
-<td>Google tarafından indekslenen verilerle sınırlıdır</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th><strong>Araç</strong></th>
+          <th><strong>En iyisi için</strong></th>
+          <th><strong>Temel Özellikler</strong></th>
+          <th><strong>Kısıtlamalar</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Shodan</strong></td>
+          <td>Nesnelerin İnterneti (IoT) ve ağ cihazı keşfi</td>
+          <td>Bağlı cihazları arar, açık portları ortaya çıkarır</td>
+          <td>Genel cihazları ifşa edebilir ancak tüm özel sistemleri ifşa edemez</td>
+      </tr>
+      <tr>
+          <td><strong>Maltego</strong></td>
+          <td>İlişki haritalama ve veri görselleştirme</td>
+          <td>Bağlantıları görselleştirir, birden fazla veri dönüşümü kullanır</td>
+          <td>Tam kullanım için dönüşüm bilgisi gerekir</td>
+      </tr>
+      <tr>
+          <td><strong>Google Dorking</strong></td>
+          <td>osyaları, dizinleri ve genel kaynakları bulma</td>
+          <td>Hedeflenen bilgiler için gelişmiş arama operatörleri</td>
+          <td>Google tarafından indekslenen verilerle sınırlıdır</td>
+      </tr>
+  </tbody>
 </table>
-Bu araçlar birbirini tamamlayarak keşif aşamasında bilgi toplamaya yönelik kapsamlı bir yaklaşım sunar.
-<hr />
+<p>Bu araçlar birbirini tamamlayarak keşif aşamasında bilgi toplamaya yönelik kapsamlı bir yaklaşım sunar.</p>
+<hr>
 <h3><em><strong>Etik Hususlar ve Yasal Sınırlar</strong></em><span class="hx-absolute -hx-mt-20" id="etik-hususlar-ve-yasal-sınırlar"></span>
     <a href="#etik-hususlar-ve-yasal-s%c4%b1n%c4%b1rlar" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Shodan, Maltego ve Google Dorking gibi keşif araçları güçlüdür, ancak sorumlu bir şekilde kullanılmaları gerekir. Sistemlerde yetkisiz keşif yapmak yasadışı olabilir ve gizlilik politikalarını ihlal edebilir. Etik hackerlar her zaman şunları yapmalıdır:</p>
-<pre><code>- Verileri toplamadan önce hedef kuruluştan açık izin alın. 
-- Penetrasyon testi sözleşmelerinde ve etik hackleme yönergelerinde belirtilen kurallara uyun. 
-- Keşfedilen tüm güvenlik açıklarının ilgili taraflara bildirildiğinden emin olun. 
-</code></pre>
+<ul>
+<li>Verileri toplamadan önce hedef kuruluştan açık izin alın.</li>
+<li>Penetrasyon testi sözleşmelerinde ve etik hackleme yönergelerinde belirtilen kurallara uyun.</li>
+<li>Keşfedilen tüm güvenlik açıklarının ilgili taraflara bildirildiğinden emin olun.</li>
+</ul>
 <p>Siber güvenlik uzmanları etik standartlara bağlı kalarak, yasal sınırları aşmadan bir kuruluşun güvenlik duruşunu iyileştirmek için bu araçları kullanabilirler.</p>
-<hr />
+<hr>
 <h3><em><strong>Sonuç</strong></em><span class="hx-absolute -hx-mt-20" id="sonuç"></span>
     <a href="#sonu%c3%a7" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Shodan, Maltego ve Google Dorking, siber güvenlik profesyonellerinin sırt çantasındaki vazgeçilmez araçlardır. İnternete bağlı cihazlar, sosyal ağlar, web sitesi yapıları ve çok daha fazlası hakkında içgörüler sunarak etik hackerların güvenlik açıklarını belirlemesine ve olası tehditleri değerlendirmesine yardımcı olurlar. Bu araçlar birlikte kullanıldığında, hedef ortamın kapsamlı bir görünümünü sunarak etkili güvenlik değerlendirmeleri için temel oluşturan kapsamlı bir keşif aşamasına olanak tanır.</p>
 <p>Her aracın yeteneklerini ve sınırlamalarını anlamak, etik hackerların verileri verimli ve etik bir şekilde toplamasına, kuruluşları olası tehditlerden korumasına ve siber güvenlik savunmalarını güçlendirmesine olanak tanır. Doğru bilgiyle, bu keşif araçları kuruluşların saldırganlardan bir adım önde olmasını sağlayabilir.</p>
-<hr />
+<hr>
 <h3><em><strong>Keşif Araçları Hakkında SSS: Shodan, Maltego ve Google Dorking</strong></em><span class="hx-absolute -hx-mt-20" id="keşif-araçları-hakkında-sss-shodan-maltego-ve-google-dorking"></span>
-    <a href="#ke%c5%9fif-ara%c3%a7lar%c4%b1-hakk%c4%b1nda-sss-shodan-maltego-ve-google-dorking" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><em><strong>1. Shodan&rsquo;ın temel amacı nedir?</strong></em>
-Shodan, bağlı cihazları internette tarayarak, açığa çıkan portlar, servisler ve güvenlik açıkları hakkında bilgi sağlar.</p>
-<p><em><strong>2. Maltego keşifte nasıl yardımcı olur?</strong></em>
-Maltego, veri noktaları arasındaki ilişkileri ve bağlantıları görselleştirerek ağ yapılarını ve sosyal ağları haritalamaya yardımcı olur.</p>
-<p><em><strong>3. Google Dorking nedir ve yasal mıdır?</strong></em>
-Google Dorking, çevrimiçi olarak belirli bilgileri bulmak için gelişmiş arama operatörlerinin kullanılmasıdır. Yasal olsa da, özellikle yetkili hedeflerle sorumlu bir şekilde kullanılmalıdır.</p>
-<p><em><strong>4. Shodan özel ağları tarayabilir mi?</strong></em>
-Hayır, Shodan yalnızca internete bakan cihazları tarar. Özel ağların veya güvenlik duvarlarının arkasındaki cihazlara erişemez.</p>
-<p><em><strong>5. Bu keşif araçlarını kullanmak için en iyi uygulamalar nelerdir?</strong></em>
-En iyi uygulamalar, bu araçları yalnızca izinle kullanmayı, geniş aramalarla başlamayı ve hassas verilere doğrudan erişmekten kaçınmayı içerir.</p>
-<p><em><strong>6. Keşif için etik izin neden önemlidir?</strong></em>
-Etik izin, yasal ve gizlilik standartlarına uyumu garanti eder ve siber güvenlik uzmanlarını yasal sonuçlardan korur.</p>
+    <a href="#ke%c5%9fif-ara%c3%a7lar%c4%b1-hakk%c4%b1nda-sss-shodan-maltego-ve-google-dorking" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><em><strong>1. Shodan&rsquo;ın temel amacı nedir?</strong></em></p>
+<p>Shodan, bağlı cihazları internette tarayarak, açığa çıkan portlar, servisler ve güvenlik açıkları hakkında bilgi sağlar.</p>
+<p><em><strong>2. Maltego keşifte nasıl yardımcı olur?</strong></em></p>
+<p>Maltego, veri noktaları arasındaki ilişkileri ve bağlantıları görselleştirerek ağ yapılarını ve sosyal ağları haritalamaya yardımcı olur.</p>
+<p><em><strong>3. Google Dorking nedir ve yasal mıdır?</strong></em></p>
+<p>Google Dorking, çevrimiçi olarak belirli bilgileri bulmak için gelişmiş arama operatörlerinin kullanılmasıdır. Yasal olsa da, özellikle yetkili hedeflerle sorumlu bir şekilde kullanılmalıdır.</p>
+<p><em><strong>4. Shodan özel ağları tarayabilir mi?</strong></em></p>
+<p>Hayır, Shodan yalnızca internete bakan cihazları tarar. Özel ağların veya güvenlik duvarlarının arkasındaki cihazlara erişemez.</p>
+<p><em><strong>5. Bu keşif araçlarını kullanmak için en iyi uygulamalar nelerdir?</strong></em></p>
+<p>En iyi uygulamalar, bu araçları yalnızca izinle kullanmayı, geniş aramalarla başlamayı ve hassas verilere doğrudan erişmekten kaçınmayı içerir.</p>
+<p><em><strong>6. Keşif için etik izin neden önemlidir?</strong></em></p>
+<p>Etik izin, yasal ve gizlilik standartlarına uyumu garanti eder ve siber güvenlik uzmanlarını yasal sonuçlardan korur.</p>
 
         </div>
         <div class="hx-mt-16"></div>

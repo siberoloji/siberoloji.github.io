@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-05-13T12:39:00Z"
 excerpt: 'Metasploit framework yazılımını Kali İşletim sisteminde kullanıyorsanız,
-  en son güncellemeden sonra msfconsole başlangıcında aşağıdaki hatayı almaya başlamış
+  en son güncellemeden sonramsfconsolebaşlangıcında aşağıdaki hatayı almaya başlamış
   olabilirsiniz. msfconsole içerisinde veritabanı kulanımı, yaptığınız taramaların
   kayıt edilmesi ve tekrar kullanılmasında oldukça fayda sağlar. '
 guid: https://www.siberoloji.com/?p=1143

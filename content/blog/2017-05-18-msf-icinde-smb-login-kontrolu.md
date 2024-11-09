@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2017-05-18T13:02:00Z"
 excerpt: Yaptığınız taramalarda, bir şekilde kullanıcı adı ve parola bulduğunuzu düşünüyorsunuz.
   Bu kullanıcı adı ve parolanın başka hangi servislerde kullanıldığını denemek isteyebilirsiniz.
-  Bu noktada denenebilecek en mantıklı servis SMB olarak adlandırılan ağ üzerinde
+  Bu noktada denenebilecek en mantıklı servisSMBolarak adlandırılan ağ üzerinde
   dosya paylaşım servisidir.
 guid: https://www.siberoloji.com/?p=1163
 id: 1163

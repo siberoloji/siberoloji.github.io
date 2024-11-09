@@ -373,21 +373,21 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Key PQC Candidates&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Lattice-based cryptography:***  This approach relies on the hardness of certain lattice problems. Examples include NTRU and LWE. 
+- ***Lattice-based cryptography:*** This approach relies on the hardness of certain lattice problems. Examples include NTRU and LWE. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Code-based cryptography:&lt;/strong&gt;&lt;/em&gt;  Based on error-correcting codes, this method is considered to have strong security properties. McEliece and Goppa codes are prominent examples.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Code-based cryptography:&lt;/strong&gt;&lt;/em&gt; Based on error-correcting codes, this method is considered to have strong security properties. McEliece and Goppa codes are prominent examples.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Isogeny-based cryptography:&lt;/strong&gt;&lt;/em&gt;  This relies on the difficulty of computing isogenies between elliptic curves. Examples include SIDH and CSIDH.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Isogeny-based cryptography:&lt;/strong&gt;&lt;/em&gt; This relies on the difficulty of computing isogenies between elliptic curves. Examples include SIDH and CSIDH.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hash-based cryptography:&lt;/strong&gt;&lt;/em&gt;  This approach uses cryptographic hash functions to construct digital signatures. Examples include XMSS and SPHINCS+.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hash-based cryptography:&lt;/strong&gt;&lt;/em&gt; This approach uses cryptographic hash functions to construct digital signatures. Examples include XMSS and SPHINCS+.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -395,21 +395,21 @@
 &lt;p&gt;Transitioning to PQC will require careful planning and execution. Key challenges include:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Performance overhead:***  PQC algorithms may be less efficient than current cryptographic algorithms, potentially impacting system performance. 
+- ***Performance overhead:*** PQC algorithms may be less efficient than current cryptographic algorithms, potentially impacting system performance. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Interoperability:&lt;/strong&gt;&lt;/em&gt;  Ensuring compatibility between different PQC implementations and legacy systems can be complex.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Interoperability:&lt;/strong&gt;&lt;/em&gt; Ensuring compatibility between different PQC implementations and legacy systems can be complex.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Migration costs:&lt;/strong&gt;&lt;/em&gt;  The cost of upgrading existing systems to use PQC can be significant.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Migration costs:&lt;/strong&gt;&lt;/em&gt; The cost of upgrading existing systems to use PQC can be significant.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe key exchange:&lt;/strong&gt;&lt;/em&gt;  Establishing secure key exchange protocols in a post-quantum world is essential.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe key exchange:&lt;/strong&gt;&lt;/em&gt; Establishing secure key exchange protocols in a post-quantum world is essential.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -418,26 +418,26 @@
 &lt;p&gt;Defending against quantum threats requires a multi-layered approach, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Proactive monitoring and threat intelligence:***  Keeping track of quantum computing advancements and identifying potential vulnerabilities. 
+- ***Proactive monitoring and threat intelligence:*** Keeping track of quantum computing advancements and identifying potential vulnerabilities. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Risk assessment:&lt;/strong&gt;&lt;/em&gt;  Evaluating the impact of quantum threats on different systems and data.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Risk assessment:&lt;/strong&gt;&lt;/em&gt; Evaluating the impact of quantum threats on different systems and data.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-resistant algorithm adoption:&lt;/strong&gt;&lt;/em&gt;  Implementing PQC where appropriate.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-resistant algorithm adoption:&lt;/strong&gt;&lt;/em&gt; Implementing PQC where appropriate.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe key management:&lt;/strong&gt;&lt;/em&gt;  Protecting cryptographic keys from quantum attacks.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe key management:&lt;/strong&gt;&lt;/em&gt; Protecting cryptographic keys from quantum attacks.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe random number generation:&lt;/strong&gt;&lt;/em&gt;  Ensuring the quality of random numbers used in cryptographic operations.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Quantum-safe random number generation:&lt;/strong&gt;&lt;/em&gt; Ensuring the quality of random numbers used in cryptographic operations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

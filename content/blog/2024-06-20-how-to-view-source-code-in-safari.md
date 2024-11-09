@@ -41,9 +41,9 @@ url: /how-to-view-source-code-in-safari/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- From the top menu bar, select ***Develop > Show Page Source*** . You can also press ***Option+Command+U *** on your keyboard. 
+- From the top menu bar, select***Develop > Show Page Source*** . You can also press***Option+Command+U*** on your keyboard. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  If the Develop menu is not visible, go to ***Preferences > Advanced*** , and choose the ***Show Develop menu in menu bar*** . 
+  If the Develop menu is not visible, go to***Preferences > Advanced*** , and choose the***Show Develop menu in menu bar*** . 
  

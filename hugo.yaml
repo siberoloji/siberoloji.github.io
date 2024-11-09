@@ -19,7 +19,7 @@ languages:
     title: Siberoloji
     pagination:
       disableAliases: true
-      pagerSize: 20
+      pagerSize: 10
       path: page
     params:
       subtitle: Useful content and news

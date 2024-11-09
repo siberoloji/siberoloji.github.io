@@ -36,11 +36,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***IP (İnternet Protokolü)***  : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
+- ***IP (İnternet Protokolü)*** : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MPLS (Çoklu Protokol Etiket Anahtarlama)***  : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür. 
+- ***MPLS (Çoklu Protokol Etiket Anahtarlama)*** : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -63,11 +63,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Ingress LER***  : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
+- ***Ingress LER*** : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Çıkış LER***  : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür. 
+- ***Çıkış LER*** : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -133,11 +133,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Daha Hızlı Yönlendirme***  : LSR'ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
+- ***Daha Hızlı Yönlendirme*** : LSR'ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Trafik Mühendisliği***  : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar. 
+- ***Trafik Mühendisliği*** : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -147,11 +147,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hiyerarşik Etiketleme***  : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
+- ***Hiyerarşik Etiketleme*** : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Azaltılmış Yönlendirme Tablosu Boyutu***  : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez. 
+- ***Azaltılmış Yönlendirme Tablosu Boyutu*** : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -161,11 +161,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Trafik Önceliklendirmesi***  : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
+- ***Trafik Önceliklendirmesi*** : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Garantili Bant Genişliği***  : Kritik uygulamalar için LSP'ler belirli bant genişliği garantileri ile kurulabilir. 
+- ***Garantili Bant Genişliği*** : Kritik uygulamalar için LSP'ler belirli bant genişliği garantileri ile kurulabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -175,11 +175,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hızlı Yeniden Yönlendirme***  : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
+- ***Hızlı Yeniden Yönlendirme*** : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yol Koruması***  : Anında yedekleme sağlamak için yedek LSP'ler önceden kurulabilir. 
+- ***Yol Koruması*** : Anında yedekleme sağlamak için yedek LSP'ler önceden kurulabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -189,11 +189,11 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***3. Katman VPN'ler***  : IP-MPLS, 3. Katman VPN'lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
+- ***3. Katman VPN'ler*** : IP-MPLS, 3. Katman VPN'lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Katman 2 VPN'ler***  : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır. 
+- ***Katman 2 VPN'ler*** : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -203,7 +203,7 @@ url: /tr/ip-mpls-modern-ag-altyapisinin-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Çoklu Protokol Desteği***  : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
+- ***Çoklu Protokol Desteği*** : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

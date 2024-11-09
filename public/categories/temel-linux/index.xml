@@ -30,26 +30,26 @@
 &lt;p&gt;Belirli konumlara dalmadan önce, günlük dosyalarının neden bu kadar önemli olduğunu kısaca tartışalım:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Sorun Giderme***  : Sistem veya uygulama sorunlarını teşhis ederken genellikle ilk bakılan yer günlük dosyalarıdır. 
+- ***Sorun Giderme*** : Sistem veya uygulama sorunlarını teşhis ederken genellikle ilk bakılan yer günlük dosyalarıdır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt;  : Potansiyel güvenlik ihlallerini tespit etmeye ve araştırmaya yardımcı olurlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt; : Potansiyel güvenlik ihlallerini tespit etmeye ve araştırmaya yardımcı olurlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performans İzleme&lt;/strong&gt;&lt;/em&gt;  : Günlükler sistem performansı ve kaynak kullanımı hakkında bilgi sağlayabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performans İzleme&lt;/strong&gt;&lt;/em&gt; : Günlükler sistem performansı ve kaynak kullanımı hakkında bilgi sağlayabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uyumluluk&lt;/strong&gt;&lt;/em&gt;  : Birçok sektör, düzenlemelere uyum sağlamak için kayıtların tutulmasını gerektirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uyumluluk&lt;/strong&gt;&lt;/em&gt; : Birçok sektör, düzenlemelere uyum sağlamak için kayıtların tutulmasını gerektirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Denetim&lt;/strong&gt;&lt;/em&gt;  : Günlükler, denetim amaçlı sistem ve kullanıcı faaliyetlerinin kaydını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Denetim&lt;/strong&gt;&lt;/em&gt; : Günlükler, denetim amaçlı sistem ve kullanıcı faaliyetlerinin kaydını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -64,16 +64,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Genel sistem etkinlik günlükleri 
+- ***Amaç*** : Genel sistem etkinlik günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Çekirdek iletileri, sistem daemon günlükleri ve diğer sistem genelindeki günlükler&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Çekirdek iletileri, sistem daemon günlükleri ve diğer sistem genelindeki günlükler&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Sistem genelindeki sorunları giderme, sistem davranışını izleme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Sistem genelindeki sorunları giderme, sistem davranışını izleme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -82,16 +82,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Kimlik doğrulama günlükleri 
+- ***Amaç*** : Kimlik doğrulama günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Kullanıcı oturum açmaları, sudo komut kullanımı ve diğer kimlik doğrulamayla ilgili olaylar&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Kullanıcı oturum açmaları, sudo komut kullanımı ve diğer kimlik doğrulamayla ilgili olaylar&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Oturum açma girişimlerini izleme, yetkisiz erişimi tespit etme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Oturum açma girişimlerini izleme, yetkisiz erişimi tespit etme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -100,16 +100,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Çekirdek günlükleri 
+- ***Amaç*** : Çekirdek günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Donanım hataları ve çekirdek düzeyindeki olaylar da dahil olmak üzere çekirdek iletileri&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Donanım hataları ve çekirdek düzeyindeki olaylar da dahil olmak üzere çekirdek iletileri&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Donanım ve sürücü sorunlarının teşhisi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Donanım ve sürücü sorunlarının teşhisi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -118,16 +118,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Önyükleme mesajları 
+- ***Amaç*** : Önyükleme mesajları 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Sistem önyükleme işlemi sırasında oluşturulan iletiler&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Sistem önyükleme işlemi sırasında oluşturulan iletiler&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Önyükleme sorunlarının giderilmesi, donanım algılamanın kontrol edilmesi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Önyükleme sorunlarının giderilmesi, donanım algılamanın kontrol edilmesi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -136,16 +136,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Cron iş günlükleri 
+- ***Amaç*** : Cron iş günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Zamanlanmış görev yürütmelerinin kayıtları&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Zamanlanmış görev yürütmelerinin kayıtları&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Cron iş yürütmesini doğrulama, cron ile ilgili sorunları teşhis etme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Cron iş yürütmesini doğrulama, cron ile ilgili sorunları teşhis etme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -154,16 +154,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Posta sunucusu günlükleri 
+- ***Amaç*** : Posta sunucusu günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : E-posta sunucusu etkinliği (örneğin, Postfix, Sendmail)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : E-posta sunucusu etkinliği (örneğin, Postfix, Sendmail)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : E-posta teslim sorunlarını giderme, spam sorunlarını tespit etme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : E-posta teslim sorunlarını giderme, spam sorunlarını tespit etme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -172,16 +172,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Apache web sunucusu günlükleri 
+- ***Amaç*** : Apache web sunucusu günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Web sunucusu erişim ve hata günlükleri&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Web sunucusu erişim ve hata günlükleri&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Web trafiğini analiz etme, web uygulaması sorunlarını giderme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Web trafiğini analiz etme, web uygulaması sorunlarını giderme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -190,16 +190,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Veritabanı günlükleri 
+- ***Amaç*** : Veritabanı günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Veritabanı sunucusu etkinliği, hatalar ve sorgular&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Veritabanı sunucusu etkinliği, hatalar ve sorgular&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Veritabanı performansını optimize etme, veritabanı sorunlarını giderme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Veritabanı performansını optimize etme, veritabanı sorunlarını giderme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -207,16 +207,16 @@
     &lt;a href=&#34;#2-varlogjournal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : Systemd günlük kayıtları 
+- ***Amaç*** : Systemd günlük kayıtları 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Systemd etkin sistemlerden yapılandırılmış günlükler&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Systemd etkin sistemlerden yapılandırılmış günlükler&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Systemd hizmetleri için merkezi günlük kaydı, journalctl ile sorgulama&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Systemd hizmetleri için merkezi günlük kaydı, journalctl ile sorgulama&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -224,16 +224,16 @@
     &lt;a href=&#34;#3-xsession-hatalar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : X Pencere Sistemi oturum hataları 
+- ***Amaç*** : X Pencere Sistemi oturum hataları 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Grafiksel oturumlarla ilgili hatalar&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Grafiksel oturumlarla ilgili hatalar&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Grafiksel kullanıcı arayüzüyle ilgili sorunların giderilmesi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Grafiksel kullanıcı arayüzüyle ilgili sorunların giderilmesi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -241,16 +241,16 @@
     &lt;a href=&#34;#4-varlogcups&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : CUPS (baskı sistemi) günlükleri 
+- ***Amaç*** : CUPS (baskı sistemi) günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Yazdırma işi bilgileri, yazıcı hataları&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Yazdırma işi bilgileri, yazıcı hataları&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Yazdırma sorunlarının teşhisi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Yazdırma sorunlarının teşhisi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -258,16 +258,16 @@
     &lt;a href=&#34;#5-varlogapt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Amaç***  : APT paket yöneticisi günlükleri 
+- ***Amaç*** : APT paket yöneticisi günlükleri 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt;  : Paket kurulum, yükseltme ve kaldırma günlükleri&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçerik&lt;/strong&gt;&lt;/em&gt; : Paket kurulum, yükseltme ve kaldırma günlükleri&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt;  : Sistem güncellemelerini izleme, paket yönetimi sorunlarını giderme&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım&lt;/strong&gt;&lt;/em&gt; : Sistem güncellemelerini izleme, paket yönetimi sorunlarını giderme&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -295,36 +295,36 @@
 &lt;p&gt;Günlük dosyalarını görüntülemek ve analiz etmek için kullanabileceğiniz çeşitli araçlar ve komutlar vardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***cat***  : Tüm günlük dosyalarını görüntülemek içinKopyala&lt;code&gt;cat /var/log/syslog&lt;/code&gt; 
+- ***cat*** : Tüm günlük dosyalarını görüntülemek içinKopyala&lt;code&gt;cat /var/log/syslog&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;tail&lt;/strong&gt;&lt;/em&gt;  : Bir günlük dosyasının sonunu görüntülemek veya günlük güncellemelerini gerçek zamanlı olarak takip etmek içinKopyala&lt;code&gt;tail -f /var/log/auth.log&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;tail&lt;/strong&gt;&lt;/em&gt; : Bir günlük dosyasının sonunu görüntülemek veya günlük güncellemelerini gerçek zamanlı olarak takip etmek içinKopyala&lt;code&gt;tail -f /var/log/auth.log&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;grep&lt;/strong&gt;&lt;/em&gt;  : Günlük dosyalarında belirli kalıpları aramak içinKopyala&lt;code&gt;grep &amp;ldquo;error&amp;rdquo; /var/log/syslog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;grep&lt;/strong&gt;&lt;/em&gt; : Günlük dosyalarında belirli kalıpları aramak içinKopyala&lt;code&gt;grep &amp;ldquo;error&amp;rdquo; /var/log/syslog&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;journalctl&lt;/strong&gt;&lt;/em&gt;  : systemd journalCopy&amp;rsquo;yi sorgulamak için&lt;code&gt;journalctl -u apache2.service&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;journalctl&lt;/strong&gt;&lt;/em&gt; : systemd journalCopy&amp;rsquo;yi sorgulamak için&lt;code&gt;journalctl -u apache2.service&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;daha az&lt;/strong&gt;&lt;/em&gt;  : Büyük günlük dosyalarını sayfalamak içinKopyala&lt;code&gt;less /var/log/syslog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;daha az&lt;/strong&gt;&lt;/em&gt; : Büyük günlük dosyalarını sayfalamak içinKopyala&lt;code&gt;less /var/log/syslog&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;logwatch&lt;/strong&gt;&lt;/em&gt;  : Özelleştirilebilir bir günlük analiz sistemi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;logwatch&lt;/strong&gt;&lt;/em&gt; : Özelleştirilebilir bir günlük analiz sistemi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt;  : Gelişmiş log analizi ve görselleştirme için ELK (Elasticsearch, Logstash, Kibana) yığınının bir parçası&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt; : Gelişmiş log analizi ve görselleştirme için ELK (Elasticsearch, Logstash, Kibana) yığınının bir parçası&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -332,36 +332,36 @@
     &lt;a href=&#34;#g%c3%bcnl%c3%bck-y%c3%b6netimi-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Düzenli İzleme***  : Önemli günlük dosyalarını düzenli olarak kontrol etmek için bir rutin oluşturun. 
+- ***Düzenli İzleme*** : Önemli günlük dosyalarını düzenli olarak kontrol etmek için bir rutin oluşturun. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Merkezi Günlük Kaydı&lt;/strong&gt;&lt;/em&gt;  : Çok sunuculu ortamlar için merkezi bir günlük kaydı sistemi kurmayı düşünün.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Merkezi Günlük Kaydı&lt;/strong&gt;&lt;/em&gt; : Çok sunuculu ortamlar için merkezi bir günlük kaydı sistemi kurmayı düşünün.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Günlük Ayrıştırma&lt;/strong&gt;&lt;/em&gt;  : Günlüklerden anlamlı veriler çıkarmak için günlük ayrıştırma araçlarını kullanın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Günlük Ayrıştırma&lt;/strong&gt;&lt;/em&gt; : Günlüklerden anlamlı veriler çıkarmak için günlük ayrıştırma araçlarını kullanın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt;  : Günlük dosyalarını yetkisiz erişime ve kurcalamaya karşı koruyun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt; : Günlük dosyalarını yetkisiz erişime ve kurcalamaya karşı koruyun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Saklama Politikası&lt;/strong&gt;&lt;/em&gt;  : Depolama kısıtlamalarını uyumluluk gereklilikleriyle dengeleyen bir günlük saklama politikası oluşturun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Saklama Politikası&lt;/strong&gt;&lt;/em&gt; : Depolama kısıtlamalarını uyumluluk gereklilikleriyle dengeleyen bir günlük saklama politikası oluşturun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Otomasyon&lt;/strong&gt;&lt;/em&gt;  : Kritik günlük olayları için otomatik uyarılar ayarlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Otomasyon&lt;/strong&gt;&lt;/em&gt; : Kritik günlük olayları için otomatik uyarılar ayarlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Korelasyon&lt;/strong&gt;&lt;/em&gt;  : Sistem olaylarının tam resmini elde etmek için farklı kaynaklardan gelen günlükleri ilişkilendirin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Korelasyon&lt;/strong&gt;&lt;/em&gt; : Sistem olaylarının tam resmini elde etmek için farklı kaynaklardan gelen günlükleri ilişkilendirin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -370,26 +370,26 @@
 &lt;p&gt;Günlük dosyaları inanılmaz derecede yararlı olsa da bazı zorlukları da beraberinde getirir:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Hacim***  : Yüksek trafiğe sahip sistemler muazzam miktarda günlük verisi üretebilir. 
+- ***Hacim*** : Yüksek trafiğe sahip sistemler muazzam miktarda günlük verisi üretebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karmaşıklık&lt;/strong&gt;&lt;/em&gt;  : Log formatlarını anlamak ve anlamlı bilgileri çıkarmak karmaşık olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karmaşıklık&lt;/strong&gt;&lt;/em&gt; : Log formatlarını anlamak ve anlamlı bilgileri çıkarmak karmaşık olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Depolama&lt;/strong&gt;&lt;/em&gt;  : Günlüklerin uzun süreli depolanması önemli miktarda disk alanı tüketebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Depolama&lt;/strong&gt;&lt;/em&gt; : Günlüklerin uzun süreli depolanması önemli miktarda disk alanı tüketebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performans Etkisi&lt;/strong&gt;&lt;/em&gt;  : Aşırı günlük kaydı sistem performansını etkileyebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performans Etkisi&lt;/strong&gt;&lt;/em&gt; : Aşırı günlük kaydı sistem performansını etkileyebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt;  : Kayıtlar hassas bilgiler içerebilir ve uygun şekilde güvence altına alınmalıdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt; : Kayıtlar hassas bilgiler içerebilir ve uygun şekilde güvence altına alınmalıdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1211,7 +1211,7 @@ linux-headers-4.8.0-42-generic is already the newest version ***(*** 4.8.0-42.45
       <description>
         
         
-         &lt;p&gt;Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız &#34;Nasıl yapılır?&#34; dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de &lt;a href=&#34;https://siberoloji.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;siberoloji.com&lt;/a&gt; olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.
+         &lt;p&gt;Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız &#34;Nasıl yapılır?&#34; dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakatdiğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de&lt;a href=&#34;https://siberoloji.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;siberoloji.com&lt;/a&gt;olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.
  &lt;p&gt;Bu yazımızda, önceden sysV init olarak bilinen yapıda bulunan çalışma seviyelerinin systemd ile birlikte nasıl değiştiğini açıklayacağız. Aşağıdaki tabloda, çalışma seviyelerinin init ve systemd içerisinde nasıl isimlendirildiğini görebilirsiniz.
  &lt;p&gt;Runlevel Target&lt;br&gt;0 poweroff.target&lt;br&gt;1 rescue.target&lt;br&gt;2,3,4 multi-user.target&lt;br&gt;5 graphical.target&lt;br&gt;6 reboot.target
  &lt;p&gt;Tablodan da göreceğiniz gibi, init içerisinde çalışma seviyesi (runlevel) olarak adlandırılan kademeler systemd ile birlikte hedef (target) olarak ifade edilmeye başlamıştır. Komutlarda İngilizce yazımı kullanmanız gereken hedefleri şimdi tek tek açıklayalım.
@@ -1333,17 +1333,17 @@ pwd&lt;/pre&gt;
 &lt;!-- wp:list --&gt;
  &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sleep&lt;/strong&gt;&lt;/em&gt;  (Uyku = Stand By = Suspend = Suspend to RAM) ile işletim sistemi tüm uygulamaları durdurur (pause) ve sistmein az enerji harcamasını sağlar. Sistem kapanmaz, bu sebeple saniyeler içerisinde açılarak devam edebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sleep&lt;/strong&gt;&lt;/em&gt; (Uyku = Stand By = Suspend = Suspend to RAM) ile işletim sistemi tüm uygulamaları durdurur (pause) ve sistmein az enerji harcamasını sağlar. Sistem kapanmaz, bu sebeple saniyeler içerisinde açılarak devam edebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hibernate&lt;/strong&gt;&lt;/em&gt;  (Hazırda beklet = Suspend to Disk), sleep ile aynı mantıktadır. Fakat sistemi tamamen kapatabilmek için RAM&amp;rsquo;deki bilgileri sabit diskte saklar, yeniden açılması zaman almaktadır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hibernate&lt;/strong&gt;&lt;/em&gt; (Hazırda beklet = Suspend to Disk), sleep ile aynı mantıktadır. Fakat sistemi tamamen kapatabilmek için RAM&amp;rsquo;deki bilgileri sabit diskte saklar, yeniden açılması zaman almaktadır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hybrid Sleep&lt;/strong&gt;&lt;/em&gt;  (Suspend to both) modunda kullanıcı oturumu kapatılır (logout). Sadece işletim sistemi ve servisleri hazırda bekletilir (hibernate). Windows, 8 ve sonrası sürümlerde &amp;ldquo;shut down&amp;rdquo; işlemi ile &amp;ldquo;Hybrid Sleep&amp;rdquo; uygulamaktadır. Gerçek bir sistem kapanması için &amp;ldquo;yeniden başlat&amp;rdquo; işlemi yapılmalıdır. Windows ayalarında &amp;ldquo;fast startup&amp;rdquo; (ya da fast boot) isimli bu özellik devre dışı bırakılabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hybrid Sleep&lt;/strong&gt;&lt;/em&gt; (Suspend to both) modunda kullanıcı oturumu kapatılır (logout). Sadece işletim sistemi ve servisleri hazırda bekletilir (hibernate). Windows, 8 ve sonrası sürümlerde &amp;ldquo;shut down&amp;rdquo; işlemi ile &amp;ldquo;Hybrid Sleep&amp;rdquo; uygulamaktadır. Gerçek bir sistem kapanması için &amp;ldquo;yeniden başlat&amp;rdquo; işlemi yapılmalıdır. Windows ayalarında &amp;ldquo;fast startup&amp;rdquo; (ya da fast boot) isimli bu özellik devre dışı bırakılabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1351,7 +1351,7 @@ pwd&lt;/pre&gt;
 &lt;!-- wp:list --&gt;
  &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Connected Standby (ya da InstantGo)&lt;/strong&gt;&lt;/em&gt;  mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Connected Standby (ya da InstantGo)&lt;/strong&gt;&lt;/em&gt; mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1433,7 +1433,7 @@ pwd&lt;/pre&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Önyükleyici dosyaları Ubuntu&amp;rsquo;da varsayılan olarak &lt;code&gt;/boot/grub&lt;/code&gt; dizinindedir. Bu dizinin Ubuntu&amp;rsquo;da, başlatılacak işletim sistemi ile aynı bölümde olma şartı yoktur. Örnegin &lt;code&gt;/boot/grub&lt;/code&gt; , &lt;code&gt;/dev/sda9&lt;/code&gt;&amp;lsquo;da iken, Ubuntu&amp;rsquo;nun tüm dosyaları &lt;code&gt;/dev/sda5&lt;/code&gt;&amp;lsquo;te olabilir. Eğer bölümleri ayırırsak, Ubuntu&amp;rsquo;yu sildiğimizde &lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=GRUB&#34;&gt;GRUB&lt;/a&gt; sistemi de silinmeyeceği için HDD&amp;rsquo;de kurulu diğer işletim sistemleri hala başlatılabilir olacaktır. Fakat Grub, Ubuntu ile aynı disk bölümünde olursa, Ubuntu bölüm silindiğinde (ya da formatlandığında), Grup başlamayacağı için HDD&amp;rsquo;de kurulu diğer işletim sistemleri de başlamayacaktır.&lt;/li&gt;
+&lt;li&gt;Önyükleyici dosyaları Ubuntu&amp;rsquo;da varsayılan olarak&lt;code&gt;/boot/grub&lt;/code&gt;dizinindedir. Bu dizinin Ubuntu&amp;rsquo;da, başlatılacak işletim sistemi ile aynı bölümde olma şartı yoktur. Örnegin&lt;code&gt;/boot/grub&lt;/code&gt;,&lt;code&gt;/dev/sda9&lt;/code&gt;&amp;lsquo;da iken, Ubuntu&amp;rsquo;nun tüm dosyaları&lt;code&gt;/dev/sda5&lt;/code&gt;&amp;lsquo;te olabilir. Eğer bölümleri ayırırsak, Ubuntu&amp;rsquo;yu sildiğimizde&lt;a href=&#34;https://wiki.ubuntu-tr.net/index.php?title=GRUB&#34;&gt;GRUB&lt;/a&gt;sistemi de silinmeyeceği için HDD&amp;rsquo;de kurulu diğer işletim sistemleri hala başlatılabilir olacaktır. Fakat Grub, Ubuntu ile aynı disk bölümünde olursa, Ubuntu bölüm silindiğinde (ya da formatlandığında), Grup başlamayacağı için HDD&amp;rsquo;de kurulu diğer işletim sistemleri de başlamayacaktır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -1593,17 +1593,17 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G&lt;/pre&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında her işletim sisteminin kendi ön yükleyicisi ayrı dizinlerde mevcuttur. &lt;code&gt;\EFI\BOOT&lt;/code&gt; dizini HDD &amp;ldquo;fallback mode&amp;rdquo; ile yürütüldüğünde devreye girer. Yani; UEFI, hiçbir disk bölümünü belirtmeden HDD&amp;rsquo;yi açtığında (boot ettiğinde) UEFI, ESP bölümünü bulur. Daha sonra içerisinde &lt;code&gt;\EFI\BOOT\BOOTx64.EFI&lt;/code&gt; (gibi ya da standart önceden belirlenmiş farklı önyükleyici adresleri) dosyasını çalıştırır. Yani işletim sistemlerinin ön yükleyicileri dışında genel bir UEFI arayüzü (bootloader&amp;rsquo;i) mevcuttur. Bu bootloader &amp;ldquo;default bootloader&amp;rdquo; olarak da adlandırılmaktadır. Bazı UEFI aygıt yazılımları bu bootloader&amp;rsquo;i bulamadığı zaman Windowsun ön tanımlı bootloader&amp;rsquo;ini da açmayı denemektedir: EFI/Microsoft/BOOT/bootmgfw.efi.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt;dizini altında her işletim sisteminin kendi ön yükleyicisi ayrı dizinlerde mevcuttur.&lt;code&gt;\EFI\BOOT&lt;/code&gt;dizini HDD &amp;ldquo;fallback mode&amp;rdquo; ile yürütüldüğünde devreye girer. Yani; UEFI, hiçbir disk bölümünü belirtmeden HDD&amp;rsquo;yi açtığında (boot ettiğinde) UEFI, ESP bölümünü bulur. Daha sonra içerisinde&lt;code&gt;\EFI\BOOT\BOOTx64.EFI&lt;/code&gt;(gibi ya da standart önceden belirlenmiş farklı önyükleyici adresleri) dosyasını çalıştırır. Yani işletim sistemlerinin ön yükleyicileri dışında genel bir UEFI arayüzü (bootloader&amp;rsquo;i) mevcuttur. Bu bootloader &amp;ldquo;default bootloader&amp;rdquo; olarak da adlandırılmaktadır. Bazı UEFI aygıt yazılımları bu bootloader&amp;rsquo;i bulamadığı zaman Windowsun ön tanımlı bootloader&amp;rsquo;ini da açmayı denemektedir: EFI/Microsoft/BOOT/bootmgfw.efi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında sürücüler ve işletim sistemi çekirdekleri de mevcuttur. EFI dosyası executable&amp;rsquo;ı olarak Linux çekirdeği çalıştırılabiliyor. Linux güncel sürümleri bunu desteklemektedir. Bu özellik; EFI Boot Stub (ya da EFI Stub) olarak isimlendiriliyor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt;dizini altında sürücüler ve işletim sistemi çekirdekleri de mevcuttur. EFI dosyası executable&amp;rsquo;ı olarak Linux çekirdeği çalıştırılabiliyor. Linux güncel sürümleri bunu desteklemektedir. Bu özellik; EFI Boot Stub (ya da EFI Stub) olarak isimlendiriliyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt; dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\EFI&lt;/code&gt;dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1652,7 +1652,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G&lt;/pre&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;RAID0: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da farklı bilgiler tutuluyor. Performans artışı sağlıyor. Çünkü bazı durumlarda iki diskten ayrı ayrı dosyaları aynı anda okuyabiliyor. Tek diskte olsaydık aynı anda bir dosya okuyabilecektir.&lt;/li&gt;
+&lt;li&gt;RAID0: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da farklı bilgilertutuluyor. Performans artışı sağlıyor. Çünkü bazı durumlarda iki diskten ayrı ayrı dosyaları aynı anda okuyabiliyor. Tek diskte olsaydık aynı anda bir dosya okuyabilecektir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -1743,7 +1743,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G&lt;/pre&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Anahtar işaretli bir bölüm üzerinde işlem yapmak için o bölüm önce ayrılmalıdır (unmount). Eğer ilgili bölüm, çalıştırılan işletim sistemi dosyalarını içerir ise ayrılamaz. Böyle bir durumda ilgili bölüm ancak &lt;a href=&#34;http://tr.wikipedia.org/wiki/canl%C4%B1_sistem&#34;&gt;canlı CD&lt;/a&gt; üzerinden ya da aynı HDD üzerinde farklı bir bölümdeki işletim sistemi çalıştırılarak yapılabilir.&lt;/li&gt;
+&lt;li&gt;Anahtar işaretli bir bölüm üzerinde işlem yapmak için o bölüm önce ayrılmalıdır (unmount). Eğer ilgili bölüm, çalıştırılan işletim sistemi dosyalarını içerir ise ayrılamaz. Böyle bir durumda ilgili bölüm ancak&lt;a href=&#34;http://tr.wikipedia.org/wiki/canl%C4%B1_sistem&#34;&gt;canlı CD&lt;/a&gt;üzerinden ya da aynı HDD üzerinde farklı bir bölümdeki işletim sistemi çalıştırılarak yapılabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -2010,7 +2010,7 @@ ls ~&lt;/pre&gt;
 &lt;!-- wp:list --&gt;
  &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Bir değişken tanılarken onun ADINI yazarız ve hiç boşluk bırakmadan eşittir (=) işaretiyle devam ederiz. Eşittir işaretinden sonra da boşluk bırakmadan TEK DÜZ TIRNAK içerisinde değeri yazarız. &lt;em&gt;&lt;strong&gt;Not&lt;/strong&gt;&lt;/em&gt; : Tırnaklar içerisine bir değer değil de bir komut sonucu da yazdırılabilir ancak onu birazdan göreceğiz.&lt;/li&gt;
+&lt;li&gt;Bir değişken tanılarken onun ADINI yazarız ve hiç boşluk bırakmadan eşittir (=) işaretiyle devam ederiz. Eşittir işaretinden sonra da boşluk bırakmadan TEK DÜZ TIRNAK içerisinde değeri yazarız.&lt;em&gt;&lt;strong&gt;Not&lt;/strong&gt;&lt;/em&gt; : Tırnaklar içerisine bir değer değil de bir komut sonucu da yazdırılabilir ancak onu birazdan göreceğiz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -2069,22 +2069,22 @@ Merhaba Umut&lt;/pre&gt;
 &lt;!-- wp:list --&gt;
  &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;$0&lt;/strong&gt;&lt;/em&gt;  – Scriptin adı bu değişkende tutulur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;$0&lt;/strong&gt;&lt;/em&gt; – Scriptin adı bu değişkende tutulur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;$1 - $9&lt;/strong&gt;&lt;/em&gt;  – Scripte komut satırından (dışarıdan gönderilen) argümanlar 1 ile 9 arasındaki değişkenlerde kayıt edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;$1 - $9&lt;/strong&gt;&lt;/em&gt; – Scripte komut satırından (dışarıdan gönderilen) argümanlar 1 ile 9 arasındaki değişkenlerde kayıt edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;$#&lt;/strong&gt;&lt;/em&gt;  - Scripte dışarıdan gönderilen toplam argüman sayısı bu değişkende tutulur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;$#&lt;/strong&gt;&lt;/em&gt; - Scripte dışarıdan gönderilen toplam argüman sayısı bu değişkende tutulur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/em&gt;*  - Scripte dışarıdan gönderilen argümanların tamamı anlamına gelir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/em&gt;* - Scripte dışarıdan gönderilen argümanların tamamı anlamına gelir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -3012,7 +3012,7 @@ vm.swappiness=10
         
         &lt;p&gt;Günümüzde, Debian, Fedora, Red Hat, Ubuntu ve ArchLinux vb. ana dağıtım olarak kabul edilen linux işletim sistemleri, systemd kullanmaya başlamıştır.  Gelişmeler, kullanımın yaygınlaşacağını göstermektedir. Linux kullanıcılarının, bu alanda kendini geliştirmeleri gerekecektir.&lt;/p&gt;
 &lt;p&gt;Bu konuda internette kaynak arandığında, genelde geliştiricilerin hazırladığı İngilizce manpages (&lt;a href=&#34;http://www.freedesktop.org/software/systemd/man/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;wiki&lt;/a&gt;) veya kısa blog yazıları ile karşılaşıyoruz. Türkçe, detaylı bir kaynak bulmak oldukça zor. İşletim sistemini, görsel olarak kullananlar ve gerisine karışmam diyenler için sorun yok. Ancak, arka planda olanları merak edenler veya sorun çözme işlemlerinde bilgi sahibi olmak isteyenlerin, systemd araçlarını öğrenmesi kaçınılmaz olacak. Bu düşünceden hareketle, yazıları bir sıra dahilinde devam ettirmeyi düşünüyoruz.&lt;/p&gt;
-&lt;p&gt;systemd hakkında &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; yazısında, kısaca açıklayıcı bilgi vermeye çalışmıştık. Bu yazıda ise systemd, kullanıcılara hangi  araçları sunuyor? Bu araçların neler olduğunu açıklayacağız.&lt;/p&gt;
+&lt;p&gt;systemd hakkında&lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt;yazısında, kısaca açıklayıcı bilgi vermeye çalışmıştık. Bu yazıda ise systemd, kullanıcılara hangi araçları sunuyor? Bu araçların neler olduğunu açıklayacağız.&lt;/p&gt;
 &lt;p&gt;systemd, sistem ve servis yöneticisi olarak tanımlanan bir program. Windows İşletim Sistemi kullanıcılarının, Çalıştır kutusuna services.msc komutunu yazdığında çalışan servisler programının bir benzeri. Komut satırından kontrol edilebildiği gibi görsel bir kullanıcı arayüzü de bulunuyor (systemd-ui).&lt;/p&gt;
 &lt;h2&gt;Bilgisayarda mevcut servislerle ilgili neler yapılabilir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgisayarda-mevcut-servislerle-ilgili-neler-yapılabilir&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#bilgisayarda-mevcut-servislerle-ilgili-neler-yap%c4%b1labilir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
@@ -3061,7 +3061,7 @@ vm.swappiness=10
       <description>
         
         
-         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
+         &lt;p&gt;Systemd konusunda önceki&lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt;ve&lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt;kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
  &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
@@ -3204,7 +3204,7 @@ $ _&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt; apt-get update&lt;/em&gt; ve benzeri komutları mutlaka kullanmışsınızdır. &lt;em&gt;apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; ve &lt;em&gt;apt-get dist-upgrade&lt;/em&gt; komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;
+        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt;apt-get update&lt;/em&gt;ve benzeri komutları mutlaka kullanmışsınızdır.&lt;em&gt;apt-get update&lt;/em&gt;,&lt;em&gt;apt-get upgrade&lt;/em&gt;ve&lt;em&gt;apt-get dist-upgrade&lt;/em&gt;komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;
 &lt;p&gt;Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler /etc/apt/sources.list dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.&lt;/p&gt;
 &lt;p&gt;Sisteminizin, paketlerini güncellemek amacıyla hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;

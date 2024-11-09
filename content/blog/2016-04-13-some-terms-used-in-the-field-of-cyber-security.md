@@ -57,7 +57,7 @@ url: /some-terms-used-in-the-field-of-cyber-security/
  ### ***Advanced Persistent Threat (APT) Nedir?*** 
 <!-- /wp:heading -->
 
-  These are threats prepared using complex programming techniques to avoid detection by measures such as Antivirus, Firewall, IDS, IPS, etc. that are installed and operated for the security of IT infrastructures. These types of threats, which are usually developed as software-based, can also be designed as hardware by some manufacturers.
+  These are threats prepared using complex programming techniques to avoid detection by measures such as Antivirus, Firewall, IDS, IPS, etc. that are installed and operated for the security of IT infrastructures. These types of threats, which are usually developed assoftware-based, can also be designed as hardware by some manufacturers.
  
 
   Their development, transmission and operational use are carried out for a specific target, not for multi-purpose use. For this reason, its development and implementation takes a long time and requires advanced expertise. APT systems, which are the product of careful and systematic work, are considered pests that are very difficult to detect.
@@ -92,7 +92,7 @@ url: /some-terms-used-in-the-field-of-cyber-security/
   The concept expressed as Turkish Penetration Testing refers to the approach of detecting the status of an information system and the vulnerabilities it contains. The owner of the information system may want to have a penetration and security test performed to determine how secure they are and what additional precautions need to be taken.
  
 
-  There are different approaches and software used in this case. The situation that emerges as a result of tests conducted with classical software and approaches may not fully reflect the truth. For example, systems that are detected as secure as a result of classical testing software and approaches may contain a vulnerability that is not defined in any catalog or index and is used for the first time.
+  There are different approaches and software used in this case.The situation that emerges as a result of tests conducted with classicalsoftware and approaches may not fully reflect the truth. For example, systems that are detected as secure as a result of classical testingsoftwareand approaches may contain a vulnerability that is not defined in any catalog or index and is used for the first time.
  
 
   For this reason, penetration tests should be a starting point for system security and should be used to guide more detailed analysis. In particular, system security teams must be aware of the most up-to-date detections by following news systems that make global announcements and warnings, and they must keep their own systems under constant surveillance.

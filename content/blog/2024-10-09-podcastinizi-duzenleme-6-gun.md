@@ -36,24 +36,24 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kırpma***  : İlgiyi korumak için kayıtta gereksiz kısımların kesilmesi. 
+- ***Kırpma*** : İlgiyi korumak için kayıtta gereksiz kısımların kesilmesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ses Seviyelerinin Normalleştirilmesi***  : Bölüm boyunca ses seviyesinin tutarlı olmasını sağlamak. 
+- ***Ses Seviyelerinin Normalleştirilmesi*** : Bölüm boyunca ses seviyesinin tutarlı olmasını sağlamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Müzik ve Ses Efektleri Ekleme***  : Uygun ses öğeleriyle dinleme deneyimini zenginleştirme. 
+- ***Müzik ve Ses Efektleri Ekleme*** : Uygun ses öğeleriyle dinleme deneyimini zenginleştirme. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dolgu Sözcüklerini Kaldırma***  : "Şey", "ı-ı" ve diğer dolgu sözcüklerini kaldırarak sesi temizleme. 
+- ***Dolgu Sözcüklerini Kaldırma*** : "Şey", "ı-ı" ve diğer dolgu sözcüklerini kaldırarak sesi temizleme. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 
- ### Düzenleme Yazılımınızı Seçme
+ ### DüzenlemeYazılımınızı Seçme
 <!-- /wp:heading -->
 
  <p>Podcast düzenleme yazılımları söz konusu olduğunda, iki popüler seçenek Audacity ve GarageBand'dir. Her birinin kendine göre güçlü yanları vardır ve farklı kullanıcı tipleri için uygundur.
@@ -68,15 +68,15 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Çoklu Parça Düzenleme***  : Birden fazla ses parçasıyla aynı anda çalışmanıza olanak tanır. 
+- ***Çoklu Parça Düzenleme*** : Birden fazla ses parçasıyla aynı anda çalışmanıza olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Geniş Format Desteği***  : MP3, WAV ve AIFF gibi çeşitli ses dosyası formatlarıyla uyumludur. 
+- ***Geniş Format Desteği*** : MP3, WAV ve AIFF gibi çeşitli ses dosyası formatlarıyla uyumludur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Efektler ve Eklentiler***  : Dahili efektler sunar ve gelişmiş işlevsellik için üçüncü taraf eklentilerini destekler. 
+- ***Efektler ve Eklentiler*** : Dahili efektler sunar ve gelişmiş işlevsellik için üçüncü taraf eklentilerini destekler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -89,15 +89,15 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kullanıcı Dostu Arayüz***  : Düzeni sezgiseldir, bu da gezinmeyi kolaylaştırır. 
+- ***Kullanıcı Dostu Arayüz*** : Düzeni sezgiseldir, bu da gezinmeyi kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Akıllı Kontroller***  : Kullanıcıyı bunaltmadan çeşitli ses efektleri ve ayarları sunar. 
+- ***Akıllı Kontroller*** : Kullanıcıyı bunaltmadan çeşitli ses efektleri ve ayarları sunar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Entegre Döngüler ve Sesler***  : Podcast'inize kolayca dahil edebileceğiniz ses kütüphanesine erişim sağlar. 
+- ***Entegre Döngüler ve Sesler*** : Podcast'inize kolayca dahil edebileceğiniz ses kütüphanesine erişim sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -110,15 +110,15 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Ses Dosyaları***  : Kaydedilmiş podcast bölümünüz (WAV veya MP3 formatında). 
+- ***Ses Dosyaları*** : Kaydedilmiş podcast bölümünüz (WAV veya MP3 formatında). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Giriş/Çıkış Müziği***  : Podcast'inizi tanıtan veya sonlandıran önceden kaydedilmiş bölümler. 
+- ***Giriş/Çıkış Müziği*** : Podcast'inizi tanıtan veya sonlandıran önceden kaydedilmiş bölümler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ses Efektleri (eğer varsa)***  : Eklemek istediğiniz herhangi bir ek ses öğesi. 
+- ***Ses Efektleri (eğer varsa)*** : Eklemek istediğiniz herhangi bir ek ses öğesi. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -139,7 +139,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>File</code>&gt; <code>Import</code>&gt; adresine gidin <code>Audio...</code>. 
+- <code>File</code>&gt;<code>Import</code>&gt;adresine gidin<code>Audio...</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -156,7 +156,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Ses dosyanızı zaman çizelgesine sürükleyin veya <code>File</code>&gt; öğesini kullanın <code>Import</code>. 
+- Ses dosyanızı zaman çizelgesine sürükleyin veya<code>File</code>&gt; öğesini kullanın<code>Import</code>. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -175,11 +175,11 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- Tüm sesleri seçmek için tuşuna basın <code>Ctrl + A</code>. 
+- Tüm sesleri seçmek için tuşuna basın<code>Ctrl + A</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>Effect</code>&gt; adresine gidin <code>Normalize...</code>. 
+- <code>Effect</code>&gt;adresine gidin<code>Normalize...</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -222,7 +222,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- &gt; &gt; tuşuna basın <code>Delete</code>veya şuraya gidin .<code>Edit</code><code>Remove Special</code><code>Trim</code> 
+- &gt;&gt;tuşuna basın<code>Delete</code>veya şuraya gidin.<code>Edit</code><code>Remove Special</code><code>Trim</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -238,7 +238,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Oynatma başlığını kesmek istediğiniz yere getirin, ardından sağ tıklayın ve öğesini seçin <code>Split at Playhead</code>. 
+- Oynatma başlığını kesmek istediğiniz yere getirin, ardından sağ tıklayın ve öğesini seçin<code>Split at Playhead</code>. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -309,7 +309,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>File</code>&gt; <code>Export</code>&gt; seçeneğine gidin <code>Export as MP3</code>veya seçin <code>Export as WAV</code>. 
+- <code>File</code>&gt;<code>Export</code>&gt; seçeneğinegidin<code>Export as MP3</code>veya seçin<code>Export as WAV</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -317,7 +317,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>Share</code>&gt; öğesine tıklayın <code>Export Song to Disk...</code>, formatınızı (MP3 veya AAC) seçin ve kaydedin. 
+- <code>Share</code>&gt;öğesine tıklayın<code>Export Song to Disk...</code>, formatınızı (MP3 veya AAC) seçin ve kaydedin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -330,7 +330,7 @@ url: /tr/podcastinizi-duzenleme-6-gun/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Örnek Klibi***  Audacity veya GarageBand'e aktarın. 
+- ***Örnek Klibi*** Audacity veya GarageBand'e aktarın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

@@ -34,11 +34,11 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;From the top menu bar, select &lt;em&gt;&lt;strong&gt;Develop &amp;gt; Show Page Source&lt;/strong&gt;&lt;/em&gt; . You can also press ***Option+Command+U *** on your keyboard.&lt;/li&gt;
+&lt;li&gt;From the top menu bar, select&lt;em&gt;&lt;strong&gt;Develop &amp;gt; Show Page Source&lt;/strong&gt;&lt;/em&gt; . You can also press&lt;em&gt;&lt;strong&gt;Option+Command+U&lt;/strong&gt;&lt;/em&gt; on your keyboard.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;If the Develop menu is not visible, go to &lt;em&gt;&lt;strong&gt;Preferences &amp;gt; Advanced&lt;/strong&gt;&lt;/em&gt; , and choose the &lt;em&gt;&lt;strong&gt;Show Develop menu in menu bar&lt;/strong&gt;&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;If the Develop menu is not visible, go to&lt;em&gt;&lt;strong&gt;Preferences &amp;gt; Advanced&lt;/strong&gt;&lt;/em&gt; , and choose the&lt;em&gt;&lt;strong&gt;Show Develop menu in menu bar&lt;/strong&gt;&lt;/em&gt; .&lt;/p&gt;
 
       </description>
     </item>

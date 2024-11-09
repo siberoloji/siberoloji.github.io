@@ -24,7 +24,7 @@
       <description>
         
         
-         &lt;p&gt;Günümüzün hızla gelişen dijital ortamında,  siber güvenlik her ölçekteki kuruluş için en önemli endişe kaynağıdır. Tehditlerin sayısının artmasıyla birlikte, güvenilir bir güvenlik izleme çözümüne sahip olmak hayati önem taşımaktadır. Günümüzde mevcut olan en etkili ve yaygın olarak kullanılan açık kaynaklı güvenlik platformlarından biri ***Wazuh&#39;tur*** . Bu güçlü platform kapsamlı tehdit algılama, güvenlik açığı yönetimi ve olay yanıtlama yetenekleri sunarak, sağlam, ölçeklenebilir ve uygun maliyetli bir güvenlik çözümü arayan işletmeler için en iyi seçim haline gelmiştir.
+         &lt;p&gt;Günümüzün hızla gelişen dijital ortamında,siber güvenlikher ölçekteki kuruluş için en önemli endişe kaynağıdır. Tehditlerin sayısının artmasıyla birlikte, güvenilir bir güvenlik izleme çözümüne sahip olmak hayati önem taşımaktadır. Günümüzde mevcut olan en etkili ve yaygın olarak kullanılan açık kaynaklı güvenlik platformlarından biri***Wazuh&#39;tur*** . Bu güçlü platform kapsamlı tehdit algılama, güvenlik açığı yönetimi ve olay yanıtlama yetenekleri sunarak, sağlam, ölçeklenebilir ve uygun maliyetli bir güvenlik çözümü arayan işletmeler için en iyi seçim haline gelmiştir.
  &lt;p&gt;Bu blog yazısında Wazuh&#39;un ne olduğunu, temel özelliklerini, nasıl çalıştığını ve güvenlik ihtiyaçlarınız için neden mükemmel bir çözüm olabileceğini derinlemesine inceleyeceğiz.
 &lt;h3&gt;Wazuh nedir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;wazuh-nedir&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#wazuh-nedir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
@@ -39,11 +39,11 @@
  &lt;p&gt;Wazuh&#39;un temel işlevi&amp;nbsp;***Saldırı Algılama Sistemi*** &amp;nbsp;etrafında döner . Platform, olası tehditleri belirlemek için imza tabanlı ve anormallik tabanlı algılama yöntemlerinin bir kombinasyonunu kullanır.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İmza tabanlı algılama,***  kötü amaçlı etkinliğin bilinen kalıplarını veya imzalarını günlüklere veya ağ trafiğine göre eşleştirmeyi içerir. Wazuh, kötü amaçlı yazılım, kaba kuvvet girişimleri ve şüpheli bağlantılar gibi yaygın saldırıları algılamak için bu imzaların güncellenmiş bir veritabanını tutar. 
+- ***İmza tabanlı algılama,*** kötü amaçlı etkinliğin bilinen kalıplarını veya imzalarını günlüklere veya ağ trafiğine göre eşleştirmeyi içerir. Wazuh, kötü amaçlı yazılım, kaba kuvvet girişimleri ve şüpheli bağlantılar gibi yaygın saldırıları algılamak için bu imzaların güncellenmiş bir veritabanını tutar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Anomali tabanlı algılama,&lt;/strong&gt;&lt;/em&gt;  Wazuh&amp;rsquo;un alışılmadık davranışları izlemesine ve bunlar hakkında uyarı vermesine olanak tanır ve imzalar tarafından henüz tanımlanmamış sıfırıncı gün tehditlerini ve saldırılarını tespit etmeye yardımcı olur. Bu, henüz iyi bilinmeyen olası sorunları belirleyerek ekstra bir koruma katmanı ekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Anomali tabanlı algılama,&lt;/strong&gt;&lt;/em&gt; Wazuh&amp;rsquo;un alışılmadık davranışları izlemesine ve bunlar hakkında uyarı vermesine olanak tanır ve imzalar tarafından henüz tanımlanmamış sıfırıncı gün tehditlerini ve saldırılarını tespit etmeye yardımcı olur. Bu, henüz iyi bilinmeyen olası sorunları belirleyerek ekstra bir koruma katmanı ekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -86,21 +86,21 @@
  &lt;p&gt;Wazuh, aşağıdaki temel bileşenleri içeren çok bileşenli bir mimariyle çalışır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Wazuh Agents***  : İzlenen uç noktalara kurulan bu agentlar, günlükler, güvenlik uyarıları ve sistem yapılandırmaları gibi olay verilerini toplar. Agentlar hafiftir ve Windows, Linux ve macOS dahil olmak üzere çeşitli işletim sistemlerinde çalışabilir. 
+- ***Wazuh Agents*** : İzlenen uç noktalara kurulan bu agentlar, günlükler, güvenlik uyarıları ve sistem yapılandırmaları gibi olay verilerini toplar. Agentlar hafiftir ve Windows, Linux ve macOS dahil olmak üzere çeşitli işletim sistemlerinde çalışabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Wazuh Yöneticisi&lt;/strong&gt;&lt;/em&gt;  : Yönetici, aracılar tarafından toplanan verileri işlemekten, güvenlik kurallarını uygulamaktan ve uyarılar üretmekten sorumludur. Wazuh platformunun çekirdeğidir ve olay verilerinin merkezileştirilmesini denetler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Wazuh Yöneticisi&lt;/strong&gt;&lt;/em&gt; : Yönetici, aracılar tarafından toplanan verileri işlemekten, güvenlik kurallarını uygulamaktan ve uyarılar üretmekten sorumludur. Wazuh platformunun çekirdeğidir ve olay verilerinin merkezileştirilmesini denetler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;&lt;/em&gt;  : Wazuh, verileri depolamak, aramak ve analiz etmek için Elasticsearch&amp;rsquo;ü kullanır. Bu bileşen, güvenlik ekiplerinin büyük miktardaki verileri hızlı ve verimli bir şekilde görselleştirmesine olanak tanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;&lt;/em&gt; : Wazuh, verileri depolamak, aramak ve analiz etmek için Elasticsearch&amp;rsquo;ü kullanır. Bu bileşen, güvenlik ekiplerinin büyük miktardaki verileri hızlı ve verimli bir şekilde görselleştirmesine olanak tanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt;  : Wazuh, güvenlik olaylarını ve uyarılarını izlemek için güçlü görselleştirmeler ve panolar sağlamak üzere Kibana ile entegre olur. Bu entegrasyon, eğilimleri izlemeyi, raporlar oluşturmayı ve olası tehditleri belirlemeyi kolaylaştırır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt; : Wazuh, güvenlik olaylarını ve uyarılarını izlemek için güçlü görselleştirmeler ve panolar sağlamak üzere Kibana ile entegre olur. Bu entegrasyon, eğilimleri izlemeyi, raporlar oluşturmayı ve olası tehditleri belirlemeyi kolaylaştırır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

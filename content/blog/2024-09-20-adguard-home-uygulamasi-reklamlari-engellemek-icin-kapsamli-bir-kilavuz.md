@@ -123,11 +123,11 @@ url: /tr/adguard-home-uygulamasi-reklamlari-engellemek-icin-kapsamli-bir-kilavuz
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- <a href="https://adguard.com/en/adguard-home/overview.html">Resmi AdGuard Home web sitesine</a> gidin ve işletim sisteminize uygun sürümü indirin. 
+- <a href="https://adguard.com/en/adguard-home/overview.html">Resmi AdGuard Home web sitesine</a>gidinve işletim sisteminize uygun sürümü indirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Cihazınız için kurulum talimatlarını izleyin (Windows, macOS, <a href="https://www.siberoloji.com/adguard-home-application-a-comprehensive-guide-to-block-ads/#"> Linux</a> veya Raspberry Pi için mevcuttur). Kurulum süreci, diğer herhangi bir uygulamayı yüklemek gibi basittir. 
+- Cihazınız için kurulum talimatlarını izleyin (Windows, macOS,<a href="https://www.siberoloji.com/adguard-home-application-a-comprehensive-guide-to-block-ads/#">Linux</a>veya Raspberry Pi için mevcuttur). Kurulum süreci, diğer herhangi bir uygulamayı yüklemek gibi basittir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -135,7 +135,7 @@ url: /tr/adguard-home-uygulamasi-reklamlari-engellemek-icin-kapsamli-bir-kilavuz
 <h4 class="wp-block-heading">Adım 2: İlk Kurulum 
 <!-- /wp:heading -->
 
-  Kurulduktan sonra, web tarayıcınızda ziyaret ederek AdGuard Home arayüzünü açın <code>http://127.0.0.1:3000</code> (yerel olarak kurduğunuzu varsayarak). Uygulamayı ağınız için yapılandıracak bir ilk kurulum sihirbazına yönlendirileceksiniz. 
+  Kurulduktan sonra, web tarayıcınızda ziyaret ederek AdGuard Home arayüzünü açın<code>http://127.0.0.1:3000</code> (yerel olarak kurduğunuzu varsayarak). Uygulamayı ağınız için yapılandıracak bir ilk kurulum sihirbazına yönlendirileceksiniz. 
  
 
   Kurulum sırasında AdGuard Home şunları yapacaktır: 

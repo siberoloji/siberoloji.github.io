@@ -16,7 +16,7 @@ tags:
 - android
 - move layout up
 - soft keyboard
-title: How to move the layout up when the soft keyboard is shown Android?
+title: How to move the layout up when the soft keyboard is shownAndroid?
 url: /how-to-move-the-layout-up-when-the-soft-keyboard-is-shown-android/
 ---
 

@@ -41,15 +41,15 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Yerinde Sıralama***  : Kabarcık Sıralaması, giriş dizisinin ötesinde sıralama için ek bellek gerektirmez ve bu da onu yerinde bir sıralama algoritması yapar. 
+- ***Yerinde Sıralama*** : Kabarcık Sıralaması, giriş dizisinin ötesinde sıralama için ek bellek gerektirmez ve bu da onu yerinde bir sıralama algoritması yapar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kararlı Sıralama***  : Kabarcık Sıralaması, eşit öğelerin göreceli sırasını koruyan kararlı bir sıralama algoritmasıdır. 
+- ***Kararlı Sıralama*** : Kabarcık Sıralaması, eşit öğelerin göreceli sırasını koruyan kararlı bir sıralama algoritmasıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Basitlik***  : Algoritmanın anlaşılması ve uygulanması kolaydır, bu da onu sıralama temellerini öğretmek için yaygın bir tercih haline getirir. 
+- ***Basitlik*** : Algoritmanın anlaşılması ve uygulanması kolaydır, bu da onu sıralama temellerini öğretmek için yaygın bir tercih haline getirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -173,23 +173,23 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Zaman Karmaşıklığı***  : 
+- ***Zaman Karmaşıklığı*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***En İyi Durum***  : En iyi durum zaman karmaşıklığı, dizi zaten sıralandığında meydana gelir. Bu durumda, Bubble Sort dizide yine de bir kez yineleme yapar, ancak hiçbir takas yapılmaz. En iyi durum zaman karmaşıklığı ***O(n)'***  dir . 
+- ***En İyi Durum*** : En iyi durum zaman karmaşıklığı, dizi zaten sıralandığında meydana gelir. Bu durumda, Bubble Sort dizide yine de bir kez yineleme yapar, ancak hiçbir takas yapılmaz. En iyi durum zaman karmaşıklığı***O(n)'*** dir . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***En Kötü Durum***  : Dizinin ters sırada sıralandığı en kötü durumda, Bubble Sort her geçişte her bir elemanı karşılaştırmalı ve değiştirmelidir. En kötü durum zaman karmaşıklığı ***O(n^2)'***  dir . 
+- ***En Kötü Durum*** : Dizinin ters sırada sıralandığı en kötü durumda, Bubble Sort her geçişte her bir elemanı karşılaştırmalı ve değiştirmelidir. En kötü durum zaman karmaşıklığı***O(n^2)'*** dir . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ortalama Durum***  : Ortalama durumda, Kabarcık Sıralaması ***O(n^2)***  karşılaştırma ve takas gerçekleştirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
+- ***Ortalama Durum*** : Ortalama durumda, Kabarcık Sıralaması***O(n^2)*** karşılaştırma ve takas gerçekleştirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzay Karmaşıklığı***  : Kabarcık Sıralaması yerinde bir sıralama algoritmasıdır, bu nedenle yalnızca ***O(1)***  ek bellek kullanır; bu da belleğin sınırlı olduğu durumlarda bir avantajdır. 
+- ***Uzay Karmaşıklığı*** : Kabarcık Sıralaması yerinde bir sıralama algoritmasıdır, bu nedenle yalnızca***O(1)*** ek bellek kullanır; bu da belleğin sınırlı olduğu durumlarda bir avantajdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -238,15 +238,15 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Zaman Karmaşıklığı***  : Hem Kabarcık Sıralaması hem de Seçim Sıralaması en kötü durum zaman karmaşıklığına ***O(n^2)***  sahiptir , ancak Seçim Sıralaması genellikle daha az takas gerçekleştirir. 
+- ***Zaman Karmaşıklığı*** : Hem Kabarcık Sıralaması hem de Seçim Sıralaması en kötü durum zaman karmaşıklığına***O(n^2)*** sahiptir , ancak Seçim Sıralaması genellikle daha az takas gerçekleştirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kararlılık***  : Kabarcık Sıralaması kararlıdır, ancak Seçim Sıralaması değildir. Bu, Kabarcık Sıralamasının eşit öğelerin göreli sırasını koruduğu, ancak Seçim Sıralamasının korumadığı anlamına gelir. 
+- ***Kararlılık*** : Kabarcık Sıralaması kararlıdır, ancak Seçim Sıralaması değildir. Bu, Kabarcık Sıralamasının eşit öğelerin göreli sırasını koruduğu, ancak Seçim Sıralamasının korumadığı anlamına gelir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pratik Kullanım***  : Daha az takas nedeniyle, Seçim Sıralaması pratikte Kabarcık Sıralamasından daha iyi performans gösterebilir, ancak her iki algoritma da büyük veri kümeleri için verimsizdir. 
+- ***Pratik Kullanım*** : Daha az takas nedeniyle, Seçim Sıralaması pratikte Kabarcık Sıralamasından daha iyi performans gösterebilir, ancak her iki algoritma da büyük veri kümeleri için verimsizdir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -259,15 +259,15 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Zaman Karmaşıklığı***  : En iyi durumda, dizi neredeyse sıralandığında, Eklemeli Sıralamanın zaman karmaşıklığı ***O(n)***  olur ve bu da onu en kötü durumda her zaman ***O(n^2)***  olarak çalışan Kabarcık Sıralamadan daha verimli hale getirir . 
+- ***Zaman Karmaşıklığı*** : En iyi durumda, dizi neredeyse sıralandığında, Eklemeli Sıralamanın zaman karmaşıklığı***O(n)*** olur ve bu da onu en kötü durumda her zaman***O(n^2)*** olarak çalışan Kabarcık Sıralamadan daha verimli hale getirir . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kararlılık***  : Hem Kabarcık Sıralama hem de Eklemeli Sıralama kararlıdır. 
+- ***Kararlılık*** : Hem Kabarcık Sıralama hem de Eklemeli Sıralama kararlıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pratik Kullanım***  : Eklemeli Sıralama, özellikle küçük veya neredeyse sıralanmış diziler için, ortalama ve en iyi durumlarda daha iyi performans göstermesi nedeniyle, genellikle Kabarcık Sıralamasına göre tercih edilir. 
+- ***Pratik Kullanım*** : Eklemeli Sıralama, özellikle küçük veya neredeyse sıralanmış diziler için, ortalama ve en iyi durumlarda daha iyi performans göstermesi nedeniyle, genellikle Kabarcık Sıralamasına göre tercih edilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -280,15 +280,15 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Zaman Karmaşıklığı : Hızlı Sıralama, *** ***O(n log n)***  ortalama zaman karmaşıklığına sahiptir ve bu da onu büyük veri kümeleri için Kabarcık Sıralama'dan çok daha hızlı hale getirir. 
+- ***Zaman Karmaşıklığı : Hızlı Sıralama,*** ***O(n log n)*** ortalama zaman karmaşıklığına sahiptirve bu da onu büyük veri kümeleri için Kabarcık Sıralama'dan çok daha hızlı hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzay Karmaşıklığı***  : Hızlı Sıralama da yerinde bir sıralama algoritmasıdır, ancak en kötü durum zaman karmaşıklığı ***O(n^2)'***  dir . Ancak, uygun pivot seçimiyle, bu en kötü durum senaryosundan kaçınılabilir. 
+- ***Uzay Karmaşıklığı*** : Hızlı Sıralama da yerinde bir sıralama algoritmasıdır, ancak en kötü durum zaman karmaşıklığı***O(n^2)'*** dir . Ancak, uygun pivot seçimiyle, bu en kötü durum senaryosundan kaçınılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pratik Kullanım***  : Hızlı Sıralama, verimliliği nedeniyle gerçek dünya uygulamalarında yaygın olarak kullanılırken, Kabarcık Sıralama öncelikle eğitim amaçlı kullanılır. 
+- ***Pratik Kullanım*** : Hızlı Sıralama, verimliliği nedeniyle gerçek dünya uygulamalarında yaygın olarak kullanılırken, Kabarcık Sıralama öncelikle eğitim amaçlı kullanılır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -353,15 +353,15 @@ url: /tr/bubble-sort-algoritmasini-anlamak-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Eğitim Amaçları***  : Kabarcık Sıralama, basitliği nedeniyle bilgisayar bilimi derslerinde giriş algoritması olarak yaygın olarak öğretilir. 
+- ***Eğitim Amaçları*** : Kabarcık Sıralama, basitliği nedeniyle bilgisayar bilimi derslerinde giriş algoritması olarak yaygın olarak öğretilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Küçük Veri Kümeleri***  : Veri kümesinin boyutunun minimum olduğu küçük diziler veya listeler için, Kabarcık Sıralaması makul bir seçim olabilir çünkü küçük girdiler için verimsizliği daha az fark edilir. 
+- ***Küçük Veri Kümeleri*** : Veri kümesinin boyutunun minimum olduğu küçük diziler veya listeler için, Kabarcık Sıralaması makul bir seçim olabilir çünkü küçük girdiler için verimsizliği daha az fark edilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Neredeyse Sıralanmış Veriler***  : Veriler neredeyse sıralandığında, Kabarcık Sıralaması (erken sonlandırma optimizasyonuyla) diziyi verimli bir şekilde sıralayabilir ve ***O(n)***  zaman karmaşıklığına ulaşabilir. 
+- ***Neredeyse Sıralanmış Veriler*** : Veriler neredeyse sıralandığında, Kabarcık Sıralaması (erken sonlandırma optimizasyonuyla) diziyi verimli bir şekilde sıralayabilir ve***O(n)*** zaman karmaşıklığına ulaşabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -31,17 +31,17 @@ url: /local-network-scanner-c/
  <p>To compile and run this program:
  
 
- <p>Save the updated code to a file, e.g., <code>network_scanner.cpp</code>
+ <p>Save the updated code to a file, e.g.,<code>network_scanner.cpp</code>
  
 
- <p>Compile it: 
+ <p>Compile it:
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>g++ -std=c++17 -o network_scanner network_scanner.cpp</code></code></pre>
 <!-- /wp:code -->
 
- <p>Run it with sudo: 
+ <p>Run it with sudo:
  
 
 <!-- wp:code -->

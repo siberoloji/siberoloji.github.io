@@ -15,9 +15,9 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-04-01T13:56:00Z"
-excerpt: Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa, apt-get
-  update ve benzeri komutları mutlaka kullanmışsınızdır. apt-get update, apt-get upgrade ve apt-get
-  dist-upgrade komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu
+excerpt: Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,apt-get
+  updateve benzeri komutları mutlaka kullanmışsınızdır.apt-get update,apt-get upgradeveapt-get
+  dist-upgradekomutlarının birbirine benzemesine rağmen farklı görevleri olduğunu
   göstereceğiz.
 guid: https://www.siberoloji.com/?p=1026
 id: 1026
@@ -28,7 +28,7 @@ title: apt-get update / upgrade / dist-upgrade farkı nedir?
 url: /tr/apt-get-update-upgrade-dist-upgrade-farki-nedir/
 ---
 
-  Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em> apt-get update</em> ve benzeri komutları mutlaka kullanmışsınızdır. <em>apt-get update</em>, <em>apt-get upgrade</em> ve <em>apt-get dist-upgrade</em> komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.
+  Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em>apt-get update</em>ve benzeri komutları mutlaka kullanmışsınızdır.<em>apt-get update</em>,<em>apt-get upgrade</em>ve<em>apt-get dist-upgrade</em>komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.
  
 
   Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler&nbsp;/etc/apt/sources.list&nbsp;dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.

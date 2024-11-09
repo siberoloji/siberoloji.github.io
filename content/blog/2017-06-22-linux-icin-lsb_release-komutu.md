@@ -15,7 +15,7 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-22T14:07:00Z"
-excerpt: Bu yazıda, Linux İşletim sisteminizde kullanabileceğiniz lsb_release komutunu
+excerpt: Bu yazıda, Linux İşletim sisteminizde kullanabileceğinizlsb_releasekomutunu
   açıklayacağız. Bu komut sayesinde kullandığınız Linux dağıtımınıza özel bilgileri
   elde edebilirsiniz.
 guid: https://www.siberoloji.com/?p=1227

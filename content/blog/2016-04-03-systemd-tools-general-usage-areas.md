@@ -27,7 +27,7 @@ title: systemd Tools – General Usage Areas
 url: /systemd-tools-general-usage-areas/
 ---
 
-  Nowadays, Debian, Fedora, Red Hat, Ubuntu and ArchLinux etc. Linux operating systems, which are considered the main distribution , have started to use systemd. Developments show that its use will become widespread. Linux users will need to improve themselves in this area. 
+  Nowadays, Debian, Fedora, Red Hat, Ubuntu and ArchLinux etc.Linuxoperatingsystems, which are considered the main distribution, have started to use systemd. Developments show that its use will become widespread.Linuxusers will need to improve themselves in this area. 
  
 
   When we search for resources on the internet on this subject, we usually come across&nbsp;English manpages (&nbsp;<a href="http://www.freedesktop.org/software/systemd/man/" target="_blank" rel="noreferrer noopener">wiki</a>&nbsp;) or short blog posts prepared by the developers. It is quite difficult to find a detailed source in Turkish. There is no problem for those who use the operating system visually and do not want to interfere with the rest. However, those who are curious about what is going on in the background or want to have knowledge in problem solving will inevitably need to learn systemd tools. Based on this idea, we plan to continue the articles in a sequential order. 
@@ -116,5 +116,5 @@ url: /systemd-tools-general-usage-areas/
  ### systemd-nspawn
 <!-- /wp:heading -->
 
-  It is a tool used for debugging and simulation. It is similar to the chroot tool but more. It allows a program, even another operating system, to be run in isolation, without harming the real resources of the system. It is very useful for software developers.<br>In this article, we talked about the most important systemd tools as clearly as possible. In the following articles, we will try to give detailed explanations and examples. 
+  It is a tool used for debugging and simulation. It is similar to the chroot tool but more. It allowsa program, even anotheroperatingsystem, to be run in isolation, without harming the real resources of the system. It is very useful forsoftwaredevelopers.<br>In this article, we talked about the most important systemd tools as clearly as possible. In the following articles, we will try to give detailed explanations and examples. 
  

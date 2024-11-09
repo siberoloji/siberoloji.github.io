@@ -45,15 +45,15 @@ url: /boolean-functions-and-expressions-a-comprehensive-guide/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***AND (<code>&amp;&amp;</code> or <code>AND</code>):***  The AND operation returns <em>true</em> only if both operands are <em>true</em>. Otherwise, it returns <em>false</em>. 
+- ***AND (<code>&amp;&amp;</code>or<code>AND</code>):*** The AND operation returns<em>true</em>only if both operands are<em>true</em>. Otherwise, it returns<em>false</em>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***OR (<code>||</code> or <code>OR</code>):***  The OR operation returns <em>true</em> if at least one operand is <em>true</em>. It returns <em>false</em> only if both operands are <em>false</em>. 
+- ***OR (<code>||</code>or<code>OR</code>):*** The OR operation returns<em>true</em>if at least one operand is<em>true</em>. It returns<em>false</em>only if both operands are<em>false</em>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***NOT (<code>!</code> or <code>NOT</code>):***  The NOT operation negates the value of its operand. It returns <em>true</em> if the operand is <em>false</em>, and vice versa. 
+- ***NOT (<code>!</code>or<code>NOT</code>):*** The NOT operation negates the value of its operand. It returns<em>true</em>if the operand is<em>false</em>, and vice versa. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -98,19 +98,19 @@ url: /boolean-functions-and-expressions-a-comprehensive-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***AND function:***  <code>f(A, B) = A AND B</code> 
+- ***AND function:*** <code>f(A, B) = A AND B</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***OR function:***  <code>f(A, B) = A OR B</code> 
+- ***OR function:*** <code>f(A, B) = A OR B</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***NOT function:***  <code>f(A) = NOT A</code> 
+- ***NOT function:*** <code>f(A) = NOT A</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***XOR (exclusive OR) function:***  <code>f(A, B) = (A OR B) AND NOT (A AND B)</code> 
+- ***XOR (exclusive OR) function:*** <code>f(A, B) = (A OR B) AND NOT (A AND B)</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -122,19 +122,19 @@ url: /boolean-functions-and-expressions-a-comprehensive-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Computer hardware:***  Digital circuits and logic gates are designed based on Boolean functions. 
+- ***Computer hardware:*** Digital circuits and logic gates are designed based on Boolean functions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Programming:***  Boolean expressions are used to control the flow of execution in programming languages. 
+- ***Programming:*** Boolean expressions are used to control the flow of execution in programming languages. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Database systems:***  Boolean operators are used for query optimization and retrieval. 
+- ***Database systems:*** Boolean operators are used for query optimization and retrieval. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Artificial intelligence:***  Boolean logic is employed in knowledge representation and reasoning. 
+- ***Artificial intelligence:*** Boolean logic is employed in knowledge representation and reasoning. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -179,7 +179,7 @@ url: /boolean-functions-and-expressions-a-comprehensive-guide/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>A OR (B AND C) = (A OR B) AND (A OR C)</code>    
+- <code>A OR (B AND C) = (A OR B) AND (A OR C)</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->

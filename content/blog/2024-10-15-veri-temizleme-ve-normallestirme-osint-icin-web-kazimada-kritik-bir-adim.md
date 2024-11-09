@@ -32,7 +32,7 @@ url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adi
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Veri Temizleme:***   Bu süreç, kazınan verilerdeki hataları, tutarsızlıkları veya eksik değerleri belirlemeyi ve düzeltmeyi içerir. Yaygın temizleme görevleri şunları içerir:<!-- wp:list -->
+- ***Veri Temizleme:*** Bu süreç, kazınan verilerdeki hataları, tutarsızlıkları veya eksik değerleri belirlemeyi ve düzeltmeyi içerir. Yaygın temizleme görevleri şunları içerir:<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 - Yinelenenleri kaldırma 
 <!-- /wp:list-item -->
@@ -52,21 +52,21 @@ url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adi
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Normalizasyonu:***   Bu işlem, verileri analiz etmeyi ve karşılaştırmayı kolaylaştıran standart bir biçime dönüştürmeyi içerir. Yaygın normalizasyon teknikleri şunları içerir:<!-- wp:list -->
+- ***Veri Normalizasyonu:*** Bu işlem, verileri analiz etmeyi ve karşılaştırmayı kolaylaştıran standart bir biçime dönüştürmeyi içerir. Yaygın normalizasyon teknikleri şunları içerir:<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Standardizasyon:***   Verileri ortak bir ölçeğe dönüştürme (örneğin, z puanları) 
+- ***Standardizasyon:*** Verileri ortak bir ölçeğe dönüştürme (örneğin, z puanları) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Normalizasyon:***   Verileri belirli bir aralığa ölçekleme (örneğin, 0-1) 
+- ***Normalizasyon:*** Verileri belirli bir aralığa ölçekleme (örneğin, 0-1) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kategorileştirme:***   Verileri kategorilere veya bölmelere gruplama 
+- ***Kategorileştirme:*** Verileri kategorilere veya bölmelere gruplama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ayrıklaştırma:***   Sürekli verileri ayrı kategorilere dönüştürme 
+- ***Ayrıklaştırma:*** Sürekli verileri ayrı kategorilere dönüştürme 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item --> 
@@ -80,19 +80,19 @@ url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adi
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Veri kalitesi:***   Kazınan verilerin kalitesi, kaynağa ve kullanılan kazıma tekniğine bağlı olarak büyük ölçüde değişebilir. 
+- ***Veri kalitesi:*** Kazınan verilerin kalitesi, kaynağa ve kullanılan kazıma tekniğine bağlı olarak büyük ölçüde değişebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri karmaşıklığı:***   İç içe geçmiş JSON veya HTML tabloları gibi karmaşık veri yapıları temizleme ve normalleştirmeyi daha zor hale getirebilir. 
+- ***Veri karmaşıklığı:*** İç içe geçmiş JSON veya HTML tabloları gibi karmaşık veri yapıları temizleme ve normalleştirmeyi daha zor hale getirebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri hacmi:***   Büyük veri kümeleri, temizleme ve normalleştirme için önemli miktarda hesaplama kaynağı ve zaman gerektirebilir. 
+- ***Veri hacmi:*** Büyük veri kümeleri, temizleme ve normalleştirme için önemli miktarda hesaplama kaynağı ve zaman gerektirebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri tutarsızlıkları:***   Tutarlı olmayan veri biçimleri, eksik değerler ve hatalar, verilerin standartlaştırılmasını ve normalleştirilmesini zorlaştırabilir. 
+- ***Veri tutarsızlıkları:*** Tutarlı olmayan veri biçimleri, eksik değerler ve hatalar, verilerin standartlaştırılmasını ve normalleştirilmesini zorlaştırabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -104,27 +104,27 @@ url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adi
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Veri gereksinimlerinizi tanımlayın:***   İhtiyacınız olan belirli verileri ve bunları hangi formatta istediğinizi açıkça anlayın. 
+- ***Veri gereksinimlerinizi tanımlayın:*** İhtiyacınız olan belirli verileri ve bunları hangi formatta istediğinizi açıkça anlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uygun araçları seçin:***   Pandas, NumPy ve BeautifulSoup gibi Python kütüphaneleri gibi, söz konusu görevler için uygun araçları seçin. 
+- ***Uygun araçları seçin:*** Pandas, NumPy ve BeautifulSoup gibi Python kütüphaneleri gibi, söz konusu görevler için uygun araçları seçin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bir temizleme hattı geliştirin:***   Veri alımı, temizleme ve dönüştürme adımları da dahil olmak üzere verilerinizi temizlemek ve normalleştirmek için sistematik bir yaklaşım oluşturun. 
+- ***Bir temizleme hattı geliştirin:*** Veri alımı, temizleme ve dönüştürme adımları da dahil olmak üzere verilerinizi temizlemek ve normalleştirmek için sistematik bir yaklaşım oluşturun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Otomasyonu kullanın:***   Verimliliği artırmak ve hataları azaltmak için mümkün olduğunca tekrarlayan görevleri otomatikleştirin. 
+- ***Otomasyonu kullanın:*** Verimliliği artırmak ve hataları azaltmak için mümkün olduğunca tekrarlayan görevleri otomatikleştirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Verilerinizi doğrulayın:***   Doğruluk ve tutarlılığı sağlamak için temizlenmiş ve normalleştirilmiş verilerinizi düzenli olarak doğrulayın. 
+- ***Verilerinizi doğrulayın:*** Doğruluk ve tutarlılığı sağlamak için temizlenmiş ve normalleştirilmiş verilerinizi düzenli olarak doğrulayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alana özgü teknikleri göz önünde bulundurun:***   Belirli veri türleri (örneğin metin, resim) için özel teknikler gerekebilir. 
+- ***Alana özgü teknikleri göz önünde bulundurun:*** Belirli veri türleri (örneğin metin, resim) için özel teknikler gerekebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -201,19 +201,19 @@ url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adi
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Verileri temizleyin:***   Yinelenenleri kaldırın, eksik değerleri işleyin ve tarihlerdeki, para birimlerindeki ve sayısal değerlerdeki biçimlendirme hatalarını düzeltin. 
+- ***Verileri temizleyin:*** Yinelenenleri kaldırın, eksik değerleri işleyin ve tarihlerdeki, para birimlerindeki ve sayısal değerlerdeki biçimlendirme hatalarını düzeltin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Para birimlerini standartlaştırın:***   Tüm para birimlerini ortak bir para birimine (örneğin USD) dönüştürün. 
+- ***Para birimlerini standartlaştırın:*** Tüm para birimlerini ortak bir para birimine (örneğin USD) dönüştürün. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sayısal verileri normalleştirin:***   Sayısal değerleri karşılaştırılabilir hale getirmek için onları ortak bir aralığa (örneğin 0-1) ölçeklendirin. 
+- ***Sayısal verileri normalleştirin:*** Sayısal değerleri karşılaştırılabilir hale getirmek için onları ortak bir aralığa (örneğin 0-1) ölçeklendirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kategorik verileri işleyin:***   Analiz için kategorik değişkenleri (örneğin şirket adları, borsalar) kodlayın. 
+- ***Kategorik verileri işleyin:*** Analiz için kategorik değişkenleri (örneğin şirket adları, borsalar) kodlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

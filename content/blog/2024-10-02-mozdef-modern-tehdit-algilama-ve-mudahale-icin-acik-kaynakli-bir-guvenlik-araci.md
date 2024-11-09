@@ -28,7 +28,7 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
   
 
 <!-- wp:paragraph -->
-<p>Başlangıçta Mozilla tarafından geliştirilen MozDef, güvenlik operasyonlarını otomatikleştirmek ve olay müdahalesini kolaylaştırmak için tasarlanmış güçlü bir platform olarak öne çıkıyor. Bu blog, MozDef'in ne olduğunu, nasıl çalıştığını, temel özelliklerini ve kuruluşunuzun  siber güvenlik ihtiyaçları için neden harika bir seçim olabileceğini araştırıyor.
+<p>Başlangıçta Mozilla tarafından geliştirilen MozDef, güvenlik operasyonlarını otomatikleştirmek ve olay müdahalesini kolaylaştırmak için tasarlanmış güçlü bir platform olarak öne çıkıyor. Bu blog, MozDef'in ne olduğunu, nasıl çalıştığını, temel özelliklerini ve kuruluşunuzunsiber güvenlikihtiyaçları için neden harika bir seçim olabileceğini araştırıyor.
   
 
 <!-- wp:separator -->
@@ -61,19 +61,19 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Olay İşleme ve Yönetimi***  :<br>MozDef, güvenlik duvarları, saldırı tespit sistemleri ve sunucular gibi çeşitli kaynaklardan güvenlik olayı verilerini toplar. Toplandıktan sonra platform, verileri bilinen güvenlik tehditleriyle ilişkilendirmek için işler ve herhangi bir kötü amaçlı etkinlik algılanırsa uyarıları tetikler. 
+- ***Olay İşleme ve Yönetimi*** :<br>MozDef, güvenlik duvarları, saldırı tespit sistemleri ve sunucular gibi çeşitli kaynaklardan güvenlik olayı verilerini toplar. Toplandıktan sonra platform, verileri bilinen güvenlik tehditleriyle ilişkilendirmek için işler ve herhangi bir kötü amaçlı etkinlik algılanırsa uyarıları tetikler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***AWS Entegrasyonu***  :<br>MozDef, CloudWatch, S3 ve Lambda gibi AWS hizmetleriyle sorunsuz bir şekilde entegre olur. Bu entegrasyonlar, bulut ortamında güvenlik operasyonlarını ölçeklendirmeyi ve tehdit algılama ve yanıt sürelerini iyileştirmek için AWS'ye özgü araçlardan yararlanmayı kolaylaştırır. 
+- ***AWS Entegrasyonu*** :<br>MozDef, CloudWatch, S3 ve Lambda gibi AWS hizmetleriyle sorunsuz bir şekilde entegre olur. Bu entegrasyonlar, bulut ortamında güvenlik operasyonlarını ölçeklendirmeyi ve tehdit algılama ve yanıt sürelerini iyileştirmek için AWS'ye özgü araçlardan yararlanmayı kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Olay Tepki Otomasyonu***  :<br>MozDef'in önemli bir avantajı, olay tepkisini otomatikleştirme yeteneğidir. Belirli uyarı türlerine tepki vermek için önceden tanımlanmış kuralları kullanır, bu da bir güvenlik olayına yanıt verme süresini azaltabilir. Örneğin, MozDef tehlikeye atılmış sistemlerin izolasyonunu otomatik olarak tetikleyebilir veya kritik uyarıları uygun ekiplere iletebilir. 
+- ***Olay Tepki Otomasyonu*** :<br>MozDef'in önemli bir avantajı, olay tepkisini otomatikleştirme yeteneğidir. Belirli uyarı türlerine tepki vermek için önceden tanımlanmış kuralları kullanır, bu da bir güvenlik olayına yanıt verme süresini azaltabilir. Örneğin, MozDef tehlikeye atılmış sistemlerin izolasyonunu otomatik olarak tetikleyebilir veya kritik uyarıları uygun ekiplere iletebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik Tehditlerinin Görselleştirilmesi***  :<br>MozDef, güvenlik ekiplerinin tehditleri anlamasına ve öncelik sırasına koymasına yardımcı olan sağlam görselleştirme araçlarıyla birlikte gelir. Panolar ve raporlar, güvenlik altyapınızın durumu hakkında gerçek zamanlı içgörüler sunarak ekiplerin veri odaklı kararları daha hızlı almasını sağlar. 
+- ***Güvenlik Tehditlerinin Görselleştirilmesi*** :<br>MozDef, güvenlik ekiplerinin tehditleri anlamasına ve öncelik sırasına koymasına yardımcı olan sağlam görselleştirme araçlarıyla birlikte gelir. Panolar ve raporlar, güvenlik altyapınızın durumu hakkında gerçek zamanlı içgörüler sunarak ekiplerin veri odaklı kararları daha hızlı almasını sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -91,19 +91,19 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Veri Toplama***  :<br>MozDef, bulut platformları, şirket içi sistemler ve üçüncü taraf hizmetleri dahil olmak üzere çok çeşitli kaynaklardan veri toplar. Bu veriler daha sonra toplanır ve işlenmek üzere MozDef'e iletilir. 
+- ***Veri Toplama*** :<br>MozDef, bulut platformları, şirket içi sistemler ve üçüncü taraf hizmetleri dahil olmak üzere çok çeşitli kaynaklardan veri toplar. Bu veriler daha sonra toplanır ve işlenmek üzere MozDef'e iletilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Olay İlişkisi***  :<br>Sistem, gelen veri akışlarını analiz ederek olayları bilinen saldırı kalıpları veya kötü niyetli davranışlarla ilişkilendirir. Bir eşleşme bulunursa, MozDef daha fazla araştırma için bir uyarı oluşturur. 
+- ***Olay İlişkisi*** :<br>Sistem, gelen veri akışlarını analiz ederek olayları bilinen saldırı kalıpları veya kötü niyetli davranışlarla ilişkilendirir. Bir eşleşme bulunursa, MozDef daha fazla araştırma için bir uyarı oluşturur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uyarı ve Olay Yönetimi***  :<br>Bir olay şüpheli olarak değerlendirildiğinde, MozDef uyarıları tetikler ve olayı kaydeder. Daha sonra, güvenlik ekibine bildirimler göndermek veya etkilenen sistemleri izole etmek gibi tehdidi azaltmak için otomatik oyun kitapları yürütülebilir. 
+- ***Uyarı ve Olay Yönetimi*** :<br>Bir olay şüpheli olarak değerlendirildiğinde, MozDef uyarıları tetikler ve olayı kaydeder. Daha sonra, güvenlik ekibine bildirimler göndermek veya etkilenen sistemleri izole etmek gibi tehdidi azaltmak için otomatik oyun kitapları yürütülebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Görselleştirme ve Raporlama***  :<br>MozDef, güvenlik ekiplerine devam eden tehditleri, son uyarıları ve sistem sağlığını görselleştiren panolar sağlar. Bu raporlar, kuruluşunuzun güvenlik duruşunu gerçek zamanlı olarak izlemenizi kolaylaştırır. 
+- ***Görselleştirme ve Raporlama*** :<br>MozDef, güvenlik ekiplerine devam eden tehditleri, son uyarıları ve sistem sağlığını görselleştiren panolar sağlar. Bu raporlar, kuruluşunuzun güvenlik duruşunu gerçek zamanlı olarak izlemenizi kolaylaştırır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -121,19 +121,19 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Ölçeklenebilirlik***  :<br>MozDef ölçeklenebilirlik düşünülerek tasarlanmıştır ve bu da onu her boyuttaki kuruluş için uygun bir seçim haline getirir. Bulut tabanlı özellikleri, performanstan ödün vermeden büyük miktarda veriyi işlemesine olanak tanır. 
+- ***Ölçeklenebilirlik*** :<br>MozDef ölçeklenebilirlik düşünülerek tasarlanmıştır ve bu da onu her boyuttaki kuruluş için uygun bir seçim haline getirir. Bulut tabanlı özellikleri, performanstan ödün vermeden büyük miktarda veriyi işlemesine olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Entegrasyon Yetenekleri***  :<br>MozDef, hem bulut hem de şirket içi sistemlerle sorunsuz bir şekilde entegre olur ve nerede ve nasıl dağıtılabileceği konusunda esneklik sağlar. AWS entegrasyonları, onu bulutta iş yükleri çalıştıran işletmeler için özellikle güçlü bir seçim haline getirir. 
+- ***Entegrasyon Yetenekleri*** :<br>MozDef, hem bulut hem de şirket içi sistemlerle sorunsuz bir şekilde entegre olur ve nerede ve nasıl dağıtılabileceği konusunda esneklik sağlar. AWS entegrasyonları, onu bulutta iş yükleri çalıştıran işletmeler için özellikle güçlü bir seçim haline getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Maliyet Etkinliği***  :<br>Açık kaynaklı bir araç olarak MozDef, ticari SIEM çözümlerine kıyasla önemli maliyet tasarrufları sunar. Özelliklerini özelleştirme ve genişletme yeteneği, onu bir organizasyonun özel ihtiyaçlarına oldukça uyarlanabilir hale getirir. 
+- ***Maliyet Etkinliği*** :<br>Açık kaynaklı bir araç olarak MozDef, ticari SIEM çözümlerine kıyasla önemli maliyet tasarrufları sunar. Özelliklerini özelleştirme ve genişletme yeteneği, onu bir organizasyonun özel ihtiyaçlarına oldukça uyarlanabilir hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Otomasyon***  :<br>Olay yanıt otomasyonu, MozDef'in temel gücüdür. Güvenlik ekipleri, algılanan tehditlere otomatik olarak yanıt veren kurallar ve iş akışları oluşturabilir, yanıt sürelerini azaltabilir ve olası hasarı en aza indirebilir. 
+- ***Otomasyon*** :<br>Olay yanıt otomasyonu, MozDef'in temel gücüdür. Güvenlik ekipleri, algılanan tehditlere otomatik olarak yanıt veren kurallar ve iş akışları oluşturabilir, yanıt sürelerini azaltabilir ve olası hasarı en aza indirebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -151,15 +151,15 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Splunk***  : Splunk sağlam veri analitiği ve güvenlik özellikleri sunarken, yüksek lisans ücretlerine sahip ticari bir araçtır. MozDef, daha düşük bir maliyetle birçok benzer yetenek sağlar. 
+- ***Splunk*** : Splunk sağlam veri analitiği ve güvenlik özellikleri sunarken, yüksek lisans ücretlerine sahip ticari bir araçtır. MozDef, daha düşük bir maliyetle birçok benzer yetenek sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***ELK Stack***  : ELK (Elasticsearch, Logstash, Kibana) günlük yönetimi ve olay izleme için başka bir açık kaynaklı alternatiftir. Ancak, MozDef özellikle SIEM işlevleri ve olay müdahalesi için otomasyon ile tasarlanmıştır ve bu da onu güvenlik odaklı operasyonlar için daha uygun hale getirir. 
+- ***ELK Stack*** : ELK (Elasticsearch, Logstash, Kibana) günlük yönetimi ve olay izleme için başka bir açık kaynaklı alternatiftir. Ancak, MozDef özellikle SIEM işlevleri ve olay müdahalesi için otomasyon ile tasarlanmıştır ve bu da onu güvenlik odaklı operasyonlar için daha uygun hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***QRadar***  : IBM'in QRadar'ı gelişmiş özelliklere sahip üst düzey bir SIEM aracıdır, ancak önemli maliyetlerle birlikte gelir. Bankayı kırmadan SIEM yetenekleri isteyen işletmeler için MozDef daha uygun fiyatlı bir alternatif olabilir. 
+- ***QRadar*** : IBM'in QRadar'ı gelişmiş özelliklere sahip üst düzey bir SIEM aracıdır, ancak önemli maliyetlerle birlikte gelir. Bankayı kırmadan SIEM yetenekleri isteyen işletmeler için MozDef daha uygun fiyatlı bir alternatif olabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -177,19 +177,19 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Altyapıyı Hazırlayın***  :<br>Ortamınızda S3, CloudWatch ve Lambda gibi AWS araçları da dahil olmak üzere gerekli hizmetlerin ve bağımlılıkların yüklü olduğundan emin olun. 
+- ***Altyapıyı Hazırlayın*** :<br>Ortamınızda S3, CloudWatch ve Lambda gibi AWS araçları da dahil olmak üzere gerekli hizmetlerin ve bağımlılıkların yüklü olduğundan emin olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MozDef'i yükleyin***  :<br>MozDef'i resmi depodan indirin ve yükleyin. Yazılımı kuruluşunuzun ihtiyaçlarına göre yapılandırmak için belgeleri izleyin. 
+- ***MozDef'i yükleyin*** :<br>MozDef'i resmi depodan indirin ve yükleyin. Yazılımı kuruluşunuzun ihtiyaçlarına göre yapılandırmak için belgeleri izleyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Olay Kaynaklarını Yapılandırın***  :<br>MozDef'in veri alacağı olay kaynaklarını ve entegrasyon noktalarını ayarlayın. Bunlar bulut hizmetleri, güvenlik duvarı günlükleri, saldırı tespit sistemleri ve daha fazlasını içerebilir. 
+- ***Olay Kaynaklarını Yapılandırın*** :<br>MozDef'in veri alacağı olay kaynaklarını ve entegrasyon noktalarını ayarlayın. Bunlar bulut hizmetleri, güvenlik duvarı günlükleri, saldırı tespit sistemleri ve daha fazlasını içerebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kuralları ve Oyun Kitaplarını Özelleştirin***  :<br>MozDef'in belirli türdeki uyarılara veya güvenlik olaylarına nasıl yanıt vereceğini belirleyecek otomatik oyun kitaplarını tanımlayın. 
+- ***Kuralları ve Oyun Kitaplarını Özelleştirin*** :<br>MozDef'in belirli türdeki uyarılara veya güvenlik olaylarına nasıl yanıt vereceğini belirleyecek otomatik oyun kitaplarını tanımlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -207,15 +207,15 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Tehdit İzleme***  : MozDef, kötü amaçlı yazılımlar, kimlik avı saldırıları veya yetkisiz erişim girişimleri gibi yaygın tehditleri izleyebilir. 
+- ***Tehdit İzleme*** : MozDef, kötü amaçlı yazılımlar, kimlik avı saldırıları veya yetkisiz erişim girişimleri gibi yaygın tehditleri izleyebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Olaylara Müdahale***  : Otomasyon, olayların hızlı bir şekilde tespit edilmesine ve bunlara müdahale edilmesine yardımcı olur ve potansiyel güvenlik sorunlarının büyümeden önce ele alınmasını sağlar. 
+- ***Olaylara Müdahale*** : Otomasyon, olayların hızlı bir şekilde tespit edilmesine ve bunlara müdahale edilmesine yardımcı olur ve potansiyel güvenlik sorunlarının büyümeden önce ele alınmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bulut Güvenliği***  : AWS entegrasyonları sayesinde MozDef, bulutta iş yükleri çalıştıran işletmeler için doğal bir seçimdir. 
+- ***Bulut Güvenliği*** : AWS entegrasyonları sayesinde MozDef, bulutta iş yükleri çalıştıran işletmeler için doğal bir seçimdir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -233,11 +233,11 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Ölçeklenebilirlik Karmaşıklığı***  : MozDef ölçeklenebilirlik için tasarlanmış olsa da, onu büyük ölçekli ortamlara kurmak karmaşık olabilir. 
+- ***Ölçeklenebilirlik Karmaşıklığı*** : MozDef ölçeklenebilirlik için tasarlanmış olsa da, onu büyük ölçekli ortamlara kurmak karmaşık olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Öğrenme Eğrisi***  : Açık kaynaklı bir araç olan MozDef, bazı ticari alternatiflerin sunduğu cilalı kullanıcı arayüzünden ve dokümantasyondan yoksundur. 
+- ***Öğrenme Eğrisi*** : Açık kaynaklı bir araç olan MozDef, bazı ticari alternatiflerin sunduğu cilalı kullanıcı arayüzünden ve dokümantasyondan yoksundur. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -250,7 +250,7 @@ url: /tr/mozdef-modern-tehdit-algilama-ve-mudahale-icin-acik-kaynakli-bir-guvenl
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>MozDef, esnek, ölçeklenebilir ve açık kaynaklı bir SIEM çözümü arayan kuruluşlar için mükemmel bir seçenektir. AWS ile entegrasyonu, güvenlik operasyonlarını otomatikleştirme yeteneğiyle birleştiğinde, onu modern  siber güvenlik ihtiyaçları için güçlü bir seçim haline getirir. Bazı ticari araçların kullanıma hazır özelliklerine sahip olmasa da, maliyet etkinliği ve özelleştirilebilirliği onu her ölçekteki kuruluş için değerlendirmeye değer kılar.
+<p>MozDef, esnek, ölçeklenebilir ve açık kaynaklı bir SIEM çözümü arayan kuruluşlar için mükemmel bir seçenektir. AWS ile entegrasyonu, güvenlik operasyonlarını otomatikleştirme yeteneğiyle birleştiğinde, onu modernsiber güvenlikihtiyaçları için güçlü bir seçim haline getirir. Bazı ticari araçların kullanıma hazır özelliklerine sahip olmasa da, maliyet etkinliği ve özelleştirilebilirliği onu her ölçekteki kuruluş için değerlendirmeye değer kılar.
   
 
 <!-- wp:paragraph -->

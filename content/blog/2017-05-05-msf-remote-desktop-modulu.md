@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2017-05-05T13:30:00Z"
 excerpt: Metasploit Framework içerisinde Meterpreter ile bir shell açtığınızda yapılabilecek
   işlemlerden bir tanesi de uzak masaüstü bağlantısını hayata geçirmek olabilir. Bunun
-  için getgui komutu oldukça kullanışlıdır.
+  içingetguikomutu oldukça kullanışlıdır.
 guid: https://www.siberoloji.com/?p=1187
 id: 1187
 image: /assets/images/2024/06/metasploit.jpg

@@ -39,14 +39,14 @@ int main() {
   Verilen kod konsola “Hello World!” yazdıran basit bir C++ programıdır. 
  
 
-  İlk satır, <code>#include &lt;iostream&gt;</code> iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir. 
+  İlk satır,<code>#include &lt;iostream&gt;</code> iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir. 
  
 
-  Bir sonraki kısım <code>main</code> fonksiyond<code>ur</code>. C++'da programın yürütülmesi <code>main</code> fonksiyonun çalışmasıyla başlar. <code>int main()</code>, <code>main</code> fonksiyonun bir tamsayı değeri döndüreceğini gösterir. 
+  Bir sonraki kısım <code>main</code> fonksiyond<code>ur</code>. C++'da programın yürütülmesi<code>main</code> fonksiyonun çalışmasıyla başlar.<code>int main()</code>, <code>main</code> fonksiyonun bir tamsayı değeri döndüreceğini gösterir. 
  
 
-  Fonksiyonun içinde bulunan <code>std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;</code> ifadesi  “Hello World!” dizesini ekrana yazdırmak için kullanılır.  
+  Fonksiyonun içindebulunan <code>std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;</code> ifadesi “Hello World!” dizesini ekrana yazdırmak için kullanılır. 
  
 
-  Son olarak <code>main</code> fonksiyonu <code>return 0;</code> ile biter. Bu ifade programdan çıkıp işletim sistemine 0 durumunu geri döndürmesine neden olur. <code>main</code>, 0 değerinin döndürülmesi genellikle programın hatasız olarak başarılı bir şekilde çalıştığını gösterir. 
+  Son olarak<code>main</code> fonksiyonu <code>return 0;</code> ile biter. Bu ifade programdan çıkıp işletim sistemine 0 durumunu geri döndürmesine neden olur. <code>main</code>, 0 değerinin döndürülmesi genellikle programın hatasız olarak başarılı bir şekilde çalıştığını gösterir. 
  

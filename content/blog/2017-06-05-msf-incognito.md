@@ -15,11 +15,11 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-05T13:24:00Z"
-excerpt: Bir sisteme giriş yaptığınızda, sistemde bulunan kullanıcılara ait token adı
+excerpt: Bir sisteme giriş yaptığınızda, sistemde bulunan kullanıcılara aittokenadı
   verilen izin ve yetkilendirme kuralları bulunur. Bu kurallar, web uygulamalarında
-  kullanılan cookie denilen çerez dosyalarına benzer. Kullanıcı ağdaki bir servise
+  kullanılancookiedenilen çerez dosyalarına benzer. Kullanıcı ağdaki bir servise
   (örn. Net drive) ilk bağlandığında kullanıcı adı ve parolasıyla oturum açar. Oturum
-  açıldığında sistem bu kullanıcıya bir token tanımlar. Artık bilgisayar kapanana
+  açıldığında sistem bu kullanıcıya birtokentanımlar. Artık bilgisayar kapanana
   kadar tekrar tekrar parola girmeden, sistemde bulunan servisi kullanma imkanı olacaktır.
 guid: https://www.siberoloji.com/?p=1183
 id: 1183

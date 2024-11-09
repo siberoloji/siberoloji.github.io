@@ -24,7 +24,7 @@
       <description>
         
         
-        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt; apt-get update&lt;/em&gt; ve benzeri komutları mutlaka kullanmışsınızdır. &lt;em&gt;apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; ve &lt;em&gt;apt-get dist-upgrade&lt;/em&gt; komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;
+        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt;apt-get update&lt;/em&gt;ve benzeri komutları mutlaka kullanmışsınızdır.&lt;em&gt;apt-get update&lt;/em&gt;,&lt;em&gt;apt-get upgrade&lt;/em&gt;ve&lt;em&gt;apt-get dist-upgrade&lt;/em&gt;komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;
 &lt;p&gt;Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler /etc/apt/sources.list dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.&lt;/p&gt;
 &lt;p&gt;Sisteminizin, paketlerini güncellemek amacıyla hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -239,7 +239,7 @@ Reading package lists... Done
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get upgrade&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;It upgrades all the packages installed on your system to the latest version in the list you updated with the apt-get update command. The point to note here is that the update is performed on the INSTALLED  packages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.&lt;/p&gt;
+&lt;p&gt;It upgrades all the packages installed on your system tothe latest version in the list you updated with theapt-getupdate command. The point to note here is that the update is performed on the INSTALLEDpackages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.&lt;/p&gt;
 &lt;p&gt;Some  software developers or system administrators do not want to install packages or kernel files that they do not need, considering the stability of their systems. In such a case, an upgrade is quite useful. Only existing packages are upgraded to the latest version. Another important point is that no packages are deleted from the system. Only existing packages are upgraded to the latest version.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut

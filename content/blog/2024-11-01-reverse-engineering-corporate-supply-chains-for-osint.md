@@ -40,19 +40,19 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 <ol class="wp-block-list"><!-- wp:list-item -->
 - ***Publicly Available Information:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Company Websites:***  Analyze a company's website for information about its suppliers, partners, and manufacturing locations. 
+- ***Company Websites:*** Analyze a company's website for information about its suppliers, partners, and manufacturing locations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***SEC Filings:***  Review SEC filings (10-K, 10-Q, and 8-K) for disclosures about supply chain risks, sourcing strategies, and manufacturing operations. 
+- ***SEC Filings:*** Review SEC filings (10-K, 10-Q, and 8-K) for disclosures about supply chain risks, sourcing strategies, and manufacturing operations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Press Releases and News Articles:***  Monitor press releases and news articles for announcements about new suppliers, partnerships, or manufacturing facilities. 
+- ***Press Releases and News Articles:*** Monitor press releases and news articles for announcements about new suppliers, partnerships, or manufacturing facilities. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Social Media:***  Analyze social media posts from company executives, employees, and suppliers for clues about supply chain activities. 
+- ***Social Media:*** Analyze social media posts from company executives, employees, and suppliers for clues about supply chain activities. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -60,19 +60,19 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 <!-- wp:list-item -->
 - ***Open-Source Intelligence Tools:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Google Search:***  Use advanced search operators to find specific information about a company's supply chain, such as "site:company.com supplier." 
+- ***Google Search:*** Use advanced search operators to find specific information about a company's supply chain, such as "site:company.com supplier." 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Google Maps:***  Use Google Maps to identify manufacturing facilities, warehouses, and logistics hubs. 
+- ***Google Maps:*** Use Google Maps to identify manufacturing facilities, warehouses, and logistics hubs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Social Media Search Tools:***  Use tools like Pipl, Spokeo, and BeenVerified to find information about individuals associated with a company's supply chain. 
+- ***Social Media Search Tools:*** Use tools like Pipl, Spokeo, and BeenVerified to find information about individuals associated with a company's supply chain. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Mining Tools:***  Use tools like Scrapy and Beautiful Soup to extract data from websites and databases. 
+- ***Data Mining Tools:*** Use tools like Scrapy and Beautiful Soup to extract data from websites and databases. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -80,15 +80,15 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 <!-- wp:list-item -->
 - ***Third-Party Databases and Services:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Import/Export Data:***  Analyze import/export data to identify a company's suppliers and customers. 
+- ***Import/Export Data:*** Analyze import/export data to identify a company's suppliers and customers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Corporate Databases:***  Use corporate databases like Dun &amp; Bradstreet and Hoover's to find information about company hierarchies, subsidiaries, and affiliates. 
+- ***Corporate Databases:*** Use corporate databases like Dun &amp; Bradstreet and Hoover's to find information about company hierarchies, subsidiaries, and affiliates. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Supply Chain Transparency Initiatives:***  Analyze data from initiatives like the CDP Supply Chain Program and the Higg Index to assess a company's environmental and social impact. 
+- ***Supply Chain Transparency Initiatives:*** Analyze data from initiatives like the CDP Supply Chain Program and the Higg Index to assess a company's environmental and social impact. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item --> 
@@ -102,15 +102,15 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Respecting Privacy Laws:***  Avoid collecting or using personal information without consent. 
+- ***Respecting Privacy Laws:*** Avoid collecting or using personal information without consent. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Avoiding Malicious Activity:***  Do not use the information to harm individuals or organizations. 
+- ***Avoiding Malicious Activity:*** Do not use the information to harm individuals or organizations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Respecting Intellectual Property Rights:***  Do not infringe on copyright or patent laws. 
+- ***Respecting Intellectual Property Rights:*** Do not infringe on copyright or patent laws. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -122,19 +122,19 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Cybersecurity:***  Identifying potential targets for cyberattacks by understanding a company's IT infrastructure and supply chain vulnerabilities. 
+- ***Cybersecurity:*** Identifying potential targets for cyberattacks by understanding a company's IT infrastructure and supply chain vulnerabilities. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Supply Chain Risk Management:***  Assessing geopolitical risks, such as trade disputes and natural disasters, that could impact a company's supply chain. 
+- ***Supply Chain Risk Management:*** Assessing geopolitical risks, such as trade disputes and natural disasters, that could impact a company's supply chain. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Corporate Intelligence:***  Gaining insights into a company's competitive landscape, market position, and strategic direction. 
+- ***Corporate Intelligence:*** Gaining insights into a company's competitive landscape, market position, and strategic direction. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Investigative Journalism:***  Uncovering corruption, fraud, and other illicit activities within a company's supply chain. 
+- ***Investigative Journalism:*** Uncovering corruption, fraud, and other illicit activities within a company's supply chain. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -149,23 +149,23 @@ url: /reverse-engineering-corporate-supply-chains-for-osint/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Start with the Basics:***  Begin by understanding a company's core business and its primary products or services. 
+- ***Start with the Basics:*** Begin by understanding a company's core business and its primary products or services. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Identify Key Suppliers and Customers:***  Focus on the company's largest and most critical suppliers and customers. 
+- ***Identify Key Suppliers and Customers:*** Focus on the company's largest and most critical suppliers and customers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Use a Multidisciplinary Approach:***  Combine information from various sources, including financial data, news articles, and social media. 
+- ***Use a Multidisciplinary Approach:*** Combine information from various sources, including financial data, news articles, and social media. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Visualize the Supply Chain:***  Create a visual representation of the supply chain to identify potential vulnerabilities and dependencies. 
+- ***Visualize the Supply Chain:*** Create a visual representation of the supply chain to identify potential vulnerabilities and dependencies. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Stay Updated on Industry Trends:***  Keep up-to-date on industry trends, such as supply chain digitization and sustainability initiatives. 
+- ***Stay Updated on Industry Trends:*** Keep up-to-date on industry trends, such as supply chain digitization and sustainability initiatives. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

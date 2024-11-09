@@ -27,7 +27,7 @@ title: En Popüler Linux dağıtımları listesi
 url: /tr/populer-linux-dagitimlarinin-listesi/
 ---
 
-  Bu yazımızda Linux dağıtımları ana kolları veya temel sistemlerine göre kategorize edilmiş bir listesini hazırladık. Bu liste kapsamlı tam liste değildir, çünkü piyasada yüzlerce Linux dağıtımı var, ancak en yaygın kullanılanlardan bazılarını kapsıyor. 
+  Bu yazımızdaLinux dağıtımlarıana kolları veya temel sistemlerine göre kategorize edilmiş bir listesini hazırladık. Bu liste kapsamlı tam liste değildir, çünkü piyasada yüzlerce Linux dağıtımı var, ancak en yaygın kullanılanlardan bazılarını kapsıyor. 
  
 
 

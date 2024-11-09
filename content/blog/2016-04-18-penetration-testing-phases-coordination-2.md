@@ -24,10 +24,10 @@ title: Penetration Testing Phases (Coordination – 2)
 url: /penetration-testing-phases-coordination-2/
 ---
 
- <p>We have examined the general structure of the coordination processes, which is the 1st Phase during the Penetration Test preparations, in our article in this <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/">link</a>. Now, we will examine in detail one of the issues that will be discussed during the meeting.
+ <p>We have examined the general structure of the coordination processes, which is the 1st Phase during the Penetration Test preparations, in our article in this<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/">link</a>. Now, we will examine in detail one of the issues that will be discussed during the meeting.
  
 
- <p>***During the determination of the Scope***  within the coordination processes we mentioned, the security company providing the service asks some questions in order to reveal the purpose of the company receiving the service. Below, we will explain the questions that may be asked depending on the type of test to be performed. The company that will receive the service should prepare for the answers to these questions before the coordination meeting, in order to avoid any uncertainties that may arise during the meeting.
+ <p>***During the determination of the Scope*** within the coordination processes we mentioned, the security company providing the service asks some questions in order to reveal the purpose of the company receiving the service. Below, we will explain the questions that may be asked depending on the type of test to be performed. The company that will receive the service should prepare for the answers to these questions before the coordination meeting, in order to avoid any uncertainties that may arise during the meeting.
  
 
 <!-- wp:heading {"level":1} -->

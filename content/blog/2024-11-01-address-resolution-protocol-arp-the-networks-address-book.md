@@ -32,11 +32,11 @@ url: /address-resolution-protocol-arp-the-networks-address-book/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***IP Address:***  A logical address assigned to a device on a network, allowing it to communicate with other devices. 
+- ***IP Address:*** A logical address assigned to a device on a network, allowing it to communicate with other devices. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MAC Address:***  A unique physical address assigned to a network interface card (NIC), identifying the device's hardware. 
+- ***MAC Address:*** A unique physical address assigned to a network interface card (NIC), identifying the device's hardware. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -131,19 +131,19 @@ url: /address-resolution-protocol-arp-the-networks-address-book/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Static ARP Entries:***  Configure static ARP entries for critical devices, preventing them from being affected by ARP poisoning attacks. 
+- ***Static ARP Entries:*** Configure static ARP entries for critical devices, preventing them from being affected by ARP poisoning attacks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Port Security:***  Implement port security on network switches to limit the number of devices that can connect to a port, reducing the risk of unauthorized devices. 
+- ***Port Security:*** Implement port security on network switches to limit the number of devices that can connect to a port, reducing the risk of unauthorized devices. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***ARP Inspection:***  Use network security devices with ARP inspection capabilities to monitor ARP traffic and detect and block malicious ARP packets. 
+- ***ARP Inspection:*** Use network security devices with ARP inspection capabilities to monitor ARP traffic and detect and block malicious ARP packets. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Network Segmentation:***  Segmenting the network into smaller subnets can limit the impact of ARP attacks. 
+- ***Network Segmentation:*** Segmenting the network into smaller subnets can limit the impact of ARP attacks. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

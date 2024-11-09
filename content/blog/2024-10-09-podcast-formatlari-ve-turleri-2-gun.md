@@ -40,15 +40,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Birebir görüşmeler:***   En yaygın türdür, bir sunucu ve bir konukla yapılır. 
+- ***Birebir görüşmeler:*** En yaygın türdür, bir sunucu ve bir konukla yapılır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Panel tartışmaları:***   Birden fazla konuğun bir konuyu farklı açılardan tartışması. 
+- ***Panel tartışmaları:*** Birden fazla konuğun bir konuyu farklı açılardan tartışması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzaktan görüşmeler:***   Telefon veya görüntülü konferans aracılığıyla gerçekleştirilir. 
+- ***Uzaktan görüşmeler:*** Telefon veya görüntülü konferans aracılığıyla gerçekleştirilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -57,15 +57,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Soruları önceden hazırlayın:***   Bu, odaklanmanıza ve tüm önemli noktaları kapsadığınızdan emin olmanıza yardımcı olacaktır. 
+- ***Soruları önceden hazırlayın:*** Bu, odaklanmanıza ve tüm önemli noktaları kapsadığınızdan emin olmanıza yardımcı olacaktır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Etkin bir şekilde dinleyin:***   Konuklarınızın ne söylediğine dikkat edin ve takip soruları sorun. 
+- ***Etkin bir şekilde dinleyin:*** Konuklarınızın ne söylediğine dikkat edin ve takip soruları sorun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Rahat bir atmosfer yaratın:***   Konuklarınızın kendilerini hoş karşılanmış ve rahat hissetmelerini sağlayın. 
+- ***Rahat bir atmosfer yaratın:*** Konuklarınızın kendilerini hoş karşılanmış ve rahat hissetmelerini sağlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -81,15 +81,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kişisel anlatılar:***   Sunucunun kendi hayatından hikayeler. 
+- ***Kişisel anlatılar:*** Sunucunun kendi hayatından hikayeler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kurgusal anlatılar:***   Orijinal öyküler veya var olan eserlerin uyarlamaları. 
+- ***Kurgusal anlatılar:*** Orijinal öyküler veya var olan eserlerin uyarlamaları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gerçek suç hikayeleri:***   Gerçek hayattaki suçlarla ilgili araştırmacı gazetecilik ve hikaye anlatımı. 
+- ***Gerçek suç hikayeleri:*** Gerçek hayattaki suçlarla ilgili araştırmacı gazetecilik ve hikaye anlatımı. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -98,15 +98,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gösterin, anlatmayın:***   Hikayenizi canlandırmak için canlı tasvirler ve duyusal detaylar kullanın. 
+- ***Gösterin, anlatmayın:*** Hikayenizi canlandırmak için canlı tasvirler ve duyusal detaylar kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gerilim ve beklenti yaratın:***   Gizem veya gerilim duygusu yaratarak izleyicilerinizin ilgisini canlı tutun. 
+- ***Gerilim ve beklenti yaratın:*** Gizem veya gerilim duygusu yaratarak izleyicilerinizin ilgisini canlı tutun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İkna edici bir ses tonu kullanın:***   Sesiniz ve sunumunuz bir hikaye anlatımı podcast'ini başarılı kılabilir veya başarısızlığa uğratabilir. 
+- ***İkna edici bir ses tonu kullanın:*** Sesiniz ve sunumunuz bir hikaye anlatımı podcast'ini başarılı kılabilir veya başarısızlığa uğratabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -122,15 +122,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Dersler:***   Belirli bir konunun derinlemesine anlatımı. 
+- ***Dersler:*** Belirli bir konunun derinlemesine anlatımı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eğitimler:***   Yeni bir beceri öğrenmek için adım adım kılavuzlar. 
+- ***Eğitimler:*** Yeni bir beceri öğrenmek için adım adım kılavuzlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzmanlarla röportajlar:***   Belirli bir alandaki uzmanlarla yapılan görüşmeler. 
+- ***Uzmanlarla röportajlar:*** Belirli bir alandaki uzmanlarla yapılan görüşmeler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -139,15 +139,15 @@ url: /tr/podcast-formatlari-ve-turleri-2-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Basit tutun:***   Karmaşık konuları daha küçük, anlaşılır parçalara bölün. 
+- ***Basit tutun:*** Karmaşık konuları daha küçük, anlaşılır parçalara bölün. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Örnekler ve benzetmeler kullanın:***   Dinleyicilerin soyut kavramları anlamalarına yardımcı olun. 
+- ***Örnekler ve benzetmeler kullanın:*** Dinleyicilerin soyut kavramları anlamalarına yardımcı olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İlgi çekici hale getirin:***   İzleyicilerinizin ilgisini canlı tutmak için hikaye anlatma tekniklerini ve mizahı kullanın. 
+- ***İlgi çekici hale getirin:*** İzleyicilerinizin ilgisini canlı tutmak için hikaye anlatma tekniklerini ve mizahı kullanın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

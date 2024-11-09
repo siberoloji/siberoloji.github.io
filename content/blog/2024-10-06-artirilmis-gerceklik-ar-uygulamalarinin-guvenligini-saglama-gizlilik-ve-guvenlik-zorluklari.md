@@ -48,19 +48,19 @@ url: /tr/artirilmis-gerceklik-ar-uygulamalarinin-guvenligini-saglama-gizlilik-ve
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Sensörler***  : Gerçek dünya ortamını ve kullanıcı hareketlerini yakalamak için kameralar, GPS, ivmeölçerler ve jiroskoplar. 
+- ***Sensörler*** : Gerçek dünya ortamını ve kullanıcı hareketlerini yakalamak için kameralar, GPS, ivmeölçerler ve jiroskoplar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İşlem Birimleri***  : Sensör verilerini yorumlamak ve uygun AR içeriği oluşturmak. 
+- ***İşlem Birimleri*** : Sensör verilerini yorumlamak ve uygun AR içeriği oluşturmak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ekran***  : Arttırılmış görüntüyü göstermek için kullanılan ekranlar veya projektörler. 
+- ***Ekran*** : Arttırılmış görüntüyü göstermek için kullanılan ekranlar veya projektörler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Giriş Aygıtları***  : Dokunmatik ekranlar, sesli komutlar veya hareket tanıma sistemleri. 
+- ***Giriş Aygıtları*** : Dokunmatik ekranlar, sesli komutlar veya hareket tanıma sistemleri. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -355,7 +355,7 @@ url: /tr/artirilmis-gerceklik-ar-uygulamalarinin-guvenligini-saglama-gizlilik-ve
  ### 3. Yapay Zeka Destekli Güvenlik Önlemleri
 <!-- /wp:heading -->
 
-   AR güvenliğini artırmak için Yapay Zeka ve Makine Öğreniminden yararlanılıyor: 
+  AR güvenliğini artırmak için Yapay Zekave Makine Öğreniminden yararlanılıyor: 
  
 
 <!-- wp:list -->
@@ -475,35 +475,35 @@ url: /tr/artirilmis-gerceklik-ar-uygulamalarinin-guvenligini-saglama-gizlilik-ve
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Öncelikli Güvenlik Yaklaşımını Benimseyin***  : AR uygulama tasarımı ve geliştirmesinin en erken aşamalarından itibaren güvenlik hususlarını entegre edin. 
+- ***Öncelikli Güvenlik Yaklaşımını Benimseyin*** : AR uygulama tasarımı ve geliştirmesinin en erken aşamalarından itibaren güvenlik hususlarını entegre edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gizliliği Tasarımla Uygulayın***  : Gizlilik korumalarını sonradan akla gelen bir şey olarak ele almak yerine, AR uygulamalarının temel işlevselliğine entegre edin. 
+- ***Gizliliği Tasarımla Uygulayın*** : Gizlilik korumalarını sonradan akla gelen bir şey olarak ele almak yerine, AR uygulamalarının temel işlevselliğine entegre edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Düzenli Güvenlik Değerlendirmeleri Gerçekleştirin***  : AR uygulamalarına özel kapsamlı güvenlik denetimleri ve sızma testleri gerçekleştirin. 
+- ***Düzenli Güvenlik Değerlendirmeleri Gerçekleştirin*** : AR uygulamalarına özel kapsamlı güvenlik denetimleri ve sızma testleri gerçekleştirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ortaya Çıkan Tehditler Hakkında Bilgi Sahibi Olun***  : AR teknolojisine özgü yeni güvenlik açıkları ve saldırı vektörleri hakkında bilgi sahibi olun. 
+- ***Ortaya Çıkan Tehditler Hakkında Bilgi Sahibi Olun*** : AR teknolojisine özgü yeni güvenlik açıkları ve saldırı vektörleri hakkında bilgi sahibi olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanıcılara Eğitim Verin***  : Kullanıcılara AR uygulamalarıyla ilişkili potansiyel riskler ve bunların güvenli bir şekilde nasıl kullanılacağı hakkında eğitim verin. 
+- ***Kullanıcılara Eğitim Verin*** : Kullanıcılara AR uygulamalarıyla ilişkili potansiyel riskler ve bunların güvenli bir şekilde nasıl kullanılacağı hakkında eğitim verin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***AR Güvenlik Topluluğu ile İş Birliği Yapın***  : Bilgi paylaşım girişimlerine katılın ve genel AR güvenliğini iyileştirmek için diğer paydaşlarla iş birliği yapın. 
+- ***AR Güvenlik Topluluğu ile İş Birliği Yapın*** : Bilgi paylaşım girişimlerine katılın ve genel AR güvenliğini iyileştirmek için diğer paydaşlarla iş birliği yapın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güçlü Güncelleme Mekanizmaları Uygulayın***  : AR uygulamalarının yeni güvenlik tehditlerini ele alacak şekilde kolayca ve güvenli bir şekilde güncellenebildiğinden emin olun. 
+- ***Güçlü Güncelleme Mekanizmaları Uygulayın*** : AR uygulamalarının yeni güvenlik tehditlerini ele alacak şekilde kolayca ve güvenli bir şekilde güncellenebildiğinden emin olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Fiziksel Çevreyi Göz Önünde Bulundurun***  : Güvenlik risklerini önlemek için kullanıcının fiziksel çevresinin farkında olan AR uygulamaları tasarlayın. 
+- ***Fiziksel Çevreyi Göz Önünde Bulundurun*** : Güvenlik risklerini önlemek için kullanıcının fiziksel çevresinin farkında olan AR uygulamaları tasarlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

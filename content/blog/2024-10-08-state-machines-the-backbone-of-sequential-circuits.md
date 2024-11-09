@@ -50,19 +50,19 @@ url: /state-machines-the-backbone-of-sequential-circuits/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Outputs depend on both state and input:***  The output is determined by the combination of the current state and the input received. 
+- ***Outputs depend on both state and input:*** The output is determined by the combination of the current state and the input received. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Asynchronous outputs:***  Outputs can change immediately in response to input changes. 
+- ***Asynchronous outputs:*** Outputs can change immediately in response to input changes. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Potential for glitches:***  Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully. 
+- ***Potential for glitches:*** Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Fewer states:***  Mealy machines often require fewer states compared to Moore machines for the same functionality. 
+- ***Fewer states:*** Mealy machines often require fewer states compared to Moore machines for the same functionality. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -77,19 +77,19 @@ url: /state-machines-the-backbone-of-sequential-circuits/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Outputs depend only on state:***  The output is determined solely by the current state. 
+- ***Outputs depend only on state:*** The output is determined solely by the current state. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Synchronous outputs:***  Outputs change only at the clock edge, ensuring glitch-free operation. 
+- ***Synchronous outputs:*** Outputs change only at the clock edge, ensuring glitch-free operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***More states:***  Moore machines often require more states compared to Mealy machines for the same functionality. 
+- ***More states:*** Moore machines often require more states compared to Mealy machines for the same functionality. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Simpler design:***  Moore machines are generally easier to design and analyze due to their simpler structure. 
+- ***Simpler design:*** Moore machines are generally easier to design and analyze due to their simpler structure. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -108,19 +108,19 @@ url: /state-machines-the-backbone-of-sequential-circuits/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Digital circuits:***  Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
+- ***Digital circuits:*** Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Software development:***  State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems. 
+- ***Software development:*** State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hardware design:***  State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits. 
+- ***Hardware design:*** State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Communication systems:***  State machines are used to implement protocols and control the behavior of communication devices. 
+- ***Communication systems:*** State machines are used to implement protocols and control the behavior of communication devices. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -132,15 +132,15 @@ url: /state-machines-the-backbone-of-sequential-circuits/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***State diagrams:***  State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
+- ***State diagrams:*** State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***State tables:***  State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states. 
+- ***State tables:*** State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hardware description languages (HDLs):***  HDLs like Verilog and VHDL can be used to describe state machines in a textual format. 
+- ***Hardware description languages (HDLs):*** HDLs like Verilog and VHDL can be used to describe state machines in a textual format. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

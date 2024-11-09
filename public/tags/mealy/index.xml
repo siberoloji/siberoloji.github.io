@@ -33,21 +33,21 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Key Characteristics of Mealy Machines:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Outputs depend on both state and input:***  The output is determined by the combination of the current state and the input received. 
+- ***Outputs depend on both state and input:*** The output is determined by the combination of the current state and the input received. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Asynchronous outputs:&lt;/strong&gt;&lt;/em&gt;  Outputs can change immediately in response to input changes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Asynchronous outputs:&lt;/strong&gt;&lt;/em&gt; Outputs can change immediately in response to input changes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Potential for glitches:&lt;/strong&gt;&lt;/em&gt;  Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Potential for glitches:&lt;/strong&gt;&lt;/em&gt; Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fewer states:&lt;/strong&gt;&lt;/em&gt;  Mealy machines often require fewer states compared to Moore machines for the same functionality.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fewer states:&lt;/strong&gt;&lt;/em&gt; Mealy machines often require fewer states compared to Moore machines for the same functionality.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -56,21 +56,21 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Key Characteristics of Moore Machines:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Outputs depend only on state:***  The output is determined solely by the current state. 
+- ***Outputs depend only on state:*** The output is determined solely by the current state. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Synchronous outputs:&lt;/strong&gt;&lt;/em&gt;  Outputs change only at the clock edge, ensuring glitch-free operation.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Synchronous outputs:&lt;/strong&gt;&lt;/em&gt; Outputs change only at the clock edge, ensuring glitch-free operation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;More states:&lt;/strong&gt;&lt;/em&gt;  Moore machines often require more states compared to Mealy machines for the same functionality.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;More states:&lt;/strong&gt;&lt;/em&gt; Moore machines often require more states compared to Mealy machines for the same functionality.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Simpler design:&lt;/strong&gt;&lt;/em&gt;  Moore machines are generally easier to design and analyze due to their simpler structure.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Simpler design:&lt;/strong&gt;&lt;/em&gt; Moore machines are generally easier to design and analyze due to their simpler structure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -82,21 +82,21 @@
 &lt;p&gt;State machines are used in a wide range of applications, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Digital circuits:***  Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
+- ***Digital circuits:*** Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Software development:&lt;/strong&gt;&lt;/em&gt;  State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Software development:&lt;/strong&gt;&lt;/em&gt; State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware design:&lt;/strong&gt;&lt;/em&gt;  State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware design:&lt;/strong&gt;&lt;/em&gt; State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt;  State machines are used to implement protocols and control the behavior of communication devices.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt; State machines are used to implement protocols and control the behavior of communication devices.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -104,16 +104,16 @@
 &lt;p&gt;State machines can be designed and implemented using various methods, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***State diagrams:***  State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
+- ***State diagrams:*** State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;State tables:&lt;/strong&gt;&lt;/em&gt;  State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;State tables:&lt;/strong&gt;&lt;/em&gt; State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt;  HDLs like Verilog and VHDL can be used to describe state machines in a textual format.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt; HDLs like Verilog and VHDL can be used to describe state machines in a textual format.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

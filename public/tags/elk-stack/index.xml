@@ -28,7 +28,7 @@
 &lt;p&gt;Bu yazıda, ELK Stack&amp;rsquo;in ne olduğunu, nasıl çalıştığını, temel bileşenlerini ve veri analizi ve günlük yönetiminde önde kalmayı hedefleyen işletmeler ve kuruluşlar için neden olmazsa olmaz bir araç olduğunu derinlemesine inceleyeceğiz.&lt;/p&gt;
 &lt;h3&gt;ELK Stack nedir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;elk-stack-nedir&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#elk-stack-nedir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;ELK &lt;em&gt;&lt;strong&gt;Stack,&lt;/strong&gt;&lt;/em&gt;  üç güçlü açık kaynaklı aracı ifade eder: &lt;em&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;&lt;/em&gt;  , &lt;em&gt;&lt;strong&gt;Logstash&lt;/strong&gt;&lt;/em&gt;  ve &lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt; . Birlikte, günlük verilerini gerçek zamanlı olarak aramak, analiz etmek ve görselleştirmek için kusursuz bir platform sağlarlar. Her bileşen belirli bir rol oynar ve bunların entegrasyonu ELK&amp;rsquo;yi log yönetimi için güçlü bir çözüm haline getirir.&lt;/p&gt;
+&lt;p&gt;ELK&lt;em&gt;&lt;strong&gt;Stack,&lt;/strong&gt;&lt;/em&gt; üç güçlü açık kaynaklı aracı ifade eder:&lt;em&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;&lt;/em&gt; ,&lt;em&gt;&lt;strong&gt;Logstash&lt;/strong&gt;&lt;/em&gt; ve&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt; . Birlikte, günlük verilerini gerçek zamanlı olarak aramak, analiz etmek ve görselleştirmek için kusursuz bir platform sağlarlar. Her bileşen belirli bir rol oynar ve bunların entegrasyonu ELK&amp;rsquo;yi log yönetimi için güçlü bir çözüm haline getirir.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Ancak son yıllarda ELK Stack, verileri Logstash veya Elasticsearch&amp;rsquo;e gönderen hafif bir veri taşıyıcısı olan Beats&amp;rsquo;in&lt;/strong&gt;&lt;/em&gt;  dahil edilmesiyle evrimleşti . Bu genişletilmiş yığın genellikle &lt;em&gt;&lt;strong&gt;Elastic Stack&lt;/strong&gt;&lt;/em&gt;  olarak anılır , ancak ELK bu paket için en yaygın bilinen isim olmaya devam ediyor.&lt;/p&gt;
 &lt;p&gt;Her bir bileşeni ayrı ayrı inceleyelim:&lt;/p&gt;
 &lt;h3&gt;ELK Stack Bileşenleri&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;elk-stack-bileşenleri&#34;&gt;&lt;/span&gt;
@@ -40,21 +40,21 @@
 &lt;p&gt;Başlıca özelliklerinden bazıları şunlardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Tam metin araması***  : Elasticsearch, filtreleme, metin eşleştirme ve alaka puanlaması gibi gelişmiş arama yetenekleri sağlar. 
+- ***Tam metin araması*** : Elasticsearch, filtreleme, metin eşleştirme ve alaka puanlaması gibi gelişmiş arama yetenekleri sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek zamanlı dizinleme&lt;/strong&gt;&lt;/em&gt;  : Elasticsearch&amp;rsquo;e aktarılan veriler hemen arama için kullanılabilir hale gelir ve neredeyse anında içgörüler elde edilmesini sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek zamanlı dizinleme&lt;/strong&gt;&lt;/em&gt; : Elasticsearch&amp;rsquo;e aktarılan veriler hemen arama için kullanılabilir hale gelir ve neredeyse anında içgörüler elde edilmesini sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ölçeklenebilirlik&lt;/strong&gt;&lt;/em&gt;  : Verileriniz büyüdükçe Elasticsearch, iş yükünü dağıtmak için yeni düğümler ekleyerek ölçeklenebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ölçeklenebilirlik&lt;/strong&gt;&lt;/em&gt; : Verileriniz büyüdükçe Elasticsearch, iş yükünü dağıtmak için yeni düğümler ekleyerek ölçeklenebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Toplamalar&lt;/strong&gt;&lt;/em&gt;  : Bunlar verilerin analiz edilmesine ve özetlenmesine yardımcı olur ve Elasticsearch&amp;rsquo;ü yalnızca arama yapmak için değil aynı zamanda günlükleri analiz etmek için de mükemmel bir seçim haline getirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Toplamalar&lt;/strong&gt;&lt;/em&gt; : Bunlar verilerin analiz edilmesine ve özetlenmesine yardımcı olur ve Elasticsearch&amp;rsquo;ü yalnızca arama yapmak için değil aynı zamanda günlükleri analiz etmek için de mükemmel bir seçim haline getirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -65,21 +65,21 @@
 &lt;p&gt;Logstash&amp;rsquo;in temel yetenekleri şunlardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Merkezi veri toplama***  : Logstash, farklı kaynaklardan veri toplar ve daha sonraki işlemler için birleştirir. 
+- ***Merkezi veri toplama*** : Logstash, farklı kaynaklardan veri toplar ve daha sonraki işlemler için birleştirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri dönüşümü&lt;/strong&gt;&lt;/em&gt;  : Verileri ayrıştırabilir, filtreleyebilir ve dönüştürebilir, böylece daha yapılandırılmış ve analiz edilmesi daha kolay hale getirebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri dönüşümü&lt;/strong&gt;&lt;/em&gt; : Verileri ayrıştırabilir, filtreleyebilir ve dönüştürebilir, böylece daha yapılandırılmış ve analiz edilmesi daha kolay hale getirebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Genişletilebilirlik&lt;/strong&gt;&lt;/em&gt;  : Logstash, veritabanları, mesaj aracıları ve bulut hizmetleri gibi farklı veri kaynaklarıyla entegre olmasını sağlayan 200&amp;rsquo;den fazla eklentiyle birlikte gelir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Genişletilebilirlik&lt;/strong&gt;&lt;/em&gt; : Logstash, veritabanları, mesaj aracıları ve bulut hizmetleri gibi farklı veri kaynaklarıyla entegre olmasını sağlayan 200&amp;rsquo;den fazla eklentiyle birlikte gelir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Olay odaklı mimari&lt;/strong&gt;&lt;/em&gt;  : Logstash, verileri gerçek zamanlı olarak işler ve böylece veri işleme ve aktarımında gecikmeyi en aza indirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Olay odaklı mimari&lt;/strong&gt;&lt;/em&gt; : Logstash, verileri gerçek zamanlı olarak işler ve böylece veri işleme ve aktarımında gecikmeyi en aza indirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -90,21 +90,21 @@
 &lt;p&gt;Kibana&amp;rsquo;nın temel özellikleri şunlardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Özelleştirilebilir gösterge panelleri***  : Kibana, kullanıcıların gerçek zamanlı ölçümleri ve veri görselleştirmelerini görüntüleyen son derece özelleştirilebilir gösterge panelleri oluşturmasına olanak tanır. 
+- ***Özelleştirilebilir gösterge panelleri*** : Kibana, kullanıcıların gerçek zamanlı ölçümleri ve veri görselleştirmelerini görüntüleyen son derece özelleştirilebilir gösterge panelleri oluşturmasına olanak tanır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Arama ve filtreleme&lt;/strong&gt;&lt;/em&gt;  : Kullanıcılar belirli kayıtları kolayca arayabilir veya ilgili bilgilere odaklanmak için verileri filtreleyebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Arama ve filtreleme&lt;/strong&gt;&lt;/em&gt; : Kullanıcılar belirli kayıtları kolayca arayabilir veya ilgili bilgilere odaklanmak için verileri filtreleyebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etkileşimli görselleştirmeler&lt;/strong&gt;&lt;/em&gt;  : Kibana, karmaşık verileri anlamlandırmaya yardımcı olabilecek çizgi grafikler, çubuk grafikler, pasta grafikler ve coğrafi haritalar dahil olmak üzere çok çeşitli görselleştirme seçenekleri sunar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etkileşimli görselleştirmeler&lt;/strong&gt;&lt;/em&gt; : Kibana, karmaşık verileri anlamlandırmaya yardımcı olabilecek çizgi grafikler, çubuk grafikler, pasta grafikler ve coğrafi haritalar dahil olmak üzere çok çeşitli görselleştirme seçenekleri sunar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uyarı ve raporlama&lt;/strong&gt;&lt;/em&gt;  : Kibana, uyarıları destekler ve kullanıcıların verilerde belirli koşullar karşılandığında bildirim almasını sağlar. Ayrıca, ekiplerin bilgilendirilmesini kolaylaştıran zamanlanmış raporlar da üretebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uyarı ve raporlama&lt;/strong&gt;&lt;/em&gt; : Kibana, uyarıları destekler ve kullanıcıların verilerde belirli koşullar karşılandığında bildirim almasını sağlar. Ayrıca, ekiplerin bilgilendirilmesini kolaylaştıran zamanlanmış raporlar da üretebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -114,21 +114,21 @@
 &lt;p&gt;Orijinal ELK Stack&amp;rsquo;in bir parçası olmasa da &lt;em&gt;&lt;strong&gt;Beats&lt;/strong&gt;&lt;/em&gt;  genellikle bu pakete değerli bir ek olarak kabul edilir. Beats, verileri doğrudan Elasticsearch veya Logstash&amp;rsquo;e göndermek üzere tasarlanmış hafif veri taşıyıcılarıdır. Belirli kullanım durumları için farklı Beats türleri mevcuttur, örneğin:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Filebeat***  : Sistemlerden Elasticsearch&#39;e günlük dosyalarını gönderir. 
+- ***Filebeat*** : Sistemlerden Elasticsearch&#39;e günlük dosyalarını gönderir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Metricbeat&lt;/strong&gt;&lt;/em&gt;  : İşletim sistemlerinden veya uygulamalardan ölçümleri toplar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Metricbeat&lt;/strong&gt;&lt;/em&gt; : İşletim sistemlerinden veya uygulamalardan ölçümleri toplar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Packetbeat&lt;/strong&gt;&lt;/em&gt;  : Ağ trafiğini izler ve verileri Elasticsearch&amp;rsquo;e gönderir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Packetbeat&lt;/strong&gt;&lt;/em&gt; : Ağ trafiğini izler ve verileri Elasticsearch&amp;rsquo;e gönderir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Winlogbeat&lt;/strong&gt;&lt;/em&gt;  : Windows olay günlüklerini toplar ve bunları Elasticsearch veya Logstash&amp;rsquo;e iletir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Winlogbeat&lt;/strong&gt;&lt;/em&gt; : Windows olay günlüklerini toplar ve bunları Elasticsearch veya Logstash&amp;rsquo;e iletir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -138,21 +138,21 @@
 &lt;p&gt;Dağıtıldığında ELK Stack, günlük verilerinin toplanması, işlenmesi, depolanması ve görselleştirilmesi için bütünleşik bir çözüm olarak çalışır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Veri Toplama***  : Çeşitli sistemlerden, uygulamalardan veya ortamlardan gelen günlükler veya ölçümler Beats veya diğer veri taşıyıcıları tarafından toplanır. Bu veri noktaları daha sonra daha fazla işleme için Logstash&#39;e veya herhangi bir dönüşüm gerekmiyorsa doğrudan Elasticsearch&#39;e gönderilir. 
+- ***Veri Toplama*** : Çeşitli sistemlerden, uygulamalardan veya ortamlardan gelen günlükler veya ölçümler Beats veya diğer veri taşıyıcıları tarafından toplanır. Bu veri noktaları daha sonra daha fazla işleme için Logstash&#39;e veya herhangi bir dönüşüm gerekmiyorsa doğrudan Elasticsearch&#39;e gönderilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri İşleme&lt;/strong&gt;&lt;/em&gt;  : Logstash ham verileri alır, burada önceden yapılandırılmış kurallara göre ayrıştırılabilir, filtrelenebilir ve zenginleştirilebilir. Yapılandırılmamış veya yarı yapılandırılmış günlükleri Elasticsearch&amp;rsquo;ün verimli bir şekilde indeksleyebileceği yapılandırılmış bir biçime dönüştürür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri İşleme&lt;/strong&gt;&lt;/em&gt; : Logstash ham verileri alır, burada önceden yapılandırılmış kurallara göre ayrıştırılabilir, filtrelenebilir ve zenginleştirilebilir. Yapılandırılmamış veya yarı yapılandırılmış günlükleri Elasticsearch&amp;rsquo;ün verimli bir şekilde indeksleyebileceği yapılandırılmış bir biçime dönüştürür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Depolama ve Dizinleme&lt;/strong&gt;&lt;/em&gt;  : Günlükler işlendikten sonra, dizine eklenip aranabilir hale getirildikleri Elasticsearch&amp;rsquo;te saklanırlar. Elasticsearch&amp;rsquo;ün dağıtılmış mimarisi, veriler büyüdükçe bile sorguların hızlı ve verimli kalmasını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Depolama ve Dizinleme&lt;/strong&gt;&lt;/em&gt; : Günlükler işlendikten sonra, dizine eklenip aranabilir hale getirildikleri Elasticsearch&amp;rsquo;te saklanırlar. Elasticsearch&amp;rsquo;ün dağıtılmış mimarisi, veriler büyüdükçe bile sorguların hızlı ve verimli kalmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Görselleştirme ve İzleme&lt;/strong&gt;&lt;/em&gt;  : Kibana, işlenmiş günlükleri görselleştirmek için kullanılır. Kullanıcılar, gösterge panelleri ve görselleştirmeler oluşturarak önemli ölçümleri gerçek zamanlı olarak izleyebilir, anormallikleri tespit edebilir ve uygulamalarının veya sistemlerinin performansı ve güvenliği hakkında daha derin içgörüler elde edebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Görselleştirme ve İzleme&lt;/strong&gt;&lt;/em&gt; : Kibana, işlenmiş günlükleri görselleştirmek için kullanılır. Kullanıcılar, gösterge panelleri ve görselleştirmeler oluşturarak önemli ölçümleri gerçek zamanlı olarak izleyebilir, anormallikleri tespit edebilir ve uygulamalarının veya sistemlerinin performansı ve güvenliği hakkında daha derin içgörüler elde edebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

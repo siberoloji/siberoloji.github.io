@@ -30,23 +30,23 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***İkinci elemandan başlayalım:***   İlk eleman sıralanmış kabul edilir. 
+- ***İkinci elemandan başlayalım:*** İlk eleman sıralanmış kabul edilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Karşılaştır ve ekle:***   Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır. 
+- ***Karşılaştır ve ekle:*** Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Öğeleri kaydır:***   Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır. 
+- ***Öğeleri kaydır:*** Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ekle:***   Geçerli öğeyi boş konuma ekle. 
+- ***Ekle:*** Geçerli öğeyi boş konuma ekle. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tekrarla:***   Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın. 
+- ***Tekrarla:*** Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -64,7 +64,7 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Sıralamak: <code>[2, 5, 4, 6, 1, 3]</code> 
+- Sıralamak:<code>[2, 5, 4, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -73,7 +73,7 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code> 
+- Sıralamak:<code>[2, 4, 5, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -82,7 +82,7 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code> 
+- Sıralamak:<code>[2, 4, 5, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -91,7 +91,7 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Sıralamak: <code>[1, 2, 4, 5, 6, 3]</code> 
+- Sıralamak:<code>[1, 2, 4, 5, 6, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -100,7 +100,7 @@ url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Sıralamak: <code>[1, 2, 3, 4, 5, 6]</code> 
+- Sıralamak:<code>[1, 2, 3, 4, 5, 6]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -141,15 +141,15 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***En iyi durum:***   Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)'dir. 
+- ***En iyi durum:*** Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)'dir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ortalama durum:***   Zaman karmaşıklığı O(n^2)'dir. 
+- ***Ortalama durum:*** Zaman karmaşıklığı O(n^2)'dir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***En kötü durum:***   Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)'dir. 
+- ***En kötü durum:*** Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)'dir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -164,19 +164,19 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Uygulanması kolay:***   Eklemeli sıralama anlaşılması ve kodlanması kolaydır. 
+- ***Uygulanması kolay:*** Eklemeli sıralama anlaşılması ve kodlanması kolaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Küçük veri kümeleri için verimli:***   Küçük diziler için iyi bir seçimdir. 
+- ***Küçük veri kümeleri için verimli:*** Küçük diziler için iyi bir seçimdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Çevrimiçi algoritma:***   Öğeler geldikçe tek tek işlenebilir. 
+- ***Çevrimiçi algoritma:*** Öğeler geldikçe tek tek işlenebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Stable:***   Eşit anahtarlara sahip öğelerin göreceli sırasını korur. 
+- ***Stable:*** Eşit anahtarlara sahip öğelerin göreceli sırasını korur. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -185,11 +185,11 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Büyük veri kümeleri için verimsizdir:***   İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir. 
+- ***Büyük veri kümeleri için verimsizdir:*** İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yaklaşık olarak sıralanmış diziler için yavaş:***   Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir. 
+- ***Yaklaşık olarak sıralanmış diziler için yavaş:*** Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

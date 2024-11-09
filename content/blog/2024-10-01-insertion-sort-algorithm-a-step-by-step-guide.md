@@ -32,23 +32,23 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Start with the second element:***  The first element is considered sorted. 
+- ***Start with the second element:*** The first element is considered sorted. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Compare and insert:***  Pick the next element and compare it with the elements in the sorted part of the array. 
+- ***Compare and insert:*** Pick the next element and compare it with the elements in the sorted part of the array. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Shift elements:***  If the current element is smaller than the compared element, shift the compared element and all elements after it one position to the right. 
+- ***Shift elements:*** If the current element is smaller than the compared element, shift the compared element and all elements after it one position to the right. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Insert:***  Insert the current element into the empty position. 
+- ***Insert:*** Insert the current element into the empty position. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Repeat:***  Repeat steps 2-4 for all remaining elements in the array. 
+- ***Repeat:*** Repeat steps 2-4 for all remaining elements in the array. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -66,7 +66,7 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Array: <code>[2, 5, 4, 6, 1, 3]</code> 
+- Array:<code>[2, 5, 4, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -75,7 +75,7 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Array: <code>[2, 4, 5, 6, 1, 3]</code> 
+- Array:<code>[2, 4, 5, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -84,7 +84,7 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Array: <code>[2, 4, 5, 6, 1, 3]</code> 
+- Array:<code>[2, 4, 5, 6, 1, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -93,7 +93,7 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Array: <code>[1, 2, 4, 5, 6, 3]</code> 
+- Array:<code>[1, 2, 4, 5, 6, 3]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -102,7 +102,7 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Array: <code>[1, 2, 3, 4, 5, 6]</code> 
+- Array:<code>[1, 2, 3, 4, 5, 6]</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -143,15 +143,15 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Best case:***  The array is already sorted. The time complexity is O(n). 
+- ***Best case:*** The array is already sorted. The time complexity is O(n). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Average case:***  The time complexity is O(n^2). 
+- ***Average case:*** The time complexity is O(n^2). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Worst case:***  The array is sorted in reverse order. The time complexity is O(n^2). 
+- ***Worst case:*** The array is sorted in reverse order. The time complexity is O(n^2). 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -166,19 +166,19 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Simple to implement:***  Insertion sort is easy to understand and code. 
+- ***Simple to implement:*** Insertion sort is easy to understand and code. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Efficient for small datasets:***  It's a good choice for small arrays. 
+- ***Efficient for small datasets:*** It's a good choice for small arrays. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Online algorithm:***  It can process elements one at a time as they arrive. 
+- ***Online algorithm:*** It can process elements one at a time as they arrive. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Stable:***  It preserves the relative order of elements with equal keys. 
+- ***Stable:*** It preserves the relative order of elements with equal keys. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -187,11 +187,11 @@ for i in range(len(arr)):
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Inefficient for large datasets:***  It's not suitable for large arrays due to its quadratic time complexity. 
+- ***Inefficient for large datasets:*** It's not suitable for large arrays due to its quadratic time complexity. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Slow for nearly sorted arrays:***  While it's efficient for sorted arrays, it can be slow for nearly sorted arrays. 
+- ***Slow for nearly sorted arrays:*** While it's efficient for sorted arrays, it can be slow for nearly sorted arrays. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

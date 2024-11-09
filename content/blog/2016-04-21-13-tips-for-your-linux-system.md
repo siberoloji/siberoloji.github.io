@@ -26,14 +26,14 @@ title: 13 Tips for Your Linux System
 url: /13-tips-for-your-linux-system/
 ---
 
-  We would like to point out that if you have a Linux system to take care of and want to rest your head comfortably, you should at least take the precautions we recommend below. 
+  We would like to point out that if you have a Linuxsystem to take care ofand want to rest your head comfortably, you should at least take the precautions we recommend below. 
  
 
 <!-- wp:heading {"level":1} -->
 # 1-Have a general security policy 
 <!-- /wp:heading -->
 
-  You should create a security policy, even if it is not very detailed, about what the authority limits of your system and users are. It would be very useful to have clear boundaries about what cannot be done without your permission, what can be done, or where the limit of which user profile ends. If you do not bother with the authorization process when using Linux and start giving root permission as the definitive solution, you may lose sleep. 
+  You should create a security policy, even if it is not very detailed, about what the authority limits of your system and users are. It would be very useful to have clear boundaries about what cannot be done without your permission, what can be done, or where the limit of which user profile ends. If you do not bother with the authorization process when usingLinuxand start giving root permission as the definitive solution, you may lose sleep. 
  
 
 <!-- wp:heading {"level":1} -->
@@ -75,7 +75,7 @@ url: /13-tips-for-your-linux-system/
 # 7-What are the uses of system log files? 
 <!-- /wp:heading -->
 
-  <a href="https://www.siberoloji.com/linux-sisteminiz-icin-13-tavsiye/#"> </a>Log files on your Linux system are produced for administrators and users to read and review. A healthy Linux informs you about the issues it is disturbed by using log files. Be sure to learn to check the records and don't ignore them. 
+  <a href="https://www.siberoloji.com/linux-sisteminiz-icin-13-tavsiye/#"></a>Log files on yourLinuxsystem are produced for administrators and users to read and review. A healthy Linuxinforms you about the issues it is disturbed by using log files. Be sure to learn to check the records and don't ignore them. 
  
 
 <!-- wp:heading {"level":1} -->

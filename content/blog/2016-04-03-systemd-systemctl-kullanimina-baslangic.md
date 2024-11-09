@@ -28,7 +28,7 @@ title: systemd &#8211; systemctl kullanımına başlangıç
 url: /tr/systemd-systemctl-kullanimina-baslangic/
 ---
 
- <p>Systemd konusunda önceki <a href="https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/" data-type="post" data-id="1036" target="_blank" rel="noreferrer noopener">giriş</a> ve <a href="https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/" data-type="post" data-id="1034" target="_blank" rel="noreferrer noopener">genel</a> kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
+ <p>Systemd konusunda önceki<a href="https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/" data-type="post" data-id="1036" target="_blank" rel="noreferrer noopener">giriş</a>ve<a href="https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/" data-type="post" data-id="1034" target="_blank" rel="noreferrer noopener">genel</a>kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
  
 
  <p>Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.

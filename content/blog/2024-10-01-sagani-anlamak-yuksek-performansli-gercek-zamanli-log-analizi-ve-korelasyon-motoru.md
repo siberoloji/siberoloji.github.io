@@ -25,7 +25,7 @@ title: 'Sagan&#8217;ı Anlamak: Yüksek Performanslı, Gerçek Zamanlı Log Anal
 url: /tr/sagani-anlamak-yuksek-performansli-gercek-zamanli-log-analizi-ve-korelasyon-motoru/
 ---
 
-   Sürekli gelişen siber güvenlik tehditlerinin olduğu günümüz dünyasında , gerçek zamanlı izleme ve günlük analizi kurumsal sistemleri savunmada kritik bileşenler haline gelmiştir. Günlük analizi için kullanılabilen çok sayıda araç arasında ***Sagan***  , açık kaynaklı, yüksek performanslı, gerçek zamanlı günlük analizi ve korelasyon motoru olarak öne çıkmaktadır. C programlama dilinde yazılmış çok iş parçacıklı mimarisi, Sagan'ın günlük ve olay analizini etkileyici hızlarda işlemesini sağlar. Dahası, Sagan'ın tasarımı popüler Suricata ve Snort Saldırı Tespit Sistemleri'nin (IDS) yapısını ve kurallarını yansıtır ve bu platformlara yatırım yapmış kullanıcılar için güçlü ve uyumlu bir çözüm sunar. 
+  Sürekli gelişen siber güvenliktehditlerinin olduğu günümüz dünyasında, gerçek zamanlı izleme ve günlük analizi kurumsal sistemleri savunmada kritik bileşenler haline gelmiştir. Günlük analizi için kullanılabilen çok sayıda araç arasında***Sagan*** , açık kaynaklı, yüksek performanslı, gerçek zamanlı günlük analizi ve korelasyon motoru olarak öne çıkmaktadır. C programlama dilinde yazılmış çok iş parçacıklı mimarisi, Sagan'ın günlük ve olay analizini etkileyici hızlarda işlemesini sağlar. Dahası, Sagan'ın tasarımı popüler Suricata ve Snort Saldırı Tespit Sistemleri'nin (IDS) yapısını ve kurallarını yansıtır ve bu platformlara yatırım yapmış kullanıcılar için güçlü ve uyumlu bir çözüm sunar. 
  
 
   Bu yazıda Sagan'ı derinlemesine inceleyeceğiz: mimarisini, nasıl çalıştığını, neden yararlı olduğunu ve kapsamlı bir güvenlik stratejisindeki rolünü ele alacağız. 

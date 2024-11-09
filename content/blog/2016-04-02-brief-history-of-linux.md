@@ -55,7 +55,7 @@ url: /brief-history-of-linux/
 # 1980s 
 <!-- /wp:heading -->
 
-  In the 80s, many companies started to develop their own Unix systems. IBM® AIX, Sun® SunOS (Solaris), HP® HP-UX and others came to the scene. As a result, many Unix versions emerged, but the commands, expressions and definitions were quite mixed. It was at this stage that the foundations of  Linux began to be laid. Richard Stallman, with the idea that this fragmentation and confusion should be put to an end, started the GNU Project (GNU is Not Unix). Richard Stallman's aim was to create an Operating System that everyone could work on (as in the 70s) and that could be used free of charge. Many commands and tools used in  Linux today are the result of the GNU Project.
+  In the 80s, many companies started to develop their own Unix systems. IBM® AIX, Sun® SunOS (Solaris), HP® HP-UX and others came to the scene. As a result, many Unix versions emerged, but the commands, expressions and definitions were quite mixed. It was at this stage that the foundations ofLinuxbegan to be laid. Richard Stallman, with the idea that this fragmentation and confusion should be put to an end, started the GNU Project (GNU is Not Unix). Richard Stallman's aim was to create an Operating System that everyone could work on (as in the 70s) and that could be used free of charge.Many commands and tools used inLinux today are the result of the GNU Project.
  
 
   <a href="https://en.wikipedia.org/wiki/Richard_Stallman">https://en.wikipedia.org/wiki/Richard_Stallman</a>

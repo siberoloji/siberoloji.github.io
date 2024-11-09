@@ -40,15 +40,15 @@ url: /tr/uefi-kavramlari-hakkinda-detaylar/
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- ***Sleep***  (Uyku = Stand By = Suspend = Suspend to RAM) ile işletim sistemi tüm uygulamaları durdurur (pause) ve sistmein az enerji harcamasını sağlar. Sistem kapanmaz, bu sebeple saniyeler içerisinde açılarak devam edebilir. 
+- ***Sleep*** (Uyku = Stand By = Suspend = Suspend to RAM) ile işletim sistemi tüm uygulamaları durdurur (pause) ve sistmein az enerji harcamasını sağlar. Sistem kapanmaz, bu sebeple saniyeler içerisinde açılarak devam edebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hibernate***  (Hazırda beklet = Suspend to Disk), sleep ile aynı mantıktadır. Fakat sistemi tamamen kapatabilmek için RAM'deki bilgileri sabit diskte saklar, yeniden açılması zaman almaktadır. 
+- ***Hibernate*** (Hazırda beklet = Suspend to Disk), sleep ile aynı mantıktadır. Fakat sistemi tamamen kapatabilmek için RAM'deki bilgileri sabit diskte saklar, yeniden açılması zaman almaktadır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hybrid Sleep***  (Suspend to both) modunda kullanıcı oturumu kapatılır (logout). Sadece işletim sistemi ve servisleri hazırda bekletilir (hibernate). Windows, 8 ve sonrası sürümlerde "shut down" işlemi ile "Hybrid Sleep" uygulamaktadır. Gerçek bir sistem kapanması için "yeniden başlat" işlemi yapılmalıdır. Windows ayalarında "fast startup" (ya da fast boot) isimli bu özellik devre dışı bırakılabilir. 
+- ***Hybrid Sleep*** (Suspend to both) modunda kullanıcı oturumu kapatılır (logout). Sadece işletim sistemi ve servisleri hazırda bekletilir (hibernate). Windows, 8 ve sonrası sürümlerde "shut down" işlemi ile "Hybrid Sleep" uygulamaktadır. Gerçek bir sistem kapanması için "yeniden başlat" işlemi yapılmalıdır. Windows ayalarında "fast startup" (ya da fast boot) isimli bu özellik devre dışı bırakılabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -57,7 +57,7 @@ url: /tr/uefi-kavramlari-hakkinda-detaylar/
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- ***Connected Standby (ya da InstantGo)***  mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler. 
+- ***Connected Standby (ya da InstantGo)*** mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -159,7 +159,7 @@ url: /tr/uefi-kavramlari-hakkinda-detaylar/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Önyükleyici dosyaları Ubuntu'da varsayılan olarak <code>/boot/grub</code> dizinindedir. Bu dizinin Ubuntu'da, başlatılacak işletim sistemi ile aynı bölümde olma şartı yoktur. Örnegin <code>/boot/grub</code> , <code>/dev/sda9</code>'da iken, Ubuntu'nun tüm dosyaları <code>/dev/sda5</code>'te olabilir. Eğer bölümleri ayırırsak, Ubuntu'yu sildiğimizde <a href="https://wiki.ubuntu-tr.net/index.php?title=GRUB">GRUB</a> sistemi de silinmeyeceği için HDD'de kurulu diğer işletim sistemleri hala başlatılabilir olacaktır. Fakat Grub, Ubuntu ile aynı disk bölümünde olursa, Ubuntu bölüm silindiğinde (ya da formatlandığında), Grup başlamayacağı için HDD'de kurulu diğer işletim sistemleri de başlamayacaktır. 
+- Önyükleyici dosyaları Ubuntu'da varsayılan olarak<code>/boot/grub</code>dizinindedir. Bu dizinin Ubuntu'da, başlatılacak işletim sistemi ile aynı bölümde olma şartı yoktur. Örnegin<code>/boot/grub</code>,<code>/dev/sda9</code>'da iken, Ubuntu'nun tüm dosyaları<code>/dev/sda5</code>'te olabilir. Eğer bölümleri ayırırsak, Ubuntu'yu sildiğimizde<a href="https://wiki.ubuntu-tr.net/index.php?title=GRUB">GRUB</a>sistemi de silinmeyeceği için HDD'de kurulu diğer işletim sistemleri hala başlatılabilir olacaktır. Fakat Grub, Ubuntu ile aynı disk bölümünde olursa, Ubuntu bölüm silindiğinde (ya da formatlandığında), Grup başlamayacağı için HDD'de kurulu diğer işletim sistemleri de başlamayacaktır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -373,15 +373,15 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>\EFI</code> dizini altında her işletim sisteminin kendi ön yükleyicisi ayrı dizinlerde mevcuttur. <code>\EFI\BOOT</code> dizini HDD "fallback mode" ile yürütüldüğünde devreye girer. Yani; UEFI, hiçbir disk bölümünü belirtmeden HDD'yi açtığında (boot ettiğinde) UEFI, ESP bölümünü bulur. Daha sonra içerisinde <code>\EFI\BOOT\BOOTx64.EFI</code> (gibi ya da standart önceden belirlenmiş farklı önyükleyici adresleri) dosyasını çalıştırır. Yani işletim sistemlerinin ön yükleyicileri dışında genel bir UEFI arayüzü (bootloader'i) mevcuttur. Bu bootloader "default bootloader" olarak da adlandırılmaktadır. Bazı UEFI aygıt yazılımları bu bootloader'i bulamadığı zaman Windowsun ön tanımlı bootloader'ini da açmayı denemektedir: EFI/Microsoft/BOOT/bootmgfw.efi. 
+- <code>\EFI</code>dizini altında her işletim sisteminin kendi ön yükleyicisi ayrı dizinlerde mevcuttur.<code>\EFI\BOOT</code>dizini HDD "fallback mode" ile yürütüldüğünde devreye girer. Yani; UEFI, hiçbir disk bölümünü belirtmeden HDD'yi açtığında (boot ettiğinde) UEFI, ESP bölümünü bulur. Daha sonra içerisinde<code>\EFI\BOOT\BOOTx64.EFI</code>(gibi ya da standart önceden belirlenmiş farklı önyükleyici adresleri) dosyasını çalıştırır. Yani işletim sistemlerinin ön yükleyicileri dışında genel bir UEFI arayüzü (bootloader'i) mevcuttur. Bu bootloader "default bootloader" olarak da adlandırılmaktadır. Bazı UEFI aygıt yazılımları bu bootloader'i bulamadığı zaman Windowsun ön tanımlı bootloader'ini da açmayı denemektedir: EFI/Microsoft/BOOT/bootmgfw.efi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>\EFI</code> dizini altında sürücüler ve işletim sistemi çekirdekleri de mevcuttur. EFI dosyası executable'ı olarak Linux çekirdeği çalıştırılabiliyor. Linux güncel sürümleri bunu desteklemektedir. Bu özellik; EFI Boot Stub (ya da EFI Stub) olarak isimlendiriliyor. 
+- <code>\EFI</code>dizini altında sürücüler ve işletim sistemi çekirdekleri de mevcuttur. EFI dosyası executable'ı olarak Linux çekirdeği çalıştırılabiliyor. Linux güncel sürümleri bunu desteklemektedir. Bu özellik; EFI Boot Stub (ya da EFI Stub) olarak isimlendiriliyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>\EFI</code> dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler. 
+- <code>\EFI</code>dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -428,7 +428,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- RAID0: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da farklı bilgiler tutuluyor. Performans artışı sağlıyor. Çünkü bazı durumlarda iki diskten ayrı ayrı dosyaları aynı anda okuyabiliyor. Tek diskte olsaydık aynı anda bir dosya okuyabilecektir. 
+- RAID0: 2 diskimiz var. 2 disk tek bir disk gibi gösteriliyor. 2 tarafta da farklı bilgilertutuluyor. Performans artışı sağlıyor. Çünkü bazı durumlarda iki diskten ayrı ayrı dosyaları aynı anda okuyabiliyor. Tek diskte olsaydık aynı anda bir dosya okuyabilecektir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -516,6 +516,6 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Anahtar işaretli bir bölüm üzerinde işlem yapmak için o bölüm önce ayrılmalıdır (unmount). Eğer ilgili bölüm, çalıştırılan işletim sistemi dosyalarını içerir ise ayrılamaz. Böyle bir durumda ilgili bölüm ancak <a href="http://tr.wikipedia.org/wiki/canl%C4%B1_sistem">canlı CD</a> üzerinden ya da aynı HDD üzerinde farklı bir bölümdeki işletim sistemi çalıştırılarak yapılabilir. 
+- Anahtar işaretli bir bölüm üzerinde işlem yapmak için o bölüm önce ayrılmalıdır (unmount). Eğer ilgili bölüm, çalıştırılan işletim sistemi dosyalarını içerir ise ayrılamaz. Böyle bir durumda ilgili bölüm ancak<a href="http://tr.wikipedia.org/wiki/canl%C4%B1_sistem">canlı CD</a>üzerinden ya da aynı HDD üzerinde farklı bir bölümdeki işletim sistemi çalıştırılarak yapılabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->

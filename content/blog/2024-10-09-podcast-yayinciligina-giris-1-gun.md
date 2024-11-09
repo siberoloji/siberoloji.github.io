@@ -50,19 +50,19 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Bölümler***  : Podcast'in içeriğini oluşturan bireysel ses dosyaları. 
+- ***Bölümler*** : Podcast'in içeriğini oluşturan bireysel ses dosyaları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dizi***  : Belirli bir tema veya konu üzerine bölümlerin koleksiyonu. 
+- ***Dizi*** : Belirli bir tema veya konu üzerine bölümlerin koleksiyonu. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sunucu***  : Podcasti yöneten, içeriği yönlendiren ve izleyiciyle etkileşime giren kişi veya kişiler. 
+- ***Sunucu*** : Podcasti yöneten, içeriği yönlendiren ve izleyiciyle etkileşime giren kişi veya kişiler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dinleyiciler***  : Podcast bölümlerini dinlemek için abone olan kitle. 
+- ***Dinleyiciler*** : Podcast bölümlerini dinlemek için abone olan kitle. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -88,15 +88,15 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Terimin Türetilmesi***  : "Podcasting" terimi, "iPod" (Apple'ın popüler medya oynatıcısı) ve "broadcasting" kelimelerinin birleşimidir. Ancak, terimin "iPod"dan türetilmiş olmasına rağmen, podcasting'in yalnızca Apple cihazlarına özgü olmadığını belirtmekte fayda var. İnternete bağlı herhangi bir cihazda tüketilebilir. 
+- ***Terimin Türetilmesi*** : "Podcasting" terimi, "iPod" (Apple'ın popüler medya oynatıcısı) ve "broadcasting" kelimelerinin birleşimidir. Ancak, terimin "iPod"dan türetilmiş olmasına rağmen, podcasting'in yalnızca Apple cihazlarına özgü olmadığını belirtmekte fayda var. İnternete bağlı herhangi bir cihazda tüketilebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***RSS Akışları ve Sendikasyon : Podcasting için gerçek atılım *** ***, RSS (Gerçekten Basit Sendikasyon)***  akışlarının entegrasyonuyla geldi . Bu teknoloji, içerik oluşturucularının ses dosyalarını sendikalaştırmasına olanak tanıyarak dinleyicilerin bir podcast akışına abone olmasını sağladı. Yeni bölümler eklendikçe, aboneler otomatik olarak güncellemeler alacaktı. 
+- ***RSS Akışları ve Sendikasyon : Podcasting için gerçek atılım*** ***, RSS (Gerçekten Basit Sendikasyon)*** akışlarının entegrasyonuyla geldi. Bu teknoloji, içerik oluşturucularının ses dosyalarını sendikalaştırmasına olanak tanıyarak dinleyicilerin bir podcast akışına abone olmasını sağladı. Yeni bölümler eklendikçe, aboneler otomatik olarak güncellemeler alacaktı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dave Winer ve Adam Curry'nin Rolü***  : 2004 yılında, bir yazılım geliştiricisi ve RSS öncüsü olan Dave Winer ve eski MTV video jokeyi Adam Curry, ses dosyalarını bir RSS akışı aracılığıyla iletmenin bir yolunu geliştirdi. Curry, genellikle podcast oluşturma sürecini belgelendiren ilk popüler podcast'lerden biri olan "The Daily Source Code"u yaratmakla anılır. 
+- ***Dave Winer ve Adam Curry'nin Rolü*** : 2004 yılında, bir yazılım geliştiricisi ve RSS öncüsü olan Dave Winer ve eski MTV video jokeyi Adam Curry, ses dosyalarını bir RSS akışı aracılığıyla iletmenin bir yolunu geliştirdi. Curry, genellikle podcast oluşturma sürecini belgelendiren ilk popüler podcast'lerden biri olan "The Daily Source Code"u yaratmakla anılır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -138,23 +138,23 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gerçek Suç : Bu tür, *** <em>Serial</em> ve <em>My Favorite Murder</em> gibi dizilerin izleyicileri gerçek hayattan suç hikayeleri ve soruşturmalarla büyülemesiyle popülerlik kazandı. 
+- ***Gerçek Suç : Bu tür,*** <em>Serial</em>ve<em>My Favorite Murder</em>gibi dizilerinizleyicileri gerçek hayattan suç hikayeleri ve soruşturmalarla büyülemesiyle popülerlik kazandı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Komedi***  : Komedyenler hayranlarıyla etkileşim kurmak için bir platform olarak podcast'i benimsediler. <em>The Joe Rogan Experience</em> ve <em>Conan O'Brien Needs a Friend</em> gibi şovlar mizahı röportajlar ve kişisel anekdotlarla harmanlıyor. 
+- ***Komedi*** : Komedyenler hayranlarıyla etkileşim kurmak için bir platform olarak podcast'i benimsediler.<em>The Joe Rogan Experience</em>ve<em>Conan O'Brien Needs a Friend</em>gibi şovlar mizahı röportajlar ve kişisel anekdotlarla harmanlıyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eğitici***  : Podcast'ler öğrenmek için harika bir ortamdır. <em>Stuff You Should Know</em> veya <em>TED Talks Daily</em> gibi şovlar , karmaşık fikirleri ilgi çekici, sindirilebilir bölümlere ayırarak çeşitli eğitim konularını ele alır. 
+- ***Eğitici*** : Podcast'ler öğrenmek için harika bir ortamdır.<em>Stuff You Should Know</em>veya<em>TED Talks Daily</em>gibi şovlar , karmaşık fikirleri ilgi çekici, sindirilebilir bölümlere ayırarak çeşitli eğitim konularını ele alır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Röportaj/Sohbet***  : Birçok podcast, ilginç veya önemli konuklarla yapılan röportajlara odaklanır. Dax Shepard'ın <em>The Tim Ferriss Show</em> ve <em>Armchair Expert'i</em> bu türün örnekleridir ve çok çeşitli konularda derin sohbetler sunar. 
+- ***Röportaj/Sohbet*** : Birçok podcast, ilginç veya önemli konuklarla yapılan röportajlara odaklanır. Dax Shepard'ın<em>The Tim Ferriss Show</em>ve<em>Armchair Expert'i</em>bu türün örnekleridir ve çok çeşitli konularda derin sohbetler sunar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hikaye Anlatımı ve Sesli Dramalar : *** <em>The Moth</em> veya <em>Welcome to Night Vale</em> gibi hikaye anlatımı podcast'leri inanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır. 
+- ***Hikaye Anlatımı ve Sesli Dramalar :*** <em>The Moth</em>veya<em>Welcome to Night Vale</em>gibi hikaye anlatımı podcast'leriinanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -172,19 +172,19 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Podcasting nedir?***  Ortamın net bir tanımını edinin. 
+- ***Podcasting nedir?*** Ortamın net bir tanımını edinin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Temel araçlar ve ekipmanlar nelerdir?***  Mikrofonlar, kayıt yazılımları ve barındırma platformları hakkında bilgi edinin. 
+- ***Temel araçlar ve ekipmanlar nelerdir?*** Mikrofonlar, kayıt yazılımları ve barındırma platformları hakkında bilgi edinin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Nişinizi nasıl bulursunuz?***  Podcast teması seçmeyi ve kitlenizle yankı uyandıran içerik geliştirmeyi keşfedin. 
+- ***Nişinizi nasıl bulursunuz?*** Podcast teması seçmeyi ve kitlenizle yankı uyandıran içerik geliştirmeyi keşfedin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***En iyi uygulamalar nelerdir?***  Podcast'inizi en başından itibaren ilgi çekici ve profesyonel hale getirmek için temel adımları anlayın. 
+- ***En iyi uygulamalar nelerdir?*** Podcast'inizi en başından itibaren ilgi çekici ve profesyonel hale getirmek için temel adımları anlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -202,33 +202,33 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***En Sevdiğiniz Podcast'lerin Bir Listesini Oluşturun***  : En sık dinlediğiniz podcast'leri düşünün. Bunlar komediden gerçek suçlara, röportajlardan eğitim programlarına kadar uzanabilir. En sevdiğiniz podcast'ler arasında en az 3-5 tanesini yazın. 
+- ***En Sevdiğiniz Podcast'lerin Bir Listesini Oluşturun*** : En sık dinlediğiniz podcast'leri düşünün. Bunlar komediden gerçek suçlara, röportajlardan eğitim programlarına kadar uzanabilir. En sevdiğiniz podcast'ler arasında en az 3-5 tanesini yazın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Her Birinde Neyi Beğendiğinizi Analiz Edin***  : 
+- ***Her Birinde Neyi Beğendiğinizi Analiz Edin*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***İçerik***  : Hangi konular ele alınıyor ve neden ilginizi çekiyor? 
+- ***İçerik*** : Hangi konular ele alınıyor ve neden ilginizi çekiyor? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sunucu***  : Sunucu izleyiciyle nasıl etkileşim kuruyor? Sizi içine çekmek için mizah, hikaye anlatımı veya uzman bilgisi kullanıyor mu? 
+- ***Sunucu*** : Sunucu izleyiciyle nasıl etkileşim kuruyor? Sizi içine çekmek için mizah, hikaye anlatımı veya uzman bilgisi kullanıyor mu? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yapım Kalitesi***  : Ses kalitesi nasıl? Deneyimi geliştiren ses efektleri veya arka plan müziği var mı? 
+- ***Yapım Kalitesi*** : Ses kalitesi nasıl? Deneyimi geliştiren ses efektleri veya arka plan müziği var mı? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sıklık***  : Yeni bölümler ne sıklıkla çıkıyor? Yayın takvimi dinlemeye devam etmenizde bir etken mi? 
+- ***Sıklık*** : Yeni bölümler ne sıklıkla çıkıyor? Yayın takvimi dinlemeye devam etmenizde bir etken mi? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzunluk***  : Bölümler kısa ve öz mü yoksa uzun ve derinlemesine mi? Uzunluk etkileşiminizi nasıl etkiliyor? 
+- ***Uzunluk*** : Bölümler kısa ve öz mü yoksa uzun ve derinlemesine mi? Uzunluk etkileşiminizi nasıl etkiliyor? 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -242,27 +242,27 @@ url: /tr/podcast-yayinciligina-giris-1-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Podcast***  : <em>The Daily</em> (The New York Times tarafından) 
+- ***Podcast*** :<em>The Daily</em>(The New York Times tarafından) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Beğendiğim Şey***  : Güncel, derinlemesine haber analizlerini sindirilebilir 20-30 dakikalık bir formatta sunuyor. Sunucu içgörülü yorumlar sağlıyor ve röportajlar her zaman iyi araştırılmış. 
+- ***Beğendiğim Şey*** : Güncel, derinlemesine haber analizlerini sindirilebilir 20-30 dakikalık bir formatta sunuyor. Sunucu içgörülü yorumlar sağlıyor ve röportajlar her zaman iyi araştırılmış. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Temel Özellikler***  : Yüksek prodüksiyon kalitesi, uzman röportajları ve tutarlı bir yayın takvimi. 
+- ***Temel Özellikler*** : Yüksek prodüksiyon kalitesi, uzman röportajları ve tutarlı bir yayın takvimi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Podcast***  : <em>Bunu Nasıl Yaptım</em> (NPR tarafından) 
+- ***Podcast*** :<em>Bunu Nasıl Yaptım</em>(NPR tarafından) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Beğendiğim Şey***  : Girişimcilerin ve yaratıcıların kişisel hikayelerini duymayı seviyorum. Dizinin anlatım tarzı, bu iş liderlerinin yolculuklarını ilişkilendirilebilir ve ilham verici kılıyor. 
+- ***Beğendiğim Şey*** : Girişimcilerin ve yaratıcıların kişisel hikayelerini duymayı seviyorum. Dizinin anlatım tarzı, bu iş liderlerinin yolculuklarını ilişkilendirilebilir ve ilham verici kılıyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Temel Özellikler***  : Harika hikaye anlatımı, karizmatik bir sunucu ve ilham verici gerçek dünya başarı hikayeleri. 
+- ***Temel Özellikler*** : Harika hikaye anlatımı, karizmatik bir sunucu ve ilham verici gerçek dünya başarı hikayeleri. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

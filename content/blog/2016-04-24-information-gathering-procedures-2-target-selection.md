@@ -24,7 +24,7 @@ title: Information Gathering Procedures -2- Target Selection
 url: /information-gathering-procedures-2-target-selection/
 ---
 
-  We have started the Information Gathering process, which is the 2nd Phase of Penetration Testing, with our article found at this link. We will try to explain the Target Selection title, which is one of the main topics we mentioned in that article. 
+  We have startedthe Information Gathering process, which is the 2nd Phase of Penetration Testing, with our article found at thislink. We will try to explain the Target Selection title, which is one of the main topics we mentioned in that article. 
  
 
 

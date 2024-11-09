@@ -37,7 +37,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Dosya Sistemi Meta Verileri***  : 
+- ***Dosya Sistemi Meta Verileri*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -61,7 +61,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Belgeye Özel Meta Veri***  : 
+- ***Belgeye Özel Meta Veri*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -93,7 +93,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Gömülü Meta Veri***  : 
+- ***Gömülü Meta Veri*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -113,7 +113,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Dijital İmzalar ve Sertifikalar***  : 
+- ***Dijital İmzalar ve Sertifikalar*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -136,23 +136,23 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kaynak Belirleme***  : Meta veriler, bir belgenin kökeni hakkında, belgenin kim tarafından ve ne zaman oluşturulduğu da dahil olmak üzere bilgi sağlayabilir. 
+- ***Kaynak Belirleme*** : Meta veriler, bir belgenin kökeni hakkında, belgenin kim tarafından ve ne zaman oluşturulduğu da dahil olmak üzere bilgi sağlayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Değişiklikleri Algılama***  : Zaman damgası meta verileri, bir belgenin oluşturulduğu tarihten bu yana ne zaman ve nasıl değiştirildiğini ortaya çıkarabilir. 
+- ***Değişiklikleri Algılama*** : Zaman damgası meta verileri, bir belgenin oluşturulduğu tarihten bu yana ne zaman ve nasıl değiştirildiğini ortaya çıkarabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tutarlılıkların Belirlenmesi***  : Meta verilerdeki tutarsızlıklar, potansiyel olarak sahte veya değiştirilmiş belgeleri işaret edebilir. 
+- ***Tutarlılıkların Belirlenmesi*** : Meta verilerdeki tutarsızlıklar, potansiyel olarak sahte veya değiştirilmiş belgeleri işaret edebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İddiaları Doğrulama***  : Meta veriler, bir belgenin oluşturulma tarihi, yazarı veya kaynağı hakkındaki iddiaları doğrulamaya yardımcı olabilir. 
+- ***İddiaları Doğrulama*** : Meta veriler, bir belgenin oluşturulma tarihi, yazarı veya kaynağı hakkındaki iddiaları doğrulamaya yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gizli Bilgilerin Açığa Çıkarılması***  : Meta veriler, belgenin kendisinde görünmeyen, ek bağlam veya ipuçları sağlayan bilgiler içerebilir. 
+- ***Gizli Bilgilerin Açığa Çıkarılması*** : Meta veriler, belgenin kendisinde görünmeyen, ek bağlam veya ipuçları sağlayan bilgiler içerebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -186,19 +186,19 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***ExifTool***  : Çeşitli dosya türlerindeki meta verileri okumak, yazmak ve düzenlemek için güçlü bir komut satırı uygulaması. 
+- ***ExifTool*** : Çeşitli dosya türlerindeki meta verileri okumak, yazmak ve düzenlemek için güçlü bir komut satırı uygulaması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MediaInfo***  : Video ve ses dosyaları hakkında teknik ve etiket bilgileri sağlar. 
+- ***MediaInfo*** : Video ve ses dosyaları hakkında teknik ve etiket bilgileri sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Metagoofil***  : Çok çeşitli belge türlerini analiz edebilen bir meta veri çıkarma aracı. 
+- ***Metagoofil*** : Çok çeşitli belge türlerini analiz edebilen bir meta veri çıkarma aracı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***FOCA (Toplanan Arşivlere Sahip Parmak İzi Kuruluşları)***  : Belgelerden meta verileri ve gizli bilgileri çıkarmak için bir araç. 
+- ***FOCA (Toplanan Arşivlere Sahip Parmak İzi Kuruluşları)*** : Belgelerden meta verileri ve gizli bilgileri çıkarmak için bir araç. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -211,11 +211,11 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Get-Metadata.com***  : Çeşitli dosya türlerinden meta verileri çıkarmak için web tabanlı bir araç. 
+- ***Get-Metadata.com*** : Çeşitli dosya türlerinden meta verileri çıkarmak için web tabanlı bir araç. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***ViewExif.com***  : Özellikle resimlerdeki EXIF ​​verilerini analiz etmek için tasarlanmıştır. 
+- ***ViewExif.com*** : Özellikle resimlerdeki EXIF ​​verilerini analiz etmek için tasarlanmıştır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -228,15 +228,15 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***PDF Analizi***  : PDFinfo gibi araçlar veya PDF Analyzer gibi çevrimiçi hizmetler PDF belgeleri hakkında detaylı meta verileri ortaya çıkarabilir. 
+- ***PDF Analizi*** : PDFinfo gibi araçlar veya PDF Analyzer gibi çevrimiçi hizmetler PDF belgeleri hakkında detaylı meta verileri ortaya çıkarabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Microsoft Office Belgeleri***  : Office uygulamalarındaki “Özellikler” bölümü kapsamlı meta veriler sağlar. Oxygen Forensic Detective gibi araçlar Office dosyalarının derinlemesine analizini gerçekleştirebilir. 
+- ***Microsoft Office Belgeleri*** : Office uygulamalarındaki “Özellikler” bölümü kapsamlı meta veriler sağlar. Oxygen Forensic Detective gibi araçlar Office dosyalarının derinlemesine analizini gerçekleştirebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Görüntü Analizi***  : ExifTool ve diğer görüntüye özgü araçlar, dijital fotoğrafların doğrulanması için önemli olan EXIF ​​verilerini çıkarabilir. 
+- ***Görüntü Analizi*** : ExifTool ve diğer görüntüye özgü araçlar, dijital fotoğrafların doğrulanması için önemli olan EXIF ​​verilerini çıkarabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -246,7 +246,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***İlk Değerlendirme***  : 
+- ***İlk Değerlendirme*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -262,7 +262,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Metaverilerin çıkarılması***  : 
+- ***Metaverilerin çıkarılması*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -278,7 +278,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Zaman Çizelgesi Analizi***  : 
+- ***Zaman Çizelgesi Analizi*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -294,7 +294,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Yazar ve Yazılım Doğrulaması***  : 
+- ***Yazar ve Yazılım Doğrulaması*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -310,7 +310,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Sürüm Geçmişi İncelemesi***  : 
+- ***Sürüm Geçmişi İncelemesi*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -322,7 +322,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Dijital İmza Doğrulaması***  : 
+- ***Dijital İmza Doğrulaması*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -334,7 +334,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Çapraz referanslama***  : 
+- ***Çapraz referanslama*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -350,7 +350,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Bağlamsal Analiz***  : 
+- ***Bağlamsal Analiz*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -366,7 +366,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Gömülü Nesne İncelemesi***  : 
+- ***Gömülü Nesne İncelemesi*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -378,7 +378,7 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kapsamlı Dokümantasyon***  :<!-- wp:list -->
+- ***Kapsamlı Dokümantasyon*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 - Destekleyici ve çelişkili kanıtlar dahil olmak üzere tüm bulguları kaydedin. 
 <!-- /wp:list-item -->
@@ -467,27 +467,27 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Meta Veri Manipülasyonu***  : Yetenekli aktörler araştırmacıları yanıltmak için meta verileri değiştirebilirler. 
+- ***Meta Veri Manipülasyonu*** : Yetenekli aktörler araştırmacıları yanıltmak için meta verileri değiştirebilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eksik Meta Veri***  : Bazı belgelerin sınırlı veya eksik meta verileri olabilir ve bu da mevcut bilgileri azaltabilir. 
+- ***Eksik Meta Veri*** : Bazı belgelerin sınırlı veya eksik meta verileri olabilir ve bu da mevcut bilgileri azaltabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yazılım Değişiklikleri***  : Farklı yazılım sürümleri veya ayarları, analizi karmaşıklaştıran farklı meta veriler üretebilir. 
+- ***Yazılım Değişiklikleri*** : Farklı yazılım sürümleri veya ayarları, analizi karmaşıklaştıran farklı meta veriler üretebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Transfer ve Dönüştürme Etkileri***  : Dosyaların sistemler arasında aktarılması veya formatlar arasında dönüştürülmesi meta verileri değiştirebilir. 
+- ***Transfer ve Dönüştürme Etkileri*** : Dosyaların sistemler arasında aktarılması veya formatlar arasında dönüştürülmesi meta verileri değiştirebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gizlilik Önlemleri***  : Bazı kuruluşlar, dağıtımdan önce belgelerden meta verileri düzenli olarak kaldırarak, erişilebilir bilgileri sınırlandırırlar. 
+- ***Gizlilik Önlemleri*** : Bazı kuruluşlar, dağıtımdan önce belgelerden meta verileri düzenli olarak kaldırarak, erişilebilir bilgileri sınırlandırırlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Aşırı Bağımlılık Riski***  : Meta veriler kapsamlı bir kimlik doğrulama sürecinin tek belirleyicisi değil, bir parçası olmalıdır. 
+- ***Aşırı Bağımlılık Riski*** : Meta veriler kapsamlı bir kimlik doğrulama sürecinin tek belirleyicisi değil, bir parçası olmalıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -500,35 +500,35 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Birden Fazla Araç Kullanın***  : Meta veri çıkarma sonuçlarını çapraz doğrulamak için çeşitli araçlar kullanın. 
+- ***Birden Fazla Araç Kullanın*** : Meta veri çıkarma sonuçlarını çapraz doğrulamak için çeşitli araçlar kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kontrollü Bir Ortam Sağlayın***  : Meta verilerin yanlışlıkla değiştirilmesini önlemek için analizi kontrollü bir ortamda gerçekleştirin. 
+- ***Kontrollü Bir Ortam Sağlayın*** : Meta verilerin yanlışlıkla değiştirilmesini önlemek için analizi kontrollü bir ortamda gerçekleştirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Her Şeyi Belgeleyin***  : Meta veri çıkarma ve analiz sürecindeki tüm adımların ayrıntılı kayıtlarını tutun. 
+- ***Her Şeyi Belgeleyin*** : Meta veri çıkarma ve analiz sürecindeki tüm adımların ayrıntılı kayıtlarını tutun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güncel Kalın***  : En son meta veri standartları ve çıkarma tekniklerinden haberdar olun. 
+- ***Güncel Kalın*** : En son meta veri standartları ve çıkarma tekniklerinden haberdar olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bağlamı Göz Önünde Bulundurun***  : Meta verileri her zaman belgenin daha geniş bağlamında ve söz konusu belgenin iddia edilen kökeninde analiz edin. 
+- ***Bağlamı Göz Önünde Bulundurun*** : Meta verileri her zaman belgenin daha geniş bağlamında ve söz konusu belgenin iddia edilen kökeninde analiz edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bulguları Doğrulayın***  : Mümkün olduğunda, meta veri bulgularını diğer kaynaklar veya yöntemlerle doğrulayın. 
+- ***Bulguları Doğrulayın*** : Mümkün olduğunda, meta veri bulgularını diğer kaynaklar veya yöntemlerle doğrulayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sınırlamaların Farkında Olun***  : Bulgularınızda meta veri analizinin sınırlamalarını anlayın ve iletin. 
+- ***Sınırlamaların Farkında Olun*** : Bulgularınızda meta veri analizinin sınırlamalarını anlayın ve iletin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Etik Hususlar***  : Özellikle kişisel belgeler söz konusu olduğunda meta verileri analiz ederken gizliliğe ve yasal kısıtlamalara saygı gösterin. 
+- ***Etik Hususlar*** : Özellikle kişisel belgeler söz konusu olduğunda meta verileri analiz ederken gizliliğe ve yasal kısıtlamalara saygı gösterin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -541,23 +541,23 @@ url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Gizlilik Endişeleri***  : Meta veriler hassas kişisel bilgiler içerebilir. Bunları sorumlu bir şekilde ve ilgili yasalara uygun şekilde kullanın. 
+- ***Gizlilik Endişeleri*** : Meta veriler hassas kişisel bilgiler içerebilir. Bunları sorumlu bir şekilde ve ilgili yasalara uygun şekilde kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasal Kabul Edilebilirlik***  : İlgili yargı bölgelerinde meta veri kanıtının yasal konumunu anlayın. 
+- ***Yasal Kabul Edilebilirlik*** : İlgili yargı bölgelerinde meta veri kanıtının yasal konumunu anlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gözetim Zinciri***  : Özellikle potansiyel hukuki konular için belgeler ve çıkarılan meta veriler için net bir gözetim zinciri koruyun. 
+- ***Gözetim Zinciri*** : Özellikle potansiyel hukuki konular için belgeler ve çıkarılan meta veriler için net bir gözetim zinciri koruyun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Şeffaflık***  : Bulgularınızı raporlarken analizinizde kullandığınız yöntemler ve araçlar konusunda şeffaf olun. 
+- ***Şeffaflık*** : Bulgularınızı raporlarken analizinizde kullandığınız yöntemler ve araçlar konusunda şeffaf olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Önyargı Farkındalığı***  : Yorumlamadaki olası önyargıların bilincinde olun ve mümkün olduğunda akran değerlendirmesi isteyin. 
+- ***Önyargı Farkındalığı*** : Yorumlamadaki olası önyargıların bilincinde olun ve mümkün olduğunda akran değerlendirmesi isteyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

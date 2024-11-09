@@ -92,18 +92,18 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- &lt;a href=&#34;https://adguard.com/en/adguard-home/overview.html&#34;&gt;Resmi AdGuard Home web sitesine&lt;/a&gt; gidin ve işletim sisteminize uygun sürümü indirin. 
+- &lt;a href=&#34;https://adguard.com/en/adguard-home/overview.html&#34;&gt;Resmi AdGuard Home web sitesine&lt;/a&gt;gidinve işletim sisteminize uygun sürümü indirin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Cihazınız için kurulum talimatlarını izleyin (Windows, macOS, &lt;a href=&#34;https://www.siberoloji.com/adguard-home-application-a-comprehensive-guide-to-block-ads/#&#34;&gt; Linux&lt;/a&gt; veya Raspberry Pi için mevcuttur). Kurulum süreci, diğer herhangi bir uygulamayı yüklemek gibi basittir.&lt;/li&gt;
+&lt;li&gt;Cihazınız için kurulum talimatlarını izleyin (Windows, macOS,&lt;a href=&#34;https://www.siberoloji.com/adguard-home-application-a-comprehensive-guide-to-block-ads/#&#34;&gt;Linux&lt;/a&gt;veya Raspberry Pi için mevcuttur). Kurulum süreci, diğer herhangi bir uygulamayı yüklemek gibi basittir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
 &lt;h4 class=&#34;wp-block-heading&#34;&gt;Adım 2: İlk Kurulum 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Kurulduktan sonra, web tarayıcınızda ziyaret ederek AdGuard Home arayüzünü açın &lt;code&gt;http://127.0.0.1:3000&lt;/code&gt; (yerel olarak kurduğunuzu varsayarak). Uygulamayı ağınız için yapılandıracak bir ilk kurulum sihirbazına yönlendirileceksiniz.&lt;/p&gt;
+&lt;p&gt;Kurulduktan sonra, web tarayıcınızda ziyaret ederek AdGuard Home arayüzünü açın&lt;code&gt;http://127.0.0.1:3000&lt;/code&gt; (yerel olarak kurduğunuzu varsayarak). Uygulamayı ağınız için yapılandıracak bir ilk kurulum sihirbazına yönlendirileceksiniz.&lt;/p&gt;
 &lt;p&gt;Kurulum sırasında AdGuard Home şunları yapacaktır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;

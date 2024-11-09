@@ -18,7 +18,7 @@ date: "2016-04-02T14:03:00Z"
 excerpt: Linux kullanıcılarının büyük bir kısmı, düzenli olarak güvenlik güncellemelerini
   yükler ve en yeni sürümü kullanırlar. Bildiğimiz kadarıyla, hassas ve dikkatlidirler.
   Fakat bu hassasiyet ve dikkat tek başına yeterli olmayabilir. Güvenli, kuralları
-  her kullanıcıya eşit olarak uygulanan bir parola politikanız yoksa güvenlik güncellemelerini
+  her kullanıcıya eşit olarak uygulanan bir parolapolitikanız yoksa güvenlik güncellemelerini
   yüklemek tek başına yeterli olmayabilir.
 guid: https://www.siberoloji.com/?p=1028
 id: 1028

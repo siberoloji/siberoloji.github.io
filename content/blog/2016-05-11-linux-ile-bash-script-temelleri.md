@@ -192,7 +192,7 @@ ls ~</pre>
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- Bir değişken tanılarken onun ADINI yazarız ve hiç boşluk bırakmadan eşittir (=) işaretiyle devam ederiz. Eşittir işaretinden sonra da boşluk bırakmadan TEK DÜZ TIRNAK içerisinde değeri yazarız. ***Not*** : Tırnaklar içerisine bir değer değil de bir komut sonucu da yazdırılabilir ancak onu birazdan göreceğiz. 
+- Bir değişken tanılarken onun ADINI yazarız ve hiç boşluk bırakmadan eşittir (=) işaretiyle devam ederiz. Eşittir işaretinden sonra da boşluk bırakmadan TEK DÜZ TIRNAK içerisinde değeri yazarız.***Not*** : Tırnaklar içerisine bir değer değil de bir komut sonucu da yazdırılabilir ancak onu birazdan göreceğiz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -277,19 +277,19 @@ Merhaba Umut</pre>
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- ***$0***  – Scriptin adı bu değişkende tutulur. 
+- ***$0*** – Scriptin adı bu değişkende tutulur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***$1 - $9***  – Scripte komut satırından (dışarıdan gönderilen) argümanlar 1 ile 9 arasındaki değişkenlerde kayıt edilir. 
+- ***$1 - $9*** – Scripte komut satırından (dışarıdan gönderilen) argümanlar 1 ile 9 arasındaki değişkenlerde kayıt edilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***$#***  - Scripte dışarıdan gönderilen toplam argüman sayısı bu değişkende tutulur. 
+- ***$#*** - Scripte dışarıdan gönderilen toplam argüman sayısı bu değişkende tutulur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***$****  - Scripte dışarıdan gönderilen argümanların tamamı anlamına gelir. 
+- ***$**** - Scripte dışarıdan gönderilen argümanların tamamı anlamına gelir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

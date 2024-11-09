@@ -53,15 +53,15 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Name resolution:***  NetBIOS allows applications to resolve names of network resources, such as computers and printers, into their corresponding network addresses. 
+- ***Name resolution:*** NetBIOS allows applications to resolve names of network resources,such as computers and printers,into their corresponding network addresses. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Session management:***  NetBIOS manages sessions between applications, allowing them to establish connections and exchange data. 
+- ***Session management:*** NetBIOS manages sessions between applications,allowing them to establish connections and exchange data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Datagram services:***  NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection. 
+- ***Datagram services:*** NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -74,15 +74,15 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***NetBIOS Name Service (NBNS):***  This component resolves NetBIOS names into their corresponding network addresses. NBNS uses a broadcast-based protocol to locate other computers on the network. 
+- ***NetBIOS Name Service (NBNS):*** This component resolves NetBIOS names into their corresponding network addresses.NBNS uses a broadcast-based protocol to locate other computers on the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***NetBIOS Interface Message Processor (NIB):***  The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa. It interacts with the underlying network interface card (NIC) to transmit and receive data. 
+- ***NetBIOS Interface Message Processor (NIB):*** The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa.It interacts with the underlying network interface card (NIC) to transmit and receive data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***NetBIOS Workgroup:***  A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS. 
+- ***NetBIOS Workgroup:*** A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -102,15 +102,15 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Legacy applications:***  Some older applications may still rely on NetBIOS for network communication. 
+- ***Legacy applications:*** Some older applications may still rely on NetBIOS for network communication. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Small networks:***  In small, simple network environments, NetBIOS can provide a basic networking solution. 
+- ***Small networks:*** In small,simple network environments,NetBIOS can provide a basic networking solution. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Specific services:***  Certain services, such as file and print sharing, may still use NetBIOS. 
+- ***Specific services:*** Certain services,such as file and print sharing,may still use NetBIOS. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -119,15 +119,15 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Security:***  NetBIOS can be vulnerable to security attacks, such as spoofing and denial of service (DoS) attacks. Proper security measures, such as firewalls and intrusion detection systems, should be implemented to protect NetBIOS networks. 
+- ***Security:*** NetBIOS can be vulnerable to security attacks,such as spoofing and denial of service (DoS) attacks.Proper security measures,such as firewalls and intrusion detection systems,should be implemented to protect NetBIOS networks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scalability:***  NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism. 
+- ***Scalability:*** NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Compatibility:***  NetBIOS may not be compatible with all network operating systems or hardware. 
+- ***Compatibility:*** NetBIOS may not be compatible with all network operating systems or hardware. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

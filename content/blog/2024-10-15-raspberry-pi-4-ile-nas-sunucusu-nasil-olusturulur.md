@@ -33,19 +33,19 @@ url: /tr/raspberry-pi-4-ile-nas-sunucusu-nasil-olusturulur/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Medya akışı***  (film, müzik, fotoğraf) 
+- ***Medya akışı*** (film, müzik, fotoğraf) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Bilgisayarlar ve mobil cihazlar için ***yedekleme depolaması***  
+- Bilgisayarlar ve mobil cihazlar için***yedekleme depolaması***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Ev veya ofis ağı içinde ***dosya paylaşımı***  
+- Ev veya ofis ağı içinde***dosya paylaşımı***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Dünyanın her yerinden dosyalara ***uzaktan erişim***  
+- Dünyanın her yerinden dosyalara***uzaktan erişim***  
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -61,19 +61,19 @@ url: /tr/raspberry-pi-4-ile-nas-sunucusu-nasil-olusturulur/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Dört çekirdekli 64-bit işlemci***  : Ağ trafiğini yönetme ve dosya yönetimi için daha iyi performans sağlar. 
+- ***Dört çekirdekli 64-bit işlemci*** : Ağ trafiğini yönetme ve dosya yönetimi için daha iyi performans sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***8 GB'a Kadar RAM***  : Birden fazla kullanıcıyı ve dosya işlemlerini yönetmek için yeterli bellek. 
+- ***8 GB'a Kadar RAM*** : Birden fazla kullanıcıyı ve dosya işlemlerini yönetmek için yeterli bellek. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gigabit Ethernet portu***  : Yerel ağınız üzerinden hızlı ve kararlı dosya aktarımı sağlar. 
+- ***Gigabit Ethernet portu*** : Yerel ağınız üzerinden hızlı ve kararlı dosya aktarımı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***USB 3.0 bağlantı noktaları***  : Sabit diskler veya SSD'ler gibi harici depolama aygıtlarını bağlamak ve yüksek hızlı veri erişimi sağlamak için gereklidir. 
+- ***USB 3.0 bağlantı noktaları*** : Sabit diskler veya SSD'ler gibi harici depolama aygıtlarını bağlamak ve yüksek hızlı veri erişimi sağlamak için gereklidir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -89,35 +89,35 @@ url: /tr/raspberry-pi-4-ile-nas-sunucusu-nasil-olusturulur/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Raspberry Pi 4***  (Daha iyi performans için 4GB veya 8GB modeli önerilir) 
+- ***Raspberry Pi 4*** (Daha iyi performans için 4GB veya 8GB modeli önerilir) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Raspberry Pi'nin işletim sistemi için ***MicroSD kart (16 GB veya üzeri)***  
+- Raspberry Pi'nin işletim sistemi için***MicroSD kart (16 GB veya üzeri)***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Harici USB sabit disk veya SSD***  (dosyalarınızı depolamak için) 
+- ***Harici USB sabit disk veya SSD*** (dosyalarınızı depolamak için) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***USB 3.0 destekli hub***  (isteğe bağlı ancak birden fazla sabit disk kullanılıyorsa önerilir) 
+- ***USB 3.0 destekli hub*** (isteğe bağlı ancak birden fazla sabit disk kullanılıyorsa önerilir) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Raspberry Pi 4 güç kaynağı***  (resmi veya yüksek kaliteli üçüncü taraf) 
+- ***Raspberry Pi 4 güç kaynağı*** (resmi veya yüksek kaliteli üçüncü taraf) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Pi'yi yönlendiricinize bağlamak için ***Ethernet kablosu***  
+- Pi'yi yönlendiricinize bağlamak için***Ethernet kablosu***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İlk kurulum için klavye, fare ve monitör***  (başsız yapılandırma kullanılıyorsa isteğe bağlı) 
+- ***İlk kurulum için klavye, fare ve monitör*** (başsız yapılandırma kullanılıyorsa isteğe bağlı) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Raspberry Pi OS***  (Debian tabanlı, daha önce Raspbian olarak biliniyordu) 
+- ***Raspberry Pi OS*** (Debian tabanlı, daha önce Raspbian olarak biliniyordu) 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -134,15 +134,15 @@ url: /tr/raspberry-pi-4-ile-nas-sunucusu-nasil-olusturulur/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- En son ***Raspberry Pi işletim sistemini***  resmi Raspberry Pi web sitesinden indirin. 
+- En son***Raspberry Pi işletim sistemini*** resmi Raspberry Pi web sitesinden indirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- İşletim sistemi imajını MicroSD kartınıza yazmak için ***Raspberry Pi Imager***  veya ***Balena Etcher***  gibi yazılımları kullanın . 
+- İşletim sistemi imajını MicroSD kartınıza yazmak için***Raspberry Pi Imager*** veya***Balena Etcher*** gibi yazılımları kullanın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- MicroSD kartı Raspberry Pi 4'ünüze takın ve açın. Klavye, fare ve monitör kullanıyorsanız, standart kurulumla devam edin. Başsız (çevre birimleri olmadan) kurulum yapıyorsanız, SD kartı takmadan önce SD kartın önyükleme bölümünde adlandırılmış boş bir dosya oluşturarak ***SSH erişimini etkinleştirebilirsiniz.*** <code>ssh</code> 
+- MicroSD kartı Raspberry Pi 4'ünüze takın ve açın. Klavye, fare ve monitör kullanıyorsanız, standart kurulumla devam edin. Başsız (çevre birimleri olmadan) kurulum yapıyorsanız, SD kartı takmadan önceSD kartın önyükleme bölümündeadlandırılmış boş bir dosya oluşturarak***SSH erişimini etkinleştirebilirsiniz.*** <code>ssh</code> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -341,15 +341,15 @@ sudo apt upgrade</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Daha fazla depolama alanı ekleyin***  : Depolama kapasitenizi genişletmek için ek harici sürücüler bağlayın. Yedeklilik için bir RAID yapılandırması bile ayarlayabilirsiniz. 
+- ***Daha fazla depolama alanı ekleyin*** : Depolama kapasitenizi genişletmek için ek harici sürücüler bağlayın. Yedeklilik için bir RAID yapılandırması bile ayarlayabilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Otomatik yedeklemeler***  : NAS'ınıza yedeklemeleri otomatikleştirmek için ***rsync***  gibi yazılımları kullanın . 
+- ***Otomatik yedeklemeler*** : NAS'ınıza yedeklemeleri otomatikleştirmek için***rsync*** gibi yazılımları kullanın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Medya akışı : Raspberry Pi'nize *** ***Plex***  veya ***Emby***  gibi medya sunucusu yazılımları yükleyerek videoları ve müzikleri cihazlarınıza aktarın. 
+- ***Medya akışı : Raspberry Pi'nize*** ***Plex*** veya***Emby*** gibi medya sunucusu yazılımları yükleyerekvideoları ve müzikleri cihazlarınıza aktarın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

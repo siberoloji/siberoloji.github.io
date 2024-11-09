@@ -233,7 +233,7 @@ url: /tr/osint-icin-belirli-anahtar-sozcuklere-yonelik-uyarilarin-otomatiklestir
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Talkwalker: Güçlü Boolean arama yetenekleri ve gerçek zamanlı uyarılar sunar . 
+- Talkwalker: Güçlü Boolean aramayetenekleri ve gerçek zamanlı uyarılarsunar . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

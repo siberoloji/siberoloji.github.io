@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-15T13:57:00Z"
 excerpt: Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework
-  içinde kullanabileceğiniz bir diğer yöntem de persistence.rb script kodunu kullanmaktır.
+  içinde kullanabileceğiniz bir diğer yöntem depersistence.rbscript kodunu kullanmaktır.
 guid: https://www.siberoloji.com/?p=1217
 id: 1217
 image: /assets/images/2024/06/metasploit.jpg

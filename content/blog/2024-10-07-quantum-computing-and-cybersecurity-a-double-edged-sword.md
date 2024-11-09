@@ -63,19 +63,19 @@ url: /quantum-computing-and-cybersecurity-a-double-edged-sword/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Lattice-based cryptography:***  This approach relies on the hardness of certain lattice problems. Examples include NTRU and LWE. 
+- ***Lattice-based cryptography:*** This approach relies on the hardness of certain lattice problems. Examples include NTRU and LWE. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Code-based cryptography:***  Based on error-correcting codes, this method is considered to have strong security properties. McEliece and Goppa codes are prominent examples. 
+- ***Code-based cryptography:*** Based on error-correcting codes, this method is considered to have strong security properties. McEliece and Goppa codes are prominent examples. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Isogeny-based cryptography:***  This relies on the difficulty of computing isogenies between elliptic curves. Examples include SIDH and CSIDH. 
+- ***Isogeny-based cryptography:*** This relies on the difficulty of computing isogenies between elliptic curves. Examples include SIDH and CSIDH. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hash-based cryptography:***  This approach uses cryptographic hash functions to construct digital signatures. Examples include XMSS and SPHINCS+. 
+- ***Hash-based cryptography:*** This approach uses cryptographic hash functions to construct digital signatures. Examples include XMSS and SPHINCS+. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -87,19 +87,19 @@ url: /quantum-computing-and-cybersecurity-a-double-edged-sword/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Performance overhead:***  PQC algorithms may be less efficient than current cryptographic algorithms, potentially impacting system performance. 
+- ***Performance overhead:*** PQC algorithms may be less efficient than current cryptographic algorithms, potentially impacting system performance. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Interoperability:***  Ensuring compatibility between different PQC implementations and legacy systems can be complex. 
+- ***Interoperability:*** Ensuring compatibility between different PQC implementations and legacy systems can be complex. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Migration costs:***  The cost of upgrading existing systems to use PQC can be significant. 
+- ***Migration costs:*** The cost of upgrading existing systems to use PQC can be significant. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Quantum-safe key exchange:***  Establishing secure key exchange protocols in a post-quantum world is essential. 
+- ***Quantum-safe key exchange:*** Establishing secure key exchange protocols in a post-quantum world is essential. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -114,23 +114,23 @@ url: /quantum-computing-and-cybersecurity-a-double-edged-sword/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Proactive monitoring and threat intelligence:***  Keeping track of quantum computing advancements and identifying potential vulnerabilities. 
+- ***Proactive monitoring and threat intelligence:*** Keeping track of quantum computing advancements and identifying potential vulnerabilities. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Risk assessment:***  Evaluating the impact of quantum threats on different systems and data. 
+- ***Risk assessment:*** Evaluating the impact of quantum threats on different systems and data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Quantum-resistant algorithm adoption:***  Implementing PQC where appropriate. 
+- ***Quantum-resistant algorithm adoption:*** Implementing PQC where appropriate. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Quantum-safe key management:***  Protecting cryptographic keys from quantum attacks. 
+- ***Quantum-safe key management:*** Protecting cryptographic keys from quantum attacks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Quantum-safe random number generation:***  Ensuring the quality of random numbers used in cryptographic operations. 
+- ***Quantum-safe random number generation:*** Ensuring the quality of random numbers used in cryptographic operations. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

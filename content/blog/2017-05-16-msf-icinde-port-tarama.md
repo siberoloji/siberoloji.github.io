@@ -52,7 +52,7 @@ url: /tr/msf-icinde-port-tarama/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). <em>Her satırda 1 IP olmalı</em> 
+- Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).<em>Her satırda 1 IP olmalı</em> 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -65,15 +65,15 @@ url: /tr/msf-icinde-port-tarama/
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- MSF programı Win32 sistemlerde çalışıyorsa <code>THREADS</code> değerini 16 ve altında ayarlayın. 
+- MSF programı Win32 sistemlerde çalışıyorsa<code>THREADS</code>değerini 16 ve altında ayarlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- MSF programı Cygwin sistemde çalışıyorsa <code>THREADS</code> değerini 200 ve altında ayarlayın 
+- MSF programı Cygwin sistemde çalışıyorsa<code>THREADS</code>değerini 200 ve altında ayarlayın 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- MSF programı Unix-like sistemde çalışıyorsa <code>THREADS</code> değerini 256 yapabilirsiniz. 
+- MSF programı Unix-like sistemde çalışıyorsa<code>THREADS</code>değerini 256 yapabilirsiniz. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

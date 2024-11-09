@@ -24,7 +24,7 @@ title: 'Wazuh: Açık Kaynak Kodlu Güvenlik Takip Yazılımı'
 url: /tr/wazuh-acik-kaynak-kodlu-guvenlik-takip-yazilimi/
 ---
 
- <p>Günümüzün hızla gelişen dijital ortamında,  siber güvenlik her ölçekteki kuruluş için en önemli endişe kaynağıdır. Tehditlerin sayısının artmasıyla birlikte, güvenilir bir güvenlik izleme çözümüne sahip olmak hayati önem taşımaktadır. Günümüzde mevcut olan en etkili ve yaygın olarak kullanılan açık kaynaklı güvenlik platformlarından biri ***Wazuh'tur*** . Bu güçlü platform kapsamlı tehdit algılama, güvenlik açığı yönetimi ve olay yanıtlama yetenekleri sunarak, sağlam, ölçeklenebilir ve uygun maliyetli bir güvenlik çözümü arayan işletmeler için en iyi seçim haline gelmiştir.
+ <p>Günümüzün hızla gelişen dijital ortamında,siber güvenlikher ölçekteki kuruluş için en önemli endişe kaynağıdır. Tehditlerin sayısının artmasıyla birlikte, güvenilir bir güvenlik izleme çözümüne sahip olmak hayati önem taşımaktadır. Günümüzde mevcut olan en etkili ve yaygın olarak kullanılan açık kaynaklı güvenlik platformlarından biri***Wazuh'tur*** . Bu güçlü platform kapsamlı tehdit algılama, güvenlik açığı yönetimi ve olay yanıtlama yetenekleri sunarak, sağlam, ölçeklenebilir ve uygun maliyetli bir güvenlik çözümü arayan işletmeler için en iyi seçim haline gelmiştir.
  
 
  <p>Bu blog yazısında Wazuh'un ne olduğunu, temel özelliklerini, nasıl çalıştığını ve güvenlik ihtiyaçlarınız için neden mükemmel bir çözüm olabileceğini derinlemesine inceleyeceğiz.
@@ -56,11 +56,11 @@ url: /tr/wazuh-acik-kaynak-kodlu-guvenlik-takip-yazilimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***İmza tabanlı algılama,***  kötü amaçlı etkinliğin bilinen kalıplarını veya imzalarını günlüklere veya ağ trafiğine göre eşleştirmeyi içerir. Wazuh, kötü amaçlı yazılım, kaba kuvvet girişimleri ve şüpheli bağlantılar gibi yaygın saldırıları algılamak için bu imzaların güncellenmiş bir veritabanını tutar. 
+- ***İmza tabanlı algılama,*** kötü amaçlı etkinliğin bilinen kalıplarını veya imzalarını günlüklere veya ağ trafiğine göre eşleştirmeyi içerir. Wazuh, kötü amaçlı yazılım, kaba kuvvet girişimleri ve şüpheli bağlantılar gibi yaygın saldırıları algılamak için bu imzaların güncellenmiş bir veritabanını tutar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Anomali tabanlı algılama,***  Wazuh'un alışılmadık davranışları izlemesine ve bunlar hakkında uyarı vermesine olanak tanır ve imzalar tarafından henüz tanımlanmamış sıfırıncı gün tehditlerini ve saldırılarını tespit etmeye yardımcı olur. Bu, henüz iyi bilinmeyen olası sorunları belirleyerek ekstra bir koruma katmanı ekler. 
+- ***Anomali tabanlı algılama,*** Wazuh'un alışılmadık davranışları izlemesine ve bunlar hakkında uyarı vermesine olanak tanır ve imzalar tarafından henüz tanımlanmamış sıfırıncı gün tehditlerini ve saldırılarını tespit etmeye yardımcı olur. Bu, henüz iyi bilinmeyen olası sorunları belirleyerek ekstra bir koruma katmanı ekler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -140,19 +140,19 @@ url: /tr/wazuh-acik-kaynak-kodlu-guvenlik-takip-yazilimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Wazuh Agents***  : İzlenen uç noktalara kurulan bu agentlar, günlükler, güvenlik uyarıları ve sistem yapılandırmaları gibi olay verilerini toplar. Agentlar hafiftir ve Windows, Linux ve macOS dahil olmak üzere çeşitli işletim sistemlerinde çalışabilir. 
+- ***Wazuh Agents*** : İzlenen uç noktalara kurulan bu agentlar, günlükler, güvenlik uyarıları ve sistem yapılandırmaları gibi olay verilerini toplar. Agentlar hafiftir ve Windows, Linux ve macOS dahil olmak üzere çeşitli işletim sistemlerinde çalışabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Wazuh Yöneticisi***  : Yönetici, aracılar tarafından toplanan verileri işlemekten, güvenlik kurallarını uygulamaktan ve uyarılar üretmekten sorumludur. Wazuh platformunun çekirdeğidir ve olay verilerinin merkezileştirilmesini denetler. 
+- ***Wazuh Yöneticisi*** : Yönetici, aracılar tarafından toplanan verileri işlemekten, güvenlik kurallarını uygulamaktan ve uyarılar üretmekten sorumludur. Wazuh platformunun çekirdeğidir ve olay verilerinin merkezileştirilmesini denetler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Elasticsearch***  : Wazuh, verileri depolamak, aramak ve analiz etmek için Elasticsearch'ü kullanır. Bu bileşen, güvenlik ekiplerinin büyük miktardaki verileri hızlı ve verimli bir şekilde görselleştirmesine olanak tanır. 
+- ***Elasticsearch*** : Wazuh, verileri depolamak, aramak ve analiz etmek için Elasticsearch'ü kullanır. Bu bileşen, güvenlik ekiplerinin büyük miktardaki verileri hızlı ve verimli bir şekilde görselleştirmesine olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kibana***  : Wazuh, güvenlik olaylarını ve uyarılarını izlemek için güçlü görselleştirmeler ve panolar sağlamak üzere Kibana ile entegre olur. Bu entegrasyon, eğilimleri izlemeyi, raporlar oluşturmayı ve olası tehditleri belirlemeyi kolaylaştırır. 
+- ***Kibana*** : Wazuh, güvenlik olaylarını ve uyarılarını izlemek için güçlü görselleştirmeler ve panolar sağlamak üzere Kibana ile entegre olur. Bu entegrasyon, eğilimleri izlemeyi, raporlar oluşturmayı ve olası tehditleri belirlemeyi kolaylaştırır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

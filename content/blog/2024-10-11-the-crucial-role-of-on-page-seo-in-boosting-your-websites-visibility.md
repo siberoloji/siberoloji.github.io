@@ -177,7 +177,7 @@ https://youtu.be/6IhHpNkqc3o
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***<a href="https://www.siberoloji.com/xml-sitemaps-what-they-are-and-why-they-matter-for-seo/" target="_blank" rel="noopener" title="">XML Sitemap</a>:***  Create an XML sitemap to help search engines crawl and index your website's pages. 
+- ***<a href="https://www.siberoloji.com/xml-sitemaps-what-they-are-and-why-they-matter-for-seo/" target="_blank" rel="noopener" title="">XML Sitemap</a>:*** Create an XML sitemap to help search engines crawl and index your website's pages. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

@@ -29,16 +29,16 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***WordPress Installation:***  Ensure you have a WordPress installation. 
+- ***WordPress Installation:*** Ensure you have a WordPress installation. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Database Access:&lt;/strong&gt;&lt;/em&gt;  You&amp;rsquo;ll need access to your WordPress database, including its username, password, and hostname.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Database Access:&lt;/strong&gt;&lt;/em&gt; You&amp;rsquo;ll need access to your WordPress database, including its username, password, and hostname.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;SQL Editor:&lt;/strong&gt;&lt;/em&gt;  A tool like phpMyAdmin or a direct SQL client can be used to execute the query.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;SQL Editor:&lt;/strong&gt;&lt;/em&gt; A tool like phpMyAdmin or a direct SQL client can be used to execute the query.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -56,7 +56,7 @@
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Identify the Relevant Table:&lt;/strong&gt;&lt;/em&gt; &lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- The primary table for storing blog post data in WordPress is &lt;code&gt;wp_posts&lt;/code&gt;. This table contains columns like &lt;code&gt;ID&lt;/code&gt;, &lt;code&gt;post_title&lt;/code&gt;, &lt;code&gt;post_content&lt;/code&gt;, &lt;code&gt;post_status&lt;/code&gt;, and more. 
+- The primary table for storing blog post data in WordPress is&lt;code&gt;wp_posts&lt;/code&gt;. This table contains columns like&lt;code&gt;ID&lt;/code&gt;,&lt;code&gt;post_title&lt;/code&gt;,&lt;code&gt;post_content&lt;/code&gt;,&lt;code&gt;post_status&lt;/code&gt;, and more. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
@@ -65,11 +65,11 @@
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Construct the SQL Query:&lt;/strong&gt;&lt;/em&gt; &lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- The query will select the &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;post_name&lt;/code&gt; columns from the &lt;code&gt;wp_posts&lt;/code&gt; table. The &lt;code&gt;post_name&lt;/code&gt;column typically contains the slug or permalink of the post. 
+- The query will select the&lt;code&gt;ID&lt;/code&gt;and&lt;code&gt;post_name&lt;/code&gt;columns from the&lt;code&gt;wp_posts&lt;/code&gt;table. The&lt;code&gt;post_name&lt;/code&gt;column typically contains the slug or permalink of the post. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;To filter for published posts only, we&amp;rsquo;ll use the &lt;code&gt;WHERE&lt;/code&gt; clause and specify that the &lt;code&gt;post_status&lt;/code&gt;column should equal &amp;lsquo;publish&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;To filter for published posts only, we&amp;rsquo;ll use the&lt;code&gt;WHERE&lt;/code&gt;clause and specify that the&lt;code&gt;post_status&lt;/code&gt;column should equal &amp;lsquo;publish&amp;rsquo;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -88,7 +88,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;FROM wp_posts&lt;/code&gt;: This indicates that we&amp;rsquo;re querying the &lt;code&gt;wp_posts&lt;/code&gt; table.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FROM wp_posts&lt;/code&gt;: This indicates that we&amp;rsquo;re querying the&lt;code&gt;wp_posts&lt;/code&gt;table.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -107,21 +107,21 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Additional Considerations:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Post Types:***  If your WordPress site has custom post types, you can modify the query to include or exclude specific post types using the &lt;code&gt;post_type&lt;/code&gt; column. 
+- ***Post Types:*** If your WordPress site has custom post types, you can modify the query to include or exclude specific post types using the&lt;code&gt;post_type&lt;/code&gt;column. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Taxonomies:&lt;/strong&gt;&lt;/em&gt;  To filter posts based on their categories or tags, you can join the &lt;code&gt;wp_posts&lt;/code&gt; table with the &lt;code&gt;wp_term_relationships&lt;/code&gt; and &lt;code&gt;wp_terms&lt;/code&gt; tables.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Taxonomies:&lt;/strong&gt;&lt;/em&gt; To filter posts based on their categories or tags, you can join the&lt;code&gt;wp_posts&lt;/code&gt;table with the&lt;code&gt;wp_term_relationships&lt;/code&gt;and&lt;code&gt;wp_terms&lt;/code&gt;tables.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pagination:&lt;/strong&gt;&lt;/em&gt;  For large datasets, you might want to implement pagination to avoid overwhelming your database.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pagination:&lt;/strong&gt;&lt;/em&gt; For large datasets, you might want to implement pagination to avoid overwhelming your database.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performance Optimization:&lt;/strong&gt;&lt;/em&gt;  Consider using indexes on frequently queried columns (like &lt;code&gt;post_status&lt;/code&gt;) to improve query performance.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Performance Optimization:&lt;/strong&gt;&lt;/em&gt; Consider using indexes on frequently queried columns (like&lt;code&gt;post_status&lt;/code&gt;) to improve query performance.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -310,7 +310,7 @@ ORDER BY column_name;&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;Here&amp;rsquo;s a detailed &lt;em&gt;&lt;strong&gt;SQL Cheat Sheet&lt;/strong&gt;&lt;/em&gt;  you can use for your blog post:&lt;/p&gt;
+        &lt;p&gt;Here&amp;rsquo;s a detailed&lt;em&gt;&lt;strong&gt;SQL Cheat Sheet&lt;/strong&gt;&lt;/em&gt; you can use for your blog post:&lt;/p&gt;
 &lt;h3&gt;&lt;em&gt;&lt;strong&gt;SQL Cheat Sheet&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sql-cheat-sheet&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#sql-cheat-sheet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;

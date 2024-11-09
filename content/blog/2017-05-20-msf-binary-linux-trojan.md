@@ -16,8 +16,8 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-05-20T13:12:00Z"
 excerpt: İstemci taraflı saldırılara örnek olarak bir önceki yazımızda Windows platformu
-  için .exe uzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin
-  kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda, .deb uzantılı
+  için.exeuzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin
+  kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda,.debuzantılı
   bir dosya oluşturacağız.
 guid: https://www.siberoloji.com/?p=1173
 id: 1173

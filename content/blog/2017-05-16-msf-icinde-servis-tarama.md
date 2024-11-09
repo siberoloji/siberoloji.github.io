@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-05-16T12:54:00Z"
 excerpt: Metasploit Framework içerisinde, belirli Portlarda çalışan servisleri bulmak
-  ve bunların versiyon numaralarını tespit etmek için bir takım modüller bulunur. nmap ile
+  ve bunların versiyon numaralarını tespit etmek için bir takım modüller bulunur.nmapile
   yapılan servis taraması gibi bir takım bilgi toplama faaliyetlerinde bunları kullanabilirsiniz.
 guid: https://www.siberoloji.com/?p=1155
 id: 1155

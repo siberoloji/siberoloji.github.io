@@ -16,11 +16,11 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-05T13:21:00Z"
 excerpt: Bazen hedef bilgisayarda yaptığınız işlemlerin log kayıtlarını temizlemek
-  isteyebilirsiniz. Bu temizleme işlemi için öncelikle meterpreter in sağladığı winenum script
+  isteyebilirsiniz. Bu temizleme işlemi için öncelikle meterpreter in sağladığıwinenumscript
   kodlarının nasıl çalıştığına bakalım. Script dosyasını Metasploit Framework klasörünüzün
-  altında /usr/share/metasploit-framework/scripts/meterpreter/winenum.rb adresinde
-  bulabilirsiniz. Bu dosya içerisinde bir çok bölüm bulunmaktadır. Biz şimdilik sadece #
-  Function for clearing all event logs kısmıyla ilgileneceğiz.
+  altında/usr/share/metasploit-framework/scripts/meterpreter/winenum.rbadresinde
+  bulabilirsiniz. Bu dosya içerisinde bir çok bölüm bulunmaktadır. Biz şimdilik sadece#
+  Function for clearing all event logskısmıyla ilgileneceğiz.
 guid: https://www.siberoloji.com/?p=1181
 id: 1181
 image: /assets/images/2024/06/metasploit.jpg

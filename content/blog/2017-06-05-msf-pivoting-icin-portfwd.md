@@ -15,9 +15,9 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-05T13:35:00Z"
-excerpt: Port Yönlendirme olarak kullanılan portfwd komutu, Meterpreter’in sağladığı
+excerpt: Port Yönlendirme olarak kullanılanportfwdkomutu, Meterpreter’in sağladığı
   imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan
-  cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir pivot bilgisayara
+  cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle birpivotbilgisayara
   ihtiyacımız bulunmaktadır.
 guid: https://www.siberoloji.com/?p=1193
 id: 1193

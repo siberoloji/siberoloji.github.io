@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2016-12-22T02:00:00Z"
 excerpt: 'Bilgisayarınızı kullanırken ihtiyacınız olan bir çok programı indirir, yükler
   ve denersiniz. Bunların bir kısmı yüklü olarak dururken, bir kısmını da beğenmez
-  ve kaldırırsınız. Yüklü olan programların bir kısmını da çok sık kullanmazsınız.
+  ve kaldırırsınız. Yüklü olan programların bir kısmını da çok sıkkullanmazsınız.
   Örneğin, bilgisayarınıza yüklediğiniz Virtualbox Sanallaştırma yazılımını her zaman
   kullanmıyor olabilirsiniz. Şunu bilmelisiniz ki, bu tür programlar bilgisayarın
   açılışında başlatılmak üzere bir takım servisleri çalıştırırlar. '

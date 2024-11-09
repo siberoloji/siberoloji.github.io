@@ -25,7 +25,7 @@ title: 'OSSIM&#8217;i Anlamak: Açık Kaynaklı Güvenlik Bilgi ve Olay Yönetim
 url: /tr/ossimi-anlamak-acik-kaynakli-guvenlik-bilgi-ve-olay-yonetimi-siem-cozumu/
 ---
 
-  Günümüzün gelişen dijital ortamında,  siber güvenlik her zamankinden daha önemlidir. Kuruluşlar giderek artan sayıda siber tehdit ile karşı karşıyadır ve hassas bilgileri ve kritik sistemleri korumak karmaşık bir zorluk haline gelmiştir. Bu zorluğun üstesinden gelmenin en etkili yollarından biri, kuruluşların güvenlikle ilgili verileri toplayıp analiz ederek potansiyel tehditleri tespit etmelerine ve bunlara yanıt vermelerine yardımcı olan bir ***Güvenlik Bilgi ve Olay Yönetimi (SIEM)***  çözümü uygulamaktır. Bu tür çözümlerden biri, bir kuruluşun güvenlik duruşuna kapsamlı görünürlük sağlayan açık kaynaklı bir SIEM platformu olan ***OSSIM'dir .***  
+  Günümüzün gelişen dijital ortamında,siber güvenlikher zamankinden daha önemlidir. Kuruluşlar giderek artan sayıda siber tehdit ile karşı karşıyadır ve hassas bilgileri ve kritik sistemleri korumak karmaşık bir zorluk haline gelmiştir. Bu zorluğun üstesinden gelmenin en etkili yollarından biri, kuruluşların güvenlikle ilgili verileri toplayıp analiz ederek potansiyel tehditleri tespit etmelerine ve bunlara yanıt vermelerine yardımcı olan bir***Güvenlik Bilgi ve Olay Yönetimi (SIEM)*** çözümü uygulamaktır. Bu tür çözümlerden biri,bir kuruluşun güvenlik duruşuna kapsamlı görünürlük sağlayan açık kaynaklı bir SIEM platformu olan***OSSIM'dir .***  
  
 
   Bu blog yazısında OSSIM'i, temel özelliklerini, nasıl çalıştığını ve uygun fiyatlı ancak etkili bir siber güvenlik çözümü arayan kuruluşlar için neden değerli bir araç olduğunu inceleyeceğiz. 
@@ -39,7 +39,7 @@ url: /tr/ossimi-anlamak-acik-kaynakli-guvenlik-bilgi-ve-olay-yonetimi-siem-cozum
  ## OSSIM nedir?
 <!-- /wp:heading -->
 
-  ***OSSIM (Açık Kaynaklı Güvenlik Bilgi Yönetimi), AT&amp;T  Cybersecurity***  tarafından geliştirilen ve sürdürülen bir SIEM çözümüdür . Güvenlik izleme, tehdit algılama ve olay müdahalesi sağlamak için birden fazla açık kaynaklı araç ve teknolojiyi tek bir platformda birleştirir. OSSIM, uygun fiyatlı olması (açık kaynaklı olması nedeniyle) ve mevcut güvenlik araçlarıyla sorunsuz bir şekilde entegre olma yeteneği nedeniyle her ölçekteki kuruluşta yaygın olarak kullanılır. 
+  ***OSSIM (Açık Kaynaklı Güvenlik Bilgi Yönetimi),AT&amp;TCybersecurity*** tarafından geliştirilen ve sürdürülen bir SIEM çözümüdür. Güvenlik izleme, tehdit algılama ve olay müdahalesi sağlamak için birden fazla açık kaynaklı araç ve teknolojiyi tek bir platformda birleştirir. OSSIM, uygun fiyatlı olması (açık kaynaklı olması nedeniyle) ve mevcut güvenlik araçlarıyla sorunsuz bir şekilde entegre olma yeteneği nedeniyle her ölçekteki kuruluşta yaygın olarak kullanılır. 
  
 
   OSSIM, birden fazla bireysel çözüme ihtiyaç duymadan geniş bir güvenlik yetenekleri seti sunmak üzere tasarlanmıştır. Bu yetenekler arasında varlık keşfi, güvenlik açığı değerlendirmesi, saldırı tespiti, davranışsal izleme ve güvenlik olayı ilişkilendirmesi yer alır. OSSIM, bu verileri toplayarak ve ilişkilendirerek bir kuruluşun güvenlik durumunun merkezi bir görünümünü sağlar ve potansiyel tehditlerin daha hızlı tanımlanmasını ve azaltılmasını sağlar. 
@@ -157,7 +157,7 @@ url: /tr/ossimi-anlamak-acik-kaynakli-guvenlik-bilgi-ve-olay-yonetimi-siem-cozum
  ### 2.&nbsp;***Kapsamlı Güvenlik İzleme*** 
 <!-- /wp:heading -->
 
-  OSSIM, kapsamlı güvenlik izleme sağlayan çok çeşitli özellikler sunar. Varlık keşfinden saldırı tespitine ve günlük yönetimine kadar OSSIM,  siber güvenliğin tüm temel yönlerini kapsar . Bu özellikleri tek bir platformda merkezileştirerek OSSIM, güvenlik izleme sürecini basitleştirir ve birden fazla, farklı araca olan ihtiyacı azaltır. 
+  OSSIM, kapsamlı güvenlik izleme sağlayan çok çeşitli özellikler sunar. Varlık keşfinden saldırı tespitine ve günlük yönetimine kadar OSSIM,siber güvenliğintüm temel yönlerini kapsar . Bu özellikleri tek bir platformda merkezileştirerek OSSIM, güvenlik izleme sürecini basitleştirir ve birden fazla, farklı araca olan ihtiyacı azaltır. 
  
 
 

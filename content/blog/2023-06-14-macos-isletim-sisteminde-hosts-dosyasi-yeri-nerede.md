@@ -11,7 +11,7 @@ burst_total_pageviews_count:
 categories:
 - MAC/iOS
 date: "2023-06-14T20:46:32Z"
-excerpt: Bir işletim sisteminde bulunan hosts dosyası, alan adlarını Ip adreslerine
+excerpt: Bir işletim sisteminde bulunan hosts dosyası, alan adlarını Ipadreslerine
   çevirmeye yarar. Kullanıcılar hosts dosyalarına veriler girerek DNS sunucusundan
   gelecek cevaplar yerine kendi tanımladıkları IP adreslerine gidebilirler.
 guid: https://www.siberoloji.com/?p=404

@@ -1115,7 +1115,7 @@ msf auxiliary***(*** ms09_001_write***)***  ***&gt;***
 </code></pre>
 <!-- /wp:code -->
 
-  Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde <code>help</code> komutunu kullanabilirsiniz.
+  Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde<code>help</code>komutunu kullanabilirsiniz.
  
 
   Video Anlatım

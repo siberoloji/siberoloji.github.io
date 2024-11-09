@@ -21,7 +21,7 @@ image: /assets/images/2024/09/almalinux.webp
 tags:
 - linux
 - linux news
-title: AlmaLinux Certification Special Interest Group (SIG)
+title: AlmaLinux Certification Special Interest Group(SIG)
 url: /almalinux-certification-special-interest-group-sig/
 ---
 

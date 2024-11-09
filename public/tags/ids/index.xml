@@ -44,21 +44,21 @@
  &lt;p&gt;Snort&#39;un işlevselliği ve popülaritesi, onu saldırı tespiti ve önleme konusunda güvenilir bir araç haline getiren çeşitli güçlü özelliklerden kaynaklanmaktadır:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Gerçek Zamanlı Trafik Analizi***  :&lt;br&gt;Snort, ağ trafiğini gerçek zamanlı olarak analiz ederek olası bir tehdit belirtisi olabilecek anormal kalıpları belirleyebilir. Paket başlıklarını, protokolleri ve içeriği inceleyerek Snort, kuruluşların saldırganlardan bir adım önde olmasına yardımcı olur. 
+- ***Gerçek Zamanlı Trafik Analizi*** :&lt;br&gt;Snort, ağ trafiğini gerçek zamanlı olarak analiz ederek olası bir tehdit belirtisi olabilecek anormal kalıpları belirleyebilir. Paket başlıklarını, protokolleri ve içeriği inceleyerek Snort, kuruluşların saldırganlardan bir adım önde olmasına yardımcı olur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paket Kaydı ve Koklama&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort&amp;rsquo;un ağ paketlerini kaydetme yeteneği, güvenlik ekiplerinin daha derin içgörüler için ağ trafiğini yakalamasını ve analiz etmesini sağlar. Bu özellik, adli analiz için yararlıdır ve geçmiş saldırıları veya alışılmadık davranışları anlamada yardımcı olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paket Kaydı ve Koklama&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort&amp;rsquo;un ağ paketlerini kaydetme yeteneği, güvenlik ekiplerinin daha derin içgörüler için ağ trafiğini yakalamasını ve analiz etmesini sağlar. Bu özellik, adli analiz için yararlıdır ve geçmiş saldırıları veya alışılmadık davranışları anlamada yardımcı olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Protokol Analizi ve İçerik Eşleştirme&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort, TCP, UDP, ICMP ve diğerleri dahil olmak üzere çeşitli ağ protokollerini çözebilir ve analiz edebilir. Ek olarak, bilinen tehditlerle eşleşen imzalar veya kalıplar için paket yüklerinin içine bakarak derin içerik incelemesi gerçekleştirebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Protokol Analizi ve İçerik Eşleştirme&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort, TCP, UDP, ICMP ve diğerleri dahil olmak üzere çeşitli ağ protokollerini çözebilir ve analiz edebilir. Ek olarak, bilinen tehditlerle eşleşen imzalar veya kalıplar için paket yüklerinin içine bakarak derin içerik incelemesi gerçekleştirebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kural Tabanlı Algılama Sistemi&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort&amp;rsquo;un gücü, kapsamlı kural tabanlı algılama sisteminde yatar. Bu kurallar, kullanıcıların ağ trafiğinde kötü amaçlı yazılım imzalarından alışılmadık port etkinliğine kadar arayacakları belirli davranışları tanımlamalarına olanak tanır. Önceden oluşturulmuş kuralların devasa bir kütüphanesiyle (Snort&amp;rsquo;un topluluğu ve Cisco Talos kural setlerini düzenli olarak günceller), kullanıcılar ayrıca benzersiz ağ ihtiyaçlarına uyacak şekilde kendi kurallarını özelleştirebilir ve yazabilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kural Tabanlı Algılama Sistemi&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort&amp;rsquo;un gücü, kapsamlı kural tabanlı algılama sisteminde yatar. Bu kurallar, kullanıcıların ağ trafiğinde kötü amaçlı yazılım imzalarından alışılmadık port etkinliğine kadar arayacakları belirli davranışları tanımlamalarına olanak tanır. Önceden oluşturulmuş kuralların devasa bir kütüphanesiyle (Snort&amp;rsquo;un topluluğu ve Cisco Talos kural setlerini düzenli olarak günceller), kullanıcılar ayrıca benzersiz ağ ihtiyaçlarına uyacak şekilde kendi kurallarını özelleştirebilir ve yazabilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -71,16 +71,16 @@
  &lt;p&gt;Snort, ağ trafiğini sürekli izleyerek ve kötü amaçlı aktiviteleri tespit etmek için önceden tanımlanmış kuralları uygulayarak çalışır. Üç temel modda çalışır:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Sniffer Modu***  :&lt;br&gt;Bu modda, Snort bir ağ paketi dinleyicisi gibi davranır, ağ trafiğini pasif olarak izler ve paket verilerini konsolda gerçek zamanlı olarak görüntüler. Temel trafik izleme için yararlı olsa da, dinleyici modu genellikle aktif güvenlik için kullanılmaz. 
+- ***Sniffer Modu*** :&lt;br&gt;Bu modda, Snort bir ağ paketi dinleyicisi gibi davranır, ağ trafiğini pasif olarak izler ve paket verilerini konsolda gerçek zamanlı olarak görüntüler. Temel trafik izleme için yararlı olsa da, dinleyici modu genellikle aktif güvenlik için kullanılmaz. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paket Kaydedici Modu&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Paket kaydedici modu, Snort&amp;rsquo;un paketleri diske kaydetmesini ve daha sonra analiz edilebilmesini sağlar. Bu mod, genellikle yöneticilerin paket içeriklerini incelemek veya adli soruşturmalar yürütmek gibi ayrıntılı analizler için ağ trafiğini depolamak istediklerinde kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paket Kaydedici Modu&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Paket kaydedici modu, Snort&amp;rsquo;un paketleri diske kaydetmesini ve daha sonra analiz edilebilmesini sağlar. Bu mod, genellikle yöneticilerin paket içeriklerini incelemek veya adli soruşturmalar yürütmek gibi ayrıntılı analizler için ağ trafiğini depolamak istediklerinde kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Saldırısı Algılama Sistemi (NIDS) Modu&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;En güçlü mod olan NIDS, Snort&amp;rsquo;un trafiği etkin bir şekilde izlemesini ve önceden tanımlanmış kurallara göre olası saldırıları tespit etmesini sağlar. Şüpheli etkinlik tespit ettiğinde, daha fazla araştırma için uyarılar üretir. Trafik kalıplarını, protokol anormalliklerini veya belirli saldırı imzalarını analiz ederek Snort, olası güvenlik tehditlerini erken tespit edebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Saldırısı Algılama Sistemi (NIDS) Modu&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;En güçlü mod olan NIDS, Snort&amp;rsquo;un trafiği etkin bir şekilde izlemesini ve önceden tanımlanmış kurallara göre olası saldırıları tespit etmesini sağlar. Şüpheli etkinlik tespit ettiğinde, daha fazla araştırma için uyarılar üretir. Trafik kalıplarını, protokol anormalliklerini veya belirli saldırı imzalarını analiz ederek Snort, olası güvenlik tehditlerini erken tespit edebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -93,21 +93,21 @@
  &lt;p&gt;Snort&#39;un esnekliği onu çeşitli ağ güvenliği kullanım durumları için ideal hale getirir. İşte bazı yaygın uygulamalar:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ağ Güvenliği İzleme***  :&lt;br&gt;Snort, kötü amaçlı etkinlik belirtileri için ağ trafiğini izlemek için yaygın olarak kullanılır; örneğin, saldırı girişimleri, kötü amaçlı yazılım enfeksiyonları veya alışılmadık veri akışları. Gerçek zamanlı analiz, güvenlik ekiplerinin olası tehditlere karşı hızlı bir şekilde harekete geçebilmesini sağlar. 
+- ***Ağ Güvenliği İzleme*** :&lt;br&gt;Snort, kötü amaçlı etkinlik belirtileri için ağ trafiğini izlemek için yaygın olarak kullanılır; örneğin, saldırı girişimleri, kötü amaçlı yazılım enfeksiyonları veya alışılmadık veri akışları. Gerçek zamanlı analiz, güvenlik ekiplerinin olası tehditlere karşı hızlı bir şekilde harekete geçebilmesini sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tehdit Algılama&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort, port tarama, arabellek taşması saldırıları, kötü amaçlı yazılım enfeksiyonları, hizmet reddi (DoS) saldırıları ve kaba kuvvet oturum açma girişimleri dahil olmak üzere çok çeşitli tehditleri algılamada özellikle yeteneklidir. Uygun ayarlama ile bir saldırının erken aşamalarını belirlemede oldukça etkili olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tehdit Algılama&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort, port tarama, arabellek taşması saldırıları, kötü amaçlı yazılım enfeksiyonları, hizmet reddi (DoS) saldırıları ve kaba kuvvet oturum açma girişimleri dahil olmak üzere çok çeşitli tehditleri algılamada özellikle yeteneklidir. Uygun ayarlama ile bir saldırının erken aşamalarını belirlemede oldukça etkili olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Olay Tepkisi&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Bir tehdit algılandığında, Snort olay tepkisi için değerli bir araç olarak hizmet verebilir. Ayrıntılı paket verilerini kaydedebilir, saldırı vektörünün net bir resmini sağlayabilir ve ekiplerin bir olayın kapsamını anlamalarına yardımcı olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Olay Tepkisi&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Bir tehdit algılandığında, Snort olay tepkisi için değerli bir araç olarak hizmet verebilir. Ayrıntılı paket verilerini kaydedebilir, saldırı vektörünün net bir resmini sağlayabilir ve ekiplerin bir olayın kapsamını anlamalarına yardımcı olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Saldırılarının Önlenmesi&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;IPS modunda, Snort şüpheli trafiği engelleyerek veya etkilenen sistemleri izole ederek saldırıları etkin bir şekilde önleyebilir. Bu, yalnızca tespitin ötesinde ek bir koruma katmanı ekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Saldırılarının Önlenmesi&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;IPS modunda, Snort şüpheli trafiği engelleyerek veya etkilenen sistemleri izole ederek saldırıları etkin bir şekilde önleyebilir. Bu, yalnızca tespitin ötesinde ek bir koruma katmanı ekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -120,21 +120,21 @@
  &lt;p&gt;Açık kaynaklı bir çözüm olarak Snort&#39;un birçok avantajı vardır:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ücretsiz ve Açık Kaynaklı***  :&lt;br&gt;Snort&#39;un en büyük avantajlarından biri, kullanımının ücretsiz olmasıdır. Açık kaynaklı bir araç olarak, işletmelerin ve kuruluşların ticari çözümlerle ilişkili yüksek maliyetler olmadan güçlü IDS/IPS yeteneklerinden yararlanmalarını sağlar. 
+- ***Ücretsiz ve Açık Kaynaklı*** :&lt;br&gt;Snort&#39;un en büyük avantajlarından biri, kullanımının ücretsiz olmasıdır. Açık kaynaklı bir araç olarak, işletmelerin ve kuruluşların ticari çözümlerle ilişkili yüksek maliyetler olmadan güçlü IDS/IPS yeteneklerinden yararlanmalarını sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Özelleştirilebilir ve Esnek&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort&amp;rsquo;un kapsamlı kural sistemi, kullanıcıların belirli tehditlere veya davranışlara göre uyarlanmış özel algılama kuralları yazmasına olanak tanır. Son derece yapılandırılabilirdir ve bu da herhangi bir ağ ortamının benzersiz ihtiyaçlarına uyum sağlamasını kolaylaştırır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Özelleştirilebilir ve Esnek&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort&amp;rsquo;un kapsamlı kural sistemi, kullanıcıların belirli tehditlere veya davranışlara göre uyarlanmış özel algılama kuralları yazmasına olanak tanır. Son derece yapılandırılabilirdir ve bu da herhangi bir ağ ortamının benzersiz ihtiyaçlarına uyum sağlamasını kolaylaştırır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geniş Topluluk ve Kural Seti Kütüphaneleri&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort, canlı bir kullanıcı ve katkıda bulunan topluluğuna sahiptir. Ayrıca, Cisco&amp;rsquo;nun Talos Intelligence grubu, Snort&amp;rsquo;un kural setlerine düzenli güncellemeler sağlayarak yeni ve ortaya çıkan tehditlerin hızla ele alınmasını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geniş Topluluk ve Kural Seti Kütüphaneleri&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort, canlı bir kullanıcı ve katkıda bulunan topluluğuna sahiptir. Ayrıca, Cisco&amp;rsquo;nun Talos Intelligence grubu, Snort&amp;rsquo;un kural setlerine düzenli güncellemeler sağlayarak yeni ve ortaya çıkan tehditlerin hızla ele alınmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çok Yönlülük&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort&amp;rsquo;un hem IDS hem de IPS olarak işlev görebilme yeteneği, ona ağ savunmasında çok yönlülük kazandırır. Tespit, önleme veya trafik analizi için kullanılsın, siber tehditlere karşı savunma için sağlam bir araç seti sunar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çok Yönlülük&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort&amp;rsquo;un hem IDS hem de IPS olarak işlev görebilme yeteneği, ona ağ savunmasında çok yönlülük kazandırır. Tespit, önleme veya trafik analizi için kullanılsın, siber tehditlere karşı savunma için sağlam bir araç seti sunar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -147,16 +147,16 @@
  &lt;p&gt;Snort güçlü bir araç olmasına rağmen bazı sınırlamaları da beraberinde getiriyor:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Yüksek Trafikle İlgili Performans Sorunları***  :&lt;br&gt;Yazılım tabanlı bir çözüm olarak Snort, çok yüksek düzeydeki ağ trafiğine ayak uydurmakta zorlanabilir. Büyük kurumsal ortamlarda Snort, trafiği verimli bir şekilde işleyebilmesini sağlamak için ek ayarlama veya donanım gerektirebilir. 
+- ***Yüksek Trafikle İlgili Performans Sorunları*** :&lt;br&gt;Yazılım tabanlı bir çözüm olarak Snort, çok yüksek düzeydeki ağ trafiğine ayak uydurmakta zorlanabilir. Büyük kurumsal ortamlarda Snort, trafiği verimli bir şekilde işleyebilmesini sağlamak için ek ayarlama veya donanım gerektirebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yanlış Pozitifler&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Herhangi bir IDS/IPS gibi Snort da yanlış pozitiflere karşı hassastır; burada meşru trafik yanlışlıkla kötü amaçlı olarak işaretlenir. Yanlış pozitifleri en aza indirmek ve etkili bir tespit sistemini sürdürmek için düzenli kural ayarlamaları ve ayarlamaları gerekir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yanlış Pozitifler&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Herhangi bir IDS/IPS gibi Snort da yanlış pozitiflere karşı hassastır; burada meşru trafik yanlışlıkla kötü amaçlı olarak işaretlenir. Yanlış pozitifleri en aza indirmek ve etkili bir tespit sistemini sürdürmek için düzenli kural ayarlamaları ve ayarlamaları gerekir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ticari Araçlar ile Karşılaştırma&lt;/strong&gt;&lt;/em&gt;  :&lt;br&gt;Snort güçlü olsa da, Suricata ve Zeek gibi ticari alternatifler ölçekte daha iyi performans veya ücretli destekle gelen ek özellikler sunabilir. Bir kuruluşun özel ihtiyaçlarına bağlı olarak, bu diğer araçlar dikkate alınmaya değer olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ticari Araçlar ile Karşılaştırma&lt;/strong&gt;&lt;/em&gt; :&lt;br&gt;Snort güçlü olsa da, Suricata ve Zeek gibi ticari alternatifler ölçekte daha iyi performans veya ücretli destekle gelen ek özellikler sunabilir. Bir kuruluşun özel ihtiyaçlarına bağlı olarak, bu diğer araçlar dikkate alınmaya değer olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -169,7 +169,7 @@
  &lt;p&gt;Snort&#39;u kurmak biraz teknik bilgi gerektirir, ancak Linux veya ağ konusunda bilgili kullanıcılar için basittir. İşte adımların temel bir özeti:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Snort&#39;u yükleyin***  :&lt;br&gt;Snort çeşitli işletim sistemlerine yüklenebilir, ancak çoğu kullanıcı onu Linux&#39;a dağıtır. Snort web sitesinden uygun sürümü indirdikten sonra, libpcap, DAQ (Veri Toplama) ve diğer ağ kütüphaneleri dahil olmak üzere gerekli bağımlılıkları yüklemeniz gerekecektir. 
+- ***Snort&#39;u yükleyin*** :&lt;br&gt;Snort çeşitli işletim sistemlerine yüklenebilir, ancak çoğu kullanıcı onu Linux&#39;a dağıtır. Snort web sitesinden uygun sürümü indirdikten sonra, libpcap, DAQ (Veri Toplama) ve diğer ağ kütüphaneleri dahil olmak üzere gerekli bağımlılıkları yüklemeniz gerekecektir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
@@ -180,7 +180,7 @@
  &lt;p&gt;**:&lt;br&gt;Yapılandırma, kullanıcıların ağ değişkenlerini, kural kümelerini ve günlükleme seçeneklerini tanımladığı snort.conf dosyasının kurulumunu içerir. Snort&#39;un kuralları, trafiğin nasıl analiz edileceğini ve şüpheli etkinliğe yanıt olarak hangi eylemlerin gerçekleştirileceğini belirler.
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:3} --&gt;
 &lt;ol start=&#34;3&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kuralları Uygula ve İzlemeye Başla***  :&lt;br&gt;Snort yapılandırıldıktan sonra kullanıcılar ağlarını izlemeye başlamak için kural kümeleri uygulayabilir. Zamanla, kurallar algılama doğruluğunu iyileştirmek ve yanlış pozitifleri azaltmak için ince ayarlanabilir. 
+- ***Kuralları Uygula ve İzlemeye Başla*** :&lt;br&gt;Snort yapılandırıldıktan sonra kullanıcılar ağlarını izlemeye başlamak için kural kümeleri uygulayabilir. Zamanla, kurallar algılama doğruluğunu iyileştirmek ve yanlış pozitifleri azaltmak için ince ayarlanabilir. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:separator --&gt;
@@ -192,11 +192,11 @@
  &lt;p&gt;Snort&#39;u diğer IDS/IPS araçlarıyla karşılaştırırken, hızlı bir genel bakış şu şekildedir:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Snort ve Suricata***  : Suricata, Snort ile rekabet eden bir diğer açık kaynaklı IDS/IPS&#39;dir. Suricata, çok iş parçacıklı CPU&#39;larda daha iyi performans sunarak yüksek trafikli ortamlarda daha verimli hale getirir. Ancak, Snort&#39;un kapsamlı topluluğu ve kural kümeleri daha olgundur ve bu da onu birçok kuruluş için harika bir seçenek haline getirir. 
+- ***Snort ve Suricata*** : Suricata, Snort ile rekabet eden bir diğer açık kaynaklı IDS/IPS&#39;dir. Suricata, çok iş parçacıklı CPU&#39;larda daha iyi performans sunarak yüksek trafikli ortamlarda daha verimli hale getirir. Ancak, Snort&#39;un kapsamlı topluluğu ve kural kümeleri daha olgundur ve bu da onu birçok kuruluş için harika bir seçenek haline getirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Snort ve Zeek&lt;/strong&gt;&lt;/em&gt;  : Eskiden Bro olarak bilinen Zeek, imza tabanlı tespitten ziyade protokol analizi ve ağ davranışına daha fazla odaklanmıştır. Zeek, gelişmiş güvenlik izleme için sıklıkla Snort ile birlikte kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Snort ve Zeek&lt;/strong&gt;&lt;/em&gt; : Eskiden Bro olarak bilinen Zeek, imza tabanlı tespitten ziyade protokol analizi ve ağ davranışına daha fazla odaklanmıştır. Zeek, gelişmiş güvenlik izleme için sıklıkla Snort ile birlikte kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

@@ -920,7 +920,7 @@ Module options:
 msf auxiliary***(*** ms09_001_write***)***  ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde &lt;code&gt;help&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde&lt;code&gt;help&lt;/code&gt;komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;p&gt;Video Anlatım&lt;/p&gt;
 &lt;!-- wp:embed {&#34;url&#34;:&#34;https://youtu.be/UOtw6CfPGlo&#34;,&#34;type&#34;:&#34;video&#34;,&#34;providerNameSlug&#34;:&#34;youtube&#34;,&#34;responsive&#34;:true,&#34;className&#34;:&#34;wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;} --&gt;
 &lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;

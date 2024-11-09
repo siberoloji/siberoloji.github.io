@@ -28,26 +28,26 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Ekleme Sıralaması Nasıl Çalışır?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İkinci elemandan başlayalım:***   İlk eleman sıralanmış kabul edilir. 
+- ***İkinci elemandan başlayalım:*** İlk eleman sıralanmış kabul edilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karşılaştır ve ekle:&lt;/strong&gt;&lt;/em&gt;   Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karşılaştır ve ekle:&lt;/strong&gt;&lt;/em&gt; Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğeleri kaydır:&lt;/strong&gt;&lt;/em&gt;   Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğeleri kaydır:&lt;/strong&gt;&lt;/em&gt; Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ekle:&lt;/strong&gt;&lt;/em&gt;   Geçerli öğeyi boş konuma ekle.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ekle:&lt;/strong&gt;&lt;/em&gt; Geçerli öğeyi boş konuma ekle.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tekrarla:&lt;/strong&gt;&lt;/em&gt;   Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tekrarla:&lt;/strong&gt;&lt;/em&gt; Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -57,31 +57,31 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Adım 2:&lt;/strong&gt;&lt;/em&gt;   2&amp;rsquo;yi 5 ile karşılaştırın. 2 daha küçüktür, bu yüzden 5&amp;rsquo;i sağa kaydırın ve onun yerine 2&amp;rsquo;yi yerleştirin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Sıralamak: &lt;code&gt;[2, 5, 4, 6, 1, 3]&lt;/code&gt; 
+- Sıralamak:&lt;code&gt;[2, 5, 4, 6, 1, 3]&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Adım 3:&lt;/strong&gt;&lt;/em&gt;   4 ile 5&amp;rsquo;i karşılaştırın. 4 daha küçüktür, bu yüzden 5&amp;rsquo;i sağa kaydırın ve onun yerine 4&amp;rsquo;ü yerleştirin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Sıralamak: &lt;code&gt;[2, 4, 5, 6, 1, 3]&lt;/code&gt; 
+- Sıralamak:&lt;code&gt;[2, 4, 5, 6, 1, 3]&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Adım 4:&lt;/strong&gt;&lt;/em&gt;   6 ile 5&amp;rsquo;i karşılaştırın. 6 daha büyüktür, bu nedenle yerinde kalır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Sıralamak: &lt;code&gt;[2, 4, 5, 6, 1, 3]&lt;/code&gt; 
+- Sıralamak:&lt;code&gt;[2, 4, 5, 6, 1, 3]&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Adım 5:&lt;/strong&gt;&lt;/em&gt;   1 ile 5&amp;rsquo;i karşılaştırın. 1 daha küçüktür, dolayısıyla 5, 6 ve 3&amp;rsquo;ü sağa kaydırın ve onun yerine 1&amp;rsquo;i yerleştirin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Sıralamak: &lt;code&gt;[1, 2, 4, 5, 6, 3]&lt;/code&gt; 
+- Sıralamak:&lt;code&gt;[1, 2, 4, 5, 6, 3]&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Adım 6:&lt;/strong&gt;&lt;/em&gt;   3 ile 5&amp;rsquo;i karşılaştırın. 3 daha küçüktür, bu yüzden 5 ve 6&amp;rsquo;yı sağa kaydırın ve onun yerine 3&amp;rsquo;ü yerleştirin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Sıralamak: &lt;code&gt;[1, 2, 3, 4, 5, 6]&lt;/code&gt; 
+- Sıralamak:&lt;code&gt;[1, 2, 3, 4, 5, 6]&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Dizi artık sıralandı.&lt;/p&gt;
@@ -114,16 +114,16 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Zaman Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***En iyi durum:***   Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)&#39;dir. 
+- ***En iyi durum:*** Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)&#39;dir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ortalama durum:&lt;/strong&gt;&lt;/em&gt;   Zaman karmaşıklığı O(n^2)&amp;lsquo;dir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ortalama durum:&lt;/strong&gt;&lt;/em&gt; Zaman karmaşıklığı O(n^2)&amp;lsquo;dir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;En kötü durum:&lt;/strong&gt;&lt;/em&gt;   Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)&amp;lsquo;dir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;En kötü durum:&lt;/strong&gt;&lt;/em&gt; Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)&amp;lsquo;dir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -132,32 +132,32 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Eklemeli Sıralamanın Avantajları&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Uygulanması kolay:***   Eklemeli sıralama anlaşılması ve kodlanması kolaydır. 
+- ***Uygulanması kolay:*** Eklemeli sıralama anlaşılması ve kodlanması kolaydır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Küçük veri kümeleri için verimli:&lt;/strong&gt;&lt;/em&gt;   Küçük diziler için iyi bir seçimdir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Küçük veri kümeleri için verimli:&lt;/strong&gt;&lt;/em&gt; Küçük diziler için iyi bir seçimdir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çevrimiçi algoritma:&lt;/strong&gt;&lt;/em&gt;   Öğeler geldikçe tek tek işlenebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çevrimiçi algoritma:&lt;/strong&gt;&lt;/em&gt; Öğeler geldikçe tek tek işlenebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Stable:&lt;/strong&gt;&lt;/em&gt;   Eşit anahtarlara sahip öğelerin göreceli sırasını korur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Stable:&lt;/strong&gt;&lt;/em&gt; Eşit anahtarlara sahip öğelerin göreceli sırasını korur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Eklemeli Sıralamanın Dezavantajları&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Büyük veri kümeleri için verimsizdir:***   İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir. 
+- ***Büyük veri kümeleri için verimsizdir:*** İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yaklaşık olarak sıralanmış diziler için yavaş:&lt;/strong&gt;&lt;/em&gt;   Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yaklaşık olarak sıralanmış diziler için yavaş:&lt;/strong&gt;&lt;/em&gt; Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -180,47 +180,47 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Sözde Kodun Temel Özellikleri&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Netlik ve Özlülük:***   Sözde kod, programlamaya aşina olmayanlar için bile okunması ve anlaşılması kolay olmalıdır. Gereksiz ayrıntılardan kaçınır ve algoritmanın temel mantığına odaklanır. 
+- ***Netlik ve Özlülük:*** Sözde kod, programlamaya aşina olmayanlar için bile okunması ve anlaşılması kolay olmalıdır. Gereksiz ayrıntılardan kaçınır ve algoritmanın temel mantığına odaklanır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Modülerlik:&lt;/strong&gt;&lt;/em&gt;   Sözde kod genellikle algoritmaları daha küçük, daha yönetilebilir adımlara veya modüllere ayırır. Bu, kodu analiz etmeyi, hata ayıklamayı ve değiştirmeyi kolaylaştırır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Modülerlik:&lt;/strong&gt;&lt;/em&gt; Sözde kod genellikle algoritmaları daha küçük, daha yönetilebilir adımlara veya modüllere ayırır. Bu, kodu analiz etmeyi, hata ayıklamayı ve değiştirmeyi kolaylaştırır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Soyutlama:&lt;/strong&gt;&lt;/em&gt;   Sözde kod, bir programlama dilinin belirli söz diziminden uzaklaşarak algoritmik kavramlara odaklanmanızı sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Soyutlama:&lt;/strong&gt;&lt;/em&gt; Sözde kod, bir programlama dilinin belirli söz diziminden uzaklaşarak algoritmik kavramlara odaklanmanızı sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağımsızlık:&lt;/strong&gt;&lt;/em&gt;   Sözde kod belirli bir programlama diline bağlı değildir, bu da onu çeşitli dillerde uygulanabilen algoritmaları tanımlamak için çok yönlü bir araç haline getirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağımsızlık:&lt;/strong&gt;&lt;/em&gt; Sözde kod belirli bir programlama diline bağlı değildir, bu da onu çeşitli dillerde uygulanabilen algoritmaları tanımlamak için çok yönlü bir araç haline getirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Temel Sözde Kod Yapıları&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Sıralı Yürütme:***   Talimatlar, göründükleri sırayla, birbiri ardına yürütülür. 
+- ***Sıralı Yürütme:*** Talimatlar, göründükleri sırayla, birbiri ardına yürütülür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karar Verme:&lt;/strong&gt;&lt;/em&gt;   Bu  &lt;code&gt;if-else&lt;/code&gt; ifade, koşullara bağlı olarak karar almak için kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karar Verme:&lt;/strong&gt;&lt;/em&gt; Bu&lt;code&gt;if-else&lt;/code&gt;ifade, koşullara bağlı olarak karar almak için kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tekrarlama:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;for&lt;/code&gt; ,  &lt;code&gt;while&lt;/code&gt;, ve   gibi döngüler,  &lt;code&gt;do-while&lt;/code&gt; bir kod bloğunu birden çok kez tekrarlamak için kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tekrarlama:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;for&lt;/code&gt;,&lt;code&gt;while&lt;/code&gt;, vegibi döngüler,&lt;code&gt;do-while&lt;/code&gt;bir kod bloğunu birden çok kez tekrarlamak için kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Prosedürler ve Fonksiyonlar:&lt;/strong&gt;&lt;/em&gt;   Kodun diğer bölümlerinden çağrılabilen alt rutinler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Prosedürler ve Fonksiyonlar:&lt;/strong&gt;&lt;/em&gt; Kodun diğer bölümlerinden çağrılabilen alt rutinler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yorumlar:&lt;/strong&gt;&lt;/em&gt;   Belirli kod bölümlerinin amacını açıklamak için kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yorumlar:&lt;/strong&gt;&lt;/em&gt; Belirli kod bölümlerinin amacını açıklamak için kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -237,52 +237,52 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Sözde Kod Kullanmanın Faydaları&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Algoritma Planlaması:***   Sözde kod, algoritmaların planlanmasına ve tasarlanmasına, ilgili adımların açık bir taslağını sunarak yardımcı olur. 
+- ***Algoritma Planlaması:*** Sözde kod, algoritmaların planlanmasına ve tasarlanmasına, ilgili adımların açık bir taslağını sunarak yardımcı olur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İletişim:&lt;/strong&gt;&lt;/em&gt;   Programcılar ve programcı olmayanlar arasında algoritmik fikirlerin iletilmesinde ortak bir dil görevi görür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İletişim:&lt;/strong&gt;&lt;/em&gt; Programcılar ve programcı olmayanlar arasında algoritmik fikirlerin iletilmesinde ortak bir dil görevi görür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hata Ayıklama:&lt;/strong&gt;&lt;/em&gt;   Sözde kod, algoritmalardaki hataları bir programlama diline uygulamadan önce tespit etmek ve düzeltmek için kullanılabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hata Ayıklama:&lt;/strong&gt;&lt;/em&gt; Sözde kod, algoritmalardaki hataları bir programlama diline uygulamadan önce tespit etmek ve düzeltmek için kullanılabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kod Oluşturma:&lt;/strong&gt;&lt;/em&gt;   Sözde kod son haline getirildikten sonra, belirli bir programlama diline çevrilebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kod Oluşturma:&lt;/strong&gt;&lt;/em&gt; Sözde kod son haline getirildikten sonra, belirli bir programlama diline çevrilebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğrenme Aracı:&lt;/strong&gt;&lt;/em&gt;   Sözde kod, programlama kavramlarını öğrenmek ve algoritmaların nasıl çalıştığını anlamak için değerli bir araçtır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğrenme Aracı:&lt;/strong&gt;&lt;/em&gt; Sözde kod, programlama kavramlarını öğrenmek ve algoritmaların nasıl çalıştığını anlamak için değerli bir araçtır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Sözde Kod Yazmak İçin En İyi Uygulamalar&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Tutarlı Girinti Kullanın:***   Girinti, kodun yapısını görsel olarak temsil etmeye yardımcı olur. 
+- ***Tutarlı Girinti Kullanın:*** Girinti, kodun yapısını görsel olarak temsil etmeye yardımcı olur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tanımlayıcı Değişken Adları Seçin:&lt;/strong&gt;&lt;/em&gt;   Değişkenlerin amacını yansıtan anlamlı adlar kullanın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tanımlayıcı Değişken Adları Seçin:&lt;/strong&gt;&lt;/em&gt; Değişkenlerin amacını yansıtan anlamlı adlar kullanın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yorum Ekle:&lt;/strong&gt;&lt;/em&gt;   Karmaşık bölümlerin veya algoritmaların amacını açıklayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yorum Ekle:&lt;/strong&gt;&lt;/em&gt; Karmaşık bölümlerin veya algoritmaların amacını açıklayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karmaşık Sorunları Parçalara Ayırın:&lt;/strong&gt;&lt;/em&gt;   Büyük sorunları daha küçük, daha yönetilebilir alt sorunlara bölün.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karmaşık Sorunları Parçalara Ayırın:&lt;/strong&gt;&lt;/em&gt; Büyük sorunları daha küçük, daha yönetilebilir alt sorunlara bölün.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sözde Kodunuzu Test Edin:&lt;/strong&gt;&lt;/em&gt;   Sözde kodu örnek girdilerle çalıştırarak doğru çıktıyı ürettiğinden emin olun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sözde Kodunuzu Test Edin:&lt;/strong&gt;&lt;/em&gt; Sözde kodu örnek girdilerle çalıştırarak doğru çıktıyı ürettiğinden emin olun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -315,16 +315,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#anahtar-terimler&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İkinci Dereceden Terim***  : ( ax^2 ) ikinci dereceden terimdir, burada ( a \neq 0 ). Grafiğin eğriliğini tanımlar. 
+- ***İkinci Dereceden Terim*** : ( ax^2 ) ikinci dereceden terimdir, burada ( a \neq 0 ). Grafiğin eğriliğini tanımlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Doğrusal Terim&lt;/strong&gt;&lt;/em&gt;  : (bx) doğrusal terimdir. Eğrinin eğimini ve yönünü etkiler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Doğrusal Terim&lt;/strong&gt;&lt;/em&gt; : (bx) doğrusal terimdir. Eğrinin eğimini ve yönünü etkiler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sabit Terim&lt;/strong&gt;&lt;/em&gt;  : (c) sabit terimdir ve fonksiyonun y-kesişimini temsil eder.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sabit Terim&lt;/strong&gt;&lt;/em&gt; : (c) sabit terimdir ve fonksiyonun y-kesişimini temsil eder.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -333,11 +333,11 @@ for i in range(len(arr)):
 &lt;p&gt;İkinci dereceden bir fonksiyonun grafiği &lt;em&gt;&lt;strong&gt;parabol&lt;/strong&gt;&lt;/em&gt;  adı verilen U şeklinde bir eğridir . Parabolün yönü katsayıya ( a ) bağlıdır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Eğer (a &amp;gt; 0) ise parabol U harfine benzer şekilde ***yukarı doğru açılır.***  
+- Eğer (a &amp;gt; 0) ise parabolU harfine benzer şekilde***yukarı doğru açılır.***  
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;( a &amp;lt; 0 ) ise parabol &lt;em&gt;&lt;strong&gt;aşağıya doğru&lt;/strong&gt;&lt;/em&gt;  açılır ve ters U harfine benzer.&lt;/li&gt;
+&lt;li&gt;( a &amp;lt; 0 ) ise parabol&lt;em&gt;&lt;strong&gt;aşağıya doğru&lt;/strong&gt;&lt;/em&gt; açılır ve ters U harfine benzer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -366,16 +366,16 @@ for i in range(len(arr)):
 &lt;p&gt;Bir ikinci dereceden denklemin kökleri çözüldüğünde üç olası sonuç vardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İki farklı reel kök***  : Parabol x eksenini iki noktada keser. 
+- ***İki farklı reel kök*** : Parabol x eksenini iki noktada keser. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bir gerçek kök&lt;/strong&gt;&lt;/em&gt;  : Parabol x eksenine sadece bir noktada (tepe noktasında) dokunur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bir gerçek kök&lt;/strong&gt;&lt;/em&gt; : Parabol x eksenine sadece bir noktada (tepe noktasında) dokunur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek kök yok&lt;/strong&gt;&lt;/em&gt;  : Parabol x eksenini kesmez.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek kök yok&lt;/strong&gt;&lt;/em&gt; : Parabol x eksenini kesmez.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -437,16 +437,16 @@ for i in range(len(arr)):
 &lt;p&gt;İkinci dereceden fonksiyonlar sadece teorik değildir; gerçek hayattaki birçok senaryoda karşımıza çıkarlar, örneğin:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Mermi Hareketi***  : Havaya atılan bir cismin yolu parabolik bir yörünge izler. İkinci dereceden fonksiyonları kullanarak cismin ulaştığı maksimum yüksekliği, yere çarpması için gereken süreyi ve kat edilen mesafeyi belirleyebilirsiniz. 
+- ***Mermi Hareketi*** : Havaya atılan bir cismin yolu parabolik bir yörünge izler. İkinci dereceden fonksiyonları kullanarak cismin ulaştığı maksimum yüksekliği, yere çarpması için gereken süreyi ve kat edilen mesafeyi belirleyebilirsiniz. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ekonomi&lt;/strong&gt;&lt;/em&gt;  : Ekonomide, ikinci dereceden fonksiyonlar kar maksimizasyonu ve maliyet minimizasyonu modellemek için kullanılır. Örneğin, bir şirket karı maksimize etmek için üretilecek ürün miktarını belirlemek için ikinci dereceden bir fonksiyon kullanabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ekonomi&lt;/strong&gt;&lt;/em&gt; : Ekonomide, ikinci dereceden fonksiyonlar kar maksimizasyonu ve maliyet minimizasyonu modellemek için kullanılır. Örneğin, bir şirket karı maksimize etmek için üretilecek ürün miktarını belirlemek için ikinci dereceden bir fonksiyon kullanabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mühendislik&lt;/strong&gt;&lt;/em&gt;  : Mühendisler genellikle yapılardaki gerilmeleri, malzeme mukavemetlerini ve tasarım eğrilerini hesaplamak için ikinci dereceden denklemleri kullanırlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mühendislik&lt;/strong&gt;&lt;/em&gt; : Mühendisler genellikle yapılardaki gerilmeleri, malzeme mukavemetlerini ve tasarım eğrilerini hesaplamak için ikinci dereceden denklemleri kullanırlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -474,16 +474,16 @@ for i in range(len(arr)):
 &lt;p&gt;Böl ve yönet, bir problemi daha küçük alt problemlere ayırmaya, her alt problemi bağımsız olarak çözmeye ve orijinal problemi çözmek için çözümlerini birleştirmeye dayalı bir algoritma tasarım paradigmasıdır. Böl ve yönet algoritmasının temel yapısı üç adımı takip eder:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölme***  : Problemi daha küçük alt problemlere bölmek. 
+- ***Bölme*** : Problemi daha küçük alt problemlere bölmek. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt;  : Her alt problemi yinelemeli olarak çöz. Alt problem yeterince küçükse, doğrudan çöz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt; : Her alt problemi yinelemeli olarak çöz. Alt problem yeterince küçükse, doğrudan çöz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt;  : Orijinal problemi çözmek için alt problemlerin çözümlerini birleştir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt; : Orijinal problemi çözmek için alt problemlerin çözümlerini birleştir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -492,16 +492,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#b%c3%b6l-ve-y%c3%b6netin-temel-%c3%b6zellikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Özyineleme***  : Böl ve yönet algoritmaları genellikle sorunu parçalamak ve daha küçük örnekleri çözmek için özyinelemeyi kullanır. Bu özyinelemeli yapı, yöntemi çok güçlü kılar ancak bazen uygulanması zor olabilir. 
+- ***Özyineleme*** : Böl ve yönet algoritmaları genellikle sorunu parçalamak ve daha küçük örnekleri çözmek için özyinelemeyi kullanır. Bu özyinelemeli yapı, yöntemi çok güçlü kılar ancak bazen uygulanması zor olabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alt Problem Bağımsızlığı&lt;/strong&gt;&lt;/em&gt;  : Alt problemler birbirinden bağımsız olmalıdır. Bu bağımsızlık, bir alt problemi çözmenin diğerinin çözümünü etkilememesini sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alt Problem Bağımsızlığı&lt;/strong&gt;&lt;/em&gt; : Alt problemler birbirinden bağımsız olmalıdır. Bu bağımsızlık, bir alt problemi çözmenin diğerinin çözümünü etkilememesini sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sonuçların Birleştirilmesi&lt;/strong&gt;&lt;/em&gt;  : Alt problemleri çözdükten sonra, sonuçlar nihai çözümü oluşturmak için birleştirilmelidir. Bu adım, algoritmaya bağlı olarak bazen hesaplama açısından pahalı olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sonuçların Birleştirilmesi&lt;/strong&gt;&lt;/em&gt; : Alt problemleri çözdükten sonra, sonuçlar nihai çözümü oluşturmak için birleştirilmelidir. Bu adım, algoritmaya bağlı olarak bazen hesaplama açısından pahalı olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -514,27 +514,27 @@ for i in range(len(arr)):
 &lt;p&gt;Böl ve yönet yönteminin klasik örneklerinden biri &lt;em&gt;&lt;strong&gt;Birleştirme Sıralaması&lt;/strong&gt;&lt;/em&gt;  algoritmasıdır. Böl ve yönet yaklaşımını nasıl uyguladığını inceleyelim:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölme***  : Diziyi iki yarıya böler. 
+- ***Bölme*** : Diziyi iki yarıya böler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fethetmek&lt;/strong&gt;&lt;/em&gt;  : Dizinin her yarısını yinelemeli olarak sıralar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fethetmek&lt;/strong&gt;&lt;/em&gt; : Dizinin her yarısını yinelemeli olarak sıralar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt;  : Sıralanmış diziyi oluşturmak için sıralanmış iki yarıyı tekrar birleştirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt; : Sıralanmış diziyi oluşturmak için sıralanmış iki yarıyı tekrar birleştirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Sıralanmamış bir sayı diziniz olduğunu varsayalım: [38, 27, 43, 3, 9, 82, 10]. Birleştirme Sıralaması şu şekilde çalışır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Adım 1***  (Bölme): Diziyi iki yarıya bölün: [38, 27, 43, 3] ve [9, 82, 10]. 
+- ***Adım 1*** (Bölme): Diziyi iki yarıya bölün: [38, 27, 43, 3] ve [9, 82, 10]. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım 2&lt;/strong&gt;&lt;/em&gt;  (Fethet): Her bir yarıya yinelemeli olarak birleştirme sıralaması uygulayın. Tek elemanlı dizileriniz olana kadar onları daha fazla bölün:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım 2&lt;/strong&gt;&lt;/em&gt; (Fethet): Her bir yarıya yinelemeli olarak birleştirme sıralaması uygulayın. Tek elemanlı dizileriniz olana kadar onları daha fazla bölün:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -544,7 +544,7 @@ for i in range(len(arr)):
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım 3&lt;/strong&gt;&lt;/em&gt;  (Birleştirme): Sıralanmış alt dizileri birleştirin:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım 3&lt;/strong&gt;&lt;/em&gt; (Birleştirme): Sıralanmış alt dizileri birleştirin:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -584,21 +584,21 @@ for i in range(len(arr)):
 &lt;p&gt;Böl ve yönet yöntemi, bilgisayar algoritmalarındaki karmaşık problemleri çözmek için onu ideal bir seçim haline getiren birçok avantaj sunar:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Verimlilik***  : Merge Sort ve Quick Sort gibi birçok böl ve yönet algoritması, büyük veri kümeleri için basit yinelemeli yöntemlerden çok daha verimlidir. Bu algoritmalar için zaman karmaşıklığı genellikle ***O(n log n)&#39; dir, Bubble Sort gibi *** ***O(n^2)***  algoritmalarından önemli ölçüde daha iyidir . 
+- ***Verimlilik*** : Merge Sort ve Quick Sort gibi birçok böl ve yönet algoritması, büyük veri kümeleri için basit yinelemeli yöntemlerden çok daha verimlidir. Bu algoritmalar için zaman karmaşıklığı genellikle***O(n log n)&#39; dir, Bubble Sort gibi*** ***O(n^2)*** algoritmalarından önemli ölçüde daha iyidir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralellik&lt;/strong&gt;&lt;/em&gt;  : Alt problemlerin bağımsızlığı böl ve yönet algoritmalarını paralel işleme için ideal hale getirir. Her alt problem bağımsız olarak çözülebildiğinden, iş birden fazla işlemciye dağıtılabilir ve bu da paralel hesaplama kaynakları mevcut olduğunda algoritmayı daha hızlı hale getirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralellik&lt;/strong&gt;&lt;/em&gt; : Alt problemlerin bağımsızlığı böl ve yönet algoritmalarını paralel işleme için ideal hale getirir. Her alt problem bağımsız olarak çözülebildiğinden, iş birden fazla işlemciye dağıtılabilir ve bu da paralel hesaplama kaynakları mevcut olduğunda algoritmayı daha hızlı hale getirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Basitleştirilmiş Problem Çözme&lt;/strong&gt;&lt;/em&gt;  : Karmaşık bir problemi daha küçük parçalara bölmek genellikle problem çözme sürecini basitleştirir. Bu yaklaşım, ağaç geçişleri veya sıralama gibi belirli problem türleri için daha sezgisel olan yinelemeli çözümlere olanak tanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Basitleştirilmiş Problem Çözme&lt;/strong&gt;&lt;/em&gt; : Karmaşık bir problemi daha küçük parçalara bölmek genellikle problem çözme sürecini basitleştirir. Bu yaklaşım, ağaç geçişleri veya sıralama gibi belirli problem türleri için daha sezgisel olan yinelemeli çözümlere olanak tanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yeniden kullanılabilirlik&lt;/strong&gt;&lt;/em&gt;  : Böl ve yönet tekniği çok yönlüdür ve sıralama ve aramadan optimizasyon problemlerine ve matematiksel hesaplamalara kadar farklı alanlarda yeniden kullanılabilir. Yöntemi nasıl uygulayacağınızı anladığınızda, onu çok çeşitli problemlere uyarlayabilirsiniz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yeniden kullanılabilirlik&lt;/strong&gt;&lt;/em&gt; : Böl ve yönet tekniği çok yönlüdür ve sıralama ve aramadan optimizasyon problemlerine ve matematiksel hesaplamalara kadar farklı alanlarda yeniden kullanılabilir. Yöntemi nasıl uygulayacağınızı anladığınızda, onu çok çeşitli problemlere uyarlayabilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -624,16 +624,16 @@ for i in range(len(arr)):
 &lt;p&gt;Böl ve yönet yöntemi güçlü olduğu kadar, zorlukları da yok değil:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Tekrarlı Yük***  : Tekrarlı algoritmalar, yığında birden fazla fonksiyon çağrısının sürdürülmesi gereğinden dolayı genellikle daha fazla bellek gerektirir. Büyük girdiler için, tekrarlama derinliği sistemin kapasitesini aşarsa bu, yığın taşması hatalarına yol açabilir. 
+- ***Tekrarlı Yük*** : Tekrarlı algoritmalar, yığında birden fazla fonksiyon çağrısının sürdürülmesi gereğinden dolayı genellikle daha fazla bellek gerektirir. Büyük girdiler için, tekrarlama derinliği sistemin kapasitesini aşarsa bu, yığın taşması hatalarına yol açabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım Karmaşıklığını Birleştirme&lt;/strong&gt;&lt;/em&gt;  : Bazı durumlarda, alt problemlerden çözümleri birleştirme süreci hesaplama açısından pahalı olabilir. Örneğin, Birleştirme Sıralamasında, iki sıralı diziyi birleştirmek, dizilerin boyutuna orantılı zaman gerektirir ve genel algoritmaya fazladan bir karmaşıklık katmanı ekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adım Karmaşıklığını Birleştirme&lt;/strong&gt;&lt;/em&gt; : Bazı durumlarda, alt problemlerden çözümleri birleştirme süreci hesaplama açısından pahalı olabilir. Örneğin, Birleştirme Sıralamasında, iki sıralı diziyi birleştirmek, dizilerin boyutuna orantılı zaman gerektirir ve genel algoritmaya fazladan bir karmaşıklık katmanı ekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alt Problem Boyutu&lt;/strong&gt;&lt;/em&gt;  : Böl ve yönet yönteminin verimliliği alt problemlerin boyutuna bağlıdır. Alt problemler orijinal problemden önemli ölçüde küçük değilse, yöntem önemli performans iyileştirmeleri sunmayabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alt Problem Boyutu&lt;/strong&gt;&lt;/em&gt; : Böl ve yönet yönteminin verimliliği alt problemlerin boyutuna bağlıdır. Alt problemler orijinal problemden önemli ölçüde küçük değilse, yöntem önemli performans iyileştirmeleri sunmayabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -662,11 +662,11 @@ for i in range(len(arr)):
 &lt;p&gt;Birleştirme Sıralamasının iki temel özelliği vardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kararlı Sıralama***  : Eşit elemanların göreli sırasını koruyarak kararlı bir sıralama oluşturur. 
+- ***Kararlı Sıralama*** : Eşit elemanların göreli sırasını koruyarak kararlı bir sıralama oluşturur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Böl ve Yönet&lt;/strong&gt;&lt;/em&gt;  : Birleştir Sıralama, problemi yinelemeli olarak daha küçük alt problemlere (daha küçük dizilere) böler, bunları çözer ve sonuçları birleştirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Böl ve Yönet&lt;/strong&gt;&lt;/em&gt; : Birleştir Sıralama, problemi yinelemeli olarak daha küçük alt problemlere (daha küçük dizilere) böler, bunları çözer ve sonuçları birleştirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -675,16 +675,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#temel-kavramlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölme***  : Dizi, her yarıda tek bir eleman bulunana kadar iki yarıya bölünür. 
+- ***Bölme*** : Dizi, her yarıda tek bir eleman bulunana kadar iki yarıya bölünür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt;  : Tek elemanlı diziler basit bir şekilde sıralanır. Daha sonra daha büyük sıralanmış diziler oluşturmak için çiftler halinde tekrar birleştirilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt; : Tek elemanlı diziler basit bir şekilde sıralanır. Daha sonra daha büyük sıralanmış diziler oluşturmak için çiftler halinde tekrar birleştirilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt;  : Sıralanmış alt diziler adım adım birleştirilir ve sonuçta tam sıralanmış bir dizi elde edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt; : Sıralanmış alt diziler adım adım birleştirilir ve sonuçta tam sıralanmış bir dizi elde edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -746,11 +746,11 @@ for i in range(len(arr)):
 &lt;p&gt;Merge Sort&amp;rsquo;un en büyük avantajlarından biri zaman karmaşıklığıdır. Performansını analiz edelim:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : Birleştirme Sıralaması diziyi yinelemeli olarak iki yarıya böler. Bu, ***O(log n)***  bölünmeyle sonuçlanır. Birleştirme adımı, iki alt diziyi birleştirmek için ***O(n)***  karşılaştırma gerektirir. Bu nedenle, Birleştirme Sıralamasının toplam zaman karmaşıklığı ***O(n log n)&#39;***  dir . Bu zaman karmaşıklığı en iyi, en kötü ve ortalama durumlar için geçerlidir ve Birleştirme Sıralamasını büyük veri kümeleri için oldukça verimli bir algoritma haline getirir. 
+- ***Zaman Karmaşıklığı*** : Birleştirme Sıralaması diziyi yinelemeli olarak iki yarıya böler. Bu,***O(log n)*** bölünmeyle sonuçlanır. Birleştirme adımı, iki alt diziyi birleştirmek için***O(n)*** karşılaştırma gerektirir. Bu nedenle, Birleştirme Sıralamasının toplam zaman karmaşıklığı***O(n log n)&#39;*** dir . Bu zaman karmaşıklığı en iyi, en kötü ve ortalama durumlar için geçerlidir ve Birleştirme Sıralamasını büyük veri kümeleri için oldukça verimli bir algoritma haline getirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması geçici alt diziler için ek alan gerektirir ve bu da uzay karmaşıklığını &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  yapar . Bunun nedeni, birleştirme işlemi sırasında bölünmüş dizileri depolamak için ek alana ihtiyaç duymamızdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması geçici alt diziler için ek alan gerektirir ve bu da uzay karmaşıklığını&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; yapar . Bunun nedeni, birleştirme işlemi sırasında bölünmüş dizileri depolamak için ek alana ihtiyaç duymamızdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -762,11 +762,11 @@ for i in range(len(arr)):
 &lt;p&gt;Hem Birleştirme Sıralaması hem de &lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt;  böl ve yönet yaklaşımını kullanır, ancak stratejileri bakımından önemli ölçüde farklılık gösterirler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Birleştirme Sıralaması***  önce diziyi böler ve daha sonra birleştirerek fetheder. 
+- ***Birleştirme Sıralaması*** önce diziyi böler ve daha sonra birleştirerek fetheder. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt;  , önce bir pivot seçerek ve diziyi bölümlere ayırarak, ardından bölümleri yinelemeli olarak sıralayarak fetheder.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt; , önce bir pivot seçerek ve diziyi bölümlere ayırarak, ardından bölümleri yinelemeli olarak sıralayarak fetheder.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -775,16 +775,16 @@ for i in range(len(arr)):
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı : Birleştirme Sıralaması en kötü durumda bile *** ***O(n log n)***  garantili zaman karmaşıklığına sahipken , Hızlı Sıralamanın en kötü durumdaki zaman karmaşıklığı ***O(n^2)***  &#39;dir . Ancak, Hızlı Sıralama genellikle ortalama olarak daha iyi performans gösterir. 
+- ***Zaman Karmaşıklığı : Birleştirme Sıralaması en kötü durumda bile*** ***O(n log n)*** garantili zaman karmaşıklığına sahipken, Hızlı Sıralamanın en kötü durumdaki zaman karmaşıklığı***O(n^2)*** &#39;dir . Ancak, Hızlı Sıralama genellikle ortalama olarak daha iyi performans gösterir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Hızlı Sıralama, &lt;em&gt;&lt;strong&gt;O(log n)&lt;/strong&gt;&lt;/em&gt;  ek alan kullanırken, Birleştirme Sıralaması birleştirme işlemi nedeniyle &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  gerektirir . Hızlı Sıralama, genellikle minimum ek belleğe ihtiyaç duyulan yerinde sıralama için tercih edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Hızlı Sıralama,&lt;em&gt;&lt;strong&gt;O(log n)&lt;/strong&gt;&lt;/em&gt; ek alan kullanırken, Birleştirme Sıralaması birleştirme işlemi nedeniyle&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; gerektirir . Hızlı Sıralama, genellikle minimum ek belleğe ihtiyaç duyulan yerinde sıralama için tercih edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması, eşit öğelerin göreceli sırasını koruyarak kararlıdır. Hızlı Sıralama, değişikliklerle kararlı hale getirilebilmesine rağmen, doğası gereği kararlı değildir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması, eşit öğelerin göreceli sırasını koruyarak kararlıdır. Hızlı Sıralama, değişikliklerle kararlı hale getirilebilmesine rağmen, doğası gereği kararlı değildir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -793,16 +793,16 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Heap Sort, &lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;O(n log n)&lt;/strong&gt;&lt;/em&gt;  zaman karmaşıklığına sahip bir diğer verimli algoritmadır . İşte Merge Sort ile karşılaştırılması:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Alan Karmaşıklığı***  : Yığın Sıralaması yerinde bir sıralama algoritmasıdır, yani giriş dizisinin ötesinde ekstra bellek gerektirmez. Öte yandan Birleştirme Sıralaması ***O(n)***  ek alan gerektirir. 
+- ***Alan Karmaşıklığı*** : Yığın Sıralaması yerinde bir sıralama algoritmasıdır, yani giriş dizisinin ötesinde ekstra bellek gerektirmez. Öte yandan Birleştirme Sıralaması***O(n)*** ek alan gerektirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması kararlıdır, ancak Yığın Sıralaması kararlı değildir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması kararlıdır, ancak Yığın Sıralaması kararlı değildir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Performans&lt;/strong&gt;&lt;/em&gt;  : Yığın Sıralaması, sıralama sırasında yığın yapısını sürdürmenin getirdiği ek yük nedeniyle Birleştirme Sıralamasına kıyasla pratikte genellikle daha yavaştır. Birleştirme Sıralaması genellikle kararlılığın ve tutarlı performansın önemli olduğu senaryolar için tercih edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Performans&lt;/strong&gt;&lt;/em&gt; : Yığın Sıralaması, sıralama sırasında yığın yapısını sürdürmenin getirdiği ek yük nedeniyle Birleştirme Sıralamasına kıyasla pratikte genellikle daha yavaştır. Birleştirme Sıralaması genellikle kararlılığın ve tutarlı performansın önemli olduğu senaryolar için tercih edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -814,16 +814,16 @@ for i in range(len(arr)):
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : Birleştirme Sıralamasının ***O(n log n)***  karmaşıklığı, en kötü durumda ***O(n^2)***  olan Ekleme Sıralamasından çok daha verimli olmasını sağlar . 
+- ***Zaman Karmaşıklığı*** : Birleştirme Sıralamasının***O(n log n)*** karmaşıklığı, en kötü durumda***O(n^2)*** olan Ekleme Sıralamasından çok daha verimli olmasını sağlar . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Eklemeli Sıralama yerinde bir algoritmadır ve &lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt;  ek bellek kullanır, Birleştirme Sıralaması ise &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  alan gerektirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Eklemeli Sıralama yerinde bir algoritmadır ve&lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt; ek bellek kullanır, Birleştirme Sıralaması ise&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; alan gerektirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım Durumu&lt;/strong&gt;&lt;/em&gt;  : Eklemeli Sıralama, basitliği ve düşük yükü nedeniyle genellikle küçük diziler veya neredeyse sıralanmış veriler için tercih edilir. Birleştirmeli Sıralama, verimliliğin daha kritik olduğu daha büyük veri kümeleri için daha iyidir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım Durumu&lt;/strong&gt;&lt;/em&gt; : Eklemeli Sıralama, basitliği ve düşük yükü nedeniyle genellikle küçük diziler veya neredeyse sıralanmış veriler için tercih edilir. Birleştirmeli Sıralama, verimliliğin daha kritik olduğu daha büyük veri kümeleri için daha iyidir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -851,16 +851,16 @@ for i in range(len(arr)):
 &lt;p&gt;Birleştirme Sıralaması, büyük veri kümelerinin verimli bir şekilde sıralanması gereken çeşitli uygulamalarda kullanılır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Harici Sıralama***  : Birleştirme Sıralaması, belleğe sığmayan büyük veri kümelerini (harici sıralama) sıralamak için idealdir, örneğin diskteki dosyaları sıralamak gibi. Verileri belleğe sığabilecek daha küçük parçalara bölerek ve sıralanmış parçaları birleştirerek, Birleştirme Sıralaması verimli disk G/Ç sağlar. 
+- ***Harici Sıralama*** : Birleştirme Sıralaması, belleğe sığmayan büyük veri kümelerini (harici sıralama) sıralamak için idealdir, örneğin diskteki dosyaları sıralamak gibi. Verileri belleğe sığabilecek daha küçük parçalara bölerek ve sıralanmış parçaları birleştirerek, Birleştirme Sıralaması verimli disk G/Ç sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağlantılı Listeleri Sıralama&lt;/strong&gt;&lt;/em&gt;  : Dizilerden farklı olarak, bağlantılı listeler rastgele erişime sahip değildir ve bu da Hızlı Sıralama gibi algoritmaları daha az etkili hale getirir. Birleştirme Sıralaması, verilere yalnızca sıralı erişim gerektirdiği için bağlantılı listeler için oldukça uygundur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağlantılı Listeleri Sıralama&lt;/strong&gt;&lt;/em&gt; : Dizilerden farklı olarak, bağlantılı listeler rastgele erişime sahip değildir ve bu da Hızlı Sıralama gibi algoritmaları daha az etkili hale getirir. Birleştirme Sıralaması, verilere yalnızca sıralı erişim gerektirdiği için bağlantılı listeler için oldukça uygundur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralel Sıralama&lt;/strong&gt;&lt;/em&gt;  : Alt problemlerin bağımsız yapısı, Birleştirme Sıralamasını, genellikle yüksek performanslı bilgi işlemde kullanılan paralel sıralama için doğal bir aday yapar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralel Sıralama&lt;/strong&gt;&lt;/em&gt; : Alt problemlerin bağımsız yapısı, Birleştirme Sıralamasını, genellikle yüksek performanslı bilgi işlemde kullanılan paralel sıralama için doğal bir aday yapar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -890,16 +890,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#bubble-sortun-temel-%c3%b6zellikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Yerinde Sıralama***  : Kabarcık Sıralaması, giriş dizisinin ötesinde sıralama için ek bellek gerektirmez ve bu da onu yerinde bir sıralama algoritması yapar. 
+- ***Yerinde Sıralama*** : Kabarcık Sıralaması, giriş dizisinin ötesinde sıralama için ek bellek gerektirmez ve bu da onu yerinde bir sıralama algoritması yapar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlı Sıralama&lt;/strong&gt;&lt;/em&gt;  : Kabarcık Sıralaması, eşit öğelerin göreceli sırasını koruyan kararlı bir sıralama algoritmasıdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlı Sıralama&lt;/strong&gt;&lt;/em&gt; : Kabarcık Sıralaması, eşit öğelerin göreceli sırasını koruyan kararlı bir sıralama algoritmasıdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Basitlik&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın anlaşılması ve uygulanması kolaydır, bu da onu sıralama temellerini öğretmek için yaygın bir tercih haline getirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Basitlik&lt;/strong&gt;&lt;/em&gt; : Algoritmanın anlaşılması ve uygulanması kolaydır, bu da onu sıralama temellerini öğretmek için yaygın bir tercih haline getirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -988,26 +988,26 @@ for i in range(len(arr)):
 &lt;p&gt;Bubble Sort basitliğiyle bilinir, ancak özellikle büyük veri kümeleri için en verimli sıralama algoritması değildir. Zaman ve mekan karmaşıklığını inceleyelim:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : 
+- ***Zaman Karmaşıklığı*** : 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;En İyi Durum&lt;/strong&gt;&lt;/em&gt;  : En iyi durum zaman karmaşıklığı, dizi zaten sıralandığında meydana gelir. Bu durumda, Bubble Sort dizide yine de bir kez yineleme yapar, ancak hiçbir takas yapılmaz. En iyi durum zaman karmaşıklığı &lt;em&gt;&lt;strong&gt;O(n)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;  dir .&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;En İyi Durum&lt;/strong&gt;&lt;/em&gt; : En iyi durum zaman karmaşıklığı, dizi zaten sıralandığında meydana gelir. Bu durumda, Bubble Sort dizide yine de bir kez yineleme yapar, ancak hiçbir takas yapılmaz. En iyi durum zaman karmaşıklığı&lt;em&gt;&lt;strong&gt;O(n)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; dir .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;En Kötü Durum&lt;/strong&gt;&lt;/em&gt;  : Dizinin ters sırada sıralandığı en kötü durumda, Bubble Sort her geçişte her bir elemanı karşılaştırmalı ve değiştirmelidir. En kötü durum zaman karmaşıklığı &lt;em&gt;&lt;strong&gt;O(n^2)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;  dir .&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;En Kötü Durum&lt;/strong&gt;&lt;/em&gt; : Dizinin ters sırada sıralandığı en kötü durumda, Bubble Sort her geçişte her bir elemanı karşılaştırmalı ve değiştirmelidir. En kötü durum zaman karmaşıklığı&lt;em&gt;&lt;strong&gt;O(n^2)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; dir .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ortalama Durum&lt;/strong&gt;&lt;/em&gt;  : Ortalama durumda, Kabarcık Sıralaması &lt;em&gt;&lt;strong&gt;O(n^2)&lt;/strong&gt;&lt;/em&gt;  karşılaştırma ve takas gerçekleştirir ve bu da büyük veri kümeleri için verimsiz hale getirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ortalama Durum&lt;/strong&gt;&lt;/em&gt; : Ortalama durumda, Kabarcık Sıralaması&lt;em&gt;&lt;strong&gt;O(n^2)&lt;/strong&gt;&lt;/em&gt; karşılaştırma ve takas gerçekleştirir ve bu da büyük veri kümeleri için verimsiz hale getirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Kabarcık Sıralaması yerinde bir sıralama algoritmasıdır, bu nedenle yalnızca &lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt;  ek bellek kullanır; bu da belleğin sınırlı olduğu durumlarda bir avantajdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Kabarcık Sıralaması yerinde bir sıralama algoritmasıdır, bu nedenle yalnızca&lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt; ek bellek kullanır; bu da belleğin sınırlı olduğu durumlarda bir avantajdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1037,16 +1037,16 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Seçim Sıralaması&lt;/strong&gt;&lt;/em&gt;  , dizinin sıralanmamış kısmından en küçük (veya en büyük) elemanı tekrar tekrar seçip sıralanmış kısma taşıyan başka bir basit sıralama algoritmasıdır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : Hem Kabarcık Sıralaması hem de Seçim Sıralaması en kötü durum zaman karmaşıklığına ***O(n^2)***  sahiptir , ancak Seçim Sıralaması genellikle daha az takas gerçekleştirir. 
+- ***Zaman Karmaşıklığı*** : Hem Kabarcık Sıralaması hem de Seçim Sıralaması en kötü durum zaman karmaşıklığına***O(n^2)*** sahiptir , ancak Seçim Sıralaması genellikle daha az takas gerçekleştirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Kabarcık Sıralaması kararlıdır, ancak Seçim Sıralaması değildir. Bu, Kabarcık Sıralamasının eşit öğelerin göreli sırasını koruduğu, ancak Seçim Sıralamasının korumadığı anlamına gelir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Kabarcık Sıralaması kararlıdır, ancak Seçim Sıralaması değildir. Bu, Kabarcık Sıralamasının eşit öğelerin göreli sırasını koruduğu, ancak Seçim Sıralamasının korumadığı anlamına gelir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt;  : Daha az takas nedeniyle, Seçim Sıralaması pratikte Kabarcık Sıralamasından daha iyi performans gösterebilir, ancak her iki algoritma da büyük veri kümeleri için verimsizdir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt; : Daha az takas nedeniyle, Seçim Sıralaması pratikte Kabarcık Sıralamasından daha iyi performans gösterebilir, ancak her iki algoritma da büyük veri kümeleri için verimsizdir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1055,16 +1055,16 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Eklemeli Sıralama&lt;/strong&gt;&lt;/em&gt;  , her bir elemanı doğru pozisyonuna ekleyerek sıralı diziyi her seferinde bir eleman olacak şekilde oluşturan basit bir algoritmadır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : En iyi durumda, dizi neredeyse sıralandığında, Eklemeli Sıralamanın zaman karmaşıklığı ***O(n)***  olur ve bu da onu en kötü durumda her zaman ***O(n^2)***  olarak çalışan Kabarcık Sıralamadan daha verimli hale getirir . 
+- ***Zaman Karmaşıklığı*** : En iyi durumda, dizi neredeyse sıralandığında, Eklemeli Sıralamanın zaman karmaşıklığı***O(n)*** olur ve bu da onu en kötü durumda her zaman***O(n^2)*** olarak çalışan Kabarcık Sıralamadan daha verimli hale getirir . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Hem Kabarcık Sıralama hem de Eklemeli Sıralama kararlıdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Hem Kabarcık Sıralama hem de Eklemeli Sıralama kararlıdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt;  : Eklemeli Sıralama, özellikle küçük veya neredeyse sıralanmış diziler için, ortalama ve en iyi durumlarda daha iyi performans göstermesi nedeniyle, genellikle Kabarcık Sıralamasına göre tercih edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt; : Eklemeli Sıralama, özellikle küçük veya neredeyse sıralanmış diziler için, ortalama ve en iyi durumlarda daha iyi performans göstermesi nedeniyle, genellikle Kabarcık Sıralamasına göre tercih edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1073,16 +1073,16 @@ for i in range(len(arr)):
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Hızlı Sıralama,&lt;/strong&gt;&lt;/em&gt;  dizileri sıralamak için böl ve yönet yaklaşımını kullanan oldukça verimli bir sıralama algoritmasıdır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı : Hızlı Sıralama, *** ***O(n log n)***  ortalama zaman karmaşıklığına sahiptir ve bu da onu büyük veri kümeleri için Kabarcık Sıralama&#39;dan çok daha hızlı hale getirir. 
+- ***Zaman Karmaşıklığı : Hızlı Sıralama,*** ***O(n log n)*** ortalama zaman karmaşıklığına sahiptirve bu da onu büyük veri kümeleri için Kabarcık Sıralama&#39;dan çok daha hızlı hale getirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Hızlı Sıralama da yerinde bir sıralama algoritmasıdır, ancak en kötü durum zaman karmaşıklığı &lt;em&gt;&lt;strong&gt;O(n^2)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;  dir . Ancak, uygun pivot seçimiyle, bu en kötü durum senaryosundan kaçınılabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Hızlı Sıralama da yerinde bir sıralama algoritmasıdır, ancak en kötü durum zaman karmaşıklığı&lt;em&gt;&lt;strong&gt;O(n^2)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; dir . Ancak, uygun pivot seçimiyle, bu en kötü durum senaryosundan kaçınılabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt;  : Hızlı Sıralama, verimliliği nedeniyle gerçek dünya uygulamalarında yaygın olarak kullanılırken, Kabarcık Sıralama öncelikle eğitim amaçlı kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Kullanım&lt;/strong&gt;&lt;/em&gt; : Hızlı Sıralama, verimliliği nedeniyle gerçek dünya uygulamalarında yaygın olarak kullanılırken, Kabarcık Sıralama öncelikle eğitim amaçlı kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1113,16 +1113,16 @@ for i in range(len(arr)):
 &lt;p&gt;Verimsizliği göz önüne alındığında, Bubble Sort performansın bir endişe olduğu gerçek dünya uygulamalarında nadiren kullanılır. Ancak, hala geçerli olabileceği birkaç senaryo vardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Eğitim Amaçları***  : Kabarcık Sıralama, basitliği nedeniyle bilgisayar bilimi derslerinde giriş algoritması olarak yaygın olarak öğretilir. 
+- ***Eğitim Amaçları*** : Kabarcık Sıralama, basitliği nedeniyle bilgisayar bilimi derslerinde giriş algoritması olarak yaygın olarak öğretilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Küçük Veri Kümeleri&lt;/strong&gt;&lt;/em&gt;  : Veri kümesinin boyutunun minimum olduğu küçük diziler veya listeler için, Kabarcık Sıralaması makul bir seçim olabilir çünkü küçük girdiler için verimsizliği daha az fark edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Küçük Veri Kümeleri&lt;/strong&gt;&lt;/em&gt; : Veri kümesinin boyutunun minimum olduğu küçük diziler veya listeler için, Kabarcık Sıralaması makul bir seçim olabilir çünkü küçük girdiler için verimsizliği daha az fark edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Neredeyse Sıralanmış Veriler&lt;/strong&gt;&lt;/em&gt;  : Veriler neredeyse sıralandığında, Kabarcık Sıralaması (erken sonlandırma optimizasyonuyla) diziyi verimli bir şekilde sıralayabilir ve &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  zaman karmaşıklığına ulaşabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Neredeyse Sıralanmış Veriler&lt;/strong&gt;&lt;/em&gt; : Veriler neredeyse sıralandığında, Kabarcık Sıralaması (erken sonlandırma optimizasyonuyla) diziyi verimli bir şekilde sıralayabilir ve&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; zaman karmaşıklığına ulaşabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1153,16 +1153,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#asimptotik-verimlilik-hakk%c4%b1nda-%c3%b6nemli-noktalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Giriş Boyutuna Odaklanma***  : Asimptotik verimlilik, girdinin boyutu (n olarak gösterilir) ile algoritmanın gerçekleştirdiği işlem sayısı arasındaki ilişkiyi vurgular. 
+- ***Giriş Boyutuna Odaklanma*** : Asimptotik verimlilik, girdinin boyutu (n olarak gösterilir) ile algoritmanın gerçekleştirdiği işlem sayısı arasındaki ilişkiyi vurgular. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sabit Faktörleri Göz Ardı Etme&lt;/strong&gt;&lt;/em&gt;  : Asimptotik analiz, sabit faktörleri ve düşük dereceli terimleri göz ardı ederek performansın girdi boyutuna göre nasıl ölçeklendiğine odaklanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sabit Faktörleri Göz Ardı Etme&lt;/strong&gt;&lt;/em&gt; : Asimptotik analiz, sabit faktörleri ve düşük dereceli terimleri göz ardı ederek performansın girdi boyutuna göre nasıl ölçeklendiğine odaklanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Algoritmaları Karşılaştır&lt;/strong&gt;&lt;/em&gt;  : Uygulama ayrıntılarından veya donanımdan bağımsız olarak farklı algoritmaların performansını karşılaştırmanın bir yolunu sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Algoritmaları Karşılaştır&lt;/strong&gt;&lt;/em&gt; : Uygulama ayrıntılarından veya donanımdan bağımsız olarak farklı algoritmaların performansını karşılaştırmanın bir yolunu sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1171,16 +1171,16 @@ for i in range(len(arr)):
 &lt;p&gt;Asimptotik gösterimler, algoritmaların zaman veya uzay karmaşıklığını tanımlayan matematiksel araçlardır. Bu gösterimler, kaynak gereksinimlerinin girdi boyutuyla nasıl büyüdüğüne göre algoritmaları sınıflandırmaya yardımcı olur. En yaygın kullanılan asimptotik gösterimler şunlardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Büyük O Gösterimi ((O))***  : Bir algoritmanın en kötü senaryodaki zaman karmaşıklığının ***üst sınırını***  tanımlar . 
+- ***Büyük O Gösterimi ((O))*** : Bir algoritmanın en kötü senaryodaki zaman karmaşıklığının***üst sınırını*** tanımlar . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Omega Notasyonu ((Ω))&lt;/strong&gt;&lt;/em&gt;  : En iyi durum senaryosunu temsil eden &lt;em&gt;&lt;strong&gt;alt sınırı tanımlar.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Omega Notasyonu ((Ω))&lt;/strong&gt;&lt;/em&gt; :En iyi durum senaryosunu temsil eden&lt;em&gt;&lt;strong&gt;alt sınırı tanımlar.&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Theta Notasyonu ((Θ))&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın hem üst hem de alt sınırlarını temsil eden &lt;em&gt;&lt;strong&gt;sıkı sınırı&lt;/strong&gt;&lt;/em&gt;  tanımlar .&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Theta Notasyonu ((Θ))&lt;/strong&gt;&lt;/em&gt; : Algoritmanın hem üst hem de alt sınırlarını temsil eden&lt;em&gt;&lt;strong&gt;sıkı sınırı&lt;/strong&gt;&lt;/em&gt; tanımlar .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1213,16 +1213,16 @@ for i in range(len(arr)):
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***O(1)***  : Sabit zaman. Algoritmanın yürütme zamanı girdinin boyutuna bağlı değildir. Örneğin, bir dizideki bir öğeye dizine göre erişmek (O(1))&#39;dir çünkü dizi boyutundan bağımsız olarak aynı zamanı alır. 
+- ***O(1)*** : Sabit zaman. Algoritmanın yürütme zamanı girdinin boyutuna bağlı değildir. Örneğin, bir dizideki bir öğeye dizine göre erişmek (O(1))&#39;dir çünkü dizi boyutundan bağımsız olarak aynı zamanı alır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  : Doğrusal zaman. Algoritmanın yürütme süresi girdi boyutuyla doğrusal olarak artar. Örneğin, sıralanmamış bir dizide bir öğe aramanın zaman karmaşıklığı (O(n))&amp;lsquo;dir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; : Doğrusal zaman. Algoritmanın yürütme süresi girdi boyutuyla doğrusal olarak artar. Örneğin, sıralanmamış bir dizide bir öğe aramanın zaman karmaşıklığı (O(n))&amp;lsquo;dir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n^2)&lt;/strong&gt;&lt;/em&gt;  : İkinci dereceden zaman. Yürütme zamanı girdi boyutuyla ikinci dereceden büyür. Bubble Sort ve Selection Sort gibi sıralama algoritmalarının en kötü durum zaman karmaşıklığı (O(n^2))&amp;lsquo;dir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n^2)&lt;/strong&gt;&lt;/em&gt; : İkinci dereceden zaman. Yürütme zamanı girdi boyutuyla ikinci dereceden büyür. Bubble Sort ve Selection Sort gibi sıralama algoritmalarının en kötü durum zaman karmaşıklığı (O(n^2))&amp;lsquo;dir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1239,11 +1239,11 @@ for i in range(len(arr)):
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ω(1)***  : Bir algoritmanın sabit zaman aldığı en iyi durum senaryosu, örneğin bir dizideki ilk elemanı kontrol etmek gibi. 
+- ***Ω(1)*** : Bir algoritmanın sabit zaman aldığı en iyi durum senaryosu, örneğin bir dizideki ilk elemanı kontrol etmek gibi. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ω(n)&lt;/strong&gt;&lt;/em&gt;  : Örneğin, en iyi senaryoda bile doğrusal arama en kötü durumda bile tüm öğelerin incelenmesini gerektirir, dolayısıyla hedefin nerede bulunduğuna bağlı olarak en iyi durum karmaşıklığı da doğrusal olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ω(n)&lt;/strong&gt;&lt;/em&gt; : Örneğin, en iyi senaryoda bile doğrusal arama en kötü durumda bile tüm öğelerin incelenmesini gerektirir, dolayısıyla hedefin nerede bulunduğuna bağlı olarak en iyi durum karmaşıklığı da doğrusal olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1261,11 +1261,11 @@ for i in range(len(arr)):
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Θ(n)***  : Hem en iyi hem de en kötü durumlarda doğrusal büyüme. Örneğin, (n) elemandan oluşan bir dizide gezinmek, hem en iyi hem de en kötü durumlarda tam olarak (n) işlem gerektirir. 
+- ***Θ(n)*** : Hem en iyi hem de en kötü durumlarda doğrusal büyüme. Örneğin, (n) elemandan oluşan bir dizide gezinmek, hem en iyi hem de en kötü durumlarda tam olarak (n) işlem gerektirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Θ(n log n)&lt;/strong&gt;&lt;/em&gt;  : Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi, giriş boyutu arttıkça (n) logaritmik bir şekilde ölçeklenen bir zaman karmaşıklığına sahip olan verimli sıralama algoritmalarında yaygındır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Θ(n log n)&lt;/strong&gt;&lt;/em&gt; : Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi, giriş boyutu arttıkça (n) logaritmik bir şekilde ölçeklenen bir zaman karmaşıklığına sahip olan verimli sıralama algoritmalarında yaygındır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1276,16 +1276,16 @@ for i in range(len(arr)):
     &lt;a href=&#34;#asimptotik-analizin-temel-faydalar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Performansı Tahmin Etme***  : Bir algoritmanın asimptotik davranışını anlayarak, büyük veri kümeleri üzerindeki performansını tahmin edebilirsiniz; bu da büyük verileri içeren gerçek dünya uygulamaları için çok önemlidir. 
+- ***Performansı Tahmin Etme*** : Bir algoritmanın asimptotik davranışını anlayarak, büyük veri kümeleri üzerindeki performansını tahmin edebilirsiniz; bu da büyük verileri içeren gerçek dünya uygulamaları için çok önemlidir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Algoritmaları Karşılaştırın&lt;/strong&gt;&lt;/em&gt;  : Asimptotik verimlilik, algoritmalar arasında nesnel karşılaştırmaya olanak tanır ve verilen bir problem için en verimli algoritmanın seçilmesini kolaylaştırır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Algoritmaları Karşılaştırın&lt;/strong&gt;&lt;/em&gt; : Asimptotik verimlilik, algoritmalar arasında nesnel karşılaştırmaya olanak tanır ve verilen bir problem için en verimli algoritmanın seçilmesini kolaylaştırır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ölçeklenebilirlik&lt;/strong&gt;&lt;/em&gt;  : Asimptotik verimliliğin analiz edilmesi, algoritmanın girdi boyutu arttıkça iyi ölçeklenmesini sağlayarak büyük ölçekli sistemler için uygun hale gelmesini sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ölçeklenebilirlik&lt;/strong&gt;&lt;/em&gt; : Asimptotik verimliliğin analiz edilmesi, algoritmanın girdi boyutu arttıkça iyi ölçeklenmesini sağlayarak büyük ölçekli sistemler için uygun hale gelmesini sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1294,36 +1294,36 @@ for i in range(len(arr)):
 &lt;p&gt;Yaygın zaman karmaşıklıklarını ve bunların asimptotik gösterimlerini anlamak, algoritma performansını değerlendirmek için önemlidir. İşte sıkça karşılaşılan bazı zaman karmaşıklıkları ve bunların etkileri:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***O(1) – Sabit Zaman***  : Algoritmanın performansı, giriş boyutundan bağımsız olarak sabit kalır. Örnek: Bir dizi öğesine indeksi aracılığıyla erişim. 
+- ***O(1) – Sabit Zaman*** : Algoritmanın performansı, giriş boyutundan bağımsız olarak sabit kalır. Örnek: Bir dizi öğesine indeksi aracılığıyla erişim. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(log n) – Logaritmik Zaman&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın performansı giriş boyutuyla logaritmik olarak artar. Örnek: İkili arama, burada arama alanı her yinelemede yarıya iner.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(log n) – Logaritmik Zaman&lt;/strong&gt;&lt;/em&gt; : Algoritmanın performansı giriş boyutuyla logaritmik olarak artar. Örnek: İkili arama, burada arama alanı her yinelemede yarıya iner.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n) – Doğrusal Zaman&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın performansı girdi boyutuyla doğrusal olarak artar. Örnek: Dizideki her elemanın kontrol edilmesi gereken doğrusal arama.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n) – Doğrusal Zaman&lt;/strong&gt;&lt;/em&gt; : Algoritmanın performansı girdi boyutuyla doğrusal olarak artar. Örnek: Dizideki her elemanın kontrol edilmesi gereken doğrusal arama.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n log n) – Doğrusal Zaman&lt;/strong&gt;&lt;/em&gt;  : Performans (n) kat (log n) ile orantılı bir oranda artar. Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi verimli sıralama algoritmalarında yaygındır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n log n) – Doğrusal Zaman&lt;/strong&gt;&lt;/em&gt; : Performans (n) kat (log n) ile orantılı bir oranda artar. Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi verimli sıralama algoritmalarında yaygındır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n^2) – İkinci Dereceden Zaman&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın performansı giriş boyutuyla birlikte ikinci dereceden artar. Örnek: Her öğenin diğer her öğeyle karşılaştırıldığı Kabarcık Sıralaması ve Seçim Sıralaması.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n^2) – İkinci Dereceden Zaman&lt;/strong&gt;&lt;/em&gt; : Algoritmanın performansı giriş boyutuyla birlikte ikinci dereceden artar. Örnek: Her öğenin diğer her öğeyle karşılaştırıldığı Kabarcık Sıralaması ve Seçim Sıralaması.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(2^n) – Üstel Zaman&lt;/strong&gt;&lt;/em&gt;  : Giriş boyutundaki her artışla performans iki katına çıkar. Örnek: Her fonksiyon çağrısının iki çağrı daha oluşturduğu Fibonacci dizisi için yinelemeli algoritmalar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(2^n) – Üstel Zaman&lt;/strong&gt;&lt;/em&gt; : Giriş boyutundaki her artışla performans iki katına çıkar. Örnek: Her fonksiyon çağrısının iki çağrı daha oluşturduğu Fibonacci dizisi için yinelemeli algoritmalar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n!) – Faktöriyel Zaman&lt;/strong&gt;&lt;/em&gt;  : Algoritmanın performansı aşırı hızlı artar ve bu da onu küçük girdi boyutları için bile kullanışsız hale getirir. Örnek: Gezgin satıcı probleminin kaba kuvvet kullanılarak çözülmesi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;O(n!) – Faktöriyel Zaman&lt;/strong&gt;&lt;/em&gt; : Algoritmanın performansı aşırı hızlı artar ve bu da onu küçük girdi boyutları için bile kullanışsız hale getirir. Örnek: Gezgin satıcı probleminin kaba kuvvet kullanılarak çözülmesi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1335,11 +1335,11 @@ for i in range(len(arr)):
 &lt;p&gt;Büyük veri kümelerini sıralarken doğru algoritmayı seçmek çok önemlidir. Küçük veri kümeleri için algoritmalar arasında çok fazla fark göremeyebilirsiniz, ancak girdi büyüdükçe fark daha belirgin hale gelir.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kabarcık Sıralaması***  : Bu algoritmanın zaman karmaşıklığı ***O(n^2)&#39;***  dir , bu da onu büyük veri kümeleri için verimsiz hale getirir. Asimptotik olarak performansı hızla düşer. 
+- ***Kabarcık Sıralaması*** : Bu algoritmanın zaman karmaşıklığı***O(n^2)&#39;*** dir , bu da onu büyük veri kümeleri için verimsiz hale getirir. Asimptotik olarak performansı hızla düşer. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;***Birleştirme Sıralaması : *** &lt;em&gt;&lt;strong&gt;O(n log n)&lt;/strong&gt;&lt;/em&gt;  zaman karmaşıklığıyla , Birleştirme Sıralaması büyük veri kümeleri için çok daha verimlidir ve daha yüksek zaman karmaşıklığına sahip algoritmalardan daha iyi ölçeklenir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştirme Sıralaması :&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;O(n log n)&lt;/strong&gt;&lt;/em&gt; zaman karmaşıklığıyla, Birleştirme Sıralaması büyük veri kümeleri için çok daha verimlidir ve daha yüksek zaman karmaşıklığına sahip algoritmalardan daha iyi ölçeklenir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1348,11 +1348,11 @@ for i in range(len(arr)):
 &lt;p&gt;Arama algoritmaları, asimptotik verimliliğin önemli rol oynadığı bir diğer alandır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Doğrusal Arama : Zaman karmaşıklığı *** ***O(n)***  olan doğrusal arama, en kötü durumda girdinin her öğesinin taranmasını gerektirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
+- ***Doğrusal Arama : Zaman karmaşıklığı*** ***O(n)*** olandoğrusal arama, en kötü durumda girdinin her öğesinin taranmasını gerektirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İkili Arama&lt;/strong&gt;&lt;/em&gt;  : Öte yandan, ikili aramanın zaman karmaşıklığı &lt;em&gt;&lt;strong&gt;O(log n)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;  dir ve bu da büyük, sıralı veri kümeleri için çok daha hızlı olmasını sağlar, çünkü her karşılaştırmada arama alanını yarı yarıya azaltır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İkili Arama&lt;/strong&gt;&lt;/em&gt; : Öte yandan, ikili aramanın zaman karmaşıklığı&lt;em&gt;&lt;strong&gt;O(log n)&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; dir ve bu da büyük, sıralı veri kümeleri için çok daha hızlı olmasını sağlar, çünkü her karşılaştırmada arama alanını yarı yarıya azaltır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

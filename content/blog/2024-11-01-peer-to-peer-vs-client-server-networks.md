@@ -36,19 +36,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Decentralized:***  No central server controls the network. 
+- ***Decentralized:*** No central server controls the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Direct Communication:***  Devices communicate directly with each other. 
+- ***Direct Communication:*** Devices communicate directly with each other. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scalability:***  Easy to add or remove devices. 
+- ***Scalability:*** Easy to add or remove devices. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Flexibility:***  Can be used for various purposes, including file sharing, gaming, and video conferencing. 
+- ***Flexibility:*** Can be used for various purposes, including file sharing, gaming, and video conferencing. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -57,19 +57,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Cost-Effective:***  No need for expensive server hardware. 
+- ***Cost-Effective:*** No need for expensive server hardware. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Simplicity:***  Easy to set up and manage. 
+- ***Simplicity:*** Easy to set up and manage. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Reliability:***  If one device fails, the network can still function. 
+- ***Reliability:*** If one device fails, the network can still function. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scalability:***  Easily expand the network by adding more devices. 
+- ***Scalability:*** Easily expand the network by adding more devices. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -78,19 +78,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Security Risks:***  Vulnerable to attacks like malware and hacking. 
+- ***Security Risks:*** Vulnerable to attacks like malware and hacking. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Performance Issues:***  Can become slow with many users. 
+- ***Performance Issues:*** Can become slow with many users. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Limited Control:***  Difficult to manage and monitor the network. 
+- ***Limited Control:*** Difficult to manage and monitor the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Resource Constraints:***  Relies on the resources of individual devices. 
+- ***Resource Constraints:*** Relies on the resources of individual devices. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -99,19 +99,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***File Sharing:***  Popular for sharing large files, such as movies, music, and software. 
+- ***File Sharing:*** Popular for sharing large files, such as movies, music, and software. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gaming:***  Enables multiplayer gaming without the need for dedicated servers. 
+- ***Gaming:*** Enables multiplayer gaming without the need for dedicated servers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Video Conferencing:***  Facilitates real-time communication between multiple users. 
+- ***Video Conferencing:*** Facilitates real-time communication between multiple users. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Distributed Computing:***  Leverages the combined processing power of multiple devices for complex tasks. 
+- ***Distributed Computing:*** Leverages the combined processing power of multiple devices for complex tasks. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -126,19 +126,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Centralized:***  A central server controls the network. 
+- ***Centralized:*** A central server controls the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hierarchical Structure:***  Clear distinction between clients and servers. 
+- ***Hierarchical Structure:*** Clear distinction between clients and servers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Security:***  Enhanced security measures can be implemented on the server. 
+- ***Security:*** Enhanced security measures can be implemented on the server. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scalability:***  Can handle a large number of users and devices. 
+- ***Scalability:*** Can handle a large number of users and devices. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -147,19 +147,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Centralized Management:***  Easier to manage and control the network. 
+- ***Centralized Management:*** Easier to manage and control the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Enhanced Security:***  Strong security measures can be implemented on the server. 
+- ***Enhanced Security:*** Strong security measures can be implemented on the server. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Reliable Performance:***  Servers can handle heavy workloads and provide consistent performance. 
+- ***Reliable Performance:*** Servers can handle heavy workloads and provide consistent performance. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scalability:***  Easily expand the network by adding more servers. 
+- ***Scalability:*** Easily expand the network by adding more servers. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -168,19 +168,19 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Higher Cost:***  Requires significant investment in server hardware and software. 
+- ***Higher Cost:*** Requires significant investment in server hardware and software. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Complex Setup:***  More complex to set up and configure than P2P networks. 
+- ***Complex Setup:*** More complex to set up and configure than P2P networks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Single Point of Failure:***  If the server fails, the entire network can be disrupted. 
+- ***Single Point of Failure:*** If the server fails, the entire network can be disrupted. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dependency on Server:***  Clients rely on the server for resources and services. 
+- ***Dependency on Server:*** Clients rely on the server for resources and services. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -189,23 +189,23 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Corporate Networks:***  Used to share files, printers, and other resources within an organization. 
+- ***Corporate Networks:*** Used to share files, printers, and other resources within an organization. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Web Servers:***  Host websites and web applications. 
+- ***Web Servers:*** Host websites and web applications. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Email Servers:***  Manage and deliver email messages. 
+- ***Email Servers:*** Manage and deliver email messages. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Database Servers:***  Store and manage large amounts of data. 
+- ***Database Servers:*** Store and manage large amounts of data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Game Servers:***  Host multiplayer games and provide centralized game services. 
+- ***Game Servers:*** Host multiplayer games and provide centralized game services. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -217,23 +217,23 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Number of Users:***  For small networks with a limited number of users, a P2P network may be sufficient. For larger networks with many users, a client-server network is more suitable. 
+- ***Number of Users:*** For small networks with a limited number of users, a P2P network may be sufficient. For larger networks with many users, a client-server network is more suitable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Security Requirements:***  If security is a major concern, a client-server network with strong security measures is recommended. 
+- ***Security Requirements:*** If security is a major concern, a client-server network with strong security measures is recommended. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Performance Requirements:***  For demanding applications, a client-server network with powerful servers can provide better performance. 
+- ***Performance Requirements:*** For demanding applications, a client-server network with powerful servers can provide better performance. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Management Complexity:***  P2P networks are simpler to manage, while client-server networks require more administrative overhead. 
+- ***Management Complexity:*** P2P networks are simpler to manage, while client-server networks require more administrative overhead. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Cost Considerations:***  P2P networks are generally more cost-effective, while client-server networks can be more expensive due to the cost of server hardware and software. 
+- ***Cost Considerations:*** P2P networks are generally more cost-effective, while client-server networks can be more expensive due to the cost of server hardware and software. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -254,15 +254,15 @@ url: /peer-to-peer-vs-client-server-networks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Network Topology:***  The physical layout of the network, such as bus, star, ring, or mesh topologies, can also impact performance and reliability. 
+- ***Network Topology:*** The physical layout of the network, such as bus, star, ring, or mesh topologies, can also impact performance and reliability. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Network Protocols:***  The communication protocols used to transmit data, such as TCP/IP, HTTP, and FTP, play a crucial role in network functionality. 
+- ***Network Protocols:*** The communication protocols used to transmit data, such as TCP/IP, HTTP, and FTP, play a crucial role in network functionality. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Network Security:***  Implementing strong security measures, such as firewalls, intrusion detection systems, and encryption, is essential to protect network resources from unauthorized access and cyberattacks. 
+- ***Network Security:*** Implementing strong security measures, such as firewalls, intrusion detection systems, and encryption, is essential to protect network resources from unauthorized access and cyberattacks. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

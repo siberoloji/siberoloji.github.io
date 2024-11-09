@@ -28,19 +28,19 @@ url: /collaborating-with-guests-elevating-your-podcast-day-26/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Expand your reach:***  Attract new listeners who follow your guests. 
+- ***Expand your reach:*** Attract new listeners who follow your guests. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Enhance your credibility:***  Benefit from the expertise and authority of your guests. 
+- ***Enhance your credibility:*** Benefit from the expertise and authority of your guests. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Provide more value:***  Offer your audience a wider range of content and insights. 
+- ***Provide more value:*** Offer your audience a wider range of content and insights. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Build relationships:***  Network with other podcasters and industry professionals. 
+- ***Build relationships:*** Network with other podcasters and industry professionals. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -106,23 +106,23 @@ url: /collaborating-with-guests-elevating-your-podcast-day-26/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Network within Your Industry:***  Reach out to people you know in your industry or related fields. 
+- ***Network within Your Industry:*** Reach out to people you know in your industry or related fields. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Use Social Media:***  Connect with potential guests on platforms like LinkedIn, Twitter, and Instagram. 
+- ***Use Social Media:*** Connect with potential guests on platforms like LinkedIn, Twitter, and Instagram. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Search Online:***  Look for experts in your niche through online directories or search engines. 
+- ***Search Online:*** Look for experts in your niche through online directories or search engines. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Leverage Your Audience:***  Ask your listeners for guest suggestions. 
+- ***Leverage Your Audience:*** Ask your listeners for guest suggestions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Collaborate with Other Podcasters:***  Partner with other podcasters to exchange guests. 
+- ***Collaborate with Other Podcasters:*** Partner with other podcasters to exchange guests. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -134,19 +134,19 @@ url: /collaborating-with-guests-elevating-your-podcast-day-26/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Scheduling:***  Coordinate a convenient time for the interview. 
+- ***Scheduling:*** Coordinate a convenient time for the interview. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Technical Setup:***  Ensure that you have the necessary equipment, such as a good microphone and recording software. 
+- ***Technical Setup:*** Ensure that you have the necessary equipment, such as a good microphone and recording software. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Guest Preparation:***  Send your guest a list of questions in advance to give them time to prepare. 
+- ***Guest Preparation:*** Send your guest a list of questions in advance to give them time to prepare. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Logistics:***  Arrange for the guest's transportation or accommodations if necessary. 
+- ***Logistics:*** Arrange for the guest's transportation or accommodations if necessary. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

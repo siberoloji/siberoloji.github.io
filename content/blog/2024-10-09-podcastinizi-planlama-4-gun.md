@@ -39,19 +39,19 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Odaklanmanızı sağlayın***  : Bir plan olmadan, bir bölüm sırasında konudan sapmak veya saçmalamak kolaydır; bu da izleyicilerinizin dikkatinin dağılmasına neden olabilir. 
+- ***Odaklanmanızı sağlayın*** : Bir plan olmadan, bir bölüm sırasında konudan sapmak veya saçmalamak kolaydır; bu da izleyicilerinizin dikkatinin dağılmasına neden olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçeriğiniz akıcı bir şekilde akar***  : Uygun planlama, bölüm içinde mantıksal ilerlemeye olanak tanır ve tutarlı bir anlatı veya konu tartışması sürdürmenize yardımcı olur. 
+- ***İçeriğiniz akıcı bir şekilde akar*** : Uygun planlama, bölüm içinde mantıksal ilerlemeye olanak tanır ve tutarlı bir anlatı veya konu tartışması sürdürmenize yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tutarlılığı korursunuz***  : Bir planınız olduğunda, bölümleri düzenli bir programa göre üretmek, sadık bir izleyici kitlesi oluşturmak ve onları etkileşimde tutmak daha kolaydır. 
+- ***Tutarlılığı korursunuz*** : Bir planınız olduğunda, bölümleri düzenli bir programa göre üretmek, sadık bir izleyici kitlesi oluşturmak ve onları etkileşimde tutmak daha kolaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Üretim süresini azaltırsınız***  : İçeriğinizi düzenlemek için önceden harcanan zaman, daha sorunsuz kayıt oturumları ve daha sonra daha hızlı düzenleme süreçleriyle sonuçlanır. 
+- ***Üretim süresini azaltırsınız*** : İçeriğinizi düzenlemek için önceden harcanan zaman, daha sorunsuz kayıt oturumları ve daha sonra daha hızlı düzenleme süreçleriyle sonuçlanır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -93,19 +93,19 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Solo Gösteriler***  : Doğrudan izleyiciyle konuşur, düşüncelerinizi, deneyimlerinizi veya uzmanlığınızı paylaşırsınız. 
+- ***Solo Gösteriler*** : Doğrudan izleyiciyle konuşur, düşüncelerinizi, deneyimlerinizi veya uzmanlığınızı paylaşırsınız. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Röportajlar***  : Konukları belirli bir konu hakkında görüşlerini paylaşmaya davet edersiniz. 
+- ***Röportajlar*** : Konukları belirli bir konu hakkında görüşlerini paylaşmaya davet edersiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Panel Tartışmaları***  : Birden fazla sunucu veya konuk bir konuyu tartışır. 
+- ***Panel Tartışmaları*** : Birden fazla sunucu veya konuk bir konuyu tartışır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Anlatı/Hikaye Anlatımı***  : Bir veya daha fazla bölümde bir hikaye anlatırsınız (örneğin, gerçek suç veya seri kurgu). İçeriğiniz ve hedef kitlenizle uyumlu bir format seçin. Örneğin, bir konu uzmanıysanız, solo veya röportaj formatı en iyi şekilde işe yarayabilir. Bir hikaye anlatıyorsanız, bir anlatı stili idealdir. 
+- ***Anlatı/Hikaye Anlatımı*** : Bir veya daha fazla bölümde bir hikaye anlatırsınız (örneğin, gerçek suç veya seri kurgu). İçeriğiniz ve hedef kitlenizle uyumlu bir format seçin. Örneğin, bir konu uzmanıysanız, solo veya röportaj formatı en iyi şekilde işe yarayabilir. Bir hikaye anlatıyorsanız, bir anlatı stili idealdir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -137,15 +137,15 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kısa biçim (15–30 dakika)***  : Öz, odaklanmış bölümler için idealdir. 
+- ***Kısa biçim (15–30 dakika)*** : Öz, odaklanmış bölümler için idealdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Orta form (30–60 dakika)***  : Röportajlar, tartışmalar veya konuların derinlemesine incelenmesi için uygundur. 
+- ***Orta form (30–60 dakika)*** : Röportajlar, tartışmalar veya konuların derinlemesine incelenmesi için uygundur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzun biçim (60+ dakika)***  : Derinlemesine tartışmalar veya seri içerikler için en iyisidir. Uygun bir bölüm uzunluğu seçmek, içeriğinizi daha etkili bir şekilde yapılandırmanıza yardımcı olacaktır. Uzunluktaki tutarlılık, dinleyici beklentilerini yönetmenize de yardımcı olur. 
+- ***Uzun biçim (60+ dakika)*** : Derinlemesine tartışmalar veya seri içerikler için en iyisidir. Uygun bir bölüm uzunluğu seçmek, içeriğinizi daha etkili bir şekilde yapılandırmanıza yardımcı olacaktır. Uzunluktaki tutarlılık, dinleyici beklentilerini yönetmenize de yardımcı olur. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -193,7 +193,7 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Her bölümün bir başlangıcı, ortası ve sonu olmalı. İşte takip edebileceğiniz basit bir yapı: - ***Giriş***  : Dinleyicilerimize hoş geldiniz diyoruz ve bölümün konusunu tanıtıyoruz. - ***Ana İçerik***  : Konuyu tartışın, fikir, röportaj veya hikayeler sunun. - ***Kapanış***  : Önemli noktaları özetleyin, harekete geçirici çağrılarda bulunun (örneğin, dinleyicilerden abone olmalarını, yorum bırakmalarını isteyin) ve bir sonraki bölümün önizlemesini yapın.  İyi tanımlanmış bir bölüm yapısı, bölümleriniz arasında tutarlılık yaratmanıza yardımcı olur; bu da sadık bir izleyici kitlesi oluşturmanın anahtarıdır. 
+- Her bölümün bir başlangıcı, ortası ve sonu olmalı. İşte takip edebileceğiniz basit bir yapı: - ***Giriş*** : Dinleyicilerimize hoş geldiniz diyoruz ve bölümün konusunu tanıtıyoruz. - ***Ana İçerik*** : Konuyu tartışın, fikir, röportaj veya hikayeler sunun. - ***Kapanış*** : Önemli noktaları özetleyin, harekete geçirici çağrılarda bulunun (örneğin, dinleyicilerden abone olmalarını, yorum bırakmalarını isteyin) ve bir sonraki bölümün önizlemesini yapın.  İyi tanımlanmış bir bölüm yapısı, bölümleriniz arasında tutarlılık yaratmanıza yardımcı olur; bu da sadık bir izleyici kitlesi oluşturmanın anahtarıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -210,61 +210,61 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Giriş/Açılış***  : 
+- ***Giriş/Açılış*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***İlgi Çekici***  : Dinleyicinin dikkatini çekecek ilgi çekici bir şeyle başlayın; bu ilgi çekici bir soru, kısa bir hikaye veya bir gerçek olabilir. 
+- ***İlgi Çekici*** : Dinleyicinin dikkatini çekecek ilgi çekici bir şeyle başlayın; bu ilgi çekici bir soru, kısa bir hikaye veya bir gerçek olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Müzik***  : Birçok başarılı podcast, bir ruh hali veya tema oluşturmak için giriş müziğini kullanır. 
+- ***Müzik*** : Birçok başarılı podcast, bir ruh hali veya tema oluşturmak için giriş müziğini kullanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Giriş***  : Kendinizi ve podcasti kısaca tanıtın, ardından bölümün neleri kapsayacağını özetleyin. 
+- ***Giriş*** : Kendinizi ve podcasti kısaca tanıtın, ardından bölümün neleri kapsayacağını özetleyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Fragman***  : Bölümün ilerleyen saatlerinde röportajlarınız veya önemli duyurularınız varsa, dinleyicilerin ilgisini canlı tutmak için bunları önceden duyurun. 
+- ***Fragman*** : Bölümün ilerleyen saatlerinde röportajlarınız veya önemli duyurularınız varsa, dinleyicilerin ilgisini canlı tutmak için bunları önceden duyurun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Ana İçerik***  : 
+- ***Ana İçerik*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Bölümün Gövdesi***  : Burada ana konuya dalıyorsunuz. Daha uzun bir tartışmaysa, onu parçalara ayırın. Tek kişilik bir podcast ise, önemli noktaları veya hikayeleri planlayın. Röportajlar için, sorularınızı önceden hazırlayın, ancak doğaçlamaya yer bırakın. 
+- ***Bölümün Gövdesi*** : Burada ana konuya dalıyorsunuz. Daha uzun bir tartışmaysa, onu parçalara ayırın. Tek kişilik bir podcast ise, önemli noktaları veya hikayeleri planlayın. Röportajlar için, sorularınızı önceden hazırlayın, ancak doğaçlamaya yer bırakın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dinleyici Katılımı***  : Dinleyici sorularını yanıtlama, dinleyici hikayeleri sunma veya önceki bölümlerden gelen izleyici geri bildirimlerine atıfta bulunma gibi bölümleri ekleyin. 
+- ***Dinleyici Katılımı*** : Dinleyici sorularını yanıtlama, dinleyici hikayeleri sunma veya önceki bölümlerden gelen izleyici geri bildirimlerine atıfta bulunma gibi bölümleri ekleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kapanış/Çıkış***  : 
+- ***Kapanış/Çıkış*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özet***  : Bölümde tartışılan temel noktaları özetleyin. Bu, dinleyicileriniz için ana fikirleri güçlendirir. 
+- ***Özet*** : Bölümde tartışılan temel noktaları özetleyin. Bu, dinleyicileriniz için ana fikirleri güçlendirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Harekete Geçirme Çağrısı***  : Hedef kitlenizden abone olma, sosyal medyada takip etme veya yorum bırakma gibi bir eylemde bulunmalarını isteyin. Bunu net ve eyleme geçirilebilir hale getirin. 
+- ***Harekete Geçirme Çağrısı*** : Hedef kitlenizden abone olma, sosyal medyada takip etme veya yorum bırakma gibi bir eylemde bulunmalarını isteyin. Bunu net ve eyleme geçirilebilir hale getirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sonraki Bölüm İçin Fragman***  : Gelecek bölüme dair gizli bir ön izleme veya ipucu sunarak heyecan yaratın. 
+- ***Sonraki Bölüm İçin Fragman*** : Gelecek bölüme dair gizli bir ön izleme veya ipucu sunarak heyecan yaratın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -290,11 +290,11 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Konu***  : Kendinizi tanıtın, podcast'in amacını açıklayın ve dinleyicilerin neler beklemesi gerektiğine dair genel bir bakış sunun. 
+- ***Konu*** : Kendinizi tanıtın, podcast'in amacını açıklayın ve dinleyicilerin neler beklemesi gerektiğine dair genel bir bakış sunun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ana Noktalar***  :<!-- wp:list -->
+- ***Ana Noktalar*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 - Sen kimsin ve bu podcasti neden başlatıyorsun? 
 <!-- /wp:list-item -->
@@ -310,7 +310,7 @@ url: /tr/podcastinizi-planlama-4-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Harekete Geçirme Çağrısı***  : Dinleyicilerden abone olmalarını ve güncellemeler için sosyal medyanızı takip etmelerini isteyin. 
+- ***Harekete Geçirme Çağrısı*** : Dinleyicilerden abone olmalarını ve güncellemeler için sosyal medyanızı takip etmelerini isteyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -322,11 +322,11 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Konu***  : Podcast'inizin temasıyla ilgili belirli bir konu seçin. 
+- ***Konu*** : Podcast'inizin temasıyla ilgili belirli bir konu seçin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ana Noktalar***  :<!-- wp:list -->
+- ***Ana Noktalar*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 - Konuya bir giriş yapın. 
 <!-- /wp:list-item -->
@@ -342,7 +342,7 @@ url: /tr/podcastinizi-planlama-4-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Harekete Geçirme Çağrısı***  : Dinleyicilerden gelecek bölümler için konu hakkında geri bildirim veya soru bırakmalarını isteyin. 
+- ***Harekete Geçirme Çağrısı*** : Dinleyicilerden gelecek bölümler için konu hakkında geri bildirim veya soru bırakmalarını isteyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -354,11 +354,11 @@ url: /tr/podcastinizi-planlama-4-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Konu***  : Dinleyicilerin sorularını yanıtlayın veya izleyicilerin geri bildirimlerine göre Bölüm 2'deki konuyu daha derinlemesine inceleyin. 
+- ***Konu*** : Dinleyicilerin sorularını yanıtlayın veya izleyicilerin geri bildirimlerine göre Bölüm 2'deki konuyu daha derinlemesine inceleyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ana Noktalar***  :<!-- wp:list -->
+- ***Ana Noktalar*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 - Seyircilerin sorularını veya yorumlarını inceleyin. 
 <!-- /wp:list-item -->
@@ -374,7 +374,7 @@ url: /tr/podcastinizi-planlama-4-gun/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Harekete Geçme Çağrısı***  : Daha fazla soru veya yorum isteyerek sürekli katılımı teşvik edin. 
+- ***Harekete Geçme Çağrısı*** : Daha fazla soru veya yorum isteyerek sürekli katılımı teşvik edin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

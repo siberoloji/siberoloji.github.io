@@ -32,67 +32,67 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***C:***  Jacob Sorber 
+- ***C:*** Jacob Sorber 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***C++:***  TheCherno 
+- ***C++:*** TheCherno 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Java:***  amigoscode 
+- ***Java:*** amigoscode 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***C#:***  kudvenkat 
+- ***C#:*** kudvenkat 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Python:***  Corey Schafer 
+- ***Python:*** Corey Schafer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***JavaScript:***  developedbyed 
+- ***JavaScript:*** developedbyed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Golang:***  Jon Calhoun 
+- ***Golang:*** Jon Calhoun 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Swift:***  CodeWithChris 
+- ***Swift:*** CodeWithChris 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kotlin:***  PhilippLackner 
+- ***Kotlin:*** PhilippLackner 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***PHP:***  ProgramWithGio 
+- ***PHP:*** ProgramWithGio 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ruby:***  DriftingRuby 
+- ***Ruby:*** DriftingRuby 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Rust:***  NoBoilerplate 
+- ***Rust:*** NoBoilerplate 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Lua:***  Steve's teacher 
+- ***Lua:*** Steve's teacher 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***R:***  marinstatlectures 
+- ***R:*** marinstatlectures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***SQL:***  Joey Blue 
+- ***SQL:*** Joey Blue 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***TypeScript:***  basarat, TypeScriptTV 
+- ***TypeScript:*** basarat,TypeScriptTV 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -102,51 +102,51 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***JavaScript:***  Akshay Saini 
+- ***JavaScript:*** Akshay Saini 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***C#:***  Microsoft Developer [Bob Tabor], dotnet [Scott/Kendra] 
+- ***C#:*** Microsoft Developer [Bob Tabor],dotnet [Scott/Kendra] 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Node.js:***  Traversy Media 
+- ***Node.js:*** Traversy Media 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***React:***  Dave Gray 
+- ***React:*** Dave Gray 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Vue:***  Vue Mastery 
+- ***Vue:*** Vue Mastery 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Django:***  CodingEntrepreneurs 
+- ***Django:*** CodingEntrepreneurs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Laravel:***  LaravelDaily 
+- ***Laravel:*** LaravelDaily 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Blazor:***  James Montemagno 
+- ***Blazor:*** James Montemagno 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Spring:***  SpringSourceDev 
+- ***Spring:*** SpringSourceDev 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***SpringBoot:***  amigoscode 
+- ***SpringBoot:*** amigoscode 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ruby on Rails:***  GorailsTV 
+- ***Ruby on Rails:*** GorailsTV 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***HTML/CSS:***  Kevin Powell 
+- ***HTML/CSS:*** Kevin Powell 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -270,39 +270,39 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***GIT:***  The Modern Coder 
+- ***GIT:*** The Modern Coder 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Linux:***  Learn Linux TV 
+- ***Linux:*** Learn Linux TV 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***DevOps:***  DevOpsToolkit 
+- ***DevOps:*** DevOpsToolkit 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***CI/CD:***  TechWorld with Nana 
+- ***CI/CD:*** TechWorld with Nana 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Docker:***  Bret Fisher 
+- ***Docker:*** Bret Fisher 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kubernetes:***  Kubesimplify 
+- ***Kubernetes:*** Kubesimplify 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Microservices:***  freeCodeCamp 
+- ***Microservices:*** freeCodeCamp 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Selenium:***  edureka! 
+- ***Selenium:*** edureka! 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Playwright:***  Jaydeep Karale 
+- ***Playwright:*** Jaydeep Karale 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -312,35 +312,35 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***AWS:***  amazonwebservices 
+- ***AWS:*** amazonwebservices 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Azure:***  Adam Marczak 
+- ***Azure:*** Adam Marczak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***GCP:***  edureka! 
+- ***GCP:*** edureka! 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Serverless:***  Serverless 
+- ***Serverless:*** Serverless 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Jenkins:***  DevOps Journey 
+- ***Jenkins:*** DevOps Journey 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Puppet:***  simplilearn 
+- ***Puppet:*** simplilearn 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Chef:***  simplilearn 
+- ***Chef:*** simplilearn 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ansible:***  Learn Linux TV 
+- ***Ansible:*** Learn Linux TV 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -350,23 +350,23 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Mathematics:***  3Blue1Brown, ProfRobBob, Ghrist Math 
+- ***Mathematics:*** 3Blue1Brown,ProfRobBob,Ghrist Math 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Machine Learning:***  sentdex, DeepLearningAI, StatQuest 
+- ***Machine Learning:*** sentdex,DeepLearningAI,StatQuest 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Excel:***  ExcelIsFun 
+- ***Excel:*** ExcelIsFun 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tableau:***  Tableau Tim 
+- ***Tableau:*** Tableau Tim 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***PowerBI:***  Guy in a Cube 
+- ***PowerBI:*** Guy in a Cube 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

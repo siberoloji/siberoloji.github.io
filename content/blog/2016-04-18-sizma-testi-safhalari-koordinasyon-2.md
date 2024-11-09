@@ -15,7 +15,7 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-04-18T16:08:00Z"
-excerpt: Bahsettiğimiz koordinasyon işlemleri içerisinde bulunan Kapsamın tespiti
+excerpt: Bahsettiğimiz koordinasyon işlemleri içerisinde bulunanKapsamıntespiti
   esnasında, hizmet alan firmanın amacını ortaya çıkarabilmek için hizmet veren güvenlik
   firması bazı sorular sorar. Aşağıda, yapılacak testin tipine göre sorulabilecek
   soruları açıklayacağız. Hizmet alacak firma, toplantı esnasında meydana gelebilecek
@@ -30,7 +30,7 @@ title: Sızma Testi Safhaları (Koordinasyon – 2)
 url: /tr/sizma-testi-safhalari-koordinasyon-2/
 ---
 
-  Sızma Testi hazırlıkları esnasında 1.Safha olan koordinasyon işlemlerinin genel yapısını bu <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049">bağlantıdaki</a> yazımızda incelemiştik. Şimdi ise, yine toplantı esnasında görüşülecek konulardan bir tanesini detaylı olarak inceleyeceğiz. 
+  Sızma Testi hazırlıkları esnasında 1.Safha olan koordinasyon işlemlerinin genel yapısını bu<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049">bağlantıdaki</a>yazımızda incelemiştik. Şimdi ise, yine toplantı esnasında görüşülecek konulardan bir tanesini detaylı olarak inceleyeceğiz. 
  
 
   Bahsettiğimiz koordinasyon işlemleri içerisinde bulunan&nbsp;***Kapsamın*** &nbsp;tespiti esnasında, hizmet alan firmanın amacını ortaya çıkarabilmek için hizmet veren güvenlik firması bazı sorular sorar. Aşağıda, yapılacak testin tipine göre sorulabilecek soruları açıklayacağız. Hizmet alacak firma, toplantı esnasında meydana gelebilecek belirsizliklerin önüne geçmek maksadıyla, bu sorulara verilecek cevaplar konusunda koordinasyon toplantısı öncesinde hazırlık yapmalıdır. 

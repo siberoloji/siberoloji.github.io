@@ -24,7 +24,7 @@ title: 'CrowdSec&#8217;i Anlamak: Açık Kaynaklı İşbirlikçi Bir Siber Güve
 url: /tr/crowdseci-anlamak-acik-kaynakli-isbirlikci-bir-siber-guvenlik-cozumu/
 ---
 
-  Giderek daha fazla birbirine bağlı dijital dünyada,  siber güvenliğe yönelik tehditler daha karmaşık ve amansız hale geliyor. Siber saldırılar, kötü amaçlı yazılımlar, veri ihlalleri ve diğer kötü amaçlı faaliyetler artık izole olaylar değil, her ölçekteki kuruluş için sürekli tehditler haline geldi. Geleneksel güvenlik önlemleri etkili olsa da, genellikle bu tehditlerin hacmi ve karmaşıklığıyla başa çıkmakta zorlanır. Tehdit tespiti ve azaltılmasına daha işbirlikçi ve dinamik bir yaklaşım sağlamak için tasarlanmış yenilikçi bir açık kaynaklı güvenlik aracı olan ***CrowdSec devreye giriyor.***  
+  Giderek daha fazla birbirine bağlı dijital dünyada,siber güvenliğeyönelik tehditler daha karmaşık ve amansız hale geliyor. Siber saldırılar, kötü amaçlı yazılımlar, veri ihlalleri ve diğer kötü amaçlı faaliyetler artık izole olaylar değil, her ölçekteki kuruluş için sürekli tehditler haline geldi. Geleneksel güvenlik önlemleri etkili olsa da, genellikle bu tehditlerin hacmi ve karmaşıklığıyla başa çıkmakta zorlanır.Tehdit tespiti ve azaltılmasına daha işbirlikçi ve dinamik bir yaklaşım sağlamak için tasarlanmış yenilikçi bir açık kaynaklı güvenlik aracı olan***CrowdSec devreye giriyor.***  
  
 
   CrowdSec, siber tehditlerle mücadele etmek için kitle kaynak kullanımının gücünden yararlanan, modern, topluluk destekli bir siber güvenlik çözümü olarak ivme kazanıyor. Bu blog yazısında CrowdSec'i ayrıntılı olarak inceleyeceğiz: nasıl çalıştığını, temel özelliklerini, sunduğu avantajları ve işbirlikçi siber güvenliğin geleceğine nasıl katkıda bulunduğunu ele alacağız. 
@@ -153,7 +153,7 @@ url: /tr/crowdseci-anlamak-acik-kaynakli-isbirlikci-bir-siber-guvenlik-cozumu/
  ### Topluluk Paylaşımı
 <!-- /wp:heading -->
 
-  CrowdSec'in gücü işbirlikçi yapısında yatar. Bir kullanıcı tarafından bir tehdit belirlendiğinde, bu bilgi diğer CrowdSec kullanıcılarıyla paylaşılır ve herkesin korunması artırılır. Kullanıcılar ***CrowdSec CTI (İşbirlikçi Tehdit İstihbaratı) veritabanına katkıda bulunabilir ve bundan faydalanabilir. Bu, ***  siber güvenlik alanındaki yeni veya daha küçük oyuncuların bile en son tehdit istihbaratına erişmesini sağlayarak siber güvenlik savunması için eşit şartlar oluşturur. 
+  CrowdSec'in gücü işbirlikçi yapısında yatar. Bir kullanıcı tarafından bir tehdit belirlendiğinde, bu bilgi diğer CrowdSec kullanıcılarıyla paylaşılır ve herkesin korunması artırılır. Kullanıcılar***CrowdSec CTI (İşbirlikçi Tehdit İstihbaratı) veritabanına katkıda bulunabilir ve bundan faydalanabilir. Bu,*** siber güvenlikalanındaki yeni veya daha küçük oyuncuların bile en son tehdit istihbaratına erişmesinisağlayarak siber güvenlik savunması için eşit şartlar oluşturur. 
  
 
 
@@ -219,15 +219,15 @@ url: /tr/crowdseci-anlamak-acik-kaynakli-isbirlikci-bir-siber-guvenlik-cozumu/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Topluluk Katılımına Güvenme***  : CrowdSec'in başarısı büyük ölçüde kullanıcı tabanının aktif katılımına bağlıdır. Topluluk tehdit istihbaratını aktif olarak paylaşmazsa veya doğru veri sağlamazsa, platformun genel etkinliği azalabilir. 
+- ***Topluluk Katılımına Güvenme*** : CrowdSec'in başarısı büyük ölçüde kullanıcı tabanının aktif katılımına bağlıdır. Topluluk tehdit istihbaratını aktif olarak paylaşmazsa veya doğru veri sağlamazsa, platformun genel etkinliği azalabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yanlış Pozitifler***  : Birçok otomatik güvenlik aracı gibi CrowdSec de zaman zaman yanlış pozitifler üretebilir; meşru aktiviteleri kötü amaçlı olarak işaretleyebilir. Kullanıcıların bu oluşumları en aza indirmek için uyarıları dikkatlice incelemeleri ve algılama kurallarını ayarlamaları gerekir. 
+- ***Yanlış Pozitifler*** : Birçok otomatik güvenlik aracı gibi CrowdSec de zaman zaman yanlış pozitifler üretebilir; meşru aktiviteleri kötü amaçlı olarak işaretleyebilir. Kullanıcıların bu oluşumları en aza indirmek için uyarıları dikkatlice incelemeleri ve algılama kurallarını ayarlamaları gerekir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Teknik Uzmanlık***  : Platform kullanıcı dostu olacak şekilde tasarlanmış olsa da, CrowdSec'i daha karmaşık ortamlar için tam olarak optimize etmek ve yapılandırmak için belirli düzeyde teknik uzmanlık gerekebilir. 
+- ***Teknik Uzmanlık*** : Platform kullanıcı dostu olacak şekilde tasarlanmış olsa da, CrowdSec'i daha karmaşık ortamlar için tam olarak optimize etmek ve yapılandırmak için belirli düzeyde teknik uzmanlık gerekebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -242,5 +242,5 @@ url: /tr/crowdseci-anlamak-acik-kaynakli-isbirlikci-bir-siber-guvenlik-cozumu/
   CrowdSec, açık kaynaklı yazılımın gücünü küresel iş birliğinin faydalarıyla birleştirerek siber güvenliğe yeni bir yaklaşım sunar. CrowdSec, kalabalık kaynaklı tehdit istihbaratından yararlanarak kullanıcılara çok çeşitli siber tehditlere karşı sürekli güncellenen, gerçek zamanlı bir savunma sunar. Ölçeklenebilirliği, kullanım kolaylığı ve topluluk odaklı modeli, onu her ölçekteki kuruluş için, özellikle de uygun maliyetli ve esnek bir güvenlik çözümü arayanlar için çekici bir seçenek haline getirir. 
  
 
-  Tehdit manzarası gelişmeye devam ederken, CrowdSec'in  siber güvenliğe yönelik işbirlikçi yaklaşımı , kuruluşların ortaya çıkan tehditlerin önünde kalabilmelerini sağlar. CrowdSec topluluğuna katılarak, kullanıcılar yalnızca kendi sistemlerini korumakla kalmaz, aynı zamanda tüm ağın kolektif savunmasına da katkıda bulunurlar; siber suçla mücadelede yer alan herkes için kazan-kazan durumu. 
+  Tehdit manzarası gelişmeye devam ederken, CrowdSec'insiber güvenliğeyönelik işbirlikçi yaklaşımı , kuruluşların ortaya çıkan tehditlerin önünde kalabilmelerini sağlar. CrowdSec topluluğuna katılarak, kullanıcılar yalnızca kendi sistemlerini korumakla kalmaz, aynı zamanda tüm ağın kolektif savunmasına da katkıda bulunurlar; siber suçla mücadelede yer alan herkes için kazan-kazan durumu. 
  

@@ -25,7 +25,7 @@ title: Metasploit Framework Installation
 url: /metasploit-framework-installation/
 ---
 
-   Metasploit Framework is a software used in penetration testing and security testing. The Pro version  of the software developed by Rapid7is distributed for a fee and has visual interface support. 
+  Metasploit Framework is a software used in penetration testing and security testing. The Pro versionof the softwaredeveloped by Rapid7is distributed for a fee and has visual interface support. 
  
 
   Metasploit Framework comes pre-installed in Kali distributions, etc. Even if you don't use Kali, you can install it on your own Linux distribution. In this article, we will examine how to install the free version, which is the Community version and works from the command line. It is estimated that the commands used in the explanation will work in all Ubuntu-based distributions. We performed our tests and trials on the Linux Mint 18.1 Cinnamon Linux distribution. 

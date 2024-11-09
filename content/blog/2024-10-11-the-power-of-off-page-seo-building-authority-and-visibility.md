@@ -79,7 +79,7 @@ https://youtu.be/OR05NPViNRk
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***High-Quality <a href="https://www.siberoloji.com/what-is-the-importance-of-backlinks/" target="_blank" rel="noopener" title="">Backlinks</a>:***  Focus on acquiring backlinks from reputable websites with high domain authority. 
+- ***High-Quality <a href="https://www.siberoloji.com/what-is-the-importance-of-backlinks/" target="_blank" rel="noopener" title="">Backlinks</a>:*** Focus on acquiring backlinks from reputable websites with high domain authority. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -127,7 +127,7 @@ https://youtu.be/OR05NPViNRk
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Google My Business:***  Optimize your <a href="https://www.google.com/business/" target="_blank" rel="noopener" title="">Google My Business</a> listing with accurate information and relevant keywords. 
+- ***Google My Business:*** Optimize your <a href="https://www.google.com/business/" target="_blank" rel="noopener" title="">Google My Business</a> listing with accurate information and relevant keywords. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

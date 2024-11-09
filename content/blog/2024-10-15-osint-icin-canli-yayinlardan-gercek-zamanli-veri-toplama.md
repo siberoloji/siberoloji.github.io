@@ -47,15 +47,15 @@ url: /tr/osint-icin-canli-yayinlardan-gercek-zamanli-veri-toplama/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Zamanında Olma:***  Devam eden olaylara ilişkin anında bilgi edinilmesini sağlar. 
+- ***Zamanında Olma:*** Devam eden olaylara ilişkin anında bilgi edinilmesini sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İlgililik:***  Analistlerin güncel tartışmalara ve görüşlere odaklanmasını sağlamak. 
+- ***İlgililik:*** Analistlerin güncel tartışmalara ve görüşlere odaklanmasını sağlamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Doğruluk:***  Son gelişmeleri yansıtan güncel bilgilerin sağlanması. 
+- ***Doğruluk:*** Son gelişmeleri yansıtan güncel bilgilerin sağlanması. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

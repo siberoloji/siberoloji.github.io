@@ -19,7 +19,7 @@ title: 'Nessus: Siber Güvenlik için Mükemmel Bir Tarayıcı'
 url: /tr/nessus-siber-guvenlik-icin-mukemmel-bir-tarayici/
 ---
 
-  Siber güvenlik alanında, tehditler sürekli olarak evrimleşip daha karmaşık hale geldiğinde, güvenlik açığı yönetim araçları ağları, sistemleri ve verileri korumada önemli bir rol oynar. Bu kategorideki en iyi bilinen araçlardan biri, <a href="https://www.tenable.com/" target="_blank" rel="noreferrer noopener">Tenable</a> , Inc. tarafından geliştirilen bir ürün olan ***Nessus'tur*** . Nessus, onlarca yıldır güvenlik açığı tarama alanında temel bir unsur olmuştur ve kuruluşların saldırganlar bunları istismar etmeden önce sistemlerindeki olası güvenlik açıklarını belirlemelerine ve azaltmalarına yardımcı olmuştur. Bu blog yazısı, Nessus'un ne olduğunu, nasıl çalıştığını, temel özelliklerini ve modern siber güvenlik uygulamalarındaki önemini açıklayarak derinlemesine bir inceleme yapacaktır.<a href="https://www.tenable.com/" target="_blank" rel="noreferrer noopener"></a> 
+  Siber güvenlik alanında, tehditler sürekli olarak evrimleşip daha karmaşık hale geldiğinde, güvenlik açığı yönetim araçları ağları, sistemleri ve verileri korumada önemli bir rol oynar. Bu kategorideki en iyi bilinen araçlardan biri,<a href="https://www.tenable.com/" target="_blank" rel="noreferrer noopener">Tenable</a>, Inc. tarafından geliştirilen bir ürün olan***Nessus'tur*** . Nessus, onlarca yıldır güvenlik açığı tarama alanında temel bir unsur olmuştur ve kuruluşların saldırganlar bunları istismar etmeden önce sistemlerindeki olası güvenlik açıklarını belirlemelerine ve azaltmalarına yardımcı olmuştur. Bu blog yazısı, Nessus'un ne olduğunu, nasıl çalıştığını, temel özelliklerini ve modern siber güvenlik uygulamalarındaki önemini açıklayarak derinlemesine bir inceleme yapacaktır.<a href="https://www.tenable.com/" target="_blank" rel="noreferrer noopener"></a> 
  
 
 
@@ -44,19 +44,19 @@ url: /tr/nessus-siber-guvenlik-icin-mukemmel-bir-tarayici/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Tarama Başlatma***  : Kullanıcı, hedeflenecek IP adreslerini, alt ağları veya etki alanlarını seçerek ve gerçekleştirilecek denetim türlerini belirterek bir tarama yapılandırır. Bu, temel bir taramadan güvenlik politikalarına uyumu denetleyen daha derinlemesine bir değerlendirmeye kadar değişebilir. 
+- ***Tarama Başlatma*** : Kullanıcı, hedeflenecek IP adreslerini, alt ağları veya etki alanlarını seçerek ve gerçekleştirilecek denetim türlerini belirterek bir tarama yapılandırır. Bu, temel bir taramadan güvenlik politikalarına uyumu denetleyen daha derinlemesine bir değerlendirmeye kadar değişebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Keşif***  : Nessus, hedef ağdaki ana bilgisayarları keşfederek, hangi sistemlerin canlı olduğunu ve hangi hizmetlerin çalıştığını belirleyerek başlar. Bu adım, Nessus'un etkin olmayan sistemleri veya alakasız cihazları tarayarak zaman kaybetmemesini sağlar. 
+- ***Keşif*** : Nessus, hedef ağdaki ana bilgisayarları keşfederek, hangi sistemlerin canlı olduğunu ve hangi hizmetlerin çalıştığını belirleyerek başlar. Bu adım, Nessus'un etkin olmayan sistemleri veya alakasız cihazları tarayarak zaman kaybetmemesini sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik Açığı Algılama***  : Etkin sistemleri keşfettikten sonra Nessus, seçili eklentilere dayalı güvenlik açığı kontrollerini çalıştırmaya başlar. Bu, eksik yamaları, yanlış yapılandırmaları, zayıf kimlik bilgilerini ve diğer olası güvenlik açıklarını belirlemeyi içerir. 
+- ***Güvenlik Açığı Algılama*** : Etkin sistemleri keşfettikten sonra Nessus, seçili eklentilere dayalı güvenlik açığı kontrollerini çalıştırmaya başlar. Bu, eksik yamaları, yanlış yapılandırmaları, zayıf kimlik bilgilerini ve diğer olası güvenlik açıklarını belirlemeyi içerir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Analiz ve Raporlama***  : Tarama tamamlandıktan sonra Nessus, bulunan güvenlik açıklarını, her sorunun ciddiyetini ve düzeltme önerilerini içeren ayrıntılı bir rapor oluşturur. Bu raporlar, BT ekiplerinin güvenlik açıklarını düzeltme çabalarına öncelik vermeleri açısından kritik öneme sahiptir. 
+- ***Analiz ve Raporlama*** : Tarama tamamlandıktan sonra Nessus, bulunan güvenlik açıklarını, her sorunun ciddiyetini ve düzeltme önerilerini içeren ayrıntılı bir rapor oluşturur. Bu raporlar, BT ekiplerinin güvenlik açıklarını düzeltme çabalarına öncelik vermeleri açısından kritik öneme sahiptir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -181,15 +181,15 @@ url: /tr/nessus-siber-guvenlik-icin-mukemmel-bir-tarayici/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Nessus Essentials***  : Bu ücretsiz sürüm, temel güvenlik açığı tarama yeteneklerine ihtiyaç duyan öğrenciler, eğitimciler ve küçük işletmeler için idealdir. 16 IP adresiyle sınırlıdır ancak Nessus'un temel özelliklerinin çoğunu sunar. 
+- ***Nessus Essentials*** : Bu ücretsiz sürüm, temel güvenlik açığı tarama yeteneklerine ihtiyaç duyan öğrenciler, eğitimciler ve küçük işletmeler için idealdir. 16 IP adresiyle sınırlıdır ancak Nessus'un temel özelliklerinin çoğunu sunar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Nessus Professional***  : Güvenlik profesyonelleri ve danışmanları için tasarlanan bu sürüm, sınırsız IP adresi taraması, daha gelişmiş özellikler ve tam eklenti erişimi sunar. İşletmeler arasında Nessus'un en popüler sürümüdür. 
+- ***Nessus Professional*** : Güvenlik profesyonelleri ve danışmanları için tasarlanan bu sürüm, sınırsız IP adresi taraması, daha gelişmiş özellikler ve tam eklenti erişimi sunar. İşletmeler arasında Nessus'un en popüler sürümüdür. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tenable.io***  : Daha büyük işletmeler için Tenable.io, tarama motoru olarak Nessus ile bulut tabanlı güvenlik açığı yönetimi sağlar. Bu sürüm varlık keşfi, kapsayıcı tarama ve gelişmiş raporlama özelliklerini içerir. 
+- ***Tenable.io*** : Daha büyük işletmeler için Tenable.io, tarama motoru olarak Nessus ile bulut tabanlı güvenlik açığı yönetimi sağlar. Bu sürüm varlık keşfi, kapsayıcı tarama ve gelişmiş raporlama özelliklerini içerir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

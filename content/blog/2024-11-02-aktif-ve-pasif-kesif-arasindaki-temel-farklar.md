@@ -24,7 +24,7 @@ title: Aktif ve Pasif Keşif Arasındaki Temel Farklar
 url: /tr/aktif-ve-pasif-kesif-arasindaki-temel-farklar/
 ---
 
-Aktif ve pasif keşif arasındaki farkları anlamak, güvenlik uzmanları ve ağ yöneticileri için hayati önem taşır. Bilgi toplamaya yönelik bu iki temel yaklaşım farklı amaçlara hizmet eder ve kendi değerlendirme kümeleriyle birlikte gelir. Bu kapsamlı kılavuz, her iki yöntemin temel farklılıklarını, <span class="google-anno-t">uygulamalarını</span> ve çıkarımlarını inceler.
+Aktif ve pasif keşif arasındaki farkları anlamak, güvenlik uzmanları ve ağ yöneticileri için hayati önem taşır. Bilgi toplamaya yönelik bu iki temel yaklaşım farklı amaçlara hizmet eder ve kendi değerlendirme kümeleriyle birlikte gelir. Bu kapsamlı kılavuz, her iki yöntemin temel farklılıklarını, <span class="google-anno-t">uygulamalarını</span>ve çıkarımlarını inceler.
  ## Keşif Genel Bakışı
 Keşif, genellikle "recon" olarak kısaltılır, hedef sistemler, ağlar veya kuruluşlar hakkında bilginin toplandığı güvenlik değerlendirmesinin ön aşamasıdır. Bu bilgi, olası güvenlik açıklarını, güvenlik duruşunu ve sistem mimarisini anlamak için temel oluşturur.
  ## Pasif Keşif
@@ -132,7 +132,7 @@ Aktif keşif hedef sistemle doğrudan etkileşimi içerir. Bu yöntem:
  ### Aktif Keşifte Kullanılan Araçlar
 <ul class="wp-block-list">
  	- Ağ taraması için Nmap 
- 	- <span class="google-anno-t">Web sunucusu</span> analizi için Nikto 
+ 	- <span class="google-anno-t">Web sunucusu</span>analiziiçin Nikto 
  	- Paket analizi için Wireshark 
  	- Web uygulama testleri için Burp Suite 
  

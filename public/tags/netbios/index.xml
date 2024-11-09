@@ -38,16 +38,16 @@
 &lt;p&gt;NetBIOS operates on the datalink layer of the OSI model, providing a set of services for applications to communicate with each other on a network. Key functionalities of NetBIOS include:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Name resolution:***  NetBIOS allows applications to resolve names of network resources, such as computers and printers, into their corresponding network addresses. 
+- ***Name resolution:*** NetBIOS allows applications to resolve names of network resources,such as computers and printers,into their corresponding network addresses. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Session management:&lt;/strong&gt;&lt;/em&gt;  NetBIOS manages sessions between applications, allowing them to establish connections and exchange data.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Session management:&lt;/strong&gt;&lt;/em&gt; NetBIOS manages sessions between applications,allowing them to establish connections and exchange data.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Datagram services:&lt;/strong&gt;&lt;/em&gt;  NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Datagram services:&lt;/strong&gt;&lt;/em&gt; NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -57,16 +57,16 @@
 &lt;p&gt;NetBIOS consists of several key components:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***NetBIOS Name Service (NBNS):***  This component resolves NetBIOS names into their corresponding network addresses. NBNS uses a broadcast-based protocol to locate other computers on the network. 
+- ***NetBIOS Name Service (NBNS):*** This component resolves NetBIOS names into their corresponding network addresses.NBNS uses a broadcast-based protocol to locate other computers on the network. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;NetBIOS Interface Message Processor (NIB):&lt;/strong&gt;&lt;/em&gt;  The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa. It interacts with the underlying network interface card (NIC) to transmit and receive data.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NetBIOS Interface Message Processor (NIB):&lt;/strong&gt;&lt;/em&gt; The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa.It interacts with the underlying network interface card (NIC) to transmit and receive data.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;NetBIOS Workgroup:&lt;/strong&gt;&lt;/em&gt;  A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NetBIOS Workgroup:&lt;/strong&gt;&lt;/em&gt; A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -80,32 +80,32 @@
 &lt;p&gt;While NetBIOS has been largely replaced by TCP/IP-based protocols in modern networking environments,it still has relevance in certain scenarios. Some common use cases for NetBIOS include:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Legacy applications:***  Some older applications may still rely on NetBIOS for network communication. 
+- ***Legacy applications:*** Some older applications may still rely on NetBIOS for network communication. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Small networks:&lt;/strong&gt;&lt;/em&gt;  In small, simple network environments, NetBIOS can provide a basic networking solution.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Small networks:&lt;/strong&gt;&lt;/em&gt; In small,simple network environments,NetBIOS can provide a basic networking solution.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Specific services:&lt;/strong&gt;&lt;/em&gt;  Certain services, such as file and print sharing, may still use NetBIOS.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Specific services:&lt;/strong&gt;&lt;/em&gt; Certain services,such as file and print sharing,may still use NetBIOS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Challenges and Considerations:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Security:***  NetBIOS can be vulnerable to security attacks, such as spoofing and denial of service (DoS) attacks. Proper security measures, such as firewalls and intrusion detection systems, should be implemented to protect NetBIOS networks. 
+- ***Security:*** NetBIOS can be vulnerable to security attacks,such as spoofing and denial of service (DoS) attacks.Proper security measures,such as firewalls and intrusion detection systems,should be implemented to protect NetBIOS networks. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Scalability:&lt;/strong&gt;&lt;/em&gt;  NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Scalability:&lt;/strong&gt;&lt;/em&gt; NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Compatibility:&lt;/strong&gt;&lt;/em&gt;  NetBIOS may not be compatible with all network operating systems or hardware.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Compatibility:&lt;/strong&gt;&lt;/em&gt; NetBIOS may not be compatible with all network operating systems or hardware.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

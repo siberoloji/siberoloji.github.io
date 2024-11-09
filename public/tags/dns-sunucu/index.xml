@@ -33,7 +33,7 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- tarayıcınıza &lt;code&gt;192.168.1.1&lt;/code&gt; gibi bir IP adresi yazmak yerine , &lt;code&gt;www.example.com&lt;/code&gt; yazabilirsiniz ve DNS bu alan adını karşılık gelen IP adresine çevirir. Bu işlem milisaniyeler içinde gerçekleşir, bu nedenle kullanıcılar bunun gerçekleştiğini bile fark etmezler. 
+- tarayıcınıza&lt;code&gt;192.168.1.1&lt;/code&gt; gibi bir IP adresi yazmak yerine ,&lt;code&gt;www.example.com&lt;/code&gt; yazabilirsiniz ve DNS bu alan adını karşılık gelen IP adresine çevirir. Bu işlem milisaniyeler içinde gerçekleşir, bu nedenle kullanıcılar bunun gerçekleştiğini bile fark etmezler. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Önemli Noktalar:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -67,7 +67,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;TLD İsim Sunucusu&lt;/strong&gt;&lt;/em&gt;  : Bu sunucular &lt;code&gt;.org&lt;/code&gt;, .&lt;code&gt;com&lt;/code&gt; , &lt;code&gt;.net&lt;/code&gt;, veya gibi üst düzey alan adlarıyla ilgili bilgileri depolar. Sorguyu doğru yetkili isim sunucusuna yönlendirmeye yardımcı olurlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;TLD İsim Sunucusu&lt;/strong&gt;&lt;/em&gt; : Bu sunucular &lt;code&gt;.org&lt;/code&gt;, .&lt;code&gt;com&lt;/code&gt; ,&lt;code&gt;.net&lt;/code&gt;, veyagibi üst düzey alan adlarıyla ilgili bilgileri depolar. Sorguyu doğru yetkili isim sunucusuna yönlendirmeye yardımcı olurlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -93,7 +93,7 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kullanıcı Eylemi***  : Tarayıcınıza bir alan adı (örneğin &lt;code&gt;www.example.com&lt;/code&gt;) yazarsınız . 
+- ***Kullanıcı Eylemi*** : Tarayıcınızabir alan adı (örneğin &lt;code&gt;www.example.com&lt;/code&gt;) yazarsınız . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
@@ -102,7 +102,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kök Sunucu Sorgusu&lt;/strong&gt;&lt;/em&gt;  : Özyinelemeli sunucunun alan adı bilgileri önbelleğe alınmamışsa, TLD sunucusunun konumunu bulmak için bir kök sunucuya sorgu gönderir (örneğin, &lt;code&gt;.com&lt;/code&gt; için &lt;code&gt;&lt;a href=&#34;https://www.example.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.example.com&lt;/a&gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kök Sunucu Sorgusu&lt;/strong&gt;&lt;/em&gt; : Özyinelemeli sunucunun alan adı bilgileri önbelleğe alınmamışsa, TLD sunucusunun konumunu bulmak için bir kök sunucuya sorgu gönderir (örneğin,&lt;code&gt;.com&lt;/code&gt; için&lt;code&gt;&lt;a href=&#34;https://www.example.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.example.com&lt;/a&gt;&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -117,7 +117,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;IP Adresi Yanıtı&lt;/strong&gt;&lt;/em&gt;  : Yetkili DNS sunucusu, &lt;code&gt;&lt;a href=&#34;https://www.example.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.example.com&lt;/a&gt;&lt;/code&gt; için IP adresini yinelemeli sunucuya döndürür ve ardından bu adres tarayıcınıza iletilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;IP Adresi Yanıtı&lt;/strong&gt;&lt;/em&gt; : Yetkili DNS sunucusu, &lt;code&gt;&lt;a href=&#34;https://www.example.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;www.example.com&lt;/a&gt;&lt;/code&gt; için IP adresiniyinelemeli sunucuya döndürür ve ardından bu adres tarayıcınıza iletilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -202,7 +202,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;DNS Sunucularını Değiştirin&lt;/strong&gt;&lt;/em&gt;  : İSS&amp;rsquo;nizin DNS sunucuları yavaşsa veya yanıt vermiyorsa, Google DNS (&lt;code&gt;8.8.8.8&lt;/code&gt; ve &lt;code&gt;8.8.4.4&lt;/code&gt;) veya Cloudflare DNS (&lt;code&gt;1.1.1.&lt;/code&gt;1) gibi genel DNS sunucularına geçebilirsiniz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;DNS Sunucularını Değiştirin&lt;/strong&gt;&lt;/em&gt; : İSS&amp;rsquo;nizin DNS sunucuları yavaşsa veya yanıt vermiyorsa, Google DNS (&lt;code&gt;8.8.8.8&lt;/code&gt; ve&lt;code&gt;8.8.4.4&lt;/code&gt;) veya Cloudflare DNS (&lt;code&gt;1.1.1.&lt;/code&gt;1)gibi genel DNS sunucularına geçebilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;

@@ -38,15 +38,15 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kondenser mikrofonlar:***   Hassasiyetleri ve netlikleriyle bilinen kondenser mikrofonlar, stüdyo kayıtları ve seslendirmeler için idealdir. 
+- ***Kondenser mikrofonlar:*** Hassasiyetleri ve netlikleriyle bilinen kondenser mikrofonlar, stüdyo kayıtları ve seslendirmeler için idealdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dinamik mikrofonlar:***   Kondansatör mikrofonlara göre daha dayanıklı ve daha az hassas olan dinamik mikrofonlar, genellikle canlı performanslar ve dış mekan kayıtları için kullanılır. 
+- ***Dinamik mikrofonlar:*** Kondansatör mikrofonlara göre daha dayanıklı ve daha az hassas olan dinamik mikrofonlar, genellikle canlı performanslar ve dış mekan kayıtları için kullanılır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tüfek mikrofonlar:***   Belirli bir yönden gelen sesi almak için tasarlanan tüfek mikrofonlar genellikle film yapımcılığı ve televizyon yapımlarında kullanılır. 
+- ***Tüfek mikrofonlar:*** Belirli bir yönden gelen sesi almak için tasarlanan tüfek mikrofonlar genellikle film yapımcılığı ve televizyon yapımlarında kullanılır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -58,15 +58,15 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Mesafe:***   Mikrofonunuz ile ses kaynağı arasındaki mesafe genel tonu ve ses seviyesini etkileyecektir. Optimum yerleşimi bulmak için farklı mesafeleri deneyin. 
+- ***Mesafe:*** Mikrofonunuz ile ses kaynağı arasındaki mesafe genel tonu ve ses seviyesini etkileyecektir. Optimum yerleşimi bulmak için farklı mesafeleri deneyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Açı:***   Mikrofonunuzu konumlandırdığınız açı, farklı frekansların dengesini etkileyebilir. Sesi nasıl etkilediğini görmek için farklı açıları deneyin. 
+- ***Açı:*** Mikrofonunuzu konumlandırdığınız açı, farklı frekansların dengesini etkileyebilir. Sesi nasıl etkilediğini görmek için farklı açıları deneyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yalıtım:***   Mikrofonunuzu sessiz bir ortama yerleştirerek veya patlayıcı sesleri azaltmak için pop filtresi kullanarak arka plan gürültüsünü en aza indirin. 
+- ***Yalıtım:*** Mikrofonunuzu sessiz bir ortama yerleştirerek veya patlayıcı sesleri azaltmak için pop filtresi kullanarak arka plan gürültüsünü en aza indirin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -76,7 +76,7 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
   Ses arayüzü, mikrofonunuzu bilgisayarınıza bağlayan bir cihazdır. Ön amplifikasyon, fantom güç (yoğunlaştırıcı mikrofonlar için) ve çoklu giriş ve çıkışlar gibi temel özellikler sağlar.
  
 
-  ***Kayıt  Yazılımı*** 
+  ***KayıtYazılımı*** 
  
 
   Hem ücretsiz hem de ücretli olmak üzere birçok mükemmel ses kayıt yazılımı seçeneği mevcuttur. Bazı popüler seçenekler şunlardır:
@@ -84,15 +84,15 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Audacity:***   Kullanıcı dostu arayüze sahip, ücretsiz ve açık kaynaklı bir yazılımdır. 
+- ***Audacity:*** Kullanıcı dostu arayüze sahip, ücretsiz ve açık kaynaklı bir yazılımdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Adobe Audition:***   Düzenleme ve miksleme için gelişmiş özelliklere sahip profesyonel düzeyde bir yazılım. 
+- ***Adobe Audition:*** Düzenleme ve miksleme için gelişmiş özelliklere sahip profesyonel düzeyde bir yazılım. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***GarageBand:***   Mac kullanıcıları için popüler bir seçenek olan GarageBand, müzik kaydetmek ve üretmek için çeşitli araçlar sunuyor. 
+- ***GarageBand:*** Mac kullanıcıları için popüler bir seçenek olan GarageBand, müzik kaydetmek ve üretmek için çeşitli araçlar sunuyor. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -101,19 +101,19 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kazanç:***   Sinyalinizin çok yüksek veya çok düşük olmamasını sağlamak için ses arayüzünüzdeki veya kayıt yazılımınızdaki kazanç seviyesini ayarlayın. 
+- ***Kazanç:*** Sinyalinizin çok yüksek veya çok düşük olmamasını sağlamak için ses arayüzünüzdeki veya kayıt yazılımınızdaki kazanç seviyesini ayarlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eşitleme:***   Kaydınızın frekans dengesini ayarlamak için eşitlemeyi kullanın. Bu, belirli frekansları iyileştirmeye veya istenmeyen gürültüyü azaltmaya yardımcı olabilir. 
+- ***Eşitleme:*** Kaydınızın frekans dengesini ayarlamak için eşitlemeyi kullanın. Bu, belirli frekansları iyileştirmeye veya istenmeyen gürültüyü azaltmaya yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sıkıştırma:***   Sıkıştırma, dinamik aralığı azaltmak ve sesinizi daha tutarlı hale getirmek için kullanılabilir. 
+- ***Sıkıştırma:*** Sıkıştırma, dinamik aralığı azaltmak ve sesinizi daha tutarlı hale getirmek için kullanılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gürültü azaltma:***   Kaydınızda arka plan gürültüsü varsa, bunu ortadan kaldırmak için gürültü azaltma araçlarını kullanabilirsiniz. 
+- ***Gürültü azaltma:*** Kaydınızda arka plan gürültüsü varsa, bunu ortadan kaldırmak için gürültü azaltma araçlarını kullanabilirsiniz. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -128,19 +128,19 @@ url: /tr/podcast-kaydi-temelleri-5-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Düzenli olarak pratik yapın:***   Ne kadar çok pratik yaparsanız, ses kaydı konusunda o kadar iyi olursunuz. 
+- ***Düzenli olarak pratik yapın:*** Ne kadar çok pratik yaparsanız, ses kaydı konusunda o kadar iyi olursunuz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Farklı teknikler deneyin:***   Yeni şeyler denemekten ve farklı kayıt tekniklerini denemekten korkmayın. 
+- ***Farklı teknikler deneyin:*** Yeni şeyler denemekten ve farklı kayıt tekniklerini denemekten korkmayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eleştirel dinleyin:***   Kayıtlarınızın ayrıntılarına dikkat edin ve iyileştirilebilecek alanları belirleyin. 
+- ***Eleştirel dinleyin:*** Kayıtlarınızın ayrıntılarına dikkat edin ve iyileştirilebilecek alanları belirleyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Geri bildirim isteyin:***   Arkadaşlarınızdan veya aile üyelerinizden kayıtlarınızı dinlemelerini ve geri bildirim sağlamalarını isteyin. 
+- ***Geri bildirim isteyin:*** Arkadaşlarınızdan veya aile üyelerinizden kayıtlarınızı dinlemelerini ve geri bildirim sağlamalarını isteyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

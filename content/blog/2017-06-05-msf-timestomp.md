@@ -17,9 +17,9 @@ classicmag_post_sidebar_option:
 date: "2017-06-05T13:37:00Z"
 excerpt: Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir.
   Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız
-  izleri incelemek forensics araştırmacılarının dikkatini çeker. Dosyaların zaman
+  izleri incelemekforensicsaraştırmacılarının dikkatini çeker. Dosyaların zaman
   damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından
-  karıştırmak için Meterpreter timestomp adı verilen bir komut sağlamaktadır.
+  karıştırmak için Meterpretertimestompadı verilen bir komut sağlamaktadır.
 guid: https://www.siberoloji.com/?p=1195
 id: 1195
 image: /assets/images/2024/06/metasploit.jpg

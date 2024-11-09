@@ -15,9 +15,9 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-04-01T13:53:00Z"
-excerpt:  If you have Ubuntu oran operating system that uses the apt package manager,
-  you must have used apt-get update  and similar commands.  We will show that although
-  the apt-get update, apt-get upgrade and apt-get dist-upgrade commands are similar
+excerpt: If you have Ubuntuoran operating system that usesthe apt package manager,
+  you must have usedapt-getupdateand similar commands.We will show that although
+  the apt-getupdate,apt-get upgradeandapt-get dist-upgradecommands are similar
   to each other, they have different tasks.
 guid: https://www.siberoloji.com/?p=1313
 id: 1313
@@ -129,7 +129,7 @@ Reading package lists... Done
 # apt-get upgrade 
 <!-- /wp:heading -->
 
-  It upgrades all the packages installed on your system to the latest version in the list you updated with the apt-get update command. The point to note here is that the update is performed on the INSTALLED  packages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.
+  It upgrades all the packages installed on your system tothe latest version in the list you updated with theapt-getupdate command. The point to note here is that the update is performed on the INSTALLEDpackages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.
  
 
   Some&nbsp;&nbsp;software&nbsp;developers or system administrators do not want to install packages or kernel files that they do not need, considering the stability of their systems. In such a case, an upgrade is quite useful. Only existing packages are upgraded to the latest version. Another important point is that no packages are deleted from the system. Only existing packages are upgraded to the latest version.

@@ -66,23 +66,23 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Tam Metin Araması***  :<br>Elasticsearch, bulanık arama, ifade araması ve joker karakter araması gibi gelişmiş arama yetenekleri sağlayarak tam metin aramasında mükemmeldir. Hem yapılandırılmış hem de yapılandırılmamış verileri işleyebilir ve bu da onu belgeleri aramaktan günlükleri sorgulamaya kadar çeşitli kullanım durumları için uygun hale getirir. 
+- ***Tam Metin Araması*** :<br>Elasticsearch, bulanık arama, ifade araması ve joker karakter araması gibi gelişmiş arama yetenekleri sağlayarak tam metin aramasında mükemmeldir. Hem yapılandırılmış hem de yapılandırılmamış verileri işleyebilir ve bu da onu belgeleri aramaktan günlükleri sorgulamaya kadar çeşitli kullanım durumları için uygun hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gerçek Zamanlı Veri Dizinleme ve Arama***  :<br>Elasticsearch'ün en güçlü özelliklerinden biri, verileri neredeyse gerçek zamanlı olarak dizinleme ve arama yeteneğidir. Yeni veriler alındığında, anında aranabilir hale gelir ve bu da bilgilerin hızlı bir şekilde alınmasını sağlar. 
+- ***Gerçek Zamanlı Veri Dizinleme ve Arama*** :<br>Elasticsearch'ün en güçlü özelliklerinden biri, verileri neredeyse gerçek zamanlı olarak dizinleme ve arama yeteneğidir. Yeni veriler alındığında, anında aranabilir hale gelir ve bu da bilgilerin hızlı bir şekilde alınmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ölçeklenebilirlik ve Dağıtılmış Mimari***  :<br>Elasticsearch, verileri birden fazla düğüme dağıtarak yatay olarak ölçeklenecek şekilde tasarlanmıştır. Bu dağıtılmış mimari, Elasticsearch'ün petabaytlarca veriyi işlemesine ve veriler büyüdükçe zahmetsizce ölçeklenmesine olanak tanır. 
+- ***Ölçeklenebilirlik ve Dağıtılmış Mimari*** :<br>Elasticsearch, verileri birden fazla düğüme dağıtarak yatay olarak ölçeklenecek şekilde tasarlanmıştır. Bu dağıtılmış mimari, Elasticsearch'ün petabaytlarca veriyi işlemesine ve veriler büyüdükçe zahmetsizce ölçeklenmesine olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***RESTful API'ler***  :<br>Elasticsearch, RESTful API'ler aracılığıyla hizmetleriyle etkileşim kurmanın basit ve erişilebilir bir yolunu sağlar. Bu, çok çeşitli uygulamalar ve hizmetlerle entegrasyonu kolaylaştırır. 
+- ***RESTful API'ler*** :<br>Elasticsearch, RESTful API'ler aracılığıyla hizmetleriyle etkileşim kurmanın basit ve erişilebilir bir yolunu sağlar. Bu, çok çeşitli uygulamalar ve hizmetlerle entegrasyonu kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Elastic Stack ile Entegrasyon***  :<br>Elasticsearch, veri alımı için Logstash, veri görselleştirme için Kibana ve hafif veri taşıyıcıları için Beats'i içeren Elastic Stack'in bir parçasıdır. Bu entegrasyon, veri toplama, işleme, analiz ve görselleştirme için tam teşekküllü bir platform sunar. 
+- ***Elastic Stack ile Entegrasyon*** :<br>Elasticsearch, veri alımı için Logstash, veri görselleştirme için Kibana ve hafif veri taşıyıcıları için Beats'i içeren Elastic Stack'in bir parçasıdır. Bu entegrasyon, veri toplama, işleme, analiz ve görselleştirme için tam teşekküllü bir platform sunar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -100,15 +100,15 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Veri Dizinleme***  :<br>Elasticsearch'teki veriler, veritabanlarına benzer dizinler halinde düzenlenir. Her dizin, JSON biçiminde temsil edilen bireysel veri birimleri olan belgeler içerir. Bu belgeler, metin, sayılar veya tarihler gibi çeşitli alanlar içerebilir. Veriler alındığında, Elasticsearch bunları otomatik olarak dizinler ve bu da daha sonra hızlı bir şekilde alınmasını sağlar. Bu dizinleme işlemi, terimleri belgelere eşleyen ve verimli tam metin araması sağlayan bir anahtar veri yapısı olan ters dizinleri kullanır. 
+- ***Veri Dizinleme*** :<br>Elasticsearch'teki veriler, veritabanlarına benzer dizinler halinde düzenlenir. Her dizin, JSON biçiminde temsil edilen bireysel veri birimleri olan belgeler içerir. Bu belgeler, metin, sayılar veya tarihler gibi çeşitli alanlar içerebilir. Veriler alındığında, Elasticsearch bunları otomatik olarak dizinler ve bu da daha sonra hızlı bir şekilde alınmasını sağlar. Bu dizinleme işlemi, terimleri belgelere eşleyen ve verimli tam metin araması sağlayan bir anahtar veri yapısı olan ters dizinleri kullanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Arama ve Sorgulama***  :<br>Elasticsearch, veri aramayı sezgisel ve güçlü hale getiren çeşitli sorgu türleri sunar. İster basit bir terim araması yapın, ister filtreler, toplamalar ve puanlama içeren karmaşık sorgular gerçekleştirin, Elasticsearch verilerinizden anlamlı içgörüler çıkarmak için ihtiyaç duyduğunuz araçları sağlar. 
+- ***Arama ve Sorgulama*** :<br>Elasticsearch, veri aramayı sezgisel ve güçlü hale getiren çeşitli sorgu türleri sunar. İster basit bir terim araması yapın, ister filtreler, toplamalar ve puanlama içeren karmaşık sorgular gerçekleştirin, Elasticsearch verilerinizden anlamlı içgörüler çıkarmak için ihtiyaç duyduğunuz araçları sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dağıtılmış Mimari***  :<br>Elasticsearch, dağıtılmış bir sistem olarak çalışmak üzere tasarlanmıştır, yani verileri küme adı verilen birden fazla düğüme yayabilir. Elasticsearch'teki veriler, parçalar adı verilen daha küçük parçalara bölünür ve her parça yedeklilik ve yüksek kullanılabilirlik için çoğaltılabilir. Bu tasarım, Elasticsearch'ün dayanıklı kalmasını ve büyük ölçekli veri işlemlerini idare edebilmesini sağlar. 
+- ***Dağıtılmış Mimari*** :<br>Elasticsearch, dağıtılmış bir sistem olarak çalışmak üzere tasarlanmıştır, yani verileri küme adı verilen birden fazla düğüme yayabilir. Elasticsearch'teki veriler, parçalar adı verilen daha küçük parçalara bölünür ve her parça yedeklilik ve yüksek kullanılabilirlik için çoğaltılabilir. Bu tasarım, Elasticsearch'ün dayanıklı kalmasını ve büyük ölçekli veri işlemlerini idare edebilmesini sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -126,19 +126,19 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Günlük ve Olay Veri Analizi***  :<br>Birçok kuruluş, uygulamalar, sunucular ve cihazlar tarafından oluşturulan günlük verilerini analiz etmek için Elasticsearch kullanır. Elasticsearch bu verileri hızla indeksleyebilir, böylece kalıpları tespit etmeyi, anormallikleri tanımlamayı ve sorunları gerçek zamanlı olarak gidermeyi kolaylaştırır. 
+- ***Günlük ve Olay Veri Analizi*** :<br>Birçok kuruluş, uygulamalar, sunucular ve cihazlar tarafından oluşturulan günlük verilerini analiz etmek için Elasticsearch kullanır. Elasticsearch bu verileri hızla indeksleyebilir, böylece kalıpları tespit etmeyi, anormallikleri tanımlamayı ve sorunları gerçek zamanlı olarak gidermeyi kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Web Sitesi Araması***  :<br>Elasticsearch, web siteleri ve web uygulamaları için arama işlevselliğini güçlendirmek amacıyla yaygın olarak kullanılır. Tam metin araması, otomatik tamamlama ve gelişmiş filtrelemeyi işleyebilir, bu da onu kullanıcı deneyimini geliştirmek ve kullanıcıların ihtiyaç duydukları bilgileri hızlı bir şekilde bulmalarına yardımcı olmak için ideal hale getirir. 
+- ***Web Sitesi Araması*** :<br>Elasticsearch, web siteleri ve web uygulamaları için arama işlevselliğini güçlendirmek amacıyla yaygın olarak kullanılır. Tam metin araması, otomatik tamamlama ve gelişmiş filtrelemeyi işleyebilir, bu da onu kullanıcı deneyimini geliştirmek ve kullanıcıların ihtiyaç duydukları bilgileri hızlı bir şekilde bulmalarına yardımcı olmak için ideal hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***E-ticaret Ürün Araması***  :<br>E-ticaret platformları, hızlı ürün arama yeteneklerini etkinleştirmek için Elasticsearch'e güvenir. Kullanıcıların ürünleri ad, kategori veya özniteliğe göre aramasına olanak tanırken, sonuçları alaka düzeyine, fiyata veya diğer ölçütlere göre filtrelemeyi ve sıralamayı da destekler. 
+- ***E-ticaret Ürün Araması*** :<br>E-ticaret platformları, hızlı ürün arama yeteneklerini etkinleştirmek için Elasticsearch'e güvenir. Kullanıcıların ürünleri ad, kategori veya özniteliğe göre aramasına olanak tanırken, sonuçları alaka düzeyine, fiyata veya diğer ölçütlere göre filtrelemeyi ve sıralamayı da destekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İzleme ve Güvenlik Verileri***  :<br>Elasticsearch, çeşitli kaynaklardan gelen verileri toplamak ve analiz etmek için güvenlik ve izleme sistemlerinde yaygın olarak kullanılır. Ekiplerin altyapıyı izlemesine, güvenlik tehditlerini tespit etmesine ve adli analiz gerçekleştirmesine yardımcı olur. 
+- ***İzleme ve Güvenlik Verileri*** :<br>Elasticsearch, çeşitli kaynaklardan gelen verileri toplamak ve analiz etmek için güvenlik ve izleme sistemlerinde yaygın olarak kullanılır. Ekiplerin altyapıyı izlemesine, güvenlik tehditlerini tespit etmesine ve adli analiz gerçekleştirmesine yardımcı olur. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -156,19 +156,19 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Hız ve Ölçeklenebilirlik***  :<br>Elasticsearch hız için oluşturulmuştur. Dağıtılmış yapısı, veriler büyüdükçe yatay olarak ölçeklenebilmesini sağlayarak büyük veri kümelerini işlemek için uygun hale getirir. Neredeyse gerçek zamanlı dizinleme, verilerin alındıktan hemen sonra aranmasına olanak tanır. 
+- ***Hız ve Ölçeklenebilirlik*** :<br>Elasticsearch hız için oluşturulmuştur. Dağıtılmış yapısı, veriler büyüdükçe yatay olarak ölçeklenebilmesini sağlayarak büyük veri kümelerini işlemek için uygun hale getirir. Neredeyse gerçek zamanlı dizinleme, verilerin alındıktan hemen sonra aranmasına olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Esneklik***  :<br>Elasticsearch son derece esnektir ve yapılandırılmış, yarı yapılandırılmış ve yapılandırılmamış veriler dahil olmak üzere çok çeşitli veri biçimlerini işleyebilir. İster günlük verilerini, ister belgeleri veya medya dosyalarını dizinliyor olun, Elasticsearch bunları verimli bir şekilde yönetebilir. 
+- ***Esneklik*** :<br>Elasticsearch son derece esnektir ve yapılandırılmış, yarı yapılandırılmış ve yapılandırılmamış veriler dahil olmak üzere çok çeşitli veri biçimlerini işleyebilir. İster günlük verilerini, ister belgeleri veya medya dosyalarını dizinliyor olun, Elasticsearch bunları verimli bir şekilde yönetebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yüksek Kullanılabilirlik ve Hata Toleransı***  :<br>Elasticsearch, düğümler arasında veri çoğaltma yeteneğiyle yüksek kullanılabilirlik ve hata toleransı sağlar. Kümedeki bir düğüm çökerse, sistem diğer düğümlerden veri alarak çalışmaya devam edebilir. 
+- ***Yüksek Kullanılabilirlik ve Hata Toleransı*** :<br>Elasticsearch, düğümler arasında veri çoğaltma yeteneğiyle yüksek kullanılabilirlik ve hata toleransı sağlar. Kümedeki bir düğüm çökerse, sistem diğer düğümlerden veri alarak çalışmaya devam edebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Elastic Stack ile Entegrasyon***  :<br>Logstash, Kibana ve Beats ile kusursuz entegrasyon, Elasticsearch'ü veri toplama ve depolama, analiz ve görselleştirme gibi tüm veri hattını kapsayan kapsamlı bir veri platformunun parçası haline getirir. 
+- ***Elastic Stack ile Entegrasyon*** :<br>Logstash, Kibana ve Beats ile kusursuz entegrasyon, Elasticsearch'ü veri toplama ve depolama, analiz ve görselleştirme gibi tüm veri hattını kapsayan kapsamlı bir veri platformunun parçası haline getirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -186,19 +186,19 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Elasticsearch'ü İndirin ve Kurun***  :<br>Resmi web sitesinden işletim sisteminiz için uygun Elasticsearch sürümünü indirerek başlayın. Kurulumdan sonra Elasticsearch hizmetini başlatın. 
+- ***Elasticsearch'ü İndirin ve Kurun*** :<br>Resmi web sitesinden işletim sisteminiz için uygun Elasticsearch sürümünü indirerek başlayın. Kurulumdan sonra Elasticsearch hizmetini başlatın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bir Dizin Oluşturun***  :<br>Elasticsearch çalıştığında, verilerinizi depolamak için bir dizin oluşturabilirsiniz. Örneğin, günlükleri veya ürün verilerini depolamak için bir dizin oluşturabilirsiniz. 
+- ***Bir Dizin Oluşturun*** :<br>Elasticsearch çalıştığında, verilerinizi depolamak için bir dizin oluşturabilirsiniz. Örneğin, günlükleri veya ürün verilerini depolamak için bir dizin oluşturabilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Elasticsearch'e Veri Ekleme***  :<br>Veriler, Elasticsearch'e RESTful API'si aracılığıyla JSON belgeleri olarak gönderilerek eklenebilir. Verileri manuel olarak alabilir veya Logstash veya Beats gibi araçları kullanarak işlemi otomatikleştirebilirsiniz. 
+- ***Elasticsearch'e Veri Ekleme*** :<br>Veriler, Elasticsearch'e RESTful API'si aracılığıyla JSON belgeleri olarak gönderilerek eklenebilir. Verileri manuel olarak alabilir veya Logstash veya Beats gibi araçları kullanarak işlemi otomatikleştirebilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Arama ve Sorgulama***  :<br>Veriler indekslendikten sonra, Elasticsearch'ün güçlü sorgu dilini kullanarak belirli kayıtları arayabilir veya daha karmaşık analizler yapabilirsiniz. 
+- ***Arama ve Sorgulama*** :<br>Veriler indekslendikten sonra, Elasticsearch'ün güçlü sorgu dilini kullanarak belirli kayıtları arayabilir veya daha karmaşık analizler yapabilirsiniz. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -216,11 +216,11 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Apache Solr***  : Elasticsearch gibi Solr da Apache Lucene üzerine kuruludur ve güçlü arama yetenekleri sunar. Ancak Elasticsearch'ün Elastic Stack ile entegrasyonu, gerçek zamanlı arama yetenekleri ve ölçekleme kolaylığı ona ufak bir avantaj sağlar. 
+- ***Apache Solr*** : Elasticsearch gibi Solr da Apache Lucene üzerine kuruludur ve güçlü arama yetenekleri sunar. Ancak Elasticsearch'ün Elastic Stack ile entegrasyonu, gerçek zamanlı arama yetenekleri ve ölçekleme kolaylığı ona ufak bir avantaj sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Algolia***  : Algolia, özellikle daha küçük veri kümeleri için mükemmel hız ve basitlik sunan bir hizmet olarak arama platformudur. Ancak Elasticsearch daha esnek, açık kaynaklıdır ve büyük ölçekli uygulamalar için daha uygundur. 
+- ***Algolia*** : Algolia, özellikle daha küçük veri kümeleri için mükemmel hız ve basitlik sunan bir hizmet olarak arama platformudur. Ancak Elasticsearch daha esnek, açık kaynaklıdır ve büyük ölçekli uygulamalar için daha uygundur. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -242,11 +242,11 @@ url: /tr/elasticsearch-gercek-zamanli-arama-ve-veri-analitiginin-arkasindaki-guc
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kaynak Tüketimi***  :<br>Elasticsearch özellikle büyük miktarda veri işlerken kaynak yoğun olabilir. Verimli bir şekilde çalışmasını sağlamak için uygun yapılandırma ve ayarlama önemlidir. 
+- ***Kaynak Tüketimi*** :<br>Elasticsearch özellikle büyük miktarda veri işlerken kaynak yoğun olabilir. Verimli bir şekilde çalışmasını sağlamak için uygun yapılandırma ve ayarlama önemlidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kümeleri Yönetme***  :<br>Bir Elasticsearch kümesini, özellikle de ölçeklenebilir bir şekilde yönetmek karmaşık olabilir. Yöneticilerin küme sağlığını izlemeleri, performansı optimize etmeleri ve düğüm arızalarını ele almaları gerekir. 
+- ***Kümeleri Yönetme*** :<br>Bir Elasticsearch kümesini, özellikle de ölçeklenebilir bir şekilde yönetmek karmaşık olabilir. Yöneticilerin küme sağlığını izlemeleri, performansı optimize etmeleri ve düğüm arızalarını ele almaları gerekir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

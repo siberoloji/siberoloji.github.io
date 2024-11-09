@@ -106,23 +106,23 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hacklenmeye karşı koruma***  : WordPress popüler bir CMS'dir ve bu nedenle hacker'ların sık hedefidir. Yedeklemeler, siteniz tehlikeye girerse onu geri yükleyebilmenizi sağlar. 
+- ***Hacklenmeye karşı koruma*** : WordPress popüler bir CMS'dir ve bu nedenle hacker'ların sık hedefidir. Yedeklemeler, siteniz tehlikeye girerse onu geri yükleyebilmenizi sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sunucu arızaları***  : Barındırma sağlayıcıları, hizmet kesintisine veya veri kaybına neden olan sunucu çökmeleri veya veri merkezi sorunları yaşayabilir. 
+- ***Sunucu arızaları*** : Barındırma sağlayıcıları, hizmet kesintisine veya veri kaybına neden olan sunucu çökmeleri veya veri merkezi sorunları yaşayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İnsan hataları***  : Deneyimli geliştiriciler bile, güncellemeler sırasında önemli dosyaları yanlışlıkla silmek veya siteyi bozmak gibi hatalar yapabilirler. 
+- ***İnsan hataları*** : Deneyimli geliştiriciler bile, güncellemeler sırasında önemli dosyaları yanlışlıkla silmek veya siteyi bozmak gibi hatalar yapabilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik ihlalleri***  : Yedekleme, sitenizin kötü amaçlı yazılımlardan veya virüslerden etkilenmesi durumunda size geri dönüş imkanı sağlar. 
+- ***Güvenlik ihlalleri*** : Yedekleme, sitenizin kötü amaçlı yazılımlardan veya virüslerden etkilenmesi durumunda size geri dönüş imkanı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sorunsuz güncellemeler***  : Yedeklemeler, bir güncelleme (WordPress çekirdeğinde, temalarda veya eklentilerde) uyumluluk sorunlarına neden olursa sitenizin kararlı bir sürümüne geri dönmenizi sağlar. 
+- ***Sorunsuz güncellemeler*** : Yedeklemeler, bir güncelleme (WordPress çekirdeğinde, temalarda veya eklentilerde) uyumluluk sorunlarına neden olursa sitenizin kararlı bir sürümüne geri dönmenizi sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -138,23 +138,23 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***WordPress Çekirdek Dosyaları***  : Bunlar WordPress kurulumunuzu destekleyen dosyalardır. Bunlara örnek olarak WordPress ortamını kontrol eden PHP, JavaScript ve CSS dosyaları verilebilir. 
+- ***WordPress Çekirdek Dosyaları*** : Bunlar WordPress kurulumunuzu destekleyen dosyalardır. Bunlara örnek olarak WordPress ortamını kontrol eden PHP, JavaScript ve CSS dosyaları verilebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veritabanı***  : WordPress veritabanı, yazılar, sayfalar, yorumlar ve kullanıcı bilgileri gibi web sitenizin tüm içeriğini barındırır. 
+- ***Veritabanı*** : WordPress veritabanı, yazılar, sayfalar, yorumlar ve kullanıcı bilgileri gibi web sitenizin tüm içeriğini barındırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Temalar***  : Özel temalar veya premium temaların kaybolması veya bozulması durumunda yedeklenmesi gerekir. 
+- ***Temalar*** : Özel temalar veya premium temaların kaybolması veya bozulması durumunda yedeklenmesi gerekir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eklentiler***  : Eklentiler sitenize işlevsellik katar. Eklentilerinizi yedeklemek, bir şeyler ters giderse onları geri yükleyebilmenizi sağlar. 
+- ***Eklentiler*** : Eklentiler sitenize işlevsellik katar. Eklentilerinizi yedeklemek, bir şeyler ters giderse onları geri yükleyebilmenizi sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yüklemeler Klasörü***  : Bu klasör, web sitenize yüklediğiniz tüm medya dosyalarını (resimler, PDF'ler ve videolar gibi) içerir. Bunları kaybetmek sitenizin görünümünü ve işlevselliğini ciddi şekilde etkileyebilir. 
+- ***Yüklemeler Klasörü*** : Bu klasör, web sitenize yüklediğiniz tüm medya dosyalarını (resimler, PDF'ler ve videolar gibi) içerir. Bunları kaybetmek sitenizin görünümünü ve işlevselliğini ciddi şekilde etkileyebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -180,11 +180,11 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Hosting hesabınıza giriş yapın***  ve ***cPanel'e***  erişin . 
+- ***Hosting hesabınıza giriş yapın*** ve***cPanel'e*** erişin . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- WordPress dosyalarınızı bulacağınız ***Dosya Yöneticisi'ne***  gidin . 
+- WordPress dosyalarınızı bulacağınız***Dosya Yöneticisi'ne*** gidin . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -192,7 +192,7 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sonra, WordPress veritabanınızı yedeklemek için cPanel'deki phpMyAdmin'e***  gidin . Sitenizin veritabanını seçin, ardından bir kopyasını indirmek için ***Dışa Aktar'a tıklayın.***  
+- ***Sonra, WordPress veritabanınızı yedeklemek için cPanel'deki phpMyAdmin'e*** gidin. Sitenizin veritabanını seçin, ardındanbir kopyasını indirmek için***Dışa Aktar'a tıklayın.***  
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -228,7 +228,7 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- WordPress eklenti dizininden istediğiniz ***bir yedekleme eklentisini yükleyin .***  
+- WordPress eklenti dizininden istediğiniz***bir yedekleme eklentisini yükleyin .***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -236,7 +236,7 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yedekleme hedefinizi***  seçin (yerel depolama, Google Drive, Dropbox, Amazon S3, vb.). 
+- ***Yedekleme hedefinizi*** seçin(yerel depolama, Google Drive, Dropbox, Amazon S3, vb.). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -256,11 +256,11 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Hosting kontrol panelinize giriş yapın***  . 
+- ***Hosting kontrol panelinize giriş yapın*** . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Genellikle "Web Sitesi Yönetimi" veya "Yedeklemeler" gibi bölümler altında bulunan bir yedekleme veya geri yükleme***  seçeneği arayın . 
+- ***Genellikle "Web Sitesi Yönetimi" veya "Yedeklemeler" gibi bölümler altında bulunan bir yedekleme veya geri yükleme*** seçeneği arayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -312,11 +312,11 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Yedekleme Eklentisi ile Geri Yükleme***  : UpdraftPlus veya BackupBuddy gibi çoğu yedekleme eklentisi, yerleşik bir geri yükleme özelliği içerir. Eklentinin ayarlarına gidin, geri yüklemek istediğiniz yedekleme dosyasını bulun ve "Geri Yükle"ye tıklayın. 
+- ***Yedekleme Eklentisi ile Geri Yükleme*** : UpdraftPlus veya BackupBuddy gibi çoğu yedekleme eklentisi, yerleşik bir geri yükleme özelliği içerir. Eklentinin ayarlarına gidin, geri yüklemek istediğiniz yedekleme dosyasını bulun ve "Geri Yükle"ye tıklayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Manuel Geri Yükleme***  : Manuel bir yedekleme oluşturduysanız, WordPress dosyalarınızı FTP üzerinden yeniden yüklemeniz ve phpMyAdmin kullanarak veritabanını içe aktarmanız gerekir. Bu işlem daha karmaşıktır ve teknik yardım gerektirebilir. 
+- ***Manuel Geri Yükleme*** : Manuel bir yedekleme oluşturduysanız, WordPress dosyalarınızı FTP üzerinden yeniden yüklemeniz ve phpMyAdmin kullanarak veritabanını içe aktarmanız gerekir. Bu işlem daha karmaşıktır ve teknik yardım gerektirebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -333,19 +333,19 @@ url: /tr/wordpress-yedekleme-ihmal-edilen-en-onemli-konu/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Yedeklemelerinizi otomatikleştirin***  : Yedeklemeleri otomatikleştirmek için bir eklenti veya barındırma sağlayıcınızı kullanın; böylece yedekleme oluşturmayı asla unutmazsınız. 
+- ***Yedeklemelerinizi otomatikleştirin*** : Yedeklemeleri otomatikleştirmek için bir eklenti veya barındırma sağlayıcınızı kullanın; böylece yedekleme oluşturmayı asla unutmazsınız. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yedekleri site dışında saklayın***  : Sunucu arızalarına karşı koruma sağlamak için yedekleri Google Drive, Dropbox veya Amazon S3 gibi ayrı bir platformda saklayın. 
+- ***Yedekleri site dışında saklayın*** : Sunucu arızalarına karşı koruma sağlamak için yedekleri Google Drive, Dropbox veya Amazon S3 gibi ayrı bir platformda saklayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yedeklerinizi test edin***  : Yedek dosyalarınızın düzgün çalıştığından ve gerektiğinde geri yüklenebildiğinden emin olmak için ara sıra test edin. 
+- ***Yedeklerinizi test edin*** : Yedek dosyalarınızın düzgün çalıştığından ve gerektiğinde geri yüklenebildiğinden emin olmak için ara sıra test edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Birden fazla kopya tutun***  : Dosyanın bozulması durumunda, son yedekten geri yükleme her zaman mümkün olmayabileceğinden, birden fazla yedek sürümünü saklayın. 
+- ***Birden fazla kopya tutun*** : Dosyanın bozulması durumunda, son yedekten geri yükleme her zaman mümkün olmayabileceğinden, birden fazla yedek sürümünü saklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -36,15 +36,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcasting'in ne olduğunu ve tarihini okuyun. 
+- ***Görev:*** Podcasting'in ne olduğunu ve tarihini okuyun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  “Yeni Başlayanlar İçin Podcasting” makalesi veya videosu. 
+- ***Kaynak:*** “Yeni Başlayanlar İçin Podcasting” makalesi veya videosu. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  En sevdiğiniz podcast'leri listeleyin ve bunlarda neleri sevdiğinizi analiz edin. 
+- ***Alıştırma:*** En sevdiğiniz podcast'leri listeleyin ve bunlarda neleri sevdiğinizi analiz edin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -54,33 +54,33 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Farklı podcast formatlarını (röportajlar, hikaye anlatımı, eğitim) keşfedin. 
+- ***Görev:*** Farklı podcast formatlarını (röportajlar, hikaye anlatımı, eğitim) keşfedin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast Türü Rehberi. 
+- ***Kaynak:*** Podcast Türü Rehberi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Stilinize ve hedeflerinize uygun formatın hangisi olduğunu belirleyin. 
+- ***Alıştırma:*** Stilinize ve hedeflerinize uygun formatın hangisi olduğunu belirleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>***3. Gün: Ekipman ve  Yazılım*** 
+<p>***3. Gün: Ekipman veYazılım*** 
   
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast için gereken ekipmanları araştırın. 
+- ***Görev:*** Podcast için gereken ekipmanları araştırın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  “Podcasting için En İyi Mikrofonlar” rehberi. 
+- ***Kaynak:*** “Podcasting için En İyi Mikrofonlar” rehberi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İhtiyacınız olan ekipman/yazılımların alışveriş listesini oluşturun. 
+- ***Alıştırma:*** İhtiyacınız olan ekipman/yazılımların alışveriş listesini oluşturun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -90,15 +90,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast planlama ve bölüm yapısı hakkında bilgi edinin. 
+- ***Görev:*** Podcast planlama ve bölüm yapısı hakkında bilgi edinin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast Planlama Kontrol Listesi. 
+- ***Kaynak:*** Podcast Planlama Kontrol Listesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İlk üç bölümünüz için bir taslak hazırlayın. 
+- ***Alıştırma:*** İlk üç bölümünüz için bir taslak hazırlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -108,15 +108,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Ses kaydının temellerini anlamak. 
+- ***Görev:*** Ses kaydının temellerini anlamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Ses kayıt teknikleri hakkında video eğitimi. 
+- ***Kaynak:*** Ses kayıt teknikleri hakkında video eğitimi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Seçtiğiniz yazılımla sesinizi kaydetme pratiği yapın. 
+- ***Alıştırma:*** Seçtiğiniz yazılımla sesinizi kaydetme pratiği yapın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -126,15 +126,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast düzenleme yazılımlarını öğrenin. 
+- ***Görev:*** Podcast düzenleme yazılımlarını öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Audacity veya GarageBand için eğitimler. 
+- ***Kaynak:*** Audacity veya GarageBand için eğitimler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Becerilerinizi geliştirmek için 5 dakikalık bir ses klibi düzenleyin. 
+- ***Alıştırma:*** Becerilerinizi geliştirmek için 5 dakikalık bir ses klibi düzenleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -144,11 +144,11 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Bu hafta öğrendiklerinizi gözden geçirin. 
+- ***Görev:*** Bu hafta öğrendiklerinizi gözden geçirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Önemli çıkarımlarınızı ve hâlâ aklınızda olan soruları yazın. 
+- ***Alıştırma:*** Önemli çıkarımlarınızı ve hâlâ aklınızda olan soruları yazın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -166,15 +166,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast markalama ve kapak resmi oluşturma hakkında bilgi edinin. 
+- ***Görev:*** Podcast markalama ve kapak resmi oluşturma hakkında bilgi edinin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast markalama ve tasarım araçları (Canva) ile ilgili makaleler. 
+- ***Kaynak:*** Podcast markalama ve tasarım araçları (Canva) ile ilgili makaleler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast kapak resminizi tasarlayın. 
+- ***Alıştırma:*** Podcast kapak resminizi tasarlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -184,15 +184,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Bir podcast metni veya taslağının nasıl yazılacağını öğrenin. 
+- ***Görev:*** Bir podcast metni veya taslağının nasıl yazılacağını öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast yayıncıları için senaryo yazma ipuçları. 
+- ***Kaynak:*** Podcast yayıncıları için senaryo yazma ipuçları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İlk bölümünüz için bir senaryo yazın. 
+- ***Alıştırma:*** İlk bölümünüz için bir senaryo yazın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -202,11 +202,11 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Kayıt ortamınızı ayarlayın. 
+- ***Görev:*** Kayıt ortamınızı ayarlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Yazdığınız senaryoyu kullanarak ilk bölümünüzü kaydedin. 
+- ***Alıştırma:*** Yazdığınız senaryoyu kullanarak ilk bölümünüzü kaydedin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -216,15 +216,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Düzenleme tekniklerine ve ses kalitesine odaklanın. 
+- ***Görev:*** Düzenleme tekniklerine ve ses kalitesine odaklanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Düzenleme ipuçları ve püf noktaları. 
+- ***Kaynak:*** Düzenleme ipuçları ve püf noktaları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İlk bölümünüzü düzenleyin. 
+- ***Alıştırma:*** İlk bölümünüzü düzenleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -234,15 +234,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Müzik ve ses efektlerini birleştirmeyi öğrenin. 
+- ***Görev:*** Müzik ve ses efektlerini birleştirmeyi öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Telifsiz müzik siteleri (örneğin, Epidemic Sound, AudioJungle). 
+- ***Kaynak:*** Telifsiz müzik siteleri (örneğin, Epidemic Sound, AudioJungle). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Düzenlediğiniz bölüme müzik ekleyin. 
+- ***Alıştırma:*** Düzenlediğiniz bölüme müzik ekleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -252,15 +252,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Gösteri notlarının önemini anlamak. 
+- ***Görev:*** Gösteri notlarının önemini anlamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Etkili gösteri notlarına örnekler. 
+- ***Kaynak:*** Etkili gösteri notlarına örnekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İlk bölümünüz için gösteri notları yazın. 
+- ***Alıştırma:*** İlk bölümünüz için gösteri notları yazın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -270,11 +270,11 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Haftanın görevlerini gözden geçirin. 
+- ***Görev:*** Haftanın görevlerini gözden geçirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Daha fazla pratiğe ihtiyaç duyduğunuz alanları belirleyin. 
+- ***Alıştırma:*** Daha fazla pratiğe ihtiyaç duyduğunuz alanları belirleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -292,15 +292,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast barındırma seçeneklerini araştırın. 
+- ***Görev:*** Podcast barındırma seçeneklerini araştırın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast barındırma hizmetlerinin karşılaştırılması (örneğin, Libsyn, Podbean). 
+- ***Kaynak:*** Podcast barındırma hizmetlerinin karşılaştırılması (örneğin, Libsyn, Podbean). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Bir barındırma platformu seçin ve hesabınızı kurun. 
+- ***Alıştırma:*** Bir barındırma platformu seçin ve hesabınızı kurun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -310,15 +310,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Bölümünüzü barındırma platformunuza nasıl yükleyeceğinizi öğrenin. 
+- ***Görev:*** Bölümünüzü barındırma platformunuza nasıl yükleyeceğinizi öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Hosting platformu eğitimi. 
+- ***Kaynak:*** Hosting platformu eğitimi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  İlk bölümünüzü yükleyin. 
+- ***Alıştırma:*** İlk bölümünüzü yükleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -328,15 +328,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  RSS beslemelerinin podcast dağıtımında nasıl çalıştığını anlamak. 
+- ***Görev:*** RSS beslemelerinin podcast dağıtımında nasıl çalıştığını anlamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast'ler için RSS beslemeleriyle ilgili makale. 
+- ***Kaynak:*** Podcast'ler için RSS beslemeleriyle ilgili makale. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  RSS besleme ayarlarınızı yapılandırın. 
+- ***Alıştırma:*** RSS besleme ayarlarınızı yapılandırın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -346,15 +346,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast'ler için pazarlama stratejilerini öğrenin. 
+- ***Görev:*** Podcast'ler için pazarlama stratejilerini öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast pazarlama rehberi. 
+- ***Kaynak:*** Podcast pazarlama rehberi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast'iniz için bir tanıtım planı oluşturun. 
+- ***Alıştırma:*** Podcast'iniz için bir tanıtım planı oluşturun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -364,15 +364,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast'inizi tanıtmak için sosyal medyayı nasıl kullanabileceğinizi keşfedin. 
+- ***Görev:*** Podcast'inizi tanıtmak için sosyal medyayı nasıl kullanabileceğinizi keşfedin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast yayıncıları için sosyal medya ipuçları. 
+- ***Kaynak:*** Podcast yayıncıları için sosyal medya ipuçları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast'iniz için sosyal medya hesapları kurun. 
+- ***Alıştırma:*** Podcast'iniz için sosyal medya hesapları kurun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -382,15 +382,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast topluluğuyla bağlantı kurmanın yollarını araştırın. 
+- ***Görev:*** Podcast topluluğuyla bağlantı kurmanın yollarını araştırın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast forumları ve grupları. 
+- ***Kaynak:*** Podcast forumları ve grupları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Bir podcast grubuna katılın ve kendinizi tanıtın. 
+- ***Alıştırma:*** Bir podcast grubuna katılın ve kendinizi tanıtın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -400,11 +400,11 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  İlerlemenizi gözden geçirin ve stratejinizi geliştirin. 
+- ***Görev:*** İlerlemenizi gözden geçirin ve stratejinizi geliştirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Öğrendiklerinizi temel alarak tanıtım planınızı ayarlayın. 
+- ***Alıştırma:*** Öğrendiklerinizi temel alarak tanıtım planınızı ayarlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -422,15 +422,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast ölçümleri ve analizleri hakkında bilgi edinin. 
+- ***Görev:*** Podcast ölçümleri ve analizleri hakkında bilgi edinin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast analizlerinin yorumlanmasına ilişkin makaleler. 
+- ***Kaynak:*** Podcast analizlerinin yorumlanmasına ilişkin makaleler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Barındırma platformunuzun analizlerini inceleyin. 
+- ***Alıştırma:*** Barındırma platformunuzun analizlerini inceleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -440,15 +440,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Dinleyici geri bildiriminin önemini anlayın. 
+- ***Görev:*** Dinleyici geri bildiriminin önemini anlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Geri bildirim toplama ve kullanma kılavuzu. 
+- ***Kaynak:*** Geri bildirim toplama ve kullanma kılavuzu. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Bir geri bildirim formu oluşturun ve bunu arkadaşlarınızla/ailenizle paylaşın. 
+- ***Alıştırma:*** Bir geri bildirim formu oluşturun ve bunu arkadaşlarınızla/ailenizle paylaşın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -458,15 +458,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Podcast'inizden para kazanmanın yollarını keşfedin. 
+- ***Görev:*** Podcast'inizden para kazanmanın yollarını keşfedin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast para kazanma stratejileri. 
+- ***Kaynak:*** Podcast para kazanma stratejileri. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Potansiyel sponsorluklar veya ürünler için bir plan taslağı hazırlayın. 
+- ***Alıştırma:*** Potansiyel sponsorluklar veya ürünler için bir plan taslağı hazırlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -476,15 +476,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Sürekli öğrenme kaynaklarını öğrenin. 
+- ***Görev:*** Sürekli öğrenme kaynaklarını öğrenin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcasting hakkında önerilen podcastler. 
+- ***Kaynak:*** Podcasting hakkında önerilen podcastler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast ipuçlarına odaklanan 2-3 podcaste abone olun. 
+- ***Alıştırma:*** Podcast ipuçlarına odaklanan 2-3 podcaste abone olun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -494,15 +494,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Konuklarla görüşme sürecini anlayın. 
+- ***Görev:*** Konuklarla görüşme sürecini anlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Mülakat ipuçları ve teknikleri. 
+- ***Kaynak:*** Mülakat ipuçları ve teknikleri. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast'iniz için potansiyel konukların bir listesini hazırlayın. 
+- ***Alıştırma:*** Podcast'iniz için potansiyel konukların bir listesini hazırlayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -512,15 +512,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Canlı podcasting seçeneklerini keşfedin. 
+- ***Görev:*** Canlı podcasting seçeneklerini keşfedin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kaynak:***  Podcast'ler için canlı yayın platformları. 
+- ***Kaynak:*** Podcast'ler için canlı yayın platformları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Canlı bir bölüm planlayın ve formatını ana hatlarıyla belirtin. 
+- ***Alıştırma:*** Canlı bir bölüm planlayın ve formatını ana hatlarıyla belirtin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -530,11 +530,11 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Görev:***  Öğrenme yolculuğunuzu düşünün. 
+- ***Görev:*** Öğrenme yolculuğunuzu düşünün. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alıştırma:***  Podcast'inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin. 
+- ***Alıştırma:*** Podcast'inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -548,15 +548,15 @@ url: /tr/basarili-podcast-yayinciligi-adim-adim-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kitaplar:***  John Lee Dumas'ın "Podcast Launch" adlı kitabı, Jessica Abel'ın "Out on the Wire" adlı kitabı 
+- ***Kitaplar:*** John Lee Dumas'ın "Podcast Launch" adlı kitabı, Jessica Abel'ın "Out on the Wire" adlı kitabı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Web siteleri:***  Podcast'çilerin Buluşma Noktası, Podcast Hareketi 
+- ***Web siteleri:*** Podcast'çilerin Buluşma Noktası, Podcast Hareketi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kurslar:***  Udemy veya Skillshare gibi platformlardaki podcasting becerilerine odaklanan çevrimiçi kurslar. 
+- ***Kurslar:*** Udemy veya Skillshare gibi platformlardaki podcasting becerilerine odaklanan çevrimiçi kurslar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

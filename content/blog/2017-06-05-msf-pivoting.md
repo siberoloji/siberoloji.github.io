@@ -18,8 +18,8 @@ date: "2017-06-05T13:33:00Z"
 excerpt: Bir sistemde meterpreter shell oturumu açtığınızı varsayalım. Oturum açtığınız
   sistem, ağda bulunan ancak tam yetkili bir bilgisayar olmayabilir. Bu ilk oturum
   açtığınız sistemi bir sıçrama tahtası olarak kullanıp aynı ağdaki diğer bilgisayarlara
-  erişmeye pivoting adı verilmektedir. Başka bir terminolojide kıyı başı veya giriş
-  noktası olarak isimlendirildiğine de rast gelebilirsiniz.
+  erişmeyepivotingadı verilmektedir. Başka bir terminolojidekıyı başıveyagiriş
+  noktasıolarak isimlendirildiğine de rast gelebilirsiniz.
 guid: https://www.siberoloji.com/?p=1191
 id: 1191
 image: /assets/images/2024/06/metasploit.jpg

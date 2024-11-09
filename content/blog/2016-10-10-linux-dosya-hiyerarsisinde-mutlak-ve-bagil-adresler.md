@@ -15,8 +15,8 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-10-10T01:43:00Z"
-excerpt: cd /Downloads ile cd Downloads/ arasındaki fark nedir?" Bunun açıklanması
-  için Linux Dosya Hiyerarşisinde kullanılan mutlak ve bağıl adresler kavramına bakacağız.
+excerpt: cd /Downloadsilecd Downloads/arasındaki fark nedir?"Bunun açıklanması
+  için Linux Dosya Hiyerarşisindekullanılan mutlak ve bağıl adresler kavramına bakacağız.
 guid: https://www.siberoloji.com/?p=1103
 id: 1103
 image: /assets/images/2024/06/cyber8.jpg

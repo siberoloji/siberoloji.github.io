@@ -47,15 +47,15 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Giriş Boyutuna Odaklanma***  : Asimptotik verimlilik, girdinin boyutu (n olarak gösterilir) ile algoritmanın gerçekleştirdiği işlem sayısı arasındaki ilişkiyi vurgular. 
+- ***Giriş Boyutuna Odaklanma*** : Asimptotik verimlilik, girdinin boyutu (n olarak gösterilir) ile algoritmanın gerçekleştirdiği işlem sayısı arasındaki ilişkiyi vurgular. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sabit Faktörleri Göz Ardı Etme***  : Asimptotik analiz, sabit faktörleri ve düşük dereceli terimleri göz ardı ederek performansın girdi boyutuna göre nasıl ölçeklendiğine odaklanır. 
+- ***Sabit Faktörleri Göz Ardı Etme*** : Asimptotik analiz, sabit faktörleri ve düşük dereceli terimleri göz ardı ederek performansın girdi boyutuna göre nasıl ölçeklendiğine odaklanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Algoritmaları Karşılaştır***  : Uygulama ayrıntılarından veya donanımdan bağımsız olarak farklı algoritmaların performansını karşılaştırmanın bir yolunu sağlar. 
+- ***Algoritmaları Karşılaştır*** : Uygulama ayrıntılarından veya donanımdan bağımsız olarak farklı algoritmaların performansını karşılaştırmanın bir yolunu sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -68,15 +68,15 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Büyük O Gösterimi ((O))***  : Bir algoritmanın en kötü senaryodaki zaman karmaşıklığının ***üst sınırını***  tanımlar . 
+- ***Büyük O Gösterimi ((O))*** : Bir algoritmanın en kötü senaryodaki zaman karmaşıklığının***üst sınırını*** tanımlar . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Omega Notasyonu ((Ω))***  : En iyi durum senaryosunu temsil eden ***alt sınırı tanımlar.***  
+- ***Omega Notasyonu ((Ω))*** :En iyi durum senaryosunu temsil eden***alt sınırı tanımlar.***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Theta Notasyonu ((Θ))***  : Algoritmanın hem üst hem de alt sınırlarını temsil eden ***sıkı sınırı***  tanımlar . 
+- ***Theta Notasyonu ((Θ))*** : Algoritmanın hem üst hem de alt sınırlarını temsil eden***sıkı sınırı*** tanımlar . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -120,15 +120,15 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***O(1)***  : Sabit zaman. Algoritmanın yürütme zamanı girdinin boyutuna bağlı değildir. Örneğin, bir dizideki bir öğeye dizine göre erişmek (O(1))'dir çünkü dizi boyutundan bağımsız olarak aynı zamanı alır. 
+- ***O(1)*** : Sabit zaman. Algoritmanın yürütme zamanı girdinin boyutuna bağlı değildir. Örneğin, bir dizideki bir öğeye dizine göre erişmek (O(1))'dir çünkü dizi boyutundan bağımsız olarak aynı zamanı alır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n)***  : Doğrusal zaman. Algoritmanın yürütme süresi girdi boyutuyla doğrusal olarak artar. Örneğin, sıralanmamış bir dizide bir öğe aramanın zaman karmaşıklığı (O(n))'dir. 
+- ***O(n)*** : Doğrusal zaman. Algoritmanın yürütme süresi girdi boyutuyla doğrusal olarak artar. Örneğin, sıralanmamış bir dizide bir öğe aramanın zaman karmaşıklığı (O(n))'dir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n^2)***  : İkinci dereceden zaman. Yürütme zamanı girdi boyutuyla ikinci dereceden büyür. Bubble Sort ve Selection Sort gibi sıralama algoritmalarının en kötü durum zaman karmaşıklığı (O(n^2))'dir. 
+- ***O(n^2)*** : İkinci dereceden zaman. Yürütme zamanı girdi boyutuyla ikinci dereceden büyür. Bubble Sort ve Selection Sort gibi sıralama algoritmalarının en kötü durum zaman karmaşıklığı (O(n^2))'dir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -155,11 +155,11 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Ω(1)***  : Bir algoritmanın sabit zaman aldığı en iyi durum senaryosu, örneğin bir dizideki ilk elemanı kontrol etmek gibi. 
+- ***Ω(1)*** : Bir algoritmanın sabit zaman aldığı en iyi durum senaryosu, örneğin bir dizideki ilk elemanı kontrol etmek gibi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ω(n)***  : Örneğin, en iyi senaryoda bile doğrusal arama en kötü durumda bile tüm öğelerin incelenmesini gerektirir, dolayısıyla hedefin nerede bulunduğuna bağlı olarak en iyi durum karmaşıklığı da doğrusal olabilir. 
+- ***Ω(n)*** : Örneğin, en iyi senaryoda bile doğrusal arama en kötü durumda bile tüm öğelerin incelenmesini gerektirir, dolayısıyla hedefin nerede bulunduğuna bağlı olarak en iyi durum karmaşıklığı da doğrusal olabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -189,11 +189,11 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Θ(n)***  : Hem en iyi hem de en kötü durumlarda doğrusal büyüme. Örneğin, (n) elemandan oluşan bir dizide gezinmek, hem en iyi hem de en kötü durumlarda tam olarak (n) işlem gerektirir. 
+- ***Θ(n)*** : Hem en iyi hem de en kötü durumlarda doğrusal büyüme. Örneğin, (n) elemandan oluşan bir dizide gezinmek, hem en iyi hem de en kötü durumlarda tam olarak (n) işlem gerektirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Θ(n log n)***  : Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi, giriş boyutu arttıkça (n) logaritmik bir şekilde ölçeklenen bir zaman karmaşıklığına sahip olan verimli sıralama algoritmalarında yaygındır. 
+- ***Θ(n log n)*** : Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi, giriş boyutu arttıkça (n) logaritmik bir şekilde ölçeklenen bir zaman karmaşıklığına sahip olan verimli sıralama algoritmalarında yaygındır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -210,15 +210,15 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Performansı Tahmin Etme***  : Bir algoritmanın asimptotik davranışını anlayarak, büyük veri kümeleri üzerindeki performansını tahmin edebilirsiniz; bu da büyük verileri içeren gerçek dünya uygulamaları için çok önemlidir. 
+- ***Performansı Tahmin Etme*** : Bir algoritmanın asimptotik davranışını anlayarak, büyük veri kümeleri üzerindeki performansını tahmin edebilirsiniz; bu da büyük verileri içeren gerçek dünya uygulamaları için çok önemlidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Algoritmaları Karşılaştırın***  : Asimptotik verimlilik, algoritmalar arasında nesnel karşılaştırmaya olanak tanır ve verilen bir problem için en verimli algoritmanın seçilmesini kolaylaştırır. 
+- ***Algoritmaları Karşılaştırın*** : Asimptotik verimlilik, algoritmalar arasında nesnel karşılaştırmaya olanak tanır ve verilen bir problem için en verimli algoritmanın seçilmesini kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ölçeklenebilirlik***  : Asimptotik verimliliğin analiz edilmesi, algoritmanın girdi boyutu arttıkça iyi ölçeklenmesini sağlayarak büyük ölçekli sistemler için uygun hale gelmesini sağlar. 
+- ***Ölçeklenebilirlik*** : Asimptotik verimliliğin analiz edilmesi, algoritmanın girdi boyutu arttıkça iyi ölçeklenmesini sağlayarak büyük ölçekli sistemler için uygun hale gelmesini sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -231,31 +231,31 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***O(1) – Sabit Zaman***  : Algoritmanın performansı, giriş boyutundan bağımsız olarak sabit kalır. Örnek: Bir dizi öğesine indeksi aracılığıyla erişim. 
+- ***O(1) – Sabit Zaman*** : Algoritmanın performansı, giriş boyutundan bağımsız olarak sabit kalır. Örnek: Bir dizi öğesine indeksi aracılığıyla erişim. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(log n) – Logaritmik Zaman***  : Algoritmanın performansı giriş boyutuyla logaritmik olarak artar. Örnek: İkili arama, burada arama alanı her yinelemede yarıya iner. 
+- ***O(log n) – Logaritmik Zaman*** : Algoritmanın performansı giriş boyutuyla logaritmik olarak artar. Örnek: İkili arama, burada arama alanı her yinelemede yarıya iner. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n) – Doğrusal Zaman***  : Algoritmanın performansı girdi boyutuyla doğrusal olarak artar. Örnek: Dizideki her elemanın kontrol edilmesi gereken doğrusal arama. 
+- ***O(n) – Doğrusal Zaman*** : Algoritmanın performansı girdi boyutuyla doğrusal olarak artar. Örnek: Dizideki her elemanın kontrol edilmesi gereken doğrusal arama. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n log n) – Doğrusal Zaman***  : Performans (n) kat (log n) ile orantılı bir oranda artar. Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi verimli sıralama algoritmalarında yaygındır. 
+- ***O(n log n) – Doğrusal Zaman*** : Performans (n) kat (log n) ile orantılı bir oranda artar. Bu, Birleştirme Sıralaması ve Hızlı Sıralama gibi verimli sıralama algoritmalarında yaygındır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n^2) – İkinci Dereceden Zaman***  : Algoritmanın performansı giriş boyutuyla birlikte ikinci dereceden artar. Örnek: Her öğenin diğer her öğeyle karşılaştırıldığı Kabarcık Sıralaması ve Seçim Sıralaması. 
+- ***O(n^2) – İkinci Dereceden Zaman*** : Algoritmanın performansı giriş boyutuyla birlikte ikinci dereceden artar. Örnek: Her öğenin diğer her öğeyle karşılaştırıldığı Kabarcık Sıralaması ve Seçim Sıralaması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(2^n) – Üstel Zaman***  : Giriş boyutundaki her artışla performans iki katına çıkar. Örnek: Her fonksiyon çağrısının iki çağrı daha oluşturduğu Fibonacci dizisi için yinelemeli algoritmalar. 
+- ***O(2^n) – Üstel Zaman*** : Giriş boyutundaki her artışla performans iki katına çıkar. Örnek: Her fonksiyon çağrısının iki çağrı daha oluşturduğu Fibonacci dizisi için yinelemeli algoritmalar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***O(n!) – Faktöriyel Zaman***  : Algoritmanın performansı aşırı hızlı artar ve bu da onu küçük girdi boyutları için bile kullanışsız hale getirir. Örnek: Gezgin satıcı probleminin kaba kuvvet kullanılarak çözülmesi. 
+- ***O(n!) – Faktöriyel Zaman*** : Algoritmanın performansı aşırı hızlı artar ve bu da onu küçük girdi boyutları için bile kullanışsız hale getirir. Örnek: Gezgin satıcı probleminin kaba kuvvet kullanılarak çözülmesi. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -275,11 +275,11 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kabarcık Sıralaması***  : Bu algoritmanın zaman karmaşıklığı ***O(n^2)'***  dir , bu da onu büyük veri kümeleri için verimsiz hale getirir. Asimptotik olarak performansı hızla düşer. 
+- ***Kabarcık Sıralaması*** : Bu algoritmanın zaman karmaşıklığı***O(n^2)'*** dir , bu da onu büyük veri kümeleri için verimsiz hale getirir. Asimptotik olarak performansı hızla düşer. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Birleştirme Sıralaması : *** ***O(n log n)***  zaman karmaşıklığıyla , Birleştirme Sıralaması büyük veri kümeleri için çok daha verimlidir ve daha yüksek zaman karmaşıklığına sahip algoritmalardan daha iyi ölçeklenir. 
+- ***Birleştirme Sıralaması :*** ***O(n log n)*** zaman karmaşıklığıyla, Birleştirme Sıralaması büyük veri kümeleri için çok daha verimlidir ve daha yüksek zaman karmaşıklığına sahip algoritmalardan daha iyi ölçeklenir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -292,11 +292,11 @@ url: /tr/algoritmalarin-asimptotik-verimliligini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Doğrusal Arama : Zaman karmaşıklığı *** ***O(n)***  olan doğrusal arama, en kötü durumda girdinin her öğesinin taranmasını gerektirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
+- ***Doğrusal Arama : Zaman karmaşıklığı*** ***O(n)*** olandoğrusal arama, en kötü durumda girdinin her öğesinin taranmasını gerektirir ve bu da büyük veri kümeleri için verimsiz hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İkili Arama***  : Öte yandan, ikili aramanın zaman karmaşıklığı ***O(log n)'***  dir ve bu da büyük, sıralı veri kümeleri için çok daha hızlı olmasını sağlar, çünkü her karşılaştırmada arama alanını yarı yarıya azaltır. 
+- ***İkili Arama*** : Öte yandan, ikili aramanın zaman karmaşıklığı***O(log n)'*** dir ve bu da büyük, sıralı veri kümeleri için çok daha hızlı olmasını sağlar, çünkü her karşılaştırmada arama alanını yarı yarıya azaltır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

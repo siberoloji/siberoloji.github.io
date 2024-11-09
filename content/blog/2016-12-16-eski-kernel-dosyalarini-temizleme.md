@@ -82,15 +82,15 @@ linux-image-extra-4.4.0-53-generic install</pre>
 
 <!-- wp:list -->
  <!-- wp:list-item -->
-- Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle ***kaldırılmamalıdır*** . 
+- Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle***kaldırılmamalıdır*** . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-***42*** , 4.4.0-***43*** ) ***kaldırmamanızı***  tavsiye ediyorum. 
+- Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-***42*** ,4.4.0-***43*** )***kaldırmamanızı*** tavsiye ediyorum. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Bu durumda (4.4.0-***21*** , 4.4.0-***31*** , 4.4.0-***34*** , 4.4.0-***38*** ) sürümlerinin tamamını veya istediklerinizi ***kaldırabilirsiniz*** . 
+- Bu durumda (4.4.0-***21*** ,4.4.0-***31*** ,4.4.0-***34*** ,4.4.0-***38*** ) sürümlerinin tamamını veya istediklerinizi***kaldırabilirsiniz*** . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

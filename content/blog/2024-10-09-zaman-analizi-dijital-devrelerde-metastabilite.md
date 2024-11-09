@@ -51,15 +51,15 @@ url: /tr/zaman-analizi-dijital-devrelerde-metastabilite/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Asenkron Sinyal Arayüzü***  : Farklı saat alanlarından gelen sinyallerin uygun senkronizasyon olmadan etkileşime girmesidir. 
+- ***Asenkron Sinyal Arayüzü*** : Farklı saat alanlarından gelen sinyallerin uygun senkronizasyon olmadan etkileşime girmesidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Saat Eğimi***  : Saat sinyallerinin zamanlamasındaki değişimler, yükselme ve düşme süreleri kabul edilebilir sınırları aşarsa metastabil durumlara yol açabilir. 
+- ***Saat Eğimi*** : Saat sinyallerinin zamanlamasındaki değişimler, yükselme ve düşme süreleri kabul edilebilir sınırları aşarsa metastabil durumlara yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eşzamanlı Geçişler***  : Birden fazla giriş neredeyse aynı anda geçiş yaptığında, bir flip-flop'u metastabil bir duruma itebilirler [6]. 
+- ***Eşzamanlı Geçişler*** : Birden fazla giriş neredeyse aynı anda geçiş yaptığında, bir flip-flop'u metastabil bir duruma itebilirler [6]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -73,11 +73,11 @@ url: /tr/zaman-analizi-dijital-devrelerde-metastabilite/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kurulum Süresi***  : Giriş sinyalinin saat kenarından önce sabit kalması gereken minimum süre. 
+- ***Kurulum Süresi*** : Giriş sinyalinin saat kenarından önce sabit kalması gereken minimum süre. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tutma Süresi***  : Saat kenarından sonra giriş sinyalinin de sabit kalması gereken en kısa süre. 
+- ***Tutma Süresi*** : Saat kenarından sonra giriş sinyalinin de sabit kalması gereken en kısa süre. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -121,15 +121,15 @@ url: /tr/zaman-analizi-dijital-devrelerde-metastabilite/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Öngörülemeyen Çıktılar***  : En acil sonuç, devrelerin beklenen mantık seviyelerine uymayan güvenilir olmayan çıktılar üretebilmesidir. 
+- ***Öngörülemeyen Çıktılar*** : En acil sonuç, devrelerin beklenen mantık seviyelerine uymayan güvenilir olmayan çıktılar üretebilmesidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hataların Yayılması***  : Eğer bir bileşen metastabil bir duruma girerse, devredeki sonraki aşamalara hataları yayabilir. 
+- ***Hataların Yayılması*** : Eğer bir bileşen metastabil bir duruma girerse, devredeki sonraki aşamalara hataları yayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sistem Arızaları***  : Tıbbi cihazlar veya havacılık sistemleri gibi kritik uygulamalarda, metastabilite uygun şekilde yönetilmezse felaketle sonuçlanacak arızalara yol açabilir. 
+- ***Sistem Arızaları*** : Tıbbi cihazlar veya havacılık sistemleri gibi kritik uygulamalarda, metastabilite uygun şekilde yönetilmezse felaketle sonuçlanacak arızalara yol açabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -143,11 +143,11 @@ url: /tr/zaman-analizi-dijital-devrelerde-metastabilite/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Arıza Oranı Hesaplaması***  : Tasarımcılar, metastabil olayların meydana gelme oranını ve bunların çözülme olasılığını belirleyerek arıza oranlarını tahmin edebilirler. 
+- ***Arıza Oranı Hesaplaması*** : Tasarımcılar, metastabil olayların meydana gelme oranını ve bunların çözülme olasılığını belirleyerek arıza oranlarını tahmin edebilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MTBF Analizi***  : MTBF'yi hesaplamak, zaman içinde metastabilite nedeniyle meydana gelen arızaların ne sıklıkla beklendiğinin değerlendirilmesini içerir [3][4]. 
+- ***MTBF Analizi*** : MTBF'yi hesaplamak, zaman içinde metastabilite nedeniyle meydana gelen arızaların ne sıklıkla beklendiğinin değerlendirilmesini içerir [3][4]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -181,11 +181,11 @@ url: /tr/zaman-analizi-dijital-devrelerde-metastabilite/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Daha Uzun Saat Periyotları***  : Saat periyotlarının artırılması, örneklemeden önce sinyallerin dengelenmesi için daha fazla zamana olanak tanır. 
+- ***Daha Uzun Saat Periyotları*** : Saat periyotlarının artırılması, örneklemeden önce sinyallerin dengelenmesi için daha fazla zamana olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dikkatli Zamanlama Analizi***  : Kurulum ve tutma sürelerine kesinlikle uyulması, metastabil bir duruma girme şansını en aza indirir. 
+- ***Dikkatli Zamanlama Analizi*** : Kurulum ve tutma sürelerine kesinlikle uyulması, metastabil bir duruma girme şansını en aza indirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

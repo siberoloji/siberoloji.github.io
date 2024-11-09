@@ -39,19 +39,19 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Genişletilebilirlik***  : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler. 
+- ***Genişletilebilirlik*** : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri ve sunumun ayrılması***  : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır. 
+- ***Veri ve sunumun ayrılması*** : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Platform ve dil bağımsızlığı***  : XML, XML'i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir. 
+- ***Platform ve dil bağımsızlığı*** : XML, XML'i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sıkı sözdizimi kuralları***  : XML'in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır. 
+- ***Sıkı sözdizimi kuralları*** : XML'in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -140,15 +140,15 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Tüm elemanların bir kapanış etiketi olmalı***  veya kendi kendine kapanmalıdır. 
+- ***Tüm elemanların bir kapanış etiketi olmalı*** veya kendi kendine kapanmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Etiketler büyük/küçük harfe duyarlıdır***  : <code>&lt;Element&gt;</code>ve <code>&lt;element&gt;</code>farklı etiketlerdir. 
+- ***Etiketler büyük/küçük harfe duyarlıdır*** :<code>&lt;Element&gt;</code>ve<code>&lt;element&gt;</code>farklı etiketlerdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Öğeler düzgün bir şekilde iç içe yerleştirilmelidir***  : 
+- ***Öğeler düzgün bir şekilde iç içe yerleştirilmelidir*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -159,11 +159,11 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-- ***Öznitelik değerleri tırnak işareti içinde olmalıdır***  :<code>&lt;element attribute="value"&gt;</code> 
+- ***Öznitelik değerleri tırnak işareti içinde olmalıdır*** :<code>&lt;element attribute="value"&gt;</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Özel karakterler kaçırılmalıdır***  : <code>&amp;lt;</code>for &lt;, <code>&amp;gt;</code>for &gt;, <code>&amp;amp;</code>for &amp; gibi varlıkları kullanın. 
+- ***Özel karakterler kaçırılmalıdır*** :<code>&amp;lt;</code>for &lt;,<code>&amp;gt;</code>for &gt;,<code>&amp;amp;</code>for &amp; gibi varlıkları kullanın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -379,19 +379,19 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Yerleşik Ekosistem***  : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir. 
+- ***Yerleşik Ekosistem*** : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Geriye Dönük Uyumluluk***  : Birçok sistem ve uygulama XML'e güvenir ve bu da XML'in sürekli güncelliğini garanti altına alır. 
+- ***Geriye Dönük Uyumluluk*** : Birçok sistem ve uygulama XML'e güvenir ve bu da XML'in sürekli güncelliğini garanti altına alır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sürekli Geliştirme***  : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor. 
+- ***Sürekli Geliştirme*** : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uzmanlık***  : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor. 
+- ***Uzmanlık*** : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

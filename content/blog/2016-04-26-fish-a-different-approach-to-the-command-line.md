@@ -120,5 +120,5 @@ yum install fish</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">fish</code></pre>
 <!-- /wp:code -->
 
-  I recommend you try it. Fish takes a different approach to the Command line. You can find detailed usage documentation at the program's <a href="http://fishshell.com/" target="_blank" rel="noreferrer noopener">address</a>. 
+  I recommend you try it. Fish takes a different approach to the Command line. You can finddetailed usage documentation at the program's<a href="http://fishshell.com/" target="_blank" rel="noreferrer noopener">address</a>. 
  

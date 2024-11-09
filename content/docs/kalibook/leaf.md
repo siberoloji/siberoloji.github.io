@@ -8,6 +8,6 @@ url: leaf-page
 
 ## Header 2
 
-###  Header 3
+### Header 3
 
 This page is under a folder.

@@ -34,21 +34,21 @@
 &lt;p&gt;***Key Characteristics of Wired Communication:*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Reliability:***  Wired connections are generally more reliable than wireless connections, as they are less susceptible to interference and signal degradation. 
+- ***Reliability:*** Wired connections are generally more reliable than wireless connections, as they are less susceptible to interference andsignal degradation. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/em&gt;  Wired connections can be more secure, as they are less prone to hacking and eavesdropping.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/em&gt; Wired connections can be more secure, as they are less prone to hacking and eavesdropping.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Speed:&lt;/strong&gt;&lt;/em&gt;  Wired connections can offer higher data transfer speeds, especially for long distances.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Speed:&lt;/strong&gt;&lt;/em&gt; Wired connections can offer higher data transfer speeds, especially for long distances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt;&lt;/em&gt;  Wired infrastructure can be relatively inexpensive to install and maintain, especially for short distances.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt;&lt;/em&gt; Wired infrastructure can be relatively inexpensive to install and maintain, especially for short distances.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -56,16 +56,16 @@
 &lt;p&gt;***Types of Wired Communication:*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ethernet:***  This is the most common wired technology used for local area networks (LANs). Ethernet cables transmit data at various speeds, ranging from 10 Mbps to 100 Gbps. 
+- ***Ethernet:*** This is the most common wired technology used for local area networks (LANs). Ethernet cables transmit data at various speeds, ranging from 10 Mbps to 100 Gbps. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fiber Optic:&lt;/strong&gt;&lt;/em&gt;  Fiber optic cables use light pulses to transmit data at extremely high speeds. They are ideal for long-distance communication and high-bandwidth applications.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fiber Optic:&lt;/strong&gt;&lt;/em&gt; Fiber optic cables use light pulses to transmit data at extremely high speeds. They are ideal for long-distance communication and high-bandwidth applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Coaxial Cable:&lt;/strong&gt;&lt;/em&gt;  Coaxial cables are used for cable television and internet connections. They offer good performance and are relatively affordable.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Coaxial Cable:&lt;/strong&gt;&lt;/em&gt; Coaxial cables are used for cable television and internet connections. They offer good performance and are relatively affordable.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -77,21 +77,21 @@
 &lt;p&gt;***Key Characteristics of Wireless Communication:*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Flexibility:***  Wireless connections offer greater flexibility, as devices can be used anywhere within the coverage area. 
+- ***Flexibility:*** Wireless connections offer greater flexibility, as devices can be used anywhere within the coverage area. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mobility:&lt;/strong&gt;&lt;/em&gt;  Wireless devices can be easily moved around, making them ideal for mobile applications.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mobility:&lt;/strong&gt;&lt;/em&gt; Wireless devices can be easily moved around, making them ideal for mobile applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Scalability:&lt;/strong&gt;&lt;/em&gt;  Wireless networks can be easily expanded to accommodate more devices.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Scalability:&lt;/strong&gt;&lt;/em&gt; Wireless networks can be easily expanded to accommodate more devices.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt;&lt;/em&gt;  Wireless technologies can be more cost-effective to install and maintain, especially for large areas.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost-Effective:&lt;/strong&gt;&lt;/em&gt; Wireless technologies can be more cost-effective to install and maintain, especially for large areas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -99,21 +99,21 @@
 &lt;p&gt;***Types of Wireless Communication:*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Wi-Fi:***  Wi-Fi uses radio waves to transmit data over short distances. It is widely used for home and office networks. 
+- ***Wi-Fi:*** Wi-Fi uses radio waves to transmit data over short distances. It is widely used for home and office networks. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cellular Networks:&lt;/strong&gt;&lt;/em&gt;  Cellular networks use radio waves to transmit data over long distances. They are used for mobile phones and other mobile devices.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cellular Networks:&lt;/strong&gt;&lt;/em&gt; Cellular networks use radio waves to transmit data over long distances. They are used for mobile phones and other mobile devices.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bluetooth:&lt;/strong&gt;&lt;/em&gt;  Bluetooth is a short-range wireless technology used for connecting devices such as headphones, keyboards, and mice.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bluetooth:&lt;/strong&gt;&lt;/em&gt; Bluetooth is a short-range wireless technology used for connecting devices such as headphones, keyboards, and mice.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Satellite Communication:&lt;/strong&gt;&lt;/em&gt;  Satellite communication involves the transmission of data via satellites orbiting the Earth. It is used for global communication and remote areas.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Satellite Communication:&lt;/strong&gt;&lt;/em&gt; Satellite communication involves the transmission of data via satellites orbiting the Earth. It is used for global communication and remote areas.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -128,26 +128,26 @@
 &lt;p&gt;The choice between wired and wireless communication depends on various factors, including:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Distance:***  For short distances, wired connections are often more reliable and cost-effective. For long distances, wireless technologies like satellite communication may be necessary. 
+- ***Distance:*** For short distances, wired connections are often more reliable and cost-effective. For long distances, wireless technologies like satellite communication may be necessary. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/em&gt;  Wired connections are generally more secure, but wireless connections can be secured using encryption techniques.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/em&gt; Wired connections are generally more secure, but wireless connections can be secured using encryption techniques.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mobility:&lt;/strong&gt;&lt;/em&gt;  Wireless connections offer greater mobility, making them ideal for mobile devices.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mobility:&lt;/strong&gt;&lt;/em&gt; Wireless connections offer greater mobility, making them ideal for mobile devices.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost:&lt;/strong&gt;&lt;/em&gt;  Wired infrastructure can be expensive to install, especially for large areas. Wireless technologies can be more cost-effective, but they may require ongoing subscription fees.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cost:&lt;/strong&gt;&lt;/em&gt; Wired infrastructure can be expensive to install, especially for large areas. Wireless technologies can be more cost-effective, but they may require ongoing subscription fees.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Interference:&lt;/strong&gt;&lt;/em&gt;  Wireless connections can be susceptible to interference from other devices and environmental factors.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Interference:&lt;/strong&gt;&lt;/em&gt; Wireless connections can be susceptible to interference from other devices and environmental factors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

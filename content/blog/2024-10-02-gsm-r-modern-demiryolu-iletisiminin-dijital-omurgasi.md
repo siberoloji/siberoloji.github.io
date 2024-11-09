@@ -47,35 +47,35 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Öncelik ve Ön Alma***  : GSM-R, ağ tıkanıklığı zamanlarında bile kritik çağrıların her zaman iletilmesini sağlar. Çok seviyeli bir öncelik şeması kullanarak acil durum çağrılarının daha az kritik iletişimlere göre öncelik almasını sağlar. 
+- ***Öncelik ve Ön Alma*** : GSM-R, ağ tıkanıklığı zamanlarında bile kritik çağrıların her zaman iletilmesini sağlar. Çok seviyeli bir öncelik şeması kullanarak acil durum çağrılarının daha az kritik iletişimlere göre öncelik almasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İşlevsel Adresleme***  : Bu özellik, belirli bir kişiye veya telefon numarasına değil, belirli bir işleve (örneğin "123 numaralı trenin sürücüsü") çağrı yapılmasına olanak tanır. Bu, personelin sık sık değiştiği bir ortamda çok önemlidir. 
+- ***İşlevsel Adresleme*** : Bu özellik, belirli bir kişiye veya telefon numarasına değil, belirli bir işleve (örneğin "123 numaralı trenin sürücüsü") çağrı yapılmasına olanak tanır. Bu, personelin sık sık değiştiği bir ortamda çok önemlidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Konuma Bağlı Adresleme***  : Çağrılar bir trenin konumuna göre yönlendirilebilir. Örneğin, "en yakın bakım ekibine" yapılan bir çağrı, trenin mevcut konumuna en yakın ekibe yönlendirilecektir. 
+- ***Konuma Bağlı Adresleme*** : Çağrılar bir trenin konumuna göre yönlendirilebilir. Örneğin, "en yakın bakım ekibine" yapılan bir çağrı, trenin mevcut konumuna en yakın ekibe yönlendirilecektir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Acil Çağrılar***  : GSM-R, acil durumlarda ilgili tüm taraflara aynı anda bağlanan özel bir acil çağrı özelliği sunmaktadır. 
+- ***Acil Çağrılar*** : GSM-R, acil durumlarda ilgili tüm taraflara aynı anda bağlanan özel bir acil çağrı özelliği sunmaktadır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Manevra Modu***  : Bu mod, manevra operasyonları sırasında manevra ekibi lideri ile sürücü arasında iletişimi sağlar. 
+- ***Manevra Modu*** : Bu mod, manevra operasyonları sırasında manevra ekibi lideri ile sürücü arasında iletişimi sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Doğrudan Mod***  : Şebeke kapsama alanı dışında olan bölgelerde, GSM-R cihazları kısa mesafelerde birbirleriyle doğrudan haberleşebilir. 
+- ***Doğrudan Mod*** : Şebeke kapsama alanı dışında olan bölgelerde, GSM-R cihazları kısa mesafelerde birbirleriyle doğrudan haberleşebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yüksek Hızlı Çalışma***  : GSM-R, yüksek hızlı demir yolu hatlarında bile güvenilir iletişimi koruyarak, 500 km/saat hıza kadar çalışmak üzere tasarlanmıştır. 
+- ***Yüksek Hızlı Çalışma*** : GSM-R, yüksek hızlı demir yolu hatlarında bile güvenilir iletişimi koruyarak, 500 km/saat hıza kadar çalışmak üzere tasarlanmıştır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gelişmiş Veri Hızları***  : GSM tabanlı olmasına rağmen GSM-R, gelişmiş demir yolu uygulamalarına uyum sağlamak için daha yüksek veri hızlarını destekler. 
+- ***Gelişmiş Veri Hızları*** : GSM tabanlı olmasına rağmen GSM-R, gelişmiş demir yolu uygulamalarına uyum sağlamak için daha yüksek veri hızlarını destekler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -97,15 +97,15 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Acil Durum Haberleşmesi***  : Herhangi bir olay anında GSM-R, ilgili tüm taraflarla anında ve eş zamanlı haberleşme imkânı sağlar. 
+- ***Acil Durum Haberleşmesi*** : Herhangi bir olay anında GSM-R, ilgili tüm taraflarla anında ve eş zamanlı haberleşme imkânı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Makinist-Kontrolör İletişimi***  : Tren makinistleri ile trafik kontrolörleri arasındaki sürekli ve güvenilir iletişim, tren hareketlerinin güvenli olmasını sağlar. 
+- ***Makinist-Kontrolör İletişimi*** : Tren makinistleri ile trafik kontrolörleri arasındaki sürekli ve güvenilir iletişim, tren hareketlerinin güvenli olmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hat Kenarı Çalışanlarının Güvenliği***  : GSM-R, yaklaşan trenler konusunda hat kenarlarındaki çalışanları uyarmaya yardımcı olur ve herhangi bir güvenlik endişesini hızla iletmelerini sağlar. 
+- ***Hat Kenarı Çalışanlarının Güvenliği*** : GSM-R, yaklaşan trenler konusunda hat kenarlarındaki çalışanları uyarmaya yardımcı olur ve herhangi bir güvenlik endişesini hızla iletmelerini sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -119,15 +119,15 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gerçek Zamanlı Bilgi***  : Tren lokasyonları, gecikmeler ve ray koşulları hakkında gerçek zamanlı bilgi iletimini sağlar. 
+- ***Gerçek Zamanlı Bilgi*** : Tren lokasyonları, gecikmeler ve ray koşulları hakkında gerçek zamanlı bilgi iletimini sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Trafik Yönetimi***  : Kontrolörler, trafiği daha etkin bir şekilde yönetmek, gecikmeleri azaltmak ve dakikliği artırmak için GSM-R'yi kullanabilirler. 
+- ***Trafik Yönetimi*** : Kontrolörler, trafiği daha etkin bir şekilde yönetmek, gecikmeleri azaltmak ve dakikliği artırmak için GSM-R'yi kullanabilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bakım Koordinasyonu***  : GSM-R, bakım faaliyetlerinin daha iyi koordine edilmesini kolaylaştırarak düzenli hizmetlerdeki kesintileri en aza indirir. 
+- ***Bakım Koordinasyonu*** : GSM-R, bakım faaliyetlerinin daha iyi koordine edilmesini kolaylaştırarak düzenli hizmetlerdeki kesintileri en aza indirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -141,11 +141,11 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Doğru Anonslar***  : İstasyon personeli tren hareketleri hakkında gerçek zamanlı güncellemeler alabilir, bu da yolcu duyurularının daha doğru yapılmasını sağlar. 
+- ***Doğru Anonslar*** : İstasyon personeli tren hareketleri hakkında gerçek zamanlı güncellemeler alabilir, bu da yolcu duyurularının daha doğru yapılmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hizmet Güncellemeleri***  : Hizmet kesintileri veya değişiklikleri hakkındaki bilgiler, yolcuları bilgilendirebilecek ilgili personele hızla iletilebilir. 
+- ***Hizmet Güncellemeleri*** : Hizmet kesintileri veya değişiklikleri hakkındaki bilgiler, yolcuları bilgilendirebilecek ilgili personele hızla iletilebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -159,11 +159,11 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Veri İletimi***  : GSM-R, ETCS verileri için iletişim kanalı sağlayarak hareket yetkilerinin, hız kısıtlamalarının ve diğer kritik sinyal bilgilerinin iletilmesine olanak tanır. 
+- ***Veri İletimi*** : GSM-R, ETCS verileri için iletişim kanalı sağlayarak hareket yetkilerinin, hız kısıtlamalarının ve diğer kritik sinyal bilgilerinin iletilmesine olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pozisyon Bildirimi***  : Trenler, GSM-R üzerinden pozisyonlarını bildirebilir, böylece daha doğru trafik yönetimi sağlanabilir. 
+- ***Pozisyon Bildirimi*** : Trenler, GSM-R üzerinden pozisyonlarını bildirebilir, böylece daha doğru trafik yönetimi sağlanabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -177,23 +177,23 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Frekans Bantları***  : GSM-R, Avrupa'da genellikle 876-880 MHz (uplink) ve 921-925 MHz (downlink) frekans bantlarında çalışır, ancak kesin tahsisler ülkeye göre değişebilir. 
+- ***Frekans Bantları*** : GSM-R, Avrupa'da genellikle 876-880 MHz (uplink) ve 921-925 MHz (downlink) frekans bantlarında çalışır, ancak kesin tahsisler ülkeye göre değişebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ağ Mimarisi***  : Bir GSM-R ağı, baz istasyonlarından (BTS), baz istasyonu kontrolörlerinden (BSC), mobil anahtarlama merkezlerinden (MSC) ve genel bir GSM ağına benzer çeşitli veri tabanları ve kayıtlardan oluşur, ancak bunlara ek olarak demiryollarına özgü öğeler de bulunur. 
+- ***Ağ Mimarisi*** : Bir GSM-R ağı, baz istasyonlarından (BTS), baz istasyonu kontrolörlerinden (BSC), mobil anahtarlama merkezlerinden (MSC) ve genel bir GSM ağına benzer çeşitli veri tabanları ve kayıtlardan oluşur, ancak bunlara ek olarak demiryollarına özgü öğeler de bulunur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Devir teslim***  : GSM-R, hızlı hareket eden trenlerle iletişimin sürdürülmesi için hayati önem taşıyan baz istasyonları arasında kesintisiz devir teslimi destekler. 
+- ***Devir teslim*** : GSM-R, hızlı hareket eden trenlerle iletişimin sürdürülmesi için hayati önem taşıyan baz istasyonları arasında kesintisiz devir teslimi destekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenilirlik***  : GSM-R ağları, sürekli iletişimi garanti altına almak için sıklıkla örtüşen kapsama alanıyla yüksek yedeklilik ve güvenilirlikle tasarlanmıştır. 
+- ***Güvenilirlik*** : GSM-R ağları, sürekli iletişimi garanti altına almak için sıklıkla örtüşen kapsama alanıyla yüksek yedeklilik ve güvenilirlikle tasarlanmıştır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik***  : GSM-R, dinlemeye ve yetkisiz erişime karşı koruma sağlamak için gelişmiş güvenlik özelliklerini bünyesinde barındırmaktadır. 
+- ***Güvenlik*** : GSM-R, dinlemeye ve yetkisiz erişime karşı koruma sağlamak için gelişmiş güvenlik özelliklerini bünyesinde barındırmaktadır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -207,19 +207,19 @@ url: /tr/gsm-r-modern-demiryolu-iletisiminin-dijital-omurgasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kapasite Sınırlamaları***  : Demiryolu operasyonları daha karmaşık ve veri yoğun hale geldikçe, GSM-R kapasitesi sınırlayıcı bir faktör haline gelebilir. 
+- ***Kapasite Sınırlamaları*** : Demiryolu operasyonları daha karmaşık ve veri yoğun hale geldikçe, GSM-R kapasitesi sınırlayıcı bir faktör haline gelebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Girişim***  : Bazı bölgelerde, bitişik frekans bantlarında çalışan kamusal mobil şebekelerden kaynaklanan girişim sorunları yaşandı. 
+- ***Girişim*** : Bazı bölgelerde, bitişik frekans bantlarında çalışan kamusal mobil şebekelerden kaynaklanan girişim sorunları yaşandı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Teknolojinin Gelişimi***  : GSM'in kamusal ağlarda kullanımdan kaldırılmasıyla birlikte, GSM-R ekipmanlarının bakımı daha zor ve pahalı hale gelebilir. 
+- ***Teknolojinin Gelişimi*** : GSM'in kamusal ağlarda kullanımdan kaldırılmasıyla birlikte, GSM-R ekipmanlarının bakımı daha zor ve pahalı hale gelebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Hızı***  : GSM-R'nin sunduğu veri hızları mevcut ihtiyaçlar için yeterli olsa da gelecekteki uygulamalar için yeterli olmayabilir. 
+- ***Veri Hızı*** : GSM-R'nin sunduğu veri hızları mevcut ihtiyaçlar için yeterli olsa da gelecekteki uygulamalar için yeterli olmayabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

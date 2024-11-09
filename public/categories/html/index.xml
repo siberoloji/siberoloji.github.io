@@ -1763,7 +1763,7 @@ a:active {
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;HTML&#39;de öğeleri iç içe yerleştirmek, bir veya daha fazla öğeyi başka bir öğenin içine yerleştirmek anlamına gelir. Bu hiyerarşik yapı, geliştiricilerin karmaşık düzenler oluşturmasına ve içeriğin farklı bölümleri arasındaki ilişkileri tanımlamasına olanak tanır.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Örneğin, bir &lt;code&gt;&amp;lt;div&gt;&lt;/code&gt; öğe paragraflar, başlıklar ve resimler gibi birden fazla alt öğe içerebilir. Bu, içeriğin mantıksal bir gruplandırmasını oluşturarak biçimlendirmeyi ve yönetmeyi kolaylaştırır.
+&lt;p&gt;Örneğin, bir&lt;code&gt;&amp;lt;div&gt;&lt;/code&gt; öğe paragraflar, başlıklar ve resimler gibi birden fazla alt öğe içerebilir. Bu, içeriğin mantıksal bir gruplandırmasını oluşturarak biçimlendirmeyi ve yönetmeyi kolaylaştırır.
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
 &lt;h4 class=&#34;wp-block-heading&#34;&gt;İç İçe Öğelerin Örneği 
 &lt;!-- /wp:heading --&gt;
@@ -1778,11 +1778,11 @@ a:active {
 &lt;p&gt;Bu örnekte:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Öğe &lt;code&gt;&amp;lt;div&gt;&lt;/code&gt;, başlık, paragraf ve resim için bir kapsayıcı görevi görür. 
+- Öğe&lt;code&gt;&amp;lt;div&gt;&lt;/code&gt;, başlık, paragraf ve resim için bir kapsayıcı görevi görür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;Başlık ve paragraf , ebeveyn-çocuk ilişkisini gösterecek şekilde, &amp;rsquo; nin içine yerleştirilmiştir .&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;Başlık ve paragraf , ebeveyn-çocuk ilişkisini gösterecek şekilde, &amp;rsquo;nin içine yerleştirilmiştir .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1795,21 +1795,21 @@ a:active {
 &lt;p&gt;İç içe geçmiş elemanlar birkaç nedenden dolayı temel öneme sahiptir:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Düzenli Yapı***  : İç içe yerleştirme, ilgili içerikleri bir araya toplayarak HTML belgelerinin düzenlenmesine yardımcı olur ve kodun okunmasını ve anlaşılmasını kolaylaştırır. 
+- ***Düzenli Yapı*** : İç içe yerleştirme, ilgili içerikleri bir araya toplayarak HTML belgelerinin düzenlenmesine yardımcı olur ve kodun okunmasını ve anlaşılmasını kolaylaştırır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;CSS ile Stil Oluşturma&lt;/strong&gt;&lt;/em&gt;  : Düzgün bir şekilde iç içe yerleştirilmiş öğeler, geliştiricilerin stilleri etkili bir şekilde uygulamasına olanak tanır. Örneğin, CSS&amp;rsquo;deki alt seçicileri kullanarak belirli bir öğeyi üst öğesine göre hedefleyebilirsiniz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;CSS ile Stil Oluşturma&lt;/strong&gt;&lt;/em&gt; : Düzgün bir şekilde iç içe yerleştirilmiş öğeler, geliştiricilerin stilleri etkili bir şekilde uygulamasına olanak tanır. Örneğin, CSS&amp;rsquo;deki alt seçicileri kullanarak belirli bir öğeyi üst öğesine göre hedefleyebilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mantıksal İlişkiler&lt;/strong&gt;&lt;/em&gt;  : İç içe yerleştirme, öğeler arasında mantıksal ilişkiler kurar ve bu da ekran okuyucular ve arama motorları için erişilebilirliği artırır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Mantıksal İlişkiler&lt;/strong&gt;&lt;/em&gt; : İç içe yerleştirme, öğeler arasında mantıksal ilişkiler kurar ve bu da ekran okuyucular ve arama motorları için erişilebilirliği artırır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;JavaScript Manipülasyonu&lt;/strong&gt;&lt;/em&gt;  : DOM&amp;rsquo;u (Belge Nesne Modeli) manipüle etmek için JavaScript kullanırken, elemanları doğru bir şekilde seçmek ve değiştirmek için iç içe geçmiş yapının anlaşılması çok önemlidir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;JavaScript Manipülasyonu&lt;/strong&gt;&lt;/em&gt; : DOM&amp;rsquo;u (Belge Nesne Modeli) manipüle etmek için JavaScript kullanırken, elemanları doğru bir şekilde seçmek ve değiştirmek için iç içe geçmiş yapının anlaşılması çok önemlidir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

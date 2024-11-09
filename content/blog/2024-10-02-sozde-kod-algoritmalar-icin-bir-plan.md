@@ -30,19 +30,19 @@ url: /tr/sozde-kod-algoritmalar-icin-bir-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Netlik ve Özlülük:***   Sözde kod, programlamaya aşina olmayanlar için bile okunması ve anlaşılması kolay olmalıdır. Gereksiz ayrıntılardan kaçınır ve algoritmanın temel mantığına odaklanır. 
+- ***Netlik ve Özlülük:*** Sözde kod, programlamaya aşina olmayanlar için bile okunması ve anlaşılması kolay olmalıdır. Gereksiz ayrıntılardan kaçınır ve algoritmanın temel mantığına odaklanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Modülerlik:***   Sözde kod genellikle algoritmaları daha küçük, daha yönetilebilir adımlara veya modüllere ayırır. Bu, kodu analiz etmeyi, hata ayıklamayı ve değiştirmeyi kolaylaştırır. 
+- ***Modülerlik:*** Sözde kod genellikle algoritmaları daha küçük, daha yönetilebilir adımlara veya modüllere ayırır. Bu, kodu analiz etmeyi, hata ayıklamayı ve değiştirmeyi kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Soyutlama:***   Sözde kod, bir programlama dilinin belirli söz diziminden uzaklaşarak algoritmik kavramlara odaklanmanızı sağlar. 
+- ***Soyutlama:*** Sözde kod, bir programlama dilinin belirli söz diziminden uzaklaşarak algoritmik kavramlara odaklanmanızı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bağımsızlık:***   Sözde kod belirli bir programlama diline bağlı değildir, bu da onu çeşitli dillerde uygulanabilen algoritmaları tanımlamak için çok yönlü bir araç haline getirir. 
+- ***Bağımsızlık:*** Sözde kod belirli bir programlama diline bağlı değildir, bu da onu çeşitli dillerde uygulanabilen algoritmaları tanımlamak için çok yönlü bir araç haline getirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -51,23 +51,23 @@ url: /tr/sozde-kod-algoritmalar-icin-bir-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Sıralı Yürütme:***   Talimatlar, göründükleri sırayla, birbiri ardına yürütülür. 
+- ***Sıralı Yürütme:*** Talimatlar, göründükleri sırayla, birbiri ardına yürütülür. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Karar Verme:***   Bu  <code>if-else</code> ifade, koşullara bağlı olarak karar almak için kullanılır. 
+- ***Karar Verme:*** Bu<code>if-else</code>ifade, koşullara bağlı olarak karar almak için kullanılır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tekrarlama:*** <code>for</code> ,  <code>while</code>, ve   gibi döngüler,  <code>do-while</code> bir kod bloğunu birden çok kez tekrarlamak için kullanılır. 
+- ***Tekrarlama:*** <code>for</code>,<code>while</code>, vegibi döngüler,<code>do-while</code>bir kod bloğunu birden çok kez tekrarlamak için kullanılır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Prosedürler ve Fonksiyonlar:***   Kodun diğer bölümlerinden çağrılabilen alt rutinler. 
+- ***Prosedürler ve Fonksiyonlar:*** Kodun diğer bölümlerinden çağrılabilen alt rutinler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yorumlar:***   Belirli kod bölümlerinin amacını açıklamak için kullanılır. 
+- ***Yorumlar:*** Belirli kod bölümlerinin amacını açıklamak için kullanılır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -91,23 +91,23 @@ url: /tr/sozde-kod-algoritmalar-icin-bir-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Algoritma Planlaması:***   Sözde kod, algoritmaların planlanmasına ve tasarlanmasına, ilgili adımların açık bir taslağını sunarak yardımcı olur. 
+- ***Algoritma Planlaması:*** Sözde kod, algoritmaların planlanmasına ve tasarlanmasına, ilgili adımların açık bir taslağını sunarak yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İletişim:***   Programcılar ve programcı olmayanlar arasında algoritmik fikirlerin iletilmesinde ortak bir dil görevi görür. 
+- ***İletişim:*** Programcılar ve programcı olmayanlar arasında algoritmik fikirlerin iletilmesinde ortak bir dil görevi görür. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hata Ayıklama:***   Sözde kod, algoritmalardaki hataları bir programlama diline uygulamadan önce tespit etmek ve düzeltmek için kullanılabilir. 
+- ***Hata Ayıklama:*** Sözde kod, algoritmalardaki hataları bir programlama diline uygulamadan önce tespit etmek ve düzeltmek için kullanılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kod Oluşturma:***   Sözde kod son haline getirildikten sonra, belirli bir programlama diline çevrilebilir. 
+- ***Kod Oluşturma:*** Sözde kod son haline getirildikten sonra, belirli bir programlama diline çevrilebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Öğrenme Aracı:***   Sözde kod, programlama kavramlarını öğrenmek ve algoritmaların nasıl çalıştığını anlamak için değerli bir araçtır. 
+- ***Öğrenme Aracı:*** Sözde kod, programlama kavramlarını öğrenmek ve algoritmaların nasıl çalıştığını anlamak için değerli bir araçtır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -116,23 +116,23 @@ url: /tr/sozde-kod-algoritmalar-icin-bir-plan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Tutarlı Girinti Kullanın:***   Girinti, kodun yapısını görsel olarak temsil etmeye yardımcı olur. 
+- ***Tutarlı Girinti Kullanın:*** Girinti, kodun yapısını görsel olarak temsil etmeye yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tanımlayıcı Değişken Adları Seçin:***   Değişkenlerin amacını yansıtan anlamlı adlar kullanın. 
+- ***Tanımlayıcı Değişken Adları Seçin:*** Değişkenlerin amacını yansıtan anlamlı adlar kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yorum Ekle:***   Karmaşık bölümlerin veya algoritmaların amacını açıklayın. 
+- ***Yorum Ekle:*** Karmaşık bölümlerin veya algoritmaların amacını açıklayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Karmaşık Sorunları Parçalara Ayırın:***   Büyük sorunları daha küçük, daha yönetilebilir alt sorunlara bölün. 
+- ***Karmaşık Sorunları Parçalara Ayırın:*** Büyük sorunları daha küçük, daha yönetilebilir alt sorunlara bölün. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sözde Kodunuzu Test Edin:***   Sözde kodu örnek girdilerle çalıştırarak doğru çıktıyı ürettiğinden emin olun. 
+- ***Sözde Kodunuzu Test Edin:*** Sözde kodu örnek girdilerle çalıştırarak doğru çıktıyı ürettiğinden emin olun. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

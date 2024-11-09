@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2017-06-05T13:32:00Z"
 excerpt: Metasploit Framework kullanarak bir hedef bilgisayarda meterpreter shell
   açtığınızda, bağlandığınız bilgisayarın ağda yaptığı haberleşme esnasında gönderilen
-  ve alınan bilgileri görmek isteyebilirsiniz. Bu işleme paket dinleme adı verilmektedir.
+  ve alınan bilgileri görmek isteyebilirsiniz. Bu işlemepaket dinlemeadı verilmektedir.
 guid: https://www.siberoloji.com/?p=1189
 id: 1189
 image: /assets/images/2024/06/metasploit.jpg

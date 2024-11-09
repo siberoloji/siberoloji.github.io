@@ -243,7 +243,7 @@ url: /tr/web-kazima-icin-yasal-ve-etik-hususlar/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Veri analizi ve çıkarımı konusunda yeni etik soruları gündeme getirebilecek  yapay zeka ve makine öğrenimindeki gelişmeler 
+- Veri analizi ve çıkarımı konusunda yeni etik soruları gündeme getirebilecekyapay zekave makine öğrenimindeki gelişmeler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

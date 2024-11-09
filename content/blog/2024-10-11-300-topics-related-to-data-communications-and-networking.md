@@ -24,7 +24,7 @@ slim_seo:
 tags:
 - data communications
 - network
-title: 300 topics related to Data Communications and Networking
+title: 300 topicsrelated toData Communications and Networking
 url: /300-topics-related-to-data-communications-and-networking/
 ---
 

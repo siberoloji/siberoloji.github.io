@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2017-06-14T13:49:00Z"
 excerpt: Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca
   gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello
-  World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne
+  World” ruby kodu yazalım vehelloworld.rbolarak/usr/share/metasploit-framework/scripts/meterpreterklasörüne
   kayıt edelim.
 guid: https://www.siberoloji.com/?p=1207
 id: 1207

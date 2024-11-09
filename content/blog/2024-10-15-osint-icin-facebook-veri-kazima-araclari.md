@@ -73,19 +73,19 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Tehdit istihbaratı***  : Çevrimiçi tartışmaları veya grupları izleyerek potansiyel güvenlik tehditlerini belirleme. 
+- ***Tehdit istihbaratı*** : Çevrimiçi tartışmaları veya grupları izleyerek potansiyel güvenlik tehditlerini belirleme. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Marka izleme***  : Bir marka veya şirket hakkında neler konuşulduğunu takip etmek. 
+- ***Marka izleme*** : Bir marka veya şirket hakkında neler konuşulduğunu takip etmek. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Soruşturmalar***  : Kolluk kuvvetleri veya kurumsal soruşturmalar için bilgi toplama. 
+- ***Soruşturmalar*** : Kolluk kuvvetleri veya kurumsal soruşturmalar için bilgi toplama. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Rekabet istihbaratı***  : Rakipleri ve sektör eğilimlerini analiz etmek. 
+- ***Rekabet istihbaratı*** : Rakipleri ve sektör eğilimlerini analiz etmek. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -102,19 +102,19 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Müşteri Duygusu***  : Markalar müşterilerinin ürünlerini veya hizmetlerini nasıl algıladıklarını ölçebilirler. 
+- ***Müşteri Duygusu*** : Markalar müşterilerinin ürünlerini veya hizmetlerini nasıl algıladıklarını ölçebilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kriz Yönetimi***  : Olumsuz paylaşımların veya duyguların erken tespiti, şirketlerin bir durum tırmanmadan önce yanıt vermesine yardımcı olur. 
+- ***Kriz Yönetimi*** : Olumsuz paylaşımların veya duyguların erken tespiti, şirketlerin bir durum tırmanmadan önce yanıt vermesine yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kamuoyu***  : Hükümetler ve STK'lar, politikalar veya olaylar hakkındaki kamuoyunun fikrini anlamak için sıklıkla sosyal medyayı takip ederler. 
+- ***Kamuoyu*** : Hükümetler ve STK'lar, politikalar veya olaylar hakkındaki kamuoyunun fikrini anlamak için sıklıkla sosyal medyayı takip ederler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Soruşturma amaçları***  : Kolluk kuvvetleri, şüpheli tespiti, kayıp şahıs vakaları veya terörizmin önlenmesi amacıyla sosyal medya izlemeyi kullanabilir. 
+- ***Soruşturma amaçları*** : Kolluk kuvvetleri, şüpheli tespiti, kayıp şahıs vakaları veya terörizmin önlenmesi amacıyla sosyal medya izlemeyi kullanabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -138,15 +138,15 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hizmet Şartları (ToS)***  : Facebook'un hizmet şartları, izinsiz olarak verilerinin toplanmasını açıkça yasaklamaktadır. Bu şartların ihlal edilmesi, hesabın askıya alınmasına, yasal işlem yapılmasına veya her ikisine yol açabilir. 
+- ***Hizmet Şartları (ToS)*** : Facebook'un hizmet şartları, izinsiz olarak verilerinin toplanmasını açıkça yasaklamaktadır. Bu şartların ihlal edilmesi, hesabın askıya alınmasına, yasal işlem yapılmasına veya her ikisine yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Gizliliği Yasaları***  : Avrupa'daki ***Genel Veri Koruma Yönetmeliği (GDPR)***  ve ABD'deki ***Kaliforniya Tüketici Gizlilik Yasası (CCPA) gibi yasalar, kişisel verilerin nasıl toplanabileceği, saklanabileceği ve işlenebileceği konusunda katı sınırlamalar getirir. Kullanıcı verilerinin onların izni olmadan toplanması bu yasaları ihlal edebilir.***  
+- ***Veri Gizliliği Yasaları*** :Avrupa'daki***Genel Veri Koruma Yönetmeliği (GDPR)*** ve ABD'deki***Kaliforniya Tüketici Gizlilik Yasası (CCPA) gibi yasalar, kişisel verilerin nasıl toplanabileceği, saklanabileceği ve işlenebileceği konusunda katı sınırlamalar getirir. Kullanıcı verilerinin onların izni olmadan toplanması bu yasaları ihlal edebilir.***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Mahkeme Kararları***  : Mahkemelerin, bilginin kamuya açık olması koşuluyla, platformlardan kamuya açık verilerin toplanmasının yasal olduğuna karar verdiği durumlar olmuştur. Ancak bu, gri bir alandır ve genellikle yargı yetkisine bağlıdır. 
+- ***Mahkeme Kararları*** : Mahkemelerin, bilginin kamuya açık olması koşuluyla, platformlardan kamuya açık verilerin toplanmasının yasal olduğuna karar verdiği durumlar olmuştur. Ancak bu, gri bir alandır ve genellikle yargı yetkisine bağlıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -156,11 +156,11 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kullanıcı Gizliliği***  : Veriler kamuya açık olsa bile, özellikle hassas veriler söz konusu olduğunda kişisel bilgilerin toplanması etik kaygılara yol açabilir. 
+- ***Kullanıcı Gizliliği*** : Veriler kamuya açık olsa bile, özellikle hassas veriler söz konusu olduğunda kişisel bilgilerin toplanması etik kaygılara yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Verilerin Kötüye Kullanımı***  : Toplanan veriler kimlik hırsızlığı, takip veya taciz gibi kötü amaçlı amaçlar için kullanılmamalıdır. 
+- ***Verilerin Kötüye Kullanımı*** : Toplanan veriler kimlik hırsızlığı, takip veya taciz gibi kötü amaçlı amaçlar için kullanılmamalıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -179,15 +179,15 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
  
 
 
- ### a. ***Social-Searcher*** 
+ ### a.***Social-Searcher*** 
 <!-- /wp:heading -->
 
-  ***Social-Searcher, kullanıcıların anahtar kelimeleri ***  aramasına ve Facebook dahil olmak üzere sosyal medya platformlarını izlemesine olanak tanıyan gerçek zamanlı bir sosyal medya izleme aracıdır . Gönderiler, kullanıcı davranışları ve etkileşim ölçümleri hakkında ayrıntılı analizler sağlar. Derin tarama özellikleri sağlamasa da, gerçek zamanlı Facebook gönderilerini filtreleme ve analiz etme yeteneği onu OSINT profesyonelleri için yararlı hale getirir. 
+  ***Social-Searcher, kullanıcıların anahtar kelimeleri*** aramasınave Facebook dahil olmak üzere sosyal medya platformlarını izlemesine olanak tanıyan gerçek zamanlı bir sosyal medya izleme aracıdır. Gönderiler, kullanıcı davranışları ve etkileşim ölçümleri hakkında ayrıntılı analizler sağlar. Derin tarama özellikleri sağlamasa da, gerçek zamanlı Facebook gönderilerini filtreleme ve analiz etme yeteneği onu OSINT profesyonelleri için yararlı hale getirir. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özellikler***  : 
+- ***Özellikler*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -208,7 +208,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 <!-- /wp:list -->
 
 
- ### b. ***Netlytic*** 
+ ### b.***Netlytic*** 
 <!-- /wp:heading -->
 
   ***Netlytic,*** &nbsp;araştırmacılar ve sosyal medya analistleri için tasarlanmış ücretsiz bir bulut tabanlı araçtır. Kullanıcıların halka açık Facebook grup konuşmalarını tarayıp analiz etmelerini sağlar. Netlytic, gönderileri kategorilere ayırır ve temel duygu analizi sağlar, bu da onu akademik araştırmacılar için popüler bir araç haline getirir. 
@@ -216,7 +216,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özellikler***  : 
+- ***Özellikler*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -237,7 +237,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 <!-- /wp:list -->
 
 
- ### c. ***Octoparse*** 
+ ### c.***Octoparse*** 
 <!-- /wp:heading -->
 
   ***Octoparse,*** &nbsp;kullanıcıların Facebook dahil olmak üzere web sitelerinden veri toplamasına olanak tanıyan kodsuz bir web kazıma aracıdır. Teknik olmayan kullanıcılar için tasarlanmıştır ve sürükle ve bırak arayüzü sunar. Octoparse hem herkese açık hem de oturum açmış kullanıcı verilerini toplayabilir, ancak ikincisine erişmek için oturum açma gerekebilir ve bu da Facebook'un Hizmet Şartları'nı ihlal edebilir. 
@@ -245,7 +245,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özellikler***  : 
+- ***Özellikler*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -266,7 +266,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 <!-- /wp:list -->
 
 
- ### d. ***PhantomBuster*** 
+ ### d.***PhantomBuster*** 
 <!-- /wp:heading -->
 
   ***PhantomBuster,*** &nbsp;kullanıcı profilleri, herkese açık gönderiler ve yorumlar dahil olmak üzere Facebook'tan veri toplayabilen güçlü bir otomasyon aracıdır. Facebook'tan veri toplamak için önceden oluşturulmuş "Phantoms" (otomatik iş akışları) sunar ve daha fazla analiz için veri çıkarmak üzere API'lerle sorunsuz bir şekilde çalışır. 
@@ -274,7 +274,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özellikler***  : 
+- ***Özellikler*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -303,7 +303,7 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özellikler***  : 
+- ***Özellikler*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -336,23 +336,23 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hizmet Şartlarına Saygı Gösterin***  : Facebook'un Hizmet Şartlarını her zaman inceleyin ve saygı gösterin. Giriş bilgileri veya kısıtlı içeriğe erişim gerektiren tarama araçlarını kullanmak ciddi yasal sorunlara yol açabilir. 
+- ***Hizmet Şartlarına Saygı Gösterin*** : Facebook'un Hizmet Şartlarını her zaman inceleyin ve saygı gösterin. Giriş bilgileri veya kısıtlı içeriğe erişim gerektiren tarama araçlarını kullanmak ciddi yasal sorunlara yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kamuya Açık Verilere Odaklanın***  : Gizlilik ihlallerini önlemek için veri toplama işleminizi kamuya açık bilgilerle sınırlayın. 
+- ***Kamuya Açık Verilere Odaklanın*** : Gizlilik ihlallerini önlemek için veri toplama işleminizi kamuya açık bilgilerle sınırlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Proxy Kullanın***  : Büyük miktarda veriyi toplarken, IP engellemelerinden kaçınmak için proxy sunucularını kullanmanız önerilir. 
+- ***Proxy Kullanın*** : Büyük miktarda veriyi toplarken, IP engellemelerinden kaçınmak için proxy sunucularını kullanmanız önerilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Minimizasyonu***  : Yalnızca OSINT hedefleriniz için gerekli olan verileri toplayın. Bu, gizlilik risklerini ve veri depolama zorluklarını azaltır. 
+- ***Veri Minimizasyonu*** : Yalnızca OSINT hedefleriniz için gerekli olan verileri toplayın. Bu, gizlilik risklerini ve veri depolama zorluklarını azaltır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasal Güncellemeleri Düzenli Olarak Takip Edin***  : Veri toplama konusundaki yasalar ve düzenlemeler sürekli olarak gelişiyor, bu nedenle en son yasal gereklilikler hakkında bilgi sahibi olmak çok önemlidir. 
+- ***Yasal Güncellemeleri Düzenli Olarak Takip Edin*** : Veri toplama konusundaki yasalar ve düzenlemeler sürekli olarak gelişiyor, bu nedenle en son yasal gereklilikler hakkında bilgi sahibi olmak çok önemlidir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -369,19 +369,19 @@ url: /tr/osint-icin-facebook-veri-kazima-araclari/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hız Sınırlama ve Engelleme***  : Facebook, botları veya otomatik komut dosyalarını tespit etmek ve engellemek için hız sınırlama ve anti-scraping mekanizmaları kullanır. 
+- ***Hız Sınırlama ve Engelleme*** : Facebook, botları veya otomatik komut dosyalarını tespit etmek ve engellemek için hız sınırlama ve anti-scraping mekanizmaları kullanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasal Riskler***  : Daha önce de belirtildiği gibi, Facebook'un Hizmet Şartları'nı veya veri gizliliği yasalarını ihlal etmenin ciddi sonuçları olabilir. 
+- ***Yasal Riskler*** : Daha önce de belirtildiği gibi, Facebook'un Hizmet Şartları'nı veya veri gizliliği yasalarını ihlal etmenin ciddi sonuçları olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Dinamik İçerik***  : Facebook platformunu sık sık günceller ve bu durum veri toplama araçlarının tutarlı bir şekilde çalışmasını zorlaştırır. 
+- ***Dinamik İçerik*** : Facebook platformunu sık sık günceller ve bu durum veri toplama araçlarının tutarlı bir şekilde çalışmasını zorlaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eksik Veri***  : Kamuya açık veriler sınırlıdır ve pek çok değerli öngörü gizlilik ayarlarının ardında saklı kalabilir. 
+- ***Eksik Veri*** : Kamuya açık veriler sınırlıdır ve pek çok değerli öngörü gizlilik ayarlarının ardında saklı kalabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

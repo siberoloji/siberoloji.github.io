@@ -13,7 +13,7 @@
 <title>MSF İçinde Port Tarama – Siberoloji</title>
   <meta name="description" content="Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 Metasploit İçinde Port Tarama Tarayıcılar ve hemen hemen tüm auxiliary modülleri RHOST yerine RHOSTS değişkenini kullanırlar. RHOSTS değişkeni farklı formatlarda girilebilen IP aralıkları alabilir.
-IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız." /><link rel="canonical" href="http://localhost:1313/tr/msf-icinde-port-tarama/" itemprop="url" />
+IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız." /><link rel="canonical" href="http://localhost:1313/tr/msf-icinde-port-tarama/" itemprop="url" />
 
 <meta property="og:title" content="MSF İçinde Port Tarama" />
 <meta property="og:description" content="Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
@@ -39,7 +39,7 @@ CIDR Gösterimi (192.168.1.0/24),
 
 
 
-Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). Her satırda 1 IP olmalı
+Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).Her satırda 1 IP olmalı
 
  
 
@@ -54,16 +54,16 @@ Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli
   <meta itemprop="name" content="MSF İçinde Port Tarama">
   <meta itemprop="description" content="Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 Metasploit İçinde Port Tarama Tarayıcılar ve hemen hemen tüm auxiliary modülleri RHOST yerine RHOSTS değişkenini kullanırlar. RHOSTS değişkeni farklı formatlarda girilebilen IP aralıkları alabilir.
-IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız.">
+IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız.">
   <meta itemprop="datePublished" content="2017-05-16T12:51:00+00:00">
   <meta itemprop="dateModified" content="2017-05-16T12:51:00+00:00">
-  <meta itemprop="wordCount" content="1676">
+  <meta itemprop="wordCount" content="1669">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF İçinde Port Tarama">
   <meta name="twitter:description" content="Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 Metasploit İçinde Port Tarama Tarayıcılar ve hemen hemen tüm auxiliary modülleri RHOST yerine RHOSTS değişkenini kullanırlar. RHOSTS değişkeni farklı formatlarda girilebilen IP aralıkları alabilir.
-IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız.">
+IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Çoklu format (192.168.1.0/24, 192.168.3.0/24), Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).Her satırda 1 IP olmalı THREADS Metasploit içerisinde kullanılan tarama modüllerinin içinde THREADS isimli bir değişken bulunur. Bu değişken, tarama esnasında kaç kanaldan denemenin çalıştırılacağını belirlememizi sağlar. THREADS değişkeni varsayılan olarak 1 değerine ayarlıdır. Bu değeri arttırdığınızda tarama hızlanır. Taramanın hızlanması, işlerin çabuklaşması için faydalı olsa da bir takım kısıtlamaları bulunmaktadır. Aşağıdaki listede THREADS değişkeni ile ilgili tavsiyeleri dikkate almalısınız.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -3773,7 +3773,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/300-topics-related-to-data-communications-and-networking/"
     
-  >300 topics related to Data Communications and Networking
+  >300 topicsrelated toData Communications and Networking
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -5045,7 +5045,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/categorized-list-of-lessons-and-subtopics-for-a-computer-engineering-department-curriculum/"
     
-  >Categorized List Of Lessons And Subtopics For A Computer Engineering Department Curriculum. 
+  >Categorized List Of Lessons And Subtopics For A Computer Engineering Department Curriculum.
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -6477,7 +6477,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/tr/humbot-yapay-zeka-tarafindan-uretilen-metni-insan-kalitesinde-yaziya-donusturmek-icin-bir-arac/"
     
-  >Humbot: Yapay Zeka Tarafından Üretilen Metni İnsan Kalitesinde Yazıya Dönüştürmek İçin Bir Araç 
+  >Humbot: Yapay Zeka Tarafından Üretilen Metni İnsan Kalitesinde Yazıya Dönüştürmek İçin Bir Araç
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -6485,7 +6485,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/humbot-a-tool-to-refine-ai-generated-text-into-human-quality-writing/"
     
-  >Humbot: A Tool to Refine AI-Generated Text into Human-Quality Writing 
+  >Humbot: A Tool to Refine AI-Generated Text into Human-Quality Writing
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -7309,7 +7309,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/almalinux-certification-special-interest-group-sig/"
     
-  >AlmaLinux Certification Special Interest Group (SIG)
+  >AlmaLinux Certification Special Interest Group(SIG)
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -8509,7 +8509,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/how-to-move-the-layout-up-when-the-soft-keyboard-is-shown-android/"
     
-  >How to move the layout up when the soft keyboard is shown Android?
+  >How to move the layout up when the soft keyboard is shownAndroid?
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -9731,7 +9731,7 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <ul>
-<li>Bis dosyadan IP adresleri (file:/tmp/hostlist.txt). <em>Her satırda 1 IP olmalı</em></li>
+<li>Bis dosyadan IP adresleri (file:/tmp/hostlist.txt).<em>Her satırda 1 IP olmalı</em></li>
 </ul>
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
@@ -9741,17 +9741,17 @@ IP Aralıkları (192.168.1.20-192.168.1.30) CIDR Gösterimi (192.168.1.0/24), Ç
 <!-- wp:list -->
  <!-- wp:list-item -->
 <ul>
-<li>MSF programı Win32 sistemlerde çalışıyorsa <code>THREADS</code> değerini 16 ve altında ayarlayın.</li>
+<li>MSF programı Win32 sistemlerde çalışıyorsa<code>THREADS</code>değerini 16 ve altında ayarlayın.</li>
 </ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <ul>
-<li>MSF programı Cygwin sistemde çalışıyorsa <code>THREADS</code> değerini 200 ve altında ayarlayın</li>
+<li>MSF programı Cygwin sistemde çalışıyorsa<code>THREADS</code>değerini 200 ve altında ayarlayın</li>
 </ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
 <ul>
-<li>MSF programı Unix-like sistemde çalışıyorsa <code>THREADS</code> değerini 256 yapabilirsiniz.</li>
+<li>MSF programı Unix-like sistemde çalışıyorsa<code>THREADS</code>değerini 256 yapabilirsiniz.</li>
 </ul>
 <!-- /wp:list-item --> 
 <!-- /wp:list -->

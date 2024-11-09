@@ -81,19 +81,19 @@ url: /tr/osint-amacli-karanlik-web-sitelerini-arastirma-teknikler-ve-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Pazar Yerleri***  : Uyuşturucu, silah, çalıntı veri veya sahte ürünler gibi yasa dışı malların satıldığı siteler. 
+- ***Pazar Yerleri*** : Uyuşturucu, silah, çalıntı veri veya sahte ürünler gibi yasa dışı malların satıldığı siteler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hacker Forumları***  : Siber suçluların bilgisayar korsanlığı araçlarını paylaştıkları, güvenlik açıklarını tartıştıkları ve DDoS saldırıları veya kötü amaçlı yazılım oluşturma gibi hizmetleri sattıkları forumlar. 
+- ***Hacker Forumları*** : Siber suçluların bilgisayar korsanlığı araçlarını paylaştıkları, güvenlik açıklarını tartıştıkları ve DDoS saldırıları veya kötü amaçlı yazılım oluşturma gibi hizmetleri sattıkları forumlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Çalınan Veri Dökümleri***  : Kullanıcıların çalınan kredi kartı bilgileri, oturum açma bilgileri veya kişisel veriler gibi hassas bilgileri satın aldığı, sattığı veya takas ettiği siteler. 
+- ***Çalınan Veri Dökümleri*** : Kullanıcıların çalınan kredi kartı bilgileri, oturum açma bilgileri veya kişisel veriler gibi hassas bilgileri satın aldığı, sattığı veya takas ettiği siteler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Muhabir Siteleri***  : İnsanların hassas belgeleri anonim olarak paylaşmalarına olanak tanıyan SecureDrop veya WikiLeaks gibi platformlar. 
+- ***Muhabir Siteleri*** : İnsanların hassas belgeleri anonim olarak paylaşmalarına olanak tanıyan SecureDrop veya WikiLeaks gibi platformlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -153,15 +153,15 @@ url: /tr/osint-amacli-karanlik-web-sitelerini-arastirma-teknikler-ve-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Yargı Yetkisi Farklılığı***  : Karanlık web'den gelen verilerin kullanımını çevreleyen yasalar ülkeye ve bölgeye göre değişebilir. Bir yargı yetkisinde yasal olan bir şey başka bir yargı yetkisinde yasadışı olabilir. Karanlık web kazıma faaliyetleri yürütmeden önce hukuk müşavirliğine danışmak önemlidir. 
+- ***Yargı Yetkisi Farklılığı*** : Karanlık web'den gelen verilerin kullanımını çevreleyen yasalar ülkeye ve bölgeye göre değişebilir. Bir yargı yetkisinde yasal olan bir şey başka bir yargı yetkisinde yasadışı olabilir. Karanlık web kazıma faaliyetleri yürütmeden önce hukuk müşavirliğine danışmak önemlidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hizmet Şartları İhlalleri***  : Çoğu karanlık web sitesinin resmi hizmet şartları olmasa da, herhangi bir web içeriğini kazımak potansiyel olarak veri gizliliği yasalarını veya siber güvenlik düzenlemelerini ihlal edebilir. ***Genel Veri Koruma Yönetmeliği (GDPR)***  veya ***<a href="https://www.siberoloji.com/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/#"> Bilgisayar</a> Sahtekarlığı ve Kötüye Kullanımı Yasası (CFAA)***  gibi ilgili yasalara uyumu sağlayın . 
+- ***Hizmet Şartları İhlalleri*** : Çoğu karanlık web sitesinin resmi hizmet şartları olmasa da, herhangi bir web içeriğini kazımak potansiyel olarak veri gizliliği yasalarını veya siber güvenlik düzenlemelerini ihlal edebilir.***Genel Veri Koruma Yönetmeliği (GDPR)*** veya***<a href="https://www.siberoloji.com/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/#">Bilgisayar</a>Sahtekarlığı ve Kötüye Kullanımı Yasası (CFAA)*** gibi ilgili yasalara uyumu sağlayın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasadışı İçerik***  : Karanlık web sitelerini tararken dikkatli olun, çünkü birçoğu çocuk istismarı materyali veya yasadışı uyuşturucular gibi yasadışı içerikler barındırır. Bu içeriğe istemeden bile olsa erişmek veya depolamak sizi yasal risklere maruz bırakabilir. 
+- ***Yasadışı İçerik*** : Karanlık web sitelerini tararken dikkatli olun, çünkü birçoğu çocuk istismarı materyali veya yasadışı uyuşturucular gibi yasadışı içerikler barındırır. Bu içeriğe istemeden bile olsa erişmek veya depolamak sizi yasal risklere maruz bırakabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -171,11 +171,11 @@ url: /tr/osint-amacli-karanlik-web-sitelerini-arastirma-teknikler-ve-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kullanıcı Gizliliği***  : Anonimlik karanlık web'in temel bir özelliği olsa da, karanlık web verilerini toplamak yine de bireyler hakkında hassas bilgiler toplamayı içerebilir. Topladığınız verilerin, özellikle de kişisel nitelikteyse, kullanıcı gizliliğine saygı gösterip göstermediğini göz önünde bulundurun. 
+- ***Kullanıcı Gizliliği*** : Anonimlik karanlık web'in temel bir özelliği olsa da, karanlık web verilerini toplamak yine de bireyler hakkında hassas bilgiler toplamayı içerebilir. Topladığınız verilerin, özellikle de kişisel nitelikteyse, kullanıcı gizliliğine saygı gösterip göstermediğini göz önünde bulundurun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Kötüye Kullanımı***  : Karanlık web kazıma yoluyla toplanan veriler yalnızca suçu önlemek veya güvenliği artırmak gibi meşru amaçlar için kullanılmalıdır. Kazınan verileri kötü amaçlı olarak kötüye kullanmak veya yetkisiz taraflarla paylaşmak hem etik dışı hem de potansiyel olarak yasadışıdır. 
+- ***Veri Kötüye Kullanımı*** : Karanlık web kazıma yoluyla toplanan veriler yalnızca suçu önlemek veya güvenliği artırmak gibi meşru amaçlar için kullanılmalıdır. Kazınan verileri kötü amaçlı olarak kötüye kullanmak veya yetkisiz taraflarla paylaşmak hem etik dışı hem de potansiyel olarak yasadışıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -331,23 +331,23 @@ print(soup.title.text)</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Anonimlik Araçlarını Kullanın***  : IP adresinizin veya kimliğinizin açığa çıkmasını önlemek için her zaman Tor veya başka bir anonimlik aracını kullanın. 
+- ***Anonimlik Araçlarını Kullanın*** : IP adresinizin veya kimliğinizin açığa çıkmasını önlemek için her zaman Tor veya başka bir anonimlik aracını kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Site Kurallarına Saygı Gösterin***  : Bazı karanlık web sitelerinin veri toplama veya kazıma konusunda kendi kuralları olabilir. Yasaklanmaktan kaçınmak için bu kurallara saygı gösterin. 
+- ***Site Kurallarına Saygı Gösterin*** : Bazı karanlık web sitelerinin veri toplama veya kazıma konusunda kendi kuralları olabilir. Yasaklanmaktan kaçınmak için bu kurallara saygı gösterin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Minimizasyonu***  : Yalnızca ihtiyacınız olan verileri toplayın ve gereksiz yere büyük miktarda kişisel veri depolamaktan kaçının. 
+- ***Veri Minimizasyonu*** : Yalnızca ihtiyacınız olan verileri toplayın ve gereksiz yere büyük miktarda kişisel veri depolamaktan kaçının. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Otomatik Kazımayı Dikkatli Bir Şekilde Yapın***  : Otomasyon yararlı olsa da, siteyi aşırı yüklememeye veya bot karşıtı önlemleri tetiklememeye dikkat edin. 
+- ***Otomatik Kazımayı Dikkatli Bir Şekilde Yapın*** : Otomasyon yararlı olsa da, siteyi aşırı yüklememeye veya bot karşıtı önlemleri tetiklememeye dikkat edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasalara Uygunluğu Sağlayın***  : Kazıma faaliyetlerinizin ilgili yasa ve yönetmeliklere uygun olduğundan emin olmak için hukuk müşavirinize danışın. 
+- ***Yasalara Uygunluğu Sağlayın*** : Kazıma faaliyetlerinizin ilgili yasa ve yönetmeliklere uygun olduğundan emin olmak için hukuk müşavirinize danışın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

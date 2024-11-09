@@ -32,11 +32,11 @@
 &lt;p&gt;Birleştirme Sıralamasının iki temel özelliği vardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kararlı Sıralama***  : Eşit elemanların göreli sırasını koruyarak kararlı bir sıralama oluşturur. 
+- ***Kararlı Sıralama*** : Eşit elemanların göreli sırasını koruyarak kararlı bir sıralama oluşturur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Böl ve Yönet&lt;/strong&gt;&lt;/em&gt;  : Birleştir Sıralama, problemi yinelemeli olarak daha küçük alt problemlere (daha küçük dizilere) böler, bunları çözer ve sonuçları birleştirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Böl ve Yönet&lt;/strong&gt;&lt;/em&gt; : Birleştir Sıralama, problemi yinelemeli olarak daha küçük alt problemlere (daha küçük dizilere) böler, bunları çözer ve sonuçları birleştirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -45,16 +45,16 @@
     &lt;a href=&#34;#temel-kavramlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölme***  : Dizi, her yarıda tek bir eleman bulunana kadar iki yarıya bölünür. 
+- ***Bölme*** : Dizi, her yarıda tek bir eleman bulunana kadar iki yarıya bölünür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt;  : Tek elemanlı diziler basit bir şekilde sıralanır. Daha sonra daha büyük sıralanmış diziler oluşturmak için çiftler halinde tekrar birleştirilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conquer&lt;/strong&gt;&lt;/em&gt; : Tek elemanlı diziler basit bir şekilde sıralanır. Daha sonra daha büyük sıralanmış diziler oluşturmak için çiftler halinde tekrar birleştirilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt;  : Sıralanmış alt diziler adım adım birleştirilir ve sonuçta tam sıralanmış bir dizi elde edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Birleştir&lt;/strong&gt;&lt;/em&gt; : Sıralanmış alt diziler adım adım birleştirilir ve sonuçta tam sıralanmış bir dizi elde edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -116,11 +116,11 @@
 &lt;p&gt;Merge Sort&amp;rsquo;un en büyük avantajlarından biri zaman karmaşıklığıdır. Performansını analiz edelim:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : Birleştirme Sıralaması diziyi yinelemeli olarak iki yarıya böler. Bu, ***O(log n)***  bölünmeyle sonuçlanır. Birleştirme adımı, iki alt diziyi birleştirmek için ***O(n)***  karşılaştırma gerektirir. Bu nedenle, Birleştirme Sıralamasının toplam zaman karmaşıklığı ***O(n log n)&#39;***  dir . Bu zaman karmaşıklığı en iyi, en kötü ve ortalama durumlar için geçerlidir ve Birleştirme Sıralamasını büyük veri kümeleri için oldukça verimli bir algoritma haline getirir. 
+- ***Zaman Karmaşıklığı*** : Birleştirme Sıralaması diziyi yinelemeli olarak iki yarıya böler. Bu,***O(log n)*** bölünmeyle sonuçlanır. Birleştirme adımı, iki alt diziyi birleştirmek için***O(n)*** karşılaştırma gerektirir. Bu nedenle, Birleştirme Sıralamasının toplam zaman karmaşıklığı***O(n log n)&#39;*** dir . Bu zaman karmaşıklığı en iyi, en kötü ve ortalama durumlar için geçerlidir ve Birleştirme Sıralamasını büyük veri kümeleri için oldukça verimli bir algoritma haline getirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması geçici alt diziler için ek alan gerektirir ve bu da uzay karmaşıklığını &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  yapar . Bunun nedeni, birleştirme işlemi sırasında bölünmüş dizileri depolamak için ek alana ihtiyaç duymamızdır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzay Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması geçici alt diziler için ek alan gerektirir ve bu da uzay karmaşıklığını&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; yapar . Bunun nedeni, birleştirme işlemi sırasında bölünmüş dizileri depolamak için ek alana ihtiyaç duymamızdır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -132,11 +132,11 @@
 &lt;p&gt;Hem Birleştirme Sıralaması hem de &lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt;  böl ve yönet yaklaşımını kullanır, ancak stratejileri bakımından önemli ölçüde farklılık gösterirler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Birleştirme Sıralaması***  önce diziyi böler ve daha sonra birleştirerek fetheder. 
+- ***Birleştirme Sıralaması*** önce diziyi böler ve daha sonra birleştirerek fetheder. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt;  , önce bir pivot seçerek ve diziyi bölümlere ayırarak, ardından bölümleri yinelemeli olarak sıralayarak fetheder.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hızlı Sıralama&lt;/strong&gt;&lt;/em&gt; , önce bir pivot seçerek ve diziyi bölümlere ayırarak, ardından bölümleri yinelemeli olarak sıralayarak fetheder.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -145,16 +145,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı : Birleştirme Sıralaması en kötü durumda bile *** ***O(n log n)***  garantili zaman karmaşıklığına sahipken , Hızlı Sıralamanın en kötü durumdaki zaman karmaşıklığı ***O(n^2)***  &#39;dir . Ancak, Hızlı Sıralama genellikle ortalama olarak daha iyi performans gösterir. 
+- ***Zaman Karmaşıklığı : Birleştirme Sıralaması en kötü durumda bile*** ***O(n log n)*** garantili zaman karmaşıklığına sahipken, Hızlı Sıralamanın en kötü durumdaki zaman karmaşıklığı***O(n^2)*** &#39;dir . Ancak, Hızlı Sıralama genellikle ortalama olarak daha iyi performans gösterir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Hızlı Sıralama, &lt;em&gt;&lt;strong&gt;O(log n)&lt;/strong&gt;&lt;/em&gt;  ek alan kullanırken, Birleştirme Sıralaması birleştirme işlemi nedeniyle &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  gerektirir . Hızlı Sıralama, genellikle minimum ek belleğe ihtiyaç duyulan yerinde sıralama için tercih edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Hızlı Sıralama,&lt;em&gt;&lt;strong&gt;O(log n)&lt;/strong&gt;&lt;/em&gt; ek alan kullanırken, Birleştirme Sıralaması birleştirme işlemi nedeniyle&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; gerektirir . Hızlı Sıralama, genellikle minimum ek belleğe ihtiyaç duyulan yerinde sıralama için tercih edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması, eşit öğelerin göreceli sırasını koruyarak kararlıdır. Hızlı Sıralama, değişikliklerle kararlı hale getirilebilmesine rağmen, doğası gereği kararlı değildir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması, eşit öğelerin göreceli sırasını koruyarak kararlıdır. Hızlı Sıralama, değişikliklerle kararlı hale getirilebilmesine rağmen, doğası gereği kararlı değildir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -163,16 +163,16 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Heap Sort, &lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;O(n log n)&lt;/strong&gt;&lt;/em&gt;  zaman karmaşıklığına sahip bir diğer verimli algoritmadır . İşte Merge Sort ile karşılaştırılması:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Alan Karmaşıklığı***  : Yığın Sıralaması yerinde bir sıralama algoritmasıdır, yani giriş dizisinin ötesinde ekstra bellek gerektirmez. Öte yandan Birleştirme Sıralaması ***O(n)***  ek alan gerektirir. 
+- ***Alan Karmaşıklığı*** : Yığın Sıralaması yerinde bir sıralama algoritmasıdır, yani giriş dizisinin ötesinde ekstra bellek gerektirmez. Öte yandan Birleştirme Sıralaması***O(n)*** ek alan gerektirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt;  : Birleştirme Sıralaması kararlıdır, ancak Yığın Sıralaması kararlı değildir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kararlılık&lt;/strong&gt;&lt;/em&gt; : Birleştirme Sıralaması kararlıdır, ancak Yığın Sıralaması kararlı değildir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Performans&lt;/strong&gt;&lt;/em&gt;  : Yığın Sıralaması, sıralama sırasında yığın yapısını sürdürmenin getirdiği ek yük nedeniyle Birleştirme Sıralamasına kıyasla pratikte genellikle daha yavaştır. Birleştirme Sıralaması genellikle kararlılığın ve tutarlı performansın önemli olduğu senaryolar için tercih edilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pratik Performans&lt;/strong&gt;&lt;/em&gt; : Yığın Sıralaması, sıralama sırasında yığın yapısını sürdürmenin getirdiği ek yük nedeniyle Birleştirme Sıralamasına kıyasla pratikte genellikle daha yavaştır. Birleştirme Sıralaması genellikle kararlılığın ve tutarlı performansın önemli olduğu senaryolar için tercih edilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -184,16 +184,16 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Zaman Karmaşıklığı***  : Birleştirme Sıralamasının ***O(n log n)***  karmaşıklığı, en kötü durumda ***O(n^2)***  olan Ekleme Sıralamasından çok daha verimli olmasını sağlar . 
+- ***Zaman Karmaşıklığı*** : Birleştirme Sıralamasının***O(n log n)*** karmaşıklığı, en kötü durumda***O(n^2)*** olan Ekleme Sıralamasından çok daha verimli olmasını sağlar . 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt;  : Eklemeli Sıralama yerinde bir algoritmadır ve &lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt;  ek bellek kullanır, Birleştirme Sıralaması ise &lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt;  alan gerektirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alan Karmaşıklığı&lt;/strong&gt;&lt;/em&gt; : Eklemeli Sıralama yerinde bir algoritmadır ve&lt;em&gt;&lt;strong&gt;O(1)&lt;/strong&gt;&lt;/em&gt; ek bellek kullanır, Birleştirme Sıralaması ise&lt;em&gt;&lt;strong&gt;O(n)&lt;/strong&gt;&lt;/em&gt; alan gerektirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım Durumu&lt;/strong&gt;&lt;/em&gt;  : Eklemeli Sıralama, basitliği ve düşük yükü nedeniyle genellikle küçük diziler veya neredeyse sıralanmış veriler için tercih edilir. Birleştirmeli Sıralama, verimliliğin daha kritik olduğu daha büyük veri kümeleri için daha iyidir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kullanım Durumu&lt;/strong&gt;&lt;/em&gt; : Eklemeli Sıralama, basitliği ve düşük yükü nedeniyle genellikle küçük diziler veya neredeyse sıralanmış veriler için tercih edilir. Birleştirmeli Sıralama, verimliliğin daha kritik olduğu daha büyük veri kümeleri için daha iyidir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -221,16 +221,16 @@
 &lt;p&gt;Birleştirme Sıralaması, büyük veri kümelerinin verimli bir şekilde sıralanması gereken çeşitli uygulamalarda kullanılır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Harici Sıralama***  : Birleştirme Sıralaması, belleğe sığmayan büyük veri kümelerini (harici sıralama) sıralamak için idealdir, örneğin diskteki dosyaları sıralamak gibi. Verileri belleğe sığabilecek daha küçük parçalara bölerek ve sıralanmış parçaları birleştirerek, Birleştirme Sıralaması verimli disk G/Ç sağlar. 
+- ***Harici Sıralama*** : Birleştirme Sıralaması, belleğe sığmayan büyük veri kümelerini (harici sıralama) sıralamak için idealdir, örneğin diskteki dosyaları sıralamak gibi. Verileri belleğe sığabilecek daha küçük parçalara bölerek ve sıralanmış parçaları birleştirerek, Birleştirme Sıralaması verimli disk G/Ç sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağlantılı Listeleri Sıralama&lt;/strong&gt;&lt;/em&gt;  : Dizilerden farklı olarak, bağlantılı listeler rastgele erişime sahip değildir ve bu da Hızlı Sıralama gibi algoritmaları daha az etkili hale getirir. Birleştirme Sıralaması, verilere yalnızca sıralı erişim gerektirdiği için bağlantılı listeler için oldukça uygundur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bağlantılı Listeleri Sıralama&lt;/strong&gt;&lt;/em&gt; : Dizilerden farklı olarak, bağlantılı listeler rastgele erişime sahip değildir ve bu da Hızlı Sıralama gibi algoritmaları daha az etkili hale getirir. Birleştirme Sıralaması, verilere yalnızca sıralı erişim gerektirdiği için bağlantılı listeler için oldukça uygundur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralel Sıralama&lt;/strong&gt;&lt;/em&gt;  : Alt problemlerin bağımsız yapısı, Birleştirme Sıralamasını, genellikle yüksek performanslı bilgi işlemde kullanılan paralel sıralama için doğal bir aday yapar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Paralel Sıralama&lt;/strong&gt;&lt;/em&gt; : Alt problemlerin bağımsız yapısı, Birleştirme Sıralamasını, genellikle yüksek performanslı bilgi işlemde kullanılan paralel sıralama için doğal bir aday yapar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

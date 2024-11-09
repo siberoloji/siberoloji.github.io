@@ -36,19 +36,19 @@ url: /clearview-ai-a-controversial-tool-for-facial-recognition/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Image Acquisition:***  The company scrapes billions of images from the internet, including social media platforms, news websites, and public databases. 
+- ***Image Acquisition:*** The company scrapes billions of images from the internet, including social media platforms, news websites, and public databases. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Facial Feature Extraction:***  Using advanced algorithms, Clearview AI extracts unique facial features from each image, such as the distance between the eyes, the shape of the nose, and the curvature of the lips. 
+- ***Facial Feature Extraction:*** Using advanced algorithms, Clearview AI extracts unique facial features from each image, such as the distance between the eyes, the shape of the nose, and the curvature of the lips. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Database Creation:***  The extracted facial features are then indexed into a massive database, allowing for rapid comparison with uploaded images. 
+- ***Database Creation:*** The extracted facial features are then indexed into a massive database, allowing for rapid comparison with uploaded images. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Image Matching:***  When an image is uploaded to Clearview AI, the platform compares its facial features to the database, searching for potential matches. If a match is found, Clearview AI can provide information about the identified individual, such as their name, social media profiles, or associated news articles. 
+- ***Image Matching:*** When an image is uploaded to Clearview AI, the platform compares its facial features to the database, searching for potential matches. If a match is found, Clearview AI can provide information about the identified individual, such as their name, social media profiles, or associated news articles. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -60,19 +60,19 @@ url: /clearview-ai-a-controversial-tool-for-facial-recognition/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***<a href="https://www.siberoloji.com/data-privacy-regulations/" target="_blank" rel="noopener" title="">Data Privacy</a>:***  The company's practice of scraping images from the internet without explicit consent has raised concerns about privacy violations. Many individuals argue that their images are being used without their knowledge or permission. 
+- ***<a href="https://www.siberoloji.com/data-privacy-regulations/" target="_blank" rel="noopener" title="">Data Privacy</a>:*** The company's practice of scraping images from the internet without explicit consent has raised concerns about privacy violations. Many individuals argue that their images are being used without their knowledge or permission. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Law Enforcement Use:***  The use of Clearview AI by law enforcement agencies has sparked debates about its effectiveness and potential for abuse. Critics argue that the technology can be used to mass surveil individuals, infringing on their civil liberties. 
+- ***Law Enforcement Use:*** The use of Clearview AI by law enforcement agencies has sparked debates about its effectiveness and potential for abuse. Critics argue that the technology can be used to mass surveil individuals, infringing on their civil liberties. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Accuracy and Bias:***  The accuracy and potential biases of facial recognition technology have also been questioned. Studies have shown that these systems can be less accurate for certain demographics, such as people of color, leading to concerns about discrimination and bias. 
+- ***Accuracy and Bias:*** The accuracy and potential biases of facial recognition technology have also been questioned. Studies have shown that these systems can be less accurate for certain demographics, such as people of color, leading to concerns about discrimination and bias. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ethical Implications:***  The broader ethical implications of facial recognition technology, including its impact on society and individual freedoms, have been a subject of intense debate. Some argue that the technology can be used for beneficial purposes, such as identifying missing persons or preventing crime, while others express concerns about its potential for surveillance and control. 
+- ***Ethical Implications:*** The broader ethical implications of facial recognition technology, including its impact on society and individual freedoms, have been a subject of intense debate. Some argue that the technology can be used for beneficial purposes, such as identifying missing persons or preventing crime, while others express concerns about its potential for surveillance and control. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -39,15 +39,15 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Bölme***  : Problemi daha küçük alt problemlere bölmek. 
+- ***Bölme*** : Problemi daha küçük alt problemlere bölmek. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Conquer***  : Her alt problemi yinelemeli olarak çöz. Alt problem yeterince küçükse, doğrudan çöz. 
+- ***Conquer*** : Her alt problemi yinelemeli olarak çöz. Alt problem yeterince küçükse, doğrudan çöz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Birleştir***  : Orijinal problemi çözmek için alt problemlerin çözümlerini birleştir. 
+- ***Birleştir*** : Orijinal problemi çözmek için alt problemlerin çözümlerini birleştir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -60,15 +60,15 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Özyineleme***  : Böl ve yönet algoritmaları genellikle sorunu parçalamak ve daha küçük örnekleri çözmek için özyinelemeyi kullanır. Bu özyinelemeli yapı, yöntemi çok güçlü kılar ancak bazen uygulanması zor olabilir. 
+- ***Özyineleme*** : Böl ve yönet algoritmaları genellikle sorunu parçalamak ve daha küçük örnekleri çözmek için özyinelemeyi kullanır. Bu özyinelemeli yapı, yöntemi çok güçlü kılar ancak bazen uygulanması zor olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alt Problem Bağımsızlığı***  : Alt problemler birbirinden bağımsız olmalıdır. Bu bağımsızlık, bir alt problemi çözmenin diğerinin çözümünü etkilememesini sağlar. 
+- ***Alt Problem Bağımsızlığı*** : Alt problemler birbirinden bağımsız olmalıdır. Bu bağımsızlık, bir alt problemi çözmenin diğerinin çözümünü etkilememesini sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sonuçların Birleştirilmesi***  : Alt problemleri çözdükten sonra, sonuçlar nihai çözümü oluşturmak için birleştirilmelidir. Bu adım, algoritmaya bağlı olarak bazen hesaplama açısından pahalı olabilir. 
+- ***Sonuçların Birleştirilmesi*** : Alt problemleri çözdükten sonra, sonuçlar nihai çözümü oluşturmak için birleştirilmelidir. Bu adım, algoritmaya bağlı olarak bazen hesaplama açısından pahalı olabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -91,15 +91,15 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Bölme***  : Diziyi iki yarıya böler. 
+- ***Bölme*** : Diziyi iki yarıya böler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Fethetmek***  : Dizinin her yarısını yinelemeli olarak sıralar. 
+- ***Fethetmek*** : Dizinin her yarısını yinelemeli olarak sıralar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Birleştir***  : Sıralanmış diziyi oluşturmak için sıralanmış iki yarıyı tekrar birleştirir. 
+- ***Birleştir*** : Sıralanmış diziyi oluşturmak için sıralanmış iki yarıyı tekrar birleştirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -108,11 +108,11 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Adım 1***  (Bölme): Diziyi iki yarıya bölün: [38, 27, 43, 3] ve [9, 82, 10]. 
+- ***Adım 1*** (Bölme): Diziyi iki yarıya bölün: [38, 27, 43, 3] ve [9, 82, 10]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Adım 2***  (Fethet): Her bir yarıya yinelemeli olarak birleştirme sıralaması uygulayın. Tek elemanlı dizileriniz olana kadar onları daha fazla bölün: 
+- ***Adım 2*** (Fethet): Her bir yarıya yinelemeli olarak birleştirme sıralaması uygulayın. Tek elemanlı dizileriniz olana kadar onları daha fazla bölün: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -120,7 +120,7 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Adım 3***  (Birleştirme): Sıralanmış alt dizileri birleştirin: 
+- ***Adım 3*** (Birleştirme): Sıralanmış alt dizileri birleştirin: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -160,19 +160,19 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Verimlilik***  : Merge Sort ve Quick Sort gibi birçok böl ve yönet algoritması, büyük veri kümeleri için basit yinelemeli yöntemlerden çok daha verimlidir. Bu algoritmalar için zaman karmaşıklığı genellikle ***O(n log n)' dir, Bubble Sort gibi *** ***O(n^2)***  algoritmalarından önemli ölçüde daha iyidir . 
+- ***Verimlilik*** : Merge Sort ve Quick Sort gibi birçok böl ve yönet algoritması, büyük veri kümeleri için basit yinelemeli yöntemlerden çok daha verimlidir. Bu algoritmalar için zaman karmaşıklığı genellikle***O(n log n)' dir, Bubble Sort gibi*** ***O(n^2)*** algoritmalarından önemli ölçüde daha iyidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Paralellik***  : Alt problemlerin bağımsızlığı böl ve yönet algoritmalarını paralel işleme için ideal hale getirir. Her alt problem bağımsız olarak çözülebildiğinden, iş birden fazla işlemciye dağıtılabilir ve bu da paralel hesaplama kaynakları mevcut olduğunda algoritmayı daha hızlı hale getirir. 
+- ***Paralellik*** : Alt problemlerin bağımsızlığı böl ve yönet algoritmalarını paralel işleme için ideal hale getirir. Her alt problem bağımsız olarak çözülebildiğinden, iş birden fazla işlemciye dağıtılabilir ve bu da paralel hesaplama kaynakları mevcut olduğunda algoritmayı daha hızlı hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Basitleştirilmiş Problem Çözme***  : Karmaşık bir problemi daha küçük parçalara bölmek genellikle problem çözme sürecini basitleştirir. Bu yaklaşım, ağaç geçişleri veya sıralama gibi belirli problem türleri için daha sezgisel olan yinelemeli çözümlere olanak tanır. 
+- ***Basitleştirilmiş Problem Çözme*** : Karmaşık bir problemi daha küçük parçalara bölmek genellikle problem çözme sürecini basitleştirir. Bu yaklaşım, ağaç geçişleri veya sıralama gibi belirli problem türleri için daha sezgisel olan yinelemeli çözümlere olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yeniden kullanılabilirlik***  : Böl ve yönet tekniği çok yönlüdür ve sıralama ve aramadan optimizasyon problemlerine ve matematiksel hesaplamalara kadar farklı alanlarda yeniden kullanılabilir. Yöntemi nasıl uygulayacağınızı anladığınızda, onu çok çeşitli problemlere uyarlayabilirsiniz. 
+- ***Yeniden kullanılabilirlik*** : Böl ve yönet tekniği çok yönlüdür ve sıralama ve aramadan optimizasyon problemlerine ve matematiksel hesaplamalara kadar farklı alanlarda yeniden kullanılabilir. Yöntemi nasıl uygulayacağınızı anladığınızda, onu çok çeşitli problemlere uyarlayabilirsiniz. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -224,15 +224,15 @@ url: /tr/bilgisayar-algoritmalarinda-bol-ve-yonet-yontemi-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Tekrarlı Yük***  : Tekrarlı algoritmalar, yığında birden fazla fonksiyon çağrısının sürdürülmesi gereğinden dolayı genellikle daha fazla bellek gerektirir. Büyük girdiler için, tekrarlama derinliği sistemin kapasitesini aşarsa bu, yığın taşması hatalarına yol açabilir. 
+- ***Tekrarlı Yük*** : Tekrarlı algoritmalar, yığında birden fazla fonksiyon çağrısının sürdürülmesi gereğinden dolayı genellikle daha fazla bellek gerektirir. Büyük girdiler için, tekrarlama derinliği sistemin kapasitesini aşarsa bu, yığın taşması hatalarına yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Adım Karmaşıklığını Birleştirme***  : Bazı durumlarda, alt problemlerden çözümleri birleştirme süreci hesaplama açısından pahalı olabilir. Örneğin, Birleştirme Sıralamasında, iki sıralı diziyi birleştirmek, dizilerin boyutuna orantılı zaman gerektirir ve genel algoritmaya fazladan bir karmaşıklık katmanı ekler. 
+- ***Adım Karmaşıklığını Birleştirme*** : Bazı durumlarda, alt problemlerden çözümleri birleştirme süreci hesaplama açısından pahalı olabilir. Örneğin, Birleştirme Sıralamasında, iki sıralı diziyi birleştirmek, dizilerin boyutuna orantılı zaman gerektirir ve genel algoritmaya fazladan bir karmaşıklık katmanı ekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Alt Problem Boyutu***  : Böl ve yönet yönteminin verimliliği alt problemlerin boyutuna bağlıdır. Alt problemler orijinal problemden önemli ölçüde küçük değilse, yöntem önemli performans iyileştirmeleri sunmayabilir. 
+- ***Alt Problem Boyutu*** : Böl ve yönet yönteminin verimliliği alt problemlerin boyutuna bağlıdır. Alt problemler orijinal problemden önemli ölçüde küçük değilse, yöntem önemli performans iyileştirmeleri sunmayabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

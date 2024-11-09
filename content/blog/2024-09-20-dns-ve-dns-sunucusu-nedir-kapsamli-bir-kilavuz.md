@@ -41,7 +41,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- tarayıcınıza <code>192.168.1.1</code> gibi bir IP adresi yazmak yerine , <code>www.example.com</code> yazabilirsiniz ve DNS bu alan adını karşılık gelen IP adresine çevirir. Bu işlem milisaniyeler içinde gerçekleşir, bu nedenle kullanıcılar bunun gerçekleştiğini bile fark etmezler. 
+- tarayıcınıza<code>192.168.1.1</code> gibi bir IP adresi yazmak yerine ,<code>www.example.com</code> yazabilirsiniz ve DNS bu alan adını karşılık gelen IP adresine çevirir. Bu işlem milisaniyeler içinde gerçekleşir, bu nedenle kullanıcılar bunun gerçekleştiğini bile fark etmezler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -83,7 +83,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***TLD İsim Sunucusu***  : Bu sunucular <code>.org</code>, .<code>com</code> , <code>.net</code>, veya gibi üst düzey alan adlarıyla ilgili bilgileri depolar. Sorguyu doğru yetkili isim sunucusuna yönlendirmeye yardımcı olurlar. 
+- ***TLD İsim Sunucusu*** : Bu sunucular <code>.org</code>, .<code>com</code> ,<code>.net</code>, veyagibi üst düzey alan adlarıyla ilgili bilgileri depolar. Sorguyu doğru yetkili isim sunucusuna yönlendirmeye yardımcı olurlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -117,7 +117,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kullanıcı Eylemi***  : Tarayıcınıza bir alan adı (örneğin <code>www.example.com</code>) yazarsınız . 
+- ***Kullanıcı Eylemi*** : Tarayıcınızabir alan adı (örneğin <code>www.example.com</code>) yazarsınız . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -125,7 +125,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kök Sunucu Sorgusu***  : Özyinelemeli sunucunun alan adı bilgileri önbelleğe alınmamışsa, TLD sunucusunun konumunu bulmak için bir kök sunucuya sorgu gönderir (örneğin, <code>.com</code> için <code>www.example.com</code>). 
+- ***Kök Sunucu Sorgusu*** : Özyinelemeli sunucunun alan adı bilgileri önbelleğe alınmamışsa, TLD sunucusunun konumunu bulmak için bir kök sunucuya sorgu gönderir (örneğin,<code>.com</code> için<code>www.example.com</code>). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -137,7 +137,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***IP Adresi Yanıtı***  : Yetkili DNS sunucusu, <code>www.example.com</code> için IP adresini yinelemeli sunucuya döndürür ve ardından bu adres tarayıcınıza iletilir. 
+- ***IP Adresi Yanıtı*** : Yetkili DNS sunucusu, <code>www.example.com</code> için IP adresiniyinelemeli sunucuya döndürür ve ardından bu adres tarayıcınıza iletilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -248,7 +248,7 @@ url: /tr/dns-ve-dns-sunucusu-nedir-kapsamli-bir-kilavuz/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***DNS Sunucularını Değiştirin***  : İSS'nizin DNS sunucuları yavaşsa veya yanıt vermiyorsa, Google DNS (<code>8.8.8.8</code> ve <code>8.8.4.4</code>) veya Cloudflare DNS (<code>1.1.1.</code>1) gibi genel DNS sunucularına geçebilirsiniz. 
+- ***DNS Sunucularını Değiştirin*** : İSS'nizin DNS sunucuları yavaşsa veya yanıt vermiyorsa, Google DNS (<code>8.8.8.8</code> ve<code>8.8.4.4</code>) veya Cloudflare DNS (<code>1.1.1.</code>1)gibi genel DNS sunucularına geçebilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

@@ -24,7 +24,7 @@
       <description>
         
         
-        &lt;p&gt;Giderek daha fazla birbirine bağlı dijital dünyada,  siber güvenliğe yönelik tehditler daha karmaşık ve amansız hale geliyor. Siber saldırılar, kötü amaçlı yazılımlar, veri ihlalleri ve diğer kötü amaçlı faaliyetler artık izole olaylar değil, her ölçekteki kuruluş için sürekli tehditler haline geldi. Geleneksel güvenlik önlemleri etkili olsa da, genellikle bu tehditlerin hacmi ve karmaşıklığıyla başa çıkmakta zorlanır. Tehdit tespiti ve azaltılmasına daha işbirlikçi ve dinamik bir yaklaşım sağlamak için tasarlanmış yenilikçi bir açık kaynaklı güvenlik aracı olan &lt;em&gt;&lt;strong&gt;CrowdSec devreye giriyor.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+        &lt;p&gt;Giderek daha fazla birbirine bağlı dijital dünyada,siber güvenliğeyönelik tehditler daha karmaşık ve amansız hale geliyor. Siber saldırılar, kötü amaçlı yazılımlar, veri ihlalleri ve diğer kötü amaçlı faaliyetler artık izole olaylar değil, her ölçekteki kuruluş için sürekli tehditler haline geldi. Geleneksel güvenlik önlemleri etkili olsa da, genellikle bu tehditlerin hacmi ve karmaşıklığıyla başa çıkmakta zorlanır.Tehdit tespiti ve azaltılmasına daha işbirlikçi ve dinamik bir yaklaşım sağlamak için tasarlanmış yenilikçi bir açık kaynaklı güvenlik aracı olan&lt;em&gt;&lt;strong&gt;CrowdSec devreye giriyor.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;CrowdSec, siber tehditlerle mücadele etmek için kitle kaynak kullanımının gücünden yararlanan, modern, topluluk destekli bir siber güvenlik çözümü olarak ivme kazanıyor. Bu blog yazısında CrowdSec&amp;rsquo;i ayrıntılı olarak inceleyeceğiz: nasıl çalıştığını, temel özelliklerini, sunduğu avantajları ve işbirlikçi siber güvenliğin geleceğine nasıl katkıda bulunduğunu ele alacağız.&lt;/p&gt;
 &lt;!-- wp:separator --&gt;
 &lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
@@ -94,7 +94,7 @@
 &lt;p&gt;CrowdSec günlükleri sürekli olarak izler ve olayları gerçek zamanlı olarak analiz eder. Birden fazla başarısız oturum açma girişimi veya hızlı port taraması gibi alışılmadık bir etkinlik algıladığında bir uyarı oluşturur. Kullanıcı uyarıyı inceleyebilir ve kötü niyetli olarak değerlendirilirse etkinlikten sorumlu IP adresini engelleyebilir. Bu IP adresi daha sonra CrowdSec &lt;em&gt;&lt;strong&gt;IP itibar veritabanına&lt;/strong&gt;&lt;/em&gt;  eklenir ve burada tüm toplulukla paylaşılır.&lt;/p&gt;
 &lt;h3&gt;Topluluk Paylaşımı&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;topluluk-paylaşımı&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#topluluk-payla%c5%9f%c4%b1m%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;CrowdSec&amp;rsquo;in gücü işbirlikçi yapısında yatar. Bir kullanıcı tarafından bir tehdit belirlendiğinde, bu bilgi diğer CrowdSec kullanıcılarıyla paylaşılır ve herkesin korunması artırılır. Kullanıcılar ***CrowdSec CTI (İşbirlikçi Tehdit İstihbaratı) veritabanına katkıda bulunabilir ve bundan faydalanabilir. Bu, ***  siber güvenlik alanındaki yeni veya daha küçük oyuncuların bile en son tehdit istihbaratına erişmesini sağlayarak siber güvenlik savunması için eşit şartlar oluşturur.&lt;/p&gt;
+&lt;p&gt;CrowdSec&amp;rsquo;in gücü işbirlikçi yapısında yatar. Bir kullanıcı tarafından bir tehdit belirlendiğinde, bu bilgi diğer CrowdSec kullanıcılarıyla paylaşılır ve herkesin korunması artırılır. Kullanıcılar&lt;em&gt;&lt;strong&gt;CrowdSec CTI (İşbirlikçi Tehdit İstihbaratı) veritabanına katkıda bulunabilir ve bundan faydalanabilir. Bu,&lt;/strong&gt;&lt;/em&gt; siber güvenlikalanındaki yeni veya daha küçük oyuncuların bile en son tehdit istihbaratına erişmesinisağlayarak siber güvenlik savunması için eşit şartlar oluşturur.&lt;/p&gt;
 &lt;h3&gt;Kötü Amaçlı Faaliyetleri Engellemek İçin Bouncer&amp;rsquo;lar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;kötü-amaçlı-faaliyetleri-engellemek-için-bouncerlar&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#k%c3%b6t%c3%bc-ama%c3%a7l%c4%b1-faaliyetleri-engellemek-i%c3%a7in-bouncerlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Gelecekteki saldırıları önlemek için CrowdSec, web sunucusu, güvenlik duvarı veya CDN (İçerik Dağıtım Ağı) gibi çeşitli düzeylerde kötü amaçlı IP&amp;rsquo;leri otomatik olarak engelleyen &lt;em&gt;&lt;strong&gt;Bouncers&lt;/strong&gt;&lt;/em&gt;  kullanır . Kullanıcılar, altyapılarına bağlı olarak hangi Bouncers&amp;rsquo;ın dağıtılacağını seçebilir ve tehdidin ciddiyetine göre engellemelerin veya diğer savunma önlemlerinin süresini özelleştirebilir.&lt;/p&gt;
@@ -126,16 +126,16 @@
 &lt;p&gt;CrowdSec çok sayıda avantaj sunarken, dikkate alınması gereken birkaç zorluk da bulunmaktadır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Topluluk Katılımına Güvenme***  : CrowdSec&#39;in başarısı büyük ölçüde kullanıcı tabanının aktif katılımına bağlıdır. Topluluk tehdit istihbaratını aktif olarak paylaşmazsa veya doğru veri sağlamazsa, platformun genel etkinliği azalabilir. 
+- ***Topluluk Katılımına Güvenme*** : CrowdSec&#39;in başarısı büyük ölçüde kullanıcı tabanının aktif katılımına bağlıdır. Topluluk tehdit istihbaratını aktif olarak paylaşmazsa veya doğru veri sağlamazsa, platformun genel etkinliği azalabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yanlış Pozitifler&lt;/strong&gt;&lt;/em&gt;  : Birçok otomatik güvenlik aracı gibi CrowdSec de zaman zaman yanlış pozitifler üretebilir; meşru aktiviteleri kötü amaçlı olarak işaretleyebilir. Kullanıcıların bu oluşumları en aza indirmek için uyarıları dikkatlice incelemeleri ve algılama kurallarını ayarlamaları gerekir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yanlış Pozitifler&lt;/strong&gt;&lt;/em&gt; : Birçok otomatik güvenlik aracı gibi CrowdSec de zaman zaman yanlış pozitifler üretebilir; meşru aktiviteleri kötü amaçlı olarak işaretleyebilir. Kullanıcıların bu oluşumları en aza indirmek için uyarıları dikkatlice incelemeleri ve algılama kurallarını ayarlamaları gerekir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Teknik Uzmanlık&lt;/strong&gt;&lt;/em&gt;  : Platform kullanıcı dostu olacak şekilde tasarlanmış olsa da, CrowdSec&amp;rsquo;i daha karmaşık ortamlar için tam olarak optimize etmek ve yapılandırmak için belirli düzeyde teknik uzmanlık gerekebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Teknik Uzmanlık&lt;/strong&gt;&lt;/em&gt; : Platform kullanıcı dostu olacak şekilde tasarlanmış olsa da, CrowdSec&amp;rsquo;i daha karmaşık ortamlar için tam olarak optimize etmek ve yapılandırmak için belirli düzeyde teknik uzmanlık gerekebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -145,7 +145,7 @@
 &lt;h2&gt;Çözüm&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;çözüm&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#%c3%a7%c3%b6z%c3%bcm&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;CrowdSec, açık kaynaklı yazılımın gücünü küresel iş birliğinin faydalarıyla birleştirerek siber güvenliğe yeni bir yaklaşım sunar. CrowdSec, kalabalık kaynaklı tehdit istihbaratından yararlanarak kullanıcılara çok çeşitli siber tehditlere karşı sürekli güncellenen, gerçek zamanlı bir savunma sunar. Ölçeklenebilirliği, kullanım kolaylığı ve topluluk odaklı modeli, onu her ölçekteki kuruluş için, özellikle de uygun maliyetli ve esnek bir güvenlik çözümü arayanlar için çekici bir seçenek haline getirir.&lt;/p&gt;
-&lt;p&gt;Tehdit manzarası gelişmeye devam ederken, CrowdSec&amp;rsquo;in  siber güvenliğe yönelik işbirlikçi yaklaşımı , kuruluşların ortaya çıkan tehditlerin önünde kalabilmelerini sağlar. CrowdSec topluluğuna katılarak, kullanıcılar yalnızca kendi sistemlerini korumakla kalmaz, aynı zamanda tüm ağın kolektif savunmasına da katkıda bulunurlar; siber suçla mücadelede yer alan herkes için kazan-kazan durumu.&lt;/p&gt;
+&lt;p&gt;Tehdit manzarası gelişmeye devam ederken, CrowdSec&amp;rsquo;insiber güvenliğeyönelik işbirlikçi yaklaşımı , kuruluşların ortaya çıkan tehditlerin önünde kalabilmelerini sağlar. CrowdSec topluluğuna katılarak, kullanıcılar yalnızca kendi sistemlerini korumakla kalmaz, aynı zamanda tüm ağın kolektif savunmasına da katkıda bulunurlar; siber suçla mücadelede yer alan herkes için kazan-kazan durumu.&lt;/p&gt;
 
       </description>
     </item>

@@ -25,7 +25,7 @@ title: Starlink Uyduları ve İnternet Hizmetleri
 url: /tr/starlink-uydulari-ve-internet-hizmetleri/
 ---
 
-  Son yıllarda, internet bağlantısı manzarası, öncelikle uydu teknolojisindeki gelişmeler nedeniyle önemli bir dönüşüm geçirdi. Bu alandaki en dikkat çekici oyunculardan biri, Elon Musk tarafından kurulan SpaceX tarafından geliştirilen bir uydu internet takımyıldızı olan ***Starlink'tir*** . Starlink, özellikle geleneksel internet altyapısının eksik olduğu yetersiz hizmet alan ve uzak bölgelerde, küresel olarak yüksek hızlı internet erişimi sağlamayı amaçlamaktadır. Bu blog yazısı, Starlink uydularının işleyişini, hizmetlerini ve küresel bağlantı üzerindeki etkilerini araştırmaktadır. 
+  Son yıllarda, internet bağlantısı manzarası, öncelikle uydu teknolojisindeki gelişmeler nedeniyle önemli bir dönüşüm geçirdi. Bu alandaki en dikkat çekici oyunculardan biri, Elon Musk tarafından kurulan SpaceX tarafından geliştirilen bir uydu internet takımyıldızı olan***Starlink'tir*** . Starlink, özellikle geleneksel internet altyapısının eksik olduğu yetersiz hizmet alan ve uzak bölgelerde, küresel olarak yüksek hızlı internet erişimi sağlamayı amaçlamaktadır. Bu blog yazısı, Starlink uydularının işleyişini, hizmetlerini ve küresel bağlantı üzerindeki etkilerini araştırmaktadır. 
  
 
  
@@ -41,15 +41,15 @@ url: /tr/starlink-uydulari-ve-internet-hizmetleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Alçak Dünya Yörüngesi***  : LEO konumlandırması, Starlink uydularının verileri genellikle 20 ila 40 milisaniye arasında daha düşük gecikmeyle iletmesine olanak tanır; bu süre, 600 milisaniyeyi aşabilen gecikmelere sahip olabilen jeostasyoner uydularla karşılaştırıldığında daha uzundur[2][3]. 
+- ***Alçak Dünya Yörüngesi*** : LEO konumlandırması, Starlink uydularının verileri genellikle 20 ila 40 milisaniye arasında daha düşük gecikmeyle iletmesine olanak tanır; bu süre, 600 milisaniyeyi aşabilen gecikmelere sahip olabilen jeostasyoner uydularla karşılaştırıldığında daha uzundur[2][3]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Büyük Takımyıldızı***  : Şu anda yörüngede binlerce Starlink uydusu var ve çok daha fazlası için planlar var. Bu kapsamlı ağ, sağlam kapsama ve yedeklilik sağlar[1]. 
+- ***Büyük Takımyıldızı*** : Şu anda yörüngede binlerce Starlink uydusu var ve çok daha fazlası için planlar var. Bu kapsamlı ağ, sağlam kapsama ve yedeklilik sağlar[1]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sürekli Yükseltmeler***  : SpaceX, kendi uydularını sık sık ve uygun maliyetli bir şekilde fırlatma konusunda benzersiz bir yeteneğe sahiptir ve bu da teknoloji alanında sürekli güncellemeler ve iyileştirmeler yapılmasına olanak tanır[7]. 
+- ***Sürekli Yükseltmeler*** : SpaceX, kendi uydularını sık sık ve uygun maliyetli bir şekilde fırlatma konusunda benzersiz bir yeteneğe sahiptir ve bu da teknoloji alanında sürekli güncellemeler ve iyileştirmeler yapılmasına olanak tanır[7]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -62,11 +62,11 @@ url: /tr/starlink-uydulari-ve-internet-hizmetleri/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Fişe takın***  : Terminali güce bağlayın. 
+- ***Fişe takın*** : Terminali güce bağlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gökyüzüne doğrultun***  : Starlink uygulamasını kullanarak gökyüzünü engelsiz bir şekilde görebileceğiniz şekilde çanağı konumlandırın. 
+- ***Gökyüzüne doğrultun*** : Starlink uygulamasını kullanarak gökyüzünü engelsiz bir şekilde görebileceğiniz şekilde çanağı konumlandırın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -82,15 +82,15 @@ url: /tr/starlink-uydulari-ve-internet-hizmetleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Konut Hizmeti***  : Aylık yaklaşık 120$ fiyatla, yaklaşık 599$'lık bir ilk donanım maliyetiyle. Bu plan, konuma ve ağ tıkanıklığına bağlı olarak 50 Mbps ile 220 Mbps arasında değişen hızlarda sınırsız veri sağlar[2][3]. 
+- ***Konut Hizmeti*** : Aylık yaklaşık 120$ fiyatla, yaklaşık 599$'lık bir ilk donanım maliyetiyle. Bu plan, konuma ve ağ tıkanıklığına bağlı olarak 50 Mbps ile 220 Mbps arasında değişen hızlarda sınırsız veri sağlar[2][3]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Karavanlar için Starlink***  : Bu plan, kullanıcıların hizmetlerini yola çıkarmalarına olanak tanır ancak sabit konumlu kullanıcılara kıyasla önceliklendirilmemiş hızlarla karşılaşabilirler. 
+- ***Karavanlar için Starlink*** : Bu plan, kullanıcıların hizmetlerini yola çıkarmalarına olanak tanır ancak sabit konumlu kullanıcılara kıyasla önceliklendirilmemiş hızlarla karşılaşabilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Starlink Maritime***  : Denizdeki gemiler için tasarlanmış olup 350 Mbps'ye kadar hız sunuyor ancak daha pahalı bir terminal ve aylık ücret gerektiriyor[2][5]. 
+- ***Starlink Maritime*** : Denizdeki gemiler için tasarlanmış olup 350 Mbps'ye kadar hız sunuyor ancak daha pahalı bir terminal ve aylık ücret gerektiriyor[2][5]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

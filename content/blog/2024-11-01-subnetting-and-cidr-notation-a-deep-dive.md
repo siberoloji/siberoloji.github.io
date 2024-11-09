@@ -34,15 +34,15 @@ url: /subnetting-and-cidr-notation-a-deep-dive/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Efficient IP Address Allocation:***  Subnetting allows for more efficient use of IP addresses by breaking down a large network into smaller, more manageable subnets. 
+- ***Efficient IP Address Allocation:*** Subnetting allows for more efficient use of IP addresses by breaking down a large network into smaller, more manageable subnets. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Enhanced Network Security:***  By dividing a network into smaller subnets, you can isolate different network segments, reducing the potential impact of security breaches. 
+- ***Enhanced Network Security:*** By dividing a network into smaller subnets, you can isolate different network segments, reducing the potential impact of security breaches. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Improved Network Performance:***  Subnetting can help to reduce network traffic and improve overall network performance by segmenting traffic based on specific needs. 
+- ***Improved Network Performance:*** Subnetting can help to reduce network traffic and improve overall network performance by segmenting traffic based on specific needs. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -99,15 +99,15 @@ url: /subnetting-and-cidr-notation-a-deep-dive/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Departmental Subnetting:***  Dividing a network into subnets for different departments within an organization. 
+- ***Departmental Subnetting:*** Dividing a network into subnets for different departments within an organization. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Building Subnetting:***  Subnetting a network based on physical location, such as different buildings or floors. 
+- ***Building Subnetting:*** Subnetting a network based on physical location, such as different buildings or floors. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***VLAN Subnetting:***  Using VLANs to logically segment a network and assign different subnets to each VLAN. 
+- ***VLAN Subnetting:*** Using VLANs to logically segment a network and assign different subnets to each VLAN. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -116,19 +116,19 @@ url: /subnetting-and-cidr-notation-a-deep-dive/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Plan Ahead:***  Carefully plan your subnetting scheme to ensure that it meets your current and future needs. 
+- ***Plan Ahead:*** Carefully plan your subnetting scheme to ensure that it meets your current and future needs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Consider Future Growth:***  Allocate enough IP addresses to accommodate future growth. 
+- ***Consider Future Growth:*** Allocate enough IP addresses to accommodate future growth. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Keep It Simple:***  Avoid overly complex subnetting schemes that can be difficult to manage. 
+- ***Keep It Simple:*** Avoid overly complex subnetting schemes that can be difficult to manage. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Document Your Network:***  Document your subnetting scheme to aid in troubleshooting and future modifications. 
+- ***Document Your Network:*** Document your subnetting scheme to aid in troubleshooting and future modifications. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -137,19 +137,19 @@ url: /subnetting-and-cidr-notation-a-deep-dive/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Incorrect Subnet Mask:***  Verify that the subnet mask is correctly configured on all devices. 
+- ***Incorrect Subnet Mask:*** Verify that the subnet mask is correctly configured on all devices. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Routing Issues:***  Check the routing tables on routers to ensure that they are routing traffic correctly. 
+- ***Routing Issues:*** Check the routing tables on routers to ensure that they are routing traffic correctly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***IP Address Conflicts:***  Use tools like IP scanners to identify and resolve IP address conflicts. 
+- ***IP Address Conflicts:*** Use tools like IP scanners to identify and resolve IP address conflicts. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***DHCP Configuration:***  Ensure that your DHCP server is configured to assign IP addresses within the correct subnet. 
+- ***DHCP Configuration:*** Ensure that your DHCP server is configured to assign IP addresses within the correct subnet. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -164,15 +164,15 @@ url: /subnetting-and-cidr-notation-a-deep-dive/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Use a Subnetting Calculator:***  A subnetting calculator can help you quickly calculate subnet masks and IP addresses. 
+- ***Use a Subnetting Calculator:*** A subnetting calculator can help you quickly calculate subnet masks and IP addresses. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Consider VLSM:***  Variable-length subnet Masking (VLSM) allows you to use different subnet masks for different subnets, optimizing IP address utilization. 
+- ***Consider VLSM:*** Variable-length subnet Masking (VLSM) allows you to use different subnet masks for different subnets, optimizing IP address utilization. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Stay Updated:***  Keep up with the latest networking technologies and standards to ensure that your network is secure and efficient. 
+- ***Stay Updated:*** Keep up with the latest networking technologies and standards to ensure that your network is secure and efficient. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

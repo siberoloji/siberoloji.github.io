@@ -40,19 +40,19 @@ url: /tr/sosyal-platformlarda-cografi-konum-belirleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Çeşitli Uzmanlıklar***  : Katılımcılar yerel coğrafyadan mimari tarzlara kadar geniş bir bilgi yelpazesi getiriyorlar. 
+- ***Çeşitli Uzmanlıklar*** : Katılımcılar yerel coğrafyadan mimari tarzlara kadar geniş bir bilgi yelpazesi getiriyorlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Küresel Erişim***  : Sosyal platformlar dünyanın dört bir yanındaki insanları birbirine bağlayarak yerel bilgiye ulaşma olasılığını artırır. 
+- ***Küresel Erişim*** : Sosyal platformlar dünyanın dört bir yanındaki insanları birbirine bağlayarak yerel bilgiye ulaşma olasılığını artırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İşbirlikçi Problem Çözme***  : Çoklu bakış açıları yenilikçi yaklaşımlara ve daha hızlı çözümlere yol açabilir. 
+- ***İşbirlikçi Problem Çözme*** : Çoklu bakış açıları yenilikçi yaklaşımlara ve daha hızlı çözümlere yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ölçeklenebilirlik***  : Çok sayıda katılımcı, büyük miktarda bilgiyi hızlı bir şekilde işleyebilir. 
+- ***Ölçeklenebilirlik*** : Çok sayıda katılımcı, büyük miktarda bilgiyi hızlı bir şekilde işleyebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -392,35 +392,35 @@ url: /tr/sosyal-platformlarda-cografi-konum-belirleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Kaynakları Doğrulayın***  : Kalabalığın sağladığı bilgileri her zaman güvenilir kaynaklarla çapraz kontrol edin. 
+- ***Kaynakları Doğrulayın*** : Kalabalığın sağladığı bilgileri her zaman güvenilir kaynaklarla çapraz kontrol edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gizliliği Koruyun***  : Konumları tanımlamanın olası sonuçlarına dikkat edin. Hassas veya kişisel bilgileri paylaşmaktan kaçının. 
+- ***Gizliliği Koruyun*** : Konumları tanımlamanın olası sonuçlarına dikkat edin. Hassas veya kişisel bilgileri paylaşmaktan kaçının. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Açıklamayı Teşvik Edin***  : Katkıda bulunanlardan sadece cevap vermelerini değil, gerekçelerini açıklamalarını isteyin. Bu, iddiaların doğruluğunu doğrulamaya yardımcı olur. 
+- ***Açıklamayı Teşvik Edin*** : Katkıda bulunanlardan sadece cevap vermelerini değil, gerekçelerini açıklamalarını isteyin. Bu, iddiaların doğruluğunu doğrulamaya yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Birden Fazla Platform Kullanın***  : Tek bir sosyal platforma güvenmeyin. Farklı topluluklar farklı içgörüler sunabilir. 
+- ***Birden Fazla Platform Kullanın*** : Tek bir sosyal platforma güvenmeyin. Farklı topluluklar farklı içgörüler sunabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yöntemleri Birleştirin***  : Daha sağlam bir analiz için kalabalık kaynak kullanımını diğer OSINT teknikleri ve araçlarıyla birlikte kullanın. 
+- ***Yöntemleri Birleştirin*** : Daha sağlam bir analiz için kalabalık kaynak kullanımını diğer OSINT teknikleri ve araçlarıyla birlikte kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sabırlı Olun***  : Bazı coğrafi konumların çözülmesi zaman alabilir. İlk yanıtlara dayanarak sonuçlara varmak için acele etmeyin. 
+- ***Sabırlı Olun*** : Bazı coğrafi konumların çözülmesi zaman alabilir. İlk yanıtlara dayanarak sonuçlara varmak için acele etmeyin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kredi Verin***  : Topluluk üyelerinin katkılarını kabul edin. Bu, gelecekteki katılımı teşvik eder ve iyi niyet oluşturur. 
+- ***Kredi Verin*** : Topluluk üyelerinin katkılarını kabul edin. Bu, gelecekteki katılımı teşvik eder ve iyi niyet oluşturur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Objektif Kalın***  : Tüm olasılıklara açık olun ve doğrulama yanlılığından kaçının. 
+- ***Objektif Kalın*** : Tüm olasılıklara açık olun ve doğrulama yanlılığından kaçının. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -433,23 +433,23 @@ url: /tr/sosyal-platformlarda-cografi-konum-belirleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Onay***  : Görüntüdeki kişilerin konumlarının belirlenmesine onay verip vermeyeceklerini göz önünde bulundurun. 
+- ***Onay*** : Görüntüdeki kişilerin konumlarının belirlenmesine onay verip vermeyeceklerini göz önünde bulundurun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Olası Zarar***  : Konumun belirlenmesinin bireyleri veya toplulukları riske atıp atmayacağını değerlendirin. 
+- ***Olası Zarar*** : Konumun belirlenmesinin bireyleri veya toplulukları riske atıp atmayacağını değerlendirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasal Sonuçlar***  : Belirli türdeki konum bilgilerinin paylaşılmasına ilişkin yasal kısıtlamalara dikkat edin. 
+- ***Yasal Sonuçlar*** : Belirli türdeki konum bilgilerinin paylaşılmasına ilişkin yasal kısıtlamalara dikkat edin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Şeffaflık***  : Toplulukla etkileşim kurarken coğrafi konum belirleme çabalarınızın amacı konusunda net olun. 
+- ***Şeffaflık*** : Toplulukla etkileşim kurarken coğrafi konum belirleme çabalarınızın amacı konusunda net olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Koruma***  : İşlem sırasında ortaya çıkan kişisel verileri gerekli özeni göstererek ve ilgili yasalara uygun şekilde işleyin. 
+- ***Veri Koruma*** : İşlem sırasında ortaya çıkan kişisel verileri gerekli özeni göstererek ve ilgili yasalara uygun şekilde işleyin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -261,36 +261,36 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Common Types of Combinational Logic Circuits&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Adders:***  Adders are used to perform arithmetic operations on binary numbers. They can be simple half-adders, full-adders, or ripple-carry adders. 
+- ***Adders:*** Adders are used to perform arithmetic operations on binary numbers. They can be simple half-adders, full-adders, or ripple-carry adders. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Subtractors:&lt;/strong&gt;&lt;/em&gt;  Subtractors are used to perform subtraction operations on binary numbers. They can be implemented using adders and inverters.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Subtractors:&lt;/strong&gt;&lt;/em&gt; Subtractors are used to perform subtraction operations on binary numbers. They can be implemented using adders and inverters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comparators:&lt;/strong&gt;&lt;/em&gt;  Comparators are used to compare two binary numbers and determine their relative magnitudes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comparators:&lt;/strong&gt;&lt;/em&gt; Comparators are used to compare two binary numbers and determine their relative magnitudes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Decoders:&lt;/strong&gt;&lt;/em&gt;  Decoders are used to convert a coded input into a set of individual output signals.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Decoders:&lt;/strong&gt;&lt;/em&gt; Decoders are used to convert a coded input into a set of individual output signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Encoders:&lt;/strong&gt;&lt;/em&gt;  Encoders are used to convert a set of individual input signals into a coded output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Encoders:&lt;/strong&gt;&lt;/em&gt; Encoders are used to convert a set of individual input signals into a coded output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Multiplexers:&lt;/strong&gt;&lt;/em&gt;  Multiplexers are used to select one of multiple input signals based on a control signal.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Multiplexers:&lt;/strong&gt;&lt;/em&gt; Multiplexers are used to select one of multiple input signals based on a control signal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Demultiplexers:&lt;/strong&gt;&lt;/em&gt;  Demultiplexers are used to distribute a single input signal to multiple output lines based on a control signal.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Demultiplexers:&lt;/strong&gt;&lt;/em&gt; Demultiplexers are used to distribute a single input signal to multiple output lines based on a control signal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -300,16 +300,16 @@
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - ***Types of Encoders:*** &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Priority Encoder:***  A priority encoder assigns a unique code to the highest-priority active input. 
+- ***Priority Encoder:*** A priority encoder assigns a unique code to the highest-priority active input. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Octal-to-Binary Encoder:&lt;/strong&gt;&lt;/em&gt;  Converts an octal input into a binary output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Octal-to-Binary Encoder:&lt;/strong&gt;&lt;/em&gt; Converts an octal input into a binary output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Seven-Segment Decoder:&lt;/strong&gt;&lt;/em&gt;  Converts a binary-coded decimal (BCD) input into a seven-segment display output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Seven-Segment Decoder:&lt;/strong&gt;&lt;/em&gt; Converts a binary-coded decimal (BCD) input into a seven-segment display output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -321,16 +321,16 @@
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - ***Types of Decoders:*** &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***2-to-4 Decoder:***  Decodes a 2-bit input into 4 output lines. 
+- ***2-to-4 Decoder:*** Decodes a 2-bit input into 4 output lines. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;3-to-8 Decoder:&lt;/strong&gt;&lt;/em&gt;  Decodes a 3-bit input into 8 output lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;3-to-8 Decoder:&lt;/strong&gt;&lt;/em&gt; Decodes a 3-bit input into 8 output lines.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Decimal Decoder:&lt;/strong&gt;&lt;/em&gt;  Decodes a BCD input into 10 output lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Decimal Decoder:&lt;/strong&gt;&lt;/em&gt; Decodes a BCD input into 10 output lines.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -340,26 +340,26 @@
 &lt;p&gt;These components are widely used in various digital systems, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Microprocessors and microcontrollers:***  They form the core of the control unit, arithmetic logic unit (ALU), and other functional units. 
+- ***Microprocessors and microcontrollers:*** They form the core of the control unit, arithmetic logic unit (ALU), and other functional units. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Memory systems:&lt;/strong&gt;&lt;/em&gt;  They are used for address decoding, data selection, and write enable signals.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Memory systems:&lt;/strong&gt;&lt;/em&gt; They are used for address decoding, data selection, and write enable signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Input/output devices:&lt;/strong&gt;&lt;/em&gt;  They are used for data conversion, encoding, and decoding.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Input/output devices:&lt;/strong&gt;&lt;/em&gt; They are used for data conversion, encoding, and decoding.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt;  They are used for modulation, demodulation, and error detection/correction.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt; They are used for modulation, demodulation, and error detection/correction.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Digital signal processing:&lt;/strong&gt;&lt;/em&gt;  They are used for filtering, sampling, and quantization.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Digital signal processing:&lt;/strong&gt;&lt;/em&gt; They are used for filtering, sampling, and quantization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -367,21 +367,21 @@
 &lt;p&gt;Combinational logic circuits, encoders, and decoders can be designed using various methods, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Truth tables:***  A truth table lists all possible input combinations and their corresponding outputs. 
+- ***Truth tables:*** A truth table lists all possible input combinations and their corresponding outputs. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boolean algebra:&lt;/strong&gt;&lt;/em&gt;  Boolean algebra can be used to express the circuit&amp;rsquo;s logic using Boolean equations.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boolean algebra:&lt;/strong&gt;&lt;/em&gt; Boolean algebra can be used to express the circuit&amp;rsquo;s logic using Boolean equations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karnaugh maps:&lt;/strong&gt;&lt;/em&gt;  Karnaugh maps are a graphical tool for simplifying Boolean expressions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karnaugh maps:&lt;/strong&gt;&lt;/em&gt; Karnaugh maps are a graphical tool for simplifying Boolean expressions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt;  HDLs like Verilog and VHDL can be used to describe the circuit&amp;rsquo;s behavior in a textual format.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt; HDLs like Verilog and VHDL can be used to describe the circuit&amp;rsquo;s behavior in a textual format.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

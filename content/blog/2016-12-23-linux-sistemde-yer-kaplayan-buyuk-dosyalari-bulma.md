@@ -18,7 +18,7 @@ date: "2016-12-23T02:01:00Z"
 excerpt: Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar
   diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar.
   Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız.
-  Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın yolunu
+  Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanınyolunu
   açıklamak istiyorum.
 guid: https://www.siberoloji.com/?p=1123
 id: 1123

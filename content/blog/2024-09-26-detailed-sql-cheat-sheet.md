@@ -25,7 +25,7 @@ title: Detailed SQL Cheat Sheet
 url: /detailed-sql-cheat-sheet/
 ---
 
-  Here's a detailed ***SQL Cheat Sheet***  you can use for your blog post: 
+  Here's a detailed***SQL Cheat Sheet*** you can use for your blog post: 
  
 
 

@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-05-18T13:06:00Z"
 excerpt: WMAP, kullanıcılara geniş imkanlar sağlayan bir web uygulama zafiyet tarama
-  aracıdır. Orijinal olarak sqlmap programından türemiştir. Bu yazıda, Metasploit
+  aracıdır. Orijinal olaraksqlmapprogramından türemiştir. Bu yazıda, Metasploit
   içerisine entegre edilen WMAP kullanımını göreceğiz.
 guid: https://www.siberoloji.com/?p=1167
 id: 1167

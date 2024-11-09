@@ -15,8 +15,8 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-06-15T13:56:00Z"
-excerpt: Hedef sisteme giriş yaptıktan sonra, kalıcılık sağlamanın bir yolu da metsvc servisini
-  kullanmaktır. Bu servis sayesinde istediğiniz zaman tekrar Meterpreter oturumu açabilirsiniz. metsvc hakkında
+excerpt: Hedef sisteme giriş yaptıktan sonra, kalıcılık sağlamanın bir yolu dametsvcservisini
+  kullanmaktır. Bu servis sayesinde istediğiniz zaman tekrar Meterpreter oturumu açabilirsiniz.metsvchakkında
   detaylı bilgiyi bağlantıyı kullanarak inceleyebilirsiniz.
 guid: https://www.siberoloji.com/?p=1215
 id: 1215

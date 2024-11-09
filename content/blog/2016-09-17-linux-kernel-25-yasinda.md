@@ -15,7 +15,7 @@ classicmag_post_layout:
 classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-09-17T17:56:00Z"
-excerpt: Linux kullanıcıları için 17 Eylül 1991 tarihinin ayrı bir anlamı olmalı.
+excerpt: Linux kullanıcıları için 17 Eylül 1991 tarihininayrı bir anlamı olmalı.
   Günümüzde, hayatın hemen her alanında kullanılmakta olan Linux işletim sisteminin
   ilk sürümü olarak bilinen Kernel 0.01, bundan tam 25 yıl önce yayınlanmıştı.
 guid: https://www.siberoloji.com/?p=1093

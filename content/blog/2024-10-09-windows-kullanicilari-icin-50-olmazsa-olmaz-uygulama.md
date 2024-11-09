@@ -255,7 +255,7 @@ url: /tr/windows-kullanicilari-icin-50-olmazsa-olmaz-uygulama/
 
 <!-- wp:list {"ordered":true,"start":43} -->
 <ol start="43" class="wp-block-list"><!-- wp:list-item -->
-- ***Steam*** <br>PC oyunları için en üst düzey platform olan Steam, binlerce oyuna erişimin yanı sıra sosyal özellikler ve  buluta kaydetme olanağı sunuyor. 
+- ***Steam*** <br>PC oyunları için en üst düzey platform olan Steam, binlerce oyuna erişimin yanı sıra sosyal özellikler vebulutakaydetme olanağı sunuyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

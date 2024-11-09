@@ -335,5 +335,5 @@ url: /aircrack-ng-a-powerful-tool-for-wireless-network-security-on-kali-linux/
   Aircrack-ng remains one of the most powerful tools for testing the security of wireless networks, and it’s highly effective when used within Kali Linux. Whether you're an ethical hacker, a cybersecurity student, or a network administrator, Aircrack-ng provides the tools needed to evaluate Wi-Fi security robustly. 
  
 
-  Understanding how Aircrack-ng works, its capabilities, and its limitations can go a long way in helping you protect and audit wireless networks ethically and effectively. When used responsibly, Aircrack-ng is a valuable ally in the ongoing fight to secure wireless networks against potential threats. You may want to look at our <a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a> page. 
+  Understanding how Aircrack-ng works, its capabilities, and its limitations can go a long way in helping you protect and audit wireless networks ethically and effectively. When used responsibly, Aircrack-ng is a valuable ally in the ongoing fight to secure wireless networks against potential threats. You may want to look at our<a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a>page. 
  

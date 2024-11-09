@@ -44,15 +44,15 @@ url: /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***İkinci Dereceden Terim***  : ( ax^2 ) ikinci dereceden terimdir, burada ( a \neq 0 ). Grafiğin eğriliğini tanımlar. 
+- ***İkinci Dereceden Terim*** : ( ax^2 ) ikinci dereceden terimdir, burada ( a \neq 0 ). Grafiğin eğriliğini tanımlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Doğrusal Terim***  : (bx) doğrusal terimdir. Eğrinin eğimini ve yönünü etkiler. 
+- ***Doğrusal Terim*** : (bx) doğrusal terimdir. Eğrinin eğimini ve yönünü etkiler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sabit Terim***  : (c) sabit terimdir ve fonksiyonun y-kesişimini temsil eder. 
+- ***Sabit Terim*** : (c) sabit terimdir ve fonksiyonun y-kesişimini temsil eder. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -65,11 +65,11 @@ url: /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- Eğer (a &gt; 0) ise parabol U harfine benzer şekilde ***yukarı doğru açılır.***  
+- Eğer (a &gt; 0) ise parabolU harfine benzer şekilde***yukarı doğru açılır.***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ( a &lt; 0 ) ise parabol ***aşağıya doğru***  açılır ve ters U harfine benzer. 
+- ( a &lt; 0 ) ise parabol***aşağıya doğru*** açılır ve ters U harfine benzer. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -134,15 +134,15 @@ url: /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***İki farklı reel kök***  : Parabol x eksenini iki noktada keser. 
+- ***İki farklı reel kök*** : Parabol x eksenini iki noktada keser. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Bir gerçek kök***  : Parabol x eksenine sadece bir noktada (tepe noktasında) dokunur. 
+- ***Bir gerçek kök*** : Parabol x eksenine sadece bir noktada (tepe noktasında) dokunur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gerçek kök yok***  : Parabol x eksenini kesmez. 
+- ***Gerçek kök yok*** : Parabol x eksenini kesmez. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -265,15 +265,15 @@ url: /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Mermi Hareketi***  : Havaya atılan bir cismin yolu parabolik bir yörünge izler. İkinci dereceden fonksiyonları kullanarak cismin ulaştığı maksimum yüksekliği, yere çarpması için gereken süreyi ve kat edilen mesafeyi belirleyebilirsiniz. 
+- ***Mermi Hareketi*** : Havaya atılan bir cismin yolu parabolik bir yörünge izler. İkinci dereceden fonksiyonları kullanarak cismin ulaştığı maksimum yüksekliği, yere çarpması için gereken süreyi ve kat edilen mesafeyi belirleyebilirsiniz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ekonomi***  : Ekonomide, ikinci dereceden fonksiyonlar kar maksimizasyonu ve maliyet minimizasyonu modellemek için kullanılır. Örneğin, bir şirket karı maksimize etmek için üretilecek ürün miktarını belirlemek için ikinci dereceden bir fonksiyon kullanabilir. 
+- ***Ekonomi*** : Ekonomide, ikinci dereceden fonksiyonlar kar maksimizasyonu ve maliyet minimizasyonu modellemek için kullanılır. Örneğin, bir şirket karı maksimize etmek için üretilecek ürün miktarını belirlemek için ikinci dereceden bir fonksiyon kullanabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Mühendislik***  : Mühendisler genellikle yapılardaki gerilmeleri, malzeme mukavemetlerini ve tasarım eğrilerini hesaplamak için ikinci dereceden denklemleri kullanırlar. 
+- ***Mühendislik*** : Mühendisler genellikle yapılardaki gerilmeleri, malzeme mukavemetlerini ve tasarım eğrilerini hesaplamak için ikinci dereceden denklemleri kullanırlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

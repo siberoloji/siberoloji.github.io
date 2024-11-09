@@ -33,19 +33,19 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Gelişmiş Performans***  : Şişkin bir veritabanı web sitenizi yavaşlatabilir ve WordPress'in veriyi almasını ve işlemesini zorlaştırabilir. Gereksiz dosyaları temizlemek sorgu yürütme süresini iyileştirir ve web sitenizi hızlandırır. 
+- ***Gelişmiş Performans*** : Şişkin bir veritabanı web sitenizi yavaşlatabilir ve WordPress'in veriyi almasını ve işlemesini zorlaştırabilir. Gereksiz dosyaları temizlemek sorgu yürütme süresini iyileştirir ve web sitenizi hızlandırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Verimli Yedekleme ve Geri Yükleme***  : Büyük veritabanlarının yedekleri daha uzun sürer ve daha fazla kaynak tüketir. Daha temiz bir veritabanı yedekleme boyutunu azaltır ve gerektiğinde geri yüklemeyi kolaylaştırır. 
+- ***Verimli Yedekleme ve Geri Yükleme*** : Büyük veritabanlarının yedekleri daha uzun sürer ve daha fazla kaynak tüketir. Daha temiz bir veritabanı yedekleme boyutunu azaltır ve gerektiğinde geri yüklemeyi kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Azaltılmış Disk Kullanımı***  : Veritabanı şişkinliği, özellikle depolama alanının genellikle sınırlı olduğu paylaşımlı barındırmada sunucu depolama alanını tüketir. Gereksiz dosyaları kaldırarak, daha kritik dosyalar ve veriler için alan açarsınız. 
+- ***Azaltılmış Disk Kullanımı*** : Veritabanı şişkinliği, özellikle depolama alanının genellikle sınırlı olduğu paylaşımlı barındırmada sunucu depolama alanını tüketir. Gereksiz dosyaları kaldırarak, daha kritik dosyalar ve veriler için alan açarsınız. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik ve Bakım***  : Temiz bir veritabanının yönetimi, sorun gidermesi ve güvenliği daha kolaydır. İlgisiz dosyalar hatalara ve potansiyel güvenlik açıklarına fırsat yaratabilir. 
+- ***Güvenlik ve Bakım*** : Temiz bir veritabanının yönetimi, sorun gidermesi ve güvenliği daha kolaydır. İlgisiz dosyalar hatalara ve potansiyel güvenlik açıklarına fırsat yaratabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -117,11 +117,11 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Hosting Kontrol Panelinize (cPanel) Giriş Yapın***  : Çoğu web barındırma sağlayıcısı cPanel aracılığıyla phpMyAdmin'e erişim sunar. Giriş yaptıktan sonra, "Veritabanları" bölümünün altında phpMyAdmin seçeneğini arayın. 
+- ***Hosting Kontrol Panelinize (cPanel) Giriş Yapın*** : Çoğu web barındırma sağlayıcısı cPanel aracılığıyla phpMyAdmin'e erişim sunar. Giriş yaptıktan sonra, "Veritabanları" bölümünün altında phpMyAdmin seçeneğini arayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***WordPress Veritabanınızı Seçin***  : phpMyAdmin'de, bir veritabanları listesi göreceksiniz. Web sitenizle ilişkili tabloları görüntülemek için WordPress veritabanınıza tıklayın. 
+- ***WordPress Veritabanınızı Seçin*** : phpMyAdmin'de, bir veritabanları listesi göreceksiniz. Web sitenizle ilişkili tabloları görüntülemek için WordPress veritabanınıza tıklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -129,12 +129,12 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 <h4 class="wp-block-heading">Adım 2: Otomatik Taslakları Silme 
 <!-- /wp:heading -->
 
-  Otomatik taslaklar WordPress veritabanınızın <code>wp_posts</code> tablosuna kaydedilir. Otomatik taslakları silmek için: 
+  Otomatik taslaklar WordPress veritabanınızın <code>wp_posts</code> tablosunakaydedilir. Otomatik taslakları silmek için: 
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- phpMyAdmin arayüzünde ***SQL***  sekmesine tıklayın. 
+- phpMyAdmin arayüzünde***SQL*** sekmesine tıklayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -148,7 +148,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-- Sorguyu yürütmek için ***Git'e***  tıklayın . 
+- Sorguyu yürütmek için***Git'e*** tıklayın . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -164,7 +164,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***SQL***  sekmesine gidin . 
+- ***SQL*** sekmesine gidin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -178,7 +178,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-- ***Git'e***  tıklayın . 
+- ***Git'e*** tıklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -194,7 +194,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***SQL***  sekmesinde aşağıdaki sorguyu çalıştırın: 
+- ***SQL*** sekmesindeaşağıdaki sorguyu çalıştırın: 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -204,7 +204,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-- ***Git'e***  tıklayın . 
+- ***Git'e*** tıklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -223,7 +223,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-- ***Git'e***  tıklayın . 
+- ***Git'e*** tıklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -236,7 +236,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***SQL***  sekmesinde aşağıdaki sorguyu çalıştırın: 
+- ***SQL*** sekmesindeaşağıdaki sorguyu çalıştırın: 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -256,7 +256,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-- Her sorgu için ***Git'e***  tıklayın . 
+- Her sorgu için***Git'e*** tıklayın . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -264,12 +264,12 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 <h4 class="wp-block-heading">Adım 6: Süresi Dolan Geçicileri Kaldırma 
 <!-- /wp:heading -->
 
-  Geçici olaylar <code>wp_options</code> tablosunda saklanır . Süresi dolan geçici olayları kaldırmak için: 
+  Geçici olaylar <code>wp_options</code> tablosunda saklanır. Süresi dolan geçici olayları kaldırmak için: 
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***SQL***  sekmesinde aşağıdaki sorguyu çalıştırın: 
+- ***SQL*** sekmesindeaşağıdaki sorguyu çalıştırın: 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -279,7 +279,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-- ***Git'e***  tıklayın . 
+- ***Git'e*** tıklayın. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -315,7 +315,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-- Her sorgu için ***Git'e***  tıklayın . 
+- Her sorgu için***Git'e*** tıklayın . 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -325,15 +325,15 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Düzenli Yedeklemeler***  : Herhangi bir değişiklik yapmadan önce veritabanınızı her zaman yedekleyin. Düzenli yedeklemeler planlamak da iyi bir alışkanlıktır. 
+- ***Düzenli Yedeklemeler*** : Herhangi bir değişiklik yapmadan önce veritabanınızı her zaman yedekleyin. Düzenli yedeklemeler planlamak da iyi bir alışkanlıktır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veritabanı Optimizasyon Eklentileri***  : Temizleme sürecini otomatikleştirmek için WP-Optimize veya Advanced Database Cleaner gibi eklentileri kullanmayı düşünün. Bu eklentiler, revizyonları, spam'i, geçicileri ve diğer gereksiz verileri silmek için kullanıcı dostu yollar sunar. 
+- ***Veritabanı Optimizasyon Eklentileri*** : Temizleme sürecini otomatikleştirmek için WP-Optimize veya Advanced Database Cleaner gibi eklentileri kullanmayı düşünün. Bu eklentiler, revizyonları, spam'i, geçicileri ve diğer gereksiz verileri silmek için kullanıcı dostu yollar sunar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gönderi Revizyonlarını Sınırla***  : <code>wp-config.php</code> Dosyanıza aşağıdaki satırı ekleyerek WordPress'in kaydedeceği gönderi revizyonlarının sayısını sınırlayabilirsiniz: 
+- ***Gönderi Revizyonlarını Sınırla*** : <code>wp-config.php</code> Dosyanıza aşağıdaki satırı ekleyerek WordPress'in kaydedeceği gönderi revizyonlarının sayısını sınırlayabilirsiniz: 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -346,7 +346,7 @@ url: /tr/phpmyadmin-ile-wordpress-nasil-temizlenir/
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-- ***Düzenli Temizlik***  : WordPress veritabanınızı düzenli olarak temizleyin ve dağınık hale gelmesini önleyin. Düzenli temizlikler çalıştırmak daha iyi performans ve daha verimli veritabanı yönetimi sağlar. 
+- ***Düzenli Temizlik*** : WordPress veritabanınızı düzenli olarak temizleyin ve dağınık hale gelmesini önleyin. Düzenli temizlikler çalıştırmak daha iyi performans ve daha verimli veritabanı yönetimi sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

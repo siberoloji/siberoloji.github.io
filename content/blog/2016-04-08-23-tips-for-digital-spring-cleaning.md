@@ -32,21 +32,21 @@ url: /23-tips-for-digital-spring-cleaning/
 <!-- /wp:heading -->
 
 
- ### Week 1 –  Software Topics:
+ ### Week 1 –SoftwareTopics:
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">***1. Update all software on your internet connected devices***  
 <!-- /wp:heading -->
 
-  It is very important to update software, including those installed on computers, smart phones and modems and routers if they are published. New vulnerabilities are discovered every day.  Software companies also release updates according to these vulnerabilities. The operating system "Automatic update" option on your computer only updates your operating system. Remember that you need to check and update the installed programs yourself.
+  It is very important to update software, including those installed on computers, smart phones and modems and routers if they are published. New vulnerabilities are discovered every day.Software companies also release updates according to these vulnerabilities.The operatingsystem "Automatic update" option on your computeronly updates youroperatingsystem. Remember that you need to check and update the installed programs yourself.
  
 
 <!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">***2. Update the software on your mobile devices, remove unnecessary ones***  
 <!-- /wp:heading -->
 
-  Mobile devices use their own software centers. They usually automatically update new versions of programs. However, some programs update their user agreements with the updates they release and ask for your approval. For this reason, the update should be done manually, not automatically. Check these programs from the software centers.
+  Mobile devices use their ownsoftwarecenters. They usually automatically update new versions of programs. However, some programs update their user agreements with the updates they release and ask for your approval. For this reason, the update should be done manually, not automatically.Check these programs fromthe software centers.
  
 
 <!-- wp:heading {"level":4} -->

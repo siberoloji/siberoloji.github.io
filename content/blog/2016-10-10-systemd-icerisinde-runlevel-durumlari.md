@@ -18,7 +18,7 @@ date: "2016-10-10T01:45:00Z"
 excerpt: Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd
   kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız
   "Nasıl yapılır?" dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız
-  çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız
+  çözümlerin bir kısmı doğru çalışabilir. Fakatdiğer kısmında da hatalar almanız
   ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde
   çözümler üretiliyor.
 guid: https://www.siberoloji.com/?p=1106
@@ -31,7 +31,7 @@ title: Systemd İçerisinde Runlevel Durumları
 url: /tr/systemd-icerisinde-runlevel-durumlari/
 ---
 
- <p>Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız "Nasıl yapılır?" dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de <a href="https://siberoloji.com" target="_blank" rel="noreferrer noopener">siberoloji.com</a> olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.
+ <p>Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız "Nasıl yapılır?" dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakatdiğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de<a href="https://siberoloji.com" target="_blank" rel="noreferrer noopener">siberoloji.com</a>olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.
  
 
  <p>Bu yazımızda, önceden sysV init olarak bilinen yapıda bulunan çalışma seviyelerinin systemd ile birlikte nasıl değiştiğini açıklayacağız. Aşağıdaki tabloda, çalışma seviyelerinin init ve systemd içerisinde nasıl isimlendirildiğini görebilirsiniz.

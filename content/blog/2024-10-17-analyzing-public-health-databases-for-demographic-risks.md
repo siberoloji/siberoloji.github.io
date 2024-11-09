@@ -32,15 +32,15 @@ url: /analyzing-public-health-databases-for-demographic-risks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Data Sources:***  Public health databases can be obtained from government agencies, research institutions, and non-profit organizations. Some common sources include vital statistics data, census data, health survey data, and disease surveillance data. 
+- ***Data Sources:*** Public health databases can be obtained from government agencies, research institutions, and non-profit organizations. Some common sources include vital statistics data, census data, health survey data, and disease surveillance data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Cleaning and Standardization:***  Data cleaning involves identifying and correcting errors, inconsistencies, and missing values. Standardization ensures that data from different sources is consistent and comparable. 
+- ***Data Cleaning and Standardization:*** Data cleaning involves identifying and correcting errors, inconsistencies, and missing values. Standardization ensures that data from different sources is consistent and comparable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Variable Creation:***  Creating appropriate variables is essential for analyzing demographic risks. This may involve combining multiple variables to create new variables, such as socioeconomic status or health outcomes. 
+- ***Variable Creation:*** Creating appropriate variables is essential for analyzing demographic risks. This may involve combining multiple variables to create new variables, such as socioeconomic status or health outcomes. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -52,15 +52,15 @@ url: /analyzing-public-health-databases-for-demographic-risks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Frequency Distributions:***  Frequency distributions show the number of observations that fall within each category of a variable. 
+- ***Frequency Distributions:*** Frequency distributions show the number of observations that fall within each category of a variable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Measures of Central Tendency:***  Measures of central tendency, such as the mean, median, and mode, provide information about the typical value of a variable. 
+- ***Measures of Central Tendency:*** Measures of central tendency, such as the mean, median, and mode, provide information about the typical value of a variable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Measures of Dispersion:***  Measures of dispersion, such as the standard deviation and variance, provide information about the variability of a variable. 
+- ***Measures of Dispersion:*** Measures of dispersion, such as the standard deviation and variance, provide information about the variability of a variable. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -72,15 +72,15 @@ url: /analyzing-public-health-databases-for-demographic-risks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Correlation Analysis:***  Correlation analysis measures the strength and direction of the relationship between two variables. 
+- ***Correlation Analysis:*** Correlation analysis measures the strength and direction of the relationship between two variables. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Regression Analysis:***  Regression analysis can be used to model the relationship between a dependent variable and one or more independent variables. 
+- ***Regression Analysis:*** Regression analysis can be used to model the relationship between a dependent variable and one or more independent variables. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Visualization:***  Data visualization techniques, such as charts and graphs, can help to identify patterns and trends in the data. 
+- ***Data Visualization:*** Data visualization techniques, such as charts and graphs, can help to identify patterns and trends in the data. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -92,15 +92,15 @@ url: /analyzing-public-health-databases-for-demographic-risks/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Vulnerability Assessment:***  Vulnerability assessments can identify populations that are particularly susceptible to health risks due to factors such as socioeconomic status, race, ethnicity, gender, age, or disability. 
+- ***Vulnerability Assessment:*** Vulnerability assessments can identify populations that are particularly susceptible to health risks due to factors such as socioeconomic status, race, ethnicity, gender, age, or disability. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Risk Quantification:***  Risk quantification involves estimating the magnitude of health risks for different populations. This may involve calculating mortality rates, morbidity rates, or other relevant metrics. 
+- ***Risk Quantification:*** Risk quantification involves estimating the magnitude of health risks for different populations. This may involve calculating mortality rates, morbidity rates, or other relevant metrics. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Prioritization of Interventions:***  Prioritizing interventions involves identifying the most effective and efficient strategies for addressing demographic risks. This may involve considering factors such as the severity of the risk, the feasibility of interventions, and the potential benefits and costs. 
+- ***Prioritization of Interventions:*** Prioritizing interventions involves identifying the most effective and efficient strategies for addressing demographic risks. This may involve considering factors such as the severity of the risk, the feasibility of interventions, and the potential benefits and costs. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2017-05-18T13:04:00Z"
 excerpt: Bazen sistem yöneticileri, kurdukları servislerin güvenlik ayarlarını yapmayı
-  eksik bırakırlar. Klasik yapılan hatalardan bir tanesi de ağda çalışan servislerin guest olarak
+  eksik bırakırlar. Klasik yapılan hatalardan bir tanesi de ağda çalışan servisleringuestolarak
   tabir edilen kullanıcılara kapatılmamasıdır. VNC Server, bir bilgisayara uzaktan
   bağlanılmasını sağlayan servistir.
 guid: https://www.siberoloji.com/?p=1165

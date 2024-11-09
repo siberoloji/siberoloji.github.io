@@ -32,19 +32,19 @@ url: /tr/imagen-3-yapay-zeka-destekli-resim-olusturma/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Yüksek Çözünürlüklü Görüntü Oluşturma:***   Imagen 3'ün en etkileyici özelliklerinden biri, daha önce metinden görüntüye modellerle ulaşılamayan bir ayrıntı ve netlik düzeyi sağlayarak yüksek çözünürlüklerde görüntü oluşturma yeteneğidir. 
+- ***Yüksek Çözünürlüklü Görüntü Oluşturma:*** Imagen 3'ün en etkileyici özelliklerinden biri, daha önce metinden görüntüye modellerle ulaşılamayan bir ayrıntı ve netlik düzeyi sağlayarak yüksek çözünürlüklerde görüntü oluşturma yeteneğidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Çeşitli Stil Kontrolü:***   Model, kullanıcıların resim, fotoğrafçılık veya çizgi film gibi istedikleri sanatsal stili belirlemelerine olanak tanıyan geniş yelpazede stil seçenekleri sunar. Bu çok yönlülük, çeşitli estetik tercihlere hitap eden görüntülerin oluşturulmasını sağlar. 
+- ***Çeşitli Stil Kontrolü:*** Model, kullanıcıların resim, fotoğrafçılık veya çizgi film gibi istedikleri sanatsal stili belirlemelerine olanak tanıyan geniş yelpazede stil seçenekleri sunar. Bu çok yönlülük, çeşitli estetik tercihlere hitap eden görüntülerin oluşturulmasını sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gelişmiş Metin Anlayışı:***   Imagen 3, doğal dilin daha derin bir şekilde anlaşılmasını sağlayarak, metin isteminin anlamını ve bağlamını doğru şekilde yansıtan görseller üretmesini sağlar. Bu gelişmiş anlayış, daha alakalı ve görsel olarak daha çekici sonuçlara yol açar. 
+- ***Gelişmiş Metin Anlayışı:*** Imagen 3, doğal dilin daha derin bir şekilde anlaşılmasını sağlayarak, metin isteminin anlamını ve bağlamını doğru şekilde yansıtan görseller üretmesini sağlar. Bu gelişmiş anlayış, daha alakalı ve görsel olarak daha çekici sonuçlara yol açar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gerçekçi Görüntü Oluşturma:***   Model, genellikle insanların oluşturduklarından ayırt edilemeyen oldukça gerçekçi görüntüler üretme yeteneğine sahiptir. Bu gerçekçilik düzeyinin, içerik oluşturma, tasarım ve araştırma gibi çeşitli uygulamalar için önemli etkileri vardır. 
+- ***Gerçekçi Görüntü Oluşturma:*** Model, genellikle insanların oluşturduklarından ayırt edilemeyen oldukça gerçekçi görüntüler üretme yeteneğine sahiptir. Bu gerçekçilik düzeyinin, içerik oluşturma, tasarım ve araştırma gibi çeşitli uygulamalar için önemli etkileri vardır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -59,19 +59,19 @@ url: /tr/imagen-3-yapay-zeka-destekli-resim-olusturma/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***İçerik Oluşturma:***   Imagen 3, web siteleri, sosyal medya ve pazarlama materyalleri için görseller de dahil olmak üzere çok çeşitli içerikler oluşturmak için kullanılabilir. Bu, hızlı bir şekilde yüksek kaliteli görseller üretebilen içerik oluşturucuları için zamandan ve kaynaklardan tasarruf sağlayabilir. 
+- ***İçerik Oluşturma:*** Imagen 3, web siteleri, sosyal medya ve pazarlama materyalleri için görseller de dahil olmak üzere çok çeşitli içerikler oluşturmak için kullanılabilir. Bu, hızlı bir şekilde yüksek kaliteli görseller üretebilen içerik oluşturucuları için zamandan ve kaynaklardan tasarruf sağlayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tasarım ve Prototipleme:***   Model, tasarımcıların fiziksel malzemelere veya geleneksel tasarım araçlarına ihtiyaç duymadan farklı fikirleri ve yinelemeleri keşfetmelerine olanak tanıyan tasarım konseptleri ve prototipleri oluşturmak için kullanılabilir. 
+- ***Tasarım ve Prototipleme:*** Model, tasarımcıların fiziksel malzemelere veya geleneksel tasarım araçlarına ihtiyaç duymadan farklı fikirleri ve yinelemeleri keşfetmelerine olanak tanıyan tasarım konseptleri ve prototipleri oluşturmak için kullanılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Araştırma ve Geliştirme:***   Imagen 3, bilgisayar görüşü, doğal dil işleme ve yapay zeka gibi çeşitli araştırma alanlarında kullanılabilir. Araştırmacıların dil ve görsel algı arasındaki ilişkiyi incelemelerine ve yapay zeka için yeni uygulamalar geliştirmelerine yardımcı olabilir. 
+- ***Araştırma ve Geliştirme:*** Imagen 3, bilgisayar görüşü, doğal dil işleme ve yapay zeka gibi çeşitli araştırma alanlarında kullanılabilir. Araştırmacıların dil ve görsel algı arasındaki ilişkiyi incelemelerine ve yapay zeka için yeni uygulamalar geliştirmelerine yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Eğitim ve Öğretim:***   Model, öğrenmeyi ve anlamayı geliştirebilecek çizimler ve diyagramlar gibi eğitim materyalleri oluşturmak için kullanılabilir. Ayrıca, nesne tanıma veya görüntü sınıflandırması gibi diğer görevlerde AI modellerini eğitmek için de kullanılabilir. 
+- ***Eğitim ve Öğretim:*** Model, öğrenmeyi ve anlamayı geliştirebilecek çizimler ve diyagramlar gibi eğitim materyalleri oluşturmak için kullanılabilir. Ayrıca, nesne tanıma veya görüntü sınıflandırması gibi diğer görevlerde AI modellerini eğitmek için de kullanılabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

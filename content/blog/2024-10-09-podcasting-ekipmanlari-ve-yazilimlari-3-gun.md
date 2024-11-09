@@ -46,33 +46,33 @@ url: /tr/podcasting-ekipmanlari-ve-yazilimlari-3-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***USB Mikrofonlar***  : Kullanım kolaylığı ve uygun fiyatı nedeniyle yeni başlayanlar için idealdir. Ek bir ekipmana ihtiyaç duymadan doğrudan bilgisayarınıza bağlanırlar. 
+- ***USB Mikrofonlar*** : Kullanım kolaylığı ve uygun fiyatı nedeniyle yeni başlayanlar için idealdir. Ek bir ekipmana ihtiyaç duymadan doğrudan bilgisayarınıza bağlanırlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Önerilen Modeller***  :<!-- wp:list -->
+- ***Önerilen Modeller*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Samson Q2U***  : Uygun fiyata harika ses kalitesi sunan çok yönlü bir USB/XLR mikrofon. 
+- ***Samson Q2U*** : Uygun fiyata harika ses kalitesi sunan çok yönlü bir USB/XLR mikrofon. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Blue Yeti***  : Çeşitli kayıt ortamlarına uygun olmasını sağlayan çoklu ses alma desenleri nedeniyle popülerdir. 
+- ***Blue Yeti*** : Çeşitli kayıt ortamlarına uygun olmasını sağlayan çoklu ses alma desenleri nedeniyle popülerdir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***XLR Mikrofonlar***  : Bunlar bir ses arabirimi veya mikser gerektirir, ancak üstün ses kalitesi ve esneklik sunarlar. 
+- ***XLR Mikrofonlar*** : Bunlar bir ses arabirimi veya mikser gerektirir, ancak üstün ses kalitesi ve esneklik sunarlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Önerilen Modeller***  :<!-- wp:list -->
+- ***Önerilen Modeller*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Shure SM7B***  : Zengin ses kalitesiyle bilinen profesyonel düzeyde bir mikrofon. 
+- ***Shure SM7B*** : Zengin ses kalitesiyle bilinen profesyonel düzeyde bir mikrofon. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Rode PodMic***  : Çoklu hoparlör kurulumları için uygun fiyatlı ve etkili. 
+- ***Rode PodMic*** : Çoklu hoparlör kurulumları için uygun fiyatlı ve etkili. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item --> 
@@ -88,15 +88,15 @@ url: /tr/podcasting-ekipmanlari-ve-yazilimlari-3-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Önerilen Modeller***  : 
+- ***Önerilen Modeller*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Audio-Technica ATH-M50x***  : Konforu ve doğru ses üretimiyle bilinir. 
+- ***Audio-Technica ATH-M50x*** : Konforu ve doğru ses üretimiyle bilinir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Beyerdynamic DT 700 Pro X***  : Konforu sayesinde uzun kayıt seansları için mükemmeldir. 
+- ***Beyerdynamic DT 700 Pro X*** : Konforu sayesinde uzun kayıt seansları için mükemmeldir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -110,20 +110,20 @@ url: /tr/podcasting-ekipmanlari-ve-yazilimlari-3-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Önerilen Modeller***  : 
+- ***Önerilen Modeller*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Focusrite Scarlett 2i2***  : Kalitesi ve kullanım kolaylığı ile oldukça beğenilen, iki adet XLR girişi bulunan bir model. 
+- ***Focusrite Scarlett 2i2*** : Kalitesi ve kullanım kolaylığı ile oldukça beğenilen, iki adet XLR girişi bulunan bir model. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***PreSonus AudioBox USB 96***  : Sağlam performans sunan, bütçe dostu bir seçenek. 
+- ***PreSonus AudioBox USB 96*** : Sağlam performans sunan, bütçe dostu bir seçenek. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 
- ### ***4. Kayıt  Yazılımı*** 
+ ### ***4. KayıtYazılımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -132,25 +132,25 @@ url: /tr/podcasting-ekipmanlari-ve-yazilimlari-3-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Ücretsiz Yazılım***  :<!-- wp:list -->
+- ***Ücretsiz Yazılım*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Audacity***  : Podcast yayıncıları tarafından yaygın olarak kullanılan, kullanıcı dostu, güçlü ve açık kaynaklı bir ses düzenleyicisi. 
+- ***Audacity*** : Podcast yayıncıları tarafından yaygın olarak kullanılan, kullanıcı dostu, güçlü ve açık kaynaklı bir ses düzenleyicisi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***GarageBand***  (Yalnızca Mac): Apple cihazlarıyla iyi entegre olan sezgisel bir seçenek. 
+- ***GarageBand*** (Yalnızca Mac): Apple cihazlarıyla iyi entegre olan sezgisel bir seçenek. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Ücretli Yazılımlar***  :<!-- wp:list -->
+- ***Ücretli Yazılımlar*** :<!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Adobe Audition***  : Profesyonel ses düzenleme için gelişmiş özellikler sunar ancak abonelik ücreti vardır. 
+- ***Adobe Audition*** : Profesyonel ses düzenleme için gelişmiş özellikler sunar ancak abonelik ücreti vardır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hindenburg Gazeteci***  : Hikaye anlatıcılığına odaklanan, özellikle podcaster'lar ve gazeteciler için tasarlanmıştır. 
+- ***Hindenburg Gazeteci*** : Hikaye anlatıcılığına odaklanan, özellikle podcaster'lar ve gazeteciler için tasarlanmıştır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item --> 
@@ -166,11 +166,11 @@ url: /tr/podcasting-ekipmanlari-ve-yazilimlari-3-gun/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Pop Filtreleri***  : Sesi bozabilecek patlayıcı sesleri (örneğin "p" ve "b") azaltmaya yardımcı olur. 
+- ***Pop Filtreleri*** : Sesi bozabilecek patlayıcı sesleri (örneğin "p" ve "b") azaltmaya yardımcı olur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Boom Kolları veya Standları***  : Çalışma alanınızı düzenli tutarken mikrofonunuzu rahatça konumlandırmanızı sağlar. 
+- ***Boom Kolları veya Standları*** : Çalışma alanınızı düzenli tutarken mikrofonunuzu rahatça konumlandırmanızı sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -17,7 +17,7 @@ classicmag_post_sidebar_option:
 date: "2016-09-18T17:58:00Z"
 excerpt: Bilgisayar veya Akıllı Telefon ekranına geç saatlere kadar baktıktan sonra
   uykuya dalma problemi yaşadığınız oluyor mu? Hemen hemen bütün ekranlar, kullanıcısına
-  doğala yakın bir görüntü sağlamak amacıyla gün ışığını taklit eder ve mavi ışık
+  doğala yakın bir görüntü sağlamak amacıylagün ışığını taklit eder ve mavi ışık
   yayarlar. Bu yayılan mavi ışığın bir yan etkisi de bulunmaktadır.
 guid: https://www.siberoloji.com/?p=1095
 id: 1095

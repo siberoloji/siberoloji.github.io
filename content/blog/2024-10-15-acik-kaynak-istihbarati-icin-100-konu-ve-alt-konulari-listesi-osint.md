@@ -32,7 +32,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
  
 
 
- ### 1. ***Sosyal Medya Analizi (örneğin Twitter, Facebook)*** 
+ ### 1.***Sosyal Medya Analizi (örneğin Twitter, Facebook)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -58,7 +58,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 2. ***Görüntülerden Coğrafi Konum Takibi*** 
+ ### 2.***Görüntülerden Coğrafi Konum Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -84,12 +84,12 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 3. ***Dosyalardan Meta Veri Çıkarımı*** 
+ ### 3.***Dosyalardan Meta Veri Çıkarımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- <a href="https://www.siberoloji.com/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Belgelerden</a> (PDF, Word, vb.) meta verilerinin çıkarılması 
+- <a href="https://www.siberoloji.com/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Belgelerden</a>(PDF, Word, vb.) meta verilerinin çıkarılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -110,12 +110,12 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 4. ***Sosyal Medya İzleme için OSINT Araçları*** 
+ ### 4.***Sosyal Medya İzleme için OSINT Araçları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- <a href="https://www.siberoloji.com/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Twitter veri toplama için açık kaynaklı araçlar</a> (örneğin Twint) 
+- <a href="https://www.siberoloji.com/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Twitter veri toplama için açık kaynaklı araçlar</a>(örneğin Twint) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -136,7 +136,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 5. ***OSINT için Web Kazıma Teknikleri*** 
+ ### 5.***OSINT için Web Kazıma Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -153,7 +153,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <a href="https://www.siberoloji.com/using-browser-based-tools-web-scraping-techniques-for-osint/" target="_blank" rel="noreferrer noopener">Tarayıcı tabanlı araçları kullanma</a> (örneğin Scrapy, Selenium) 
+- <a href="https://www.siberoloji.com/using-browser-based-tools-web-scraping-techniques-for-osint/" target="_blank" rel="noreferrer noopener">Tarayıcı tabanlı araçları kullanma</a>(örneğin Scrapy, Selenium) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -162,7 +162,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 6. ***Kolluk Kuvvetlerinde OSINT*** 
+ ### 6.***Kolluk Kuvvetlerinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -188,7 +188,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 7. ***Kamuya Açık Veritabanlarının Analizi*** 
+ ### 7.***Kamuya Açık Veritabanlarının Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -214,7 +214,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 8. ***OSINT kullanarak Kurumsal Casusluk*** 
+ ### 8.***OSINT kullanarak Kurumsal Casusluk*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -240,7 +240,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 9. ***Kripto Para İşlemlerinin Takibi*** 
+ ### 9.***Kripto Para İşlemlerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -266,7 +266,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 10. ***Dark Web OSINT Araştırmaları*** 
+ ### 10.***Dark Web OSINT Araştırmaları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -294,7 +294,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 11. ***Sahte Haber ve Yanlış Bilgi Tespiti*** 
+ ### 11.***Sahte Haber ve Yanlış Bilgi Tespiti*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -307,7 +307,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Görüntünün gerçekliğini doğrulamak için ters görüntü  araması yapın 
+- Görüntünün gerçekliğini doğrulamak içinters görüntüaraması yapın 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -320,7 +320,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 12. ***Siber Güvenlik Tehdit Avı için OSINT*** 
+ ### 12.***Siber Güvenlik Tehdit Avı için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -346,7 +346,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 13. ***Nakliye ve Deniz Trafiğini Takip Etme*** 
+ ### 13.***Nakliye ve Deniz Trafiğini Takip Etme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -372,7 +372,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 14. ***Hava Trafiğini İzlemek İçin OSINT (ADS-B)*** 
+ ### 14.***Hava Trafiğini İzlemek İçin OSINT (ADS-B)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -398,7 +398,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 15. ***Gazetecilik için OSINT ve Açık Veri*** 
+ ### 15.***Gazetecilik için OSINT ve Açık Veri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -426,7 +426,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 16. ***Sahte Sosyal Medya Hesaplarını Belirleme*** 
+ ### 16.***Sahte Sosyal Medya Hesaplarını Belirleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -452,7 +452,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 17. ***Kamuya Açık Uydu Görüntülerinin Analizi*** 
+ ### 17.***Kamuya Açık Uydu Görüntülerinin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -478,7 +478,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 18. ***Gizli veya Arşivlenmiş Web Sayfalarını Arama*** 
+ ### 18.***Gizli veya Arşivlenmiş Web Sayfalarını Arama*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -504,7 +504,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 19. ***OSINT ve Kişisel Veri Gizliliği*** 
+ ### 19.***OSINT ve Kişisel Veri Gizliliği*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -530,12 +530,12 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 20. ***Ters Görüntü Arama Teknikleri*** 
+ ### 20.***Ters Görüntü Arama Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- TinEye ve Google Görsel  Arama gibi araçları kullanma 
+- TinEye ve Google GörselArama gibi araçları kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -558,7 +558,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 21. ***Savunmasız IoT Cihazlarını Bulma*** 
+ ### 21.***Savunmasız IoT Cihazlarını Bulma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -584,7 +584,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 22. ***OSINT kullanarak Sosyal Mühendislik*** 
+ ### 22.***OSINT kullanarak Sosyal Mühendislik*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -610,7 +610,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 23. ***OSINT Kullanarak Siyasi Kampanya İzleme*** 
+ ### 23.***OSINT Kullanarak Siyasi Kampanya İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -636,7 +636,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 24. ***Askeri ve İstihbarat Teşkilatlarında OSINT*** 
+ ### 24.***Askeri ve İstihbarat Teşkilatlarında OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -662,7 +662,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 25. ***Çevrimiçi Dolandırıcılığın Araştırılması*** 
+ ### 25.***Çevrimiçi Dolandırıcılığın Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -690,7 +690,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 26. ***Alan Adı Bilgilerini Arama (WHOIS, DNS)*** 
+ ### 26.***Alan Adı Bilgilerini Arama (WHOIS, DNS)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -716,7 +716,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 27. ***Sızdırılan Kimlik Bilgilerini Çevrimiçi Bulma*** 
+ ### 27.***Sızdırılan Kimlik Bilgilerini Çevrimiçi Bulma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -742,7 +742,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 28. ***Finansal Suçları Araştırmak İçin OSINT*** 
+ ### 28.***Finansal Suçları Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -768,7 +768,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 29. ***OSINT ve İnsani Yardım*** 
+ ### 29.***OSINT ve İnsani Yardım*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -794,7 +794,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 30. ***OSINT için Hükümet Veritabanları*** 
+ ### 30.***OSINT için Hükümet Veritabanları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -820,7 +820,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 31. ***Bitcoin Cüzdan Aktivitesini İzleme*** 
+ ### 31.***Bitcoin Cüzdan Aktivitesini İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -846,7 +846,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 32. ***Güvenlik Açıkları İçin Kod Depolarının (örneğin GitHub) Analizi*** 
+ ### 32.***Güvenlik Açıkları İçin Kod Depolarının (örneğin GitHub) Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -872,7 +872,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 33. ***OSINT kullanarak Gerçek Zamanlı Olayların İzlenmesi*** 
+ ### 33.***OSINT kullanarak Gerçek Zamanlı Olayların İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -893,12 +893,12 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Birden fazla kaynaktan gelen gerçek zamanlı olayları tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması 
+- Birden fazla kaynaktan gelen gerçek zamanlı olayları tespit etmek için<a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#">yapay zekanın</a>kullanılması 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 
- ### 34. ***Çevrimiçi Tacizi Araştırmak*** 
+ ### 34.***Çevrimiçi Tacizi Araştırmak*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -924,7 +924,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 35. ***OSINT ile Açık Kaynaklı Gözetim*** 
+ ### 35.***OSINT ile Açık Kaynaklı Gözetim*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -952,7 +952,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 36. ***OSINT için Veri Madenciliği Teknikleri*** 
+ ### 36.***OSINT için Veri Madenciliği Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -978,7 +978,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 37. ***OSINT ve Terörle Mücadele*** 
+ ### 37.***OSINT ve Terörle Mücadele*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1004,7 +1004,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 38. ***Çevrimiçi Dezenformasyon Kampanyaları*** 
+ ### 38.***Çevrimiçi Dezenformasyon Kampanyaları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1030,7 +1030,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 39. ***Telefon Numaralarının Takibi (Telekom için OSINT)*** 
+ ### 39.***Telefon Numaralarının Takibi (Telekom için OSINT)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1056,7 +1056,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 40. ***Haber Sitelerindeki Kamu Yorumlarının Analizi*** 
+ ### 40.***Haber Sitelerindeki Kamu Yorumlarının Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1084,7 +1084,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 41. ***Kamuya Açık Mahkeme Kayıtları ve Yasal Veriler*** 
+ ### 41.***Kamuya Açık Mahkeme Kayıtları ve Yasal Veriler*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1110,7 +1110,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 42. ***Şirketler İçin Risk Değerlendirmesinde OSINT*** 
+ ### 42.***Şirketler İçin Risk Değerlendirmesinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1136,7 +1136,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 43. ***OSINT Kullanarak Finansal Piyasaların İzlenmesi*** 
+ ### 43.***OSINT Kullanarak Finansal Piyasaların İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1162,7 +1162,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 44. ***OSINT ve Aktivizm Hareketleri*** 
+ ### 44.***OSINT ve Aktivizm Hareketleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1188,7 +1188,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 45. ***Kripto Para Blok Zincirlerinin Analizi*** 
+ ### 45.***Kripto Para Blok Zincirlerinin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1216,7 +1216,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
 
- ### 46. ***​​Web Uygulaması Güvenlik Açığı Tanımlaması*** 
+ ### 46.***​​Web Uygulaması Güvenlik Açığı Tanımlaması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1242,7 +1242,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 47. ***İçeriden Tehdit Algılama için OSINT*** 
+ ### 47.***İçeriden Tehdit Algılama için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1268,7 +1268,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 48. ***Uluslararası Diplomasi'de OSINT*** 
+ ### 48.***Uluslararası Diplomasi'de OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1294,7 +1294,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 49. ***Seyahat Rotalarının ve Yolcu Verilerinin Takibi*** 
+ ### 49.***Seyahat Rotalarının ve Yolcu Verilerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1320,7 +1320,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 50. ***OSINT için Genel API'lerin Analizi*** 
+ ### 50.***OSINT için Genel API'lerin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1346,7 +1346,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 51. ***Kritik Altyapıyı Korumada OSINT*** 
+ ### 51.***Kritik Altyapıyı Korumada OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1372,7 +1372,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 52. ***Kamuya Açık Ulaşım ve Trafik Verileri*** 
+ ### 52.***Kamuya Açık Ulaşım ve Trafik Verileri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1398,7 +1398,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 53. ***Desen Tanıma için OSINT ve AI*** 
+ ### 53.***Desen Tanıma için OSINT ve AI*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1415,7 +1415,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Açık kaynaklı verilerle <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> AI</a> modellerinin eğitilmesi 
+- Açık kaynaklı verilerle<a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#">AI</a>modellerinin eğitilmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -1424,7 +1424,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 54. ***OSINT için Yüz Tanıma Araçları*** 
+ ### 54.***OSINT için Yüz Tanıma Araçları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1450,7 +1450,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 55. ***OSINT Kullanarak İklim Değişikliği Verilerinin İzlenmesi*** 
+ ### 55.***OSINT Kullanarak İklim Değişikliği Verilerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1476,7 +1476,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 56. ***İnsan Ticareti Soruşturmalarında OSINT*** 
+ ### 56.***İnsan Ticareti Soruşturmalarında OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1502,7 +1502,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 57. ***OSINT'te Yapay Zeka ve Makine Öğrenmesinin Kullanımı*** 
+ ### 57.***OSINT'te Yapay Zeka ve Makine Öğrenmesinin Kullanımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1528,7 +1528,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 58. ***Dijital Ayak İzi Azaltma için OSINT*** 
+ ### 58.***Dijital Ayak İzi Azaltma için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1554,7 +1554,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 59. ***Akademik Araştırmada OSINT*** 
+ ### 59.***Akademik Araştırmada OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1580,7 +1580,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 60. ***Hacktivist Hareketlerin İzlenmesi*** 
+ ### 60.***Hacktivist Hareketlerin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1606,7 +1606,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 61. ***Siyasi Bağış ve Finansmanların Araştırılması*** 
+ ### 61.***Siyasi Bağış ve Finansmanların Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1632,7 +1632,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 62. ***Sahte İncelemeleri ve Yorumları Çevrimiçi İzleme*** 
+ ### 62.***Sahte İncelemeleri ve Yorumları Çevrimiçi İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1658,7 +1658,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 63. ***OSINT için Halk Sağlığı Verilerinin İzlenmesi*** 
+ ### 63.***OSINT için Halk Sağlığı Verilerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1684,7 +1684,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 64. ***OSINT ile Yaban Hayatı Kaçakçılığının İzlenmesi*** 
+ ### 64.***OSINT ile Yaban Hayatı Kaçakçılığının İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1710,7 +1710,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 65. ***Sahte Haber Sitelerinin Araştırılması*** 
+ ### 65.***Sahte Haber Sitelerinin Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1736,7 +1736,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 66. ***Suç Ağlarını İzlemek İçin OSINT*** 
+ ### 66.***Suç Ağlarını İzlemek İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1762,7 +1762,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 67. ***Çalınan Sanat Eserleri ve Kültürel Varlıkların Araştırılması*** 
+ ### 67.***Çalınan Sanat Eserleri ve Kültürel Varlıkların Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1788,7 +1788,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 68. ***Kamusal Veriler Aracılığıyla Organize Suçun Takibi*** 
+ ### 68.***Kamusal Veriler Aracılığıyla Organize Suçun Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1814,7 +1814,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 69. ***Finansal Dolandırıcılıkları Araştırmak İçin OSINT*** 
+ ### 69.***Finansal Dolandırıcılıkları Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1840,7 +1840,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 70. ***Uluslararası Yaptırımların ve Uyumluluğun Takibi*** 
+ ### 70.***Uluslararası Yaptırımların ve Uyumluluğun Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1866,7 +1866,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 71. ***OSINT Aracılığıyla Terör Finansmanının İzlenmesi*** 
+ ### 71.***OSINT Aracılığıyla Terör Finansmanının İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1892,7 +1892,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 72. ***İş Panolarını ve İşe Alma Web Sitelerini Tarama*** 
+ ### 72.***İş Panolarını ve İşe Alma Web Sitelerini Tarama*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1918,7 +1918,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 73. ***OSINT için Kamu Patent Veritabanlarının Kullanımı*** 
+ ### 73.***OSINT için Kamu Patent Veritabanlarının Kullanımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1944,7 +1944,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 74. ***Kamu İhale Sözleşmelerinin Takibi*** 
+ ### 74.***Kamu İhale Sözleşmelerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1970,7 +1970,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 75. ***Nakliye Konteynerleri ve Kargo Takibi*** 
+ ### 75.***Nakliye Konteynerleri ve Kargo Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -1996,7 +1996,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 76. ***Çevre Koruması için OSINT'in İzlenmesi*** 
+ ### 76.***Çevre Koruması için OSINT'in İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2022,7 +2022,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 77. ***OSINT için Havayolu Verilerinin Kazınması*** 
+ ### 77.***OSINT için Havayolu Verilerinin Kazınması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2048,7 +2048,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 78. ***Uyuşturucu Kaçakçılığının Takibinde OSINT*** 
+ ### 78.***Uyuşturucu Kaçakçılığının Takibinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2074,7 +2074,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 79. ***Siyasi Etki Operasyonlarının Takibi*** 
+ ### 79.***Siyasi Etki Operasyonlarının Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2100,7 +2100,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 80. ***OSINT için Emlak Web Sitelerini Kazıma*** 
+ ### 80.***OSINT için Emlak Web Sitelerini Kazıma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2126,7 +2126,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 81. ***Protesto ve Gösterileri İzlemek İçin OSINT*** 
+ ### 81.***Protesto ve Gösterileri İzlemek İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2152,7 +2152,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 82. ***OSINT ile Finansal Piyasaların Takibi*** 
+ ### 82.***OSINT ile Finansal Piyasaların Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2178,7 +2178,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 83. ***OSINT için Genel Olarak Kullanılabilir API'leri Kullanma*** 
+ ### 83.***OSINT için Genel Olarak Kullanılabilir API'leri Kullanma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2204,7 +2204,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 84. ***Çevrimiçi Nefret Söylemi ve Aşırılığın İzlenmesi*** 
+ ### 84.***Çevrimiçi Nefret Söylemi ve Aşırılığın İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2221,7 +2221,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- Çevrimiçi nefret söylemi kalıplarını tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması 
+- Çevrimiçi nefret söylemi kalıplarını tespit etmek için<a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#">yapay zekanın</a>kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -2230,7 +2230,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 85. ***Çevrimiçi İncelemeleri ve Tüketici Geri Bildirimlerini Araştırma*** 
+ ### 85.***Çevrimiçi İncelemeleri ve Tüketici Geri Bildirimlerini Araştırma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2256,7 +2256,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 86. ***OSINT ile Silah Ticaretinin Takibi*** 
+ ### 86.***OSINT ile Silah Ticaretinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2282,7 +2282,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 87. ***Sahte Web Sitelerini Belirlemek İçin OSINT*** 
+ ### 87.***Sahte Web Sitelerini Belirlemek İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2308,7 +2308,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 88. ***Yasadışı Mallar İçin Çevrimiçi Pazar Yerlerinin İzlenmesi*** 
+ ### 88.***Yasadışı Mallar İçin Çevrimiçi Pazar Yerlerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2334,7 +2334,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 89. ***OSINT için Küresel Ticaret Verilerinin Takibi*** 
+ ### 89.***OSINT için Küresel Ticaret Verilerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2360,7 +2360,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 90. ***Hükümet Şeffaflık Web Sitelerini Kazıma*** 
+ ### 90.***Hükümet Şeffaflık Web Sitelerini Kazıma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2412,7 +2412,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 92. ***Kripto Para Hırsızlığını Araştırmak İçin OSINT*** 
+ ### 92.***Kripto Para Hırsızlığını Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2438,7 +2438,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 93. ***OSINT kullanarak Halk Sağlığı Eğilimlerinin İzlenmesi*** 
+ ### 93.***OSINT kullanarak Halk Sağlığı Eğilimlerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2464,7 +2464,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 94. ***Tedarik Zinciri Güvenliği için OSINT Kullanımı*** 
+ ### 94.***Tedarik Zinciri Güvenliği için OSINT Kullanımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2490,7 +2490,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 95. ***Seçim Kampanyaları İçin Sosyal Medyayı Kazıma*** 
+ ### 95.***Seçim Kampanyaları İçin Sosyal Medyayı Kazıma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2516,7 +2516,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 96. ***İnternet Sansürünün ve Gözetiminin Takibi*** 
+ ### 96.***İnternet Sansürünün ve Gözetiminin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2542,7 +2542,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 97. ***OSINT Kullanılarak Vergi Kaçakçılığının Araştırılması*** 
+ ### 97.***OSINT Kullanılarak Vergi Kaçakçılığının Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2568,7 +2568,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 98. ***Yolsuzluğu Araştırmak İçin OSINT*** 
+ ### 98.***Yolsuzluğu Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2594,7 +2594,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 99. ***OSINT ile Dark Web Etkinliğini İzleme*** 
+ ### 99.***OSINT ile Dark Web Etkinliğini İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
@@ -2620,7 +2620,7 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 <!-- /wp:list -->
 
 
- ### 100. ***Sahte Şirketleri Araştırmak İçin OSINT*** 
+ ### 100.***Sahte Şirketleri Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->

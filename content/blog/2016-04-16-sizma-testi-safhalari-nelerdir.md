@@ -18,7 +18,7 @@ date: "2016-04-16T16:02:00Z"
 excerpt: Kullanılan bilişim sisteminin mevcut durumu ve alınması gereken tedbirleri
   belirlemek amacıyla yapılan testlere Sızma Testi (Penetration Test) adı verilmektedir.
   Sızma Testi olarak ifade edilen süreç 7 safhadan oluşur. Sızma Testi Safhaları,
-  bazen net olarak birbirinden ayrılmasa da karakter olarak önemli farlılıklar da 
+  bazen net olarak birbirinden ayrılmasa da karakter olarak önemli farlılıklar da
   ihtiva etmektedirler.
 guid: https://www.siberoloji.com/?p=1049
 id: 1049

@@ -363,5 +363,5 @@ scope:
   By following best practices and understanding its capabilities and limitations, security professionals can leverage Amass to perform thorough reconnaissance while maintaining efficiency and accuracy in their security assessments.
  
 
-  Remember to regularly update Amass and stay informed about new features and improvements, as the tool continues to evolve with the changing landscape of network security. You may want to look at our <a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a> page.
+  Remember to regularly update Amass and stay informed about new features and improvements, as the tool continues to evolve with the changing landscape of network security. You may want to look at our<a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a>page.
  

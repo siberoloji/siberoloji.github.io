@@ -223,7 +223,7 @@ Matching Modules
 </code></pre>
 <!-- /wp:code -->
 
-  Metasploit Framework çok sık güncelleme almaktadır. Paket deposu sisteminize eklendiğinden <code>apt update</code> ile veya msfconsole içerisinden <code>msfupdate</code> komutu ile güncelleyebilirsiniz. 
+  Metasploit Framework çok sık güncelleme almaktadır. Paket deposu sisteminize eklendiğinden<code>apt update</code>ile veya msfconsole içerisinden<code>msfupdate</code>komutu ile güncelleyebilirsiniz. 
  
 
 <!-- wp:embed {"url":"https://youtu.be/FZvrukt9B-c?si=SWDikQ-DR0E34dDk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

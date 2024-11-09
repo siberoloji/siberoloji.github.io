@@ -23,7 +23,7 @@ image: /assets/images/2024/10/programming.webp
 tags:
 - computer engineering
 title: Categorized List Of Lessons And Subtopics For A Computer Engineering Department
-  Curriculum. 
+  Curriculum.
 url: /categorized-list-of-lessons-and-subtopics-for-a-computer-engineering-department-curriculum/
 ---
 

@@ -40,15 +40,15 @@ url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Çevrimiçi Faaliyetlerin İzlenmesi***  : Analistler, ilgili hashtag'leri veya tartışmaları toplayarak sosyal medya platformları veya forumlarındaki kamuoyunun görüşünü takip edebilir. 
+- ***Çevrimiçi Faaliyetlerin İzlenmesi*** : Analistler, ilgili hashtag'leri veya tartışmaları toplayarak sosyal medya platformları veya forumlarındaki kamuoyunun görüşünü takip edebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Siber Güvenlik İstihbaratı***  : Web kazıma, sızdırılan kimlik bilgileri veya siber tehditler için karanlık web etkinliklerini izlemek amacıyla kullanılabilir ve bu sayede kuruluşların güvenlik açıklarını proaktif bir şekilde ele almasına olanak tanır[1][4]. 
+- ***Siber Güvenlik İstihbaratı*** : Web kazıma, sızdırılan kimlik bilgileri veya siber tehditler için karanlık web etkinliklerini izlemek amacıyla kullanılabilir ve bu sayede kuruluşların güvenlik açıklarını proaktif bir şekilde ele almasına olanak tanır[1][4]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pazar Araştırması***  : İşletmeler, e-ticaret sitelerinden ürün listelerini ve yorumlarını toplayarak rakip içgörüleri ve pazar eğilimleri hakkında bilgi toplayabilirler. 
+- ***Pazar Araştırması*** : İşletmeler, e-ticaret sitelerinden ürün listelerini ve yorumlarını toplayarak rakip içgörüleri ve pazar eğilimleri hakkında bilgi toplayabilirler. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -63,7 +63,7 @@ url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 <h4 class="wp-block-heading">1. Veri Alma ve Ayrıştırma 
 <!-- /wp:heading -->
 
- <p>Web kazıma işleminin ilk adımı, HTML içeriğini almak için hedef web sitesine HTTP istekleri göndermektir. Bu genellikle Python'un gibi kütüphaneler kullanılarak yapılır <code>requests</code>. HTML elde edildikten sonra, belirli veri noktalarını çıkarmak için <code>BeautifulSoup</code> veya <code>lxml</code> gibi ayrıştırma kütüphaneleri kullanılabilir[1][3].
+ <p>Web kazıma işleminin ilk adımı, HTML içeriğini almak için hedef web sitesine HTTP istekleri göndermektir. Bu genellikle Python'un gibi kütüphaneler kullanılarak yapılır<code>requests</code>. HTML elde edildikten sonra, belirli veri noktalarını çıkarmak için<code>BeautifulSoup</code> veya <code>lxml</code> gibi ayrıştırma kütüphaneleri kullanılabilir[1][3].
  
 
 <!-- wp:heading {"level":4} -->
@@ -89,23 +89,23 @@ url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***BeautifulSoup***  : HTML ayrıştırmayı kolaylaştıran bir Python kütüphanesi. 
+- ***BeautifulSoup*** : HTML ayrıştırmayı kolaylaştıran bir Python kütüphanesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Selenium***  : Dinamik web içeriğiyle etkileşime izin veren bir tarayıcı otomasyon aracıdır. 
+- ***Selenium*** : Dinamik web içeriğiyle etkileşime izin veren bir tarayıcı otomasyon aracıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Scrapy***  : Web kazıyıcılarını hızlı bir şekilde oluşturmak için açık kaynaklı bir çerçeve. 
+- ***Scrapy*** : Web kazıyıcılarını hızlı bir şekilde oluşturmak için açık kaynaklı bir çerçeve. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Octoparse***  : Kodlama bilgisi gerektirmeyen, kullanıcı dostu görsel bir araçtır. 
+- ***Octoparse*** : Kodlama bilgisi gerektirmeyen, kullanıcı dostu görsel bir araçtır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***ParseHub***  : Karmaşık web sitelerini işleyebilen bir diğer görsel kazıyıcı. 
+- ***ParseHub*** : Karmaşık web sitelerini işleyebilen bir diğer görsel kazıyıcı. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -149,15 +149,15 @@ url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Duygu Analizi***  : Analistler, belirli konulardaki sosyal medya gönderilerini veya yorumlarını toplayarak kamuoyunun fikrini ölçebilir ve eğilimleri belirleyebilir. 
+- ***Duygu Analizi*** : Analistler, belirli konulardaki sosyal medya gönderilerini veya yorumlarını toplayarak kamuoyunun fikrini ölçebilir ve eğilimleri belirleyebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Coğrafi Konum Takibi***  : Sosyal medyadan konuma dayalı verilerin toplanması, belirli olaylara veya kişilere ilişkin hareketlerin veya faaliyetlerin anlaşılmasına yardımcı olabilir. 
+- ***Coğrafi Konum Takibi*** : Sosyal medyadan konuma dayalı verilerin toplanması, belirli olaylara veya kişilere ilişkin hareketlerin veya faaliyetlerin anlaşılmasına yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Meta Veri Çıkarımı***  : Belgelerden veya görüntülerden meta verilerin analiz edilmesi, araştırmalar için kritik olabilecek gizli bilgileri ortaya çıkarabilir[1][2]. 
+- ***Meta Veri Çıkarımı*** : Belgelerden veya görüntülerden meta verilerin analiz edilmesi, araştırmalar için kritik olabilecek gizli bilgileri ortaya çıkarabilir[1][2]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -170,15 +170,15 @@ url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gizlilik Endişeleri***  : Analistler, onay olmaksızın kişisel bilgi toplama konusunda dikkatli olmalıdır. 
+- ***Gizlilik Endişeleri*** : Analistler, onay olmaksızın kişisel bilgi toplama konusunda dikkatli olmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Koruma Yasaları***  : Belirli yargı bölgelerindeki bireylere ait verileri işlerken GDPR gibi düzenlemelere uymak önemlidir. 
+- ***Veri Koruma Yasaları*** : Belirli yargı bölgelerindeki bireylere ait verileri işlerken GDPR gibi düzenlemelere uymak önemlidir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yapay Zekanın Sorumlu Kullanımı***  : Yapay zeka araçlarının tarama sürecine entegre edilmesi durumunda, bütünlüğün korunması ve kötüye kullanımın önlenmesi için sorumlu kullanımın sağlanması hayati önem taşımaktadır[2][5]. 
+- ***Yapay ZekanınSorumlu Kullanımı*** : Yapay zeka araçlarının tarama sürecine entegre edilmesi durumunda, bütünlüğün korunması ve kötüye kullanımın önlenmesi için sorumlu kullanımın sağlanması hayati önem taşımaktadır[2][5]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

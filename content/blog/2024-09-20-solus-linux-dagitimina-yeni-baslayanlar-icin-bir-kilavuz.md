@@ -27,7 +27,7 @@ title: 'Solus Linux: Performans ve Sadelik'
 url: /tr/solus-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/
 ---
 
-  Temiz, verimli ve yeni başlayanlara uygun bir işletim sistemi arayan bir Linux kullanıcısıysanız, ***Solus  Linux dağıtımı***  mükemmel bir seçimdir. Solus, Linux ekosisteminde nispeten yeni bir oyuncudur ancak kullanıcı arayüzü, performansı ve sadeliğiyle yenilik getirmektedir. Sıfırdan, diğer dağıtımlardan bağımsız olarak oluşturulmuştur ve masaüstleri için iyi optimize edilmiştir, bu da onu Windows veya macOS gibi diğer işletim sistemlerinden geçiş yapan kişiler için mükemmel bir giriş noktası yapar. 
+  Temiz, verimli ve yeni başlayanlara uygun bir işletim sistemi arayan birLinuxkullanıcısıysanız,***SolusLinux dağıtımı*** mükemmel bir seçimdir. Solus, Linux ekosisteminde nispeten yeni bir oyuncudur ancak kullanıcı arayüzü, performansı ve sadeliğiyle yenilik getirmektedir. Sıfırdan, diğer dağıtımlardan bağımsız olarak oluşturulmuştur ve masaüstleri için iyi optimize edilmiştir, bu da onu Windows veya macOS gibi diğer işletim sistemlerinden geçiş yapan kişiler için mükemmel bir giriş noktası yapar. 
  
 
   Bu blog yazısında, <a href="https://getsol.us" target="_blank" rel="noopener" title="Solus Linux">Solus Linux</a> dağıtımının temellerini ele alacağız ve yeni başlayanlar için neden harika bir seçenek olduğunu açıklayacağız. Özelliklerini, nasıl yükleneceğini ve bilgi işlem deneyiminizi daha iyi ve daha verimli hale getirecek yazılıma nasıl başlayacağınızı öğreneceksiniz. 

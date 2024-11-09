@@ -45,7 +45,7 @@ url: /a-deep-dive-into-semrush-mastering-the-digital-landscape/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Backlink Analysis:***  Track <a href="https://www.siberoloji.com/what-is-the-importance-of-backlinks/" target="_blank" rel="noopener" title="">backlinks</a> to your website and identify opportunities for building new ones. 
+- ***Backlink Analysis:*** Track <a href="https://www.siberoloji.com/what-is-the-importance-of-backlinks/" target="_blank" rel="noopener" title="">backlinks</a> to your website and identify opportunities for building new ones. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

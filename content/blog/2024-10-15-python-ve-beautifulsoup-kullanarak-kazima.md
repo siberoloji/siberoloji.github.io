@@ -70,11 +70,11 @@ url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Verilere API'ler aracılığıyla kolayca erişilemez***  : Birçok web sitesi veri erişimi için API'ler (Uygulama Programlama Arayüzleri) sağlamaz ve bu da veri kazımayı tek seçenek haline getirir. 
+- ***Verilere API'ler aracılığıyla kolayca erişilemez*** : Birçok web sitesi veri erişimi için API'ler (Uygulama Programlama Arayüzleri) sağlamaz ve bu da veri kazımayı tek seçenek haline getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Büyük hacimli verilerin toplanması***  : Veri toplama, manuel olarak yapılması zaman alıcı olacak olan verilerin birden fazla web sayfasından etkin bir şekilde toplanmasını sağlar. 
+- ***Büyük hacimli verilerin toplanması*** : Veri toplama, manuel olarak yapılması zaman alıcı olacak olan verilerin birden fazla web sayfasından etkin bir şekilde toplanmasını sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -87,19 +87,19 @@ url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Siber Güvenlik***  : Hacker forumlarını ve karanlık web pazar yerlerini tarayarak tehditleri tespit etmek. 
+- ***Siber Güvenlik*** : Hacker forumlarını ve karanlık web pazar yerlerini tarayarak tehditleri tespit etmek. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kolluk kuvvetleri***  : Cezai soruşturmalar için çevrimiçi faaliyetlerin izlenmesi. 
+- ***Kolluk kuvvetleri*** : Cezai soruşturmalar için çevrimiçi faaliyetlerin izlenmesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gazetecilik***  : Araştırmacı gazetecilik amacıyla birden fazla haber kuruluşundan bilgi toplamak. 
+- ***Gazetecilik*** : Araştırmacı gazetecilik amacıyla birden fazla haber kuruluşundan bilgi toplamak. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Rekabet İstihbaratı***  : Rakiplerin web sitesi güncellemelerini, fiyat değişikliklerini veya yeni ürün lansmanlarını takip etme. 
+- ***Rekabet İstihbaratı*** : Rakiplerin web sitesi güncellemelerini, fiyat değişikliklerini veya yeni ürün lansmanlarını takip etme. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -120,15 +120,15 @@ url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Hizmet Şartları (ToS)***  : Birçok web sitesi, ToS'larında kazımanın izin verilip verilmediğini açıkça belirtir. Bir web sitesinin ToS'unu ihlal etmek, hesabın askıya alınması, yasal işlem veya durdurma ve vazgeçme emirleri gibi yasal sonuçlara yol açabilir. 
+- ***Hizmet Şartları (ToS)*** : Birçok web sitesi, ToS'larında kazımanın izin verilip verilmediğini açıkça belirtir. Bir web sitesinin ToS'unu ihlal etmek, hesabın askıya alınması, yasal işlem veya durdurma ve vazgeçme emirleri gibi yasal sonuçlara yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Telif Hakkı***  : Belirli türdeki içeriklerin (telif hakkıyla korunan metinler, resimler veya veritabanları gibi) izinsiz olarak kopyalanması fikri mülkiyet haklarını ihlal edebilir. 
+- ***Telif Hakkı*** : Belirli türdeki içeriklerin (telif hakkıyla korunan metinler, resimler veya veritabanları gibi) izinsiz olarak kopyalanması fikri mülkiyet haklarını ihlal edebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Gizliliği Yasaları***  : Avrupa'daki ***Genel Veri Koruma Yönetmeliği (GDPR)***  ve ABD'deki ***Kaliforniya Tüketici Gizlilik Yasası (CCPA)***  gibi düzenlemeler, kişisel verilerin nasıl toplanabileceği, saklanabileceği ve işlenebileceği konusunda katı kurallar getirir. Kişisel verileri rıza olmadan toplamak bu yasaları ihlal edebilir. 
+- ***Veri Gizliliği Yasaları*** : Avrupa'daki***Genel Veri Koruma Yönetmeliği (GDPR)*** ve ABD'deki***Kaliforniya Tüketici Gizlilik Yasası (CCPA)*** gibi düzenlemeler, kişisel verilerin nasıl toplanabileceği, saklanabileceği ve işlenebileceği konusunda katı kurallar getirir. Kişisel verileri rıza olmadan toplamak bu yasaları ihlal edebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -138,11 +138,11 @@ url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Kullanıcı Gizliliğine Saygı***  : Veriler kamuya açık olsa bile, özellikle hassas veriler söz konusu olduğunda kişisel bilgilerin toplanması etik kaygılara yol açabilir. 
+- ***Kullanıcı Gizliliğine Saygı*** : Veriler kamuya açık olsa bile, özellikle hassas veriler söz konusu olduğunda kişisel bilgilerin toplanması etik kaygılara yol açabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Kötüye Kullanımından Kaçınma***  : Toplanan veriler yalnızca araştırma, soruşturma veya rekabet analizi gibi meşru ve etik amaçlar için kullanılmalıdır. Toplanan verilerin taciz, istismar veya yasa dışı amaçlar için kötüye kullanılması etik dışıdır. 
+- ***Veri Kötüye Kullanımından Kaçınma*** : Toplanan veriler yalnızca araştırma, soruşturma veya rekabet analizi gibi meşru ve etik amaçlar için kullanılmalıdır. Toplanan verilerin taciz, istismar veya yasa dışı amaçlar için kötüye kullanılması etik dışıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -166,15 +166,15 @@ url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Öğrenmesi Kolay***  : Python'un basit söz dizimi, onu programcı olmayanlar için bile yeni başlayanların kullanımına uygun hale getirir. 
+- ***Öğrenmesi Kolay*** : Python'un basit söz dizimi, onu programcı olmayanlar için bile yeni başlayanların kullanımına uygun hale getirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kapsamlı Kütüphaneler***  : Python , web kazıma için ***BeautifulSoup***  , ***Scrapy***  ve ***Selenium***  gibi kütüphaneler sunar ; her biri farklı ihtiyaçlara göre uyarlanmıştır. 
+- ***Kapsamlı Kütüphaneler*** : Python , web kazıma için***BeautifulSoup*** ,***Scrapy*** ve***Selenium*** gibi kütüphaneler sunar ; her biri farklı ihtiyaçlara göre uyarlanmıştır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Topluluk Desteği***  : Python'un geniş ve aktif bir topluluğu vardır; bu da sorun giderme için bol miktarda dokümantasyon, eğitim ve forum bulunduğu anlamına gelir. 
+- ***Topluluk Desteği*** : Python'un geniş ve aktif bir topluluğu vardır; bu da sorun giderme için bol miktarda dokümantasyon, eğitim ve forum bulunduğu anlamına gelir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -334,23 +334,23 @@ with open('headlines.csv', 'w', newline='') as file:
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Web Sitesinin Hizmet Şartlarına Saygı Gösterin***  : Web sitesinin taramaya izin verip vermediğini her zaman kontrol edin ve sitenin hangi bölümlerinin taranabileceğini gösteren robots.txt dosyasına saygı gösterin. 
+- ***Web Sitesinin Hizmet Şartlarına Saygı Gösterin*** : Web sitesinin taramaya izin verip vermediğini her zaman kontrol edin ve sitenin hangi bölümlerinin taranabileceğini gösteren robots.txt dosyasına saygı gösterin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İstekleri Kısıtlayın***  : Kısa bir süre içinde çok fazla istekle bir web sitesini boğmayın. İnsan tarama davranışını taklit etmek için istekler arasında gecikmeler uygulayın. 
+- ***İstekleri Kısıtlayın*** : Kısa bir süre içinde çok fazla istekle bir web sitesini boğmayın. İnsan tarama davranışını taklit etmek için istekler arasında gecikmeler uygulayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Proxy Kullanın***  : Aynı siteden birden fazla sayfa topluyorsanız, IP yasaklarından kaçınmak için dönüşümlü proxy'ler kullanın. 
+- ***Proxy Kullanın*** : Aynı siteden birden fazla sayfa topluyorsanız, IP yasaklarından kaçınmak için dönüşümlü proxy'ler kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri Gizliliği Yasalarına Uygun Olun***  : Özellikle kişisel verilerle uğraşırken, veri toplama faaliyetlerinizin veri gizliliği düzenlemelerine uygun olduğundan emin olun. 
+- ***Veri Gizliliği Yasalarına Uygun Olun*** : Özellikle kişisel verilerle uğraşırken, veri toplama faaliyetlerinizin veri gizliliği düzenlemelerine uygun olduğundan emin olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hataları Zarafetle Ele Alın***  : Eksik öğeler, zaman aşımı veya sunucu arızaları gibi hataları ele almaya hazır olun. Sağlam hata işleme, kazıyıcınızı daha güvenilir hale getirir. 
+- ***Hataları Zarafetle Ele Alın*** : Eksik öğeler, zaman aşımı veya sunucu arızaları gibi hataları ele almaya hazır olun. Sağlam hata işleme, kazıyıcınızı daha güvenilir hale getirir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

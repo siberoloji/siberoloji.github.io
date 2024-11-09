@@ -24,7 +24,7 @@
       <description>
         
         
-         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
+         &lt;p&gt;Systemd konusunda önceki&lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt;ve&lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt;kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
  &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:

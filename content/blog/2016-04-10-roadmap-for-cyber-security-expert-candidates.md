@@ -41,15 +41,15 @@ url: /roadmap-for-cyber-security-expert-candidates/
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The point you will reach during a test is the Operating System. When you reach the target Operating System, if you do not know where to look and what to do, your range of motion will be quite limited. For this reason, in-depth operating system knowledge is a must for every cybersecurity expert.
+<p>The point you will reach during a test is the Operating System. When you reach the target Operating System, if you do not know where to look and what to do, your range of motion will be quite limited. For this reason, in-depthoperatingsystem knowledge is a must for every cybersecurity expert.
   
 
 <!-- wp:paragraph -->
-<p> Operating system knowledge is a separate issue from knowing where to click. When you access the operating system command line as a normal user or root user, there is no screen to click on with the mouse. So you should assume that you will need to do everything from the command line.
+<p>Operating system knowledge is a separate issue from knowing where to click. When you access the operatingsystem command line as a normal user or root user,there is no screen to click on with the mouse. So you should assume that you will need to do everything from the command line.
   
 
 <!-- wp:paragraph -->
-<p>You should know very well how the system you access works. For example, where log files are kept, how to access registry records, and examining and managing network connections from the command line are among the most basic topics that need to be learned. All hardware and software are secondary structures that use the Operating System as the Platform. That's why you need to know the behavior of the platform on which your software runs. A serious training process on Windows, Linux or Unix-based operating systems is at the top of our list.
+<p>You should know very well how the system you access works. For example, where log files are kept, how to access registry records, and examining and managing network connections from the command line are among the most basic topics that need to be learned. All hardware and software are secondary structures that use the Operating System as the Platform. That's why you need to know the behavior of the platform on which your software runs. A serious training process onWindows, Linux or Unix-basedoperatingsystems is at the top of our list.
   
 
 

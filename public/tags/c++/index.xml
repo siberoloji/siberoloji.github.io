@@ -26,12 +26,12 @@
         
          &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
  &lt;p&gt;To compile and run this program:
- &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;
- &lt;p&gt;Compile it: 
+ &lt;p&gt;Save the updated code to a file, e.g.,&lt;code&gt;network_scanner.cpp&lt;/code&gt;
+ &lt;p&gt;Compile it:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;g++ -std=c++17 -o network_scanner network_scanner.cpp&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Run it with sudo: 
+ &lt;p&gt;Run it with sudo:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;sudo ./network_scanner&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
@@ -3656,10 +3656,10 @@ int main() {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Verilen kod konsola “Hello World!” yazdıran basit bir C++ programıdır.&lt;/p&gt;
-&lt;p&gt;İlk satır, &lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt; iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir.&lt;/p&gt;
-&lt;p&gt;Bir sonraki kısım &lt;code&gt;main&lt;/code&gt; fonksiyond&lt;code&gt;ur&lt;/code&gt;. C++&amp;lsquo;da programın yürütülmesi &lt;code&gt;main&lt;/code&gt; fonksiyonun çalışmasıyla başlar. &lt;code&gt;int main()&lt;/code&gt;, &lt;code&gt;main&lt;/code&gt; fonksiyonun bir tamsayı değeri döndüreceğini gösterir.&lt;/p&gt;
-&lt;p&gt;Fonksiyonun içinde bulunan &lt;code&gt;std::cout &amp;lt;&amp;lt; &amp;ldquo;Hello, World!&amp;rdquo; &amp;lt;&amp;lt; std::endl;&lt;/code&gt; ifadesi  “Hello World!” dizesini ekrana yazdırmak için kullanılır. &lt;/p&gt;
-&lt;p&gt;Son olarak &lt;code&gt;main&lt;/code&gt; fonksiyonu &lt;code&gt;return 0;&lt;/code&gt; ile biter. Bu ifade programdan çıkıp işletim sistemine 0 durumunu geri döndürmesine neden olur. &lt;code&gt;main&lt;/code&gt;, 0 değerinin döndürülmesi genellikle programın hatasız olarak başarılı bir şekilde çalıştığını gösterir.&lt;/p&gt;
+&lt;p&gt;İlk satır,&lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt; iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir.&lt;/p&gt;
+&lt;p&gt;Bir sonraki kısım &lt;code&gt;main&lt;/code&gt; fonksiyond&lt;code&gt;ur&lt;/code&gt;. C++&amp;lsquo;da programın yürütülmesi&lt;code&gt;main&lt;/code&gt; fonksiyonun çalışmasıyla başlar.&lt;code&gt;int main()&lt;/code&gt;, &lt;code&gt;main&lt;/code&gt; fonksiyonun bir tamsayı değeri döndüreceğini gösterir.&lt;/p&gt;
+&lt;p&gt;Fonksiyonun içindebulunan &lt;code&gt;std::cout &amp;lt;&amp;lt; &amp;ldquo;Hello, World!&amp;rdquo; &amp;lt;&amp;lt; std::endl;&lt;/code&gt; ifadesi “Hello World!” dizesini ekrana yazdırmak için kullanılır.&lt;/p&gt;
+&lt;p&gt;Son olarak&lt;code&gt;main&lt;/code&gt; fonksiyonu &lt;code&gt;return 0;&lt;/code&gt; ile biter. Bu ifade programdan çıkıp işletim sistemine 0 durumunu geri döndürmesine neden olur. &lt;code&gt;main&lt;/code&gt;, 0 değerinin döndürülmesi genellikle programın hatasız olarak başarılı bir şekilde çalıştığını gösterir.&lt;/p&gt;
 
       </description>
     </item>

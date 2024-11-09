@@ -27,7 +27,7 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
   ***Understanding Data Integrity*** 
  
 
-  Data integrity refers to the accuracy, completeness, and consistency of data over its entire lifecycle. It ensures that data is not corrupted, altered, or lost during storage, transmission, or processing. Data integrity is essential for various applications, including databases, file systems, network communication, and data storage systems.
+  Dataintegrity refers to the accuracy, completeness, and consistency of data over its entire lifecycle. It ensures that data is not corrupted, altered, or lost during storage, transmission, or processing. Data integrity is essential for various applications, including databases, file systems, network communication, and data storage systems.
  
 
   ***Parity Check: A Simple Yet Effective Technique*** 
@@ -41,19 +41,19 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Data Encoding:***  A parity bit is added to each data word. 
+- ***Data Encoding:*** A parity bit is added to each data word. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Transmission:***  The data word with the parity bit is transmitted. 
+- ***Data Transmission:*** The data word with the parity bit is transmitted. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Reception:***  The receiver checks the parity of the received data word. 
+- ***Data Reception:*** The receiver checks the parity of the received data word. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Error Detection:***  If the parity is incorrect, an error is detected. 
+- ***Error Detection:*** If the parity is incorrect, an error is detected. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -62,11 +62,11 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Single-Bit Error Detection:***  Parity check can only detect single-bit errors. It cannot detect multiple-bit errors or burst errors. 
+- ***Single-Bit Error Detection:*** Parity check can only detect single-bit errors. It cannot detect multiple-bit errors or burst errors. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Limited Error Correction:***  Parity check does not provide error correction capabilities. 
+- ***Limited Error Correction:*** Parity check does not provide error correction capabilities. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -81,15 +81,15 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Simple Checksum:***  A simple checksum is calculated by summing the bytes of the data and taking the modulo of a specific number (e.g., 256). 
+- ***Simple Checksum:*** A simple checksum is calculated by summing the bytes of the data and taking the modulo of a specific number (e.g., 256). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Internet Checksum:***  The Internet checksum is a 16-bit checksum used in various network protocols, such as TCP/IP. It involves adding the 16-bit words of the data, discarding carries, and then taking the one's complement of the sum. 
+- ***Internet Checksum:*** The Internet checksum is a 16-bit checksum used in various network protocols, such as TCP/IP. It involves adding the 16-bit words of the data, discarding carries, and then taking the one's complement of the sum. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Cyclic Redundancy Check (CRC):***  CRC is a powerful error detection technique that uses polynomial division to generate a checksum. It can detect multiple-bit errors and burst errors. 
+- ***Cyclic Redundancy Check (CRC):*** CRC is a powerful error detection technique that uses polynomial division to generate a checksum. It can detect multiple-bit errors and burst errors. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -98,11 +98,11 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Multiple-Bit Error Detection:***  Checksum can detect multiple-bit errors and burst errors, making it more robust than parity checks. 
+- ***Multiple-Bit Error Detection:*** Checksum can detect multiple-bit errors and burst errors, making it more robust than parity checks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Error Correction:***  Some checksum algorithms, such as CRC, can be used for error correction. 
+- ***Error Correction:*** Some checksum algorithms, such as CRC, can be used for error correction. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -117,19 +117,19 @@ url: /parity-check-and-checksum-safeguarding-data-integrity/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Data Storage:***  Parity checks and checksums are used in RAID systems to ensure data integrity and redundancy. 
+- ***Data Storage:*** Parity checks and checksums are used in RAID systems to ensure data integrity and redundancy. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Network Communication:***  Checksum is used in various network protocols to detect errors in data transmission. 
+- ***Network Communication:*** Checksum is used in various network protocols to detect errors in data transmission. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***File Transfer Protocols:***  FTP and SFTP use checksums to verify the integrity of transferred files. 
+- ***File Transfer Protocols:*** FTP and SFTP use checksums to verify the integrity of transferred files. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Data Compression:***  Compression algorithms often use checksums to verify the integrity of compressed data. 
+- ***Data Compression:*** Compression algorithms often use checksums to verify the integrity of compressed data. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

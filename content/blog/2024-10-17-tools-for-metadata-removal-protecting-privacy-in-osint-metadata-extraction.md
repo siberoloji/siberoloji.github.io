@@ -109,7 +109,7 @@ url: /tools-for-metadata-removal-protecting-privacy-in-osint-metadata-extraction
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***<a href="https://metacleaner.com" target="_blank" rel="noopener" title="">MetaCleaner</a>:***  A GUI-based tool that offers a user-friendly interface for removing metadata from various document formats. 
+- ***<a href="https://metacleaner.com" target="_blank" rel="noopener" title="">MetaCleaner</a>:*** A GUI-based tool that offers a user-friendly interface for removing metadata from various document formats. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

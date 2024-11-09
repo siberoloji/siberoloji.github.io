@@ -26,12 +26,12 @@
         
          &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
  &lt;p&gt;To compile and run this program:
- &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;
- &lt;p&gt;Compile it: 
+ &lt;p&gt;Save the updated code to a file, e.g.,&lt;code&gt;network_scanner.cpp&lt;/code&gt;
+ &lt;p&gt;Compile it:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;g++ -std=c++17 -o network_scanner network_scanner.cpp&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Run it with sudo: 
+ &lt;p&gt;Run it with sudo:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;sudo ./network_scanner&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;

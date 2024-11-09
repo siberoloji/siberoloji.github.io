@@ -24,7 +24,7 @@
       <description>
         
         
-        &lt;p&gt;Son yıllarda, internet bağlantısı manzarası, öncelikle uydu teknolojisindeki gelişmeler nedeniyle önemli bir dönüşüm geçirdi. Bu alandaki en dikkat çekici oyunculardan biri, Elon Musk tarafından kurulan SpaceX tarafından geliştirilen bir uydu internet takımyıldızı olan &lt;em&gt;&lt;strong&gt;Starlink&amp;rsquo;tir&lt;/strong&gt;&lt;/em&gt; . Starlink, özellikle geleneksel internet altyapısının eksik olduğu yetersiz hizmet alan ve uzak bölgelerde, küresel olarak yüksek hızlı internet erişimi sağlamayı amaçlamaktadır. Bu blog yazısı, Starlink uydularının işleyişini, hizmetlerini ve küresel bağlantı üzerindeki etkilerini araştırmaktadır.&lt;/p&gt;
+        &lt;p&gt;Son yıllarda, internet bağlantısı manzarası, öncelikle uydu teknolojisindeki gelişmeler nedeniyle önemli bir dönüşüm geçirdi. Bu alandaki en dikkat çekici oyunculardan biri, Elon Musk tarafından kurulan SpaceX tarafından geliştirilen bir uydu internet takımyıldızı olan&lt;em&gt;&lt;strong&gt;Starlink&amp;rsquo;tir&lt;/strong&gt;&lt;/em&gt; . Starlink, özellikle geleneksel internet altyapısının eksik olduğu yetersiz hizmet alan ve uzak bölgelerde, küresel olarak yüksek hızlı internet erişimi sağlamayı amaçlamaktadır. Bu blog yazısı, Starlink uydularının işleyişini, hizmetlerini ve küresel bağlantı üzerindeki etkilerini araştırmaktadır.&lt;/p&gt;
 &lt;h2&gt;Starlink Uyduları Nelerdir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;starlink-uyduları-nelerdir&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#starlink-uydular%c4%b1-nelerdir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Starlink uyduları, geniş bant internet hizmetleri sunmak için tasarlanmış bir alçak Dünya yörüngesi (LEO) takımyıldızının parçasıdır. Dünya&amp;rsquo;nın yaklaşık 22.236 mil üzerinde yörüngede dönen geleneksel jeostasyon uydularının aksine, Starlink uyduları 340 ila 1.200 kilometre (yaklaşık 211 ila 746 mil) arasında değişen irtifalarda çalışır. Bu yakınlık gecikmeyi önemli ölçüde azaltır ve veri iletim hızlarını artırarak kullanıcıların kablo veya fiber optik gibi karasal seçeneklere benzer bir internet bağlantısı deneyimlemesini mümkün kılar[1][3].&lt;/p&gt;
@@ -32,16 +32,16 @@
     &lt;a href=&#34;#starlink-uydular%c4%b1n%c4%b1n-temel-%c3%b6zellikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Alçak Dünya Yörüngesi***  : LEO konumlandırması, Starlink uydularının verileri genellikle 20 ila 40 milisaniye arasında daha düşük gecikmeyle iletmesine olanak tanır; bu süre, 600 milisaniyeyi aşabilen gecikmelere sahip olabilen jeostasyoner uydularla karşılaştırıldığında daha uzundur[2][3]. 
+- ***Alçak Dünya Yörüngesi*** : LEO konumlandırması, Starlink uydularının verileri genellikle 20 ila 40 milisaniye arasında daha düşük gecikmeyle iletmesine olanak tanır; bu süre, 600 milisaniyeyi aşabilen gecikmelere sahip olabilen jeostasyoner uydularla karşılaştırıldığında daha uzundur[2][3]. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Büyük Takımyıldızı&lt;/strong&gt;&lt;/em&gt;  : Şu anda yörüngede binlerce Starlink uydusu var ve çok daha fazlası için planlar var. Bu kapsamlı ağ, sağlam kapsama ve yedeklilik sağlar[1].&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Büyük Takımyıldızı&lt;/strong&gt;&lt;/em&gt; : Şu anda yörüngede binlerce Starlink uydusu var ve çok daha fazlası için planlar var. Bu kapsamlı ağ, sağlam kapsama ve yedeklilik sağlar[1].&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sürekli Yükseltmeler&lt;/strong&gt;&lt;/em&gt;  : SpaceX, kendi uydularını sık sık ve uygun maliyetli bir şekilde fırlatma konusunda benzersiz bir yeteneğe sahiptir ve bu da teknoloji alanında sürekli güncellemeler ve iyileştirmeler yapılmasına olanak tanır[7].&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sürekli Yükseltmeler&lt;/strong&gt;&lt;/em&gt; : SpaceX, kendi uydularını sık sık ve uygun maliyetli bir şekilde fırlatma konusunda benzersiz bir yeteneğe sahiptir ve bu da teknoloji alanında sürekli güncellemeler ve iyileştirmeler yapılmasına olanak tanır[7].&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -50,11 +50,11 @@
 &lt;p&gt;Starlink&amp;rsquo;in internet hizmeti, uydu teknolojisi ve yer altyapısının bir kombinasyonu aracılığıyla çalışır. Kullanıcıların, bir uydu çanağı ve bir Wi-Fi yönlendiricisi içeren bir Starlink terminaline (genellikle &amp;ldquo;Dishy&amp;rdquo; olarak anılır) ihtiyaçları vardır. Kurulum süreci basitlik için tasarlanmıştır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Fişe takın***  : Terminali güce bağlayın. 
+- ***Fişe takın*** : Terminali güce bağlayın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gökyüzüne doğrultun&lt;/strong&gt;&lt;/em&gt;  : Starlink uygulamasını kullanarak gökyüzünü engelsiz bir şekilde görebileceğiniz şekilde çanağı konumlandırın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gökyüzüne doğrultun&lt;/strong&gt;&lt;/em&gt; : Starlink uygulamasını kullanarak gökyüzünü engelsiz bir şekilde görebileceğiniz şekilde çanağı konumlandırın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -64,16 +64,16 @@
 &lt;p&gt;Starlink, farklı kullanıcı ihtiyaçlarına hitap eden çeşitli hizmet planları sunmaktadır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Konut Hizmeti***  : Aylık yaklaşık 120$ fiyatla, yaklaşık 599$&#39;lık bir ilk donanım maliyetiyle. Bu plan, konuma ve ağ tıkanıklığına bağlı olarak 50 Mbps ile 220 Mbps arasında değişen hızlarda sınırsız veri sağlar[2][3]. 
+- ***Konut Hizmeti*** : Aylık yaklaşık 120$ fiyatla, yaklaşık 599$&#39;lık bir ilk donanım maliyetiyle. Bu plan, konuma ve ağ tıkanıklığına bağlı olarak 50 Mbps ile 220 Mbps arasında değişen hızlarda sınırsız veri sağlar[2][3]. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karavanlar için Starlink&lt;/strong&gt;&lt;/em&gt;  : Bu plan, kullanıcıların hizmetlerini yola çıkarmalarına olanak tanır ancak sabit konumlu kullanıcılara kıyasla önceliklendirilmemiş hızlarla karşılaşabilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karavanlar için Starlink&lt;/strong&gt;&lt;/em&gt; : Bu plan, kullanıcıların hizmetlerini yola çıkarmalarına olanak tanır ancak sabit konumlu kullanıcılara kıyasla önceliklendirilmemiş hızlarla karşılaşabilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Starlink Maritime&lt;/strong&gt;&lt;/em&gt;  : Denizdeki gemiler için tasarlanmış olup 350 Mbps&amp;rsquo;ye kadar hız sunuyor ancak daha pahalı bir terminal ve aylık ücret gerektiriyor[2][5].&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Starlink Maritime&lt;/strong&gt;&lt;/em&gt; : Denizdeki gemiler için tasarlanmış olup 350 Mbps&amp;rsquo;ye kadar hız sunuyor ancak daha pahalı bir terminal ve aylık ücret gerektiriyor[2][5].&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -148,41 +148,41 @@
 &lt;p&gt;GSM-R, demiryolları için GSM&#39;nin basit bir uyarlaması değildir. Demiryolu operasyonlarının özel ihtiyaçlarını karşılamak üzere tasarlanmış çeşitli benzersiz özelliklerle birlikte gelir:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Öncelik ve Ön Alma***  : GSM-R, ağ tıkanıklığı zamanlarında bile kritik çağrıların her zaman iletilmesini sağlar. Çok seviyeli bir öncelik şeması kullanarak acil durum çağrılarının daha az kritik iletişimlere göre öncelik almasını sağlar. 
+- ***Öncelik ve Ön Alma*** : GSM-R, ağ tıkanıklığı zamanlarında bile kritik çağrıların her zaman iletilmesini sağlar. Çok seviyeli bir öncelik şeması kullanarak acil durum çağrılarının daha az kritik iletişimlere göre öncelik almasını sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İşlevsel Adresleme&lt;/strong&gt;&lt;/em&gt;  : Bu özellik, belirli bir kişiye veya telefon numarasına değil, belirli bir işleve (örneğin &amp;ldquo;123 numaralı trenin sürücüsü&amp;rdquo;) çağrı yapılmasına olanak tanır. Bu, personelin sık sık değiştiği bir ortamda çok önemlidir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İşlevsel Adresleme&lt;/strong&gt;&lt;/em&gt; : Bu özellik, belirli bir kişiye veya telefon numarasına değil, belirli bir işleve (örneğin &amp;ldquo;123 numaralı trenin sürücüsü&amp;rdquo;) çağrı yapılmasına olanak tanır. Bu, personelin sık sık değiştiği bir ortamda çok önemlidir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Konuma Bağlı Adresleme&lt;/strong&gt;&lt;/em&gt;  : Çağrılar bir trenin konumuna göre yönlendirilebilir. Örneğin, &amp;ldquo;en yakın bakım ekibine&amp;rdquo; yapılan bir çağrı, trenin mevcut konumuna en yakın ekibe yönlendirilecektir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Konuma Bağlı Adresleme&lt;/strong&gt;&lt;/em&gt; : Çağrılar bir trenin konumuna göre yönlendirilebilir. Örneğin, &amp;ldquo;en yakın bakım ekibine&amp;rdquo; yapılan bir çağrı, trenin mevcut konumuna en yakın ekibe yönlendirilecektir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Acil Çağrılar&lt;/strong&gt;&lt;/em&gt;  : GSM-R, acil durumlarda ilgili tüm taraflara aynı anda bağlanan özel bir acil çağrı özelliği sunmaktadır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Acil Çağrılar&lt;/strong&gt;&lt;/em&gt; : GSM-R, acil durumlarda ilgili tüm taraflara aynı anda bağlanan özel bir acil çağrı özelliği sunmaktadır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Manevra Modu&lt;/strong&gt;&lt;/em&gt;  : Bu mod, manevra operasyonları sırasında manevra ekibi lideri ile sürücü arasında iletişimi sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Manevra Modu&lt;/strong&gt;&lt;/em&gt; : Bu mod, manevra operasyonları sırasında manevra ekibi lideri ile sürücü arasında iletişimi sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Doğrudan Mod&lt;/strong&gt;&lt;/em&gt;  : Şebeke kapsama alanı dışında olan bölgelerde, GSM-R cihazları kısa mesafelerde birbirleriyle doğrudan haberleşebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Doğrudan Mod&lt;/strong&gt;&lt;/em&gt; : Şebeke kapsama alanı dışında olan bölgelerde, GSM-R cihazları kısa mesafelerde birbirleriyle doğrudan haberleşebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yüksek Hızlı Çalışma&lt;/strong&gt;&lt;/em&gt;  : GSM-R, yüksek hızlı demir yolu hatlarında bile güvenilir iletişimi koruyarak, 500 km/saat hıza kadar çalışmak üzere tasarlanmıştır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yüksek Hızlı Çalışma&lt;/strong&gt;&lt;/em&gt; : GSM-R, yüksek hızlı demir yolu hatlarında bile güvenilir iletişimi koruyarak, 500 km/saat hıza kadar çalışmak üzere tasarlanmıştır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gelişmiş Veri Hızları&lt;/strong&gt;&lt;/em&gt;  : GSM tabanlı olmasına rağmen GSM-R, gelişmiş demir yolu uygulamalarına uyum sağlamak için daha yüksek veri hızlarını destekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gelişmiş Veri Hızları&lt;/strong&gt;&lt;/em&gt; : GSM tabanlı olmasına rağmen GSM-R, gelişmiş demir yolu uygulamalarına uyum sağlamak için daha yüksek veri hızlarını destekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -196,16 +196,16 @@
 &lt;p&gt;Demiryolu operasyonlarında güvenlik en önemli unsurdur ve GSM-R bunu önemli ölçüde artırır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Acil Durum Haberleşmesi***  : Herhangi bir olay anında GSM-R, ilgili tüm taraflarla anında ve eş zamanlı haberleşme imkânı sağlar. 
+- ***Acil Durum Haberleşmesi*** : Herhangi bir olay anında GSM-R, ilgili tüm taraflarla anında ve eş zamanlı haberleşme imkânı sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Makinist-Kontrolör İletişimi&lt;/strong&gt;&lt;/em&gt;  : Tren makinistleri ile trafik kontrolörleri arasındaki sürekli ve güvenilir iletişim, tren hareketlerinin güvenli olmasını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Makinist-Kontrolör İletişimi&lt;/strong&gt;&lt;/em&gt; : Tren makinistleri ile trafik kontrolörleri arasındaki sürekli ve güvenilir iletişim, tren hareketlerinin güvenli olmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hat Kenarı Çalışanlarının Güvenliği&lt;/strong&gt;&lt;/em&gt;  : GSM-R, yaklaşan trenler konusunda hat kenarlarındaki çalışanları uyarmaya yardımcı olur ve herhangi bir güvenlik endişesini hızla iletmelerini sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hat Kenarı Çalışanlarının Güvenliği&lt;/strong&gt;&lt;/em&gt; : GSM-R, yaklaşan trenler konusunda hat kenarlarındaki çalışanları uyarmaya yardımcı olur ve herhangi bir güvenlik endişesini hızla iletmelerini sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -215,16 +215,16 @@
 &lt;p&gt;GSM-R operasyonel verimliliğe çeşitli şekillerde katkıda bulunur:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Gerçek Zamanlı Bilgi***  : Tren lokasyonları, gecikmeler ve ray koşulları hakkında gerçek zamanlı bilgi iletimini sağlar. 
+- ***Gerçek Zamanlı Bilgi*** : Tren lokasyonları, gecikmeler ve ray koşulları hakkında gerçek zamanlı bilgi iletimini sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Yönetimi&lt;/strong&gt;&lt;/em&gt;  : Kontrolörler, trafiği daha etkin bir şekilde yönetmek, gecikmeleri azaltmak ve dakikliği artırmak için GSM-R&amp;rsquo;yi kullanabilirler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Yönetimi&lt;/strong&gt;&lt;/em&gt; : Kontrolörler, trafiği daha etkin bir şekilde yönetmek, gecikmeleri azaltmak ve dakikliği artırmak için GSM-R&amp;rsquo;yi kullanabilirler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bakım Koordinasyonu&lt;/strong&gt;&lt;/em&gt;  : GSM-R, bakım faaliyetlerinin daha iyi koordine edilmesini kolaylaştırarak düzenli hizmetlerdeki kesintileri en aza indirir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bakım Koordinasyonu&lt;/strong&gt;&lt;/em&gt; : GSM-R, bakım faaliyetlerinin daha iyi koordine edilmesini kolaylaştırarak düzenli hizmetlerdeki kesintileri en aza indirir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -234,11 +234,11 @@
 &lt;p&gt;GSM-R, yolcular tarafından doğrudan erişilebilir olmasa da, yolcu bilgilerini dolaylı olarak iyileştirir:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Doğru Anonslar***  : İstasyon personeli tren hareketleri hakkında gerçek zamanlı güncellemeler alabilir, bu da yolcu duyurularının daha doğru yapılmasını sağlar. 
+- ***Doğru Anonslar*** : İstasyon personeli tren hareketleri hakkında gerçek zamanlı güncellemeler alabilir, bu da yolcu duyurularının daha doğru yapılmasını sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hizmet Güncellemeleri&lt;/strong&gt;&lt;/em&gt;  : Hizmet kesintileri veya değişiklikleri hakkındaki bilgiler, yolcuları bilgilendirebilecek ilgili personele hızla iletilebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hizmet Güncellemeleri&lt;/strong&gt;&lt;/em&gt; : Hizmet kesintileri veya değişiklikleri hakkındaki bilgiler, yolcuları bilgilendirebilecek ilgili personele hızla iletilebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -248,11 +248,11 @@
 &lt;p&gt;GSM-R, ERTMS&#39;nin sinyalizasyon ve kontrol bileşeni olan Avrupa Tren Kontrol Sistemi&#39;nin (ETCS) ayrılmaz bir parçasıdır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Veri İletimi***  : GSM-R, ETCS verileri için iletişim kanalı sağlayarak hareket yetkilerinin, hız kısıtlamalarının ve diğer kritik sinyal bilgilerinin iletilmesine olanak tanır. 
+- ***Veri İletimi*** : GSM-R, ETCS verileri için iletişim kanalı sağlayarak hareket yetkilerinin, hız kısıtlamalarının ve diğer kritik sinyal bilgilerinin iletilmesine olanak tanır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pozisyon Bildirimi&lt;/strong&gt;&lt;/em&gt;  : Trenler, GSM-R üzerinden pozisyonlarını bildirebilir, böylece daha doğru trafik yönetimi sağlanabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pozisyon Bildirimi&lt;/strong&gt;&lt;/em&gt; : Trenler, GSM-R üzerinden pozisyonlarını bildirebilir, böylece daha doğru trafik yönetimi sağlanabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -262,26 +262,26 @@
 &lt;p&gt;GSM teknolojisi temelli olmasına rağmen GSM-R&#39;nin bazı teknik özellikleri bulunmaktadır:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Frekans Bantları***  : GSM-R, Avrupa&#39;da genellikle 876-880 MHz (uplink) ve 921-925 MHz (downlink) frekans bantlarında çalışır, ancak kesin tahsisler ülkeye göre değişebilir. 
+- ***Frekans Bantları*** : GSM-R, Avrupa&#39;da genellikle 876-880 MHz (uplink) ve 921-925 MHz (downlink) frekans bantlarında çalışır, ancak kesin tahsisler ülkeye göre değişebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Mimarisi&lt;/strong&gt;&lt;/em&gt;  : Bir GSM-R ağı, baz istasyonlarından (BTS), baz istasyonu kontrolörlerinden (BSC), mobil anahtarlama merkezlerinden (MSC) ve genel bir GSM ağına benzer çeşitli veri tabanları ve kayıtlardan oluşur, ancak bunlara ek olarak demiryollarına özgü öğeler de bulunur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ağ Mimarisi&lt;/strong&gt;&lt;/em&gt; : Bir GSM-R ağı, baz istasyonlarından (BTS), baz istasyonu kontrolörlerinden (BSC), mobil anahtarlama merkezlerinden (MSC) ve genel bir GSM ağına benzer çeşitli veri tabanları ve kayıtlardan oluşur, ancak bunlara ek olarak demiryollarına özgü öğeler de bulunur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Devir teslim&lt;/strong&gt;&lt;/em&gt;  : GSM-R, hızlı hareket eden trenlerle iletişimin sürdürülmesi için hayati önem taşıyan baz istasyonları arasında kesintisiz devir teslimi destekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Devir teslim&lt;/strong&gt;&lt;/em&gt; : GSM-R, hızlı hareket eden trenlerle iletişimin sürdürülmesi için hayati önem taşıyan baz istasyonları arasında kesintisiz devir teslimi destekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenilirlik&lt;/strong&gt;&lt;/em&gt;  : GSM-R ağları, sürekli iletişimi garanti altına almak için sıklıkla örtüşen kapsama alanıyla yüksek yedeklilik ve güvenilirlikle tasarlanmıştır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenilirlik&lt;/strong&gt;&lt;/em&gt; : GSM-R ağları, sürekli iletişimi garanti altına almak için sıklıkla örtüşen kapsama alanıyla yüksek yedeklilik ve güvenilirlikle tasarlanmıştır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt;  : GSM-R, dinlemeye ve yetkisiz erişime karşı koruma sağlamak için gelişmiş güvenlik özelliklerini bünyesinde barındırmaktadır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Güvenlik&lt;/strong&gt;&lt;/em&gt; : GSM-R, dinlemeye ve yetkisiz erişime karşı koruma sağlamak için gelişmiş güvenlik özelliklerini bünyesinde barındırmaktadır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -291,21 +291,21 @@
 &lt;p&gt;GSM-R başarısına rağmen bazı zorluklarla karşı karşıyadır:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kapasite Sınırlamaları***  : Demiryolu operasyonları daha karmaşık ve veri yoğun hale geldikçe, GSM-R kapasitesi sınırlayıcı bir faktör haline gelebilir. 
+- ***Kapasite Sınırlamaları*** : Demiryolu operasyonları daha karmaşık ve veri yoğun hale geldikçe, GSM-R kapasitesi sınırlayıcı bir faktör haline gelebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Girişim&lt;/strong&gt;&lt;/em&gt;  : Bazı bölgelerde, bitişik frekans bantlarında çalışan kamusal mobil şebekelerden kaynaklanan girişim sorunları yaşandı.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Girişim&lt;/strong&gt;&lt;/em&gt; : Bazı bölgelerde, bitişik frekans bantlarında çalışan kamusal mobil şebekelerden kaynaklanan girişim sorunları yaşandı.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Teknolojinin Gelişimi&lt;/strong&gt;&lt;/em&gt;  : GSM&amp;rsquo;in kamusal ağlarda kullanımdan kaldırılmasıyla birlikte, GSM-R ekipmanlarının bakımı daha zor ve pahalı hale gelebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Teknolojinin Gelişimi&lt;/strong&gt;&lt;/em&gt; : GSM&amp;rsquo;in kamusal ağlarda kullanımdan kaldırılmasıyla birlikte, GSM-R ekipmanlarının bakımı daha zor ve pahalı hale gelebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri Hızı&lt;/strong&gt;&lt;/em&gt;  : GSM-R&amp;rsquo;nin sunduğu veri hızları mevcut ihtiyaçlar için yeterli olsa da gelecekteki uygulamalar için yeterli olmayabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri Hızı&lt;/strong&gt;&lt;/em&gt; : GSM-R&amp;rsquo;nin sunduğu veri hızları mevcut ihtiyaçlar için yeterli olsa da gelecekteki uygulamalar için yeterli olmayabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -338,11 +338,11 @@
 &lt;p&gt;IP-MPLS, IP yönlendirmenin esnekliğini MPLS&amp;rsquo;nin performansı ve trafik yönetimi yetenekleriyle birleştiren bir ağ teknolojisidir. IP-MPLS&amp;rsquo;yi anlamak için, onu iki ana bileşenine ayıralım:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***IP (İnternet Protokolü)***  : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
+- ***IP (İnternet Protokolü)*** : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;MPLS (Çoklu Protokol Etiket Anahtarlama)&lt;/strong&gt;&lt;/em&gt;  : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;MPLS (Çoklu Protokol Etiket Anahtarlama)&lt;/strong&gt;&lt;/em&gt; : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -355,11 +355,11 @@
 &lt;p&gt;LER&amp;rsquo;ler bir MPLS ağının kenarında bulunur. İki önemli işlevi yerine getirirler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ingress LER***  : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
+- ***Ingress LER*** : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çıkış LER&lt;/strong&gt;&lt;/em&gt;  : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çıkış LER&lt;/strong&gt;&lt;/em&gt; : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -403,11 +403,11 @@
     &lt;a href=&#34;#1-iyile%c5%9ftirilmi%c5%9f-performans&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Daha Hızlı Yönlendirme***  : LSR&#39;ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
+- ***Daha Hızlı Yönlendirme*** : LSR&#39;ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Mühendisliği&lt;/strong&gt;&lt;/em&gt;  : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Mühendisliği&lt;/strong&gt;&lt;/em&gt; : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -415,11 +415,11 @@
     &lt;a href=&#34;#2-geli%c5%9fmi%c5%9f-%c3%b6l%c3%a7eklenebilirlik&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Hiyerarşik Etiketleme***  : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
+- ***Hiyerarşik Etiketleme*** : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Azaltılmış Yönlendirme Tablosu Boyutu&lt;/strong&gt;&lt;/em&gt;  : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Azaltılmış Yönlendirme Tablosu Boyutu&lt;/strong&gt;&lt;/em&gt; : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -427,11 +427,11 @@
     &lt;a href=&#34;#3-hizmet-kalitesi-qos-deste%c4%9fi&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Trafik Önceliklendirmesi***  : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
+- ***Trafik Önceliklendirmesi*** : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Garantili Bant Genişliği&lt;/strong&gt;&lt;/em&gt;  : Kritik uygulamalar için LSP&amp;rsquo;ler belirli bant genişliği garantileri ile kurulabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Garantili Bant Genişliği&lt;/strong&gt;&lt;/em&gt; : Kritik uygulamalar için LSP&amp;rsquo;ler belirli bant genişliği garantileri ile kurulabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -439,11 +439,11 @@
     &lt;a href=&#34;#4-geli%c5%9fmi%c5%9f-g%c3%bcvenilirlik&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Hızlı Yeniden Yönlendirme***  : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
+- ***Hızlı Yeniden Yönlendirme*** : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yol Koruması&lt;/strong&gt;&lt;/em&gt;  : Anında yedekleme sağlamak için yedek LSP&amp;rsquo;ler önceden kurulabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yol Koruması&lt;/strong&gt;&lt;/em&gt; : Anında yedekleme sağlamak için yedek LSP&amp;rsquo;ler önceden kurulabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -451,11 +451,11 @@
     &lt;a href=&#34;#5-sanal-%c3%b6zel-a%c4%9flar-vpnler-i%c3%a7in-destek&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***3. Katman VPN&#39;ler***  : IP-MPLS, 3. Katman VPN&#39;lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
+- ***3. Katman VPN&#39;ler*** : IP-MPLS, 3. Katman VPN&#39;lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Katman 2 VPN&amp;rsquo;ler&lt;/strong&gt;&lt;/em&gt;  : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Katman 2 VPN&amp;rsquo;ler&lt;/strong&gt;&lt;/em&gt; : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -463,7 +463,7 @@
     &lt;a href=&#34;#6-protokol-ba%c4%9f%c4%b1ms%c4%b1zl%c4%b1%c4%9f%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Çoklu Protokol Desteği***  : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
+- ***Çoklu Protokol Desteği*** : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;h2&gt;IP-MPLS&amp;rsquo;nin Uygulamaları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ip-mplsnin-uygulamaları&#34;&gt;&lt;/span&gt;

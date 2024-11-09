@@ -30,25 +30,25 @@
  &lt;p&gt;Podcast düzenlemesi sadece hataları kesmekten daha fazlasıdır; dinleyicilerinizin ilgisini çeken cilalı bir ses deneyimi oluşturmayı içerir. Etkili düzenleme, anlatı akışını iyileştirebilir, dikkat dağıtıcı unsurları ortadan kaldırabilir ve podcast&#39;inizin profesyonel görünmesini sağlayabilir. Podcast düzenlemesinin bazı temel yönleri şunlardır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kırpma***  : İlgiyi korumak için kayıtta gereksiz kısımların kesilmesi. 
+- ***Kırpma*** : İlgiyi korumak için kayıtta gereksiz kısımların kesilmesi. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ses Seviyelerinin Normalleştirilmesi&lt;/strong&gt;&lt;/em&gt;  : Bölüm boyunca ses seviyesinin tutarlı olmasını sağlamak.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ses Seviyelerinin Normalleştirilmesi&lt;/strong&gt;&lt;/em&gt; : Bölüm boyunca ses seviyesinin tutarlı olmasını sağlamak.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Müzik ve Ses Efektleri Ekleme&lt;/strong&gt;&lt;/em&gt;  : Uygun ses öğeleriyle dinleme deneyimini zenginleştirme.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Müzik ve Ses Efektleri Ekleme&lt;/strong&gt;&lt;/em&gt; : Uygun ses öğeleriyle dinleme deneyimini zenginleştirme.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dolgu Sözcüklerini Kaldırma&lt;/strong&gt;&lt;/em&gt;  : &amp;ldquo;Şey&amp;rdquo;, &amp;ldquo;ı-ı&amp;rdquo; ve diğer dolgu sözcüklerini kaldırarak sesi temizleme.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dolgu Sözcüklerini Kaldırma&lt;/strong&gt;&lt;/em&gt; : &amp;ldquo;Şey&amp;rdquo;, &amp;ldquo;ı-ı&amp;rdquo; ve diğer dolgu sözcüklerini kaldırarak sesi temizleme.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h3&gt;Düzenleme Yazılımınızı Seçme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;düzenlemeyazılımınızı-seçme&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;DüzenlemeYazılımınızı Seçme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;düzenlemeyazılımınızı-seçme&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#d%c3%bczenlemeyaz%c4%b1l%c4%b1m%c4%b1n%c4%b1z%c4%b1-se%c3%a7me&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
  &lt;p&gt;Podcast düzenleme yazılımları söz konusu olduğunda, iki popüler seçenek Audacity ve GarageBand&#39;dir. Her birinin kendine göre güçlü yanları vardır ve farklı kullanıcı tipleri için uygundur.
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
@@ -57,16 +57,16 @@
  &lt;p&gt;Audacity, birden fazla platformda (Windows, Mac, Linux) mevcut olan ücretsiz, açık kaynaklı bir yazılımdır. Kullanıcı dostu arayüzü ve kapsamlı özellikleri nedeniyle yeni başlayanlar için idealdir:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Çoklu Parça Düzenleme***  : Birden fazla ses parçasıyla aynı anda çalışmanıza olanak tanır. 
+- ***Çoklu Parça Düzenleme*** : Birden fazla ses parçasıyla aynı anda çalışmanıza olanak tanır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geniş Format Desteği&lt;/strong&gt;&lt;/em&gt;  : MP3, WAV ve AIFF gibi çeşitli ses dosyası formatlarıyla uyumludur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geniş Format Desteği&lt;/strong&gt;&lt;/em&gt; : MP3, WAV ve AIFF gibi çeşitli ses dosyası formatlarıyla uyumludur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Efektler ve Eklentiler&lt;/strong&gt;&lt;/em&gt;  : Dahili efektler sunar ve gelişmiş işlevsellik için üçüncü taraf eklentilerini destekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Efektler ve Eklentiler&lt;/strong&gt;&lt;/em&gt; : Dahili efektler sunar ve gelişmiş işlevsellik için üçüncü taraf eklentilerini destekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -76,16 +76,16 @@
  &lt;p&gt;GarageBand, Mac kullanıcıları için bir diğer mükemmel seçimdir. Diğer yazılımlarda bulunan bazı gelişmiş özelliklerden yoksun olsa da, temel podcast düzenleme için güçlü bir araç olmaya devam etmektedir:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kullanıcı Dostu Arayüz***  : Düzeni sezgiseldir, bu da gezinmeyi kolaylaştırır. 
+- ***Kullanıcı Dostu Arayüz*** : Düzeni sezgiseldir, bu da gezinmeyi kolaylaştırır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Akıllı Kontroller&lt;/strong&gt;&lt;/em&gt;  : Kullanıcıyı bunaltmadan çeşitli ses efektleri ve ayarları sunar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Akıllı Kontroller&lt;/strong&gt;&lt;/em&gt; : Kullanıcıyı bunaltmadan çeşitli ses efektleri ve ayarları sunar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Entegre Döngüler ve Sesler&lt;/strong&gt;&lt;/em&gt;  : Podcast&amp;rsquo;inize kolayca dahil edebileceğiniz ses kütüphanesine erişim sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Entegre Döngüler ve Sesler&lt;/strong&gt;&lt;/em&gt; : Podcast&amp;rsquo;inize kolayca dahil edebileceğiniz ses kütüphanesine erişim sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -94,16 +94,16 @@
  &lt;p&gt;Düzenleme sürecine başlamadan önce gerekli tüm materyallerin hazır olduğundan emin olun:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ses Dosyaları***  : Kaydedilmiş podcast bölümünüz (WAV veya MP3 formatında). 
+- ***Ses Dosyaları*** : Kaydedilmiş podcast bölümünüz (WAV veya MP3 formatında). 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Giriş/Çıkış Müziği&lt;/strong&gt;&lt;/em&gt;  : Podcast&amp;rsquo;inizi tanıtan veya sonlandıran önceden kaydedilmiş bölümler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Giriş/Çıkış Müziği&lt;/strong&gt;&lt;/em&gt; : Podcast&amp;rsquo;inizi tanıtan veya sonlandıran önceden kaydedilmiş bölümler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ses Efektleri (eğer varsa)&lt;/strong&gt;&lt;/em&gt;  : Eklemek istediğiniz herhangi bir ek ses öğesi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ses Efektleri (eğer varsa)&lt;/strong&gt;&lt;/em&gt; : Eklemek istediğiniz herhangi bir ek ses öğesi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -119,7 +119,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;File&lt;/code&gt;&amp;gt; &lt;code&gt;Import&lt;/code&gt;&amp;gt; adresine gidin &lt;code&gt;Audio&amp;hellip;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;File&lt;/code&gt;&amp;gt;&lt;code&gt;Import&lt;/code&gt;&amp;gt;adresine gidin&lt;code&gt;Audio&amp;hellip;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -135,7 +135,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Ses dosyanızı zaman çizelgesine sürükleyin veya &lt;code&gt;File&lt;/code&gt;&amp;gt; öğesini kullanın &lt;code&gt;Import&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Ses dosyanızı zaman çizelgesine sürükleyin veya&lt;code&gt;File&lt;/code&gt;&amp;gt; öğesini kullanın&lt;code&gt;Import&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -150,11 +150,11 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Tüm sesleri seçmek için tuşuna basın &lt;code&gt;Ctrl + A&lt;/code&gt;. 
+- Tüm sesleri seçmek için tuşuna basın&lt;code&gt;Ctrl + A&lt;/code&gt;. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Effect&lt;/code&gt;&amp;gt; adresine gidin &lt;code&gt;Normalize&amp;hellip;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Effect&lt;/code&gt;&amp;gt;adresine gidin&lt;code&gt;Normalize&amp;hellip;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -193,7 +193,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;gt; &amp;gt; tuşuna basın &lt;code&gt;Delete&lt;/code&gt;veya şuraya gidin .&lt;code&gt;Edit&lt;/code&gt;&lt;code&gt;Remove Special&lt;/code&gt;&lt;code&gt;Trim&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;gt;&amp;gt;tuşuna basın&lt;code&gt;Delete&lt;/code&gt;veya şuraya gidin.&lt;code&gt;Edit&lt;/code&gt;&lt;code&gt;Remove Special&lt;/code&gt;&lt;code&gt;Trim&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -208,7 +208,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;Oynatma başlığını kesmek istediğiniz yere getirin, ardından sağ tıklayın ve öğesini seçin &lt;code&gt;Split at Playhead&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Oynatma başlığını kesmek istediğiniz yere getirin, ardından sağ tıklayın ve öğesini seçin&lt;code&gt;Split at Playhead&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -275,7 +275,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;File&lt;/code&gt;&amp;gt; &lt;code&gt;Export&lt;/code&gt;&amp;gt; seçeneğine gidin &lt;code&gt;Export as MP3&lt;/code&gt;veya seçin &lt;code&gt;Export as WAV&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;File&lt;/code&gt;&amp;gt;&lt;code&gt;Export&lt;/code&gt;&amp;gt; seçeneğinegidin&lt;code&gt;Export as MP3&lt;/code&gt;veya seçin&lt;code&gt;Export as WAV&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
@@ -285,7 +285,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Share&lt;/code&gt;&amp;gt; öğesine tıklayın &lt;code&gt;Export Song to Disk&amp;hellip;&lt;/code&gt;, formatınızı (MP3 veya AAC) seçin ve kaydedin.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Share&lt;/code&gt;&amp;gt;öğesine tıklayın&lt;code&gt;Export Song to Disk&amp;hellip;&lt;/code&gt;, formatınızı (MP3 veya AAC) seçin ve kaydedin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -294,7 +294,7 @@
  &lt;p&gt;Bu becerileri etkili bir şekilde uygulamak için, sağlanan bir örnek klibi (5 dakika uzunluğunda) düzenleyin. İşte buna nasıl yaklaşabileceğiniz:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Örnek Klibi***  Audacity veya GarageBand&#39;e aktarın. 
+- ***Örnek Klibi*** Audacity veya GarageBand&#39;e aktarın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
@@ -331,16 +331,16 @@
 &lt;p&gt;Mikrofonunuz ses kaydının temel taşıdır. Belirli ihtiyaçlarınız için doğru mikrofonu seçmeniz önemlidir. İşte bazı yaygın türler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kondenser mikrofonlar:***   Hassasiyetleri ve netlikleriyle bilinen kondenser mikrofonlar, stüdyo kayıtları ve seslendirmeler için idealdir. 
+- ***Kondenser mikrofonlar:*** Hassasiyetleri ve netlikleriyle bilinen kondenser mikrofonlar, stüdyo kayıtları ve seslendirmeler için idealdir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinamik mikrofonlar:&lt;/strong&gt;&lt;/em&gt;   Kondansatör mikrofonlara göre daha dayanıklı ve daha az hassas olan dinamik mikrofonlar, genellikle canlı performanslar ve dış mekan kayıtları için kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinamik mikrofonlar:&lt;/strong&gt;&lt;/em&gt; Kondansatör mikrofonlara göre daha dayanıklı ve daha az hassas olan dinamik mikrofonlar, genellikle canlı performanslar ve dış mekan kayıtları için kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tüfek mikrofonlar:&lt;/strong&gt;&lt;/em&gt;   Belirli bir yönden gelen sesi almak için tasarlanan tüfek mikrofonlar genellikle film yapımcılığı ve televizyon yapımlarında kullanılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tüfek mikrofonlar:&lt;/strong&gt;&lt;/em&gt; Belirli bir yönden gelen sesi almak için tasarlanan tüfek mikrofonlar genellikle film yapımcılığı ve televizyon yapımlarında kullanılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -348,56 +348,56 @@
 &lt;p&gt;Mikrofonunuzun yerleşimi kayıtlarınızın ses kalitesini önemli ölçüde etkileyebilir. İşte bazı genel yönergeler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Mesafe:***   Mikrofonunuz ile ses kaynağı arasındaki mesafe genel tonu ve ses seviyesini etkileyecektir. Optimum yerleşimi bulmak için farklı mesafeleri deneyin. 
+- ***Mesafe:*** Mikrofonunuz ile ses kaynağı arasındaki mesafe genel tonu ve ses seviyesini etkileyecektir. Optimum yerleşimi bulmak için farklı mesafeleri deneyin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Açı:&lt;/strong&gt;&lt;/em&gt;   Mikrofonunuzu konumlandırdığınız açı, farklı frekansların dengesini etkileyebilir. Sesi nasıl etkilediğini görmek için farklı açıları deneyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Açı:&lt;/strong&gt;&lt;/em&gt; Mikrofonunuzu konumlandırdığınız açı, farklı frekansların dengesini etkileyebilir. Sesi nasıl etkilediğini görmek için farklı açıları deneyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yalıtım:&lt;/strong&gt;&lt;/em&gt;   Mikrofonunuzu sessiz bir ortama yerleştirerek veya patlayıcı sesleri azaltmak için pop filtresi kullanarak arka plan gürültüsünü en aza indirin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yalıtım:&lt;/strong&gt;&lt;/em&gt; Mikrofonunuzu sessiz bir ortama yerleştirerek veya patlayıcı sesleri azaltmak için pop filtresi kullanarak arka plan gürültüsünü en aza indirin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Ses arayüzü&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Ses arayüzü, mikrofonunuzu bilgisayarınıza bağlayan bir cihazdır. Ön amplifikasyon, fantom güç (yoğunlaştırıcı mikrofonlar için) ve çoklu giriş ve çıkışlar gibi temel özellikler sağlar.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Kayıt  Yazılımı&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;KayıtYazılımı&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Hem ücretsiz hem de ücretli olmak üzere birçok mükemmel ses kayıt yazılımı seçeneği mevcuttur. Bazı popüler seçenekler şunlardır:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Audacity:***   Kullanıcı dostu arayüze sahip, ücretsiz ve açık kaynaklı bir yazılımdır. 
+- ***Audacity:*** Kullanıcı dostu arayüze sahip, ücretsiz ve açık kaynaklı bir yazılımdır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adobe Audition:&lt;/strong&gt;&lt;/em&gt;   Düzenleme ve miksleme için gelişmiş özelliklere sahip profesyonel düzeyde bir yazılım.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Adobe Audition:&lt;/strong&gt;&lt;/em&gt; Düzenleme ve miksleme için gelişmiş özelliklere sahip profesyonel düzeyde bir yazılım.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;GarageBand:&lt;/strong&gt;&lt;/em&gt;   Mac kullanıcıları için popüler bir seçenek olan GarageBand, müzik kaydetmek ve üretmek için çeşitli araçlar sunuyor.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;GarageBand:&lt;/strong&gt;&lt;/em&gt; Mac kullanıcıları için popüler bir seçenek olan GarageBand, müzik kaydetmek ve üretmek için çeşitli araçlar sunuyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Kayıt Teknikleri&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kazanç:***   Sinyalinizin çok yüksek veya çok düşük olmamasını sağlamak için ses arayüzünüzdeki veya kayıt yazılımınızdaki kazanç seviyesini ayarlayın. 
+- ***Kazanç:*** Sinyalinizin çok yüksek veya çok düşük olmamasını sağlamak için ses arayüzünüzdeki veya kayıt yazılımınızdaki kazanç seviyesini ayarlayın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eşitleme:&lt;/strong&gt;&lt;/em&gt;   Kaydınızın frekans dengesini ayarlamak için eşitlemeyi kullanın. Bu, belirli frekansları iyileştirmeye veya istenmeyen gürültüyü azaltmaya yardımcı olabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eşitleme:&lt;/strong&gt;&lt;/em&gt; Kaydınızın frekans dengesini ayarlamak için eşitlemeyi kullanın. Bu, belirli frekansları iyileştirmeye veya istenmeyen gürültüyü azaltmaya yardımcı olabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıkıştırma:&lt;/strong&gt;&lt;/em&gt;   Sıkıştırma, dinamik aralığı azaltmak ve sesinizi daha tutarlı hale getirmek için kullanılabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıkıştırma:&lt;/strong&gt;&lt;/em&gt; Sıkıştırma, dinamik aralığı azaltmak ve sesinizi daha tutarlı hale getirmek için kullanılabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gürültü azaltma:&lt;/strong&gt;&lt;/em&gt;   Kaydınızda arka plan gürültüsü varsa, bunu ortadan kaldırmak için gürültü azaltma araçlarını kullanabilirsiniz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gürültü azaltma:&lt;/strong&gt;&lt;/em&gt; Kaydınızda arka plan gürültüsü varsa, bunu ortadan kaldırmak için gürültü azaltma araçlarını kullanabilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -406,21 +406,21 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Ek İpuçları&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Düzenli olarak pratik yapın:***   Ne kadar çok pratik yaparsanız, ses kaydı konusunda o kadar iyi olursunuz. 
+- ***Düzenli olarak pratik yapın:*** Ne kadar çok pratik yaparsanız, ses kaydı konusunda o kadar iyi olursunuz. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Farklı teknikler deneyin:&lt;/strong&gt;&lt;/em&gt;   Yeni şeyler denemekten ve farklı kayıt tekniklerini denemekten korkmayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Farklı teknikler deneyin:&lt;/strong&gt;&lt;/em&gt; Yeni şeyler denemekten ve farklı kayıt tekniklerini denemekten korkmayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eleştirel dinleyin:&lt;/strong&gt;&lt;/em&gt;   Kayıtlarınızın ayrıntılarına dikkat edin ve iyileştirilebilecek alanları belirleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eleştirel dinleyin:&lt;/strong&gt;&lt;/em&gt; Kayıtlarınızın ayrıntılarına dikkat edin ve iyileştirilebilecek alanları belirleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geri bildirim isteyin:&lt;/strong&gt;&lt;/em&gt;   Arkadaşlarınızdan veya aile üyelerinizden kayıtlarınızı dinlemelerini ve geri bildirim sağlamalarını isteyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geri bildirim isteyin:&lt;/strong&gt;&lt;/em&gt; Arkadaşlarınızdan veya aile üyelerinizden kayıtlarınızı dinlemelerini ve geri bildirim sağlamalarını isteyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -446,21 +446,21 @@
 &lt;p&gt;Ekipmana veya kayda dalmadan önce, içeriğinizin açıkça tanımlanması ve düzenlenmesi gerekir. Podcast&amp;rsquo;inizi planlamak şunları sağlar:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Odaklanmanızı sağlayın***  : Bir plan olmadan, bir bölüm sırasında konudan sapmak veya saçmalamak kolaydır; bu da izleyicilerinizin dikkatinin dağılmasına neden olabilir. 
+- ***Odaklanmanızı sağlayın*** : Bir plan olmadan, bir bölüm sırasında konudan sapmak veya saçmalamak kolaydır; bu da izleyicilerinizin dikkatinin dağılmasına neden olabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçeriğiniz akıcı bir şekilde akar&lt;/strong&gt;&lt;/em&gt;  : Uygun planlama, bölüm içinde mantıksal ilerlemeye olanak tanır ve tutarlı bir anlatı veya konu tartışması sürdürmenize yardımcı olur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İçeriğiniz akıcı bir şekilde akar&lt;/strong&gt;&lt;/em&gt; : Uygun planlama, bölüm içinde mantıksal ilerlemeye olanak tanır ve tutarlı bir anlatı veya konu tartışması sürdürmenize yardımcı olur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tutarlılığı korursunuz&lt;/strong&gt;&lt;/em&gt;  : Bir planınız olduğunda, bölümleri düzenli bir programa göre üretmek, sadık bir izleyici kitlesi oluşturmak ve onları etkileşimde tutmak daha kolaydır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tutarlılığı korursunuz&lt;/strong&gt;&lt;/em&gt; : Bir planınız olduğunda, bölümleri düzenli bir programa göre üretmek, sadık bir izleyici kitlesi oluşturmak ve onları etkileşimde tutmak daha kolaydır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Üretim süresini azaltırsınız&lt;/strong&gt;&lt;/em&gt;  : İçeriğinizi düzenlemek için önceden harcanan zaman, daha sorunsuz kayıt oturumları ve daha sonra daha hızlı düzenleme süreçleriyle sonuçlanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Üretim süresini azaltırsınız&lt;/strong&gt;&lt;/em&gt; : İçeriğinizi düzenlemek için önceden harcanan zaman, daha sorunsuz kayıt oturumları ve daha sonra daha hızlı düzenleme süreçleriyle sonuçlanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -495,21 +495,21 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Solo Gösteriler***  : Doğrudan izleyiciyle konuşur, düşüncelerinizi, deneyimlerinizi veya uzmanlığınızı paylaşırsınız. 
+- ***Solo Gösteriler*** : Doğrudan izleyiciyle konuşur, düşüncelerinizi, deneyimlerinizi veya uzmanlığınızı paylaşırsınız. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Röportajlar&lt;/strong&gt;&lt;/em&gt;  : Konukları belirli bir konu hakkında görüşlerini paylaşmaya davet edersiniz.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Röportajlar&lt;/strong&gt;&lt;/em&gt; : Konukları belirli bir konu hakkında görüşlerini paylaşmaya davet edersiniz.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Panel Tartışmaları&lt;/strong&gt;&lt;/em&gt;  : Birden fazla sunucu veya konuk bir konuyu tartışır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Panel Tartışmaları&lt;/strong&gt;&lt;/em&gt; : Birden fazla sunucu veya konuk bir konuyu tartışır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Anlatı/Hikaye Anlatımı&lt;/strong&gt;&lt;/em&gt;  : Bir veya daha fazla bölümde bir hikaye anlatırsınız (örneğin, gerçek suç veya seri kurgu). İçeriğiniz ve hedef kitlenizle uyumlu bir format seçin. Örneğin, bir konu uzmanıysanız, solo veya röportaj formatı en iyi şekilde işe yarayabilir. Bir hikaye anlatıyorsanız, bir anlatı stili idealdir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Anlatı/Hikaye Anlatımı&lt;/strong&gt;&lt;/em&gt; : Bir veya daha fazla bölümde bir hikaye anlatırsınız (örneğin, gerçek suç veya seri kurgu). İçeriğiniz ve hedef kitlenizle uyumlu bir format seçin. Örneğin, bir konu uzmanıysanız, solo veya röportaj formatı en iyi şekilde işe yarayabilir. Bir hikaye anlatıyorsanız, bir anlatı stili idealdir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -540,16 +540,16 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kısa biçim (15–30 dakika)***  : Öz, odaklanmış bölümler için idealdir. 
+- ***Kısa biçim (15–30 dakika)*** : Öz, odaklanmış bölümler için idealdir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Orta form (30–60 dakika)&lt;/strong&gt;&lt;/em&gt;  : Röportajlar, tartışmalar veya konuların derinlemesine incelenmesi için uygundur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Orta form (30–60 dakika)&lt;/strong&gt;&lt;/em&gt; : Röportajlar, tartışmalar veya konuların derinlemesine incelenmesi için uygundur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzun biçim (60+ dakika)&lt;/strong&gt;&lt;/em&gt;  : Derinlemesine tartışmalar veya seri içerikler için en iyisidir. Uygun bir bölüm uzunluğu seçmek, içeriğinizi daha etkili bir şekilde yapılandırmanıza yardımcı olacaktır. Uzunluktaki tutarlılık, dinleyici beklentilerini yönetmenize de yardımcı olur.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzun biçim (60+ dakika)&lt;/strong&gt;&lt;/em&gt; : Derinlemesine tartışmalar veya seri içerikler için en iyisidir. Uygun bir bölüm uzunluğu seçmek, içeriğinizi daha etkili bir şekilde yapılandırmanıza yardımcı olacaktır. Uzunluktaki tutarlılık, dinleyici beklentilerini yönetmenize de yardımcı olur.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -595,7 +595,7 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- Her bölümün bir başlangıcı, ortası ve sonu olmalı. İşte takip edebileceğiniz basit bir yapı: - ***Giriş***  : Dinleyicilerimize hoş geldiniz diyoruz ve bölümün konusunu tanıtıyoruz. - ***Ana İçerik***  : Konuyu tartışın, fikir, röportaj veya hikayeler sunun. - ***Kapanış***  : Önemli noktaları özetleyin, harekete geçirici çağrılarda bulunun (örneğin, dinleyicilerden abone olmalarını, yorum bırakmalarını isteyin) ve bir sonraki bölümün önizlemesini yapın.  İyi tanımlanmış bir bölüm yapısı, bölümleriniz arasında tutarlılık yaratmanıza yardımcı olur; bu da sadık bir izleyici kitlesi oluşturmanın anahtarıdır. 
+- Her bölümün bir başlangıcı, ortası ve sonu olmalı. İşte takip edebileceğiniz basit bir yapı: - ***Giriş*** : Dinleyicilerimize hoş geldiniz diyoruz ve bölümün konusunu tanıtıyoruz. - ***Ana İçerik*** : Konuyu tartışın, fikir, röportaj veya hikayeler sunun. - ***Kapanış*** : Önemli noktaları özetleyin, harekete geçirici çağrılarda bulunun (örneğin, dinleyicilerden abone olmalarını, yorum bırakmalarını isteyin) ve bir sonraki bölümün önizlemesini yapın.  İyi tanımlanmış bir bölüm yapısı, bölümleriniz arasında tutarlılık yaratmanıza yardımcı olur; bu da sadık bir izleyici kitlesi oluşturmanın anahtarıdır. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;h3&gt;Bölüm Yapısının Önemi&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bölüm-yapısının-önemi&#34;&gt;&lt;/span&gt;
@@ -606,61 +606,61 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Giriş/Açılış***  : 
+- ***Giriş/Açılış*** : 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İlgi Çekici***  : Dinleyicinin dikkatini çekecek ilgi çekici bir şeyle başlayın; bu ilgi çekici bir soru, kısa bir hikaye veya bir gerçek olabilir. 
+- ***İlgi Çekici*** : Dinleyicinin dikkatini çekecek ilgi çekici bir şeyle başlayın; bu ilgi çekici bir soru, kısa bir hikaye veya bir gerçek olabilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Müzik&lt;/strong&gt;&lt;/em&gt;  : Birçok başarılı podcast, bir ruh hali veya tema oluşturmak için giriş müziğini kullanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Müzik&lt;/strong&gt;&lt;/em&gt; : Birçok başarılı podcast, bir ruh hali veya tema oluşturmak için giriş müziğini kullanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Giriş&lt;/strong&gt;&lt;/em&gt;  : Kendinizi ve podcasti kısaca tanıtın, ardından bölümün neleri kapsayacağını özetleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Giriş&lt;/strong&gt;&lt;/em&gt; : Kendinizi ve podcasti kısaca tanıtın, ardından bölümün neleri kapsayacağını özetleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fragman&lt;/strong&gt;&lt;/em&gt;  : Bölümün ilerleyen saatlerinde röportajlarınız veya önemli duyurularınız varsa, dinleyicilerin ilgisini canlı tutmak için bunları önceden duyurun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fragman&lt;/strong&gt;&lt;/em&gt; : Bölümün ilerleyen saatlerinde röportajlarınız veya önemli duyurularınız varsa, dinleyicilerin ilgisini canlı tutmak için bunları önceden duyurun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ana İçerik***  : 
+- ***Ana İçerik*** : 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölümün Gövdesi***  : Burada ana konuya dalıyorsunuz. Daha uzun bir tartışmaysa, onu parçalara ayırın. Tek kişilik bir podcast ise, önemli noktaları veya hikayeleri planlayın. Röportajlar için, sorularınızı önceden hazırlayın, ancak doğaçlamaya yer bırakın. 
+- ***Bölümün Gövdesi*** : Burada ana konuya dalıyorsunuz. Daha uzun bir tartışmaysa, onu parçalara ayırın. Tek kişilik bir podcast ise, önemli noktaları veya hikayeleri planlayın. Röportajlar için, sorularınızı önceden hazırlayın, ancak doğaçlamaya yer bırakın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinleyici Katılımı&lt;/strong&gt;&lt;/em&gt;  : Dinleyici sorularını yanıtlama, dinleyici hikayeleri sunma veya önceki bölümlerden gelen izleyici geri bildirimlerine atıfta bulunma gibi bölümleri ekleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinleyici Katılımı&lt;/strong&gt;&lt;/em&gt; : Dinleyici sorularını yanıtlama, dinleyici hikayeleri sunma veya önceki bölümlerden gelen izleyici geri bildirimlerine atıfta bulunma gibi bölümleri ekleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kapanış/Çıkış***  : 
+- ***Kapanış/Çıkış*** : 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Özet***  : Bölümde tartışılan temel noktaları özetleyin. Bu, dinleyicileriniz için ana fikirleri güçlendirir. 
+- ***Özet*** : Bölümde tartışılan temel noktaları özetleyin. Bu, dinleyicileriniz için ana fikirleri güçlendirir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt;  : Hedef kitlenizden abone olma, sosyal medyada takip etme veya yorum bırakma gibi bir eylemde bulunmalarını isteyin. Bunu net ve eyleme geçirilebilir hale getirin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt; : Hedef kitlenizden abone olma, sosyal medyada takip etme veya yorum bırakma gibi bir eylemde bulunmalarını isteyin. Bunu net ve eyleme geçirilebilir hale getirin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sonraki Bölüm İçin Fragman&lt;/strong&gt;&lt;/em&gt;  : Gelecek bölüme dair gizli bir ön izleme veya ipucu sunarak heyecan yaratın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sonraki Bölüm İçin Fragman&lt;/strong&gt;&lt;/em&gt; : Gelecek bölüme dair gizli bir ön izleme veya ipucu sunarak heyecan yaratın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -678,11 +678,11 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Konu***  : Kendinizi tanıtın, podcast&#39;in amacını açıklayın ve dinleyicilerin neler beklemesi gerektiğine dair genel bir bakış sunun. 
+- ***Konu*** : Kendinizi tanıtın, podcast&#39;in amacını açıklayın ve dinleyicilerin neler beklemesi gerektiğine dair genel bir bakış sunun. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - Sen kimsin ve bu podcasti neden başlatıyorsun? 
@@ -701,7 +701,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt;  : Dinleyicilerden abone olmalarını ve güncellemeler için sosyal medyanızı takip etmelerini isteyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt; : Dinleyicilerden abone olmalarını ve güncellemeler için sosyal medyanızı takip etmelerini isteyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -712,11 +712,11 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Konu***  : Podcast&#39;inizin temasıyla ilgili belirli bir konu seçin. 
+- ***Konu*** : Podcast&#39;inizin temasıyla ilgili belirli bir konu seçin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - Konuya bir giriş yapın. 
@@ -735,7 +735,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt;  : Dinleyicilerden gelecek bölümler için konu hakkında geri bildirim veya soru bırakmalarını isteyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçirme Çağrısı&lt;/strong&gt;&lt;/em&gt; : Dinleyicilerden gelecek bölümler için konu hakkında geri bildirim veya soru bırakmalarını isteyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -746,11 +746,11 @@
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Konu***  : Dinleyicilerin sorularını yanıtlayın veya izleyicilerin geri bildirimlerine göre Bölüm 2&#39;deki konuyu daha derinlemesine inceleyin. 
+- ***Konu*** : Dinleyicilerin sorularını yanıtlayın veya izleyicilerin geri bildirimlerine göre Bölüm 2&#39;deki konuyu daha derinlemesine inceleyin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ana Noktalar&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - Seyircilerin sorularını veya yorumlarını inceleyin. 
@@ -769,7 +769,7 @@
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçme Çağrısı&lt;/strong&gt;&lt;/em&gt;  : Daha fazla soru veya yorum isteyerek sürekli katılımı teşvik edin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Harekete Geçme Çağrısı&lt;/strong&gt;&lt;/em&gt; : Daha fazla soru veya yorum isteyerek sürekli katılımı teşvik edin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -804,37 +804,37 @@
 &lt;p&gt;Mikrofon, herhangi bir podcaster için tartışmasız en kritik ekipman parçasıdır. USB ve XLR mikrofonlar arasındaki seçim, kurulumunuzu ve bütçenizi etkileyebilir.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***USB Mikrofonlar***  : Kullanım kolaylığı ve uygun fiyatı nedeniyle yeni başlayanlar için idealdir. Ek bir ekipmana ihtiyaç duymadan doğrudan bilgisayarınıza bağlanırlar. 
+- ***USB Mikrofonlar*** : Kullanım kolaylığı ve uygun fiyatı nedeniyle yeni başlayanlar için idealdir. Ek bir ekipmana ihtiyaç duymadan doğrudan bilgisayarınıza bağlanırlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Önerilen Modeller&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Önerilen Modeller&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Samson Q2U***  : Uygun fiyata harika ses kalitesi sunan çok yönlü bir USB/XLR mikrofon. 
+- ***Samson Q2U*** : Uygun fiyata harika ses kalitesi sunan çok yönlü bir USB/XLR mikrofon. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Blue Yeti&lt;/strong&gt;&lt;/em&gt;  : Çeşitli kayıt ortamlarına uygun olmasını sağlayan çoklu ses alma desenleri nedeniyle popülerdir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Blue Yeti&lt;/strong&gt;&lt;/em&gt; : Çeşitli kayıt ortamlarına uygun olmasını sağlayan çoklu ses alma desenleri nedeniyle popülerdir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;XLR Mikrofonlar&lt;/strong&gt;&lt;/em&gt;  : Bunlar bir ses arabirimi veya mikser gerektirir, ancak üstün ses kalitesi ve esneklik sunarlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;XLR Mikrofonlar&lt;/strong&gt;&lt;/em&gt; : Bunlar bir ses arabirimi veya mikser gerektirir, ancak üstün ses kalitesi ve esneklik sunarlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Önerilen Modeller&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Önerilen Modeller&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Shure SM7B***  : Zengin ses kalitesiyle bilinen profesyonel düzeyde bir mikrofon. 
+- ***Shure SM7B*** : Zengin ses kalitesiyle bilinen profesyonel düzeyde bir mikrofon. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Rode PodMic&lt;/strong&gt;&lt;/em&gt;  : Çoklu hoparlör kurulumları için uygun fiyatlı ve etkili.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Rode PodMic&lt;/strong&gt;&lt;/em&gt; : Çoklu hoparlör kurulumları için uygun fiyatlı ve etkili.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -846,16 +846,16 @@
 &lt;p&gt;Kayıt sırasında sesinizi izlemek, netlik ve kaliteyi sağlamak için önemlidir. Ses sızıntısını önledikleri için kapalı kulaklıklar tercih edilir.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Önerilen Modeller***  : 
+- ***Önerilen Modeller*** : 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Audio-Technica ATH-M50x&lt;/strong&gt;&lt;/em&gt;  : Konforu ve doğru ses üretimiyle bilinir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Audio-Technica ATH-M50x&lt;/strong&gt;&lt;/em&gt; : Konforu ve doğru ses üretimiyle bilinir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beyerdynamic DT 700 Pro X&lt;/strong&gt;&lt;/em&gt;  : Konforu sayesinde uzun kayıt seansları için mükemmeldir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beyerdynamic DT 700 Pro X&lt;/strong&gt;&lt;/em&gt; : Konforu sayesinde uzun kayıt seansları için mükemmeldir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -865,46 +865,46 @@
 &lt;p&gt;Eğer XLR mikrofonları tercih ederseniz, analog sinyalleri bilgisayarınızın işleyebileceği dijital sese dönüştürecek bir ses arabirimine ihtiyacınız olacaktır.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Önerilen Modeller***  : 
+- ***Önerilen Modeller*** : 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Focusrite Scarlett 2i2&lt;/strong&gt;&lt;/em&gt;  : Kalitesi ve kullanım kolaylığı ile oldukça beğenilen, iki adet XLR girişi bulunan bir model.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Focusrite Scarlett 2i2&lt;/strong&gt;&lt;/em&gt; : Kalitesi ve kullanım kolaylığı ile oldukça beğenilen, iki adet XLR girişi bulunan bir model.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;PreSonus AudioBox USB 96&lt;/strong&gt;&lt;/em&gt;  : Sağlam performans sunan, bütçe dostu bir seçenek.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;PreSonus AudioBox USB 96&lt;/strong&gt;&lt;/em&gt; : Sağlam performans sunan, bütçe dostu bir seçenek.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h3&gt;&lt;em&gt;&lt;strong&gt;4. Kayıt  Yazılımı&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-kayıtyazılımı&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;4. KayıtYazılımı&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-kayıtyazılımı&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#4-kay%c4%b1tyaz%c4%b1l%c4%b1m%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Podcast&#39;inizi düzenlemek ve üretmek için doğru yazılımı seçmek çok önemlidir. Ücretsizden premium&#39;a kadar birçok seçenek mevcuttur.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ücretsiz Yazılım***  :&lt;!-- wp:list --&gt;
+- ***Ücretsiz Yazılım*** :&lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Audacity***  : Podcast yayıncıları tarafından yaygın olarak kullanılan, kullanıcı dostu, güçlü ve açık kaynaklı bir ses düzenleyicisi. 
+- ***Audacity*** : Podcast yayıncıları tarafından yaygın olarak kullanılan, kullanıcı dostu, güçlü ve açık kaynaklı bir ses düzenleyicisi. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;GarageBand&lt;/strong&gt;&lt;/em&gt;  (Yalnızca Mac): Apple cihazlarıyla iyi entegre olan sezgisel bir seçenek.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;GarageBand&lt;/strong&gt;&lt;/em&gt; (Yalnızca Mac): Apple cihazlarıyla iyi entegre olan sezgisel bir seçenek.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ücretli Yazılımlar&lt;/strong&gt;&lt;/em&gt;  :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Ücretli Yazılımlar&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Adobe Audition***  : Profesyonel ses düzenleme için gelişmiş özellikler sunar ancak abonelik ücreti vardır. 
+- ***Adobe Audition*** : Profesyonel ses düzenleme için gelişmiş özellikler sunar ancak abonelik ücreti vardır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hindenburg Gazeteci&lt;/strong&gt;&lt;/em&gt;  : Hikaye anlatıcılığına odaklanan, özellikle podcaster&amp;rsquo;lar ve gazeteciler için tasarlanmıştır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hindenburg Gazeteci&lt;/strong&gt;&lt;/em&gt; : Hikaye anlatıcılığına odaklanan, özellikle podcaster&amp;rsquo;lar ve gazeteciler için tasarlanmıştır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -916,11 +916,11 @@
 &lt;p&gt;Kayıt kalitenizi artırmak için ek aksesuarlara yatırım yapmayı düşünün:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Pop Filtreleri***  : Sesi bozabilecek patlayıcı sesleri (örneğin &#34;p&#34; ve &#34;b&#34;) azaltmaya yardımcı olur. 
+- ***Pop Filtreleri*** : Sesi bozabilecek patlayıcı sesleri (örneğin &#34;p&#34; ve &#34;b&#34;) azaltmaya yardımcı olur. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boom Kolları veya Standları&lt;/strong&gt;&lt;/em&gt;  : Çalışma alanınızı düzenli tutarken mikrofonunuzu rahatça konumlandırmanızı sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boom Kolları veya Standları&lt;/strong&gt;&lt;/em&gt; : Çalışma alanınızı düzenli tutarken mikrofonunuzu rahatça konumlandırmanızı sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1048,32 +1048,32 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Mülakat Türleri:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Birebir görüşmeler:***   En yaygın türdür, bir sunucu ve bir konukla yapılır. 
+- ***Birebir görüşmeler:*** En yaygın türdür, bir sunucu ve bir konukla yapılır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Panel tartışmaları:&lt;/strong&gt;&lt;/em&gt;   Birden fazla konuğun bir konuyu farklı açılardan tartışması.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Panel tartışmaları:&lt;/strong&gt;&lt;/em&gt; Birden fazla konuğun bir konuyu farklı açılardan tartışması.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzaktan görüşmeler:&lt;/strong&gt;&lt;/em&gt;   Telefon veya görüntülü konferans aracılığıyla gerçekleştirilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzaktan görüşmeler:&lt;/strong&gt;&lt;/em&gt; Telefon veya görüntülü konferans aracılığıyla gerçekleştirilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Mülakat Yapmak İçin İpuçları:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Soruları önceden hazırlayın:***   Bu, odaklanmanıza ve tüm önemli noktaları kapsadığınızdan emin olmanıza yardımcı olacaktır. 
+- ***Soruları önceden hazırlayın:*** Bu, odaklanmanıza ve tüm önemli noktaları kapsadığınızdan emin olmanıza yardımcı olacaktır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etkin bir şekilde dinleyin:&lt;/strong&gt;&lt;/em&gt;   Konuklarınızın ne söylediğine dikkat edin ve takip soruları sorun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etkin bir şekilde dinleyin:&lt;/strong&gt;&lt;/em&gt; Konuklarınızın ne söylediğine dikkat edin ve takip soruları sorun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Rahat bir atmosfer yaratın:&lt;/strong&gt;&lt;/em&gt;   Konuklarınızın kendilerini hoş karşılanmış ve rahat hissetmelerini sağlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Rahat bir atmosfer yaratın:&lt;/strong&gt;&lt;/em&gt; Konuklarınızın kendilerini hoş karşılanmış ve rahat hissetmelerini sağlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1083,32 +1083,32 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Hikaye Anlatma Podcast&amp;rsquo;lerinin Türleri:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kişisel anlatılar:***   Sunucunun kendi hayatından hikayeler. 
+- ***Kişisel anlatılar:*** Sunucunun kendi hayatından hikayeler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurgusal anlatılar:&lt;/strong&gt;&lt;/em&gt;   Orijinal öyküler veya var olan eserlerin uyarlamaları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurgusal anlatılar:&lt;/strong&gt;&lt;/em&gt; Orijinal öyküler veya var olan eserlerin uyarlamaları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek suç hikayeleri:&lt;/strong&gt;&lt;/em&gt;   Gerçek hayattaki suçlarla ilgili araştırmacı gazetecilik ve hikaye anlatımı.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerçek suç hikayeleri:&lt;/strong&gt;&lt;/em&gt; Gerçek hayattaki suçlarla ilgili araştırmacı gazetecilik ve hikaye anlatımı.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Hikaye Anlatımı İçin İpuçları:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Gösterin, anlatmayın:***   Hikayenizi canlandırmak için canlı tasvirler ve duyusal detaylar kullanın. 
+- ***Gösterin, anlatmayın:*** Hikayenizi canlandırmak için canlı tasvirler ve duyusal detaylar kullanın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerilim ve beklenti yaratın:&lt;/strong&gt;&lt;/em&gt;   Gizem veya gerilim duygusu yaratarak izleyicilerinizin ilgisini canlı tutun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Gerilim ve beklenti yaratın:&lt;/strong&gt;&lt;/em&gt; Gizem veya gerilim duygusu yaratarak izleyicilerinizin ilgisini canlı tutun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İkna edici bir ses tonu kullanın:&lt;/strong&gt;&lt;/em&gt;   Sesiniz ve sunumunuz bir hikaye anlatımı podcast&amp;rsquo;ini başarılı kılabilir veya başarısızlığa uğratabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İkna edici bir ses tonu kullanın:&lt;/strong&gt;&lt;/em&gt; Sesiniz ve sunumunuz bir hikaye anlatımı podcast&amp;rsquo;ini başarılı kılabilir veya başarısızlığa uğratabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1118,32 +1118,32 @@
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Eğitim Podcast Türleri:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Dersler:***   Belirli bir konunun derinlemesine anlatımı. 
+- ***Dersler:*** Belirli bir konunun derinlemesine anlatımı. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eğitimler:&lt;/strong&gt;&lt;/em&gt;   Yeni bir beceri öğrenmek için adım adım kılavuzlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eğitimler:&lt;/strong&gt;&lt;/em&gt; Yeni bir beceri öğrenmek için adım adım kılavuzlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzmanlarla röportajlar:&lt;/strong&gt;&lt;/em&gt;   Belirli bir alandaki uzmanlarla yapılan görüşmeler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzmanlarla röportajlar:&lt;/strong&gt;&lt;/em&gt; Belirli bir alandaki uzmanlarla yapılan görüşmeler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Eğitici Podcast&amp;rsquo;ler İçin İpuçları:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Basit tutun:***   Karmaşık konuları daha küçük, anlaşılır parçalara bölün. 
+- ***Basit tutun:*** Karmaşık konuları daha küçük, anlaşılır parçalara bölün. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Örnekler ve benzetmeler kullanın:&lt;/strong&gt;&lt;/em&gt;   Dinleyicilerin soyut kavramları anlamalarına yardımcı olun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Örnekler ve benzetmeler kullanın:&lt;/strong&gt;&lt;/em&gt; Dinleyicilerin soyut kavramları anlamalarına yardımcı olun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;İlgi çekici hale getirin:&lt;/strong&gt;&lt;/em&gt;   İzleyicilerinizin ilgisini canlı tutmak için hikaye anlatma tekniklerini ve mizahı kullanın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;İlgi çekici hale getirin:&lt;/strong&gt;&lt;/em&gt; İzleyicilerinizin ilgisini canlı tutmak için hikaye anlatma tekniklerini ve mizahı kullanın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1197,21 +1197,21 @@
 &lt;p&gt;Bir podcast&#39;in temel bileşenleri şunlardır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Bölümler***  : Podcast&#39;in içeriğini oluşturan bireysel ses dosyaları. 
+- ***Bölümler*** : Podcast&#39;in içeriğini oluşturan bireysel ses dosyaları. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dizi&lt;/strong&gt;&lt;/em&gt;  : Belirli bir tema veya konu üzerine bölümlerin koleksiyonu.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dizi&lt;/strong&gt;&lt;/em&gt; : Belirli bir tema veya konu üzerine bölümlerin koleksiyonu.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sunucu&lt;/strong&gt;&lt;/em&gt;  : Podcasti yöneten, içeriği yönlendiren ve izleyiciyle etkileşime giren kişi veya kişiler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sunucu&lt;/strong&gt;&lt;/em&gt; : Podcasti yöneten, içeriği yönlendiren ve izleyiciyle etkileşime giren kişi veya kişiler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinleyiciler&lt;/strong&gt;&lt;/em&gt;  : Podcast bölümlerini dinlemek için abone olan kitle.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dinleyiciler&lt;/strong&gt;&lt;/em&gt; : Podcast bölümlerini dinlemek için abone olan kitle.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1228,16 +1228,16 @@
 &lt;p&gt;Podcasting, 2000&#39;lerin başında ortaya çıkan nispeten yeni bir medya biçimidir. İndirilebilir ses içeriği kavramı daha önce de vardı, ancak &#34;podcasting&#34; terimi ve ilişkili teknoloji, Apple&#39;ın iPod ve RSS akışlarının yükselişiyle öne çıktı.
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Terimin Türetilmesi***  : &#34;Podcasting&#34; terimi, &#34;iPod&#34; (Apple&#39;ın popüler medya oynatıcısı) ve &#34;broadcasting&#34; kelimelerinin birleşimidir. Ancak, terimin &#34;iPod&#34;dan türetilmiş olmasına rağmen, podcasting&#39;in yalnızca Apple cihazlarına özgü olmadığını belirtmekte fayda var. İnternete bağlı herhangi bir cihazda tüketilebilir. 
+- ***Terimin Türetilmesi*** : &#34;Podcasting&#34; terimi, &#34;iPod&#34; (Apple&#39;ın popüler medya oynatıcısı) ve &#34;broadcasting&#34; kelimelerinin birleşimidir. Ancak, terimin &#34;iPod&#34;dan türetilmiş olmasına rağmen, podcasting&#39;in yalnızca Apple cihazlarına özgü olmadığını belirtmekte fayda var. İnternete bağlı herhangi bir cihazda tüketilebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;***RSS Akışları ve Sendikasyon : Podcasting için gerçek atılım *** &lt;em&gt;&lt;strong&gt;, RSS (Gerçekten Basit Sendikasyon)&lt;/strong&gt;&lt;/em&gt;  akışlarının entegrasyonuyla geldi . Bu teknoloji, içerik oluşturucularının ses dosyalarını sendikalaştırmasına olanak tanıyarak dinleyicilerin bir podcast akışına abone olmasını sağladı. Yeni bölümler eklendikçe, aboneler otomatik olarak güncellemeler alacaktı.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;RSS Akışları ve Sendikasyon : Podcasting için gerçek atılım&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;, RSS (Gerçekten Basit Sendikasyon)&lt;/strong&gt;&lt;/em&gt; akışlarının entegrasyonuyla geldi. Bu teknoloji, içerik oluşturucularının ses dosyalarını sendikalaştırmasına olanak tanıyarak dinleyicilerin bir podcast akışına abone olmasını sağladı. Yeni bölümler eklendikçe, aboneler otomatik olarak güncellemeler alacaktı.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dave Winer ve Adam Curry&amp;rsquo;nin Rolü&lt;/strong&gt;&lt;/em&gt;  : 2004 yılında, bir yazılım geliştiricisi ve RSS öncüsü olan Dave Winer ve eski MTV video jokeyi Adam Curry, ses dosyalarını bir RSS akışı aracılığıyla iletmenin bir yolunu geliştirdi. Curry, genellikle podcast oluşturma sürecini belgelendiren ilk popüler podcast&amp;rsquo;lerden biri olan &amp;ldquo;The Daily Source Code&amp;quot;u yaratmakla anılır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dave Winer ve Adam Curry&amp;rsquo;nin Rolü&lt;/strong&gt;&lt;/em&gt; : 2004 yılında, bir yazılım geliştiricisi ve RSS öncüsü olan Dave Winer ve eski MTV video jokeyi Adam Curry, ses dosyalarını bir RSS akışı aracılığıyla iletmenin bir yolunu geliştirdi. Curry, genellikle podcast oluşturma sürecini belgelendiren ilk popüler podcast&amp;rsquo;lerden biri olan &amp;ldquo;The Daily Source Code&amp;quot;u yaratmakla anılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1263,26 +1263,26 @@
 &lt;p&gt;Podcasting, yaratıcıların çok çeşitli türleri kapsamasına olanak tanır. En popüler olanlardan bazıları şunlardır:
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Gerçek Suç : Bu tür, *** &lt;em&gt;Serial&lt;/em&gt; ve &lt;em&gt;My Favorite Murder&lt;/em&gt; gibi dizilerin izleyicileri gerçek hayattan suç hikayeleri ve soruşturmalarla büyülemesiyle popülerlik kazandı. 
+- ***Gerçek Suç : Bu tür,*** &lt;em&gt;Serial&lt;/em&gt;ve&lt;em&gt;My Favorite Murder&lt;/em&gt;gibi dizilerinizleyicileri gerçek hayattan suç hikayeleri ve soruşturmalarla büyülemesiyle popülerlik kazandı. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Komedi&lt;/strong&gt;&lt;/em&gt;  : Komedyenler hayranlarıyla etkileşim kurmak için bir platform olarak podcast&amp;rsquo;i benimsediler. &lt;em&gt;The Joe Rogan Experience&lt;/em&gt; ve &lt;em&gt;Conan O&amp;rsquo;Brien Needs a Friend&lt;/em&gt; gibi şovlar mizahı röportajlar ve kişisel anekdotlarla harmanlıyor.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Komedi&lt;/strong&gt;&lt;/em&gt; : Komedyenler hayranlarıyla etkileşim kurmak için bir platform olarak podcast&amp;rsquo;i benimsediler.&lt;em&gt;The Joe Rogan Experience&lt;/em&gt;ve&lt;em&gt;Conan O&amp;rsquo;Brien Needs a Friend&lt;/em&gt;gibi şovlar mizahı röportajlar ve kişisel anekdotlarla harmanlıyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eğitici&lt;/strong&gt;&lt;/em&gt;  : Podcast&amp;rsquo;ler öğrenmek için harika bir ortamdır. &lt;em&gt;Stuff You Should Know&lt;/em&gt; veya &lt;em&gt;TED Talks Daily&lt;/em&gt; gibi şovlar , karmaşık fikirleri ilgi çekici, sindirilebilir bölümlere ayırarak çeşitli eğitim konularını ele alır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Eğitici&lt;/strong&gt;&lt;/em&gt; : Podcast&amp;rsquo;ler öğrenmek için harika bir ortamdır.&lt;em&gt;Stuff You Should Know&lt;/em&gt;veya&lt;em&gt;TED Talks Daily&lt;/em&gt;gibi şovlar , karmaşık fikirleri ilgi çekici, sindirilebilir bölümlere ayırarak çeşitli eğitim konularını ele alır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Röportaj/Sohbet&lt;/strong&gt;&lt;/em&gt;  : Birçok podcast, ilginç veya önemli konuklarla yapılan röportajlara odaklanır. Dax Shepard&amp;rsquo;ın &lt;em&gt;The Tim Ferriss Show&lt;/em&gt; ve &lt;em&gt;Armchair Expert&amp;rsquo;i&lt;/em&gt; bu türün örnekleridir ve çok çeşitli konularda derin sohbetler sunar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Röportaj/Sohbet&lt;/strong&gt;&lt;/em&gt; : Birçok podcast, ilginç veya önemli konuklarla yapılan röportajlara odaklanır. Dax Shepard&amp;rsquo;ın&lt;em&gt;The Tim Ferriss Show&lt;/em&gt;ve&lt;em&gt;Armchair Expert&amp;rsquo;i&lt;/em&gt;bu türün örnekleridir ve çok çeşitli konularda derin sohbetler sunar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;***Hikaye Anlatımı ve Sesli Dramalar : *** &lt;em&gt;The Moth&lt;/em&gt; veya &lt;em&gt;Welcome to Night Vale&lt;/em&gt; gibi hikaye anlatımı podcast&amp;rsquo;leri inanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hikaye Anlatımı ve Sesli Dramalar :&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;The Moth&lt;/em&gt;veya&lt;em&gt;Welcome to Night Vale&lt;/em&gt;gibi hikaye anlatımı podcast&amp;rsquo;leriinanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1295,21 +1295,21 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Podcasting nedir?***  Ortamın net bir tanımını edinin. 
+- ***Podcasting nedir?*** Ortamın net bir tanımını edinin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel araçlar ve ekipmanlar nelerdir?&lt;/strong&gt;&lt;/em&gt;  Mikrofonlar, kayıt yazılımları ve barındırma platformları hakkında bilgi edinin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel araçlar ve ekipmanlar nelerdir?&lt;/strong&gt;&lt;/em&gt; Mikrofonlar, kayıt yazılımları ve barındırma platformları hakkında bilgi edinin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Nişinizi nasıl bulursunuz?&lt;/strong&gt;&lt;/em&gt;  Podcast teması seçmeyi ve kitlenizle yankı uyandıran içerik geliştirmeyi keşfedin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Nişinizi nasıl bulursunuz?&lt;/strong&gt;&lt;/em&gt; Podcast teması seçmeyi ve kitlenizle yankı uyandıran içerik geliştirmeyi keşfedin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;En iyi uygulamalar nelerdir?&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;inizi en başından itibaren ilgi çekici ve profesyonel hale getirmek için temel adımları anlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;En iyi uygulamalar nelerdir?&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;inizi en başından itibaren ilgi çekici ve profesyonel hale getirmek için temel adımları anlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1322,36 +1322,36 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***En Sevdiğiniz Podcast&#39;lerin Bir Listesini Oluşturun***  : En sık dinlediğiniz podcast&#39;leri düşünün. Bunlar komediden gerçek suçlara, röportajlardan eğitim programlarına kadar uzanabilir. En sevdiğiniz podcast&#39;ler arasında en az 3-5 tanesini yazın. 
+- ***En Sevdiğiniz Podcast&#39;lerin Bir Listesini Oluşturun*** : En sık dinlediğiniz podcast&#39;leri düşünün. Bunlar komediden gerçek suçlara, röportajlardan eğitim programlarına kadar uzanabilir. En sevdiğiniz podcast&#39;ler arasında en az 3-5 tanesini yazın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Her Birinde Neyi Beğendiğinizi Analiz Edin&lt;/strong&gt;&lt;/em&gt;  :&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Her Birinde Neyi Beğendiğinizi Analiz Edin&lt;/strong&gt;&lt;/em&gt; :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***İçerik***  : Hangi konular ele alınıyor ve neden ilginizi çekiyor? 
+- ***İçerik*** : Hangi konular ele alınıyor ve neden ilginizi çekiyor? 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sunucu&lt;/strong&gt;&lt;/em&gt;  : Sunucu izleyiciyle nasıl etkileşim kuruyor? Sizi içine çekmek için mizah, hikaye anlatımı veya uzman bilgisi kullanıyor mu?&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sunucu&lt;/strong&gt;&lt;/em&gt; : Sunucu izleyiciyle nasıl etkileşim kuruyor? Sizi içine çekmek için mizah, hikaye anlatımı veya uzman bilgisi kullanıyor mu?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yapım Kalitesi&lt;/strong&gt;&lt;/em&gt;  : Ses kalitesi nasıl? Deneyimi geliştiren ses efektleri veya arka plan müziği var mı?&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yapım Kalitesi&lt;/strong&gt;&lt;/em&gt; : Ses kalitesi nasıl? Deneyimi geliştiren ses efektleri veya arka plan müziği var mı?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıklık&lt;/strong&gt;&lt;/em&gt;  : Yeni bölümler ne sıklıkla çıkıyor? Yayın takvimi dinlemeye devam etmenizde bir etken mi?&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıklık&lt;/strong&gt;&lt;/em&gt; : Yeni bölümler ne sıklıkla çıkıyor? Yayın takvimi dinlemeye devam etmenizde bir etken mi?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzunluk&lt;/strong&gt;&lt;/em&gt;  : Bölümler kısa ve öz mü yoksa uzun ve derinlemesine mi? Uzunluk etkileşiminizi nasıl etkiliyor?&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzunluk&lt;/strong&gt;&lt;/em&gt; : Bölümler kısa ve öz mü yoksa uzun ve derinlemesine mi? Uzunluk etkileşiminizi nasıl etkiliyor?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1362,31 +1362,31 @@
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Podcast***  : &lt;em&gt;The Daily&lt;/em&gt; (The New York Times tarafından) 
+- ***Podcast*** :&lt;em&gt;The Daily&lt;/em&gt;(The New York Times tarafından) 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beğendiğim Şey&lt;/strong&gt;&lt;/em&gt;  : Güncel, derinlemesine haber analizlerini sindirilebilir 20-30 dakikalık bir formatta sunuyor. Sunucu içgörülü yorumlar sağlıyor ve röportajlar her zaman iyi araştırılmış.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beğendiğim Şey&lt;/strong&gt;&lt;/em&gt; : Güncel, derinlemesine haber analizlerini sindirilebilir 20-30 dakikalık bir formatta sunuyor. Sunucu içgörülü yorumlar sağlıyor ve röportajlar her zaman iyi araştırılmış.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel Özellikler&lt;/strong&gt;&lt;/em&gt;  : Yüksek prodüksiyon kalitesi, uzman röportajları ve tutarlı bir yayın takvimi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel Özellikler&lt;/strong&gt;&lt;/em&gt; : Yüksek prodüksiyon kalitesi, uzman röportajları ve tutarlı bir yayın takvimi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Podcast&lt;/strong&gt;&lt;/em&gt;  : &lt;em&gt;Bunu Nasıl Yaptım&lt;/em&gt; (NPR tarafından)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Podcast&lt;/strong&gt;&lt;/em&gt; :&lt;em&gt;Bunu Nasıl Yaptım&lt;/em&gt;(NPR tarafından)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beğendiğim Şey&lt;/strong&gt;&lt;/em&gt;  : Girişimcilerin ve yaratıcıların kişisel hikayelerini duymayı seviyorum. Dizinin anlatım tarzı, bu iş liderlerinin yolculuklarını ilişkilendirilebilir ve ilham verici kılıyor.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Beğendiğim Şey&lt;/strong&gt;&lt;/em&gt; : Girişimcilerin ve yaratıcıların kişisel hikayelerini duymayı seviyorum. Dizinin anlatım tarzı, bu iş liderlerinin yolculuklarını ilişkilendirilebilir ve ilham verici kılıyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel Özellikler&lt;/strong&gt;&lt;/em&gt;  : Harika hikaye anlatımı, karizmatik bir sunucu ve ilham verici gerçek dünya başarı hikayeleri.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Temel Özellikler&lt;/strong&gt;&lt;/em&gt; : Harika hikaye anlatımı, karizmatik bir sunucu ve ilham verici gerçek dünya başarı hikayeleri.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1417,16 +1417,16 @@
 &lt;p&gt;***1. Gün: Podcasting&#39;e Giriş*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcasting&#39;in ne olduğunu ve tarihini okuyun. 
+- ***Görev:*** Podcasting&#39;in ne olduğunu ve tarihini okuyun. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  “Yeni Başlayanlar İçin Podcasting” makalesi veya videosu.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; “Yeni Başlayanlar İçin Podcasting” makalesi veya videosu.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  En sevdiğiniz podcast&amp;rsquo;leri listeleyin ve bunlarda neleri sevdiğinizi analiz edin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; En sevdiğiniz podcast&amp;rsquo;leri listeleyin ve bunlarda neleri sevdiğinizi analiz edin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1434,33 +1434,33 @@
 &lt;p&gt;***2. Gün: Podcast Formatları ve Türleri*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Farklı podcast formatlarını (röportajlar, hikaye anlatımı, eğitim) keşfedin. 
+- ***Görev:*** Farklı podcast formatlarını (röportajlar, hikaye anlatımı, eğitim) keşfedin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast Türü Rehberi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast Türü Rehberi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Stilinize ve hedeflerinize uygun formatın hangisi olduğunu belirleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Stilinize ve hedeflerinize uygun formatın hangisi olduğunu belirleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;***3. Gün: Ekipman ve  Yazılım*** 
+&lt;p&gt;***3. Gün: Ekipman veYazılım*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast için gereken ekipmanları araştırın. 
+- ***Görev:*** Podcast için gereken ekipmanları araştırın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  “Podcasting için En İyi Mikrofonlar” rehberi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; “Podcasting için En İyi Mikrofonlar” rehberi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İhtiyacınız olan ekipman/yazılımların alışveriş listesini oluşturun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İhtiyacınız olan ekipman/yazılımların alışveriş listesini oluşturun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1468,16 +1468,16 @@
 &lt;p&gt;***4. Gün: Podcast&#39;inizi Planlama*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast planlama ve bölüm yapısı hakkında bilgi edinin. 
+- ***Görev:*** Podcast planlama ve bölüm yapısı hakkında bilgi edinin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast Planlama Kontrol Listesi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast Planlama Kontrol Listesi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İlk üç bölümünüz için bir taslak hazırlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İlk üç bölümünüz için bir taslak hazırlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1485,16 +1485,16 @@
 &lt;p&gt;***5. Gün: Kayıt Temelleri*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Ses kaydının temellerini anlamak. 
+- ***Görev:*** Ses kaydının temellerini anlamak. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Ses kayıt teknikleri hakkında video eğitimi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Ses kayıt teknikleri hakkında video eğitimi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Seçtiğiniz yazılımla sesinizi kaydetme pratiği yapın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Seçtiğiniz yazılımla sesinizi kaydetme pratiği yapın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1502,16 +1502,16 @@
 &lt;p&gt;***6. Gün: Podcast&#39;inizi Düzenleme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast düzenleme yazılımlarını öğrenin. 
+- ***Görev:*** Podcast düzenleme yazılımlarını öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Audacity veya GarageBand için eğitimler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Audacity veya GarageBand için eğitimler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Becerilerinizi geliştirmek için 5 dakikalık bir ses klibi düzenleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Becerilerinizi geliştirmek için 5 dakikalık bir ses klibi düzenleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1519,11 +1519,11 @@
 &lt;p&gt;***7. Gün: Gözden Geçirme ve Düşünme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Bu hafta öğrendiklerinizi gözden geçirin. 
+- ***Görev:*** Bu hafta öğrendiklerinizi gözden geçirin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Önemli çıkarımlarınızı ve hâlâ aklınızda olan soruları yazın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Önemli çıkarımlarınızı ve hâlâ aklınızda olan soruları yazın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1536,16 +1536,16 @@
 &lt;p&gt;***8. Gün: Markalaşma ve Kapak Tasarımı*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast markalama ve kapak resmi oluşturma hakkında bilgi edinin. 
+- ***Görev:*** Podcast markalama ve kapak resmi oluşturma hakkında bilgi edinin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast markalama ve tasarım araçları (Canva) ile ilgili makaleler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast markalama ve tasarım araçları (Canva) ile ilgili makaleler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast kapak resminizi tasarlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast kapak resminizi tasarlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1553,16 +1553,16 @@
 &lt;p&gt;***9. Gün: Senaryonuzu Yazma*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Bir podcast metni veya taslağının nasıl yazılacağını öğrenin. 
+- ***Görev:*** Bir podcast metni veya taslağının nasıl yazılacağını öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast yayıncıları için senaryo yazma ipuçları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast yayıncıları için senaryo yazma ipuçları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İlk bölümünüz için bir senaryo yazın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İlk bölümünüz için bir senaryo yazın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1570,11 +1570,11 @@
 &lt;p&gt;***10. Gün: İlk Bölümünüzü Kaydetme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Kayıt ortamınızı ayarlayın. 
+- ***Görev:*** Kayıt ortamınızı ayarlayın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Yazdığınız senaryoyu kullanarak ilk bölümünüzü kaydedin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Yazdığınız senaryoyu kullanarak ilk bölümünüzü kaydedin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1582,16 +1582,16 @@
 &lt;p&gt;***11. Gün: Bölümünüzü Düzenleme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Düzenleme tekniklerine ve ses kalitesine odaklanın. 
+- ***Görev:*** Düzenleme tekniklerine ve ses kalitesine odaklanın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Düzenleme ipuçları ve püf noktaları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Düzenleme ipuçları ve püf noktaları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İlk bölümünüzü düzenleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İlk bölümünüzü düzenleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1599,16 +1599,16 @@
 &lt;p&gt;***12. Gün: Müzik ve Efekt Ekleme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Müzik ve ses efektlerini birleştirmeyi öğrenin. 
+- ***Görev:*** Müzik ve ses efektlerini birleştirmeyi öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Telifsiz müzik siteleri (örneğin, Epidemic Sound, AudioJungle).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Telifsiz müzik siteleri (örneğin, Epidemic Sound, AudioJungle).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Düzenlediğiniz bölüme müzik ekleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Düzenlediğiniz bölüme müzik ekleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1616,16 +1616,16 @@
 &lt;p&gt;***13. Gün: Gösteri Notlarını Yazma*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Gösteri notlarının önemini anlamak. 
+- ***Görev:*** Gösteri notlarının önemini anlamak. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Etkili gösteri notlarına örnekler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Etkili gösteri notlarına örnekler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İlk bölümünüz için gösteri notları yazın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İlk bölümünüz için gösteri notları yazın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1633,11 +1633,11 @@
 &lt;p&gt;***14. Gün: Gözden Geçirme ve Önceden Planlama*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Haftanın görevlerini gözden geçirin. 
+- ***Görev:*** Haftanın görevlerini gözden geçirin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Daha fazla pratiğe ihtiyaç duyduğunuz alanları belirleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Daha fazla pratiğe ihtiyaç duyduğunuz alanları belirleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1650,16 +1650,16 @@
 &lt;p&gt;***15. Gün: Podcast Barındırma Platformları*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast barındırma seçeneklerini araştırın. 
+- ***Görev:*** Podcast barındırma seçeneklerini araştırın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast barındırma hizmetlerinin karşılaştırılması (örneğin, Libsyn, Podbean).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast barındırma hizmetlerinin karşılaştırılması (örneğin, Libsyn, Podbean).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Bir barındırma platformu seçin ve hesabınızı kurun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Bir barındırma platformu seçin ve hesabınızı kurun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1667,16 +1667,16 @@
 &lt;p&gt;***16. Gün: Podcast&#39;inizi Yükleme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Bölümünüzü barındırma platformunuza nasıl yükleyeceğinizi öğrenin. 
+- ***Görev:*** Bölümünüzü barındırma platformunuza nasıl yükleyeceğinizi öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Hosting platformu eğitimi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Hosting platformu eğitimi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  İlk bölümünüzü yükleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; İlk bölümünüzü yükleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1684,16 +1684,16 @@
 &lt;p&gt;***17. Gün: RSS Beslemeleri ve Dağıtımı*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  RSS beslemelerinin podcast dağıtımında nasıl çalıştığını anlamak. 
+- ***Görev:*** RSS beslemelerinin podcast dağıtımında nasıl çalıştığını anlamak. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;ler için RSS beslemeleriyle ilgili makale.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;ler için RSS beslemeleriyle ilgili makale.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  RSS besleme ayarlarınızı yapılandırın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; RSS besleme ayarlarınızı yapılandırın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1701,16 +1701,16 @@
 &lt;p&gt;***18. Gün: Podcast&#39;inizi Tanıtın*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast&#39;ler için pazarlama stratejilerini öğrenin. 
+- ***Görev:*** Podcast&#39;ler için pazarlama stratejilerini öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast pazarlama rehberi.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast pazarlama rehberi.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;iniz için bir tanıtım planı oluşturun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;iniz için bir tanıtım planı oluşturun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1718,16 +1718,16 @@
 &lt;p&gt;***19. Gün: Sosyal Medya ve Etkileşim*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast&#39;inizi tanıtmak için sosyal medyayı nasıl kullanabileceğinizi keşfedin. 
+- ***Görev:*** Podcast&#39;inizi tanıtmak için sosyal medyayı nasıl kullanabileceğinizi keşfedin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast yayıncıları için sosyal medya ipuçları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast yayıncıları için sosyal medya ipuçları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;iniz için sosyal medya hesapları kurun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;iniz için sosyal medya hesapları kurun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1735,16 +1735,16 @@
 &lt;p&gt;***20. Gün: Diğer Podcast Yayıncılarıyla Ağ Oluşturma*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast topluluğuyla bağlantı kurmanın yollarını araştırın. 
+- ***Görev:*** Podcast topluluğuyla bağlantı kurmanın yollarını araştırın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast forumları ve grupları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast forumları ve grupları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Bir podcast grubuna katılın ve kendinizi tanıtın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Bir podcast grubuna katılın ve kendinizi tanıtın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1752,11 +1752,11 @@
 &lt;p&gt;***21. Gün: Planınızı Gözden Geçirin ve Ayarlayın*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  İlerlemenizi gözden geçirin ve stratejinizi geliştirin. 
+- ***Görev:*** İlerlemenizi gözden geçirin ve stratejinizi geliştirin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Öğrendiklerinizi temel alarak tanıtım planınızı ayarlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Öğrendiklerinizi temel alarak tanıtım planınızı ayarlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1769,16 +1769,16 @@
 &lt;p&gt;***22. Gün: Metriklerin Analizi*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast ölçümleri ve analizleri hakkında bilgi edinin. 
+- ***Görev:*** Podcast ölçümleri ve analizleri hakkında bilgi edinin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast analizlerinin yorumlanmasına ilişkin makaleler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast analizlerinin yorumlanmasına ilişkin makaleler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Barındırma platformunuzun analizlerini inceleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Barındırma platformunuzun analizlerini inceleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1786,16 +1786,16 @@
 &lt;p&gt;***23. Gün: Geribildirim Arama*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Dinleyici geri bildiriminin önemini anlayın. 
+- ***Görev:*** Dinleyici geri bildiriminin önemini anlayın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Geri bildirim toplama ve kullanma kılavuzu.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Geri bildirim toplama ve kullanma kılavuzu.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Bir geri bildirim formu oluşturun ve bunu arkadaşlarınızla/ailenizle paylaşın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Bir geri bildirim formu oluşturun ve bunu arkadaşlarınızla/ailenizle paylaşın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1803,16 +1803,16 @@
 &lt;p&gt;***24. Gün: Para Kazanma Stratejileri*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Podcast&#39;inizden para kazanmanın yollarını keşfedin. 
+- ***Görev:*** Podcast&#39;inizden para kazanmanın yollarını keşfedin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast para kazanma stratejileri.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast para kazanma stratejileri.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Potansiyel sponsorluklar veya ürünler için bir plan taslağı hazırlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Potansiyel sponsorluklar veya ürünler için bir plan taslağı hazırlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1820,16 +1820,16 @@
 &lt;p&gt;***25. Gün: Sürekli İyileştirme*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Sürekli öğrenme kaynaklarını öğrenin. 
+- ***Görev:*** Sürekli öğrenme kaynaklarını öğrenin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcasting hakkında önerilen podcastler.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcasting hakkında önerilen podcastler.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast ipuçlarına odaklanan 2-3 podcaste abone olun.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast ipuçlarına odaklanan 2-3 podcaste abone olun.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1837,16 +1837,16 @@
 &lt;p&gt;***26. Gün: Misafirlerle İşbirliği Yapmak*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Konuklarla görüşme sürecini anlayın. 
+- ***Görev:*** Konuklarla görüşme sürecini anlayın. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Mülakat ipuçları ve teknikleri.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Mülakat ipuçları ve teknikleri.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;iniz için potansiyel konukların bir listesini hazırlayın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;iniz için potansiyel konukların bir listesini hazırlayın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1854,16 +1854,16 @@
 &lt;p&gt;***27. Gün: Canlı Bölümlere Ev Sahipliği Yapmak*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Canlı podcasting seçeneklerini keşfedin. 
+- ***Görev:*** Canlı podcasting seçeneklerini keşfedin. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;ler için canlı yayın platformları.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kaynak:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;ler için canlı yayın platformları.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Canlı bir bölüm planlayın ve formatını ana hatlarıyla belirtin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Canlı bir bölüm planlayın ve formatını ana hatlarıyla belirtin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1871,11 +1871,11 @@
 &lt;p&gt;***28. Gün: Son İnceleme ve Gelecek Hedefleri*** 
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Görev:***  Öğrenme yolculuğunuzu düşünün. 
+- ***Görev:*** Öğrenme yolculuğunuzu düşünün. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alıştırma:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -1886,16 +1886,16 @@
     &lt;a href=&#34;#ek-kaynaklar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Kitaplar:***  John Lee Dumas&#39;ın &#34;Podcast Launch&#34; adlı kitabı, Jessica Abel&#39;ın &#34;Out on the Wire&#34; adlı kitabı 
+- ***Kitaplar:*** John Lee Dumas&#39;ın &#34;Podcast Launch&#34; adlı kitabı, Jessica Abel&#39;ın &#34;Out on the Wire&#34; adlı kitabı 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Web siteleri:&lt;/strong&gt;&lt;/em&gt;  Podcast&amp;rsquo;çilerin Buluşma Noktası, Podcast Hareketi&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Web siteleri:&lt;/strong&gt;&lt;/em&gt; Podcast&amp;rsquo;çilerin Buluşma Noktası, Podcast Hareketi&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurslar:&lt;/strong&gt;&lt;/em&gt;  Udemy veya Skillshare gibi platformlardaki podcasting becerilerine odaklanan çevrimiçi kurslar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Kurslar:&lt;/strong&gt;&lt;/em&gt; Udemy veya Skillshare gibi platformlardaki podcasting becerilerine odaklanan çevrimiçi kurslar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

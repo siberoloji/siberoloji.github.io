@@ -53,7 +53,7 @@ url: /tr/msf-meterpreter-kalicilik-saglama/
 <h1 class="wp-block-heading" id="metasploit-içinde-keylogger-kullanımı">Metasploit içinde Keylogger Kullanımı 
 <!-- /wp:heading -->
 
-  Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. <em>Çok hızlı</em> olmak veya <em>çok yavaş</em> olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz. 
+  Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz.<em>Çok hızlı</em>olmak veya<em>çok yavaş</em>olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz. 
  
 
   Öncelikle, bir exploit modülü kullanarak hedef sistemde oturum çalım. 

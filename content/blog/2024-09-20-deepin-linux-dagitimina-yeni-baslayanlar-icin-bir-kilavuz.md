@@ -27,7 +27,7 @@ title: Deepin Linux Dağıtımına Yeni Başlayanlar İçin Bir Kılavuz
 url: /tr/deepin-linux-dagitimina-yeni-baslayanlar-icin-bir-kilavuz/
 ---
 
-   Linux'a yeni başladıysanız ve çekici, kullanıcı dostu bir işletim sistemi arıyorsanız, ***Deepin Linux***  sizin için mükemmel bir seçim olabilir. Zarif tasarımı, kullanım kolaylığı ve güçlü performansıyla bilinen Deepin Linux, Windows veya macOS gibi sistemlerden geçiş yapan, yeni başlayanlar için tasarlanmış bir masaüstü deneyimi sunan Linux dağıtımıdır . 
+  Linux'ayeni başladıysanızve çekici, kullanıcı dostu bir işletim sistemi arıyorsanız,***Deepin Linux*** sizin için mükemmel bir seçim olabilir. Zarif tasarımı, kullanım kolaylığı ve güçlü performansıyla bilinen Deepin Linux, Windows veya macOS gibi sistemlerden geçiş yapan, yeni başlayanlar için tasarlanmış bir masaüstü deneyimi sunanLinux dağıtımıdır. 
  
 
   Bu kılavuzda, Deepin Linux'u öne çıkaran şeyleri, nasıl yükleneceğini ve benzersiz özelliklerinden en iyi şekilde nasıl yararlanabileceğinizi inceleyeceğiz. İster güzel bir masaüstü ortamı, ister günlük kullanım için güvenilir bir yazılım arıyor olun, Deepin'in sunabileceği bir şey var. 

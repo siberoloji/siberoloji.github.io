@@ -24,14 +24,14 @@ title: 'Tarımda Siber Güvenlik: Akıllı Çiftlikleri ve Gıda Tedarik Zincirl
 url: /tr/tarimda-siber-guvenlik-akilli-ciftlikleri-ve-gida-tedarik-zincirlerini-koruma/
 ---
 
-  Tarım giderek dijital teknolojileri benimserken, siber güvenliğin önemi göz ardı edilemez. Akıllı çiftçilik uygulamalarının ve gelişmiş tarım teknolojilerinin entegrasyonu sektörde devrim yarattı ancak aynı zamanda önemli güvenlik açıklarını da ortaya çıkardı. Bu blog yazısı, tarım sektörünün karşılaştığı siber güvenlik zorluklarını, gıda tedarik zincirleri için çıkarımları ve güvenlik önlemlerini artırma stratejilerini ele alıyor. 
+  Tarım giderek dijital teknolojileri benimserken, sibergüvenliğin önemigöz ardı edilemez. Akıllı çiftçilik uygulamalarının ve gelişmiş tarım teknolojilerinin entegrasyonu sektörde devrim yarattı ancak aynı zamanda önemli güvenlik açıklarını da ortaya çıkardı. Bu blog yazısı, tarım sektörünün karşılaştığı siber güvenlik zorluklarını, gıda tedarik zincirleri için çıkarımları ve güvenlik önlemlerini artırma stratejilerini ele alıyor. 
  
 
 
  ### Akıllı Çiftçiliğin Yükselişi
 <!-- /wp:heading -->
 
-  Nesnelerin İnterneti cihazları, yapay zeka ve veri analitiğinin kullanımıyla karakterize edilen akıllı çiftçilik, geleneksel tarım uygulamalarını dönüştürdü. Çiftçiler artık mahsulleri gerçek zamanlı olarak izleyebilir, kaynak kullanımını optimize edebilir ve üretkenliği artırabilir. Örneğin, hassas tarım teknolojileri çiftçilerin büyük miktarda veri toplamasına olanak tanır; ortalama bir çiftlik günde yaklaşık yarım milyon veri noktası üretir[2]. Ancak bu dijitalleşme, siber suçlular için saldırı yüzeyini de genişletiyor. 
+  Nesnelerin İnterneti cihazları, yapay zekave veri analitiğinin kullanımıyla karakterize edilen akıllı çiftçilik,geleneksel tarım uygulamalarını dönüştürdü. Çiftçiler artık mahsulleri gerçek zamanlı olarak izleyebilir, kaynak kullanımını optimize edebilir ve üretkenliği artırabilir. Örneğin, hassas tarım teknolojileri çiftçilerin büyük miktarda veri toplamasına olanak tanır; ortalama bir çiftlik günde yaklaşık yarım milyon veri noktası üretir[2]. Ancak bu dijitalleşme, siber suçlular için saldırı yüzeyini de genişletiyor. 
  
 
 
@@ -40,19 +40,19 @@ url: /tr/tarimda-siber-guvenlik-akilli-ciftlikleri-ve-gida-tedarik-zincirlerini-
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Fidye Yazılımı Saldırıları***  : Siber suçlular, fidye yazılımlarıyla giderek daha fazla tarımsal işletmeyi hedef alıyor. Bu saldırılar, üretim süreçlerini aksatabilir ve önemli mali kayıplara neden olabilir. Örneğin, fidye yazılımları sulama veya mahsul yönetim araçlarını kontrol eden kritik sistemleri devre dışı bırakabilir[3]. 
+- ***Fidye Yazılımı Saldırıları*** : Siber suçlular, fidye yazılımlarıyla giderek daha fazla tarımsal işletmeyi hedef alıyor. Bu saldırılar, üretim süreçlerini aksatabilir ve önemli mali kayıplara neden olabilir. Örneğin, fidye yazılımları sulama veya mahsul yönetim araçlarını kontrol eden kritik sistemleri devre dışı bırakabilir[3]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Veri İhlalleri***  : Güvenli olmayan dijital cihazlar, kişisel olarak tanımlanabilir bilgiler (PII) ve tescilli ürün verileri gibi hassas bilgilere yetkisiz erişime yol açabilir. Bir ihlal, çiftçiler ve tarım işletmeleri için kimlik hırsızlığına veya mali kayba neden olabilir[1]. 
+- ***Veri İhlalleri*** : Güvenli olmayan dijital cihazlar, kişisel olarak tanımlanabilir bilgiler (PII) ve tescilli ürün verileri gibi hassas bilgilere yetkisiz erişime yol açabilir. Bir ihlal, çiftçiler ve tarım işletmeleri için kimlik hırsızlığına veya mali kayba neden olabilir[1]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tedarik Zinciri Güvenlik Açıkları***  : Tarımsal tedarik zinciri karmaşıktır ve çeşitli hizmetler için genellikle üçüncü taraf satıcılara güvenir. Bu satıcılar arasındaki zayıf güvenlik uygulamaları çiftçileri siber tehditlere maruz bırakabilir. Saldırganlar daha büyük tarımsal işletmelere erişim sağlamak için bu zayıf bağlantıları kullanabilir[2]. 
+- ***Tedarik Zinciri Güvenlik Açıkları*** : Tarımsal tedarik zinciri karmaşıktır ve çeşitli hizmetler için genellikle üçüncü taraf satıcılara güvenir. Bu satıcılar arasındaki zayıf güvenlik uygulamaları çiftçileri siber tehditlere maruz bırakabilir. Saldırganlar daha büyük tarımsal işletmelere erişim sağlamak için bu zayıf bağlantıları kullanabilir[2]. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Tarımsal Verilerin Manipülasyonu***  : Siber suçlular, yerel tarımı baltalamak için akıllı çiftçilik teknolojileri tarafından üretilen verileri manipüle edebilir. Örneğin, hava tahminlerini veya toprak koşullarını değiştirmek, çiftçilerin kötü karar almasına yol açabilir[1]. 
+- ***Tarımsal Verilerin Manipülasyonu*** : Siber suçlular, yerel tarımı baltalamak için akıllı çiftçilik teknolojileri tarafından üretilen verileri manipüle edebilir. Örneğin, hava tahminlerini veya toprak koşullarını değiştirmek, çiftçilerin kötü karar almasına yol açabilir[1]. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -102,7 +102,7 @@ url: /tr/tarimda-siber-guvenlik-akilli-ciftlikleri-ve-gida-tedarik-zincirlerini-
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">5.  Siber Güvenlik Uzmanlarıyla İşbirliği Yapmak 
+<h4 class="wp-block-heading">5.Siber GüvenlikUzmanlarıyla İşbirliği Yapmak 
 <!-- /wp:heading -->
 
   Siber güvenlik uzmanlarıyla etkileşim kurmak, ortaya çıkan tehditler ve tarım teknolojilerini güvence altına almak için en iyi uygulamalar hakkında değerli içgörüler sağlayabilir. Harici uzmanlar tarafından yürütülen düzenli denetimler, saldırganlar tarafından istismar edilmeden önce güvenlik açıklarının belirlenmesine yardımcı olabilir[3]. 
@@ -112,7 +112,7 @@ url: /tr/tarimda-siber-guvenlik-akilli-ciftlikleri-ve-gida-tedarik-zincirlerini-
  ### Geleceğe Bakış: Siber Güvenlikte Politikanın Rolü
 <!-- /wp:heading -->
 
-   Dijital tarım gelişmeye devam ettikçe, bu sektöre özgü siber güvenlik sorunlarını ele alan düzenleyici çerçevelere acil ihtiyaç duyulmaktadır . Birçok düşük ve orta gelirli ülkede, tarımsal teknoloji güvenliğini yöneten kapsamlı yasalar bulunmamaktadır ve bu da çiftçileri siber tehditlere karşı savunmasız bırakmaktadır[1]. 
+  Dijital tarım gelişmeye devam ettikçe, bu sektöre özgü siber güvenliksorunlarını ele alan düzenleyici çerçevelere acil ihtiyaç duyulmaktadır. Birçok düşük ve orta gelirli ülkede, tarımsal teknoloji güvenliğini yöneten kapsamlı yasalar bulunmamaktadır ve bu da çiftçileri siber tehditlere karşı savunmasız bırakmaktadır[1]. 
  
 
   Hükümetler, tarım alanında siber güvenlikte en iyi uygulamaları teşvik eden politikalar geliştirmek için endüstri paydaşlarıyla iş birliği içinde çalışmalıdır. Buna, özellikle tarım işletmeleri için uyarlanmış veri gizliliği ve güvenlik standartları için yönergeler oluşturmak da dahildir. 

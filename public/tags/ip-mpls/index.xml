@@ -30,11 +30,11 @@
 &lt;p&gt;IP-MPLS, IP yönlendirmenin esnekliğini MPLS&amp;rsquo;nin performansı ve trafik yönetimi yetenekleriyle birleştiren bir ağ teknolojisidir. IP-MPLS&amp;rsquo;yi anlamak için, onu iki ana bileşenine ayıralım:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***IP (İnternet Protokolü)***  : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
+- ***IP (İnternet Protokolü)*** : Birbirine bağlı ağlar arasında paketlerin yönlendirilmesi için temel protokol. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;MPLS (Çoklu Protokol Etiket Anahtarlama)&lt;/strong&gt;&lt;/em&gt;  : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;MPLS (Çoklu Protokol Etiket Anahtarlama)&lt;/strong&gt;&lt;/em&gt; : Veri iletme kararları almak için etiketler kullanan, hızı artıran ve daha gelişmiş trafik yönetimine olanak tanıyan bir protokoldür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -47,11 +47,11 @@
 &lt;p&gt;LER&amp;rsquo;ler bir MPLS ağının kenarında bulunur. İki önemli işlevi yerine getirirler:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Ingress LER***  : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
+- ***Ingress LER*** : Gelen IP paketlerine etiketler ekleyerek bunları MPLS paketlerine dönüştürür. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çıkış LER&lt;/strong&gt;&lt;/em&gt;  : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Çıkış LER&lt;/strong&gt;&lt;/em&gt; : MPLS paketlerinden etiketleri kaldırır ve MPLS ağından çıkmadan önce bunları tekrar IP paketlerine dönüştürür.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -95,11 +95,11 @@
     &lt;a href=&#34;#1-iyile%c5%9ftirilmi%c5%9f-performans&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Daha Hızlı Yönlendirme***  : LSR&#39;ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
+- ***Daha Hızlı Yönlendirme*** : LSR&#39;ler, karmaşık IP yönlendirme tablosu aramalarından daha hızlı olan basit etiket aramalarına dayalı yönlendirme kararları verebilir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Mühendisliği&lt;/strong&gt;&lt;/em&gt;  : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Trafik Mühendisliği&lt;/strong&gt;&lt;/em&gt; : MPLS, trafik akışları üzerinde hassas kontrol sağlayarak ağ kaynaklarının verimli kullanılmasını sağlar.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -107,11 +107,11 @@
     &lt;a href=&#34;#2-geli%c5%9fmi%c5%9f-%c3%b6l%c3%a7eklenebilirlik&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Hiyerarşik Etiketleme***  : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
+- ***Hiyerarşik Etiketleme*** : MPLS, büyük ağların verimli bir şekilde ölçeklenmesine olanak tanıyan birden fazla düzeyde etiketi destekler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Azaltılmış Yönlendirme Tablosu Boyutu&lt;/strong&gt;&lt;/em&gt;  : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Azaltılmış Yönlendirme Tablosu Boyutu&lt;/strong&gt;&lt;/em&gt; : Çekirdek yönlendiricilerin yalnızca etiket bilgilerini tutması gerekir, tam IP yönlendirme tablolarını tutması gerekmez.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -119,11 +119,11 @@
     &lt;a href=&#34;#3-hizmet-kalitesi-qos-deste%c4%9fi&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Trafik Önceliklendirmesi***  : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
+- ***Trafik Önceliklendirmesi*** : Etiketler QoS bilgilerini içerebilir ve bu sayede çeşitli trafik tiplerinin farklı şekilde ele alınmasına olanak sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Garantili Bant Genişliği&lt;/strong&gt;&lt;/em&gt;  : Kritik uygulamalar için LSP&amp;rsquo;ler belirli bant genişliği garantileri ile kurulabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Garantili Bant Genişliği&lt;/strong&gt;&lt;/em&gt; : Kritik uygulamalar için LSP&amp;rsquo;ler belirli bant genişliği garantileri ile kurulabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -131,11 +131,11 @@
     &lt;a href=&#34;#4-geli%c5%9fmi%c5%9f-g%c3%bcvenilirlik&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Hızlı Yeniden Yönlendirme***  : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
+- ***Hızlı Yeniden Yönlendirme*** : MPLS, bağlantı veya düğüm arızaları durumunda hızlı yeniden yönlendirmeyi destekleyerek ağın dayanıklılığını artırır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yol Koruması&lt;/strong&gt;&lt;/em&gt;  : Anında yedekleme sağlamak için yedek LSP&amp;rsquo;ler önceden kurulabilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Yol Koruması&lt;/strong&gt;&lt;/em&gt; : Anında yedekleme sağlamak için yedek LSP&amp;rsquo;ler önceden kurulabilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -143,11 +143,11 @@
     &lt;a href=&#34;#5-sanal-%c3%b6zel-a%c4%9flar-vpnler-i%c3%a7in-destek&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***3. Katman VPN&#39;ler***  : IP-MPLS, 3. Katman VPN&#39;lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
+- ***3. Katman VPN&#39;ler*** : IP-MPLS, 3. Katman VPN&#39;lerin verimli ve ölçeklenebilir bir şekilde uygulanmasını sağlar. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Katman 2 VPN&amp;rsquo;ler&lt;/strong&gt;&lt;/em&gt;  : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Katman 2 VPN&amp;rsquo;ler&lt;/strong&gt;&lt;/em&gt; : MPLS, Katman 2 VPN hizmetlerini de destekleyerek geniş alanlarda şeffaf LAN hizmetlerine olanak tanır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -155,7 +155,7 @@
     &lt;a href=&#34;#6-protokol-ba%c4%9f%c4%b1ms%c4%b1zl%c4%b1%c4%9f%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Çoklu Protokol Desteği***  : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
+- ***Çoklu Protokol Desteği*** : MPLS, IP, ATM ve Çerçeve Rölesi dahil olmak üzere çeşitli trafik türlerini taşıyabilir. 
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;h2&gt;IP-MPLS&amp;rsquo;nin Uygulamaları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ip-mplsnin-uygulamaları&#34;&gt;&lt;/span&gt;

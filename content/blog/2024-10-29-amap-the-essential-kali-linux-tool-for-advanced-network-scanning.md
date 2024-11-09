@@ -343,5 +343,5 @@ sudo apt install amap</code></pre>
   Amap remains a valuable tool in Kali Linux for anyone needing advanced network service identification. Its ability to analyze applications on both standard and non-standard ports makes it essential for security experts focused on thorough network assessments. By combining Amap with other scanning tools, you can get a comprehensive view of a network’s structure and services, enabling more precise vulnerability assessments and mitigation plans.
  
 
-  Whether you’re troubleshooting an application, conducting a penetration test, or analyzing network services, Amap provides powerful, targeted capabilities to enhance your security toolkit. You may want to look at our <a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a> page.
+  Whether you’re troubleshooting an application, conducting a penetration test, or analyzing network services, Amap provides powerful, targeted capabilities to enhance your security toolkit. You may want to look at our<a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noreferrer noopener">full list of Kali Linux Tools</a>page.
  

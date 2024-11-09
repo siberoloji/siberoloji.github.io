@@ -31,21 +31,21 @@
 &lt;p&gt;XML&amp;rsquo;in temel özellikleri şunlardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Genişletilebilirlik***  : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler. 
+- ***Genişletilebilirlik*** : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri ve sunumun ayrılması&lt;/strong&gt;&lt;/em&gt;  : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Veri ve sunumun ayrılması&lt;/strong&gt;&lt;/em&gt; : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Platform ve dil bağımsızlığı&lt;/strong&gt;&lt;/em&gt;  : XML, XML&amp;rsquo;i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Platform ve dil bağımsızlığı&lt;/strong&gt;&lt;/em&gt; : XML, XML&amp;rsquo;i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıkı sözdizimi kuralları&lt;/strong&gt;&lt;/em&gt;  : XML&amp;rsquo;in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sıkı sözdizimi kuralları&lt;/strong&gt;&lt;/em&gt; : XML&amp;rsquo;in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -96,16 +96,16 @@
 &lt;p&gt;XML&amp;rsquo;in geçerli belgeler oluşturmak için uyulması gereken katı sözdizimi kuralları vardır:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Tüm elemanların bir kapanış etiketi olmalı***  veya kendi kendine kapanmalıdır. 
+- ***Tüm elemanların bir kapanış etiketi olmalı*** veya kendi kendine kapanmalıdır. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etiketler büyük/küçük harfe duyarlıdır&lt;/strong&gt;&lt;/em&gt;  : &lt;code&gt;&amp;lt;Element&amp;gt;&lt;/code&gt;ve &lt;code&gt;&amp;lt;element&amp;gt;&lt;/code&gt;farklı etiketlerdir.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Etiketler büyük/küçük harfe duyarlıdır&lt;/strong&gt;&lt;/em&gt; :&lt;code&gt;&amp;lt;Element&amp;gt;&lt;/code&gt;ve&lt;code&gt;&amp;lt;element&amp;gt;&lt;/code&gt;farklı etiketlerdir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğeler düzgün bir şekilde iç içe yerleştirilmelidir&lt;/strong&gt;&lt;/em&gt;  :&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Öğeler düzgün bir şekilde iç içe yerleştirilmelidir&lt;/strong&gt;&lt;/em&gt; :&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -115,11 +115,11 @@
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:4} --&gt;
 &lt;ol start=&#34;4&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Öznitelik değerleri tırnak işareti içinde olmalıdır***  :&lt;code&gt;&amp;lt;element attribute=&#34;value&#34;&amp;gt;&lt;/code&gt; 
+- ***Öznitelik değerleri tırnak işareti içinde olmalıdır*** :&lt;code&gt;&amp;lt;element attribute=&#34;value&#34;&amp;gt;&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Özel karakterler kaçırılmalıdır&lt;/strong&gt;&lt;/em&gt;  : &lt;code&gt;&amp;amp;lt;&lt;/code&gt;for &amp;lt;, &lt;code&gt;&amp;amp;gt;&lt;/code&gt;for &amp;gt;, &lt;code&gt;&amp;amp;amp;&lt;/code&gt;for &amp;amp; gibi varlıkları kullanın.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Özel karakterler kaçırılmalıdır&lt;/strong&gt;&lt;/em&gt; :&lt;code&gt;&amp;amp;lt;&lt;/code&gt;for &amp;lt;,&lt;code&gt;&amp;amp;gt;&lt;/code&gt;for &amp;gt;,&lt;code&gt;&amp;amp;amp;&lt;/code&gt;for &amp;amp; gibi varlıkları kullanın.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -224,21 +224,21 @@
 &lt;p&gt;JSON gibi yeni formatların getirdiği zorluklara rağmen, XML yaygın olarak kullanılmaya devam ediyor ve birçok alanda önemli bir teknoloji olmaya devam ediyor. Geleceği birkaç nedenden ötürü umut verici görünüyor:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Yerleşik Ekosistem***  : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir. 
+- ***Yerleşik Ekosistem*** : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geriye Dönük Uyumluluk&lt;/strong&gt;&lt;/em&gt;  : Birçok sistem ve uygulama XML&amp;rsquo;e güvenir ve bu da XML&amp;rsquo;in sürekli güncelliğini garanti altına alır.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Geriye Dönük Uyumluluk&lt;/strong&gt;&lt;/em&gt; : Birçok sistem ve uygulama XML&amp;rsquo;e güvenir ve bu da XML&amp;rsquo;in sürekli güncelliğini garanti altına alır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sürekli Geliştirme&lt;/strong&gt;&lt;/em&gt;  : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Sürekli Geliştirme&lt;/strong&gt;&lt;/em&gt; : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzmanlık&lt;/strong&gt;&lt;/em&gt;  : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Uzmanlık&lt;/strong&gt;&lt;/em&gt; : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;

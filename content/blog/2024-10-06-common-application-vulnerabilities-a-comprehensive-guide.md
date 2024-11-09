@@ -44,11 +44,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <ol class="wp-block-list"><!-- wp:list-item -->
 - ***Injection Attacks:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***SQL Injection:***  This occurs when user-supplied data is not properly sanitized before being inserted into SQL queries, allowing attackers to execute arbitrary SQL commands. 
+- ***SQL Injection:*** This occurs when user-supplied data is not properly sanitized before being inserted into SQL queries, allowing attackers to execute arbitrary SQL commands. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Command Injection:***  Similar to SQL injection, command injection allows attackers to execute arbitrary commands on the operating system by injecting malicious code into input fields. 
+- ***Command Injection:*** Similar to SQL injection, command injection allows attackers to execute arbitrary commands on the operating system by injecting malicious code into input fields. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -56,11 +56,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Broken Authentication:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Weak Password Policies:***  Inadequate password requirements, such as short or easily guessable passwords, can make it easier for attackers to brute-force login credentials. 
+- ***Weak Password Policies:*** Inadequate password requirements, such as short or easily guessable passwords, can make it easier for attackers to brute-force login credentials. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Session Management Flaws:***  Insecure session management practices, such as the lack of proper session timeouts or cookie security, can enable attackers to hijack user sessions. 
+- ***Session Management Flaws:*** Insecure session management practices, such as the lack of proper session timeouts or cookie security, can enable attackers to hijack user sessions. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -68,11 +68,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Sensitive Data Exposure:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Storage of Sensitive Data:***  Improper storage of sensitive data, such as passwords, credit card numbers, or personally identifiable information (PII), can lead to data breaches if the data is compromised. 
+- ***Storage of Sensitive Data:*** Improper storage of sensitive data, such as passwords, credit card numbers, or personally identifiable information (PII), can lead to data breaches if the data is compromised. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Transmission of Sensitive Data:***  Unencrypted transmission of sensitive data over the network can expose it to eavesdropping and interception. 
+- ***Transmission of Sensitive Data:*** Unencrypted transmission of sensitive data over the network can expose it to eavesdropping and interception. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -80,11 +80,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Cross-Site Scripting (XSS):*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Reflected XSS:***  Occurs when malicious code is injected into a URL or form field and reflected back to the user's browser, allowing the attacker to execute arbitrary JavaScript code. 
+- ***Reflected XSS:*** Occurs when malicious code is injected into a URL or form field and reflected back to the user's browser, allowing the attacker to execute arbitrary JavaScript code. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Stored XSS:***  Malicious code is stored on the server and executed when a user visits a vulnerable page, potentially compromising other users. 
+- ***Stored XSS:*** Malicious code is stored on the server and executed when a user visits a vulnerable page, potentially compromising other users. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -92,11 +92,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Broken Access Control:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Insufficient Authorization:***  Inadequate access controls can allow unauthorized users to access sensitive resources or perform actions they are not entitled to. 
+- ***Insufficient Authorization:*** Inadequate access controls can allow unauthorized users to access sensitive resources or perform actions they are not entitled to. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Privilege Escalation:***  Exploiting vulnerabilities in the application's access control mechanisms can enable attackers to elevate their privileges and gain unauthorized access to higher-level functions. 
+- ***Privilege Escalation:*** Exploiting vulnerabilities in the application's access control mechanisms can enable attackers to elevate their privileges and gain unauthorized access to higher-level functions. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -104,11 +104,11 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Security Misconfigurations:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Default Configurations:***  Leaving default configurations unchanged can expose applications to known vulnerabilities and security risks. 
+- ***Default Configurations:*** Leaving default configurations unchanged can expose applications to known vulnerabilities and security risks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Incorrect Permissions:***  Improperly configured permissions can grant unnecessary access to files or directories, allowing attackers to exploit vulnerabilities or steal data. 
+- ***Incorrect Permissions:*** Improperly configured permissions can grant unnecessary access to files or directories, allowing attackers to exploit vulnerabilities or steal data. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -116,7 +116,7 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Cross-Site Request Forgery (CSRF):*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Tricking Users:***  CSRF attacks trick users into performing actions on their behalf without their knowledge or consent, such as transferring funds or changing passwords. 
+- ***Tricking Users:*** CSRF attacks trick users into performing actions on their behalf without their knowledge or consent, such as transferring funds or changing passwords. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -124,7 +124,7 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Insecure Deserialization:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Untrusted Data:***  Deserializing untrusted data can allow attackers to inject malicious code or gain unauthorized access to the application. 
+- ***Untrusted Data:*** Deserializing untrusted data can allow attackers to inject malicious code or gain unauthorized access to the application. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -132,7 +132,7 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 <!-- wp:list-item -->
 - ***Using Components with Known Vulnerabilities:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Outdated Libraries:***  Using outdated libraries or frameworks can expose applications to known vulnerabilities that have already been patched. 
+- ***Outdated Libraries:*** Using outdated libraries or frameworks can expose applications to known vulnerabilities that have already been patched. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -144,7 +144,7 @@ url: /common-application-vulnerabilities-a-comprehensive-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Lack of Visibility:***  Inadequate logging and monitoring can make it difficult to detect and respond to security incidents in a timely manner. 
+- ***Lack of Visibility:*** Inadequate logging and monitoring can make it difficult to detect and respond to security incidents in a timely manner. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

@@ -7181,21 +7181,21 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Key Characteristics of Mealy Machines:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Outputs depend on both state and input:***  The output is determined by the combination of the current state and the input received. 
+- ***Outputs depend on both state and input:*** The output is determined by the combination of the current state and the input received. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Asynchronous outputs:&lt;/strong&gt;&lt;/em&gt;  Outputs can change immediately in response to input changes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Asynchronous outputs:&lt;/strong&gt;&lt;/em&gt; Outputs can change immediately in response to input changes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Potential for glitches:&lt;/strong&gt;&lt;/em&gt;  Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Potential for glitches:&lt;/strong&gt;&lt;/em&gt; Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fewer states:&lt;/strong&gt;&lt;/em&gt;  Mealy machines often require fewer states compared to Moore machines for the same functionality.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Fewer states:&lt;/strong&gt;&lt;/em&gt; Mealy machines often require fewer states compared to Moore machines for the same functionality.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -7204,21 +7204,21 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Key Characteristics of Moore Machines:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Outputs depend only on state:***  The output is determined solely by the current state. 
+- ***Outputs depend only on state:*** The output is determined solely by the current state. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Synchronous outputs:&lt;/strong&gt;&lt;/em&gt;  Outputs change only at the clock edge, ensuring glitch-free operation.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Synchronous outputs:&lt;/strong&gt;&lt;/em&gt; Outputs change only at the clock edge, ensuring glitch-free operation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;More states:&lt;/strong&gt;&lt;/em&gt;  Moore machines often require more states compared to Mealy machines for the same functionality.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;More states:&lt;/strong&gt;&lt;/em&gt; Moore machines often require more states compared to Mealy machines for the same functionality.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Simpler design:&lt;/strong&gt;&lt;/em&gt;  Moore machines are generally easier to design and analyze due to their simpler structure.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Simpler design:&lt;/strong&gt;&lt;/em&gt; Moore machines are generally easier to design and analyze due to their simpler structure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -7230,21 +7230,21 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;State machines are used in a wide range of applications, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Digital circuits:***  Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
+- ***Digital circuits:*** Controllers, sequencers, and finite state machines (FSMs) in microprocessors and microcontrollers. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Software development:&lt;/strong&gt;&lt;/em&gt;  State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Software development:&lt;/strong&gt;&lt;/em&gt; State machines are used to model the behavior of software systems, such as compilers, interpreters, and operating systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware design:&lt;/strong&gt;&lt;/em&gt;  State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware design:&lt;/strong&gt;&lt;/em&gt; State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt;  State machines are used to implement protocols and control the behavior of communication devices.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt; State machines are used to implement protocols and control the behavior of communication devices.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -7252,16 +7252,16 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;State machines can be designed and implemented using various methods, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***State diagrams:***  State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
+- ***State diagrams:*** State diagrams are graphical representations of state machines, showing the states, transitions, and outputs. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;State tables:&lt;/strong&gt;&lt;/em&gt;  State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;State tables:&lt;/strong&gt;&lt;/em&gt; State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt;  HDLs like Verilog and VHDL can be used to describe state machines in a textual format.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt; HDLs like Verilog and VHDL can be used to describe state machines in a textual format.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -8636,36 +8636,36 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Common Types of Combinational Logic Circuits&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Adders:***  Adders are used to perform arithmetic operations on binary numbers. They can be simple half-adders, full-adders, or ripple-carry adders. 
+- ***Adders:*** Adders are used to perform arithmetic operations on binary numbers. They can be simple half-adders, full-adders, or ripple-carry adders. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Subtractors:&lt;/strong&gt;&lt;/em&gt;  Subtractors are used to perform subtraction operations on binary numbers. They can be implemented using adders and inverters.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Subtractors:&lt;/strong&gt;&lt;/em&gt; Subtractors are used to perform subtraction operations on binary numbers. They can be implemented using adders and inverters.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comparators:&lt;/strong&gt;&lt;/em&gt;  Comparators are used to compare two binary numbers and determine their relative magnitudes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comparators:&lt;/strong&gt;&lt;/em&gt; Comparators are used to compare two binary numbers and determine their relative magnitudes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Decoders:&lt;/strong&gt;&lt;/em&gt;  Decoders are used to convert a coded input into a set of individual output signals.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Decoders:&lt;/strong&gt;&lt;/em&gt; Decoders are used to convert a coded input into a set of individual output signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Encoders:&lt;/strong&gt;&lt;/em&gt;  Encoders are used to convert a set of individual input signals into a coded output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Encoders:&lt;/strong&gt;&lt;/em&gt; Encoders are used to convert a set of individual input signals into a coded output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Multiplexers:&lt;/strong&gt;&lt;/em&gt;  Multiplexers are used to select one of multiple input signals based on a control signal.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Multiplexers:&lt;/strong&gt;&lt;/em&gt; Multiplexers are used to select one of multiple input signals based on a control signal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Demultiplexers:&lt;/strong&gt;&lt;/em&gt;  Demultiplexers are used to distribute a single input signal to multiple output lines based on a control signal.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Demultiplexers:&lt;/strong&gt;&lt;/em&gt; Demultiplexers are used to distribute a single input signal to multiple output lines based on a control signal.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -8675,16 +8675,16 @@ XOR 0110 (6 in decimal)
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - ***Types of Encoders:*** &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Priority Encoder:***  A priority encoder assigns a unique code to the highest-priority active input. 
+- ***Priority Encoder:*** A priority encoder assigns a unique code to the highest-priority active input. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Octal-to-Binary Encoder:&lt;/strong&gt;&lt;/em&gt;  Converts an octal input into a binary output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Octal-to-Binary Encoder:&lt;/strong&gt;&lt;/em&gt; Converts an octal input into a binary output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Seven-Segment Decoder:&lt;/strong&gt;&lt;/em&gt;  Converts a binary-coded decimal (BCD) input into a seven-segment display output.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Seven-Segment Decoder:&lt;/strong&gt;&lt;/em&gt; Converts a binary-coded decimal (BCD) input into a seven-segment display output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -8696,16 +8696,16 @@ XOR 0110 (6 in decimal)
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
 - ***Types of Decoders:*** &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***2-to-4 Decoder:***  Decodes a 2-bit input into 4 output lines. 
+- ***2-to-4 Decoder:*** Decodes a 2-bit input into 4 output lines. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;3-to-8 Decoder:&lt;/strong&gt;&lt;/em&gt;  Decodes a 3-bit input into 8 output lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;3-to-8 Decoder:&lt;/strong&gt;&lt;/em&gt; Decodes a 3-bit input into 8 output lines.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Decimal Decoder:&lt;/strong&gt;&lt;/em&gt;  Decodes a BCD input into 10 output lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;BCD-to-Decimal Decoder:&lt;/strong&gt;&lt;/em&gt; Decodes a BCD input into 10 output lines.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 
@@ -8715,26 +8715,26 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;These components are widely used in various digital systems, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Microprocessors and microcontrollers:***  They form the core of the control unit, arithmetic logic unit (ALU), and other functional units. 
+- ***Microprocessors and microcontrollers:*** They form the core of the control unit, arithmetic logic unit (ALU), and other functional units. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Memory systems:&lt;/strong&gt;&lt;/em&gt;  They are used for address decoding, data selection, and write enable signals.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Memory systems:&lt;/strong&gt;&lt;/em&gt; They are used for address decoding, data selection, and write enable signals.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Input/output devices:&lt;/strong&gt;&lt;/em&gt;  They are used for data conversion, encoding, and decoding.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Input/output devices:&lt;/strong&gt;&lt;/em&gt; They are used for data conversion, encoding, and decoding.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt;  They are used for modulation, demodulation, and error detection/correction.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Communication systems:&lt;/strong&gt;&lt;/em&gt; They are used for modulation, demodulation, and error detection/correction.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Digital signal processing:&lt;/strong&gt;&lt;/em&gt;  They are used for filtering, sampling, and quantization.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Digital signal processing:&lt;/strong&gt;&lt;/em&gt; They are used for filtering, sampling, and quantization.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -8742,21 +8742,21 @@ XOR 0110 (6 in decimal)
 &lt;p&gt;Combinational logic circuits, encoders, and decoders can be designed using various methods, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Truth tables:***  A truth table lists all possible input combinations and their corresponding outputs. 
+- ***Truth tables:*** A truth table lists all possible input combinations and their corresponding outputs. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boolean algebra:&lt;/strong&gt;&lt;/em&gt;  Boolean algebra can be used to express the circuit&amp;rsquo;s logic using Boolean equations.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boolean algebra:&lt;/strong&gt;&lt;/em&gt; Boolean algebra can be used to express the circuit&amp;rsquo;s logic using Boolean equations.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karnaugh maps:&lt;/strong&gt;&lt;/em&gt;  Karnaugh maps are a graphical tool for simplifying Boolean expressions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Karnaugh maps:&lt;/strong&gt;&lt;/em&gt; Karnaugh maps are a graphical tool for simplifying Boolean expressions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt;  HDLs like Verilog and VHDL can be used to describe the circuit&amp;rsquo;s behavior in a textual format.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Hardware description languages (HDLs):&lt;/strong&gt;&lt;/em&gt; HDLs like Verilog and VHDL can be used to describe the circuit&amp;rsquo;s behavior in a textual format.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -10655,16 +10655,16 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)&lt;/code&gt;&lt;/pre&g
 &lt;p&gt;To combine and manipulate Boolean values, we employ Boolean operations. The three primary Boolean operations are:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; or &lt;code&gt;AND&lt;/code&gt;):***  The AND operation returns &lt;em&gt;true&lt;/em&gt; only if both operands are &lt;em&gt;true&lt;/em&gt;. Otherwise, it returns &lt;em&gt;false&lt;/em&gt;. 
+- ***AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;or&lt;code&gt;AND&lt;/code&gt;):*** The AND operation returns&lt;em&gt;true&lt;/em&gt;only if both operands are&lt;em&gt;true&lt;/em&gt;. Otherwise, it returns&lt;em&gt;false&lt;/em&gt;. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;OR (&lt;code&gt;||&lt;/code&gt; or &lt;code&gt;OR&lt;/code&gt;):&lt;/strong&gt;&lt;/em&gt;  The OR operation returns &lt;em&gt;true&lt;/em&gt; if at least one operand is &lt;em&gt;true&lt;/em&gt;. It returns &lt;em&gt;false&lt;/em&gt; only if both operands are &lt;em&gt;false&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;OR (&lt;code&gt;||&lt;/code&gt;or&lt;code&gt;OR&lt;/code&gt;):&lt;/strong&gt;&lt;/em&gt; The OR operation returns&lt;em&gt;true&lt;/em&gt;if at least one operand is&lt;em&gt;true&lt;/em&gt;. It returns&lt;em&gt;false&lt;/em&gt;only if both operands are&lt;em&gt;false&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOT (&lt;code&gt;!&lt;/code&gt; or &lt;code&gt;NOT&lt;/code&gt;):&lt;/strong&gt;&lt;/em&gt;  The NOT operation negates the value of its operand. It returns &lt;em&gt;true&lt;/em&gt; if the operand is &lt;em&gt;false&lt;/em&gt;, and vice versa.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOT (&lt;code&gt;!&lt;/code&gt;or&lt;code&gt;NOT&lt;/code&gt;):&lt;/strong&gt;&lt;/em&gt; The NOT operation negates the value of its operand. It returns&lt;em&gt;true&lt;/em&gt;if the operand is&lt;em&gt;false&lt;/em&gt;, and vice versa.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -10695,21 +10695,21 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)&lt;/code&gt;&lt;/pre&g
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Examples of Boolean Functions&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***AND function:***  &lt;code&gt;f(A, B) = A AND B&lt;/code&gt; 
+- ***AND function:*** &lt;code&gt;f(A, B) = A AND B&lt;/code&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;OR function:&lt;/strong&gt;&lt;/em&gt;  &lt;code&gt;f(A, B) = A OR B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;OR function:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;f(A, B) = A OR B&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOT function:&lt;/strong&gt;&lt;/em&gt;  &lt;code&gt;f(A) = NOT A&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;NOT function:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;f(A) = NOT A&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;XOR (exclusive OR) function:&lt;/strong&gt;&lt;/em&gt;  &lt;code&gt;f(A, B) = (A OR B) AND NOT (A AND B)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;XOR (exclusive OR) function:&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;f(A, B) = (A OR B) AND NOT (A AND B)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -10717,21 +10717,21 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)&lt;/code&gt;&lt;/pre&g
 &lt;p&gt;Boolean logic has widespread applications in various fields, including:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-- ***Computer hardware:***  Digital circuits and logic gates are designed based on Boolean functions. 
+- ***Computer hardware:*** Digital circuits and logic gates are designed based on Boolean functions. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Programming:&lt;/strong&gt;&lt;/em&gt;  Boolean expressions are used to control the flow of execution in programming languages.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Programming:&lt;/strong&gt;&lt;/em&gt; Boolean expressions are used to control the flow of execution in programming languages.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Database systems:&lt;/strong&gt;&lt;/em&gt;  Boolean operators are used for query optimization and retrieval.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Database systems:&lt;/strong&gt;&lt;/em&gt; Boolean operators are used for query optimization and retrieval.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Artificial intelligence:&lt;/strong&gt;&lt;/em&gt;  Boolean logic is employed in knowledge representation and reasoning.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Artificial intelligence:&lt;/strong&gt;&lt;/em&gt; Boolean logic is employed in knowledge representation and reasoning.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
@@ -10774,7 +10774,7 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)&lt;/code&gt;&lt;/pre&g
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;A OR (B AND C) = (A OR B) AND (A OR C)&lt;/code&gt;   &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;A OR (B AND C) = (A OR B) AND (A OR C)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt; 

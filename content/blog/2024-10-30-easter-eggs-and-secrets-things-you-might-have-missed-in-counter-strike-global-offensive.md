@@ -29,19 +29,19 @@ url: /easter-eggs-and-secrets-things-you-might-have-missed-in-counter-strike-glo
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***The Golden Gun:***  A rare and powerful weapon, the Golden Gun is a reference to the James Bond films. 
+- ***The Golden Gun:*** A rare and powerful weapon, the Golden Gun is a reference to the James Bond films. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The AWP's "World Peace" Skin:***  This skin features a peace sign and the phrase "World Peace," a humorous take on a serious topic. 
+- ***The AWP's "World Peace" Skin:*** This skin features a peace sign and the phrase "World Peace," a humorous take on a serious topic. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Howl" Skin:***  This skin, known for its high price tag, features a mysterious creature that has sparked numerous theories and discussions among the community. 
+- ***The "Howl" Skin:*** This skin, known for its high price tag, features a mysterious creature that has sparked numerous theories and discussions among the community. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Nuke" Map:***  This map is filled with references to nuclear warfare, including a hidden room with a nuclear warhead. 
+- ***The "Nuke" Map:*** This map is filled with references to nuclear warfare, including a hidden room with a nuclear warhead. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -50,19 +50,19 @@ url: /easter-eggs-and-secrets-things-you-might-have-missed-in-counter-strike-glo
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***The "No-Scope" Trick:***  A skilled player can accurately shoot enemies without scoping in, a technique that requires precise timing and aim. 
+- ***The "No-Scope" Trick:*** A skilled player can accurately shoot enemies without scoping in, a technique that requires precise timing and aim. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Jump-Throw" Technique:***  Players can throw grenades and other items while jumping, allowing for more creative and strategic gameplay. 
+- ***The "Jump-Throw" Technique:*** Players can throw grenades and other items while jumping, allowing for more creative and strategic gameplay. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Duck-Jump" Technique:***  By crouching and jumping simultaneously, players can gain extra height, allowing them to reach otherwise inaccessible areas. 
+- ***The "Duck-Jump" Technique:*** By crouching and jumping simultaneously, players can gain extra height, allowing them to reach otherwise inaccessible areas. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Flashbang Trick:***  By throwing a flashbang at a specific angle, players can create a "flashbang wall," blinding enemies on the other side. 
+- ***The "Flashbang Trick:*** By throwing a flashbang at a specific angle, players can create a "flashbang wall," blinding enemies on the other side. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -71,15 +71,15 @@ url: /easter-eggs-and-secrets-things-you-might-have-missed-in-counter-strike-glo
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***The Secret Room on Nuke:***  As mentioned earlier, the Nuke map features a hidden room with a nuclear warhead. This room can only be accessed through a specific sequence of actions. 
+- ***The Secret Room on Nuke:*** As mentioned earlier, the Nuke map features a hidden room with a nuclear warhead. This room can only be accessed through a specific sequence of actions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The Hidden Areas on Dust 2:***  Dust 2, one of the most iconic CS:GO maps, has several hidden areas that can be accessed by jumping and crouching in specific locations. 
+- ***The Hidden Areas on Dust 2:*** Dust 2, one of the most iconic CS:GO maps, has several hidden areas that can be accessed by jumping and crouching in specific locations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The Secret Room on Inferno:***  Inferno also has a hidden room that can be accessed by jumping and crouching through a specific window. 
+- ***The Secret Room on Inferno:*** Inferno also has a hidden room that can be accessed by jumping and crouching through a specific window. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -88,15 +88,15 @@ url: /easter-eggs-and-secrets-things-you-might-have-missed-in-counter-strike-glo
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***The "Howl" Conspiracy:***  The "Howl" skin has spawned numerous theories, with some players believing that the creature on the skin is a real-world entity. 
+- ***The "Howl" Conspiracy:*** The "Howl" skin has spawned numerous theories, with some players believing that the creature on the skin is a real-world entity. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Nuke" Easter Egg Hunt:***  The community has discovered numerous hidden details and secrets on the Nuke map, including hidden messages and cryptic symbols. 
+- ***The "Nuke" Easter Egg Hunt:*** The community has discovered numerous hidden details and secrets on the Nuke map, including hidden messages and cryptic symbols. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***The "Dust 2" Secret Room Challenge:***  Players have created challenges and speed runs involving the hidden areas on Dust 2, pushing the limits of the map's design. 
+- ***The "Dust 2" Secret Room Challenge:*** Players have created challenges and speed runs involving the hidden areas on Dust 2, pushing the limits of the map's design. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

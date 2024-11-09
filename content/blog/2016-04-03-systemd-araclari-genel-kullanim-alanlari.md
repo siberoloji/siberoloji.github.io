@@ -16,7 +16,7 @@ classicmag_post_sidebar_option:
 - right-sidebar
 date: "2016-04-03T14:22:00Z"
 excerpt: Günümüzde, Debian, Fedora, Red Hat, Ubuntu ve ArchLinux vb. ana dağıtım olarak
-  kabul edilen linux işletim sistemleri, systemd kullanmaya başlamıştır.  Gelişmeler,
+  kabul edilen linux işletim sistemleri, systemd kullanmaya başlamıştır. Gelişmeler,
   kullanımın yaygınlaşacağını göstermektedir. Linux kullanıcılarının, bu alanda kendini
   geliştirmeleri gerekecektir.
 guid: https://www.siberoloji.com/?p=1034
@@ -34,7 +34,7 @@ url: /tr/systemd-araclari-genel-kullanim-alanlari/
   Bu konuda internette kaynak arandığında, genelde geliştiricilerin hazırladığı İngilizce manpages (<a href="http://www.freedesktop.org/software/systemd/man/" target="_blank" rel="noreferrer noopener">wiki</a>) veya kısa blog yazıları ile karşılaşıyoruz. Türkçe, detaylı bir kaynak bulmak oldukça zor. İşletim sistemini, görsel olarak kullananlar ve gerisine karışmam diyenler için sorun yok. Ancak, arka planda olanları merak edenler veya sorun çözme işlemlerinde bilgi sahibi olmak isteyenlerin, systemd araçlarını öğrenmesi kaçınılmaz olacak. Bu düşünceden hareketle, yazıları bir sıra dahilinde devam ettirmeyi düşünüyoruz. 
  
 
-  systemd hakkında <a href="https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/" data-type="post" data-id="1036" target="_blank" rel="noreferrer noopener">giriş</a> yazısında, kısaca açıklayıcı bilgi vermeye çalışmıştık. Bu yazıda ise systemd, kullanıcılara hangi  araçları sunuyor? Bu araçların neler olduğunu açıklayacağız. 
+  systemd hakkında<a href="https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/" data-type="post" data-id="1036" target="_blank" rel="noreferrer noopener">giriş</a>yazısında, kısaca açıklayıcı bilgi vermeye çalışmıştık. Bu yazıda ise systemd, kullanıcılara hangi araçları sunuyor? Bu araçların neler olduğunu açıklayacağız. 
  
 
   systemd, sistem ve servis yöneticisi olarak tanımlanan bir program. Windows İşletim Sistemi kullanıcılarının, Çalıştır kutusuna services.msc komutunu yazdığında çalışan servisler programının bir benzeri. Komut satırından kontrol edilebildiği gibi görsel bir kullanıcı arayüzü de bulunuyor (systemd-ui). 

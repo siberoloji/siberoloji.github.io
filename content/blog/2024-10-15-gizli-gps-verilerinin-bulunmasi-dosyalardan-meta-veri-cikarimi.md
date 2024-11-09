@@ -72,23 +72,23 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Olayların Doğrulanması***  : GPS verileri analistlerin belirli olayların yerini teyit etmelerine olanak tanır. Örneğin, bir protesto veya çatışma bölgesinde çekilen bir fotoğraf, coğrafi etiketin herkese açık haritalar veya uydu görüntüleriyle karşılaştırılmasıyla doğrulanabilir. 
+- ***Olayların Doğrulanması*** : GPS verileri analistlerin belirli olayların yerini teyit etmelerine olanak tanır. Örneğin, bir protesto veya çatışma bölgesinde çekilen bir fotoğraf, coğrafi etiketin herkese açık haritalar veya uydu görüntüleriyle karşılaştırılmasıyla doğrulanabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Hareket Takibi***  : Analistler, birden fazla fotoğraf veya videodan GPS meta verilerini çıkararak, bireylerin veya nesnelerin zaman içindeki hareketlerini izleyebilir, desenleri ve rotaları belirleyebilir. 
+- ***Hareket Takibi*** : Analistler, birden fazla fotoğraf veya videodan GPS meta verilerini çıkararak, bireylerin veya nesnelerin zaman içindeki hareketlerini izleyebilir, desenleri ve rotaları belirleyebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Suç Mahalli İncelemesi***  : Kolluk kuvvetleri, suç mahallerini coğrafi olarak belirlemek, olası şüphelileri tespit etmek ve hatta dijital fotoğraflarda veya videolarda bırakılan kanıtları keşfetmek için meta verileri kullanır. 
+- ***Suç Mahalli İncelemesi*** : Kolluk kuvvetleri, suç mahallerini coğrafi olarak belirlemek, olası şüphelileri tespit etmek ve hatta dijital fotoğraflarda veya videolarda bırakılan kanıtları keşfetmek için meta verileri kullanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Gazetecilik Araştırmaları***  : Araştırmacı gazeteciler, görüntülerin gerçekliğini doğrulamak veya haberlerindeki kaynakların yerini teyit etmek için sıklıkla GPS meta verilerini kullanırlar. 
+- ***Gazetecilik Araştırmaları*** : Araştırmacı gazeteciler, görüntülerin gerçekliğini doğrulamak veya haberlerindeki kaynakların yerini teyit etmek için sıklıkla GPS meta verilerini kullanırlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kurumsal Casusluk ve Dolandırıcılık***  : Şirketler, sızdırılan belge veya dosyaların kökenlerini izleyerek iç dolandırıcılığı, fikri mülkiyet hırsızlığını veya casusluğu araştırmak için GPS meta verilerini kullanabilir. 
+- ***Kurumsal Casusluk ve Dolandırıcılık*** : Şirketler, sızdırılan belge veya dosyaların kökenlerini izleyerek iç dolandırıcılığı, fikri mülkiyet hırsızlığını veya casusluğu araştırmak için GPS meta verilerini kullanabilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -111,11 +111,11 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***JPEG (Ortak Fotoğraf Uzmanları Grubu)***  : Bu, GPS koordinatları da dahil olmak üzere meta verileri depolayan en yaygın görüntü biçimidir. Çoğu dijital kamera ve akıllı telefon görüntüleri JPEG biçiminde yakalar. 
+- ***JPEG (Ortak Fotoğraf Uzmanları Grubu)*** : Bu, GPS koordinatları da dahil olmak üzere meta verileri depolayan en yaygın görüntü biçimidir. Çoğu dijital kamera ve akıllı telefon görüntüleri JPEG biçiminde yakalar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***PNG (Taşınabilir Ağ Grafikleri)***  : Coğrafi etiketleme için JPEG'den daha az yaygın olsa da PNG dosyaları konum verileri de dahil olmak üzere gömülü meta verileri içerebilir. 
+- ***PNG (Taşınabilir Ağ Grafikleri)*** : Coğrafi etiketleme için JPEG'den daha az yaygın olsa da PNG dosyaları konum verileri de dahil olmak üzere gömülü meta verileri içerebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -128,11 +128,11 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***MP4 (MPEG-4)***  : Coğrafi etiketler de dahil olmak üzere meta verileri depolayan yaygın olarak kullanılan bir video formatıdır. 
+- ***MP4 (MPEG-4)*** : Coğrafi etiketler de dahil olmak üzere meta verileri depolayan yaygın olarak kullanılan bir video formatıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***MOV (QuickTime Dosya Biçimi)***  : Bir video kaydedildiğinde GPS bilgisi gibi meta verileri depolayabilen Apple'ın video dosya biçimi. 
+- ***MOV (QuickTime Dosya Biçimi)*** : Bir video kaydedildiğinde GPS bilgisi gibi meta verileri depolayabilen Apple'ın video dosya biçimi. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -145,11 +145,11 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***PDF (Taşınabilir Belge Biçimi)***  : PDF dosyalarındaki meta veriler genellikle oluşturulma tarihlerini, yazarları ve değişiklik geçmişini içerir. 
+- ***PDF (Taşınabilir Belge Biçimi)*** : PDF dosyalarındaki meta veriler genellikle oluşturulma tarihlerini, yazarları ve değişiklik geçmişini içerir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***DOCX (Microsoft Word)***  : Word belgeleri yazar bilgilerini, düzenleme geçmişini ve zaman damgalarını içerebilir. 
+- ***DOCX (Microsoft Word)*** : Word belgeleri yazar bilgilerini, düzenleme geçmişini ve zaman damgalarını içerebilir. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -190,7 +190,7 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***ExifTool Nasıl Kullanılır***  : 
+- ***ExifTool Nasıl Kullanılır*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -213,7 +213,7 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">b. ***Jeffrey'nin Exif Viewer***  
+<h4 class="wp-block-heading">b.***Jeffrey'nin Exif Viewer***  
 <!-- /wp:heading -->
 
   Jeffrey's Exif Viewer, kullanıcıların fotoğraf yüklemelerine ve GPS koordinatları da dahil olmak üzere EXIF ​​meta verilerini çıkarmalarına olanak tanıyan çevrimiçi bir araçtır. Yazılım indirmeye gerek kalmadan meta verileri çıkarmanın hızlı ve basit bir yoludur.
@@ -221,7 +221,7 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Jeffrey'nin Exif Görüntüleyicisi Nasıl Kullanılır***  : 
+- ***Jeffrey'nin Exif Görüntüleyicisi Nasıl Kullanılır*** : 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -255,15 +255,15 @@ url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Meta Veri Çıkarımı için Python Kütüphaneleri***  : 
+- ***Meta Veri Çıkarımı için Python Kütüphaneleri*** : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pillow***  : Görüntü meta verilerini çıkarabilen ve düzenleyebilen bir Python Görüntüleme Kütüphanesi. 
+- ***Pillow*** : Görüntü meta verilerini çıkarabilen ve düzenleyebilen bir Python Görüntüleme Kütüphanesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***pyExifTool***  : Python betiklerinde otomatik meta veri çıkarımına izin veren ExifTool için bir Python sarmalayıcısı. 
+- ***pyExifTool*** : Python betiklerinde otomatik meta veri çıkarımına izin veren ExifTool için bir Python sarmalayıcısı. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -301,11 +301,11 @@ print(f"Latitude: {gps_data[0]}, Longitude: {gps_data[1]}, Altitude: {gps_data[2
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Otopsi***  : Araştırmacıların silinen dosyaları kurtarmasına, meta verileri analiz etmesine ve coğrafi konum bilgilerini izlemesine olanak tanıyan açık kaynaklı bir dijital adli bilişim platformu. 
+- ***Otopsi*** : Araştırmacıların silinen dosyaları kurtarmasına, meta verileri analiz etmesine ve coğrafi konum bilgilerini izlemesine olanak tanıyan açık kaynaklı bir dijital adli bilişim platformu. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***FTK Imager***  : Dosya analizi, meta veri çıkarma ve silinen dosyaların kurtarılması için kullanılan bir adli araçtır. 
+- ***FTK Imager*** : Dosya analizi, meta veri çıkarma ve silinen dosyaların kurtarılması için kullanılan bir adli araçtır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -317,7 +317,7 @@ print(f"Latitude: {gps_data[0]}, Longitude: {gps_data[1]}, Altitude: {gps_data[2
  
 
 
- ### 1. ***Coğrafi Etiketleme***  ***Devre Dışı*** 
+ ### 1.***Coğrafi Etiketleme***  ***Devre Dışı*** 
 <!-- /wp:heading -->
 
   Tüm cihazlarda coğrafi etiketleme varsayılan olarak etkin değildir. Bazı kullanıcılar gizlilik nedenleriyle coğrafi etiketlemeyi etkin bir şekilde devre dışı bırakır, bu da birçok dosyanın GPS meta verisi içermeyebileceği anlamına gelir.
@@ -356,15 +356,15 @@ print(f"Latitude: {gps_data[0]}, Longitude: {gps_data[1]}, Altitude: {gps_data[2
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Gizliliğe Saygı***  : Meta veri çıkarma, bir bireyin tam konumu gibi hassas kişisel bilgileri ortaya çıkarabilir. Analistler, soruşturmalar yürütürken gizlilik haklarını ihlal etmediklerinden emin olmalıdır. 
+- ***Gizliliğe Saygı*** : Meta veri çıkarma, bir bireyin tam konumu gibi hassas kişisel bilgileri ortaya çıkarabilir. Analistler, soruşturmalar yürütürken gizlilik haklarını ihlal etmediklerinden emin olmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Yasal Uyumluluk***  : GDPR gibi düzenlemeler, analistlerin veri gizliliğine ve bilgi toplama ve depolama için yasal gerekliliklere dikkat etmesini gerektirir. Her zaman yerel ve uluslararası yasalara uyumu sağlayın. 
+- ***Yasal Uyumluluk*** : GDPR gibi düzenlemeler, analistlerin veri gizliliğine ve bilgi toplama ve depolama için yasal gerekliliklere dikkat etmesini gerektirir. Her zaman yerel ve uluslararası yasalara uyumu sağlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Sorumlu Kullanım***  : Veriler yasal olarak erişilebilir olsa bile, bu verileri kullanmanın olası sonuçlarını göz önünde bulundurmak önemlidir. Analistler, bireylere zarar verebilecek veya sıkıntıya sokabilecek eylemlerden kaçınmalıdır. 
+- ***Sorumlu Kullanım*** : Veriler yasal olarak erişilebilir olsa bile, bu verileri kullanmanın olası sonuçlarını göz önünde bulundurmak önemlidir. Analistler, bireylere zarar verebilecek veya sıkıntıya sokabilecek eylemlerden kaçınmalıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

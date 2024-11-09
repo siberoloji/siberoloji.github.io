@@ -40,15 +40,15 @@ url: /how-to-retrieve-all-published-wordpress-blog-post-links-with-sql-query/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***WordPress Installation:***  Ensure you have a WordPress installation. 
+- ***WordPress Installation:*** Ensure you have a WordPress installation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Database Access:***  You'll need access to your WordPress database, including its username, password, and hostname. 
+- ***Database Access:*** You'll need access to your WordPress database, including its username, password, and hostname. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***SQL Editor:***  A tool like phpMyAdmin or a direct SQL client can be used to execute the query. 
+- ***SQL Editor:*** A tool like phpMyAdmin or a direct SQL client can be used to execute the query. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -67,7 +67,7 @@ url: /how-to-retrieve-all-published-wordpress-blog-post-links-with-sql-query/
 <!-- wp:list-item -->
 - ***Identify the Relevant Table:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- The primary table for storing blog post data in WordPress is <code>wp_posts</code>. This table contains columns like <code>ID</code>, <code>post_title</code>, <code>post_content</code>, <code>post_status</code>, and more. 
+- The primary table for storing blog post data in WordPress is<code>wp_posts</code>. This table contains columns like<code>ID</code>,<code>post_title</code>,<code>post_content</code>,<code>post_status</code>, and more. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item -->
@@ -75,11 +75,11 @@ url: /how-to-retrieve-all-published-wordpress-blog-post-links-with-sql-query/
 <!-- wp:list-item -->
 - ***Construct the SQL Query:*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- The query will select the <code>ID</code> and <code>post_name</code> columns from the <code>wp_posts</code> table. The <code>post_name</code>column typically contains the slug or permalink of the post. 
+- The query will select the<code>ID</code>and<code>post_name</code>columns from the<code>wp_posts</code>table. The<code>post_name</code>column typically contains the slug or permalink of the post. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- To filter for published posts only, we'll use the <code>WHERE</code> clause and specify that the <code>post_status</code>column should equal 'publish'. 
+- To filter for published posts only, we'll use the<code>WHERE</code>clause and specify that the<code>post_status</code>column should equal 'publish'. 
 <!-- /wp:list-item --> 
 <!-- /wp:list --> 
 <!-- /wp:list-item --> 
@@ -105,7 +105,7 @@ url: /how-to-retrieve-all-published-wordpress-blog-post-links-with-sql-query/
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- <code>FROM wp_posts</code>: This indicates that we're querying the <code>wp_posts</code> table. 
+- <code>FROM wp_posts</code>: This indicates that we're querying the<code>wp_posts</code>table. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -132,19 +132,19 @@ url: /how-to-retrieve-all-published-wordpress-blog-post-links-with-sql-query/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Post Types:***  If your WordPress site has custom post types, you can modify the query to include or exclude specific post types using the <code>post_type</code> column. 
+- ***Post Types:*** If your WordPress site has custom post types, you can modify the query to include or exclude specific post types using the<code>post_type</code>column. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Taxonomies:***  To filter posts based on their categories or tags, you can join the <code>wp_posts</code> table with the <code>wp_term_relationships</code> and <code>wp_terms</code> tables. 
+- ***Taxonomies:*** To filter posts based on their categories or tags, you can join the<code>wp_posts</code>table with the<code>wp_term_relationships</code>and<code>wp_terms</code>tables. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Pagination:***  For large datasets, you might want to implement pagination to avoid overwhelming your database. 
+- ***Pagination:*** For large datasets, you might want to implement pagination to avoid overwhelming your database. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Performance Optimization:***  Consider using indexes on frequently queried columns (like <code>post_status</code>) to improve query performance. 
+- ***Performance Optimization:*** Consider using indexes on frequently queried columns (like<code>post_status</code>) to improve query performance. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 

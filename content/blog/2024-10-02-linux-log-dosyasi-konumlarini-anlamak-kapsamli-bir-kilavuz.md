@@ -34,23 +34,23 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Sorun Giderme***  : Sistem veya uygulama sorunlarını teşhis ederken genellikle ilk bakılan yer günlük dosyalarıdır. 
+- ***Sorun Giderme*** : Sistem veya uygulama sorunlarını teşhis ederken genellikle ilk bakılan yer günlük dosyalarıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik***  : Potansiyel güvenlik ihlallerini tespit etmeye ve araştırmaya yardımcı olurlar. 
+- ***Güvenlik*** : Potansiyel güvenlik ihlallerini tespit etmeye ve araştırmaya yardımcı olurlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Performans İzleme***  : Günlükler sistem performansı ve kaynak kullanımı hakkında bilgi sağlayabilir. 
+- ***Performans İzleme*** : Günlükler sistem performansı ve kaynak kullanımı hakkında bilgi sağlayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Uyumluluk***  : Birçok sektör, düzenlemelere uyum sağlamak için kayıtların tutulmasını gerektirir. 
+- ***Uyumluluk*** : Birçok sektör, düzenlemelere uyum sağlamak için kayıtların tutulmasını gerektirir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Denetim***  : Günlükler, denetim amaçlı sistem ve kullanıcı faaliyetlerinin kaydını sağlar. 
+- ***Denetim*** : Günlükler, denetim amaçlı sistem ve kullanıcı faaliyetlerinin kaydını sağlar. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -74,15 +74,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Genel sistem etkinlik günlükleri 
+- ***Amaç*** : Genel sistem etkinlik günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Çekirdek iletileri, sistem daemon günlükleri ve diğer sistem genelindeki günlükler 
+- ***İçerik*** : Çekirdek iletileri, sistem daemon günlükleri ve diğer sistem genelindeki günlükler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Sistem genelindeki sorunları giderme, sistem davranışını izleme 
+- ***Kullanım*** : Sistem genelindeki sorunları giderme, sistem davranışını izleme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -92,15 +92,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Kimlik doğrulama günlükleri 
+- ***Amaç*** : Kimlik doğrulama günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Kullanıcı oturum açmaları, sudo komut kullanımı ve diğer kimlik doğrulamayla ilgili olaylar 
+- ***İçerik*** : Kullanıcı oturum açmaları, sudo komut kullanımı ve diğer kimlik doğrulamayla ilgili olaylar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Oturum açma girişimlerini izleme, yetkisiz erişimi tespit etme 
+- ***Kullanım*** : Oturum açma girişimlerini izleme, yetkisiz erişimi tespit etme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -110,15 +110,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Çekirdek günlükleri 
+- ***Amaç*** : Çekirdek günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Donanım hataları ve çekirdek düzeyindeki olaylar da dahil olmak üzere çekirdek iletileri 
+- ***İçerik*** : Donanım hataları ve çekirdek düzeyindeki olaylar da dahil olmak üzere çekirdek iletileri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Donanım ve sürücü sorunlarının teşhisi 
+- ***Kullanım*** : Donanım ve sürücü sorunlarının teşhisi 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -128,15 +128,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Önyükleme mesajları 
+- ***Amaç*** : Önyükleme mesajları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Sistem önyükleme işlemi sırasında oluşturulan iletiler 
+- ***İçerik*** : Sistem önyükleme işlemi sırasında oluşturulan iletiler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Önyükleme sorunlarının giderilmesi, donanım algılamanın kontrol edilmesi 
+- ***Kullanım*** : Önyükleme sorunlarının giderilmesi, donanım algılamanın kontrol edilmesi 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -146,15 +146,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Cron iş günlükleri 
+- ***Amaç*** : Cron iş günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Zamanlanmış görev yürütmelerinin kayıtları 
+- ***İçerik*** : Zamanlanmış görev yürütmelerinin kayıtları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Cron iş yürütmesini doğrulama, cron ile ilgili sorunları teşhis etme 
+- ***Kullanım*** : Cron iş yürütmesini doğrulama, cron ile ilgili sorunları teşhis etme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -164,15 +164,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Posta sunucusu günlükleri 
+- ***Amaç*** : Posta sunucusu günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : E-posta sunucusu etkinliği (örneğin, Postfix, Sendmail) 
+- ***İçerik*** : E-posta sunucusu etkinliği (örneğin, Postfix, Sendmail) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : E-posta teslim sorunlarını giderme, spam sorunlarını tespit etme 
+- ***Kullanım*** : E-posta teslim sorunlarını giderme, spam sorunlarını tespit etme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -182,15 +182,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Apache web sunucusu günlükleri 
+- ***Amaç*** : Apache web sunucusu günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Web sunucusu erişim ve hata günlükleri 
+- ***İçerik*** : Web sunucusu erişim ve hata günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Web trafiğini analiz etme, web uygulaması sorunlarını giderme 
+- ***Kullanım*** : Web trafiğini analiz etme, web uygulaması sorunlarını giderme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -200,15 +200,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Veritabanı günlükleri 
+- ***Amaç*** : Veritabanı günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Veritabanı sunucusu etkinliği, hatalar ve sorgular 
+- ***İçerik*** : Veritabanı sunucusu etkinliği, hatalar ve sorgular 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Veritabanı performansını optimize etme, veritabanı sorunlarını giderme 
+- ***Kullanım*** : Veritabanı performansını optimize etme, veritabanı sorunlarını giderme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -218,15 +218,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : Systemd günlük kayıtları 
+- ***Amaç*** : Systemd günlük kayıtları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Systemd etkin sistemlerden yapılandırılmış günlükler 
+- ***İçerik*** : Systemd etkin sistemlerden yapılandırılmış günlükler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Systemd hizmetleri için merkezi günlük kaydı, journalctl ile sorgulama 
+- ***Kullanım*** : Systemd hizmetleri için merkezi günlük kaydı, journalctl ile sorgulama 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -236,15 +236,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : X Pencere Sistemi oturum hataları 
+- ***Amaç*** : X Pencere Sistemi oturum hataları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Grafiksel oturumlarla ilgili hatalar 
+- ***İçerik*** : Grafiksel oturumlarla ilgili hatalar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Grafiksel kullanıcı arayüzüyle ilgili sorunların giderilmesi 
+- ***Kullanım*** : Grafiksel kullanıcı arayüzüyle ilgili sorunların giderilmesi 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -254,15 +254,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : CUPS (baskı sistemi) günlükleri 
+- ***Amaç*** : CUPS (baskı sistemi) günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Yazdırma işi bilgileri, yazıcı hataları 
+- ***İçerik*** : Yazdırma işi bilgileri, yazıcı hataları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Yazdırma sorunlarının teşhisi 
+- ***Kullanım*** : Yazdırma sorunlarının teşhisi 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -272,15 +272,15 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-- ***Amaç***  : APT paket yöneticisi günlükleri 
+- ***Amaç*** : APT paket yöneticisi günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***İçerik***  : Paket kurulum, yükseltme ve kaldırma günlükleri 
+- ***İçerik*** : Paket kurulum, yükseltme ve kaldırma günlükleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kullanım***  : Sistem güncellemelerini izleme, paket yönetimi sorunlarını giderme 
+- ***Kullanım*** : Sistem güncellemelerini izleme, paket yönetimi sorunlarını giderme 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -317,31 +317,31 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***cat***  : Tüm günlük dosyalarını görüntülemek içinKopyala<code>cat /var/log/syslog</code> 
+- ***cat*** : Tüm günlük dosyalarını görüntülemek içinKopyala<code>cat /var/log/syslog</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***tail***  : Bir günlük dosyasının sonunu görüntülemek veya günlük güncellemelerini gerçek zamanlı olarak takip etmek içinKopyala<code>tail -f /var/log/auth.log</code> 
+- ***tail*** : Bir günlük dosyasının sonunu görüntülemek veya günlük güncellemelerini gerçek zamanlı olarak takip etmek içinKopyala<code>tail -f /var/log/auth.log</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***grep***  : Günlük dosyalarında belirli kalıpları aramak içinKopyala<code>grep "error" /var/log/syslog</code> 
+- ***grep*** : Günlük dosyalarında belirli kalıpları aramak içinKopyala<code>grep "error" /var/log/syslog</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***journalctl***  : systemd journalCopy'yi sorgulamak için<code>journalctl -u apache2.service</code> 
+- ***journalctl*** : systemd journalCopy'yi sorgulamak için<code>journalctl -u apache2.service</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***daha az***  : Büyük günlük dosyalarını sayfalamak içinKopyala<code>less /var/log/syslog</code> 
+- ***daha az*** : Büyük günlük dosyalarını sayfalamak içinKopyala<code>less /var/log/syslog</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***logwatch***  : Özelleştirilebilir bir günlük analiz sistemi 
+- ***logwatch*** : Özelleştirilebilir bir günlük analiz sistemi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Kibana***  : Gelişmiş log analizi ve görselleştirme için ELK (Elasticsearch, Logstash, Kibana) yığınının bir parçası 
+- ***Kibana*** : Gelişmiş log analizi ve görselleştirme için ELK (Elasticsearch, Logstash, Kibana) yığınının bir parçası 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -351,31 +351,31 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Düzenli İzleme***  : Önemli günlük dosyalarını düzenli olarak kontrol etmek için bir rutin oluşturun. 
+- ***Düzenli İzleme*** : Önemli günlük dosyalarını düzenli olarak kontrol etmek için bir rutin oluşturun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Merkezi Günlük Kaydı***  : Çok sunuculu ortamlar için merkezi bir günlük kaydı sistemi kurmayı düşünün. 
+- ***Merkezi Günlük Kaydı*** : Çok sunuculu ortamlar için merkezi bir günlük kaydı sistemi kurmayı düşünün. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Günlük Ayrıştırma***  : Günlüklerden anlamlı veriler çıkarmak için günlük ayrıştırma araçlarını kullanın. 
+- ***Günlük Ayrıştırma*** : Günlüklerden anlamlı veriler çıkarmak için günlük ayrıştırma araçlarını kullanın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik***  : Günlük dosyalarını yetkisiz erişime ve kurcalamaya karşı koruyun. 
+- ***Güvenlik*** : Günlük dosyalarını yetkisiz erişime ve kurcalamaya karşı koruyun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Saklama Politikası***  : Depolama kısıtlamalarını uyumluluk gereklilikleriyle dengeleyen bir günlük saklama politikası oluşturun. 
+- ***Saklama Politikası*** : Depolama kısıtlamalarını uyumluluk gereklilikleriyle dengeleyen bir günlük saklama politikası oluşturun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Otomasyon***  : Kritik günlük olayları için otomatik uyarılar ayarlayın. 
+- ***Otomasyon*** : Kritik günlük olayları için otomatik uyarılar ayarlayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Korelasyon***  : Sistem olaylarının tam resmini elde etmek için farklı kaynaklardan gelen günlükleri ilişkilendirin. 
+- ***Korelasyon*** : Sistem olaylarının tam resmini elde etmek için farklı kaynaklardan gelen günlükleri ilişkilendirin. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
@@ -388,23 +388,23 @@ url: /tr/linux-log-dosyasi-konumlarini-anlamak-kapsamli-bir-kilavuz/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-- ***Hacim***  : Yüksek trafiğe sahip sistemler muazzam miktarda günlük verisi üretebilir. 
+- ***Hacim*** : Yüksek trafiğe sahip sistemler muazzam miktarda günlük verisi üretebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Karmaşıklık***  : Log formatlarını anlamak ve anlamlı bilgileri çıkarmak karmaşık olabilir. 
+- ***Karmaşıklık*** : Log formatlarını anlamak ve anlamlı bilgileri çıkarmak karmaşık olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Depolama***  : Günlüklerin uzun süreli depolanması önemli miktarda disk alanı tüketebilir. 
+- ***Depolama*** : Günlüklerin uzun süreli depolanması önemli miktarda disk alanı tüketebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Performans Etkisi***  : Aşırı günlük kaydı sistem performansını etkileyebilir. 
+- ***Performans Etkisi*** : Aşırı günlük kaydı sistem performansını etkileyebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-- ***Güvenlik***  : Kayıtlar hassas bilgiler içerebilir ve uygun şekilde güvence altına alınmalıdır. 
+- ***Güvenlik*** : Kayıtlar hassas bilgiler içerebilir ve uygun şekilde güvence altına alınmalıdır. 
 <!-- /wp:list-item --> 
 <!-- /wp:list -->
 
