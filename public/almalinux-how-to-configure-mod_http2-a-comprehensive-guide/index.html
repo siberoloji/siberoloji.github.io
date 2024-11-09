@@ -11,24 +11,40 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>AlmaLinux: How to Configure mod_http2: A Comprehensive Guide – Siberoloji</title>
-  <meta name="description" content="In this guide, we&#39;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&#39;s performance and efficiency." /><link rel="canonical" href="http://localhost:1313/almalinux-how-to-configure-mod_http2-a-comprehensive-guide/" itemprop="url" />
+  <meta name="description" content="AlmaLinux: How to Configure mod_http2 - A Comprehensive GuideHTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we’ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server’s performance and efficiency.
+Prerequisites Before we begin, ensure you have:
+AlmaLinux 8.x or later installed Root or sudo access to your server Apache HTTP Server 2.4.x installed Basic familiarity with Apache configuration Understanding HTTP/2 Benefits HTTP/2 introduces several key improvements over HTTP/1.1:" /><link rel="canonical" href="http://localhost:1313/almalinux-how-to-configure-mod_http2-a-comprehensive-guide/" itemprop="url" />
 
 <meta property="og:title" content="AlmaLinux: How to Configure mod_http2: A Comprehensive Guide" />
-<meta property="og:description" content="In this guide, we&#39;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&#39;s performance and efficiency." />
+<meta property="og:description" content="AlmaLinux: How to Configure mod_http2 - A Comprehensive GuideHTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we&rsquo;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&rsquo;s performance and efficiency.
+Prerequisites
+    Before we begin, ensure you have:
+
+AlmaLinux 8.x or later installed
+Root or sudo access to your server
+Apache HTTP Server 2.4.x installed
+Basic familiarity with Apache configuration
+
+Understanding HTTP/2 Benefits
+    HTTP/2 introduces several key improvements over HTTP/1.1:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/almalinux-how-to-configure-mod_http2-a-comprehensive-guide/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-11-02T13:19:53+00:00" />
 <meta property="article:modified_time" content="2024-11-02T13:19:53+00:00" />
 
   <meta itemprop="name" content="AlmaLinux: How to Configure mod_http2: A Comprehensive Guide">
-  <meta itemprop="description" content="In this guide, we&#39;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&#39;s performance and efficiency.">
+  <meta itemprop="description" content="AlmaLinux: How to Configure mod_http2 - A Comprehensive GuideHTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we’ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server’s performance and efficiency.
+Prerequisites Before we begin, ensure you have:
+AlmaLinux 8.x or later installed Root or sudo access to your server Apache HTTP Server 2.4.x installed Basic familiarity with Apache configuration Understanding HTTP/2 Benefits HTTP/2 introduces several key improvements over HTTP/1.1:">
   <meta itemprop="datePublished" content="2024-11-02T13:19:53+00:00">
   <meta itemprop="dateModified" content="2024-11-02T13:19:53+00:00">
-  <meta itemprop="wordCount" content="573">
+  <meta itemprop="wordCount" content="581">
   <meta itemprop="keywords" content="Alma Linux">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux: How to Configure mod_http2: A Comprehensive Guide">
-  <meta name="twitter:description" content="In this guide, we&#39;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&#39;s performance and efficiency.">
+  <meta name="twitter:description" content="AlmaLinux: How to Configure mod_http2 - A Comprehensive GuideHTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we’ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server’s performance and efficiency.
+Prerequisites Before we begin, ensure you have:
+AlmaLinux 8.x or later installed Root or sudo access to your server Apache HTTP Server 2.4.x installed Basic familiarity with Apache configuration Understanding HTTP/2 Benefits HTTP/2 introduces several key improvements over HTTP/1.1:">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -160,6 +176,13 @@
     <ul class="hx-flex hx-flex-col hx-gap-1 md:hx-hidden">
       
       
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/2024-11-09-frontmatter-user-manual/"
+    
+  >frontmatter user manual
+    </a></li>
           <li class=""><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
@@ -9795,7 +9818,7 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we&rsquo;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&rsquo;s performance and efficiency.</p>
+          <h1>AlmaLinux: How to Configure mod_http2 - A Comprehensive Guide</h1><p>HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we&rsquo;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&rsquo;s performance and efficiency.</p>
 <h2>Prerequisites<span class="hx-absolute -hx-mt-20" id="prerequisites"></span>
     <a href="#prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Before we begin, ensure you have:</p>
 <ul>
