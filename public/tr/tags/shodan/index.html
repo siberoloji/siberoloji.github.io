@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="tr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Shodan – Siberoloji</title>
+  <meta name="description" content="" /><link rel="canonical" href="http://localhost:1313/tr/tags/shodan/" itemprop="url" />
+
+<meta property="og:title" content="Shodan" />
+<meta property="og:description" content="Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/tr/tags/shodan/" />
+
+  <meta itemprop="name" content="Shodan">
+  <meta itemprop="description" content="Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.">
+  <meta itemprop="datePublished" content="2024-11-02T21:25:24+00:00">
+  <meta itemprop="dateModified" content="2024-11-02T21:25:24+00:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shodan">
+  <meta name="twitter:description" content="Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.">
+
+    <link href="/css/compiled/main.css" rel="stylesheet" />
+
+
+
+  <link href="/css/custom.css" rel="stylesheet" />
+
+
+  <script>
+     
+    const defaultTheme = 'system';
+
+    const setDarkTheme = () => {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.colorScheme = "dark";
+    }
+    const setLightTheme = () => {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.colorScheme = "light";
+    }
+
+    if ("color-theme" in localStorage) {
+      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
+    } else {
+      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
+      if (defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+      }
+    }
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6838992550458414"
+     crossorigin="anonymous"></script>
+</head>
+<body dir="ltr"><div class="nav-container hx-sticky hx-top-0 hx-z-20 hx-w-full hx-bg-transparent print:hx-hidden">
+  <div class="nav-container-blur hx-pointer-events-none hx-absolute hx-z-[-1] hx-h-full hx-w-full hx-bg-white dark:hx-bg-dark hx-shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] contrast-more:hx-shadow-[0_0_0_1px_#000] dark:hx-shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] contrast-more:dark:hx-shadow-[0_0_0_1px_#fff]"></div>
+
+  <nav class="hx-mx-auto hx-flex hx-items-center hx-justify-end hx-gap-2 hx-h-16 hx-px-6 hx-max-w-[90rem]">
+    <a class="hx-flex hx-items-center hover:hx-opacity-75 ltr:hx-mr-auto rtl:hx-ml-auto" href="/tr/">
+        <img class="hx-block dark:hx-hidden" src="/images/logo.svg" alt="Siberoloji" height="20" width="20" />
+        <img class="hx-hidden dark:hx-block" src="/images/logo-dark.svg" alt="Siberoloji" height="20" width="20" />
+        <span class="hx-mx-2 hx-font-extrabold hx-inline hx-select-none" title="Siberoloji">Siberoloji</span>
+    </a><a
+            title="Belgeler"
+            href="/tr/docs"
+            
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">Belgeler</span>
+          </a><a
+            title="Blog"
+            href="/tr/blog"
+            
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">Blog</span>
+          </a><a
+            title="Hakkında"
+            href="/tr/about"
+            
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">Hakkında</span>
+          </a><div class="search-wrapper hx-relative md:hx-w-64">
+  <div class="hx-relative hx-flex hx-items-center hx-text-gray-900 contrast-more:hx-text-gray-800 dark:hx-text-gray-300 contrast-more:dark:hx-text-gray-300">
+    <input
+      placeholder="Arama..."
+      class="search-input hx-block hx-w-full hx-appearance-none hx-rounded-lg hx-px-3 hx-py-2 hx-transition-colors hx-text-base hx-leading-tight md:hx-text-sm hx-bg-black/[.05] dark:hx-bg-gray-50/10 focus:hx-bg-white dark:focus:hx-bg-dark placeholder:hx-text-gray-500 dark:placeholder:hx-text-gray-400 contrast-more:hx-border contrast-more:hx-border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx-absolute hx-my-1.5 hx-select-none ltr:hx-right-1.5 rtl:hx-left-1.5 hx-h-5 hx-rounded hx-bg-white hx-px-1.5 hx-font-mono hx-text-[10px] hx-font-medium hx-text-gray-500 hx-border dark:hx-border-gray-100/20 dark:hx-bg-dark/50 contrast-more:hx-border-current contrast-more:hx-text-current contrast-more:dark:hx-border-current hx-items-center hx-gap-1 hx-transition-opacity hx-pointer-events-none hx-hidden sm:hx-flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="search-results hextra-scrollbar hx-hidden hx-border hx-border-gray-200 hx-bg-white hx-text-gray-100 dark:hx-border-neutral-800 dark:hx-bg-neutral-900 hx-absolute hx-top-full hx-z-20 hx-mt-2 hx-overflow-auto hx-overscroll-contain hx-rounded-xl hx-py-2.5 hx-shadow-xl hx-max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:hx-max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx-inset-x-0 ltr:md:hx-left-auto rtl:md:hx-right-auto contrast-more:hx-border contrast-more:hx-border-gray-900 contrast-more:dark:hx-border-gray-50 hx-w-screen hx-min-h-[100px] hx-max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+          <a class="hx-p-2 hx-text-current" target="_blank" rel="noreferrer" href="https://github.com/siberoloji" title="GitHub"><svg height=24 fill="currentColor" viewBox="3 3 18 18">
+  <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
+</svg>
+<span class="hx-sr-only">GitHub</span>
+          </a>
+          <a class="hx-p-2 hx-text-current" target="_blank" rel="noreferrer" href="https://twitter.com/siberoloji_ltd" title="Twitter"><svg height=24 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg><span class="hx-sr-only">Twitter</span>
+          </a><button type="button" aria-label="Menu" class="hamburger-menu -hx-mr-2 hx-rounded hx-p-2 active:hx-bg-gray-400/20 md:hx-hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class='hx-mx-auto hx-flex hx-max-w-screen-xl'>
+    <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] hx-fixed hx-inset-0 hx-z-10 hx-bg-black/80 dark:hx-bg-black/60 hx-hidden"></div>
+<aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-sticky">
+  
+  <div class="hx-px-4 hx-pt-4 md:hx-hidden">
+    <div class="search-wrapper hx-relative md:hx-w-64">
+  <div class="hx-relative hx-flex hx-items-center hx-text-gray-900 contrast-more:hx-text-gray-800 dark:hx-text-gray-300 contrast-more:dark:hx-text-gray-300">
+    <input
+      placeholder="Arama..."
+      class="search-input hx-block hx-w-full hx-appearance-none hx-rounded-lg hx-px-3 hx-py-2 hx-transition-colors hx-text-base hx-leading-tight md:hx-text-sm hx-bg-black/[.05] dark:hx-bg-gray-50/10 focus:hx-bg-white dark:focus:hx-bg-dark placeholder:hx-text-gray-500 dark:placeholder:hx-text-gray-400 contrast-more:hx-border contrast-more:hx-border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx-absolute hx-my-1.5 hx-select-none ltr:hx-right-1.5 rtl:hx-left-1.5 hx-h-5 hx-rounded hx-bg-white hx-px-1.5 hx-font-mono hx-text-[10px] hx-font-medium hx-text-gray-500 hx-border dark:hx-border-gray-100/20 dark:hx-bg-dark/50 contrast-more:hx-border-current contrast-more:hx-text-current contrast-more:dark:hx-border-current hx-items-center hx-gap-1 hx-transition-opacity hx-pointer-events-none hx-hidden sm:hx-flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="search-results hextra-scrollbar hx-hidden hx-border hx-border-gray-200 hx-bg-white hx-text-gray-100 dark:hx-border-neutral-800 dark:hx-bg-neutral-900 hx-absolute hx-top-full hx-z-20 hx-mt-2 hx-overflow-auto hx-overscroll-contain hx-rounded-xl hx-py-2.5 hx-shadow-xl hx-max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:hx-max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx-inset-x-0 ltr:md:hx-left-auto rtl:md:hx-right-auto contrast-more:hx-border contrast-more:hx-border-gray-900 contrast-more:dark:hx-border-gray-50 hx-w-screen hx-min-h-[100px] hx-max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+  </div>
+  <div class="hextra-scrollbar hx-overflow-y-auto hx-overflow-x-hidden hx-p-4 hx-grow md:hx-h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx-flex hx-flex-col hx-gap-1 md:hx-hidden">
+      
+      
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/docs/"
+    
+  >Belgeler
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/proje-listesi/"
+    
+  >Proje Listesi
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/docs/kalibook/"
+    
+  >Kali Kitabı
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/alt-sayfa/"
+    
+  >Alt Sayfa
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/blog/"
+    
+  >Blog
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/hugo-statik-web-sitesi-araci/"
+    
+  >Hugo Static Web Sitesi Aracı
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/etkili-kesif-icin-araclar-shodan-maltego-ve-google-dorking/"
+    
+  >Etkili Keşif İçin Araçlar: Shodan, Maltego ve Google Dorking
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/markdown-kilavuzu/"
+    
+  >Markdown Syntax Kılavuzu
+    </a>
+              
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/about/"
+    
+  >About
+    </a></li>
+      <li class="[word-break:break-word] hx-mt-5 hx-mb-2 hx-px-2 hx-py-1.5 hx-text-sm hx-font-semibold hx-text-gray-900 first:hx-mt-0 dark:hx-text-gray-100">
+        <span class="hx-cursor-default">Detay</span>
+      </li>
+    
+      <li><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/about/"
+    
+  >Hakkında</a></li>
+    
+    </ul>
+
+    <ul class="hx-flex hx-flex-col hx-gap-1 max-md:hx-hidden">
+        
+        
+      <li class="[word-break:break-word] hx-mt-5 hx-mb-2 hx-px-2 hx-py-1.5 hx-text-sm hx-font-semibold hx-text-gray-900 first:hx-mt-0 dark:hx-text-gray-100">
+        <span class="hx-cursor-default">Detay</span>
+      </li>
+    
+      <li><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/tr/about/"
+    
+  >Hakkında</a></li>
+    
+      </ul>
+    </div>
+  
+  
+    <div class=" hx-justify-end hx-sticky hx-bottom-0 hx-bg-white dark:hx-bg-dark hx-mx-4 hx-py-4 hx-shadow-[0_-12px_16px_#fff] hx-flex hx-items-center hx-gap-2 dark:hx-border-neutral-800 dark:hx-shadow-[0_-12px_16px_#111] contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-shadow-none hx-border-t" data-toggle-animation="show"><div class="hx-flex hx-justify-items-start hx-grow">
+    <button
+      title="Dil Değiştir"
+      data-state="closed"
+      class="language-switcher hx-h-7 hx-rounded-md hx-px-2 hx-text-left hx-text-xs hx-font-medium hx-text-gray-600 hx-transition-colors dark:hx-text-gray-400 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 hx-grow"
+      type="button"
+      aria-label="Dil Değiştir"
+    >
+      <div class="hx-flex hx-items-center hx-gap-2 hx-capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>Turkish</span></div>
+    </button>
+    <ul
+      class="language-options hx-hidden hx-z-20 hx-max-h-64 hx-overflow-auto hx-rounded-md hx-ring-1 hx-ring-black/5 hx-bg-white hx-py-1 hx-text-sm hx-shadow-lg dark:hx-ring-white/20 dark:hx-bg-neutral-800"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="hx-flex hx-flex-col">
+          <a
+            href="/tags/shodan/"
+            class="hx-text-gray-800 dark:hx-text-gray-100 hover:hx-bg-primary-50 hover:hx-text-primary-600 hover:dark:hx-bg-primary-500/10 hover:dark:hx-text-primary-600 hx-relative hx-cursor-pointer hx-whitespace-nowrap hx-py-1.5 hx-transition-colors ltr:hx-pl-3 ltr:hx-pr-9 rtl:hx-pr-3 rtl:hx-pl-9"
+          >English</a>
+        </li>
+      
+        
+        <li class="hx-flex hx-flex-col">
+          <a
+            href="/tr/tags/shodan/"
+            class="hx-text-gray-800 dark:hx-text-gray-100 hover:hx-bg-primary-50 hover:hx-text-primary-600 hover:dark:hx-bg-primary-500/10 hover:dark:hx-text-primary-600 hx-relative hx-cursor-pointer hx-whitespace-nowrap hx-py-1.5 hx-transition-colors ltr:hx-pl-3 ltr:hx-pr-9 rtl:hx-pr-3 rtl:hx-pl-9"
+          >Turkish<span class="hx-absolute hx-inset-y-0 hx-flex hx-items-center ltr:hx-right-3 rtl:hx-left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      </ul>
+  </div><button
+  title="Tema Değiştir"
+  data-theme="light"
+  class="theme-toggle hx-group hx-h-7 hx-rounded-md hx-px-2 hx-text-left hx-text-xs hx-font-medium hx-text-gray-600 hx-transition-colors dark:hx-text-gray-400 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50"
+  type="button"
+  aria-label="Tema Değiştir"
+>
+  <div class="hx-flex hx-items-center hx-gap-2 hx-capitalize"><svg height=12 class="group-data-[theme=light]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=12 class="group-data-[theme=dark]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></div>
+</button>
+</div></aside>
+    
+<nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4">
+      <div class=" hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
+          <span>Sayfa Başı</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx-inline ltr:hx-ml-1 rtl:hx-mr-1 hx-h-3.5 hx-w-3.5 hx-border hx-rounded-full hx-border-gray-500 hover:hx-border-gray-900 dark:hx-border-gray-400 dark:hover:hx-border-gray-100 contrast-more:hx-border-gray-800 contrast-more:dark:hx-border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    
+    <article class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
+        <div class="content">
+          <h1>Etkili Keşif İçin Araçlar: Shodan, Maltego ve Google Dorking</h1>
+          <p>Siber güvenlik dünyasında keşif, bir hedefin sistemlerini, ağlarını ve olası güvenlik açıklarını anlamanın ilk adımıdır. Bilgi toplama olarak da bilinen keşif, etik hackerların bir hedefin ortamını haritalandırmasını, yapısını anlamasını ve zayıflıkları belirlemesini sağlar. Üç son derece etkili araç—Shodan, Maltego ve Google Dorking—keşif aşamasında istihbarat toplamada önemli bir rol oynar. Bu araçların her biri benzersiz içgörüler sunarak siber güvenlik uzmanlarına bilinçli kararlar almak için ihtiyaç duydukları verileri sağlar.</p>
+<p>Bu yazımızda Shodan, Maltego ve Google Dorking&rsquo;in keşif araçları olarak nasıl çalıştıklarını, özel özelliklerini ve bunları etkili bir şekilde kullanmak için en iyi uygulamaları inceleyeceğiz.</p>
+<hr />
+<h3><strong>1. Shodan: İnternete Bağlı Cihazlar İçin Arama Motoru</strong></h3>
+Shodan sıklıkla "Nesnelerin İnterneti için arama motoru" (IoT) olarak anılır. Web sitelerini dizinleyen geleneksel arama motorlarının aksine, Shodan interneti kendisine bağlı cihazlar için tarar; örneğin sunucular, yönlendiriciler, web kameraları, akıllı televizyonlar ve endüstriyel kontrol sistemleri. Shodan, IP adresleri, bağlantı noktası yapılandırmaları, çalışan hizmetler ve güvenlik açıkları dahil olmak üzere bu cihazlar hakkında değerli veriler sağlar.
+<h4><strong>Shodan Nasıl Çalışır?</strong></h4>
+Shodan, IP adresleri ve bağlantı noktalarına göre internete bağlı cihazları aramak için web tarayıcılarını kullanır. Bu cihazları analiz ederek işletim sistemleri, açık bağlantı noktaları ve protokoller hakkında ayrıntılar toplar. Shodan daha sonra bu verileri kolayca aranabilir bir biçimde düzenleyerek siber güvenlik uzmanlarının ağ güvenliğini değerlendirmesi için erişilebilir hale getirir.
+<h4><strong>Keşifte Shodan'ın Kullanımları</strong></h4>
+<ol>
+ 	<li><strong>Açık Portları ve Hizmetleri Belirleme</strong>
+Shodan, hedef sistemde hangi portların açık olduğunu ve bu portlarda çalışan hizmetleri belirleyebilir. Bu bilgi, bilgisayar korsanları için giriş noktalarını ortaya çıkarabilir ve etik bilgisayar korsanlarının olası güvenlik açıklarını anlamalarına yardımcı olabilir.</li>
+ 	<li><strong>Güvenlik Açığı Olan Cihazları Bulma</strong>
+Shodan'ın arama filtreleri kullanıcıların bilinen güvenlik açıklarına sahip cihazları bulmasını sağlar. Örneğin, etik bir bilgisayar korsanı popüler yazılımların eski sürümlerini çalıştıran sistemleri arayabilir ve güvenlik açığı değerlendirmesi için bir başlangıç ​​noktası sağlayabilir.</li>
+ 	<li><strong>IoT Güvenlik Risklerini Anlama</strong>
+Birçok IoT cihazı varsayılan veya zayıf güvenlik yapılandırmaları nedeniyle savunmasızdır. Shodan, siber güvenlik uzmanlarının potansiyel güvenlik risklerini değerlendirmesine ve ele almasına olanak tanıyarak, savunmasız IoT cihazlarını belirlemeye yardımcı olur.</li>
+ 	<li><strong>Ağ Altyapısının Haritalanması</strong>
+Etik hackerlar, ilgili cihazları arayarak bir organizasyonun ağ altyapısının üst düzey bir haritasını oluşturabilir. Bu veriler, bağlı cihazlar hakkında ayrıntılar içerir ve olası saldırı yüzeylerinin belirlenmesine yardımcı olabilir.</li>
+</ol>
+<h4><strong>Shodan Arama Filtreleri ve Teknikleri</strong></h4>
+Shodan'ın gücü, kullanıcıların arama sonuçlarını konuma, porta, ürüne ve diğer parametrelere göre daraltmasına olanak tanıyan gelişmiş arama filtrelerinde yatmaktadır:
+<ul>
+ 	<li><strong>ana bilgisayar adı:</strong> <code>hostname:example.com</code> – Belirli bir ana bilgisayar adıyla ilişkili cihazları arar.</li>
+ 	<li><strong>port:</strong> <code>port:80</code> – Belirli açık porta göre cihazları filtreler.</li>
+ 	<li><strong>os:</strong> <code>os:"Windows 10"</code> – Belirli bir işletim sistemini çalıştıran cihazları bulur.</li>
+ 	<li><strong>ülke:</strong> <code>country:"US"</code> – Arama sonuçlarını belirli bir ülkede bulunan cihazlarla sınırlar.</li>
+</ul>
+<h4><strong>Shodan'ı Kullanmak İçin En İyi Uygulamalar</strong></h4>
+<ul>
+ 	<li><strong>Geniş Aramalarla Başlayın</strong> : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın.</li>
+ 	<li><strong>Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın</strong> : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin.</li>
+ 	<li><strong>Aramaları Yetkili IP Aralıklarıyla Sınırlandırın</strong> : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun.</li>
+</ul>
+<hr />
+<h3><strong>2. Maltego: Veri Görselleştirme ve Bağlantıları Eşleme Aracı</strong></h3>
+Maltego, siber güvenlikte veri görselleştirme ve ilişki haritalama için kullanılan güçlü bir araçtır. Kullanıcıların birden fazla kaynaktan bilgi toplamasını, bağlantıları görselleştirmesini ve veri noktaları arasındaki ilişkileri belirlemesini sağlar. Maltego ile siber güvenlik uzmanları, alan adları, sosyal medya profilleri ve e-posta adresleri gibi verileri inceleyip analiz edebilir ve gizli bağlantıları ortaya çıkarmalarına yardımcı olabilir.
+<h4><strong>Maltego Nasıl Çalışır?</strong></h4>
+Maltego, çeşitli kaynaklardan veri toplamak ve bağlamak için "dönüşümler" kullanır. Her dönüşüm, bir etki alanında alt etki alanları aramak veya ilişkili IP adreslerini haritalamak gibi belirli bir görevi gerçekleştirir. Bu veriler daha sonra çeşitli varlıklar arasındaki bağlantıları gösteren bir grafikte görüntülenir ve bu da kalıpları ve ilişkileri tespit etmeyi kolaylaştırır.
+<h4><strong>Keşifte Maltego'nun Kullanımları</strong></h4>
+<ol>
+ 	<li><strong>Sosyal Ağları Haritalama</strong>
+Maltego, sosyal medyada bireyler, şirketler ve kuruluşlar arasındaki bağlantıları görselleştirebilir ve bu da onu sosyal mühendislik keşfi için değerli bir araç haline getirir.</li>
+ 	<li><strong>Alan Adı İlişkilerini Keşfetme</strong>
+Maltego, bir alan adının ilişkili IP adreslerini, alt alan adlarını ve e-posta adreslerini analiz ederek kullanıcıların hedefin çevrimiçi varlığı ve altyapısı hakkında kapsamlı bir profil oluşturmasına olanak tanır.</li>
+ 	<li><strong>Veri Noktaları Arasındaki İlişkileri Belirleme</strong>
+Maltego'nun dönüşümleri, etik hacker'ların paylaşılan IP adresleri veya e-posta hesapları gibi görünüşte ilgisiz veri noktaları arasındaki ilişkileri haritalandırmasını sağlıyor.</li>
+ 	<li><strong>Kamuya Açık Bilgilerin Ortaya Çıkarılması</strong>
+Maltego, DNS kayıtları, WHOIS bilgileri ve sosyal medya gibi çeşitli kamuya açık kaynaklardan veri çekerek kullanıcıların hedef hakkında geniş yelpazede kamuya açık bilgileri toplamasına yardımcı olur.</li>
+</ol>
+<h4><strong>Popüler Maltego Dönüşümleri</strong></h4>
+Maltego, farklı veri türlerini toplamak için çeşitli dönüşümler sağlar:
+<ul>
+ 	<li><strong>Alan Adından IP'ye Dönüşüm</strong> : Bir alan adıyla ilişkili IP adreslerini alır.</li>
+ 	<li><strong>WHOIS Veri Dönüşümü</strong> : Bir alan adına ait WHOIS bilgilerini çıkararak kayıt sahibi bilgileri gibi ayrıntıları ortaya çıkarır.</li>
+ 	<li><strong>Sosyal Ağ Dönüşümleri</strong> : Twitter ve LinkedIn gibi sosyal medya platformlarındaki bağlantıları haritalandırır.</li>
+ 	<li><strong>Kişiden E-postaya Dönüşüm</strong> : Bir kişiyle ilişkili olası e-posta adreslerini bulur.</li>
+</ul>
+<h4><strong>Maltego'yu Kullanmak İçin En İyi Uygulamalar</strong></h4>
+<ul>
+ 	<li><strong>Öncelikle Önemli Varlıklara Odaklanın</strong> : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin.</li>
+ 	<li><strong>Derin Analiz İçin Çoklu Dönüşümler Kullanın</strong> : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın.</li>
+ 	<li><strong>Verileri Görsel Olarak Organize Edin</strong> : Maltego'nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın.</li>
+</ul>
+<hr />
+<h3><strong>3. Google Dorking: Hedeflenen Bilgiler İçin Gelişmiş Arama Operatörlerinden Yararlanma</strong></h3>
+Google Dorking, internetteki tipik arama sonuçlarından sıklıkla gizlenen bilgileri ortaya çıkarmak için gelişmiş arama operatörleri kullanan bir tekniktir. Arama operatörlerini birleştirerek, etik hacker'lar hassas bilgiler içerebilecek dosyalar, dizinler ve diğer açık kaynaklar gibi web sitelerinden belirli bilgileri çıkarabilir.
+<h4><strong>Google Dorking Nasıl Çalışır?</strong></h4>
+Google Dorking, belirli veriler için hedefli aramalar gerçekleştirmek üzere Google'ın gelişmiş arama yeteneklerine güvenir. <code>intitle:</code>, <code>inurl:</code>, <code>filetype:</code>ve <code>site:</code> gibi arama operatörlerini kullanarak kullanıcılar, arama sonuçlarını yalnızca belirli dosya türlerini, dizinleri veya web sitesi bölümlerini içerecek şekilde daraltabilir.
+<h4><strong>Keşifte Google Dorking'in Kullanımları</strong></h4>
+<ol>
+ 	<li><strong>Hassas Dosya ve Dizinleri Bulma</strong>
+Google Dorking, etik hackerların Excel sayfaları, PDF'ler veya yapılandırma dosyaları gibi hassas bilgiler içerebilecek ifşa edilmiş dosyaları aramasına olanak tanır.</li>
+ 	<li><strong>Güvenli Olmayan Giriş Sayfalarını Bulma</strong>
+Google Dorking ile kullanıcılar, HTTPS'si olmayan veya iki faktörlü kimlik doğrulaması gerektiren güvenli olmayan giriş sayfalarını bulabilirler.</li>
+ 	<li><strong>Açığa Çıkmış Yönetim Panellerini Belirleme</strong>
+Birçok web sitesinde düzgün bir şekilde güvence altına alınmamış veya gizlenmemiş yönetim oturum açma sayfaları bulunur. Google Dorking bu sayfaları bulmanıza yardımcı olarak olası güvenlik açıklarına ilişkin içgörüler sağlayabilir.</li>
+ 	<li><strong>E-posta Adreslerini ve İletişim Bilgilerini Ortaya Çıkarma</strong>
+Google Dorking, herkese açık iletişim sayfalarını veya dizinlerini arayarak e-posta adreslerini ortaya çıkarabilir; bu da sosyal mühendislik amaçları için yararlı olabilir.</li>
+</ol>
+<h4><strong>Yaygın Google Dorking Operatörleri</strong></h4>
+Google Dorking için bazı yararlı operatörler şunlardır:
+<ul>
+ 	<li><strong>site:</strong> <code>site:example.com</code> – Arama sonuçlarını belirli bir etki alanıyla sınırlar.</li>
+ 	<li><strong>filetype:</strong> <code>filetype:pdf</code> – PDF'ler gibi belirli dosya türlerini arar.</li>
+ 	<li><strong>intitle:</strong> <code>intitle:"index of"</code> – Başlığında belirli anahtar kelimeler bulunan sayfaları bulur; genellikle dizinleri bulmak için kullanılır.</li>
+ 	<li><strong>inurl:</strong> <code>inurl:login</code> – URL'de belirli anahtar sözcükleri olan sayfaları arar, genellikle giriş sayfalarını bulmak için kullanılır.</li>
+</ul>
+<h4><strong>Google Dorking için En İyi Uygulamalar</strong></h4>
+<ul>
+ 	<li><strong>Operatörleri Birleştirme</strong> : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir.</li>
+ 	<li><strong>Hassas Verilere Erişimden Kaçının</strong> : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır.</li>
+ 	<li><strong>Dikkatli ve İzinli Kullanın</strong> : Tüm keşif araçlarında olduğu gibi, Google Dorking'i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun.</li>
+</ul>
+<hr />
+<h3><strong>Shodan, Maltego ve Google Dorking'i karşılaştırma</strong></h3>
+Bu araçların her biri keşif için benzersiz güçler ve yetenekler sunmaktadır:
+<table>
+<thead>
+<tr>
+<th><strong>Alet</strong></th>
+<th><strong>En İyisi İçin</strong></th>
+<th><strong>Temel Özellikler</strong></th>
+<th><strong>Sınırlamalar</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Şodan</strong></td>
+<td>Nesnelerin İnterneti (IoT) ve ağ cihazı keşfi</td>
+<td>Bağlı cihazları arar, açık portları ortaya çıkarır</td>
+<td>Genel cihazları ifşa edebilir ancak tüm özel sistemleri ifşa edemez</td>
+</tr>
+<tr>
+<td><strong>Malta</strong></td>
+<td>İlişki haritalama ve veri görselleştirme</td>
+<td>Bağlantıları görselleştirir, birden fazla veri dönüşümü kullanır</td>
+<td>Tam kullanım için dönüşüm bilgisi gerekir</td>
+</tr>
+<tr>
+<td><strong>Google Dorking</strong></td>
+<td>Dosyaları, dizinleri ve genel kaynakları bulma</td>
+<td>Hedeflenen bilgiler için gelişmiş arama operatörleri</td>
+<td>Google tarafından indekslenen verilerle sınırlıdır</td>
+</tr>
+</tbody>
+</table>
+Bu araçlar birbirini tamamlayarak keşif aşamasında bilgi toplamaya yönelik kapsamlı bir yaklaşım sunar.
+<hr />
+<h3><strong>Etik Hususlar ve Yasal Sınırlar</strong></h3>
+Shodan, Maltego ve Google Dorking gibi keşif araçları güçlüdür, ancak sorumlu bir şekilde kullanılmaları gerekir. Sistemlerde yetkisiz keşif yapmak yasadışı olabilir ve gizlilik politikalarını ihlal edebilir. Etik hackerlar her zaman şunları yapmalıdır:
+<ul>
+ 	<li>Verileri toplamadan önce hedef kuruluştan açık izin alın.</li>
+ 	<li>Penetrasyon testi sözleşmelerinde ve etik hackleme yönergelerinde belirtilen kurallara uyun.</li>
+ 	<li>Keşfedilen tüm güvenlik açıklarının ilgili taraflara bildirildiğinden emin olun.</li>
+</ul>
+Siber güvenlik uzmanları etik standartlara bağlı kalarak, yasal sınırları aşmadan bir kuruluşun güvenlik duruşunu iyileştirmek için bu araçları kullanabilirler.
+<hr />
+<h3><strong>Sonuç</strong></h3>
+Shodan, Maltego ve Google Dorking, siber güvenlik profesyonellerinin sırt çantasındaki vazgeçilmez araçlardır. İnternete bağlı cihazlar, sosyal ağlar, web sitesi yapıları ve çok daha fazlası hakkında içgörüler sunarak etik hackerların güvenlik açıklarını belirlemesine ve olası tehditleri değerlendirmesine yardımcı olurlar. Bu araçlar birlikte kullanıldığında, hedef ortamın kapsamlı bir görünümünü sunarak etkili güvenlik değerlendirmeleri için temel oluşturan kapsamlı bir keşif aşamasına olanak tanır.
+<p>Her aracın yeteneklerini ve sınırlamalarını anlamak, etik hackerların verileri verimli ve etik bir şekilde toplamasına, kuruluşları olası tehditlerden korumasına ve siber güvenlik savunmalarını güçlendirmesine olanak tanır. Doğru bilgiyle, bu keşif araçları kuruluşların saldırganlardan bir adım önde olmasını sağlayabilir.</p>
+<hr />
+<h3><strong>Keşif Araçları Hakkında SSS: Shodan, Maltego ve Google Dorking</strong></h3>
+<strong>1. Shodan'ın temel amacı nedir?</strong>
+Shodan, bağlı cihazları internette tarayarak, açığa çıkan portlar, servisler ve güvenlik açıkları hakkında bilgi sağlar.
+<p><strong>2. Maltego keşifte nasıl yardımcı olur?</strong>
+Maltego, veri noktaları arasındaki ilişkileri ve bağlantıları görselleştirerek ağ yapılarını ve sosyal ağları haritalamaya yardımcı olur.</p>
+<p><strong>3. Google Dorking nedir ve yasal mıdır?</strong>
+Google Dorking, çevrimiçi olarak belirli bilgileri bulmak için gelişmiş arama operatörlerinin kullanılmasıdır. Yasal olsa da, özellikle yetkili hedeflerle sorumlu bir şekilde kullanılmalıdır.</p>
+<p><strong>4. Shodan özel ağları tarayabilir mi?</strong>
+Hayır, Shodan yalnızca internete bakan cihazları tarar. Özel ağların veya güvenlik duvarlarının arkasındaki cihazlara erişemez.</p>
+<p><strong>5. Bu keşif araçlarını kullanmak için en iyi uygulamalar nelerdir?</strong>
+En iyi uygulamalar, bu araçları yalnızca izinle kullanmayı, geniş aramalarla başlamayı ve hassas verilere doğrudan erişmekten kaçınmayı içerir.</p>
+<p><strong>6. Keşif için etik izin neden önemlidir?</strong>
+Etik izin, yasal ve gizlilik standartlarına uyumu garanti eder ve siber güvenlik uzmanlarını yasal sonuçlardan korur.</p>
+
+        </div>
+        <div class="hx-mt-16"></div>
+        
+    <div class="hx-mt-12 hx-mb-8 hx-block hx-text-xs hx-text-gray-500 ltr:hx-text-right rtl:hx-text-left dark:hx-text-gray-400">Son güncelleme <time datetime="2024-11-02T21:25:24.000Z">Kasım 2, 2024</time></div>
+        
+      </main>
+    </article>
+    
+    
+
+
+
+  </div>
+
+      <footer class="hextra-footer hx-bg-gray-100 hx-pb-[env(safe-area-inset-bottom)] dark:hx-bg-neutral-900 print:hx-bg-transparent"><div
+    class="hx-max-w-screen-xl hx-mx-auto hx-flex hx-justify-center hx-py-12 hx-pl-[max(env(safe-area-inset-left),1.5rem)] hx-pr-[max(env(safe-area-inset-right),1.5rem)] hx-text-gray-600 dark:hx-text-gray-400 md:hx-justify-start"
+  >
+    <div class="hx-flex hx-w-full hx-flex-col hx-items-center sm:hx-items-start"><div class="hx-mt-6 hx-text-xs">© 2024 Siberoloji</div>
+    </div>
+  </div>
+</footer>
+    
+    <script defer src="/js/main.js" integrity=""></script>
+
+
+<script defer src="/lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js" integrity="sha256-BCWGBSfMmWj58ElCHHpWs5Mn1HXi46j1UEFr46kTQyc="></script>
+    <script defer src="/tr.search.js" integrity=""></script>
+
+
+  </body>
+</html>

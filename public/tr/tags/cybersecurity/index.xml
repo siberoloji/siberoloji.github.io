@@ -1,0 +1,207 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siberoloji – Cybersecurity</title>
+    <link>http://localhost:1313/tr/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Siberoloji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <lastBuildDate>Sat, 02 Nov 2024 21:57:31 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tr/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Siber Güvenlik Keşif için WHOIS ve DNS Aramasını Kullanma</title>
+      <link>http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/</link>
+      <pubDate>Sat, 02 Nov 2024 21:57:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir. Bu araçların nasıl etkili bir şekilde kullanılacağını anlamak, ağ altyapısı ve potansiyel güvenlik açıkları hakkında önemli bilgiler sağlayabilir. Bu kapsamlı kılavuz, meşru güvenlik değerlendirmesi ve savunma amaçları için bu araçlardan nasıl yararlanılacağını araştırıyor.&lt;/p&gt;
+&lt;h2&gt;WHOIS&#39;i Anlama&lt;/h2&gt;
+WHOIS, kayıtlı alan adları, IP adresleri ve sahipleri hakkında bilgi sağlayan bir sorgu ve yanıt protokolüdür. İlk olarak 1980&#39;lerde geliştirilen WHOIS, ağ yöneticileri, güvenlik uzmanları ve araştırmacılar için gerekli olmaya devam ediyor.
+&lt;h3&gt;Temel WHOIS Veri Noktaları&lt;/h3&gt;
+WHOIS sorguları tipik olarak şunları ortaya çıkarır:
+&lt;p&gt;Kayıt Sahibi Bilgileri
+– Kuruluş Adı
+– İletişim bilgileri (genellikle gizlilik korumalı olsa da)
+– Fiziksel adres
+– E-posta adresi&lt;/p&gt;
+&lt;p&gt;İdari Ayrıntılar
+– Alan adı kayıt tarihi
+– Son kullanma tarihi
+– Son güncelleme tarihi
+– Kayıt şirketi bilgileri&lt;/p&gt;
+&lt;p&gt;Teknik Bilgiler
+– İsim sunucuları
+– DNSSEC durumu
+– Kayıt Durumu&lt;/p&gt;
+&lt;h2&gt;WHOIS Aramalarını Gerçekleştirme&lt;/h2&gt;
+Komut Satırı Yöntemi
+&lt;p&gt;whois example.com
+Çevrimiçi Hizmetler&lt;/p&gt;
+&lt;p&gt;Birkaç güvenilir çevrimiçi WHOIS hizmeti şunları içerir:
+– ICANN Araması&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whois.net
+– DomainTools
+– Bölgesel İnternet Kayıtları (RIR&amp;rsquo;ler) web siteleri&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;WHOIS Gizlilik Hususları&lt;/h2&gt;
+Modern WHOIS verileri genellikle gizlilik korumasını içerir:
+– GDPR uyumluluk önlemleri
+– Alan adı gizlilik hizmetleri
+– Redakte edilmiş iletişim bilgileri
+– Proxy kayıt hizmetleri
+&lt;h2&gt;DNS Arama Teknikleri&lt;/h2&gt;
+DNS (Alan Adı Sistemi) aramaları, alan adı altyapısı ve yapılandırması hakkında ayrıntılı bilgi sağlar. Çeşitli DNS kayıt türlerini ve bunların etkilerini anlamak güvenlik değerlendirmesi için çok önemlidir.
+&lt;h3&gt;Temel DNS Kayıt Türleri&lt;/h3&gt;
+A Kayıtlar (Adres)
+– Ana bilgisayar adlarını IPv4 adreslerine eşler
+- Ana bilgisayar konumlarını belirlemek için kritik
+– Ağ altyapısını ortaya çıkarabilir
+&lt;p&gt;AAAA Kayıtları
+– Ana bilgisayar adlarını IPv6 adreslerine eşler
+– IPv6&amp;rsquo;nın benimsenmesi büyüdükçe giderek daha önemli hale geliyor
+– Güvenlik değerlendirmelerinde genellikle göz ardı edilir&lt;/p&gt;
+&lt;p&gt;MX Kayıtları (Mail Exchange)
+– Posta sunucularını tanımlar
+– Posta teslimine öncelik verir
+– E-posta altyapısını ortaya çıkarır&lt;/p&gt;
+&lt;p&gt;TXT Kayıtları
+– Metin bilgisi içerir
+– Genellikle SPF kayıtlarını içerir
+– Güvenlik politikalarını ortaya çıkarabilir&lt;/p&gt;
+&lt;p&gt;CNAME Kayıtları (Kanonik İsim)
+– Alan adı takma adlarını gösterir&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alanlar arasındaki ilişkileri ortaya çıkarır
+– Altyapıyı izlemek için kullanışlıdır&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NS Kayıtları (İsim Sunucu)
+– Yetkili ad sunucularını listeler
+– Etki alanı çözümü için kritik
+– Barındırma sağlayıcılarını gösterebilir&lt;/p&gt;
+&lt;h2&gt;DNS Arama Araçları&lt;/h2&gt;
+Komut Satırı Araçları
+&lt;p&gt;dig (Alan Adı Bilgisi Groper)
+dig example.com ANY
+dig @8.8.8.8 example.com MX
+dig +short example.com NS
+nslookup
+nslookup -type=any example.com
+nslookup -type=mx example.com
+Ev sahibi
+host -a example.com
+host -t mx example.com
+Çevrimiçi DNS Araçları&lt;/p&gt;
+&lt;p&gt;DNS çöp kutusu
+Güvenlik Yolları
+GörünümDNS.info
+MX Araç Kutusu
+Güvenlik Uygulamaları&lt;/p&gt;
+&lt;h2&gt;Tehdit İstihbaratı&lt;/h2&gt;
+WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:
+- Kötü amaçlı alan adlarını belirleme
+– Alan adı kayıt kalıplarını takip etme
+– Altyapı ilişkilerini ortaya çıkarmak
+- Olay müdahalesini destekleme
+&lt;p&gt;Etki Alanı Çömelme Tespiti&lt;/p&gt;
+&lt;p&gt;Bu araçlar aşağıdakileri tanımlamaya yardımcı olur:
+– Typosquatting girişimleri
+– Kimlik avı alanları
+– Marka taklitleri
+– Kötü amaçlı yönlendirmeler&lt;/p&gt;
+&lt;p&gt;Altyapı Analizi&lt;/p&gt;
+&lt;p&gt;Güvenlik uzmanları şunları yapabilir:
+– Harita ağı topolojisi&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kritik hizmetleri belirleyin
+– Güvenlik yapılandırmalarını değerlendirin
+– Değişiklikleri izleyin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Keşif için En İyi Uygulamalar&lt;/h3&gt;
+Dokümantasyon
+&lt;p&gt;Ayrıntılı kayıtları tutun:
+– Sorgu sonuçları
+– Zaman içindeki değişiklikler
+– Olağandışı bulgular
+– Altyapı kalıpları&lt;/p&gt;
+&lt;p&gt;Düzenli İzleme&lt;/p&gt;
+&lt;p&gt;Aşağıdakiler için rutin kontrolleri uygulayın:
+– Alan Adı Sona Erme
+– DNS yapılandırma değişiklikleri
+– Yeni alt alanlar
+– Değiştirilmiş kayıtlar&lt;/p&gt;
+&lt;p&gt;Otomasyon Hususları&lt;/p&gt;
+&lt;p&gt;Senaryoları geliştirmek için:
+– Birden fazla alanı izleyin
+– Değişiklikleri takip edin
+– Raporlar oluşturun
+– Şüpheli değişikliklerde uyarı&lt;/p&gt;
+&lt;p&gt;Analiz Teknikleri&lt;/p&gt;
+&lt;p&gt;Desen Tanıma&lt;/p&gt;
+&lt;p&gt;Ara:
+– Ortak kayıt detayları
+– Benzer adlandırma kalıpları
+– Paylaşılan altyapı
+– Zamansal ilişkiler&lt;/p&gt;
+&lt;p&gt;Altyapı Haritalama&lt;/p&gt;
+&lt;p&gt;Haritalar oluşturun:
+– Alan ilişkileri
+– IP adresi kullanımı
+– Posta sunucu yapılandırmaları
+– İsim sunucusu kalıpları&lt;/p&gt;
+&lt;p&gt;Tarihsel Analiz&lt;/p&gt;
+&lt;p&gt;Değişiklikleri takip edin:
+– Kayıt detayları
+– DNS yapılandırmaları
+– IP atamaları
+– Güvenlik politikaları&lt;/p&gt;
+&lt;p&gt;Yasal ve Etik Hususlar&lt;/p&gt;
+&lt;p&gt;Uyumluluk Gereksinimleri&lt;/p&gt;
+&lt;p&gt;Aşağıdakilere uygunluğu sağlayın:
+– Gizlilik yasaları
+– Hizmet şartları
+– Kullanım politikaları
+– Veri koruma düzenlemeleri&lt;/p&gt;
+&lt;h2&gt;Sorumlu Kullanım&lt;/h2&gt;
+Etik keşif uygulaması:
+– Gizliliğe saygı duymak
+– Hız limitlerini takip etmek
+– Belgeleme amaçları
+– Gizliliğin korunması
+&lt;p&gt;Araç Entegrasyonu&lt;/p&gt;
+&lt;p&gt;Güvenlik Bilgileri ve Olay Yönetimi (SIEM)&lt;/p&gt;
+&lt;p&gt;WHOIS ve DNS verilerini aşağıdakilerle entegre edin:
+– Günlük analizi
+– Uyarı sistemleri
+– Korelasyon kuralları
+– Tehdit tespiti&lt;/p&gt;
+&lt;p&gt;Otomatik Yanıt Sistemleri&lt;/p&gt;
+&lt;p&gt;Sistemleri şu şekilde yapılandırın:
+– Değişiklikleri izleyin
+– Şüpheli etkinlik uyarısı
+– Kayıt kalıplarını takip edin
+– Potansiyel tehditleri belirleyin&lt;/p&gt;
+&lt;h2&gt;Sonuç&lt;/h2&gt;
+WHOIS ve DNS arama araçları, siber güvenlik keşif için temel olmaya devam ediyor. Doğru kullanıldığında, ağ altyapısı ve olası güvenlik endişeleri hakkında değerli bilgiler sağlarlar. Düzenli izleme, uygun dokümantasyon ve etik kullanım, bu araçların güvenlik programlarına etkili bir şekilde katkıda bulunmasını sağlar.
+&lt;p&gt;Gizlilik ve yasal gerekliliklere saygı duyarken bu araçlardan nasıl yararlanılacağını anlamak, güvenlik profesyonellerinin şunları yapmasını sağlar:
+– Kapsamlı değerlendirmeler yapın
+– Potansiyel tehditleri belirleyin
+– Altyapı değişikliklerini izleyin
+– Destek olay müdahalesi&lt;/p&gt;
+&lt;p&gt;İnternet gelişmeye devam ettikçe, bu temel ama güçlü araçlarla yeterliliği korumak, etkili siber güvenlik uygulamaları için gerekli olmaya devam ediyor.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

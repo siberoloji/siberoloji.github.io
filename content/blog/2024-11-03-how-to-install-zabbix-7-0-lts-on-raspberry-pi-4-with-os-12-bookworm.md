@@ -250,7 +250,7 @@ With Zabbix 7.0 LTS successfully installed on Raspberry Pi OS 12 Bookworm, you c
 
 ---
 
-**FAQs**
+### **FAQs**
 
 1. **Can Zabbix run efficiently on Raspberry Pi 4?**
 
