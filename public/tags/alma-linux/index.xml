@@ -430,7 +430,7 @@ A: Yes, mod_md supports ACME protocols compatible with other CAs. However, Let�
     </item>
     
     <item>
-      <title>AlmaLinux: How to Configure mod_http2 &amp;#8211; A Comprehensive Guide</title>
+      <title>AlmaLinux: How to Configure mod_http2: A Comprehensive Guide</title>
       <link>http://localhost:1313/almalinux-how-to-configure-mod_http2-a-comprehensive-guide/</link>
       <pubDate>Sat, 02 Nov 2024 13:19:53 +0000</pubDate>
       
@@ -438,10 +438,9 @@ A: Yes, mod_md supports ACME protocols compatible with other CAs. However, Let�
       <description>
         
         
-        &lt;!-- wp:jetpack/markdown {&#34;source&#34;:&#34;HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we&#39;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&#39;s performance and efficiency.\n\n## Prerequisites\n\nBefore we begin, ensure you have:\n- AlmaLinux 8.x or later installed\n- Root or sudo access to your server\n- Apache HTTP Server 2.4.x installed\n- Basic familiarity with Apache configuration\n\n## Understanding HTTP/2 Benefits\n\nHTTP/2 introduces several key improvements over HTTP/1.1:\n\n1. **Multiplexing**: Allows multiple requests and responses to be sent simultaneously over a single connection\n2. **Header Compression**: Reduces overhead by compressing HTTP headers\n3. **Server Push**: Enables servers to proactively send resources to clients before they request them\n4. **Binary Protocol**: More efficient parsing and reduced error probability compared to text-based HTTP/1.1\n\n## Installation Process\n\nFirst, let&#39;s ensure your system is up to date:\n\n```bash\nsudo dnf update\n```\n\nInstall the mod_http2 module:\n\n```bash\nsudo dnf install mod_http2\n```\n\nVerify the installation:\n\n```bash\nhttpd -M | grep http2\n```\n\nYou should see an output indicating that the http2_module is loaded.\n\n## Basic Configuration\n\nThe primary configuration for mod_http2 takes place in your Apache configuration files. Let&#39;s start with the basic setup:\n\n1. Open your Apache configuration file:\n\n```bash\nsudo vi /etc/httpd/conf/httpd.conf\n```\n\n2. Add or modify the following directives:\n\n```apache\n# Enable HTTP/2 protocol\nProtocols h2 h2c http/1.1\n\n# Configure HTTP/2 settings\nH2Push          on\nH2PushPriority  *                       after\nH2PushPriority  text/css                before\nH2PushPriority  image/jpeg              after   32\nH2PushPriority  image/png               after   32\nH2PushPriority  application/javascript  interleaved\n\n# Set maximum concurrent streams\nH2MaxSessionStreams 100\n```\n\n## SSL/TLS Configuration\n\nHTTP/2 typically requires SSL/TLS in modern browsers. Here&#39;s how to configure it:\n\n1. Enable the SSL module:\n\n```bash\nsudo dnf install mod_ssl\n```\n\n2. Create or modify your SSL virtual host configuration:\n\n```apache\n\n    ServerName example.com\n    DocumentRoot /var/www/html\n    \n    SSLEngine on\n    SSLCertificateFile /path/to/certificate.crt\n    SSLCertificateKeyFile /path/to/private.key\n    \n    Protocols h2 http/1.1\n    \n    # Additional HTTP/2 optimizations\n    H2Push on\n    H2ModernTLSOnly off\n    H2MaxSessionStreams 100\n    H2MaxHeaderListSize 65536\n\n```\n\n## Advanced Configuration Options\n\n### Fine-tuning Performance\n\nConsider these additional directives for optimizing performance:\n\n```apache\n# Adjust window size (in KB)\nH2WindowSize 65535\n\n# Set initial window size (in KB)\nH2InitialWindowSize 65535\n\n# Configure maximum frame size (in bytes)\nH2MaxFrameSize 16384\n\n# Set maximum header list size (in bytes)\nH2MaxHeaderListSize 65536\n```\n\n### Server Push Configuration\n\nConfigure server push for specific resources:\n\n```apache\n\n    H2PushResource /css/style.css\n    H2PushResource /js/script.js\n    H2PushResource /images/logo.png\n\n```\n\n## Troubleshooting Common Issues\n\n### 1. Connection Problems\n\nIf you experience connection issues:\n- Verify SSL/TLS configuration\n- Check browser support for HTTP/2\n- Examine Apache error logs: `tail -f /var/log/httpd/error_log`\n\n### 2. Performance Issues\n\nFor performance problems:\n- Monitor server resources using `top` or `htop`\n- Adjust H2MaxSessionStreams based on server capacity\n- Fine-tune H2WindowSize and H2InitialWindowSize\n\n### 3. SSL/TLS Errors\n\nCommon SSL-related problems:\n- Verify certificate chain validity\n- Ensure proper permissions on certificate files\n- Check SSL configuration syntax\n\n## Testing HTTP/2 Implementation\n\nVerify your HTTP/2 setup using these methods:\n\n1. Browser Developer Tools:\n   - Open Chrome DevTools (F12)\n   - Network tab \u0026gt; Protocol column\n\n2. Command-line testing:\n```bash\ncurl -I \u002d\u002dhttp2 -k https://your-domain.com\n```\n\n3. Online tools:\n   - KeyCDN HTTP/2 Test\n   - HTTP/2 Test Tool (https://tools.keycdn.com/http2-test)\n\n## Monitoring and Maintenance\n\nRegular maintenance ensures optimal performance:\n\n1. Monitor Apache logs:\n```bash\ntail -f /var/log/httpd/error_log | grep -i &#39;http2&#39;\n```\n\n2. Check HTTP/2 metrics:\n```bash\nhttpd -M | grep http2\nsystemctl status httpd\n```\n\n3. Regular updates:\n```bash\nsudo dnf update mod_http2\n```\n\n## Conclusion\n\nImplementing HTTP/2 on AlmaLinux can significantly improve your web server&#39;s performance. Regular monitoring and maintenance ensure optimal operation. Remember to:\n- Keep your system and modules updated\n- Monitor server performance\n- Adjust configuration based on your specific needs\n- Maintain proper security through SSL/TLS\n\nWith proper configuration and maintenance, mod_http2 can provide substantial performance improvements for your web applications while ensuring compatibility with older HTTP/1.1 clients.&#34;} --&gt;
-&lt;div class=&#34;wp-block-jetpack-markdown&#34;&gt; HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we’ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server’s performance and efficiency.
-## Prerequisites
- Before we begin, ensure you have:
+        &lt;p&gt;HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we&amp;rsquo;ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server&amp;rsquo;s performance and efficiency.&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;prerequisites&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#prerequisites&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Before we begin, ensure you have:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AlmaLinux 8.x or later installed&lt;/li&gt;
 &lt;li&gt;Root or sudo access to your server&lt;/li&gt;
@@ -450,95 +449,214 @@ A: Yes, mod_md supports ACME protocols compatible with other CAs. However, Let�
 &lt;/ul&gt;
 &lt;h2&gt;Understanding HTTP/2 Benefits&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;understanding-http2-benefits&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#understanding-http2-benefits&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;HTTP/2 introduces several key improvements over HTTP/1.1:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Multiplexing&lt;/strong&gt;&lt;/em&gt; : Allows multiple requests and responses to be sent simultaneously over a single connection&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Header Compression&lt;/strong&gt;&lt;/em&gt; : Reduces overhead by compressing HTTP headers&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Server Push&lt;/strong&gt;&lt;/em&gt; : Enables servers to proactively send resources to clients before they request them&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Binary Protocol&lt;/strong&gt;&lt;/em&gt; : More efficient parsing and reduced error probability compared to text-based HTTP/1.1&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Multiplexing&lt;/strong&gt;: Allows multiple requests and responses to be sent simultaneously over a single connection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Header Compression&lt;/strong&gt;: Reduces overhead by compressing HTTP headers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server Push&lt;/strong&gt;: Enables servers to proactively send resources to clients before they request them&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Binary Protocol&lt;/strong&gt;: More efficient parsing and reduced error probability compared to text-based HTTP/1.1&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2&gt;Installation Process&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installation-process&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#installation-process&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;First, let’s ensure your system is up to date:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf update
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;a href=&#34;#installation-process&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;First, let&amp;rsquo;s ensure your system is up to date:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf update&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;p&gt;Install the mod_http2 module:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf install mod_http2
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf install mod_http2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;p&gt;Verify the installation:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;httpd -M | grep http2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You should see an output indicating that the http2_module is loaded.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;httpd -M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep http2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;You should see output indicating that the http2_module is loaded.&lt;/p&gt;
 &lt;h2&gt;Basic Configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;basic-configuration&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#basic-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The primary configuration for mod_http2 takes place in your Apache configuration files. Let’s start with the basic setup:&lt;/p&gt;
-&lt;ul&gt;
+    &lt;a href=&#34;#basic-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The primary configuration for mod_http2 takes place in your Apache configuration files. Let&amp;rsquo;s start with the basic setup:&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;Open your Apache configuration file:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo vi /etc/httpd/conf/httpd.conf
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo vi /etc/httpd/conf/httpd.conf&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;ol start=&#34;2&#34;&gt;
-- Add or modify the following directives: 
-&lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;# Enable HTTP/2 protocol
-Protocols h2 h2c http/1.1
+&lt;li&gt;Add or modify the following directives:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-# Configure HTTP/2 settings
-H2Push          on
-H2PushPriority  *                       after
-H2PushPriority  text/css                before
-H2PushPriority  image/jpeg              after   32
-H2PushPriority  image/png               after   32
-H2PushPriority  application/javascript  interleaved
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Enable HTTP/2 protocol&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Protocols&lt;/span&gt; h2 h2c http/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Configure HTTP/2 settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2Push&lt;/span&gt;          &lt;span class=&#34;k&#34;&gt;on&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2PushPriority&lt;/span&gt;  *                       after
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2PushPriority&lt;/span&gt;  text/css                before
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2PushPriority&lt;/span&gt;  image/jpeg              after   &lt;span class=&#34;m&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2PushPriority&lt;/span&gt;  image/png               after   &lt;span class=&#34;m&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2PushPriority&lt;/span&gt;  application/javascript  interleaved
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Set maximum concurrent streams&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2MaxSessionStreams&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-# Set maximum concurrent streams
-H2MaxSessionStreams 100
-&lt;/code&gt;&lt;/pre&gt;
+  
+&lt;/div&gt;
 &lt;h2&gt;SSL/TLS Configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ssltls-configuration&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#ssltls-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;HTTP/2 typically requires SSL/TLS in modern browsers. Here’s how to configure it:&lt;/p&gt;
-&lt;ul&gt;
+    &lt;a href=&#34;#ssltls-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;HTTP/2 typically requires SSL/TLS in modern browsers. Here&amp;rsquo;s how to configure it:&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;Enable the SSL module:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf install mod_ssl
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf install mod_ssl&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;ol start=&#34;2&#34;&gt;
-- Create or modify your SSL virtual host configuration: 
-&lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;&amp;lt;VirtualHost *:443&amp;gt;
-    ServerName example.com
-    DocumentRoot /var/www/html
-    
-    SSLEngine on
-    SSLCertificateFile /path/to/certificate.crt
-    SSLCertificateKeyFile /path/to/private.key
-    
-    Protocols h2 http/1.1
-    
-    # Additional HTTP/2 optimizations
-    H2Push on
-    H2ModernTLSOnly off
-    H2MaxSessionStreams 100
-    H2MaxHeaderListSize 65536
-&amp;lt;/VirtualHost&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;Create or modify your SSL virtual host configuration:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;*:443&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;ServerName&lt;/span&gt; example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;DocumentRoot&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/var/www/html&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;SSLEngine&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;on&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;SSLCertificateFile&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/path/to/certificate.crt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;SSLCertificateKeyFile&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/path/to/private.key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Protocols&lt;/span&gt; h2 http/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;# Additional HTTP/2 optimizations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2Push&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;on&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2ModernTLSOnly&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;off&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2MaxSessionStreams&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2MaxHeaderListSize&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;65536&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/VirtualHost&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;h2&gt;Advanced Configuration Options&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;advanced-configuration-options&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#advanced-configuration-options&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Fine-tuning Performance&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fine-tuning-performance&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#fine-tuning-performance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Consider these additional directives for optimizing performance:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;# Adjust window size (in KB)
-H2WindowSize 65535
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
 
-# Set initial window size (in KB)
-H2InitialWindowSize 65535
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Adjust window size (in KB)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2WindowSize&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;65535&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Set initial window size (in KB)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2InitialWindowSize&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;65535&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Configure maximum frame size (in bytes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2MaxFrameSize&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;16384&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Set maximum header list size (in bytes)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;H2MaxHeaderListSize&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;65536&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-# Configure maximum frame size (in bytes)
-H2MaxFrameSize 16384
-
-# Set maximum header list size (in bytes)
-H2MaxHeaderListSize 65536
-&lt;/code&gt;&lt;/pre&gt;
+  
+&lt;/div&gt;
 &lt;h3&gt;Server Push Configuration&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;server-push-configuration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#server-push-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Configure server push for specific resources:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;&amp;lt;Location /index.html&amp;gt;
-    H2PushResource /css/style.css
-    H2PushResource /js/script.js
-    H2PushResource /images/logo.png
-&amp;lt;/Location&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-apache&#34; data-lang=&#34;apache&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;Location&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;/index.html&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2PushResource&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/css/style.css&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2PushResource&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/js/script.js&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;H2PushResource&lt;/span&gt; &lt;span class=&#34;sx&#34;&gt;/images/logo.png&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/Location&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;h2&gt;Troubleshooting Common Issues&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;troubleshooting-common-issues&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#troubleshooting-common-issues&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;1. Connection Problems&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-connection-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#1-connection-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;If you experience connection issues:&lt;/p&gt;
@@ -563,46 +681,100 @@ H2MaxHeaderListSize 65536
 &lt;/ul&gt;
 &lt;h2&gt;Testing HTTP/2 Implementation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;testing-http2-implementation&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#testing-http2-implementation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Verify your HTTP/2 setup using these methods:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
 &lt;p&gt;Browser Developer Tools:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Open Chrome DevTools (F12)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Network tab &amp;gt; Protocol column&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Open Chrome DevTools (F12)&lt;/li&gt;
+&lt;li&gt;Network tab &amp;gt; Protocol column&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Command-line testing:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;curl -I --http2 -k https://your-domain.com
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -I --http2 -k https://your-domain.com&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;ol start=&#34;3&#34;&gt;
-- Online tools:
+&lt;li&gt;Online tools:
 &lt;ul&gt;
 &lt;li&gt;KeyCDN HTTP/2 Test&lt;/li&gt;
 &lt;li&gt;HTTP/2 Test Tool (&lt;a href=&#34;https://tools.keycdn.com/http2-test&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://tools.keycdn.com/http2-test&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2&gt;Monitoring and Maintenance&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;monitoring-and-maintenance&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#monitoring-and-maintenance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Regular maintenance ensures optimal performance:&lt;/p&gt;
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Monitor Apache logs:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;tail -f /var/log/httpd/error_log | grep -i &#39;http2&#39;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tail -f /var/log/httpd/error_log &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;http2&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;ol start=&#34;2&#34;&gt;
-- Check HTTP/2 metrics: 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;httpd -M | grep http2
-systemctl status httpd
-&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;Check HTTP/2 metrics:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;httpd -M &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep http2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status httpd&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;ol start=&#34;3&#34;&gt;
-- Regular updates: 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf update mod_http2
-&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;Regular updates:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf update mod_http2&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;h2&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Implementing HTTP/2 on AlmaLinux can significantly improve your web server’s performance. Regular monitoring and maintenance ensure optimal operation. Remember to:&lt;/p&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Implementing HTTP/2 on AlmaLinux can significantly improve your web server&amp;rsquo;s performance. Regular monitoring and maintenance ensure optimal operation. Remember to:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Keep your system and modules updated&lt;/li&gt;
 &lt;li&gt;Monitor server performance&lt;/li&gt;
@@ -610,8 +782,7 @@ systemctl status httpd
 &lt;li&gt;Maintain proper security through SSL/TLS&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;With proper configuration and maintenance, mod_http2 can provide substantial performance improvements for your web applications while ensuring compatibility with older HTTP/1.1 clients.&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- /wp:jetpack/markdown --&gt;
+
       </description>
     </item>
     

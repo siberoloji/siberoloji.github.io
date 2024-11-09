@@ -42,6 +42,47 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "authors",
+          "name": "authors",
+          "type": "block",
+          "fieldGroup": [
+            "authors_group"
+          ]
+        },
+        {
+          "title": "classic-editor-remember",
+          "name": "classic-editor-remember",
+          "type": "choice",
+          "choices": [
+            "classic-editor"
+          ]
+        },
+        {
+          "title": "excerpt",
+          "name": "excerpt",
+          "type": "string"
+        },
+        {
+          "title": "guid",
+          "name": "guid",
+          "type": "datetime"
+        },
+        {
+          "title": "id",
+          "name": "id",
+          "type": "number"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string"
         }
       ]
     }
@@ -55,5 +96,27 @@
       "path": "[[workspace]]/content"
     }
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "authors_group",
+      "fields": [
+        {
+          "title": "name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "title": "link",
+          "name": "link",
+          "type": "string"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        }
+      ]
+    }
+  ]
 }

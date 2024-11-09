@@ -1,21 +1,14 @@
 ---
-
 authors:
   - name: İbrahim Korucuoğlu
     link: https://github.com/siberoloji
     image: https://github.com/siberoloji.png
-
-
 categories:
 - Bilgi Toplama
-classic-editor-remember:
-- classic-editor
 date: "2024-11-02T21:35:11Z"
 excerpt: Bu makalede bilgi sızıntısının ne olduğu, keşif sırasında neden özellikle
   tehlikeli olduğu ve kuruluşların sağlam güvenlik uygulamaları ve farkındalık yoluyla
   kendilerini buna karşı nasıl koruyabilecekleri ele alınmaktadır.
-guid: https://www.siberoloji.com/?p=5890
-id: 5890
 image: /assets/images/2024/10/cybersecurity4.webp
 tags:
 - keşif
@@ -23,30 +16,27 @@ title: Keşif Aşamasında Bilgi Sızıntısına Karşı Koruma
 url: /tr/kesif-asamasinda-bilgi-sizintisina-karsi-koruma/
 ---
 
-<span>Dijital çağda, herhangi bir siber saldırının ilk adımı genellikle keşiftir. Bu aşamada, saldırganlar potansiyel güvenlik açıklarını belirlemek için hedef kuruluşun sistemleri, ağları, çalışanları ve güvenlik önlemleri hakkında bilgi toplar. Bilgi sızıntısı (hassas verilerin istenmeyen şekilde ifşa edilmesi) bu aşamada kritik bir risk olabilir. Kuruluşların, siber suçluların güvenlik yapılarına ilişkin bilgi edinmesini önlemek için bilgi sızıntısına karşı nasıl korunacaklarını anlamaları gerekir.</span>
+Dijital çağda, herhangi bir siber saldırının ilk adımı genellikle keşiftir. Bu aşamada, saldırganlar potansiyel güvenlik açıklarını belirlemek için hedef kuruluşun sistemleri, ağları, çalışanları ve güvenlik önlemleri hakkında bilgi toplar. Bilgi sızıntısı (hassas verilerin istenmeyen şekilde ifşa edilmesi) bu aşamada kritik bir risk olabilir. Kuruluşların, siber suçluların güvenlik yapılarına ilişkin bilgi edinmesini önlemek için bilgi sızıntısına karşı nasıl korunacaklarını anlamaları gerekir.
 
-<span>Bu makalede bilgi sızıntısının ne olduğu, keşif sırasında neden özellikle tehlikeli olduğu ve kuruluşların sağlam güvenlik uygulamaları ve farkındalık yoluyla kendilerini buna karşı nasıl koruyabilecekleri ele alınmaktadır.</span>
-
-
----
-
-
-### ***<span>Bilgi Sızıntısı Nedir?</span>*** 
-<span>Bilgi sızıntısı, bir sistem, ağ veya organizasyon hakkındaki hassas verilerin yetkisiz kullanıcılar tarafından istemeden erişilebilir hale getirilmesiyle oluşur. Bu bilgiler meta veriler, korumasız dosyalar, yapılandırma ayrıntıları ve hatta sosyal medya aracılığıyla ifşa edilen çalışan ayrıntıları gibi çeşitli biçimlerde olabilir. Keşif aşamasında saldırganlar, bir araya getirildiğinde organizasyonun altyapısına dair kritik içgörüler ortaya çıkarabilecek herkese açık bilgileri veya hatta küçük ipuçlarını ararlar.</span>
-
-<span>Siber güvenlikte bilgi sızıntısı, saldırganlara IP adresleri, açık portlar, yazılım sürümleri ve personel bilgileri gibi değerli veriler sağlayabilir ve hedefli saldırılar planlamalarına olanak tanır. Keşif sırasında bu sızıntıya karşı koruma sağlamak, güçlü bir güvenlik duruşunu sürdürmek için çok önemlidir.</span>
-
+Bu makalede bilgi sızıntısının ne olduğu, keşif sırasında neden özellikle tehlikeli olduğu ve kuruluşların sağlam güvenlik uygulamaları ve farkındalık yoluyla kendilerini buna karşı nasıl koruyabilecekleri ele alınmaktadır.
 
 ---
 
+### ***Bilgi Sızıntısı Nedir?*** 
 
-### ***<span>Keşif Aşamasında Bilgi Sızdırmak Neden Risklidir?</span>*** 
-<span>Keşif aşaması, bilgisayar korsanlarının belirli, karmaşık saldırılar tasarlamak için istihbarat topladığı aşamadır. İşte bu aşamada bilgi sızıntısının özellikle tehlikeli olmasının nedeni:</span>
+Bilgi sızıntısı, bir sistem, ağ veya organizasyon hakkındaki hassas verilerin yetkisiz kullanıcılar tarafından istemeden erişilebilir hale getirilmesiyle oluşur. Bu bilgiler meta veriler, korumasız dosyalar, yapılandırma ayrıntıları ve hatta sosyal medya aracılığıyla ifşa edilen çalışan ayrıntıları gibi çeşitli biçimlerde olabilir. Keşif aşamasında saldırganlar, bir araya getirildiğinde organizasyonun altyapısına dair kritik içgörüler ortaya çıkarabilecek herkese açık bilgileri veya hatta küçük ipuçlarını ararlar.
+
+Siber güvenlikte bilgi sızıntısı, saldırganlara IP adresleri, açık portlar, yazılım sürümleri ve personel bilgileri gibi değerli veriler sağlayabilir ve hedefli saldırılar planlamalarına olanak tanır. Keşif sırasında bu sızıntıya karşı koruma sağlamak, güçlü bir güvenlik duruşunu sürdürmek için çok önemlidir.
+
+---
+
+### ***Keşif Aşamasında Bilgi Sızdırmak Neden Risklidir?*** 
+Keşif aşaması, bilgisayar korsanlarının belirli, karmaşık saldırılar tasarlamak için istihbarat topladığı aşamadır. İşte bu aşamada bilgi sızıntısının özellikle tehlikeli olmasının nedeni:
  
- 	- ***<span>Saldırı Vektörlerinin Belirlenmesi</span>*** 
-<span>Sızdırılan bilgiler, güncel olmayan yazılım sürümleri, yanlış yapılandırılmış güvenlik duvarları veya korumasız uç noktalar gibi saldırganlar için potansiyel giriş noktalarını ortaya çıkarabilir.</span> 
- 	- ***<span>Sosyal Mühendislik Saldırılarını Kolaylaştırma</span>*** 
-<span>Saldırganlar, çalışanlar ve kurumsal roller hakkında veri toplayarak kişiselleştirilmiş kimlik avı e-postaları oluşturabilir veya güvenilir kişileri taklit ederek çalışanları daha da hassas verileri ifşa etmeye yönlendirebilir.</span> 
+- ***Saldırı Vektörlerinin Belirlenmesi*** 
+Sızdırılan bilgiler, güncel olmayan yazılım sürümleri, yanlış yapılandırılmış güvenlik duvarları veya korumasız uç noktalar gibi saldırganlar için potansiyel giriş noktalarını ortaya çıkarabilir.
+- ***Sosyal Mühendislik Saldırılarını Kolaylaştırma*** 
+Saldırganlar, çalışanlar ve kurumsal roller hakkında veri toplayarak kişiselleştirilmiş kimlik avı e-postaları oluşturabilir veya güvenilir kişileri taklit ederek çalışanları daha da hassas verileri ifşa etmeye yönlendirebilir.</span> 
  	- ***<span>Ağ ve Sistem Altyapısının Haritalanması</span>*** 
 <span>Açık IP adresleri, açık portlar veya servis afişleri, saldırganların bir ağın düzenini haritalandırmasına ve kritik sistemleri hedeflemesine yardımcı olur.</span> 
  	- ***<span>Güvenlik Açıklarının İstismarı</span>*** 
