@@ -24,19 +24,19 @@ title: Harvard Üniversitesinden Ücretsiz Python Kursu
 url: /tr/harvard-universitesinden-ucretsiz-python-kursu/
 ---
 
-  Harvard Üniversitesinin bilgisayar bilimlerine giriş eğitimleri kapsamında programların bulunduğu "<a rel="noreferrer noopener" href="https://cs50.harvard.edu/" target="_blank">Harvard CS50</a>" programı bulunuyor. Bu program kapsamında verdiği eğitimlerden birisi olan "Python ile Programlamaya Giriş" kursunu siz de ücretsiz alabilirsiniz.</p>
+  Harvard Üniversitesinin bilgisayar bilimlerine giriş eğitimleri kapsamında programların bulunduğu "<a rel="noreferrer noopener" href="https://cs50.harvard.edu/" target="_blank">Harvard CS50</a>" programı bulunuyor. Bu program kapsamında verdiği eğitimlerden birisi olan "Python ile Programlamaya Giriş" kursunu siz de ücretsiz alabilirsiniz.
  
 
-  Temel düzeyde bilgiler içeren kurs 15 saatlik içeriğe sahip ve tamamen ücretsiz. Kur materyal ve ders içeriğine bu <a href="https://cs50.harvard.edu/python/2022/" target="_blank" rel="noreferrer noopener">linkten</a> ulaşabilirsiniz.</p>
+  Temel düzeyde bilgiler içeren kurs 15 saatlik içeriğe sahip ve tamamen ücretsiz. Kur materyal ve ders içeriğine bu <a href="https://cs50.harvard.edu/python/2022/" target="_blank" rel="noreferrer noopener">linkten</a> ulaşabilirsiniz.
  
 
-  Python da fonksiyonlar, değişkenler, koşullu ifadeler ve döngüler konularıyla başlayan içerikler istisn alar, kütüphaneler ve diğer konularla devam ediyor.</p>
+  Python da fonksiyonlar, değişkenler, koşullu ifadeler ve döngüler konularıyla başlayan içerikler istisn alar, kütüphaneler ve diğer konularla devam ediyor.
  
 
-  Kurs içeriğine bu <a rel="noreferrer noopener" href="https://cs50.harvard.edu/python/2022/" target="_blank">linkten</a> ulaşabileceğiniz gibi, sertifika programına kayıt olmak isterseniz edX hesabınızla <a rel="noreferrer noopener" href="https://www.edx.org/course/cs50s-introduction-to-programming-with-python" target="_blank">buradan</a> kayıt olabilirsiniz. </p>
+  Kurs içeriğine bu <a rel="noreferrer noopener" href="https://cs50.harvard.edu/python/2022/" target="_blank">linkten</a> ulaşabileceğiniz gibi, sertifika programına kayıt olmak isterseniz edX hesabınızla <a rel="noreferrer noopener" href="https://www.edx.org/course/cs50s-introduction-to-programming-with-python" target="_blank">buradan</a> kayıt olabilirsiniz. 
  
 
-  Dersin anlatımı, Harvard Üniversitesi Bilgisayar Bilimleri Profesörü David J. Malan tarafından gerçekleştiriliyor. Kurs içeriği İngilizce olarak hazırlanmıştır.</p>
+  Dersin anlatımı, Harvard Üniversitesi Bilgisayar Bilimleri Profesörü David J. Malan tarafından gerçekleştiriliyor. Kurs içeriği İngilizce olarak hazırlanmıştır.
  
 
 <!-- wp:buttons -->

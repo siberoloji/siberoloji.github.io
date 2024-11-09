@@ -35,8 +35,8 @@ url: /editing-your-podcast-day-6/
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:heading {"level":3} -->
- ### Understanding Podcast Editing</h3>
+
+ ### Understanding Podcast Editing
 <!-- /wp:heading -->
 
   Podcast editing is more than just cutting out mistakes; it involves crafting a polished audio experience that engages your listeners. Effective editing can enhance the narrative flow, remove distractions, and ensure that your podcast sounds professional. Here are some key aspects of podcast editing: 
@@ -44,31 +44,31 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Trimming</strong>: Cutting out unnecessary parts of the recording to maintain engagement.</li>
+- ***Trimming*** : Cutting out unnecessary parts of the recording to maintain engagement. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Normalizing Audio Levels</strong>: Ensuring consistent volume throughout the episode.</li>
+- ***Normalizing Audio Levels*** : Ensuring consistent volume throughout the episode. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Adding Music and Sound Effects</strong>: Enhancing the listening experience with appropriate audio elements.</li>
+- ***Adding Music and Sound Effects*** : Enhancing the listening experience with appropriate audio elements. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Removing Filler Words</strong>: Cleaning up the audio by eliminating "um," "uh," and other fillers.</li>
-<!-- /wp:list-item --></ul>
+- ***Removing Filler Words*** : Cleaning up the audio by eliminating "um," "uh," and other fillers. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Choosing Your Editing Software</h3>
+
+ ### Choosing Your Editing Software
 <!-- /wp:heading -->
 
   When it comes to podcast editing software, two popular options are Audacity and GarageBand. Each has its strengths and is suitable for different types of users. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>Audacity</strong></h4>
+<h4 class="wp-block-heading">***Audacity***  
 <!-- /wp:heading -->
 
   Audacity is a free, open-source software that is available on multiple platforms (Windows, Mac, Linux). It is ideal for beginners due to its user-friendly interface and comprehensive features: 
@@ -76,20 +76,20 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Multi-Track Editing</strong>: Allows you to work with multiple audio tracks simultaneously.</li>
+- ***Multi-Track Editing*** : Allows you to work with multiple audio tracks simultaneously. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Wide Format Support</strong>: Compatible with various audio file formats like MP3, WAV, and AIFF.</li>
+- ***Wide Format Support*** : Compatible with various audio file formats like MP3, WAV, and AIFF. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Effects and Plugins</strong>: Offers built-in effects and supports third-party plugins for enhanced functionality.</li>
-<!-- /wp:list-item --></ul>
+- ***Effects and Plugins*** : Offers built-in effects and supports third-party plugins for enhanced functionality. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>GarageBand</strong></h4>
+<h4 class="wp-block-heading">***GarageBand***  
 <!-- /wp:heading -->
 
   GarageBand is another excellent choice for Mac users. While it lacks some advanced features found in other software, it remains a powerful tool for basic podcast editing: 
@@ -97,20 +97,20 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>User-Friendly Interface</strong>: The layout is intuitive, making it easy to navigate.</li>
+- ***User-Friendly Interface*** : The layout is intuitive, making it easy to navigate. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Smart Controls</strong>: Offers various audio effects and settings without overwhelming the user.</li>
+- ***Smart Controls*** : Offers various audio effects and settings without overwhelming the user. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Integrated Loops and Sounds</strong>: Provides access to a library of sounds that can be easily incorporated into your podcast.</li>
-<!-- /wp:list-item --></ul>
+- ***Integrated Loops and Sounds*** : Provides access to a library of sounds that can be easily incorporated into your podcast. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Getting Started with Editing</h3>
+
+ ### Getting Started with Editing
 <!-- /wp:heading -->
 
   Before diving into the editing process, ensure you have all necessary materials ready: 
@@ -118,58 +118,58 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Audio Files</strong>: Your recorded podcast episode (in WAV or MP3 format).</li>
+- ***Audio Files*** : Your recorded podcast episode (in WAV or MP3 format). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Intro/Outro Music</strong>: Pre-recorded segments that introduce or conclude your podcast.</li>
+- ***Intro/Outro Music*** : Pre-recorded segments that introduce or conclude your podcast. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Sound Effects (if applicable)</strong>: Any additional audio elements you wish to include.</li>
-<!-- /wp:list-item --></ol>
+- ***Sound Effects (if applicable)*** : Any additional audio elements you wish to include. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Step-by-Step Editing Process</h3>
+
+ ### Step-by-Step Editing Process
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Import Your Audio</h4>
+<h4 class="wp-block-heading">Step 1: Import Your Audio 
 <!-- /wp:heading -->
 
-  <strong>In Audacity</strong>: 
+  ***In Audacity*** : 
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open Audacity.</li>
+- Open Audacity. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Go to <code>File</code> &gt; <code>Import</code> &gt; <code>Audio...</code>.</li>
+- Go to <code>File</code> &gt; <code>Import</code> &gt; <code>Audio...</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Select your audio file to import it into the workspace.</li>
-<!-- /wp:list-item --></ol>
+- Select your audio file to import it into the workspace. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>In GarageBand</strong>: 
+  ***In GarageBand*** : 
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open GarageBand and create a new project.</li>
+- Open GarageBand and create a new project. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Drag your audio file into the timeline or use <code>File</code> &gt; <code>Import</code>.</li>
-<!-- /wp:list-item --></ol>
+- Drag your audio file into the timeline or use <code>File</code> &gt; <code>Import</code>. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Normalize Audio Levels</h4>
+<h4 class="wp-block-heading">Step 2: Normalize Audio Levels 
 <!-- /wp:heading -->
 
   Normalizing ensures that your audio maintains a consistent volume throughout: 
@@ -177,42 +177,42 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In Audacity:</li>
-<!-- /wp:list-item --></ul>
+- In Audacity: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Select all audio by pressing <code>Ctrl + A</code>.</li>
+- Select all audio by pressing <code>Ctrl + A</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Go to <code>Effect</code> &gt; <code>Normalize...</code>.</li>
+- Go to <code>Effect</code> &gt; <code>Normalize...</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Check the box for "Remove DC offset" and set peak amplitude to -1 dB.</li>
-<!-- /wp:list-item --></ol>
+- Check the box for "Remove DC offset" and set peak amplitude to -1 dB. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In GarageBand:</li>
-<!-- /wp:list-item --></ul>
+- In GarageBand: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Click on the track header to select it.</li>
+- Click on the track header to select it. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use the volume slider in the mixer section to adjust levels.</li>
-<!-- /wp:list-item --></ol>
+- Use the volume slider in the mixer section to adjust levels. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Trim Unnecessary Parts</h4>
+<h4 class="wp-block-heading">Step 3: Trim Unnecessary Parts 
 <!-- /wp:heading -->
 
   Cutting out irrelevant sections keeps your content engaging: 
@@ -220,38 +220,38 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In Audacity:</li>
-<!-- /wp:list-item --></ul>
+- In Audacity: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Use the selection tool to highlight sections you want to remove.</li>
+- Use the selection tool to highlight sections you want to remove. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Press <code>Delete</code> or go to <code>Edit</code> &gt; <code>Remove Special</code> &gt; <code>Trim</code>.</li>
-<!-- /wp:list-item --></ol>
+- Press <code>Delete</code> or go to <code>Edit</code> &gt; <code>Remove Special</code> &gt; <code>Trim</code>. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In GarageBand:</li>
-<!-- /wp:list-item --></ul>
+- In GarageBand: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Select the region you want to trim.</li>
+- Select the region you want to trim. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Move the playhead to where you want to cut, then right-click and select <code>Split at Playhead</code>.</li>
-<!-- /wp:list-item --></ol>
+- Move the playhead to where you want to cut, then right-click and select <code>Split at Playhead</code>. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 4: Remove Filler Words</h4>
+<h4 class="wp-block-heading">Step 4: Remove Filler Words 
 <!-- /wp:heading -->
 
   Eliminating filler words enhances clarity: 
@@ -259,24 +259,24 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In Audacity:</li>
+- In Audacity: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Manually highlight each filler word and delete them.</li>
+- Manually highlight each filler word and delete them. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>In GarageBand:</li>
+- In GarageBand: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use the same method as trimming; select and delete unwanted words.</li>
-<!-- /wp:list-item --></ul>
+- Use the same method as trimming; select and delete unwanted words. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 5: Add Intro/Outro Music</h4>
+<h4 class="wp-block-heading">Step 5: Add Intro/Outro Music 
 <!-- /wp:heading -->
 
   Incorporating music creates a professional feel: 
@@ -284,28 +284,28 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In Audacity:</li>
+- In Audacity: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Import your intro/outro files as described in Step 1.</li>
+- Import your intro/outro files as described in Step 1. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Drag them into position at the start or end of your main track.</li>
+- Drag them into position at the start or end of your main track. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>In GarageBand:</li>
+- In GarageBand: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Drag your music files into an empty track at the beginning or end of your project timeline.</li>
-<!-- /wp:list-item --></ul>
+- Drag your music files into an empty track at the beginning or end of your project timeline. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 6: Export Your Edited Podcast</h4>
+<h4 class="wp-block-heading">Step 6: Export Your Edited Podcast 
 <!-- /wp:heading -->
 
   Once you’re satisfied with your edits, it's time to export: 
@@ -313,24 +313,24 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In Audacity:</li>
+- In Audacity: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Go to <code>File</code> &gt; <code>Export</code> &gt; choose either <code>Export as MP3</code> or <code>Export as WAV</code>.</li>
+- Go to <code>File</code> &gt; <code>Export</code> &gt; choose either <code>Export as MP3</code> or <code>Export as WAV</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>In GarageBand:</li>
+- In GarageBand: 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click on <code>Share</code> &gt; <code>Export Song to Disk...</code>, choose your format (MP3 or AAC), and save.</li>
-<!-- /wp:list-item --></ul>
+- Click on <code>Share</code> &gt; <code>Export Song to Disk...</code>, choose your format (MP3 or AAC), and save. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Practical Exercise: Edit a Sample Clip</h3>
+
+ ### Practical Exercise: Edit a Sample Clip
 <!-- /wp:heading -->
 
   To practice these skills effectively, edit a provided sample clip (5 minutes long). Here’s how you can approach it: 
@@ -338,20 +338,20 @@ url: /editing-your-podcast-day-6/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Import the Sample Clip</strong> into either Audacity or GarageBand.</li>
+- ***Import the Sample Clip***  into either Audacity or GarageBand. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Follow Steps 2 through 6 as outlined above—normalize levels, trim unnecessary sections, remove fillers, add music, and export.</li>
+- Follow Steps 2 through 6 as outlined above—normalize levels, trim unnecessary sections, remove fillers, add music, and export. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Listen back to your edited clip critically—does it flow well? Is there anything else you would change?</li>
-<!-- /wp:list-item --></ol>
+- Listen back to your edited clip critically—does it flow well? Is there anything else you would change? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Conclusion</h3>
+
+ ### Conclusion
 <!-- /wp:heading -->
 
   Editing is an essential skill in podcasting that can significantly impact how your content is received by listeners. By familiarizing yourself with tools like Audacity or GarageBand, you can create polished episodes that engage and retain your audience's attention. Remember that practice makes perfect; continue experimenting with different techniques until you find what works best for you. 

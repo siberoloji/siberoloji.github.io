@@ -28,10 +28,10 @@ title: Terminalden IP Adresimizi öğrenme
 url: /tr/terminalden-ip-adresimizi-ogrenme/
 ---
 
-  Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.</p>
+  Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.
  
 
-  Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.</p>
+  Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.
  
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -54,7 +54,7 @@ url: /tr/terminalden-ip-adresimizi-ogrenme/
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-  Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.</p>
+  Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.
  
 
 <!-- wp:code -->
@@ -62,7 +62,7 @@ url: /tr/terminalden-ip-adresimizi-ogrenme/
 echo "Açık IP adresim: ${myip}"</code></pre>
 <!-- /wp:code -->
 
-  3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.</p>
+  3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.
  
 
 <!-- wp:code -->

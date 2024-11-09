@@ -31,22 +31,22 @@ url: /ubuntu-alias-abbreviation-definition/
   Using Alias ​​helps you implement the operations you do on the command line very quickly. The abbreviation you define with a few letters displays a very long command and executes it immediately. 
  
 
-  <strong>NOTE</strong>&nbsp;: There is no need to re-create the bash_aliases file created for the first time during permanent use. You can edit this file, which is hidden in the Home folder, by opening it with any editor. 
+  ***NOTE*** &nbsp;: There is no need to re-create the bash_aliases file created for the first time during permanent use. You can edit this file, which is hidden in the Home folder, by opening it with any editor. 
  
 
   You can copy and use the commands used in this video from below. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Alias ​​temporary use</h3>
+
+ ### Alias ​​temporary use
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">alias lsa='ls -al'</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Alias ​​permanent use</h3>
+
+ ### Alias ​​permanent use
 <!-- /wp:heading -->
 
 <!-- wp:code -->

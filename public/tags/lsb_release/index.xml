@@ -42,11 +42,11 @@ Options:
   -r, --release      show release number of this distribution
   -c, --codename     show code name of this distribution
   -a, --all          show all of the above information
-  -s, --short        show requested information &lt;strong&gt;in &lt;/strong&gt;short format
+  -s, --short        show requested information ***in *** short format
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;&lt;code&gt;lsb_release&lt;/code&gt; komutunu, hiçbir seçenek olmadan verirseniz, &lt;code&gt;-v&lt;/code&gt; seçeneği varsayılan olarak kullanılır.&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--v&#34;&gt;&lt;code&gt;lsb_release -v&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--v&#34;&gt;&lt;code&gt;lsb_release -v&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandığınız dağıtımın desteklediği, sisteminizde yüklü olan ilave LSB modüllerini listeler. &lt;code&gt;No LSB modules are available.&lt;/code&gt; sonucu alıyorsanız, &lt;code&gt;sudo apt install lsb-core&lt;/code&gt; komutunu vererek kurabileceğiniz LSB modüllerini görebilirsiniz. İhtiyacınız yoksa kurmanıza gerek yoktur.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -54,7 +54,7 @@ Options:
 No LSB modules are available.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--i&#34;&gt;&lt;code&gt;lsb_release -i&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--i&#34;&gt;&lt;code&gt;lsb_release -i&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Linux dağıtımını sağlayan otoritenin ID kimlik bilgisini görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -62,7 +62,7 @@ No LSB modules are available.
 Distributor ID:	LinuxMint
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--d&#34;&gt;&lt;code&gt;lsb_release -d&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--d&#34;&gt;&lt;code&gt;lsb_release -d&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandığınız dağıtımın açıklamasını görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -70,7 +70,7 @@ Distributor ID:	LinuxMint
 Description:	Linux Mint 18.1 Serena
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--r&#34;&gt;&lt;code&gt;lsb_release -r&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--r&#34;&gt;&lt;code&gt;lsb_release -r&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandığınız dağıtımın sürüm numarasını görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -78,7 +78,7 @@ Description:	Linux Mint 18.1 Serena
 Release:	18.1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--c&#34;&gt;&lt;code&gt;lsb_release -c&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--c&#34;&gt;&lt;code&gt;lsb_release -c&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandığınız dağıtımın kod adını görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -86,7 +86,7 @@ Release:	18.1
 Codename:	serena
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--a&#34;&gt;&lt;code&gt;lsb_release -a&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--a&#34;&gt;&lt;code&gt;lsb_release -a&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Yukarıda açıklanan seçeneklerin tamamını bir seferde görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -98,7 +98,7 @@ Release:	18.1
 Codename:	serena
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--as&#34;&gt;&lt;code&gt;lsb_release -as&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;lsb_release--as&#34;&gt;&lt;code&gt;lsb_release -as&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;&lt;code&gt;-s&lt;/code&gt; seçeneği yardımcı bir seçenektir. Kısa bilgi anlamına gelir. Görüntülenmek istenen bilginin, sol tarafındaki başlık adı olmadan sadece bilginin kendisini görüntülemeye yarar. Bash proglamada kullanımda oldukça faydalı olabilir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;

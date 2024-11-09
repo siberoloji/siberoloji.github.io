@@ -51,14 +51,14 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>head</strong></h3>
+
+ ### ***head*** 
 <!-- /wp:heading -->
 
   Bu komut, istenilen dokümanın baş tarafından itibaren istenen sayıda satırı görüntüler. Herhangi bir satır sayısı verilmediği takdirde varsayılan değer 10 satırdır. 
  
 
-  <strong>Format</strong>: head [-number of lines to print] [path] 
+  ***Format*** : head [-number of lines to print] [path] 
  
 
 <!-- wp:code -->
@@ -86,14 +86,14 @@ Melih kavunsuyu 12
 Melih kavunsuyu 12</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>tail</strong></h3>
+
+ ### ***tail*** 
 <!-- /wp:heading -->
 
   Tail komutu, head komutunun tam tersi olarak dokümanın sonundan itibaren tarama ve görüntüleme yapar. Bir dokümanın sondan itibaren istenen sayıda satırını görüntüler. Herhangi bir satır sayısı verilmediği takdirde varsayılan değer 10 satırdır. 
  
 
-  <strong>Format</strong>: tail [-number of lines to print] [path] 
+  ***Format*** : tail [-number of lines to print] [path] 
  
 
 <!-- wp:code -->
@@ -120,14 +120,14 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>sort</strong></h3>
+
+ ### ***sort*** 
 <!-- /wp:heading -->
 
   Kendisine verilen metin girdisini, varsayılan olarak alfabetik sıraya dizer. Başka kriterlerle de sıraya dizmek imkanı vardır. Detaylı bilgi için man sayfalarına bakabilirsiniz. 
  
 
-  <strong>Format</strong>: sort [-options] [path] 
+  ***Format*** : sort [-options] [path] 
  
 
 <!-- wp:code -->
@@ -147,14 +147,14 @@ Suzan portakalsuyu 5
 Tarık portakalsuyu 9</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>nl</strong></h3>
+
+ ### ***nl*** 
 <!-- /wp:heading -->
 
   Bu komut ismini, number lines yani satırları numaralandır anlamına gelen ifadenin baş harflerinden almaktadır. 
  
 
-  <strong>Format</strong>: nl [-options] [path] 
+  ***Format*** : nl [-options] [path] 
  
 
 <!-- wp:code -->
@@ -197,14 +197,14 @@ Tarık portakalsuyu 9</code></pre>
   Yukarıdaki örnekte 2 farklı komut seçeneği kullanılmıştır. -s seçeneği, satır numarasından sonra . ve boşluk karakterinin ayraç olarak kullanılacağını ifade eder. -w seçeneği, satır numarası öncesinde ne kadar boşluk bırakılacağını bildirir. Bu örnekte, seçeneklerin tırnak işareti içerisinde girildiğine dikkat edin. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>wc</strong></h3>
+
+ ### ***wc*** 
 <!-- /wp:heading -->
 
   wc komutu word count (kelime say) ifadesinin baş harflerinden oluşur ve girilen metin belgesinde bulunan kelimelerin sayısını verir. Aksi belirtilmedikçe komut çıktısında satır, kelime ve harf sayıları raporlanır. 
  
 
-  <strong>Format</strong>: wc [-options] [path] 
+  ***Format*** : wc [-options] [path] 
  
 
 <!-- wp:code -->
@@ -228,8 +228,8 @@ Tarık portakalsuyu 9</code></pre>
 13  39 examplefile.txt</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>cut</strong></h3>
+
+ ### ***cut*** 
 <!-- /wp:heading -->
 
   Cut komutu, bir dosyadaki verileriniz sütunlara ayrılmış ise, içerisinden istediğiniz sütunları almanıza olanak sağlar, CSV (Virgülle ayrılmış değerler) veya boşlukla ayrılmış değerlerden oluşan metinlerden istediğiniz sütunları kopyalama işlemini yapar. 
@@ -238,13 +238,13 @@ Tarık portakalsuyu 9</code></pre>
   Bizim kullandığımız örnek dosyada veriler boşluk ile ayrılmıştır. İlk sütun isim, ikinci sütun meyvesuyu ve üçüncü sütun ise miktarı belirtmektedir. Biz buradan sadece isimleri almak istersek bunu aşağıdaki şekilde yapabiliriz. 
  
 
-  <strong>-f</strong>: Fields ifadesinin baş harfidir ve hangi alanları alacağımızı ifade eder. 
+  ***-f*** : Fields ifadesinin baş harfidir ve hangi alanları alacağımızı ifade eder. 
  
 
-  <strong>-d</strong>: Delimiter ifadesinin baş harfidir ve alanları ayırmak için kullanılacak karakteri belirtir. 
+  ***-d*** : Delimiter ifadesinin baş harfidir ve alanları ayırmak için kullanılacak karakteri belirtir. 
  
 
-  <strong>Format</strong>: cut [-options] [path] 
+  ***Format*** : cut [-options] [path] 
  
 
 <!-- wp:code -->
@@ -284,23 +284,23 @@ Osman karpuzsuyu
 Betül narsuyu</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>sed</strong></h3>
+
+ ### ***sed*** 
 <!-- /wp:heading -->
 
   sed komutu Stream Editor ifadesinden oluşturulmuştur. ARA-BUL/DEĞİŞTİR mantığını kullanır. Açıklamadan da anlaşılacağı gibi bir ifadeyi aramak ve başka bir ifadeyle değiştirmekte kullanılabilir. Başka bir takım kabiliyetleri olsa da burada temel kullanımı göstereceğiz. 
  
 
-  <strong>Format</strong>: sed &lt;expression&gt; [path] 
+  ***Format*** : sed &lt;expression&gt; [path] 
  
 
   Temel olarak expression aşağıdaki yapıdadır. 
  
 
-  <strong>Expression</strong>: s/aranacakifade/yeniifade/g 
+  ***Expression*** : s/aranacakifade/yeniifade/g 
  
 
-  Baş tarafta bulunan&nbsp;<strong>s</strong>&nbsp;substitute yani değiştirme işlemi yapılacağını sed komutuna bildirir. Başka harfler ve işlemler de bulunmaktadır.&nbsp;<strong>s</strong>&nbsp;harfinden sonra kullanılan ilk ve ikinci kesme işareti arasındaki ifade neyin aranacağını, sonraki bölüm ise ne ile değiştirileceğini belirtir. Son kısımda bulunan&nbsp;<strong>g</strong>&nbsp;ifadesi global olarak işlemin gerçekleştirilmesi gerektiğini belirtir.&nbsp;<strong>g</strong>&nbsp;harfi kullanılmayabilir. Boş bırakıldığı takdirde arama esnasında ilk bulunan değer değiştirilir ancak metnin geri kalanında değiştirilme işlemi yapılmaz. 
+  Baş tarafta bulunan&nbsp;***s*** &nbsp;substitute yani değiştirme işlemi yapılacağını sed komutuna bildirir. Başka harfler ve işlemler de bulunmaktadır.&nbsp;***s*** &nbsp;harfinden sonra kullanılan ilk ve ikinci kesme işareti arasındaki ifade neyin aranacağını, sonraki bölüm ise ne ile değiştirileceğini belirtir. Son kısımda bulunan&nbsp;***g*** &nbsp;ifadesi global olarak işlemin gerçekleştirilmesi gerektiğini belirtir.&nbsp;***g*** &nbsp;harfi kullanılmayabilir. Boş bırakıldığı takdirde arama esnasında ilk bulunan değer değiştirilir ancak metnin geri kalanında değiştirilme işlemi yapılmaz. 
  
 
   Önce dosya içeriğimize bakalım. 
@@ -346,11 +346,11 @@ Betül narsuyu 14</code></pre>
   sed, girilen ifadeleri kelime bazında değil tek tek karakter bazında arar ve değiştirir. Bu durumda Suz ile Ser değişimini de yapabilirsiniz. Sed, varsayılan olarak büyük küçük harf duyarlı arama yapar. Aranacak ifade yerine, başka bir bölümde açıklayacağımız [düzenli ifadeler] kullanılarak farklı filtreler de oluşturmanız mümkündür. 
  
 
-  Son olarak, sed için girdiğimiz seçeneklerin tırnak içinde yazıldığına dikkat edin. Yanlışlıkla tırnakları koymayı unutursanız, işlemi sonlandırmak için&nbsp;<strong>CTRL+c</strong>&nbsp;tuş kombinasyonunu kullanabilirsiniz. 
+  Son olarak, sed için girdiğimiz seçeneklerin tırnak içinde yazıldığına dikkat edin. Yanlışlıkla tırnakları koymayı unutursanız, işlemi sonlandırmak için&nbsp;***CTRL+c*** &nbsp;tuş kombinasyonunu kullanabilirsiniz. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>uniq</strong></h3>
+
+ ### ***uniq*** 
 <!-- /wp:heading -->
 
   uniq komutu unique yani biricik, tek anlamına gelen kelimeden oluşturulmuştur. Temel olarak yaptığı işlem, tekrar eden satırlardan sadece birisini almak ve diğer tekrarları devre dışı bırakmaktır. Bazen kayıtlarda çift giriş olabilir. Bu durumda kayıtları düzeltmek ve sadeleştirmek için kullanılmaktadır. Burada dikkat edilmesi gereken önemli konu, tekrar eden satırların alt alta birbirini takip ediyor olması gerektiğidir. Dokümanda tekrar eden satırlar var fakat alt alta değilse, bu durumu çözmek için ne yapılması gerektiğini Piping ve Redirection konusu ile ilgili yazıda ele alacağız. 
@@ -379,7 +379,7 @@ Betül narsuyu 14</code></pre>
   Komutun uygulanmasından sonra ise tekrarlanan satırların temizlendiği görülebilir. 
  
 
-  <strong>Format</strong>: uniq [options] [path] 
+  ***Format*** : uniq [options] [path] 
  
 
 <!-- wp:code -->
@@ -398,8 +398,8 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>tac</strong></h3>
+
+ ### ***tac*** 
 <!-- /wp:heading -->
 
   tac komutu, cat komutunun tam tersi işlem yapar. Dosyanın en alt satırını okur ve ilk satır olarak yazar. Head ve Tail komutlarından farklı olduğunu belirtelim. 
@@ -408,7 +408,7 @@ Betül narsuyu 14</code></pre>
   Bazen kayıtlar tutulurken, yeni kayıtlar dosyanın en altına yazılıyor olabilir. Siz de bu yeni kayıtları en üstte görmek isteyebilirsiniz. Bu durumda tac kullanımı işinizi kolaylaştıracaktır. 
  
 
-  <strong>Format</strong>: tac [path] 
+  ***Format*** : tac [path] 
  
 
 <!-- wp:code -->

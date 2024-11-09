@@ -33,9 +33,9 @@ url: /tr/linux-icin-vnc-server-kurulum/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Varsayılan VNC server olan Vino’yu kaldıralım:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Varsayılan VNC server olan Vino’yu kaldıralım: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -44,9 +44,9 @@ url: /tr/linux-icin-vnc-server-kurulum/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>X11vnc Kuralım:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- X11vnc Kuralım: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -55,9 +55,9 @@ url: /tr/linux-icin-vnc-server-kurulum/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Parolamızı kaydedeceğimiz dosyayı oluşturalım:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Parolamızı kaydedeceğimiz dosyayı oluşturalım: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -66,9 +66,9 @@ url: /tr/linux-icin-vnc-server-kurulum/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -80,9 +80,9 @@ url: /tr/linux-icin-vnc-server-kurulum/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>x11vnc Sunucu için systemd unit dosyasını oluşturalım. Bunun için aşağıdaki komutu kullanarak metin editörümüzle, service dosyasını açın.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- x11vnc Sunucu için systemd unit dosyasını oluşturalım. Bunun için aşağıdaki komutu kullanarak metin editörümüzle, service dosyasını açın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -91,27 +91,27 @@ url: /tr/linux-icin-vnc-server-kurulum/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>[</strong>Unit]
-Description<strong>=</strong>Start x11vnc at startup.
-After<strong>=</strong>multi-user.target
-<strong>[</strong>Service]
-Type<strong>=</strong>simple
-ExecStart<strong>=</strong>/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
-<strong>[</strong>Install]
-WantedBy<strong>=</strong>multi-user.target
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***[*** Unit]
+Description***=*** Start x11vnc at startup.
+After***=*** multi-user.target
+***[*** Service]
+Type***=*** simple
+ExecStart***=*** /usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+***[*** Install]
+WantedBy***=*** multi-user.target
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Systemd servislerini tekrar başlatın.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Systemd servislerini tekrar başlatın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -120,9 +120,9 @@ WantedBy<strong>=</strong>multi-user.target
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -131,9 +131,9 @@ WantedBy<strong>=</strong>multi-user.target
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Son adımda sunucuyu başlatalım:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Son adımda sunucuyu başlatalım: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->

@@ -28,65 +28,65 @@ title: Kotlin&#8217;de değişken isimlendirme kuralları
 url: /tr/kotlinde-degisken-isimlendirme-kurallari/
 ---
 
- <p>Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.</p>
+ <p>Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
  
 
- <p>Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.</p>
+ <p>Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
  
 
  
- ## Uyulması Zorunlu İsimlendirme Kuralları</h2>
+ ## Uyulması Zorunlu İsimlendirme Kuralları
 <!-- /wp:heading -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>İsimler büyük küçük harf duyarlıdır. (<em>number</em> ile <em>Number</em> aynı ifade değildir.)</li>
+ <!-- wp:list-item -->
+- İsimler büyük küçük harf duyarlıdır. (<em>number</em> ile <em>Number</em> aynı ifade değildir.) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır.</li>
+- İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İsimlerin en başında rakam olamaz (1month <strong>yanlış</strong> kullanımdır.)</li>
+- İsimlerin en başında rakam olamaz (1month ***yanlış***  kullanımdır.) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz.</li>
-<!-- /wp:list-item --></ul>
+- Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Tavsiye Edilen İsimlendirme Kuralları</h2>
+ ## Tavsiye Edilen İsimlendirme Kuralları
 <!-- /wp:heading -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (<code>name</code>, <code>message</code>)</li>
+ <!-- wp:list-item -->
+- Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (<code>name</code>, <code>message</code>) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır.</li>
+- Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız.</li>
+- Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak <code>renk</code> ismi <code>r</code> ifadesinden daha açıklayıcı ve anlamlı olacaktır.</li>
-<!-- /wp:list-item --></ul>
+- Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak <code>renk</code> ismi <code>r</code> ifadesinden daha açıklayıcı ve anlamlı olacaktır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Sihirli Sayılar</h2>
+ ## Sihirli Sayılar
 <!-- /wp:heading -->
 
- <p>Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.</p>
+ <p>Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.
  
 
-<!-- wp:heading {"level":3} -->
- ### Tavsiye Edilmeyen Kullanım</h3>
+
+ ### Tavsiye Edilmeyen Kullanım
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -100,8 +100,8 @@ Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Tavsiye Edilen Kullanım</h3>
+
+ ### Tavsiye Edilen Kullanım
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -117,5 +117,5 @@ Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
 
- <p>Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.</p>
+ <p>Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.
  

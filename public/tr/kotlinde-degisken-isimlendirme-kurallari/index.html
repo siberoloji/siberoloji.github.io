@@ -11,9 +11,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Kotlin&amp;#8217;de değişken isimlendirme kuralları – Siberoloji</title>
-  <meta name="description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
-Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
-Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır." /><link rel="canonical" href="http://localhost:1313/tr/kotlinde-degisken-isimlendirme-kurallari/" itemprop="url" />
+  <meta name="description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer. Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim. Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır. Tavsiye Edilmeyen Kullanım fun main() { println(7) } /* Output 7 Process finished with exit code 0 */ Tavsiye Edilen Kullanım const val DAYS_OF_THE_WEEK = 7 fun main() { println(DAYS_OF_THE_WEEK) } /* Output 7 Process finished with exit code 0 */ Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır." /><link rel="canonical" href="http://localhost:1313/tr/kotlinde-degisken-isimlendirme-kurallari/" itemprop="url" />
 
 <meta property="og:title" content="Kotlin&amp;#8217;de değişken isimlendirme kuralları" />
 <meta property="og:description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
@@ -21,56 +19,95 @@ Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarl
 Uyulması Zorunlu İsimlendirme Kuralları
     
 
+ 
 
 İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.)
+
+
 
 
 İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır.
 
 
-İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.)
+
+
+İsimlerin en başında rakam olamaz (1month yanlış  kullanımdır.)
+
+
 
 
 Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz.
 
+ 
 
 Tavsiye Edilen İsimlendirme Kuralları
     
 
+ 
 
 Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message)
+
+
 
 
 Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır.
 
 
+
+
 Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız.
+
+
 
 
 Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır.
 
+ 
 
 Sihirli Sayılar
     
- Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır." />
+ Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.
+Tavsiye Edilmeyen Kullanım
+    
+
+fun main() {
+    println(7)
+}
+/* Output
+7
+
+Process finished with exit code 0
+ */
+
+Tavsiye Edilen Kullanım
+    
+
+const val DAYS_OF_THE_WEEK = 7
+
+fun main() {
+    println(DAYS_OF_THE_WEEK)
+}
+/* Output
+7
+
+Process finished with exit code 0
+ */
+
+ Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/kotlinde-degisken-isimlendirme-kurallari/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-01-23T17:18:03+00:00" />
 <meta property="article:modified_time" content="2024-01-23T17:18:03+00:00" />
 
   <meta itemprop="name" content="Kotlin&#8217;de değişken isimlendirme kuralları">
-  <meta itemprop="description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
-Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
-Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.">
+  <meta itemprop="description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer. Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim. Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır. Tavsiye Edilmeyen Kullanım fun main() { println(7) } /* Output 7 Process finished with exit code 0 */ Tavsiye Edilen Kullanım const val DAYS_OF_THE_WEEK = 7 fun main() { println(DAYS_OF_THE_WEEK) } /* Output 7 Process finished with exit code 0 */ Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.">
   <meta itemprop="datePublished" content="2024-01-23T17:18:03+00:00">
   <meta itemprop="dateModified" content="2024-01-23T17:18:03+00:00">
   <meta itemprop="wordCount" content="304">
   <meta itemprop="keywords" content="Kotlin,Yazılım">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kotlin&#8217;de değişken isimlendirme kuralları">
-  <meta name="twitter:description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
-Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
-Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.">
+  <meta name="twitter:description" content="Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer. Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır. Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim. Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarlıdır. (number ile Number aynı ifade değildir.) İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır. İsimlerin en başında rakam olamaz (1month yanlış kullanımdır.) Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz. Tavsiye Edilen İsimlendirme Kuralları Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (name, message) Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır. Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız. Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak renk ismi r ifadesinden daha açıklayıcı ve anlamlı olacaktır. Sihirli Sayılar Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır. Tavsiye Edilmeyen Kullanım fun main() { println(7) } /* Output 7 Process finished with exit code 0 */ Tavsiye Edilen Kullanım const val DAYS_OF_THE_WEEK = 7 fun main() { println(DAYS_OF_THE_WEEK) } /* Output 7 Process finished with exit code 0 */ Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -8217,21 +8254,21 @@ Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarl
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1h2"
+                href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Uyulması Zorunlu İsimlendirme Kuralları&lt;/h2&gt;</a>
+              >Uyulması Zorunlu İsimlendirme Kuralları</a>
             </li>
           <li>
               <a
-                href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1h2"
+                href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Tavsiye Edilen İsimlendirme Kuralları&lt;/h2&gt;</a>
+              >Tavsiye Edilen İsimlendirme Kuralları</a>
             </li>
           <li>
               <a
-                href="#sihirli-say%c4%b1larh2"
+                href="#sihirli-say%c4%b1lar"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Sihirli Sayılar&lt;/h2&gt;</a>
+              >Sihirli Sayılar</a>
             </li>
           </ul>
   
@@ -9706,23 +9743,23 @@ Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarl
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1h2">Uyulması Zorunlu İsimlendirme Kuralları
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1">Uyulması Zorunlu İsimlendirme Kuralları
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1h2">Tavsiye Edilen İsimlendirme Kuralları
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1">Tavsiye Edilen İsimlendirme Kuralları
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sihirli-say%c4%b1larh2">Sihirli Sayılar
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sihirli-say%c4%b1lar">Sihirli Sayılar
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilmeyen-kullan%c4%b1mh3">Tavsiye Edilmeyen Kullanım
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilmeyen-kullan%c4%b1m">Tavsiye Edilmeyen Kullanım
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilen-kullan%c4%b1mh3">Tavsiye Edilen Kullanım
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#tavsiye-edilen-kullan%c4%b1m">Tavsiye Edilen Kullanım
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9755,46 +9792,61 @@ Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarl
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-           <p>Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.</p>
- <p>Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.</p>
-<h2>Uyulması Zorunlu İsimlendirme Kuralları</h2><span class="hx-absolute -hx-mt-20" id="uyulması-zorunlu-isimlendirme-kurallarıh2"></span>
-    <a href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+           <p>Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
+ <p>Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
+<h2>Uyulması Zorunlu İsimlendirme Kuralları<span class="hx-absolute -hx-mt-20" id="uyulması-zorunlu-isimlendirme-kuralları"></span>
+    <a href="#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>İsimler büyük küçük harf duyarlıdır. (<em>number</em> ile <em>Number</em> aynı ifade değildir.)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>İsimlerin en başında rakam olamaz (1month <strong>yanlış</strong> kullanımdır.)</li>
+<ul>
+<li>İsimlerin en başında rakam olamaz (1month <em><strong>yanlış</strong></em>  kullanımdır.)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Tavsiye Edilen İsimlendirme Kuralları</h2><span class="hx-absolute -hx-mt-20" id="tavsiye-edilen-isimlendirme-kurallarıh2"></span>
-    <a href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Tavsiye Edilen İsimlendirme Kuralları<span class="hx-absolute -hx-mt-20" id="tavsiye-edilen-isimlendirme-kuralları"></span>
+    <a href="#tavsiye-edilen-isimlendirme-kurallar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (<code>name</code>, <code>message</code>)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak <code>renk</code> ismi <code>r</code> ifadesinden daha açıklayıcı ve anlamlı olacaktır.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Sihirli Sayılar</h2><span class="hx-absolute -hx-mt-20" id="sihirli-sayılarh2"></span>
-    <a href="#sihirli-say%c4%b1larh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Tavsiye Edilmeyen Kullanım</h3><span class="hx-absolute -hx-mt-20" id="tavsiye-edilmeyen-kullanımh3"></span>
-    <a href="#tavsiye-edilmeyen-kullan%c4%b1mh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Sihirli Sayılar<span class="hx-absolute -hx-mt-20" id="sihirli-sayılar"></span>
+    <a href="#sihirli-say%c4%b1lar" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.
+<h3>Tavsiye Edilmeyen Kullanım<span class="hx-absolute -hx-mt-20" id="tavsiye-edilmeyen-kullanım"></span>
+    <a href="#tavsiye-edilmeyen-kullan%c4%b1m" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     println(7)
@@ -9805,9 +9857,8 @@ Uyulması Zorunlu İsimlendirme Kuralları İsimler büyük küçük harf duyarl
 Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Tavsiye Edilen Kullanım</h3><span class="hx-absolute -hx-mt-20" id="tavsiye-edilen-kullanımh3"></span>
-    <a href="#tavsiye-edilen-kullan%c4%b1mh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Tavsiye Edilen Kullanım<span class="hx-absolute -hx-mt-20" id="tavsiye-edilen-kullanım"></span>
+    <a href="#tavsiye-edilen-kullan%c4%b1m" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">const val DAYS_OF_THE_WEEK = 7
 
@@ -9820,7 +9871,7 @@ fun main() {
 Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
- <p>Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.</p>
+ <p>Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.
 
         </div>
         

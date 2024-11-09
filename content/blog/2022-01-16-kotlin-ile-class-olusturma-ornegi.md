@@ -22,7 +22,7 @@ url: /tr/kotlin-ile-class-olusturma-ornegi/
 ---
 
 <!-- wp:paragraph -->
-<p>Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.</p>
+<p>Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.
   
 
 <!-- wp:code -->

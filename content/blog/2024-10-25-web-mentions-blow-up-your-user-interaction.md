@@ -25,36 +25,36 @@ url: /web-mentions-blow-up-your-user-interaction/
  
 
  
- ## What Are Web Mentions?</h2>
+ ## What Are Web Mentions?
 <!-- /wp:heading -->
 
   Web Mentions allow one website to notify another when it has been linked to it. When a site publishes a post that includes a link to another site, it can send a Webmention to inform the linked site. If the recipient site supports Webmentions, it can display this interaction as a comment or response, thus creating a conversation across different platforms[1][4]. 
  
 
  
- ## The Importance of Web Mentions</h2>
+ ## The Importance of Web Mentions
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Decentralization and Ownership</strong></h3>
+
+ ### ***Decentralization and Ownership*** 
 <!-- /wp:heading -->
 
   Web Mentions are part of the IndieWeb movement, which emphasizes decentralization and content ownership. Unlike traditional social media platforms that control interactions, Web Mentions empower users to engage directly with content creators across various sites. This fosters a more open web where conversations can flow freely[1][3]. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Enhanced Engagement</strong></h3>
+
+ ### ***Enhanced Engagement*** 
 <!-- /wp:heading -->
 
   By integrating Web Mentions, website owners can increase engagement on their platforms. Users are more likely to interact with content that acknowledges their contributions or mentions them in discussions. This can lead to richer conversations and a more vibrant online community[2][3]. 
  
 
  
- ## How to Implement Web Mentions on Your WordPress Site</h2>
+ ## How to Implement Web Mentions on Your WordPress Site
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Requirements</strong></h3>
+
+ ### ***Requirements*** 
 <!-- /wp:heading -->
 
   To start using Web Mentions on your WordPress site, you will need: 
@@ -62,112 +62,112 @@ url: /web-mentions-blow-up-your-user-interaction/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enable Pingbacks</strong>: This feature allows your site to notify others when you link to them.</li>
+- ***Enable Pingbacks*** : This feature allows your site to notify others when you link to them. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Install the Webmention Plugin</strong>: This plugin facilitates sending and receiving Webmentions.</li>
+- ***Install the Webmention Plugin*** : This plugin facilitates sending and receiving Webmentions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Use Bridgy</strong>: A service that connects your social media interactions (like Mastodon) back to your WordPress site.</li>
+- ***Use Bridgy*** : A service that connects your social media interactions (like Mastodon) back to your WordPress site. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Install Semantic Linkbacks</strong>: This enhances how mentions and likes are displayed on your site[4][5].</li>
-<!-- /wp:list-item --></ol>
+- ***Install Semantic Linkbacks*** : This enhances how mentions and likes are displayed on your site[4][5]. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Step-by-Step Guide</strong></h3>
+
+ ### ***Step-by-Step Guide*** 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enable Pingbacks</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Enable Pingbacks*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Go to <strong>Settings &gt; Discussion</strong> in your WordPress dashboard.</li>
+- Go to ***Settings &gt; Discussion***  in your WordPress dashboard. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Check the boxes for "Attempt to notify any blogs linked to from the post" and "Allow link notifications from other blogs (pingbacks and trackbacks) on new posts."</li>
-<!-- /wp:list-item --></ul>
+- Check the boxes for "Attempt to notify any blogs linked to from the post" and "Allow link notifications from other blogs (pingbacks and trackbacks) on new posts." 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Install Necessary Plugins</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Install Necessary Plugins*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Search for and install the <strong>Webmention Plugin</strong> from the WordPress Plugin Directory.</li>
+- Search for and install the ***Webmention Plugin***  from the WordPress Plugin Directory. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Install the <strong>Semantic Linkbacks Plugin</strong> for enhanced display options.</li>
-<!-- /wp:list-item --></ul>
+- Install the ***Semantic Linkbacks Plugin***  for enhanced display options. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Configure Bridgy</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Configure Bridgy*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Set up an account with Bridgy and connect it to your social media accounts.</li>
-<!-- /wp:list-item --></ul>
+- Set up an account with Bridgy and connect it to your social media accounts. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Testing</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Testing*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Publish a post with links to other sites and check if Webmentions appear as intended.</li>
-<!-- /wp:list-item --></ul>
+- Publish a post with links to other sites and check if Webmentions appear as intended. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Challenges with Web Mentions</h2>
+ ## Challenges with Web Mentions
 <!-- /wp:heading -->
 
   While Web Mentions offer numerous benefits, there are challenges associated with their implementation: 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Spam Filters</strong></h3>
+
+ ### ***Spam Filters*** 
 <!-- /wp:heading -->
 
   Webmentions can sometimes be flagged as spam by filters, preventing legitimate interactions from being displayed. Adjusting settings in your WordPress theme or using custom code may help mitigate this issue[2][3]. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Technical Complexity</strong></h3>
+
+ ### ***Technical Complexity*** 
 <!-- /wp:heading -->
 
   Setting up Web Mentions requires some technical know-how. Users must be comfortable with installing plugins and configuring settings correctly for optimal performance[2][4]. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Display Management</strong></h3>
+
+ ### ***Display Management*** 
 <!-- /wp:heading -->
 
   Website owners must decide how they want to display incoming Webmentions. Options include showing all mentions or filtering them based on trusted domains to avoid spammy content[3]. 
  
 
  
- ## The Future of Web Mentions</h2>
+ ## The Future of Web Mentions
 <!-- /wp:heading -->
 
   As more websites adopt decentralized standards like Web Mentions, we may see a resurgence of interconnected web experiences reminiscent of earlier Internet days. This could lead to: 
@@ -175,20 +175,20 @@ url: /web-mentions-blow-up-your-user-interaction/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Richer Content Ecosystems</strong>: Websites may become more interlinked, creating comprehensive ecosystems where users can engage with multiple creators seamlessly.</li>
+- ***Richer Content Ecosystems*** : Websites may become more interlinked, creating comprehensive ecosystems where users can engage with multiple creators seamlessly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Improved User Experience</strong>: With direct interactions across sites, users may find more meaningful ways to engage with content creators.</li>
+- ***Improved User Experience*** : With direct interactions across sites, users may find more meaningful ways to engage with content creators. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Increased Adoption of IndieWeb Principles</strong>: More platforms may embrace decentralization, giving users greater control over their online identities and interactions[1][2].</li>
-<!-- /wp:list-item --></ul>
+- ***Increased Adoption of IndieWeb Principles*** : More platforms may embrace decentralization, giving users greater control over their online identities and interactions[1][2]. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Web Mentions represent a significant step toward revitalizing online conversations by facilitating direct interactions between websites. By implementing this standard, website owners can enhance user engagement while contributing to a more decentralized web ecosystem. With the right tools and configurations in place, embracing Web Mentions can transform how we communicate online. 

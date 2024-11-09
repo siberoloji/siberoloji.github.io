@@ -9897,7 +9897,7 @@ sudo systemctl isolate runlevel5.target</pre>
           <h1>UEFI Kavramları Hakkında Detaylar</h1>
           <p>Ubuntu Forum dan <a href="https://forum.ubuntu-tr.net/index.php?action=profile;u=31663" target="_blank" rel="noreferrer noopener">ThomasK1907</a> isimli kullanıcının hazırlamış olduğu detaylı UEFI kavramları hakkındaki yazıyı, bir kaç harf hatasını düzelterek burada yayınlamak istedik. Başvuru kaynağı niteliğinde bir çalışma olmuş. Sizlerin de Linux bilişim ile ilgili yazılarınız varsa, burada yayınlanmasını teklif edebilirsiniz.</p>
 <p>Kaynak: <a href="https://wiki.ubuntu-tr.net/index.php?title=UEFI_ve_BIOS_hakk%C4%B1nda_detayl%C4%B1_bilgiler" target="_blank" rel="noreferrer noopener">Ubuntu Wiki</a></p>
-<h2>Sleep, hibernate, hybrid sleep</h2><span class="hx-absolute -hx-mt-20" id="sleep-hibernate-hybrid-sleeph2"></span>
+## Sleep, hibernate, hybrid sleep</h2><span class="hx-absolute -hx-mt-20" id="sleep-hibernate-hybrid-sleeph2"></span>
     <a href="#sleep-hibernate-hybrid-sleeph2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -9916,7 +9916,7 @@ sudo systemctl isolate runlevel5.target</pre>
 <li><strong>Connected Standby (ya da InstantGo)</strong> mobil cihazlarda görülen bir yöntemdir, masaüstlerine çok sonradan gelmiştir. Sleep ile aynı mantıktadır. Tek farkı, ek olarak; isteyen uygulamalar internet ağını kullanacak kod bloklarını sürekli arka planda çalıştırabilirler.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>Özet açılış(boot) süreci</h2><span class="hx-absolute -hx-mt-20" id="özet-açılışboot-sürecih2"></span>
+## Özet açılış(boot) süreci</h2><span class="hx-absolute -hx-mt-20" id="özet-açılışboot-sürecih2"></span>
     <a href="#%c3%b6zet-a%c3%a7%c4%b1l%c4%b1%c5%9fboot-s%c3%bcrecih2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -9936,16 +9936,16 @@ sudo systemctl isolate runlevel5.target</pre>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 <p><code>UEFI &mdash;-(HDD)&mdash;-&gt; MBR &mdash;-&gt; Bootloader &mdash;-&gt; OS</code></p>
-<h2>Uyku ve diğer kapanma metodları sonrası boot süreçleri nasıl değişiyor?</h2><span class="hx-absolute -hx-mt-20" id="uyku-ve-diğer-kapanma-metodları-sonrası-boot-süreçleri-nasıl-değişiyorh2"></span>
+## Uyku ve diğer kapanma metodları sonrası boot süreçleri nasıl değişiyor?</h2><span class="hx-absolute -hx-mt-20" id="uyku-ve-diğer-kapanma-metodları-sonrası-boot-süreçleri-nasıl-değişiyorh2"></span>
     <a href="#uyku-ve-di%c4%9fer-kapanma-metodlar%c4%b1-sonras%c4%b1-boot-s%c3%bcre%c3%a7leri-nas%c4%b1l-de%c4%9fi%c5%9fiyorh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Uyku&rsquo;ya alınan cihazın açılması Firmware&rsquo;den (aygıt yazılımı) itibaren olmuyor. Sistem hiç kapanmamış olduğu için direk olarak işletim sistemi devam ediyor.<br>Hibernate işleminde işletim sistemi normal kapanma metodunu uyguluyor. Açılışta da normal açılma süreci işleniyor. İşletim sistemleri otomatik olarak son durumunu algılayıp, Hibernate edilmiş ise dosyadan RAM&rsquo;e aktarım yapıp devam ediyor. Eğer Hibernate edilmemiş ise; normal olarak açılıyor. Boot sürecinde bir değişiklik söz konusu değil.</p>
-<h2>MacOS boot işlemi</h2><span class="hx-absolute -hx-mt-20" id="macos-boot-işlemih2"></span>
+## MacOS boot işlemi</h2><span class="hx-absolute -hx-mt-20" id="macos-boot-işlemih2"></span>
     <a href="#macos-boot-i%c5%9flemih2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Apple, EFI&rsquo;yi ilk kullanan şirketlerden biri. 2005 yılında, Apple Intel işlemcilere geçiş yaptığında klasik BIOS yerine EFI kullanmayı tercih etmişti. Yıllar sonra, UEFI spesifikasyonu sayesinde tüm PC&rsquo;lerde UEFI kullanılmaya başlandı ve bu bir standart haline geldi. Mac&rsquo;lerde şu an Apple&rsquo;ın kendine göre uyarladığı bir EFI bulunmakta. Mac&rsquo;lerdeki firmware tıpkı normal PC&rsquo;lerde olduğu gibi UEFI ve Legacy modda işletim sistemi boot edebilir. Ancak Apple&rsquo;ın yaptığı düzenlemeler olmadan MacOS önyüklenemez.</p>
-<h2>CSM (Compatibility Support Module)</h2><span class="hx-absolute -hx-mt-20" id="csm-compatibility-support-moduleh2"></span>
+## CSM (Compatibility Support Module)</h2><span class="hx-absolute -hx-mt-20" id="csm-compatibility-support-moduleh2"></span>
     <a href="#csm-compatibility-support-moduleh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>UEFI&rsquo;nin &lsquo;BIOS compatibility mode&rsquo;una verilen özel isim. UEFI devre dışı bırakılamaz. UEFI MBR-tarzı bölümlü sabit disklerden işletim sistemi açabilir. Bu da UEFI&rsquo;nin geriye uyumlu çalıştığı anlamına gelir. Fakat CSM, her UEFI&rsquo;de olmak zorunda değildir.</p>
-<h2>BIOS</h2><span class="hx-absolute -hx-mt-20" id="biosh2"></span>
+## BIOS</h2><span class="hx-absolute -hx-mt-20" id="biosh2"></span>
     <a href="#biosh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -9961,11 +9961,11 @@ sudo systemctl isolate runlevel5.target</pre>
 <li>HDD ile başlatılırsa; HDD'nin ilk sektörünü okur. Burada okuduğu kısmı çalıştırır (execute). Çalıştırılan bu bölge MBR (Master Boot Record) olarak adlandırılır.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>MBR</h2><span class="hx-absolute -hx-mt-20" id="mbrh2"></span>
+## MBR</h2><span class="hx-absolute -hx-mt-20" id="mbrh2"></span>
     <a href="#mbrh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>MBR (Master Boot Record), sabit diskin ilk sektörüdür. İki kısımdan oluşur:</p>
 <p><strong>1.</strong> Master Boot Code: Çalıştırılabilir (execute) olan kısım.<br><strong>2.</strong> Master Partition Table: HDD için bölümlerin haritası. En çok 4 bölüm tutabilir. Bu sebeple 4 bölümden (birincil bölüm veya primary partition) fazlaya ayırmak gerekirse, diskin &ldquo;genişletilmiş bölüm (extensable partititon)&rdquo; özelliğinden yararlanılır. Genişletilmiş bölüm en fazla 1 adet olabilir. Fakat altında sınırsız bölüm barındırabilir. Altında olan her bölüme &ldquo;mantıksal bölüm (logical partititon)&rdquo; denir.</p>
-<h2>Bootloader (önyükleyici)</h2><span class="hx-absolute -hx-mt-20" id="bootloader-önyükleyicih2"></span>
+## Bootloader (önyükleyici)</h2><span class="hx-absolute -hx-mt-20" id="bootloader-önyükleyicih2"></span>
     <a href="#bootloader-%c3%b6ny%c3%bckleyicih2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -9990,28 +9990,28 @@ sudo systemctl isolate runlevel5.target</pre>
 <li>Windows, her kurulumdan sonra sürekli MBR'yi kendi ön yükleyicisine (bootloader) yönlendirir. Windows'un ön yükleyicisi diğer işletim sistemlerini zaten tanımaz. Bu sebeple her Windows kurulumu sonrası, Linux ve diğer işletim sistemler ile Grub'u tekrar kurmak gerekmektedir.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>fixmbr</h2><span class="hx-absolute -hx-mt-20" id="fixmbrh2"></span>
+## fixmbr</h2><span class="hx-absolute -hx-mt-20" id="fixmbrh2"></span>
     <a href="#fixmbrh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Windows&rsquo;un bir komut satırı uygulaması. Bu komut ile MBR tamamen sıfırdan değiştirilmektedir. <code>fixmbr</code> komutu sonrası Windows kendi ön yükleyicisine yönlendirme yapacak şekilde MBR&rsquo;yi yeniden yazmaktadır.</p>
-<h2>ntldr</h2><span class="hx-absolute -hx-mt-20" id="ntldrh2"></span>
+## ntldr</h2><span class="hx-absolute -hx-mt-20" id="ntldrh2"></span>
     <a href="#ntldrh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Windows NT için ön yükleyicidir (bootloader). Günümüzde tamamen yeniden tasarlandığı için artık kullanılmamaktadır. Yeni tasarım Windows Boot Manager (BOOTMGR) üzerinedir. BOOTMGR başladığında eski bir Windows sürümü seçilirse, BOOTMGR, ntldr&rsquo;yi başlatmaktadır.</p>
-<h2>GRUB vs GRUB2</h2><span class="hx-absolute -hx-mt-20" id="grub-vs-grub2h2"></span>
+## GRUB vs GRUB2</h2><span class="hx-absolute -hx-mt-20" id="grub-vs-grub2h2"></span>
     <a href="#grub-vs-grub2h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p><a href="https://wiki.ubuntu-tr.net/index.php?title=GRUB">GRUB</a> (GRand Unified Bootloader) önyükleme yazılımı, ikinci sürümde neredeyse sıfırdan tasarlandı. Bu yüzden çoğu yerde farklı yazılım gibi algılanmaktadır. Oysa Grub2, Grub&rsquo;un güncel sürümüdür. Grub&rsquo;un eski sürümüne &ldquo;GRUB Legacy&rdquo; adı da verilir. &ldquo;Grub legacy&rdquo; sadece BIOS uyumlu bölümlendirmeleri destekler.</p>
-<h2>SYSLINUX</h2><span class="hx-absolute -hx-mt-20" id="syslinuxh2"></span>
+## SYSLINUX</h2><span class="hx-absolute -hx-mt-20" id="syslinuxh2"></span>
     <a href="#syslinuxh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p><a href="http://tr.wikipedia.org/wiki/NTFS">NTFS</a> veya <a href="http://tr.wikipedia.org/wiki/NTFS">FAT32</a> dosya sistemlerine kurulu Linux dağıtımını başlatmak için gerekli bir önyükleyici (bootloader) çeşididir.</p>
-<h2>LILO (LInux LOader)</h2><span class="hx-absolute -hx-mt-20" id="lilo-linux-loaderh2"></span>
+## LILO (LInux LOader)</h2><span class="hx-absolute -hx-mt-20" id="lilo-linux-loaderh2"></span>
     <a href="#lilo-linux-loaderh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Bir BIOS uyumlu önyükleyici çeşididir. Daha sonra UEFI&rsquo;ler için ELILO isminde bir türevi çıkarılmıştır.</p>
-<h2>OS-Loader</h2><span class="hx-absolute -hx-mt-20" id="os-loaderh2"></span>
+## OS-Loader</h2><span class="hx-absolute -hx-mt-20" id="os-loaderh2"></span>
     <a href="#os-loaderh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Bootloader yani önyükleyici, ismi gereği genel bir terimdir. MBR&rsquo;nin içindeki sisteme de, MBR&rsquo;nin başlattığı sisteme de aslında bootloader denilebilir. Çünkü sistemi boot/load ediyorlar. Bu sebeple bazı insanlar, günümüzdeki sistemlere &ldquo;2 stage bootloader&rdquo; olarak varsayıyor. 1&rsquo;inci stage: MBR ön yükleyicisinin çalıştırıcısı (execution). 2&rsquo;inci stage ise: GRUB, BOOTMGR gibi yazılımların çalıştırıcısıdır. Dolayısı ile bir makalede; MBR&rsquo;ye bootloader yazınca, 2&rsquo;inci aşamaya OS-Loader diyen kaynaklar olabiliyor.</p>
-<h2>UEFI (EFI)</h2><span class="hx-absolute -hx-mt-20" id="uefi-efih2"></span>
+## UEFI (EFI)</h2><span class="hx-absolute -hx-mt-20" id="uefi-efih2"></span>
     <a href="#uefi-efih2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>UEFI (Unified Extensible Firmware Interface) ya da eski adıyla EFI, yeni gelen bir sistemdir. BIOS&rsquo;a alternatif bir aygıt yazılımıdır (firmware). UEFI her konuda çok daha gelişmiştir diyebiliriz. Sadece süreç olarak bakıldığında; MBR gereksinimi ortadan kalkmıştır. Sürecin işleyişi konusunda bilgi almak için yukarıdaki &ldquo;Özet boot süreci&rdquo; başlığına bakabilirsiniz. Bazı UEFI ara yüzlerinde &ldquo;BIOS&rdquo; kelimesi görülebilmektedir. Bunun sebebi BIOS tabanlı sistemler üzerinde ekstra modül olarak UEFI kullanılmasıdır.</p>
-<h2>UEFI boot manager</h2><span class="hx-absolute -hx-mt-20" id="uefi-boot-managerh2"></span>
+## UEFI boot manager</h2><span class="hx-absolute -hx-mt-20" id="uefi-boot-managerh2"></span>
     <a href="#uefi-boot-managerh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Bağlı olan tüm diskler içindeki tüm başlatılabilir sistemlerin (işletim sistemi, bootloader, MBR) listesini tutar ve bunlara ekleme/çıkarma/değişiklik yapılmasını sağlar. Kısmen Grub&rsquo;un görevini görmektedir diyebiliriz. Listenin veritabanı ana kartın içindedir. Bu listedeki öncelik sırasına göre, ana kartı üzerinde olan UEFI ilgili sistemi başlatacaktır.<br>Bu liste dışarıdan düzenlenebilmektedir. Örneğin Linux&rsquo;ta &ldquo;efibootmgr&rdquo; uygulaması bunu yapıyor. Her işletim sistemi, kurulumunda bu listeye ekler ya da siler ya da düzenler. Aynı şekilde ana karttaki UEFI yazılımı grafik arayüzü ile son kullanıcı manuel olarak da ekleme/silme/değiştirme yapabilir.<br>Listenin içinde BIOS-uyumlu bölümlerde olabilir. Çünkü UEFI, geriye uyumlu, yani BIOS uyumludur.</p>
 <p>Aşağıda, örnek bir <strong>efibootmgr</strong> komut satırı çıktısı verilmiş ve açıklaması yapılmıştır.</p>
@@ -10039,7 +10039,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <p>(3) HDD&rsquo;yi aç diyor. Özellikle disk bölümü belirtmemiş. Bu durumda UEFI native mod&rsquo;da HDD&rsquo;yi açar. GPT bölümlü olan bu HDD içerisinde, UEFI disk bölümünü bulur. &ldquo;Fallback path mode (ya da fallback mode)&rdquo; denir buna, yani; native uefi mode (Bios değil) fakat HDD karar veriyor hangi disk bölümünün açılacağına. Detaylar için ESP ile ilgili başlıklarına bakınız.</p>
 <p>(4) uefi native mode disk bölümü belirtilmiş. &ldquo;.efi&rdquo; uzantısı UEFI aygıt yazılımının çalıştırılabilir bootloader dosyası uzantısıdır.</p>
 <p>(5) HDD&rsquo;yi aç der. Özellikle disk bölümü belirtmemiş. Fakat BIOS uyumlu olsun demiş. Bu durumda HDD içerisinden MBR&rsquo;yi okur eskisi gibi. Yukarıdaki Boot0001&rsquo;da, UEFI geri uyumlu modda olmadığı için GPT&rsquo;yi okumuştu. Burada ise MBR okunacak.</p>
-<h2>Secure boot</h2><span class="hx-absolute -hx-mt-20" id="secure-booth2"></span>
+## Secure boot</h2><span class="hx-absolute -hx-mt-20" id="secure-booth2"></span>
     <a href="#secure-booth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10055,14 +10055,14 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>Microsoft, Windows'un anahtarını bazı farklı işletim sistemleri firmalarına da veriyor, örneğin [[v:Fedora (işletim sistemi)|Fedora). Bu şekilde o makinede, güncel Fedora ISO'su ile direk işletim sistemi başlatılabiliyor oluyor.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>UEFI based botloaders</h2><span class="hx-absolute -hx-mt-20" id="uefi-based-botloadersh2"></span>
+## UEFI based botloaders</h2><span class="hx-absolute -hx-mt-20" id="uefi-based-botloadersh2"></span>
     <a href="#uefi-based-botloadersh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>UEFI aygıt yazılımı, direk olarak önyükleyiciyi (bootloader) çalıştırır. BIOS tabanlı sistemlerde ise, MBR ön yükleyiciyi çalıştırırdı. UEFI çok daha gelişmiş oluğundan çalıştırdığı önyükleyici de daha gelişmiştir. Farklı executable dosyası çalıştırırlar. Bu sebeple ön yükleyiciler de kendilerini güncellemişlerdir. Eğer HDD içerisinde sadece UEFI&rsquo;nin çalıştırabileceği bir önyükleyici var ise; aynı HDD BIOS&rsquo;lu ana kartlarda işletilemeyecektir.</p>
-<h2>Volume Boot Record (VBR ya da partition boot sector)</h2><span class="hx-absolute -hx-mt-20" id="volume-boot-record-vbr-ya-da-partition-boot-sectorh2"></span>
+## Volume Boot Record (VBR ya da partition boot sector)</h2><span class="hx-absolute -hx-mt-20" id="volume-boot-record-vbr-ya-da-partition-boot-sectorh2"></span>
     <a href="#volume-boot-record-vbr-ya-da-partition-boot-sectorh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>VBR; &ldquo;volume boot sector&rdquo;, &ldquo;partition boot record&rdquo; ya da &ldquo;partition boot sector&rdquo; tanımlarıyla ifade edilebilir.</p>
 <p>MBR çok ufak olduğundan, tüm detayları üzerinde tutmak mümkün değildir. Bu sebeple her mantıksal ve birincil bölümün başında VBR olur. VBR&rsquo;ler de MBR&rsquo;ler gibidir. Bölüm bilgilerini daha detaylı şekilde tutarlar.</p>
-<h2>GPT (GUID Partition Table)</h2><span class="hx-absolute -hx-mt-20" id="gpt-guid-partition-tableh2"></span>
+## GPT (GUID Partition Table)</h2><span class="hx-absolute -hx-mt-20" id="gpt-guid-partition-tableh2"></span>
     <a href="#gpt-guid-partition-tableh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10078,7 +10078,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>GPT olarak tasarlanmış bir diski makineye taktığınızda BIOS ana kartlar ile buradaki işletim sistemlerini başlatamazsınız. Fakat burada yanlış anlaşılma olmasın: Sadece işletim sistemini boot edemezsiniz. Onun dışında, bir işletim sistemi yürütülür durumdayken, GPT bölünlenmiş HDD'yi bağlayıp (mount edip), hem Windows hem de diğer tüm işletim sistemleri ile okuyup yazabilirsiniz (ön tanımlı olarak işletim sistemi okuyamasa bile üçüncü parti uygulamalarla yapılabilir). Çünkü HDD'yi okuyan bir yazılımdır. BIOS değil. Yani işletim sistemi boot etmekle, HDD'yi sadece veri olarak kullanmak tamamen ayrı kavramlardır.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>Windows recovery partititon</h2><span class="hx-absolute -hx-mt-20" id="windows-recovery-partititonh2"></span>
+## Windows recovery partititon</h2><span class="hx-absolute -hx-mt-20" id="windows-recovery-partititonh2"></span>
     <a href="#windows-recovery-partititonh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10088,7 +10088,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>Bölüm winRE dosyalarını içeriyor. WinRE, Windows kurtarma işlemlerini yapan yazılımın adıdır.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>ESP (EFI System Partition ya da EFISYS)</h2><span class="hx-absolute -hx-mt-20" id="esp-efi-system-partition-ya-da-efisysh2"></span>
+## ESP (EFI System Partition ya da EFISYS)</h2><span class="hx-absolute -hx-mt-20" id="esp-efi-system-partition-ya-da-efisysh2"></span>
     <a href="#esp-efi-system-partition-ya-da-efisysh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10110,7 +10110,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li><code>\EFI</code> dizini altında aynı zamanda sürücü (driver) dosyaları bulunmaktadır. Sürücüler: dosya dizinlerine erişim sürücüleri (ext, ntfs gibi), ağ kartlarının daha geniş özelliklerle kullanılabilmesini, önyükleyici sırasında takılan USB cihazların tanınması gibi işler için gerekli olabilmektedirler.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>MSR (&ldquo;Microsoft System Reserved Partition&rdquo; ya da &ldquo;Sistem ayrıldı&rdquo; bölümü)</h2><span class="hx-absolute -hx-mt-20" id="msr-microsoft-system-reserved-partition-ya-da-sistem-ayrıldı-bölümüh2"></span>
+## MSR (&ldquo;Microsoft System Reserved Partition&rdquo; ya da &ldquo;Sistem ayrıldı&rdquo; bölümü)</h2><span class="hx-absolute -hx-mt-20" id="msr-microsoft-system-reserved-partition-ya-da-sistem-ayrıldı-bölümüh2"></span>
     <a href="#msr-microsoft-system-reserved-partition-ya-da-sistem-ayr%c4%b1ld%c4%b1-b%c3%b6l%c3%bcm%c3%bch2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10129,7 +10129,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>bootmgr bu bölümde yüklüdür.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>RAID</h2><span class="hx-absolute -hx-mt-20" id="raidh2"></span>
+## RAID</h2><span class="hx-absolute -hx-mt-20" id="raidh2"></span>
     <a href="#raidh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Açık adı: Redundant Array of Inexpensive Disks ya da Redundant Array of Independent Disks.</p>
 <!-- wp:list -->
@@ -10149,7 +10149,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>Sadece donanımsal ya da sadece yazılımsal çözümlerle sağlanmaktadırlar.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>Flag (bayrak)</h2><span class="hx-absolute -hx-mt-20" id="flag-bayrakh2"></span>
+## Flag (bayrak)</h2><span class="hx-absolute -hx-mt-20" id="flag-bayrakh2"></span>
     <a href="#flag-bayrakh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>GPT ve MBR, her disk bölümü için bir bayrak bulundururlar. Bayrakların birer anlamı vardır:</p>
 <!-- wp:list -->
@@ -10181,7 +10181,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>legacy_boot: GPT yapılı disklerde, SYSLINUX önyükleyicisinin bulunduğu bölüme atanmaktadır.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>Partititon name, partititon label</h2><span class="hx-absolute -hx-mt-20" id="partititon-name-partititon-labelh2"></span>
+## Partititon name, partititon label</h2><span class="hx-absolute -hx-mt-20" id="partititon-name-partititon-labelh2"></span>
     <a href="#partititon-name-partititon-labelh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10191,10 +10191,10 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 <li>Label ise disk bölümünün içinde olan bir etikettir.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
-<h2>GParted</h2><span class="hx-absolute -hx-mt-20" id="gpartedh2"></span>
+## GParted</h2><span class="hx-absolute -hx-mt-20" id="gpartedh2"></span>
     <a href="#gpartedh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p><a href="https://wiki.ubuntu-tr.net/index.php?title=GParted">GParted</a>, Linux üzerinde çalışan, GUI içeren bir disk yönetim aracıdır. GParted&rsquo;in <a href="https://wiki.ubuntu-tr.net/index.php?title=Canl%C4%B1_sistem">canlı CD/USB</a> sürümü, bilgisayardaki işletim sisteminden bağımsız olarak her sistemde kullanılabilir.</p>
-<h2>GParted anahtar ikonu</h2><span class="hx-absolute -hx-mt-20" id="gparted-anahtar-ikonuh2"></span>
+## GParted anahtar ikonu</h2><span class="hx-absolute -hx-mt-20" id="gparted-anahtar-ikonuh2"></span>
     <a href="#gparted-anahtar-ikonuh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul><!-- wp:list-item -->
@@ -10219,7 +10219,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
           <p>Linux Ev kullanıcıları veya sistem yöneticileri tarafından kullanılan veya kullanılması gereken önemli tarama programlarından bir tanesi de lynis isimli programdır. Bu yazıda, sistemimizin çalışmasını sağlayan servislerin ve hizmetlerin entegre ve hatasız çalışıp çalışmadığını kontrol etmek amacıyla kullanılan &ldquo;lynis&rdquo; aracının kurulum ve kullanımı açıklanacaktır.</p>
 <p>Program, GPLv3 lisansıyla dağıtılmaktadır ve komut satırından çalışmaktadır. Şirketler için ticari sürümü de bulunan programın, tüm sisteminizi tarayıp sonuç raporunu &lsquo;&rsquo;.log&rsquo;&rsquo; dosyası şeklinde bilgisayarınıza kaydettiğini belirtelim. Bulunan HATA ve TAVSİYELER konusunda, ticari sürümde doğrudan çözümler sunulduğu halde ücretsiz sürümde hataları, &lsquo;&rsquo;log&rsquo;&rsquo; dosyası içerisinden kendiniz bulup, gerekli tedbiri de kendiniz almak durumundasınız. Ancak bunu yapmak o kadar da zor değil.</p>
 <p>Aşağıdaki komutlarda bu yazının hazırlandığı tarihte en güncel sürüm olan &ldquo;2.3.4&rdquo; kullanılmıştır. Siz, en son sürümü bu <a href="https://cisofy.com/downloads/" target="_blank" rel="noreferrer noopener">bağlantıdan</a> kontrol ederek komutlara &lsquo;&lsquo;&lsquo;2.3.4&rsquo;&rsquo;&rsquo; yerine en son sürümün numarasını yazabilirsiniz.</p>
-<h2>Lynis Kurulum</h2><span class="hx-absolute -hx-mt-20" id="lynis-kurulumh2"></span>
+## Lynis Kurulum</h2><span class="hx-absolute -hx-mt-20" id="lynis-kurulumh2"></span>
     <a href="#lynis-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Aşağıdaki komutlar yardımıyla sıkıştırılmış arşiv dosyasını /tmp klasörüne indiriyoruz. İndirilen dosyayı /usr/local klasörüne açıyoruz. Arşiv açıldığında /usr/local klasörünün içerisine /lynis isimli klasörü oluşturacaktır.</p>
 <!-- wp:preformatted -->
@@ -10227,7 +10227,7 @@ Boot0004* Hard Drive    BIOS(2,0,00)P0: ST1500DM003-9YN16G</pre>
 wget <a href="https://cisofy.com/files/lynis-2.3.4.tar.gz">https://cisofy.com/files/lynis-2.3.4.tar.gz</a>
 sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/</pre>
 <!-- /wp:preformatted -->
-<h2>Lynis Tarama</h2><span class="hx-absolute -hx-mt-20" id="lynis-taramah2"></span>
+## Lynis Tarama</h2><span class="hx-absolute -hx-mt-20" id="lynis-taramah2"></span>
     <a href="#lynis-taramah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Açılan dosyaların olduğu klasöre girerek lynis programını kurulum yapmadan doğrudan çalıştırabilirsiniz. Çalıştırabilmek için sistemde yönetici yetkilerine sahip olmalısınız.</p>
 <!-- wp:preformatted -->
@@ -10342,7 +10342,7 @@ sudo ./lynis -c -Q</pre>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 <p>Tarama sona erdiğinde tüm sonuçlar oluşturulan &lsquo;&rsquo;<em>/var/log/lynis.log</em>&rsquo;&rsquo; dosyasına kaydedilir.</p>
-<h2>Lynis Tarama Sonuçlarını İnceleme</h2><span class="hx-absolute -hx-mt-20" id="lynis-tarama-sonuçlarını-incelemeh2"></span>
+## Lynis Tarama Sonuçlarını İnceleme</h2><span class="hx-absolute -hx-mt-20" id="lynis-tarama-sonuçlarını-incelemeh2"></span>
     <a href="#lynis-tarama-sonu%c3%a7lar%c4%b1n%c4%b1-incelemeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Tarama ve testlerin sonucunda oluşturulan sonuçların yazıldığı /var/log/lynis.log dosyasını incelememiz gerekmektedir. İşte bu işlem ticari sürümde otomatik yapılırken biz elle yapacağız. Bunun için rapor dosyasını 3 şekilde inceleme imkanımız var;</p>
 <!-- wp:list -->
@@ -10387,7 +10387,7 @@ sudo ./lynis -c -Q</pre>
 <pre class="wp-block-preformatted">20:02:44] Suggestion: Default umask in /etc/login.defs could be more strict like 027 [AUTH-9328]  
 20:02:44] Suggestion: Default umask in /etc/init.d/rc could be more strict like 027 [AUTH-9328]</pre>
 <!-- /wp:preformatted -->
-<h2>Yardım Bilgilerini Görüntüleme</h2><span class="hx-absolute -hx-mt-20" id="yardım-bilgilerini-görüntülemeh2"></span>
+## Yardım Bilgilerini Görüntüleme</h2><span class="hx-absolute -hx-mt-20" id="yardım-bilgilerini-görüntülemeh2"></span>
     <a href="#yard%c4%b1m-bilgilerini-g%c3%b6r%c3%bcnt%c3%bclemeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Aşağıdaki komutlar ile özet ve detaylı yardım sayfalarını görüntüleyebilirsiniz.</p>
 <!-- wp:preformatted -->
@@ -10562,17 +10562,17 @@ $ touch “Yeni Dosya” #Yeni Dosya isminde tek bir dosya oluşturulur.</pre>
 <p>Bu duruma bir miktar engel olmak için, bilgisayarınızın ekranından yayılan renklerin içerisinde bulunan mavi ışık oranını azaltmalısınız. Bu amaçla geliştirilen Redshift programını mutlaka denemelisiniz. Program, saate ve bulunduğunuz konumda güneşin durumuna göre ekran renklerinin sıcaklığını otomatik olarak ayarlayarak rahat bir deneyim yaşamanızı sağlıyor.</p>
 <p>Ekran sıcaklığını Kelvin (3500K-6500K vb.) cinsinden değerlerle ayarlayan programı ilk günlerde biraz garip bulabilirsiniz. Ekranın kırmızı bir ton aldığını fark edip şaşırmayın. Kendinize biraz zaman tanıyın ve yavaş yavaş alışmaya çalışın. Bir kaç gün sonra artık gözlerinizin eskisi gibi kurumadığını ve bilgisayar başından ayrılınca daha kısa sürede uyuyabildiğinizi göreceksiniz.</p>
 <p>Redshift programı, neredeyse bütün Linux dağıtımlarının paket depolarında bulunmaktadır. Kurulum için aşağıdaki komutları kullanmanız yeterli.</p>
-<h2>Redshift Ubuntu - Debian Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshift-ubuntu---debian-kurulumh2"></span>
+## Redshift Ubuntu - Debian Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshift-ubuntu---debian-kurulumh2"></span>
     <a href="#redshift-ubuntu---debian-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt install redshift redshift-gtk</code></pre>
 <!-- /wp:code -->
-<h2>Redshift CentOS - Fedora Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspcentos---fedora-kurulumh2"></span>
+## Redshift CentOS - Fedora Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspcentos---fedora-kurulumh2"></span>
     <a href="#redshiftnbspcentos---fedora-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo yum install redshift gtk-redshift</code></pre>
 <!-- /wp:code -->
-<h2>Redshift Yardım</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspyardımh2"></span>
+## Redshift Yardım</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspyardımh2"></span>
     <a href="#redshiftnbspyard%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Redshift programını, komut satırından kontrol etmeniz de mümkün. Aşağıdaki yardım komutu ile açıklamaları okuyabilirsiniz.</p>
 <!-- wp:code -->
@@ -10580,7 +10580,7 @@ $ touch “Yeni Dosya” #Yeni Dosya isminde tek bir dosya oluşturulur.</pre>
 
 </code></pre>
 <!-- /wp:code -->
-<h2>Redshift Ayarlar Dosyası</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspayarlar-dosyasıh2"></span>
+## Redshift Ayarlar Dosyası</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspayarlar-dosyasıh2"></span>
     <a href="#redshiftnbspayarlar-dosyas%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Programın ayarlarının bulunduğu dosyayı, ~/.config/redshift.conf adresinde bulabilirsiniz.</p>
 <!-- wp:code -->
@@ -10976,7 +10976,7 @@ Fatih elmasuyu 20</code></pre>
           <h1>Fish &amp;#8211; Komut Satırına Farklı Bir Yaklaşım</h1>
           <p>Linux denildiğinde herhalde ilk akla gelen konulardan bir tanesi de komut satırı ve terminaldir. Komut satırında yazdığınız ifadeleri işleyen kabuk (shell) ise farklı sürümleriyle kullanıcılara sunulur. Bash, Dash, Zsh, Csh bunlara örnek olarak verilebilir. Bu yazımızda size Fish kabuk programının kurulumunu açıklayacağız.</p>
 <p>Fish, kullanıcı dostu olarak bilinen bir kabuk programıdır. Komut tamamlama, komut içerisinde farklı formları farklı renklendirme özelliklerine sahiptir. Komut yazımı esnasında çeşitli tavsiyeler sunar ve bunları, o an bulunduğunuz klasörü de dikkate alarak yapar. Önerileri yön tuşlarıyla kolayca seçebilirsiniz. Yardım komutlarını otomatik olarak web tarayıcıda açması da kullanım kolaylığı açısında vurgulanması gereken özelliklerinden birisidir.</p>
-<h2>Debian için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="debian-için-fish-kurulumh2"></span>
+## Debian için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="debian-için-fish-kurulumh2"></span>
     <a href="#debian-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Debian 8 ----------------
@@ -10989,7 +10989,7 @@ echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/relea
 apt-get update
 apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Ubuntu için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="ubuntu-için-fish-kurulumh2"></span>
+## Ubuntu için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="ubuntu-için-fish-kurulumh2"></span>
     <a href="#ubuntu-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Ubuntu ----------------
@@ -10999,7 +10999,7 @@ sudo apt-get install python-software-properties
 sudo apt-get update
 sudo apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fedora için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="fedora-için-fish-kurulumh2"></span>
+## Fedora için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="fedora-için-fish-kurulumh2"></span>
     <a href="#fedora-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Fedora 22 ----------------
@@ -11017,7 +11017,7 @@ cd /etc/yum.repos.d/
 wget <a href="http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo">http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo</a>
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>CentOS için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="centos-için-fish-kurulumh2"></span>
+## CentOS için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="centos-için-fish-kurulumh2"></span>
     <a href="#centos-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- CentOS 7 ----------------
@@ -11030,7 +11030,7 @@ cd /etc/yum.repos.d/
 wget <a href="http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo">http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo</a>
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>RHEL için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="rhel-için-fish-kurulumh2"></span>
+## RHEL için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="rhel-için-fish-kurulumh2"></span>
     <a href="#rhel-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- RHEL 7 ----------------

@@ -35,10 +35,10 @@ url: /tr/systemd-ile-acilista-baslayan-servisleri-kontrol-etme/
  
 
  
- ## Sisteminizde systemd Var mı?</h2>
+ ## Sisteminizde systemd Var mı?
 <!-- /wp:heading -->
 
-  Bu yazıda anlatılanlar,&nbsp;<strong>systemd</strong>&nbsp;sistem yönetim altyapısını kullandığından, bilmiyorsanız öncelikle işletim sisteminizin systemd kullanıp kullanmadığını tespit etmelisiniz. Bunu, aşağıdaki komut ile yapabilirsiniz. 
+  Bu yazıda anlatılanlar,&nbsp;***systemd*** &nbsp;sistem yönetim altyapısını kullandığından, bilmiyorsanız öncelikle işletim sisteminizin systemd kullanıp kullanmadığını tespit etmelisiniz. Bunu, aşağıdaki komut ile yapabilirsiniz. 
  
 
 <!-- wp:preformatted -->
@@ -51,7 +51,7 @@ systemd 229
  
 
  
- ## Sisteminizin Boot Süresi Ne kadar?</h2>
+ ## Sisteminizin Boot Süresi Ne kadar?
 <!-- /wp:heading -->
 
   Bilgisayarınız açılmaya başladığında arka planda öncelikle kernel, ardından kullanıcı düzeyi servisler yüklenir. Bu sürenin kısaca özetini aşağıdaki komutu kullanarak görebilirsiniz. 
@@ -63,11 +63,11 @@ systemd 229
 Startup finished in 4.891s (kernel) + 38.844s (userspace) = 43.735s</pre>
 <!-- /wp:preformatted -->
 
-  Yukarıdaki çıktıda görülüyor ki sistem topam&nbsp;<strong>43</strong>&nbsp;saniyede açılmış. Bu sürenin ~4.8 saniyesini kernel yükleme işlemi kullanırken, ~38.8 saniyesi kullanıcı düzeyi uygulamalar için harcanmış. Peki bu uygulamaların hepsini, gerçekten kullanıyor musunuz veya ihtiyacınız var mı? Bunlardan bazıları açılışı geciktirirken aynı zamanda arka planda sistem kaynağı kullanıyor olabilirler. 
+  Yukarıdaki çıktıda görülüyor ki sistem topam&nbsp;***43*** &nbsp;saniyede açılmış. Bu sürenin ~4.8 saniyesini kernel yükleme işlemi kullanırken, ~38.8 saniyesi kullanıcı düzeyi uygulamalar için harcanmış. Peki bu uygulamaların hepsini, gerçekten kullanıyor musunuz veya ihtiyacınız var mı? Bunlardan bazıları açılışı geciktirirken aynı zamanda arka planda sistem kaynağı kullanıyor olabilirler. 
  
 
  
- ## Açılış Raporunu Detaylı İnceleme</h2>
+ ## Açılış Raporunu Detaylı İnceleme
 <!-- /wp:heading -->
 
   Bir önceki başlıkta verdiğimiz komut çıktısı, özet raporu verirken, şimdi kullanacağımız komut ise detaylı olarak servis düzeyinde zaman miktarını bize verecektir. 
@@ -109,7 +109,7 @@ Startup finished in 4.891s (kernel) + 38.844s (userspace) = 43.735s</pre>
  
 
  
- ## Açılışta Yüklenen Bir Servisi Devre Dışı Bırakma</h2>
+ ## Açılışta Yüklenen Bir Servisi Devre Dışı Bırakma
 <!-- /wp:heading -->
 
   Farz edelim ki&nbsp;mysql.service&nbsp;bu servisin açılışta başlamasına ihtiyacımız yok. İstediğimiz zaman kendimiz başlatabiliriz veya ileride tekrar başlangıçta yüklenecekler listesine ekleyebiliriz. Bunun için&nbsp;systemctl&nbsp; tarafından sağlanan&nbsp;enabled&nbsp; -&nbsp;disabled&nbsp; anahtarlarını kullanabiliriz. 
@@ -128,14 +128,14 @@ Executing /lib/systemd/systemd-sysv-install disable mysql</pre>
 <!-- /wp:quote -->
 
  
- ## Devre Dışı Bırakılan Servisi Başlatma</h2>
+ ## Devre Dışı Bırakılan Servisi Başlatma
 <!-- /wp:heading -->
 
   Sisteminizi kullandığınız esnada, açılış esnasında yüklenmesini iptal ettiğiniz sistemi başlatmak isteyebilirsiniz. Bu durum 2 farklı şekilde ortay çıkabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Bilgisayarınızda çalışırken servisi hemen başlatmak</h3>
+
+ ### Bilgisayarınızda çalışırken servisi hemen başlatmak
 <!-- /wp:heading -->
 
   Yukarıdaki örnekte gördüğümüz&nbsp;mysql.service&nbsp; servisini hemen kullanmak&nbsp;için başlatmak isteyebilirsiniz. Bu durumda&nbsp;systemctl&nbsp; tarafından sağlanan&nbsp;start&nbsp; anahtarını kullanmanız yeterli. 
@@ -145,8 +145,8 @@ Executing /lib/systemd/systemd-sysv-install disable mysql</pre>
 <pre class="wp-block-preformatted">sudo systemctl start&nbsp;mysql.service</pre>
 <!-- /wp:preformatted -->
 
-<!-- wp:heading {"level":3} -->
- ### Servisi tekrar açılış esnasında başlatmak</h3>
+
+ ### Servisi tekrar açılış esnasında başlatmak
 <!-- /wp:heading -->
 
   Önceden iptal ettiğiniz servise çok sık ihtiyaç duymaya başladınız. Üzerinde çalıştığınız proje farklılaştı ve açılışta başlamasını istiyorsunuz. O zaman, aşağıdaki komut örneğindeki yöntemle servisi tekrar başlangıçta yüklenecek şekilde ayarlayabilirsiniz. 
@@ -160,7 +160,7 @@ Executing /lib/systemd/systemd-sysv-install enable mysql</pre>
 <!-- /wp:preformatted -->
 
  
- ## Son Notlar</h2>
+ ## Son Notlar
 <!-- /wp:heading -->
 
   İptal ettiğiniz servisin adını unutabilirsiniz. İptal ederken kullandığınız sistemin adını tekrar bulmak için, sisteminizde bulunan servislerin listesini ve durumunu aşağıdaki komut yardımıyla görebilirsiniz. 

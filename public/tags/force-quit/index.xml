@@ -25,8 +25,8 @@
         
         
         &lt;p&gt;If a program freezes, crashes, or stops responding on your macOS operating system, you can follow the steps below.&lt;/p&gt;
-&lt;h2&gt;Force stop with key combination&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;force-stop-with-key-combinationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#force-stop-with-key-combinationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Force stop with key combination&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;force-stop-with-key-combination&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#force-stop-with-key-combination&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Press Option(Alt) + Command+ESC (Escape) on your keyboard or select &amp;ldquo;force quit&amp;rdquo; from the  menu in the upper left corner.&lt;/p&gt;
 &lt;!-- wp:image {&#34;id&#34;:794,&#34;sizeSlug&#34;:&#34;full&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
 &lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/02/op-cmd-esc.png&#34; alt=&#34;Option+Command+Esc&#34; class=&#34;wp-image-794&#34; /&gt;&lt;/figure&gt;
@@ -49,18 +49,18 @@
       <description>
         
         
-         &lt;p&gt;MacOS işletim sisteminizde bir program donar, kilitlenir ve tepki vermeyi durdurursa aşağıdaki adımları izleyebilirsiniz.&lt;/p&gt;
-&lt;h2&gt;Tuş kombinasyonu ile durmaya zorlama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tuş-kombinasyonu-ile-durmaya-zorlamah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tu%c5%9f-kombinasyonu-ile-durmaya-zorlamah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Klavyenizden Option(Alt) + Command+ESC (Escape) tuşlarına basın ya da sol üst köşede bulunan  menüsünden &#34;durmaya zorla&#34; yı seçin.&lt;/p&gt;
+         &lt;p&gt;MacOS işletim sisteminizde bir program donar, kilitlenir ve tepki vermeyi durdurursa aşağıdaki adımları izleyebilirsiniz.
+&lt;h2&gt;Tuş kombinasyonu ile durmaya zorlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tuş-kombinasyonu-ile-durmaya-zorlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tu%c5%9f-kombinasyonu-ile-durmaya-zorlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Klavyenizden Option(Alt) + Command+ESC (Escape) tuşlarına basın ya da sol üst köşede bulunan  menüsünden &#34;durmaya zorla&#34; yı seçin.
 &lt;!-- wp:image {&#34;id&#34;:794,&#34;sizeSlug&#34;:&#34;full&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
 &lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/02/op-cmd-esc.png&#34; alt=&#34;Option+Command+Esc&#34; class=&#34;wp-image-794&#34; /&gt;&lt;/figure&gt;
 &lt;!-- /wp:image --&gt;
- &lt;p&gt;Çalışan uygulamaları listeleyen bir pencere açılacaktır. Bu listeden durmaya zorlamak istediğiniz programı seçerek onaylamalısınız.&lt;/p&gt;
+ &lt;p&gt;Çalışan uygulamaları listeleyen bir pencere açılacaktır. Bu listeden durmaya zorlamak istediğiniz programı seçerek onaylamalısınız.
 &lt;!-- wp:image {&#34;lightbox&#34;:{&#34;enabled&#34;:true},&#34;id&#34;:795,&#34;width&#34;:&#34;320px&#34;,&#34;sizeSlug&#34;:&#34;full&#34;,&#34;linkDestination&#34;:&#34;none&#34;} --&gt;
 &lt;figure class=&#34;wp-block-image size-full is-resized&#34;&gt;&lt;img src=&#34;https://www.siberoloji.com/assets/images/2024/02/Screen-Shot-2024-02-04-at-18.19.22.png&#34; alt=&#34;&#34; class=&#34;wp-image-795&#34; style=&#34;width:320px&#34; /&gt;&lt;/figure&gt;
 &lt;!-- /wp:image --&gt;
- &lt;p&gt;Bu yöntem ile programı durmaya zorladığınızda başarısız olursanız, bilgisayarınızı yeniden başlatmanız gerekebilir.  menüsünden &#34;Yeniden Başlat&#34; seçerek bilgisayarınızı yeniden başlatın.&lt;/p&gt;
+ &lt;p&gt;Bu yöntem ile programı durmaya zorladığınızda başarısız olursanız, bilgisayarınızı yeniden başlatmanız gerekebilir.  menüsünden &#34;Yeniden Başlat&#34; seçerek bilgisayarınızı yeniden başlatın.
 
       </description>
     </item>

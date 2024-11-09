@@ -33,85 +33,85 @@ url: /technology-news-roundup-highlights-from-the-last-week/
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Amazon’s New Humanoid Robot Trials</strong></h3>
+
+ ### 1. ***Amazon’s New Humanoid Robot Trials*** 
 <!-- /wp:heading -->
 
-  Amazon made waves with the announcement that it is testing humanoid robots in its warehouses. Named <strong>Digit</strong>, this robot is designed to work alongside human employees, with the ability to pick, carry, and handle objects. This move marks a significant step forward in automation as the e-commerce giant looks to optimize operations while creating "highly collaborative" human-robot environments. Currently, Amazon employs over 750,000 robots globally, and Digit is being positioned to handle repetitive tasks, freeing up human workers for more complex jobs. 
+  Amazon made waves with the announcement that it is testing humanoid robots in its warehouses. Named ***Digit*** , this robot is designed to work alongside human employees, with the ability to pick, carry, and handle objects. This move marks a significant step forward in automation as the e-commerce giant looks to optimize operations while creating "highly collaborative" human-robot environments. Currently, Amazon employs over 750,000 robots globally, and Digit is being positioned to handle repetitive tasks, freeing up human workers for more complex jobs. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Nobel Prize in Chemistry for Quantum Dots</strong></h3>
+
+ ### 2. ***Nobel Prize in Chemistry for Quantum Dots*** 
 <!-- /wp:heading -->
 
-  The <strong>2023 Nobel Prize in Chemistry</strong> was awarded to three scientists for their pioneering work on <strong>quantum dots</strong>, nanoparticles with unique properties due to their size. These quantum dots have found applications in a variety of fields, from display technology in televisions to medical imaging, offering advances in nanotechnology and medicine. The recognition of this work reflects how deeply integrated nanotechnology has become in consumer products and health sciences. 
+  The ***2023 Nobel Prize in Chemistry***  was awarded to three scientists for their pioneering work on ***quantum dots*** , nanoparticles with unique properties due to their size. These quantum dots have found applications in a variety of fields, from display technology in televisions to medical imaging, offering advances in nanotechnology and medicine. The recognition of this work reflects how deeply integrated nanotechnology has become in consumer products and health sciences. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>AI in U.S. Policy: Congressional Hearings and Corporate Action</strong></h3>
+
+ ### 3. ***AI in U.S. Policy: Congressional Hearings and Corporate Action*** 
 <!-- /wp:heading -->
 
-  AI governance continues to dominate U.S. policy discussions. This week, the U.S. Senate hosted its second <strong>AI Insight Forum</strong> led by Senate Majority Leader Chuck Schumer, focusing on AI’s role in innovation. Additionally, hearings were held to explore the future impact of AI on the workforce, with stakeholders advocating for clearer regulations on AI to prevent its misuse. In response to growing concerns over AI-related risks, major corporations like Google, OpenAI, and Microsoft committed to a <strong>$10 million AI Safety Fund</strong> to promote safe AI research. 
+  AI governance continues to dominate U.S. policy discussions. This week, the U.S. Senate hosted its second ***AI Insight Forum***  led by Senate Majority Leader Chuck Schumer, focusing on AI’s role in innovation. Additionally, hearings were held to explore the future impact of AI on the workforce, with stakeholders advocating for clearer regulations on AI to prevent its misuse. In response to growing concerns over AI-related risks, major corporations like Google, OpenAI, and Microsoft committed to a ***$10 million AI Safety Fund***  to promote safe AI research. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. <strong>Cruise Pauses Driverless Car Operations</strong></h3>
+
+ ### 4. ***Cruise Pauses Driverless Car Operations*** 
 <!-- /wp:heading -->
 
-  <strong>Cruise</strong>, the autonomous vehicle subsidiary of General Motors, announced a temporary halt to its <strong>driverless car</strong> operations following a serious accident. The incident occurred in San Francisco, raising concerns about the safety of autonomous vehicles in urban environments. Regulatory authorities are now examining the circumstances of the crash, and the future of fully autonomous cars remains a hot topic in both technology and public safety debates. 
+  ***Cruise*** , the autonomous vehicle subsidiary of General Motors, announced a temporary halt to its ***driverless car***  operations following a serious accident. The incident occurred in San Francisco, raising concerns about the safety of autonomous vehicles in urban environments. Regulatory authorities are now examining the circumstances of the crash, and the future of fully autonomous cars remains a hot topic in both technology and public safety debates. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. <strong>OSIRIS-REx Asteroid Sample Analyzed</strong></h3>
+
+ ### 5. ***OSIRIS-REx Asteroid Sample Analyzed*** 
 <!-- /wp:heading -->
 
-  NASA scientists have started analyzing material brought back to Earth from the <strong>OSIRIS-REx mission</strong>, which collected samples from the asteroid Bennu. Early studies of the sample reveal significant carbon and water content, supporting theories that asteroids may have played a role in delivering essential materials necessary for life on Earth. This exciting development offers a new avenue for research into the origins of life and the early solar system. 
+  NASA scientists have started analyzing material brought back to Earth from the ***OSIRIS-REx mission*** , which collected samples from the asteroid Bennu. Early studies of the sample reveal significant carbon and water content, supporting theories that asteroids may have played a role in delivering essential materials necessary for life on Earth. This exciting development offers a new avenue for research into the origins of life and the early solar system. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 6. <strong>Social Media Lawsuits: Meta Faces More Legal Action</strong></h3>
+
+ ### 6. ***Social Media Lawsuits: Meta Faces More Legal Action*** 
 <!-- /wp:heading -->
 
-  Meta (formerly Facebook) is facing multiple lawsuits across different U.S. states, with allegations that its platforms have negatively impacted youth mental health. The lawsuits, led by California Attorney General Rob Bonta, reflect mounting concerns over the influence of social media on minors and push for tighter regulations. These lawsuits echo previous actions taken against platforms like <strong>TikTok</strong> and <strong>YouTube</strong>, underscoring the increasing scrutiny tech giants are facing regarding content moderation and user well-bein. 
+  Meta (formerly Facebook) is facing multiple lawsuits across different U.S. states, with allegations that its platforms have negatively impacted youth mental health. The lawsuits, led by California Attorney General Rob Bonta, reflect mounting concerns over the influence of social media on minors and push for tighter regulations. These lawsuits echo previous actions taken against platforms like ***TikTok***  and ***YouTube*** , underscoring the increasing scrutiny tech giants are facing regarding content moderation and user well-bein. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. <strong>G7 Nations Introduce AI Code of Conduct</strong></h3>
+
+ ### 7. ***G7 Nations Introduce AI Code of Conduct*** 
 <!-- /wp:heading -->
 
-  At the international level, the <strong>G7</strong> nations released a new <strong>AI Code of Conduct</strong>, which sets guidelines for companies developing artificial intelligence technologies. The framework encourages transparency in reporting AI systems' capabilities and pushes for stronger collaboration between governments and the private sector. With AI increasingly being woven into everything from healthcare to defense, the G7’s proactive stance is part of broader efforts to regulate AI at both national and global levels. 
+  At the international level, the ***G7***  nations released a new ***AI Code of Conduct*** , which sets guidelines for companies developing artificial intelligence technologies. The framework encourages transparency in reporting AI systems' capabilities and pushes for stronger collaboration between governments and the private sector. With AI increasingly being woven into everything from healthcare to defense, the G7’s proactive stance is part of broader efforts to regulate AI at both national and global levels. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Conclusion</h3>
+
+ ### Conclusion
 <!-- /wp:heading -->
 
   From advances in robotics and AI to new scientific discoveries and evolving legal frameworks, the tech industry continues to transform at a rapid pace. These stories from the past week underscore the diverse ways technology impacts our daily lives and the significant role it plays in shaping the future. Staying informed about these developments is crucial for understanding both the opportunities and challenges ahead. 
@@ -130,24 +130,24 @@ url: /technology-news-roundup-highlights-from-the-last-week/
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Sources:</h3>
+
+ ### Sources:
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Infoplease</strong>: <a href="20">October Science &amp; Technology News</a></li>
+- ***Infoplease*** : <a href="20">October Science &amp; Technology News</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>TechPolicy Press</strong>: <a href="21">October U.S. Tech Policy Roundup</a></li>
+- ***TechPolicy Press*** : <a href="21">October U.S. Tech Policy Roundup</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>BBC</strong>: Weekly technology stories and updates</li>
+- ***BBC*** : Weekly technology stories and updates 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>TechCrunch</strong>: Ongoing coverage of startup and tech business news</li>
-<!-- /wp:list-item --></ul>
+- ***TechCrunch*** : Ongoing coverage of startup and tech business news 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->

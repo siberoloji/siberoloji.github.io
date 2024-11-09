@@ -29,13 +29,13 @@ url: /create-variables-and-assign-values-to-them-in-c/
  
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Declare a variable by specifying its type followed by the variable name. For example, <code>int myVariable;</code> declares a variable named <code>myVariable</code> of type <code>int</code>.</li>
+ <!-- wp:list-item -->
+- Declare a variable by specifying its type followed by the variable name. For example, <code>int myVariable;</code> declares a variable named <code>myVariable</code> of type <code>int</code>. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Assign a value to the variable using the assignment operator <code>=</code>. For example, <code>myVariable = 5;</code> assigns the value <code>5</code> to <code>myVariable</code>.</li>
-<!-- /wp:list-item --></ol>
+- Assign a value to the variable using the assignment operator <code>=</code>. For example, <code>myVariable = 5;</code> assigns the value <code>5</code> to <code>myVariable</code>. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Here is an example of creating different types of variables and assigning values to them: 
@@ -71,7 +71,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided code is a simple C++ program that demonstrates the declaration and initialization of variables of different types. 

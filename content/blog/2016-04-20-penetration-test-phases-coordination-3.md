@@ -24,7 +24,7 @@ title: Penetration Test Phases (Coordination -3)
 url: /penetration-test-phases-coordination-3/
 ---
 
-  Our articles explaining Penetration Testing processes continue. In this study, we will explain&nbsp;<strong>the targets</strong>&nbsp;to be discussed in the Coordination article, which is the 1st Phase of the Penetration Testing Phases&nbsp;&nbsp;&nbsp;. 
+  Our articles explaining Penetration Testing processes continue. In this study, we will explain&nbsp;***the targets*** &nbsp;to be discussed in the Coordination article, which is the 1st Phase of the Penetration Testing Phases&nbsp;&nbsp;&nbsp;. 
  
 
   As you know, the first part of the Coordination activity is the PURPOSE (&nbsp;<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" target="_blank" rel="noreferrer noopener">see</a>&nbsp;). The primary, secondary and final goals to be achieved direct the tests to be carried out. Tests carried out in line with all these goals contribute to the general goals and policies of the service receiving company. Therefore, targets determined with the right approach always bring great benefits to the company receiving the service. 

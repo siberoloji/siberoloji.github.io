@@ -24,7 +24,7 @@
   <meta itemprop="description" content="AlmaLinux, as a robust and enterprise-grade Linux distribution, provides powerful user management capabilities. Whether you’re setting up a new server, managing a multi-user workstation, or simply need to modify existing user accounts, understanding how to add, modify, and remove user accounts is crucial. In this comprehensive guide, we’ll walk you through the process of managing user accounts on AlmaLinux, covering everything from creating new users to removing old ones, with a focus on changing user privileges.">
   <meta itemprop="datePublished" content="2024-10-04T12:54:43+00:00">
   <meta itemprop="dateModified" content="2024-10-04T12:54:43+00:00">
-  <meta itemprop="wordCount" content="935">
+  <meta itemprop="wordCount" content="972">
   <meta itemprop="keywords" content="Alma Linux,How-to Guides,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux: How to Add, Change Privileges, and Remove User Accounts">
@@ -5855,51 +5855,51 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#understanding-user-accounts-in-almalinuxh2"
+                href="#understanding-user-accounts-in-almalinux"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Understanding User Accounts in AlmaLinux&lt;/h2&gt;</a>
+              >Understanding User Accounts in AlmaLinux</a>
             </li>
           <li>
               <a
-                href="#adding-a-new-user-accounth2"
+                href="#adding-a-new-user-account"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Adding a New User Account&lt;/h2&gt;</a>
+              >Adding a New User Account</a>
             </li>
           <li>
               <a
-                href="#changing-user-privilegesh2"
+                href="#changing-user-privileges"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Changing User Privileges&lt;/h2&gt;</a>
+              >Changing User Privileges</a>
             </li>
           <li>
               <a
-                href="#removing-a-user-accounth2"
+                href="#removing-a-user-account"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Removing a User Account&lt;/h2&gt;</a>
+              >Removing a User Account</a>
             </li>
           <li>
               <a
-                href="#best-practices-for-user-managementh2"
+                href="#best-practices-for-user-management"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Best Practices for User Management&lt;/h2&gt;</a>
+              >Best Practices for User Management</a>
             </li>
           <li>
               <a
-                href="#advanced-user-management-techniquesh2"
+                href="#advanced-user-management-techniques"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Advanced User Management Techniques&lt;/h2&gt;</a>
+              >Advanced User Management Techniques</a>
             </li>
           <li>
               <a
-                href="#troubleshooting-common-issuesh2"
+                href="#troubleshooting-common-issues"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Troubleshooting Common Issues&lt;/h2&gt;</a>
+              >Troubleshooting Common Issues</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9694,75 +9694,75 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-user-accounts-in-almalinuxh2">Understanding User Accounts in AlmaLinux
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-user-accounts-in-almalinux">Understanding User Accounts in AlmaLinux
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#adding-a-new-user-accounth2">Adding a New User Account
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#adding-a-new-user-account">Adding a New User Account
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeuseraddcodeh3">Using useradd
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeuseraddcode">Using useradd
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeaddusercodeh3">Using adduser
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeaddusercode">Using adduser
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#changing-user-privilegesh2">Changing User Privileges
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#changing-user-privileges">Changing User Privileges
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeusermodcodeh3">Using usermod
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeusermodcode">Using usermod
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codevisudocode-to-grant-sudo-privilegesh3">Using visudo to Grant Sudo Privileges
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codevisudocode-to-grant-sudo-privileges">Using visudo to Grant Sudo Privileges
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#managing-group-membershipsh3">Managing Group Memberships
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#managing-group-memberships">Managing Group Memberships
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#removing-a-user-accounth2">Removing a User Account
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#removing-a-user-account">Removing a User Account
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeuserdelcodeh3">Using userdel
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codeuserdelcode">Using userdel
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codedelusercodeh3">Using deluser
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-codedelusercode">Using deluser
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices-for-user-managementh2">Best Practices for User Management
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices-for-user-management">Best Practices for User Management
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-user-management-techniquesh2">Advanced User Management Techniques
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-user-management-techniques">Advanced User Management Techniques
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-access-control-lists-aclsh3">Using Access Control Lists (ACLs)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-access-control-lists-acls">Using Access Control Lists (ACLs)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-disk-quotash3">Implementing Disk Quotas
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-disk-quotas">Implementing Disk Quotas
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-pam-pluggable-authentication-modulesh3">Using PAM (Pluggable Authentication Modules)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#using-pam-pluggable-authentication-modules">Using PAM (Pluggable Authentication Modules)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issuesh2">Troubleshooting Common Issues
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issues">Troubleshooting Common Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9795,276 +9795,304 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>AlmaLinux, as a robust and enterprise-grade Linux distribution, provides powerful user management capabilities. Whether you&rsquo;re setting up a new server, managing a multi-user workstation, or simply need to modify existing user accounts, understanding how to add, modify, and remove user accounts is crucial. In this comprehensive guide, we&rsquo;ll walk you through the process of managing user accounts on AlmaLinux, covering everything from creating new users to removing old ones, with a focus on changing user privileges.</p></p>
-<h2>Understanding User Accounts in AlmaLinux</h2><span class="hx-absolute -hx-mt-20" id="understanding-user-accounts-in-almalinuxh2"></span>
-    <a href="#understanding-user-accounts-in-almalinuxh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Before we dive into the specifics, it&rsquo;s important to understand a few key concepts:</p></p>
+          <p>AlmaLinux, as a robust and enterprise-grade Linux distribution, provides powerful user management capabilities. Whether you&rsquo;re setting up a new server, managing a multi-user workstation, or simply need to modify existing user accounts, understanding how to add, modify, and remove user accounts is crucial. In this comprehensive guide, we&rsquo;ll walk you through the process of managing user accounts on AlmaLinux, covering everything from creating new users to removing old ones, with a focus on changing user privileges.</p>
+<h2>Understanding User Accounts in AlmaLinux<span class="hx-absolute -hx-mt-20" id="understanding-user-accounts-in-almalinux"></span>
+    <a href="#understanding-user-accounts-in-almalinux" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Before we dive into the specifics, it&rsquo;s important to understand a few key concepts:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Root User</strong>: The superuser account with full system privileges.</li>
+- ***Root User*** : The superuser account with full system privileges. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Regular Users</strong>: Standard accounts with limited permissions.</li>
+<ul>
+<li><em><strong>Regular Users</strong></em> : Standard accounts with limited permissions.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Groups</strong>: Collections of users that can be assigned specific permissions.</li>
+<ul>
+<li><em><strong>Groups</strong></em> : Collections of users that can be assigned specific permissions.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Home Directories</strong>: Each user typically has their own directory in <code>/home/</code>.</li>
+<ul>
+<li><em><strong>Home Directories</strong></em> : Each user typically has their own directory in <code>/home/</code>.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Shell</strong>: The command-line interface assigned to a user (e.g., bash, zsh).</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Shell</strong></em> : The command-line interface assigned to a user (e.g., bash, zsh).</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Now, let&rsquo;s explore how to manage these accounts effectively.</p></p>
-<h2>Adding a New User Account</h2><span class="hx-absolute -hx-mt-20" id="adding-a-new-user-accounth2"></span>
-    <a href="#adding-a-new-user-accounth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Creating a new user account in AlmaLinux is a straightforward process. You can do this using either the <code>useradd</code> command or the more user-friendly <code>adduser</code> command.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>useradd</code></h3><span class="hx-absolute -hx-mt-20" id="using-codeuseraddcodeh3"></span>
-    <a href="#using-codeuseraddcodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The basic syntax for <code>useradd</code> is:</p></p>
+<p>Now, let&rsquo;s explore how to manage these accounts effectively.</p>
+<h2>Adding a New User Account<span class="hx-absolute -hx-mt-20" id="adding-a-new-user-account"></span>
+    <a href="#adding-a-new-user-account" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Creating a new user account in AlmaLinux is a straightforward process. You can do this using either the <code>useradd</code> command or the more user-friendly <code>adduser</code> command.</p>
+<h3>Using <code>useradd</code><span class="hx-absolute -hx-mt-20" id="using-codeuseraddcode"></span>
+    <a href="#using-codeuseraddcode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The basic syntax for <code>useradd</code> is:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo useradd [options] username</code></pre>
 <!-- /wp:code -->
-<p>Here&rsquo;s an example of creating a new user named &ldquo;johndoe&rdquo;:</p></p>
+<p>Here&rsquo;s an example of creating a new user named &ldquo;johndoe&rdquo;:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo useradd -m -s /bin/bash johndoe</code></pre>
 <!-- /wp:code -->
-<p>In this command:</p></p>
+<p>In this command:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><code>-m</code> creates a home directory for the user</li>
+- <code>-m</code> creates a home directory for the user 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>-s /bin/bash</code> sets bash as the default shell</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>After creating the user, set a password:</p></p>
+<p>After creating the user, set a password:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo passwd johndoe</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>adduser</code></h3><span class="hx-absolute -hx-mt-20" id="using-codeaddusercodeh3"></span>
-    <a href="#using-codeaddusercodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The <code>adduser</code> command is more interactive and user-friendly:</p></p>
+<h3>Using <code>adduser</code><span class="hx-absolute -hx-mt-20" id="using-codeaddusercode"></span>
+    <a href="#using-codeaddusercode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The <code>adduser</code> command is more interactive and user-friendly:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo adduser johndoe</code></pre>
 <!-- /wp:code -->
-<p>This command will prompt you for various details like password, full name, and other optional information.</p></p>
-<h2>Changing User Privileges</h2><span class="hx-absolute -hx-mt-20" id="changing-user-privilegesh2"></span>
-    <a href="#changing-user-privilegesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Modifying user privileges is a common task in system administration. There are several ways to adjust a user&rsquo;s permissions in AlmaLinux.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>usermod</code></h3><span class="hx-absolute -hx-mt-20" id="using-codeusermodcodeh3"></span>
-    <a href="#using-codeusermodcodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The <code>usermod</code> command is versatile for modifying user accounts. Here are some common use cases:</p></p>
+<p>This command will prompt you for various details like password, full name, and other optional information.</p>
+<h2>Changing User Privileges<span class="hx-absolute -hx-mt-20" id="changing-user-privileges"></span>
+    <a href="#changing-user-privileges" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Modifying user privileges is a common task in system administration. There are several ways to adjust a user&rsquo;s permissions in AlmaLinux.</p>
+<h3>Using <code>usermod</code><span class="hx-absolute -hx-mt-20" id="using-codeusermodcode"></span>
+    <a href="#using-codeusermodcode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The <code>usermod</code> command is versatile for modifying user accounts. Here are some common use cases:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Adding a user to a group</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Adding a user to a group*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo usermod -aG groupname username</code></pre>
 <!-- /wp:code -->
-<p>For example, to add &ldquo;johndoe&rdquo; to the &ldquo;wheel&rdquo; group (which typically grants sudo privileges):</p></p>
+<p>For example, to add &ldquo;johndoe&rdquo; to the &ldquo;wheel&rdquo; group (which typically grants sudo privileges):</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo usermod -aG wheel johndoe</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Changing a user's primary group</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Changing a user's primary group*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo usermod -g newgroup username</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Changing a user's home directory</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Changing a user's home directory*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo usermod -d /new/home/directory username</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Changing a user's shell</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Changing a user's shell*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo usermod -s /bin/new-shell username</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>visudo</code> to Grant Sudo Privileges</h3><span class="hx-absolute -hx-mt-20" id="using-codevisudocode-to-grant-sudo-privilegesh3"></span>
-    <a href="#using-codevisudocode-to-grant-sudo-privilegesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To give a user sudo privileges, you can add them to the sudoers file:</p></p>
+<h3>Using <code>visudo</code> to Grant Sudo Privileges<span class="hx-absolute -hx-mt-20" id="using-codevisudocode-to-grant-sudo-privileges"></span>
+    <a href="#using-codevisudocode-to-grant-sudo-privileges" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To give a user sudo privileges, you can add them to the sudoers file:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open the sudoers file:</li>
-<!-- /wp:list-item --></ol>
+- Open the sudoers file: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   sudo visudo</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Add the following line to grant full sudo access:</li>
-<!-- /wp:list-item --></ol>
+- Add the following line to grant full sudo access: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   johndoe ALL=(ALL) ALL</code></pre>
 <!-- /wp:code -->
-<p>Or, for passwordless sudo:</p></p>
+<p>Or, for passwordless sudo:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   johndoe ALL=(ALL) NOPASSWD: ALL</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Save and exit the file.</li>
-<!-- /wp:list-item --></ol>
+- Save and exit the file. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Managing Group Memberships</h3><span class="hx-absolute -hx-mt-20" id="managing-group-membershipsh3"></span>
-    <a href="#managing-group-membershipsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>You can also manage privileges by adding or removing users from specific groups:</p></p>
+<h3>Managing Group Memberships<span class="hx-absolute -hx-mt-20" id="managing-group-memberships"></span>
+    <a href="#managing-group-memberships" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>You can also manage privileges by adding or removing users from specific groups:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>To add a user to a group:</li>
-<!-- /wp:list-item --></ul>
+- To add a user to a group: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  sudo gpasswd -a username groupname</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>To remove a user from a group:</li>
-<!-- /wp:list-item --></ul>
+- To remove a user from a group: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  sudo gpasswd -d username groupname</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>To create a new group:</li>
-<!-- /wp:list-item --></ul>
+- To create a new group: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  sudo groupadd groupname</code></pre>
 <!-- /wp:code -->
-<h2>Removing a User Account</h2><span class="hx-absolute -hx-mt-20" id="removing-a-user-accounth2"></span>
-    <a href="#removing-a-user-accounth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>When it&rsquo;s time to remove a user account, AlmaLinux provides a few options.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>userdel</code></h3><span class="hx-absolute -hx-mt-20" id="using-codeuserdelcodeh3"></span>
-    <a href="#using-codeuserdelcodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The basic command to remove a user is:</p></p>
+<h2>Removing a User Account<span class="hx-absolute -hx-mt-20" id="removing-a-user-account"></span>
+    <a href="#removing-a-user-account" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>When it&rsquo;s time to remove a user account, AlmaLinux provides a few options.</p>
+<h3>Using <code>userdel</code><span class="hx-absolute -hx-mt-20" id="using-codeuserdelcode"></span>
+    <a href="#using-codeuserdelcode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The basic command to remove a user is:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo userdel username</code></pre>
 <!-- /wp:code -->
-<p>However, this leaves the user&rsquo;s home directory and mail spool intact. To remove these as well, use:</p></p>
+<p>However, this leaves the user&rsquo;s home directory and mail spool intact. To remove these as well, use:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo userdel -r username</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Using <code>deluser</code></h3><span class="hx-absolute -hx-mt-20" id="using-codedelusercodeh3"></span>
-    <a href="#using-codedelusercodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The <code>deluser</code> command is more interactive and can handle some cleanup tasks:</p></p>
+<h3>Using <code>deluser</code><span class="hx-absolute -hx-mt-20" id="using-codedelusercode"></span>
+    <a href="#using-codedelusercode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The <code>deluser</code> command is more interactive and can handle some cleanup tasks:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo deluser --remove-home username</code></pre>
 <!-- /wp:code -->
-<p>This removes the user&rsquo;s home directory and mail spool.</p></p>
-<h2>Best Practices for User Management</h2><span class="hx-absolute -hx-mt-20" id="best-practices-for-user-managementh2"></span>
-    <a href="#best-practices-for-user-managementh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>When managing user accounts on AlmaLinux, consider these best practices:</p></p>
+<p>This removes the user&rsquo;s home directory and mail spool.</p>
+<h2>Best Practices for User Management<span class="hx-absolute -hx-mt-20" id="best-practices-for-user-management"></span>
+    <a href="#best-practices-for-user-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>When managing user accounts on AlmaLinux, consider these best practices:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Use Strong Passwords</strong>: Enforce strong password policies using tools like <code>pam_pwquality</code>.</li>
+- ***Use Strong Passwords*** : Enforce strong password policies using tools like <code>pam_pwquality</code>. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Principle of Least Privilege</strong>: Only grant users the minimum privileges necessary for their tasks.</li>
+<ul>
+<li><em><strong>Principle of Least Privilege</strong></em> : Only grant users the minimum privileges necessary for their tasks.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Regular Audits</strong>: Periodically review user accounts and their privileges.</li>
+<ul>
+<li><em><strong>Regular Audits</strong></em> : Periodically review user accounts and their privileges.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Use Groups</strong>: Organize users into groups for easier permission management.</li>
+<ul>
+<li><em><strong>Use Groups</strong></em> : Organize users into groups for easier permission management.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Secure the Root Account</strong>: Avoid using the root account directly; use sudo for administrative tasks.</li>
+<ul>
+<li><em><strong>Secure the Root Account</strong></em> : Avoid using the root account directly; use sudo for administrative tasks.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Monitor User Activities</strong>: Use tools like <code>auditd</code> to track user actions, especially for privileged accounts.</li>
+<ul>
+<li><em><strong>Monitor User Activities</strong></em> : Use tools like <code>auditd</code> to track user actions, especially for privileged accounts.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Implement SSH Key Authentication</strong>: For remote access, consider using SSH keys instead of passwords.</li>
+<ul>
+<li><em><strong>Implement SSH Key Authentication</strong></em> : For remote access, consider using SSH keys instead of passwords.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Set Up Password Aging</strong>: Use the <code>chage</code> command to manage password expiration and aging policies.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Set Up Password Aging</strong></em> : Use the <code>chage</code> command to manage password expiration and aging policies.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Advanced User Management Techniques</h2><span class="hx-absolute -hx-mt-20" id="advanced-user-management-techniquesh2"></span>
-    <a href="#advanced-user-management-techniquesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>For more advanced user management, consider these techniques:</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Using Access Control Lists (ACLs)</h3><span class="hx-absolute -hx-mt-20" id="using-access-control-lists-aclsh3"></span>
-    <a href="#using-access-control-lists-aclsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>ACLs provide more fine-grained control over file and directory permissions:</p></p>
+<h2>Advanced User Management Techniques<span class="hx-absolute -hx-mt-20" id="advanced-user-management-techniques"></span>
+    <a href="#advanced-user-management-techniques" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>For more advanced user management, consider these techniques:</p>
+<h3>Using Access Control Lists (ACLs)<span class="hx-absolute -hx-mt-20" id="using-access-control-lists-acls"></span>
+    <a href="#using-access-control-lists-acls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>ACLs provide more fine-grained control over file and directory permissions:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo setfacl -m u:username:rx /path/to/directory</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Implementing Disk Quotas</h3><span class="hx-absolute -hx-mt-20" id="implementing-disk-quotash3"></span>
-    <a href="#implementing-disk-quotash3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To limit the amount of disk space a user can use:</p></p>
+<h3>Implementing Disk Quotas<span class="hx-absolute -hx-mt-20" id="implementing-disk-quotas"></span>
+    <a href="#implementing-disk-quotas" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To limit the amount of disk space a user can use:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Enable quotas in <code>/etc/fstab</code></li>
+- Enable quotas in <code>/etc/fstab</code> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Use <code>quotacheck</code> to initialize the quota database</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Set quotas with <code>edquota</code></li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Using PAM (Pluggable Authentication Modules)</h3><span class="hx-absolute -hx-mt-20" id="using-pam-pluggable-authentication-modulesh3"></span>
-    <a href="#using-pam-pluggable-authentication-modulesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>PAM allows you to set up sophisticated authentication policies. You can configure PAM modules in <code>/etc/pam.d/</code> to implement features like:</p></p>
+<h3>Using PAM (Pluggable Authentication Modules)<span class="hx-absolute -hx-mt-20" id="using-pam-pluggable-authentication-modules"></span>
+    <a href="#using-pam-pluggable-authentication-modules" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>PAM allows you to set up sophisticated authentication policies. You can configure PAM modules in <code>/etc/pam.d/</code> to implement features like:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Password strength requirements</li>
+- Password strength requirements 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Login attempt limits</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Two-factor authentication</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Troubleshooting Common Issues</h2><span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issuesh2"></span>
-    <a href="#troubleshooting-common-issuesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Here are some common issues you might encounter when managing user accounts and how to resolve them:</p></p>
+<h2>Troubleshooting Common Issues<span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issues"></span>
+    <a href="#troubleshooting-common-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Here are some common issues you might encounter when managing user accounts and how to resolve them:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>User can't log in</strong>: Check the user's password, shell, and home directory permissions.</li>
+- ***User can't log in*** : Check the user's password, shell, and home directory permissions. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Sudo access not working</strong>: Verify the user's entry in the sudoers file and group memberships.</li>
+<ul>
+<li><em><strong>Sudo access not working</strong></em> : Verify the user&rsquo;s entry in the sudoers file and group memberships.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Home directory issues</strong>: Ensure proper ownership and permissions on the user's home directory.</li>
+<ul>
+<li><em><strong>Home directory issues</strong></em> : Ensure proper ownership and permissions on the user&rsquo;s home directory.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Group permission problems</strong>: Double-check group memberships and file/directory group permissions.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Group permission problems</strong></em> : Double-check group memberships and file/directory group permissions.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Effective user management is crucial for maintaining a secure and efficient AlmaLinux system. By mastering the techniques to add users, modify their privileges, and remove accounts when necessary, you&rsquo;ll be well-equipped to manage your AlmaLinux system with confidence.</p></p>
-<p>Remember, with great power comes great responsibility. Always be cautious when modifying user accounts, especially when dealing with system users or granting elevated privileges. Regular audits and following best practices will help ensure your AlmaLinux system remains secure and well-organized.</p></p>
-<p>Whether you&rsquo;re managing a small personal server or a large enterprise environment, these user management skills will serve you well in your journey with AlmaLinux. Happy administrating!</p></p>
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Effective user management is crucial for maintaining a secure and efficient AlmaLinux system. By mastering the techniques to add users, modify their privileges, and remove accounts when necessary, you&rsquo;ll be well-equipped to manage your AlmaLinux system with confidence.</p>
+<p>Remember, with great power comes great responsibility. Always be cautious when modifying user accounts, especially when dealing with system users or granting elevated privileges. Regular audits and following best practices will help ensure your AlmaLinux system remains secure and well-organized.</p>
+<p>Whether you&rsquo;re managing a small personal server or a large enterprise environment, these user management skills will serve you well in your journey with AlmaLinux. Happy administrating!</p>
 
         </div>
         

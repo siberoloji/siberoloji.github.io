@@ -11,11 +11,12 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Linux komutu arka planda başlatma &amp;amp; parametresi – Siberoloji</title>
-  <meta name="description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
+  <meta name="description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var.
+Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
 linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ Yukarıda gördüğünüz gibi sudo apt update &amp; komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını [1] olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini jobs komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan Ctrl&#43;z tuşları yardımıyla gönderebiliriz." /><link rel="canonical" href="http://localhost:1313/tr/linux-komutu-arka-planda-baslatma-parametresi/" itemprop="url" />
 
 <meta property="og:title" content="Linux komutu arka planda başlatma &amp;amp; parametresi" />
-<meta property="og:description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. 
+<meta property="og:description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var.
 Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
 
 linux@rpi4:~ $ sudo apt update &amp;
@@ -43,7 +44,8 @@ Yukarıda gördüğünüz gibi sudo apt update &amp; komutu ile güncelleme işl
 <meta property="article:modified_time" content="2024-01-16T14:20:11+00:00" />
 
   <meta itemprop="name" content="Linux komutu arka planda başlatma &amp; parametresi">
-  <meta itemprop="description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
+  <meta itemprop="description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var.
+Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
 linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ Yukarıda gördüğünüz gibi sudo apt update &amp; komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını [1] olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini jobs komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan Ctrl&#43;z tuşları yardımıyla gönderebiliriz.">
   <meta itemprop="datePublished" content="2024-01-16T14:20:11+00:00">
   <meta itemprop="dateModified" content="2024-01-16T14:20:11+00:00">
@@ -51,7 +53,8 @@ linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopp
   <meta itemprop="keywords" content="Linux,Linux Nasıl,Temel Linux">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Linux komutu arka planda başlatma &amp; parametresi">
-  <meta name="twitter:description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
+  <meta name="twitter:description" content="Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var.
+Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
 linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ Yukarıda gördüğünüz gibi sudo apt update &amp; komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını [1] olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini jobs komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan Ctrl&#43;z tuşları yardımıyla gönderebiliriz.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
@@ -9697,8 +9700,8 @@ linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopp
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. </p></p>
-<p>Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.</p></p>
+          <p>Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var.</p>
+<p>Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">linux@rpi4:~ $ sudo apt update &amp;
 [1] 7336
@@ -9718,8 +9721,8 @@ All packages are up to date.
 linux@rpi4:~ $ 
 </code></pre>
 <!-- /wp:code -->
-<p>Yukarıda gördüğünüz gibi <code>sudo apt update &amp;</code> komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını <code>[1]</code> olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini <code>jobs</code> komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan <kbd>Ctrl+z</kbd> tuşları yardımıyla gönderebiliriz.</p></p>
-<p>Burada vurgulanması gereken en önemli kolaylık, komutu &amp; işaretiyle verir vermez komut satırının bizim kullanımımıza geri gelmesidir.</p></p>
+<p>Yukarıda gördüğünüz gibi <code>sudo apt update &amp;</code> komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını <code>[1]</code> olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini <code>jobs</code> komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan <kbd>Ctrl+z</kbd> tuşları yardımıyla gönderebiliriz.</p>
+<p>Burada vurgulanması gereken en önemli kolaylık, komutu &amp; işaretiyle verir vermez komut satırının bizim kullanımımıza geri gelmesidir.</p>
 
         </div>
         

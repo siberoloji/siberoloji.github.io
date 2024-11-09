@@ -22,14 +22,14 @@ url: /installing-freeswitch-on-ubuntu-server-a-step-by-step-guide/
 ---
 
  
- ## Introduction</h2>
+ ## Introduction
 <!-- /wp:heading -->
 
-  <strong>FreeSWITCH</strong> is a powerful open-source communications platform widely used for VoIP, video, and chat applications. It’s designed to facilitate large-scale telecommunication systems, supporting a broad range of protocols and codecs, making it highly versatile and efficient. Setting up <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> on an Ubuntu server offers a reliable and cost-effective way to manage and scale communications. This step-by-step guide will walk you through the process of installing FreeSWITCH on Ubuntu. Whether you’re a beginner or a seasoned system administrator, this guide will help you get FreeSWITCH up and running in no time. 
+  ***FreeSWITCH***  is a powerful open-source communications platform widely used for VoIP, video, and chat applications. It’s designed to facilitate large-scale telecommunication systems, supporting a broad range of protocols and codecs, making it highly versatile and efficient. Setting up <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> on an Ubuntu server offers a reliable and cost-effective way to manage and scale communications. This step-by-step guide will walk you through the process of installing FreeSWITCH on Ubuntu. Whether you’re a beginner or a seasoned system administrator, this guide will help you get FreeSWITCH up and running in no time. 
  
 
  
- ## System Requirements</h2>
+ ## System Requirements
 <!-- /wp:heading -->
 
   Before starting the installation, make sure you have the following: 
@@ -37,20 +37,20 @@ url: /installing-freeswitch-on-ubuntu-server-a-step-by-step-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Ubuntu Server</strong>: This guide is compatible with Ubuntu 18.04, 20.04, and later versions.</li>
+- ***Ubuntu Server*** : This guide is compatible with Ubuntu 18.04, 20.04, and later versions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>2 GB RAM or higher</strong>: A minimum of 2 GB of RAM is recommended.</li>
+- ***2 GB RAM or higher*** : A minimum of 2 GB of RAM is recommended. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Processor</strong>: A modern multi-core processor is preferred.</li>
+- ***Processor*** : A modern multi-core processor is preferred. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Root or Sudo Access</strong>: Ensure you have administrative privileges.</li>
-<!-- /wp:list-item --></ul>
+- ***Root or Sudo Access*** : Ensure you have administrative privileges. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -58,7 +58,7 @@ url: /installing-freeswitch-on-ubuntu-server-a-step-by-step-guide/
 <!-- /wp:separator -->
 
  
- ## Updating the Ubuntu Server</h2>
+ ## Updating the Ubuntu Server
 <!-- /wp:heading -->
 
   To begin, it’s important to update your Ubuntu system to ensure all packages are up to date: 
@@ -76,7 +76,7 @@ url: /installing-freeswitch-on-ubuntu-server-a-step-by-step-guide/
 <!-- /wp:separator -->
 
  
- ## Installing Dependencies</h2>
+ ## Installing Dependencies
 <!-- /wp:heading -->
 
   FreeSWITCH requires a set of dependencies for a successful installation. Begin by installing these necessary packages: 
@@ -98,7 +98,7 @@ libspeexdsp-dev libspeex-dev libogg-dev libvorbis-dev libtiff-dev libtiff5-dev l
 <!-- /wp:separator -->
 
  
- ## Cloning the FreeSWITCH Source Code</h2>
+ ## Cloning the FreeSWITCH Source Code
 <!-- /wp:heading -->
 
   Next, clone the FreeSWITCH repository from GitHub. This will allow you to build FreeSWITCH from the latest source: 
@@ -113,8 +113,8 @@ cd freeswitch</code></pre>
   The <code>cd</code> command changes the directory to where FreeSWITCH will be downloaded, and then the <code>git clone</code> command retrieves the FreeSWITCH source code. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Checking Out the Latest Stable Version</h3>
+
+ ### Checking Out the Latest Stable Version
 <!-- /wp:heading -->
 
   FreeSWITCH has both master and stable branches. To ensure a stable installation, switch to the latest stable version: 
@@ -124,7 +124,7 @@ cd freeswitch</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo git checkout v1.10</code></pre>
 <!-- /wp:code -->
 
-  This command switches to the latest stable release, which is currently <strong>v1.10</strong>. 
+  This command switches to the latest stable release, which is currently ***v1.10*** . 
  
 
 <!-- wp:separator -->
@@ -132,7 +132,7 @@ cd freeswitch</code></pre>
 <!-- /wp:separator -->
 
  
- ## Building and Compiling FreeSWITCH</h2>
+ ## Building and Compiling FreeSWITCH
 <!-- /wp:heading -->
 
   With the source code downloaded, it’s time to build and compile FreeSWITCH. First, install FreeSWITCH’s core dependencies: 
@@ -146,8 +146,8 @@ sudo ./configure -C</code></pre>
   The <code>bootstrap.sh</code> script prepares the FreeSWITCH environment for compilation, while <code>configure -C</code> optimizes the build process. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Compiling the Source Code</h3>
+
+ ### Compiling the Source Code
 <!-- /wp:heading -->
 
   Now, compile the source code using the <code>make</code> command: 
@@ -166,7 +166,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Installing FreeSWITCH Modules</h2>
+ ## Installing FreeSWITCH Modules
 <!-- /wp:heading -->
 
   FreeSWITCH’s functionality is enhanced by its modular structure, allowing you to install only the features you need. Use the following command to install all essential modules: 
@@ -178,12 +178,12 @@ sudo make install</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>cd-sounds-install</strong>: Installs sound files for ringtones and other audio.</li>
+- ***cd-sounds-install*** : Installs sound files for ringtones and other audio. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>cd-moh-install</strong>: Installs Music on Hold files.</li>
-<!-- /wp:list-item --></ul>
+- ***cd-moh-install*** : Installs Music on Hold files. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   These modules are essential for a fully operational FreeSWITCH instance. 
@@ -194,7 +194,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Configuring FreeSWITCH</h2>
+ ## Configuring FreeSWITCH
 <!-- /wp:heading -->
 
   FreeSWITCH comes with a default configuration suitable for most basic setups. However, you may need to customize it based on your requirements. 
@@ -202,8 +202,8 @@ sudo make install</code></pre>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Navigate to the Configuration Directory:</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Navigate to the Configuration Directory:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -212,8 +212,8 @@ sudo make install</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Edit Core Configuration Files:</strong> Use any text editor to modify the configuration files, such as <code>vars.xml</code> or <code>sip_profiles</code> for SIP settings:</li>
-<!-- /wp:list-item --></ol>
+- ***Edit Core Configuration Files:***  Use any text editor to modify the configuration files, such as <code>vars.xml</code> or <code>sip_profiles</code> for SIP settings: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -228,7 +228,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Starting FreeSWITCH</h2>
+ ## Starting FreeSWITCH
 <!-- /wp:heading -->
 
   Once configured, FreeSWITCH is ready to start. You can start it directly from the terminal: 
@@ -241,8 +241,8 @@ sudo make install</code></pre>
   This command launches FreeSWITCH in the foreground, allowing you to see the output and check for any immediate issues. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Running FreeSWITCH in the Background</h3>
+
+ ### Running FreeSWITCH in the Background
 <!-- /wp:heading -->
 
   To run FreeSWITCH as a background process, use: 
@@ -260,7 +260,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Testing the Installation</h2>
+ ## Testing the Installation
 <!-- /wp:heading -->
 
   To ensure FreeSWITCH is working correctly, log in to the FreeSWITCH CLI by typing: 
@@ -273,8 +273,8 @@ sudo make install</code></pre>
   This command opens the FreeSWITCH Command Line Interface, where you can test various commands and ensure the system is functioning as expected. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Basic Test Commands</h3>
+
+ ### Basic Test Commands
 <!-- /wp:heading -->
 
   Try using the following commands within the CLI to confirm the setup: 
@@ -282,16 +282,16 @@ sudo make install</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><code>status</code>: Displays the status of FreeSWITCH.</li>
+- <code>status</code>: Displays the status of FreeSWITCH. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>sofia status</code>: Shows SIP profiles and registration status.</li>
+- <code>sofia status</code>: Shows SIP profiles and registration status. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>reloadxml</code>: Reloads XML configuration files without restarting FreeSWITCH.</li>
-<!-- /wp:list-item --></ul>
+- <code>reloadxml</code>: Reloads XML configuration files without restarting FreeSWITCH. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -299,7 +299,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Setting Up FreeSWITCH as a System Service</h2>
+ ## Setting Up FreeSWITCH as a System Service
 <!-- /wp:heading -->
 
   To simplify management, set up FreeSWITCH as a system service: 
@@ -307,8 +307,8 @@ sudo make install</code></pre>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Create a Service File:</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Create a Service File:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -317,8 +317,8 @@ sudo make install</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Add Service Configuration:</strong> Paste the following configuration into the file:</li>
-<!-- /wp:list-item --></ol>
+- ***Add Service Configuration:***  Paste the following configuration into the file: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -340,8 +340,8 @@ sudo make install</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enable and Start the Service:</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Enable and Start the Service:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -357,18 +357,18 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Troubleshooting Common Installation Issues</h2>
+ ## Troubleshooting Common Installation Issues
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Dependency Errors</h3>
+
+ ### Dependency Errors
 <!-- /wp:heading -->
 
   If you encounter dependency errors, double-check that all required packages were installed in the dependencies step. Run <code>sudo apt update</code> and <code>sudo apt install</code> as needed to ensure all dependencies are in place. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Service Not Starting</h3>
+
+ ### Service Not Starting
 <!-- /wp:heading -->
 
   If FreeSWITCH fails to start as a service, use <code>journalctl -xe</code> to check for errors in the system logs. Adjust the configuration as needed and restart the service. 
@@ -379,21 +379,21 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Security and Best Practices</h2>
+ ## Security and Best Practices
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Limit Access:</strong> Use firewalls to restrict access to your FreeSWITCH server and prevent unauthorized access.</li>
+- ***Limit Access:***  Use firewalls to restrict access to your FreeSWITCH server and prevent unauthorized access. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Enable Logging:</strong> Enable detailed logging to monitor activity and troubleshoot issues.</li>
+- ***Enable Logging:***  Enable detailed logging to monitor activity and troubleshoot issues. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Regular Updates:</strong> Keep FreeSWITCH and your Ubuntu server up to date to protect against security vulnerabilities.</li>
-<!-- /wp:list-item --></ul>
+- ***Regular Updates:***  Keep FreeSWITCH and your Ubuntu server up to date to protect against security vulnerabilities. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -401,7 +401,7 @@ sudo make install</code></pre>
 <!-- /wp:separator -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   FreeSWITCH offers a robust platform for VoIP and communications solutions, and installing it on an Ubuntu server is a great way to leverage its features. By following this step-by-step guide, you should have a fully functional FreeSWITCH instance up and running. From dependencies and configuration to troubleshooting, this guide provides everything you need to set up FreeSWITCH successfully. With this setup, you’ll be well-equipped to handle VoIP and communication needs efficiently and securely. 

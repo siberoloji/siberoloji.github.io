@@ -29,7 +29,7 @@ url: /char-type-and-usage-examples-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -103,7 +103,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a demonstration of how to manipulate and display characters and their ASCII values. It also includes a brief explanation of escape characters in C++. 
@@ -128,7 +128,7 @@ int main() {
  
 
  
- ## Output </h2>
+ ## Output 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -149,7 +149,7 @@ Process finished with exit code 0</code></pre>
 <!-- /wp:code -->
 
  
- ## Escape Characters</h2>
+ ## Escape Characters
 <!-- /wp:heading -->
 
 <!-- wp:code -->

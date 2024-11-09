@@ -24,804 +24,804 @@ url: /the-most-popular-computer-games-list/
   Here’s a list of popular computer games across major categories. Since this list includes only top picks, it isn't exhaustive, but it does capture many of the most popular games in each genre. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Action</strong></h3>
+
+ ### 1. ***Action*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Shooter</strong><!-- wp:list -->
+- ***Shooter*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em><a href="https://www.siberoloji.com/an-introduction-to-counter-strike-global-offensive-what-makes-it-special/" data-type="post" data-id="5644" target="_blank" rel="noreferrer noopener">Counter-Strike: Global Offensive</a></em></li>
+- <em><a href="https://www.siberoloji.com/an-introduction-to-counter-strike-global-offensive-what-makes-it-special/" data-type="post" data-id="5644" target="_blank" rel="noreferrer noopener">Counter-Strike: Global Offensive</a></em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Call of Duty: Warzone</em></li>
+- <em>Call of Duty: Warzone</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Apex Legends</em></li>
+- <em>Apex Legends</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Overwatch 2</em></li>
+- <em>Overwatch 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Tom Clancy's Rainbow Six Siege</em></li>
+- <em>Tom Clancy's Rainbow Six Siege</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Escape from Tarkov</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Escape from Tarkov</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Platformer</strong><!-- wp:list -->
+- ***Platformer*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Celeste</em></li>
+- <em>Celeste</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Ori and the Will of the Wisps</em></li>
+- <em>Ori and the Will of the Wisps</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Hollow Knight</em></li>
+- <em>Hollow Knight</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Super Meat Boy</em></li>
+- <em>Super Meat Boy</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Cuphead</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Cuphead</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Stealth</strong><!-- wp:list -->
+- ***Stealth*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Hitman 3</em></li>
+- <em>Hitman 3</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Metal Gear Solid V: The Phantom Pain</em></li>
+- <em>Metal Gear Solid V: The Phantom Pain</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dishonored 2</em></li>
+- <em>Dishonored 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Thief</em></li>
+- <em>Thief</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Splinter Cell: Blacklist</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Splinter Cell: Blacklist</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Adventure</strong></h3>
+
+ ### 2. ***Adventure*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Action-Adventure</strong><!-- wp:list -->
+- ***Action-Adventure*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>The Legend of Zelda: Breath of the Wild</em></li>
+- <em>The Legend of Zelda: Breath of the Wild</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Assassin's Creed Valhalla</em></li>
+- <em>Assassin's Creed Valhalla</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>God of War</em></li>
+- <em>God of War</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Horizon Zero Dawn</em></li>
+- <em>Horizon Zero Dawn</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Tomb Raider (2013)</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Tomb Raider (2013)</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Survival</strong><!-- wp:list -->
+- ***Survival*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>The Forest</em></li>
+- <em>The Forest</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>ARK: Survival Evolved</em></li>
+- <em>ARK: Survival Evolved</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Don't Starve Together</em></li>
+- <em>Don't Starve Together</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Rust</em></li>
+- <em>Rust</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Green Hell</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Green Hell</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Open World</strong><!-- wp:list -->
+- ***Open World*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Red Dead Redemption 2</em></li>
+- <em>Red Dead Redemption 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>The Witcher 3: Wild Hunt</em></li>
+- <em>The Witcher 3: Wild Hunt</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Grand Theft Auto V</em></li>
+- <em>Grand Theft Auto V</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Elden Ring</em></li>
+- <em>Elden Ring</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Cyberpunk 2077</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Cyberpunk 2077</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Narrative-Driven</strong><!-- wp:list -->
+- ***Narrative-Driven*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Life is Strange</em></li>
+- <em>Life is Strange</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Detroit: Become Human</em></li>
+- <em>Detroit: Become Human</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>The Walking Dead</em></li>
+- <em>The Walking Dead</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Heavy Rain</em></li>
+- <em>Heavy Rain</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Until Dawn</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Until Dawn</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>Role-Playing (RPG)</strong></h3>
+
+ ### 3. ***Role-Playing (RPG)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Action RPG</strong><!-- wp:list -->
+- ***Action RPG*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Dark Souls III</em></li>
+- <em>Dark Souls III</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Bloodborne</em></li>
+- <em>Bloodborne</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Diablo III</em></li>
+- <em>Diablo III</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Monster Hunter: World</em></li>
+- <em>Monster Hunter: World</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Path of Exile</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Path of Exile</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Japanese RPG (JRPG)</strong><!-- wp:list -->
+- ***Japanese RPG (JRPG)*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Final Fantasy XV</em></li>
+- <em>Final Fantasy XV</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Persona 5</em></li>
+- <em>Persona 5</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dragon Quest XI</em></li>
+- <em>Dragon Quest XI</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Nier: Automata</em></li>
+- <em>Nier: Automata</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Tales of Arise</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Tales of Arise</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Western RPG</strong><!-- wp:list -->
+- ***Western RPG*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>The Elder Scrolls V: Skyrim</em></li>
+- <em>The Elder Scrolls V: Skyrim</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Fallout 4</em></li>
+- <em>Fallout 4</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dragon Age: Inquisition</em></li>
+- <em>Dragon Age: Inquisition</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Mass Effect Legendary Edition</em></li>
+- <em>Mass Effect Legendary Edition</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Baldur's Gate 3</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Baldur's Gate 3</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Tactical RPG</strong><!-- wp:list -->
+- ***Tactical RPG*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Fire Emblem: Three Houses</em></li>
+- <em>Fire Emblem: Three Houses</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>XCOM 2</em></li>
+- <em>XCOM 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Divinity: Original Sin II</em></li>
+- <em>Divinity: Original Sin II</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Wasteland 3</em></li>
+- <em>Wasteland 3</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Gears Tactics</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Gears Tactics</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. <strong>Simulation</strong></h3>
+
+ ### 4. ***Simulation*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Life Simulation</strong><!-- wp:list -->
+- ***Life Simulation*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>The Sims 4</em></li>
+- <em>The Sims 4</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Animal Crossing: New Horizons</em></li>
+- <em>Animal Crossing: New Horizons</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Stardew Valley</em></li>
+- <em>Stardew Valley</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Second Life</em></li>
+- <em>Second Life</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Harvest Moon</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Harvest Moon</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Vehicle Simulation</strong><!-- wp:list -->
+- ***Vehicle Simulation*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Microsoft Flight Simulator</em></li>
+- <em>Microsoft Flight Simulator</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Euro Truck Simulator 2</em></li>
+- <em>Euro Truck Simulator 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>American Truck Simulator</em></li>
+- <em>American Truck Simulator</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Assetto Corsa</em></li>
+- <em>Assetto Corsa</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>iRacing</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>iRacing</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Construction/Management</strong><!-- wp:list -->
+- ***Construction/Management*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Cities: Skylines</em></li>
+- <em>Cities: Skylines</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Planet Zoo</em></li>
+- <em>Planet Zoo</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>RollerCoaster Tycoon Classic</em></li>
+- <em>RollerCoaster Tycoon Classic</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>SimCity 4</em></li>
+- <em>SimCity 4</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Prison Architect</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Prison Architect</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Farming</strong><!-- wp:list -->
+- ***Farming*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Farming Simulator 22</em></li>
+- <em>Farming Simulator 22</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>My Time at Portia</em></li>
+- <em>My Time at Portia</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Story of Seasons: Friends of Mineral Town</em></li>
+- <em>Story of Seasons: Friends of Mineral Town</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Doraemon Story of Seasons</em></li>
+- <em>Doraemon Story of Seasons</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Graveyard Keeper</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Graveyard Keeper</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. <strong>Strategy</strong></h3>
+
+ ### 5. ***Strategy*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Real-Time Strategy (RTS)</strong><!-- wp:list -->
+- ***Real-Time Strategy (RTS)*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>StarCraft II</em></li>
+- <em>StarCraft II</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Age of Empires IV</em></li>
+- <em>Age of Empires IV</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Command &amp; Conquer: Red Alert 3</em></li>
+- <em>Command &amp; Conquer: Red Alert 3</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Warcraft III</em></li>
+- <em>Warcraft III</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Total War: Rome II</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Total War: Rome II</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Turn-Based Strategy</strong><!-- wp:list -->
+- ***Turn-Based Strategy*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Civilization VI</em></li>
+- <em>Civilization VI</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>XCOM: Enemy Unknown</em></li>
+- <em>XCOM: Enemy Unknown</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Endless Legend</em></li>
+- <em>Endless Legend</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Heroes of Might and Magic III</em></li>
+- <em>Heroes of Might and Magic III</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Wargroove</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Wargroove</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Tower Defense</strong><!-- wp:list -->
+- ***Tower Defense*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Bloons TD 6</em></li>
+- <em>Bloons TD 6</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Plants vs. Zombies</em></li>
+- <em>Plants vs. Zombies</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Orcs Must Die! 3</em></li>
+- <em>Orcs Must Die! 3</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Defense Grid 2</em></li>
+- <em>Defense Grid 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dungeon Defenders</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Dungeon Defenders</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>4X Strategy</strong><!-- wp:list -->
+- ***4X Strategy*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Stellaris</em></li>
+- <em>Stellaris</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Sid Meier’s Civilization V</em></li>
+- <em>Sid Meier’s Civilization V</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Endless Space 2</em></li>
+- <em>Endless Space 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Galactic Civilizations III</em></li>
+- <em>Galactic Civilizations III</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Master of Orion</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Master of Orion</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 6. <strong>Sports</strong></h3>
+
+ ### 6. ***Sports*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Traditional Sports</strong><!-- wp:list -->
+- ***Traditional Sports*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>FIFA 23</em></li>
+- <em>FIFA 23</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>NBA 2K23</em></li>
+- <em>NBA 2K23</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Madden NFL 23</em></li>
+- <em>Madden NFL 23</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>MLB The Show 23</em></li>
+- <em>MLB The Show 23</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>NHL 23</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>NHL 23</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Racing</strong><!-- wp:list -->
+- ***Racing*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Forza Horizon 5</em></li>
+- <em>Forza Horizon 5</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Gran Turismo 7</em></li>
+- <em>Gran Turismo 7</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Need for Speed: Heat</em></li>
+- <em>Need for Speed: Heat</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>F1 2023</em></li>
+- <em>F1 2023</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Assetto Corsa Competizione</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Assetto Corsa Competizione</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Combat Sports</strong><!-- wp:list -->
+- ***Combat Sports*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>UFC 4</em></li>
+- <em>UFC 4</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>WWE 2K23</em></li>
+- <em>WWE 2K23</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Fight Night Champion</em></li>
+- <em>Fight Night Champion</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>EA Sports UFC 3</em></li>
+- <em>EA Sports UFC 3</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Punch-Out!!</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>Punch-Out!!</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. <strong>Puzzle</strong></h3>
+
+ ### 7. ***Puzzle*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Logic Puzzle</strong><!-- wp:list -->
+- ***Logic Puzzle*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Portal 2</em></li>
+- <em>Portal 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>The Witness</em></li>
+- <em>The Witness</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Baba Is You</em></li>
+- <em>Baba Is You</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>The Talos Principle</em></li>
+- <em>The Talos Principle</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Fez</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Fez</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Physics-Based</strong><!-- wp:list -->
+- ***Physics-Based*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>World of Goo</em></li>
+- <em>World of Goo</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Human: Fall Flat</em></li>
+- <em>Human: Fall Flat</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Poly Bridge 2</em></li>
+- <em>Poly Bridge 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Bridge Constructor Portal</em></li>
+- <em>Bridge Constructor Portal</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Little Inferno</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Little Inferno</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Trivia/Quiz</strong><!-- wp:list -->
+- ***Trivia/Quiz*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Jackbox Party Pack</em></li>
+- <em>Jackbox Party Pack</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Buzz! Quiz World</em></li>
+- <em>Buzz! Quiz World</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Trivia Crack</em></li>
+- <em>Trivia Crack</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>You Don’t Know Jack</em></li>
+- <em>You Don’t Know Jack</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>QuizUp</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>QuizUp</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 8. <strong>Horror</strong></h3>
+
+ ### 8. ***Horror*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Survival Horror</strong><!-- wp:list -->
+- ***Survival Horror*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Resident Evil Village</em></li>
+- <em>Resident Evil Village</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Outlast</em></li>
+- <em>Outlast</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Silent Hill 2</em></li>
+- <em>Silent Hill 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Alien: Isolation</em></li>
+- <em>Alien: Isolation</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Amnesia: The Dark Descent</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Amnesia: The Dark Descent</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Psychological Horror</strong><!-- wp:list -->
+- ***Psychological Horror*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Layers of Fear</em></li>
+- <em>Layers of Fear</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Soma</em></li>
+- <em>Soma</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Hellblade: Senua's Sacrifice</em></li>
+- <em>Hellblade: Senua's Sacrifice</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Observer</em></li>
+- <em>Observer</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dead Space</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+- <em>Dead Space</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Multiplayer Horror</strong><!-- wp:list -->
+- ***Multiplayer Horror*** <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Dead by Daylight</em></li>
+- <em>Dead by Daylight</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Phasmophobia</em></li>
+- <em>Phasmophobia</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Friday the 13th: The Game</em></li>
+- <em>Friday the 13th: The Game</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>The Forest</em></li>
+- <em>The Forest</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>White Noise 2</em></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ul>
+- <em>White Noise 2</em> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 9. <strong>MMO (Massively Multiplayer Online)</strong></h3>
+
+ ### 9. ***MMO (Massively Multiplayer Online)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>World of Warcraft</em></li>
+- <em>World of Warcraft</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Final Fantasy XIV</em></li>
+- <em>Final Fantasy XIV</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Guild Wars 2</em></li>
+- <em>Guild Wars 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Black Desert Online</em></li>
+- <em>Black Desert Online</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Runescape</em></li>
-<!-- /wp:list-item --></ul>
+- <em>Runescape</em> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 10. <strong>Sandbox</strong></h3>
+
+ ### 10. ***Sandbox*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>Minecraft</em></li>
+- <em>Minecraft</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Terraria</em></li>
+- <em>Terraria</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Roblox</em></li>
+- <em>Roblox</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Garry's Mod</em></li>
+- <em>Garry's Mod</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>No Man's Sky</em></li>
-<!-- /wp:list-item --></ul>
+- <em>No Man's Sky</em> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 11. <strong>Multiplayer Online Battle Arena (MOBA)</strong></h3>
+
+ ### 11. ***Multiplayer Online Battle Arena (MOBA)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><em>League of Legends</em></li>
+- <em>League of Legends</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Dota 2</em></li>
+- <em>Dota 2</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Heroes of the Storm</em></li>
+- <em>Heroes of the Storm</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Smite</em></li>
+- <em>Smite</em> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><em>Arena of Valor</em></li>
-<!-- /wp:list-item --></ul>
+- <em>Arena of Valor</em> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->

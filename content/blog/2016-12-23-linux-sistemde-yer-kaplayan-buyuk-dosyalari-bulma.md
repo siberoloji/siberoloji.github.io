@@ -29,10 +29,10 @@ title: Linux Sistemde Yer Kaplayan Büyük Dosyaları Bulma
 url: /tr/linux-sistemde-yer-kaplayan-buyuk-dosyalari-bulma/
 ---
 
-  Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar. Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız. Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın&nbsp;yolunu açıklamak istiyorum.</p>
+  Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar. Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız. Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın&nbsp;yolunu açıklamak istiyorum.
  
 
-  Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux filtreleme komutları yardımıyla listeliyoruz ve en büyük 5 dosyayı ekrana yazdırıyoruz.</p>
+  Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux filtreleme komutları yardımıyla listeliyoruz ve en büyük 5 dosyayı ekrana yazdırıyoruz.
  
 
 <!-- wp:preformatted -->
@@ -48,29 +48,29 @@ url: /tr/linux-sistemde-yer-kaplayan-buyuk-dosyalari-bulma/
 <!-- /wp:preformatted -->
 
  
- ## Açıklama:</h2>
+ ## Açıklama:
 <!-- /wp:heading -->
 
-  find .&nbsp; : Yukarıda vermiş olduğumuz komut, bulunduğumuz klasörü ve alt klasörlerindeki tüm dosyaları arar. Komutu verdiğiniz yer önemlidir. Bu örnekte, komut home klasöründe ve sudo yetkisi olmadan verilmiştir. Baş tarafına sudo yetkisi eklediğinizde sonuçlar değişebilir.</p>
+  find .&nbsp; : Yukarıda vermiş olduğumuz komut, bulunduğumuz klasörü ve alt klasörlerindeki tüm dosyaları arar. Komutu verdiğiniz yer önemlidir. Bu örnekte, komut home klasöründe ve sudo yetkisi olmadan verilmiştir. Baş tarafına sudo yetkisi eklediğinizde sonuçlar değişebilir.
  
 
-  -xdev&nbsp; : find komutua ait bu parametre, sadece üzerinde çalıştığımız diskte işlem yapılmasını sağlar. Sisteminize bağlı diğer disk bölümlerinin aranmasını engeller.</p>
+  -xdev&nbsp; : find komutua ait bu parametre, sadece üzerinde çalıştığımız diskte işlem yapılmasını sağlar. Sisteminize bağlı diğer disk bölümlerinin aranmasını engeller.
  
 
-  -ls&nbsp; : Sonuçların listelenmesini sağlar.</p>
+  -ls&nbsp; : Sonuçların listelenmesini sağlar.
  
 
-  sort&nbsp; : Elde ettiğimiz sonuçlara sıralama işlemi yapmamızı sağlar.</p>
+  sort&nbsp; : Elde ettiğimiz sonuçlara sıralama işlemi yapmamızı sağlar.
  
 
-  -n&nbsp; : Sıralamanın sayılar değerlerle yapılacağını belirtir.</p>
+  -n&nbsp; : Sıralamanın sayılar değerlerle yapılacağını belirtir.
  
 
-  -k 7&nbsp; : Sıralamanın, bir kriter girilerek yapılmasını sağlar. Bizim örneğimizde 7. sütun olan boyut (size) sütunu kullanılmıştır.</p>
+  -k 7&nbsp; : Sıralamanın, bir kriter girilerek yapılmasını sağlar. Bizim örneğimizde 7. sütun olan boyut (size) sütunu kullanılmıştır.
  
 
-  tail -5&nbsp; : Sort komutu ile küçükten büyüğe yapılan sıralamanın sonucunda, en büyük dosyalar listenin en sonunda yer alacaktır.&nbsp;tail -5&nbsp; komutu ile en son 5 satırın ekranda görüntülenmesi sağlanır. İsterseniz,&nbsp;tail -10&nbsp; şeklinde değiştirerek en büyük 10 dosyayı da bulabilirsiniz.</p>
+  tail -5&nbsp; : Sort komutu ile küçükten büyüğe yapılan sıralamanın sonucunda, en büyük dosyalar listenin en sonunda yer alacaktır.&nbsp;tail -5&nbsp; komutu ile en son 5 satırın ekranda görüntülenmesi sağlanır. İsterseniz,&nbsp;tail -10&nbsp; şeklinde değiştirerek en büyük 10 dosyayı da bulabilirsiniz.
  
 
-  Size sadece, bulunan dosyaların hangilerinin yedekleme diskine aktarılacağını, hangilerinin sileceğine karar vermek kalıyor. Sizin de kullandığınız faydalı komutlar varsa, bize bildirebilirsiniz. Burada açıklamaları ile birlikte yayınlayabiliriz.</p>
+  Size sadece, bulunan dosyaların hangilerinin yedekleme diskine aktarılacağını, hangilerinin sileceğine karar vermek kalıyor. Sizin de kullandığınız faydalı komutlar varsa, bize bildirebilirsiniz. Burada açıklamaları ile birlikte yayınlayabiliriz.
  

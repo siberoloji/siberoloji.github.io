@@ -31,22 +31,22 @@ url: /tr/msf-icinde-windows-guncelleme-kesfi/
   Metasploit Framework içerisinden bir Windows işletim sistemine Meterpreter shell açtığınızda, işletim sisteminin hangi güncellemeleri ve yamaları yaptığını, hangilerini yapmadığını keşfetmek isteyebilirsiniz. 
  
 
-  Bunun için kullanılan&nbsp;<code>post/windows/gather/enum_patches</code>&nbsp;modülünün kullanımına ait bir örneği aşağıda bulabilirsiniz. Modül, isminden de anlaşılacağı gibi bir&nbsp;<strong>post exploitation</strong>&nbsp;modülüdür ve öncelikle hedef bilgisayarda bir&nbsp;<code>meterpreter</code>&nbsp;açık olmalıdır. 
+  Bunun için kullanılan&nbsp;<code>post/windows/gather/enum_patches</code>&nbsp;modülünün kullanımına ait bir örneği aşağıda bulabilirsiniz. Modül, isminden de anlaşılacağı gibi bir&nbsp;***post exploitation*** &nbsp;modülüdür ve öncelikle hedef bilgisayarda bir&nbsp;<code>meterpreter</code>&nbsp;açık olmalıdır. 
  
 
   Aşağıdaki çıktıda,&nbsp;<code>use</code>&nbsp;komutu ile modül yüklenmiş ve seçenekleri görüntülenmiştir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> use post/windows/gather/enum_patches
-msf post<strong>(</strong>enum_patches<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  use post/windows/gather/enum_patches
+msf post***(*** enum_patches***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>post/windows/gather/enum_patches<strong>)</strong>:
+Module options ***(*** post/windows/gather/enum_patches***)*** :
 
    Name       Current Setting       Required  Description
    ----       ---------------       --------  -----------
-   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search <strong>for
-   </strong>MSFLOCALS  true                  yes       Search <strong>for </strong>missing patchs <strong>for </strong>which there is a MSF local module
+   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search ***for
+   *** MSFLOCALS  true                  yes       Search ***for *** missing patchs ***for *** which there is a MSF local module
    SESSION                          yes       The session to run this module on.
 </code></pre>
 <!-- /wp:code -->
@@ -55,9 +55,9 @@ Module options <strong>(</strong>post/windows/gather/enum_patches<strong>)</stro
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf post<strong>(</strong>enum_patches<strong>)</strong> <strong>&gt;</strong> show advanced
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf post***(*** enum_patches***)***  ***&gt;***  show advanced
 
-Module advanced options <strong>(</strong>post/windows/gather/enum_patches<strong>)</strong>:
+Module advanced options ***(*** post/windows/gather/enum_patches***)*** :
 
    Name           : VERBOSE
    Current Setting: true
@@ -65,7 +65,7 @@ Module advanced options <strong>(</strong>post/windows/gather/enum_patches<stron
 
    Name           : WORKSPACE
    Current Setting: 
-   Description    : Specify the workspace <strong>for </strong>this module
+   Description    : Specify the workspace ***for *** this module
 </code></pre>
 <!-- /wp:code -->
 
@@ -73,27 +73,27 @@ Module advanced options <strong>(</strong>post/windows/gather/enum_patches<stron
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf post<strong>(</strong>enum_patches<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf post***(*** enum_patches***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>post/windows/gather/enum_patches<strong>)</strong>:
+Module options ***(*** post/windows/gather/enum_patches***)*** :
 
    Name       Current Setting       Required  Description
    ----       ---------------       --------  -----------
-   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search <strong>for
-   </strong>MSFLOCALS  true                  yes       Search <strong>for </strong>missing patchs <strong>for </strong>which there is a MSF local module
+   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search ***for
+   *** MSFLOCALS  true                  yes       Search ***for *** missing patchs ***for *** which there is a MSF local module
    SESSION    1                     yes       The session to run this module on.
 
-msf post<strong>(</strong>enum_patches<strong>)</strong> <strong>&gt;</strong> run
+msf post***(*** enum_patches***)***  ***&gt;***  run
 
-<strong>[</strong><strong>*</strong><strong>]</strong> KB2871997 applied
-<strong>[</strong>+] KB2928120 is missing
-<strong>[</strong>+] KB977165 - Possibly vulnerable to MS10-015 kitrap0d <strong>if </strong>Windows 2K SP4 - Windows 7 <strong>(</strong>x86<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> KB2305420 applied
-<strong>[</strong>+] KB2592799 - Possibly vulnerable to MS11-080 afdjoinleaf <strong>if </strong>XP SP2/SP3 Win 2k3 SP2
-<strong>[</strong>+] KB2778930 - Possibly vulnerable to MS13-005 hwnd_broadcast, elevates from Low to Medium integrity
-<strong>[</strong>+] KB2850851 - Possibly vulnerable to MS13-053 schlamperei <strong>if </strong>x86 Win7 SP0/SP1
-<strong>[</strong>+] KB2870008 - Possibly vulnerable to MS13-081 track_popup_menu <strong>if </strong>x86 Windows 7 SP0/SP1
-<strong>[</strong><strong>*</strong><strong>]</strong> Post module execution completed
+***[*** ******* ***]***  KB2871997 applied
+***[*** +] KB2928120 is missing
+***[*** +] KB977165 - Possibly vulnerable to MS10-015 kitrap0d ***if *** Windows 2K SP4 - Windows 7 ***(*** x86***)*** 
+***[*** ******* ***]***  KB2305420 applied
+***[*** +] KB2592799 - Possibly vulnerable to MS11-080 afdjoinleaf ***if *** XP SP2/SP3 Win 2k3 SP2
+***[*** +] KB2778930 - Possibly vulnerable to MS13-005 hwnd_broadcast, elevates from Low to Medium integrity
+***[*** +] KB2850851 - Possibly vulnerable to MS13-053 schlamperei ***if *** x86 Win7 SP0/SP1
+***[*** +] KB2870008 - Possibly vulnerable to MS13-081 track_popup_menu ***if *** x86 Windows 7 SP0/SP1
+***[*** ******* ***]***  Post module execution completed
 </code></pre>
 <!-- /wp:code -->
 

@@ -18,7 +18,7 @@ Understanding Proxmox, Ceph, and ZFS Proxmox VE is an open-source virtualization
 <meta property="og:description" content="Setting up a Proxmox cluster with either Ceph or ZFS is a powerful way to manage virtualization and storage in a highly available and scalable environment. This guide will walk you through the process of establishing a Proxmox cluster and integrating it with either Ceph or ZFS, focusing on the necessary steps, configurations, and best practices.
 Understanding Proxmox, Ceph, and ZFS
     
-Proxmox VE is an open-source virtualization management platform that combines KVM hypervisor and LXC containers. It provides a web-based interface for managing virtual machines (VMs) and containers, making it an ideal choice for both small and large deployments." />
+Proxmox VE  is an open-source virtualization management platform that combines KVM hypervisor and LXC containers. It provides a web-based interface for managing virtual machines (VMs) and containers, making it an ideal choice for both small and large deployments." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/ultimate-guide-to-proxmox-cluster-with-ceph-or-zfs/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-10-19T17:59:05+00:00" />
@@ -29,7 +29,7 @@ Proxmox VE is an open-source virtualization management platform that combines KV
 Understanding Proxmox, Ceph, and ZFS Proxmox VE is an open-source virtualization management platform that combines KVM hypervisor and LXC containers. It provides a web-based interface for managing virtual machines (VMs) and containers, making it an ideal choice for both small and large deployments.">
   <meta itemprop="datePublished" content="2024-10-19T17:59:05+00:00">
   <meta itemprop="dateModified" content="2024-10-19T17:59:05+00:00">
-  <meta itemprop="wordCount" content="862">
+  <meta itemprop="wordCount" content="898">
   <meta itemprop="keywords" content="Proxmox,Virtualization">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Ultimate Guide to Proxmox cluster with CEPH or ZFS">
@@ -2325,45 +2325,45 @@ Understanding Proxmox, Ceph, and ZFS Proxmox VE is an open-source virtualization
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#understanding-proxmox-ceph-and-zfsh2"
+                href="#understanding-proxmox-ceph-and-zfs"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Understanding Proxmox, Ceph, and ZFS&lt;/h2&gt;</a>
+              >Understanding Proxmox, Ceph, and ZFS</a>
             </li>
           <li>
               <a
-                href="#prerequisitesh2"
+                href="#prerequisites"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Prerequisites&lt;/h2&gt;</a>
+              >Prerequisites</a>
             </li>
           <li>
               <a
-                href="#setting-up-a-proxmox-clusterh2"
+                href="#setting-up-a-proxmox-cluster"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Setting Up a Proxmox Cluster&lt;/h2&gt;</a>
+              >Setting Up a Proxmox Cluster</a>
             </li>
           <li>
               <a
-                href="#setting-up-ceph-storageh2"
+                href="#setting-up-ceph-storage"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Setting Up Ceph Storage&lt;/h2&gt;</a>
+              >Setting Up Ceph Storage</a>
             </li>
           <li>
               <a
-                href="#setting-up-zfs-storageh2"
+                href="#setting-up-zfs-storage"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Setting Up ZFS Storage&lt;/h2&gt;</a>
+              >Setting Up ZFS Storage</a>
             </li>
           <li>
               <a
-                href="#best-practices-for-managementh2"
+                href="#best-practices-for-management"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Best Practices for Management&lt;/h2&gt;</a>
+              >Best Practices for Management</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9694,75 +9694,75 @@ Understanding Proxmox, Ceph, and ZFS Proxmox VE is an open-source virtualization
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-proxmox-ceph-and-zfsh2">Understanding Proxmox, Ceph, and ZFS
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-proxmox-ceph-and-zfs">Understanding Proxmox, Ceph, and ZFS
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#prerequisitesh2">Prerequisites
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#prerequisites">Prerequisites
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-a-proxmox-clusterh2">Setting Up a Proxmox Cluster
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-a-proxmox-cluster">Setting Up a Proxmox Cluster
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-1-create-the-clusterh3">Step 1: Create the Cluster
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-1-create-the-cluster">Step 1: Create the Cluster
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-2-join-additional-nodesh3">Step 2: Join Additional Nodes
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-2-join-additional-nodes">Step 2: Join Additional Nodes
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-3-verify-cluster-statush3">Step 3: Verify Cluster Status
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-3-verify-cluster-status">Step 3: Verify Cluster Status
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-ceph-storageh2">Setting Up Ceph Storage
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-ceph-storage">Setting Up Ceph Storage
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-4-install-cephh3">Step 4: Install Ceph
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-4-install-ceph">Step 4: Install Ceph
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-5-initialize-ceph-configurationh3">Step 5: Initialize Ceph Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-5-initialize-ceph-configuration">Step 5: Initialize Ceph Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-6-create-monitors-and-managersh3">Step 6: Create Monitors and Managers
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-6-create-monitors-and-managers">Step 6: Create Monitors and Managers
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-7-create-osdsh3">Step 7: Create OSDs
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-7-create-osds">Step 7: Create OSDs
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-8-create-poolsh3">Step 8: Create Pools
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-8-create-pools">Step 8: Create Pools
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-zfs-storageh2">Setting Up ZFS Storage
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-zfs-storage">Setting Up ZFS Storage
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-9-install-zfsh3">Step 9: Install ZFS
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-9-install-zfs">Step 9: Install ZFS
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-10-create-zfs-poolh3">Step 10: Create ZFS Pool
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-10-create-zfs-pool">Step 10: Create ZFS Pool
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-11-configure-storage-in-proxmoxh3">Step 11: Configure Storage in Proxmox
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-11-configure-storage-in-proxmox">Step 11: Configure Storage in Proxmox
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices-for-managementh2">Best Practices for Management
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices-for-management">Best Practices for Management
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9795,221 +9795,238 @@ Understanding Proxmox, Ceph, and ZFS Proxmox VE is an open-source virtualization
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>Setting up a Proxmox cluster with either Ceph or ZFS is a powerful way to manage virtualization and storage in a highly available and scalable environment. This guide will walk you through the process of establishing a Proxmox cluster and integrating it with either Ceph or ZFS, focusing on the necessary steps, configurations, and best practices.</p></p>
-<h2>Understanding Proxmox, Ceph, and ZFS</h2><span class="hx-absolute -hx-mt-20" id="understanding-proxmox-ceph-and-zfsh2"></span>
-    <a href="#understanding-proxmox-ceph-and-zfsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p><strong>Proxmox VE</strong> is an open-source virtualization management platform that combines KVM hypervisor and LXC containers. It provides a web-based interface for managing virtual machines (VMs) and containers, making it an ideal choice for both small and large deployments.</p></p>
-<p><strong>Ceph</strong> is a distributed storage system designed to provide excellent performance, reliability, and scalability. It allows users to create storage pools that can be used for block storage (RBD), object storage (Ceph RADOS Gateway), or file systems (CephFS). Ceph is particularly well-suited for environments requiring high availability and redundancy.</p></p>
-<p><strong>ZFS</strong>, on the other hand, is a combined file system and logical volume manager designed for data integrity, high storage capacity, and efficient data management. It offers features like snapshots, replication, and built-in RAID capabilities.</p></p>
-<p>Choosing between Ceph and ZFS largely depends on your specific use case, hardware capabilities, and performance requirements.</p></p>
-<h2>Prerequisites</h2><span class="hx-absolute -hx-mt-20" id="prerequisitesh2"></span>
-    <a href="#prerequisitesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Before starting the setup process, ensure that you have the following:</p></p>
+          <p>Setting up a Proxmox cluster with either Ceph or ZFS is a powerful way to manage virtualization and storage in a highly available and scalable environment. This guide will walk you through the process of establishing a Proxmox cluster and integrating it with either Ceph or ZFS, focusing on the necessary steps, configurations, and best practices.</p>
+<h2>Understanding Proxmox, Ceph, and ZFS<span class="hx-absolute -hx-mt-20" id="understanding-proxmox-ceph-and-zfs"></span>
+    <a href="#understanding-proxmox-ceph-and-zfs" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p><em><strong>Proxmox VE</strong></em>  is an open-source virtualization management platform that combines KVM hypervisor and LXC containers. It provides a web-based interface for managing virtual machines (VMs) and containers, making it an ideal choice for both small and large deployments.</p>
+<p><em><strong>Ceph</strong></em>  is a distributed storage system designed to provide excellent performance, reliability, and scalability. It allows users to create storage pools that can be used for block storage (RBD), object storage (Ceph RADOS Gateway), or file systems (CephFS). Ceph is particularly well-suited for environments requiring high availability and redundancy.</p>
+<p><em><strong>ZFS</strong></em> , on the other hand, is a combined file system and logical volume manager designed for data integrity, high storage capacity, and efficient data management. It offers features like snapshots, replication, and built-in RAID capabilities.</p>
+<p>Choosing between Ceph and ZFS largely depends on your specific use case, hardware capabilities, and performance requirements.</p>
+<h2>Prerequisites<span class="hx-absolute -hx-mt-20" id="prerequisites"></span>
+    <a href="#prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Before starting the setup process, ensure that you have the following:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>At least three identical Proxmox nodes</strong>: This is crucial for both Ceph and ZFS to ensure redundancy and high availability.</li>
+- ***At least three identical Proxmox nodes*** : This is crucial for both Ceph and ZFS to ensure redundancy and high availability. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Sufficient hardware resources</strong>: Each node should have adequate CPU, RAM, and disk space. For Ceph, consider using SSDs for OSDs (Object Storage Daemons) to enhance performance.</li>
+<ul>
+<li><em><strong>Sufficient hardware resources</strong></em> : Each node should have adequate CPU, RAM, and disk space. For Ceph, consider using SSDs for OSDs (Object Storage Daemons) to enhance performance.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Network configuration</strong>: A dedicated network for cluster communication is recommended to minimize latency and maximize throughput.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Network configuration</strong></em> : A dedicated network for cluster communication is recommended to minimize latency and maximize throughput.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Setting Up a Proxmox Cluster</h2><span class="hx-absolute -hx-mt-20" id="setting-up-a-proxmox-clusterh2"></span>
-    <a href="#setting-up-a-proxmox-clusterh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 1: Create the Cluster</h3><span class="hx-absolute -hx-mt-20" id="step-1-create-the-clusterh3"></span>
-    <a href="#step-1-create-the-clusterh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Setting Up a Proxmox Cluster<span class="hx-absolute -hx-mt-20" id="setting-up-a-proxmox-cluster"></span>
+    <a href="#setting-up-a-proxmox-cluster" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>Step 1: Create the Cluster<span class="hx-absolute -hx-mt-20" id="step-1-create-the-cluster"></span>
+    <a href="#step-1-create-the-cluster" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Access the Proxmox Web Interface</strong>: Log in to the web interface of your first Proxmox node.</li>
+- ***Access the Proxmox Web Interface*** : Log in to the web interface of your first Proxmox node. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Navigate to Datacenter</strong>: In the left pane, select "Datacenter."</li>
+<ul>
+<li><em><strong>Navigate to Datacenter</strong></em> : In the left pane, select &ldquo;Datacenter.&rdquo;</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Create Cluster</strong>:</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Create Cluster</strong></em> :</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Click on "Cluster" &gt; "Create Cluster."</li>
+- Click on "Cluster" &gt; "Create Cluster." 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Enter a name for your cluster.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Select the network interface that will be used for cluster communication.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Click "Create" to initialize the cluster.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Click &ldquo;Create&rdquo; to initialize the cluster.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 2: Join Additional Nodes</h3><span class="hx-absolute -hx-mt-20" id="step-2-join-additional-nodesh3"></span>
-    <a href="#step-2-join-additional-nodesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 2: Join Additional Nodes<span class="hx-absolute -hx-mt-20" id="step-2-join-additional-nodes"></span>
+    <a href="#step-2-join-additional-nodes" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Join Nodes to Cluster</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Join Nodes to Cluster*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>On each additional node, access the Proxmox web interface.</li>
+- On each additional node, access the Proxmox web interface. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Navigate to "Datacenter" &gt; "Cluster" &gt; "Join Cluster."</li>
+<ul>
+<li>Navigate to &ldquo;Datacenter&rdquo; &gt; &ldquo;Cluster&rdquo; &gt; &ldquo;Join Cluster.&rdquo;</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Enter the join information provided by the first node (including IP address and join token).</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Click "Join" to add the node to the cluster.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Click &ldquo;Join&rdquo; to add the node to the cluster.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 3: Verify Cluster Status</h3><span class="hx-absolute -hx-mt-20" id="step-3-verify-cluster-statush3"></span>
-    <a href="#step-3-verify-cluster-statush3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>After all nodes have joined successfully, verify that they are visible in the cluster overview. You should see all nodes listed under Datacenter &gt; Cluster.</p></p>
-<h2>Setting Up Ceph Storage</h2><span class="hx-absolute -hx-mt-20" id="setting-up-ceph-storageh2"></span>
-    <a href="#setting-up-ceph-storageh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 4: Install Ceph</h3><span class="hx-absolute -hx-mt-20" id="step-4-install-cephh3"></span>
-    <a href="#step-4-install-cephh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 3: Verify Cluster Status<span class="hx-absolute -hx-mt-20" id="step-3-verify-cluster-status"></span>
+    <a href="#step-3-verify-cluster-status" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>After all nodes have joined successfully, verify that they are visible in the cluster overview. You should see all nodes listed under Datacenter &gt; Cluster.</p>
+<h2>Setting Up Ceph Storage<span class="hx-absolute -hx-mt-20" id="setting-up-ceph-storage"></span>
+    <a href="#setting-up-ceph-storage" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>Step 4: Install Ceph<span class="hx-absolute -hx-mt-20" id="step-4-install-ceph"></span>
+    <a href="#step-4-install-ceph" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Install Ceph on Each Node</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Install Ceph on Each Node*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>On each node in the cluster, run:</p></p>
+<p>On each node in the cluster, run:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>pveceph install</code></code></pre>
 <!-- /wp:code -->
-<p>This command installs the necessary Ceph packages.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 5: Initialize Ceph Configuration</h3><span class="hx-absolute -hx-mt-20" id="step-5-initialize-ceph-configurationh3"></span>
-    <a href="#step-5-initialize-ceph-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>This command installs the necessary Ceph packages.</p>
+<h3>Step 5: Initialize Ceph Configuration<span class="hx-absolute -hx-mt-20" id="step-5-initialize-ceph-configuration"></span>
+    <a href="#step-5-initialize-ceph-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Initialize Ceph on One Node</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Initialize Ceph on One Node*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>On one of your nodes (preferably the one with the most resources), run</p></p>
+<p>On one of your nodes (preferably the one with the most resources), run</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>pveceph init --network &lt;your_network&gt;</code></code></pre>
 <!-- /wp:code -->
-<p>Replace <code>&lt;your_network&gt;</code> with your actual network configuration (e.g., <code>10.0.0.0/24</code>).</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 6: Create Monitors and Managers</h3><span class="hx-absolute -hx-mt-20" id="step-6-create-monitors-and-managersh3"></span>
-    <a href="#step-6-create-monitors-and-managersh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Replace <code>&lt;your_network&gt;</code> with your actual network configuration (e.g., <code>10.0.0.0/24</code>).</p>
+<h3>Step 6: Create Monitors and Managers<span class="hx-absolute -hx-mt-20" id="step-6-create-monitors-and-managers"></span>
+    <a href="#step-6-create-monitors-and-managers" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Create Monitor and Manager Daemons</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Create Monitor and Manager Daemons*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Run these commands on each node:</p></p>
+<p>Run these commands on each node:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>pveceph create mon pveceph create mgr</code></code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 7: Create OSDs</h3><span class="hx-absolute -hx-mt-20" id="step-7-create-osdsh3"></span>
-    <a href="#step-7-create-osdsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 7: Create OSDs<span class="hx-absolute -hx-mt-20" id="step-7-create-osds"></span>
+    <a href="#step-7-create-osds" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Prepare Disks for OSDs</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Prepare Disks for OSDs*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Identify disks on each node that will be used for Ceph OSDs.</p></p>
-<p>For each disk you want to use as an OSD:</p></p>
+<p>Identify disks on each node that will be used for Ceph OSDs.</p>
+<p>For each disk you want to use as an OSD:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>ceph-volume lvm zap /dev/&lt;disk&gt; ceph-volume raw prepare --data /dev/&lt;disk&gt; --bluestore ceph-volume raw activate --device /dev/&lt;disk&gt;</code></code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 8: Create Pools</h3><span class="hx-absolute -hx-mt-20" id="step-8-create-poolsh3"></span>
-    <a href="#step-8-create-poolsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 8: Create Pools<span class="hx-absolute -hx-mt-20" id="step-8-create-pools"></span>
+    <a href="#step-8-create-pools" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Create Storage Pools</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Create Storage Pools*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>After setting up OSDs, create pools in your Ceph cluster using:</p></p>
+<p>After setting up OSDs, create pools in your Ceph cluster using:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>ceph osd pool create &lt;pool_name&gt; &lt;pg_num&gt;</code></code></pre>
 <!-- /wp:code -->
-<p>Choose an appropriate number of placement groups (<code>pg_num</code>) based on your cluster size.</p></p>
-<h2>Setting Up ZFS Storage</h2><span class="hx-absolute -hx-mt-20" id="setting-up-zfs-storageh2"></span>
-    <a href="#setting-up-zfs-storageh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 9: Install ZFS</h3><span class="hx-absolute -hx-mt-20" id="step-9-install-zfsh3"></span>
-    <a href="#step-9-install-zfsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Choose an appropriate number of placement groups (<code>pg_num</code>) based on your cluster size.</p>
+<h2>Setting Up ZFS Storage<span class="hx-absolute -hx-mt-20" id="setting-up-zfs-storage"></span>
+    <a href="#setting-up-zfs-storage" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>Step 9: Install ZFS<span class="hx-absolute -hx-mt-20" id="step-9-install-zfs"></span>
+    <a href="#step-9-install-zfs" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Install ZFS on Each Node</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Install ZFS on Each Node*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Ensure that ZFS is installed on all nodes by running:</p></p>
+<p>Ensure that ZFS is installed on all nodes by running:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>apt install zfsutils-linux</code></code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 10: Create ZFS Pool</h3><span class="hx-absolute -hx-mt-20" id="step-10-create-zfs-poolh3"></span>
-    <a href="#step-10-create-zfs-poolh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 10: Create ZFS Pool<span class="hx-absolute -hx-mt-20" id="step-10-create-zfs-pool"></span>
+    <a href="#step-10-create-zfs-pool" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Create a ZFS Pool on One Node</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Create a ZFS Pool on One Node*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Choose a disk or partition for your ZFS pool:</p></p>
+<p>Choose a disk or partition for your ZFS pool:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>zpool create &lt;pool_name&gt; &lt;disk&gt;</code></code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enable Replication Across Nodes</strong> (if needed):</li>
-<!-- /wp:list-item --></ol>
+- ***Enable Replication Across Nodes***  (if needed): 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>For high availability with ZFS, consider setting up replication between nodes using <code>zfs send</code> and <code>zfs receive</code>.</li>
-<!-- /wp:list-item --></ul>
+- For high availability with ZFS, consider setting up replication between nodes using <code>zfs send</code> and <code>zfs receive</code>. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 11: Configure Storage in Proxmox</h3><span class="hx-absolute -hx-mt-20" id="step-11-configure-storage-in-proxmoxh3"></span>
-    <a href="#step-11-configure-storage-in-proxmoxh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 11: Configure Storage in Proxmox<span class="hx-absolute -hx-mt-20" id="step-11-configure-storage-in-proxmox"></span>
+    <a href="#step-11-configure-storage-in-proxmox" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Add ZFS Storage to Proxmox</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Add ZFS Storage to Proxmox*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>In the Proxmox web interface, go to Datacenter &gt; Storage &gt; Add &gt; ZFS.</li>
+- In the Proxmox web interface, go to Datacenter &gt; Storage &gt; Add &gt; ZFS. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Select your created pool from the dropdown menu.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configure options such as content types (e.g., VMs, backups).</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Best Practices for Management</h2><span class="hx-absolute -hx-mt-20" id="best-practices-for-managementh2"></span>
-    <a href="#best-practices-for-managementh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Best Practices for Management<span class="hx-absolute -hx-mt-20" id="best-practices-for-management"></span>
+    <a href="#best-practices-for-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Monitor Your Cluster</strong>: Regularly check the health of your Proxmox cluster using built-in monitoring tools or external solutions like Prometheus.</li>
+- ***Monitor Your Cluster*** : Regularly check the health of your Proxmox cluster using built-in monitoring tools or external solutions like Prometheus. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Regular Backups</strong>: Implement a robust backup strategy for both VMs and storage configurations.</li>
+<ul>
+<li><em><strong>Regular Backups</strong></em> : Implement a robust backup strategy for both VMs and storage configurations.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Performance Tuning</strong>: Adjust settings based on workload requirements; consider tuning parameters like I/O scheduler settings or network configurations.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Performance Tuning</strong></em> : Adjust settings based on workload requirements; consider tuning parameters like I/O scheduler settings or network configurations.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Setting up a Proxmox cluster with either Ceph or ZFS can significantly enhance your virtualization capabilities by providing high availability and scalability. By following these steps carefully, you can establish a robust infrastructure tailored to your needs. Whether you choose Ceph for its distributed nature or ZFS for its simplicity and data integrity features will depend on your specific use case and resource availability. Always remember to monitor performance continuously and adapt configurations as necessary to ensure optimal operation of your virtualized environment.</p></p>
-<p>Citations:<br>[1] <a href="https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster" target="_blank" rel="noopener" title=""><a href="https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster" target="_blank" rel="noopener">https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster</a></a><br>[2] <a href="https://www.youtube.com/watch?v=-qk_P9SKYK4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=-qk_P9SKYK4</a><br>[3] <a href="https://www.youtube.com/watch?v=a7OMi3bw0pQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=a7OMi3bw0pQ</a><br>[4] <a href="https://forum.proxmox.com/threads/solution-ceph-on-zfs.98437/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/solution-ceph-on-zfs.98437/</a><br>[5] <a href="https://forum.proxmox.com/threads/for-best-performance-proxmox-cluster-with-ceph-or-zfs.129635/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/for-best-performance-proxmox-cluster-with-ceph-or-zfs.129635/</a><br>[6] <a href="https://forum.proxmox.com/threads/setting-up-proxmox-cluster-with-zfs-and-ceph-using-4-ssd.144719/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/setting-up-proxmox-cluster-with-zfs-and-ceph-using-4-ssd.144719/</a><br>[7] <a href="https://www.youtube.com/watch?v=Eli3uYzgC8A" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Eli3uYzgC8A</a><br>[8] <a href="https://www.reddit.com/r/Proxmox/comments/1bbhykr/zfs_or_ceph/" target="_blank" rel="noopener">https://www.reddit.com/r/Proxmox/comments/1bbhykr/zfs_or_ceph/</a></p></p>
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Setting up a Proxmox cluster with either Ceph or ZFS can significantly enhance your virtualization capabilities by providing high availability and scalability. By following these steps carefully, you can establish a robust infrastructure tailored to your needs. Whether you choose Ceph for its distributed nature or ZFS for its simplicity and data integrity features will depend on your specific use case and resource availability. Always remember to monitor performance continuously and adapt configurations as necessary to ensure optimal operation of your virtualized environment.</p>
+<p>Citations:<br>[1] <a href="https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster" target="_blank" rel="noopener" title=""><a href="https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster" target="_blank" rel="noopener">https://pve.proxmox.com/wiki/Deploy_Hyper-Converged_Ceph_Cluster</a></a><br>[2] <a href="https://www.youtube.com/watch?v=-qk_P9SKYK4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=-qk_P9SKYK4</a><br>[3] <a href="https://www.youtube.com/watch?v=a7OMi3bw0pQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=a7OMi3bw0pQ</a><br>[4] <a href="https://forum.proxmox.com/threads/solution-ceph-on-zfs.98437/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/solution-ceph-on-zfs.98437/</a><br>[5] <a href="https://forum.proxmox.com/threads/for-best-performance-proxmox-cluster-with-ceph-or-zfs.129635/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/for-best-performance-proxmox-cluster-with-ceph-or-zfs.129635/</a><br>[6] <a href="https://forum.proxmox.com/threads/setting-up-proxmox-cluster-with-zfs-and-ceph-using-4-ssd.144719/" target="_blank" rel="noopener">https://forum.proxmox.com/threads/setting-up-proxmox-cluster-with-zfs-and-ceph-using-4-ssd.144719/</a><br>[7] <a href="https://www.youtube.com/watch?v=Eli3uYzgC8A" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Eli3uYzgC8A</a><br>[8] <a href="https://www.reddit.com/r/Proxmox/comments/1bbhykr/zfs_or_ceph/" target="_blank" rel="noopener">https://www.reddit.com/r/Proxmox/comments/1bbhykr/zfs_or_ceph/</a></p>
 
         </div>
         

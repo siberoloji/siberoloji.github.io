@@ -25,11 +25,11 @@
         
         
         &lt;!-- wp:quote --&gt;
-&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Çoğu durumda, viewBinding, findViewById&amp;rsquo;nin yerini alır&lt;/p&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.&lt;/em&gt;
+&lt;p&gt;Çoğu durumda, viewBinding, findViewById&amp;rsquo;nin yerini alır
 &lt;cite&gt;Credit: &lt;a rel=&#34;noreferrer noopener&#34; href=&#34;https://developer.android.com/topic/libraries/view-binding&#34; target=&#34;_blank&#34;&gt;developer.android.com&lt;/a&gt;&lt;/cite&gt;&lt;/blockquote&gt;&lt;/p&gt;
 &lt;!-- /wp:quote --&gt;
-&lt;p&gt;ViewBinding&amp;rsquo;i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;ViewBinding&amp;rsquo;i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre title=&#34;Build.gradle code&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android {
     compileSdk 32
@@ -40,7 +40,7 @@
 ....
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding&amp;rsquo;i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding&amp;rsquo;i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre title=&#34;After changing findViewById lines&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val EXTRA_MESSAGE = &#34;com.example.myfirstapp.MESSAGE&#34;
 

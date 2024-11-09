@@ -20,41 +20,41 @@ title: Linux Mint 20.3 &#8220;Una&#8221; Released
 url: /linux-mint-20-3-una-released/
 ---
 
-  Linux Mint 20.3 is a long term support release which will be supported until 2025. It comes with updated software and brings refinements and many new features to make your desktop experience more comfortable.</p>
+  Linux Mint 20.3 is a long term support release which will be supported until 2025. It comes with updated software and brings refinements and many new features to make your desktop experience more comfortable.
  
 
-  At the time of this writing, Linux mint was ranked #4 on the <a href="https://distrowatch.com/" target="_blank" rel="noreferrer noopener">distrowatch</a> site. Ubuntu-based distribution has a lot of new features and improvements. Let's summarize the new features below.</p>
+  At the time of this writing, Linux mint was ranked #4 on the <a href="https://distrowatch.com/" target="_blank" rel="noreferrer noopener">distrowatch</a> site. Ubuntu-based distribution has a lot of new features and improvements. Let's summarize the new features below.
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Hypnotix IPTV Player</li>
+ <!-- wp:list-item -->
+- Hypnotix IPTV Player 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Thingy Document Manager</li>
+- Thingy Document Manager 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sticky Notes</li>
+- Sticky Notes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Theme Changes</li>
+- Theme Changes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Calendar Integration</li>
+- Calendar Integration 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Artwork improvements</li>
+- Artwork improvements 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>System improvements</li>
-<!-- /wp:list-item --></ul>
+- System improvements 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  You can review the details of innovations and features on the <a href="https://www.linuxmint.com/rel_una_cinnamon_whatsnew.php" target="_blank" rel="noreferrer noopener">Linux Mint announcement page</a>.</p>
+  You can review the details of innovations and features on the <a href="https://www.linuxmint.com/rel_una_cinnamon_whatsnew.php" target="_blank" rel="noreferrer noopener">Linux Mint announcement page</a>.
  

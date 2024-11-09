@@ -25,121 +25,129 @@
         
         
         &lt;!-- wp:jetpack/markdown {&#34;source&#34;:&#34;Configuring mod_md on AlmaLinux 9 is an essential step for users looking to implement automatic management of Let&#39;s Encrypt SSL certificates for Apache-based web servers. With **mod_md** (short for *modular mod_md*), Apache 2.4+ users can simplify SSL certificate management by allowing automatic creation, renewal, and loading of certificates. This guide will take you through the process, step-by-step, to ensure a smooth setup on AlmaLinux 9, an enterprise-grade, open-source Linux OS.\n\n\u002d\u002d-\n\n### **1. Introduction to mod_md**\n\n**mod_md** is an Apache module that manages SSL certificates directly on the server. It communicates with the Let&#39;s Encrypt certificate authority (CA) to automate the generation and renewal of SSL certificates, ensuring your website remains secure without manual intervention.\n\n\u002d\u002d-\n\n### **2. Why Use mod_md on AlmaLinux 9?**\n\n- **Automated Certificate Management**: mod_md minimizes manual SSL handling by managing the entire SSL lifecycle, from issuing to renewal.\n- **Enhanced Security**: The automatic renewal feature of mod_md keeps your site protected, maintaining a high level of SSL encryption.\n- **Compatibility with Let&#39;s Encrypt**: mod_md works seamlessly with Let&#39;s Encrypt, one of the most popular CAs for SSL certificates.\n\n\u002d\u002d-\n\n### **3. Prerequisites for mod_md Configuration**\n\nBefore starting the configuration process, ensure that:\n\n1. **AlmaLinux 9** is up and running.\n2. **Apache HTTP Server (version 2.4.30 or higher)** is installed.\n3. **Root or sudo access** to install and configure software.\n4. **Domain name(s)** you own and have control over.\n\n\u002d\u002d-\n\n### **4. Step 1: Installing mod_md on AlmaLinux 9**\n\nThe first step is to check if mod_md is installed as part of the Apache installation on AlmaLinux 9.\n\n1. **Install Apache** (if it isn&#39;t already installed):\n\n   ```bash\n   sudo dnf install httpd -y\n   ```\n\n2. **Enable mod_md**:\n\n   AlmaLinux 9 typically includes mod_md in the Apache installation. To confirm, use the command:\n\n   ```bash\n   httpd -M | grep md\n   ```\n\n   If the output shows `md_module`, mod_md is already enabled. If it isn’t, you may need to install additional packages or update Apache.\n\n3. **Start and Enable Apache**:\n\n   ```bash\n   sudo systemctl start httpd\n   sudo systemctl enable httpd\n   ```\n\n\u002d\u002d-\n\n### **5. Step 2: Configuring mod_md**\n\nThe core configuration for mod_md occurs within the Apache configuration files. Follow these steps to ensure mod_md is set up properly:\n\n1. **Edit the Apache configuration file** (typically located in `/etc/httpd/conf/httpd.conf`):\n\n   ```bash\n   sudo nano /etc/httpd/conf/httpd.conf\n   ```\n\n2. **Load mod_md**: Add the following lines if they aren’t present:\n\n   ```apache\n   LoadModule md_module modules/mod_md.so\n   ```\n\n3. **Define Managed Domains**: mod_md requires specifying the domain(s) you wish to manage. Add the following lines to configure mod_md for your domain (replace `yourdomain.com` with your actual domain):\n\n   ```apache\n   MDomain yourdomain.com www.yourdomain.com\n   ```\n\n4. **Specify the Contact Email**: This email is used to communicate with Let&#39;s Encrypt in case of issues. Add the line:\n\n   ```apache\n   MDContactEmail admin@yourdomain.com\n   ```\n\n5. **Save and Close** the configuration file.\n\n\u002d\u002d-\n\n### **6. Step 3: Setting up Domain Management (MDomain)**\n\nThe `MDomain` directive defines which domains mod_md should manage. If you have multiple domains, you can add them in the same directive:\n\n```apache\nMDomain example.com www.example.com sub.example.com\n```\n\nmod_md will create a single certificate valid for all specified domains. Ensure that DNS records for each domain point to your server.\n\n\u002d\u002d-\n\n### **7. Step 4: Configuring mod_md for Automatic Certificate Renewal**\n\nmod_md automates certificate renewal for your domains. By default, it will attempt to renew certificates when they are within 30 days of expiration. You can adjust this setting as follows:\n\n1. **Edit Apache configuration file** and add the `MDRenewWindow` directive:\n\n   ```apache\n   MDRenewWindow 33%\n   ```\n\n   This example sets the renewal window to 33% of the certificate’s lifetime, which is approximately 30 days for Let’s Encrypt certificates.\n\n2. **Specify Challenge Types**: Configure mod_md to use the `http-01` challenge (default) for domain validation:\n\n   ```apache\n   MDChallengeHttp01 on\n   ```\n\n   This lets mod_md validate domains via HTTP, which is the most common method.\n\n\u002d\u002d-\n\n### **8. Step 5: Testing and Enabling HTTPS**\n\nWith mod_md set up, you can test it by requesting a certificate manually. Follow these steps:\n\n1. **Restart Apache** to apply the configuration changes:\n\n   ```bash\n   sudo systemctl restart httpd\n   ```\n\n2. **Request a Certificate** manually (useful for testing):\n\n   ```bash\n   sudo apachectl -M yourdomain.com\n   ```\n\n3. **Verify Certificate Installation**:\n\n   Visit `https://yourdomain.com` in your web browser to confirm the SSL certificate is active.\n\n4. **Set HTTPS as the Default Protocol**:\n\n   Edit the Virtual Host configuration for your domain in `/etc/httpd/conf.d/ssl.conf`, adding the following:\n\n   ```apache\n   \n       ServerName yourdomain.com\n       DocumentRoot /var/www/html\n       SSLEngine on\n       SSLCertificateFile /path/to/fullchain.pem\n       SSLCertificateKeyFile /path/to/privkey.pem\n   \n   ```\n\n   Be sure to replace `/path/to/fullchain.pem` and `/path/to/privkey.pem` with the actual paths where mod_md stores certificates (typically under `/var/www/.well-known/acme-challenge`).\n\n\u002d\u002d-\n\n### **9. Troubleshooting Common Issues**\n\n- **Issue**: *Certificate renewal fails.*\n  - **Solution**: Verify DNS settings and domain ownership. Ensure Apache is configured to listen on ports 80 and 443.\n  \n- **Issue**: *Permission denied errors when renewing certificates.*\n  - **Solution**: Check permissions on the challenge directories. Ensure Apache has write access to `.well-known/acme-challenge`.\n\n- **Issue**: *HTTP challenges failing.*\n  - **Solution**: Confirm port 80 is open and no firewall is blocking access. This can usually be checked using `firewalld`.\n\n\u002d\u002d-\n\n### **10. FAQ on mod_md Configuration for AlmaLinux 9**\n\n**Q1: What is the main benefit of using mod_md with Let&#39;s Encrypt on AlmaLinux?**  \nA: The primary benefit is automation; mod_md manages SSL certificates, including automatic renewals, without manual intervention.\n\n**Q2: Do I need a dedicated IP address to use mod_md?**  \nA: No, mod_md works with virtual hosts, so a dedicated IP is not required.\n\n**Q3: How can I monitor the status of my certificates?**  \nA: You can use `apachectl -M` or check the `/var/www/.well-known/acme-challenge` directory to monitor certificate status.\n\n**Q4: What if I want to disable mod_md for a specific domain?**  \nA: Remove the `MDomain` directive for that domain from the Apache configuration and restart Apache.\n\n**Q5: How often will mod_md attempt to renew my certificates?**  \nA: By default, mod_md renews certificates within 30 days of expiration, which can be configured with `MDRenewWindow`.\n\n**Q6: Is mod_md compatible with other CAs besides Let&#39;s Encrypt?**  \nA: Yes, mod_md supports ACME protocols compatible with other CAs. However, Let&#39;s Encrypt is the default choice.\n\n\u002d\u002d-\n\nWith this configuration, mod_md on AlmaLinux 9 enables a smooth, secure, and automatic SSL setup. By following these steps, you ensure your web server is protected with the latest certificates without manual renewals.&#34;} --&gt;
-&lt;div class=&#34;wp-block-jetpack-markdown&#34;&gt; Configuring mod_md on AlmaLinux 9 is an essential step for users looking to implement automatic management of Let’s Encrypt SSL certificates for Apache-based web servers. With &lt;strong&gt;mod_md&lt;/strong&gt; (short for &lt;em&gt;modular mod_md&lt;/em&gt;), Apache 2.4+ users can simplify SSL certificate management by allowing automatic creation, renewal, and loading of certificates. This guide will take you through the process, step-by-step, to ensure a smooth setup on AlmaLinux 9, an enterprise-grade, open-source Linux OS. 
+&lt;div class=&#34;wp-block-jetpack-markdown&#34;&gt; Configuring mod_md on AlmaLinux 9 is an essential step for users looking to implement automatic management of Let’s Encrypt SSL certificates for Apache-based web servers. With ***mod_md***  (short for &lt;em&gt;modular mod_md&lt;/em&gt;), Apache 2.4+ users can simplify SSL certificate management by allowing automatic creation, renewal, and loading of certificates. This guide will take you through the process, step-by-step, to ensure a smooth setup on AlmaLinux 9, an enterprise-grade, open-source Linux OS. 
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;1. Introduction to mod_md&lt;/strong&gt;&lt;/h3&gt;
- &lt;strong&gt;mod_md&lt;/strong&gt; is an Apache module that manages SSL certificates directly on the server. It communicates with the Let’s Encrypt certificate authority (CA) to automate the generation and renewal of SSL certificates, ensuring your website remains secure without manual intervention. 
+### ***1. Introduction to mod_md*** 
+ ***mod_md***  is an Apache module that manages SSL certificates directly on the server. It communicates with the Let’s Encrypt certificate authority (CA) to automate the generation and renewal of SSL certificates, ensuring your website remains secure without manual intervention. 
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;2. Why Use mod_md on AlmaLinux 9?&lt;/strong&gt;&lt;/h3&gt;
+### ***2. Why Use mod_md on AlmaLinux 9?*** 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Automated Certificate Management&lt;/strong&gt;: mod_md minimizes manual SSL handling by managing the entire SSL lifecycle, from issuing to renewal.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Enhanced Security&lt;/strong&gt;: The automatic renewal feature of mod_md keeps your site protected, maintaining a high level of SSL encryption.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Compatibility with Let’s Encrypt&lt;/strong&gt;: mod_md works seamlessly with Let’s Encrypt, one of the most popular CAs for SSL certificates.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Automated Certificate Management&lt;/strong&gt;&lt;/em&gt; : mod_md minimizes manual SSL handling by managing the entire SSL lifecycle, from issuing to renewal.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Enhanced Security&lt;/strong&gt;&lt;/em&gt; : The automatic renewal feature of mod_md keeps your site protected, maintaining a high level of SSL encryption.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Compatibility with Let’s Encrypt&lt;/strong&gt;&lt;/em&gt; : mod_md works seamlessly with Let’s Encrypt, one of the most popular CAs for SSL certificates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;3. Prerequisites for mod_md Configuration&lt;/strong&gt;&lt;/h3&gt;
+### ***3. Prerequisites for mod_md Configuration*** 
  Before starting the configuration process, ensure that: 
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;AlmaLinux 9&lt;/strong&gt; is up and running.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Apache HTTP Server (version 2.4.30 or higher)&lt;/strong&gt; is installed.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Root or sudo access&lt;/strong&gt; to install and configure software.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Domain name(s)&lt;/strong&gt; you own and have control over.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;AlmaLinux 9&lt;/strong&gt;&lt;/em&gt;  is up and running.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Apache HTTP Server (version 2.4.30 or higher)&lt;/strong&gt;&lt;/em&gt;  is installed.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Root or sudo access&lt;/strong&gt;&lt;/em&gt;  to install and configure software.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Domain name(s)&lt;/strong&gt;&lt;/em&gt;  you own and have control over.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;4. Step 1: Installing mod_md on AlmaLinux 9&lt;/strong&gt;&lt;/h3&gt;
+### ***4. Step 1: Installing mod_md on AlmaLinux 9*** 
  The first step is to check if mod_md is installed as part of the Apache installation on AlmaLinux 9. 
-&lt;ol&gt;
-&lt;li&gt;
- &lt;strong&gt;Install Apache&lt;/strong&gt; (if it isn’t already installed): 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Install Apache&lt;/strong&gt;&lt;/em&gt;  (if it isn’t already installed):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo dnf install httpd -y
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Enable mod_md&lt;/strong&gt;: 
- AlmaLinux 9 typically includes mod_md in the Apache installation. To confirm, use the command: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Enable mod_md&lt;/strong&gt;&lt;/em&gt; :
+AlmaLinux 9 typically includes mod_md in the Apache installation. To confirm, use the command:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;httpd -M | grep md
 &lt;/code&gt;&lt;/pre&gt;
- If the output shows &lt;code&gt;md_module&lt;/code&gt;, mod_md is already enabled. If it isn’t, you may need to install additional packages or update Apache. 
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Start and Enable Apache&lt;/strong&gt;: 
+&lt;p&gt;If the output shows &lt;code&gt;md_module&lt;/code&gt;, mod_md is already enabled. If it isn’t, you may need to install additional packages or update Apache.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Start and Enable Apache&lt;/strong&gt;&lt;/em&gt; :&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl start httpd
 sudo systemctl enable httpd
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;5. Step 2: Configuring mod_md&lt;/strong&gt;&lt;/h3&gt;
+### ***5. Step 2: Configuring mod_md*** 
  The core configuration for mod_md occurs within the Apache configuration files. Follow these steps to ensure mod_md is set up properly: 
-&lt;ol&gt;
-&lt;li&gt;
- &lt;strong&gt;Edit the Apache configuration file&lt;/strong&gt; (typically located in &lt;code&gt;/etc/httpd/conf/httpd.conf&lt;/code&gt;): 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Edit the Apache configuration file&lt;/strong&gt;&lt;/em&gt;  (typically located in &lt;code&gt;/etc/httpd/conf/httpd.conf&lt;/code&gt;):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo nano /etc/httpd/conf/httpd.conf
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Load mod_md&lt;/strong&gt;: Add the following lines if they aren’t present: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Load mod_md&lt;/strong&gt;&lt;/em&gt; : Add the following lines if they aren’t present:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;LoadModule md_module modules/mod_md.so
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Define Managed Domains&lt;/strong&gt;: mod_md requires specifying the domain(s) you wish to manage. Add the following lines to configure mod_md for your domain (replace &lt;code&gt;yourdomain.com&lt;/code&gt; with your actual domain): 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Define Managed Domains&lt;/strong&gt;&lt;/em&gt; : mod_md requires specifying the domain(s) you wish to manage. Add the following lines to configure mod_md for your domain (replace &lt;code&gt;yourdomain.com&lt;/code&gt; with your actual domain):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;MDomain yourdomain.com www.yourdomain.com
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Specify the Contact Email&lt;/strong&gt;: This email is used to communicate with Let’s Encrypt in case of issues. Add the line: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Specify the Contact Email&lt;/strong&gt;&lt;/em&gt; : This email is used to communicate with Let’s Encrypt in case of issues. Add the line:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;MDContactEmail admin@yourdomain.com
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Save and Close&lt;/strong&gt; the configuration file. 
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Save and Close&lt;/strong&gt;&lt;/em&gt;  the configuration file.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;6. Step 3: Setting up Domain Management (MDomain)&lt;/strong&gt;&lt;/h3&gt;
+### ***6. Step 3: Setting up Domain Management (MDomain)*** 
  The &lt;code&gt;MDomain&lt;/code&gt; directive defines which domains mod_md should manage. If you have multiple domains, you can add them in the same directive: 
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;MDomain example.com www.example.com sub.example.com
 &lt;/code&gt;&lt;/pre&gt;
  mod_md will create a single certificate valid for all specified domains. Ensure that DNS records for each domain point to your server. 
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;7. Step 4: Configuring mod_md for Automatic Certificate Renewal&lt;/strong&gt;&lt;/h3&gt;
+### ***7. Step 4: Configuring mod_md for Automatic Certificate Renewal*** 
  mod_md automates certificate renewal for your domains. By default, it will attempt to renew certificates when they are within 30 days of expiration. You can adjust this setting as follows: 
-&lt;ol&gt;
-&lt;li&gt;
- &lt;strong&gt;Edit Apache configuration file&lt;/strong&gt; and add the &lt;code&gt;MDRenewWindow&lt;/code&gt; directive: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Edit Apache configuration file&lt;/strong&gt;&lt;/em&gt;  and add the &lt;code&gt;MDRenewWindow&lt;/code&gt; directive:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;MDRenewWindow 33%
 &lt;/code&gt;&lt;/pre&gt;
- This example sets the renewal window to 33% of the certificate’s lifetime, which is approximately 30 days for Let’s Encrypt certificates. 
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Specify Challenge Types&lt;/strong&gt;: Configure mod_md to use the &lt;code&gt;http-01&lt;/code&gt; challenge (default) for domain validation: 
+&lt;p&gt;This example sets the renewal window to 33% of the certificate’s lifetime, which is approximately 30 days for Let’s Encrypt certificates.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Specify Challenge Types&lt;/strong&gt;&lt;/em&gt; : Configure mod_md to use the &lt;code&gt;http-01&lt;/code&gt; challenge (default) for domain validation:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;MDChallengeHttp01 on
 &lt;/code&gt;&lt;/pre&gt;
- This lets mod_md validate domains via HTTP, which is the most common method. 
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;This lets mod_md validate domains via HTTP, which is the most common method.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;8. Step 5: Testing and Enabling HTTPS&lt;/strong&gt;&lt;/h3&gt;
+### ***8. Step 5: Testing and Enabling HTTPS*** 
  With mod_md set up, you can test it by requesting a certificate manually. Follow these steps: 
-&lt;ol&gt;
-&lt;li&gt;
- &lt;strong&gt;Restart Apache&lt;/strong&gt; to apply the configuration changes: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Restart Apache&lt;/strong&gt;&lt;/em&gt;  to apply the configuration changes:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl restart httpd
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Request a Certificate&lt;/strong&gt; manually (useful for testing): 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Request a Certificate&lt;/strong&gt;&lt;/em&gt;  manually (useful for testing):&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apachectl -M yourdomain.com
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Verify Certificate Installation&lt;/strong&gt;: 
- Visit &lt;code&gt;https://yourdomain.com&lt;/code&gt; in your web browser to confirm the SSL certificate is active. 
-&lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Set HTTPS as the Default Protocol&lt;/strong&gt;: 
- Edit the Virtual Host configuration for your domain in &lt;code&gt;/etc/httpd/conf.d/ssl.conf&lt;/code&gt;, adding the following: 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Verify Certificate Installation&lt;/strong&gt;&lt;/em&gt; :
+Visit &lt;code&gt;&lt;a href=&#34;https://yourdomain.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yourdomain.com&lt;/a&gt;&lt;/code&gt; in your web browser to confirm the SSL certificate is active.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Set HTTPS as the Default Protocol&lt;/strong&gt;&lt;/em&gt; :
+Edit the Virtual Host configuration for your domain in &lt;code&gt;/etc/httpd/conf.d/ssl.conf&lt;/code&gt;, adding the following:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-apache&#34;&gt;&amp;lt;VirtualHost *:443&amp;gt;
     ServerName yourdomain.com
     DocumentRoot /var/www/html
@@ -148,44 +156,43 @@ sudo systemctl enable httpd
     SSLCertificateKeyFile /path/to/privkey.pem
 &amp;lt;/VirtualHost&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
- Be sure to replace &lt;code&gt;/path/to/fullchain.pem&lt;/code&gt; and &lt;code&gt;/path/to/privkey.pem&lt;/code&gt; with the actual paths where mod_md stores certificates (typically under &lt;code&gt;/var/www/.well-known/acme-challenge&lt;/code&gt;). 
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Be sure to replace &lt;code&gt;/path/to/fullchain.pem&lt;/code&gt; and &lt;code&gt;/path/to/privkey.pem&lt;/code&gt; with the actual paths where mod_md stores certificates (typically under &lt;code&gt;/var/www/.well-known/acme-challenge&lt;/code&gt;).&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;9. Troubleshooting Common Issues&lt;/strong&gt;&lt;/h3&gt;
+### ***9. Troubleshooting Common Issues*** 
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Issue&lt;/strong&gt;&lt;/em&gt; : &lt;em&gt;Certificate renewal fails.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
- &lt;strong&gt;Issue&lt;/strong&gt;: &lt;em&gt;Certificate renewal fails.&lt;/em&gt; 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Verify DNS settings and domain ownership. Ensure Apache is configured to listen on ports 80 and 443.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/em&gt; : Verify DNS settings and domain ownership. Ensure Apache is configured to listen on ports 80 and 443.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Issue&lt;/strong&gt;&lt;/em&gt; : &lt;em&gt;Permission denied errors when renewing certificates.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
- &lt;strong&gt;Issue&lt;/strong&gt;: &lt;em&gt;Permission denied errors when renewing certificates.&lt;/em&gt; 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Check permissions on the challenge directories. Ensure Apache has write access to &lt;code&gt;.well-known/acme-challenge&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/em&gt; : Check permissions on the challenge directories. Ensure Apache has write access to &lt;code&gt;.well-known/acme-challenge&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
- &lt;strong&gt;Issue&lt;/strong&gt;: &lt;em&gt;HTTP challenges failing.&lt;/em&gt; 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Confirm port 80 is open and no firewall is blocking access. This can usually be checked using &lt;code&gt;firewalld&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Issue&lt;/strong&gt;&lt;/em&gt; : &lt;em&gt;HTTP challenges failing.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/em&gt; : Confirm port 80 is open and no firewall is blocking access. This can usually be checked using &lt;code&gt;firewalld&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h3&gt;&lt;strong&gt;10. FAQ on mod_md Configuration for AlmaLinux 9&lt;/strong&gt;&lt;/h3&gt;
- &lt;strong&gt;Q1: What is the main benefit of using mod_md with Let’s Encrypt on AlmaLinux?&lt;/strong&gt;&lt;br&gt;
+### ***10. FAQ on mod_md Configuration for AlmaLinux 9*** 
+ ***Q1: What is the main benefit of using mod_md with Let’s Encrypt on AlmaLinux?*** &lt;br&gt;
 A: The primary benefit is automation; mod_md manages SSL certificates, including automatic renewals, without manual intervention. 
- &lt;strong&gt;Q2: Do I need a dedicated IP address to use mod_md?&lt;/strong&gt;&lt;br&gt;
+ ***Q2: Do I need a dedicated IP address to use mod_md?*** &lt;br&gt;
 A: No, mod_md works with virtual hosts, so a dedicated IP is not required. 
- &lt;strong&gt;Q3: How can I monitor the status of my certificates?&lt;/strong&gt;&lt;br&gt;
+ ***Q3: How can I monitor the status of my certificates?*** &lt;br&gt;
 A: You can use &lt;code&gt;apachectl -M&lt;/code&gt; or check the &lt;code&gt;/var/www/.well-known/acme-challenge&lt;/code&gt; directory to monitor certificate status. 
- &lt;strong&gt;Q4: What if I want to disable mod_md for a specific domain?&lt;/strong&gt;&lt;br&gt;
+ ***Q4: What if I want to disable mod_md for a specific domain?*** &lt;br&gt;
 A: Remove the &lt;code&gt;MDomain&lt;/code&gt; directive for that domain from the Apache configuration and restart Apache. 
- &lt;strong&gt;Q5: How often will mod_md attempt to renew my certificates?&lt;/strong&gt;&lt;br&gt;
+ ***Q5: How often will mod_md attempt to renew my certificates?*** &lt;br&gt;
 A: By default, mod_md renews certificates within 30 days of expiration, which can be configured with &lt;code&gt;MDRenewWindow&lt;/code&gt;. 
- &lt;strong&gt;Q6: Is mod_md compatible with other CAs besides Let’s Encrypt?&lt;/strong&gt;&lt;br&gt;
+ ***Q6: Is mod_md compatible with other CAs besides Let’s Encrypt?*** &lt;br&gt;
 A: Yes, mod_md supports ACME protocols compatible with other CAs. However, Let’s Encrypt is the default choice. 
 &lt;hr&gt;
  With this configuration, mod_md on AlmaLinux 9 enables a smooth, secure, and automatic SSL setup. By following these steps, you ensure your web server is protected with the latest certificates without manual renewals. 

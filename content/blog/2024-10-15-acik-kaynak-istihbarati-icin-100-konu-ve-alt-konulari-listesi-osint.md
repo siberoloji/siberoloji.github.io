@@ -31,2616 +31,2616 @@ url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
   İşte 100 OSINT konusunun alt konularıyla birlikte genişletilmiş listesi: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Sosyal Medya Analizi (örneğin Twitter, Facebook)</strong></h3>
+
+ ### 1. ***Sosyal Medya Analizi (örneğin Twitter, Facebook)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/analyzing-sentiment-from-posts-and-comments-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Gönderilerden ve yorumlardan gelen duyguyu analiz etme</a></li>
+- <a href="https://www.siberoloji.com/analyzing-sentiment-from-posts-and-comments-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Gönderilerden ve yorumlardan gelen duyguyu analiz etme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/identifying-fake-or-bot-accounts-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Sahte veya bot hesapların belirlenmesi</a></li>
+- <a href="https://www.siberoloji.com/identifying-fake-or-bot-accounts-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Sahte veya bot hesapların belirlenmesi</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/monitoring-trends-and-hashtags-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Trendleri ve hashtag'leri izleme</a></li>
+- <a href="https://www.siberoloji.com/monitoring-trends-and-hashtags-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Trendleri ve hashtag'leri izleme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/analyzing-social-networks-and-connections-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Sosyal ağları ve bağlantıları analiz etme</a></li>
+- <a href="https://www.siberoloji.com/analyzing-social-networks-and-connections-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Sosyal ağları ve bağlantıları analiz etme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/data-extraction-from-public-profiles-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Genel profillerden veri çıkarma</a></li>
-<!-- /wp:list-item --></ul>
+- <a href="https://www.siberoloji.com/data-extraction-from-public-profiles-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Genel profillerden veri çıkarma</a> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Görüntülerden Coğrafi Konum Takibi</strong></h3>
+
+ ### 2. ***Görüntülerden Coğrafi Konum Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/analyzing-exif-metadata-in-images-for-osint-geolocation-tracking/" target="_blank" rel="noreferrer noopener">Görüntülerdeki EXIF ​​meta verilerinin analizi</a></li>
+- <a href="https://www.siberoloji.com/analyzing-exif-metadata-in-images-for-osint-geolocation-tracking/" target="_blank" rel="noreferrer noopener">Görüntülerdeki EXIF ​​meta verilerinin analizi</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/satellite-imagery-for-location-identification-a-deep-dive-into-osint-geolocation-tracking/" target="_blank" rel="noreferrer noopener">Konum belirleme için uydu görüntüleri</a></li>
+- <a href="https://www.siberoloji.com/satellite-imagery-for-location-identification-a-deep-dive-into-osint-geolocation-tracking/" target="_blank" rel="noreferrer noopener">Konum belirleme için uydu görüntüleri</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/cross-referencing-visual-landmarks-in-images-for-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Görüntülerdeki görsel dönüm noktalarına çapraz referans verme</a></li>
+- <a href="https://www.siberoloji.com/cross-referencing-visual-landmarks-in-images-for-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Görüntülerdeki görsel dönüm noktalarına çapraz referans verme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/reverse-image-search-for-location-discovery-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Konum keşfi için ters görüntü araması</a></li>
+- <a href="https://www.siberoloji.com/reverse-image-search-for-location-discovery-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Konum keşfi için ters görüntü araması</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking/" target="_blank" rel="noreferrer noopener">Sosyal platformlarda coğrafi konum belirlemeyi kitlesel olarak sağlama</a></li>
-<!-- /wp:list-item --></ul>
+- <a href="https://www.siberoloji.com/crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking/" target="_blank" rel="noreferrer noopener">Sosyal platformlarda coğrafi konum belirlemeyi kitlesel olarak sağlama</a> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>Dosyalardan Meta Veri Çıkarımı</strong></h3>
+
+ ### 3. ***Dosyalardan Meta Veri Çıkarımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Belgelerden</a> (PDF, Word, vb.) meta verilerinin çıkarılması</li>
+- <a href="https://www.siberoloji.com/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Belgelerden</a> (PDF, Word, vb.) meta verilerinin çıkarılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/identifying-modification-history-in-images-and-videos-for-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Resim ve videolarda değişiklik geçmişini belirleme</a></li>
+- <a href="https://www.siberoloji.com/identifying-modification-history-in-images-and-videos-for-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Resim ve videolarda değişiklik geçmişini belirleme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/locating-hidden-gps-data-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Fotoğraflardaki gizli GPS verilerini bulma</a></li>
+- <a href="https://www.siberoloji.com/locating-hidden-gps-data-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Fotoğraflardaki gizli GPS verilerini bulma</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/using-metadata-for-document-authenticity-verification-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Belgenin gerçekliğini doğrulamak için meta veri kullanımı</a></li>
+- <a href="https://www.siberoloji.com/using-metadata-for-document-authenticity-verification-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Belgenin gerçekliğini doğrulamak için meta veri kullanımı</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/tools-for-metadata-removal-protecting-privacy-in-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Gizliliği korumak için meta veri kaldırma araçları</a></li>
-<!-- /wp:list-item --></ul>
+- <a href="https://www.siberoloji.com/tools-for-metadata-removal-protecting-privacy-in-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Gizliliği korumak için meta veri kaldırma araçları</a> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. <strong>Sosyal Medya İzleme için OSINT Araçları</strong></h3>
+
+ ### 4. ***Sosyal Medya İzleme için OSINT Araçları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Twitter veri toplama için açık kaynaklı araçlar</a> (örneğin Twint)</li>
+- <a href="https://www.siberoloji.com/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Twitter veri toplama için açık kaynaklı araçlar</a> (örneğin Twint) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/facebook-data-scraping-tools-for-osint/" target="_blank" rel="noreferrer noopener">Facebook veri toplama araçları</a></li>
+- <a href="https://www.siberoloji.com/facebook-data-scraping-tools-for-osint/" target="_blank" rel="noreferrer noopener">Facebook veri toplama araçları</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/mastering-the-multi-platform-monitor-a-guide-to-osint-tools-for-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Birden fazla platformu aynı anda izlemek için araçlar</a></li>
+- <a href="https://www.siberoloji.com/mastering-the-multi-platform-monitor-a-guide-to-osint-tools-for-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Birden fazla platformu aynı anda izlemek için araçlar</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/real-time-data-collection-from-live-streams-for-osint/" target="_blank" rel="noreferrer noopener">Canlı yayınlardan gerçek zamanlı veri toplama</a></li>
+- <a href="https://www.siberoloji.com/real-time-data-collection-from-live-streams-for-osint/" target="_blank" rel="noreferrer noopener">Canlı yayınlardan gerçek zamanlı veri toplama</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/automating-alerts-for-specific-keywords-for-osint/" target="_blank" rel="noreferrer noopener">Belirli anahtar kelimeler veya ifadeler için uyarıları otomatikleştirme</a></li>
-<!-- /wp:list-item --></ul>
+- <a href="https://www.siberoloji.com/automating-alerts-for-specific-keywords-for-osint/" target="_blank" rel="noreferrer noopener">Belirli anahtar kelimeler veya ifadeler için uyarıları otomatikleştirme</a> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. <strong>OSINT için Web Kazıma Teknikleri</strong></h3>
+
+ ### 5. ***OSINT için Web Kazıma Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/scraping-using-python-and-beautifulsoup/" target="_blank" rel="noreferrer noopener">Python ve BeautifulSoup kullanarak kazıma</a></li>
+- <a href="https://www.siberoloji.com/scraping-using-python-and-beautifulsoup/" target="_blank" rel="noreferrer noopener">Python ve BeautifulSoup kullanarak kazıma</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/legal-and-ethical-considerations-for-web-scraping/" target="_blank" rel="noreferrer noopener">Web kazıma için yasal ve etik hususlar</a></li>
+- <a href="https://www.siberoloji.com/legal-and-ethical-considerations-for-web-scraping/" target="_blank" rel="noreferrer noopener">Web kazıma için yasal ve etik hususlar</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/data-cleaning-and-normalization-a-critical-step-in-web-scraping-for-osint/" target="_blank" rel="noreferrer noopener">Veri kazıma işleminden sonra veri temizleme ve normalleştirme</a></li>
+- <a href="https://www.siberoloji.com/data-cleaning-and-normalization-a-critical-step-in-web-scraping-for-osint/" target="_blank" rel="noreferrer noopener">Veri kazıma işleminden sonra veri temizleme ve normalleştirme</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/using-browser-based-tools-web-scraping-techniques-for-osint/" target="_blank" rel="noreferrer noopener">Tarayıcı tabanlı araçları kullanma</a> (örneğin Scrapy, Selenium)</li>
+- <a href="https://www.siberoloji.com/using-browser-based-tools-web-scraping-techniques-for-osint/" target="_blank" rel="noreferrer noopener">Tarayıcı tabanlı araçları kullanma</a> (örneğin Scrapy, Selenium) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/" target="_blank" rel="noreferrer noopener">OSINT amaçları için karanlık web sitelerini taramak</a></li>
-<!-- /wp:list-item --></ul>
+- <a href="https://www.siberoloji.com/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/" target="_blank" rel="noreferrer noopener">OSINT amaçları için karanlık web sitelerini taramak</a> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 6. <strong>Kolluk Kuvvetlerinde OSINT</strong></h3>
+
+ ### 6. ***Kolluk Kuvvetlerinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık çevrimiçi forumlardan kanıt toplama</li>
+- Kamuya açık çevrimiçi forumlardan kanıt toplama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ceza davaları için dijital ayak izlerinin araştırılması</li>
+- Ceza davaları için dijital ayak izlerinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medya faaliyetlerinin tehditlere karşı izlenmesi</li>
+- Sosyal medya faaliyetlerinin tehditlere karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kolluk kuvvetleri tarafından kullanılan araçlar</li>
+- Kolluk kuvvetleri tarafından kullanılan araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı kamu kayıtlarıyla çapraz referanslama</li>
-<!-- /wp:list-item --></ul>
+- Sosyal medyayı kamu kayıtlarıyla çapraz referanslama 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. <strong>Kamuya Açık Veritabanlarının Analizi</strong></h3>
+
+ ### 7. ***Kamuya Açık Veritabanlarının Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuoyuna sunulan oylama kayıtları ve siyasi bağlantı</li>
+- Kamuoyuna sunulan oylama kayıtları ve siyasi bağlantı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Nüfus sayımı verileri ve demografik analiz</li>
+- Nüfus sayımı verileri ve demografik analiz 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şirket sicilleri ve mülkiyet bilgileri</li>
+- Şirket sicilleri ve mülkiyet bilgileri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık suç verileri ve olay haritalaması</li>
+- Açık suç verileri ve olay haritalaması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Veri erişimi için FOIA talepleri</li>
-<!-- /wp:list-item --></ul>
+- Veri erişimi için FOIA talepleri 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 8. <strong>OSINT kullanarak Kurumsal Casusluk</strong></h3>
+
+ ### 8. ***OSINT kullanarak Kurumsal Casusluk*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Rakiplerin kamuya açık belgelerinin araştırılması</li>
+- Rakiplerin kamuya açık belgelerinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Üç aylık raporlardan finansal bilgilerin çıkarılması</li>
+- Üç aylık raporlardan finansal bilgilerin çıkarılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çalışanların LinkedIn profillerini izleme</li>
+- Çalışanların LinkedIn profillerini izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yenilik trendleri için patent başvurularının izlenmesi</li>
+- Yenilik trendleri için patent başvurularının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurumsal tedarik zincirlerinin tersine mühendisliği</li>
-<!-- /wp:list-item --></ul>
+- Kurumsal tedarik zincirlerinin tersine mühendisliği 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 9. <strong>Kripto Para İşlemlerinin Takibi</strong></h3>
+
+ ### 9. ***Kripto Para İşlemlerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Bitcoin, Ethereum vb. için Blockchain keşifçileri.</li>
+- Bitcoin, Ethereum vb. için Blockchain keşifçileri. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cüzdan sahipliği modellerinin belirlenmesi</li>
+- Cüzdan sahipliği modellerinin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasadışı işlemlerin akışını takip etmek</li>
+- Yasadışı işlemlerin akışını takip etmek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şüpheli faaliyetler için borsa platformlarının izlenmesi</li>
+- Şüpheli faaliyetler için borsa platformlarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Adli analiz için genel blok zinciri verilerinin kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Adli analiz için genel blok zinciri verilerinin kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 10. <strong>Dark Web OSINT Araştırmaları</strong></h3>
+
+ ### 10. ***Dark Web OSINT Araştırmaları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Karanlık web pazar yerleri ve gizli servisler</li>
+- Karanlık web pazar yerleri ve gizli servisler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tehditler açısından karanlık ağ forumlarının izlenmesi</li>
+- Tehditler açısından karanlık ağ forumlarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT'te anonimlik ve şifreleme teknikleri</li>
+- OSINT'te anonimlik ve şifreleme teknikleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Karanlık web'de gezinme ve analiz etme araçları</li>
+- Karanlık web'de gezinme ve analiz etme araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Karanlık web soruşturmalarının hukuki zorlukları</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
-
-<!-- wp:heading {"level":3} -->
- ### 11. <strong>Sahte Haber ve Yanlış Bilgi Tespiti</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yanlış bilgi yayan botları ve sahte hesapları tespit etmek</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Güvenilirlik açısından medya kaynaklarının analizi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Görüntünün gerçekliğini doğrulamak için ters görüntü  araması yapın</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>İddiaları çapraz referanslamak için gerçek kontrol platformlarını kullanma</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sahte bilgileri tespit etmek için makine öğrenimi araçları</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 12. <strong>Siber Güvenlik Tehdit Avı için OSINT</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Açığa çıkan varlıkları ve kimlik bilgilerini belirleme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Veri ihlallerine yönelik yeraltı forumlarının izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Potansiyel saldırganlar hakkında istihbarat toplamak</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sosyal mühendislik yoluyla kimlik avı kampanyalarının izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Bir kuruluşun dijital ayak izinin güvenlik açıklarına yönelik haritalanması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 13. <strong>Nakliye ve Deniz Trafiğini Takip Etme</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Gemi hareketlerini izlemek için AIS verilerinin kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Deniz takibi için açık kaynaklı araçlar</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Gemi tanımlaması için uydu görüntüleri</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Nakliye rotası verilerinin trendler açısından analizi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Gümrük ve ticaret verileriyle çapraz referanslama</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 14. <strong>Hava Trafiğini İzlemek İçin OSINT (ADS-B)</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ticari uçuşları izlemek için ADS-B verilerinin kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Özel ve askeri uçakların tanımlanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Açık kaynaklı uçuş izleme platformları (örneğin Flightradar24)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Uçuş yollarını ve irtifaları analiz etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Havacılık olay raporlarının çapraz referanslanması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 15. <strong>Gazetecilik için OSINT ve Açık Veri</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Araştırmacı gazetecilik için açık kaynaklı araçların kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kamu kayıtlarının medya raporlarıyla çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Araştırmacı gazetecilikte coğrafi veriler</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Dijital ayak izlerinden ihbarcıları bulma</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Gazetecilikte OSINT'te etik hususlar</li>
-<!-- /wp:list-item --></ul>
+- Karanlık web soruşturmalarının hukuki zorlukları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 16. <strong>Sahte Sosyal Medya Hesaplarını Belirleme</strong></h3>
+
+ ### 11. ***Sahte Haber ve Yanlış Bilgi Tespiti*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Hesap oluşturma tarihlerini ve etkinlik düzeylerini analiz etme</li>
+- Yanlış bilgi yayan botları ve sahte hesapları tespit etmek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Takipçi ağlarındaki kalıpları tespit etme</li>
+- Güvenilirlik açısından medya kaynaklarının analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Doğrulama için sosyal medya API'lerinin tersine mühendisliği</li>
+- Görüntünün gerçekliğini doğrulamak için ters görüntü  araması yapın 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaygın bot davranışlarını belirleme</li>
+- İddiaları çapraz referanslamak için gerçek kontrol platformlarını kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bilinen sahte hesap listeleriyle çapraz referanslama</li>
-<!-- /wp:list-item --></ul>
+- Sahte bilgileri tespit etmek için makine öğrenimi araçları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 17. <strong>Kamuya Açık Uydu Görüntülerinin Analizi</strong></h3>
+
+ ### 12. ***Siber Güvenlik Tehdit Avı için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ücretsiz uydu görüntüleme platformları (örneğin, Google Earth)</li>
+- Açığa çıkan varlıkları ve kimlik bilgilerini belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uydu verilerini analiz etmek için araçlar</li>
+- Veri ihlallerine yönelik yeraltı forumlarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çevresel izleme için uydu görüntülerinin kullanılması</li>
+- Potansiyel saldırganlar hakkında istihbarat toplamak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uydu verilerinin tarihsel olaylarla çapraz referanslanması</li>
+- Sosyal mühendislik yoluyla kimlik avı kampanyalarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Zaman içinde topografyadaki değişiklikleri belirleme</li>
-<!-- /wp:list-item --></ul>
+- Bir kuruluşun dijital ayak izinin güvenlik açıklarına yönelik haritalanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 18. <strong>Gizli veya Arşivlenmiş Web Sayfalarını Arama</strong></h3>
+
+ ### 13. ***Nakliye ve Deniz Trafiğini Takip Etme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Arşivlenmiş web siteleri için Wayback Machine'i kullanma</li>
+- Gemi hareketlerini izlemek için AIS verilerinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Silinen sosyal medya gönderilerini arama</li>
+- Deniz takibi için açık kaynaklı araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Arşivlenmiş web sayfalarının güncel verilerle çapraz referanslanması</li>
+- Gemi tanımlaması için uydu görüntüleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ölü bağlantıları belirleme ve alternatifler bulma araçları</li>
+- Nakliye rotası verilerinin trendler açısından analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Süresi dolan sayfalardan veri toplama ve depolama</li>
-<!-- /wp:list-item --></ul>
+- Gümrük ve ticaret verileriyle çapraz referanslama 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 19. <strong>OSINT ve Kişisel Veri Gizliliği</strong></h3>
+
+ ### 14. ***Hava Trafiğini İzlemek İçin OSINT (ADS-B)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>OSINT kişisel bilgileri tanımlamak için nasıl kullanılır?</li>
+- Ticari uçuşları izlemek için ADS-B verilerinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kişisel dijital ayak izlerini azaltma teknikleri</li>
+- Özel ve askeri uçakların tanımlanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Gizliliği korumak için meta verileri temizleme</li>
+- Açık kaynaklı uçuş izleme platformları (örneğin Flightradar24) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT farkındalığıyla veri ihlallerine karşı koruma</li>
+- Uçuş yollarını ve irtifaları analiz etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT kullanarak kendi dijital ayak izinizi takip edin</li>
-<!-- /wp:list-item --></ul>
+- Havacılık olay raporlarının çapraz referanslanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 20. <strong>Ters Görüntü Arama Teknikleri</strong></h3>
+
+ ### 15. ***Gazetecilik için OSINT ve Açık Veri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>TinEye ve Google Görsel  Arama gibi araçları kullanma</li>
+- Araştırmacı gazetecilik için açık kaynaklı araçların kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Değiştirilmiş veya photoshoplanmış görsellerin belirlenmesi</li>
+- Kamu kayıtlarının medya raporlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İnternet genelinde görüntü yeniden kullanımının izlenmesi</li>
+- Araştırmacı gazetecilikte coğrafi veriler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ek bağlam için görüntü meta verilerine çapraz referans verme</li>
+- Dijital ayak izlerinden ihbarcıları bulma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bireyleri bulmak için ters görüntü araması kullanma</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
-
-<!-- wp:heading {"level":3} -->
- ### 21. <strong>Savunmasız IoT Cihazlarını Bulma</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Shodan kamuya açık cihazları arıyor</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>IoT cihazlarında varsayılan kimlik bilgilerinin belirlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Yaygın IoT saldırılarına yönelik güvenlik açığı taraması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Bilinen güvenlik açıklarına sahip IoT cihazlarının çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT analistleri için IoT güvenliği en iyi uygulamaları</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 22. <strong>OSINT kullanarak Sosyal Mühendislik</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kimlik avı saldırıları için kişisel verilerin toplanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT'e dayalı ikna edici bahaneler oluşturmak</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sosyal mühendislik hedefleri için kurumsal yapıyı araştırmak</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Güvenilir kaynakları taklit etme teknikleri</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT farkındalığı yoluyla sosyal mühendislik saldırılarının önlenmesi</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 23. <strong>OSINT Kullanarak Siyasi Kampanya İzleme</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sosyal medya kampanyalarını ve siyasi reklamları takip etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kampanya bağışlarının ve fon kaynaklarının izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Siyasi nüfuz sahiplerini ve ağlarını belirleme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Siyasi adaylar etrafındaki duyguyu analiz etmek</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kampanya iddialarının kamu verileriyle çapraz referanslanması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 24. <strong>Askeri ve İstihbarat Teşkilatlarında OSINT</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Savaş alanı istihbarat toplamada OSINT kullanımı</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Açık veri kaynakları aracılığıyla düşman hareketlerinin izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Askeri analiz için uydu görüntülerinin çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sosyal medya istihbarat operasyonlarının bir aracı olarak</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Modern savaşta kullanılan OSINT araçları</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 25. <strong>Çevrimiçi Dolandırıcılığın Araştırılması</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sahte e-ticaret sitelerini tespit etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Sahte finansal işlemlerin takibi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Dolandırıcıların bilgilerinin kamu kayıtlarıyla çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Dolandırıcılık e-posta modellerini analiz etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Finansal kurumlarda dolandırıcılığın önlenmesi için OSINT kullanımı</li>
-<!-- /wp:list-item --></ul>
+- Gazetecilikte OSINT'te etik hususlar 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 26. <strong>Alan Adı Bilgilerini Arama (WHOIS, DNS)</strong></h3>
+
+ ### 16. ***Sahte Sosyal Medya Hesaplarını Belirleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Alan adı kayıt detayları için WHOIS aramaları</li>
+- Hesap oluşturma tarihlerini ve etkinlik düzeylerini analiz etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Alan adı sahiplik geçmişini izleme</li>
+- Takipçi ağlarındaki kalıpları tespit etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sunucu konumları için DNS kayıtlarının çapraz referanslanması</li>
+- Doğrulama için sosyal medya API'lerinin tersine mühendisliği 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Zaman içinde etki alanı değişikliklerini izlemek için araçlar</li>
+- Yaygın bot davranışlarını belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Alan adı park etme ve yazım yanlışı yapma konularını araştırma</li>
-<!-- /wp:list-item --></ul>
+- Bilinen sahte hesap listeleriyle çapraz referanslama 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 27. <strong>Sızdırılan Kimlik Bilgilerini Çevrimiçi Bulma</strong></h3>
+
+ ### 17. ***Kamuya Açık Uydu Görüntülerinin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Forumların ve web sitelerinin ihlal edilen veriler açısından izlenmesi</li>
+- Ücretsiz uydu görüntüleme platformları (örneğin, Google Earth) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kimlik bilgisi sızıntılarını parola yöneticileriyle çapraz referanslama</li>
+- Uydu verilerini analiz etmek için araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Otomatik ihlal tespiti için araçlar (örneğin, HaveIBeenPwned)</li>
+- Çevresel izleme için uydu görüntülerinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kişisel hesapları kimlik bilgisi sızıntılarından koruma</li>
+- Uydu verilerinin tarihsel olaylarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kimlik bilgisi doldurma saldırılarını araştırıyoruz</li>
-<!-- /wp:list-item --></ul>
+- Zaman içinde topografyadaki değişiklikleri belirleme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 28. <strong>Finansal Suçları Araştırmak İçin OSINT</strong></h3>
+
+ ### 18. ***Gizli veya Arşivlenmiş Web Sayfalarını Arama*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Offshore banka hesaplarının ve sahte şirketlerin takibi</li>
+- Arşivlenmiş web siteleri için Wayback Machine'i kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kripto para birimi işlemlerinin dolandırıcılığa karşı izlenmesi</li>
+- Silinen sosyal medya gönderilerini arama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ponzi şemaları ve yatırım dolandırıcılıklarının araştırılması</li>
+- Arşivlenmiş web sayfalarının güncel verilerle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Mali dosyaların usulsüzlükler açısından çapraz referanslanması</li>
+- Ölü bağlantıları belirleme ve alternatifler bulma araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu hisse senedi kayıtlarının içeriden bilgi ticareti açısından analiz edilmesi</li>
-<!-- /wp:list-item --></ul>
+- Süresi dolan sayfalardan veri toplama ve depolama 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 29. <strong>OSINT ve İnsani Yardım</strong></h3>
+
+ ### 19. ***OSINT ve Kişisel Veri Gizliliği*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Afet müdahale koordinasyonunda OSINT kullanımı</li>
+- OSINT kişisel bilgileri tanımlamak için nasıl kullanılır? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yardım çağrıları için sosyal medyayı izleme</li>
+- Kişisel dijital ayak izlerini azaltma teknikleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yardım lojistiği için açık kaynaklı haritalama araçları</li>
+- Gizliliği korumak için meta verileri temizleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamusal veriler aracılığıyla yüksek riskli alanların belirlenmesi</li>
+- OSINT farkındalığıyla veri ihlallerine karşı koruma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İnsani yardım çalışmaları için uydu görüntülerinin çapraz referanslanması</li>
-<!-- /wp:list-item --></ul>
+- OSINT kullanarak kendi dijital ayak izinizi takip edin 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 30. <strong>OSINT için Hükümet Veritabanları</strong></h3>
+
+ ### 20. ***Ters Görüntü Arama Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu mali kayıtlarına ve sözleşmelere erişim</li>
+- TinEye ve Google Görsel  Arama gibi araçları kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasal dosyalar için hükümet web sitelerini taramak</li>
+- Değiştirilmiş veya photoshoplanmış görsellerin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Seçmen kayıt veritabanlarının çapraz referanslanması</li>
+- İnternet genelinde görüntü yeniden kullanımının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu alımları verilerinin dolandırıcılığa karşı izlenmesi</li>
+- Ek bağlam için görüntü meta verilerine çapraz referans verme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT için hükümet şeffaflık portalları</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 31. <strong>Bitcoin Cüzdan Aktivitesini İzleme</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Şüpheli cüzdan faaliyetlerinin belirlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Bitcoin işlemleri için blockchain tarayıcılarının kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Cüzdan adreslerini bilinen suçlularla çapraz referanslama</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kripto para akışlarını izlemek için araçlar (örneğin, Chainalysis)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Cüzdan kümelerinin kara para aklama açısından analiz edilmesi</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 32. <strong>Güvenlik Açıkları İçin Kod Depolarının (örneğin GitHub) Analizi</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Hassas veriler için genel GitHub depolarını tarama</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kodda açığa çıkan API anahtarlarını veya kimlik bilgilerini belirleme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Güvenlik açıkları için depo değişikliklerini izleme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Geliştiricilerin dernekler için kamuya açık profillerinin araştırılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Açık kaynaklı projelerin güvenlik riskleri açısından izlenmesi</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 33. <strong>OSINT kullanarak Gerçek Zamanlı Olayların İzlenmesi</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Gerçek zamanlı sosyal medya takibi (örneğin son dakika haberleri)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Canlı verilerle protestoları ve hareketleri takip etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Genel canlı yayınların (örneğin trafik kameraları) analizi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Olay verilerinin coğrafi konum hizmetleriyle çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Birden fazla kaynaktan gelen gerçek zamanlı olayları tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 34. <strong>Çevrimiçi Tacizi Araştırmak</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sosyal medya platformlarında tacizcileri tespit etmek</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Forumlarda taciz edici içeriğin izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Dijital ayak izleri aracılığıyla siber zorbalık vakalarının araştırılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Tacizle bağlantılı birden fazla hesabı çapraz referanslama</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT kanıtları toplanırken mağdurların mahremiyetinin korunması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 35. <strong>OSINT ile Açık Kaynaklı Gözetim</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık web kameralarından gözetim verilerinin toplanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Hareket kalıpları için trafik kameralarının izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Açık kaynaklı gözetleme için dronların kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Gözetim verilerinin sosyal medya faaliyetleriyle çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Desen tanıma için CCTV görüntülerinin AI ile analiz edilmesi</li>
-<!-- /wp:list-item --></ul>
+- Bireyleri bulmak için ters görüntü araması kullanma 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 36. <strong>OSINT için Veri Madenciliği Teknikleri</strong></h3>
+
+ ### 21. ***Savunmasız IoT Cihazlarını Bulma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Büyük ölçekli veri toplama için web kazıma</li>
+- Shodan kamuya açık cihazları arıyor 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trendler ve duygu analizi için metin madenciliği</li>
+- IoT cihazlarında varsayılan kimlik bilgilerinin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Grafik teorisi kullanılarak sosyal ağ analizi</li>
+- Yaygın IoT saldırılarına yönelik güvenlik açığı taraması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yapılandırılmış veri çıkarma için API'leri kullanma</li>
+- Bilinen güvenlik açıklarına sahip IoT cihazlarının çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Makine öğrenimi algoritmalarıyla veri madenciliğinin otomatikleştirilmesi</li>
-<!-- /wp:list-item --></ul>
+- OSINT analistleri için IoT güvenliği en iyi uygulamaları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 37. <strong>OSINT ve Terörle Mücadele</strong></h3>
+
+ ### 22. ***OSINT kullanarak Sosyal Mühendislik*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sosyal medyada radikalleşme eğilimlerinin izlenmesi</li>
+- Kimlik avı saldırıları için kişisel verilerin toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Aşırılıkçı faaliyetler için çevrimiçi forumların izlenmesi</li>
+- OSINT'e dayalı ikna edici bahaneler oluşturmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Terörist grupların finansman kaynaklarının belirlenmesi</li>
+- Sosyal mühendislik hedefleri için kurumsal yapıyı araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çatışma bölgelerinde açık kaynaklı istihbaratın analizi</li>
+- Güvenilir kaynakları taklit etme teknikleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Terörist grup bağlantılarının kamu verileriyle çapraz referanslanması</li>
-<!-- /wp:list-item --></ul>
+- OSINT farkındalığı yoluyla sosyal mühendislik saldırılarının önlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 38. <strong>Çevrimiçi Dezenformasyon Kampanyaları</strong></h3>
+
+ ### 23. ***OSINT Kullanarak Siyasi Kampanya İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Organize dezenformasyon çabalarının tespiti</li>
+- Sosyal medya kampanyalarını ve siyasi reklamları takip etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyada yayılan dezenformasyon kalıplarının belirlenmesi</li>
+- Kampanya bağışlarının ve fon kaynaklarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Devlet destekli yanlış bilgilendirmeyi izleme araçları</li>
+- Siyasi nüfuz sahiplerini ve ağlarını belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Medya makalelerinin bağımsız kaynaklarla çapraz referanslanması</li>
+- Siyasi adaylar etrafındaki duyguyu analiz etmek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dezenformasyon kampanyaları için bot ağlarının analizi</li>
-<!-- /wp:list-item --></ul>
+- Kampanya iddialarının kamu verileriyle çapraz referanslanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 39. <strong>Telefon Numaralarının Takibi (Telekom için OSINT)</strong></h3>
+
+ ### 24. ***Askeri ve İstihbarat Teşkilatlarında OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Telefon numaralarını kamu arama hizmetleriyle araştırma</li>
+- Savaş alanı istihbarat toplamada OSINT kullanımı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Telefon numaralarını sosyal medya profilleriyle çapraz referanslama</li>
+- Açık veri kaynakları aracılığıyla düşman hareketlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Telefon numaralarından lokasyon ve servis sağlayıcıların belirlenmesi</li>
+- Askeri analiz için uydu görüntülerinin çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte veya VoIP numaralarını araştırma</li>
+- Sosyal medya istihbarat operasyonlarının bir aracı olarak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT kullanarak SMS kimlik avı (smishing) kampanyalarını izleme</li>
-<!-- /wp:list-item --></ul>
+- Modern savaşta kullanılan OSINT araçları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 40. <strong>Haber Sitelerindeki Kamu Yorumlarının Analizi</strong></h3>
+
+ ### 25. ***Çevrimiçi Dolandırıcılığın Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Duygu analizi için yorumları tarama</li>
+- Sahte e-ticaret sitelerini tespit etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuoyunu yönlendirmeye yönelik örgütlü çabaların belirlenmesi</li>
+- Sahte finansal işlemlerin takibi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Birden fazla haber platformunda yorum kalıplarını izleme</li>
+- Dolandırıcıların bilgilerinin kamu kayıtlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yorumcuların dijital ayak izlerinin çapraz referanslanması</li>
+- Dolandırıcılık e-posta modellerini analiz etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yorum botlarını ve otomatik yanıtları izleme</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
-
-<!-- wp:heading {"level":3} -->
- ### 41. <strong>Kamuya Açık Mahkeme Kayıtları ve Yasal Veriler</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık yasal dosyalara erişim (örneğin, PACER)</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Hukuki eğilimler açısından tarihi mahkeme kararlarının analizi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Yasal kayıtların haber raporlarıyla çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT araçlarını kullanarak devam eden yasal davaların izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Finansal risk analizi için şirket davalarının araştırılması</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 42. <strong>Şirketler İçin Risk Değerlendirmesinde OSINT</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Tedarik zincirlerinin olası kesintilere karşı izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Pazar eğilimlerini ve rakip verilerini analiz etmek</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Çalışan faaliyetlerinin kamu kayıtlarıyla çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT kullanarak jeopolitik risklerin belirlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Marka itibarı yönetimi için OSINT kullanımı</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 43. <strong>OSINT Kullanarak Finansal Piyasaların İzlenmesi</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Hisse senedi fiyatlarını ve işlem modellerini takip etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Finansal analiz için kamuya açık SEC dosyalarının kullanılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>İçeriden bilgi ticareti faaliyetlerinin belirlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Piyasa eğilimleri için finansal haberleri analiz etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Birleşme ve satın almaların kamuya açık veriler üzerinden izlenmesi</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 44. <strong>OSINT ve Aktivizm Hareketleri</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Aktivist grup örgütlenmesi için sosyal medyanın izlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Aktivizm ağlarındaki kilit etkili kişileri belirleme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Aktivist amaçlar için bağış toplama çabalarını takip etme</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Aktivizmin kamu politikası üzerindeki etkisinin araştırılması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Çevrimiçi hareketlerin dezenformasyon veya sızma açısından analiz edilmesi</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:heading {"level":3} -->
- ### 45. <strong>Kripto Para Blok Zincirlerinin Analizi</strong></h3>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Bitcoin, Ethereum ve altcoin işlemlerini analiz etmek için araçlar</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Yasadışı kripto para birimi faaliyetlerinin belirlenmesi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>OSINT kullanarak merkezi olmayan borsaları araştırmak</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Bilinen suç örgütleriyle cüzdanların çapraz referanslanması</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Kamu blok zincirlerinde akıllı sözleşmelerin analizi</li>
-<!-- /wp:list-item --></ul>
+- Finansal kurumlarda dolandırıcılığın önlenmesi için OSINT kullanımı 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 46. <strong>​​Web Uygulaması Güvenlik Açığı Tanımlaması</strong></h3>
+
+ ### 26. ***Alan Adı Bilgilerini Arama (WHOIS, DNS)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuoyuna açık güvenlik açıkları açısından web sitelerini araştırma</li>
+- Alan adı kayıt detayları için WHOIS aramaları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Web uygulamalarındaki yama uygulanmamış güvenlik açıklarını belirleme</li>
+- Alan adı sahiplik geçmişini izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Web sitelerini taramak için araçlar (örneğin, OWASP ZAP, Burp Suite)</li>
+- Sunucu konumları için DNS kayıtlarının çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Güvenlik açıklarını tehdit istihbaratıyla çapraz referanslama</li>
+- Zaman içinde etki alanı değişikliklerini izlemek için araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İhlal veya tahrifat belirtileri açısından web sitelerinin izlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Alan adı park etme ve yazım yanlışı yapma konularını araştırma 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 47. <strong>İçeriden Tehdit Algılama için OSINT</strong></h3>
+
+ ### 27. ***Sızdırılan Kimlik Bilgilerini Çevrimiçi Bulma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Çalışanların sosyal medyadaki memnuniyetsizlik belirtilerini izlemek</li>
+- Forumların ve web sitelerinin ihlal edilen veriler açısından izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuya açık sızıntıların şirket içi çalışan verileriyle çapraz referanslanması</li>
+- Kimlik bilgisi sızıntılarını parola yöneticileriyle çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çalışanların mali faaliyetlerinin dolandırıcılık açısından araştırılması</li>
+- Otomatik ihlal tespiti için araçlar (örneğin, HaveIBeenPwned) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurumsal ağ içindeki dijital ayak izlerinin izlenmesi</li>
+- Kişisel hesapları kimlik bilgisi sızıntılarından koruma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Davranışsal OSINT verilerini kullanarak içeriden gelen tehditleri analiz etme</li>
-<!-- /wp:list-item --></ul>
+- Kimlik bilgisi doldurma saldırılarını araştırıyoruz 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 48. <strong>Uluslararası Diplomasi'de OSINT</strong></h3>
+
+ ### 28. ***Finansal Suçları Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>OSINT aracılığıyla uluslararası politik gelişmelerin izlenmesi</li>
+- Offshore banka hesaplarının ve sahte şirketlerin takibi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Diplomatik mesajlaşma için devlet destekli medyayı takip etme</li>
+- Kripto para birimi işlemlerinin dolandırıcılığa karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu açıklamalarının hükümet eylemleriyle çapraz referanslanması</li>
+- Ponzi şemaları ve yatırım dolandırıcılıklarının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Diplomatik yazışmaların ve sızıntıların araştırılması</li>
+- Mali dosyaların usulsüzlükler açısından çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık kaynaklı araçları kullanarak jeopolitik eğilimlerin izlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Kamu hisse senedi kayıtlarının içeriden bilgi ticareti açısından analiz edilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 49. <strong>Seyahat Rotalarının ve Yolcu Verilerinin Takibi</strong></h3>
+
+ ### 29. ***OSINT ve İnsani Yardım*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yolcu takibi için uçuş verilerinin incelenmesi</li>
+- Afet müdahale koordinasyonunda OSINT kullanımı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı bilinen seyahat güzergahlarıyla çapraz referanslama</li>
+- Yardım çağrıları için sosyal medyayı izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Seyahat rezervasyon platformlarının açık veri sızıntılarına karşı izlenmesi</li>
+- Yardım lojistiği için açık kaynaklı haritalama araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İstihbarat toplamak için otel yorumlarını analiz etme</li>
+- Kamusal veriler aracılığıyla yüksek riskli alanların belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Gerçek zamanlı seyahat izleme için uçuş numarası takibinin kullanılması</li>
-<!-- /wp:list-item --></ul>
+- İnsani yardım çalışmaları için uydu görüntülerinin çapraz referanslanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 50. <strong>OSINT için Genel API'lerin Analizi</strong></h3>
+
+ ### 30. ***OSINT için Hükümet Veritabanları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yapılandırılmış verileri çıkarmak için genel API'leri kullanma</li>
+- Kamu mali kayıtlarına ve sözleşmelere erişim 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Veri sızıntısı için API güvenlik açıklarını araştırma</li>
+- Yasal dosyalar için hükümet web sitelerini taramak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hassas veriler için genel API uç noktalarını izleme</li>
+- Seçmen kayıt veritabanlarının çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API kaynaklarından (örneğin hava durumu, finans) genel veri kümelerini toplama</li>
+- Kamu alımları verilerinin dolandırıcılığa karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API entegrasyonlarıyla OSINT görevlerinin otomatikleştirilmesi</li>
-<!-- /wp:list-item --></ul>
+- OSINT için hükümet şeffaflık portalları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 51. <strong>Kritik Altyapıyı Korumada OSINT</strong></h3>
+
+ ### 31. ***Bitcoin Cüzdan Aktivitesini İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>SCADA ve ICS sistemlerinin güvenlik açıklarına karşı izlenmesi</li>
+- Şüpheli cüzdan faaliyetlerinin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu hizmetlerine yönelik tehditlerin araştırılması (örneğin su, enerji)</li>
+- Bitcoin işlemleri için blockchain tarayıcılarının kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Altyapı lokasyonlarına ilişkin kamu verilerinin çapraz referanslanması</li>
+- Cüzdan adreslerini bilinen suçlularla çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Altyapı izleme için uydu görüntülerinin kullanılması</li>
+- Kripto para akışlarını izlemek için araçlar (örneğin, Chainalysis) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kritik altyapı sektörlerindeki siber güvenlik olaylarının takibi</li>
-<!-- /wp:list-item --></ul>
+- Cüzdan kümelerinin kara para aklama açısından analiz edilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 52. <strong>Kamuya Açık Ulaşım ve Trafik Verileri</strong></h3>
+
+ ### 32. ***Güvenlik Açıkları İçin Kod Depolarının (örneğin GitHub) Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık platformlardan gerçek zamanlı trafik verilerinin toplanması</li>
+- Hassas veriler için genel GitHub depolarını tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Toplu taşıma kullanım modellerinin analizi</li>
+- Kodda açığa çıkan API anahtarlarını veya kimlik bilgilerini belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trafik olaylarının kamu güvenliği verileriyle çapraz referanslanması</li>
+- Güvenlik açıkları için depo değişikliklerini izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hareket modellerini izlemek için trafik kameralarının kullanılması</li>
+- Geliştiricilerin dernekler için kamuya açık profillerinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık veriler aracılığıyla ulaşım altyapısının araştırılması</li>
-<!-- /wp:list-item --></ul>
+- Açık kaynaklı projelerin güvenlik riskleri açısından izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 53. <strong>Desen Tanıma için OSINT ve AI</strong></h3>
+
+ ### 33. ***OSINT kullanarak Gerçek Zamanlı Olayların İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>OSINT desenlerini tanımlamak için makine öğrenimi araçları</li>
+- Gerçek zamanlı sosyal medya takibi (örneğin son dakika haberleri) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medya takibi için yapay zeka tabanlı araçlar</li>
+- Canlı verilerle protestoları ve hareketleri takip etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT soruşturmalarında öngörücü analizler</li>
+- Genel canlı yayınların (örneğin trafik kameraları) analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık kaynaklı verilerle <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> AI</a> modellerinin eğitilmesi</li>
+- Olay verilerinin coğrafi konum hizmetleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Büyük veri kümelerindeki anormallikleri tespit etmek için yapay zekanın kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Birden fazla kaynaktan gelen gerçek zamanlı olayları tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 54. <strong>OSINT için Yüz Tanıma Araçları</strong></h3>
+
+ ### 34. ***Çevrimiçi Tacizi Araştırmak*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık yüz tanıma yazılımı (örneğin, Clearview AI)</li>
+- Sosyal medya platformlarında tacizcileri tespit etmek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT'te yüz tanımanın etiğinin araştırılması</li>
+- Forumlarda taciz edici içeriğin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medya profillerinin yüz tanıma ile çapraz referanslanması</li>
+- Dijital ayak izleri aracılığıyla siber zorbalık vakalarının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kayıp şahıs vakalarında yüz tanıma özelliğinin kullanılması</li>
+- Tacizle bağlantılı birden fazla hesabı çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık kaynaklı yüz tanıma araçlarını kullanarak suçluları takip etmek</li>
-<!-- /wp:list-item --></ul>
+- OSINT kanıtları toplanırken mağdurların mahremiyetinin korunması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 55. <strong>OSINT Kullanarak İklim Değişikliği Verilerinin İzlenmesi</strong></h3>
+
+ ### 35. ***OSINT ile Açık Kaynaklı Gözetim*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Analiz için kamuya açık iklim veri tabanları</li>
+- Kamuya açık web kameralarından gözetim verilerinin toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çevresel değişim için uydu görüntülerinin çapraz referanslanması</li>
+- Hareket kalıpları için trafik kameralarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Genel API'lerden hava durumu verilerini toplama</li>
+- Açık kaynaklı gözetleme için dronların kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İklim değişikliğine ilişkin bilimsel raporların ve açık verilerin izlenmesi</li>
+- Gözetim verilerinin sosyal medya faaliyetleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çevresel risk değerlendirmeleri için coğrafi araçların kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Desen tanıma için CCTV görüntülerinin AI ile analiz edilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 56. <strong>İnsan Ticareti Soruşturmalarında OSINT</strong></h3>
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+
+ ### 36. ***OSINT için Veri Madenciliği Teknikleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Çevrimiçi forumları ve ilanları insan ticareti faaliyetleri için taramak</li>
+- Büyük ölçekli veri toplama için web kazıma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trafik rotalarını izlemek için coğrafi konum verilerini kullanma</li>
+- Trendler ve duygu analizi için metin madenciliği 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı kayıp kişi veri tabanlarıyla çapraz referanslama</li>
+- Grafik teorisi kullanılarak sosyal ağ analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bilgi trafiği için karanlık web sitelerinin izlenmesi</li>
+- Yapılandırılmış veri çıkarma için API'leri kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İnsan ticaretiyle bağlantılı finansal işlemlerin araştırılması</li>
-<!-- /wp:list-item --></ul>
+- Makine öğrenimi algoritmalarıyla veri madenciliğinin otomatikleştirilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 57. <strong>OSINT'te Yapay Zeka ve Makine Öğrenmesinin Kullanımı</strong></h3>
+
+ ### 37. ***OSINT ve Terörle Mücadele*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Açık verilerle makine öğrenimi modellerinin eğitimi</li>
+- Sosyal medyada radikalleşme eğilimlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tehdit tespiti için öngörücü analizler</li>
+- Aşırılıkçı faaliyetler için çevrimiçi forumların izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT veri analizini otomatikleştirmek için AI araçları</li>
+- Terörist grupların finansman kaynaklarının belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyadaki kalıpları tespit etmek için makine öğrenimini kullanma</li>
+- Çatışma bölgelerinde açık kaynaklı istihbaratın analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yapay zeka destekli OSINT'in insan analiziyle çapraz referanslanması</li>
-<!-- /wp:list-item --></ul>
+- Terörist grup bağlantılarının kamu verileriyle çapraz referanslanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 58. <strong>Dijital Ayak İzi Azaltma için OSINT</strong></h3>
+
+ ### 38. ***Çevrimiçi Dezenformasyon Kampanyaları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kişisel çevrimiçi varlığınızı en aza indirme teknikleri</li>
+- Organize dezenformasyon çabalarının tespiti 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kişisel bilgilerin kamu veri tabanlarından kaldırılması</li>
+- Sosyal medyada yayılan dezenformasyon kalıplarının belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Görüntülerden ve belgelerden meta verileri temizleme</li>
+- Devlet destekli yanlış bilgilendirmeyi izleme araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarıyla kendi dijital ayak izinizi izleyin</li>
+- Medya makalelerinin bağımsız kaynaklarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dijital maruziyeti azaltarak kimlik hırsızlığını önleme</li>
-<!-- /wp:list-item --></ul>
+- Dezenformasyon kampanyaları için bot ağlarının analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 59. <strong>Akademik Araştırmada OSINT</strong></h3>
+
+ ### 39. ***Telefon Numaralarının Takibi (Telekom için OSINT)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık veri kaynaklarının akademik çalışmalarda kullanılması</li>
+- Telefon numaralarını kamu arama hizmetleriyle araştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Araştırma makaleleri için kamuya açık veri kümelerini araştırmak</li>
+- Telefon numaralarını sosyal medya profilleriyle çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Akademik yayınların kamu verileriyle çapraz referanslanması</li>
+- Telefon numaralarından lokasyon ve servis sağlayıcıların belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Akademik atıflardaki eğilimleri belirleme</li>
+- Sahte veya VoIP numaralarını araştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Büyük ölçekli araştırma verisi toplama için OSINT araçlarının kullanılması</li>
-<!-- /wp:list-item --></ul>
+- OSINT kullanarak SMS kimlik avı (smishing) kampanyalarını izleme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 60. <strong>Hacktivist Hareketlerin İzlenmesi</strong></h3>
+
+ ### 40. ***Haber Sitelerindeki Kamu Yorumlarının Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sosyal medyada hacktivist grup faaliyetlerinin izlenmesi</li>
+- Duygu analizi için yorumları tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Planlanan saldırılara yönelik izleme forumları</li>
+- Kamuoyunu yönlendirmeye yönelik örgütlü çabaların belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hacktivist grup yapısını ve liderliğini araştırmak</li>
+- Birden fazla haber platformunda yorum kalıplarını izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hacktivist faaliyetlerin kamu ihlalleriyle çapraz referanslanması</li>
+- Yorumcuların dijital ayak izlerinin çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hacktivist hedeflemedeki eğilimlerin analizi</li>
-<!-- /wp:list-item --></ul>
+- Yorum botlarını ve otomatik yanıtları izleme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 61. <strong>Siyasi Bağış ve Finansmanların Araştırılması</strong></h3>
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+
+ ### 41. ***Kamuya Açık Mahkeme Kayıtları ve Yasal Veriler*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu kampanya finansmanı kayıtlarının toplanması</li>
+- Kamuya açık yasal dosyalara erişim (örneğin, PACER) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bağışların kurumsal çıkarlarla çapraz referanslanması</li>
+- Hukuki eğilimler açısından tarihi mahkeme kararlarının analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi lobi faaliyetlerinin izlenmesi</li>
+- Yasal kayıtların haber raporlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi bağışlar üzerindeki yabancı etkiyi araştırmak</li>
+- OSINT araçlarını kullanarak devam eden yasal davaların izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasette karanlık parayı ortaya çıkarmak için OSINT kullanımı</li>
-<!-- /wp:list-item --></ul>
+- Finansal risk analizi için şirket davalarının araştırılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 62. <strong>Sahte İncelemeleri ve Yorumları Çevrimiçi İzleme</strong></h3>
+
+ ### 42. ***Şirketler İçin Risk Değerlendirmesinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>E-ticaret platformlarında sahte yorumları tespit etme</li>
+- Tedarik zincirlerinin olası kesintilere karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kullanıcı profillerini inceleme geçmişiyle çapraz referanslama</li>
+- Pazar eğilimlerini ve rakip verilerini analiz etmek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İnceleme verilerini toplama ve analiz etme araçları</li>
+- Çalışan faaliyetlerinin kamu kayıtlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Haberlerde ve sosyal medyada yapılan sahte yorumların araştırılması</li>
+- OSINT kullanarak jeopolitik risklerin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dijital ayak izleri aracılığıyla ücretli inceleme planlarının belirlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Marka itibarı yönetimi için OSINT kullanımı 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 63. <strong>OSINT için Halk Sağlığı Verilerinin İzlenmesi</strong></h3>
+
+ ### 43. ***OSINT Kullanarak Finansal Piyasaların İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık epidemiyolojik verilerin taranması</li>
+- Hisse senedi fiyatlarını ve işlem modellerini takip etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sağlık trendlerinin kamu haber raporlarıyla çapraz referanslanması</li>
+- Finansal analiz için kamuya açık SEC dosyalarının kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı hastalık salgınlarına karşı izleme</li>
+- İçeriden bilgi ticareti faaliyetlerinin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Demografik riskler açısından halk sağlığı veri tabanlarının analizi</li>
+- Piyasa eğilimleri için finansal haberleri analiz etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık verileri kullanarak ilaç denemelerini araştırmak</li>
-<!-- /wp:list-item --></ul>
+- Birleşme ve satın almaların kamuya açık veriler üzerinden izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 64. <strong>OSINT ile Yaban Hayatı Kaçakçılığının İzlenmesi</strong></h3>
+
+ ### 44. ***OSINT ve Aktivizm Hareketleri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yasadışı yaban hayatı ticareti için çevrimiçi platformların izlenmesi</li>
+- Aktivist grup örgütlenmesi için sosyal medyanın izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaban hayatı ürün satışlarının kamu raporlarıyla çapraz referanslanması</li>
+- Aktivizm ağlarındaki kilit etkili kişileri belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaban hayatı kaçakçılığı için ulaşım yollarının araştırılması</li>
+- Aktivist amaçlar için bağış toplama çabalarını takip etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trafik yoğunluğunun yoğun olduğu noktaların belirlenmesinde uydu görüntülerinin kullanılması</li>
+- Aktivizmin kamu politikası üzerindeki etkisinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaban hayatını korumak için OSINT araçlarını kullanan STK'larla işbirliği yapmak</li>
-<!-- /wp:list-item --></ul>
+- Çevrimiçi hareketlerin dezenformasyon veya sızma açısından analiz edilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 65. <strong>Sahte Haber Sitelerinin Araştırılması</strong></h3>
+
+ ### 45. ***Kripto Para Blok Zincirlerinin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Bilinen sahte haber sitelerinden içeriklerin toplanması ve analiz edilmesi</li>
+- Bitcoin, Ethereum ve altcoin işlemlerini analiz etmek için araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte haberlerin meşru medya kaynaklarıyla çapraz referanslanması</li>
+- Yasadışı kripto para birimi faaliyetlerinin belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte haber kuruluşlarının alan adı kayıt bilgilerinin araştırılması</li>
+- OSINT kullanarak merkezi olmayan borsaları araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte haber dağıtım ağlarındaki kalıpların belirlenmesi</li>
+- Bilinen suç örgütleriyle cüzdanların çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte haber makalelerini otomatik olarak tespit etmeye yönelik araçlar</li>
-<!-- /wp:list-item --></ul>
+- Kamu blok zincirlerinde akıllı sözleşmelerin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 66. <strong>Suç Ağlarını İzlemek İçin OSINT</strong></h3>
+<!-- wp:separator --><hr class="wp-block-separator has-alpha-channel-opacity" /><!-- /wp:separator -->
+
+
+ ### 46. ***​​Web Uygulaması Güvenlik Açığı Tanımlaması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu verilerini kullanarak suç ağlarını haritalamak</li>
+- Kamuoyuna açık güvenlik açıkları açısından web sitelerini araştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Forumları ve sosyal medyayı suç faaliyetleri için taramak</li>
+- Web uygulamalarındaki yama uygulanmamış güvenlik açıklarını belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suç örgütü üyelerinin kamu kayıtlarıyla çapraz referanslanması</li>
+- Web sitelerini taramak için araçlar (örneğin, OWASP ZAP, Burp Suite) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suç operasyonlarını izlemek için coğrafi konum araçlarının kullanılması</li>
+- Güvenlik açıklarını tehdit istihbaratıyla çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suç kalıpları için kolluk kuvvetleri raporlarının izlenmesi</li>
-<!-- /wp:list-item --></ul>
+- İhlal veya tahrifat belirtileri açısından web sitelerinin izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 67. <strong>Çalınan Sanat Eserleri ve Kültürel Varlıkların Araştırılması</strong></h3>
+
+ ### 47. ***İçeriden Tehdit Algılama için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Çalınan sanat eserlerinin veritabanlarını taramak (örneğin, Interpol Sanat Hırsızlığı Veritabanı)</li>
+- Çalışanların sosyal medyadaki memnuniyetsizlik belirtilerini izlemek 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sanat satışlarını bilinen çalıntı mallarla çapraz referanslama</li>
+- Kamuya açık sızıntıların şirket içi çalışan verileriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çalınan eşyalar için çevrimiçi açık artırmaları izleme</li>
+- Çalışanların mali faaliyetlerinin dolandırıcılık açısından araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şüpheli sanat satışlarının menşeinin araştırılması</li>
+- Kurumsal ağ içindeki dijital ayak izlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarını kullanarak sanat tarihçileriyle işbirliği yapmak</li>
-<!-- /wp:list-item --></ul>
+- Davranışsal OSINT verilerini kullanarak içeriden gelen tehditleri analiz etme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 68. <strong>Kamusal Veriler Aracılığıyla Organize Suçun Takibi</strong></h3>
+
+ ### 48. ***Uluslararası Diplomasi'de OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu kayıtlarını kullanarak mafya veya kartel operasyonlarını araştırmak</li>
+- OSINT aracılığıyla uluslararası politik gelişmelerin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kara para aklama belirtileri için mali kayıtların taranması</li>
+- Diplomatik mesajlaşma için devlet destekli medyayı takip etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suç liderlerinin bilinen kamu faaliyetleriyle çapraz referanslanması</li>
+- Kamu açıklamalarının hükümet eylemleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Organize suç bölgelerini izlemek için coğrafi verileri kullanma</li>
+- Diplomatik yazışmaların ve sızıntıların araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Organize suç davalarına ilişkin mahkeme kayıtlarının izlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Açık kaynaklı araçları kullanarak jeopolitik eğilimlerin izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 69. <strong>Finansal Dolandırıcılıkları Araştırmak İçin OSINT</strong></h3>
+
+ ### 49. ***Seyahat Rotalarının ve Yolcu Verilerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Dolandırıcılıkla ilgili anahtar kelimeler için web sitelerini tarama</li>
+- Yolcu takibi için uçuş verilerinin incelenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Finansal dolandırıcılıkların kamu veri tabanlarıyla çapraz referanslanması</li>
+- Sosyal medyayı bilinen seyahat güzergahlarıyla çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dolandırıcılık uyarı forumlarını ve bloglarını izleme</li>
+- Seyahat rezervasyon platformlarının açık veri sızıntılarına karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şirket kayıtları üzerinden dolandırıcı şirketlerin araştırılması</li>
+- İstihbarat toplamak için otel yorumlarını analiz etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kimlik avı ve dolandırıcılık kampanyaları için e-posta modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Gerçek zamanlı seyahat izleme için uçuş numarası takibinin kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 70. <strong>Uluslararası Yaptırımların ve Uyumluluğun Takibi</strong></h3>
+
+ ### 50. ***OSINT için Genel API'lerin Analizi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yaptırım listelerindeki şirketleri veya kişileri araştırmak</li>
+- Yapılandırılmış verileri çıkarmak için genel API'leri kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uluslararası ticaret verilerinin uyumluluk ihlalleri açısından izlenmesi</li>
+- Veri sızıntısı için API güvenlik açıklarını araştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaptırım ihlalleri için kamu mali kayıtlarının toplanması</li>
+- Hassas veriler için genel API uç noktalarını izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaptırım uygulanan kuruluşların kurumsal dosyalarla çapraz referanslanması</li>
+- API kaynaklarından (örneğin hava durumu, finans) genel veri kümelerini toplama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yaptırımların aşılması için küresel tedarik zincirlerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- API entegrasyonlarıyla OSINT görevlerinin otomatikleştirilmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 71. <strong>OSINT Aracılığıyla Terör Finansmanının İzlenmesi</strong></h3>
+
+ ### 51. ***Kritik Altyapıyı Korumada OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Terörizmin finansmanı için kamuya açık kripto para birimi işlemlerinin araştırılması</li>
+- SCADA ve ICS sistemlerinin güvenlik açıklarına karşı izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şüpheli işlemler için finansal kayıtların taranması</li>
+- Kamu hizmetlerine yönelik tehditlerin araştırılması (örneğin su, enerji) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Aşırılıkçı forumların bağış toplama faaliyetleri için izlenmesi</li>
+- Altyapı lokasyonlarına ilişkin kamu verilerinin çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu kayıtlarının bilinen terör örgütleriyle çapraz referanslanması</li>
+- Altyapı izleme için uydu görüntülerinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Terörizmle bağlantılı kara para aklama operasyonlarının belirlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Kritik altyapı sektörlerindeki siber güvenlik olaylarının takibi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 72. <strong>İş Panolarını ve İşe Alma Web Sitelerini Tarama</strong></h3>
+
+ ### 52. ***Kamuya Açık Ulaşım ve Trafik Verileri*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>İşe alım trendleri için iş panolarını tarama</li>
+- Kamuya açık platformlardan gerçek zamanlı trafik verilerinin toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Belirli sektörlerdeki işe alım faaliyetlerinin izlenmesi</li>
+- Toplu taşıma kullanım modellerinin analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>İş ilanlarının kurumsal verilerle çapraz referanslanması</li>
+- Trafik olaylarının kamu güvenliği verileriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte iş ilanlarının kimlik avı amaçlı olup olmadığını araştırma</li>
+- Hareket modellerini izlemek için trafik kameralarının kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurumsal casusluk için işe alım modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Açık veriler aracılığıyla ulaşım altyapısının araştırılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 73. <strong>OSINT için Kamu Patent Veritabanlarının Kullanımı</strong></h3>
+
+ ### 53. ***Desen Tanıma için OSINT ve AI*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Teknolojik yenilikler için patent başvurularının toplanması</li>
+- OSINT desenlerini tanımlamak için makine öğrenimi araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Patentlerin şirket dosyalarıyla çapraz referanslanması</li>
+- Sosyal medya takibi için yapay zeka tabanlı araçlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hukuki kayıtlarda patent uyuşmazlıklarının izlenmesi</li>
+- OSINT soruşturmalarında öngörücü analizler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Patentlerin sahiplik geçmişinin araştırılması</li>
+- Açık kaynaklı verilerle <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> AI</a> modellerinin eğitilmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sektöre göre patent başvurularındaki eğilimlerin belirlenmesi</li>
-<!-- /wp:list-item --></ul>
+- Büyük veri kümelerindeki anormallikleri tespit etmek için yapay zekanın kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 74. <strong>Kamu İhale Sözleşmelerinin Takibi</strong></h3>
+
+ ### 54. ***OSINT için Yüz Tanıma Araçları*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sözleşme detayları için hükümet tedarik web sitelerini taramak</li>
+- Kamuya açık yüz tanıma yazılımı (örneğin, Clearview AI) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu ihalelerinin kurumsal teklif verme kalıpları açısından izlenmesi</li>
+- OSINT'te yüz tanımanın etiğinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tedarik sözleşmelerinin finansal kayıtlarla çapraz referanslanması</li>
+- Sosyal medya profillerinin yüz tanıma ile çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu verileri aracılığıyla sözleşme dolandırıcılığının araştırılması</li>
+- Kayıp şahıs vakalarında yüz tanıma özelliğinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tedarik eğilimlerini analiz etmek için OSINT araçlarını kullanma</li>
-<!-- /wp:list-item --></ul>
+- Açık kaynaklı yüz tanıma araçlarını kullanarak suçluları takip etmek 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 75. <strong>Nakliye Konteynerleri ve Kargo Takibi</strong></h3>
+
+ ### 55. ***OSINT Kullanarak İklim Değişikliği Verilerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu nakliye listelerinin şüpheli faaliyetler açısından izlenmesi</li>
+- Analiz için kamuya açık iklim veri tabanları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Nakliye verilerinin bilinen kaçakçılık rotalarıyla çapraz referanslanması</li>
+- Çevresel değişim için uydu görüntülerinin çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Toplu taşıma verileri üzerinden kargo hırsızlığının araştırılması</li>
+- Genel API'lerden hava durumu verilerini toplama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Konteyner takibi için coğrafi araçların kullanılması</li>
+- İklim değişikliğine ilişkin bilimsel raporların ve açık verilerin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasadışı sevkiyat tespiti için gümrük verilerinin toplanması</li>
-<!-- /wp:list-item --></ul>
+- Çevresel risk değerlendirmeleri için coğrafi araçların kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 76. <strong>Çevre Koruması için OSINT'in İzlenmesi</strong></h3>
+
+ ### 56. ***İnsan Ticareti Soruşturmalarında OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamuya açık raporlar aracılığıyla yasadışı ağaç kesme faaliyetlerinin izlenmesi</li>
+- Çevrimiçi forumları ve ilanları insan ticareti faaliyetleri için taramak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Eğilimler için çevresel etki değerlendirmelerini tarama</li>
+- Trafik rotalarını izlemek için coğrafi konum verilerini kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uydu verilerinin çevresel yıkımla çapraz referanslanması</li>
+- Sosyal medyayı kayıp kişi veri tabanlarıyla çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şirketlerin çevre ihlalleri nedeniyle soruşturulması</li>
+- Bilgi trafiği için karanlık web sitelerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamusal çevre protesto hareketlerinin izlenmesi</li>
-<!-- /wp:list-item --></ul>
+- İnsan ticaretiyle bağlantılı finansal işlemlerin araştırılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 77. <strong>OSINT için Havayolu Verilerinin Kazınması</strong></h3>
+
+ ### 57. ***OSINT'te Yapay Zeka ve Makine Öğrenmesinin Kullanımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yolcu takibi için uçuş verilerinin toplanması</li>
+- Açık verilerle makine öğrenimi modellerinin eğitimi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şüpheli faaliyetler için uçak hareketlerinin izlenmesi</li>
+- Tehdit tespiti için öngörücü analizler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uçuş yollarının bilinen seyahat rotalarıyla çapraz referanslanması</li>
+- OSINT veri analizini otomatikleştirmek için AI araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Özel jet hareketlerinin mali suçlar açısından araştırılması</li>
+- Sosyal medyadaki kalıpları tespit etmek için makine öğrenimini kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trend analizi için kamu uçuş programlarının taranması</li>
-<!-- /wp:list-item --></ul>
+- Yapay zeka destekli OSINT'in insan analiziyle çapraz referanslanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 78. <strong>Uyuşturucu Kaçakçılığının Takibinde OSINT</strong></h3>
+
+ ### 58. ***Dijital Ayak İzi Azaltma için OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Uyuşturucuyla ilgili faaliyetler açısından sosyal medyanın izlenmesi</li>
+- Kişisel çevrimiçi varlığınızı en aza indirme teknikleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uyuşturucu satışları için karanlık web pazarlarını taramak</li>
+- Kişisel bilgilerin kamu veri tabanlarından kaldırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uyuşturucu tutuklamalarının kamu kayıtlarıyla çapraz referanslanması</li>
+- Görüntülerden ve belgelerden meta verileri temizleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Trafik rotalarını izlemek için coğrafi konum verilerini kullanma</li>
+- OSINT araçlarıyla kendi dijital ayak izinizi izleyin 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Uyuşturucu kaçakçılığıyla bağlantılı finansal işlemlerin araştırılması</li>
-<!-- /wp:list-item --></ul>
+- Dijital maruziyeti azaltarak kimlik hırsızlığını önleme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 79. <strong>Siyasi Etki Operasyonlarının Takibi</strong></h3>
+
+ ### 59. ***Akademik Araştırmada OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sosyal medyayı siyasi manipülasyon çabalarına karşı izleme</li>
+- Kamuya açık veri kaynaklarının akademik çalışmalarda kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Devlet destekli medya kampanyalarının araştırılması</li>
+- Araştırma makaleleri için kamuya açık veri kümelerini araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Lobicilik faaliyetleri için kamu kayıtlarının toplanması</li>
+- Akademik yayınların kamu verileriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi bağışların kurumsal çıkarlarla çapraz referanslanması</li>
+- Akademik atıflardaki eğilimleri belirleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamusal veriler aracılığıyla siyasi etki modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Büyük ölçekli araştırma verisi toplama için OSINT araçlarının kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 80. <strong>OSINT için Emlak Web Sitelerini Kazıma</strong></h3>
+
+ ### 60. ***Hacktivist Hareketlerin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Mülkiyet bilgileri için mülk listelerini tarama</li>
+- Sosyal medyada hacktivist grup faaliyetlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Gayrimenkul satışlarının finansal kayıtlarla çapraz referanslanması</li>
+- Planlanan saldırılara yönelik izleme forumları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kara para aklama amaçlı gayrimenkul satışlarının izlenmesi</li>
+- Hacktivist grup yapısını ve liderliğini araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuya açık ilanlar kullanılarak yapılan kiralama dolandırıcılıklarının araştırılması</li>
+- Hacktivist faaliyetlerin kamu ihlalleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık verileri kullanarak gayrimenkul yatırımındaki eğilimleri analiz etmek</li>
-<!-- /wp:list-item --></ul>
+- Hacktivist hedeflemedeki eğilimlerin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 81. <strong>Protesto ve Gösterileri İzlemek İçin OSINT</strong></h3>
+
+ ### 61. ***Siyasi Bağış ve Finansmanların Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Protesto örgütlenmesi için sosyal medyayı taramak</li>
+- Kamu kampanya finansmanı kayıtlarının toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık veriler aracılığıyla gerçek zamanlı protesto faaliyetlerinin izlenmesi</li>
+- Bağışların kurumsal çıkarlarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Protesto liderlerinin kamu kayıtlarıyla çapraz referanslanması</li>
+- Siyasi lobi faaliyetlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Protesto hareketlerini dezenformasyon veya şiddet açısından analiz etmek</li>
+- Siyasi bağışlar üzerindeki yabancı etkiyi araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT kullanılarak protesto gösterilerine yönelik hükümet tepkisinin araştırılması</li>
-<!-- /wp:list-item --></ul>
+- Siyasette karanlık parayı ortaya çıkarmak için OSINT kullanımı 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 82. <strong>OSINT ile Finansal Piyasaların Takibi</strong></h3>
+
+ ### 62. ***Sahte İncelemeleri ve Yorumları Çevrimiçi İzleme*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu hisse senedi alım satım modellerinin izlenmesi</li>
+- E-ticaret platformlarında sahte yorumları tespit etme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Piyasa trendleri için finansal haberleri taramak</li>
+- Kullanıcı profillerini inceleme geçmişiyle çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hisse senedi hareketlerinin şirket dosyalarıyla çapraz referanslanması</li>
+- İnceleme verilerini toplama ve analiz etme araçları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık veriler aracılığıyla içeriden bilgi ticaretinin araştırılması</li>
+- Haberlerde ve sosyal medyada yapılan sahte yorumların araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu mali verileriyle piyasa oynaklığının analizi</li>
-<!-- /wp:list-item --></ul>
+- Dijital ayak izleri aracılığıyla ücretli inceleme planlarının belirlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 83. <strong>OSINT için Genel Olarak Kullanılabilir API'leri Kullanma</strong></h3>
+
+ ### 63. ***OSINT için Halk Sağlığı Verilerinin İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yapılandırılmış veriler için genel API'leri kazıma</li>
+- Kamuya açık epidemiyolojik verilerin taranması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API erişimini kullanarak genel veri kümelerini izleme</li>
+- Sağlık trendlerinin kamu haber raporlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Veri ifşası için API güvenlik açıklarını araştırma</li>
+- Sosyal medyayı hastalık salgınlarına karşı izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API entegrasyonlarıyla OSINT görevlerinin otomatikleştirilmesi</li>
+- Demografik riskler açısından halk sağlığı veri tabanlarının analizi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Genel API'leri diğer OSINT kaynaklarıyla çapraz referanslama</li>
-<!-- /wp:list-item --></ul>
+- Açık verileri kullanarak ilaç denemelerini araştırmak 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 84. <strong>Çevrimiçi Nefret Söylemi ve Aşırılığın İzlenmesi</strong></h3>
+
+ ### 64. ***OSINT ile Yaban Hayatı Kaçakçılığının İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Nefret söylemi anahtar kelimeleri için sosyal medyayı tarama</li>
+- Yasadışı yaban hayatı ticareti için çevrimiçi platformların izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Aşırılıkçı forumların faaliyetlerinin örgütlenmesi için izlenmesi</li>
+- Yaban hayatı ürün satışlarının kamu raporlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Nefret gruplarının kamu verileriyle çapraz referanslanması</li>
+- Yaban hayatı kaçakçılığı için ulaşım yollarının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çevrimiçi nefret söylemi kalıplarını tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması</li>
+- Trafik yoğunluğunun yoğun olduğu noktaların belirlenmesinde uydu görüntülerinin kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT aracılığıyla çevrimiçi taciz kampanyalarının araştırılması</li>
-<!-- /wp:list-item --></ul>
+- Yaban hayatını korumak için OSINT araçlarını kullanan STK'larla işbirliği yapmak 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 85. <strong>Çevrimiçi İncelemeleri ve Tüketici Geri Bildirimlerini Araştırma</strong></h3>
+
+ ### 65. ***Sahte Haber Sitelerinin Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ürün incelemeleri için e-ticaret web sitelerini tarama</li>
+- Bilinen sahte haber sitelerinden içeriklerin toplanması ve analiz edilmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tüketici platformlarında sahte veya taraflı incelemelerin tespiti</li>
+- Sahte haberlerin meşru medya kaynaklarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kullanıcı profillerini inceleme etkinliğiyle çapraz referanslama</li>
+- Sahte haber kuruluşlarının alan adı kayıt bilgilerinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuya açık verileri kullanarak inceleme dolandırıcılığı planlarını araştırmak</li>
+- Sahte haber dağıtım ağlarındaki kalıpların belirlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT kullanarak ürün incelemelerindeki duygu eğilimlerini analiz etme</li>
-<!-- /wp:list-item --></ul>
+- Sahte haber makalelerini otomatik olarak tespit etmeye yönelik araçlar 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 86. <strong>OSINT ile Silah Ticaretinin Takibi</strong></h3>
+
+ ### 66. ***Suç Ağlarını İzlemek İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yasadışı silah satışları için çevrimiçi platformların izlenmesi</li>
+- Kamu verilerini kullanarak suç ağlarını haritalamak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şüpheli işlemler için silah ticareti veritabanlarının taranması</li>
+- Forumları ve sosyal medyayı suç faaliyetleri için taramak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamusal veriler üzerinden silah kaçakçılığı rotalarının araştırılması</li>
+- Suç örgütü üyelerinin kamu kayıtlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Silah satışlarının uluslararası yaptırımlarla çapraz referanslanması</li>
+- Suç operasyonlarını izlemek için coğrafi konum araçlarının kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarını kullanarak silah kaçakçılığı modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Suç kalıpları için kolluk kuvvetleri raporlarının izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 87. <strong>Sahte Web Sitelerini Belirlemek İçin OSINT</strong></h3>
+
+ ### 67. ***Çalınan Sanat Eserleri ve Kültürel Varlıkların Araştırılması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kimlik avı düzenekleri için genel web sitelerini tarama</li>
+- Çalınan sanat eserlerinin veritabanlarını taramak (örneğin, Interpol Sanat Hırsızlığı Veritabanı) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Web sitesi alan adı kayıt ayrıntılarını araştırma</li>
+- Sanat satışlarını bilinen çalıntı mallarla çapraz referanslama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte sitelerin kamu uyarılarıyla çapraz referanslanması</li>
+- Çalınan eşyalar için çevrimiçi açık artırmaları izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çevrimiçi dolandırıcılık raporları için sosyal medyayı izleme</li>
+- Şüpheli sanat satışlarının menşeinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT kullanarak sahte web sitesi modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- OSINT araçlarını kullanarak sanat tarihçileriyle işbirliği yapmak 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 88. <strong>Yasadışı Mallar İçin Çevrimiçi Pazar Yerlerinin İzlenmesi</strong></h3>
+
+ ### 68. ***Kamusal Veriler Aracılığıyla Organize Suçun Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yasadışı ürünler için karanlık web pazar yerlerini taramak</li>
+- Kamu kayıtlarını kullanarak mafya veya kartel operasyonlarını araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ürün listelerini bilinen yasa dışı mallarla çapraz referanslama</li>
+- Kara para aklama belirtileri için mali kayıtların taranması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte ürünler için çevrimiçi pazar yerlerini araştırmak</li>
+- Suç liderlerinin bilinen kamu faaliyetleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Mallar aracılığıyla kara para aklamaya yönelik çevrimiçi platformların izlenmesi</li>
+- Organize suç bölgelerini izlemek için coğrafi verileri kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasadışı ürün satıcılarını izlemek için OSINT araçlarının kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Organize suç davalarına ilişkin mahkeme kayıtlarının izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 89. <strong>OSINT için Küresel Ticaret Verilerinin Takibi</strong></h3>
+
+ ### 69. ***Finansal Dolandırıcılıkları Araştırmak İçin OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Uluslararası ticaret eğilimleri için gümrük kayıtlarının taranması</li>
+- Dolandırıcılıkla ilgili anahtar kelimeler için web sitelerini tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ekonomik analiz için kamu ticaret raporlarının incelenmesi</li>
+- Finansal dolandırıcılıkların kamu veri tabanlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ticaret verilerinin nakliye bilgileriyle çapraz referanslanması</li>
+- Dolandırıcılık uyarı forumlarını ve bloglarını izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Küresel tedarik zincirlerinin ticaret kesintilerine karşı izlenmesi</li>
+- Şirket kayıtları üzerinden dolandırıcı şirketlerin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu verileri aracılığıyla ticaret anlaşmaları ve tarifelerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Kimlik avı ve dolandırıcılık kampanyaları için e-posta modellerinin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 90. <strong>Hükümet Şeffaflık Web Sitelerini Kazıma</strong></h3>
+
+ ### 70. ***Uluslararası Yaptırımların ve Uyumluluğun Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Devlet sözleşmelerinin ve harcama verilerinin izlenmesi</li>
+- Yaptırım listelerindeki şirketleri veya kişileri araştırmak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hükümet faaliyetlerinin kamu kayıtlarıyla çapraz referanslanması</li>
+- Uluslararası ticaret verilerinin uyumluluk ihlalleri açısından izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu görevlilerinin hükümet şeffaflık portalları aracılığıyla soruşturulması</li>
+- Yaptırım ihlalleri için kamu mali kayıtlarının toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuoyu duruşmalarının ve yasama verilerinin analiz için toplanması</li>
+- Yaptırım uygulanan kuruluşların kurumsal dosyalarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Şeffaflık verilerinin araştırmacı gazetecilik için kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Yaptırımların aşılması için küresel tedarik zincirlerinin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 91. OSINT Kullanarak Gayrimenkul İşlemlerinin Takibi</h3>
+
+ ### 71. ***OSINT Aracılığıyla Terör Finansmanının İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kamu arazi kayıtları aracılığıyla mülkiyet sahipliğinin araştırılması</li>
+- Terörizmin finansmanı için kamuya açık kripto para birimi işlemlerinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kara para aklama amaçlı gayrimenkul satışlarının izlenmesi</li>
+- Şüpheli işlemler için finansal kayıtların taranması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Konut piyasasındaki trendler için gayrimenkul listelerini tarama</li>
+- Aşırılıkçı forumların bağış toplama faaliyetleri için izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Mülk sahiplerini kurumsal dosyalarla çapraz referanslama</li>
+- Kamu kayıtlarının bilinen terör örgütleriyle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi yolsuzlukla bağlantılı mülk işlemlerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Terörizmle bağlantılı kara para aklama operasyonlarının belirlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 92. <strong>Kripto Para Hırsızlığını Araştırmak İçin OSINT</strong></h3>
+
+ ### 72. ***İş Panolarını ve İşe Alma Web Sitelerini Tarama*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Kripto para cüzdanlarının hırsızlık belirtileri açısından izlenmesi</li>
+- İşe alım trendleri için iş panolarını tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bilinen soygunlarla genel kripto para birimi adreslerinin çapraz referanslanması</li>
+- Belirli sektörlerdeki işe alım faaliyetlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çalınan fonları izlemek için blockchain analiz araçlarının kullanılması</li>
+- İş ilanlarının kurumsal verilerle çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Merkezi olmayan borsalardaki hırsızlıkların araştırılması</li>
+- Sahte iş ilanlarının kimlik avı amaçlı olup olmadığını araştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hırsızlık gizlemesi için kripto para karıştırma hizmetlerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Kurumsal casusluk için işe alım modellerinin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 93. <strong>OSINT kullanarak Halk Sağlığı Eğilimlerinin İzlenmesi</strong></h3>
+
+ ### 73. ***OSINT için Kamu Patent Veritabanlarının Kullanımı*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Epidemiyolojik analiz için halk sağlığı veri kümelerinin taranması</li>
+- Teknolojik yenilikler için patent başvurularının toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı hastalık salgınlarına karşı izleme</li>
+- Patentlerin şirket dosyalarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Klinik araştırma verileri aracılığıyla ilaç şirketlerinin araştırılması</li>
+- Hukuki kayıtlarda patent uyuşmazlıklarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sağlık trendlerinin hükümet verileriyle çapraz referanslanması</li>
+- Patentlerin sahiplik geçmişinin araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık veri kaynakları aracılığıyla kamu sağlığı politikalarının analizi</li>
-<!-- /wp:list-item --></ul>
+- Sektöre göre patent başvurularındaki eğilimlerin belirlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 94. <strong>Tedarik Zinciri Güvenliği için OSINT Kullanımı</strong></h3>
+
+ ### 74. ***Kamu İhale Sözleşmelerinin Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Tedarikçileri ve ortakları kamu verileri aracılığıyla izleme</li>
+- Sözleşme detayları için hükümet tedarik web sitelerini taramak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tedarik zinciri kesintileri için nakliye verilerinin toplanması</li>
+- Kamu ihalelerinin kurumsal teklif verme kalıpları açısından izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu kayıtları aracılığıyla tedarik zinciri siber saldırılarının araştırılması</li>
+- Tedarik sözleşmelerinin finansal kayıtlarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tedarik zinciri varlıklarını finansal dosyalarla çapraz referanslama</li>
+- Kamu verileri aracılığıyla sözleşme dolandırıcılığının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Küresel tedarik zincirlerinin jeopolitik riskler açısından analizi</li>
-<!-- /wp:list-item --></ul>
+- Tedarik eğilimlerini analiz etmek için OSINT araçlarını kullanma 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 95. <strong>Seçim Kampanyaları İçin Sosyal Medyayı Kazıma</strong></h3>
+
+ ### 75. ***Nakliye Konteynerleri ve Kargo Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Seçimle ilgili sosyal medya faaliyetlerinin izlenmesi</li>
+- Kamu nakliye listelerinin şüpheli faaliyetler açısından izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Seçim kampanyalarındaki sahte hesapların ve botların araştırılması</li>
+- Nakliye verilerinin bilinen kaçakçılık rotalarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi reklamların kampanya finansmanı kayıtlarıyla çapraz referanslanması</li>
+- Toplu taşıma verileri üzerinden kargo hırsızlığının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Seçmen manipülasyonu planları için sosyal medyayı taramak</li>
+- Konteyner takibi için coğrafi araçların kullanılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Seçimler sırasında kamuoyunun görüşünü izlemek için duygu analizinin kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Yasadışı sevkiyat tespiti için gümrük verilerinin toplanması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 96. <strong>İnternet Sansürünün ve Gözetiminin Takibi</strong></h3>
+
+ ### 76. ***Çevre Koruması için OSINT'in İzlenmesi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Küresel internet sansürüne ilişkin raporların toplanması</li>
+- Kamuya açık raporlar aracılığıyla yasadışı ağaç kesme faaliyetlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hükümetlerin gözetim faaliyetleri açısından izlenmesi</li>
+- Eğilimler için çevresel etki değerlendirmelerini tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dijital hak ihlallerine ilişkin kamu açıklamalarının araştırılması</li>
+- Uydu verilerinin çevresel yıkımla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sansür faaliyetlerinin jeopolitik gerginliklerle çapraz referanslanması</li>
+- Şirketlerin çevre ihlalleri nedeniyle soruşturulması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarını kullanarak internet kesintilerindeki eğilimleri analiz etmek</li>
-<!-- /wp:list-item --></ul>
+- Kamusal çevre protesto hareketlerinin izlenmesi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 97. <strong>OSINT Kullanılarak Vergi Kaçakçılığının Araştırılması</strong></h3>
+
+ ### 77. ***OSINT için Havayolu Verilerinin Kazınması*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Vergi kaçakçılığına dair işaretler için mali kayıtların taranması</li>
+- Yolcu takibi için uçuş verilerinin toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurumsal dosyaların vergi makamlarıyla çapraz referanslanması</li>
+- Şüpheli faaliyetler için uçak hareketlerinin izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu verileri aracılığıyla açık deniz vergi cennetlerinin araştırılması</li>
+- Uçuş yollarının bilinen seyahat rotalarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sosyal medyayı aşırı harcama kalıpları açısından izlemek</li>
+- Özel jet hareketlerinin mali suçlar açısından araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu veri tabanlarında vergi kaçakçılığı modellerinin analizi</li>
-<!-- /wp:list-item --></ul>
+- Trend analizi için kamu uçuş programlarının taranması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 98. <strong>Yolsuzluğu Araştırmak İçin OSINT</strong></h3>
+
+ ### 78. ***Uyuşturucu Kaçakçılığının Takibinde OSINT*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Yolsuzluk belirtileri için hükümet kayıtlarının taranması</li>
+- Uyuşturucuyla ilgili faaliyetler açısından sosyal medyanın izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamu alımları verilerinin usulsüzlüklere karşı izlenmesi</li>
+- Uyuşturucu satışları için karanlık web pazarlarını taramak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi faaliyetlerin mali açıklamalarla çapraz referanslanması</li>
+- Uyuşturucu tutuklamalarının kamu kayıtlarıyla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Açık kaynaklı verileri kullanarak kamu görevlilerini araştırmak</li>
+- Trafik rotalarını izlemek için coğrafi konum verilerini kullanma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarıyla ihbarcı raporlarının analizi</li>
-<!-- /wp:list-item --></ul>
+- Uyuşturucu kaçakçılığıyla bağlantılı finansal işlemlerin araştırılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 99. <strong>OSINT ile Dark Web Etkinliğini İzleme</strong></h3>
+
+ ### 79. ***Siyasi Etki Operasyonlarının Takibi*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Karanlık web forumlarının suç faaliyetleri açısından izlenmesi</li>
+- Sosyal medyayı siyasi manipülasyon çabalarına karşı izleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yasadışı mallar için karanlık web pazar yerlerini taramak</li>
+- Devlet destekli medya kampanyalarının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Karanlık web verilerinin kamu kayıtlarıyla çapraz referanslanması</li>
+- Lobicilik faaliyetleri için kamu kayıtlarının toplanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Karanlık web'de kullanılan anonimlik tekniklerinin araştırılması</li>
+- Siyasi bağışların kurumsal çıkarlarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>OSINT araçlarını kullanarak karanlık web etkinliğindeki eğilimleri analiz etme</li>
-<!-- /wp:list-item --></ul>
+- Kamusal veriler aracılığıyla siyasi etki modellerinin analizi 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 100. <strong>Sahte Şirketleri Araştırmak İçin OSINT</strong></h3>
+
+ ### 80. ***OSINT için Emlak Web Sitelerini Kazıma*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Şirket kayıtlarının sahte şirketlerle çapraz referanslanması</li>
+- Mülkiyet bilgileri için mülk listelerini tarama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bilinen kabuk varlıklara bağlantılar için finansal kayıtları taramak</li>
+- Gayrimenkul satışlarının finansal kayıtlarla çapraz referanslanması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte şirketleri içeren vergi kaçırma planlarının araştırılması</li>
+- Kara para aklama amaçlı gayrimenkul satışlarının izlenmesi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte şirketlere bağlı offshore hesapların izlenmesi</li>
+- Kamuya açık ilanlar kullanılarak yapılan kiralama dolandırıcılıklarının araştırılması 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sahte şirketlerin gerçek sahiplerini izlemek için OSINT araçlarının kullanılması</li>
-<!-- /wp:list-item --></ul>
+- Açık verileri kullanarak gayrimenkul yatırımındaki eğilimleri analiz etmek 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 81. ***Protesto ve Gösterileri İzlemek İçin OSINT*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Protesto örgütlenmesi için sosyal medyayı taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Açık veriler aracılığıyla gerçek zamanlı protesto faaliyetlerinin izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Protesto liderlerinin kamu kayıtlarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Protesto hareketlerini dezenformasyon veya şiddet açısından analiz etmek 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT kullanılarak protesto gösterilerine yönelik hükümet tepkisinin araştırılması 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 82. ***OSINT ile Finansal Piyasaların Takibi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Kamu hisse senedi alım satım modellerinin izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Piyasa trendleri için finansal haberleri taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Hisse senedi hareketlerinin şirket dosyalarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Açık veriler aracılığıyla içeriden bilgi ticaretinin araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu mali verileriyle piyasa oynaklığının analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 83. ***OSINT için Genel Olarak Kullanılabilir API'leri Kullanma*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Yapılandırılmış veriler için genel API'leri kazıma 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- API erişimini kullanarak genel veri kümelerini izleme 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Veri ifşası için API güvenlik açıklarını araştırma 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- API entegrasyonlarıyla OSINT görevlerinin otomatikleştirilmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Genel API'leri diğer OSINT kaynaklarıyla çapraz referanslama 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 84. ***Çevrimiçi Nefret Söylemi ve Aşırılığın İzlenmesi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Nefret söylemi anahtar kelimeleri için sosyal medyayı tarama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Aşırılıkçı forumların faaliyetlerinin örgütlenmesi için izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Nefret gruplarının kamu verileriyle çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Çevrimiçi nefret söylemi kalıplarını tespit etmek için <a href="https://www.siberoloji.com/list-of-the-100-osint-topics-with-subtopics/#"> yapay zekanın</a> kullanılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT aracılığıyla çevrimiçi taciz kampanyalarının araştırılması 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 85. ***Çevrimiçi İncelemeleri ve Tüketici Geri Bildirimlerini Araştırma*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Ürün incelemeleri için e-ticaret web sitelerini tarama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Tüketici platformlarında sahte veya taraflı incelemelerin tespiti 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kullanıcı profillerini inceleme etkinliğiyle çapraz referanslama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamuya açık verileri kullanarak inceleme dolandırıcılığı planlarını araştırmak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT kullanarak ürün incelemelerindeki duygu eğilimlerini analiz etme 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 86. ***OSINT ile Silah Ticaretinin Takibi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Yasadışı silah satışları için çevrimiçi platformların izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Şüpheli işlemler için silah ticareti veritabanlarının taranması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamusal veriler üzerinden silah kaçakçılığı rotalarının araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Silah satışlarının uluslararası yaptırımlarla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT araçlarını kullanarak silah kaçakçılığı modellerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 87. ***Sahte Web Sitelerini Belirlemek İçin OSINT*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Kimlik avı düzenekleri için genel web sitelerini tarama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Web sitesi alan adı kayıt ayrıntılarını araştırma 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sahte sitelerin kamu uyarılarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Çevrimiçi dolandırıcılık raporları için sosyal medyayı izleme 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT kullanarak sahte web sitesi modellerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 88. ***Yasadışı Mallar İçin Çevrimiçi Pazar Yerlerinin İzlenmesi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Yasadışı ürünler için karanlık web pazar yerlerini taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Ürün listelerini bilinen yasa dışı mallarla çapraz referanslama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sahte ürünler için çevrimiçi pazar yerlerini araştırmak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Mallar aracılığıyla kara para aklamaya yönelik çevrimiçi platformların izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Yasadışı ürün satıcılarını izlemek için OSINT araçlarının kullanılması 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 89. ***OSINT için Küresel Ticaret Verilerinin Takibi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Uluslararası ticaret eğilimleri için gümrük kayıtlarının taranması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Ekonomik analiz için kamu ticaret raporlarının incelenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Ticaret verilerinin nakliye bilgileriyle çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Küresel tedarik zincirlerinin ticaret kesintilerine karşı izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu verileri aracılığıyla ticaret anlaşmaları ve tarifelerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 90. ***Hükümet Şeffaflık Web Sitelerini Kazıma*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Devlet sözleşmelerinin ve harcama verilerinin izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Hükümet faaliyetlerinin kamu kayıtlarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu görevlilerinin hükümet şeffaflık portalları aracılığıyla soruşturulması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamuoyu duruşmalarının ve yasama verilerinin analiz için toplanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Şeffaflık verilerinin araştırmacı gazetecilik için kullanılması 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 91. OSINT Kullanarak Gayrimenkul İşlemlerinin Takibi
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Kamu arazi kayıtları aracılığıyla mülkiyet sahipliğinin araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kara para aklama amaçlı gayrimenkul satışlarının izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Konut piyasasındaki trendler için gayrimenkul listelerini tarama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Mülk sahiplerini kurumsal dosyalarla çapraz referanslama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Siyasi yolsuzlukla bağlantılı mülk işlemlerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 92. ***Kripto Para Hırsızlığını Araştırmak İçin OSINT*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Kripto para cüzdanlarının hırsızlık belirtileri açısından izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Bilinen soygunlarla genel kripto para birimi adreslerinin çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Çalınan fonları izlemek için blockchain analiz araçlarının kullanılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Merkezi olmayan borsalardaki hırsızlıkların araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Hırsızlık gizlemesi için kripto para karıştırma hizmetlerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 93. ***OSINT kullanarak Halk Sağlığı Eğilimlerinin İzlenmesi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Epidemiyolojik analiz için halk sağlığı veri kümelerinin taranması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sosyal medyayı hastalık salgınlarına karşı izleme 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Klinik araştırma verileri aracılığıyla ilaç şirketlerinin araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sağlık trendlerinin hükümet verileriyle çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Açık veri kaynakları aracılığıyla kamu sağlığı politikalarının analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 94. ***Tedarik Zinciri Güvenliği için OSINT Kullanımı*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Tedarikçileri ve ortakları kamu verileri aracılığıyla izleme 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Tedarik zinciri kesintileri için nakliye verilerinin toplanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu kayıtları aracılığıyla tedarik zinciri siber saldırılarının araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Tedarik zinciri varlıklarını finansal dosyalarla çapraz referanslama 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Küresel tedarik zincirlerinin jeopolitik riskler açısından analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 95. ***Seçim Kampanyaları İçin Sosyal Medyayı Kazıma*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Seçimle ilgili sosyal medya faaliyetlerinin izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Seçim kampanyalarındaki sahte hesapların ve botların araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Siyasi reklamların kampanya finansmanı kayıtlarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Seçmen manipülasyonu planları için sosyal medyayı taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Seçimler sırasında kamuoyunun görüşünü izlemek için duygu analizinin kullanılması 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 96. ***İnternet Sansürünün ve Gözetiminin Takibi*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Küresel internet sansürüne ilişkin raporların toplanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Hükümetlerin gözetim faaliyetleri açısından izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Dijital hak ihlallerine ilişkin kamu açıklamalarının araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sansür faaliyetlerinin jeopolitik gerginliklerle çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT araçlarını kullanarak internet kesintilerindeki eğilimleri analiz etmek 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 97. ***OSINT Kullanılarak Vergi Kaçakçılığının Araştırılması*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Vergi kaçakçılığına dair işaretler için mali kayıtların taranması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kurumsal dosyaların vergi makamlarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu verileri aracılığıyla açık deniz vergi cennetlerinin araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sosyal medyayı aşırı harcama kalıpları açısından izlemek 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu veri tabanlarında vergi kaçakçılığı modellerinin analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 98. ***Yolsuzluğu Araştırmak İçin OSINT*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Yolsuzluk belirtileri için hükümet kayıtlarının taranması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Kamu alımları verilerinin usulsüzlüklere karşı izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Siyasi faaliyetlerin mali açıklamalarla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Açık kaynaklı verileri kullanarak kamu görevlilerini araştırmak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT araçlarıyla ihbarcı raporlarının analizi 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 99. ***OSINT ile Dark Web Etkinliğini İzleme*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Karanlık web forumlarının suç faaliyetleri açısından izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Yasadışı mallar için karanlık web pazar yerlerini taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Karanlık web verilerinin kamu kayıtlarıyla çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Karanlık web'de kullanılan anonimlik tekniklerinin araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- OSINT araçlarını kullanarak karanlık web etkinliğindeki eğilimleri analiz etme 
+<!-- /wp:list-item --> 
+<!-- /wp:list -->
+
+
+ ### 100. ***Sahte Şirketleri Araştırmak İçin OSINT*** 
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+- Şirket kayıtlarının sahte şirketlerle çapraz referanslanması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Bilinen kabuk varlıklara bağlantılar için finansal kayıtları taramak 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sahte şirketleri içeren vergi kaçırma planlarının araştırılması 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sahte şirketlere bağlı offshore hesapların izlenmesi 
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+- Sahte şirketlerin gerçek sahiplerini izlemek için OSINT araçlarının kullanılması 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->

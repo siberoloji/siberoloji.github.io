@@ -29,7 +29,7 @@ url: /switch-case-statement-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -79,7 +79,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code demonstrates the use of a <code>switch-case</code> statement to handle different user inputs. The program begins by including the necessary header file <code>&lt;iostream&gt;</code> and using the <code>std</code> namespace to simplify the code. 
@@ -146,7 +146,7 @@ case 7:
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

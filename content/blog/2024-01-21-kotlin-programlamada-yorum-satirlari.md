@@ -29,19 +29,19 @@ url: /tr/kotlin-programlamada-yorum-satirlari/
 ---
 
 <!-- wp:paragraph -->
-<p>Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.</p>
+<p>Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.
   
 
 <!-- wp:paragraph -->
-<p>Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin'de 3 farklı yorum satırı kullanımı vardır.</p>
+<p>Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin'de 3 farklı yorum satırı kullanımı vardır.
   
 
  
- ## Satır Sonu Yorumları</h2>
+ ## Satır Sonu Yorumları
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.</p>
+<p>Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.
   
 
 <!-- wp:code -->
@@ -56,11 +56,11 @@ url: /tr/kotlin-programlamada-yorum-satirlari/
 <!-- /wp:code -->
 
  
- ## Çok Satırlı Yorumlar</h2>
+ ## Çok Satırlı Yorumlar
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.</p>
+<p>Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.
   
 
 <!-- wp:code -->
@@ -78,11 +78,11 @@ url: /tr/kotlin-programlamada-yorum-satirlari/
 <!-- /wp:code -->
 
  
- ## Dokümantasyon Yorumları</h2>
+ ## Dokümantasyon Yorumları
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.</p>
+<p>Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.
   
 
 <!-- wp:code -->
@@ -107,5 +107,5 @@ fun main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.</p>
+<p>Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.
   

@@ -32,7 +32,7 @@ url: /apropos-command-in-linux/
  
 
  
- ## apropos command</h2>
+ ## apropos command
 <!-- /wp:heading -->
 
   You can think of the "apropos" command as the search engine for man pages. This command searches command names and short descriptions. It does not search all help pages. Below is a simple example. This command will list all commands that contain "unzip" anywhere in their help page descriptions or command names. 
@@ -73,7 +73,7 @@ Usage: apropos [OPTION...] KEYWORD...
 <!-- /wp:code -->
 
  
- ## -e, --exact</h2>
+ ## -e, --exact
 <!-- /wp:heading -->
 
   The phrase you are looking for must match exactly. Below you can see the use of the expression "partiti" with and without the -e option. 
@@ -105,7 +105,7 @@ systemd-repart.service (8) - Automatically grow and add partitions</code></pre>
 <!-- /wp:code -->
 
  
- ## -r, --regex</h2>
+ ## -r, --regex
 <!-- /wp:heading -->
 
   If you want to include regular expressions in your search expression, you can use them. For example, ^ means "head side" in regular expressions. Let's try to find the commands that start with "tar". As you can see, the apropos command found 2 commands whose command name starts with "tar" and also found another command whose description begins with Tar. 
@@ -119,7 +119,7 @@ tarcat (1)           - concatenates the pieces of a GNU tar multi-volume archive
 <!-- /wp:code -->
 
  
- ## -a, --and</h2>
+ ## -a, --and
 <!-- /wp:heading -->
 
   You can use it when all the expressions you are searching for must be found. Let's search for help pages that contain "tar" and "file" in the command name or description. 
@@ -136,7 +136,7 @@ systemd-xdg-autostart-generator (8) - User unit generator for XDG autostart file
 <!-- /wp:code -->
 
  
- ## -w, --wildcard</h2>
+ ## -w, --wildcard
 <!-- /wp:heading -->
 
   It indicates that you are using wildcard characters in the expression you want to search. For example, it is used when you want to find all expressions that start with "color" and whatever follows. In our example, all comments containing "color", "colorization", "color-name", "colormap" were found. 

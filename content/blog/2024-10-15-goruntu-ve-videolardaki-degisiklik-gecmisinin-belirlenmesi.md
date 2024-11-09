@@ -25,10 +25,10 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
  
 
  
- ## Metaveriyi anlamak</h2>
+ ## Metaveriyi anlamak
 <!-- /wp:heading -->
 
-  <strong>Meta Veri Nedir?</strong> 
+  ***Meta Veri Nedir?***  
  
 
   Meta veriler genellikle "veriler hakkında veriler" olarak tanımlanır. Bir dosyanın içeriği, bağlamı ve yapısı hakkında bilgi sağlar. Görüntüler ve videolar için meta veriler şunları içerebilir: 
@@ -36,34 +36,34 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Oluşturulma Tarihi:</strong> Dosyanın ilk oluşturulduğu tarih.</li>
+- ***Oluşturulma Tarihi:***  Dosyanın ilk oluşturulduğu tarih. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Değişiklik Tarihi:</strong> Dosyanın en son düzenlendiği tarih.</li>
+- ***Değişiklik Tarihi:***  Dosyanın en son düzenlendiği tarih. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Dosya Türü:</strong> Dosyanın biçimi (örneğin JPEG, PNG, MP4).</li>
+- ***Dosya Türü:***  Dosyanın biçimi (örneğin JPEG, PNG, MP4). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Yazar Bilgileri:</strong> Dosyanın yaratıcısı.</li>
+- ***Yazar Bilgileri:***  Dosyanın yaratıcısı. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Konum Verileri:</strong> Görüntünün veya videonun çekildiği yerin GPS koordinatları.</li>
+- ***Konum Verileri:***  Görüntünün veya videonun çekildiği yerin GPS koordinatları. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Aygıt Bilgileri:</strong> Dosyayı oluşturmak için kullanılan aygıta ilişkin ayrıntılar.</li>
-<!-- /wp:list-item --></ul>
+- ***Aygıt Bilgileri:***  Dosyayı oluşturmak için kullanılan aygıta ilişkin ayrıntılar. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Bu veriler, adli soruşturmalar, güvenlik değerlendirmeleri ve hatta hukuki konular da dahil olmak üzere çeşitli uygulamalar için kritik öneme sahip olabilir. 
  
 
-  <strong>Meta Veri Neden Önemlidir?</strong> 
+  ***Meta Veri Neden Önemlidir?***  
  
 
   Dijital ayak izlerinin bireyler ve kuruluşlar hakkında önemli içgörülere yol açabildiği bir çağda, meta verileri anlamak hayati önem taşır. Yalnızca dosya içeriğinden anlaşılamayabilecek hassas bilgileri ortaya çıkarabilir. Örneğin: 
@@ -71,36 +71,36 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Gizlilik Riskleri:</strong> Görüntülerdeki GPS verileri kişisel konumlarınızı açığa çıkarabilir.</li>
+- ***Gizlilik Riskleri:***  Görüntülerdeki GPS verileri kişisel konumlarınızı açığa çıkarabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Güvenlik Açıkları:</strong> Yazar adları ve kullanılan yazılımlar sosyal mühendislik saldırılarında kullanılabilir.</li>
+- ***Güvenlik Açıkları:***  Yazar adları ve kullanılan yazılımlar sosyal mühendislik saldırılarında kullanılabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Hukuki Sonuçlar:</strong> Fikri mülkiyetle ilgili hukuki uyuşmazlıklarda değişiklik tarihleri ​​kritik öneme sahip olabilir.</li>
-<!-- /wp:list-item --></ul>
+- ***Hukuki Sonuçlar:***  Fikri mülkiyetle ilgili hukuki uyuşmazlıklarda değişiklik tarihleri ​​kritik öneme sahip olabilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Meta Veri Çıkarımı İçin Araçlar</h2>
+ ## Meta Veri Çıkarımı İçin Araçlar
 <!-- /wp:heading -->
 
   Görüntülerden ve videolardan meta veri çıkarmak için çeşitli araçlar mevcuttur. İşte en etkili olanlardan bazıları: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Exif Aracı</h3>
+
+ ### 1. Exif Aracı
 <!-- /wp:heading -->
 
-  <strong>Genel Bakış:</strong> 
+  ***Genel Bakış:***  
  
 
   ExifTool, çok çeşitli dosyalardaki meta verileri okuyan, yazan ve düzenleyen güçlü bir komut satırı uygulamasıdır. JPEG, TIFF, PNG, MP4 ve diğer birçok formatı destekler. 
  
 
-  <strong>Kurulum:</strong> 
+  ***Kurulum:***  
  
 
   ExifTool'u bir Linux sistemine kurmak için genellikle aşağıdaki komutu kullanabilirsiniz: 
@@ -110,7 +110,7 @@ url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt-get install libimage-exiftool-perl</code></pre>
 <!-- /wp:code -->
 
-  <strong>Temel Kullanım:</strong> 
+  ***Temel Kullanım:***  
  
 
   Bir görüntü dosyasından tüm meta verileri çıkarmak için: 
@@ -135,17 +135,17 @@ exiftool -CreateDate image.jpg</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">exiftool -r /path/to/directory/</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. MetaLookup</h3>
+
+ ### 2. MetaLookup
 <!-- /wp:heading -->
 
-  <strong>Genel Bakış:</strong> 
+  ***Genel Bakış:***  
  
 
   MetaLookup, resimler (PNG, JPEG), PDF'ler ve Office belgeleri dahil olmak üzere çeşitli dosya biçimlerinden meta verileri çıkaran bir diğer kullanışlı araçtır. 
  
 
-  <strong>Kurulum:</strong> 
+  ***Kurulum:***  
  
 
   Depoyu GitHub'dan kopyalayabilir ve pip kullanarak gerekli kütüphaneleri yükleyebilirsiniz: 
@@ -157,7 +157,7 @@ cd MetaLookup
 pip install -r requirements.txt</code></pre>
 <!-- /wp:code -->
 
-  <strong>Kullanım:</strong> 
+  ***Kullanım:***  
  
 
   Tek bir dosyadan meta verileri çıkarmak için: 
@@ -174,17 +174,17 @@ pip install -r requirements.txt</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">python Metalookup.py -d /path/to/directory/</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Metagoofil</h3>
+
+ ### 3. Metagoofil
 <!-- /wp:heading -->
 
-  <strong>Genel Bakış:</strong> 
+  ***Genel Bakış:***  
  
 
   Metagoofil, web sitelerinde bulunan herkese açık belgelerden meta verileri çıkarmak için özel olarak tasarlanmıştır. Çeşitli belge türlerinden (PDF'ler, DOC'lar) kullanıcı adları ve e-posta adresleri gibi bilgileri toplayabilir. 
  
 
-  <strong>Kurulum:</strong> 
+  ***Kurulum:***  
  
 
   Metagoofil Kali Linux'a şu şekilde kurulabilir: 
@@ -194,7 +194,7 @@ pip install -r requirements.txt</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">apt-get install metagoofil</code></pre>
 <!-- /wp:code -->
 
-  <strong>Kullanım Örneği:</strong> 
+  ***Kullanım Örneği:***  
  
 
   Belirli bir web sitesindeki belgelerden meta verileri çıkarmak için: 
@@ -208,39 +208,39 @@ pip install -r requirements.txt</code></pre>
  
 
  
- ## Meta Veri Çıkarımının Pratik Uygulamaları</h2>
+ ## Meta Veri Çıkarımının Pratik Uygulamaları
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Adli Soruşturmalar</h3>
+
+ ### 1. Adli Soruşturmalar
 <!-- /wp:heading -->
 
   Adli soruşturmalarda, meta veri çıkarmak dijital dosyalarla ilgili önemli kanıtlar sağlayabilir. Örneğin, kolluk kuvvetleri genellikle dijital fotoğrafları ne zaman çekildiklerini veya değiştirildiklerini belirlemek için analiz eder. Bu bilgi zaman çizelgeleri oluşturmaya veya mazeretleri doğrulamaya yardımcı olabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Siber Güvenlik Değerlendirmeleri</h3>
+
+ ### 2. Siber Güvenlik Değerlendirmeleri
 <!-- /wp:heading -->
 
   Siber güvenlik uzmanları, bir kuruluşun dijital varlıklarındaki olası güvenlik açıklarını belirlemek için meta veri çıkarma araçlarını kullanır. Belge özelliklerini veya görüntü verilerini analiz ederek, kötü niyetli aktörler tarafından istismar edilebilecek hassas bilgileri ortaya çıkarabilirler. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Sosyal Mühendislik Saldırıları</h3>
+
+ ### 3. Sosyal Mühendislik Saldırıları
 <!-- /wp:heading -->
 
   Saldırganlar, hedefli sosyal mühendislik saldırıları oluşturmak için çıkarılan meta verileri kullanabilir. Örneğin, yukarıda belirtilenler gibi OSINT teknikleri aracılığıyla kullanıcı adları veya e-posta adresleri bulurlarsa, bu kişilere özel kimlik avı saldırıları deneyebilirler. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Gizlilik Koruması</h3>
+
+ ### 4. Gizlilik Koruması
 <!-- /wp:heading -->
 
   Gizlilikleri konusunda endişe duyan kişiler, dosyaları çevrimiçi olarak paylaşmadan önce dosyalarına yerleştirilen meta verilerin farkında olmalıdır. ExifTool veya MetaSmash gibi araçları kullanmak, kullanıcıların GPS koordinatları veya yazar bilgileri gibi hassas verileri kamuya açıklanmadan önce kaldırmasına olanak tanır. 
  
 
  
- ## Sonuç</h2>
+ ## Sonuç
 <!-- /wp:heading -->
 
   OSINT meta veri çıkarma yoluyla görüntü ve videolardaki değişiklik geçmişini belirlemek yalnızca teknik bir beceri değildir; siber güvenlik veya dijital adli bilimlerle ilgilenen herkes için olmazsa olmaz bir uygulamadır. ExifTool, MetaLookup ve Metagoofil gibi güçlü araçları kullanarak profesyoneller, güvenlik önlemlerini artıran veya soruşturmalar sırasında kritik kanıtlar sağlayan değerli içgörüler ortaya çıkarabilir. 

@@ -30,7 +30,7 @@ url: /hardware-description-languages-behavioral-and-structural-modeling/
  
 
  
- ## Understanding Modeling in HDLs</h2>
+ ## Understanding Modeling in HDLs
 <!-- /wp:heading -->
 
   Before we dive into the specifics of behavioral and structural modeling, it's important to understand what we mean by "modeling" in the context of HDLs. In essence, modeling refers to the process of describing a digital system or circuit in a way that can be simulated, synthesized, or used to generate actual hardware. 
@@ -40,36 +40,36 @@ url: /hardware-description-languages-behavioral-and-structural-modeling/
  
 
  
- ## Behavioral Modeling</h2>
+ ## Behavioral Modeling
 <!-- /wp:heading -->
 
   Behavioral modeling, as the name suggests, focuses on describing the behavior or functionality of a digital system without explicitly specifying its internal structure. This approach is typically used for high-level design and is particularly useful in the early stages of the design process. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Characteristics of Behavioral Modeling</h3>
+
+ ### Characteristics of Behavioral Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Algorithmic Description</strong>: Behavioral models often use algorithmic constructs to describe the functionality of a system.</li>
+- ***Algorithmic Description*** : Behavioral models often use algorithmic constructs to describe the functionality of a system. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Abstract</strong>: It doesn't necessarily correspond to actual hardware structure.</li>
+- ***Abstract*** : It doesn't necessarily correspond to actual hardware structure. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Concise</strong>: Complex functionality can often be described more concisely than with structural models.</li>
+- ***Concise*** : Complex functionality can often be described more concisely than with structural models. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Easier to Understand</strong>: For complex systems, behavioral models can be easier to read and understand.</li>
-<!-- /wp:list-item --></ol>
+- ***Easier to Understand*** : For complex systems, behavioral models can be easier to read and understand. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Example in Verilog</h3>
+
+ ### Example in Verilog
 <!-- /wp:heading -->
 
   Let's consider a simple example of a 4-bit counter implemented using behavioral modeling in Verilog: 
@@ -95,8 +95,8 @@ endmodule</code></pre>
   In this example, we describe the behavior of the counter using an <code>always</code> block. The counter increments on each positive edge of the clock unless reset is asserted. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Example in VHDL</h3>
+
+ ### Example in VHDL
 <!-- /wp:heading -->
 
   Here's the same 4-bit counter implemented in VHDL: 
@@ -132,77 +132,77 @@ end Behavioral;</code></pre>
   This VHDL code describes the same behavior as the Verilog example, using a process to define the counter's functionality. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Advantages of Behavioral Modeling</h3>
+
+ ### Advantages of Behavioral Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Abstraction</strong>: Allows designers to focus on functionality without worrying about implementation details.</li>
+- ***Abstraction*** : Allows designers to focus on functionality without worrying about implementation details. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Rapid Prototyping</strong>: Quicker to write and simulate, especially for complex systems.</li>
+- ***Rapid Prototyping*** : Quicker to write and simulate, especially for complex systems. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Flexibility</strong>: Easier to modify and experiment with different algorithms or approaches.</li>
+- ***Flexibility*** : Easier to modify and experiment with different algorithms or approaches. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Readability</strong>: Often more intuitive and easier to understand, especially for non-hardware specialists.</li>
-<!-- /wp:list-item --></ol>
+- ***Readability*** : Often more intuitive and easier to understand, especially for non-hardware specialists. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Limitations of Behavioral Modeling</h3>
+
+ ### Limitations of Behavioral Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Synthesis Challenges</strong>: Not all behaviorally described code is synthesizable.</li>
+- ***Synthesis Challenges*** : Not all behaviorally described code is synthesizable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Performance</strong>: May not always result in the most efficient hardware implementation.</li>
+- ***Performance*** : May not always result in the most efficient hardware implementation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Control</strong>: Less direct control over the resulting hardware structure.</li>
-<!-- /wp:list-item --></ol>
+- ***Control*** : Less direct control over the resulting hardware structure. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Structural Modeling</h2>
+ ## Structural Modeling
 <!-- /wp:heading -->
 
   Structural modeling, on the other hand, describes a digital system in terms of its components and their interconnections. This approach is closer to the actual hardware implementation and is often used for lower-level designs or when specific hardware structures are required. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Characteristics of Structural Modeling</h3>
+
+ ### Characteristics of Structural Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Component-Based</strong>: Describes systems in terms of interconnected components or modules.</li>
+- ***Component-Based*** : Describes systems in terms of interconnected components or modules. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Hierarchical</strong>: Supports creation of complex systems through hierarchical composition.</li>
+- ***Hierarchical*** : Supports creation of complex systems through hierarchical composition. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Closer to Hardware</strong>: More directly represents the actual hardware structure.</li>
+- ***Closer to Hardware*** : More directly represents the actual hardware structure. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Explicit Connections</strong>: Signal flow and connections between components are explicitly defined.</li>
-<!-- /wp:list-item --></ol>
+- ***Explicit Connections*** : Signal flow and connections between components are explicitly defined. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Example in Verilog</h3>
+
+ ### Example in Verilog
 <!-- /wp:heading -->
 
   Let's consider a structural model of a 4-bit ripple carry adder in Verilog: 
@@ -236,8 +236,8 @@ endmodule</code></pre>
   In this example, we first define a <code>full_adder</code> module, and then use four instances of this module to create a 4-bit ripple carry adder. The connections between the full adders are explicitly specified. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Example in VHDL</h3>
+
+ ### Example in VHDL
 <!-- /wp:heading -->
 
   Here's the same 4-bit ripple carry adder implemented structurally in VHDL: 
@@ -290,48 +290,48 @@ end Structural;</code></pre>
   This VHDL code structurally describes the same 4-bit ripple carry adder, explicitly instantiating and connecting four full adder components. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Advantages of Structural Modeling</h3>
+
+ ### Advantages of Structural Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Direct Hardware Representation</strong>: Closely mirrors the actual hardware structure.</li>
+- ***Direct Hardware Representation*** : Closely mirrors the actual hardware structure. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Predictable Synthesis</strong>: Generally results in more predictable synthesized hardware.</li>
+- ***Predictable Synthesis*** : Generally results in more predictable synthesized hardware. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Reusability</strong>: Encourages creation of reusable components.</li>
+- ***Reusability*** : Encourages creation of reusable components. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Fine-grained Control</strong>: Allows precise control over hardware implementation.</li>
-<!-- /wp:list-item --></ol>
+- ***Fine-grained Control*** : Allows precise control over hardware implementation. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Limitations of Structural Modeling</h3>
+
+ ### Limitations of Structural Modeling
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Verbosity</strong>: Can be more verbose and time-consuming to write, especially for complex systems.</li>
+- ***Verbosity*** : Can be more verbose and time-consuming to write, especially for complex systems. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Less Flexible</strong>: Changes to the design may require significant rewiring of components.</li>
+- ***Less Flexible*** : Changes to the design may require significant rewiring of components. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Lower Level of Abstraction</strong>: May be harder to understand the overall functionality at a glance.</li>
-<!-- /wp:list-item --></ol>
+- ***Lower Level of Abstraction*** : May be harder to understand the overall functionality at a glance. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Choosing Between Behavioral and Structural Modeling</h2>
+ ## Choosing Between Behavioral and Structural Modeling
 <!-- /wp:heading -->
 
   The choice between behavioral and structural modeling often depends on several factors: 
@@ -339,39 +339,39 @@ end Structural;</code></pre>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Design Stage</strong>: Behavioral modeling is often preferred in early design stages, while structural modeling may be used later for optimization.</li>
+- ***Design Stage*** : Behavioral modeling is often preferred in early design stages, while structural modeling may be used later for optimization. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Level of Abstraction</strong>: High-level system descriptions often use behavioral modeling, while low-level implementations may use structural modeling.</li>
+- ***Level of Abstraction*** : High-level system descriptions often use behavioral modeling, while low-level implementations may use structural modeling. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Design Requirements</strong>: Specific performance or area constraints may necessitate structural modeling for fine-grained control.</li>
+- ***Design Requirements*** : Specific performance or area constraints may necessitate structural modeling for fine-grained control. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Reusability</strong>: If creating reusable components is a priority, structural modeling may be preferred.</li>
+- ***Reusability*** : If creating reusable components is a priority, structural modeling may be preferred. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Synthesis Tools</strong>: Some synthesis tools may handle behavioral models better than others, influencing the choice of modeling style.</li>
+- ***Synthesis Tools*** : Some synthesis tools may handle behavioral models better than others, influencing the choice of modeling style. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Design Complexity</strong>: Very complex systems may be easier to describe behaviorally, while simpler systems or specific components may be better described structurally.</li>
-<!-- /wp:list-item --></ol>
+- ***Design Complexity*** : Very complex systems may be easier to describe behaviorally, while simpler systems or specific components may be better described structurally. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Mixed Modeling Approaches</h2>
+ ## Mixed Modeling Approaches
 <!-- /wp:heading -->
 
   In practice, many designs use a combination of behavioral and structural modeling. This mixed approach allows designers to leverage the strengths of both techniques. For example, a system might be described structurally at the top level, with individual components described behaviorally. 
  
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Behavioral and structural modeling are two fundamental approaches in hardware description languages, each with its own strengths and use cases. Behavioral modeling offers abstraction and ease of design, making it ideal for high-level descriptions and rapid prototyping. Structural modeling provides fine-grained control and a close correspondence to hardware, making it suitable for optimized, low-level designs. 

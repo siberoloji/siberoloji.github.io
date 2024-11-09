@@ -29,7 +29,7 @@ url: /for-loop-with-examples-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -131,7 +131,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code demonstrates various uses of the <code>for</code> loop, incorporating control flow statements such as <code>break</code>, <code>continue</code>, and <code>return</code> to manage loop execution. These examples illustrate how to control the flow within loops for different scenarios, making the code a valuable resource for understanding loop control mechanisms in C++. 
@@ -189,7 +189,7 @@ int main() {
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

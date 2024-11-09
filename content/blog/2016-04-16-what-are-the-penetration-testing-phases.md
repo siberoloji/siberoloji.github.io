@@ -37,11 +37,11 @@ url: /what-are-the-penetration-testing-phases/
  
 
  
- ## <strong>Penetration Test Phases</strong></h2>
+ ## ***Penetration Test Phases*** 
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>1. Coordination</strong></h3>
+
+ ### ***1. Coordination*** 
 <!-- /wp:heading -->
 
   This phase aims to determine the purpose of the tests to be carried out and to determine which systems will be included in the test. It is the phase where the service recipient and provider parties ask mutual questions in order to understand each other's demands and capabilities and an agreement is reached on all discussed issues. 
@@ -50,8 +50,8 @@ url: /what-are-the-penetration-testing-phases/
   In the following stages, all necessary coordination is expected to be made and completed in the section called "Coordination" in order to avoid clogging up the process and experiencing delays. In addition to the questions of the party that will provide the Penetration Testing service regarding the system and scope, the party that will receive the service should also ask many questions and clarify them. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>2. Collecting Information</strong></h3>
+
+ ### ***2. Collecting Information*** 
 <!-- /wp:heading -->
 
   Gathering information about the system or target to be Penetration Tested is the 2nd phase of the process. At this stage, information collection processes are generally divided into "active information collection" and "passive information collection". However, this distinction actually refers only to the types of information gathering based on the situation of communicating with the target. 
@@ -61,7 +61,7 @@ url: /what-are-the-penetration-testing-phases/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Layer 1</h4>
+<h4 class="wp-block-heading">Layer 1 
 <!-- /wp:heading -->
 
   This layer is the part of information collection that is carried out through the fastest and most automatic programs. These automatic information gathering tools scan search engines and internet archives to produce results about the target. 
@@ -71,21 +71,21 @@ url: /what-are-the-penetration-testing-phases/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Layer 2</h4>
+<h4 class="wp-block-heading">Layer 2 
 <!-- /wp:heading -->
 
   In addition to the operations carried out in the 1st Layer, these are detailed information collection operations, especially those performed manually. It also includes information gathering methods and Open Source Intelligence that seek answers to specific questions. More details of physical location, address information and business relationships are examined. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Layer 3</h4>
+<h4 class="wp-block-heading">Layer 3 
 <!-- /wp:heading -->
 
   These are detailed information gathering processes that may be required in very advanced penetration tests. This is a layer that is spread over a long period of time and where every possible technique is used. It is not required to be done in every penetration test. Information gathering for this layer is more relevant to the state level. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>3. Threat Modeling</strong></h3>
+
+ ### ***3. Threat Modeling*** 
 <!-- /wp:heading -->
 
   At this stage, the assets of the service recipient and the potential threats that may exist against these assets are analyzed. A method similar to the classical SWOT analysis approach can be followed. The important point here is to correctly identify the assets and their values ​​and correctly analyze the threats according to their importance. 
@@ -97,8 +97,8 @@ url: /what-are-the-penetration-testing-phases/
   As a result of all these analyses, threats and potential threats are revealed. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>4. Vulnerability Analysis</strong></h3>
+
+ ### ***4. Vulnerability Analysis*** 
 <!-- /wp:heading -->
 
   It is related to the purpose of revealing the physical or logical vulnerabilities and weaknesses of the target system originating from programs. It is the phase of applying the trial and test methods to detect these vulnerabilities. 
@@ -110,8 +110,8 @@ url: /what-are-the-penetration-testing-phases/
   For example: If our goal is to access the web server as an authorized user, we should try to detect vulnerabilities for this goal. During these efforts, the tester may encounter other vulnerabilities. Even if these are recorded for reporting, the main goal should not be deviated from. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>5. Login to the System</strong></h3>
+
+ ### ***5. Login to the System*** 
 <!-- /wp:heading -->
 
   The system entry phase is about using the entry point into the system by disabling the existing security measures as a result of the 4 previous phases. 
@@ -120,8 +120,8 @@ url: /what-are-the-penetration-testing-phases/
   If the vulnerability analysis and information gathering phases are carried out efficiently enough, this phase consists of the application of certain techniques. Because the information and analysis obtained have already revealed which vulnerabilities exist in the system in the previous stage. All that remains is to activate the application that exploits this vulnerability. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>6. Post-Entry Procedures</strong></h3>
+
+ ### ***6. Post-Entry Procedures*** 
 <!-- /wp:heading -->
 
   The first purpose of this phase is to evaluate the information and value of the system to which access is provided. 
@@ -133,8 +133,8 @@ url: /what-are-the-penetration-testing-phases/
   In addition to the answers we will give to all these questions, the rules and limits of the scope determined in the Coordination phase, which is the first phase, are very important. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>7. Reporting</strong></h3>
+
+ ### ***7. Reporting*** 
 <!-- /wp:heading -->
 
   The findings and results obtained at the end of the Penetration Test Phases are presented to the service user in the form of a report. This report does not have a specific format. In fact, each company can produce its own unique report. Although there is no template restriction, the report should be expected to have certain features. 

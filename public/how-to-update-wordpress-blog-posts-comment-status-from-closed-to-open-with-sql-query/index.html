@@ -16,7 +16,6 @@ Backup Your Database Before making any changes to your database, it’s crucial 
 
 <meta property="og:title" content="How to update WordPress blog posts comment status from closed to open with sql query?" />
 <meta property="og:description" content="To update the comment status of WordPress blog posts from &ldquo;closed&rdquo; to &ldquo;open&rdquo; using an SQL query, you’ll need to modify the WordPress database directly. Here&rsquo;s a step-by-step guide on how to achieve this safely:
-
 Backup Your Database
     
 Before making any changes to your database, it’s crucial to create a backup. This ensures that you can restore your site to its previous state if something goes wrong." />
@@ -30,7 +29,7 @@ Before making any changes to your database, it’s crucial to create a backup. T
 Backup Your Database Before making any changes to your database, it’s crucial to create a backup. This ensures that you can restore your site to its previous state if something goes wrong.">
   <meta itemprop="datePublished" content="2024-08-12T14:58:47+00:00">
   <meta itemprop="dateModified" content="2024-08-12T14:58:47+00:00">
-  <meta itemprop="wordCount" content="398">
+  <meta itemprop="wordCount" content="407">
   <meta itemprop="keywords" content="How-to Guides,Sql,Sql Query,Wordpress">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How to update WordPress blog posts comment status from closed to open with sql query?">
@@ -9659,31 +9658,31 @@ Backup Your Database Before making any changes to your database, it’s crucial 
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongbackup-your-databasestrongh3">Backup Your Database
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#backup-your-database">Backup Your Database
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongaccess-your-databasestrongh3">Access Your Database
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#access-your-database">Access Your Database
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#stronglocate-the-correct-tablestrongh3">Locate the Correct Table
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#locate-the-correct-table">Locate the Correct Table
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongrun-the-sql-querystrongh3">Run the SQL Query
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#run-the-sql-query">Run the SQL Query
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongexecute-the-querystrongh3">Execute the Query
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#execute-the-query">Execute the Query
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongverify-the-changesstrongh3">Verify the Changes
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#verify-the-changes">Verify the Changes
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongadditional-considerationsstrongh3">Additional Considerations
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#additional-considerations">Additional Considerations
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9717,50 +9716,51 @@ Backup Your Database Before making any changes to your database, it’s crucial 
                 </a></div>
         <div class="content">
           <p>To update the comment status of WordPress blog posts from &ldquo;closed&rdquo; to &ldquo;open&rdquo; using an SQL query, you’ll need to modify the WordPress database directly. Here&rsquo;s a step-by-step guide on how to achieve this safely:</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>Backup Your Database</strong></h3><span class="hx-absolute -hx-mt-20" id="strongbackup-your-databasestrongh3"></span>
-    <a href="#strongbackup-your-databasestrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Backup Your Database</strong></em><span class="hx-absolute -hx-mt-20" id="backup-your-database"></span>
+    <a href="#backup-your-database" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Before making any changes to your database, it’s crucial to create a backup. This ensures that you can restore your site to its previous state if something goes wrong.</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>Access Your Database</strong></h3><span class="hx-absolute -hx-mt-20" id="strongaccess-your-databasestrongh3"></span>
-    <a href="#strongaccess-your-databasestrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Access Your Database</strong></em><span class="hx-absolute -hx-mt-20" id="access-your-database"></span>
+    <a href="#access-your-database" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>You can access your WordPress database using phpMyAdmin, a MySQL client, or via the command line. For most users, phpMyAdmin is the most accessible option.</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>Locate the Correct Table</strong></h3><span class="hx-absolute -hx-mt-20" id="stronglocate-the-correct-tablestrongh3"></span>
-    <a href="#stronglocate-the-correct-tablestrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Locate the Correct Table</strong></em><span class="hx-absolute -hx-mt-20" id="locate-the-correct-table"></span>
+    <a href="#locate-the-correct-table" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>WordPress stores post settings, including comment statuses, in the <code>wp_posts</code> table. The <code>comment_status</code> field within this table determines whether comments are open or closed.</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>Run the SQL Query</strong></h3><span class="hx-absolute -hx-mt-20" id="strongrun-the-sql-querystrongh3"></span>
-    <a href="#strongrun-the-sql-querystrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Run the SQL Query</strong></em><span class="hx-absolute -hx-mt-20" id="run-the-sql-query"></span>
+    <a href="#run-the-sql-query" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To update the comment status from &ldquo;closed&rdquo; to &ldquo;open&rdquo; for all posts, use the following SQL query:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="sql" class="language-sql">UPDATE wp_posts
 SET comment_status = 'open'
 WHERE comment_status = 'closed';</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3><strong>Execute the Query</strong></h3><span class="hx-absolute -hx-mt-20" id="strongexecute-the-querystrongh3"></span>
-    <a href="#strongexecute-the-querystrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Execute the Query</strong></em><span class="hx-absolute -hx-mt-20" id="execute-the-query"></span>
+    <a href="#execute-the-query" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>In phpMyAdmin:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Select your WordPress database.</li>
+- Select your WordPress database. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Click on the <strong>SQL</strong> tab.</li>
+<ul>
+<li>Click on the <em><strong>SQL</strong></em>  tab.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Paste the query into the SQL window.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Click the <strong>Go</strong> button to execute the query.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li>Click the <em><strong>Go</strong></em>  button to execute the query.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>In the command line:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Log in to your MySQL database using:</li>
-<!-- /wp:list-item --></ol>
+- Log in to your MySQL database using: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   mysql -u username -p</code></pre>
@@ -9768,42 +9768,42 @@ WHERE comment_status = 'closed';</code></pre>
 <p>Replace <code>username</code> with your MySQL username and enter your password when prompted.</p>
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Select your WordPress database:</li>
-<!-- /wp:list-item --></ol>
+- Select your WordPress database: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   USE your_database_name;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Run the SQL query:</li>
-<!-- /wp:list-item --></ol>
+- Run the SQL query: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   UPDATE wp_posts
    SET comment_status = 'open'
    WHERE comment_status = 'closed';</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3><strong>Verify the Changes</strong></h3><span class="hx-absolute -hx-mt-20" id="strongverify-the-changesstrongh3"></span>
-    <a href="#strongverify-the-changesstrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Verify the Changes</strong></em><span class="hx-absolute -hx-mt-20" id="verify-the-changes"></span>
+    <a href="#verify-the-changes" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>After running the query, check your WordPress site to ensure that the comment status for your posts has been updated. You can do this by viewing individual posts in the WordPress admin dashboard or by checking the posts on your site.</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>Additional Considerations</strong></h3><span class="hx-absolute -hx-mt-20" id="strongadditional-considerationsstrongh3"></span>
-    <a href="#strongadditional-considerationsstrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3><em><strong>Additional Considerations</strong></em><span class="hx-absolute -hx-mt-20" id="additional-considerations"></span>
+    <a href="#additional-considerations" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Custom Table Prefixes</strong>: If you’re using a custom table prefix, replace <code>wp_</code> with your actual prefix in the SQL query.</li>
+- ***Custom Table Prefixes*** : If you’re using a custom table prefix, replace <code>wp_</code> with your actual prefix in the SQL query. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Selective Updates</strong>: If you want to update the comment status for specific posts or categories, you can modify the <code>WHERE</code> clause of the query to include additional conditions.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Selective Updates</strong></em> : If you want to update the comment status for specific posts or categories, you can modify the <code>WHERE</code> clause of the query to include additional conditions.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>For example, to update only posts in a specific category, you would need to join with the <code>wp_term_relationships</code> table and add a condition based on <code>term_id</code>.</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Safety</strong>: Directly modifying the database can be risky. Ensure you understand the query and its impact before executing it. Always have a backup ready.</li>
-<!-- /wp:list-item --></ul>
+- ***Safety*** : Directly modifying the database can be risky. Ensure you understand the query and its impact before executing it. Always have a backup ready. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>By following these steps, you should be able to update the comment status of your WordPress posts from &ldquo;closed&rdquo; to &ldquo;open&rdquo; efficiently and safely.</p>
 

@@ -26,7 +26,7 @@ title: C++ Girilen sayının faktöriyelini hesaplayan örnek
 url: /tr/c-girilen-sayinin-faktoriyelini-hesaplayan-ornek/
 ---
 
-  Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.</p>
+  Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.
  
 
 <!-- wp:code -->

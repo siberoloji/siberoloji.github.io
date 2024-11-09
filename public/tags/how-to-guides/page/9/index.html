@@ -9738,23 +9738,23 @@
           <h1>How to reboot network card from Linux command line?</h1>
           <p>You may need to reboot your network card when there is a connection problem in your Linux operating system or when you change the IP settings. You do not need to restart your computer or server to do this. You can turn your network card off and on with the commands we have explained below.</p></p>
 <p><strong>WARNING: This method is used if you have direct access to your computer. If you are remotely connected to your server via SSH, etc., you will lose access because your network card will be disabled. WARNING!!!</strong></p></p>
-<h2>To stop the network card</h2><span class="hx-absolute -hx-mt-20" id="to-stop-the-network-cardh2"></span>
+## To stop the network card</h2><span class="hx-absolute -hx-mt-20" id="to-stop-the-network-cardh2"></span>
     <a href="#to-stop-the-network-cardh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"># nmcli networking off</code></pre>
 <!-- /wp:code -->
-<h2>To initialize the network card</h2><span class="hx-absolute -hx-mt-20" id="to-initialize-the-network-cardh2"></span>
+## To initialize the network card</h2><span class="hx-absolute -hx-mt-20" id="to-initialize-the-network-cardh2"></span>
     <a href="#to-initialize-the-network-cardh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code class=""># nmcli networking on</code></pre>
 <!-- /wp:code -->
 <p>If you don&rsquo;t have direct access to your server, you can try the &ldquo;restart&rdquo; method instead of the shutdown/on method.</p></p>
-<h2>To Restart the network card</h2><span class="hx-absolute -hx-mt-20" id="to-restart-the-network-cardh2"></span>
+## To Restart the network card</h2><span class="hx-absolute -hx-mt-20" id="to-restart-the-network-cardh2"></span>
     <a href="#to-restart-the-network-cardh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code class="">systemctl restart NetworkManager</code></pre>
 <!-- /wp:code -->
-<h2>To check the status of the network card</h2><span class="hx-absolute -hx-mt-20" id="to-check-the-status-of-the-network-cardh2"></span>
+## To check the status of the network card</h2><span class="hx-absolute -hx-mt-20" id="to-check-the-status-of-the-network-cardh2"></span>
     <a href="#to-check-the-status-of-the-network-cardh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code class="">systemctl status NetworkManager</code></pre>
@@ -9775,7 +9775,7 @@
           <h1>Fish – A Different Approach to the Command Line</h1>
           <p>When it comes to Linux, one of the first things that comes to mind is probably the command line and terminal. The shell that processes the statements you write on the command line is offered to users in different versions. Bash, Dash, Zsh, Csh can be given as examples. In this article, we will explain the installation of the Fish shell program.</p>
 <p>Fish is a shell program known for being user-friendly. Command completion has the ability to color different forms within the command differently. It offers various recommendations while writing the command and makes these by taking into account the folder you are currently in. You can easily select the suggestions with the arrow keys. One of the features that should be emphasized in terms of ease of use is that it automatically opens help commands in the web browser.</p>
-<h2>Fish Installation for Debian:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-debianh2"></span>
+## Fish Installation for Debian:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-debianh2"></span>
     <a href="#fish-installation-for-debianh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Debian 8 ----------------
@@ -9788,7 +9788,7 @@ echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Deb
 apt-get update
 apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fish Installation for Ubuntu:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-ubuntuh2"></span>
+## Fish Installation for Ubuntu:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-ubuntuh2"></span>
     <a href="#fish-installation-for-ubuntuh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Ubuntu ----------------
@@ -9798,7 +9798,7 @@ sudo apt-get install python-software-properties
 sudo apt-get update
 sudo apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fish Installation for Fedora:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-fedorah2"></span>
+## Fish Installation for Fedora:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-fedorah2"></span>
     <a href="#fish-installation-for-fedorah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Fedora 22 ----------------
@@ -9816,7 +9816,7 @@ cd /etc/yum.repos.d/
 wget http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fish Installation for CentOS:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-centosh2"></span>
+## Fish Installation for CentOS:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-centosh2"></span>
     <a href="#fish-installation-for-centosh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- CentOS 7 ----------------
@@ -9829,7 +9829,7 @@ cd /etc/yum.repos.d/
 wget http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fish Installation for RHEL:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-rhelh2"></span>
+## Fish Installation for RHEL:</h2><span class="hx-absolute -hx-mt-20" id="fish-installation-for-rhelh2"></span>
     <a href="#fish-installation-for-rhelh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- RHEL 7 ----------------

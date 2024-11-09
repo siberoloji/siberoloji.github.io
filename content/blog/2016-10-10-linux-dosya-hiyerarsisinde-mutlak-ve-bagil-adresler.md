@@ -54,17 +54,17 @@ linuks@egitim:/home$ pwd #Bulunduğumuz yeri gösterir.
   Şimdi /home klasörünün içindeyiz. Bu klasörün altında bulunan linuks klasörüne girmek için cd /linuks yazmak hata olur. Onun yerine cd linuks yazmanız ve bu klasörün (home) içerisinde ara komutunu vermeniz gerekmektedir. 
  
 
-  <strong>Özetleyecek olursak;</strong> 
+  ***Özetleyecek olursak;***  
  
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Belirteceğiniz adresi / işaretiyle başlatırsanız, ağaç yapısının en üstünden aşağıya doğru eksiksiz yazmanız gerekmektedir. Buna mutlak (absolute) adres belirtme denir.</li>
+ <!-- wp:list-item -->
+- Belirteceğiniz adresi / işaretiyle başlatırsanız, ağaç yapısının en üstünden aşağıya doğru eksiksiz yazmanız gerekmektedir. Buna mutlak (absolute) adres belirtme denir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Belirteceğiniz adres, bulunduğunuz klasörün alt kısımlarındaysa, üst kısımları yazmanıza yani / ile başlamanıza gerek yoktur. Buna da bağıl (relative) adres belirtme denir.</li>
-<!-- /wp:list-item --></ol>
+- Belirteceğiniz adres, bulunduğunuz klasörün alt kısımlarındaysa, üst kısımları yazmanıza yani / ile başlamanıza gerek yoktur. Buna da bağıl (relative) adres belirtme denir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   <em>cd /Downloads</em>; kök klasörünün içinde Downloads isimli bir klasör olmadığından hata vermesi normaldir. 

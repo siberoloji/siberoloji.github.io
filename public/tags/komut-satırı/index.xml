@@ -25,25 +25,25 @@
         
         
         &lt;p&gt;Linux işletim sisteminizde bir bağlantı problemi olduğunda veya IP ayarlarını değiştirdiğinizde ağ kartınızı tekrar başlatmanız gerekebilir. Bunu yapmak için bilgisayar veya sunucunuzu tekrar başlatmanıza gerek yoktur. Aşağıda açıkladığımız komutlar sayesinde ağ kartınızı kapatıp açabilirsiniz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;Ağ kartını durdurmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durdurmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durdurmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Ağ kartını durdurmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durdurmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durdurmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# nmcli networking off&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ağ kartını başlatmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-başlatmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-ba%c5%9flatmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını başlatmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-başlatmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-ba%c5%9flatmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# nmcli networking on&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Sunucunuza doğrudan erişimiz yoksa kapat / aç yöntemi yerine &amp;ldquo;yeniden başlat&amp;rdquo; yöntemini deneyebilirsiniz.&lt;/p&gt;
-&lt;h2&gt;Ağ kartını Yeniden Başlatmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-yeniden-başlatmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-yeniden-ba%c5%9flatmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını Yeniden Başlatmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-yeniden-başlatmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-yeniden-ba%c5%9flatmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# systemctl restart NetworkManager&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ağ kartını durumunu kontrol etmek için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durumunu-kontrol-etmek-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durumunu-kontrol-etmek-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını durumunu kontrol etmek için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durumunu-kontrol-etmek-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durumunu-kontrol-etmek-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# systemctl status NetworkManager&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;

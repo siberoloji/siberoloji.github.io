@@ -29,7 +29,7 @@ In 2010, Lennart Poettering explained the subject in a  blog  post. The firs
 Brief Systemd Story In 2010, Lennart Poettering explained the subject in a blog post. The first version of the software, developed in the C programming language by Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, and David Herrmann, was published on March 30, 2010. You can reach the official website of the program from here.">
   <meta itemprop="datePublished" content="2016-04-03T14:49:00+00:00">
   <meta itemprop="dateModified" content="2016-04-03T14:49:00+00:00">
-  <meta itemprop="wordCount" content="971">
+  <meta itemprop="wordCount" content="972">
   <meta itemprop="keywords" content="Linux,Linux Fundamentals,Os,Systemd">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="What is systemd? What is its general structure?">
@@ -9453,27 +9453,27 @@ Brief Systemd Story In 2010, Lennart Poettering explained the subject in a blog
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#brief-systemd-storyh2"
+                href="#brief-systemd-story"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Brief Systemd Story&lt;/h2&gt;</a>
+              >Brief Systemd Story</a>
             </li>
           <li>
               <a
-                href="#the-basic-approach-used-by-systemdh2"
+                href="#the-basic-approach-used-by-systemd"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >The basic approach used by systemd&lt;/h2&gt;</a>
+              >The basic approach used by systemd</a>
             </li>
           <li>
               <a
-                href="#objections-reservationsh2"
+                href="#objections-reservations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Objections, reservations&lt;/h2&gt;</a>
+              >Objections, reservations</a>
             </li>
           <li>
               <a
-                href="#distribution-and-start-datesh2"
+                href="#distribution-and-start-dates"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Distribution and start dates&lt;/h2&gt;</a>
+              >Distribution and start dates</a>
             </li>
           </ul>
   
@@ -9676,19 +9676,19 @@ Brief Systemd Story In 2010, Lennart Poettering explained the subject in a blog
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#brief-systemd-storyh2">Brief Systemd Story
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#brief-systemd-story">Brief Systemd Story
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-basic-approach-used-by-systemdh2">The basic approach used by systemd
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-basic-approach-used-by-systemd">The basic approach used by systemd
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#objections-reservationsh2">Objections, reservations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#objections-reservations">Objections, reservations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#distribution-and-start-datesh2">Distribution and start dates
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#distribution-and-start-dates">Distribution and start dates
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9721,33 +9721,33 @@ Brief Systemd Story In 2010, Lennart Poettering explained the subject in a blog
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>If you are using Linux Operating System, you must have come across the term “systemd”. At least you must have come across systemd news. In our search on this subject, we had difficulty finding a detailed Turkish source. For this reason, we did a study about systemd.</p></p>
-<h2>Brief Systemd Story</h2><span class="hx-absolute -hx-mt-20" id="brief-systemd-storyh2"></span>
-    <a href="#brief-systemd-storyh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>In 2010, Lennart Poettering explained the subject in a  <a href="http://0pointer.de/blog/projects/systemd.html" target="_blank" rel="noreferrer noopener">blog</a>  post. The first version of the software, developed in the C programming language by Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, and David Herrmann, was published on March 30, 2010. You can reach the official <a href="http://www.freedesktop.org/wiki/" target="_blank" rel="noreferrer noopener">website</a> of the program  from here.</p></p>
-<p>The program called systemd was developed for Linux operating systems. Its purpose is to organize the operation of systems and services on the computer. It performs this management through tools called systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl and nspawn. We leave the details of these tools to another article.</p></p>
-<h2>The basic approach used by systemd</h2><span class="hx-absolute -hx-mt-20" id="the-basic-approach-used-by-systemdh2"></span>
-    <a href="#the-basic-approach-used-by-systemdh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>In Linux systems that do not use systemd , the boot manager, as PID 1, first runs the program that will manage the boot process (init). Other services are then started. For example, the Avahi service needs the D-Bus service. In that case, D-Bus will be started first at boot, and Avahi will wait in line. livirtd and X11 services need the HAL service. In that case, the HAL service will start first. Since all these services need the syslog service, syslog will start first. Classic Linux boot works with this logic.</p></p>
-<p>These programs communicate with each other through sockets. Without D-Bus starting, the socket will not open and Avahi cannot connect to the D-Bus socket. Systemd aims to change this approach. Systemd aims to pre-start the connection points -sockets- needed by all services and services, even if the relevant service does not start, and to eliminate the waiting of other waiting programs in the queue. If X11 is waiting for the HAL socket to open to start, the X11 service is given a socket to connect to. Notice that the HAL service has not actually started. The computer&rsquo;s currently idle processing power is used to the maximum extent possible. Efforts are made to minimize the time loss caused by services waiting for each other. In this case, messages sent by the X11 service are kept in a temporary queue and are fulfilled as the services start.</p></p>
-<p>These processes are not only related to the startup process. We should also mention that the systemd service has many functions related to  the software and hardware that are running during the operation of your operating system. We tried to briefly explain the logic on which the systemd approach is based. We think that it is unnecessary to go into too much detail and turn the text into a technical document for now.</p></p>
-<h2>Objections, reservations</h2><span class="hx-absolute -hx-mt-20" id="objections-reservationsh2"></span>
-    <a href="#objections-reservationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>systemd performs these operations described above with precompiled binary programs. It does not allow much user intervention. Although you are allowed to control some parameters, the operations are generally preset. Service programs used before systemd (Upstart or sysvinit) perform the procedures they apply via shell. For this reason, users have the opportunity to make personal adjustments using shell. systemd does not perform operations via shell. For this reason, there is a lot of discussion on its advantages and disadvantages. Those who do not accept it because it is against the logic of open source and free  software , state that systemd is a candidate to become Windows svchost.exe. There are also those who find it usable and include it in their distributions by preference or default. In the last part of the article, a few distributions that have started using systemd are listed.</p></p>
-<p>Paul Venezia, in his article published in InfoWorld in August 2014, stated that the systemd approach violates the Unix philosophy because it is a structure that tries to do all the operations itself, which means &ldquo;claiming that it is a program that never makes errors.&quot;</p></p>
-<p><a href="http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/" target="_blank" rel="noreferrer noopener">We recommend that you read the ZDNet</a> article that summarizes the thoughts of prominent figures on this subject   . In the article in question, Linus Torvalds seems to be not very clear on the subject and says that these are details.</p></p>
-<p>heartsmagic, Forum Manager and General Manager at the Ubuntu Turkey  <a href="https://forum.ubuntu-tr.net/index.php?topic=45368.5" target="_blank" rel="noreferrer noopener">forum</a> ; “For my part, I can&rsquo;t understand how one project (systemd) tries to do so much work. We are already moving further and further away from the Unix philosophy due to end user decisions of major distributions. Whatever the decisions at the top are, now this has become one of the backbones of the system. In Unix philosophy - if I&rsquo;m not mistaken - you write a tool and it does whatever its job is. Systemd, thank God, tries to take over everything and works on the binary system, which developers hate - even though I&rsquo;m not into coding. He expresses his thoughts as follows: &ldquo;Whether we like it or not, Ubuntu and other major distributions will switch to systemd, with all its merits and demerits.&rdquo; He states that large distributions will switch to this and end users will have to keep up.</p></p>
-<p>Below you can see a few of the Linux distributions  that have started using systemd  by <strong>default</strong>.</p></p>
-<h2>Distribution and start dates</h2><span class="hx-absolute -hx-mt-20" id="distribution-and-start-datesh2"></span>
-    <a href="#distribution-and-start-datesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Fedora, May 2011</p></p>
-<p>openSUSE, September 2012</p></p>
-<p>ArchLinux, October 2012</p></p>
-<p>Red Hat Enterprise Release, June 2014</p></p>
-<p>Debian, April 2015</p></p>
-<p>Ubuntu, Nisan 2015</p></p>
-<p>For those who do not accept the use of systemd in Debian, the Devuan distribution has been released without systemd installed. Linux, which has created many different distributions in its historical development, has come to a crossroads on a new issue.</p></p>
-<p>As a brief introduction, in this article where we tried to give some basic information about systemd, we tried to reflect different opinions, both positive and negative. We will follow the developments closely.</p></p>
+          <p>If you are using Linux Operating System, you must have come across the term “systemd”. At least you must have come across systemd news. In our search on this subject, we had difficulty finding a detailed Turkish source. For this reason, we did a study about systemd.</p>
+<h2>Brief Systemd Story<span class="hx-absolute -hx-mt-20" id="brief-systemd-story"></span>
+    <a href="#brief-systemd-story" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>In 2010, Lennart Poettering explained the subject in a  <a href="http://0pointer.de/blog/projects/systemd.html" target="_blank" rel="noreferrer noopener">blog</a>  post. The first version of the software, developed in the C programming language by Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, and David Herrmann, was published on March 30, 2010. You can reach the official <a href="http://www.freedesktop.org/wiki/" target="_blank" rel="noreferrer noopener">website</a> of the program  from here.</p>
+<p>The program called systemd was developed for Linux operating systems. Its purpose is to organize the operation of systems and services on the computer. It performs this management through tools called systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl and nspawn. We leave the details of these tools to another article.</p>
+<h2>The basic approach used by systemd<span class="hx-absolute -hx-mt-20" id="the-basic-approach-used-by-systemd"></span>
+    <a href="#the-basic-approach-used-by-systemd" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>In Linux systems that do not use systemd , the boot manager, as PID 1, first runs the program that will manage the boot process (init). Other services are then started. For example, the Avahi service needs the D-Bus service. In that case, D-Bus will be started first at boot, and Avahi will wait in line. livirtd and X11 services need the HAL service. In that case, the HAL service will start first. Since all these services need the syslog service, syslog will start first. Classic Linux boot works with this logic.</p>
+<p>These programs communicate with each other through sockets. Without D-Bus starting, the socket will not open and Avahi cannot connect to the D-Bus socket. Systemd aims to change this approach. Systemd aims to pre-start the connection points -sockets- needed by all services and services, even if the relevant service does not start, and to eliminate the waiting of other waiting programs in the queue. If X11 is waiting for the HAL socket to open to start, the X11 service is given a socket to connect to. Notice that the HAL service has not actually started. The computer&rsquo;s currently idle processing power is used to the maximum extent possible. Efforts are made to minimize the time loss caused by services waiting for each other. In this case, messages sent by the X11 service are kept in a temporary queue and are fulfilled as the services start.</p>
+<p>These processes are not only related to the startup process. We should also mention that the systemd service has many functions related to  the software and hardware that are running during the operation of your operating system. We tried to briefly explain the logic on which the systemd approach is based. We think that it is unnecessary to go into too much detail and turn the text into a technical document for now.</p>
+<h2>Objections, reservations<span class="hx-absolute -hx-mt-20" id="objections-reservations"></span>
+    <a href="#objections-reservations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>systemd performs these operations described above with precompiled binary programs. It does not allow much user intervention. Although you are allowed to control some parameters, the operations are generally preset. Service programs used before systemd (Upstart or sysvinit) perform the procedures they apply via shell. For this reason, users have the opportunity to make personal adjustments using shell. systemd does not perform operations via shell. For this reason, there is a lot of discussion on its advantages and disadvantages. Those who do not accept it because it is against the logic of open source and free  software , state that systemd is a candidate to become Windows svchost.exe. There are also those who find it usable and include it in their distributions by preference or default. In the last part of the article, a few distributions that have started using systemd are listed.</p>
+<p>Paul Venezia, in his article published in InfoWorld in August 2014, stated that the systemd approach violates the Unix philosophy because it is a structure that tries to do all the operations itself, which means &ldquo;claiming that it is a program that never makes errors.&rdquo;</p>
+<p><a href="http://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/" target="_blank" rel="noreferrer noopener">We recommend that you read the ZDNet</a> article that summarizes the thoughts of prominent figures on this subject   . In the article in question, Linus Torvalds seems to be not very clear on the subject and says that these are details.</p>
+<p>heartsmagic, Forum Manager and General Manager at the Ubuntu Turkey  <a href="https://forum.ubuntu-tr.net/index.php?topic=45368.5" target="_blank" rel="noreferrer noopener">forum</a> ; “For my part, I can&rsquo;t understand how one project (systemd) tries to do so much work. We are already moving further and further away from the Unix philosophy due to end user decisions of major distributions. Whatever the decisions at the top are, now this has become one of the backbones of the system. In Unix philosophy - if I&rsquo;m not mistaken - you write a tool and it does whatever its job is. Systemd, thank God, tries to take over everything and works on the binary system, which developers hate - even though I&rsquo;m not into coding. He expresses his thoughts as follows: &ldquo;Whether we like it or not, Ubuntu and other major distributions will switch to systemd, with all its merits and demerits.&rdquo; He states that large distributions will switch to this and end users will have to keep up.</p>
+<p>Below you can see a few of the Linux distributions  that have started using systemd  by <em><strong>default</strong></em> .</p>
+<h2>Distribution and start dates<span class="hx-absolute -hx-mt-20" id="distribution-and-start-dates"></span>
+    <a href="#distribution-and-start-dates" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Fedora, May 2011</p>
+<p>openSUSE, September 2012</p>
+<p>ArchLinux, October 2012</p>
+<p>Red Hat Enterprise Release, June 2014</p>
+<p>Debian, April 2015</p>
+<p>Ubuntu, Nisan 2015</p>
+<p>For those who do not accept the use of systemd in Debian, the Devuan distribution has been released without systemd installed. Linux, which has created many different distributions in its historical development, has come to a crossroads on a new issue.</p>
+<p>As a brief introduction, in this article where we tried to give some basic information about systemd, we tried to reflect different opinions, both positive and negative. We will follow the developments closely.</p>
 
         </div>
         

@@ -40,7 +40,7 @@ url: /tr/hangi-linux-dagitimi-size-uygun/
   Halen bir Linux dağıtımı kullanıyorsanız zaten oldukça mesafe almışsınız demektir. Paket sistemlerini ve GPL lisanslı programları tanıdığınıza eminiz. İlk defa Linux kullanmaya başlayacak olan kullanıcıları da düşünerek basit bir anlatımla tanıtım yapmayı düşünüyoruz. 
  
 
-  <strong>Tavsiye:</strong>&nbsp;İlk defa Linux ile tanışacaksanız ve bir kaç dağıtım denemesi yapmayı düşünüyorsanız öncelikle bir sanallaştırma yazılımı kullanarak dağıtımı denemeniz, başlangıç açısından faydalı olacaktır. Bir kısım tecrübe gösteriyor ki dağıtımı indirip, doğrudan diske, ayrı bir bölüme kurulum yapmak isteyenler bir hata ile karşılaştıklarında Linux işletim sisteminden kolayca vazgeçebiliyorlar. 
+  ***Tavsiye:*** &nbsp;İlk defa Linux ile tanışacaksanız ve bir kaç dağıtım denemesi yapmayı düşünüyorsanız öncelikle bir sanallaştırma yazılımı kullanarak dağıtımı denemeniz, başlangıç açısından faydalı olacaktır. Bir kısım tecrübe gösteriyor ki dağıtımı indirip, doğrudan diske, ayrı bir bölüme kurulum yapmak isteyenler bir hata ile karşılaştıklarında Linux işletim sisteminden kolayca vazgeçebiliyorlar. 
  
 
   Oysa bu olay 3 boyutlu resmi görmeye çalışmak gibi tarif edilebilir. Yeterince kararlı ve azimli iseniz Linux size kapılarını açıyor ve inanılmaz bir boyuta geçiyorsunuz. Burada Linux taraftarlığı yaptığımız düşünülmesin lütfen. Sadece farklı ve alışılmışın biraz dışında bir yaklaşımdan bahsediyoruz. Sonuçta amaç sizinle bilgisayar donanımı arasında iletişim kuran bir işletim sistemini tanıtmak. 

@@ -27,7 +27,7 @@ title: C++ do-while döngüsü ile faktöriyel hesaplama
 url: /tr/c-do-while-dongusu-ile-faktoriyel-hesaplama/
 ---
 
-  Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.</p>
+  Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.
  
 
 <!-- wp:code -->

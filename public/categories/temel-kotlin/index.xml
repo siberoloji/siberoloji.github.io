@@ -24,46 +24,61 @@
       <description>
         
         
-         &lt;p&gt;Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.&lt;/p&gt;
- &lt;p&gt;Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.&lt;/p&gt;
-&lt;h2&gt;Uyulması Zorunlu İsimlendirme Kuralları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uyulması-zorunlu-isimlendirme-kurallarıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+         &lt;p&gt;Bildiğiniz gibi, her değişkenin benzersiz bir ismi bulunmalıdır. Başlangıçta problemsiz görünse de yazılımınız genişledikçe kodlarınızın anlaşılması zor hale gelebilir. Yazılımcıların zamanının çoğu kod yazmak ile değil başkalarının yazdığı kodu okumakla geçer.
+ &lt;p&gt;Sizin yazdığınız kodun kolay okunabilir ve takip edilebilir olmasını istiyorsanız, isimlendirme kurallarına uymanız oldukça önemlidir. Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
+&lt;h2&gt;Uyulması Zorunlu İsimlendirme Kuralları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;uyulması-zorunlu-isimlendirme-kuralları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#uyulmas%c4%b1-zorunlu-isimlendirme-kurallar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;İsimler büyük küçük harf duyarlıdır. (&lt;em&gt;number&lt;/em&gt; ile &lt;em&gt;Number&lt;/em&gt; aynı ifade değildir.)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;İsimler sadece harf, rakam ve alt çizgilerden oluşmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;İsimlerin en başında rakam olamaz (1month &lt;strong&gt;yanlış&lt;/strong&gt; kullanımdır.)&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;İsimlerin en başında rakam olamaz (1month &lt;em&gt;&lt;strong&gt;yanlış&lt;/strong&gt;&lt;/em&gt;  kullanımdır.)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Kotlin yazılımının kendisi için ayırdığı anahtar kelimeler (val, var, fun vb.) değişken adı olarak kullanılamaz.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2&gt;Tavsiye Edilen İsimlendirme Kuralları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilen-isimlendirme-kurallarıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tavsiye-edilen-isimlendirme-kurallar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Tavsiye Edilen İsimlendirme Kuralları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilen-isimlendirme-kuralları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tavsiye-edilen-isimlendirme-kurallar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Bir değişken adı tek kelimeden oluşuyorsa tamamı küçük harfle yazılmalıdır. (&lt;code&gt;name&lt;/code&gt;, &lt;code&gt;message&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Bir değişken adı birden fazla kelimeden oluşuyorsa, küçük harfli Deve tarzı yazım kullanılmalıdır. (numberOfStudents, numberOfPages). Görüldüğü gibi, ilk kelimenin tamamı küçük harf ile yazıldıktan sonra her bir kelimenin sadece ilk harfi büyük yazılmalıdır.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yasak olmamasına rağmen değişken adına _ alt çizgi ile başlamamalısınız.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Değişkenle anlamlı isimler vermelisiniz. Değişken adı olarak &lt;code&gt;renk&lt;/code&gt; ismi &lt;code&gt;r&lt;/code&gt; ifadesinden daha açıklayıcı ve anlamlı olacaktır.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2&gt;Sihirli Sayılar&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sihirli-sayılarh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sihirli-say%c4%b1larh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Tavsiye Edilmeyen Kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilmeyen-kullanımh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tavsiye-edilmeyen-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Sihirli Sayılar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sihirli-sayılar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sihirli-say%c4%b1lar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Aşağıdaki örnek komutta, ekrana 7 sayısı yazılmaktadır. Bu programı okuyan başka bir programcı için 7 sayısının, neyin sayısı olduğunun bilinmesi çok zordur. Bu tür durumlarda sayılar bir sabit dahi olsalar const kullanılarak isimlendirilmeli ve o şekilde kullanılmalıdır. İsimlendirirken, BÜYÜK_HARFLİ_YILAN türü kullanılmalıdır. Bu kullanım, kodun anlaşılması için büyük kolaylık sağlayacaktır.
+&lt;h3&gt;Tavsiye Edilmeyen Kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilmeyen-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tavsiye-edilmeyen-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     println(7)
@@ -74,9 +89,8 @@
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Tavsiye Edilen Kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilen-kullanımh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tavsiye-edilen-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Tavsiye Edilen Kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiye-edilen-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tavsiye-edilen-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val DAYS_OF_THE_WEEK = 7
 
@@ -89,7 +103,7 @@ fun main() {
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.&lt;/p&gt;
+ &lt;p&gt;Yukarıda açıkladığımız kurallara mümkün olduğunca uymanız durumunda hem size, hem de sonradan projeye dahil olacak arkadaşlarınıza çok yardımcı olacak ve zaman kazandıracaktır.
 
       </description>
     </item>
@@ -104,13 +118,13 @@ Process finished with exit code 0
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.&lt;/p&gt;
+&lt;p&gt;Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır.&lt;/p&gt;
-&lt;h2&gt;Satır Sonu Yorumları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;satır-sonu-yorumlarıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sat%c4%b1r-sonu-yorumlar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır.
+&lt;h2&gt;Satır Sonu Yorumları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;satır-sonu-yorumları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sat%c4%b1r-sonu-yorumlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.&lt;/p&gt;
+&lt;p&gt;Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String = &#34;John&#34;
@@ -121,10 +135,10 @@ Process finished with exit code 0
     println(age)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Çok Satırlı Yorumlar&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;çok-satırlı-yorumlarh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlarh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Çok Satırlı Yorumlar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;çok-satırlı-yorumlar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.&lt;/p&gt;
+&lt;p&gt;Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String = &#34;John&#34;
@@ -138,10 +152,10 @@ Process finished with exit code 0
     println(age)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Dokümantasyon Yorumları&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dokümantasyon-yorumlarıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#dok%c3%bcmantasyon-yorumlar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Dokümantasyon Yorumları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dokümantasyon-yorumları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dok%c3%bcmantasyon-yorumlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.&lt;/p&gt;
+&lt;p&gt;Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;/**
  * Copyright siberoloji.com 2024 MIT license
@@ -163,7 +177,7 @@ fun main() {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.&lt;/p&gt;
+&lt;p&gt;Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.
 
       </description>
     </item>
@@ -177,29 +191,37 @@ fun main() {
       <description>
         
         
-        &lt;p&gt;Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&amp;quot;&lt;a href=&#34;https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/&#34; data-type=&#34;post&#34; data-id=&#34;694&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Değişken ve Değer tanımlama&lt;/a&gt;&amp;quot;, &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/kotlinde-sabitler-ve-degiskenler/&#34; data-type=&#34;post&#34; data-id=&#34;700&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin’de Sabitler ve değişkenler&lt;/a&gt;&amp;rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. &lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Değişken Tanımlama Şablonu&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-tanımlama-şablonuh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonuh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Kotlin programlama dilinde değişken tanımlama şablonu aşağıdaki gibidir. &lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&amp;quot;&lt;a href=&#34;https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/&#34; data-type=&#34;post&#34; data-id=&#34;694&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Değişken ve Değer tanımlama&lt;/a&gt;&amp;quot;, &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/kotlinde-sabitler-ve-degiskenler/&#34; data-type=&#34;post&#34; data-id=&#34;700&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin’de Sabitler ve değişkenler&lt;/a&gt;&amp;rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.&lt;/p&gt;
+&lt;p&gt;Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.&lt;/p&gt;
+&lt;h2&gt;Değişken Tanımlama Şablonu&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-tanımlama-şablonu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kotlin programlama dilinde değişken tanımlama şablonu aşağıdaki gibidir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val/var identifier: Type = initialization&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;En başta val veya var ifadesi yer alır. Değişkenin değerinin davranışına göre val veya var seçimi yapılır. Bunun farklarını &#34;&lt;a href=&#34;https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/&#34; data-type=&#34;post&#34; data-id=&#34;694&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Değişken ve Değer tanımlama&lt;/a&gt;&#34; başlıklı yazımızda açıklamıştık.&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;En başta val veya var ifadesi yer alır. Değişkenin değerinin davranışına göre val veya var seçimi yapılır. Bunun farklarını &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/&#34; data-type=&#34;post&#34; data-id=&#34;694&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Değişken ve Değer tanımlama&lt;/a&gt;&amp;rdquo; başlıklı yazımızda açıklamıştık.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;identifier: Yani değişkenin ismi olmalıdır. Diğer değişkenler ile karışmaması için anlamlı ve ne işe yaradığını anlatan bir isim seçimi her zaman faydalı bir kullanım olacaktır.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Type : Değişkenin tipini burada yazıyoruz. Değerin tipini ifade eden String, Int, Boolean gibi ifadeler büyük harfle başlar. Değişkenin isminden sonra iki nokta üst üste yazıldıktan sonra tip yazılır&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Initialization : Değişkenimize ilk değer atamasını yapıyoruz. Başlangıç değeri anlamına gelir. Değişkenin tip belirlendiğinde ilk değer hemen atanmak zorunda değildir. Birazdan doğru ve yanlış kullanım örneklerini aşağıda vereceğiz.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;Şimdi bu şablona göre bir örnek yazalım. Aşağıdaki örnek, tüm kuralları eksiksiz yerine getiren bir yapıdadır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Şimdi bu şablona göre bir örnek yazalım. Aşağıdaki örnek, tüm kuralları eksiksiz yerine getiren bir yapıdadır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String = &#34;John&#34;
@@ -214,9 +236,9 @@ John
 
 Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Veri Tipinin Belirlenmesi (type inference)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;veri-tipinin-belirlenmesi-type-inferenceh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#veri-tipinin-belirlenmesi-type-inferenceh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bir değişkeni tanımladığımız anda ilk değerini de (initializer) belirliyorsak, veri tipini yazmayabiliriz. Kotlin, girilen ilk değere bakarak tipini kendisi tespit edecektir. Bu şekilde kodlarımız daha sade hale gelir. Örnek aşağıdadır. &lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Veri Tipinin Belirlenmesi (type inference)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;veri-tipinin-belirlenmesi-type-inference&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#veri-tipinin-belirlenmesi-type-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir değişkeni tanımladığımız anda ilk değerini de (initializer) belirliyorsak, veri tipini yazmayabiliriz. Kotlin, girilen ilk değere bakarak tipini kendisi tespit edecektir. Bu şekilde kodlarımız daha sade hale gelir. Örnek aşağıdadır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name= &#34;John&#34;
@@ -235,10 +257,10 @@ Int
 Process finished with exit code 0
 */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Yukarıda bulunan örnekte görüldüğü gibi, veri tipleri girilmediği halde ilk değerlerin tipine bakarak Kotlin veri tipini otomatik belirlemiştir. Yabancı kaynaklardan konuyu incelediğinizde bu işlemin &amp;ldquo;type inference&amp;rdquo; olarak ifade edildiğini görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;İlk Değer Olmadan Değişken Tanımlama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ilk-değer-olmadan-değişken-tanımlamah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bir değişkeni tanımlamak ancak ilk değerini sonra belirlemek isterseniz, değişkenin tipini mutlaka yazmanız gerekmektedir. Kotlin ilk değer olmadan değişkenin tipini belirleyemez. Kotlin için değişken tanımlandığında tipi de belirlenmelidir. Sonradan tip değiştirilemez. Aşağıda bunun örneğini görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıda bulunan örnekte görüldüğü gibi, veri tipleri girilmediği halde ilk değerlerin tipine bakarak Kotlin veri tipini otomatik belirlemiştir. Yabancı kaynaklardan konuyu incelediğinizde bu işlemin &amp;ldquo;type inference&amp;rdquo; olarak ifade edildiğini görebilirsiniz.&lt;/p&gt;
+&lt;h2&gt;İlk Değer Olmadan Değişken Tanımlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ilk-değer-olmadan-değişken-tanımlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bir değişkeni tanımlamak ancak ilk değerini sonra belirlemek isterseniz, değişkenin tipini mutlaka yazmanız gerekmektedir. Kotlin ilk değer olmadan değişkenin tipini belirleyemez. Kotlin için değişken tanımlandığında tipi de belirlenmelidir. Sonradan tip değiştirilemez. Aşağıda bunun örneğini görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String
@@ -249,10 +271,10 @@ Process finished with exit code 0
     age = 16
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Örnekte görüldüğü gibi değişken adı ve tipi belirlenmiş ancak ilk değer başka bir yerde belirlenmiştir. Bu kullanım doğrudur. İlk değer başka zaman belirleniyorsa değişken tipini yazmak gerekir.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Hatalı değişken tanımlama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hatalı-değişken-tanımlamah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Hem Veri tipi, hem de ilk değeri olmadan değişken tanımlama hata ile karşılaşmanıza sebep olur. Aşağıdaki kullanım yanlıştır. Programınız derlenmeyecektir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Örnekte görüldüğü gibi değişken adı ve tipi belirlenmiş ancak ilk değer başka bir yerde belirlenmiştir. Bu kullanım doğrudur. İlk değer başka zaman belirleniyorsa değişken tipini yazmak gerekir.&lt;/p&gt;
+&lt;h2&gt;Hatalı değişken tanımlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hatalı-değişken-tanımlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Hem Veri tipi, hem de ilk değeri olmadan değişken tanımlama hata ile karşılaşmanıza sebep olur. Aşağıdaki kullanım yanlıştır. Programınız derlenmeyecektir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name //error
@@ -276,8 +298,8 @@ Process finished with exit code 0
         
         &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Kotlin programlama dilinde değişkenleri tanımlama ve değer atama konusuna &lt;a href=&#34;https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/&#34; data-type=&#34;post&#34; data-id=&#34;694&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bir önceki yazımızda&lt;/a&gt; giriş yapmıştık. Bu yazımızda &lt;code&gt;const&lt;/code&gt; ve &lt;code&gt;val&lt;/code&gt; ile değer atamaya daha yakından bakacağız. 
-&lt;h2&gt;val değişkenler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-değişkenlerh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#val-de%c4%9fi%c5%9fkenlerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;val değişkenler&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-değişkenler&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#val-de%c4%9fi%c5%9fkenler&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Aşağıdaki kod, &lt;code&gt;pi&lt;/code&gt; sabit sayısını içeren bir tam sayı ve &lt;code&gt;helloMsg&lt;/code&gt; isimli bir String değerini içeren iki adet değişken tanımlamaktadır. Bu değerler ilk atanmalarından sonra tekrar değiştirilemezler. 
 &lt;!-- wp:code --&gt;
@@ -290,7 +312,7 @@ Process finished with exit code 0
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;val&lt;/code&gt; anahtar kelimesi ile tanımlanmış ve ilk değeri atanmış &lt;code&gt;pi&lt;/code&gt; değişkenine yeni bir değer atamaya çalışalım.  Aşağıdaki örnekte görüldüğü gibi pi sayısına yeni bir değer atamak istediğimizde &#34;&lt;strong&gt;&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;Val cannot be reassigned&lt;/mark&gt;&lt;/strong&gt;&#34; hatası alırsınız. 
+&lt;p&gt;&lt;code&gt;val&lt;/code&gt; anahtar kelimesi ile tanımlanmış ve ilk değeri atanmış &lt;code&gt;pi&lt;/code&gt; değişkenine yeni bir değer atamaya çalışalım.  Aşağıdaki örnekte görüldüğü gibi pi sayısına yeni bir değer atamak istediğimizde &#34;***&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;Val cannot be reassigned&lt;/mark&gt;*** &#34; hatası alırsınız. 
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
 val pi = 3.1415
@@ -315,8 +337,8 @@ println(boolFalse) // error line&lt;/code&gt;&lt;/pre&gt;
     boolFalse = false      // initialized
     println(boolFalse)     // no errors here&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;const değişkenler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-değişkenlerh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#const-de%c4%9fi%c5%9fkenlerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;const değişkenler&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-değişkenler&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#const-de%c4%9fi%c5%9fkenler&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Kotlin programlamada &lt;code&gt;const&lt;/code&gt; anahtar kelimesi ile &lt;code&gt;val&lt;/code&gt; ifadesinin birlikte tanımlandığı bir sabit değer atama yöntemi bulunmaktadır. Bu yöntem ile sabit değer, program kodları derlenirken oluşturulur ve bir daha değiştirilemez. Kural olarak &lt;code&gt;const&lt;/code&gt; biçiminde tanımlanan değişkenlerin isimlerinin tamamının BÜYÜK HARF olması tavsiye edilir.  
 &lt;!-- wp:code --&gt;
@@ -325,12 +347,16 @@ println(boolFalse) // error line&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Bu şekilde sabit değer tanımlamanın bazı kuralları bulunmaktadır.  
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Sabit değerlere yalnızca String ve birincil türler dediğimiz INT, CHAR, DOUBLE, BOOLEAN veri tipleri atanabilir. Aşağıda buna ait bir örnek gösterilmektedir.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Sabitler, fonksiyonların en dışında tanımlanmalıdır. Fonksiyon içerisinde const ifadesi ile tanımlanamazlar. &lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Sabitler, fonksiyonların en dışında tanımlanmalıdır. Fonksiyon içerisinde const ifadesi ile tanımlanamazlar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val CONST_INT = 256
@@ -359,18 +385,17 @@ fun main() {
       <description>
         
         
-        &lt;h2&gt;Değişken nedir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-nedirh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#de%c4%9fi%c5%9fken-nedirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.  &lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda &amp;ldquo;sınıf adı&amp;rdquo; ve &amp;ldquo;öğrenci sayısı&amp;rdquo; olarak ifade edeceğimiz iki değişkenimiz olacaktır.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Değişken tanımlama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-tanımlamah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#de%c4%9fi%c5%9fken-tan%c4%b1mlamah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Yazacağımız programda, değişkeni kullanabilmemiz için önceden tanımlamış olmalıyız. Değişken tanımlamak için Kotlin iki anahtar kelime sunmaktadır. Değişken ismi rakamla başlamamalı ve büyük küçük harf duyarlılığı olduğu unutulmamalıdır.&lt;/p&gt;&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;val (value)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-valueh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#val-valueh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;val ifadesi ile tanımladığımız değişkenler program başlangıcında içine değer atandıktan sonra değerin bir daha değişmediği değişken türüdür. Örneğin işlem yapmak istediğimiz bir Roman&amp;rsquo;ın adını verebiliriz. Farklı basım tarzları sonucunda sayfa sayısı değişse bile yazarın adı ve romanın adı sabit kalacaktır. Ancak bu, başka bir kitap için yine sabit olan bir yazar adı ve kitap ismi gerektirmektedir. İşte bu ihtiyaçtan dolayı, programın ilk çalıştırılması esnasında içerisine istediğimiz değeri bir defaya mahsus atayabildiğimiz ancak sonradan değiştiremediğimiz türden değişkenleri &lt;strong&gt;val&lt;/strong&gt; ifadesi ile tanımlayacağız. &lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Bu tür değişkenlerin içeriği &lt;em&gt;çalışma zamanında&lt;/em&gt; belirlenir.&lt;/p&gt;&lt;/p&gt;
+        &lt;h2&gt;Değişken nedir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-nedir&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#de%c4%9fi%c5%9fken-nedir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.&lt;/p&gt;
+&lt;p&gt;Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda &amp;ldquo;sınıf adı&amp;rdquo; ve &amp;ldquo;öğrenci sayısı&amp;rdquo; olarak ifade edeceğimiz iki değişkenimiz olacaktır.&lt;/p&gt;
+&lt;h2&gt;Değişken tanımlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;değişken-tanımlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#de%c4%9fi%c5%9fken-tan%c4%b1mlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yazacağımız programda, değişkeni kullanabilmemiz için önceden tanımlamış olmalıyız. Değişken tanımlamak için Kotlin iki anahtar kelime sunmaktadır. Değişken ismi rakamla başlamamalı ve büyük küçük harf duyarlılığı olduğu unutulmamalıdır.&lt;/p&gt;
+&lt;h3&gt;val (value)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-value&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#val-value&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;val ifadesi ile tanımladığımız değişkenler program başlangıcında içine değer atandıktan sonra değerin bir daha değişmediği değişken türüdür. Örneğin işlem yapmak istediğimiz bir Roman&amp;rsquo;ın adını verebiliriz. Farklı basım tarzları sonucunda sayfa sayısı değişse bile yazarın adı ve romanın adı sabit kalacaktır. Ancak bu, başka bir kitap için yine sabit olan bir yazar adı ve kitap ismi gerektirmektedir. İşte bu ihtiyaçtan dolayı, programın ilk çalıştırılması esnasında içerisine istediğimiz değeri bir defaya mahsus atayabildiğimiz ancak sonradan değiştiremediğimiz türden değişkenleri &lt;em&gt;&lt;strong&gt;val&lt;/strong&gt;&lt;/em&gt;  ifadesi ile tanımlayacağız.&lt;/p&gt;
+&lt;p&gt;Bu tür değişkenlerin içeriği &lt;em&gt;çalışma zamanında&lt;/em&gt; belirlenir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
 val language = &#34;Kotlin&#34;
@@ -383,11 +408,10 @@ Kotlin
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Yukarıdaki örnekte language adında bir değişken tanımlanmış ve değeri String türünde &amp;ldquo;Kotlin&amp;rdquo; olarak atanmıştır. Değeri atamak için = işareti kullanıldığına dikkat etmelisiniz. Şimdi bu değişkeni program içerisinde kodlarımızı yazarken artık &amp;ldquo;language&amp;rdquo; orada çağırabiliriz.&lt;/p&gt;&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;var (variable)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;var-variableh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#var-variableh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;İçerisinde tutulan değeri istediğimiz zaman istediğimiz kadar değiştirebileceğimiz bir değişken türüdür. Değiştirilebilir değişken olarak ifade edebiliriz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki örnekte language adında bir değişken tanımlanmış ve değeri String türünde &amp;ldquo;Kotlin&amp;rdquo; olarak atanmıştır. Değeri atamak için = işareti kullanıldığına dikkat etmelisiniz. Şimdi bu değişkeni program içerisinde kodlarımızı yazarken artık &amp;ldquo;language&amp;rdquo; orada çağırabiliriz.&lt;/p&gt;
+&lt;h3&gt;var (variable)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;var-variable&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#var-variable&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;İçerisinde tutulan değeri istediğimiz zaman istediğimiz kadar değiştirebileceğimiz bir değişken türüdür. Değiştirilebilir değişken olarak ifade edebiliriz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     var dayOfWeek = &#34;Monday&#34;
@@ -403,16 +427,14 @@ Sunday
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Yukarıdaki örnekte gördüğünüz gibi, dayOfWeek değişkenine önce Monday değerini verip ekrana yazdırdık. Ardından, Sunday değerini vererek yeni değeri de ekrana yazdırdık. Bu sayede bir değişkenin içindeki değerleri değiştirerek kullanmış olduk.&lt;/p&gt;&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;const (constant)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-constanth3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#const-constanth3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Program kodlanırken bilinen ve yazılımı kim kullanırsa kullansın değişmeyecek olan değerlere &lt;strong&gt;sabit&lt;/strong&gt; denmektedir. Sabitlerin de bir yere kayıt edilmesi gerekmektedir. Bu sebeple &lt;strong&gt;const&lt;/strong&gt; ifadesi &lt;strong&gt;val&lt;/strong&gt; ifadesi ile birlikte kullanılarak sabit değerler atanır.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Bu tür değişkenlerin içeriği &lt;em&gt;derleme zamanında&lt;/em&gt; belirlenir.&lt;/p&gt;&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Farklı değer tiplerinde veriler atama&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;farklı-değer-tiplerinde-veriler-atamah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atamah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Kotlin içerisinde farklı veri tiplerini saklamak için istediğiniz kadar değişken tanımlayabilirsiniz. Aşağıda bunun bir örneğini görebilirsiniz. &lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki örnekte gördüğünüz gibi, dayOfWeek değişkenine önce Monday değerini verip ekrana yazdırdık. Ardından, Sunday değerini vererek yeni değeri de ekrana yazdırdık. Bu sayede bir değişkenin içindeki değerleri değiştirerek kullanmış olduk.&lt;/p&gt;
+&lt;h3&gt;const (constant)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-constant&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#const-constant&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Program kodlanırken bilinen ve yazılımı kim kullanırsa kullansın değişmeyecek olan değerlere &lt;em&gt;&lt;strong&gt;sabit&lt;/strong&gt;&lt;/em&gt;  denmektedir. Sabitlerin de bir yere kayıt edilmesi gerekmektedir. Bu sebeple &lt;em&gt;&lt;strong&gt;const&lt;/strong&gt;&lt;/em&gt;  ifadesi &lt;em&gt;&lt;strong&gt;val&lt;/strong&gt;&lt;/em&gt;  ifadesi ile birlikte kullanılarak sabit değerler atanır.&lt;/p&gt;
+&lt;p&gt;Bu tür değişkenlerin içeriği &lt;em&gt;derleme zamanında&lt;/em&gt; belirlenir.&lt;/p&gt;
+&lt;h3&gt;Farklı değer tiplerinde veriler atama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;farklı-değer-tiplerinde-veriler-atama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Kotlin içerisinde farklı veri tiplerini saklamak için istediğiniz kadar değişken tanımlayabilirsiniz. Aşağıda bunun bir örneğini görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val ten = 10
@@ -432,10 +454,10 @@ A
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Burada belirtmemiz gereken önemli bir kural bulunuyor. Örneğin, Bir değişkene ilk olarak var kullanarak Int yani tamsayı değeri ataması yaptığınızı düşünürsek (val ten = 10) bundan sonra o değişkene atayacağımız değerler hep tamsayı olmalı. İlk atanan veri tipi ne ise, sonradan atanacak veri tipi de hep aynı olmalı.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuçh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sonu%c3%a7h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Artık değişken tanımlamak için val ve var anahtar kelimelerinin kullanıldığını, değişken isimlerinin harf ile başlaması gerektiğini ve değişkenlerin ilk atanan değer türü ne ise sonradan da ancak o tür değerler atanabileceğini biliyoruz. Bu bilgiler sonraki aşamalar için oldukça işimize yarayacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Burada belirtmemiz gereken önemli bir kural bulunuyor. Örneğin, Bir değişkene ilk olarak var kullanarak Int yani tamsayı değeri ataması yaptığınızı düşünürsek (val ten = 10) bundan sonra o değişkene atayacağımız değerler hep tamsayı olmalı. İlk atanan veri tipi ne ise, sonradan atanacak veri tipi de hep aynı olmalı.&lt;/p&gt;
+&lt;h2&gt;Sonuç&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Artık değişken tanımlamak için val ve var anahtar kelimelerinin kullanıldığını, değişken isimlerinin harf ile başlaması gerektiğini ve değişkenlerin ilk atanan değer türü ne ise sonradan da ancak o tür değerler atanabileceğini biliyoruz. Bu bilgiler sonraki aşamalar için oldukça işimize yarayacaktır.&lt;/p&gt;
 
       </description>
     </item>
@@ -450,28 +472,28 @@ Process finished with exit code 0
         
         
         &lt;p&gt;Ne kadar karışık olursa olsun, tüm programlama dilleri işlemlerini tam sayı, karakter ve yazı dizileri vb. değerler üzerinde gerçekleştirilir. Bu değerlere Temel Değer ifadeleri adını veriyoruz. Program yazmaya başlamadan önce bu türleri açıklamak çok yerinde olacaktır. Bunlar, tam sayılar, karakterler ve karakter dizileridir.&lt;/p&gt;
-&lt;h2&gt;Tam Sayılar (Integers):&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tam-sayılar-integersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tam-say%c4%b1lar-integersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Tam Sayılar (Integers):&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tam-sayılar-integers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tam-say%c4%b1lar-integers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Günlük yaşamımızda ve matematikte bir şeyleri saymak için tam sayıları sürekli kullanırız. Aynı tamsayılar Kotlin’de de kullanılmaktadır. Aşağıda gördüğünüz tüm rakamlar tamsayıdır. Örneğin;&lt;/p&gt;
 &lt;p&gt;0, 1, 2, 10, 11, 100&lt;/p&gt;
 &lt;p&gt;Eğer bir tam sayı çok sayıda basamak içeriyorsa, okunması ve algılanması kolay olması için _ (alt çizgi) kullanarak tam sayıyı bloklara ayırabiliriz. Örneğin;&lt;/p&gt;
 &lt;p&gt;1000000 yerine 1_000_000 şeklinde yazabiliriz. Bu iki Kotlin için aynı tam sayıyı ifade eder. Alt çizgi rakamların en başında ve sonunda olmadığı sürece istenildiği gibi kullanılabilir. 1__000_000 , 1_2_3 bu ifadeler de doğrudur.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;10 veya 100&lt;/em&gt; şeklinde yazdığınızda hata meydana gelir.&lt;/p&gt;
-&lt;h2&gt;Karakterler (Characters)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;karakterler-charactersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#karakterler-charactersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Karakterler (Characters)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;karakterler-characters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#karakterler-characters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Tek bir rakam, yazı karakteri ve boşluk ve * - vb. bazı özel karakterleri ifade etmekte kullanılan bir veri türüdür. Burada dikkat edilmesi gereken ilk konu tek bir karakter olması gerektiğidir. Karakterler, aşağıda görüleceği gibi tek tırnak içinde yazılırlar.&lt;/p&gt;
 &lt;p&gt;‘A’, ‘a’, ‘x’, ‘y’, ‘2’, ‘8’,’*’, ‘ ‘, ‘$’ tüm bu ifadeler karakter olarak adlandırılır.&lt;/p&gt;
 &lt;p&gt;Karakter veri türü tek bir ifade içerebileceği için tek tırnak içine alınmış olsa bile aşağıdaki ifadeler yanlıştır.&lt;/p&gt;
 &lt;p&gt;‘abc’, ‘543’&lt;/p&gt;
-&lt;h2&gt;Karakter Dizileri (Strings)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;karakter-dizileri-stringsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#karakter-dizileri-stringsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Karakter Dizileri (Strings)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;karakter-dizileri-strings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#karakter-dizileri-strings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bir veya birden fazla karakterin bir araya gelerek oluşturdukları karakter dizileridir. Karakterlerden farklı olarak çift tırnak “ “ içinde gösterilirler. Bir kaç doğru kullanım örneğini aşağıda bulabilirsiniz. Çift tırnak içinde boşluk karakteri dahil istenen her türlü karakter kullanılabilir. &lt;/p&gt;
 &lt;p&gt;“Text”, “Kotlin öğrenmek istiyorum”, “123 456”, “email@email.com”&lt;/p&gt;
 &lt;p&gt;Bir karakter dizisinde tek bir karakterin de bulunabileceğine dikkat etmelisiniz.&lt;/p&gt;
 &lt;p&gt;“A” - Çift tırnak içinde yazıldığı için karakter dizisidir.&lt;/p&gt;
 &lt;p&gt;‘A’ - Tek tırnak içinde yazıldığı için karakterdir.&lt;/p&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuçh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sonu%c3%a7h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Sonuç&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Yukarıda açıklanan 3 farklı veri tipinin dışında Kotlin’de başka veri tipleri de bulunur. Bunları yeri geldiğinde ayrıca açıklayacağız. Temel komut ve işlemleri açıklamak için bu 3 veri tipi başlangıç için yeterli olacaktır.&lt;/p&gt;
 
       </description>
@@ -487,13 +509,13 @@ Process finished with exit code 0
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Kotlin, JetBrains tarafından 2011 yılında piyasaya sürülen modern bir programlama dilidir. 15 Şubat 2016&#39;da piyasaya sürülen Kotlin 1.0, ilk kararlı sürüm olarak kabul edilmektedir. Java programlama dilinin bazı zorluklarına çözümler getirmek ve daha kolay yazım imkanı sunmak amacında olan Kotlin, geçmişe dönük olarak Java’nın tüm kütüphanelerini kullanabilmektedir.&lt;/p&gt;
+&lt;p&gt;Kotlin, JetBrains tarafından 2011 yılında piyasaya sürülen modern bir programlama dilidir. 15 Şubat 2016&#39;da piyasaya sürülen Kotlin 1.0, ilk kararlı sürüm olarak kabul edilmektedir. Java programlama dilinin bazı zorluklarına çözümler getirmek ve daha kolay yazım imkanı sunmak amacında olan Kotlin, geçmişe dönük olarak Java’nın tüm kütüphanelerini kullanabilmektedir.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Kotlin çok platform destekli bir yapıya sahiptir ve kodlarınızı Android, iOS, Web için ortak olarak kullanabilirsiniz. Aynı zamanda sunucu uygulamaları da geliştirebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Kotlin çok platform destekli bir yapıya sahiptir ve kodlarınızı Android, iOS, Web için ortak olarak kullanabilirsiniz. Aynı zamanda sunucu uygulamaları da geliştirebilirsiniz.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Kotlin Apache 2.0 Açık Kaynak lisansına sahiptir ve kodları &lt;a href=&#34;https://github.com/JetBrains/kotlin&#34; data-type=&#34;link&#34; data-id=&#34;https://github.com/JetBrains/kotlin&#34;&gt;github&lt;/a&gt; da yayınlanmaktadır. 2019 yılında gerçekleştirilen Google I/O konferansında, Android için yazılım geliştiricilerin öncelikle Kotlin yazılımı kullanmaları tavsiye edilmiş ve desteklenmiştir.&lt;/p&gt;
+&lt;p&gt;Kotlin Apache 2.0 Açık Kaynak lisansına sahiptir ve kodları &lt;a href=&#34;https://github.com/JetBrains/kotlin&#34; data-type=&#34;link&#34; data-id=&#34;https://github.com/JetBrains/kotlin&#34;&gt;github&lt;/a&gt; da yayınlanmaktadır. 2019 yılında gerçekleştirilen Google I/O konferansında, Android için yazılım geliştiricilerin öncelikle Kotlin yazılımı kullanmaları tavsiye edilmiş ve desteklenmiştir.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Açık ve anlaşılabilir kod yapısının yanında hataların oluşmasını önleyen kod kontrol yapısı sayesinde oldukça yaygınlaşan Kotlin, Google tarafından tavsiye edilmekte ve desteklenmektedir. Halen Android telefonlarda kullandığımız Maps, Home, Play, Drive ve Messages gibi uygulamalar Kotlin kullanılarak yazılmıştır.&lt;/p&gt;
+&lt;p&gt;Açık ve anlaşılabilir kod yapısının yanında hataların oluşmasını önleyen kod kontrol yapısı sayesinde oldukça yaygınlaşan Kotlin, Google tarafından tavsiye edilmekte ve desteklenmektedir. Halen Android telefonlarda kullandığımız Maps, Home, Play, Drive ve Messages gibi uygulamalar Kotlin kullanılarak yazılmıştır.
 
       </description>
     </item>
@@ -508,9 +530,9 @@ Process finished with exit code 0
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan &amp;ldquo;Merhaba Dünya&amp;rdquo; programı ile başlayalım.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan &amp;ldquo;Merhaba Dünya&amp;rdquo; programı ile başlayalım.&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Aşağıda gördüğünüz kodu kopyalayıp editörünüze yapıştırabilir veya Web tarayıcınız üzerinden &amp;ldquo;&lt;a href=&#34;https://play.kotlinlang.org/&#34;&gt;Kotlin Playground&lt;/a&gt;&amp;rdquo; sayfasına girip kodları orada da deneyebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Aşağıda gördüğünüz kodu kopyalayıp editörünüze yapıştırabilir veya Web tarayıcınız üzerinden &amp;ldquo;&lt;a href=&#34;https://play.kotlinlang.org/&#34;&gt;Kotlin Playground&lt;/a&gt;&amp;rdquo; sayfasına girip kodları orada da deneyebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;// Kotlin&#39;de ilk program
 fun main() {
@@ -518,17 +540,17 @@ fun main() {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Açıklama:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Açıklama:&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;//&lt;/code&gt; işaretiyle başlayan satır, yorum satırıdır. Derleyici bu satırı kod olarak kabul etmez. Hangi kodun ne işe yaradığı ile ilgili notlar almak veya açıklamalar yapmak için kullanılır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;//&lt;/code&gt; işaretiyle başlayan satır, yorum satırıdır. Derleyici bu satırı kod olarak kabul etmez. Hangi kodun ne işe yaradığı ile ilgili notlar almak veya açıklamalar yapmak için kullanılır.&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;fun&lt;/code&gt; ifadesi function yani bir fonksiyonun başlangıcını ifade eder.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;fun&lt;/code&gt; ifadesi function yani bir fonksiyonun başlangıcını ifade eder.&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;main()&lt;/code&gt; Kotlin programlarının giriş noktasıdır. Büyük küçük harf duyarlıdır. &lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;main()&lt;/code&gt; Kotlin programlarının giriş noktasıdır. Büyük küçük harf duyarlıdır.&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;{ }&lt;/code&gt; işaretlerinin arasına kod bloğu yazılır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{ }&lt;/code&gt; işaretlerinin arasına kod bloğu yazılır.&lt;/p&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;code&gt;println(&amp;ldquo;Merhaba Dünya&amp;rdquo;)&lt;/code&gt; burada gördüğünüz bir kod ifadesidir. &lt;code&gt;println()&lt;/code&gt; fonksiyonuna &amp;ldquo;Merhaba Dünya&amp;rdquo; parametresini gönderdiğimizde, ekrana gönderilen parametreyi yazacak ve bir alt satıra geçecektir. İsterseniz alt alta birden fazla satır yazdırabilirsiniz. İşte bir örnek.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;println(&amp;ldquo;Merhaba Dünya&amp;rdquo;)&lt;/code&gt; burada gördüğünüz bir kod ifadesidir. &lt;code&gt;println()&lt;/code&gt; fonksiyonuna &amp;ldquo;Merhaba Dünya&amp;rdquo; parametresini gönderdiğimizde, ekrana gönderilen parametreyi yazacak ve bir alt satıra geçecektir. İsterseniz alt alta birden fazla satır yazdırabilirsiniz. İşte bir örnek.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     println(&#34;Merhaba Dünya&#34;)
@@ -536,7 +558,7 @@ fun main() {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Yukarıda bulunan örneği çalıştırdığımızda aşağıdaki çıktıyı elde etmelisiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıda bulunan örneği çalıştırdığımızda aşağıdaki çıktıyı elde etmelisiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;Merhaba Dünya
 Ben Kotlin Programıyım
@@ -559,30 +581,46 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- wp:more --&gt;
 &lt;!-- /wp:more --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Bir &lt;strong&gt;program&lt;/strong&gt;, birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur;&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;Bir &lt;em&gt;&lt;strong&gt;program&lt;/strong&gt;&lt;/em&gt; , birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;statement &lt;/strong&gt;- &lt;strong&gt;komut: &lt;/strong&gt;(veya bir programlama ifadesi), yürütülecek tek bir komuttur (bir metni yazdırmak gibi);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;***statement *** - ***komut: *** (veya bir programlama ifadesi), yürütülecek tek bir komuttur (bir metni yazdırmak gibi);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;expression&lt;/strong&gt; - &lt;strong&gt;ifade: &lt;/strong&gt;, tek bir değer üreten bir kod parçasıdır (örneğin, 2*2 bir ifadedir);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;expression&lt;/strong&gt;&lt;/em&gt;  - **&lt;em&gt;ifade: *** , tek bir değer üreten bir kod parçasıdır (örneğin, 2&lt;/em&gt;2 bir ifadedir);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Block&lt;/strong&gt; - &lt;strong&gt;Kod Bloğu:&lt;/strong&gt; bir çift kaşlı ayraç {…} içine alınmış sıfır veya daha fazla ifade grubudur; programımız tek bir bloktan oluşmaktadır;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Block&lt;/strong&gt;&lt;/em&gt;  - &lt;em&gt;&lt;strong&gt;Kod Bloğu:&lt;/strong&gt;&lt;/em&gt;  bir çift kaşlı ayraç {…} içine alınmış sıfır veya daha fazla ifade grubudur; programımız tek bir bloktan oluşmaktadır;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;keyword&lt;/strong&gt; - &lt;strong&gt;anahtar kelime&lt;/strong&gt;: programlama dilinde özel bir anlamı olan bir kelimedir. Anahtar kelimelerin adları değiştirilemez;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;keyword&lt;/strong&gt;&lt;/em&gt;  - &lt;em&gt;&lt;strong&gt;anahtar kelime&lt;/strong&gt;&lt;/em&gt; : programlama dilinde özel bir anlamı olan bir kelimedir. Anahtar kelimelerin adları değiştirilemez;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Bir &lt;strong&gt;identifier&lt;/strong&gt; - &lt;strong&gt;belirteç &lt;/strong&gt;:(veya bir isim), programcı tarafından bir şeyi tanımlamak için yazılan bir kelimedir;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Bir &lt;em&gt;&lt;strong&gt;identifier&lt;/strong&gt;&lt;/em&gt;  - ***belirteç *** :(veya bir isim), programcı tarafından bir şeyi tanımlamak için yazılan bir kelimedir;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Comment&lt;/strong&gt; - &lt;strong&gt;Yorum&lt;/strong&gt;: program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar &lt;code&gt;//&lt;/code&gt; ile başlar;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comment&lt;/strong&gt;&lt;/em&gt;  - &lt;em&gt;&lt;strong&gt;Yorum&lt;/strong&gt;&lt;/em&gt; : program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar &lt;code&gt;//&lt;/code&gt; ile başlar;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Whitespace&lt;/strong&gt; - &lt;strong&gt;Boşluk&lt;/strong&gt;: boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Whitespace&lt;/strong&gt;&lt;/em&gt;  - &lt;em&gt;&lt;strong&gt;Boşluk&lt;/strong&gt;&lt;/em&gt; : boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
       </description>

@@ -25,21 +25,21 @@ title: Detailed SQL Cheat Sheet
 url: /detailed-sql-cheat-sheet/
 ---
 
-  Here's a detailed <strong>SQL Cheat Sheet</strong> you can use for your blog post: 
+  Here's a detailed ***SQL Cheat Sheet***  you can use for your blog post: 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>SQL Cheat Sheet</strong></h3>
+
+ ### ***SQL Cheat Sheet*** 
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>1. Basic SQL Commands</strong></h4>
+<h4 class="wp-block-heading">***1. Basic SQL Commands***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SELECT</strong>: Retrieves data from a database.</li>
-<!-- /wp:list-item --></ul>
+- ***SELECT*** : Retrieves data from a database. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -48,8 +48,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>WHERE</strong>: Filters records.</li>
-<!-- /wp:list-item --></ul>
+- ***WHERE*** : Filters records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -58,8 +58,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INSERT INTO</strong>: Adds new records.</li>
-<!-- /wp:list-item --></ul>
+- ***INSERT INTO*** : Adds new records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -68,8 +68,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>UPDATE</strong>: Modifies existing records.</li>
-<!-- /wp:list-item --></ul>
+- ***UPDATE*** : Modifies existing records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -78,8 +78,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DELETE</strong>: Removes records.</li>
-<!-- /wp:list-item --></ul>
+- ***DELETE*** : Removes records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -91,13 +91,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>2. SQL Clauses</strong></h4>
+<h4 class="wp-block-heading">***2. SQL Clauses***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ORDER BY</strong>: Sorts results.</li>
-<!-- /wp:list-item --></ul>
+- ***ORDER BY*** : Sorts results. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -106,8 +106,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>GROUP BY</strong>: Groups rows that share values.</li>
-<!-- /wp:list-item --></ul>
+- ***GROUP BY*** : Groups rows that share values. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -116,8 +116,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>HAVING</strong>: Filters groups (used with <code>GROUP BY</code>).</li>
-<!-- /wp:list-item --></ul>
+- ***HAVING*** : Filters groups (used with <code>GROUP BY</code>). 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -126,8 +126,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LIMIT</strong>: Limits the number of results.</li>
-<!-- /wp:list-item --></ul>
+- ***LIMIT*** : Limits the number of results. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -139,13 +139,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>3. Joins</strong></h4>
+<h4 class="wp-block-heading">***3. Joins***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INNER JOIN</strong>: Returns matching records from both tables.</li>
-<!-- /wp:list-item --></ul>
+- ***INNER JOIN*** : Returns matching records from both tables. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -155,8 +155,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LEFT JOIN</strong>: Returns all records from the left table and matching records from the right.</li>
-<!-- /wp:list-item --></ul>
+- ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -166,8 +166,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>RIGHT JOIN</strong>: Returns all records from the right table and matching records from the left.</li>
-<!-- /wp:list-item --></ul>
+- ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -177,8 +177,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>FULL JOIN</strong>: Returns all records when there's a match in either table.</li>
-<!-- /wp:list-item --></ul>
+- ***FULL JOIN*** : Returns all records when there's a match in either table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -191,13 +191,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>4. Aggregate Functions</strong></h4>
+<h4 class="wp-block-heading">***4. Aggregate Functions***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>COUNT()</strong>: Returns the number of rows.</li>
-<!-- /wp:list-item --></ul>
+- ***COUNT()*** : Returns the number of rows. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -206,8 +206,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SUM()</strong>: Returns the total sum of a numeric column.</li>
-<!-- /wp:list-item --></ul>
+- ***SUM()*** : Returns the total sum of a numeric column. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -216,8 +216,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AVG()</strong>: Returns the average value.</li>
-<!-- /wp:list-item --></ul>
+- ***AVG()*** : Returns the average value. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -226,8 +226,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>MAX() / MIN()</strong>: Returns the highest/lowest value.</li>
-<!-- /wp:list-item --></ul>
+- ***MAX() / MIN()*** : Returns the highest/lowest value. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -239,13 +239,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>5. Subqueries</strong></h4>
+<h4 class="wp-block-heading">***5. Subqueries***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Subquery in WHERE clause</strong>:</li>
-<!-- /wp:list-item --></ul>
+- ***Subquery in WHERE clause*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -257,13 +257,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>6. Table Management</strong></h4>
+<h4 class="wp-block-heading">***6. Table Management***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>CREATE TABLE</strong>: Creates a new table.</li>
-<!-- /wp:list-item --></ul>
+- ***CREATE TABLE*** : Creates a new table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -275,8 +275,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ALTER TABLE</strong>: Modifies an existing table.</li>
-<!-- /wp:list-item --></ul>
+- ***ALTER TABLE*** : Modifies an existing table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -285,8 +285,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DROP TABLE</strong>: Deletes a table.</li>
-<!-- /wp:list-item --></ul>
+- ***DROP TABLE*** : Deletes a table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -298,13 +298,13 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>7. Indexes</strong></h4>
+<h4 class="wp-block-heading">***7. Indexes***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>CREATE INDEX</strong>: Adds an index to a table.</li>
-<!-- /wp:list-item --></ul>
+- ***CREATE INDEX*** : Adds an index to a table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -313,8 +313,8 @@ url: /detailed-sql-cheat-sheet/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DROP INDEX</strong>: Removes an index.</li>
-<!-- /wp:list-item --></ul>
+- ***DROP INDEX*** : Removes an index. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -326,25 +326,25 @@ url: /detailed-sql-cheat-sheet/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>8. Data Types (Commonly Used)</strong></h4>
+<h4 class="wp-block-heading">***8. Data Types (Commonly Used)***  
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INT</strong>: Integer numbers.</li>
+- ***INT*** : Integer numbers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>VARCHAR(size)</strong>: Variable-length string.</li>
+- ***VARCHAR(size)*** : Variable-length string. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DATE</strong>: Date in 'YYYY-MM-DD' format.</li>
+- ***DATE*** : Date in 'YYYY-MM-DD' format. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DECIMAL(size, d)</strong>: Decimal numbers, specifying precision.</li>
-<!-- /wp:list-item --></ul>
+- ***DECIMAL(size, d)*** : Decimal numbers, specifying precision. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->

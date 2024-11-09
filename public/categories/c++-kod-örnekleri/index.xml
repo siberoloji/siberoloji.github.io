@@ -69,7 +69,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -118,7 +118,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -154,7 +154,7 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.&lt;/p&gt;
+&lt;p&gt;Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 
@@ -271,7 +271,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cstring&amp;gt;
@@ -368,7 +368,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 

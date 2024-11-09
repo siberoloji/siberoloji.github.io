@@ -29,7 +29,7 @@ title: C++ char tipinde 2 değişkeni birleştirme
 url: /tr/c-char-tipinde-2-degiskeni-birlestirme/
 ---
 
-  Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.</p>
+  Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.
  
 
 <!-- wp:code -->

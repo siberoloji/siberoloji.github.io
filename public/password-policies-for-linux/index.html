@@ -11,30 +11,71 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Password policies for Linux – Siberoloji</title>
-  <meta name="description" content=" The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.
-Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.  " /><link rel="canonical" href="http://localhost:1313/password-policies-for-linux/" itemprop="url" />
+  <meta name="description" content=" The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough. Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.   If you want to make such settings,   you should use a command called ***chage***  . This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages. chage --help man chage If you run the command below from the command line, you can see the password rules of the user you want. # change siberoloji with your username. $ chage -l siberoloji Last password change : May 04, 2015 Password expires : never Password inactive : never Account expires : never Minimum number of days between password change : 0 Maximum number of days between password change : 99999 Number of days of warning before password expires : 7 $ _ As can be seen in the report above, the user&#39;s password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed. sudo chage -M 90 siberoloji This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change. sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji Let&#39;s explain the options used in the command one by one. With the ( -m 5 ) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again. Thanks to the ( -M 90 ) option, the user is forced to change his password after 90 days have passed since the password was changed. ( -I 30 ) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.  The ( -W 14 ) option will warn the user with a warning when there are 14 days left for his password to expire. To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use." /><link rel="canonical" href="http://localhost:1313/password-policies-for-linux/" itemprop="url" />
 
 <meta property="og:title" content="Password policies for Linux" />
 <meta property="og:description" content="
 The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.
 
-Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked. &nbsp;" />
+Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked. &nbsp;
+
+If you want to make such settings,&nbsp;&nbsp;&nbsp;you should use a command called&nbsp;***chage*** &nbsp;. This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages.
+
+chage --help
+man chage
+
+
+If you run the command below from the command line, you can see the password rules of the user you want.
+
+# change siberoloji with your username.
+
+$ chage -l siberoloji
+
+Last password change : May 04, 2015
+Password expires : never
+Password inactive : never
+Account expires : never
+Minimum number of days between password change : 0
+Maximum number of days between password change : 99999
+Number of days of warning before password expires : 7
+$ _
+
+
+As can be seen in the report above, the user&#39;s password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed.
+
+sudo chage -M 90 siberoloji
+
+
+This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change.
+
+sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji
+
+
+Let&#39;s explain the options used in the command one by one.
+
+With the (&nbsp;-m 5&nbsp;) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again.
+
+Thanks to the (&nbsp;-M 90&nbsp;) option, the user is forced to change his password after 90 days have passed since the password was changed.
+
+(&nbsp;-I 30&nbsp;) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.&nbsp;
+
+The (&nbsp;-W 14&nbsp;) option will warn the user with a warning when there are 14 days left for his password to expire.
+
+To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/password-policies-for-linux/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2016-04-02T14:04:00+00:00" />
 <meta property="article:modified_time" content="2016-04-02T14:04:00+00:00" />
 
   <meta itemprop="name" content="Password policies for Linux">
-  <meta itemprop="description" content="The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.
-Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.  ">
+  <meta itemprop="description" content="The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough. Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.   If you want to make such settings,   you should use a command called ***chage***  . This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages. chage --help man chage If you run the command below from the command line, you can see the password rules of the user you want. # change siberoloji with your username. $ chage -l siberoloji Last password change : May 04, 2015 Password expires : never Password inactive : never Account expires : never Minimum number of days between password change : 0 Maximum number of days between password change : 99999 Number of days of warning before password expires : 7 $ _ As can be seen in the report above, the user&#39;s password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed. sudo chage -M 90 siberoloji This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change. sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji Let&#39;s explain the options used in the command one by one. With the ( -m 5 ) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again. Thanks to the ( -M 90 ) option, the user is forced to change his password after 90 days have passed since the password was changed. ( -I 30 ) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.  The ( -W 14 ) option will warn the user with a warning when there are 14 days left for his password to expire. To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use.">
   <meta itemprop="datePublished" content="2016-04-02T14:04:00+00:00">
   <meta itemprop="dateModified" content="2016-04-02T14:04:00+00:00">
-  <meta itemprop="wordCount" content="488">
+  <meta itemprop="wordCount" content="489">
   <meta itemprop="keywords" content="Linux,Linux Fundamentals,Os">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Password policies for Linux">
-  <meta name="twitter:description" content="The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.
-Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.  ">
+  <meta name="twitter:description" content="The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough. Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked.   If you want to make such settings,   you should use a command called ***chage***  . This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages. chage --help man chage If you run the command below from the command line, you can see the password rules of the user you want. # change siberoloji with your username. $ chage -l siberoloji Last password change : May 04, 2015 Password expires : never Password inactive : never Account expires : never Minimum number of days between password change : 0 Maximum number of days between password change : 99999 Number of days of warning before password expires : 7 $ _ As can be seen in the report above, the user&#39;s password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed. sudo chage -M 90 siberoloji This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change. sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji Let&#39;s explain the options used in the command one by one. With the ( -m 5 ) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again. Thanks to the ( -M 90 ) option, the user is forced to change his password after 90 days have passed since the password was changed. ( -I 30 ) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.  The ( -W 14 ) option will warn the user with a warning when there are 14 days left for his password to expire. To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9680,17 +9721,17 @@ Most Linux distributions select policies that do not disturb the user during ins
                 </a></div>
         <div class="content">
           <!-- wp:paragraph -->
-<p>The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.</p>
+<p>The majority of Linux users regularly install security updates and use the latest version. As far as we know, they are sensitive and careful. But this sensitivity and attention alone may not be enough. If you do not have a secure password policy that applies equally to every user, installing security updates alone may not be enough.
 <!-- wp:paragraph -->
-<p>Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked. &nbsp;</p>
+<p>Most Linux distributions select policies that do not disturb the user during installation by default. It is necessary to determine rules later, such as the requirement to change the password, the number of days between changes, or the number of days after which the account will be locked. &nbsp;
 <!-- wp:paragraph -->
-<p>If you want to make such settings,&nbsp;&nbsp;&nbsp;you should use a command called&nbsp;<strong>chage</strong>&nbsp;. This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages.</p>
+<p>If you want to make such settings,&nbsp;&nbsp;&nbsp;you should use a command called&nbsp;***chage*** &nbsp;. This easy-to-use and simple command will help you a lot in creating the password policies you choose. You can see the options and what you can do on the help and man pages.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">chage --help
 man chage</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>If you run the command below from the command line, you can see the password rules of the user you want.</p>
+<p>If you run the command below from the command line, you can see the password rules of the user you want.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"># change siberoloji with your username.
 
@@ -9706,27 +9747,27 @@ Number of days of warning before password expires : 7
 $ _</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>As can be seen in the report above, the user's password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed.</p>
+<p>As can be seen in the report above, the user's password will never expire, become inactive, the account will not become inactive, and there will be no need to create a new password before 99999 days have passed since the password was changed.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo chage -M 90 siberoloji</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change.</p>
+<p>This command allows you to set a rule that the user you specify must change their password after 90 days from the last password change.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo chage -m 5 -M 90 -I 30 -W 14 siberoloji</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Let's explain the options used in the command one by one.</p>
+<p>Let's explain the options used in the command one by one.
 <!-- wp:paragraph -->
-<p>With the (&nbsp;<em>-m 5</em>&nbsp;) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again.</p>
+<p>With the (&nbsp;<em>-m 5</em>&nbsp;) option, it is determined that after a password is changed, at least 5 days must pass before it can be changed again.
 <!-- wp:paragraph -->
-<p>Thanks to the (&nbsp;<em>-M 90</em>&nbsp;) option, the user is forced to change his password after 90 days have passed since the password was changed.</p>
+<p>Thanks to the (&nbsp;<em>-M 90</em>&nbsp;) option, the user is forced to change his password after 90 days have passed since the password was changed.
 <!-- wp:paragraph -->
-<p>(&nbsp;<em>-I 30</em>&nbsp;) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.&nbsp;</p>
+<p>(&nbsp;<em>-I 30</em>&nbsp;) If the user has not logged in for 30 days since the last login, it is determined that the account will be deactivated. If you are going on vacation or will be away from your computer for a long time, we recommend that you use it with caution.&nbsp;
 <!-- wp:paragraph -->
-<p>The (&nbsp;<em>-W 14</em>&nbsp;) option will warn the user with a warning when there are 14 days left for his password to expire.</p>
+<p>The (&nbsp;<em>-W 14</em>&nbsp;) option will warn the user with a warning when there are 14 days left for his password to expire.
 <!-- wp:paragraph -->
-<p>To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use.</p>
+<p>To continue using your computer more securely, start with yourself and try tightening your own user password policies. Although it may seem strange for a while, believe me, people feel more secure the system they use.
 
         </div>
         

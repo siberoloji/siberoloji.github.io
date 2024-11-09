@@ -23,429 +23,429 @@ url: /85-youtube-channels-youll-never-regret-subscribing-to/
 ---
 
 <!-- wp:paragraph -->
-<p>This curated list of YouTube channels offers a wealth of knowledge and expertise across various tech fields.&nbsp;Whether you're a beginner or an experienced developer,&nbsp;these channels will help you learn,&nbsp;grow,&nbsp;and stay up-to-date with the latest trends.</p>
+<p>This curated list of YouTube channels offers a wealth of knowledge and expertise across various tech fields.&nbsp;Whether you're a beginner or an experienced developer,&nbsp;these channels will help you learn,&nbsp;grow,&nbsp;and stay up-to-date with the latest trends.
   
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Programming Languages</strong></h3>
+ ### ***Programming Languages*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>C:</strong> Jacob Sorber</li>
+- ***C:***  Jacob Sorber 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>C++:</strong> TheCherno</li>
+- ***C++:***  TheCherno 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Java:</strong> amigoscode</li>
+- ***Java:***  amigoscode 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>C#:</strong> kudvenkat</li>
+- ***C#:***  kudvenkat 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Python:</strong> Corey Schafer</li>
+- ***Python:***  Corey Schafer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>JavaScript:</strong> developedbyed</li>
+- ***JavaScript:***  developedbyed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Golang:</strong> Jon Calhoun</li>
+- ***Golang:***  Jon Calhoun 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Swift:</strong> CodeWithChris</li>
+- ***Swift:***  CodeWithChris 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kotlin:</strong> PhilippLackner</li>
+- ***Kotlin:***  PhilippLackner 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>PHP:</strong> ProgramWithGio</li>
+- ***PHP:***  ProgramWithGio 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ruby:</strong> DriftingRuby</li>
+- ***Ruby:***  DriftingRuby 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Rust:</strong> NoBoilerplate</li>
+- ***Rust:***  NoBoilerplate 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Lua:</strong> Steve's teacher</li>
+- ***Lua:***  Steve's teacher 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>R:</strong> marinstatlectures</li>
+- ***R:***  marinstatlectures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>SQL:</strong> Joey Blue</li>
+- ***SQL:***  Joey Blue 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>TypeScript:</strong> basarat, TypeScriptTV</li>
-<!-- /wp:list-item --></ul>
+- ***TypeScript:***  basarat, TypeScriptTV 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Web Development</strong></h3>
+ ### ***Web Development*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>JavaScript:</strong> Akshay Saini</li>
+- ***JavaScript:***  Akshay Saini 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>C#:</strong> Microsoft Developer [Bob Tabor], dotnet [Scott/Kendra]</li>
+- ***C#:***  Microsoft Developer [Bob Tabor], dotnet [Scott/Kendra] 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Node.js:</strong> Traversy Media</li>
+- ***Node.js:***  Traversy Media 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>React:</strong> Dave Gray</li>
+- ***React:***  Dave Gray 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Vue:</strong> Vue Mastery</li>
+- ***Vue:***  Vue Mastery 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Django:</strong> CodingEntrepreneurs</li>
+- ***Django:***  CodingEntrepreneurs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Laravel:</strong> LaravelDaily</li>
+- ***Laravel:***  LaravelDaily 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Blazor:</strong> James Montemagno</li>
+- ***Blazor:***  James Montemagno 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Spring:</strong> SpringSourceDev</li>
+- ***Spring:***  SpringSourceDev 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>SpringBoot:</strong> amigoscode</li>
+- ***SpringBoot:***  amigoscode 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ruby on Rails:</strong> GorailsTV</li>
+- ***Ruby on Rails:***  GorailsTV 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>HTML/CSS:</strong> Kevin Powell</li>
-<!-- /wp:list-item --></ul>
+- ***HTML/CSS:***  Kevin Powell 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Cybersecurity</strong></h3>
+ ### ***Cybersecurity*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Network Chuck</strong></li>
+- ***Network Chuck***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Outpost Gray</strong></li>
+- ***Outpost Gray***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>David Bombal</strong></li>
+- ***David Bombal***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>The XSS Rat</strong></li>
+- ***The XSS Rat***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Cyrill Gossi</strong></li>
+- ***Cyrill Gossi***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>STOK</strong></li>
+- ***STOK***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Professor Messer</strong></li>
+- ***Professor Messer***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Hak5</strong></li>
+- ***Hak5***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>HackerSploit</strong></li>
+- ***HackerSploit***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>LiveOverFlow</strong></li>
-<!-- /wp:list-item --></ul>
+- ***LiveOverFlow***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Data Structures and Algorithms (DSA)</strong></h3>
+ ### ***Data Structures and Algorithms (DSA)*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>mycodeschool</strong></li>
+- ***mycodeschool***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Abdul Bari</strong></li>
+- ***Abdul Bari***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kunal Kushwaha</strong></li>
+- ***Kunal Kushwaha***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Jenny's Lectures CS IT</strong></li>
+- ***Jenny's Lectures CS IT***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>CodeWithHarry</strong></li>
-<!-- /wp:list-item --></ul>
+- ***CodeWithHarry***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Full Stack Development</strong></h3>
+ ### ***Full Stack Development*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Traversy Media</strong></li>
+- ***Traversy Media***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>NetNinja</strong></li>
+- ***NetNinja***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Dave Gray</strong></li>
-<!-- /wp:list-item --></ul>
+- ***Dave Gray***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Projects</strong></h3>
+ ### ***Projects*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>WebDevSimplified</strong></li>
-<!-- /wp:list-item --></ul>
+- ***WebDevSimplified***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>UI Design</strong></h3>
+ ### ***UI Design*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>developedbyed</strong></li>
+- ***developedbyed***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DesignCourse</strong></li>
-<!-- /wp:list-item --></ul>
+- ***DesignCourse***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>DevOps</strong></h3>
+ ### ***DevOps*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>GIT:</strong> The Modern Coder</li>
+- ***GIT:***  The Modern Coder 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Linux:</strong> Learn Linux TV</li>
+- ***Linux:***  Learn Linux TV 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DevOps:</strong> DevOpsToolkit</li>
+- ***DevOps:***  DevOpsToolkit 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>CI/CD:</strong> TechWorld with Nana</li>
+- ***CI/CD:***  TechWorld with Nana 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Docker:</strong> Bret Fisher</li>
+- ***Docker:***  Bret Fisher 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kubernetes:</strong> Kubesimplify</li>
+- ***Kubernetes:***  Kubesimplify 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Microservices:</strong> freeCodeCamp</li>
+- ***Microservices:***  freeCodeCamp 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Selenium:</strong> edureka!</li>
+- ***Selenium:***  edureka! 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Playwright:</strong> Jaydeep Karale</li>
-<!-- /wp:list-item --></ul>
+- ***Playwright:***  Jaydeep Karale 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Cloud Computing</strong></h3>
+ ### ***Cloud Computing*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AWS:</strong> amazonwebservices</li>
+- ***AWS:***  amazonwebservices 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Azure:</strong> Adam Marczak</li>
+- ***Azure:***  Adam Marczak 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>GCP:</strong> edureka!</li>
+- ***GCP:***  edureka! 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Serverless:</strong> Serverless</li>
+- ***Serverless:***  Serverless 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Jenkins:</strong> DevOps Journey</li>
+- ***Jenkins:***  DevOps Journey 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Puppet:</strong> simplilearn</li>
+- ***Puppet:***  simplilearn 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Chef:</strong> simplilearn</li>
+- ***Chef:***  simplilearn 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ansible:</strong> Learn Linux TV</li>
-<!-- /wp:list-item --></ul>
+- ***Ansible:***  Learn Linux TV 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Data Science</strong></h3>
+ ### ***Data Science*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Mathematics:</strong> 3Blue1Brown, ProfRobBob, Ghrist Math</li>
+- ***Mathematics:***  3Blue1Brown, ProfRobBob, Ghrist Math 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Machine Learning:</strong> sentdex, DeepLearningAI, StatQuest</li>
+- ***Machine Learning:***  sentdex, DeepLearningAI, StatQuest 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Excel:</strong> ExcelIsFun</li>
+- ***Excel:***  ExcelIsFun 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Tableau:</strong> Tableau Tim</li>
+- ***Tableau:***  Tableau Tim 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>PowerBI:</strong> Guy in a Cube</li>
-<!-- /wp:list-item --></ul>
+- ***PowerBI:***  Guy in a Cube 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Free Education</strong></h3>
+ ### ***Free Education*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>freecodecamp</strong></li>
+- ***freecodecamp***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Simplilearn</strong></li>
+- ***Simplilearn***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>edureka!</strong></li>
-<!-- /wp:list-item --></ul>
+- ***edureka!***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>Most Valuable</strong></h3>
+ ### ***Most Valuable*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>TechWithTim</strong></li>
+- ***TechWithTim***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>programmingwithmosh</strong></li>
+- ***programmingwithmosh***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Traversy Media</strong></li>
+- ***Traversy Media***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>BroCodez</strong></li>
+- ***BroCodez***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>thenewboston</strong></li>
+- ***thenewboston***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Telusko</strong></li>
+- ***Telusko***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Derek Banas</strong></li>
+- ***Derek Banas***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>CodeWithHarry</strong></li>
+- ***CodeWithHarry***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>MySirG .com</strong></li>
+- ***MySirG .com***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Leila Gharani</strong></li>
+- ***Leila Gharani***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kunal Kushwaha</strong></li>
+- ***Kunal Kushwaha***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>TechWorld with Nana</strong></li>
+- ***TechWorld with Nana***  
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>KodeKloud</strong></li>
-<!-- /wp:list-item --></ul>
+- ***KodeKloud***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>This list provides a solid foundation for learning various tech skills.&nbsp;Remember to explore these channels,&nbsp;find the ones that resonate with your learning style,&nbsp;and enjoy the journey of becoming a skilled developer.</p>
+<p>This list provides a solid foundation for learning various tech skills.&nbsp;Remember to explore these channels,&nbsp;find the ones that resonate with your learning style,&nbsp;and enjoy the journey of becoming a skilled developer.
   

@@ -51,7 +51,7 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
 <!-- /wp:heading -->
 
  
- ## <strong>Amaç</strong></h2>
+ ## ***Amaç*** 
 <!-- /wp:heading -->
 
   Bu nokta, hizmet alan tarafın beklenti ve düşüncelerinin firmayla paylaşıldığı kısımdır. Gerçekleştirilmek istenen testlerin neler olduğu ve hangi düşünceler ile bu testleri yapılacağı ortaya konulur. Böylece hizmet veren firma yetkilileri, gerçekleştirmekle yükümlü olacakları testlerin mahiyetini kavrayarak, genel çerçeveyi zihinlerinde oluşturabilirler. 
@@ -61,14 +61,14 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
  
 
  
- ## <strong>Kapsam</strong></h2>
+ ## ***Kapsam*** 
 <!-- /wp:heading -->
 
   Yapılacak olan Sızma Testinin teknik anlamda hangi sistemleri kapsayacağının net olarak belirlendiği aşamadır. Kısaca, Amaç bölümünde tespit edilen hedefler çerçevesinde detayların belirlenmesidir. Bu detaylar neticesinde gerçekleştirilecek olan testlerin süresi ve iş gücü ihtiyacı da ortaya çıkacaktır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Teste Konu Sistemler</h3>
+
+ ### Teste Konu Sistemler
 <!-- /wp:heading -->
 
   Halen çalışır durumda bulunan sistemin bir çok katman ve üyeleri bulunur. Bu sistemlerden hangilerinin test edileceği tam olarak belirlenmelidir. Örneğin, hizmet alan firmanın stok ve muhasebe sistemlerinin teste dahil edilip edilmeyeceği veya bu sistemlerin, sadece yedekleme kısımlarının testinin yeterli olacağı vb. konular görüşülür. Genel ifadeyle söylemek gerekirse, topoloji üzerinde bulunan elemanların kapsama dahil olanları veya hariç olanları tespit edilir. 
@@ -80,8 +80,8 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
   Uygulama konusu olacak bu testlerle ilgili detaylı soruları bu bağlantıdaki (<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049">bkz.</a>) yazımızda bulabilirsiniz. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Yasal Kısıtlama ve İzinler</h3>
+
+ ### Yasal Kısıtlama ve İzinler
 <!-- /wp:heading -->
 
   Teste konu sistemlerin belirlenmesinden sonra, bu konuda yasal kısıtlamaların bulunup bulunmadığına mutlaka dikkat edilmesi gerekmektedir. Kişisel verilerin korunması, özel hayatın gizliliği ve diğer benzeri kanuni çerçevelerin hükümleri doğrultusunda hareket edilmesi gerektiği hatırdan çıkarılmamalıdır. 
@@ -90,8 +90,8 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
   Yapılacak testlerin çok kritik bir başka bağıl sistemi aksatması veya devre dışı bırakması durumunda, hukuki sorumluluk doğma ihtimali bulunur. Önceden izin alınması gerekli merciler varsa bunun için atılması gerekli adımlar da bu noktada belirlenir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Çerçeve ve IP Aralıkları</h3>
+
+ ### Çerçeve ve IP Aralıkları
 <!-- /wp:heading -->
 
   Bazı durumlarda, hizmet alan firmanın alt yapısı geniş bir coğrafi alana yayılmış olabilir. Coğrafi olarak geniş alana yayılmış sistemlerin tek bir noktadan testi, maliyet ve zaman planlaması açısından uygunluk göstermeyebilir. Bu tür durumlarda testler, zaman ve mekanca parçalara ayrılabilir. 
@@ -101,21 +101,21 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
  
 
  
- ## <strong>Koordinasyon Tedbirleri</strong></h2>
+ ## ***Koordinasyon Tedbirleri*** 
 <!-- /wp:heading -->
 
   Kararlaştırılacak koordinasyon tedbirleri, ekiplerin kurulması ve uyumlu çalışması için vazgeçilmezdir. Kaynakların israfını engeller ve amaç birliğinin sağlanmasına katkıda bulunur. Bu sebeple en ince detaylarına kadar belirlenmeye çalışılmalıdır. Geçmiş tecrübeleri de dikkate alarak yapılan bir planlanma, meydana gelebilecek aksaklıkları önler. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Zaman Planlaması</h3>
+
+ ### Zaman Planlaması
 <!-- /wp:heading -->
 
   Kapsam bölümünde tespit edilen konular ışığında, yürütülecek sürecin zaman planlaması yapılır. İhtiyaç duyulan toplam zaman ve bu toplam zamanın parçalara bölünerek aşama aşama planlanması kritik öneme sahiptir. Bir fikir vermesi açısından KİM? NEREDE? NE ZAMAN? NASIL? NE YAPACAK? Sorularına cevap aradığımız koordinasyon işlemlerindeki NE ZAMAN? sorusuna cevap aranır ve açıklığa kavuşturulur. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Mekan ve Güvenlik Planlaması</h3>
+
+ ### Mekan ve Güvenlik Planlaması
 <!-- /wp:heading -->
 
   Gerçekleştirilecek testler esnasında görevlendirilen ekiplerin çalışma alanları ve tesislere giriş çıkışları, geçmiş güvenlik kayıtları (clearance) bu noktada görüşülür. Ayrıca ekiplere sağlanacak sosyal imkanlar ve ihtiyaçlarbu aşamada belirlenir. 
@@ -124,8 +124,8 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
   Hizmet alan tarafın, kendi içerisinde uyguladığı güvenlik politikaları ile ekiplerin çalışma usulleri arasında bir uyumsuzluk çıkmaması için gerekli olan müsaadeler kararlaştırılır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### İletişim Konuları</h3>
+
+ ### İletişim Konuları
 <!-- /wp:heading -->
 
   Test sürecinin planlanması ve icrası esnasında hem yönetim hem de testi yapan ekiplerin kimlerle irtibat halinde olacakları belirlenir. İletişimin sağlıklı yapılamaması aksamalara yol açar, zaman planlaması kesintiye uğrayabilir. Bu tür istenmeyen durumların oluşmaması için, irtibat sisteminin etkili bir şekilde kurulması ve tüm taraflara bilgi verilmesi esastır. 
@@ -134,22 +134,22 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
   İşlemler esnasında normal iletişim ihtiyaçları haricinde ortaya çıkan olağan dışı durumlar için aşağıda ayrı bir başlık bulunmaktadır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Taraflarla Koordinasyon</h3>
+
+ ### 3. Taraflarla Koordinasyon
 <!-- /wp:heading -->
 
   Hizmet alan tarafın sistemleri, 3.taraf firmalardan hizmet alıyor olabilir. Örneğin, bulut sistemleri, İnternet servis sağlayıcıları veya güvenlik çözümleri sağlayıcıları. Böyle bir 3.taraf söz konusu ile onlarla koordinasyon mutlak yapılmalıdır. Gerekirse, tarafların zamanca koordinasyonu için ayrı bir inceleme yapılmalıdır. Bazı durumlarda saat farklarından dolayı koordinasyon eksiklikleri oluşabilmektedir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Sosyal Mühendislik Konuları</h3>
+
+ ### Sosyal Mühendislik Konuları
 <!-- /wp:heading -->
 
   Kapsam maddesinde tespit edilen testler içerisinde Sosyal Mühendislik testi mevcut ise, bununla ilgili hususlar netleştirilmelidir. Yapılacak sosyal mühendislik testlerinde kullanılacak teknikler veya gerekiyorsa çalışanların eposta listeleri gibi konular karara bağlanmalıdır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Acil Durum Konuları</h3>
+
+ ### Acil Durum Konuları
 <!-- /wp:heading -->
 
   Testler esnasında istenmeyen durumlar ortaya çıkabilir. Bu tür durumlarda olayın ne şekilde, kime rapor edileceği mutlaka önceden tespit edilmelidir. Bu raporlama işleminin, hangi güvenli iletişim tekniği kullanılarak yapılacağı belirlenmelidir. Gerekirse açık ve kapalı anahtar değişiminin kimler arasında yapılacağı belirlenir. 
@@ -162,18 +162,18 @@ url: /tr/sizma-testi-safhalari-koordinasyon-1/
  
 
  
- ## <strong>Diğer Konular</strong></h2>
+ ## ***Diğer Konular*** 
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Kapsam Dışı Veriler</h3>
+
+ ### Kapsam Dışı Veriler
 <!-- /wp:heading -->
 
   Tüm bu testler esnasında, belirlenen çerçeve dışına çıkılmamaya çalışılsa da bazen kapsam dışı veriler elde edilebilir. Bu konuda ne yapılacağı net ve açık bir şekilde karara bağlanmalıdır. Örneğin, “bir sisteme ulaşıldığını ispat için sadece dosya listesi kayıt altına alınacak, web kamerasından fotoğraf çekme, dosya indirme yapılmayacak” vb. kurallar belirlenmelidir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Ödeme Yöntemi</h3>
+
+ ### Ödeme Yöntemi
 <!-- /wp:heading -->
 
   Ödeme yöntemi, icra edilecek faaliyetin büyüklüğü, kaynak ihtiyacı ve koordinasyonun sonunda görüşülmeli ve taraflar arasında kararlaştırılmalıdır. Genellikle takip edilen yöntem, nihai sonuç raporunun tesliminden sonra ödeme şeklindedir. Taraflar arasında uzun süreli bir tedarik veya hizmet anlaşması mevcut ise belli bir oranın peşin, geri kalanının rapor tesliminden sonra ödenmesi şeklinde karar da verilebilir. 

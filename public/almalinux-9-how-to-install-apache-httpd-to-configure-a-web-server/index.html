@@ -27,7 +27,7 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 By the end of this tutorial, you will have a fully functional Apache web server running on your AlmaLinux system, ready to serve web pages.">
   <meta itemprop="datePublished" content="2024-10-04T18:25:45+00:00">
   <meta itemprop="dateModified" content="2024-10-04T18:25:45+00:00">
-  <meta itemprop="wordCount" content="1209">
+  <meta itemprop="wordCount" content="1225">
   <meta itemprop="keywords" content="Alma Linux,Apache Web Server,How-to Guides,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Install Apache httpd to Configure a Web Server">
@@ -9656,47 +9656,47 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh3">Table of Contents
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-apache-web-serverh3">1. Introduction to Apache Web Server
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-apache-web-server">1. Introduction to Apache Web Server
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisitesh3">2. Prerequisites
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisites">2. Prerequisites
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-installing-apache-httpd-on-almalinux-9h3">3. Installing Apache httpd on AlmaLinux 9
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-installing-apache-httpd-on-almalinux-9">3. Installing Apache httpd on AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-configuring-apache-web-serverh3">4. Configuring Apache Web Server
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-configuring-apache-web-server">4. Configuring Apache Web Server
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-managing-the-apache-serviceh3">5. Managing the Apache Service
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-managing-the-apache-service">5. Managing the Apache Service
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-configuring-firewalls-for-apacheh3">6. Configuring Firewalls for Apache
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-configuring-firewalls-for-apache">6. Configuring Firewalls for Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-hosting-a-website-with-apacheh3">7. Hosting a Website with Apache
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-hosting-a-website-with-apache">7. Hosting a Website with Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-setting-up-virtual-hostsh3">8. Setting Up Virtual Hosts
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-setting-up-virtual-hosts">8. Setting Up Virtual Hosts
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-securing-apache-with-ssl-optionalh3">9. Securing Apache with SSL (Optional)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-securing-apache-with-ssl-optional">9. Securing Apache with SSL (Optional)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#10-conclusionh3">10. Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#10-conclusion">10. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9731,66 +9731,84 @@ By the end of this tutorial, you will have a fully functional Apache web server 
         <div class="content">
           <p>When it comes to setting up a reliable web server, Apache HTTP Server (commonly known as Apache httpd) is one of the most popular choices. It is open-source, widely used, and highly customizable to fit the needs of different web hosting environments. In this guide, we&rsquo;ll walk through the steps of installing and configuring Apache httpd on an AlmaLinux 9 server.</p>
 <p>By the end of this tutorial, you will have a fully functional Apache web server running on your AlmaLinux system, ready to serve web pages.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Table of Contents</h3><span class="hx-absolute -hx-mt-20" id="table-of-contentsh3"></span>
-    <a href="#table-of-contentsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to Apache Web Server</li>
+- Introduction to Apache Web Server 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Prerequisites</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Installing Apache httpd on AlmaLinux 9</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configuring Apache Web Server</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Managing the Apache Service</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configuring Firewalls for Apache</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Hosting a Website with Apache</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Setting Up Virtual Hosts</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Securing Apache with SSL (Optional)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Introduction to Apache Web Server</h3><span class="hx-absolute -hx-mt-20" id="1-introduction-to-apache-web-serverh3"></span>
-    <a href="#1-introduction-to-apache-web-serverh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>1. Introduction to Apache Web Server<span class="hx-absolute -hx-mt-20" id="1-introduction-to-apache-web-server"></span>
+    <a href="#1-introduction-to-apache-web-server" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Apache is a powerful, flexible, and high-performance web server. It can serve static content (like HTML pages, images, CSS, and JavaScript) as well as dynamic content through integrations with scripting languages like PHP, Python, or Perl. Apache has a modular architecture, meaning you can extend its capabilities by enabling additional modules, making it versatile for different types of web hosting environments.</p>
-<!-- wp:heading {"level":3} -->
-<h3>2. Prerequisites</h3><span class="hx-absolute -hx-mt-20" id="2-prerequisitesh3"></span>
-    <a href="#2-prerequisitesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Prerequisites<span class="hx-absolute -hx-mt-20" id="2-prerequisites"></span>
+    <a href="#2-prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Before you begin, ensure that the following prerequisites are met:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AlmaLinux 9 Server</strong>: This guide assumes that you have a running AlmaLinux 9 instance.</li>
+- ***AlmaLinux 9 Server*** : This guide assumes that you have a running AlmaLinux 9 instance. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Sudo Privileges</strong>: You need a user account with sudo privileges to perform administrative tasks.</li>
+<ul>
+<li><em><strong>Sudo Privileges</strong></em> : You need a user account with sudo privileges to perform administrative tasks.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Basic Command-Line Knowledge</strong>: Familiarity with basic Linux commands is helpful for completing the steps in this guide.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Basic Command-Line Knowledge</strong></em> : Familiarity with basic Linux commands is helpful for completing the steps in this guide.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Installing Apache httpd on AlmaLinux 9</h3><span class="hx-absolute -hx-mt-20" id="3-installing-apache-httpd-on-almalinux-9h3"></span>
-    <a href="#3-installing-apache-httpd-on-almalinux-9h3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Installing Apache httpd on AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="3-installing-apache-httpd-on-almalinux-9"></span>
+    <a href="#3-installing-apache-httpd-on-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>AlmaLinux 9 uses the DNF package manager, making it simple to install software packages. To install Apache httpd, follow these steps:</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Update the System</h4>
+<h4 class="wp-block-heading">Step 1: Update the System 
 <!-- /wp:heading -->
 <p>Before installing any new packages, it&rsquo;s a good practice to ensure your system is up to date. Use the following command to update the package index:</p>
 <!-- wp:code -->
@@ -9798,7 +9816,7 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <!-- /wp:code -->
 <p>This command will update your system to the latest package versions.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Install Apache httpd</h4>
+<h4 class="wp-block-heading">Step 2: Install Apache httpd 
 <!-- /wp:heading -->
 <p>Now, use the following command to install Apache httpd:</p>
 <!-- wp:code -->
@@ -9806,7 +9824,7 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <!-- /wp:code -->
 <p>This will install Apache and its dependencies on your AlmaLinux server.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Start and Enable Apache</h4>
+<h4 class="wp-block-heading">Step 3: Start and Enable Apache 
 <!-- /wp:heading -->
 <p>After the installation is complete, you need to start the Apache service and enable it to run automatically on system boot.</p>
 <p>Start Apache with the following command:</p>
@@ -9823,7 +9841,7 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <!-- /wp:code -->
 <p>The output should indicate that the service is &ldquo;active (running).&rdquo;</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 4: Verify Apache Installation</h4>
+<h4 class="wp-block-heading">Step 4: Verify Apache Installation 
 <!-- /wp:heading -->
 <p>After starting Apache, verify that the web server is working by accessing it via your web browser. By default, Apache serves a test page to any client that connects to your server&rsquo;s IP address.</p>
 <p>To find the IP address of your server, run:</p>
@@ -9831,12 +9849,11 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ip a</code></pre>
 <!-- /wp:code -->
 <p>Open your web browser and enter the IP address of your server (e.g., <code>http://your_server_ip</code>). If everything is set up correctly, you should see a default Apache welcome page that says &ldquo;Testing 123…&rdquo;. This confirms that Apache is installed and running properly.</p>
-<!-- wp:heading {"level":3} -->
-<h3>4. Configuring Apache Web Server</h3><span class="hx-absolute -hx-mt-20" id="4-configuring-apache-web-serverh3"></span>
-    <a href="#4-configuring-apache-web-serverh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Configuring Apache Web Server<span class="hx-absolute -hx-mt-20" id="4-configuring-apache-web-server"></span>
+    <a href="#4-configuring-apache-web-server" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The main configuration file for Apache is located at <code>/etc/httpd/conf/httpd.conf</code>. This file controls various settings related to how Apache behaves, such as which ports it listens on, the location of log files, and where website files are stored.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Basic Configuration Settings</h4>
+<h4 class="wp-block-heading">Basic Configuration Settings 
 <!-- /wp:heading -->
 <p>Open the configuration file using a text editor (like <code>nano</code> or <code>vim</code>):</p>
 <!-- wp:code -->
@@ -9845,41 +9862,49 @@ By the end of this tutorial, you will have a fully functional Apache web server 
 <p>Here are some common settings you might want to adjust:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ServerAdmin</strong>: This is the email address that Apache uses to notify the administrator if there is a problem with the server. You can set it to your email address: <code>ServerAdmin admin@yourdomain.com</code></li>
+- ***ServerAdmin*** : This is the email address that Apache uses to notify the administrator if there is a problem with the server. You can set it to your email address: <code>ServerAdmin admin@yourdomain.com</code> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>DocumentRoot</strong>: This is the directory where your website files are stored. By default, Apache serves files from <code>/var/www/html</code>. You can change this directory if needed: <code>DocumentRoot "/var/www/html"</code></li>
+<ul>
+<li><em><strong>DocumentRoot</strong></em> : This is the directory where your website files are stored. By default, Apache serves files from <code>/var/www/html</code>. You can change this directory if needed: <code>DocumentRoot &ldquo;/var/www/html&rdquo;</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>ServerName</strong>: This is the domain name or IP address Apache should respond to. Set this to your server's IP address or your domain: <code>ServerName yourdomain.com:80</code></li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>ServerName</strong></em> : This is the domain name or IP address Apache should respond to. Set this to your server&rsquo;s IP address or your domain: <code>ServerName yourdomain.com:80</code></li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>After making changes, save the file and exit the editor.</p>
 <p>To apply your changes, restart Apache:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart httpd</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>5. Managing the Apache Service</h3><span class="hx-absolute -hx-mt-20" id="5-managing-the-apache-serviceh3"></span>
-    <a href="#5-managing-the-apache-serviceh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>5. Managing the Apache Service<span class="hx-absolute -hx-mt-20" id="5-managing-the-apache-service"></span>
+    <a href="#5-managing-the-apache-service" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Apache is controlled using the <code>systemctl</code> command. Here are a few commands to manage the Apache service:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Start Apache</strong>: <code>sudo systemctl start httpd</code></li>
+- ***Start Apache*** : <code>sudo systemctl start httpd</code> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Stop Apache</strong>: <code>sudo systemctl stop httpd</code></li>
+<ul>
+<li><em><strong>Stop Apache</strong></em> : <code>sudo systemctl stop httpd</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Restart Apache</strong>: <code>sudo systemctl restart httpd</code></li>
+<ul>
+<li><em><strong>Restart Apache</strong></em> : <code>sudo systemctl restart httpd</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Check Apache Status</strong>: <code>sudo systemctl status httpd</code></li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Check Apache Status</strong></em> : <code>sudo systemctl status httpd</code></li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>6. Configuring Firewalls for Apache</h3><span class="hx-absolute -hx-mt-20" id="6-configuring-firewalls-for-apacheh3"></span>
-    <a href="#6-configuring-firewalls-for-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>6. Configuring Firewalls for Apache<span class="hx-absolute -hx-mt-20" id="6-configuring-firewalls-for-apache"></span>
+    <a href="#6-configuring-firewalls-for-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To make sure your server is accessible, you need to configure your firewall to allow HTTP (port 80) and HTTPS (port 443) traffic.</p>
 <p>If you&rsquo;re using <code>firewalld</code>, run the following commands to open the necessary ports:</p>
 <!-- wp:code -->
@@ -9888,49 +9913,60 @@ sudo firewall-cmd --permanent --add-service=https
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
 <p>Now, your server should be able to serve web traffic to users.</p>
-<!-- wp:heading {"level":3} -->
-<h3>7. Hosting a Website with Apache</h3><span class="hx-absolute -hx-mt-20" id="7-hosting-a-website-with-apacheh3"></span>
-    <a href="#7-hosting-a-website-with-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>7. Hosting a Website with Apache<span class="hx-absolute -hx-mt-20" id="7-hosting-a-website-with-apache"></span>
+    <a href="#7-hosting-a-website-with-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>By default, Apache serves content from the <code>/var/www/html</code> directory. To host a simple website, place your website’s files (such as HTML, CSS, and JavaScript) in this directory.</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Navigate to the default web directory: <code>cd /var/www/html</code></li>
+- Navigate to the default web directory: <code>cd /var/www/html</code> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>You can either create a new HTML file or upload your website files. For example, create a simple <code>index.html</code> file: <code>sudo nano index.html</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Add your website content: <code>&lt;html&gt; &lt;head&gt; &lt;title&gt;My AlmaLinux Website&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Welcome to my website hosted on AlmaLinux 9!&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt;</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Save the file and exit. When you visit your server's IP address in a web browser, you should now see your custom web page instead of the default Apache page.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li>Save the file and exit. When you visit your server&rsquo;s IP address in a web browser, you should now see your custom web page instead of the default Apache page.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>8. Setting Up Virtual Hosts</h3><span class="hx-absolute -hx-mt-20" id="8-setting-up-virtual-hostsh3"></span>
-    <a href="#8-setting-up-virtual-hostsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>8. Setting Up Virtual Hosts<span class="hx-absolute -hx-mt-20" id="8-setting-up-virtual-hosts"></span>
+    <a href="#8-setting-up-virtual-hosts" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Virtual hosts allow you to run multiple websites on the same server. Each website can have its own domain name, even though they share a single server and IP address.</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>First, create a directory for your new website: <code>sudo mkdir /var/www/yourdomain.com</code></li>
+- First, create a directory for your new website: <code>sudo mkdir /var/www/yourdomain.com</code> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Set permissions for this directory: <code>sudo chown -R $USER:$USER /var/www/yourdomain.com</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Create a configuration file for the new site in <code>/etc/httpd/conf.d/</code>: <code>sudo nano /etc/httpd/conf.d/yourdomain.com.conf</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Add the following content to define the virtual host: <code>&lt;VirtualHost *:80&gt; ServerAdmin admin@yourdomain.com DocumentRoot /var/www/yourdomain.com ServerName yourdomain.com ErrorLog /var/log/httpd/yourdomain.com-error.log CustomLog /var/log/httpd/yourdomain.com-access.log combined &lt;/VirtualHost&gt;</code></li>
+<ul>
+<li>Add the following content to define the virtual host: <code>&lt;VirtualHost *:80&gt; ServerAdmin <a href="mailto:admin@yourdomain.com" >admin@yourdomain.com</a> DocumentRoot /var/www/yourdomain.com ServerName yourdomain.com ErrorLog /var/log/httpd/yourdomain.com-error.log CustomLog /var/log/httpd/yourdomain.com-access.log combined &lt;/VirtualHost&gt;</code></li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Save the file, then restart Apache: <code>sudo systemctl restart httpd</code></li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Now, when users visit <code>yourdomain.com</code>, they will see the website hosted in the <code>/var/www/yourdomain.com</code> directory.</p>
-<!-- wp:heading {"level":3} -->
-<h3>9. Securing Apache with SSL (Optional)</h3><span class="hx-absolute -hx-mt-20" id="9-securing-apache-with-ssl-optionalh3"></span>
-    <a href="#9-securing-apache-with-ssl-optionalh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>9. Securing Apache with SSL (Optional)<span class="hx-absolute -hx-mt-20" id="9-securing-apache-with-ssl-optional"></span>
+    <a href="#9-securing-apache-with-ssl-optional" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To secure your Apache server with SSL, you can install a free SSL certificate from Let&rsquo;s Encrypt. First, install the <code>mod_ssl</code> module and the <code>certbot</code> client:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install mod_ssl
@@ -9941,9 +9977,8 @@ sudo dnf install certbot python3-certbot-apache</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo certbot --apache</code></pre>
 <!-- /wp:code -->
 <p>Certbot will automatically configure SSL for your Apache server. You can verify it by visiting your website via <code><a href="https://yourdomain.com" target="_blank" rel="noopener">https://yourdomain.com</a></code>.</p>
-<!-- wp:heading {"level":3} -->
-<h3>10. Conclusion</h3><span class="hx-absolute -hx-mt-20" id="10-conclusionh3"></span>
-    <a href="#10-conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>10. Conclusion<span class="hx-absolute -hx-mt-20" id="10-conclusion"></span>
+    <a href="#10-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Congratulations! You&rsquo;ve successfully installed and configured Apache httpd on your AlmaLinux 9 server. You now have a fully functional web server capable of serving web pages. By following this guide, you’ve learned how to install Apache, configure virtual hosts, manage the Apache service, and secure your server with SSL.</p>
 <p>Apache’s flexibility and powerful configuration options make it a great choice for hosting websites of all sizes. Whether you’re hosting a personal blog, an e-commerce site, or a large enterprise application, Apache provides the tools and capabilities to handle your needs efficiently.</p>
 

@@ -31,388 +31,388 @@ title: 'AlmaLinux 9: How to Install with Prepared Installation Disk'
 url: /almalinux-9-how-to-install-with-prepared-installation-disk/
 ---
 
- <p>AlmaLinux has quickly become a popular choice for those seeking a stable, enterprise-grade Linux distribution. As a 1:1 binary compatible fork of Red Hat Enterprise Linux (RHEL), it offers a robust and reliable platform for various applications. In this comprehensive guide, we'll walk you through the process of installing AlmaLinux 9 using a prepared installation disk.</p>
+ <p>AlmaLinux has quickly become a popular choice for those seeking a stable, enterprise-grade Linux distribution. As a 1:1 binary compatible fork of Red Hat Enterprise Linux (RHEL), it offers a robust and reliable platform for various applications. In this comprehensive guide, we'll walk you through the process of installing AlmaLinux 9 using a prepared installation disk.
  
 
  
- ## Prerequisites</h2>
+ ## Prerequisites
 <!-- /wp:heading -->
 
- <p>Before we begin, ensure you have the following:</p>
+ <p>Before we begin, ensure you have the following:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>A computer with at least 2GB of RAM (4GB recommended for GUI installations)</li>
+- A computer with at least 2GB of RAM (4GB recommended for GUI installations) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>20GB of free disk space (more is recommended for production use)</li>
+- 20GB of free disk space (more is recommended for production use) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A prepared AlmaLinux 9 installation disk (USB drive or DVD)</li>
+- A prepared AlmaLinux 9 installation disk (USB drive or DVD) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Internet connection (optional, but recommended for updates during installation)</li>
-<!-- /wp:list-item --></ol>
+- Internet connection (optional, but recommended for updates during installation) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 1: Obtaining the Installation Media</h2>
+ ## Step 1: Obtaining the Installation Media
 <!-- /wp:heading -->
 
- <p>If you haven't already prepared your installation media, you'll need to:</p>
+ <p>If you haven't already prepared your installation media, you'll need to:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Visit the official AlmaLinux website (https://almalinux.org/)</li>
+- Visit the official AlmaLinux website (https://almalinux.org/) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Navigate to the Downloads section</li>
+- Navigate to the Downloads section 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Choose AlmaLinux 9 and select the appropriate ISO file (usually the DVD ISO)</li>
+- Choose AlmaLinux 9 and select the appropriate ISO file (usually the DVD ISO) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Download the ISO file</li>
+- Download the ISO file 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Create a bootable USB drive or burn the ISO to a DVD</li>
-<!-- /wp:list-item --></ol>
+- Create a bootable USB drive or burn the ISO to a DVD 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
- <p>There are various tools available for creating bootable USB drives, such as Rufus for Windows or dd for Linux systems.</p>
+ <p>There are various tools available for creating bootable USB drives, such as Rufus for Windows or dd for Linux systems.
  
 
  
- ## Step 2: Booting from the Installation Media</h2>
+ ## Step 2: Booting from the Installation Media
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Insert your prepared installation disk (USB or DVD) into your computer</li>
+- Insert your prepared installation disk (USB or DVD) into your computer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Restart your computer</li>
+- Restart your computer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Access your computer's boot menu (usually by pressing F12, F2, or Del during startup)</li>
+- Access your computer's boot menu (usually by pressing F12, F2, or Del during startup) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Select the installation media as the boot device</li>
+- Select the installation media as the boot device 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When the AlmaLinux boot menu appears, select "Install AlmaLinux 9"</li>
-<!-- /wp:list-item --></ol>
+- When the AlmaLinux boot menu appears, select "Install AlmaLinux 9" 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 3: Language Selection</h2>
+ ## Step 3: Language Selection
 <!-- /wp:heading -->
 
- <p>The first screen you'll encounter is the language selection. Choose your preferred language for the installation process and click "Continue."</p>
+ <p>The first screen you'll encounter is the language selection. Choose your preferred language for the installation process and click "Continue."
  
 
  
- ## Step 4: Installation Summary</h2>
+ ## Step 4: Installation Summary
 <!-- /wp:heading -->
 
- <p>You'll now see the Installation Summary screen, which provides an overview of various installation options. We'll go through each section:</p>
+ <p>You'll now see the Installation Summary screen, which provides an overview of various installation options. We'll go through each section:
  
 
-<!-- wp:heading {"level":3} -->
- ### Localization</h3>
+
+ ### Localization
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Keyboard</strong>: Set your keyboard layout</li>
+- ***Keyboard*** : Set your keyboard layout 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Language Support</strong>: Add additional language support if needed</li>
+- ***Language Support*** : Add additional language support if needed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Time &amp; Date</strong>: Set your time zone and configure NTP (Network Time Protocol) if desired</li>
-<!-- /wp:list-item --></ul>
+- ***Time &amp; Date*** : Set your time zone and configure NTP (Network Time Protocol) if desired 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Software</h3>
+
+ ### Software
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Installation Source</strong>: This should be set to "Local media" by default</li>
+- ***Installation Source*** : This should be set to "Local media" by default 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Software Selection</strong>: Choose your base environment (e.g., Server with GUI, Minimal Install, Workstation)</li>
-<!-- /wp:list-item --></ul>
+- ***Software Selection*** : Choose your base environment (e.g., Server with GUI, Minimal Install, Workstation) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### System</h3>
+
+ ### System
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Installation Destination</strong>: Select the drive where you want to install AlmaLinux</li>
+- ***Installation Destination*** : Select the drive where you want to install AlmaLinux 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>KDUMP</strong>: Enable or disable the kernel crash dumping mechanism</li>
+- ***KDUMP*** : Enable or disable the kernel crash dumping mechanism 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Network &amp; Host Name</strong>: Configure network settings and set your system's hostname</li>
-<!-- /wp:list-item --></ul>
+- ***Network &amp; Host Name*** : Configure network settings and set your system's hostname 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### User Settings</h3>
+
+ ### User Settings
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Root Password</strong>: Set a strong password for the root account</li>
+- ***Root Password*** : Set a strong password for the root account 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>User Creation</strong>: Create a non-root user account (recommended)</li>
-<!-- /wp:list-item --></ul>
+- ***User Creation*** : Create a non-root user account (recommended) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 5: Installation Destination</h2>
+ ## Step 5: Installation Destination
 <!-- /wp:heading -->
 
- <p>Click on "Installation Destination" to configure your disk partitioning:</p>
+ <p>Click on "Installation Destination" to configure your disk partitioning:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Select the disk(s) you want to use for installation</li>
+- Select the disk(s) you want to use for installation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Choose between "Automatic" or "Custom" partitioning</li>
-<!-- /wp:list-item --></ol>
+- Choose between "Automatic" or "Custom" partitioning 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>For most users, "Automatic" is sufficient</li>
+- For most users, "Automatic" is sufficient 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>If you need specific partitioning schemes, select "Custom"</li>
-<!-- /wp:list-item --></ul>
+- If you need specific partitioning schemes, select "Custom" 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>If using "Custom," create the following partitions at minimum:</li>
-<!-- /wp:list-item --></ol>
+- If using "Custom," create the following partitions at minimum: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>/boot (1GB)</li>
+- /boot (1GB) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>/ (root, allocate remaining space)</li>
+- / (root, allocate remaining space) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>swap (typically 1.5x your RAM size, up to 8GB)</li>
-<!-- /wp:list-item --></ul>
+- swap (typically 1.5x your RAM size, up to 8GB) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Click "Done" when finished</li>
-<!-- /wp:list-item --></ol>
+- Click "Done" when finished 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 6: Software Selection</h2>
+ ## Step 6: Software Selection
 <!-- /wp:heading -->
 
- <p>Click on "Software Selection" to choose your desired installation type:</p>
+ <p>Click on "Software Selection" to choose your desired installation type:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Select a base environment (e.g., "Server with GUI" or "Minimal Install")</li>
+- Select a base environment (e.g., "Server with GUI" or "Minimal Install") 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Choose additional software packages if needed</li>
+- Choose additional software packages if needed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click "Done" to confirm your selection</li>
-<!-- /wp:list-item --></ol>
+- Click "Done" to confirm your selection 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 7: Network &amp; Host Name</h2>
+ ## Step 7: Network &amp; Host Name
 <!-- /wp:heading -->
 
- <p>Configure your network settings:</p>
+ <p>Configure your network settings:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Click on "Network &amp; Host Name"</li>
+- Click on "Network &amp; Host Name" 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Set your desired hostname</li>
+- Set your desired hostname 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Toggle the network adapter to "ON" if you want to configure it during installation</li>
+- Toggle the network adapter to "ON" if you want to configure it during installation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Configure IPv4/IPv6 settings as needed</li>
+- Configure IPv4/IPv6 settings as needed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click "Done" to save your settings</li>
-<!-- /wp:list-item --></ol>
+- Click "Done" to save your settings 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 8: Begin Installation</h2>
+ ## Step 8: Begin Installation
 <!-- /wp:heading -->
 
- <p>Once you've configured all necessary options:</p>
+ <p>Once you've configured all necessary options:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Review the Installation Summary screen</li>
+- Review the Installation Summary screen 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click "Begin Installation" to start the process</li>
-<!-- /wp:list-item --></ol>
+- Click "Begin Installation" to start the process 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 9: User Settings</h2>
+ ## Step 9: User Settings
 <!-- /wp:heading -->
 
- <p>While the installation is running:</p>
+ <p>While the installation is running:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Set the root password when prompted</li>
+- Set the root password when prompted 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Create a non-root user account (recommended for daily use)</li>
-<!-- /wp:list-item --></ol>
+- Create a non-root user account (recommended for daily use) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Step 10: Complete Installation</h2>
+ ## Step 10: Complete Installation
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Wait for the installation to complete (this may take several minutes)</li>
+- Wait for the installation to complete (this may take several minutes) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click "Reboot" when prompted</li>
+- Click "Reboot" when prompted 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Remove the installation media before the system restarts</li>
-<!-- /wp:list-item --></ol>
+- Remove the installation media before the system restarts 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Post-Installation Steps</h2>
+ ## Post-Installation Steps
 <!-- /wp:heading -->
 
- <p>After your system reboots:</p>
+ <p>After your system reboots:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Log in using your created user account</li>
+- Log in using your created user account 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Open a terminal and run <code>sudo dnf update</code> to ensure your system is up-to-date</li>
+- Open a terminal and run <code>sudo dnf update</code> to ensure your system is up-to-date 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Install any additional software you need using <code>sudo dnf install &lt;package-name&gt;</code></li>
+- Install any additional software you need using <code>sudo dnf install &lt;package-name&gt;</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Configure your firewall settings using <code>firewall-cmd</code> if necessary</li>
+- Configure your firewall settings using <code>firewall-cmd</code> if necessary 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Set up any additional users or groups as needed</li>
-<!-- /wp:list-item --></ol>
+- Set up any additional users or groups as needed 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Troubleshooting Common Issues</h2>
+ ## Troubleshooting Common Issues
 <!-- /wp:heading -->
 
- <p>Here are some common issues you might encounter during installation and how to resolve them:</p>
+ <p>Here are some common issues you might encounter during installation and how to resolve them:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Boot media not recognized</strong>: Ensure your BIOS/UEFI settings allow booting from USB/DVD and that the installation media is properly created.</li>
+- ***Boot media not recognized*** : Ensure your BIOS/UEFI settings allow booting from USB/DVD and that the installation media is properly created. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Network not detected</strong>: Check your network cable connection or Wi-Fi adapter. You may need to load additional drivers during installation.</li>
+- ***Network not detected*** : Check your network cable connection or Wi-Fi adapter. You may need to load additional drivers during installation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Partitioning errors</strong>: If using custom partitioning, ensure you've allocated enough space for each partition and that you've included all necessary mount points.</li>
+- ***Partitioning errors*** : If using custom partitioning, ensure you've allocated enough space for each partition and that you've included all necessary mount points. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Package installation failures</strong>: This could be due to corrupt installation media. Try re-downloading the ISO and creating a new installation disk.</li>
-<!-- /wp:list-item --></ol>
+- ***Package installation failures*** : This could be due to corrupt installation media. Try re-downloading the ISO and creating a new installation disk. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
- <p>Congratulations! You've successfully installed AlmaLinux 9 on your system. AlmaLinux offers a stable, secure, and free enterprise-grade operating system that's perfect for servers, workstations, and development environments.</p>
+ <p>Congratulations! You've successfully installed AlmaLinux 9 on your system. AlmaLinux offers a stable, secure, and free enterprise-grade operating system that's perfect for servers, workstations, and development environments.
  
 
- <p>Remember to keep your system updated regularly using <code>sudo dnf update</code> and explore the wealth of software available in the AlmaLinux repositories. If you encounter any issues or need community support, don't hesitate to visit the official AlmaLinux forums or documentation.</p>
+ <p>Remember to keep your system updated regularly using <code>sudo dnf update</code> and explore the wealth of software available in the AlmaLinux repositories. If you encounter any issues or need community support, don't hesitate to visit the official AlmaLinux forums or documentation.
  
 
- <p>AlmaLinux 9 provides a solid foundation for your computing needs, whether you're running a web server, developing software, or using it as a daily driver. Enjoy your new AlmaLinux 9 installation!</p>
+ <p>AlmaLinux 9 provides a solid foundation for your computing needs, whether you're running a web server, developing software, or using it as a daily driver. Enjoy your new AlmaLinux 9 installation!
  

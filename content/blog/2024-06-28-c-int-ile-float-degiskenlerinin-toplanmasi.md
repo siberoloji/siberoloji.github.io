@@ -25,7 +25,7 @@ url: /tr/c-int-ile-float-degiskenlerinin-toplanmasi/
 ---
 
 <!-- wp:paragraph -->
-<p>Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.</p>
+<p>Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.
   
 
 <!-- wp:code -->

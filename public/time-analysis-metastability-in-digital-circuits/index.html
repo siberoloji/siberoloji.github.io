@@ -16,7 +16,6 @@ What is Metastability? Metastability refers to the condition in which a digital 
 
 <meta property="og:title" content="Time Analysis: Metastability in Digital Circuits" />
 <meta property="og:description" content="Metastability is a critical phenomenon in digital electronics, particularly in systems that involve asynchronous signals or transitions between different clock domains. Understanding metastability is essential for designing reliable digital circuits, especially when dealing with flip-flops, registers, and field-programmable gate arrays (FPGAs). This blog post will explore the concept of metastability, its causes, implications, and methods for mitigation.
-
 What is Metastability?
     
 Metastability refers to the condition in which a digital electronic system remains in an unstable equilibrium for an indefinite period. In simpler terms, it occurs when a circuit&rsquo;s output does not settle into a stable state of &lsquo;0&rsquo; or &lsquo;1&rsquo; within the required time frame. This state can arise when input signals change too close to the clock edge, violating the setup and hold times of flip-flops." />
@@ -30,7 +29,7 @@ Metastability refers to the condition in which a digital electronic system remai
 What is Metastability? Metastability refers to the condition in which a digital electronic system remains in an unstable equilibrium for an indefinite period. In simpler terms, it occurs when a circuit’s output does not settle into a stable state of ‘0’ or ‘1’ within the required time frame. This state can arise when input signals change too close to the clock edge, violating the setup and hold times of flip-flops.">
   <meta itemprop="datePublished" content="2024-10-08T21:36:23+00:00">
   <meta itemprop="dateModified" content="2024-10-08T21:36:23+00:00">
-  <meta itemprop="wordCount" content="841">
+  <meta itemprop="wordCount" content="859">
   <meta itemprop="keywords" content="Computer Engineering,Digital Logic Design,Time Analysis">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Time Analysis: Metastability in Digital Circuits">
@@ -9659,35 +9658,35 @@ What is Metastability? Metastability refers to the condition in which a digital 
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-metastabilityh3">What is Metastability?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-metastability">What is Metastability?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#causes-of-metastabilityh3">Causes of Metastability
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#causes-of-metastability">Causes of Metastability
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-setup-and-hold-timesh3">Understanding Setup and Hold Times
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-setup-and-hold-times">Understanding Setup and Hold Times
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-metastability-windowh3">The Metastability Window
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-metastability-window">The Metastability Window
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implications-of-metastabilityh3">Implications of Metastability
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implications-of-metastability">Implications of Metastability
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#measuring-metastabilityh3">Measuring Metastability
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#measuring-metastability">Measuring Metastability
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mitigating-metastabilityh3">Mitigating Metastability
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mitigating-metastability">Mitigating Metastability
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh3">Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9721,114 +9720,124 @@ What is Metastability? Metastability refers to the condition in which a digital 
                 </a></div>
         <div class="content">
           <p>Metastability is a critical phenomenon in digital electronics, particularly in systems that involve asynchronous signals or transitions between different clock domains. Understanding metastability is essential for designing reliable digital circuits, especially when dealing with flip-flops, registers, and field-programmable gate arrays (FPGAs). This blog post will explore the concept of metastability, its causes, implications, and methods for mitigation.</p>
-<!-- wp:heading {"level":3} -->
-<h3>What is Metastability?</h3><span class="hx-absolute -hx-mt-20" id="what-is-metastabilityh3"></span>
-    <a href="#what-is-metastabilityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>What is Metastability?<span class="hx-absolute -hx-mt-20" id="what-is-metastability"></span>
+    <a href="#what-is-metastability" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Metastability refers to the condition in which a digital electronic system remains in an unstable equilibrium for an indefinite period. In simpler terms, it occurs when a circuit&rsquo;s output does not settle into a stable state of &lsquo;0&rsquo; or &lsquo;1&rsquo; within the required time frame. This state can arise when input signals change too close to the clock edge, violating the setup and hold times of flip-flops.</p>
 <p>In digital circuits, signals must be within specific voltage or current limits to represent logical states accurately. When a signal falls within a forbidden range—neither high nor low—it may lead to unpredictable behavior, often referred to as a &ldquo;glitch&rdquo; [5][6].</p>
-<!-- wp:heading {"level":3} -->
-<h3>Causes of Metastability</h3><span class="hx-absolute -hx-mt-20" id="causes-of-metastabilityh3"></span>
-    <a href="#causes-of-metastabilityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Causes of Metastability<span class="hx-absolute -hx-mt-20" id="causes-of-metastability"></span>
+    <a href="#causes-of-metastability" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The primary cause of metastability is timing violations related to setup and hold times. Here are some common scenarios that lead to metastable conditions:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Asynchronous Signal Interfacing</strong>: When signals from different clock domains interact without proper synchronization.</li>
+- ***Asynchronous Signal Interfacing*** : When signals from different clock domains interact without proper synchronization. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Clock Skew</strong>: Variations in the timing of clock signals can lead to metastable states if the rise and fall times exceed acceptable limits.</li>
+<ul>
+<li><em><strong>Clock Skew</strong></em> : Variations in the timing of clock signals can lead to metastable states if the rise and fall times exceed acceptable limits.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Simultaneous Transitions</strong>: When multiple inputs transition at nearly the same time, they can push a flip-flop into a metastable state [6].</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Simultaneous Transitions</strong></em> : When multiple inputs transition at nearly the same time, they can push a flip-flop into a metastable state [6].</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Understanding Setup and Hold Times</h3><span class="hx-absolute -hx-mt-20" id="understanding-setup-and-hold-timesh3"></span>
-    <a href="#understanding-setup-and-hold-timesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Understanding Setup and Hold Times<span class="hx-absolute -hx-mt-20" id="understanding-setup-and-hold-times"></span>
+    <a href="#understanding-setup-and-hold-times" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To grasp metastability fully, one must understand setup and hold times:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Setup Time</strong>: The minimum time before the clock edge during which the input signal must remain stable.</li>
+- ***Setup Time*** : The minimum time before the clock edge during which the input signal must remain stable. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Hold Time</strong>: The minimum time after the clock edge during which the input signal must also remain stable.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Hold Time</strong></em> : The minimum time after the clock edge during which the input signal must also remain stable.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>If an input signal transitions during these critical periods, it can lead to metastability. For instance, if a data signal changes state just before or after the clock edge, the flip-flop may enter an uncertain state where its output remains indeterminate for an extended period [6].</p>
-<!-- wp:heading {"level":3} -->
-<h3>The Metastability Window</h3><span class="hx-absolute -hx-mt-20" id="the-metastability-windowh3"></span>
-    <a href="#the-metastability-windowh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>The Metastability Window<span class="hx-absolute -hx-mt-20" id="the-metastability-window"></span>
+    <a href="#the-metastability-window" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The &ldquo;metastability window&rdquo; is defined as the time interval during which an input transition can cause a flip-flop to enter a metastable state. This window is influenced by factors such as:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>The frequency of data transitions.</li>
+- The frequency of data transitions. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>The clock frequency.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>The characteristics of the flip-flop being used.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>To quantify this phenomenon, designers often calculate the mean time between failures (MTBF) due to metastability. A higher MTBF indicates a more robust design capable of minimizing failures caused by metastable events [3][4].</p>
-<!-- wp:heading {"level":3} -->
-<h3>Implications of Metastability</h3><span class="hx-absolute -hx-mt-20" id="implications-of-metastabilityh3"></span>
-    <a href="#implications-of-metastabilityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Implications of Metastability<span class="hx-absolute -hx-mt-20" id="implications-of-metastability"></span>
+    <a href="#implications-of-metastability" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Metastability can have severe implications for digital systems:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Unpredictable Outputs</strong>: The most immediate consequence is that circuits may produce unreliable outputs that do not conform to expected logic levels.</li>
+- ***Unpredictable Outputs*** : The most immediate consequence is that circuits may produce unreliable outputs that do not conform to expected logic levels. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Propagation of Errors</strong>: If one component enters a metastable state, it can propagate errors through subsequent stages in the circuit.</li>
+<ul>
+<li><em><strong>Propagation of Errors</strong></em> : If one component enters a metastable state, it can propagate errors through subsequent stages in the circuit.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>System Failures</strong>: In critical applications such as medical devices or aerospace systems, metastability can lead to catastrophic failures if not adequately managed.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>System Failures</strong></em> : In critical applications such as medical devices or aerospace systems, metastability can lead to catastrophic failures if not adequately managed.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Measuring Metastability</h3><span class="hx-absolute -hx-mt-20" id="measuring-metastabilityh3"></span>
-    <a href="#measuring-metastabilityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Measuring Metastability<span class="hx-absolute -hx-mt-20" id="measuring-metastability"></span>
+    <a href="#measuring-metastability" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To analyze metastability quantitatively, engineers often employ various measurement techniques:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Failure Rate Calculation</strong>: By determining the rate at which metastable events occur and their likelihood of resolution, designers can estimate failure rates.</li>
+- ***Failure Rate Calculation*** : By determining the rate at which metastable events occur and their likelihood of resolution, designers can estimate failure rates. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>MTBF Analysis</strong>: Calculating MTBF involves assessing how often failures due to metastability are expected over time [3][4].</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>MTBF Analysis</strong></em> : Calculating MTBF involves assessing how often failures due to metastability are expected over time [3][4].</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>For example, if a design has a failure rate of 0.001 per year due to metastability, it suggests that on average, one failure will occur every 1,000 years under normal operating conditions.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Mitigating Metastability</h3><span class="hx-absolute -hx-mt-20" id="mitigating-metastabilityh3"></span>
-    <a href="#mitigating-metastabilityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Mitigating Metastability<span class="hx-absolute -hx-mt-20" id="mitigating-metastability"></span>
+    <a href="#mitigating-metastability" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Given its potential risks, several strategies can be employed to mitigate metastability in digital circuits:</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1. Synchronization Register Chains</h4>
+<h4 class="wp-block-heading">1. Synchronization Register Chains 
 <!-- /wp:heading -->
 <p>Using multiple flip-flops in series—known as synchronization register chains—can help resolve metastable states. Each additional flip-flop provides another opportunity for the signal to settle into a stable state before being used by subsequent logic [5][6].</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2. Design Considerations</h4>
+<h4 class="wp-block-heading">2. Design Considerations 
 <!-- /wp:heading -->
 <p>When designing circuits:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Longer Clock Periods</strong>: Increasing clock periods allows more time for signals to stabilize before being sampled.</li>
+- ***Longer Clock Periods*** : Increasing clock periods allows more time for signals to stabilize before being sampled. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Careful Timing Analysis</strong>: Ensuring that setup and hold times are strictly adhered to minimizes the chances of entering a metastable state.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Careful Timing Analysis</strong></em> : Ensuring that setup and hold times are strictly adhered to minimizes the chances of entering a metastable state.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3. Schmitt Triggers</h4>
+<h4 class="wp-block-heading">3. Schmitt Triggers 
 <!-- /wp:heading -->
 <p>In certain applications, Schmitt triggers can be used to provide hysteresis in signal transitions, thereby reducing susceptibility to noise and improving stability during transitions [5].</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">4. Avoiding Asynchronous Inputs</h4>
+<h4 class="wp-block-heading">4. Avoiding Asynchronous Inputs 
 <!-- /wp:heading -->
 <p>Wherever possible, avoid interfacing asynchronous signals with synchronous systems. Instead, use dedicated synchronization mechanisms designed specifically for this purpose.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Conclusion</h3><span class="hx-absolute -hx-mt-20" id="conclusionh3"></span>
-    <a href="#conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Metastability is an inherent challenge in digital circuit design that arises from timing violations and improper signal management. Understanding its causes and implications is crucial for engineers aiming to create reliable systems. By employing effective mitigation strategies like synchronization register chains and careful design considerations, designers can significantly reduce the risks associated with metastable states.</p>
 <p>As technology continues to evolve and systems become increasingly complex, addressing issues related to metastability will remain vital for ensuring robust performance across various applications—from consumer electronics to critical infrastructure systems.</p>
 <p>Citations:<br>[1] <a href="https://www.siue.edu/~gengel/GALSproject/MeasuringMetastability.pdf" target="_blank" rel="noopener">https://www.siue.edu/~gengel/GALSproject/MeasuringMetastability.pdf</a><br>[2] <a href="https://eclipse.umbc.edu/robucci/cmpeRSD/Lectures/Lecture11__Metastability/" target="_blank" rel="noopener">https://eclipse.umbc.edu/robucci/cmpeRSD/Lectures/Lecture11__Metastability/</a><br>[3] <a href="https://cdrdv2-public.intel.com/650346/wp-01082-quartus-ii-metastability.pdf" target="_blank" rel="noopener">https://cdrdv2-public.intel.com/650346/wp-01082-quartus-ii-metastability.pdf</a><br>[4] <a href="https://www.intel.com/content/www/us/en/docs/programmable/683068/18-1/metastability-analysis.html" target="_blank" rel="noopener">https://www.intel.com/content/www/us/en/docs/programmable/683068/18-1/metastability-analysis.html</a><br>[5] <a href="https://en.wikipedia.org/wiki/Metastability_%28electronics%29" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Metastability_(electronics)</a><br>[6] <a href="https://resources.pcb.cadence.com/blog/2022-how-to-avoid-metastability-in-digital-circuits" target="_blank" rel="noopener">https://resources.pcb.cadence.com/blog/2022-how-to-avoid-metastability-in-digital-circuits</a><br>[7] <a href="https://ieeexplore.ieee.org/document/7062767/" target="_blank" rel="noopener">https://ieeexplore.ieee.org/document/7062767/</a><br>[8] <a href="https://www.youtube.com/watch?v=Kx3H21turYc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Kx3H21turYc</a></p>

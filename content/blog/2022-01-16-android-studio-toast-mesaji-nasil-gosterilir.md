@@ -25,7 +25,7 @@ url: /tr/android-studio-toast-mesaji-nasil-gosterilir/
  
 
  
- ## Örnek-1</h2>
+ ## Örnek-1
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -39,7 +39,7 @@ toast.show()</code></pre>
  
 
  
- ## Örnek-2</h2>
+ ## Örnek-2
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -47,7 +47,7 @@ toast.show()</code></pre>
 <!-- /wp:code -->
 
  
- ## Örnek-3</h2>
+ ## Örnek-3
 <!-- /wp:heading -->
 
   Bu örnekte, bir butona basınca sayacı arttırıp ekrana Toast mesajı görüntüleyen kod bulunmaktadır. 
@@ -73,7 +73,7 @@ toast.show()</code></pre>
 <!-- /wp:code -->
 
  
- ## Önemli</h2>
+ ## Önemli
 <!-- /wp:heading -->
 
   Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.xml dosyanızda bir button ve bir textView elemanının önceden tanımlanmış olması gerekiyor.  activity_main.xml  dosyanızın içini aşağıdaki kod ile değiştirebilirsiniz. 

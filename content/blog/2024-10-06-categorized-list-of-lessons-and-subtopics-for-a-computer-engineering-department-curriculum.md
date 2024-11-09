@@ -27,603 +27,603 @@ title: Categorized List Of Lessons And Subtopics For A Computer Engineering Depa
 url: /categorized-list-of-lessons-and-subtopics-for-a-computer-engineering-department-curriculum/
 ---
 
-  Here's a concise overview:</p>
+  Here's a concise overview:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Programming Fundamentals<!-- wp:list {"ordered":true} -->
+- Programming Fundamentals<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to Programming</li>
+- Introduction to Programming 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Data Structures</li>
+- Data Structures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Algorithms</li>
+- Algorithms 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Object-Oriented Programming</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Object-Oriented Programming 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Computer Architecture<!-- wp:list {"ordered":true} -->
+- Computer Architecture<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-logic-design-and-its-subtopics-a-comprehensive-overview/" target="_blank" rel="noopener" title="">Digital Logic Design</a><!-- wp:list {"ordered":true} -->
+- <a href="https://www.siberoloji.com/digital-logic-design-and-its-subtopics-a-comprehensive-overview/" target="_blank" rel="noopener" title="">Digital Logic Design</a><!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/boolean-algebra-and-logic-gates-the-foundation-of-digital-systems/" target="_blank" rel="noopener" title="">Boolean Algebra and Logic Gates</a><!-- wp:list {"ordered":true} -->
+- <a href="https://www.siberoloji.com/boolean-algebra-and-logic-gates-the-foundation-of-digital-systems/" target="_blank" rel="noopener" title="">Boolean Algebra and Logic Gates</a><!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-basic-logic-gates-the-building-blocks-of-digital-circuits/" target="_blank" rel="noopener" title="">Basic logic gates</a> (AND, OR, NOT, NAND, NOR, XOR, XNOR)</li>
+- <a href="https://www.siberoloji.com/understanding-basic-logic-gates-the-building-blocks-of-digital-circuits/" target="_blank" rel="noopener" title="">Basic logic gates</a> (AND, OR, NOT, NAND, NOR, XOR, XNOR) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/boolean-functions-and-expressions-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Boolean functions and expressions</a></li>
+- <a href="https://www.siberoloji.com/boolean-functions-and-expressions-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Boolean functions and expressions</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/boolean-algebra-truth-tables/" target="_blank" rel="noopener" title="">Truth tables</a></li>
+- <a href="https://www.siberoloji.com/boolean-algebra-truth-tables/" target="_blank" rel="noopener" title="">Truth tables</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/karnaugh-maps-simplifying-boolean-expressions-for-efficient-circuit-design/" target="_blank" rel="noopener" title="">Karnaugh maps</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/karnaugh-maps-simplifying-boolean-expressions-for-efficient-circuit-design/" target="_blank" rel="noopener" title="">Karnaugh maps</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Number Systems and Codes<!-- wp:list {"ordered":true} -->
+- Number Systems and Codes<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-binary-octal-and-hexadecimal-systems-the-language-of-computers/" target="_blank" rel="noopener" title="">Binary, octal, and hexadecimal systems</a></li>
+- <a href="https://www.siberoloji.com/understanding-binary-octal-and-hexadecimal-systems-the-language-of-computers/" target="_blank" rel="noopener" title="">Binary, octal, and hexadecimal systems</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/signed-and-unsigned-numbers-understanding-the-basics-of-binary-representation/" target="_blank" rel="noopener" title="">Signed and unsigned numbers</a></li>
+- <a href="https://www.siberoloji.com/signed-and-unsigned-numbers-understanding-the-basics-of-binary-representation/" target="_blank" rel="noopener" title="">Signed and unsigned numbers</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/fixed-point-and-floating-point-representation-understanding-computer-number-systems/" target="_blank" rel="noopener" title="">Fixed-point and floating-point representation</a></li>
+- <a href="https://www.siberoloji.com/fixed-point-and-floating-point-representation-understanding-computer-number-systems/" target="_blank" rel="noopener" title="">Fixed-point and floating-point representation</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/bcd-gray-code-and-other-encoding-schemes-unraveling-the-world-of-digital-data-representation/" target="_blank" rel="noopener" title="">BCD, Gray code, and other encoding schemes</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/bcd-gray-code-and-other-encoding-schemes-unraveling-the-world-of-digital-data-representation/" target="_blank" rel="noopener" title="">BCD, Gray code, and other encoding schemes</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Combinational Logic Circuits<!-- wp:list {"ordered":true} -->
+- Combinational Logic Circuits<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/multiplexers-and-demultiplexers-essential-building-blocks-of-digital-systems/" target="_blank" rel="noopener" title="">Multiplexers and demultiplexers</a></li>
+- <a href="https://www.siberoloji.com/multiplexers-and-demultiplexers-essential-building-blocks-of-digital-systems/" target="_blank" rel="noopener" title="">Multiplexers and demultiplexers</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/combinational-logic-circuits-encoders-and-decoders-the-building-blocks-of-digital-systems/" target="_blank" rel="noopener" title="">Encoders and decoders</a></li>
+- <a href="https://www.siberoloji.com/combinational-logic-circuits-encoders-and-decoders-the-building-blocks-of-digital-systems/" target="_blank" rel="noopener" title="">Encoders and decoders</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-logic-circuits-adders-and-subtractors/" target="_blank" rel="noopener" title="">Adders and subtractors</a></li>
+- <a href="https://www.siberoloji.com/understanding-logic-circuits-adders-and-subtractors/" target="_blank" rel="noopener" title="">Adders and subtractors</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/logic-circuits-comparators-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Comparators</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/logic-circuits-comparators-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Comparators</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sequential Logic Circuits<!-- wp:list {"ordered":true} -->
+- Sequential Logic Circuits<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-flip-flops-the-building-blocks-of-digital-memory/" target="_blank" rel="noopener" title="">Flip-flops</a> (SR, JK, D, T)</li>
+- <a href="https://www.siberoloji.com/understanding-flip-flops-the-building-blocks-of-digital-memory/" target="_blank" rel="noopener" title="">Flip-flops</a> (SR, JK, D, T) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/registers-and-counters-in-digital-electronics-an-in-depth-guide/" target="_blank" rel="noopener" title="">Registers and counters</a></li>
+- <a href="https://www.siberoloji.com/registers-and-counters-in-digital-electronics-an-in-depth-guide/" target="_blank" rel="noopener" title="">Registers and counters</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-shift-registers-essential-components-in-digital-logic/" target="_blank" rel="noopener" title="">Shift registers</a></li>
+- <a href="https://www.siberoloji.com/understanding-shift-registers-essential-components-in-digital-logic/" target="_blank" rel="noopener" title="">Shift registers</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/state-machines-the-backbone-of-sequential-circuits/" target="_blank" rel="noopener" title="">State machines</a> (Mealy and Moore)</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/state-machines-the-backbone-of-sequential-circuits/" target="_blank" rel="noopener" title="">State machines</a> (Mealy and Moore) 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Memory Systems<!-- wp:list {"ordered":true} -->
+- Memory Systems<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-memory-systems-ram-and-rom/" target="_blank" rel="noopener" title="">RAM and ROM</a></li>
+- <a href="https://www.siberoloji.com/understanding-memory-systems-ram-and-rom/" target="_blank" rel="noopener" title="">RAM and ROM</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/cache-memory-the-unsung-hero-of-computer-performance/" target="_blank" rel="noopener" title="">Cache memory</a></li>
+- <a href="https://www.siberoloji.com/cache-memory-the-unsung-hero-of-computer-performance/" target="_blank" rel="noopener" title="">Cache memory</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-memory-systems-the-memory-hierarchy/" target="_blank" rel="noopener" title="">Memory hierarchy</a></li>
+- <a href="https://www.siberoloji.com/understanding-memory-systems-the-memory-hierarchy/" target="_blank" rel="noopener" title="">Memory hierarchy</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/memory-interfacing-the-critical-link-between-processor-and-memory/" target="_blank" rel="noopener" title="">Memory interfacing</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/memory-interfacing-the-critical-link-between-processor-and-memory/" target="_blank" rel="noopener" title="">Memory interfacing</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Programmable Logic Devices<!-- wp:list {"ordered":true} -->
+- Programmable Logic Devices<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-plas-programmable-logic-arrays/" target="_blank" rel="noopener" title="">PLAs</a> (Programmable Logic Arrays)</li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-plas-programmable-logic-arrays/" target="_blank" rel="noopener" title="">PLAs</a> (Programmable Logic Arrays) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/programmable-array-logic-pals-the-building-blocks-of-custom-digital-circuits/" target="_blank" rel="noopener" title="">PALs</a> (Programmable Array Logic)</li>
+- <a href="https://www.siberoloji.com/programmable-array-logic-pals-the-building-blocks-of-custom-digital-circuits/" target="_blank" rel="noopener" title="">PALs</a> (Programmable Array Logic) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-fpgas-field-programmable-gate-arrays/" target="_blank" rel="noopener" title="">FPGAs</a> (Field-Programmable Gate Arrays)</li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-fpgas-field-programmable-gate-arrays/" target="_blank" rel="noopener" title="">FPGAs</a> (Field-Programmable Gate Arrays) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/complex-programmable-logic-devices-cplds-bridging-the-gap-in-programmable-logic/" target="_blank" rel="noopener" title="">CPLDs</a> (Complex Programmable Logic Devices)</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/complex-programmable-logic-devices-cplds-bridging-the-gap-in-programmable-logic/" target="_blank" rel="noopener" title="">CPLDs</a> (Complex Programmable Logic Devices) 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Arithmetic Logic Unit (ALU) Design<!-- wp:list {"ordered":true} -->
+- Arithmetic Logic Unit (ALU) Design<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-basic-alu-operations/" target="_blank" rel="noopener" title="">Basic ALU operations</a></li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-basic-alu-operations/" target="_blank" rel="noopener" title="">Basic ALU operations</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-basic-alu-operations/" target="_blank" rel="noopener" title="">Carry look-ahead adders</a></li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-basic-alu-operations/" target="_blank" rel="noopener" title="">Carry look-ahead adders</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-multiplication-and-division-circuits-in-digital-systems/" target="_blank" rel="noopener" title="">Multiplication and division circuits</a></li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-multiplication-and-division-circuits-in-digital-systems/" target="_blank" rel="noopener" title="">Multiplication and division circuits</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-comprehensive-guide-to-floating-point-arithmetic-units/" target="_blank" rel="noopener" title="">Floating-point arithmetic units</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/a-comprehensive-guide-to-floating-point-arithmetic-units/" target="_blank" rel="noopener" title="">Floating-point arithmetic units</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Digital System Design Methodologies<!-- wp:list {"ordered":true} -->
+- Digital System Design Methodologies<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-system-design-top-down-and-bottom-up-design-approaches/" target="_blank" rel="noopener" title="">Top-down and bottom-up design approaches</a></li>
+- <a href="https://www.siberoloji.com/digital-system-design-top-down-and-bottom-up-design-approaches/" target="_blank" rel="noopener" title="">Top-down and bottom-up design approaches</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-system-design-harnessing-the-power-of-modular-design/" target="_blank" rel="noopener" title="">Modular design</a></li>
+- <a href="https://www.siberoloji.com/digital-system-design-harnessing-the-power-of-modular-design/" target="_blank" rel="noopener" title="">Modular design</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-system-design-design-for-testability/" target="_blank" rel="noopener" title="">Design for testability</a></li>
+- <a href="https://www.siberoloji.com/digital-system-design-design-for-testability/" target="_blank" rel="noopener" title="">Design for testability</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-system-design-navigating-synchronous-and-asynchronous-design-paradigms/" target="_blank" rel="noopener" title="">Synchronous and asynchronous design</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/digital-system-design-navigating-synchronous-and-asynchronous-design-paradigms/" target="_blank" rel="noopener" title="">Synchronous and asynchronous design</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Timing Analysis and Hazards<!-- wp:list {"ordered":true} -->
+- Timing Analysis and Hazards<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/time-analysis-understanding-clock-skew-and-jitter-in-digital-systems/" target="_blank" rel="noopener" title="">Clock skew and jitter</a></li>
+- <a href="https://www.siberoloji.com/time-analysis-understanding-clock-skew-and-jitter-in-digital-systems/" target="_blank" rel="noopener" title="">Clock skew and jitter</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/time-analysis-in-digital-systems-demystifying-setup-and-hold-times/" target="_blank" rel="noopener" title="">Setup and hold times</a></li>
+- <a href="https://www.siberoloji.com/time-analysis-in-digital-systems-demystifying-setup-and-hold-times/" target="_blank" rel="noopener" title="">Setup and hold times</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/time-analysis-understanding-static-and-dynamic-hazards-in-digital-logic-circuits/" target="_blank" rel="noopener" title="">Static and dynamic hazards</a></li>
+- <a href="https://www.siberoloji.com/time-analysis-understanding-static-and-dynamic-hazards-in-digital-logic-circuits/" target="_blank" rel="noopener" title="">Static and dynamic hazards</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/time-analysis-metastability-in-digital-circuits/" target="_blank" rel="noopener" title="">Metastability</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/time-analysis-metastability-in-digital-circuits/" target="_blank" rel="noopener" title="">Metastability</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hardware Description Languages<!-- wp:list {"ordered":true} -->
+- Hardware Description Languages<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/understanding-hardware-description-languages-the-basics-of-vhdl/" target="_blank" rel="noopener" title="">VHDL basics</a></li>
+- <a href="https://www.siberoloji.com/understanding-hardware-description-languages-the-basics-of-vhdl/" target="_blank" rel="noopener" title="">VHDL basics</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/hardware-description-languages-verilog-basics/" target="_blank" rel="noopener" title="">Verilog basics</a></li>
+- <a href="https://www.siberoloji.com/hardware-description-languages-verilog-basics/" target="_blank" rel="noopener" title="">Verilog basics</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/hardware-description-languages-rtl-register-transfer-level-design/" target="_blank" rel="noopener" title="">RTL</a> (Register Transfer Level) design</li>
+- <a href="https://www.siberoloji.com/hardware-description-languages-rtl-register-transfer-level-design/" target="_blank" rel="noopener" title="">RTL</a> (Register Transfer Level) design 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/hardware-description-languages-behavioral-and-structural-modeling/" target="_blank" rel="noopener" title="">Behavioral and structural modeling</a></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- <a href="https://www.siberoloji.com/hardware-description-languages-behavioral-and-structural-modeling/" target="_blank" rel="noopener" title="">Behavioral and structural modeling</a> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Digital Signal Processing Basics<!-- wp:list {"ordered":true} -->
+- Digital Signal Processing Basics<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-signal-processing-basics-sampling-and-quantization/" target="_blank" rel="noopener" title="">Sampling and quantization</a></li>
+- <a href="https://www.siberoloji.com/digital-signal-processing-basics-sampling-and-quantization/" target="_blank" rel="noopener" title="">Sampling and quantization</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/a-d-and-d-a-converters-bridging-the-analog-and-digital-worlds/" target="_blank" rel="noopener" title="">A/D and D/A converters</a></li>
+- <a href="https://www.siberoloji.com/a-d-and-d-a-converters-bridging-the-analog-and-digital-worlds/" target="_blank" rel="noopener" title="">A/D and D/A converters</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.siberoloji.com/digital-signal-processing-basics-digital-filters/" target="_blank" rel="noopener" title="">Digital filters</a></li>
+- <a href="https://www.siberoloji.com/digital-signal-processing-basics-digital-filters/" target="_blank" rel="noopener" title="">Digital filters</a> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>FFT (<a href="https://www.siberoloji.com/fft-fast-fourier-transform-implementation-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Fast Fourier Transform</a>) implementation</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- FFT (<a href="https://www.siberoloji.com/fft-fast-fourier-transform-implementation-a-comprehensive-guide/" target="_blank" rel="noopener" title="">Fast Fourier Transform</a>) implementation 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Interfacing and Communication Protocols<!-- wp:list {"ordered":true} -->
+- Interfacing and Communication Protocols<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Serial and parallel communication</li>
+- Serial and parallel communication 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>I2C, SPI, UART protocols</li>
+- I2C, SPI, UART protocols 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bus architectures (PCI, USB)</li>
+- Bus architectures (PCI, USB) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Interrupt handling</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Interrupt handling 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Power Consumption and Management<!-- wp:list {"ordered":true} -->
+- Power Consumption and Management<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Static and dynamic power dissipation</li>
+- Static and dynamic power dissipation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Low-power design techniques</li>
+- Low-power design techniques 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Clock gating and power gating</li>
+- Clock gating and power gating 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Voltage scaling</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Voltage scaling 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Testing and Debugging Techniques<!-- wp:list {"ordered":true} -->
+- Testing and Debugging Techniques<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Boundary scan and JTAG</li>
+- Boundary scan and JTAG 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Built-in self-test (BIST)</li>
+- Built-in self-test (BIST) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Fault models and fault simulation</li>
+- Fault models and fault simulation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Automated test pattern generation (ATPG)</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Automated test pattern generation (ATPG) 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quantum Computing Basics<!-- wp:list {"ordered":true} -->
+- Quantum Computing Basics<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Qubits and quantum gates</li>
+- Qubits and quantum gates 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quantum circuits</li>
+- Quantum circuits 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quantum algorithms (e.g., Grover's, Shor's)</li>
+- Quantum algorithms (e.g., Grover's, Shor's) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quantum error correction</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Quantum error correction 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Asynchronous Logic Design<!-- wp:list {"ordered":true} -->
+- Asynchronous Logic Design<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Handshaking protocols</li>
+- Handshaking protocols 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Delay-insensitive circuits</li>
+- Delay-insensitive circuits 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Asynchronous state machines</li>
+- Asynchronous state machines 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Petri nets for asynchronous systems</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Petri nets for asynchronous systems 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>High-Level Synthesis<!-- wp:list {"ordered":true} -->
+- High-Level Synthesis<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Behavioral synthesis</li>
+- Behavioral synthesis 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Scheduling and allocation</li>
+- Scheduling and allocation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Resource sharing</li>
+- Resource sharing 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Pipelining and parallelism</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Pipelining and parallelism 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reliability and Fault Tolerance<!-- wp:list {"ordered":true} -->
+- Reliability and Fault Tolerance<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Redundancy techniques</li>
+- Redundancy techniques 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Error detection and correction codes</li>
+- Error detection and correction codes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Graceful degradation</li>
+- Graceful degradation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reliability analysis and prediction</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Reliability analysis and prediction 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Emerging Technologies in Digital Design<!-- wp:list {"ordered":true} -->
+- Emerging Technologies in Digital Design<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Neuromorphic computing</li>
+- Neuromorphic computing 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Memristors and resistive computing</li>
+- Memristors and resistive computing 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Spintronics</li>
+- Spintronics 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>DNA computing</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- DNA computing 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Security in Digital Systems<!-- wp:list {"ordered":true} -->
+- Security in Digital Systems<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Hardware trojans</li>
+- Hardware trojans 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Side-channel attacks</li>
+- Side-channel attacks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Physical unclonable functions (PUFs)</li>
+- Physical unclonable functions (PUFs) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Secure boot and trusted execution environments</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Secure boot and trusted execution environments 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Computer Organization</li>
+- Computer Organization 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Assembly Language Programming</li>
+- Assembly Language Programming 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Microprocessors and Microcontrollers</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Microprocessors and Microcontrollers 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Software Engineering<!-- wp:list {"ordered":true} -->
+- Software Engineering<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Software Development Lifecycle</li>
+- Software Development Lifecycle 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Design Patterns</li>
+- Design Patterns 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Software Testing and Quality Assurance</li>
+- Software Testing and Quality Assurance 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Agile Methodologies</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Agile Methodologies 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Networking<!-- wp:list {"ordered":true} -->
+- Networking<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Computer Networks</li>
+- Computer Networks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Network Protocols</li>
+- Network Protocols 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Network Security</li>
+- Network Security 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Wireless Communications</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Wireless Communications 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Database Systems<!-- wp:list {"ordered":true} -->
+- Database Systems<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Database Design</li>
+- Database Design 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>SQL and Relational Databases</li>
+- SQL and Relational Databases 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>NoSQL Databases</li>
+- NoSQL Databases 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Data Warehousing and Mining</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Data Warehousing and Mining 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Operating Systems<!-- wp:list {"ordered":true} -->
+- Operating Systems<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>OS Principles</li>
+- OS Principles 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Process Management</li>
+- Process Management 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Memory Management</li>
+- Memory Management 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>File Systems</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- File Systems 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Web Development<!-- wp:list {"ordered":true} -->
+- Web Development<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Front-end Technologies (HTML, CSS, JavaScript)</li>
+- Front-end Technologies (HTML, CSS, JavaScript) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Back-end Development</li>
+- Back-end Development 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Web Frameworks</li>
+- Web Frameworks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>RESTful APIs</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- RESTful APIs 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Artificial Intelligence and Machine Learning<!-- wp:list {"ordered":true} -->
+- Artificial Intelligence and Machine Learning<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>AI Fundamentals</li>
+- AI Fundamentals 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Machine Learning Algorithms</li>
+- Machine Learning Algorithms 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Neural Networks and Deep Learning</li>
+- Neural Networks and Deep Learning 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Natural Language Processing</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Natural Language Processing 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Computer Graphics and Visualization<!-- wp:list {"ordered":true} -->
+- Computer Graphics and Visualization<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>2D and 3D Graphics</li>
+- 2D and 3D Graphics 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Computer Vision</li>
+- Computer Vision 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Virtual and Augmented Reality</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Virtual and Augmented Reality 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cybersecurity<!-- wp:list {"ordered":true} -->
+- Cybersecurity<!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Cryptography</li>
+- Cryptography 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ethical Hacking</li>
+- Ethical Hacking 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Information Security</li>
+- Information Security 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cyber Forensics</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ol>
+- Cyber Forensics 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->

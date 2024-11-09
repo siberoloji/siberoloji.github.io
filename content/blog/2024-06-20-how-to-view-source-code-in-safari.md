@@ -36,14 +36,14 @@ url: /how-to-view-source-code-in-safari/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Open your Safari browser and navigate to the web page you wish to view.</li>
+ <!-- wp:list-item -->
+- Open your Safari browser and navigate to the web page you wish to view. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>From the top menu bar, select <strong>Develop > Show Page Source</strong>. You can also press <strong>Option+Command+U </strong>on your keyboard.</li>
-<!-- /wp:list-item --></ul>
+- From the top menu bar, select ***Develop > Show Page Source*** . You can also press ***Option+Command+U *** on your keyboard. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  If the Develop menu is not visible, go to <strong>Preferences > Advanced</strong>, and choose the <strong>Show Develop menu in menu bar</strong>. 
+  If the Develop menu is not visible, go to ***Preferences > Advanced*** , and choose the ***Show Develop menu in menu bar*** . 
  

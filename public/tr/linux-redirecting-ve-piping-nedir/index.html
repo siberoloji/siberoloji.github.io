@@ -27,7 +27,7 @@ Linux komut satırında çalışırken, her komutun kendisine girdi olarak veril
 Linux komut satırında çalışırken, her komutun kendisine girdi olarak verilen ve çıktı olarak üretilen verilerle ilgili 3 hali bulunur. Programa bir girdi verdiğinizde bu veri işlenir ve ortaya bir sonuç çıkar. Bu sonuç, arzu edilen çıktı olabileceği gibi bir hata mesajı da olabilir. Hata mesajı da aslında bir çıktı olmasına rağmen, özel bir durum olduğu için farklı ele alınmaktadır.">
   <meta itemprop="datePublished" content="2016-05-10T17:42:00+00:00">
   <meta itemprop="dateModified" content="2016-05-10T17:42:00+00:00">
-  <meta itemprop="wordCount" content="1398">
+  <meta itemprop="wordCount" content="1403">
   <meta itemprop="keywords" content="Linux Nasıl">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Linux Redirecting ve Piping Nedir?">
@@ -9656,23 +9656,23 @@ Linux komut satırında çalışırken, her komutun kendisine girdi olarak veril
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#yeni-dosyaya-y%c3%b6nlendirmeh3">Yeni Dosyaya Yönlendirme
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#yeni-dosyaya-y%c3%b6nlendirme">Yeni Dosyaya Yönlendirme
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mevcut-bir-dosyaya-y%c3%b6nlendirmeh3">Mevcut Bir Dosyaya Yönlendirme
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mevcut-bir-dosyaya-y%c3%b6nlendirme">Mevcut Bir Dosyaya Yönlendirme
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mevcut-dosyadan-veri-almah3">Mevcut Dosyadan Veri Alma
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#mevcut-dosyadan-veri-alma">Mevcut Dosyadan Veri Alma
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hatalar%c4%b1-y%c3%b6nlendirme-stderr2h3">Hataları Yönlendirme STDERR(2)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hatalar%c4%b1-y%c3%b6nlendirme-stderr2">Hataları Yönlendirme STDERR(2)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pipingh3">Piping
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#piping">Piping
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9708,20 +9708,25 @@ Linux komut satırında çalışırken, her komutun kendisine girdi olarak veril
           <p>Metin filtreleri ve Düzenli ifadeleri bu <a href="https://www.siberoloji.com/nasil/linux-ile-metin-filtreleri-head-tail-sort-nl-wc-uniq-sed-tac-cut/" target="_blank" rel="noreferrer noopener">yazımızda</a> açıklamıştık. Şimdi ise bunları kullanarak çıktıları yönlendirme ve bu çıktıları başka işlemlere girdi olarak kullanmayı görelim. Bir dosyadaki istediğimiz satırları filtreler yardımıyla tespit ettikten sonra çıktıların varsayılan olarak ekrana yazdırılmakta olduğunu biliyoruz. Yönlendirme (Redirecting ve Piping) kullanarak bu sonuçları istediğimiz başka bir dosyaya veya başka bir komuta girdi olarak yönlendirmemiz mümkündür.</p>
 <p>Linux komut satırında çalışırken, her komutun kendisine girdi olarak verilen ve çıktı olarak üretilen verilerle ilgili 3 hali bulunur. Programa bir girdi verdiğinizde bu veri işlenir ve ortaya bir sonuç çıkar. Bu sonuç, arzu edilen çıktı olabileceği gibi bir hata mesajı da olabilir. Hata mesajı da aslında bir çıktı olmasına rağmen, özel bir durum olduğu için farklı ele alınmaktadır.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>STDIN (0) - Standart girdi verisi (Programa işlemesi için tanıtılan veriler)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>STDOUT (1) - Standart çıktı verisi (Sonuç verisidir. Varsayılan olarak ekrana yazılır.)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>STDERR (2) - Standart hata durumu (Hata verisidir. Varsayılan olarak ekrana yazılır.)</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Program tarafından üretilen sonuçları, bir dosya veya programa yönlendirerek kullanma işlemine yönlendirme denilmektedir.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Yeni Dosyaya Yönlendirme</h3><span class="hx-absolute -hx-mt-20" id="yeni-dosyaya-yönlendirmeh3"></span>
-    <a href="#yeni-dosyaya-y%c3%b6nlendirmeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Yeni Dosyaya Yönlendirme<span class="hx-absolute -hx-mt-20" id="yeni-dosyaya-yönlendirme"></span>
+    <a href="#yeni-dosyaya-y%c3%b6nlendirme" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Normalde varsayılan olarak ekrana yazdırılan STDOUT yani çıktı, sonradan kullanılmak üzere bir dosya içerisine de kaydedilebilir. Bunu yapabilmek için &gt; işareti ile bir dosya ismi tanımladığınızda sonuç bu dosya içerisine kaydedilir. Dosyanın sistemde olmaması durumunda otomatik olarak oluşturulur. Bu yönlendirme işareti (&gt;) kullanıldığında belirtilen hedef dosya sistemde önceden varsa içeriği temizlenir ve üretilen çıktı dosyaya yazdırılır.</p>
 <p>Bunu bir örnek ile açıklayalım. Aşağıdaki örnekte, ev klasöründe redirect isimli bir klasör oluşturulacak ve içerisine <em>metin.txt resim.jpg belge.doc video.mpeg</em> dosyaları oluşturulacaktır. Örneklerde bu dosyaları kullanacağız.</p>
 <!-- wp:code -->
@@ -9742,20 +9747,19 @@ resim.jpg
 video.mpeg</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Açıklamalar</h4>
+<h4 class="wp-block-heading">Açıklamalar 
 <!-- /wp:heading -->
-<p><strong>1.Satır</strong>: cd komutu ile her neredeysek oradan Ev Klasörüne gidildi.</p>
-<p><strong>2.Satır</strong>: mkdir redirect komutu ile redirect isimli klasör oluşturuldu.</p>
-<p><strong>4.Satır</strong>: 4 adet yeni dosya oluşturuldu.</p>
-<p><strong>7.Satır</strong>: ls komutu STDOUT çıktısı rapor.txt dosyasının içerisine yönlendirildi. <strong>ls &gt; rapor.txt</strong></p>
+<p><em><strong>1.Satır</strong></em> : cd komutu ile her neredeysek oradan Ev Klasörüne gidildi.</p>
+<p><em><strong>2.Satır</strong></em> : mkdir redirect komutu ile redirect isimli klasör oluşturuldu.</p>
+<p><em><strong>4.Satır</strong></em> : 4 adet yeni dosya oluşturuldu.</p>
+<p><em><strong>7.Satır</strong></em> : ls komutu STDOUT çıktısı rapor.txt dosyasının içerisine yönlendirildi. <em><strong>ls &gt; rapor.txt</strong></em></p>
 <p>Örnekte görüldüğü gibi, ls komutunun ekrana yazdırdığı sonuç tek satır olsa da, rapor.txt dosyasında her bir dosya adı ayrı satırlara yazılmıştır. Buradan da anlaşılacağı gibi sonuçları istediğimiz formata çevirip o şekilde dosyaya yazdırabiliriz. En verimli kullanım her bir sonucun bir satıra yazdırılmasıdır.</p>
-<p>Dikkatli kullanıcıların fark etmiş olabileceği bir diğer konu da, başlangıçta olmayan rapor.txt dosyasının da sonuçların yazıldığı rapor.txt dosyasının içeriğinde bulunmasıdır. Oysa komutu verdiğimizde (ls &gt; rapor.txt) klasörde bu dosya yoktu. Dosya içeriğinin <strong>belge.doc </strong><strong>metin.txt resim.jpg </strong><strong>video.mpeg</strong> isimlerine sahip olması beklenirken <strong>belge.doc </strong><strong>metin.txt rapor.txt resim.jpg </strong><strong>video.mpeg</strong> halinde olduğunu görebilirsiniz.</p>
+<p>Dikkatli kullanıcıların fark etmiş olabileceği bir diğer konu da, başlangıçta olmayan rapor.txt dosyasının da sonuçların yazıldığı rapor.txt dosyasının içeriğinde bulunmasıdır. Oysa komutu verdiğimizde (ls &gt; rapor.txt) klasörde bu dosya yoktu. Dosya içeriğinin <em><strong>belge.doc </strong></em> <em><strong>metin.txt resim.jpg </strong></em> <em><strong>video.mpeg</strong></em>  isimlerine sahip olması beklenirken <em><strong>belge.doc </strong></em> <em><strong>metin.txt rapor.txt resim.jpg </strong></em> <em><strong>video.mpeg</strong></em>  halinde olduğunu görebilirsiniz.</p>
 <p>Bu durumu şöyle açıklayalım. ls &gt; rapor.txt komutu, yazım biçimiyle &ldquo;listemeyi  yap, rapor.txt dosyasına yönledir&rdquo; sırasıyla çalışacak algısı meydana getirir. Ancak gerçekte Shell akıllı davranır ve komutun hatasız çalışması için gerekli şartları hazırlar. Önce klasör içerine rapor.txt dosyasını oluşturur ve klasörün bu haliyle durumunu ls komut çıktısı olarak rapor.txt dosyasının içerisine yazdırır.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Mevcut Bir Dosyaya Yönlendirme</h3><span class="hx-absolute -hx-mt-20" id="mevcut-bir-dosyaya-yönlendirmeh3"></span>
-    <a href="#mevcut-bir-dosyaya-y%c3%b6nlendirmeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Mevcut Bir Dosyaya Yönlendirme<span class="hx-absolute -hx-mt-20" id="mevcut-bir-dosyaya-yönlendirme"></span>
+    <a href="#mevcut-bir-dosyaya-y%c3%b6nlendirme" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Bir komut çıktısını &gt; işaretiyle yönlendirdiğimizde, hedef dosyanın içeriğinin silindiğini belirtmiştik. Çıktının, hedef dosyanın içeriği silinmeden, var olan bir dosyanın sonuna ilave edilmesi için &gt;&gt; yönlendirme işaretini kullanabiliriz.</p>
-<p>Aynı örnek klasörle devam edelim. Öncelikle echo komutu kullanarak &gt; yönlendirmesiyle <strong>metin.txt</strong> dosyamızın içerisine bir ifade ekleyelim. Sonra cat komutu ile dosya içeriğini görüntüleyelim ve sonucu &gt;&gt; yönlendirmesi kullanarak <strong>rapor.txt</strong> dosyamızın içeriğini silmeden en altına ilave edelim.</p>
+<p>Aynı örnek klasörle devam edelim. Öncelikle echo komutu kullanarak &gt; yönlendirmesiyle <em><strong>metin.txt</strong></em>  dosyamızın içerisine bir ifade ekleyelim. Sonra cat komutu ile dosya içeriğini görüntüleyelim ve sonucu &gt;&gt; yönlendirmesi kullanarak <em><strong>rapor.txt</strong></em>  dosyamızın içeriğini silmeden en altına ilave edelim.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">~/redirect $ echo ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin &gt;metin.txt
 ~/redirect $ cat metin.txt
@@ -9770,11 +9774,10 @@ video.mpeg
 ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin
 ~/redirect $</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Mevcut Dosyadan Veri Alma</h3><span class="hx-absolute -hx-mt-20" id="mevcut-dosyadan-veri-almah3"></span>
-    <a href="#mevcut-dosyadan-veri-almah3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Mevcut Dosyadan Veri Alma<span class="hx-absolute -hx-mt-20" id="mevcut-dosyadan-veri-alma"></span>
+    <a href="#mevcut-dosyadan-veri-alma" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Bir komutun çıktısını dosyaya yönlendirmenin sonrasında, şimdi de bir dosyadan veriyi girdi olarak almayı açıklayalım. Bunun için &lt; işaretini kullanıyoruz. &lt; işaretiyle belirtilen adresten alınan veri, komuta STDIN yani girdi olarak gönderilir.</p>
-<p>Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (<strong>&lt;</strong> ile veri almasını) ve harfleri sayması (-<strong>m</strong> ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (<strong>&gt;&gt;</strong> ile) söylenmiştir.</p>
+<p>Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (<em><strong>&lt;</strong></em>  ile veri almasını) ve harfleri sayması (-<em><strong>m</strong></em>  ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (<em><strong>&gt;&gt;</strong></em>  ile) söylenmiştir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">~/redirect $ wc -m &lt; metin.txt &gt;&gt;rapor.txt
 ~/redirect $ cat rapor.txt
@@ -9786,12 +9789,11 @@ video.mpeg
 ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin
 70</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Hataları Yönlendirme STDERR(2)</h3><span class="hx-absolute -hx-mt-20" id="hataları-yönlendirme-stderr2h3"></span>
-    <a href="#hatalar%c4%b1-y%c3%b6nlendirme-stderr2h3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Hataları Yönlendirme STDERR(2)<span class="hx-absolute -hx-mt-20" id="hataları-yönlendirme-stderr2"></span>
+    <a href="#hatalar%c4%b1-y%c3%b6nlendirme-stderr2" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Komutlar için girdi (STDIN(0)) ve normal çıktıları (STDOUT(1)) yönlendirmeden sonra, şimdi de hata kodlarını (STDERR(2)) yönlendirmeye bakalım. Dikkat ederseniz, STDERR hata mesajlarının yanında 2 rakamı bulunmaktadır. Bu rakamın kullanımını örneklerde göreceğiz.</p>
 <p>Bir yönlendirme işaretinin önüne 2&gt;&gt; rakamını koyarsanız, o ifade &ldquo;hatayı yönlendir&rdquo; anlamına gelir. Boş bırakılması, varsayılan olarak aslında önünde 1 olduğu anlamına gelmektedir.</p>
-<p>Aşağıdaki örnekte, redirect/ klasöründeki <strong>belge.doc</strong> ve <strong>met.txt</strong> dosyalarının detayları listelenmek istenmekte ancak iki dosyadan var olan hakkında bilgi verilirken diğer dosya var olmadığı içn hata mesajı üretilmektedir. Üretilen hatayı ayrı bir dosyaya yönlendirmek için 2&gt;hatalar.txt ifadesi kullanılmakta ve hata kodu (STDERR(2)) ayrı bir dosyaya kaydedilmektedir.</p>
+<p>Aşağıdaki örnekte, redirect/ klasöründeki <em><strong>belge.doc</strong></em>  ve <em><strong>met.txt</strong></em>  dosyalarının detayları listelenmek istenmekte ancak iki dosyadan var olan hakkında bilgi verilirken diğer dosya var olmadığı içn hata mesajı üretilmektedir. Üretilen hatayı ayrı bir dosyaya yönlendirmek için 2&gt;hatalar.txt ifadesi kullanılmakta ve hata kodu (STDERR(2)) ayrı bir dosyaya kaydedilmektedir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">~/redirect $ ls -l belge.doc met.txt
 ls: cannot access met.txt: No such file or directory
@@ -9803,8 +9805,8 @@ ls: cannot access met.txt: No such file or directory</code></pre>
 <!-- /wp:code -->
 <p>Yukarıdaki örnekte 2&gt; yönlendirmesiyle komutun sadece hatalı kısmı hatalar.txt dosyasına kaydedilmektedir. Bazı durumlarda, hem standart çıktının (STDOUT(1)) hem de hata kodunun aynı dosyaya kaydedilmesini isteyebiliriz. Bu durumda izlenmesi gereken yol şöyle özetlenebilir. STDERR çıktısını da STDOUT çıktısına yönlendir ve tüm yönlendirmeleri bir dosyaya kaydet.</p>
 <p>Aşağıdaki örnekte, 2&gt;&amp;1 yönlendirmesi kullanılmıştır. Bu kullanımda, 2&gt; hata çıktısı &amp;1 kullanılarak STDOUT çıktısına yönlendirilmiş ve toplam sonuç, sonuc.txt dosyasına kaydedilmiştir. &amp;1 kullanımı, bir veri akışına ilave veri eklemekte kullanılır. DİKKAT: &amp; işaretini koymadığınız takdirde, hata kodu 1 isimli dosyaya yönlendirilir.</p>
-<p><strong>ls -l belge.doc met.txt&gt;sonuc.txt</strong> komutunun sonucunda sadece hatasız olarak gerçekleşen kısım sonuc.txt dosyasına yazılır.</p>
-<p><strong>ls -l belge.doc met.txt&gt;sonuc.txt 2&gt;&amp;1</strong> komutu sayesinde hata kodu ve hatasız kısım birleştirilir ve sonuc.txt dosyasına yazılır.</p>
+<p><em><strong>ls -l belge.doc met.txt&gt;sonuc.txt</strong></em>  komutunun sonucunda sadece hatasız olarak gerçekleşen kısım sonuc.txt dosyasına yazılır.</p>
+<p><em><strong>ls -l belge.doc met.txt&gt;sonuc.txt 2&gt;&amp;1</strong></em>  komutu sayesinde hata kodu ve hatasız kısım birleştirilir ve sonuc.txt dosyasına yazılır.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">~/redirect $ ls -l belge.doc met.txt
 ls: cannot access met.txt: No such file or directory
@@ -9819,12 +9821,11 @@ ls: cannot access met.txt: No such file or directory
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
 ~/redirect $</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Piping</h3><span class="hx-absolute -hx-mt-20" id="pipingh3"></span>
-    <a href="#pipingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Türkçe karşılığı ile tam anlamını bulmayan piping işlemi, bir programın çıktısını<strong> dosya yerine başka bir programa yönlendirme</strong> ile ilgilidir. Bunun yapılabilmesi için | işareti kullanılır. Bu işareti klavyelerinizde Sol taraftaki Shift tuşunun yanında bulunan &lt;&gt; işaretleri ile aynı tuş üzerinde bulabilirsiniz. AltGr tuşu ile birlikte &lt;&gt; tuşuna bastığınızda ekrana yazılır. Bu | işaretin tam olarak yaptığı, sol taraftaki programın çıktısını sağ taraftaki programa girdi olarak aktarmaktır.</p>
+<h3>Piping<span class="hx-absolute -hx-mt-20" id="piping"></span>
+    <a href="#piping" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Türkçe karşılığı ile tam anlamını bulmayan piping işlemi, bir programın çıktısını*** dosya yerine başka bir programa yönlendirme***  ile ilgilidir. Bunun yapılabilmesi için | işareti kullanılır. Bu işareti klavyelerinizde Sol taraftaki Shift tuşunun yanında bulunan &lt;&gt; işaretleri ile aynı tuş üzerinde bulabilirsiniz. AltGr tuşu ile birlikte &lt;&gt; tuşuna bastığınızda ekrana yazılır. Bu | işaretin tam olarak yaptığı, sol taraftaki programın çıktısını sağ taraftaki programa girdi olarak aktarmaktır.</p>
 <p>Aşağıdaki örneklerde, önceden yaptığımız alıştırmalarda kullanılan klasör kullanılmaya devam ediliyor.</p>
-<p><strong>Örnek-1</strong></p>
+<p><em><strong>Örnek-1</strong></em></p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">~/redirect $ ls 
 belge.doc hatalar.txt metin.txt rapor.txt resim.jpg sonuc.txt video.mpeg
@@ -9833,13 +9834,13 @@ belge.doc
 hatalar.txt
 metin.txt</code></pre>
 <!-- /wp:code -->
-<p><strong>Örnek-2</strong></p>
+<p><em><strong>Örnek-2</strong></em></p>
 <p>Buradaki örnekte piping 2 defa kullanılmıştır. ls komut çıktısı head komutuna ve onun çıktısı ise tail komutuna yönlendirilmiştir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ls | head -3 | tail -1
 metin.txt</code></pre>
 <!-- /wp:code -->
-<p><strong>TAVSİYE</strong>:Bu yönlendirme teknikleri kullanılırken en sık karşılaşılan hatalardan birisi de tüm komutu bir seferde yazmaya çalışmaktır. Sonuçta elde edilen çıktı, arzu edilen sonuç olmadığında, nerede hata yapıldığı ile uzun zaman geçirilmektedir. Bu tür zaman kaybını önlemek için, inşa edeceğiniz yönlendirme ve filtreleri adım adım deneyerek artırmak suretiyle son haline doğru gider ve her aşamada çıktı kontrolü yaparsanız, yavaş ilerlemiş olsanız da hatalar için geri dönmeyle uğraşmazsınız.</p>
+<p><em><strong>TAVSİYE</strong></em> :Bu yönlendirme teknikleri kullanılırken en sık karşılaşılan hatalardan birisi de tüm komutu bir seferde yazmaya çalışmaktır. Sonuçta elde edilen çıktı, arzu edilen sonuç olmadığında, nerede hata yapıldığı ile uzun zaman geçirilmektedir. Bu tür zaman kaybını önlemek için, inşa edeceğiniz yönlendirme ve filtreleri adım adım deneyerek artırmak suretiyle son haline doğru gider ve her aşamada çıktı kontrolü yaparsanız, yavaş ilerlemiş olsanız da hatalar için geri dönmeyle uğraşmazsınız.</p>
 <p>Piping işlemini dosya yönlendirme ile birlikte de kullanabilirsiniz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ls | head -3 | tail -1 &gt; piping.txt
@@ -9847,7 +9848,7 @@ cat piping.txt
 metin.txt
 </code></pre>
 <!-- /wp:code -->
-<p><strong>Örnek-3</strong></p>
+<p><em><strong>Örnek-3</strong></em></p>
 <p>Bu örnekte, Ev klasörümüzde bulunan ve grup yetkilerine göre (read-only) özellikteki dosya ve klasörleri listeletiyoruz. ls komutunun çıktısını grep komutuna girdi olarak yönlendiriyoruz. grep komutunda oluşturduğumuz düzenli ifade ile filtre uygulayarak sonucu ekrana yazdırıyoruz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ls -l ~ | grep '^....r'

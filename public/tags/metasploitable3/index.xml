@@ -24,103 +24,159 @@
       <description>
         
         
-        &lt;p&gt;Geçtiğimiz günlerde Metasploitable3 yayınlandı. Pentest eğitimlerinde kullanılan ve özellikle Metasploit Framework scriptleri için geliştirilen hedef sistem, yeni bir anlayışla hazırlanmış durumda. Önceden olduğu gibi sabit bir .iso kalıbı olarak dağıtılmıyor.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Sürekli yeni güncellemelerin yerleştirleceğş bir container yapıyla sunuluyor. Sistem Windows 8 SR2 Server üzerine inşa edilmiş durumda. Metasploitable3 hedef sistemini bilgisayarınıza indirip kurmak için bir takım gereklilikler bulunuyor. Bunların kurulumunu ve Linux bilgisayarlarınızda derlemenin nasıl yapıldığını yazının devamında adım adım anlattık. Ayrıca yazının sonunda bu anlatımların video playlistini de bulabilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Metasploitable3, Github adresinden dağıtılıyor. &lt;a href=&#34;https://github.com/rapid7/metasploitable3&#34;&gt;Metasploitable3 Github Sayfası&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Metasploitable3 üzerinde bulunan zafiyetler Aşağıdaki listede şu an için mevcut bulunan zafiyetleri görebilirsiniz. Projenin Wiki sayfasına zaman içinde yeni servisler ve zafiyetler yükleneceği belirtiliyor.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Geçtiğimiz günlerde Metasploitable3 yayınlandı. Pentest eğitimlerinde kullanılan ve özellikle Metasploit Framework scriptleri için geliştirilen hedef sistem, yeni bir anlayışla hazırlanmış durumda. Önceden olduğu gibi sabit bir .iso kalıbı olarak dağıtılmıyor.&lt;/p&gt;
+&lt;p&gt;Sürekli yeni güncellemelerin yerleştirleceğş bir container yapıyla sunuluyor. Sistem Windows 8 SR2 Server üzerine inşa edilmiş durumda. Metasploitable3 hedef sistemini bilgisayarınıza indirip kurmak için bir takım gereklilikler bulunuyor. Bunların kurulumunu ve Linux bilgisayarlarınızda derlemenin nasıl yapıldığını yazının devamında adım adım anlattık. Ayrıca yazının sonunda bu anlatımların video playlistini de bulabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Metasploitable3, Github adresinden dağıtılıyor. &lt;a href=&#34;https://github.com/rapid7/metasploitable3&#34;&gt;Metasploitable3 Github Sayfası&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Metasploitable3 üzerinde bulunan zafiyetler Aşağıdaki listede şu an için mevcut bulunan zafiyetleri görebilirsiniz. Projenin Wiki sayfasına zaman içinde yeni servisler ve zafiyetler yükleneceği belirtiliyor.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;GlassFish&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Apache Struts&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Tomcat&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Jenkins&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;IIS FTP&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;IIS HTTP&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;psexec&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;SSH&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;WinRM&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;chinese caidao&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;ManageEngine&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;ElasticSearch&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Apache Axis2&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;WebDAV&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;SNMP&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;MySQL&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;JMX&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;WordPress&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;SMB&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Remote Desktop&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;PHPMyAdmin&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;kurulum-için-gereklililer&#34;&gt;Kurulum için gereklililer&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;kurulum-için-gereklililer&#34;&gt;Kurulum için gereklililer
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Metasploitable3 Git Clone&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Packer&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Vagrant&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Vagrant Reload Plugin&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Virtualbox&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Vagrant Up&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;İnternet Bağlantısı&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;1-adım-metasploitable3-git-clone&#34;&gt;1. Adım: Metasploitable3 git clone&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;1-adım-metasploitable3-git-clone&#34;&gt;1. Adım: Metasploitable3 git clone
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Aşağıdaki komut ile git deposunu bilgisayarınıza klonlayın. git kullanmasını bilenler zaten ne yapacaklarını anlamıştır. Bilmeyenler için adım adım anlatalım. Sisteminizde git kurulu değilse aşağıdaki adımları takip ederek kendinize Ev klasörü içerisinde bir git klasörü oluşturun. Sisteminizde kurulu değilse git programını kurun. Bu sayede github projelerini bilgisayarınıza indirip kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Aşağıdaki komut ile git deposunu bilgisayarınıza klonlayın. git kullanmasını bilenler zaten ne yapacaklarını anlamıştır. Bilmeyenler için adım adım anlatalım. Sisteminizde git kurulu değilse aşağıdaki adımları takip ederek kendinize Ev klasörü içerisinde bir git klasörü oluşturun. Sisteminizde kurulu değilse git programını kurun. Bu sayede github projelerini bilgisayarınıza indirip kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt install git
 cd
@@ -129,28 +185,28 @@ cd git/
 git clone &lt;a href=&#34;https://github.com/rapid7/metasploitable3.git&#34;&gt;https://github.com/rapid7/metasploitable3.git&lt;/a&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu komutlar sonucunda ev klasörünüzün içinde metasploitable3 isimli bir klasör ve içinde gerekli paketler klonlanmış olacak.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;2-adım-packer-kurulum&#34;&gt;2. Adım: Packer Kurulum&lt;/h2&gt;
+&lt;p&gt;Bu komutlar sonucunda ev klasörünüzün içinde metasploitable3 isimli bir klasör ve içinde gerekli paketler klonlanmış olacak.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;2-adım-packer-kurulum&#34;&gt;2. Adım: Packer Kurulum
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Şimdi birlikte packer programını kuralım. Bu adresten &lt;a href=&#34;https://www.packer.io/downloads.html&#34;&gt;Packer İndirme Bağlantısı&lt;/a&gt; Linux İşletim sisteminize uygun olan .zip uzantılı dosyayı indirin.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;İndirdiğiniz dosyayı arşiv yöneticisi yardımıyla Home (Ev) klasörünüzün altına çıkartın. Çıkarılan klasör /home/kallanıcıadınız/packer/ şeklinde bir klasör olmalı.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Packer klasörünün içerisinde sadece 1 dosya bulunur. Bu dosyanın yolunu şimdi sisteme tanıtalım. Dosyamızın adresi olan /home/kullanıcıadınız/packer/ adresini PATH indeksine tanıtmamız gerekli. Bunun için, aşağıdaki formatı kullanarak packer klasör adresimizi hazırlayıp Home klasörümüz içerisindeki .profile dosyamızın en altına yerleştirip kaydediyoruz. Home klasörü altında .profile dosyasını göremiyorsanız, gizli dosyaları görmek için Ctrl+H tuşlarını kullanın. .profile dosyanızı aşağıda resimdeki örneğe benzer olmalı&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Şimdi birlikte packer programını kuralım. Bu adresten &lt;a href=&#34;https://www.packer.io/downloads.html&#34;&gt;Packer İndirme Bağlantısı&lt;/a&gt; Linux İşletim sisteminize uygun olan .zip uzantılı dosyayı indirin.&lt;/p&gt;
+&lt;p&gt;İndirdiğiniz dosyayı arşiv yöneticisi yardımıyla Home (Ev) klasörünüzün altına çıkartın. Çıkarılan klasör /home/kallanıcıadınız/packer/ şeklinde bir klasör olmalı.&lt;/p&gt;
+&lt;p&gt;Packer klasörünün içerisinde sadece 1 dosya bulunur. Bu dosyanın yolunu şimdi sisteme tanıtalım. Dosyamızın adresi olan /home/kullanıcıadınız/packer/ adresini PATH indeksine tanıtmamız gerekli. Bunun için, aşağıdaki formatı kullanarak packer klasör adresimizi hazırlayıp Home klasörümüz içerisindeki .profile dosyamızın en altına yerleştirip kaydediyoruz. Home klasörü altında .profile dosyasını göremiyorsanız, gizli dosyaları görmek için Ctrl+H tuşlarını kullanın. .profile dosyanızı aşağıda resimdeki örneğe benzer olmalı&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;export PATH&lt;strong&gt;=&lt;/strong&gt;$PATH:/home/kullacıadınız/packer/
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;export PATH***=*** $PATH:/home/kullacıadınız/packer/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Ayrıca aşağıdaki komutu kullanarak /usr/bin/ klasörüne link koymanızı da tavsiye ediyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Ayrıca aşağıdaki komutu kullanarak /usr/bin/ klasörüne link koymanızı da tavsiye ediyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cd /usr/bin
 sudo ln -s /home/kullanıcıadınız/packer/packer
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu verin. İşler yolunda gitmişse aşağıdaki çıktıyı alırsınız.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu verin. İşler yolunda gitmişse aşağıdaki çıktıyı alırsınız.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;packer
-usage: packer &lt;strong&gt;[&lt;/strong&gt;--version&lt;strong&gt;]&lt;/strong&gt; &lt;strong&gt;[&lt;/strong&gt;--help&lt;strong&gt;]&lt;/strong&gt; &amp;lt;command&lt;strong&gt;&amp;gt;&lt;/strong&gt; &lt;strong&gt;[&lt;/strong&gt;&amp;lt;args&amp;gt;]
+usage: packer ***[*** --version***]***  ***[*** --help***]***  &amp;lt;command***&amp;gt;***  ***[*** &amp;lt;args&amp;gt;]
 Available commands are:
-build build image&lt;strong&gt;(&lt;/strong&gt;s&lt;strong&gt;)&lt;/strong&gt; from template
+build build image***(*** s***)***  from template
 fix fixes templates from old versions of packer
 inspect see components of a template
 push push a template and supporting files to a Packer build service
@@ -158,42 +214,42 @@ validate check that a template is valid
 version Prints the Packer version
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;3-adım-vagrant-kurulum&#34;&gt;3. Adım: Vagrant Kurulum&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;3-adım-vagrant-kurulum&#34;&gt;3. Adım: Vagrant Kurulum
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Vagrant programı, .deb uzantılı dağıtılmaktadır. &lt;a href=&#34;https://www.vagrantup.com/downloads.html&#34;&gt;Bu adresten&lt;/a&gt; Debian tabanlı kurulum dosyasını bilgisayar mimarinize göre 64 bit – 32 bit olarak seçin ve indirin.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;İndirdiğiniz klasöre giderek, komut satırından aşağıdaki komutu verin. Dosya ismi ve sürümü değişiklik gösterebilir. Kendi indirdiğiniz sürümün adını yazın.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Vagrant programı, .deb uzantılı dağıtılmaktadır. &lt;a href=&#34;https://www.vagrantup.com/downloads.html&#34;&gt;Bu adresten&lt;/a&gt; Debian tabanlı kurulum dosyasını bilgisayar mimarinize göre 64 bit – 32 bit olarak seçin ve indirin.&lt;/p&gt;
+&lt;p&gt;İndirdiğiniz klasöre giderek, komut satırından aşağıdaki komutu verin. Dosya ismi ve sürümü değişiklik gösterebilir. Kendi indirdiğiniz sürümün adını yazın.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dpkg -i vagrant_1.9.4_x86_64.deb 
-&lt;strong&gt;(&lt;/strong&gt;Reading database ... 318960 files and directories currently installed.&lt;strong&gt;)&lt;/strong&gt;
+***(*** Reading database ... 318960 files and directories currently installed.***)*** 
 Preparing to unpack vagrant_1.9.4_x86_64.deb ...
-Unpacking vagrant &lt;strong&gt;(&lt;/strong&gt;1:1.9.4&lt;strong&gt;)&lt;/strong&gt; ...
-Setting up vagrant &lt;strong&gt;(&lt;/strong&gt;1:1.9.4&lt;strong&gt;)&lt;/strong&gt; ...
+Unpacking vagrant ***(*** 1:1.9.4***)***  ...
+Setting up vagrant ***(*** 1:1.9.4***)***  ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Vagrant sisteminize kurulacak ve gerekli sistem ayarlarını otomatik olarak yapacaktır.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;4-adım-vagrant-reload-plugin-kurulum&#34;&gt;4. Adım: Vagrant Reload Plugin Kurulum&lt;/h2&gt;
+&lt;p&gt;Vagrant sisteminize kurulacak ve gerekli sistem ayarlarını otomatik olarak yapacaktır.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;4-adım-vagrant-reload-plugin-kurulum&#34;&gt;4. Adım: Vagrant Reload Plugin Kurulum
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Vagrant sanal işletim sistemi yönetimi esnasında çalışacak scriptlerin her biri, kurulduktan sonra sanal işletim sistemini kapatıp açmak veya resetlemek isteyecektir. Bu işlemleri ve provision işlemlerini yapmayı sağlayan vagrant reload plugin eklentisini kuralım.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Vagrant sanal işletim sistemi yönetimi esnasında çalışacak scriptlerin her biri, kurulduktan sonra sanal işletim sistemini kapatıp açmak veya resetlemek isteyecektir. Bu işlemleri ve provision işlemlerini yapmayı sağlayan vagrant reload plugin eklentisini kuralım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;vagrant plugin install vagrant-reload
 Installing the &#39;vagrant-reload&#39; plugin. This can take a few minutes...
-Fetching: vagrant-reload-0.0.1.gem &lt;strong&gt;(&lt;/strong&gt;100%&lt;strong&gt;)&lt;/strong&gt;
-Installed the plugin &#39;vagrant-reload (0.0.1)&#39;&lt;strong&gt;!&lt;/strong&gt;
+Fetching: vagrant-reload-0.0.1.gem ***(*** 100%***)*** 
+Installed the plugin &#39;vagrant-reload (0.0.1)&#39;***!*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Kurulum başarı ile tamamlanınca size komut satırından sonuç haber verilecektir.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;5-adım-virtualbox-kurulum&#34;&gt;5. Adım: Virtualbox Kurulum&lt;/h2&gt;
+&lt;p&gt;Kurulum başarı ile tamamlanınca size komut satırından sonuç haber verilecektir.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;5-adım-virtualbox-kurulum&#34;&gt;5. Adım: Virtualbox Kurulum
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Sanallaştırma işlemlerinin kullanacağımız Virtualbox programını ve eklentilerini kuralım. &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads[Bu&#34;&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads[Bu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.virtualbox.org/wiki/Downloads[Bu&lt;/a&gt;&lt;/a&gt; adresi] kullanarak linux hosts için gerekli debian paketini ve aynı sayfada bulunan extension pack ilave eklentileri mutlaka indirmelisiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;İndirdiğimiz virtualbox.deb paketini sisteminize aşağıdaki komut yardımıyla kurabilirsiniz. İndirdiğiniz sürüm bu yazının hazırlandığı tarihten daha yeni olabilir. Dosya ismini sizin indirdiğiniz sürüm olarak yazmalısınız.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Sanallaştırma işlemlerinin kullanacağımız Virtualbox programını ve eklentilerini kuralım. &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads[Bu&#34;&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads[Bu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.virtualbox.org/wiki/Downloads[Bu&lt;/a&gt;&lt;/a&gt; adresi] kullanarak linux hosts için gerekli debian paketini ve aynı sayfada bulunan extension pack ilave eklentileri mutlaka indirmelisiniz.&lt;/p&gt;
+&lt;p&gt;İndirdiğimiz virtualbox.deb paketini sisteminize aşağıdaki komut yardımıyla kurabilirsiniz. İndirdiğiniz sürüm bu yazının hazırlandığı tarihten daha yeni olabilir. Dosya ismini sizin indirdiğiniz sürüm olarak yazmalısınız.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dpkg -i virtualbox-5.1_5.1.8-111374-Ubuntu-xenial_amd64.deb
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Kurulum talimatlarını tamamladıktan sonra programın Seçenekler bölümünden Extensions Pack kurulumunu da tamamlayın. Detayları ve eklenti paketinin yüklenmesini video anlatımda görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;6-adım-build-script-çalıştırma&#34;&gt;6. Adım: Build Script Çalıştırma&lt;/h2&gt;
+&lt;p&gt;Kurulum talimatlarını tamamladıktan sonra programın Seçenekler bölümünden Extensions Pack kurulumunu da tamamlayın. Detayları ve eklenti paketinin yüklenmesini video anlatımda görebilirsiniz.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;6-adım-build-script-çalıştırma&#34;&gt;6. Adım: Build Script Çalıştırma
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Artık bütün gereklilikler tamamlandı. Sanal işletim sistemimizin vagrant tarafından box olarak oluşturulması ve Virtualbox içerisine tanıtılması gerekmektedir. Bunun için git merkezinden klonladığımız dosyaların olduğu klasöre gidelim. Aşağıdaki komutlar .iso dosyası indirip gerekli tüm programları kuracakları için oldukça uzun sürecektir. Bu normaldir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Artık bütün gereklilikler tamamlandı. Sanal işletim sistemimizin vagrant tarafından box olarak oluşturulması ve Virtualbox içerisine tanıtılması gerekmektedir. Bunun için git merkezinden klonladığımız dosyaların olduğu klasöre gidelim. Aşağıdaki komutlar .iso dosyası indirip gerekli tüm programları kuracakları için oldukça uzun sürecektir. Bu normaldir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cd ~/git/metasploitable3/
 ./build_win2008.sh 
@@ -204,11 +260,11 @@ Correct version of vagrant was found.
 Compatible version of vagrant-reload plugin was found.
 All requirements found. Proceeding...
 Building the Vagrant box...
-virtualbox-iso output will be &lt;strong&gt;in &lt;/strong&gt;this color.
+virtualbox-iso output will be ***in *** this color.
 
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; virtualbox-iso: Downloading or copying Guest additions
+***==&amp;gt;***  virtualbox-iso: Downloading or copying Guest additions
     virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; virtualbox-iso: Downloading or copying ISO
+***==&amp;gt;***  virtualbox-iso: Downloading or copying ISO
     virtualbox-iso: Downloading or copying: &lt;a href=&#34;http://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso&#34;&gt;http://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso&lt;/a&gt;
     virtualbox-iso: Download progress: 0%
     virtualbox-iso: Download progress: 0%
@@ -220,20 +276,20 @@ virtualbox-iso output will be &lt;strong&gt;in &lt;/strong&gt;this color.
     virtualbox-iso: Download progress: 1%
     ...
     ...
-    virtualbox-iso &lt;strong&gt;(&lt;/strong&gt;vagrant&lt;strong&gt;)&lt;/strong&gt;: Compressing: Vagrantfile
-    virtualbox-iso &lt;strong&gt;(&lt;/strong&gt;vagrant&lt;strong&gt;)&lt;/strong&gt;: Compressing: box.ovf
-    virtualbox-iso &lt;strong&gt;(&lt;/strong&gt;vagrant&lt;strong&gt;)&lt;/strong&gt;: Compressing: metadata.json
-    virtualbox-iso &lt;strong&gt;(&lt;/strong&gt;vagrant&lt;strong&gt;)&lt;/strong&gt;: Compressing: packer-virtualbox-iso-1494433445-disk001.vmdk
+    virtualbox-iso ***(*** vagrant***)*** : Compressing: Vagrantfile
+    virtualbox-iso ***(*** vagrant***)*** : Compressing: box.ovf
+    virtualbox-iso ***(*** vagrant***)*** : Compressing: metadata.json
+    virtualbox-iso ***(*** vagrant***)*** : Compressing: packer-virtualbox-iso-1494433445-disk001.vmdk
 Build &#39;virtualbox-iso&#39; finished.
 
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; Builds finished. The artifacts of successful builds are:
---&lt;strong&gt;&amp;gt;&lt;/strong&gt; virtualbox-iso: &#39;virtualbox&#39; provider box: windows_2008_r2_virtualbox.box
+***==&amp;gt;***  Builds finished. The artifacts of successful builds are:
+--***&amp;gt;***  virtualbox-iso: &#39;virtualbox&#39; provider box: windows_2008_r2_virtualbox.box
 Box successfully built by Packer.
 Attempting to add the box to Vagrant...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; box: Box file was not detected as metadata. Adding it directly...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; box: Adding box &#39;metasploitable3&#39; &lt;strong&gt;(&lt;/strong&gt;v0&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;for &lt;/strong&gt;provider: 
+***==&amp;gt;***  box: Box file was not detected as metadata. Adding it directly...
+***==&amp;gt;***  box: Adding box &#39;metasploitable3&#39; ***(*** v0***)***  ***for *** provider: 
     box: Unpacking necessary files from: file:///home/umut/git/metasploitable3/windows_2008_r2_virtualbox.box
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; box: Successfully added box &#39;metasploitable3&#39; &lt;strong&gt;(&lt;/strong&gt;v0&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;for&lt;/strong&gt; &#39;virtualbox&#39;&lt;strong&gt;!&lt;/strong&gt;
+***==&amp;gt;***  box: Successfully added box &#39;metasploitable3&#39; ***(*** v0***)***  ***for***  &#39;virtualbox&#39;***!*** 
 Box successfully added to Vagrant.
 ---------------------------------------------------------------------
 SUCCESS: Run &#39;vagrant up&#39; to provision and start metasploitable3.
@@ -241,33 +297,33 @@ NOTE: The VM will need Internet access to provision properly.
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-adım-vagrant-up&#34;&gt;7. Adım: Vagrant up&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-adım-vagrant-up&#34;&gt;7. Adım: Vagrant up
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Gerekli tüm indirmeler ve inşa faaliyetleri artık tamamlandı. Sanal işletim sistemimiz hazır. Sanal makinemiz hazır. Artık bu Windows server üzerine, içinde zafiyet barındıran uygulamalar yüklenecek ve sanal işletim sistemi Metasploitable3 hazır hale gelecek. Bunun için, github tan klonladığımız klasörün içindeyken son bir komut veriyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Gerekli tüm indirmeler ve inşa faaliyetleri artık tamamlandı. Sanal işletim sistemimiz hazır. Sanal makinemiz hazır. Artık bu Windows server üzerine, içinde zafiyet barındıran uygulamalar yüklenecek ve sanal işletim sistemi Metasploitable3 hazır hale gelecek. Bunun için, github tan klonladığımız klasörün içindeyken son bir komut veriyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo vagrant up
-&lt;strong&gt;[&lt;/strong&gt;sudo&lt;strong&gt;]&lt;/strong&gt; password &lt;strong&gt;for &lt;/strong&gt;umut: 
+***[*** sudo***]***  password ***for *** umut: 
 Bringing machine &#39;default&#39; up with &#39;virtualbox&#39; provider...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Importing base box &#39;metasploitable3&#39;...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Matching MAC address &lt;strong&gt;for &lt;/strong&gt;NAT networking...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Setting the name of the VM: metasploitable3_default_1494436809723_60405
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Clearing any previously set network interfaces...
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Preparing network interfaces based on configuration...
+***==&amp;gt;***  default: Importing base box &#39;metasploitable3&#39;...
+***==&amp;gt;***  default: Matching MAC address ***for *** NAT networking...
+***==&amp;gt;***  default: Setting the name of the VM: metasploitable3_default_1494436809723_60405
+***==&amp;gt;***  default: Clearing any previously set network interfaces...
+***==&amp;gt;***  default: Preparing network interfaces based on configuration...
     default: Adapter 1: nat
     default: Adapter 2: hostonly
-&lt;strong&gt;==&amp;gt;&lt;/strong&gt; default: Forwarding ports...
+***==&amp;gt;***  default: Forwarding ports...
 ....
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu işlem, bir defaya mahsus yapılmakta ve oldukça uzun sürmektedir. Sabırla beklemeye devam edin. Tamamlandığında işlemler bitecek ve komut satırına geri gelinecektir.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-adım-son-adımlar&#34;&gt;7. Adım: Son adımlar&lt;/h2&gt;
+&lt;p&gt;Bu işlem, bir defaya mahsus yapılmakta ve oldukça uzun sürmektedir. Sabırla beklemeye devam edin. Tamamlandığında işlemler bitecek ve komut satırına geri gelinecektir.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-adım-son-adımlar&#34;&gt;7. Adım: Son adımlar
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Tüm adımları başarıyla tamamladıysanız artık sanallaştırma yazılımı Virtualbox içerisinden Metasploitable3 sürümünü çalıştırabilirsiniz. Normalde vangrant up komutu ile sanal sistem çalışmaktadır ancak varsayılan olarak headless olarak başlar. Headless başlangıç, görüntü penceresi olmadan başlangıçtır. Ağ, sistem kaynak kullanımı vb. ayarları yapmak için görüntü penceresinde görsel olarak görmek isterseniz, virtualbox ı başlatın ve sanal işletim sistemi üzerinde SHOW – GÖSTER seçeneği ile pencereyi açın.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Kullanıcı adı:&lt;/em&gt; vagrant&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Parola:&lt;/em&gt; vagrant&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Virtualbox içerisinde ağ ayarlarını kontrol etmeyi unutmayın. İki adet adaptör bulunuyor. Bir tanesi NAT üzerinden gerçek dünyaya açılıyor, diğer ise “host-only”.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Host-only adaptör kendisine vboxnet1 isimli bir sanal ağ kurar. Siz önceden Host-only vboxnet0 kullanıyor ve Kali İşletim sistemine bu adaptör tanımlıysa, test ve hedef sistemin ikisinin de host-only vboxnet0 ayarında olması gerektiğini hatırlatalım.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;TIP: NAT adaptörünü mümkünse iptal etmenizi ve ihtiyacınız yoksa açmamanızı tavsiye ediyorum.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Tüm adımları başarıyla tamamladıysanız artık sanallaştırma yazılımı Virtualbox içerisinden Metasploitable3 sürümünü çalıştırabilirsiniz. Normalde vangrant up komutu ile sanal sistem çalışmaktadır ancak varsayılan olarak headless olarak başlar. Headless başlangıç, görüntü penceresi olmadan başlangıçtır. Ağ, sistem kaynak kullanımı vb. ayarları yapmak için görüntü penceresinde görsel olarak görmek isterseniz, virtualbox ı başlatın ve sanal işletim sistemi üzerinde SHOW – GÖSTER seçeneği ile pencereyi açın.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Kullanıcı adı:&lt;/em&gt; vagrant&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Parola:&lt;/em&gt; vagrant&lt;/p&gt;
+&lt;p&gt;Virtualbox içerisinde ağ ayarlarını kontrol etmeyi unutmayın. İki adet adaptör bulunuyor. Bir tanesi NAT üzerinden gerçek dünyaya açılıyor, diğer ise “host-only”.&lt;/p&gt;
+&lt;p&gt;Host-only adaptör kendisine vboxnet1 isimli bir sanal ağ kurar. Siz önceden Host-only vboxnet0 kullanıyor ve Kali İşletim sistemine bu adaptör tanımlıysa, test ve hedef sistemin ikisinin de host-only vboxnet0 ayarında olması gerektiğini hatırlatalım.&lt;/p&gt;
+&lt;p&gt;TIP: NAT adaptörünü mümkünse iptal etmenizi ve ihtiyacınız yoksa açmamanızı tavsiye ediyorum.&lt;/p&gt;
 
       </description>
     </item>

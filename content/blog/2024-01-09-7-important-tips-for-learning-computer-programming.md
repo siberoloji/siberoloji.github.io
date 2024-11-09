@@ -25,63 +25,63 @@ title: 7 Important Tips for Learning Programming
 url: /7-important-tips-for-learning-computer-programming/
 ---
 
-  Nowadays, technology and software have found a place in every aspect of life. Software is required for all of the developed technological devices and hardware to work. Software, that is, a computer program, consists of codes put together by a software developer using a programming language, activating the hardware to do the desired job correctly.<br>If you are going to start learning a programming language, whether with your own effort, with help, or through school, we have compiled some rules and tips for you that we think will be very useful to you. You can change and edit the list according to your own situation.</p>
+  Nowadays, technology and software have found a place in every aspect of life. Software is required for all of the developed technological devices and hardware to work. Software, that is, a computer program, consists of codes put together by a software developer using a programming language, activating the hardware to do the desired job correctly.<br>If you are going to start learning a programming language, whether with your own effort, with help, or through school, we have compiled some rules and tips for you that we think will be very useful to you. You can change and edit the list according to your own situation.
  
 
  
- ## Regular Work Schedule</h2>
+ ## Regular Work Schedule
 <!-- /wp:heading -->
 
-  Repetition and keeping the information fresh is very important in learning programming. You must have a work and training calendar. Even if this calendar does not include hours of work every day, it should definitely include a little work every day. You have to take your time, even if it's five minutes, and keep going. When this is not the case, there will be 3-4 day breaks and you will realize that you have forgotten what you learned before. Working little but regularly without quitting can be much better.</p>
+  Repetition and keeping the information fresh is very important in learning programming. You must have a work and training calendar. Even if this calendar does not include hours of work every day, it should definitely include a little work every day. You have to take your time, even if it's five minutes, and keep going. When this is not the case, there will be 3-4 day breaks and you will realize that you have forgotten what you learned before. Working little but regularly without quitting can be much better.
  
 
  
- ## Focus on Basic Concepts</h2>
+ ## Focus on Basic Concepts
 <!-- /wp:heading -->
 
-  You should focus on the basic rules of the programming language you are learning and grasp them very well. Loops, flow controls, etc. Basic concepts are very important. All the subjects you will learn at the advanced level are built on these basic rules.</p>
+  You should focus on the basic rules of the programming language you are learning and grasp them very well. Loops, flow controls, etc. Basic concepts are very important. All the subjects you will learn at the advanced level are built on these basic rules.
  
 
  
- ## If You Have to Ask, Ask</h2>
+ ## If You Have to Ask, Ask
 <!-- /wp:heading -->
 
-  At first, learning programming seems like a very abstract concept. You can ask your questions to a relative, your instructor, or on sites such as online forums. Your question may be perceived as too simple by those who know better and may be ridiculed. Do not be influenced by these, because even very good programmers who have spent years on this job spend hours finding errors due to a very simple lack of basic knowledge. Don't hesitate to ask.</p>
+  At first, learning programming seems like a very abstract concept. You can ask your questions to a relative, your instructor, or on sites such as online forums. Your question may be perceived as too simple by those who know better and may be ridiculed. Do not be influenced by these, because even very good programmers who have spent years on this job spend hours finding errors due to a very simple lack of basic knowledge. Don't hesitate to ask.
  
 
  
- ## Put What You Learned into Practice</h2>
+ ## Put What You Learned into Practice
 <!-- /wp:heading -->
 
-  While studying the topic, for example, you learned how to define integer variables. Immediately related to this is addition, subtraction, etc. Try using it in real life by writing a sample code. If you do this, learning becomes more permanent. You will also gain experience in correcting marking errors such as commas and semicolons that you will encounter when you practice.</p>
+  While studying the topic, for example, you learned how to define integer variables. Immediately related to this is addition, subtraction, etc. Try using it in real life by writing a sample code. If you do this, learning becomes more permanent. You will also gain experience in correcting marking errors such as commas and semicolons that you will encounter when you practice.
  
 
  
- ## Writing without help</h2>
+ ## Writing without help
 <!-- /wp:heading -->
 
-  Many computer programmers use IDEs. IDE environments, which are advanced software development aids, provide great convenience and speed. However, as a beginner, you do not need speed. You need to learn the basic rules, such as where to open parentheses, how to name variables, etc. With this in mind, you should take a piece of paper and try to write your codes without using any helpful IDE. This will make incredible progress for you.</p>
+  Many computer programmers use IDEs. IDE environments, which are advanced software development aids, provide great convenience and speed. However, as a beginner, you do not need speed. You need to learn the basic rules, such as where to open parentheses, how to name variables, etc. With this in mind, you should take a piece of paper and try to write your codes without using any helpful IDE. This will make incredible progress for you.
  
 
  
- ## The problems you are experiencing have existed before. Search.</h2>
+ ## The problems you are experiencing have existed before. Search.
 <!-- /wp:heading -->
 
-  The problems you encounter while learning computer programming are not the problems you encounter for the first time. Be sure that others have encountered this problem before you. Some people searched online and found the solution. Even if some couldn't find a solution, they solved it with help. Some of them shared the solution on an online question and answer site for others to benefit from when they encounter this problem. You should get used to searching on sites like stack exchange.</p>
+  The problems you encounter while learning computer programming are not the problems you encounter for the first time. Be sure that others have encountered this problem before you. Some people searched online and found the solution. Even if some couldn't find a solution, they solved it with help. Some of them shared the solution on an online question and answer site for others to benefit from when they encounter this problem. You should get used to searching on sites like stack exchange.
  
 
  
- ## You Should Know How to Take a Break</h2>
+ ## You Should Know How to Take a Break
 <!-- /wp:heading -->
 
-  It is human nature to immediately try to solve a problem when you encounter it. "Why is this happening ?" After some time has passed, not being able to find a solution starts to cause some tension and anxiety. Because you enlarge the problem in your mind, the issue becomes emotional and you lose the opportunity to see the whole picture and think about it. At this point, quitting and taking a break and calming down is very useful.</p>
+  It is human nature to immediately try to solve a problem when you encounter it. "Why is this happening ?" After some time has passed, not being able to find a solution starts to cause some tension and anxiety. Because you enlarge the problem in your mind, the issue becomes emotional and you lose the opportunity to see the whole picture and think about it. At this point, quitting and taking a break and calming down is very useful.
  
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
-  Apart from the recommendations listed above, there will definitely be points that need to be added. We basically evaluated that these are very important and shared them with you.</p>
+  Apart from the recommendations listed above, there will definitely be points that need to be added. We basically evaluated that these are very important and shared them with you.
  
 
 <!-- wp:html -->

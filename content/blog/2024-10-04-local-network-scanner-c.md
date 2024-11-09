@@ -25,30 +25,30 @@ title: Local Network Scanner C++
 url: /local-network-scanner-c/
 ---
 
- <p>If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.</p>
+ <p>If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
  
 
- <p>To compile and run this program:</p>
+ <p>To compile and run this program:
  
 
- <p>Save the updated code to a file, e.g., <code>network_scanner.cpp</code></p>
+ <p>Save the updated code to a file, e.g., <code>network_scanner.cpp</code>
  
 
- <p>Compile it: </p>
+ <p>Compile it: 
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>g++ -std=c++17 -o network_scanner network_scanner.cpp</code></code></pre>
 <!-- /wp:code -->
 
- <p>Run it with sudo: </p>
+ <p>Run it with sudo: 
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><code>sudo ./network_scanner</code></code></pre>
 <!-- /wp:code -->
 
- <p>Here is the complete code.</p>
+ <p>Here is the complete code.
  
 
 <!-- wp:code -->

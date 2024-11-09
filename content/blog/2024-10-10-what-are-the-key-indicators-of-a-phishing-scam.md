@@ -29,63 +29,63 @@ url: /what-are-the-key-indicators-of-a-phishing-scam/
  
 
  
- ## 1. <strong>Suspicious Sender Addresses</strong></h2>
+ ## 1. ***Suspicious Sender Addresses*** 
 <!-- /wp:heading -->
 
   Phishing emails often come from addresses that mimic legitimate ones but contain slight variations. For instance, a phishing email might appear to be from a well-known bank but use a different domain (e.g., .net instead of .com) or have minor misspellings in the sender's name. Always verify the sender's email address carefully before taking any action[1][2]. 
  
 
  
- ## 2. <strong>Generic Greetings</strong></h2>
+ ## 2. ***Generic Greetings*** 
 <!-- /wp:heading -->
 
   Phishing emails frequently use generic greetings such as "Dear Customer" or "Hello User." Legitimate organizations typically address recipients by their names. If an email lacks personalization, it could be a red flag[1][3]. 
  
 
  
- ## 3. <strong>Urgent or Threatening Language</strong></h2>
+ ## 3. ***Urgent or Threatening Language*** 
 <!-- /wp:heading -->
 
   Many phishing attempts create a sense of urgency, pressuring recipients to act quickly without thinking. Phrases like "Your account will be suspended unless you act now" are common tactics used to provoke immediate responses[2][3]. 
  
 
  
- ## 4. <strong>Requests for Personal Information</strong></h2>
+ ## 4. ***Requests for Personal Information*** 
 <!-- /wp:heading -->
 
   Legitimate companies rarely ask for sensitive information (like passwords or social security numbers) via email. If you receive such requests, it is likely a phishing attempt[1][4]. 
  
 
  
- ## 5. <strong>Suspicious Links and Attachments</strong></h2>
+ ## 5. ***Suspicious Links and Attachments*** 
 <!-- /wp:heading -->
 
   Phishing emails often contain links to malicious websites or unsolicited attachments that may harbor malware. Always hover over links to check their actual destination before clicking. If the link appears suspicious or does not match the supposed sender's website, avoid it[2][5]. 
  
 
  
- ## 6. <strong>Spelling and Grammar Mistakes</strong></h2>
+ ## 6. ***Spelling and Grammar Mistakes*** 
 <!-- /wp:heading -->
 
   Professional organizations usually ensure their communications are free of spelling and grammatical errors. Phishing emails often contain noticeable mistakes, which can indicate they are not legitimate[3][4]. 
  
 
  
- ## 7. <strong>Too Good to Be True Offers</strong></h2>
+ ## 7. ***Too Good to Be True Offers*** 
 <!-- /wp:heading -->
 
   Emails promising unexpected rewards, large sums of money, or other enticing offers are often scams designed to lure you into providing personal information or clicking on malicious links[2][4]. 
  
 
  
- ## 8. <strong>Unusual Circumstances</strong></h2>
+ ## 8. ***Unusual Circumstances*** 
 <!-- /wp:heading -->
 
   Pay attention to the context in which an email is received. If you receive an unexpected email from someone you know or a company you have no dealings with, it’s worth investigating further before responding or clicking any links[5][6]. 
  
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   By being aware of these key indicators of phishing scams, individuals and organizations can better protect themselves against potential attacks. Always exercise caution when dealing with unsolicited emails and verify any suspicious requests before taking action. 

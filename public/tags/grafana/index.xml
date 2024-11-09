@@ -24,51 +24,58 @@
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;em&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In today’s data-driven world, visualizing complex data clearly and actionably is essential for efficient decision-making and monitoring. Grafana, an open-source analytics and interactive visualization tool, has become a go-to solution for many organizations. It empowers users to transform raw data into insightful, customizable dashboards that can monitor, analyze, and alert across diverse data sources. This guide dives into what makes Grafana a powerful tool, its features, setup process, data source integrations, and practical uses for effective data monitoring and visualization.&lt;/p&gt;
 &lt;!-- wp:separator --&gt;
 &lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
 &lt;!-- /wp:separator --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;1. What is Grafana?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-what-is-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#1-what-is-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;1. What is Grafana?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-what-is-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-what-is-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;&lt;a href=&#34;https://grafana.com/&#34;&gt;Grafana&lt;/a&gt; is a widely used platform for data visualization and monitoring. Developed by Torkel Ödegaard in 2014, Grafana quickly gained popularity due to its flexibility, ease of use, and powerful capability to connect with various data sources, ranging from Prometheus, InfluxDB, Elasticsearch, and MySQL to PostgreSQL.&lt;/p&gt;
 &lt;p&gt;Grafana’s primary function is to allow users to create visual dashboards that bring data to life. From real-time monitoring of application performance to tracking resource utilization across cloud infrastructure, Grafana’s versatility makes it ideal for developers, system administrators, data scientists, and IT operators alike.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;2. Key Features of Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-key-features-of-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2-key-features-of-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;2. Key Features of Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-key-features-of-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-key-features-of-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Grafana is packed with features that cater to both novice and advanced users. Here’s a closer look at some of its standout capabilities:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Dashboarding&lt;/strong&gt;: Grafana’s core feature is its ability to create interactive and customizable dashboards. Users can create panels that visualize data in various formats, including graphs, heat maps, tables, histograms, and alerts.&lt;/li&gt;
+- ***Dashboarding*** : Grafana’s core feature is its ability to create interactive and customizable dashboards. Users can create panels that visualize data in various formats, including graphs, heat maps, tables, histograms, and alerts. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Data Source Integration&lt;/strong&gt;: One of Grafana’s biggest advantages is its compatibility with multiple data sources, enabling users to pull in data from different sources and view it within a single dashboard.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Data Source Integration&lt;/strong&gt;&lt;/em&gt; : One of Grafana’s biggest advantages is its compatibility with multiple data sources, enabling users to pull in data from different sources and view it within a single dashboard.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Alerting&lt;/strong&gt;: Grafana offers an alerting system that allows users to configure and receive alerts based on predefined thresholds. Alerts can be sent via email, Slack, PagerDuty, or custom webhooks.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Alerting&lt;/strong&gt;&lt;/em&gt; : Grafana offers an alerting system that allows users to configure and receive alerts based on predefined thresholds. Alerts can be sent via email, Slack, PagerDuty, or custom webhooks.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Templating&lt;/strong&gt;: Grafana’s templating feature enables dynamic dashboards by using template variables. This allows users to adjust data queries without modifying the dashboard structure, making it easier to reuse and share dashboards.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Templating&lt;/strong&gt;&lt;/em&gt; : Grafana’s templating feature enables dynamic dashboards by using template variables. This allows users to adjust data queries without modifying the dashboard structure, making it easier to reuse and share dashboards.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;User Management and Permissions&lt;/strong&gt;: Grafana includes role-based access controls and lets you set permissions at the folder and dashboard levels, which is ideal for managing large teams.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;User Management and Permissions&lt;/strong&gt;&lt;/em&gt; : Grafana includes role-based access controls and lets you set permissions at the folder and dashboard levels, which is ideal for managing large teams.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Plugin Ecosystem&lt;/strong&gt;: Grafana supports a wide range of plugins, including panel, data source, and app plugins, which extend its core capabilities and allow users to add new functionalities.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Plugin Ecosystem&lt;/strong&gt;&lt;/em&gt; : Grafana supports a wide range of plugins, including panel, data source, and app plugins, which extend its core capabilities and allow users to add new functionalities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;3. Installing and Setting Up Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-installing-and-setting-up-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#3-installing-and-setting-up-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;3. Installing and Setting Up Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-installing-and-setting-up-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-installing-and-setting-up-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Setting up Grafana is a straightforward process, especially for users familiar with Linux or Docker environments. Here’s a quick guide to get Grafana up and running.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Installation via Linux (Ubuntu/Debian)&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Installation via Linux (Ubuntu/Debian) 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Download Grafana&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Download Grafana*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code&gt;   sudo apt-get update
@@ -77,8 +84,8 @@
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:2} --&gt;
 &lt;ol start=&#34;2&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Install Grafana&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Install Grafana*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code&gt;   sudo apt-get update
@@ -86,15 +93,15 @@
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:3} --&gt;
 &lt;ol start=&#34;3&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Start and Enable Grafana&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Start and Enable Grafana*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code&gt;   sudo systemctl start grafana-server
    sudo systemctl enable grafana-server&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Installation via Docker&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Installation via Docker 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;If you prefer Docker, Grafana’s official Docker image provides a simple deployment option:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -104,179 +111,210 @@
 &lt;!-- wp:separator --&gt;
 &lt;hr class=&#34;wp-block-separator has-alpha-channel-opacity&#34; /&gt;
 &lt;!-- /wp:separator --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;4. Connecting Data Sources in Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-connecting-data-sources-in-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#4-connecting-data-sources-in-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;4. Connecting Data Sources in Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-connecting-data-sources-in-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-connecting-data-sources-in-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Grafana’s power lies in its compatibility with multiple data sources. Here are some common data sources and steps to connect them:&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Prometheus&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Prometheus 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Install and Set Up Prometheus&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+- ***Install and Set Up Prometheus*** :&lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Install Prometheus and configure it to collect data from your desired sources.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
+- Install Prometheus and configure it to collect data from your desired sources. 
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Add Prometheus as a Data Source in Grafana&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Add Prometheus as a Data Source in Grafana&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Go to Grafana’s &lt;strong&gt;Data Sources&lt;/strong&gt; page.&lt;/li&gt;
+- Go to Grafana’s ***Data Sources***  page. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Select &lt;strong&gt;Prometheus&lt;/strong&gt; from the list, then configure the URL (usually &lt;code&gt;http://localhost:9090&lt;/code&gt;).&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Select &lt;em&gt;&lt;strong&gt;Prometheus&lt;/strong&gt;&lt;/em&gt;  from the list, then configure the URL (usually &lt;code&gt;http://localhost:9090&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Save &amp;amp; Test to confirm the connection.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;MySQL and PostgreSQL&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;MySQL and PostgreSQL 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Set Up the Database&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+- ***Set Up the Database*** :&lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Ensure your database is configured and accessible from Grafana.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
+- Ensure your database is configured and accessible from Grafana. 
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Add the Database as a Data Source&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Add the Database as a Data Source&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;In Grafana, go to &lt;strong&gt;Data Sources&lt;/strong&gt; &amp;gt; &lt;strong&gt;Add data source&lt;/strong&gt; and select either MySQL or PostgreSQL.&lt;/li&gt;
+- In Grafana, go to ***Data Sources***  &amp;gt; ***Add data source***  and select either MySQL or PostgreSQL. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Configure the connection details, including the host, database name, and credentials.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Elasticsearch&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Elasticsearch 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Ensure Elasticsearch is Running&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+- ***Ensure Elasticsearch is Running*** :&lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Start your Elasticsearch server and ensure it’s reachable.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
+- Start your Elasticsearch server and ensure it’s reachable. 
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Connect Elasticsearch to Grafana&lt;/strong&gt;:&lt;!-- wp:list --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Connect Elasticsearch to Grafana&lt;/strong&gt;&lt;/em&gt; :&lt;!-- wp:list --&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Choose Elasticsearch in the Data Sources section.&lt;/li&gt;
+- Choose Elasticsearch in the Data Sources section. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Input the Elasticsearch URL, index name, and other connection details.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Save &amp;amp; Test to establish the connection.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
-&lt;!-- /wp:list --&gt;&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
+&lt;!-- /wp:list --&gt; 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;5. Building a Dashboard in Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-building-a-dashboard-in-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#5-building-a-dashboard-in-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;5. Building a Dashboard in Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-building-a-dashboard-in-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-building-a-dashboard-in-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Once your data sources are configured, you’re ready to create dashboards. Follow these steps to get started with your first dashboard:&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Create a New Dashboard&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 1: Create a New Dashboard 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Navigate to &lt;strong&gt;Dashboards&lt;/strong&gt; &amp;gt; &lt;strong&gt;New Dashboard&lt;/strong&gt; &amp;gt; &lt;strong&gt;Add new panel&lt;/strong&gt;.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+- Navigate to ***Dashboards***  &amp;gt; ***New Dashboard***  &amp;gt; ***Add new panel*** . 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Configure Your Data Query&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 2: Configure Your Data Query 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Choose a data source and enter your query.&lt;/li&gt;
+- Choose a data source and enter your query. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Grafana supports its own query language for various sources, or you can use native SQL, PromQL, etc., depending on your data source.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Choose Visualization Type&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 3: Choose Visualization Type 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Select a visualization type like line graphs, bar charts, or tables.&lt;/li&gt;
+- Select a visualization type like line graphs, bar charts, or tables. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Customize the appearance of the panel using options like colors, line thickness, and grid configurations.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 4: Set Up Alerts (Optional)&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 4: Set Up Alerts (Optional) 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;To set up an alert, go to the &lt;strong&gt;Alert&lt;/strong&gt; tab within the panel.&lt;/li&gt;
+- To set up an alert, go to the ***Alert***  tab within the panel. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Define the alert conditions, frequency, and recipients for notifications.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 5: Save and Organize Your Dashboard&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Step 5: Save and Organize Your Dashboard 
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Save the dashboard with a unique name, and consider grouping related dashboards within folders for better organization.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+- Save the dashboard with a unique name, and consider grouping related dashboards within folders for better organization. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;6. Practical Applications of Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-practical-applications-of-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#6-practical-applications-of-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;6. Practical Applications of Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-practical-applications-of-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-practical-applications-of-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Grafana is widely used in a range of applications, particularly in IT infrastructure, cloud monitoring, and application performance. Here are some practical examples:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Server Monitoring&lt;/strong&gt;: With data sources like Prometheus and InfluxDB, Grafana can display real-time metrics such as CPU usage, memory, and disk utilization.&lt;/li&gt;
+- ***Server Monitoring*** : With data sources like Prometheus and InfluxDB, Grafana can display real-time metrics such as CPU usage, memory, and disk utilization. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Cloud Infrastructure Monitoring&lt;/strong&gt;: Grafana integrates with AWS, Google Cloud, and Azure, allowing teams to monitor cloud resources, cost data, and performance metrics.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Cloud Infrastructure Monitoring&lt;/strong&gt;&lt;/em&gt; : Grafana integrates with AWS, Google Cloud, and Azure, allowing teams to monitor cloud resources, cost data, and performance metrics.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Application Performance Monitoring (APM)&lt;/strong&gt;: Integrate with APM tools to monitor application health, response times, error rates, and user experience metrics.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Application Performance Monitoring (APM)&lt;/strong&gt;&lt;/em&gt; : Integrate with APM tools to monitor application health, response times, error rates, and user experience metrics.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Business Intelligence&lt;/strong&gt;: Pull data from databases like MySQL or Elasticsearch to visualize sales trends, customer behavior, and other key performance indicators (KPIs).&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Business Intelligence&lt;/strong&gt;&lt;/em&gt; : Pull data from databases like MySQL or Elasticsearch to visualize sales trends, customer behavior, and other key performance indicators (KPIs).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;7. Best Practices for Using Grafana&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-best-practices-for-using-grafanah3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#7-best-practices-for-using-grafanah3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;7. Best Practices for Using Grafana&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-best-practices-for-using-grafana&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-best-practices-for-using-grafana&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;To get the most out of Grafana, consider these best practices:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Optimize Queries&lt;/strong&gt;: Queries that pull large datasets can slow down dashboards. Try optimizing queries or using summarization techniques to reduce data volume.&lt;/li&gt;
+- ***Optimize Queries*** : Queries that pull large datasets can slow down dashboards. Try optimizing queries or using summarization techniques to reduce data volume. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Organize Dashboards and Panels&lt;/strong&gt;: Group related metrics on the same dashboard, and avoid overcrowding panels. This improves readability and quick access to critical metrics.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Organize Dashboards and Panels&lt;/strong&gt;&lt;/em&gt; : Group related metrics on the same dashboard, and avoid overcrowding panels. This improves readability and quick access to critical metrics.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Use Templating for Dynamic Dashboards&lt;/strong&gt;: Templating enables the reuse of dashboards across different projects or data sources, which saves time and makes dashboards more scalable.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Use Templating for Dynamic Dashboards&lt;/strong&gt;&lt;/em&gt; : Templating enables the reuse of dashboards across different projects or data sources, which saves time and makes dashboards more scalable.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Enable Caching and Performance Monitoring&lt;/strong&gt;: Monitor Grafana’s performance and consider enabling caching for recurring data requests.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Enable Caching and Performance Monitoring&lt;/strong&gt;&lt;/em&gt; : Monitor Grafana’s performance and consider enabling caching for recurring data requests.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Leverage Grafana’s Community&lt;/strong&gt;: Grafana’s large community offers plugins, tutorials, and templates that can help you find solutions and gain new insights.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Leverage Grafana’s Community&lt;/strong&gt;&lt;/em&gt; : Grafana’s large community offers plugins, tutorials, and templates that can help you find solutions and gain new insights.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;8. Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-conclusionh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#8-conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;8. Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Grafana is an indispensable tool for anyone dealing with complex data. Its wide-ranging support for data sources, customizable dashboards, and powerful alerting system makes it ideal for monitoring and visualization tasks across IT, business, and research domains. By following this guide, you’ll be well on your way to transforming data into insights that drive action. As you explore Grafana, remember that experimenting with its features, dashboards, and plugins is the best way to unlock its full potential for your specific needs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ready to explore Grafana?&lt;/strong&gt; Get started by installing it today and begin transforming your raw data into valuable, visual insights that can drive smarter decisions.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Ready to explore Grafana?&lt;/strong&gt;&lt;/em&gt;  Get started by installing it today and begin transforming your raw data into valuable, visual insights that can drive smarter decisions.&lt;/p&gt;
 
       </description>
     </item>

@@ -25,7 +25,7 @@
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     var personA = Person(&#34;Mike&#34;,&#34;Sunshine&#34;)

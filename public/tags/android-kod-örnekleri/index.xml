@@ -24,11 +24,11 @@
       <description>
         
         
-        &lt;p&gt;Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;android:windowSoftInputMode=&#34;adjustResize&#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;&amp;lt;activity
             android:name=&#34;.MainActivity&#34;
@@ -43,7 +43,6 @@
             &amp;lt;/intent-filter&amp;gt;
         &amp;lt;/activity&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-  &lt;/p&gt;
 
       </description>
     </item>

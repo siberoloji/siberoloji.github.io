@@ -24,130 +24,142 @@
       <description>
         
         
-        &lt;p&gt;In the realm of digital logic design, timing is paramount to ensure that circuits function correctly and efficiently. The complexity of modern digital systems necessitates careful consideration of timing issues that can arise, which could otherwise lead to unexpected behaviors and unreliable results. One key aspect of timing analysis is the study of &lt;strong&gt;hazards&lt;/strong&gt; in digital circuits, specifically &lt;strong&gt;static&lt;/strong&gt; and &lt;strong&gt;dynamic hazards&lt;/strong&gt;. These hazards can cause incorrect output transitions or glitches, and managing them is crucial for maintaining the integrity and performance of digital systems.&lt;/p&gt;
+        &lt;p&gt;In the realm of digital logic design, timing is paramount to ensure that circuits function correctly and efficiently. The complexity of modern digital systems necessitates careful consideration of timing issues that can arise, which could otherwise lead to unexpected behaviors and unreliable results. One key aspect of timing analysis is the study of &lt;em&gt;&lt;strong&gt;hazards&lt;/strong&gt;&lt;/em&gt;  in digital circuits, specifically &lt;em&gt;&lt;strong&gt;static&lt;/strong&gt;&lt;/em&gt;  and &lt;em&gt;&lt;strong&gt;dynamic hazards&lt;/strong&gt;&lt;/em&gt; . These hazards can cause incorrect output transitions or glitches, and managing them is crucial for maintaining the integrity and performance of digital systems.&lt;/p&gt;
 &lt;p&gt;This blog will explore the concepts of static and dynamic hazards in digital logic circuits, their causes, potential effects, and strategies to mitigate them. Whether you&amp;rsquo;re a beginner or an experienced digital designer, understanding these timing challenges is essential to ensuring reliable system operation.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;What Are Hazards in Digital Circuits?&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-hazards-in-digital-circuitsh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#what-are-hazards-in-digital-circuitsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;A &lt;strong&gt;hazard&lt;/strong&gt; in digital logic refers to an unwanted and unintended transition in the output of a combinational circuit, which can occur when input signals change. Even though the logic states of a circuit are meant to transition from one state to another smoothly, hazards can introduce brief glitches or spikes in the output, leading to incorrect system behavior.&lt;/p&gt;
+&lt;h3&gt;What Are Hazards in Digital Circuits?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-are-hazards-in-digital-circuits&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-are-hazards-in-digital-circuits&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;A &lt;em&gt;&lt;strong&gt;hazard&lt;/strong&gt;&lt;/em&gt;  in digital logic refers to an unwanted and unintended transition in the output of a combinational circuit, which can occur when input signals change. Even though the logic states of a circuit are meant to transition from one state to another smoothly, hazards can introduce brief glitches or spikes in the output, leading to incorrect system behavior.&lt;/p&gt;
 &lt;p&gt;Hazards generally arise from differences in the propagation delay of signals through various parts of a circuit. These delays can cause temporary discrepancies between the expected and actual output, which, if not controlled, may result in faulty operation.&lt;/p&gt;
 &lt;p&gt;Hazards are broadly classified into two categories:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Static Hazards&lt;/strong&gt;&lt;/li&gt;
+- ***Static Hazards***  
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Dynamic Hazards&lt;/strong&gt;&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dynamic Hazards&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;1. Static Hazards&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-static-hazardsh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#1-static-hazardsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;A &lt;strong&gt;static hazard&lt;/strong&gt; occurs when the output of a digital circuit momentarily changes when it should remain constant. Static hazards are most commonly observed in circuits where a transition occurs between two stable logic levels, typically from logic &amp;lsquo;1&amp;rsquo; to &amp;lsquo;1&amp;rsquo; or &amp;lsquo;0&amp;rsquo; to &amp;lsquo;0&amp;rsquo;. Despite the fact that the output is expected to remain at the same logic level, a brief glitch can cause the output to flip momentarily.&lt;/p&gt;
+&lt;h3&gt;1. Static Hazards&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-static-hazards&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-static-hazards&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;A &lt;em&gt;&lt;strong&gt;static hazard&lt;/strong&gt;&lt;/em&gt;  occurs when the output of a digital circuit momentarily changes when it should remain constant. Static hazards are most commonly observed in circuits where a transition occurs between two stable logic levels, typically from logic &amp;lsquo;1&amp;rsquo; to &amp;lsquo;1&amp;rsquo; or &amp;lsquo;0&amp;rsquo; to &amp;lsquo;0&amp;rsquo;. Despite the fact that the output is expected to remain at the same logic level, a brief glitch can cause the output to flip momentarily.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Types of Static Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Types of Static Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Static hazards are categorized into two types:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Static-1 Hazard&lt;/strong&gt;: This type of hazard occurs when the output should remain at logic &#39;1&#39;, but a temporary glitch causes it to drop to &#39;0&#39; momentarily before returning to &#39;1&#39;.&lt;/li&gt;
+- ***Static-1 Hazard*** : This type of hazard occurs when the output should remain at logic &#39;1&#39;, but a temporary glitch causes it to drop to &#39;0&#39; momentarily before returning to &#39;1&#39;. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Static-0 Hazard&lt;/strong&gt;: This occurs when the output is expected to remain at logic &#39;0&#39;, but due to a brief glitch, it rises to &#39;1&#39; before returning to &#39;0&#39;.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Static-0 Hazard&lt;/strong&gt;&lt;/em&gt; : This occurs when the output is expected to remain at logic &amp;lsquo;0&amp;rsquo;, but due to a brief glitch, it rises to &amp;lsquo;1&amp;rsquo; before returning to &amp;lsquo;0&amp;rsquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Causes of Static Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Causes of Static Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Static hazards are caused by differences in the propagation delay of signals through different paths in a logic circuit. These delays result from the various gate components, wiring lengths, and electrical characteristics of the circuit. When multiple paths exist between the inputs and the output of a combinational logic circuit, some paths may be faster or slower than others, causing brief discrepancies in the output.&lt;/p&gt;
 &lt;p&gt;Consider a situation where a circuit has multiple input changes that affect the output. If one of the input paths experiences a longer delay than another, the output may briefly switch to an incorrect state before settling at the intended logic level. This transient behavior is the essence of a static hazard.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Example of a Static-1 Hazard&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Example of a Static-1 Hazard 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;To illustrate a static-1 hazard, consider a simple logic circuit with the following function:&lt;/p&gt;
 &lt;p&gt;[ F(A, B, C) = A&amp;rsquo;B + AB&amp;rsquo; ]&lt;/p&gt;
 &lt;p&gt;In this circuit, the output is expected to remain at logic &amp;lsquo;1&amp;rsquo; when inputs transition between certain combinations. However, due to varying gate delays, when the inputs change from one valid state to another, the output might momentarily drop to &amp;lsquo;0&amp;rsquo;, causing a glitch even though it should stay at &amp;lsquo;1&amp;rsquo;. This would be an example of a static-1 hazard.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Impact of Static Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Impact of Static Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Static hazards can cause transient glitches in digital circuits, which may not always lead to functional failures in combinational circuits. However, in synchronous systems, where the circuit output is sampled at specific intervals, these glitches can be problematic if they occur at the wrong moment. They may lead to incorrect data being latched into memory elements, which can cause functional errors or even system crashes.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;How to Eliminate Static Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;How to Eliminate Static Hazards 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;To eliminate or minimize static hazards, designers can add additional logic gates or redundant logic terms to ensure that the output remains stable even when input transitions occur. The process of adding these gates is called &lt;strong&gt;hazard mitigation&lt;/strong&gt; or &lt;strong&gt;hazard covering&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;A common approach to removing static hazards is to use &lt;strong&gt;Karnaugh maps&lt;/strong&gt; to identify potential hazards and add redundant logic terms. By doing so, the logic paths are balanced in terms of delay, reducing the chance of glitches.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;2. Dynamic Hazards&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-dynamic-hazardsh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2-dynamic-hazardsh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;A &lt;strong&gt;dynamic hazard&lt;/strong&gt; occurs when the output of a digital circuit experiences multiple unwanted transitions (glitches) while changing from one logic state to another. Unlike static hazards, which involve brief changes when the output is supposed to remain constant, dynamic hazards involve multiple intermediate transitions as the output moves between two different logic states (from &amp;lsquo;0&amp;rsquo; to &amp;lsquo;1&amp;rsquo; or vice versa).&lt;/p&gt;
+&lt;p&gt;To eliminate or minimize static hazards, designers can add additional logic gates or redundant logic terms to ensure that the output remains stable even when input transitions occur. The process of adding these gates is called &lt;em&gt;&lt;strong&gt;hazard mitigation&lt;/strong&gt;&lt;/em&gt;  or &lt;em&gt;&lt;strong&gt;hazard covering&lt;/strong&gt;&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;A common approach to removing static hazards is to use &lt;em&gt;&lt;strong&gt;Karnaugh maps&lt;/strong&gt;&lt;/em&gt;  to identify potential hazards and add redundant logic terms. By doing so, the logic paths are balanced in terms of delay, reducing the chance of glitches.&lt;/p&gt;
+&lt;h3&gt;2. Dynamic Hazards&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-dynamic-hazards&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-dynamic-hazards&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;A &lt;em&gt;&lt;strong&gt;dynamic hazard&lt;/strong&gt;&lt;/em&gt;  occurs when the output of a digital circuit experiences multiple unwanted transitions (glitches) while changing from one logic state to another. Unlike static hazards, which involve brief changes when the output is supposed to remain constant, dynamic hazards involve multiple intermediate transitions as the output moves between two different logic states (from &amp;lsquo;0&amp;rsquo; to &amp;lsquo;1&amp;rsquo; or vice versa).&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Causes of Dynamic Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Causes of Dynamic Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Dynamic hazards are caused by similar factors as static hazards—namely, variations in signal propagation delays through different paths of a logic circuit. However, dynamic hazards are more complex because they occur when the output is supposed to change states, and the different delays cause the output to oscillate multiple times before stabilizing at the correct value.&lt;/p&gt;
 &lt;p&gt;Dynamic hazards are more likely to occur in circuits with multiple logic levels or complex combinational networks with multiple inputs. When the inputs change simultaneously, variations in the time it takes for signals to propagate through different paths can cause the output to oscillate between &amp;lsquo;0&amp;rsquo; and &amp;lsquo;1&amp;rsquo; several times before settling on the final value.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Example of a Dynamic Hazard&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Example of a Dynamic Hazard 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;To illustrate a dynamic hazard, consider a more complex logic circuit with several inputs, such as:&lt;/p&gt;
 &lt;p&gt;[ F(A, B, C, D) = AB + CD ]&lt;/p&gt;
 &lt;p&gt;When inputs A and B change simultaneously from &amp;lsquo;0&amp;rsquo; to &amp;lsquo;1&amp;rsquo;, there may be multiple paths through the logic gates that propagate the input changes. Due to differences in propagation delay, the output may oscillate between &amp;lsquo;0&amp;rsquo; and &amp;lsquo;1&amp;rsquo; several times before settling at the correct final value.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;Impact of Dynamic Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;Impact of Dynamic Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Dynamic hazards can be more problematic than static hazards because they involve multiple incorrect transitions. In high-speed digital circuits, where precise timing is critical, these oscillations can lead to significant timing violations. If the output of a circuit oscillates between &amp;lsquo;0&amp;rsquo; and &amp;lsquo;1&amp;rsquo;, it can cause incorrect data to be captured, leading to errors in subsequent stages of the system.&lt;/p&gt;
 &lt;p&gt;In systems where timing is tightly constrained (such as microprocessors or high-speed data transfer systems), dynamic hazards can severely affect performance, leading to reduced reliability and incorrect functionality.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:4} --&gt;
-&lt;h4 class=&#34;wp-block-heading&#34;&gt;How to Eliminate Dynamic Hazards&lt;/h4&gt;
+&lt;h4 class=&#34;wp-block-heading&#34;&gt;How to Eliminate Dynamic Hazards 
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Eliminating dynamic hazards requires careful attention to the timing of the circuit and the paths through which signals propagate. Some strategies to reduce or eliminate dynamic hazards include:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Balancing Delays&lt;/strong&gt;: One effective way to minimize dynamic hazards is to ensure that all paths through the logic circuit have approximately equal delays. This can be achieved by carefully selecting gate types and minimizing the differences in wire lengths.&lt;/li&gt;
+- ***Balancing Delays*** : One effective way to minimize dynamic hazards is to ensure that all paths through the logic circuit have approximately equal delays. This can be achieved by carefully selecting gate types and minimizing the differences in wire lengths. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Redundant Logic&lt;/strong&gt;: Adding redundant logic gates can help eliminate dynamic hazards by ensuring that the output transitions smoothly from one state to another without multiple glitches. This method is similar to the technique used to eliminate static hazards but applied to cases where the output is changing states.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Redundant Logic&lt;/strong&gt;&lt;/em&gt; : Adding redundant logic gates can help eliminate dynamic hazards by ensuring that the output transitions smoothly from one state to another without multiple glitches. This method is similar to the technique used to eliminate static hazards but applied to cases where the output is changing states.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Delay Insertion&lt;/strong&gt;: In some cases, inserting delays into specific paths can help synchronize the timing of different inputs, reducing the likelihood of dynamic hazards. By slowing down faster paths, designers can ensure that all input signals reach the output at the same time, reducing oscillations.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Delay Insertion&lt;/strong&gt;&lt;/em&gt; : In some cases, inserting delays into specific paths can help synchronize the timing of different inputs, reducing the likelihood of dynamic hazards. By slowing down faster paths, designers can ensure that all input signals reach the output at the same time, reducing oscillations.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Synchronous Design&lt;/strong&gt;: Using synchronous design techniques can help mitigate the impact of dynamic hazards. By ensuring that the circuit operates based on a clock signal, the output is only sampled at specific intervals, reducing the risk of capturing an incorrect output during a glitch.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Synchronous Design&lt;/strong&gt;&lt;/em&gt; : Using synchronous design techniques can help mitigate the impact of dynamic hazards. By ensuring that the circuit operates based on a clock signal, the output is only sampled at specific intervals, reducing the risk of capturing an incorrect output during a glitch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Static vs. Dynamic Hazards: Key Differences&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;static-vs-dynamic-hazards-key-differencesh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#static-vs-dynamic-hazards-key-differencesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Static vs. Dynamic Hazards: Key Differences&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;static-vs-dynamic-hazards-key-differences&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#static-vs-dynamic-hazards-key-differences&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;While both static and dynamic hazards arise from timing discrepancies in digital circuits, they have distinct characteristics and effects:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
 &lt;ul class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Static Hazards&lt;/strong&gt; occur when the output is supposed to remain constant but momentarily glitches to an incorrect value. They typically involve a single, brief transition and are relatively easy to identify and mitigate.&lt;/li&gt;
+- ***Static Hazards***  occur when the output is supposed to remain constant but momentarily glitches to an incorrect value. They typically involve a single, brief transition and are relatively easy to identify and mitigate. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Dynamic Hazards&lt;/strong&gt; occur when the output is transitioning between two logic states and experiences multiple unwanted transitions or oscillations. They are more complex to handle and can have a more significant impact on the circuit&#39;s performance.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Dynamic Hazards&lt;/strong&gt;&lt;/em&gt;  occur when the output is transitioning between two logic states and experiences multiple unwanted transitions or oscillations. They are more complex to handle and can have a more significant impact on the circuit&amp;rsquo;s performance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Practical Considerations in Hazard Mitigation&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;practical-considerations-in-hazard-mitigationh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#practical-considerations-in-hazard-mitigationh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Practical Considerations in Hazard Mitigation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;practical-considerations-in-hazard-mitigation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practical-considerations-in-hazard-mitigation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;In real-world digital design, hazard mitigation is a crucial aspect of ensuring reliable system performance. Here are some practical tips for managing hazards:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Early Detection&lt;/strong&gt;: During the design phase, engineers should use simulation tools to detect potential hazards. Identifying hazards early allows for design modifications before the circuit is fabricated or implemented in hardware.&lt;/li&gt;
+- ***Early Detection*** : During the design phase, engineers should use simulation tools to detect potential hazards. Identifying hazards early allows for design modifications before the circuit is fabricated or implemented in hardware. 
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Redundancy in Design&lt;/strong&gt;: Incorporating redundant logic gates or paths can help eliminate hazards. However, designers must balance the benefits of hazard elimination with the increased complexity and potential power consumption introduced by additional gates.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Redundancy in Design&lt;/strong&gt;&lt;/em&gt; : Incorporating redundant logic gates or paths can help eliminate hazards. However, designers must balance the benefits of hazard elimination with the increased complexity and potential power consumption introduced by additional gates.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Signal Integrity&lt;/strong&gt;: Proper management of signal integrity, including controlling noise and minimizing crosstalk between adjacent wires, can help reduce the chances of hazards.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Signal Integrity&lt;/strong&gt;&lt;/em&gt; : Proper management of signal integrity, including controlling noise and minimizing crosstalk between adjacent wires, can help reduce the chances of hazards.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Proper Testing&lt;/strong&gt;: Post-design testing is essential to ensure that hazards are properly mitigated. Both static and dynamic hazards can be subtle and may only appear under specific input conditions or timing constraints.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Proper Testing&lt;/strong&gt;&lt;/em&gt; : Post-design testing is essential to ensure that hazards are properly mitigated. Both static and dynamic hazards can be subtle and may only appear under specific input conditions or timing constraints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#conclusionh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;In digital logic circuits, &lt;strong&gt;static&lt;/strong&gt; and &lt;strong&gt;dynamic hazards&lt;/strong&gt; are timing-related issues that can cause glitches or unwanted transitions in the output. These hazards arise from differences in signal propagation delays and can lead to functional errors, especially in high-speed systems or complex logic designs.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In digital logic circuits, &lt;em&gt;&lt;strong&gt;static&lt;/strong&gt;&lt;/em&gt;  and &lt;em&gt;&lt;strong&gt;dynamic hazards&lt;/strong&gt;&lt;/em&gt;  are timing-related issues that can cause glitches or unwanted transitions in the output. These hazards arise from differences in signal propagation delays and can lead to functional errors, especially in high-speed systems or complex logic designs.&lt;/p&gt;
 &lt;p&gt;By understanding the causes and effects of hazards and employing techniques such as balanced delays, redundant logic, and synchronous design, engineers can effectively mitigate these timing issues. As digital systems continueto evolve and increase in complexity, managing hazards will remain a critical aspect of ensuring reliable and efficient circuit operation.&lt;/p&gt;
 &lt;p&gt;With the right strategies in place, designers can ensure that their digital systems are robust, reliable, and capable of meeting the demands of modern technology.&lt;/p&gt;
 

@@ -11,9 +11,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>RAM Hızını ve Tipini Öğrenme – Siberoloji</title>
-  <meta name="description" content=" Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
-free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
-free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir." /><link rel="canonical" href="http://localhost:1313/tr/ram-hizini-ve-tipini-ogrenme/" itemprop="url" />
+  <meta name="description" content=" Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz. free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz. free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir. cat /proc/meminfo meminfo  dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde free  komutundan daha detaylı bilgileri elde etmek mümkündür. cat /proc/meminfo MemTotal: 8061380 kB MemFree: 5309524 kB MemAvailable: 6324656 kB Buffers: 132880 kB Cached: 1107684 kB SwapCached: 0 kB Active: 1749032 kB Inactive: 696600 kB Active(anon): 1206752 kB Inactive(anon): 43156 kB Active(file): 542280 kB Inactive(file): 653444 kB Unevictable: 1856 kB Mlocked: 1856 kB SwapTotal: 0 kB SwapFree: 0 kB Dirty: 12 kB Writeback: 0 kB AnonPages: 1202772 kB Mapped: 350092 kB Shmem: 44848 kB Slab: 124752 kB SReclaimable: 79624 kB SUnreclaim: 45128 kB KernelStack: 9648 kB PageTables: 34432 kB NFS_Unstable: 0 kB Bounce: 0 kB WritebackTmp: 0 kB CommitLimit: 4030688 kB Committed_AS: 4736008 kB VmallocTotal: 34359738367 kB VmallocUsed: 0 kB VmallocChunk: 0 kB HardwareCorrupted: 0 kB AnonHugePages: 385024 kB CmaTotal: 0 kB CmaFree: 0 kB HugePages_Total: 0 HugePages_Free: 0 HugePages_Rsvd: 0 HugePages_Surp: 0 Hugepagesize: 2048 kB DirectMap4k: 282052 kB DirectMap2M: 4847616 kB DirectMap1G: 3145728 kB vmstat -s vmstat -s  komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için vmstat --help  komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz. vmstat -s 8061380 K total memory 1452864 K used memory 1824532 K active memory 723452 K inactive memory 5204380 K free memory 135560 K buffer memory 1268576 K swap cache 0 K total swap 0 K used swap 0 K free swap 23886 non-nice user cpu ticks 227 nice user cpu ticks 6408 system cpu ticks 1505691 idle cpu ticks 8786 IO-wait cpu ticks 0 IRQ cpu ticks 513 softirq cpu ticks 0 stolen cpu ticks 1208707 pages paged in 182300 pages paged out 0 pages swapped in 0 pages swapped out 1521903 interrupts 5105745 CPU context switches 1483203820 boot time 6796 forks dmidecode -t 16 dmidecode -t 16  komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir. dmidecode  doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda, Maksimum Capacity: 32 GB  ve Number of Devices : 4  görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir. ***Soru*** : O halde komut çıktısı neden böyle gösteriyor? ***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur. sudo dmidecode -t 16 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000B, DMI type 16, 23 bytes Physical Memory Array Location: System Board Or Motherboard Use: System Memory Error Correction Type: None Maximum Capacity: 32 GB Error Information Handle: Not Provided Number Of Devices: 4 dmidecode -t 17 Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir. Type: DDR3  bölümü RAM tipi, Speed: 1600 Mhz ise RAM hızını göstermektedir. BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır. sudo dmidecode -t 17 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000C, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelA-DIMM0 Bank Locator: BANK 0 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Samsung Serial Number: 00000000 Asset Tag: 9876543210 Part Number: M471B5173EB0-YK0 Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x000E, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelA-DIMM1 Bank Locator: BANK 1 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown Handle 0x000F, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelB-DIMM0 Bank Locator: BANK 2 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Kingston Serial Number: 573A23B6 Asset Tag: 9876543210 Part Number: 99U5469-045.A00LF Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x0011, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelB-DIMM1 Bank Locator: BANK 3 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown lshw Donanımınız ile ilgili detaylı bilgilerin tamamını lshw  komutu ile elde edebilirsiniz. Aşağıdaki örnekte, memory  bilgileri gösterilmiştir. sudo lshw  komutuyla tüm bilgileri elde etmeniz mümkündür. sudo lshw -short -C memory H/W path Device Class Description ======================================================= /0/0 memory 64KiB BIOS /0/7/8 memory 1MiB L2 cache /0/7/9 memory 256KiB L1 cache /0/7/a memory 6MiB L3 cache /0/b memory 8GiB System Memory /0/b/0 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/1 memory DIMM [empty] /0/b/2 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/3 memory DIMM [empty] Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz." /><link rel="canonical" href="http://localhost:1313/tr/ram-hizini-ve-tipini-ogrenme/" itemprop="url" />
 
 <meta property="og:title" content="RAM Hızını ve Tipini Öğrenme" />
 <meta property="og:description" content="
@@ -30,25 +28,248 @@ Swap:             0           0           0
 
 
 
-total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir." />
+total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.
+cat /proc/meminfo
+    
+
+meminfo&nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&nbsp;free&nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.
+
+cat /proc/meminfo
+MemTotal:        8061380 kB
+MemFree:         5309524 kB
+MemAvailable:    6324656 kB
+Buffers:          132880 kB
+Cached:          1107684 kB
+SwapCached:            0 kB
+Active:          1749032 kB
+Inactive:         696600 kB
+Active(anon):    1206752 kB
+Inactive(anon):    43156 kB
+Active(file):     542280 kB
+Inactive(file):   653444 kB
+Unevictable:        1856 kB
+Mlocked:            1856 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                12 kB
+Writeback:             0 kB
+AnonPages:       1202772 kB
+Mapped:           350092 kB
+Shmem:             44848 kB
+Slab:             124752 kB
+SReclaimable:      79624 kB
+SUnreclaim:        45128 kB
+KernelStack:        9648 kB
+PageTables:        34432 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4030688 kB
+Committed_AS:    4736008 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    385024 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      282052 kB
+DirectMap2M:     4847616 kB
+DirectMap1G:     3145728 kB
+
+vmstat -s
+    
+
+vmstat -s&nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&nbsp;vmstat --help&nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.
+
+vmstat -s
+      8061380 K total memory
+      1452864 K used memory
+      1824532 K active memory
+       723452 K inactive memory
+      5204380 K free memory
+       135560 K buffer memory
+      1268576 K swap cache
+            0 K total swap
+            0 K used swap
+            0 K free swap
+        23886 non-nice user cpu ticks
+          227 nice user cpu ticks
+         6408 system cpu ticks
+      1505691 idle cpu ticks
+         8786 IO-wait cpu ticks
+            0 IRQ cpu ticks
+          513 softirq cpu ticks
+            0 stolen cpu ticks
+      1208707 pages paged in
+       182300 pages paged out
+            0 pages swapped in
+            0 pages swapped out
+      1521903 interrupts
+      5105745 CPU context switches
+   1483203820 boot time
+         6796 forks
+
+dmidecode -t 16
+    
+
+dmidecode -t 16&nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&nbsp;dmidecode&nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&nbsp;Maksimum Capacity: 32 GB&nbsp; ve&nbsp;Number of Devices : 4&nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.
+
+***Soru*** : O halde komut çıktısı neden böyle gösteriyor?
+
+***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.
+
+sudo dmidecode -t 16
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x000B, DMI type 16, 23 bytes
+Physical Memory Array
+Location: System Board Or Motherboard
+Use: System Memory
+Error Correction Type: None
+Maximum Capacity: 32 GB
+Error Information Handle: Not Provided
+Number Of Devices: 4
+
+dmidecode -t 17
+    
+
+Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&nbsp;Type: DDR3&nbsp; bölümü RAM tipi,&nbsp;Speed: 1600 Mhz&nbsp;ise RAM hızını göstermektedir.
+
+BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.
+
+sudo dmidecode -t 17
+
+# dmidecode 3.0
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x000C, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MHz
+	Manufacturer: Samsung
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: M471B5173EB0-YK0  
+	Rank: 1
+	Configured Clock Speed: 1600 MHz
+
+Handle 0x000E, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 1
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
+	Serial Number: [Empty]
+	Asset Tag: 9876543210
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x000F, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 4096 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 2
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MHz
+	Manufacturer: Kingston
+	Serial Number: 573A23B6
+	Asset Tag: 9876543210
+	Part Number: 99U5469-045.A00LF 
+	Rank: 1
+	Configured Clock Speed: 1600 MHz
+
+Handle 0x0011, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x000B
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 3
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: [Empty]
+	Serial Number: [Empty]
+	Asset Tag: 9876543210
+	Part Number: [Empty]
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+lshw
+    
+
+Donanımınız ile ilgili detaylı bilgilerin tamamını&nbsp;lshw&nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&nbsp;memory&nbsp; bilgileri gösterilmiştir.&nbsp;sudo lshw&nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.
+
+sudo lshw -short -C memory
+
+H/W path         Device      Class          Description
+=======================================================
+/0/0                         memory         64KiB BIOS
+/0/7/8                       memory         1MiB L2 cache
+/0/7/9                       memory         256KiB L1 cache
+/0/7/a                       memory         6MiB L3 cache
+/0/b                         memory         8GiB System Memory
+/0/b/0                       memory         4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns)
+/0/b/1                       memory         DIMM [empty]
+/0/b/2                       memory         4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns)
+/0/b/3                       memory         DIMM [empty]
+
+
+Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/ram-hizini-ve-tipini-ogrenme/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2016-12-31T02:04:00+00:00" />
 <meta property="article:modified_time" content="2016-12-31T02:04:00+00:00" />
 
   <meta itemprop="name" content="RAM Hızını ve Tipini Öğrenme">
-  <meta itemprop="description" content="Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
-free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
-free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.">
+  <meta itemprop="description" content="Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz. free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz. free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir. cat /proc/meminfo meminfo  dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde free  komutundan daha detaylı bilgileri elde etmek mümkündür. cat /proc/meminfo MemTotal: 8061380 kB MemFree: 5309524 kB MemAvailable: 6324656 kB Buffers: 132880 kB Cached: 1107684 kB SwapCached: 0 kB Active: 1749032 kB Inactive: 696600 kB Active(anon): 1206752 kB Inactive(anon): 43156 kB Active(file): 542280 kB Inactive(file): 653444 kB Unevictable: 1856 kB Mlocked: 1856 kB SwapTotal: 0 kB SwapFree: 0 kB Dirty: 12 kB Writeback: 0 kB AnonPages: 1202772 kB Mapped: 350092 kB Shmem: 44848 kB Slab: 124752 kB SReclaimable: 79624 kB SUnreclaim: 45128 kB KernelStack: 9648 kB PageTables: 34432 kB NFS_Unstable: 0 kB Bounce: 0 kB WritebackTmp: 0 kB CommitLimit: 4030688 kB Committed_AS: 4736008 kB VmallocTotal: 34359738367 kB VmallocUsed: 0 kB VmallocChunk: 0 kB HardwareCorrupted: 0 kB AnonHugePages: 385024 kB CmaTotal: 0 kB CmaFree: 0 kB HugePages_Total: 0 HugePages_Free: 0 HugePages_Rsvd: 0 HugePages_Surp: 0 Hugepagesize: 2048 kB DirectMap4k: 282052 kB DirectMap2M: 4847616 kB DirectMap1G: 3145728 kB vmstat -s vmstat -s  komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için vmstat --help  komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz. vmstat -s 8061380 K total memory 1452864 K used memory 1824532 K active memory 723452 K inactive memory 5204380 K free memory 135560 K buffer memory 1268576 K swap cache 0 K total swap 0 K used swap 0 K free swap 23886 non-nice user cpu ticks 227 nice user cpu ticks 6408 system cpu ticks 1505691 idle cpu ticks 8786 IO-wait cpu ticks 0 IRQ cpu ticks 513 softirq cpu ticks 0 stolen cpu ticks 1208707 pages paged in 182300 pages paged out 0 pages swapped in 0 pages swapped out 1521903 interrupts 5105745 CPU context switches 1483203820 boot time 6796 forks dmidecode -t 16 dmidecode -t 16  komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir. dmidecode  doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda, Maksimum Capacity: 32 GB  ve Number of Devices : 4  görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir. ***Soru*** : O halde komut çıktısı neden böyle gösteriyor? ***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur. sudo dmidecode -t 16 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000B, DMI type 16, 23 bytes Physical Memory Array Location: System Board Or Motherboard Use: System Memory Error Correction Type: None Maximum Capacity: 32 GB Error Information Handle: Not Provided Number Of Devices: 4 dmidecode -t 17 Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir. Type: DDR3  bölümü RAM tipi, Speed: 1600 Mhz ise RAM hızını göstermektedir. BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır. sudo dmidecode -t 17 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000C, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelA-DIMM0 Bank Locator: BANK 0 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Samsung Serial Number: 00000000 Asset Tag: 9876543210 Part Number: M471B5173EB0-YK0 Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x000E, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelA-DIMM1 Bank Locator: BANK 1 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown Handle 0x000F, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelB-DIMM0 Bank Locator: BANK 2 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Kingston Serial Number: 573A23B6 Asset Tag: 9876543210 Part Number: 99U5469-045.A00LF Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x0011, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelB-DIMM1 Bank Locator: BANK 3 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown lshw Donanımınız ile ilgili detaylı bilgilerin tamamını lshw  komutu ile elde edebilirsiniz. Aşağıdaki örnekte, memory  bilgileri gösterilmiştir. sudo lshw  komutuyla tüm bilgileri elde etmeniz mümkündür. sudo lshw -short -C memory H/W path Device Class Description ======================================================= /0/0 memory 64KiB BIOS /0/7/8 memory 1MiB L2 cache /0/7/9 memory 256KiB L1 cache /0/7/a memory 6MiB L3 cache /0/b memory 8GiB System Memory /0/b/0 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/1 memory DIMM [empty] /0/b/2 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/3 memory DIMM [empty] Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.">
   <meta itemprop="datePublished" content="2016-12-31T02:04:00+00:00">
   <meta itemprop="dateModified" content="2016-12-31T02:04:00+00:00">
-  <meta itemprop="wordCount" content="982">
+  <meta itemprop="wordCount" content="984">
   <meta itemprop="keywords" content="Linux Nasıl">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RAM Hızını ve Tipini Öğrenme">
-  <meta name="twitter:description" content="Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
-free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
-free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.">
+  <meta name="twitter:description" content="Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz. free free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz. free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42872 1362248 6370836 Swap: 0 0 0 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir. cat /proc/meminfo meminfo  dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde free  komutundan daha detaylı bilgileri elde etmek mümkündür. cat /proc/meminfo MemTotal: 8061380 kB MemFree: 5309524 kB MemAvailable: 6324656 kB Buffers: 132880 kB Cached: 1107684 kB SwapCached: 0 kB Active: 1749032 kB Inactive: 696600 kB Active(anon): 1206752 kB Inactive(anon): 43156 kB Active(file): 542280 kB Inactive(file): 653444 kB Unevictable: 1856 kB Mlocked: 1856 kB SwapTotal: 0 kB SwapFree: 0 kB Dirty: 12 kB Writeback: 0 kB AnonPages: 1202772 kB Mapped: 350092 kB Shmem: 44848 kB Slab: 124752 kB SReclaimable: 79624 kB SUnreclaim: 45128 kB KernelStack: 9648 kB PageTables: 34432 kB NFS_Unstable: 0 kB Bounce: 0 kB WritebackTmp: 0 kB CommitLimit: 4030688 kB Committed_AS: 4736008 kB VmallocTotal: 34359738367 kB VmallocUsed: 0 kB VmallocChunk: 0 kB HardwareCorrupted: 0 kB AnonHugePages: 385024 kB CmaTotal: 0 kB CmaFree: 0 kB HugePages_Total: 0 HugePages_Free: 0 HugePages_Rsvd: 0 HugePages_Surp: 0 Hugepagesize: 2048 kB DirectMap4k: 282052 kB DirectMap2M: 4847616 kB DirectMap1G: 3145728 kB vmstat -s vmstat -s  komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için vmstat --help  komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz. vmstat -s 8061380 K total memory 1452864 K used memory 1824532 K active memory 723452 K inactive memory 5204380 K free memory 135560 K buffer memory 1268576 K swap cache 0 K total swap 0 K used swap 0 K free swap 23886 non-nice user cpu ticks 227 nice user cpu ticks 6408 system cpu ticks 1505691 idle cpu ticks 8786 IO-wait cpu ticks 0 IRQ cpu ticks 513 softirq cpu ticks 0 stolen cpu ticks 1208707 pages paged in 182300 pages paged out 0 pages swapped in 0 pages swapped out 1521903 interrupts 5105745 CPU context switches 1483203820 boot time 6796 forks dmidecode -t 16 dmidecode -t 16  komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir. dmidecode  doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda, Maksimum Capacity: 32 GB  ve Number of Devices : 4  görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir. ***Soru*** : O halde komut çıktısı neden böyle gösteriyor? ***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur. sudo dmidecode -t 16 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000B, DMI type 16, 23 bytes Physical Memory Array Location: System Board Or Motherboard Use: System Memory Error Correction Type: None Maximum Capacity: 32 GB Error Information Handle: Not Provided Number Of Devices: 4 dmidecode -t 17 Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir. Type: DDR3  bölümü RAM tipi, Speed: 1600 Mhz ise RAM hızını göstermektedir. BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır. sudo dmidecode -t 17 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x000C, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelA-DIMM0 Bank Locator: BANK 0 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Samsung Serial Number: 00000000 Asset Tag: 9876543210 Part Number: M471B5173EB0-YK0 Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x000E, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelA-DIMM1 Bank Locator: BANK 1 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown Handle 0x000F, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: 64 bits Data Width: 64 bits Size: 4096 MB Form Factor: SODIMM Set: None Locator: ChannelB-DIMM0 Bank Locator: BANK 2 Type: DDR3 Type Detail: Synchronous Speed: 1600 MHz Manufacturer: Kingston Serial Number: 573A23B6 Asset Tag: 9876543210 Part Number: 99U5469-045.A00LF Rank: 1 Configured Clock Speed: 1600 MHz Handle 0x0011, DMI type 17, 34 bytes Memory Device Array Handle: 0x000B Error Information Handle: Not Provided Total Width: Unknown Data Width: Unknown Size: No Module Installed Form Factor: DIMM Set: None Locator: ChannelB-DIMM1 Bank Locator: BANK 3 Type: Unknown Type Detail: None Speed: Unknown Manufacturer: [Empty] Serial Number: [Empty] Asset Tag: 9876543210 Part Number: [Empty] Rank: Unknown Configured Clock Speed: Unknown lshw Donanımınız ile ilgili detaylı bilgilerin tamamını lshw  komutu ile elde edebilirsiniz. Aşağıdaki örnekte, memory  bilgileri gösterilmiştir. sudo lshw  komutuyla tüm bilgileri elde etmeniz mümkündür. sudo lshw -short -C memory H/W path Device Class Description ======================================================= /0/0 memory 64KiB BIOS /0/7/8 memory 1MiB L2 cache /0/7/9 memory 256KiB L1 cache /0/7/a memory 6MiB L3 cache /0/b memory 8GiB System Memory /0/b/0 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/1 memory DIMM [empty] /0/b/2 memory 4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns) /0/b/3 memory DIMM [empty] Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9011,39 +9232,39 @@ free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#freeh2"
+                href="#free"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >free&lt;/h2&gt;</a>
+              >free</a>
             </li>
           <li>
               <a
-                href="#cat-procmeminfoh2"
+                href="#cat-procmeminfo"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >cat /proc/meminfo&lt;/h2&gt;</a>
+              >cat /proc/meminfo</a>
             </li>
           <li>
               <a
-                href="#vmstat--sh2"
+                href="#vmstat--s"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >vmstat -s&lt;/h2&gt;</a>
+              >vmstat -s</a>
             </li>
           <li>
               <a
-                href="#dmidecode--t-16h2"
+                href="#dmidecode--t-16"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >dmidecode -t 16&lt;/h2&gt;</a>
+              >dmidecode -t 16</a>
             </li>
           <li>
               <a
-                href="#dmidecode--t-17h2"
+                href="#dmidecode--t-17"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >dmidecode -t 17&lt;/h2&gt;</a>
+              >dmidecode -t 17</a>
             </li>
           <li>
               <a
-                href="#lshwh2"
+                href="#lshw"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >lshw&lt;/h2&gt;</a>
+              >lshw</a>
             </li>
           </ul>
   
@@ -9702,27 +9923,27 @@ free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#freeh2">free
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#free">free
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#cat-procmeminfoh2">cat /proc/meminfo
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#cat-procmeminfo">cat /proc/meminfo
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#vmstat--sh2">vmstat -s
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#vmstat--s">vmstat -s
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dmidecode--t-16h2">dmidecode -t 16
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dmidecode--t-16">dmidecode -t 16
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dmidecode--t-17h2">dmidecode -t 17
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dmidecode--t-17">dmidecode -t 17
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#lshwh2">lshw
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#lshw">lshw
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9756,11 +9977,11 @@ free total used free shared buff/cache available Mem: 8061380 1342316 5356816 42
                 </a></div>
         <div class="content">
           <!-- wp:paragraph -->
-<p>Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.</p>
-<h2>free</h2><span class="hx-absolute -hx-mt-20" id="freeh2"></span>
-    <a href="#freeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
+<h2>free<span class="hx-absolute -hx-mt-20" id="free"></span>
+    <a href="#free" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>free&nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.</p>
+<p>free&nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">free
               total        used        free      shared  buff/cache   available
@@ -9769,11 +9990,11 @@ Swap:             0           0           0
 </pre>
 <!-- /wp:preformatted -->
 <!-- wp:paragraph -->
-<p>total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.</p>
-<h2>cat /proc/meminfo</h2><span class="hx-absolute -hx-mt-20" id="cat-procmeminfoh2"></span>
-    <a href="#cat-procmeminfoh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.
+<h2>cat /proc/meminfo<span class="hx-absolute -hx-mt-20" id="cat-procmeminfo"></span>
+    <a href="#cat-procmeminfo" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>meminfo&nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&nbsp;free&nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.</p>
+<p>meminfo&nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&nbsp;free&nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">cat /proc/meminfo
 MemTotal:        8061380 kB
@@ -9823,10 +10044,10 @@ DirectMap4k:      282052 kB
 DirectMap2M:     4847616 kB
 DirectMap1G:     3145728 kB</pre>
 <!-- /wp:preformatted -->
-<h2>vmstat -s</h2><span class="hx-absolute -hx-mt-20" id="vmstat--sh2"></span>
-    <a href="#vmstat--sh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>vmstat -s<span class="hx-absolute -hx-mt-20" id="vmstat--s"></span>
+    <a href="#vmstat--s" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>vmstat -s&nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&nbsp;vmstat --help&nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.</p>
+<p>vmstat -s&nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&nbsp;vmstat --help&nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">vmstat -s
       8061380 K total memory
@@ -9856,14 +10077,14 @@ DirectMap1G:     3145728 kB</pre>
    1483203820 boot time
          6796 forks</pre>
 <!-- /wp:preformatted -->
-<h2>dmidecode -t 16</h2><span class="hx-absolute -hx-mt-20" id="dmidecode--t-16h2"></span>
-    <a href="#dmidecode--t-16h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>dmidecode -t 16<span class="hx-absolute -hx-mt-20" id="dmidecode--t-16"></span>
+    <a href="#dmidecode--t-16" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>dmidecode -t 16&nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&nbsp;dmidecode&nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&nbsp;Maksimum Capacity: 32 GB&nbsp; ve&nbsp;Number of Devices : 4&nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.</p>
+<p>dmidecode -t 16&nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&nbsp;dmidecode&nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&nbsp;Maksimum Capacity: 32 GB&nbsp; ve&nbsp;Number of Devices : 4&nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.
 <!-- wp:paragraph -->
-<p><strong>Soru</strong>: O halde komut çıktısı neden böyle gösteriyor?</p>
+<p>***Soru*** : O halde komut çıktısı neden böyle gösteriyor?
 <!-- wp:paragraph -->
-<p><strong>Cevap</strong>: Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.</p>
+<p>***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo dmidecode -t 16
 # dmidecode 3.0
@@ -9879,12 +10100,12 @@ Maximum Capacity: 32 GB
 Error Information Handle: Not Provided
 Number Of Devices: 4</pre>
 <!-- /wp:preformatted -->
-<h2>dmidecode -t 17</h2><span class="hx-absolute -hx-mt-20" id="dmidecode--t-17h2"></span>
-    <a href="#dmidecode--t-17h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>dmidecode -t 17<span class="hx-absolute -hx-mt-20" id="dmidecode--t-17"></span>
+    <a href="#dmidecode--t-17" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2'de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&nbsp;Type: DDR3&nbsp; bölümü RAM tipi,&nbsp;Speed: 1600 Mhz&nbsp;ise RAM hızını göstermektedir.</p>
+<p>Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2'de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&nbsp;Type: DDR3&nbsp; bölümü RAM tipi,&nbsp;Speed: 1600 Mhz&nbsp;ise RAM hızını göstermektedir.
 <!-- wp:paragraph -->
-<p>BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.</p>
+<p>BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo dmidecode -t 17
 
@@ -9976,10 +10197,10 @@ Memory Device
 	Rank: Unknown
 	Configured Clock Speed: Unknown</pre>
 <!-- /wp:preformatted -->
-<h2>lshw</h2><span class="hx-absolute -hx-mt-20" id="lshwh2"></span>
-    <a href="#lshwh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>lshw<span class="hx-absolute -hx-mt-20" id="lshw"></span>
+    <a href="#lshw" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Donanımınız ile ilgili detaylı bilgilerin tamamını&nbsp;lshw&nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&nbsp;memory&nbsp; bilgileri gösterilmiştir.&nbsp;sudo lshw&nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.</p>
+<p>Donanımınız ile ilgili detaylı bilgilerin tamamını&nbsp;lshw&nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&nbsp;memory&nbsp; bilgileri gösterilmiştir.&nbsp;sudo lshw&nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo lshw -short -C memory
 
@@ -9996,7 +10217,7 @@ H/W path         Device      Class          Description
 /0/b/3                       memory         DIMM [empty]</pre>
 <!-- /wp:preformatted -->
 <!-- wp:paragraph -->
-<p>Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.</p>
+<p>Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.
 
         </div>
         

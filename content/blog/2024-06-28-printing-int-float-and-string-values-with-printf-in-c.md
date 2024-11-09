@@ -29,7 +29,7 @@ title: Printing int, float and string values ​​with printf in C++
 url: /printing-int-float-and-string-values-with-printf-in-c/
 ---
 
-  This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.</p>
+  This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.
  
 
 <!-- wp:code -->

@@ -38,42 +38,42 @@ url: /almalinux-9-how-to-configure-apache-httpd-to-use-php-scripts/
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Table of Contents</h3>
+
+ ### Table of Contents
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to PHP and Apache</li>
+- Introduction to PHP and Apache 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Prerequisites</li>
+- Prerequisites 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Step 1: Installing Apache and PHP on AlmaLinux 9</li>
+- Step 1: Installing Apache and PHP on AlmaLinux 9 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Step 2: Configuring Apache to Use PHP</li>
+- Step 2: Configuring Apache to Use PHP 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Step 3: Testing PHP with Apache</li>
+- Step 3: Testing PHP with Apache 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Step 4: Configuring PHP for Optimal Performance</li>
+- Step 4: Configuring PHP for Optimal Performance 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Step 5: Securing Your PHP Installation</li>
+- Step 5: Securing Your PHP Installation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+- Conclusion 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -81,7 +81,7 @@ url: /almalinux-9-how-to-configure-apache-httpd-to-use-php-scripts/
 <!-- /wp:separator -->
 
  
- ## 1. Introduction to PHP and Apache</h2>
+ ## 1. Introduction to PHP and Apache
 <!-- /wp:heading -->
 
   Apache, also known as <code>httpd</code>, is one of the most popular web servers in the world, and PHP is a highly versatile scripting language that can be embedded into HTML. When these two technologies are combined, Apache serves the web pages while PHP processes any server-side scripts within them. 
@@ -98,7 +98,7 @@ url: /almalinux-9-how-to-configure-apache-httpd-to-use-php-scripts/
 <!-- /wp:separator -->
 
  
- ## 2. Prerequisites</h2>
+ ## 2. Prerequisites
 <!-- /wp:heading -->
 
   Before you start, make sure you meet the following requirements: 
@@ -106,16 +106,16 @@ url: /almalinux-9-how-to-configure-apache-httpd-to-use-php-scripts/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AlmaLinux 9</strong> installed on your system.</li>
+- ***AlmaLinux 9***  installed on your system. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Root or sudo access</strong> to configure Apache and PHP.</li>
+- ***Root or sudo access***  to configure Apache and PHP. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A basic understanding of how to use the Linux terminal.</li>
-<!-- /wp:list-item --></ul>
+- A basic understanding of how to use the Linux terminal. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -123,14 +123,14 @@ url: /almalinux-9-how-to-configure-apache-httpd-to-use-php-scripts/
 <!-- /wp:separator -->
 
  
- ## 3. Step 1: Installing Apache and PHP on AlmaLinux 9</h2>
+ ## 3. Step 1: Installing Apache and PHP on AlmaLinux 9
 <!-- /wp:heading -->
 
   The first step in configuring Apache to use PHP is to install both Apache and PHP. These packages are available in the AlmaLinux 9 repository and can be installed using the <code>dnf</code> package manager. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Install Apache</h3>
+
+ ### Install Apache
 <!-- /wp:heading -->
 
   To install Apache, run the following command: 
@@ -155,8 +155,8 @@ sudo systemctl start httpd</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status httpd</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Install PHP</h3>
+
+ ### Install PHP
 <!-- /wp:heading -->
 
   Next, install PHP along with some common PHP extensions. The basic PHP package includes the core functionality, but many applications and frameworks require additional extensions. You can install PHP and its commonly used extensions using the following command: 
@@ -171,32 +171,32 @@ sudo systemctl start httpd</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>php</strong>: The core PHP package.</li>
+- ***php*** : The core PHP package. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-mysqlnd</strong>: The MySQL driver for PHP.</li>
+- ***php-mysqlnd*** : The MySQL driver for PHP. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-pdo</strong>: The PHP Data Objects (PDO) extension.</li>
+- ***php-pdo*** : The PHP Data Objects (PDO) extension. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-gd</strong>: PHP support for image processing.</li>
+- ***php-gd*** : PHP support for image processing. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-mbstring</strong>: Provides multibyte string support in PHP.</li>
+- ***php-mbstring*** : Provides multibyte string support in PHP. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-xml</strong>: PHP support for XML processing.</li>
+- ***php-xml*** : PHP support for XML processing. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>php-json</strong>: PHP support for working with JSON data.</li>
-<!-- /wp:list-item --></ul>
+- ***php-json*** : PHP support for working with JSON data. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Once PHP is installed, restart the Apache service to load the PHP module: 
@@ -211,14 +211,14 @@ sudo systemctl start httpd</code></pre>
 <!-- /wp:separator -->
 
  
- ## 4. Step 2: Configuring Apache to Use PHP</h2>
+ ## 4. Step 2: Configuring Apache to Use PHP
 <!-- /wp:heading -->
 
   Once Apache and PHP are installed, you need to configure Apache to handle PHP files correctly. This is done by ensuring that Apache can recognize PHP files, pass them to the PHP interpreter, and then return the output to the client (browser). 
  
 
-<!-- wp:heading {"level":3} -->
- ### Check PHP Module for Apache</h3>
+
+ ### Check PHP Module for Apache
 <!-- /wp:heading -->
 
   The PHP module should have been installed and enabled automatically with the <code>php</code> package. You can confirm that PHP support is loaded by checking the Apache configuration files. 
@@ -243,8 +243,8 @@ DirectoryIndex index.php index.html</code></pre>
   These lines ensure that Apache loads the PHP module and treats files with the <code>.php</code> extension as PHP scripts. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Test the PHP Configuration</h3>
+
+ ### Test the PHP Configuration
 <!-- /wp:heading -->
 
   To verify that PHP is properly integrated with Apache, create a simple PHP file in the web root directory. The default document root for Apache on AlmaLinux is <code>/var/www/html</code>. 
@@ -284,7 +284,7 @@ phpinfo();
 <!-- /wp:separator -->
 
  
- ## 5. Step 3: Testing PHP with Apache</h2>
+ ## 5. Step 3: Testing PHP with Apache
 <!-- /wp:heading -->
 
   To further confirm that PHP is working with Apache, you can create another PHP script that outputs dynamic content. 
@@ -321,14 +321,14 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <!-- /wp:separator -->
 
  
- ## 6. Step 4: Configuring PHP for Optimal Performance</h2>
+ ## 6. Step 4: Configuring PHP for Optimal Performance
 <!-- /wp:heading -->
 
   Now that PHP is functioning, it’s important to configure it for optimal performance. AlmaLinux uses PHP 7 or later, which includes several improvements in performance and memory usage, but there are still a few settings you can adjust to get the most out of your server. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Adjust PHP Settings</h3>
+
+ ### Adjust PHP Settings
 <!-- /wp:heading -->
 
   The PHP configuration file is located at <code>/etc/php.ini</code>. Open this file in a text editor: 
@@ -343,8 +343,8 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Memory Limit</strong>: Defines the maximum amount of memory a PHP script is allowed to use. You can increase this value based on your server resources. For example:</li>
-<!-- /wp:list-item --></ul>
+- ***Memory Limit*** : Defines the maximum amount of memory a PHP script is allowed to use. You can increase this value based on your server resources. For example: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -353,8 +353,8 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Upload File Size</strong>: Defines the maximum allowed size for file uploads. If you’re running applications that handle file uploads, such as a CMS, you may need to increase this value:</li>
-<!-- /wp:list-item --></ul>
+- ***Upload File Size*** : Defines the maximum allowed size for file uploads. If you’re running applications that handle file uploads, such as a CMS, you may need to increase this value: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -364,8 +364,8 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Max Execution Time</strong>: Specifies the maximum time in seconds a PHP script is allowed to run before it is terminated. This can help prevent poorly written scripts from using up server resources:</li>
-<!-- /wp:list-item --></ul>
+- ***Max Execution Time*** : Specifies the maximum time in seconds a PHP script is allowed to run before it is terminated. This can help prevent poorly written scripts from using up server resources: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -379,11 +379,11 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart httpd</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Opcode Caching</h3>
+
+ ### Opcode Caching
 <!-- /wp:heading -->
 
-  PHP includes a built-in <strong>opcode cache</strong> called <strong>OPcache</strong> that speeds up script execution by storing precompiled script bytecode in memory. To check if OPcache is enabled, look for it in the output of the <code>phpinfo()</code> function (from the <code>info.php</code> file we created earlier). 
+  PHP includes a built-in ***opcode cache***  called ***OPcache***  that speeds up script execution by storing precompiled script bytecode in memory. To check if OPcache is enabled, look for it in the output of the <code>phpinfo()</code> function (from the <code>info.php</code> file we created earlier). 
  
 
   If it’s not enabled, you can enable it in the <code>/etc/php.d/10-opcache.ini</code> file. Set the following options to enable and configure OPcache: 
@@ -408,14 +408,14 @@ opcache.revalidate_freq=60</code></pre>
 <!-- /wp:separator -->
 
  
- ## 7. Step 5: Securing Your PHP Installation</h2>
+ ## 7. Step 5: Securing Your PHP Installation
 <!-- /wp:heading -->
 
   Running PHP scripts can expose your server to potential vulnerabilities if not properly secured. Here are some tips to help secure your PHP environment: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Disable Unnecessary Functions</h3>
+
+ ### Disable Unnecessary Functions
 <!-- /wp:heading -->
 
   Many PHP installations enable potentially dangerous functions by default. These functions can be disabled to reduce the risk of exploitation. Open the <code>/etc/php.ini</code> file and find the <code>disable_functions</code> directive. Add the following functions to the list to disable them: 
@@ -428,8 +428,8 @@ opcache.revalidate_freq=60</code></pre>
   This will prevent these functions from being used in PHP scripts. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Hide PHP Version</h3>
+
+ ### Hide PHP Version
 <!-- /wp:heading -->
 
   By default, PHP exposes its version number in HTTP headers and error messages. To disable this, set the following directive in <code>/etc/php.ini</code>: 
@@ -439,8 +439,8 @@ opcache.revalidate_freq=60</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">expose_php = Off</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Enable Error Logging</h3>
+
+ ### Enable Error Logging
 <!-- /wp:heading -->
 
   Instead of displaying errors on web pages (which could expose sensitive information to attackers), log errors to a file: 
@@ -465,7 +465,7 @@ sudo chmod 600 /var/log/php_errors.log</code></pre>
 <!-- /wp:separator -->
 
  
- ## 8. Conclusion</h2>
+ ## 8. Conclusion
 <!-- /wp:heading -->
 
   Configuring Apache to use PHP on AlmaLinux 9 is an essential step in setting up a powerful 

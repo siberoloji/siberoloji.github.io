@@ -23,14 +23,14 @@ url: /view-binding-with-activities-in-an-android-project/
 ---
 
 <!-- wp:quote -->
-<blockquote class="wp-block-quote">  <em>View binding</em>&nbsp;is a feature that allows you to more easily write code that interacts with views. Once view binding is enabled in a module, it generates a&nbsp;<em>binding class</em>&nbsp;for each XML layout file present in that module. An instance of a binding class contains direct references to all views that have an ID in the corresponding layout. </p>
+<blockquote class="wp-block-quote">  <em>View binding</em>&nbsp;is a feature that allows you to more easily write code that interacts with views. Once view binding is enabled in a module, it generates a&nbsp;<em>binding class</em>&nbsp;for each XML layout file present in that module. An instance of a binding class contains direct references to all views that have an ID in the corresponding layout. 
  
 
-  In most cases, view binding replaces&nbsp;<code>findViewById</code></p>
+  In most cases, view binding replaces&nbsp;<code>findViewById</code>
  <cite>Credit: <a rel="noreferrer noopener" href="https://developer.android.com/topic/libraries/view-binding" target="_blank">developer.android.com</a></cite></blockquote>
 <!-- /wp:quote -->
 
-  To activate View Binding, we need to add a build option in the module-level build.gradle file. Modify your build.gradle (Module) file as shown below.</p>
+  To activate View Binding, we need to add a build option in the module-level build.gradle file. Modify your build.gradle (Module) file as shown below.
  
 
 <!-- wp:code -->
@@ -44,7 +44,7 @@ url: /view-binding-with-activities-in-an-android-project/
 }</code></pre>
 <!-- /wp:code -->
 
-  For example, in the beginning, we have an activity_main.xml layout file. After activating View Binding, a new Class will be created named ActivityMainBinding. Now we can use this class in our activity file.</p>
+  For example, in the beginning, we have an activity_main.xml layout file. After activating View Binding, a new Class will be created named ActivityMainBinding. Now we can use this class in our activity file.
  
 
 <!-- wp:code -->

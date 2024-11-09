@@ -11,28 +11,294 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Installing FreeSWITCH on Alma Linux: A Step-by-Step Guide – Siberoloji</title>
-  <meta name="description" content=" Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux." /><link rel="canonical" href="http://localhost:1313/installing-freeswitch-on-alma-linux-a-step-by-step-guide/" itemprop="url" />
+  <meta name="description" content="Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux. Prerequisites Before beginning the installation, make sure you have: - ***A server or virtual machine running Alma Linux*** (preferably version 8 or newer). Root access to the server or a user with sudo privileges. Basic understanding of Linux commands . An internet connection to download necessary packages. Step 1: Update the Alma Linux System Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates. sudo dnf update -y Once the update is complete, reboot the system if necessary: sudo reboot Step 2: Install Development Tools and Dependencies FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command: sudo dnf groupinstall &#34;Development Tools&#34; -y sudo dnf install git wget cmake autoconf automake libtool -y Next, install additional dependencies that FreeSWITCH requires: sudo dnf install epel-release -y sudo dnf install libedit-devel sqlite-devel pcre-devel speex-devel openssl-devel -y Step 3: Set Up FreeSWITCH User and Directories For security and management, it’s best to create a dedicated user for running FreeSWITCH. sudo adduser --system --no-create-home --group freeswitch Create necessary directories for FreeSWITCH: sudo mkdir -p /usr/local/freeswitch sudo mkdir -p /usr/local/freeswitch/log sudo mkdir -p /usr/local/freeswitch/run Assign appropriate permissions to the FreeSWITCH user: sudo chown -R freeswitch:freeswitch /usr/local/freeswitch sudo chmod -R 775 /usr/local/freeswitch Step 4: Download FreeSWITCH Source Code Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH. cd /usr/src sudo git clone https://github.com/signalwire/freeswitch.git cd freeswitch sudo git checkout v1.10 The checkout command will switch to the stable version 1.10, which is suitable for production use. Step 5: Build and Compile FreeSWITCH FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations: ./bootstrap.sh ./configure After configuring, compile the source code using: make This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running: sudo make install Step 6: Install Additional FreeSWITCH Modules FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment: sudo make cd-sounds-install cd-moh-install sudo make samples The samples command installs sample configuration files in /usr/local/freeswitch/conf. Step 7: Configure Systemd Service for FreeSWITCH To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file: sudo nano /etc/systemd/system/freeswitch.service Insert the following configuration into the file: [Unit] Description=FreeSWITCH Service After=network.target [Service] Type=forking ExecStart=/usr/local/freeswitch/bin/freeswitch -ncwait -nonat ExecStop=/usr/local/freeswitch/bin/freeswitch -stop PIDFile=/usr/local/freeswitch/run/freeswitch.pid User=freeswitch Group=freeswitch Restart=always LimitNOFILE=100000 [Install] WantedBy=multi-user.target Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service: sudo systemctl daemon-reload Enable the FreeSWITCH service to start automatically on boot: sudo systemctl enable freeswitch Step 8: Start FreeSWITCH Service Start FreeSWITCH by executing: sudo systemctl start freeswitch To confirm it’s running, check the status: sudo systemctl status freeswitch If the service is running, you should see an “active (running)” message. Step 9: Configure Firewall for FreeSWITCH To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses: - ***5060 (UDP)*** for SIP 5061 (UDP) for secure SIP (SIP-TLS) 16384–32768 (UDP) for RTP (Real-Time Protocol) Use the following commands to open these ports: sudo firewall-cmd --add-port=5060/udp --permanent sudo firewall-cmd --add-port=5061/udp --permanent sudo firewall-cmd --add-port=16384-32768/udp --permanent sudo firewall-cmd --reload Step 10: Test FreeSWITCH Installation To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running: /usr/local/freeswitch/bin/fs_cli Once inside the CLI, you can test a few commands, such as: status sofia status These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up. Step 11: Basic Configuration Tips FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it: - ***Edit SIP Profiles*** : Modify SIP profiles in /usr/local/freeswitch/conf/sip_profiles to suit your network setup. Set Up Extensions : Define extensions in /usr/local/freeswitch/conf/dialplan/default.xml. Configure NAT : If behind NAT, add your public IP and local network information in the SIP profiles. Add Security Features : Enable password protections, and consider limiting IP access to the FreeSWITCH server. Troubleshooting Common Issues Here are a few common issues that might arise during installation and their solutions: - ***Missing Dependencies*** : Ensure all libraries are installed, especially openssl-devel and libedit-devel. Firewall Blocks : Confirm all required ports are open on the firewall. FreeSWITCH Doesn’t Start : Check the system log (journalctl -xe) for details on errors-preventing startup. Conclusion Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements. ***FAQs*** ***1. What is FreeSWITCH used for?*** FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions. ***2. Why use Alma Linux for FreeSWITCH?*** Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability. ***3. How much RAM is recommended for FreeSWITCH?*** For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls. ***4. Can FreeSWITCH run alongside other VoIP software?*** Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues. ***5. How do I secure FreeSWITCH?*** Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication. ***6. Where can I get additional FreeSWITCH modules?*** Modules can be installed from the FreeSWITCH source repository, and the FreeSWITCH documentation provides details on individual module functions and configurations." /><link rel="canonical" href="http://localhost:1313/installing-freeswitch-on-alma-linux-a-step-by-step-guide/" itemprop="url" />
 
 <meta property="og:title" content="Installing FreeSWITCH on Alma Linux: A Step-by-Step Guide" />
-<meta property="og:description" content="
-Introduction
+<meta property="og:description" content="Introduction
     
 
-FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux." />
+FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux.
+Prerequisites
+    
+
+Before beginning the installation, make sure you have:
+
+
+- ***A server or virtual machine running Alma Linux***  (preferably version 8 or newer). 
+
+
+
+Root access  to the server or a user with sudo privileges.
+
+
+
+
+Basic understanding of Linux commands .
+
+
+
+
+An internet connection  to download necessary packages.
+
+ 
+
+Step 1: Update the Alma Linux System
+    
+
+Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates.
+
+sudo dnf update -y
+
+
+Once the update is complete, reboot the system if necessary:
+
+sudo reboot
+
+Step 2: Install Development Tools and Dependencies
+    
+
+FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command:
+
+sudo dnf groupinstall &#34;Development Tools&#34; -y
+sudo dnf install git wget cmake autoconf automake libtool -y
+
+
+Next, install additional dependencies that FreeSWITCH requires:
+
+sudo dnf install epel-release -y
+sudo dnf install libedit-devel sqlite-devel pcre-devel speex-devel openssl-devel -y
+
+Step 3: Set Up FreeSWITCH User and Directories
+    
+
+For security and management, it’s best to create a dedicated user for running FreeSWITCH.
+
+sudo adduser --system --no-create-home --group freeswitch
+
+
+Create necessary directories for FreeSWITCH:
+
+sudo mkdir -p /usr/local/freeswitch
+sudo mkdir -p /usr/local/freeswitch/log
+sudo mkdir -p /usr/local/freeswitch/run
+
+
+Assign appropriate permissions to the FreeSWITCH user:
+
+sudo chown -R freeswitch:freeswitch /usr/local/freeswitch
+sudo chmod -R 775 /usr/local/freeswitch
+
+Step 4: Download FreeSWITCH Source Code
+    
+
+Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH.
+
+cd /usr/src
+sudo git clone https://github.com/signalwire/freeswitch.git
+cd freeswitch
+sudo git checkout v1.10
+
+
+The checkout command will switch to the stable version 1.10, which is suitable for production use.
+Step 5: Build and Compile FreeSWITCH
+    
+
+FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations:
+
+./bootstrap.sh
+./configure
+
+
+After configuring, compile the source code using:
+
+make
+
+
+This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running:
+
+sudo make install
+
+Step 6: Install Additional FreeSWITCH Modules
+    
+
+FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment:
+
+sudo make cd-sounds-install cd-moh-install
+sudo make samples
+
+
+The samples command installs sample configuration files in /usr/local/freeswitch/conf.
+Step 7: Configure Systemd Service for FreeSWITCH
+    
+
+To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file:
+
+sudo nano /etc/systemd/system/freeswitch.service
+
+
+Insert the following configuration into the file:
+
+[Unit]
+Description=FreeSWITCH Service
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/freeswitch/bin/freeswitch -ncwait -nonat
+ExecStop=/usr/local/freeswitch/bin/freeswitch -stop
+PIDFile=/usr/local/freeswitch/run/freeswitch.pid
+User=freeswitch
+Group=freeswitch
+Restart=always
+LimitNOFILE=100000
+
+[Install]
+WantedBy=multi-user.target
+
+
+Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service:
+
+sudo systemctl daemon-reload
+
+
+Enable the FreeSWITCH service to start automatically on boot:
+
+sudo systemctl enable freeswitch
+
+Step 8: Start FreeSWITCH Service
+    
+
+Start FreeSWITCH by executing:
+
+sudo systemctl start freeswitch
+
+
+To confirm it’s running, check the status:
+
+sudo systemctl status freeswitch
+
+
+If the service is running, you should see an “active (running)” message.
+Step 9: Configure Firewall for FreeSWITCH
+    
+
+To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses:
+
+
+- ***5060 (UDP)***  for SIP 
+
+
+
+5061 (UDP)  for secure SIP (SIP-TLS)
+
+
+
+
+16384–32768 (UDP)  for RTP (Real-Time Protocol)
+
+ 
+
+
+Use the following commands to open these ports:
+
+sudo firewall-cmd --add-port=5060/udp --permanent
+sudo firewall-cmd --add-port=5061/udp --permanent
+sudo firewall-cmd --add-port=16384-32768/udp --permanent
+sudo firewall-cmd --reload
+
+Step 10: Test FreeSWITCH Installation
+    
+
+To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running:
+
+/usr/local/freeswitch/bin/fs_cli
+
+
+Once inside the CLI, you can test a few commands, such as:
+
+status
+sofia status
+
+
+These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up.
+Step 11: Basic Configuration Tips
+    
+
+FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it:
+
+
+- ***Edit SIP Profiles*** : Modify SIP profiles in /usr/local/freeswitch/conf/sip_profiles to suit your network setup. 
+
+
+
+Set Up Extensions : Define extensions in /usr/local/freeswitch/conf/dialplan/default.xml.
+
+
+
+
+Configure NAT : If behind NAT, add your public IP and local network information in the SIP profiles.
+
+
+
+
+Add Security Features : Enable password protections, and consider limiting IP access to the FreeSWITCH server.
+
+ 
+
+Troubleshooting Common Issues
+    
+
+Here are a few common issues that might arise during installation and their solutions:
+
+
+- ***Missing Dependencies*** : Ensure all libraries are installed, especially openssl-devel and libedit-devel. 
+
+
+
+Firewall Blocks : Confirm all required ports are open on the firewall.
+
+
+
+
+FreeSWITCH Doesn’t Start : Check the system log (journalctl -xe) for details on errors-preventing startup.
+
+ 
+
+Conclusion
+    
+
+Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements.
+
+
+
+
+***FAQs*** 
+
+***1. What is FreeSWITCH used for?*** FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions.
+
+***2. Why use Alma Linux for FreeSWITCH?*** Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability.
+
+***3. How much RAM is recommended for FreeSWITCH?*** For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls.
+
+***4. Can FreeSWITCH run alongside other VoIP software?*** Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues.
+
+***5. How do I secure FreeSWITCH?*** Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication.
+
+***6. Where can I get additional FreeSWITCH modules?*** Modules can be installed from the FreeSWITCH source repository, and the FreeSWITCH documentation provides details on individual module functions and configurations." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/installing-freeswitch-on-alma-linux-a-step-by-step-guide/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-10-29T13:26:36+00:00" />
 <meta property="article:modified_time" content="2024-10-29T13:26:36+00:00" />
 
   <meta itemprop="name" content="Installing FreeSWITCH on Alma Linux: A Step-by-Step Guide">
-  <meta itemprop="description" content="Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux.">
+  <meta itemprop="description" content="Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux. Prerequisites Before beginning the installation, make sure you have: - ***A server or virtual machine running Alma Linux*** (preferably version 8 or newer). Root access to the server or a user with sudo privileges. Basic understanding of Linux commands . An internet connection to download necessary packages. Step 1: Update the Alma Linux System Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates. sudo dnf update -y Once the update is complete, reboot the system if necessary: sudo reboot Step 2: Install Development Tools and Dependencies FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command: sudo dnf groupinstall &#34;Development Tools&#34; -y sudo dnf install git wget cmake autoconf automake libtool -y Next, install additional dependencies that FreeSWITCH requires: sudo dnf install epel-release -y sudo dnf install libedit-devel sqlite-devel pcre-devel speex-devel openssl-devel -y Step 3: Set Up FreeSWITCH User and Directories For security and management, it’s best to create a dedicated user for running FreeSWITCH. sudo adduser --system --no-create-home --group freeswitch Create necessary directories for FreeSWITCH: sudo mkdir -p /usr/local/freeswitch sudo mkdir -p /usr/local/freeswitch/log sudo mkdir -p /usr/local/freeswitch/run Assign appropriate permissions to the FreeSWITCH user: sudo chown -R freeswitch:freeswitch /usr/local/freeswitch sudo chmod -R 775 /usr/local/freeswitch Step 4: Download FreeSWITCH Source Code Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH. cd /usr/src sudo git clone https://github.com/signalwire/freeswitch.git cd freeswitch sudo git checkout v1.10 The checkout command will switch to the stable version 1.10, which is suitable for production use. Step 5: Build and Compile FreeSWITCH FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations: ./bootstrap.sh ./configure After configuring, compile the source code using: make This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running: sudo make install Step 6: Install Additional FreeSWITCH Modules FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment: sudo make cd-sounds-install cd-moh-install sudo make samples The samples command installs sample configuration files in /usr/local/freeswitch/conf. Step 7: Configure Systemd Service for FreeSWITCH To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file: sudo nano /etc/systemd/system/freeswitch.service Insert the following configuration into the file: [Unit] Description=FreeSWITCH Service After=network.target [Service] Type=forking ExecStart=/usr/local/freeswitch/bin/freeswitch -ncwait -nonat ExecStop=/usr/local/freeswitch/bin/freeswitch -stop PIDFile=/usr/local/freeswitch/run/freeswitch.pid User=freeswitch Group=freeswitch Restart=always LimitNOFILE=100000 [Install] WantedBy=multi-user.target Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service: sudo systemctl daemon-reload Enable the FreeSWITCH service to start automatically on boot: sudo systemctl enable freeswitch Step 8: Start FreeSWITCH Service Start FreeSWITCH by executing: sudo systemctl start freeswitch To confirm it’s running, check the status: sudo systemctl status freeswitch If the service is running, you should see an “active (running)” message. Step 9: Configure Firewall for FreeSWITCH To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses: - ***5060 (UDP)*** for SIP 5061 (UDP) for secure SIP (SIP-TLS) 16384–32768 (UDP) for RTP (Real-Time Protocol) Use the following commands to open these ports: sudo firewall-cmd --add-port=5060/udp --permanent sudo firewall-cmd --add-port=5061/udp --permanent sudo firewall-cmd --add-port=16384-32768/udp --permanent sudo firewall-cmd --reload Step 10: Test FreeSWITCH Installation To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running: /usr/local/freeswitch/bin/fs_cli Once inside the CLI, you can test a few commands, such as: status sofia status These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up. Step 11: Basic Configuration Tips FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it: - ***Edit SIP Profiles*** : Modify SIP profiles in /usr/local/freeswitch/conf/sip_profiles to suit your network setup. Set Up Extensions : Define extensions in /usr/local/freeswitch/conf/dialplan/default.xml. Configure NAT : If behind NAT, add your public IP and local network information in the SIP profiles. Add Security Features : Enable password protections, and consider limiting IP access to the FreeSWITCH server. Troubleshooting Common Issues Here are a few common issues that might arise during installation and their solutions: - ***Missing Dependencies*** : Ensure all libraries are installed, especially openssl-devel and libedit-devel. Firewall Blocks : Confirm all required ports are open on the firewall. FreeSWITCH Doesn’t Start : Check the system log (journalctl -xe) for details on errors-preventing startup. Conclusion Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements. ***FAQs*** ***1. What is FreeSWITCH used for?*** FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions. ***2. Why use Alma Linux for FreeSWITCH?*** Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability. ***3. How much RAM is recommended for FreeSWITCH?*** For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls. ***4. Can FreeSWITCH run alongside other VoIP software?*** Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues. ***5. How do I secure FreeSWITCH?*** Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication. ***6. Where can I get additional FreeSWITCH modules?*** Modules can be installed from the FreeSWITCH source repository, and the FreeSWITCH documentation provides details on individual module functions and configurations.">
   <meta itemprop="datePublished" content="2024-10-29T13:26:36+00:00">
   <meta itemprop="dateModified" content="2024-10-29T13:26:36+00:00">
-  <meta itemprop="wordCount" content="1019">
+  <meta itemprop="wordCount" content="1031">
   <meta itemprop="keywords" content="Freeswitch">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Installing FreeSWITCH on Alma Linux: A Step-by-Step Guide">
-  <meta name="twitter:description" content="Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux.">
+  <meta name="twitter:description" content="Introduction FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux. Prerequisites Before beginning the installation, make sure you have: - ***A server or virtual machine running Alma Linux*** (preferably version 8 or newer). Root access to the server or a user with sudo privileges. Basic understanding of Linux commands . An internet connection to download necessary packages. Step 1: Update the Alma Linux System Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates. sudo dnf update -y Once the update is complete, reboot the system if necessary: sudo reboot Step 2: Install Development Tools and Dependencies FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command: sudo dnf groupinstall &#34;Development Tools&#34; -y sudo dnf install git wget cmake autoconf automake libtool -y Next, install additional dependencies that FreeSWITCH requires: sudo dnf install epel-release -y sudo dnf install libedit-devel sqlite-devel pcre-devel speex-devel openssl-devel -y Step 3: Set Up FreeSWITCH User and Directories For security and management, it’s best to create a dedicated user for running FreeSWITCH. sudo adduser --system --no-create-home --group freeswitch Create necessary directories for FreeSWITCH: sudo mkdir -p /usr/local/freeswitch sudo mkdir -p /usr/local/freeswitch/log sudo mkdir -p /usr/local/freeswitch/run Assign appropriate permissions to the FreeSWITCH user: sudo chown -R freeswitch:freeswitch /usr/local/freeswitch sudo chmod -R 775 /usr/local/freeswitch Step 4: Download FreeSWITCH Source Code Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH. cd /usr/src sudo git clone https://github.com/signalwire/freeswitch.git cd freeswitch sudo git checkout v1.10 The checkout command will switch to the stable version 1.10, which is suitable for production use. Step 5: Build and Compile FreeSWITCH FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations: ./bootstrap.sh ./configure After configuring, compile the source code using: make This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running: sudo make install Step 6: Install Additional FreeSWITCH Modules FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment: sudo make cd-sounds-install cd-moh-install sudo make samples The samples command installs sample configuration files in /usr/local/freeswitch/conf. Step 7: Configure Systemd Service for FreeSWITCH To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file: sudo nano /etc/systemd/system/freeswitch.service Insert the following configuration into the file: [Unit] Description=FreeSWITCH Service After=network.target [Service] Type=forking ExecStart=/usr/local/freeswitch/bin/freeswitch -ncwait -nonat ExecStop=/usr/local/freeswitch/bin/freeswitch -stop PIDFile=/usr/local/freeswitch/run/freeswitch.pid User=freeswitch Group=freeswitch Restart=always LimitNOFILE=100000 [Install] WantedBy=multi-user.target Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service: sudo systemctl daemon-reload Enable the FreeSWITCH service to start automatically on boot: sudo systemctl enable freeswitch Step 8: Start FreeSWITCH Service Start FreeSWITCH by executing: sudo systemctl start freeswitch To confirm it’s running, check the status: sudo systemctl status freeswitch If the service is running, you should see an “active (running)” message. Step 9: Configure Firewall for FreeSWITCH To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses: - ***5060 (UDP)*** for SIP 5061 (UDP) for secure SIP (SIP-TLS) 16384–32768 (UDP) for RTP (Real-Time Protocol) Use the following commands to open these ports: sudo firewall-cmd --add-port=5060/udp --permanent sudo firewall-cmd --add-port=5061/udp --permanent sudo firewall-cmd --add-port=16384-32768/udp --permanent sudo firewall-cmd --reload Step 10: Test FreeSWITCH Installation To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running: /usr/local/freeswitch/bin/fs_cli Once inside the CLI, you can test a few commands, such as: status sofia status These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up. Step 11: Basic Configuration Tips FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it: - ***Edit SIP Profiles*** : Modify SIP profiles in /usr/local/freeswitch/conf/sip_profiles to suit your network setup. Set Up Extensions : Define extensions in /usr/local/freeswitch/conf/dialplan/default.xml. Configure NAT : If behind NAT, add your public IP and local network information in the SIP profiles. Add Security Features : Enable password protections, and consider limiting IP access to the FreeSWITCH server. Troubleshooting Common Issues Here are a few common issues that might arise during installation and their solutions: - ***Missing Dependencies*** : Ensure all libraries are installed, especially openssl-devel and libedit-devel. Firewall Blocks : Confirm all required ports are open on the firewall. FreeSWITCH Doesn’t Start : Check the system log (journalctl -xe) for details on errors-preventing startup. Conclusion Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements. ***FAQs*** ***1. What is FreeSWITCH used for?*** FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions. ***2. Why use Alma Linux for FreeSWITCH?*** Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability. ***3. How much RAM is recommended for FreeSWITCH?*** For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls. ***4. Can FreeSWITCH run alongside other VoIP software?*** Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues. ***5. How do I secure FreeSWITCH?*** Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication. ***6. Where can I get additional FreeSWITCH modules?*** Modules can be installed from the FreeSWITCH source repository, and the FreeSWITCH documentation provides details on individual module functions and configurations.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9656,63 +9922,63 @@ FreeSWITCH is a highly flexible and powerful open-source communications platform
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#introductionh3">Introduction
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#introduction">Introduction
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#prerequisitesh3">Prerequisites
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#prerequisites">Prerequisites
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-1-update-the-alma-linux-systemh3">Step 1: Update the Alma Linux System
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-1-update-the-alma-linux-system">Step 1: Update the Alma Linux System
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-2-install-development-tools-and-dependenciesh3">Step 2: Install Development Tools and Dependencies
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-2-install-development-tools-and-dependencies">Step 2: Install Development Tools and Dependencies
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-3-set-up-freeswitch-user-and-directoriesh3">Step 3: Set Up FreeSWITCH User and Directories
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-3-set-up-freeswitch-user-and-directories">Step 3: Set Up FreeSWITCH User and Directories
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-4-download-freeswitch-source-codeh3">Step 4: Download FreeSWITCH Source Code
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-4-download-freeswitch-source-code">Step 4: Download FreeSWITCH Source Code
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-5-build-and-compile-freeswitchh3">Step 5: Build and Compile FreeSWITCH
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-5-build-and-compile-freeswitch">Step 5: Build and Compile FreeSWITCH
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-6-install-additional-freeswitch-modulesh3">Step 6: Install Additional FreeSWITCH Modules
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-6-install-additional-freeswitch-modules">Step 6: Install Additional FreeSWITCH Modules
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-7-configure-systemd-service-for-freeswitchh3">Step 7: Configure Systemd Service for FreeSWITCH
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-7-configure-systemd-service-for-freeswitch">Step 7: Configure Systemd Service for FreeSWITCH
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-8-start-freeswitch-serviceh3">Step 8: Start FreeSWITCH Service
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-8-start-freeswitch-service">Step 8: Start FreeSWITCH Service
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-9-configure-firewall-for-freeswitchh3">Step 9: Configure Firewall for FreeSWITCH
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-9-configure-firewall-for-freeswitch">Step 9: Configure Firewall for FreeSWITCH
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-10-test-freeswitch-installationh3">Step 10: Test FreeSWITCH Installation
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-10-test-freeswitch-installation">Step 10: Test FreeSWITCH Installation
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-11-basic-configuration-tipsh3">Step 11: Basic Configuration Tips
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#step-11-basic-configuration-tips">Step 11: Basic Configuration Tips
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issuesh3">Troubleshooting Common Issues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issues">Troubleshooting Common Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh3">Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9745,84 +10011,84 @@ FreeSWITCH is a highly flexible and powerful open-source communications platform
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <!-- wp:heading {"level":3} -->
-<h3>Introduction</h3><span class="hx-absolute -hx-mt-20" id="introductionh3"></span>
-    <a href="#introductionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+          <h3>Introduction<span class="hx-absolute -hx-mt-20" id="introduction"></span>
+    <a href="#introduction" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Prerequisites</h3><span class="hx-absolute -hx-mt-20" id="prerequisitesh3"></span>
-    <a href="#prerequisitesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>FreeSWITCH is a highly flexible and powerful open-source communications platform used for voice, video, and messaging across a variety of protocols. For those using Alma Linux—a reliable RHEL-based distribution—installing FreeSWITCH allows organizations to leverage a sophisticated telephony solution for VoIP applications, PBX systems, and conferencing. This guide provides a detailed, step-by-step walkthrough for installing FreeSWITCH on Alma Linux.
+<h3>Prerequisites<span class="hx-absolute -hx-mt-20" id="prerequisites"></span>
+    <a href="#prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Before beginning the installation, make sure you have:</p>
+<p>Before beginning the installation, make sure you have:
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>A server or virtual machine running Alma Linux</strong> (preferably version 8 or newer).</li>
+- ***A server or virtual machine running Alma Linux***  (preferably version 8 or newer). 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Root access</strong> to the server or a user with sudo privileges.</li>
+<ul>
+<li><em><strong>Root access</strong></em>  to the server or a user with sudo privileges.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Basic understanding of Linux commands</strong>.</li>
+<ul>
+<li><em><strong>Basic understanding of Linux commands</strong></em> .</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>An internet connection</strong> to download necessary packages.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>An internet connection</strong></em>  to download necessary packages.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 1: Update the Alma Linux System</h3><span class="hx-absolute -hx-mt-20" id="step-1-update-the-alma-linux-systemh3"></span>
-    <a href="#step-1-update-the-alma-linux-systemh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 1: Update the Alma Linux System<span class="hx-absolute -hx-mt-20" id="step-1-update-the-alma-linux-system"></span>
+    <a href="#step-1-update-the-alma-linux-system" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates.</p>
+<p>Start by updating your Alma Linux system. This ensures you have the latest security patches and package updates.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf update -y</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Once the update is complete, reboot the system if necessary:</p>
+<p>Once the update is complete, reboot the system if necessary:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo reboot</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 2: Install Development Tools and Dependencies</h3><span class="hx-absolute -hx-mt-20" id="step-2-install-development-tools-and-dependenciesh3"></span>
-    <a href="#step-2-install-development-tools-and-dependenciesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 2: Install Development Tools and Dependencies<span class="hx-absolute -hx-mt-20" id="step-2-install-development-tools-and-dependencies"></span>
+    <a href="#step-2-install-development-tools-and-dependencies" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command:</p>
+<p>FreeSWITCH relies on multiple development tools and libraries. You can install these packages with the following command:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf groupinstall "Development Tools" -y
 sudo dnf install git wget cmake autoconf automake libtool -y</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Next, install additional dependencies that FreeSWITCH requires:</p>
+<p>Next, install additional dependencies that FreeSWITCH requires:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install epel-release -y
 sudo dnf install libedit-devel sqlite-devel pcre-devel speex-devel openssl-devel -y</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 3: Set Up FreeSWITCH User and Directories</h3><span class="hx-absolute -hx-mt-20" id="step-3-set-up-freeswitch-user-and-directoriesh3"></span>
-    <a href="#step-3-set-up-freeswitch-user-and-directoriesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 3: Set Up FreeSWITCH User and Directories<span class="hx-absolute -hx-mt-20" id="step-3-set-up-freeswitch-user-and-directories"></span>
+    <a href="#step-3-set-up-freeswitch-user-and-directories" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>For security and management, it’s best to create a dedicated user for running FreeSWITCH.</p>
+<p>For security and management, it’s best to create a dedicated user for running FreeSWITCH.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo adduser --system --no-create-home --group freeswitch</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Create necessary directories for FreeSWITCH:</p>
+<p>Create necessary directories for FreeSWITCH:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo mkdir -p /usr/local/freeswitch
 sudo mkdir -p /usr/local/freeswitch/log
 sudo mkdir -p /usr/local/freeswitch/run</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Assign appropriate permissions to the FreeSWITCH user:</p>
+<p>Assign appropriate permissions to the FreeSWITCH user:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo chown -R freeswitch:freeswitch /usr/local/freeswitch
 sudo chmod -R 775 /usr/local/freeswitch</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 4: Download FreeSWITCH Source Code</h3><span class="hx-absolute -hx-mt-20" id="step-4-download-freeswitch-source-codeh3"></span>
-    <a href="#step-4-download-freeswitch-source-codeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 4: Download FreeSWITCH Source Code<span class="hx-absolute -hx-mt-20" id="step-4-download-freeswitch-source-code"></span>
+    <a href="#step-4-download-freeswitch-source-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH.</p>
+<p>Head to the FreeSWITCH GitHub repository to download the latest stable version of FreeSWITCH.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">cd /usr/src
 sudo git clone https://github.com/signalwire/freeswitch.git
@@ -9830,47 +10096,44 @@ cd freeswitch
 sudo git checkout v1.10</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>The <code>checkout</code> command will switch to the stable version 1.10, which is suitable for production use.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 5: Build and Compile FreeSWITCH</h3><span class="hx-absolute -hx-mt-20" id="step-5-build-and-compile-freeswitchh3"></span>
-    <a href="#step-5-build-and-compile-freeswitchh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The <code>checkout</code> command will switch to the stable version 1.10, which is suitable for production use.
+<h3>Step 5: Build and Compile FreeSWITCH<span class="hx-absolute -hx-mt-20" id="step-5-build-and-compile-freeswitch"></span>
+    <a href="#step-5-build-and-compile-freeswitch" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations:</p>
+<p>FreeSWITCH offers various configuration options; the default configuration works for most installations. First, install the necessary codecs, modules, and configurations:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">./bootstrap.sh
 ./configure</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>After configuring, compile the source code using:</p>
+<p>After configuring, compile the source code using:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">make</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running:</p>
+<p>This process may take several minutes. If there are any errors, ensure that all dependencies are correctly installed. After successfully compiling FreeSWITCH, install it by running:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo make install</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 6: Install Additional FreeSWITCH Modules</h3><span class="hx-absolute -hx-mt-20" id="step-6-install-additional-freeswitch-modulesh3"></span>
-    <a href="#step-6-install-additional-freeswitch-modulesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 6: Install Additional FreeSWITCH Modules<span class="hx-absolute -hx-mt-20" id="step-6-install-additional-freeswitch-modules"></span>
+    <a href="#step-6-install-additional-freeswitch-modules" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment:</p>
+<p>FreeSWITCH’s functionality can be extended by adding modules. Here’s how to install the basic modules often needed in a standard telephony environment:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo make cd-sounds-install cd-moh-install
 sudo make samples</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>The <code>samples</code> command installs sample configuration files in <code>/usr/local/freeswitch/conf</code>.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 7: Configure Systemd Service for FreeSWITCH</h3><span class="hx-absolute -hx-mt-20" id="step-7-configure-systemd-service-for-freeswitchh3"></span>
-    <a href="#step-7-configure-systemd-service-for-freeswitchh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The <code>samples</code> command installs sample configuration files in <code>/usr/local/freeswitch/conf</code>.
+<h3>Step 7: Configure Systemd Service for FreeSWITCH<span class="hx-absolute -hx-mt-20" id="step-7-configure-systemd-service-for-freeswitch"></span>
+    <a href="#step-7-configure-systemd-service-for-freeswitch" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file:</p>
+<p>To ensure FreeSWITCH starts automatically and runs as a background service, create a systemd service file:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo nano /etc/systemd/system/freeswitch.service</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Insert the following configuration into the file:</p>
+<p>Insert the following configuration into the file:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">[Unit]
 Description=FreeSWITCH Service
@@ -9890,127 +10153,135 @@ LimitNOFILE=100000
 WantedBy=multi-user.target</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service:</p>
+<p>Save and exit the file. Reload the systemd daemon to recognize the new FreeSWITCH service:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl daemon-reload</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Enable the FreeSWITCH service to start automatically on boot:</p>
+<p>Enable the FreeSWITCH service to start automatically on boot:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl enable freeswitch</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 8: Start FreeSWITCH Service</h3><span class="hx-absolute -hx-mt-20" id="step-8-start-freeswitch-serviceh3"></span>
-    <a href="#step-8-start-freeswitch-serviceh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 8: Start FreeSWITCH Service<span class="hx-absolute -hx-mt-20" id="step-8-start-freeswitch-service"></span>
+    <a href="#step-8-start-freeswitch-service" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Start FreeSWITCH by executing:</p>
+<p>Start FreeSWITCH by executing:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl start freeswitch</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>To confirm it’s running, check the status:</p>
+<p>To confirm it’s running, check the status:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status freeswitch</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>If the service is running, you should see an “active (running)” message.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 9: Configure Firewall for FreeSWITCH</h3><span class="hx-absolute -hx-mt-20" id="step-9-configure-firewall-for-freeswitchh3"></span>
-    <a href="#step-9-configure-firewall-for-freeswitchh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>If the service is running, you should see an “active (running)” message.
+<h3>Step 9: Configure Firewall for FreeSWITCH<span class="hx-absolute -hx-mt-20" id="step-9-configure-firewall-for-freeswitch"></span>
+    <a href="#step-9-configure-firewall-for-freeswitch" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses:</p>
+<p>To allow external access to FreeSWITCH, open the necessary ports on your firewall. By default, FreeSWITCH uses:
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>5060 (UDP)</strong> for SIP</li>
+- ***5060 (UDP)***  for SIP 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>5061 (UDP)</strong> for secure SIP (SIP-TLS)</li>
+<ul>
+<li><em><strong>5061 (UDP)</strong></em>  for secure SIP (SIP-TLS)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>16384–32768 (UDP)</strong> for RTP (Real-Time Protocol)</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>16384–32768 (UDP)</strong></em>  for RTP (Real-Time Protocol)</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:paragraph -->
-<p>Use the following commands to open these ports:</p>
+<p>Use the following commands to open these ports:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --add-port=5060/udp --permanent
 sudo firewall-cmd --add-port=5061/udp --permanent
 sudo firewall-cmd --add-port=16384-32768/udp --permanent
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Step 10: Test FreeSWITCH Installation</h3><span class="hx-absolute -hx-mt-20" id="step-10-test-freeswitch-installationh3"></span>
-    <a href="#step-10-test-freeswitch-installationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Step 10: Test FreeSWITCH Installation<span class="hx-absolute -hx-mt-20" id="step-10-test-freeswitch-installation"></span>
+    <a href="#step-10-test-freeswitch-installation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running:</p>
+<p>To verify the FreeSWITCH installation, connect to the FreeSWITCH CLI by running:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">/usr/local/freeswitch/bin/fs_cli</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Once inside the CLI, you can test a few commands, such as:</p>
+<p>Once inside the CLI, you can test a few commands, such as:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">status
 sofia status</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Step 11: Basic Configuration Tips</h3><span class="hx-absolute -hx-mt-20" id="step-11-basic-configuration-tipsh3"></span>
-    <a href="#step-11-basic-configuration-tipsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>These commands should display FreeSWITCH’s current status and protocol details, confirming that it’s correctly set up.
+<h3>Step 11: Basic Configuration Tips<span class="hx-absolute -hx-mt-20" id="step-11-basic-configuration-tips"></span>
+    <a href="#step-11-basic-configuration-tips" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it:</p>
+<p>FreeSWITCH’s default configuration may not suit all needs. Here are a few tips to help configure it:
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Edit SIP Profiles</strong>: Modify SIP profiles in <code>/usr/local/freeswitch/conf/sip_profiles</code> to suit your network setup.</li>
+- ***Edit SIP Profiles*** : Modify SIP profiles in <code>/usr/local/freeswitch/conf/sip_profiles</code> to suit your network setup. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Set Up Extensions</strong>: Define extensions in <code>/usr/local/freeswitch/conf/dialplan/default.xml</code>.</li>
+<ul>
+<li><em><strong>Set Up Extensions</strong></em> : Define extensions in <code>/usr/local/freeswitch/conf/dialplan/default.xml</code>.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Configure NAT</strong>: If behind NAT, add your public IP and local network information in the SIP profiles.</li>
+<ul>
+<li><em><strong>Configure NAT</strong></em> : If behind NAT, add your public IP and local network information in the SIP profiles.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Add Security Features</strong>: Enable password protections, and consider limiting IP access to the FreeSWITCH server.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Add Security Features</strong></em> : Enable password protections, and consider limiting IP access to the FreeSWITCH server.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Troubleshooting Common Issues</h3><span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issuesh3"></span>
-    <a href="#troubleshooting-common-issuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Troubleshooting Common Issues<span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issues"></span>
+    <a href="#troubleshooting-common-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Here are a few common issues that might arise during installation and their solutions:</p>
+<p>Here are a few common issues that might arise during installation and their solutions:
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Missing Dependencies</strong>: Ensure all libraries are installed, especially <code>openssl-devel</code> and <code>libedit-devel</code>.</li>
+- ***Missing Dependencies*** : Ensure all libraries are installed, especially <code>openssl-devel</code> and <code>libedit-devel</code>. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Firewall Blocks</strong>: Confirm all required ports are open on the firewall.</li>
+<ul>
+<li><em><strong>Firewall Blocks</strong></em> : Confirm all required ports are open on the firewall.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>FreeSWITCH Doesn’t Start</strong>: Check the system log (<code>journalctl -xe</code>) for details on errors-preventing startup.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>FreeSWITCH Doesn’t Start</strong></em> : Check the system log (<code>journalctl -xe</code>) for details on errors-preventing startup.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Conclusion</h3><span class="hx-absolute -hx-mt-20" id="conclusionh3"></span>
-    <a href="#conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements.</p>
+<p>Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:paragraph -->
-<p><strong>FAQs</strong></p>
+<p>***FAQs*** 
 <!-- wp:paragraph -->
-<p><strong>1. What is FreeSWITCH used for?</strong><br>FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions.</p>
+<p>***1. What is FreeSWITCH used for?*** <br>FreeSWITCH is an open-source telephony platform used for handling voice, video, and messaging over various protocols, ideal for creating VoIP, PBX, and conferencing solutions.
 <!-- wp:paragraph -->
-<p><strong>2. Why use Alma Linux for FreeSWITCH?</strong><br>Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability.</p>
+<p>***2. Why use Alma Linux for FreeSWITCH?*** <br>Alma Linux is a stable, RHEL-compatible OS, making it a reliable choice for hosting applications like FreeSWITCH that require enterprise-level stability.
 <!-- wp:paragraph -->
-<p><strong>3. How much RAM is recommended for FreeSWITCH?</strong><br>For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls.</p>
+<p>***3. How much RAM is recommended for FreeSWITCH?*** <br>For basic setups, 1 GB of RAM is sufficient, but for larger deployments, consider 4 GB or more to handle higher call volumes and multiple concurrent calls.
 <!-- wp:paragraph -->
-<p><strong>4. Can FreeSWITCH run alongside other VoIP software?</strong><br>Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues.</p>
+<p>***4. Can FreeSWITCH run alongside other VoIP software?*** <br>Yes, but it’s generally recommended to run it on a dedicated server to avoid port conflicts and performance issues.
 <!-- wp:paragraph -->
-<p><strong>5. How do I secure FreeSWITCH?</strong><br>Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication.</p>
+<p>***5. How do I secure FreeSWITCH?*** <br>Implement strong password policies, restrict access to SIP ports, and enable TLS for secure communication.
 <!-- wp:paragraph -->
-<p><strong>6. Where can I get additional FreeSWITCH modules?</strong><br>Modules can be installed from the FreeSWITCH source repository, and the <a href="https://developer.signalwire.com/freeswitch/" target="_blank" rel="noopener" title="">FreeSWITCH documentation</a> provides details on individual module functions and configurations.</p>
+<p>***6. Where can I get additional FreeSWITCH modules?*** <br>Modules can be installed from the FreeSWITCH source repository, and the <a href="https://developer.signalwire.com/freeswitch/" target="_blank" rel="noopener" title="">FreeSWITCH documentation</a> provides details on individual module functions and configurations.
 
         </div>
         

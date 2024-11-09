@@ -11,10 +11,11 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Kotlin değer atama ve veri tipi belirleme – Siberoloji</title>
-  <meta name="description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-deger-atama-ve-veri-tipi-belirleme/" itemprop="url" />
+  <meta name="description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.
+Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-deger-atama-ve-veri-tipi-belirleme/" itemprop="url" />
 
 <meta property="og:title" content="Kotlin değer atama ve veri tipi belirleme" />
-<meta property="og:description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&quot;Kotlin Değişken ve Değer tanımlama&quot;, &ldquo;Kotlin’de Sabitler ve değişkenler&rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. 
+<meta property="og:description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&quot;Kotlin Değişken ve Değer tanımlama&quot;, &ldquo;Kotlin’de Sabitler ve değişkenler&rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.
 Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/kotlin-deger-atama-ve-veri-tipi-belirleme/" /><meta property="article:section" content="blog" />
@@ -22,14 +23,16 @@ Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar
 <meta property="article:modified_time" content="2024-01-20T15:04:03+00:00" />
 
   <meta itemprop="name" content="Kotlin değer atama ve veri tipi belirleme">
-  <meta itemprop="description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.">
+  <meta itemprop="description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.
+Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.">
   <meta itemprop="datePublished" content="2024-01-20T15:04:03+00:00">
   <meta itemprop="dateModified" content="2024-01-20T15:04:03+00:00">
   <meta itemprop="wordCount" content="482">
   <meta itemprop="keywords" content="Kotlin,Yazılım">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kotlin değer atama ve veri tipi belirleme">
-  <meta name="twitter:description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.">
+  <meta name="twitter:description" content="Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&#34;Kotlin Değişken ve Değer tanımlama&#34;, “Kotlin’de Sabitler ve değişkenler”) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.
+Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -8224,27 +8227,27 @@ Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonuh2"
+                href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonu"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Değişken Tanımlama Şablonu&lt;/h2&gt;</a>
+              >Değişken Tanımlama Şablonu</a>
             </li>
           <li>
               <a
-                href="#veri-tipinin-belirlenmesi-type-inferenceh2"
+                href="#veri-tipinin-belirlenmesi-type-inference"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Veri Tipinin Belirlenmesi (type inference)&lt;/h2&gt;</a>
+              >Veri Tipinin Belirlenmesi (type inference)</a>
             </li>
           <li>
               <a
-                href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2"
+                href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlama"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >İlk Değer Olmadan Değişken Tanımlama&lt;/h2&gt;</a>
+              >İlk Değer Olmadan Değişken Tanımlama</a>
             </li>
           <li>
               <a
-                href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2"
+                href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlama"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Hatalı değişken tanımlama&lt;/h2&gt;</a>
+              >Hatalı değişken tanımlama</a>
             </li>
           </ul>
   
@@ -9671,19 +9674,19 @@ Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonuh2">Değişken Tanımlama Şablonu
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonu">Değişken Tanımlama Şablonu
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#veri-tipinin-belirlenmesi-type-inferenceh2">Veri Tipinin Belirlenmesi (type inference)
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#veri-tipinin-belirlenmesi-type-inference">Veri Tipinin Belirlenmesi (type inference)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2">İlk Değer Olmadan Değişken Tanımlama
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlama">İlk Değer Olmadan Değişken Tanımlama
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2">Hatalı değişken tanımlama
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlama">Hatalı değişken tanımlama
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9716,29 +9719,37 @@ Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&quot;<a href="https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/" data-type="post" data-id="694" target="_blank" rel="noreferrer noopener">Kotlin Değişken ve Değer tanımlama</a>&quot;, &ldquo;<a href="https://www.siberoloji.com/kotlinde-sabitler-ve-degiskenler/" data-type="post" data-id="700" target="_blank" rel="noreferrer noopener">Kotlin’de Sabitler ve değişkenler</a>&rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık. </p></p>
-<p>Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.</p></p>
-<h2>Değişken Tanımlama Şablonu</h2><span class="hx-absolute -hx-mt-20" id="değişken-tanımlama-şablonuh2"></span>
-    <a href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonuh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Kotlin programlama dilinde değişken tanımlama şablonu aşağıdaki gibidir. </p></p>
+          <p>Kotlin programlama dilinde değişken tanımlama konusunda bilinmesi gereken bazı ince noktaları bu yazımızda açıklayacağız. Önceki iki yazımızda (&quot;<a href="https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/" data-type="post" data-id="694" target="_blank" rel="noreferrer noopener">Kotlin Değişken ve Değer tanımlama</a>&quot;, &ldquo;<a href="https://www.siberoloji.com/kotlinde-sabitler-ve-degiskenler/" data-type="post" data-id="700" target="_blank" rel="noreferrer noopener">Kotlin’de Sabitler ve değişkenler</a>&rdquo;) açıkladığımız kurallara ilave olarak bu yazıyı hazırladık.</p>
+<p>Hepimiz sayıların ve yazıların farklı türler olduğunu biliyoruz. Sayılar ile matematiksel işlemler yapılır iken yazılar ile matematik işlemleri yapılmaz. Bu ayrımın programla dillerinde de olduğunu belirtmeliyiz. Bu yüzden her değişkenin bir tipi bulunmalıdır.</p>
+<h2>Değişken Tanımlama Şablonu<span class="hx-absolute -hx-mt-20" id="değişken-tanımlama-şablonu"></span>
+    <a href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama-%c5%9fablonu" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Kotlin programlama dilinde değişken tanımlama şablonu aşağıdaki gibidir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">val/var identifier: Type = initialization</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>En başta val veya var ifadesi yer alır. Değişkenin değerinin davranışına göre val veya var seçimi yapılır. Bunun farklarını "<a href="https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/" data-type="post" data-id="694" target="_blank" rel="noreferrer noopener">Kotlin Değişken ve Değer tanımlama</a>" başlıklı yazımızda açıklamıştık.</li>
+ <!-- wp:list-item -->
+<ul>
+<li>En başta val veya var ifadesi yer alır. Değişkenin değerinin davranışına göre val veya var seçimi yapılır. Bunun farklarını &ldquo;<a href="https://www.siberoloji.com/kotlin-degisken-ve-deger-tanimlama/" data-type="post" data-id="694" target="_blank" rel="noreferrer noopener">Kotlin Değişken ve Değer tanımlama</a>&rdquo; başlıklı yazımızda açıklamıştık.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>identifier: Yani değişkenin ismi olmalıdır. Diğer değişkenler ile karışmaması için anlamlı ve ne işe yaradığını anlatan bir isim seçimi her zaman faydalı bir kullanım olacaktır.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Type : Değişkenin tipini burada yazıyoruz. Değerin tipini ifade eden String, Int, Boolean gibi ifadeler büyük harfle başlar. Değişkenin isminden sonra iki nokta üst üste yazıldıktan sonra tip yazılır</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Initialization : Değişkenimize ilk değer atamasını yapıyoruz. Başlangıç değeri anlamına gelir. Değişkenin tip belirlendiğinde ilk değer hemen atanmak zorunda değildir. Birazdan doğru ve yanlış kullanım örneklerini aşağıda vereceğiz.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Şimdi bu şablona göre bir örnek yazalım. Aşağıdaki örnek, tüm kuralları eksiksiz yerine getiren bir yapıdadır.</p></p>
+<p>Şimdi bu şablona göre bir örnek yazalım. Aşağıdaki örnek, tüm kuralları eksiksiz yerine getiren bir yapıdadır.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name: String = "John"
@@ -9753,9 +9764,9 @@ John
 
 Process finished with exit code 0</code></pre>
 <!-- /wp:code -->
-<h2>Veri Tipinin Belirlenmesi (type inference)</h2><span class="hx-absolute -hx-mt-20" id="veri-tipinin-belirlenmesi-type-inferenceh2"></span>
-    <a href="#veri-tipinin-belirlenmesi-type-inferenceh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Bir değişkeni tanımladığımız anda ilk değerini de (initializer) belirliyorsak, veri tipini yazmayabiliriz. Kotlin, girilen ilk değere bakarak tipini kendisi tespit edecektir. Bu şekilde kodlarımız daha sade hale gelir. Örnek aşağıdadır. </p></p>
+<h2>Veri Tipinin Belirlenmesi (type inference)<span class="hx-absolute -hx-mt-20" id="veri-tipinin-belirlenmesi-type-inference"></span>
+    <a href="#veri-tipinin-belirlenmesi-type-inference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Bir değişkeni tanımladığımız anda ilk değerini de (initializer) belirliyorsak, veri tipini yazmayabiliriz. Kotlin, girilen ilk değere bakarak tipini kendisi tespit edecektir. Bu şekilde kodlarımız daha sade hale gelir. Örnek aşağıdadır.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name= "John"
@@ -9774,10 +9785,10 @@ Int
 Process finished with exit code 0
 */</code></pre>
 <!-- /wp:code -->
-<p>Yukarıda bulunan örnekte görüldüğü gibi, veri tipleri girilmediği halde ilk değerlerin tipine bakarak Kotlin veri tipini otomatik belirlemiştir. Yabancı kaynaklardan konuyu incelediğinizde bu işlemin &ldquo;type inference&rdquo; olarak ifade edildiğini görebilirsiniz.</p></p>
-<h2>İlk Değer Olmadan Değişken Tanımlama</h2><span class="hx-absolute -hx-mt-20" id="ilk-değer-olmadan-değişken-tanımlamah2"></span>
-    <a href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Bir değişkeni tanımlamak ancak ilk değerini sonra belirlemek isterseniz, değişkenin tipini mutlaka yazmanız gerekmektedir. Kotlin ilk değer olmadan değişkenin tipini belirleyemez. Kotlin için değişken tanımlandığında tipi de belirlenmelidir. Sonradan tip değiştirilemez. Aşağıda bunun örneğini görebilirsiniz.</p></p>
+<p>Yukarıda bulunan örnekte görüldüğü gibi, veri tipleri girilmediği halde ilk değerlerin tipine bakarak Kotlin veri tipini otomatik belirlemiştir. Yabancı kaynaklardan konuyu incelediğinizde bu işlemin &ldquo;type inference&rdquo; olarak ifade edildiğini görebilirsiniz.</p>
+<h2>İlk Değer Olmadan Değişken Tanımlama<span class="hx-absolute -hx-mt-20" id="ilk-değer-olmadan-değişken-tanımlama"></span>
+    <a href="#ilk-de%c4%9fer-olmadan-de%c4%9fi%c5%9fken-tan%c4%b1mlama" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Bir değişkeni tanımlamak ancak ilk değerini sonra belirlemek isterseniz, değişkenin tipini mutlaka yazmanız gerekmektedir. Kotlin ilk değer olmadan değişkenin tipini belirleyemez. Kotlin için değişken tanımlandığında tipi de belirlenmelidir. Sonradan tip değiştirilemez. Aşağıda bunun örneğini görebilirsiniz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name: String
@@ -9788,10 +9799,10 @@ Process finished with exit code 0
     age = 16
 }</code></pre>
 <!-- /wp:code -->
-<p>Örnekte görüldüğü gibi değişken adı ve tipi belirlenmiş ancak ilk değer başka bir yerde belirlenmiştir. Bu kullanım doğrudur. İlk değer başka zaman belirleniyorsa değişken tipini yazmak gerekir.</p></p>
-<h2>Hatalı değişken tanımlama</h2><span class="hx-absolute -hx-mt-20" id="hatalı-değişken-tanımlamah2"></span>
-    <a href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlamah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Hem Veri tipi, hem de ilk değeri olmadan değişken tanımlama hata ile karşılaşmanıza sebep olur. Aşağıdaki kullanım yanlıştır. Programınız derlenmeyecektir.</p></p>
+<p>Örnekte görüldüğü gibi değişken adı ve tipi belirlenmiş ancak ilk değer başka bir yerde belirlenmiştir. Bu kullanım doğrudur. İlk değer başka zaman belirleniyorsa değişken tipini yazmak gerekir.</p>
+<h2>Hatalı değişken tanımlama<span class="hx-absolute -hx-mt-20" id="hatalı-değişken-tanımlama"></span>
+    <a href="#hatal%c4%b1-de%c4%9fi%c5%9fken-tan%c4%b1mlama" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Hem Veri tipi, hem de ilk değeri olmadan değişken tanımlama hata ile karşılaşmanıza sebep olur. Aşağıdaki kullanım yanlıştır. Programınız derlenmeyecektir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name //error

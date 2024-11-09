@@ -29,7 +29,7 @@ url: /bitwise-operators-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -78,7 +78,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation </h2>
+ ## Explanation 
 <!-- /wp:heading -->
 
   The provided C++ code demonstrates the use of various bitwise operators. The program begins by including the necessary header file <code>iostream</code> and using the <code>std</code> namespace to simplify the code. 
@@ -102,8 +102,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Bitwise AND (<code>&amp;</code>)</strong>: This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 only if both corresponding bits of <code>i</code> and <code>j</code> are 1. The result of <code>i &amp; j</code> is 6.</li>
-<!-- /wp:list-item --></ol>
+- ***Bitwise AND (<code>&amp;</code>)*** : This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 only if both corresponding bits of <code>i</code> and <code>j</code> are 1. The result of <code>i &amp; j</code> is 6. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -112,8 +112,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Bitwise OR (<code>|</code>)</strong>: This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of <code>i</code> or <code>j</code> is 1. The result of <code>i | j</code> is 31.</li>
-<!-- /wp:list-item --></ol>
+- ***Bitwise OR (<code>|</code>)*** : This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of <code>i</code> or <code>j</code> is 1. The result of <code>i | j</code> is 31. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -122,8 +122,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Bitwise XOR (<code>^</code>)</strong>: This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 if only one of the corresponding bits of <code>i</code> or <code>j</code> is 1. The result of <code>i ^ j</code> is 25.</li>
-<!-- /wp:list-item --></ol>
+- ***Bitwise XOR (<code>^</code>)*** : This operation compares each bit of <code>i</code> and <code>j</code> and returns a new integer where each bit is set to 1 if only one of the corresponding bits of <code>i</code> or <code>j</code> is 1. The result of <code>i ^ j</code> is 25. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -132,8 +132,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Bitwise NOT (<code>~</code>)</strong>: This operation inverts all the bits of <code>i</code>, turning 1s into 0s and vice versa. The result of <code>~i</code> is -16.</li>
-<!-- /wp:list-item --></ol>
+- ***Bitwise NOT (<code>~</code>)*** : This operation inverts all the bits of <code>i</code>, turning 1s into 0s and vice versa. The result of <code>~i</code> is -16. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -142,8 +142,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true,"start":5} -->
 <ol start="5" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Left Shift (<code>&lt;&lt;</code>)</strong>: This operation shifts the bits of <code>i</code> to the left by 2 positions, effectively multiplying <code>i</code> by 2^2 (or 4). The result of <code>i &lt;&lt; 2</code> is 60.</li>
-<!-- /wp:list-item --></ol>
+- ***Left Shift (<code>&lt;&lt;</code>)*** : This operation shifts the bits of <code>i</code> to the left by 2 positions, effectively multiplying <code>i</code> by 2^2 (or 4). The result of <code>i &lt;&lt; 2</code> is 60. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -152,8 +152,8 @@ int j = 22; // Second integer</code></pre>
 
 <!-- wp:list {"ordered":true,"start":6} -->
 <ol start="6" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Right Shift (<code>&gt;&gt;</code>)</strong>: This operation shifts the bits of <code>j</code> to the right by 2 positions, effectively dividing <code>j</code> by 2^2 (or 4). The result of <code>j &gt;&gt; 2</code> is 5.</li>
-<!-- /wp:list-item --></ol>
+- ***Right Shift (<code>&gt;&gt;</code>)*** : This operation shifts the bits of <code>j</code> to the right by 2 positions, effectively dividing <code>j</code> by 2^2 (or 4). The result of <code>j &gt;&gt; 2</code> is 5. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -171,7 +171,7 @@ int j = 22; // Second integer</code></pre>
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

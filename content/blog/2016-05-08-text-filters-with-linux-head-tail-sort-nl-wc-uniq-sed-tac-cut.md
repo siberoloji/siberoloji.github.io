@@ -47,14 +47,14 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>head</strong></h3>
+
+ ### ***head*** 
 <!-- /wp:heading -->
 
   This command displays the desired number of lines from the beginning of the requested document. If no line count is given, the default value is 10 lines. 
  
 
-  <strong>Format</strong>&nbsp;: head [-number of lines to print] [path] 
+  ***Format*** &nbsp;: head [-number of lines to print] [path] 
  
 
 <!-- wp:code -->
@@ -82,14 +82,14 @@ Melih kavunsuyu 12
 Melih kavunsuyu 12</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>tail</strong></h3>
+
+ ### ***tail*** 
 <!-- /wp:heading -->
 
   The tail command scans and displays from the end of the document, just the opposite of the head command. Displays the desired number of lines of a document from the end. If no number of lines is given, the default is 10 lines. 
  
 
-  <strong>Format</strong>&nbsp;: tail [-number of lines to print] [path] 
+  ***Format*** &nbsp;: tail [-number of lines to print] [path] 
  
 
 <!-- wp:code -->
@@ -116,14 +116,14 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>shorts</strong></h3>
+
+ ### ***shorts*** 
 <!-- /wp:heading -->
 
   It sorts the given text input alphabetically by default. It is possible to sort by other criteria. You can check the man pages for detailed information. 
  
 
-  <strong>Format</strong>&nbsp;: sort [-options] [path] 
+  ***Format*** &nbsp;: sort [-options] [path] 
  
 
 <!-- wp:code -->
@@ -143,14 +143,14 @@ Suzan portakalsuyu 5
 Tarık portakalsuyu 9</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>nl</strong></h3>
+
+ ### ***nl*** 
 <!-- /wp:heading -->
 
   This command takes its name from the initials of the expression number lines, which means number the lines. 
  
 
-  <strong>Format</strong>&nbsp;: nl [-options] [path] 
+  ***Format*** &nbsp;: nl [-options] [path] 
  
 
 <!-- wp:code -->
@@ -193,14 +193,14 @@ Tarık portakalsuyu 9</code></pre>
   In the example above, two different command options are used. The -s option specifies that the . and space characters will be used as separators after the line number. The -w option specifies how much space will be left before the line number. Note that in this example, the options are entered in quotation marks. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>toilet</strong></h3>
+
+ ### ***toilet*** 
 <!-- /wp:heading -->
 
   The wc command consists of the initials of the word count expression and gives the number of words in the entered text document. Unless otherwise specified, the number of lines, words, and letters are reported in the command output. 
  
 
-  <strong>Format</strong>&nbsp;: wc [-options] [path] 
+  ***Format*** &nbsp;: wc [-options] [path] 
  
 
 <!-- wp:code -->
@@ -224,8 +224,8 @@ Tarık portakalsuyu 9</code></pre>
 13  39 examplefile.txt</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>cut</strong></h3>
+
+ ### ***cut*** 
 <!-- /wp:heading -->
 
   The Cut command allows you to take the columns you want from a file if your data is separated into columns, and copies the columns you want from CSV (Comma Separated Values) or texts consisting of space-separated values. 
@@ -234,13 +234,13 @@ Tarık portakalsuyu 9</code></pre>
   In the sample file we use, the data is separated by spaces. The first column indicates the name, the second column indicates the juice, and the third column indicates the quantity. If we want to get only the names from here, we can do this as follows. 
  
 
-  <strong>-f</strong>&nbsp;: It is the first letter of the Fields expression and indicates which fields we will take. 
+  ***-f*** &nbsp;: It is the first letter of the Fields expression and indicates which fields we will take. 
  
 
-  <strong>-d</strong>&nbsp;: It is the first letter of the delimiter expression and specifies the character to be used to separate fields. 
+  ***-d*** &nbsp;: It is the first letter of the delimiter expression and specifies the character to be used to separate fields. 
  
 
-  <strong>Format</strong>&nbsp;: cut [-options] [path] 
+  ***Format*** &nbsp;: cut [-options] [path] 
  
 
 <!-- wp:code -->
@@ -280,23 +280,23 @@ Osman karpuzsuyu
 Betül narsuyu</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>sed</strong></h3>
+
+ ### ***sed*** 
 <!-- /wp:heading -->
 
   The sed command is created from the Stream Editor statement. It uses SEARCH-FIND/REPLACE logic. As can be seen from the explanation, it can be used to search for an expression and replace it with another expression. Although it has a number of other capabilities, we will show basic usage here. 
  
 
-  <strong>Format</strong>&nbsp;: sed &lt;expression&gt; [path] 
+  ***Format*** &nbsp;: sed &lt;expression&gt; [path] 
  
 
   Basically, expression has the following structure. 
  
 
-  <strong>Expression</strong>&nbsp;: s/searchexpression/newexpression/g 
+  ***Expression*** &nbsp;: s/searchexpression/newexpression/g 
  
 
-  <strong>The s</strong>&nbsp;at the beginning&nbsp;&nbsp;&nbsp;tells the sed command that the substitute operation will be performed. There are also other letters and operations.&nbsp;&nbsp;&nbsp;The expression between the first and second apostrophe used after the letter&nbsp;<strong>s indicates what to search for, and the next part indicates what to replace with. The&nbsp;</strong><strong>g</strong>&nbsp;statement at the end&nbsp;&nbsp;&nbsp;indicates that the operation should be performed globally.&nbsp; The letter&nbsp;<strong>g</strong>&nbsp;&nbsp;may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed. 
+  ***The s*** &nbsp;at the beginning&nbsp;&nbsp;&nbsp;tells the sed command that the substitute operation will be performed. There are also other letters and operations.&nbsp;&nbsp;&nbsp;The expression between the first and second apostrophe used after the letter&nbsp;***s indicates what to search for, and the next part indicates what to replace with. The&nbsp;*** ***g*** &nbsp;statement at the end&nbsp;&nbsp;&nbsp;indicates that the operation should be performed globally.&nbsp; The letter&nbsp;***g*** &nbsp;&nbsp;may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed. 
  
 
   Let's look at our file contents first. 
@@ -342,11 +342,11 @@ Betül narsuyu 14</code></pre>
   sed searches and replaces entered expressions character by character, not word by word. In this case, you can also replace Suz with Ser. Sed searches case-sensitively by default. Instead of the expression to be searched, you can create different filters using [regular expressions], which we will explain in another section. 
  
 
-  Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,&nbsp; you can use&nbsp;<strong>the CTRL+c</strong>&nbsp;&nbsp;key combination to terminate the process. 
+  Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,&nbsp; you can use&nbsp;***the CTRL+c*** &nbsp;&nbsp;key combination to terminate the process. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>unique</strong></h3>
+
+ ### ***unique*** 
 <!-- /wp:heading -->
 
   The uniq command is created from the word unique, meaning one and only. Basically, what it does is to take only one of the repeating lines and disable the other repeats. Sometimes there may be double entries in records. In this case, it is used to correct and simplify records. The important thing to note here is that repeating lines must follow each other, one under the other. If there are repeating lines in the document but they are not one under the other, we will discuss what needs to be done to solve this situation in the article on Piping and Redirection. 
@@ -375,7 +375,7 @@ Betül narsuyu 14</code></pre>
   After executing the command, it can be seen that the repeated lines are cleared. 
  
 
-  <strong>Format</strong>&nbsp;: uniq [options] [path] 
+  ***Format*** &nbsp;: uniq [options] [path] 
  
 
 <!-- wp:code -->
@@ -394,8 +394,8 @@ Osman karpuzsuyu 2
 Betül narsuyu 14</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>crown</strong></h3>
+
+ ### ***crown*** 
 <!-- /wp:heading -->
 
   The tac command does the opposite of the cat command. It reads the bottom line of the file and writes it as the first line. Let us note that it is different from the Head and Tail commands. 
@@ -404,7 +404,7 @@ Betül narsuyu 14</code></pre>
   Sometimes, while keeping records, new records may be written to the bottom of the file. You may want to see these new records at the top. In this case, using tac will make your job easier. 
  
 
-  <strong>Format</strong>&nbsp;: tac [path] 
+  ***Format*** &nbsp;: tac [path] 
  
 
 <!-- wp:code -->

@@ -11,25 +11,345 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>AlmaLinux 9: How to Change and Manage Network Settings – Siberoloji</title>
-  <meta name="description" content=" Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. AlmaLinux 9, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-change-and-manage-network-settings/" itemprop="url" />
+  <meta name="description" content=" Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. ***AlmaLinux 9*** , a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations. Table of Contents - Introduction to Network Configuration in AlmaLinux 9 Understanding NetworkManager and Network Tools Viewing Current Network Settings Configuring Network Interfaces (Static and DHCP) Configuring DNS and Hostname Managing Network Interfaces Using nmcli Troubleshooting Network Issues Best Practices for Network Management in AlmaLinux 9 Conclusion 1. Introduction to Network Configuration in AlmaLinux 9 Configuring network settings in ***AlmaLinux 9*** involves managing the system&#39;s network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it&#39;s a private local area network (LAN) or the broader internet. AlmaLinux 9 uses ***NetworkManager*** as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line. 2. Understanding NetworkManager and Network Tools ***NetworkManager*** is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases. - ***nmcli*** : A command-line tool to interact with NetworkManager. nmtui : A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal. ifconfig : A deprecated tool but still available for viewing interface details. ip : A modern replacement for ifconfig that can be used for network interface and routing configurations. Before changing network settings, it&#39;s important to understand the current configuration, which brings us to the next step. 3. Viewing Current Network Settings Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this. Viewing Active Network Interfaces To list all active network interfaces on your system, use the nmcli or ip command. nmcli device status This will display a list of all network interfaces, along with their connection status. Alternatively, you can use: ip addr This command will give you detailed information about all available network interfaces, including their IP addresses. Displaying Routing Table To view the routing table and see how your network traffic is routed: ip route This will display the default gateway and other routing information, which is essential for understanding how the network is configured. Checking DNS Configuration To check the DNS settings, you can inspect the /etc/resolv.conf file: cat /etc/resolv.conf This file lists the nameservers your system uses to resolve domain names to IP addresses. 4. Configuring Network Interfaces (Static and DHCP) Network interfaces in AlmaLinux 9 can be configured to use either ***DHCP (Dynamic Host Configuration Protocol)*** or a ***static IP address*** . In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS. Configuring a Static IP Address To configure a network interface with a static IP address, use nmcli. First, identify the network interface you want to configure: nmcli device status Assume your network interface is named ens33. To assign a static IP, use the following command: nmcli con mod ens33 ipv4.addresses 192.168.1.100/24 nmcli con mod ens33 ipv4.gateway 192.168.1.1 nmcli con mod ens33 ipv4.dns 8.8.8.8 nmcli con mod ens33 ipv4.method manual Finally, bring the connection up: nmcli con up ens33 This command sets a static IP address of 192.168.1.100, with a subnet mask of /24, and configures 192.168.1.1 as the default gateway and Google&#39;s DNS 8.8.8.8. Configuring DHCP To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration: nmcli con mod ens33 ipv4.method auto nmcli con up ens33 This tells NetworkManager to obtain an IP address automatically from the DHCP server. 5. Configuring DNS and Hostname Correctly configuring DNS and the system&#39;s hostname is crucial for ensuring proper network communication. Changing DNS Servers DNS servers can be configured using nmcli. For example, to set Google&#39;s DNS servers (8.8.8.8 and 8.8.4.4), you can modify the connection like this: nmcli con mod ens33 ipv4.dns &#34;8.8.8.8 8.8.4.4&#34; nmcli con up ens33 This updates the DNS servers for the ens33 interface. Changing Hostname To change the hostname in AlmaLinux 9, use the hostnamectl command: sudo hostnamectl set-hostname new-hostname Replace new-hostname with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing: hostnamectl 6. Managing Network Interfaces Using nmcli The ***nmcli*** tool provides extensive capabilities for managing network connections. Let&#39;s cover a few common tasks using nmcli. Listing All Network Connections To see all network connections (both active and inactive): nmcli con show This lists all the available connections configured on your system. Creating a New Network Connection To create a new connection with a static IP address: nmcli con add type ethernet ifname ens33 con-name static-con ipv4.addresses 192.168.1.101/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual This command adds a new connection named static-con for the ens33 interface. Bringing Up and Down Network Connections To bring a connection down (disconnect): nmcli con down ens33 To bring the connection back up: nmcli con up ens33 7. Troubleshooting Network Issues Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques: Checking the Status of NetworkManager First, verify that ***NetworkManager*** is running: systemctl status NetworkManager If it&#39;s not running, you can start it with: sudo systemctl start NetworkManager Testing Connectivity Use the ping command to check basic connectivity: ping 8.8.8.8 This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP. Reviewing Logs Check system logs for any network-related errors: journalctl -xe | grep NetworkManager This will show detailed logs of network-related events. 8. Best Practices for Network Management in AlmaLinux 9 - ***Use Static IP for Servers*** : For production servers, always configure a static IP to ensure consistent access to the system. Minimize Manual Configuration : Leverage nmcli or nmtui for most network configurations to avoid manual editing of configuration files. Monitor Network Connections : Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations. Backup Configurations : Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong. Use NetworkManager : Stick with NetworkManager as it simplifies managing complex networking setups compared to older tools like ifconfig. 9. Conclusion Configuring and managing network settings in ***AlmaLinux 9*** is straightforward when using the ***NetworkManager*** service and its associated tools like ***nmcli*** . By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently. Whether you&#39;re setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-change-and-manage-network-settings/" itemprop="url" />
 
 <meta property="og:title" content="AlmaLinux 9: How to Change and Manage Network Settings" />
 <meta property="og:description" content="
-Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. AlmaLinux 9, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations." />
+Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. ***AlmaLinux 9*** , a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.
+Table of Contents
+    
+
+
+- Introduction to Network Configuration in AlmaLinux 9 
+
+
+
+Understanding NetworkManager and Network Tools
+
+
+
+
+Viewing Current Network Settings
+
+
+
+
+Configuring Network Interfaces (Static and DHCP)
+
+
+
+
+Configuring DNS and Hostname
+
+
+
+
+Managing Network Interfaces Using nmcli
+
+
+
+
+Troubleshooting Network Issues
+
+
+
+
+Best Practices for Network Management in AlmaLinux 9
+
+
+
+
+Conclusion
+
+ 
+
+
+
+
+1. Introduction to Network Configuration in AlmaLinux 9
+    
+
+Configuring network settings in ***AlmaLinux 9***  involves managing the system&#39;s network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it&#39;s a private local area network (LAN) or the broader internet.
+
+AlmaLinux 9 uses ***NetworkManager***  as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line.
+
+
+
+2. Understanding NetworkManager and Network Tools
+    
+
+***NetworkManager***  is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases.
+
+
+- ***nmcli*** : A command-line tool to interact with NetworkManager. 
+
+
+
+nmtui : A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal.
+
+
+
+
+ifconfig : A deprecated tool but still available for viewing interface details.
+
+
+
+
+ip : A modern replacement for ifconfig that can be used for network interface and routing configurations.
+
+ 
+
+
+Before changing network settings, it&#39;s important to understand the current configuration, which brings us to the next step.
+
+
+
+3. Viewing Current Network Settings
+    
+
+Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this.
+
+Viewing Active Network Interfaces 
+
+
+To list all active network interfaces on your system, use the nmcli or ip command.
+
+nmcli device status
+
+
+This will display a list of all network interfaces, along with their connection status.
+
+Alternatively, you can use:
+
+ip addr
+
+
+This command will give you detailed information about all available network interfaces, including their IP addresses.
+
+Displaying Routing Table 
+
+
+To view the routing table and see how your network traffic is routed:
+
+ip route
+
+
+This will display the default gateway and other routing information, which is essential for understanding how the network is configured.
+
+Checking DNS Configuration 
+
+
+To check the DNS settings, you can inspect the /etc/resolv.conf file:
+
+cat /etc/resolv.conf
+
+
+This file lists the nameservers your system uses to resolve domain names to IP addresses.
+
+
+
+4. Configuring Network Interfaces (Static and DHCP)
+    
+
+Network interfaces in AlmaLinux 9 can be configured to use either ***DHCP (Dynamic Host Configuration Protocol)***  or a ***static IP address*** . In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS.
+
+Configuring a Static IP Address 
+
+
+To configure a network interface with a static IP address, use nmcli. First, identify the network interface you want to configure:
+
+nmcli device status
+
+
+Assume your network interface is named ens33. To assign a static IP, use the following command:
+
+nmcli con mod ens33 ipv4.addresses 192.168.1.100/24
+nmcli con mod ens33 ipv4.gateway 192.168.1.1
+nmcli con mod ens33 ipv4.dns 8.8.8.8
+nmcli con mod ens33 ipv4.method manual
+
+
+Finally, bring the connection up:
+
+nmcli con up ens33
+
+
+This command sets a static IP address of 192.168.1.100, with a subnet mask of /24, and configures 192.168.1.1 as the default gateway and Google&#39;s DNS 8.8.8.8.
+
+Configuring DHCP 
+
+
+To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration:
+
+nmcli con mod ens33 ipv4.method auto
+nmcli con up ens33
+
+
+This tells NetworkManager to obtain an IP address automatically from the DHCP server.
+
+
+
+5. Configuring DNS and Hostname
+    
+
+Correctly configuring DNS and the system&#39;s hostname is crucial for ensuring proper network communication.
+
+Changing DNS Servers 
+
+
+DNS servers can be configured using nmcli. For example, to set Google&#39;s DNS servers (8.8.8.8 and 8.8.4.4), you can modify the connection like this:
+
+nmcli con mod ens33 ipv4.dns &#34;8.8.8.8 8.8.4.4&#34;
+nmcli con up ens33
+
+
+This updates the DNS servers for the ens33 interface.
+
+Changing Hostname 
+
+
+To change the hostname in AlmaLinux 9, use the hostnamectl command:
+
+sudo hostnamectl set-hostname new-hostname
+
+
+Replace new-hostname with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing:
+
+hostnamectl
+
+
+
+
+6. Managing Network Interfaces Using nmcli
+    
+
+The ***nmcli***  tool provides extensive capabilities for managing network connections. Let&#39;s cover a few common tasks using nmcli.
+
+Listing All Network Connections 
+
+
+To see all network connections (both active and inactive):
+
+nmcli con show
+
+
+This lists all the available connections configured on your system.
+
+Creating a New Network Connection 
+
+
+To create a new connection with a static IP address:
+
+nmcli con add type ethernet ifname ens33 con-name static-con ipv4.addresses 192.168.1.101/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual
+
+
+This command adds a new connection named static-con for the ens33 interface.
+
+Bringing Up and Down Network Connections 
+
+
+To bring a connection down (disconnect):
+
+nmcli con down ens33
+
+
+To bring the connection back up:
+
+nmcli con up ens33
+
+
+
+
+7. Troubleshooting Network Issues
+    
+
+Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques:
+
+Checking the Status of NetworkManager 
+
+
+First, verify that ***NetworkManager***  is running:
+
+systemctl status NetworkManager
+
+
+If it&#39;s not running, you can start it with:
+
+sudo systemctl start NetworkManager
+
+
+Testing Connectivity 
+
+
+Use the ping command to check basic connectivity:
+
+ping 8.8.8.8
+
+
+This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP.
+
+Reviewing Logs 
+
+
+Check system logs for any network-related errors:
+
+journalctl -xe | grep NetworkManager
+
+
+This will show detailed logs of network-related events.
+
+
+
+8. Best Practices for Network Management in AlmaLinux 9
+    
+
+
+- ***Use Static IP for Servers*** : For production servers, always configure a static IP to ensure consistent access to the system. 
+
+
+
+Minimize Manual Configuration : Leverage nmcli or nmtui for most network configurations to avoid manual editing of configuration files.
+
+
+
+
+Monitor Network Connections : Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations.
+
+
+
+
+Backup Configurations : Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong.
+
+
+
+
+Use NetworkManager : Stick with NetworkManager  as it simplifies managing complex networking setups compared to older tools like ifconfig.
+
+ 
+
+
+
+
+9. Conclusion
+    
+
+Configuring and managing network settings in ***AlmaLinux 9***  is straightforward when using the ***NetworkManager***  service and its associated tools like ***nmcli*** . By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently.
+
+Whether you&#39;re setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/almalinux-9-how-to-change-and-manage-network-settings/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-10-04T14:44:58+00:00" />
 <meta property="article:modified_time" content="2024-10-04T14:44:58+00:00" />
 
   <meta itemprop="name" content="AlmaLinux 9: How to Change and Manage Network Settings">
-  <meta itemprop="description" content="Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. AlmaLinux 9, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.">
+  <meta itemprop="description" content="Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. ***AlmaLinux 9*** , a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations. Table of Contents - Introduction to Network Configuration in AlmaLinux 9 Understanding NetworkManager and Network Tools Viewing Current Network Settings Configuring Network Interfaces (Static and DHCP) Configuring DNS and Hostname Managing Network Interfaces Using nmcli Troubleshooting Network Issues Best Practices for Network Management in AlmaLinux 9 Conclusion 1. Introduction to Network Configuration in AlmaLinux 9 Configuring network settings in ***AlmaLinux 9*** involves managing the system&#39;s network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it&#39;s a private local area network (LAN) or the broader internet. AlmaLinux 9 uses ***NetworkManager*** as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line. 2. Understanding NetworkManager and Network Tools ***NetworkManager*** is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases. - ***nmcli*** : A command-line tool to interact with NetworkManager. nmtui : A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal. ifconfig : A deprecated tool but still available for viewing interface details. ip : A modern replacement for ifconfig that can be used for network interface and routing configurations. Before changing network settings, it&#39;s important to understand the current configuration, which brings us to the next step. 3. Viewing Current Network Settings Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this. Viewing Active Network Interfaces To list all active network interfaces on your system, use the nmcli or ip command. nmcli device status This will display a list of all network interfaces, along with their connection status. Alternatively, you can use: ip addr This command will give you detailed information about all available network interfaces, including their IP addresses. Displaying Routing Table To view the routing table and see how your network traffic is routed: ip route This will display the default gateway and other routing information, which is essential for understanding how the network is configured. Checking DNS Configuration To check the DNS settings, you can inspect the /etc/resolv.conf file: cat /etc/resolv.conf This file lists the nameservers your system uses to resolve domain names to IP addresses. 4. Configuring Network Interfaces (Static and DHCP) Network interfaces in AlmaLinux 9 can be configured to use either ***DHCP (Dynamic Host Configuration Protocol)*** or a ***static IP address*** . In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS. Configuring a Static IP Address To configure a network interface with a static IP address, use nmcli. First, identify the network interface you want to configure: nmcli device status Assume your network interface is named ens33. To assign a static IP, use the following command: nmcli con mod ens33 ipv4.addresses 192.168.1.100/24 nmcli con mod ens33 ipv4.gateway 192.168.1.1 nmcli con mod ens33 ipv4.dns 8.8.8.8 nmcli con mod ens33 ipv4.method manual Finally, bring the connection up: nmcli con up ens33 This command sets a static IP address of 192.168.1.100, with a subnet mask of /24, and configures 192.168.1.1 as the default gateway and Google&#39;s DNS 8.8.8.8. Configuring DHCP To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration: nmcli con mod ens33 ipv4.method auto nmcli con up ens33 This tells NetworkManager to obtain an IP address automatically from the DHCP server. 5. Configuring DNS and Hostname Correctly configuring DNS and the system&#39;s hostname is crucial for ensuring proper network communication. Changing DNS Servers DNS servers can be configured using nmcli. For example, to set Google&#39;s DNS servers (8.8.8.8 and 8.8.4.4), you can modify the connection like this: nmcli con mod ens33 ipv4.dns &#34;8.8.8.8 8.8.4.4&#34; nmcli con up ens33 This updates the DNS servers for the ens33 interface. Changing Hostname To change the hostname in AlmaLinux 9, use the hostnamectl command: sudo hostnamectl set-hostname new-hostname Replace new-hostname with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing: hostnamectl 6. Managing Network Interfaces Using nmcli The ***nmcli*** tool provides extensive capabilities for managing network connections. Let&#39;s cover a few common tasks using nmcli. Listing All Network Connections To see all network connections (both active and inactive): nmcli con show This lists all the available connections configured on your system. Creating a New Network Connection To create a new connection with a static IP address: nmcli con add type ethernet ifname ens33 con-name static-con ipv4.addresses 192.168.1.101/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual This command adds a new connection named static-con for the ens33 interface. Bringing Up and Down Network Connections To bring a connection down (disconnect): nmcli con down ens33 To bring the connection back up: nmcli con up ens33 7. Troubleshooting Network Issues Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques: Checking the Status of NetworkManager First, verify that ***NetworkManager*** is running: systemctl status NetworkManager If it&#39;s not running, you can start it with: sudo systemctl start NetworkManager Testing Connectivity Use the ping command to check basic connectivity: ping 8.8.8.8 This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP. Reviewing Logs Check system logs for any network-related errors: journalctl -xe | grep NetworkManager This will show detailed logs of network-related events. 8. Best Practices for Network Management in AlmaLinux 9 - ***Use Static IP for Servers*** : For production servers, always configure a static IP to ensure consistent access to the system. Minimize Manual Configuration : Leverage nmcli or nmtui for most network configurations to avoid manual editing of configuration files. Monitor Network Connections : Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations. Backup Configurations : Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong. Use NetworkManager : Stick with NetworkManager as it simplifies managing complex networking setups compared to older tools like ifconfig. 9. Conclusion Configuring and managing network settings in ***AlmaLinux 9*** is straightforward when using the ***NetworkManager*** service and its associated tools like ***nmcli*** . By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently. Whether you&#39;re setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure.">
   <meta itemprop="datePublished" content="2024-10-04T14:44:58+00:00">
   <meta itemprop="dateModified" content="2024-10-04T14:44:58+00:00">
-  <meta itemprop="wordCount" content="1195">
+  <meta itemprop="wordCount" content="1210">
   <meta itemprop="keywords" content="Alma Linux,How-to Guides,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Change and Manage Network Settings">
-  <meta name="twitter:description" content="Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. AlmaLinux 9, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.">
+  <meta name="twitter:description" content="Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. ***AlmaLinux 9*** , a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations. Table of Contents - Introduction to Network Configuration in AlmaLinux 9 Understanding NetworkManager and Network Tools Viewing Current Network Settings Configuring Network Interfaces (Static and DHCP) Configuring DNS and Hostname Managing Network Interfaces Using nmcli Troubleshooting Network Issues Best Practices for Network Management in AlmaLinux 9 Conclusion 1. Introduction to Network Configuration in AlmaLinux 9 Configuring network settings in ***AlmaLinux 9*** involves managing the system&#39;s network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it&#39;s a private local area network (LAN) or the broader internet. AlmaLinux 9 uses ***NetworkManager*** as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line. 2. Understanding NetworkManager and Network Tools ***NetworkManager*** is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases. - ***nmcli*** : A command-line tool to interact with NetworkManager. nmtui : A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal. ifconfig : A deprecated tool but still available for viewing interface details. ip : A modern replacement for ifconfig that can be used for network interface and routing configurations. Before changing network settings, it&#39;s important to understand the current configuration, which brings us to the next step. 3. Viewing Current Network Settings Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this. Viewing Active Network Interfaces To list all active network interfaces on your system, use the nmcli or ip command. nmcli device status This will display a list of all network interfaces, along with their connection status. Alternatively, you can use: ip addr This command will give you detailed information about all available network interfaces, including their IP addresses. Displaying Routing Table To view the routing table and see how your network traffic is routed: ip route This will display the default gateway and other routing information, which is essential for understanding how the network is configured. Checking DNS Configuration To check the DNS settings, you can inspect the /etc/resolv.conf file: cat /etc/resolv.conf This file lists the nameservers your system uses to resolve domain names to IP addresses. 4. Configuring Network Interfaces (Static and DHCP) Network interfaces in AlmaLinux 9 can be configured to use either ***DHCP (Dynamic Host Configuration Protocol)*** or a ***static IP address*** . In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS. Configuring a Static IP Address To configure a network interface with a static IP address, use nmcli. First, identify the network interface you want to configure: nmcli device status Assume your network interface is named ens33. To assign a static IP, use the following command: nmcli con mod ens33 ipv4.addresses 192.168.1.100/24 nmcli con mod ens33 ipv4.gateway 192.168.1.1 nmcli con mod ens33 ipv4.dns 8.8.8.8 nmcli con mod ens33 ipv4.method manual Finally, bring the connection up: nmcli con up ens33 This command sets a static IP address of 192.168.1.100, with a subnet mask of /24, and configures 192.168.1.1 as the default gateway and Google&#39;s DNS 8.8.8.8. Configuring DHCP To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration: nmcli con mod ens33 ipv4.method auto nmcli con up ens33 This tells NetworkManager to obtain an IP address automatically from the DHCP server. 5. Configuring DNS and Hostname Correctly configuring DNS and the system&#39;s hostname is crucial for ensuring proper network communication. Changing DNS Servers DNS servers can be configured using nmcli. For example, to set Google&#39;s DNS servers (8.8.8.8 and 8.8.4.4), you can modify the connection like this: nmcli con mod ens33 ipv4.dns &#34;8.8.8.8 8.8.4.4&#34; nmcli con up ens33 This updates the DNS servers for the ens33 interface. Changing Hostname To change the hostname in AlmaLinux 9, use the hostnamectl command: sudo hostnamectl set-hostname new-hostname Replace new-hostname with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing: hostnamectl 6. Managing Network Interfaces Using nmcli The ***nmcli*** tool provides extensive capabilities for managing network connections. Let&#39;s cover a few common tasks using nmcli. Listing All Network Connections To see all network connections (both active and inactive): nmcli con show This lists all the available connections configured on your system. Creating a New Network Connection To create a new connection with a static IP address: nmcli con add type ethernet ifname ens33 con-name static-con ipv4.addresses 192.168.1.101/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual This command adds a new connection named static-con for the ens33 interface. Bringing Up and Down Network Connections To bring a connection down (disconnect): nmcli con down ens33 To bring the connection back up: nmcli con up ens33 7. Troubleshooting Network Issues Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques: Checking the Status of NetworkManager First, verify that ***NetworkManager*** is running: systemctl status NetworkManager If it&#39;s not running, you can start it with: sudo systemctl start NetworkManager Testing Connectivity Use the ping command to check basic connectivity: ping 8.8.8.8 This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP. Reviewing Logs Check system logs for any network-related errors: journalctl -xe | grep NetworkManager This will show detailed logs of network-related events. 8. Best Practices for Network Management in AlmaLinux 9 - ***Use Static IP for Servers*** : For production servers, always configure a static IP to ensure consistent access to the system. Minimize Manual Configuration : Leverage nmcli or nmtui for most network configurations to avoid manual editing of configuration files. Monitor Network Connections : Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations. Backup Configurations : Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong. Use NetworkManager : Stick with NetworkManager as it simplifies managing complex networking setups compared to older tools like ifconfig. 9. Conclusion Configuring and managing network settings in ***AlmaLinux 9*** is straightforward when using the ***NetworkManager*** service and its associated tools like ***nmcli*** . By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently. Whether you&#39;re setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9653,43 +9973,43 @@ Network configuration is a critical aspect of managing a server, especially in e
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh3">Table of Contents
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-network-configuration-in-almalinux-9h3">1. Introduction to Network Configuration in AlmaLinux 9
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-network-configuration-in-almalinux-9">1. Introduction to Network Configuration in AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-understanding-networkmanager-and-network-toolsh3">2. Understanding NetworkManager and Network Tools
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-understanding-networkmanager-and-network-tools">2. Understanding NetworkManager and Network Tools
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-viewing-current-network-settingsh3">3. Viewing Current Network Settings
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-viewing-current-network-settings">3. Viewing Current Network Settings
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-configuring-network-interfaces-static-and-dhcph3">4. Configuring Network Interfaces (Static and DHCP)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-configuring-network-interfaces-static-and-dhcp">4. Configuring Network Interfaces (Static and DHCP)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-configuring-dns-and-hostnameh3">5. Configuring DNS and Hostname
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-configuring-dns-and-hostname">5. Configuring DNS and Hostname
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-managing-network-interfaces-using-nmclih3">6. Managing Network Interfaces Using nmcli
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-managing-network-interfaces-using-nmcli">6. Managing Network Interfaces Using nmcli
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-troubleshooting-network-issuesh3">7. Troubleshooting Network Issues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-troubleshooting-network-issues">7. Troubleshooting Network Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-best-practices-for-network-management-in-almalinux-9h3">8. Best Practices for Network Management in AlmaLinux 9
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-best-practices-for-network-management-in-almalinux-9">8. Best Practices for Network Management in AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-conclusionh3">9. Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-conclusion">9. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9723,136 +10043,153 @@ Network configuration is a critical aspect of managing a server, especially in e
                 </a></div>
         <div class="content">
           <!-- wp:paragraph -->
-<p>Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. <strong>AlmaLinux 9</strong>, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Table of Contents</h3><span class="hx-absolute -hx-mt-20" id="table-of-contentsh3"></span>
-    <a href="#table-of-contentsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. ***AlmaLinux 9*** , a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.
+<h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to Network Configuration in AlmaLinux 9</li>
+- Introduction to Network Configuration in AlmaLinux 9 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Understanding NetworkManager and Network Tools</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Viewing Current Network Settings</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configuring Network Interfaces (Static and DHCP)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configuring DNS and Hostname</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Managing Network Interfaces Using nmcli</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Troubleshooting Network Issues</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Best Practices for Network Management in AlmaLinux 9</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Introduction to Network Configuration in AlmaLinux 9</h3><span class="hx-absolute -hx-mt-20" id="1-introduction-to-network-configuration-in-almalinux-9h3"></span>
-    <a href="#1-introduction-to-network-configuration-in-almalinux-9h3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>1. Introduction to Network Configuration in AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="1-introduction-to-network-configuration-in-almalinux-9"></span>
+    <a href="#1-introduction-to-network-configuration-in-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Configuring network settings in <strong>AlmaLinux 9</strong> involves managing the system's network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it's a private local area network (LAN) or the broader internet.</p>
+<p>Configuring network settings in ***AlmaLinux 9***  involves managing the system's network interfaces, routing, DNS, and hostname settings. These configurations enable your server to communicate effectively with other machines over a network, whether it's a private local area network (LAN) or the broader internet.
 <!-- wp:paragraph -->
-<p>AlmaLinux 9 uses <strong>NetworkManager</strong> as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line.</p>
+<p>AlmaLinux 9 uses ***NetworkManager***  as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Understanding NetworkManager and Network Tools</h3><span class="hx-absolute -hx-mt-20" id="2-understanding-networkmanager-and-network-toolsh3"></span>
-    <a href="#2-understanding-networkmanager-and-network-toolsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Understanding NetworkManager and Network Tools<span class="hx-absolute -hx-mt-20" id="2-understanding-networkmanager-and-network-tools"></span>
+    <a href="#2-understanding-networkmanager-and-network-tools" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><strong>NetworkManager</strong> is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases.</p>
+<p>***NetworkManager***  is the default service for managing network interfaces in AlmaLinux 9. It allows you to manage Ethernet, Wi-Fi, mobile broadband, and VPN connections. It provides both command-line and graphical user interfaces, making it versatile for various use cases.
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>nmcli</strong>: A command-line tool to interact with NetworkManager.</li>
+- ***nmcli*** : A command-line tool to interact with NetworkManager. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>nmtui</strong>: A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal.</li>
+<ul>
+<li><em><strong>nmtui</strong></em> : A text-based user interface tool that provides an easier, interactive way to manage network settings from the terminal.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>ifconfig</strong>: A deprecated tool but still available for viewing interface details.</li>
+<ul>
+<li><em><strong>ifconfig</strong></em> : A deprecated tool but still available for viewing interface details.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>ip</strong>: A modern replacement for <code>ifconfig</code> that can be used for network interface and routing configurations.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>ip</strong></em> : A modern replacement for <code>ifconfig</code> that can be used for network interface and routing configurations.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:paragraph -->
-<p>Before changing network settings, it's important to understand the current configuration, which brings us to the next step.</p>
+<p>Before changing network settings, it's important to understand the current configuration, which brings us to the next step.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Viewing Current Network Settings</h3><span class="hx-absolute -hx-mt-20" id="3-viewing-current-network-settingsh3"></span>
-    <a href="#3-viewing-current-network-settingsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Viewing Current Network Settings<span class="hx-absolute -hx-mt-20" id="3-viewing-current-network-settings"></span>
+    <a href="#3-viewing-current-network-settings" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this.</p>
+<p>Before making any changes, it’s useful to inspect the current network configuration. You can use a variety of commands to do this.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Viewing Active Network Interfaces</h4>
+<h4 class="wp-block-heading">Viewing Active Network Interfaces 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To list all active network interfaces on your system, use the <code>nmcli</code> or <code>ip</code> command.</p>
+<p>To list all active network interfaces on your system, use the <code>nmcli</code> or <code>ip</code> command.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli device status</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This will display a list of all network interfaces, along with their connection status.</p>
+<p>This will display a list of all network interfaces, along with their connection status.
 <!-- wp:paragraph -->
-<p>Alternatively, you can use:</p>
+<p>Alternatively, you can use:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ip addr</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This command will give you detailed information about all available network interfaces, including their IP addresses.</p>
+<p>This command will give you detailed information about all available network interfaces, including their IP addresses.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Displaying Routing Table</h4>
+<h4 class="wp-block-heading">Displaying Routing Table 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To view the routing table and see how your network traffic is routed:</p>
+<p>To view the routing table and see how your network traffic is routed:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ip route</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This will display the default gateway and other routing information, which is essential for understanding how the network is configured.</p>
+<p>This will display the default gateway and other routing information, which is essential for understanding how the network is configured.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Checking DNS Configuration</h4>
+<h4 class="wp-block-heading">Checking DNS Configuration 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To check the DNS settings, you can inspect the <code>/etc/resolv.conf</code> file:</p>
+<p>To check the DNS settings, you can inspect the <code>/etc/resolv.conf</code> file:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">cat /etc/resolv.conf</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This file lists the nameservers your system uses to resolve domain names to IP addresses.</p>
+<p>This file lists the nameservers your system uses to resolve domain names to IP addresses.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>4. Configuring Network Interfaces (Static and DHCP)</h3><span class="hx-absolute -hx-mt-20" id="4-configuring-network-interfaces-static-and-dhcph3"></span>
-    <a href="#4-configuring-network-interfaces-static-and-dhcph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Configuring Network Interfaces (Static and DHCP)<span class="hx-absolute -hx-mt-20" id="4-configuring-network-interfaces-static-and-dhcp"></span>
+    <a href="#4-configuring-network-interfaces-static-and-dhcp" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Network interfaces in AlmaLinux 9 can be configured to use either <strong>DHCP (Dynamic Host Configuration Protocol)</strong> or a <strong>static IP address</strong>. In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS.</p>
+<p>Network interfaces in AlmaLinux 9 can be configured to use either ***DHCP (Dynamic Host Configuration Protocol)***  or a ***static IP address*** . In a DHCP setup, the server automatically assigns an IP address, while a static IP configuration requires manual settings for the IP, netmask, gateway, and DNS.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Configuring a Static IP Address</h4>
+<h4 class="wp-block-heading">Configuring a Static IP Address 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To configure a network interface with a static IP address, use <code>nmcli</code>. First, identify the network interface you want to configure:</p>
+<p>To configure a network interface with a static IP address, use <code>nmcli</code>. First, identify the network interface you want to configure:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli device status</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Assume your network interface is named <code>ens33</code>. To assign a static IP, use the following command:</p>
+<p>Assume your network interface is named <code>ens33</code>. To assign a static IP, use the following command:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con mod ens33 ipv4.addresses 192.168.1.100/24
 nmcli con mod ens33 ipv4.gateway 192.168.1.1
@@ -9860,170 +10197,173 @@ nmcli con mod ens33 ipv4.dns 8.8.8.8
 nmcli con mod ens33 ipv4.method manual</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Finally, bring the connection up:</p>
+<p>Finally, bring the connection up:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con up ens33</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This command sets a static IP address of <code>192.168.1.100</code>, with a subnet mask of <code>/24</code>, and configures <code>192.168.1.1</code> as the default gateway and Google's DNS <code>8.8.8.8</code>.</p>
+<p>This command sets a static IP address of <code>192.168.1.100</code>, with a subnet mask of <code>/24</code>, and configures <code>192.168.1.1</code> as the default gateway and Google's DNS <code>8.8.8.8</code>.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Configuring DHCP</h4>
+<h4 class="wp-block-heading">Configuring DHCP 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration:</p>
+<p>To configure the same network interface to use DHCP, you can switch the interface back to automatic configuration:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con mod ens33 ipv4.method auto
 nmcli con up ens33</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This tells NetworkManager to obtain an IP address automatically from the DHCP server.</p>
+<p>This tells NetworkManager to obtain an IP address automatically from the DHCP server.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>5. Configuring DNS and Hostname</h3><span class="hx-absolute -hx-mt-20" id="5-configuring-dns-and-hostnameh3"></span>
-    <a href="#5-configuring-dns-and-hostnameh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>5. Configuring DNS and Hostname<span class="hx-absolute -hx-mt-20" id="5-configuring-dns-and-hostname"></span>
+    <a href="#5-configuring-dns-and-hostname" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Correctly configuring DNS and the system's hostname is crucial for ensuring proper network communication.</p>
+<p>Correctly configuring DNS and the system's hostname is crucial for ensuring proper network communication.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Changing DNS Servers</h4>
+<h4 class="wp-block-heading">Changing DNS Servers 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>DNS servers can be configured using <code>nmcli</code>. For example, to set Google's DNS servers (<code>8.8.8.8</code> and <code>8.8.4.4</code>), you can modify the connection like this:</p>
+<p>DNS servers can be configured using <code>nmcli</code>. For example, to set Google's DNS servers (<code>8.8.8.8</code> and <code>8.8.4.4</code>), you can modify the connection like this:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con mod ens33 ipv4.dns "8.8.8.8 8.8.4.4"
 nmcli con up ens33</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This updates the DNS servers for the <code>ens33</code> interface.</p>
+<p>This updates the DNS servers for the <code>ens33</code> interface.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Changing Hostname</h4>
+<h4 class="wp-block-heading">Changing Hostname 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To change the hostname in AlmaLinux 9, use the <code>hostnamectl</code> command:</p>
+<p>To change the hostname in AlmaLinux 9, use the <code>hostnamectl</code> command:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo hostnamectl set-hostname new-hostname</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Replace <code>new-hostname</code> with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing:</p>
+<p>Replace <code>new-hostname</code> with the desired hostname for your server. This will change the system’s hostname, and you can verify the change by typing:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">hostnamectl</code></pre>
 <!-- /wp:code -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>6. Managing Network Interfaces Using nmcli</h3><span class="hx-absolute -hx-mt-20" id="6-managing-network-interfaces-using-nmclih3"></span>
-    <a href="#6-managing-network-interfaces-using-nmclih3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>6. Managing Network Interfaces Using nmcli<span class="hx-absolute -hx-mt-20" id="6-managing-network-interfaces-using-nmcli"></span>
+    <a href="#6-managing-network-interfaces-using-nmcli" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>The <strong>nmcli</strong> tool provides extensive capabilities for managing network connections. Let's cover a few common tasks using <code>nmcli</code>.</p>
+<p>The ***nmcli***  tool provides extensive capabilities for managing network connections. Let's cover a few common tasks using <code>nmcli</code>.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Listing All Network Connections</h4>
+<h4 class="wp-block-heading">Listing All Network Connections 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To see all network connections (both active and inactive):</p>
+<p>To see all network connections (both active and inactive):
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con show</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This lists all the available connections configured on your system.</p>
+<p>This lists all the available connections configured on your system.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Creating a New Network Connection</h4>
+<h4 class="wp-block-heading">Creating a New Network Connection 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To create a new connection with a static IP address:</p>
+<p>To create a new connection with a static IP address:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con add type ethernet ifname ens33 con-name static-con ipv4.addresses 192.168.1.101/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This command adds a new connection named <code>static-con</code> for the <code>ens33</code> interface.</p>
+<p>This command adds a new connection named <code>static-con</code> for the <code>ens33</code> interface.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Bringing Up and Down Network Connections</h4>
+<h4 class="wp-block-heading">Bringing Up and Down Network Connections 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>To bring a connection down (disconnect):</p>
+<p>To bring a connection down (disconnect):
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con down ens33</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>To bring the connection back up:</p>
+<p>To bring the connection back up:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">nmcli con up ens33</code></pre>
 <!-- /wp:code -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>7. Troubleshooting Network Issues</h3><span class="hx-absolute -hx-mt-20" id="7-troubleshooting-network-issuesh3"></span>
-    <a href="#7-troubleshooting-network-issuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>7. Troubleshooting Network Issues<span class="hx-absolute -hx-mt-20" id="7-troubleshooting-network-issues"></span>
+    <a href="#7-troubleshooting-network-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques:</p>
+<p>Even with careful configuration, network issues can arise. Here are some common troubleshooting techniques:
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Checking the Status of NetworkManager</h4>
+<h4 class="wp-block-heading">Checking the Status of NetworkManager 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>First, verify that <strong>NetworkManager</strong> is running:</p>
+<p>First, verify that ***NetworkManager***  is running:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">systemctl status NetworkManager</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>If it's not running, you can start it with:</p>
+<p>If it's not running, you can start it with:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl start NetworkManager</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Testing Connectivity</h4>
+<h4 class="wp-block-heading">Testing Connectivity 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Use the <code>ping</code> command to check basic connectivity:</p>
+<p>Use the <code>ping</code> command to check basic connectivity:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ping 8.8.8.8</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP.</p>
+<p>This tests whether the server can reach Google’s DNS servers. If this fails, it might indicate a problem with your gateway or ISP.
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Reviewing Logs</h4>
+<h4 class="wp-block-heading">Reviewing Logs 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Check system logs for any network-related errors:</p>
+<p>Check system logs for any network-related errors:
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">journalctl -xe | grep NetworkManager</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>This will show detailed logs of network-related events.</p>
+<p>This will show detailed logs of network-related events.
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>8. Best Practices for Network Management in AlmaLinux 9</h3><span class="hx-absolute -hx-mt-20" id="8-best-practices-for-network-management-in-almalinux-9h3"></span>
-    <a href="#8-best-practices-for-network-management-in-almalinux-9h3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>8. Best Practices for Network Management in AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="8-best-practices-for-network-management-in-almalinux-9"></span>
+    <a href="#8-best-practices-for-network-management-in-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Use Static IP for Servers</strong>: For production servers, always configure a static IP to ensure consistent access to the system.</li>
+- ***Use Static IP for Servers*** : For production servers, always configure a static IP to ensure consistent access to the system. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Minimize Manual Configuration</strong>: Leverage <code>nmcli</code> or <code>nmtui</code> for most network configurations to avoid manual editing of configuration files.</li>
+<ul>
+<li><em><strong>Minimize Manual Configuration</strong></em> : Leverage <code>nmcli</code> or <code>nmtui</code> for most network configurations to avoid manual editing of configuration files.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Monitor Network Connections</strong>: Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations.</li>
+<ul>
+<li><em><strong>Monitor Network Connections</strong></em> : Regularly monitor network interfaces, DNS configurations, and routing tables to identify potential misconfigurations.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Backup Configurations</strong>: Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong.</li>
+<ul>
+<li><em><strong>Backup Configurations</strong></em> : Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Use NetworkManager</strong>: Stick with <strong>NetworkManager</strong> as it simplifies managing complex networking setups compared to older tools like <code>ifconfig</code>.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Use NetworkManager</strong></em> : Stick with <em><strong>NetworkManager</strong></em>  as it simplifies managing complex networking setups compared to older tools like <code>ifconfig</code>.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>9. Conclusion</h3><span class="hx-absolute -hx-mt-20" id="9-conclusionh3"></span>
-    <a href="#9-conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>9. Conclusion<span class="hx-absolute -hx-mt-20" id="9-conclusion"></span>
+    <a href="#9-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Configuring and managing network settings in <strong>AlmaLinux 9</strong> is straightforward when using the <strong>NetworkManager</strong> service and its associated tools like <strong>nmcli</strong>. By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently.</p>
+<p>Configuring and managing network settings in ***AlmaLinux 9***  is straightforward when using the ***NetworkManager***  service and its associated tools like ***nmcli*** . By understanding how to configure network interfaces, manage DNS, and troubleshoot potential issues, you can ensure that your AlmaLinux server is well-connected and operating efficiently.
 <!-- wp:paragraph -->
-<p>Whether you're setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure.</p>
+<p>Whether you're setting up a server with a static IP or relying on DHCP for dynamic configurations, following best practices in network management will help keep your AlmaLinux 9 systems stable and secure.
 
         </div>
         

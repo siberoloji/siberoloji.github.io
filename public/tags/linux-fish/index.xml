@@ -26,8 +26,8 @@
         
         &lt;p&gt;Linux denildiğinde herhalde ilk akla gelen konulardan bir tanesi de komut satırı ve terminaldir. Komut satırında yazdığınız ifadeleri işleyen kabuk (shell) ise farklı sürümleriyle kullanıcılara sunulur. Bash, Dash, Zsh, Csh bunlara örnek olarak verilebilir. Bu yazımızda size Fish kabuk programının kurulumunu açıklayacağız.&lt;/p&gt;
 &lt;p&gt;Fish, kullanıcı dostu olarak bilinen bir kabuk programıdır. Komut tamamlama, komut içerisinde farklı formları farklı renklendirme özelliklerine sahiptir. Komut yazımı esnasında çeşitli tavsiyeler sunar ve bunları, o an bulunduğunuz klasörü de dikkate alarak yapar. Önerileri yön tuşlarıyla kolayca seçebilirsiniz. Yardım komutlarını otomatik olarak web tarayıcıda açması da kullanım kolaylığı açısında vurgulanması gereken özelliklerinden birisidir.&lt;/p&gt;
-&lt;h2&gt;Debian için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#debian-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Debian için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#debian-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Debian 8 ----------------
 echo &#39;deb &lt;a href=&#34;http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/&#34;&gt;http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/&lt;/a&gt; /&#39; &amp;gt;&amp;gt; /etc/apt/sources.list.d/fish.list
@@ -39,8 +39,8 @@ echo &#39;deb &lt;a href=&#34;http://download.opensuse.org/repositories/shells:/
 apt-get update
 apt-get install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ubuntu için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ubuntu-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#ubuntu-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ubuntu için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ubuntu-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ubuntu-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Ubuntu ----------------
 sudo add-apt-repository ppa:fish-shell/nightly-master
@@ -49,8 +49,8 @@ sudo apt-get install python-software-properties
 sudo apt-get update
 sudo apt-get install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Fedora için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fedora-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#fedora-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Fedora için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fedora-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fedora-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Fedora 22 ----------------
 cd /etc/yum.repos.d/
@@ -67,8 +67,8 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;CentOS için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;centos-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#centos-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;CentOS için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;centos-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#centos-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- CentOS 7 ----------------
 cd /etc/yum.repos.d/
@@ -80,8 +80,8 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;RHEL için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rhel-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#rhel-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;RHEL için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rhel-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rhel-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- RHEL 7 ----------------
 cd /etc/yum.repos.d/
@@ -93,7 +93,7 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHEL-6/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHEL-6/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;strong&gt;Başlatmak için&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Başlatmak için&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;

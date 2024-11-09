@@ -11,25 +11,84 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Kotlin Programlamada Yorum Satırları – Siberoloji</title>
-  <meta name="description" content=" Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-programlamada-yorum-satirlari/" itemprop="url" />
+  <meta name="description" content=" Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir. Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır. Satır Sonu Yorumları Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir. fun main() { val name: String = &#34;John&#34; //identifier =name , Type = String, initialization = John var age: Int = 16 //identifier =age , Type = Int, initialization = 16 println(name) println(age) } Çok Satırlı Yorumlar Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır. fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Dokümantasyon Yorumları Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır. /** * Copyright siberoloji.com 2024 MIT license * main() function declares 2 variables with standard assignment template. * We can omit Type here because it is redundant. * Kotlin decides the type of variable with &#34;Type Inference&#34; */ fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-programlamada-yorum-satirlari/" itemprop="url" />
 
 <meta property="og:title" content="Kotlin Programlamada Yorum Satırları" />
 <meta property="og:description" content="
-Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir." />
+Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.
+
+Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır.
+Satır Sonu Yorumları
+    
+
+Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.
+
+fun main() {
+    val name: String = &#34;John&#34;
+    //identifier =name , Type = String, initialization = John
+    var age: Int = 16
+    //identifier =age , Type = Int, initialization = 16
+    println(name)
+    println(age)
+}
+
+Çok Satırlı Yorumlar
+    
+
+Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.
+
+fun main() {
+    val name: String = &#34;John&#34;
+    /* 
+    identifier =name , Type = String, initialization = John
+    identifier =age , Type = Int, initialization = 16 
+    */
+    var age: Int = 16
+
+    println(name)
+    println(age)
+}
+
+Dokümantasyon Yorumları
+    
+
+Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.
+
+/**
+ * Copyright siberoloji.com 2024 MIT license
+ * main() function declares 2 variables with standard assignment template.
+ * We can omit Type here because it is redundant.
+ * Kotlin decides the type of variable with &#34;Type Inference&#34;
+ */
+
+fun main() {
+    val name: String = &#34;John&#34;
+    /*
+    identifier =name , Type = String, initialization = John
+    identifier =age , Type = Int, initialization = 16
+    */
+    var age: Int = 16
+
+    println(name)
+    println(age)
+}
+
+
+Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/kotlin-programlamada-yorum-satirlari/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-01-21T21:01:57+00:00" />
 <meta property="article:modified_time" content="2024-01-21T21:01:57+00:00" />
 
   <meta itemprop="name" content="Kotlin Programlamada Yorum Satırları">
-  <meta itemprop="description" content="Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.">
+  <meta itemprop="description" content="Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir. Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır. Satır Sonu Yorumları Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir. fun main() { val name: String = &#34;John&#34; //identifier =name , Type = String, initialization = John var age: Int = 16 //identifier =age , Type = Int, initialization = 16 println(name) println(age) } Çok Satırlı Yorumlar Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır. fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Dokümantasyon Yorumları Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır. /** * Copyright siberoloji.com 2024 MIT license * main() function declares 2 variables with standard assignment template. * We can omit Type here because it is redundant. * Kotlin decides the type of variable with &#34;Type Inference&#34; */ fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.">
   <meta itemprop="datePublished" content="2024-01-21T21:01:57+00:00">
   <meta itemprop="dateModified" content="2024-01-21T21:01:57+00:00">
   <meta itemprop="wordCount" content="407">
   <meta itemprop="keywords" content="Kotlin,Yazılım">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kotlin Programlamada Yorum Satırları">
-  <meta name="twitter:description" content="Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.">
+  <meta name="twitter:description" content="Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir. Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin&#39;de 3 farklı yorum satırı kullanımı vardır. Satır Sonu Yorumları Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir. fun main() { val name: String = &#34;John&#34; //identifier =name , Type = String, initialization = John var age: Int = 16 //identifier =age , Type = Int, initialization = 16 println(name) println(age) } Çok Satırlı Yorumlar Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır. fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Dokümantasyon Yorumları Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır. /** * Copyright siberoloji.com 2024 MIT license * main() function declares 2 variables with standard assignment template. * We can omit Type here because it is redundant. * Kotlin decides the type of variable with &#34;Type Inference&#34; */ fun main() { val name: String = &#34;John&#34; /* identifier =name , Type = String, initialization = John identifier =age , Type = Int, initialization = 16 */ var age: Int = 16 println(name) println(age) } Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -8208,21 +8267,21 @@ Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bun
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#sat%c4%b1r-sonu-yorumlar%c4%b1h2"
+                href="#sat%c4%b1r-sonu-yorumlar%c4%b1"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Satır Sonu Yorumları&lt;/h2&gt;</a>
+              >Satır Sonu Yorumları</a>
             </li>
           <li>
               <a
-                href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlarh2"
+                href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlar"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Çok Satırlı Yorumlar&lt;/h2&gt;</a>
+              >Çok Satırlı Yorumlar</a>
             </li>
           <li>
               <a
-                href="#dok%c3%bcmantasyon-yorumlar%c4%b1h2"
+                href="#dok%c3%bcmantasyon-yorumlar%c4%b1"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Dokümantasyon Yorumları&lt;/h2&gt;</a>
+              >Dokümantasyon Yorumları</a>
             </li>
           </ul>
   
@@ -9665,15 +9724,15 @@ Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bun
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sat%c4%b1r-sonu-yorumlar%c4%b1h2">Satır Sonu Yorumları
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sat%c4%b1r-sonu-yorumlar%c4%b1">Satır Sonu Yorumları
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlarh2">Çok Satırlı Yorumlar
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlar">Çok Satırlı Yorumlar
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dok%c3%bcmantasyon-yorumlar%c4%b1h2">Dokümantasyon Yorumları
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dok%c3%bcmantasyon-yorumlar%c4%b1">Dokümantasyon Yorumları
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9707,13 +9766,13 @@ Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bun
                 </a></div>
         <div class="content">
           <!-- wp:paragraph -->
-<p>Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.</p>
+<p>Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bunların uyumlu bir şekilde çalışmasıyla meydana gelir. Her bir kod bloğu, kendisinden beklenen işlemi yapar. Bu kodları yazan program geliştiricileri ilerleyen zamanlarda, geçmişe dönük olarak hangi kodun ne işlem yaptığını unutmaya, karıştırmaya başlarlar. Ayrıca projeden ayrılan yazılımcının yerine yeni gelen başka bir yazılımcı da kodları okuyarak programı öğrenmesi gerekir. İşte bu durumda, kodların yanına yazılan açıklama, not ve buna benzer ifadelere yorum satırı adı verilir.
 <!-- wp:paragraph -->
-<p>Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin'de 3 farklı yorum satırı kullanımı vardır.</p>
-<h2>Satır Sonu Yorumları</h2><span class="hx-absolute -hx-mt-20" id="satır-sonu-yorumlarıh2"></span>
-    <a href="#sat%c4%b1r-sonu-yorumlar%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Yorum satırları program derleyiciler tarafından dikkate alınmaz, işleme dahil edilmezler. Kotlin'de 3 farklı yorum satırı kullanımı vardır.
+<h2>Satır Sonu Yorumları<span class="hx-absolute -hx-mt-20" id="satır-sonu-yorumları"></span>
+    <a href="#sat%c4%b1r-sonu-yorumlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.</p>
+<p>Tek satırı aşmayan uzunlukta yorumlardır. // işaretinin ardından yazılırlar. // işaretinden sonra gelen ve satır sonuna kadar olan her şey yorum olarak kabul edilir. Aşağıdaki örnekte // ile kullanılan yorum satırları gösterilmiştir.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name: String = "John"
@@ -9724,10 +9783,10 @@ Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bun
     println(age)
 }</code></pre>
 <!-- /wp:code -->
-<h2>Çok Satırlı Yorumlar</h2><span class="hx-absolute -hx-mt-20" id="çok-satırlı-yorumlarh2"></span>
-    <a href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlarh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Çok Satırlı Yorumlar<span class="hx-absolute -hx-mt-20" id="çok-satırlı-yorumlar"></span>
+    <a href="#%c3%a7ok-sat%c4%b1rl%c4%b1-yorumlar" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.</p>
+<p>Başlangıcı /* işaretiyle başlayan ve arada kaç satır olursa olsun */ işaretine kadar arada kalan tüm açıklamalar yorum olarak kabul edilir. Derleyici tarafından dikkate alınmaz. /* Yorum */ formatını tek satır veya çok satırlı yorumlar için kullanabilirsiniz. Aşağıda çok satırlı yorum örneği bulunmaktadır.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val name: String = "John"
@@ -9741,10 +9800,10 @@ Bir bilgisayar programı, çeşitli kod parçalarının bir araya gelmesi ve bun
     println(age)
 }</code></pre>
 <!-- /wp:code -->
-<h2>Dokümantasyon Yorumları</h2><span class="hx-absolute -hx-mt-20" id="dokümantasyon-yorumlarıh2"></span>
-    <a href="#dok%c3%bcmantasyon-yorumlar%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Dokümantasyon Yorumları<span class="hx-absolute -hx-mt-20" id="dokümantasyon-yorumları"></span>
+    <a href="#dok%c3%bcmantasyon-yorumlar%c4%b1" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.</p>
+<p>Yazılımımız hakkında kullanım kılavuzu hazırlamak, copyright ifadeleri eklemek vb. amaçlarla /** ile */ arasına yazılan yorumlardır. Her satıra ayrıca * işareti de konulur. Bu formatta yazdığınız yorumları başka bir yazılım aracılığıyla derleyerek dokümantasyon oluşturabilirsiniz. Aşağıda dokümantasyon yorumu örneği bulunmaktadır.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">/**
  * Copyright siberoloji.com 2024 MIT license
@@ -9766,7 +9825,7 @@ fun main() {
 }</code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.</p>
+<p>Yorum satırlarını, bazı kodları denemek içinde kullanabiliriz. Deneme esnasında iptal etmek istediğimiz kodları, silip tekrar yazmak yerine yorum satırı içine alabiliriz. Ayrıca yorum satırlarını daha az kullanmanın da bazı yöntemleri bulunmaktadır. Mesela, değişken isimlerini daha anlamlı vermek, yazılan kodun daha okunur olmasını sağlayacaktır. Bu konuyu başka bir yazıda açıklayacağız.
 
         </div>
         

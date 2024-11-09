@@ -29,58 +29,58 @@ url: /what-are-some-notable-breaches-that-have-been-added-to-hibp-recently/
   Recently, several notable breaches have been added to the Have I Been Pwned (HIBP) database, highlighting the ongoing challenges of online security. Here are some significant incidents: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Wayback Machine Breach</strong></h3>
+
+ ### 1. ***Wayback Machine Breach*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Breach Date:</strong> September 28, 2024</li>
+- ***Breach Date:***  September 28, 2024 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Date Added to HIBP:</strong> October 9, 2024</li>
+- ***Date Added to HIBP:***  October 9, 2024 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compromised Accounts:</strong> Approximately 31,081,179</li>
+- ***Compromised Accounts:***  Approximately 31,081,179 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compromised Data:</strong> Email addresses, screen names, bcrypt-hashed passwords, and other internal data.</li>
-<!-- /wp:list-item --></ul>
+- ***Compromised Data:***  Email addresses, screen names, bcrypt-hashed passwords, and other internal data. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The Internet Archive's Wayback Machine suffered a significant breach that exposed data from over 31 million users. The breach was confirmed after hackers defaced the site and left a taunting message regarding the incident. Troy Hunt, the creator of HIBP, received the compromised data and incorporated it into the database shortly after verifying its authenticity[3][4][5]. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Blooms Today Breach</strong></h3>
+
+ ### 2. ***Blooms Today Breach*** 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Breach Date:</strong> November 11, 2023</li>
+- ***Breach Date:***  November 11, 2023 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Date Added to HIBP:</strong> September 3, 2024</li>
+- ***Date Added to HIBP:***  September 3, 2024 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compromised Accounts:</strong> 3,184,010</li>
+- ***Compromised Accounts:***  3,184,010 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compromised Data:</strong> Email addresses, names, phone numbers, physical addresses, and partial credit card data.</li>
-<!-- /wp:list-item --></ul>
+- ***Compromised Data:***  Email addresses, names, phone numbers, physical addresses, and partial credit card data. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   In April 2024, it was reported that records from Blooms Today were being sold on a hacking forum. The breach included sensitive information but did not expose enough credit card data to facilitate fraudulent purchases[1]. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Overview of Recent Breaches</h3>
+
+ ### Overview of Recent Breaches
 <!-- /wp:heading -->
 
 <!-- wp:table -->

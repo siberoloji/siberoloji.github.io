@@ -28,13 +28,13 @@ title: apt-get update / upgrade / dist-upgrade farkı nedir?
 url: /tr/apt-get-update-upgrade-dist-upgrade-farki-nedir/
 ---
 
-  Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em> apt-get update</em> ve benzeri komutları mutlaka kullanmışsınızdır. <em>apt-get update</em>, <em>apt-get upgrade</em> ve <em>apt-get dist-upgrade</em> komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.</p>
+  Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,<em> apt-get update</em> ve benzeri komutları mutlaka kullanmışsınızdır. <em>apt-get update</em>, <em>apt-get upgrade</em> ve <em>apt-get dist-upgrade</em> komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.
  
 
-  Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler&nbsp;/etc/apt/sources.list&nbsp;dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.</p>
+  Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler&nbsp;/etc/apt/sources.list&nbsp;dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.
  
 
-  Sisteminizin, paketlerini güncellemek amacıyla&nbsp;hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.</p>
+  Sisteminizin, paketlerini güncellemek amacıyla&nbsp;hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.
  
 
 <!-- wp:code -->
@@ -70,11 +70,11 @@ deb-src <a href="http://tr.archive.ubuntu.com/ubuntu/">http://tr.archive.ubuntu.
 # apt-get update 
 <!-- /wp:heading -->
 
-  apt-get update komutu sayesinde sisteminizde kurulu olan paketlerin, paket deposundaki versiyonları ile farkları araştırılır ve liste güncellenir. Aslında tek yapılan liste güncellemedir. Herhangi bir güncelleme işleminden önce çalıştırılması mutlaka tavsiye edilir çünkü sisteminizde gerekli güncelleme ve bağımlılıkların çözümü için gerekli bir işlemdir.</p>
+  apt-get update komutu sayesinde sisteminizde kurulu olan paketlerin, paket deposundaki versiyonları ile farkları araştırılır ve liste güncellenir. Aslında tek yapılan liste güncellemedir. Herhangi bir güncelleme işleminden önce çalıştırılması mutlaka tavsiye edilir çünkü sisteminizde gerekli güncelleme ve bağımlılıkların çözümü için gerekli bir işlemdir.
  
 
 <!-- wp:quote -->
-<blockquote class="wp-block-quote">  <em>apt-get update&nbsp;komutu ile sisteminize herhangi bir kurulum yapılmaz.</em></p>
+<blockquote class="wp-block-quote">  <em>apt-get update&nbsp;komutu ile sisteminize herhangi bir kurulum yapılmaz.</em>
  </blockquote>
 <!-- /wp:quote -->
 
@@ -126,10 +126,10 @@ Reading package lists... Done
 # apt-get upgrade 
 <!-- /wp:heading -->
 
-  Sisteminizde kurulu olan paketlerin&nbsp;hepsini, apt-get update komutu ile güncellediğiniz listede bulunan en son sürüme yükseltir. Burada dikkat edilmesi gereken nokta&nbsp;<strong>KURULU</strong>&nbsp;olan paketler üzerinde güncelleme işlemi yapıldığıdır. A.lib dosyasının 1.1 sürümünü 1.2 sürümüne günceller. Sadece kurulu olan paketleri en güncel hale getirir.</p>
+  Sisteminizde kurulu olan paketlerin&nbsp;hepsini, apt-get update komutu ile güncellediğiniz listede bulunan en son sürüme yükseltir. Burada dikkat edilmesi gereken nokta&nbsp;***KURULU*** &nbsp;olan paketler üzerinde güncelleme işlemi yapıldığıdır. A.lib dosyasının 1.1 sürümünü 1.2 sürümüne günceller. Sadece kurulu olan paketleri en güncel hale getirir.
  
 
-  Bir takım yazılım geliştiriciler veya sistem yöneticileri ihtiyaçları olmayan paket veya kernel dosyalarını, sistemlerinin kararlılığını düşünerek yüklemek istemezler. Böyle bir durumda upgrade oldukça kullanışlıdır. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur. Önemli bir nokta da, sistemden hiçbir paketin silinmediğidir.&nbsp;Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur.</p>
+  Bir takım yazılım geliştiriciler veya sistem yöneticileri ihtiyaçları olmayan paket veya kernel dosyalarını, sistemlerinin kararlılığını düşünerek yüklemek istemezler. Böyle bir durumda upgrade oldukça kullanışlıdır. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur. Önemli bir nokta da, sistemden hiçbir paketin silinmediğidir.&nbsp;Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur.
  
 
 <!-- wp:code -->
@@ -149,7 +149,7 @@ Calculating upgrade... Done
 # apt-get dist-upgrade 
 <!-- /wp:heading -->
 
-  Bu komut için, apt sistemindeki en fazla yetkiye sahip komut diyebiliriz. Mevcut paketleri günceller, sistemde olmayan yeni bağımlılıkları kurar, gerek kalmayanları siler. Bağımlılık problemlerinin çözümü ve sisteminizin en güncel kernel sürümüne yükseltilmesi için kullanılabilir. Tercih kullanıcınındır. Bir kısım&nbsp;kullanıcılar, yüklenen yeni kernel sürümü ile problem yaşayabilirler.</p>
+  Bu komut için, apt sistemindeki en fazla yetkiye sahip komut diyebiliriz. Mevcut paketleri günceller, sistemde olmayan yeni bağımlılıkları kurar, gerek kalmayanları siler. Bağımlılık problemlerinin çözümü ve sisteminizin en güncel kernel sürümüne yükseltilmesi için kullanılabilir. Tercih kullanıcınındır. Bir kısım&nbsp;kullanıcılar, yüklenen yeni kernel sürümü ile problem yaşayabilirler.
  
 
 <!-- wp:code -->
@@ -165,7 +165,7 @@ Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.</code></pre>
 <!-- /wp:code -->
 
-  apt-get dist-upgrade komutu ile sistem sürümü yeni bir dağıtıma yükseltilmez. Örneğin, 14.04 sürümünden 14.10'a geçmiş olmazsınız.&nbsp;</p>
+  apt-get dist-upgrade komutu ile sistem sürümü yeni bir dağıtıma yükseltilmez. Örneğin, 14.04 sürümünden 14.10'a geçmiş olmazsınız.&nbsp;
  
 
 <!-- wp:code -->

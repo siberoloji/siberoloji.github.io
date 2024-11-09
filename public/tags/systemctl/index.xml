@@ -24,8 +24,8 @@
       <description>
         
         
-         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.&lt;/p&gt;
- &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.&lt;/p&gt;
+         &lt;p&gt;Systemd konusunda önceki &lt;a href=&#34;https://www.siberoloji.com/systemd-nedir-genel-yapisi-nasildir/&#34; data-type=&#34;post&#34; data-id=&#34;1036&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;giriş&lt;/a&gt; ve &lt;a href=&#34;https://www.siberoloji.com/systemd-araclari-genel-kullanim-alanlari/&#34; data-type=&#34;post&#34; data-id=&#34;1034&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;genel&lt;/a&gt; kullanım yazılarında bahsedilen araçlardan, systemctl aracını birlikte incelemeye başlayalım.
+ &lt;p&gt;Bildiğiniz gibi, systemctl aracı, systemd’nin kendisini ve servis yöneticisini kontrol etmeye yarıyor. System Control ifadesinin kısaltılmış halidir. Öncelikle, systemctl komutu ile sistemimizin başlangıçta ne durumda olduğunu kontrol edelim. Bunun için komut satırına systemctl yazmanız yeterli.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
 systemctl
@@ -41,9 +41,9 @@ SUB &amp;nbsp;&amp;nbsp;&amp;nbsp;= The low-level unit activation state, values 
 152 loaded units listed. Pass --all to see loaded but inactive units, too.
 To show all installed unit files use &#39;systemctl list-unit-files&#39;.&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Bunun sonucunda sisteminizin başlama durumunda yüklenen, yüklenmeyen tüm servisler ile ilgili bir rapor ekrana görüntülenir. Bu ekranda, LOAD - ACTIVE - SUB sütünları, yüklenen ünitenin durumu hakkında bilgiler verir. Bu sütunlardaki bilgilere göre sisteminizin hatalarını tespit edip, diğer systemd araçlarının da yardımıyla hataları düzeltebilirsiniz.&lt;/p&gt;
- &lt;p&gt;Yukarıda verilen komutun çıktısı, normalde çok daha detaylı ve uzundur ancak buraya kısa halini aldık.&amp;nbsp;Raporun sonunda,&amp;nbsp;&lt;em&gt;152 loaded units listed &amp;nbsp;&lt;/em&gt;ifadesiyle, toplam 152 ünitenin listelendiğini görebiliyoruz.&lt;/p&gt;
- &lt;p&gt;Komutun çıktısında, kırmızı ikaz ile gösterilen problem hakkında detaylı bilgi almak için&amp;nbsp;&lt;strong&gt;systemctl&lt;/strong&gt;&amp;nbsp;aracının&amp;nbsp;&lt;strong&gt;status&lt;/strong&gt;&amp;nbsp;unite komutunu ve bilgi almak istediğimiz unitenin ismini kullanacağız.&lt;/p&gt;
+ &lt;p&gt;Bunun sonucunda sisteminizin başlama durumunda yüklenen, yüklenmeyen tüm servisler ile ilgili bir rapor ekrana görüntülenir. Bu ekranda, LOAD - ACTIVE - SUB sütünları, yüklenen ünitenin durumu hakkında bilgiler verir. Bu sütunlardaki bilgilere göre sisteminizin hatalarını tespit edip, diğer systemd araçlarının da yardımıyla hataları düzeltebilirsiniz.
+ &lt;p&gt;Yukarıda verilen komutun çıktısı, normalde çok daha detaylı ve uzundur ancak buraya kısa halini aldık.&amp;nbsp;Raporun sonunda,&amp;nbsp;&lt;em&gt;152 loaded units listed &amp;nbsp;&lt;/em&gt;ifadesiyle, toplam 152 ünitenin listelendiğini görebiliyoruz.
+ &lt;p&gt;Komutun çıktısında, kırmızı ikaz ile gösterilen problem hakkında detaylı bilgi almak için&amp;nbsp;***systemctl*** &amp;nbsp;aracının&amp;nbsp;***status*** &amp;nbsp;unite komutunu ve bilgi almak istediğimiz unitenin ismini kullanacağız.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;komut:
 systemctl status rc-local.service
@@ -58,8 +58,8 @@ May 10 10:04:17 ubuntu systemd[1]: Failed to start /etc/rc.local Compatibility.
 May 10 10:04:17 ubuntu systemd[1]: Unit rc-local.service entered failed state.
 May 10 10:04:17 ubuntu systemd[1]: rc-local.service failed.&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Detaylarını daha sonra açıklayacağımız bu durum raporları, sistemimiz hakkında nerelerde problem yaşandığını öğrenmekte oldukça faydalı olacaktır. Systemctl aracının kullanımı, yukarıda gösterilen ve benzeri şekillerde, durum komutları ve parametrelerle olmaktadır.&lt;/p&gt;
- &lt;p&gt;Systemd araçlarından systemctrl aracına kısaca bakmış olduk. İlerleyen yazılarda, unite komutları, unite dosya komutları ve sistem komutlarını systemctl aracı ile kullanmayı inceleyeceğiz.&lt;/p&gt;
+ &lt;p&gt;Detaylarını daha sonra açıklayacağımız bu durum raporları, sistemimiz hakkında nerelerde problem yaşandığını öğrenmekte oldukça faydalı olacaktır. Systemctl aracının kullanımı, yukarıda gösterilen ve benzeri şekillerde, durum komutları ve parametrelerle olmaktadır.
+ &lt;p&gt;Systemd araçlarından systemctrl aracına kısaca bakmış olduk. İlerleyen yazılarda, unite komutları, unite dosya komutları ve sistem komutlarını systemctl aracı ile kullanmayı inceleyeceğiz.
 
       </description>
     </item>

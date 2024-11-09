@@ -27,89 +27,89 @@ url: /insertion-sort-algorithm-a-step-by-step-guide/
   Insertion sort is a simple sorting algorithm that works by repeatedly inserting an element into its correct position in an already sorted array. It's efficient for small datasets and can be a good choice when the array is nearly sorted. 
  
 
-  <strong>How Insertion Sort Works</strong> 
+  ***How Insertion Sort Works***  
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Start with the second element:</strong> The first element is considered sorted.</li>
+- ***Start with the second element:***  The first element is considered sorted. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compare and insert:</strong> Pick the next element and compare it with the elements in the sorted part of the array.</li>
+- ***Compare and insert:***  Pick the next element and compare it with the elements in the sorted part of the array. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Shift elements:</strong> If the current element is smaller than the compared element, shift the compared element and all elements after it one position to the right.</li>
+- ***Shift elements:***  If the current element is smaller than the compared element, shift the compared element and all elements after it one position to the right. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Insert:</strong> Insert the current element into the empty position.</li>
+- ***Insert:***  Insert the current element into the empty position. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Repeat:</strong> Repeat steps 2-4 for all remaining elements in the array.</li>
-<!-- /wp:list-item --></ol>
+- ***Repeat:***  Repeat steps 2-4 for all remaining elements in the array. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Visual Example</strong> 
+  ***Visual Example***  
  
 
   Let's sort the array&nbsp;<code>[5, 2, 4, 6, 1, 3]</code>&nbsp;using insertion sort: 
  
 
-  <strong>Step 1:</strong>&nbsp;The first element (5) is considered sorted. 
+  ***Step 1:*** &nbsp;The first element (5) is considered sorted. 
  
 
-  <strong>Step 2:</strong>&nbsp;Compare 2 with 5. 2 is smaller, so shift 5 to the right and insert 2 in its place. 
+  ***Step 2:*** &nbsp;Compare 2 with 5. 2 is smaller, so shift 5 to the right and insert 2 in its place. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Array: <code>[2, 5, 4, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Array: <code>[2, 5, 4, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Step 3:</strong>&nbsp;Compare 4 with 5. 4 is smaller, so shift 5 to the right and insert 4 in its place. 
+  ***Step 3:*** &nbsp;Compare 4 with 5. 4 is smaller, so shift 5 to the right and insert 4 in its place. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Array: <code>[2, 4, 5, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Array: <code>[2, 4, 5, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Step 4:</strong>&nbsp;Compare 6 with 5. 6 is larger, so it remains in its position. 
+  ***Step 4:*** &nbsp;Compare 6 with 5. 6 is larger, so it remains in its position. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Array: <code>[2, 4, 5, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Array: <code>[2, 4, 5, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Step 5:</strong>&nbsp;Compare 1 with 5. 1 is smaller, so shift 5, 6, and 3 to the right and insert 1 in its place. 
+  ***Step 5:*** &nbsp;Compare 1 with 5. 1 is smaller, so shift 5, 6, and 3 to the right and insert 1 in its place. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Array: <code>[1, 2, 4, 5, 6, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Array: <code>[1, 2, 4, 5, 6, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Step 6:</strong>&nbsp;Compare 3 with 5. 3 is smaller, so shift 5 and 6 to the right and insert 3 in its place. 
+  ***Step 6:*** &nbsp;Compare 3 with 5. 3 is smaller, so shift 5 and 6 to the right and insert 3 in its place. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Array: <code>[1, 2, 3, 4, 5, 6]</code></li>
-<!-- /wp:list-item --></ul>
+- Array: <code>[1, 2, 3, 4, 5, 6]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The array is now sorted. 
  
 
-  <strong>Code Implementation (Python)</strong> 
+  ***Code Implementation (Python)***  
  
 
 <!-- wp:code -->
@@ -138,64 +138,64 @@ for i in range(len(arr)):
 </code></pre>
 <!-- /wp:code -->
 
-  <strong>Time Complexity</strong> 
+  ***Time Complexity***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Best case:</strong> The array is already sorted. The time complexity is O(n).</li>
+- ***Best case:***  The array is already sorted. The time complexity is O(n). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Average case:</strong> The time complexity is O(n^2).</li>
+- ***Average case:***  The time complexity is O(n^2). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Worst case:</strong> The array is sorted in reverse order. The time complexity is O(n^2).</li>
-<!-- /wp:list-item --></ul>
+- ***Worst case:***  The array is sorted in reverse order. The time complexity is O(n^2). 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Space Complexity</strong> 
+  ***Space Complexity***  
  
 
   The space complexity of insertion sort is O(1) as it only requires a constant amount of extra space. 
  
 
-  <strong>Advantages of Insertion Sort</strong> 
+  ***Advantages of Insertion Sort***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Simple to implement:</strong> Insertion sort is easy to understand and code.</li>
+- ***Simple to implement:***  Insertion sort is easy to understand and code. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Efficient for small datasets:</strong> It's a good choice for small arrays.</li>
+- ***Efficient for small datasets:***  It's a good choice for small arrays. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Online algorithm:</strong> It can process elements one at a time as they arrive.</li>
+- ***Online algorithm:***  It can process elements one at a time as they arrive. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Stable:</strong> It preserves the relative order of elements with equal keys.</li>
-<!-- /wp:list-item --></ul>
+- ***Stable:***  It preserves the relative order of elements with equal keys. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Disadvantages of Insertion Sort</strong> 
+  ***Disadvantages of Insertion Sort***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Inefficient for large datasets:</strong> It's not suitable for large arrays due to its quadratic time complexity.</li>
+- ***Inefficient for large datasets:***  It's not suitable for large arrays due to its quadratic time complexity. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Slow for nearly sorted arrays:</strong> While it's efficient for sorted arrays, it can be slow for nearly sorted arrays.</li>
-<!-- /wp:list-item --></ul>
+- ***Slow for nearly sorted arrays:***  While it's efficient for sorted arrays, it can be slow for nearly sorted arrays. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Conclusion</strong> 
+  ***Conclusion***  
  
 
   Insertion sort is a basic sorting algorithm that's suitable for small datasets and simple applications. However, for larger datasets, more efficient algorithms like quicksort or merge sort are preferred. Understanding insertion sort is a good starting point for learning more complex sorting algorithms. 

@@ -22,81 +22,81 @@ title: 'Integrating FreeSWITCH with Asterisk: A Comprehensive Guide'
 url: /integrating-freeswitch-with-asterisk-a-comprehensive-guide/
 ---
 
-<!-- wp:heading {"level":3} -->
- ### Introduction</h3>
+
+ ### Introduction
 <!-- /wp:heading -->
 
-  Both <strong><a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a></strong> and <strong><a href="https://www.asterisk.org" target="_blank" rel="noopener" title="">Asterisk</a></strong> are popular open-source communication platforms, widely used for handling voice, video, and text communications. While FreeSWITCH is known for its flexibility in handling media and complex call flows, Asterisk shines as a robust telephony platform with a vast ecosystem of features and integrations. Integrating FreeSWITCH with Asterisk provides a powerful hybrid solution, combining the strengths of both platforms to support sophisticated VoIP and PBX needs. This guide walks through the process of integrating FreeSWITCH with Asterisk, covering essential configuration steps, use cases, and troubleshooting.</p>
+  Both ***<a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a>***  and ***<a href="https://www.asterisk.org" target="_blank" rel="noopener" title="">Asterisk</a>***  are popular open-source communication platforms, widely used for handling voice, video, and text communications. While FreeSWITCH is known for its flexibility in handling media and complex call flows, Asterisk shines as a robust telephony platform with a vast ecosystem of features and integrations. Integrating FreeSWITCH with Asterisk provides a powerful hybrid solution, combining the strengths of both platforms to support sophisticated VoIP and PBX needs. This guide walks through the process of integrating FreeSWITCH with Asterisk, covering essential configuration steps, use cases, and troubleshooting.
  
 
-<!-- wp:heading {"level":3} -->
- ### Why Integrate FreeSWITCH with Asterisk?</h3>
+
+ ### Why Integrate FreeSWITCH with Asterisk?
 <!-- /wp:heading -->
 
-  Integrating these two platforms can provide several key benefits:</p>
+  Integrating these two platforms can provide several key benefits:
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enhanced Media Handling</strong>: FreeSWITCH excels in handling complex media tasks such as video conferencing and transcoding, which can offload some of the load from Asterisk.</li>
+- ***Enhanced Media Handling*** : FreeSWITCH excels in handling complex media tasks such as video conferencing and transcoding, which can offload some of the load from Asterisk. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Scalability</strong>: FreeSWITCH’s scalability makes it ideal for expanding the capacity of an Asterisk deployment.</li>
+- ***Scalability*** : FreeSWITCH’s scalability makes it ideal for expanding the capacity of an Asterisk deployment. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Customization</strong>: By leveraging both platforms, users can customize call flows and features, optimizing each system for the tasks it handles best.</li>
-<!-- /wp:list-item --></ul>
+- ***Customization*** : By leveraging both platforms, users can customize call flows and features, optimizing each system for the tasks it handles best. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Prerequisites</h3>
+
+ ### Prerequisites
 <!-- /wp:heading -->
 
-  Before beginning, ensure you have:</p>
+  Before beginning, ensure you have:
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>FreeSWITCH and Asterisk are installed</strong> on separate servers (or virtual machines).</li>
+- ***FreeSWITCH and Asterisk are installed***  on separate servers (or virtual machines). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Basic networking knowledge</strong> and familiarity with VoIP protocols (such as SIP).</li>
+- ***Basic networking knowledge***  and familiarity with VoIP protocols (such as SIP). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Administrative access</strong> to both FreeSWITCH and Asterisk servers.</li>
-<!-- /wp:list-item --></ul>
+- ***Administrative access***  to both FreeSWITCH and Asterisk servers. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 1: Network and Firewall Configuration</h3>
+
+ ### Step 1: Network and Firewall Configuration
 <!-- /wp:heading -->
 
-  For seamless communication, start by allowing network access between the Asterisk and FreeSWITCH servers. Ensure that the following ports are open on both servers:</p>
+  For seamless communication, start by allowing network access between the Asterisk and FreeSWITCH servers. Ensure that the following ports are open on both servers:
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SIP Port</strong>: 5060 (UDP) for SIP communication</li>
+- ***SIP Port*** : 5060 (UDP) for SIP communication 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>RTP Ports</strong>: 16384-32768 (UDP) for media traffic</li>
-<!-- /wp:list-item --></ul>
+- ***RTP Ports*** : 16384-32768 (UDP) for media traffic 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  To configure the firewall on both servers:</p>
+  To configure the firewall on both servers:
  
 
 <!-- wp:code -->
@@ -108,21 +108,21 @@ sudo firewall-cmd --add-port=16384-32768/udp --permanent
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 2: Configure SIP Trunks</h3>
+
+ ### Step 2: Configure SIP Trunks
 <!-- /wp:heading -->
 
-  A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls to the other.</p>
+  A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls to the other.
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">On FreeSWITCH</h4>
+<h4 class="wp-block-heading">On FreeSWITCH 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open the external SIP profile configuration on FreeSWITCH:</li>
-<!-- /wp:list-item --></ol>
+- Open the external SIP profile configuration on FreeSWITCH: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -131,8 +131,8 @@ sudo firewall-cmd --reload</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Define a new gateway for Asterisk with its IP address:</li>
-<!-- /wp:list-item --></ol>
+- Define a new gateway for Asterisk with its IP address: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -147,8 +147,8 @@ sudo firewall-cmd --reload</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Save and exit. Then reload the FreeSWITCH configuration to apply the changes:</li>
-<!-- /wp:list-item --></ol>
+- Save and exit. Then reload the FreeSWITCH configuration to apply the changes: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -156,13 +156,13 @@ sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">On Asterisk</h4>
+<h4 class="wp-block-heading">On Asterisk 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open the <code>pjsip.conf</code> file on your Asterisk server (or <code>sip.conf</code> if using chan_sip):</li>
-<!-- /wp:list-item --></ol>
+- Open the <code>pjsip.conf</code> file on your Asterisk server (or <code>sip.conf</code> if using chan_sip): 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -171,8 +171,8 @@ sudo firewall-cmd --reload</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Add a configuration for a SIP trunk to FreeSWITCH:</li>
-<!-- /wp:list-item --></ol>
+- Add a configuration for a SIP trunk to FreeSWITCH: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -186,8 +186,8 @@ sudo firewall-cmd --reload</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Specify the address and authentication details for the FreeSWITCH SIP trunk:</li>
-<!-- /wp:list-item --></ol>
+- Specify the address and authentication details for the FreeSWITCH SIP trunk: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -204,8 +204,8 @@ password=strongpassword</code></pre>
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li>Save the file and reload Asterisk’s PJSIP module:</li>
-<!-- /wp:list-item --></ol>
+- Save the file and reload Asterisk’s PJSIP module: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -216,24 +216,24 @@ password=strongpassword</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 3: Setting Up Dial Plans</h3>
+
+ ### Step 3: Setting Up Dial Plans
 <!-- /wp:heading -->
 
-  With SIP trunks in place, configure dial plans to handle call routing between FreeSWITCH and Asterisk.</p>
+  With SIP trunks in place, configure dial plans to handle call routing between FreeSWITCH and Asterisk.
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">On FreeSWITCH</h4>
+<h4 class="wp-block-heading">On FreeSWITCH 
 <!-- /wp:heading -->
 
-  Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.</p>
+  Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open <code>default.xml</code> for editing:</li>
-<!-- /wp:list-item --></ol>
+- Open <code>default.xml</code> for editing: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -242,8 +242,8 @@ password=strongpassword</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Add a new extension that matches calls destined for Asterisk:</li>
-<!-- /wp:list-item --></ol>
+- Add a new extension that matches calls destined for Asterisk: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -256,8 +256,8 @@ password=strongpassword</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Save and exit the file, then reload the dial plan:</li>
-<!-- /wp:list-item --></ol>
+- Save and exit the file, then reload the dial plan: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -265,13 +265,13 @@ password=strongpassword</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">On Asterisk</h4>
+<h4 class="wp-block-heading">On Asterisk 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open <code>extensions.conf</code> on Asterisk:</li>
-<!-- /wp:list-item --></ol>
+- Open <code>extensions.conf</code> on Asterisk: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -280,8 +280,8 @@ password=strongpassword</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Define a new context to route calls from Asterisk to FreeSWITCH:</li>
-<!-- /wp:list-item --></ol>
+- Define a new context to route calls from Asterisk to FreeSWITCH: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -292,56 +292,56 @@ password=strongpassword</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Save the file and reload the Asterisk dial plan:</li>
-<!-- /wp:list-item --></ol>
+- Save the file and reload the Asterisk dial plan: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">   asterisk -rx "dialplan reload"</code></pre>
 <!-- /wp:code -->
 
-  With these dial plans in place, calls to numbers beginning with <code>3</code> will route from FreeSWITCH to Asterisk, and calls beginning with <code>4</code> will route from Asterisk to FreeSWITCH.</p>
+  With these dial plans in place, calls to numbers beginning with <code>3</code> will route from FreeSWITCH to Asterisk, and calls beginning with <code>4</code> will route from Asterisk to FreeSWITCH.
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 4: Testing the Integration</h3>
+
+ ### Step 4: Testing the Integration
 <!-- /wp:heading -->
 
-  With the configurations set up, it’s time to test calls between FreeSWITCH and Asterisk.</p>
+  With the configurations set up, it’s time to test calls between FreeSWITCH and Asterisk.
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Register Extensions</strong>: Make sure devices (softphones or hardware phones) are registered to extensions on each platform.</li>
+- ***Register Extensions*** : Make sure devices (softphones or hardware phones) are registered to extensions on each platform. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Place a Test Call</strong>: Try dialing an extension from FreeSWITCH to Asterisk (e.g., <code>3001</code>), and vice versa, to confirm the connection works.</li>
+- ***Place a Test Call*** : Try dialing an extension from FreeSWITCH to Asterisk (e.g., <code>3001</code>), and vice versa, to confirm the connection works. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Check Logs</strong>: If calls don’t connect, check the logs on both platforms for errors:</li>
-<!-- /wp:list-item --></ol>
+- ***Check Logs*** : If calls don’t connect, check the logs on both platforms for errors: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Asterisk</strong>: <code>/var/log/asterisk/full</code></li>
+- ***Asterisk*** : <code>/var/log/asterisk/full</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>FreeSWITCH</strong>: <code>/usr/local/freeswitch/log/freeswitch.log</code></li>
-<!-- /wp:list-item --></ul>
+- ***FreeSWITCH*** : <code>/usr/local/freeswitch/log/freeswitch.log</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Use CLI Commands</strong>: The following commands help diagnose issues:</li>
-<!-- /wp:list-item --></ol>
+- ***Use CLI Commands*** : The following commands help diagnose issues: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -356,121 +356,121 @@ password=strongpassword</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 5: Advanced Configuration Options</h3>
+
+ ### Step 5: Advanced Configuration Options
 <!-- /wp:heading -->
 
-  To maximize the integration, consider some additional configurations:</p>
+  To maximize the integration, consider some additional configurations:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Codec Synchronization</strong>: Ensure both systems use compatible codecs to avoid transcoding, which can reduce latency and improve call quality. Typical codecs are G.711 (ulaw) and G.729.</li>
+- ***Codec Synchronization*** : Ensure both systems use compatible codecs to avoid transcoding, which can reduce latency and improve call quality. Typical codecs are G.711 (ulaw) and G.729. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Failover and Load Balancing</strong>: For high availability, set up multiple FreeSWITCH or Asterisk servers and use SIP options like DNS SRV records for failover.</li>
+- ***Failover and Load Balancing*** : For high availability, set up multiple FreeSWITCH or Asterisk servers and use SIP options like DNS SRV records for failover. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DTMF Handling</strong>: Ensure both systems use compatible DTMF modes (RFC2833, Inband, or SIP INFO) to avoid issues with interactive menus or IVRs.</li>
+- ***DTMF Handling*** : Ensure both systems use compatible DTMF modes (RFC2833, Inband, or SIP INFO) to avoid issues with interactive menus or IVRs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>SIP Security</strong>: Enable IP filtering, strong passwords, and transport layer security (TLS) for SIP communications, especially if the servers are accessible over the internet.</li>
-<!-- /wp:list-item --></ol>
+- ***SIP Security*** : Enable IP filtering, strong passwords, and transport layer security (TLS) for SIP communications, especially if the servers are accessible over the internet. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 6: Troubleshooting Common Issues</h3>
+
+ ### Step 6: Troubleshooting Common Issues
 <!-- /wp:heading -->
 
-  Here are some common integration challenges and tips for troubleshooting:</p>
+  Here are some common integration challenges and tips for troubleshooting:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SIP Registration Errors</strong>: If Asterisk or FreeSWITCH isn’t registering with the other, check the SIP configuration for correct IPs, usernames, and passwords.</li>
+- ***SIP Registration Errors*** : If Asterisk or FreeSWITCH isn’t registering with the other, check the SIP configuration for correct IPs, usernames, and passwords. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Codec Mismatch</strong>: Calls failing due to unsupported codec issues can be fixed by standardizing codecs on both platforms.</li>
+- ***Codec Mismatch*** : Calls failing due to unsupported codec issues can be fixed by standardizing codecs on both platforms. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Network Latency</strong>: If there’s an echo or delay, ensure both servers are in low-latency environments, especially if using external cloud instances.</li>
+- ***Network Latency*** : If there’s an echo or delay, ensure both servers are in low-latency environments, especially if using external cloud instances. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Logging and Debugging</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Logging and Debugging*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>FreeSWITCH: Increase logging level  <code>/usr/local/freeswitch/conf/autoload_configs/logfile.conf.xml</code> if more detailed information is needed.</li>
+- FreeSWITCH: Increase logging level  <code>/usr/local/freeswitch/conf/autoload_configs/logfile.conf.xml</code> if more detailed information is needed. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Asterisk: Use <code>pjsip set logger on</code> to capture detailed SIP messaging logs.</li>
-<!-- /wp:list-item --></ul>
+- Asterisk: Use <code>pjsip set logger on</code> to capture detailed SIP messaging logs. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Use Cases for FreeSWITCH and Asterisk Integration</h3>
+
+ ### Use Cases for FreeSWITCH and Asterisk Integration
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Unified Communications and IVR Systems</strong>: FreeSWITCH’s powerful IVR capabilities complement Asterisk’s call routing, creating a comprehensive communications platform.</li>
+- ***Unified Communications and IVR Systems*** : FreeSWITCH’s powerful IVR capabilities complement Asterisk’s call routing, creating a comprehensive communications platform. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Scalable Conference Bridge</strong>: FreeSWITCH’s media handling allows it to act as a conference bridge while Asterisk manages call control.</li>
+- ***Scalable Conference Bridge*** : FreeSWITCH’s media handling allows it to act as a conference bridge while Asterisk manages call control. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Custom PBX Features</strong>: FreeSWITCH can provide complex call handling and customization, while Asterisk can support traditional PBX functionalities.</li>
-<!-- /wp:list-item --></ol>
+- ***Custom PBX Features*** : FreeSWITCH can provide complex call handling and customization, while Asterisk can support traditional PBX functionalities. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Conclusion</h3>
+
+ ### Conclusion
 <!-- /wp:heading -->
 
-  Integrating FreeSWITCH with Asterisk opens up a wide range of possibilities for building robust, scalable, and feature-rich telephony solutions. With careful configuration of SIP trunks, dial plans, and codecs, these two platforms can work seamlessly together, creating a hybrid solution that maximizes each system’s strengths. Whether for a business PBX, conferencing solution, or advanced VoIP system, combining FreeSWITCH and Asterisk provides flexibility, performance, and scalability for diverse communication needs.</p>
+  Integrating FreeSWITCH with Asterisk opens up a wide range of possibilities for building robust, scalable, and feature-rich telephony solutions. With careful configuration of SIP trunks, dial plans, and codecs, these two platforms can work seamlessly together, creating a hybrid solution that maximizes each system’s strengths. Whether for a business PBX, conferencing solution, or advanced VoIP system, combining FreeSWITCH and Asterisk provides flexibility, performance, and scalability for diverse communication needs.
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-  <strong>FAQs</strong></p>
+  ***FAQs*** 
  
 
-  <strong>1. Can FreeSWITCH and Asterisk run on the same server?</strong><br>Yes, but it’s generally recommended to run them on separate servers to avoid port conflicts and improve performance.</p>
+  ***1. Can FreeSWITCH and Asterisk run on the same server?*** <br>Yes, but it’s generally recommended to run them on separate servers to avoid port conflicts and improve performance.
  
 
-  <strong>2. What are the benefits of using both FreeSWITCH and Asterisk?</strong><br>Combining both platforms leverages FreeSWITCH’s media capabilities and Asterisk’s call handling, creating a more versatile communication solution.</p>
+  ***2. What are the benefits of using both FreeSWITCH and Asterisk?*** <br>Combining both platforms leverages FreeSWITCH’s media capabilities and Asterisk’s call handling, creating a more versatile communication solution.
  
 
-  <strong>3. How do I ensure call quality between FreeSWITCH and Asterisk?</strong><br>Standardize compatible codecs (e.g., G.711) and minimize transcoding to improve call quality.</p>
+  ***3. How do I ensure call quality between FreeSWITCH and Asterisk?*** <br>Standardize compatible codecs (e.g., G.711) and minimize transcoding to improve call quality.
  
 
-  <strong>4. Can I use this setup with other VoIP providers?</strong><br>Yes, both FreeSWITCH and Asterisk can connect to external VoIP providers, allowing flexibility in routing and redundancy.</p>
+  ***4. Can I use this setup with other VoIP providers?*** <br>Yes, both FreeSWITCH and Asterisk can connect to external VoIP providers, allowing flexibility in routing and redundancy.
  
 
-  <strong>5. What are the best security practices for SIP integration?</strong><br>Use strong passwords, enable TLS, restrict IP access, and keep both systems updated to secure SIP integration.</p>
+  ***5. What are the best security practices for SIP integration?*** <br>Use strong passwords, enable TLS, restrict IP access, and keep both systems updated to secure SIP integration.
  

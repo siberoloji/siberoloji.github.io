@@ -20,7 +20,7 @@ title: Creating a Class() example in Kotlin
 url: /creating-a-class-example-in-kotlin/
 ---
 
-  In Object-Oriented Programming Languages, the classes are important. You can find a simple Class creating example in this post.</p>
+  In Object-Oriented Programming Languages, the classes are important. You can find a simple Class creating example in this post.
  
 
 <!-- wp:more -->

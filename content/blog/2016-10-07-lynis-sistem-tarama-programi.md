@@ -42,7 +42,7 @@ url: /tr/lynis-sistem-tarama-programi/
  
 
  
- ## Lynis Kurulum</h2>
+ ## Lynis Kurulum
 <!-- /wp:heading -->
 
   Aşağıdaki komutlar yardımıyla sıkıştırılmış arşiv dosyasını /tmp klasörüne indiriyoruz. İndirilen dosyayı /usr/local klasörüne açıyoruz. Arşiv açıldığında /usr/local klasörünün içerisine /lynis isimli klasörü oluşturacaktır. 
@@ -55,7 +55,7 @@ sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/</pre>
 <!-- /wp:preformatted -->
 
  
- ## Lynis Tarama</h2>
+ ## Lynis Tarama
 <!-- /wp:heading -->
 
   Açılan dosyaların olduğu klasöre girerek lynis programını kurulum yapmadan doğrudan çalıştırabilirsiniz. Çalıştırabilmek için sistemde yönetici yetkilerine&nbsp;sahip olmalısınız. 
@@ -66,179 +66,179 @@ sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/</pre>
 sudo ./lynis -c -Q</pre>
 <!-- /wp:preformatted -->
 
-  <strong>-c seçeneği</strong>: (--check-all) tüm kontrolleri yapmayı sağlar 
+  ***-c seçeneği*** : (--check-all) tüm kontrolleri yapmayı sağlar 
  
 
-  <strong>-Q seçeneği</strong>: Her adımda kullanıcıdan onaya gerek olmadan otomatik devam etmesini sağlar. 
+  ***-Q seçeneği*** : Her adımda kullanıcıdan onaya gerek olmadan otomatik devam etmesini sağlar. 
  
 
   Tarama aşağıdaki tüm başlıklarda sisteminizi kontrol edecektir. 
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Sistem Araçları: Sistemdeki ikilik (binary) dosyaları</li>
+ <!-- wp:list-item -->
+- Sistem Araçları: Sistemdeki ikilik (binary) dosyaları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Boot ve Servisler: Açılış yükleyicisi, başlangıç hizmetleri</li>
+- Boot ve Servisler: Açılış yükleyicisi, başlangıç hizmetleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Çekirdek: Çalışma seviyesi (run level), yüklenmiş modüller, çekirdek ayarları</li>
+- Çekirdek: Çalışma seviyesi (run level), yüklenmiş modüller, çekirdek ayarları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hafıza ve İşlemler: zombi işlemler, G/Ç bekleyen işlemler</li>
+- Hafıza ve İşlemler: zombi işlemler, G/Ç bekleyen işlemler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kullanıcılar, Gruplar, Yetkilendirme: Grup Kimlikleri, sudo Yetkilileri, Parola süreleri</li>
+- Kullanıcılar, Gruplar, Yetkilendirme: Grup Kimlikleri, sudo Yetkilileri, Parola süreleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kabuklar, Terminaller</li>
+- Kabuklar, Terminaller 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Dosya Sistemleri: Bağlanma noktaları, /tmp dosyaları, kök (root) dosya sistemi</li>
+- Dosya Sistemleri: Bağlanma noktaları, /tmp dosyaları, kök (root) dosya sistemi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Veri Depolarıo: usb-kayıt yerleri, firewire ohci</li>
+- Veri Depolarıo: usb-kayıt yerleri, firewire ohci 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>NFS</li>
+- NFS 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılımlar: isim servileri: DNS arama, BIND</li>
+- Yazılımlar: isim servileri: DNS arama, BIND 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Portlar ve Paketler: İstismar edilebilir, zaafiyet içeren/Yükseltilebilir paketler</li>
+- Portlar ve Paketler: İstismar edilebilir, zaafiyet içeren/Yükseltilebilir paketler 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ağ: İsim sunucularınız, sözde ağ arayüzleri, bağlantılar</li>
+- Ağ: İsim sunucularınız, sözde ağ arayüzleri, bağlantılar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazıcılar: cups ayarları</li>
+- Yazıcılar: cups ayarları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: e-posta ve mesajlaşma</li>
+- Yazılım: e-posta ve mesajlaşma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: firewall: iptables, pf</li>
+- Yazılım: firewall: iptables, pf 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: Web sunucu: Apache, nginx</li>
+- Yazılım: Web sunucu: Apache, nginx 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>SSH Desteği: SSH Ayarları</li>
+- SSH Desteği: SSH Ayarları 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>SNMP Desteği</li>
+- SNMP Desteği 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Varitabanları: MySQL root parolası</li>
+- Varitabanları: MySQL root parolası 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>LDAP Servisleri</li>
+- LDAP Servisleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: php: php seçenekleri</li>
+- Yazılım: php: php seçenekleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Squid Desteği</li>
+- Squid Desteği 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Log Dosyaları: syslog yönetici, log klasörleri</li>
+- Log Dosyaları: syslog yönetici, log klasörleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Güvenli Olmayan Servisler: inetd</li>
+- Güvenli Olmayan Servisler: inetd 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Banner ve Kimlik Doğrulama</li>
+- Banner ve Kimlik Doğrulama 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Zamanlanmış Görevler: crontab/cronjob, atd</li>
+- Zamanlanmış Görevler: crontab/cronjob, atd 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hesap Yönetimi: sysstat data, auditd</li>
+- Hesap Yönetimi: sysstat data, auditd 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Zaman ve Senkronizasyon: ntp yöneticisi</li>
+- Zaman ve Senkronizasyon: ntp yöneticisi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kriptolama: SSL sertifika zaman aşımı</li>
+- Kriptolama: SSL sertifika zaman aşımı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sanallaştırma</li>
+- Sanallaştırma 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Güvenlik Çerçeve Hizmetleri: AppArmor, SELinux, grsecurity durumu</li>
+- Güvenlik Çerçeve Hizmetleri: AppArmor, SELinux, grsecurity durumu 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: Dosya bütünlüğü</li>
+- Yazılım: Dosya bütünlüğü 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yazılım: Zararlı Tarayıcılar</li>
+- Yazılım: Zararlı Tarayıcılar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ev Klasörleri: Kabuk geçmiş dosyaları</li>
-<!-- /wp:list-item --></ul>
+- Ev Klasörleri: Kabuk geçmiş dosyaları 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Tarama sona erdiğinde tüm sonuçlar oluşturulan ''<em>/var/log/lynis.log</em>'' dosyasına kaydedilir. 
  
 
  
- ## Lynis Tarama Sonuçlarını İnceleme</h2>
+ ## Lynis Tarama Sonuçlarını İnceleme
 <!-- /wp:heading -->
 
   Tarama ve testlerin sonucunda oluşturulan sonuçların yazıldığı /var/log/lynis.log dosyasını incelememiz gerekmektedir. İşte bu işlem ticari sürümde otomatik yapılırken biz elle&nbsp;yapacağız. Bunun için rapor dosyasını 3 şekilde inceleme imkanımız var; 
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Tüm dosyayı inceleme</li>
+ <!-- wp:list-item -->
+- Tüm dosyayı inceleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Önemli İkazları İnceleme</li>
+- Önemli İkazları İnceleme 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tavsiyeleri İnceleme</li>
-<!-- /wp:list-item --></ul>
+- Tavsiyeleri İnceleme 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Tüm dosyayı inceleme</h3>
+
+ ### Tüm dosyayı inceleme
 <!-- /wp:heading -->
 
   Bol zamanınız varsa ve tüm analizleri incelemek isterseniz, aşağıdaki komut raporu terminale yazdıracaktır. Terminalin geriye dönük tarihsel geçmiş satır ayarlarının oldukça büyük olması gerektiğini hatırlatalım. Aksi takdirde raporun ilk satırları hafızada kalmayabilir. 
@@ -248,8 +248,8 @@ sudo ./lynis -c -Q</pre>
 <pre class="wp-block-preformatted">sudo cat /var/log/lynis.log</pre>
 <!-- /wp:preformatted -->
 
-<!-- wp:heading {"level":3} -->
- ### Önemli İkazları İnceleme</h3>
+
+ ### Önemli İkazları İnceleme
 <!-- /wp:heading -->
 
   Rapor dosyasında önemli ikazlar "Warning" ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok işe yarayacaktır. 
@@ -267,8 +267,8 @@ sudo ./lynis -c -Q</pre>
   Uç birim çıktısında görüldüğü gibi, bu sistemde PKGS-7392 ve NETW-2705 kodlu iki adet önemli ve ilgilenilmesi gereken konu bulunmaktadır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Tavsiyeleri İnceleme</h3>
+
+ ### Tavsiyeleri İnceleme
 <!-- /wp:heading -->
 
   Rapor dosyasında Tavsiye edilen konular "Suggestion" ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok kullanılabilir. Komutun hemen altında uçbirim çıktısı da görülmektedir. 
@@ -285,7 +285,7 @@ sudo ./lynis -c -Q</pre>
 <!-- /wp:preformatted -->
 
  
- ## Yardım Bilgilerini Görüntüleme</h2>
+ ## Yardım Bilgilerini Görüntüleme
 <!-- /wp:heading -->
 
   Aşağıdaki komutlar ile özet ve detaylı yardım sayfalarını görüntüleyebilirsiniz. 

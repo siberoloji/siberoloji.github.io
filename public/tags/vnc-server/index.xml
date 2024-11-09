@@ -26,36 +26,44 @@
         
         &lt;p&gt;Bir Linux bilgisayarınız var ve onun ekranını başka bilgisayarlarla paylaşmak mı istiyorsunuz. Bunun için bilgisayarınıza masaüstü paylaşım sunucusu kurmanız gerekir. Bu yazıda, Linux Mint ve benzeri Ubuntu tabanlı dağıtımlarda VNC Server nasıl kurulur sorusuna bakacağız.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Varsayılan VNC server olan Vino’yu kaldıralım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get -y remove vino
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;X11vnc Kuralım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get -y install x11vnc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Parolamızı kaydedeceğimiz dosyayı oluşturalım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo mkdir /etc/x11vnc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
@@ -63,52 +71,62 @@
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Bu adımda size yeni parolanızı sorulacaktır. Ekranda gösterien adımları uygulayın ve kaydedin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;x11vnc Sunucu için systemd unit dosyasını oluşturalım. Bunun için aşağıdaki komutu kullanarak metin editörümüzle, service dosyasını açın.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo xed /lib/systemd/system/x11vnc.service
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;strong&gt;[&lt;/strong&gt;Unit]
-Description&lt;strong&gt;=&lt;/strong&gt;Start x11vnc at startup.
-After&lt;strong&gt;=&lt;/strong&gt;multi-user.target
-&lt;strong&gt;[&lt;/strong&gt;Service]
-Type&lt;strong&gt;=&lt;/strong&gt;simple
-ExecStart&lt;strong&gt;=&lt;/strong&gt;/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
-&lt;strong&gt;[&lt;/strong&gt;Install]
-WantedBy&lt;strong&gt;=&lt;/strong&gt;multi-user.target
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;***[*** Unit]
+Description***=*** Start x11vnc at startup.
+After***=*** multi-user.target
+***[*** Service]
+Type***=*** simple
+ExecStart***=*** /usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+***[*** Install]
+WantedBy***=*** multi-user.target
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Systemd servislerini tekrar başlatın.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl daemon-reload
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable x11vnc.service
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Son adımda sunucuyu başlatalım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl start x11vnc.service&lt;/code&gt;&lt;/pre&gt;

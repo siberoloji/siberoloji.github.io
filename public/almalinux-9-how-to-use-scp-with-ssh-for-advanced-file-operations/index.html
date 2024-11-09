@@ -11,24 +11,24 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>AlmaLinux 9: How to Use SCP with SSH for Advanced File Operations – Siberoloji</title>
-  <meta name="description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell). By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9, covering multiple scenarios and examples." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-use-scp-with-ssh-for-advanced-file-operations/" itemprop="url" />
+  <meta name="description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell) . By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9 , covering multiple scenarios and examples." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-use-scp-with-ssh-for-advanced-file-operations/" itemprop="url" />
 
 <meta property="og:title" content="AlmaLinux 9: How to Use SCP with SSH for Advanced File Operations" />
-<meta property="og:description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell). By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9, covering multiple scenarios and examples." />
+<meta property="og:description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol)  is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell) . By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9 , covering multiple scenarios and examples." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/almalinux-9-how-to-use-scp-with-ssh-for-advanced-file-operations/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-10-04T17:40:49+00:00" />
 <meta property="article:modified_time" content="2024-10-04T17:40:49+00:00" />
 
   <meta itemprop="name" content="AlmaLinux 9: How to Use SCP with SSH for Advanced File Operations">
-  <meta itemprop="description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell). By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9, covering multiple scenarios and examples.">
+  <meta itemprop="description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell) . By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9 , covering multiple scenarios and examples.">
   <meta itemprop="datePublished" content="2024-10-04T17:40:49+00:00">
   <meta itemprop="dateModified" content="2024-10-04T17:40:49+00:00">
-  <meta itemprop="wordCount" content="1060">
+  <meta itemprop="wordCount" content="1080">
   <meta itemprop="keywords" content="How-to Guides,Linux,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Use SCP with SSH for Advanced File Operations">
-  <meta name="twitter:description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell). By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9, covering multiple scenarios and examples.">
+  <meta name="twitter:description" content="In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. SCP (Secure Copy Protocol) is a command-line utility that allows you to securely transfer files between a local machine and a remote server using SSH (Secure Shell) . By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in AlmaLinux 9 , covering multiple scenarios and examples.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9652,35 +9652,35 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh3">Table of Contents
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-scp-and-sshh3">1. Introduction to SCP and SSH
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-scp-and-ssh">1. Introduction to SCP and SSH
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-why-use-scp-for-file-transfersh3">2. Why Use SCP for File Transfers?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-why-use-scp-for-file-transfers">2. Why Use SCP for File Transfers?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-basic-scp-commands-for-file-transferh3">3. Basic SCP Commands for File Transfer
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-basic-scp-commands-for-file-transfer">3. Basic SCP Commands for File Transfer
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-advanced-scp-examplesh3">4. Advanced SCP Examples
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-advanced-scp-examples">4. Advanced SCP Examples
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-automating-scp-operations-with-ssh-key-authenticationh3">5. Automating SCP Operations with SSH Key Authentication
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-automating-scp-operations-with-ssh-key-authentication">5. Automating SCP Operations with SSH Key Authentication
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-common-scp-errors-and-troubleshootingh3">6. Common SCP Errors and Troubleshooting
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-common-scp-errors-and-troubleshooting">6. Common SCP Errors and Troubleshooting
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-conclusionh3">7. Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-conclusion">7. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9713,88 +9713,108 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. <strong>SCP (Secure Copy Protocol)</strong> is a command-line utility that allows you to securely transfer files between a local machine and a remote server using <strong>SSH (Secure Shell)</strong>. By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in <strong>AlmaLinux 9</strong>, covering multiple scenarios and examples.</p>
+          <p>In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. <em><strong>SCP (Secure Copy Protocol)</strong></em>  is a command-line utility that allows you to securely transfer files between a local machine and a remote server using <em><strong>SSH (Secure Shell)</strong></em> . By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in <em><strong>AlmaLinux 9</strong></em> , covering multiple scenarios and examples.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>Table of Contents</h3><span class="hx-absolute -hx-mt-20" id="table-of-contentsh3"></span>
-    <a href="#table-of-contentsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to SCP and SSH</li>
+- Introduction to SCP and SSH 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Why Use SCP for File Transfers?</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Basic SCP Commands for File Transfer</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Advanced SCP Examples<!-- wp:list -->
+<ul>
+<li>Advanced SCP Examples<!-- wp:list --></li>
+</ul>
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Transferring Directories Recursively</li>
+- Transferring Directories Recursively 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Using SCP with Different SSH Ports</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>SCP with Wildcards for Multiple Files</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>SCP with Rate Limits for Bandwidth Control</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Preserving File Permissions and Timestamps</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></li>
+</ul>
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Automating SCP Operations with SSH Key Authentication</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Common SCP Errors and Troubleshooting</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Introduction to SCP and SSH</h3><span class="hx-absolute -hx-mt-20" id="1-introduction-to-scp-and-sshh3"></span>
-    <a href="#1-introduction-to-scp-and-sshh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p><strong>SCP (Secure Copy Protocol)</strong> is a method for securely transferring files between local and remote systems. It uses <strong>SSH (Secure Shell)</strong> to encrypt both the commands and the data, ensuring that the transmission remains secure and protected from eavesdropping.</p>
+<h3>1. Introduction to SCP and SSH<span class="hx-absolute -hx-mt-20" id="1-introduction-to-scp-and-ssh"></span>
+    <a href="#1-introduction-to-scp-and-ssh" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p><em><strong>SCP (Secure Copy Protocol)</strong></em>  is a method for securely transferring files between local and remote systems. It uses <em><strong>SSH (Secure Shell)</strong></em>  to encrypt both the commands and the data, ensuring that the transmission remains secure and protected from eavesdropping.</p>
 <p>By default, SCP uses the same SSH port (port 22) and authentication methods, making it easy to integrate into any existing SSH setup. SCP is particularly useful when you need to transfer files securely between servers or download/upload data from your local machine to a remote one.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Why Use SCP for File Transfers?</h3><span class="hx-absolute -hx-mt-20" id="2-why-use-scp-for-file-transfersh3"></span>
-    <a href="#2-why-use-scp-for-file-transfersh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Why Use SCP for File Transfers?<span class="hx-absolute -hx-mt-20" id="2-why-use-scp-for-file-transfers"></span>
+    <a href="#2-why-use-scp-for-file-transfers" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>SCP offers several advantages for secure file transfers in AlmaLinux 9:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Security</strong>: As SCP relies on SSH, all data is encrypted during transmission, ensuring that sensitive information is protected.</li>
+- ***Security*** : As SCP relies on SSH, all data is encrypted during transmission, ensuring that sensitive information is protected. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Simplicity</strong>: SCP uses a familiar syntax similar to basic file copying commands, making it easy to learn and use.</li>
+<ul>
+<li><em><strong>Simplicity</strong></em> : SCP uses a familiar syntax similar to basic file copying commands, making it easy to learn and use.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Cross-Platform Compatibility</strong>: SCP works on a variety of operating systems that support SSH, including Linux, macOS, and Windows (via tools like PuTTY or OpenSSH).</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Cross-Platform Compatibility</strong></em> : SCP works on a variety of operating systems that support SSH, including Linux, macOS, and Windows (via tools like PuTTY or OpenSSH).</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>In environments where secure data transfers are a priority, SCP is a highly reliable tool for moving files between systems.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Basic SCP Commands for File Transfer</h3><span class="hx-absolute -hx-mt-20" id="3-basic-scp-commands-for-file-transferh3"></span>
-    <a href="#3-basic-scp-commands-for-file-transferh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Basic SCP Commands for File Transfer<span class="hx-absolute -hx-mt-20" id="3-basic-scp-commands-for-file-transfer"></span>
+    <a href="#3-basic-scp-commands-for-file-transfer" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Let’s start with some basic examples of how to use SCP in AlmaLinux 9.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Copying a File from Local to Remote</h4>
+<h4 class="wp-block-heading">Copying a File from Local to Remote 
 <!-- /wp:heading -->
 <p>To copy a file from your local machine to a remote server, use the following syntax:</p>
 <!-- wp:code -->
@@ -9806,7 +9826,7 @@
 <!-- /wp:code -->
 <p>This command securely transfers the file <code>report.txt</code> to the <code>/home/admin/backup/</code> directory on the remote server.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Copying a File from Remote to Local</h4>
+<h4 class="wp-block-heading">Copying a File from Remote to Local 
 <!-- /wp:heading -->
 <p>To copy a file from a remote server to your local machine:</p>
 <!-- wp:code -->
@@ -9820,12 +9840,11 @@
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>4. Advanced SCP Examples</h3><span class="hx-absolute -hx-mt-20" id="4-advanced-scp-examplesh3"></span>
-    <a href="#4-advanced-scp-examplesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Advanced SCP Examples<span class="hx-absolute -hx-mt-20" id="4-advanced-scp-examples"></span>
+    <a href="#4-advanced-scp-examples" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Once you are familiar with the basic SCP commands, you can extend its functionality with advanced use cases. Below are some powerful examples that demonstrate SCP’s versatility.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1. Transferring Directories Recursively</h4>
+<h4 class="wp-block-heading">1. Transferring Directories Recursively 
 <!-- /wp:heading -->
 <p>To copy an entire directory (including subdirectories and files), you can use the <code>-r</code> (recursive) option:</p>
 <!-- wp:code -->
@@ -9837,7 +9856,7 @@
 <!-- /wp:code -->
 <p>This will transfer the <code>project</code> directory and all its contents to the remote server.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2. Using SCP with Different SSH Ports</h4>
+<h4 class="wp-block-heading">2. Using SCP with Different SSH Ports 
 <!-- /wp:heading -->
 <p>By default, SCP connects over SSH port 22, but if your SSH server is configured to use a different port, use the <code>-P</code> option to specify the port:</p>
 <!-- wp:code -->
@@ -9847,9 +9866,9 @@
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">scp -P 2022 /home/user/Documents/report.txt admin@192.168.1.10:/home/admin/backup/</code></pre>
 <!-- /wp:code -->
-<p>Here, SCP will connect to the remote server on port <strong>2022</strong>.</p>
+<p>Here, SCP will connect to the remote server on port <em><strong>2022</strong></em> .</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3. SCP with Wildcards for Multiple Files</h4>
+<h4 class="wp-block-heading">3. SCP with Wildcards for Multiple Files 
 <!-- /wp:heading -->
 <p>You can use wildcards to copy multiple files matching a pattern. For example, to copy all <code>.txt</code> files from a local directory to a remote server:</p>
 <!-- wp:code -->
@@ -9861,9 +9880,9 @@
 <!-- /wp:code -->
 <p>This command transfers all <code>.txt</code> files in the <code>Documents</code> folder to the remote server.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">4. SCP with Rate Limits for Bandwidth Control</h4>
+<h4 class="wp-block-heading">4. SCP with Rate Limits for Bandwidth Control 
 <!-- /wp:heading -->
-<p>If you’re working with limited bandwidth or need to prevent SCP from consuming too much network bandwidth, you can use the <code>-l</code> option to limit the transfer speed in <strong>Kbits per second</strong>:</p>
+<p>If you’re working with limited bandwidth or need to prevent SCP from consuming too much network bandwidth, you can use the <code>-l</code> option to limit the transfer speed in <em><strong>Kbits per second</strong></em> :</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">scp -l 1000 /path/to/local/file user@remote_host:/path/to/remote/directory</code></pre>
 <!-- /wp:code -->
@@ -9871,9 +9890,9 @@
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">scp -l 5000 /home/user/Documents/report.txt admin@192.168.1.10:/home/admin/backup/</code></pre>
 <!-- /wp:code -->
-<p>This command limits the transfer rate to <strong>5000 Kbps</strong> (5 Mbps).</p>
+<p>This command limits the transfer rate to <em><strong>5000 Kbps</strong></em>  (5 Mbps).</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">5. Preserving File Permissions and Timestamps</h4>
+<h4 class="wp-block-heading">5. Preserving File Permissions and Timestamps 
 <!-- /wp:heading -->
 <p>To ensure that file permissions, timestamps, and ownership are preserved during the transfer, use the <code>-p</code> option:</p>
 <!-- wp:code -->
@@ -9887,12 +9906,11 @@
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>5. Automating SCP Operations with SSH Key Authentication</h3><span class="hx-absolute -hx-mt-20" id="5-automating-scp-operations-with-ssh-key-authenticationh3"></span>
-    <a href="#5-automating-scp-operations-with-ssh-key-authenticationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To streamline SCP operations, especially for repetitive tasks, you can configure <strong>SSH key authentication</strong> to allow password-less login. This is particularly useful for automation scripts and cron jobs.</p>
+<h3>5. Automating SCP Operations with SSH Key Authentication<span class="hx-absolute -hx-mt-20" id="5-automating-scp-operations-with-ssh-key-authentication"></span>
+    <a href="#5-automating-scp-operations-with-ssh-key-authentication" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To streamline SCP operations, especially for repetitive tasks, you can configure <em><strong>SSH key authentication</strong></em>  to allow password-less login. This is particularly useful for automation scripts and cron jobs.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Generate SSH Key Pair</h4>
+<h4 class="wp-block-heading">Step 1: Generate SSH Key Pair 
 <!-- /wp:heading -->
 <p>On the local machine, generate an SSH key pair:</p>
 <!-- wp:code -->
@@ -9900,7 +9918,7 @@
 <!-- /wp:code -->
 <p>This creates a public/private key pair. By default, the keys are stored in <code><del>/.ssh/id_rsa</code> (private) and <code></del>/.ssh/id_rsa.pub</code> (public).</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Copy the Public Key to the Remote Server</h4>
+<h4 class="wp-block-heading">Step 2: Copy the Public Key to the Remote Server 
 <!-- /wp:heading -->
 <p>Use <code>ssh-copy-id</code> to transfer the public key to the remote server:</p>
 <!-- wp:code -->
@@ -9910,50 +9928,54 @@
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>6. Common SCP Errors and Troubleshooting</h3><span class="hx-absolute -hx-mt-20" id="6-common-scp-errors-and-troubleshootingh3"></span>
-    <a href="#6-common-scp-errors-and-troubleshootingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>6. Common SCP Errors and Troubleshooting<span class="hx-absolute -hx-mt-20" id="6-common-scp-errors-and-troubleshooting"></span>
+    <a href="#6-common-scp-errors-and-troubleshooting" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Here are a few common SCP issues and how to resolve them:</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1. <strong>Permission Denied</strong></h4>
+<h4 class="wp-block-heading">1. ***Permission Denied***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Cause</strong>: Incorrect file permissions or missing SSH key.</li>
+- ***Cause*** : Incorrect file permissions or missing SSH key. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Solution</strong>: Ensure that you have the proper permissions for the destination directory and that the SSH key is correctly installed on the remote server.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Solution</strong></em> : Ensure that you have the proper permissions for the destination directory and that the SSH key is correctly installed on the remote server.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2. <strong>Connection Refused</strong></h4>
+<h4 class="wp-block-heading">2. ***Connection Refused***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Cause</strong>: The SSH service might not be running, or the firewall could be blocking the connection.</li>
+- ***Cause*** : The SSH service might not be running, or the firewall could be blocking the connection. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Solution</strong>: Verify that SSH is running on the remote server and that the correct port is open in the firewall.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Solution</strong></em> : Verify that SSH is running on the remote server and that the correct port is open in the firewall.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3. <strong>File Not Found</strong></h4>
+<h4 class="wp-block-heading">3. ***File Not Found***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Cause</strong>: The path to the file is incorrect.</li>
+- ***Cause*** : The path to the file is incorrect. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Solution</strong>: Double-check the file paths on both the local and remote machines to ensure they are correct.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Solution</strong></em> : Double-check the file paths on both the local and remote machines to ensure they are correct.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>7. Conclusion</h3><span class="hx-absolute -hx-mt-20" id="7-conclusionh3"></span>
-    <a href="#7-conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>SCP is an incredibly useful and secure tool for file transfers between local and remote systems in <strong>AlmaLinux 9</strong>. Whether you need to transfer individual files, directories, or automate secure file operations using SSH keys, SCP provides a robust solution. By mastering both basic and advanced SCP options, you can handle a wide variety of use cases efficiently and securely.</p>
+<h3>7. Conclusion<span class="hx-absolute -hx-mt-20" id="7-conclusion"></span>
+    <a href="#7-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>SCP is an incredibly useful and secure tool for file transfers between local and remote systems in <em><strong>AlmaLinux 9</strong></em> . Whether you need to transfer individual files, directories, or automate secure file operations using SSH keys, SCP provides a robust solution. By mastering both basic and advanced SCP options, you can handle a wide variety of use cases efficiently and securely.</p>
 <p>With its integration into the SSH ecosystem, SCP remains an essential tool for system administrators, developers, and anyone working in a distributed or networked environment.</p>
 
         </div>

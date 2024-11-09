@@ -29,7 +29,7 @@ url: /converting-types-with-static_cast-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -65,7 +65,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a simple demonstration of the <code>static_cast</code> operator, which is used to convert an expression to a new type. 
@@ -107,7 +107,7 @@ cout &lt;&lt; "b" &lt;&lt; " " &lt;&lt; static_cast&lt;char&gt;(numberTwo) &lt;&
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

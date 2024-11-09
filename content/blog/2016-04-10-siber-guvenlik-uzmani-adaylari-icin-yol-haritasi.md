@@ -39,11 +39,11 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
  
 
  
- ## Siber Güvenlik Uzmanı Adayı Hangi Konuları Bilmeli?</h2>
+ ## Siber Güvenlik Uzmanı Adayı Hangi Konuları Bilmeli?
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>1. İşletim Sistemi</strong></h3>
+
+ ### ***1. İşletim Sistemi*** 
 <!-- /wp:heading -->
 
   Yapılacak bir test esnasında ulaşacağınız nokta İşletim Sistemidir. Hedef İşletim sistemine ulaştığınızda, nereye bakacağınızı, ne yapacağınızı bilmiyorsanız hareket alanınız oldukça kısıtlı olacaktır. Bu sebeple, derinlikli işletim sistemi bilgisi her siber güvenlik uzmanı için olmazsa olmaz şarttır. 
@@ -55,8 +55,8 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Ulaştığınız sistemin nasıl çalıştığını çok iyi bilmelisiniz. Örneğin log dosyalarının nerelerde tutulduğu, registry kayıtlarına nasıl ulaşılacağı ve komut satırından ağ bağlantılarını inceleme ve yönetme en temel öğrenilmesi gereken konular arasındadır. Tüm donanım ve yazılımlar, İşletim Sistemini Platform olarak kullanan ikincil yapılardır. Bu yüzden asıl olarak, yazılımım üzerinde çalıştığı platformun davranış tarzlarını mutlaka bilmeniz gerekmektedir. Windows, Linux veya Unix tabanlı işletim sistemleri hakkında ciddi bir eğitim süreci listemizde ilk sırada yer alıyor. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>2. Ağ İletişimi ve Protokol Bilgisi</strong></h3>
+
+ ### ***2. Ağ İletişimi ve Protokol Bilgisi*** 
 <!-- /wp:heading -->
 
   İşletim Sistemlerinin çalışma ve davranış yapısını hatırı sayılır seviyede öğrenmenin ardından sıra bu sistemlerin birbiriyle haberleşmesi kısmına gelmektedir. Birbirine bağlanan sistemlerin oluşturduğu ağın yapısı ve iletişimi esnasında kullanılan protokoller çok iyi derecede bilinmelidir. 
@@ -71,8 +71,8 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Bir işlemin Veri Bağı katmanında mı yoksa Fiziksel Katmanda mı gerçekleştiği konusunda tereddüt yaşıyorsanız sonraki aşamaya geçmemenizi tavsiye ediyoruz. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>3. Proses Bilgisi ve Saldırı Türleri</strong></h3>
+
+ ### ***3. Proses Bilgisi ve Saldırı Türleri*** 
 <!-- /wp:heading -->
 
   Bu madde, yukarıda açıklanan 2. maddenin devamı niteliğindedir. Ağ ve Protokol bilgisiniz eksik ise ARP spoof veya MiTM saldırılarını analiz etmek imkansızdır. Araya girme ve paketleri değiştirme işlemleri için çalışabilmeniz adına 2. Maddede ifade edilen konuların bilinmesi çok önemlidir. Prosesleri bilmelisiniz ki nereye bakacağınızı keşfedin. Böyle bir prosesin olduğunu bilmiyorsanız, nereye bakacağınızı deneyerek bulamazsınız. 
@@ -81,8 +81,8 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Bu konuda vurgulamak istediğimiz nokta, Meraktır. Nasıl çalışıyor? Sorusu her zaman sizi meşgul etmeli ve sabırla öğrenme gayreti içerisinde olmalısınız. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>4. Temel Script Yazma Kabiliyeti</strong></h3>
+
+ ### ***4. Temel Script Yazma Kabiliyeti*** 
 <!-- /wp:heading -->
 
   VBS ve Bash Script yazmayı öğrenmenizi şiddetle tavsiye ediyoruz. Bu sayede bir çok işlemi otomatik olarak sistemin işlemcisine yaptırabilirsiniz. Elle uğraşmak, zaman kaybı ve hata demektir. İnsan gözüyle yapılan inceleme, bilginin gözden kaçırılma ihtimalini artırmaktadır. Yazacağınız scriptler ile oluşturacağınız kriterler, hem otomatik olarak verileri analiz eder, sürat kazandırır, hem de hatayı en aza indirir. 
@@ -91,15 +91,15 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Script yazma konusunda belli bir seviyeye ulaştığınızda doğal olarak Python gibi bir programlama diliyle daha güçlü programlar yazmaya başlayabilirsiniz. Edineceğiniz tecrübeler zaten sizi bu noktaya ulaştıracaktır. Script yazmayı öğrenmek, atlanacak bir konu değildir. Mutlaka öğrenilmeli ve komut satırından çalışmaya dost olmalısınız. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>5. Firewall</strong></h3>
+
+ ### ***5. Firewall*** 
 <!-- /wp:heading -->
 
   Siber Güvenlik Uzmanı, firewall çalışma mantığını mutlaka öğrenmelidir. Bunu yapmanın en iyi yolu kendinize bir firewall alıp, bulup üzerinde çalışmaktır. Firewall yönetimini öğrenmek her zaman işe yarayacaktır. İzinler, kısıtlamalar ve kuralları bilmek Access Control işlemlerini öğrenmek, onların çalışma mantığını kavramada önemli bir adımdır. IP Spoofing konusu, Firewall konusu ile doğrudan ilgilidir. Bu konuda araştırma yapmalı ve öğrenmelisiniz. Daha sonra PIX ve ASA konularına geçip bütün işlemlere tekrar başlamak en doğrusu olacaktır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>6. Forensics</strong></h3>
+
+ ### ***6. Forensics*** 
 <!-- /wp:heading -->
 
   Dijital ortamlarda araştırma ve analiz yapma, delil toplama uzmanlık gerektiren bir konudur. Bu konuda bilgi sahibi olmak için ciddi bir araştırma yapmalısınız. Bir sisteme girildiğinde, nerelerde izler bırakıldığını öğrenmemek, yapacağınız araştırmalarda delil toplama işlemini sağlık yapamamanız anlamına gelir. 
@@ -108,8 +108,8 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Dijital analiz ve log inceleme için 1. Maddede bahsettiğimiz İşletim Sistemi Bilgisi yine karşımıza çıkmaktadır. İşletim Sistemini çok iyi bilirseniz, Forensics tekniklerini uygulama konusunda ilerlemek çok daha verimli olacaktır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>7. Programlama Bilgisi</strong></h3>
+
+ ### ***7. Programlama Bilgisi*** 
 <!-- /wp:heading -->
 
   Bir Siber Güvenlik Uzmanı, programlamayı ileri derecede bilmelidir. Buradaki ileri derece, nesne yönelimli programlamayı çok iyi bilmek ve istediği algoritmayı kodlamayı başarmak değildir. Özellikle port tarayıcı gibi basit bir programdan başlayarak socketler ve ağ üzerinde işlemler yapabilen amaca yönelik programlar yazabilmektir. 
@@ -118,15 +118,15 @@ url: /tr/siber-guvenlik-uzmani-adaylari-icin-yol-haritasi/
   Github benzeri platformlarda yayınlanan açık kaynak kodlu port tarayıcı vb. programların kodlarını, zaman ayırarak incelemeniz size oldukça zaman kazandıracaktır. Kodları inceleyebiliyor ve kendiniz yazabiliyorsanız ilerleme kaydetmişsiniz demektir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>8. Veri Tabanı bilgisi</strong></h3>
+
+ ### ***8. Veri Tabanı bilgisi*** 
 <!-- /wp:heading -->
 
   Veri tabanları, bütün sistemlerin işini kolaylaştırmaktadır. Bu sebeple, veri bir yerde depolanıyorsa mutlaka bir veri tabanı vardır diyebiliriz. Oracle, SQL vb. Veri tabanlarını bilmek oldukça önemlidir. Ulaşacağınız sistemler mutlaka bir veri tabanı kullanıyor olacaktır. Veri tabanları konusunda çok ileri seviye uzman olmanız beklenmese de en azından Tutorial olarak belirtilen dokümanları anlayarak okumuş ve temel sorguları yapabiliyor olmanız gerekir. Sorguların yanında tablolar ve izinler, kullanıcı yetkileri mutlaka öğrenilmesi gereken veri tabanı konularıdır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>9. Sabır</strong></h3>
+
+ ### ***9. Sabır*** 
 <!-- /wp:heading -->
 
   Yukarıda belirttiğimiz konu başlıklarının, kısa zamanda öğrenilecek konular olmadığını sanırım fark ettiniz. Gerçekten uzun zaman gerektiren ve olabildiğince soyut konular olduğunu belirtmek gerek. Tüm bu konularda bıkmadan sabırla çalışabileceğinizi düşünüyorsanız, Siber Güvenlik Uzmanı Adayı olduğunuzu söyleyebilirsiniz. 

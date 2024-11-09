@@ -24,36 +24,52 @@
       <description>
         
         
-        &lt;p&gt;We should learn Kotlin Programming Language Basic terminology at the beginning.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;We should learn Kotlin Programming Language Basic terminology at the beginning.&lt;/p&gt;
 &lt;!-- wp:more --&gt;
 &lt;!-- /wp:more --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;program &lt;/strong&gt;is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***program *** is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;statement &lt;/strong&gt;(or a programming statement) is a single command to be executed (like printing a text);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***statement *** (or a programming statement) is a single command to be executed (like printing a text);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;An &lt;strong&gt;expression &lt;/strong&gt;is a piece of code that produces a single value (for example, 2*2 is an expression);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;An **&lt;em&gt;expression *** is a piece of code that produces a single value (for example, 2&lt;/em&gt;2 is an expression);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;block &lt;/strong&gt;is a group of zero or more statements enclosed in a pair of curly braces &lt;code&gt;{...}&lt;/code&gt;; our program consists of a single block;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***block *** is a group of zero or more statements enclosed in a pair of curly braces &lt;code&gt;{&amp;hellip;}&lt;/code&gt;; our program consists of a single block;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;keyword &lt;/strong&gt;is a word that has a special meaning in the programming language. Names of keywords can&#39;t be changed;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***keyword *** is a word that has a special meaning in the programming language. Names of keywords can&amp;rsquo;t be changed;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;An &lt;strong&gt;identifier&lt;/strong&gt; (or a name) is a word written by the programmer to identify something;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;em&gt;&lt;strong&gt;identifier&lt;/strong&gt;&lt;/em&gt;  (or a name) is a word written by the programmer to identify something;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;comment&lt;/strong&gt; is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with &lt;code&gt;//&lt;/code&gt;;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;em&gt;&lt;strong&gt;comment&lt;/strong&gt;&lt;/em&gt;  is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with &lt;code&gt;//&lt;/code&gt;;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Whitespace &lt;/strong&gt;is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;***Whitespace *** is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
       </description>
     </item>
     

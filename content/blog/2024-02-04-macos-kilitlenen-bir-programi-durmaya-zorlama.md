@@ -27,26 +27,26 @@ title: MacOS &#8211; Kilitlenen bir programı durmaya zorlama
 url: /tr/macos-kilitlenen-bir-programi-durmaya-zorlama/
 ---
 
- <p>MacOS işletim sisteminizde bir program donar, kilitlenir ve tepki vermeyi durdurursa aşağıdaki adımları izleyebilirsiniz.</p>
+ <p>MacOS işletim sisteminizde bir program donar, kilitlenir ve tepki vermeyi durdurursa aşağıdaki adımları izleyebilirsiniz.
  
 
  
- ## Tuş kombinasyonu ile durmaya zorlama</h2>
+ ## Tuş kombinasyonu ile durmaya zorlama
 <!-- /wp:heading -->
 
- <p>Klavyenizden Option(Alt) + Command+ESC (Escape) tuşlarına basın ya da sol üst köşede bulunan  menüsünden "durmaya zorla" yı seçin.</p>
+ <p>Klavyenizden Option(Alt) + Command+ESC (Escape) tuşlarına basın ya da sol üst köşede bulunan  menüsünden "durmaya zorla" yı seçin.
  
 
 <!-- wp:image {"id":794,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://www.siberoloji.com/assets/images/2024/02/op-cmd-esc.png" alt="Option+Command+Esc" class="wp-image-794" /></figure>
 <!-- /wp:image -->
 
- <p>Çalışan uygulamaları listeleyen bir pencere açılacaktır. Bu listeden durmaya zorlamak istediğiniz programı seçerek onaylamalısınız.</p>
+ <p>Çalışan uygulamaları listeleyen bir pencere açılacaktır. Bu listeden durmaya zorlamak istediğiniz programı seçerek onaylamalısınız.
  
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":795,"width":"320px","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="https://www.siberoloji.com/assets/images/2024/02/Screen-Shot-2024-02-04-at-18.19.22.png" alt="" class="wp-image-795" style="width:320px" /></figure>
 <!-- /wp:image -->
 
- <p>Bu yöntem ile programı durmaya zorladığınızda başarısız olursanız, bilgisayarınızı yeniden başlatmanız gerekebilir.  menüsünden "Yeniden Başlat" seçerek bilgisayarınızı yeniden başlatın.</p>
+ <p>Bu yöntem ile programı durmaya zorladığınızda başarısız olursanız, bilgisayarınızı yeniden başlatmanız gerekebilir.  menüsünden "Yeniden Başlat" seçerek bilgisayarınızı yeniden başlatın.
  

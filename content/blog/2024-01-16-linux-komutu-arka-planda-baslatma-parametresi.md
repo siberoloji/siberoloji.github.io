@@ -28,10 +28,10 @@ title: Linux komutu arka planda başlatma &amp; parametresi
 url: /tr/linux-komutu-arka-planda-baslatma-parametresi/
 ---
 
-  Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. </p>
+  Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. 
  
 
-  Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.</p>
+  Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
  
 
 <!-- wp:code -->
@@ -54,8 +54,8 @@ linux@rpi4:~ $
 </code></pre>
 <!-- /wp:code -->
 
-  Yukarıda gördüğünüz gibi <code>sudo apt update &amp;</code> komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını <code>[1]</code> olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini <code>jobs</code> komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan <kbd>Ctrl+z</kbd> tuşları yardımıyla gönderebiliriz.</p>
+  Yukarıda gördüğünüz gibi <code>sudo apt update &amp;</code> komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını <code>[1]</code> olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini <code>jobs</code> komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan <kbd>Ctrl+z</kbd> tuşları yardımıyla gönderebiliriz.
  
 
-  Burada vurgulanması gereken en önemli kolaylık, komutu &amp; işaretiyle verir vermez komut satırının bizim kullanımımıza geri gelmesidir.</p>
+  Burada vurgulanması gereken en önemli kolaylık, komutu &amp; işaretiyle verir vermez komut satırının bizim kullanımımıza geri gelmesidir.
  

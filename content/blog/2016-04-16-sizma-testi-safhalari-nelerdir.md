@@ -66,7 +66,7 @@ url: /tr/sizma-testi-safhalari-nelerdir/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1.Katman</h4>
+<h4 class="wp-block-heading">1.Katman 
  
 
   Bu katman, bilgi toplamanın en hızlı ve otomatik programlar aracılığı ile gerçekleştirilen kısmıdır. Bu otomatik bilgi toplama araçları, arama motorları ve internet arşivlerini tarayarak hedef hakkında sonuçlar üretirler. 
@@ -76,14 +76,14 @@ url: /tr/sizma-testi-safhalari-nelerdir/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2. Katman</h4>
+<h4 class="wp-block-heading">2. Katman 
  
 
   1.Katmanda gerçekleştirilen işlemlerin yanında özellikle elle yapılan detaylı bilgi toplama işlemleridir. Belli bir takım sorulara cevap arayan bilgi toplama yöntemleri ve Açık Kaynak İstihbaratını da kapsar. Daha çok fiziksel yerleşim, adres bilgisi ve iş ilişkilerinin detayları incelenir. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3. Katman</h4>
+<h4 class="wp-block-heading">3. Katman 
  
 
   Çok ileri düzey sızma testlerinde gerekli olabilecek ve detaylı bilgi toplama işlemleridir. Uzun zamana yayılmış ve mümkün olan her türlü tekniğin kullanıldığı katmandır. Her sızma testinde yapılma zorunluluğu yoktur. Bu katmana ait bilgi toplama daha çok devletler düzeyini ilgilendirir. 

@@ -30,7 +30,7 @@ url: /how-to-print-an-integer-in-different-number-systems-hexadecimal-decimal-an
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -72,7 +72,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a simple program that demonstrates how to print an integer in different number systems: hexadecimal, decimal, and octal. 
@@ -120,7 +120,7 @@ using namespace std;</code></pre>
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

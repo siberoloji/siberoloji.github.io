@@ -32,7 +32,7 @@ url: /tr/msf-baslangicta-database-hatasi/
   Metasploit framework yazılımını Kali İşletim sisteminde kullanıyorsanız, en son güncellemeden sonra&nbsp;<code>msfconsole</code>&nbsp;başlangıcında aşağıdaki hatayı almaya başlamış olabilirsiniz. msfconsole içerisinde veritabanı kulanımı, yaptığınız taramaların kayıt edilmesi ve tekrar kullanılmasında oldukça fayda sağlar. Bu hatanın sebebi de en son güncelleme ile Kali içerisine kurulan Postgresql 9.6 sürümüdür. 
  
 
-  <strong>HATA</strong> 
+  ***HATA***  
  
 
 <!-- wp:code -->
@@ -45,9 +45,9 @@ url: /tr/msf-baslangicta-database-hatasi/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Postgresql Servisi Başlatın:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Postgresql Servisi Başlatın: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -56,9 +56,9 @@ url: /tr/msf-baslangicta-database-hatasi/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Postgresql Dinleme Portu Şu an Ne?</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Postgresql Dinleme Portu Şu an Ne? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Aşağıdaki komut yardımı ile şu an Postgresql’in şu an dinlediği Port numarasını görebilirsiniz. 
@@ -73,15 +73,15 @@ url: /tr/msf-baslangicta-database-hatasi/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">LISTEN     0      128    127.0.0.1:5433                     <strong>*</strong>:<strong>*</strong>                   users:<strong>((</strong>"postgres",pid<strong>=</strong>2732,fd<strong>=</strong>6<strong>))</strong>
-LISTEN     0      128        ::1:5433                    :::<strong>*</strong>                   users:<strong>((</strong>"postgres",pid<strong>=</strong>2732,fd<strong>=</strong>3<strong>))</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">LISTEN     0      128    127.0.0.1:5433                     ******* :*******                    users:***((*** "postgres",pid***=*** 2732,fd***=*** 6***))*** 
+LISTEN     0      128        ::1:5433                    :::*******                    users:***((*** "postgres",pid***=*** 2732,fd***=*** 3***))*** 
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Ayarlara Bakalım:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Ayarlara Bakalım: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Aşağıdaki komutu kullanarak,&nbsp;<code>/etc/postgresql/9.6/main/postgresql.conf</code>&nbsp;ayar dosyasında hangi port ayarlanmış bakalım. 
@@ -90,7 +90,7 @@ LISTEN     0      128        ::1:5433                    :::<strong>*</strong>  
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">grep "port =" /etc/postgresql/9.6/main/postgresql.conf
 
-port <strong>=</strong> 5433                <em># (change requires restart)</em>
+port ***=***  5433                <em># (change requires restart)</em>
 </code></pre>
 <!-- /wp:code -->
 
@@ -98,9 +98,9 @@ port <strong>=</strong> 5433                <em># (change requires restart)</em>
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Portu Değiştirelim:</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Portu Değiştirelim: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->

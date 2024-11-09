@@ -11,30 +11,117 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Eski Kernel Dosyalarını Temizleme – Siberoloji</title>
-  <meta name="description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
-1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız." /><link rel="canonical" href="http://localhost:1313/tr/eski-kernel-dosyalarini-temizleme/" itemprop="url" />
+  <meta name="description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün. 1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız. uname -a Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz 4.4.0-53-generic  sürümünü kullanıyor. 2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var? Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz. dpkg --get-selections | grep linux-image- linux-image-4.4.0-21-generic install linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-21-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install Bu çıktılara göre, sistemde 4.4.0-***21*** , 4.4.0-***31*** , 4.4.0-***34*** , 4.4.0-***38*** , 4.4.0-***42*** , 4.4.0-***43*** , ***4.4.0-53***  sürümleri bulunuyor. 3.Adım: Hangi Dosyalar Kaldırılabilir? Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle kaldırılmamalıdır . Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-42 , 4.4.0-43 ) kaldırmamanızı tavsiye ediyorum. Bu durumda (4.4.0-21 , 4.4.0-31 , 4.4.0-34 , 4.4.0-38 ) sürümlerinin tamamını veya istediklerinizi kaldırabilirsiniz . 4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır? Aşağıda görmüş olduğunuz sudo apt purge linux-image-  ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21 *** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır. sudo apt purge linux-image-4.4.0-21-generic Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be REMOVED: linux-image-4.4.0-21-generic* linux-image-extra-4.4.0-21-generic* linux-kernel-generic* 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded. After this operation, 217 MB disk space will be freed. Do you want to continue? [Y/n] Reading database ... 496426 files and directories currently installed.) Removing linux-kernel-generic (4.4.0-21) ... Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ... ... Progress: [ 28%] [#############################.........................................] 5.Adım: Son İşlemler Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi linux-image-4.4.0-21-generic  artık sistemde görünmüyor. dpkg --get-selections | grep linux-image- linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install 6.Adım: GRUB Başlatıcıyı Güncelleme Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım. sudo update-grub2 Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz." /><link rel="canonical" href="http://localhost:1313/tr/eski-kernel-dosyalarini-temizleme/" itemprop="url" />
 
 <meta property="og:title" content="Eski Kernel Dosyalarını Temizleme" />
 <meta property="og:description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
 1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?
     
- Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız." />
+ Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.
+
+uname -a
+Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 
+x86_64 x86_64 x86_64 GNU/Linux
+
+ Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz&nbsp;4.4.0-53-generic&nbsp;&nbsp;sürümünü kullanıyor.
+2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?
+    
+ Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz.
+
+dpkg --get-selections | grep linux-image-
+
+linux-image-4.4.0-21-generic install
+linux-image-4.4.0-31-generic install
+linux-image-4.4.0-34-generic install
+linux-image-4.4.0-38-generic install
+linux-image-4.4.0-42-generic install
+linux-image-4.4.0-43-generic install
+linux-image-4.4.0-53-generic install
+linux-image-extra-4.4.0-21-generic install
+linux-image-extra-4.4.0-31-generic install
+linux-image-extra-4.4.0-34-generic install
+linux-image-extra-4.4.0-42-generic install
+linux-image-extra-4.4.0-43-generic install
+linux-image-extra-4.4.0-53-generic install
+
+ Bu çıktılara göre, sistemde 4.4.0-***21*** ,&nbsp;4.4.0-***31*** ,&nbsp;4.4.0-***34*** ,&nbsp;4.4.0-***38*** ,&nbsp;4.4.0-***42*** ,&nbsp;4.4.0-***43*** ,&nbsp;***4.4.0-53*** &nbsp;sürümleri bulunuyor.
+3.Adım: Hangi Dosyalar Kaldırılabilir?
+    
+
+ 
+
+Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle kaldırılmamalıdır .
+
+
+
+
+Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-42 , 4.4.0-43 ) kaldırmamanızı  tavsiye ediyorum.
+
+
+
+
+Bu durumda (4.4.0-21 , 4.4.0-31 , 4.4.0-34 , 4.4.0-38 ) sürümlerinin tamamını veya istediklerinizi kaldırabilirsiniz .
+
+ 
+
+4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?
+    
+ Aşağıda görmüş olduğunuz&nbsp;sudo apt purge linux-image-&nbsp; ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21&nbsp;*** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır.
+
+sudo apt purge&nbsp;linux-image-4.4.0-21-generic
+Reading package lists... Done
+Building dependency tree 
+Reading state information... Done
+The following packages will be REMOVED:
+ linux-image-4.4.0-21-generic* linux-image-extra-4.4.0-21-generic* linux-kernel-generic*
+0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+After this operation, 217 MB disk space will be freed.
+Do you want to continue? [Y/n] 
+Reading database ... 496426 files and directories currently installed.)
+Removing linux-kernel-generic (4.4.0-21) ...
+Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ...
+...
+Progress: [ 28%] [#############################.........................................]
+
+5.Adım: Son İşlemler
+    
+ Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi&nbsp;linux-image-4.4.0-21-generic&nbsp;&nbsp;artık sistemde görünmüyor.
+
+dpkg --get-selections | grep linux-image-
+
+linux-image-4.4.0-31-generic install
+linux-image-4.4.0-34-generic install
+linux-image-4.4.0-38-generic install
+linux-image-4.4.0-42-generic install
+linux-image-4.4.0-43-generic install
+linux-image-4.4.0-53-generic install
+linux-image-extra-4.4.0-31-generic install
+linux-image-extra-4.4.0-34-generic install
+linux-image-extra-4.4.0-42-generic install
+linux-image-extra-4.4.0-43-generic install
+linux-image-extra-4.4.0-53-generic install
+
+6.Adım: GRUB Başlatıcıyı Güncelleme
+    
+ Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım.
+
+sudo update-grub2
+
+ Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/eski-kernel-dosyalarini-temizleme/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2016-12-16T01:56:00+00:00" />
 <meta property="article:modified_time" content="2016-12-16T01:56:00+00:00" />
 
   <meta itemprop="name" content="Eski Kernel Dosyalarını Temizleme">
-  <meta itemprop="description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
-1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.">
+  <meta itemprop="description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün. 1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız. uname -a Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz 4.4.0-53-generic  sürümünü kullanıyor. 2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var? Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz. dpkg --get-selections | grep linux-image- linux-image-4.4.0-21-generic install linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-21-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install Bu çıktılara göre, sistemde 4.4.0-***21*** , 4.4.0-***31*** , 4.4.0-***34*** , 4.4.0-***38*** , 4.4.0-***42*** , 4.4.0-***43*** , ***4.4.0-53***  sürümleri bulunuyor. 3.Adım: Hangi Dosyalar Kaldırılabilir? Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle kaldırılmamalıdır . Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-42 , 4.4.0-43 ) kaldırmamanızı tavsiye ediyorum. Bu durumda (4.4.0-21 , 4.4.0-31 , 4.4.0-34 , 4.4.0-38 ) sürümlerinin tamamını veya istediklerinizi kaldırabilirsiniz . 4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır? Aşağıda görmüş olduğunuz sudo apt purge linux-image-  ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21 *** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır. sudo apt purge linux-image-4.4.0-21-generic Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be REMOVED: linux-image-4.4.0-21-generic* linux-image-extra-4.4.0-21-generic* linux-kernel-generic* 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded. After this operation, 217 MB disk space will be freed. Do you want to continue? [Y/n] Reading database ... 496426 files and directories currently installed.) Removing linux-kernel-generic (4.4.0-21) ... Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ... ... Progress: [ 28%] [#############################.........................................] 5.Adım: Son İşlemler Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi linux-image-4.4.0-21-generic  artık sistemde görünmüyor. dpkg --get-selections | grep linux-image- linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install 6.Adım: GRUB Başlatıcıyı Güncelleme Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım. sudo update-grub2 Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.">
   <meta itemprop="datePublished" content="2016-12-16T01:56:00+00:00">
   <meta itemprop="dateModified" content="2016-12-16T01:56:00+00:00">
-  <meta itemprop="wordCount" content="420">
+  <meta itemprop="wordCount" content="436">
   <meta itemprop="keywords" content="Linux Nasıl">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Eski Kernel Dosyalarını Temizleme">
-  <meta name="twitter:description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
-1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.">
+  <meta name="twitter:description" content="Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün. 1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda? Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız. uname -a Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz 4.4.0-53-generic  sürümünü kullanıyor. 2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var? Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz. dpkg --get-selections | grep linux-image- linux-image-4.4.0-21-generic install linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-21-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install Bu çıktılara göre, sistemde 4.4.0-***21*** , 4.4.0-***31*** , 4.4.0-***34*** , 4.4.0-***38*** , 4.4.0-***42*** , 4.4.0-***43*** , ***4.4.0-53***  sürümleri bulunuyor. 3.Adım: Hangi Dosyalar Kaldırılabilir? Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle kaldırılmamalıdır . Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-42 , 4.4.0-43 ) kaldırmamanızı tavsiye ediyorum. Bu durumda (4.4.0-21 , 4.4.0-31 , 4.4.0-34 , 4.4.0-38 ) sürümlerinin tamamını veya istediklerinizi kaldırabilirsiniz . 4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır? Aşağıda görmüş olduğunuz sudo apt purge linux-image-  ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21 *** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır. sudo apt purge linux-image-4.4.0-21-generic Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be REMOVED: linux-image-4.4.0-21-generic* linux-image-extra-4.4.0-21-generic* linux-kernel-generic* 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded. After this operation, 217 MB disk space will be freed. Do you want to continue? [Y/n] Reading database ... 496426 files and directories currently installed.) Removing linux-kernel-generic (4.4.0-21) ... Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ... ... Progress: [ 28%] [#############################.........................................] 5.Adım: Son İşlemler Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi linux-image-4.4.0-21-generic  artık sistemde görünmüyor. dpkg --get-selections | grep linux-image- linux-image-4.4.0-31-generic install linux-image-4.4.0-34-generic install linux-image-4.4.0-38-generic install linux-image-4.4.0-42-generic install linux-image-4.4.0-43-generic install linux-image-4.4.0-53-generic install linux-image-extra-4.4.0-31-generic install linux-image-extra-4.4.0-34-generic install linux-image-extra-4.4.0-42-generic install linux-image-extra-4.4.0-43-generic install linux-image-extra-4.4.0-53-generic install 6.Adım: GRUB Başlatıcıyı Güncelleme Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım. sudo update-grub2 Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9029,39 +9116,39 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mdah2"
+                href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mda"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?&lt;/h2&gt;</a>
+              >1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?</a>
             </li>
           <li>
               <a
-                href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-varh2"
+                href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-var"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?&lt;/h2&gt;</a>
+              >2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?</a>
             </li>
           <li>
               <a
-                href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilirh2"
+                href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilir"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >3.Adım: Hangi Dosyalar Kaldırılabilir?&lt;/h2&gt;</a>
+              >3.Adım: Hangi Dosyalar Kaldırılabilir?</a>
             </li>
           <li>
               <a
-                href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1rh2"
+                href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1r"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?&lt;/h2&gt;</a>
+              >4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?</a>
             </li>
           <li>
               <a
-                href="#5ad%c4%b1m-son-i%c5%9flemlerh2"
+                href="#5ad%c4%b1m-son-i%c5%9flemler"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >5.Adım: Son İşlemler&lt;/h2&gt;</a>
+              >5.Adım: Son İşlemler</a>
             </li>
           <li>
               <a
-                href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncellemeh2"
+                href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncelleme"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >6.Adım: GRUB Başlatıcıyı Güncelleme&lt;/h2&gt;</a>
+              >6.Adım: GRUB Başlatıcıyı Güncelleme</a>
             </li>
           </ul>
   
@@ -9688,27 +9775,27 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mdah2">1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mda">1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-varh2">2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-var">2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilirh2">3.Adım: Hangi Dosyalar Kaldırılabilir?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilir">3.Adım: Hangi Dosyalar Kaldırılabilir?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1rh2">4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1r">4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5ad%c4%b1m-son-i%c5%9flemlerh2">5.Adım: Son İşlemler
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5ad%c4%b1m-son-i%c5%9flemler">5.Adım: Son İşlemler
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncellemeh2">6.Adım: GRUB Başlatıcıyı Güncelleme
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncelleme">6.Adım: GRUB Başlatıcıyı Güncelleme
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9741,19 +9828,19 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-           <p>Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken "kernel panic" hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.</p>
-<h2>1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?</h2><span class="hx-absolute -hx-mt-20" id="1adım-açık-sistemde-hangi-kernel-sürümü-kullanımdah2"></span>
-    <a href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mdah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.</p>
+           <p>Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken "kernel panic" hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
+<h2>1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?<span class="hx-absolute -hx-mt-20" id="1adım-açık-sistemde-hangi-kernel-sürümü-kullanımda"></span>
+    <a href="#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mda" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">uname -a
 Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 
 x86_64 x86_64 x86_64 GNU/Linux</pre>
 <!-- /wp:preformatted -->
- <p>Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz&nbsp;4.4.0-53-generic&nbsp;&nbsp;sürümünü kullanıyor.</p>
-<h2>2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?</h2><span class="hx-absolute -hx-mt-20" id="2adım-sistemimizde-kaç-tane-eski-kernel-sürümü-varh2"></span>
-    <a href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-varh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz.</p>
+ <p>Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz&nbsp;4.4.0-53-generic&nbsp;&nbsp;sürümünü kullanıyor.
+<h2>2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?<span class="hx-absolute -hx-mt-20" id="2adım-sistemimizde-kaç-tane-eski-kernel-sürümü-var"></span>
+    <a href="#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-var" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">dpkg --get-selections | grep linux-image-
 
@@ -9771,23 +9858,29 @@ linux-image-extra-4.4.0-42-generic install
 linux-image-extra-4.4.0-43-generic install
 linux-image-extra-4.4.0-53-generic install</pre>
 <!-- /wp:preformatted -->
- <p>Bu çıktılara göre, sistemde 4.4.0-<strong>21</strong>,&nbsp;4.4.0-<strong>31</strong>,&nbsp;4.4.0-<strong>34</strong>,&nbsp;4.4.0-<strong>38</strong>,&nbsp;4.4.0-<strong>42</strong>,&nbsp;4.4.0-<strong>43</strong>,&nbsp;<strong>4.4.0-53</strong>&nbsp;sürümleri bulunuyor.</p>
-<h2>3.Adım: Hangi Dosyalar Kaldırılabilir?</h2><span class="hx-absolute -hx-mt-20" id="3adım-hangi-dosyalar-kaldırılabilirh2"></span>
-    <a href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilirh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Bu çıktılara göre, sistemde 4.4.0-***21*** ,&nbsp;4.4.0-***31*** ,&nbsp;4.4.0-***34*** ,&nbsp;4.4.0-***38*** ,&nbsp;4.4.0-***42*** ,&nbsp;4.4.0-***43*** ,&nbsp;***4.4.0-53*** &nbsp;sürümleri bulunuyor.
+<h2>3.Adım: Hangi Dosyalar Kaldırılabilir?<span class="hx-absolute -hx-mt-20" id="3adım-hangi-dosyalar-kaldırılabilir"></span>
+    <a href="#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilir" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle <strong>kaldırılmamalıdır</strong>.</li>
+ <!-- wp:list-item -->
+<ul>
+<li>Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle <em><strong>kaldırılmamalıdır</strong></em> .</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-<strong>42</strong>, 4.4.0-<strong>43</strong>) <strong>kaldırmamanızı</strong> tavsiye ediyorum.</li>
+<ul>
+<li>Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-<em><strong>42</strong></em> , 4.4.0-<em><strong>43</strong></em> ) <em><strong>kaldırmamanızı</strong></em>  tavsiye ediyorum.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Bu durumda (4.4.0-<strong>21</strong>, 4.4.0-<strong>31</strong>, 4.4.0-<strong>34</strong>, 4.4.0-<strong>38</strong>) sürümlerinin tamamını veya istediklerinizi <strong>kaldırabilirsiniz</strong>.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Bu durumda (4.4.0-<em><strong>21</strong></em> , 4.4.0-<em><strong>31</strong></em> , 4.4.0-<em><strong>34</strong></em> , 4.4.0-<em><strong>38</strong></em> ) sürümlerinin tamamını veya istediklerinizi <em><strong>kaldırabilirsiniz</strong></em> .</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?</h2><span class="hx-absolute -hx-mt-20" id="4-adım-eskinbspkernel-sürümlerini-sistemden-kaldırma-nasıl-yapılırh2"></span>
-    <a href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1rh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Aşağıda görmüş olduğunuz&nbsp;sudo apt purge linux-image-&nbsp; ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-<strong>21&nbsp;</strong>sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır.</p>
+<h2>4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?<span class="hx-absolute -hx-mt-20" id="4-adım-eskinbspkernel-sürümlerini-sistemden-kaldırma-nasıl-yapılır"></span>
+    <a href="#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1r" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Aşağıda görmüş olduğunuz&nbsp;sudo apt purge linux-image-&nbsp; ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21&nbsp;*** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt purge&nbsp;linux-image-4.4.0-21-generic
 Reading package lists... Done
@@ -9804,9 +9897,9 @@ Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ...
 ...
 Progress: [ 28%] [#############################.........................................]</pre>
 <!-- /wp:preformatted -->
-<h2>5.Adım: Son İşlemler</h2><span class="hx-absolute -hx-mt-20" id="5adım-son-işlemlerh2"></span>
-    <a href="#5ad%c4%b1m-son-i%c5%9flemlerh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi&nbsp;linux-image-4.4.0-21-generic&nbsp;&nbsp;artık sistemde görünmüyor.</p>
+<h2>5.Adım: Son İşlemler<span class="hx-absolute -hx-mt-20" id="5adım-son-işlemler"></span>
+    <a href="#5ad%c4%b1m-son-i%c5%9flemler" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi&nbsp;linux-image-4.4.0-21-generic&nbsp;&nbsp;artık sistemde görünmüyor.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">dpkg --get-selections | grep linux-image-
 
@@ -9822,13 +9915,13 @@ linux-image-extra-4.4.0-42-generic install
 linux-image-extra-4.4.0-43-generic install
 linux-image-extra-4.4.0-53-generic install</pre>
 <!-- /wp:preformatted -->
-<h2>6.Adım: GRUB Başlatıcıyı Güncelleme</h2><span class="hx-absolute -hx-mt-20" id="6adım-grub-başlatıcıyı-güncellemeh2"></span>
-    <a href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncellemeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım.</p>
+<h2>6.Adım: GRUB Başlatıcıyı Güncelleme<span class="hx-absolute -hx-mt-20" id="6adım-grub-başlatıcıyı-güncelleme"></span>
+    <a href="#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncelleme" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo update-grub2</pre>
 <!-- /wp:preformatted -->
- <p>Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.</p>
+ <p>Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.
 
         </div>
         

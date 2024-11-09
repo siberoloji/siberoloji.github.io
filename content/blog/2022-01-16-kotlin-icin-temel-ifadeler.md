@@ -27,37 +27,37 @@ url: /tr/kotlin-icin-temel-ifadeler/
 <!-- /wp:more -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Bir <strong>program</strong>, birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur;</li>
+ <!-- wp:list-item -->
+- Bir ***program*** , birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>statement </strong>- <strong>komut: </strong>(veya bir programlama ifadesi), yürütülecek tek bir komuttur (bir metni yazdırmak gibi);</li>
+- ***statement *** - ***komut: *** (veya bir programlama ifadesi), yürütülecek tek bir komuttur (bir metni yazdırmak gibi); 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>expression</strong> - <strong>ifade: </strong>, tek bir değer üreten bir kod parçasıdır (örneğin, 2*2 bir ifadedir);</li>
+- ***expression***  - ***ifade: *** , tek bir değer üreten bir kod parçasıdır (örneğin, 2*2 bir ifadedir); 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Block</strong> - <strong>Kod Bloğu:</strong> bir çift kaşlı ayraç {…} içine alınmış sıfır veya daha fazla ifade grubudur; programımız tek bir bloktan oluşmaktadır;</li>
+- ***Block***  - ***Kod Bloğu:***  bir çift kaşlı ayraç {…} içine alınmış sıfır veya daha fazla ifade grubudur; programımız tek bir bloktan oluşmaktadır; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>keyword</strong> - <strong>anahtar kelime</strong>: programlama dilinde özel bir anlamı olan bir kelimedir. Anahtar kelimelerin adları değiştirilemez;</li>
+- ***keyword***  - ***anahtar kelime*** : programlama dilinde özel bir anlamı olan bir kelimedir. Anahtar kelimelerin adları değiştirilemez; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bir <strong>identifier</strong> - <strong>belirteç </strong>:(veya bir isim), programcı tarafından bir şeyi tanımlamak için yazılan bir kelimedir;</li>
+- Bir ***identifier***  - ***belirteç *** :(veya bir isim), programcı tarafından bir şeyi tanımlamak için yazılan bir kelimedir; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Comment</strong> - <strong>Yorum</strong>: program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar <code>//</code> ile başlar;</li>
+- ***Comment***  - ***Yorum*** : program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar <code>//</code> ile başlar; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Whitespace</strong> - <strong>Boşluk</strong>: boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır.</li>
-<!-- /wp:list-item --></ul>
+- ***Whitespace***  - ***Boşluk*** : boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
    Credit: <a href="https://hyperskill.org/" target="_blank" rel="noreferrer noopener">https://hyperskill.org/</a>  

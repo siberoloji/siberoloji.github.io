@@ -41,14 +41,14 @@ url: /tr/acik-anahtar-sifreleme-public-key-cryptography-nedir/
  
 
  
- ## 1.Açık anahtar:</h2>
+ ## 1.Açık anahtar:
 <!-- /wp:heading -->
 
   Özel anahtarın benzeri bir anahtardır ancak herkese dağıtılır. İster dosya sunucuları ile ister keyserver (anahtar sunucusu) görevi yapan sunucular aracılığı ile herkese verilir. Anlamı şudur; "Bana şifreli bir mesaj göndermek isterseniz bu açık anahtarı kullanabilirsiniz! Çünkü sizin şifreleme için kullandığınız bana ait açık anahtarın şifresini sadece bende bulunan Özel Anahtar açabilir. 
  
 
  
- ## 2.Özel Anahtar:</h2>
+ ## 2.Özel Anahtar:
 <!-- /wp:heading -->
 
   Sadece sahibinde bulunur. Sayısal imza, şifreleme ve şifre çözme işlemlerinde kullanılır. Kimse ile paylaşılmaz. Paylaşılır ise hemen yeni bir özel anahtar üretilir ve önceden yayınlanmış açık anahtar iptal edilir. 
@@ -58,15 +58,15 @@ url: /tr/acik-anahtar-sifreleme-public-key-cryptography-nedir/
 # SONUÇ: 
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Mesajın Şifrelenmesi:</h3>
+
+ ### Mesajın Şifrelenmesi:
 <!-- /wp:heading -->
 
   Güvenli mesajı göndermek isteyen, alıcının açık anahtarı ile şifreleme yapar ve gönderir. O mesaj sadece alıcının özel anahtarı ile açılabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Mesajın İmzalanması:</h3>
+
+ ### Mesajın İmzalanması:
 <!-- /wp:heading -->
 
   Güvenli mesajın gerçekten gönderen kişiden geldiğini ispat etmek için GÖNDERİCİ açık anahtar ile ŞİFRELEDİĞİ mesajı&nbsp;kendi&nbsp;ÖZEL ANAHTARI ile İMZALAR. 
@@ -75,8 +75,8 @@ url: /tr/acik-anahtar-sifreleme-public-key-cryptography-nedir/
   Bu tür mesaj alışverişi yapan tarafların her birisinde alıcının açık anahtarının kayıtlı olduğu bir cüzdan bulunur. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Kullanmak İsterseniz, Aşamalar:</h3>
+
+ ### Kullanmak İsterseniz, Aşamalar:
 <!-- /wp:heading -->
 
   Bu işlemleri yapmak için;<br>Thunderbird posta programınıza Enigmail eklentisi kurmalısınız. 

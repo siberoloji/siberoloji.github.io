@@ -28,960 +28,960 @@ title: Linux Commands List
 url: /linux-commands-list/
 ---
 
-  It is a list of Linux commands brought together as part of an effort to gather all commands together. Translation and development work continues. It has been prepared to include the list of commands collected from open sources on a single page.</p>
+  It is a list of Linux commands brought together as part of an effort to gather all commands together. Translation and development work continues. It has been prepared to include the list of commands collected from open sources on a single page.
  
 
  
- ## A</h2>
+ ## A
 <!-- /wp:heading -->
 
-  <a href="https://www.siberoloji.com/en/linux-command-initialization-in-background-parameter/" data-type="post" data-id="670" target="_blank" rel="noreferrer noopener">&amp;</a> : Start a new process in the background</p>
+  <a href="https://www.siberoloji.com/en/linux-command-initialization-in-background-parameter/" data-type="post" data-id="670" target="_blank" rel="noreferrer noopener">&amp;</a> : Start a new process in the background
  
 
-  <a href="https://www.siberoloji.com/en/defining-a-shortcut-with-the-alias-command-in-linux/" data-type="post" data-id="682" target="_blank" rel="noreferrer noopener">alias</a> : Create an alias</p>
+  <a href="https://www.siberoloji.com/en/defining-a-shortcut-with-the-alias-command-in-linux/" data-type="post" data-id="682" target="_blank" rel="noreferrer noopener">alias</a> : Create an alias
  
 
-  <a href="https://www.siberoloji.com/apropos-command-in-linux/">apropos</a> : Search Help manual pages (man -k)</p>
+  <a href="https://www.siberoloji.com/apropos-command-in-linux/">apropos</a> : Search Help manual pages (man -k)
  
 
-  apt : Search for and install software packages (Debian/Ubuntu)</p>
+  apt : Search for and install software packages (Debian/Ubuntu)
  
 
-  apt-get : Search for and install software packages (Debian/Ubuntu)</p>
+  apt-get : Search for and install software packages (Debian/Ubuntu)
  
 
-  aptitude : Search for and install software packages (Debian/Ubuntu)</p>
+  aptitude : Search for and install software packages (Debian/Ubuntu)
  
 
-  aspell : Spell Checker</p>
+  aspell : Spell Checker
  
 
-  at : Schedule a command to run once at a particular time</p>
+  at : Schedule a command to run once at a particular time
  
 
-  awk : Find and Replace text, database sort/validate/index</p>
+  awk : Find and Replace text, database sort/validate/index
  
 
  
- ## B</h2>
+ ## B
 <!-- /wp:heading -->
 
-  basename Strip directory and suffix from filenames</p>
+  basename Strip directory and suffix from filenames
  
 
-  base32 Base32 encode/decode data and print to standard output</p>
+  base32 Base32 encode/decode data and print to standard output
  
 
-  base64 Base64 encode/decode data and print to standard output</p>
+  base64 Base64 encode/decode data and print to standard output
  
 
-  bash GNU Bourne-Again SHell</p>
+  bash GNU Bourne-Again SHell
  
 
-  bc Arbitrary precision calculator language</p>
+  bc Arbitrary precision calculator language
  
 
-  bg Send to background</p>
+  bg Send to background
  
 
-  bind Set or display readline key and function bindings</p>
+  bind Set or display readline key and function bindings
  
 
-  break Exit from a loop</p>
+  break Exit from a loop
  
 
-  builtin Run a shell builtin</p>
+  builtin Run a shell builtin
  
 
-  bzip2 Compress or decompress named file(s)</p>
+  bzip2 Compress or decompress named file(s)
  
 
-  C &nbsp;</p>
+  C &nbsp;
  
 
-  cal Display a calendar</p>
+  cal Display a calendar
  
 
-  caller Return the context of any active subroutine call •</p>
+  caller Return the context of any active subroutine call •
  
 
-  case Conditionally perform a command</p>
+  case Conditionally perform a command
  
 
-  <a href="https://www.siberoloji.com/understanding-the-linux-cat-command-a-comprehensive-guide/">cat</a> : Concatenate and print (display) the content of files</p>
+  <a href="https://www.siberoloji.com/understanding-the-linux-cat-command-a-comprehensive-guide/">cat</a> : Concatenate and print (display) the content of files
  
 
-  cd Change Directory</p>
+  cd Change Directory
  
 
-  cfdisk Partition table manipulator for Linux</p>
+  cfdisk Partition table manipulator for Linux
  
 
-  chattr Change file attributes on a Linux file system</p>
+  chattr Change file attributes on a Linux file system
  
 
-  chgrp Change group ownership</p>
+  chgrp Change group ownership
  
 
-  chmod Change access permissions</p>
+  chmod Change access permissions
  
 
-  chown Change file owner and group</p>
+  chown Change file owner and group
  
 
-  chpasswd Update passwords in batch mode</p>
+  chpasswd Update passwords in batch mode
  
 
-  chroot Run a command with a different root directory</p>
+  chroot Run a command with a different root directory
  
 
-  chkconfig System services (runlevel)</p>
+  chkconfig System services (runlevel)
  
 
-  cksum Print CRC checksum and byte counts</p>
+  cksum Print CRC checksum and byte counts
  
 
-  clear Clear the terminal screen/console (ncurses)</p>
+  clear Clear the terminal screen/console (ncurses)
  
 
-  clear_console Clear the terminal screen/console (bash)</p>
+  clear_console Clear the terminal screen/console (bash)
  
 
-  cmp Compare two files</p>
+  cmp Compare two files
  
 
-  comm Compare two sorted files line by line</p>
+  comm Compare two sorted files line by line
  
 
-  command Run a command - ignoring shell functions •</p>
+  command Run a command - ignoring shell functions •
  
 
-  continue Resume the next iteration of a loop •</p>
+  continue Resume the next iteration of a loop •
  
 
-  cp Copy one or more files to another location</p>
+  cp Copy one or more files to another location
  
 
-  cpio Copy files to and from archives</p>
+  cpio Copy files to and from archives
  
 
-  cron Daemon to execute scheduled commands</p>
+  cron Daemon to execute scheduled commands
  
 
-  crontab Schedule a command to run at a later time</p>
+  crontab Schedule a command to run at a later time
  
 
-  csplit Split a file into context-determined pieces</p>
+  csplit Split a file into context-determined pieces
  
 
-  curl Transfer data from or to a server</p>
+  curl Transfer data from or to a server
  
 
-  cut Divide a file into several parts</p>
+  cut Divide a file into several parts
  
 
-  D &nbsp;</p>
+  D &nbsp;
  
 
-  date Display or change the date &amp; time</p>
+  date Display or change the date &amp; time
  
 
-  dc Desk Calculator</p>
+  dc Desk Calculator
  
 
-  dd Data Duplicator - convert and copy a file, write disk headers, boot records</p>
+  dd Data Duplicator - convert and copy a file, write disk headers, boot records
  
 
-  ddrescue Data recovery tool</p>
+  ddrescue Data recovery tool
  
 
-  declare Declare variables and give them attributes •</p>
+  declare Declare variables and give them attributes •
  
 
-  df Display free disk space</p>
+  df Display free disk space
  
 
-  <a href="https://www.siberoloji.com/understanding-the-diff-command-in-linux-a-comprehensive-guide-for-intermediate-users/">diff</a> Display the differences between two files</p>
+  <a href="https://www.siberoloji.com/understanding-the-diff-command-in-linux-a-comprehensive-guide-for-intermediate-users/">diff</a> Display the differences between two files
  
 
-  diff3 Show differences among three files</p>
+  diff3 Show differences among three files
  
 
-  dig DNS lookup</p>
+  dig DNS lookup
  
 
-  dir Briefly list directory contents</p>
+  dir Briefly list directory contents
  
 
-  dircolors Colour setup for 'ls'</p>
+  dircolors Colour setup for 'ls'
  
 
-  dirname Convert a full pathname to just a path</p>
+  dirname Convert a full pathname to just a path
  
 
-  dirs Display list of remembered directories</p>
+  dirs Display list of remembered directories
  
 
-  dos2unix Windows/MAC to UNIX text file format converter</p>
+  dos2unix Windows/MAC to UNIX text file format converter
  
 
-  dmesg Print kernel &amp; driver messages</p>
+  dmesg Print kernel &amp; driver messages
  
 
-  dpkg Package manager (Debian/Ubuntu).</p>
+  dpkg Package manager (Debian/Ubuntu).
  
 
-  du Estimate file space usage</p>
+  du Estimate file space usage
  
 
-  E &nbsp;</p>
+  E &nbsp;
  
 
-  echo Display message on screen •</p>
+  echo Display message on screen •
  
 
-  egrep Search file(s) for lines that match an extended expression</p>
+  egrep Search file(s) for lines that match an extended expression
  
 
-  eject Eject removable media</p>
+  eject Eject removable media
  
 
-  enable Enable and disable builtin shell commands •</p>
+  enable Enable and disable builtin shell commands •
  
 
-  env Environment variables</p>
+  env Environment variables
  
 
-  ethtool Ethernet card settings</p>
+  ethtool Ethernet card settings
  
 
-  eval Evaluate several commands/arguments</p>
+  eval Evaluate several commands/arguments
  
 
-  exec Execute a command</p>
+  exec Execute a command
  
 
-  exit Exit the shell</p>
+  exit Exit the shell
  
 
-  expand Convert tabs to spaces</p>
+  expand Convert tabs to spaces
  
 
-  export Set an environment variable</p>
+  export Set an environment variable
  
 
-  expr Evaluate expressions</p>
+  expr Evaluate expressions
  
 
-  F &nbsp;</p>
+  F &nbsp;
  
 
-  false Do nothing, unsuccessfully</p>
+  false Do nothing, unsuccessfully
  
 
-  fdformat Low-level format a floppy disk</p>
+  fdformat Low-level format a floppy disk
  
 
-  fdisk Partition table manipulator for Linux</p>
+  fdisk Partition table manipulator for Linux
  
 
-  fg Send job to foreground</p>
+  fg Send job to foreground
  
 
-  fgrep Search file(s) for lines that match a fixed string</p>
+  fgrep Search file(s) for lines that match a fixed string
  
 
-  file Determine file type</p>
+  file Determine file type
  
 
-  find Search for files that meet a desired criteria</p>
+  find Search for files that meet a desired criteria
  
 
-  fmt Reformat paragraph text</p>
+  fmt Reformat paragraph text
  
 
-  fold Wrap text to fit a specified width</p>
+  fold Wrap text to fit a specified width
  
 
-  for Expand words, and execute commands</p>
+  for Expand words, and execute commands
  
 
-  format Format disks or tapes</p>
+  format Format disks or tapes
  
 
-  free Display memory usage</p>
+  free Display memory usage
  
 
-  fsck File system consistency check and repair</p>
+  fsck File system consistency check and repair
  
 
-  ftp File Transfer Protocol</p>
+  ftp File Transfer Protocol
  
 
-  function Define Function Macros</p>
+  function Define Function Macros
  
 
-  fuser Identify/kill the process that is accessing a file</p>
+  fuser Identify/kill the process that is accessing a file
  
 
-  G &nbsp;</p>
+  G &nbsp;
  
 
-  gawk Find and Replace text within file(s)</p>
+  gawk Find and Replace text within file(s)
  
 
-  getopts Parse positional parameters</p>
+  getopts Parse positional parameters
  
 
-  getfacl Get file access control lists</p>
+  getfacl Get file access control lists
  
 
-  grep Search file(s) for lines that match a given pattern</p>
+  grep Search file(s) for lines that match a given pattern
  
 
-  groupadd Add a user security group</p>
+  groupadd Add a user security group
  
 
-  groupdel Delete a group</p>
+  groupdel Delete a group
  
 
-  groupmod Modify a group</p>
+  groupmod Modify a group
  
 
-  groups Print group names a user is in</p>
+  groups Print group names a user is in
  
 
-  gzip Compress or decompress named file(s)</p>
+  gzip Compress or decompress named file(s)
  
 
-  H &nbsp;</p>
+  H &nbsp;
  
 
-  hash Remember the full pathname of a name argument</p>
+  hash Remember the full pathname of a name argument
  
 
-  head Output the first part of file(s)</p>
+  head Output the first part of file(s)
  
 
-  help Display help for a built-in command •</p>
+  help Display help for a built-in command •
  
 
-  history Command History</p>
+  history Command History
  
 
-  hostname Print or set system name</p>
+  hostname Print or set system name
  
 
-  htop Interactive process viewer</p>
+  htop Interactive process viewer
  
 
-  I &nbsp;</p>
+  I &nbsp;
  
 
-  iconv Convert the character set of a file</p>
+  iconv Convert the character set of a file
  
 
-  id Print user and group id's</p>
+  id Print user and group id's
  
 
-  if Conditionally perform a command</p>
+  if Conditionally perform a command
  
 
-  ifconfig Configure a network interface</p>
+  ifconfig Configure a network interface
  
 
-  ifdown Stop a network interface</p>
+  ifdown Stop a network interface
  
 
-  ifup Start a network interface up</p>
+  ifup Start a network interface up
  
 
-  import Capture an X server screen and save the image to file</p>
+  import Capture an X server screen and save the image to file
  
 
-  install Copy files and set attributes</p>
+  install Copy files and set attributes
  
 
-  iostat Report CPU and i/o statistics</p>
+  iostat Report CPU and i/o statistics
  
 
-  ip Routing, devices and tunnels</p>
+  ip Routing, devices and tunnels
  
 
-  J &nbsp;</p>
+  J &nbsp;
  
 
-  jobs List active jobs •</p>
+  jobs List active jobs •
  
 
-  join Join lines on a common field</p>
+  join Join lines on a common field
  
 
-  K &nbsp;</p>
+  K &nbsp;
  
 
-  kill Kill a process by specifying its PID</p>
+  kill Kill a process by specifying its PID
  
 
-  killall Kill processes by name</p>
+  killall Kill processes by name
  
 
-  klist List cached Kerberos tickets</p>
+  klist List cached Kerberos tickets
  
 
-  L &nbsp;</p>
+  L &nbsp;
  
 
-  less Display output one screen at a time</p>
+  less Display output one screen at a time
  
 
-  let Perform arithmetic on shell variables •</p>
+  let Perform arithmetic on shell variables •
  
 
-  link Create a link to a file</p>
+  link Create a link to a file
  
 
-  ln Create a symbolic link to a file</p>
+  ln Create a symbolic link to a file
  
 
-  local Create a function variable •</p>
+  local Create a function variable •
  
 
-  locate Find files</p>
+  locate Find files
  
 
-  logname Print current login name</p>
+  logname Print current login name
  
 
-  logout Exit a login shell •</p>
+  logout Exit a login shell •
  
 
-  look Display lines beginning with a given string</p>
+  look Display lines beginning with a given string
  
 
-  lpc Line printer control program</p>
+  lpc Line printer control program
  
 
-  lpr Print files</p>
+  lpr Print files
  
 
-  lprint Print a file</p>
+  lprint Print a file
  
 
-  lprintd Delete a print job</p>
+  lprintd Delete a print job
  
 
-  lprintq List the print queue</p>
+  lprintq List the print queue
  
 
-  lprm Remove jobs from the print queue</p>
+  lprm Remove jobs from the print queue
  
 
-  lsattr List file attributes on a Linux second extended file system</p>
+  lsattr List file attributes on a Linux second extended file system
  
 
-  lsblk List block devices</p>
+  lsblk List block devices
  
 
-  ls List information about file(s)</p>
+  ls List information about file(s)
  
 
-  lsof List open files</p>
+  lsof List open files
  
 
-  lspci List all PCI devices</p>
+  lspci List all PCI devices
  
 
-  M &nbsp;</p>
+  M &nbsp;
  
 
-  make Recompile a group of programs</p>
+  make Recompile a group of programs
  
 
-  man Help manual</p>
+  man Help manual
  
 
-  mapfile Read lines from standard input into an indexed array variable •</p>
+  mapfile Read lines from standard input into an indexed array variable •
  
 
-  mkdir Create new folder(s)</p>
+  mkdir Create new folder(s)
  
 
-  mkfifo Make FIFOs (named pipes)</p>
+  mkfifo Make FIFOs (named pipes)
  
 
-  mkfile Make a file</p>
+  mkfile Make a file
  
 
-  mkisofs Create a hybrid ISO9660/JOLIET/HFS filesystem</p>
+  mkisofs Create a hybrid ISO9660/JOLIET/HFS filesystem
  
 
-  mknod Make block or character special files</p>
+  mknod Make block or character special files
  
 
-  mktemp Make a temporary file</p>
+  mktemp Make a temporary file
  
 
-  more Display output one screen at a time</p>
+  more Display output one screen at a time
  
 
-  most Browse or page through a text file</p>
+  most Browse or page through a text file
  
 
-  mount Mount a file system</p>
+  mount Mount a file system
  
 
-  mtools Manipulate MS-DOS files</p>
+  mtools Manipulate MS-DOS files
  
 
-  mtr Network diagnostics (traceroute/ping)</p>
+  mtr Network diagnostics (traceroute/ping)
  
 
-  mv Move or rename files or directories</p>
+  mv Move or rename files or directories
  
 
-  mmv Mass Move and rename (files)</p>
+  mmv Mass Move and rename (files)
  
 
-  N &nbsp;</p>
+  N &nbsp;
  
 
-  nc Netcat, read and write data across networks</p>
+  nc Netcat, read and write data across networks
  
 
-  netstat Networking connections/stats</p>
+  netstat Networking connections/stats
  
 
-  nft nftables for packet filtering and classification</p>
+  nft nftables for packet filtering and classification
  
 
-  nice Set the priority of a command or job</p>
+  nice Set the priority of a command or job
  
 
-  nl Number lines and write files</p>
+  nl Number lines and write files
  
 
-  nohup Run a command immune to hangups</p>
+  nohup Run a command immune to hangups
  
 
-  notify-send Send desktop notifications</p>
+  notify-send Send desktop notifications
  
 
-  nslookup Query Internet name servers interactively</p>
+  nslookup Query Internet name servers interactively
  
 
-  O &nbsp;</p>
+  O &nbsp;
  
 
-  open Open a file in its default application</p>
+  open Open a file in its default application
  
 
-  op Operator access</p>
+  op Operator access
  
 
-  P &nbsp;</p>
+  P &nbsp;
  
 
-  passwd Modify a user password</p>
+  passwd Modify a user password
  
 
-  paste Merge lines of files</p>
+  paste Merge lines of files
  
 
-  pathchk Check file name portability</p>
+  pathchk Check file name portability
  
 
-  Perf Performance analysis tools for Linux</p>
+  Perf Performance analysis tools for Linux
  
 
-  ping Test a network connection</p>
+  ping Test a network connection
  
 
-  pgrep List processes by name</p>
+  pgrep List processes by name
  
 
-  pkill Kill processes by name</p>
+  pkill Kill processes by name
  
 
-  popd Restore the previous value of the current directory</p>
+  popd Restore the previous value of the current directory
  
 
-  pr Prepare files for printing</p>
+  pr Prepare files for printing
  
 
-  printcap Printer capability database</p>
+  printcap Printer capability database
  
 
-  printenv Print environment variables</p>
+  printenv Print environment variables
  
 
-  printf Format and print data •</p>
+  printf Format and print data •
  
 
-  ps Process status</p>
+  ps Process status
  
 
-  pushd Save and then change the current directory</p>
+  pushd Save and then change the current directory
  
 
-  pv Monitor the progress of data through a pipe</p>
+  pv Monitor the progress of data through a pipe
  
 
-  pwd Print Working Directory</p>
+  pwd Print Working Directory
  
 
-  Q &nbsp;</p>
+  Q &nbsp;
  
 
-  quota Display disk usage and limits</p>
+  quota Display disk usage and limits
  
 
-  quotacheck Scan a file system for disk usage</p>
+  quotacheck Scan a file system for disk usage
  
 
-  R &nbsp;</p>
+  R &nbsp;
  
 
-  ram ram disk device</p>
+  ram ram disk device
  
 
-  rar Archive files with compression</p>
+  rar Archive files with compression
  
 
-  rcp Copy files between two machines</p>
+  rcp Copy files between two machines
  
 
-  read Read a line from standard input •</p>
+  read Read a line from standard input •
  
 
-  readarray Read from stdin into an array variable •</p>
+  readarray Read from stdin into an array variable •
  
 
-  readonly Mark variables/functions as readonly</p>
+  readonly Mark variables/functions as readonly
  
 
-  reboot Reboot the system</p>
+  reboot Reboot the system
  
 
-  rename Rename files</p>
+  rename Rename files
  
 
-  renice Alter priority of running processes</p>
+  renice Alter priority of running processes
  
 
-  remsync Synchronize remote files via email</p>
+  remsync Synchronize remote files via email
  
 
-  return Exit a shell function</p>
+  return Exit a shell function
  
 
-  rev Reverse lines of a file</p>
+  rev Reverse lines of a file
  
 
-  rm Remove files</p>
+  rm Remove files
  
 
-  rmdir Remove folder(s)</p>
+  rmdir Remove folder(s)
  
 
-  <a href="https://www.siberoloji.com/mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/">rsync</a> Remote file copy (Synchronize file trees)</p>
+  <a href="https://www.siberoloji.com/mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/">rsync</a> Remote file copy (Synchronize file trees)
  
 
-  S &nbsp;</p>
+  S &nbsp;
  
 
-  screen Multiplex terminal, run remote shells via ssh</p>
+  screen Multiplex terminal, run remote shells via ssh
  
 
-  scp Secure copy (remote file copy)</p>
+  scp Secure copy (remote file copy)
  
 
-  sdiff Merge two files interactively</p>
+  sdiff Merge two files interactively
  
 
-  sed Stream Editor</p>
+  sed Stream Editor
  
 
-  select Accept user choices via keyboard input</p>
+  select Accept user choices via keyboard input
  
 
-  seq Print numeric sequences</p>
+  seq Print numeric sequences
  
 
-  set Manipulate shell variables and functions</p>
+  set Manipulate shell variables and functions
  
 
-  setfacl Set file access control lists.</p>
+  setfacl Set file access control lists.
  
 
-  sftp Secure File Transfer Program</p>
+  sftp Secure File Transfer Program
  
 
-  sha256sum Compute and check SHA256 (256-bit) checksums</p>
+  sha256sum Compute and check SHA256 (256-bit) checksums
  
 
-  shift Shift positional parameters</p>
+  shift Shift positional parameters
  
 
-  shopt Shell Options</p>
+  shopt Shell Options
  
 
-  shuf Generate random permutations</p>
+  shuf Generate random permutations
  
 
-  shutdown Shutdown or restart linux</p>
+  shutdown Shutdown or restart linux
  
 
-  sleep Delay for a specified time</p>
+  sleep Delay for a specified time
  
 
-  slocate Find files</p>
+  slocate Find files
  
 
-  sort Sort text files</p>
+  sort Sort text files
  
 
-  source Run commands from a file '.'&nbsp; •</p>
+  source Run commands from a file '.'&nbsp; •
  
 
-  split Split a file into fixed-size pieces</p>
+  split Split a file into fixed-size pieces
  
 
-  ss Socket Statistics</p>
+  ss Socket Statistics
  
 
-  ssh Secure Shell client (remote login program)</p>
+  ssh Secure Shell client (remote login program)
  
 
-  stat Display file or file system status</p>
+  stat Display file or file system status
  
 
-  strace Trace system calls and signals</p>
+  strace Trace system calls and signals
  
 
-  su Substitute user identity</p>
+  su Substitute user identity
  
 
-  sudo Execute a command as another user</p>
+  sudo Execute a command as another user
  
 
-  sum Print a checksum for a file</p>
+  sum Print a checksum for a file
  
 
-  suspend Suspend execution of this shell •</p>
+  suspend Suspend execution of this shell •
  
 
-  sync Synchronize data on disk with memory</p>
+  sync Synchronize data on disk with memory
  
 
-  T &nbsp;</p>
+  T &nbsp;
  
 
-  tabs Set tabs on a terminal</p>
+  tabs Set tabs on a terminal
  
 
-  tail Output the last part of a file</p>
+  tail Output the last part of a file
  
 
-  tar Store, list or extract files in an archive</p>
+  tar Store, list or extract files in an archive
  
 
-  tee Redirect output to multiple files</p>
+  tee Redirect output to multiple files
  
 
-  test Evaluate a conditional expression</p>
+  test Evaluate a conditional expression
  
 
-  time Measure Program running time</p>
+  time Measure Program running time
  
 
-  timeout Run a command with a time limit</p>
+  timeout Run a command with a time limit
  
 
-  times User and system times</p>
+  times User and system times
  
 
-  tmux Terminal multiplexer</p>
+  tmux Terminal multiplexer
  
 
-  touch Change file timestamps</p>
+  touch Change file timestamps
  
 
-  top List processes running on the system</p>
+  top List processes running on the system
  
 
-  tput Set terminal-dependent capabilities, color, position</p>
+  tput Set terminal-dependent capabilities, color, position
  
 
-  traceroute Trace Route to Host</p>
+  traceroute Trace Route to Host
  
 
-  trap Execute a command when the shell receives a signal •</p>
+  trap Execute a command when the shell receives a signal •
  
 
-  tr Translate, squeeze, and/or delete characters</p>
+  tr Translate, squeeze, and/or delete characters
  
 
-  true Do nothing, successfully</p>
+  true Do nothing, successfully
  
 
-  tsort Topological sort</p>
+  tsort Topological sort
  
 
-  tty Print filename of terminal on stdin</p>
+  tty Print filename of terminal on stdin
  
 
-  type Describe a command •</p>
+  type Describe a command •
  
 
-  U &nbsp;</p>
+  U &nbsp;
  
 
-  ulimit Limit user resources •</p>
+  ulimit Limit user resources •
  
 
-  umask Users file creation mask</p>
+  umask Users file creation mask
  
 
-  umount Unmount a device</p>
+  umount Unmount a device
  
 
-  unalias Remove an alias •</p>
+  unalias Remove an alias •
  
 
-  uname Print system information</p>
+  uname Print system information
  
 
-  unexpand Convert spaces to tabs</p>
+  unexpand Convert spaces to tabs
  
 
-  uniq Uniquify files</p>
+  uniq Uniquify files
  
 
-  units Convert units from one scale to another</p>
+  units Convert units from one scale to another
  
 
-  unix2dos UNIX to Windows or MAC text file format converter</p>
+  unix2dos UNIX to Windows or MAC text file format converter
  
 
-  unrar Extract files from a rar archive</p>
+  unrar Extract files from a rar archive
  
 
-  unset Remove variable or function names</p>
+  unset Remove variable or function names
  
 
-  unshar Unpack shell archive scripts</p>
+  unshar Unpack shell archive scripts
  
 
-  until Execute commands (until error)</p>
+  until Execute commands (until error)
  
 
-  uptime Show uptime</p>
+  uptime Show uptime
  
 
-  useradd Create new user account</p>
+  useradd Create new user account
  
 
-  userdel Delete a user account</p>
+  userdel Delete a user account
  
 
-  usermod Modify user account</p>
+  usermod Modify user account
  
 
-  users List users currently logged in</p>
+  users List users currently logged in
  
 
-  uuencode Encode a binary file</p>
+  uuencode Encode a binary file
  
 
-  uudecode Decode a file created by uuencode</p>
+  uudecode Decode a file created by uuencode
  
 
-  V &nbsp;</p>
+  V &nbsp;
  
 
-  v Verbosely list directory contents ('ls -l -b')</p>
+  v Verbosely list directory contents ('ls -l -b')
  
 
-  vdir Verbosely list directory contents ('ls -l -b')</p>
+  vdir Verbosely list directory contents ('ls -l -b')
  
 
-  vi Text Editor</p>
+  vi Text Editor
  
 
-  vmstat Report virtual memory statistics</p>
+  vmstat Report virtual memory statistics
  
 
-  W &nbsp;</p>
+  W &nbsp;
  
 
-  w Show who is logged on and what they are doing</p>
+  w Show who is logged on and what they are doing
  
 
-  wait Wait for a process to complete •</p>
+  wait Wait for a process to complete •
  
 
-  watch Execute/display a program periodically</p>
+  watch Execute/display a program periodically
  
 
-  wc Print byte, word, and line counts</p>
+  wc Print byte, word, and line counts
  
 
-  whereis Search the user's $path, man pages and source files for a program</p>
+  whereis Search the user's $path, man pages and source files for a program
  
 
-  which Search the user's $path for a program file</p>
+  which Search the user's $path for a program file
  
 
-  while Execute commands</p>
+  while Execute commands
  
 
-  who Print all usernames currently logged in</p>
+  who Print all usernames currently logged in
  
 
-  whoami Print the current user id and name ('id -un')</p>
+  whoami Print the current user id and name ('id -un')
  
 
-  wget Retrieve web pages or files via HTTP, HTTPS or FTP</p>
+  wget Retrieve web pages or files via HTTP, HTTPS or FTP
  
 
-  write Send a message to another user</p>
+  write Send a message to another user
  
 
-  X &nbsp;</p>
+  X &nbsp;
  
 
-  xargs Execute utility, passing constructed argument list(s)</p>
+  xargs Execute utility, passing constructed argument list(s)
  
 
-  xdg-open Open a file or URL in the user's preferred application.</p>
+  xdg-open Open a file or URL in the user's preferred application.
  
 
-  xxd Make a hexdump or do the reverse</p>
+  xxd Make a hexdump or do the reverse
  
 
-  xz Compress or decompress .xz and .lzma files</p>
+  xz Compress or decompress .xz and .lzma files
  
 
-  yes Print a string until interrupted</p>
+  yes Print a string until interrupted
  
 
-  zip Package and compress (archive) files</p>
+  zip Package and compress (archive) files
  
 
-  . Run a command script in the current shell</p>
+  . Run a command script in the current shell
  
 
-  !! Run the last command again</p>
+  !! Run the last command again
  
 
-  ### Comment / Remark</p>
+  ### Comment / Remark
  
 
 <!-- wp:details {"showContent":true} -->
-<details class="wp-block-details" open><summary>Sources</summary>  <a href="https://ss64.com/">https://ss64.com/</a></p>
+<details class="wp-block-details" open><summary>Sources</summary>  <a href="https://ss64.com/">https://ss64.com/</a>
  
 
-  <a href="https://www.gnu.org/software/coreutils/manual/coreutils.html">https://www.gnu.org/software/coreutils/manual/coreutils.html</a></p>
+  <a href="https://www.gnu.org/software/coreutils/manual/coreutils.html">https://www.gnu.org/software/coreutils/manual/coreutils.html</a>
  </details>
 <!-- /wp:details -->

@@ -25,40 +25,40 @@ title: Arithmetic and Logical operators in C++
 url: /arithmetic-and-logical-operators-in-c/
 ---
 
-  This code snippet demonstrates various operators in C++:</p>
+  This code snippet demonstrates various operators in C++:
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Arithmetic operators: Multiplication, Division, Addition, Subtraction, Modulus</li>
+ <!-- wp:list-item -->
+- Arithmetic operators: Multiplication, Division, Addition, Subtraction, Modulus 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Increment and Decrement operators</li>
+- Increment and Decrement operators 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Assignment operator</li>
+- Assignment operator 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Comparison operators: Equal, Greater, Less, Not Equal, Greater or Equal, Less or Equal</li>
+- Comparison operators: Equal, Greater, Less, Not Equal, Greater or Equal, Less or Equal 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bitwise operators: AND, OR, XOR, NOT</li>
+- Bitwise operators: AND, OR, XOR, NOT 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Logical operators: AND, OR</li>
-<!-- /wp:list-item --></ul>
+- Logical operators: AND, OR 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  It also includes output statements to display the results of these operations.</p>
+  It also includes output statements to display the results of these operations.
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -153,13 +153,13 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
-  The provided C++ code is a simple demonstration of various operators in C++. It includes arithmetic, assignment, comparison, logical, and bitwise operators.</p>
+  The provided C++ code is a simple demonstration of various operators in C++. It includes arithmetic, assignment, comparison, logical, and bitwise operators.
  
 
-  The code begins by declaring two integer variables, <code>num1</code> and <code>num2</code>, with values 10 and 5 respectively.</p>
+  The code begins by declaring two integer variables, <code>num1</code> and <code>num2</code>, with values 10 and 5 respectively.
  
 
 <!-- wp:code -->
@@ -167,7 +167,7 @@ int main() {
 int num2 = 5;</code></pre>
 <!-- /wp:code -->
 
-  The arithmetic operators are then demonstrated. These include multiplication (<code>*</code>), division (<code>/</code>), addition (<code>+</code>), subtraction (<code>-</code>), and modulus (<code>%</code>). The results of these operations are printed to the console.</p>
+  The arithmetic operators are then demonstrated. These include multiplication (<code>*</code>), division (<code>/</code>), addition (<code>+</code>), subtraction (<code>-</code>), and modulus (<code>%</code>). The results of these operations are printed to the console.
  
 
 <!-- wp:code -->
@@ -175,7 +175,7 @@ int num2 = 5;</code></pre>
 cout &lt;&lt; "Division: " &lt;&lt; num1 / num2 &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The increment (<code>++</code>) and decrement (<code>--</code>) operators are demonstrated next. The variable <code>result</code> is incremented and decremented, and the results are printed to the console.</p>
+  The increment (<code>++</code>) and decrement (<code>--</code>) operators are demonstrated next. The variable <code>result</code> is incremented and decremented, and the results are printed to the console.
  
 
 <!-- wp:code -->
@@ -183,7 +183,7 @@ cout &lt;&lt; "Division: " &lt;&lt; num1 / num2 &lt;&lt; endl;</code></pre>
 cout &lt;&lt; "After increment: " &lt;&lt; result &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The assignment operator (<code>=</code>) is used to assign the value of <code>num1</code> to <code>result</code>.</p>
+  The assignment operator (<code>=</code>) is used to assign the value of <code>num1</code> to <code>result</code>.
  
 
 <!-- wp:code -->
@@ -191,7 +191,7 @@ cout &lt;&lt; "After increment: " &lt;&lt; result &lt;&lt; endl;</code></pre>
 cout &lt;&lt; "Assignment: " &lt;&lt; result &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The comparison operators (<code>==</code>, <code>&gt;</code>, <code>&lt;</code>, <code>!=</code>, <code>&gt;=</code>, <code>&lt;=</code>) are used to compare <code>num1</code> and <code>num2</code>. The results of these comparisons are printed to the console.</p>
+  The comparison operators (<code>==</code>, <code>&gt;</code>, <code>&lt;</code>, <code>!=</code>, <code>&gt;=</code>, <code>&lt;=</code>) are used to compare <code>num1</code> and <code>num2</code>. The results of these comparisons are printed to the console.
  
 
 <!-- wp:code -->
@@ -200,25 +200,25 @@ cout &lt;&lt; "Assignment: " &lt;&lt; result &lt;&lt; endl;</code></pre>
 }</code></pre>
 <!-- /wp:code -->
 
-  The bitwise operators (<code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code>) are used to perform bitwise operations on <code>num1</code> and <code>num2</code>. The results of these operations are printed to the console.</p>
+  The bitwise operators (<code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code>) are used to perform bitwise operations on <code>num1</code> and <code>num2</code>. The results of these operations are printed to the console.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">cout &lt;&lt; "Bitwise AND: " &lt;&lt; (num1 &amp; num2) &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  Finally, the logical operators (<code>&amp;&amp;</code>, <code>||</code>) are used to perform logical operations on <code>num1</code> and <code>num2</code>. The results of these operations are printed to the console.</p>
+  Finally, the logical operators (<code>&amp;&amp;</code>, <code>||</code>) are used to perform logical operations on <code>num1</code> and <code>num2</code>. The results of these operations are printed to the console.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">cout &lt;&lt; "Logical AND: " &lt;&lt; (num1 &amp;&amp; num2) &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  In summary, this code provides a comprehensive demonstration of the various operators available in C++.</p>
+  In summary, this code provides a comprehensive demonstration of the various operators available in C++.
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -24,7 +24,7 @@
   <meta itemprop="description" content="The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering. It provides an efficient way to compute the Discrete Fourier Transform (DFT) of a sequence, reducing the computational complexity from O(N^2) to O(N log N), where N is the number of points in the sequence. This blog post will delve into implementing the FFT algorithm, exploring its principles, variants, and practical considerations.">
   <meta itemprop="datePublished" content="2024-10-09T12:36:01+00:00">
   <meta itemprop="dateModified" content="2024-10-09T12:36:01+00:00">
-  <meta itemprop="wordCount" content="1260">
+  <meta itemprop="wordCount" content="1276">
   <meta itemprop="keywords" content="Computer Engineering,Digital Logic Design,Fast Fourier Transform,Fft">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="FFT (Fast Fourier Transform) Implementation: A Comprehensive Guide">
@@ -4239,51 +4239,51 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#understanding-the-fourier-transformh2"
+                href="#understanding-the-fourier-transform"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Understanding the Fourier Transform&lt;/h2&gt;</a>
+              >Understanding the Fourier Transform</a>
             </li>
           <li>
               <a
-                href="#the-fast-fourier-transform-ffth2"
+                href="#the-fast-fourier-transform-fft"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >The Fast Fourier Transform (FFT)&lt;/h2&gt;</a>
+              >The Fast Fourier Transform (FFT)</a>
             </li>
           <li>
               <a
-                href="#implementing-the-ffth2"
+                href="#implementing-the-fft"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Implementing the FFT&lt;/h2&gt;</a>
+              >Implementing the FFT</a>
             </li>
           <li>
               <a
-                href="#practical-considerations-and-optimizationsh2"
+                href="#practical-considerations-and-optimizations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Practical Considerations and Optimizations&lt;/h2&gt;</a>
+              >Practical Considerations and Optimizations</a>
             </li>
           <li>
               <a
-                href="#variants-and-extensions-of-ffth2"
+                href="#variants-and-extensions-of-fft"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Variants and Extensions of FFT&lt;/h2&gt;</a>
+              >Variants and Extensions of FFT</a>
             </li>
           <li>
               <a
-                href="#applications-of-ffth2"
+                href="#applications-of-fft"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Applications of FFT&lt;/h2&gt;</a>
+              >Applications of FFT</a>
             </li>
           <li>
               <a
-                href="#performance-considerationsh2"
+                href="#performance-considerations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Performance Considerations&lt;/h2&gt;</a>
+              >Performance Considerations</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9694,79 +9694,79 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-the-fourier-transformh2">Understanding the Fourier Transform
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-the-fourier-transform">Understanding the Fourier Transform
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#fourier-transformh3">Fourier Transform
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#fourier-transform">Fourier Transform
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#discrete-fourier-transform-dfth3">Discrete Fourier Transform (DFT)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#discrete-fourier-transform-dft">Discrete Fourier Transform (DFT)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-fast-fourier-transform-ffth2">The Fast Fourier Transform (FFT)
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-fast-fourier-transform-fft">The Fast Fourier Transform (FFT)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#principles-of-the-cooley-tukey-fft-algorithmh3">Principles of the Cooley-Tukey FFT Algorithm
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#principles-of-the-cooley-tukey-fft-algorithm">Principles of the Cooley-Tukey FFT Algorithm
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-the-ffth2">Implementing the FFT
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-the-fft">Implementing the FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#practical-considerations-and-optimizationsh2">Practical Considerations and Optimizations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#practical-considerations-and-optimizations">Practical Considerations and Optimizations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-in-place-computationh3">1. In-place Computation
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-in-place-computation">1. In-place Computation
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-bit-reversal-permutationh3">2. Bit-reversal Permutation
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-bit-reversal-permutation">2. Bit-reversal Permutation
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-using-lookup-tables-for-twiddle-factorsh3">3. Using Lookup Tables for Twiddle Factors
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-using-lookup-tables-for-twiddle-factors">3. Using Lookup Tables for Twiddle Factors
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-avoiding-recursive-callsh3">4. Avoiding Recursive Calls
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-avoiding-recursive-calls">4. Avoiding Recursive Calls
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#variants-and-extensions-of-ffth2">Variants and Extensions of FFT
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#variants-and-extensions-of-fft">Variants and Extensions of FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-radix-4-and-split-radix-ffth3">1. Radix-4 and Split-Radix FFT
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-radix-4-and-split-radix-fft">1. Radix-4 and Split-Radix FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-real-valued-ffth3">2. Real-valued FFT
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-real-valued-fft">2. Real-valued FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-parallel-and-distributed-ffth3">3. Parallel and Distributed FFT
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-parallel-and-distributed-fft">3. Parallel and Distributed FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-pruned-ffth3">4. Pruned FFT
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-pruned-fft">4. Pruned FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-ffth2">Applications of FFT
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-fft">Applications of FFT
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#performance-considerationsh2">Performance Considerations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#performance-considerations">Performance Considerations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9800,55 +9800,62 @@
                 </a></div>
         <div class="content">
           <p>The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering. It provides an efficient way to compute the Discrete Fourier Transform (DFT) of a sequence, reducing the computational complexity from O(N^2) to O(N log N), where N is the number of points in the sequence. This blog post will delve into implementing the FFT algorithm, exploring its principles, variants, and practical considerations.</p>
-<h2>Understanding the Fourier Transform</h2><span class="hx-absolute -hx-mt-20" id="understanding-the-fourier-transformh2"></span>
-    <a href="#understanding-the-fourier-transformh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Understanding the Fourier Transform<span class="hx-absolute -hx-mt-20" id="understanding-the-fourier-transform"></span>
+    <a href="#understanding-the-fourier-transform" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Before we dive into the FFT implementation, let&rsquo;s briefly review the Fourier Transform and its discrete counterpart.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Fourier Transform</h3><span class="hx-absolute -hx-mt-20" id="fourier-transformh3"></span>
-    <a href="#fourier-transformh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Fourier Transform<span class="hx-absolute -hx-mt-20" id="fourier-transform"></span>
+    <a href="#fourier-transform" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The Fourier Transform is a mathematical tool that decomposes a function of time (a signal) into its constituent frequencies. It transforms a signal from the time domain to the frequency domain, allowing us to analyze its frequency content.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Discrete Fourier Transform (DFT)</h3><span class="hx-absolute -hx-mt-20" id="discrete-fourier-transform-dfth3"></span>
-    <a href="#discrete-fourier-transform-dfth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Discrete Fourier Transform (DFT)<span class="hx-absolute -hx-mt-20" id="discrete-fourier-transform-dft"></span>
+    <a href="#discrete-fourier-transform-dft" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The DFT is the discrete equivalent of the Fourier Transform, applicable to sampled signals. For a sequence x[n] of length N, the DFT is defined as:</p>
 <p>X[k] = Σ(n=0 to N-1) x[n] * e^(-j2πkn/N)</p>
 <p>Where:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>X[k] is the kth frequency component</li>
+- X[k] is the kth frequency component 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>x[n] is the nth time sample</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>N is the number of samples</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>j is the imaginary unit</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>The direct computation of the DFT requires N^2 complex multiplications, which becomes computationally expensive for large N.</p>
-<h2>The Fast Fourier Transform (FFT)</h2><span class="hx-absolute -hx-mt-20" id="the-fast-fourier-transform-ffth2"></span>
-    <a href="#the-fast-fourier-transform-ffth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>The Fast Fourier Transform (FFT)<span class="hx-absolute -hx-mt-20" id="the-fast-fourier-transform-fft"></span>
+    <a href="#the-fast-fourier-transform-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>The FFT is an algorithm for computing the DFT more efficiently. The most common FFT algorithm is the Cooley-Tukey algorithm, particularly its radix-2 variant.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Principles of the Cooley-Tukey FFT Algorithm</h3><span class="hx-absolute -hx-mt-20" id="principles-of-the-cooley-tukey-fft-algorithmh3"></span>
-    <a href="#principles-of-the-cooley-tukey-fft-algorithmh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Principles of the Cooley-Tukey FFT Algorithm<span class="hx-absolute -hx-mt-20" id="principles-of-the-cooley-tukey-fft-algorithm"></span>
+    <a href="#principles-of-the-cooley-tukey-fft-algorithm" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The Cooley-Tukey algorithm is based on the divide-and-conquer approach. It recursively divides the DFT of size N into two interleaved DFTs of size N/2. This process continues until we reach DFTs of size 2, which are trivial to compute.</p>
 <p>The key ideas behind the FFT are:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Exploiting symmetry and periodicity of the complex exponential (twiddle factors).</li>
+- Exploiting symmetry and periodicity of the complex exponential (twiddle factors). 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Recursively breaking down the problem into smaller subproblems.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Reusing intermediate results to avoid redundant calculations.</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Implementing the FFT</h2><span class="hx-absolute -hx-mt-20" id="implementing-the-ffth2"></span>
-    <a href="#implementing-the-ffth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Implementing the FFT<span class="hx-absolute -hx-mt-20" id="implementing-the-fft"></span>
+    <a href="#implementing-the-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Let&rsquo;s look at a basic implementation of the radix-2 Cooley-Tukey FFT algorithm in Python:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="python" class="language-python">import numpy as np
@@ -9867,36 +9874,38 @@ def fft(x):
 <p>This recursive implementation demonstrates the core idea of the FFT algorithm:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>The base case is when the input length is 1 or less.</li>
+- The base case is when the input length is 1 or less. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>For longer sequences, we split the input into even and odd indices.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>We recursively compute the FFT of these subsequences.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>We combine the results using the twiddle factors (complex exponentials).</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>While this implementation is clear and demonstrates the principle, it&rsquo;s not the most efficient in practice. Let&rsquo;s explore some practical considerations and optimizations.</p>
-<h2>Practical Considerations and Optimizations</h2><span class="hx-absolute -hx-mt-20" id="practical-considerations-and-optimizationsh2"></span>
-    <a href="#practical-considerations-and-optimizationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. In-place Computation</h3><span class="hx-absolute -hx-mt-20" id="1-in-place-computationh3"></span>
-    <a href="#1-in-place-computationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Practical Considerations and Optimizations<span class="hx-absolute -hx-mt-20" id="practical-considerations-and-optimizations"></span>
+    <a href="#practical-considerations-and-optimizations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. In-place Computation<span class="hx-absolute -hx-mt-20" id="1-in-place-computation"></span>
+    <a href="#1-in-place-computation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>To save memory, especially for large inputs, we can implement the FFT in place, modifying the input array directly instead of creating new arrays at each recursive step.</p>
-<!-- wp:heading {"level":3} -->
-<h3>2. Bit-reversal Permutation</h3><span class="hx-absolute -hx-mt-20" id="2-bit-reversal-permutationh3"></span>
-    <a href="#2-bit-reversal-permutationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Bit-reversal Permutation<span class="hx-absolute -hx-mt-20" id="2-bit-reversal-permutation"></span>
+    <a href="#2-bit-reversal-permutation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>The divide-and-conquer approach of the FFT algorithm naturally leads to a bit-reversed order of the output. Implementing an efficient bit-reversal permutation can improve the overall performance.</p>
-<!-- wp:heading {"level":3} -->
-<h3>3. Using Lookup Tables for Twiddle Factors</h3><span class="hx-absolute -hx-mt-20" id="3-using-lookup-tables-for-twiddle-factorsh3"></span>
-    <a href="#3-using-lookup-tables-for-twiddle-factorsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Using Lookup Tables for Twiddle Factors<span class="hx-absolute -hx-mt-20" id="3-using-lookup-tables-for-twiddle-factors"></span>
+    <a href="#3-using-lookup-tables-for-twiddle-factors" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Computing complex exponentials is expensive. We can pre-compute and store the twiddle factors in a lookup table to save computation time.</p>
-<!-- wp:heading {"level":3} -->
-<h3>4. Avoiding Recursive Calls</h3><span class="hx-absolute -hx-mt-20" id="4-avoiding-recursive-callsh3"></span>
-    <a href="#4-avoiding-recursive-callsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Avoiding Recursive Calls<span class="hx-absolute -hx-mt-20" id="4-avoiding-recursive-calls"></span>
+    <a href="#4-avoiding-recursive-calls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>While the recursive implementation is intuitive, an iterative implementation can be more efficient, avoiding the overhead of function calls.</p>
 <p>Here&rsquo;s an optimized, in-place, iterative implementation of the FFT:</p>
 <!-- wp:code -->
@@ -9933,78 +9942,96 @@ def fft_optimized(x):
 <p>This implementation includes several optimizations:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>It uses bit-reversal permutation at the beginning to reorder the input.</li>
+- It uses bit-reversal permutation at the beginning to reorder the input. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>It performs the computation in place, modifying the input array directly.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>It uses an iterative approach, avoiding the overhead of recursive function calls.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>It computes twiddle factors on the fly, which can be further optimized by using a pre-computed lookup table for larger FFTs.</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Variants and Extensions of FFT</h2><span class="hx-absolute -hx-mt-20" id="variants-and-extensions-of-ffth2"></span>
-    <a href="#variants-and-extensions-of-ffth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Radix-4 and Split-Radix FFT</h3><span class="hx-absolute -hx-mt-20" id="1-radix-4-and-split-radix-ffth3"></span>
-    <a href="#1-radix-4-and-split-radix-ffth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Variants and Extensions of FFT<span class="hx-absolute -hx-mt-20" id="variants-and-extensions-of-fft"></span>
+    <a href="#variants-and-extensions-of-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Radix-4 and Split-Radix FFT<span class="hx-absolute -hx-mt-20" id="1-radix-4-and-split-radix-fft"></span>
+    <a href="#1-radix-4-and-split-radix-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>While we&rsquo;ve focused on the radix-2 algorithm, other variants like radix-4 and split-radix can offer better performance in certain scenarios. The split-radix FFT, in particular, is known for its efficiency in software implementations.</p>
-<!-- wp:heading {"level":3} -->
-<h3>2. Real-valued FFT</h3><span class="hx-absolute -hx-mt-20" id="2-real-valued-ffth3"></span>
-    <a href="#2-real-valued-ffth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Real-valued FFT<span class="hx-absolute -hx-mt-20" id="2-real-valued-fft"></span>
+    <a href="#2-real-valued-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>When the input signal is real-valued (as is often the case in practical applications), we can exploit this property to almost halve the computation time and storage requirements.</p>
-<!-- wp:heading {"level":3} -->
-<h3>3. Parallel and Distributed FFT</h3><span class="hx-absolute -hx-mt-20" id="3-parallel-and-distributed-ffth3"></span>
-    <a href="#3-parallel-and-distributed-ffth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Parallel and Distributed FFT<span class="hx-absolute -hx-mt-20" id="3-parallel-and-distributed-fft"></span>
+    <a href="#3-parallel-and-distributed-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>For very large FFTs or when high performance is crucial, parallel implementations of the FFT can be used. These algorithms distribute the computation across multiple processors or even multiple computers in a network.</p>
-<!-- wp:heading {"level":3} -->
-<h3>4. Pruned FFT</h3><span class="hx-absolute -hx-mt-20" id="4-pruned-ffth3"></span>
-    <a href="#4-pruned-ffth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Pruned FFT<span class="hx-absolute -hx-mt-20" id="4-pruned-fft"></span>
+    <a href="#4-pruned-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>In some applications, we only need a subset of the output frequencies or have some zero-valued inputs. Pruned FFT algorithms can optimize for these cases, skipping unnecessary computations.</p>
-<h2>Applications of FFT</h2><span class="hx-absolute -hx-mt-20" id="applications-of-ffth2"></span>
-    <a href="#applications-of-ffth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Applications of FFT<span class="hx-absolute -hx-mt-20" id="applications-of-fft"></span>
+    <a href="#applications-of-fft" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>The FFT has a wide range of applications across various fields:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Signal Processing</strong>: Analyzing frequency content of signals, filtering, and compression.</li>
+- ***Signal Processing*** : Analyzing frequency content of signals, filtering, and compression. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Audio Processing</strong>: Spectral analysis, noise reduction, and audio effects.</li>
+<ul>
+<li><em><strong>Audio Processing</strong></em> : Spectral analysis, noise reduction, and audio effects.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Image Processing</strong>: Image filtering, compression (e.g., JPEG), and feature extraction.</li>
+<ul>
+<li><em><strong>Image Processing</strong></em> : Image filtering, compression (e.g., JPEG), and feature extraction.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Communications</strong>: Modulation and demodulation in systems like OFDM used in Wi-Fi and 4G/5G.</li>
+<ul>
+<li><em><strong>Communications</strong></em> : Modulation and demodulation in systems like OFDM used in Wi-Fi and 4G/5G.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Scientific Computing</strong>: Solving partial differential equations and fast multiplication of large integers.</li>
+<ul>
+<li><em><strong>Scientific Computing</strong></em> : Solving partial differential equations and fast multiplication of large integers.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Data Analysis</strong>: Identifying periodicities in time series data.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Data Analysis</strong></em> : Identifying periodicities in time series data.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Performance Considerations</h2><span class="hx-absolute -hx-mt-20" id="performance-considerationsh2"></span>
-    <a href="#performance-considerationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Performance Considerations<span class="hx-absolute -hx-mt-20" id="performance-considerations"></span>
+    <a href="#performance-considerations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>When implementing or using FFT algorithms, several factors can affect performance:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Input Size</strong>: FFTs work most efficiently when N is a power of 2. If necessary, the input can be zero-padded to the next power of 2.</li>
+- ***Input Size*** : FFTs work most efficiently when N is a power of 2. If necessary, the input can be zero-padded to the next power of 2. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Memory Access Patterns</strong>: Efficient cache usage is crucial for performance, especially for large FFTs.</li>
+<ul>
+<li><em><strong>Memory Access Patterns</strong></em> : Efficient cache usage is crucial for performance, especially for large FFTs.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Numerical Precision</strong>: The choice between single and double precision can affect both accuracy and speed.</li>
+<ul>
+<li><em><strong>Numerical Precision</strong></em> : The choice between single and double precision can affect both accuracy and speed.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Specialized Hardware</strong>: Many modern processors include specialized instructions for FFT computations. Libraries like FFTW can automatically select the best implementation for the given hardware.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Specialized Hardware</strong></em> : Many modern processors include specialized instructions for FFT computations. Libraries like FFTW can automatically select the best implementation for the given hardware.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>The Fast Fourier Transform is a cornerstone algorithm in digital signal processing and many other fields. Its efficient implementation has enabled countless applications and continues to be an area of active research and optimization.</p>
 <p>While we&rsquo;ve explored the basic principles and optimized implementation of the FFT, it&rsquo;s worth noting that for most practical applications, using a well-optimized library like FFTW, numpy.fft, or hardware-specific implementations is often the best choice. These libraries incorporate years of optimization work and can automatically choose the best algorithm and implementation for your specific hardware and input size.</p>
 <p>Understanding the principles behind the FFT, however, is crucial for effectively using these tools and for developing custom implementations when needed. Whether you&rsquo;re processing audio signals, analyzing scientific data, or developing communications systems, a solid grasp of FFT implementation will serve you well in leveraging this powerful algorithm.</p>

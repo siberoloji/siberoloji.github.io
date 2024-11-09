@@ -33,21 +33,21 @@ url: /fft-fast-fourier-transform-implementation-a-comprehensive-guide/
  
 
  
- ## Understanding the Fourier Transform</h2>
+ ## Understanding the Fourier Transform
 <!-- /wp:heading -->
 
   Before we dive into the FFT implementation, let's briefly review the Fourier Transform and its discrete counterpart. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Fourier Transform</h3>
+
+ ### Fourier Transform
 <!-- /wp:heading -->
 
   The Fourier Transform is a mathematical tool that decomposes a function of time (a signal) into its constituent frequencies. It transforms a signal from the time domain to the frequency domain, allowing us to analyze its frequency content. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Discrete Fourier Transform (DFT)</h3>
+
+ ### Discrete Fourier Transform (DFT)
 <!-- /wp:heading -->
 
   The DFT is the discrete equivalent of the Fourier Transform, applicable to sampled signals. For a sequence x[n] of length N, the DFT is defined as: 
@@ -61,34 +61,34 @@ url: /fft-fast-fourier-transform-implementation-a-comprehensive-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>X[k] is the kth frequency component</li>
+- X[k] is the kth frequency component 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>x[n] is the nth time sample</li>
+- x[n] is the nth time sample 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>N is the number of samples</li>
+- N is the number of samples 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>j is the imaginary unit</li>
-<!-- /wp:list-item --></ul>
+- j is the imaginary unit 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The direct computation of the DFT requires N^2 complex multiplications, which becomes computationally expensive for large N. 
  
 
  
- ## The Fast Fourier Transform (FFT)</h2>
+ ## The Fast Fourier Transform (FFT)
 <!-- /wp:heading -->
 
   The FFT is an algorithm for computing the DFT more efficiently. The most common FFT algorithm is the Cooley-Tukey algorithm, particularly its radix-2 variant. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Principles of the Cooley-Tukey FFT Algorithm</h3>
+
+ ### Principles of the Cooley-Tukey FFT Algorithm
 <!-- /wp:heading -->
 
   The Cooley-Tukey algorithm is based on the divide-and-conquer approach. It recursively divides the DFT of size N into two interleaved DFTs of size N/2. This process continues until we reach DFTs of size 2, which are trivial to compute. 
@@ -99,20 +99,20 @@ url: /fft-fast-fourier-transform-implementation-a-comprehensive-guide/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Exploiting symmetry and periodicity of the complex exponential (twiddle factors).</li>
+- Exploiting symmetry and periodicity of the complex exponential (twiddle factors). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Recursively breaking down the problem into smaller subproblems.</li>
+- Recursively breaking down the problem into smaller subproblems. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reusing intermediate results to avoid redundant calculations.</li>
-<!-- /wp:list-item --></ol>
+- Reusing intermediate results to avoid redundant calculations. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Implementing the FFT</h2>
+ ## Implementing the FFT
 <!-- /wp:heading -->
 
   Let's look at a basic implementation of the radix-2 Cooley-Tukey FFT algorithm in Python: 
@@ -138,52 +138,52 @@ def fft(x):
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>The base case is when the input length is 1 or less.</li>
+- The base case is when the input length is 1 or less. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>For longer sequences, we split the input into even and odd indices.</li>
+- For longer sequences, we split the input into even and odd indices. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>We recursively compute the FFT of these subsequences.</li>
+- We recursively compute the FFT of these subsequences. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>We combine the results using the twiddle factors (complex exponentials).</li>
-<!-- /wp:list-item --></ol>
+- We combine the results using the twiddle factors (complex exponentials). 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   While this implementation is clear and demonstrates the principle, it's not the most efficient in practice. Let's explore some practical considerations and optimizations. 
  
 
  
- ## Practical Considerations and Optimizations</h2>
+ ## Practical Considerations and Optimizations
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. In-place Computation</h3>
+
+ ### 1. In-place Computation
 <!-- /wp:heading -->
 
   To save memory, especially for large inputs, we can implement the FFT in place, modifying the input array directly instead of creating new arrays at each recursive step. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Bit-reversal Permutation</h3>
+
+ ### 2. Bit-reversal Permutation
 <!-- /wp:heading -->
 
   The divide-and-conquer approach of the FFT algorithm naturally leads to a bit-reversed order of the output. Implementing an efficient bit-reversal permutation can improve the overall performance. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Using Lookup Tables for Twiddle Factors</h3>
+
+ ### 3. Using Lookup Tables for Twiddle Factors
 <!-- /wp:heading -->
 
   Computing complex exponentials is expensive. We can pre-compute and store the twiddle factors in a lookup table to save computation time. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Avoiding Recursive Calls</h3>
+
+ ### 4. Avoiding Recursive Calls
 <!-- /wp:heading -->
 
   While the recursive implementation is intuitive, an iterative implementation can be more efficient, avoiding the overhead of function calls. 
@@ -229,56 +229,56 @@ def fft_optimized(x):
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>It uses bit-reversal permutation at the beginning to reorder the input.</li>
+- It uses bit-reversal permutation at the beginning to reorder the input. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>It performs the computation in place, modifying the input array directly.</li>
+- It performs the computation in place, modifying the input array directly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>It uses an iterative approach, avoiding the overhead of recursive function calls.</li>
+- It uses an iterative approach, avoiding the overhead of recursive function calls. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>It computes twiddle factors on the fly, which can be further optimized by using a pre-computed lookup table for larger FFTs.</li>
-<!-- /wp:list-item --></ol>
+- It computes twiddle factors on the fly, which can be further optimized by using a pre-computed lookup table for larger FFTs. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Variants and Extensions of FFT</h2>
+ ## Variants and Extensions of FFT
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Radix-4 and Split-Radix FFT</h3>
+
+ ### 1. Radix-4 and Split-Radix FFT
 <!-- /wp:heading -->
 
   While we've focused on the radix-2 algorithm, other variants like radix-4 and split-radix can offer better performance in certain scenarios. The split-radix FFT, in particular, is known for its efficiency in software implementations. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Real-valued FFT</h3>
+
+ ### 2. Real-valued FFT
 <!-- /wp:heading -->
 
   When the input signal is real-valued (as is often the case in practical applications), we can exploit this property to almost halve the computation time and storage requirements. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Parallel and Distributed FFT</h3>
+
+ ### 3. Parallel and Distributed FFT
 <!-- /wp:heading -->
 
   For very large FFTs or when high performance is crucial, parallel implementations of the FFT can be used. These algorithms distribute the computation across multiple processors or even multiple computers in a network. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Pruned FFT</h3>
+
+ ### 4. Pruned FFT
 <!-- /wp:heading -->
 
   In some applications, we only need a subset of the output frequencies or have some zero-valued inputs. Pruned FFT algorithms can optimize for these cases, skipping unnecessary computations. 
  
 
  
- ## Applications of FFT</h2>
+ ## Applications of FFT
 <!-- /wp:heading -->
 
   The FFT has a wide range of applications across various fields: 
@@ -286,32 +286,32 @@ def fft_optimized(x):
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Signal Processing</strong>: Analyzing frequency content of signals, filtering, and compression.</li>
+- ***Signal Processing*** : Analyzing frequency content of signals, filtering, and compression. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Audio Processing</strong>: Spectral analysis, noise reduction, and audio effects.</li>
+- ***Audio Processing*** : Spectral analysis, noise reduction, and audio effects. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Image Processing</strong>: Image filtering, compression (e.g., JPEG), and feature extraction.</li>
+- ***Image Processing*** : Image filtering, compression (e.g., JPEG), and feature extraction. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Communications</strong>: Modulation and demodulation in systems like OFDM used in Wi-Fi and 4G/5G.</li>
+- ***Communications*** : Modulation and demodulation in systems like OFDM used in Wi-Fi and 4G/5G. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Scientific Computing</strong>: Solving partial differential equations and fast multiplication of large integers.</li>
+- ***Scientific Computing*** : Solving partial differential equations and fast multiplication of large integers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Data Analysis</strong>: Identifying periodicities in time series data.</li>
-<!-- /wp:list-item --></ol>
+- ***Data Analysis*** : Identifying periodicities in time series data. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Performance Considerations</h2>
+ ## Performance Considerations
 <!-- /wp:heading -->
 
   When implementing or using FFT algorithms, several factors can affect performance: 
@@ -319,24 +319,24 @@ def fft_optimized(x):
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Input Size</strong>: FFTs work most efficiently when N is a power of 2. If necessary, the input can be zero-padded to the next power of 2.</li>
+- ***Input Size*** : FFTs work most efficiently when N is a power of 2. If necessary, the input can be zero-padded to the next power of 2. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Memory Access Patterns</strong>: Efficient cache usage is crucial for performance, especially for large FFTs.</li>
+- ***Memory Access Patterns*** : Efficient cache usage is crucial for performance, especially for large FFTs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Numerical Precision</strong>: The choice between single and double precision can affect both accuracy and speed.</li>
+- ***Numerical Precision*** : The choice between single and double precision can affect both accuracy and speed. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Specialized Hardware</strong>: Many modern processors include specialized instructions for FFT computations. Libraries like FFTW can automatically select the best implementation for the given hardware.</li>
-<!-- /wp:list-item --></ol>
+- ***Specialized Hardware*** : Many modern processors include specialized instructions for FFT computations. Libraries like FFTW can automatically select the best implementation for the given hardware. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   The Fast Fourier Transform is a cornerstone algorithm in digital signal processing and many other fields. Its efficient implementation has enabled countless applications and continues to be an area of active research and optimization. 

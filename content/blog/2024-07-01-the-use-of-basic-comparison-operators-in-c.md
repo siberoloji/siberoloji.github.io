@@ -29,7 +29,7 @@ url: /the-use-of-basic-comparison-operators-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -104,7 +104,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a simple console application that demonstrates the use of basic comparison operators in C++. It does so by initializing two integer variables, <code>x</code> and <code>y</code>, and then comparing them using different operators. 
@@ -151,7 +151,7 @@ if (x != y) {
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

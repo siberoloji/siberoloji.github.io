@@ -34,22 +34,22 @@ url: /tr/ubuntu-alias-kisaltma-tanimlama/
   Alias kullanımı, komut satırında yaptığınız işlemleri çok hızlı olarak hayata geçirmenize yardımcı olur. Bir kaç harfle tanımladığınız kısaltma, çok uzun bir komutu ekrana getirir ve derhal işleme koyar. 
  
 
-  <strong>NOT</strong>:Kalıcı kullanım esnasında ilk defa oluşturulan bash_aliases dosyasını, daha sonra tekrar oluşturmaya gerek yoktur. Home klasöründe ve gizli halde bulunan bu dosyayı herhangi bir editör ile açarak düzenleyebilirsiniz. 
+  ***NOT*** :Kalıcı kullanım esnasında ilk defa oluşturulan bash_aliases dosyasını, daha sonra tekrar oluşturmaya gerek yoktur. Home klasöründe ve gizli halde bulunan bu dosyayı herhangi bir editör ile açarak düzenleyebilirsiniz. 
  
 
   Bu videoda kullanılan komutları aşağıdan kopyalayıp kullanabilirsiniz. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Alias geçici kullanım</h3>
+
+ ### Alias geçici kullanım
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">alias lsa='ls -al'</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Alias kalıcı kullanım</h3>
+
+ ### Alias kalıcı kullanım
 <!-- /wp:heading -->
 
 <!-- wp:code -->

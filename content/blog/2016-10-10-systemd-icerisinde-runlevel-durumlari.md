@@ -31,37 +31,37 @@ title: Systemd İçerisinde Runlevel Durumları
 url: /tr/systemd-icerisinde-runlevel-durumlari/
 ---
 
- <p>Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız "Nasıl yapılır?" dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de <a href="https://siberoloji.com" target="_blank" rel="noreferrer noopener">siberoloji.com</a> olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.</p>
+ <p>Linux işletim sistemlerinin bir çoğu systemd kullanımına başladılar. Systemd kullanımına başlanmasıyla birlikte, internette yapacağınız aramalarda bulacağınız "Nasıl yapılır?" dokümanlarının bir kısmı da doğal olarak güncelliği kaybetti. Bulacağınız çözümlerin bir kısmı doğru çalışabilir. Fakat diğer kısmında da hatalar almanız ve istediğiniz sonuca ulaşamama ihtimaliniz bulunuyor. Bu konuda yabancı dillerde çözümler üretiliyor. Biz de <a href="https://siberoloji.com" target="_blank" rel="noreferrer noopener">siberoloji.com</a> olarak Türkçe kaynak oluşturmak adına bir takım dokümanlar hazırlamak istedik.
  
 
- <p>Bu yazımızda, önceden sysV init olarak bilinen yapıda bulunan çalışma seviyelerinin systemd ile birlikte nasıl değiştiğini açıklayacağız. Aşağıdaki tabloda, çalışma seviyelerinin init ve systemd içerisinde nasıl isimlendirildiğini görebilirsiniz.</p>
+ <p>Bu yazımızda, önceden sysV init olarak bilinen yapıda bulunan çalışma seviyelerinin systemd ile birlikte nasıl değiştiğini açıklayacağız. Aşağıdaki tabloda, çalışma seviyelerinin init ve systemd içerisinde nasıl isimlendirildiğini görebilirsiniz.
  
 
- <p>Runlevel Target<br>0 poweroff.target<br>1 rescue.target<br>2,3,4 multi-user.target<br>5 graphical.target<br>6 reboot.target</p>
+ <p>Runlevel Target<br>0 poweroff.target<br>1 rescue.target<br>2,3,4 multi-user.target<br>5 graphical.target<br>6 reboot.target
  
 
- <p>Tablodan da göreceğiniz gibi, init içerisinde çalışma seviyesi (runlevel) olarak adlandırılan kademeler systemd ile birlikte hedef (target) olarak ifade edilmeye başlamıştır. Komutlarda İngilizce yazımı kullanmanız gereken hedefleri şimdi tek tek açıklayalım.</p>
+ <p>Tablodan da göreceğiniz gibi, init içerisinde çalışma seviyesi (runlevel) olarak adlandırılan kademeler systemd ile birlikte hedef (target) olarak ifade edilmeye başlamıştır. Komutlarda İngilizce yazımı kullanmanız gereken hedefleri şimdi tek tek açıklayalım.
  
 
- <p><strong>poweroff.target</strong>: Sistemi, tüm servisleri durdurarak kapanma durumuna getirir.</p>
+ <p>***poweroff.target*** : Sistemi, tüm servisleri durdurarak kapanma durumuna getirir.
  
 
- <p><strong>rescue.target</strong>: Sistemi, yönetimsel işlemler için tek kullanıcı moduna getirir. Dosya ve disklere erişim ile bazı temel servisler çalışmaya devam eder.</p>
+ <p>***rescue.target*** : Sistemi, yönetimsel işlemler için tek kullanıcı moduna getirir. Dosya ve disklere erişim ile bazı temel servisler çalışmaya devam eder.
  
 
- <p><strong>multi-user.target</strong>: Text modunu ifade eder. Grafik arayüz olmadan çok kullanıcının oturum açabileceği durumdur.</p>
+ <p>***multi-user.target*** : Text modunu ifade eder. Grafik arayüz olmadan çok kullanıcının oturum açabileceği durumdur.
  
 
- <p><strong>graphical.target</strong>: Sistemi, görüntü yöneticisinin de çalıştığı konuma getirmeyi ifade eder.</p>
+ <p>***graphical.target*** : Sistemi, görüntü yöneticisinin de çalıştığı konuma getirmeyi ifade eder.
  
 
- <p><strong>reboot.target</strong>: Sistemi, tüm servisleri durdurarak kapatmayı ve tekrar başlatmayı ifade eder.</p>
+ <p>***reboot.target*** : Sistemi, tüm servisleri durdurarak kapatmayı ve tekrar başlatmayı ifade eder.
  
 
- <p>Yukarıda bahsedilen çalışma seviyeleri için ortak bir kriter bulunmaktadır. “Sistem aynı anda sadece bir durumda bulunabilir.” Sisteminiz multiuser.target durumunda iken aynı anda graphical.target durumunda bulunamaz.</p>
+ <p>Yukarıda bahsedilen çalışma seviyeleri için ortak bir kriter bulunmaktadır. “Sistem aynı anda sadece bir durumda bulunabilir.” Sisteminiz multiuser.target durumunda iken aynı anda graphical.target durumunda bulunamaz.
  
 
- <p>Sisteminizde şu an aktif olan .<strong>target</strong>&nbsp;durumlarını aşağıdaki komut ile listelediğinizde&nbsp;<strong>active</strong>&nbsp;durumunda olan .target uzantılı üniteleri görebilirsiniz.</p>
+ <p>Sisteminizde şu an aktif olan .***target*** &nbsp;durumlarını aşağıdaki komut ile listelediğinizde&nbsp;***active*** &nbsp;durumunda olan .target uzantılı üniteleri görebilirsiniz.
  
 
 <!-- wp:preformatted -->
@@ -91,24 +91,24 @@ timers.target          loaded active active Timers
 </pre>
 <!-- /wp:preformatted -->
 
- <p>7.sırada görülebileceği gibi&nbsp;<strong>graphical.target</strong>&nbsp;durumu aktif ve çalışıyor.</p>
+ <p>7.sırada görülebileceği gibi&nbsp;***graphical.target*** &nbsp;durumu aktif ve çalışıyor.
  
 
- <p>Şimdi birlikte sistemi&nbsp;isolate&nbsp; fonksiyonunu kullanarak multiuser.target durumuna geçirelim. Bu durumda, tüm grafik uygulamalar kapanacak ve ekranınız komut satırına dönüşecek (Alt+Ctrl+F1,F2,....F6 kullanın). Oturum açma ekranı text modunda karşınıza gelecek. Kayıt etmediğiniz çalışmalarınızı kaydetmenizi öneriyoruz çünkü hepsi kapanacak. Ayrıca tekrar grafik arayüzüne geri dönmek için gerekli komutu da bir yere not etmek isteyebilirsiniz.</p>
+ <p>Şimdi birlikte sistemi&nbsp;isolate&nbsp; fonksiyonunu kullanarak multiuser.target durumuna geçirelim. Bu durumda, tüm grafik uygulamalar kapanacak ve ekranınız komut satırına dönüşecek (Alt+Ctrl+F1,F2,....F6 kullanın). Oturum açma ekranı text modunda karşınıza gelecek. Kayıt etmediğiniz çalışmalarınızı kaydetmenizi öneriyoruz çünkü hepsi kapanacak. Ayrıca tekrar grafik arayüzüne geri dönmek için gerekli komutu da bir yere not etmek isteyebilirsiniz.
  
 
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo systemctl isolate multi-user.target</pre>
 <!-- /wp:preformatted -->
 
- <p>Multiuser durumuna geçince, Alt+Ctrl+F1 ile komut satırına girebilirsiniz. Text modunda oturum açarak ulaşacağınız komut satırında, aşağıdaki komutu yazarak tekrar grafik arayüzüne dönebilirsiniz.</p>
+ <p>Multiuser durumuna geçince, Alt+Ctrl+F1 ile komut satırına girebilirsiniz. Text modunda oturum açarak ulaşacağınız komut satırında, aşağıdaki komutu yazarak tekrar grafik arayüzüne dönebilirsiniz.
  
 
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo systemctl isolate graphical.target</pre>
 <!-- /wp:preformatted -->
 
- <p>Geçmişe dönük olarak işlerliği sürdürmek açısından systemd .<strong>target</strong>&nbsp;durumlarına runlevel1,2,3 vb. şekilde isimlendirme de yapılmıştır. Aşağıdaki iki örnek örnek komut aslında aynı işlem yapılmaktadır.</p>
+ <p>Geçmişe dönük olarak işlerliği sürdürmek açısından systemd .***target*** &nbsp;durumlarına runlevel1,2,3 vb. şekilde isimlendirme de yapılmıştır. Aşağıdaki iki örnek örnek komut aslında aynı işlem yapılmaktadır.
  
 
 <!-- wp:preformatted -->
@@ -116,5 +116,5 @@ timers.target          loaded active active Timers
 sudo systemctl isolate runlevel5.target</pre>
 <!-- /wp:preformatted -->
 
- <p>Bir sonraki yazımızda sistemi varsayılan olarak grafik arayüzde (graphical.target) değil de doğrudan text modunda (multi-user.target) açmayı açıklayacağız.</p>
+ <p>Bir sonraki yazımızda sistemi varsayılan olarak grafik arayüzde (graphical.target) değil de doğrudan text modunda (multi-user.target) açmayı açıklayacağız.
  

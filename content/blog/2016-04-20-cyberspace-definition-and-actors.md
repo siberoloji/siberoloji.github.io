@@ -40,7 +40,7 @@ url: /cyberspace-definition-and-actors/
 # Definition of Cyberspace 
 <!-- /wp:heading -->
 
-  The Ministry of Transport, Maritime Affairs and Communications recently published the 2016-2019  <a href="http://www.udhb.gov.tr/doc/siberg/2016-2019guvenlik.pdf" target="_blank" rel="noreferrer noopener">National Cyber ​​Security Strategy document</a>. The Strategy Document includes the identified and strategically envisaged developments. This document defines “ <strong>Cyberspace</strong> : A digital environment consisting of information systems spread all over the world and space and the networks that connect them or independent information systems.” 
+  The Ministry of Transport, Maritime Affairs and Communications recently published the 2016-2019  <a href="http://www.udhb.gov.tr/doc/siberg/2016-2019guvenlik.pdf" target="_blank" rel="noreferrer noopener">National Cyber ​​Security Strategy document</a>. The Strategy Document includes the identified and strategically envisaged developments. This document defines “ ***Cyberspace***  : A digital environment consisting of information systems spread all over the world and space and the networks that connect them or independent information systems.” 
  
 
   In order to analyze this entire Cyberspace, it does not seem possible for us to proceed without revealing the actors in it. It is an absolute necessity to know the players in the game in order to identify our own weaknesses and strengths. So let's categorize the actors of this environment. 
@@ -50,8 +50,8 @@ url: /cyberspace-definition-and-actors/
 # Categories of Actors 
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Government Supported Structures:</strong></h3>
+
+ ### ***Government Supported Structures:*** 
 <!-- /wp:heading -->
 
   These actors have the ability to establish and operate complex infrastructures that are financed by taking into account the national interests of the countries. They usually have political, economic, technical or military motivations. 
@@ -60,29 +60,29 @@ url: /cyberspace-definition-and-actors/
   The attacks they carry out are not random, but are aimed at specially selected targets. Today, we can consider the systems and structures that relatively advanced countries in the cyber field have prepared, developed and kept ready for use in order to use them as force multipliers in a fight, to be included in this group. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Organized Crime Structures:</strong></h3>
+
+ ### ***Organized Crime Structures:*** 
 <!-- /wp:heading -->
 
   These structures have the opportunity to carry out mass attacks temporarily and within a certain time limit in order to gain significant benefits. Their aim in their attacks is to obtain personal information. They aim to obtain and market valuable information such as social security numbers, credit card information and account numbers. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Hacktivists:</strong></h3>
+
+ ### ***Hacktivists:*** 
 <!-- /wp:heading -->
 
   They are formations that come into being to spread the propaganda of certain political thoughts and ideas. They make their own propaganda by attacking the ideas or systems they oppose. They aim to announce and continue their existence by taking advantage of the sensational agenda that emerges. They follow the path of defending their righteousness with the statements they make. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Internal Threats:</strong></h3>
+
+ ### ***Internal Threats:*** 
 <!-- /wp:heading -->
 
   Such actors usually consist of former employees or those who have been laid off. They intend to take revenge or gain a certain amount of profit. In line with these aims, they may also cooperate with rival companies. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Opportunists:</strong></h3>
+
+ ### ***Opportunists:*** 
 <!-- /wp:heading -->
 
   This group of actors, defined as Script Kiddies in the literature , aim to gain benefits by discovering the vulnerabilities and vulnerabilities of the systems. While they can be professional hackers, they can have a variety of profiles, from those who have learned a few techniques and are looking for excitement. 
@@ -91,8 +91,8 @@ url: /cyberspace-definition-and-actors/
   They may strive to prove themselves in order to become a member of a large structure. If they are professional hackers, they investigate systems with the intention of joining a larger group of actors. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Users with Internal Error:</strong></h3>
+
+ ### ***Users with Internal Error:*** 
 <!-- /wp:heading -->
 
   Systems may become vulnerable to outsiders as a result of some mistakes made in system settings by employees who do not know exactly what they are doing. Those who lack such education are included in this group. 
@@ -105,8 +105,8 @@ url: /cyberspace-definition-and-actors/
 # Stages Followed by Actors 
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Discovery:</strong></h3>
+
+ ### ***Discovery:*** 
 <!-- /wp:heading -->
 
   At this stage, attackers try to gather as much information as possible about the target. They try to learn the structure of the system and understand what reaction is given in which situation. They try to detect devices with weaknesses by using system scanning methods. 
@@ -115,8 +115,8 @@ url: /cyberspace-definition-and-actors/
   They use a number of techniques to obtain information about the target company and structure from social media and open sources. They also conduct discovery and scanning on third parties with whom the target has business relationships. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Preparation:</strong></h3>
+
+ ### ***Preparation:*** 
 <!-- /wp:heading -->
 
   In the preparation phase, target-oriented program preparation and coding methods are used in light of the information obtained as a result of the discovery. The necessary techniques are developed to avoid detection. Actors with sufficient financial support usually prefer to use the vulnerabilities referred to as Zero-Day, not the vulnerabilities that everyone knows. They can conduct their own studies to discover these vulnerabilities, or they can use the purchasing method. 
@@ -125,8 +125,8 @@ url: /cyberspace-definition-and-actors/
   Actors with limited financial means prefer to use written programs that can be purchased by everyone. This type of malware is relatively cheaper. In all cases, these malware are structures designed to bypass firewall-like systems that protect systems. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Delivery:</strong></h3>
+
+ ### ***Delivery:*** 
 <!-- /wp:heading -->
 
   At this stage, the software obtained during the preparation phase is intended to be infected with the target system. For this, the method with the highest probability of success should be chosen. To find this method, experiments are usually carried out supported by social engineering techniques. All it takes to get infected is to click on a link. Although firewall-like measures that protect the target system prevent entry from outside, they are insufficient to control exits from within the system. 
@@ -138,8 +138,8 @@ url: /cyberspace-definition-and-actors/
   If this technique does not work, malicious software is tried to be delivered to the target through websites and advertisements. In all cases and conditions, user training is too important to be ignored. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Exploitation:</strong></h3>
+
+ ### ***Exploitation:*** 
 <!-- /wp:heading -->
 
   If the delivery phase is successful, the first priority of the malware is to try to continue to exist in the system without being noticed. For this, it is necessary to bypass the security mechanisms of the operating system and ensure persistence in the system. 
@@ -148,22 +148,22 @@ url: /cyberspace-definition-and-actors/
   While they can be hidden inside web browser plug-ins subject to the permission of the system user, they can also be hidden inside non-executable document and image type data files. Advanced Persistent Thread (APT) software, which we have heard frequently lately, are examples of this type of code that are most difficult to detect. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Command Control:</strong></h3>
+
+ ### ***Command Control:*** 
 <!-- /wp:heading -->
 
   The program that is located in the system and hidden without being noticed, connects to the main central server when it finds a suitable time and tries to download software with wider capabilities. It carries out the communication it uses for this process over the protocols allowed by the system it is in. It sends the requests through methods such as HTTPS, DNS or TOR that every system accepts. Since these protocols also use secure certificates today, it has become difficult to discover malicious software. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Internal Discovery:</strong></h3>
+
+ ### ***Internal Discovery:*** 
 <!-- /wp:heading -->
 
   When other software pieces downloaded by establishing command control connection and communication are included in the system, detailed discovery and user information is attempted to be obtained. It is attempted to reach other servers and members connected to the network of the system in which it is located. All this obtained data is again hidden behind secure protocols and transmitted to the Command Control server. 
  
 
-<!-- wp:heading {"level":3} -->
- ### <strong>Continuity:</strong></h3>
+
+ ### ***Continuity:*** 
 <!-- /wp:heading -->
 
   Once sufficient information is obtained and the internal structure is revealed, full permanence in the system will be tried to be achieved. For this purpose, bootkit software that can run unnoticed at the start of the system, even if the system is turned off and on, is placed in the MBR section. Another method is to gain access to the system at all times by adding the most authorized user to the databases that perform user control. 

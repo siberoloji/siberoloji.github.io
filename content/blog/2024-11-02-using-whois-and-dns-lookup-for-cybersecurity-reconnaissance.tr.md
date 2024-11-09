@@ -26,9 +26,9 @@ url: /tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/
 ---
 
 Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir. Bu araçların nasıl etkili bir şekilde kullanılacağını anlamak, ağ altyapısı ve potansiyel güvenlik açıkları hakkında önemli bilgiler sağlayabilir. Bu kapsamlı kılavuz, meşru güvenlik değerlendirmesi ve savunma amaçları için bu araçlardan nasıl yararlanılacağını araştırıyor.
-<h2>WHOIS'i Anlama</h2>
+## WHOIS'i Anlama
 WHOIS, kayıtlı alan adları, IP adresleri ve sahipleri hakkında bilgi sağlayan bir sorgu ve yanıt protokolüdür. İlk olarak 1980'lerde geliştirilen WHOIS, ağ yöneticileri, güvenlik uzmanları ve araştırmacılar için gerekli olmaya devam ediyor.
-<h3>Temel WHOIS Veri Noktaları</h3>
+### Temel WHOIS Veri Noktaları
 WHOIS sorguları tipik olarak şunları ortaya çıkarır:
 
 Kayıt Sahibi Bilgileri
@@ -47,26 +47,28 @@ Teknik Bilgiler
 – İsim sunucuları
 – DNSSEC durumu
 – Kayıt Durumu
-<h2>WHOIS Aramalarını Gerçekleştirme</h2>
+## WHOIS Aramalarını Gerçekleştirme
 Komut Satırı Yöntemi
 
 whois example.com
 Çevrimiçi Hizmetler
 
 Birkaç güvenilir çevrimiçi WHOIS hizmeti şunları içerir:
-– ICANN Araması
+
+- ICANN Araması
 - Whois.net
-– DomainTools
-– Bölgesel İnternet Kayıtları (RIR'ler) web siteleri
-<h2>WHOIS Gizlilik Hususları</h2>
+- DomainTools
+- Bölgesel İnternet Kayıtları (RIR'ler) web siteleri
+
+## WHOIS Gizlilik Hususları
 Modern WHOIS verileri genellikle gizlilik korumasını içerir:
 – GDPR uyumluluk önlemleri
 – Alan adı gizlilik hizmetleri
 – Redakte edilmiş iletişim bilgileri
 – Proxy kayıt hizmetleri
-<h2>DNS Arama Teknikleri</h2>
+## DNS Arama Teknikleri
 DNS (Alan Adı Sistemi) aramaları, alan adı altyapısı ve yapılandırması hakkında ayrıntılı bilgi sağlar. Çeşitli DNS kayıt türlerini ve bunların etkilerini anlamak güvenlik değerlendirmesi için çok önemlidir.
-<h3>Temel DNS Kayıt Türleri</h3>
+### Temel DNS Kayıt Türleri
 A Kayıtlar (Adres)
 – Ana bilgisayar adlarını IPv4 adreslerine eşler
 - Ana bilgisayar konumlarını belirlemek için kritik
@@ -96,7 +98,8 @@ NS Kayıtları (İsim Sunucu)
 – Yetkili ad sunucularını listeler
 – Etki alanı çözümü için kritik
 – Barındırma sağlayıcılarını gösterebilir
-<h2>DNS Arama Araçları</h2>
+
+## DNS Arama Araçları
 Komut Satırı Araçları
 
 dig (Alan Adı Bilgisi Groper)
@@ -116,7 +119,7 @@ Güvenlik Yolları
 GörünümDNS.info
 MX Araç Kutusu
 Güvenlik Uygulamaları
-<h2>Tehdit İstihbaratı</h2>
+## Tehdit İstihbaratı
 WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:
 - Kötü amaçlı alan adlarını belirleme
 – Alan adı kayıt kalıplarını takip etme
@@ -138,7 +141,7 @@ Güvenlik uzmanları şunları yapabilir:
 - Kritik hizmetleri belirleyin
 – Güvenlik yapılandırmalarını değerlendirin
 – Değişiklikleri izleyin
-<h3>Keşif için En İyi Uygulamalar</h3>
+### Keşif için En İyi Uygulamalar
 Dokümantasyon
 
 Ayrıntılı kayıtları tutun:
@@ -198,7 +201,7 @@ Aşağıdakilere uygunluğu sağlayın:
 – Hizmet şartları
 – Kullanım politikaları
 – Veri koruma düzenlemeleri
-<h2>Sorumlu Kullanım</h2>
+## Sorumlu Kullanım
 Etik keşif uygulaması:
 – Gizliliğe saygı duymak
 – Hız limitlerini takip etmek
@@ -222,7 +225,7 @@ Sistemleri şu şekilde yapılandırın:
 – Şüpheli etkinlik uyarısı
 – Kayıt kalıplarını takip edin
 – Potansiyel tehditleri belirleyin
-<h2>Sonuç</h2>
+## Sonuç
 WHOIS ve DNS arama araçları, siber güvenlik keşif için temel olmaya devam ediyor. Doğru kullanıldığında, ağ altyapısı ve olası güvenlik endişeleri hakkında değerli bilgiler sağlarlar. Düzenli izleme, uygun dokümantasyon ve etik kullanım, bu araçların güvenlik programlarına etkili bir şekilde katkıda bulunmasını sağlar.
 
 Gizlilik ve yasal gerekliliklere saygı duyarken bu araçlardan nasıl yararlanılacağını anlamak, güvenlik profesyonellerinin şunları yapmasını sağlar:

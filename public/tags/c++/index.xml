@@ -24,18 +24,18 @@
       <description>
         
         
-         &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.&lt;/p&gt;
- &lt;p&gt;To compile and run this program:&lt;/p&gt;
- &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;&lt;/p&gt;
- &lt;p&gt;Compile it: &lt;/p&gt;
+         &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
+ &lt;p&gt;To compile and run this program:
+ &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;
+ &lt;p&gt;Compile it: 
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;g++ -std=c++17 -o network_scanner network_scanner.cpp&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Run it with sudo: &lt;/p&gt;
+ &lt;p&gt;Run it with sudo: 
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;sudo ./network_scanner&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Here is the complete code.&lt;/p&gt;
+ &lt;p&gt;Here is the complete code.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;fstream&amp;gt;
@@ -159,9 +159,9 @@ int main() {
       <description>
         
         
-        &lt;p&gt;The provided code demonstrates various operations on a &lt;code&gt;std::vector&lt;/code&gt; in C++.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+        &lt;p&gt;The provided code demonstrates various operations on a &lt;code&gt;std::vector&lt;/code&gt; in C++.&lt;/p&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;vector&amp;gt;
@@ -250,9 +250,9 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The provided code demonstrates various operations on a &lt;code&gt;std::vector&lt;/code&gt; in C++. The &lt;code&gt;main&lt;/code&gt; function begins by initializing a vector named &lt;code&gt;numbers&lt;/code&gt; with 5 elements and then fills it with numbers from 0 to 4 using a &lt;code&gt;for&lt;/code&gt; loop:&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided code demonstrates various operations on a &lt;code&gt;std::vector&lt;/code&gt; in C++. The &lt;code&gt;main&lt;/code&gt; function begins by initializing a vector named &lt;code&gt;numbers&lt;/code&gt; with 5 elements and then fills it with numbers from 0 to 4 using a &lt;code&gt;for&lt;/code&gt; loop:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;vector&amp;lt;int&amp;gt; numbers(5);
 for (int i = 0; i &amp;lt; numbers.size(); i++) {
@@ -260,37 +260,37 @@ for (int i = 0; i &amp;lt; numbers.size(); i++) {
     cout &amp;lt;&amp;lt; numbers[i] &amp;lt;&amp;lt; endl;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Next, the code adds an element to the end of the vector using &lt;code&gt;push_back&lt;/code&gt; and prints the last element:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Next, the code adds an element to the end of the vector using &lt;code&gt;push_back&lt;/code&gt; and prints the last element:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.push_back(5);
 cout &amp;lt;&amp;lt; &#34;5 added as the last element: &#34; &amp;lt;&amp;lt; numbers.back() &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The last element is then removed using &lt;code&gt;pop_back&lt;/code&gt;, and the code prints the new last element:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The last element is then removed using &lt;code&gt;pop_back&lt;/code&gt;, and the code prints the new last element:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.pop_back();
 cout &amp;lt;&amp;lt; &#34;5 removed, now the last element is: &#34; &amp;lt;&amp;lt; numbers[numbers.size() - 1] &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The code proceeds to insert an element at the beginning of the vector using &lt;code&gt;insert&lt;/code&gt; and prints the first element:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The code proceeds to insert an element at the beginning of the vector using &lt;code&gt;insert&lt;/code&gt; and prints the first element:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.insert(numbers.begin(), 10);
 cout &amp;lt;&amp;lt; &#34;10 added as front number. Now the front number of the vector is: &#34; &amp;lt;&amp;lt; numbers.front() &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The first element is then removed using &lt;code&gt;erase&lt;/code&gt;, and the new first element is printed:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The first element is then removed using &lt;code&gt;erase&lt;/code&gt;, and the new first element is printed:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.erase(numbers.begin());
 cout &amp;lt;&amp;lt; &#34;Front number removed. The new front is: &#34; &amp;lt;&amp;lt; numbers.front() &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;An element is inserted at the third position, and the element at that position is printed:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;An element is inserted at the third position, and the element at that position is printed:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.insert(numbers.begin() + 2, 20);
 cout &amp;lt;&amp;lt; &#34;20 added to the 3rd position: &#34; &amp;lt;&amp;lt; numbers[2] &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The element at the third position is removed, and the new element at that position is printed:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The element at the third position is removed, and the new element at that position is printed:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.erase(numbers.begin() + 2);
 cout &amp;lt;&amp;lt; &#34;20 removed from the 3rd position: &#34; &amp;lt;&amp;lt; numbers[2] &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Finally, the vector is cleared using &lt;code&gt;clear&lt;/code&gt;, and the code prints the contents of the now-empty vector:&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Finally, the vector is cleared using &lt;code&gt;clear&lt;/code&gt;, and the code prints the contents of the now-empty vector:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;numbers.clear();
 cout &amp;lt;&amp;lt; &#34;Numbers in the vector after clearing: &#34; &amp;lt;&amp;lt; endl;
@@ -298,9 +298,9 @@ for (const int number : numbers) {
     cout &amp;lt;&amp;lt; number &amp;lt;&amp;lt; endl;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;This code effectively demonstrates how to manipulate a &lt;code&gt;std::vector&lt;/code&gt; in C++ by adding, removing, and accessing elements at various positions.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;This code effectively demonstrates how to manipulate a &lt;code&gt;std::vector&lt;/code&gt; in C++ by adding, removing, and accessing elements at various positions.&lt;/p&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Initial vector elements: 
 0
@@ -359,13 +359,13 @@ Numbers in the vector after clearing:
 
 Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Extra information&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;extra-informationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#extra-informationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Common operations performed on &lt;code&gt;std::vector&lt;/code&gt; in C++ include:&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Extra information&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;extra-information&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#extra-information&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Common operations performed on &lt;code&gt;std::vector&lt;/code&gt; in C++ include:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Initialization&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Initialization*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   std::vector&amp;lt;int&amp;gt; vec; // Empty vector
@@ -374,8 +374,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:2} --&gt;
 &lt;ol start=&#34;2&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Accessing Elements&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Accessing Elements*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   int first = vec.front(); // Access the first element
@@ -384,16 +384,16 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:3} --&gt;
 &lt;ol start=&#34;3&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Modifying Elements&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Modifying Elements*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   vec[2] = 10; // Modify the element at index 2&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:4} --&gt;
 &lt;ol start=&#34;4&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Adding Elements&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Adding Elements*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   vec.push_back(6); // Add an element to the end
@@ -402,8 +402,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:5} --&gt;
 &lt;ol start=&#34;5&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Removing Elements&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Removing Elements*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   vec.pop_back(); // Remove the last element
@@ -413,8 +413,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:6} --&gt;
 &lt;ol start=&#34;6&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Iterating Over Elements&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Iterating Over Elements*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   for (int i = 0; i &amp;lt; vec.size(); ++i) {
@@ -431,8 +431,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:7} --&gt;
 &lt;ol start=&#34;7&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Size and Capacity&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Size and Capacity*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   size_t size = vec.size(); // Get the number of elements
@@ -442,15 +442,15 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:8} --&gt;
 &lt;ol start=&#34;8&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Swapping and Assigning&lt;/strong&gt;:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Swapping and Assigning*** : 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;   std::vector&amp;lt;int&amp;gt; vec2 = {7, 8, 9};
    vec.swap(vec2); // Swap contents with another vector
    vec = vec2; // Assign contents from another vector&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;These operations cover the most common use cases for &lt;code&gt;std::vector&lt;/code&gt; in C++.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;These operations cover the most common use cases for &lt;code&gt;std::vector&lt;/code&gt; in C++.&lt;/p&gt;
 
       </description>
     </item>
@@ -465,8 +465,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code demonstrates the use of a &lt;code&gt;switch-case&lt;/code&gt; statement to handle different user inputs.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -512,8 +512,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code demonstrates the use of a &lt;code&gt;switch-case&lt;/code&gt; statement to handle different user inputs. The program begins by including the necessary header file &lt;code&gt;&amp;lt;iostream&amp;gt;&lt;/code&gt; and using the &lt;code&gt;std&lt;/code&gt; namespace to simplify the code.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
@@ -557,8 +557,8 @@ case 7:
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This code effectively demonstrates how to use a &lt;code&gt;switch-case&lt;/code&gt; statement in C++ to handle multiple conditions based on user input.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter a number between 1-7: 3
 Three
@@ -578,8 +578,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code demonstrates the use of various bitwise operators.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -624,8 +624,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code demonstrates the use of various bitwise operators. The program begins by including the necessary header file &lt;code&gt;iostream&lt;/code&gt; and using the &lt;code&gt;std&lt;/code&gt; namespace to simplify the code.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
@@ -639,48 +639,48 @@ int j = 22; // Second integer&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The program then performs several bitwise operations on these integers and prints the results using &lt;code&gt;cout&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
 &lt;ol class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise AND (&lt;code&gt;&amp;amp;&lt;/code&gt;)&lt;/strong&gt;: This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 only if both corresponding bits of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; are 1. The result of &lt;code&gt;i &amp;amp; j&lt;/code&gt; is 6.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Bitwise AND (&lt;code&gt;&amp;amp;&lt;/code&gt;)*** : This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 only if both corresponding bits of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; are 1. The result of &lt;code&gt;i &amp;amp; j&lt;/code&gt; is 6. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (i &amp;amp; j) &amp;lt;&amp;lt; endl; // Expected output: 6&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:2} --&gt;
 &lt;ol start=&#34;2&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise OR (&lt;code&gt;|&lt;/code&gt;)&lt;/strong&gt;: This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of &lt;code&gt;i&lt;/code&gt; or &lt;code&gt;j&lt;/code&gt; is 1. The result of &lt;code&gt;i | j&lt;/code&gt; is 31.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Bitwise OR (&lt;code&gt;|&lt;/code&gt;)*** : This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of &lt;code&gt;i&lt;/code&gt; or &lt;code&gt;j&lt;/code&gt; is 1. The result of &lt;code&gt;i | j&lt;/code&gt; is 31. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (i | j) &amp;lt;&amp;lt; endl; // Expected output: 31&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:3} --&gt;
 &lt;ol start=&#34;3&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise XOR (&lt;code&gt;^&lt;/code&gt;)&lt;/strong&gt;: This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 if only one of the corresponding bits of &lt;code&gt;i&lt;/code&gt; or &lt;code&gt;j&lt;/code&gt; is 1. The result of &lt;code&gt;i ^ j&lt;/code&gt; is 25.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Bitwise XOR (&lt;code&gt;^&lt;/code&gt;)*** : This operation compares each bit of &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; and returns a new integer where each bit is set to 1 if only one of the corresponding bits of &lt;code&gt;i&lt;/code&gt; or &lt;code&gt;j&lt;/code&gt; is 1. The result of &lt;code&gt;i ^ j&lt;/code&gt; is 25. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (i ^ j) &amp;lt;&amp;lt; endl; // Expected output: 25&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:4} --&gt;
 &lt;ol start=&#34;4&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise NOT (&lt;code&gt;~&lt;/code&gt;)&lt;/strong&gt;: This operation inverts all the bits of &lt;code&gt;i&lt;/code&gt;, turning 1s into 0s and vice versa. The result of &lt;code&gt;~i&lt;/code&gt; is -16.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Bitwise NOT (&lt;code&gt;~&lt;/code&gt;)*** : This operation inverts all the bits of &lt;code&gt;i&lt;/code&gt;, turning 1s into 0s and vice versa. The result of &lt;code&gt;~i&lt;/code&gt; is -16. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (~i) &amp;lt;&amp;lt; endl; // Expected output: -16&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:5} --&gt;
 &lt;ol start=&#34;5&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Left Shift (&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;)&lt;/strong&gt;: This operation shifts the bits of &lt;code&gt;i&lt;/code&gt; to the left by 2 positions, effectively multiplying &lt;code&gt;i&lt;/code&gt; by 2^2 (or 4). The result of &lt;code&gt;i &amp;lt;&amp;lt; 2&lt;/code&gt; is 60.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Left Shift (&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;)*** : This operation shifts the bits of &lt;code&gt;i&lt;/code&gt; to the left by 2 positions, effectively multiplying &lt;code&gt;i&lt;/code&gt; by 2^2 (or 4). The result of &lt;code&gt;i &amp;lt;&amp;lt; 2&lt;/code&gt; is 60. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (i &amp;lt;&amp;lt; 2) &amp;lt;&amp;lt; endl; // Expected output: 60&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true,&#34;start&#34;:6} --&gt;
 &lt;ol start=&#34;6&#34; class=&#34;wp-block-list&#34;&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Right Shift (&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;)&lt;/strong&gt;: This operation shifts the bits of &lt;code&gt;j&lt;/code&gt; to the right by 2 positions, effectively dividing &lt;code&gt;j&lt;/code&gt; by 2^2 (or 4). The result of &lt;code&gt;j &amp;gt;&amp;gt; 2&lt;/code&gt; is 5.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+- ***Right Shift (&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;)*** : This operation shifts the bits of &lt;code&gt;j&lt;/code&gt; to the right by 2 positions, effectively dividing &lt;code&gt;j&lt;/code&gt; by 2^2 (or 4). The result of &lt;code&gt;j &amp;gt;&amp;gt; 2&lt;/code&gt; is 5. 
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; (j &amp;gt;&amp;gt; 2) &amp;lt;&amp;lt; endl; // Expected output: 5&lt;/code&gt;&lt;/pre&gt;
@@ -690,8 +690,8 @@ int j = 22; // Second integer&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;return 0;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This code provides a clear and concise demonstration of how bitwise operators work in C++, making it a useful reference for developers looking to understand these operations.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;6
 31
@@ -715,9 +715,9 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The provided C++ code demonstrates the use of logical operators: AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;), OR (&lt;code&gt;||&lt;/code&gt;), and NOT (&lt;code&gt;!&lt;/code&gt;), through a series of comparisons between three initialized integer variables (&lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt;).&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code demonstrates the use of logical operators: AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;), OR (&lt;code&gt;||&lt;/code&gt;), and NOT (&lt;code&gt;!&lt;/code&gt;), through a series of comparisons between three initialized integer variables (&lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt;).
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * @file main.cpp
@@ -763,39 +763,39 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The provided C++ code demonstrates the use of logical operators: AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;), OR (&lt;code&gt;||&lt;/code&gt;), and NOT (&lt;code&gt;!&lt;/code&gt;), through a series of comparisons between three initialized integer variables (&lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt;). It serves as an educational example to illustrate how these operators function in conditional statements and their precedence rules.&lt;/p&gt;
+&lt;p&gt;The provided C++ code demonstrates the use of logical operators: AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;), OR (&lt;code&gt;||&lt;/code&gt;), and NOT (&lt;code&gt;!&lt;/code&gt;), through a series of comparisons between three initialized integer variables (&lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt;). It serves as an educational example to illustrate how these operators function in conditional statements and their precedence rules.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Initially, the code sets up three variables &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt; with values 5, 10, and 15, respectively. This setup is crucial for the subsequent comparisons:&lt;/p&gt;
+&lt;p&gt;Initially, the code sets up three variables &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, and &lt;code&gt;z&lt;/code&gt; with values 5, 10, and 15, respectively. This setup is crucial for the subsequent comparisons:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;int x = 5, y = 10, z = 15;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The demonstration of the logical AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;) operator is shown through two examples. The first example checks if &lt;code&gt;x&lt;/code&gt; is less than &lt;code&gt;y&lt;/code&gt; AND &lt;code&gt;y&lt;/code&gt; is less than &lt;code&gt;z&lt;/code&gt;, which evaluates to true since both conditions are satisfied:&lt;/p&gt;
+&lt;p&gt;The demonstration of the logical AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;) operator is shown through two examples. The first example checks if &lt;code&gt;x&lt;/code&gt; is less than &lt;code&gt;y&lt;/code&gt; AND &lt;code&gt;y&lt;/code&gt; is less than &lt;code&gt;z&lt;/code&gt;, which evaluates to true since both conditions are satisfied:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;x &amp;lt; y &amp;amp;&amp;amp; y &amp;lt; z = &#34; &amp;lt;&amp;lt; (x &amp;lt; y &amp;amp;&amp;amp; y &amp;lt; z) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The logical OR (&lt;code&gt;||&lt;/code&gt;) operator is similarly demonstrated. An example provided checks if &lt;code&gt;x&lt;/code&gt; is less than &lt;code&gt;y&lt;/code&gt; OR &lt;code&gt;y&lt;/code&gt; is greater than &lt;code&gt;z&lt;/code&gt;. This expression evaluates to true because the first condition is true, illustrating that only one condition needs to be true for the OR operator to result in true:&lt;/p&gt;
+&lt;p&gt;The logical OR (&lt;code&gt;||&lt;/code&gt;) operator is similarly demonstrated. An example provided checks if &lt;code&gt;x&lt;/code&gt; is less than &lt;code&gt;y&lt;/code&gt; OR &lt;code&gt;y&lt;/code&gt; is greater than &lt;code&gt;z&lt;/code&gt;. This expression evaluates to true because the first condition is true, illustrating that only one condition needs to be true for the OR operator to result in true:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;x &amp;lt; y || y &amp;gt; z = &#34; &amp;lt;&amp;lt; (x &amp;lt; y || y &amp;gt; z) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The NOT (&lt;code&gt;!&lt;/code&gt;) operator&#39;s demonstration negates the truth value of the condition it precedes. For instance, negating the condition &lt;code&gt;x &amp;lt; y&lt;/code&gt; results in false because &lt;code&gt;x &amp;lt; y&lt;/code&gt; is true, and NOT true is false:&lt;/p&gt;
+&lt;p&gt;The NOT (&lt;code&gt;!&lt;/code&gt;) operator&#39;s demonstration negates the truth value of the condition it precedes. For instance, negating the condition &lt;code&gt;x &amp;lt; y&lt;/code&gt; results in false because &lt;code&gt;x &amp;lt; y&lt;/code&gt; is true, and NOT true is false:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;!(x &amp;lt; y) = &#34; &amp;lt;&amp;lt; !(x &amp;lt; y) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Lastly, the code touches upon the precedence of logical operators, stating that AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;) has a higher precedence than OR (&lt;code&gt;||&lt;/code&gt;). This is crucial in understanding how complex logical expressions are evaluated. The provided examples show that even if OR appears first in an expression, the AND part is evaluated first due to its higher precedence:&lt;/p&gt;
+&lt;p&gt;Lastly, the code touches upon the precedence of logical operators, stating that AND (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;) has a higher precedence than OR (&lt;code&gt;||&lt;/code&gt;). This is crucial in understanding how complex logical expressions are evaluated. The provided examples show that even if OR appears first in an expression, the AND part is evaluated first due to its higher precedence:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;x &amp;lt; y &amp;amp;&amp;amp; y &amp;lt; z || x &amp;gt; z = &#34; &amp;lt;&amp;lt; (x &amp;lt; y &amp;amp;&amp;amp; y &amp;lt; z || x &amp;gt; z) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;This code snippet is a straightforward demonstration aimed at those familiar with C++ but perhaps not with the intricacies of logical operators and their precedence.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;This code snippet is a straightforward demonstration aimed at those familiar with C++ but perhaps not with the intricacies of logical operators and their precedence.
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;x = 5, y = 10, z = 15
 x &amp;lt; y &amp;amp;&amp;amp; y &amp;lt; z = 1
@@ -823,8 +823,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/*
 * Program to count even and odd numbers.
@@ -869,8 +869,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0. The program operates in a loop, prompting the user to input integers until a 0 is entered, which signals the end of input. It utilizes the modulo operator (&lt;code&gt;%&lt;/code&gt;) to distinguish between even and odd numbers.&lt;/p&gt;
 &lt;p&gt;Initially, the program declares and initializes two integer variables, &lt;code&gt;evenCount&lt;/code&gt; and &lt;code&gt;oddCount&lt;/code&gt;, to zero. These variables serve as counters for the even and odd numbers, respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -895,8 +895,8 @@ else
 cout &amp;lt;&amp;lt; &#34;Odd numbers : &#34; &amp;lt;&amp;lt; oddCount &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This code snippet effectively demonstrates basic C++ input/output operations, conditional statements, and loop control structures, making it a straightforward example for developers familiar with C++ but new to this specific logic.&lt;/p&gt;
-&lt;h2&gt;Output &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#output-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter a number: 13
 Enter a number: 212
@@ -921,8 +921,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code demonstrates various uses of the &lt;code&gt;for&lt;/code&gt; loop, incorporating control flow statements such as &lt;code&gt;break&lt;/code&gt;, &lt;code&gt;continue&lt;/code&gt;, and &lt;code&gt;return&lt;/code&gt; to manage loop execution.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -1020,8 +1020,8 @@ int main() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code demonstrates various uses of the &lt;code&gt;for&lt;/code&gt; loop, incorporating control flow statements such as &lt;code&gt;break&lt;/code&gt;, &lt;code&gt;continue&lt;/code&gt;, and &lt;code&gt;return&lt;/code&gt; to manage loop execution. These examples illustrate how to control the flow within loops for different scenarios, making the code a valuable resource for understanding loop control mechanisms in C++.&lt;/p&gt;
 &lt;p&gt;Initially, a basic &lt;code&gt;for&lt;/code&gt; loop is shown, which iterates from 0 to 9, printing each number. This loop serves as a straightforward example of using a &lt;code&gt;for&lt;/code&gt; loop for simple iterations.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1058,8 +1058,8 @@ int main() {
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;The code also presents scenarios where &lt;code&gt;break&lt;/code&gt; and &lt;code&gt;continue&lt;/code&gt; statements are combined with a &lt;code&gt;return&lt;/code&gt; statement in different loops. These examples illustrate the precedence and effect of these control flow statements when used together, highlighting that &lt;code&gt;break&lt;/code&gt; and &lt;code&gt;continue&lt;/code&gt; have no effect when followed by a &lt;code&gt;return&lt;/code&gt; statement.&lt;/p&gt;
 &lt;p&gt;In summary, the code provides a comprehensive overview of controlling loop execution using &lt;code&gt;for&lt;/code&gt; loops and control flow statements in C++. Each example serves to illustrate the flexibility and control that &lt;code&gt;for&lt;/code&gt; loops offer in C++, enabling developers to manage loop execution with precision.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;0
 1
@@ -1109,8 +1109,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code demonstrates the use of &lt;code&gt;do-while&lt;/code&gt; loops, a variant of loop that ensures the loop&amp;rsquo;s body is executed at least once before the condition is checked.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -1173,8 +1173,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code demonstrates the use of &lt;code&gt;do-while&lt;/code&gt; loops, a variant of loop that ensures the loop&amp;rsquo;s body is executed at least once before the condition is checked. This characteristic differentiates &lt;code&gt;do-while&lt;/code&gt; loops from the more common &lt;code&gt;while&lt;/code&gt; loops, where the condition is evaluated before the loop body is executed.&lt;/p&gt;
 &lt;p&gt;The first example in the code is a basic &lt;code&gt;do-while&lt;/code&gt; loop that prints numbers from 0 to 9. The loop starts with &lt;code&gt;i&lt;/code&gt; initialized to 0 and increments &lt;code&gt;i&lt;/code&gt; in each iteration. The condition &lt;code&gt;i &amp;lt; 10&lt;/code&gt; is checked after the loop body is executed, ensuring that the loop runs at least once.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1215,8 +1215,8 @@ int main() {
 } while (i &amp;lt; 10);&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Each of these examples illustrates different ways to control the execution flow within &lt;code&gt;do-while&lt;/code&gt; loops, showcasing their flexibility and utility in scenarios where at least one iteration of the loop is required.&lt;/p&gt;
-&lt;h2&gt;Output &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#output-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;0
 1
@@ -1266,8 +1266,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code demonstrates various uses of the &lt;code&gt;while&lt;/code&gt; loop, showcasing how it can be utilized for basic iteration, and how control flow statements like &lt;code&gt;break&lt;/code&gt;, &lt;code&gt;continue&lt;/code&gt;, and &lt;code&gt;return&lt;/code&gt; can be integrated within these loops to manage their execution more precisely.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -1324,8 +1324,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code demonstrates various uses of the &lt;code&gt;while&lt;/code&gt; loop, showcasing how it can be utilized for basic iteration, and how control flow statements like &lt;code&gt;break&lt;/code&gt;, &lt;code&gt;continue&lt;/code&gt;, and &lt;code&gt;return&lt;/code&gt; can be integrated within these loops to manage their execution more precisely.&lt;/p&gt;
 &lt;p&gt;Initially, the code presents a basic &lt;code&gt;while&lt;/code&gt; loop example where a counter &lt;code&gt;i&lt;/code&gt; is incremented in each iteration until it reaches 10. This loop prints numbers from 0 to 9, illustrating the fundamental use of &lt;code&gt;while&lt;/code&gt; for repetitive tasks.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1355,8 +1355,8 @@ while (i &amp;lt; 10) {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Each of these examples serves to illustrate the flexibility and control that &lt;code&gt;while&lt;/code&gt; loops offer in C++, enabling developers to manage loop execution with precision through the use of control flow statements.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;0
 1
@@ -1405,9 +1405,9 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-         &lt;p&gt;The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+         &lt;p&gt;The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes.
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -1460,24 +1460,24 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the &lt;code&gt;&amp;lt;iostream&amp;gt;&lt;/code&gt; header, enabling input and output operations, and uses the &lt;code&gt;std&lt;/code&gt; namespace to avoid prefixing standard library entities with &lt;code&gt;std::&lt;/code&gt;.&lt;/p&gt;
- &lt;p&gt;The main function, which is the entry point of the program, declares variables of different data types, including integer types (&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;short int&lt;/code&gt;, &lt;code&gt;long int&lt;/code&gt;, &lt;code&gt;unsigned int&lt;/code&gt;, &lt;code&gt;unsigned short int&lt;/code&gt;, &lt;code&gt;unsigned long int&lt;/code&gt;), character types (&lt;code&gt;char&lt;/code&gt;, &lt;code&gt;unsigned char&lt;/code&gt;, &lt;code&gt;signed char&lt;/code&gt;), and floating-point types (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;, &lt;code&gt;long double&lt;/code&gt;). Each variable is accompanied by a comment indicating its range, which is crucial for understanding the limits of each data type.&lt;/p&gt;
- &lt;p&gt;For example, the integer variable declaration is shown as follows:&lt;/p&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the &lt;code&gt;&amp;lt;iostream&amp;gt;&lt;/code&gt; header, enabling input and output operations, and uses the &lt;code&gt;std&lt;/code&gt; namespace to avoid prefixing standard library entities with &lt;code&gt;std::&lt;/code&gt;.
+ &lt;p&gt;The main function, which is the entry point of the program, declares variables of different data types, including integer types (&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;short int&lt;/code&gt;, &lt;code&gt;long int&lt;/code&gt;, &lt;code&gt;unsigned int&lt;/code&gt;, &lt;code&gt;unsigned short int&lt;/code&gt;, &lt;code&gt;unsigned long int&lt;/code&gt;), character types (&lt;code&gt;char&lt;/code&gt;, &lt;code&gt;unsigned char&lt;/code&gt;, &lt;code&gt;signed char&lt;/code&gt;), and floating-point types (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;, &lt;code&gt;long double&lt;/code&gt;). Each variable is accompanied by a comment indicating its range, which is crucial for understanding the limits of each data type.
+ &lt;p&gt;For example, the integer variable declaration is shown as follows:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;int Integer; // Range: -2147483648 to 2147483647&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;This line declares an &lt;code&gt;int&lt;/code&gt; variable named &lt;code&gt;Integer&lt;/code&gt;, which can store values from -2,147,483,648 to 2,147,483,647.&lt;/p&gt;
- &lt;p&gt;After declaring these variables, the program prints the size of each data type in bytes using the &lt;code&gt;sizeof&lt;/code&gt; operator. This is a compile-time operator that determines the size, in bytes, of a variable or data type. The output is directed to the console using &lt;code&gt;cout&lt;/code&gt;, which is part of the &lt;code&gt;iostream&lt;/code&gt; library.&lt;/p&gt;
- &lt;p&gt;For instance, the size of the &lt;code&gt;int&lt;/code&gt; data type is printed with the following line:&lt;/p&gt;
+ &lt;p&gt;This line declares an &lt;code&gt;int&lt;/code&gt; variable named &lt;code&gt;Integer&lt;/code&gt;, which can store values from -2,147,483,648 to 2,147,483,647.
+ &lt;p&gt;After declaring these variables, the program prints the size of each data type in bytes using the &lt;code&gt;sizeof&lt;/code&gt; operator. This is a compile-time operator that determines the size, in bytes, of a variable or data type. The output is directed to the console using &lt;code&gt;cout&lt;/code&gt;, which is part of the &lt;code&gt;iostream&lt;/code&gt; library.
+ &lt;p&gt;For instance, the size of the &lt;code&gt;int&lt;/code&gt; data type is printed with the following line:
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt;&#34;The size of int is &#34; &amp;lt;&amp;lt;sizeof(Integer) &amp;lt;&amp;lt; &#34; bytes&#34; &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;This line outputs the size of an &lt;code&gt;int&lt;/code&gt; in bytes, helping to understand how much memory each data type consumes.&lt;/p&gt;
- &lt;p&gt;The program concludes by returning 0, indicating successful execution. This code snippet is a practical demonstration for beginners to understand the sizes of different data types in C++, which is fundamental in choosing the appropriate type for variables based on the range of values they are expected to hold and the memory efficiency.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;This line outputs the size of an &lt;code&gt;int&lt;/code&gt; in bytes, helping to understand how much memory each data type consumes.
+ &lt;p&gt;The program concludes by returning 0, indicating successful execution. This code snippet is a practical demonstration for beginners to understand the sizes of different data types in C++, which is fundamental in choosing the appropriate type for variables based on the range of values they are expected to hold and the memory efficiency.
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;The size of int is 4 bytes
 The size of short int is 2 bytes
@@ -1506,9 +1506,9 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, &lt;code&gt;iostream&lt;/code&gt; for input/output operations and &lt;code&gt;cmath&lt;/code&gt; for mathematical operations.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+        &lt;p&gt;The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, &lt;code&gt;iostream&lt;/code&gt; for input/output operations and &lt;code&gt;cmath&lt;/code&gt; for mathematical operations.&lt;/p&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cmath&amp;gt;
@@ -1535,39 +1535,39 @@ int main() {
     }
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, &lt;code&gt;iostream&lt;/code&gt; for input/output operations and &lt;code&gt;cmath&lt;/code&gt; for mathematical operations.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, &lt;code&gt;iostream&lt;/code&gt; for input/output operations and &lt;code&gt;cmath&lt;/code&gt; for mathematical operations.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cmath&amp;gt;
 using namespace std;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The main function of the program starts with the declaration of a float variable &lt;code&gt;inputNumber&lt;/code&gt; which is used to store the user&amp;rsquo;s input.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The main function of the program starts with the declaration of a float variable &lt;code&gt;inputNumber&lt;/code&gt; which is used to store the user&amp;rsquo;s input.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;float inputNumber;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The program then prompts the user to enter a number using &lt;code&gt;cout&lt;/code&gt; and stores the user&amp;rsquo;s input in the &lt;code&gt;inputNumber&lt;/code&gt; variable using &lt;code&gt;cin&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The program then prompts the user to enter a number using &lt;code&gt;cout&lt;/code&gt; and stores the user&amp;rsquo;s input in the &lt;code&gt;inputNumber&lt;/code&gt; variable using &lt;code&gt;cin&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Enter a number to calculate its square root: &#34;;
 cin &amp;gt;&amp;gt; inputNumber;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The program checks if the input number is non-negative using an &lt;code&gt;if&lt;/code&gt; statement. This is important because the square root of a negative number is not a real number and would result in an error.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The program checks if the input number is non-negative using an &lt;code&gt;if&lt;/code&gt; statement. This is important because the square root of a negative number is not a real number and would result in an error.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;if (inputNumber &amp;gt;= 0.0) {&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Inside the &lt;code&gt;if&lt;/code&gt; statement, the program calculates the square root of the input number using the &lt;code&gt;sqrt&lt;/code&gt; function from the &lt;code&gt;cmath&lt;/code&gt; library and stores the result in the &lt;code&gt;squareRoot&lt;/code&gt; variable.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Inside the &lt;code&gt;if&lt;/code&gt; statement, the program calculates the square root of the input number using the &lt;code&gt;sqrt&lt;/code&gt; function from the &lt;code&gt;cmath&lt;/code&gt; library and stores the result in the &lt;code&gt;squareRoot&lt;/code&gt; variable.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;float squareRoot = sqrt(inputNumber);&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Finally, the program prints the input number and its square root using &lt;code&gt;cout&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Finally, the program prints the input number and its square root using &lt;code&gt;cout&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Input number: &#34; &amp;lt;&amp;lt; inputNumber &amp;lt;&amp;lt; &#34;\n&#34;;
 cout &amp;lt;&amp;lt; &#34;Square root: &#34; &amp;lt;&amp;lt; squareRoot &amp;lt;&amp;lt; &#34;\n&#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;This code is a simple demonstration of user input, conditional statements, and mathematical operations in C++.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;This code is a simple demonstration of user input, conditional statements, and mathematical operations in C++.&lt;/p&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter a number to calculate its square root: 15
 Input number: 15
@@ -1588,8 +1588,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a simple console application that prompts the user to enter an integer, outputs the entered integer, doubles the entered integer, and then outputs the doubled value.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt; // Include the iostream library to enable input/output operations
 using namespace std; // Use the standard namespace
@@ -1613,8 +1613,8 @@ int main() {
     return 0; // Return 0 to indicate that the program has run successfully
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple console application that prompts the user to enter an integer, outputs the entered integer, doubles the entered integer, and then outputs the doubled value.&lt;/p&gt;
 &lt;p&gt;The code begins with the inclusion of the &lt;code&gt;iostream&lt;/code&gt; library, which is necessary for input/output operations in C++. The &lt;code&gt;using namespace std;&lt;/code&gt; statement is used to avoid having to prefix standard library functions with &lt;code&gt;std::&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1645,8 +1645,8 @@ cin &amp;gt;&amp;gt; userInput;&lt;/code&gt;&lt;/pre&gt;
 return 0;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This code is a basic example of user interaction and arithmetic operations in C++.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter an integer: 12
 You entered: 12
@@ -1667,8 +1667,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a simple demonstration of the &lt;code&gt;static_cast&lt;/code&gt; operator, which is used to convert an expression to a new type.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;// This program demonstrates the use of static_cast in C++
 // static_cast&amp;lt;newtype&amp;gt;(expr) is used to cast an expression to a new type
@@ -1700,8 +1700,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple demonstration of the &lt;code&gt;static_cast&lt;/code&gt; operator, which is used to convert an expression to a new type.&lt;/p&gt;
 &lt;p&gt;The program begins by including the &lt;code&gt;iostream&lt;/code&gt; library and declaring the &lt;code&gt;std&lt;/code&gt; namespace for usage. This is a common practice in C++ to allow for easier usage of standard library functions, such as &lt;code&gt;cout&lt;/code&gt; for console output.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1724,8 +1724,8 @@ cout &amp;lt;&amp;lt; &#34;b&#34; &amp;lt;&amp;lt; &#34; &#34; &amp;lt;&amp;lt; 
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;c&#34; &amp;lt;&amp;lt; &#34; &#34; &amp;lt;&amp;lt; static_cast&amp;lt;int&amp;gt;(character) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;In summary, this program demonstrates how to use the &lt;code&gt;static_cast&lt;/code&gt; operator in C++ to convert between different data types. It&amp;rsquo;s a simple but effective illustration of type casting in C++.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;a 8
 b \
@@ -1746,8 +1746,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a simple program that demonstrates how to print an integer in different number systems: hexadecimal, decimal, and octal.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * This is the main function of the program.
@@ -1785,8 +1785,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple program that demonstrates how to print an integer in different number systems: hexadecimal, decimal, and octal.&lt;/p&gt;
 &lt;p&gt;The program begins by including the necessary libraries, &lt;code&gt;iostream&lt;/code&gt; for input/output operations and &lt;code&gt;iomanip&lt;/code&gt; for input/output manipulations. The &lt;code&gt;using namespace std;&lt;/code&gt; line allows the program to use the standard namespace, which includes functions like &lt;code&gt;cout&lt;/code&gt; and &lt;code&gt;endl&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1812,8 +1812,8 @@ using namespace std;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; oct &amp;lt;&amp;lt; byte &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Finally, the program demonstrates another way to change the number base using the &lt;code&gt;setbase&lt;/code&gt; function from the &lt;code&gt;iomanip&lt;/code&gt; library. This function accepts only 2, 8, 10, or 16 as parameters, representing binary, octal, decimal, and hexadecimal number systems respectively.&lt;br&gt;cout &amp;lt;&amp;lt; setbase(16) &amp;lt;&amp;lt; byte &amp;lt;&amp;lt; endl;&lt;br&gt;cout &amp;lt;&amp;lt; setbase(10) &amp;lt;&amp;lt; byte &amp;lt;&amp;lt; endl;&lt;br&gt;cout &amp;lt;&amp;lt; setbase(8) &amp;lt;&amp;lt; byte &amp;lt;&amp;lt; endl;&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;ff
 ff255
@@ -1838,8 +1838,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a simple console application that demonstrates the use of basic comparison operators in C++.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -1910,8 +1910,8 @@ int main() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple console application that demonstrates the use of basic comparison operators in C++. It does so by initializing two integer variables, &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;, and then comparing them using different operators.&lt;/p&gt;
 &lt;p&gt;Initially, &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; are both set to &lt;code&gt;0&lt;/code&gt;:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -1937,8 +1937,8 @@ if (x != y) {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This pattern continues until all the comparison operators have been demonstrated. The program then ends with a &lt;code&gt;return 0;&lt;/code&gt; statement, indicating successful execution.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Question: is x equal to y?
 x is equal to y
@@ -1966,8 +1966,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a demonstration of how to manipulate and display characters and their ASCII values. It also includes a brief explanation of escape characters in C++.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -2037,8 +2037,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a demonstration of how to manipulate and display characters and their ASCII values. It also includes a brief explanation of escape characters in C++.&lt;/p&gt;
 &lt;p&gt;The main function begins by declaring a character variable &lt;code&gt;char character = &amp;lsquo;A&amp;rsquo;;&lt;/code&gt;. This character is then printed to the console using &lt;code&gt;cout &amp;lt;&amp;lt; &amp;ldquo;Character: &amp;quot; &amp;lt;&amp;lt; character &amp;lt;&amp;lt; endl;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The ASCII value of &amp;lsquo;A&amp;rsquo;, which is 65, is then assigned to the character variable &lt;code&gt;character = 65;&lt;/code&gt;. This is again printed to the console, demonstrating that the character &amp;lsquo;A&amp;rsquo; and the integer 65 are interchangeable when dealing with char variables.&lt;/p&gt;
@@ -2046,8 +2046,8 @@ int main() {
 &lt;p&gt;The code also demonstrates how to assign hexadecimal and octal values to the character variable using escape sequences. For example, the hexadecimal value for a single quote is assigned using &lt;code&gt;character = &amp;lsquo;\x27&amp;rsquo;;&lt;/code&gt; and the octal value is assigned using &lt;code&gt;character = &amp;lsquo;\047&amp;rsquo;;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The code then demonstrates some arithmetic operations with characters. For example, it assigns the result of &amp;lsquo;A&amp;rsquo; + 32 to the character variable &lt;code&gt;character = &amp;lsquo;A&amp;rsquo; + 32;&lt;/code&gt;. This is equivalent to assigning the ASCII value of &amp;lsquo;a&amp;rsquo; to the character variable because &amp;lsquo;A&amp;rsquo; has an ASCII value of 65 and &amp;lsquo;a&amp;rsquo; has an ASCII value of 97, and the difference between these two values is 32.&lt;/p&gt;
 &lt;p&gt;Finally, the code includes a comment section that provides additional information about char types, their int values, and the use of escape characters in C++.&lt;/p&gt;
-&lt;h2&gt;Output &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#output-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Character: A
 Character (65 in ASCII): A
@@ -2064,8 +2064,8 @@ Character: A
 
 Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Escape Characters&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;escape-charactersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#escape-charactersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Escape Characters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;escape-characters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#escape-characters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;// Explanation of escape characters in C++
 // All escape characters can be used in C++ strings to print special characters
@@ -2096,8 +2096,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided code is a C++ program that demonstrates the use of shortcut operators. It includes the &lt;code&gt;iostream&lt;/code&gt; library, which is used for input/output operations, and the &lt;code&gt;std&lt;/code&gt; namespace is being used.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * Main function to demonstrate shortcut operators in C++.
@@ -2135,8 +2135,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided code is a C++ program that demonstrates the use of shortcut operators. It includes the &lt;code&gt;iostream&lt;/code&gt; library, which is used for input/output operations, and the &lt;code&gt;std&lt;/code&gt; namespace is being used.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;main&lt;/code&gt; function is the entry point of the program. It initializes ten integer variables &lt;code&gt;num1&lt;/code&gt; through &lt;code&gt;num10&lt;/code&gt; with values from 1 to 10 respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -2160,8 +2160,8 @@ num9 %= num10;&lt;/code&gt;&lt;/pre&gt;
 cout &amp;lt;&amp;lt; &#34;num9 = &#34; &amp;lt;&amp;lt; num9 &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;The &lt;code&gt;endl&lt;/code&gt; manipulator is used to insert a new line. The program ends by returning 0, indicating successful execution.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;num1 = 3
 num3 = -1
@@ -2183,9 +2183,9 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;This code snippet demonstrates the usage of pre-increment and post-increment operators in C++.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+        &lt;p&gt;This code snippet demonstrates the usage of pre-increment and post-increment operators in C++.&lt;/p&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * Main function that demonstrates the usage of pre-increment and post-increment operators.
@@ -2230,17 +2230,17 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The provided C++ code is a simple demonstration of the usage of pre-increment (&lt;code&gt;++var&lt;/code&gt;), post-increment (&lt;code&gt;var++&lt;/code&gt;), pre-decrement (&lt;code&gt;&amp;ndash;var&lt;/code&gt;), and post-decrement (&lt;code&gt;var&amp;ndash;&lt;/code&gt;) operators in C++.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The main function starts by declaring four integer variables &lt;code&gt;numberOne&lt;/code&gt;, &lt;code&gt;numberTwo&lt;/code&gt;, &lt;code&gt;numberThree&lt;/code&gt;, and &lt;code&gt;numberFour&lt;/code&gt; with initial values of 1, 2, 3, and 4 respectively.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The first operation is &lt;code&gt;numberOne++&lt;/code&gt;. This is a post-increment operation, which means the current value of &lt;code&gt;numberOne&lt;/code&gt; is assigned to &lt;code&gt;result&lt;/code&gt; before &lt;code&gt;numberOne&lt;/code&gt; is incremented. Therefore, &lt;code&gt;result&lt;/code&gt; will be 1 (the original value of &lt;code&gt;numberOne&lt;/code&gt;), and &lt;code&gt;numberOne&lt;/code&gt; will be incremented to 2.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Next, the operation &lt;code&gt;++numberTwo&lt;/code&gt; is a pre-increment operation. Here, &lt;code&gt;numberTwo&lt;/code&gt; is incremented before the assignment operation. So, &lt;code&gt;numberTwo&lt;/code&gt; becomes 3, and this new value is assigned to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The third operation is &lt;code&gt;numberThree&amp;ndash;&lt;/code&gt;, a post-decrement operation. Similar to the post-increment, the current value of &lt;code&gt;numberThree&lt;/code&gt; is assigned to &lt;code&gt;result&lt;/code&gt; before &lt;code&gt;numberThree&lt;/code&gt; is decremented. So, &lt;code&gt;result&lt;/code&gt; will be 3, and &lt;code&gt;numberThree&lt;/code&gt; will be decremented to 2.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Finally, the operation &lt;code&gt;&amp;ndash;numberFour&lt;/code&gt; is a pre-decrement operation. Here, &lt;code&gt;numberFour&lt;/code&gt; is decremented before the assignment operation. So, &lt;code&gt;numberFour&lt;/code&gt; becomes 3, and this new value is assigned to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;After each operation, the new values of the variables and &lt;code&gt;result&lt;/code&gt; are printed to the console for verification. The function then returns 0, indicating successful execution.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code is a simple demonstration of the usage of pre-increment (&lt;code&gt;++var&lt;/code&gt;), post-increment (&lt;code&gt;var++&lt;/code&gt;), pre-decrement (&lt;code&gt;&amp;ndash;var&lt;/code&gt;), and post-decrement (&lt;code&gt;var&amp;ndash;&lt;/code&gt;) operators in C++.&lt;/p&gt;
+&lt;p&gt;The main function starts by declaring four integer variables &lt;code&gt;numberOne&lt;/code&gt;, &lt;code&gt;numberTwo&lt;/code&gt;, &lt;code&gt;numberThree&lt;/code&gt;, and &lt;code&gt;numberFour&lt;/code&gt; with initial values of 1, 2, 3, and 4 respectively.&lt;/p&gt;
+&lt;p&gt;The first operation is &lt;code&gt;numberOne++&lt;/code&gt;. This is a post-increment operation, which means the current value of &lt;code&gt;numberOne&lt;/code&gt; is assigned to &lt;code&gt;result&lt;/code&gt; before &lt;code&gt;numberOne&lt;/code&gt; is incremented. Therefore, &lt;code&gt;result&lt;/code&gt; will be 1 (the original value of &lt;code&gt;numberOne&lt;/code&gt;), and &lt;code&gt;numberOne&lt;/code&gt; will be incremented to 2.&lt;/p&gt;
+&lt;p&gt;Next, the operation &lt;code&gt;++numberTwo&lt;/code&gt; is a pre-increment operation. Here, &lt;code&gt;numberTwo&lt;/code&gt; is incremented before the assignment operation. So, &lt;code&gt;numberTwo&lt;/code&gt; becomes 3, and this new value is assigned to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The third operation is &lt;code&gt;numberThree&amp;ndash;&lt;/code&gt;, a post-decrement operation. Similar to the post-increment, the current value of &lt;code&gt;numberThree&lt;/code&gt; is assigned to &lt;code&gt;result&lt;/code&gt; before &lt;code&gt;numberThree&lt;/code&gt; is decremented. So, &lt;code&gt;result&lt;/code&gt; will be 3, and &lt;code&gt;numberThree&lt;/code&gt; will be decremented to 2.&lt;/p&gt;
+&lt;p&gt;Finally, the operation &lt;code&gt;&amp;ndash;numberFour&lt;/code&gt; is a pre-decrement operation. Here, &lt;code&gt;numberFour&lt;/code&gt; is decremented before the assignment operation. So, &lt;code&gt;numberFour&lt;/code&gt; becomes 3, and this new value is assigned to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After each operation, the new values of the variables and &lt;code&gt;result&lt;/code&gt; are printed to the console for verification. The function then returns 0, indicating successful execution.&lt;/p&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Number One: 2
 Result: 1
@@ -2269,8 +2269,8 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;The provided C++ code is a simple demonstration of operator precedence and type casting in C++.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;// Let&#39;s demonstrate how to use operator priority in C++
 
@@ -2301,8 +2301,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple demonstration of operator precedence and type casting in C++.&lt;/p&gt;
 &lt;p&gt;The code begins by declaring four integer variables &lt;code&gt;num1&lt;/code&gt;, &lt;code&gt;num2&lt;/code&gt;, &lt;code&gt;num3&lt;/code&gt;, and &lt;code&gt;num4&lt;/code&gt;, each initialized with values from 1 to 4 respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -2328,8 +2328,8 @@ cout &amp;lt;&amp;lt; result5 &amp;lt;&amp;lt; endl;
 cout &amp;lt;&amp;lt; result6 &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This allows the user to see the different results produced by the different expressions, illustrating the effects of operator precedence and type casting in C++.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;1.75
 2.25
@@ -2340,55 +2340,85 @@ cout &amp;lt;&amp;lt; result6 &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 
 Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Operator Precedence Rules&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;operator-precedence-rulesh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#operator-precedence-rulesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Operator Precedence Rules&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;operator-precedence-rules&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#operator-precedence-rules&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;In C++, operators have a specific order in which they are evaluated when an expression has several of them. This is known as operator precedence. Here are some common operator precedence rules in C++, from highest to lowest precedence:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
-&lt;ol&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Parentheses &lt;code&gt;()&lt;/code&gt;&lt;/strong&gt;: Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Parentheses &lt;code&gt;()&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Unary operators &lt;code&gt;++&lt;/code&gt;, &lt;code&gt;--&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt;, &lt;code&gt;~&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;&amp;amp;&lt;/code&gt;, &lt;code&gt;sizeof&lt;/code&gt;, &lt;code&gt;new&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt;&lt;/strong&gt;: These operators have the next highest precedence after parentheses. They are used with only one operand. For example, the increment (&lt;code&gt;++&lt;/code&gt;) and decrement (&lt;code&gt;--&lt;/code&gt;) operators.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Unary operators &lt;code&gt;++&lt;/code&gt;, &lt;code&gt;&amp;ndash;&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt;, &lt;code&gt;~&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;&lt;/em&gt;&lt;/code&gt;, &lt;code&gt;&amp;amp;&lt;/code&gt;, &lt;code&gt;sizeof&lt;/code&gt;, &lt;code&gt;new&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt;&lt;/strong&gt;* : These operators have the next highest precedence after parentheses. They are used with only one operand. For example, the increment (&lt;code&gt;++&lt;/code&gt;) and decrement (&lt;code&gt;&amp;ndash;&lt;/code&gt;) operators.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Multiplicative operators &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;%&lt;/code&gt;&lt;/strong&gt;: These operators are evaluated next. They perform multiplication, division, and modulus operations.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Multiplicative operators &lt;code&gt;&lt;/em&gt;&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;%&lt;/code&gt;&lt;/strong&gt;* : These operators are evaluated next. They perform multiplication, division, and modulus operations.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Additive operators &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;&lt;/strong&gt;: These operators are used for addition and subtraction operations.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Additive operators &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : These operators are used for addition and subtraction operations.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Shift operators &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt;: These operators are used to shift bits to the left or right.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Shift operators &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : These operators are used to shift bits to the left or right.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Relational operators &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/strong&gt;: These operators are used to compare two values.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Relational operators &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : These operators are used to compare two values.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Equality operators &lt;code&gt;==&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;&lt;/strong&gt;: These operators are used to check the equality or inequality of two operands.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Equality operators &lt;code&gt;==&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : These operators are used to check the equality or inequality of two operands.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise AND operator &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/strong&gt;: This operator performs a bitwise AND operation.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bitwise AND operator &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator performs a bitwise AND operation.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise XOR operator &lt;code&gt;^&lt;/code&gt;&lt;/strong&gt;: This operator performs a bitwise XOR operation.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bitwise XOR operator &lt;code&gt;^&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator performs a bitwise XOR operation.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Bitwise OR operator &lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;: This operator performs a bitwise OR operation.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Bitwise OR operator &lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator performs a bitwise OR operation.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Logical AND operator &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/strong&gt;: This operator performs a logical AND operation.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Logical AND operator &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator performs a logical AND operation.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Logical OR operator &lt;code&gt;||&lt;/code&gt;&lt;/strong&gt;: This operator performs a logical OR operation.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Logical OR operator &lt;code&gt;||&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator performs a logical OR operation.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Conditional operator &lt;code&gt;?:&lt;/code&gt;&lt;/strong&gt;: This operator works as a simple &lt;code&gt;if-else&lt;/code&gt; statement.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Conditional operator &lt;code&gt;?:&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator works as a simple &lt;code&gt;if-else&lt;/code&gt; statement.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Assignment operators &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;+=&lt;/code&gt;, &lt;code&gt;-=&lt;/code&gt;, &lt;code&gt;*=&lt;/code&gt;, &lt;code&gt;/=&lt;/code&gt;, &lt;code&gt;%=&lt;/code&gt;, &lt;code&gt;&amp;lt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;&amp;amp;=&lt;/code&gt;, &lt;code&gt;^=&lt;/code&gt;, &lt;code&gt;|=&lt;/code&gt;&lt;/strong&gt;: These operators are used to assign values to variables.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Assignment operators &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;+=&lt;/code&gt;, &lt;code&gt;-=&lt;/code&gt;, &lt;code&gt;&lt;/em&gt;=&lt;/code&gt;, &lt;code&gt;/=&lt;/code&gt;, &lt;code&gt;%=&lt;/code&gt;, &lt;code&gt;&amp;lt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;&amp;amp;=&lt;/code&gt;, &lt;code&gt;^=&lt;/code&gt;, &lt;code&gt;|=&lt;/code&gt;&lt;/strong&gt;* : These operators are used to assign values to variables.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Comma operator &lt;code&gt;,&lt;/code&gt;&lt;/strong&gt;: This operator is used to link related expressions together.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Comma operator &lt;code&gt;,&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; : This operator is used to link related expressions together.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Remember, when operators have the same precedence, the rule of associativity (left-to-right or right-to-left) is used to determine the order of operations.&lt;/p&gt;
 
@@ -2404,30 +2434,42 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;This code snippet demonstrates various operators in C++:&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;This code snippet demonstrates various operators in C++:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Arithmetic operators: Multiplication, Division, Addition, Subtraction, Modulus&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Increment and Decrement operators&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Assignment operator&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Comparison operators: Equal, Greater, Less, Not Equal, Greater or Equal, Less or Equal&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Bitwise operators: AND, OR, XOR, NOT&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Logical operators: AND, OR&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;It also includes output statements to display the results of these operations.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;It also includes output statements to display the results of these operations.&lt;/p&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;// Lets explain operators in C++ with examples multiplacaion, division, addition, subtraction,
 // modulus, increment, decrement, assignment, comparison, logical and bitwise operators in C++
@@ -2518,46 +2560,46 @@ int main() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The provided C++ code is a simple demonstration of various operators in C++. It includes arithmetic, assignment, comparison, logical, and bitwise operators.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The code begins by declaring two integer variables, &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;, with values 10 and 5 respectively.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code is a simple demonstration of various operators in C++. It includes arithmetic, assignment, comparison, logical, and bitwise operators.&lt;/p&gt;
+&lt;p&gt;The code begins by declaring two integer variables, &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;, with values 10 and 5 respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;int num1 = 10;
 int num2 = 5;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The arithmetic operators are then demonstrated. These include multiplication (&lt;code&gt;*&lt;/code&gt;), division (&lt;code&gt;/&lt;/code&gt;), addition (&lt;code&gt;+&lt;/code&gt;), subtraction (&lt;code&gt;-&lt;/code&gt;), and modulus (&lt;code&gt;%&lt;/code&gt;). The results of these operations are printed to the console.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The arithmetic operators are then demonstrated. These include multiplication (&lt;code&gt;*&lt;/code&gt;), division (&lt;code&gt;/&lt;/code&gt;), addition (&lt;code&gt;+&lt;/code&gt;), subtraction (&lt;code&gt;-&lt;/code&gt;), and modulus (&lt;code&gt;%&lt;/code&gt;). The results of these operations are printed to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Multiplication: &#34; &amp;lt;&amp;lt; num1 * num2 &amp;lt;&amp;lt; endl;
 cout &amp;lt;&amp;lt; &#34;Division: &#34; &amp;lt;&amp;lt; num1 / num2 &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The increment (&lt;code&gt;++&lt;/code&gt;) and decrement (&lt;code&gt;&amp;ndash;&lt;/code&gt;) operators are demonstrated next. The variable &lt;code&gt;result&lt;/code&gt; is incremented and decremented, and the results are printed to the console.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The increment (&lt;code&gt;++&lt;/code&gt;) and decrement (&lt;code&gt;&amp;ndash;&lt;/code&gt;) operators are demonstrated next. The variable &lt;code&gt;result&lt;/code&gt; is incremented and decremented, and the results are printed to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;result++;
 cout &amp;lt;&amp;lt; &#34;After increment: &#34; &amp;lt;&amp;lt; result &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The assignment operator (&lt;code&gt;=&lt;/code&gt;) is used to assign the value of &lt;code&gt;num1&lt;/code&gt; to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The assignment operator (&lt;code&gt;=&lt;/code&gt;) is used to assign the value of &lt;code&gt;num1&lt;/code&gt; to &lt;code&gt;result&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;result = num1;
 cout &amp;lt;&amp;lt; &#34;Assignment: &#34; &amp;lt;&amp;lt; result &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The comparison operators (&lt;code&gt;==&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;) are used to compare &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these comparisons are printed to the console.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The comparison operators (&lt;code&gt;==&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;) are used to compare &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these comparisons are printed to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;if (num1 == num2) {
     cout &amp;lt;&amp;lt; &#34;Equal&#34; &amp;lt;&amp;lt; endl;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The bitwise operators (&lt;code&gt;&amp;amp;&lt;/code&gt;, &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;^&lt;/code&gt;, &lt;code&gt;~&lt;/code&gt;) are used to perform bitwise operations on &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these operations are printed to the console.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The bitwise operators (&lt;code&gt;&amp;amp;&lt;/code&gt;, &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;^&lt;/code&gt;, &lt;code&gt;~&lt;/code&gt;) are used to perform bitwise operations on &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these operations are printed to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Bitwise AND: &#34; &amp;lt;&amp;lt; (num1 &amp;amp; num2) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Finally, the logical operators (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;, &lt;code&gt;||&lt;/code&gt;) are used to perform logical operations on &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these operations are printed to the console.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Finally, the logical operators (&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;, &lt;code&gt;||&lt;/code&gt;) are used to perform logical operations on &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;. The results of these operations are printed to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Logical AND: &#34; &amp;lt;&amp;lt; (num1 &amp;amp;&amp;amp; num2) &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;In summary, this code provides a comprehensive demonstration of the various operators available in C++.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In summary, this code provides a comprehensive demonstration of the various operators available in C++.&lt;/p&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Multiplication: 50
 Division: 2
@@ -2649,8 +2691,8 @@ int main() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a demonstration of how to use and display floating point numbers in different formats using the &lt;code&gt;iostream&lt;/code&gt; and &lt;code&gt;iomanip&lt;/code&gt; libraries.&lt;/p&gt;
 &lt;p&gt;Initially, five floating point variables &lt;code&gt;f&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;h&lt;/code&gt;, &lt;code&gt;i&lt;/code&gt;, and &lt;code&gt;j&lt;/code&gt; are declared and assigned different values. These variables are then printed to the console using the &lt;code&gt;cout&lt;/code&gt; object.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -2677,8 +2719,8 @@ cout &amp;lt;&amp;lt; &#34;f (fixed): &#34; &amp;lt;&amp;lt; fixed &amp;lt;&amp;
 // ... other print statements&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;In summary, this code demonstrates various ways to control the display of floating point numbers in C++.&lt;/p&gt;
-&lt;h2&gt;Output&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;outputh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#outputh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;f: 3.14159
 g: 0.4
@@ -2760,282 +2802,466 @@ int main() {
         
         &lt;p&gt;C++ has a set of reserved keywords that have special meanings to the compiler. These keywords cannot be used as identifiers (names for variables, functions, classes, etc.). Here is a list of C++ keywords:&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;alignas&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;alignof&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;and&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;and_eq&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;asm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;auto&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bitand&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bitor&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bool&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;break&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;case&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;catch&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;char&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;char8_t&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;char16_t&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;char32_t&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;class&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;compl&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;concept&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;const&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;consteval&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;constexpr&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;constinit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;const_cast&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;continue&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;co_await&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;co_return&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;co_yield&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;decltype&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;default&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;delete&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;do&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;double&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;dynamic_cast&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;else&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;enum&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;explicit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;export&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;extern&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;float&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;for&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;friend&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;goto&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;if&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;int&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;long&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;mutable&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;namespace&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;new&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;noexcept&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;not&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;nullptr&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;operator&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;or&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;or_eq&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;private&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;protected&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;public&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;register&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;reinterpret_cast&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;requires&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;return&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;short&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;signed&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;sizeof&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;static&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;static_assert&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;static_cast&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;struct&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;switch&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;template&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;this&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;thread_local&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;throw&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;try&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;typedef&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;typeid&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;typename&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;union&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;unsigned&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;using&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;virtual&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;void&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;volatile&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;wchar_t&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;while&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;xor&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;xor_eq&lt;/code&gt;&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Please note that some of these keywords are only available in newer versions of C++.&lt;/p&gt;
 
@@ -3052,35 +3278,51 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;C++ supports several different data types. Here are some of the most common ones:&lt;/p&gt;
+&lt;p&gt;C++ supports several different data types. Here are some of the most common ones:
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
-&lt;ol&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Integer types (&lt;code&gt;int&lt;/code&gt;)&lt;/strong&gt;: These are used to store whole numbers. The size of an &lt;code&gt;int&lt;/code&gt; is usually 4 bytes (32 bits), and it can store numbers from -2,147,483,648 to 2,147,483,647.&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Integer types (&lt;code&gt;int&lt;/code&gt;)&lt;/strong&gt;&lt;/em&gt; : These are used to store whole numbers. The size of an &lt;code&gt;int&lt;/code&gt; is usually 4 bytes (32 bits), and it can store numbers from -2,147,483,648 to 2,147,483,647.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Floating-point types (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;)&lt;/strong&gt;: These are used to store real numbers (numbers with fractional parts). A &lt;code&gt;float&lt;/code&gt; typically occupies 4 bytes of memory, while a &lt;code&gt;double&lt;/code&gt; occupies 8 bytes.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Floating-point types (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;double&lt;/code&gt;)&lt;/strong&gt;&lt;/em&gt; : These are used to store real numbers (numbers with fractional parts). A &lt;code&gt;float&lt;/code&gt; typically occupies 4 bytes of memory, while a &lt;code&gt;double&lt;/code&gt; occupies 8 bytes.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Character types (&lt;code&gt;char&lt;/code&gt;)&lt;/strong&gt;: These are used to store individual characters. A &lt;code&gt;char&lt;/code&gt; occupies 1 byte of memory and can store any character in the ASCII table.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Character types (&lt;code&gt;char&lt;/code&gt;)&lt;/strong&gt;&lt;/em&gt; : These are used to store individual characters. A &lt;code&gt;char&lt;/code&gt; occupies 1 byte of memory and can store any character in the ASCII table.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Boolean type (&lt;code&gt;bool&lt;/code&gt;)&lt;/strong&gt;: This type is used to store either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Boolean type (&lt;code&gt;bool&lt;/code&gt;)&lt;/strong&gt;&lt;/em&gt; : This type is used to store either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;String type (&lt;code&gt;std::string&lt;/code&gt;)&lt;/strong&gt;: This is used to store sequences of characters, or strings. It&#39;s not a built-in type, but is included in the C++ Standard Library.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;String type (&lt;code&gt;std::string&lt;/code&gt;)&lt;/strong&gt;&lt;/em&gt; : This is used to store sequences of characters, or strings. It&amp;rsquo;s not a built-in type, but is included in the C++ Standard Library.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Array types&lt;/strong&gt;: These are used to store multiple values of the same type in a single variable.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Array types&lt;/strong&gt;&lt;/em&gt; : These are used to store multiple values of the same type in a single variable.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Pointer types&lt;/strong&gt;: These are used to store memory addresses.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Pointer types&lt;/strong&gt;&lt;/em&gt; : These are used to store memory addresses.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;User-defined types (classes, structs, unions, enums)&lt;/strong&gt;: These allow users to define their own data types.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;User-defined types (classes, structs, unions, enums)&lt;/strong&gt;&lt;/em&gt; : These allow users to define their own data types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Each of these types has its own characteristics and uses, and understanding them is fundamental to programming in C++.&lt;/p&gt;
+&lt;p&gt;Each of these types has its own characteristics and uses, and understanding them is fundamental to programming in C++.
 
       </description>
     </item>
@@ -3096,12 +3338,16 @@ int main() {
         
         &lt;p&gt;In C++, you can create variables and assign values to them in the following way:&lt;/p&gt;
 &lt;!-- wp:list {&#34;ordered&#34;:true} --&gt;
-&lt;ol&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Declare a variable by specifying its type followed by the variable name. For example, &lt;code&gt;int myVariable;&lt;/code&gt; declares a variable named &lt;code&gt;myVariable&lt;/code&gt; of type &lt;code&gt;int&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Assign a value to the variable using the assignment operator &lt;code&gt;=&lt;/code&gt;. For example, &lt;code&gt;myVariable = 5;&lt;/code&gt; assigns the value &lt;code&gt;5&lt;/code&gt; to &lt;code&gt;myVariable&lt;/code&gt;.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Here is an example of creating different types of variables and assigning values to them:&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -3132,8 +3378,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided code is a simple C++ program that demonstrates the declaration and initialization of variables of different types.&lt;/p&gt;
 &lt;p&gt;The program begins by including necessary libraries. The &lt;code&gt;iostream&lt;/code&gt; library is included for input/output operations, and the &lt;code&gt;string&lt;/code&gt; library is used to handle string data types.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -3218,8 +3464,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is a simple program designed to illustrate the correct and incorrect conventions for naming variables in C++.&lt;/p&gt;
 &lt;p&gt;The program begins with the inclusion of the &lt;code&gt;iostream&lt;/code&gt; library, which is used for input/output operations. The &lt;code&gt;using namespace std;&lt;/code&gt; statement is used to avoid having to prefix standard library components with &lt;code&gt;std::&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -3264,7 +3510,7 @@ int _1_number; ///&amp;lt; Variable names can contain underscores and numbers&lt
       <description>
         
         
-        &lt;p&gt;This function defines three integer variables, each initialized with a different type of literal (hexadecimal, octal, binary). It then prints the values of these variables to the console.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;This function defines three integer variables, each initialized with a different type of literal (hexadecimal, octal, binary). It then prints the values of these variables to the console.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
  * @file main.cpp
@@ -3297,32 +3543,32 @@ int main() {
     return 0; ///&amp;lt; Returns 0 upon successful execution.
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanationh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanationh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The provided C++ code is a simple program that demonstrates the use of different types of integer literals in C++. It includes hexadecimal, octal, and binary literals.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The program begins by including the &lt;code&gt;iostream&lt;/code&gt; library, which provides facilities for input/output operations. The &lt;code&gt;using namespace std;&lt;/code&gt; statement is used to avoid prefixing the &lt;code&gt;cout&lt;/code&gt; and &lt;code&gt;endl&lt;/code&gt; with &lt;code&gt;std::&lt;/code&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The provided C++ code is a simple program that demonstrates the use of different types of integer literals in C++. It includes hexadecimal, octal, and binary literals.&lt;/p&gt;
+&lt;p&gt;The program begins by including the &lt;code&gt;iostream&lt;/code&gt; library, which provides facilities for input/output operations. The &lt;code&gt;using namespace std;&lt;/code&gt; statement is used to avoid prefixing the &lt;code&gt;cout&lt;/code&gt; and &lt;code&gt;endl&lt;/code&gt; with &lt;code&gt;std::&lt;/code&gt;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;The &lt;code&gt;main&lt;/code&gt; function is the entry point of the program. Inside this function, three integer variables &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, and &lt;code&gt;c&lt;/code&gt; are declared and initialized with a hexadecimal, octal, and binary literal, respectively.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;main&lt;/code&gt; function is the entry point of the program. Inside this function, three integer variables &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, and &lt;code&gt;c&lt;/code&gt; are declared and initialized with a hexadecimal, octal, and binary literal, respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;int a = 0x1A; 
 int b = 032; 
 int c = 0b1101;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;In C++, hexadecimal literals are prefixed with &lt;code&gt;0x&lt;/code&gt; or &lt;code&gt;0X&lt;/code&gt;, octal literals are prefixed with &lt;code&gt;0&lt;/code&gt;, and binary literals are prefixed with &lt;code&gt;0b&lt;/code&gt; or &lt;code&gt;0B&lt;/code&gt;. The hexadecimal literal &lt;code&gt;0x1A&lt;/code&gt; and the octal literal &lt;code&gt;032&lt;/code&gt; both represent the decimal number 26, while the binary literal &lt;code&gt;0b1101&lt;/code&gt; represents the decimal number 13.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The program then uses &lt;code&gt;cout&lt;/code&gt; to print the values of these variables to the console. The &lt;code&gt;endl&lt;/code&gt; manipulator is used to insert a new line.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;In C++, hexadecimal literals are prefixed with &lt;code&gt;0x&lt;/code&gt; or &lt;code&gt;0X&lt;/code&gt;, octal literals are prefixed with &lt;code&gt;0&lt;/code&gt;, and binary literals are prefixed with &lt;code&gt;0b&lt;/code&gt; or &lt;code&gt;0B&lt;/code&gt;. The hexadecimal literal &lt;code&gt;0x1A&lt;/code&gt; and the octal literal &lt;code&gt;032&lt;/code&gt; both represent the decimal number 26, while the binary literal &lt;code&gt;0b1101&lt;/code&gt; represents the decimal number 13.&lt;/p&gt;
+&lt;p&gt;The program then uses &lt;code&gt;cout&lt;/code&gt; to print the values of these variables to the console. The &lt;code&gt;endl&lt;/code&gt; manipulator is used to insert a new line.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;cout &amp;lt;&amp;lt; &#34;Hexadecimal literal: &#34; &amp;lt;&amp;lt; a &amp;lt;&amp;lt; endl;
 cout &amp;lt;&amp;lt; &#34;Octal literal: &#34; &amp;lt;&amp;lt; b &amp;lt;&amp;lt; endl;
 cout &amp;lt;&amp;lt; &#34;Binary literal: &#34; &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Finally, the &lt;code&gt;main&lt;/code&gt; function returns 0 to indicate successful execution of the program.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Finally, the &lt;code&gt;main&lt;/code&gt; function returns 0 to indicate successful execution of the program.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;return 0;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;This code is a good demonstration of how different types of integer literals can be used in C++.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;This code is a good demonstration of how different types of integer literals can be used in C++.&lt;/p&gt;
 
       </description>
     </item>
@@ -3428,7 +3674,7 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;We tried to explain the most simple C++ program for beginners.&lt;/p&gt;
+&lt;p&gt;We tried to explain the most simple C++ program for beginners.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
 
@@ -3438,15 +3684,15 @@ int main() {
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The provided code is a simple C++ program that prints &#34;Hello, World!&#34; to the console.&lt;/p&gt;
+&lt;p&gt;The provided code is a simple C++ program that prints &#34;Hello, World!&#34; to the console.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The first line &lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt; is a preprocessor directive that includes the iostream standard library. This library allows for input/output operations. In this case, it&#39;s used to output text to the console.&lt;/p&gt;
+&lt;p&gt;The first line &lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt; is a preprocessor directive that includes the iostream standard library. This library allows for input/output operations. In this case, it&#39;s used to output text to the console.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The next part is the &lt;code&gt;main&lt;/code&gt; function. In C++, execution of the program begins with the &lt;code&gt;main&lt;/code&gt; function, regardless of where the function is located within the code. The &lt;code&gt;main&lt;/code&gt; function is defined with the syntax &lt;code&gt;int main()&lt;/code&gt;. The &lt;code&gt;int&lt;/code&gt; before &lt;code&gt;main&lt;/code&gt; indicates that the function will return an integer value.&lt;/p&gt;
+&lt;p&gt;The next part is the &lt;code&gt;main&lt;/code&gt; function. In C++, execution of the program begins with the &lt;code&gt;main&lt;/code&gt; function, regardless of where the function is located within the code. The &lt;code&gt;main&lt;/code&gt; function is defined with the syntax &lt;code&gt;int main()&lt;/code&gt;. The &lt;code&gt;int&lt;/code&gt; before &lt;code&gt;main&lt;/code&gt; indicates that the function will return an integer value.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Inside the &lt;code&gt;main&lt;/code&gt; function, there&#39;s a statement &lt;code&gt;std::cout &amp;lt;&amp;lt; &#34;Hello, World!&#34; &amp;lt;&amp;lt; std::endl;&lt;/code&gt;. Here, &lt;code&gt;std::cout&lt;/code&gt; is an object of the &lt;code&gt;ostream&lt;/code&gt; class from the &lt;code&gt;iostream&lt;/code&gt; library. The &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; operator is used to send the string &#34;Hello, World!&#34; to the &lt;code&gt;cout&lt;/code&gt; object, which then outputs it to the console. The &lt;code&gt;std::endl&lt;/code&gt; is a manipulator that inserts a newline character and flushes the output buffer.&lt;/p&gt;
+&lt;p&gt;Inside the &lt;code&gt;main&lt;/code&gt; function, there&#39;s a statement &lt;code&gt;std::cout &amp;lt;&amp;lt; &#34;Hello, World!&#34; &amp;lt;&amp;lt; std::endl;&lt;/code&gt;. Here, &lt;code&gt;std::cout&lt;/code&gt; is an object of the &lt;code&gt;ostream&lt;/code&gt; class from the &lt;code&gt;iostream&lt;/code&gt; library. The &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; operator is used to send the string &#34;Hello, World!&#34; to the &lt;code&gt;cout&lt;/code&gt; object, which then outputs it to the console. The &lt;code&gt;std::endl&lt;/code&gt; is a manipulator that inserts a newline character and flushes the output buffer.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Finally, the &lt;code&gt;main&lt;/code&gt; function ends with &lt;code&gt;return 0;&lt;/code&gt;. This statement causes the program to exit and return a status of 0 to the operating system. In the context of the &lt;code&gt;main&lt;/code&gt; function, returning 0 typically indicates that the program has run successfully without any errors.&lt;/p&gt;
+&lt;p&gt;Finally, the &lt;code&gt;main&lt;/code&gt; function ends with &lt;code&gt;return 0;&lt;/code&gt;. This statement causes the program to exit and return a status of 0 to the operating system. In the context of the &lt;code&gt;main&lt;/code&gt; function, returning 0 typically indicates that the program has run successfully without any errors.
 
       </description>
     </item>
@@ -3460,7 +3706,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;In this example, we define a pointer and show how to view and change its value.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;In this example, we define a pointer and show how to view and change its value.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * @brief Main function that demonstrates pointer manipulation.
@@ -3550,7 +3796,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;In this example, we show how to calculate factorial using the do while loop.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;In this example, we show how to calculate factorial using the do while loop.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -3599,7 +3845,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -3649,7 +3895,7 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;In this example, we show how to calculate the factorial of the entered number with the help of a function.&lt;/p&gt;
+&lt;p&gt;In this example, we show how to calculate the factorial of the entered number with the help of a function.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -3684,7 +3930,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -3746,7 +3992,7 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.&lt;/p&gt;
+&lt;p&gt;Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 
@@ -3842,7 +4088,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cstdio&amp;gt;
@@ -3987,7 +4233,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cstring&amp;gt;

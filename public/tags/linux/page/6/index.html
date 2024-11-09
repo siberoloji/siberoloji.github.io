@@ -11205,19 +11205,19 @@ graphical.target</code></pre>
 <!-- /wp:code -->
  <p>You can see that the default opening target set in our system is the graphical interface "graphical.target". The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface.</p>
  <p>Well, if you don't need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as "multi-user.target" in our commands.</p>
-<h2>from graphical.target to multiuser-target</h2><span class="hx-absolute -hx-mt-20" id="from-graphicaltarget-to-multiuser-targeth2"></span>
+## from graphical.target to multiuser-target</h2><span class="hx-absolute -hx-mt-20" id="from-graphicaltarget-to-multiuser-targeth2"></span>
     <a href="#from-graphicaltarget-to-multiuser-targeth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate multi-user.target</code></pre>
 <!-- /wp:code -->
-<h2>from multiuser-target to graphical.target</h2><span class="hx-absolute -hx-mt-20" id="from-multiuser-target-to-graphicaltargeth2"></span>
+## from multiuser-target to graphical.target</h2><span class="hx-absolute -hx-mt-20" id="from-multiuser-target-to-graphicaltargeth2"></span>
     <a href="#from-multiuser-target-to-graphicaltargeth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate graphical.target</code></pre>
 <!-- /wp:code -->
-<h2>First boot default target setup</h2><span class="hx-absolute -hx-mt-20" id="first-boot-default-target-setuph2"></span>
+## First boot default target setup</h2><span class="hx-absolute -hx-mt-20" id="first-boot-default-target-setuph2"></span>
     <a href="#first-boot-default-target-setuph2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let's set which state we want your system to target when it first turns on. For this we will use the "systemctl set-default " command.</p>
 <!-- wp:code -->
@@ -11284,19 +11284,19 @@ graphical.target</code></pre>
 <!-- /wp:code -->
 <p>Sistemimizde ayarlanmış varsayılan açılış hedefinin grafik arayüz &ldquo;<code>graphical.target</code>&rdquo; olduğunu görebilirsiniz. Buradan çıkaracağımız sonuç, sistemimiz başladığında bütün servisler sırasıyla çalıştırılacak ve grafik arayüz ile masaüstü yöneticisine ulaşacaksınız.</p>
 <p>Peki masaüstüne ihtiyacınız yoksa veya ihtiyacınız kalmadı ise durdurup sistem kaynak kullanımını azaltmak isteyebilirsiniz. Bu durumda grafik arayüzünü durdurup konsol dediğimiz, komut satırı olarak da tabir edilen, komutlarımızda &ldquo;multi-user.target&rdquo; şeklinde ifade edeceğimiz ekrana nasıl geçeceğiz.</p>
-<h2>graphical.target tan multiuser-target a geçiş</h2><span class="hx-absolute -hx-mt-20" id="graphicaltarget-tan-multiuser-target-a-geçişh2"></span>
+## graphical.target tan multiuser-target a geçiş</h2><span class="hx-absolute -hx-mt-20" id="graphicaltarget-tan-multiuser-target-a-geçişh2"></span>
     <a href="#graphicaltarget-tan-multiuser-target-a-ge%c3%a7i%c5%9fh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Sistemimiz şu an graphical.target dediğimiz grafik arayüzde çalışıyor.  Burada yapılan işlem masaüstü ekranında Terminal penceresi açmak değildir. Masaüstü yöneticisini tamamen durdurmaktır. Dikkat etmelisiniz. Aşağıdaki komut sayesinde artık masaüstü yöneticisi ve grafik arayüz kullanan programlar tamamen durduruldu. Komut satırındasınız.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate multi-user.target</code></pre>
 <!-- /wp:code -->
-<h2>multiuser-target tan graphical.target a geçiş</h2><span class="hx-absolute -hx-mt-20" id="multiuser-target-tan-graphicaltarget-a-geçişh2"></span>
+## multiuser-target tan graphical.target a geçiş</h2><span class="hx-absolute -hx-mt-20" id="multiuser-target-tan-graphicaltarget-a-geçişh2"></span>
     <a href="#multiuser-target-tan-graphicaltarget-a-ge%c3%a7i%c5%9fh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Grafik arayüzü tekrar başlatmak isterseniz aşağıdaki komutu kullanabilirsiniz. Bu komut sonucunda grafik arayüz ve masaüstü yöneticisi tekrar başlatılacaktır</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate graphical.target</code></pre>
 <!-- /wp:code -->
-<h2>İlk açılış varsayılan hedef ayarı</h2><span class="hx-absolute -hx-mt-20" id="ilk-açılış-varsayılan-hedef-ayarıh2"></span>
+## İlk açılış varsayılan hedef ayarı</h2><span class="hx-absolute -hx-mt-20" id="ilk-açılış-varsayılan-hedef-ayarıh2"></span>
     <a href="#ilk-a%c3%a7%c4%b1l%c4%b1%c5%9f-varsay%c4%b1lan-hedef-ayar%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Yukarıda verdiğimiz geçiş komutları, sistem açıldıktan sonra başlatma, sonlandırma ve geçiş işlemleri için kullanılmaktadır. Şimdi ise, sisteminiz ilk açıldığında hangi durumu hedef almasını istediğimizi ayarlayalım. Bunun için &ldquo;systemctl set-default &quot; komutunu kullanacağız.</p>
 <!-- wp:code -->

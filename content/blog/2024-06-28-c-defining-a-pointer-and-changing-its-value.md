@@ -27,7 +27,7 @@ title: C++ Defining a Pointer and changing its value
 url: /c-defining-a-pointer-and-changing-its-value/
 ---
 
-  In this example, we define a pointer and show how to view and change its value.</p>
+  In this example, we define a pointer and show how to view and change its value.
  
 
 <!-- wp:code -->

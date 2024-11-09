@@ -32,7 +32,7 @@ url: /fish-a-different-approach-to-the-command-line/
  
 
  
- ## Fish Installation for Debian:</h2>
+ ## Fish Installation for Debian:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -48,7 +48,7 @@ apt-get install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Fish Installation for Ubuntu:</h2>
+ ## Fish Installation for Ubuntu:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -61,7 +61,7 @@ sudo apt-get install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Fish Installation for Fedora:</h2>
+ ## Fish Installation for Fedora:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -82,7 +82,7 @@ yum install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Fish Installation for CentOS:</h2>
+ ## Fish Installation for CentOS:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -98,7 +98,7 @@ yum install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Fish Installation for RHEL:</h2>
+ ## Fish Installation for RHEL:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -113,7 +113,7 @@ wget http://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHEL
 yum install fish</code></pre>
 <!-- /wp:code -->
 
-  <strong>To start</strong> 
+  ***To start***  
  
 
 <!-- wp:code -->

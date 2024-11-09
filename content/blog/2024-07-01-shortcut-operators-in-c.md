@@ -29,7 +29,7 @@ url: /shortcut-operators-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -71,7 +71,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided code is a C++ program that demonstrates the use of shortcut operators. It includes the <code>iostream</code> library, which is used for input/output operations, and the <code>std</code> namespace is being used. 
@@ -111,7 +111,7 @@ cout &lt;&lt; "num9 = " &lt;&lt; num9 &lt;&lt; endl;</code></pre>
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -20,7 +20,7 @@ title: Basic Terminology in Kotlin
 url: /basic-terminology-in-kotlin/
 ---
 
-  We should learn Kotlin Programming Language Basic terminology at the beginning.</p>
+  We should learn Kotlin Programming Language Basic terminology at the beginning.
  
 
 <!-- wp:more -->
@@ -28,38 +28,38 @@ url: /basic-terminology-in-kotlin/
 <!-- /wp:more -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>A <strong>program </strong>is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;</li>
+ <!-- wp:list-item -->
+- A ***program *** is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A <strong>statement </strong>(or a programming statement) is a single command to be executed (like printing a text);</li>
+- A ***statement *** (or a programming statement) is a single command to be executed (like printing a text); 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>An <strong>expression </strong>is a piece of code that produces a single value (for example, 2*2 is an expression);</li>
+- An ***expression *** is a piece of code that produces a single value (for example, 2*2 is an expression); 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A <strong>block </strong>is a group of zero or more statements enclosed in a pair of curly braces <code>{...}</code>; our program consists of a single block;</li>
+- A ***block *** is a group of zero or more statements enclosed in a pair of curly braces <code>{...}</code>; our program consists of a single block; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A <strong>keyword </strong>is a word that has a special meaning in the programming language. Names of keywords can't be changed;</li>
+- A ***keyword *** is a word that has a special meaning in the programming language. Names of keywords can't be changed; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>An <strong>identifier</strong> (or a name) is a word written by the programmer to identify something;</li>
+- An ***identifier***  (or a name) is a word written by the programmer to identify something; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>A <strong>comment</strong> is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with <code>//</code>;</li>
+- A ***comment***  is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with <code>//</code>; 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Whitespace </strong>is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability.</li>
-<!-- /wp:list-item --></ul>
+- ***Whitespace *** is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  Credit: <a href="https://hyperskill.org/" target="_blank" rel="noreferrer noopener">https://hyperskill.org/</a></p>
+  Credit: <a href="https://hyperskill.org/" target="_blank" rel="noreferrer noopener">https://hyperskill.org/</a>
  

@@ -32,7 +32,7 @@ url: /tr/systemd-nedir-genel-yapisi-nasildir/
  
 
  
- ## Kısaca systemd Hikayesi</h2>
+ ## Kısaca systemd Hikayesi
 <!-- /wp:heading -->
 
   2010 yılında, Lennart Poettering, bir&nbsp;<a href="http://0pointer.de/blog/projects/systemd.html" target="_blank" rel="noreferrer noopener">blog</a>&nbsp;yazısıyla konuyu açıklar. &nbsp;Lennart Poettering, Kay Sievers, Harald Hoyer, Daniel Mack, Tom Gundersen, ve David Herrmann tarafından, C programlama diliyle geliştirilen yazılımın ilk sürümü 30 Mart &nbsp;2010 tarihinde yayınlanmıştır. Programın resmi&nbsp;<a href="http://www.freedesktop.org/wiki/" target="_blank" rel="noreferrer noopener">web sitesine</a>&nbsp;buradan ulaşabilirsiniz. 
@@ -42,7 +42,7 @@ url: /tr/systemd-nedir-genel-yapisi-nasildir/
  
 
  
- ## systemd kullandığı temel yaklaşım</h2>
+ ## systemd kullandığı temel yaklaşım
 <!-- /wp:heading -->
 
   systemd kullanmayan Linux sistemlerinde, açılış yöneticisi, PID 1 numara olarak, öncelikle açılış işlemlerini yönetecek programı (init) çalıştırır. Devamında diğer servisler başlatılır. Örneğin, Avahi hizmeti, D-Bus hizmetine ihtiyaç duyar. O zaman, açılışta önce D-Bus başlatılacak, Avahi sırada bekleyecektir. livirtd ve X11 servisleri, HAL hizmetine ihtiyaç duyarlar. O zaman önce HAL servisi başlayacaktır. Tüm bu servisler, syslog servisine ihtiyaç duyduklarından, hepsinden önce syslog başlayacaktır. Klasik Linux açılışı bu mantıkla çalışır. 
@@ -55,7 +55,7 @@ url: /tr/systemd-nedir-genel-yapisi-nasildir/
  
 
  
- ## İtirazlar, çekinceler</h2>
+ ## İtirazlar, çekinceler
 <!-- /wp:heading -->
 
   systemd, anlatılan bu işlemleri, önceden derlenmiş binary programlarla yapar. Kullanıcının müdahalesine pek müsaade etmez. Bir takım parametreleri kontrol etmenize izin verilse de genelde işlemler önceden ayarlanmıştır. systemd öncesinde kullanılan hizmet programları (Upstart veya sysvinit), uyguladıkları prosedürleri kabuk -shell- aracılığıyla&nbsp;yaparlar. Bu sebeple, kullanıcıların, kabuk -shell- kullanarak kişisel ayarlamalar yapabilme imkanı vardır. systemd ise kabuk üzerinden işlem yapmaz. Bu nedenle, fayda ve mahzurları üzerinde çok tartışılmaktadır. Açık kaynak kodlu, özgür yazılım mantığına ters olduğu için kabul etmeyenler, systemd programının, windows svchost.exe olmaya aday olduğu belirtmektedir. Kullanılabilir bularak, tercihli veya varsayılan olarak dağıtımlara dahil edenler de bulunmaktadır.&nbsp;Yazının son kısmında, systemd kullanmaya başlayan bir kaç dağıtım listelenmiştir. 
@@ -70,11 +70,11 @@ url: /tr/systemd-nedir-genel-yapisi-nasildir/
   Ubuntu Türkiye&nbsp;<a href="https://forum.ubuntu-tr.net/index.php?topic=45368.5" target="_blank" rel="noreferrer noopener">forumunda</a>&nbsp;Forum Sorumlusu ve Genel Yönetici olan heartsmagic; “Kendi adıma, ben de bir projenin (systemd) bu kadar fazla işi yapmaya çalışmasını anlayamıyorum. Büyük dağıtımların son kullanıcı kararları nedeniyle, Unix felsefesinden zaten gittikçe uzaklaşıyoruz. Hadi üst taraftaki kararlar neyse de, şimdi ise sistemin bel kemiklerinden biri bu hâle getiriliyor. Unix felsefesinde -eğer yanlış bilmiyorsam- bir araç yazarsın, görevi neyse onu yapar. Systemd, maşallah her işe el atmaya çalışıyor ve ikilik sistem üzerinde çalışıyor ki -kodlama tarafım olmasa da- geliştiriciler bundan nefret ediyor. “ şeklinde düşüncelerini ifade ediyor ve “Beğensek de, beğenmesek de, sevabıyla, günahıyla, Ubuntu ve diğer büyük dağıtımlar systemd'ye geçecek .” ifadesiyle büyük dağıtımların buna geçeceğini, son kullanıcıların da ayak uydurmak durumunda kalacaklarını belirtiyor. 
  
 
-  Aşağıda, systemd programını&nbsp;<strong>varsayılan</strong>&nbsp;olarak kullanmaya başlayan Linux dağıtımlarından bir kaçını görebilirsiniz. 
+  Aşağıda, systemd programını&nbsp;***varsayılan*** &nbsp;olarak kullanmaya başlayan Linux dağıtımlarından bir kaçını görebilirsiniz. 
  
 
  
- ## Dağıtım ve başlangıç tarihleri</h2>
+ ## Dağıtım ve başlangıç tarihleri
 <!-- /wp:heading -->
 
   Fedora, Mayıs 2011 

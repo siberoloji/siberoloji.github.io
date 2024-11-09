@@ -36,7 +36,7 @@ url: /tr/fish-komut-satirina-farkli-bir-yaklasim/
  
 
  
- ## Debian için Fish Kurulum:</h2>
+ ## Debian için Fish Kurulum:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -52,7 +52,7 @@ apt-get install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Ubuntu için Fish Kurulum:</h2>
+ ## Ubuntu için Fish Kurulum:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -65,7 +65,7 @@ sudo apt-get install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## Fedora için Fish Kurulum:</h2>
+ ## Fedora için Fish Kurulum:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -86,7 +86,7 @@ yum install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## CentOS için Fish Kurulum:</h2>
+ ## CentOS için Fish Kurulum:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -102,7 +102,7 @@ yum install fish</code></pre>
 <!-- /wp:code -->
 
  
- ## RHEL için Fish Kurulum:</h2>
+ ## RHEL için Fish Kurulum:
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -117,7 +117,7 @@ wget <a href="http://download.opensuse.org/repositories/shells:fish:release:2/Re
 yum install fish</code></pre>
 <!-- /wp:code -->
 
-  <strong>Başlatmak için</strong> 
+  ***Başlatmak için***  
  
 
 <!-- wp:code -->

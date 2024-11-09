@@ -20,47 +20,47 @@ title: Configuring SIP Trunks in FreeSWITCH
 url: /configuring-sip-trunks-in-freeswitch/
 ---
 
-  SIP trunking is a crucial component of modern VoIP systems, allowing FreeSWITCH to connect with external service providers for making and receiving calls. This comprehensive guide will walk you through the process of configuring SIP trunks in FreeSWITCH, from basic setup to advanced configurations.</p>
+  SIP trunking is a crucial component of modern VoIP systems, allowing FreeSWITCH to connect with external service providers for making and receiving calls. This comprehensive guide will walk you through the process of configuring SIP trunks in FreeSWITCH, from basic setup to advanced configurations.
  
 
  
- ## Understanding SIP Trunks</h2>
+ ## Understanding SIP Trunks
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### What is an SIP Trunk?</h3>
+
+ ### What is an SIP Trunk?
 <!-- /wp:heading -->
 
-  A SIP trunk is a virtual connection between your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system and an Internet Telephony Service Provider (ITSP). It enables:</p>
+  A SIP trunk is a virtual connection between your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system and an Internet Telephony Service Provider (ITSP). It enables:
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Outbound calls to the PSTN network</li>
+- Outbound calls to the PSTN network 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Inbound calls from external numbers</li>
+- Inbound calls from external numbers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cost-effective long-distance calling</li>
+- Cost-effective long-distance calling 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Multiple concurrent call channels</li>
-<!-- /wp:list-item --></ul>
+- Multiple concurrent call channels 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Basic SIP Trunk Configuration</h2>
+ ## Basic SIP Trunk Configuration
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Gateway Configuration</h3>
+
+ ### 1. Gateway Configuration
 <!-- /wp:heading -->
 
-  Create a new file in <code>/usr/local/freeswitch/conf/sip_profiles/external/</code>:</p>
+  Create a new file in <code>/usr/local/freeswitch/conf/sip_profiles/external/</code>:
  
 
 <!-- wp:code -->
@@ -77,11 +77,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. External Profile Configuration</h3>
+
+ ### 2. External Profile Configuration
 <!-- /wp:heading -->
 
-  Modify <code>/usr/local/freeswitch/conf/sip_profiles/external.xml</code>:</p>
+  Modify <code>/usr/local/freeswitch/conf/sip_profiles/external.xml</code>:
  
 
 <!-- wp:code -->
@@ -97,11 +97,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Advanced Gateway Parameters</h2>
+ ## Advanced Gateway Parameters
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Authentication and Registration</h3>
+
+ ### 1. Authentication and Registration
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -115,8 +115,8 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Codec Configuration</h3>
+
+ ### 2. Codec Configuration
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -129,14 +129,14 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Routing Configuration</h2>
+ ## Routing Configuration
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Outbound Route Setup</h3>
+
+ ### 1. Outbound Route Setup
 <!-- /wp:heading -->
 
-  Create <code>/usr/local/freeswitch/conf/dialplan/default/03_outbound.xml</code>:</p>
+  Create <code>/usr/local/freeswitch/conf/dialplan/default/03_outbound.xml</code>:
  
 
 <!-- wp:code -->
@@ -153,11 +153,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Inbound Route Setup</h3>
+
+ ### 2. Inbound Route Setup
 <!-- /wp:heading -->
 
-  Create <code>/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml</code>:</p>
+  Create <code>/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml</code>:
  
 
 <!-- wp:code -->
@@ -174,11 +174,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Failover and Load Balancing</h2>
+ ## Failover and Load Balancing
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Multiple Gateway Setup</h3>
+
+ ### 1. Multiple Gateway Setup
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -195,8 +195,8 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Failover Dialplan</h3>
+
+ ### 2. Failover Dialplan
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -209,11 +209,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Security Configurations</h2>
+ ## Security Configurations
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. TLS Setup</h3>
+
+ ### 1. TLS Setup
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -227,8 +227,8 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Access Control Lists</h3>
+
+ ### 2. Access Control Lists
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -243,11 +243,11 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Quality of Service (QoS)</h2>
+ ## Quality of Service (QoS)
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. RTP Configuration</h3>
+
+ ### 1. RTP Configuration
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -261,8 +261,8 @@ url: /configuring-sip-trunks-in-freeswitch/
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Bandwidth Management</h3>
+
+ ### 2. Bandwidth Management
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -275,14 +275,14 @@ url: /configuring-sip-trunks-in-freeswitch/
 <!-- /wp:code -->
 
  
- ## Monitoring and Troubleshooting</h2>
+ ## Monitoring and Troubleshooting
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Sofia Status Commands</h3>
+
+ ### 1. Sofia Status Commands
 <!-- /wp:heading -->
 
-  In fs_cli:</p>
+  In fs_cli:
  
 
 <!-- wp:code -->
@@ -291,8 +291,8 @@ sofia status gateway my_provider
 sofia loglevel all 9</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Logging Configuration</h3>
+
+ ### 2. Logging Configuration
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -303,81 +303,81 @@ sofia loglevel all 9</code></pre>
 <!-- /wp:code -->
 
  
- ## Best Practices</h2>
+ ## Best Practices
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Gateway Organization</h3>
+
+ ### 1. Gateway Organization
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Use meaningful gateway names</li>
+- Use meaningful gateway names 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Group similar providers</li>
+- Group similar providers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Document configurations</li>
+- Document configurations 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Regular backup of configurations</li>
-<!-- /wp:list-item --></ul>
+- Regular backup of configurations 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Security Measures</h3>
+
+ ### 2. Security Measures
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Implement strong passwords</li>
+- Implement strong passwords 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use TLS when possible</li>
+- Use TLS when possible 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Regular security audits</li>
+- Regular security audits 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Monitor for suspicious activity</li>
-<!-- /wp:list-item --></ul>
+- Monitor for suspicious activity 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Performance Optimization</h3>
+
+ ### 3. Performance Optimization
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Regular monitoring of call quality</li>
+- Regular monitoring of call quality 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bandwidth management</li>
+- Bandwidth management 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Codec optimization</li>
+- Codec optimization 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Connection testing</li>
-<!-- /wp:list-item --></ul>
+- Connection testing 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Testing and Verification</h2>
+ ## Testing and Verification
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Basic Tests</h3>
+
+ ### 1. Basic Tests
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -391,81 +391,81 @@ fs_cli -x "originate sofia/gateway/my_provider/11234567890 &amp;echo"
 fs_cli -x "sofia global siptrace on"</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Ongoing Maintenance</h3>
+
+ ### 2. Ongoing Maintenance
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Regular registration checks</li>
+- Regular registration checks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Call quality monitoring</li>
+- Call quality monitoring 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Performance metrics collection</li>
+- Performance metrics collection 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Log analysis</li>
-<!-- /wp:list-item --></ul>
+- Log analysis 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
-  Properly configured SIP trunks are essential for a reliable FreeSWITCH system. Key points to remember for configuring SIP trunks in FreeSWITCH:</p>
+  Properly configured SIP trunks are essential for a reliable FreeSWITCH system. Key points to remember for configuring SIP trunks in FreeSWITCH:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Start with basic configuration and build up</li>
+- Start with basic configuration and build up 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Implement proper security measures</li>
+- Implement proper security measures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Monitor and maintain regularly</li>
+- Monitor and maintain regularly 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Document all changes</li>
+- Document all changes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Test thoroughly before production deployment</li>
-<!-- /wp:list-item --></ol>
+- Test thoroughly before production deployment 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  As your system grows, consider:</p>
+  As your system grows, consider:
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Implementing redundancy</li>
+- Implementing redundancy 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Load balancing</li>
+- Load balancing 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Advanced security measures</li>
+- Advanced security measures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quality of service optimization</li>
+- Quality of service optimization 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Regular audits and updates</li>
-<!-- /wp:list-item --></ul>
+- Regular audits and updates 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  Keep your FreeSWITCH system up to date and regularly check for security advisories and best practices from your ITSP and the FreeSWITCH community.</p>
+  Keep your FreeSWITCH system up to date and regularly check for security advisories and best practices from your ITSP and the FreeSWITCH community.
  

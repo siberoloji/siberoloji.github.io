@@ -36,13 +36,13 @@ url: /tr/safaride-sayfa-kodlari-nasil-goruntulenir/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Safari tarayıcınızı açın ve görüntülemek istediğiniz web sayfasına gidin.</li>
+ <!-- wp:list-item -->
+- Safari tarayıcınızı açın ve görüntülemek istediğiniz web sayfasına gidin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Üst menü çubuğundan Geliştir > Sayfa Kaynağını Göster'i seçin. Klavyenizde Option+Command+U tuşlarına da basabilirsiniz.</li>
-<!-- /wp:list-item --></ul>
+- Üst menü çubuğundan Geliştir > Sayfa Kaynağını Göster'i seçin. Klavyenizde Option+Command+U tuşlarına da basabilirsiniz. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Geliştirme menüsü görünmüyorsa Tercihler > Gelişmiş'e gidin ve menü çubuğunda Geliştirmeyi Göster menüsünü seçin. 

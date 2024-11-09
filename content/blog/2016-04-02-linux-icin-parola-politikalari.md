@@ -35,7 +35,7 @@ url: /tr/linux-icin-parola-politikalari/
   Linux dağıtımlarının bir çoğu, kurulum esnasında kullanıcıyı rahatsız etmeyecek kuralların bulunduğu politikaları varsayılan olarak seçerler. Parolanın&nbsp;değiştirilme zorunluluğu, kaç gün arayla değiştirilmesi gerektiği veya kaç gün değiştirilmez ise hesabın kilitleneceği gibi kuralları sonradan belirlemek gerekir. &nbsp; 
  
 
-  Bu tür ayarları yapmak isterseniz,&nbsp;<strong>chage</strong>&nbsp;olarak adlandırılan bir komutu kullanmalısınız. Kullanımı kolay ve basit olan bu komut, seçeceğiniz parola politikalarının oluşturulmasında size çok yardım olacaktır. Yardım (help) ve Kılavuz (man) sayfalarından seçenekleri ve yapabileceklerinizi görmeniz mümkün. 
+  Bu tür ayarları yapmak isterseniz,&nbsp;***chage*** &nbsp;olarak adlandırılan bir komutu kullanmalısınız. Kullanımı kolay ve basit olan bu komut, seçeceğiniz parola politikalarının oluşturulmasında size çok yardım olacaktır. Yardım (help) ve Kılavuz (man) sayfalarından seçenekleri ve yapabileceklerinizi görmeniz mümkün. 
  
 
 <!-- wp:code -->

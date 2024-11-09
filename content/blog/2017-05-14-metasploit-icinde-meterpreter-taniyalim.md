@@ -51,21 +51,21 @@ url: /tr/metasploit-icinde-meterpreter-taniyalim/
 <!-- /wp:heading -->
 
  
-<h2 class="wp-block-heading" id="gizlilik">Gizlilik</h2>
+<h2 class="wp-block-heading" id="gizlilik">Gizlilik
 <!-- /wp:heading -->
 
   Meterpreter tamamen RAM üzerinde çalışır ve Hard Diske herhangi bir yazma işlemi yapmaz. Meterpreter çalıştığında karşı sistemde yeni bir proses oluşturulmaz. Meterpreter, Metasploit ile iletişimini kriptolu olarak yapar. Tüm bu imkanlar, karşı tarafta olabildiğince az iz bırakır. 
  
 
  
-<h2 class="wp-block-heading" id="güçlü">Güçlü</h2>
+<h2 class="wp-block-heading" id="güçlü">Güçlü
 <!-- /wp:heading -->
 
   Meterpreter, kanallara bölünmüş bir haberleşme kullanır. Meterpreter’in kullandığı TLV Protokolünün bir kaç kısıtı bulunmaktadır. 
  
 
  
-<h2 class="wp-block-heading" id="genişletilebilir">Genişletilebilir</h2>
+<h2 class="wp-block-heading" id="genişletilebilir">Genişletilebilir
 <!-- /wp:heading -->
 
   Meterpreter çalıştığı anda bile yeni modüllerle genişletilebilir. Yeni kodlar ve özellikler eklendiğinde tekrar derlenmesine gerek yoktur. 

@@ -41,7 +41,7 @@ url: /tr/systemd-araclari-genel-kullanim-alanlari/
  
 
  
- ## Bilgisayarda mevcut servislerle ilgili neler yapılabilir?</h2>
+ ## Bilgisayarda mevcut servislerle ilgili neler yapılabilir?
 <!-- /wp:heading -->
 
   Yapılabilecek işlemlere Başlatmak (start), Durdurmak (stop), Tekrar Başlatmak (restart), İptal Etmek (disable), Kullanıma Sokmak (enable) örnek olarak verilebilir. &nbsp;İşte systemd ile bunları yapmak mümkün. Zaten sysvinit ile yapılıyordu ancak şimdi daha hızlı yapılabiliyor. En azından systemd öyle olmalı ki ana dağıtımlar geçmeyi tercih ettiler. 
@@ -51,70 +51,70 @@ url: /tr/systemd-araclari-genel-kullanim-alanlari/
  
 
  
- ## Systemd Araçları</h2>
+ ## Systemd Araçları
 <!-- /wp:heading -->
 
   Sisteminizde, systemd çalışıyorsa, istediğiniz soruyu sorup cevabını alabilirsiniz. O zaman, kullanıcılar olarak bizim “soru sormayı” öğrenmemiz ve hangi aracı kullanarak bunu yapacağımızı bilmemiz gerekiyor. systemd içerisinde, en dış katmanda, kullanıcı ile etkileşimli, 8 adet araç bulunmaktadır. Bunlar, systemctl, journalctl, notify, analyze, cgls, cgtop, loginctl ve nspawn olarak isimlendirilirler. Bu araçların &nbsp;seçeneklerini, parametrelerini ve ünite isimlerini kullanarak systemd ile etkileşim kurabilirsiniz. Durum sorgulayıp cevap beklersiniz, aldığınız cevaba göre bir hizmeti başlatıp, durdurabilir veya devre dışı bırakabilirsiniz. 
  
 
-  <strong>İPUCU:</strong>&nbsp;Hatta isterseniz, snapshot hizmetini kullanarak, sisteminizin çalışan servislerinin durumunu fotoğraflayıp, bir arıza olduğunda bu duruma sisteminizi geri yükleme imkanınız da var. (Bilgisayarınızı kapatmadığınız sürece. Kapatınca, snapshot silinir.) 
+  ***İPUCU:*** &nbsp;Hatta isterseniz, snapshot hizmetini kullanarak, sisteminizin çalışan servislerinin durumunu fotoğraflayıp, bir arıza olduğunda bu duruma sisteminizi geri yükleme imkanınız da var. (Bilgisayarınızı kapatmadığınız sürece. Kapatınca, snapshot silinir.) 
  
 
  
- ## Systemd Araçları</h2>
+ ## Systemd Araçları
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### systemctl</h3>
+
+ ### systemctl
 <!-- /wp:heading -->
 
   systemd sistemini ve servislerini kontrol eden aracı ifade eder. 
  
 
-<!-- wp:heading {"level":3} -->
- ### journalctl</h3>
+
+ ### journalctl
 <!-- /wp:heading -->
 
   olayları kontrol edip raporlayabilmek için systemd log dosyalarını kontrol eden aracı ifade eder. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-notify</h3>
+
+ ### systemd-notify
 <!-- /wp:heading -->
 
   Ünitelerin durumlarında bir değişiklik olduğunda, diğer hizmetleri ve kullanıcıları bilgilendirmek için kullanılan bir araçtır. Genelde, açılış esnasında meydana gelen hatalarla ilgilidir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-analyze</h3>
+
+ ### systemd-analyze
 <!-- /wp:heading -->
 
   Sisteminizin açılış esnasında geçen zamanın istatistik ve incelemesini analiz eder. Çekirdek (kernel) başlangıç zamanı ve kullanıcı işlemleri başlangıç zamanı ayrı ayrı ölçülür ve gösterilir. Bu süreleri analiz etmeye yarayan araçtır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-cgls</h3>
+
+ ### systemd-cgls
 <!-- /wp:heading -->
 
   systemd çalışma mantığında yer alan kontrol gruplarının durumunu ve hangi kontrol grubunda ve alt basamaklarında hangi servislerin çalıştığını kontrol etmeye yarayan araçtır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-cgtop</h3>
+
+ ### systemd-cgtop
 <!-- /wp:heading -->
 
   systemd-cgls aracında, tüm ana grup ve üyeleri hiyerarşik olarak gösterilirken, systemd-cgtop aracında ise en üstte bulunan ana grup ve sistem kullanımı görüntülenir. sysvinit içerisinde &nbsp;“service --status-all” komutuna benzer. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-loginctl</h3>
+
+ ### systemd-loginctl
 <!-- /wp:heading -->
 
   İşletim Sisteminin oturum açma işlemlerini kontrol eden araçtır. Oturum açma yöneticisi diye tanımlanabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### systemd-nspawn</h3>
+
+ ### systemd-nspawn
 <!-- /wp:heading -->
 
   Hata ayıklama ve simülasyon yapmak için kullanılan bir araçtır. chroot aracına benzer ancak daha fazlasıdır. Bir programın, hatta başka bir işletim sisteminin, izole edilmiş halde, sistemin gerçek kaynaklarına zarar vermeden çalıştırılmasını sağlar. Yazılım geliştiriciler için oldukça kullanışlıdır.<br>Bu yazımızda, mümkün olduğunca anlaşılır şekilde systemd araçların en önemlilerinden bahsettik. İlerleyen yazılarda, detaylı anlatım ve örnekler vermeye çalışacağız. 

@@ -31,22 +31,22 @@ url: /tr/macos-isletim-sisteminde-hosts-dosyasi-yeri-nerede/
  
 
  
- ## Hosts dosyasında değişiklik nasıl yapılır?</h2>
+ ## Hosts dosyasında değişiklik nasıl yapılır?
 <!-- /wp:heading -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Hosts dosyasını açalım</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Hosts dosyasını açalım 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Command+Spacebar</strong> tuşları yardımıyla Spotlight ı açalım. Arama kutusuna "Terminal" yazarak terminal uygulamasını açalım. 
+  ***Command+Spacebar***  tuşları yardımıyla Spotlight ı açalım. Arama kutusuna "Terminal" yazarak terminal uygulamasını açalım. 
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Komut satırından nano editör ile <em>hosts</em> dosyasını açalım. Komutu girdiğinizde parolanızı soracaktır.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Komut satırından nano editör ile <em>hosts</em> dosyasını açalım. Komutu girdiğinizde parolanızı soracaktır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -64,9 +64,9 @@ url: /tr/macos-isletim-sisteminde-hosts-dosyasi-yeri-nerede/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Bu durumda <em>hosts</em> dosyasına aşağıdaki satırı eklemelisiniz. </li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Bu durumda <em>hosts</em> dosyasına aşağıdaki satırı eklemelisiniz.  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   192.168.1.20 benimsunucum.com 
@@ -76,24 +76,24 @@ url: /tr/macos-isletim-sisteminde-hosts-dosyasi-yeri-nerede/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Flush DNS Cache</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Flush DNS Cache 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Yaptığınız değişikliklerin etkili olabilmesi için bilgisayarınızda tutulan DNS geçici kayıtlarını temizlemelisiniz. Bunun için aşağıdaki komutlar yeterli olacaktır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### macOS Monterey, Big Sur</h3>
+
+ ### macOS Monterey, Big Sur
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### <strong>macOS Catalina, Mojave, High Sierra, Sierra, Mountain Lion, Lion</strong></h3>
+
+ ### ***macOS Catalina, Mojave, High Sierra, Sierra, Mountain Lion, Lion*** 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -101,7 +101,7 @@ url: /tr/macos-isletim-sisteminde-hosts-dosyasi-yeri-nerede/
 <!-- /wp:code -->
 
  
- ## Sonuç</h2>
+ ## Sonuç
 <!-- /wp:heading -->
 
   Bu yazımızda, hosts dosyasını düzenleyerek DNS sunucudan gelen sonuçlar yerine kendi IP adres tanımlamamızı yapmış olduk. Bu sayede, public IP adresimiz olmasa bile kendi ev sunucumuzu sistemimizde IP adresi yerine hostname girerek kullanabileceğimizi açıkladık. 

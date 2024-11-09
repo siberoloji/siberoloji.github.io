@@ -47,7 +47,7 @@ url: /tr/uzun-sure-ekran-karsisinda-vakit-geciriyorsaniz-redshift-kullanin/
  
 
  
- ## Redshift Ubuntu - Debian Kurulum</h2>
+ ## Redshift Ubuntu - Debian Kurulum
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -55,7 +55,7 @@ url: /tr/uzun-sure-ekran-karsisinda-vakit-geciriyorsaniz-redshift-kullanin/
 <!-- /wp:code -->
 
  
- ## Redshift&nbsp;CentOS - Fedora Kurulum</h2>
+ ## Redshift&nbsp;CentOS - Fedora Kurulum
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -63,7 +63,7 @@ url: /tr/uzun-sure-ekran-karsisinda-vakit-geciriyorsaniz-redshift-kullanin/
 <!-- /wp:code -->
 
  
- ## Redshift&nbsp;Yardım</h2>
+ ## Redshift&nbsp;Yardım
 <!-- /wp:heading -->
 
   Redshift programını, komut satırından kontrol etmeniz de mümkün. Aşağıdaki yardım komutu ile açıklamaları okuyabilirsiniz. 
@@ -76,7 +76,7 @@ url: /tr/uzun-sure-ekran-karsisinda-vakit-geciriyorsaniz-redshift-kullanin/
 <!-- /wp:code -->
 
  
- ## Redshift&nbsp;Ayarlar Dosyası</h2>
+ ## Redshift&nbsp;Ayarlar Dosyası
 <!-- /wp:heading -->
 
   Programın ayarlarının bulunduğu dosyayı,&nbsp;~/.config/redshift.conf adresinde bulabilirsiniz. 

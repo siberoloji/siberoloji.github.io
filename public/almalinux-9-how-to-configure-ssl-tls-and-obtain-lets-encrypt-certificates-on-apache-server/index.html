@@ -24,7 +24,7 @@
   <meta itemprop="description" content="In today’s world, where online security is paramount, encrypting the communication between a web server and its users has become essential. Using SSL/TLS (Secure Sockets Layer/Transport Layer Security) certificates provides that layer of security, ensuring that sensitive information exchanged between a browser and a server is encrypted. One of the most popular and cost-effective ways to implement SSL/TLS is by using Let’s Encrypt, a free certificate authority that provides trusted SSL/TLS certificates for your websites.">
   <meta itemprop="datePublished" content="2024-10-04T20:12:00+00:00">
   <meta itemprop="dateModified" content="2024-10-04T20:12:00+00:00">
-  <meta itemprop="wordCount" content="1143">
+  <meta itemprop="wordCount" content="1151">
   <meta itemprop="keywords" content="Apache Web Server,How-to Guides,Linux,Linux How-To,Ssl Certificate">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Configure SSL/TLS and Obtain Let’s Encrypt Certificates on Apache Server">
@@ -5647,63 +5647,63 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#table-of-contentsh2"
+                href="#table-of-contents"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Table of Contents&lt;/h2&gt;</a>
+              >Table of Contents</a>
             </li>
           <li>
               <a
-                href="#1-understanding-ssltls-and-lets-encrypth2"
+                href="#1-understanding-ssltls-and-lets-encrypt"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >1. Understanding SSL/TLS and Let’s Encrypt&lt;/h2&gt;</a>
+              >1. Understanding SSL/TLS and Let’s Encrypt</a>
             </li>
           <li>
               <a
-                href="#2-prerequisitesh2"
+                href="#2-prerequisites"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >2. Prerequisites&lt;/h2&gt;</a>
+              >2. Prerequisites</a>
             </li>
           <li>
               <a
-                href="#3-step-1-installing-apache-on-almalinux-9h2"
+                href="#3-step-1-installing-apache-on-almalinux-9"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >3. Step 1: Installing Apache on AlmaLinux 9&lt;/h2&gt;</a>
+              >3. Step 1: Installing Apache on AlmaLinux 9</a>
             </li>
           <li>
               <a
-                href="#4-step-2-installing-certbot-for-lets-encrypth2"
+                href="#4-step-2-installing-certbot-for-lets-encrypt"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >4. Step 2: Installing Certbot for Let’s Encrypt&lt;/h2&gt;</a>
+              >4. Step 2: Installing Certbot for Let’s Encrypt</a>
             </li>
           <li>
               <a
-                href="#5-step-3-setting-up-the-firewallh2"
+                href="#5-step-3-setting-up-the-firewall"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >5. Step 3: Setting Up the Firewall&lt;/h2&gt;</a>
+              >5. Step 3: Setting Up the Firewall</a>
             </li>
           <li>
               <a
-                href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2"
+                href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificate"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate&lt;/h2&gt;</a>
+              >6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate</a>
             </li>
           <li>
               <a
-                href="#7-step-5-configuring-apache-to-use-ssltls-certificatesh2"
+                href="#7-step-5-configuring-apache-to-use-ssltls-certificates"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >7. Step 5: Configuring Apache to Use SSL/TLS Certificates&lt;/h2&gt;</a>
+              >7. Step 5: Configuring Apache to Use SSL/TLS Certificates</a>
             </li>
           <li>
               <a
-                href="#8-step-6-auto-renewal-of-lets-encrypt-certificatesh2"
+                href="#8-step-6-auto-renewal-of-lets-encrypt-certificates"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >8. Step 6: Auto-Renewal of Let’s Encrypt Certificates&lt;/h2&gt;</a>
+              >8. Step 6: Auto-Renewal of Let’s Encrypt Certificates</a>
             </li>
           <li>
               <a
-                href="#9-conclusionh2"
+                href="#9-conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >9. Conclusion&lt;/h2&gt;</a>
+              >9. Conclusion</a>
             </li>
           </ul>
   
@@ -9706,95 +9706,95 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh2">Table of Contents
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-understanding-ssltls-and-lets-encrypth2">1. Understanding SSL/TLS and Let’s Encrypt
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-understanding-ssltls-and-lets-encrypt">1. Understanding SSL/TLS and Let’s Encrypt
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-ssltlsh3">What is SSL/TLS?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-ssltls">What is SSL/TLS?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-lets-encrypth3">What is Let’s Encrypt?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-lets-encrypt">What is Let’s Encrypt?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisitesh2">2. Prerequisites
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-prerequisites">2. Prerequisites
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-step-1-installing-apache-on-almalinux-9h2">3. Step 1: Installing Apache on AlmaLinux 9
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-step-1-installing-apache-on-almalinux-9">3. Step 1: Installing Apache on AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-apacheh3">Install Apache:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-apache">Install Apache:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-and-start-apacheh3">Enable and Start Apache:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-and-start-apache">Enable and Start Apache:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check-apache-statush3">Check Apache Status:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#check-apache-status">Check Apache Status:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-step-2-installing-certbot-for-lets-encrypth2">4. Step 2: Installing Certbot for Let’s Encrypt
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-step-2-installing-certbot-for-lets-encrypt">4. Step 2: Installing Certbot for Let’s Encrypt
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-the-required-packagesh3">Install the Required Packages:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#install-the-required-packages">Install the Required Packages:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-step-3-setting-up-the-firewallh2">5. Step 3: Setting Up the Firewall
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-step-3-setting-up-the-firewall">5. Step 3: Setting Up the Firewall
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#allow-http-and-https-traffich3">Allow HTTP and HTTPS Traffic:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#allow-http-and-https-traffic">Allow HTTP and HTTPS Traffic:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2">6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificate">6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#obtain-the-ssltls-certificateh3">Obtain the SSL/TLS Certificate:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#obtain-the-ssltls-certificate">Obtain the SSL/TLS Certificate:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#follow-the-certbot-promptsh3">Follow the Certbot Prompts:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#follow-the-certbot-prompts">Follow the Certbot Prompts:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#verify-the-ssltls-certificateh3">Verify the SSL/TLS Certificate:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#verify-the-ssltls-certificate">Verify the SSL/TLS Certificate:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-step-5-configuring-apache-to-use-ssltls-certificatesh2">7. Step 5: Configuring Apache to Use SSL/TLS Certificates
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-step-5-configuring-apache-to-use-ssltls-certificates">7. Step 5: Configuring Apache to Use SSL/TLS Certificates
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#ssl-configuration-fileh3">SSL Configuration File:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#ssl-configuration-file">SSL Configuration File:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#redirect-http-to-httpsh3">Redirect HTTP to HTTPS:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#redirect-http-to-https">Redirect HTTP to HTTPS:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-step-6-auto-renewal-of-lets-encrypt-certificatesh2">8. Step 6: Auto-Renewal of Let’s Encrypt Certificates
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-step-6-auto-renewal-of-lets-encrypt-certificates">8. Step 6: Auto-Renewal of Let’s Encrypt Certificates
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-auto-renewalh3">Enable Auto-Renewal:
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#enable-auto-renewal">Enable Auto-Renewal:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-conclusionh2">9. Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#9-conclusion">9. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9827,156 +9827,173 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>In today’s world, where online security is paramount, encrypting the communication between a web server and its users has become essential. Using SSL/TLS (Secure Sockets Layer/Transport Layer Security) certificates provides that layer of security, ensuring that sensitive information exchanged between a browser and a server is encrypted. One of the most popular and cost-effective ways to implement SSL/TLS is by using Let’s Encrypt, a free certificate authority that provides trusted SSL/TLS certificates for your websites.</p></p>
-<p>In this guide, we will walk you through the steps to configure SSL/TLS and obtain a Let’s Encrypt certificate on an Apache web server running AlmaLinux 9.</p></p>
-<h2>Table of Contents</h2><span class="hx-absolute -hx-mt-20" id="table-of-contentsh2"></span>
-    <a href="#table-of-contentsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+          <p>In today’s world, where online security is paramount, encrypting the communication between a web server and its users has become essential. Using SSL/TLS (Secure Sockets Layer/Transport Layer Security) certificates provides that layer of security, ensuring that sensitive information exchanged between a browser and a server is encrypted. One of the most popular and cost-effective ways to implement SSL/TLS is by using Let’s Encrypt, a free certificate authority that provides trusted SSL/TLS certificates for your websites.</p>
+<p>In this guide, we will walk you through the steps to configure SSL/TLS and obtain a Let’s Encrypt certificate on an Apache web server running AlmaLinux 9.</p>
+<h2>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Understanding SSL/TLS and Let’s Encrypt</li>
+- Understanding SSL/TLS and Let’s Encrypt 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Prerequisites</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 1: Installing Apache on AlmaLinux 9</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 2: Installing Certbot for Let’s Encrypt</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 3: Setting Up the Firewall</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 5: Configuring Apache to Use SSL/TLS Certificates</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Step 6: Auto-Renewal of Let’s Encrypt Certificates</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>1. Understanding SSL/TLS and Let’s Encrypt</h2><span class="hx-absolute -hx-mt-20" id="1-understanding-ssltls-and-lets-encrypth2"></span>
-    <a href="#1-understanding-ssltls-and-lets-encrypth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>What is SSL/TLS?</h3><span class="hx-absolute -hx-mt-20" id="what-is-ssltlsh3"></span>
-    <a href="#what-is-ssltlsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are cryptographic protocols designed to secure communications over a computer network. SSL/TLS certificates authenticate the identity of websites and enable an encrypted connection. When a website has an SSL/TLS certificate, a padlock icon appears in the browser&rsquo;s address bar, and the site’s URL begins with &ldquo;https,&rdquo; indicating a secure connection.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>What is Let’s Encrypt?</h3><span class="hx-absolute -hx-mt-20" id="what-is-lets-encrypth3"></span>
-    <a href="#what-is-lets-encrypth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Let’s Encrypt is a free, automated, and open Certificate Authority (CA) that provides SSL/TLS certificates to encrypt web traffic. It simplifies the process of setting up SSL/TLS by automating the certificate issuance and renewal processes, allowing website administrators to secure their sites quickly and with minimal effort.</p></p>
-<h2>2. Prerequisites</h2><span class="hx-absolute -hx-mt-20" id="2-prerequisitesh2"></span>
-    <a href="#2-prerequisitesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Before we begin, you need to make sure the following prerequisites are met:</p></p>
+<h2>1. Understanding SSL/TLS and Let’s Encrypt<span class="hx-absolute -hx-mt-20" id="1-understanding-ssltls-and-lets-encrypt"></span>
+    <a href="#1-understanding-ssltls-and-lets-encrypt" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>What is SSL/TLS?<span class="hx-absolute -hx-mt-20" id="what-is-ssltls"></span>
+    <a href="#what-is-ssltls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are cryptographic protocols designed to secure communications over a computer network. SSL/TLS certificates authenticate the identity of websites and enable an encrypted connection. When a website has an SSL/TLS certificate, a padlock icon appears in the browser&rsquo;s address bar, and the site’s URL begins with &ldquo;https,&rdquo; indicating a secure connection.</p>
+<h3>What is Let’s Encrypt?<span class="hx-absolute -hx-mt-20" id="what-is-lets-encrypt"></span>
+    <a href="#what-is-lets-encrypt" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Let’s Encrypt is a free, automated, and open Certificate Authority (CA) that provides SSL/TLS certificates to encrypt web traffic. It simplifies the process of setting up SSL/TLS by automating the certificate issuance and renewal processes, allowing website administrators to secure their sites quickly and with minimal effort.</p>
+<h2>2. Prerequisites<span class="hx-absolute -hx-mt-20" id="2-prerequisites"></span>
+    <a href="#2-prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Before we begin, you need to make sure the following prerequisites are met:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>A server running AlmaLinux 9</strong> with root or sudo user access.</li>
+- ***A server running AlmaLinux 9***  with root or sudo user access. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>A domain name</strong> that points to your server's public IP address.</li>
+<ul>
+<li><em><strong>A domain name</strong></em>  that points to your server&rsquo;s public IP address.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Apache web server</strong> installed and running.</li>
+<ul>
+<li><em><strong>Apache web server</strong></em>  installed and running.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Firewall configuration</strong> that allows HTTP and HTTPS traffic.</li>
+<ul>
+<li><em><strong>Firewall configuration</strong></em>  that allows HTTP and HTTPS traffic.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>A tool like <strong>Certbot</strong>, which simplifies the process of obtaining and managing Let’s Encrypt SSL certificates.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>A tool like <em><strong>Certbot</strong></em> , which simplifies the process of obtaining and managing Let’s Encrypt SSL certificates.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>3. Step 1: Installing Apache on AlmaLinux 9</h2><span class="hx-absolute -hx-mt-20" id="3-step-1-installing-apache-on-almalinux-9h2"></span>
-    <a href="#3-step-1-installing-apache-on-almalinux-9h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>If Apache is not already installed on your server, the first step is to install it. Here’s how to do it:</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Install Apache:</h3><span class="hx-absolute -hx-mt-20" id="install-apacheh3"></span>
-    <a href="#install-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>3. Step 1: Installing Apache on AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="3-step-1-installing-apache-on-almalinux-9"></span>
+    <a href="#3-step-1-installing-apache-on-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>If Apache is not already installed on your server, the first step is to install it. Here’s how to do it:</p>
+<h3>Install Apache:<span class="hx-absolute -hx-mt-20" id="install-apache"></span>
+    <a href="#install-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install httpd</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Enable and Start Apache:</h3><span class="hx-absolute -hx-mt-20" id="enable-and-start-apacheh3"></span>
-    <a href="#enable-and-start-apacheh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Once Apache is installed, enable it to start automatically on system boot and start the service.</p></p>
+<h3>Enable and Start Apache:<span class="hx-absolute -hx-mt-20" id="enable-and-start-apache"></span>
+    <a href="#enable-and-start-apache" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Once Apache is installed, enable it to start automatically on system boot and start the service.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl enable httpd
 sudo systemctl start httpd</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Check Apache Status:</h3><span class="hx-absolute -hx-mt-20" id="check-apache-statush3"></span>
-    <a href="#check-apache-statush3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To ensure Apache is running, check its status:</p></p>
+<h3>Check Apache Status:<span class="hx-absolute -hx-mt-20" id="check-apache-status"></span>
+    <a href="#check-apache-status" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To ensure Apache is running, check its status:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status httpd</code></pre>
 <!-- /wp:code -->
-<p>If the service is active and running, you’re good to go.</p></p>
-<h2>4. Step 2: Installing Certbot for Let’s Encrypt</h2><span class="hx-absolute -hx-mt-20" id="4-step-2-installing-certbot-for-lets-encrypth2"></span>
-    <a href="#4-step-2-installing-certbot-for-lets-encrypth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Next, you’ll need to install Certbot, the tool that automates the process of obtaining and renewing Let’s Encrypt certificates.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Install the Required Packages:</h3><span class="hx-absolute -hx-mt-20" id="install-the-required-packagesh3"></span>
-    <a href="#install-the-required-packagesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Run the following command to install the Certbot and the Certbot Apache plugin:</p></p>
+<p>If the service is active and running, you’re good to go.</p>
+<h2>4. Step 2: Installing Certbot for Let’s Encrypt<span class="hx-absolute -hx-mt-20" id="4-step-2-installing-certbot-for-lets-encrypt"></span>
+    <a href="#4-step-2-installing-certbot-for-lets-encrypt" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Next, you’ll need to install Certbot, the tool that automates the process of obtaining and renewing Let’s Encrypt certificates.</p>
+<h3>Install the Required Packages:<span class="hx-absolute -hx-mt-20" id="install-the-required-packages"></span>
+    <a href="#install-the-required-packages" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Run the following command to install the Certbot and the Certbot Apache plugin:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install certbot python3-certbot-apache</code></pre>
 <!-- /wp:code -->
-<p>The Certbot Apache plugin will automatically configure SSL/TLS for your Apache web server.</p></p>
-<h2>5. Step 3: Setting Up the Firewall</h2><span class="hx-absolute -hx-mt-20" id="5-step-3-setting-up-the-firewallh2"></span>
-    <a href="#5-step-3-setting-up-the-firewallh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>To ensure that your server can handle both HTTP and HTTPS traffic, you’ll need to update the firewall settings.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Allow HTTP and HTTPS Traffic:</h3><span class="hx-absolute -hx-mt-20" id="allow-http-and-https-traffich3"></span>
-    <a href="#allow-http-and-https-traffich3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Run the following commands to open the necessary ports:</p></p>
+<p>The Certbot Apache plugin will automatically configure SSL/TLS for your Apache web server.</p>
+<h2>5. Step 3: Setting Up the Firewall<span class="hx-absolute -hx-mt-20" id="5-step-3-setting-up-the-firewall"></span>
+    <a href="#5-step-3-setting-up-the-firewall" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>To ensure that your server can handle both HTTP and HTTPS traffic, you’ll need to update the firewall settings.</p>
+<h3>Allow HTTP and HTTPS Traffic:<span class="hx-absolute -hx-mt-20" id="allow-http-and-https-traffic"></span>
+    <a href="#allow-http-and-https-traffic" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Run the following commands to open the necessary ports:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --permanent --add-service=https
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
-<p>By doing this, you’ve allowed HTTP traffic on port 80 and HTTPS traffic on port 443, which are essential for web traffic and secure communication.</p></p>
-<h2>6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate</h2><span class="hx-absolute -hx-mt-20" id="6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2"></span>
-    <a href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificateh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Once Apache is installed and the firewall is configured, the next step is to obtain an SSL/TLS certificate from Let’s Encrypt.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Obtain the SSL/TLS Certificate:</h3><span class="hx-absolute -hx-mt-20" id="obtain-the-ssltls-certificateh3"></span>
-    <a href="#obtain-the-ssltls-certificateh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To obtain a Let’s Encrypt SSL certificate for your domain, use the following Certbot command:</p></p>
+<p>By doing this, you’ve allowed HTTP traffic on port 80 and HTTPS traffic on port 443, which are essential for web traffic and secure communication.</p>
+<h2>6. Step 4: Obtaining a Let’s Encrypt SSL/TLS Certificate<span class="hx-absolute -hx-mt-20" id="6-step-4-obtaining-a-lets-encrypt-ssltls-certificate"></span>
+    <a href="#6-step-4-obtaining-a-lets-encrypt-ssltls-certificate" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Once Apache is installed and the firewall is configured, the next step is to obtain an SSL/TLS certificate from Let’s Encrypt.</p>
+<h3>Obtain the SSL/TLS Certificate:<span class="hx-absolute -hx-mt-20" id="obtain-the-ssltls-certificate"></span>
+    <a href="#obtain-the-ssltls-certificate" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To obtain a Let’s Encrypt SSL certificate for your domain, use the following Certbot command:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo certbot --apache -d yourdomain.com -d www.yourdomain.com</code></pre>
 <!-- /wp:code -->
-<p>Replace <code>yourdomain.com</code> and <code><a href="https://www.yourdomain.com" target="_blank" rel="noopener">www.yourdomain.com</a></code> with your actual domain name. Certbot will handle the following:</p></p>
+<p>Replace <code>yourdomain.com</code> and <code><a href="https://www.yourdomain.com" target="_blank" rel="noopener">www.yourdomain.com</a></code> with your actual domain name. Certbot will handle the following:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Verify ownership of the domain.</li>
+- Verify ownership of the domain. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Automatically obtain and install the SSL certificate.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Configure your Apache server to serve your site over HTTPS.</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Follow the Certbot Prompts:</h3><span class="hx-absolute -hx-mt-20" id="follow-the-certbot-promptsh3"></span>
-    <a href="#follow-the-certbot-promptsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Certbot will prompt you with a few questions, such as whether you want to redirect HTTP traffic to HTTPS (which is recommended). Once the process is complete, Certbot will automatically configure Apache with your new SSL/TLS certificate.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Verify the SSL/TLS Certificate:</h3><span class="hx-absolute -hx-mt-20" id="verify-the-ssltls-certificateh3"></span>
-    <a href="#verify-the-ssltls-certificateh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>You can verify that the SSL certificate is installed correctly by visiting your website using <code><a href="https://yourdomain.com" target="_blank" rel="noopener">https://yourdomain.com</a></code>. You should see the padlock icon next to your URL, indicating that the site is secure.</p></p>
-<h2>7. Step 5: Configuring Apache to Use SSL/TLS Certificates</h2><span class="hx-absolute -hx-mt-20" id="7-step-5-configuring-apache-to-use-ssltls-certificatesh2"></span>
-    <a href="#7-step-5-configuring-apache-to-use-ssltls-certificatesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Certbot usually handles most of the configuration automatically. However, if you want to manually configure your SSL/TLS settings or customize them further, you can do so in the Apache configuration files.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>SSL Configuration File:</h3><span class="hx-absolute -hx-mt-20" id="ssl-configuration-fileh3"></span>
-    <a href="#ssl-configuration-fileh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The SSL configuration file is usually located in <code>/etc/httpd/conf.d/ssl.conf</code> or <code>/etc/httpd/conf.d/yourdomain-le-ssl.conf</code> (if Certbot created it). This file contains directives to control how Apache uses the SSL certificate.</p></p>
-<p>Here’s an example configuration:</p></p>
+<h3>Follow the Certbot Prompts:<span class="hx-absolute -hx-mt-20" id="follow-the-certbot-prompts"></span>
+    <a href="#follow-the-certbot-prompts" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Certbot will prompt you with a few questions, such as whether you want to redirect HTTP traffic to HTTPS (which is recommended). Once the process is complete, Certbot will automatically configure Apache with your new SSL/TLS certificate.</p>
+<h3>Verify the SSL/TLS Certificate:<span class="hx-absolute -hx-mt-20" id="verify-the-ssltls-certificate"></span>
+    <a href="#verify-the-ssltls-certificate" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>You can verify that the SSL certificate is installed correctly by visiting your website using <code><a href="https://yourdomain.com" target="_blank" rel="noopener">https://yourdomain.com</a></code>. You should see the padlock icon next to your URL, indicating that the site is secure.</p>
+<h2>7. Step 5: Configuring Apache to Use SSL/TLS Certificates<span class="hx-absolute -hx-mt-20" id="7-step-5-configuring-apache-to-use-ssltls-certificates"></span>
+    <a href="#7-step-5-configuring-apache-to-use-ssltls-certificates" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Certbot usually handles most of the configuration automatically. However, if you want to manually configure your SSL/TLS settings or customize them further, you can do so in the Apache configuration files.</p>
+<h3>SSL Configuration File:<span class="hx-absolute -hx-mt-20" id="ssl-configuration-file"></span>
+    <a href="#ssl-configuration-file" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The SSL configuration file is usually located in <code>/etc/httpd/conf.d/ssl.conf</code> or <code>/etc/httpd/conf.d/yourdomain-le-ssl.conf</code> (if Certbot created it). This file contains directives to control how Apache uses the SSL certificate.</p>
+<p>Here’s an example configuration:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">&lt;VirtualHost *:443&gt;
     ServerName yourdomain.com
@@ -9990,22 +10007,25 @@ sudo firewall-cmd --reload</code></pre>
     Include /etc/letsencrypt/options-ssl-apache.conf
 &lt;/VirtualHost&gt;</code></pre>
 <!-- /wp:code -->
-<p>In this file, you’ll find references to the Let’s Encrypt SSL certificate files, which Certbot has installed. These include:</p></p>
+<p>In this file, you’ll find references to the Let’s Encrypt SSL certificate files, which Certbot has installed. These include:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SSLCertificateFile</strong>: The location of the SSL certificate.</li>
+- ***SSLCertificateFile*** : The location of the SSL certificate. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>SSLCertificateKeyFile</strong>: The location of the private key.</li>
+<ul>
+<li><em><strong>SSLCertificateKeyFile</strong></em> : The location of the private key.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Include /etc/letsencrypt/options-ssl-apache.conf</strong>: This line ensures that Apache uses the recommended security settings.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Include /etc/letsencrypt/options-ssl-apache.conf</strong></em> : This line ensures that Apache uses the recommended security settings.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Redirect HTTP to HTTPS:</h3><span class="hx-absolute -hx-mt-20" id="redirect-http-to-httpsh3"></span>
-    <a href="#redirect-http-to-httpsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>To ensure that all traffic to your site uses HTTPS, you can set up a redirect from HTTP to HTTPS in the Apache configuration:</p></p>
+<h3>Redirect HTTP to HTTPS:<span class="hx-absolute -hx-mt-20" id="redirect-http-to-https"></span>
+    <a href="#redirect-http-to-https" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>To ensure that all traffic to your site uses HTTPS, you can set up a redirect from HTTP to HTTPS in the Apache configuration:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">&lt;VirtualHost *:80&gt;
     ServerName yourdomain.com
@@ -10014,23 +10034,22 @@ sudo firewall-cmd --reload</code></pre>
     Redirect permanent / https://yourdomain.com/
 &lt;/VirtualHost&gt;</code></pre>
 <!-- /wp:code -->
-<p>This configuration automatically redirects visitors accessing <code><a href="http://yourdomain.com" target="_blank" rel="noopener">http://yourdomain.com</a></code> to the secure <code><a href="https://yourdomain.com" target="_blank" rel="noopener">https://yourdomain.com</a></code>.</p></p>
-<h2>8. Step 6: Auto-Renewal of Let’s Encrypt Certificates</h2><span class="hx-absolute -hx-mt-20" id="8-step-6-auto-renewal-of-lets-encrypt-certificatesh2"></span>
-    <a href="#8-step-6-auto-renewal-of-lets-encrypt-certificatesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Let’s Encrypt certificates are valid for 90 days, but Certbot can automatically renew them for you. To ensure your SSL certificates are renewed before they expire, Certbot includes a renewal script.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Enable Auto-Renewal:</h3><span class="hx-absolute -hx-mt-20" id="enable-auto-renewalh3"></span>
-    <a href="#enable-auto-renewalh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Certbot automatically adds a cron job to handle certificate renewals. However, you can manually test the renewal process to ensure it works correctly:</p></p>
+<p>This configuration automatically redirects visitors accessing <code><a href="http://yourdomain.com" target="_blank" rel="noopener">http://yourdomain.com</a></code> to the secure <code><a href="https://yourdomain.com" target="_blank" rel="noopener">https://yourdomain.com</a></code>.</p>
+<h2>8. Step 6: Auto-Renewal of Let’s Encrypt Certificates<span class="hx-absolute -hx-mt-20" id="8-step-6-auto-renewal-of-lets-encrypt-certificates"></span>
+    <a href="#8-step-6-auto-renewal-of-lets-encrypt-certificates" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Let’s Encrypt certificates are valid for 90 days, but Certbot can automatically renew them for you. To ensure your SSL certificates are renewed before they expire, Certbot includes a renewal script.</p>
+<h3>Enable Auto-Renewal:<span class="hx-absolute -hx-mt-20" id="enable-auto-renewal"></span>
+    <a href="#enable-auto-renewal" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Certbot automatically adds a cron job to handle certificate renewals. However, you can manually test the renewal process to ensure it works correctly:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo certbot renew --dry-run</code></pre>
 <!-- /wp:code -->
-<p>This command performs a dry run to simulate the renewal process without actually renewing the certificate. If successful, Certbot will automatically renew your certificates as they approach expiration.</p></p>
-<h2>9. Conclusion</h2><span class="hx-absolute -hx-mt-20" id="9-conclusionh2"></span>
-    <a href="#9-conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Setting up SSL/TLS with Let’s Encrypt on AlmaLinux 9 is a straightforward process, thanks to the powerful Certbot tool and its tight integration with Apache. By following the steps outlined in this guide, you can secure your website with trusted SSL/TLS certificates, ensuring that your users&rsquo; data is encrypted and safe.</p></p>
-<p>Not only will SSL/TLS improve your site&rsquo;s security, but it also boosts SEO rankings and builds user trust. Remember to keep an eye on certificate renewal to ensure continuous protection for your website, though Certbot automates most of this process.</p></p>
-<p>With this setup, your AlmaLinux 9 server is now ready to securely serve content over HTTPS, providing peace of mind to both you and your site’s visitors. Happy hosting!</p></p>
+<p>This command performs a dry run to simulate the renewal process without actually renewing the certificate. If successful, Certbot will automatically renew your certificates as they approach expiration.</p>
+<h2>9. Conclusion<span class="hx-absolute -hx-mt-20" id="9-conclusion"></span>
+    <a href="#9-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Setting up SSL/TLS with Let’s Encrypt on AlmaLinux 9 is a straightforward process, thanks to the powerful Certbot tool and its tight integration with Apache. By following the steps outlined in this guide, you can secure your website with trusted SSL/TLS certificates, ensuring that your users&rsquo; data is encrypted and safe.</p>
+<p>Not only will SSL/TLS improve your site&rsquo;s security, but it also boosts SEO rankings and builds user trust. Remember to keep an eye on certificate renewal to ensure continuous protection for your website, though Certbot automates most of this process.</p>
+<p>With this setup, your AlmaLinux 9 server is now ready to securely serve content over HTTPS, providing peace of mind to both you and your site’s visitors. Happy hosting!</p>
 
         </div>
         

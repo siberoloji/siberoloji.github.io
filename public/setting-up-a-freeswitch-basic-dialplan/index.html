@@ -18,7 +18,6 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
 <meta property="og:description" content="Dialplans are the heart of FreeSWITCH, determining how calls are routed and processed within your system. In this comprehensive guide, we&rsquo;ll explore how to create and configure a FreeSWITCH basic dialplan that handles common calling scenarios. Whether you&rsquo;re new to FreeSWITCH or looking to enhance your existing setup, this guide will help you understand and implement effective call routing strategies.
 Understanding Dialplan Basics
     
-
 What is a Dialplan?
     
 A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. It&rsquo;s essentially a routing table that determines what happens when someone makes a call through your system. Dialplans in FreeSWITCH are written in XML and consist of several key components:" />
@@ -32,7 +31,7 @@ A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. I
 Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. It’s essentially a routing table that determines what happens when someone makes a call through your system. Dialplans in FreeSWITCH are written in XML and consist of several key components:">
   <meta itemprop="datePublished" content="2024-10-29T13:59:28+00:00">
   <meta itemprop="dateModified" content="2024-10-29T13:59:28+00:00">
-  <meta itemprop="wordCount" content="635">
+  <meta itemprop="wordCount" content="647">
   <meta itemprop="keywords" content="Freeswitch">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Setting Up a FreeSWITCH Basic Dialplan">
@@ -1056,63 +1055,63 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#understanding-dialplan-basicsh2"
+                href="#understanding-dialplan-basics"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Understanding Dialplan Basics&lt;/h2&gt;</a>
+              >Understanding Dialplan Basics</a>
             </li>
           <li>
               <a
-                href="#dialplan-structureh2"
+                href="#dialplan-structure"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Dialplan Structure&lt;/h2&gt;</a>
+              >Dialplan Structure</a>
             </li>
           <li>
               <a
-                href="#creating-your-first-dialplanh2"
+                href="#creating-your-first-dialplan"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Creating Your First Dialplan&lt;/h2&gt;</a>
+              >Creating Your First Dialplan</a>
             </li>
           <li>
               <a
-                href="#common-dialplan-featuresh2"
+                href="#common-dialplan-features"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Common Dialplan Features&lt;/h2&gt;</a>
+              >Common Dialplan Features</a>
             </li>
           <li>
               <a
-                href="#advanced-dialplan-techniquesh2"
+                href="#advanced-dialplan-techniques"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Advanced Dialplan Techniques&lt;/h2&gt;</a>
+              >Advanced Dialplan Techniques</a>
             </li>
           <li>
               <a
-                href="#best-practicesh2"
+                href="#best-practices"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Best Practices&lt;/h2&gt;</a>
+              >Best Practices</a>
             </li>
           <li>
               <a
-                href="#testing-and-debuggingh2"
+                href="#testing-and-debugging"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Testing and Debugging&lt;/h2&gt;</a>
+              >Testing and Debugging</a>
             </li>
           <li>
               <a
-                href="#common-troubleshootingh2"
+                href="#common-troubleshooting"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Common Troubleshooting&lt;/h2&gt;</a>
+              >Common Troubleshooting</a>
             </li>
           <li>
               <a
-                href="#monitoring-and-maintenanceh2"
+                href="#monitoring-and-maintenance"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Monitoring and Maintenance&lt;/h2&gt;</a>
+              >Monitoring and Maintenance</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9715,123 +9714,123 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-dialplan-basicsh2">Understanding Dialplan Basics
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-dialplan-basics">Understanding Dialplan Basics
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-a-dialplanh3">What is a Dialplan?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-a-dialplan">What is a Dialplan?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dialplan-structureh2">Dialplan Structure
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#dialplan-structure">Dialplan Structure
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-xml-structureh3">Basic XML Structure
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-xml-structure">Basic XML Structure
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#key-components-explainedh3">Key Components Explained
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#key-components-explained">Key Components Explained
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#creating-your-first-dialplanh2">Creating Your First Dialplan
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#creating-your-first-dialplan">Creating Your First Dialplan
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-basic-internal-callsh3">1. Basic Internal Calls
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-basic-internal-calls">1. Basic Internal Calls
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-adding-external-callsh3">2. Adding External Calls
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-adding-external-calls">2. Adding External Calls
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#common-dialplan-featuresh2">Common Dialplan Features
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#common-dialplan-features">Common Dialplan Features
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-time-based-routingh3">1. Time-Based Routing
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-time-based-routing">1. Time-Based Routing
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-ivr-interactive-voice-responseh3">2. IVR (Interactive Voice Response)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-ivr-interactive-voice-response">2. IVR (Interactive Voice Response)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-conference-roomsh3">3. Conference Rooms
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-conference-rooms">3. Conference Rooms
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-dialplan-techniquesh2">Advanced Dialplan Techniques
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-dialplan-techniques">Advanced Dialplan Techniques
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-call-recordingh3">1. Call Recording
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-call-recording">1. Call Recording
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-call-queuesh3">2. Call Queues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-call-queues">2. Call Queues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-failover-routingh3">3. Failover Routing
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-failover-routing">3. Failover Routing
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practicesh2">Best Practices
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices">Best Practices
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-organizationh3">1. Organization
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-organization">1. Organization
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-securityh3">2. Security
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-security">2. Security
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-error-handlingh3">3. Error Handling
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-error-handling">3. Error Handling
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#testing-and-debuggingh2">Testing and Debugging
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#testing-and-debugging">Testing and Debugging
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-log-configurationh3">1. Log Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-log-configuration">1. Log Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-testing-commandsh3">2. Testing Commands
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-testing-commands">2. Testing Commands
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#common-troubleshootingh2">Common Troubleshooting
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#common-troubleshooting">Common Troubleshooting
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-dialplan-not-workingh3">1. Dialplan Not Working
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-dialplan-not-working">1. Dialplan Not Working
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-call-routing-issuesh3">2. Call Routing Issues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-call-routing-issues">2. Call Routing Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#monitoring-and-maintenanceh2">Monitoring and Maintenance
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#monitoring-and-maintenance">Monitoring and Maintenance
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-regular-checksh3">1. Regular Checks
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-regular-checks">1. Regular Checks
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-performance-monitoringh3">2. Performance Monitoring
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-performance-monitoring">2. Performance Monitoring
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9865,34 +9864,40 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
                 </a></div>
         <div class="content">
           <p>Dialplans are the heart of FreeSWITCH, determining how calls are routed and processed within your system. In this comprehensive guide, we&rsquo;ll explore how to create and configure a FreeSWITCH basic dialplan that handles common calling scenarios. Whether you&rsquo;re new to FreeSWITCH or looking to enhance your existing setup, this guide will help you understand and implement effective call routing strategies.</p>
-<h2>Understanding Dialplan Basics</h2><span class="hx-absolute -hx-mt-20" id="understanding-dialplan-basicsh2"></span>
-    <a href="#understanding-dialplan-basicsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>What is a Dialplan?</h3><span class="hx-absolute -hx-mt-20" id="what-is-a-dialplanh3"></span>
-    <a href="#what-is-a-dialplanh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Understanding Dialplan Basics<span class="hx-absolute -hx-mt-20" id="understanding-dialplan-basics"></span>
+    <a href="#understanding-dialplan-basics" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>What is a Dialplan?<span class="hx-absolute -hx-mt-20" id="what-is-a-dialplan"></span>
+    <a href="#what-is-a-dialplan" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. It&rsquo;s essentially a routing table that determines what happens when someone makes a call through your system. Dialplans in FreeSWITCH are written in XML and consist of several key components:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Contexts</li>
+- Contexts 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Extensions</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conditions</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Actions</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Anti-Actions</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Dialplan Structure</h2><span class="hx-absolute -hx-mt-20" id="dialplan-structureh2"></span>
-    <a href="#dialplan-structureh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>Basic XML Structure</h3><span class="hx-absolute -hx-mt-20" id="basic-xml-structureh3"></span>
-    <a href="#basic-xml-structureh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Dialplan Structure<span class="hx-absolute -hx-mt-20" id="dialplan-structure"></span>
+    <a href="#dialplan-structure" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>Basic XML Structure<span class="hx-absolute -hx-mt-20" id="basic-xml-structure"></span>
+    <a href="#basic-xml-structure" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
   &lt;context name="my_context"&gt;
@@ -9904,31 +9909,37 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/context&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Key Components Explained</h3><span class="hx-absolute -hx-mt-20" id="key-components-explainedh3"></span>
-    <a href="#key-components-explainedh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Key Components Explained<span class="hx-absolute -hx-mt-20" id="key-components-explained"></span>
+    <a href="#key-components-explained" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Context</strong>: A logical grouping of extensions</li>
+- ***Context*** : A logical grouping of extensions 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Extension</strong>: A set of rules for handling specific calls</li>
+<ul>
+<li><em><strong>Extension</strong></em> : A set of rules for handling specific calls</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Condition</strong>: Criteria that must be met for actions to execute</li>
+<ul>
+<li><em><strong>Condition</strong></em> : Criteria that must be met for actions to execute</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Action</strong>: What happens when conditions are met</li>
+<ul>
+<li><em><strong>Action</strong></em> : What happens when conditions are met</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Anti-Action</strong>: What happens when conditions are not met</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Anti-Action</strong></em> : What happens when conditions are not met</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Creating Your First Dialplan</h2><span class="hx-absolute -hx-mt-20" id="creating-your-first-dialplanh2"></span>
-    <a href="#creating-your-first-dialplanh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Basic Internal Calls</h3><span class="hx-absolute -hx-mt-20" id="1-basic-internal-callsh3"></span>
-    <a href="#1-basic-internal-callsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Creating Your First Dialplan<span class="hx-absolute -hx-mt-20" id="creating-your-first-dialplan"></span>
+    <a href="#creating-your-first-dialplan" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Basic Internal Calls<span class="hx-absolute -hx-mt-20" id="1-basic-internal-calls"></span>
+    <a href="#1-basic-internal-calls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Create a new file <code>/usr/local/freeswitch/conf/dialplan/default/01_internal.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
@@ -9951,9 +9962,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/context&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Adding External Calls</h3><span class="hx-absolute -hx-mt-20" id="2-adding-external-callsh3"></span>
-    <a href="#2-adding-external-callsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Adding External Calls<span class="hx-absolute -hx-mt-20" id="2-adding-external-calls"></span>
+    <a href="#2-adding-external-calls" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Create <code>/usr/local/freeswitch/conf/dialplan/default/02_external.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
@@ -9968,11 +9978,10 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/context&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Common Dialplan Features</h2><span class="hx-absolute -hx-mt-20" id="common-dialplan-featuresh2"></span>
-    <a href="#common-dialplan-featuresh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Time-Based Routing</h3><span class="hx-absolute -hx-mt-20" id="1-time-based-routingh3"></span>
-    <a href="#1-time-based-routingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Common Dialplan Features<span class="hx-absolute -hx-mt-20" id="common-dialplan-features"></span>
+    <a href="#common-dialplan-features" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Time-Based Routing<span class="hx-absolute -hx-mt-20" id="1-time-based-routing"></span>
+    <a href="#1-time-based-routing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="business_hours"&gt;
   &lt;condition wday="2-6" hour="9-17"&gt; &lt;!-- Monday-Friday, 9 AM-5 PM --&gt;
@@ -9981,9 +9990,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. IVR (Interactive Voice Response)</h3><span class="hx-absolute -hx-mt-20" id="2-ivr-interactive-voice-responseh3"></span>
-    <a href="#2-ivr-interactive-voice-responseh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. IVR (Interactive Voice Response)<span class="hx-absolute -hx-mt-20" id="2-ivr-interactive-voice-response"></span>
+    <a href="#2-ivr-interactive-voice-response" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="main_ivr"&gt;
   &lt;condition field="destination_number" expression="^(5000)$"&gt;
@@ -9993,9 +10001,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Conference Rooms</h3><span class="hx-absolute -hx-mt-20" id="3-conference-roomsh3"></span>
-    <a href="#3-conference-roomsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Conference Rooms<span class="hx-absolute -hx-mt-20" id="3-conference-rooms"></span>
+    <a href="#3-conference-rooms" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="conferences"&gt;
   &lt;condition field="destination_number" expression="^(3\d{3})$"&gt;
@@ -10004,11 +10011,10 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Advanced Dialplan Techniques</h2><span class="hx-absolute -hx-mt-20" id="advanced-dialplan-techniquesh2"></span>
-    <a href="#advanced-dialplan-techniquesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Call Recording</h3><span class="hx-absolute -hx-mt-20" id="1-call-recordingh3"></span>
-    <a href="#1-call-recordingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Advanced Dialplan Techniques<span class="hx-absolute -hx-mt-20" id="advanced-dialplan-techniques"></span>
+    <a href="#advanced-dialplan-techniques" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Call Recording<span class="hx-absolute -hx-mt-20" id="1-call-recording"></span>
+    <a href="#1-call-recording" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="record_calls"&gt;
   &lt;condition field="destination_number" expression="^(record_\d+)$"&gt;
@@ -10019,9 +10025,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Call Queues</h3><span class="hx-absolute -hx-mt-20" id="2-call-queuesh3"></span>
-    <a href="#2-call-queuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Call Queues<span class="hx-absolute -hx-mt-20" id="2-call-queues"></span>
+    <a href="#2-call-queues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="support_queue"&gt;
   &lt;condition field="destination_number" expression="^(7000)$"&gt;
@@ -10031,9 +10036,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Failover Routing</h3><span class="hx-absolute -hx-mt-20" id="3-failover-routingh3"></span>
-    <a href="#3-failover-routingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Failover Routing<span class="hx-absolute -hx-mt-20" id="3-failover-routing"></span>
+    <a href="#3-failover-routing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="failover"&gt;
   &lt;condition field="destination_number" expression="^(2\d{3})$"&gt;
@@ -10043,25 +10047,27 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Best Practices</h2><span class="hx-absolute -hx-mt-20" id="best-practicesh2"></span>
-    <a href="#best-practicesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Organization</h3><span class="hx-absolute -hx-mt-20" id="1-organizationh3"></span>
-    <a href="#1-organizationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Best Practices<span class="hx-absolute -hx-mt-20" id="best-practices"></span>
+    <a href="#best-practices" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Organization<span class="hx-absolute -hx-mt-20" id="1-organization"></span>
+    <a href="#1-organization" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Use numbered files for loading order (01_internal.xml, 02_external.xml, etc.)</li>
+- Use numbered files for loading order (01_internal.xml, 02_external.xml, etc.) 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Group similar extensions together</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Comment your dialplan thoroughly</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Security</h3><span class="hx-absolute -hx-mt-20" id="2-securityh3"></span>
-    <a href="#2-securityh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Security<span class="hx-absolute -hx-mt-20" id="2-security"></span>
+    <a href="#2-security" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="limit_international"&gt;
   &lt;condition field="destination_number" expression="^(011\d+)$"&gt;
@@ -10072,9 +10078,8 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Error Handling</h3><span class="hx-absolute -hx-mt-20" id="3-error-handlingh3"></span>
-    <a href="#3-error-handlingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Error Handling<span class="hx-absolute -hx-mt-20" id="3-error-handling"></span>
+    <a href="#3-error-handling" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="handle_failed_calls"&gt;
   &lt;condition field="${originate_disposition}" expression="^(BUSY|NO_ANSWER|USER_NOT_REGISTERED)$"&gt;
@@ -10082,67 +10087,74 @@ Understanding Dialplan Basics What is a Dialplan? A dialplan is a set of instruc
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Testing and Debugging</h2><span class="hx-absolute -hx-mt-20" id="testing-and-debuggingh2"></span>
-    <a href="#testing-and-debuggingh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Log Configuration</h3><span class="hx-absolute -hx-mt-20" id="1-log-configurationh3"></span>
-    <a href="#1-log-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Testing and Debugging<span class="hx-absolute -hx-mt-20" id="testing-and-debugging"></span>
+    <a href="#testing-and-debugging" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Log Configuration<span class="hx-absolute -hx-mt-20" id="1-log-configuration"></span>
+    <a href="#1-log-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Add to <code>/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;param name="loglevel" value="debug"/&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Testing Commands</h3><span class="hx-absolute -hx-mt-20" id="2-testing-commandsh3"></span>
-    <a href="#2-testing-commandsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Testing Commands<span class="hx-absolute -hx-mt-20" id="2-testing-commands"></span>
+    <a href="#2-testing-commands" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>In fs_cli:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">reloadxml
 show dialplan
 eval ${destination_number}</code></pre>
 <!-- /wp:code -->
-<h2>Common Troubleshooting</h2><span class="hx-absolute -hx-mt-20" id="common-troubleshootingh2"></span>
-    <a href="#common-troubleshootingh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Dialplan Not Working</h3><span class="hx-absolute -hx-mt-20" id="1-dialplan-not-workingh3"></span>
-    <a href="#1-dialplan-not-workingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Common Troubleshooting<span class="hx-absolute -hx-mt-20" id="common-troubleshooting"></span>
+    <a href="#common-troubleshooting" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Dialplan Not Working<span class="hx-absolute -hx-mt-20" id="1-dialplan-not-working"></span>
+    <a href="#1-dialplan-not-working" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Check these common issues:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>XML syntax errors</li>
+- XML syntax errors 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Regular expression patterns</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>File permissions</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Context names matching the user's context</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Context names matching the user&rsquo;s context</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Call Routing Issues</h3><span class="hx-absolute -hx-mt-20" id="2-call-routing-issuesh3"></span>
-    <a href="#2-call-routing-issuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Call Routing Issues<span class="hx-absolute -hx-mt-20" id="2-call-routing-issues"></span>
+    <a href="#2-call-routing-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Verify:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Gateway configurations</li>
+- Gateway configurations 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>User directory settings</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Network connectivity</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>SIP profile settings</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Monitoring and Maintenance</h2><span class="hx-absolute -hx-mt-20" id="monitoring-and-maintenanceh2"></span>
-    <a href="#monitoring-and-maintenanceh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Regular Checks</h3><span class="hx-absolute -hx-mt-20" id="1-regular-checksh3"></span>
-    <a href="#1-regular-checksh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Monitoring and Maintenance<span class="hx-absolute -hx-mt-20" id="monitoring-and-maintenance"></span>
+    <a href="#monitoring-and-maintenance" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Regular Checks<span class="hx-absolute -hx-mt-20" id="1-regular-checks"></span>
+    <a href="#1-regular-checks" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"># Check dialplan syntax
 /usr/local/freeswitch/bin/fs_cli -x "xml_validate"
@@ -10150,9 +10162,8 @@ eval ${destination_number}</code></pre>
 # Monitor active calls
 /usr/local/freeswitch/bin/fs_cli -x "show calls"</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Performance Monitoring</h3><span class="hx-absolute -hx-mt-20" id="2-performance-monitoringh3"></span>
-    <a href="#2-performance-monitoringh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Performance Monitoring<span class="hx-absolute -hx-mt-20" id="2-performance-monitoring"></span>
+    <a href="#2-performance-monitoring" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="performance_monitoring"&gt;
   &lt;condition field="destination_number" expression=".*"&gt;
@@ -10161,40 +10172,54 @@ eval ${destination_number}</code></pre>
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Creating an effective dialplan is crucial for a well-functioning FreeSWITCH system. Start with basic call routing and gradually add more complex features as needed. Remember to:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Keep your dialplan organized and well-documented</li>
+- Keep your dialplan organized and well-documented 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Test thoroughly before deploying changes</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Monitor performance and logs regularly</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Implement security measures</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Plan for scalability</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>As your system grows, you can expand your dialplan to include more advanced features like:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Multi-tenant configurations</li>
+- Multi-tenant configurations 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Advanced IVR systems</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Custom applications</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Integration with external systems</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Regular maintenance and updates will ensure your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system continues to handle calls efficiently and reliably.</p>
 

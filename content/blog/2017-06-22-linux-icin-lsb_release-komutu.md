@@ -54,7 +54,7 @@ Options:
   -r, --release      show release number of this distribution
   -c, --codename     show code name of this distribution
   -a, --all          show all of the above information
-  -s, --short        show requested information <strong>in </strong>short format
+  -s, --short        show requested information ***in *** short format
 </code></pre>
 <!-- /wp:code -->
 
@@ -62,7 +62,7 @@ Options:
  
 
  
-<h2 class="wp-block-heading" id="lsb_release--v"><code>lsb_release -v</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--v"><code>lsb_release -v</code>
 <!-- /wp:heading -->
 
   Kullandığınız dağıtımın desteklediği, sisteminizde yüklü olan ilave LSB modüllerini listeler.&nbsp;<code>No LSB modules are available.</code>&nbsp;sonucu alıyorsanız,&nbsp;<code>sudo apt install lsb-core</code>&nbsp;komutunu vererek kurabileceğiniz LSB modüllerini görebilirsiniz. İhtiyacınız yoksa kurmanıza gerek yoktur. 
@@ -75,7 +75,7 @@ No LSB modules are available.
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--i"><code>lsb_release -i</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--i"><code>lsb_release -i</code>
 <!-- /wp:heading -->
 
   Linux dağıtımını sağlayan otoritenin ID kimlik bilgisini görüntüler. 
@@ -88,7 +88,7 @@ Distributor ID:	LinuxMint
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--d"><code>lsb_release -d</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--d"><code>lsb_release -d</code>
 <!-- /wp:heading -->
 
   Kullandığınız dağıtımın açıklamasını görüntüler. 
@@ -101,7 +101,7 @@ Description:	Linux Mint 18.1 Serena
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--r"><code>lsb_release -r</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--r"><code>lsb_release -r</code>
 <!-- /wp:heading -->
 
   Kullandığınız dağıtımın sürüm numarasını görüntüler. 
@@ -114,7 +114,7 @@ Release:	18.1
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--c"><code>lsb_release -c</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--c"><code>lsb_release -c</code>
 <!-- /wp:heading -->
 
   Kullandığınız dağıtımın kod adını görüntüler. 
@@ -127,7 +127,7 @@ Codename:	serena
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--a"><code>lsb_release -a</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--a"><code>lsb_release -a</code>
 <!-- /wp:heading -->
 
   Yukarıda açıklanan seçeneklerin tamamını bir seferde görüntüler. 
@@ -144,7 +144,7 @@ Codename:	serena
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="lsb_release--as"><code>lsb_release -as</code></h2>
+<h2 class="wp-block-heading" id="lsb_release--as"><code>lsb_release -as</code>
 <!-- /wp:heading -->
 
   <code>-s</code>&nbsp;seçeneği yardımcı bir seçenektir. Kısa bilgi anlamına gelir. Görüntülenmek istenen bilginin, sol tarafındaki başlık adı olmadan sadece bilginin kendisini görüntülemeye yarar. Bash proglamada kullanımda oldukça faydalı olabilir. 

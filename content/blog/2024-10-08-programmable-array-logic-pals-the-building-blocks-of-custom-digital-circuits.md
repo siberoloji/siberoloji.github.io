@@ -31,7 +31,7 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
  
 
  
- ## What is Programmable Array Logic?</h2>
+ ## What is Programmable Array Logic?
 <!-- /wp:heading -->
 
   Programmable Array Logic (PAL) is a type of programmable logic device (PLD) used to implement combinational logic circuits. PALs allow engineers to create custom digital circuits by programming connections between an AND-plane and an OR-plane, providing a flexible and efficient way to implement complex logic functions. 
@@ -41,7 +41,7 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
  
 
  
- ## A Brief History of PALs</h2>
+ ## A Brief History of PALs
 <!-- /wp:heading -->
 
   The concept of PALs was developed in the late 1970s by John Birkner and H. T. Chua at Monolithic Memories, Inc. (MMI). The first PAL device, the 16L8, was introduced in March 1978. 
@@ -52,34 +52,34 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>1978: Introduction of the first PAL device (16L8)</li>
+- 1978: Introduction of the first PAL device (16L8) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>1983: Advanced Micro Devices (AMD) acquired MMI</li>
+- 1983: Advanced Micro Devices (AMD) acquired MMI 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>1985: Introduction of the 22V10, one of the most popular PAL devices</li>
+- 1985: Introduction of the 22V10, one of the most popular PAL devices 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Late 1980s: Development of more complex PLDs, leading to CPLDs and FPGAs</li>
-<!-- /wp:list-item --></ul>
+- Late 1980s: Development of more complex PLDs, leading to CPLDs and FPGAs 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   PALs quickly gained popularity due to their flexibility and ease of use compared to discrete logic components, becoming a staple in electronic design throughout the 1980s and early 1990s. 
  
 
  
- ## How PALs Work</h2>
+ ## How PALs Work
 <!-- /wp:heading -->
 
   To understand how PALs work, let's break down their structure and programming process: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Structure of a PAL</h3>
+
+ ### Structure of a PAL
 <!-- /wp:heading -->
 
   A typical PAL consists of two main components: 
@@ -87,19 +87,19 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AND-plane</strong>: A programmable array of AND gates that receives inputs and creates product terms.</li>
+- ***AND-plane*** : A programmable array of AND gates that receives inputs and creates product terms. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OR-plane</strong>: A fixed array of OR gates that combines the product terms to create outputs.</li>
-<!-- /wp:list-item --></ol>
+- ***OR-plane*** : A fixed array of OR gates that combines the product terms to create outputs. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The AND-plane is programmable, allowing designers to specify which inputs contribute to each product term. The OR-plane, being fixed, simply combines these product terms to produce the final outputs. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Programming Process</h3>
+
+ ### Programming Process
 <!-- /wp:heading -->
 
   PALs are typically programmed using the following steps: 
@@ -107,23 +107,23 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Design</strong>: The logic function is designed using Boolean algebra or truth tables.</li>
+- ***Design*** : The logic function is designed using Boolean algebra or truth tables. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Translation</strong>: The design is translated into a fusemap or a set of equations.</li>
+- ***Translation*** : The design is translated into a fusemap or a set of equations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Programming</strong>: The fusemap is burned into the PAL using a PAL programmer device.</li>
-<!-- /wp:list-item --></ol>
+- ***Programming*** : The fusemap is burned into the PAL using a PAL programmer device. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Programming a PAL involves selectively "blowing" fuses in the AND-plane to create the desired connections. Once programmed, a PAL becomes a custom logic device tailored to the specific application. 
  
 
  
- ## Types of PALs</h2>
+ ## Types of PALs
 <!-- /wp:heading -->
 
   Several types of PALs have been developed to cater to different needs: 
@@ -131,27 +131,27 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Simple PALs</strong>: Basic devices with a programmable AND-plane and a fixed OR-plane (e.g., 16L8, 20L8).</li>
+- ***Simple PALs*** : Basic devices with a programmable AND-plane and a fixed OR-plane (e.g., 16L8, 20L8). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Registered PALs</strong>: Include flip-flops on the outputs for sequential logic (e.g., 16R4, 16R6, 16R8).</li>
+- ***Registered PALs*** : Include flip-flops on the outputs for sequential logic (e.g., 16R4, 16R6, 16R8). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Complex PALs</strong>: Offer more inputs, outputs, and product terms (e.g., 22V10).</li>
+- ***Complex PALs*** : Offer more inputs, outputs, and product terms (e.g., 22V10). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Generic Array Logic (GAL)</strong>: Erasable and reprogrammable version of PALs.</li>
-<!-- /wp:list-item --></ol>
+- ***Generic Array Logic (GAL)*** : Erasable and reprogrammable version of PALs. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Each type offers different levels of complexity and functionality, allowing designers to choose the most appropriate device for their specific needs. 
  
 
  
- ## Applications of PALs</h2>
+ ## Applications of PALs
 <!-- /wp:heading -->
 
   PALs have found applications in various fields of electronics, including: 
@@ -159,94 +159,94 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Address Decoding</strong>: In computer systems, PALs are often used to decode memory and I/O addresses.</li>
+- ***Address Decoding*** : In computer systems, PALs are often used to decode memory and I/O addresses. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>State Machines</strong>: Sequential logic circuits for controlling system behavior.</li>
+- ***State Machines*** : Sequential logic circuits for controlling system behavior. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Glue Logic</strong>: Interfacing between different components or bus systems.</li>
+- ***Glue Logic*** : Interfacing between different components or bus systems. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Protocol Conversion</strong>: Translating between different communication protocols.</li>
+- ***Protocol Conversion*** : Translating between different communication protocols. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Embedded Systems</strong>: Implementing custom logic in microcontroller-based designs.</li>
+- ***Embedded Systems*** : Implementing custom logic in microcontroller-based designs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Industrial Control</strong>: Creating specialized control circuits for machinery and processes.</li>
+- ***Industrial Control*** : Creating specialized control circuits for machinery and processes. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Consumer Electronics</strong>: Implementing custom functions in TVs, DVD players, and other devices.</li>
-<!-- /wp:list-item --></ol>
+- ***Consumer Electronics*** : Implementing custom functions in TVs, DVD players, and other devices. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The versatility of PALs makes them suitable for a wide range of applications where custom logic is required. 
  
 
  
- ## Advantages and Limitations of PALs</h2>
+ ## Advantages and Limitations of PALs
 <!-- /wp:heading -->
 
   Like any technology, PALs come with their own set of advantages and limitations: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Advantages:</h3>
+
+ ### Advantages:
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Flexibility</strong>: Can be programmed to implement various logic functions.</li>
+- ***Flexibility*** : Can be programmed to implement various logic functions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Reduced Time-to-Market</strong>: Faster to design and implement compared to custom ASICs.</li>
+- ***Reduced Time-to-Market*** : Faster to design and implement compared to custom ASICs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Cost-Effective</strong>: Cheaper for small to medium production runs.</li>
+- ***Cost-Effective*** : Cheaper for small to medium production runs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Simplified Inventory</strong>: One PAL can replace multiple discrete logic ICs.</li>
+- ***Simplified Inventory*** : One PAL can replace multiple discrete logic ICs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Improved Reliability</strong>: Fewer components and connections lead to higher reliability.</li>
-<!-- /wp:list-item --></ol>
+- ***Improved Reliability*** : Fewer components and connections lead to higher reliability. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Limitations:</h3>
+
+ ### Limitations:
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Limited Complexity</strong>: Cannot implement very large or complex logic functions.</li>
+- ***Limited Complexity*** : Cannot implement very large or complex logic functions. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>One-Time Programmable</strong>: Most PALs can only be programmed once (except GALs).</li>
+- ***One-Time Programmable*** : Most PALs can only be programmed once (except GALs). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Speed</strong>: Generally slower than custom ASICs for the same function.</li>
+- ***Speed*** : Generally slower than custom ASICs for the same function. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Power Consumption</strong>: May consume more power than equivalent custom logic.</li>
-<!-- /wp:list-item --></ol>
+- ***Power Consumption*** : May consume more power than equivalent custom logic. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Programming PALs</h2>
+ ## Programming PALs
 <!-- /wp:heading -->
 
   Programming PALs involves several steps and tools: 
@@ -254,38 +254,38 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Design Entry</strong>: Logic functions are typically entered using schematic capture or hardware description languages (HDLs) like ABEL or PALASM.</li>
+- ***Design Entry*** : Logic functions are typically entered using schematic capture or hardware description languages (HDLs) like ABEL or PALASM. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Synthesis</strong>: The design is synthesized into a form suitable for the target PAL device.</li>
+- ***Synthesis*** : The design is synthesized into a form suitable for the target PAL device. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Simulation</strong>: The design is simulated to verify correct operation before programming.</li>
+- ***Simulation*** : The design is simulated to verify correct operation before programming. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Fuse Map Generation</strong>: A fuse map is created, specifying which fuses need to be blown.</li>
+- ***Fuse Map Generation*** : A fuse map is created, specifying which fuses need to be blown. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Device Programming</strong>: A PAL programmer device is used to physically program the PAL chip.</li>
-<!-- /wp:list-item --></ol>
+- ***Device Programming*** : A PAL programmer device is used to physically program the PAL chip. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Modern PAL programming often uses software tools that integrate these steps, simplifying the process for designers. 
  
 
  
- ## Evolution: From PALs to CPLDs and FPGAs</h2>
+ ## Evolution: From PALs to CPLDs and FPGAs
 <!-- /wp:heading -->
 
   While PALs revolutionized programmable logic, the demand for more complex and flexible devices led to further innovations: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Complex Programmable Logic Devices (CPLDs)</h3>
+
+ ### Complex Programmable Logic Devices (CPLDs)
 <!-- /wp:heading -->
 
   CPLDs can be seen as an evolution of PALs, offering more logic resources, reprogrammability, and often non-volatile configuration storage. They consist of multiple PAL-like blocks interconnected by a programmable switch matrix. 
@@ -296,24 +296,24 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Higher logic capacity than PALs</li>
+- Higher logic capacity than PALs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>In-system programmability</li>
+- In-system programmability 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Faster speed compared to basic PALs</li>
+- Faster speed compared to basic PALs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Non-volatile configuration (retains programming when powered off)</li>
-<!-- /wp:list-item --></ul>
+- Non-volatile configuration (retains programming when powered off) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Field-Programmable Gate Arrays (FPGAs)</h3>
+
+ ### Field-Programmable Gate Arrays (FPGAs)
 <!-- /wp:heading -->
 
   FPGAs represent a further evolution, offering even greater flexibility and capacity: 
@@ -321,27 +321,27 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Very high logic capacity</li>
+- Very high logic capacity 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reconfigurable in the field</li>
+- Reconfigurable in the field 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Often include specialized blocks (e.g., DSP blocks, memory blocks)</li>
+- Often include specialized blocks (e.g., DSP blocks, memory blocks) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suitable for implementing entire systems-on-chip</li>
-<!-- /wp:list-item --></ul>
+- Suitable for implementing entire systems-on-chip 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   While CPLDs and FPGAs have largely supplanted PALs in new designs, the principles behind PALs continue to influence modern programmable logic devices. 
  
 
  
- ## The Legacy of PALs</h2>
+ ## The Legacy of PALs
 <!-- /wp:heading -->
 
   Although PALs are less common in new designs today, their impact on the field of electronics is undeniable: 
@@ -349,24 +349,24 @@ url: /programmable-array-logic-pals-the-building-blocks-of-custom-digital-circui
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Democratization of Custom Logic</strong>: PALs made custom logic accessible to a wider range of engineers and small companies.</li>
+- ***Democratization of Custom Logic*** : PALs made custom logic accessible to a wider range of engineers and small companies. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Foundation for Modern PLDs</strong>: The concepts introduced by PALs laid the groundwork for more advanced devices like CPLDs and FPGAs.</li>
+- ***Foundation for Modern PLDs*** : The concepts introduced by PALs laid the groundwork for more advanced devices like CPLDs and FPGAs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Education</strong>: PALs remain an excellent tool for teaching digital logic design principles.</li>
+- ***Education*** : PALs remain an excellent tool for teaching digital logic design principles. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ongoing Use</strong>: PALs are still used in certain applications, particularly in maintaining legacy systems.</li>
-<!-- /wp:list-item --></ol>
+- ***Ongoing Use*** : PALs are still used in certain applications, particularly in maintaining legacy systems. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Programmable Array Logic devices played a crucial role in the evolution of digital electronics, bridging the gap between inflexible discrete logic and expensive custom ASICs. Their ability to be customized after manufacture opened up new possibilities in circuit design and paved the way for more advanced programmable logic devices. 

@@ -38,10 +38,10 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <!-- /wp:separator -->
 
  
- ## What Is <code>rsync</code>?</h2>
+ ## What Is <code>rsync</code>?
 <!-- /wp:heading -->
 
-  The <code>rsync</code> command stands for <strong>remote sync</strong>, and it was designed to efficiently synchronize files and directories between two locations. Whether those locations are on the same machine or across different machines, <code>rsync</code> is reliable and extremely efficient. 
+  The <code>rsync</code> command stands for ***remote sync*** , and it was designed to efficiently synchronize files and directories between two locations. Whether those locations are on the same machine or across different machines, <code>rsync</code> is reliable and extremely efficient. 
  
 
   Key features of <code>rsync</code> include: 
@@ -49,24 +49,24 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Efficient data transfer:</strong> Only changes between files are transferred, reducing bandwidth.</li>
+- ***Efficient data transfer:***  Only changes between files are transferred, reducing bandwidth. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Preservation of file attributes:</strong> Permissions, modification times, symbolic links, and ownership can be preserved.</li>
+- ***Preservation of file attributes:***  Permissions, modification times, symbolic links, and ownership can be preserved. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Versatile transfer methods:</strong> Local-to-local, local-to-remote, and remote-to-local file transfers are supported.</li>
+- ***Versatile transfer methods:***  Local-to-local, local-to-remote, and remote-to-local file transfers are supported. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>SSH integration:</strong> Data can be securely transferred using SSH for remote operations.</li>
+- ***SSH integration:***  Data can be securely transferred using SSH for remote operations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Bandwidth limitation:</strong> You can throttle the speed of data transfer to conserve network resources.</li>
-<!-- /wp:list-item --></ul>
+- ***Bandwidth limitation:***  You can throttle the speed of data transfer to conserve network resources. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -74,7 +74,7 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <!-- /wp:separator -->
 
  
- ## Basic Syntax</h2>
+ ## Basic Syntax
 <!-- /wp:heading -->
 
   Before diving into advanced scenarios, here’s the basic structure of the <code>rsync</code> command: 
@@ -89,12 +89,12 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Source</strong>: The path to the file(s) or directory you wish to sync.</li>
+- ***Source*** : The path to the file(s) or directory you wish to sync. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Destination</strong>: The target location where the files should be copied.</li>
-<!-- /wp:list-item --></ul>
+- ***Destination*** : The target location where the files should be copied. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -102,14 +102,14 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <!-- /wp:separator -->
 
  
- ## Advanced Rsync Usage</h2>
+ ## Advanced Rsync Usage
 <!-- /wp:heading -->
 
   Let’s explore advanced use cases of the <code>rsync</code> command, which will help you take full advantage of its capabilities. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Synchronizing with Compression</h3>
+
+ ### 1. Synchronizing with Compression
 <!-- /wp:heading -->
 
   Transferring large files over a network can be time-consuming. Fortunately, <code>rsync</code> allows you to compress data during transfer with the <code>-z</code> flag. This is particularly helpful for remote backups or synchronizations over slow network connections. 
@@ -124,20 +124,20 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>-a</strong>: Archive mode to preserve file attributes (e.g., ownership, timestamps).</li>
+- ***-a*** : Archive mode to preserve file attributes (e.g., ownership, timestamps). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>-v</strong>: Verbose mode, which provides detailed output of the files being transferred.</li>
+- ***-v*** : Verbose mode, which provides detailed output of the files being transferred. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>-z</strong>: Compresses file data during transfer to speed up synchronization.</li>
-<!-- /wp:list-item --></ul>
+- ***-z*** : Compresses file data during transfer to speed up synchronization. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Partial Transfer Resumption</h3>
+
+ ### 2. Partial Transfer Resumption
 <!-- /wp:heading -->
 
   Large file transfers may be interrupted due to network failures or other issues. In these cases, you don’t want to start the process over from scratch. The <code>--partial</code> option allows you to resume incomplete file transfers from where they left off. 
@@ -149,16 +149,16 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>--partial</strong>: Keeps partially transferred files, allowing you to resume the transfer without starting over.</li>
+- ***--partial*** : Keeps partially transferred files, allowing you to resume the transfer without starting over. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>--progress</strong>: Shows real-time progress of the transfer.</li>
-<!-- /wp:list-item --></ul>
+- ***--progress*** : Shows real-time progress of the transfer. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Excluding Files from Synchronization</h3>
+
+ ### 3. Excluding Files from Synchronization
 <!-- /wp:heading -->
 
   Sometimes you may want to exclude certain files or directories from being synchronized. You can achieve this by using the <code>--exclude</code> option. This is useful in scenarios where you’re copying an entire directory but want to avoid unnecessary files like logs or temporary data. 
@@ -171,7 +171,7 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
   This example skips any files with the <code>.log</code> extension during the synchronization process. 
  
 
-  You can also use an <strong>exclude file</strong> that contains a list of patterns to ignore. This is particularly helpful for complex exclusion rules. 
+  You can also use an ***exclude file***  that contains a list of patterns to ignore. This is particularly helpful for complex exclusion rules. 
  
 
 <!-- wp:code -->
@@ -187,8 +187,8 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 /cache/</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. Preserving Hard Links</h3>
+
+ ### 4. Preserving Hard Links
 <!-- /wp:heading -->
 
   When dealing with backups or complex directory structures that use hard links, it’s crucial to preserve these links during synchronization. By default, <code>rsync</code> does not preserve hard links, but using the <code>-H</code> option solves this. 
@@ -201,8 +201,8 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
   The <code>-H</code> option ensures that hard links between files are maintained in the destination directory. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 5. Deleting Files in Destination</h3>
+
+ ### 5. Deleting Files in Destination
 <!-- /wp:heading -->
 
   By default, <code>rsync</code> will only add new or updated files to the destination. However, sometimes you want the destination to be an exact replica of the source. This is where the <code>--delete</code> option comes into play. It removes any files from the destination that no longer exist in the source. 
@@ -215,8 +215,8 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
   This is particularly useful for creating backups or mirroring directories, but use it with caution as it can permanently delete files from the destination. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 6. Synchronizing Files with Checksums</h3>
+
+ ### 6. Synchronizing Files with Checksums
 <!-- /wp:heading -->
 
   Normally, <code>rsync</code> checks whether files need to be synchronized based on modification times and file sizes. However, if you need a more thorough comparison, you can use the <code>-c</code> option to compare files using checksums. This is more accurate but comes with a performance cost due to the additional computation required for the checksums. 
@@ -228,12 +228,12 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>-c</strong>: Uses checksums to compare files instead of just timestamps.</li>
-<!-- /wp:list-item --></ul>
+- ***-c*** : Uses checksums to compare files instead of just timestamps. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. Limiting Bandwidth Usage</h3>
+
+ ### 7. Limiting Bandwidth Usage
 <!-- /wp:heading -->
 
   If you’re synchronizing over a network and want to avoid saturating the connection, you can limit the bandwidth used by <code>rsync</code> with the <code>--bwlimit</code> option. 
@@ -243,11 +243,11 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --bwlimit=5000 /source/directory/ user@remote:/destination/directory/</code></pre>
 <!-- /wp:code -->
 
-  In this case, the bandwidth is limited to <strong>5000 KB/s</strong>. 
+  In this case, the bandwidth is limited to ***5000 KB/s*** . 
  
 
-<!-- wp:heading {"level":3} -->
- ### 8. Dry Run Option for Testing</h3>
+
+ ### 8. Dry Run Option for Testing
 <!-- /wp:heading -->
 
   When performing large or critical file transfers, it’s always a good idea to preview the changes that will be made without actually transferring any data. The <code>--dry-run</code> option allows you to see exactly what will happen when you run the command for real. 
@@ -265,14 +265,14 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <!-- /wp:separator -->
 
  
- ## Examples of Advanced Scenarios</h2>
+ ## Examples of Advanced Scenarios
 <!-- /wp:heading -->
 
   Now, let’s combine some of these options for more complex synchronization tasks. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation</h3>
+
+ ### Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation
 <!-- /wp:heading -->
 
   Imagine you’re backing up a remote web server. You want to transfer all data but exclude log files, compress the transfer, and limit bandwidth usage. 
@@ -285,8 +285,8 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
   This command synchronizes the web files from a remote server to your local backup directory, excluding log files and limiting bandwidth to 2 MB/s. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files</h3>
+
+ ### Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files
 <!-- /wp:heading -->
 
   Suppose you want to create a backup that mirrors the exact state of the source directory, preserving hard links and deleting files in the destination that no longer exist in the source. 
@@ -304,7 +304,7 @@ url: /mastering-the-rsync-command-in-linux-a-guide-for-advanced-users/
 <!-- /wp:separator -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   The <code>rsync</code> command is a versatile and essential tool for any advanced Linux user who deals with file synchronization or data transfers. From its ability to optimize file transfers with compression and bandwidth limitations to its more specialized options for preserving hard links or using checksums, <code>rsync</code> is a command that can handle a wide range of tasks. 

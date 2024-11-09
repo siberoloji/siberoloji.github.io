@@ -11,12 +11,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Kotlin Değişken ve Değer tanımlama – Siberoloji</title>
-  <meta name="description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir. Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-degisken-ve-deger-tanimlama/" itemprop="url" />
+  <meta name="description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.
+Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır." /><link rel="canonical" href="http://localhost:1313/tr/kotlin-degisken-ve-deger-tanimlama/" itemprop="url" />
 
 <meta property="og:title" content="Kotlin Değişken ve Değer tanımlama" />
 <meta property="og:description" content="Değişken nedir?
     
-Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.  
+Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.
 Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda &ldquo;sınıf adı&rdquo; ve &ldquo;öğrenci sayısı&rdquo; olarak ifade edeceğimiz iki değişkenimiz olacaktır." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/kotlin-degisken-ve-deger-tanimlama/" /><meta property="article:section" content="blog" />
@@ -24,14 +25,16 @@ Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutuld
 <meta property="article:modified_time" content="2024-01-17T18:43:39+00:00" />
 
   <meta itemprop="name" content="Kotlin Değişken ve Değer tanımlama">
-  <meta itemprop="description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir. Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır.">
+  <meta itemprop="description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.
+Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır.">
   <meta itemprop="datePublished" content="2024-01-17T18:43:39+00:00">
   <meta itemprop="dateModified" content="2024-01-17T18:43:39+00:00">
   <meta itemprop="wordCount" content="540">
   <meta itemprop="keywords" content="Kotlin,Yazılım">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kotlin Değişken ve Değer tanımlama">
-  <meta name="twitter:description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir. Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır.">
+  <meta name="twitter:description" content="Değişken nedir? Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.
+Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda “sınıf adı” ve “öğrenci sayısı” olarak ifade edeceğimiz iki değişkenimiz olacaktır.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -8258,21 +8261,21 @@ Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutuld
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#de%c4%9fi%c5%9fken-nedirh2"
+                href="#de%c4%9fi%c5%9fken-nedir"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Değişken nedir?&lt;/h2&gt;</a>
+              >Değişken nedir?</a>
             </li>
           <li>
               <a
-                href="#de%c4%9fi%c5%9fken-tan%c4%b1mlamah2"
+                href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Değişken tanımlama&lt;/h2&gt;</a>
+              >Değişken tanımlama</a>
             </li>
           <li>
               <a
-                href="#sonu%c3%a7h2"
+                href="#sonu%c3%a7"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Sonuç&lt;/h2&gt;</a>
+              >Sonuç</a>
             </li>
           </ul>
   
@@ -9667,31 +9670,31 @@ Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutuld
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-nedirh2">Değişken nedir?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-nedir">Değişken nedir?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-tan%c4%b1mlamah2">Değişken tanımlama
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama">Değişken tanımlama
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#val-valueh3">val (value)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#val-value">val (value)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#var-variableh3">var (variable)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#var-variable">var (variable)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#const-constanth3">const (constant)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#const-constant">const (constant)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atamah3">Farklı değer tiplerinde veriler atama
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atama">Farklı değer tiplerinde veriler atama
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sonu%c3%a7h2">Sonuç
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sonu%c3%a7">Sonuç
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9724,18 +9727,17 @@ Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutuld
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <h2>Değişken nedir?</h2><span class="hx-absolute -hx-mt-20" id="değişken-nedirh2"></span>
-    <a href="#de%c4%9fi%c5%9fken-nedirh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.  </p></p>
-<p>Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda &ldquo;sınıf adı&rdquo; ve &ldquo;öğrenci sayısı&rdquo; olarak ifade edeceğimiz iki değişkenimiz olacaktır.</p></p>
-<h2>Değişken tanımlama</h2><span class="hx-absolute -hx-mt-20" id="değişken-tanımlamah2"></span>
-    <a href="#de%c4%9fi%c5%9fken-tan%c4%b1mlamah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Yazacağımız programda, değişkeni kullanabilmemiz için önceden tanımlamış olmalıyız. Değişken tanımlamak için Kotlin iki anahtar kelime sunmaktadır. Değişken ismi rakamla başlamamalı ve büyük küçük harf duyarlılığı olduğu unutulmamalıdır.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>val (value)</h3><span class="hx-absolute -hx-mt-20" id="val-valueh3"></span>
-    <a href="#val-valueh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>val ifadesi ile tanımladığımız değişkenler program başlangıcında içine değer atandıktan sonra değerin bir daha değişmediği değişken türüdür. Örneğin işlem yapmak istediğimiz bir Roman&rsquo;ın adını verebiliriz. Farklı basım tarzları sonucunda sayfa sayısı değişse bile yazarın adı ve romanın adı sabit kalacaktır. Ancak bu, başka bir kitap için yine sabit olan bir yazar adı ve kitap ismi gerektirmektedir. İşte bu ihtiyaçtan dolayı, programın ilk çalıştırılması esnasında içerisine istediğimiz değeri bir defaya mahsus atayabildiğimiz ancak sonradan değiştiremediğimiz türden değişkenleri <strong>val</strong> ifadesi ile tanımlayacağız. </p></p>
-<p>Bu tür değişkenlerin içeriği <em>çalışma zamanında</em> belirlenir.</p></p>
+          <h2>Değişken nedir?<span class="hx-absolute -hx-mt-20" id="değişken-nedir"></span>
+    <a href="#de%c4%9fi%c5%9fken-nedir" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Değişken, içerisinde bir rakam, yazı veya diğer her türlü bilginin tutulduğu kayıt yeridir. Değişkenler, programlama da neredeyse en önemli yapı taşlarıdır. Yapacağımız bütün işlemlerin içerisinde bu değerlerin tutulduğu değişkenler bulunur. İsmine değişken diyoruz çünkü, içerisindeki kayıtlı olan değer değişebilmektedir.</p>
+<p>Örneğin, bir okul ve içinde sınıfları düşünün. Her bir sınıfın adını bir yerde kayıt etmeli ve her sınıfın öğrenci sayısını da bir yerde kayıt etmeliyiz. Her değişkenin, diğer değişkenlerden ayırt edilmeye yarayan bir adı (tanımlayıcı) bulunmalıdır. Bu durumda &ldquo;sınıf adı&rdquo; ve &ldquo;öğrenci sayısı&rdquo; olarak ifade edeceğimiz iki değişkenimiz olacaktır.</p>
+<h2>Değişken tanımlama<span class="hx-absolute -hx-mt-20" id="değişken-tanımlama"></span>
+    <a href="#de%c4%9fi%c5%9fken-tan%c4%b1mlama" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Yazacağımız programda, değişkeni kullanabilmemiz için önceden tanımlamış olmalıyız. Değişken tanımlamak için Kotlin iki anahtar kelime sunmaktadır. Değişken ismi rakamla başlamamalı ve büyük küçük harf duyarlılığı olduğu unutulmamalıdır.</p>
+<h3>val (value)<span class="hx-absolute -hx-mt-20" id="val-value"></span>
+    <a href="#val-value" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>val ifadesi ile tanımladığımız değişkenler program başlangıcında içine değer atandıktan sonra değerin bir daha değişmediği değişken türüdür. Örneğin işlem yapmak istediğimiz bir Roman&rsquo;ın adını verebiliriz. Farklı basım tarzları sonucunda sayfa sayısı değişse bile yazarın adı ve romanın adı sabit kalacaktır. Ancak bu, başka bir kitap için yine sabit olan bir yazar adı ve kitap ismi gerektirmektedir. İşte bu ihtiyaçtan dolayı, programın ilk çalıştırılması esnasında içerisine istediğimiz değeri bir defaya mahsus atayabildiğimiz ancak sonradan değiştiremediğimiz türden değişkenleri <em><strong>val</strong></em>  ifadesi ile tanımlayacağız.</p>
+<p>Bu tür değişkenlerin içeriği <em>çalışma zamanında</em> belirlenir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
 val language = "Kotlin"
@@ -9748,11 +9750,10 @@ Kotlin
 Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
-<p>Yukarıdaki örnekte language adında bir değişken tanımlanmış ve değeri String türünde &ldquo;Kotlin&rdquo; olarak atanmıştır. Değeri atamak için = işareti kullanıldığına dikkat etmelisiniz. Şimdi bu değişkeni program içerisinde kodlarımızı yazarken artık &ldquo;language&rdquo; orada çağırabiliriz.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>var (variable)</h3><span class="hx-absolute -hx-mt-20" id="var-variableh3"></span>
-    <a href="#var-variableh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>İçerisinde tutulan değeri istediğimiz zaman istediğimiz kadar değiştirebileceğimiz bir değişken türüdür. Değiştirilebilir değişken olarak ifade edebiliriz.</p></p>
+<p>Yukarıdaki örnekte language adında bir değişken tanımlanmış ve değeri String türünde &ldquo;Kotlin&rdquo; olarak atanmıştır. Değeri atamak için = işareti kullanıldığına dikkat etmelisiniz. Şimdi bu değişkeni program içerisinde kodlarımızı yazarken artık &ldquo;language&rdquo; orada çağırabiliriz.</p>
+<h3>var (variable)<span class="hx-absolute -hx-mt-20" id="var-variable"></span>
+    <a href="#var-variable" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>İçerisinde tutulan değeri istediğimiz zaman istediğimiz kadar değiştirebileceğimiz bir değişken türüdür. Değiştirilebilir değişken olarak ifade edebiliriz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     var dayOfWeek = "Monday"
@@ -9768,16 +9769,14 @@ Sunday
 Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
-<p>Yukarıdaki örnekte gördüğünüz gibi, dayOfWeek değişkenine önce Monday değerini verip ekrana yazdırdık. Ardından, Sunday değerini vererek yeni değeri de ekrana yazdırdık. Bu sayede bir değişkenin içindeki değerleri değiştirerek kullanmış olduk.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>const (constant)</h3><span class="hx-absolute -hx-mt-20" id="const-constanth3"></span>
-    <a href="#const-constanth3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Program kodlanırken bilinen ve yazılımı kim kullanırsa kullansın değişmeyecek olan değerlere <strong>sabit</strong> denmektedir. Sabitlerin de bir yere kayıt edilmesi gerekmektedir. Bu sebeple <strong>const</strong> ifadesi <strong>val</strong> ifadesi ile birlikte kullanılarak sabit değerler atanır.</p></p>
-<p>Bu tür değişkenlerin içeriği <em>derleme zamanında</em> belirlenir.</p></p>
-<!-- wp:heading {"level":3} -->
-<h3>Farklı değer tiplerinde veriler atama</h3><span class="hx-absolute -hx-mt-20" id="farklı-değer-tiplerinde-veriler-atamah3"></span>
-    <a href="#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atamah3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Kotlin içerisinde farklı veri tiplerini saklamak için istediğiniz kadar değişken tanımlayabilirsiniz. Aşağıda bunun bir örneğini görebilirsiniz. </p></p>
+<p>Yukarıdaki örnekte gördüğünüz gibi, dayOfWeek değişkenine önce Monday değerini verip ekrana yazdırdık. Ardından, Sunday değerini vererek yeni değeri de ekrana yazdırdık. Bu sayede bir değişkenin içindeki değerleri değiştirerek kullanmış olduk.</p>
+<h3>const (constant)<span class="hx-absolute -hx-mt-20" id="const-constant"></span>
+    <a href="#const-constant" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Program kodlanırken bilinen ve yazılımı kim kullanırsa kullansın değişmeyecek olan değerlere <em><strong>sabit</strong></em>  denmektedir. Sabitlerin de bir yere kayıt edilmesi gerekmektedir. Bu sebeple <em><strong>const</strong></em>  ifadesi <em><strong>val</strong></em>  ifadesi ile birlikte kullanılarak sabit değerler atanır.</p>
+<p>Bu tür değişkenlerin içeriği <em>derleme zamanında</em> belirlenir.</p>
+<h3>Farklı değer tiplerinde veriler atama<span class="hx-absolute -hx-mt-20" id="farklı-değer-tiplerinde-veriler-atama"></span>
+    <a href="#farkl%c4%b1-de%c4%9fer-tiplerinde-veriler-atama" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Kotlin içerisinde farklı veri tiplerini saklamak için istediğiniz kadar değişken tanımlayabilirsiniz. Aşağıda bunun bir örneğini görebilirsiniz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">fun main() {
     val ten = 10
@@ -9797,10 +9796,10 @@ A
 Process finished with exit code 0
  */</code></pre>
 <!-- /wp:code -->
-<p>Burada belirtmemiz gereken önemli bir kural bulunuyor. Örneğin, Bir değişkene ilk olarak var kullanarak Int yani tamsayı değeri ataması yaptığınızı düşünürsek (val ten = 10) bundan sonra o değişkene atayacağımız değerler hep tamsayı olmalı. İlk atanan veri tipi ne ise, sonradan atanacak veri tipi de hep aynı olmalı.</p></p>
-<h2>Sonuç</h2><span class="hx-absolute -hx-mt-20" id="sonuçh2"></span>
-    <a href="#sonu%c3%a7h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Artık değişken tanımlamak için val ve var anahtar kelimelerinin kullanıldığını, değişken isimlerinin harf ile başlaması gerektiğini ve değişkenlerin ilk atanan değer türü ne ise sonradan da ancak o tür değerler atanabileceğini biliyoruz. Bu bilgiler sonraki aşamalar için oldukça işimize yarayacaktır.</p></p>
+<p>Burada belirtmemiz gereken önemli bir kural bulunuyor. Örneğin, Bir değişkene ilk olarak var kullanarak Int yani tamsayı değeri ataması yaptığınızı düşünürsek (val ten = 10) bundan sonra o değişkene atayacağımız değerler hep tamsayı olmalı. İlk atanan veri tipi ne ise, sonradan atanacak veri tipi de hep aynı olmalı.</p>
+<h2>Sonuç<span class="hx-absolute -hx-mt-20" id="sonuç"></span>
+    <a href="#sonu%c3%a7" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Artık değişken tanımlamak için val ve var anahtar kelimelerinin kullanıldığını, değişken isimlerinin harf ile başlaması gerektiğini ve değişkenlerin ilk atanan değer türü ne ise sonradan da ancak o tür değerler atanabileceğini biliyoruz. Bu bilgiler sonraki aşamalar için oldukça işimize yarayacaktır.</p>
 
         </div>
         

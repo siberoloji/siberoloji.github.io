@@ -29,7 +29,7 @@ url: /while-loop-with-examples-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -90,7 +90,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation </h2>
+ ## Explanation 
 <!-- /wp:heading -->
 
   The provided C++ code demonstrates various uses of the <code>while</code> loop, showcasing how it can be utilized for basic iteration, and how control flow statements like <code>break</code>, <code>continue</code>, and <code>return</code> can be integrated within these loops to manage their execution more precisely. 
@@ -139,7 +139,7 @@ while (i &lt; 10) {
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

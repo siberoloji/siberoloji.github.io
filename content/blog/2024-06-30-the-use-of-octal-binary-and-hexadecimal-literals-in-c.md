@@ -25,7 +25,7 @@ title: The use of octal, binary and hexadecimal literals in C++
 url: /the-use-of-octal-binary-and-hexadecimal-literals-in-c/
 ---
 
-  This function defines three integer variables, each initialized with a different type of literal (hexadecimal, octal, binary). It then prints the values of these variables to the console.</p>
+  This function defines three integer variables, each initialized with a different type of literal (hexadecimal, octal, binary). It then prints the values of these variables to the console.
  
 
 <!-- wp:code -->
@@ -62,13 +62,13 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
-  The provided C++ code is a simple program that demonstrates the use of different types of integer literals in C++. It includes hexadecimal, octal, and binary literals.</p>
+  The provided C++ code is a simple program that demonstrates the use of different types of integer literals in C++. It includes hexadecimal, octal, and binary literals.
  
 
-  The program begins by including the <code>iostream</code> library, which provides facilities for input/output operations. The <code>using namespace std;</code> statement is used to avoid prefixing the <code>cout</code> and <code>endl</code> with <code>std::</code>.</p>
+  The program begins by including the <code>iostream</code> library, which provides facilities for input/output operations. The <code>using namespace std;</code> statement is used to avoid prefixing the <code>cout</code> and <code>endl</code> with <code>std::</code>.
  
 
 <!-- wp:code -->
@@ -76,7 +76,7 @@ int main() {
 using namespace std;</code></pre>
 <!-- /wp:code -->
 
-  The <code>main</code> function is the entry point of the program. Inside this function, three integer variables <code>a</code>, <code>b</code>, and <code>c</code> are declared and initialized with a hexadecimal, octal, and binary literal, respectively.</p>
+  The <code>main</code> function is the entry point of the program. Inside this function, three integer variables <code>a</code>, <code>b</code>, and <code>c</code> are declared and initialized with a hexadecimal, octal, and binary literal, respectively.
  
 
 <!-- wp:code -->
@@ -85,10 +85,10 @@ int b = 032;
 int c = 0b1101;</code></pre>
 <!-- /wp:code -->
 
-  In C++, hexadecimal literals are prefixed with <code>0x</code> or <code>0X</code>, octal literals are prefixed with <code>0</code>, and binary literals are prefixed with <code>0b</code> or <code>0B</code>. The hexadecimal literal <code>0x1A</code> and the octal literal <code>032</code> both represent the decimal number 26, while the binary literal <code>0b1101</code> represents the decimal number 13.</p>
+  In C++, hexadecimal literals are prefixed with <code>0x</code> or <code>0X</code>, octal literals are prefixed with <code>0</code>, and binary literals are prefixed with <code>0b</code> or <code>0B</code>. The hexadecimal literal <code>0x1A</code> and the octal literal <code>032</code> both represent the decimal number 26, while the binary literal <code>0b1101</code> represents the decimal number 13.
  
 
-  The program then uses <code>cout</code> to print the values of these variables to the console. The <code>endl</code> manipulator is used to insert a new line.</p>
+  The program then uses <code>cout</code> to print the values of these variables to the console. The <code>endl</code> manipulator is used to insert a new line.
  
 
 <!-- wp:code -->
@@ -97,12 +97,12 @@ cout &lt;&lt; "Octal literal: " &lt;&lt; b &lt;&lt; endl;
 cout &lt;&lt; "Binary literal: " &lt;&lt; c &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  Finally, the <code>main</code> function returns 0 to indicate successful execution of the program.</p>
+  Finally, the <code>main</code> function returns 0 to indicate successful execution of the program.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">return 0;</code></pre>
 <!-- /wp:code -->
 
-  This code is a good demonstration of how different types of integer literals can be used in C++.</p>
+  This code is a good demonstration of how different types of integer literals can be used in C++.
  

@@ -36,7 +36,7 @@ Trend Micro firması tarafından bu hafta yayımlanan bir rapor, 2005-2015 yıll
 
 ## 1. Kişisel Bilgi Güvenliği ve Sağlık Bilgileri
 
- <p>Kamu kurumları veya özel sektör firmaları tarafından kayıt altında tutulan sağlık bilgileri, hedef olarak en üst sırada yer alıyor. Bunun bir kaç sebebi var. Öncelikle bu bilgiler, günümüzde oldukça yaygınlaşan sosyal mühendislik saldırılarında kullanılıyor. En önemlisi de Sağlık kuruluşları tarafından tutulan bilgiler, kimlik ile teyit edildiğinden yanlış olma ihtimali çok az. Bu tür, doğruluk ihtimali yüksek bilgilerin, deep web olarak adlandırılan piyasalarda satışı yapılmaktadır.</p>
+ <p>Kamu kurumları veya özel sektör firmaları tarafından kayıt altında tutulan sağlık bilgileri, hedef olarak en üst sırada yer alıyor. Bunun bir kaç sebebi var. Öncelikle bu bilgiler, günümüzde oldukça yaygınlaşan sosyal mühendislik saldırılarında kullanılıyor. En önemlisi de Sağlık kuruluşları tarafından tutulan bilgiler, kimlik ile teyit edildiğinden yanlış olma ihtimali çok az. Bu tür, doğruluk ihtimali yüksek bilgilerin, deep web olarak adlandırılan piyasalarda satışı yapılmaktadır.
 
 ## 2. Kredi Kartı Hırsızlığı 5 Yılda %169 Artış Göstermiştir
 
@@ -44,16 +44,16 @@ Trend Micro firması tarafından bu hafta yayımlanan bir rapor, 2005-2015 yıll
 
 ## 3. Zararlı Yazılımlara Karşı Daha Dikkatli Olmak Gerekiyor
 
- Bir çok haberde, e-posta ile gelen oltalama (phishing) saldırılarından bahsediliyor. Bu tarz e-postalarla merak uyandırılmaya çalışılır. Gelen iletinin içerisindeki bağlantıya tıklamanız amaçlanır. Tıkladığınızda ise alakasız bir siteye gidersiniz veya hiçbir şey olmaz. Aslında zararlı yazılım sisteminize yüklenmiştir. Üstelik kendi rızanızla. Tıklama işlemi size zararsız gibi görünse de saldırganların bilgisayarınıza ulaşması için bir port açılmasına izin vermiş olursunuz.</p>
+ Bir çok haberde, e-posta ile gelen oltalama (phishing) saldırılarından bahsediliyor. Bu tarz e-postalarla merak uyandırılmaya çalışılır. Gelen iletinin içerisindeki bağlantıya tıklamanız amaçlanır. Tıkladığınızda ise alakasız bir siteye gidersiniz veya hiçbir şey olmaz. Aslında zararlı yazılım sisteminize yüklenmiştir. Üstelik kendi rızanızla. Tıklama işlemi size zararsız gibi görünse de saldırganların bilgisayarınıza ulaşması için bir port açılmasına izin vermiş olursunuz.
 
- <p>Burada vurgulanması gereken diğer bir konu ise, phishing saldırısının sadece e-postalar yoluyla olmadığıdır. Satın almak istemediğiniz oyunların kırılmış (crack) halini aradığınız torrent siteleri veya aslında ücretli satıldığı halde filmleri ücretsiz online yayımlayan siteler, bu tür işlere aracılıkta kullanılıyor. Bilgisayarınızı çocuğunuza teslim ederken de dikkatli olmanızı tavsiye ediyoruz.</p>
+ <p>Burada vurgulanması gereken diğer bir konu ise, phishing saldırısının sadece e-postalar yoluyla olmadığıdır. Satın almak istemediğiniz oyunların kırılmış (crack) halini aradığınız torrent siteleri veya aslında ücretli satıldığı halde filmleri ücretsiz online yayımlayan siteler, bu tür işlere aracılıkta kullanılıyor. Bilgisayarınızı çocuğunuza teslim ederken de dikkatli olmanızı tavsiye ediyoruz.
 
 ## 4. Kişisel Bilgi Güvenliği İhlaliyle Ele Geçen Bilgiler Nette Satılıyor
 
- <p>Banka hesap bilgileri, Paypal Hesap Bilgileri vb. diğer tüm bilgiler deep web olarak adlandırılan ve normal arama motorlarıyla ulaşılamayan çeşitli mecralarda pazarlanıyor. Bu tür bilgileri kişisel olarak satın almanın yanında, casusluk amacıyla satın alabileceklerin de olduğunu unutmayın. Bir firmanın kendisinin veya yöneticisinin itibarı da hedef olarak seçilmiş olabilir. Bu yöneticiye ulaşmak için, öncelikle başka bir firma çalışanının facebook vb. sosyal medya hesapları&nbsp;Kişisel Bilgi Güvenliği İhlaline maruz kalabilir.&nbsp;Bu durumda kimsenin “Benim ne kişisel bilgim olabilir?” demek gibi bir lüksü de kalmamaktadır. Kişisel Bilgi Güvenliği, siber ortamı kullanan her bireyi yakından ilgilendirmektedir.</p>
+ <p>Banka hesap bilgileri, Paypal Hesap Bilgileri vb. diğer tüm bilgiler deep web olarak adlandırılan ve normal arama motorlarıyla ulaşılamayan çeşitli mecralarda pazarlanıyor. Bu tür bilgileri kişisel olarak satın almanın yanında, casusluk amacıyla satın alabileceklerin de olduğunu unutmayın. Bir firmanın kendisinin veya yöneticisinin itibarı da hedef olarak seçilmiş olabilir. Bu yöneticiye ulaşmak için, öncelikle başka bir firma çalışanının facebook vb. sosyal medya hesapları&nbsp;Kişisel Bilgi Güvenliği İhlaline maruz kalabilir.&nbsp;Bu durumda kimsenin “Benim ne kişisel bilgim olabilir?” demek gibi bir lüksü de kalmamaktadır. Kişisel Bilgi Güvenliği, siber ortamı kullanan her bireyi yakından ilgilendirmektedir.
 
 ## 5. Cep Telefonu vb. Cihazların Fiziksel Güvenliği
 
- <p>Kayıp veya çalınan Akıllı telefonların, en kısa sürede kilitlenerek&nbsp;kapatılabilme özelliklerinin kullanılması oldukça önemli. Sadece akıllı telefonların değil diğer disk, USB gibi cihazlarda da verilerin açık olarak taşınmaması konusu kritik noktalar arasında.</p>
+ <p>Kayıp veya çalınan Akıllı telefonların, en kısa sürede kilitlenerek&nbsp;kapatılabilme özelliklerinin kullanılması oldukça önemli. Sadece akıllı telefonların değil diğer disk, USB gibi cihazlarda da verilerin açık olarak taşınmaması konusu kritik noktalar arasında.
 
- <p>Kişisel bilgi güvenliği sadece sizin için değil, iletişim halinde olduğunuz, arkadaş listenizde bulunan tüm diğer insanlar için de size sorumluluk yüklemektedir. Bu yazıyı paylaşarak bir miktar farkındalık oluşturmak isterseniz bundan çok mutlu oluruz.</p>
+ <p>Kişisel bilgi güvenliği sadece sizin için değil, iletişim halinde olduğunuz, arkadaş listenizde bulunan tüm diğer insanlar için de size sorumluluk yüklemektedir. Bu yazıyı paylaşarak bir miktar farkındalık oluşturmak isterseniz bundan çok mutlu oluruz.

@@ -29,11 +29,11 @@ url: /linux-command-initialization-in-background-parameter/
 ---
 
 <!-- wp:paragraph -->
-<p>When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.</p>
+<p>When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
   
 
 <!-- wp:paragraph -->
-<p>You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.</p>
+<p>You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.
   
 
 <!-- wp:code -->
@@ -57,9 +57,9 @@ linux@rpi4:~ $
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>As you can see above, we started the update process in the background with the <code>sudo apt update &amp;</code> command. In this case, the system showed us the job number of the job that started in the background as <code>[1]</code>. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the <code>fg 1</code> command. If we want to do the opposite, we can send a running job to the background using the <kbd>Ctrl+z </kbd>keys.</p>
+<p>As you can see above, we started the update process in the background with the <code>sudo apt update &amp;</code> command. In this case, the system showed us the job number of the job that started in the background as <code>[1]</code>. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the <code>fg 1</code> command. If we want to do the opposite, we can send a running job to the background using the <kbd>Ctrl+z </kbd>keys.
   
 
 <!-- wp:paragraph -->
-<p>The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the <code>&amp;</code> sign.</p>
+<p>The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the <code>&amp;</code> sign.
   

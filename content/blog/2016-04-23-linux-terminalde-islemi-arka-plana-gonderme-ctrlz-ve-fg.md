@@ -30,13 +30,13 @@ url: /tr/linux-terminalde-islemi-arka-plana-gonderme-ctrlz-ve-fg/
   Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içerisinde (resolv.conf vb.) düzeltmeler yapmak istediniz. Bu durumda, komut satırına&nbsp;<code>sudo nano belgeninadı</code>&nbsp;yazıp editöre girersiniz. Editöre girdiğinizde komut satırı artık kaybolmuştur. Çalıştığınız dosyada işiniz bitmediği halde, komut satırında da bir işlem yapmak isterseniz ne yapmalısınız? 
  
 
-  <strong>1.Yol:</strong>&nbsp;Yeni bir TAB-sekme açarım. 
+  ***1.Yol:*** &nbsp;Yeni bir TAB-sekme açarım. 
  
 
-  <strong>2.Yol:</strong>&nbsp;Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım. 
+  ***2.Yol:*** &nbsp;Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım. 
  
 
-  <strong>3.Yol:</strong>&nbsp;Diğer 
+  ***3.Yol:*** &nbsp;Diğer 
  
 
   Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olabilir fakat ssh ile bağlandığınız uzak sunucuda bu mümkün olmayabilir. İkinci seçenek ise bilgisayarın icat edildiği ilk çağlardan kalma bir yöntem gibi görünüyor. Bu sorunu çözmenin kısa ve hızlı bir yolu mutlaka olmalı. 
@@ -45,17 +45,17 @@ url: /tr/linux-terminalde-islemi-arka-plana-gonderme-ctrlz-ve-fg/
   İşte böyle kaydet-çık-tekrar gir işlemlerinden sıkılan geliştiriciler Ctrl+Z tuş kombinasyonu ve fg komutunu geliştirmişler. Bu sayede, çalışan editörü, çıkmadan geri plana gönderip tekrar komut satırına geçmeniz mümkün. Hatta, komut satırından, editörde başka bir belge açmanız ve onu da arka plana göndermeniz mümkün. İki açık belgeyi arka plana gönderdikten sonra başka bir belge açıp onu da arka plana göndermeniz ……. diye hikaye böyle devam eder. 
  
 
-  <strong>Nasıl mı?</strong> 
+  ***Nasıl mı?***  
  
 
   1.Adım: Önce deneme1.txt, deneme2.txt ve deneme3.txt dosyaları oluşturalım. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>~$ cd /tmp/
-/tmp$ echo 'Selam, ben 0 numaralı belgeyim' <strong>&gt;</strong>deneme1.txt
-/tmp$ echo 'Selam, ben 2 numaralı belgeyim' <strong>&gt;</strong>deneme2.txt
-/tmp$ echo 'Selam, ben 3 numaralı belgeyim' <strong>&gt;</strong>deneme3.txt
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** ~$ cd /tmp/
+/tmp$ echo 'Selam, ben 0 numaralı belgeyim' ***&gt;*** deneme1.txt
+/tmp$ echo 'Selam, ben 2 numaralı belgeyim' ***&gt;*** deneme2.txt
+/tmp$ echo 'Selam, ben 3 numaralı belgeyim' ***&gt;*** deneme3.txt
 </code></pre>
 <!-- /wp:code -->
 
@@ -63,7 +63,7 @@ url: /tr/linux-terminalde-islemi-arka-plana-gonderme-ctrlz-ve-fg/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** /tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
 1 txt
 
 /tmp$ nano deneme2.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
@@ -89,7 +89,7 @@ url: /tr/linux-terminalde-islemi-arka-plana-gonderme-ctrlz-ve-fg/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;</strong>$ fg 1
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;*** $ fg 1
 </code></pre>
 <!-- /wp:code -->
 

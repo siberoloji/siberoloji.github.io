@@ -33,9 +33,9 @@ url: /how-to-install-adguard-home-on-rocky-linux-9-and-almalinux-9-2/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's update the system packages.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Let's update the system packages. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -43,9 +43,9 @@ url: /how-to-install-adguard-home-on-rocky-linux-9-and-almalinux-9-2/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's download and install AdGuard packages from GitHub</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Let's download and install AdGuard packages from GitHub 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -53,9 +53,9 @@ url: /how-to-install-adguard-home-on-rocky-linux-9-and-almalinux-9-2/
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's open the necessary permissions for the firewall.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Let's open the necessary permissions for the firewall. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->

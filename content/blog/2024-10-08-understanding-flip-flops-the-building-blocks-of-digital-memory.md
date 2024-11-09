@@ -30,7 +30,7 @@ url: /understanding-flip-flops-the-building-blocks-of-digital-memory/
  
 
  
- ## What is a Flip-Flop?</h2>
+ ## What is a Flip-Flop?
 <!-- /wp:heading -->
 
   Before we delve into specific types, let's establish what a flip-flop is. At its core, a flip-flop is a circuit that can store one bit of information. It has two stable states and can be used to store state information. The flip-flop can be "flipped" from one state to the other based on its inputs, and it will remain in that state until instructed to change again. 
@@ -43,255 +43,255 @@ url: /understanding-flip-flops-the-building-blocks-of-digital-memory/
  
 
  
- ## SR Flip-Flop</h2>
+ ## SR Flip-Flop
 <!-- /wp:heading -->
 
   The SR flip-flop, where S stands for "Set" and R for "Reset," is one of the most basic types of flip-flops. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Functionality</h3>
+
+ ### Functionality
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>The SR flip-flop has two inputs: S (Set) and R (Reset), and two outputs: Q and Q' (the complement of Q).</li>
+- The SR flip-flop has two inputs: S (Set) and R (Reset), and two outputs: Q and Q' (the complement of Q). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When S is high and R is low, the flip-flop is set, and Q becomes 1.</li>
+- When S is high and R is low, the flip-flop is set, and Q becomes 1. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When R is high and S is low, the flip-flop is reset, and Q becomes 0.</li>
+- When R is high and S is low, the flip-flop is reset, and Q becomes 0. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When both S and R are low, the flip-flop maintains its previous state.</li>
+- When both S and R are low, the flip-flop maintains its previous state. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>The state where both S and R are high is typically avoided as it leads to an undefined state.</li>
-<!-- /wp:list-item --></ul>
+- The state where both S and R are high is typically avoided as it leads to an undefined state. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Truth Table</h3>
+
+ ### Truth Table
 <!-- /wp:heading -->
 
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>S</th><th>R</th><th>Q (next state)</th><th>Q' (next state)</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>Q (no change)</td><td>Q' (no change)</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>1</td><td>Undefined</td><td>Undefined</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
-<!-- wp:heading {"level":3} -->
- ### Applications</h3>
+
+ ### Applications
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Basic memory cell</li>
+- Basic memory cell 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Debouncing switches</li>
+- Debouncing switches 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Synchronizing asynchronous signals</li>
-<!-- /wp:list-item --></ul>
+- Synchronizing asynchronous signals 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Limitations</h3>
+
+ ### Limitations
 <!-- /wp:heading -->
 
   The main limitation of the SR flip-flop is the undefined state when both inputs are high. This can lead to unpredictable behavior in circuits and is generally avoided in design. 
  
 
  
- ## JK Flip-Flop</h2>
+ ## JK Flip-Flop
 <!-- /wp:heading -->
 
   The JK flip-flop is an improvement over the SR flip-flop, addressing the undefined state issue. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Functionality</h3>
+
+ ### Functionality
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>The JK flip-flop has two inputs: J (functionally similar to S) and K (functionally similar to R).</li>
+- The JK flip-flop has two inputs: J (functionally similar to S) and K (functionally similar to R). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When J is high and K is low, the flip-flop is set (Q = 1).</li>
+- When J is high and K is low, the flip-flop is set (Q = 1). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When K is high and J is low, the flip-flop is reset (Q = 0).</li>
+- When K is high and J is low, the flip-flop is reset (Q = 0). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When both J and K are low, the flip-flop maintains its previous state.</li>
+- When both J and K are low, the flip-flop maintains its previous state. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When both J and K are high, the flip-flop toggles its state.</li>
-<!-- /wp:list-item --></ul>
+- When both J and K are high, the flip-flop toggles its state. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Truth Table</h3>
+
+ ### Truth Table
 <!-- /wp:heading -->
 
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>J</th><th>K</th><th>Q (next state)</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>Q (no change)</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>Q' (toggle)</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
-<!-- wp:heading {"level":3} -->
- ### Applications</h3>
+
+ ### Applications
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Counters</li>
+- Counters 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Frequency dividers</li>
+- Frequency dividers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Shift registers</li>
-<!-- /wp:list-item --></ul>
+- Shift registers 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Advantages</h3>
+
+ ### Advantages
 <!-- /wp:heading -->
 
   The JK flip-flop resolves the undefined state issue of the SR flip-flop by introducing a toggle function when both inputs are high. This makes it more versatile and safer to use in complex circuits. 
  
 
  
- ## D Flip-Flop</h2>
+ ## D Flip-Flop
 <!-- /wp:heading -->
 
   The D flip-flop, where D stands for "Data" or "Delay," is a simplification of the JK flip-flop. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Functionality</h3>
+
+ ### Functionality
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>The D flip-flop has one data input (D) and a clock input.</li>
+- The D flip-flop has one data input (D) and a clock input. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>On the rising edge of the clock signal, the flip-flop's output Q takes on the value of the D input.</li>
+- On the rising edge of the clock signal, the flip-flop's output Q takes on the value of the D input. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>The output remains stable until the next rising edge of the clock.</li>
-<!-- /wp:list-item --></ul>
+- The output remains stable until the next rising edge of the clock. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Truth Table</h3>
+
+ ### Truth Table
 <!-- /wp:heading -->
 
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>D</th><th>Q (next state)</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
-<!-- wp:heading {"level":3} -->
- ### Applications</h3>
+
+ ### Applications
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Data storage</li>
+- Data storage 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Shift registers</li>
+- Shift registers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Input synchronization</li>
-<!-- /wp:list-item --></ul>
+- Input synchronization 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Advantages</h3>
+
+ ### Advantages
 <!-- /wp:heading -->
 
   The D flip-flop is simpler to use than the JK or SR flip-flops because it has only one data input. This makes it ideal for storing and transferring data in digital systems. 
  
 
  
- ## T Flip-Flop</h2>
+ ## T Flip-Flop
 <!-- /wp:heading -->
 
   The T flip-flop, where T stands for "Toggle," is a single-input version of the JK flip-flop. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Functionality</h3>
+
+ ### Functionality
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>The T flip-flop has one input (T) and a clock input.</li>
+- The T flip-flop has one input (T) and a clock input. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When T is high, the flip-flop toggles its state on the rising edge of the clock.</li>
+- When T is high, the flip-flop toggles its state on the rising edge of the clock. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>When T is low, the flip-flop maintains its state.</li>
-<!-- /wp:list-item --></ul>
+- When T is low, the flip-flop maintains its state. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Truth Table</h3>
+
+ ### Truth Table
 <!-- /wp:heading -->
 
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>T</th><th>Q (next state)</th></tr></thead><tbody><tr><td>0</td><td>Q (no change)</td></tr><tr><td>1</td><td>Q' (toggle)</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
-<!-- wp:heading {"level":3} -->
- ### Applications</h3>
+
+ ### Applications
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Frequency dividers</li>
+- Frequency dividers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Counters</li>
+- Counters 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Clock generation circuits</li>
-<!-- /wp:list-item --></ul>
+- Clock generation circuits 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Advantages</h3>
+
+ ### Advantages
 <!-- /wp:heading -->
 
   The T flip-flop is particularly useful in counter circuits due to its toggle functionality. It can easily divide frequencies by two, making it valuable in timing and synchronization applications. 
  
 
  
- ## Comparing Flip-Flops</h2>
+ ## Comparing Flip-Flops
 <!-- /wp:heading -->
 
   Each type of flip-flop has its strengths and ideal use cases: 
@@ -299,20 +299,20 @@ url: /understanding-flip-flops-the-building-blocks-of-digital-memory/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>SR Flip-Flop: Simple and straightforward, but with the undefined state issue.</li>
+- SR Flip-Flop: Simple and straightforward, but with the undefined state issue. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>JK Flip-Flop: More versatile than SR, with no undefined state.</li>
+- JK Flip-Flop: More versatile than SR, with no undefined state. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>D Flip-Flop: Easiest to use for straightforward data storage and transfer.</li>
+- D Flip-Flop: Easiest to use for straightforward data storage and transfer. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>T Flip-Flop: Ideal for toggle operations in counters and frequency dividers.</li>
-<!-- /wp:list-item --></ol>
+- T Flip-Flop: Ideal for toggle operations in counters and frequency dividers. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   When designing digital circuits, the choice of flip-flop depends on the specific requirements of the application. Factors to consider include: 
@@ -320,28 +320,28 @@ url: /understanding-flip-flops-the-building-blocks-of-digital-memory/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Simplicity of control</li>
+- Simplicity of control 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Number of inputs available</li>
+- Number of inputs available 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Specific functionality needed (set, reset, toggle, etc.)</li>
+- Specific functionality needed (set, reset, toggle, etc.) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Power consumption</li>
+- Power consumption 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Speed requirements</li>
-<!-- /wp:list-item --></ul>
+- Speed requirements 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Practical Applications of Flip-Flops</h2>
+ ## Practical Applications of Flip-Flops
 <!-- /wp:heading -->
 
   Flip-flops are ubiquitous in digital systems. Here are some real-world applications: 
@@ -349,36 +349,36 @@ url: /understanding-flip-flops-the-building-blocks-of-digital-memory/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Computer Memory</strong>: Flip-flops form the basis of static RAM (SRAM) cells, which are used in cache memory and registers in CPUs.</li>
+- ***Computer Memory*** : Flip-flops form the basis of static RAM (SRAM) cells, which are used in cache memory and registers in CPUs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Digital Counters</strong>: Flip-flops, especially T and JK types, are used to build binary counters for various timing and counting applications.</li>
+- ***Digital Counters*** : Flip-flops, especially T and JK types, are used to build binary counters for various timing and counting applications. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Frequency Division</strong>: T flip-flops can be used to create simple frequency dividers, useful in clock generation circuits.</li>
+- ***Frequency Division*** : T flip-flops can be used to create simple frequency dividers, useful in clock generation circuits. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Debouncing</strong>: SR flip-flops can be used to debounce mechanical switches, eliminating the noise caused by switch bounce.</li>
+- ***Debouncing*** : SR flip-flops can be used to debounce mechanical switches, eliminating the noise caused by switch bounce. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Synchronization</strong>: D flip-flops are often used to synchronize asynchronous input signals with a system clock, preventing metastability issues.</li>
+- ***Synchronization*** : D flip-flops are often used to synchronize asynchronous input signals with a system clock, preventing metastability issues. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Shift Registers</strong>: Cascaded D flip-flops create shift registers, which are used for serial-to-parallel and parallel-to-serial conversion.</li>
+- ***Shift Registers*** : Cascaded D flip-flops create shift registers, which are used for serial-to-parallel and parallel-to-serial conversion. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>State Machines</strong>: Combinations of flip-flops are used to create finite state machines, which are the heart of many digital control systems.</li>
-<!-- /wp:list-item --></ol>
+- ***State Machines*** : Combinations of flip-flops are used to create finite state machines, which are the heart of many digital control systems. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Flip-flops are fundamental components in digital logic design, serving as the building blocks for more complex sequential circuits. Understanding the characteristics and applications of SR, JK, D, and T flip-flops is crucial for anyone working with digital systems. 

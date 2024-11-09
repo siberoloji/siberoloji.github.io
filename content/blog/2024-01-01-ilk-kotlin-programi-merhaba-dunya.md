@@ -23,11 +23,11 @@ url: /tr/ilk-kotlin-programi-merhaba-dunya/
 ---
 
 <!-- wp:paragraph -->
- Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan "Merhaba Dünya" programı ile başlayalım.</p>
+ Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan "Merhaba Dünya" programı ile başlayalım.
  
 
 <!-- wp:paragraph -->
- Aşağıda gördüğünüz kodu kopyalayıp editörünüze yapıştırabilir veya Web tarayıcınız üzerinden "<a href="https://play.kotlinlang.org/">Kotlin Playground</a>" sayfasına girip kodları orada da deneyebilirsiniz.</p>
+ Aşağıda gördüğünüz kodu kopyalayıp editörünüze yapıştırabilir veya Web tarayıcınız üzerinden "<a href="https://play.kotlinlang.org/">Kotlin Playground</a>" sayfasına girip kodları orada da deneyebilirsiniz.
  
 
 <!-- wp:code -->
@@ -38,27 +38,27 @@ fun main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
- Açıklama:</p>
+ Açıklama:
  
 
 <!-- wp:paragraph -->
- <code>//</code> işaretiyle başlayan satır, yorum satırıdır. Derleyici bu satırı kod olarak kabul etmez. Hangi kodun ne işe yaradığı ile ilgili notlar almak veya açıklamalar yapmak için kullanılır.</p>
+ <code>//</code> işaretiyle başlayan satır, yorum satırıdır. Derleyici bu satırı kod olarak kabul etmez. Hangi kodun ne işe yaradığı ile ilgili notlar almak veya açıklamalar yapmak için kullanılır.
  
 
 <!-- wp:paragraph -->
- <code>fun</code> ifadesi function yani bir fonksiyonun başlangıcını ifade eder.</p>
+ <code>fun</code> ifadesi function yani bir fonksiyonun başlangıcını ifade eder.
  
 
 <!-- wp:paragraph -->
- <code>main()</code> Kotlin programlarının giriş noktasıdır. Büyük küçük harf duyarlıdır. </p>
+ <code>main()</code> Kotlin programlarının giriş noktasıdır. Büyük küçük harf duyarlıdır. 
  
 
 <!-- wp:paragraph -->
- <code>{ }</code> işaretlerinin arasına kod bloğu yazılır.</p>
+ <code>{ }</code> işaretlerinin arasına kod bloğu yazılır.
  
 
 <!-- wp:paragraph -->
- <code>println("Merhaba Dünya")</code> burada gördüğünüz bir kod ifadesidir. <code>println()</code> fonksiyonuna "Merhaba Dünya" parametresini gönderdiğimizde, ekrana gönderilen parametreyi yazacak ve bir alt satıra geçecektir. İsterseniz alt alta birden fazla satır yazdırabilirsiniz. İşte bir örnek.</p>
+ <code>println("Merhaba Dünya")</code> burada gördüğünüz bir kod ifadesidir. <code>println()</code> fonksiyonuna "Merhaba Dünya" parametresini gönderdiğimizde, ekrana gönderilen parametreyi yazacak ve bir alt satıra geçecektir. İsterseniz alt alta birden fazla satır yazdırabilirsiniz. İşte bir örnek.
  
 
 <!-- wp:code -->
@@ -69,7 +69,7 @@ fun main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
- Yukarıda bulunan örneği çalıştırdığımızda aşağıdaki çıktıyı elde etmelisiniz.</p>
+ Yukarıda bulunan örneği çalıştırdığımızda aşağıdaki çıktıyı elde etmelisiniz.
  
 
 <!-- wp:code -->

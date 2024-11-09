@@ -25,14 +25,14 @@ url: /tr/android-projelerinizde-view-binding-kullanimi/
 ---
 
 <!-- wp:quote -->
-<blockquote class="wp-block-quote">  <em>viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.</em></p>
+<blockquote class="wp-block-quote">  <em>viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.</em>
  
 
-  Çoğu durumda, viewBinding, findViewById'nin yerini alır</p>
+  Çoğu durumda, viewBinding, findViewById'nin yerini alır
  <cite>Credit: <a rel="noreferrer noopener" href="https://developer.android.com/topic/libraries/view-binding" target="_blank">developer.android.com</a></cite></blockquote>
 <!-- /wp:quote -->
 
-  ViewBinding'i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.</p>
+  ViewBinding'i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.
  
 
 <!-- wp:code -->
@@ -46,7 +46,7 @@ url: /tr/android-projelerinizde-view-binding-kullanimi/
 }</code></pre>
 <!-- /wp:code -->
 
-  Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding'i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.</p>
+  Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding'i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.
  
 
 <!-- wp:code -->

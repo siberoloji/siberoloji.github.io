@@ -24,9 +24,9 @@
       <description>
         
         
-        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt; apt-get update&lt;/em&gt; ve benzeri komutları mutlaka kullanmışsınızdır. &lt;em&gt;apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; ve &lt;em&gt;apt-get dist-upgrade&lt;/em&gt; komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler /etc/apt/sources.list dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Sisteminizin, paketlerini güncellemek amacıyla hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Ubuntu veya apt paket yöneticisi kullanan bir İşletim Sisteminiz varsa,&lt;em&gt; apt-get update&lt;/em&gt; ve benzeri komutları mutlaka kullanmışsınızdır. &lt;em&gt;apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; ve &lt;em&gt;apt-get dist-upgrade&lt;/em&gt; komutlarının birbirine benzemesine rağmen farklı görevleri olduğunu göstereceğiz.&lt;/p&gt;
+&lt;p&gt;Öncelikle, Linux sistemimizin kendisini güncellemek için bir merkeze bakıp, kontrol yapmaya ihtiyacı vardır. Bu listelerin bakılacağı yerler /etc/apt/sources.list dosyasında tutulur. Kısaca hangi paket depolarına bakılacağı buraya kaydedilir. apt-get update komutu ile burada yer alan paket depolarına bakılır.&lt;/p&gt;
+&lt;p&gt;Sisteminizin, paketlerini güncellemek amacıyla hangi paket depolarını kullandığını görmek için aşağıdaki komutu çalıştıralım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut
 cat /etc/apt/sources.list
@@ -57,9 +57,9 @@ deb-src &lt;a href=&#34;http://tr.archive.ubuntu.com/ubuntu/&#34;&gt;http://tr.a
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get update&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;apt-get update komutu sayesinde sisteminizde kurulu olan paketlerin, paket deposundaki versiyonları ile farkları araştırılır ve liste güncellenir. Aslında tek yapılan liste güncellemedir. Herhangi bir güncelleme işleminden önce çalıştırılması mutlaka tavsiye edilir çünkü sisteminizde gerekli güncelleme ve bağımlılıkların çözümü için gerekli bir işlemdir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;apt-get update komutu sayesinde sisteminizde kurulu olan paketlerin, paket deposundaki versiyonları ile farkları araştırılır ve liste güncellenir. Aslında tek yapılan liste güncellemedir. Herhangi bir güncelleme işleminden önce çalıştırılması mutlaka tavsiye edilir çünkü sisteminizde gerekli güncelleme ve bağımlılıkların çözümü için gerekli bir işlemdir.&lt;/p&gt;
 &lt;!-- wp:quote --&gt;
-&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;apt-get update&amp;nbsp;komutu ile sisteminize herhangi bir kurulum yapılmaz.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;apt-get update&amp;nbsp;komutu ile sisteminize herhangi bir kurulum yapılmaz.&lt;/em&gt;
  &lt;/blockquote&gt;
 &lt;!-- /wp:quote --&gt;
 &lt;!-- wp:code --&gt;
@@ -107,8 +107,8 @@ Reading package lists... Done
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get upgrade&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Sisteminizde kurulu olan paketlerin hepsini, apt-get update komutu ile güncellediğiniz listede bulunan en son sürüme yükseltir. Burada dikkat edilmesi gereken nokta &lt;strong&gt;KURULU&lt;/strong&gt; olan paketler üzerinde güncelleme işlemi yapıldığıdır. A.lib dosyasının 1.1 sürümünü 1.2 sürümüne günceller. Sadece kurulu olan paketleri en güncel hale getirir.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Bir takım yazılım geliştiriciler veya sistem yöneticileri ihtiyaçları olmayan paket veya kernel dosyalarını, sistemlerinin kararlılığını düşünerek yüklemek istemezler. Böyle bir durumda upgrade oldukça kullanışlıdır. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur. Önemli bir nokta da, sistemden hiçbir paketin silinmediğidir. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Sisteminizde kurulu olan paketlerin hepsini, apt-get update komutu ile güncellediğiniz listede bulunan en son sürüme yükseltir. Burada dikkat edilmesi gereken nokta &lt;em&gt;&lt;strong&gt;KURULU&lt;/strong&gt;&lt;/em&gt;  olan paketler üzerinde güncelleme işlemi yapıldığıdır. A.lib dosyasının 1.1 sürümünü 1.2 sürümüne günceller. Sadece kurulu olan paketleri en güncel hale getirir.&lt;/p&gt;
+&lt;p&gt;Bir takım yazılım geliştiriciler veya sistem yöneticileri ihtiyaçları olmayan paket veya kernel dosyalarını, sistemlerinin kararlılığını düşünerek yüklemek istemezler. Böyle bir durumda upgrade oldukça kullanışlıdır. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur. Önemli bir nokta da, sistemden hiçbir paketin silinmediğidir. Yalnızca mevcut paketler en yeni sürüme yükseltilmiş olur.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut
 sudo apt-get upgrade
@@ -123,7 +123,7 @@ Calculating upgrade... Done
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get dist-upgrade&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bu komut için, apt sistemindeki en fazla yetkiye sahip komut diyebiliriz. Mevcut paketleri günceller, sistemde olmayan yeni bağımlılıkları kurar, gerek kalmayanları siler. Bağımlılık problemlerinin çözümü ve sisteminizin en güncel kernel sürümüne yükseltilmesi için kullanılabilir. Tercih kullanıcınındır. Bir kısım kullanıcılar, yüklenen yeni kernel sürümü ile problem yaşayabilirler.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu komut için, apt sistemindeki en fazla yetkiye sahip komut diyebiliriz. Mevcut paketleri günceller, sistemde olmayan yeni bağımlılıkları kurar, gerek kalmayanları siler. Bağımlılık problemlerinin çözümü ve sisteminizin en güncel kernel sürümüne yükseltilmesi için kullanılabilir. Tercih kullanıcınındır. Bir kısım kullanıcılar, yüklenen yeni kernel sürümü ile problem yaşayabilirler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;# Komut
 sudo apt-get dist-upgrade
@@ -136,7 +136,7 @@ Reading state information... Done
 Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;apt-get dist-upgrade komutu ile sistem sürümü yeni bir dağıtıma yükseltilmez. Örneğin, 14.04 sürümünden 14.10&amp;rsquo;a geçmiş olmazsınız. &lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;apt-get dist-upgrade komutu ile sistem sürümü yeni bir dağıtıma yükseltilmez. Örneğin, 14.04 sürümünden 14.10&amp;rsquo;a geçmiş olmazsınız. &lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade
 
@@ -156,9 +156,9 @@ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade &amp;amp;&amp;amp
       <description>
         
         
-        &lt;p&gt; If you have Ubuntu oran operating system that uses the apt package manager, you must have used &lt;em&gt;apt-get update&lt;/em&gt;  and similar commands. &lt;em&gt; We will show that although the apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; and&lt;em&gt; apt-get dist-upgrade&lt;/em&gt; commands are similar to each other, they have different tasks.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;First of all, our  Linux system needs a center to check and update itself. The places to look for these lists are kept in the /etc/apt/sources.list file. Briefly, which package repositories to look at are recorded here. The package repositories located here are checked with the apt-get update command.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s run the command below to see which package repositories your system uses to update its packages.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt; If you have Ubuntu oran operating system that uses the apt package manager, you must have used &lt;em&gt;apt-get update&lt;/em&gt;  and similar commands. &lt;em&gt; We will show that although the apt-get update&lt;/em&gt;, &lt;em&gt;apt-get upgrade&lt;/em&gt; and&lt;em&gt; apt-get dist-upgrade&lt;/em&gt; commands are similar to each other, they have different tasks.&lt;/p&gt;
+&lt;p&gt;First of all, our  Linux system needs a center to check and update itself. The places to look for these lists are kept in the /etc/apt/sources.list file. Briefly, which package repositories to look at are recorded here. The package repositories located here are checked with the apt-get update command.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s run the command below to see which package repositories your system uses to update its packages.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut
 cat /etc/apt/sources.list
@@ -189,9 +189,9 @@ deb-src http://tr.archive.ubuntu.com/ubuntu/ trusty-updates universe
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt get update&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt; Thanks to the apt-get update command, the differences between the packages installed on your system and the versions in the package repository are searched and the list is updated. In fact, the only thing done is updating the list. It is strongly recommended to run it before any update process because it is a necessary process to resolve the necessary updates and dependencies in your system.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt; Thanks to the apt-get update command, the differences between the packages installed on your system and the versions in the package repository are searched and the list is updated. In fact, the only thing done is updating the list. It is strongly recommended to run it before any update process because it is a necessary process to resolve the necessary updates and dependencies in your system.&lt;/p&gt;
 &lt;!-- wp:quote --&gt;
-&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;&lt;a href=&#34;https://www.siberoloji.com/apt-get-update-upgrade-dist-upgrade-farki-nedir/#&#34;&gt;&amp;nbsp;&lt;/a&gt;There is no installation on your system with the&amp;nbsp;apt-get update command.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;wp-block-quote&#34;&gt;  &lt;em&gt;&lt;a href=&#34;https://www.siberoloji.com/apt-get-update-upgrade-dist-upgrade-farki-nedir/#&#34;&gt;&amp;nbsp;&lt;/a&gt;There is no installation on your system with the&amp;nbsp;apt-get update command.&lt;/em&gt;
  &lt;/blockquote&gt;
 &lt;!-- /wp:quote --&gt;
 &lt;!-- wp:code --&gt;
@@ -239,8 +239,8 @@ Reading package lists... Done
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get upgrade&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;It upgrades all the packages installed on your system to the latest version in the list you updated with the apt-get update command. The point to note here is that the update is performed on the INSTALLED  packages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Some  software developers or system administrators do not want to install packages or kernel files that they do not need, considering the stability of their systems. In such a case, an upgrade is quite useful. Only existing packages are upgraded to the latest version. Another important point is that no packages are deleted from the system. Only existing packages are upgraded to the latest version.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;It upgrades all the packages installed on your system to the latest version in the list you updated with the apt-get update command. The point to note here is that the update is performed on the INSTALLED  packages. It updates the 1.1 version of the A.lib file to 1.2. It only brings the installed packages to the latest version.&lt;/p&gt;
+&lt;p&gt;Some  software developers or system administrators do not want to install packages or kernel files that they do not need, considering the stability of their systems. In such a case, an upgrade is quite useful. Only existing packages are upgraded to the latest version. Another important point is that no packages are deleted from the system. Only existing packages are upgraded to the latest version.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut
 sudo apt-get upgrade
@@ -255,7 +255,7 @@ Calculating upgrade... Done
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1&gt;apt-get dist-upgrade&lt;/h1&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;We can say that this command has the most privileges in the  apt system. It updates existing packages, installs new dependencies that are not in the system, and deletes unnecessary ones. It can be used to solve dependency problems and upgrade your system to the latest kernel version. The choice is up to the user. Some users may experience problems with the newly installed kernel version.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;We can say that this command has the most privileges in the  apt system. It updates existing packages, installs new dependencies that are not in the system, and deletes unnecessary ones. It can be used to solve dependency problems and upgrade your system to the latest kernel version. The choice is up to the user. Some users may experience problems with the newly installed kernel version.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# Komut
 sudo apt-get dist-upgrade
@@ -268,7 +268,7 @@ Reading state information... Done
 Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt; The apt-get dist-upgrade command does not upgrade the system version to a new distribution. For example, you cannot switch from version 14.04 to 14.10. &lt;/p&gt;&lt;/p&gt;
+&lt;p&gt; The apt-get dist-upgrade command does not upgrade the system version to a new distribution. For example, you cannot switch from version 14.04 to 14.10. &lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get -y upgrade
 

@@ -21,95 +21,95 @@ url: /half-duplex-vs-full-duplex-communication-a-comprehensive-guide/
   In the realm of data communication, understanding the nuances of data transmission modes is crucial. Two primary modes, half-duplex and full-duplex, govern the flow of data between devices. While both have their specific applications, their distinct characteristics significantly impact network performance and efficiency. 
  
 
-  <strong>Half-Duplex Communication</strong> 
+  ***Half-Duplex Communication***  
  
 
   Half-duplex communication is a mode of data transmission where data can flow in both directions, but only one direction at a time. It's akin to a one-lane bridge where cars can travel in either direction, but not simultaneously. 
  
 
-  <strong>Key Characteristics of Half-Duplex Communication:</strong> 
+  ***Key Characteristics of Half-Duplex Communication:***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Shared Medium:</strong> Both devices share the same communication channel.</li>
+- ***Shared Medium:***  Both devices share the same communication channel. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Turn-Taking:</strong> Devices must take turns to transmit and receive data.</li>
+- ***Turn-Taking:***  Devices must take turns to transmit and receive data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Lower Efficiency:</strong> The shared medium limits the overall data throughput.</li>
+- ***Lower Efficiency:***  The shared medium limits the overall data throughput. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Simpler Implementation:</strong> Half-duplex systems are generally simpler to implement.</li>
-<!-- /wp:list-item --></ul>
+- ***Simpler Implementation:***  Half-duplex systems are generally simpler to implement. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Real-world Examples of Half-Duplex Communication:</strong> 
+  ***Real-world Examples of Half-Duplex Communication:***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Walkie-Talkies:</strong> Users must press and release the "talk" button to transmit and listen.</li>
+- ***Walkie-Talkies:***  Users must press and release the "talk" button to transmit and listen. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Early Modems:</strong> Older modems often operated in half-duplex mode, requiring users to switch between transmit and receive modes.</li>
+- ***Early Modems:***  Older modems often operated in half-duplex mode, requiring users to switch between transmit and receive modes. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Some Wireless Networks:</strong> Certain wireless networks, particularly older ones, may operate in half-duplex mode, especially in congested environments.</li>
-<!-- /wp:list-item --></ul>
+- ***Some Wireless Networks:***  Certain wireless networks, particularly older ones, may operate in half-duplex mode, especially in congested environments. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Full-Duplex Communication</strong> 
+  ***Full-Duplex Communication***  
  
 
   Full-duplex communication, on the other hand, allows data to flow in both directions simultaneously. It's analogous to a two-lane highway where cars can travel in both directions independently. 
  
 
-  <strong>Key Characteristics of Full-Duplex Communication:</strong> 
+  ***Key Characteristics of Full-Duplex Communication:***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Dedicated Channels:</strong> Separate channels are used for transmission and reception.</li>
+- ***Dedicated Channels:***  Separate channels are used for transmission and reception. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Simultaneous Transmission and Reception:</strong> Devices can transmit and receive data concurrently.</li>
+- ***Simultaneous Transmission and Reception:***  Devices can transmit and receive data concurrently. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Higher Efficiency:</strong> Full-duplex systems offer higher data throughput.</li>
+- ***Higher Efficiency:***  Full-duplex systems offer higher data throughput. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Complex Implementation:</strong> Full-duplex systems are generally more complex to implement.</li>
-<!-- /wp:list-item --></ul>
+- ***Complex Implementation:***  Full-duplex systems are generally more complex to implement. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Real-world Examples of Full-Duplex Communication:</strong> 
+  ***Real-world Examples of Full-Duplex Communication:***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Telephone Conversations:</strong> Both parties can talk and listen simultaneously.</li>
+- ***Telephone Conversations:***  Both parties can talk and listen simultaneously. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Modern Modems:</strong> Most modern modems operate in full-duplex mode, enabling efficient data transfer.</li>
+- ***Modern Modems:***  Most modern modems operate in full-duplex mode, enabling efficient data transfer. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ethernet Networks:</strong> Ethernet networks, the backbone of many computer networks, typically operate in full-duplex mode, allowing high-speed data transfer.</li>
-<!-- /wp:list-item --></ul>
+- ***Ethernet Networks:***  Ethernet networks, the backbone of many computer networks, typically operate in full-duplex mode, allowing high-speed data transfer. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Choosing the Right Mode: Factors to Consider</strong> 
+  ***Choosing the Right Mode: Factors to Consider***  
  
 
   The choice between half-duplex and full-duplex communication depends on several factors: 
@@ -117,29 +117,29 @@ url: /half-duplex-vs-full-duplex-communication-a-comprehensive-guide/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Required Data Rate:</strong> If high data rates are required, full-duplex is the preferred choice.</li>
+- ***Required Data Rate:***  If high data rates are required, full-duplex is the preferred choice. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Latency Sensitivity:</strong> For applications that require low latency, full-duplex is more suitable.</li>
+- ***Latency Sensitivity:***  For applications that require low latency, full-duplex is more suitable. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Cost:</strong> Half-duplex systems are generally less expensive to implement.</li>
+- ***Cost:***  Half-duplex systems are generally less expensive to implement. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Complexity:</strong> Full-duplex systems are more complex and may require additional hardware or software.</li>
-<!-- /wp:list-item --></ul>
+- ***Complexity:***  Full-duplex systems are more complex and may require additional hardware or software. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Hybrid Communication Modes</strong> 
+  ***Hybrid Communication Modes***  
  
 
   In some cases, hybrid communication modes are employed to combine the benefits of both half-duplex and full-duplex. For example, time-division multiplexing (TDM) can be used to divide a full-duplex channel into multiple half-duplex channels, allowing multiple devices to share the same channel. 
  
 
-  <strong>The Future of Communication Modes</strong> 
+  ***The Future of Communication Modes***  
  
 
   As technology continues to evolve, the demand for higher data rates and lower latency will drive the adoption of full-duplex communication. Emerging technologies like 5G and Wi-Fi 6 are pushing the boundaries of wireless communication, enabling more efficient and reliable full-duplex transmission. 

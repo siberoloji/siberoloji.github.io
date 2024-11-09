@@ -26,85 +26,85 @@ url: /transmission-media-in-data-communications-understanding-the-physical-layer
  
 
  
- ## Understanding Transmission Media</h2>
+ ## Understanding Transmission Media
 <!-- /wp:heading -->
 
   Transmission media refers to the physical means through which data, instructions, and information travel between computing devices. These pathways can be broadly categorized into two main types: guided (wired) and unguided (wireless) media. Each type has its own set of characteristics, advantages, and limitations that make it suitable for specific applications. 
  
 
  
- ## Guided (Wired) Transmission Media</h2>
+ ## Guided (Wired) Transmission Media
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Twisted Pair Cable</h3>
+
+ ### Twisted Pair Cable
 <!-- /wp:heading -->
 
   Twisted pair cabling remains one of the most commonly used transmission media in modern networks, particularly in Ethernet installations. These cables consist of pairs of insulated copper wires twisted together to reduce electromagnetic interference. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Types of Twisted Pair Cables:</h4>
+<h4 class="wp-block-heading">Types of Twisted Pair Cables: 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Unshielded Twisted Pair (UTP)</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Unshielded Twisted Pair (UTP)***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Most common and cost-effective</li>
+- Most common and cost-effective 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Categories range from Cat3 to Cat8</li>
+- Categories range from Cat3 to Cat8 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Used in home and office networks</li>
+- Used in home and office networks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Maximum length typically 100 meters</li>
+- Maximum length typically 100 meters 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Susceptible to external interference</li>
-<!-- /wp:list-item --></ul>
+- Susceptible to external interference 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Shielded Twisted Pair (STP)</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Shielded Twisted Pair (STP)***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Additional metallic shield for better noise protection</li>
+- Additional metallic shield for better noise protection 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Higher cost than UTP</li>
+- Higher cost than UTP 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Better performance in electrically noisy environments</li>
+- Better performance in electrically noisy environments 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Requires proper grounding</li>
+- Requires proper grounding 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Commonly used in industrial settings</li>
-<!-- /wp:list-item --></ul>
+- Commonly used in industrial settings 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Coaxial Cable</h3>
+
+ ### Coaxial Cable
 <!-- /wp:heading -->
 
   Coaxial cables offer superior protection against noise and higher bandwidth capabilities compared to twisted pair cables. Their construction includes: 
@@ -112,478 +112,478 @@ url: /transmission-media-in-data-communications-understanding-the-physical-layer
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Central copper conductor</li>
+- Central copper conductor 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Insulating layer</li>
+- Insulating layer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Metallic shield</li>
+- Metallic shield 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Protective outer jacket</li>
-<!-- /wp:list-item --></ul>
+- Protective outer jacket 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Applications of Coaxial Cables:</h4>
+<h4 class="wp-block-heading">Applications of Coaxial Cables: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Cable television distribution</li>
+- Cable television distribution 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Long-distance telephone lines</li>
+- Long-distance telephone lines 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>High-speed internet connections</li>
+- High-speed internet connections 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Radio frequency transmission</li>
+- Radio frequency transmission 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Computer network connections</li>
-<!-- /wp:list-item --></ul>
+- Computer network connections 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Fiber Optic Cable</h3>
+
+ ### Fiber Optic Cable
 <!-- /wp:heading -->
 
   Fiber optic cables represent the pinnacle of guided transmission media, using light pulses to transmit data through thin glass or plastic fibers. They offer several significant advantages: 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Key Benefits:</h4>
+<h4 class="wp-block-heading">Key Benefits: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Extremely high bandwidth</li>
+- Extremely high bandwidth 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Very low signal attenuation</li>
+- Very low signal attenuation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Immune to electromagnetic interference</li>
+- Immune to electromagnetic interference 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Enhanced security</li>
+- Enhanced security 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Lighter weight compared to metal cables</li>
+- Lighter weight compared to metal cables 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Long-distance transmission capability</li>
-<!-- /wp:list-item --></ul>
+- Long-distance transmission capability 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Types of Fiber Optic Cables:</h4>
+<h4 class="wp-block-heading">Types of Fiber Optic Cables: 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Single-mode Fiber</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Single-mode Fiber***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Smaller core diameter</li>
+- Smaller core diameter 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Longer transmission distances</li>
+- Longer transmission distances 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Higher bandwidth</li>
+- Higher bandwidth 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>More expensive</li>
+- More expensive 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Commonly used in long-haul networks</li>
-<!-- /wp:list-item --></ul>
+- Commonly used in long-haul networks 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Multi-mode Fiber</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Multi-mode Fiber***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Larger core diameter</li>
+- Larger core diameter 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Shorter transmission distances</li>
+- Shorter transmission distances 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Lower cost</li>
+- Lower cost 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Easier to install and maintain</li>
+- Easier to install and maintain 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Suitable for local area networks</li>
-<!-- /wp:list-item --></ul>
+- Suitable for local area networks 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Unguided (Wireless) Transmission Media</h2>
+ ## Unguided (Wireless) Transmission Media
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Radio Waves</h3>
+
+ ### Radio Waves
 <!-- /wp:heading -->
 
   Radio waves form the basis of many wireless communication systems, offering flexibility and mobility. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Characteristics:</h4>
+<h4 class="wp-block-heading">Characteristics: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Omnidirectional propagation</li>
+- Omnidirectional propagation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ability to penetrate buildings</li>
+- Ability to penetrate buildings 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Frequency range from 3 KHz to 1 GHz</li>
+- Frequency range from 3 KHz to 1 GHz 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Affected by atmospheric conditions</li>
-<!-- /wp:list-item --></ul>
+- Affected by atmospheric conditions 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Applications:</h4>
+<h4 class="wp-block-heading">Applications: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>AM/FM radio broadcasting</li>
+- AM/FM radio broadcasting 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Mobile phones</li>
+- Mobile phones 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Wireless LANs</li>
+- Wireless LANs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Bluetooth devices</li>
+- Bluetooth devices 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>IoT devices</li>
-<!-- /wp:list-item --></ul>
+- IoT devices 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Microwaves</h3>
+
+ ### Microwaves
 <!-- /wp:heading -->
 
   Microwave transmission operates at higher frequencies than radio waves, offering increased data capacity. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Key Features:</h4>
+<h4 class="wp-block-heading">Key Features: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Line-of-sight transmission</li>
+- Line-of-sight transmission 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>High frequency (1-300 GHz)</li>
+- High frequency (1-300 GHz) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Narrow beam width</li>
+- Narrow beam width 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Susceptible to weather conditions</li>
+- Susceptible to weather conditions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Used for point-to-point communication</li>
-<!-- /wp:list-item --></ul>
+- Used for point-to-point communication 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Common Uses:</h4>
+<h4 class="wp-block-heading">Common Uses: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Satellite communications</li>
+- Satellite communications 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Terrestrial microwave links</li>
+- Terrestrial microwave links 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Wireless broadband</li>
+- Wireless broadband 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Radar systems</li>
-<!-- /wp:list-item --></ul>
+- Radar systems 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Infrared</h3>
+
+ ### Infrared
 <!-- /wp:heading -->
 
   Infrared transmission offers short-range, high-bandwidth communication options. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Characteristics:</h4>
+<h4 class="wp-block-heading">Characteristics: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Short-range communication</li>
+- Short-range communication 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Line-of-sight requirement</li>
+- Line-of-sight requirement 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Immune to radio frequency interference</li>
+- Immune to radio frequency interference 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cannot penetrate solid objects</li>
+- Cannot penetrate solid objects 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Cost-effective for specific applications</li>
-<!-- /wp:list-item --></ul>
+- Cost-effective for specific applications 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Applications:</h4>
+<h4 class="wp-block-heading">Applications: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Remote controls</li>
+- Remote controls 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Device-to-device data transfer</li>
+- Device-to-device data transfer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Indoor wireless networks</li>
+- Indoor wireless networks 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Industrial automation</li>
-<!-- /wp:list-item --></ul>
+- Industrial automation 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Factors Affecting Transmission Media Selection</h2>
+ ## Factors Affecting Transmission Media Selection
 <!-- /wp:heading -->
 
   When choosing transmission media for specific applications, several factors must be considered: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Performance Requirements</h3>
+
+ ### 1. Performance Requirements
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Bandwidth needs</li>
+- Bandwidth needs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Transmission speed</li>
+- Transmission speed 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Distance requirements</li>
+- Distance requirements 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Error rates</li>
+- Error rates 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Latency considerations</li>
-<!-- /wp:list-item --></ul>
+- Latency considerations 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Installation Environment</h3>
+
+ ### 2. Installation Environment
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Indoor vs. outdoor installation</li>
+- Indoor vs. outdoor installation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Environmental conditions</li>
+- Environmental conditions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Physical space constraints</li>
+- Physical space constraints 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Electromagnetic interference levels</li>
+- Electromagnetic interference levels 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Security requirements</li>
-<!-- /wp:list-item --></ul>
+- Security requirements 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Cost Considerations</h3>
+
+ ### 3. Cost Considerations
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Material costs</li>
+- Material costs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Installation expenses</li>
+- Installation expenses 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Maintenance requirements</li>
+- Maintenance requirements 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Upgrade potential</li>
+- Upgrade potential 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Lifetime value</li>
-<!-- /wp:list-item --></ul>
+- Lifetime value 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. Regulatory Compliance</h3>
+
+ ### 4. Regulatory Compliance
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Local building codes</li>
+- Local building codes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Industry standards</li>
+- Industry standards 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Environmental regulations</li>
+- Environmental regulations 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Safety requirements</li>
-<!-- /wp:list-item --></ul>
+- Safety requirements 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Future Trends in Transmission Media</h2>
+ ## Future Trends in Transmission Media
 <!-- /wp:heading -->
 
   The field of transmission media continues to evolve with new technologies and improvements: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Emerging Technologies</h3>
+
+ ### Emerging Technologies
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Hollow-core fiber optics</li>
+- Hollow-core fiber optics 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Plastic optical fiber</li>
+- Plastic optical fiber 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Li-Fi (Light Fidelity)</li>
+- Li-Fi (Light Fidelity) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Advanced wireless standards</li>
+- Advanced wireless standards 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Quantum communication channels</li>
-<!-- /wp:list-item --></ul>
+- Quantum communication channels 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Environmental Considerations</h3>
+
+ ### Environmental Considerations
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Energy-efficient designs</li>
+- Energy-efficient designs 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Recyclable materials</li>
+- Recyclable materials 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reduced electromagnetic pollution</li>
+- Reduced electromagnetic pollution 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sustainable manufacturing processes</li>
-<!-- /wp:list-item --></ul>
+- Sustainable manufacturing processes 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Best Practices for Implementation</h2>
+ ## Best Practices for Implementation
 <!-- /wp:heading -->
 
   To ensure optimal performance and longevity of transmission media installations: 
@@ -591,78 +591,78 @@ url: /transmission-media-in-data-communications-understanding-the-physical-layer
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Proper Planning</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Proper Planning***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Conduct thorough site surveys</li>
+- Conduct thorough site surveys 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Document all requirements</li>
+- Document all requirements 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Plan for future growth</li>
+- Plan for future growth 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Consider redundancy needs</li>
-<!-- /wp:list-item --></ul>
+- Consider redundancy needs 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Quality Installation</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Quality Installation***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Use certified installers</li>
+- Use certified installers 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Follow manufacturer guidelines</li>
+- Follow manufacturer guidelines 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Implement proper testing procedures</li>
+- Implement proper testing procedures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Maintain detailed documentation</li>
-<!-- /wp:list-item --></ul>
+- Maintain detailed documentation 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Regular Maintenance</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Regular Maintenance***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Schedule periodic inspections</li>
+- Schedule periodic inspections 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Monitor performance metrics</li>
+- Monitor performance metrics 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Update documentation</li>
+- Update documentation 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Plan for upgrades</li>
-<!-- /wp:list-item --></ul>
+- Plan for upgrades 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   The choice of transmission media plays a crucial role in determining the performance, reliability, and cost-effectiveness of data communication systems. As technology continues to advance, new forms of transmission media emerge, offering improved capabilities and addressing current limitations. Understanding the characteristics, advantages, and limitations of different transmission media is essential for network designers, administrators, and IT professionals. 

@@ -25,11 +25,11 @@ title: The usage of pre-increment and post-increment operators
 url: /the-usage-of-pre-increment-and-post-increment-operators/
 ---
 
-  This code snippet demonstrates the usage of pre-increment and post-increment operators in C++.</p>
+  This code snippet demonstrates the usage of pre-increment and post-increment operators in C++.
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -78,32 +78,32 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
-  The provided C++ code is a simple demonstration of the usage of pre-increment (<code>++var</code>), post-increment (<code>var++</code>), pre-decrement (<code>--var</code>), and post-decrement (<code>var--</code>) operators in C++.</p>
+  The provided C++ code is a simple demonstration of the usage of pre-increment (<code>++var</code>), post-increment (<code>var++</code>), pre-decrement (<code>--var</code>), and post-decrement (<code>var--</code>) operators in C++.
  
 
-  The main function starts by declaring four integer variables <code>numberOne</code>, <code>numberTwo</code>, <code>numberThree</code>, and <code>numberFour</code> with initial values of 1, 2, 3, and 4 respectively.</p>
+  The main function starts by declaring four integer variables <code>numberOne</code>, <code>numberTwo</code>, <code>numberThree</code>, and <code>numberFour</code> with initial values of 1, 2, 3, and 4 respectively.
  
 
-  The first operation is <code>numberOne++</code>. This is a post-increment operation, which means the current value of <code>numberOne</code> is assigned to <code>result</code> before <code>numberOne</code> is incremented. Therefore, <code>result</code> will be 1 (the original value of <code>numberOne</code>), and <code>numberOne</code> will be incremented to 2.</p>
+  The first operation is <code>numberOne++</code>. This is a post-increment operation, which means the current value of <code>numberOne</code> is assigned to <code>result</code> before <code>numberOne</code> is incremented. Therefore, <code>result</code> will be 1 (the original value of <code>numberOne</code>), and <code>numberOne</code> will be incremented to 2.
  
 
-  Next, the operation <code>++numberTwo</code> is a pre-increment operation. Here, <code>numberTwo</code> is incremented before the assignment operation. So, <code>numberTwo</code> becomes 3, and this new value is assigned to <code>result</code>.</p>
+  Next, the operation <code>++numberTwo</code> is a pre-increment operation. Here, <code>numberTwo</code> is incremented before the assignment operation. So, <code>numberTwo</code> becomes 3, and this new value is assigned to <code>result</code>.
  
 
-  The third operation is <code>numberThree--</code>, a post-decrement operation. Similar to the post-increment, the current value of <code>numberThree</code> is assigned to <code>result</code> before <code>numberThree</code> is decremented. So, <code>result</code> will be 3, and <code>numberThree</code> will be decremented to 2.</p>
+  The third operation is <code>numberThree--</code>, a post-decrement operation. Similar to the post-increment, the current value of <code>numberThree</code> is assigned to <code>result</code> before <code>numberThree</code> is decremented. So, <code>result</code> will be 3, and <code>numberThree</code> will be decremented to 2.
  
 
-  Finally, the operation <code>--numberFour</code> is a pre-decrement operation. Here, <code>numberFour</code> is decremented before the assignment operation. So, <code>numberFour</code> becomes 3, and this new value is assigned to <code>result</code>.</p>
+  Finally, the operation <code>--numberFour</code> is a pre-decrement operation. Here, <code>numberFour</code> is decremented before the assignment operation. So, <code>numberFour</code> becomes 3, and this new value is assigned to <code>result</code>.
  
 
-  After each operation, the new values of the variables and <code>result</code> are printed to the console for verification. The function then returns 0, indicating successful execution.</p>
+  After each operation, the new values of the variables and <code>result</code> are printed to the console for verification. The function then returns 0, indicating successful execution.
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

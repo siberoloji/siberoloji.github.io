@@ -29,7 +29,7 @@ url: /simple-demonstration-of-operator-precedence-and-type-casting-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -64,7 +64,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a simple demonstration of operator precedence and type casting in C++. 
@@ -112,7 +112,7 @@ cout &lt;&lt; result6 &lt;&lt; endl;</code></pre>
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -127,72 +127,72 @@ Process finished with exit code 0</code></pre>
 <!-- /wp:code -->
 
  
- ## Operator Precedence Rules</h2>
+ ## Operator Precedence Rules
 <!-- /wp:heading -->
 
   In C++, operators have a specific order in which they are evaluated when an expression has several of them. This is known as operator precedence. Here are some common operator precedence rules in C++, from highest to lowest precedence: 
  
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li><strong>Parentheses <code>()</code></strong>: Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want.</li>
+ <!-- wp:list-item -->
+- ***Parentheses <code>()</code>*** : Parentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Unary operators <code>++</code>, <code>--</code>, <code>!</code>, <code>~</code>, <code>-</code>, <code>+</code>, <code>*</code>, <code>&amp;</code>, <code>sizeof</code>, <code>new</code>, <code>delete</code></strong>: These operators have the next highest precedence after parentheses. They are used with only one operand. For example, the increment (<code>++</code>) and decrement (<code>--</code>) operators.</li>
+- ***Unary operators <code>++</code>, <code>--</code>, <code>!</code>, <code>~</code>, <code>-</code>, <code>+</code>, <code>*</code>, <code>&amp;</code>, <code>sizeof</code>, <code>new</code>, <code>delete</code>*** : These operators have the next highest precedence after parentheses. They are used with only one operand. For example, the increment (<code>++</code>) and decrement (<code>--</code>) operators. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Multiplicative operators <code>*</code>, <code>/</code>, <code>%</code></strong>: These operators are evaluated next. They perform multiplication, division, and modulus operations.</li>
+- ***Multiplicative operators <code>*</code>, <code>/</code>, <code>%</code>*** : These operators are evaluated next. They perform multiplication, division, and modulus operations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Additive operators <code>+</code>, <code>-</code></strong>: These operators are used for addition and subtraction operations.</li>
+- ***Additive operators <code>+</code>, <code>-</code>*** : These operators are used for addition and subtraction operations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Shift operators <code>&lt;&lt;</code>, <code>&gt;&gt;</code></strong>: These operators are used to shift bits to the left or right.</li>
+- ***Shift operators <code>&lt;&lt;</code>, <code>&gt;&gt;</code>*** : These operators are used to shift bits to the left or right. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Relational operators <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></strong>: These operators are used to compare two values.</li>
+- ***Relational operators <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>*** : These operators are used to compare two values. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Equality operators <code>==</code>, <code>!=</code></strong>: These operators are used to check the equality or inequality of two operands.</li>
+- ***Equality operators <code>==</code>, <code>!=</code>*** : These operators are used to check the equality or inequality of two operands. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Bitwise AND operator <code>&amp;</code></strong>: This operator performs a bitwise AND operation.</li>
+- ***Bitwise AND operator <code>&amp;</code>*** : This operator performs a bitwise AND operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Bitwise XOR operator <code>^</code></strong>: This operator performs a bitwise XOR operation.</li>
+- ***Bitwise XOR operator <code>^</code>*** : This operator performs a bitwise XOR operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Bitwise OR operator <code>|</code></strong>: This operator performs a bitwise OR operation.</li>
+- ***Bitwise OR operator <code>|</code>*** : This operator performs a bitwise OR operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Logical AND operator <code>&amp;&amp;</code></strong>: This operator performs a logical AND operation.</li>
+- ***Logical AND operator <code>&amp;&amp;</code>*** : This operator performs a logical AND operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Logical OR operator <code>||</code></strong>: This operator performs a logical OR operation.</li>
+- ***Logical OR operator <code>||</code>*** : This operator performs a logical OR operation. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Conditional operator <code>?:</code></strong>: This operator works as a simple <code>if-else</code> statement.</li>
+- ***Conditional operator <code>?:</code>*** : This operator works as a simple <code>if-else</code> statement. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Assignment operators <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code>, <code>&amp;=</code>, <code>^=</code>, <code>|=</code></strong>: These operators are used to assign values to variables.</li>
+- ***Assignment operators <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code>, <code>&amp;=</code>, <code>^=</code>, <code>|=</code>*** : These operators are used to assign values to variables. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Comma operator <code>,</code></strong>: This operator is used to link related expressions together.</li>
-<!-- /wp:list-item --></ol>
+- ***Comma operator <code>,</code>*** : This operator is used to link related expressions together. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Remember, when operators have the same precedence, the rule of associativity (left-to-right or right-to-left) is used to determine the order of operations. 

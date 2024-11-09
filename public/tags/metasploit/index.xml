@@ -24,51 +24,51 @@
       <description>
         
         
-        &lt;p&gt;Bu yazımızda, Metasploit Framework içerisinde kullanılan temel komutları inceleyeceğiz. Komutların, başlangıçta çok fazla ve karışık olduğunu düşünebilirsiniz ancak kendinize zaman tanımanızı tavsiye ediyorum. Kullandıkça aşina olacak ve artık otomatik olarak yazar hale geleceksiniz. Komutları yazarken, komutun bir kaç harfini yazıp TAB tuşu ile gerisini otomatik tamamlayabilirsiniz. msfconsole içerisinde komut ve klasör yolu tamamlama, aynen Linux komut satırındaki gibi çalışır.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bu yazımızda, Metasploit Framework içerisinde kullanılan temel komutları inceleyeceğiz. Komutların, başlangıçta çok fazla ve karışık olduğunu düşünebilirsiniz ancak kendinize zaman tanımanızı tavsiye ediyorum. Kullandıkça aşina olacak ve artık otomatik olarak yazar hale geleceksiniz. Komutları yazarken, komutun bir kaç harfini yazıp TAB tuşu ile gerisini otomatik tamamlayabilirsiniz. msfconsole içerisinde komut ve klasör yolu tamamlama, aynen Linux komut satırındaki gibi çalışır.&lt;/p&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;back&#34;&gt;back 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;use&lt;/code&gt; komutunu kullanarak seçtiğiniz bir modülü aktif ettiğinizde, modülü kullanmaktan vazgeçebilirsiniz. Bu durumda, bir üst klasöre geri gelmek istediğinizde kullanılır. Teknik olarak çok gerekli değildir çünkü bulunduğunuz modülün içinde de yeni modül seçtiğinizde o modülden çıkmış olusunuz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;use&lt;/code&gt; komutunu kullanarak seçtiğiniz bir modülü aktif ettiğinizde, modülü kullanmaktan vazgeçebilirsiniz. Bu durumda, bir üst klasöre geri gelmek istediğinizde kullanılır. Teknik olarak çok gerekli değildir çünkü bulunduğunuz modülün içinde de yeni modül seçtiğinizde o modülden çıkmış olusunuz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf auxiliary&lt;strong&gt;(&lt;/strong&gt;ms09_001_write&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; back
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf auxiliary***(*** ms09_001_write***)***  ***&amp;gt;***  back
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;banner&#34;&gt;banner 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Rastgele seçilen bir banner görüntüler.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Rastgele seçilen bir banner görüntüler.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; banner
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  banner
  _                                                    _
 /     /         __                         _   __  /_/ __
 | |  / | _____               ___   _____ | | /   _    
-| | /| | | ___ |- -|   /    / __ | -__/ | &lt;strong&gt;||&lt;/strong&gt; | &lt;strong&gt;||&lt;/strong&gt; | |- -|
+| | /| | | ___ |- -|   /    / __ | -__/ | ***||***  | ***||***  | |- -|
 |_|   | | | _|__  | |_  / - __    | |    | | __/| |  | |_
       |/  |____/  ___/ / \___/   /     __|    |_  ___
 
 Frustrated with proxy pivoting? Upgrade to layer-2 VPN pivoting with
 Metasploit Pro -- type &#39;go_pro&#39; to launch it now.
 
-       &lt;strong&gt;=[&lt;/strong&gt; metasploit v4.11.4-2015071402                   &lt;strong&gt;]&lt;/strong&gt;
-+ -- --&lt;strong&gt;=[&lt;/strong&gt; 1467 exploits - 840 auxiliary - 232 post        &lt;strong&gt;]&lt;/strong&gt;
-+ -- --&lt;strong&gt;=[&lt;/strong&gt; 432 payloads - 37 encoders - 8 nops             &lt;strong&gt;]&lt;/strong&gt;
+       ***=[***  metasploit v4.11.4-2015071402                   ***]*** 
++ -- --***=[***  1467 exploits - 840 auxiliary - 232 post        ***]*** 
++ -- --***=[***  432 payloads - 37 encoders - 8 nops             ***]*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;check&#34;&gt;check 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bu komutu her exploit desteklemese de ne işe yaradığını açıklayalım. Bir modül seçtiniz ve hedef sistemde uygulamadan önce işe yarayıp yaramayacağını merak ediyorsunuz. Gerekli ayarları &lt;code&gt;set&lt;/code&gt; komutuyla yaptıktan sonra &lt;code&gt;check&lt;/code&gt; komutuyla ön test yapabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu komutu her exploit desteklemese de ne işe yaradığını açıklayalım. Bir modül seçtiniz ve hedef sistemde uygulamadan önce işe yarayıp yaramayacağını merak ediyorsunuz. Gerekli ayarları &lt;code&gt;set&lt;/code&gt; komutuyla yaptıktan sonra &lt;code&gt;check&lt;/code&gt; komutuyla ön test yapabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show options
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  show options
 
-Module options &lt;strong&gt;(&lt;/strong&gt;exploit/windows/smb/ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt;:
+Module options ***(*** exploit/windows/smb/ms08_067_netapi***)*** :
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
    RHOST    172.16.194.134   yes       The target address
    RPORT    445              yes       Set the SMB service port
-   SMBPIPE  BROWSER          yes       The pipe name to use &lt;strong&gt;(&lt;/strong&gt;BROWSER, SRVSVC&lt;strong&gt;)&lt;/strong&gt;
+   SMBPIPE  BROWSER          yes       The pipe name to use ***(*** BROWSER, SRVSVC***)*** 
 
 Exploit target:
 
@@ -76,21 +76,21 @@ Exploit target:
    --  ----
    0   Automatic Targeting
 
-msf exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; check
+msf exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  check
 
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Verifying vulnerable status... &lt;strong&gt;(&lt;/strong&gt;path: 0x0000005a&lt;strong&gt;)&lt;/strong&gt;
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; System is not vulnerable &lt;strong&gt;(&lt;/strong&gt;status: 0x00000000&lt;strong&gt;)&lt;/strong&gt;
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; The target is not exploitable.
-msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+***[*** ******* ***]***  Verifying vulnerable status... ***(*** path: 0x0000005a***)*** 
+***[*** ******* ***]***  System is not vulnerable ***(*** status: 0x00000000***)*** 
+***[*** ******* ***]***  The target is not exploitable.
+msf  exploit***(*** ms08_067_netapi***)***  ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;color&#34;&gt;color 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;msfconsole içinden alacağınız çıktı ve bilgilerin renklendirilmesini sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;msfconsole içinden alacağınız çıktı ve bilgilerin renklendirilmesini sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; color
-Usage: color &lt;strong&gt;&amp;gt;&lt;/strong&gt;&#39;true&#39;|&#39;false&#39;|&#39;auto&#39;&lt;strong&gt;&amp;gt;&lt;/strong&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  color
+Usage: color ***&amp;gt;*** &#39;true&#39;|&#39;false&#39;|&#39;auto&#39;***&amp;gt;*** 
 
 Enable or disable color output.
 &lt;/code&gt;&lt;/pre&gt;
@@ -98,26 +98,26 @@ Enable or disable color output.
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;connect&#34;&gt;connect 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Küçük bir telnet veya netcat programıdır diyebiliriz. SSL desteği vardır ve dosya gönderme vb. işlemleri yapabilirsiniz. Kulanmak için, bağlanmak istediğiniz IP adresini ve port numarasını belirtmeniz durumunda &lt;code&gt;msfconsole&lt;/code&gt; içerisinden uzak bilgisayara ulaşabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Küçük bir telnet veya netcat programıdır diyebiliriz. SSL desteği vardır ve dosya gönderme vb. işlemleri yapabilirsiniz. Kulanmak için, bağlanmak istediğiniz IP adresini ve port numarasını belirtmeniz durumunda &lt;code&gt;msfconsole&lt;/code&gt; içerisinden uzak bilgisayara ulaşabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; connect 192.168.1.1 23
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Connected to 192.168.1.1:23
-DD-WRT v24 std &lt;strong&gt;(&lt;/strong&gt;c&lt;strong&gt;)&lt;/strong&gt; 2008 NewMedia-NET GmbH
-Release: 07/27/08 &lt;strong&gt;(&lt;/strong&gt;SVN revision: 10011&lt;strong&gt;)&lt;/strong&gt;
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  connect 192.168.1.1 23
+***[*** ******* ***]***  Connected to 192.168.1.1:23
+DD-WRT v24 std ***(*** c***)***  2008 NewMedia-NET GmbH
+Release: 07/27/08 ***(*** SVN revision: 10011***)*** 
 DD-WRT login:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;connect&lt;/code&gt; komutu ile ilgili detaylı seçeneklerini &lt;code&gt;-h&lt;/code&gt; parametresiyle görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;connect&lt;/code&gt; komutu ile ilgili detaylı seçeneklerini &lt;code&gt;-h&lt;/code&gt; parametresiyle görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; connect -h
-Usage: connect &lt;strong&gt;[&lt;/strong&gt;options]  
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  connect -h
+Usage: connect ***[*** options]  
 
 Communicate with a host, similar to interacting via netcat, taking advantage of
 any configured session pivoting.
 
 OPTIONS:
 
-    -C        Try to use CRLF &lt;strong&gt;for &lt;/strong&gt;EOL sequence.
+    -C        Try to use CRLF ***for *** EOL sequence.
     -P &amp;lt;opt&amp;gt;  Specify source port.
     -S &amp;lt;opt&amp;gt;  Specify source address.
     -c &amp;lt;opt&amp;gt;  Specify which Comm to use.
@@ -127,18 +127,18 @@ OPTIONS:
     -s        Connect with SSL.
     -u        Switch to a UDP socket.
     -w &amp;lt;opt&amp;gt;  Specify connect timeout.
-    -z        Just try to connect, &lt;strong&gt;then return&lt;/strong&gt;.
+    -z        Just try to connect, ***then return*** .
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;edit&#34;&gt;edit 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Aktif olarak seçilmiş modülün kodlarında değişiklik yapmak isterseniz &lt;code&gt;edit&lt;/code&gt; komutuyla metin editörünü açıp gerekli işlemleri yapabilirsiniz. Varsayılan olarak Vim editör açılacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Aktif olarak seçilmiş modülün kodlarında değişiklik yapmak isterseniz &lt;code&gt;edit&lt;/code&gt; komutuyla metin editörünü açıp gerekli işlemleri yapabilirsiniz. Varsayılan olarak Vim editör açılacaktır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms10_061_spoolss&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; edit
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Launching /usr/bin/vim /usr/share/metasploit-framework/modules/exploits/windows/smb/ms10_061_spoolss.rb
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms10_061_spoolss***)***  ***&amp;gt;***  edit
+***[*** ******* ***]***  Launching /usr/bin/vim /usr/share/metasploit-framework/modules/exploits/windows/smb/ms10_061_spoolss.rb
 
 &lt;em&gt;##&lt;/em&gt;
 &lt;em&gt;# This module requires Metasploit: http//metasploit.com/download&lt;/em&gt;
@@ -148,35 +148,35 @@ msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
 require &#39;msf/core&#39;
 require &#39;msf/windows_error&#39;
 
-class Metasploit3 &lt;strong&gt;&amp;gt;&lt;/strong&gt; Msf::Exploit::Remote
-  Rank &lt;strong&gt;=&lt;/strong&gt; ExcellentRanking
+class Metasploit3 ***&amp;gt;***  Msf::Exploit::Remote
+  Rank ***=***  ExcellentRanking
 
   include Msf::Exploit::Remote::DCERPC
   include Msf::Exploit::Remote::SMB
   include Msf::Exploit::EXE
   include Msf::Exploit::WbemExec
 
-  def initialize&lt;strong&gt;(&lt;/strong&gt;info &lt;strong&gt;=&lt;/strong&gt; &lt;strong&gt;{})&lt;/strong&gt;
+  def initialize***(*** info ***=***  ***{})*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;exit&#34;&gt;exit 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;msfconsole’dan çıkmaya yarar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;msfconsole’dan çıkmaya yarar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms10_061_spoolss&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; exit
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms10_061_spoolss***)***  ***&amp;gt;***  exit
 root@kali:~#
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;help&#34;&gt;help 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Kullanılabilir durumda olan komutların listesini ve kısa açıklamalarını ekrana görüntülemeye yarar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Kullanılabilir durumda olan komutların listesini ve kısa açıklamalarını ekrana görüntülemeye yarar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; help
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  help
 
 Core Commands
-&lt;strong&gt;=============&lt;/strong&gt;
+***=============*** 
 
     Command       Description
     -------       -----------
@@ -189,31 +189,31 @@ Core Commands
 ...snip...
 
 Database Backend Commands
-&lt;strong&gt;=========================&lt;/strong&gt;
+***=========================*** 
 
     Command           Description
     -------           -----------
-    creds             List all credentials &lt;strong&gt;in &lt;/strong&gt;the database
+    creds             List all credentials ***in *** the database
     db_connect        Connect to an existing database
     db_disconnect     Disconnect from the current database instance
     db_export         Export a file containing the contents of the database
-    db_import         Import a scan result file &lt;strong&gt;(&lt;/strong&gt;filetype will be auto-detected&lt;strong&gt;)&lt;/strong&gt;
+    db_import         Import a scan result file ***(*** filetype will be auto-detected***)*** 
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;info&#34;&gt;info 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;İstediğiniz herhangi bir modül hakkında detaylı bilgileri &lt;code&gt;info&lt;/code&gt; komutuyla inceleyebilirsiniz. Herhangi bir modülü kullanmadan önce &lt;code&gt;info&lt;/code&gt; komutuyla, modül detaylarını mutlaka okumanızı tavsiye ediyoruz. Sadece isminden hareketle başarılı olamayabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;İstediğiniz herhangi bir modül hakkında detaylı bilgileri &lt;code&gt;info&lt;/code&gt; komutuyla inceleyebilirsiniz. Herhangi bir modülü kullanmadan önce &lt;code&gt;info&lt;/code&gt; komutuyla, modül detaylarını mutlaka okumanızı tavsiye ediyoruz. Sadece isminden hareketle başarılı olamayabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; info exploit/windows/smb/ms09_050_smb2_negotiate_func_index 
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit***(*** ms09_050_smb2_negotiate_func_index***)***  ***&amp;gt;***  info exploit/windows/smb/ms09_050_smb2_negotiate_func_index 
 
        Name: Microsoft SRV2.SYS SMB Negotiate ProcessID Function Table Dereference
      Module: exploit/windows/smb/ms09_050_smb2_negotiate_func_index
     Version: 14774
    Platform: Windows
  Privileged: Yes
-    License: Metasploit Framework License &lt;strong&gt;(&lt;/strong&gt;BSD&lt;strong&gt;)&lt;/strong&gt;
+    License: Metasploit Framework License ***(*** BSD***)*** 
        Rank: Good
 
 Provided by:
@@ -224,58 +224,58 @@ Provided by:
 Available targets:
   Id  Name
   --  ----
-  0   Windows Vista SP1/SP2 and Server 2008 &lt;strong&gt;(&lt;/strong&gt;x86&lt;strong&gt;)&lt;/strong&gt;
+  0   Windows Vista SP1/SP2 and Server 2008 ***(*** x86***)*** 
 
 Basic options:
   Name   Current Setting  Required  Description
   ----   ---------------  --------  -----------
   RHOST                   yes       The target address
   RPORT  445              yes       The target port
-  WAIT   180              yes       The number of seconds to wait &lt;strong&gt;for &lt;/strong&gt;the attack to complete.
+  WAIT   180              yes       The number of seconds to wait ***for *** the attack to complete.
 
 Payload information:
   Space: 1024
 
 Description:
-  This module exploits an out of bounds &lt;strong&gt;function &lt;/strong&gt;table dereference &lt;strong&gt;in 
-  &lt;/strong&gt;the SMB request validation code of the SRV2.SYS driver included with 
-  Windows Vista, Windows 7 release candidates &lt;strong&gt;(&lt;/strong&gt;not RTM&lt;strong&gt;)&lt;/strong&gt;, and Windows 
+  This module exploits an out of bounds ***function *** table dereference ***in 
+  *** the SMB request validation code of the SRV2.SYS driver included with 
+  Windows Vista, Windows 7 release candidates ***(*** not RTM***)*** , and Windows 
   2008 Server prior to R2. Windows Vista without SP1 does not seem 
   affected by this flaw.
 
 References:
   &lt;a href=&#34;http://www.microsoft.com/technet/security/bulletin/MS09-050.mspx&#34;&gt;http://www.microsoft.com/technet/security/bulletin/MS09-050.mspx&lt;/a&gt;
-  &lt;a href=&#34;http://cve.mitre.org/cgi-bin/cvename.cgi?name&#34;&gt;http://cve.mitre.org/cgi-bin/cvename.cgi?name&lt;/a&gt;&lt;strong&gt;=&lt;/strong&gt;2009-3103
+  &lt;a href=&#34;http://cve.mitre.org/cgi-bin/cvename.cgi?name&#34;&gt;http://cve.mitre.org/cgi-bin/cvename.cgi?name&lt;/a&gt;***=*** 2009-3103
   &lt;a href=&#34;http://www.securityfocus.com/bid/36299&#34;&gt;http://www.securityfocus.com/bid/36299&lt;/a&gt;
   &lt;a href=&#34;http://www.osvdb.org/57799&#34;&gt;http://www.osvdb.org/57799&lt;/a&gt;
   &lt;a href=&#34;http://seclists.org/fulldisclosure/2009/Sep/0039.html&#34;&gt;http://seclists.org/fulldisclosure/2009/Sep/0039.html&lt;/a&gt;
   &lt;a href=&#34;http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx&#34;&gt;http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx&lt;/a&gt;
 
-msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf  exploit***(*** ms09_050_smb2_negotiate_func_index***)***  ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;irb&#34;&gt;irb 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bu komutu verdiğinizde doğrudan Ruby komut girişimcisine gidersiniz. msfconsole içerisinden Ruby ile script yazmanızı sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu komutu verdiğinizde doğrudan Ruby komut girişimcisine gidersiniz. msfconsole içerisinden Ruby ile script yazmanızı sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; irb
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Starting IRB shell...
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  irb
+***[*** ******* ***]***  Starting IRB shell...
 
-&lt;strong&gt;&amp;gt;&amp;gt;&lt;/strong&gt; puts &#34;Hello, metasploit!&#34;
+***&amp;gt;&amp;gt;***  puts &#34;Hello, metasploit!&#34;
 Hello, metasploit!
-&lt;strong&gt;=&amp;gt;&lt;/strong&gt; nil
-&lt;strong&gt;&amp;gt;&amp;gt;&lt;/strong&gt; Framework::Version
-&lt;strong&gt;=&amp;gt;&lt;/strong&gt; &#34;4.8.2-2014022601&#34;
+***=&amp;gt;***  nil
+***&amp;gt;&amp;gt;***  Framework::Version
+***=&amp;gt;***  &#34;4.8.2-2014022601&#34;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;jobs&#34;&gt;jobs 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Arka planda çalışır durumdaki modülleri listeleme, kapatma vb. işlemleri listelemenizi sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Arka planda çalışır durumdaki modülleri listeleme, kapatma vb. işlemleri listelemenizi sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; jobs -h
-Usage: jobs &lt;strong&gt;[&lt;/strong&gt;options]
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  jobs -h
+Usage: jobs ***[*** options]
 
 Active job manipulation and interaction.
 
@@ -288,42 +288,42 @@ OPTIONS:
     -l        List all running jobs.
     -v        Print more detailed info.  Use with -i and -l
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;kill&#34;&gt;kill 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Çalışan bir prosesin &lt;code&gt;job id&lt;/code&gt; numarasını verdiğiniz takdirde işlemin kapanmasını sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Çalışan bir prosesin &lt;code&gt;job id&lt;/code&gt; numarasını verdiğiniz takdirde işlemin kapanmasını sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms10_002_aurora&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; kill 0
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms10_002_aurora***)***  ***&amp;gt;***  kill 0
 Stopping job: 0...
 
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Server stopped.
+***[*** ******* ***]***  Server stopped.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;load&#34;&gt;load 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Metasploit klasörlerinden plugin (eklenti) yüklemenizi sağlar. Parametreler, key=val formatında belirtilmelidir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Metasploit klasörlerinden plugin (eklenti) yüklemenizi sağlar. Parametreler, key=val formatında belirtilmelidir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; load
-Usage: load &amp;lt;path&amp;gt; &lt;strong&gt;[&lt;/strong&gt;var&lt;strong&gt;=&lt;/strong&gt;val var&lt;strong&gt;=&lt;/strong&gt;val ...]
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  load
+Usage: load &amp;lt;path&amp;gt; ***[*** var***=*** val var***=*** val ...]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;load&lt;/code&gt; komutuyla eklentinin tam yolunu vermezseniz, öncelikle kullanıcı klasörlerine &lt;code&gt;~/.msf4/plugins&lt;/code&gt; bakılır. Orada bulunamaz ise eklenti için metasploit-framework ana klasörlerine &lt;code&gt;/usr/share/metasploit-framework/plugins&lt;/code&gt; bakılır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;load&lt;/code&gt; komutuyla eklentinin tam yolunu vermezseniz, öncelikle kullanıcı klasörlerine &lt;code&gt;~/.msf4/plugins&lt;/code&gt; bakılır. Orada bulunamaz ise eklenti için metasploit-framework ana klasörlerine &lt;code&gt;/usr/share/metasploit-framework/plugins&lt;/code&gt; bakılır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; load pcap_log
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; PcapLog plugin loaded.
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Successfully loaded plugin: pcap_log
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  load pcap_log
+***[*** ******* ***]***  PcapLog plugin loaded.
+***[*** ******* ***]***  Successfully loaded plugin: pcap_log
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;loadpath&#34;&gt;loadpath 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;msfconsole çalışır durumda iken, istediğiniz bir modülü yüklemenizi sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;msfconsole çalışır durumda iken, istediğiniz bir modülü yüklemenizi sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; loadpath /home/secret/modules
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  loadpath /home/secret/modules
 
 Loaded 0 modules.
 &lt;/code&gt;&lt;/pre&gt;
@@ -331,77 +331,77 @@ Loaded 0 modules.
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;unload&#34;&gt;unload 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;load&lt;/code&gt; komutuyla yüklediğiniz eklentinin sistemden ayrılmasını sağlar.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;load&lt;/code&gt; komutuyla yüklediğiniz eklentinin sistemden ayrılmasını sağlar.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; unload pcap_log
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  unload pcap_log
 Unloading plugin pcap_log...unloaded.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;resource&#34;&gt;resource 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bazı modüller, script komutlarının içinden dış kaynaklara atıfta bulunurlar. Örneğin (password dictionary) vb. kaynakları msfconsole içerisinde kullanmak için &lt;code&gt;resource&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bazı modüller, script komutlarının içinden dış kaynaklara atıfta bulunurlar. Örneğin (password dictionary) vb. kaynakları msfconsole içerisinde kullanmak için &lt;code&gt;resource&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; resource
-Usage: resource path1 &lt;strong&gt;[&lt;/strong&gt;path2 ...]
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  resource
+Usage: resource path1 ***[*** path2 ...]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; resource karma.rc
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Processing karma.rc &lt;strong&gt;for &lt;/strong&gt;ERB directives.
-resource &lt;strong&gt;(&lt;/strong&gt;karma.rc_.txt&lt;strong&gt;)&amp;gt;&lt;/strong&gt; db_connect postgres:toor@127.0.0.1/msfbook
-resource &lt;strong&gt;(&lt;/strong&gt;karma.rc_.txt&lt;strong&gt;)&amp;gt;&lt;/strong&gt; use auxiliary/server/browser_autopwn
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  resource karma.rc
+***[*** ******* ***]***  Processing karma.rc ***for *** ERB directives.
+resource ***(*** karma.rc_.txt***)&amp;gt;***  db_connect postgres:toor@127.0.0.1/msfbook
+resource ***(*** karma.rc_.txt***)&amp;gt;***  use auxiliary/server/browser_autopwn
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu tür resource dosyaları, işlerinizi oldukça hızlandırabilir. msfconsole dışından, msfconsole resource dosyası göndermek için &lt;code&gt;-r&lt;/code&gt; parametresini kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu tür resource dosyaları, işlerinizi oldukça hızlandırabilir. msfconsole dışından, msfconsole resource dosyası göndermek için &lt;code&gt;-r&lt;/code&gt; parametresini kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;root@kali:~# echo version &lt;strong&gt;&amp;gt;&lt;/strong&gt; version.rc
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;root@kali:~# echo version ***&amp;gt;***  version.rc
 root@kali:~# msfconsole -r version.rc
 
  _                                                    _
 /     /         __                         _   __  /_/ __
 | |  / | _____               ___   _____ | | /   _    
-| | /| | | ___ |- -|   /    / __ | -__/ | &lt;strong&gt;||&lt;/strong&gt; | &lt;strong&gt;||&lt;/strong&gt; | |- -|
+| | /| | | ___ |- -|   /    / __ | -__/ | ***||***  | ***||***  | |- -|
 |_|   | | | _|__  | |_  / - __    | |    | | __/| |  | |_
       |/  |____/  ___/ / \___/   /     __|    |_  ___
 
 Frustrated with proxy pivoting? Upgrade to layer-2 VPN pivoting with
 Metasploit Pro -- type &#39;go_pro&#39; to launch it now.
 
-       &lt;strong&gt;=[&lt;/strong&gt; metasploit v4.8.2-2014021901 &lt;strong&gt;[&lt;/strong&gt;core:4.8 api:1.0] &lt;strong&gt;]&lt;/strong&gt;
-+ -- --&lt;strong&gt;=[&lt;/strong&gt; 1265 exploits - 695 auxiliary - 202 post &lt;strong&gt;]&lt;/strong&gt;
-+ -- --&lt;strong&gt;=[&lt;/strong&gt; 330 payloads - 32 encoders - 8 nops      &lt;strong&gt;]&lt;/strong&gt;
+       ***=[***  metasploit v4.8.2-2014021901 ***[*** core:4.8 api:1.0] ***]*** 
++ -- --***=[***  1265 exploits - 695 auxiliary - 202 post ***]*** 
++ -- --***=[***  330 payloads - 32 encoders - 8 nops      ***]*** 
 
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Processing version.rc &lt;strong&gt;for &lt;/strong&gt;ERB directives.
-resource &lt;strong&gt;(&lt;/strong&gt;version.rc&lt;strong&gt;)&amp;gt;&lt;/strong&gt; version
+***[*** ******* ***]***  Processing version.rc ***for *** ERB directives.
+resource ***(*** version.rc***)&amp;gt;***  version
 Framework: 4.8.2-2014022601
 Console  : 4.8.2-2014022601.15168
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;route&#34;&gt;route 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;route&lt;/code&gt; komutu, hedef bilgisayardaki iletişimin rotasını değiştirmeye yarar. &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt; ve &lt;code&gt;list&lt;/code&gt; seçenekleri bulunur. Komuta &lt;strong&gt;subnet&lt;/strong&gt;, &lt;strong&gt;netmask&lt;/strong&gt;, &lt;strong&gt;gateway&lt;/strong&gt; parametrelerini göndermeniz gerekir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;route&lt;/code&gt; komutu, hedef bilgisayardaki iletişimin rotasını değiştirmeye yarar. &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt; ve &lt;code&gt;list&lt;/code&gt; seçenekleri bulunur. Komuta &lt;em&gt;&lt;strong&gt;subnet&lt;/strong&gt;&lt;/em&gt; , &lt;em&gt;&lt;strong&gt;netmask&lt;/strong&gt;&lt;/em&gt; , &lt;em&gt;&lt;strong&gt;gateway&lt;/strong&gt;&lt;/em&gt;  parametrelerini göndermeniz gerekir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;meterpreter &lt;strong&gt;&amp;gt;&lt;/strong&gt; route -h
-Usage: route &lt;strong&gt;[&lt;/strong&gt;-h&lt;strong&gt;]&lt;/strong&gt; command &lt;strong&gt;[&lt;/strong&gt;args]
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;meterpreter ***&amp;gt;***  route -h
+Usage: route ***[*** -h***]***  command ***[*** args]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Hedef bilgisayarda meterpreter session açtığınızda &lt;code&gt;route&lt;/code&gt; komutunu parametresiz olarak verirseniz mevcut iletişim tablosunu görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Hedef bilgisayarda meterpreter session açtığınızda &lt;code&gt;route&lt;/code&gt; komutunu parametresiz olarak verirseniz mevcut iletişim tablosunu görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;Supported commands:
 
-   add    &lt;strong&gt;[&lt;/strong&gt;subnet] &lt;strong&gt;[&lt;/strong&gt;netmask] &lt;strong&gt;[&lt;/strong&gt;gateway]
-   delete &lt;strong&gt;[&lt;/strong&gt;subnet] &lt;strong&gt;[&lt;/strong&gt;netmask] &lt;strong&gt;[&lt;/strong&gt;gateway]
+   add    ***[*** subnet] ***[*** netmask] ***[*** gateway]
+   delete ***[*** subnet] ***[*** netmask] ***[*** gateway]
    list
 
-meterpreter &lt;strong&gt;&amp;gt;&lt;/strong&gt;
-meterpreter &lt;strong&gt;&amp;gt;&lt;/strong&gt; route
+meterpreter ***&amp;gt;*** 
+meterpreter ***&amp;gt;***  route
 
 Network routes
-&lt;strong&gt;==============&lt;/strong&gt;
+***==============*** 
 
     Subnet           Netmask          Gateway
     ------           -------          -------
@@ -417,55 +417,55 @@ Network routes
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;search&#34;&gt;search 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;msfconsole içerisinde arama yapmanızı sağlar. Basitçe aradığınız herhangi bir ifadeyi yazabileceğiniz gibi parametreler sayesinde aramayı daraltmanız da mümkündür.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;msfconsole içerisinde arama yapmanızı sağlar. Basitçe aradığınız herhangi bir ifadeyi yazabileceğiniz gibi parametreler sayesinde aramayı daraltmanız da mümkündür.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search usermap_script
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search usermap_script
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                Disclosure Date  Rank       Description
    ----                                ---------------  ----       -----------
    exploit/multi/samba/usermap_script  2007-05-14       excellent  Samba &#34;username map script&#34; Command Execution
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;help-1&#34;&gt;help&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;help-1&#34;&gt;help
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Anahtar kelimeleri kullanarak aramalarınızı çeşitlendirebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Anahtar kelimeleri kullanarak aramalarınızı çeşitlendirebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; help search
-Usage: search &lt;strong&gt;[&lt;/strong&gt;keywords]
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  help search
+Usage: search ***[*** keywords]
 
 Keywords:
   name      :  Modules with a matching descriptive name
   path      :  Modules with a matching path or reference name
   platform  :  Modules affecting this platform
-  type      :  Modules of a specific type &lt;strong&gt;(&lt;/strong&gt;exploit, auxiliary, or post&lt;strong&gt;)&lt;/strong&gt;
+  type      :  Modules of a specific type ***(*** exploit, auxiliary, or post***)*** 
   app       :  Modules that are client or server attacks
   author    :  Modules written by this author
   cve       :  Modules with a matching CVE ID
   bid       :  Modules with a matching Bugtraq ID
   osvdb     :  Modules with a matching OSVDB ID
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;name&#34;&gt;name&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;name&#34;&gt;name
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;“name” anahtar kelimesi ile arama.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;“name” anahtar kelimesi ile arama.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search name:mysql
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search name:mysql
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                               Disclosure Date  Rank       Description
    ----                                               ---------------  ----       -----------
    auxiliary/admin/mysql/mysql_enum                                    normal     MySQL Enumeration Module
    auxiliary/admin/mysql/mysql_sql                                     normal     MySQL SQL Generic Query
-   auxiliary/analyze/jtr_mysql_fast                                    normal     John the Ripper MySQL Password Cracker &lt;strong&gt;(&lt;/strong&gt;Fast Mode&lt;strong&gt;)&lt;/strong&gt;
+   auxiliary/analyze/jtr_mysql_fast                                    normal     John the Ripper MySQL Password Cracker ***(*** Fast Mode***)*** 
    auxiliary/scanner/mysql/mysql_authbypass_hashdump  2012-06-09       normal     MySQL Authentication Bypass Password Dump
    auxiliary/scanner/mysql/mysql_hashdump                              normal     MYSQL Password Hashdump
    auxiliary/scanner/mysql/mysql_login                                 normal     MySQL Login Utility
@@ -473,19 +473,19 @@ Matching Modules
    auxiliary/scanner/mysql/mysql_version                               normal     MySQL Server Version Enumeration
    exploit/linux/mysql/mysql_yassl_getname            2010-01-25       good       MySQL yaSSL CertDecoder::GetName Buffer Overflow
    exploit/linux/mysql/mysql_yassl_hello              2008-01-04       good       MySQL yaSSL SSL Hello Message Buffer Overflow
-   exploit/windows/mysql/mysql_payload                2009-01-16       excellent  Oracle MySQL &lt;strong&gt;for &lt;/strong&gt;Microsoft Windows Payload Execution
+   exploit/windows/mysql/mysql_payload                2009-01-16       excellent  Oracle MySQL ***for *** Microsoft Windows Payload Execution
    exploit/windows/mysql/mysql_yassl_hello            2008-01-04       average    MySQL yaSSL SSL Hello Message Buffer Overflow
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;path&#34;&gt;path&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;path&#34;&gt;path
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;“path” anahtar kelimesi ile modül klasörlerinde arama.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;“path” anahtar kelimesi ile modül klasörlerinde arama.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search path:scada
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search path:scada
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                                 Disclosure Date  Rank     Description
    ----                                                 ---------------  ----     -----------
@@ -494,31 +494,31 @@ Matching Modules
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;platform&#34;&gt;platform&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;platform&#34;&gt;platform
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;“platform” anahtar kelimesi ile arama&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;“platform” anahtar kelimesi ile arama&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search platform:aix
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search platform:aix
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                  Disclosure Date  Rank    Description
    ----                                  ---------------  ----    -----------
    payload/aix/ppc/shell_bind_tcp                         normal  AIX Command Shell, Bind TCP Inline
    payload/aix/ppc/shell_find_port                        normal  AIX Command Shell, Find Port Inline
-   payload/aix/ppc/shell_interact                         normal  AIX execve shell &lt;strong&gt;for &lt;/strong&gt;inetd
+   payload/aix/ppc/shell_interact                         normal  AIX execve shell ***for *** inetd
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;type&#34;&gt;type&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;type&#34;&gt;type
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;“type” anahtar kelimesi ile arama&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;“type” anahtar kelimesi ile arama&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search type:exploit
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search type:exploit
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                                Disclosure Date  Rank    Description
    ----                                                ---------------  ----    -----------
@@ -528,14 +528,14 @@ Matching Modules
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;author&#34;&gt;author&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;author&#34;&gt;author
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;“author” anahtar kelimesi ile yazara göre arama.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;“author” anahtar kelimesi ile yazara göre arama.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search author:dookie
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search author:dookie
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                                       Disclosure Date  Rank     Description
    ----                                                       ---------------  ----     -----------
@@ -545,14 +545,14 @@ Matching Modules
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;multiple&#34;&gt;multiple&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;multiple&#34;&gt;multiple
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Birden fazla anahtar kelime kriteri girerek arama yapabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Birden fazla anahtar kelime kriteri girerek arama yapabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; search cve:2011 author:jduck platform:linux
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  search cve:2011 author:jduck platform:linux
 
 Matching Modules
-&lt;strong&gt;================&lt;/strong&gt;
+***================*** 
 
    Name                                         Disclosure Date  Rank     Description
    ----                                         ---------------  ----     -----------
@@ -562,7 +562,7 @@ Matching Modules
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;sessions&#34;&gt;sessions 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;sessions&lt;/code&gt; komutuyla oturumları yönetebilirsiniz. Oturumlar, kullandığınız her bir modülün o anda aktif olarak faaliyetlerinin organize edildiği işlemleri ifade eder.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sessions&lt;/code&gt; komutuyla oturumları yönetebilirsiniz. Oturumlar, kullandığınız her bir modülün o anda aktif olarak faaliyetlerinin organize edildiği işlemleri ifade eder.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &amp;gt; sessions -h
 Usage: sessions [options]
@@ -585,20 +585,20 @@ OPTIONS:
     -v        List verbose fields
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;O anda bulunan tüm session (oturum) listesini görmek için &lt;code&gt;-l&lt;/code&gt; parametresini kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;O anda bulunan tüm session (oturum) listesini görmek için &lt;code&gt;-l&lt;/code&gt; parametresini kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;3proxy&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; sessions -l
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** 3proxy***)***  ***&amp;gt;***  sessions -l
 
 Active sessions
-&lt;strong&gt;===============&lt;/strong&gt;
+***===============*** 
 
   Id  Description    Tunnel
   --  -----------    ------
   1   Command shell  192.168.1.101:33191 -&amp;gt; 192.168.1.104:4444
 To interact with a given session, you just need to use the ‘-i’ switch followed by the Id number of the session.
 
-msf exploit&lt;strong&gt;(&lt;/strong&gt;3proxy&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; sessions -i 1
-&lt;strong&gt;[&lt;/strong&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;strong&gt;]&lt;/strong&gt; Starting interaction with 1...
+msf exploit***(*** 3proxy***)***  ***&amp;gt;***  sessions -i 1
+***[*** ******* ***]***  Starting interaction with 1...
 
 C:WINDOWSsystem32&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -606,33 +606,33 @@ C:WINDOWSsystem32&amp;gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;set&#34;&gt;set 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutu, seçtiğiniz ve &lt;code&gt;use&lt;/code&gt; komutuyla aktif hale getirdiğiniz modülün ayarlanması gereken seçenek ve parametrelerini düzenlemek için kullanılır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutu, seçtiğiniz ve &lt;code&gt;use&lt;/code&gt; komutuyla aktif hale getirdiğiniz modülün ayarlanması gereken seçenek ve parametrelerini düzenlemek için kullanılır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf auxiliary&lt;strong&gt;(&lt;/strong&gt;ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; set RHOST 172.16.194.134
-RHOST &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 172.16.194.134
-msf auxiliary&lt;strong&gt;(&lt;/strong&gt;ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show options
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf auxiliary***(*** ms09_050_smb2_negotiate_func_index***)***  ***&amp;gt;***  set RHOST 172.16.194.134
+RHOST ***=&amp;gt;***  172.16.194.134
+msf auxiliary***(*** ms09_050_smb2_negotiate_func_index***)***  ***&amp;gt;***  show options
 
-Module options &lt;strong&gt;(&lt;/strong&gt;exploit/windows/smb/ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt;:
+Module options ***(*** exploit/windows/smb/ms09_050_smb2_negotiate_func_index***)*** :
 
    Name   Current Setting  Required  Description
    ----   ---------------  --------  -----------
    RHOST  172.16.194.134   yes       The target address
    RPORT  445              yes       The target port
-   WAIT   180              yes       The number of seconds to wait &lt;strong&gt;for &lt;/strong&gt;the attack to complete.
+   WAIT   180              yes       The number of seconds to wait ***for *** the attack to complete.
 
 Exploit target:
 
    Id  Name
    --  ----
-   0   Windows Vista SP1/SP2 and Server 2008 &lt;strong&gt;(&lt;/strong&gt;x86&lt;strong&gt;)&lt;/strong&gt;
+   0   Windows Vista SP1/SP2 and Server 2008 ***(*** x86***)*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutuyla gerekli ayarlamaları yapabileceğiniz gibi aktif olan modülün kullanabileceği &lt;code&gt;encoders&lt;/code&gt; listesini de görmek isteyebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutuyla gerekli ayarlamaları yapabileceğiniz gibi aktif olan modülün kullanabileceği &lt;code&gt;encoders&lt;/code&gt; listesini de görmek isteyebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms09_050_smb2_negotiate_func_index&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show encoders
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit***(*** ms09_050_smb2_negotiate_func_index***)***  ***&amp;gt;***  show encoders
 
 Compatible Encoders
-&lt;strong&gt;===================&lt;/strong&gt;
+***===================*** 
 
    Name                    Disclosure Date  Rank       Description
    ----                    ---------------  ----       -----------
@@ -642,8 +642,8 @@ Compatible Encoders
    x86/avoid_utf8_tolower                   manual     Avoid UTF8/tolower
    x86/call4_dword_xor                      normal     Call+4 Dword XOR Encoder
    x86/context_cpuid                        manual     CPUID-based Context Keyed Payload Encoder
-   x86/context_stat                         manual     stat&lt;strong&gt;(&lt;/strong&gt;2&lt;strong&gt;)&lt;/strong&gt;-based Context Keyed Payload Encoder
-   x86/context_time                         manual     time&lt;strong&gt;(&lt;/strong&gt;2&lt;strong&gt;)&lt;/strong&gt;-based Context Keyed Payload Encoder
+   x86/context_stat                         manual     stat***(*** 2***)*** -based Context Keyed Payload Encoder
+   x86/context_time                         manual     time***(*** 2***)*** -based Context Keyed Payload Encoder
    x86/countdown                            normal     Single-byte XOR Countdown Encoder
    x86/fnstenv_mov                          normal     Variable-length Fnstenv/mov Dword XOR Encoder
    x86/jmp_call_additive                    normal     Jump/Call XOR Additive Feedback Encoder
@@ -658,84 +658,84 @@ Compatible Encoders
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;unset&#34;&gt;unset 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutunun tersidir ve bir önceki adımda ayarladığınız parametreyi iptal eder. Ayarladığınız tüm değişkenleri &lt;code&gt;unset all&lt;/code&gt; komutuyla iptal edebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set&lt;/code&gt; komutunun tersidir ve bir önceki adımda ayarladığınız parametreyi iptal eder. Ayarladığınız tüm değişkenleri &lt;code&gt;unset all&lt;/code&gt; komutuyla iptal edebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; set RHOSTS 192.168.1.0/24
-RHOSTS &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 192.168.1.0/24
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; set THREADS 50
-THREADS &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 50
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; set
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  set RHOSTS 192.168.1.0/24
+RHOSTS ***=&amp;gt;***  192.168.1.0/24
+msf ***&amp;gt;***  set THREADS 50
+THREADS ***=&amp;gt;***  50
+msf ***&amp;gt;***  set
 
 Global
-&lt;strong&gt;======&lt;/strong&gt;
+***======*** 
 
   Name     Value
   ----     -----
   RHOSTS   192.168.1.0/24
   THREADS  50
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; unset THREADS
+msf ***&amp;gt;***  unset THREADS
 Unsetting THREADS...
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; unset all
+msf ***&amp;gt;***  unset all
 Flushing datastore...
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; set
+msf ***&amp;gt;***  set
 
 Global
-&lt;strong&gt;======&lt;/strong&gt;
+***======*** 
 
-No entries &lt;strong&gt;in &lt;/strong&gt;data store.
+No entries ***in *** data store.
 
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;setg&#34;&gt;setg 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bir modül seçtiniz ve aktif hale getirdiniz. Muhtemelen o modülün RHOST değişkenini ayarlayacaksınız. Bunu &lt;code&gt;set RHOST&lt;/code&gt; komutuyla yapabilirsiniz ancak farklı bir modüle geçtiğinizde RHOST değeriniz (Hedef IP) değişmemiş olsa bile önceki modülde yaptığınız ayar, yeni modüle taşınmaz. İşte &lt;code&gt;setg&lt;/code&gt; komutuyla bir değişken ayarının, tüm modüllerde aktif halde, tekrar tekrar ayarlamaya gerek kalmadan kullanmanızı sağlar. Bu ayarı kullansanız da son olarak &lt;code&gt;show options&lt;/code&gt; komutu ile kontrol yapmanızı tavsiye ediyoruz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bir modül seçtiniz ve aktif hale getirdiniz. Muhtemelen o modülün RHOST değişkenini ayarlayacaksınız. Bunu &lt;code&gt;set RHOST&lt;/code&gt; komutuyla yapabilirsiniz ancak farklı bir modüle geçtiğinizde RHOST değeriniz (Hedef IP) değişmemiş olsa bile önceki modülde yaptığınız ayar, yeni modüle taşınmaz. İşte &lt;code&gt;setg&lt;/code&gt; komutuyla bir değişken ayarının, tüm modüllerde aktif halde, tekrar tekrar ayarlamaya gerek kalmadan kullanmanızı sağlar. Bu ayarı kullansanız da son olarak &lt;code&gt;show options&lt;/code&gt; komutu ile kontrol yapmanızı tavsiye ediyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; setg LHOST 192.168.1.101
-LHOST &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 192.168.1.101
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; setg RHOSTS 192.168.1.0/24
-RHOSTS &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 192.168.1.0/24
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; setg RHOST 192.168.1.136
-RHOST &lt;strong&gt;=&amp;gt;&lt;/strong&gt; 192.168.1.136
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  setg LHOST 192.168.1.101
+LHOST ***=&amp;gt;***  192.168.1.101
+msf ***&amp;gt;***  setg RHOSTS 192.168.1.0/24
+RHOSTS ***=&amp;gt;***  192.168.1.0/24
+msf ***&amp;gt;***  setg RHOST 192.168.1.136
+RHOST ***=&amp;gt;***  192.168.1.136
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;save&#34;&gt;save 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Tüm ayarlamaları yaptınız ve msfconsole dan çıkmak istiyorsunuz. Tekrar girdiğinizde, önceki ayarlarınızı tekrar kullanmak istiyorsanız &lt;code&gt;save&lt;/code&gt; komutunu vererek kayıt edin. Bu sayede zamandan tasarruf edebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Tüm ayarlamaları yaptınız ve msfconsole dan çıkmak istiyorsunuz. Tekrar girdiğinizde, önceki ayarlarınızı tekrar kullanmak istiyorsanız &lt;code&gt;save&lt;/code&gt; komutunu vererek kayıt edin. Bu sayede zamandan tasarruf edebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; save
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  save
 Saved configuration to: /root/.msf4/config
-msf &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;show&#34;&gt;show 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;&lt;code&gt;show&lt;/code&gt; komutunu hiçbir parametre vermeden kullanırsanız metasploit içerisindeki tüm modüllerin listesini görebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;show&lt;/code&gt; komutunu hiçbir parametre vermeden kullanırsanız metasploit içerisindeki tüm modüllerin listesini görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show
 
 Encoders
-&lt;strong&gt;========&lt;/strong&gt;
+***========*** 
 
    Name                    Disclosure Date  Rank       Description
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
-   cmd/ifs                                  low        Generic &lt;strong&gt;${&lt;/strong&gt;IFS&lt;strong&gt;}&lt;/strong&gt; Substitution Command Encoder
-   cmd/printf_php_mq                        manual     printf&lt;strong&gt;(&lt;/strong&gt;1&lt;strong&gt;)&lt;/strong&gt; via PHP magic_quotes Utility Command Encoder
+   cmd/ifs                                  low        Generic ***${*** IFS***}***  Substitution Command Encoder
+   cmd/printf_php_mq                        manual     printf***(*** 1***)***  via PHP magic_quotes Utility Command Encoder
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;show&lt;/code&gt; komutunu aşağıdaki formatlarda da kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-auxiliary&#34;&gt;show auxiliary&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;show&lt;/code&gt; komutunu aşağıdaki formatlarda da kullanabilirsiniz.&lt;/p&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-auxiliary&#34;&gt;show auxiliary
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show auxiliary
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show auxiliary
 Auxiliary
-&lt;strong&gt;=========&lt;/strong&gt;
+***=========*** 
 
    Name                                                  Disclosure Date  Rank    Description
    ----                                                  ---------------  ----    -----------
@@ -745,43 +745,43 @@ Auxiliary
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-exploits&#34;&gt;show exploits&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-exploits&#34;&gt;show exploits
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show exploits
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show exploits
 
 Exploits
-&lt;strong&gt;========&lt;/strong&gt;
+***========*** 
 
    Name                                                           Disclosure Date  Rank       Description
    ----                                                           ---------------  ----       -----------
-   aix/rpc_cmsd_opcode21                                          2009-10-07       great      AIX Calendar Manager Service Daemon &lt;strong&gt;(&lt;/strong&gt;rpc.cmsd&lt;strong&gt;)&lt;/strong&gt; Opcode 21 Buffer Overflow
-   aix/rpc_ttdbserverd_realpath                                   2009-06-17       great      ToolTalk rpc.ttdbserverd _tt_internal_realpath Buffer Overflow &lt;strong&gt;(&lt;/strong&gt;AIX&lt;strong&gt;)&lt;/strong&gt;
+   aix/rpc_cmsd_opcode21                                          2009-10-07       great      AIX Calendar Manager Service Daemon ***(*** rpc.cmsd***)***  Opcode 21 Buffer Overflow
+   aix/rpc_ttdbserverd_realpath                                   2009-06-17       great      ToolTalk rpc.ttdbserverd _tt_internal_realpath Buffer Overflow ***(*** AIX***)*** 
    bsdi/softcart/mercantec_softcart                               2004-08-19       great      Mercantec SoftCart CGI Overflow
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-payloads&#34;&gt;show payloads&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-payloads&#34;&gt;show payloads
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show payloads
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show payloads
 
 Payloads
-&lt;strong&gt;========&lt;/strong&gt;
+***========*** 
 
    Name                                             Disclosure Date  Rank    Description
    ----                                             ---------------  ----    -----------
    aix/ppc/shell_bind_tcp                                            normal  AIX Command Shell, Bind TCP Inline
    aix/ppc/shell_find_port                                           normal  AIX Command Shell, Find Port Inline
-   aix/ppc/shell_interact                                            normal  AIX execve shell &lt;strong&gt;for &lt;/strong&gt;inetd
+   aix/ppc/shell_interact                                            normal  AIX execve shell ***for *** inetd
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show payloads
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  show payloads
 
 Compatible Payloads
-&lt;strong&gt;===================&lt;/strong&gt;
+***===================*** 
 
    Name                                             Disclosure Date  Rank    Description
    ----                                             ---------------  ----    -----------
@@ -791,9 +791,9 @@ Compatible Payloads
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;code&gt;show options&lt;/code&gt; komutu, aktif olan modülün seçeneklerini ve ayarlanabilecek değişkenlerini gösterir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;show options&lt;/code&gt; komutu, aktif olan modülün seçeneklerini ve ayarlanabilecek değişkenlerini gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show options
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  show options
 
 Module options:
 
@@ -801,7 +801,7 @@ Module options:
    ----     ---------------  --------  -----------
    RHOST                     yes       The target address
    RPORT    445              yes       Set the SMB service port
-   SMBPIPE  BROWSER          yes       The pipe name to use &lt;strong&gt;(&lt;/strong&gt;BROWSER, SRVSVC&lt;strong&gt;)&lt;/strong&gt;
+   SMBPIPE  BROWSER          yes       The pipe name to use ***(*** BROWSER, SRVSVC***)*** 
 
 Exploit target:
 
@@ -810,9 +810,9 @@ Exploit target:
    0   Automatic Targeting
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Seçtiğiniz modülün hangi işletim sistemlerinde kullanabileceğinden emin değilseniz &lt;code&gt;show targets&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Seçtiğiniz modülün hangi işletim sistemlerinde kullanabileceğinden emin değilseniz &lt;code&gt;show targets&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show targets
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf  exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  show targets
 
 Exploit targets:
 
@@ -820,15 +820,15 @@ Exploit targets:
    --  ----
    0   Automatic Targeting
    1   Windows 2000 Universal
-   10  Windows 2003 SP1 Japanese &lt;strong&gt;(&lt;/strong&gt;NO NX&lt;strong&gt;)&lt;/strong&gt;
-   11  Windows 2003 SP2 English &lt;strong&gt;(&lt;/strong&gt;NO NX&lt;strong&gt;)&lt;/strong&gt;
-   12  Windows 2003 SP2 English &lt;strong&gt;(&lt;/strong&gt;NX&lt;strong&gt;)&lt;/strong&gt;
+   10  Windows 2003 SP1 Japanese ***(*** NO NX***)*** 
+   11  Windows 2003 SP2 English ***(*** NO NX***)*** 
+   12  Windows 2003 SP2 English ***(*** NX***)*** 
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Modül hakkında en detaylı bilgiyi görmek için &lt;code&gt;show advanced&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Modül hakkında en detaylı bilgiyi görmek için &lt;code&gt;show advanced&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit&lt;strong&gt;(&lt;/strong&gt;ms08_067_netapi&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show advanced
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf exploit***(*** ms08_067_netapi***)***  ***&amp;gt;***  show advanced
 
 Module advanced options:
 
@@ -843,19 +843,19 @@ Module advanced options:
 ...snip...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-encoders&#34;&gt;show encoders&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-encoders&#34;&gt;show encoders
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Metasploit içerisindeki kullanabileceğiniz tüm encoder listesini görmek için &lt;code&gt;show encoders&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Metasploit içerisindeki kullanabileceğiniz tüm encoder listesini görmek için &lt;code&gt;show encoders&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show encoders
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show encoders
 Compatible Encoders
-&lt;strong&gt;===================&lt;/strong&gt;
+***===================*** 
 
    Name                    Disclosure Date  Rank       Description
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
-   cmd/ifs                                  low        Generic &lt;strong&gt;${&lt;/strong&gt;IFS&lt;strong&gt;}&lt;/strong&gt; Substitution Command Encoder
-   cmd/printf_php_mq                        manual     printf&lt;strong&gt;(&lt;/strong&gt;1&lt;strong&gt;)&lt;/strong&gt; via PHP magic_quotes Utility Command Encoder
+   cmd/ifs                                  low        Generic ***${*** IFS***}***  Substitution Command Encoder
+   cmd/printf_php_mq                        manual     printf***(*** 1***)***  via PHP magic_quotes Utility Command Encoder
    generic/none                             normal     The &#34;none&#34; Encoder
    mipsbe/longxor                           normal     XOR Encoder
    mipsle/longxor                           normal     XOR Encoder
@@ -869,8 +869,8 @@ Compatible Encoders
    x86/avoid_utf8_tolower                   manual     Avoid UTF8/tolower
    x86/call4_dword_xor                      normal     Call+4 Dword XOR Encoder
    x86/context_cpuid                        manual     CPUID-based Context Keyed Payload Encoder
-   x86/context_stat                         manual     stat&lt;strong&gt;(&lt;/strong&gt;2&lt;strong&gt;)&lt;/strong&gt;-based Context Keyed Payload Encoder
-   x86/context_time                         manual     time&lt;strong&gt;(&lt;/strong&gt;2&lt;strong&gt;)&lt;/strong&gt;-based Context Keyed Payload Encoder
+   x86/context_stat                         manual     stat***(*** 2***)*** -based Context Keyed Payload Encoder
+   x86/context_time                         manual     time***(*** 2***)*** -based Context Keyed Payload Encoder
    x86/countdown                            normal     Single-byte XOR Countdown Encoder
    x86/fnstenv_mov                          normal     Variable-length Fnstenv/mov Dword XOR Encoder
    x86/jmp_call_additive                    normal     Jump/Call XOR Additive Feedback Encoder
@@ -882,13 +882,13 @@ Compatible Encoders
    x86/unicode_upper                        manual     Alpha2 Alphanumeric Unicode Uppercase Encoder
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-nops&#34;&gt;show nops&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;show-nops&#34;&gt;show nops
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;NOP Generator denilen kod üreticilerinin listesini &lt;code&gt;show nops&lt;/code&gt; komutu ile ile görebilirsiniz&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;NOP Generator denilen kod üreticilerinin listesini &lt;code&gt;show nops&lt;/code&gt; komutu ile ile görebilirsiniz&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; show nops
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  show nops
 NOP Generators
-&lt;strong&gt;==============&lt;/strong&gt;
+***==============*** 
 
    Name             Disclosure Date  Rank    Description
    ----             ---------------  ----    -----------
@@ -905,10 +905,10 @@ NOP Generators
 &lt;!-- wp:heading {&#34;level&#34;:1} --&gt;
 &lt;h1 class=&#34;wp-block-heading&#34; id=&#34;use&#34;&gt;use 
 &lt;!-- /wp:heading --&gt;
-&lt;p&gt;Yaptığınız aramalar sonunda bir modülü kullanmaya karar verdiniz. İşte bu noktada &lt;code&gt;use&lt;/code&gt; komutuyla modülü aktif hale getirebilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yaptığınız aramalar sonunda bir modülü kullanmaya karar verdiniz. İşte bu noktada &lt;code&gt;use&lt;/code&gt; komutuyla modülü aktif hale getirebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf &lt;strong&gt;&amp;gt;&lt;/strong&gt; use dos/windows/smb/ms09_001_write
-msf auxiliary&lt;strong&gt;(&lt;/strong&gt;ms09_001_write&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt; show options
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;msf ***&amp;gt;***  use dos/windows/smb/ms09_001_write
+msf auxiliary***(*** ms09_001_write***)***  ***&amp;gt;***  show options
 
 Module options:
 
@@ -917,11 +917,11 @@ Module options:
    RHOST                   yes       The target address
    RPORT  445              yes       Set the SMB service port
 
-msf auxiliary&lt;strong&gt;(&lt;/strong&gt;ms09_001_write&lt;strong&gt;)&lt;/strong&gt; &lt;strong&gt;&amp;gt;&lt;/strong&gt;
+msf auxiliary***(*** ms09_001_write***)***  ***&amp;gt;*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde &lt;code&gt;help&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Video Anlatım&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Herhangi bir çalışma esnasında bir komut ile yardım almak istediğinizde &lt;code&gt;help&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Video Anlatım&lt;/p&gt;
 &lt;!-- wp:embed {&#34;url&#34;:&#34;https://youtu.be/UOtw6CfPGlo&#34;,&#34;type&#34;:&#34;video&#34;,&#34;providerNameSlug&#34;:&#34;youtube&#34;,&#34;responsive&#34;:true,&#34;className&#34;:&#34;wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;} --&gt;
 &lt;figure class=&#34;wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&#34;&gt;&lt;div class=&#34;wp-block-embed__wrapper&#34;&gt;
 https://youtu.be/UOtw6CfPGlo

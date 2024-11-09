@@ -29,7 +29,7 @@ url: /do-while-loop-with-examples-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -96,7 +96,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation </h2>
+ ## Explanation 
 <!-- /wp:heading -->
 
   The provided C++ code demonstrates the use of <code>do-while</code> loops, a variant of loop that ensures the loop's body is executed at least once before the condition is checked. This characteristic differentiates <code>do-while</code> loops from the more common <code>while</code> loops, where the condition is evaluated before the loop body is executed. 
@@ -156,7 +156,7 @@ int main() {
  
 
  
- ## Output </h2>
+ ## Output 
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -33,7 +33,7 @@ url: /tr/kotlinde-sabitler-ve-degiskenler/
   
 
  
- ## val değişkenler</h2>
+ ## val değişkenler
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -51,7 +51,7 @@ url: /tr/kotlinde-sabitler-ve-degiskenler/
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p><code>val</code> anahtar kelimesi ile tanımlanmış ve ilk değeri atanmış <code>pi</code> değişkenine yeni bir değer atamaya çalışalım.  Aşağıdaki örnekte görüldüğü gibi pi sayısına yeni bir değer atamak istediğimizde "<strong><mark class="has-inline-color has-vivid-red-color">Val cannot be reassigned</mark></strong>" hatası alırsınız. 
+<p><code>val</code> anahtar kelimesi ile tanımlanmış ve ilk değeri atanmış <code>pi</code> değişkenine yeni bir değer atamaya çalışalım.  Aşağıdaki örnekte görüldüğü gibi pi sayısına yeni bir değer atamak istediğimizde "***<mark class="has-inline-color has-vivid-red-color">Val cannot be reassigned</mark>*** " hatası alırsınız. 
   
 
 <!-- wp:code -->
@@ -86,7 +86,7 @@ println(boolFalse) // error line</code></pre>
 <!-- /wp:code -->
 
  
- ## const değişkenler</h2>
+ ## const değişkenler
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -102,13 +102,13 @@ println(boolFalse) // error line</code></pre>
   
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Sabit değerlere yalnızca String ve birincil türler dediğimiz INT, CHAR, DOUBLE, BOOLEAN veri tipleri atanabilir. Aşağıda buna ait bir örnek gösterilmektedir.</li>
+ <!-- wp:list-item -->
+- Sabit değerlere yalnızca String ve birincil türler dediğimiz INT, CHAR, DOUBLE, BOOLEAN veri tipleri atanabilir. Aşağıda buna ait bir örnek gösterilmektedir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sabitler, fonksiyonların en dışında tanımlanmalıdır. Fonksiyon içerisinde const ifadesi ile tanımlanamazlar. </li>
-<!-- /wp:list-item --></ul>
+- Sabitler, fonksiyonların en dışında tanımlanmalıdır. Fonksiyon içerisinde const ifadesi ile tanımlanamazlar.  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->

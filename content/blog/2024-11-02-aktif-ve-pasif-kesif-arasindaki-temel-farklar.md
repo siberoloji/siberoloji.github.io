@@ -25,274 +25,274 @@ url: /tr/aktif-ve-pasif-kesif-arasindaki-temel-farklar/
 ---
 
 Aktif ve pasif keşif arasındaki farkları anlamak, güvenlik uzmanları ve ağ yöneticileri için hayati önem taşır. Bilgi toplamaya yönelik bu iki temel yaklaşım farklı amaçlara hizmet eder ve kendi değerlendirme kümeleriyle birlikte gelir. Bu kapsamlı kılavuz, her iki yöntemin temel farklılıklarını, <span class="google-anno-t">uygulamalarını</span> ve çıkarımlarını inceler.
- ## Keşif Genel Bakışı</h2>
+ ## Keşif Genel Bakışı
 Keşif, genellikle "recon" olarak kısaltılır, hedef sistemler, ağlar veya kuruluşlar hakkında bilginin toplandığı güvenlik değerlendirmesinin ön aşamasıdır. Bu bilgi, olası güvenlik açıklarını, güvenlik duruşunu ve sistem mimarisini anlamak için temel oluşturur.
- ## Pasif Keşif</h2>
- ### Tanım ve Özellikler</h3>
+ ## Pasif Keşif
+ ### Tanım ve Özellikler
 Pasif keşif, hedef sistemle doğrudan etkileşime girmeden bilgi toplamayı içerir. Bu yöntem:
 <ul class="wp-block-list">
- 	<li>Hedef sistemlerde hiçbir iz bırakmaz</li>
- 	<li>Kamuya açık bilgileri kullanır</li>
- 	<li>Hedef tarafından tespit edilemiyor</li>
- 	<li>Bilgi toplamak daha uzun sürer</li>
- 	<li>Sınırlı bilgi derinliğine sahiptir</li>
-</ul>
- ### Yaygın Teknikler</h3>
+ 	- Hedef sistemlerde hiçbir iz bırakmaz 
+ 	- Kamuya açık bilgileri kullanır 
+ 	- Hedef tarafından tespit edilemiyor 
+ 	- Bilgi toplamak daha uzun sürer 
+ 	- Sınırlı bilgi derinliğine sahiptir 
+ 
+ ### Yaygın Teknikler
 <ol class="wp-block-list">
- 	<li>OSINT (Açık Kaynak İstihbaratı)</li>
-</ol>
+ 	- OSINT (Açık Kaynak İstihbaratı) 
+ 
 <ul class="wp-block-list">
- 	<li>Kamu kayıtları aramaları</li>
- 	<li>Sosyal medya analizi</li>
- 	<li>Haber makaleleri</li>
- 	<li>Kurumsal belgeler</li>
- 	<li>İş ilanları</li>
-</ul>
+ 	- Kamu kayıtları aramaları 
+ 	- Sosyal medya analizi 
+ 	- Haber makaleleri 
+ 	- Kurumsal belgeler 
+ 	- İş ilanları 
+ 
 <ol class="wp-block-list">
- 	<li>DNS Bilgileri</li>
-</ol>
+ 	- DNS Bilgileri 
+ 
 <ul class="wp-block-list">
- 	<li>WHOIS aramaları</li>
- 	<li>DNS kayıt analizi</li>
- 	<li>Tarihsel DNS verileri</li>
- 	<li>Ters DNS aramaları</li>
-</ul>
+ 	- WHOIS aramaları 
+ 	- DNS kayıt analizi 
+ 	- Tarihsel DNS verileri 
+ 	- Ters DNS aramaları 
+ 
 <ol class="wp-block-list">
- 	<li>Arama Motoru Sonuçları</li>
-</ol>
+ 	- Arama Motoru Sonuçları 
+ 
 <ul class="wp-block-list">
- 	<li>Google aptalları</li>
- 	<li>Önbelleğe alınmış sayfalar</li>
- 	<li>Dizinli belgeler</li>
- 	<li>Site yapı analizi</li>
-</ul>
+ 	- Google aptalları 
+ 	- Önbelleğe alınmış sayfalar 
+ 	- Dizinli belgeler 
+ 	- Site yapı analizi 
+ 
 <ol class="wp-block-list">
- 	<li>Kamu Veritabanları</li>
-</ol>
+ 	- Kamu Veritabanları 
+ 
 <ul class="wp-block-list">
- 	<li>Sertifika şeffaflık günlükleri</li>
- 	<li>Alan adı kayıt kayıtları</li>
- 	<li>Ticaret sicilleri</li>
- 	<li>Patent veri tabanları</li>
-</ul>
- ### Pasif Keşifte Kullanılan Araçlar</h3>
+ 	- Sertifika şeffaflık günlükleri 
+ 	- Alan adı kayıt kayıtları 
+ 	- Ticaret sicilleri 
+ 	- Patent veri tabanları 
+ 
+ ### Pasif Keşifte Kullanılan Araçlar
 <ul class="wp-block-list">
- 	<li>İnternete bağlı cihaz bilgileri için Shodan</li>
- 	<li>E-posta ve alt alan adı toplama için TheHarvester</li>
- 	<li>İlişki haritalaması için Maltego</li>
- 	<li>Otomatik OSINT toplama için yeniden yapılandırma</li>
-</ul>
- ## Aktif Keşif</h2>
- ### Tanım ve Özellikler</h3>
+ 	- İnternete bağlı cihaz bilgileri için Shodan 
+ 	- E-posta ve alt alan adı toplama için TheHarvester 
+ 	- İlişki haritalaması için Maltego 
+ 	- Otomatik OSINT toplama için yeniden yapılandırma 
+ 
+ ## Aktif Keşif
+ ### Tanım ve Özellikler
 Aktif keşif hedef sistemle doğrudan etkileşimi içerir. Bu yöntem:
 <ul class="wp-block-list">
- 	<li>İzlenebilir ayak izleri bırakır</li>
- 	<li>Gerçek zamanlı bilgi sağlar</li>
- 	<li>Güvenlik sistemleri tarafından tespit edilebilir</li>
- 	<li>Daha ayrıntılı sonuçlar verir</li>
- 	<li>Bazı yasal riskler taşır</li>
-</ul>
- ### Yaygın Teknikler</h3>
+ 	- İzlenebilir ayak izleri bırakır 
+ 	- Gerçek zamanlı bilgi sağlar 
+ 	- Güvenlik sistemleri tarafından tespit edilebilir 
+ 	- Daha ayrıntılı sonuçlar verir 
+ 	- Bazı yasal riskler taşır 
+ 
+ ### Yaygın Teknikler
 <ol class="wp-block-list">
- 	<li>Ağ Taraması</li>
-</ol>
+ 	- Ağ Taraması 
+ 
 <ul class="wp-block-list">
- 	<li>Port tarama</li>
- 	<li>Hizmet sayımı</li>
- 	<li>Sürüm tespiti</li>
- 	<li>Banner kapma</li>
-</ul>
+ 	- Port tarama 
+ 	- Hizmet sayımı 
+ 	- Sürüm tespiti 
+ 	- Banner kapma 
+ 
 <ol class="wp-block-list">
- 	<li>Ana Bilgisayar Keşfi</li>
-</ol>
+ 	- Ana Bilgisayar Keşfi 
+ 
 <ul class="wp-block-list">
- 	<li>Ping taramaları</li>
- 	<li>ARP taraması</li>
- 	<li>TCP/UDP taraması</li>
- 	<li>ICMP araştırması</li>
-</ul>
+ 	- Ping taramaları 
+ 	- ARP taraması 
+ 	- TCP/UDP taraması 
+ 	- ICMP araştırması 
+ 
 <ol class="wp-block-list">
- 	<li>Güvenlik Açığı Değerlendirmesi</li>
-</ol>
+ 	- Güvenlik Açığı Değerlendirmesi 
+ 
 <ul class="wp-block-list">
- 	<li>Hizmet parmak izi</li>
- 	<li>Yapılandırma analizi</li>
- 	<li>Güvenlik testi</li>
- 	<li>Uygunluk denetimi</li>
-</ul>
+ 	- Hizmet parmak izi 
+ 	- Yapılandırma analizi 
+ 	- Güvenlik testi 
+ 	- Uygunluk denetimi 
+ 
 <ol class="wp-block-list">
- 	<li>Uygulama Analizi</li>
-</ol>
+ 	- Uygulama Analizi 
+ 
 <ul class="wp-block-list">
- 	<li>Web uygulaması taraması</li>
- 	<li>API testi</li>
- 	<li>Kimlik doğrulama araştırması</li>
- 	<li>Giriş doğrulama testi</li>
-</ul>
- ### Aktif Keşifte Kullanılan Araçlar</h3>
+ 	- Web uygulaması taraması 
+ 	- API testi 
+ 	- Kimlik doğrulama araştırması 
+ 	- Giriş doğrulama testi 
+ 
+ ### Aktif Keşifte Kullanılan Araçlar
 <ul class="wp-block-list">
- 	<li>Ağ taraması için Nmap</li>
- 	<li><span class="google-anno-t">Web sunucusu</span> analizi için Nikto</li>
- 	<li>Paket analizi için Wireshark</li>
- 	<li>Web uygulama testleri için Burp Suite</li>
-</ul>
- ## Temel Farklar</h2>
- ### 1. Tespit Riski</h3>
+ 	- Ağ taraması için Nmap 
+ 	- <span class="google-anno-t">Web sunucusu</span> analizi için Nikto 
+ 	- Paket analizi için Wireshark 
+ 	- Web uygulama testleri için Burp Suite 
+ 
+ ## Temel Farklar
+ ### 1. Tespit Riski
 Pasif Keşif:
 <ul class="wp-block-list">
- 	<li>Neredeyse tespit edilemez</li>
- 	<li>Doğrudan sistem etkileşimi yok</li>
- 	<li>Uyarıları tetikleme riski düşük</li>
- 	<li>Gizli operasyonlar için uygundur</li>
-</ul>
+ 	- Neredeyse tespit edilemez 
+ 	- Doğrudan sistem etkileşimi yok 
+ 	- Uyarıları tetikleme riski düşük 
+ 	- Gizli operasyonlar için uygundur 
+ 
 Aktif Keşif:
 <ul class="wp-block-list">
- 	<li>Kolayca tespit edilebilir</li>
- 	<li>Ağ trafiği oluşturur</li>
- 	<li>Güvenlik uyarılarını tetikleyebilir</li>
- 	<li>Sistem günlüklerini bırakır</li>
-</ul>
- ### 2. Bilgi Doğruluğu</h3>
+ 	- Kolayca tespit edilebilir 
+ 	- Ağ trafiği oluşturur 
+ 	- Güvenlik uyarılarını tetikleyebilir 
+ 	- Sistem günlüklerini bırakır 
+ 
+ ### 2. Bilgi Doğruluğu
 Pasif Keşif:
 <ul class="wp-block-list">
- 	<li>Güncel olmayan bilgiler içerebilir</li>
- 	<li>Kamuya açık verilerle sınırlıdır</li>
- 	<li>Daha az detaylı sonuçlar</li>
- 	<li>Doğrulama gerektirir</li>
-</ul>
+ 	- Güncel olmayan bilgiler içerebilir 
+ 	- Kamuya açık verilerle sınırlıdır 
+ 	- Daha az detaylı sonuçlar 
+ 	- Doğrulama gerektirir 
+ 
 Aktif Keşif:
 <ul class="wp-block-list">
- 	<li>Güncel bilgi sağlar</li>
- 	<li>Doğrudan sistem geri bildirimi</li>
- 	<li>Ayrıntılı teknik veriler</li>
- 	<li>Gerçek zamanlı sonuçlar</li>
-</ul>
- ### 3. Yasal Sonuçlar</h3>
+ 	- Güncel bilgi sağlar 
+ 	- Doğrudan sistem geri bildirimi 
+ 	- Ayrıntılı teknik veriler 
+ 	- Gerçek zamanlı sonuçlar 
+ 
+ ### 3. Yasal Sonuçlar
 Pasif Keşif:
 <ul class="wp-block-list">
- 	<li>Genel olarak yasal</li>
- 	<li>Kamuya açık bilgileri kullanır</li>
- 	<li>Düşük sorumluluk riski</li>
- 	<li>Minimum uyumluluk sorunları</li>
-</ul>
+ 	- Genel olarak yasal 
+ 	- Kamuya açık bilgileri kullanır 
+ 	- Düşük sorumluluk riski 
+ 	- Minimum uyumluluk sorunları 
+ 
 Aktif Keşif:
 <ul class="wp-block-list">
- 	<li>Yetkilendirme gerektirir</li>
- 	<li>Hizmet şartlarını ihlal edebilir</li>
- 	<li>Olası yasal sonuçlar</li>
- 	<li>Sıkı uyumluluk gereklilikleri</li>
-</ul>
- ### 4. Kaynak Gereksinimleri</h3>
+ 	- Yetkilendirme gerektirir 
+ 	- Hizmet şartlarını ihlal edebilir 
+ 	- Olası yasal sonuçlar 
+ 	- Sıkı uyumluluk gereklilikleri 
+ 
+ ### 4. Kaynak Gereksinimleri
 Pasif Keşif:
 <ul class="wp-block-list">
- 	<li>Minimum teknik kaynaklar</li>
- 	<li>Zaman yoğun</li>
- 	<li>Daha düşük beceri gereksinimi</li>
- 	<li>Maliyet etkin</li>
-</ul>
+ 	- Minimum teknik kaynaklar 
+ 	- Zaman yoğun 
+ 	- Daha düşük beceri gereksinimi 
+ 	- Maliyet etkin 
+ 
 Aktif Keşif:
 <ul class="wp-block-list">
- 	<li>Özel araçlara ihtiyaç var</li>
- 	<li>Daha hızlı sonuçlar</li>
- 	<li>Daha yüksek beceri gereksinimi</li>
- 	<li>Daha fazla kaynak yoğun</li>
-</ul>
- ### 5. Kullanım Örnekleri</h3>
+ 	- Özel araçlara ihtiyaç var 
+ 	- Daha hızlı sonuçlar 
+ 	- Daha yüksek beceri gereksinimi 
+ 	- Daha fazla kaynak yoğun 
+ 
+ ### 5. Kullanım Örnekleri
 Pasif Keşif:
 <ul class="wp-block-list">
- 	<li>İlk araştırma aşaması</li>
- 	<li>Rekabet analizi</li>
- 	<li>Tehdit istihbaratı</li>
- 	<li>Risk değerlendirmesi</li>
-</ul>
+ 	- İlk araştırma aşaması 
+ 	- Rekabet analizi 
+ 	- Tehdit istihbaratı 
+ 	- Risk değerlendirmesi 
+ 
 Aktif Keşif:
 <ul class="wp-block-list">
- 	<li>Güvenlik değerlendirmeleri</li>
- 	<li>Penetrasyon testi</li>
- 	<li>Güvenlik açığı taraması</li>
- 	<li>Ağ haritalama</li>
-</ul>
- ## En İyi Uygulamalar</h2>
- ### Her İki Yaklaşımın Birleştirilmesi</h3>
+ 	- Güvenlik değerlendirmeleri 
+ 	- Penetrasyon testi 
+ 	- Güvenlik açığı taraması 
+ 	- Ağ haritalama 
+ 
+ ## En İyi Uygulamalar
+ ### Her İki Yaklaşımın Birleştirilmesi
 <ol class="wp-block-list">
- 	<li>Pasif Keşif ile Başlayın</li>
-</ol>
+ 	- Pasif Keşif ile Başlayın 
+ 
 <ul class="wp-block-list">
- 	<li>Temel bilgileri toplayın</li>
- 	<li>Potansiyel hedefleri belirleyin</li>
- 	<li>Kapsamı anlayın</li>
- 	<li>Aktif fazı planla</li>
-</ul>
+ 	- Temel bilgileri toplayın 
+ 	- Potansiyel hedefleri belirleyin 
+ 	- Kapsamı anlayın 
+ 	- Aktif fazı planla 
+ 
 <ol class="wp-block-list">
- 	<li>Aktif Keşfe Geçiş</li>
-</ol>
+ 	- Aktif Keşfe Geçiş 
+ 
 <ul class="wp-block-list">
- 	<li>Pasif bulguları doğrulayın</li>
- 	<li>Ayrıntılı verileri toplayın</li>
- 	<li>Belirli sistemleri test edin</li>
- 	<li>Belge sonuçları</li>
-</ul>
- ### Belgeleme Gereksinimleri</h3>
+ 	- Pasif bulguları doğrulayın 
+ 	- Ayrıntılı verileri toplayın 
+ 	- Belirli sistemleri test edin 
+ 	- Belge sonuçları 
+ 
+ ### Belgeleme Gereksinimleri
 Aşağıdakilerin ayrıntılı kayıtlarını tutun:
 <ul class="wp-block-list">
- 	<li>Kullanılan yöntemler</li>
- 	<li>Toplanan bilgiler</li>
- 	<li>Faaliyetlerin zaman çizelgesi</li>
- 	<li>Bulgular ve anormallikler</li>
-</ul>
- ### Risk Yönetimi</h3>
+ 	- Kullanılan yöntemler 
+ 	- Toplanan bilgiler 
+ 	- Faaliyetlerin zaman çizelgesi 
+ 	- Bulgular ve anormallikler 
+ 
+ ### Risk Yönetimi
 Dikkate almak:
 <ul class="wp-block-list">
- 	<li>Yasal uyumluluk</li>
- 	<li>Yetkilendirme düzeyleri</li>
- 	<li>Güvenlik etkileri</li>
- 	<li>Veri koruma</li>
-</ul>
- ## Pratik Uygulamalar</h2>
- ### Güvenlik Değerlendirmeleri</h3>
+ 	- Yasal uyumluluk 
+ 	- Yetkilendirme düzeyleri 
+ 	- Güvenlik etkileri 
+ 	- Veri koruma 
+ 
+ ## Pratik Uygulamalar
+ ### Güvenlik Değerlendirmeleri
 <ol class="wp-block-list">
- 	<li>İlk Aşama</li>
-</ol>
+ 	- İlk Aşama 
+ 
 <ul class="wp-block-list">
- 	<li>Pasif tekniklerle başlayın</li>
- 	<li>Harita bilinen altyapı</li>
- 	<li>Anahtar sistemleri tanımlayın</li>
- 	<li>Ayrıntılı değerlendirme planlayın</li>
-</ul>
+ 	- Pasif tekniklerle başlayın 
+ 	- Harita bilinen altyapı 
+ 	- Anahtar sistemleri tanımlayın 
+ 	- Ayrıntılı değerlendirme planlayın 
+ 
 <ol class="wp-block-list">
- 	<li>Detaylı Analiz</li>
-</ol>
+ 	- Detaylı Analiz 
+ 
 <ul class="wp-block-list">
- 	<li>Aktif teknikler kullanın</li>
- 	<li>Bulguları doğrulayın</li>
- 	<li>Test güvenlik kontrolleri</li>
- 	<li>Belge güvenlik açıkları</li>
-</ul>
- ### Olay Müdahalesi</h3>
+ 	- Aktif teknikler kullanın 
+ 	- Bulguları doğrulayın 
+ 	- Test güvenlik kontrolleri 
+ 	- Belge güvenlik açıkları 
+ 
+ ### Olay Müdahalesi
 <ol class="wp-block-list">
- 	<li>Tehdit İstihbaratı</li>
-</ol>
+ 	- Tehdit İstihbaratı 
+ 
 <ul class="wp-block-list">
- 	<li>IOC'lerin pasif toplanması</li>
- 	<li>Tarihsel veri analizi</li>
- 	<li>Saldırı deseni tanıma</li>
- 	<li>Atıf araştırması</li>
-</ul>
+ 	- IOC'lerin pasif toplanması 
+ 	- Tarihsel veri analizi 
+ 	- Saldırı deseni tanıma 
+ 	- Atıf araştırması 
+ 
 <ol class="wp-block-list">
- 	<li>Aktif Tepki</li>
-</ol>
+ 	- Aktif Tepki 
+ 
 <ul class="wp-block-list">
- 	<li>Gerçek zamanlı izleme</li>
- 	<li>Sistem analizi</li>
- 	<li>Ağ denetimi</li>
- 	<li>Tehdit avcılığı</li>
-</ul>
- ## Sonuç</h2>
+ 	- Gerçek zamanlı izleme 
+ 	- Sistem analizi 
+ 	- Ağ denetimi 
+ 	- Tehdit avcılığı 
+ 
+ ## Sonuç
 Etkin ve pasif keşif arasındaki farkları anlamak, etkili güvenlik değerlendirmesi için çok önemlidir. Her yaklaşımın kapsamlı bir güvenlik programında yeri vardır:
 <ul class="wp-block-list">
- 	<li>Pasif keşif, tespit veya yasal sorunlar riski olmadan bir bilgi temeli sağlar</li>
- 	<li>Aktif keşif ayrıntılı, güncel bilgiler sunar ancak dikkatli planlama ve yetkilendirme gerektirir</li>
- 	<li>Birleştirilmiş yaklaşımlar genellikle en kapsamlı sonuçları verir</li>
- 	<li>Her iki yöntem için de uygun dokümantasyon ve risk yönetimi önemlidir</li>
-</ul>
+ 	- Pasif keşif, tespit veya yasal sorunlar riski olmadan bir bilgi temeli sağlar 
+ 	- Aktif keşif ayrıntılı, güncel bilgiler sunar ancak dikkatli planlama ve yetkilendirme gerektirir 
+ 	- Birleştirilmiş yaklaşımlar genellikle en kapsamlı sonuçları verir 
+ 	- Her iki yöntem için de uygun dokümantasyon ve risk yönetimi önemlidir 
+ 
 Güvenlik uzmanları bu yaklaşımlar arasında seçim yaparken hedeflerini, yasal gereklilikleri ve mevcut kaynakları dikkatlice değerlendirmelidir. En etkili güvenlik değerlendirmeleri genellikle bilgi toplamayı en üst düzeye çıkarırken riskleri ve olası olumsuz etkileri en aza indiren koordineli, iyi planlanmış bir şekilde her iki yöntemi de kullanır.

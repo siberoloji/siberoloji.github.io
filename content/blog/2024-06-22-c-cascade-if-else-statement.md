@@ -28,7 +28,7 @@ title: C++ Cascade if else statement
 url: /c-cascade-if-else-statement/
 ---
 
-  You can see the usage of cascade if-else statement example below.</p>
+  You can see the usage of cascade if-else statement example below.
  
 
 <!-- wp:code -->

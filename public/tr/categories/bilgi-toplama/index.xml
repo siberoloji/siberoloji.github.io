@@ -5,7 +5,7 @@
     <description>Recent content in Bilgi Toplama on Siberoloji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr</language>
-    <lastBuildDate>Sat, 02 Nov 2024 21:25:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2024 21:57:31 +0000</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/tr/categories/bilgi-toplama/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,6 +14,508 @@
         
       
     
+    
+    <item>
+      <title>Siber Güvenlik Keşif için WHOIS ve DNS Aramasını Kullanma</title>
+      <link>http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/</link>
+      <pubDate>Sat, 02 Nov 2024 21:57:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir. Bu araçların nasıl etkili bir şekilde kullanılacağını anlamak, ağ altyapısı ve potansiyel güvenlik açıkları hakkında önemli bilgiler sağlayabilir. Bu kapsamlı kılavuz, meşru güvenlik değerlendirmesi ve savunma amaçları için bu araçlardan nasıl yararlanılacağını araştırıyor.&lt;/p&gt;
+&lt;h2&gt;WHOIS&amp;rsquo;i Anlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whoisi-anlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whoisi-anlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS, kayıtlı alan adları, IP adresleri ve sahipleri hakkında bilgi sağlayan bir sorgu ve yanıt protokolüdür. İlk olarak 1980&amp;rsquo;lerde geliştirilen WHOIS, ağ yöneticileri, güvenlik uzmanları ve araştırmacılar için gerekli olmaya devam ediyor.&lt;/p&gt;
+&lt;h3&gt;Temel WHOIS Veri Noktaları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;temel-whois-veri-noktaları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#temel-whois-veri-noktalar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;WHOIS sorguları tipik olarak şunları ortaya çıkarır:&lt;/p&gt;
+&lt;p&gt;Kayıt Sahibi Bilgileri
+– Kuruluş Adı
+– İletişim bilgileri (genellikle gizlilik korumalı olsa da)
+– Fiziksel adres
+– E-posta adresi&lt;/p&gt;
+&lt;p&gt;İdari Ayrıntılar
+– Alan adı kayıt tarihi
+– Son kullanma tarihi
+– Son güncelleme tarihi
+– Kayıt şirketi bilgileri&lt;/p&gt;
+&lt;p&gt;Teknik Bilgiler
+– İsim sunucuları
+– DNSSEC durumu
+– Kayıt Durumu&lt;/p&gt;
+&lt;h2&gt;WHOIS Aramalarını Gerçekleştirme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whois-aramalarını-gerçekleştirme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whois-aramalar%c4%b1n%c4%b1-ger%c3%a7ekle%c5%9ftirme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Komut Satırı Yöntemi&lt;/p&gt;
+&lt;p&gt;whois example.com
+Çevrimiçi Hizmetler&lt;/p&gt;
+&lt;p&gt;Birkaç güvenilir çevrimiçi WHOIS hizmeti şunları içerir:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ICANN Araması&lt;/li&gt;
+&lt;li&gt;Whois.net&lt;/li&gt;
+&lt;li&gt;DomainTools&lt;/li&gt;
+&lt;li&gt;Bölgesel İnternet Kayıtları (RIR&amp;rsquo;ler) web siteleri&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;WHOIS Gizlilik Hususları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whois-gizlilik-hususları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whois-gizlilik-hususlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Modern WHOIS verileri genellikle gizlilik korumasını içerir:
+– GDPR uyumluluk önlemleri
+– Alan adı gizlilik hizmetleri
+– Redakte edilmiş iletişim bilgileri
+– Proxy kayıt hizmetleri&lt;/p&gt;
+&lt;h2&gt;DNS Arama Teknikleri&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dns-arama-teknikleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dns-arama-teknikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;DNS (Alan Adı Sistemi) aramaları, alan adı altyapısı ve yapılandırması hakkında ayrıntılı bilgi sağlar. Çeşitli DNS kayıt türlerini ve bunların etkilerini anlamak güvenlik değerlendirmesi için çok önemlidir.&lt;/p&gt;
+&lt;h3&gt;Temel DNS Kayıt Türleri&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;temel-dns-kayıt-türleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#temel-dns-kay%c4%b1t-t%c3%bcrleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A Kayıtlar (Adres)
+– Ana bilgisayar adlarını IPv4 adreslerine eşler&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ana bilgisayar konumlarını belirlemek için kritik
+– Ağ altyapısını ortaya çıkarabilir&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AAAA Kayıtları
+– Ana bilgisayar adlarını IPv6 adreslerine eşler
+– IPv6&amp;rsquo;nın benimsenmesi büyüdükçe giderek daha önemli hale geliyor
+– Güvenlik değerlendirmelerinde genellikle göz ardı edilir&lt;/p&gt;
+&lt;p&gt;MX Kayıtları (Mail Exchange)
+– Posta sunucularını tanımlar
+– Posta teslimine öncelik verir
+– E-posta altyapısını ortaya çıkarır&lt;/p&gt;
+&lt;p&gt;TXT Kayıtları
+– Metin bilgisi içerir
+– Genellikle SPF kayıtlarını içerir
+– Güvenlik politikalarını ortaya çıkarabilir&lt;/p&gt;
+&lt;p&gt;CNAME Kayıtları (Kanonik İsim)
+– Alan adı takma adlarını gösterir&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alanlar arasındaki ilişkileri ortaya çıkarır
+– Altyapıyı izlemek için kullanışlıdır&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NS Kayıtları (İsim Sunucu)
+– Yetkili ad sunucularını listeler
+– Etki alanı çözümü için kritik
+– Barındırma sağlayıcılarını gösterebilir&lt;/p&gt;
+&lt;h2&gt;DNS Arama Araçları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dns-arama-araçları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dns-arama-ara%c3%a7lar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Komut Satırı Araçları&lt;/p&gt;
+&lt;p&gt;dig (Alan Adı Bilgisi Groper)
+dig example.com ANY
+dig @8.8.8.8 example.com MX
+dig +short example.com NS
+nslookup
+nslookup -type=any example.com
+nslookup -type=mx example.com
+Ev sahibi
+host -a example.com
+host -t mx example.com
+Çevrimiçi DNS Araçları&lt;/p&gt;
+&lt;p&gt;DNS çöp kutusu
+Güvenlik Yolları
+GörünümDNS.info
+MX Araç Kutusu
+Güvenlik Uygulamaları&lt;/p&gt;
+&lt;h2&gt;Tehdit İstihbaratı&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tehdit-istihbaratı&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tehdit-istihbarat%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kötü amaçlı alan adlarını belirleme
+– Alan adı kayıt kalıplarını takip etme
+– Altyapı ilişkilerini ortaya çıkarmak&lt;/li&gt;
+&lt;li&gt;Olay müdahalesini destekleme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Etki Alanı Çömelme Tespiti&lt;/p&gt;
+&lt;p&gt;Bu araçlar aşağıdakileri tanımlamaya yardımcı olur:
+– Typosquatting girişimleri
+– Kimlik avı alanları
+– Marka taklitleri
+– Kötü amaçlı yönlendirmeler&lt;/p&gt;
+&lt;p&gt;Altyapı Analizi&lt;/p&gt;
+&lt;p&gt;Güvenlik uzmanları şunları yapabilir:
+– Harita ağı topolojisi&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kritik hizmetleri belirleyin
+– Güvenlik yapılandırmalarını değerlendirin
+– Değişiklikleri izleyin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Keşif için En İyi Uygulamalar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşif-için-en-iyi-uygulamalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fif-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Dokümantasyon&lt;/p&gt;
+&lt;p&gt;Ayrıntılı kayıtları tutun:
+– Sorgu sonuçları
+– Zaman içindeki değişiklikler
+– Olağandışı bulgular
+– Altyapı kalıpları&lt;/p&gt;
+&lt;p&gt;Düzenli İzleme&lt;/p&gt;
+&lt;p&gt;Aşağıdakiler için rutin kontrolleri uygulayın:
+– Alan Adı Sona Erme
+– DNS yapılandırma değişiklikleri
+– Yeni alt alanlar
+– Değiştirilmiş kayıtlar&lt;/p&gt;
+&lt;p&gt;Otomasyon Hususları&lt;/p&gt;
+&lt;p&gt;Senaryoları geliştirmek için:
+– Birden fazla alanı izleyin
+– Değişiklikleri takip edin
+– Raporlar oluşturun
+– Şüpheli değişikliklerde uyarı&lt;/p&gt;
+&lt;p&gt;Analiz Teknikleri&lt;/p&gt;
+&lt;p&gt;Desen Tanıma&lt;/p&gt;
+&lt;p&gt;Ara:
+– Ortak kayıt detayları
+– Benzer adlandırma kalıpları
+– Paylaşılan altyapı
+– Zamansal ilişkiler&lt;/p&gt;
+&lt;p&gt;Altyapı Haritalama&lt;/p&gt;
+&lt;p&gt;Haritalar oluşturun:
+– Alan ilişkileri
+– IP adresi kullanımı
+– Posta sunucu yapılandırmaları
+– İsim sunucusu kalıpları&lt;/p&gt;
+&lt;p&gt;Tarihsel Analiz&lt;/p&gt;
+&lt;p&gt;Değişiklikleri takip edin:
+– Kayıt detayları
+– DNS yapılandırmaları
+– IP atamaları
+– Güvenlik politikaları&lt;/p&gt;
+&lt;p&gt;Yasal ve Etik Hususlar&lt;/p&gt;
+&lt;p&gt;Uyumluluk Gereksinimleri&lt;/p&gt;
+&lt;p&gt;Aşağıdakilere uygunluğu sağlayın:
+– Gizlilik yasaları
+– Hizmet şartları
+– Kullanım politikaları
+– Veri koruma düzenlemeleri&lt;/p&gt;
+&lt;h2&gt;Sorumlu Kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sorumlu-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sorumlu-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Etik keşif uygulaması:
+– Gizliliğe saygı duymak
+– Hız limitlerini takip etmek
+– Belgeleme amaçları
+– Gizliliğin korunması&lt;/p&gt;
+&lt;p&gt;Araç Entegrasyonu&lt;/p&gt;
+&lt;p&gt;Güvenlik Bilgileri ve Olay Yönetimi (SIEM)&lt;/p&gt;
+&lt;p&gt;WHOIS ve DNS verilerini aşağıdakilerle entegre edin:
+– Günlük analizi
+– Uyarı sistemleri
+– Korelasyon kuralları
+– Tehdit tespiti&lt;/p&gt;
+&lt;p&gt;Otomatik Yanıt Sistemleri&lt;/p&gt;
+&lt;p&gt;Sistemleri şu şekilde yapılandırın:
+– Değişiklikleri izleyin
+– Şüpheli etkinlik uyarısı
+– Kayıt kalıplarını takip edin
+– Potansiyel tehditleri belirleyin&lt;/p&gt;
+&lt;h2&gt;Sonuç&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS ve DNS arama araçları, siber güvenlik keşif için temel olmaya devam ediyor. Doğru kullanıldığında, ağ altyapısı ve olası güvenlik endişeleri hakkında değerli bilgiler sağlarlar. Düzenli izleme, uygun dokümantasyon ve etik kullanım, bu araçların güvenlik programlarına etkili bir şekilde katkıda bulunmasını sağlar.&lt;/p&gt;
+&lt;p&gt;Gizlilik ve yasal gerekliliklere saygı duyarken bu araçlardan nasıl yararlanılacağını anlamak, güvenlik profesyonellerinin şunları yapmasını sağlar:
+– Kapsamlı değerlendirmeler yapın
+– Potansiyel tehditleri belirleyin
+– Altyapı değişikliklerini izleyin
+– Destek olay müdahalesi&lt;/p&gt;
+&lt;p&gt;İnternet gelişmeye devam ettikçe, bu temel ama güçlü araçlarla yeterliliği korumak, etkili siber güvenlik uygulamaları için gerekli olmaya devam ediyor.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Keşif Sırasında Yapılan Yaygın Hatalar ve Bunlardan Nasıl Kaçınılır</title>
+      <link>http://localhost:1313/tr/kesif-sirasinda-yapilan-yaygin-hatalar-ve-bunlardan-nasil-kacinilir/</link>
+      <pubDate>Sat, 02 Nov 2024 21:29:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tr/kesif-sirasinda-yapilan-yaygin-hatalar-ve-bunlardan-nasil-kacinilir/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Reconnaissance is a critical phase in security assessment that can make or break the effectiveness of subsequent security testing. However, many professionals make common mistakes that can compromise their results or create unnecessary risks. This comprehensive guide explores these mistakes and provides practical solutions to avoid them.&lt;/p&gt;
+&lt;h2&gt;1. Insufficient Planning&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-insufficient-planning&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-insufficient-planning&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;One of the most frequent errors is jumping into reconnaissance without proper planning. This often leads to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disorganized data collection&lt;/li&gt;
+&lt;li&gt;Missed critical information&lt;/li&gt;
+&lt;li&gt;Inefficient use of time&lt;/li&gt;
+&lt;li&gt;Incomplete documentation&lt;/li&gt;
+&lt;li&gt;Scope creep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create a Detailed Plan&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Define clear objectives&lt;/li&gt;
+&lt;li&gt;Establish scope boundaries&lt;/li&gt;
+&lt;li&gt;Set realistic timelines&lt;/li&gt;
+&lt;li&gt;Identify required resources&lt;/li&gt;
+&lt;li&gt;Document methodology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Use Structured Frameworks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow established methodologies&lt;/li&gt;
+&lt;li&gt;Create checklists&lt;/li&gt;
+&lt;li&gt;Set measurable goals&lt;/li&gt;
+&lt;li&gt;Define success criteria&lt;/li&gt;
+&lt;li&gt;Establish review points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. Over-Reliance on Automated Tools&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-over-reliance-on-automated-tools&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-over-reliance-on-automated-tools&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Many practitioners rely too heavily on automated tools, leading to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Missed context-specific information&lt;/li&gt;
+&lt;li&gt;False positives&lt;/li&gt;
+&lt;li&gt;Overlooked subtle patterns&lt;/li&gt;
+&lt;li&gt;Incomplete understanding&lt;/li&gt;
+&lt;li&gt;Cookie-cutter results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Balance Automation with Manual Analysis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify tool results manually&lt;/li&gt;
+&lt;li&gt;Understand tool limitations&lt;/li&gt;
+&lt;li&gt;Cross-reference findings&lt;/li&gt;
+&lt;li&gt;Use multiple tools&lt;/li&gt;
+&lt;li&gt;Document tool configurations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Develop Custom Scripts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Create targeted solutions&lt;/li&gt;
+&lt;li&gt;Adapt to specific needs&lt;/li&gt;
+&lt;li&gt;Maintain control over process&lt;/li&gt;
+&lt;li&gt;Enable flexibility&lt;/li&gt;
+&lt;li&gt;Improve efficiency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;3. Poor Documentation Practices&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-poor-documentation-practices&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-poor-documentation-practices&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Inadequate documentation can severely impact reconnaissance effectiveness:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Missing critical details&lt;/li&gt;
+&lt;li&gt;Inconsistent formatting&lt;/li&gt;
+&lt;li&gt;Disorganized findings&lt;/li&gt;
+&lt;li&gt;Lack of version control&lt;/li&gt;
+&lt;li&gt;Incomplete methodology records&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Implement Structured Documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Use standardized templates&lt;/li&gt;
+&lt;li&gt;Include metadata&lt;/li&gt;
+&lt;li&gt;Maintain chronological logs&lt;/li&gt;
+&lt;li&gt;Record methodologies&lt;/li&gt;
+&lt;li&gt;Document tool configurations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Regular Documentation Reviews&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify completeness&lt;/li&gt;
+&lt;li&gt;Check accuracy&lt;/li&gt;
+&lt;li&gt;Update outdated information&lt;/li&gt;
+&lt;li&gt;Maintain consistency&lt;/li&gt;
+&lt;li&gt;Enable collaboration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;4. Ignoring OSINT Sources&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-ignoring-osint-sources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-ignoring-osint-sources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Overlooking open-source intelligence can result in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Missed valuable information&lt;/li&gt;
+&lt;li&gt;Incomplete threat landscape
+understanding&lt;/li&gt;
+&lt;li&gt;Overlooked security issues&lt;/li&gt;
+&lt;li&gt;Limited context&lt;/li&gt;
+&lt;li&gt;Inefficient resource use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Develop Comprehensive OSINT Strategy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Identify relevant sources&lt;/li&gt;
+&lt;li&gt;Create a source hierarchy&lt;/li&gt;
+&lt;li&gt;Establish validation processes&lt;/li&gt;
+&lt;li&gt;Document findings&lt;/li&gt;
+&lt;li&gt;Regular source reviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Use Diverse Information Sources&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Social media&lt;/li&gt;
+&lt;li&gt;Public Records&lt;/li&gt;
+&lt;li&gt;News articles&lt;/li&gt;
+&lt;li&gt;Academic papers&lt;/li&gt;
+&lt;li&gt;Industry reports&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;5. Inadequate Scope Definition&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5-inadequate-scope-definition&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-inadequate-scope-definition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-4&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-4&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Poor scope definition often leads to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resource waste&lt;/li&gt;
+&lt;li&gt;Missing critical assets&lt;/li&gt;
+&lt;li&gt;Legal complications&lt;/li&gt;
+&lt;li&gt;Project delays&lt;/li&gt;
+&lt;li&gt;Incomplete assessments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-4&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-4&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Clear Scope Documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Define boundaries&lt;/li&gt;
+&lt;li&gt;List included assets&lt;/li&gt;
+&lt;li&gt;Document exclusions&lt;/li&gt;
+&lt;li&gt;Establish timeframes&lt;/li&gt;
+&lt;li&gt;Set limitations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Regular Scope Reviews&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Update as needed&lt;/li&gt;
+&lt;li&gt;Verify compliance&lt;/li&gt;
+&lt;li&gt;Address changes&lt;/li&gt;
+&lt;li&gt;Document modifications&lt;/li&gt;
+&lt;li&gt;Communicate updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;6. Neglecting Legal Considerations&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6-neglecting-legal-considerations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-neglecting-legal-considerations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-5&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Overlooking legal aspects can result in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Legal violations&lt;/li&gt;
+&lt;li&gt;Compliance issues&lt;/li&gt;
+&lt;li&gt;Unauthorized access&lt;/li&gt;
+&lt;li&gt;Privacy breaches&lt;/li&gt;
+&lt;li&gt;Reputation damage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-5&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Legal Framework Understanding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Review applicable laws&lt;/li&gt;
+&lt;li&gt;Understand regulations&lt;/li&gt;
+&lt;li&gt;Document permissions&lt;/li&gt;
+&lt;li&gt;Maintain compliance&lt;/li&gt;
+&lt;li&gt;Regular legal reviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Authorization Documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Obtain written permission&lt;/li&gt;
+&lt;li&gt;Define boundaries&lt;/li&gt;
+&lt;li&gt;Document limitations&lt;/li&gt;
+&lt;li&gt;Record communications&lt;/li&gt;
+&lt;li&gt;Maintain audit trails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;7. Poor Time Management&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;7-poor-time-management&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#7-poor-time-management&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-6&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Inefficient time management leads to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rushed analysis&lt;/li&gt;
+&lt;li&gt;Missed information&lt;/li&gt;
+&lt;li&gt;Incomplete documentation&lt;/li&gt;
+&lt;li&gt;Quality issues&lt;/li&gt;
+&lt;li&gt;Resource waste&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-6&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create Detailed Timelines&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Set realistic deadlines&lt;/li&gt;
+&lt;li&gt;Allow buffer time&lt;/li&gt;
+&lt;li&gt;Schedule regular reviews&lt;/li&gt;
+&lt;li&gt;Document progress&lt;/li&gt;
+&lt;li&gt;Adjust as needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Prioritize Activities&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on critical tasks&lt;/li&gt;
+&lt;li&gt;Allocate resources efficiently&lt;/li&gt;
+&lt;li&gt;Schedule complex tasks appropriately&lt;/li&gt;
+&lt;li&gt;Plan for contingencies&lt;/li&gt;
+&lt;li&gt;Regular progress reviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;8. Insufficient Validation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;8-insufficient-validation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#8-insufficient-validation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Common Mistakes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;common-mistakes-7&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-mistakes-7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Lack of proper validation results in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;False positives&lt;/li&gt;
+&lt;li&gt;Missed vulnerabilities&lt;/li&gt;
+&lt;li&gt;Incorrect conclusions&lt;/li&gt;
+&lt;li&gt;Wasted resources&lt;/li&gt;
+&lt;li&gt;Unreliable results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to Avoid&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;how-to-avoid-7&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-avoid-7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Implement Validation Processes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Cross-reference findings&lt;/li&gt;
+&lt;li&gt;Use multiple tools&lt;/li&gt;
+&lt;li&gt;Verify manually&lt;/li&gt;
+&lt;li&gt;Document validation steps&lt;/li&gt;
+&lt;li&gt;Regular result reviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Establish Quality Controls&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Peer reviews&lt;/li&gt;
+&lt;li&gt;Documentation checks&lt;/li&gt;
+&lt;li&gt;Tool validation&lt;/li&gt;
+&lt;li&gt;Result verification&lt;/li&gt;
+&lt;li&gt;Process audits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Best Practices for Success&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;best-practices-for-success&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#best-practices-for-success&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;1. Methodology Development&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-methodology-development&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-methodology-development&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Create a structured approach:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document processes&lt;/li&gt;
+&lt;li&gt;Establish standards&lt;/li&gt;
+&lt;li&gt;Define workflows&lt;/li&gt;
+&lt;li&gt;Create templates&lt;/li&gt;
+&lt;li&gt;Regular reviews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. Tool Selection&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-tool-selection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-tool-selection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Choose appropriate tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Evaluate capabilities&lt;/li&gt;
+&lt;li&gt;Consider limitations&lt;/li&gt;
+&lt;li&gt;Test thoroughly&lt;/li&gt;
+&lt;li&gt;Document configurations&lt;/li&gt;
+&lt;li&gt;Regular updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. Training and Skills Development&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-training-and-skills-development&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-training-and-skills-development&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Maintain expertise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regular training&lt;/li&gt;
+&lt;li&gt;Skill updates&lt;/li&gt;
+&lt;li&gt;Tool proficiency&lt;/li&gt;
+&lt;li&gt;Process understanding&lt;/li&gt;
+&lt;li&gt;Industry awareness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Avoiding common reconnaissance mistakes requires:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Careful planning&lt;/li&gt;
+&lt;li&gt;Proper documentation&lt;/li&gt;
+&lt;li&gt;Legal compliance&lt;/li&gt;
+&lt;li&gt;Efficient time management&lt;/li&gt;
+&lt;li&gt;Thorough validation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Success in reconnaissance depends on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understanding common pitfalls&lt;/li&gt;
+&lt;li&gt;Implementing preventive measures&lt;/li&gt;
+&lt;li&gt;Regular process reviews&lt;/li&gt;
+&lt;li&gt;Continuous improvement&lt;/li&gt;
+&lt;li&gt;Maintaining professional standards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By being aware of these common mistakes and implementing appropriate preventive measures, security professionals can significantly improve the quality and effectiveness of their reconnaissance efforts. Regular review and updates of processes, combined with proper documentation and validation, ensure consistent and reliable results while maintaining professional standards and legal compliance.&lt;/p&gt;
+&lt;p&gt;Remember that reconnaissance is not just about gathering information but about doing so efficiently, effectively, and ethically while maintaining high professional standards throughout the process.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>Etkili Keşif İçin Araçlar: Shodan, Maltego ve Google Dorking</title>
@@ -27,122 +529,113 @@
         &lt;p&gt;Siber güvenlik dünyasında keşif, bir hedefin sistemlerini, ağlarını ve olası güvenlik açıklarını anlamanın ilk adımıdır. Bilgi toplama olarak da bilinen keşif, etik hackerların bir hedefin ortamını haritalandırmasını, yapısını anlamasını ve zayıflıkları belirlemesini sağlar. Üç son derece etkili araç—Shodan, Maltego ve Google Dorking—keşif aşamasında istihbarat toplamada önemli bir rol oynar. Bu araçların her biri benzersiz içgörüler sunarak siber güvenlik uzmanlarına bilinçli kararlar almak için ihtiyaç duydukları verileri sağlar.&lt;/p&gt;
 &lt;p&gt;Bu yazımızda Shodan, Maltego ve Google Dorking&amp;rsquo;in keşif araçları olarak nasıl çalıştıklarını, özel özelliklerini ve bunları etkili bir şekilde kullanmak için en iyi uygulamaları inceleyeceğiz.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;1. Shodan: İnternete Bağlı Cihazlar İçin Arama Motoru&lt;/strong&gt;&lt;/h3&gt;
-Shodan sıklıkla &#34;Nesnelerin İnterneti için arama motoru&#34; (IoT) olarak anılır. Web sitelerini dizinleyen geleneksel arama motorlarının aksine, Shodan interneti kendisine bağlı cihazlar için tarar; örneğin sunucular, yönlendiriciler, web kameraları, akıllı televizyonlar ve endüstriyel kontrol sistemleri. Shodan, IP adresleri, bağlantı noktası yapılandırmaları, çalışan hizmetler ve güvenlik açıkları dahil olmak üzere bu cihazlar hakkında değerli veriler sağlar.
-&lt;h4&gt;&lt;strong&gt;Shodan Nasıl Çalışır?&lt;/strong&gt;&lt;/h4&gt;
-Shodan, IP adresleri ve bağlantı noktalarına göre internete bağlı cihazları aramak için web tarayıcılarını kullanır. Bu cihazları analiz ederek işletim sistemleri, açık bağlantı noktaları ve protokoller hakkında ayrıntılar toplar. Shodan daha sonra bu verileri kolayca aranabilir bir biçimde düzenleyerek siber güvenlik uzmanlarının ağ güvenliğini değerlendirmesi için erişilebilir hale getirir.
-&lt;h4&gt;&lt;strong&gt;Keşifte Shodan&#39;ın Kullanımları&lt;/strong&gt;&lt;/h4&gt;
-&lt;ol&gt;
- 	&lt;li&gt;&lt;strong&gt;Açık Portları ve Hizmetleri Belirleme&lt;/strong&gt;
-Shodan, hedef sistemde hangi portların açık olduğunu ve bu portlarda çalışan hizmetleri belirleyebilir. Bu bilgi, bilgisayar korsanları için giriş noktalarını ortaya çıkarabilir ve etik bilgisayar korsanlarının olası güvenlik açıklarını anlamalarına yardımcı olabilir.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Güvenlik Açığı Olan Cihazları Bulma&lt;/strong&gt;
-Shodan&#39;ın arama filtreleri kullanıcıların bilinen güvenlik açıklarına sahip cihazları bulmasını sağlar. Örneğin, etik bir bilgisayar korsanı popüler yazılımların eski sürümlerini çalıştıran sistemleri arayabilir ve güvenlik açığı değerlendirmesi için bir başlangıç ​​noktası sağlayabilir.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;IoT Güvenlik Risklerini Anlama&lt;/strong&gt;
-Birçok IoT cihazı varsayılan veya zayıf güvenlik yapılandırmaları nedeniyle savunmasızdır. Shodan, siber güvenlik uzmanlarının potansiyel güvenlik risklerini değerlendirmesine ve ele almasına olanak tanıyarak, savunmasız IoT cihazlarını belirlemeye yardımcı olur.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Ağ Altyapısının Haritalanması&lt;/strong&gt;
-Etik hackerlar, ilgili cihazları arayarak bir organizasyonun ağ altyapısının üst düzey bir haritasını oluşturabilir. Bu veriler, bağlı cihazlar hakkında ayrıntılar içerir ve olası saldırı yüzeylerinin belirlenmesine yardımcı olabilir.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;&lt;strong&gt;Shodan Arama Filtreleri ve Teknikleri&lt;/strong&gt;&lt;/h4&gt;
-Shodan&#39;ın gücü, kullanıcıların arama sonuçlarını konuma, porta, ürüne ve diğer parametrelere göre daraltmasına olanak tanıyan gelişmiş arama filtrelerinde yatmaktadır:
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;ana bilgisayar adı:&lt;/strong&gt; &lt;code&gt;hostname:example.com&lt;/code&gt; – Belirli bir ana bilgisayar adıyla ilişkili cihazları arar.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;port:&lt;/strong&gt; &lt;code&gt;port:80&lt;/code&gt; – Belirli açık porta göre cihazları filtreler.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;os:&lt;/strong&gt; &lt;code&gt;os:&#34;Windows 10&#34;&lt;/code&gt; – Belirli bir işletim sistemini çalıştıran cihazları bulur.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;ülke:&lt;/strong&gt; &lt;code&gt;country:&#34;US&#34;&lt;/code&gt; – Arama sonuçlarını belirli bir ülkede bulunan cihazlarla sınırlar.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;Shodan&#39;ı Kullanmak İçin En İyi Uygulamalar&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;Geniş Aramalarla Başlayın&lt;/strong&gt; : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın&lt;/strong&gt; : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Aramaları Yetkili IP Aralıklarıyla Sınırlandırın&lt;/strong&gt; : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;1. Shodan: İnternete Bağlı Cihazlar İçin Arama Motoru&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1-shodan-internete-bağlı-cihazlar-için-arama-motoru&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-shodan-internete-ba%c4%9fl%c4%b1-cihazlar-i%c3%a7in-arama-motoru&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Shodan sıklıkla &amp;ldquo;Nesnelerin İnterneti için arama motoru&amp;rdquo; (IoT) olarak anılır. Web sitelerini dizinleyen geleneksel arama motorlarının aksine, Shodan interneti kendisine bağlı cihazlar için tarar; örneğin sunucular, yönlendiriciler, web kameraları, akıllı televizyonlar ve endüstriyel kontrol sistemleri. Shodan, IP adresleri, bağlantı noktası yapılandırmaları, çalışan hizmetler ve güvenlik açıkları dahil olmak üzere bu cihazlar hakkında değerli veriler sağlar.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Shodan Nasıl Çalışır?&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;shodan-nasıl-çalışır&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#shodan-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Shodan, IP adresleri ve bağlantı noktalarına göre internete bağlı cihazları aramak için web tarayıcılarını kullanır. Bu cihazları analiz ederek işletim sistemleri, açık bağlantı noktaları ve protokoller hakkında ayrıntılar toplar. Shodan daha sonra bu verileri kolayca aranabilir bir biçimde düzenleyerek siber güvenlik uzmanlarının ağ güvenliğini değerlendirmesi için erişilebilir hale getirir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Keşifte Shodan&amp;rsquo;ın Kullanımları&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşifte-shodanın-kullanımları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fifte-shodan%c4%b1n-kullan%c4%b1mlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Açık Portları ve Hizmetleri Belirleme*** 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Shodan, hedef sistemde hangi portların açık olduğunu ve bu portlarda çalışan hizmetleri belirleyebilir. Bu bilgi, bilgisayar korsanları için giriş noktalarını ortaya çıkarabilir ve etik bilgisayar korsanlarının olası güvenlik açıklarını anlamalarına yardımcı olabilir.
+- &lt;em&gt;&lt;strong&gt;Güvenlik Açığı Olan Cihazları Bulma&lt;/strong&gt;&lt;/em&gt;
+Shodan&amp;rsquo;ın arama filtreleri kullanıcıların bilinen güvenlik açıklarına sahip cihazları bulmasını sağlar. Örneğin, etik bir bilgisayar korsanı popüler yazılımların eski sürümlerini çalıştıran sistemleri arayabilir ve güvenlik açığı değerlendirmesi için bir başlangıç ​​noktası sağlayabilir.
+- &lt;em&gt;&lt;strong&gt;IoT Güvenlik Risklerini Anlama&lt;/strong&gt;&lt;/em&gt;
+Birçok IoT cihazı varsayılan veya zayıf güvenlik yapılandırmaları nedeniyle savunmasızdır. Shodan, siber güvenlik uzmanlarının potansiyel güvenlik risklerini değerlendirmesine ve ele almasına olanak tanıyarak, savunmasız IoT cihazlarını belirlemeye yardımcı olur.
+- &lt;em&gt;&lt;strong&gt;Ağ Altyapısının Haritalanması&lt;/strong&gt;&lt;/em&gt;
+Etik hackerlar, ilgili cihazları arayarak bir organizasyonun ağ altyapısının üst düzey bir haritasını oluşturabilir. Bu veriler, bağlı cihazlar hakkında ayrıntılar içerir ve olası saldırı yüzeylerinin belirlenmesine yardımcı olabilir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Shodan Arama Filtreleri ve Teknikleri&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;shodan-arama-filtreleri-ve-teknikleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#shodan-arama-filtreleri-ve-teknikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Shodan&amp;rsquo;ın gücü, kullanıcıların arama sonuçlarını konuma, porta, ürüne ve diğer parametrelere göre daraltmasına olanak tanıyan gelişmiş arama filtrelerinde yatmaktadır:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- ***ana bilgisayar adı:***  &amp;lt;code&amp;gt;hostname:example.com&amp;lt;/code&amp;gt; – Belirli bir ana bilgisayar adıyla ilişkili cihazları arar. 
+- ***port:***  &amp;lt;code&amp;gt;port:80&amp;lt;/code&amp;gt; – Belirli açık porta göre cihazları filtreler. 
+- ***os:***  &amp;lt;code&amp;gt;os:&amp;quot;Windows 10&amp;quot;&amp;lt;/code&amp;gt; – Belirli bir işletim sistemini çalıştıran cihazları bulur. 
+- ***ülke:***  &amp;lt;code&amp;gt;country:&amp;quot;US&amp;quot;&amp;lt;/code&amp;gt; – Arama sonuçlarını belirli bir ülkede bulunan cihazlarla sınırlar. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Shodan&amp;rsquo;ı Kullanmak İçin En İyi Uygulamalar&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;shodanı-kullanmak-için-en-iyi-uygulamalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#shodan%c4%b1-kullanmak-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Geniş Aramalarla Başlayın***  : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın. 
+- ***Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın***  : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin. 
+- ***Aramaları Yetkili IP Aralıklarıyla Sınırlandırın***  : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun. 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;2. Maltego: Veri Görselleştirme ve Bağlantıları Eşleme Aracı&lt;/strong&gt;&lt;/h3&gt;
-Maltego, siber güvenlikte veri görselleştirme ve ilişki haritalama için kullanılan güçlü bir araçtır. Kullanıcıların birden fazla kaynaktan bilgi toplamasını, bağlantıları görselleştirmesini ve veri noktaları arasındaki ilişkileri belirlemesini sağlar. Maltego ile siber güvenlik uzmanları, alan adları, sosyal medya profilleri ve e-posta adresleri gibi verileri inceleyip analiz edebilir ve gizli bağlantıları ortaya çıkarmalarına yardımcı olabilir.
-&lt;h4&gt;&lt;strong&gt;Maltego Nasıl Çalışır?&lt;/strong&gt;&lt;/h4&gt;
-Maltego, çeşitli kaynaklardan veri toplamak ve bağlamak için &#34;dönüşümler&#34; kullanır. Her dönüşüm, bir etki alanında alt etki alanları aramak veya ilişkili IP adreslerini haritalamak gibi belirli bir görevi gerçekleştirir. Bu veriler daha sonra çeşitli varlıklar arasındaki bağlantıları gösteren bir grafikte görüntülenir ve bu da kalıpları ve ilişkileri tespit etmeyi kolaylaştırır.
-&lt;h4&gt;&lt;strong&gt;Keşifte Maltego&#39;nun Kullanımları&lt;/strong&gt;&lt;/h4&gt;
-&lt;ol&gt;
- 	&lt;li&gt;&lt;strong&gt;Sosyal Ağları Haritalama&lt;/strong&gt;
-Maltego, sosyal medyada bireyler, şirketler ve kuruluşlar arasındaki bağlantıları görselleştirebilir ve bu da onu sosyal mühendislik keşfi için değerli bir araç haline getirir.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Alan Adı İlişkilerini Keşfetme&lt;/strong&gt;
-Maltego, bir alan adının ilişkili IP adreslerini, alt alan adlarını ve e-posta adreslerini analiz ederek kullanıcıların hedefin çevrimiçi varlığı ve altyapısı hakkında kapsamlı bir profil oluşturmasına olanak tanır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Veri Noktaları Arasındaki İlişkileri Belirleme&lt;/strong&gt;
-Maltego&#39;nun dönüşümleri, etik hacker&#39;ların paylaşılan IP adresleri veya e-posta hesapları gibi görünüşte ilgisiz veri noktaları arasındaki ilişkileri haritalandırmasını sağlıyor.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Kamuya Açık Bilgilerin Ortaya Çıkarılması&lt;/strong&gt;
-Maltego, DNS kayıtları, WHOIS bilgileri ve sosyal medya gibi çeşitli kamuya açık kaynaklardan veri çekerek kullanıcıların hedef hakkında geniş yelpazede kamuya açık bilgileri toplamasına yardımcı olur.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;&lt;strong&gt;Popüler Maltego Dönüşümleri&lt;/strong&gt;&lt;/h4&gt;
-Maltego, farklı veri türlerini toplamak için çeşitli dönüşümler sağlar:
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;Alan Adından IP&#39;ye Dönüşüm&lt;/strong&gt; : Bir alan adıyla ilişkili IP adreslerini alır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;WHOIS Veri Dönüşümü&lt;/strong&gt; : Bir alan adına ait WHOIS bilgilerini çıkararak kayıt sahibi bilgileri gibi ayrıntıları ortaya çıkarır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Sosyal Ağ Dönüşümleri&lt;/strong&gt; : Twitter ve LinkedIn gibi sosyal medya platformlarındaki bağlantıları haritalandırır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Kişiden E-postaya Dönüşüm&lt;/strong&gt; : Bir kişiyle ilişkili olası e-posta adreslerini bulur.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;Maltego&#39;yu Kullanmak İçin En İyi Uygulamalar&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;Öncelikle Önemli Varlıklara Odaklanın&lt;/strong&gt; : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Derin Analiz İçin Çoklu Dönüşümler Kullanın&lt;/strong&gt; : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Verileri Görsel Olarak Organize Edin&lt;/strong&gt; : Maltego&#39;nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;2. Maltego: Veri Görselleştirme ve Bağlantıları Eşleme Aracı&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2-maltego-veri-görselleştirme-ve-bağlantıları-eşleme-aracı&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-maltego-veri-g%c3%b6rselle%c5%9ftirme-ve-ba%c4%9flant%c4%b1lar%c4%b1-e%c5%9fleme-arac%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Maltego, siber güvenlikte veri görselleştirme ve ilişki haritalama için kullanılan güçlü bir araçtır. Kullanıcıların birden fazla kaynaktan bilgi toplamasını, bağlantıları görselleştirmesini ve veri noktaları arasındaki ilişkileri belirlemesini sağlar. Maltego ile siber güvenlik uzmanları, alan adları, sosyal medya profilleri ve e-posta adresleri gibi verileri inceleyip analiz edebilir ve gizli bağlantıları ortaya çıkarmalarına yardımcı olabilir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Maltego Nasıl Çalışır?&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;maltego-nasıl-çalışır&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#maltego-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Maltego, çeşitli kaynaklardan veri toplamak ve bağlamak için &amp;ldquo;dönüşümler&amp;rdquo; kullanır. Her dönüşüm, bir etki alanında alt etki alanları aramak veya ilişkili IP adreslerini haritalamak gibi belirli bir görevi gerçekleştirir. Bu veriler daha sonra çeşitli varlıklar arasındaki bağlantıları gösteren bir grafikte görüntülenir ve bu da kalıpları ve ilişkileri tespit etmeyi kolaylaştırır.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Keşifte Maltego&amp;rsquo;nun Kullanımları&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşifte-maltegonun-kullanımları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fifte-maltegonun-kullan%c4%b1mlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Sosyal Ağları Haritalama*** 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Maltego, sosyal medyada bireyler, şirketler ve kuruluşlar arasındaki bağlantıları görselleştirebilir ve bu da onu sosyal mühendislik keşfi için değerli bir araç haline getirir.
+- &lt;em&gt;&lt;strong&gt;Alan Adı İlişkilerini Keşfetme&lt;/strong&gt;&lt;/em&gt;
+Maltego, bir alan adının ilişkili IP adreslerini, alt alan adlarını ve e-posta adreslerini analiz ederek kullanıcıların hedefin çevrimiçi varlığı ve altyapısı hakkında kapsamlı bir profil oluşturmasına olanak tanır.
+- &lt;em&gt;&lt;strong&gt;Veri Noktaları Arasındaki İlişkileri Belirleme&lt;/strong&gt;&lt;/em&gt;
+Maltego&amp;rsquo;nun dönüşümleri, etik hacker&amp;rsquo;ların paylaşılan IP adresleri veya e-posta hesapları gibi görünüşte ilgisiz veri noktaları arasındaki ilişkileri haritalandırmasını sağlıyor.
+- &lt;em&gt;&lt;strong&gt;Kamuya Açık Bilgilerin Ortaya Çıkarılması&lt;/strong&gt;&lt;/em&gt;
+Maltego, DNS kayıtları, WHOIS bilgileri ve sosyal medya gibi çeşitli kamuya açık kaynaklardan veri çekerek kullanıcıların hedef hakkında geniş yelpazede kamuya açık bilgileri toplamasına yardımcı olur.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Popüler Maltego Dönüşümleri&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;popüler-maltego-dönüşümleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pop%c3%bcler-maltego-d%c3%b6n%c3%bc%c5%9f%c3%bcmleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Maltego, farklı veri türlerini toplamak için çeşitli dönüşümler sağlar:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- ***Alan Adından IP&#39;ye Dönüşüm***  : Bir alan adıyla ilişkili IP adreslerini alır. 
+- ***WHOIS Veri Dönüşümü***  : Bir alan adına ait WHOIS bilgilerini çıkararak kayıt sahibi bilgileri gibi ayrıntıları ortaya çıkarır. 
+- ***Sosyal Ağ Dönüşümleri***  : Twitter ve LinkedIn gibi sosyal medya platformlarındaki bağlantıları haritalandırır. 
+- ***Kişiden E-postaya Dönüşüm***  : Bir kişiyle ilişkili olası e-posta adreslerini bulur. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Maltego&amp;rsquo;yu Kullanmak İçin En İyi Uygulamalar&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;maltegoyu-kullanmak-için-en-iyi-uygulamalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#maltegoyu-kullanmak-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Öncelikle Önemli Varlıklara Odaklanın***  : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin. 
+- ***Derin Analiz İçin Çoklu Dönüşümler Kullanın***  : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın. 
+- ***Verileri Görsel Olarak Organize Edin***  : Maltego&#39;nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın. 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;3. Google Dorking: Hedeflenen Bilgiler İçin Gelişmiş Arama Operatörlerinden Yararlanma&lt;/strong&gt;&lt;/h3&gt;
-Google Dorking, internetteki tipik arama sonuçlarından sıklıkla gizlenen bilgileri ortaya çıkarmak için gelişmiş arama operatörleri kullanan bir tekniktir. Arama operatörlerini birleştirerek, etik hacker&#39;lar hassas bilgiler içerebilecek dosyalar, dizinler ve diğer açık kaynaklar gibi web sitelerinden belirli bilgileri çıkarabilir.
-&lt;h4&gt;&lt;strong&gt;Google Dorking Nasıl Çalışır?&lt;/strong&gt;&lt;/h4&gt;
-Google Dorking, belirli veriler için hedefli aramalar gerçekleştirmek üzere Google&#39;ın gelişmiş arama yeteneklerine güvenir. &lt;code&gt;intitle:&lt;/code&gt;, &lt;code&gt;inurl:&lt;/code&gt;, &lt;code&gt;filetype:&lt;/code&gt;ve &lt;code&gt;site:&lt;/code&gt; gibi arama operatörlerini kullanarak kullanıcılar, arama sonuçlarını yalnızca belirli dosya türlerini, dizinleri veya web sitesi bölümlerini içerecek şekilde daraltabilir.
-&lt;h4&gt;&lt;strong&gt;Keşifte Google Dorking&#39;in Kullanımları&lt;/strong&gt;&lt;/h4&gt;
-&lt;ol&gt;
- 	&lt;li&gt;&lt;strong&gt;Hassas Dosya ve Dizinleri Bulma&lt;/strong&gt;
-Google Dorking, etik hackerların Excel sayfaları, PDF&#39;ler veya yapılandırma dosyaları gibi hassas bilgiler içerebilecek ifşa edilmiş dosyaları aramasına olanak tanır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Güvenli Olmayan Giriş Sayfalarını Bulma&lt;/strong&gt;
-Google Dorking ile kullanıcılar, HTTPS&#39;si olmayan veya iki faktörlü kimlik doğrulaması gerektiren güvenli olmayan giriş sayfalarını bulabilirler.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Açığa Çıkmış Yönetim Panellerini Belirleme&lt;/strong&gt;
-Birçok web sitesinde düzgün bir şekilde güvence altına alınmamış veya gizlenmemiş yönetim oturum açma sayfaları bulunur. Google Dorking bu sayfaları bulmanıza yardımcı olarak olası güvenlik açıklarına ilişkin içgörüler sağlayabilir.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;E-posta Adreslerini ve İletişim Bilgilerini Ortaya Çıkarma&lt;/strong&gt;
-Google Dorking, herkese açık iletişim sayfalarını veya dizinlerini arayarak e-posta adreslerini ortaya çıkarabilir; bu da sosyal mühendislik amaçları için yararlı olabilir.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;&lt;strong&gt;Yaygın Google Dorking Operatörleri&lt;/strong&gt;&lt;/h4&gt;
-Google Dorking için bazı yararlı operatörler şunlardır:
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;site:&lt;/strong&gt; &lt;code&gt;site:example.com&lt;/code&gt; – Arama sonuçlarını belirli bir etki alanıyla sınırlar.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;filetype:&lt;/strong&gt; &lt;code&gt;filetype:pdf&lt;/code&gt; – PDF&#39;ler gibi belirli dosya türlerini arar.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;intitle:&lt;/strong&gt; &lt;code&gt;intitle:&#34;index of&#34;&lt;/code&gt; – Başlığında belirli anahtar kelimeler bulunan sayfaları bulur; genellikle dizinleri bulmak için kullanılır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;inurl:&lt;/strong&gt; &lt;code&gt;inurl:login&lt;/code&gt; – URL&#39;de belirli anahtar sözcükleri olan sayfaları arar, genellikle giriş sayfalarını bulmak için kullanılır.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;strong&gt;Google Dorking için En İyi Uygulamalar&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
- 	&lt;li&gt;&lt;strong&gt;Operatörleri Birleştirme&lt;/strong&gt; : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Hassas Verilere Erişimden Kaçının&lt;/strong&gt; : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır.&lt;/li&gt;
- 	&lt;li&gt;&lt;strong&gt;Dikkatli ve İzinli Kullanın&lt;/strong&gt; : Tüm keşif araçlarında olduğu gibi, Google Dorking&#39;i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;3. Google Dorking: Hedeflenen Bilgiler İçin Gelişmiş Arama Operatörlerinden Yararlanma&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3-google-dorking-hedeflenen-bilgiler-için-gelişmiş-arama-operatörlerinden-yararlanma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-google-dorking-hedeflenen-bilgiler-i%c3%a7in-geli%c5%9fmi%c5%9f-arama-operat%c3%b6rlerinden-yararlanma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Google Dorking, internetteki tipik arama sonuçlarından sıklıkla gizlenen bilgileri ortaya çıkarmak için gelişmiş arama operatörleri kullanan bir tekniktir. Arama operatörlerini birleştirerek, etik hacker&amp;rsquo;lar hassas bilgiler içerebilecek dosyalar, dizinler ve diğer açık kaynaklar gibi web sitelerinden belirli bilgileri çıkarabilir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Google Dorking Nasıl Çalışır?&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;google-dorking-nasıl-çalışır&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#google-dorking-nas%c4%b1l-%c3%a7al%c4%b1%c5%9f%c4%b1r&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Google Dorking, belirli veriler için hedefli aramalar gerçekleştirmek üzere Google&amp;rsquo;ın gelişmiş arama yeteneklerine güvenir. &lt;code&gt;intitle:&lt;/code&gt;, &lt;code&gt;inurl:&lt;/code&gt;, &lt;code&gt;filetype:&lt;/code&gt;ve &lt;code&gt;site:&lt;/code&gt; gibi arama operatörlerini kullanarak kullanıcılar, arama sonuçlarını yalnızca belirli dosya türlerini, dizinleri veya web sitesi bölümlerini içerecek şekilde daraltabilir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Keşifte Google Dorking&amp;rsquo;in Kullanımları&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşifte-google-dorkingin-kullanımları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fifte-google-dorkingin-kullan%c4%b1mlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Hassas Dosya ve Dizinleri Bulma*** 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Google Dorking, etik hackerların Excel sayfaları, PDF&amp;rsquo;ler veya yapılandırma dosyaları gibi hassas bilgiler içerebilecek ifşa edilmiş dosyaları aramasına olanak tanır.
+- &lt;em&gt;&lt;strong&gt;Güvenli Olmayan Giriş Sayfalarını Bulma&lt;/strong&gt;&lt;/em&gt;
+Google Dorking ile kullanıcılar, HTTPS&amp;rsquo;si olmayan veya iki faktörlü kimlik doğrulaması gerektiren güvenli olmayan giriş sayfalarını bulabilirler.
+- &lt;em&gt;&lt;strong&gt;Açığa Çıkmış Yönetim Panellerini Belirleme&lt;/strong&gt;&lt;/em&gt;
+Birçok web sitesinde düzgün bir şekilde güvence altına alınmamış veya gizlenmemiş yönetim oturum açma sayfaları bulunur. Google Dorking bu sayfaları bulmanıza yardımcı olarak olası güvenlik açıklarına ilişkin içgörüler sağlayabilir.
+- &lt;em&gt;&lt;strong&gt;E-posta Adreslerini ve İletişim Bilgilerini Ortaya Çıkarma&lt;/strong&gt;&lt;/em&gt;
+Google Dorking, herkese açık iletişim sayfalarını veya dizinlerini arayarak e-posta adreslerini ortaya çıkarabilir; bu da sosyal mühendislik amaçları için yararlı olabilir.&lt;/p&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Yaygın Google Dorking Operatörleri&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yaygın-google-dorking-operatörleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#yayg%c4%b1n-google-dorking-operat%c3%b6rleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Google Dorking için bazı yararlı operatörler şunlardır:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- ***site:***  &amp;lt;code&amp;gt;site:example.com&amp;lt;/code&amp;gt; – Arama sonuçlarını belirli bir etki alanıyla sınırlar. 
+- ***filetype:***  &amp;lt;code&amp;gt;filetype:pdf&amp;lt;/code&amp;gt; – PDF&#39;ler gibi belirli dosya türlerini arar. 
+- ***intitle:***  &amp;lt;code&amp;gt;intitle:&amp;quot;index of&amp;quot;&amp;lt;/code&amp;gt; – Başlığında belirli anahtar kelimeler bulunan sayfaları bulur; genellikle dizinleri bulmak için kullanılır. 
+- ***inurl:***  &amp;lt;code&amp;gt;inurl:login&amp;lt;/code&amp;gt; – URL&#39;de belirli anahtar sözcükleri olan sayfaları arar, genellikle giriş sayfalarını bulmak için kullanılır. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;&lt;em&gt;&lt;strong&gt;Google Dorking için En İyi Uygulamalar&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;google-dorking-için-en-iyi-uygulamalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#google-dorking-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;- ***Operatörleri Birleştirme***  : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir. 
+- ***Hassas Verilere Erişimden Kaçının***  : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır. 
+- ***Dikkatli ve İzinli Kullanın***  : Tüm keşif araçlarında olduğu gibi, Google Dorking&#39;i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun. 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;Shodan, Maltego ve Google Dorking&#39;i karşılaştırma&lt;/strong&gt;&lt;/h3&gt;
-Bu araçların her biri keşif için benzersiz güçler ve yetenekler sunmaktadır:
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;Shodan, Maltego ve Google Dorking&amp;rsquo;i karşılaştırma&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;shodan-maltego-ve-google-dorkingi-karşılaştırma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#shodan-maltego-ve-google-dorkingi-kar%c5%9f%c4%b1la%c5%9ft%c4%b1rma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Bu araçların her biri keşif için benzersiz güçler ve yetenekler sunmaktadır:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Alet&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;En İyisi İçin&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Temel Özellikler&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;Sınırlamalar&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;***Alet*** &lt;/th&gt;
+&lt;th&gt;***En İyisi İçin*** &lt;/th&gt;
+&lt;th&gt;***Temel Özellikler*** &lt;/th&gt;
+&lt;th&gt;***Sınırlamalar*** &lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Şodan&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;***Şodan*** &lt;/td&gt;
 &lt;td&gt;Nesnelerin İnterneti (IoT) ve ağ cihazı keşfi&lt;/td&gt;
 &lt;td&gt;Bağlı cihazları arar, açık portları ortaya çıkarır&lt;/td&gt;
 &lt;td&gt;Genel cihazları ifşa edebilir ancak tüm özel sistemleri ifşa edemez&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Malta&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;***Malta*** &lt;/td&gt;
 &lt;td&gt;İlişki haritalama ve veri görselleştirme&lt;/td&gt;
 &lt;td&gt;Bağlantıları görselleştirir, birden fazla veri dönüşümü kullanır&lt;/td&gt;
 &lt;td&gt;Tam kullanım için dönüşüm bilgisi gerekir&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Google Dorking&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;***Google Dorking*** &lt;/td&gt;
 &lt;td&gt;Dosyaları, dizinleri ve genel kaynakları bulma&lt;/td&gt;
 &lt;td&gt;Hedeflenen bilgiler için gelişmiş arama operatörleri&lt;/td&gt;
 &lt;td&gt;Google tarafından indekslenen verilerle sınırlıdır&lt;/td&gt;
@@ -151,31 +644,30 @@ Bu araçların her biri keşif için benzersiz güçler ve yetenekler sunmaktad�
 &lt;/table&gt;
 Bu araçlar birbirini tamamlayarak keşif aşamasında bilgi toplamaya yönelik kapsamlı bir yaklaşım sunar.
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;Etik Hususlar ve Yasal Sınırlar&lt;/strong&gt;&lt;/h3&gt;
-Shodan, Maltego ve Google Dorking gibi keşif araçları güçlüdür, ancak sorumlu bir şekilde kullanılmaları gerekir. Sistemlerde yetkisiz keşif yapmak yasadışı olabilir ve gizlilik politikalarını ihlal edebilir. Etik hackerlar her zaman şunları yapmalıdır:
-&lt;ul&gt;
- 	&lt;li&gt;Verileri toplamadan önce hedef kuruluştan açık izin alın.&lt;/li&gt;
- 	&lt;li&gt;Penetrasyon testi sözleşmelerinde ve etik hackleme yönergelerinde belirtilen kurallara uyun.&lt;/li&gt;
- 	&lt;li&gt;Keşfedilen tüm güvenlik açıklarının ilgili taraflara bildirildiğinden emin olun.&lt;/li&gt;
-&lt;/ul&gt;
-Siber güvenlik uzmanları etik standartlara bağlı kalarak, yasal sınırları aşmadan bir kuruluşun güvenlik duruşunu iyileştirmek için bu araçları kullanabilirler.
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;Etik Hususlar ve Yasal Sınırlar&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;etik-hususlar-ve-yasal-sınırlar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#etik-hususlar-ve-yasal-s%c4%b1n%c4%b1rlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Shodan, Maltego ve Google Dorking gibi keşif araçları güçlüdür, ancak sorumlu bir şekilde kullanılmaları gerekir. Sistemlerde yetkisiz keşif yapmak yasadışı olabilir ve gizlilik politikalarını ihlal edebilir. Etik hackerlar her zaman şunları yapmalıdır:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Verileri toplamadan önce hedef kuruluştan açık izin alın. 
+- Penetrasyon testi sözleşmelerinde ve etik hackleme yönergelerinde belirtilen kurallara uyun. 
+- Keşfedilen tüm güvenlik açıklarının ilgili taraflara bildirildiğinden emin olun. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Siber güvenlik uzmanları etik standartlara bağlı kalarak, yasal sınırları aşmadan bir kuruluşun güvenlik duruşunu iyileştirmek için bu araçları kullanabilirler.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;Sonuç&lt;/strong&gt;&lt;/h3&gt;
-Shodan, Maltego ve Google Dorking, siber güvenlik profesyonellerinin sırt çantasındaki vazgeçilmez araçlardır. İnternete bağlı cihazlar, sosyal ağlar, web sitesi yapıları ve çok daha fazlası hakkında içgörüler sunarak etik hackerların güvenlik açıklarını belirlemesine ve olası tehditleri değerlendirmesine yardımcı olurlar. Bu araçlar birlikte kullanıldığında, hedef ortamın kapsamlı bir görünümünü sunarak etkili güvenlik değerlendirmeleri için temel oluşturan kapsamlı bir keşif aşamasına olanak tanır.
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;Sonuç&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Shodan, Maltego ve Google Dorking, siber güvenlik profesyonellerinin sırt çantasındaki vazgeçilmez araçlardır. İnternete bağlı cihazlar, sosyal ağlar, web sitesi yapıları ve çok daha fazlası hakkında içgörüler sunarak etik hackerların güvenlik açıklarını belirlemesine ve olası tehditleri değerlendirmesine yardımcı olurlar. Bu araçlar birlikte kullanıldığında, hedef ortamın kapsamlı bir görünümünü sunarak etkili güvenlik değerlendirmeleri için temel oluşturan kapsamlı bir keşif aşamasına olanak tanır.&lt;/p&gt;
 &lt;p&gt;Her aracın yeteneklerini ve sınırlamalarını anlamak, etik hackerların verileri verimli ve etik bir şekilde toplamasına, kuruluşları olası tehditlerden korumasına ve siber güvenlik savunmalarını güçlendirmesine olanak tanır. Doğru bilgiyle, bu keşif araçları kuruluşların saldırganlardan bir adım önde olmasını sağlayabilir.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h3&gt;&lt;strong&gt;Keşif Araçları Hakkında SSS: Shodan, Maltego ve Google Dorking&lt;/strong&gt;&lt;/h3&gt;
-&lt;strong&gt;1. Shodan&#39;ın temel amacı nedir?&lt;/strong&gt;
-Shodan, bağlı cihazları internette tarayarak, açığa çıkan portlar, servisler ve güvenlik açıkları hakkında bilgi sağlar.
-&lt;p&gt;&lt;strong&gt;2. Maltego keşifte nasıl yardımcı olur?&lt;/strong&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;Keşif Araçları Hakkında SSS: Shodan, Maltego ve Google Dorking&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşif-araçları-hakkında-sss-shodan-maltego-ve-google-dorking&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fif-ara%c3%a7lar%c4%b1-hakk%c4%b1nda-sss-shodan-maltego-ve-google-dorking&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;1. Shodan&amp;rsquo;ın temel amacı nedir?&lt;/strong&gt;&lt;/em&gt;
+Shodan, bağlı cihazları internette tarayarak, açığa çıkan portlar, servisler ve güvenlik açıkları hakkında bilgi sağlar.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2. Maltego keşifte nasıl yardımcı olur?&lt;/strong&gt;&lt;/em&gt;
 Maltego, veri noktaları arasındaki ilişkileri ve bağlantıları görselleştirerek ağ yapılarını ve sosyal ağları haritalamaya yardımcı olur.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3. Google Dorking nedir ve yasal mıdır?&lt;/strong&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;3. Google Dorking nedir ve yasal mıdır?&lt;/strong&gt;&lt;/em&gt;
 Google Dorking, çevrimiçi olarak belirli bilgileri bulmak için gelişmiş arama operatörlerinin kullanılmasıdır. Yasal olsa da, özellikle yetkili hedeflerle sorumlu bir şekilde kullanılmalıdır.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4. Shodan özel ağları tarayabilir mi?&lt;/strong&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;4. Shodan özel ağları tarayabilir mi?&lt;/strong&gt;&lt;/em&gt;
 Hayır, Shodan yalnızca internete bakan cihazları tarar. Özel ağların veya güvenlik duvarlarının arkasındaki cihazlara erişemez.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5. Bu keşif araçlarını kullanmak için en iyi uygulamalar nelerdir?&lt;/strong&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;5. Bu keşif araçlarını kullanmak için en iyi uygulamalar nelerdir?&lt;/strong&gt;&lt;/em&gt;
 En iyi uygulamalar, bu araçları yalnızca izinle kullanmayı, geniş aramalarla başlamayı ve hassas verilere doğrudan erişmekten kaçınmayı içerir.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;6. Keşif için etik izin neden önemlidir?&lt;/strong&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;6. Keşif için etik izin neden önemlidir?&lt;/strong&gt;&lt;/em&gt;
 Etik izin, yasal ve gizlilik standartlarına uyumu garanti eder ve siber güvenlik uzmanlarını yasal sonuçlardan korur.&lt;/p&gt;
 
       </description>

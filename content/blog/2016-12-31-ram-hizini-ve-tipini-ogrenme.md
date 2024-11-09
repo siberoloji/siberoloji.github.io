@@ -29,15 +29,15 @@ url: /tr/ram-hizini-ve-tipini-ogrenme/
 ---
 
 <!-- wp:paragraph -->
-<p>Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.</p>
+<p>Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
   
 
  
- ## free</h2>
+ ## free
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>free&nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.</p>
+<p>free&nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
   
 
 <!-- wp:preformatted -->
@@ -49,15 +49,15 @@ Swap:             0           0           0
 <!-- /wp:preformatted -->
 
 <!-- wp:paragraph -->
-<p>total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.</p>
+<p>total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.
   
 
  
- ## cat /proc/meminfo</h2>
+ ## cat /proc/meminfo
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>meminfo&nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&nbsp;free&nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.</p>
+<p>meminfo&nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&nbsp;free&nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.
   
 
 <!-- wp:preformatted -->
@@ -111,11 +111,11 @@ DirectMap1G:     3145728 kB</pre>
 <!-- /wp:preformatted -->
 
  
- ## vmstat -s</h2>
+ ## vmstat -s
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>vmstat -s&nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&nbsp;vmstat --help&nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.</p>
+<p>vmstat -s&nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&nbsp;vmstat --help&nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.
   
 
 <!-- wp:preformatted -->
@@ -149,19 +149,19 @@ DirectMap1G:     3145728 kB</pre>
 <!-- /wp:preformatted -->
 
  
- ## dmidecode -t 16</h2>
+ ## dmidecode -t 16
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>dmidecode -t 16&nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&nbsp;dmidecode&nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&nbsp;Maksimum Capacity: 32 GB&nbsp; ve&nbsp;Number of Devices : 4&nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.</p>
+<p>dmidecode -t 16&nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&nbsp;dmidecode&nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&nbsp;Maksimum Capacity: 32 GB&nbsp; ve&nbsp;Number of Devices : 4&nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.
   
 
 <!-- wp:paragraph -->
-<p><strong>Soru</strong>: O halde komut çıktısı neden böyle gösteriyor?</p>
+<p>***Soru*** : O halde komut çıktısı neden böyle gösteriyor?
   
 
 <!-- wp:paragraph -->
-<p><strong>Cevap</strong>: Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.</p>
+<p>***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.
   
 
 <!-- wp:preformatted -->
@@ -181,15 +181,15 @@ Number Of Devices: 4</pre>
 <!-- /wp:preformatted -->
 
  
- ## dmidecode -t 17</h2>
+ ## dmidecode -t 17
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2'de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&nbsp;Type: DDR3&nbsp; bölümü RAM tipi,&nbsp;Speed: 1600 Mhz&nbsp;ise RAM hızını göstermektedir.</p>
+<p>Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2'de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&nbsp;Type: DDR3&nbsp; bölümü RAM tipi,&nbsp;Speed: 1600 Mhz&nbsp;ise RAM hızını göstermektedir.
   
 
 <!-- wp:paragraph -->
-<p>BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.</p>
+<p>BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.
   
 
 <!-- wp:preformatted -->
@@ -285,11 +285,11 @@ Memory Device
 <!-- /wp:preformatted -->
 
  
- ## lshw</h2>
+ ## lshw
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Donanımınız ile ilgili detaylı bilgilerin tamamını&nbsp;lshw&nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&nbsp;memory&nbsp; bilgileri gösterilmiştir.&nbsp;sudo lshw&nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.</p>
+<p>Donanımınız ile ilgili detaylı bilgilerin tamamını&nbsp;lshw&nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&nbsp;memory&nbsp; bilgileri gösterilmiştir.&nbsp;sudo lshw&nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.
   
 
 <!-- wp:preformatted -->
@@ -309,5 +309,5 @@ H/W path         Device      Class          Description
 <!-- /wp:preformatted -->
 
 <!-- wp:paragraph -->
-<p>Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.</p>
+<p>Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.
   

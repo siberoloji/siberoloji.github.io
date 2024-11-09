@@ -26,11 +26,11 @@ url: /tr/linux-komut-satirindan-network-karti-yeniden-nasil-baslatilir/
   Linux işletim sisteminizde bir bağlantı problemi olduğunda veya IP ayarlarını değiştirdiğinizde ağ kartınızı tekrar başlatmanız gerekebilir. Bunu yapmak için bilgisayar veya sunucunuzu tekrar başlatmanıza gerek yoktur. Aşağıda açıkladığımız komutlar sayesinde ağ kartınızı kapatıp açabilirsiniz. 
  
 
-  <strong>UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!</strong> 
+  ***UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!***  
  
 
  
- ## Ağ kartını durdurmak için</h2>
+ ## Ağ kartını durdurmak için
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -38,7 +38,7 @@ url: /tr/linux-komut-satirindan-network-karti-yeniden-nasil-baslatilir/
 <!-- /wp:code -->
 
  
- ## Ağ kartını başlatmak için</h2>
+ ## Ağ kartını başlatmak için
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -49,7 +49,7 @@ url: /tr/linux-komut-satirindan-network-karti-yeniden-nasil-baslatilir/
  
 
  
- ## Ağ kartını Yeniden Başlatmak için</h2>
+ ## Ağ kartını Yeniden Başlatmak için
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -57,7 +57,7 @@ url: /tr/linux-komut-satirindan-network-karti-yeniden-nasil-baslatilir/
 <!-- /wp:code -->
 
  
- ## Ağ kartını durumunu kontrol etmek için</h2>
+ ## Ağ kartını durumunu kontrol etmek için
 <!-- /wp:heading -->
 
 <!-- wp:code -->

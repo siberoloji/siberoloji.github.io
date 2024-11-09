@@ -26,33 +26,33 @@ url: /tr/linux-mint-20-3-una-yayinlandi/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Hipnotix IPTV Oynatıcı</li>
+ <!-- wp:list-item -->
+- Hipnotix IPTV Oynatıcı 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Thingy Belge Yöneticisi</li>
+- Thingy Belge Yöneticisi 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yapışkan notlar</li>
+- Yapışkan notlar 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tema Değişiklikleri</li>
+- Tema Değişiklikleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Takvim Entegrasyonu</li>
+- Takvim Entegrasyonu 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sanat geliştirmeleri</li>
+- Sanat geliştirmeleri 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Sistem iyileştirmeleri</li>
-<!-- /wp:list-item --></ul>
+- Sistem iyileştirmeleri 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Yeniliklerin ve özelliklerin detaylarını Linux Mint duyuru sayfasından inceleyebilirsiniz. 

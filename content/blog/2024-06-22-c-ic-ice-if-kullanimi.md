@@ -25,7 +25,7 @@ title: C++ iç içe if kullanımı
 url: /tr/c-ic-ice-if-kullanimi/
 ---
 
-  Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.</p>
+  Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.
  
 
 <!-- wp:code -->

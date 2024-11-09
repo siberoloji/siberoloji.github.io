@@ -41,11 +41,10 @@ Galip havuçsuyu 3
 Osman karpuzsuyu 2
 Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;head&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongheadstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongheadstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;head&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;head&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#head&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;This command displays the desired number of lines from the beginning of the requested document. If no line count is given, the default value is 10 lines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : head [-number of lines to print] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : head [-number of lines to print] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;head examplefile.txt 
 Fatih elmasuyu 20
@@ -67,11 +66,10 @@ Suzan portakalsuyu 5
 Melih kavunsuyu 12
 Melih kavunsuyu 12&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;tail&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongtailstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongtailstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;tail&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tail&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tail&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The tail command scans and displays from the end of the document, just the opposite of the head command. Displays the desired number of lines of a document from the end. If no number of lines is given, the default is 10 lines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : tail [-number of lines to print] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : tail [-number of lines to print] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;tail examplefile.txt 
 Melih kavunsuyu 12
@@ -92,11 +90,10 @@ Galip havuçsuyu 3
 Osman karpuzsuyu 2
 Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;shorts&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongshortsstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongshortsstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;shorts&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;shorts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#shorts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;It sorts the given text input alphabetically by default. It is possible to sort by other criteria. You can check the man pages for detailed information.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : sort [-options] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : sort [-options] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sort examplefile.txt 
 Ayşe mangosuyu 7
@@ -113,11 +110,10 @@ Suzan portakalsuyu 12
 Suzan portakalsuyu 5
 Tarık portakalsuyu 9&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;nl&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongnlstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongnlstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;nl&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;nl&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#nl&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;This command takes its name from the initials of the expression number lines, which means number the lines.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : nl [-options] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : nl [-options] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;nl examplefile.txt 
      1	Fatih elmasuyu 20
@@ -152,11 +148,10 @@ Tarık portakalsuyu 9&lt;/code&gt;&lt;/pre&gt;
         13.Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;In the example above, two different command options are used. The -s option specifies that the . and space characters will be used as separators after the line number. The -w option specifies how much space will be left before the line number. Note that in this example, the options are entered in quotation marks.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;toilet&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongtoiletstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongtoiletstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;toilet&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;toilet&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#toilet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The wc command consists of the initials of the word count expression and gives the number of words in the entered text document. Unless otherwise specified, the number of lines, words, and letters are reported in the command output.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : wc [-options] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : wc [-options] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;wc examplefile.txt 
 13  39 255 examplefile.txt&lt;/code&gt;&lt;/pre&gt;
@@ -171,14 +166,13 @@ Tarık portakalsuyu 9&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;wc -lw examplefile.txt 
 13  39 examplefile.txt&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;cut&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongcutstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongcutstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;cut&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cut&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cut&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The Cut command allows you to take the columns you want from a file if your data is separated into columns, and copies the columns you want from CSV (Comma Separated Values) or texts consisting of space-separated values.&lt;/p&gt;
 &lt;p&gt;In the sample file we use, the data is separated by spaces. The first column indicates the name, the second column indicates the juice, and the third column indicates the quantity. If we want to get only the names from here, we can do this as follows.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-f&lt;/strong&gt; : It is the first letter of the Fields expression and indicates which fields we will take.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-d&lt;/strong&gt; : It is the first letter of the delimiter expression and specifies the character to be used to separate fields.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : cut [-options] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;-f&lt;/strong&gt;&lt;/em&gt;  : It is the first letter of the Fields expression and indicates which fields we will take.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;-d&lt;/strong&gt;&lt;/em&gt;  : It is the first letter of the delimiter expression and specifies the character to be used to separate fields.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : cut [-options] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cut -f 1 -d &#39; &#39; examplefile.txt 
 Fatih
@@ -212,14 +206,13 @@ Galip havuçsuyu
 Osman karpuzsuyu
 Betül narsuyu&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;sed&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongsedstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongsedstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;sed&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sed&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The sed command is created from the Stream Editor statement. It uses SEARCH-FIND/REPLACE logic. As can be seen from the explanation, it can be used to search for an expression and replace it with another expression. Although it has a number of other capabilities, we will show basic usage here.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : sed &amp;lt;expression&amp;gt; [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : sed &amp;lt;expression&amp;gt; [path]&lt;/p&gt;
 &lt;p&gt;Basically, expression has the following structure.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Expression&lt;/strong&gt; : s/searchexpression/newexpression/g&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The s&lt;/strong&gt; at the beginning   tells the sed command that the substitute operation will be performed. There are also other letters and operations.   The expression between the first and second apostrophe used after the letter &lt;strong&gt;s indicates what to search for, and the next part indicates what to replace with. The &lt;/strong&gt;&lt;strong&gt;g&lt;/strong&gt; statement at the end   indicates that the operation should be performed globally.  The letter &lt;strong&gt;g&lt;/strong&gt;  may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Expression&lt;/strong&gt;&lt;/em&gt;  : s/searchexpression/newexpression/g&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;The s&lt;/strong&gt;&lt;/em&gt;  at the beginning   tells the sed command that the substitute operation will be performed. There are also other letters and operations.   The expression between the first and second apostrophe used after the letter &lt;em&gt;&lt;strong&gt;s indicates what to search for, and the next part indicates what to replace with. The &lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;g&lt;/strong&gt;&lt;/em&gt;  statement at the end   indicates that the operation should be performed globally.  The letter &lt;em&gt;&lt;strong&gt;g&lt;/strong&gt;&lt;/em&gt;   may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s look at our file contents first.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cat examplefile.txt
@@ -255,10 +248,9 @@ Osman karpuzsuyu 2
 Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;sed searches and replaces entered expressions character by character, not word by word. In this case, you can also replace Suz with Ser. Sed searches case-sensitively by default. Instead of the expression to be searched, you can create different filters using [regular expressions], which we will explain in another section.&lt;/p&gt;
-&lt;p&gt;Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,  you can use &lt;strong&gt;the CTRL+c&lt;/strong&gt;  key combination to terminate the process.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;unique&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stronguniquestrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#stronguniquestrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,  you can use &lt;em&gt;&lt;strong&gt;the CTRL+c&lt;/strong&gt;&lt;/em&gt;   key combination to terminate the process.&lt;/p&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;unique&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;unique&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#unique&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The uniq command is created from the word unique, meaning one and only. Basically, what it does is to take only one of the repeating lines and disable the other repeats. Sometimes there may be double entries in records. In this case, it is used to correct and simplify records. The important thing to note here is that repeating lines must follow each other, one under the other. If there are repeating lines in the document but they are not one under the other, we will discuss what needs to be done to solve this situation in the article on Piping and Redirection.&lt;/p&gt;
 &lt;p&gt;You may have noticed that some lines in our sample file are repeated. Let&amp;rsquo;s extract these lines using uniq. Let&amp;rsquo;s first look at the original version of the file. As can be seen, Melih repeats the line twice and consecutively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -278,7 +270,7 @@ Osman karpuzsuyu 2
 Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;After executing the command, it can be seen that the repeated lines are cleared.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : uniq [options] [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : uniq [options] [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;uniq examplefile.txt 
 Fatih elmasuyu 20
@@ -294,12 +286,11 @@ Galip havuçsuyu 3
 Osman karpuzsuyu 2
 Betül narsuyu 14&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;&lt;strong&gt;crown&lt;/strong&gt;&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strongcrownstrongh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#strongcrownstrongh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;&lt;em&gt;&lt;strong&gt;crown&lt;/strong&gt;&lt;/em&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;crown&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#crown&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The tac command does the opposite of the cat command. It reads the bottom line of the file and writes it as the first line. Let us note that it is different from the Head and Tail commands.&lt;/p&gt;
 &lt;p&gt;Sometimes, while keeping records, new records may be written to the bottom of the file. You may want to see these new records at the top. In this case, using tac will make your job easier.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Format&lt;/strong&gt; : tac [path]&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Format&lt;/strong&gt;&lt;/em&gt;  : tac [path]&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;tac examplefile.txt 
 Betül narsuyu 14

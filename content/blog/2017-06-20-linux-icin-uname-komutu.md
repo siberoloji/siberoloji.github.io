@@ -41,18 +41,18 @@ url: /tr/linux-icin-uname-komutu/
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">uname --help
 
-Usage: uname <strong>[</strong>OPTION]...
+Usage: uname ***[*** OPTION]...
 Print certain system information.  With no OPTION, same as -s.
 
-  -a, --all                print all information, <strong>in </strong>the following order,
-                             except omit -p and -i <strong>if </strong>unknown:
+  -a, --all                print all information, ***in *** the following order,
+                             except omit -p and -i ***if *** unknown:
   -s, --kernel-name        print the kernel name
   -n, --nodename           print the network node hostname
   -r, --kernel-release     print the kernel release
   -v, --kernel-version     print the kernel version
   -m, --machine            print the machine hardware name
-  -p, --processor          print the processor type <strong>(</strong>non-portable<strong>)</strong>
-  -i, --hardware-platform  print the hardware platform <strong>(</strong>non-portable<strong>)</strong>
+  -p, --processor          print the processor type ***(*** non-portable***)*** 
+  -i, --hardware-platform  print the hardware platform ***(*** non-portable***)*** 
   -o, --operating-system   print the operating system
       --help     display this help and exit
       --version  output version information and exit
@@ -63,7 +63,7 @@ Print certain system information.  With no OPTION, same as -s.
  
 
  
-<h2 class="wp-block-heading" id="uname--a"><code>uname -a</code></h2>
+<h2 class="wp-block-heading" id="uname--a"><code>uname -a</code>
 <!-- /wp:heading -->
 
   Yazdırılabilecek tüm bilgi ekrana yazdırılır. 
@@ -76,7 +76,7 @@ Linux umut-X550JX 4.8.0-42-generic <em>#45~16.04.1-Ubuntu SMP Thu Mar 9 14:10:58
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--s"><code>uname -s</code></h2>
+<h2 class="wp-block-heading" id="uname--s"><code>uname -s</code>
 <!-- /wp:heading -->
 
   Kullanımda bulunan kernel adını ekrana yazdırır. 
@@ -89,7 +89,7 @@ Linux
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--n"><code>uname -n</code></h2>
+<h2 class="wp-block-heading" id="uname--n"><code>uname -n</code>
 <!-- /wp:heading -->
 
   Bilgisayarınızın, ağ içinde kullanılan host adını gösterir. 
@@ -102,7 +102,7 @@ umut-X550JX
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--r"><code>uname -r</code></h2>
+<h2 class="wp-block-heading" id="uname--r"><code>uname -r</code>
 <!-- /wp:heading -->
 
   Kullandımda olan Kernel ana dağıtım bilgisini gösterir. 
@@ -115,7 +115,7 @@ umut-X550JX
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--v"><code>uname -v</code></h2>
+<h2 class="wp-block-heading" id="uname--v"><code>uname -v</code>
 <!-- /wp:heading -->
 
   Kullanımda olan Kernel sürümünün dağıtıma özel sürüm bilgisini, yayınlandığı tarihle birlikte gösterir. 
@@ -128,7 +128,7 @@ umut-X550JX
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--m"><code>uname -m</code></h2>
+<h2 class="wp-block-heading" id="uname--m"><code>uname -m</code>
 <!-- /wp:heading -->
 
   Kullandığınız bilgisayarın donanım adını gösterir. 
@@ -141,7 +141,7 @@ x86_64
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--p"><code>uname -p</code></h2>
+<h2 class="wp-block-heading" id="uname--p"><code>uname -p</code>
 <!-- /wp:heading -->
 
   Kullanılan işlemcinin Mimari bilgisini gösterir. 
@@ -154,7 +154,7 @@ x86_64
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--i"><code>uname -i</code></h2>
+<h2 class="wp-block-heading" id="uname--i"><code>uname -i</code>
 <!-- /wp:heading -->
 
   Kullanılan bilgisayarın donanım platform bilgisini gösterir. 
@@ -167,7 +167,7 @@ x86_64
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="uname--o"><code>uname -o</code></h2>
+<h2 class="wp-block-heading" id="uname--o"><code>uname -o</code>
 <!-- /wp:heading -->
 
   İşletim sisteminin ne olduğunu gösterir. 
@@ -180,7 +180,7 @@ GNU/Linux
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="faydalı-kullanım">Faydalı Kullanım</h2>
+<h2 class="wp-block-heading" id="faydalı-kullanım">Faydalı Kullanım
 <!-- /wp:heading -->
 
   Bu komutun çıktılarını, değişken olarak atayarak, yazacağınız komut veya Bash script dosyalarında kullanabilirsiniz. 
@@ -188,11 +188,11 @@ GNU/Linux
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt-get install linux-headers-$(uname -r)
-<strong>[</strong>sudo<strong>]</strong> password <strong>for </strong>umut: 
+***[*** sudo***]***  password ***for *** umut: 
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-linux-headers-4.8.0-42-generic is already the newest version <strong>(</strong>4.8.0-42.45~16.04.1<strong>)</strong>.
+linux-headers-4.8.0-42-generic is already the newest version ***(*** 4.8.0-42.45~16.04.1***)*** .
 </code></pre>
 <!-- /wp:code -->
 

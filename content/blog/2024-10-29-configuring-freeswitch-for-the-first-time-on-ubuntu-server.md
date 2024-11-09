@@ -24,14 +24,14 @@ url: /configuring-freeswitch-for-the-first-time-on-ubuntu-server/
  
 
  
- ## Introduction to FreeSWITCH</h2>
+ ## Introduction to FreeSWITCH
 <!-- /wp:heading -->
 
   <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> is a scalable open-source telephony platform designed to route and interconnect various communication protocols using audio, video, text, or any other form of media. It's particularly popular for its flexibility and robust performance in handling VoIP communications. 
  
 
  
- ## Prerequisites</h2>
+ ## Prerequisites
 <!-- /wp:heading -->
 
   Before beginning the installation process, ensure your Ubuntu server meets these requirements: 
@@ -39,36 +39,36 @@ url: /configuring-freeswitch-for-the-first-time-on-ubuntu-server/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ubuntu 20.04 LTS or newer</li>
+- Ubuntu 20.04 LTS or newer 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Minimum 2GB RAM (4GB recommended)</li>
+- Minimum 2GB RAM (4GB recommended) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>At least 20GB of free disk space</li>
+- At least 20GB of free disk space 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Root or sudo access</li>
+- Root or sudo access 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Active internet connection</li>
+- Active internet connection 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Basic knowledge of the Linux command line</li>
-<!-- /wp:list-item --></ul>
+- Basic knowledge of the Linux command line 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Installation Process</h2>
+ ## Installation Process
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. System Preparation</h3>
+
+ ### 1. System Preparation
 <!-- /wp:heading -->
 
   First, update your system and install the necessary dependencies: 
@@ -81,12 +81,12 @@ sudo apt install -y git wget tar build-essential automake autoconf libtool \
     libncurses5-dev libexpat1-dev libgdbm-dev bison erlang-dev libesl-dev</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Installing FreeSWITCH</h3>
+
+ ### 2. Installing FreeSWITCH
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Clone the Repository</h4>
+<h4 class="wp-block-heading">Clone the Repository 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -96,7 +96,7 @@ cd freeswitch</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Prepare the Build</h4>
+<h4 class="wp-block-heading">Prepare the Build 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -104,7 +104,7 @@ cd freeswitch</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Configure the Build</h4>
+<h4 class="wp-block-heading">Configure the Build 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -116,7 +116,7 @@ cd freeswitch</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Compile and Install</h4>
+<h4 class="wp-block-heading">Compile and Install 
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -127,11 +127,11 @@ sudo make cd-moh-install</code></pre>
 <!-- /wp:code -->
 
  
- ## Initial Configuration</h2>
+ ## Initial Configuration
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Directory Structure Setup</h3>
+
+ ### 1. Directory Structure Setup
 <!-- /wp:heading -->
 
   FreeSWITCH's configuration files are located in <code>/usr/local/freeswitch/conf</code>. The main configuration hierarchy is: 
@@ -147,12 +147,12 @@ sudo make cd-moh-install</code></pre>
 └── vars.xml</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Basic Configuration Files</h3>
+
+ ### 2. Basic Configuration Files
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Configure vars.xml</h4>
+<h4 class="wp-block-heading">Configure vars.xml 
 <!-- /wp:heading -->
 
   The <code>vars.xml</code> file contains global variables. Edit it to match your environment: 
@@ -168,7 +168,7 @@ sudo make cd-moh-install</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Configure SIP Profiles</h4>
+<h4 class="wp-block-heading">Configure SIP Profiles 
 <!-- /wp:heading -->
 
   Navigate to <code>/usr/local/freeswitch/conf/sip_profiles/</code> and modify <code>internal.xml</code>: 
@@ -186,8 +186,8 @@ sudo make cd-moh-install</code></pre>
 &lt;/profile&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Setting Up Extensions</h3>
+
+ ### 3. Setting Up Extensions
 <!-- /wp:heading -->
 
   Create a new user directory file in <code>/usr/local/freeswitch/conf/directory/default/</code>: 
@@ -212,11 +212,11 @@ sudo make cd-moh-install</code></pre>
 <!-- /wp:code -->
 
  
- ## Security Configuration</h2>
+ ## Security Configuration
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Firewall Setup</h3>
+
+ ### 1. Firewall Setup
 <!-- /wp:heading -->
 
   Configure UFW to allow necessary ports: 
@@ -228,8 +228,8 @@ sudo ufw allow 5061/tcp  # SIP TLS
 sudo ufw allow 16384:32768/udp  # RTP</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. ACL Configuration</h3>
+
+ ### 2. ACL Configuration
 <!-- /wp:heading -->
 
   Modify <code>/usr/local/freeswitch/conf/autoload_configs/acl.conf.xml</code>: 
@@ -247,11 +247,11 @@ sudo ufw allow 16384:32768/udp  # RTP</code></pre>
 <!-- /wp:code -->
 
  
- ## Starting and Managing FreeSWITCH</h2>
+ ## Starting and Managing FreeSWITCH
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Create Systemd Service</h3>
+
+ ### 1. Create Systemd Service
 <!-- /wp:heading -->
 
   Create <code>/etc/systemd/system/freeswitch.service</code>: 
@@ -276,8 +276,8 @@ TimeoutStartSec=45
 WantedBy=multi-user.target</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Start and Enable FreeSWITCH</h3>
+
+ ### 2. Start and Enable FreeSWITCH
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -287,27 +287,27 @@ sudo systemctl enable freeswitch</code></pre>
 <!-- /wp:code -->
 
  
- ## Verification and Testing</h2>
+ ## Verification and Testing
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Check Service Status</h3>
+
+ ### 1. Check Service Status
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status freeswitch</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Connect to the FreeSWITCH Console</h3>
+
+ ### 2. Connect to the FreeSWITCH Console
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">/usr/local/freeswitch/bin/fs_cli</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Basic Testing Commands</h3>
+
+ ### 3. Basic Testing Commands
 <!-- /wp:heading -->
 
   Within fs_cli, try these commands: 
@@ -321,11 +321,11 @@ show registrations</code></pre>
 <!-- /wp:code -->
 
  
- ## Troubleshooting Common Issues</h2>
+ ## Troubleshooting Common Issues
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Log Analysis</h3>
+
+ ### 1. Log Analysis
 <!-- /wp:heading -->
 
   Monitor logs in real-time: 
@@ -335,52 +335,52 @@ show registrations</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">tail -f /usr/local/freeswitch/log/freeswitch.log</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Common Problems and Solutions</h3>
+
+ ### 2. Common Problems and Solutions
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">SIP Registration Issues</h4>
+<h4 class="wp-block-heading">SIP Registration Issues 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Check firewall rules</li>
+- Check firewall rules 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Verify SIP profile configuration</li>
+- Verify SIP profile configuration 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Ensure correct credentials in directory files</li>
-<!-- /wp:list-item --></ul>
+- Ensure correct credentials in directory files 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Audio Problems</h4>
+<h4 class="wp-block-heading">Audio Problems 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Verify RTP port range is open in the firewall</li>
+- Verify RTP port range is open in the firewall 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Check NAT settings in vars.xml</li>
+- Check NAT settings in vars.xml 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Confirm codec settings in the configuration</li>
-<!-- /wp:list-item --></ul>
+- Confirm codec settings in the configuration 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Performance Tuning</h2>
+ ## Performance Tuning
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. System Optimization</h3>
+
+ ### 1. System Optimization
 <!-- /wp:heading -->
 
   Add to <code>/etc/sysctl.conf</code>: 
@@ -393,8 +393,8 @@ net.ipv4.tcp_rmem=4096 87380 16777216
 net.ipv4.tcp_wmem=4096 65536 16777216</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. FreeSWITCH Settings</h3>
+
+ ### 2. FreeSWITCH Settings
 <!-- /wp:heading -->
 
   Modify <code>/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml</code>: 
@@ -408,7 +408,7 @@ net.ipv4.tcp_wmem=4096 65536 16777216</code></pre>
 <!-- /wp:code -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   This guide has covered the essential steps for setting up and configuring FreeSWITCH on Ubuntu Server. Remember that this is just the beginning – FreeSWITCH offers many more advanced features and configurations that you can explore based on your specific needs. 
@@ -419,24 +419,24 @@ net.ipv4.tcp_wmem=4096 65536 16777216</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Implementing complex dialplans</li>
+- Implementing complex dialplans 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Setting up conference bridges</li>
+- Setting up conference bridges 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Configuring voicemail systems</li>
+- Configuring voicemail systems 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Integrating with external services</li>
+- Integrating with external services 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Implementing WebRTC support</li>
-<!-- /wp:list-item --></ul>
+- Implementing WebRTC support 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Keep your FreeSWITCH installation up to date and regularly check the official documentation and community forums for best practices and security advisories. 

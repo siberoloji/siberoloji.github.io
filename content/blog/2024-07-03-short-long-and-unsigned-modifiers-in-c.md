@@ -25,11 +25,11 @@ title: Short long and unsigned modifiers in C++
 url: /short-long-and-unsigned-modifiers-in-c/
 ---
 
- <p>The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes.</p>
+ <p>The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes.
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -86,43 +86,43 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
- <p>The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the <code>&lt;iostream&gt;</code> header, enabling input and output operations, and uses the <code>std</code> namespace to avoid prefixing standard library entities with <code>std::</code>.</p>
+ <p>The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the <code>&lt;iostream&gt;</code> header, enabling input and output operations, and uses the <code>std</code> namespace to avoid prefixing standard library entities with <code>std::</code>.
  
 
- <p>The main function, which is the entry point of the program, declares variables of different data types, including integer types (<code>int</code>, <code>short int</code>, <code>long int</code>, <code>unsigned int</code>, <code>unsigned short int</code>, <code>unsigned long int</code>), character types (<code>char</code>, <code>unsigned char</code>, <code>signed char</code>), and floating-point types (<code>float</code>, <code>double</code>, <code>long double</code>). Each variable is accompanied by a comment indicating its range, which is crucial for understanding the limits of each data type.</p>
+ <p>The main function, which is the entry point of the program, declares variables of different data types, including integer types (<code>int</code>, <code>short int</code>, <code>long int</code>, <code>unsigned int</code>, <code>unsigned short int</code>, <code>unsigned long int</code>), character types (<code>char</code>, <code>unsigned char</code>, <code>signed char</code>), and floating-point types (<code>float</code>, <code>double</code>, <code>long double</code>). Each variable is accompanied by a comment indicating its range, which is crucial for understanding the limits of each data type.
  
 
- <p>For example, the integer variable declaration is shown as follows:</p>
+ <p>For example, the integer variable declaration is shown as follows:
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">int Integer; // Range: -2147483648 to 2147483647</code></pre>
 <!-- /wp:code -->
 
- <p>This line declares an <code>int</code> variable named <code>Integer</code>, which can store values from -2,147,483,648 to 2,147,483,647.</p>
+ <p>This line declares an <code>int</code> variable named <code>Integer</code>, which can store values from -2,147,483,648 to 2,147,483,647.
  
 
- <p>After declaring these variables, the program prints the size of each data type in bytes using the <code>sizeof</code> operator. This is a compile-time operator that determines the size, in bytes, of a variable or data type. The output is directed to the console using <code>cout</code>, which is part of the <code>iostream</code> library.</p>
+ <p>After declaring these variables, the program prints the size of each data type in bytes using the <code>sizeof</code> operator. This is a compile-time operator that determines the size, in bytes, of a variable or data type. The output is directed to the console using <code>cout</code>, which is part of the <code>iostream</code> library.
  
 
- <p>For instance, the size of the <code>int</code> data type is printed with the following line:</p>
+ <p>For instance, the size of the <code>int</code> data type is printed with the following line:
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">cout &lt;&lt;"The size of int is " &lt;&lt;sizeof(Integer) &lt;&lt; " bytes" &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
- <p>This line outputs the size of an <code>int</code> in bytes, helping to understand how much memory each data type consumes.</p>
+ <p>This line outputs the size of an <code>int</code> in bytes, helping to understand how much memory each data type consumes.
  
 
- <p>The program concludes by returning 0, indicating successful execution. This code snippet is a practical demonstration for beginners to understand the sizes of different data types in C++, which is fundamental in choosing the appropriate type for variables based on the range of values they are expected to hold and the memory efficiency.</p>
+ <p>The program concludes by returning 0, indicating successful execution. This code snippet is a practical demonstration for beginners to understand the sizes of different data types in C++, which is fundamental in choosing the appropriate type for variables based on the range of values they are expected to hold and the memory efficiency.
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

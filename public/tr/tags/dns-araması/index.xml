@@ -25,10 +25,10 @@
         
         
         &lt;p&gt;Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir. Bu araçların nasıl etkili bir şekilde kullanılacağını anlamak, ağ altyapısı ve potansiyel güvenlik açıkları hakkında önemli bilgiler sağlayabilir. Bu kapsamlı kılavuz, meşru güvenlik değerlendirmesi ve savunma amaçları için bu araçlardan nasıl yararlanılacağını araştırıyor.&lt;/p&gt;
-&lt;h2&gt;WHOIS&#39;i Anlama&lt;/h2&gt;
-WHOIS, kayıtlı alan adları, IP adresleri ve sahipleri hakkında bilgi sağlayan bir sorgu ve yanıt protokolüdür. İlk olarak 1980&#39;lerde geliştirilen WHOIS, ağ yöneticileri, güvenlik uzmanları ve araştırmacılar için gerekli olmaya devam ediyor.
-&lt;h3&gt;Temel WHOIS Veri Noktaları&lt;/h3&gt;
-WHOIS sorguları tipik olarak şunları ortaya çıkarır:
+&lt;h2&gt;WHOIS&amp;rsquo;i Anlama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whoisi-anlama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whoisi-anlama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS, kayıtlı alan adları, IP adresleri ve sahipleri hakkında bilgi sağlayan bir sorgu ve yanıt protokolüdür. İlk olarak 1980&amp;rsquo;lerde geliştirilen WHOIS, ağ yöneticileri, güvenlik uzmanları ve araştırmacılar için gerekli olmaya devam ediyor.&lt;/p&gt;
+&lt;h3&gt;Temel WHOIS Veri Noktaları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;temel-whois-veri-noktaları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#temel-whois-veri-noktalar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;WHOIS sorguları tipik olarak şunları ortaya çıkarır:&lt;/p&gt;
 &lt;p&gt;Kayıt Sahibi Bilgileri
 – Kuruluş Adı
 – İletişim bilgileri (genellikle gizlilik korumalı olsa da)
@@ -43,30 +43,32 @@ WHOIS sorguları tipik olarak şunları ortaya çıkarır:
 – İsim sunucuları
 – DNSSEC durumu
 – Kayıt Durumu&lt;/p&gt;
-&lt;h2&gt;WHOIS Aramalarını Gerçekleştirme&lt;/h2&gt;
-Komut Satırı Yöntemi
+&lt;h2&gt;WHOIS Aramalarını Gerçekleştirme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whois-aramalarını-gerçekleştirme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whois-aramalar%c4%b1n%c4%b1-ger%c3%a7ekle%c5%9ftirme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Komut Satırı Yöntemi&lt;/p&gt;
 &lt;p&gt;whois example.com
 Çevrimiçi Hizmetler&lt;/p&gt;
-&lt;p&gt;Birkaç güvenilir çevrimiçi WHOIS hizmeti şunları içerir:
-– ICANN Araması&lt;/p&gt;
+&lt;p&gt;Birkaç güvenilir çevrimiçi WHOIS hizmeti şunları içerir:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Whois.net
-– DomainTools
-– Bölgesel İnternet Kayıtları (RIR&amp;rsquo;ler) web siteleri&lt;/li&gt;
+&lt;li&gt;ICANN Araması&lt;/li&gt;
+&lt;li&gt;Whois.net&lt;/li&gt;
+&lt;li&gt;DomainTools&lt;/li&gt;
+&lt;li&gt;Bölgesel İnternet Kayıtları (RIR&amp;rsquo;ler) web siteleri&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;WHOIS Gizlilik Hususları&lt;/h2&gt;
-Modern WHOIS verileri genellikle gizlilik korumasını içerir:
+&lt;h2&gt;WHOIS Gizlilik Hususları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;whois-gizlilik-hususları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whois-gizlilik-hususlar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Modern WHOIS verileri genellikle gizlilik korumasını içerir:
 – GDPR uyumluluk önlemleri
 – Alan adı gizlilik hizmetleri
 – Redakte edilmiş iletişim bilgileri
-– Proxy kayıt hizmetleri
-&lt;h2&gt;DNS Arama Teknikleri&lt;/h2&gt;
-DNS (Alan Adı Sistemi) aramaları, alan adı altyapısı ve yapılandırması hakkında ayrıntılı bilgi sağlar. Çeşitli DNS kayıt türlerini ve bunların etkilerini anlamak güvenlik değerlendirmesi için çok önemlidir.
-&lt;h3&gt;Temel DNS Kayıt Türleri&lt;/h3&gt;
-A Kayıtlar (Adres)
-– Ana bilgisayar adlarını IPv4 adreslerine eşler
-- Ana bilgisayar konumlarını belirlemek için kritik
-– Ağ altyapısını ortaya çıkarabilir
+– Proxy kayıt hizmetleri&lt;/p&gt;
+&lt;h2&gt;DNS Arama Teknikleri&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dns-arama-teknikleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dns-arama-teknikleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;DNS (Alan Adı Sistemi) aramaları, alan adı altyapısı ve yapılandırması hakkında ayrıntılı bilgi sağlar. Çeşitli DNS kayıt türlerini ve bunların etkilerini anlamak güvenlik değerlendirmesi için çok önemlidir.&lt;/p&gt;
+&lt;h3&gt;Temel DNS Kayıt Türleri&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;temel-dns-kayıt-türleri&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#temel-dns-kay%c4%b1t-t%c3%bcrleri&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A Kayıtlar (Adres)
+– Ana bilgisayar adlarını IPv4 adreslerine eşler&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ana bilgisayar konumlarını belirlemek için kritik
+– Ağ altyapısını ortaya çıkarabilir&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;AAAA Kayıtları
 – Ana bilgisayar adlarını IPv6 adreslerine eşler
 – IPv6&amp;rsquo;nın benimsenmesi büyüdükçe giderek daha önemli hale geliyor
@@ -89,8 +91,8 @@ A Kayıtlar (Adres)
 – Yetkili ad sunucularını listeler
 – Etki alanı çözümü için kritik
 – Barındırma sağlayıcılarını gösterebilir&lt;/p&gt;
-&lt;h2&gt;DNS Arama Araçları&lt;/h2&gt;
-Komut Satırı Araçları
+&lt;h2&gt;DNS Arama Araçları&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dns-arama-araçları&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dns-arama-ara%c3%a7lar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Komut Satırı Araçları&lt;/p&gt;
 &lt;p&gt;dig (Alan Adı Bilgisi Groper)
 dig example.com ANY
 dig @8.8.8.8 example.com MX
@@ -107,12 +109,14 @@ Güvenlik Yolları
 GörünümDNS.info
 MX Araç Kutusu
 Güvenlik Uygulamaları&lt;/p&gt;
-&lt;h2&gt;Tehdit İstihbaratı&lt;/h2&gt;
-WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:
-- Kötü amaçlı alan adlarını belirleme
+&lt;h2&gt;Tehdit İstihbaratı&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tehdit-istihbaratı&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tehdit-istihbarat%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kötü amaçlı alan adlarını belirleme
 – Alan adı kayıt kalıplarını takip etme
-– Altyapı ilişkilerini ortaya çıkarmak
-- Olay müdahalesini destekleme
+– Altyapı ilişkilerini ortaya çıkarmak&lt;/li&gt;
+&lt;li&gt;Olay müdahalesini destekleme&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Etki Alanı Çömelme Tespiti&lt;/p&gt;
 &lt;p&gt;Bu araçlar aşağıdakileri tanımlamaya yardımcı olur:
 – Typosquatting girişimleri
@@ -127,8 +131,8 @@ WHOIS ve DNS verileri tehdit istihbaratına şu şekilde katkıda bulunur:
 – Güvenlik yapılandırmalarını değerlendirin
 – Değişiklikleri izleyin&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Keşif için En İyi Uygulamalar&lt;/h3&gt;
-Dokümantasyon
+&lt;h3&gt;Keşif için En İyi Uygulamalar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keşif-için-en-iyi-uygulamalar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ke%c5%9fif-i%c3%a7in-en-iyi-uygulamalar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Dokümantasyon&lt;/p&gt;
 &lt;p&gt;Ayrıntılı kayıtları tutun:
 – Sorgu sonuçları
 – Zaman içindeki değişiklikler
@@ -172,12 +176,12 @@ Dokümantasyon
 – Hizmet şartları
 – Kullanım politikaları
 – Veri koruma düzenlemeleri&lt;/p&gt;
-&lt;h2&gt;Sorumlu Kullanım&lt;/h2&gt;
-Etik keşif uygulaması:
+&lt;h2&gt;Sorumlu Kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sorumlu-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sorumlu-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Etik keşif uygulaması:
 – Gizliliğe saygı duymak
 – Hız limitlerini takip etmek
 – Belgeleme amaçları
-– Gizliliğin korunması
+– Gizliliğin korunması&lt;/p&gt;
 &lt;p&gt;Araç Entegrasyonu&lt;/p&gt;
 &lt;p&gt;Güvenlik Bilgileri ve Olay Yönetimi (SIEM)&lt;/p&gt;
 &lt;p&gt;WHOIS ve DNS verilerini aşağıdakilerle entegre edin:
@@ -191,8 +195,8 @@ Etik keşif uygulaması:
 – Şüpheli etkinlik uyarısı
 – Kayıt kalıplarını takip edin
 – Potansiyel tehditleri belirleyin&lt;/p&gt;
-&lt;h2&gt;Sonuç&lt;/h2&gt;
-WHOIS ve DNS arama araçları, siber güvenlik keşif için temel olmaya devam ediyor. Doğru kullanıldığında, ağ altyapısı ve olası güvenlik endişeleri hakkında değerli bilgiler sağlarlar. Düzenli izleme, uygun dokümantasyon ve etik kullanım, bu araçların güvenlik programlarına etkili bir şekilde katkıda bulunmasını sağlar.
+&lt;h2&gt;Sonuç&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sonuç&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sonu%c3%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;WHOIS ve DNS arama araçları, siber güvenlik keşif için temel olmaya devam ediyor. Doğru kullanıldığında, ağ altyapısı ve olası güvenlik endişeleri hakkında değerli bilgiler sağlarlar. Düzenli izleme, uygun dokümantasyon ve etik kullanım, bu araçların güvenlik programlarına etkili bir şekilde katkıda bulunmasını sağlar.&lt;/p&gt;
 &lt;p&gt;Gizlilik ve yasal gerekliliklere saygı duyarken bu araçlardan nasıl yararlanılacağını anlamak, güvenlik profesyonellerinin şunları yapmasını sağlar:
 – Kapsamlı değerlendirmeler yapın
 – Potansiyel tehditleri belirleyin

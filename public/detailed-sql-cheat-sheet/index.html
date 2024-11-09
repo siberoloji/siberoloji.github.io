@@ -11,53 +11,52 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Detailed SQL Cheat Sheet – Siberoloji</title>
-  <meta name="description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
-SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SELECT column1, column2 FROM table; WHERE: Filters records. SELECT * FROM table WHERE condition; INSERT INTO: Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); UPDATE: Modifies existing records. UPDATE table SET column1 = value WHERE condition; DELETE: Removes records. DELETE FROM table WHERE condition; 2. SQL Clauses ORDER BY: Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; GROUP BY: Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; HAVING: Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; LIMIT: Limits the number of results. SELECT * FROM table LIMIT 10; 3. Joins INNER JOIN: Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; LEFT JOIN: Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; RIGHT JOIN: Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; FULL JOIN: Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; 4. Aggregate Functions COUNT(): Returns the number of rows. SELECT COUNT(*) FROM table; SUM(): Returns the total sum of a numeric column. SELECT SUM(column) FROM table; AVG(): Returns the average value. SELECT AVG(column) FROM table; MAX() / MIN(): Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; 5. Subqueries Subquery in WHERE clause: SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); 6. Table Management CREATE TABLE: Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); ALTER TABLE: Modifies an existing table. ALTER TABLE table_name ADD column datatype; DROP TABLE: Deletes a table. DROP TABLE table_name; 7. Indexes CREATE INDEX: Adds an index to a table. CREATE INDEX index_name ON table_name (column); DROP INDEX: Removes an index. DROP INDEX index_name; 8. Data Types (Commonly Used) INT: Integer numbers. VARCHAR(size): Variable-length string. DATE: Date in &#39;YYYY-MM-DD&#39; format. DECIMAL(size, d): Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!" /><link rel="canonical" href="http://localhost:1313/detailed-sql-cheat-sheet/" itemprop="url" />
+  <meta name="description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
+SQL Cheat Sheet ***1. Basic SQL Commands*** - ***SELECT*** : Retrieves data from a database. SELECT column1, column2 FROM table; - ***WHERE*** : Filters records. SELECT * FROM table WHERE condition; - ***INSERT INTO*** : Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); - ***UPDATE*** : Modifies existing records. UPDATE table SET column1 = value WHERE condition; - ***DELETE*** : Removes records. DELETE FROM table WHERE condition; ***2. SQL Clauses*** - ***ORDER BY*** : Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; - ***GROUP BY*** : Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; - ***HAVING*** : Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; - ***LIMIT*** : Limits the number of results. SELECT * FROM table LIMIT 10; ***3. Joins*** - ***INNER JOIN*** : Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; - ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; - ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; - ***FULL JOIN*** : Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; ***4. Aggregate Functions*** - ***COUNT()*** : Returns the number of rows. SELECT COUNT(*) FROM table; - ***SUM()*** : Returns the total sum of a numeric column. SELECT SUM(column) FROM table; - ***AVG()*** : Returns the average value. SELECT AVG(column) FROM table; - ***MAX() / MIN()*** : Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; ***5. Subqueries*** - ***Subquery in WHERE clause*** : SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); ***6. Table Management*** - ***CREATE TABLE*** : Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); - ***ALTER TABLE*** : Modifies an existing table. ALTER TABLE table_name ADD column datatype; - ***DROP TABLE*** : Deletes a table. DROP TABLE table_name; ***7. Indexes*** - ***CREATE INDEX*** : Adds an index to a table. CREATE INDEX index_name ON table_name (column); - ***DROP INDEX*** : Removes an index. DROP INDEX index_name; ***8. Data Types (Commonly Used)*** - ***INT*** : Integer numbers. VARCHAR(size) : Variable-length string. DATE : Date in ‘YYYY-MM-DD’ format. DECIMAL(size, d) : Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!" /><link rel="canonical" href="http://localhost:1313/detailed-sql-cheat-sheet/" itemprop="url" />
 
 <meta property="og:title" content="Detailed SQL Cheat Sheet" />
-<meta property="og:description" content="Here&rsquo;s a detailed SQL Cheat Sheet you can use for your blog post:
-
+<meta property="og:description" content="Here&rsquo;s a detailed SQL Cheat Sheet  you can use for your blog post:
 SQL Cheat Sheet
     
 
-1. Basic SQL Commands
+***1. Basic SQL Commands***  
 
 
 
-SELECT: Retrieves data from a database.
-
+- ***SELECT*** : Retrieves data from a database. 
+ 
 
 
   SELECT column1, column2 FROM table;
 
 
 
-WHERE: Filters records.
-
+- ***WHERE*** : Filters records. 
+ 
 
 
   SELECT * FROM table WHERE condition;
 
 
 
-INSERT INTO: Adds new records.
-
+- ***INSERT INTO*** : Adds new records. 
+ 
 
 
   INSERT INTO table (column1, column2) VALUES (value1, value2);
 
 
 
-UPDATE: Modifies existing records.
-
+- ***UPDATE*** : Modifies existing records. 
+ 
 
 
   UPDATE table SET column1 = value WHERE condition;
 
 
 
-DELETE: Removes records.
-
+- ***DELETE*** : Removes records. 
+ 
 
 
   DELETE FROM table WHERE condition;
@@ -66,36 +65,36 @@ DELETE: Removes records.
 
 
 
-2. SQL Clauses
+***2. SQL Clauses***  
 
 
 
-ORDER BY: Sorts results.
-
+- ***ORDER BY*** : Sorts results. 
+ 
 
 
   SELECT * FROM table ORDER BY column ASC|DESC;
 
 
 
-GROUP BY: Groups rows that share values.
-
+- ***GROUP BY*** : Groups rows that share values. 
+ 
 
 
   SELECT column, COUNT(*) FROM table GROUP BY column;
 
 
 
-HAVING: Filters groups (used with GROUP BY).
-
+- ***HAVING*** : Filters groups (used with GROUP BY). 
+ 
 
 
   SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1;
 
 
 
-LIMIT: Limits the number of results.
-
+- ***LIMIT*** : Limits the number of results. 
+ 
 
 
   SELECT * FROM table LIMIT 10;
@@ -104,12 +103,12 @@ LIMIT: Limits the number of results.
 
 
 
-3. Joins
+***3. Joins***  
 
 
 
-INNER JOIN: Returns matching records from both tables.
-
+- ***INNER JOIN*** : Returns matching records from both tables. 
+ 
 
 
   SELECT * FROM table1
@@ -117,8 +116,8 @@ INNER JOIN: Returns matching records from both tables.
 
 
 
-LEFT JOIN: Returns all records from the left table and matching records from the right.
-
+- ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. 
+ 
 
 
   SELECT * FROM table1
@@ -126,8 +125,8 @@ LEFT JOIN: Returns all records from the left table and matching records from the
 
 
 
-RIGHT JOIN: Returns all records from the right table and matching records from the left.
-
+- ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. 
+ 
 
 
   SELECT * FROM table1
@@ -135,8 +134,8 @@ RIGHT JOIN: Returns all records from the right table and matching records from t
 
 
 
-FULL JOIN: Returns all records when there&#39;s a match in either table.
-
+- ***FULL JOIN*** : Returns all records when there&#39;s a match in either table. 
+ 
 
 
   SELECT * FROM table1
@@ -146,36 +145,36 @@ FULL JOIN: Returns all records when there&#39;s a match in either table.
 
 
 
-4. Aggregate Functions
+***4. Aggregate Functions***  
 
 
 
-COUNT(): Returns the number of rows.
-
+- ***COUNT()*** : Returns the number of rows. 
+ 
 
 
   SELECT COUNT(*) FROM table;
 
 
 
-SUM(): Returns the total sum of a numeric column.
-
+- ***SUM()*** : Returns the total sum of a numeric column. 
+ 
 
 
   SELECT SUM(column) FROM table;
 
 
 
-AVG(): Returns the average value.
-
+- ***AVG()*** : Returns the average value. 
+ 
 
 
   SELECT AVG(column) FROM table;
 
 
 
-MAX() / MIN(): Returns the highest/lowest value.
-
+- ***MAX() / MIN()*** : Returns the highest/lowest value. 
+ 
 
 
   SELECT MAX(column), MIN(column) FROM table;
@@ -184,12 +183,12 @@ MAX() / MIN(): Returns the highest/lowest value.
 
 
 
-5. Subqueries
+***5. Subqueries***  
 
 
 
-Subquery in WHERE clause:
-
+- ***Subquery in WHERE clause*** : 
+ 
 
 
   SELECT * FROM table1 WHERE column IN (SELECT column FROM table2);
@@ -198,12 +197,12 @@ Subquery in WHERE clause:
 
 
 
-6. Table Management
+***6. Table Management***  
 
 
 
-CREATE TABLE: Creates a new table.
-
+- ***CREATE TABLE*** : Creates a new table. 
+ 
 
 
   CREATE TABLE table_name (
@@ -213,16 +212,16 @@ CREATE TABLE: Creates a new table.
 
 
 
-ALTER TABLE: Modifies an existing table.
-
+- ***ALTER TABLE*** : Modifies an existing table. 
+ 
 
 
   ALTER TABLE table_name ADD column datatype;
 
 
 
-DROP TABLE: Deletes a table.
-
+- ***DROP TABLE*** : Deletes a table. 
+ 
 
 
   DROP TABLE table_name;
@@ -231,20 +230,20 @@ DROP TABLE: Deletes a table.
 
 
 
-7. Indexes
+***7. Indexes***  
 
 
 
-CREATE INDEX: Adds an index to a table.
-
+- ***CREATE INDEX*** : Adds an index to a table. 
+ 
 
 
   CREATE INDEX index_name ON table_name (column);
 
 
 
-DROP INDEX: Removes an index.
-
+- ***DROP INDEX*** : Removes an index. 
+ 
 
 
   DROP INDEX index_name;
@@ -253,21 +252,27 @@ DROP INDEX: Removes an index.
 
 
 
-8. Data Types (Commonly Used)
+***8. Data Types (Commonly Used)***  
 
 
 
-INT: Integer numbers.
+- ***INT*** : Integer numbers. 
 
 
-VARCHAR(size): Variable-length string.
+
+VARCHAR(size) : Variable-length string.
 
 
-DATE: Date in &#39;YYYY-MM-DD&#39; format.
 
 
-DECIMAL(size, d): Decimal numbers, specifying precision.
+DATE : Date in &lsquo;YYYY-MM-DD&rsquo; format.
 
+
+
+
+DECIMAL(size, d) : Decimal numbers, specifying precision.
+
+ 
 
 
 
@@ -279,16 +284,16 @@ This cheat sheet covers essential SQL commands and functions for working with da
 <meta property="article:modified_time" content="2024-09-26T12:49:15+00:00" />
 
   <meta itemprop="name" content="Detailed SQL Cheat Sheet">
-  <meta itemprop="description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
-SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SELECT column1, column2 FROM table; WHERE: Filters records. SELECT * FROM table WHERE condition; INSERT INTO: Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); UPDATE: Modifies existing records. UPDATE table SET column1 = value WHERE condition; DELETE: Removes records. DELETE FROM table WHERE condition; 2. SQL Clauses ORDER BY: Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; GROUP BY: Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; HAVING: Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; LIMIT: Limits the number of results. SELECT * FROM table LIMIT 10; 3. Joins INNER JOIN: Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; LEFT JOIN: Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; RIGHT JOIN: Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; FULL JOIN: Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; 4. Aggregate Functions COUNT(): Returns the number of rows. SELECT COUNT(*) FROM table; SUM(): Returns the total sum of a numeric column. SELECT SUM(column) FROM table; AVG(): Returns the average value. SELECT AVG(column) FROM table; MAX() / MIN(): Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; 5. Subqueries Subquery in WHERE clause: SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); 6. Table Management CREATE TABLE: Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); ALTER TABLE: Modifies an existing table. ALTER TABLE table_name ADD column datatype; DROP TABLE: Deletes a table. DROP TABLE table_name; 7. Indexes CREATE INDEX: Adds an index to a table. CREATE INDEX index_name ON table_name (column); DROP INDEX: Removes an index. DROP INDEX index_name; 8. Data Types (Commonly Used) INT: Integer numbers. VARCHAR(size): Variable-length string. DATE: Date in &#39;YYYY-MM-DD&#39; format. DECIMAL(size, d): Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!">
+  <meta itemprop="description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
+SQL Cheat Sheet ***1. Basic SQL Commands*** - ***SELECT*** : Retrieves data from a database. SELECT column1, column2 FROM table; - ***WHERE*** : Filters records. SELECT * FROM table WHERE condition; - ***INSERT INTO*** : Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); - ***UPDATE*** : Modifies existing records. UPDATE table SET column1 = value WHERE condition; - ***DELETE*** : Removes records. DELETE FROM table WHERE condition; ***2. SQL Clauses*** - ***ORDER BY*** : Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; - ***GROUP BY*** : Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; - ***HAVING*** : Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; - ***LIMIT*** : Limits the number of results. SELECT * FROM table LIMIT 10; ***3. Joins*** - ***INNER JOIN*** : Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; - ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; - ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; - ***FULL JOIN*** : Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; ***4. Aggregate Functions*** - ***COUNT()*** : Returns the number of rows. SELECT COUNT(*) FROM table; - ***SUM()*** : Returns the total sum of a numeric column. SELECT SUM(column) FROM table; - ***AVG()*** : Returns the average value. SELECT AVG(column) FROM table; - ***MAX() / MIN()*** : Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; ***5. Subqueries*** - ***Subquery in WHERE clause*** : SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); ***6. Table Management*** - ***CREATE TABLE*** : Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); - ***ALTER TABLE*** : Modifies an existing table. ALTER TABLE table_name ADD column datatype; - ***DROP TABLE*** : Deletes a table. DROP TABLE table_name; ***7. Indexes*** - ***CREATE INDEX*** : Adds an index to a table. CREATE INDEX index_name ON table_name (column); - ***DROP INDEX*** : Removes an index. DROP INDEX index_name; ***8. Data Types (Commonly Used)*** - ***INT*** : Integer numbers. VARCHAR(size) : Variable-length string. DATE : Date in ‘YYYY-MM-DD’ format. DECIMAL(size, d) : Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!">
   <meta itemprop="datePublished" content="2024-09-26T12:49:15+00:00">
   <meta itemprop="dateModified" content="2024-09-26T12:49:15+00:00">
-  <meta itemprop="wordCount" content="408">
+  <meta itemprop="wordCount" content="459">
   <meta itemprop="keywords" content="Cheatsheet,Sql">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Detailed SQL Cheat Sheet">
-  <meta name="twitter:description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
-SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SELECT column1, column2 FROM table; WHERE: Filters records. SELECT * FROM table WHERE condition; INSERT INTO: Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); UPDATE: Modifies existing records. UPDATE table SET column1 = value WHERE condition; DELETE: Removes records. DELETE FROM table WHERE condition; 2. SQL Clauses ORDER BY: Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; GROUP BY: Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; HAVING: Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; LIMIT: Limits the number of results. SELECT * FROM table LIMIT 10; 3. Joins INNER JOIN: Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; LEFT JOIN: Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; RIGHT JOIN: Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; FULL JOIN: Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; 4. Aggregate Functions COUNT(): Returns the number of rows. SELECT COUNT(*) FROM table; SUM(): Returns the total sum of a numeric column. SELECT SUM(column) FROM table; AVG(): Returns the average value. SELECT AVG(column) FROM table; MAX() / MIN(): Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; 5. Subqueries Subquery in WHERE clause: SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); 6. Table Management CREATE TABLE: Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); ALTER TABLE: Modifies an existing table. ALTER TABLE table_name ADD column datatype; DROP TABLE: Deletes a table. DROP TABLE table_name; 7. Indexes CREATE INDEX: Adds an index to a table. CREATE INDEX index_name ON table_name (column); DROP INDEX: Removes an index. DROP INDEX index_name; 8. Data Types (Commonly Used) INT: Integer numbers. VARCHAR(size): Variable-length string. DATE: Date in &#39;YYYY-MM-DD&#39; format. DECIMAL(size, d): Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!">
+  <meta name="twitter:description" content="Here’s a detailed SQL Cheat Sheet you can use for your blog post:
+SQL Cheat Sheet ***1. Basic SQL Commands*** - ***SELECT*** : Retrieves data from a database. SELECT column1, column2 FROM table; - ***WHERE*** : Filters records. SELECT * FROM table WHERE condition; - ***INSERT INTO*** : Adds new records. INSERT INTO table (column1, column2) VALUES (value1, value2); - ***UPDATE*** : Modifies existing records. UPDATE table SET column1 = value WHERE condition; - ***DELETE*** : Removes records. DELETE FROM table WHERE condition; ***2. SQL Clauses*** - ***ORDER BY*** : Sorts results. SELECT * FROM table ORDER BY column ASC|DESC; - ***GROUP BY*** : Groups rows that share values. SELECT column, COUNT(*) FROM table GROUP BY column; - ***HAVING*** : Filters groups (used with GROUP BY). SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1; - ***LIMIT*** : Limits the number of results. SELECT * FROM table LIMIT 10; ***3. Joins*** - ***INNER JOIN*** : Returns matching records from both tables. SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column; - ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column; - ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column; - ***FULL JOIN*** : Returns all records when there&#39;s a match in either table. SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column; ***4. Aggregate Functions*** - ***COUNT()*** : Returns the number of rows. SELECT COUNT(*) FROM table; - ***SUM()*** : Returns the total sum of a numeric column. SELECT SUM(column) FROM table; - ***AVG()*** : Returns the average value. SELECT AVG(column) FROM table; - ***MAX() / MIN()*** : Returns the highest/lowest value. SELECT MAX(column), MIN(column) FROM table; ***5. Subqueries*** - ***Subquery in WHERE clause*** : SELECT * FROM table1 WHERE column IN (SELECT column FROM table2); ***6. Table Management*** - ***CREATE TABLE*** : Creates a new table. CREATE TABLE table_name ( column1 datatype, column2 datatype ); - ***ALTER TABLE*** : Modifies an existing table. ALTER TABLE table_name ADD column datatype; - ***DROP TABLE*** : Deletes a table. DROP TABLE table_name; ***7. Indexes*** - ***CREATE INDEX*** : Adds an index to a table. CREATE INDEX index_name ON table_name (column); - ***DROP INDEX*** : Removes an index. DROP INDEX index_name; ***8. Data Types (Commonly Used)*** - ***INT*** : Integer numbers. VARCHAR(size) : Variable-length string. DATE : Date in ‘YYYY-MM-DD’ format. DECIMAL(size, d) : Decimal numbers, specifying precision. This cheat sheet covers essential SQL commands and functions for working with databases. Whether you’re querying data, joining tables, or managing databases, these commands will help streamline your tasks!">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9912,7 +9917,7 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#strongsql-cheat-sheetstrongh3">SQL Cheat Sheet
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#sql-cheat-sheet">SQL Cheat Sheet
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9945,49 +9950,48 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>Here&rsquo;s a detailed <strong>SQL Cheat Sheet</strong> you can use for your blog post:</p>
-<!-- wp:heading {"level":3} -->
-<h3><strong>SQL Cheat Sheet</strong></h3><span class="hx-absolute -hx-mt-20" id="strongsql-cheat-sheetstrongh3"></span>
-    <a href="#strongsql-cheat-sheetstrongh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+          <p>Here&rsquo;s a detailed <em><strong>SQL Cheat Sheet</strong></em>  you can use for your blog post:</p>
+<h3><em><strong>SQL Cheat Sheet</strong></em><span class="hx-absolute -hx-mt-20" id="sql-cheat-sheet"></span>
+    <a href="#sql-cheat-sheet" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>1. Basic SQL Commands</strong></h4>
+<h4 class="wp-block-heading">***1. Basic SQL Commands***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SELECT</strong>: Retrieves data from a database.</li>
-<!-- /wp:list-item --></ul>
+- ***SELECT*** : Retrieves data from a database. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT column1, column2 FROM table;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>WHERE</strong>: Filters records.</li>
-<!-- /wp:list-item --></ul>
+- ***WHERE*** : Filters records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table WHERE condition;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INSERT INTO</strong>: Adds new records.</li>
-<!-- /wp:list-item --></ul>
+- ***INSERT INTO*** : Adds new records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  INSERT INTO table (column1, column2) VALUES (value1, value2);</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>UPDATE</strong>: Modifies existing records.</li>
-<!-- /wp:list-item --></ul>
+- ***UPDATE*** : Modifies existing records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  UPDATE table SET column1 = value WHERE condition;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DELETE</strong>: Removes records.</li>
-<!-- /wp:list-item --></ul>
+- ***DELETE*** : Removes records. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  DELETE FROM table WHERE condition;</code></pre>
@@ -9996,36 +10000,36 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>2. SQL Clauses</strong></h4>
+<h4 class="wp-block-heading">***2. SQL Clauses***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ORDER BY</strong>: Sorts results.</li>
-<!-- /wp:list-item --></ul>
+- ***ORDER BY*** : Sorts results. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table ORDER BY column ASC|DESC;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>GROUP BY</strong>: Groups rows that share values.</li>
-<!-- /wp:list-item --></ul>
+- ***GROUP BY*** : Groups rows that share values. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT column, COUNT(*) FROM table GROUP BY column;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>HAVING</strong>: Filters groups (used with <code>GROUP BY</code>).</li>
-<!-- /wp:list-item --></ul>
+- ***HAVING*** : Filters groups (used with <code>GROUP BY</code>). 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LIMIT</strong>: Limits the number of results.</li>
-<!-- /wp:list-item --></ul>
+- ***LIMIT*** : Limits the number of results. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table LIMIT 10;</code></pre>
@@ -10034,12 +10038,12 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>3. Joins</strong></h4>
+<h4 class="wp-block-heading">***3. Joins***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INNER JOIN</strong>: Returns matching records from both tables.</li>
-<!-- /wp:list-item --></ul>
+- ***INNER JOIN*** : Returns matching records from both tables. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table1
@@ -10047,8 +10051,8 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LEFT JOIN</strong>: Returns all records from the left table and matching records from the right.</li>
-<!-- /wp:list-item --></ul>
+- ***LEFT JOIN*** : Returns all records from the left table and matching records from the right. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table1
@@ -10056,8 +10060,8 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>RIGHT JOIN</strong>: Returns all records from the right table and matching records from the left.</li>
-<!-- /wp:list-item --></ul>
+- ***RIGHT JOIN*** : Returns all records from the right table and matching records from the left. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table1
@@ -10065,8 +10069,8 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>FULL JOIN</strong>: Returns all records when there's a match in either table.</li>
-<!-- /wp:list-item --></ul>
+- ***FULL JOIN*** : Returns all records when there's a match in either table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table1
@@ -10076,36 +10080,36 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>4. Aggregate Functions</strong></h4>
+<h4 class="wp-block-heading">***4. Aggregate Functions***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>COUNT()</strong>: Returns the number of rows.</li>
-<!-- /wp:list-item --></ul>
+- ***COUNT()*** : Returns the number of rows. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT COUNT(*) FROM table;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>SUM()</strong>: Returns the total sum of a numeric column.</li>
-<!-- /wp:list-item --></ul>
+- ***SUM()*** : Returns the total sum of a numeric column. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT SUM(column) FROM table;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>AVG()</strong>: Returns the average value.</li>
-<!-- /wp:list-item --></ul>
+- ***AVG()*** : Returns the average value. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT AVG(column) FROM table;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>MAX() / MIN()</strong>: Returns the highest/lowest value.</li>
-<!-- /wp:list-item --></ul>
+- ***MAX() / MIN()*** : Returns the highest/lowest value. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT MAX(column), MIN(column) FROM table;</code></pre>
@@ -10114,12 +10118,12 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>5. Subqueries</strong></h4>
+<h4 class="wp-block-heading">***5. Subqueries***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Subquery in WHERE clause</strong>:</li>
-<!-- /wp:list-item --></ul>
+- ***Subquery in WHERE clause*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  SELECT * FROM table1 WHERE column IN (SELECT column FROM table2);</code></pre>
@@ -10128,12 +10132,12 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>6. Table Management</strong></h4>
+<h4 class="wp-block-heading">***6. Table Management***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>CREATE TABLE</strong>: Creates a new table.</li>
-<!-- /wp:list-item --></ul>
+- ***CREATE TABLE*** : Creates a new table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  CREATE TABLE table_name (
@@ -10143,16 +10147,16 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ALTER TABLE</strong>: Modifies an existing table.</li>
-<!-- /wp:list-item --></ul>
+- ***ALTER TABLE*** : Modifies an existing table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  ALTER TABLE table_name ADD column datatype;</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DROP TABLE</strong>: Deletes a table.</li>
-<!-- /wp:list-item --></ul>
+- ***DROP TABLE*** : Deletes a table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  DROP TABLE table_name;</code></pre>
@@ -10161,20 +10165,20 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>7. Indexes</strong></h4>
+<h4 class="wp-block-heading">***7. Indexes***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>CREATE INDEX</strong>: Adds an index to a table.</li>
-<!-- /wp:list-item --></ul>
+- ***CREATE INDEX*** : Adds an index to a table. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  CREATE INDEX index_name ON table_name (column);</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>DROP INDEX</strong>: Removes an index.</li>
-<!-- /wp:list-item --></ul>
+- ***DROP INDEX*** : Removes an index. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  DROP INDEX index_name;</code></pre>
@@ -10183,21 +10187,27 @@ SQL Cheat Sheet 1. Basic SQL Commands SELECT: Retrieves data from a database. SE
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading"><strong>8. Data Types (Commonly Used)</strong></h4>
+<h4 class="wp-block-heading">***8. Data Types (Commonly Used)***  
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>INT</strong>: Integer numbers.</li>
+- ***INT*** : Integer numbers. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>VARCHAR(size)</strong>: Variable-length string.</li>
+<ul>
+<li><em><strong>VARCHAR(size)</strong></em> : Variable-length string.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>DATE</strong>: Date in 'YYYY-MM-DD' format.</li>
+<ul>
+<li><em><strong>DATE</strong></em> : Date in &lsquo;YYYY-MM-DD&rsquo; format.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>DECIMAL(size, d)</strong>: Decimal numbers, specifying precision.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>DECIMAL(size, d)</strong></em> : Decimal numbers, specifying precision.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />

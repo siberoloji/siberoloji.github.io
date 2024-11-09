@@ -27,14 +27,14 @@ title: Constants and variables in Kotlin
 url: /constants-and-variables-in-kotlin/
 ---
 
-  We introduced the topic of defining variables and assigning values in the Kotlin programming language in our <a href="https://www.siberoloji.com/en/kotlin-variable-and-value-definition/" data-type="post" data-id="696" target="_blank" rel="noreferrer noopener">previous article</a>. In this article, we will take a closer look at assigning values with const and val.</p>
+  We introduced the topic of defining variables and assigning values in the Kotlin programming language in our <a href="https://www.siberoloji.com/en/kotlin-variable-and-value-definition/" data-type="post" data-id="696" target="_blank" rel="noreferrer noopener">previous article</a>. In this article, we will take a closer look at assigning values with const and val.
  
 
  
- ## val variables</h2>
+ ## val variables
 <!-- /wp:heading -->
 
-  The code below defines two variables, an integer containing the constant number <code>pi</code> and a String value named <code>helloMsg</code>. These values cannot be changed again after they are first assigned.</p>
+  The code below defines two variables, an integer containing the constant number <code>pi</code> and a String value named <code>helloMsg</code>. These values cannot be changed again after they are first assigned.
  
 
 <!-- wp:code -->
@@ -47,7 +47,7 @@ url: /constants-and-variables-in-kotlin/
 }</code></pre>
 <!-- /wp:code -->
 
-  Let's try to assign a new value to the <code>pi</code> variable, which is defined with the <code>val</code> keyword and assigned its initial value. As seen in the example below, when we want to assign a new value to the number <code>pi</code>, you receive the error "<mark class="has-inline-color has-vivid-red-color"><strong>Val cannot be reassigned</strong></mark>".</p>
+  Let's try to assign a new value to the <code>pi</code> variable, which is defined with the <code>val</code> keyword and assigned its initial value. As seen in the example below, when we want to assign a new value to the number <code>pi</code>, you receive the error "<mark class="has-inline-color has-vivid-red-color">***Val cannot be reassigned*** </mark>".
  
 
 <!-- wp:code -->
@@ -62,7 +62,7 @@ pi = 3.1416 // Val cannot be reassigned
 }</code></pre>
 <!-- /wp:code -->
 
-  You cannot use a variable that is defined with <code>val</code> but has not been initialized, that is, has not been initialized, in your commands. Let's explain this with an example. With the code below, the variable named <code>boolFalse</code> is defined with <code>val</code>, but since its initial value (True or False) is not assigned even though its type is specified as Boolean, you will receive the error message "<strong><mark class="has-inline-color has-vivid-red-color">Variable 'boolFalse' must be initialized</mark></strong>".</p>
+  You cannot use a variable that is defined with <code>val</code> but has not been initialized, that is, has not been initialized, in your commands. Let's explain this with an example. With the code below, the variable named <code>boolFalse</code> is defined with <code>val</code>, but since its initial value (True or False) is not assigned even though its type is specified as Boolean, you will receive the error message "***<mark class="has-inline-color has-vivid-red-color">Variable 'boolFalse' must be initialized</mark>*** ".
  
 
 <!-- wp:code -->
@@ -70,7 +70,7 @@ pi = 3.1416 // Val cannot be reassigned
 println(boolFalse) // error line</code></pre>
 <!-- /wp:code -->
 
-  Correct usage should be as follows.</p>
+  Correct usage should be as follows.
  
 
 <!-- wp:code -->
@@ -80,27 +80,27 @@ println(boolFalse) // error line</code></pre>
 <!-- /wp:code -->
 
  
- ## const variables</h2>
+ ## const variables
 <!-- /wp:heading -->
 
-  In Kotlin programming, there is a constant value assignment method in which the <code>const</code> keyword and the <code>val</code> expression are defined together. With this method, the constant value is created when the program codes are compiled and cannot be changed again. As a rule, it is recommended that the names of variables defined as <code>const</code> be in all CAPITAL LETTERS. </p>
+  In Kotlin programming, there is a constant value assignment method in which the <code>const</code> keyword and the <code>val</code> expression are defined together. With this method, the constant value is created when the program codes are compiled and cannot be changed again. As a rule, it is recommended that the names of variables defined as <code>const</code> be in all CAPITAL LETTERS. 
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="kotlin" class="language-kotlin">const val WRITER_NAME = "JOHN DOE"</code></pre>
 <!-- /wp:code -->
 
-  There are some rules for defining a constant value in this way.</p>
+  There are some rules for defining a constant value in this way.
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Only String and INT, CHAR, DOUBLE, BOOLEAN data types, which we call primary types, can be assigned to constant values. An example of this is shown below.</li>
+ <!-- wp:list-item -->
+- Only String and INT, CHAR, DOUBLE, BOOLEAN data types, which we call primary types, can be assigned to constant values. An example of this is shown below. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Constants should be defined outside functions. They cannot be defined with a const statement within a function.</li>
-<!-- /wp:list-item --></ul>
+- Constants should be defined outside functions. They cannot be defined with a const statement within a function. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -116,5 +116,5 @@ fun main() {
 }</code></pre>
 <!-- /wp:code -->
 
-  These explanations and rules may seem a bit confusing at first. Remember that these are necessary for the written code to work correctly and without errors. As you practice, you will become more familiar with these rules.</p>
+  These explanations and rules may seem a bit confusing at first. Remember that these are necessary for the written code to work correctly and without errors. As you practice, you will become more familiar with these rules.
  

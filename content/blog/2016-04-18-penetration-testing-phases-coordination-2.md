@@ -24,10 +24,10 @@ title: Penetration Testing Phases (Coordination – 2)
 url: /penetration-testing-phases-coordination-2/
 ---
 
- <p>We have examined the general structure of the coordination processes, which is the 1st Phase during the Penetration Test preparations, in our article in this <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/">link</a>. Now, we will examine in detail one of the issues that will be discussed during the meeting.</p>
+ <p>We have examined the general structure of the coordination processes, which is the 1st Phase during the Penetration Test preparations, in our article in this <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/">link</a>. Now, we will examine in detail one of the issues that will be discussed during the meeting.
  
 
- <p><strong>During the determination of the Scope</strong> within the coordination processes we mentioned, the security company providing the service asks some questions in order to reveal the purpose of the company receiving the service. Below, we will explain the questions that may be asked depending on the type of test to be performed. The company that will receive the service should prepare for the answers to these questions before the coordination meeting, in order to avoid any uncertainties that may arise during the meeting.</p>
+ <p>***During the determination of the Scope***  within the coordination processes we mentioned, the security company providing the service asks some questions in order to reveal the purpose of the company receiving the service. Below, we will explain the questions that may be asked depending on the type of test to be performed. The company that will receive the service should prepare for the answers to these questions before the coordination meeting, in order to avoid any uncertainties that may arise during the meeting.
  
 
 <!-- wp:heading {"level":1} -->
@@ -35,61 +35,61 @@ url: /penetration-testing-phases-coordination-2/
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Why will the company have its system personnel perform network testing?</li>
+ <!-- wp:list-item -->
+- Why will the company have its system personnel perform network testing? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is network testing done out of obligation to meet a standard?</li>
+- Is network testing done out of obligation to meet a standard? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>During which time periods does the company find it more appropriate to actively conduct the test?<!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>During business hours?</li>
+- During which time periods does the company find it more appropriate to actively conduct the test?<!-- wp:list {"ordered":true} -->
+ <!-- wp:list-item -->
+- During business hours? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>After hours?</li>
+- After hours? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>On weekends?</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- On weekends? 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many total IP addresses will be tested?<!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>How many internal network IP addresses will be tested?</li>
+- How many total IP addresses will be tested?<!-- wp:list {"ordered":true} -->
+ <!-- wp:list-item -->
+- How many internal network IP addresses will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>What is the number of external network IP addresses to test?</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- What is the number of external network IP addresses to test? 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is there a Firewall, IPS / IDS or Load Balancer system in the Network topology to be tested?</li>
+- Is there a Firewall, IPS / IDS or Load Balancer system in the Network topology to be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>If the system can be logged in, how will the testing team act?<!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Will a local vulnerability scan be performed on the logged-in system?</li>
+- If the system can be logged in, how will the testing team act?<!-- wp:list {"ordered":true} -->
+ <!-- wp:list-item -->
+- Will a local vulnerability scan be performed on the logged-in system? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will efforts be made to become the most authorized user in the system to which access is provided?</li>
+- Will efforts be made to become the most authorized user in the system to which access is provided? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will dictionary attacks be performed to obtain passwords on the system that is being accessed?</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
-<!-- /wp:list-item --></ol>
+- Will dictionary attacks be performed to obtain passwords on the system that is being accessed? 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":1} -->
@@ -97,41 +97,41 @@ url: /penetration-testing-phases-coordination-2/
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>How many applications will be tested?</li>
+ <!-- wp:list-item -->
+- How many applications will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many login systems will be tested?</li>
+- How many login systems will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many static pages will be tested?</li>
+- How many static pages will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many dynamic pages will be tested?</li>
+- How many dynamic pages will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will the source codes of the application to be tested be provided?</li>
+- Will the source codes of the application to be tested be provided? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will any documentation regarding the application be provided?<!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>If the answer is yes, what are these documents?</li>
-<!-- /wp:list-item --></ol>
-<!-- /wp:list --></li>
+- Will any documentation regarding the application be provided?<!-- wp:list {"ordered":true} -->
+ <!-- wp:list-item -->
+- If the answer is yes, what are these documents? 
+<!-- /wp:list-item --> 
+<!-- /wp:list --> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will static analyzes be performed on the application?</li>
+- Will static analyzes be performed on the application? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>What are the other topics requested?</li>
-<!-- /wp:list-item --></ol>
+- What are the other topics requested? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":1} -->
@@ -139,33 +139,33 @@ url: /penetration-testing-phases-coordination-2/
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>How many wireless networks are in the system?</li>
+ <!-- wp:list-item -->
+- How many wireless networks are in the system? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Which of these will be tested?</li>
+- Which of these will be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is there a wireless network in the system for guest use?</li>
+- Is there a wireless network in the system for guest use? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>What are the encryption techniques of wireless networks?</li>
+- What are the encryption techniques of wireless networks? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will users connected to guest networks be tested?</li>
+- Will users connected to guest networks be tested? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>What are the broadcast distances of wireless networks?</li>
+- What are the broadcast distances of wireless networks? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many people on average use these wireless networks?</li>
-<!-- /wp:list-item --></ol>
+- How many people on average use these wireless networks? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":1} -->
@@ -173,49 +173,49 @@ url: /penetration-testing-phases-coordination-2/
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>What are the number and locations of testing venues?</li>
+ <!-- wp:list-item -->
+- What are the number and locations of testing venues? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is the testing location shared with other units?</li>
+- Is the testing location shared with other units? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many floors are there in the venue?</li>
+- How many floors are there in the venue? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Which of the floors are included in the scope?</li>
+- Which of the floors are included in the scope? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Are there security guards at the venue that you have to pass through?</li>
+- Are there security guards at the venue that you have to pass through? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>What are the equipment status and powers of the officers?</li>
+- What are the equipment status and powers of the officers? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is security service received from a 3rd party company?</li>
+- Is security service received from a 3rd party company? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How many entrances does the venue have?</li>
+- How many entrances does the venue have? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Are there any video recording security measures?</li>
+- Are there any video recording security measures? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will the testing team test access to video recorders?</li>
+- Will the testing team test access to video recorders? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is there an alarm system?</li>
-<!-- /wp:list-item --></ol>
+- Is there an alarm system? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":1} -->
@@ -223,18 +223,18 @@ url: /penetration-testing-phases-coordination-2/
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Will an email address list be provided for Social Engineering tests?</li>
+ <!-- wp:list-item -->
+- Will an email address list be provided for Social Engineering tests? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Will a list of phone numbers be provided for Social Engineering tests?</li>
+- Will a list of phone numbers be provided for Social Engineering tests? 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Is physical access to the system granted as a result of social engineering?</li>
-<!-- /wp:list-item --></ol>
+- Is physical access to the system granted as a result of social engineering? 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
- <p>Questions related to the above mentioned tests can be expanded. It is also possible to differentiate based on experience.</p>
+ <p>Questions related to the above mentioned tests can be expanded. It is also possible to differentiate based on experience.
  

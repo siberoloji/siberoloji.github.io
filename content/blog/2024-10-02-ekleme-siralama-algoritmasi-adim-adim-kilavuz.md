@@ -22,92 +22,92 @@ title: 'Ekleme Sıralama Algoritması: Adım Adım Kılavuz'
 url: /tr/ekleme-siralama-algoritmasi-adim-adim-kilavuz/
 ---
 
-  Ekleme sıralaması, bir öğeyi önceden sıralanmış bir dizideki doğru konumuna tekrar tekrar ekleyerek çalışan basit bir sıralama algoritmasıdır. Küçük veri kümeleri için verimlidir ve dizi neredeyse sıralandığında iyi bir seçim olabilir.</p>
+  Ekleme sıralaması, bir öğeyi önceden sıralanmış bir dizideki doğru konumuna tekrar tekrar ekleyerek çalışan basit bir sıralama algoritmasıdır. Küçük veri kümeleri için verimlidir ve dizi neredeyse sıralandığında iyi bir seçim olabilir.
  
 
-  <strong>Ekleme Sıralaması Nasıl Çalışır?</strong></p>
+  ***Ekleme Sıralaması Nasıl Çalışır?*** 
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>İkinci elemandan başlayalım:</strong>  İlk eleman sıralanmış kabul edilir.</li>
+- ***İkinci elemandan başlayalım:***   İlk eleman sıralanmış kabul edilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Karşılaştır ve ekle:</strong>  Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır.</li>
+- ***Karşılaştır ve ekle:***   Bir sonraki elemanı seç ve onu dizinin sıralanmış kısmındaki elemanlarla karşılaştır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Öğeleri kaydır:</strong>  Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır.</li>
+- ***Öğeleri kaydır:***   Mevcut öğe karşılaştırılan öğeden küçükse, karşılaştırılan öğeyi ve ondan sonraki tüm öğeleri bir konum sağa kaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ekle:</strong>  Geçerli öğeyi boş konuma ekle.</li>
+- ***Ekle:***   Geçerli öğeyi boş konuma ekle. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Tekrarla:</strong>  Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın.</li>
-<!-- /wp:list-item --></ol>
+- ***Tekrarla:***   Dizideki kalan tüm elemanlar için 2-4. adımları tekrarlayın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Görsel Örnek</strong></p>
+  ***Görsel Örnek*** 
  
 
-  <code>[5, 2, 4, 6, 1, 3]</code>&nbsp;Diziyi ekleme sıralaması kullanarak&nbsp;sıralayalım&nbsp; :</p>
+  <code>[5, 2, 4, 6, 1, 3]</code>&nbsp;Diziyi ekleme sıralaması kullanarak&nbsp;sıralayalım&nbsp; :
  
 
-  <strong>Adım 1:</strong>&nbsp;&nbsp;İlk öğe (5) sıralanmış kabul edilir.</p>
+  ***Adım 1:*** &nbsp;&nbsp;İlk öğe (5) sıralanmış kabul edilir.
  
 
-  <strong>Adım 2:</strong>&nbsp;&nbsp;2'yi 5 ile karşılaştırın. 2 daha küçüktür, bu yüzden 5'i sağa kaydırın ve onun yerine 2'yi yerleştirin.</p>
+  ***Adım 2:*** &nbsp;&nbsp;2'yi 5 ile karşılaştırın. 2 daha küçüktür, bu yüzden 5'i sağa kaydırın ve onun yerine 2'yi yerleştirin.
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sıralamak: <code>[2, 5, 4, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Sıralamak: <code>[2, 5, 4, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Adım 3:</strong>&nbsp;&nbsp;4 ile 5'i karşılaştırın. 4 daha küçüktür, bu yüzden 5'i sağa kaydırın ve onun yerine 4'ü yerleştirin.</p>
+  ***Adım 3:*** &nbsp;&nbsp;4 ile 5'i karşılaştırın. 4 daha küçüktür, bu yüzden 5'i sağa kaydırın ve onun yerine 4'ü yerleştirin.
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Adım 4:</strong>&nbsp;&nbsp;6 ile 5'i karşılaştırın. 6 daha büyüktür, bu nedenle yerinde kalır.</p>
+  ***Adım 4:*** &nbsp;&nbsp;6 ile 5'i karşılaştırın. 6 daha büyüktür, bu nedenle yerinde kalır.
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Sıralamak: <code>[2, 4, 5, 6, 1, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Adım 5:</strong>&nbsp;&nbsp;1 ile 5'i karşılaştırın. 1 daha küçüktür, dolayısıyla 5, 6 ve 3'ü sağa kaydırın ve onun yerine 1'i yerleştirin.</p>
+  ***Adım 5:*** &nbsp;&nbsp;1 ile 5'i karşılaştırın. 1 daha küçüktür, dolayısıyla 5, 6 ve 3'ü sağa kaydırın ve onun yerine 1'i yerleştirin.
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sıralamak: <code>[1, 2, 4, 5, 6, 3]</code></li>
-<!-- /wp:list-item --></ul>
+- Sıralamak: <code>[1, 2, 4, 5, 6, 3]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Adım 6:</strong>&nbsp;&nbsp;3 ile 5'i karşılaştırın. 3 daha küçüktür, bu yüzden 5 ve 6'yı sağa kaydırın ve onun yerine 3'ü yerleştirin.</p>
+  ***Adım 6:*** &nbsp;&nbsp;3 ile 5'i karşılaştırın. 3 daha küçüktür, bu yüzden 5 ve 6'yı sağa kaydırın ve onun yerine 3'ü yerleştirin.
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Sıralamak: <code>[1, 2, 3, 4, 5, 6]</code></li>
-<!-- /wp:list-item --></ul>
+- Sıralamak: <code>[1, 2, 3, 4, 5, 6]</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  Dizi artık sıralandı.</p>
+  Dizi artık sıralandı.
  
 
-  <strong>Kod Uygulaması (Python)</strong></p>
+  ***Kod Uygulaması (Python)*** 
  
 
 <!-- wp:code -->
@@ -136,65 +136,65 @@ for i in range(len(arr)):
 </code></pre>
 <!-- /wp:code -->
 
-  <strong>Zaman Karmaşıklığı</strong></p>
+  ***Zaman Karmaşıklığı*** 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>En iyi durum:</strong>  Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)'dir.</li>
+- ***En iyi durum:***   Dizi zaten sıralanmıştır. Zaman karmaşıklığı O(n)'dir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ortalama durum:</strong>  Zaman karmaşıklığı O(n^2)'dir.</li>
+- ***Ortalama durum:***   Zaman karmaşıklığı O(n^2)'dir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>En kötü durum:</strong>  Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)'dir.</li>
-<!-- /wp:list-item --></ul>
+- ***En kötü durum:***   Dizi ters sırada sıralanır. Zaman karmaşıklığı O(n^2)'dir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Uzay Karmaşıklığı</strong></p>
+  ***Uzay Karmaşıklığı*** 
  
 
-  Ekleme sıralamasının alan karmaşıklığı O(1)'dir çünkü yalnızca sabit miktarda ekstra alan gerektirir.</p>
+  Ekleme sıralamasının alan karmaşıklığı O(1)'dir çünkü yalnızca sabit miktarda ekstra alan gerektirir.
  
 
-  <strong>Eklemeli Sıralamanın Avantajları</strong></p>
+  ***Eklemeli Sıralamanın Avantajları*** 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Uygulanması kolay:</strong>  Eklemeli sıralama anlaşılması ve kodlanması kolaydır.</li>
+- ***Uygulanması kolay:***   Eklemeli sıralama anlaşılması ve kodlanması kolaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Küçük veri kümeleri için verimli:</strong>  Küçük diziler için iyi bir seçimdir.</li>
+- ***Küçük veri kümeleri için verimli:***   Küçük diziler için iyi bir seçimdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Çevrimiçi algoritma:</strong>  Öğeler geldikçe tek tek işlenebilir.</li>
+- ***Çevrimiçi algoritma:***   Öğeler geldikçe tek tek işlenebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Stable:</strong>  Eşit anahtarlara sahip öğelerin göreceli sırasını korur.</li>
-<!-- /wp:list-item --></ul>
+- ***Stable:***   Eşit anahtarlara sahip öğelerin göreceli sırasını korur. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Eklemeli Sıralamanın Dezavantajları</strong></p>
+  ***Eklemeli Sıralamanın Dezavantajları*** 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Büyük veri kümeleri için verimsizdir:</strong>  İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir.</li>
+- ***Büyük veri kümeleri için verimsizdir:***   İkinci dereceden zaman karmaşıklığı nedeniyle büyük diziler için uygun değildir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Yaklaşık olarak sıralanmış diziler için yavaş:</strong>  Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir.</li>
-<!-- /wp:list-item --></ul>
+- ***Yaklaşık olarak sıralanmış diziler için yavaş:***   Sıralanmış diziler için verimli olsa da, yaklaşık olarak sıralanmış diziler için yavaş olabilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Sonuç</strong></p>
+  ***Sonuç*** 
  
 
-  Ekleme sıralaması, küçük veri kümeleri ve basit uygulamalar için uygun olan temel bir sıralama algoritmasıdır. Ancak, daha büyük veri kümeleri için hızlı sıralama veya birleştirme sıralaması gibi daha verimli algoritmalar tercih edilir. Ekleme sıralamasını anlamak, daha karmaşık sıralama algoritmalarını öğrenmek için iyi bir başlangıç ​​noktasıdır.</p>
+  Ekleme sıralaması, küçük veri kümeleri ve basit uygulamalar için uygun olan temel bir sıralama algoritmasıdır. Ancak, daha büyük veri kümeleri için hızlı sıralama veya birleştirme sıralaması gibi daha verimli algoritmalar tercih edilir. Ekleme sıralamasını anlamak, daha karmaşık sıralama algoritmalarını öğrenmek için iyi bir başlangıç ​​noktasıdır.
  

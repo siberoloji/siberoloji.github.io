@@ -29,7 +29,7 @@ url: /user-input-with-cin-function-in-c/
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -57,7 +57,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a simple console application that prompts the user to enter an integer, outputs the entered integer, doubles the entered integer, and then outputs the doubled value. 
@@ -113,7 +113,7 @@ return 0;</code></pre>
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -244,14 +244,6 @@
             </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/"
-    
-  >Siber Güvenlik Keşif için WHOIS ve DNS Aramasını Kullanma
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/tr/bir-kesif-araci-olarak-sosyal-muhendislik-siber-guvenlikte-onemli-bir-bilesen/"
     
   >Bir Keşif Aracı Olarak Sosyal Mühendislik: Siber Güvenlikte Önemli Bir Bileşen
@@ -271,22 +263,6 @@
     href="/tr/kesif-asamasinda-bilgi-sizintisina-karsi-koruma/"
     
   >Keşif Aşamasında Bilgi Sızıntısına Karşı Koruma
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/tr/kesif-sirasinda-yapilan-yaygin-hatalar-ve-bunlardan-nasil-kacinilir/"
-    
-  >Keşif Sırasında Yapılan Yaygın Hatalar ve Bunlardan Nasıl Kaçınılır
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/tr/etkili-kesif-icin-araclar-shodan-maltego-ve-google-dorking/"
-    
-  >Etkili Keşif İçin Araçlar: Shodan, Maltego ve Google Dorking
     </a>
               
             </li><li class="hx-flex hx-flex-col "><a
@@ -9696,36 +9672,44 @@
           <h1>Linux için VNC Server Kurulum</h1>
           <p>Bir Linux bilgisayarınız var ve onun ekranını başka bilgisayarlarla paylaşmak mı istiyorsunuz. Bunun için bilgisayarınıza masaüstü paylaşım sunucusu kurmanız gerekir. Bu yazıda, Linux Mint ve benzeri Ubuntu tabanlı dağıtımlarda VNC Server nasıl kurulur sorusuna bakacağız.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Varsayılan VNC server olan Vino’yu kaldıralım:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt-get -y remove vino
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>X11vnc Kuralım:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt-get -y install x11vnc
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Parolamızı kaydedeceğimiz dosyayı oluşturalım:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo mkdir /etc/x11vnc
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
@@ -9733,52 +9717,62 @@
 <!-- /wp:code -->
 <p>Bu adımda size yeni parolanızı sorulacaktır. Ekranda gösterien adımları uygulayın ve kaydedin.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>x11vnc Sunucu için systemd unit dosyasını oluşturalım. Bunun için aşağıdaki komutu kullanarak metin editörümüzle, service dosyasını açın.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo xed /lib/systemd/system/x11vnc.service
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>[</strong>Unit]
-Description<strong>=</strong>Start x11vnc at startup.
-After<strong>=</strong>multi-user.target
-<strong>[</strong>Service]
-Type<strong>=</strong>simple
-ExecStart<strong>=</strong>/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
-<strong>[</strong>Install]
-WantedBy<strong>=</strong>multi-user.target
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***[*** Unit]
+Description***=*** Start x11vnc at startup.
+After***=*** multi-user.target
+***[*** Service]
+Type***=*** simple
+ExecStart***=*** /usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+***[*** Install]
+WantedBy***=*** multi-user.target
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Systemd servislerini tekrar başlatın.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl daemon-reload
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl enable x11vnc.service
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Son adımda sunucuyu başlatalım:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl start x11vnc.service</code></pre>

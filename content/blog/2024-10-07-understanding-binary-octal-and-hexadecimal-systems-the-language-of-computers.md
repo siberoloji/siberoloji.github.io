@@ -30,7 +30,7 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
  
 
  
- ## The Decimal System: Our Familiar Base-10</h2>
+ ## The Decimal System: Our Familiar Base-10
 <!-- /wp:heading -->
 
   Before we dive into the other number systems, let's briefly review the decimal system we use every day. The decimal system uses ten digits (0-9) and is based on powers of 10. Each digit in a number represents a multiple of a power of 10. For example, in the number 1234: 
@@ -45,18 +45,18 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
  
 
  
- ## The Binary System: The Foundation of Computing</h2>
+ ## The Binary System: The Foundation of Computing
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### What is Binary?</h3>
+
+ ### What is Binary?
 <!-- /wp:heading -->
 
   Binary is a base-2 number system that uses only two digits: 0 and 1. Each digit in a binary number is called a bit (binary digit). Binary is the fundamental language of computers because it aligns with the on/off states of electronic switches and circuits. 
  
 
-<!-- wp:heading {"level":3} -->
- ### How Binary Works</h3>
+
+ ### How Binary Works
 <!-- /wp:heading -->
 
   In binary, each digit represents a power of 2. For example, the binary number 1010 is interpreted as: 
@@ -68,26 +68,26 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
                = 10 (decimal)</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Why Computers Use Binary</h3>
+
+ ### Why Computers Use Binary
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Simplicity</strong>: With only two states, binary is less prone to errors and noise in electronic circuits.</li>
+- ***Simplicity*** : With only two states, binary is less prone to errors and noise in electronic circuits. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Efficiency</strong>: It's easier and cheaper to design hardware that works with two states rather than ten.</li>
+- ***Efficiency*** : It's easier and cheaper to design hardware that works with two states rather than ten. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Logical Operations</strong>: Binary aligns perfectly with Boolean logic, which is the basis of computer operations.</li>
-<!-- /wp:list-item --></ol>
+- ***Logical Operations*** : Binary aligns perfectly with Boolean logic, which is the basis of computer operations. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Binary Arithmetic</h3>
+
+ ### Binary Arithmetic
 <!-- /wp:heading -->
 
   Binary arithmetic follows similar rules to decimal arithmetic, but with only two digits: 
@@ -95,38 +95,38 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Addition: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (carry the 1)</li>
+- Addition: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (carry the 1) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Subtraction: 1 - 0 = 1, 1 - 1 = 0, 10 - 1 = 1</li>
+- Subtraction: 1 - 0 = 1, 1 - 1 = 0, 10 - 1 = 1 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Multiplication and division follow similar principles</li>
-<!-- /wp:list-item --></ul>
+- Multiplication and division follow similar principles 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Challenges with Binary</h3>
+
+ ### Challenges with Binary
 <!-- /wp:heading -->
 
   While binary is perfect for computers, it's not very readable for humans. Long strings of 1s and 0s are hard to interpret at a glance. This is where octal and hexadecimal systems come in handy. 
  
 
  
- ## The Octal System: Grouping Bits</h2>
+ ## The Octal System: Grouping Bits
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### What is Octal?</h3>
+
+ ### What is Octal?
 <!-- /wp:heading -->
 
   Octal is a base-8 number system that uses digits from 0 to 7. It's less common than binary or hexadecimal but still has its uses in computing. 
  
 
-<!-- wp:heading {"level":3} -->
- ### How Octal Works</h3>
+
+ ### How Octal Works
 <!-- /wp:heading -->
 
   Each octal digit represents three binary digits (bits). For example: 
@@ -145,22 +145,22 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 <pre class="wp-block-code"><code lang="bash" class="language-bash">752 (octal) = 111 101 010 (binary)</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Uses of Octal</h3>
+
+ ### Uses of Octal
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>File Permissions</strong>: In Unix-like operating systems, file permissions are often represented in octal.</li>
+- ***File Permissions*** : In Unix-like operating systems, file permissions are often represented in octal. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Older Computing Systems</strong>: Some older computers used octal as a more compact representation of binary.</li>
-<!-- /wp:list-item --></ol>
+- ***Older Computing Systems*** : Some older computers used octal as a more compact representation of binary. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Octal-Binary Conversion</h3>
+
+ ### Octal-Binary Conversion
 <!-- /wp:heading -->
 
   Converting between octal and binary is straightforward: 
@@ -168,27 +168,27 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Octal to Binary: Replace each octal digit with its 3-bit binary equivalent.</li>
+- Octal to Binary: Replace each octal digit with its 3-bit binary equivalent. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Binary to Octal: Group binary digits into sets of three (from right to left) and convert each group to its octal equivalent.</li>
-<!-- /wp:list-item --></ul>
+- Binary to Octal: Group binary digits into sets of three (from right to left) and convert each group to its octal equivalent. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## The Hexadecimal System: Compact and Powerful</h2>
+ ## The Hexadecimal System: Compact and Powerful
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### What is Hexadecimal?</h3>
+
+ ### What is Hexadecimal?
 <!-- /wp:heading -->
 
   Hexadecimal, often shortened to "hex," is a base-16 number system. It uses sixteen distinct symbols: the numbers 0-9 and the letters A-F (where A=10, B=11, …, F=15). 
  
 
-<!-- wp:heading {"level":3} -->
- ### How Hexadecimal Works</h3>
+
+ ### How Hexadecimal Works
 <!-- /wp:heading -->
 
   Each hexadecimal digit represents four binary digits. For example: 
@@ -207,30 +207,30 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 <pre class="wp-block-code"><code lang="bash" class="language-bash">2AF (hexadecimal) = 0010 1010 1111 (binary)</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Why Hexadecimal is Useful</h3>
+
+ ### Why Hexadecimal is Useful
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Compact Representation</strong>: Hexadecimal provides a more compact way to represent binary numbers. One hex digit represents four binary digits, making it easier to read and write large binary numbers.</li>
+- ***Compact Representation*** : Hexadecimal provides a more compact way to represent binary numbers. One hex digit represents four binary digits, making it easier to read and write large binary numbers. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Memory Addresses</strong>: In computer memory systems, hexadecimal is often used to represent memory addresses.</li>
+- ***Memory Addresses*** : In computer memory systems, hexadecimal is often used to represent memory addresses. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Color Codes</strong>: In web design and graphics, colors are frequently represented using hexadecimal (e.g., #FF0000 for red).</li>
+- ***Color Codes*** : In web design and graphics, colors are frequently represented using hexadecimal (e.g., #FF0000 for red). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Debugging</strong>: Programmers often use hexadecimal when debugging low-level code or examining memory dumps.</li>
-<!-- /wp:list-item --></ol>
+- ***Debugging*** : Programmers often use hexadecimal when debugging low-level code or examining memory dumps. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Hexadecimal-Binary Conversion</h3>
+
+ ### Hexadecimal-Binary Conversion
 <!-- /wp:heading -->
 
   Converting between hexadecimal and binary is similar to octal conversion: 
@@ -238,20 +238,20 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Hex to Binary: Replace each hex digit with its 4-bit binary equivalent.</li>
+- Hex to Binary: Replace each hex digit with its 4-bit binary equivalent. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Binary to Hex: Group binary digits into sets of four (from right to left) and convert each group to its hex equivalent.</li>
-<!-- /wp:list-item --></ul>
+- Binary to Hex: Group binary digits into sets of four (from right to left) and convert each group to its hex equivalent. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Converting Between Number Systems</h2>
+ ## Converting Between Number Systems
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Decimal to Binary Conversion</h3>
+
+ ### Decimal to Binary Conversion
 <!-- /wp:heading -->
 
   To convert a decimal number to binary: 
@@ -259,16 +259,16 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Divide the number by 2 repeatedly.</li>
+- Divide the number by 2 repeatedly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Keep track of the remainders.</li>
+- Keep track of the remainders. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Read the remainders from bottom to top.</li>
-<!-- /wp:list-item --></ol>
+- Read the remainders from bottom to top. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Example: Converting 25 to binary 
@@ -284,8 +284,8 @@ url: /understanding-binary-octal-and-hexadecimal-systems-the-language-of-compute
 Reading from bottom to top: 25 (decimal) = 11001 (binary)</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Binary to Decimal Conversion</h3>
+
+ ### Binary to Decimal Conversion
 <!-- /wp:heading -->
 
   To convert a binary number to decimal, multiply each digit by its corresponding power of 2 and sum the results. 
@@ -300,22 +300,22 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)</code></pre>
 = 25 (decimal)</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Decimal to Octal and Hexadecimal</h3>
+
+ ### Decimal to Octal and Hexadecimal
 <!-- /wp:heading -->
 
   The process is similar to decimal to binary conversion, but you divide by 8 for octal and 16 for hexadecimal. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Octal and Hexadecimal to Decimal</h3>
+
+ ### Octal and Hexadecimal to Decimal
 <!-- /wp:heading -->
 
   Similar to binary to decimal conversion, but using powers of 8 for octal and powers of 16 for hexadecimal. 
  
 
  
- ## Practical Applications</h2>
+ ## Practical Applications
 <!-- /wp:heading -->
 
   Understanding these number systems is crucial in various areas of computing: 
@@ -323,44 +323,44 @@ Reading from bottom to top: 25 (decimal) = 11001 (binary)</code></pre>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Programming</strong>: Many programming languages allow you to represent numbers in different bases. For example, in Python:</li>
-<!-- /wp:list-item --></ol>
+- ***Programming*** : Many programming languages allow you to represent numbers in different bases. For example, in Python: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Binary: <code>0b1010</code> represents 10</li>
+- Binary: <code>0b1010</code> represents 10 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Octal: <code>0o12</code> represents 10</li>
+- Octal: <code>0o12</code> represents 10 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hexadecimal: <code>0xA</code> represents 10</li>
-<!-- /wp:list-item --></ul>
+- Hexadecimal: <code>0xA</code> represents 10 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Networking</strong>: IP addresses are often represented in binary or hexadecimal.</li>
+- ***Networking*** : IP addresses are often represented in binary or hexadecimal. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Digital Design</strong>: When working with digital circuits, understanding binary is essential.</li>
+- ***Digital Design*** : When working with digital circuits, understanding binary is essential. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Data Representation</strong>: Different data types (integers, floating-point numbers) are represented in binary in computer memory.</li>
+- ***Data Representation*** : Different data types (integers, floating-point numbers) are represented in binary in computer memory. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Cryptography</strong>: Many cryptographic algorithms work with binary data and use hexadecimal for key representation.</li>
-<!-- /wp:list-item --></ol>
+- ***Cryptography*** : Many cryptographic algorithms work with binary data and use hexadecimal for key representation. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   While decimal numbers are natural for human understanding, binary, octal, and hexadecimal systems are integral to how computers process and store information. Binary forms the foundation, being directly related to the on/off states in electronic circuits. Octal and hexadecimal provide more compact representations of binary, making it easier for humans to work with large binary numbers. 

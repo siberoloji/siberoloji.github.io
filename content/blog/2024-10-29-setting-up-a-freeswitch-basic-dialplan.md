@@ -24,11 +24,11 @@ url: /setting-up-a-freeswitch-basic-dialplan/
  
 
  
- ## Understanding Dialplan Basics</h2>
+ ## Understanding Dialplan Basics
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### What is a Dialplan?</h3>
+
+ ### What is a Dialplan?
 <!-- /wp:heading -->
 
   A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. It's essentially a routing table that determines what happens when someone makes a call through your system. Dialplans in FreeSWITCH are written in XML and consist of several key components: 
@@ -36,32 +36,32 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Contexts</li>
+- Contexts 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Extensions</li>
+- Extensions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Conditions</li>
+- Conditions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Actions</li>
+- Actions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Anti-Actions</li>
-<!-- /wp:list-item --></ul>
+- Anti-Actions 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Dialplan Structure</h2>
+ ## Dialplan Structure
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Basic XML Structure</h3>
+
+ ### Basic XML Structure
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -76,38 +76,38 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Key Components Explained</h3>
+
+ ### Key Components Explained
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Context</strong>: A logical grouping of extensions</li>
+- ***Context*** : A logical grouping of extensions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Extension</strong>: A set of rules for handling specific calls</li>
+- ***Extension*** : A set of rules for handling specific calls 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Condition</strong>: Criteria that must be met for actions to execute</li>
+- ***Condition*** : Criteria that must be met for actions to execute 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Action</strong>: What happens when conditions are met</li>
+- ***Action*** : What happens when conditions are met 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Anti-Action</strong>: What happens when conditions are not met</li>
-<!-- /wp:list-item --></ol>
+- ***Anti-Action*** : What happens when conditions are not met 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Creating Your First Dialplan</h2>
+ ## Creating Your First Dialplan
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Basic Internal Calls</h3>
+
+ ### 1. Basic Internal Calls
 <!-- /wp:heading -->
 
   Create a new file <code>/usr/local/freeswitch/conf/dialplan/default/01_internal.xml</code>: 
@@ -135,8 +135,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Adding External Calls</h3>
+
+ ### 2. Adding External Calls
 <!-- /wp:heading -->
 
   Create <code>/usr/local/freeswitch/conf/dialplan/default/02_external.xml</code>: 
@@ -157,11 +157,11 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 <!-- /wp:code -->
 
  
- ## Common Dialplan Features</h2>
+ ## Common Dialplan Features
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Time-Based Routing</h3>
+
+ ### 1. Time-Based Routing
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -173,8 +173,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. IVR (Interactive Voice Response)</h3>
+
+ ### 2. IVR (Interactive Voice Response)
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -187,8 +187,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Conference Rooms</h3>
+
+ ### 3. Conference Rooms
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -201,11 +201,11 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 <!-- /wp:code -->
 
  
- ## Advanced Dialplan Techniques</h2>
+ ## Advanced Dialplan Techniques
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Call Recording</h3>
+
+ ### 1. Call Recording
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -219,8 +219,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Call Queues</h3>
+
+ ### 2. Call Queues
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -233,8 +233,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Failover Routing</h3>
+
+ ### 3. Failover Routing
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -248,29 +248,29 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 <!-- /wp:code -->
 
  
- ## Best Practices</h2>
+ ## Best Practices
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Organization</h3>
+
+ ### 1. Organization
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Use numbered files for loading order (01_internal.xml, 02_external.xml, etc.)</li>
+- Use numbered files for loading order (01_internal.xml, 02_external.xml, etc.) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Group similar extensions together</li>
+- Group similar extensions together 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Comment your dialplan thoroughly</li>
-<!-- /wp:list-item --></ul>
+- Comment your dialplan thoroughly 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Security</h3>
+
+ ### 2. Security
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -284,8 +284,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Error Handling</h3>
+
+ ### 3. Error Handling
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -297,11 +297,11 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 <!-- /wp:code -->
 
  
- ## Testing and Debugging</h2>
+ ## Testing and Debugging
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Log Configuration</h3>
+
+ ### 1. Log Configuration
 <!-- /wp:heading -->
 
   Add to <code>/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml</code>: 
@@ -311,8 +311,8 @@ url: /setting-up-a-freeswitch-basic-dialplan/
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;param name="loglevel" value="debug"/&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Testing Commands</h3>
+
+ ### 2. Testing Commands
 <!-- /wp:heading -->
 
   In fs_cli: 
@@ -325,11 +325,11 @@ eval ${destination_number}</code></pre>
 <!-- /wp:code -->
 
  
- ## Common Troubleshooting</h2>
+ ## Common Troubleshooting
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Dialplan Not Working</h3>
+
+ ### 1. Dialplan Not Working
 <!-- /wp:heading -->
 
   Check these common issues: 
@@ -337,24 +337,24 @@ eval ${destination_number}</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>XML syntax errors</li>
+- XML syntax errors 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Regular expression patterns</li>
+- Regular expression patterns 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>File permissions</li>
+- File permissions 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Context names matching the user's context</li>
-<!-- /wp:list-item --></ul>
+- Context names matching the user's context 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Call Routing Issues</h3>
+
+ ### 2. Call Routing Issues
 <!-- /wp:heading -->
 
   Verify: 
@@ -362,28 +362,28 @@ eval ${destination_number}</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Gateway configurations</li>
+- Gateway configurations 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>User directory settings</li>
+- User directory settings 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Network connectivity</li>
+- Network connectivity 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>SIP profile settings</li>
-<!-- /wp:list-item --></ul>
+- SIP profile settings 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Monitoring and Maintenance</h2>
+ ## Monitoring and Maintenance
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Regular Checks</h3>
+
+ ### 1. Regular Checks
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -394,8 +394,8 @@ eval ${destination_number}</code></pre>
 /usr/local/freeswitch/bin/fs_cli -x "show calls"</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Performance Monitoring</h3>
+
+ ### 2. Performance Monitoring
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -408,7 +408,7 @@ eval ${destination_number}</code></pre>
 <!-- /wp:code -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Creating an effective dialplan is crucial for a well-functioning FreeSWITCH system. Start with basic call routing and gradually add more complex features as needed. Remember to: 
@@ -416,24 +416,24 @@ eval ${destination_number}</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Keep your dialplan organized and well-documented</li>
+- Keep your dialplan organized and well-documented 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Test thoroughly before deploying changes</li>
+- Test thoroughly before deploying changes 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Monitor performance and logs regularly</li>
+- Monitor performance and logs regularly 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Implement security measures</li>
+- Implement security measures 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Plan for scalability</li>
-<!-- /wp:list-item --></ul>
+- Plan for scalability 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   As your system grows, you can expand your dialplan to include more advanced features like: 
@@ -441,20 +441,20 @@ eval ${destination_number}</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Multi-tenant configurations</li>
+- Multi-tenant configurations 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Advanced IVR systems</li>
+- Advanced IVR systems 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Custom applications</li>
+- Custom applications 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Integration with external systems</li>
-<!-- /wp:list-item --></ul>
+- Integration with external systems 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Regular maintenance and updates will ensure your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system continues to handle calls efficiently and reliably. 

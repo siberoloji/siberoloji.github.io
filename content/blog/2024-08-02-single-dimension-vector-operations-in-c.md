@@ -25,11 +25,11 @@ title: Single dimension vector operations in C++
 url: /single-dimension-vector-operations-in-c/
 ---
 
-  The provided code demonstrates various operations on a <code>std::vector</code> in C++.</p>
+  The provided code demonstrates various operations on a <code>std::vector</code> in C++.
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -122,10 +122,10 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
-  The provided code demonstrates various operations on a <code>std::vector</code> in C++. The <code>main</code> function begins by initializing a vector named <code>numbers</code> with 5 elements and then fills it with numbers from 0 to 4 using a <code>for</code> loop:</p>
+  The provided code demonstrates various operations on a <code>std::vector</code> in C++. The <code>main</code> function begins by initializing a vector named <code>numbers</code> with 5 elements and then fills it with numbers from 0 to 4 using a <code>for</code> loop:
  
 
 <!-- wp:code -->
@@ -136,7 +136,7 @@ for (int i = 0; i &lt; numbers.size(); i++) {
 }</code></pre>
 <!-- /wp:code -->
 
-  Next, the code adds an element to the end of the vector using <code>push_back</code> and prints the last element:</p>
+  Next, the code adds an element to the end of the vector using <code>push_back</code> and prints the last element:
  
 
 <!-- wp:code -->
@@ -144,7 +144,7 @@ for (int i = 0; i &lt; numbers.size(); i++) {
 cout &lt;&lt; "5 added as the last element: " &lt;&lt; numbers.back() &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The last element is then removed using <code>pop_back</code>, and the code prints the new last element:</p>
+  The last element is then removed using <code>pop_back</code>, and the code prints the new last element:
  
 
 <!-- wp:code -->
@@ -152,7 +152,7 @@ cout &lt;&lt; "5 added as the last element: " &lt;&lt; numbers.back() &lt;&lt; e
 cout &lt;&lt; "5 removed, now the last element is: " &lt;&lt; numbers[numbers.size() - 1] &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The code proceeds to insert an element at the beginning of the vector using <code>insert</code> and prints the first element:</p>
+  The code proceeds to insert an element at the beginning of the vector using <code>insert</code> and prints the first element:
  
 
 <!-- wp:code -->
@@ -160,7 +160,7 @@ cout &lt;&lt; "5 removed, now the last element is: " &lt;&lt; numbers[numbers.si
 cout &lt;&lt; "10 added as front number. Now the front number of the vector is: " &lt;&lt; numbers.front() &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The first element is then removed using <code>erase</code>, and the new first element is printed:</p>
+  The first element is then removed using <code>erase</code>, and the new first element is printed:
  
 
 <!-- wp:code -->
@@ -168,7 +168,7 @@ cout &lt;&lt; "10 added as front number. Now the front number of the vector is: 
 cout &lt;&lt; "Front number removed. The new front is: " &lt;&lt; numbers.front() &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  An element is inserted at the third position, and the element at that position is printed:</p>
+  An element is inserted at the third position, and the element at that position is printed:
  
 
 <!-- wp:code -->
@@ -176,7 +176,7 @@ cout &lt;&lt; "Front number removed. The new front is: " &lt;&lt; numbers.front(
 cout &lt;&lt; "20 added to the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  The element at the third position is removed, and the new element at that position is printed:</p>
+  The element at the third position is removed, and the new element at that position is printed:
  
 
 <!-- wp:code -->
@@ -184,7 +184,7 @@ cout &lt;&lt; "20 added to the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl
 cout &lt;&lt; "20 removed from the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;</code></pre>
 <!-- /wp:code -->
 
-  Finally, the vector is cleared using <code>clear</code>, and the code prints the contents of the now-empty vector:</p>
+  Finally, the vector is cleared using <code>clear</code>, and the code prints the contents of the now-empty vector:
  
 
 <!-- wp:code -->
@@ -195,11 +195,11 @@ for (const int number : numbers) {
 }</code></pre>
 <!-- /wp:code -->
 
-  This code effectively demonstrates how to manipulate a <code>std::vector</code> in C++ by adding, removing, and accessing elements at various positions.</p>
+  This code effectively demonstrates how to manipulate a <code>std::vector</code> in C++ by adding, removing, and accessing elements at various positions.
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -262,16 +262,16 @@ Process finished with exit code 0</code></pre>
 <!-- /wp:code -->
 
  
- ## Extra information</h2>
+ ## Extra information
 <!-- /wp:heading -->
 
-  Common operations performed on <code>std::vector</code> in C++ include:</p>
+  Common operations performed on <code>std::vector</code> in C++ include:
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Initialization</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Initialization*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -282,8 +282,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Accessing Elements</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Accessing Elements*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -294,8 +294,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Modifying Elements</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Modifying Elements*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -304,8 +304,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Adding Elements</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Adding Elements*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -316,8 +316,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":5} -->
 <ol start="5" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Removing Elements</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Removing Elements*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -329,8 +329,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":6} -->
 <ol start="6" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Iterating Over Elements</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Iterating Over Elements*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -349,8 +349,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":7} -->
 <ol start="7" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Size and Capacity</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Size and Capacity*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -362,8 +362,8 @@ Process finished with exit code 0</code></pre>
 
 <!-- wp:list {"ordered":true,"start":8} -->
 <ol start="8" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Swapping and Assigning</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Swapping and Assigning*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -372,5 +372,5 @@ Process finished with exit code 0</code></pre>
    vec = vec2; // Assign contents from another vector</code></pre>
 <!-- /wp:code -->
 
-  These operations cover the most common use cases for <code>std::vector</code> in C++.</p>
+  These operations cover the most common use cases for <code>std::vector</code> in C++.
  

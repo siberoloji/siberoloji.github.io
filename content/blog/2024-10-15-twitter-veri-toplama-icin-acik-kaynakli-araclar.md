@@ -28,7 +28,7 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Twitter'ı OSINT İçin Neden Kazımalıyız?</h4>
+<h4 class="wp-block-heading">Twitter'ı OSINT İçin Neden Kazımalıyız? 
 <!-- /wp:heading -->
 
   Açık Kaynaklı İstihbarat (OSINT), siber güvenlik, gazetecilik, kolluk kuvvetleri ve rekabet analizi gibi çeşitli alanlar için hayati önem taşıyan, herkese açık verilerin toplanmasını ve analiz edilmesini içerir. Twitter, herkese açık yapısı ve gerçek zamanlı güncellemeleri nedeniyle OSINT operasyonları için birincil kaynaktır. Twitter'ı OSINT için taramanın temel nedenleri şunlardır: 
@@ -36,28 +36,28 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Gerçek Zamanlı Veri Toplama</strong> : Twitter, son dakika haberlerinin, kamuoyu tartışmalarının ve siyasi hareketlerin ortaya çıktığı ilk platformdur.</li>
+- ***Gerçek Zamanlı Veri Toplama***  : Twitter, son dakika haberlerinin, kamuoyu tartışmalarının ve siyasi hareketlerin ortaya çıktığı ilk platformdur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Duygu Analizi</strong> : Tweet'leri taramak, belirli konular, olaylar veya kişiler hakkındaki kamuoyunun duygusunu analiz etmeye yardımcı olabilir.</li>
+- ***Duygu Analizi***  : Tweet'leri taramak, belirli konular, olaylar veya kişiler hakkındaki kamuoyunun duygusunu analiz etmeye yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Coğrafi Konum</strong> : Bazı tweetler, gerçek zamanlı olarak gerçekleşen olaylara ve bunların tam konumlarına ilişkin bilgi sağlayan coğrafi konum verileri içerir.</li>
+- ***Coğrafi Konum***  : Bazı tweetler, gerçek zamanlı olarak gerçekleşen olaylara ve bunların tam konumlarına ilişkin bilgi sağlayan coğrafi konum verileri içerir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Trend Analizi</strong> : Hashtag ve mentionları takip etmek, trend olan konuları belirlemeye ve bilginin yayılımını analiz etmeye yardımcı olabilir.</li>
+- ***Trend Analizi***  : Hashtag ve mentionları takip etmek, trend olan konuları belirlemeye ve bilginin yayılımını analiz etmeye yardımcı olabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kullanıcı Analizi</strong> : Kullanıcı profillerini ve aktivitelerini taramak, belirli bir konu içindeki kalıpları, ağları ve potansiyel etkileri ortaya çıkarabilir.</li>
-<!-- /wp:list-item --></ol>
+- ***Kullanıcı Analizi***  : Kullanıcı profillerini ve aktivitelerini taramak, belirli bir konu içindeki kalıpları, ağları ve potansiyel etkileri ortaya çıkarabilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Twitter Veri Toplama ile İlgili Zorluklar</h4>
+<h4 class="wp-block-heading">Twitter Veri Toplama ile İlgili Zorluklar 
 <!-- /wp:heading -->
 
   Twitter kazıma önemli faydalar sunsa da, zorlukları da yok değil. Özellikle gizlilik politikaları ve hizmet şartları konusunda yasal ve etik hususlar ön planda olmalı. Twitter'ın API'si yararlı olsa da, sıklıkla veri çıkarma konusunda sınırlamalar getirir ve geliştiricilerin ve araştırmacıların alternatif olarak kazımaya yönelmesini gerektirir. 
@@ -67,7 +67,7 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Twitter Veri Toplama İçin En İyi Açık Kaynaklı Araçlar</h4>
+<h4 class="wp-block-heading">Twitter Veri Toplama İçin En İyi Açık Kaynaklı Araçlar 
 <!-- /wp:heading -->
 
   Twitter veri toplama için özel olarak birkaç açık kaynaklı araç geliştirilmiştir. Bu araçlar, Twitter verilerini gerçek zamanlı olarak çıkarmak, analiz etmek ve izlemek için güçlü özellikler sunar. Aşağıda, en yaygın kullanılan ve etkili çözümlerden bazılarını inceliyoruz: 
@@ -77,8 +77,8 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Twarc</strong></h3>
+
+ ### 1. ***Twarc*** 
 <!-- /wp:heading -->
 
   Twarc, Twitter API'sini kullanarak doğrudan tweet'leri toplayan bir komut satırı aracı ve Python kütüphanesidir, ancak aynı zamanda kazıma işlevi de sağlar. Verileri daha fazla analiz için kolayca işlenebilen bir JSON biçiminde depolar. Twarc, Twitter'dan büyük miktarda veriyi verimli bir şekilde kazımak isteyen araştırmacılar ve veri bilimcileri için özellikle yararlıdır. 
@@ -86,146 +86,146 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Temel Özellikler</strong> :</li>
+- ***Temel Özellikler***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Twitter API'si ile uyumlu çalışır ve kolay veri toplamaya olanak tanır.</li>
+- Twitter API'si ile uyumlu çalışır ve kolay veri toplamaya olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tweetleri anahtar kelimeye, kullanıcıya ve tarihe göre filtrelemeye yarayan araçlar içerir.</li>
+- Tweetleri anahtar kelimeye, kullanıcıya ve tarihe göre filtrelemeye yarayan araçlar içerir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>JSON, CSV ve diğer formatlarda çıktı veren veri analizi iş akışlarını destekler.</li>
+- JSON, CSV ve diğer formatlarda çıktı veren veri analizi iş akışlarını destekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Daha derin bir bağlam için yanıtları, retweetleri ve konu dizilerini alma yeteneği.</li>
+- Daha derin bir bağlam için yanıtları, retweetleri ve konu dizilerini alma yeteneği. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OSINT için Kullanım Örnekleri</strong> :</li>
+- ***OSINT için Kullanım Örnekleri***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Siyasi tartışmaların takibi ve kamuoyu araştırmaları için veri kümelerinin toplanması.</li>
+- Siyasi tartışmaların takibi ve kamuoyu araştırmaları için veri kümelerinin toplanması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kriz veya olayla ilgili kamuoyunun duyarlılığının izlenmesi.</li>
+- Kriz veya olayla ilgili kamuoyunun duyarlılığının izlenmesi. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kurulum ve Kullanım</strong> :<br>Twarc, Python'da pip aracılığıyla kurulabilir. Kurulduktan sonra, kimlik doğrulama ayrıntılarını sağlayarak ve basit komutları çalıştırarak Twitter'ı taramaya başlayabilirsiniz.</li>
-<!-- /wp:list-item --></ul>
+- ***Kurulum ve Kullanım***  :<br>Twarc, Python'da pip aracılığıyla kurulabilir. Kurulduktan sonra, kimlik doğrulama ayrıntılarını sağlayarak ve basit komutları çalıştırarak Twitter'ı taramaya başlayabilirsiniz. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 2.&nbsp;<strong>snscrape</strong></h3>
+
+ ### 2.&nbsp;***snscrape*** 
 <!-- /wp:heading -->
 
-  <strong>snscrape,</strong>&nbsp;Twitter, Facebook, Instagram ve daha fazlası gibi sosyal ağlar için hızlı ve oldukça etkili bir kazıyıcıdır. Twitter API'sine dayanmayan hafif bir araçtır ve bu da onu API oran sınırlarını aşmak için ideal hale getirir. Resmi API dışında çalıştığı için snscrape, Twitter'ın sınırlamalarıyla kısıtlanmadan kapsamlı veri kazıma olanağı sağlar. 
+  ***snscrape,*** &nbsp;Twitter, Facebook, Instagram ve daha fazlası gibi sosyal ağlar için hızlı ve oldukça etkili bir kazıyıcıdır. Twitter API'sine dayanmayan hafif bir araçtır ve bu da onu API oran sınırlarını aşmak için ideal hale getirir. Resmi API dışında çalıştığı için snscrape, Twitter'ın sınırlamalarıyla kısıtlanmadan kapsamlı veri kazıma olanağı sağlar. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Temel Özellikler</strong> :</li>
+- ***Temel Özellikler***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tweetleri anahtar kelimelere, hashtag'lere, kullanıcılara ve hatta belirli tarihlere göre toplamayı destekler.</li>
+- Tweetleri anahtar kelimelere, hashtag'lere, kullanıcılara ve hatta belirli tarihlere göre toplamayı destekler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API anahtarı veya kimlik doğrulaması gerektirmez, bu da kurulumu kolaylaştırır.</li>
+- API anahtarı veya kimlik doğrulaması gerektirmez, bu da kurulumu kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kolay analiz için JSON ve CSV dahil olmak üzere birden fazla formatta çıktı sağlar.</li>
+- Kolay analiz için JSON ve CSV dahil olmak üzere birden fazla formatta çıktı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Otomatik iş akışları için son derece esnek ve çeşitli betik dilleriyle uyumludur.</li>
+- Otomatik iş akışları için son derece esnek ve çeşitli betik dilleriyle uyumludur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OSINT için Kullanım Örnekleri</strong> :</li>
+- ***OSINT için Kullanım Örnekleri***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuoyunun görüşlerini toplamak için protestolar veya toplumsal hareketler sırasında hashtag'leri takip etmek.</li>
+- Kamuoyunun görüşlerini toplamak için protestolar veya toplumsal hareketler sırasında hashtag'leri takip etmek. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kamuoyuna mal olmuş kişilerin sosyal medya faaliyetlerine ilişkin soruşturmalar için veri toplanması.</li>
+- Kamuoyuna mal olmuş kişilerin sosyal medya faaliyetlerine ilişkin soruşturmalar için veri toplanması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kurulum ve Kullanım</strong> :<br>snscrape pip kullanılarak kolayca kurulur. Doğrudan komut satırından kullanılabilir veya otomatik kazıma için Python betiklerine entegre edilebilir.</li>
-<!-- /wp:list-item --></ul>
+- ***Kurulum ve Kullanım***  :<br>snscrape pip kullanılarak kolayca kurulur. Doğrudan komut satırından kullanılabilir veya otomatik kazıma için Python betiklerine entegre edilebilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>Twint</strong></h3>
+
+ ### 3. ***Twint*** 
 <!-- /wp:heading -->
 
-  <strong>Twint,</strong>&nbsp;Twitter verilerini toplamak için en popüler açık kaynaklı araçlardan biridir. Twarc'ın aksine, Twitter API'sine erişim gerektirmez, bu da onu API oran sınırlarını aşmak isteyenler veya API anahtarlarına erişimi olmayanlar için başvurulacak bir çözüm haline getirir. Twint, oturum açmaya veya kimlik doğrulamaya gerek kalmadan kullanıcı profillerini, hashtag'leri, tweet'leri ve daha fazlasını toplayabilir. 
+  ***Twint,*** &nbsp;Twitter verilerini toplamak için en popüler açık kaynaklı araçlardan biridir. Twarc'ın aksine, Twitter API'sine erişim gerektirmez, bu da onu API oran sınırlarını aşmak isteyenler veya API anahtarlarına erişimi olmayanlar için başvurulacak bir çözüm haline getirir. Twint, oturum açmaya veya kimlik doğrulamaya gerek kalmadan kullanıcı profillerini, hashtag'leri, tweet'leri ve daha fazlasını toplayabilir. 
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Temel Özellikler</strong> :</li>
+- ***Temel Özellikler***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>API sınırlaması yok: Twint, Twitter API'sinin getirdiği kısıtlamalar olmadan büyük miktarda veri toplayabilir.</li>
+- API sınırlaması yok: Twint, Twitter API'sinin getirdiği kısıtlamalar olmadan büyük miktarda veri toplayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Belirli bir kullanıcının zaman çizelgesinden, takipçilerinden ve takip edilen listesinden veri toplayabilir.</li>
+- Belirli bir kullanıcının zaman çizelgesinden, takipçilerinden ve takip edilen listesinden veri toplayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Tweetleri hashtag, kullanıcı sözleri ve anahtar kelime filtrelerine göre taramaya olanak tanır.</li>
+- Tweetleri hashtag, kullanıcı sözleri ve anahtar kelime filtrelerine göre taramaya olanak tanır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kolayca dışa aktarma ve analiz için verileri çeşitli formatlarda (CSV, JSON, SQLite) çıktı olarak verir.</li>
+- Kolayca dışa aktarma ve analiz için verileri çeşitli formatlarda (CSV, JSON, SQLite) çıktı olarak verir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OSINT için Kullanım Örnekleri</strong> :</li>
+- ***OSINT için Kullanım Örnekleri***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Soruşturma amaçlı kullanıcı aktivitesine ilişkin geçmiş verilerin toplanması.</li>
+- Soruşturma amaçlı kullanıcı aktivitesine ilişkin geçmiş verilerin toplanması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hesapları ve etkileşimlerini takip ederek dezenformasyonun yayılmasını analiz ediyoruz.</li>
+- Hesapları ve etkileşimlerini takip ederek dezenformasyonun yayılmasını analiz ediyoruz. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kurulum ve Kullanım</strong> :<br>Twint pip üzerinden kurulabilir ve komut satırından kullanımı kolaydır. Araç, bir kullanıcının tweetlerini belirli bir tarih aralığından kazımak gibi derinlemesine sorgulamalara olanak tanır.</li>
-<!-- /wp:list-item --></ul>
+- ***Kurulum ve Kullanım***  :<br>Twint pip üzerinden kurulabilir ve komut satırından kullanımı kolaydır. Araç, bir kullanıcının tweetlerini belirli bir tarih aralığından kazımak gibi derinlemesine sorgulamalara olanak tanır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 4.&nbsp;<strong>TweetScraper</strong></h3>
+
+ ### 4.&nbsp;***TweetScraper*** 
 <!-- /wp:heading -->
 
   TweetScraper, tweetleri toplu olarak toplamak için daha minimalist bir çözümdür. Python tabanlı bir araçtır ve sonuçları depolamak için MongoDB kullanır. Twint veya snscrape'den daha az özellik zengini olmasına rağmen, TweetScraper daha küçük, daha odaklı toplama işlemleri için kullanışlıdır. 
@@ -233,44 +233,44 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Temel Özellikler</strong> :</li>
+- ***Temel Özellikler***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Büyük tweet kümelerini toplamak için kullanımı kolaydır.</li>
+- Büyük tweet kümelerini toplamak için kullanımı kolaydır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>JSON formatında çıktılar, ayrıştırmayı ve analiz etmeyi kolaylaştırır.</li>
+- JSON formatında çıktılar, ayrıştırmayı ve analiz etmeyi kolaylaştırır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>MongoDB ile entegre olarak kesintisiz veri depolama olanağı sağlar.</li>
+- MongoDB ile entegre olarak kesintisiz veri depolama olanağı sağlar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OSINT için Kullanım Örnekleri</strong> :</li>
+- ***OSINT için Kullanım Örnekleri***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Belirli olaylar veya zaman dilimlerindeki tweetlerin durumsal farkındalık amacıyla toplanması.</li>
+- Belirli olaylar veya zaman dilimlerindeki tweetlerin durumsal farkındalık amacıyla toplanması. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Küçük ve orta ölçekli Twitter veri kümelerine odaklanmış veri toplama.</li>
+- Küçük ve orta ölçekli Twitter veri kümelerine odaklanmış veri toplama. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kurulum ve Kullanım</strong> :<br>TweetScraper Python ve MongoDB gerektirir. Kurulumdan sonra, tweetleri kazımaya ve depolamaya başlamak için komut satırından çalıştırabilirsiniz.</li>
-<!-- /wp:list-item --></ul>
+- ***Kurulum ve Kullanım***  :<br>TweetScraper Python ve MongoDB gerektirir. Kurulumdan sonra, tweetleri kazımaya ve depolamaya başlamak için komut satırından çalıştırabilirsiniz. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 5.&nbsp;<strong>ScrapeStorm</strong></h3>
+
+ ### 5.&nbsp;***ScrapeStorm*** 
 <!-- /wp:heading -->
 
   ScrapeStorm, özellikle Twitter için tasarlanmamış olsa da Twitter verilerini diğer platformlarla birlikte kazıyabilen çok yönlü bir web kazıma aracıdır. Grafiksel bir arayüze sahiptir, bu da kodlama veya komut satırı araçlarıyla rahat olmayanlar için başlangıç ​​dostu olmasını sağlar. 
@@ -278,32 +278,32 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Temel Özellikler</strong> :</li>
+- ***Temel Özellikler***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kodlama bilgisine gerek kalmadan görsel kazıma arayüzü.</li>
+- Kodlama bilgisine gerek kalmadan görsel kazıma arayüzü. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Twitter'ın yanı sıra çeşitli web sitelerinden veri toplayabilir.</li>
+- Twitter'ın yanı sıra çeşitli web sitelerinden veri toplayabilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Daha ileri analiz için verileri birden fazla formatta dışa aktarma yeteneği.</li>
+- Daha ileri analiz için verileri birden fazla formatta dışa aktarma yeteneği. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>OSINT için Kullanım Örnekleri</strong> :</li>
+- ***OSINT için Kullanım Örnekleri***  : 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kod yazmadan sosyal medya verilerini toplamak isteyen teknik olmayan kullanıcılar.</li>
+- Kod yazmadan sosyal medya verilerini toplamak isteyen teknik olmayan kullanıcılar. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kapsamlı analiz için birden fazla platformda sosyal medya verilerinin toplanması.</li>
-<!-- /wp:list-item --></ul>
+- Kapsamlı analiz için birden fazla platformda sosyal medya verilerinin toplanması. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
@@ -311,14 +311,14 @@ url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 <!-- /wp:separator -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Etik Hususlar</h4>
+<h4 class="wp-block-heading">Etik Hususlar 
 <!-- /wp:heading -->
 
   OSINT amaçları için Twitter veri toplama işlemine etik bir şekilde yaklaşılmalıdır. Bu açık kaynaklı araçlar güçlü olsa da, yasal sınırların tam bilincinde olarak ve kullanıcıların gizliliğine saygı göstererek kullanılmalıdır. Kamuya açık veriler silahlandırılmamalı veya kötü niyetli amaçlar için kullanılmamalıdır. Araştırmacılar ve geliştiriciler her zaman etik uygulamaları önceliklendirmeli, toplanan verilerin gazetecilik, kolluk kuvvetleri veya akademik araştırma gibi kamu yararına olan amaçlar için kullanılmasını sağlamalıdır. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Sonuç</h4>
+<h4 class="wp-block-heading">Sonuç 
 <!-- /wp:heading -->
 
   Twitter veri toplama için açık kaynaklı araçlar, özellikle OSINT amaçları için sosyal medya verilerini toplamak ve analiz etmek için güçlü çözümler sunar. İster sosyal medya izlemesi yapın, ister kamuoyunu takip edin veya dezenformasyon kampanyalarını araştırın, bu araçlar Twitter API'sinin sınırlamalarına güvenmeden verimli veri toplamaya olanak tanır. Twarc, snscrape, Twint, TweetScraper ve ScrapeStorm'un her biri benzersiz özellikler sunarak profesyonellerin ve araştırmacıların Twitter verilerini iş akışlarına entegre etmelerini kolaylaştırır. 

@@ -28,7 +28,7 @@ What is TRIM?
 What is TRIM? TRIM is a command that allows an operating system to inform an SSD that blocks of data are no longer in use and can be wiped internally. Unlike traditional hard drives, SSDs cannot simply overwrite existing data - they must first erase blocks before writing new data to them. This technical requirement makes TRIM an essential feature for maintaining SSD performance and longevity.">
   <meta itemprop="datePublished" content="2024-10-27T16:09:51+00:00">
   <meta itemprop="dateModified" content="2024-10-27T16:09:51+00:00">
-  <meta itemprop="wordCount" content="829">
+  <meta itemprop="wordCount" content="870">
   <meta itemprop="keywords" content="How-to Guides,Linux,Linux How-To,Trim">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Understanding TRIM in Linux: A Complete Guide to SSD Optimization">
@@ -1364,63 +1364,63 @@ What is TRIM? TRIM is a command that allows an operating system to inform an SSD
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#what-is-trimh2"
+                href="#what-is-trim"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >What is TRIM?&lt;/h2&gt;</a>
+              >What is TRIM?</a>
             </li>
           <li>
               <a
-                href="#how-trim-works-in-linuxh2"
+                href="#how-trim-works-in-linux"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >How TRIM Works in Linux&lt;/h2&gt;</a>
+              >How TRIM Works in Linux</a>
             </li>
           <li>
               <a
-                href="#checking-trim-supporth2"
+                href="#checking-trim-support"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Checking TRIM Support&lt;/h2&gt;</a>
+              >Checking TRIM Support</a>
             </li>
           <li>
               <a
-                href="#implementing-trimh2"
+                href="#implementing-trim"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Implementing TRIM&lt;/h2&gt;</a>
+              >Implementing TRIM</a>
             </li>
           <li>
               <a
-                href="#performance-considerationsh2"
+                href="#performance-considerations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Performance Considerations&lt;/h2&gt;</a>
+              >Performance Considerations</a>
             </li>
           <li>
               <a
-                href="#best-practicesh2"
+                href="#best-practices"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Best Practices&lt;/h2&gt;</a>
+              >Best Practices</a>
             </li>
           <li>
               <a
-                href="#troubleshooting-common-issuesh2"
+                href="#troubleshooting-common-issues"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Troubleshooting Common Issues&lt;/h2&gt;</a>
+              >Troubleshooting Common Issues</a>
             </li>
           <li>
               <a
-                href="#advanced-topicsh2"
+                href="#advanced-topics"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Advanced Topics&lt;/h2&gt;</a>
+              >Advanced Topics</a>
             </li>
           <li>
               <a
-                href="#future-considerationsh2"
+                href="#future-considerations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Future Considerations&lt;/h2&gt;</a>
+              >Future Considerations</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9711,91 +9711,91 @@ What is TRIM? TRIM is a command that allows an operating system to inform an SSD
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-trimh2">What is TRIM?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-trim">What is TRIM?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-technical-backgroundh3">The Technical Background
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-technical-background">The Technical Background
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-trim-works-in-linuxh2">How TRIM Works in Linux
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-trim-works-in-linux">How TRIM Works in Linux
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-periodic-trimh3">1. Periodic TRIM
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-periodic-trim">1. Periodic TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-continuous-trimh3">2. Continuous TRIM
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-continuous-trim">2. Continuous TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#checking-trim-supporth2">Checking TRIM Support
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#checking-trim-support">Checking TRIM Support
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-trimh2">Implementing TRIM
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-trim">Implementing TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-periodic-trimh3">Setting Up Periodic TRIM
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#setting-up-periodic-trim">Setting Up Periodic TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-continuous-trimh3">Implementing Continuous TRIM
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#implementing-continuous-trim">Implementing Continuous TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#performance-considerationsh2">Performance Considerations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#performance-considerations">Performance Considerations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#periodic-vs-continuous-trimh3">Periodic vs. Continuous TRIM
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#periodic-vs-continuous-trim">Periodic vs. Continuous TRIM
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practicesh2">Best Practices
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices">Best Practices
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-ssd-optimizationh3">1. SSD Optimization
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-ssd-optimization">1. SSD Optimization
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-monitoring-and-maintenanceh3">2. Monitoring and Maintenance
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-monitoring-and-maintenance">2. Monitoring and Maintenance
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-system-configurationh3">3. System Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-system-configuration">3. System Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issuesh2">Troubleshooting Common Issues
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#troubleshooting-common-issues">Troubleshooting Common Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-trim-not-workingh3">1. TRIM Not Working
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-trim-not-working">1. TRIM Not Working
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-performance-issuesh3">2. Performance Issues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-performance-issues">2. Performance Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-topicsh2">Advanced Topics
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-topics">Advanced Topics
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#trim-with-lvm-and-luksh3">TRIM with LVM and LUKS
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#trim-with-lvm-and-luks">TRIM with LVM and LUKS
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#future-considerationsh2">Future Considerations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#future-considerations">Future Considerations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9829,37 +9829,38 @@ What is TRIM? TRIM is a command that allows an operating system to inform an SSD
                 </a></div>
         <div class="content">
           <p>Solid State Drives (SSDs) have become the standard storage solution for modern computers, offering superior performance compared to traditional hard drives. However, to maintain optimal performance, SSDs require special maintenance - and this is where TRIM comes into play. This comprehensive guide will explain everything you need to know about TRIM in Linux systems.</p>
-<h2>What is TRIM?</h2><span class="hx-absolute -hx-mt-20" id="what-is-trimh2"></span>
-    <a href="#what-is-trimh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>TRIM is a command that allows an operating system to inform an SSD that blocks of data are no longer in use and can be wiped internally. Unlike traditional hard drives, SSDs cannot simply overwrite existing data - they must first erase blocks before writing new data to them. This technical requirement makes TRIM an essential feature for maintaining SSD performance and longevity.</p>
-<!-- wp:heading {"level":3} -->
-<h3>The Technical Background</h3><span class="hx-absolute -hx-mt-20" id="the-technical-backgroundh3"></span>
-    <a href="#the-technical-backgroundh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When you &ldquo;delete&rdquo; a file on any storage device, the operating system typically only removes the file&rsquo;s reference in the file system table, marking that space as available for new data. However, with SSDs:</p>
+<h2>What is TRIM?<span class="hx-absolute -hx-mt-20" id="what-is-trim"></span>
+    <a href="#what-is-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>TRIM is a command that allows an operating system to inform an SSD that blocks of data are no longer in use and can be wiped internally. Unlike traditional hard drives, SSDs cannot simply overwrite existing data - they must first erase blocks before writing new data to them. This technical requirement makes TRIM an essential feature for maintaining SSD performance and longevity.</p>
+<h3>The Technical Background<span class="hx-absolute -hx-mt-20" id="the-technical-background"></span>
+    <a href="#the-technical-background" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When you &ldquo;delete&rdquo; a file on any storage device, the operating system typically only removes the file&rsquo;s reference in the file system table, marking that space as available for new data. However, with SSDs:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>The drive doesn't know which blocks are truly free</li>
+- The drive doesn't know which blocks are truly free 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Writing to a block that contains "deleted" data requires an extra erase cycle</li>
+<ul>
+<li>Writing to a block that contains &ldquo;deleted&rdquo; data requires an extra erase cycle</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>This leads to increased write amplification and slower performance</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>TRIM solves these issues by telling the SSD which blocks are no longer in use, allowing the drive to perform background garbage collection efficiently.</p>
-<h2>How TRIM Works in Linux</h2><span class="hx-absolute -hx-mt-20" id="how-trim-works-in-linuxh2"></span>
-    <a href="#how-trim-works-in-linuxh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Linux systems can implement TRIM in two primary ways:</p>
-<!-- wp:heading {"level":3} -->
-<h3>1. Periodic TRIM</h3><span class="hx-absolute -hx-mt-20" id="1-periodic-trimh3"></span>
-    <a href="#1-periodic-trimh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Periodic TRIM, often called scheduled TRIM, runs at scheduled intervals (typically weekly) via a systemd timer or cron job. The system command responsible for this is <code>fstrim</code>, which passes the TRIM command to all mounted filesystems that support it.</p>
-<!-- wp:heading {"level":3} -->
-<h3>2. Continuous TRIM</h3><span class="hx-absolute -hx-mt-20" id="2-continuous-trimh3"></span>
-    <a href="#2-continuous-trimh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Continuous TRIM (also called real-time TRIM) sends the TRIM command immediately when files are deleted. This is enabled through the <code>discard</code> mount option in the filesystem configuration.</p>
-<h2>Checking TRIM Support</h2><span class="hx-absolute -hx-mt-20" id="checking-trim-supporth2"></span>
-    <a href="#checking-trim-supporth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Before implementing TRIM, you should verify that your system supports it. Here are the steps to check:</p>
+<h2>How TRIM Works in Linux<span class="hx-absolute -hx-mt-20" id="how-trim-works-in-linux"></span>
+    <a href="#how-trim-works-in-linux" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Linux systems can implement TRIM in two primary ways:</p>
+<h3>1. Periodic TRIM<span class="hx-absolute -hx-mt-20" id="1-periodic-trim"></span>
+    <a href="#1-periodic-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Periodic TRIM, often called scheduled TRIM, runs at scheduled intervals (typically weekly) via a systemd timer or cron job. The system command responsible for this is <code>fstrim</code>, which passes the TRIM command to all mounted filesystems that support it.</p>
+<h3>2. Continuous TRIM<span class="hx-absolute -hx-mt-20" id="2-continuous-trim"></span>
+    <a href="#2-continuous-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Continuous TRIM (also called real-time TRIM) sends the TRIM command immediately when files are deleted. This is enabled through the <code>discard</code> mount option in the filesystem configuration.</p>
+<h2>Checking TRIM Support<span class="hx-absolute -hx-mt-20" id="checking-trim-support"></span>
+    <a href="#checking-trim-support" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Before implementing TRIM, you should verify that your system supports it. Here are the steps to check:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Verify SSD TRIM Support</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Verify SSD TRIM Support*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">lsblk --discard</code></pre>
@@ -9867,28 +9868,27 @@ What is TRIM? TRIM is a command that allows an operating system to inform an SSD
 <p>Look for non-zero values in the DISC-GRAN (discard granularity) and DISC-MAX (discard maximum bytes) columns.</p>
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Check File System Support</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Check File System Support*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">findmnt -O discard</code></pre>
 <!-- /wp:code -->
 <p>This shows mounted filesystems that support the discard option.</p>
-<h2>Implementing TRIM</h2><span class="hx-absolute -hx-mt-20" id="implementing-trimh2"></span>
-    <a href="#implementing-trimh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- wp:heading {"level":3} -->
-<h3>Setting Up Periodic TRIM</h3><span class="hx-absolute -hx-mt-20" id="setting-up-periodic-trimh3"></span>
-    <a href="#setting-up-periodic-trimh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- wp:list {"ordered":true} -->
+<h2>Implementing TRIM<span class="hx-absolute -hx-mt-20" id="implementing-trim"></span>
+    <a href="#implementing-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Setting Up Periodic TRIM<span class="hx-absolute -hx-mt-20" id="setting-up-periodic-trim"></span>
+    <a href="#setting-up-periodic-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Check if the service is enabled</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Check if the service is enabled*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">systemctl status fstrim.timer</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enable the timer</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Enable the timer*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl enable fstrim.timer
@@ -9896,98 +9896,126 @@ sudo systemctl start fstrim.timer</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Verify the timer schedule</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Verify the timer schedule*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">systemctl list-timers --all | grep fstrim</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Implementing Continuous TRIM</h3><span class="hx-absolute -hx-mt-20" id="implementing-continuous-trimh3"></span>
-    <a href="#implementing-continuous-trimh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To enable continuous TRIM, modify your <code>/etc/fstab</code> file to include the <code>discard</code> option:</p>
+<h3>Implementing Continuous TRIM<span class="hx-absolute -hx-mt-20" id="implementing-continuous-trim"></span>
+    <a href="#implementing-continuous-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>To enable continuous TRIM, modify your <code>/etc/fstab</code> file to include the <code>discard</code> option:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">UUID=your-uuid-here  /  ext4  defaults,discard  0  1</code></pre>
 <!-- /wp:code -->
-<h2>Performance Considerations</h2><span class="hx-absolute -hx-mt-20" id="performance-considerationsh2"></span>
-    <a href="#performance-considerationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- wp:heading {"level":3} -->
-<h3>Periodic vs. Continuous TRIM</h3><span class="hx-absolute -hx-mt-20" id="periodic-vs-continuous-trimh3"></span>
-    <a href="#periodic-vs-continuous-trimh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Both approaches have their pros and cons:</p>
-<p><strong>Periodic TRIM</strong>:</p>
+<h2>Performance Considerations<span class="hx-absolute -hx-mt-20" id="performance-considerations"></span>
+    <a href="#performance-considerations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Periodic vs. Continuous TRIM<span class="hx-absolute -hx-mt-20" id="periodic-vs-continuous-trim"></span>
+    <a href="#periodic-vs-continuous-trim" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Both approaches have their pros and cons:</p>
+<p><em><strong>Periodic TRIM</strong></em> :</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Advantages:</li>
+- Advantages: 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Lower system overhead</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>More efficient batch processing</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Reduced write amplification</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Disadvantages:</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Delayed space reclamation</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Potential performance spikes during TRIM operations</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p><strong>Continuous TRIM</strong>:</p>
+<p><em><strong>Continuous TRIM</strong></em> :</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Advantages:</li>
+- Advantages: 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Immediate space reclamation</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>More consistent performance</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>No scheduled maintenance required</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Disadvantages:</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Slightly higher system overhead</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>More frequent small operations</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Potential impact on write performance</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Best Practices</h2><span class="hx-absolute -hx-mt-20" id="best-practicesh2"></span>
-    <a href="#best-practicesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- wp:heading {"level":3} -->
-<h3>1. SSD Optimization</h3><span class="hx-absolute -hx-mt-20" id="1-ssd-optimizationh3"></span>
-    <a href="#1-ssd-optimizationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Combine TRIM with other SSD optimization techniques:</p>
+<h2>Best Practices<span class="hx-absolute -hx-mt-20" id="best-practices"></span>
+    <a href="#best-practices" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>1. SSD Optimization<span class="hx-absolute -hx-mt-20" id="1-ssd-optimization"></span>
+    <a href="#1-ssd-optimization" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Combine TRIM with other SSD optimization techniques:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Enable TRIM appropriate for your use case</li>
+- Enable TRIM appropriate for your use case 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Use appropriate filesystem mount options</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Consider using the <code>relatime</code> mount option</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Ensure proper partition alignment</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Monitoring and Maintenance</h3><span class="hx-absolute -hx-mt-20" id="2-monitoring-and-maintenanceh3"></span>
-    <a href="#2-monitoring-and-maintenanceh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Regular maintenance tasks should include:</p>
+<h3>2. Monitoring and Maintenance<span class="hx-absolute -hx-mt-20" id="2-monitoring-and-maintenance"></span>
+    <a href="#2-monitoring-and-maintenance" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Regular maintenance tasks should include:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Checking TRIM Status</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Checking TRIM Status*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo fstrim -av</code></pre>
@@ -9995,8 +10023,8 @@ sudo systemctl start fstrim.timer</code></pre>
 <p>This command manually runs TRIM and provides feedback.</p>
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Monitoring SSD Health</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Monitoring SSD Health*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo smartctl -a /dev/sda</code></pre>
@@ -10004,20 +10032,19 @@ sudo systemctl start fstrim.timer</code></pre>
 <p>Use this to check SSD health metrics regularly.</p>
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Verifying TRIM Operations</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Verifying TRIM Operations*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">journalctl -u fstrim</code></pre>
 <!-- /wp:code -->
 <p>Review TRIM operation logs for any issues.</p>
-<!-- wp:heading {"level":3} -->
-<h3>3. System Configuration</h3><span class="hx-absolute -hx-mt-20" id="3-system-configurationh3"></span>
-    <a href="#3-system-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Optimal system configuration for SSDs:</p>
+<h3>3. System Configuration<span class="hx-absolute -hx-mt-20" id="3-system-configuration"></span>
+    <a href="#3-system-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Optimal system configuration for SSDs:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>I/O Scheduler</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***I/O Scheduler*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">echo "mq-deadline" | sudo tee /sys/block/sda/queue/scheduler</code></pre>
@@ -10025,119 +10052,140 @@ sudo systemctl start fstrim.timer</code></pre>
 <p>Use appropriate I/O schedulers for SSDs.</p>
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Swappiness</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Swappiness*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.conf</code></pre>
 <!-- /wp:code -->
 <p>Reduce swapping to minimize unnecessary writes.</p>
-<h2>Troubleshooting Common Issues</h2><span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issuesh2"></span>
-    <a href="#troubleshooting-common-issuesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- wp:heading {"level":3} -->
-<h3>1. TRIM Not Working</h3><span class="hx-absolute -hx-mt-20" id="1-trim-not-workingh3"></span>
-    <a href="#1-trim-not-workingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Common causes and solutions:</p>
+<h2>Troubleshooting Common Issues<span class="hx-absolute -hx-mt-20" id="troubleshooting-common-issues"></span>
+    <a href="#troubleshooting-common-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>1. TRIM Not Working<span class="hx-absolute -hx-mt-20" id="1-trim-not-working"></span>
+    <a href="#1-trim-not-working" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Common causes and solutions:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>File System Issues</strong>:</li>
+- ***File System Issues*** : 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Verify file system TRIM support</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Check mount options</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Ensure the filesystem is not mounted read-only</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Driver Problems</strong>:</li>
+<ul>
+<li><em><strong>Driver Problems</strong></em> :</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Update SSD firmware</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Verify AHCI mode in BIOS</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Check for kernel updates</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Performance Issues</h3><span class="hx-absolute -hx-mt-20" id="2-performance-issuesh3"></span>
-    <a href="#2-performance-issuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>If you experience performance problems:</p>
+<h3>2. Performance Issues<span class="hx-absolute -hx-mt-20" id="2-performance-issues"></span>
+    <a href="#2-performance-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>If you experience performance problems:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Check System Logs</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Check System Logs*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">dmesg | grep -i trim</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Monitor I/O Performance</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Monitor I/O Performance*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">iostat -x 1</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Verify TRIM Operations</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***Verify TRIM Operations*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo fstrim -v /</code></pre>
 <!-- /wp:code -->
-<h2>Advanced Topics</h2><span class="hx-absolute -hx-mt-20" id="advanced-topicsh2"></span>
-    <a href="#advanced-topicsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- wp:heading {"level":3} -->
-<h3>TRIM with LVM and LUKS</h3><span class="hx-absolute -hx-mt-20" id="trim-with-lvm-and-luksh3"></span>
-    <a href="#trim-with-lvm-and-luksh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When using LVM or LUKS encryption, additional configuration may be necessary:</p>
+<h2>Advanced Topics<span class="hx-absolute -hx-mt-20" id="advanced-topics"></span>
+    <a href="#advanced-topics" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>TRIM with LVM and LUKS<span class="hx-absolute -hx-mt-20" id="trim-with-lvm-and-luks"></span>
+    <a href="#trim-with-lvm-and-luks" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When using LVM or LUKS encryption, additional configuration may be necessary:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LVM Configuration</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***LVM Configuration*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">echo 'issue_discards = 1' | sudo tee -a /etc/lvm/lvm.conf</code></pre>
 <!-- /wp:code -->
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>LUKS Configuration</strong>:</li>
-<!-- /wp:list-item --></ol>
+- ***LUKS Configuration*** : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo cryptsetup --allow-discards --perf-no_read_workqueue --perf-no_write_workqueue refresh /dev/mapper/your-device</code></pre>
 <!-- /wp:code -->
-<h2>Future Considerations</h2><span class="hx-absolute -hx-mt-20" id="future-considerationsh2"></span>
-    <a href="#future-considerationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>As storage technology evolves, TRIM implementation continues to improve. Keep in mind:</p>
+<h2>Future Considerations<span class="hx-absolute -hx-mt-20" id="future-considerations"></span>
+    <a href="#future-considerations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>As storage technology evolves, TRIM implementation continues to improve. Keep in mind:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>NVMe drives may handle TRIM differently</li>
+- NVMe drives may handle TRIM differently 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Newer file systems may implement alternative optimization techniques</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Kernel updates may introduce new TRIM-related features</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>TRIM is a crucial feature for maintaining SSD performance in Linux systems. Whether you choose periodic or continuous TRIM depends on your specific use case and performance requirements. Regular maintenance and monitoring ensure your SSDs continue to perform optimally.</p>
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>TRIM is a crucial feature for maintaining SSD performance in Linux systems. Whether you choose periodic or continuous TRIM depends on your specific use case and performance requirements. Regular maintenance and monitoring ensure your SSDs continue to perform optimally.</p>
 <p>Remember to:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Regularly verify TRIM is working correctly</li>
+- Regularly verify TRIM is working correctly 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Monitor SSD health and performance</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Keep your system and firmware updated</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Follow best practices for your specific hardware and use case</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>By understanding and properly implementing TRIM, you can ensure your Linux system maintains optimal SSD performance and longevity.</p>
 

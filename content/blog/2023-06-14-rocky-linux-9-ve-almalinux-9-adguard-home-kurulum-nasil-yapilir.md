@@ -34,9 +34,9 @@ url: /tr/rocky-linux-9-ve-almalinux-9-adguard-home-kurulum-nasil-yapilir/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Sistem paketlerini güncelleyelim.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Sistem paketlerini güncelleyelim. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -45,9 +45,9 @@ sudo dnf groupinstall "Development Tools"</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>AdGuard paketlerini GitHub üzerinden indirip kuralım</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- AdGuard paketlerini GitHub üzerinden indirip kuralım 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -55,9 +55,9 @@ sudo dnf groupinstall "Development Tools"</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Firewall için gerekli izinleri açalım.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Firewall için gerekli izinleri açalım. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->

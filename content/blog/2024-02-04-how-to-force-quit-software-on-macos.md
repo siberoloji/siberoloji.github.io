@@ -29,7 +29,7 @@ url: /how-to-force-quit-software-on-macos/
  
 
  
- ## Force stop with key combination</h2>
+ ## Force stop with key combination
 <!-- /wp:heading -->
 
   Press Option(Alt) + Command+ESC (Escape) on your keyboard or select "force quit" from the  menu in the upper left corner. 

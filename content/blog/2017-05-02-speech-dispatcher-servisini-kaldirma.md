@@ -34,7 +34,7 @@ url: /tr/speech-dispatcher-servisini-kaldirma/
  
 
  
-<h2 class="wp-block-heading" id="sadece-speech-dispatcher-kaldırma">Sadece speech-dispatcher kaldırma</h2>
+<h2 class="wp-block-heading" id="sadece-speech-dispatcher-kaldırma">Sadece speech-dispatcher kaldırma
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -43,7 +43,7 @@ url: /tr/speech-dispatcher-servisini-kaldirma/
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="speech-dispatcher-ve-bağımlılıkları-kaldırma">speech-dispatcher ve bağımlılıkları kaldırma</h2>
+<h2 class="wp-block-heading" id="speech-dispatcher-ve-bağımlılıkları-kaldırma">speech-dispatcher ve bağımlılıkları kaldırma
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -52,7 +52,7 @@ url: /tr/speech-dispatcher-servisini-kaldirma/
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="speech-dispacher-ve-ayarlarını-kaldırma">speech dispacher ve ayarlarını kaldırma</h2>
+<h2 class="wp-block-heading" id="speech-dispacher-ve-ayarlarını-kaldırma">speech dispacher ve ayarlarını kaldırma
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -61,7 +61,7 @@ url: /tr/speech-dispatcher-servisini-kaldirma/
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="speech-dispacther-ayarlarını-ve-bağımlılıklarını-kaldırma">speech-dispacther, ayarlarını ve bağımlılıklarını kaldırma</h2>
+<h2 class="wp-block-heading" id="speech-dispacther-ayarlarını-ve-bağımlılıklarını-kaldırma">speech-dispacther, ayarlarını ve bağımlılıklarını kaldırma
 <!-- /wp:heading -->
 
 <!-- wp:code -->

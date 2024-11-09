@@ -28,7 +28,7 @@ url: /c-example-calculating-the-factorial-of-the-entered-number/
 ---
 
 <!-- wp:paragraph -->
-<p>In this example, we show how to calculate the factorial of the entered number with the help of a function.</p>
+<p>In this example, we show how to calculate the factorial of the entered number with the help of a function.
   
 
 <!-- wp:code -->

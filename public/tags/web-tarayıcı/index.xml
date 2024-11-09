@@ -27,12 +27,16 @@
         &lt;p&gt;Bir sayfanın kaynak kodunu görüntülemek, web tasarımcılarının ve geliştiricilerin tercih ettikleri düzeni elde etmelerini sağlar. Yalnızca web sayfalarının kaynağını görüntüleyerek web sitelerinde hızlı bir şekilde hata ayıklamalarına yardımcı olur. İleri düzey Mac kullanıcıları, bir web sayfasındaki sayfa kaynaklarını görüntülemekten büyük ölçüde yararlanabilir. Web sayfasıyla ilgili sorunları giderebilir ve düzeltebilir, koddaki stili ayarlayabilir ve farklı optimizasyon tekniklerini öğrenebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Kaynak kodunu Safari tarayıcısında görüntülemek için gereken adımlar aşağıdadır.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Safari tarayıcınızı açın ve görüntülemek istediğiniz web sayfasına gidin.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Üst menü çubuğundan Geliştir &gt; Sayfa Kaynağını Göster&#39;i seçin. Klavyenizde Option+Command+U tuşlarına da basabilirsiniz.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Üst menü çubuğundan Geliştir &amp;gt; Sayfa Kaynağını Göster&amp;rsquo;i seçin. Klavyenizde Option+Command+U tuşlarına da basabilirsiniz.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Geliştirme menüsü görünmüyorsa Tercihler &amp;gt; Gelişmiş&amp;rsquo;e gidin ve menü çubuğunda Geliştirmeyi Göster menüsünü seçin.&lt;/p&gt;
 

@@ -23,44 +23,44 @@ url: /what-is-perplexity-spaces-new-ai-feature/
  
 
  
- ## What Are Perplexity Spaces?</h2>
+ ## What Are Perplexity Spaces?
 <!-- /wp:heading -->
 
-  Perplexity Spaces can be described as <strong>AI-powered collaboration hubs</strong> that allow users to group their research threads and files by topic or project. This organization facilitates smoother collaboration among team members and enhances the overall research experience. Whether you are a student working on a group project, a sales team preparing proposals, or a researcher gathering data, Perplexity Spaces provides a tailored environment to streamline your workflow. 
+  Perplexity Spaces can be described as ***AI-powered collaboration hubs***  that allow users to group their research threads and files by topic or project. This organization facilitates smoother collaboration among team members and enhances the overall research experience. Whether you are a student working on a group project, a sales team preparing proposals, or a researcher gathering data, Perplexity Spaces provides a tailored environment to streamline your workflow. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Key Features of Perplexity Spaces</h3>
+
+ ### Key Features of Perplexity Spaces
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Organized Research</strong>: Users can create distinct Spaces for different projects or topics. This organization helps keep related information together, making it easier to access and manage.</li>
+- ***Organized Research*** : Users can create distinct Spaces for different projects or topics. This organization helps keep related information together, making it easier to access and manage. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Collaboration Tools</strong>: Spaces enable users to invite collaborators, allowing them to contribute as viewers or active participants. Collaborators can create new threads or ask follow-up questions within the Space, fostering a collaborative research environment.</li>
+- ***Collaboration Tools*** : Spaces enable users to invite collaborators, allowing them to contribute as viewers or active participants. Collaborators can create new threads or ask follow-up questions within the Space, fostering a collaborative research environment. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>File Uploads</strong>: For Perplexity Pro and Enterprise Pro users, there is an option to upload files directly into a Space. This feature allows users to keep relevant documents organized alongside their threads.</li>
+- ***File Uploads*** : For Perplexity Pro and Enterprise Pro users, there is an option to upload files directly into a Space. This feature allows users to keep relevant documents organized alongside their threads. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Custom AI Interaction</strong>: Users can customize the AI assistant within each Space by selecting preferred AI models and providing specific instructions on how they want the AI to respond. This personalization enhances the relevance of the information retrieved.</li>
+- ***Custom AI Interaction*** : Users can customize the AI assistant within each Space by selecting preferred AI models and providing specific instructions on how they want the AI to respond. This personalization enhances the relevance of the information retrieved. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Search Capabilities</strong>: Users can choose to search across web sources, uploaded files, or both. This flexibility ensures that users can find the most relevant information quickly.</li>
+- ***Search Capabilities*** : Users can choose to search across web sources, uploaded files, or both. This flexibility ensures that users can find the most relevant information quickly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Access Control</strong>: Perplexity Spaces offers full access controls, allowing users to manage who can view or edit their research. For Enterprise Pro customers, all files and searches are excluded from AI training by default, ensuring data privacy.</li>
-<!-- /wp:list-item --></ol>
+- ***Access Control*** : Perplexity Spaces offers full access controls, allowing users to manage who can view or edit their research. For Enterprise Pro customers, all files and searches are excluded from AI training by default, ensuring data privacy. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### How to Create a Space</h3>
+
+ ### How to Create a Space
 <!-- /wp:heading -->
 
   Setting up a Space in Perplexity is straightforward: 
@@ -68,28 +68,28 @@ url: /what-is-perplexity-spaces-new-ai-feature/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Navigate to the left menu in the Perplexity interface and click on <strong>Spaces</strong>.</li>
+- Navigate to the left menu in the Perplexity interface and click on ***Spaces*** . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click on <strong>Create a Space</strong>.</li>
+- Click on ***Create a Space*** . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Enter a <strong>Title</strong> and an optional <strong>Description</strong> for your Space.</li>
+- Enter a ***Title***  and an optional ***Description***  for your Space. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>If you’re using Perplexity Pro or Enterprise Pro, select your preferred <strong>AI Model</strong> from the dropdown menu.</li>
+- If you’re using Perplexity Pro or Enterprise Pro, select your preferred ***AI Model***  from the dropdown menu. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Input any <strong>Custom Instructions</strong> for the AI to tailor its responses according to your needs.</li>
-<!-- /wp:list-item --></ol>
+- Input any ***Custom Instructions***  for the AI to tailor its responses according to your needs. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Practical Applications of Perplexity Spaces</h3>
+
+ ### Practical Applications of Perplexity Spaces
 <!-- /wp:heading -->
 
   The versatility of Perplexity Spaces makes it suitable for various use cases across different fields: 
@@ -97,57 +97,57 @@ url: /what-is-perplexity-spaces-new-ai-feature/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Academic Research</strong>: Students can create dedicated Spaces for each course or project, allowing them to gather resources, collaborate with classmates, and keep track of their progress efficiently.</li>
+- ***Academic Research*** : Students can create dedicated Spaces for each course or project, allowing them to gather resources, collaborate with classmates, and keep track of their progress efficiently. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Business Development</strong>: Sales teams can use Spaces to compile past proposals and combine them with current market research, streamlining the proposal process for potential clients.</li>
+- ***Business Development*** : Sales teams can use Spaces to compile past proposals and combine them with current market research, streamlining the proposal process for potential clients. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Human Resources</strong>: HR teams can maintain a Space that consolidates employee benefits information and wellness resources, making it easy for employees to find answers quickly.</li>
+- ***Human Resources*** : HR teams can maintain a Space that consolidates employee benefits information and wellness resources, making it easy for employees to find answers quickly. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Creative Projects</strong>: Writers or content creators can use Spaces to organize their ideas, drafts, and research materials in one place, facilitating a more structured writing process.</li>
-<!-- /wp:list-item --></ul>
+- ***Creative Projects*** : Writers or content creators can use Spaces to organize their ideas, drafts, and research materials in one place, facilitating a more structured writing process. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Benefits of Using Perplexity Spaces</h3>
+
+ ### Benefits of Using Perplexity Spaces
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Enhanced Collaboration</strong>: By allowing multiple users to contribute within a single Space, collaboration becomes more efficient and productive.</li>
+- ***Enhanced Collaboration*** : By allowing multiple users to contribute within a single Space, collaboration becomes more efficient and productive. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Centralized Information Hub</strong>: With all related threads and files in one place, users save time searching for information across different platforms.</li>
+- ***Centralized Information Hub*** : With all related threads and files in one place, users save time searching for information across different platforms. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Tailored Research Experience</strong>: The ability to customize AI interactions ensures that users receive relevant responses tailored to their specific needs.</li>
+- ***Tailored Research Experience*** : The ability to customize AI interactions ensures that users receive relevant responses tailored to their specific needs. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Improved Productivity</strong>: By streamlining workflows and enhancing access to information, Perplexity Spaces significantly boosts productivity for teams and individuals alike.</li>
+- ***Improved Productivity*** : By streamlining workflows and enhancing access to information, Perplexity Spaces significantly boosts productivity for teams and individuals alike. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Data Privacy Assurance</strong>: The focus on user control over access and data privacy ensures that sensitive information remains secure within each Space.</li>
-<!-- /wp:list-item --></ol>
+- ***Data Privacy Assurance*** : The focus on user control over access and data privacy ensures that sensitive information remains secure within each Space. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Future Developments</h3>
+
+ ### Future Developments
 <!-- /wp:heading -->
 
   Perplexity is continuously evolving its offerings based on user feedback and technological advancements. Upcoming enhancements include third-party data integrations with services like Crunchbase and FactSet for Enterprise Pro customers. These integrations will further expand the capabilities of Perplexity Spaces by allowing users to access proprietary datasets alongside public web content and internal files. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Conclusion</h3>
+
+ ### Conclusion
 <!-- /wp:heading -->
 
   Perplexity Spaces represents a significant advancement in how individuals and teams approach research and collaboration in an increasingly digital world. With its robust features designed for organization, collaboration, and customization, it empowers users to conduct thorough research efficiently while maintaining control over their data privacy. 

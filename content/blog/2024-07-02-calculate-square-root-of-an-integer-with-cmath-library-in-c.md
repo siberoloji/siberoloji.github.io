@@ -25,11 +25,11 @@ title: Calculate square root of an integer with cmath library in C++
 url: /calculate-square-root-of-an-integer-with-cmath-library-in-c/
 ---
 
-  The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, <code>iostream</code> for input/output operations and <code>cmath</code> for mathematical operations.</p>
+  The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, <code>iostream</code> for input/output operations and <code>cmath</code> for mathematical operations.
  
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -60,10 +60,10 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
-  The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, <code>iostream</code> for input/output operations and <code>cmath</code> for mathematical operations.</p>
+  The provided C++ code is a simple program that calculates the square root of a user-provided number. It begins by including the necessary libraries, <code>iostream</code> for input/output operations and <code>cmath</code> for mathematical operations.
  
 
 <!-- wp:code -->
@@ -72,14 +72,14 @@ int main() {
 using namespace std;</code></pre>
 <!-- /wp:code -->
 
-  The main function of the program starts with the declaration of a float variable <code>inputNumber</code> which is used to store the user's input.</p>
+  The main function of the program starts with the declaration of a float variable <code>inputNumber</code> which is used to store the user's input.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">float inputNumber;</code></pre>
 <!-- /wp:code -->
 
-  The program then prompts the user to enter a number using <code>cout</code> and stores the user's input in the <code>inputNumber</code> variable using <code>cin</code>.</p>
+  The program then prompts the user to enter a number using <code>cout</code> and stores the user's input in the <code>inputNumber</code> variable using <code>cin</code>.
  
 
 <!-- wp:code -->
@@ -87,21 +87,21 @@ using namespace std;</code></pre>
 cin &gt;&gt; inputNumber;</code></pre>
 <!-- /wp:code -->
 
-  The program checks if the input number is non-negative using an <code>if</code> statement. This is important because the square root of a negative number is not a real number and would result in an error.</p>
+  The program checks if the input number is non-negative using an <code>if</code> statement. This is important because the square root of a negative number is not a real number and would result in an error.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">if (inputNumber &gt;= 0.0) {</code></pre>
 <!-- /wp:code -->
 
-  Inside the <code>if</code> statement, the program calculates the square root of the input number using the <code>sqrt</code> function from the <code>cmath</code> library and stores the result in the <code>squareRoot</code> variable.</p>
+  Inside the <code>if</code> statement, the program calculates the square root of the input number using the <code>sqrt</code> function from the <code>cmath</code> library and stores the result in the <code>squareRoot</code> variable.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="cpp" class="language-cpp">float squareRoot = sqrt(inputNumber);</code></pre>
 <!-- /wp:code -->
 
-  Finally, the program prints the input number and its square root using <code>cout</code>.</p>
+  Finally, the program prints the input number and its square root using <code>cout</code>.
  
 
 <!-- wp:code -->
@@ -109,11 +109,11 @@ cin &gt;&gt; inputNumber;</code></pre>
 cout &lt;&lt; "Square root: " &lt;&lt; squareRoot &lt;&lt; "\n";</code></pre>
 <!-- /wp:code -->
 
-  This code is a simple demonstration of user input, conditional statements, and mathematical operations in C++.</p>
+  This code is a simple demonstration of user input, conditional statements, and mathematical operations in C++.
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -25,7 +25,7 @@ title: 'NetBIOS: A Primer'
 url: /netbios-a-primer/
 ---
 
-  <strong>Introduction</strong> 
+  ***Introduction***  
  
 
   NetBIOS,&nbsp;or Network Basic Input/Output System,&nbsp;is a legacy network protocol primarily used on Microsoft Windows systems.&nbsp;It provides a simple interface for applications to access network services,&nbsp;such as file sharing,&nbsp;printing,&nbsp;and naming resolution.&nbsp;While it has been largely superseded by more modern protocols like TCP/IP,&nbsp;NetBIOS remains relevant in certain legacy environments and specific network configurations. 
@@ -35,7 +35,7 @@ url: /netbios-a-primer/
  
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>History of NetBIOS</strong></h3>
+ ### ***History of NetBIOS*** 
 <!-- /wp:heading -->
 
   NetBIOS was originally developed by IBM in the early 1980s as a component of the PC-DOS operating system.&nbsp;Its primary purpose was to provide a basic networking capability for personal computers,&nbsp;enabling them to share files and printers over local area networks (LANs). 
@@ -45,7 +45,7 @@ url: /netbios-a-primer/
  
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>NetBIOS Functionality</strong></h3>
+ ### ***NetBIOS Functionality*** 
 <!-- /wp:heading -->
 
   NetBIOS operates on the datalink layer of the OSI model,&nbsp;providing a set of services for applications to communicate with each other on a network.&nbsp;Key functionalities of NetBIOS include: 
@@ -53,20 +53,20 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Name resolution:</strong> NetBIOS allows applications to resolve names of network resources, such as computers and printers, into their corresponding network addresses.</li>
+- ***Name resolution:***  NetBIOS allows applications to resolve names of network resources, such as computers and printers, into their corresponding network addresses. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Session management:</strong> NetBIOS manages sessions between applications, allowing them to establish connections and exchange data.</li>
+- ***Session management:***  NetBIOS manages sessions between applications, allowing them to establish connections and exchange data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Datagram services:</strong> NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection.</li>
-<!-- /wp:list-item --></ul>
+- ***Datagram services:***  NetBIOS provides a datagram service for sending and receiving short messages without requiring a connection. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>NetBIOS Components</strong></h3>
+ ### ***NetBIOS Components*** 
 <!-- /wp:heading -->
 
   NetBIOS consists of several key components: 
@@ -74,27 +74,27 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>NetBIOS Name Service (NBNS):</strong> This component resolves NetBIOS names into their corresponding network addresses. NBNS uses a broadcast-based protocol to locate other computers on the network.</li>
+- ***NetBIOS Name Service (NBNS):***  This component resolves NetBIOS names into their corresponding network addresses. NBNS uses a broadcast-based protocol to locate other computers on the network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>NetBIOS Interface Message Processor (NIB):</strong> The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa. It interacts with the underlying network interface card (NIC) to transmit and receive data.</li>
+- ***NetBIOS Interface Message Processor (NIB):***  The NIB is responsible for encapsulating NetBIOS messages into network frames and vice versa. It interacts with the underlying network interface card (NIC) to transmit and receive data. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>NetBIOS Workgroup:</strong> A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS.</li>
-<!-- /wp:list-item --></ul>
+- ***NetBIOS Workgroup:***  A NetBIOS workgroup is a logical grouping of computers that share resources.Computers within the same workgroup can easily communicate with each other using NetBIOS. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>NetBIOS Over TCP/IP (NBT)</strong></h3>
+ ### ***NetBIOS Over TCP/IP (NBT)*** 
 <!-- /wp:heading -->
 
   To integrate NetBIOS with TCP/IP networks,&nbsp;Microsoft introduced NetBIOS Over TCP/IP (NBT).&nbsp;NBT provides a way for NetBIOS applications to communicate over TCP/IP networks,&nbsp;allowing them to coexist with other TCP/IP-based applications.&nbsp;NBT uses TCP port 139 for session-oriented communication and UDP port 137 for name resolution. 
  
 
 <!-- wp:heading {"level":3,"className":""} -->
- ### <strong>NetBIOS and Modern Networking</strong></h3>
+ ### ***NetBIOS and Modern Networking*** 
 <!-- /wp:heading -->
 
   While NetBIOS has been largely replaced by TCP/IP-based protocols in modern networking environments,it still has relevance in certain scenarios.&nbsp;Some common use cases for NetBIOS include: 
@@ -102,36 +102,36 @@ url: /netbios-a-primer/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Legacy applications:</strong> Some older applications may still rely on NetBIOS for network communication.</li>
+- ***Legacy applications:***  Some older applications may still rely on NetBIOS for network communication. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Small networks:</strong> In small, simple network environments, NetBIOS can provide a basic networking solution.</li>
+- ***Small networks:***  In small, simple network environments, NetBIOS can provide a basic networking solution. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Specific services:</strong> Certain services, such as file and print sharing, may still use NetBIOS.</li>
-<!-- /wp:list-item --></ul>
+- ***Specific services:***  Certain services, such as file and print sharing, may still use NetBIOS. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Challenges and Considerations:</strong> 
+  ***Challenges and Considerations:***  
  
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Security:</strong> NetBIOS can be vulnerable to security attacks, such as spoofing and denial of service (DoS) attacks. Proper security measures, such as firewalls and intrusion detection systems, should be implemented to protect NetBIOS networks.</li>
+- ***Security:***  NetBIOS can be vulnerable to security attacks, such as spoofing and denial of service (DoS) attacks. Proper security measures, such as firewalls and intrusion detection systems, should be implemented to protect NetBIOS networks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Scalability:</strong> NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism.</li>
+- ***Scalability:***  NetBIOS may not be suitable for large-scale networks due to its broadcast-based name resolution mechanism. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Compatibility:</strong> NetBIOS may not be compatible with all network operating systems or hardware.</li>
-<!-- /wp:list-item --></ul>
+- ***Compatibility:***  NetBIOS may not be compatible with all network operating systems or hardware. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  <strong>Conclusion</strong> 
+  ***Conclusion***  
  
 
   NetBIOS,&nbsp;while a legacy protocol,&nbsp;continues to play a role in certain networking environments.Understanding its functionality,&nbsp;components,&nbsp;and integration with TCP/IP is essential for network administrators and IT professionals working with older systems or specific network configurations.&nbsp;As modern networking technologies continue to evolve,&nbsp;NetBIOS is likely to become increasingly less prevalent,&nbsp;but its historical significance and continued use in certain niche areas cannot be ignored. 

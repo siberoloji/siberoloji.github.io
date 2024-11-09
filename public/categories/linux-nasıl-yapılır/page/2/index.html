@@ -9697,13 +9697,13 @@
            <p>Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.</p>
  <p>1. pngquant</p>
  <p>2. jpegoptim</p>
-<h2>pngquant kurulum:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kurulumh2"></span>
+## pngquant kurulum:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kurulumh2"></span>
     <a href="#pngquant-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.</p>
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install pngquant</pre>
 <!-- /wp:preformatted -->
-<h2>pngquant kullanım:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kullanımh2"></span>
+## pngquant kullanım:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kullanımh2"></span>
     <a href="#pngquant-kullan%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&nbsp;-o&nbsp;&nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.</p>
 <!-- wp:preformatted -->
@@ -9714,13 +9714,13 @@ pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir
  <p>--force&nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.</p>
  <p>--skip-if-larger&nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.</p>
  <p>Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.</p>
-<h2>Jpegoptim Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kurulumh2"></span>
+## Jpegoptim Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kurulumh2"></span>
     <a href="#jpegoptim-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.</p>
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install jpegoptim</pre>
 <!-- /wp:preformatted -->
-<h2>jpegoptim kullanım:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kullanımh2"></span>
+## jpegoptim kullanım:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kullanımh2"></span>
     <a href="#jpegoptim-kullan%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
  <p>jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.</p>
 <!-- wp:preformatted -->
@@ -9751,7 +9751,7 @@ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.</p
           <p>Linux Ev kullanıcıları veya sistem yöneticileri tarafından kullanılan veya kullanılması gereken önemli tarama programlarından bir tanesi de lynis isimli programdır. Bu yazıda, sistemimizin çalışmasını sağlayan servislerin ve hizmetlerin entegre ve hatasız çalışıp çalışmadığını kontrol etmek amacıyla kullanılan &ldquo;lynis&rdquo; aracının kurulum ve kullanımı açıklanacaktır.</p>
 <p>Program, GPLv3 lisansıyla dağıtılmaktadır ve komut satırından çalışmaktadır. Şirketler için ticari sürümü de bulunan programın, tüm sisteminizi tarayıp sonuç raporunu &lsquo;&rsquo;.log&rsquo;&rsquo; dosyası şeklinde bilgisayarınıza kaydettiğini belirtelim. Bulunan HATA ve TAVSİYELER konusunda, ticari sürümde doğrudan çözümler sunulduğu halde ücretsiz sürümde hataları, &lsquo;&rsquo;log&rsquo;&rsquo; dosyası içerisinden kendiniz bulup, gerekli tedbiri de kendiniz almak durumundasınız. Ancak bunu yapmak o kadar da zor değil.</p>
 <p>Aşağıdaki komutlarda bu yazının hazırlandığı tarihte en güncel sürüm olan &ldquo;2.3.4&rdquo; kullanılmıştır. Siz, en son sürümü bu <a href="https://cisofy.com/downloads/" target="_blank" rel="noreferrer noopener">bağlantıdan</a> kontrol ederek komutlara &lsquo;&lsquo;&lsquo;2.3.4&rsquo;&rsquo;&rsquo; yerine en son sürümün numarasını yazabilirsiniz.</p>
-<h2>Lynis Kurulum</h2><span class="hx-absolute -hx-mt-20" id="lynis-kurulumh2"></span>
+## Lynis Kurulum</h2><span class="hx-absolute -hx-mt-20" id="lynis-kurulumh2"></span>
     <a href="#lynis-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Aşağıdaki komutlar yardımıyla sıkıştırılmış arşiv dosyasını /tmp klasörüne indiriyoruz. İndirilen dosyayı /usr/local klasörüne açıyoruz. Arşiv açıldığında /usr/local klasörünün içerisine /lynis isimli klasörü oluşturacaktır.</p>
 <!-- wp:preformatted -->
@@ -9759,7 +9759,7 @@ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.</p
 wget <a href="https://cisofy.com/files/lynis-2.3.4.tar.gz">https://cisofy.com/files/lynis-2.3.4.tar.gz</a>
 sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/</pre>
 <!-- /wp:preformatted -->
-<h2>Lynis Tarama</h2><span class="hx-absolute -hx-mt-20" id="lynis-taramah2"></span>
+## Lynis Tarama</h2><span class="hx-absolute -hx-mt-20" id="lynis-taramah2"></span>
     <a href="#lynis-taramah2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Açılan dosyaların olduğu klasöre girerek lynis programını kurulum yapmadan doğrudan çalıştırabilirsiniz. Çalıştırabilmek için sistemde yönetici yetkilerine sahip olmalısınız.</p>
 <!-- wp:preformatted -->
@@ -9874,7 +9874,7 @@ sudo ./lynis -c -Q</pre>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 <p>Tarama sona erdiğinde tüm sonuçlar oluşturulan &lsquo;&rsquo;<em>/var/log/lynis.log</em>&rsquo;&rsquo; dosyasına kaydedilir.</p>
-<h2>Lynis Tarama Sonuçlarını İnceleme</h2><span class="hx-absolute -hx-mt-20" id="lynis-tarama-sonuçlarını-incelemeh2"></span>
+## Lynis Tarama Sonuçlarını İnceleme</h2><span class="hx-absolute -hx-mt-20" id="lynis-tarama-sonuçlarını-incelemeh2"></span>
     <a href="#lynis-tarama-sonu%c3%a7lar%c4%b1n%c4%b1-incelemeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Tarama ve testlerin sonucunda oluşturulan sonuçların yazıldığı /var/log/lynis.log dosyasını incelememiz gerekmektedir. İşte bu işlem ticari sürümde otomatik yapılırken biz elle yapacağız. Bunun için rapor dosyasını 3 şekilde inceleme imkanımız var;</p>
 <!-- wp:list -->
@@ -9919,7 +9919,7 @@ sudo ./lynis -c -Q</pre>
 <pre class="wp-block-preformatted">20:02:44] Suggestion: Default umask in /etc/login.defs could be more strict like 027 [AUTH-9328]  
 20:02:44] Suggestion: Default umask in /etc/init.d/rc could be more strict like 027 [AUTH-9328]</pre>
 <!-- /wp:preformatted -->
-<h2>Yardım Bilgilerini Görüntüleme</h2><span class="hx-absolute -hx-mt-20" id="yardım-bilgilerini-görüntülemeh2"></span>
+## Yardım Bilgilerini Görüntüleme</h2><span class="hx-absolute -hx-mt-20" id="yardım-bilgilerini-görüntülemeh2"></span>
     <a href="#yard%c4%b1m-bilgilerini-g%c3%b6r%c3%bcnt%c3%bclemeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Aşağıdaki komutlar ile özet ve detaylı yardım sayfalarını görüntüleyebilirsiniz.</p>
 <!-- wp:preformatted -->
@@ -9946,17 +9946,17 @@ sudo ./lynis show options</pre>
 <p>Bu duruma bir miktar engel olmak için, bilgisayarınızın ekranından yayılan renklerin içerisinde bulunan mavi ışık oranını azaltmalısınız. Bu amaçla geliştirilen Redshift programını mutlaka denemelisiniz. Program, saate ve bulunduğunuz konumda güneşin durumuna göre ekran renklerinin sıcaklığını otomatik olarak ayarlayarak rahat bir deneyim yaşamanızı sağlıyor.</p>
 <p>Ekran sıcaklığını Kelvin (3500K-6500K vb.) cinsinden değerlerle ayarlayan programı ilk günlerde biraz garip bulabilirsiniz. Ekranın kırmızı bir ton aldığını fark edip şaşırmayın. Kendinize biraz zaman tanıyın ve yavaş yavaş alışmaya çalışın. Bir kaç gün sonra artık gözlerinizin eskisi gibi kurumadığını ve bilgisayar başından ayrılınca daha kısa sürede uyuyabildiğinizi göreceksiniz.</p>
 <p>Redshift programı, neredeyse bütün Linux dağıtımlarının paket depolarında bulunmaktadır. Kurulum için aşağıdaki komutları kullanmanız yeterli.</p>
-<h2>Redshift Ubuntu - Debian Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshift-ubuntu---debian-kurulumh2"></span>
+## Redshift Ubuntu - Debian Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshift-ubuntu---debian-kurulumh2"></span>
     <a href="#redshift-ubuntu---debian-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo apt install redshift redshift-gtk</code></pre>
 <!-- /wp:code -->
-<h2>Redshift CentOS - Fedora Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspcentos---fedora-kurulumh2"></span>
+## Redshift CentOS - Fedora Kurulum</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspcentos---fedora-kurulumh2"></span>
     <a href="#redshiftnbspcentos---fedora-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo yum install redshift gtk-redshift</code></pre>
 <!-- /wp:code -->
-<h2>Redshift Yardım</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspyardımh2"></span>
+## Redshift Yardım</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspyardımh2"></span>
     <a href="#redshiftnbspyard%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Redshift programını, komut satırından kontrol etmeniz de mümkün. Aşağıdaki yardım komutu ile açıklamaları okuyabilirsiniz.</p>
 <!-- wp:code -->
@@ -9964,7 +9964,7 @@ sudo ./lynis show options</pre>
 
 </code></pre>
 <!-- /wp:code -->
-<h2>Redshift Ayarlar Dosyası</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspayarlar-dosyasıh2"></span>
+## Redshift Ayarlar Dosyası</h2><span class="hx-absolute -hx-mt-20" id="redshiftnbspayarlar-dosyasıh2"></span>
     <a href="#redshiftnbspayarlar-dosyas%c4%b1h2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Programın ayarlarının bulunduğu dosyayı, ~/.config/redshift.conf adresinde bulabilirsiniz.</p>
 <!-- wp:code -->
@@ -10140,7 +10140,7 @@ WantedBy<strong>=</strong>multi-user.target
           <h1>Fish &amp;#8211; Komut Satırına Farklı Bir Yaklaşım</h1>
           <p>Linux denildiğinde herhalde ilk akla gelen konulardan bir tanesi de komut satırı ve terminaldir. Komut satırında yazdığınız ifadeleri işleyen kabuk (shell) ise farklı sürümleriyle kullanıcılara sunulur. Bash, Dash, Zsh, Csh bunlara örnek olarak verilebilir. Bu yazımızda size Fish kabuk programının kurulumunu açıklayacağız.</p>
 <p>Fish, kullanıcı dostu olarak bilinen bir kabuk programıdır. Komut tamamlama, komut içerisinde farklı formları farklı renklendirme özelliklerine sahiptir. Komut yazımı esnasında çeşitli tavsiyeler sunar ve bunları, o an bulunduğunuz klasörü de dikkate alarak yapar. Önerileri yön tuşlarıyla kolayca seçebilirsiniz. Yardım komutlarını otomatik olarak web tarayıcıda açması da kullanım kolaylığı açısında vurgulanması gereken özelliklerinden birisidir.</p>
-<h2>Debian için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="debian-için-fish-kurulumh2"></span>
+## Debian için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="debian-için-fish-kurulumh2"></span>
     <a href="#debian-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Debian 8 ----------------
@@ -10153,7 +10153,7 @@ echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/relea
 apt-get update
 apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Ubuntu için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="ubuntu-için-fish-kurulumh2"></span>
+## Ubuntu için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="ubuntu-için-fish-kurulumh2"></span>
     <a href="#ubuntu-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Ubuntu ----------------
@@ -10163,7 +10163,7 @@ sudo apt-get install python-software-properties
 sudo apt-get update
 sudo apt-get install fish</code></pre>
 <!-- /wp:code -->
-<h2>Fedora için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="fedora-için-fish-kurulumh2"></span>
+## Fedora için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="fedora-için-fish-kurulumh2"></span>
     <a href="#fedora-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- Fedora 22 ----------------
@@ -10181,7 +10181,7 @@ cd /etc/yum.repos.d/
 wget <a href="http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo">http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo</a>
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>CentOS için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="centos-için-fish-kurulumh2"></span>
+## CentOS için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="centos-için-fish-kurulumh2"></span>
     <a href="#centos-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- CentOS 7 ----------------
@@ -10194,7 +10194,7 @@ cd /etc/yum.repos.d/
 wget <a href="http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo">http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo</a>
 yum install fish</code></pre>
 <!-- /wp:code -->
-<h2>RHEL için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="rhel-için-fish-kurulumh2"></span>
+## RHEL için Fish Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="rhel-için-fish-kurulumh2"></span>
     <a href="#rhel-i%c3%a7in-fish-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">---------------- RHEL 7 ----------------

@@ -21,26 +21,32 @@ Sistem paketlerini güncelleyelim. sudo dnf clean all &amp;&amp; sudo dnf update
 Bu yazımızda, Rocky Linux 9 ve AlmaLinux 9 sürümünü kullanan sunucumuza Adguard Home kurulumunu paylaşacağız.
 Aşağıdaki adımları komut satırınızda sırayla uygulamalısınız.
 
+ 
 
 Sistem paketlerini güncelleyelim.
 
+ 
 
 
 sudo dnf clean all &amp;&amp; sudo dnf update
 sudo dnf groupinstall &#34;Development Tools&#34;
 
 
+ 
 
 AdGuard paketlerini GitHub üzerinden indirip kuralım
 
+ 
 
 
 curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
 
+ 
 
 Firewall için gerekli izinleri açalım.
 
+ 
 
 
 sudo firewall-cmd --add-service={dns,http,https} --permanent
@@ -9716,26 +9722,32 @@ Sistem paketlerini güncelleyelim. sudo dnf clean all &amp;&amp; sudo dnf update
 <p>Bu yazımızda, Rocky Linux 9 ve AlmaLinux 9 sürümünü kullanan sunucumuza Adguard Home kurulumunu paylaşacağız.</p>
 <p>Aşağıdaki adımları komut satırınızda sırayla uygulamalısınız.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Sistem paketlerini güncelleyelim.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf clean all &amp;&amp; sudo dnf update
 sudo dnf groupinstall "Development Tools"</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>AdGuard paketlerini GitHub üzerinden indirip kuralım</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Firewall için gerekli izinleri açalım.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --add-service={dns,http,https} --permanent

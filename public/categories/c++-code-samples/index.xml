@@ -24,18 +24,18 @@
       <description>
         
         
-         &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.&lt;/p&gt;
- &lt;p&gt;To compile and run this program:&lt;/p&gt;
- &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;&lt;/p&gt;
- &lt;p&gt;Compile it: &lt;/p&gt;
+         &lt;p&gt;If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
+ &lt;p&gt;To compile and run this program:
+ &lt;p&gt;Save the updated code to a file, e.g., &lt;code&gt;network_scanner.cpp&lt;/code&gt;
+ &lt;p&gt;Compile it: 
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;g++ -std=c++17 -o network_scanner network_scanner.cpp&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Run it with sudo: &lt;/p&gt;
+ &lt;p&gt;Run it with sudo: 
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;code&gt;sudo ./network_scanner&lt;/code&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
- &lt;p&gt;Here is the complete code.&lt;/p&gt;
+ &lt;p&gt;Here is the complete code.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;fstream&amp;gt;
@@ -160,8 +160,8 @@ int main() {
         
         
         &lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0.&lt;/p&gt;
-&lt;h2&gt;Code&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;codeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#codeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/*
 * Program to count even and odd numbers.
@@ -206,8 +206,8 @@ int main() {
     return 0;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Explanation &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#explanation-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Explanation&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;explanation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explanation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The provided C++ code is designed to count the number of even and odd numbers entered by the user, excluding the terminating 0. The program operates in a loop, prompting the user to input integers until a 0 is entered, which signals the end of input. It utilizes the modulo operator (&lt;code&gt;%&lt;/code&gt;) to distinguish between even and odd numbers.&lt;/p&gt;
 &lt;p&gt;Initially, the program declares and initializes two integer variables, &lt;code&gt;evenCount&lt;/code&gt; and &lt;code&gt;oddCount&lt;/code&gt;, to zero. These variables serve as counters for the even and odd numbers, respectively.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -232,8 +232,8 @@ else
 cout &amp;lt;&amp;lt; &#34;Odd numbers : &#34; &amp;lt;&amp;lt; oddCount &amp;lt;&amp;lt; endl;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;This code snippet effectively demonstrates basic C++ input/output operations, conditional statements, and loop control structures, making it a straightforward example for developers familiar with C++ but new to this specific logic.&lt;/p&gt;
-&lt;h2&gt;Output &lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output-h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#output-h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Output&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;output&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#output&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;Enter a number: 13
 Enter a number: 212
@@ -257,7 +257,7 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;In this example, we define a pointer and show how to view and change its value.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;In this example, we define a pointer and show how to view and change its value.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;/**
 * @brief Main function that demonstrates pointer manipulation.
@@ -302,7 +302,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;In this example, we show how to calculate factorial using the do while loop.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;In this example, we show how to calculate factorial using the do while loop.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -352,7 +352,7 @@ int main() {
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;In this example, we show how to calculate the factorial of the entered number with the help of a function.&lt;/p&gt;
+&lt;p&gt;In this example, we show how to calculate the factorial of the entered number with the help of a function.
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;#include &amp;lt;iostream&amp;gt;
 using namespace std;
@@ -448,7 +448,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;This code defines a main function where the int and float variables are constants and the text variable is not. Prints the values ​​number, realNumber, and text and then returns 0.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 #include &amp;lt;cstdio&amp;gt;
@@ -639,7 +639,7 @@ int main() {
       <description>
         
         
-        &lt;p&gt;You can see the usage of cascade if-else statement example below.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;You can see the usage of cascade if-else statement example below.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;cpp&#34; class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;
 

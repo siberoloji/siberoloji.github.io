@@ -27,7 +27,7 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 In this post, we’ll dive into advanced usage of the rsync command, covering practical examples that will help you optimize file synchronization, backups, and data migration tasks.">
   <meta itemprop="datePublished" content="2024-09-21T01:14:31+00:00">
   <meta itemprop="dateModified" content="2024-09-21T01:14:31+00:00">
-  <meta itemprop="wordCount" content="1109">
+  <meta itemprop="wordCount" content="1124">
   <meta itemprop="keywords" content="Linux,Linux Fundamentals,Os,Rsync">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mastering the rsync Command in Linux: A Guide for Advanced Users">
@@ -7259,33 +7259,33 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#what-is-codersynccodeh2"
+                href="#what-is-codersynccode"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >What Is &lt;code&gt;rsync&lt;/code&gt;?&lt;/h2&gt;</a>
+              >What Is &lt;code&gt;rsync&lt;/code&gt;?</a>
             </li>
           <li>
               <a
-                href="#basic-syntaxh2"
+                href="#basic-syntax"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Basic Syntax&lt;/h2&gt;</a>
+              >Basic Syntax</a>
             </li>
           <li>
               <a
-                href="#advanced-rsync-usageh2"
+                href="#advanced-rsync-usage"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Advanced Rsync Usage&lt;/h2&gt;</a>
+              >Advanced Rsync Usage</a>
             </li>
           <li>
               <a
-                href="#examples-of-advanced-scenariosh2"
+                href="#examples-of-advanced-scenarios"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Examples of Advanced Scenarios&lt;/h2&gt;</a>
+              >Examples of Advanced Scenarios</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9680,63 +9680,63 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-codersynccodeh2">What Is rsync?
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-codersynccode">What Is rsync?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-syntaxh2">Basic Syntax
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-syntax">Basic Syntax
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-rsync-usageh2">Advanced Rsync Usage
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-rsync-usage">Advanced Rsync Usage
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-synchronizing-with-compressionh3">1. Synchronizing with Compression
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-synchronizing-with-compression">1. Synchronizing with Compression
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-partial-transfer-resumptionh3">2. Partial Transfer Resumption
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-partial-transfer-resumption">2. Partial Transfer Resumption
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-excluding-files-from-synchronizationh3">3. Excluding Files from Synchronization
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-excluding-files-from-synchronization">3. Excluding Files from Synchronization
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-preserving-hard-linksh3">4. Preserving Hard Links
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-preserving-hard-links">4. Preserving Hard Links
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-deleting-files-in-destinationh3">5. Deleting Files in Destination
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-deleting-files-in-destination">5. Deleting Files in Destination
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-synchronizing-files-with-checksumsh3">6. Synchronizing Files with Checksums
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-synchronizing-files-with-checksums">6. Synchronizing Files with Checksums
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-limiting-bandwidth-usageh3">7. Limiting Bandwidth Usage
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-limiting-bandwidth-usage">7. Limiting Bandwidth Usage
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-dry-run-option-for-testingh3">8. Dry Run Option for Testing
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-dry-run-option-for-testing">8. Dry Run Option for Testing
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#examples-of-advanced-scenariosh2">Examples of Advanced Scenarios
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#examples-of-advanced-scenarios">Examples of Advanced Scenarios
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitationh3">Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitation">Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-filesh3">Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-files">Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9774,32 +9774,40 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>What Is <code>rsync</code>?</h2><span class="hx-absolute -hx-mt-20" id="what-is-codersynccodeh2"></span>
-    <a href="#what-is-codersynccodeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>The <code>rsync</code> command stands for <strong>remote sync</strong>, and it was designed to efficiently synchronize files and directories between two locations. Whether those locations are on the same machine or across different machines, <code>rsync</code> is reliable and extremely efficient.</p>
+<h2>What Is <code>rsync</code>?<span class="hx-absolute -hx-mt-20" id="what-is-codersynccode"></span>
+    <a href="#what-is-codersynccode" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>The <code>rsync</code> command stands for <em><strong>remote sync</strong></em> , and it was designed to efficiently synchronize files and directories between two locations. Whether those locations are on the same machine or across different machines, <code>rsync</code> is reliable and extremely efficient.</p>
 <p>Key features of <code>rsync</code> include:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Efficient data transfer:</strong> Only changes between files are transferred, reducing bandwidth.</li>
+- ***Efficient data transfer:***  Only changes between files are transferred, reducing bandwidth. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Preservation of file attributes:</strong> Permissions, modification times, symbolic links, and ownership can be preserved.</li>
+<ul>
+<li><em><strong>Preservation of file attributes:</strong></em>  Permissions, modification times, symbolic links, and ownership can be preserved.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Versatile transfer methods:</strong> Local-to-local, local-to-remote, and remote-to-local file transfers are supported.</li>
+<ul>
+<li><em><strong>Versatile transfer methods:</strong></em>  Local-to-local, local-to-remote, and remote-to-local file transfers are supported.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>SSH integration:</strong> Data can be securely transferred using SSH for remote operations.</li>
+<ul>
+<li><em><strong>SSH integration:</strong></em>  Data can be securely transferred using SSH for remote operations.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Bandwidth limitation:</strong> You can throttle the speed of data transfer to conserve network resources.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Bandwidth limitation:</strong></em>  You can throttle the speed of data transfer to conserve network resources.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>Basic Syntax</h2><span class="hx-absolute -hx-mt-20" id="basic-syntaxh2"></span>
-    <a href="#basic-syntaxh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Basic Syntax<span class="hx-absolute -hx-mt-20" id="basic-syntax"></span>
+    <a href="#basic-syntax" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Before diving into advanced scenarios, here’s the basic structure of the <code>rsync</code> command:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync [options] source destination</code></pre>
@@ -9807,21 +9815,22 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <p>Here:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Source</strong>: The path to the file(s) or directory you wish to sync.</li>
+- ***Source*** : The path to the file(s) or directory you wish to sync. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Destination</strong>: The target location where the files should be copied.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Destination</strong></em> : The target location where the files should be copied.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>Advanced Rsync Usage</h2><span class="hx-absolute -hx-mt-20" id="advanced-rsync-usageh2"></span>
-    <a href="#advanced-rsync-usageh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Advanced Rsync Usage<span class="hx-absolute -hx-mt-20" id="advanced-rsync-usage"></span>
+    <a href="#advanced-rsync-usage" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Let’s explore advanced use cases of the <code>rsync</code> command, which will help you take full advantage of its capabilities.</p>
-<!-- wp:heading {"level":3} -->
-<h3>1. Synchronizing with Compression</h3><span class="hx-absolute -hx-mt-20" id="1-synchronizing-with-compressionh3"></span>
-    <a href="#1-synchronizing-with-compressionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>1. Synchronizing with Compression<span class="hx-absolute -hx-mt-20" id="1-synchronizing-with-compression"></span>
+    <a href="#1-synchronizing-with-compression" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Transferring large files over a network can be time-consuming. Fortunately, <code>rsync</code> allows you to compress data during transfer with the <code>-z</code> flag. This is particularly helpful for remote backups or synchronizations over slow network connections.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -avz /source/directory/ user@remote:/destination/directory/</code></pre>
@@ -9829,39 +9838,43 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <p>In this example:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>-a</strong>: Archive mode to preserve file attributes (e.g., ownership, timestamps).</li>
+- ***-a*** : Archive mode to preserve file attributes (e.g., ownership, timestamps). 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>-v</strong>: Verbose mode, which provides detailed output of the files being transferred.</li>
+<ul>
+<li><em><strong>-v</strong></em> : Verbose mode, which provides detailed output of the files being transferred.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>-z</strong>: Compresses file data during transfer to speed up synchronization.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>-z</strong></em> : Compresses file data during transfer to speed up synchronization.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Partial Transfer Resumption</h3><span class="hx-absolute -hx-mt-20" id="2-partial-transfer-resumptionh3"></span>
-    <a href="#2-partial-transfer-resumptionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Partial Transfer Resumption<span class="hx-absolute -hx-mt-20" id="2-partial-transfer-resumption"></span>
+    <a href="#2-partial-transfer-resumption" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Large file transfers may be interrupted due to network failures or other issues. In these cases, you don’t want to start the process over from scratch. The <code>&ndash;partial</code> option allows you to resume incomplete file transfers from where they left off.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync --partial --progress user@remote:/source/file /destination/file</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>--partial</strong>: Keeps partially transferred files, allowing you to resume the transfer without starting over.</li>
+- ***--partial*** : Keeps partially transferred files, allowing you to resume the transfer without starting over. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>--progress</strong>: Shows real-time progress of the transfer.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>&ndash;progress</strong></em> : Shows real-time progress of the transfer.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Excluding Files from Synchronization</h3><span class="hx-absolute -hx-mt-20" id="3-excluding-files-from-synchronizationh3"></span>
-    <a href="#3-excluding-files-from-synchronizationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Excluding Files from Synchronization<span class="hx-absolute -hx-mt-20" id="3-excluding-files-from-synchronization"></span>
+    <a href="#3-excluding-files-from-synchronization" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Sometimes you may want to exclude certain files or directories from being synchronized. You can achieve this by using the <code>&ndash;exclude</code> option. This is useful in scenarios where you’re copying an entire directory but want to avoid unnecessary files like logs or temporary data.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --exclude '*.log' /source/directory/ /destination/directory/</code></pre>
 <!-- /wp:code -->
 <p>This example skips any files with the <code>.log</code> extension during the synchronization process.</p>
-<p>You can also use an <strong>exclude file</strong> that contains a list of patterns to ignore. This is particularly helpful for complex exclusion rules.</p>
+<p>You can also use an <em><strong>exclude file</strong></em>  that contains a list of patterns to ignore. This is particularly helpful for complex exclusion rules.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --exclude-from='/path/to/exclude-file.txt' /source/ /destination/</code></pre>
 <!-- /wp:code -->
@@ -9871,45 +9884,40 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 *.tmp
 /cache/</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>4. Preserving Hard Links</h3><span class="hx-absolute -hx-mt-20" id="4-preserving-hard-linksh3"></span>
-    <a href="#4-preserving-hard-linksh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Preserving Hard Links<span class="hx-absolute -hx-mt-20" id="4-preserving-hard-links"></span>
+    <a href="#4-preserving-hard-links" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>When dealing with backups or complex directory structures that use hard links, it’s crucial to preserve these links during synchronization. By default, <code>rsync</code> does not preserve hard links, but using the <code>-H</code> option solves this.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -aH /source/directory/ /destination/directory/</code></pre>
 <!-- /wp:code -->
 <p>The <code>-H</code> option ensures that hard links between files are maintained in the destination directory.</p>
-<!-- wp:heading {"level":3} -->
-<h3>5. Deleting Files in Destination</h3><span class="hx-absolute -hx-mt-20" id="5-deleting-files-in-destinationh3"></span>
-    <a href="#5-deleting-files-in-destinationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>5. Deleting Files in Destination<span class="hx-absolute -hx-mt-20" id="5-deleting-files-in-destination"></span>
+    <a href="#5-deleting-files-in-destination" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>By default, <code>rsync</code> will only add new or updated files to the destination. However, sometimes you want the destination to be an exact replica of the source. This is where the <code>&ndash;delete</code> option comes into play. It removes any files from the destination that no longer exist in the source.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --delete /source/directory/ /destination/directory/</code></pre>
 <!-- /wp:code -->
 <p>This is particularly useful for creating backups or mirroring directories, but use it with caution as it can permanently delete files from the destination.</p>
-<!-- wp:heading {"level":3} -->
-<h3>6. Synchronizing Files with Checksums</h3><span class="hx-absolute -hx-mt-20" id="6-synchronizing-files-with-checksumsh3"></span>
-    <a href="#6-synchronizing-files-with-checksumsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>6. Synchronizing Files with Checksums<span class="hx-absolute -hx-mt-20" id="6-synchronizing-files-with-checksums"></span>
+    <a href="#6-synchronizing-files-with-checksums" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Normally, <code>rsync</code> checks whether files need to be synchronized based on modification times and file sizes. However, if you need a more thorough comparison, you can use the <code>-c</code> option to compare files using checksums. This is more accurate but comes with a performance cost due to the additional computation required for the checksums.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -avc /source/directory/ /destination/directory/</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>-c</strong>: Uses checksums to compare files instead of just timestamps.</li>
-<!-- /wp:list-item --></ul>
+- ***-c*** : Uses checksums to compare files instead of just timestamps. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>7. Limiting Bandwidth Usage</h3><span class="hx-absolute -hx-mt-20" id="7-limiting-bandwidth-usageh3"></span>
-    <a href="#7-limiting-bandwidth-usageh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>7. Limiting Bandwidth Usage<span class="hx-absolute -hx-mt-20" id="7-limiting-bandwidth-usage"></span>
+    <a href="#7-limiting-bandwidth-usage" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>If you’re synchronizing over a network and want to avoid saturating the connection, you can limit the bandwidth used by <code>rsync</code> with the <code>&ndash;bwlimit</code> option.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --bwlimit=5000 /source/directory/ user@remote:/destination/directory/</code></pre>
 <!-- /wp:code -->
-<p>In this case, the bandwidth is limited to <strong>5000 KB/s</strong>.</p>
-<!-- wp:heading {"level":3} -->
-<h3>8. Dry Run Option for Testing</h3><span class="hx-absolute -hx-mt-20" id="8-dry-run-option-for-testingh3"></span>
-    <a href="#8-dry-run-option-for-testingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>In this case, the bandwidth is limited to <em><strong>5000 KB/s</strong></em> .</p>
+<h3>8. Dry Run Option for Testing<span class="hx-absolute -hx-mt-20" id="8-dry-run-option-for-testing"></span>
+    <a href="#8-dry-run-option-for-testing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>When performing large or critical file transfers, it’s always a good idea to preview the changes that will be made without actually transferring any data. The <code>&ndash;dry-run</code> option allows you to see exactly what will happen when you run the command for real.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -av --dry-run /source/directory/ /destination/directory/</code></pre>
@@ -9918,20 +9926,18 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>Examples of Advanced Scenarios</h2><span class="hx-absolute -hx-mt-20" id="examples-of-advanced-scenariosh2"></span>
-    <a href="#examples-of-advanced-scenariosh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Examples of Advanced Scenarios<span class="hx-absolute -hx-mt-20" id="examples-of-advanced-scenarios"></span>
+    <a href="#examples-of-advanced-scenarios" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Now, let’s combine some of these options for more complex synchronization tasks.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation</h3><span class="hx-absolute -hx-mt-20" id="example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitationh3"></span>
-    <a href="#example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Example 1: Remote Backup with Compression, Exclusion, and Bandwidth Limitation<span class="hx-absolute -hx-mt-20" id="example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitation"></span>
+    <a href="#example-1-remote-backup-with-compression-exclusion-and-bandwidth-limitation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Imagine you’re backing up a remote web server. You want to transfer all data but exclude log files, compress the transfer, and limit bandwidth usage.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -avz --exclude '*.log' --bwlimit=2000 user@remote:/var/www/ /backup/www/</code></pre>
 <!-- /wp:code -->
 <p>This command synchronizes the web files from a remote server to your local backup directory, excluding log files and limiting bandwidth to 2 MB/s.</p>
-<!-- wp:heading {"level":3} -->
-<h3>Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files</h3><span class="hx-absolute -hx-mt-20" id="example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-filesh3"></span>
-    <a href="#example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-filesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Example 2: Synchronizing Directories While Preserving Hard Links and Deleting Extra Files<span class="hx-absolute -hx-mt-20" id="example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-files"></span>
+    <a href="#example-2-synchronizing-directories-while-preserving-hard-links-and-deleting-extra-files" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Suppose you want to create a backup that mirrors the exact state of the source directory, preserving hard links and deleting files in the destination that no longer exist in the source.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">rsync -aH --delete /source/directory/ /backup/directory/</code></pre>
@@ -9940,8 +9946,8 @@ In this post, we’ll dive into advanced usage of the rsync command, covering pr
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>The <code>rsync</code> command is a versatile and essential tool for any advanced Linux user who deals with file synchronization or data transfers. From its ability to optimize file transfers with compression and bandwidth limitations to its more specialized options for preserving hard links or using checksums, <code>rsync</code> is a command that can handle a wide range of tasks.</p>
 <p>Whether you&rsquo;re creating backups, migrating data, or synchronizing files between remote systems, understanding the advanced usage of <code>rsync</code> will make your workflow more efficient and reliable. Try incorporating these examples into your own projects to leverage the full power of <code>rsync</code> in your daily operations.</p>
 

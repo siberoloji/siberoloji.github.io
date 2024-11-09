@@ -163,57 +163,122 @@
   </url><url>
     <loc>http://localhost:1313/categories/bilgi-toplama/</loc>
     <lastmod>2024-11-02T22:09:56+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/categories/bilgi-toplama/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/bilgi-toplama/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/cyber-security/</loc>
     <lastmod>2024-11-02T22:09:56+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
-    <lastmod>2024-11-02T21:57:31+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/dns-aramas%C4%B1/</loc>
-    <lastmod>2024-11-02T21:57:31+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/</loc>
-    <lastmod>2024-11-02T21:57:31+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/whois/</loc>
-    <lastmod>2024-11-02T21:57:31+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tr/bir-kesif-araci-olarak-sosyal-muhendislik-siber-guvenlikte-onemli-bir-bilesen/</loc>
     <lastmod>2024-11-02T21:46:35+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ke%C5%9Fif/</loc>
     <lastmod>2024-11-02T21:46:35+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/ke%C5%9Fif/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/ke%C5%9Fif/"
+                />
   </url><url>
     <loc>http://localhost:1313/tr/aktif-ve-pasif-kesif-arasindaki-temel-farklar/</loc>
     <lastmod>2024-11-02T21:39:38+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <lastmod>2024-11-02T21:39:38+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/cybersecurity/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/cybersecurity/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tr/kesif-asamasinda-bilgi-sizintisina-karsi-koruma/</loc>
     <lastmod>2024-11-02T21:35:11+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tr/kesif-sirasinda-yapilan-yaygin-hatalar-ve-bunlardan-nasil-kacinilir/</loc>
-    <lastmod>2024-11-02T21:29:52+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tr/etkili-kesif-icin-araclar-shodan-maltego-ve-google-dorking/</loc>
-    <lastmod>2024-11-02T21:25:24+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/google-dorking/</loc>
-    <lastmod>2024-11-02T21:25:24+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/maltego/</loc>
-    <lastmod>2024-11-02T21:25:24+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/shodan/</loc>
-    <lastmod>2024-11-02T21:25:24+00:00</lastmod>
+    <lastmod>2024-11-02T21:01:19+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/google-dorking/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/google-dorking/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/information-gathering/</loc>
     <lastmod>2024-11-02T21:01:19+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/maltego/</loc>
+    <lastmod>2024-11-02T21:01:19+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/maltego/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/maltego/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/shodan/</loc>
+    <lastmod>2024-11-02T21:01:19+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/shodan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/shodan/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tools-for-effective-reconnaissance-shodan-maltego-and-google-dorking/</loc>
     <lastmod>2024-11-02T21:01:19+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/etkili-kesif-icin-araclar-shodan-maltego-ve-google-dorking/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tools-for-effective-reconnaissance-shodan-maltego-and-google-dorking/"
+                />
   </url><url>
     <loc>http://localhost:1313/common-mistakes-during-reconnaissance-and-how-to-avoid-them/</loc>
     <lastmod>2024-11-02T20:56:47+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/kesif-sirasinda-yapilan-yaygin-hatalar-ve-bunlardan-nasil-kacinilir/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/common-mistakes-during-reconnaissance-and-how-to-avoid-them/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/reconnaissance/</loc>
     <lastmod>2024-11-02T20:56:47+00:00</lastmod>
@@ -235,6 +300,29 @@
   </url><url>
     <loc>http://localhost:1313/using-whois-and-dns-lookup-for-cybersecurity-reconnaissance/</loc>
     <lastmod>2024-11-02T20:17:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/using-whois-and-dns-lookup-for-cybersecurity-reconnaissance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/whois/</loc>
+    <lastmod>2024-11-02T20:17:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/tags/whois/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/whois/"
+                />
   </url><url>
     <loc>http://localhost:1313/active-reconnaissance-how-to-safely-gather-information/</loc>
     <lastmod>2024-11-02T20:09:37+00:00</lastmod>

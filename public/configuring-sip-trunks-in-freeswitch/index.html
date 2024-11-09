@@ -18,7 +18,6 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
 <meta property="og:description" content="SIP trunking is a crucial component of modern VoIP systems, allowing FreeSWITCH to connect with external service providers for making and receiving calls. This comprehensive guide will walk you through the process of configuring SIP trunks in FreeSWITCH, from basic setup to advanced configurations.
 Understanding SIP Trunks
     
-
 What is an SIP Trunk?
     
 A SIP trunk is a virtual connection between your FreeSWITCH system and an Internet Telephony Service Provider (ITSP). It enables:" />
@@ -32,7 +31,7 @@ A SIP trunk is a virtual connection between your FreeSWITCH system and an Intern
 Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connection between your FreeSWITCH system and an Internet Telephony Service Provider (ITSP). It enables:">
   <meta itemprop="datePublished" content="2024-10-29T14:21:13+00:00">
   <meta itemprop="dateModified" content="2024-10-29T14:21:13+00:00">
-  <meta itemprop="wordCount" content="613">
+  <meta itemprop="wordCount" content="620">
   <meta itemprop="keywords" content="Freeswitch">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Configuring SIP Trunks in FreeSWITCH">
@@ -1040,69 +1039,69 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#understanding-sip-trunksh2"
+                href="#understanding-sip-trunks"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Understanding SIP Trunks&lt;/h2&gt;</a>
+              >Understanding SIP Trunks</a>
             </li>
           <li>
               <a
-                href="#basic-sip-trunk-configurationh2"
+                href="#basic-sip-trunk-configuration"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Basic SIP Trunk Configuration&lt;/h2&gt;</a>
+              >Basic SIP Trunk Configuration</a>
             </li>
           <li>
               <a
-                href="#advanced-gateway-parametersh2"
+                href="#advanced-gateway-parameters"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Advanced Gateway Parameters&lt;/h2&gt;</a>
+              >Advanced Gateway Parameters</a>
             </li>
           <li>
               <a
-                href="#routing-configurationh2"
+                href="#routing-configuration"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Routing Configuration&lt;/h2&gt;</a>
+              >Routing Configuration</a>
             </li>
           <li>
               <a
-                href="#failover-and-load-balancingh2"
+                href="#failover-and-load-balancing"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Failover and Load Balancing&lt;/h2&gt;</a>
+              >Failover and Load Balancing</a>
             </li>
           <li>
               <a
-                href="#security-configurationsh2"
+                href="#security-configurations"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Security Configurations&lt;/h2&gt;</a>
+              >Security Configurations</a>
             </li>
           <li>
               <a
-                href="#quality-of-service-qosh2"
+                href="#quality-of-service-qos"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Quality of Service (QoS)&lt;/h2&gt;</a>
+              >Quality of Service (QoS)</a>
             </li>
           <li>
               <a
-                href="#monitoring-and-troubleshootingh2"
+                href="#monitoring-and-troubleshooting"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Monitoring and Troubleshooting&lt;/h2&gt;</a>
+              >Monitoring and Troubleshooting</a>
             </li>
           <li>
               <a
-                href="#best-practicesh2"
+                href="#best-practices"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Best Practices&lt;/h2&gt;</a>
+              >Best Practices</a>
             </li>
           <li>
               <a
-                href="#testing-and-verificationh2"
+                href="#testing-and-verification"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Testing and Verification&lt;/h2&gt;</a>
+              >Testing and Verification</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9721,127 +9720,127 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-sip-trunksh2">Understanding SIP Trunks
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#understanding-sip-trunks">Understanding SIP Trunks
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-an-sip-trunkh3">What is an SIP Trunk?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-an-sip-trunk">What is an SIP Trunk?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-sip-trunk-configurationh2">Basic SIP Trunk Configuration
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#basic-sip-trunk-configuration">Basic SIP Trunk Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-gateway-configurationh3">1. Gateway Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-gateway-configuration">1. Gateway Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-external-profile-configurationh3">2. External Profile Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-external-profile-configuration">2. External Profile Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-gateway-parametersh2">Advanced Gateway Parameters
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advanced-gateway-parameters">Advanced Gateway Parameters
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-authentication-and-registrationh3">1. Authentication and Registration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-authentication-and-registration">1. Authentication and Registration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-codec-configurationh3">2. Codec Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-codec-configuration">2. Codec Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#routing-configurationh2">Routing Configuration
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#routing-configuration">Routing Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-outbound-route-setuph3">1. Outbound Route Setup
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-outbound-route-setup">1. Outbound Route Setup
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-inbound-route-setuph3">2. Inbound Route Setup
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-inbound-route-setup">2. Inbound Route Setup
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#failover-and-load-balancingh2">Failover and Load Balancing
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#failover-and-load-balancing">Failover and Load Balancing
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-multiple-gateway-setuph3">1. Multiple Gateway Setup
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-multiple-gateway-setup">1. Multiple Gateway Setup
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-failover-dialplanh3">2. Failover Dialplan
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-failover-dialplan">2. Failover Dialplan
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#security-configurationsh2">Security Configurations
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#security-configurations">Security Configurations
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-tls-setuph3">1. TLS Setup
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-tls-setup">1. TLS Setup
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-access-control-listsh3">2. Access Control Lists
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-access-control-lists">2. Access Control Lists
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#quality-of-service-qosh2">Quality of Service (QoS)
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#quality-of-service-qos">Quality of Service (QoS)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-rtp-configurationh3">1. RTP Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-rtp-configuration">1. RTP Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-bandwidth-managementh3">2. Bandwidth Management
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-bandwidth-management">2. Bandwidth Management
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#monitoring-and-troubleshootingh2">Monitoring and Troubleshooting
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#monitoring-and-troubleshooting">Monitoring and Troubleshooting
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-sofia-status-commandsh3">1. Sofia Status Commands
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-sofia-status-commands">1. Sofia Status Commands
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-logging-configurationh3">2. Logging Configuration
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-logging-configuration">2. Logging Configuration
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practicesh2">Best Practices
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-practices">Best Practices
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-gateway-organizationh3">1. Gateway Organization
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-gateway-organization">1. Gateway Organization
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-security-measuresh3">2. Security Measures
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-security-measures">2. Security Measures
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-performance-optimizationh3">3. Performance Optimization
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-performance-optimization">3. Performance Optimization
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#testing-and-verificationh2">Testing and Verification
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#testing-and-verification">Testing and Verification
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-basic-testsh3">1. Basic Tests
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-basic-tests">1. Basic Tests
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-ongoing-maintenanceh3">2. Ongoing Maintenance
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-ongoing-maintenance">2. Ongoing Maintenance
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9874,33 +9873,37 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>SIP trunking is a crucial component of modern VoIP systems, allowing FreeSWITCH to connect with external service providers for making and receiving calls. This comprehensive guide will walk you through the process of configuring SIP trunks in FreeSWITCH, from basic setup to advanced configurations.</p></p>
-<h2>Understanding SIP Trunks</h2><span class="hx-absolute -hx-mt-20" id="understanding-sip-trunksh2"></span>
-    <a href="#understanding-sip-trunksh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>What is an SIP Trunk?</h3><span class="hx-absolute -hx-mt-20" id="what-is-an-sip-trunkh3"></span>
-    <a href="#what-is-an-sip-trunkh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>A SIP trunk is a virtual connection between your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system and an Internet Telephony Service Provider (ITSP). It enables:</p></p>
+          <p>SIP trunking is a crucial component of modern VoIP systems, allowing FreeSWITCH to connect with external service providers for making and receiving calls. This comprehensive guide will walk you through the process of configuring SIP trunks in FreeSWITCH, from basic setup to advanced configurations.</p>
+<h2>Understanding SIP Trunks<span class="hx-absolute -hx-mt-20" id="understanding-sip-trunks"></span>
+    <a href="#understanding-sip-trunks" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>What is an SIP Trunk?<span class="hx-absolute -hx-mt-20" id="what-is-an-sip-trunk"></span>
+    <a href="#what-is-an-sip-trunk" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>A SIP trunk is a virtual connection between your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system and an Internet Telephony Service Provider (ITSP). It enables:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Outbound calls to the PSTN network</li>
+- Outbound calls to the PSTN network 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Inbound calls from external numbers</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Cost-effective long-distance calling</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Multiple concurrent call channels</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Basic SIP Trunk Configuration</h2><span class="hx-absolute -hx-mt-20" id="basic-sip-trunk-configurationh2"></span>
-    <a href="#basic-sip-trunk-configurationh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Gateway Configuration</h3><span class="hx-absolute -hx-mt-20" id="1-gateway-configurationh3"></span>
-    <a href="#1-gateway-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Create a new file in <code>/usr/local/freeswitch/conf/sip_profiles/external/</code>:</p></p>
+<h2>Basic SIP Trunk Configuration<span class="hx-absolute -hx-mt-20" id="basic-sip-trunk-configuration"></span>
+    <a href="#basic-sip-trunk-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Gateway Configuration<span class="hx-absolute -hx-mt-20" id="1-gateway-configuration"></span>
+    <a href="#1-gateway-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Create a new file in <code>/usr/local/freeswitch/conf/sip_profiles/external/</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
   &lt;gateway name="my_provider"&gt;
@@ -9914,10 +9917,9 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/gateway&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. External Profile Configuration</h3><span class="hx-absolute -hx-mt-20" id="2-external-profile-configurationh3"></span>
-    <a href="#2-external-profile-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Modify <code>/usr/local/freeswitch/conf/sip_profiles/external.xml</code>:</p></p>
+<h3>2. External Profile Configuration<span class="hx-absolute -hx-mt-20" id="2-external-profile-configuration"></span>
+    <a href="#2-external-profile-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Modify <code>/usr/local/freeswitch/conf/sip_profiles/external.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;profile name="external"&gt;
   &lt;settings&gt;
@@ -9929,11 +9931,10 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/settings&gt;
 &lt;/profile&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Advanced Gateway Parameters</h2><span class="hx-absolute -hx-mt-20" id="advanced-gateway-parametersh2"></span>
-    <a href="#advanced-gateway-parametersh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Authentication and Registration</h3><span class="hx-absolute -hx-mt-20" id="1-authentication-and-registrationh3"></span>
-    <a href="#1-authentication-and-registrationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Advanced Gateway Parameters<span class="hx-absolute -hx-mt-20" id="advanced-gateway-parameters"></span>
+    <a href="#advanced-gateway-parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Authentication and Registration<span class="hx-absolute -hx-mt-20" id="1-authentication-and-registration"></span>
+    <a href="#1-authentication-and-registration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;gateway name="secure_provider"&gt;
   &lt;param name="realm" value="sip.provider.com"/&gt;
@@ -9944,9 +9945,8 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;param name="retry-seconds" value="30"/&gt;
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Codec Configuration</h3><span class="hx-absolute -hx-mt-20" id="2-codec-configurationh3"></span>
-    <a href="#2-codec-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Codec Configuration<span class="hx-absolute -hx-mt-20" id="2-codec-configuration"></span>
+    <a href="#2-codec-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;gateway name="codec_specific"&gt;
   &lt;param name="inbound-codec-prefs" value="PCMU,PCMA,G729"/&gt;
@@ -9955,12 +9955,11 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;param name="codec-fallback" value="PCMU"/&gt;
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Routing Configuration</h2><span class="hx-absolute -hx-mt-20" id="routing-configurationh2"></span>
-    <a href="#routing-configurationh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Outbound Route Setup</h3><span class="hx-absolute -hx-mt-20" id="1-outbound-route-setuph3"></span>
-    <a href="#1-outbound-route-setuph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Create <code>/usr/local/freeswitch/conf/dialplan/default/03_outbound.xml</code>:</p></p>
+<h2>Routing Configuration<span class="hx-absolute -hx-mt-20" id="routing-configuration"></span>
+    <a href="#routing-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Outbound Route Setup<span class="hx-absolute -hx-mt-20" id="1-outbound-route-setup"></span>
+    <a href="#1-outbound-route-setup" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Create <code>/usr/local/freeswitch/conf/dialplan/default/03_outbound.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
   &lt;context name="default"&gt;
@@ -9974,10 +9973,9 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/context&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Inbound Route Setup</h3><span class="hx-absolute -hx-mt-20" id="2-inbound-route-setuph3"></span>
-    <a href="#2-inbound-route-setuph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Create <code>/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml</code>:</p></p>
+<h3>2. Inbound Route Setup<span class="hx-absolute -hx-mt-20" id="2-inbound-route-setup"></span>
+    <a href="#2-inbound-route-setup" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Create <code>/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
   &lt;context name="public"&gt;
@@ -9990,11 +9988,10 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/context&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Failover and Load Balancing</h2><span class="hx-absolute -hx-mt-20" id="failover-and-load-balancingh2"></span>
-    <a href="#failover-and-load-balancingh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Multiple Gateway Setup</h3><span class="hx-absolute -hx-mt-20" id="1-multiple-gateway-setuph3"></span>
-    <a href="#1-multiple-gateway-setuph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Failover and Load Balancing<span class="hx-absolute -hx-mt-20" id="failover-and-load-balancing"></span>
+    <a href="#failover-and-load-balancing" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Multiple Gateway Setup<span class="hx-absolute -hx-mt-20" id="1-multiple-gateway-setup"></span>
+    <a href="#1-multiple-gateway-setup" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;include&gt;
   &lt;gateway name="primary_provider"&gt;
@@ -10008,9 +10005,8 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/gateway&gt;
 &lt;/include&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Failover Dialplan</h3><span class="hx-absolute -hx-mt-20" id="2-failover-dialplanh3"></span>
-    <a href="#2-failover-dialplanh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Failover Dialplan<span class="hx-absolute -hx-mt-20" id="2-failover-dialplan"></span>
+    <a href="#2-failover-dialplan" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;extension name="outbound_with_failover"&gt;
   &lt;condition field="destination_number" expression="^(\d{11})$"&gt;
@@ -10019,11 +10015,10 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/condition&gt;
 &lt;/extension&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Security Configurations</h2><span class="hx-absolute -hx-mt-20" id="security-configurationsh2"></span>
-    <a href="#security-configurationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. TLS Setup</h3><span class="hx-absolute -hx-mt-20" id="1-tls-setuph3"></span>
-    <a href="#1-tls-setuph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Security Configurations<span class="hx-absolute -hx-mt-20" id="security-configurations"></span>
+    <a href="#security-configurations" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. TLS Setup<span class="hx-absolute -hx-mt-20" id="1-tls-setup"></span>
+    <a href="#1-tls-setup" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;gateway name="secure_trunk"&gt;
   &lt;param name="register-transport" value="tls"/&gt;
@@ -10034,9 +10029,8 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;param name="ssl-key" value="/etc/freeswitch/tls/client.key"/&gt;
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Access Control Lists</h3><span class="hx-absolute -hx-mt-20" id="2-access-control-listsh3"></span>
-    <a href="#2-access-control-listsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Access Control Lists<span class="hx-absolute -hx-mt-20" id="2-access-control-lists"></span>
+    <a href="#2-access-control-lists" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;configuration name="acl.conf" description="Network Lists"&gt;
   &lt;network-lists&gt;
@@ -10047,11 +10041,10 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;/network-lists&gt;
 &lt;/configuration&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Quality of Service (QoS)</h2><span class="hx-absolute -hx-mt-20" id="quality-of-service-qosh2"></span>
-    <a href="#quality-of-service-qosh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. RTP Configuration</h3><span class="hx-absolute -hx-mt-20" id="1-rtp-configurationh3"></span>
-    <a href="#1-rtp-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Quality of Service (QoS)<span class="hx-absolute -hx-mt-20" id="quality-of-service-qos"></span>
+    <a href="#quality-of-service-qos" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. RTP Configuration<span class="hx-absolute -hx-mt-20" id="1-rtp-configuration"></span>
+    <a href="#1-rtp-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;gateway name="qos_enabled"&gt;
   &lt;param name="rtp-timer-name" value="soft"/&gt;
@@ -10062,9 +10055,8 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;param name="rtp-hold-timeout-sec" value="1800"/&gt;
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Bandwidth Management</h3><span class="hx-absolute -hx-mt-20" id="2-bandwidth-managementh3"></span>
-    <a href="#2-bandwidth-managementh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Bandwidth Management<span class="hx-absolute -hx-mt-20" id="2-bandwidth-management"></span>
+    <a href="#2-bandwidth-management" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;gateway name="bandwidth_managed"&gt;
   &lt;param name="inbound-codec-prefs" value="PCMU@20i,PCMA@20i,G729@20i"/&gt;
@@ -10073,84 +10065,96 @@ Understanding SIP Trunks What is an SIP Trunk? A SIP trunk is a virtual connecti
   &lt;param name="rtp-digit-delay" value="20"/&gt;
 &lt;/gateway&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Monitoring and Troubleshooting</h2><span class="hx-absolute -hx-mt-20" id="monitoring-and-troubleshootingh2"></span>
-    <a href="#monitoring-and-troubleshootingh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Sofia Status Commands</h3><span class="hx-absolute -hx-mt-20" id="1-sofia-status-commandsh3"></span>
-    <a href="#1-sofia-status-commandsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>In fs_cli:</p></p>
+<h2>Monitoring and Troubleshooting<span class="hx-absolute -hx-mt-20" id="monitoring-and-troubleshooting"></span>
+    <a href="#monitoring-and-troubleshooting" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Sofia Status Commands<span class="hx-absolute -hx-mt-20" id="1-sofia-status-commands"></span>
+    <a href="#1-sofia-status-commands" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>In fs_cli:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sofia status
 sofia status gateway my_provider
 sofia loglevel all 9</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Logging Configuration</h3><span class="hx-absolute -hx-mt-20" id="2-logging-configurationh3"></span>
-    <a href="#2-logging-configurationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Logging Configuration<span class="hx-absolute -hx-mt-20" id="2-logging-configuration"></span>
+    <a href="#2-logging-configuration" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="xml" class="language-xml">&lt;param name="sip-trace" value="true"/&gt;
 &lt;param name="log-auth-failures" value="true"/&gt;
 &lt;param name="debug-presence" value="0"/&gt;
 &lt;param name="debug-sla" value="0"/&gt;</code></pre>
 <!-- /wp:code -->
-<h2>Best Practices</h2><span class="hx-absolute -hx-mt-20" id="best-practicesh2"></span>
-    <a href="#best-practicesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Gateway Organization</h3><span class="hx-absolute -hx-mt-20" id="1-gateway-organizationh3"></span>
-    <a href="#1-gateway-organizationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Best Practices<span class="hx-absolute -hx-mt-20" id="best-practices"></span>
+    <a href="#best-practices" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Gateway Organization<span class="hx-absolute -hx-mt-20" id="1-gateway-organization"></span>
+    <a href="#1-gateway-organization" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Use meaningful gateway names</li>
+- Use meaningful gateway names 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Group similar providers</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Document configurations</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Regular backup of configurations</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Security Measures</h3><span class="hx-absolute -hx-mt-20" id="2-security-measuresh3"></span>
-    <a href="#2-security-measuresh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Security Measures<span class="hx-absolute -hx-mt-20" id="2-security-measures"></span>
+    <a href="#2-security-measures" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Implement strong passwords</li>
+- Implement strong passwords 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Use TLS when possible</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Regular security audits</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Monitor for suspicious activity</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Performance Optimization</h3><span class="hx-absolute -hx-mt-20" id="3-performance-optimizationh3"></span>
-    <a href="#3-performance-optimizationh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Performance Optimization<span class="hx-absolute -hx-mt-20" id="3-performance-optimization"></span>
+    <a href="#3-performance-optimization" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Regular monitoring of call quality</li>
+- Regular monitoring of call quality 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Bandwidth management</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Codec optimization</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Connection testing</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Testing and Verification</h2><span class="hx-absolute -hx-mt-20" id="testing-and-verificationh2"></span>
-    <a href="#testing-and-verificationh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Basic Tests</h3><span class="hx-absolute -hx-mt-20" id="1-basic-testsh3"></span>
-    <a href="#1-basic-testsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Testing and Verification<span class="hx-absolute -hx-mt-20" id="testing-and-verification"></span>
+    <a href="#testing-and-verification" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. Basic Tests<span class="hx-absolute -hx-mt-20" id="1-basic-tests"></span>
+    <a href="#1-basic-tests" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"># Check gateway registration
 fs_cli -x "sofia status gateway my_provider"
@@ -10161,62 +10165,83 @@ fs_cli -x "originate sofia/gateway/my_provider/11234567890 &amp;echo"
 # Check SIP messages
 fs_cli -x "sofia global siptrace on"</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Ongoing Maintenance</h3><span class="hx-absolute -hx-mt-20" id="2-ongoing-maintenanceh3"></span>
-    <a href="#2-ongoing-maintenanceh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Ongoing Maintenance<span class="hx-absolute -hx-mt-20" id="2-ongoing-maintenance"></span>
+    <a href="#2-ongoing-maintenance" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Regular registration checks</li>
+- Regular registration checks 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Call quality monitoring</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Performance metrics collection</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Log analysis</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<p>Properly configured SIP trunks are essential for a reliable FreeSWITCH system. Key points to remember for configuring SIP trunks in FreeSWITCH:</p></p>
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<p>Properly configured SIP trunks are essential for a reliable FreeSWITCH system. Key points to remember for configuring SIP trunks in FreeSWITCH:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Start with basic configuration and build up</li>
+- Start with basic configuration and build up 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Implement proper security measures</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Monitor and maintain regularly</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Document all changes</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Test thoroughly before production deployment</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>As your system grows, consider:</p></p>
+<p>As your system grows, consider:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Implementing redundancy</li>
+- Implementing redundancy 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Load balancing</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Advanced security measures</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Quality of service optimization</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Regular audits and updates</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>Keep your FreeSWITCH system up to date and regularly check for security advisories and best practices from your ITSP and the FreeSWITCH community.</p></p>
+<p>Keep your FreeSWITCH system up to date and regularly check for security advisories and best practices from your ITSP and the FreeSWITCH community.</p>
 
         </div>
         

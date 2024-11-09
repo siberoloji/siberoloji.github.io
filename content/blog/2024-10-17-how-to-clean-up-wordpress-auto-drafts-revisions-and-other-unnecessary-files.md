@@ -28,42 +28,42 @@ url: /how-to-clean-up-wordpress-auto-drafts-revisions-and-other-unnecessary-file
  
 
  
- ## Why Cleanup Is Essential for WordPress</h2>
+ ## Why Cleanup Is Essential for WordPress
 <!-- /wp:heading -->
 
   Before we delve into the cleanup process, it’s important to understand why cleaning up your WordPress site is crucial for its health and performance. Here's why: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Improved Site Speed</strong></h3>
+
+ ### 1. ***Improved Site Speed*** 
 <!-- /wp:heading -->
 
   Every time a user visits your website, the server has to pull information from the WordPress database. If your database is cluttered with unnecessary data like old revisions and auto drafts, it takes longer for the server to retrieve the necessary information, which can slow down your website. Cleaning up these files helps speed up database queries and, by extension, your website. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Reduced Database Size</strong></h3>
+
+ ### 2. ***Reduced Database Size*** 
 <!-- /wp:heading -->
 
   As you publish posts and pages, WordPress saves multiple versions and drafts of your content, which can take up space in your database. Over time, this can lead to significant bloat. By cleaning out revisions and drafts, you can significantly reduce the size of your WordPress database, making it easier to manage and backup. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>Enhanced Website Performance</strong></h3>
+
+ ### 3. ***Enhanced Website Performance*** 
 <!-- /wp:heading -->
 
   Website speed is a major factor in user experience and SEO rankings. A cluttered database can lead to longer load times, which may hurt your rankings on search engines like Google. Keeping your database clean ensures optimal performance. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. <strong>Fewer Errors and Database Corruption Risks</strong></h3>
+
+ ### 4. ***Fewer Errors and Database Corruption Risks*** 
 <!-- /wp:heading -->
 
   A bloated database may increase the chances of database errors or corruption, which can lead to issues with your website. Regular cleanup helps to mitigate these risks, ensuring that your website runs smoothly. 
  
 
  
- ## Common Types of Clutter in WordPress</h2>
+ ## Common Types of Clutter in WordPress
 <!-- /wp:heading -->
 
   Now that you understand why it's essential to clean up WordPress, let's look at the common types of clutter that accumulate over time: 
@@ -71,212 +71,212 @@ url: /how-to-clean-up-wordpress-auto-drafts-revisions-and-other-unnecessary-file
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Auto Drafts:</strong> These are temporary drafts automatically created by WordPress to prevent data loss while you're working on a post or page. Over time, unused auto drafts can accumulate and take up space.</li>
+- ***Auto Drafts:***  These are temporary drafts automatically created by WordPress to prevent data loss while you're working on a post or page. Over time, unused auto drafts can accumulate and take up space. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Post Revisions:</strong> WordPress saves a new revision every time you update a post or page. While revisions can be helpful, too many revisions can clog up your database.</li>
+- ***Post Revisions:***  WordPress saves a new revision every time you update a post or page. While revisions can be helpful, too many revisions can clog up your database. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Trashed Posts and Pages:</strong> Posts or pages that you've moved to the trash but haven’t permanently deleted remain in your database until you manually remove them.</li>
+- ***Trashed Posts and Pages:***  Posts or pages that you've moved to the trash but haven’t permanently deleted remain in your database until you manually remove them. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Unused Media Files:</strong> Over time, your WordPress media library can become full of images, videos, and other media files that are no longer in use.</li>
+- ***Unused Media Files:***  Over time, your WordPress media library can become full of images, videos, and other media files that are no longer in use. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Spam and Unapproved Comments:</strong> These comments can accumulate quickly, and if left unattended, can add to the clutter in your database.</li>
-<!-- /wp:list-item --></ul>
+- ***Spam and Unapproved Comments:***  These comments can accumulate quickly, and if left unattended, can add to the clutter in your database. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## How to Clean Up Auto Drafts and Revisions in WordPress</h2>
+ ## How to Clean Up Auto Drafts and Revisions in WordPress
 <!-- /wp:heading -->
 
   Here’s a step-by-step guide to cleaning up your WordPress site, starting with auto drafts and revisions. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Manual Cleanup via WordPress Dashboard</strong></h3>
+
+ ### 1. ***Manual Cleanup via WordPress Dashboard*** 
 <!-- /wp:heading -->
 
   WordPress allows you to manually delete auto drafts, revisions, and trashed items from your dashboard. This method is straightforward but can be time-consuming if you have a lot of posts. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Steps to Manually Delete Auto Drafts and Revisions:</h4>
+<h4 class="wp-block-heading">Steps to Manually Delete Auto Drafts and Revisions: 
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Delete Auto Drafts:</strong></li>
-<!-- /wp:list-item --></ul>
+- ***Delete Auto Drafts:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Navigate to the “Posts” section in your WordPress dashboard.</li>
+- Navigate to the “Posts” section in your WordPress dashboard. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Select the “Drafts” tab.</li>
+- Select the “Drafts” tab. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Review the drafts and delete any that are no longer needed by moving them to the trash.</li>
-<!-- /wp:list-item --></ol>
+- Review the drafts and delete any that are no longer needed by moving them to the trash. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Delete Revisions:</strong></li>
-<!-- /wp:list-item --></ul>
+- ***Delete Revisions:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open a post or page in the editor.</li>
+- Open a post or page in the editor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>In the “Post” panel, find the “Revisions” section.</li>
+- In the “Post” panel, find the “Revisions” section. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Review each revision and manually delete any that are not needed by selecting an older version and clicking “Restore.”</li>
-<!-- /wp:list-item --></ol>
+- Review each revision and manually delete any that are not needed by selecting an older version and clicking “Restore.” 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Empty the Trash:</strong></li>
-<!-- /wp:list-item --></ul>
+- ***Empty the Trash:***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>After moving drafts or revisions to the trash, navigate to “Posts” &gt; “All Posts” &gt; “Trash.”</li>
+- After moving drafts or revisions to the trash, navigate to “Posts” &gt; “All Posts” &gt; “Trash.” 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click on “Empty Trash” to permanently delete all items.</li>
-<!-- /wp:list-item --></ol>
+- Click on “Empty Trash” to permanently delete all items. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   This method works, but it's not efficient for larger sites. If you manage a site with hundreds or thousands of posts, using a plugin or a more automated method will save you significant time and effort. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Using Plugins for Efficient Cleanup</strong></h3>
+
+ ### 2. ***Using Plugins for Efficient Cleanup*** 
 <!-- /wp:heading -->
 
   If your WordPress database is bloated with a lot of auto drafts, revisions, and other junk, using a cleanup plugin is the most efficient option. Here are some popular plugins you can use: 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">a. <strong>WP-Optimize</strong></h4>
+<h4 class="wp-block-heading">a. ***WP-Optimize***  
 <!-- /wp:heading -->
 
   WP-Optimize is one of the most widely-used WordPress cleanup plugins. It can help you optimize your database, compress images, and even cache your website for faster performance. 
  
 
-  <strong>Steps to Clean Auto Drafts and Revisions with WP-Optimize:</strong> 
+  ***Steps to Clean Auto Drafts and Revisions with WP-Optimize:***  
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Install and activate the <strong>WP-Optimize</strong> plugin.</li>
+- Install and activate the ***WP-Optimize***  plugin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Go to “WP-Optimize” in your WordPress dashboard.</li>
+- Go to “WP-Optimize” in your WordPress dashboard. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Under the “Database” tab, you’ll see options for cleaning up revisions, auto drafts, trashed items, and more.</li>
+- Under the “Database” tab, you’ll see options for cleaning up revisions, auto drafts, trashed items, and more. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Select the items you want to clean and click “Run Optimization.”</li>
-<!-- /wp:list-item --></ol>
+- Select the items you want to clean and click “Run Optimization.” 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The plugin will automatically clean up all selected database tables, making the process quick and hassle-free. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">b. <strong>Advanced Database Cleaner</strong></h4>
+<h4 class="wp-block-heading">b. ***Advanced Database Cleaner***  
 <!-- /wp:heading -->
 
   Advanced Database Cleaner is another excellent plugin that focuses on cleaning your WordPress database. It not only removes auto drafts and revisions but also optimizes your database tables to improve performance. 
  
 
-  <strong>Steps to Use Advanced Database Cleaner:</strong> 
+  ***Steps to Use Advanced Database Cleaner:***  
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Install and activate the plugin from the WordPress Plugin Repository.</li>
+- Install and activate the plugin from the WordPress Plugin Repository. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Go to “WP DB Cleaner” in the dashboard.</li>
+- Go to “WP DB Cleaner” in the dashboard. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>You can schedule automatic cleanups or manually select items like revisions, drafts, and comments to be deleted.</li>
+- You can schedule automatic cleanups or manually select items like revisions, drafts, and comments to be deleted. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click “Clean” to remove the selected items.</li>
-<!-- /wp:list-item --></ol>
+- Click “Clean” to remove the selected items. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The plugin also allows you to schedule regular cleanups, so your database stays optimized over time. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">c. <strong>WP-Sweep</strong></h4>
+<h4 class="wp-block-heading">c. ***WP-Sweep***  
 <!-- /wp:heading -->
 
   WP-Sweep is another efficient plugin for cleaning up your WordPress database. It helps remove auto drafts, post revisions, unused terms, and even orphaned post metadata. 
  
 
-  <strong>Steps to Use WP-Sweep:</strong> 
+  ***Steps to Use WP-Sweep:***  
  
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Install and activate the plugin.</li>
+- Install and activate the plugin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Navigate to “Tools” &gt; “Sweep.”</li>
+- Navigate to “Tools” &gt; “Sweep.” 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>You will see various items such as revisions, drafts, trashed posts, and more.</li>
+- You will see various items such as revisions, drafts, trashed posts, and more. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Click the “Sweep” button next to each category you want to clean up.</li>
-<!-- /wp:list-item --></ol>
+- Click the “Sweep” button next to each category you want to clean up. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The plugin will automatically remove the selected items, keeping your database lean and optimized. 
  
 
  
- ## Best Practices for Managing Auto Drafts and Revisions</h2>
+ ## Best Practices for Managing Auto Drafts and Revisions
 <!-- /wp:heading -->
 
   While cleaning up your site is essential, there are steps you can take to prevent clutter from building up in the first place. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. <strong>Limit Post Revisions</strong></h3>
+
+ ### 1. ***Limit Post Revisions*** 
 <!-- /wp:heading -->
 
   By default, WordPress stores an unlimited number of revisions for each post or page. You can limit the number of revisions WordPress keeps by adding a line of code to your <code>wp-config.php</code> file. 
@@ -287,12 +287,12 @@ url: /how-to-clean-up-wordpress-auto-drafts-revisions-and-other-unnecessary-file
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Open your <code>wp-config.php</code> file (found in the root directory of your WordPress installation).</li>
+- Open your <code>wp-config.php</code> file (found in the root directory of your WordPress installation). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Add the following line of code:</li>
-<!-- /wp:list-item --></ol>
+- Add the following line of code: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -302,8 +302,8 @@ url: /how-to-clean-up-wordpress-auto-drafts-revisions-and-other-unnecessary-file
   This will limit the number of post revisions to 3. You can adjust this number based on your preferences. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. <strong>Disable Auto Drafts and Revisions</strong></h3>
+
+ ### 2. ***Disable Auto Drafts and Revisions*** 
 <!-- /wp:heading -->
 
   If you prefer not to have WordPress save auto drafts and revisions at all, you can disable this feature by adding code to your <code>wp-config.php</code> file: 
@@ -317,15 +317,15 @@ define('WP_POST_REVISIONS', false); // Disables revisions</code></pre>
   This method is not recommended unless you're sure you won't need revisions, as they can be useful in case you need to revert to an earlier version of a post. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. <strong>Schedule Regular Cleanups</strong></h3>
+
+ ### 3. ***Schedule Regular Cleanups*** 
 <!-- /wp:heading -->
 
   If you're using a plugin like WP-Optimize or Advanced Database Cleaner, take advantage of their scheduling features to automatically clean up your database at regular intervals (e.g., weekly or monthly). This way, your site remains optimized without manual intervention. 
  
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Cleaning up auto drafts, revisions, and other unnecessary clutter in WordPress is a key aspect of website maintenance. A clean database enhances performance, improves user experience, and boosts your SEO rankings. Whether you choose to manually delete drafts and revisions or use a plugin to automate the process, regular cleanups will keep your WordPress site running smoothly. 

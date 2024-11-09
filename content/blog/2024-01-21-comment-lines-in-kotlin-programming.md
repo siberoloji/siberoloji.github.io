@@ -33,7 +33,7 @@ url: /comment-lines-in-kotlin-programming/
  
 
  
- ## End of Line Comments</h2>
+ ## End of Line Comments
 <!-- /wp:heading -->
 
   These are comments that do not exceed one line in length. They are written after the // sign. Everything after the // sign and up to the end of the line is considered a comment. The example below shows the comment lines used with //. 
@@ -51,7 +51,7 @@ url: /comment-lines-in-kotlin-programming/
 <!-- /wp:code -->
 
  
- ## Multi-Line Comments</h2>
+ ## Multi-Line Comments
 <!-- /wp:heading -->
 
   All comments starting with the /* sign and ending with the *<em>/ sign, regardless of how many lines there are, are considered comments. It is ignored by the compiler. You can use the /</em>* Comment */ format for single-line or multi-line comments. Below is an example of a multi-line comment. 
@@ -72,7 +72,7 @@ url: /comment-lines-in-kotlin-programming/
 <!-- /wp:code -->
 
  
- ## Documentation Comments</h2>
+ ## Documentation Comments
 <!-- /wp:heading -->
 
   Preparing a user guide about our software, adding copyright statements, etc. These are comments written between /** and */ for the following purposes. An * sign is also placed on each line. You can create documentation by compiling the comments you write in this format through another software. Below is an example of a documentation comment. 

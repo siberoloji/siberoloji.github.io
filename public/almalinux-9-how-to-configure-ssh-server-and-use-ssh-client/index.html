@@ -11,24 +11,24 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>AlmaLinux 9: How to Configure SSH Server and Use SSH Client – Siberoloji</title>
-  <meta name="description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-configure-ssh-server-and-use-ssh-client/" itemprop="url" />
+  <meta name="description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9 , configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections." /><link rel="canonical" href="http://localhost:1313/almalinux-9-how-to-configure-ssh-server-and-use-ssh-client/" itemprop="url" />
 
 <meta property="og:title" content="AlmaLinux 9: How to Configure SSH Server and Use SSH Client" />
-<meta property="og:description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections." />
+<meta property="og:description" content="Secure Shell (SSH)  is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9 , configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/almalinux-9-how-to-configure-ssh-server-and-use-ssh-client/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-10-04T17:36:36+00:00" />
 <meta property="article:modified_time" content="2024-10-04T17:36:36+00:00" />
 
   <meta itemprop="name" content="AlmaLinux 9: How to Configure SSH Server and Use SSH Client">
-  <meta itemprop="description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.">
+  <meta itemprop="description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9 , configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.">
   <meta itemprop="datePublished" content="2024-10-04T17:36:36+00:00">
   <meta itemprop="dateModified" content="2024-10-04T17:36:36+00:00">
-  <meta itemprop="wordCount" content="1078">
+  <meta itemprop="wordCount" content="1100">
   <meta itemprop="keywords" content="How-to Guides,Linux,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="AlmaLinux 9: How to Configure SSH Server and Use SSH Client">
-  <meta name="twitter:description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.">
+  <meta name="twitter:description" content="Secure Shell (SSH) is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In AlmaLinux 9 , configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9652,39 +9652,39 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contentsh3">Table of Contents
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#table-of-contents">Table of Contents
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-sshh3">1. Introduction to SSH
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-introduction-to-ssh">1. Introduction to SSH
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-why-use-ssh-in-almalinuxh3">2. Why Use SSH in AlmaLinux?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-why-use-ssh-in-almalinux">2. Why Use SSH in AlmaLinux?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-installing-and-configuring-ssh-server-on-almalinux-9h3">3. Installing and Configuring SSH Server on AlmaLinux 9
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-installing-and-configuring-ssh-server-on-almalinux-9">3. Installing and Configuring SSH Server on AlmaLinux 9
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-secure-ssh-configuration-best-practicesh3">4. Secure SSH Configuration: Best Practices
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-secure-ssh-configuration-best-practices">4. Secure SSH Configuration: Best Practices
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-using-the-ssh-client-to-connect-to-a-remote-serverh3">5. Using the SSH Client to Connect to a Remote Server
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-using-the-ssh-client-to-connect-to-a-remote-server">5. Using the SSH Client to Connect to a Remote Server
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-transferring-files-with-ssh-scp-and-sftph3">6. Transferring Files with SSH (SCP and SFTP)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-transferring-files-with-ssh-scp-and-sftp">6. Transferring Files with SSH (SCP and SFTP)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-troubleshooting-common-ssh-issuesh3">7. Troubleshooting Common SSH Issues
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#7-troubleshooting-common-ssh-issues">7. Troubleshooting Common SSH Issues
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-conclusionh3">8. Conclusion
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#8-conclusion">8. Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9717,273 +9717,291 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p><strong>Secure Shell (SSH)</strong> is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In <strong>AlmaLinux 9</strong>, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.</p></p>
+          <p><em><strong>Secure Shell (SSH)</strong></em>  is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In <em><strong>AlmaLinux 9</strong></em> , configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>Table of Contents</h3><span class="hx-absolute -hx-mt-20" id="table-of-contentsh3"></span>
-    <a href="#table-of-contentsh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Table of Contents<span class="hx-absolute -hx-mt-20" id="table-of-contents"></span>
+    <a href="#table-of-contents" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to SSH</li>
+- Introduction to SSH 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Why Use SSH in AlmaLinux?</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Installing and Configuring SSH Server on AlmaLinux 9</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Secure SSH Configuration: Best Practices</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Using the SSH Client to Connect to a Remote Server</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Transferring Files with SSH (SCP and SFTP)</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Troubleshooting Common SSH Issues</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>1. Introduction to SSH</h3><span class="hx-absolute -hx-mt-20" id="1-introduction-to-sshh3"></span>
-    <a href="#1-introduction-to-sshh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p><strong>SSH (Secure Shell)</strong> is a cryptographic protocol designed for secure communication over a network. It provides several features:</p></p>
+<h3>1. Introduction to SSH<span class="hx-absolute -hx-mt-20" id="1-introduction-to-ssh"></span>
+    <a href="#1-introduction-to-ssh" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p><em><strong>SSH (Secure Shell)</strong></em>  is a cryptographic protocol designed for secure communication over a network. It provides several features:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Remote Command Execution</strong>: Execute commands on a remote system as if you're physically present.</li>
+- ***Remote Command Execution*** : Execute commands on a remote system as if you're physically present. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Secure File Transfer</strong>: Transfer files between a local and a remote machine securely.</li>
+<ul>
+<li><em><strong>Secure File Transfer</strong></em> : Transfer files between a local and a remote machine securely.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Tunneling</strong>: Forward data securely across an unsecured network.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Tunneling</strong></em> : Forward data securely across an unsecured network.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>SSH is a replacement for older protocols like <strong>Telnet</strong> and <strong>rlogin</strong>, which do not encrypt traffic and are vulnerable to attacks.</p></p>
+<p>SSH is a replacement for older protocols like <em><strong>Telnet</strong></em>  and <em><strong>rlogin</strong></em> , which do not encrypt traffic and are vulnerable to attacks.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>2. Why Use SSH in AlmaLinux?</h3><span class="hx-absolute -hx-mt-20" id="2-why-use-ssh-in-almalinuxh3"></span>
-    <a href="#2-why-use-ssh-in-almalinuxh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>SSH is widely used because of its security and functionality. It offers:</p></p>
+<h3>2. Why Use SSH in AlmaLinux?<span class="hx-absolute -hx-mt-20" id="2-why-use-ssh-in-almalinux"></span>
+    <a href="#2-why-use-ssh-in-almalinux" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>SSH is widely used because of its security and functionality. It offers:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Encrypted Connections</strong>: Prevents unauthorized access and protects sensitive data.</li>
+- ***Encrypted Connections*** : Prevents unauthorized access and protects sensitive data. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Remote Management</strong>: Allows administrators to manage servers without being physically present.</li>
+<ul>
+<li><em><strong>Remote Management</strong></em> : Allows administrators to manage servers without being physically present.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Flexibility</strong>: Supports tunneling, port forwarding, and file transfer protocols like SCP and SFTP.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li><em><strong>Flexibility</strong></em> : Supports tunneling, port forwarding, and file transfer protocols like SCP and SFTP.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<p>In AlmaLinux 9, <strong>OpenSSH</strong> is the default SSH implementation. It includes both the SSH server (<code>sshd</code>) and the client (<code>ssh</code>).</p></p>
+<p>In AlmaLinux 9, <em><strong>OpenSSH</strong></em>  is the default SSH implementation. It includes both the SSH server (<code>sshd</code>) and the client (<code>ssh</code>).</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>3. Installing and Configuring SSH Server on AlmaLinux 9</h3><span class="hx-absolute -hx-mt-20" id="3-installing-and-configuring-ssh-server-on-almalinux-9h3"></span>
-    <a href="#3-installing-and-configuring-ssh-server-on-almalinux-9h3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>The first step in setting up remote access on AlmaLinux 9 is installing and configuring the <strong>OpenSSH Server</strong>.</p></p>
+<h3>3. Installing and Configuring SSH Server on AlmaLinux 9<span class="hx-absolute -hx-mt-20" id="3-installing-and-configuring-ssh-server-on-almalinux-9"></span>
+    <a href="#3-installing-and-configuring-ssh-server-on-almalinux-9" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>The first step in setting up remote access on AlmaLinux 9 is installing and configuring the <em><strong>OpenSSH Server</strong></em> .</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Install OpenSSH</h4>
+<h4 class="wp-block-heading">Step 1: Install OpenSSH 
 <!-- /wp:heading -->
-<p>By default, AlmaLinux 9 may have OpenSSH installed. To confirm or install it:</p></p>
+<p>By default, AlmaLinux 9 may have OpenSSH installed. To confirm or install it:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf install openssh-server</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Enable and Start SSH Service</h4>
+<h4 class="wp-block-heading">Step 2: Enable and Start SSH Service 
 <!-- /wp:heading -->
-<p>After installation, enable the SSH service to ensure it starts on boot and is immediately active:</p></p>
+<p>After installation, enable the SSH service to ensure it starts on boot and is immediately active:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl enable sshd
 sudo systemctl start sshd</code></pre>
 <!-- /wp:code -->
-<p>You can verify the status of the SSH service with:</p></p>
+<p>You can verify the status of the SSH service with:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl status sshd</code></pre>
 <!-- /wp:code -->
-<p>If it&rsquo;s running, you’re ready to accept SSH connections.</p></p>
+<p>If it&rsquo;s running, you’re ready to accept SSH connections.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Configure the Firewall</h4>
+<h4 class="wp-block-heading">Step 3: Configure the Firewall 
 <!-- /wp:heading -->
-<p>To allow SSH traffic through the firewall, open port <strong>22</strong> (the default SSH port):</p></p>
+<p>To allow SSH traffic through the firewall, open port <em><strong>22</strong></em>  (the default SSH port):</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --permanent --add-service=ssh
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
-<p>If you intend to change the default port for added security (as explained below), you will need to open that port in the firewall.</p></p>
+<p>If you intend to change the default port for added security (as explained below), you will need to open that port in the firewall.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>4. Secure SSH Configuration: Best Practices</h3><span class="hx-absolute -hx-mt-20" id="4-secure-ssh-configuration-best-practicesh3"></span>
-    <a href="#4-secure-ssh-configuration-best-practicesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Security is a priority when configuring SSH. Several tweaks can improve the security of your SSH server, making it harder for attackers to compromise your system.</p></p>
+<h3>4. Secure SSH Configuration: Best Practices<span class="hx-absolute -hx-mt-20" id="4-secure-ssh-configuration-best-practices"></span>
+    <a href="#4-secure-ssh-configuration-best-practices" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Security is a priority when configuring SSH. Several tweaks can improve the security of your SSH server, making it harder for attackers to compromise your system.</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Disable Root Login</h4>
+<h4 class="wp-block-heading">Step 1: Disable Root Login 
 <!-- /wp:heading -->
-<p>By default, SSH allows root login, but this can be risky. Disabling root access ensures that users log in with non-privileged accounts before escalating privileges.</p></p>
-<p>Open the SSH configuration file:</p></p>
+<p>By default, SSH allows root login, but this can be risky. Disabling root access ensures that users log in with non-privileged accounts before escalating privileges.</p>
+<p>Open the SSH configuration file:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo nano /etc/ssh/sshd_config</code></pre>
 <!-- /wp:code -->
-<p>Locate the line:</p></p>
+<p>Locate the line:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">PermitRootLogin yes</code></pre>
 <!-- /wp:code -->
-<p>Change it to:</p></p>
+<p>Change it to:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">PermitRootLogin no</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Use SSH Key-Based Authentication</h4>
+<h4 class="wp-block-heading">Step 2: Use SSH Key-Based Authentication 
 <!-- /wp:heading -->
-<p>Password authentication can be vulnerable to brute-force attacks. For stronger security, use <strong>SSH keys</strong>:</p></p>
+<p>Password authentication can be vulnerable to brute-force attacks. For stronger security, use <em><strong>SSH keys</strong></em> :</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Generate a key pair on your client machine:</li>
-<!-- /wp:list-item --></ul>
+- Generate a key pair on your client machine: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  ssh-keygen -t rsa -b 4096</code></pre>
 <!-- /wp:code -->
-<p>This will create a private key (<code>id_rsa</code>) and a public key (<code>id_rsa.pub</code>) in the <code>~/.ssh/</code> directory.</p></p>
+<p>This will create a private key (<code>id_rsa</code>) and a public key (<code>id_rsa.pub</code>) in the <code>~/.ssh/</code> directory.</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Copy the public key to the server:</li>
-<!-- /wp:list-item --></ul>
+- Copy the public key to the server: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  ssh-copy-id user@server_ip_address</code></pre>
 <!-- /wp:code -->
-<p>Alternatively, you can manually copy the contents of <code>id_rsa.pub</code> to the <code>~/.ssh/authorized_keys</code> file on the server.</p></p>
-<p>Once key-based authentication is set up, disable password authentication in the <code>/etc/ssh/sshd_config</code> file:</p></p>
+<p>Alternatively, you can manually copy the contents of <code>id_rsa.pub</code> to the <code>~/.ssh/authorized_keys</code> file on the server.</p>
+<p>Once key-based authentication is set up, disable password authentication in the <code>/etc/ssh/sshd_config</code> file:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">PasswordAuthentication no</code></pre>
 <!-- /wp:code -->
-<p>Restart the SSH service to apply changes:</p></p>
+<p>Restart the SSH service to apply changes:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart sshd</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Change the Default SSH Port</h4>
+<h4 class="wp-block-heading">Step 3: Change the Default SSH Port 
 <!-- /wp:heading -->
-<p>Another security measure is to change the default SSH port (22) to something less predictable. Edit <code>/etc/ssh/sshd_config</code>:</p></p>
+<p>Another security measure is to change the default SSH port (22) to something less predictable. Edit <code>/etc/ssh/sshd_config</code>:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">Port 2022</code></pre>
 <!-- /wp:code -->
-<p>Replace <strong>2022</strong> with any available port number. Don’t forget to update your firewall:</p></p>
+<p>Replace <em><strong>2022</strong></em>  with any available port number. Don’t forget to update your firewall:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --permanent --add-port=2022/tcp
 sudo firewall-cmd --reload</code></pre>
 <!-- /wp:code -->
-<p>Restart the SSH service after making the changes:</p></p>
+<p>Restart the SSH service after making the changes:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart sshd</code></pre>
 <!-- /wp:code -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>5. Using the SSH Client to Connect to a Remote Server</h3><span class="hx-absolute -hx-mt-20" id="5-using-the-ssh-client-to-connect-to-a-remote-serverh3"></span>
-    <a href="#5-using-the-ssh-client-to-connect-to-a-remote-serverh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>Once the SSH server is configured, you can connect to it using the SSH client from any Linux, macOS, or Windows machine (using tools like <strong>PuTTY</strong> on Windows).</p></p>
+<h3>5. Using the SSH Client to Connect to a Remote Server<span class="hx-absolute -hx-mt-20" id="5-using-the-ssh-client-to-connect-to-a-remote-server"></span>
+    <a href="#5-using-the-ssh-client-to-connect-to-a-remote-server" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>Once the SSH server is configured, you can connect to it using the SSH client from any Linux, macOS, or Windows machine (using tools like <em><strong>PuTTY</strong></em>  on Windows).</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Basic SSH Connection</h4>
+<h4 class="wp-block-heading">Step 1: Basic SSH Connection 
 <!-- /wp:heading -->
-<p>To connect to a remote server, use the following syntax:</p></p>
+<p>To connect to a remote server, use the following syntax:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ssh user@server_ip_address</code></pre>
 <!-- /wp:code -->
-<p>For example, if the user is <strong>admin</strong> and the server&rsquo;s IP is <strong>192.168.1.10</strong>, run:</p></p>
+<p>For example, if the user is <em><strong>admin</strong></em>  and the server&rsquo;s IP is <em><strong>192.168.1.10</strong></em> , run:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ssh admin@192.168.1.10</code></pre>
 <!-- /wp:code -->
-<p>If you changed the SSH port, specify the port using the <code>-p</code> option:</p></p>
+<p>If you changed the SSH port, specify the port using the <code>-p</code> option:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ssh admin@192.168.1.10 -p 2022</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Using SSH Keys</h4>
+<h4 class="wp-block-heading">Step 2: Using SSH Keys 
 <!-- /wp:heading -->
-<p>If you’ve configured SSH key-based authentication, the SSH client will automatically use your private key (<code>~/.ssh/id_rsa</code>). If you have multiple keys, you can specify which key to use with the <code>-i</code> option:</p></p>
+<p>If you’ve configured SSH key-based authentication, the SSH client will automatically use your private key (<code>~/.ssh/id_rsa</code>). If you have multiple keys, you can specify which key to use with the <code>-i</code> option:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ssh -i /path/to/private_key user@server_ip_address</code></pre>
 <!-- /wp:code -->
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>6. Transferring Files with SSH (SCP and SFTP)</h3><span class="hx-absolute -hx-mt-20" id="6-transferring-files-with-ssh-scp-and-sftph3"></span>
-    <a href="#6-transferring-files-with-ssh-scp-and-sftph3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>SSH also supports secure file transfers using <strong>SCP</strong> (Secure Copy Protocol) and <strong>SFTP</strong> (Secure File Transfer Protocol).</p></p>
+<h3>6. Transferring Files with SSH (SCP and SFTP)<span class="hx-absolute -hx-mt-20" id="6-transferring-files-with-ssh-scp-and-sftp"></span>
+    <a href="#6-transferring-files-with-ssh-scp-and-sftp" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>SSH also supports secure file transfers using <em><strong>SCP</strong></em>  (Secure Copy Protocol) and <em><strong>SFTP</strong></em>  (Secure File Transfer Protocol).</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Using SCP for File Transfers</h4>
+<h4 class="wp-block-heading">Step 1: Using SCP for File Transfers 
 <!-- /wp:heading -->
-<p>To copy files from a local machine to a remote server:</p></p>
+<p>To copy files from a local machine to a remote server:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">scp /path/to/local/file user@server_ip_address:/path/to/remote/directory</code></pre>
 <!-- /wp:code -->
-<p>To copy files from a remote server to your local machine:</p></p>
+<p>To copy files from a remote server to your local machine:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">scp user@server_ip_address:/path/to/remote/file /path/to/local/directory</code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Using SFTP for File Transfers</h4>
+<h4 class="wp-block-heading">Step 2: Using SFTP for File Transfers 
 <!-- /wp:heading -->
-<p><strong>SFTP</strong> is an interactive file transfer tool that works over SSH. To start an SFTP session, use:</p></p>
+<p><em><strong>SFTP</strong></em>  is an interactive file transfer tool that works over SSH. To start an SFTP session, use:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sftp user@server_ip_address</code></pre>
 <!-- /wp:code -->
-<p>Once connected, you can use standard file transfer commands like <code>put</code>, <code>get</code>, <code>ls</code>, <code>cd</code>, and <code>exit</code>.</p></p>
+<p>Once connected, you can use standard file transfer commands like <code>put</code>, <code>get</code>, <code>ls</code>, <code>cd</code>, and <code>exit</code>.</p>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>7. Troubleshooting Common SSH Issues</h3><span class="hx-absolute -hx-mt-20" id="7-troubleshooting-common-ssh-issuesh3"></span>
-    <a href="#7-troubleshooting-common-ssh-issuesh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>If you encounter problems when using SSH, here are some common troubleshooting steps:</p></p>
+<h3>7. Troubleshooting Common SSH Issues<span class="hx-absolute -hx-mt-20" id="7-troubleshooting-common-ssh-issues"></span>
+    <a href="#7-troubleshooting-common-ssh-issues" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>If you encounter problems when using SSH, here are some common troubleshooting steps:</p>
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1. <strong>SSH Connection Refused</strong>:</h4>
+<h4 class="wp-block-heading">1. ***SSH Connection Refused*** : 
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ensure the SSH service is running: <code>sudo systemctl status sshd</code>.</li>
+- Ensure the SSH service is running: <code>sudo systemctl status sshd</code>. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Check if the firewall allows SSH traffic: <code>sudo firewall-cmd --list-all</code>.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Check if the firewall allows SSH traffic: <code>sudo firewall-cmd &ndash;list-all</code>.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2. <strong>Permission Denied</strong>:</h4>
+<h4 class="wp-block-heading">2. ***Permission Denied*** : 
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Verify that the correct user and key are being used.</li>
+- Verify that the correct user and key are being used. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li>Ensure the public key is properly configured in the server's <code>~/.ssh/authorized_keys</code> file.</li>
-<!-- /wp:list-item --></ul>
+<ul>
+<li>Ensure the public key is properly configured in the server&rsquo;s <code>~/.ssh/authorized_keys</code> file.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3. <strong>Slow Connection</strong>:</h4>
+<h4 class="wp-block-heading">3. ***Slow Connection*** : 
 <!-- /wp:heading -->
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>This could be due to DNS resolution. Add the following line to <code>/etc/ssh/sshd_config</code> to skip DNS checks:</li>
-<!-- /wp:list-item --></ul>
+- This could be due to DNS resolution. Add the following line to <code>/etc/ssh/sshd_config</code> to skip DNS checks: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">UseDNS no</code></pre>
@@ -9991,11 +10009,10 @@ sudo firewall-cmd --reload</code></pre>
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
-<!-- wp:heading {"level":3} -->
-<h3>8. Conclusion</h3><span class="hx-absolute -hx-mt-20" id="8-conclusionh3"></span>
-    <a href="#8-conclusionh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
-<p>SSH is a critical tool for managing remote servers securely. Configuring an SSH server in <strong>AlmaLinux 9</strong> is straightforward, and once set up, it offers robust features like encrypted connections, remote command execution, and secure file transfers. By following best security practices—such as disabling root login, using key-based authentication, and changing the default SSH port—you can enhance the security of your remote connections.</p></p>
-<p>Whether you&rsquo;re managing a single server or an entire infrastructure, SSH is a fundamental tool that every administrator should master.</p></p>
+<h3>8. Conclusion<span class="hx-absolute -hx-mt-20" id="8-conclusion"></span>
+    <a href="#8-conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<p>SSH is a critical tool for managing remote servers securely. Configuring an SSH server in <em><strong>AlmaLinux 9</strong></em>  is straightforward, and once set up, it offers robust features like encrypted connections, remote command execution, and secure file transfers. By following best security practices—such as disabling root login, using key-based authentication, and changing the default SSH port—you can enhance the security of your remote connections.</p>
+<p>Whether you&rsquo;re managing a single server or an entire infrastructure, SSH is a fundamental tool that every administrator should master.</p>
 
         </div>
         

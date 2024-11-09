@@ -9685,25 +9685,31 @@ You must perform the following steps in order on your command line.">
 <p>In this article, we will share the Adguard Home installation on our server using Rocky Linux 9 and AlmaLinux 9.</p>
 <p>You must perform the following steps in order on your command line.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's update the system packages.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+<ul>
+<li>Let&rsquo;s update the system packages.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dnf clean all &amp;&amp; sudo dnf update<br>sudo dnf groupinstall "Development Tools"</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's download and install AdGuard packages from GitHub</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+<ul>
+<li>Let&rsquo;s download and install AdGuard packages from GitHub</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v</code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's open the necessary permissions for the firewall.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+<ul>
+<li>Let&rsquo;s open the necessary permissions for the firewall.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo firewall-cmd --add-service={dns,http,https} --permanent<br>sudo firewall-cmd --add-port=3000/tcp --permanent<br>sudo firewall-cmd --reload</code></pre>

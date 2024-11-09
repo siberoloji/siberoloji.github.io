@@ -20,7 +20,7 @@ url: /how-to-make-toast-message/
 ---
 
 <!-- wp:paragraph -->
-<p>You can find a code sample to make a Toast message in Android Studio</p>
+<p>You can find a code sample to make a Toast message in Android Studio
   
 
 <!-- wp:more -->
@@ -28,7 +28,7 @@ url: /how-to-make-toast-message/
 <!-- /wp:more -->
 
  
- ## Example-1</h2>
+ ## Example-1
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -40,11 +40,11 @@ toast.show()</code></code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>or you can call directly</p>
+<p>or you can call directly
   
 
  
- ## Example-2</h2>
+ ## Example-2
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -52,11 +52,11 @@ toast.show()</code></code></pre>
 <!-- /wp:code -->
 
  
- ## Example-3</h2>
+ ## Example-3
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>With this example, you can display a "click counter" and a "toast message" together.</p>
+<p>With this example, you can display a "click counter" and a "toast message" together.
   
 
 <!-- wp:code -->
@@ -79,11 +79,11 @@ toast.show()</code></code></pre>
 <!-- /wp:code -->
 
  
- ## Important...</h2>
+ ## Important...
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>As you can see, there must be a button and textView element in your activity_main.xml file. You can find an example below.</p>
+<p>As you can see, there must be a button and textView element in your activity_main.xml file. You can find an example below.
   
 
 <!-- wp:code -->

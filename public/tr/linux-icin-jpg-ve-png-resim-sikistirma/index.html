@@ -11,11 +11,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Linux İçin jpg ve png Resim Sıkıştırma – Siberoloji</title>
-  <meta name="description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
-1. pngquant
-2. jpegoptim
-pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
-sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum." /><link rel="canonical" href="http://localhost:1313/tr/linux-icin-jpg-ve-png-resim-sikistirma/" itemprop="url" />
+  <meta name="description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım. 1. pngquant 2. jpegoptim pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum. pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir. pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir. --force  parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz. --skip-if-larger  parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz. Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz. Jpegoptim Kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install jpegoptim jpegoptim kullanım: jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz. jpegoptim resim.jpg resim.jpg 942x1006 24bit N JFIF [OK] 105602 --&gt; 98202 bytes (7.01%), optimized. jpegoptim graduate.jpg graduate.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized. jpegoptim penguin.jpg --des=/home/umut/ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized. " /><link rel="canonical" href="http://localhost:1313/tr/linux-icin-jpg-ve-png-resim-sikistirma/" itemprop="url" />
 
 <meta property="og:title" content="Linux İçin jpg ve png Resim Sıkıştırma" />
 <meta property="og:description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
@@ -29,29 +25,51 @@ sudo apt install pngquant
 
 pngquant kullanım:
     
- png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&nbsp;-o&nbsp;&nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum." />
+ png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&nbsp;-o&nbsp;&nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.
+
+pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir.
+
+pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir.
+
+ --force&nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.
+ --skip-if-larger&nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.
+ Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.
+Jpegoptim Kurulum:
+    
+ Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
+
+sudo apt install jpegoptim
+
+jpegoptim kullanım:
+    
+ jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.
+
+jpegoptim resim.jpg
+
+resim.jpg 942x1006 24bit N JFIF [OK] 105602 --&gt; 98202 bytes (7.01%), optimized.
+
+jpegoptim graduate.jpg
+
+graduate.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.
+
+jpegoptim penguin.jpg --des=/home/umut/
+
+penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/linux-icin-jpg-ve-png-resim-sikistirma/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2016-12-15T01:54:00+00:00" />
 <meta property="article:modified_time" content="2016-12-15T01:54:00+00:00" />
 
   <meta itemprop="name" content="Linux İçin jpg ve png Resim Sıkıştırma">
-  <meta itemprop="description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
-1. pngquant
-2. jpegoptim
-pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
-sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.">
+  <meta itemprop="description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım. 1. pngquant 2. jpegoptim pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum. pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir. pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir. --force  parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz. --skip-if-larger  parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz. Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz. Jpegoptim Kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install jpegoptim jpegoptim kullanım: jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz. jpegoptim resim.jpg resim.jpg 942x1006 24bit N JFIF [OK] 105602 --&gt; 98202 bytes (7.01%), optimized. jpegoptim graduate.jpg graduate.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized. jpegoptim penguin.jpg --des=/home/umut/ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.">
   <meta itemprop="datePublished" content="2016-12-15T01:54:00+00:00">
   <meta itemprop="dateModified" content="2016-12-15T01:54:00+00:00">
   <meta itemprop="wordCount" content="264">
   <meta itemprop="keywords" content="Linux Nasıl">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Linux İçin jpg ve png Resim Sıkıştırma">
-  <meta name="twitter:description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
-1. pngquant
-2. jpegoptim
-pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
-sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.">
+  <meta name="twitter:description" content="Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım. 1. pngquant 2. jpegoptim pngquant kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum. pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir. pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir. --force  parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz. --skip-if-larger  parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz. Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz. Jpegoptim Kurulum: Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz. sudo apt install jpegoptim jpegoptim kullanım: jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz. jpegoptim resim.jpg resim.jpg 942x1006 24bit N JFIF [OK] 105602 --&gt; 98202 bytes (7.01%), optimized. jpegoptim graduate.jpg graduate.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized. jpegoptim penguin.jpg --des=/home/umut/ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9054,27 +9072,27 @@ sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için ko
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#pngquant-kurulumh2"
+                href="#pngquant-kurulum"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >pngquant kurulum:&lt;/h2&gt;</a>
+              >pngquant kurulum:</a>
             </li>
           <li>
               <a
-                href="#pngquant-kullan%c4%b1mh2"
+                href="#pngquant-kullan%c4%b1m"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >pngquant kullanım:&lt;/h2&gt;</a>
+              >pngquant kullanım:</a>
             </li>
           <li>
               <a
-                href="#jpegoptim-kurulumh2"
+                href="#jpegoptim-kurulum"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Jpegoptim Kurulum:&lt;/h2&gt;</a>
+              >Jpegoptim Kurulum:</a>
             </li>
           <li>
               <a
-                href="#jpegoptim-kullan%c4%b1mh2"
+                href="#jpegoptim-kullan%c4%b1m"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >jpegoptim kullanım:&lt;/h2&gt;</a>
+              >jpegoptim kullanım:</a>
             </li>
           </ul>
   
@@ -9693,19 +9711,19 @@ sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için ko
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pngquant-kurulumh2">pngquant kurulum:
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pngquant-kurulum">pngquant kurulum:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pngquant-kullan%c4%b1mh2">pngquant kullanım:
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pngquant-kullan%c4%b1m">pngquant kullanım:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#jpegoptim-kurulumh2">Jpegoptim Kurulum:
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#jpegoptim-kurulum">Jpegoptim Kurulum:
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#jpegoptim-kullan%c4%b1mh2">jpegoptim kullanım:
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#jpegoptim-kullan%c4%b1m">jpegoptim kullanım:
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9738,35 +9756,35 @@ sudo apt install pngquant pngquant kullanım: png sıkıştırma işlem için ko
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-           <p>Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.</p>
- <p>1. pngquant</p>
- <p>2. jpegoptim</p>
-<h2>pngquant kurulum:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kurulumh2"></span>
-    <a href="#pngquant-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.</p>
+           <p>Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
+ <p>1. pngquant
+ <p>2. jpegoptim
+<h2>pngquant kurulum:<span class="hx-absolute -hx-mt-20" id="pngquant-kurulum"></span>
+    <a href="#pngquant-kurulum" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install pngquant</pre>
 <!-- /wp:preformatted -->
-<h2>pngquant kullanım:</h2><span class="hx-absolute -hx-mt-20" id="pngquant-kullanımh2"></span>
-    <a href="#pngquant-kullan%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&nbsp;-o&nbsp;&nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.</p>
+<h2>pngquant kullanım:<span class="hx-absolute -hx-mt-20" id="pngquant-kullanım"></span>
+    <a href="#pngquant-kullan%c4%b1m" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&nbsp;-o&nbsp;&nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir.
 
 pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir.</pre>
 <!-- /wp:preformatted -->
- <p>--force&nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.</p>
- <p>--skip-if-larger&nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.</p>
- <p>Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.</p>
-<h2>Jpegoptim Kurulum:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kurulumh2"></span>
-    <a href="#jpegoptim-kurulumh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.</p>
+ <p>--force&nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.
+ <p>--skip-if-larger&nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.
+ <p>Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.
+<h2>Jpegoptim Kurulum:<span class="hx-absolute -hx-mt-20" id="jpegoptim-kurulum"></span>
+    <a href="#jpegoptim-kurulum" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install jpegoptim</pre>
 <!-- /wp:preformatted -->
-<h2>jpegoptim kullanım:</h2><span class="hx-absolute -hx-mt-20" id="jpegoptim-kullanımh2"></span>
-    <a href="#jpegoptim-kullan%c4%b1mh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.</p>
+<h2>jpegoptim kullanım:<span class="hx-absolute -hx-mt-20" id="jpegoptim-kullanım"></span>
+    <a href="#jpegoptim-kullan%c4%b1m" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">jpegoptim resim.jpg
 

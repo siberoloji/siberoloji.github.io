@@ -26,11 +26,11 @@ url: /logical-and-and-or-operators-in-c/
 ---
 
 <!-- wp:paragraph -->
-<p>The provided C++ code demonstrates the use of logical operators: AND (<code>&amp;&amp;</code>), OR (<code>||</code>), and NOT (<code>!</code>), through a series of comparisons between three initialized integer variables (<code>x</code>, <code>y</code>, and <code>z</code>).</p>
+<p>The provided C++ code demonstrates the use of logical operators: AND (<code>&amp;&amp;</code>), OR (<code>||</code>), and NOT (<code>!</code>), through a series of comparisons between three initialized integer variables (<code>x</code>, <code>y</code>, and <code>z</code>).
   
 
  
- ## Code</h2>
+ ## Code
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -80,15 +80,15 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The provided C++ code demonstrates the use of logical operators: AND (<code>&amp;&amp;</code>), OR (<code>||</code>), and NOT (<code>!</code>), through a series of comparisons between three initialized integer variables (<code>x</code>, <code>y</code>, and <code>z</code>). It serves as an educational example to illustrate how these operators function in conditional statements and their precedence rules.</p>
+<p>The provided C++ code demonstrates the use of logical operators: AND (<code>&amp;&amp;</code>), OR (<code>||</code>), and NOT (<code>!</code>), through a series of comparisons between three initialized integer variables (<code>x</code>, <code>y</code>, and <code>z</code>). It serves as an educational example to illustrate how these operators function in conditional statements and their precedence rules.
   
 
 <!-- wp:paragraph -->
-<p>Initially, the code sets up three variables <code>x</code>, <code>y</code>, and <code>z</code> with values 5, 10, and 15, respectively. This setup is crucial for the subsequent comparisons:</p>
+<p>Initially, the code sets up three variables <code>x</code>, <code>y</code>, and <code>z</code> with values 5, 10, and 15, respectively. This setup is crucial for the subsequent comparisons:
   
 
 <!-- wp:code -->
@@ -96,7 +96,7 @@ int main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The demonstration of the logical AND (<code>&amp;&amp;</code>) operator is shown through two examples. The first example checks if <code>x</code> is less than <code>y</code> AND <code>y</code> is less than <code>z</code>, which evaluates to true since both conditions are satisfied:</p>
+<p>The demonstration of the logical AND (<code>&amp;&amp;</code>) operator is shown through two examples. The first example checks if <code>x</code> is less than <code>y</code> AND <code>y</code> is less than <code>z</code>, which evaluates to true since both conditions are satisfied:
   
 
 <!-- wp:code -->
@@ -104,7 +104,7 @@ int main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The logical OR (<code>||</code>) operator is similarly demonstrated. An example provided checks if <code>x</code> is less than <code>y</code> OR <code>y</code> is greater than <code>z</code>. This expression evaluates to true because the first condition is true, illustrating that only one condition needs to be true for the OR operator to result in true:</p>
+<p>The logical OR (<code>||</code>) operator is similarly demonstrated. An example provided checks if <code>x</code> is less than <code>y</code> OR <code>y</code> is greater than <code>z</code>. This expression evaluates to true because the first condition is true, illustrating that only one condition needs to be true for the OR operator to result in true:
   
 
 <!-- wp:code -->
@@ -112,7 +112,7 @@ int main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The NOT (<code>!</code>) operator's demonstration negates the truth value of the condition it precedes. For instance, negating the condition <code>x &lt; y</code> results in false because <code>x &lt; y</code> is true, and NOT true is false:</p>
+<p>The NOT (<code>!</code>) operator's demonstration negates the truth value of the condition it precedes. For instance, negating the condition <code>x &lt; y</code> results in false because <code>x &lt; y</code> is true, and NOT true is false:
   
 
 <!-- wp:code -->
@@ -120,7 +120,7 @@ int main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Lastly, the code touches upon the precedence of logical operators, stating that AND (<code>&amp;&amp;</code>) has a higher precedence than OR (<code>||</code>). This is crucial in understanding how complex logical expressions are evaluated. The provided examples show that even if OR appears first in an expression, the AND part is evaluated first due to its higher precedence:</p>
+<p>Lastly, the code touches upon the precedence of logical operators, stating that AND (<code>&amp;&amp;</code>) has a higher precedence than OR (<code>||</code>). This is crucial in understanding how complex logical expressions are evaluated. The provided examples show that even if OR appears first in an expression, the AND part is evaluated first due to its higher precedence:
   
 
 <!-- wp:code -->
@@ -128,11 +128,11 @@ int main() {
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>This code snippet is a straightforward demonstration aimed at those familiar with C++ but perhaps not with the intricacies of logical operators and their precedence.</p>
+<p>This code snippet is a straightforward demonstration aimed at those familiar with C++ but perhaps not with the intricacies of logical operators and their precedence.
   
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

@@ -24,46 +24,61 @@
       <description>
         
         
-        &lt;p&gt;As you know, every variable must have a unique name. Although it may seem problem-free at first, as your software expands, your codes may become difficult to understand. Most of the software developers&amp;rsquo; time is spent reading the code written by others, not writing code.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;If you want the code you write to be easy to read and follow, it is very important to follow the naming rules. The variable name you choose should explain exactly what the variable does. Let&amp;rsquo;s see in order the rules that you are advised to follow so that your code does not become complex and incomprehensible.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Mandatory Naming Rules&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;mandatory-naming-rulesh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mandatory-naming-rulesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+        &lt;p&gt;As you know, every variable must have a unique name. Although it may seem problem-free at first, as your software expands, your codes may become difficult to understand. Most of the software developers&amp;rsquo; time is spent reading the code written by others, not writing code.&lt;/p&gt;
+&lt;p&gt;If you want the code you write to be easy to read and follow, it is very important to follow the naming rules. The variable name you choose should explain exactly what the variable does. Let&amp;rsquo;s see in order the rules that you are advised to follow so that your code does not become complex and incomprehensible.&lt;/p&gt;
+&lt;h2&gt;Mandatory Naming Rules&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;mandatory-naming-rules&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mandatory-naming-rules&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Names are case sensitive. (number and Number are not the same expression.)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Names must consist only of letters, numbers and underscores.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Names cannot have a number at the beginning (1month is the wrong usage.)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Keywords that the Kotlin software reserves for itself (val, var, fun, etc.) cannot be used as variable names.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2&gt;Recommended Naming Conventions&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;recommended-naming-conventionsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#recommended-naming-conventionsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Recommended Naming Conventions&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;recommended-naming-conventions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#recommended-naming-conventions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;If a variable name consists of a single word, it must be written in all lowercase letters. (&lt;code&gt;name&lt;/code&gt;, &lt;code&gt;message&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;If a variable name consists of more than one word, lowercase Camel style notation should be used. (numberOfStudents, numberOfPages). As can be seen, after the entire first word is written in lowercase, only the first letter of each word should be capitalized.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Although it is not prohibited, you should not start the variable name with an underscore _.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;You must give meaningful names to the variable. As a variable name, the &lt;code&gt;color&lt;/code&gt; name will be more descriptive and meaningful than the &lt;code&gt;c&lt;/code&gt; expression.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2&gt;Magic Numbers&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;magic-numbersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#magic-numbersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;In the example command below, the number 7 is written to the screen. It is very difficult for another programmer reading this program to know what the number 7 is. In such cases, numbers should be named using const and used that way, even if they are a constant. When naming, the UPPERCASE_LETTER_SNAKE type should be used. This usage will provide great convenience to understand the code.&lt;/p&gt;&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Not Recommended Use&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;not-recommended-useh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#not-recommended-useh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Magic Numbers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;magic-numbers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#magic-numbers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In the example command below, the number 7 is written to the screen. It is very difficult for another programmer reading this program to know what the number 7 is. In such cases, numbers should be named using const and used that way, even if they are a constant. When naming, the UPPERCASE_LETTER_SNAKE type should be used. This usage will provide great convenience to understand the code.&lt;/p&gt;
+&lt;h3&gt;Not Recommended Use&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;not-recommended-use&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#not-recommended-use&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     println(7)
@@ -74,9 +89,8 @@
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Recommended Use&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;recommended-useh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#recommended-useh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Recommended Use&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;recommended-use&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#recommended-use&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val DAYS_OF_THE_WEEK = 7
 
@@ -89,7 +103,7 @@ fun main() {
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;If you follow the rules we explained above as much as possible, it will be very helpful and save time for both you and your friends who will be involved in the project later.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;If you follow the rules we explained above as much as possible, it will be very helpful and save time for both you and your friends who will be involved in the project later.&lt;/p&gt;
 
       </description>
     </item>
@@ -105,8 +119,8 @@ Process finished with exit code 0
         
         &lt;p&gt;A computer program consists of various pieces of code coming together and working in harmony. Each block of code does what is expected of it. As time goes on, the program developers who write these codes begin to forget and get confused about which code does what. In addition, a new developer who replaces the developer who left the project must learn the program by reading the codes. In this case, explanations, notes and similar expressions written next to the codes are called comment lines.&lt;/p&gt;
 &lt;p&gt;Comment lines are not taken into account by program compilers and are not included in the process. There are 3 different types of comment lines in Kotlin.&lt;/p&gt;
-&lt;h2&gt;End of Line Comments&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;end-of-line-commentsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#end-of-line-commentsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;End of Line Comments&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;end-of-line-comments&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#end-of-line-comments&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;These are comments that do not exceed one line in length. They are written after the // sign. Everything after the // sign and up to the end of the line is considered a comment. The example below shows the comment lines used with //.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
@@ -118,8 +132,8 @@ Process finished with exit code 0
     println(age)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Multi-Line Comments&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;multi-line-commentsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#multi-line-commentsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Multi-Line Comments&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;multi-line-comments&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#multi-line-comments&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;All comments starting with the /* sign and ending with the &lt;em&gt;&lt;em&gt;/ sign, regardless of how many lines there are, are considered comments. It is ignored by the compiler. You can use the /&lt;/em&gt;&lt;/em&gt; Comment */ format for single-line or multi-line comments. Below is an example of a multi-line comment.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
@@ -134,8 +148,8 @@ Process finished with exit code 0
     println(age)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Documentation Comments&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;documentation-commentsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#documentation-commentsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Documentation Comments&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;documentation-comments&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#documentation-comments&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Preparing a user guide about our software, adding copyright statements, etc. These are comments written between /** and */ for the following purposes. An * sign is also placed on each line. You can create documentation by compiling the comments you write in this format through another software. Below is an example of a documentation comment.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;/**
@@ -171,27 +185,35 @@ fun main() {
       <description>
         
         
-        &lt;p&gt;In this article, we will explain some of the finer points you need to know about defining variables in the Kotlin programming language. We have prepared this article in addition to the rules we explained in our previous two articles (&amp;quot;&lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Variable and Value definition&lt;/a&gt;&amp;quot;, &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/en/constants-and-variables-in-kotlin/&#34; data-type=&#34;post&#34; data-id=&#34;706&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Constants and variables in Kotlin&lt;/a&gt;&amp;rdquo;).&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;We all know that numbers and letters are different types. While mathematical operations can be performed with numbers, mathematical operations cannot be performed with texts. We should note that this distinction also exists in programming languages. Therefore, every variable must have a type.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The variable definition template in the Kotlin programming language is as follows.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;In this article, we will explain some of the finer points you need to know about defining variables in the Kotlin programming language. We have prepared this article in addition to the rules we explained in our previous two articles (&amp;quot;&lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kotlin Variable and Value definition&lt;/a&gt;&amp;quot;, &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/en/constants-and-variables-in-kotlin/&#34; data-type=&#34;post&#34; data-id=&#34;706&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Constants and variables in Kotlin&lt;/a&gt;&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;We all know that numbers and letters are different types. While mathematical operations can be performed with numbers, mathematical operations cannot be performed with texts. We should note that this distinction also exists in programming languages. Therefore, every variable must have a type.&lt;/p&gt;
+&lt;p&gt;The variable definition template in the Kotlin programming language is as follows.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val/var identifier: Type = initialization&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;At the very beginning is the expression val or var. Val or var selection is made depending on the behavior of the value of the variable. We explained the differences in our article titled &#34;&lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34;&gt;Kotlin Variable and Value Definition&lt;/a&gt;&#34;.&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;At the very beginning is the expression val or var. Val or var selection is made depending on the behavior of the value of the variable. We explained the differences in our article titled &amp;ldquo;&lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34;&gt;Kotlin Variable and Value Definition&lt;/a&gt;&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;identifier: So it should be the name of the variable. Choosing a name that is meaningful and explains what it does to avoid confusion with other variables will always be beneficial.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Type: We write the type of the variable here. Expressions that express the type of the value, such as String, Int, Boolean, start with a capital letter. Type is written after writing a colon after the name of the variable.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Initialization: We assign the initial value to our variable. It means initial value. When the type of the variable is determined, the initial value does not have to be assigned immediately. We will give examples of correct and incorrect usage below.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;Now let&amp;rsquo;s write an example according to this template. The example below has a structure that fulfills all the rules completely.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s write an example according to this template. The example below has a structure that fulfills all the rules completely.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String = &#34;John&#34;
@@ -206,9 +228,9 @@ John
 
 Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Determining the Data Type (type inference)&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;determining-the-data-type-type-inferenceh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#determining-the-data-type-type-inferenceh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;If we determine its initial value (initializer) when we define a variable, we may not write the data type. Kotlin will detect its type by looking at the first value entered. In this way, our codes become simpler. The example is below. &lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Determining the Data Type (type inference)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;determining-the-data-type-type-inference&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#determining-the-data-type-type-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If we determine its initial value (initializer) when we define a variable, we may not write the data type. Kotlin will detect its type by looking at the first value entered. In this way, our codes become simpler. The example is below.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name= &#34;John&#34;
@@ -227,10 +249,10 @@ Int
 Process finished with exit code 0
 */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;As seen in the example above, Kotlin automatically determined the data type by looking at the type of the initial values even though the data types were not entered. When you examine the subject from foreign sources, you can see that this process is referred to as &amp;ldquo;type inference&amp;rdquo;.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Defining a Variable Without Initial Value&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;defining-a-variable-without-initial-valueh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#defining-a-variable-without-initial-valueh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;If you want to define a variable but determine its initial value later, you must write the type of the variable. Kotlin cannot determine the type of the variable without the initial value. When a variable is defined for Kotlin, its type must also be determined. The type cannot be changed later. You can see an example of this below.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;As seen in the example above, Kotlin automatically determined the data type by looking at the type of the initial values even though the data types were not entered. When you examine the subject from foreign sources, you can see that this process is referred to as &amp;ldquo;type inference&amp;rdquo;.&lt;/p&gt;
+&lt;h2&gt;Defining a Variable Without Initial Value&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;defining-a-variable-without-initial-value&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#defining-a-variable-without-initial-value&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;If you want to define a variable but determine its initial value later, you must write the type of the variable. Kotlin cannot determine the type of the variable without the initial value. When a variable is defined for Kotlin, its type must also be determined. The type cannot be changed later. You can see an example of this below.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name: String
@@ -241,10 +263,10 @@ Process finished with exit code 0
     age = 16
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;As seen in the example, the variable name and type are determined, but the initial value is determined elsewhere. This usage is correct. If the initial value is determined at another time, it is necessary to write the variable type.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;Incorrect variable definition&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;incorrect-variable-definitionh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#incorrect-variable-definitionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Defining a variable without both a data type and an initial value will cause you to encounter an error. The usage below is incorrect. Your program will not compile.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;As seen in the example, the variable name and type are determined, but the initial value is determined elsewhere. This usage is correct. If the initial value is determined at another time, it is necessary to write the variable type.&lt;/p&gt;
+&lt;h2&gt;Incorrect variable definition&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;incorrect-variable-definition&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#incorrect-variable-definition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Defining a variable without both a data type and an initial value will cause you to encounter an error. The usage below is incorrect. Your program will not compile.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val name //error
@@ -266,10 +288,10 @@ Process finished with exit code 0
       <description>
         
         
-        &lt;p&gt;We introduced the topic of defining variables and assigning values in the Kotlin programming language in our &lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;previous article&lt;/a&gt;. In this article, we will take a closer look at assigning values with const and val.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;val variables&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-variablesh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#val-variablesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;The code below defines two variables, an integer containing the constant number &lt;code&gt;pi&lt;/code&gt; and a String value named &lt;code&gt;helloMsg&lt;/code&gt;. These values cannot be changed again after they are first assigned.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;We introduced the topic of defining variables and assigning values in the Kotlin programming language in our &lt;a href=&#34;https://www.siberoloji.com/en/kotlin-variable-and-value-definition/&#34; data-type=&#34;post&#34; data-id=&#34;696&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;previous article&lt;/a&gt;. In this article, we will take a closer look at assigning values with const and val.&lt;/p&gt;
+&lt;h2&gt;val variables&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-variables&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#val-variables&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;The code below defines two variables, an integer containing the constant number &lt;code&gt;pi&lt;/code&gt; and a String value named &lt;code&gt;helloMsg&lt;/code&gt;. These values cannot be changed again after they are first assigned.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
     val pi = 3.1415
@@ -279,7 +301,7 @@ Process finished with exit code 0
     println(helloMsg) // Hello
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Let&amp;rsquo;s try to assign a new value to the &lt;code&gt;pi&lt;/code&gt; variable, which is defined with the &lt;code&gt;val&lt;/code&gt; keyword and assigned its initial value. As seen in the example below, when we want to assign a new value to the number &lt;code&gt;pi&lt;/code&gt;, you receive the error &amp;ldquo;&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;&lt;strong&gt;Val cannot be reassigned&lt;/strong&gt;&lt;/mark&gt;&amp;rdquo;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s try to assign a new value to the &lt;code&gt;pi&lt;/code&gt; variable, which is defined with the &lt;code&gt;val&lt;/code&gt; keyword and assigned its initial value. As seen in the example below, when we want to assign a new value to the number &lt;code&gt;pi&lt;/code&gt;, you receive the error &amp;ldquo;&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;&lt;em&gt;&lt;strong&gt;Val cannot be reassigned&lt;/strong&gt;&lt;/em&gt; &lt;/mark&gt;&amp;rdquo;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
 val pi = 3.1415
@@ -291,31 +313,35 @@ println(helloMsg) // Hello
 pi = 3.1416 // Val cannot be reassigned
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;You cannot use a variable that is defined with &lt;code&gt;val&lt;/code&gt; but has not been initialized, that is, has not been initialized, in your commands. Let&amp;rsquo;s explain this with an example. With the code below, the variable named &lt;code&gt;boolFalse&lt;/code&gt; is defined with &lt;code&gt;val&lt;/code&gt;, but since its initial value (True or False) is not assigned even though its type is specified as Boolean, you will receive the error message &amp;ldquo;&lt;strong&gt;&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;Variable &amp;lsquo;boolFalse&amp;rsquo; must be initialized&lt;/mark&gt;&lt;/strong&gt;&amp;rdquo;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;You cannot use a variable that is defined with &lt;code&gt;val&lt;/code&gt; but has not been initialized, that is, has not been initialized, in your commands. Let&amp;rsquo;s explain this with an example. With the code below, the variable named &lt;code&gt;boolFalse&lt;/code&gt; is defined with &lt;code&gt;val&lt;/code&gt;, but since its initial value (True or False) is not assigned even though its type is specified as Boolean, you will receive the error message &amp;ldquo;&lt;em&gt;&lt;strong&gt;&lt;mark class=&#34;has-inline-color has-vivid-red-color&#34;&gt;Variable &amp;lsquo;boolFalse&amp;rsquo; must be initialized&lt;/mark&gt;&lt;/strong&gt;&lt;/em&gt; &amp;ldquo;.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val boolFalse: Boolean
 println(boolFalse) // error line&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Correct usage should be as follows.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Correct usage should be as follows.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;val boolFalse: Boolean // not initialized
     boolFalse = false      // initialized
     println(boolFalse)     // no errors here&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;const variables&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-variablesh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#const-variablesh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;In Kotlin programming, there is a constant value assignment method in which the &lt;code&gt;const&lt;/code&gt; keyword and the &lt;code&gt;val&lt;/code&gt; expression are defined together. With this method, the constant value is created when the program codes are compiled and cannot be changed again. As a rule, it is recommended that the names of variables defined as &lt;code&gt;const&lt;/code&gt; be in all CAPITAL LETTERS. &lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;const variables&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-variables&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#const-variables&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In Kotlin programming, there is a constant value assignment method in which the &lt;code&gt;const&lt;/code&gt; keyword and the &lt;code&gt;val&lt;/code&gt; expression are defined together. With this method, the constant value is created when the program codes are compiled and cannot be changed again. As a rule, it is recommended that the names of variables defined as &lt;code&gt;const&lt;/code&gt; be in all CAPITAL LETTERS.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val WRITER_NAME = &#34;JOHN DOE&#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;There are some rules for defining a constant value in this way.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;There are some rules for defining a constant value in this way.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Only String and INT, CHAR, DOUBLE, BOOLEAN data types, which we call primary types, can be assigned to constant values. An example of this is shown below.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Constants should be defined outside functions. They cannot be defined with a const statement within a function.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;const val CONST_INT = 256
@@ -329,7 +355,7 @@ fun main() {
 
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;These explanations and rules may seem a bit confusing at first. Remember that these are necessary for the written code to work correctly and without errors. As you practice, you will become more familiar with these rules.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;These explanations and rules may seem a bit confusing at first. Remember that these are necessary for the written code to work correctly and without errors. As you practice, you will become more familiar with these rules.&lt;/p&gt;
 
       </description>
     </item>
@@ -343,18 +369,17 @@ fun main() {
       <description>
         
         
-        &lt;h2&gt;What is a variable?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-a-variableh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#what-is-a-variableh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+        &lt;h2&gt;What is a variable?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-a-variable&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-a-variable&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;A variable is a record location in which a number, text or any other information is kept. Variables are almost the most important building blocks in programming. There are variables in which these values are kept in all the operations we will perform. We call its name &amp;ldquo;variable&amp;rdquo; because the value stored in it can be changed.&lt;/p&gt;
 &lt;p&gt;For example, consider a school and the classes within it. We should record the name of each class somewhere and the number of students in each class somewhere. Each variable must have a name (identifier) to distinguish it from other variables. In this case, we will have two variables that we will refer to as &amp;ldquo;class name&amp;rdquo; and &amp;ldquo;number of students&amp;rdquo;.&lt;/p&gt;
-&lt;h2&gt;variable definition&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;variable-definitionh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#variable-definitionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;variable definition&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;variable-definition&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#variable-definition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;In the program we will write, we must have defined the variable before we can use it. Kotlin offers two keywords to define variables. The variable names should not start with a number and it should be noted that they are case sensitive.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;val (value)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-valueh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#val-valueh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;val (value)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;val-value&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#val-value&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;The variables we define with the val expression are variable types in which the value does not change again after a value is assigned at the beginning of the program. For example, we can give the name of a Novel we want to transact with. Even if the number of pages changes as a result of different printing styles, the name of the author and the title of the novel will remain constant. However, this requires a fixed author name and book name for another book. Because of this need, we will define variables with the val expression, which we can assign the desired value to once during the first run of the program but cannot change later.&lt;/p&gt;
-&lt;p&gt;The contents of such variables are determined at &lt;strong&gt;run time.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The contents of such variables are determined at &lt;em&gt;&lt;strong&gt;run time.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
 val language = &#34;Kotlin&#34;
@@ -367,10 +392,9 @@ Kotlin
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;In the example above, a variable named &lt;code&gt;language&lt;/code&gt; is defined and its value is assigned with &lt;code&gt;=&lt;/code&gt; to &lt;code&gt;&amp;ldquo;Kotlin&amp;rdquo;&lt;/code&gt; of type &lt;strong&gt;String&lt;/strong&gt;. You should note that the &lt;code&gt;=&lt;/code&gt; sign is used to assign the value. Now we can call this variable &amp;ldquo;language&amp;rdquo; while writing our codes in the program.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;var (variable)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;var-variableh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#var-variableh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;In the example above, a variable named &lt;code&gt;language&lt;/code&gt; is defined and its value is assigned with &lt;code&gt;=&lt;/code&gt; to &lt;code&gt;&amp;ldquo;Kotlin&amp;rdquo;&lt;/code&gt; of type &lt;em&gt;&lt;strong&gt;String&lt;/strong&gt;&lt;/em&gt; . You should note that the &lt;code&gt;=&lt;/code&gt; sign is used to assign the value. Now we can call this variable &amp;ldquo;language&amp;rdquo; while writing our codes in the program.&lt;/p&gt;
+&lt;h3&gt;var (variable)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;var-variable&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#var-variable&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;It is a type of variable that we can change the value stored in as much as and whenever we want. We can express it as a changeable variable.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
@@ -388,14 +412,12 @@ Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;As you can see in the example above, we first gave the &lt;code&gt;dayOfWeek&lt;/code&gt; variable the value &lt;code&gt;Monday&lt;/code&gt; and printed it on the screen. Then, we gave the value Sunday and printed the new value on the screen. In this way, we used a variable by changing the values in it.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;const (constant)&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-constanth3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#const-constanth3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;const (constant)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;const-constant&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#const-constant&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Values that are known while the program is being coded and will not change no matter who uses the software are called constants. Constants also need to be recorded somewhere. For this reason, constant values are assigned by using the const expression together with the val expression.&lt;/p&gt;
 &lt;p&gt;The contents of such variables are determined at compile time.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Assigning data in different value types&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;assigning-data-in-different-value-typesh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#assigning-data-in-different-value-typesh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Assigning data in different value types&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;assigning-data-in-different-value-types&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#assigning-data-in-different-value-types&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;You can define as many variables as you want to store different data types in Kotlin. You can see an example of this below.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;fun main() {
@@ -416,9 +438,9 @@ A
 Process finished with exit code 0
  */&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;There is an important rule we need to point out here. For example, if we assume that you first assign an &lt;strong&gt;Int&lt;/strong&gt;, that is, integer value to a variable using var (&lt;code&gt;val ten = 10&lt;/code&gt;), the values we assign to that variable from now on must always be integers. Whatever the first data type was assigned, the data type to be assigned later must always be the same.&lt;/p&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;There is an important rule we need to point out here. For example, if we assume that you first assign an &lt;em&gt;&lt;strong&gt;Int&lt;/strong&gt;&lt;/em&gt; , that is, integer value to a variable using var (&lt;code&gt;val ten = 10&lt;/code&gt;), the values we assign to that variable from now on must always be integers. Whatever the first data type was assigned, the data type to be assigned later must always be the same.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;We now know that the keywords &lt;code&gt;val&lt;/code&gt; and &lt;code&gt;var&lt;/code&gt; are used to define variables, that variable names must start with a letter, and that variables can only be assigned to the value type they were first assigned to. This information will be very useful for the next stages.&lt;/p&gt;
 
       </description>
@@ -434,17 +456,17 @@ Process finished with exit code 0
         
         
         &lt;p&gt;No matter how complicated, all programming languages perform operations on integers, characters, strings, etc. performed on values. We call these values Literal expressions. It would be very appropriate to explain these types before starting to write a program. These are integers, characters, and strings.&lt;/p&gt;
-&lt;h2&gt;Integers&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;integersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#integersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Integers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;integers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#integers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;We constantly use integers to count things in our daily lives and in mathematics. The same integers are also used in Kotlin. All the numbers you see below are integers. For example;&lt;br&gt;0, 1, 2, 10, 11, 100&lt;br&gt;If an integer contains many digits, we can split the integer into blocks using _ (underscore) to make it easier to read and understand. For example;&lt;br&gt;Instead of 1000000, we can write it as 1_000_000. This means the same integer for both Kotlins. As long as the underscore is not at the beginning or end of the numbers, it can be used as desired. 1__000_000 , 1_2_3 These expressions are also true.&lt;br&gt;An error occurs when you type &lt;em&gt;&lt;em&gt;10 or 100&lt;/em&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;h2&gt;Characters&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;charactersh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#charactersh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Characters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;characters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#characters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;A single number, font and space, * - etc. It is a data type used to represent some special characters. The first thing to consider here is that there should be a single character. Characters are written in single quotes &amp;rsquo; &amp;rsquo; as seen below.&lt;br&gt;&amp;lsquo;A&amp;rsquo;, &amp;lsquo;a&amp;rsquo;, &amp;lsquo;x&amp;rsquo;, &amp;lsquo;y&amp;rsquo;, &amp;lsquo;2&amp;rsquo;, &amp;lsquo;8&amp;rsquo;, &amp;lsquo;*&amp;rsquo;, &amp;rsquo; &amp;lsquo;, &amp;lsquo;$&amp;rsquo; all these expressions are called characters.&lt;br&gt;Since the character data type can contain a single expression, the following expressions are incorrect even if enclosed in single quotes.&lt;br&gt;‘abc’, ‘543’&lt;/p&gt;
-&lt;h2&gt;Strings&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;stringsh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#stringsh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Strings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;strings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#strings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;They are character strings formed by the combination of one or more characters. Unlike characters, they are shown in double quotes “ “. Below you can find a few correct usage examples. Any desired character, including the space character, can be used within double quotes.&lt;br&gt;“Text”, “I want to learn Kotlin”, “123 456”, “email@email.com”&lt;br&gt;You should note that a character string can also contain a single character.&lt;br&gt;“A” - It is a string because it is written in double quotes.&lt;br&gt;&amp;lsquo;A&amp;rsquo; - It is a character because it is written in single quotes.&lt;/p&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusionh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#conclusionh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Conclusion&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;conclusion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#conclusion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Apart from the 3 different data types explained above, there are other data types in Kotlin. We will explain those further when appropriate. These 3 data types will be enough to start with to explain basic commands and operations.&lt;/p&gt;
 
       </description>
@@ -476,20 +498,20 @@ Process finished with exit code 0
       <description>
         
         
-        &lt;p&gt;When starting to learn programming languages, we always start with the same example. Let&amp;rsquo;s start our Kotlin programming article with the &amp;ldquo;Hello World&amp;rdquo; program without breaking tradition.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;You can copy the code you see below and paste it into your editor, or you can go to the &amp;ldquo;&lt;a href=&#34;https://play.kotlinlang.org/&#34; data-type=&#34;link&#34; data-id=&#34;https://play.kotlinlang.org/&#34;&gt;Kotlin Playground&lt;/a&gt;&amp;rdquo; page via your Web browser and try the codes there.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;When starting to learn programming languages, we always start with the same example. Let&amp;rsquo;s start our Kotlin programming article with the &amp;ldquo;Hello World&amp;rdquo; program without breaking tradition.&lt;/p&gt;
+&lt;p&gt;You can copy the code you see below and paste it into your editor, or you can go to the &amp;ldquo;&lt;a href=&#34;https://play.kotlinlang.org/&#34; data-type=&#34;link&#34; data-id=&#34;https://play.kotlinlang.org/&#34;&gt;Kotlin Playground&lt;/a&gt;&amp;rdquo; page via your Web browser and try the codes there.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;// First program in kotlin
 fun main() {
     println(&#34;Hello World&#34;)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Explanation:&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The line that starts with the &lt;code&gt;//&lt;/code&gt; sign is the comment line. The compiler does not accept this line as code. It is used to take notes or make explanations about which code does what.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;fun&lt;/code&gt; expression refers to the beginning of a function.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;main()&lt;/code&gt; is the entry point of Kotlin programs. It is case sensitive.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;A code block is written between &lt;code&gt;{ }&lt;/code&gt; signs.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;println(&amp;ldquo;Hello World&amp;rdquo;)&lt;/code&gt; is a code expression you see here. When we send the &amp;ldquo;Hello World&amp;rdquo; parameter to the println() function, it will write the sent parameter to the screen and move to the next line. If you want, you can print more than one line under each other. Here is an example.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Explanation:&lt;/p&gt;
+&lt;p&gt;The line that starts with the &lt;code&gt;//&lt;/code&gt; sign is the comment line. The compiler does not accept this line as code. It is used to take notes or make explanations about which code does what.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;fun&lt;/code&gt; expression refers to the beginning of a function.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;main()&lt;/code&gt; is the entry point of Kotlin programs. It is case sensitive.&lt;/p&gt;
+&lt;p&gt;A code block is written between &lt;code&gt;{ }&lt;/code&gt; signs.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;println(&amp;ldquo;Hello World&amp;rdquo;)&lt;/code&gt; is a code expression you see here. When we send the &amp;ldquo;Hello World&amp;rdquo; parameter to the println() function, it will write the sent parameter to the screen and move to the next line. If you want, you can print more than one line under each other. Here is an example.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;// First program in kotlin
 fun main() {
@@ -497,7 +519,7 @@ fun main() {
     println(&#34;I am the first Kotlin Program&#34;)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;When we run the example above, you should get the following output.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;When we run the example above, you should get the following output.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;kotlin&#34; class=&#34;language-kotlin&#34;&gt;Hello World
 I am the first Kotlin Program
@@ -516,36 +538,52 @@ Process finished with exit code 0&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;We should learn Kotlin Programming Language Basic terminology at the beginning.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;We should learn Kotlin Programming Language Basic terminology at the beginning.&lt;/p&gt;
 &lt;!-- wp:more --&gt;
 &lt;!-- /wp:more --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;program &lt;/strong&gt;is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***program *** is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;statement &lt;/strong&gt;(or a programming statement) is a single command to be executed (like printing a text);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***statement *** (or a programming statement) is a single command to be executed (like printing a text);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;An &lt;strong&gt;expression &lt;/strong&gt;is a piece of code that produces a single value (for example, 2*2 is an expression);&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;An **&lt;em&gt;expression *** is a piece of code that produces a single value (for example, 2&lt;/em&gt;2 is an expression);&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;block &lt;/strong&gt;is a group of zero or more statements enclosed in a pair of curly braces &lt;code&gt;{...}&lt;/code&gt;; our program consists of a single block;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***block *** is a group of zero or more statements enclosed in a pair of curly braces &lt;code&gt;{&amp;hellip;}&lt;/code&gt;; our program consists of a single block;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;keyword &lt;/strong&gt;is a word that has a special meaning in the programming language. Names of keywords can&#39;t be changed;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A ***keyword *** is a word that has a special meaning in the programming language. Names of keywords can&amp;rsquo;t be changed;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;An &lt;strong&gt;identifier&lt;/strong&gt; (or a name) is a word written by the programmer to identify something;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;em&gt;&lt;strong&gt;identifier&lt;/strong&gt;&lt;/em&gt;  (or a name) is a word written by the programmer to identify something;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;A &lt;strong&gt;comment&lt;/strong&gt; is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with &lt;code&gt;//&lt;/code&gt;;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;em&gt;&lt;strong&gt;comment&lt;/strong&gt;&lt;/em&gt;  is a piece of text that is ignored when executing the program – it just explains a part of the code. Comments start with &lt;code&gt;//&lt;/code&gt;;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;&lt;strong&gt;Whitespace &lt;/strong&gt;is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;***Whitespace *** is a blank area, a tab, or a newline; it is used to separate words in the program and to improve readability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Credit: &lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;&lt;a href=&#34;https://hyperskill.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hyperskill.org/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
       </description>
     </item>
     

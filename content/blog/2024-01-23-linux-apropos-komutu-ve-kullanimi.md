@@ -28,15 +28,15 @@ url: /tr/linux-apropos-komutu-ve-kullanimi/
 ---
 
 <!-- wp:paragraph -->
-<p>Linux komut satırında kullanıma hazır komutları hatırlamakta bazen problem yaşayabilirsiniz. Hangi komutun ne ile ilgili olduğu hatırınıza gelmeyebilir. Böyle bir durumda "apropos" komutu ile komut kılavuz sayfalarındaki tanımlarda arama yapabilir ve aradığınızı daha kolay bulabilirsiniz. Bu yazımızda "apropos" komutunun kullanımı ile ilgili örnekler vereceğiz.</p>
+<p>Linux komut satırında kullanıma hazır komutları hatırlamakta bazen problem yaşayabilirsiniz. Hangi komutun ne ile ilgili olduğu hatırınıza gelmeyebilir. Böyle bir durumda "apropos" komutu ile komut kılavuz sayfalarındaki tanımlarda arama yapabilir ve aradığınızı daha kolay bulabilirsiniz. Bu yazımızda "apropos" komutunun kullanımı ile ilgili örnekler vereceğiz.
   
 
  
- ## apropos komutu</h2>
+ ## apropos komutu
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>"apropos" komutunu yardım sayfalarının (man pages)  arama motoru olarak düşünebilirsiniz. Bu komut, komut isimlerinde ve kısa tanımlarında arama yapar. Yardım sayfalarının tamamında arama yapmaz. Aşağıda basit bir örnek verilmiştir. Bu komut, yardım sayfalarının tanımlarının herhangi bir yerinde veya komut adlarında "<em><code>unzip</code></em>" ifadesi geçen tüm komutların listesini verecektir.</p>
+<p>"apropos" komutunu yardım sayfalarının (man pages)  arama motoru olarak düşünebilirsiniz. Bu komut, komut isimlerinde ve kısa tanımlarında arama yapar. Yardım sayfalarının tamamında arama yapmaz. Aşağıda basit bir örnek verilmiştir. Bu komut, yardım sayfalarının tanımlarının herhangi bir yerinde veya komut adlarında "<em><code>unzip</code></em>" ifadesi geçen tüm komutların listesini verecektir.
   
 
 <!-- wp:code -->
@@ -49,7 +49,7 @@ unzipsfx (1)         - self-extracting stub for prepending to ZIP archives</code
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Bu örnekte görülen basit kullanımın ötesinde, bazı seçenekler kullanarak komutu ileri düzeyde de kullanmanız mümkündür. Aşağıdaki listede kullanabileceğiniz seçenekleri görebilirsiniz.</p>
+<p>Bu örnekte görülen basit kullanımın ötesinde, bazı seçenekler kullanarak komutu ileri düzeyde de kullanmanız mümkündür. Aşağıdaki listede kullanabileceğiniz seçenekleri görebilirsiniz.
   
 
 <!-- wp:code -->
@@ -75,11 +75,11 @@ Usage: apropos [OPTION...] KEYWORD...
 <!-- /wp:code -->
 
  
- ## -e, --exact</h2>
+ ## -e, --exact
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aradığınız ifadenin tam olarak eşleşmesi gerekir. Aşağıda "partiti" ifadesini -e seçeneği ile ve -e seçeneği olmadan kullanımını görebilirsiniz.</p>
+<p>Aradığınız ifadenin tam olarak eşleşmesi gerekir. Aşağıda "partiti" ifadesini -e seçeneği ile ve -e seçeneği olmadan kullanımını görebilirsiniz.
   
 
 <!-- wp:code -->
@@ -108,11 +108,11 @@ systemd-repart.service (8) - Automatically grow and add partitions</code></pre>
 <!-- /wp:code -->
 
  
- ## -r, --regex</h2>
+ ## -r, --regex
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Arama ifadenizde düzenli ifadeler bulundurmak isterseniz kullanabilirsiniz. Örneğin ^ifadesi düzenli ifadelerde "baş taraf" anlamına gelmektedir. Baş tarafı "tar" ile başlayan komutları bulmaya çalışalım. Gördüğünüz gibi apropos komutu komut adı "tar" ile başlayan  2 komut ve ayrıca, açıklama bölümü Tar ile başlayan başka bir komut daha bulmuştur.</p>
+<p>Arama ifadenizde düzenli ifadeler bulundurmak isterseniz kullanabilirsiniz. Örneğin ^ifadesi düzenli ifadelerde "baş taraf" anlamına gelmektedir. Baş tarafı "tar" ile başlayan komutları bulmaya çalışalım. Gördüğünüz gibi apropos komutu komut adı "tar" ile başlayan  2 komut ve ayrıca, açıklama bölümü Tar ile başlayan başka bir komut daha bulmuştur.
   
 
 <!-- wp:code -->
@@ -123,11 +123,11 @@ tarcat (1)           - concatenates the pieces of a GNU tar multi-volume archive
 <!-- /wp:code -->
 
  
- ## -a, --and</h2>
+ ## -a, --and
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Arama yapacağınız tüm ifadelerin mutlaka bulunması gerektiğinde kullanabilirsiniz. Komut adında veya açıklamasında "tar" ve "file" geçen yardım sayfalarını aratalım.</p>
+<p>Arama yapacağınız tüm ifadelerin mutlaka bulunması gerektiğinde kullanabilirsiniz. Komut adında veya açıklamasında "tar" ve "file" geçen yardım sayfalarını aratalım.
   
 
 <!-- wp:code -->
@@ -141,11 +141,11 @@ systemd-xdg-autostart-generator (8) - User unit generator for XDG autostart file
 <!-- /wp:code -->
 
  
- ## -w, --wildcard</h2>
+ ## -w, --wildcard
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aramak istediğiniz ifadenin içerisinde joker karakterler kullandığınızı belirtir. Örneğin baş tarafı "color" ile başlayan ve devamında ne olursa olsun tüm ifadeleri bulmak istediğinizde kullanılır. Örneğimizde, içerisinde "color", "colorization", "color-name", "colormap" geçen tüm açıklamalar bulunmuştur.</p>
+<p>Aramak istediğiniz ifadenin içerisinde joker karakterler kullandığınızı belirtir. Örneğin baş tarafı "color" ile başlayan ve devamında ne olursa olsun tüm ifadeleri bulmak istediğinizde kullanılır. Örneğimizde, içerisinde "color", "colorization", "color-name", "colormap" geçen tüm açıklamalar bulunmuştur.
   
 
 <!-- wp:code -->
@@ -166,5 +166,5 @@ xstdcmap (1)         - X standard colormap utility</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Bu yazımızda "apropos" komutu ve sıklıkla kullanılan seçenekleri açıkladık. Daha detaylı bilgi için "man apropos" komutu ile yardım sayfalarına bakabilirsiniz.</p>
+<p>Bu yazımızda "apropos" komutu ve sıklıkla kullanılan seçenekleri açıkladık. Daha detaylı bilgi için "man apropos" komutu ile yardım sayfalarına bakabilirsiniz.
   

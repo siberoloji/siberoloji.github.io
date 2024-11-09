@@ -29,10 +29,10 @@ title: How to restart TouchBar on MacOS?
 url: /how-to-restart-touchbar-on-macos/
 ---
 
-  The touchbar on Macbook Pro models provides very good ease of use. You may notice that some touch bars work differently than they should or are not responsive at all. We have prepared a recommendation to solve this problem. You should try these commands when your touch bar becomes unresponsive.</p>
+  The touchbar on Macbook Pro models provides very good ease of use. You may notice that some touch bars work differently than they should or are not responsive at all. We have prepared a recommendation to solve this problem. You should try these commands when your touch bar becomes unresponsive.
  
 
-  Open the Terminal application. (You can open Spotlight with Command+Space keys and search for the "Terminal" application.) <br>Stop and restart the Touchbar server with the following commands.</p>
+  Open the Terminal application. (You can open Spotlight with Command+Space keys and search for the "Terminal" application.) <br>Stop and restart the Touchbar server with the following commands.
  
 
 <!-- wp:image {"id":931,"sizeSlug":"large","linkDestination":"none"} -->
@@ -44,5 +44,5 @@ url: /how-to-restart-touchbar-on-macos/
 sudo killall ControlStrip</code></pre>
 <!-- /wp:code -->
 
-  You will see that the Touchbar restarts and the problem is most likely resolved. If this does not solve your problem, you may have a hardware problem. In this case, we recommend that you contact an authorized service.</p>
+  You will see that the Touchbar restarts and the problem is most likely resolved. If this does not solve your problem, you may have a hardware problem. In this case, we recommend that you contact an authorized service.
  

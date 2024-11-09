@@ -26,7 +26,7 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
  
 
  
- ## What Is Cumulative Layout Shift?</h2>
+ ## What Is Cumulative Layout Shift?
 <!-- /wp:heading -->
 
   Cumulative Layout Shift is a metric that measures visual stability by quantifying how much unexpected movement of visible page content occurs during the entire lifespan of a page. In simpler terms, it measures how much your page's elements jump around as the page loads. 
@@ -36,11 +36,11 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
  
 
  
- ## Why CLS Matters</h2>
+ ## Why CLS Matters
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### User Experience Impact</h3>
+
+ ### User Experience Impact
 <!-- /wp:heading -->
 
   Poor CLS scores can significantly impact user experience in several ways: 
@@ -48,24 +48,24 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Reading Interruption</strong>: Users lose their place when text suddenly shifts</li>
+- ***Reading Interruption*** : Users lose their place when text suddenly shifts 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Misclicks</strong>: Users accidentally click wrong elements</li>
+- ***Misclicks*** : Users accidentally click wrong elements 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Frustration</strong>: Constant layout shifts create a feeling of instability</li>
+- ***Frustration*** : Constant layout shifts create a feeling of instability 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Time Waste</strong>: Users need to re-locate content they were trying to read</li>
-<!-- /wp:list-item --></ol>
+- ***Time Waste*** : Users need to re-locate content they were trying to read 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### SEO Implications</h3>
+
+ ### SEO Implications
 <!-- /wp:heading -->
 
   Since May 2021, Google has incorporated Core Web Vitals, including CLS, into its ranking factors. A poor CLS score can: 
@@ -73,20 +73,20 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Negatively affect your search rankings</li>
+- Negatively affect your search rankings 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Reduce your site's visibility</li>
+- Reduce your site's visibility 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Impact your overall SEO performance</li>
-<!-- /wp:list-item --></ul>
+- Impact your overall SEO performance 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## How Is CLS Calculated?</h2>
+ ## How Is CLS Calculated?
 <!-- /wp:heading -->
 
   CLS is calculated by multiplying two metrics: 
@@ -94,12 +94,12 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Impact Fraction</strong>: The amount of viewport area affected by the shift</li>
+- ***Impact Fraction*** : The amount of viewport area affected by the shift 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Distance Fraction</strong>: The distance elements have moved relative to the viewport</li>
-<!-- /wp:list-item --></ol>
+- ***Distance Fraction*** : The distance elements have moved relative to the viewport 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The formula is:<br>CLS = Impact Fraction × Distance Fraction 
@@ -110,63 +110,63 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Good: Less than 0.1</li>
+- Good: Less than 0.1 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Needs Improvement: Between 0.1 and 0.25</li>
+- Needs Improvement: Between 0.1 and 0.25 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Poor: Above 0.25</li>
-<!-- /wp:list-item --></ul>
+- Poor: Above 0.25 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Common Causes of Poor CLS</h2>
+ ## Common Causes of Poor CLS
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Images Without Dimensions</h3>
+
+ ### 1. Images Without Dimensions
 <!-- /wp:heading -->
 
   When images lack width and height attributes, browsers can't allocate the correct space before the image loads, leading to layout shifts. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Advertisements and Embeds</h3>
+
+ ### 2. Advertisements and Embeds
 <!-- /wp:heading -->
 
   Dynamic content like ads and embedded videos often cause significant layout shifts as they load and resize. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Web Fonts</h3>
+
+ ### 3. Web Fonts
 <!-- /wp:heading -->
 
   Custom fonts can cause text to reflow when they finally load, especially if they're significantly different in size from the fallback font. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Dynamic Content</h3>
+
+ ### 4. Dynamic Content
 <!-- /wp:heading -->
 
   Content that loads after the initial page render, such as AJAX-loaded content or infinite scrolling implementations. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 5. Animations and Transitions</h3>
+
+ ### 5. Animations and Transitions
 <!-- /wp:heading -->
 
   Poorly implemented animations can cause layout shifts, especially if they affect the positioning of other elements. 
  
 
  
- ## Best Practices to Improve CLS</h2>
+ ## Best Practices to Improve CLS
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Always Set Dimensions for Media</h3>
+
+ ### 1. Always Set Dimensions for Media
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -176,8 +176,8 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
   Always specify width and height attributes for images and videos. This allows browsers to allocate the correct space before the media loads. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Reserve Space for Ads</h3>
+
+ ### 2. Reserve Space for Ads
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -190,8 +190,8 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
   Use CSS to reserve space for ad containers before they load. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Optimize Web Fonts</h3>
+
+ ### 3. Optimize Web Fonts
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -204,26 +204,26 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
   Use <code>font-display: swap</code> and preload critical fonts to minimize font-related layout shifts. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Handle Dynamic Content Carefully</h3>
+
+ ### 4. Handle Dynamic Content Carefully
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Add new content below the viewport</li>
+- Add new content below the viewport 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use placeholder skeletons for loading content</li>
+- Use placeholder skeletons for loading content 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Implement fixed-size containers for dynamic content</li>
-<!-- /wp:list-item --></ul>
+- Implement fixed-size containers for dynamic content 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. Use Transform for Animations</h3>
+
+ ### 5. Use Transform for Animations
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -242,83 +242,83 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
  
 
  
- ## Tools to Measure and Monitor CLS</h2>
+ ## Tools to Measure and Monitor CLS
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Google PageSpeed Insights</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Google PageSpeed Insights***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Provides CLS scores and suggestions for improvement</li>
+- Provides CLS scores and suggestions for improvement 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Shows real-world performance data</li>
-<!-- /wp:list-item --></ul>
+- Shows real-world performance data 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Chrome DevTools</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Chrome DevTools***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Performance panel</li>
+- Performance panel 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Experience section</li>
+- Experience section 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Layout Shift regions</li>
-<!-- /wp:list-item --></ul>
+- Layout Shift regions 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Lighthouse</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Lighthouse***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Automated auditing tool</li>
+- Automated auditing tool 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Detailed reports with improvement opportunities</li>
-<!-- /wp:list-item --></ul>
+- Detailed reports with improvement opportunities 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Web Vitals Extension</strong></li>
-<!-- /wp:list-item --></ol>
+- ***Web Vitals Extension***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Real-time CLS monitoring</li>
+- Real-time CLS monitoring 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Easy-to-understand metrics</li>
-<!-- /wp:list-item --></ul>
+- Easy-to-understand metrics 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Advanced CLS Optimization Techniques</h2>
+ ## Advanced CLS Optimization Techniques
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Implement Content Placeholders</h3>
+
+ ### 1. Implement Content Placeholders
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -330,26 +330,26 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
   Use skeleton screens to indicate loading content while maintaining layout stability. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Optimize Critical Rendering Path</h3>
+
+ ### 2. Optimize Critical Rendering Path
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Minimize render-blocking resources</li>
+- Minimize render-blocking resources 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Inline critical CSS</li>
+- Inline critical CSS 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Defer non-essential JavaScript</li>
-<!-- /wp:list-item --></ul>
+- Defer non-essential JavaScript 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Implement Progressive Loading</h3>
+
+ ### 3. Implement Progressive Loading
 <!-- /wp:heading -->
 
   Load content in a way that maintains visual stability: 
@@ -357,20 +357,20 @@ url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Load above-the-fold content first</li>
+- Load above-the-fold content first 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Gradually load remaining content</li>
+- Gradually load remaining content 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use intersection observer for lazy loading</li>
-<!-- /wp:list-item --></ul>
+- Use intersection observer for lazy loading 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   Cumulative Layout Shift is more than just another web metric—it's a crucial factor in creating a positive user experience and maintaining good search engine rankings. By understanding what causes poor CLS scores and implementing the best practices outlined in this guide, you can significantly improve your website's visual stability. 

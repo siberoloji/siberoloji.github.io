@@ -9697,8 +9697,8 @@ dig &#43;short myip.opendns.com @resolver1.opendns.com dig TXT &#43;short o-o.my
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-          <p>Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.</p></p>
-<p>Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.</p></p>
+          <p>Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.</p>
+<p>Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.</p>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:code -->
@@ -9715,12 +9715,12 @@ dig &#43;short myip.opendns.com @resolver1.opendns.com dig TXT &#43;short o-o.my
 <!-- /wp:code --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
-<p>Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.</p></p>
+<p>Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">myip="$(dig +short <a href="http://myip.opendns.com/">myip.opendns.com</a> @<a href="http://resolver1.opendns.com/">resolver1.opendns.com</a>)"
 echo "Açık IP adresim: ${myip}"</code></pre>
 <!-- /wp:code -->
-<p>3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.</p></p>
+<p>3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">curl <a href="http://icanhazip.com/">icanhazip.com</a>
 curl <a href="http://ipecho.net/plain">ipecho.net/plain</a>

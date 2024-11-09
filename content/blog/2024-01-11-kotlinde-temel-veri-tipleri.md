@@ -30,7 +30,7 @@ url: /tr/kotlinde-temel-veri-tipleri/
  
 
  
- ## Tam Sayılar (Integers):</h2>
+ ## Tam Sayılar (Integers):
 <!-- /wp:heading -->
 
   Günlük yaşamımızda ve matematikte bir şeyleri saymak için tam sayıları sürekli kullanırız. Aynı tamsayılar Kotlin’de de kullanılmaktadır. Aşağıda gördüğünüz tüm rakamlar tamsayıdır. Örneğin; 
@@ -49,7 +49,7 @@ url: /tr/kotlinde-temel-veri-tipleri/
  
 
  
- ## Karakterler (Characters)</h2>
+ ## Karakterler (Characters)
 <!-- /wp:heading -->
 
   Tek bir rakam, yazı karakteri ve boşluk ve * - vb. bazı özel karakterleri ifade etmekte kullanılan bir veri türüdür. Burada dikkat edilmesi gereken ilk konu tek bir karakter olması gerektiğidir. Karakterler, aşağıda görüleceği gibi tek tırnak içinde yazılırlar. 
@@ -65,7 +65,7 @@ url: /tr/kotlinde-temel-veri-tipleri/
  
 
  
- ## Karakter Dizileri (Strings)</h2>
+ ## Karakter Dizileri (Strings)
 <!-- /wp:heading -->
 
   Bir veya birden fazla karakterin bir araya gelerek oluşturdukları karakter dizileridir. Karakterlerden farklı olarak çift tırnak “ “ içinde gösterilirler. Bir kaç doğru kullanım örneğini aşağıda bulabilirsiniz. Çift tırnak içinde boşluk karakteri dahil istenen her türlü karakter kullanılabilir.&nbsp; 
@@ -84,7 +84,7 @@ url: /tr/kotlinde-temel-veri-tipleri/
  
 
  
- ## Sonuç</h2>
+ ## Sonuç
 <!-- /wp:heading -->
 
   Yukarıda açıklanan 3 farklı veri tipinin dışında Kotlin’de başka veri tipleri de bulunur. Bunları yeri geldiğinde ayrıca açıklayacağız. Temel komut ve işlemleri açıklamak için bu 3 veri tipi başlangıç için yeterli olacaktır. 

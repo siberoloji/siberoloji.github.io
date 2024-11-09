@@ -28,67 +28,67 @@ title: 'AlmaLinux 9: How to List, Enable, Disable, and Configure Services'
 url: /almalinux-9-how-to-list-enable-disable-and-configure-services/
 ---
 
-  Managing services is a crucial part of system administration, especially in server environments. <strong>AlmaLinux 9</strong>, an open-source and community-driven alternative to CentOS, provides robust tools for managing system services. Services refer to processes that run in the background, such as web servers, database engines, and network managers. Proper control over services ensures optimal performance, security, and resource allocation on your server. 
+  Managing services is a crucial part of system administration, especially in server environments. ***AlmaLinux 9*** , an open-source and community-driven alternative to CentOS, provides robust tools for managing system services. Services refer to processes that run in the background, such as web servers, database engines, and network managers. Proper control over services ensures optimal performance, security, and resource allocation on your server. 
  
 
-  In this blog post, we will explore how to <strong>list</strong>, <strong>enable</strong>, <strong>disable</strong>, and <strong>configure services</strong> in AlmaLinux 9, using powerful system utilities like <code>systemctl</code> and <code>service</code>. By the end of this guide, you'll be able to manage your server's services efficiently. 
+  In this blog post, we will explore how to ***list*** , ***enable*** , ***disable*** , and ***configure services***  in AlmaLinux 9, using powerful system utilities like <code>systemctl</code> and <code>service</code>. By the end of this guide, you'll be able to manage your server's services efficiently. 
  
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### Table of Contents</h3>
+
+ ### Table of Contents
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to Services in AlmaLinux 9</li>
+- Introduction to Services in AlmaLinux 9 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Understanding Systemd and Service Management</li>
+- Understanding Systemd and Service Management 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How to List Active and Inactive Services</li>
+- How to List Active and Inactive Services 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Enabling and Disabling Services</li>
+- Enabling and Disabling Services 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Starting and Stopping Services</li>
+- Starting and Stopping Services 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Configuring Services</li>
+- Configuring Services 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Viewing Service Logs and Status</li>
+- Viewing Service Logs and Status 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Best Practices for Service Management in AlmaLinux 9</li>
+- Best Practices for Service Management in AlmaLinux 9 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+- Conclusion 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Introduction to Services in AlmaLinux 9</h3>
+
+ ### 1. Introduction to Services in AlmaLinux 9
 <!-- /wp:heading -->
 
-  Services are essential components of server operations. They are programs or scripts that run in the background to perform various tasks, such as serving web pages, managing databases, or handling network traffic. In AlmaLinux 9, most services are managed by <strong>systemd</strong>, a modern init system that manages system processes during startup and runtime. 
+  Services are essential components of server operations. They are programs or scripts that run in the background to perform various tasks, such as serving web pages, managing databases, or handling network traffic. In AlmaLinux 9, most services are managed by ***systemd*** , a modern init system that manages system processes during startup and runtime. 
  
 
   Understanding how to control and configure services is crucial for: 
@@ -96,30 +96,30 @@ url: /almalinux-9-how-to-list-enable-disable-and-configure-services/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Ensuring critical applications are always running.</li>
+- Ensuring critical applications are always running. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Improving system performance by disabling unnecessary services.</li>
+- Improving system performance by disabling unnecessary services. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Enhancing security by turning off vulnerable or unwanted services.</li>
-<!-- /wp:list-item --></ul>
+- Enhancing security by turning off vulnerable or unwanted services. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Understanding Systemd and Service Management</h3>
+
+ ### 2. Understanding Systemd and Service Management
 <!-- /wp:heading -->
 
-  <strong>Systemd</strong> is the default system and service manager in AlmaLinux 9, as it is in most modern Linux distributions. It replaces older init systems like SysV and Upstart and introduces a more efficient way to start services and manage their dependencies. 
+  ***Systemd***  is the default system and service manager in AlmaLinux 9, as it is in most modern Linux distributions. It replaces older init systems like SysV and Upstart and introduces a more efficient way to start services and manage their dependencies. 
  
 
-  With <strong>systemd</strong>, you use the <code>systemctl</code> command to control services, which provides more functionality and control than older <code>service</code> commands. 
+  With ***systemd*** , you use the <code>systemctl</code> command to control services, which provides more functionality and control than older <code>service</code> commands. 
  
 
   Common <code>systemctl</code> options: 
@@ -127,28 +127,28 @@ url: /almalinux-9-how-to-list-enable-disable-and-configure-services/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><code>start</code>: Start a service.</li>
+- <code>start</code>: Start a service. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>stop</code>: Stop a service.</li>
+- <code>stop</code>: Stop a service. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>enable</code>: Start a service at boot.</li>
+- <code>enable</code>: Start a service at boot. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>disable</code>: Prevent a service from starting at boot.</li>
+- <code>disable</code>: Prevent a service from starting at boot. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>status</code>: Check the status of a service.</li>
+- <code>status</code>: Check the status of a service. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><code>restart</code>: Restart a running service.</li>
-<!-- /wp:list-item --></ul>
+- <code>restart</code>: Restart a running service. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Now that we have an understanding of systemd, let's get into how to list services in AlmaLinux 9. 
@@ -158,15 +158,15 @@ url: /almalinux-9-how-to-list-enable-disable-and-configure-services/
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. How to List Active and Inactive Services</h3>
+
+ ### 3. How to List Active and Inactive Services
 <!-- /wp:heading -->
 
   To manage services effectively, you first need to see which services are running, inactive, or failed. Listing services allows you to assess the status of each one and take action if needed. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Listing All Services</h4>
+<h4 class="wp-block-heading">Listing All Services 
 <!-- /wp:heading -->
 
   To list all services—both active and inactive—use the following command: 
@@ -191,7 +191,7 @@ crond.service                            enabled</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Listing Only Active Services</h4>
+<h4 class="wp-block-heading">Listing Only Active Services 
 <!-- /wp:heading -->
 
   If you want to see only the services that are currently running (active), use: 
@@ -205,7 +205,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Checking Service Status</h4>
+<h4 class="wp-block-heading">Checking Service Status 
 <!-- /wp:heading -->
 
   For detailed information about a specific service, such as <code>sshd</code>, use the <code>status</code> option: 
@@ -222,15 +222,15 @@ crond.service                            enabled</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. Enabling and Disabling Services</h3>
+
+ ### 4. Enabling and Disabling Services
 <!-- /wp:heading -->
 
   Services can be configured to start automatically at boot time or to remain disabled until manually started. Let’s look at how to enable and disable services. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Enabling a Service at Boot</h4>
+<h4 class="wp-block-heading">Enabling a Service at Boot 
 <!-- /wp:heading -->
 
   To ensure a service starts automatically when your system boots, use the <code>enable</code> command: 
@@ -244,7 +244,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Disabling a Service at Boot</h4>
+<h4 class="wp-block-heading">Disabling a Service at Boot 
 <!-- /wp:heading -->
 
   To prevent a service from starting at boot, use the <code>disable</code> command: 
@@ -261,15 +261,15 @@ crond.service                            enabled</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. Starting and Stopping Services</h3>
+
+ ### 5. Starting and Stopping Services
 <!-- /wp:heading -->
 
   In addition to enabling or disabling services at boot time, you can manually start or stop services as needed. This is useful when you want to temporarily activate or deactivate a service without affecting its boot behavior. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Starting a Service</h4>
+<h4 class="wp-block-heading">Starting a Service 
 <!-- /wp:heading -->
 
   To start a service immediately, use: 
@@ -283,7 +283,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Stopping a Service</h4>
+<h4 class="wp-block-heading">Stopping a Service 
 <!-- /wp:heading -->
 
   To stop a running service, use: 
@@ -297,7 +297,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Restarting a Service</h4>
+<h4 class="wp-block-heading">Restarting a Service 
 <!-- /wp:heading -->
 
   Sometimes, services need to be restarted to apply configuration changes or to refresh the service state. To restart a service, use: 
@@ -314,18 +314,18 @@ crond.service                            enabled</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 6. Configuring Services</h3>
+
+ ### 6. Configuring Services
 <!-- /wp:heading -->
 
   Service configuration typically involves editing the service’s configuration files, which define how the service operates, its dependencies, and its environment. Each service has its own configuration files, usually located in <code>/etc</code> or its subdirectories. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Editing Service Configuration Files</h4>
+<h4 class="wp-block-heading">Editing Service Configuration Files 
 <!-- /wp:heading -->
 
-  For example, the configuration file for the <strong>Apache</strong> (<code>httpd</code>) service is usually located at: 
+  For example, the configuration file for the ***Apache***  (<code>httpd</code>) service is usually located at: 
  
 
 <!-- wp:code -->
@@ -343,7 +343,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Reloading a Service</h4>
+<h4 class="wp-block-heading">Reloading a Service 
 <!-- /wp:heading -->
 
   Some services support a "reload" operation, which re-reads the configuration without fully stopping and starting the service: 
@@ -360,15 +360,15 @@ crond.service                            enabled</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. Viewing Service Logs and Status</h3>
+
+ ### 7. Viewing Service Logs and Status
 <!-- /wp:heading -->
 
-  Service logs provide essential insights into how a service is performing and help troubleshoot any issues that arise. With <strong>systemd</strong>, you can view logs directly from the <code>journalctl</code> command. 
+  Service logs provide essential insights into how a service is performing and help troubleshoot any issues that arise. With ***systemd*** , you can view logs directly from the <code>journalctl</code> command. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Viewing Logs for a Specific Service</h4>
+<h4 class="wp-block-heading">Viewing Logs for a Specific Service 
 <!-- /wp:heading -->
 
   To view the logs for a specific service, such as <code>httpd</code>, use: 
@@ -382,7 +382,7 @@ crond.service                            enabled</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Filtering Logs by Time</h4>
+<h4 class="wp-block-heading">Filtering Logs by Time 
 <!-- /wp:heading -->
 
   You can filter logs by time to see recent events using the <code>--since</code> option: 
@@ -399,8 +399,8 @@ crond.service                            enabled</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 8. Best Practices for Service Management in AlmaLinux 9</h3>
+
+ ### 8. Best Practices for Service Management in AlmaLinux 9
 <!-- /wp:heading -->
 
   Effective service management is critical to maintaining the stability, performance, and security of your AlmaLinux 9 server. Here are some best practices to keep in mind: 
@@ -408,38 +408,38 @@ crond.service                            enabled</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Disable Unnecessary Services</strong>: Services that are not required for your server's functionality should be disabled to save resources and reduce potential security risks.</li>
+- ***Disable Unnecessary Services*** : Services that are not required for your server's functionality should be disabled to save resources and reduce potential security risks. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Monitor Service Logs Regularly</strong>: Use <code>journalctl</code> to check logs frequently, especially for critical services like web servers, firewalls, and databases.</li>
+- ***Monitor Service Logs Regularly*** : Use <code>journalctl</code> to check logs frequently, especially for critical services like web servers, firewalls, and databases. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Automate with Systemd Timers</strong>: Consider using <code>systemd</code> timers instead of traditional cron jobs to schedule tasks. They offer better integration with the systemd ecosystem.</li>
+- ***Automate with Systemd Timers*** : Consider using <code>systemd</code> timers instead of traditional cron jobs to schedule tasks. They offer better integration with the systemd ecosystem. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Test Configuration Changes</strong>: Always test changes to service configuration files in a development or testing environment before applying them to production.</li>
+- ***Test Configuration Changes*** : Always test changes to service configuration files in a development or testing environment before applying them to production. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Backup Configuration Files</strong>: Before making any significant changes to service configurations, make sure to back up the original configuration files.</li>
-<!-- /wp:list-item --></ul>
+- ***Backup Configuration Files*** : Before making any significant changes to service configurations, make sure to back up the original configuration files. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 9. Conclusion</h3>
+
+ ### 9. Conclusion
 <!-- /wp:heading -->
 
-  Managing services on <strong>AlmaLinux 9</strong> is a critical skill for system administrators, whether you're running a web server, database, or any other service. By mastering the use of <code>systemctl</code>, you can easily list, enable, disable, start, stop, and configure services. With the best practices outlined in this guide, you can maintain a well-functioning and secure server environment. 
+  Managing services on ***AlmaLinux 9***  is a critical skill for system administrators, whether you're running a web server, database, or any other service. By mastering the use of <code>systemctl</code>, you can easily list, enable, disable, start, stop, and configure services. With the best practices outlined in this guide, you can maintain a well-functioning and secure server environment. 
  
 
-  AlmaLinux’s reliance on <strong>systemd</strong> and <strong>systemctl</strong> ensures that service management is efficient and powerful, helping you control the services that run on your system with ease. 
+  AlmaLinux’s reliance on ***systemd***  and ***systemctl***  ensures that service management is efficient and powerful, helping you control the services that run on your system with ease. 
  
 
   By regularly monitoring, enabling only essential services, and configuring them properly, you will be able to optimize both performance and security on your AlmaLinux 9 server. 

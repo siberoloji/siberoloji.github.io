@@ -39,25 +39,25 @@ url: /tr/msf-meterpreter-script-api-cagrilari/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> irb
-<strong>[</strong><strong>*</strong><strong>]</strong> Starting IRB shell
-<strong>[</strong><strong>*</strong><strong>]</strong> The 'client' variable holds the meterpreter client
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  irb
+***[*** ******* ***]***  Starting IRB shell
+***[*** ******* ***]***  The 'client' variable holds the meterpreter client
 
-<strong>&gt;&gt;</strong>
+***&gt;&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="clientsysconfigsysinfo">client.sys.config.sysinfo</h2>
+<h2 class="wp-block-heading" id="clientsysconfigsysinfo">client.sys.config.sysinfo
 <!-- /wp:heading -->
 
   Bu komut, sistem hakkında bir takım bilgileri öğrenmemizi sağlar. Aşağıda,&nbsp;<code>client.sys.config.sysinfo</code>&nbsp;API çağrısının bir kaç örneğini görebilirsiniz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;&gt;</strong> client.sys.config.sysinfo
-<strong>=&gt;</strong> <strong>{</strong>"OS"<strong>=&gt;</strong>"Windows XP (Build 2600, Service Pack 3).", "Computer"<strong>=&gt;</strong>"WINXPVM01"<strong>}</strong>
-<strong>&gt;&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;&gt;***  client.sys.config.sysinfo
+***=&gt;***  ***{*** "OS"***=&gt;*** "Windows XP (Build 2600, Service Pack 3).", "Computer"***=&gt;*** "WINXPVM01"***}*** 
+***&gt;&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -65,53 +65,53 @@ url: /tr/msf-meterpreter-script-api-cagrilari/
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;&gt;</strong> client.sys.config.sysinfo.class
-<strong>=&gt;</strong> Hash
-<strong>&gt;&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;&gt;***  client.sys.config.sysinfo.class
+***=&gt;***  Hash
+***&gt;&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;&gt;</strong> client.sys.config.sysinfo['OS'<strong>]</strong>
-<strong>=&gt;</strong> "Windows XP (Build 2600, Service Pack 3)."
-<strong>&gt;&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;&gt;***  client.sys.config.sysinfo['OS'***]*** 
+***=&gt;***  "Windows XP (Build 2600, Service Pack 3)."
+***&gt;&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="clientsysconfiggetuid">client.sys.config.getuid</h2>
+<h2 class="wp-block-heading" id="clientsysconfiggetuid">client.sys.config.getuid
 <!-- /wp:heading -->
 
   Bu çağrı kullanıcı bilgilerini elde etmek için kullanılır. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;&gt;</strong> client.sys.config.getuid
-<strong>=&gt;</strong> "WINXPVM01\labuser"
-<strong>&gt;&gt;</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;&gt;***  client.sys.config.getuid
+***=&gt;***  "WINXPVM01\labuser"
+***&gt;&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="clientsysprocessgetpid">client.sys.process.getpid</h2>
+<h2 class="wp-block-heading" id="clientsysprocessgetpid">client.sys.process.getpid
 <!-- /wp:heading -->
 
   Bu çağrı sayesinde, Meterpreter oturumunun hangi program içine gömülü olarak çalıştığını öğrenebiliriz. 
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"><strong>&gt;&gt;</strong> client.sys.process.getpid
-<strong>=&gt;</strong> 684
+<pre class="wp-block-code"><code lang="bash" class="language-bash">***&gt;&gt;***  client.sys.process.getpid
+***=&gt;***  684
 
 <em>## client.net.config.interfaces</em>
 
 Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde edebilirsiniz.
 
 ```sh
-<strong>&gt;&gt;</strong> client.net.config.interfaces
-<strong>=&gt;</strong> <strong>[</strong><em>#, #]</em>
-<strong>&gt;&gt;</strong> client.net.config.interfaces.class
-<strong>=&gt;</strong> Array
+***&gt;&gt;***  client.net.config.interfaces
+***=&gt;***  ***[*** <em>#, #]</em>
+***&gt;&gt;***  client.net.config.interfaces.class
+***=&gt;***  Array
 </code></pre>
 <!-- /wp:code -->
 
@@ -119,11 +119,11 @@ Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash"> <strong>&gt;&gt;</strong> interfaces <strong>=</strong> client.net.config.interfaces
- <strong>=&gt;</strong> <strong>[</strong><em>#, #]</em>
- <strong>&gt;&gt;</strong> interfaces.each <strong>do</strong> |i|
+<pre class="wp-block-code"><code lang="bash" class="language-bash"> ***&gt;&gt;***  interfaces ***=***  client.net.config.interfaces
+ ***=&gt;***  ***[*** <em>#, #]</em>
+ ***&gt;&gt;***  interfaces.each ***do***  |i|
  ?&gt; puts i.pretty
- <strong>&gt;&gt;</strong> end
+ ***&gt;&gt;***  end
  MS TCP Loopback interface
  Hardware MAC: 00:00:00:00:00:00
  IP Address  : 127.0.0.1

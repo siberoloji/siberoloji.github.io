@@ -32,25 +32,25 @@
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;uname --help
 
-Usage: uname &lt;strong&gt;[&lt;/strong&gt;OPTION]...
+Usage: uname ***[*** OPTION]...
 Print certain system information.  With no OPTION, same as -s.
 
-  -a, --all                print all information, &lt;strong&gt;in &lt;/strong&gt;the following order,
-                             except omit -p and -i &lt;strong&gt;if &lt;/strong&gt;unknown:
+  -a, --all                print all information, ***in *** the following order,
+                             except omit -p and -i ***if *** unknown:
   -s, --kernel-name        print the kernel name
   -n, --nodename           print the network node hostname
   -r, --kernel-release     print the kernel release
   -v, --kernel-version     print the kernel version
   -m, --machine            print the machine hardware name
-  -p, --processor          print the processor type &lt;strong&gt;(&lt;/strong&gt;non-portable&lt;strong&gt;)&lt;/strong&gt;
-  -i, --hardware-platform  print the hardware platform &lt;strong&gt;(&lt;/strong&gt;non-portable&lt;strong&gt;)&lt;/strong&gt;
+  -p, --processor          print the processor type ***(*** non-portable***)*** 
+  -i, --hardware-platform  print the hardware platform ***(*** non-portable***)*** 
   -o, --operating-system   print the operating system
       --help     display this help and exit
       --version  output version information and exit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;&lt;code&gt;uname&lt;/code&gt; komutunu, hiçbir seçenek olmadan verirseniz, &lt;code&gt;-s&lt;/code&gt; seçeneği varsayılan olarak kullanılır.&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--a&#34;&gt;&lt;code&gt;uname -a&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--a&#34;&gt;&lt;code&gt;uname -a&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Yazdırılabilecek tüm bilgi ekrana yazdırılır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -58,7 +58,7 @@ Print certain system information.  With no OPTION, same as -s.
 Linux umut-X550JX 4.8.0-42-generic &lt;em&gt;#45~16.04.1-Ubuntu SMP Thu Mar 9 14:10:58 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux&lt;/em&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--s&#34;&gt;&lt;code&gt;uname -s&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--s&#34;&gt;&lt;code&gt;uname -s&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullanımda bulunan kernel adını ekrana yazdırır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -66,7 +66,7 @@ Linux umut-X550JX 4.8.0-42-generic &lt;em&gt;#45~16.04.1-Ubuntu SMP Thu Mar 9 14
 Linux
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--n&#34;&gt;&lt;code&gt;uname -n&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--n&#34;&gt;&lt;code&gt;uname -n&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bilgisayarınızın, ağ içinde kullanılan host adını gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -74,7 +74,7 @@ Linux
 umut-X550JX
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--r&#34;&gt;&lt;code&gt;uname -r&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--r&#34;&gt;&lt;code&gt;uname -r&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandımda olan Kernel ana dağıtım bilgisini gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -82,7 +82,7 @@ umut-X550JX
 4.8.0-42-generic
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--v&#34;&gt;&lt;code&gt;uname -v&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--v&#34;&gt;&lt;code&gt;uname -v&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullanımda olan Kernel sürümünün dağıtıma özel sürüm bilgisini, yayınlandığı tarihle birlikte gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -90,7 +90,7 @@ umut-X550JX
 &lt;em&gt;#45~16.04.1-Ubuntu SMP Thu Mar 9 14:10:58 UTC 2017&lt;/em&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--m&#34;&gt;&lt;code&gt;uname -m&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--m&#34;&gt;&lt;code&gt;uname -m&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullandığınız bilgisayarın donanım adını gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -98,7 +98,7 @@ umut-X550JX
 x86_64
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--p&#34;&gt;&lt;code&gt;uname -p&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--p&#34;&gt;&lt;code&gt;uname -p&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullanılan işlemcinin Mimari bilgisini gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -106,7 +106,7 @@ x86_64
 x86_64
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--i&#34;&gt;&lt;code&gt;uname -i&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--i&#34;&gt;&lt;code&gt;uname -i&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Kullanılan bilgisayarın donanım platform bilgisini gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -114,7 +114,7 @@ x86_64
 x86_64
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--o&#34;&gt;&lt;code&gt;uname -o&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;uname--o&#34;&gt;&lt;code&gt;uname -o&lt;/code&gt;
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;İşletim sisteminin ne olduğunu gösterir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
@@ -122,16 +122,16 @@ x86_64
 GNU/Linux
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;faydalı-kullanım&#34;&gt;Faydalı Kullanım&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;faydalı-kullanım&#34;&gt;Faydalı Kullanım
 &lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bu komutun çıktılarını, değişken olarak atayarak, yazacağınız komut veya Bash script dosyalarında kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get install linux-headers-$(uname -r)
-&lt;strong&gt;[&lt;/strong&gt;sudo&lt;strong&gt;]&lt;/strong&gt; password &lt;strong&gt;for &lt;/strong&gt;umut: 
+***[*** sudo***]***  password ***for *** umut: 
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-linux-headers-4.8.0-42-generic is already the newest version &lt;strong&gt;(&lt;/strong&gt;4.8.0-42.45~16.04.1&lt;strong&gt;)&lt;/strong&gt;.
+linux-headers-4.8.0-42-generic is already the newest version ***(*** 4.8.0-42.45~16.04.1***)*** .
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Gördüğünüz gibi &lt;code&gt;uname -r&lt;/code&gt; komutu hangi değeri alıyorsa, o kernel sürümüne ait headers dosyalarını sisteme yükleme komutunu vermiş olduk. Bu şekilde değişken atamalı kullanım, yazacağınız komutların farklı bilgisayarlarda kullanımını kolaylaştırır.&lt;/p&gt;

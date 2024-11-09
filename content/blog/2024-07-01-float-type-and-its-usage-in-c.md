@@ -86,7 +86,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation</h2>
+ ## Explanation
 <!-- /wp:heading -->
 
   The provided C++ code is a demonstration of how to use and display floating point numbers in different formats using the <code>iostream</code> and <code>iomanip</code> libraries. 
@@ -132,7 +132,7 @@ cout &lt;&lt; "f (fixed): " &lt;&lt; fixed &lt;&lt; f &lt;&lt; endl;
  
 
  
- ## Output</h2>
+ ## Output
 <!-- /wp:heading -->
 
 <!-- wp:code -->

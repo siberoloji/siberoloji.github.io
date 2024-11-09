@@ -34,54 +34,54 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
   In this comprehensive guide, we will walk through the process of configuring Virtual Hosting on an Apache Web Server running on AlmaLinux 9. By the end, you will have the skills to host multiple websites on a single server, each with its own domain name. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Table of Contents</h3>
+
+ ### Table of Contents
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Introduction to Apache Virtual Hosts</li>
+- Introduction to Apache Virtual Hosts 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Prerequisites</li>
+- Prerequisites 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Installing Apache on AlmaLinux 9</li>
+- Installing Apache on AlmaLinux 9 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>How Virtual Hosting Works in Apache</li>
+- How Virtual Hosting Works in Apache 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Creating Directories for Each Website</li>
+- Creating Directories for Each Website 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Configuring Virtual Hosts on Apache</li>
+- Configuring Virtual Hosts on Apache 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Testing the Virtual Hosts Configuration</li>
+- Testing the Virtual Hosts Configuration 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Enabling and Securing Virtual Hosts with SSL (Optional)</li>
+- Enabling and Securing Virtual Hosts with SSL (Optional) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Conclusion</li>
-<!-- /wp:list-item --></ol>
+- Conclusion 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:separator -->
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 1. Introduction to Apache Virtual Hosts</h3>
+
+ ### 1. Introduction to Apache Virtual Hosts
 <!-- /wp:heading -->
 
   Apache Virtual Hosts is a feature that allows a single Apache web server to host multiple domains. It works by mapping different domain names or IP addresses to separate directories on the server, essentially creating isolated environments for each domain. Virtual Hosting can be done in two main ways: 
@@ -89,19 +89,19 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Name-Based Virtual Hosting</strong>: Multiple domains share the same IP address but serve different content based on the domain name in the request.</li>
+- ***Name-Based Virtual Hosting*** : Multiple domains share the same IP address but serve different content based on the domain name in the request. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>IP-Based Virtual Hosting</strong>: Each domain has its own IP address, but this method is less commonly used due to the scarcity of IPv4 addresses.</li>
-<!-- /wp:list-item --></ul>
+- ***IP-Based Virtual Hosting*** : Each domain has its own IP address, but this method is less commonly used due to the scarcity of IPv4 addresses. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  In this guide, we'll focus on <strong>Name-Based Virtual Hosting</strong> to configure multiple domain names on one Apache server. 
+  In this guide, we'll focus on ***Name-Based Virtual Hosting***  to configure multiple domain names on one Apache server. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Prerequisites</h3>
+
+ ### 2. Prerequisites
 <!-- /wp:heading -->
 
   Before you start, ensure that the following prerequisites are in place: 
@@ -109,31 +109,31 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>An AlmaLinux 9 Server</strong>: Ensure your server is up and running.</li>
+- ***An AlmaLinux 9 Server*** : Ensure your server is up and running. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Sudo Privileges</strong>: You need an account with sudo privileges to install and configure software.</li>
+- ***Sudo Privileges*** : You need an account with sudo privileges to install and configure software. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Domain Names</strong>: Two or more domain names that will point to your server's IP address.</li>
+- ***Domain Names*** : Two or more domain names that will point to your server's IP address. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Apache HTTP Server Installed</strong>: If Apache is not yet installed, we will cover this in the next section.</li>
-<!-- /wp:list-item --></ul>
+- ***Apache HTTP Server Installed*** : If Apache is not yet installed, we will cover this in the next section. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Installing Apache on AlmaLinux 9</h3>
+
+ ### 3. Installing Apache on AlmaLinux 9
 <!-- /wp:heading -->
 
   If Apache is not already installed on your AlmaLinux 9 system, you can install it using the DNF package manager. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Update the System</h4>
+<h4 class="wp-block-heading">Step 1: Update the System 
 <!-- /wp:heading -->
 
   First, make sure your system’s package index is up to date: 
@@ -144,7 +144,7 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Install Apache</h4>
+<h4 class="wp-block-heading">Step 2: Install Apache 
 <!-- /wp:heading -->
 
   Install the Apache HTTP Server package using the following command: 
@@ -155,7 +155,7 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Start and Enable Apache</h4>
+<h4 class="wp-block-heading">Step 3: Start and Enable Apache 
 <!-- /wp:heading -->
 
   Once Apache is installed, start the service: 
@@ -173,7 +173,7 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 4: Verify Apache Installation</h4>
+<h4 class="wp-block-heading">Step 4: Verify Apache Installation 
 <!-- /wp:heading -->
 
   You can verify the installation by visiting your server's IP address in a web browser (<code>http://your_server_ip</code>). You should see the default Apache test page. 
@@ -183,8 +183,8 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. How Virtual Hosting Works in Apache</h3>
+
+ ### 4. How Virtual Hosting Works in Apache
 <!-- /wp:heading -->
 
   Virtual Hosting in Apache is managed through individual configuration files for each domain or subdomain. Apache uses these files to determine which domain corresponds to which directory on the server. 
@@ -195,16 +195,16 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>ServerName</strong>: The domain name (e.g., <code>example.com</code>).</li>
+- ***ServerName*** : The domain name (e.g., <code>example.com</code>). 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>DocumentRoot</strong>: The directory where the website’s files are located.</li>
+- ***DocumentRoot*** : The directory where the website’s files are located. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>ErrorLog and CustomLog</strong>: Paths to log files for the domain.</li>
-<!-- /wp:list-item --></ul>
+- ***ErrorLog and CustomLog*** : Paths to log files for the domain. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   You will create separate configuration files for each domain, allowing Apache to serve the correct content based on the domain requested. 
@@ -214,15 +214,15 @@ url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-ap
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. Creating Directories for Each Website</h3>
+
+ ### 5. Creating Directories for Each Website
 <!-- /wp:heading -->
 
   Before creating the Virtual Hosts, you need to set up directories for each website that will be hosted on the server. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Create Directories</h4>
+<h4 class="wp-block-heading">Step 1: Create Directories 
 <!-- /wp:heading -->
 
   Navigate to the <code>/var/www</code> directory, which is the default location for website files on Apache. 
@@ -241,7 +241,7 @@ sudo mkdir /var/www/example2.com</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Set Permissions</h4>
+<h4 class="wp-block-heading">Step 2: Set Permissions 
 <!-- /wp:heading -->
 
   Set the correct permissions for these directories, ensuring that the Apache user has read and write access: 
@@ -256,7 +256,7 @@ sudo chown -R $USER:$USER /var/www/example2.com</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Create Sample Web Pages</h4>
+<h4 class="wp-block-heading">Step 3: Create Sample Web Pages 
 <!-- /wp:heading -->
 
   For testing purposes, create a simple HTML file in each directory: 
@@ -305,15 +305,15 @@ sudo chown -R $USER:$USER /var/www/example2.com</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 6. Configuring Virtual Hosts on Apache</h3>
+
+ ### 6. Configuring Virtual Hosts on Apache
 <!-- /wp:heading -->
 
   Now that the directories are set up, it’s time to configure Apache to serve the correct content for each domain. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Create Virtual Host Files</h4>
+<h4 class="wp-block-heading">Step 1: Create Virtual Host Files 
 <!-- /wp:heading -->
 
   Navigate to the <code>/etc/httpd/conf.d/</code> directory, where Apache's configuration files are stored. 
@@ -369,7 +369,7 @@ sudo chown -R $USER:$USER /var/www/example2.com</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Check Configuration Syntax</h4>
+<h4 class="wp-block-heading">Step 2: Check Configuration Syntax 
 <!-- /wp:heading -->
 
   After adding the Virtual Host configurations, it’s important to verify that there are no syntax errors in the configuration files. Run the following command: 
@@ -383,7 +383,7 @@ sudo chown -R $USER:$USER /var/www/example2.com</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Restart Apache</h4>
+<h4 class="wp-block-heading">Step 3: Restart Apache 
 <!-- /wp:heading -->
 
   Restart the Apache service to apply the new configuration: 
@@ -397,15 +397,15 @@ sudo chown -R $USER:$USER /var/www/example2.com</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 7. Testing the Virtual Hosts Configuration</h3>
+
+ ### 7. Testing the Virtual Hosts Configuration
 <!-- /wp:heading -->
 
   To test the Virtual Hosts, you need to ensure that your domain names (<code>example1.com</code> and <code>example2.com</code>) are pointing to your server’s IP address. This can be done by updating your domain’s DNS records or by editing your local machine’s <code>/etc/hosts</code> file for testing purposes. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Edit the Hosts File (for Local Testing)</h4>
+<h4 class="wp-block-heading">Step 1: Edit the Hosts File (for Local Testing) 
 <!-- /wp:heading -->
 
   On your local machine, you can simulate domain resolution by editing the <code>/etc/hosts</code> file (on Linux and macOS) or <code>C:\Windows\System32\drivers\etc\hosts</code> (on Windows). Add the following lines: 
@@ -420,7 +420,7 @@ your_server_ip example2.com</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Test in a Web Browser</h4>
+<h4 class="wp-block-heading">Step 2: Test in a Web Browser 
 <!-- /wp:heading -->
 
   Now open a web browser and navigate to <code>http://example1.com</code> and <code>http://example2.com</code>. You should see the different websites you created for each domain. 
@@ -430,15 +430,15 @@ your_server_ip example2.com</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 8. Enabling and Securing Virtual Hosts with SSL (Optional)</h3>
+
+ ### 8. Enabling and Securing Virtual Hosts with SSL (Optional)
 <!-- /wp:heading -->
 
   To secure your websites with SSL, you can use Let's Encrypt to obtain a free SSL certificate. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 1: Install Certbot and mod_ssl</h4>
+<h4 class="wp-block-heading">Step 1: Install Certbot and mod_ssl 
 <!-- /wp:heading -->
 
   To install Certbot and the Apache SSL module, run the following commands: 
@@ -449,7 +449,7 @@ your_server_ip example2.com</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 2: Obtain SSL Certificates</h4>
+<h4 class="wp-block-heading">Step 2: Obtain SSL Certificates 
 <!-- /wp:heading -->
 
   Run the Certbot client to obtain and automatically configure the SSL certificates: 
@@ -463,7 +463,7 @@ your_server_ip example2.com</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">Step 3: Verify SSL Configuration</h4>
+<h4 class="wp-block-heading">Step 3: Verify SSL Configuration 
 <!-- /wp:heading -->
 
   After installing the certificates, verify that your domains are now accessible over HTTPS. Test by visiting <code>https://example1.com</code> 
@@ -476,8 +476,8 @@ your_server_ip example2.com</code></pre>
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 <!-- /wp:separator -->
 
-<!-- wp:heading {"level":3} -->
- ### 9. Conclusion</h3>
+
+ ### 9. Conclusion
 <!-- /wp:heading -->
 
   By configuring Virtual Hosts in Apache on AlmaLinux 9, you can host multiple websites on a single server, reducing costs and maximizing efficiency. In this guide, we covered the steps to create directories for each website, configure Virtual Hosts, and test the setup. 

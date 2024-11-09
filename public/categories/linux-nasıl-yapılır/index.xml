@@ -68,20 +68,20 @@ graphical.target&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Sistemimizde ayarlanmış varsayılan açılış hedefinin grafik arayüz &amp;ldquo;&lt;code&gt;graphical.target&lt;/code&gt;&amp;rdquo; olduğunu görebilirsiniz. Buradan çıkaracağımız sonuç, sistemimiz başladığında bütün servisler sırasıyla çalıştırılacak ve grafik arayüz ile masaüstü yöneticisine ulaşacaksınız.&lt;/p&gt;
 &lt;p&gt;Peki masaüstüne ihtiyacınız yoksa veya ihtiyacınız kalmadı ise durdurup sistem kaynak kullanımını azaltmak isteyebilirsiniz. Bu durumda grafik arayüzünü durdurup konsol dediğimiz, komut satırı olarak da tabir edilen, komutlarımızda &amp;ldquo;multi-user.target&amp;rdquo; şeklinde ifade edeceğimiz ekrana nasıl geçeceğiz.&lt;/p&gt;
-&lt;h2&gt;graphical.target tan multiuser-target a geçiş&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;graphicaltarget-tan-multiuser-target-a-geçişh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#graphicaltarget-tan-multiuser-target-a-ge%c3%a7i%c5%9fh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;graphical.target tan multiuser-target a geçiş&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;graphicaltarget-tan-multiuser-target-a-geçiş&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#graphicaltarget-tan-multiuser-target-a-ge%c3%a7i%c5%9f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Sistemimiz şu an graphical.target dediğimiz grafik arayüzde çalışıyor.  Burada yapılan işlem masaüstü ekranında Terminal penceresi açmak değildir. Masaüstü yöneticisini tamamen durdurmaktır. Dikkat etmelisiniz. Aşağıdaki komut sayesinde artık masaüstü yöneticisi ve grafik arayüz kullanan programlar tamamen durduruldu. Komut satırındasınız.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl isolate multi-user.target&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;multiuser-target tan graphical.target a geçiş&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;multiuser-target-tan-graphicaltarget-a-geçişh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#multiuser-target-tan-graphicaltarget-a-ge%c3%a7i%c5%9fh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;multiuser-target tan graphical.target a geçiş&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;multiuser-target-tan-graphicaltarget-a-geçiş&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#multiuser-target-tan-graphicaltarget-a-ge%c3%a7i%c5%9f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Grafik arayüzü tekrar başlatmak isterseniz aşağıdaki komutu kullanabilirsiniz. Bu komut sonucunda grafik arayüz ve masaüstü yöneticisi tekrar başlatılacaktır&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl isolate graphical.target&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;İlk açılış varsayılan hedef ayarı&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ilk-açılış-varsayılan-hedef-ayarıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#ilk-a%c3%a7%c4%b1l%c4%b1%c5%9f-varsay%c4%b1lan-hedef-ayar%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;İlk açılış varsayılan hedef ayarı&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ilk-açılış-varsayılan-hedef-ayarı&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ilk-a%c3%a7%c4%b1l%c4%b1%c5%9f-varsay%c4%b1lan-hedef-ayar%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Yukarıda verdiğimiz geçiş komutları, sistem açıldıktan sonra başlatma, sonlandırma ve geçiş işlemleri için kullanılmaktadır. Şimdi ise, sisteminiz ilk açıldığında hangi durumu hedef almasını istediğimizi ayarlayalım. Bunun için &amp;ldquo;systemctl set-default &amp;quot; komutunu kullanacağız.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre title=&#34;Açılışta komut satırına ulaşır.&#34; class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl set-default multi-user.target&lt;/code&gt;&lt;/pre&gt;
@@ -107,26 +107,32 @@ graphical.target&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Bu yazımızda, Rocky Linux 9 ve AlmaLinux 9 sürümünü kullanan sunucumuza Adguard Home kurulumunu paylaşacağız.&lt;/p&gt;
 &lt;p&gt;Aşağıdaki adımları komut satırınızda sırayla uygulamalısınız.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Sistem paketlerini güncelleyelim.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo dnf clean all &amp;amp;&amp;amp; sudo dnf update
 sudo dnf groupinstall &#34;Development Tools&#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;AdGuard paketlerini GitHub üzerinden indirip kuralım&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Firewall için gerekli izinleri açalım.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo firewall-cmd --add-service={dns,http,https} --permanent
@@ -149,25 +155,25 @@ sudo firewall-cmd --reload&lt;/code&gt;&lt;/pre&gt;
         
         
         &lt;p&gt;Linux işletim sisteminizde bir bağlantı problemi olduğunda veya IP ayarlarını değiştirdiğinizde ağ kartınızı tekrar başlatmanız gerekebilir. Bunu yapmak için bilgisayar veya sunucunuzu tekrar başlatmanıza gerek yoktur. Aşağıda açıkladığımız komutlar sayesinde ağ kartınızı kapatıp açabilirsiniz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;Ağ kartını durdurmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durdurmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durdurmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Ağ kartını durdurmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durdurmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durdurmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# nmcli networking off&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ağ kartını başlatmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-başlatmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-ba%c5%9flatmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını başlatmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-başlatmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-ba%c5%9flatmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# nmcli networking on&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Sunucunuza doğrudan erişimiz yoksa kapat / aç yöntemi yerine &amp;ldquo;yeniden başlat&amp;rdquo; yöntemini deneyebilirsiniz.&lt;/p&gt;
-&lt;h2&gt;Ağ kartını Yeniden Başlatmak için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-yeniden-başlatmak-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-yeniden-ba%c5%9flatmak-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını Yeniden Başlatmak için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-yeniden-başlatmak-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-yeniden-ba%c5%9flatmak-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# systemctl restart NetworkManager&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ağ kartını durumunu kontrol etmek için&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durumunu-kontrol-etmek-içinh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durumunu-kontrol-etmek-i%c3%a7inh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ağ kartını durumunu kontrol etmek için&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ağ-kartını-durumunu-kontrol-etmek-için&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c4%9f-kart%c4%b1n%c4%b1-durumunu-kontrol-etmek-i%c3%a7in&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;# systemctl status NetworkManager&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
@@ -185,138 +191,138 @@ sudo firewall-cmd --reload&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-         &lt;p&gt;Netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.&lt;/p&gt;
- &lt;p&gt;Aşağıda,&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;komutuna ait 20 farklı örnek gösterilmiştir.&amp;nbsp;&lt;code&gt;netstat -h&lt;/code&gt;&amp;nbsp;komutuyla yardım dokümanını görüntüleyebilirsiniz. CentOS vb. dağıtımlarda&amp;nbsp;&lt;code&gt;net-tools&lt;/code&gt;&amp;nbsp;paketi kullanım dışı bırakıldığından&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;programını bulamayabilirsiniz.&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;yerine&amp;nbsp;&lt;code&gt;ss&lt;/code&gt;&amp;nbsp;komutunu da kullanabilirsiniz.&lt;/p&gt;
- &lt;p&gt;Şimdi, sırayla örneklere bakalım.&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;1-tcp-ve-udp-protokolünde-dinleme-yapan-tüm-portlar&#34;&gt;1. TCP ve UDP Protokolünde Dinleme Yapan Tüm Portlar&lt;/h2&gt;
+         &lt;p&gt;Netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.
+ &lt;p&gt;Aşağıda,&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;komutuna ait 20 farklı örnek gösterilmiştir.&amp;nbsp;&lt;code&gt;netstat -h&lt;/code&gt;&amp;nbsp;komutuyla yardım dokümanını görüntüleyebilirsiniz. CentOS vb. dağıtımlarda&amp;nbsp;&lt;code&gt;net-tools&lt;/code&gt;&amp;nbsp;paketi kullanım dışı bırakıldığından&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;programını bulamayabilirsiniz.&amp;nbsp;&lt;code&gt;netstat&lt;/code&gt;&amp;nbsp;yerine&amp;nbsp;&lt;code&gt;ss&lt;/code&gt;&amp;nbsp;komutunu da kullanabilirsiniz.
+ &lt;p&gt;Şimdi, sırayla örneklere bakalım.
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;1-tcp-ve-udp-protokolünde-dinleme-yapan-tüm-portlar&#34;&gt;1. TCP ve UDP Protokolünde Dinleme Yapan Tüm Portlar
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -a | more
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;servers and established&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** servers and established***)*** 
 Proto Recv-Q Send-Q Local Address         Foreign Address         State
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc              &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                     LISTEN
+tcp        0      0 ******* :sunrpc              ******* :*******                      LISTEN
 tcp        0     52 192.168.0.2:ssh       192.168.0.1:egs         ESTABLISHED
 tcp        1      0 192.168.0.2:59292     &lt;a href=&#34;http://www.gov.com:http/&#34;&gt;www.gov.com:http&lt;/a&gt;        CLOSE_WAIT
-tcp        0      0 localhost:smtp        &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                     LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:59482               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                     LISTEN
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:35036               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:npmp-local          &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-Active UNIX domain sockets &lt;strong&gt;(&lt;/strong&gt;servers and established&lt;strong&gt;)&lt;/strong&gt;
+tcp        0      0 localhost:smtp        ******* :*******                      LISTEN
+tcp        0      0 ******* :59482               ******* :*******                      LISTEN
+udp        0      0 ******* :35036               ******* :******* 
+udp        0      0 ******* :npmp-local          ******* :******* 
+Active UNIX domain sockets ***(*** servers and established***)*** 
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;2-sadece-tcp-portları-listeleme&#34;&gt;2. Sadece TCP Portları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;2-sadece-tcp-portları-listeleme&#34;&gt;2. Sadece TCP Portları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -at
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;servers and established&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** servers and established***)*** 
 Proto Recv-Q Send-Q Local Address          Foreign Address    State
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ssh                  &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                LISTEN
-tcp        0      0 localhost:ipp          &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                LISTEN
-tcp        0      0 localhost:smtp         &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                LISTEN
+tcp        0      0 ******* :ssh                  ******* :*******                 LISTEN
+tcp        0      0 localhost:ipp          ******* :*******                 LISTEN
+tcp        0      0 localhost:smtp         ******* :*******                 LISTEN
 tcp        0     52 192.168.0.2:ssh        192.168.0.1:egs    ESTABLISHED
 tcp        1      0 192.168.0.2:59292      &lt;a href=&#34;http://www.gov.com:http/&#34;&gt;www.gov.com:http&lt;/a&gt;   CLOSE_WAIT
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;3-udp-portları-listeleme&#34;&gt;3. UDP Portları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;3-udp-portları-listeleme&#34;&gt;3. UDP Portları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -au
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;servers and established&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** servers and established***)*** 
 Proto Recv-Q Send-Q Local Address        Foreign Address    State
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:35036              &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:npmp-local         &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:mdns               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
+udp        0      0 ******* :35036              ******* :******* 
+udp        0      0 ******* :npmp-local         ******* :******* 
+udp        0      0 ******* :mdns               ******* :******* 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;4-dinleme-yapan-tüm-bağlantıları-listeleme&#34;&gt;4. Dinleme Yapan Tüm Bağlantıları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;4-dinleme-yapan-tüm-bağlantıları-listeleme&#34;&gt;4. Dinleme Yapan Tüm Bağlantıları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -l
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** only servers***)*** 
 Proto Recv-Q Send-Q Local Address       Foreign Address     State
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc            &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                 LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:58642             &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                 LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ssh               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                 LISTEN
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:35036             &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:npmp-local        &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-Active UNIX domain sockets &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+tcp        0      0 ******* :sunrpc            ******* :*******                  LISTEN
+tcp        0      0 ******* :58642             ******* :*******                  LISTEN
+tcp        0      0 ******* :ssh               ******* :*******                  LISTEN
+udp        0      0 ******* :35036             ******* :******* 
+udp        0      0 ******* :npmp-local        ******* :******* 
+Active UNIX domain sockets ***(*** only servers***)*** 
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;5-tcp-dinleme-yapan-portları-listeleme&#34;&gt;5. TCP Dinleme Yapan Portları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;5-tcp-dinleme-yapan-portları-listeleme&#34;&gt;5. TCP Dinleme Yapan Portları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -lt
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** only servers***)*** 
 Proto Recv-Q Send-Q Local Address               Foreign Address  State
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:dctp                      &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:mysql                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc                    &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:munin                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ftp                       &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 localhost.localdomain:ipp   &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 localhost.localdomain:smtp  &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:http                      &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ssh                       &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:https                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;              LISTEN
+tcp        0      0 ******* :dctp                      ******* :*******               LISTEN
+tcp        0      0 ******* :mysql                     ******* :*******               LISTEN
+tcp        0      0 ******* :sunrpc                    ******* :*******               LISTEN
+tcp        0      0 ******* :munin                     ******* :*******               LISTEN
+tcp        0      0 ******* :ftp                       ******* :*******               LISTEN
+tcp        0      0 localhost.localdomain:ipp   ******* :*******               LISTEN
+tcp        0      0 localhost.localdomain:smtp  ******* :*******               LISTEN
+tcp        0      0 ******* :http                      ******* :*******               LISTEN
+tcp        0      0 ******* :ssh                       ******* :*******               LISTEN
+tcp        0      0 ******* :https                     ******* :*******               LISTEN
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;6-udp-dinleme-yapan-portları-listeleme&#34;&gt;6. UDP Dinleme Yapan Portları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;6-udp-dinleme-yapan-portları-listeleme&#34;&gt;6. UDP Dinleme Yapan Portları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -lu
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** only servers***)*** 
 Proto Recv-Q Send-Q Local Address               Foreign Address    State
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:39578                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:meregister                &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:vpps-qua                  &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:openvpn                   &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:mdns                      &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc                    &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ipp                       &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:60222                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
-udp        0      0 &lt;strong&gt;*&lt;/strong&gt;:mdns                      &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;
+udp        0      0 ******* :39578                     ******* :******* 
+udp        0      0 ******* :meregister                ******* :******* 
+udp        0      0 ******* :vpps-qua                  ******* :******* 
+udp        0      0 ******* :openvpn                   ******* :******* 
+udp        0      0 ******* :mdns                      ******* :******* 
+udp        0      0 ******* :sunrpc                    ******* :******* 
+udp        0      0 ******* :ipp                       ******* :******* 
+udp        0      0 ******* :60222                     ******* :******* 
+udp        0      0 ******* :mdns                      ******* :******* 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-unix-protokolünde-dinleme-yapan-portları-listeleme&#34;&gt;7. UNIX Protokolünde Dinleme Yapan Portları Listeleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;7-unix-protokolünde-dinleme-yapan-portları-listeleme&#34;&gt;7. UNIX Protokolünde Dinleme Yapan Portları Listeleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -lx
 
-Active UNIX domain sockets &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+Active UNIX domain sockets ***(*** only servers***)*** 
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     4171   @ISCSIADM_ABSTRACT_NAMESPACE
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     5767   /var/run/cups/cups.sock
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     7082   @/tmp/fam-root-
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     6157   /dev/gpmctl
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     6215   @/var/run/hald/dbus-IcefTIUkHm
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     6038   /tmp/.font-unix/fs7100
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     6175   /var/run/avahi-daemon/socket
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     4157   @ISCSID_UIP_ABSTRACT_NAMESPACE
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     60835836 /var/lib/mysql/mysql.sock
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     4645   /var/run/audispd_events
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     5136   /var/run/dbus/system_bus_socket
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     6216   @/var/run/hald/dbus-wsUBI30V2I
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     5517   /var/run/acpid.socket
-unix  2      &lt;strong&gt;[&lt;/strong&gt; ACC &lt;strong&gt;]&lt;/strong&gt;     STREAM     LISTENING     5531   /var/run/pcscd.comm
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     4171   @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     5767   /var/run/cups/cups.sock
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     7082   @/tmp/fam-root-
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     6157   /dev/gpmctl
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     6215   @/var/run/hald/dbus-IcefTIUkHm
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     6038   /tmp/.font-unix/fs7100
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     6175   /var/run/avahi-daemon/socket
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     4157   @ISCSID_UIP_ABSTRACT_NAMESPACE
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     60835836 /var/lib/mysql/mysql.sock
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     4645   /var/run/audispd_events
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     5136   /var/run/dbus/system_bus_socket
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     6216   @/var/run/hald/dbus-wsUBI30V2I
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     5517   /var/run/acpid.socket
+unix  2      ***[***  ACC ***]***      STREAM     LISTENING     5531   /var/run/pcscd.comm
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;8-i̇statistikleri-protokole-göre-görüntüleme&#34;&gt;8. İstatistikleri Protokole Göre Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;8-i̇statistikleri-protokole-göre-görüntüleme&#34;&gt;8. İstatistikleri Protokole Göre Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -s
@@ -353,7 +359,7 @@ Udp:
 281 packets sent
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;9-tcp-protokol-i̇statistiklerini-gösterme&#34;&gt;9. TCP Protokol İstatistiklerini Gösterme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;9-tcp-protokol-i̇statistiklerini-gösterme&#34;&gt;9. TCP Protokol İstatistiklerini Gösterme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -st
@@ -371,7 +377,7 @@ Tcp:
 17580 resets sent
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;10-udp-protokol-i̇statistiklerini-gösterme&#34;&gt;10. UDP Protokol İstatistiklerini Gösterme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;10-udp-protokol-i̇statistiklerini-gösterme&#34;&gt;10. UDP Protokol İstatistiklerini Gösterme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -su
@@ -383,49 +389,49 @@ Udp:
 2968722 packets sent
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;11-pid-numarasıyla-portu-kullanan-servisi-görüntüleme&#34;&gt;11. PID Numarasıyla Portu Kullanan Servisi Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;11-pid-numarasıyla-portu-kullanan-servisi-görüntüleme&#34;&gt;11. PID Numarasıyla Portu Kullanan Servisi Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -tp
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;w/o servers&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** w/o servers***)*** 
 Proto Recv-Q Send-Q Local Address         Foreign Address    State       PID/Program name
 tcp        0      0 192.168.0.2:ssh       192.168.0.1:egs    ESTABLISHED 2179/sshd
 tcp        1      0 192.168.0.2:59292     &lt;a href=&#34;http://www.gov.com:http/&#34;&gt;www.gov.com:http&lt;/a&gt;   CLOSE_WAIT  1939/clock-applet
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;12-promiscuous-mod-görüntüleme&#34;&gt;12. Promiscuous Mod Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;12-promiscuous-mod-görüntüleme&#34;&gt;12. Promiscuous Mod Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -ac 5 | grep tcp
 
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc                    &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:58642                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ssh                       &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 localhost:ipp               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 localhost:smtp              &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
+tcp        0      0 ******* :sunrpc                    ******* :*******                          LISTEN
+tcp        0      0 ******* :58642                     ******* :*******                          LISTEN
+tcp        0      0 ******* :ssh                       ******* :*******                          LISTEN
+tcp        0      0 localhost:ipp               ******* :*******                          LISTEN
+tcp        0      0 localhost:smtp              ******* :*******                          LISTEN
 tcp        1      0 192.168.0.2:59447           &lt;a href=&#34;http://www.gov.com:http/&#34;&gt;www.gov.com:http&lt;/a&gt;            CLOSE_WAIT
 tcp        0     52 192.168.0.2:ssh             192.168.0.1:egs             ESTABLISHED
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:sunrpc                    &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:ssh                       &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 localhost:ipp               &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 localhost:smtp              &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:59482                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN
+tcp        0      0 ******* :sunrpc                    ******* :*******                          LISTEN
+tcp        0      0 ******* :ssh                       ******* :*******                          LISTEN
+tcp        0      0 localhost:ipp               ******* :*******                          LISTEN
+tcp        0      0 localhost:smtp              ******* :*******                          LISTEN
+tcp        0      0 ******* :59482                     ******* :*******                          LISTEN
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;13-kernel-ip-rotalamayı-görüntüleme&#34;&gt;13. Kernel IP Rotalamayı Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;13-kernel-ip-rotalamayı-görüntüleme&#34;&gt;13. Kernel IP Rotalamayı Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -r
 
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
-192.168.0.0     &lt;strong&gt;*&lt;/strong&gt;               255.255.255.0   U         0 0          0 eth0
-link-local      &lt;strong&gt;*&lt;/strong&gt;               255.255.0.0     U         0 0          0 eth0
+192.168.0.0     *******                255.255.255.0   U         0 0          0 eth0
+link-local      *******                255.255.0.0     U         0 0          0 eth0
 default         192.168.0.1     0.0.0.0         UG        0 0          0 eth0
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;14-ağ-kartın-veri-aktarımlarını-görüntüleme&#34;&gt;14. Ağ Kartın Veri Aktarımlarını Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;14-ağ-kartın-veri-aktarımlarını-görüntüleme&#34;&gt;14. Ağ Kartın Veri Aktarımlarını Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -i
@@ -435,7 +441,7 @@ eth0       1500   0     4459      0      0      0     4057      0      0      0 
 lo        16436   0        8      0      0      0        8      0      0      0 LRU
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;15-kernel-ağ-arayüz-tablosunu-görüntüleme&#34;&gt;15. Kernel Ağ Arayüz Tablosunu Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;15-kernel-ağ-arayüz-tablosunu-görüntüleme&#34;&gt;15. Kernel Ağ Arayüz Tablosunu Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -ie
@@ -448,7 +454,7 @@ UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
 RX packets:4486 errors:0 dropped:0 overruns:0 frame:0
 TX packets:4077 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:1000
-RX bytes:2720253 &lt;strong&gt;(&lt;/strong&gt;2.5 MiB&lt;strong&gt;)&lt;/strong&gt;  TX bytes:1161745 &lt;strong&gt;(&lt;/strong&gt;1.1 MiB&lt;strong&gt;)&lt;/strong&gt;
+RX bytes:2720253 ***(*** 2.5 MiB***)***   TX bytes:1161745 ***(*** 1.1 MiB***)*** 
 Interrupt:18 Base address:0x2000
 lo        Link encap:Local Loopback
 inet addr:127.0.0.1  Mask:255.0.0.0
@@ -457,10 +463,10 @@ UP LOOPBACK RUNNING  MTU:16436  Metric:1
 RX packets:8 errors:0 dropped:0 overruns:0 frame:0
 TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:0
-RX bytes:480 &lt;strong&gt;(&lt;/strong&gt;480.0 b&lt;strong&gt;)&lt;/strong&gt;  TX bytes:480 &lt;strong&gt;(&lt;/strong&gt;480.0 b&lt;strong&gt;)&lt;/strong&gt;
+RX bytes:480 ***(*** 480.0 b***)***   TX bytes:480 ***(*** 480.0 b***)*** 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;16-ipv4-ve-ipv6-bilgilerini-görüntüleme&#34;&gt;16. IPv4 ve IPv6 Bilgilerini Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;16-ipv4-ve-ipv6-bilgilerini-görüntüleme&#34;&gt;16. IPv4 ve IPv6 Bilgilerini Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -g
@@ -477,12 +483,12 @@ eth0            1      ff02::1:ffb4:da21
 eth0            1      ff02::1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;17-netstat-bilgilerini-sürekli-görüntüleme&#34;&gt;17. Netstat Bilgilerini Sürekli Görüntüleme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;17-netstat-bilgilerini-sürekli-görüntüleme&#34;&gt;17. Netstat Bilgilerini Sürekli Görüntüleme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -c
 
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;w/o servers&lt;strong&gt;)&lt;/strong&gt;
+Active Internet connections ***(*** w/o servers***)*** 
 Proto Recv-Q Send-Q Local Address               Foreign Address             State
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg007.shr.prod.s:36944 TIME_WAIT
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg010.shr.prod.s:42110 TIME_WAIT
@@ -494,70 +500,70 @@ tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg007.shr.prod.s:36998 TIME_WAIT
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;18-desteklenmeyen-ve-yapılandırılmamış-adres-türleri&#34;&gt;18. Desteklenmeyen ve Yapılandırılmamış Adres Türleri&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;18-desteklenmeyen-ve-yapılandırılmamış-adres-türleri&#34;&gt;18. Desteklenmeyen ve Yapılandırılmamış Adres Türleri
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat --verbose
 
-netstat: no support &lt;strong&gt;for&lt;/strong&gt; `AF IPX&#39; on this system.
+netstat: no support ***for***  `AF IPX&#39; on this system.
 netstat: no support for `AF AX25&#39; on this system.
-netstat: no support &lt;strong&gt;for&lt;/strong&gt; `AF X25&#39; on this system.
+netstat: no support ***for***  `AF X25&#39; on this system.
 netstat: no support for `AF NETROM&#39; on this system.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;19-dinleme-yapan-programları-listelemek&#34;&gt;19. Dinleme Yapan Programları Listelemek&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;19-dinleme-yapan-programları-listelemek&#34;&gt;19. Dinleme Yapan Programları Listelemek
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -ap | grep http
 
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:http                      &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN      9056/httpd
-tcp        0      0 &lt;strong&gt;*&lt;/strong&gt;:https                     &lt;strong&gt;*&lt;/strong&gt;:&lt;strong&gt;*&lt;/strong&gt;                         LISTEN      9056/httpd
+tcp        0      0 ******* :http                      ******* :*******                          LISTEN      9056/httpd
+tcp        0      0 ******* :https                     ******* :*******                          LISTEN      9056/httpd
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg008.shr.prod.s:35248 TIME_WAIT   -
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg007.shr.prod.s:57783 TIME_WAIT   -
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg007.shr.prod.s:57769 TIME_WAIT   -
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg008.shr.prod.s:35270 TIME_WAIT   -
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg009.shr.prod.s:41637 TIME_WAIT   -
 tcp        0      0 &lt;a href=&#34;http://tecmint.com/&#34;&gt;tecmint.com&lt;/a&gt;:http   sg2nlhg009.shr.prod.s:41614 TIME_WAIT   -
-unix  2      &lt;strong&gt;[&lt;/strong&gt; &lt;strong&gt;]&lt;/strong&gt;         STREAM     CONNECTED     88586726 10394/httpd
+unix  2      ***[***  ***]***          STREAM     CONNECTED     88586726 10394/httpd
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;20-sistem-özetini-ve-açık-udp--tcp-portları-görme&#34;&gt;20. Sistem Özetini ve Açık UDP / TCP Portları Görme&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;20-sistem-özetini-ve-açık-udp--tcp-portları-görme&#34;&gt;20. Sistem Özetini ve Açık UDP / TCP Portları Görme
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;netstat -tulpn
 
 netstat -tulpn
-&lt;strong&gt;(&lt;/strong&gt;Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.&lt;strong&gt;)&lt;/strong&gt;
-Active Internet connections &lt;strong&gt;(&lt;/strong&gt;only servers&lt;strong&gt;)&lt;/strong&gt;
+***(*** Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.***)*** 
+Active Internet connections ***(*** only servers***)*** 
 Proto Recv-Q Send-Q Local Address           Foreign Address   State       PID/Program name
-tcp        0      0 127.0.1.1:53            0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;         LISTEN      -               
-tcp        0      0 127.0.0.1:631           0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;         LISTEN      -               
-tcp        0      0 0.0.0.0:445             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;         LISTEN      -               
-tcp        0      0 0.0.0.0:139             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;         LISTEN      -               
-tcp6       0      0 :::445                  :::&lt;strong&gt;*&lt;/strong&gt;              LISTEN      -               
-tcp6       0      0 :::139                  :::&lt;strong&gt;*&lt;/strong&gt;              LISTEN      -               
-udp        0      0 0.0.0.0:631             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:5353            0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     8706/chrome --disab
-udp        0      0 0.0.0.0:5353            0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:36671           0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 127.0.1.1:53            0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:68              0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 192.168.1.2:123         0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 127.0.0.1:123           0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:123             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 192.168.1.255:137       0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 192.168.1.2:137         0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:137             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 192.168.1.255:138       0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 192.168.1.2:138         0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:138             0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp        0      0 0.0.0.0:45208           0.0.0.0:&lt;strong&gt;*&lt;/strong&gt;                     -               
-udp6       0      0 :::5353                 :::&lt;strong&gt;*&lt;/strong&gt;                          8706/chrome --disab
-udp6       0      0 :::5353                 :::&lt;strong&gt;*&lt;/strong&gt;                          -               
-udp6       0      0 :::59535                :::&lt;strong&gt;*&lt;/strong&gt;                          -               
-udp6       0      0 fe80::7c42:9730:43f:123 :::&lt;strong&gt;*&lt;/strong&gt;                          -               
-udp6       0      0 :::123                  :::&lt;strong&gt;*&lt;/strong&gt;                          -               &lt;/code&gt;&lt;/pre&gt;
+tcp        0      0 127.0.1.1:53            0.0.0.0:*******          LISTEN      -               
+tcp        0      0 127.0.0.1:631           0.0.0.0:*******          LISTEN      -               
+tcp        0      0 0.0.0.0:445             0.0.0.0:*******          LISTEN      -               
+tcp        0      0 0.0.0.0:139             0.0.0.0:*******          LISTEN      -               
+tcp6       0      0 :::445                  :::*******               LISTEN      -               
+tcp6       0      0 :::139                  :::*******               LISTEN      -               
+udp        0      0 0.0.0.0:631             0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:5353            0.0.0.0:*******                      8706/chrome --disab
+udp        0      0 0.0.0.0:5353            0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:36671           0.0.0.0:*******                      -               
+udp        0      0 127.0.1.1:53            0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:68              0.0.0.0:*******                      -               
+udp        0      0 192.168.1.2:123         0.0.0.0:*******                      -               
+udp        0      0 127.0.0.1:123           0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:123             0.0.0.0:*******                      -               
+udp        0      0 192.168.1.255:137       0.0.0.0:*******                      -               
+udp        0      0 192.168.1.2:137         0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:137             0.0.0.0:*******                      -               
+udp        0      0 192.168.1.255:138       0.0.0.0:*******                      -               
+udp        0      0 192.168.1.2:138         0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:138             0.0.0.0:*******                      -               
+udp        0      0 0.0.0.0:45208           0.0.0.0:*******                      -               
+udp6       0      0 :::5353                 :::*******                           8706/chrome --disab
+udp6       0      0 :::5353                 :::*******                           -               
+udp6       0      0 :::59535                :::*******                           -               
+udp6       0      0 fe80::7c42:9730:43f:123 :::*******                           -               
+udp6       0      0 :::123                  :::*******                           -               &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
       </description>
     </item>
@@ -573,25 +579,25 @@ udp6       0      0 :::123                  :::&lt;strong&gt;*&lt;/strong&gt;   
         
         &lt;p&gt;Linux sisteminizde yüklü olan ve kullanma ihtiyacı hissetmediğiniz gereksiz servisleri kaldırmak akıllıca bir yaklaşımdır. Ekran okuyucuyu kullanmıyorsanız bu yazıda anlatılanları kullanarak sisteminizden kaldırabilirsiniz.&lt;/p&gt;
 &lt;p&gt;speech-dispatcher olarak geçen ekran okuyucu, görme problemi olanlar için geliştirlmiş bir ekran okuma yardımcısıdır. Sisteminizden kaldırmak için aşağıdaki komutları kullanabilirsiniz. Verilen başlıklardan istediğiniz birini seçip uygulamak yeterlidir.&lt;/p&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;sadece-speech-dispatcher-kaldırma&#34;&gt;Sadece speech-dispatcher kaldırma&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;sadece-speech-dispatcher-kaldırma&#34;&gt;Sadece speech-dispatcher kaldırma
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get remove speech-dispatcher
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispatcher-ve-bağımlılıkları-kaldırma&#34;&gt;speech-dispatcher ve bağımlılıkları kaldırma&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispatcher-ve-bağımlılıkları-kaldırma&#34;&gt;speech-dispatcher ve bağımlılıkları kaldırma
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get remove --auto-remove speech-dispatcher
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispacher-ve-ayarlarını-kaldırma&#34;&gt;speech dispacher ve ayarlarını kaldırma&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispacher-ve-ayarlarını-kaldırma&#34;&gt;speech dispacher ve ayarlarını kaldırma
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get purge speech-dispatcher
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispacther-ayarlarını-ve-bağımlılıklarını-kaldırma&#34;&gt;speech-dispacther, ayarlarını ve bağımlılıklarını kaldırma&lt;/h2&gt;
+&lt;h2 class=&#34;wp-block-heading&#34; id=&#34;speech-dispacther-ayarlarını-ve-bağımlılıklarını-kaldırma&#34;&gt;speech-dispacther, ayarlarını ve bağımlılıklarını kaldırma
 &lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get purge --auto-remove speech-dispatcher&lt;/code&gt;&lt;/pre&gt;
@@ -609,11 +615,11 @@ udp6       0      0 :::123                  :::&lt;strong&gt;*&lt;/strong&gt;   
         
         
         &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.&lt;/p&gt;
-&lt;h2&gt;free&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;freeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#freeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
+&lt;h2&gt;free&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;free&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#free&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;free&amp;nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.&lt;/p&gt;
+&lt;p&gt;free&amp;nbsp; komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;free
               total        used        free      shared  buff/cache   available
@@ -622,11 +628,11 @@ Swap:             0           0           0
 &lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.&lt;/p&gt;
-&lt;h2&gt;cat /proc/meminfo&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cat-procmeminfoh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#cat-procmeminfoh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.
+&lt;h2&gt;cat /proc/meminfo&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cat-procmeminfo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cat-procmeminfo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;meminfo&amp;nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&amp;nbsp;free&amp;nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.&lt;/p&gt;
+&lt;p&gt;meminfo&amp;nbsp; dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde&amp;nbsp;free&amp;nbsp; komutundan daha detaylı bilgileri elde etmek mümkündür.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;cat /proc/meminfo
 MemTotal:        8061380 kB
@@ -676,10 +682,10 @@ DirectMap4k:      282052 kB
 DirectMap2M:     4847616 kB
 DirectMap1G:     3145728 kB&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;vmstat -s&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vmstat--sh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#vmstat--sh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;vmstat -s&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;vmstat--s&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vmstat--s&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;vmstat -s&amp;nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&amp;nbsp;vmstat --help&amp;nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.&lt;/p&gt;
+&lt;p&gt;vmstat -s&amp;nbsp; komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için&amp;nbsp;vmstat --help&amp;nbsp; komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;vmstat -s
       8061380 K total memory
@@ -709,14 +715,14 @@ DirectMap1G:     3145728 kB&lt;/pre&gt;
    1483203820 boot time
          6796 forks&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;dmidecode -t 16&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dmidecode--t-16h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#dmidecode--t-16h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;dmidecode -t 16&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dmidecode--t-16&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dmidecode--t-16&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;dmidecode -t 16&amp;nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&amp;nbsp;dmidecode&amp;nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&amp;nbsp;Maksimum Capacity: 32 GB&amp;nbsp; ve&amp;nbsp;Number of Devices : 4&amp;nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.&lt;/p&gt;
+&lt;p&gt;dmidecode -t 16&amp;nbsp; komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir.&amp;nbsp;dmidecode&amp;nbsp; doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda,&amp;nbsp;Maksimum Capacity: 32 GB&amp;nbsp; ve&amp;nbsp;Number of Devices : 4&amp;nbsp; görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Soru&lt;/strong&gt;: O halde komut çıktısı neden böyle gösteriyor?&lt;/p&gt;
+&lt;p&gt;***Soru*** : O halde komut çıktısı neden böyle gösteriyor?
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Cevap&lt;/strong&gt;: Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.&lt;/p&gt;
+&lt;p&gt;***Cevap*** : Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo dmidecode -t 16
 # dmidecode 3.0
@@ -732,12 +738,12 @@ Maximum Capacity: 32 GB
 Error Information Handle: Not Provided
 Number Of Devices: 4&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;dmidecode -t 17&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dmidecode--t-17h2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#dmidecode--t-17h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;dmidecode -t 17&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dmidecode--t-17&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dmidecode--t-17&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&amp;nbsp;Type: DDR3&amp;nbsp; bölümü RAM tipi,&amp;nbsp;Speed: 1600 Mhz&amp;nbsp;ise RAM hızını göstermektedir.&lt;/p&gt;
+&lt;p&gt;Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2&#39;de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir.&amp;nbsp;Type: DDR3&amp;nbsp; bölümü RAM tipi,&amp;nbsp;Speed: 1600 Mhz&amp;nbsp;ise RAM hızını göstermektedir.
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.&lt;/p&gt;
+&lt;p&gt;BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo dmidecode -t 17
 
@@ -829,10 +835,10 @@ Memory Device
 	Rank: Unknown
 	Configured Clock Speed: Unknown&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;lshw&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lshwh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#lshwh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;lshw&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lshw&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lshw&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Donanımınız ile ilgili detaylı bilgilerin tamamını&amp;nbsp;lshw&amp;nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&amp;nbsp;memory&amp;nbsp; bilgileri gösterilmiştir.&amp;nbsp;sudo lshw&amp;nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.&lt;/p&gt;
+&lt;p&gt;Donanımınız ile ilgili detaylı bilgilerin tamamını&amp;nbsp;lshw&amp;nbsp; komutu ile elde edebilirsiniz. Aşağıdaki örnekte,&amp;nbsp;memory&amp;nbsp; bilgileri gösterilmiştir.&amp;nbsp;sudo lshw&amp;nbsp; komutuyla tüm bilgileri elde etmeniz mümkündür.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo lshw -short -C memory
 
@@ -849,7 +855,7 @@ H/W path         Device      Class          Description
 /0/b/3                       memory         DIMM [empty]&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.&lt;/p&gt;
+&lt;p&gt;Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.
 
       </description>
     </item>
@@ -863,8 +869,8 @@ H/W path         Device      Class          Description
       <description>
         
         
-        &lt;p&gt;Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar. Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız. Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın yolunu açıklamak istiyorum.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux filtreleme komutları yardımıyla listeliyoruz ve en büyük 5 dosyayı ekrana yazdırıyoruz.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar. Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız. Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın yolunu açıklamak istiyorum.&lt;/p&gt;
+&lt;p&gt;Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux filtreleme komutları yardımıyla listeliyoruz ve en büyük 5 dosyayı ekrana yazdırıyoruz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;find . -xdev -ls | sort -n -k 7 | tail -5
 
@@ -876,16 +882,16 @@ H/W path         Device      Class          Description
 
 &lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;Açıklama:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açıklamah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c3%a7%c4%b1klamah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;find .  : Yukarıda vermiş olduğumuz komut, bulunduğumuz klasörü ve alt klasörlerindeki tüm dosyaları arar. Komutu verdiğiniz yer önemlidir. Bu örnekte, komut home klasöründe ve sudo yetkisi olmadan verilmiştir. Baş tarafına sudo yetkisi eklediğinizde sonuçlar değişebilir.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-xdev  : find komutua ait bu parametre, sadece üzerinde çalıştığımız diskte işlem yapılmasını sağlar. Sisteminize bağlı diğer disk bölümlerinin aranmasını engeller.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-ls  : Sonuçların listelenmesini sağlar.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;sort  : Elde ettiğimiz sonuçlara sıralama işlemi yapmamızı sağlar.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-n  : Sıralamanın sayılar değerlerle yapılacağını belirtir.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-k 7  : Sıralamanın, bir kriter girilerek yapılmasını sağlar. Bizim örneğimizde 7. sütun olan boyut (size) sütunu kullanılmıştır.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;tail -5  : Sort komutu ile küçükten büyüğe yapılan sıralamanın sonucunda, en büyük dosyalar listenin en sonunda yer alacaktır. tail -5  komutu ile en son 5 satırın ekranda görüntülenmesi sağlanır. İsterseniz, tail -10  şeklinde değiştirerek en büyük 10 dosyayı da bulabilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Size sadece, bulunan dosyaların hangilerinin yedekleme diskine aktarılacağını, hangilerinin sileceğine karar vermek kalıyor. Sizin de kullandığınız faydalı komutlar varsa, bize bildirebilirsiniz. Burada açıklamaları ile birlikte yayınlayabiliriz.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;Açıklama:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açıklama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c3%a7%c4%b1klama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;find .  : Yukarıda vermiş olduğumuz komut, bulunduğumuz klasörü ve alt klasörlerindeki tüm dosyaları arar. Komutu verdiğiniz yer önemlidir. Bu örnekte, komut home klasöründe ve sudo yetkisi olmadan verilmiştir. Baş tarafına sudo yetkisi eklediğinizde sonuçlar değişebilir.&lt;/p&gt;
+&lt;p&gt;-xdev  : find komutua ait bu parametre, sadece üzerinde çalıştığımız diskte işlem yapılmasını sağlar. Sisteminize bağlı diğer disk bölümlerinin aranmasını engeller.&lt;/p&gt;
+&lt;p&gt;-ls  : Sonuçların listelenmesini sağlar.&lt;/p&gt;
+&lt;p&gt;sort  : Elde ettiğimiz sonuçlara sıralama işlemi yapmamızı sağlar.&lt;/p&gt;
+&lt;p&gt;-n  : Sıralamanın sayılar değerlerle yapılacağını belirtir.&lt;/p&gt;
+&lt;p&gt;-k 7  : Sıralamanın, bir kriter girilerek yapılmasını sağlar. Bizim örneğimizde 7. sütun olan boyut (size) sütunu kullanılmıştır.&lt;/p&gt;
+&lt;p&gt;tail -5  : Sort komutu ile küçükten büyüğe yapılan sıralamanın sonucunda, en büyük dosyalar listenin en sonunda yer alacaktır. tail -5  komutu ile en son 5 satırın ekranda görüntülenmesi sağlanır. İsterseniz, tail -10  şeklinde değiştirerek en büyük 10 dosyayı da bulabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Size sadece, bulunan dosyaların hangilerinin yedekleme diskine aktarılacağını, hangilerinin sileceğine karar vermek kalıyor. Sizin de kullandığınız faydalı komutlar varsa, bize bildirebilirsiniz. Burada açıklamaları ile birlikte yayınlayabiliriz.&lt;/p&gt;
 
       </description>
     </item>
@@ -900,26 +906,26 @@ H/W path         Device      Class          Description
         
         
         &lt;p&gt;Bilgisayarınızı kullanırken ihtiyacınız olan bir çok programı indirir, yükler ve denersiniz. Bunların bir kısmı yüklü olarak dururken, bir kısmını da beğenmez ve kaldırırsınız. Yüklü olan programların bir kısmını da çok sık kullanmazsınız. Örneğin, bilgisayarınıza yüklediğiniz Virtualbox Sanallaştırma yazılımını her zaman kullanmıyor olabilirsiniz. Şunu bilmelisiniz ki, bu tür programlar bilgisayarın açılışında başlatılmak üzere bir takım servisleri çalıştırırlar. Sisteminizi açtığınızda kullanmayacağınız bu servisler, açılışta otomatik yüklendiklerinden başlangıç süresini arttırırlar. Sistemde arka planda çalıştıkları için kaynak israfına da yol açarlar. Bu yazıda sizlere, systemd , systemd-analyze  ve systemctl  kullanarak bilgisayarınızın açılışında başlamasını istemediğiniz servisleri nasıl iptal edebileceğinizi açıklayacağım.&lt;/p&gt;
-&lt;h2&gt;Sisteminizde systemd Var mı?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizde-systemd-var-mıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sisteminizde-systemd-var-m%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
-&lt;p&gt;Bu yazıda anlatılanlar, &lt;strong&gt;systemd&lt;/strong&gt; sistem yönetim altyapısını kullandığından, bilmiyorsanız öncelikle işletim sisteminizin systemd kullanıp kullanmadığını tespit etmelisiniz. Bunu, aşağıdaki komut ile yapabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Sisteminizde systemd Var mı?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizde-systemd-var-mı&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sisteminizde-systemd-var-m%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Bu yazıda anlatılanlar, &lt;em&gt;&lt;strong&gt;systemd&lt;/strong&gt;&lt;/em&gt;  sistem yönetim altyapısını kullandığından, bilmiyorsanız öncelikle işletim sisteminizin systemd kullanıp kullanmadığını tespit etmelisiniz. Bunu, aşağıdaki komut ile yapabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd --version
 systemd 229
 +PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
 &lt;p&gt;Yukarıdaki örneğe benzer bir çıktı aldıysanız, sisteminizde systemd var demektir. Bu çıktıdan; sürüm numarasının 229 olduğu görebiliriz.&lt;/p&gt;
-&lt;h2&gt;Sisteminizin Boot Süresi Ne kadar?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizin-boot-süresi-ne-kadarh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#sisteminizin-boot-s%c3%bcresi-ne-kadarh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Sisteminizin Boot Süresi Ne kadar?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;sisteminizin-boot-süresi-ne-kadar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sisteminizin-boot-s%c3%bcresi-ne-kadar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bilgisayarınız açılmaya başladığında arka planda öncelikle kernel, ardından kullanıcı düzeyi servisler yüklenir. Bu sürenin kısaca özetini aşağıdaki komutu kullanarak görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd-analyze
 
 Startup finished in 4.891s (kernel) + 38.844s (userspace) = 43.735s&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;p&gt;Yukarıdaki çıktıda görülüyor ki sistem topam &lt;strong&gt;43&lt;/strong&gt; saniyede açılmış. Bu sürenin ~4.8 saniyesini kernel yükleme işlemi kullanırken, ~38.8 saniyesi kullanıcı düzeyi uygulamalar için harcanmış. Peki bu uygulamaların hepsini, gerçekten kullanıyor musunuz veya ihtiyacınız var mı? Bunlardan bazıları açılışı geciktirirken aynı zamanda arka planda sistem kaynağı kullanıyor olabilirler.&lt;/p&gt;
-&lt;h2&gt;Açılış Raporunu Detaylı İnceleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılış-raporunu-detaylı-incelemeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9f-raporunu-detayl%c4%b1-incelemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;p&gt;Yukarıdaki çıktıda görülüyor ki sistem topam &lt;em&gt;&lt;strong&gt;43&lt;/strong&gt;&lt;/em&gt;  saniyede açılmış. Bu sürenin ~4.8 saniyesini kernel yükleme işlemi kullanırken, ~38.8 saniyesi kullanıcı düzeyi uygulamalar için harcanmış. Peki bu uygulamaların hepsini, gerçekten kullanıyor musunuz veya ihtiyacınız var mı? Bunlardan bazıları açılışı geciktirirken aynı zamanda arka planda sistem kaynağı kullanıyor olabilirler.&lt;/p&gt;
+&lt;h2&gt;Açılış Raporunu Detaylı İnceleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılış-raporunu-detaylı-inceleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9f-raporunu-detayl%c4%b1-inceleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bir önceki başlıkta verdiğimiz komut çıktısı, özet raporu verirken, şimdi kullanacağımız komut ise detaylı olarak servis düzeyinde zaman miktarını bize verecektir.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;systemd-analyze blame
@@ -953,8 +959,8 @@ Startup finished in 4.891s (kernel) + 38.844s (userspace) = 43.735s&lt;/pre&gt;
 &lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
 &lt;p&gt;Çıktıyı incelediğimizde, en fazla sürenin 16.351s mysql.service tarafından kullanıldığını görmekteyiz. Bu servis veya listede bulunan diğer servislerden hangilerine sürekli ihtiyaç duymuyorsak, açılışta yüklenmesini iptal edebiliriz. Dikkat etmelisiniz ki, sistemden tamamen kaldırmıyoruz. Sadece başlangıçta yüklenmesini devre dışı bırakıyoruz.&lt;/p&gt;
-&lt;h2&gt;Açılışta Yüklenen Bir Servisi Devre Dışı Bırakma&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılışta-yüklenen-bir-servisi-devre-dışı-bırakmah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9fta-y%c3%bcklenen-bir-servisi-devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rakmah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Açılışta Yüklenen Bir Servisi Devre Dışı Bırakma&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;açılışta-yüklenen-bir-servisi-devre-dışı-bırakma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#a%c3%a7%c4%b1l%c4%b1%c5%9fta-y%c3%bcklenen-bir-servisi-devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rakma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Farz edelim ki mysql.service bu servisin açılışta başlamasına ihtiyacımız yok. İstediğimiz zaman kendimiz başlatabiliriz veya ileride tekrar başlangıçta yüklenecekler listesine ekleyebiliriz. Bunun için systemctl  tarafından sağlanan enabled  - disabled  anahtarlarını kullanabiliriz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl disable mysql.service
@@ -966,19 +972,17 @@ Executing /lib/systemd/systemd-sysv-install disable mysql&lt;/pre&gt;
 &lt;blockquote class=&#34;wp-block-quote&#34;&gt;  Bazı servisler, doğrudan sistemin kararlılığı ile ilgilidir. Tam olarak ne işe yaradığını araştırmadan, bir servisi iptal etmemenizi tavsiye ediyorum. 
  &lt;/blockquote&gt;
 &lt;!-- /wp:quote --&gt;
-&lt;h2&gt;Devre Dışı Bırakılan Servisi Başlatma&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;devre-dışı-bırakılan-servisi-başlatmah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rak%c4%b1lan-servisi-ba%c5%9flatmah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Devre Dışı Bırakılan Servisi Başlatma&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;devre-dışı-bırakılan-servisi-başlatma&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#devre-d%c4%b1%c5%9f%c4%b1-b%c4%b1rak%c4%b1lan-servisi-ba%c5%9flatma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Sisteminizi kullandığınız esnada, açılış esnasında yüklenmesini iptal ettiğiniz sistemi başlatmak isteyebilirsiniz. Bu durum 2 farklı şekilde ortay çıkabilir.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Bilgisayarınızda çalışırken servisi hemen başlatmak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgisayarınızda-çalışırken-servisi-hemen-başlatmakh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#bilgisayar%c4%b1n%c4%b1zda-%c3%a7al%c4%b1%c5%9f%c4%b1rken-servisi-hemen-ba%c5%9flatmakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Bilgisayarınızda çalışırken servisi hemen başlatmak&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bilgisayarınızda-çalışırken-servisi-hemen-başlatmak&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bilgisayar%c4%b1n%c4%b1zda-%c3%a7al%c4%b1%c5%9f%c4%b1rken-servisi-hemen-ba%c5%9flatmak&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Yukarıdaki örnekte gördüğümüz mysql.service  servisini hemen kullanmak için başlatmak isteyebilirsiniz. Bu durumda systemctl  tarafından sağlanan start  anahtarını kullanmanız yeterli.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl start&amp;nbsp;mysql.service&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Servisi tekrar açılış esnasında başlatmak&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;servisi-tekrar-açılış-esnasında-başlatmakh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#servisi-tekrar-a%c3%a7%c4%b1l%c4%b1%c5%9f-esnas%c4%b1nda-ba%c5%9flatmakh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Servisi tekrar açılış esnasında başlatmak&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;servisi-tekrar-açılış-esnasında-başlatmak&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#servisi-tekrar-a%c3%a7%c4%b1l%c4%b1%c5%9f-esnas%c4%b1nda-ba%c5%9flatmak&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Önceden iptal ettiğiniz servise çok sık ihtiyaç duymaya başladınız. Üzerinde çalıştığınız proje farklılaştı ve açılışta başlamasını istiyorsunuz. O zaman, aşağıdaki komut örneğindeki yöntemle servisi tekrar başlangıçta yüklenecek şekilde ayarlayabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl enable mysql.service
@@ -986,8 +990,8 @@ Executing /lib/systemd/systemd-sysv-install disable mysql&lt;/pre&gt;
 Synchronizing state of mysql.service with SysV init with /lib/systemd/systemd-sysv-install...
 Executing /lib/systemd/systemd-sysv-install enable mysql&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;Son Notlar&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-notlarh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#son-notlarh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Son Notlar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;son-notlar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#son-notlar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;İptal ettiğiniz servisin adını unutabilirsiniz. İptal ederken kullandığınız sistemin adını tekrar bulmak için, sisteminizde bulunan servislerin listesini ve durumunu aşağıdaki komut yardımıyla görebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo systemctl list-unit-files --type=service
@@ -1145,19 +1149,19 @@ brltty-udev.service                        static&lt;/pre&gt;
       <description>
         
         
-         &lt;p&gt;Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.&lt;/p&gt;
-&lt;h2&gt;1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1adım-açık-sistemde-hangi-kernel-sürümü-kullanımdah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mdah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.&lt;/p&gt;
+         &lt;p&gt;Sistem güncellemeleriyle yüklenen yeni kernel dosyalarıyla birlikte eski dosyalarınızda /boot klasöründe tutulmaya devam eder. Bir süre sonra dosyaların çokluğundan veya boyutundan dolayı sisteminizi açarken &#34;kernel panic&#34; hatası almaya başlayabilirsiniz. Aşağıda vereceğim birkaç komut ile sisteminizde gerekli bakım ve temizlik işlemini yapmanız mümkün.
+&lt;h2&gt;1.Adım: Açık Sistemde Hangi Kernel Sürümü Kullanımda?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1adım-açık-sistemde-hangi-kernel-sürümü-kullanımda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1ad%c4%b1m-a%c3%a7%c4%b1k-sistemde-hangi-kernel-s%c3%bcr%c3%bcm%c3%bc-kullan%c4%b1mda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Öncelikle şu an açık olan sisteminizde hangi kernelin kullanıldığını öğrenelim. Bunun için aşağıdaki komutu kullanmalısınız.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;uname -a
 Linux portlinux-X550JX 4.4.0-53-generic #74-Ubuntu SMP Fri Dec 2 15:59:10 UTC 2016 
 x86_64 x86_64 x86_64 GNU/Linux&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
- &lt;p&gt;Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz&amp;nbsp;4.4.0-53-generic&amp;nbsp;&amp;nbsp;sürümünü kullanıyor.&lt;/p&gt;
-&lt;h2&gt;2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2adım-sistemimizde-kaç-tane-eski-kernel-sürümü-varh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-varh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz.&lt;/p&gt;
+ &lt;p&gt;Komut sonucunda elde ettiğimiz çıktıya göre sistemimiz&amp;nbsp;4.4.0-53-generic&amp;nbsp;&amp;nbsp;sürümünü kullanıyor.
+&lt;h2&gt;2.Adım: Sistemimizde Kaç Tane Eski Kernel Sürümü Var?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2adım-sistemimizde-kaç-tane-eski-kernel-sürümü-var&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2ad%c4%b1m-sistemimizde-ka%c3%a7-tane-eski-kernel-s%c3%bcr%c3%bcm%c3%bc-var&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Sistemde halen yüklü bulunan eski kernel dosyalarını görüntülemek için aşağıdaki komutu kullanıyoruz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;dpkg --get-selections | grep linux-image-
 
@@ -1175,23 +1179,29 @@ linux-image-extra-4.4.0-42-generic install
 linux-image-extra-4.4.0-43-generic install
 linux-image-extra-4.4.0-53-generic install&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
- &lt;p&gt;Bu çıktılara göre, sistemde 4.4.0-&lt;strong&gt;21&lt;/strong&gt;,&amp;nbsp;4.4.0-&lt;strong&gt;31&lt;/strong&gt;,&amp;nbsp;4.4.0-&lt;strong&gt;34&lt;/strong&gt;,&amp;nbsp;4.4.0-&lt;strong&gt;38&lt;/strong&gt;,&amp;nbsp;4.4.0-&lt;strong&gt;42&lt;/strong&gt;,&amp;nbsp;4.4.0-&lt;strong&gt;43&lt;/strong&gt;,&amp;nbsp;&lt;strong&gt;4.4.0-53&lt;/strong&gt;&amp;nbsp;sürümleri bulunuyor.&lt;/p&gt;
-&lt;h2&gt;3.Adım: Hangi Dosyalar Kaldırılabilir?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3adım-hangi-dosyalar-kaldırılabilirh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilirh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Bu çıktılara göre, sistemde 4.4.0-***21*** ,&amp;nbsp;4.4.0-***31*** ,&amp;nbsp;4.4.0-***34*** ,&amp;nbsp;4.4.0-***38*** ,&amp;nbsp;4.4.0-***42*** ,&amp;nbsp;4.4.0-***43*** ,&amp;nbsp;***4.4.0-53*** &amp;nbsp;sürümleri bulunuyor.
+&lt;h2&gt;3.Adım: Hangi Dosyalar Kaldırılabilir?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3adım-hangi-dosyalar-kaldırılabilir&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3ad%c4%b1m-hangi-dosyalar-kald%c4%b1r%c4%b1labilir&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
-&lt;li&gt;Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle &lt;strong&gt;kaldırılmamalıdır&lt;/strong&gt;.&lt;/li&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
+&lt;li&gt;Yukarıda kırmızı ile yazılı sürüm, halen sistemin kullandığı sürüm olduğundan kesinlikle &lt;em&gt;&lt;strong&gt;kaldırılmamalıdır&lt;/strong&gt;&lt;/em&gt; .&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-&lt;strong&gt;42&lt;/strong&gt;, 4.4.0-&lt;strong&gt;43&lt;/strong&gt;) &lt;strong&gt;kaldırmamanızı&lt;/strong&gt; tavsiye ediyorum.&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Halen kullanılan sürüm ile ilgili bir hata olduğunda, hatayı düzeltebilmek için bilgisayarınızı eski kernel dosyası ile açmak gerekebilir. Bu yüzden, en yeni sürümden önce çalıştığını bildiğiniz önceki 2 sürümü (4.4.0-&lt;em&gt;&lt;strong&gt;42&lt;/strong&gt;&lt;/em&gt; , 4.4.0-&lt;em&gt;&lt;strong&gt;43&lt;/strong&gt;&lt;/em&gt; ) &lt;em&gt;&lt;strong&gt;kaldırmamanızı&lt;/strong&gt;&lt;/em&gt;  tavsiye ediyorum.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
-&lt;li&gt;Bu durumda (4.4.0-&lt;strong&gt;21&lt;/strong&gt;, 4.4.0-&lt;strong&gt;31&lt;/strong&gt;, 4.4.0-&lt;strong&gt;34&lt;/strong&gt;, 4.4.0-&lt;strong&gt;38&lt;/strong&gt;) sürümlerinin tamamını veya istediklerinizi &lt;strong&gt;kaldırabilirsiniz&lt;/strong&gt;.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Bu durumda (4.4.0-&lt;em&gt;&lt;strong&gt;21&lt;/strong&gt;&lt;/em&gt; , 4.4.0-&lt;em&gt;&lt;strong&gt;31&lt;/strong&gt;&lt;/em&gt; , 4.4.0-&lt;em&gt;&lt;strong&gt;34&lt;/strong&gt;&lt;/em&gt; , 4.4.0-&lt;em&gt;&lt;strong&gt;38&lt;/strong&gt;&lt;/em&gt; ) sürümlerinin tamamını veya istediklerinizi &lt;em&gt;&lt;strong&gt;kaldırabilirsiniz&lt;/strong&gt;&lt;/em&gt; .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;h2&gt;4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-adım-eskinbspkernel-sürümlerini-sistemden-kaldırma-nasıl-yapılırh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1rh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Aşağıda görmüş olduğunuz&amp;nbsp;sudo apt purge linux-image-&amp;nbsp; ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-&lt;strong&gt;21&amp;nbsp;&lt;/strong&gt;sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır.&lt;/p&gt;
+&lt;h2&gt;4. Adım: Eski Kernel Sürümlerini Sistemden Kaldırma Nasıl Yapılır?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-adım-eskinbspkernel-sürümlerini-sistemden-kaldırma-nasıl-yapılır&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-ad%c4%b1m-eskinbspkernel-s%c3%bcr%c3%bcmlerini-sistemden-kald%c4%b1rma-nas%c4%b1l-yap%c4%b1l%c4%b1r&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Aşağıda görmüş olduğunuz&amp;nbsp;sudo apt purge linux-image-&amp;nbsp; ifadesinden sonra, sisteminizden kaldırmak istediğiniz sürüm numarasını, 2.Adımda elde ettiğiniz çıktıdan kontrol ederek girin. Biz bu örnekte4.4.0-***21&amp;nbsp;*** sürümünü kaldırıyoruz. Enter tuşuna bastığınızda apt size kaldırılacak paketleri gösterecektir. Acele etmeden kontrol edin ve Evet seçeneği ile devam edin. İşlem bir miktar uzun sürdüğü için takıldığı düşüncesine kapılmayın. Bekleyin, tamamlanacaktır.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo apt purge&amp;nbsp;linux-image-4.4.0-21-generic
 Reading package lists... Done
@@ -1208,9 +1218,9 @@ Removing linux-image-extra-4.4.0-21-generic (4.4.0-21.37) ...
 ...
 Progress: [ 28%] [#############################.........................................]&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;5.Adım: Son İşlemler&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5adım-son-işlemlerh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#5ad%c4%b1m-son-i%c5%9flemlerh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi&amp;nbsp;linux-image-4.4.0-21-generic&amp;nbsp;&amp;nbsp;artık sistemde görünmüyor.&lt;/p&gt;
+&lt;h2&gt;5.Adım: Son İşlemler&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;5adım-son-işlemler&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5ad%c4%b1m-son-i%c5%9flemler&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Sistemde bulunan kernel sürümlerini tekrar kontrol edelim. Aşağıda gördüğünüz gibi&amp;nbsp;linux-image-4.4.0-21-generic&amp;nbsp;&amp;nbsp;artık sistemde görünmüyor.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;dpkg --get-selections | grep linux-image-
 
@@ -1226,13 +1236,13 @@ linux-image-extra-4.4.0-42-generic install
 linux-image-extra-4.4.0-43-generic install
 linux-image-extra-4.4.0-53-generic install&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;6.Adım: GRUB Başlatıcıyı Güncelleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6adım-grub-başlatıcıyı-güncellemeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncellemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım.&lt;/p&gt;
+&lt;h2&gt;6.Adım: GRUB Başlatıcıyı Güncelleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;6adım-grub-başlatıcıyı-güncelleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6ad%c4%b1m-grub-ba%c5%9flat%c4%b1c%c4%b1y%c4%b1-g%c3%bcncelleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Gerçekleştirdiğimiz kaldırma işleminden sonra, kaldırılan kernel sürümünün GRUB başlatıcıda bulunan İleri Düzey Seçenekler listesinden de kaldırılması için GRUB güncellemesi yapalım.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo update-grub2&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
- &lt;p&gt;Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.&lt;/p&gt;
+ &lt;p&gt;Yukarıda anlatılan adımları, kaldırmak istediğiniz diğer sürümler için de uygulayabilirsiniz.
 
       </description>
     </item>
@@ -1246,35 +1256,35 @@ linux-image-extra-4.4.0-53-generic install&lt;/pre&gt;
       <description>
         
         
-         &lt;p&gt;Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.&lt;/p&gt;
- &lt;p&gt;1. pngquant&lt;/p&gt;
- &lt;p&gt;2. jpegoptim&lt;/p&gt;
-&lt;h2&gt;pngquant kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pngquant-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pngquant-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.&lt;/p&gt;
+         &lt;p&gt;Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
+ &lt;p&gt;1. pngquant
+ &lt;p&gt;2. jpegoptim
+&lt;h2&gt;pngquant kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pngquant-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pngquant-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo apt install pngquant&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;pngquant kullanım:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pngquant-kullanımh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pngquant-kullan%c4%b1mh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&amp;nbsp;-o&amp;nbsp;&amp;nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.&lt;/p&gt;
+&lt;h2&gt;pngquant kullanım:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pngquant-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pngquant-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz&amp;nbsp;-o&amp;nbsp;&amp;nbsp;parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir.
 
 pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir.&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
- &lt;p&gt;--force&amp;nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.&lt;/p&gt;
- &lt;p&gt;--skip-if-larger&amp;nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.&lt;/p&gt;
- &lt;p&gt;Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.&lt;/p&gt;
-&lt;h2&gt;Jpegoptim Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;jpegoptim-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#jpegoptim-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.&lt;/p&gt;
+ &lt;p&gt;--force&amp;nbsp; parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.
+ &lt;p&gt;--skip-if-larger&amp;nbsp; parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.
+ &lt;p&gt;Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.
+&lt;h2&gt;Jpegoptim Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;jpegoptim-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#jpegoptim-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo apt install jpegoptim&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;jpegoptim kullanım:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;jpegoptim-kullanımh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#jpegoptim-kullan%c4%b1mh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
- &lt;p&gt;jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.&lt;/p&gt;
+&lt;h2&gt;jpegoptim kullanım:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;jpegoptim-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#jpegoptim-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+ &lt;p&gt;jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;jpegoptim resim.jpg
 
@@ -1303,153 +1313,225 @@ penguin.jpg 53x75 24bit N JFIF [OK] 709 --&amp;gt; 314 bytes (55.71%), optimized
         &lt;p&gt;Linux Ev kullanıcıları veya sistem yöneticileri tarafından kullanılan veya kullanılması gereken önemli tarama programlarından bir tanesi de lynis isimli programdır. Bu yazıda, sistemimizin çalışmasını sağlayan servislerin ve hizmetlerin entegre ve hatasız çalışıp çalışmadığını kontrol etmek amacıyla kullanılan &amp;ldquo;lynis&amp;rdquo; aracının kurulum ve kullanımı açıklanacaktır.&lt;/p&gt;
 &lt;p&gt;Program, GPLv3 lisansıyla dağıtılmaktadır ve komut satırından çalışmaktadır. Şirketler için ticari sürümü de bulunan programın, tüm sisteminizi tarayıp sonuç raporunu &amp;lsquo;&amp;rsquo;.log&amp;rsquo;&amp;rsquo; dosyası şeklinde bilgisayarınıza kaydettiğini belirtelim. Bulunan HATA ve TAVSİYELER konusunda, ticari sürümde doğrudan çözümler sunulduğu halde ücretsiz sürümde hataları, &amp;lsquo;&amp;rsquo;log&amp;rsquo;&amp;rsquo; dosyası içerisinden kendiniz bulup, gerekli tedbiri de kendiniz almak durumundasınız. Ancak bunu yapmak o kadar da zor değil.&lt;/p&gt;
 &lt;p&gt;Aşağıdaki komutlarda bu yazının hazırlandığı tarihte en güncel sürüm olan &amp;ldquo;2.3.4&amp;rdquo; kullanılmıştır. Siz, en son sürümü bu &lt;a href=&#34;https://cisofy.com/downloads/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;bağlantıdan&lt;/a&gt; kontrol ederek komutlara &amp;lsquo;&amp;lsquo;&amp;lsquo;2.3.4&amp;rsquo;&amp;rsquo;&amp;rsquo; yerine en son sürümün numarasını yazabilirsiniz.&lt;/p&gt;
-&lt;h2&gt;Lynis Kurulum&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#lynis-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Lynis Kurulum&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Aşağıdaki komutlar yardımıyla sıkıştırılmış arşiv dosyasını /tmp klasörüne indiriyoruz. İndirilen dosyayı /usr/local klasörüne açıyoruz. Arşiv açıldığında /usr/local klasörünün içerisine /lynis isimli klasörü oluşturacaktır.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;cd /tmp
 wget &lt;a href=&#34;https://cisofy.com/files/lynis-2.3.4.tar.gz&#34;&gt;https://cisofy.com/files/lynis-2.3.4.tar.gz&lt;/a&gt;
 sudo tar -xvf lynis-2.3.4.tar.gz -C /usr/local/&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;Lynis Tarama&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-taramah2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#lynis-taramah2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Lynis Tarama&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-tarama&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-tarama&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Açılan dosyaların olduğu klasöre girerek lynis programını kurulum yapmadan doğrudan çalıştırabilirsiniz. Çalıştırabilmek için sistemde yönetici yetkilerine sahip olmalısınız.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;cd /usr/local/lynis
 sudo ./lynis -c -Q&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;p&gt;&lt;strong&gt;-c seçeneği&lt;/strong&gt;: (&amp;ndash;check-all) tüm kontrolleri yapmayı sağlar&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;-Q seçeneği&lt;/strong&gt;: Her adımda kullanıcıdan onaya gerek olmadan otomatik devam etmesini sağlar.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;-c seçeneği&lt;/strong&gt;&lt;/em&gt; : (&amp;ndash;check-all) tüm kontrolleri yapmayı sağlar&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;-Q seçeneği&lt;/strong&gt;&lt;/em&gt; : Her adımda kullanıcıdan onaya gerek olmadan otomatik devam etmesini sağlar.&lt;/p&gt;
 &lt;p&gt;Tarama aşağıdaki tüm başlıklarda sisteminizi kontrol edecektir.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Sistem Araçları: Sistemdeki ikilik (binary) dosyaları&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Boot ve Servisler: Açılış yükleyicisi, başlangıç hizmetleri&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Çekirdek: Çalışma seviyesi (run level), yüklenmiş modüller, çekirdek ayarları&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Hafıza ve İşlemler: zombi işlemler, G/Ç bekleyen işlemler&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Kullanıcılar, Gruplar, Yetkilendirme: Grup Kimlikleri, sudo Yetkilileri, Parola süreleri&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Kabuklar, Terminaller&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Dosya Sistemleri: Bağlanma noktaları, /tmp dosyaları, kök (root) dosya sistemi&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Veri Depolarıo: usb-kayıt yerleri, firewire ohci&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;NFS&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılımlar: isim servileri: DNS arama, BIND&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Portlar ve Paketler: İstismar edilebilir, zaafiyet içeren/Yükseltilebilir paketler&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Ağ: İsim sunucularınız, sözde ağ arayüzleri, bağlantılar&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazıcılar: cups ayarları&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: e-posta ve mesajlaşma&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: firewall: iptables, pf&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: Web sunucu: Apache, nginx&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;SSH Desteği: SSH Ayarları&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;SNMP Desteği&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Varitabanları: MySQL root parolası&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;LDAP Servisleri&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: php: php seçenekleri&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Squid Desteği&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Log Dosyaları: syslog yönetici, log klasörleri&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Güvenli Olmayan Servisler: inetd&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Banner ve Kimlik Doğrulama&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Zamanlanmış Görevler: crontab/cronjob, atd&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Hesap Yönetimi: sysstat data, auditd&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Zaman ve Senkronizasyon: ntp yöneticisi&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Kriptolama: SSL sertifika zaman aşımı&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Sanallaştırma&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Güvenlik Çerçeve Hizmetleri: AppArmor, SELinux, grsecurity durumu&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: Dosya bütünlüğü&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Yazılım: Zararlı Tarayıcılar&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Ev Klasörleri: Kabuk geçmiş dosyaları&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;p&gt;Tarama sona erdiğinde tüm sonuçlar oluşturulan &amp;lsquo;&amp;rsquo;&lt;em&gt;/var/log/lynis.log&lt;/em&gt;&amp;rsquo;&amp;rsquo; dosyasına kaydedilir.&lt;/p&gt;
-&lt;h2&gt;Lynis Tarama Sonuçlarını İnceleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-tarama-sonuçlarını-incelemeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#lynis-tarama-sonu%c3%a7lar%c4%b1n%c4%b1-incelemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Lynis Tarama Sonuçlarını İnceleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lynis-tarama-sonuçlarını-inceleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lynis-tarama-sonu%c3%a7lar%c4%b1n%c4%b1-inceleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Tarama ve testlerin sonucunda oluşturulan sonuçların yazıldığı /var/log/lynis.log dosyasını incelememiz gerekmektedir. İşte bu işlem ticari sürümde otomatik yapılırken biz elle yapacağız. Bunun için rapor dosyasını 3 şekilde inceleme imkanımız var;&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Tüm dosyayı inceleme&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Önemli İkazları İnceleme&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!-- /wp:list-item --&gt;
 &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Tavsiyeleri İnceleme&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Tüm dosyayı inceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tüm-dosyayı-incelemeh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#t%c3%bcm-dosyay%c4%b1-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Tüm dosyayı inceleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tüm-dosyayı-inceleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#t%c3%bcm-dosyay%c4%b1-inceleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Bol zamanınız varsa ve tüm analizleri incelemek isterseniz, aşağıdaki komut raporu terminale yazdıracaktır. Terminalin geriye dönük tarihsel geçmiş satır ayarlarının oldukça büyük olması gerektiğini hatırlatalım. Aksi takdirde raporun ilk satırları hafızada kalmayabilir.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo cat /var/log/lynis.log&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Önemli İkazları İnceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;önemli-ikazları-incelemeh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%c3%b6nemli-ikazlar%c4%b1-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Önemli İkazları İnceleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;önemli-ikazları-inceleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%b6nemli-ikazlar%c4%b1-inceleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Rapor dosyasında önemli ikazlar &amp;ldquo;Warning&amp;rdquo; ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok işe yarayacaktır.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo grep Warning /var/log/lynis.log&lt;/pre&gt;
@@ -1459,9 +1541,8 @@ sudo ./lynis -c -Q&lt;/pre&gt;
 [18:51:33] Warning: Couldn&#39;t find 2 responsive nameservers [NETW-2705]&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
 &lt;p&gt;Uç birim çıktısında görüldüğü gibi, bu sistemde PKGS-7392 ve NETW-2705 kodlu iki adet önemli ve ilgilenilmesi gereken konu bulunmaktadır.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Tavsiyeleri İnceleme&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiyeleri-incelemeh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#tavsiyeleri-incelemeh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Tavsiyeleri İnceleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tavsiyeleri-inceleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tavsiyeleri-inceleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Rapor dosyasında Tavsiye edilen konular &amp;ldquo;Suggestion&amp;rdquo; ikazı ile kaydedilir. Dolayısıyla bizim, bu ifadeyi filtreleyerek ilgili satırları ekrana yazdırmamız gerekmektedir. Bunun için aşağıdaki komut çok kullanılabilir. Komutun hemen altında uçbirim çıktısı da görülmektedir.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo grep Suggestion /var/log/lynis.log
@@ -1471,8 +1552,8 @@ sudo ./lynis -c -Q&lt;/pre&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;20:02:44] Suggestion: Default umask in /etc/login.defs could be more strict like 027 [AUTH-9328]  
 20:02:44] Suggestion: Default umask in /etc/init.d/rc could be more strict like 027 [AUTH-9328]&lt;/pre&gt;
 &lt;!-- /wp:preformatted --&gt;
-&lt;h2&gt;Yardım Bilgilerini Görüntüleme&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yardım-bilgilerini-görüntülemeh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#yard%c4%b1m-bilgilerini-g%c3%b6r%c3%bcnt%c3%bclemeh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Yardım Bilgilerini Görüntüleme&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yardım-bilgilerini-görüntüleme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#yard%c4%b1m-bilgilerini-g%c3%b6r%c3%bcnt%c3%bcleme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Aşağıdaki komutlar ile özet ve detaylı yardım sayfalarını görüntüleyebilirsiniz.&lt;/p&gt;
 &lt;!-- wp:preformatted --&gt;
 &lt;pre class=&#34;wp-block-preformatted&#34;&gt;sudo ./lynis --help
@@ -1498,26 +1579,26 @@ sudo ./lynis show options&lt;/pre&gt;
 &lt;p&gt;Bu duruma bir miktar engel olmak için, bilgisayarınızın ekranından yayılan renklerin içerisinde bulunan mavi ışık oranını azaltmalısınız. Bu amaçla geliştirilen Redshift programını mutlaka denemelisiniz. Program, saate ve bulunduğunuz konumda güneşin durumuna göre ekran renklerinin sıcaklığını otomatik olarak ayarlayarak rahat bir deneyim yaşamanızı sağlıyor.&lt;/p&gt;
 &lt;p&gt;Ekran sıcaklığını Kelvin (3500K-6500K vb.) cinsinden değerlerle ayarlayan programı ilk günlerde biraz garip bulabilirsiniz. Ekranın kırmızı bir ton aldığını fark edip şaşırmayın. Kendinize biraz zaman tanıyın ve yavaş yavaş alışmaya çalışın. Bir kaç gün sonra artık gözlerinizin eskisi gibi kurumadığını ve bilgisayar başından ayrılınca daha kısa sürede uyuyabildiğinizi göreceksiniz.&lt;/p&gt;
 &lt;p&gt;Redshift programı, neredeyse bütün Linux dağıtımlarının paket depolarında bulunmaktadır. Kurulum için aşağıdaki komutları kullanmanız yeterli.&lt;/p&gt;
-&lt;h2&gt;Redshift Ubuntu - Debian Kurulum&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshift-ubuntu---debian-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#redshift-ubuntu---debian-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Redshift Ubuntu - Debian Kurulum&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshift-ubuntu---debian-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#redshift-ubuntu---debian-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt install redshift redshift-gtk&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Redshift CentOS - Fedora Kurulum&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspcentos---fedora-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#redshiftnbspcentos---fedora-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Redshift CentOS - Fedora Kurulum&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspcentos---fedora-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#redshiftnbspcentos---fedora-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo yum install redshift gtk-redshift&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Redshift Yardım&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspyardımh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#redshiftnbspyard%c4%b1mh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Redshift Yardım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspyardım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#redshiftnbspyard%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Redshift programını, komut satırından kontrol etmeniz de mümkün. Aşağıdaki yardım komutu ile açıklamaları okuyabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;redshift -h&amp;nbsp;
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Redshift Ayarlar Dosyası&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspayarlar-dosyasıh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#redshiftnbspayarlar-dosyas%c4%b1h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Redshift Ayarlar Dosyası&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;redshiftnbspayarlar-dosyası&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#redshiftnbspayarlar-dosyas%c4%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;p&gt;Programın ayarlarının bulunduğu dosyayı, ~/.config/redshift.conf adresinde bulabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;; Global settings for redshift
@@ -1591,36 +1672,44 @@ screen=1&lt;/code&gt;&lt;/pre&gt;
         
         &lt;p&gt;Bir Linux bilgisayarınız var ve onun ekranını başka bilgisayarlarla paylaşmak mı istiyorsunuz. Bunun için bilgisayarınıza masaüstü paylaşım sunucusu kurmanız gerekir. Bu yazıda, Linux Mint ve benzeri Ubuntu tabanlı dağıtımlarda VNC Server nasıl kurulur sorusuna bakacağız.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Varsayılan VNC server olan Vino’yu kaldıralım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get -y remove vino
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;X11vnc Kuralım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo apt-get -y install x11vnc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Parolamızı kaydedeceğimiz dosyayı oluşturalım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo mkdir /etc/x11vnc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Şifrelenmiş şekilde tutulacak parolamızı oluşturup kaydedelim:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo x11vnc --storepasswd /etc/x11vnc/vncpwd
@@ -1628,52 +1717,62 @@ screen=1&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;Bu adımda size yeni parolanızı sorulacaktır. Ekranda gösterien adımları uygulayın ve kaydedin.&lt;/p&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;x11vnc Sunucu için systemd unit dosyasını oluşturalım. Bunun için aşağıdaki komutu kullanarak metin editörümüzle, service dosyasını açın.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo xed /lib/systemd/system/x11vnc.service
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Aşağıdaki kodları dosyanın(x11vnc.service) içerisine buradan kopyalayıp yapıştırın ve kaydedin.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;strong&gt;[&lt;/strong&gt;Unit]
-Description&lt;strong&gt;=&lt;/strong&gt;Start x11vnc at startup.
-After&lt;strong&gt;=&lt;/strong&gt;multi-user.target
-&lt;strong&gt;[&lt;/strong&gt;Service]
-Type&lt;strong&gt;=&lt;/strong&gt;simple
-ExecStart&lt;strong&gt;=&lt;/strong&gt;/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
-&lt;strong&gt;[&lt;/strong&gt;Install]
-WantedBy&lt;strong&gt;=&lt;/strong&gt;multi-user.target
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;***[*** Unit]
+Description***=*** Start x11vnc at startup.
+After***=*** multi-user.target
+***[*** Service]
+Type***=*** simple
+ExecStart***=*** /usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+***[*** Install]
+WantedBy***=*** multi-user.target
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Systemd servislerini tekrar başlatın.&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl daemon-reload
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Bilgisayarın başlangıcında, VNC sunucunun otomatik başlamasını istiyorsak, aşağıdaki komut ile aktif hale getiriyoruz:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl enable x11vnc.service
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;!-- wp:list --&gt;
-&lt;ul&gt;&lt;!-- wp:list-item --&gt;
+ &lt;!-- wp:list-item --&gt;
+&lt;ul&gt;
 &lt;li&gt;Son adımda sunucuyu başlatalım:&lt;/li&gt;
-&lt;!-- /wp:list-item --&gt;&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;!-- /wp:list-item --&gt; 
 &lt;!-- /wp:list --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;sudo systemctl start x11vnc.service&lt;/code&gt;&lt;/pre&gt;
@@ -1692,8 +1791,8 @@ WantedBy&lt;strong&gt;=&lt;/strong&gt;multi-user.target
         
         &lt;p&gt;Linux denildiğinde herhalde ilk akla gelen konulardan bir tanesi de komut satırı ve terminaldir. Komut satırında yazdığınız ifadeleri işleyen kabuk (shell) ise farklı sürümleriyle kullanıcılara sunulur. Bash, Dash, Zsh, Csh bunlara örnek olarak verilebilir. Bu yazımızda size Fish kabuk programının kurulumunu açıklayacağız.&lt;/p&gt;
 &lt;p&gt;Fish, kullanıcı dostu olarak bilinen bir kabuk programıdır. Komut tamamlama, komut içerisinde farklı formları farklı renklendirme özelliklerine sahiptir. Komut yazımı esnasında çeşitli tavsiyeler sunar ve bunları, o an bulunduğunuz klasörü de dikkate alarak yapar. Önerileri yön tuşlarıyla kolayca seçebilirsiniz. Yardım komutlarını otomatik olarak web tarayıcıda açması da kullanım kolaylığı açısında vurgulanması gereken özelliklerinden birisidir.&lt;/p&gt;
-&lt;h2&gt;Debian için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#debian-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Debian için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;debian-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#debian-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Debian 8 ----------------
 echo &#39;deb &lt;a href=&#34;http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/&#34;&gt;http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/&lt;/a&gt; /&#39; &amp;gt;&amp;gt; /etc/apt/sources.list.d/fish.list
@@ -1705,8 +1804,8 @@ echo &#39;deb &lt;a href=&#34;http://download.opensuse.org/repositories/shells:/
 apt-get update
 apt-get install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Ubuntu için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ubuntu-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#ubuntu-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Ubuntu için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ubuntu-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ubuntu-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Ubuntu ----------------
 sudo add-apt-repository ppa:fish-shell/nightly-master
@@ -1715,8 +1814,8 @@ sudo apt-get install python-software-properties
 sudo apt-get update
 sudo apt-get install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;Fedora için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fedora-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#fedora-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;Fedora için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;fedora-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#fedora-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- Fedora 22 ----------------
 cd /etc/yum.repos.d/
@@ -1733,8 +1832,8 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/Fedora_20/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;CentOS için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;centos-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#centos-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;CentOS için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;centos-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#centos-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- CentOS 7 ----------------
 cd /etc/yum.repos.d/
@@ -1746,8 +1845,8 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/CentOS_6/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;h2&gt;RHEL için Fish Kurulum:&lt;/h2&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rhel-için-fish-kurulumh2&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#rhel-i%c3%a7in-fish-kurulumh2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
+&lt;h2&gt;RHEL için Fish Kurulum:&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rhel-için-fish-kurulum&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rhel-i%c3%a7in-fish-kurulum&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;---------------- RHEL 7 ----------------
 cd /etc/yum.repos.d/
@@ -1759,7 +1858,7 @@ cd /etc/yum.repos.d/
 wget &lt;a href=&#34;http://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHEL-6/shells:fish:release:2.repo&#34;&gt;http://download.opensuse.org/repositories/shells:fish:release:2/RedHat_RHEL-6/shells:fish:release:2.repo&lt;/a&gt;
 yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;&lt;strong&gt;Başlatmak için&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Başlatmak için&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
@@ -1777,8 +1876,8 @@ yum install fish&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Bazen, terminalde çalışırken (bash, SSH vb.) ISP tarafından Modeminize atanan herkese açık (public) IP adresini öğrenmeniz gerekebilir. Bu IP adresine, bir programda kullanmak veya ayarlama yapmak için ihtiyaç duyabilirsiniz. Yazımızda, komut satırından IP adresimizi nasıl öğrenebileceğimizi göreceğiz. Dikkat: Modem ile bilgisayarınız arasındaki dahili ağınızdaki IP adresinizden bahsetmiyoruz. Onu ifconfig komutu ile öğrenebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Komut satırından IP adresini öğrenmek için bir çok yöntem bulunuyor sırayla görelim.&lt;/p&gt;
 &lt;!-- wp:group {&#34;layout&#34;:{&#34;type&#34;:&#34;constrained&#34;}} --&gt;
 &lt;div class=&#34;wp-block-group&#34;&gt;&lt;!-- wp:group {&#34;layout&#34;:{&#34;type&#34;:&#34;constrained&#34;}} --&gt;
 &lt;div class=&#34;wp-block-group&#34;&gt;&lt;!-- wp:code --&gt;
@@ -1795,12 +1894,12 @@ yum install fish&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;&lt;/div&gt;
 &lt;!-- /wp:group --&gt;&lt;/div&gt;
 &lt;!-- /wp:group --&gt;
-&lt;p&gt;Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu yöntemde IP adresiniz bir shell değişkeni içerisine kayıt edilir. Daha sonra ihtiyaç duyduğunuzda kullanabilirsiniz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;myip=&#34;$(dig +short &lt;a href=&#34;http://myip.opendns.com/&#34;&gt;myip.opendns.com&lt;/a&gt; @&lt;a href=&#34;http://resolver1.opendns.com/&#34;&gt;resolver1.opendns.com&lt;/a&gt;)&#34;
 echo &#34;Açık IP adresim: ${myip}&#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.Taraf sitelerin yardımıyla da öğrenmeniz mümkün. Aşağıdaki komutlardan herhangi biri işinize yarayacaktır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;curl &lt;a href=&#34;http://icanhazip.com/&#34;&gt;icanhazip.com&lt;/a&gt;
 curl &lt;a href=&#34;http://ipecho.net/plain&#34;&gt;ipecho.net/plain&lt;/a&gt;
@@ -1820,23 +1919,23 @@ curl ifconfig.co&lt;/code&gt;&lt;/pre&gt;
         
         &lt;p&gt;Shell varsa çözüm mutlaka vardır, sadece siz henüz bilmiyor olabilirsiniz. Yaşadığınız bir problem veya size zor gelen bir işlemi, emin olun ki başkaları da yaşamıştır. Bunlardan bir kısmı, işin kolayını bulmuştur. Bir kısmı umursamamıştır. Bir kısmı da bu yazıda olduğu gibi öğrenip paylaşmak istemiştir.&lt;/p&gt;
 &lt;p&gt;Terminalde komutlar ile işlemlerinizi yaparken, nano editör ile bir dosya içerisinde (resolv.conf vb.) düzeltmeler yapmak istediniz. Bu durumda, komut satırına &lt;code&gt;sudo nano belgeninadı&lt;/code&gt; yazıp editöre girersiniz. Editöre girdiğinizde komut satırı artık kaybolmuştur. Çalıştığınız dosyada işiniz bitmediği halde, komut satırında da bir işlem yapmak isterseniz ne yapmalısınız?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.Yol:&lt;/strong&gt; Yeni bir TAB-sekme açarım.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.Yol:&lt;/strong&gt; Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.Yol:&lt;/strong&gt; Diğer&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;1.Yol:&lt;/strong&gt;&lt;/em&gt;  Yeni bir TAB-sekme açarım.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2.Yol:&lt;/strong&gt;&lt;/em&gt;  Ctrl+O ile belgeyi kaydeder, Ctrl+X ile çıkarım. Terminalde komutu yazar, çalıştırır ve sonra tekrar nano editörü açarım.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;3.Yol:&lt;/strong&gt;&lt;/em&gt;  Diğer&lt;/p&gt;
 &lt;p&gt;Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olabilir fakat ssh ile bağlandığınız uzak sunucuda bu mümkün olmayabilir. İkinci seçenek ise bilgisayarın icat edildiği ilk çağlardan kalma bir yöntem gibi görünüyor. Bu sorunu çözmenin kısa ve hızlı bir yolu mutlaka olmalı.&lt;/p&gt;
 &lt;p&gt;İşte böyle kaydet-çık-tekrar gir işlemlerinden sıkılan geliştiriciler Ctrl+Z tuş kombinasyonu ve fg komutunu geliştirmişler. Bu sayede, çalışan editörü, çıkmadan geri plana gönderip tekrar komut satırına geçmeniz mümkün. Hatta, komut satırından, editörde başka bir belge açmanız ve onu da arka plana göndermeniz mümkün. İki açık belgeyi arka plana gönderdikten sonra başka bir belge açıp onu da arka plana göndermeniz ……. diye hikaye böyle devam eder.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nasıl mı?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Nasıl mı?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;1.Adım: Önce deneme1.txt, deneme2.txt ve deneme3.txt dosyaları oluşturalım.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;strong&gt;&amp;gt;&lt;/strong&gt;~$ cd /tmp/
-/tmp$ echo &#39;Selam, ben 0 numaralı belgeyim&#39; &lt;strong&gt;&amp;gt;&lt;/strong&gt;deneme1.txt
-/tmp$ echo &#39;Selam, ben 2 numaralı belgeyim&#39; &lt;strong&gt;&amp;gt;&lt;/strong&gt;deneme2.txt
-/tmp$ echo &#39;Selam, ben 3 numaralı belgeyim&#39; &lt;strong&gt;&amp;gt;&lt;/strong&gt;deneme3.txt
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;***&amp;gt;*** ~$ cd /tmp/
+/tmp$ echo &#39;Selam, ben 0 numaralı belgeyim&#39; ***&amp;gt;*** deneme1.txt
+/tmp$ echo &#39;Selam, ben 2 numaralı belgeyim&#39; ***&amp;gt;*** deneme2.txt
+/tmp$ echo &#39;Selam, ben 3 numaralı belgeyim&#39; ***&amp;gt;*** deneme3.txt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;2.Adım: Nano editör ile belgeleri açıp Ctrl+z tuşları ile arka plana gönderiyoruz. Bu sayede belge kapatılmadan tekrar komut satırına ulaşmış oluyoruz.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;strong&gt;&amp;gt;&lt;/strong&gt;/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;***&amp;gt;*** /tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
 1 txt
 
 /tmp$ nano deneme2.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
@@ -1854,7 +1953,7 @@ curl ifconfig.co&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;3.Adım: Şimdi arka plana gönderdiğimiz bir görevi geri çağıralım. Bunun için &lt;code&gt;fg&lt;/code&gt; komutunu kullanıyoruz. Zaten ekran çıktılarında da shell bize nano’ya dönmek için fg kullanın diye söylüyor.&lt;/p&gt;
 &lt;p&gt;Komut satırına sadece fg yazarsanız en son kapatılan işleme geri dönersiniz. Ancak siz 1 numaralı işleme geri gitmek isteseniz fg 1 komutu vermeniz yeterli olacaktır.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
-&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;&lt;strong&gt;&amp;gt;&lt;/strong&gt;$ fg 1
+&lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;***&amp;gt;*** $ fg 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
 &lt;p&gt;&lt;em&gt;Düzenleme:(10.05.2017)&lt;/em&gt; Arka planda çalışan tüm işlemleri görmek isterseniz &lt;code&gt;jobs&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
@@ -1872,28 +1971,28 @@ curl ifconfig.co&lt;/code&gt;&lt;/pre&gt;
       <description>
         
         
-        &lt;p&gt;Linux ve diğer işletim sistemlerinde kullanılan silme işleminin, aslında dosyalarınızı gerçekten silmediğini biliyor musunuz? Konuyu bir miktar açıklamaya çalıştığımız bu yazı ilginizi çekebilir.&lt;/p&gt;&lt;/p&gt;
+        &lt;p&gt;Linux ve diğer işletim sistemlerinde kullanılan silme işleminin, aslında dosyalarınızı gerçekten silmediğini biliyor musunuz? Konuyu bir miktar açıklamaya çalıştığımız bu yazı ilginizi çekebilir.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Görsel arayüz kullanıyorsanız, Geri Dönüşüm Kutusu, Trash veya Çöp kutusu ifadelerini mutlaka bilirsiniz. Masaüstü ortamında dosyaya sağ tıklar ve SİL-Çöpe Gönder seçeneklerinden birisini seçersiniz.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Görsel arayüz kullanıyorsanız, Geri Dönüşüm Kutusu, Trash veya Çöp kutusu ifadelerini mutlaka bilirsiniz. Masaüstü ortamında dosyaya sağ tıklar ve SİL-Çöpe Gönder seçeneklerinden birisini seçersiniz.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;İşletim Sisteminize göre, dosyayı Çöp Kutusuna göndermeden silme (Shift+Delete) yöntemi de bulunuyor olabilir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;İşletim Sisteminize göre, dosyayı Çöp Kutusuna göndermeden silme (Shift+Delete) yöntemi de bulunuyor olabilir.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Komut satırından rm komutuyla silme işlemini de gerçekleştirebilirsiniz (Not:Komut satırında silme geri dönüşümsüz yapılır)&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Komut satırından rm komutuyla silme işlemini de gerçekleştirebilirsiniz (Not:Komut satırında silme geri dönüşümsüz yapılır)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Yukarıda bahsedilen yöntemlerden hangisini uygularsanız uygulayın, aslında dosyalarınız disk alanında yazılı oldukları yerlerden fiziksel olarak silinmezler. Sadece işletim sisteminizin yer bulma kataloğuna, o adresler boştur bilgisi kodlanır. Dolayısıyla üzerine yazılabilir hale gelir. Aslında sildiğinizi düşündüğünüz veriler, diskinizde halen duruyordur. Ne zamanki yeni bilgiler diske yazılmak için yer aranırsa, üzerine yazılır. Peki, gerçekten kalıcı silme nasıl yapılabilir?&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Bu işlemi yapabilmek için Linux ile kurulu olarak gelen shred komutu bulunmaktadır. Shred komutu, silme işlemini bizzat disk üzerindeki adreslere giderek yapar. Komut parametrelerine yazacağınız kurallara göre, dosyanın bulunduğu adreslere rastgele veri bitleri yazar. Dosyayı parçalar, karıştırır ve üzerine 10-20-30 veya daha fazla sayıda yeni rastgele veriler yazarak geri dönüştürülemez hale getirir. Bu işlemin normalde kullanılmamasının nedeni olarak da; diske gereğinden fazla veri yazdırdığınızda, diskin kullanım ömrünün kısalacağı varsayımı gösterilir.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;Şimdi bir örnekle shred komutunun bir dosyayı nasıl sildiğini görelim.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Yukarıda bahsedilen yöntemlerden hangisini uygularsanız uygulayın, aslında dosyalarınız disk alanında yazılı oldukları yerlerden fiziksel olarak silinmezler. Sadece işletim sisteminizin yer bulma kataloğuna, o adresler boştur bilgisi kodlanır. Dolayısıyla üzerine yazılabilir hale gelir. Aslında sildiğinizi düşündüğünüz veriler, diskinizde halen duruyordur. Ne zamanki yeni bilgiler diske yazılmak için yer aranırsa, üzerine yazılır. Peki, gerçekten kalıcı silme nasıl yapılabilir?&lt;/p&gt;
+&lt;p&gt;Bu işlemi yapabilmek için Linux ile kurulu olarak gelen shred komutu bulunmaktadır. Shred komutu, silme işlemini bizzat disk üzerindeki adreslere giderek yapar. Komut parametrelerine yazacağınız kurallara göre, dosyanın bulunduğu adreslere rastgele veri bitleri yazar. Dosyayı parçalar, karıştırır ve üzerine 10-20-30 veya daha fazla sayıda yeni rastgele veriler yazarak geri dönüştürülemez hale getirir. Bu işlemin normalde kullanılmamasının nedeni olarak da; diske gereğinden fazla veri yazdırdığınızda, diskin kullanım ömrünün kısalacağı varsayımı gösterilir.&lt;/p&gt;
+&lt;p&gt;Şimdi bir örnekle shred komutunun bir dosyayı nasıl sildiğini görelim.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;shred -vuf --iterations=32 systemctl.xls&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Örneğimizde, systemctl.xls isimli, 10752 byte uzunlukta bir dosya bulunmaktadır. Bu dosya için -v (verbose), -u (remove), -f (force) parametreleri verilmiş ve işlemin (iterations) 32 defa tekrar edilmesi istenmiştir. Burada;&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-v (verbose): Yapılan işlemin ekranda gösterilmesi istenmektedir.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-u (remove): Silme işleminden sonra dosyanın bölünmesi ve daha sonra rm komutuyla silinmesi istenmiştir. -u parametresi kullanılmaz ise dosyanın üzerine yazıldığı halde, dosya ismi sistemde görünmeye devam eder. Sadece içeriği okunamaz.&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;-f (force):Bu parametre ile dosya, silmeye karşı korumalı olsa bile yetki değiştirilmesine izin verilmektedir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Örneğimizde, systemctl.xls isimli, 10752 byte uzunlukta bir dosya bulunmaktadır. Bu dosya için -v (verbose), -u (remove), -f (force) parametreleri verilmiş ve işlemin (iterations) 32 defa tekrar edilmesi istenmiştir. Burada;&lt;/p&gt;
+&lt;p&gt;-v (verbose): Yapılan işlemin ekranda gösterilmesi istenmektedir.&lt;/p&gt;
+&lt;p&gt;-u (remove): Silme işleminden sonra dosyanın bölünmesi ve daha sonra rm komutuyla silinmesi istenmiştir. -u parametresi kullanılmaz ise dosyanın üzerine yazıldığı halde, dosya ismi sistemde görünmeye devam eder. Sadece içeriği okunamaz.&lt;/p&gt;
+&lt;p&gt;-f (force):Bu parametre ile dosya, silmeye karşı korumalı olsa bile yetki değiştirilmesine izin verilmektedir.&lt;/p&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;linux@user:~/Desktop/knife$ ls -al
 total 20
@@ -1949,7 +2048,7 @@ shred: 000: renamed to 00
 shred: 00: renamed to 0
 shred: systemctl.xls: removed&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;p&gt;Bu komut ve parametreler ile dosya diskinizden oldukça kalıcı olarak silinmiştir.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Bu komut ve parametreler ile dosya diskinizden oldukça kalıcı olarak silinmiştir.&lt;/p&gt;
 
       </description>
     </item>
@@ -1965,17 +2064,15 @@ shred: systemctl.xls: removed&lt;/code&gt;&lt;/pre&gt;
         
         &lt;p&gt;Bu yazımızda, Linux komut satırında sürekli kullandığımız uzun komutları, alias kullanarak kısaltmayı gösterdik. Ubuntu İşletim sistemi kullanarak göstermemize rağmen, diğer Linux dağıtımlarında da kullanılabilir.&lt;/p&gt;
 &lt;p&gt;Alias kullanımı, komut satırında yaptığınız işlemleri çok hızlı olarak hayata geçirmenize yardımcı olur. Bir kaç harfle tanımladığınız kısaltma, çok uzun bir komutu ekrana getirir ve derhal işleme koyar.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NOT&lt;/strong&gt;:Kalıcı kullanım esnasında ilk defa oluşturulan bash_aliases dosyasını, daha sonra tekrar oluşturmaya gerek yoktur. Home klasöründe ve gizli halde bulunan bu dosyayı herhangi bir editör ile açarak düzenleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOT&lt;/strong&gt;&lt;/em&gt; :Kalıcı kullanım esnasında ilk defa oluşturulan bash_aliases dosyasını, daha sonra tekrar oluşturmaya gerek yoktur. Home klasöründe ve gizli halde bulunan bu dosyayı herhangi bir editör ile açarak düzenleyebilirsiniz.&lt;/p&gt;
 &lt;p&gt;Bu videoda kullanılan komutları aşağıdan kopyalayıp kullanabilirsiniz.&lt;/p&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Alias geçici kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-geçici-kullanımh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#alias-ge%c3%a7ici-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Alias geçici kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-geçici-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alias-ge%c3%a7ici-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;alias lsa=&#39;ls -al&#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- /wp:code --&gt;
-&lt;!-- wp:heading {&#34;level&#34;:3} --&gt;
-&lt;h3&gt;Alias kalıcı kullanım&lt;/h3&gt;&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-kalıcı-kullanımh3&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#alias-kal%c4%b1c%c4%b1-kullan%c4%b1mh3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
+&lt;h3&gt;Alias kalıcı kullanım&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;alias-kalıcı-kullanım&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#alias-kal%c4%b1c%c4%b1-kullan%c4%b1m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;!-- /wp:heading --&gt;
 &lt;!-- wp:code --&gt;
 &lt;pre class=&#34;wp-block-code&#34;&gt;&lt;code lang=&#34;bash&#34; class=&#34;language-bash&#34;&gt;cd 
 touch .bash_aliases 

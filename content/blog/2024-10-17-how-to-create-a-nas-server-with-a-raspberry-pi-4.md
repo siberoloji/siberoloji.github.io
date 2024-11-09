@@ -28,8 +28,8 @@ url: /how-to-create-a-nas-server-with-a-raspberry-pi-4/
   In this detailed guide, we’ll walk you through the process of setting up a NAS server using a Raspberry Pi 4. By the end, you’ll have a fully functional NAS that can be accessed from various devices in your home or office. 
  
 
-<!-- wp:heading {"level":3} -->
- ### What is a NAS Server?</h3>
+
+ ### What is a NAS Server?
 <!-- /wp:heading -->
 
   A Network Attached Storage (NAS) server is a specialized device connected to a network, providing centralized data storage and file sharing across devices. With a NAS, multiple users can access and share data seamlessly over the network. NAS servers are commonly used for: 
@@ -37,27 +37,27 @@ url: /how-to-create-a-nas-server-with-a-raspberry-pi-4/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Media streaming</strong> (movies, music, photos)</li>
+- ***Media streaming***  (movies, music, photos) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Backup storage</strong> for computers and mobile devices</li>
+- ***Backup storage***  for computers and mobile devices 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>File sharing</strong> within a home or office network</li>
+- ***File sharing***  within a home or office network 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Remote access</strong> to files from anywhere in the world</li>
-<!-- /wp:list-item --></ul>
+- ***Remote access***  to files from anywhere in the world 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Creating a NAS server with a Raspberry Pi 4 is cost-effective, energy-efficient, and customizable, making it ideal for personal use or small-scale business environments. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Why Raspberry Pi 4?</h3>
+
+ ### Why Raspberry Pi 4?
 <!-- /wp:heading -->
 
   The Raspberry Pi 4 is an excellent candidate for a NAS server due to its improved hardware compared to earlier models. Key features include: 
@@ -65,27 +65,27 @@ url: /how-to-create-a-nas-server-with-a-raspberry-pi-4/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Quad-core 64-bit processor</strong>: Provides better performance for handling network traffic and file management.</li>
+- ***Quad-core 64-bit processor*** : Provides better performance for handling network traffic and file management. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Up to 8GB RAM</strong>: Ample memory for managing multiple users and file operations.</li>
+- ***Up to 8GB RAM*** : Ample memory for managing multiple users and file operations. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Gigabit Ethernet port</strong>: Enables fast and stable file transfer across your local network.</li>
+- ***Gigabit Ethernet port*** : Enables fast and stable file transfer across your local network. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>USB 3.0 ports</strong>: Essential for connecting external storage devices such as hard drives or SSDs, providing high-speed data access.</li>
-<!-- /wp:list-item --></ul>
+- ***USB 3.0 ports*** : Essential for connecting external storage devices such as hard drives or SSDs, providing high-speed data access. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   The Raspberry Pi 4 also runs on low power, which is ideal for a NAS server that might need to stay online 24/7. 
  
 
-<!-- wp:heading {"level":3} -->
- ### What You Will Need</h3>
+
+ ### What You Will Need
 <!-- /wp:heading -->
 
   Before starting, make sure you have the following components ready: 
@@ -93,65 +93,65 @@ url: /how-to-create-a-nas-server-with-a-raspberry-pi-4/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Raspberry Pi 4</strong> (4GB or 8GB model recommended for better performance)</li>
+- ***Raspberry Pi 4***  (4GB or 8GB model recommended for better performance) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>MicroSD card</strong> (16GB or more) for the Raspberry Pi’s operating system</li>
+- ***MicroSD card***  (16GB or more) for the Raspberry Pi’s operating system 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>External USB hard drive or SSD</strong> (to store your files)</li>
+- ***External USB hard drive or SSD***  (to store your files) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>USB 3.0 powered hub</strong> (optional but recommended if using multiple hard drives)</li>
+- ***USB 3.0 powered hub***  (optional but recommended if using multiple hard drives) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Raspberry Pi 4 power supply</strong> (official or high-quality third-party)</li>
+- ***Raspberry Pi 4 power supply***  (official or high-quality third-party) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Ethernet cable</strong> to connect the Pi to your router</li>
+- ***Ethernet cable***  to connect the Pi to your router 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Keyboard, mouse, and monitor</strong> for initial setup (optional if using headless configuration)</li>
+- ***Keyboard, mouse, and monitor***  for initial setup (optional if using headless configuration) 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Raspberry Pi OS</strong> (Debian-based, previously known as Raspbian)</li>
-<!-- /wp:list-item --></ol>
+- ***Raspberry Pi OS***  (Debian-based, previously known as Raspbian) 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   Now, let's proceed with the step-by-step process to create your NAS server. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Step 1: Set Up Raspberry Pi 4</h3>
+
+ ### Step 1: Set Up Raspberry Pi 4
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1.1 Install Raspberry Pi OS</h4>
+<h4 class="wp-block-heading">1.1 Install Raspberry Pi OS 
 <!-- /wp:heading -->
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Download the latest <strong>Raspberry Pi OS</strong> from the official Raspberry Pi website.</li>
+- Download the latest ***Raspberry Pi OS***  from the official Raspberry Pi website. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Use software like <strong>Raspberry Pi Imager</strong> or <strong>Balena Etcher</strong> to write the OS image to your MicroSD card.</li>
+- Use software like ***Raspberry Pi Imager***  or ***Balena Etcher***  to write the OS image to your MicroSD card. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Insert the MicroSD card into your Raspberry Pi 4 and power it on. If using a keyboard, mouse, and monitor, proceed with the standard installation. If setting up headless (without peripherals), you can enable <strong>SSH</strong> access before inserting the SD card by creating an empty file named <code>ssh</code> in the boot partition of the SD card.</li>
-<!-- /wp:list-item --></ol>
+- Insert the MicroSD card into your Raspberry Pi 4 and power it on. If using a keyboard, mouse, and monitor, proceed with the standard installation. If setting up headless (without peripherals), you can enable ***SSH***  access before inserting the SD card by creating an empty file named <code>ssh</code> in the boot partition of the SD card. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">1.2 Update and Upgrade</h4>
+<h4 class="wp-block-heading">1.2 Update and Upgrade 
 <!-- /wp:heading -->
 
   Once Raspberry Pi OS is installed and running, it’s important to update your system. Open a terminal window and enter the following commands: 
@@ -165,15 +165,15 @@ sudo apt upgrade</code></pre>
   This ensures that you have the latest software updates and security patches. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Step 2: Install and Configure Samba for File Sharing</h3>
+
+ ### Step 2: Install and Configure Samba for File Sharing
 <!-- /wp:heading -->
 
-  We will use <strong>Samba</strong> to enable file sharing across different devices. Samba is a popular software suite that allows file and print sharing between Linux and Windows devices. 
+  We will use ***Samba***  to enable file sharing across different devices. Samba is a popular software suite that allows file and print sharing between Linux and Windows devices. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2.1 Install Samba</h4>
+<h4 class="wp-block-heading">2.1 Install Samba 
 <!-- /wp:heading -->
 
   To install Samba, run the following command: 
@@ -184,7 +184,7 @@ sudo apt upgrade</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2.2 Create a Directory for File Storage</h4>
+<h4 class="wp-block-heading">2.2 Create a Directory for File Storage 
 <!-- /wp:heading -->
 
   Create a folder where you will store your shared files. For example, let’s create a folder named <code>shared</code> in the <code>/home/pi</code> directory: 
@@ -195,7 +195,7 @@ sudo apt upgrade</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2.3 Configure Samba</h4>
+<h4 class="wp-block-heading">2.3 Configure Samba 
 <!-- /wp:heading -->
 
   Next, we need to edit Samba’s configuration file to specify the settings for file sharing. Open the configuration file using a text editor: 
@@ -224,7 +224,7 @@ sudo apt upgrade</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">2.4 Create Samba User</h4>
+<h4 class="wp-block-heading">2.4 Create Samba User 
 <!-- /wp:heading -->
 
   To secure your NAS server, create a Samba user who can access the shared files. Use the following command to add a user (replace <code>pi</code> with your username if necessary): 
@@ -241,15 +241,15 @@ sudo apt upgrade</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl restart smbd</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### Step 3: Mount External Hard Drive</h3>
+
+ ### Step 3: Mount External Hard Drive
 <!-- /wp:heading -->
 
   A NAS server typically relies on an external hard drive to store files. Let’s mount your external drive to the Raspberry Pi 4. 
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3.1 Identify the External Drive</h4>
+<h4 class="wp-block-heading">3.1 Identify the External Drive 
 <!-- /wp:heading -->
 
   First, plug your external hard drive into one of the USB 3.0 ports on the Raspberry Pi 4. To find the drive’s name, run: 
@@ -263,7 +263,7 @@ sudo apt upgrade</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">3.2 Mount the Drive</h4>
+<h4 class="wp-block-heading">3.2 Mount the Drive 
 <!-- /wp:heading -->
 
   Create a mount point for the drive: 
@@ -297,15 +297,15 @@ sudo apt upgrade</code></pre>
   Save and exit. Now, your external drive will be mounted automatically on startup. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Step 4: Configure Access to NAS from Other Devices</h3>
+
+ ### Step 4: Configure Access to NAS from Other Devices
 <!-- /wp:heading -->
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">4.1 Access NAS from Windows</h4>
+<h4 class="wp-block-heading">4.1 Access NAS from Windows 
 <!-- /wp:heading -->
 
-  On a Windows computer, open <strong>File Explorer</strong> and type the Raspberry Pi’s IP address in the address bar, like so: 
+  On a Windows computer, open ***File Explorer***  and type the Raspberry Pi’s IP address in the address bar, like so: 
  
 
 <!-- wp:code -->
@@ -316,10 +316,10 @@ sudo apt upgrade</code></pre>
  
 
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading">4.2 Access NAS from macOS</h4>
+<h4 class="wp-block-heading">4.2 Access NAS from macOS 
 <!-- /wp:heading -->
 
-  On a macOS device, open <strong>Finder</strong>, press <code>Cmd + K</code>, and enter the Raspberry Pi’s IP address like this: 
+  On a macOS device, open ***Finder*** , press <code>Cmd + K</code>, and enter the Raspberry Pi’s IP address like this: 
  
 
 <!-- wp:code -->
@@ -329,15 +329,15 @@ sudo apt upgrade</code></pre>
   You’ll be asked for the Samba credentials, and once authenticated, the shared folder will be accessible. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Step 5: Optional - Set Up Remote Access</h3>
+
+ ### Step 5: Optional - Set Up Remote Access
 <!-- /wp:heading -->
 
-  If you want to access your NAS server remotely, outside your home or office network, you can set up remote access via <strong>OpenVPN</strong> or <strong>WireGuard</strong>. Additionally, <strong>dynamic DNS (DDNS)</strong> can help you manage your NAS server’s IP address if it changes periodically. 
+  If you want to access your NAS server remotely, outside your home or office network, you can set up remote access via ***OpenVPN***  or ***WireGuard*** . Additionally, ***dynamic DNS (DDNS)***  can help you manage your NAS server’s IP address if it changes periodically. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Step 6: Optimize Your NAS Setup</h3>
+
+ ### Step 6: Optimize Your NAS Setup
 <!-- /wp:heading -->
 
   While the basic setup is complete, there are several optimizations and improvements you can make: 
@@ -345,20 +345,20 @@ sudo apt upgrade</code></pre>
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Add more storage</strong>: Connect additional external drives to expand your storage capacity. You can even set up a RAID configuration for redundancy.</li>
+- ***Add more storage*** : Connect additional external drives to expand your storage capacity. You can even set up a RAID configuration for redundancy. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Automatic backups</strong>: Use software like <strong>rsync</strong> to automate backups to your NAS.</li>
+- ***Automatic backups*** : Use software like ***rsync***  to automate backups to your NAS. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Media streaming</strong>: Install media server software like <strong>Plex</strong> or <strong>Emby</strong> on your Raspberry Pi for streaming videos and music to your devices.</li>
-<!-- /wp:list-item --></ul>
+- ***Media streaming*** : Install media server software like ***Plex***  or ***Emby***  on your Raspberry Pi for streaming videos and music to your devices. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-<!-- wp:heading {"level":3} -->
- ### Conclusion</h3>
+
+ ### Conclusion
 <!-- /wp:heading -->
 
   Building a NAS server with a Raspberry Pi 4 is a cost-effective and powerful way to create a personal cloud for storing and sharing files across your home or office network. With Samba, you can easily access files from Windows, macOS, or Linux devices, making it a flexible solution for your storage needs. 

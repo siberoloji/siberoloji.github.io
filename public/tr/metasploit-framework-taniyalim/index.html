@@ -38,7 +38,7 @@ Mimari ve Kütüphaneler Metasploit, kısaca yukarıda gördüğünüz mimari di
 Rex Metasploit için en temel başlangıç kütüphanesidir. Soket, protokol, SSL, SMB, HTTP, XOR, Base64, Unicode işlemlerinin yapıldığı merkezdir.">
   <meta itemprop="datePublished" content="2017-05-11T02:13:00+00:00">
   <meta itemprop="dateModified" content="2017-05-11T02:13:00+00:00">
-  <meta itemprop="wordCount" content="674">
+  <meta itemprop="wordCount" content="680">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework,Siber Güvenlik">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Metasploit Framework Tanıyalım">
@@ -9697,16 +9697,16 @@ Rex Metasploit için en temel başlangıç kütüphanesidir. Soket, protokol, SS
 <figure class="wp-block-image size-full"><img src="https://www.siberoloji.com/assets/images/2024/06/msfarch.png" alt="" class="wp-image-1014" /></figure>
 <!-- /wp:image -->
 <p>Metasploit, kısaca yukarıda gördüğünüz mimari diyagramında gösterilen elemanlardan oluşmaktadır. Bu temel elemanları kısaca tanıyalım</p>
-<h2 class="wp-block-heading" id="rex">Rex</h2>
+<h2 class="wp-block-heading" id="rex">Rex
 <!-- /wp:heading -->
 <p>Metasploit için en temel başlangıç kütüphanesidir. Soket, protokol, SSL, SMB, HTTP, XOR, Base64, Unicode işlemlerinin yapıldığı merkezdir.</p>
-<h2 class="wp-block-heading" id="msfcore">Msf::Core</h2>
+<h2 class="wp-block-heading" id="msfcore">Msf::Core
 <!-- /wp:heading -->
 <p>Rex kütüphanesi üzerine bina edilen Core katmanı, dışarıdan modül ve eklentilerin de eklenmesini sağlayan ayarların yönetildiği kısımdır. Temel API sağlar. Çerçeve dediğimiz Framework burasıdır.</p>
-<h2 class="wp-block-heading" id="msfbase">Msf::Base</h2>
+<h2 class="wp-block-heading" id="msfbase">Msf::Base
 <!-- /wp:heading -->
 <p>Bu katman, temel API lerin daha da basitleştirildiği kısımdır.</p>
-<h2 class="wp-block-heading" id="msfgui">Msf::GUI</h2>
+<h2 class="wp-block-heading" id="msfgui">Msf::GUI
 <!-- /wp:heading -->
 <p>Kullanıcının gördüğü kısımdır. Arayüz ve komutların girişinin yapıldığı kısımlar burada bulunur.</p>
 <!-- wp:heading {"level":1} -->
@@ -9718,55 +9718,68 @@ Rex Metasploit için en temel başlangıç kütüphanesidir. Soket, protokol, SS
 <p>MSF dosya sistemi, kullanıcının işini kolaylaştıracak şekilde oluşturulmuştur ve klasörler anlamlıdır. Bir programı kullanacaksanız, dosya sistemini ve hangi klasörde neyin bulunduğunu bilmek başlangıç için çok önemlidir. Linux işletim sisteminize Metasploit Framework yazılımını, dağıtımınızın yazılım merkezi aracılığı ile yüklemiş iseniz gerekli klasörleri <code>/usr/share</code> içerisinde bulabilirsin. Debian paketi olarak indirip yüklediyseniz <code>/opt/metasploit-framework/</code> klasörü içerisinde bulabilirsiniz.</p>
 <p>Bazı ana klasörlerin hangi bilgileri ihtiva ettiğine bakalım.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li><code>data</code>: Metasploit tarafından kullanılan ve değiştirilebilir dosyalar bu klasördedir.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>documentation</code>: MSF hakkında yardım ve açıklama dokümanları bulunur</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>external</code>: Kaynak kodlar ve 3. taraf kütüphaneleri bu klasördedir.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>lib</code>: MSF kullandığı ana kütüphaneler bulunur.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>modules</code>: MSF yüklendiğinde indeksinde bulunan modüller bu klasördedir.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>plugins</code>: Program başlarken yüklenecek eklentiler buradadır.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>scripts</code>: Meterpreter ve diğer script kodları bulunur.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li><code>tools</code>: Çeşitli komut satırı araçları bulunur.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading" id="modüller-ve-yerleri">Modüller ve Yerleri 
 <!-- /wp:heading -->
-<h2 class="wp-block-heading" id="modüller">Modüller</h2>
+<h2 class="wp-block-heading" id="modüller">Modüller
 <!-- /wp:heading -->
 <p>Metasploit Framework, modüllerden oluşturulmuştur. Bu modüller kısaca nelerdir?</p>
-<p><strong>Payload</strong>: Karşı sistemde çalışmak üzere tasarlanan script kodlarına Payload adı verilmektedir.</p>
-<p><strong>Exploits</strong>: Payload kullanan modüllere exploit adı verilmektedir.</p>
-<p><strong>Auxiliary</strong>: Payload kullanmayan modüllere Auxiliary modülleri adı verilir.</p>
-<p><strong>Encoders</strong>: Payload scriptlerinin karşı tarafa gitmesini, ulaştırılmasını sağlayan modüllerdir.</p>
-<p><strong>Nops</strong>: Payload scriptlerinin sürekli ve sağlıklı çalışmasını sağlayan modüllerdir.</p>
-<h2 class="wp-block-heading" id="modüller-nerededir">Modüller Nerededir?</h2>
+<p><em><strong>Payload</strong></em> : Karşı sistemde çalışmak üzere tasarlanan script kodlarına Payload adı verilmektedir.</p>
+<p><em><strong>Exploits</strong></em> : Payload kullanan modüllere exploit adı verilmektedir.</p>
+<p><em><strong>Auxiliary</strong></em> : Payload kullanmayan modüllere Auxiliary modülleri adı verilir.</p>
+<p><em><strong>Encoders</strong></em> : Payload scriptlerinin karşı tarafa gitmesini, ulaştırılmasını sağlayan modüllerdir.</p>
+<p><em><strong>Nops</strong></em> : Payload scriptlerinin sürekli ve sağlıklı çalışmasını sağlayan modüllerdir.</p>
+<h2 class="wp-block-heading" id="modüller-nerededir">Modüller Nerededir?
 <!-- /wp:heading -->
 <p>Temel modüller ve kullanıcı modülleri olarak ikiye ayırabileceğimiz modüllerin hangi klasörde bulunduğuna bakalım.</p>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="temel-modüller">Temel Modüller</h3>
+<h3 class="wp-block-heading" id="temel-modüller">Temel Modüller
 <!-- /wp:heading -->
 <p>MSF her yüklendiğinde kurulup hazır hale gelen modüller, yukarıda belirttiğimiz <code>/usr/share/metasploit-framework/modules/</code> klasöründe veya <code>/opt/metasploit-framework/modules/</code> içerisinde bulunurlar. Windows kullanıcıları da Program Files klasörü içerisine bakabilirler.</p>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="kullanıcı-modülleri">Kullanıcı Modülleri</h3>
+<h3 class="wp-block-heading" id="kullanıcı-modülleri">Kullanıcı Modülleri
 <!-- /wp:heading -->
 <p>Metasploit’in kullanıcıya tanıdığı en büyük imkan, kendi modülünü çerçeveye dahil edebilmesidir. Bir script yazdınız veya indirdiniz kullanmak istiyorsunuz. Bu kodlara kullanıcı modülleri denir ve kullanıcının ev klasörünün içerisinde başında nokta olan gizli bir klasörde tutulurlar. Tam olarak adresi <code><del>/.msf4/modules/</code> bu şekildedir. <code></del></code> Ev klasörü anlamına gelmektedir. Klasörü dosya yöneticisinde görmek için “Gizli Dosyaları Göster” seçeneğini aktif hale getirebilirsiniz.</p>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="kullanıcı-modüllerini-sisteme-tanıtma">Kullanıcı modüllerini sisteme tanıtma</h3>
+<h3 class="wp-block-heading" id="kullanıcı-modüllerini-sisteme-tanıtma">Kullanıcı modüllerini sisteme tanıtma
 <!-- /wp:heading -->
 <p>MSF, kullanıcıya başlarken veya başladıktan sonra kendi ilave modüllerini yükleme imkanı sunar. Bunun başlarken ve başladıktan sonra nasıl yapıldığını görelim.</p>
 <p>Aşağıda anlatılan iki yöntemde de komutlara vereceğiniz klasör adreslerinin içerisinde, msf isimlendirme konvansiyonuna uygun klasörler bulunmalıdır. Örneğin, <code><del>/.msf4/modules/</code> klasöründen bir exploit yüklemek isterseniz, o exploitin <code></del>/.msf4/modules/exploit/</code> klasöründe bulunuyor olması gerekir.</p>
@@ -9783,36 +9796,36 @@ drwxr-xr-x 12 root root 4096 May 10 14:46 post
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading" id="başlarken-kullanıcı-modüllerini-yükleme">Başlarken kullanıcı modüllerini yükleme</h4>
+<h4 class="wp-block-heading" id="başlarken-kullanıcı-modüllerini-yükleme">Başlarken kullanıcı modüllerini yükleme 
 <!-- /wp:heading -->
 <p>Yukarıda belirttiğimiz gibi kullanıcı modülleri <code>~/.msf4/modules/</code> klasöründeydi. Bu klasörü <code>msfconsole</code> komutuna söylediğimizde, ilave modüllerde yüklenir ve sistem öyle başlar. Bunu aşağıdaki komutta görüldüğü gibi <code>-m</code> parametresi ile yapabiliriz.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">umut@umut-X550JX ~ $ msfconsole -m ~/.msf4/modules/
-Found a database at /home/umut/.msf4/db, checking to see <strong>if </strong>it is started
+Found a database at /home/umut/.msf4/db, checking to see ***if *** it is started
 Starting database at /home/umut/.msf4/db...success
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Hacked: All the things %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-                        Press SPACE BAR to <strong>continue</strong>
+                        Press SPACE BAR to ***continue*** 
 
 
 
-       <strong>=[</strong> metasploit v4.14.17-dev-                        <strong>]</strong>
-+ -- --<strong>=[</strong> 1648 exploits - 946 auxiliary - 291 post        <strong>]</strong>
-+ -- --<strong>=[</strong> 486 payloads - 40 encoders - 9 nops             <strong>]</strong>
-+ -- --<strong>=[</strong> Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> <strong>]</strong>
+       ***=[***  metasploit v4.14.17-dev-                        ***]*** 
++ -- --***=[***  1648 exploits - 946 auxiliary - 291 post        ***]*** 
++ -- --***=[***  486 payloads - 40 encoders - 9 nops             ***]*** 
++ -- --***=[***  Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> ***]*** 
 
-msf <strong>&gt;</strong> 
+msf ***&gt;***  
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:heading {"level":4} -->
-<h4 class="wp-block-heading" id="başladıktan-sonra-modül-tanıtma">Başladıktan sonra modül tanıtma</h4>
+<h4 class="wp-block-heading" id="başladıktan-sonra-modül-tanıtma">Başladıktan sonra modül tanıtma 
 <!-- /wp:heading -->
 <p>MSF programını <code>msfconsole</code> komutuyla başlattınız ve bir takım işlemleriniz devam ediyor. Sisteme yeni bir modül tanıtmak için, programı kapatmanıza gerek yok. <code>loadpath</code> komutuyla modülün olduğu yolu tarif ettiğinizde, yükleme gerçekleşecektir.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">msf <strong>&gt;</strong> loadpath /home/umut/.msf4/modules
+<pre class="wp-block-code"><code lang="bash" class="language-bash">msf ***&gt;***  loadpath /home/umut/.msf4/modules
 Loaded 0 modules:
-msf <strong>&gt;</strong> </code></pre>
+msf ***&gt;***  </code></pre>
 <!-- /wp:code -->
 <p>Video Anlatım</p>
 <!-- wp:embed {"url":"https://youtu.be/5B8EftRWxGY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

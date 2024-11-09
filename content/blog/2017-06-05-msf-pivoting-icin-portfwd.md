@@ -34,184 +34,184 @@ url: /tr/msf-pivoting-icin-portfwd/
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Port Yönlendirme olarak kullanılan&nbsp;<code>portfwd</code>&nbsp;komutu, Meterpreter’in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir&nbsp;<strong>pivot</strong>&nbsp;bilgisayara ihtiyacımız bulunmaktadır.</p>
+<p>Port Yönlendirme olarak kullanılan&nbsp;<code>portfwd</code>&nbsp;komutu, Meterpreter’in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir&nbsp;***pivot*** &nbsp;bilgisayara ihtiyacımız bulunmaktadır.
   
 
 <!-- wp:paragraph -->
-<p>Pivot olarak adlandırdığımız bilgisayarın bağlanabildiği bir ağ cihazına, port yönlendirme yaparak kendi yerel makinemizden bağlanmamızı sağlar. Bunun nasıl gerçekleştiğini bir örnekle açıklamaya çalışalım. Bu anlatımda 3 adet bilgisayar olduğunu baştan belirtmekte fayda var.</p>
+<p>Pivot olarak adlandırdığımız bilgisayarın bağlanabildiği bir ağ cihazına, port yönlendirme yaparak kendi yerel makinemizden bağlanmamızı sağlar. Bunun nasıl gerçekleştiğini bir örnekle açıklamaya çalışalım. Bu anlatımda 3 adet bilgisayar olduğunu baştan belirtmekte fayda var.
   
 
 <!-- wp:list {"ordered":true} -->
-<ol><!-- wp:list-item -->
-<li>Kendi bilgisayarımız: 192.168.1.162 veya 0.0.0.0</li>
+ <!-- wp:list-item -->
+- Kendi bilgisayarımız: 192.168.1.162 veya 0.0.0.0 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Pivot bilgisayar : 172.16.194.144</li>
+- Pivot bilgisayar : 172.16.194.144 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Hedef Bilgisayar : 172.16.194.191</li>
-<!-- /wp:list-item --></ol>
+- Hedef Bilgisayar : 172.16.194.191 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Bizim burada yapmaya çalıştığımız işlem, bir şekilde meterpreter oturum açtığımız&nbsp;<strong>pivot</strong>&nbsp;bilgisayar üzerinden Port Yönlendirme yaparak&nbsp;<strong>hedef</strong>&nbsp;bilgisayarla haberleşmeyi sağlamaktır.</p>
+<p>Bizim burada yapmaya çalıştığımız işlem, bir şekilde meterpreter oturum açtığımız&nbsp;***pivot*** &nbsp;bilgisayar üzerinden Port Yönlendirme yaparak&nbsp;***hedef*** &nbsp;bilgisayarla haberleşmeyi sağlamaktır.
   
 
  
-<h2 class="wp-block-heading" id="yardımı-görüntüleme">Yardımı Görüntüleme</h2>
+<h2 class="wp-block-heading" id="yardımı-görüntüleme">Yardımı Görüntüleme
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Pivot makinede meterpreter oturum açık durumdayken&nbsp;<code>portfwd –h</code>&nbsp;komutu ile&nbsp;<code>portfwd</code>&nbsp;ile ilgili yardımı görüntüleyebilirsiniz.</p>
+<p>Pivot makinede meterpreter oturum açık durumdayken&nbsp;<code>portfwd –h</code>&nbsp;komutu ile&nbsp;<code>portfwd</code>&nbsp;ile ilgili yardımı görüntüleyebilirsiniz.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd -h
-Usage: portfwd <strong>[</strong>-h<strong>]</strong> <strong>[</strong>add | delete | list | flush] <strong>[</strong>args]
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd -h
+Usage: portfwd ***[*** -h***]***  ***[*** add | delete | list | flush] ***[*** args]
 OPTIONS:
-     -L <strong>&gt;</strong>opt&gt;  The local host to listen on <strong>(</strong>optional<strong>)</strong>.
+     -L ***&gt;*** opt&gt;  The local host to listen on ***(*** optional***)*** .
      -h        Help banner.
-     -l <strong>&gt;</strong>opt&gt;  The local port to listen on.
-     -p <strong>&gt;</strong>opt&gt;  The remote port to connect on.
-     -r <strong>&gt;</strong>opt&gt;  The remote host to connect on.
-meterpreter <strong>&gt;</strong>
+     -l ***&gt;*** opt&gt;  The local port to listen on.
+     -p ***&gt;*** opt&gt;  The remote port to connect on.
+     -r ***&gt;*** opt&gt;  The remote host to connect on.
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="seçenekler">Seçenekler</h2>
+<h2 class="wp-block-heading" id="seçenekler">Seçenekler
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>-L: Dinleme yapacağımız kendi bilgisayarımızın IP adresini ifade eder. Bilgisayarınızda birden fazla ağ kartı yoksa bu seçeneği girmeyebilirsiniz. Varsayılan olarak&nbsp;<code>localhost</code>&nbsp;anlamında&nbsp;<code>0.0.0.0</code>&nbsp;kullanılacaktır.</p>
+<p>-L: Dinleme yapacağımız kendi bilgisayarımızın IP adresini ifade eder. Bilgisayarınızda birden fazla ağ kartı yoksa bu seçeneği girmeyebilirsiniz. Varsayılan olarak&nbsp;<code>localhost</code>&nbsp;anlamında&nbsp;<code>0.0.0.0</code>&nbsp;kullanılacaktır.
   
 
 <!-- wp:paragraph -->
-<p>-h: Yardım bilgisini görüntüler.</p>
+<p>-h: Yardım bilgisini görüntüler.
   
 
 <!-- wp:paragraph -->
-<p>-l: Yerel kendi bilgisayarımızda dinleme yapacağımız Port numarasını ifade eder.</p>
+<p>-l: Yerel kendi bilgisayarımızda dinleme yapacağımız Port numarasını ifade eder.
   
 
 <!-- wp:paragraph -->
-<p>-p: Hedef bilgisayarın Port numarasını ifade eder.</p>
+<p>-p: Hedef bilgisayarın Port numarasını ifade eder.
   
 
 <!-- wp:paragraph -->
-<p>-r: Hedef bilgisayarın IP adresini ifade eder.</p>
+<p>-r: Hedef bilgisayarın IP adresini ifade eder.
   
 
  
-<h2 class="wp-block-heading" id="argümanlar">Argümanlar</h2>
+<h2 class="wp-block-heading" id="argümanlar">Argümanlar
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Add: Yeni bir yönlendirme eklemeye yarar.</p>
+<p>Add: Yeni bir yönlendirme eklemeye yarar.
   
 
 <!-- wp:paragraph -->
-<p>Delete: Mevcut bir yönlendirmeyi silmeye yarar.</p>
+<p>Delete: Mevcut bir yönlendirmeyi silmeye yarar.
   
 
 <!-- wp:paragraph -->
-<p>List: Mevcut durumda tüm yönlendirmelerin listesini görüntülemeye yarar.</p>
+<p>List: Mevcut durumda tüm yönlendirmelerin listesini görüntülemeye yarar.
   
 
 <!-- wp:paragraph -->
-<p>Flush: Tüm aktif yönlendirmeleri iptal etmeye yarar.</p>
+<p>Flush: Tüm aktif yönlendirmeleri iptal etmeye yarar.
   
 
  
-<h2 class="wp-block-heading" id="yönlendirme-ekleme">Yönlendirme Ekleme</h2>
+<h2 class="wp-block-heading" id="yönlendirme-ekleme">Yönlendirme Ekleme
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Meterpreter shell oturumunu açtığımız&nbsp;<strong>pivot</strong>&nbsp;bilgisayarda iken vereceğimiz komut aşağıdaki formattadır.</p>
+<p>Meterpreter shell oturumunu açtığımız&nbsp;***pivot*** &nbsp;bilgisayarda iken vereceğimiz komut aşağıdaki formattadır.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd add –l 3389 –p 3389 –r  <strong>[</strong>target host]
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd add –l 3389 –p 3389 –r  ***[*** target host]
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p><code>-l 3389</code>&nbsp;Yerel bilgisayarımızda dinleme yapacağımız Port numarası</p>
+<p><code>-l 3389</code>&nbsp;Yerel bilgisayarımızda dinleme yapacağımız Port numarası
   
 
 <!-- wp:paragraph -->
-<p><code>-p 3389</code>&nbsp;Hedef bilgisayar Port numarasıdır.</p>
+<p><code>-p 3389</code>&nbsp;Hedef bilgisayar Port numarasıdır.
   
 
 <!-- wp:paragraph -->
-<p><code>-r [target host]</code>&nbsp;hedef bilgisayar IP adresidir.</p>
+<p><code>-r [target host]</code>&nbsp;hedef bilgisayar IP adresidir.
   
 
 <!-- wp:paragraph -->
-<p>Şimdi port yönlendirmeyi yapalım.</p>
+<p>Şimdi port yönlendirmeyi yapalım.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd add –l 3389 –p 3389 –r 172.16.194.191
-<strong>[</strong><strong>*</strong><strong>]</strong> Local TCP relay created: 0.0.0.0:3389 <strong>&gt;</strong>-&gt; 172.16.194.191:3389
-meterpreter <strong>&gt;</strong> 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd add –l 3389 –p 3389 –r 172.16.194.191
+***[*** ******* ***]***  Local TCP relay created: 0.0.0.0:3389 ***&gt;*** -&gt; 172.16.194.191:3389
+meterpreter ***&gt;***  
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="yönlendirme-silme">Yönlendirme Silme</h2>
+<h2 class="wp-block-heading" id="yönlendirme-silme">Yönlendirme Silme
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Silme işlemini de&nbsp;<strong>pivot</strong>&nbsp;bilgisayar oturumunda iken aşağıdaki örnekte olduğu gibi yapabiliriz.</p>
+<p>Silme işlemini de&nbsp;***pivot*** &nbsp;bilgisayar oturumunda iken aşağıdaki örnekte olduğu gibi yapabiliriz.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd delete –l 3389 –p 3389 –r 172.16.194.191
-<strong>[</strong><strong>*</strong><strong>]</strong> Successfully stopped TCP relay on 0.0.0.0:3389
-meterpreter <strong>&gt;</strong> 
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd delete –l 3389 –p 3389 –r 172.16.194.191
+***[*** ******* ***]***  Successfully stopped TCP relay on 0.0.0.0:3389
+meterpreter ***&gt;***  
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="yönlendirmeleri-listeleme">Yönlendirmeleri Listeleme</h2>
+<h2 class="wp-block-heading" id="yönlendirmeleri-listeleme">Yönlendirmeleri Listeleme
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aktif olan yönlendirmeleri&nbsp;<code>portfwd list</code>&nbsp;komutuyla yapabiliriz.</p>
+<p>Aktif olan yönlendirmeleri&nbsp;<code>portfwd list</code>&nbsp;komutuyla yapabiliriz.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd list
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd list
 0: 0.0.0.0:3389 -&gt; 172.16.194.191:3389
 1: 0.0.0.0:1337 -&gt; 172.16.194.191:1337
 2: 0.0.0.0:2222 -&gt; 172.16.194.191:2222
 
 3 total local port forwards.
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="tüm-yönlendirmeleri-temizleme">Tüm Yönlendirmeleri Temizleme</h2>
+<h2 class="wp-block-heading" id="tüm-yönlendirmeleri-temizleme">Tüm Yönlendirmeleri Temizleme
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sistemde aktif olan tüm yönlendirmeleri&nbsp;<code>portfwd flush</code>&nbsp;komutuyla iptal edebiliriz.</p>
+<p>Sistemde aktif olan tüm yönlendirmeleri&nbsp;<code>portfwd flush</code>&nbsp;komutuyla iptal edebiliriz.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd flush
-<strong>[</strong><strong>*</strong><strong>]</strong> Successfully stopped TCP relay on 0.0.0.0:3389
-<strong>[</strong><strong>*</strong><strong>]</strong> Successfully stopped TCP relay on 0.0.0.0:1337
-<strong>[</strong><strong>*</strong><strong>]</strong> Successfully stopped TCP relay on 0.0.0.0:2222
-<strong>[</strong><strong>*</strong><strong>]</strong> Successfully flushed 3 rules
-meterpreter <strong>&gt;</strong> portfwd list
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd flush
+***[*** ******* ***]***  Successfully stopped TCP relay on 0.0.0.0:3389
+***[*** ******* ***]***  Successfully stopped TCP relay on 0.0.0.0:1337
+***[*** ******* ***]***  Successfully stopped TCP relay on 0.0.0.0:2222
+***[*** ******* ***]***  Successfully flushed 3 rules
+meterpreter ***&gt;***  portfwd list
 
 0 total local port forwards
-meterpreter <strong>&gt;</strong>
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 
@@ -220,15 +220,15 @@ meterpreter <strong>&gt;</strong>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aşağıda örnek olarak bir senaryoyu bulabilirsiniz.</p>
+<p>Aşağıda örnek olarak bir senaryoyu bulabilirsiniz.
   
 
  
-<h2 class="wp-block-heading" id="hedef-bilgisayar">Hedef Bilgisayar</h2>
+<h2 class="wp-block-heading" id="hedef-bilgisayar">Hedef Bilgisayar
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aşağıdaki komut çıktısında görüldüğü gibi, hedef bilgisayar&nbsp;<code>172.16.194.141</code>&nbsp;IP adresine sahiptir.</p>
+<p>Aşağıdaki komut çıktısında görüldüğü gibi, hedef bilgisayar&nbsp;<code>172.16.194.141</code>&nbsp;IP adresine sahiptir.
   
 
 <!-- wp:code -->
@@ -248,15 +248,15 @@ C:\&gt;
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="pivot-bilgisayar">Pivot Bilgisayar</h2>
+<h2 class="wp-block-heading" id="pivot-bilgisayar">Pivot Bilgisayar
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>Pivot</strong>&nbsp;bilgisayar aşağıdaki çıktıda görüldüğü gibi, hem&nbsp;<code>172.16.194.0/24</code>&nbsp;ağına hem de&nbsp;<code>192.168.1.0/24</code>&nbsp;ağına bağlanabilmektedir. Bizim yerel bilgisayarımızda bu&nbsp;<code>192.168.1.0/24</code>&nbsp;ağında bulunuyor.</p>
+<p>***Pivot*** &nbsp;bilgisayar aşağıdaki çıktıda görüldüğü gibi, hem&nbsp;<code>172.16.194.0/24</code>&nbsp;ağına hem de&nbsp;<code>192.168.1.0/24</code>&nbsp;ağına bağlanabilmektedir. Bizim yerel bilgisayarımızda bu&nbsp;<code>192.168.1.0/24</code>&nbsp;ağında bulunuyor.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> ipconfig
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  ipconfig
 
 MS TCP Loopback interface
 Hardware MAC: 00:00:00:00:00:00
@@ -276,11 +276,11 @@ Netmask     : 255.0.0.0
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="yerel-bilgisayar">Yerel Bilgisayar</h2>
+<h2 class="wp-block-heading" id="yerel-bilgisayar">Yerel Bilgisayar
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Birazdan aşağıda göreceğiniz yönlendirme sonucunda yerel bilgisayarımızın (192.168.1.162 IP numaralı),&nbsp;<strong>pivot</strong>&nbsp;makine üzerinden&nbsp;<code>172.16.194.141</code>&nbsp;IP adresine&nbsp;<code>ping</code>&nbsp;sinyali gönderebildiğini görebiliyoruz.</p>
+<p>Birazdan aşağıda göreceğiniz yönlendirme sonucunda yerel bilgisayarımızın (192.168.1.162 IP numaralı),&nbsp;***pivot*** &nbsp;makine üzerinden&nbsp;<code>172.16.194.141</code>&nbsp;IP adresine&nbsp;<code>ping</code>&nbsp;sinyali gönderebildiğini görebiliyoruz.
   
 
 <!-- wp:code -->
@@ -292,74 +292,74 @@ eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f
          RX packets:1357685 errors:0 dropped:0 overruns:0 frame:0
          TX packets:823428 errors:0 dropped:0 overruns:0 carrier:0
          collisions:0 txqueuelen:1000 
-         RX bytes:318385612 <strong>(</strong>303.6 MiB<strong>)</strong>  TX bytes:133752114 <strong>(</strong>127.5 MiB<strong>)</strong>
+         RX bytes:318385612 ***(*** 303.6 MiB***)***   TX bytes:133752114 ***(*** 127.5 MiB***)*** 
          Interrupt:19 Base address:0x2000
 
 
 root@kali:~# ping 172.16.194.141
-PING 172.16.194.141 <strong>(</strong>172.16.194.141<strong>)</strong> 56<strong>(</strong>84<strong>)</strong> bytes of data.
-64 bytes from 172.16.194.141: icmp_req<strong>=</strong>1 ttl<strong>=</strong>128 time<strong>=</strong>240 ms
-64 bytes from 172.16.194.141: icmp_req<strong>=</strong>2 ttl<strong>=</strong>128 time<strong>=</strong>117 ms
-64 bytes from 172.16.194.141: icmp_req<strong>=</strong>3 ttl<strong>=</strong>128 time<strong>=</strong>119 ms
+PING 172.16.194.141 ***(*** 172.16.194.141***)***  56***(*** 84***)***  bytes of data.
+64 bytes from 172.16.194.141: icmp_req***=*** 1 ttl***=*** 128 time***=*** 240 ms
+64 bytes from 172.16.194.141: icmp_req***=*** 2 ttl***=*** 128 time***=*** 117 ms
+64 bytes from 172.16.194.141: icmp_req***=*** 3 ttl***=*** 128 time***=*** 119 ms
 ^C
 --- 172.16.194.141 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
-rtt min/avg/max/mdev <strong>=</strong> 117.759/159.378/240.587/57.430 ms
+rtt min/avg/max/mdev ***=***  117.759/159.378/240.587/57.430 ms
 
 root@kali:~#
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Peki bu haberleşmeyi nasıl başardık?</p>
+<p>Peki bu haberleşmeyi nasıl başardık?
   
 
  
-<h2 class="wp-block-heading" id="yönlendirme-yapalım">Yönlendirme Yapalım</h2>
+<h2 class="wp-block-heading" id="yönlendirme-yapalım">Yönlendirme Yapalım
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>pivot</strong>&nbsp;bilgisayarda açtığımız meterpreter shell içerisinde iken aşağıdaki yönlendirme işlemini gerçekleştirdik.</p>
+<p>***pivot*** &nbsp;bilgisayarda açtığımız meterpreter shell içerisinde iken aşağıdaki yönlendirme işlemini gerçekleştirdik.
   
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> portfwd add –l 3389 –p 3389 –r 172.16.194.141
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  portfwd add –l 3389 –p 3389 –r 172.16.194.141
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Yönlendirme komutunu&nbsp;<strong>pivot</strong>&nbsp;bilgisayarda verdikten sonra yerel bilgisayarımızda&nbsp;<code>netstat -antp</code>&nbsp;komutuyla bizim de dinlemeyi&nbsp;<code>3389</code>&nbsp;numaralı port üzerinden yaptığımızı kontrol edebilirsiniz.</p>
+<p>Yönlendirme komutunu&nbsp;***pivot*** &nbsp;bilgisayarda verdikten sonra yerel bilgisayarımızda&nbsp;<code>netstat -antp</code>&nbsp;komutuyla bizim de dinlemeyi&nbsp;<code>3389</code>&nbsp;numaralı port üzerinden yaptığımızı kontrol edebilirsiniz.
   
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# netstat -antp
-Active Internet connections <strong>(</strong>servers and established<strong>)</strong>
+Active Internet connections ***(*** servers and established***)*** 
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-tcp        0      0 0.0.0.0:22              0.0.0.0:<strong>*</strong>               LISTEN      8397/sshd  
+tcp        0      0 0.0.0.0:22              0.0.0.0:*******                LISTEN      8397/sshd  
 .....
-tcp        0      0 0.0.0.0:3389            0.0.0.0:<strong>*</strong>               LISTEN      2045/.ruby.bin      
+tcp        0      0 0.0.0.0:3389            0.0.0.0:*******                LISTEN      2045/.ruby.bin      
 .....
-tcp6       0      0 :::22                   :::<strong>*</strong>                    LISTEN      8397/sshd
+tcp6       0      0 :::22                   :::*******                     LISTEN      8397/sshd
 root@kali:~#
 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Bu durumda yerel bilgisayarımızdan hedef bilgisayara&nbsp;<code>rdesktop</code>&nbsp;uzak masaüstü bağlantısı açabilir veya diğer işlemleri yapabiliriz.</p>
+<p>Bu durumda yerel bilgisayarımızdan hedef bilgisayara&nbsp;<code>rdesktop</code>&nbsp;uzak masaüstü bağlantısı açabilir veya diğer işlemleri yapabiliriz.
   
 
 <!-- wp:paragraph -->
-<p>Örneğin&nbsp;<code>exploit/windows/smb/ms08_067_netapi</code>&nbsp;modülünü kullanabiliriz. Bu modüldeki değişkenleri, yönlendirme sonucu ulaştığımız hedef bilgisayarın IP adresi ve Port numarasını girerek kullanabiliriz.</p>
+<p>Örneğin&nbsp;<code>exploit/windows/smb/ms08_067_netapi</code>&nbsp;modülünü kullanabiliriz. Bu modüldeki değişkenleri, yönlendirme sonucu ulaştığımız hedef bilgisayarın IP adresi ve Port numarasını girerek kullanabiliriz.
   
 
 <!-- wp:paragraph -->
-<p>Konunun biraz kafa karıştırıcı olduğunu düşünebilirsiniz. Bir miktar deneme ve antrenman yapmanızı tavsiye ediyorum.</p>
+<p>Konunun biraz kafa karıştırıcı olduğunu düşünebilirsiniz. Bir miktar deneme ve antrenman yapmanızı tavsiye ediyorum.
   
 
 <!-- wp:paragraph -->
-<p>Şöyle düşünün, hedef bilgisayara ulaşmak için&nbsp;<strong>pivot</strong>&nbsp;makineye meterpreter shell açıyoruz.&nbsp;<strong>pivot</strong>&nbsp;bilgisayarın haberleşebildiği diğer IP adresinde aktif bulunan (örneğin SAMBA, 445 portu) servise önce yönlendirme yapıyoruz. Ardından yerel bilgisayarımızdan hedef bilgisayara bağlanabiliyoruz.</p>
+<p>Şöyle düşünün, hedef bilgisayara ulaşmak için&nbsp;***pivot*** &nbsp;makineye meterpreter shell açıyoruz.&nbsp;***pivot*** &nbsp;bilgisayarın haberleşebildiği diğer IP adresinde aktif bulunan (örneğin SAMBA, 445 portu) servise önce yönlendirme yapıyoruz. Ardından yerel bilgisayarımızdan hedef bilgisayara bağlanabiliyoruz.
   
 
 <!-- wp:paragraph -->
-<p>Doğru IP ve Port numaralarını yönlendirme yaptığınıza dikkat etmelisiniz.</p>
+<p>Doğru IP ve Port numaralarını yönlendirme yaptığınıza dikkat etmelisiniz.
   

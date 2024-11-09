@@ -35,7 +35,7 @@ HATA
 &#34;Failed to connect to the database: could not connect to server: Connection refused Is the server running on host &#34;localhost&#34; (::1) and accepting TCP/IP connections on port 5432? could not connect to server: Connection refused Is the server running on host &#34;localhost&#34; (127.0.0.1) and accepting TCP/IP connections on port 5432?&#34; Kali OS güncellemeden önce kullanılan Postgresql 9.5 sürümü, gelen istekleri 5432 portundan dinlemekteydi. Postgresql 9.6 ise conf dosyasında yapılan ayarlama ile dinlemeyi varsayılan olarak 5433 portundan yapmaya başladı. Metasploit Framework ise Postgresql ile haberleşmeyi hala 5432 portundan yapmaya çalışıyor. Bu durumu, aşağıdaki adımlarla kontrol edip düzeltelim ve Veri tabanımızı kullanmaya kaldığımız yerden devam edelim.">
   <meta itemprop="datePublished" content="2017-05-13T12:39:00+00:00">
   <meta itemprop="dateModified" content="2017-05-13T12:39:00+00:00">
-  <meta itemprop="wordCount" content="271">
+  <meta itemprop="wordCount" content="278">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF Başlangıçta Database Hatası">
@@ -9687,7 +9687,7 @@ HATA
                 </a></div>
         <div class="content">
           <p>Metasploit framework yazılımını Kali İşletim sisteminde kullanıyorsanız, en son güncellemeden sonra <code>msfconsole</code> başlangıcında aşağıdaki hatayı almaya başlamış olabilirsiniz. msfconsole içerisinde veritabanı kulanımı, yaptığınız taramaların kayıt edilmesi ve tekrar kullanılmasında oldukça fayda sağlar. Bu hatanın sebebi de en son güncelleme ile Kali içerisine kurulan Postgresql 9.6 sürümüdür.</p>
-<p><strong>HATA</strong></p>
+<p><em><strong>HATA</strong></em></p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">
 "Failed to connect to the database: could not connect to server: Connection refused Is the server running on host "localhost" (::1) and accepting TCP/IP connections on port 5432? could not connect to server: Connection refused Is the server running on host "localhost" (127.0.0.1) and accepting TCP/IP connections on port 5432?"
@@ -9695,18 +9695,22 @@ HATA
 <!-- /wp:code -->
 <p>Kali OS güncellemeden önce kullanılan Postgresql 9.5 sürümü, gelen istekleri 5432 portundan dinlemekteydi. Postgresql 9.6 ise conf dosyasında yapılan ayarlama ile dinlemeyi varsayılan olarak 5433 portundan yapmaya başladı. Metasploit Framework ise Postgresql ile haberleşmeyi hala 5432 portundan yapmaya çalışıyor. Bu durumu, aşağıdaki adımlarla kontrol edip düzeltelim ve Veri tabanımızı kullanmaya kaldığımız yerden devam edelim.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Postgresql Servisi Başlatın:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">service postgresql start
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Postgresql Dinleme Portu Şu an Ne?</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Aşağıdaki komut yardımı ile şu an Postgresql’in şu an dinlediği Port numarasını görebilirsiniz.</p>
 <!-- wp:code -->
@@ -9715,27 +9719,31 @@ HATA
 <!-- /wp:code -->
 <p>Muhtemelen aşağıdaki çıktıya benzer bir sonuç elde edeceksiniz. Dinleme portu olarak 5433 görüyorsanız bir sonraki adıma geçebiliriz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">LISTEN     0      128    127.0.0.1:5433                     <strong>*</strong>:<strong>*</strong>                   users:<strong>((</strong>"postgres",pid<strong>=</strong>2732,fd<strong>=</strong>6<strong>))</strong>
-LISTEN     0      128        ::1:5433                    :::<strong>*</strong>                   users:<strong>((</strong>"postgres",pid<strong>=</strong>2732,fd<strong>=</strong>3<strong>))</strong>
+<pre class="wp-block-code"><code lang="bash" class="language-bash">LISTEN     0      128    127.0.0.1:5433                     ******* :*******                    users:***((*** "postgres",pid***=*** 2732,fd***=*** 6***))*** 
+LISTEN     0      128        ::1:5433                    :::*******                    users:***((*** "postgres",pid***=*** 2732,fd***=*** 3***))*** 
 </code></pre>
 <!-- /wp:code -->
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Ayarlara Bakalım:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Aşağıdaki komutu kullanarak, <code>/etc/postgresql/9.6/main/postgresql.conf</code> ayar dosyasında hangi port ayarlanmış bakalım.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">grep "port =" /etc/postgresql/9.6/main/postgresql.conf
 
-port <strong>=</strong> 5433                <em># (change requires restart)</em>
+port ***=***  5433                <em># (change requires restart)</em>
 </code></pre>
 <!-- /wp:code -->
 <p>Çıktıda 5432 yerine 5433 görüyorsanız problem burada demektir.</p>
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
+ <!-- wp:list-item -->
+<ul>
 <li>Portu Değiştirelim:</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sed -i 's/\(port = \)5433/\15432/' /etc/postgresql/9.6/main/postgresql.conf

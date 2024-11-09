@@ -38,7 +38,7 @@ url: /which-linux-distribution-is-right-for-you/
   If you are currently using a Linux distribution, you have already come a long way. We are sure that you are familiar with package systems and GPL licensed programs. Considering the users who will start using&nbsp;<a href="https://www.siberoloji.com/hangi-linux-dagitimi-size-uygun/#">&nbsp;Linux</a>&nbsp;for the first time&nbsp;, we are planning to introduce it with a simple explanation. 
  
 
-  <strong>Recommendation: If you are going to meet </strong> Linux  for the first time and are thinking of trying a few distributions, it would be beneficial to first try the distribution using virtualization software. Some experience shows that those who want to download the distribution and install it directly on the disk, in a separate partition, can easily give up on the Linux operating system when they encounter an error. 
+  ***Recommendation: If you are going to meet ***  Linux  for the first time and are thinking of trying a few distributions, it would be beneficial to first try the distribution using virtualization software. Some experience shows that those who want to download the distribution and install it directly on the disk, in a separate partition, can easily give up on the Linux operating system when they encounter an error. 
  
 
   However, this event can be described as trying to see a 3D picture. If you are determined and determined enough, Linux opens its doors to you and you reach incredible heights. Please do not think that we are pro-Linux here. We're just talking about a different and slightly unorthodox approach. After all, the goal is to introduce an operating system that communicates between you and computer hardware . 

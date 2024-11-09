@@ -28,7 +28,7 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
  
 
  
- ## XML Nedir?</h2>
+ ## XML Nedir?
 <!-- /wp:heading -->
 
   XML, eXtensible Markup Language (Genişletilebilir İşaretleme Dili) anlamına gelir ve hem insan hem de makine tarafından okunabilen bir biçimde veri depolamak ve taşımak için tasarlanmış bir işaretleme dilidir. HTML'e benzer ancak verileri görüntülemekten ziyade tanımlamaya odaklanan, öğeleri ve ilişkilerini tanımlamak için etiketler kullanan metin tabanlı bir biçimdir. 
@@ -39,31 +39,31 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Genişletilebilirlik</strong> : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler.</li>
+- ***Genişletilebilirlik***  : Kullanıcılar kendi etiketlerini ve belge yapılarını tanımlayabilirler. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Veri ve sunumun ayrılması</strong> : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır.</li>
+- ***Veri ve sunumun ayrılması***  : XML, veri yapısının tanımlanmasına odaklanır ve sunumu diğer teknolojilere bırakır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Platform ve dil bağımsızlığı</strong> : XML, XML'i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir.</li>
+- ***Platform ve dil bağımsızlığı***  : XML, XML'i destekleyen herhangi bir sistem tarafından okunabilir ve işlenebilir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Sıkı sözdizimi kuralları</strong> : XML'in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır.</li>
-<!-- /wp:list-item --></ol>
+- ***Sıkı sözdizimi kuralları***  : XML'in geçerli belgeler oluşturmak için iyi tanımlanmış kuralları vardır. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## XML Belgesinin Yapısı</h2>
+ ## XML Belgesinin Yapısı
 <!-- /wp:heading -->
 
   XML belgesinin temel yapısını inceleyelim: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. XML Beyanı</h3>
+
+ ### 1. XML Beyanı
 <!-- /wp:heading -->
 
   Bir XML belgesi genellikle bir XML bildirimiyle başlar: 
@@ -76,8 +76,8 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
   Bu satır, belgede kullanılan XML sürümünü ve karakter kodlamasını belirtir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Kök Eleman</h3>
+
+ ### 2. Kök Eleman
 <!-- /wp:heading -->
 
   Her XML belgesinin, diğer tüm öğeleri içeren tek bir kök öğesi olmalıdır: 
@@ -89,8 +89,8 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 &lt;/root&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Elementler</h3>
+
+ ### 3. Elementler
 <!-- /wp:heading -->
 
   Öğeler XML'in yapı taşlarıdır. Bir başlangıç ​​etiketi, içerik ve bir bitiş etiketinden oluşurlar: 
@@ -109,8 +109,8 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 &lt;/parent&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 4. Nitelikler</h3>
+
+ ### 4. Nitelikler
 <!-- /wp:heading -->
 
   Öğeler, öğe hakkında ek bilgi sağlayan niteliklere sahip olabilir: 
@@ -120,8 +120,8 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 <pre class="wp-block-code"><code lang="bash" class="language-bash">&lt;element attribute="value"&gt;Content&lt;/element&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 5. Yorumlar</h3>
+
+ ### 5. Yorumlar
 <!-- /wp:heading -->
 
   XML, XML işlemcileri tarafından göz ardı edilen yorumları destekler: 
@@ -132,7 +132,7 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 <!-- /wp:code -->
 
  
- ## XML Sözdizimi Kuralları</h2>
+ ## XML Sözdizimi Kuralları
 <!-- /wp:heading -->
 
   XML'in geçerli belgeler oluşturmak için uyulması gereken katı sözdizimi kuralları vardır: 
@@ -140,16 +140,16 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Tüm elemanların bir kapanış etiketi olmalı</strong> veya kendi kendine kapanmalıdır.</li>
+- ***Tüm elemanların bir kapanış etiketi olmalı***  veya kendi kendine kapanmalıdır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Etiketler büyük/küçük harfe duyarlıdır</strong> : <code>&lt;Element&gt;</code>ve <code>&lt;element&gt;</code>farklı etiketlerdir.</li>
+- ***Etiketler büyük/küçük harfe duyarlıdır***  : <code>&lt;Element&gt;</code>ve <code>&lt;element&gt;</code>farklı etiketlerdir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Öğeler düzgün bir şekilde iç içe yerleştirilmelidir</strong> :</li>
-<!-- /wp:list-item --></ol>
+- ***Öğeler düzgün bir şekilde iç içe yerleştirilmelidir***  : 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -159,198 +159,198 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Öznitelik değerleri tırnak işareti içinde olmalıdır</strong> :<code>&lt;element attribute="value"&gt;</code></li>
+- ***Öznitelik değerleri tırnak işareti içinde olmalıdır***  :<code>&lt;element attribute="value"&gt;</code> 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Özel karakterler kaçırılmalıdır</strong> : <code>&amp;lt;</code>for &lt;, <code>&amp;gt;</code>for &gt;, <code>&amp;amp;</code>for &amp; gibi varlıkları kullanın.</li>
-<!-- /wp:list-item --></ol>
+- ***Özel karakterler kaçırılmalıdır***  : <code>&amp;lt;</code>for &lt;, <code>&amp;gt;</code>for &gt;, <code>&amp;amp;</code>for &amp; gibi varlıkları kullanın. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## XML'in Avantajları</h2>
+ ## XML'in Avantajları
 <!-- /wp:heading -->
 
   XML'in yaygın olarak benimsenmesine katkıda bulunan çeşitli avantajlar vardır: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. İnsan Tarafından Okunabilir ve Makine Tarafından Okunabilir</h3>
+
+ ### 1. İnsan Tarafından Okunabilir ve Makine Tarafından Okunabilir
 <!-- /wp:heading -->
 
   XML'in metin tabanlı formatı, insanların onu okuyup anlamasını kolaylaştırırken, yapılandırılmış yapısı makinelerin onu verimli bir şekilde ayrıştırmasına olanak tanır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Platform ve Dil Bağımsız</h3>
+
+ ### 2. Platform ve Dil Bağımsız
 <!-- /wp:heading -->
 
   XML, herhangi bir programlama diliyle ve herhangi bir platformda oluşturulabilir ve işlenebilir; bu da onu farklı sistemler arasında veri alışverişi için ideal hale getirir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Genişletilebilir</h3>
+
+ ### 3. Genişletilebilir
 <!-- /wp:heading -->
 
   Kullanıcılar kendi etiketlerini ve belge yapılarını oluşturabilirler; bu da XML'in çok çeşitli uygulamalara uyarlanmasına olanak tanır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Verilerin Ayrılması ve Sunumu</h3>
+
+ ### 4. Verilerin Ayrılması ve Sunumu
 <!-- /wp:heading -->
 
   XML, verilerin yapısını tanımlamaya odaklanır ve sunumu CSS veya XSLT gibi diğer teknolojilere bırakır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 5. Kendini Tanımlayan</h3>
+
+ ### 5. Kendini Tanımlayan
 <!-- /wp:heading -->
 
   XML belgeleri, etiketlerin içerdikleri verileri tanımlaması nedeniyle veri yapısı hakkında ön bilgiye ihtiyaç duyulmadan anlaşılabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 6. Unicode Desteği</h3>
+
+ ### 6. Unicode Desteği
 <!-- /wp:heading -->
 
   XML, tüm Unicode karakterlerini destekleyerek verilerin uluslararasılaştırılmasına olanak tanır. 
  
 
  
- ## XML Uygulamaları</h2>
+ ## XML Uygulamaları
 <!-- /wp:heading -->
 
   XML, farklı alanlardaki çok çeşitli uygulamalarda kullanım alanı bulur: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Web Hizmetleri</h3>
+
+ ### 1. Web Hizmetleri
 <!-- /wp:heading -->
 
   XML, genellikle web servislerinde veri alışverişi için kullanılır ve çoğunlukla SOAP (Basit Nesne Erişim Protokolü) mesajları biçimindedir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Yapılandırma Dosyaları</h3>
+
+ ### 2. Yapılandırma Dosyaları
 <!-- /wp:heading -->
 
   Birçok uygulama, okunabilirliği ve yapısı nedeniyle yapılandırma dosyaları için XML kullanır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. Veri Depolama ve Taşıma</h3>
+
+ ### 3. Veri Depolama ve Taşıma
 <!-- /wp:heading -->
 
   XML, verileri farklı sistemler ve uygulamalar arasında depolamak ve taşımak için kullanılır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. RSS ve Atom Beslemeleri</h3>
+
+ ### 4. RSS ve Atom Beslemeleri
 <!-- /wp:heading -->
 
   XML, web içeriğinin sendikasyonunda kullanılan RSS ve Atom besleme formatlarının temelini oluşturur. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 5. Office Belge Biçimleri</h3>
+
+ ### 5. Office Belge Biçimleri
 <!-- /wp:heading -->
 
   Microsoft Office'in Açık XML biçimi ve AçıkDocument Biçimi (ODF) XML'e dayanmaktadır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 6. SVG (Ölçeklenebilir Vektör Grafikleri)</h3>
+
+ ### 6. SVG (Ölçeklenebilir Vektör Grafikleri)
 <!-- /wp:heading -->
 
   Web üzerinde vektörel grafikler için popüler bir format olan SVG, XML tabanlı bir formattır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 7. XHTML</h3>
+
+ ### 7. XHTML
 <!-- /wp:heading -->
 
   XHTML, HTML'in daha katı, XML tabanlı bir sürümüdür. 
  
 
  
- ## XML Teknolojileri</h2>
+ ## XML Teknolojileri
 <!-- /wp:heading -->
 
   XML ile çalışmak için çeşitli teknolojiler geliştirilmiştir: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. DTD (Belge Türü Tanımı)</h3>
+
+ ### 1. DTD (Belge Türü Tanımı)
 <!-- /wp:heading -->
 
   DTD'ler bir XML belgesinin yapısını ve yasal unsurlarını tanımlar. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. XML Şeması</h3>
+
+ ### 2. XML Şeması
 <!-- /wp:heading -->
 
   XML Şeması, veri türleri ve yapıları üzerinde daha fazla kontrol sağlayarak DTD'lere göre daha güçlü bir alternatiftir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. XSLT (Genişletilebilir Stil Sayfası Dil Dönüşümleri)</h3>
+
+ ### 3. XSLT (Genişletilebilir Stil Sayfası Dil Dönüşümleri)
 <!-- /wp:heading -->
 
   XSLT, XML belgelerini HTML veya PDF gibi diğer biçimlere dönüştürmek için kullanılır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. XPath</h3>
+
+ ### 4. XPath
 <!-- /wp:heading -->
 
   XPath, bir XML belgesindeki öğeler ve öznitelikler arasında gezinmek için kullanılan bir sorgu dilidir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 5. XQuery</h3>
+
+ ### 5. XQuery
 <!-- /wp:heading -->
 
   XQuery, XML veri koleksiyonlarını sorgulamak için tasarlanmış güçlü bir sorgu ve fonksiyonel programlama dilidir. 
  
 
  
- ## Zorluklar ve Hususlar</h2>
+ ## Zorluklar ve Hususlar
 <!-- /wp:heading -->
 
   XML birçok avantaj sunmasının yanı sıra dikkate alınması gereken bazı dezavantajları da vardır: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Sözcük zenginliği</h3>
+
+ ### 1. Sözcük zenginliği
 <!-- /wp:heading -->
 
   XML'in her öğe için başlangıç ​​ve bitiş etiketleri kullanması, belgelerin ayrıntılı olmasına ve daha büyük dosya boyutlarına yol açabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 2. Karmaşıklık</h3>
+
+ ### 2. Karmaşıklık
 <!-- /wp:heading -->
 
   Basit veri yapıları için XML bazen JSON gibi alternatiflere kıyasla aşırı karmaşık olabilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 3. İşleme Genel Gideri</h3>
+
+ ### 3. İşleme Genel Gideri
 <!-- /wp:heading -->
 
   XML'i ayrıştırmak, daha basit formatları ayrıştırmaktan daha fazla hesaplama yoğunluğu gerektirebilir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### 4. Güvenlik Endişeleri</h3>
+
+ ### 4. Güvenlik Endişeleri
 <!-- /wp:heading -->
 
   XML ayrıştırıcıları, XML varlık genişletme saldırıları gibi belirli türdeki saldırılara karşı savunmasız olabilir. 
  
 
  
- ## XML ve JSON</h2>
+ ## XML ve JSON
 <!-- /wp:heading -->
 
   Son yıllarda, JSON (JavaScript Object Notation), özellikle web uygulamalarında XML'e bir alternatif olarak popülerlik kazandı. Her iki formatın da kendine göre güçlü yanları olsa da, JSON genellikle basitliği ve JavaScript ile kullanım kolaylığı nedeniyle tercih edilir. Ancak, XML belirli alanlarda üstünlüğünü korumaktadır: 
@@ -358,20 +358,20 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>XML, belge merkezli veriler için daha uygundur.</li>
+- XML, belge merkezli veriler için daha uygundur. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>XML, belge yapılarını tanımlamak ve doğrulamak için daha güçlü şema dillerine sahiptir.</li>
+- XML, belge yapılarını tanımlamak ve doğrulamak için daha güçlü şema dillerine sahiptir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>XML, araçlar ve teknolojiler (XSLT, XPath, vb.) açısından daha zengin bir ekosisteme sahiptir.</li>
-<!-- /wp:list-item --></ul>
+- XML, araçlar ve teknolojiler (XSLT, XPath, vb.) açısından daha zengin bir ekosisteme sahiptir. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## XML'in Geleceği</h2>
+ ## XML'in Geleceği
 <!-- /wp:heading -->
 
   JSON gibi yeni formatların getirdiği zorluklara rağmen, XML yaygın olarak kullanılmaya devam ediyor ve birçok alanda önemli bir teknoloji olmaya devam ediyor. Geleceği birkaç nedenden ötürü umut verici görünüyor: 
@@ -379,24 +379,24 @@ url: /tr/xml-formati-dijital-cag-icin-verilerin-yapilandirilmasi/
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Yerleşik Ekosistem</strong> : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir.</li>
+- ***Yerleşik Ekosistem***  : XML, araçlar, teknolojiler ve standartlardan oluşan geniş bir ekosisteme sahiptir. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Geriye Dönük Uyumluluk</strong> : Birçok sistem ve uygulama XML'e güvenir ve bu da XML'in sürekli güncelliğini garanti altına alır.</li>
+- ***Geriye Dönük Uyumluluk***  : Birçok sistem ve uygulama XML'e güvenir ve bu da XML'in sürekli güncelliğini garanti altına alır. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Sürekli Geliştirme</strong> : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor.</li>
+- ***Sürekli Geliştirme***  : XML teknolojileri gelişmeye ve iyileşmeye devam ediyor. 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Uzmanlık</strong> : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor.</li>
-<!-- /wp:list-item --></ol>
+- ***Uzmanlık***  : SVG ve XAML gibi XML tabanlı formatlar belirli alanlarda giderek daha önemli hale geliyor. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
  
- ## Sonuç</h2>
+ ## Sonuç
 <!-- /wp:heading -->
 
   XML, dijital çağda verileri nasıl yapılandırdığımızı, depoladığımızı ve değiştirdiğimizi şekillendirmede önemli bir rol oynamıştır. Esnekliği, genişletilebilirliği ve sağlam özellik seti, onu web servislerinden belge biçimlerine kadar çok çeşitli uygulamalar için tercih edilen bir çözüm haline getirmiştir. 

@@ -25,14 +25,14 @@ url: /attributes-in-html-everything-you-should-know/
  
 
  
- ## What Are HTML Attributes?</h2>
+ ## What Are HTML Attributes?
 <!-- /wp:heading -->
 
   HTML attributes are special words used inside HTML tags to control the behavior or appearance of the elements. Each attribute consists of a name and a value, formatted as <code>name="value"</code>. Attributes are added to HTML elements to provide extra details or to modify the default functionality of the element. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Basic Syntax</h3>
+
+ ### Basic Syntax
 <!-- /wp:heading -->
 
   The basic syntax for an HTML element with an attribute looks like this: 
@@ -53,14 +53,14 @@ url: /attributes-in-html-everything-you-should-know/
  
 
  
- ## Types of HTML Attributes</h2>
+ ## Types of HTML Attributes
 <!-- /wp:heading -->
 
   HTML attributes can be classified into several categories based on their function and purpose: 
  
 
-<!-- wp:heading {"level":3} -->
- ### 1. Global Attributes</h3>
+
+ ### 1. Global Attributes
 <!-- /wp:heading -->
 
   Global attributes can be applied to any HTML element, regardless of its type. Some common global attributes include: 
@@ -68,8 +68,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>class</code></strong>: Specifies one or more class names for the element. This is used for CSS styling or JavaScript manipulation.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>class</code>*** : Specifies one or more class names for the element. This is used for CSS styling or JavaScript manipulation. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -78,8 +78,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>id</code></strong>: Provides a unique identifier for the element. This is useful for CSS styling, JavaScript, and linking within the page.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>id</code>*** : Provides a unique identifier for the element. This is useful for CSS styling, JavaScript, and linking within the page. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -88,8 +88,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>style</code></strong>: Applies inline CSS styles to the element.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>style</code>*** : Applies inline CSS styles to the element. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -98,16 +98,16 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>title</code></strong>: Offers additional information about the element. This text appears as a tooltip when the user hovers over the element.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>title</code>*** : Offers additional information about the element. This text appears as a tooltip when the user hovers over the element. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  &lt;img src="image.jpg" title="A beautiful sunset" /&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 2. Specific Attributes</h3>
+
+ ### 2. Specific Attributes
 <!-- /wp:heading -->
 
   Certain HTML elements have specific attributes relevant to their function. Here are some examples: 
@@ -115,8 +115,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>href</code></strong>: Used in <code>&lt;a&gt;</code> tags to specify the URL of the link.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>href</code>*** : Used in <code>&lt;a&gt;</code> tags to specify the URL of the link. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -125,8 +125,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>src</code></strong>: Used in <code>&lt;img&gt;</code> tags to define the path to the image file.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>src</code>*** : Used in <code>&lt;img&gt;</code> tags to define the path to the image file. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -135,8 +135,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>alt</code></strong>: Provides alternative text for images, which is essential for accessibility.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>alt</code>*** : Provides alternative text for images, which is essential for accessibility. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -145,16 +145,16 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>placeholder</code></strong>: Used in <code>&lt;input&gt;</code> fields to provide a hint to the user about what to enter.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>placeholder</code>*** : Used in <code>&lt;input&gt;</code> fields to provide a hint to the user about what to enter. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">  &lt;input type="text" placeholder="Enter your name" /&gt;</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### 3. Boolean Attributes</h3>
+
+ ### 3. Boolean Attributes
 <!-- /wp:heading -->
 
   Boolean attributes are attributes that are either present or absent; they do not have a value. If the attribute is included in the tag, it is considered true. Common boolean attributes include: 
@@ -162,8 +162,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>disabled</code></strong>: Indicates that an element should be disabled.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>disabled</code>*** : Indicates that an element should be disabled. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -172,8 +172,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>checked</code></strong>: Used in <code>&lt;input type="checkbox"&gt;</code> or <code>&lt;input type="radio"&gt;</code> to indicate that the option is selected.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>checked</code>*** : Used in <code>&lt;input type="checkbox"&gt;</code> or <code>&lt;input type="radio"&gt;</code> to indicate that the option is selected. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -182,8 +182,8 @@ url: /attributes-in-html-everything-you-should-know/
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong><code>readonly</code></strong>: Specifies that an input field cannot be edited.</li>
-<!-- /wp:list-item --></ul>
+- ***<code>readonly</code>*** : Specifies that an input field cannot be edited. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:code -->
@@ -191,7 +191,7 @@ url: /attributes-in-html-everything-you-should-know/
 <!-- /wp:code -->
 
  
- ## </h2>
+ ## 
 <!-- /wp:heading -->
 
    

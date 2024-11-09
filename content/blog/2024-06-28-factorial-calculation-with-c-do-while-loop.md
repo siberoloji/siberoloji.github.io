@@ -28,7 +28,7 @@ title: Factorial calculation with C++ do-while loop
 url: /factorial-calculation-with-c-do-while-loop/
 ---
 
-  In this example, we show how to calculate factorial using the do while loop.</p>
+  In this example, we show how to calculate factorial using the do while loop.
  
 
 <!-- wp:code -->

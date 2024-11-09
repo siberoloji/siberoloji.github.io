@@ -65,7 +65,7 @@ int main() {
 <!-- /wp:code -->
 
  
- ## Explanation </h2>
+ ## Explanation 
 <!-- /wp:heading -->
 
   The provided C++ code is a simple program designed to illustrate the correct and incorrect conventions for naming variables in C++. 

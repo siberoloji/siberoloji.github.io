@@ -24,7 +24,7 @@
   <meta itemprop="description" content="In the realm of digital systems and computer science, the way we represent data is crucial. While binary is the fundamental language of computers, there are numerous encoding schemes designed for specific purposes or to overcome particular challenges. In this blog post, we’ll explore some of these encoding schemes, focusing on Binary-Coded Decimal (BCD), Gray code, and touching on several other important encoding methods. We’ll delve into how they work, their advantages, limitations, and real-world applications.">
   <meta itemprop="datePublished" content="2024-10-07T21:49:56+00:00">
   <meta itemprop="dateModified" content="2024-10-07T21:49:56+00:00">
-  <meta itemprop="wordCount" content="1398">
+  <meta itemprop="wordCount" content="1435">
   <meta itemprop="keywords" content="Bcd,Computer Engineering,Digital Logic Design">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="BCD, Gray Code, and Other Encoding Schemes: Unraveling the World of Digital Data Representation">
@@ -4695,51 +4695,51 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#binary-the-foundation-of-digital-encodingh2"
+                href="#binary-the-foundation-of-digital-encoding"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Binary: The Foundation of Digital Encoding&lt;/h2&gt;</a>
+              >Binary: The Foundation of Digital Encoding</a>
             </li>
           <li>
               <a
-                href="#binary-coded-decimal-bcdh2"
+                href="#binary-coded-decimal-bcd"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Binary-Coded Decimal (BCD)&lt;/h2&gt;</a>
+              >Binary-Coded Decimal (BCD)</a>
             </li>
           <li>
               <a
-                href="#gray-codeh2"
+                href="#gray-code"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Gray Code&lt;/h2&gt;</a>
+              >Gray Code</a>
             </li>
           <li>
               <a
-                href="#other-important-encoding-schemesh2"
+                href="#other-important-encoding-schemes"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Other Important Encoding Schemes&lt;/h2&gt;</a>
+              >Other Important Encoding Schemes</a>
             </li>
           <li>
               <a
-                href="#comparing-encoding-schemesh2"
+                href="#comparing-encoding-schemes"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Comparing Encoding Schemes&lt;/h2&gt;</a>
+              >Comparing Encoding Schemes</a>
             </li>
           <li>
               <a
-                href="#real-world-applicationsh2"
+                href="#real-world-applications"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Real-World Applications&lt;/h2&gt;</a>
+              >Real-World Applications</a>
             </li>
           <li>
               <a
-                href="#the-future-of-encoding-schemesh2"
+                href="#the-future-of-encoding-schemes"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >The Future of Encoding Schemes&lt;/h2&gt;</a>
+              >The Future of Encoding Schemes</a>
             </li>
           <li>
               <a
-                href="#conclusionh2"
+                href="#conclusion"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >Conclusion&lt;/h2&gt;</a>
+              >Conclusion</a>
             </li>
           </ul>
   
@@ -9694,95 +9694,95 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#binary-the-foundation-of-digital-encodingh2">Binary: The Foundation of Digital Encoding
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#binary-the-foundation-of-digital-encoding">Binary: The Foundation of Digital Encoding
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#binary-coded-decimal-bcdh2">Binary-Coded Decimal (BCD)
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#binary-coded-decimal-bcd">Binary-Coded Decimal (BCD)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-bcdh3">What is BCD?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-bcd">What is BCD?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-bcd-worksh3">How BCD Works
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-bcd-works">How BCD Works
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advantages-of-bcdh3">Advantages of BCD
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advantages-of-bcd">Advantages of BCD
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#limitations-of-bcdh3">Limitations of BCD
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#limitations-of-bcd">Limitations of BCD
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-bcdh3">Applications of BCD
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-bcd">Applications of BCD
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#gray-codeh2">Gray Code
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#gray-code">Gray Code
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-gray-codeh3">What is Gray Code?
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#what-is-gray-code">What is Gray Code?
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-gray-code-worksh3">How Gray Code Works
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#how-gray-code-works">How Gray Code Works
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advantages-of-gray-codeh3">Advantages of Gray Code
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#advantages-of-gray-code">Advantages of Gray Code
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-gray-codeh3">Applications of Gray Code
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#applications-of-gray-code">Applications of Gray Code
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#other-important-encoding-schemesh2">Other Important Encoding Schemes
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#other-important-encoding-schemes">Other Important Encoding Schemes
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-ascii-american-standard-code-for-information-interchangeh3">1. ASCII (American Standard Code for Information Interchange)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#1-ascii-american-standard-code-for-information-interchange">1. ASCII (American Standard Code for Information Interchange)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-unicodeh3">2. Unicode
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#2-unicode">2. Unicode
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-hamming-codeh3">3. Hamming Code
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#3-hamming-code">3. Hamming Code
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-run-length-encoding-rleh3">4. Run-Length Encoding (RLE)
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-run-length-encoding-rle">4. Run-Length Encoding (RLE)
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-huffman-codingh3">5. Huffman Coding
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#5-huffman-coding">5. Huffman Coding
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-manchester-encodingh3">6. Manchester Encoding
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#6-manchester-encoding">6. Manchester Encoding
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#comparing-encoding-schemesh2">Comparing Encoding Schemes
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#comparing-encoding-schemes">Comparing Encoding Schemes
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#real-world-applicationsh2">Real-World Applications
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#real-world-applications">Real-World Applications
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-future-of-encoding-schemesh2">The Future of Encoding Schemes
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#the-future-of-encoding-schemes">The Future of Encoding Schemes
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusionh2">Conclusion
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#conclusion">Conclusion
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9816,8 +9816,8 @@
                 </a></div>
         <div class="content">
           <p>In the realm of digital systems and computer science, the way we represent data is crucial. While binary is the fundamental language of computers, there are numerous encoding schemes designed for specific purposes or to overcome particular challenges. In this blog post, we&rsquo;ll explore some of these encoding schemes, focusing on Binary-Coded Decimal (BCD), Gray code, and touching on several other important encoding methods. We&rsquo;ll delve into how they work, their advantages, limitations, and real-world applications.</p>
-<h2>Binary: The Foundation of Digital Encoding</h2><span class="hx-absolute -hx-mt-20" id="binary-the-foundation-of-digital-encodingh2"></span>
-    <a href="#binary-the-foundation-of-digital-encodingh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Binary: The Foundation of Digital Encoding<span class="hx-absolute -hx-mt-20" id="binary-the-foundation-of-digital-encoding"></span>
+    <a href="#binary-the-foundation-of-digital-encoding" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Before we dive into more complex encoding schemes, let&rsquo;s briefly revisit binary encoding, the foundation of all digital systems.</p>
 <p>Binary uses only two digits, 0 and 1, to represent all numbers. For example:</p>
 <!-- wp:code -->
@@ -9825,15 +9825,13 @@
 Binary:  0  1 10 11 100 101 110 111</code></pre>
 <!-- /wp:code -->
 <p>While binary is efficient for computers, it&rsquo;s not always the most convenient for human interpretation or specific applications. This is where alternative encoding schemes come into play.</p>
-<h2>Binary-Coded Decimal (BCD)</h2><span class="hx-absolute -hx-mt-20" id="binary-coded-decimal-bcdh2"></span>
-    <a href="#binary-coded-decimal-bcdh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>What is BCD?</h3><span class="hx-absolute -hx-mt-20" id="what-is-bcdh3"></span>
-    <a href="#what-is-bcdh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Binary-Coded Decimal (BCD)<span class="hx-absolute -hx-mt-20" id="binary-coded-decimal-bcd"></span>
+    <a href="#binary-coded-decimal-bcd" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>What is BCD?<span class="hx-absolute -hx-mt-20" id="what-is-bcd"></span>
+    <a href="#what-is-bcd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Binary-Coded Decimal (BCD) is an encoding scheme that represents decimal digits using a binary code. In its most common form, each decimal digit is represented by a four-bit binary number.</p>
-<!-- wp:heading {"level":3} -->
-<h3>How BCD Works</h3><span class="hx-absolute -hx-mt-20" id="how-bcd-worksh3"></span>
-    <a href="#how-bcd-worksh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>How BCD Works<span class="hx-absolute -hx-mt-20" id="how-bcd-works"></span>
+    <a href="#how-bcd-works" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>In BCD, each decimal digit (0-9) is encoded separately:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">Decimal: 0 1 2 3 4 5 6 7 8 9
@@ -9844,51 +9842,54 @@ BCD:  0000 0001 0010 0011 0100 0101 0110 0111 1000 1001</code></pre>
 <pre class="wp-block-code"><code lang="bash" class="language-bash">2    3
 0010 0011</code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3>Advantages of BCD</h3><span class="hx-absolute -hx-mt-20" id="advantages-of-bcdh3"></span>
-    <a href="#advantages-of-bcdh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Advantages of BCD<span class="hx-absolute -hx-mt-20" id="advantages-of-bcd"></span>
+    <a href="#advantages-of-bcd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Easy conversion</strong>: Converting between decimal and BCD is straightforward, making it useful for systems that interface with decimal inputs or outputs.</li>
+- ***Easy conversion*** : Converting between decimal and BCD is straightforward, making it useful for systems that interface with decimal inputs or outputs. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>No rounding errors</strong>: BCD can represent decimal fractions exactly, which is crucial for financial calculations.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>No rounding errors</strong></em> : BCD can represent decimal fractions exactly, which is crucial for financial calculations.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Limitations of BCD</h3><span class="hx-absolute -hx-mt-20" id="limitations-of-bcdh3"></span>
-    <a href="#limitations-of-bcdh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Limitations of BCD<span class="hx-absolute -hx-mt-20" id="limitations-of-bcd"></span>
+    <a href="#limitations-of-bcd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Inefficient storage</strong>: BCD uses four bits to represent ten possibilities, wasting potential bit combinations.</li>
+- ***Inefficient storage*** : BCD uses four bits to represent ten possibilities, wasting potential bit combinations. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Limited range</strong>: For a given number of bits, BCD can represent fewer numbers than pure binary.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Limited range</strong></em> : For a given number of bits, BCD can represent fewer numbers than pure binary.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Applications of BCD</h3><span class="hx-absolute -hx-mt-20" id="applications-of-bcdh3"></span>
-    <a href="#applications-of-bcdh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Applications of BCD<span class="hx-absolute -hx-mt-20" id="applications-of-bcd"></span>
+    <a href="#applications-of-bcd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Financial systems</strong>: Where exact decimal representations are crucial.</li>
+- ***Financial systems*** : Where exact decimal representations are crucial. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Digital displays</strong>: Many seven-segment displays use BCD input.</li>
+<ul>
+<li><em><strong>Digital displays</strong></em> : Many seven-segment displays use BCD input.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Data communication</strong>: Some protocols use BCD for ease of conversion.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Data communication</strong></em> : Some protocols use BCD for ease of conversion.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Gray Code</h2><span class="hx-absolute -hx-mt-20" id="gray-codeh2"></span>
-    <a href="#gray-codeh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>What is Gray Code?</h3><span class="hx-absolute -hx-mt-20" id="what-is-gray-codeh3"></span>
-    <a href="#what-is-gray-codeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Gray Code<span class="hx-absolute -hx-mt-20" id="gray-code"></span>
+    <a href="#gray-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>What is Gray Code?<span class="hx-absolute -hx-mt-20" id="what-is-gray-code"></span>
+    <a href="#what-is-gray-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Gray code, also known as reflected binary code, is a sequence of binary numbers where adjacent numbers differ by only one bit.</p>
-<!-- wp:heading {"level":3} -->
-<h3>How Gray Code Works</h3><span class="hx-absolute -hx-mt-20" id="how-gray-code-worksh3"></span>
-    <a href="#how-gray-code-worksh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>How Gray Code Works<span class="hx-absolute -hx-mt-20" id="how-gray-code-works"></span>
+    <a href="#how-gray-code-works" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Here&rsquo;s the Gray code sequence for 3-bit numbers:</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">Decimal: 0 1 2 3 4 5 6 7
@@ -9898,42 +9899,47 @@ Gray:    000 001 011 010 110 111 101 100</code></pre>
 <p>To convert from binary to Gray code:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>The most significant bit remains the same.</li>
+- The most significant bit remains the same. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Each subsequent bit is XORed with the previous bit of the binary number.</li>
-<!-- /wp:list-item --></ol>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Advantages of Gray Code</h3><span class="hx-absolute -hx-mt-20" id="advantages-of-gray-codeh3"></span>
-    <a href="#advantages-of-gray-codeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Advantages of Gray Code<span class="hx-absolute -hx-mt-20" id="advantages-of-gray-code"></span>
+    <a href="#advantages-of-gray-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Minimal changes</strong>: Only one bit changes between adjacent numbers, reducing errors in certain applications.</li>
+- ***Minimal changes*** : Only one bit changes between adjacent numbers, reducing errors in certain applications. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Error detection</strong>: It's easier to detect errors when only one bit should change at a time.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Error detection</strong></em> : It&rsquo;s easier to detect errors when only one bit should change at a time.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<!-- wp:heading {"level":3} -->
-<h3>Applications of Gray Code</h3><span class="hx-absolute -hx-mt-20" id="applications-of-gray-codeh3"></span>
-    <a href="#applications-of-gray-codeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>Applications of Gray Code<span class="hx-absolute -hx-mt-20" id="applications-of-gray-code"></span>
+    <a href="#applications-of-gray-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Rotary encoders</strong>: Used in robotics and industrial control to track position.</li>
+- ***Rotary encoders*** : Used in robotics and industrial control to track position. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Analog-to-Digital Conversion</strong>: Reduces errors in the conversion process.</li>
+<ul>
+<li><em><strong>Analog-to-Digital Conversion</strong></em> : Reduces errors in the conversion process.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Genetic algorithms</strong>: Used in some implementations to represent chromosomes.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Genetic algorithms</strong></em> : Used in some implementations to represent chromosomes.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Other Important Encoding Schemes</h2><span class="hx-absolute -hx-mt-20" id="other-important-encoding-schemesh2"></span>
-    <a href="#other-important-encoding-schemesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
-<!-- wp:heading {"level":3} -->
-<h3>1. ASCII (American Standard Code for Information Interchange)</h3><span class="hx-absolute -hx-mt-20" id="1-ascii-american-standard-code-for-information-interchangeh3"></span>
-    <a href="#1-ascii-american-standard-code-for-information-interchangeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h2>Other Important Encoding Schemes<span class="hx-absolute -hx-mt-20" id="other-important-encoding-schemes"></span>
+    <a href="#other-important-encoding-schemes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h3>1. ASCII (American Standard Code for Information Interchange)<span class="hx-absolute -hx-mt-20" id="1-ascii-american-standard-code-for-information-interchange"></span>
+    <a href="#1-ascii-american-standard-code-for-information-interchange" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>ASCII is a character encoding standard for electronic communication. It uses 7 bits to represent 128 characters, including uppercase and lowercase letters, digits, punctuation marks, and control characters.</p>
 <p>Example:</p>
 <!-- wp:code -->
@@ -9941,9 +9947,8 @@ Gray:    000 001 011 010 110 111 101 100</code></pre>
 ASCII:     65 66 67 97 98 99 49 50 51</code></pre>
 <!-- /wp:code -->
 <p>ASCII is widely used in text-based communication and data storage.</p>
-<!-- wp:heading {"level":3} -->
-<h3>2. Unicode</h3><span class="hx-absolute -hx-mt-20" id="2-unicodeh3"></span>
-    <a href="#2-unicodeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>2. Unicode<span class="hx-absolute -hx-mt-20" id="2-unicode"></span>
+    <a href="#2-unicode" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Unicode is a more comprehensive character encoding standard that aims to represent every character from all writing systems of the world.</p>
 <p>Unicode uses various encoding forms, including UTF-8, UTF-16, and UTF-32. UTF-8, which is widely used on the internet, uses 1 to 4 bytes per character.</p>
 <p>Example (UTF-8):</p>
@@ -9952,18 +9957,16 @@ ASCII:     65 66 67 97 98 99 49 50 51</code></pre>
 UTF-8:     41   E2 82 AC E4 BD A0</code></pre>
 <!-- /wp:code -->
 <p>Unicode has become the standard for multilingual text representation in modern computing.</p>
-<!-- wp:heading {"level":3} -->
-<h3>3. Hamming Code</h3><span class="hx-absolute -hx-mt-20" id="3-hamming-codeh3"></span>
-    <a href="#3-hamming-codeh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>3. Hamming Code<span class="hx-absolute -hx-mt-20" id="3-hamming-code"></span>
+    <a href="#3-hamming-code" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Hamming code is an error-detecting and error-correcting code that uses parity bits to identify and correct single-bit errors.</p>
 <p>For example, to encode 4 data bits (D1, D2, D3, D4), we add 3 parity bits (P1, P2, P3):</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">P1 P2 D1 P3 D2 D3 D4</code></pre>
 <!-- /wp:code -->
 <p>Hamming code is used in error-correcting memory and some communication protocols.</p>
-<!-- wp:heading {"level":3} -->
-<h3>4. Run-Length Encoding (RLE)</h3><span class="hx-absolute -hx-mt-20" id="4-run-length-encoding-rleh3"></span>
-    <a href="#4-run-length-encoding-rleh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>4. Run-Length Encoding (RLE)<span class="hx-absolute -hx-mt-20" id="4-run-length-encoding-rle"></span>
+    <a href="#4-run-length-encoding-rle" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>RLE is a simple form of data compression that replaces sequences of identical data elements with a single data value and count.</p>
 <p>Example:</p>
 <!-- wp:code -->
@@ -9971,9 +9974,8 @@ UTF-8:     41   E2 82 AC E4 BD A0</code></pre>
 RLE:      10W3B12W1B</code></pre>
 <!-- /wp:code -->
 <p>RLE is used in image compression, particularly for simple graphics with large contiguous regions of the same color.</p>
-<!-- wp:heading {"level":3} -->
-<h3>5. Huffman Coding</h3><span class="hx-absolute -hx-mt-20" id="5-huffman-codingh3"></span>
-    <a href="#5-huffman-codingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>5. Huffman Coding<span class="hx-absolute -hx-mt-20" id="5-huffman-coding"></span>
+    <a href="#5-huffman-coding" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Huffman coding is a data compression technique that assigns variable-length codes to characters based on their frequency of occurrence. More frequent characters get shorter codes.</p>
 <p>Example:</p>
 <!-- wp:code -->
@@ -9982,98 +9984,131 @@ Frequency: 5  1  6  3
 Huffman:   10 110 0 111</code></pre>
 <!-- /wp:code -->
 <p>Huffman coding is used in various data compression algorithms and file formats.</p>
-<!-- wp:heading {"level":3} -->
-<h3>6. Manchester Encoding</h3><span class="hx-absolute -hx-mt-20" id="6-manchester-encodingh3"></span>
-    <a href="#6-manchester-encodingh3" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
+<h3>6. Manchester Encoding<span class="hx-absolute -hx-mt-20" id="6-manchester-encoding"></span>
+    <a href="#6-manchester-encoding" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><!-- /wp:heading -->
 <p>Manchester encoding is a synchronous clock encoding technique used in data transmission. It represents data by transitions rather than levels.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">Data:       0 1 0 1 1 0
 Manchester: ▔╱▁╲▔╱▁╲▁╲▔╱</code></pre>
 <!-- /wp:code -->
 <p>Manchester encoding is used in Ethernet and other communication protocols for its self-clocking property.</p>
-<h2>Comparing Encoding Schemes</h2><span class="hx-absolute -hx-mt-20" id="comparing-encoding-schemesh2"></span>
-    <a href="#comparing-encoding-schemesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Comparing Encoding Schemes<span class="hx-absolute -hx-mt-20" id="comparing-encoding-schemes"></span>
+    <a href="#comparing-encoding-schemes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>When choosing an encoding scheme, consider the following factors:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Efficiency</strong>: How efficiently does the scheme use available bits?</li>
+- ***Efficiency*** : How efficiently does the scheme use available bits? 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Error resilience</strong>: How well does the scheme handle errors or noise?</li>
+<ul>
+<li><em><strong>Error resilience</strong></em> : How well does the scheme handle errors or noise?</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Ease of encoding/decoding</strong>: How complex are the encoding and decoding processes?</li>
+<ul>
+<li><em><strong>Ease of encoding/decoding</strong></em> : How complex are the encoding and decoding processes?</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Self-clocking</strong>: Does the scheme provide timing information?</li>
+<ul>
+<li><em><strong>Self-clocking</strong></em> : Does the scheme provide timing information?</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Compatibility</strong>: Is the scheme widely supported by existing systems?</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Compatibility</strong></em> : Is the scheme widely supported by existing systems?</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 <p>Different schemes excel in different areas:</p>
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>BCD is efficient for decimal-based human interfaces but inefficient for storage.</li>
+- BCD is efficient for decimal-based human interfaces but inefficient for storage. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Gray code excels in error resilience for incremental changes.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>ASCII and Unicode are optimized for text representation.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Hamming code provides error correction at the cost of additional bits.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>RLE and Huffman coding focus on data compression.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
+<ul>
 <li>Manchester encoding provides self-clocking but uses more bandwidth.</li>
-<!-- /wp:list-item --></ul>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Real-World Applications</h2><span class="hx-absolute -hx-mt-20" id="real-world-applicationsh2"></span>
-    <a href="#real-world-applicationsh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Real-World Applications<span class="hx-absolute -hx-mt-20" id="real-world-applications"></span>
+    <a href="#real-world-applications" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Understanding these encoding schemes is crucial in various fields:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Data Communication</strong>: Protocols like Ethernet use Manchester encoding, while error-correcting codes like Hamming are used in noisy channels.</li>
+- ***Data Communication*** : Protocols like Ethernet use Manchester encoding, while error-correcting codes like Hamming are used in noisy channels. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Computer Architecture</strong>: BCD is used in some arithmetic units, especially in calculators and financial systems.</li>
+<ul>
+<li><em><strong>Computer Architecture</strong></em> : BCD is used in some arithmetic units, especially in calculators and financial systems.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Digital Electronics</strong>: Gray code is used in rotary encoders and analog-to-digital converters.</li>
+<ul>
+<li><em><strong>Digital Electronics</strong></em> : Gray code is used in rotary encoders and analog-to-digital converters.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Software Development</strong>: Understanding character encodings like ASCII and Unicode is crucial for text processing and internationalization.</li>
+<ul>
+<li><em><strong>Software Development</strong></em> : Understanding character encodings like ASCII and Unicode is crucial for text processing and internationalization.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Data Compression</strong>: Techniques like RLE and Huffman coding are fundamental to many compression algorithms.</li>
+<ul>
+<li><em><strong>Data Compression</strong></em> : Techniques like RLE and Huffman coding are fundamental to many compression algorithms.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Cryptography</strong>: Many encoding schemes form the basis of more complex cryptographic algorithms.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>Cryptography</strong></em> : Many encoding schemes form the basis of more complex cryptographic algorithms.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>The Future of Encoding Schemes</h2><span class="hx-absolute -hx-mt-20" id="the-future-of-encoding-schemesh2"></span>
-    <a href="#the-future-of-encoding-schemesh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>The Future of Encoding Schemes<span class="hx-absolute -hx-mt-20" id="the-future-of-encoding-schemes"></span>
+    <a href="#the-future-of-encoding-schemes" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>As technology evolves, so do our encoding needs:</p>
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Quantum Computing</strong>: Quantum systems will require new ways of encoding information, based on quantum states rather than classical bits.</li>
+- ***Quantum Computing*** : Quantum systems will require new ways of encoding information, based on quantum states rather than classical bits. 
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>DNA Storage</strong>: Encoding digital data in DNA sequences is an emerging field, requiring novel encoding schemes.</li>
+<ul>
+<li><em><strong>DNA Storage</strong></em> : Encoding digital data in DNA sequences is an emerging field, requiring novel encoding schemes.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>Advanced Error Correction</strong>: As we push the limits of data transmission and storage, more sophisticated error-correcting codes are being developed.</li>
+<ul>
+<li><em><strong>Advanced Error Correction</strong></em> : As we push the limits of data transmission and storage, more sophisticated error-correcting codes are being developed.</li>
+</ul>
 <!-- /wp:list-item -->
 <!-- wp:list-item -->
-<li><strong>AI and Machine Learning</strong>: These fields are driving the development of encoding schemes optimized for neural networks and other AI algorithms.</li>
-<!-- /wp:list-item --></ol>
+<ul>
+<li><em><strong>AI and Machine Learning</strong></em> : These fields are driving the development of encoding schemes optimized for neural networks and other AI algorithms.</li>
+</ul>
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
-<h2>Conclusion</h2><span class="hx-absolute -hx-mt-20" id="conclusionh2"></span>
-    <a href="#conclusionh2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+<h2>Conclusion<span class="hx-absolute -hx-mt-20" id="conclusion"></span>
+    <a href="#conclusion" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
 <p>Encoding schemes are the unsung heroes of the digital world. They bridge the gap between the binary language of computers and the diverse needs of various applications. From the simplicity of BCD to the error-resilience of Gray code, from the universality of Unicode to the efficiency of Huffman coding, each scheme plays a crucial role in modern computing and communication.</p>
 <p>As we&rsquo;ve explored in this post, there&rsquo;s no one-size-fits-all encoding scheme. The choice depends on the specific requirements of the application, balancing factors like efficiency, error-resilience, and ease of use. Understanding these schemes provides insight into the inner workings of digital systems and can be invaluable in designing efficient and robust digital solutions.</p>
 <p>Whether you&rsquo;re developing software, designing digital circuits, working on data compression algorithms, or simply curious about how data is represented in the digital world, a solid grasp of these encoding schemes is a valuable asset. They form the foundation upon which our entire digital infrastructure is built, enabling the seamless flow of information that we often take for granted in our increasingly connected world.</p>

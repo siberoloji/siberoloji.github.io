@@ -29,22 +29,22 @@ url: /how-to-locate-and-edit-hosts-file-on-a-mac-using-terminal/
  
 
  
- ## How to make changes to the hosts file?</h2>
+ ## How to make changes to the hosts file?
 <!-- /wp:heading -->
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's open the hosts file</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Let's open the hosts file 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
-  Let's open Spotlight with the help of <strong>Command + Spacebar</strong> keys. Let's open the terminal application by typing "Terminal" in the search box. 
+  Let's open Spotlight with the help of ***Command + Spacebar***  keys. Let's open the terminal application by typing "Terminal" in the search box. 
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Let's open the hosts file with the nano editor from the command line.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Let's open the hosts file with the nano editor from the command line. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   When you enter the command, it will ask for your password. 
@@ -65,9 +65,9 @@ url: /how-to-locate-and-edit-hosts-file-on-a-mac-using-terminal/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>In this case, you should add the following line to the hosts file.</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- In this case, you should add the following line to the hosts file. 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   192.168.1.20 myserver.com 
@@ -77,24 +77,24 @@ url: /how-to-locate-and-edit-hosts-file-on-a-mac-using-terminal/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Flush DNS Cache</li>
-<!-- /wp:list-item --></ul>
+ <!-- wp:list-item -->
+- Flush DNS Cache 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
   In order for your changes to take effect, you must clear the DNS temporary records kept on your computer. The following commands will suffice for this. 
  
 
-<!-- wp:heading {"level":3} -->
- ### macOS Monterey, Big Sur</h3>
+
+ ### macOS Monterey, Big Sur
 <!-- /wp:heading -->
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder</code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
- ### macOS Catalina, Mojave, High Sierra, Sierra, Mountain Lion, Lion</h3>
+
+ ### macOS Catalina, Mojave, High Sierra, Sierra, Mountain Lion, Lion
 <!-- /wp:heading -->
 
 <!-- wp:code -->
@@ -102,7 +102,7 @@ url: /how-to-locate-and-edit-hosts-file-on-a-mac-using-terminal/
 <!-- /wp:code -->
 
  
- ## Conclusion</h2>
+ ## Conclusion
 <!-- /wp:heading -->
 
   In this article, we have made our own IP address definition instead of the results from the DNS server by editing the hosts file. In this way, we explained that even if we do not have a public IP address, we can use our own home server in our system by entering the hostname instead of the IP address. 

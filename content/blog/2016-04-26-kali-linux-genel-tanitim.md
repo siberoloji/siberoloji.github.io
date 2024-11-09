@@ -29,87 +29,87 @@ title: Kali Linux Genel Tanıtım
 url: /tr/kali-linux-genel-tanitim/
 ---
 
-  Bilişim sistemleri güvenlik, test ve inceleme alanındaki faaliyetler yaygınlaştıkça ortaya çıkan ihtiyaçlara göre geliştirilen İşletim Sistemlerinin sayısı da artmaktadır. Bir kısım Linux dağıtımı CD/DVD vb. ortamlarda doğrudan çalıştırılabilir olarak, Kali Linux ve diğer bir kısmı ise hem çalıştırılabilir ve hem de kurulabilir şekilde dağıtılmaktadır.</p>
+  Bilişim sistemleri güvenlik, test ve inceleme alanındaki faaliyetler yaygınlaştıkça ortaya çıkan ihtiyaçlara göre geliştirilen İşletim Sistemlerinin sayısı da artmaktadır. Bir kısım Linux dağıtımı CD/DVD vb. ortamlarda doğrudan çalıştırılabilir olarak, Kali Linux ve diğer bir kısmı ise hem çalıştırılabilir ve hem de kurulabilir şekilde dağıtılmaktadır.
  
 
-  Bu dağıtımların içerisinde kurulu olan hazır programlar ise maksat ve hedeflere göre sınıflandırılabilmektedir. Bir çoğu açık kaynak kodlu olan programların arasında ticari yazılımlar da vardır. Ticari yazılımlar, topluluk sürümlerinde bir kısım özelliklerini ücretsiz kullanıma açmaktadır. Kullanıcı, Pro vb. Sürümü kullanmak isterse, ücretini ödeyerek lisans satın alabilmektedir.</p>
+  Bu dağıtımların içerisinde kurulu olan hazır programlar ise maksat ve hedeflere göre sınıflandırılabilmektedir. Bir çoğu açık kaynak kodlu olan programların arasında ticari yazılımlar da vardır. Ticari yazılımlar, topluluk sürümlerinde bir kısım özelliklerini ücretsiz kullanıma açmaktadır. Kullanıcı, Pro vb. Sürümü kullanmak isterse, ücretini ödeyerek lisans satın alabilmektedir.
  
 
-  <a href="http://distrowatch.com/" target="_blank" rel="noreferrer noopener">Distrowatch.com</a>&nbsp;sitesinde, Forensics kategorisini ve istatistikleri incelediğimizde popülerlik sıralamasına göre dağıtımların isimlerini aşağıda bulabilirsiniz.</p>
+  <a href="http://distrowatch.com/" target="_blank" rel="noreferrer noopener">Distrowatch.com</a>&nbsp;sitesinde, Forensics kategorisini ve istatistikleri incelediğimizde popülerlik sıralamasına göre dağıtımların isimlerini aşağıda bulabilirsiniz.
  
 
-  1.&nbsp;Kali Linux&nbsp;(11)<br>2.&nbsp;BackBox Linux&nbsp;(56)<br>3.&nbsp;BlackArch Linux&nbsp;(77)<br>4.&nbsp;CAINE&nbsp;(121)<br>5.&nbsp;DEFT Linux&nbsp;(184)<br>6.&nbsp;Parrot Security OS&nbsp;(228)<br>7.&nbsp;NetSecL OS&nbsp;(242)<br>8.&nbsp;Matriux&nbsp;(0)</p>
+  1.&nbsp;Kali Linux&nbsp;(11)<br>2.&nbsp;BackBox Linux&nbsp;(56)<br>3.&nbsp;BlackArch Linux&nbsp;(77)<br>4.&nbsp;CAINE&nbsp;(121)<br>5.&nbsp;DEFT Linux&nbsp;(184)<br>6.&nbsp;Parrot Security OS&nbsp;(228)<br>7.&nbsp;NetSecL OS&nbsp;(242)<br>8.&nbsp;Matriux&nbsp;(0)
  
 
-  Biz bu çalışmamızda, Kali Linux dağıtımını inceleyeceğiz.</p>
+  Biz bu çalışmamızda, Kali Linux dağıtımını inceleyeceğiz.
  
 
  
- ## Kali Linux</h2>
+ ## Kali Linux
 <!-- /wp:heading -->
 
-  İlk çıktığında Backtrack adıyla tanınan dağıtım, Ubuntu İşletim Sistemini temel alarak oluşturulmuştur. Backtrack aslında WHAX ve Auditor Security Collection isimli dağıtımların birleşmesiyle ortaya çıkmıştır. Mart 2013 tarihinden itibaren ise Debian temelli ve Kali Linux adıyla dağıtılmaya başlanmıştır.</p>
+  İlk çıktığında Backtrack adıyla tanınan dağıtım, Ubuntu İşletim Sistemini temel alarak oluşturulmuştur. Backtrack aslında WHAX ve Auditor Security Collection isimli dağıtımların birleşmesiyle ortaya çıkmıştır. Mart 2013 tarihinden itibaren ise Debian temelli ve Kali Linux adıyla dağıtılmaya başlanmıştır.
  
 
-  Debian test sürümünü temel almakta ve güncellemelerini bu sürüme göre yapmaktadır. Armel, armhf, i386 ve x86_64 mimarilerini desteklemektedir. Masaüstü ortamı olarak GNOME kullanan dağıtım kurulduğunda, 600 kadar program kullanıma hazır halde bulunmaktadır.</p>
+  Debian test sürümünü temel almakta ve güncellemelerini bu sürüme göre yapmaktadır. Armel, armhf, i386 ve x86_64 mimarilerini desteklemektedir. Masaüstü ortamı olarak GNOME kullanan dağıtım kurulduğunda, 600 kadar program kullanıma hazır halde bulunmaktadır.
  
 
  
- ## Kurulu olarak gelen bazı programlar</h2>
+ ## Kurulu olarak gelen bazı programlar
 <!-- /wp:heading -->
 
-  Armitage</p>
+  Armitage
  
 
-  nmap</p>
+  nmap
  
 
-  Wireshark</p>
+  Wireshark
  
 
-  John the Ripper</p>
+  John the Ripper
  
 
-  Aircrack-ng</p>
+  Aircrack-ng
  
 
-  Burp Suite</p>
+  Burp Suite
  
 
-  OWASP ZAP</p>
+  OWASP ZAP
  
 
-  Metasploit Framework</p>
+  Metasploit Framework
  
 
  
- ## Kali Linux Genel Özellikleri</h2>
+ ## Kali Linux Genel Özellikleri
 <!-- /wp:heading -->
 
-  Kullanılan programların kaynak kodlarına git depolarından ulaşmak mümkündür.&nbsp;<a href="http://git.kali.org/gitweb/" target="_blank" rel="noreferrer noopener">http://git.kali.org/gitweb/</a>&nbsp;adresini ziyaret ederek kaynak kodları incelemeniz, hatta kendinize göre yeniden düzenlemeniz de mümkün.</p>
+  Kullanılan programların kaynak kodlarına git depolarından ulaşmak mümkündür.&nbsp;<a href="http://git.kali.org/gitweb/" target="_blank" rel="noreferrer noopener">http://git.kali.org/gitweb/</a>&nbsp;adresini ziyaret ederek kaynak kodları incelemeniz, hatta kendinize göre yeniden düzenlemeniz de mümkün.
  
 
-  File System Hierarchy FHS standartlarını takip eder. Kullanıcıların diğer dağıtımlardan tanıdıkları dosya sistemi (FHS Standartı) kullanılmaktadır.</p>
+  File System Hierarchy FHS standartlarını takip eder. Kullanıcıların diğer dağıtımlardan tanıdıkları dosya sistemi (FHS Standartı) kullanılmaktadır.
  
 
-  İşletim sistemi için geliştirilen yazılımlar, programcıları tarafından dijital olarak imzalanmaktadır.</p>
+  İşletim sistemi için geliştirilen yazılımlar, programcıları tarafından dijital olarak imzalanmaktadır.
  
 
-  Kali Linux, özel olarak sistem güvenlik uzmanlarının kullanımı için geliştirilmiştir. Bu sebeple, günlük normal kullanım için bir takım engeller ile karşılaşmak mümkündür.</p>
+  Kali Linux, özel olarak sistem güvenlik uzmanlarının kullanımı için geliştirilmiştir. Bu sebeple, günlük normal kullanım için bir takım engeller ile karşılaşmak mümkündür.
  
 
  
- ## Kali Linux, diğer dağıtımlardan farkı ne?</h2>
+ ## Kali Linux, diğer dağıtımlardan farkı ne?
 <!-- /wp:heading -->
 
-  Kullanıcı, root hesabını kullanır.</p>
+  Kullanıcı, root hesabını kullanır.
  
 
-  Ağ servisleri devre dışıdır.</p>
+  Ağ servisleri devre dışıdır.
  
 
-  Değiştirilmiş Linux Kernel kullanılmaktadır.</p>
+  Değiştirilmiş Linux Kernel kullanılmaktadır.
  
 
-  Minimum ve kararlı paketler tercih edilir.</p>
+  Minimum ve kararlı paketler tercih edilir.
  

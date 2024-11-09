@@ -27,41 +27,41 @@ title: Linux Shred Komutu ile Silme
 url: /tr/linux-shred-komutu-ile-silme/
 ---
 
-  Linux ve diğer işletim sistemlerinde kullanılan silme işleminin, aslında dosyalarınızı gerçekten silmediğini biliyor musunuz? Konuyu bir miktar açıklamaya çalıştığımız bu yazı ilginizi çekebilir.</p>
+  Linux ve diğer işletim sistemlerinde kullanılan silme işleminin, aslında dosyalarınızı gerçekten silmediğini biliyor musunuz? Konuyu bir miktar açıklamaya çalıştığımız bu yazı ilginizi çekebilir.
  
 
-  1. Görsel arayüz kullanıyorsanız, Geri Dönüşüm Kutusu, Trash veya Çöp kutusu ifadelerini mutlaka bilirsiniz. Masaüstü ortamında dosyaya sağ tıklar ve SİL-Çöpe Gönder seçeneklerinden birisini seçersiniz.</p>
+  1. Görsel arayüz kullanıyorsanız, Geri Dönüşüm Kutusu, Trash veya Çöp kutusu ifadelerini mutlaka bilirsiniz. Masaüstü ortamında dosyaya sağ tıklar ve SİL-Çöpe Gönder seçeneklerinden birisini seçersiniz.
  
 
-  2. İşletim Sisteminize göre, dosyayı Çöp Kutusuna göndermeden silme (Shift+Delete) yöntemi de bulunuyor olabilir.</p>
+  2. İşletim Sisteminize göre, dosyayı Çöp Kutusuna göndermeden silme (Shift+Delete) yöntemi de bulunuyor olabilir.
  
 
-  3. Komut satırından rm komutuyla silme işlemini de gerçekleştirebilirsiniz (Not:Komut satırında silme geri dönüşümsüz yapılır)</p>
+  3. Komut satırından rm komutuyla silme işlemini de gerçekleştirebilirsiniz (Not:Komut satırında silme geri dönüşümsüz yapılır)
  
 
-  Yukarıda bahsedilen yöntemlerden hangisini uygularsanız uygulayın, aslında dosyalarınız disk alanında yazılı oldukları yerlerden fiziksel olarak silinmezler. Sadece işletim sisteminizin yer bulma kataloğuna, o adresler boştur bilgisi kodlanır. Dolayısıyla üzerine yazılabilir hale gelir. Aslında sildiğinizi düşündüğünüz veriler, diskinizde halen duruyordur. Ne zamanki yeni bilgiler diske yazılmak için yer aranırsa, üzerine yazılır. Peki, gerçekten kalıcı silme nasıl yapılabilir?</p>
+  Yukarıda bahsedilen yöntemlerden hangisini uygularsanız uygulayın, aslında dosyalarınız disk alanında yazılı oldukları yerlerden fiziksel olarak silinmezler. Sadece işletim sisteminizin yer bulma kataloğuna, o adresler boştur bilgisi kodlanır. Dolayısıyla üzerine yazılabilir hale gelir. Aslında sildiğinizi düşündüğünüz veriler, diskinizde halen duruyordur. Ne zamanki yeni bilgiler diske yazılmak için yer aranırsa, üzerine yazılır. Peki, gerçekten kalıcı silme nasıl yapılabilir?
  
 
-  Bu işlemi yapabilmek için Linux ile kurulu olarak gelen shred komutu bulunmaktadır. Shred komutu, silme işlemini bizzat disk üzerindeki adreslere giderek yapar. Komut parametrelerine yazacağınız kurallara göre, dosyanın bulunduğu adreslere rastgele veri bitleri yazar. Dosyayı parçalar, karıştırır ve üzerine 10-20-30 veya daha fazla sayıda yeni rastgele veriler yazarak geri dönüştürülemez hale getirir. Bu işlemin normalde kullanılmamasının nedeni olarak da; diske gereğinden fazla veri yazdırdığınızda, diskin kullanım ömrünün kısalacağı varsayımı gösterilir.</p>
+  Bu işlemi yapabilmek için Linux ile kurulu olarak gelen shred komutu bulunmaktadır. Shred komutu, silme işlemini bizzat disk üzerindeki adreslere giderek yapar. Komut parametrelerine yazacağınız kurallara göre, dosyanın bulunduğu adreslere rastgele veri bitleri yazar. Dosyayı parçalar, karıştırır ve üzerine 10-20-30 veya daha fazla sayıda yeni rastgele veriler yazarak geri dönüştürülemez hale getirir. Bu işlemin normalde kullanılmamasının nedeni olarak da; diske gereğinden fazla veri yazdırdığınızda, diskin kullanım ömrünün kısalacağı varsayımı gösterilir.
  
 
-  Şimdi bir örnekle shred komutunun bir dosyayı nasıl sildiğini görelim.</p>
+  Şimdi bir örnekle shred komutunun bir dosyayı nasıl sildiğini görelim.
  
 
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">shred -vuf --iterations=32 systemctl.xls</code></pre>
 <!-- /wp:code -->
 
-  Örneğimizde, systemctl.xls isimli, 10752 byte uzunlukta bir dosya bulunmaktadır. Bu dosya için -v (verbose), -u (remove), -f (force) parametreleri verilmiş ve işlemin (iterations) 32 defa tekrar edilmesi istenmiştir. Burada;</p>
+  Örneğimizde, systemctl.xls isimli, 10752 byte uzunlukta bir dosya bulunmaktadır. Bu dosya için -v (verbose), -u (remove), -f (force) parametreleri verilmiş ve işlemin (iterations) 32 defa tekrar edilmesi istenmiştir. Burada;
  
 
-  -v (verbose): Yapılan işlemin ekranda gösterilmesi istenmektedir.</p>
+  -v (verbose): Yapılan işlemin ekranda gösterilmesi istenmektedir.
  
 
-  -u (remove): Silme işleminden sonra dosyanın bölünmesi ve daha sonra rm komutuyla silinmesi istenmiştir. -u parametresi kullanılmaz ise dosyanın üzerine yazıldığı halde, dosya ismi sistemde görünmeye devam eder. Sadece içeriği okunamaz.</p>
+  -u (remove): Silme işleminden sonra dosyanın bölünmesi ve daha sonra rm komutuyla silinmesi istenmiştir. -u parametresi kullanılmaz ise dosyanın üzerine yazıldığı halde, dosya ismi sistemde görünmeye devam eder. Sadece içeriği okunamaz.
  
 
-  -f (force):Bu parametre ile dosya, silmeye karşı korumalı olsa bile yetki değiştirilmesine izin verilmektedir.</p>
+  -f (force):Bu parametre ile dosya, silmeye karşı korumalı olsa bile yetki değiştirilmesine izin verilmektedir.
  
 
 <!-- wp:code -->
@@ -120,5 +120,5 @@ shred: 00: renamed to 0
 shred: systemctl.xls: removed</code></pre>
 <!-- /wp:code -->
 
-  Bu komut ve parametreler ile dosya diskinizden oldukça kalıcı olarak silinmiştir.</p>
+  Bu komut ve parametreler ile dosya diskinizden oldukça kalıcı olarak silinmiştir.
  

@@ -27,8 +27,8 @@ url: /information-gathering-procedures-2-target-selection/
   We have started the Information Gathering process, which is the 2nd Phase of Penetration Testing, with our article found at this link. We will try to explain the Target Selection title, which is one of the main topics we mentioned in that article. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Clear Definition of the Goal</h3>
+
+ ### Clear Definition of the Goal
 <!-- /wp:heading -->
 
   When collecting information about an IT system begins, inevitably many domain names or IP addresses will be discovered. Sometimes, organizations have systems with a .com extension, but also have .net or .xyz addresses. At this point, it should be clearly stated that the team performing the test should never go beyond the scope determined during coordination. 
@@ -37,8 +37,8 @@ url: /information-gathering-procedures-2-target-selection/
   If the scope is subject to restrictive rules, it is not possible to go beyond the main framework. Even if some systems contain very useful and useful information, it should be essential to strictly adhere to the rules of engagement, which we will explain below. Otherwise, it is inevitable that problems will occur both legally and ethically. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Rules of Engagement and Boundaries</h3>
+
+ ### Rules of Engagement and Boundaries
 <!-- /wp:heading -->
 
   The rules that emerge by linking the scope determined in coordination meetings to rules in detail -clear and without any room for doubt- are called rules of engagement. For example, when testing the X server, packets from an out-of-scope data source can be recorded in the analysis software. The rules that dictate which behavior to follow when this data is detected both set limits for the test team and determine the degree of their freedom. 
@@ -50,8 +50,8 @@ url: /information-gathering-procedures-2-target-selection/
   In some cases, a member of the testing team may forget these rules because he is concentrating on something else. For this reason, it is not desirable for penetration tests to be performed by one person. If possible, it should be preferred to have at least two people. If the team consists of 3 people, task sharing and time planning will be more effective and productivity will increase. In this way, it will be possible for the other member to notice the rules and restrictions that are overlooked by one team member. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Complying with the Test Duration and Time Plan</h3>
+
+ ### Complying with the Test Duration and Time Plan
 <!-- /wp:heading -->
 
   How much of the total time planned for Penetration Testing is allocated to the Information Gathering phase? There may be tests that can and cannot be performed during this time. Some tests and analyses can take 1-2 months depending on their characteristics. 
@@ -72,8 +72,8 @@ url: /information-gathering-procedures-2-target-selection/
   This time plan&nbsp;&nbsp;&nbsp;should be clearly stated and put into writing in&nbsp;the Control Measures section, which is a sub-item of the Coordination phase, and in the Payment Method section under other topics. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Remembering the Ultimate Goal of the Test</h3>
+
+ ### Remembering the Ultimate Goal of the Test
 <!-- /wp:heading -->
 
   During information collection, the ultimate purpose of the test should not be forgotten. These operations should be performed using tools that support the ultimate goal of the test. 

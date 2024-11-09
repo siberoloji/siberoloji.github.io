@@ -87,7 +87,7 @@ graphical.target</code></pre>
  
 
  
- ## graphical.target tan multiuser-target a geçiş</h2>
+ ## graphical.target tan multiuser-target a geçiş
 <!-- /wp:heading -->
 
   Sistemimiz şu an graphical.target dediğimiz grafik arayüzde çalışıyor.  Burada yapılan işlem masaüstü ekranında Terminal penceresi açmak değildir. Masaüstü yöneticisini tamamen durdurmaktır. Dikkat etmelisiniz. Aşağıdaki komut sayesinde artık masaüstü yöneticisi ve grafik arayüz kullanan programlar tamamen durduruldu. Komut satırındasınız.  
@@ -98,7 +98,7 @@ graphical.target</code></pre>
 <!-- /wp:code -->
 
  
- ## multiuser-target tan graphical.target a geçiş</h2>
+ ## multiuser-target tan graphical.target a geçiş
 <!-- /wp:heading -->
 
   Grafik arayüzü tekrar başlatmak isterseniz aşağıdaki komutu kullanabilirsiniz. Bu komut sonucunda grafik arayüz ve masaüstü yöneticisi tekrar başlatılacaktır 
@@ -109,7 +109,7 @@ graphical.target</code></pre>
 <!-- /wp:code -->
 
  
- ## İlk açılış varsayılan hedef ayarı</h2>
+ ## İlk açılış varsayılan hedef ayarı
 <!-- /wp:heading -->
 
   Yukarıda verdiğimiz geçiş komutları, sistem açıldıktan sonra başlatma, sonlandırma ve geçiş işlemleri için kullanılmaktadır. Şimdi ise, sisteminiz ilk açıldığında hangi durumu hedef almasını istediğimizi ayarlayalım. Bunun için "systemctl set-default " komutunu kullanacağız. 

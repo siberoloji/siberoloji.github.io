@@ -31,25 +31,25 @@ url: /information-gathering-procedures-1-basic-approach/
  
 
 <!-- wp:list -->
-<ul><!-- wp:list-item -->
-<li>Basic Approach</li>
+ <!-- wp:list-item -->
+- Basic Approach 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Target Selection</li>
+- Target Selection 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Open Source Intelligence</li>
+- Open Source Intelligence 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Covert Information Collection</li>
+- Covert Information Collection 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Identifying Protection Mechanisms</li>
-<!-- /wp:list-item --></ul>
+- Identifying Protection Mechanisms 
+<!-- /wp:list-item --> 
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":1} -->
@@ -60,42 +60,42 @@ url: /information-gathering-procedures-1-basic-approach/
  
 
  
- ## Layer 1</h2>
+ ## Layer 1
 <!-- /wp:heading -->
 
   This layer is the fastest part of information gathering and is performed through automatic programs. These automatic information gathering tools produce results about the target by scanning search engines and internet archives.<br>It also includes researching whether the target has certain standard information security policies and how well these standards are followed. This layer must be implemented in order to be able to say that the Information Gathering phase has been completed.<br>If a company wants to have a conformity test done for the sector standard (e.g.: ISO 27001), this layer will be sufficient. 
  
 
  
- ## Layer 2</h2>
+ ## Layer 2
 <!-- /wp:heading -->
 
   In addition to the operations carried out in the 1st Layer, these are detailed information collection operations, especially those performed manually. It also includes information gathering methods and Open Source Intelligence that seek answers to specific questions. More details of physical location, address information and business relationships are examined.<br>If a company aims for long-term information security along with compliance with industry standards and plans to enter into business agreements with 3rd party suppliers, it should also consider using this layer. 
  
 
  
- ## Layer 3</h2>
+ ## Layer 3
 <!-- /wp:heading -->
 
   These are detailed information gathering processes that may be required in very advanced penetration tests. This is a layer that is spread over a long period of time and where every possible technique is used. It is not required to be done in every penetration test. Information gathering for this layer is more relevant to the state level.<br>In addition to information gathering, structures that plan to establish a permanent and staffed cyber defense organization should use this layer. 
  
 
  
- ## What is Information Collection?</h2>
+ ## What is Information Collection?
 <!-- /wp:heading -->
 
   In the later stages of the Penetration Test, vulnerability analysis and system entry processes will be performed. In order for these stages not to be inconclusive, some basic information is needed. The more information is collected in this stage, the more attack vectors that can be revealed and the probability of success will increase.<br>The attack vector describes the path of the attack. Let's assume that 10 different methods can be used and which steps can be followed in light of the information collected. Each of these 10 different methods is called an attack vector, but they are also ranked by calculating the probability of success among themselves. It is not possible to apply all of them at once.<br>All vectors and potential threats must be reported to the company in the Penetration Test result report. 
  
 
  
- ## Why Collect Information?</h2>
+ ## Why Collect Information?
 <!-- /wp:heading -->
 
   Penetration Testing Information Gathering process is completely related to Open Source Intelligence. In this way, the company will determine how much of its information is in the hands of open sources and will be able to take the necessary precautions.<br>In this process, the points that are likely to enter the system are tried to be revealed. These can be electronic, physical and human-based. Physical vulnerabilities will shed light on the precautions that need to be taken in the field of physical security, and human-based vulnerabilities will shed light on social engineering and employee training. 
  
 
  
- ## What is Information Collection Not?</h2>
+ ## What is Information Collection Not?
 <!-- /wp:heading -->
 
   If the desired information cannot be obtained through the layers used during information collection processes, non-standard methods are not used to find it. This approach is outside the scope of Penetration Testing. For example, operations such as garbage disposal are not covered. 

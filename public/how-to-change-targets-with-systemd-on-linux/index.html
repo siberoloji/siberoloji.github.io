@@ -11,24 +11,89 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>How to change targets with systemd on Linux – Siberoloji</title>
-  <meta name="description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system." /><link rel="canonical" href="http://localhost:1313/how-to-change-targets-with-systemd-on-linux/" itemprop="url" />
+  <meta name="description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system. First, let&#39;s see the target states that are installed and active in our system. You can use the &#34;systemctl list-units --type=target&#34; command for this. linux@rpi4:~ $ systemctl list-units --type=target UNIT LOAD ACTIVE SUB DESCRIPTION basic.target loaded active active Basic System cryptsetup.target loaded active active Local Encrypted Volumes getty.target loaded active active Login Prompts graphical.target loaded active active Graphical Interface integritysetup.target loaded active active Local Integrity Protected Volumes local-fs-pre.target loaded active active Preparation for Local File Systems local-fs.target loaded active active Local File Systems machines.target loaded active active Containers multi-user.target loaded active active Multi-User System network-online.target loaded active active Network is Online network.target loaded active active Network nfs-client.target loaded active active NFS client services nss-user-lookup.target loaded active active User and Group Name Lookups paths.target loaded active active Path Units remote-fs-pre.target loaded active active Preparation for Remote File Systems remote-fs.target loaded active active Remote File Systems rpc_pipefs.target loaded active active rpc_pipefs.target slices.target loaded active active Slice Units sockets.target loaded active active Socket Units swap.target loaded active active Swaps sysinit.target loaded active active System Initialization time-set.target loaded active active System Time Set timers.target loaded active active Timer Units veritysetup.target loaded active active Local Verity Protected Volumes LOAD = Reflects whether the unit definition was properly loaded. ACTIVE = The high-level unit activation state, i.e. generalization of SUB. SUB = The low-level unit activation state, values depend on unit type. 24 loaded units listed. Pass --all to see loaded but inactive units, too. To show all installed unit files use &#39;systemctl list-unit-files&#39;. Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are &#34;graphical.target&#34; and &#34;multi-user.target&#34;, we do not take the others into consideration. First, let&#39;s see the boot target set by default in our system. For this we use the &#34;systemctl get-default&#34; command. $ systemctl get-default graphical.target You can see that the default opening target set in our system is the graphical interface &#34;graphical.target&#34;. The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface. Well, if you don&#39;t need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as &#34;multi-user.target&#34; in our commands. from graphical.target to multiuser-target Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line. sudo systemctl isolate multi-user.target from multiuser-target to graphical.target If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted. sudo systemctl isolate graphical.target First boot default target setup The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let&#39;s set which state we want your system to target when it first turns on. For this we will use the &#34;systemctl set-default &#34; command. sudo systemctl set-default multi-user.target sudo systemctl set-default graphical.target Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need." /><link rel="canonical" href="http://localhost:1313/how-to-change-targets-with-systemd-on-linux/" itemprop="url" />
 
 <meta property="og:title" content="How to change targets with systemd on Linux" />
-<meta property="og:description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system." />
+<meta property="og:description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.
+ First, let&#39;s see the target states that are installed and active in our system. You can use the &#34;systemctl list-units --type=target&#34; command for this.
+
+linux@rpi4:~ $ systemctl list-units --type=target
+  UNIT                   LOAD   ACTIVE SUB    DESCRIPTION                        
+  basic.target           loaded active active Basic System
+  cryptsetup.target      loaded active active Local Encrypted Volumes
+  getty.target           loaded active active Login Prompts
+  graphical.target       loaded active active Graphical Interface
+  integritysetup.target  loaded active active Local Integrity Protected Volumes
+  local-fs-pre.target    loaded active active Preparation for Local File Systems
+  local-fs.target        loaded active active Local File Systems
+  machines.target        loaded active active Containers
+  multi-user.target      loaded active active Multi-User System
+  network-online.target  loaded active active Network is Online
+  network.target         loaded active active Network
+  nfs-client.target      loaded active active NFS client services
+  nss-user-lookup.target loaded active active User and Group Name Lookups
+  paths.target           loaded active active Path Units
+  remote-fs-pre.target   loaded active active Preparation for Remote File Systems
+  remote-fs.target       loaded active active Remote File Systems
+  rpc_pipefs.target      loaded active active rpc_pipefs.target
+  slices.target          loaded active active Slice Units
+  sockets.target         loaded active active Socket Units
+  swap.target            loaded active active Swaps
+  sysinit.target         loaded active active System Initialization
+  time-set.target        loaded active active System Time Set
+  timers.target          loaded active active Timer Units
+  veritysetup.target     loaded active active Local Verity Protected Volumes
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+24 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use &#39;systemctl list-unit-files&#39;.
+
+ Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are &#34;graphical.target&#34; and &#34;multi-user.target&#34;, we do not take the others into consideration.
+ First, let&#39;s see the boot target set by default in our system. For this we use the &#34;systemctl get-default&#34; command.
+
+$ systemctl get-default 
+graphical.target
+
+ You can see that the default opening target set in our system is the graphical interface &#34;graphical.target&#34;. The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface.
+ Well, if you don&#39;t need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as &#34;multi-user.target&#34; in our commands.
+from graphical.target to multiuser-target
+    
+ Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line.
+
+sudo systemctl isolate multi-user.target
+
+from multiuser-target to graphical.target
+    
+ If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted.
+
+sudo systemctl isolate graphical.target
+
+First boot default target setup
+    
+ The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let&#39;s set which state we want your system to target when it first turns on. For this we will use the &#34;systemctl set-default &#34; command.
+
+sudo systemctl set-default multi-user.target
+
+
+sudo systemctl set-default graphical.target
+
+ Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/how-to-change-targets-with-systemd-on-linux/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-01-24T23:08:33+00:00" />
 <meta property="article:modified_time" content="2024-01-24T23:08:33+00:00" />
 
   <meta itemprop="name" content="How to change targets with systemd on Linux">
-  <meta itemprop="description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.">
+  <meta itemprop="description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system. First, let&#39;s see the target states that are installed and active in our system. You can use the &#34;systemctl list-units --type=target&#34; command for this. linux@rpi4:~ $ systemctl list-units --type=target UNIT LOAD ACTIVE SUB DESCRIPTION basic.target loaded active active Basic System cryptsetup.target loaded active active Local Encrypted Volumes getty.target loaded active active Login Prompts graphical.target loaded active active Graphical Interface integritysetup.target loaded active active Local Integrity Protected Volumes local-fs-pre.target loaded active active Preparation for Local File Systems local-fs.target loaded active active Local File Systems machines.target loaded active active Containers multi-user.target loaded active active Multi-User System network-online.target loaded active active Network is Online network.target loaded active active Network nfs-client.target loaded active active NFS client services nss-user-lookup.target loaded active active User and Group Name Lookups paths.target loaded active active Path Units remote-fs-pre.target loaded active active Preparation for Remote File Systems remote-fs.target loaded active active Remote File Systems rpc_pipefs.target loaded active active rpc_pipefs.target slices.target loaded active active Slice Units sockets.target loaded active active Socket Units swap.target loaded active active Swaps sysinit.target loaded active active System Initialization time-set.target loaded active active System Time Set timers.target loaded active active Timer Units veritysetup.target loaded active active Local Verity Protected Volumes LOAD = Reflects whether the unit definition was properly loaded. ACTIVE = The high-level unit activation state, i.e. generalization of SUB. SUB = The low-level unit activation state, values depend on unit type. 24 loaded units listed. Pass --all to see loaded but inactive units, too. To show all installed unit files use &#39;systemctl list-unit-files&#39;. Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are &#34;graphical.target&#34; and &#34;multi-user.target&#34;, we do not take the others into consideration. First, let&#39;s see the boot target set by default in our system. For this we use the &#34;systemctl get-default&#34; command. $ systemctl get-default graphical.target You can see that the default opening target set in our system is the graphical interface &#34;graphical.target&#34;. The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface. Well, if you don&#39;t need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as &#34;multi-user.target&#34; in our commands. from graphical.target to multiuser-target Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line. sudo systemctl isolate multi-user.target from multiuser-target to graphical.target If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted. sudo systemctl isolate graphical.target First boot default target setup The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let&#39;s set which state we want your system to target when it first turns on. For this we will use the &#34;systemctl set-default &#34; command. sudo systemctl set-default multi-user.target sudo systemctl set-default graphical.target Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need.">
   <meta itemprop="datePublished" content="2024-01-24T23:08:33+00:00">
   <meta itemprop="dateModified" content="2024-01-24T23:08:33+00:00">
   <meta itemprop="wordCount" content="705">
   <meta itemprop="keywords" content="How-to Guides,Linux,Linux How-To">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How to change targets with systemd on Linux">
-  <meta name="twitter:description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.">
+  <meta name="twitter:description" content="When you start the Linux operating system, the system that controls the startup processes that occur respectively is called &#34;init system&#34;. Some Linux distributions use SysV launcher, and some distributions use systemd. If you&#39;re using a desktop computer, you&#39;ll want to access the graphical interface once the startup process is complete. If you don&#39;t need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system. First, let&#39;s see the target states that are installed and active in our system. You can use the &#34;systemctl list-units --type=target&#34; command for this. linux@rpi4:~ $ systemctl list-units --type=target UNIT LOAD ACTIVE SUB DESCRIPTION basic.target loaded active active Basic System cryptsetup.target loaded active active Local Encrypted Volumes getty.target loaded active active Login Prompts graphical.target loaded active active Graphical Interface integritysetup.target loaded active active Local Integrity Protected Volumes local-fs-pre.target loaded active active Preparation for Local File Systems local-fs.target loaded active active Local File Systems machines.target loaded active active Containers multi-user.target loaded active active Multi-User System network-online.target loaded active active Network is Online network.target loaded active active Network nfs-client.target loaded active active NFS client services nss-user-lookup.target loaded active active User and Group Name Lookups paths.target loaded active active Path Units remote-fs-pre.target loaded active active Preparation for Remote File Systems remote-fs.target loaded active active Remote File Systems rpc_pipefs.target loaded active active rpc_pipefs.target slices.target loaded active active Slice Units sockets.target loaded active active Socket Units swap.target loaded active active Swaps sysinit.target loaded active active System Initialization time-set.target loaded active active System Time Set timers.target loaded active active Timer Units veritysetup.target loaded active active Local Verity Protected Volumes LOAD = Reflects whether the unit definition was properly loaded. ACTIVE = The high-level unit activation state, i.e. generalization of SUB. SUB = The low-level unit activation state, values depend on unit type. 24 loaded units listed. Pass --all to see loaded but inactive units, too. To show all installed unit files use &#39;systemctl list-unit-files&#39;. Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are &#34;graphical.target&#34; and &#34;multi-user.target&#34;, we do not take the others into consideration. First, let&#39;s see the boot target set by default in our system. For this we use the &#34;systemctl get-default&#34; command. $ systemctl get-default graphical.target You can see that the default opening target set in our system is the graphical interface &#34;graphical.target&#34;. The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface. Well, if you don&#39;t need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as &#34;multi-user.target&#34; in our commands. from graphical.target to multiuser-target Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line. sudo systemctl isolate multi-user.target from multiuser-target to graphical.target If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted. sudo systemctl isolate graphical.target First boot default target setup The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let&#39;s set which state we want your system to target when it first turns on. For this we will use the &#34;systemctl set-default &#34; command. sudo systemctl set-default multi-user.target sudo systemctl set-default graphical.target Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need.">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -8151,21 +8216,21 @@
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
-                href="#from-graphicaltarget-to-multiuser-targeth2"
+                href="#from-graphicaltarget-to-multiuser-target"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >from graphical.target to multiuser-target&lt;/h2&gt;</a>
+              >from graphical.target to multiuser-target</a>
             </li>
           <li>
               <a
-                href="#from-multiuser-target-to-graphicaltargeth2"
+                href="#from-multiuser-target-to-graphicaltarget"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >from multiuser-target to graphical.target&lt;/h2&gt;</a>
+              >from multiuser-target to graphical.target</a>
             </li>
           <li>
               <a
-                href="#first-boot-default-target-setuph2"
+                href="#first-boot-default-target-setup"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >First boot default target setup&lt;/h2&gt;</a>
+              >First boot default target setup</a>
             </li>
           </ul>
   
@@ -9664,15 +9729,15 @@
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#from-graphicaltarget-to-multiuser-targeth2">from graphical.target to multiuser-target
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#from-graphicaltarget-to-multiuser-target">from graphical.target to multiuser-target
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#from-multiuser-target-to-graphicaltargeth2">from multiuser-target to graphical.target
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#from-multiuser-target-to-graphicaltarget">from multiuser-target to graphical.target
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#first-boot-default-target-setuph2">First boot default target setup
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#first-boot-default-target-setup">First boot default target setup
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -9705,8 +9770,8 @@
                   <div class="group-hover:hx-underline">İbrahim Korucuoğlu</div>
                 </a></div>
         <div class="content">
-           <p>When you start the Linux operating system, the system that controls the startup processes that occur respectively is called "init system". Some Linux distributions use SysV launcher, and some distributions use systemd. If you're using a desktop computer, you'll want to access the graphical interface once the startup process is complete. If you don't need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.</p>
- <p>First, let's see the target states that are installed and active in our system. You can use the "<code>systemctl list-units --type=target</code>" command for this.</p>
+           <p>When you start the Linux operating system, the system that controls the startup processes that occur respectively is called "init system". Some Linux distributions use SysV launcher, and some distributions use systemd. If you're using a desktop computer, you'll want to access the graphical interface once the startup process is complete. If you don't need a desktop on the server computer, you want to access the command line, not the graphical interface. In this article, we will see how we can switch between graphics and console and set the default boot target in a Linux distribution that uses the systemd management system.
+ <p>First, let's see the target states that are installed and active in our system. You can use the "<code>systemctl list-units --type=target</code>" command for this.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">linux@rpi4:~ $ systemctl list-units --type=target
   UNIT                   LOAD   ACTIVE SUB    DESCRIPTION                        
@@ -9741,36 +9806,36 @@ SUB    = The low-level unit activation state, values depend on unit type.
 24 loaded units listed. Pass --all to see loaded but inactive units, too.
 To show all installed unit files use 'systemctl list-unit-files'.</code></pre>
 <!-- /wp:code -->
- <p>Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are "graphical.target" and "multi-user.target", we do not take the others into consideration.</p>
- <p>First, let's see the boot target set by default in our system. For this we use the "<code>systemctl get-default</code>" command.</p>
+ <p>Many of the situations listed above are actually a requirement of the ultimate goal (graphical interface, console interface, etc.). Since the cases we are currently interested in are "graphical.target" and "multi-user.target", we do not take the others into consideration.
+ <p>First, let's see the boot target set by default in our system. For this we use the "<code>systemctl get-default</code>" command.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">$ systemctl get-default 
 graphical.target</code></pre>
 <!-- /wp:code -->
- <p>You can see that the default opening target set in our system is the graphical interface "graphical.target". The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface.</p>
- <p>Well, if you don't need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as "multi-user.target" in our commands.</p>
-<h2>from graphical.target to multiuser-target</h2><span class="hx-absolute -hx-mt-20" id="from-graphicaltarget-to-multiuser-targeth2"></span>
-    <a href="#from-graphicaltarget-to-multiuser-targeth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line.</p>
+ <p>You can see that the default opening target set in our system is the graphical interface "graphical.target". The conclusion we can draw from here is that when our system starts, all services will be run respectively and you will access the desktop manager with the graphical interface.
+ <p>Well, if you don't need the desktop or no longer need it, you may want to stop it and reduce system resource usage. In this case, how do we stop the graphical interface and go to the screen we call console, also called the command line, which we will express as "multi-user.target" in our commands.
+<h2>from graphical.target to multiuser-target<span class="hx-absolute -hx-mt-20" id="from-graphicaltarget-to-multiuser-target"></span>
+    <a href="#from-graphicaltarget-to-multiuser-target" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>Our system is currently running in the graphical interface we call graphical.target. What is done here is not to open a Terminal window on the desktop screen. It is to stop the desktop manager completely. You should pay attention. Thanks to the command below, programs using the desktop manager and graphical interface are now completely stopped. You are at the command line.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate multi-user.target</code></pre>
 <!-- /wp:code -->
-<h2>from multiuser-target to graphical.target</h2><span class="hx-absolute -hx-mt-20" id="from-multiuser-target-to-graphicaltargeth2"></span>
-    <a href="#from-multiuser-target-to-graphicaltargeth2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted.</p>
+<h2>from multiuser-target to graphical.target<span class="hx-absolute -hx-mt-20" id="from-multiuser-target-to-graphicaltarget"></span>
+    <a href="#from-multiuser-target-to-graphicaltarget" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>If you want to restart the graphical interface, you can use the command below. As a result of this command, the graphical interface and desktop manager will be restarted.
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl isolate graphical.target</code></pre>
 <!-- /wp:code -->
-<h2>First boot default target setup</h2><span class="hx-absolute -hx-mt-20" id="first-boot-default-target-setuph2"></span>
-    <a href="#first-boot-default-target-setuph2" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
- <p>The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let's set which state we want your system to target when it first turns on. For this we will use the "systemctl set-default " command.</p>
+<h2>First boot default target setup<span class="hx-absolute -hx-mt-20" id="first-boot-default-target-setup"></span>
+    <a href="#first-boot-default-target-setup" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- /wp:heading -->
+ <p>The transition commands we gave above are used for initialization, termination and transition operations after the system is turned on. Now, let's set which state we want your system to target when it first turns on. For this we will use the "systemctl set-default " command.
 <!-- wp:code -->
 <pre title="Reaches to multi-user target on boot" class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl set-default multi-user.target</code></pre>
 <!-- /wp:code -->
 <!-- wp:code -->
 <pre title="Reaches to graphical target on boot" class="wp-block-code"><code lang="bash" class="language-bash">sudo systemctl set-default graphical.target</code></pre>
 <!-- /wp:code -->
- <p>Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need.</p>
+ <p>Thanks to these commands, you can reduce resource usage by stopping the graphical interface at any time and switch between them when you need.
 
         </div>
         

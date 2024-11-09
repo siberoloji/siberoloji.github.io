@@ -33,8 +33,8 @@ url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
   Sızma Testi 2. Safhası olan Bilgi Toplama işlemlerine bu <a href="https://www.siberoloji.com/bilgi-toplama-islemleri-1-temel-yaklasim/" data-type="post" data-id="1070">bağlantıda</a> bulunan yazımızla giriş yapmıştık. O yazı içerisinde belirttiğimiz ana konulardan birisi olan Hedef Seçimi başlığını açıklamaya çalışacağız. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Hedefin Net Tanımı</h3>
+
+ ### Hedefin Net Tanımı
 <!-- /wp:heading -->
 
   Bir bilişim sistemi hakkında bilgi toplama işlemleri başladığında, kaçınılmaz olarak bir çok alan adı veya IP adresi keşfedilecektir. Bazen, organizasyonların .com uzantılı sistemleri olmakla birlikte .net veya .xyz tarzında adresleri de bulunur. Bu noktada, testi yapan ekibin, koordinasyon esnasında tespit edilen kapsamın dışına kesinlikle çıkmaması gerektiği net olarak belirtilmelidir. 
@@ -43,8 +43,8 @@ url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
   Kapsam, kısıtlayıcı kurallara bağlanmışsa ana çerçevenin dışına çıkılmaz. Bazı sistemler, çok faydalı ve kullanışlı bilgiler içerse dahi, aşağıda açıklayacağımız angajman kurallarına sıkı sıkıya bağlı kalmak esas olmalıdır. Aksi takdirde hem yasal hem de etik olarak problemin meydana gelmesi kaçınılmazdır. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Angajman Kuralları ve Sınırlar</h3>
+
+ ### Angajman Kuralları ve Sınırlar
 <!-- /wp:heading -->
 
   Koordinasyon toplantılarında tespit edilen kapsamın, detaylı olarak kurallara bağlanmasıyla ortaya çıkan -net ve şüpheye yer bırakmayan- kurallara angajman kuralları denilmektedir. Örneğin, X sunucusu test edilirken kapsam dışı bir veri kaynağından gelen paketler, analiz yazılımına kayıt edilebilir. Bu veriler tespit edildiği anda, hangi davranış tarzının izleneceğini dikte eden kurallar, test ekibine hem sınır koyar hem de serbestliğinin derecesini belirler. 
@@ -56,8 +56,8 @@ url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
   Test ekibinin bir üyesi, konsantre olduğu başka bir konu sebebiyle bazı durumlarda bu kuralları unutabilir. İşte bu sebeple, sızma testlerinin bir kişi tarafından yapılması arzu edilmez. Mümkünse en az iki kişi olması tercih edilmelidir. Eğer ekip 3 kişiden oluşur ise, görev paylaşımı, zaman planlaması daha etkili olacak ve verimlilik de artacaktır. Bu sayede, bir ekip üyesinin gözünden kaçan kural ve kısıtın diğer üye tarafından fark edilmesi mümkün olabilecektir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Test Süresi ve Zaman Planına Uymak</h3>
+
+ ### Test Süresi ve Zaman Planına Uymak
 <!-- /wp:heading -->
 
   Sızma Testi için planlanan toplam sürenin ne kadarı Bilgi Toplama safhasına ayrılmıştır? Bu süre içerisinde gerçekleştirilebilecek ve gerçekleştirilemeyecek tarzda testler bulunabilir. Bazı testler ve analizler özelliklerine göre 1-2 ay sürebilmektedir. 
@@ -78,8 +78,8 @@ url: /tr/bilgi-toplama-islemleri-2-hedef-secimi/
   Bu zaman planlaması Koordinasyon safhasının alt maddesi olan <a href="https://www.siberoloji.com/sizma-testi-safhalari-nelerdir/" data-type="post" data-id="1049" target="_blank" rel="noreferrer noopener">Kontrol Tedbirleri</a> bölümünde ve diğer konular altında yer alan Ödeme Yöntemi bölümünde net olarak ortaya konulmalı ve yazılı hale getirilmelidir. 
  
 
-<!-- wp:heading {"level":3} -->
- ### Testin Nihai Hedefini Unutmamak</h3>
+
+ ### Testin Nihai Hedefini Unutmamak
 <!-- /wp:heading -->
 
   Bilgi toplama işlemleri esnasında, testin nihai amacını unutmamak gerekir. Bu işlemler, testin nihai hedefini destekleyen tarzda araçlar kullanılarak yapılmalıdır. 

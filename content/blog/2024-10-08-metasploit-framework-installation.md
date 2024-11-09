@@ -31,8 +31,8 @@ url: /metasploit-framework-installation/
   Metasploit Framework comes pre-installed in Kali distributions, etc. Even if you don't use Kali, you can install it on your own Linux distribution. In this article, we will examine how to install the free version, which is the Community version and works from the command line. It is estimated that the commands used in the explanation will work in all Ubuntu-based distributions. We performed our tests and trials on the Linux Mint 18.1 Cinnamon Linux distribution. 
  
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="linux-mint-güncelleyelim">Let's Update Linux Mint:</h3>
+
+<h3 class="wp-block-heading" id="linux-mint-güncelleyelim">Let's Update Linux Mint:
 <!-- /wp:heading -->
 
   Linux will be updated and restarted with the following commands. 
@@ -44,14 +44,14 @@ reboot
 </code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="msf-framework-kuralım">Let's Set Up MSF Framework:</h3>
+
+<h3 class="wp-block-heading" id="msf-framework-kuralım">Let's Set Up MSF Framework:
 <!-- /wp:heading -->
 
   The following installation script codes provided by Rapid7 will do all the necessary operations. 
  
 
-  <strong>!!!</strong>&nbsp;&nbsp;It is not recommended to download such script codes from unsafe sources. 
+  ***!!!*** &nbsp;&nbsp;It is not recommended to download such script codes from unsafe sources. 
  
 
   The following command must be run with root privileges. 
@@ -100,11 +100,11 @@ umut@umut-X550JX ~ $
 </code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="i̇lk-çalıştırma">First run:</h3>
+
+<h3 class="wp-block-heading" id="i̇lk-çalıştırma">First run:
 <!-- /wp:heading -->
 
-  Run the command on the command line&nbsp;&nbsp;<code>msfconsole</code>&nbsp;and create a database:&nbsp;&nbsp;&nbsp;Answer&nbsp;&nbsp;the question&nbsp;&nbsp;<strong>Would you like to use and setup a new database (recommended)?</strong><code>yes</code> 
+  Run the command on the command line&nbsp;&nbsp;<code>msfconsole</code>&nbsp;and create a database:&nbsp;&nbsp;&nbsp;Answer&nbsp;&nbsp;the question&nbsp;&nbsp;***Would you like to use and setup a new database (recommended)?*** <code>yes</code> 
  
 
 <!-- wp:code -->
@@ -158,8 +158,8 @@ msf &gt;
 </code></pre>
 <!-- /wp:code -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="veri-tabanına-bağlantıyı-kontrol-edelim">Let's check the connection to the database.</h3>
+
+<h3 class="wp-block-heading" id="veri-tabanına-bağlantıyı-kontrol-edelim">Let's check the connection to the database.
 <!-- /wp:heading -->
 
   <code>msfdb status</code>&nbsp;You can check the database connection with the command. 

@@ -35,68 +35,68 @@ url: /tr/msf-icerik-arastirmasi/
 <h1 class="wp-block-heading" id="i̇çerik-araştırması">İçerik Araştırması 
 <!-- /wp:heading -->
 
-  Hedef bilgisayarda meterpreter shell açtıktan sonra yapılacak işlemlerden birisi de bilgisayar bulunan dosyaları araştırmaktır. Firmalar, kullanıcılarını bilgilerinin güvenliğini sağlamaları konusunda eğitirler. Bu eğitim konularından birisi de hassas bilgileri paylaşımlı sunucularda değil de yerel bilgisayarlarda tutmaktır. İçerik araştırması da genelde bu tarz hassas bilgilerin olduğu dosya ve klasörleri keşfetmek için yapılır.</p>
+  Hedef bilgisayarda meterpreter shell açtıktan sonra yapılacak işlemlerden birisi de bilgisayar bulunan dosyaları araştırmaktır. Firmalar, kullanıcılarını bilgilerinin güvenliğini sağlamaları konusunda eğitirler. Bu eğitim konularından birisi de hassas bilgileri paylaşımlı sunucularda değil de yerel bilgisayarlarda tutmaktır. İçerik araştırması da genelde bu tarz hassas bilgilerin olduğu dosya ve klasörleri keşfetmek için yapılır.
  
 
-  Meterpreter oturumunun sunduğu&nbsp;<code>search</code>&nbsp;komutu ile ilgili birkaç örnek inceleyelim.</p>
+  Meterpreter oturumunun sunduğu&nbsp;<code>search</code>&nbsp;komutu ile ilgili birkaç örnek inceleyelim.
  
 
-  <code>search -h</code>&nbsp;komutuyla search hakkında yardım bilgilerini görüntüleyebilirsiniz.</p>
+  <code>search -h</code>&nbsp;komutuyla search hakkında yardım bilgilerini görüntüleyebilirsiniz.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> search -h
-Usage: search <strong>[</strong>-d dir<strong>]</strong> <strong>[</strong>-r recurse] -f pattern
-Search <strong>for </strong>files.
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  search -h
+Usage: search ***[*** -d dir***]***  ***[*** -r recurse] -f pattern
+Search ***for *** files.
 
 OPTIONS:
 
-    -d   The directory/drive to begin searching from. Leave empty to search all drives. <strong>(</strong>Default: <strong>)</strong>
-    -f   The file pattern glob to search <strong>for</strong>. <strong>(</strong>e.g. <strong>*</strong>secret<strong>*</strong>.doc?<strong>)</strong>
+    -d   The directory/drive to begin searching from. Leave empty to search all drives. ***(*** Default: ***)*** 
+    -f   The file pattern glob to search ***for*** . ***(*** e.g. ******* secret******* .doc?***)*** 
     -h   Help Banner.
-    -r   Recursivly search sub directories. <strong>(</strong>Default: true<strong>)</strong>
+    -r   Recursivly search sub directories. ***(*** Default: true***)*** 
 </code></pre>
 <!-- /wp:code -->
 
  
-<h2 class="wp-block-heading" id="açıklamalar">Açıklamalar</h2>
+<h2 class="wp-block-heading" id="açıklamalar">Açıklamalar
 <!-- /wp:heading -->
 
-  <code>-d</code>: Arama yapılacak klasörü belirtir. Boş bırakılırsa tüm klasörler aranır.</p>
+  <code>-d</code>: Arama yapılacak klasörü belirtir. Boş bırakılırsa tüm klasörler aranır.
  
 
-  <code>-f</code>: Belli bir dosya paterni belirtmek için kullanılır.</p>
+  <code>-f</code>: Belli bir dosya paterni belirtmek için kullanılır.
  
 
-  <code>-h</code>: Yardımı görüntüler.</p>
+  <code>-h</code>: Yardımı görüntüler.
  
 
-  <code>-r</code>: Arama, belirtilen klasör ve tüm alt klasörlerinde gerçekleştirilir. Varsayılan olarak zaten aktif durumdadır.</p>
+  <code>-r</code>: Arama, belirtilen klasör ve tüm alt klasörlerinde gerçekleştirilir. Varsayılan olarak zaten aktif durumdadır.
  
 
-  Aşağıdaki örnek komut, tüm disk bölümlerinde, klasör ve alt klasörlerde&nbsp;<code>.jpg</code>&nbsp;uzantılı dosyaları arayacaktır.</p>
+  Aşağıdaki örnek komut, tüm disk bölümlerinde, klasör ve alt klasörlerde&nbsp;<code>.jpg</code>&nbsp;uzantılı dosyaları arayacaktır.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> search -f <strong>*</strong>.jpg
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  search -f ******* .jpg
 Found 418 results...
 ...snip...
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg <strong>(</strong>28521 bytes<strong>)</strong>
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg <strong>(</strong>71189 bytes<strong>)</strong>
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg <strong>(</strong>83794 bytes<strong>)</strong>
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg <strong>(</strong>105542 bytes<strong>)</strong>
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg ***(*** 28521 bytes***)*** 
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg ***(*** 71189 bytes***)*** 
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg ***(*** 83794 bytes***)*** 
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg ***(*** 105542 bytes***)*** 
 ...snip...
 </code></pre>
 <!-- /wp:code -->
 
-  <code>search</code>&nbsp;komutunda varsayılan olarak tüm klasörler aranmaktadır ancak bu işlem çok zaman alır. Ayrıca, hedef bilgisayar kullanıcısı bilgisayarının yavaşladığını fark edebilir. Bu nedenle,&nbsp;<code>-d</code>&nbsp;seçeneğini kullanarak arama yapılacak klasörü belirtmek hem zaman kazandırır hem de sistemin işlem yükünü hafifletir. Aşağıda buna bir örnek kullanımı görebilirsiniz. Komutu girerken klasör ayırıcı işaretini&nbsp;<code>\\</code>&nbsp;şeklinde girdiğimize dikkat edin.</p>
+  <code>search</code>&nbsp;komutunda varsayılan olarak tüm klasörler aranmaktadır ancak bu işlem çok zaman alır. Ayrıca, hedef bilgisayar kullanıcısı bilgisayarının yavaşladığını fark edebilir. Bu nedenle,&nbsp;<code>-d</code>&nbsp;seçeneğini kullanarak arama yapılacak klasörü belirtmek hem zaman kazandırır hem de sistemin işlem yükünü hafifletir. Aşağıda buna bir örnek kullanımı görebilirsiniz. Komutu girerken klasör ayırıcı işaretini&nbsp;<code>\\</code>&nbsp;şeklinde girdiğimize dikkat edin.
  
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f <strong>*</strong>.pdf
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f ******* .pdf
 Found 2 results...
-    c:\documents and settings\administrator\desktop\operations_plan.pdf <strong>(</strong>244066 bytes<strong>)</strong>
-    c:\documents and settings\administrator\desktop\budget.pdf <strong>(</strong>244066 bytes<strong>)</strong>
-meterpreter <strong>&gt;</strong>
+    c:\documents and settings\administrator\desktop\operations_plan.pdf ***(*** 244066 bytes***)*** 
+    c:\documents and settings\administrator\desktop\budget.pdf ***(*** 244066 bytes***)*** 
+meterpreter ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->

