@@ -1,4 +1,4 @@
-baseURL: https://example.docsy.dev
+baseURL: https://siberoloji.github.io
 title: Goldydocs
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
@@ -50,7 +50,7 @@ languages:
     params:
       description: A Docsy example site
   # cSpell:disable
-  'no':
+  no:
     languageName: Norsk
     contentDir: content/no
     title: Gulldoks
