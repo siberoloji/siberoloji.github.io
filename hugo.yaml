@@ -1,5 +1,7 @@
 baseURL: https://siberoloji.github.io
-title: Goldydocs
+title: Siberoloji
+languageCode: en-us
+description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -34,7 +36,7 @@ pygmentsStyle: tango
 
 # Configure how URLs look like per section.
 permalinks:
-  blog: /:section/:year/:month/:day/:slug/
+  blog: :slug/
 
 # Image processing configuration.
 imaging:
@@ -46,29 +48,11 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: Siberoloji
     params:
       description: A Docsy example site
   # cSpell:disable
-  no:
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
-    params:
-      description: Docsy er operativsystem for skyen
-      time_format_default: 02.01.2006
-      time_format_blog: 02.01.2006
-  fa:
-    languageDirection: rtl
-    languageName: "فارسی (Persian)"
-    contentDir: content/fa
-    title: "اسناد گلدی"
-    params:
-      description: "یک نمونه برای پوسته داکسی"
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
-  # cSpell:enable
-
+  
 markup:
   goldmark:
     parser:
@@ -208,6 +192,16 @@ params:
         url: https://example.org/mail
         icon: fa fa-envelope
         desc: Discuss development issues around the project
+  ui:
+    sidebar_menu_compact: true
+    ul_show: 1
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    showLightDarkModeMenu: true
+    sidebar_menu_truncate: 150
+    sidebar_menu_truncate_show_more: true
+    sidebar_menu_truncate_show_more_text: "Show more"
+    sidebar_menu_truncate_show_less_text: "Show less"
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
@@ -218,3 +212,24 @@ module:
   imports:
     - path: github.com/google/docsy
       disable: false
+
+
+
+# no:
+#    languageName: Norsk
+#    contentDir: content/no
+#    title: Gulldoks
+#    params:
+#      description: Docsy er operativsystem for skyen
+#      time_format_default: 02.01.2006
+#      time_format_blog: 02.01.2006
+#  fa:
+#    languageDirection: rtl
+#    languageName: "فارسی (Persian)"
+#    contentDir: content/fa
+#    title: "اسناد گلدی"
+#    params:
+#      description: "یک نمونه برای پوسته داکسی"
+#      time_format_default: 2006.01.02
+#      time_format_blog: 2006.01.02
+#  # cSpell:enable
