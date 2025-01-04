@@ -1,0 +1,155 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "en",
+      "path": "[[workspace]]/content/en"
+    },
+    {
+      "title": "community",
+      "path": "[[workspace]]/content/en/community"
+    },
+    {
+      "title": "docs",
+      "path": "[[workspace]]/content/en/docs"
+    },
+    {
+      "title": "blog",
+      "path": "[[workspace]]/content/en/blog"
+    },
+    {
+      "title": "about",
+      "path": "[[workspace]]/content/en/about"
+    },
+    {
+      "title": "tasks",
+      "path": "[[workspace]]/content/en/docs/tasks"
+    },
+    {
+      "title": "tutorials",
+      "path": "[[workspace]]/content/en/docs/tutorials"
+    },
+    {
+      "title": "reference",
+      "path": "[[workspace]]/content/en/docs/reference"
+    },
+    {
+      "title": "kalibook",
+      "path": "[[workspace]]/content/en/docs/kalibook"
+    },
+    {
+      "title": "howtos",
+      "path": "[[workspace]]/content/en/docs/howtos"
+    },
+    {
+      "title": "getting-started",
+      "path": "[[workspace]]/content/en/docs/getting-started"
+    },
+    {
+      "title": "bob",
+      "path": "[[workspace]]/content/en/docs/bob"
+    },
+    {
+      "title": "releases",
+      "path": "[[workspace]]/content/en/blog/releases"
+    },
+    {
+      "title": "alice",
+      "path": "[[workspace]]/content/en/docs/alice"
+    },
+    {
+      "title": "news",
+      "path": "[[workspace]]/content/en/blog/news"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/en/blog/posts"
+    },
+    {
+      "title": "nmap",
+      "path": "[[workspace]]/content/en/docs/howtos/nmap"
+    },
+    {
+      "title": "Ponycopters",
+      "path": "[[workspace]]/content/en/docs/tasks/Ponycopters"
+    },
+    {
+      "title": "first-post",
+      "path": "[[workspace]]/content/en/blog/news/first-post"
+    },
+    {
+      "title": "Chapter 1-Kali Tools",
+      "path": "[[workspace]]/content/en/docs/kalibook/Chapter 1-Kali Tools"
+    },
+    {
+      "title": "alicewordpressadventures",
+      "path": "[[workspace]]/content/en/docs/alice/alicewordpressadventures"
+    },
+    {
+      "title": "almalinux9",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9"
+    },
+    {
+      "title": "bobsalmalinuxadventures",
+      "path": "[[workspace]]/content/en/docs/bob/bobsalmalinuxadventures"
+    },
+    {
+      "title": "ntp-ssh",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/ntp-ssh"
+    },
+    {
+      "title": "initial-settings",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/initial-settings"
+    }
+  ],
+  "frontMatter.git.enabled": true
+}

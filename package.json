@@ -1,13 +1,13 @@
 {
-  "name": "docsy-example-site",
+  "name": "siberoloji website",
   "version": "0.10.0",
   "version.next": "0.10.1-dev.0-unreleased",
-  "description": "Example site that uses Docsy theme for technical documentation.",
+  "description": "siberoloji web site that uses Docsy theme for technical documentation.",
   "repository": "github:siberoloji/siberoloji.github.io",
   "homepage": "https://siberoloji.github.io",
-  "author": "Docsy Authors",
+  "author": "siberoloji Authors",
   "license": "Apache-2.0",
-  "bugs": "https://github.com/google/docsy-example/issues",
+  "bugs": "https://github.com/siberoloji/siberoloji.github.io/issues",
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
   "scripts": {
     "_build": "npm run _hugo-dev --",

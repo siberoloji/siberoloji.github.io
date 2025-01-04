@@ -13,30 +13,25 @@ title: Cyber Security
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
 Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. 
 
 With clear, detailed explanations that provide practical insights into complex concepts.
 {{% /blocks/lead %}}
 
-
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+{{% blocks/feature icon="fa-lightbulb" title="New Design!" %}}
+Siberoloji now shows faster and more organized information.
 
-Please follow this space for updates!
+Please follow us!
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/siberoloji/siberoloji.github.io" %}}
+We do a [Pull Request](https://github.com/siberoloji/siberoloji.github.io/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
+{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/siberoloji_ltd" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
-
 
 {{% /blocks/section %}}

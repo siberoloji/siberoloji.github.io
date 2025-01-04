@@ -17,14 +17,6 @@ enableRobotsTXT: true
 # Will give values to .Lastmod etc.
 enableGitInfo: true
 
-# Comment out to enable taxonomies in Docsy
-# disableKinds: [taxonomy, taxonomyTerm]
-
-# You can add your own taxonomies
-taxonomies:
-  tag: tags
-  category: categories
-
 # Highlighting config
 pygmentsCodeFences: true
 pygmentsUseClasses: false
@@ -35,6 +27,15 @@ pygmentsUseClassic: false
 pygmentsStyle: tango
 
 # Configure how URLs look like per section.
+
+# Comment out to enable taxonomies in Docsy
+# disableKinds: [taxonomy, taxonomyTerm]
+
+# You can add your own taxonomies
+taxonomies:
+  tag: tags
+  category: categories
+
 permalinks:
   blog: :slug/
 
@@ -51,6 +52,8 @@ languages:
     title: Siberoloji
     params:
       description: A Docsy example site
+      time_format_default: 02.01.2006
+#     time_format_blog: 02.01.2006
   # cSpell:disable
   
 markup:
@@ -75,6 +78,7 @@ outputs:
 services:
   googleAnalytics:
     id: G-Y78HNW88W6
+
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
@@ -86,7 +90,7 @@ params:
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
     taxonomyPageHeader: [tags, categories]
 
-  privacy_policy: https://policies.google.com/privacy
+  privacy_policy: https://www.siberoloji.com/privacy-policy/
 
   # First one is picked as the Twitter card image if not set on page.
   # images: [images/project-illustration.png]
@@ -107,13 +111,13 @@ params:
 
   # A link to latest version of the docs. Used in the "version-banner" partial to
   # point people to the main doc site.
-  url_latest_version: https://example.com
+  url_latest_version: https://github.com/siberoloji/siberoloji.github.io
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/google/docsy-example
+  github_repo: https://github.com/siberoloji/siberoloji.github.io
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/google/docsy
+  github_project_repo: https://github.com/siberoloji/siberoloji.github.io
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -123,16 +127,16 @@ params:
   github_branch: main
 
   # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: d72aa9b2712488cc3
+  gcs_engine_id: 818c7b31ab3c04650
 
   # Enable Lunr.js offline search
   offlineSearch: false
 
   # Enable syntax highlighting and copy buttons on code blocks with Prism
-  prism_syntax_highlighting: false
+  prism_syntax_highlighting: true
 
   copyright:
-    authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    authors: Siberoloji | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
     from_year: 2018
 
   # User interface configuration
@@ -156,55 +160,42 @@ params:
       enable: true
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
-        Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+        Glad to hear it! Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">tell us how we can improve</a>.
       'no': >-
-        Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+        Sorry to hear that. Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">tell us how we can improve</a>.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
     # add "hide_readingtime: true" to the page's front matter
     readingtime:
-      enable: false
+      enable: true
 
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: User mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
       - name: Twitter
-        url: https://example.org/twitter
+        url: https://x.com/siberoloji_ltd
         icon: fab fa-twitter
         desc: Follow us on Twitter to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
+      
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
-        url: https://github.com/google/docsy
+        url: https://github.com/siberoloji/siberoloji.github.io
         icon: fab fa-github
         desc: Development takes place here!
-      - name: Slack
-        url: https://example.org/slack
-        icon: fab fa-slack
-        desc: Chat with other project developers
-      - name: Developer mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discuss development issues around the project
+      
   ui:
     sidebar_menu_compact: true
     ul_show: 1
     sidebar_menu_foldable: true
     sidebar_cache_limit: 1000
-    showLightDarkModeMenu: true
     sidebar_menu_truncate: 150
     sidebar_menu_truncate_show_more: true
     sidebar_menu_truncate_show_more_text: "Show more"
     sidebar_menu_truncate_show_less_text: "Show less"
+
+    showLightDarkModeMenu: true
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
