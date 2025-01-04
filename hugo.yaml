@@ -72,6 +72,9 @@ markup:
 outputs:
   section: [HTML, print, RSS]
 
+services:
+  googleAnalytics:
+    id: G-Y78HNW88W6
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds

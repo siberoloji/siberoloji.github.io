@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rectangle -->
+  <rect width="800" height="400" fill="#2E3440" rx="10"/>
+  
+  <!-- Terminal window -->
+  <rect x="50" y="50" width="700" height="300" fill="#3B4252" rx="5"/>
+  
+  <!-- Terminal header -->
+  <rect x="50" y="50" width="700" height="30" fill="#4C566A" rx="5"/>
+  
+  <!-- Window buttons -->
+  <circle cx="80" cy="65" r="6" fill="#BF616A"/>
+  <circle cx="100" cy="65" r="6" fill="#EBCB8B"/>
+  <circle cx="120" cy="65" r="6" fill="#A3BE8C"/>
+  
+  <!-- ZSH text -->
+  <text x="400" y="70" font-family="Monaco, monospace" font-size="14" fill="#E5E9F0" text-anchor="middle">~ zsh terminal</text>
+  
+  <!-- Command prompt lines -->
+  <text x="70" y="110" font-family="Monaco, monospace" font-size="14" fill="#88C0D0">➜</text>
+  <text x="90" y="110" font-family="Monaco, monospace" font-size="14" fill="#A3BE8C">~</text>
+  <text x="110" y="110" font-family="Monaco, monospace" font-size="14" fill="#E5E9F0">git status</text>
+  
+  <!-- Git output -->
+  <text x="70" y="140" font-family="Monaco, monospace" font-size="14" fill="#81A1C1">On branch main</text>
+  <text x="70" y="160" font-family="Monaco, monospace" font-size="14" fill="#A3BE8C">Your branch is up to date</text>
+  
+  <!-- New command line -->
+  <text x="70" y="200" font-family="Monaco, monospace" font-size="14" fill="#88C0D0">➜</text>
+  <text x="90" y="200" font-family="Monaco, monospace" font-size="14" fill="#A3BE8C">~</text>
+  
+  <!-- Cursor -->
+  <rect x="110" y="190" width="8" height="14" fill="#D8DEE9" opacity="0.7"/>
+  
+  <!-- Decorative code symbols -->
+  <text x="70" y="280" font-family="Monaco, monospace" font-size="40" fill="#5E81AC" opacity="0.1">{}</text>
+  <text x="670" y="280" font-family="Monaco, monospace" font-size="40" fill="#5E81AC" opacity="0.1">()</text>
+  
+  <!-- ZSH logo text -->
+  <text x="400" y="320" font-family="Monaco, monospace" font-size="24" fill="#88C0D0" text-anchor="middle">ZSH</text>
+</svg>
