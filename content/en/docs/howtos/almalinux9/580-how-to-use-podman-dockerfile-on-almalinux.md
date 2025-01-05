@@ -19,8 +19,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: dockerfiles-podman-almalinux
 ---

@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 360
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Kubernetes with CI/CD Workflows
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-integrates-kubernetes-ci-cd-workflows-alma-linux
 ---

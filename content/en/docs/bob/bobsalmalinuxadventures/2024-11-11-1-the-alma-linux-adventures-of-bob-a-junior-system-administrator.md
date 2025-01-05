@@ -19,8 +19,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: /alma-linux-adventures-of-bob-junior-system-administrator/
 ---

@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 440
@@ -20,8 +20,8 @@ keywords:
   - AI-Powered DevOps with Kubernetes on AlmaLinux
   - AI-Powered DevOps
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-embraces-ai-powered-devops-kubernetes-alma-linux
 ---

@@ -7,16 +7,16 @@ tags: []
 categories: []
 linkTitle: ""
 type: blog
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 toc: true
 keywords: ""
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/macos2.webp
 url: macbook-pro-software-updates-system-maintenance
 ---

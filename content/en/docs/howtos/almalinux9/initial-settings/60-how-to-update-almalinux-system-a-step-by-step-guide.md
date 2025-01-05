@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - Update AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: update-almalinux-system-step-step-guide
 ---

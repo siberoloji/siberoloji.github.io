@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 As web applications scale, ensuring consistent performance, reliability, and availability becomes a challenge. **HAProxy** (High Availability Proxy) is a powerful and widely-used open-source solution for **HTTP load balancing** and **proxying**. By distributing incoming traffic across multiple backend servers, HAProxy improves fault tolerance and optimizes resource utilization.

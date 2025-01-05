@@ -10,16 +10,16 @@ categories:
   - TechLife
   - WordPress
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 130
 toc: true
 keywords: ""
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-taking-picture.webp
 url: building-email-list-wordpress-tips-plugins-started
 ---

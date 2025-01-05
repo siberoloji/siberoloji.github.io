@@ -40,7 +40,7 @@ Here, ( a ), ( b ), and ( c ) are constants, and ( x ) represents the variable. 
 Key Terms:
 
 
-* **Quadratic Term**: ( ax^2 ) is the quadratic term, where ( a \neq 0 ). It defines the curvature of the graph.
+* **Quadratic Term**: ( ax^2 ) is the quadratic term, where ( a  eq 0 ). It defines the curvature of the graph.
 
 * **Linear Term**: ( bx ) is the linear term. It affects the slope and direction of the curve.
 

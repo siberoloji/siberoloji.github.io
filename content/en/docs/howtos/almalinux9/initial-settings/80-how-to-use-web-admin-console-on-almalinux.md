@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - Web Admin Console
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: web-admin-console-almalinux
 ---

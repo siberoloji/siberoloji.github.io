@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 250
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Persistent Storage in Kubernetes on AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-explores-persistent-storage-kubernetes-alma-linux
 ---

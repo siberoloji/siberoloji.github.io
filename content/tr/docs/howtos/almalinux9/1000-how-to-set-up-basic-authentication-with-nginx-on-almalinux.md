@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Securing your web resources is a critical part of managing a web server. One simple yet effective way to restrict access to certain sections of your website or web applications is by enabling Basic Authentication in Nginx. This method prompts users for a username and password before allowing access, providing an extra layer of security for sensitive or private content.

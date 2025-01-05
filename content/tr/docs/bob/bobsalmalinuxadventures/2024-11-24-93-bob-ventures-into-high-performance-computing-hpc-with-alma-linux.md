@@ -12,15 +12,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 930
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ### **Bob Ventures into High-Performance Computing (HPC) with AlmaLinux**
@@ -210,7 +210,7 @@ Bob wrote a Slurm batch script to simulate a workload:
       MPI_Init(NULL, NULL);
       int world_size;
       MPI_Comm_size(MPI_COMM_WORLD, &world_size);
-      printf("Number of processors: %d\n", world_size);
+      printf("Number of processors: %d ", world_size);
       MPI_Finalize();
       return 0;
   }

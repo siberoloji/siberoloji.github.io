@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 # How to Change SELinux File Types on AlmaLinux  

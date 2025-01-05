@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - DNS Server
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: dns-server-install-almalinux
 ---

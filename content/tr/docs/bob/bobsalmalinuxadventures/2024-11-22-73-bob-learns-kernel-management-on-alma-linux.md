@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 730
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to understand and manage the **Linux kernel**, the core of the operating system. From loading kernel modules to upgrading the kernel itself, mastering kernel management would give Bob greater control over his AlmaLinux server’s performance and functionality.

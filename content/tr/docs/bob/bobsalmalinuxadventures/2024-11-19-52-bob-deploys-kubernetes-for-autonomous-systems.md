@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 520
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 52, *"Bob Deploys Kubernetes for Autonomous Systems!"*. In this chapter, Bob takes on the exciting challenge of managing workloads for **autonomous systems**, including self-driving cars, drones, and robotics, leveraging Kubernetes for processing, communication, and AI integration.

@@ -31,16 +31,16 @@ int main() {
     cout &lt;&lt; "Enter a positive integer number: ";
     cin &gt;&gt; a;
     if (a &lt; 20) {
-        cout &lt;&lt; "a is less than 20\n";
+        cout &lt;&lt; "a is less than 20 ";
         if (a &lt; 10)
-            cout &lt;&lt; "a is less than 10\n";
+            cout &lt;&lt; "a is less than 10 ";
         else
-            cout &lt;&lt; "a is not less than 10\n";
+            cout &lt;&lt; "a is not less than 10 ";
     } else {
         if (a == 20) {
-            cout &lt;&lt; "a is equal to 20\n";
+            cout &lt;&lt; "a is equal to 20 ";
         } else
-            cout &lt;&lt; "a is greater than 20\n";
+            cout &lt;&lt; "a is greater than 20 ";
     }
     return 0;
 }

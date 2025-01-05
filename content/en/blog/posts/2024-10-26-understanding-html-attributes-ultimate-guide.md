@@ -4,7 +4,7 @@ draft: false
 title:  'Understanding HTML Attributes: Ultimate Guide'
 date: '2024-10-26T16:57:20+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "Unlock the power of HTML attributes! This guide covers their types, usage, best practices, and tips for improving accessibility and SEO on your website.\n" 
+description:  "Unlock the power of HTML attributes! This guide covers their types, usage, best practices, and tips for improving accessibility and SEO on your website. " 
  
 url:  /understanding-html-attributes-ultimate-guide/
 featured_image: /images/htmlprogramming.webp

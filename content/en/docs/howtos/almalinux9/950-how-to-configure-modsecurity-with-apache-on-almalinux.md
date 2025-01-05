@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Securing web applications is a critical aspect of modern server administration, and **mod_security** plays a pivotal role in fortifying your Apache web server. mod_security is an open-source Web Application Firewall (WAF) module that helps protect your server from malicious attacks, such as SQL injection, cross-site scripting (XSS), and other vulnerabilities.  

@@ -146,7 +146,7 @@ meterpreter **&gt;** list_tokens -u
 Delegation Tokens Available
 **========================================**
 NT AUTHORITY\LOCAL SERVICE
-NT AUTHORITY\NETWORK SERVICE
+NT AUTHORITY ETWORK SERVICE
 NT AUTHORITY\SYSTEM
 SNEAKS.IN\Administrator
 

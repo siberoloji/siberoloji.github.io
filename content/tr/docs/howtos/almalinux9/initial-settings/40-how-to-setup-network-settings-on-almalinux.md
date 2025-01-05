@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - network settings on AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: setup-network-settings-almalinux
 ---

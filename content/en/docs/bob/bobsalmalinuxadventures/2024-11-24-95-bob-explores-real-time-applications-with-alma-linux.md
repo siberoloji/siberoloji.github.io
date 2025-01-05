@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 950
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to optimize AlmaLinux for **real-time applications**, where ultra-low latency and deterministic response times are critical. From configuring the real-time kernel to tuning the system, Bob aimed to create an environment suitable for industrial automation, telecommunications, and other time-sensitive workloads.
@@ -217,7 +217,7 @@ int main() {
     while (1) {
         struct timespec ts;
         clock_gettime(CLOCK_REALTIME, &ts);
-        printf("Real-time task running at %ld.%09ld\n", ts.tv_sec, ts.tv_nsec);
+        printf("Real-time task running at %ld.%09ld ", ts.tv_sec, ts.tv_nsec);
     }
     return 0;
 }

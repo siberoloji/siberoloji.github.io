@@ -20,8 +20,8 @@ keywords:
   - wordpress
   - blog publishing preparation
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-in-front-of-computer.webp
 url: /if-alice-decides-to-write-blog-posts/
 ---

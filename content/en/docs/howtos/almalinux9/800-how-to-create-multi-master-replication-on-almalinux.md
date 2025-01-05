@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 OpenLDAP Multi-Master Replication (MMR) is an advanced setup that allows multiple LDAP servers to act as both providers and consumers. This ensures redundancy, fault tolerance, and high availability, enabling updates to be made on any server and synchronized across all others in real-time. In this guide, we will explore how to create a Multi-Master Replication setup on AlmaLinux, a stable, enterprise-grade Linux distribution.

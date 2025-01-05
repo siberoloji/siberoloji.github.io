@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 When it comes to hosting Python web applications, **mod_wsgi** is a popular Apache module that allows you to integrate Python applications seamlessly with the Apache web server. For developers and system administrators using AlmaLinux, a free and open-source RHEL-based distribution, configuring mod_wsgi is an essential step for deploying robust Python-based web solutions.  

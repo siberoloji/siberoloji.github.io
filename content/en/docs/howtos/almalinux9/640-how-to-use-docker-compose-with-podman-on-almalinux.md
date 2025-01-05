@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 As containerization becomes integral to modern development workflows, tools like Docker Compose and Podman are gaining popularity for managing containerized applications. While Docker Compose is traditionally associated with Docker, it can also work with Podman, a daemonless container engine. AlmaLinux, a stable, community-driven operating system, offers an excellent environment for combining these technologies. This guide will walk you through the process of using Docker Compose with Podman on AlmaLinux.

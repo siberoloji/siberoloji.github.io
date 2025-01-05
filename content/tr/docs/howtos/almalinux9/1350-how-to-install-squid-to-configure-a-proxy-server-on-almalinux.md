@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Proxy servers play a vital role in managing and optimizing network traffic, improving security, and controlling internet access. One of the most popular tools for setting up a proxy server is **Squid**, an open-source, high-performance caching proxy. Squid supports various protocols like HTTP, HTTPS, and FTP, making it ideal for businesses, educational institutions, and individuals seeking to improve their network's efficiency.

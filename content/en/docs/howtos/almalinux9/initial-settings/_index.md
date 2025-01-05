@@ -1,10 +1,11 @@
 ---
 title: Initial Settings
 date: 2024-11-05
-description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
-categories: [Examples]
-tags: [test, sample, docs]
+description: Initial Settings for AlmaLinux 9
+categories:
+  - Linux
+tags:
+  - AlmaLinux
 weight: 1
 simple_list: true
 ---

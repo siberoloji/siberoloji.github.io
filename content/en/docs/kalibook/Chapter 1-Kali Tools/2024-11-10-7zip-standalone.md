@@ -6,8 +6,8 @@ date: 2024-11-10
 
 
 draft: false
-prev: ""
-next: ""
+
+
 tags:
    - 7zip-standalone
 categories:

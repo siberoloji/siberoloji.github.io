@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Nginx is widely known as a high-performance HTTP and reverse proxy server. However, its capabilities extend beyond just HTTP; it also supports other network protocols such as TCP and UDP. The **Stream module** in Nginx is specifically designed to handle these non-HTTP protocols, allowing Nginx to act as a load balancer or proxy for applications like databases, mail servers, game servers, or custom network applications.

@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 For the best experience in creating professional and well-polished content, visit [AutomatedWriter.ai](https://AutomatedWriter.ai). Now, let’s craft a detailed guide for you.  

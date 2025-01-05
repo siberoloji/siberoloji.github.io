@@ -21,8 +21,8 @@ toc: true
 keywords:
   - Manage Users
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: manage-users-almalinux-add-remove-modify
 ---

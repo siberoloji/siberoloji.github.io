@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Managing containers effectively is crucial for streamlining application deployment and ensuring services are always available. On AlmaLinux, system administrators and developers can leverage **Systemd** to manage container auto-startup and lifecycle. This guide explores how to generate and use Systemd unit files to enable auto-starting for containers, with practical examples tailored for AlmaLinux.

@@ -14,8 +14,8 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/almalinux.webp
-sidebar:
-  open: true
+
+
 keywords:
   - Time Synchronization
   - secure shell

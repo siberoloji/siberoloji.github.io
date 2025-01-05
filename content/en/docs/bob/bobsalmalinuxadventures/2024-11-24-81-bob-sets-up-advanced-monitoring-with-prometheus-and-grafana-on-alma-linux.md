@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 810
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next task was to implement an **advanced monitoring solution** for his AlmaLinux server. He learned to use **Prometheus**, a powerful monitoring system, and **Grafana**, a visualization tool, to monitor system metrics and present them in beautiful, interactive dashboards.

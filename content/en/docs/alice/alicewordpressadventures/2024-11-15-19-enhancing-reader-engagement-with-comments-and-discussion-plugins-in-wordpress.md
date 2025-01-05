@@ -10,16 +10,16 @@ categories:
   - TechLife
   - WordPress
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 190
 toc: true
 keywords: ""
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-interview.webp
 url: enhancing-reader-engagement-comments-discussion-plugins-wordpress
 ---

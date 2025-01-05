@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 For more professional assistance with creating polished content, visit [AutomatedWriter.ai](https://AutomatedWriter.ai). Now, let’s create an in-depth guide to using SysStat on AlmaLinux.  

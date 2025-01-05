@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 400
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Data with Encryption in Kubernetes
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-secures-data-encryption-kubernetes-alma-linux
 ---

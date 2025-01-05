@@ -4,8 +4,8 @@ prev: /docs/kalibook
 next: /docs/kalibook/chapter-1-kali-tools/0trace
 url: /chapter-1-kali-tools/
 weight: 1
-sidebar:
-  open: true
+
+
 description: This post contains the full list of Kali Linux Tools. After the relevant tool explanation page is prepared, new lines will be added.
 categories:
   - Kali Linux

@@ -30,12 +30,12 @@ int main() {
     char firstString[bufferSize] = "abc";
     char secondString[bufferSize] = "def";
 
-    cout &lt;&lt; "First string: " &lt;&lt; firstString &lt;&lt; '\n';
-    cout &lt;&lt; "Second string: " &lt;&lt; secondString &lt;&lt; '\n';
+    cout &lt;&lt; "First string: " &lt;&lt; firstString &lt;&lt; ' ';
+    cout &lt;&lt; "Second string: " &lt;&lt; secondString &lt;&lt; ' ';
 
     strcat(firstString, secondString);
 
-    cout &lt;&lt; "Concatenated string: " &lt;&lt; firstString &lt;&lt; '\n';
+    cout &lt;&lt; "Concatenated string: " &lt;&lt; firstString &lt;&lt; ' ';
 
     return 0;
 }

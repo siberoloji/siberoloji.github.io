@@ -12,15 +12,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 940
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to dive deep into the **Linux kernel** to optimize AlmaLinux for performance, stability, and security. From tweaking kernel parameters to building a custom kernel, Bob was ready to take control of the heart of his operating system.

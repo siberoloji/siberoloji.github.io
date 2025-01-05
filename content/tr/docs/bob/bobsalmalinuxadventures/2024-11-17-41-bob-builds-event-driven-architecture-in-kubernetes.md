@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 410
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Event-Driven Architecture in Kubernetes
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-builds-event-driven-architecture-kubernetes-alma-linux
 ---

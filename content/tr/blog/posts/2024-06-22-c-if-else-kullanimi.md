@@ -31,9 +31,9 @@ int main() {
     cout &lt;&lt; "Enter a positive integer number: ";
     cin &gt;&gt; a;
     if (a &lt; 20) {
-        cout &lt;&lt; "a is less than 20\n";
+        cout &lt;&lt; "a is less than 20 ";
     } else {
-        cout &lt;&lt; "a is not less than 20\n";
+        cout &lt;&lt; "a is not less than 20 ";
     }
     return 0;
 }

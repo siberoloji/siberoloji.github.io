@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 660
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was securing his AlmaLinux server with **Firewalld**, a powerful and flexible firewall management tool. As a junior sysadmin, he understood that a well-configured firewall was critical for preventing unauthorized access and protecting sensitive services.

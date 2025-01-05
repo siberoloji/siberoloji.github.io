@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 540
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 54, *"Bob Builds Kubernetes Workloads for Smart Cities!"*. In this chapter, Bob explores how to leverage Kubernetes for managing **smart city applications**, including IoT devices, urban data processing, and intelligent city services.

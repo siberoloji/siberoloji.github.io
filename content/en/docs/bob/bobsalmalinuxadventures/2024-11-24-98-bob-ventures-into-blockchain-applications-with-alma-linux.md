@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 980
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to explore the world of **blockchain applications** on AlmaLinux. From running a blockchain node to deploying decentralized applications (dApps), Bob aimed to harness the power of decentralized computing to create robust and transparent systems.

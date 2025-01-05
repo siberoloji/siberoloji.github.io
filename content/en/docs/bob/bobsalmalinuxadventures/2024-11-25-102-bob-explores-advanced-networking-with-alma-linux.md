@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 1020
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to master **advanced networking** concepts with AlmaLinux, focusing on **software-defined networking (SDN)** and **virtual private networks (VPNs)**. By setting up dynamic, scalable, and secure networks, he aimed to create a robust infrastructure for modern applications.

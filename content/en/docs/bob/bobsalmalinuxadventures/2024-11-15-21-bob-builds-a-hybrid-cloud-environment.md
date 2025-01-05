@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 210
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Hybrid Cloud Environment
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-builds-hybrid-cloud-environment-alma-linux on integrating local and cloud environments
 ---

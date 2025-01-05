@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 In today’s web-hosting landscape, virtual hosting allows multiple websites to run on a single server, saving costs and optimizing server resources. Nginx, a popular open-source web server, excels in performance, scalability, and flexibility, making it a go-to choice for hosting multiple domains or websites on a single server. Paired with AlmaLinux, a CentOS alternative known for its stability and compatibility, this combination provides a powerful solution for virtual hosting.

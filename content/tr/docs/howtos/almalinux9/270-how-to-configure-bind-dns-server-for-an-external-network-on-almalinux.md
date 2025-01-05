@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - BIND DNS Server
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: configure-bind-dns-server-external-network
 ---

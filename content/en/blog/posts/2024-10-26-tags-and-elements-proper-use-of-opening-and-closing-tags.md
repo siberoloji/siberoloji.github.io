@@ -4,7 +4,7 @@ draft: false
 title:  'Tags and Elements: Proper Use of Opening and Closing Tags'
 date: '2024-10-26T16:49:46+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "Learn the essential HTML tag rules for creating clean, functional web pages. Proper use of tags improves structure, accessibility, and SEO for any website.\n" 
+description:  "Learn the essential HTML tag rules for creating clean, functional web pages. Proper use of tags improves structure, accessibility, and SEO for any website. " 
  
 url:  /tags-and-elements-proper-use-of-opening-and-closing-tags/
  

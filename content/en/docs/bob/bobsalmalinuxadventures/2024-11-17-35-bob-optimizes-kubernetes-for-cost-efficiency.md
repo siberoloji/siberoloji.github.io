@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 350
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - reduce Kubernetes-related cloud expenses
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-optimizes-kubernetes-cost-efficiency
 ---

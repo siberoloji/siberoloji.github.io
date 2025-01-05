@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Nginx (pronounced "Engine-X") is a powerful, lightweight, and highly customizable web server that also functions as a reverse proxy, load balancer, and HTTP cache. Its performance, scalability, and ease of configuration make it a popular choice for hosting websites and managing web traffic.  

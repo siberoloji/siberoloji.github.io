@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 OpenLDAP is a widely used, open-source directory service protocol that allows administrators to manage and authenticate users across networked systems. As network environments grow, ensuring high availability and fault tolerance becomes essential. OpenLDAP replication addresses these needs by synchronizing directory data between a master server (Provider) and one or more replicas (Consumers).

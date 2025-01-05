@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 The `userdir` module is a useful feature that allows individual users on a Linux server to host their own web content in directories under their home folders. By enabling `userdir` with Nginx on AlmaLinux, you can set up a system where users can create personal websites or test environments without needing root or administrative access to the web server configuration.

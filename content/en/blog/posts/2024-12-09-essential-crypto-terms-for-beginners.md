@@ -13,8 +13,8 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/cryptocurrency1.webp
-sidebar:
-  open: true
+
+
 keywords:
   - Essential Crypto Terms
 url: essential-crypto-terms-beginners

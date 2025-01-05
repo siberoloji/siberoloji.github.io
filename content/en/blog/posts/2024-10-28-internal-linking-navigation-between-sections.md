@@ -1,12 +1,10 @@
 ---
 draft: false
-
-title:  'Internal Linking: Navigation Between Sections'
-date: '2024-10-28T11:43:59+03:00'
-author: 'Tarık Korucuoğlu'
-description:  'In this post, we’ll discuss the importance of internal linking and provide detailed examples of how to implement it effectively.' 
- 
-url:  /internal-linking-navigation-between-sections/
+title: "Internal Linking: Navigation Between Sections"
+date: 2024-10-28T11:43:59+03:00
+author: Tarık Korucuoğlu
+description: In this post, we’ll discuss the importance of internal linking and provide detailed examples of how to implement it effectively.
+url: /internal-linking-navigation-between-sections/
 featured_image: /images/htmlprogramming.webp
 categories:
     - HTML

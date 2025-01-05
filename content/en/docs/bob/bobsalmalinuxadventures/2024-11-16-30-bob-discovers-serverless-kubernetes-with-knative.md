@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 300
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Serverless Kubernetes with Knative
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-discovers-serverless-kubernetes-knative-alma-linux
 ---

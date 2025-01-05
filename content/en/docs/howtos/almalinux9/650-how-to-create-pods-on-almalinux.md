@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 The concept of pods is foundational in containerized environments, particularly in Kubernetes and similar ecosystems. Pods serve as the smallest deployable units, encapsulating one or more containers that share storage, network, and a common context. AlmaLinux, an enterprise-grade Linux distribution, provides a stable and reliable platform to create and manage pods using container engines like Podman or Kubernetes.

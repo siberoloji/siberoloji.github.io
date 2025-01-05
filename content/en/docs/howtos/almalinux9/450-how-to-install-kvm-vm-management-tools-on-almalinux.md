@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - KVM
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: install-kvm-vm-management-tools-almalinux
 ---

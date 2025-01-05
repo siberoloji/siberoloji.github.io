@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 510
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 51, *"Bob Explores Quantum Computing with Kubernetes!"*. In this chapter, Bob delves into the emerging field of **quantum computing**, leveraging Kubernetes to manage hybrid quantum-classical workloads and integrate quantum computing frameworks with traditional infrastructure.

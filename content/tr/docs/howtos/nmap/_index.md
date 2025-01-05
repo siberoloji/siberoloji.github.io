@@ -6,8 +6,8 @@ next: docs/howtos/nmap/10-understanding-nmap-the-network-mapper/
 weight: 3
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-sidebar:
-  open: true
+
+
 url: nmap-network-mapper-documents
 ---
 

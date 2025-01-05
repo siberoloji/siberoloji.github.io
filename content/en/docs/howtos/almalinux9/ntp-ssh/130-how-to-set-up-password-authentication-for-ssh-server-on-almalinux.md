@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - password authentication
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: set-password-authentication-ssh-server-almalinux
 ---

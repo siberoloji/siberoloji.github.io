@@ -46,7 +46,7 @@ Process list
 
     PID   Name                 Path
     ---   ----                 ----
-    180   notepad.exe          C:\WINDOWS\system32\notepad.exe
+    180   notepad.exe          C:\WINDOWS\system32 otepad.exe
     248   snmp.exe             C:\WINDOWS\System32\snmp.exe
     260   Explorer.EXE         C:\WINDOWS\Explorer.EXE
     284   surgemail.exe        c:\surgemail\surgemail.exe
@@ -66,7 +66,7 @@ Process list
     984   lsass.exe            C:\WINDOWS\system32\lsass.exe
     1152  vmacthlp.exe         C:\Program Files\VMware\VMware Tools\vmacthlp.exe
     1164  svchost.exe          C:\WINDOWS\system32\svchost.exe
-    1276  nwauth.exe           c:\surgemail\nwauth.exe
+    1276  nwauth.exe           c:\surgemail wauth.exe
     1296  svchost.exe          C:\WINDOWS\system32\svchost.exe
     1404  svchost.exe          C:\WINDOWS\System32\svchost.exe
     1500  svchost.exe          C:\WINDOWS\system32\svchost.exe

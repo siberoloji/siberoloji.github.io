@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - Sudo Settings
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: set-sudo-settings-almalinux
 --- 

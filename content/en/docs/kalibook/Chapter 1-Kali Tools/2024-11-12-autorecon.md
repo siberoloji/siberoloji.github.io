@@ -10,8 +10,8 @@ tags:
 categories:
   - Kali linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 260
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - autorecon
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/kalilinux2.webp
 url: autorecon-kali-linux-tool-comprehensive-guide
 ---

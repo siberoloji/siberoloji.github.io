@@ -12,15 +12,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 870
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to master **Linux storage management** to handle complex storage setups, optimize disk performance, and ensure data reliability. He explored **LVM (Logical Volume Manager)**, RAID configurations, and disk encryption to become a storage expert.

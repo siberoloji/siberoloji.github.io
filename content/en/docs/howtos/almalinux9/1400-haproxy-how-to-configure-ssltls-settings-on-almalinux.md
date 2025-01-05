@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 As web applications and services increasingly demand secure communication, implementing **SSL/TLS** (Secure Sockets Layer/Transport Layer Security) is essential for encrypting traffic between clients and servers. **HAProxy**, a powerful open-source load balancer and reverse proxy, offers robust support for SSL/TLS termination and passthrough, ensuring secure and efficient traffic management.

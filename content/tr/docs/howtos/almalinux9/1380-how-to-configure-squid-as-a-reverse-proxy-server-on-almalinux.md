@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - Squid
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 A **reverse proxy server** acts as an intermediary between clients and backend servers, offering benefits like load balancing, caching, and enhanced security. One of the most reliable tools for setting up a reverse proxy is **Squid**, an open-source, high-performance caching proxy server. Squid is typically used as a forward proxy, but it can also be configured as a reverse proxy to optimize backend server performance and improve the user experience.

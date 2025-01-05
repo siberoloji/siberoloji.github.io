@@ -4,7 +4,7 @@ draft: false
 title:  'The Evolution of HTML: From HTML 1.0 to 5.0'
 date: '2024-10-26T13:37:22+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "From simple beginnings to today’s highly interactive websites, HTML has evolved remarkably over the decades. But how did it start?\n" 
+description:  "From simple beginnings to today’s highly interactive websites, HTML has evolved remarkably over the decades. But how did it start? " 
  
 url:  /the-evolution-of-html-from-html-1-0-to-5-0/
 featured_image: /images/htmlprogramming.webp

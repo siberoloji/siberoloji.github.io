@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Identity management is a critical component of modern IT environments, ensuring secure access to systems, applications, and data. **FreeIPA** (Free Identity, Policy, and Audit) is an open-source solution that provides centralized identity and authentication services. It integrates key components like Kerberos, LDAP, DNS, and Certificate Authority (CA) to manage users, groups, hosts, and policies.

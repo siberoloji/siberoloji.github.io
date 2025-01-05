@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 820
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to implement **high availability (HA)** and **clustering** to ensure his services stayed online even during hardware failures or peak loads. He learned to use tools like **Pacemaker**, **Corosync**, and **HAProxy** to build resilient and scalable systems.

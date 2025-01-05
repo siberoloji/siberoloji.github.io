@@ -42,9 +42,9 @@ int main() {
         cin &gt;&gt; inputNumber;
         
         if (inputNumber &lt; 1) {
-            cout &lt;&lt; "Number must be greater than 0.\n";
+            cout &lt;&lt; "Number must be greater than 0. ";
         } else if (inputNumber &gt; 10) {
-            cout &lt;&lt; "Number must be less than or equal to 10.\n";
+            cout &lt;&lt; "Number must be less than or equal to 10. ";
         } else {
             int factorial = calculateFactorial(inputNumber);
             cout &lt;&lt; "Result: " &lt;&lt; factorial &lt;&lt; endl;

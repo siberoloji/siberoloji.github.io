@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Lightweight Directory Access Protocol (LDAP) is a powerful solution for managing user authentication and maintaining a centralized directory of user accounts in networked environments. Setting up LDAP on AlmaLinux is a significant step toward streamlined user management, but understanding how to add and manage user accounts is equally crucial.

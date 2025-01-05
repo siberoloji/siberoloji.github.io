@@ -92,7 +92,7 @@ Process list
     500   MSTask.exe         C:\WINNT\system32\MSTask.exe                           
     528   VMwareService.exe  C:\Program Files\VMwareVMware Tools\VMwareService.exe 
     588   WinMgmt.exe        C:\WINNT\System32\WBEMWinMgmt.exe                     
-    664   notepad.exe        C:\WINNT\System32\notepad.exe                          
+    664   notepad.exe        C:\WINNT\System32 otepad.exe                          
     724   cmd.exe            C:\WINNT\System32\cmd.exe                              
     768   Explorer.exe       C:\WINNT\Explorer.exe                                  
     800   war-ftpd.exe       C:\Program Files\War-ftpd\war-ftpd.exe                 

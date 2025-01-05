@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 As modern web applications grow in complexity and user base, ensuring high availability and scalability becomes crucial. Load balancing is a technique that distributes incoming traffic across multiple servers to prevent overloading a single machine, ensuring better performance and reliability. Nginx, known for its high performance and flexibility, offers robust load-balancing features, making it an excellent choice for managing traffic for web applications.

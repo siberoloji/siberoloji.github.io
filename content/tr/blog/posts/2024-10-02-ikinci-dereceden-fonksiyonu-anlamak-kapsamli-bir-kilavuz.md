@@ -37,7 +37,7 @@ Burada, (a), (b) ve (c) sabitlerdir ve (x) değişkeni temsil eder. İkinci dere
 Anahtar Terimler:
 
 
-* **İkinci Dereceden Terim** : ( ax^2 ) ikinci dereceden terimdir, burada ( a \neq 0 ). Grafiğin eğriliğini tanımlar.
+* **İkinci Dereceden Terim** : ( ax^2 ) ikinci dereceden terimdir, burada ( a  eq 0 ). Grafiğin eğriliğini tanımlar.
 
 * **Doğrusal Terim** : (bx) doğrusal terimdir. Eğrinin eğimini ve yönünü etkiler.
 

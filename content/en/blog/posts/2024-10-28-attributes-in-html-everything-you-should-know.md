@@ -4,7 +4,7 @@ draft: false
 title:  'Attributes in HTML: Everything You Should Know'
 date: '2024-10-28T13:47:45+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "In this post, we’ll explore what attributes are, the different types of attributes, and how to use them effectively in your HTML code.\n" 
+description:  "In this post, we’ll explore what attributes are, the different types of attributes, and how to use them effectively in your HTML code. " 
  
 url:  /attributes-in-html-everything-you-should-know/
 featured_image: /images/htmlprogramming2.webp

@@ -11,8 +11,8 @@ categories: []
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: ""
-sidebar:
-  open: true
+
+
 url: check-installed-macos-steps-install-go-lang
 ---
 The Go programming language, often referred to as Golang, is a versatile and efficient language developed by Google. Its simplicity, strong concurrency support, and efficient performance make it a popular choice for developing web applications, distributed systems, and cloud-native software. If you’re working on a macOS system and want to start using Go, the first step is to determine whether it’s already installed and, if not, to install it. This guide will walk you through these processes step by step.

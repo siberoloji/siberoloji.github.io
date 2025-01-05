@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - Podman Containers by Common Users
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Containerization has revolutionized software development, making it easier to deploy, scale, and manage applications. Among container engines, **Podman** has emerged as a popular alternative to Docker, offering a daemonless, rootless, and secure way to manage containers. AlmaLinux, a community-driven Linux distribution with enterprise-grade reliability, is an excellent platform for running Podman containers.

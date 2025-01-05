@@ -277,7 +277,7 @@ nullAcl           - Positionne une ACL null sur des Handles
 
 meterpreter &gt; mimikatz_command -f handle::list
 ...snip...
-  760  lsass.exe                 -&gt;  1004       Token           NT AUTHORITY\NETWORK SERVICE
+  760  lsass.exe                 -&gt;  1004       Token           NT AUTHORITY ETWORK SERVICE
   760  lsass.exe                 -&gt;  1008       Process 704     winlogon.exe
   760  lsass.exe                 -&gt;  1052       Process 980     svchost.exe
   760  lsass.exe                 -&gt;  1072       Process 2664    fubar.exe

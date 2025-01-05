@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 530
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 53, *"Bob Tackles Bioinformatics with Kubernetes!"*. In this chapter, Bob explores how to use Kubernetes for **bioinformatics workloads**, enabling large-scale genomic analysis, medical research, and high-performance computing for life sciences.

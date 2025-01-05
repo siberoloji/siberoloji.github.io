@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - Chroot on AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: set-sftp-chroot-almalinux
 ---

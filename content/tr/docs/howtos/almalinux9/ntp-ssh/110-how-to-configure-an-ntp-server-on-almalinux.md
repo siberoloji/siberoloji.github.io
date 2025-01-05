@@ -20,8 +20,8 @@ keywords:
   - AlmaLinux
   - NTP server on AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: configure-ntp-server-almalinux
 ---

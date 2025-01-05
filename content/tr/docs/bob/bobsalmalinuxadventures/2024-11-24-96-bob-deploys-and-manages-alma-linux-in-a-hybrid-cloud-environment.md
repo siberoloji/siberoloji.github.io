@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 960
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to bridge the gap between on-premise systems and the cloud by creating a **hybrid cloud environment** with AlmaLinux. By integrating local servers with cloud resources, Bob aimed to combine the best of both worlds: control and scalability.

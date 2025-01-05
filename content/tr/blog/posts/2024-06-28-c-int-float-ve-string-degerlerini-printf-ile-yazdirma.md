@@ -32,9 +32,9 @@ int main() {
     constexpr int number = 123;
     constexpr float realNumber = 3.146;
     string text = "Hello World";
-    printf("Number: %d\n", number);
-    printf("Pi value: %.2f\n", realNumber);
-    printf("Text: %s\n", text.c_str());
+    printf("Number: %d ", number);
+    printf("Pi value: %.2f ", realNumber);
+    printf("Text: %s ", text.c_str());
     return 0;
 }
 ```

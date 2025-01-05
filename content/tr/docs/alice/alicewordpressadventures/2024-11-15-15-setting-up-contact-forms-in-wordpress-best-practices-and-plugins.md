@@ -10,8 +10,8 @@ categories:
   - TechLife
   - WordPress
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 150
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Contact Forms in WordPress
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-in-front-of-computer.webp
 url: setting-contact-forms-wordpress-practices-plugins
 ---

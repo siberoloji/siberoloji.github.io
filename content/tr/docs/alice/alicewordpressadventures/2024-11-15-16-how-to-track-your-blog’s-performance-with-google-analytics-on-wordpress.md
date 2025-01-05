@@ -10,8 +10,8 @@ categories:
   - TechLife
   - WordPress
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 160
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Google Analytics on WordPress
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-interview.webp
 url: track-blog’s-performance-google-analytics-wordpress
 ---

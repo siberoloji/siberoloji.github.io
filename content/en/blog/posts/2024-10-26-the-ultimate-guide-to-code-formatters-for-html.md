@@ -4,7 +4,7 @@ draft: false
 title:  'The Ultimate Guide to Code Formatters for HTML'
 date: '2024-10-26T15:40:14+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "Explore HTML code formatters like Prettier and Beautify HTML. Learn how they enhance readability, reduce errors, and improve collaboration for cleaner code.\n" 
+description:  "Explore HTML code formatters like Prettier and Beautify HTML. Learn how they enhance readability, reduce errors, and improve collaboration for cleaner code. " 
  
 url:  /the-ultimate-guide-to-code-formatters-for-html/
 featured_image: /images/htmlprogramming.webp

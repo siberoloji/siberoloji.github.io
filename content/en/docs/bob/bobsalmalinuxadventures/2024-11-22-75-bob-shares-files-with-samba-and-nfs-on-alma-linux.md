@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 750
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next task was to set up **file sharing** on AlmaLinux. His manager needed a shared folder for team collaboration that could be accessed by Windows, Linux, and macOS systems. Bob decided to configure **Samba** for Windows-compatible sharing and **NFS (Network File System)** for Linux-based systems.

@@ -24,11 +24,6 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"
@@ -57,6 +52,11 @@
           "title": "featured_image",
           "name": "featured_image",
           "type": "image"
+        },
+        {
+          "title": "toc",
+          "name": "toc",
+          "type": "boolean"
         }
       ]
     }
@@ -156,6 +156,102 @@
     {
       "title": "initial-settings",
       "path": "[[workspace]]/content/en/docs/howtos/almalinux9/initial-settings"
+    },
+    {
+      "title": "tr",
+      "path": "[[workspace]]/content/tr"
+    },
+    {
+      "title": "docs",
+      "path": "[[workspace]]/content/tr/docs"
+    },
+    {
+      "title": "blog",
+      "path": "[[workspace]]/content/tr/blog"
+    },
+    {
+      "title": "about",
+      "path": "[[workspace]]/content/tr/about"
+    },
+    {
+      "path": "[[workspace]]/content/tr/blog/news/first-post",
+      "title": "first-post"
+    },
+    {
+      "path": "[[workspace]]/content/en/blog/draft",
+      "title": "draft"
+    },
+    {
+      "title": "draft",
+      "path": "[[workspace]]/content/tr/blog/draft"
+    },
+    {
+      "title": "tutorials",
+      "path": "[[workspace]]/content/tr/docs/tutorials"
+    },
+    {
+      "title": "tasks",
+      "path": "[[workspace]]/content/tr/docs/tasks"
+    },
+    {
+      "title": "initial-settings",
+      "path": "[[workspace]]/content/tr/docs/howtos/almalinux9/initial-settings"
+    },
+    {
+      "title": "ntp-ssh",
+      "path": "[[workspace]]/content/tr/docs/howtos/almalinux9/ntp-ssh"
+    },
+    {
+      "title": "bobsalmalinuxadventures",
+      "path": "[[workspace]]/content/tr/docs/bob/bobsalmalinuxadventures"
+    },
+    {
+      "title": "Chapter 1-Kali Tools",
+      "path": "[[workspace]]/content/tr/docs/kalibook/Chapter 1-Kali Tools"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/tr/blog/posts"
+    },
+    {
+      "title": "alice",
+      "path": "[[workspace]]/content/tr/docs/alice"
+    },
+    {
+      "title": "alicewordpressadventures",
+      "path": "[[workspace]]/content/tr/docs/alice/alicewordpressadventures"
+    },
+    {
+      "title": "getting-started",
+      "path": "[[workspace]]/content/tr/docs/getting-started"
+    },
+    {
+      "title": "nmap",
+      "path": "[[workspace]]/content/tr/docs/howtos/nmap"
+    },
+    {
+      "title": "Ponycopters",
+      "path": "[[workspace]]/content/tr/docs/tasks/Ponycopters"
+    },
+    {
+      "title": "reference",
+      "path": "[[workspace]]/content/tr/docs/reference"
+    },
+    {
+      "title": "Cybersecurity",
+      "path": "[[workspace]]/content/en/blog/Cybersecurity"
+    },
+    {
+      "title": "Networks",
+      "path": "[[workspace]]/content/en/blog/Networks"
+    },
+    {
+      "title": "Linux",
+      "path": "[[workspace]]/content/en/blog/Linux"
+    },
+    {
+      "title": "Android",
+      "path": "[[workspace]]/content/en/blog/Android"
     }
   ],
   "frontMatter.git.enabled": true

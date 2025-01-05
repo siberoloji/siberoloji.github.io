@@ -171,7 +171,7 @@ To enable CGI scripts, you must configure Apache to recognize specific directori
 
    ```python
    #!/usr/bin/env python3
-   print("Content-Type: text/html\n")
+   print("Content-Type: text/html ")
    print("<html><head><title>CGI Test</title></head>")
    print("<body><h1>Hello, CGI World!</h1></body></html>")
    ```

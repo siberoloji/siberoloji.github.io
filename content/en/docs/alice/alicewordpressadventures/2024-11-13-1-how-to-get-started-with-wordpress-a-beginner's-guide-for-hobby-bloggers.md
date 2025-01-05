@@ -15,8 +15,8 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-taking-picture.webp
 url: started-wordpress-beginner-guide-hobby-bloggers
-sidebar:
-  open: true
+
+
 ---
 
 For many hobbyists like [Alice](/if-alice-decides-to-write-blog-posts/), sharing a passion through blogging can be both fulfilling and rewarding. WordPress, one of the most popular content management systems (CMS), is a great way to start. This guide will walk you through the essentials, from setting up a WordPress site to customizing it for your unique needs as a hobby blogger. Whether your passion is gardening, painting, technology, or something entirely different, WordPress offers the tools you need to showcase your work effectively.

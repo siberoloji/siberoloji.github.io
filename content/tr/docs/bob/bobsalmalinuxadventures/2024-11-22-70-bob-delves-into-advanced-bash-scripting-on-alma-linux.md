@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 700
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 
@@ -243,7 +243,7 @@ Bob used `awk` to extract specific columns from a file:
 ```bash
 #!/bin/bash
 
-echo -e "Name Age\nBob 30\nAlice 25" > users.txt
+echo -e "Name Age Bob 30 Alice 25" > users.txt
 awk '{print $1}' users.txt  # Outputs: Name, Bob, Alice
 ```
 

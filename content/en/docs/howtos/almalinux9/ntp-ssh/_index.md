@@ -1,10 +1,11 @@
 ---
 title: NTP / SSH Settings
 date: 2024-11-05
-description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
-categories: [Examples]
-tags: [test, sample, docs]
+description: "AlmaLinux 9: NTP / SSH Settings"
+categories:
+  - AlmaLinux 9
+tags:
+  - AlmaLinux
 weight: 2
 simple_list: true
 ---

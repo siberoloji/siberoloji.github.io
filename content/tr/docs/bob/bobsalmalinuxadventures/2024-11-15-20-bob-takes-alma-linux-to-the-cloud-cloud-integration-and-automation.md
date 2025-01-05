@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 200
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - AlmaLinux to the Cloud Integration
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-takes-alma-linux-cloud-integration-automation
 ---

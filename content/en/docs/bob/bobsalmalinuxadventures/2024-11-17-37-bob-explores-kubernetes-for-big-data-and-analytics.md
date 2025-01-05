@@ -10,8 +10,8 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 370
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - Kubernetes for Big Data and Analytics
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-explores-kubernetes-big-data-analytics-alma-linux
 ---

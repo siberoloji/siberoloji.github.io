@@ -4,8 +4,8 @@ linkTitle: Directories and Permissions
 description: Understanding Linux file permissions and navigating the filesystem’s depths.
 date: 2024-11-08
 draft: false
-prev: ""
-next: ""
+
+
 tags:
   - AlmaLinux
   - bob system administrator
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - AlmaLinux file permissions
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: /bob-explores-mysterious-world-of-directories-permissions/
 ---

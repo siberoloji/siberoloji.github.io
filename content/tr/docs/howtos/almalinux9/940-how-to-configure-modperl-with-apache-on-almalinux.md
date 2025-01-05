@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 For developers and system administrators looking to integrate Perl scripting into their web servers, **mod_perl** is a robust and efficient solution. It allows the Apache web server to embed a Perl interpreter, making it an ideal choice for building dynamic web applications. AlmaLinux, a popular RHEL-based distribution, provides a stable platform for configuring mod_perl with Apache to host Perl-powered websites or applications.  
@@ -160,7 +160,7 @@ Add the following content:
 
 ```perl
 #!/usr/bin/perl
-print "Content-type: text/html\n\n";
+print "Content-type: text/html  ";
 print "<html><head><title>mod_perl Test</title></head>";
 print "<body><h1>Hello, World! mod_perl is working!</h1></body></html>";
 ```  

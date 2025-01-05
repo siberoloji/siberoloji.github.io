@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 1000
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to dive into the world of **big data analytics** on AlmaLinux. By using distributed computing frameworks like Hadoop and Spark, he aimed to process and analyze massive datasets, extracting valuable insights to drive smarter decisions.

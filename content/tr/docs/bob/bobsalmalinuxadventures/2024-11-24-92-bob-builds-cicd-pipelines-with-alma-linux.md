@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 920
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to automate the software delivery lifecycle by building a **Continuous Integration/Continuous Deployment (CI/CD)** pipeline on AlmaLinux. With tools like Git, Jenkins, and Docker, he aimed to create a seamless pipeline for coding, testing, and deploying applications.

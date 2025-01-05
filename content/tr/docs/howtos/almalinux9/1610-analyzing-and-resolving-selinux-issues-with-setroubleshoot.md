@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 **How to Use SELinux SETroubleShoot on AlmaLinux: A Comprehensive Guide**  

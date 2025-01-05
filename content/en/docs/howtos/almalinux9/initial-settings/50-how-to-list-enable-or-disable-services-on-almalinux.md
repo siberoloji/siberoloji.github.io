@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - services on almalinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 url: list-enable-disable-services-almalinux
 ---

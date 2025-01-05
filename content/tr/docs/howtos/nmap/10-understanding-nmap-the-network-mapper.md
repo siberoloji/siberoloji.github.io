@@ -20,8 +20,8 @@ toc: true
 keywords:
   - nmap
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/kalilinux3.webp
 ---
 Network security professionals and system administrators have long relied on powerful tools to understand, monitor, and secure their networks. Among these tools, Nmap (Network Mapper) stands out as one of the most versatile and widely-used utilities for network discovery and security auditing. In this comprehensive guide, we'll explore what Nmap is, how it works, and why it has become an indispensable tool in the network administrator's arsenal.

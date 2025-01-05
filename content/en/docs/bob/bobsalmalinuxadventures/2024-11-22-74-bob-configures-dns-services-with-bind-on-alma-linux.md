@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 740
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to set up a **Domain Name System (DNS) server** using **BIND (Berkeley Internet Name Domain)**. A DNS server translates human-readable domain names into IP addresses, making it an essential component of any network infrastructure.

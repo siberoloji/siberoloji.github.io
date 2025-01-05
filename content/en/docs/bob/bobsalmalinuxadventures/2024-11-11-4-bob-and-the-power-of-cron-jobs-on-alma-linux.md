@@ -4,8 +4,8 @@ linkTitle: Cron Jobs
 description: We’ll introduce cron jobs, explain their structure, and guide Bob through setting up his first scheduled tasks on AlmaLinux
 date: 2024-11-10
 draft: false
-prev: ""
-next: ""
+
+
 tags:
   - AlmaLinux
   - bob system administrator
@@ -18,8 +18,8 @@ weight: 40
 toc: true
 keywords: ""
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: /bob-and-the-power-of-cron-jobs-in-alma-linux/
 ---

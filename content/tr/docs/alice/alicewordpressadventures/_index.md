@@ -5,8 +5,8 @@ prev: docs/alice
 next: docs/alice/alicewordpressadventures/2024-11-11-if-alice-wants-to-write-blog-posts
 url: /alice-wordpress/
 weight: 1
-sidebar:
-  open: true
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 ---

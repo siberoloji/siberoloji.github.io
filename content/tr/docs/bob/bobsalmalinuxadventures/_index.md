@@ -5,8 +5,8 @@ prev: docs/bob
 next: docs/bob/bobsalmalinuxadventures/2024-11-11-1-the-alma-linux-adventures-of-bob-a-junior-system-administrator
 url: /bob-alma-linux/
 weight: 2
-sidebar:
-  open: true
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 ---

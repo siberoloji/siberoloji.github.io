@@ -10,8 +10,8 @@ categories:
   - TechLife
   - WordPress
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 120
@@ -19,8 +19,8 @@ toc: true
 keywords:
   - "WordPress Widgets: How to Customize Your Sidebar and Footer"
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/alice-interview.webp
 url: understanding-wordpress-widgets-customize-sidebar-footer
 ---

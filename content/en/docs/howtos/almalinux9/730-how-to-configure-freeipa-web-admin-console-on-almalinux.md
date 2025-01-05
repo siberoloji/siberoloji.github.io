@@ -21,8 +21,8 @@ keywords:
   - AlmaLinux
   - FreeIPA Web Admin Console
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 In the world of IT, system administrators often face challenges managing user accounts, enforcing security policies, and administering access to resources. FreeIPA, an open-source identity management solution, simplifies these tasks by integrating several components, such as LDAP, Kerberos, DNS, and a Certificate Authority, into a cohesive system. AlmaLinux, a community-driven RHEL fork, provides a stable and robust platform for deploying FreeIPA. This guide explains how to configure the FreeIPA Web Admin Console on AlmaLinux, giving you the tools to effectively manage your identity infrastructure.

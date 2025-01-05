@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 650
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s manager was impressed with his Apache setup but tasked him with learning **Nginx** to use as a **reverse proxy**. This would allow Bob to offload tasks like caching, load balancing, and SSL termination, while Apache handled the backend web serving.

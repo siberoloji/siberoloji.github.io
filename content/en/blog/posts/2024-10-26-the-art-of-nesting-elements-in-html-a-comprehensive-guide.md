@@ -4,7 +4,7 @@ draft: false
 title:  'The Art of Nesting Elements in HTML: A Comprehensive Guide'
 date: '2024-10-26T17:31:23+03:00'
 author: 'Tarık Korucuoğlu'
-description:  "Discover the importance of nesting elements in HTML! Learn rules, best practices, and common patterns to create organized and accessible web pages.\n" 
+description:  "Discover the importance of nesting elements in HTML! Learn rules, best practices, and common patterns to create organized and accessible web pages. " 
  
 url:  /the-art-of-nesting-elements-in-html-a-comprehensive-guide/
  

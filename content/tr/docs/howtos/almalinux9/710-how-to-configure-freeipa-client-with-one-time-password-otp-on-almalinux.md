@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 In an era where security is paramount, integrating **One-Time Password (OTP)** with centralized authentication systems like FreeIPA enhances protection against unauthorized access. FreeIPA, an open-source identity management solution, supports OTP, enabling an additional layer of security for user authentication. Configuring a FreeIPA client on AlmaLinux to use OTP ensures secure, single-use authentication for users while maintaining centralized identity management.

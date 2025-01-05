@@ -9,18 +9,10 @@ tags:
 categories:
   - Linux
 linkTitle: Using Non-Root User
-type: blog
-prev: ""
-next: ""
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-weight: 0
 toc: true
 keywords:
   - Non-root user
-excludeSearch: false
-sidebar:
-  open: true
 featured_image: /images/programming2.webp
 url: creating-non-root-user-linux
 ---

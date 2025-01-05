@@ -12,15 +12,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 880
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to dive into the world of **edge computing**. With businesses increasingly deploying servers closer to their data sources—like IoT devices and remote sensors—Bob wanted to see how AlmaLinux could handle these workloads efficiently.

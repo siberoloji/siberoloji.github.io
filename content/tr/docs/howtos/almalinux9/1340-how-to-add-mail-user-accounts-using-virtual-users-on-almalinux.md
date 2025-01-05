@@ -20,8 +20,8 @@ toc: true
 keywords:
   - AlmaLinux
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/almalinux.webp
 ---
 Managing mail servers efficiently is a critical task for server administrators. In many cases, using **virtual users** to handle email accounts is preferred over creating system users. Virtual users allow you to separate mail accounts from system accounts, providing flexibility, enhanced security, and streamlined management.

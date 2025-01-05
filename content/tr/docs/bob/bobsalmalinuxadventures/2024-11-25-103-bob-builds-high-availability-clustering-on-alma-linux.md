@@ -13,15 +13,15 @@ tags:
 categories:
   - Linux
 type: docs
-prev: ""
-next: ""
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 1030
 toc: true
 excludeSearch: false
-sidebar:
-  open: true
+
+
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to create a **High Availability (HA) cluster** on AlmaLinux. By ensuring minimal downtime and maximizing reliability, he aimed to make critical applications resilient to failures, keeping systems running smoothly even in adverse conditions.

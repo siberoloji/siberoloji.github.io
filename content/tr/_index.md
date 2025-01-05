@@ -20,17 +20,17 @@ Giriş seviyesinden başlayarak ileri düzey konulara kadar geniş bir yelpazede
 {{% /blocks/lead %}}
 
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New Design!" %}}
+{{% blocks/feature icon="fa-lightbulb" title="Yeni Tasarım!" %}}
 Siberoloji yeni tasarımıyla daha hızlı.
 
 Takip edin!
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/siberoloji/siberoloji.github.io" %}}
+{{% blocks/feature icon="fab fa-github" title="Katkı Sağlayabilirsiniz!" url="https://github.com/siberoloji/siberoloji.github.io" %}}
 **Github** üzerinden [Pull Request](https://github.com/siberoloji/siberoloji.github.io/pulls) katkıda bulunabilirsiniz.!
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/siberoloji_ltd" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="X'te takip edin!" url="https://x.com/siberoloji_ltd" %}}
 Son yenilikler ve duyurular için X hesabımız.
 {{% /blocks/feature %}}
 

@@ -14,8 +14,8 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/Searchengine-optimization.webp
-sidebar:
-  open: true
+
+
 url: canonical-url-understanding-seo-powerhouse
 slug: canonical-url-understanding-seo-powerhouse
 keywords:
