@@ -57,6 +57,26 @@
           "title": "toc",
           "name": "toc",
           "type": "boolean"
+        },
+        {
+          "title": "linkTitle",
+          "name": "linkTitle",
+          "type": "string"
+        },
+        {
+          "title": "weight",
+          "name": "weight",
+          "type": "number"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "excludeSearch",
+          "name": "excludeSearch",
+          "type": "boolean"
         }
       ]
     }
@@ -76,10 +96,6 @@
     {
       "title": "blog",
       "path": "[[workspace]]/content/en/blog"
-    },
-    {
-      "title": "about",
-      "path": "[[workspace]]/content/en/about"
     },
     {
       "title": "tasks",
@@ -168,10 +184,6 @@
     {
       "title": "blog",
       "path": "[[workspace]]/content/tr/blog"
-    },
-    {
-      "title": "about",
-      "path": "[[workspace]]/content/tr/about"
     },
     {
       "path": "[[workspace]]/content/tr/blog/news/first-post",

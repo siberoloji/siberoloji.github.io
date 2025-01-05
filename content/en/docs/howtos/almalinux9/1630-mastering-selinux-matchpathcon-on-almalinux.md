@@ -1,27 +1,21 @@
 ---
 title: Mastering SELinux matchpathcon on AlmaLinux
-linkTitle: 
-description: 
-date: 
+linkTitle: SELinux matchpathcon
+description: This guide provides an in-depth look at using matchpathcon on AlmaLinux to troubleshoot SELinux-related issues effectively.
+date: 2025-01-05T19:38:18.943Z
 weight: 1630
-slug: 
-draft: true
+url: mastering-selinux-matchpathcon-almalinux
+draft: false
 tags:
-  - AlmaLinux
+   - AlmaLinux
 categories:
-  - Linux
-  - Linux How-to
-type: docs
-prev: 
-next: 
+   - Linux
+   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-toc: true
 keywords:
-  - AlmaLinux
-excludeSearch: false
-
-
+   - AlmaLinux
+   - SELinux
+   - matchpathcon
 featured_image: /images/almalinux.webp
 ---
 **How to Use SELinux matchpathcon for Basic Troubleshooting on AlmaLinux**  

@@ -12,7 +12,6 @@ defaultContentLanguageInSubdir: false
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
 
-
 enableRobotsTXT: true
 
 # Will give values to .Lastmod etc.
@@ -27,19 +26,7 @@ pygmentsUseClassic: false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle: tango
 
-
-menu:
-  main:
-    - name: GitHub
-      weight: 50
-      url: 'https://github.com/siberoloji/siberoloji.github.io/'
-      pre: <i class='fa-brands fa-github'></i>
-      post: <span class='alert'>New!</span>
-
-
 # Configure how URLs look like per section.
-
-
 
 # Comment out to enable taxonomies in Docsy
 # disableKinds: [taxonomy, taxonomyTerm]
@@ -180,9 +167,11 @@ params:
       enable: true
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
-        Glad to hear it! Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">tell us how we can improve</a>.
+        Glad to hear it! Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">
+        tell us how we can improve</a>.
       'no': >-
-        Sorry to hear that. Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">tell us how we can improve</a>.
+        Sorry to hear that. Please <a href="https://github.com/siberoloji/siberoloji.github.io/issues/new">
+        tell us how we can improve</a>.
 
     # Adds a reading time to the top of each doc.
     # If you want this feature, but occasionally need to remove the Reading time from a single page,
@@ -210,12 +199,19 @@ params:
     ul_show: 1
     sidebar_menu_foldable: true
     sidebar_cache_limit: 1000
-    sidebar_menu_truncate: 150
+    sidebar_menu_truncate: 300
     sidebar_menu_truncate_show_more: true
     sidebar_menu_truncate_show_more_text: "Show more"
     sidebar_menu_truncate_show_less_text: "Show less"
 
     showLightDarkModeMenu: true
+
+    
+
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
