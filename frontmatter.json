@@ -55,10 +55,6 @@
       "path": "[[workspace]]/content/en"
     },
     {
-      "title": "community",
-      "path": "[[workspace]]/content/en/community"
-    },
-    {
       "title": "docs",
       "path": "[[workspace]]/content/en/docs"
     },
@@ -97,10 +93,6 @@
     {
       "title": "bob",
       "path": "[[workspace]]/content/en/docs/bob"
-    },
-    {
-      "title": "releases",
-      "path": "[[workspace]]/content/en/blog/releases"
     },
     {
       "title": "alice",

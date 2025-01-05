@@ -10,10 +10,8 @@ tags:
   - macos screen saver
 categories:
   - MAC/iOS
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 featured_image: /images/apple-macbook-pro-mlh32tua-notebook-75816.webp
 sidebar:
   open: true

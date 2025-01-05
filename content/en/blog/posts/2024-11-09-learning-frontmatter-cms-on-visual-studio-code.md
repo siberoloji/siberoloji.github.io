@@ -12,10 +12,8 @@ categories:
     - Useful Apps
 keywords:
     - Front Matter CMS
-authors:
-    - name: İbrahim Korucuoğlu
-      link: https://github.com/siberoloji
-      image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 sidebar:
     open: true
 linkTitle: Learning Front Matter CMS on Visual Studio Code with HUGO

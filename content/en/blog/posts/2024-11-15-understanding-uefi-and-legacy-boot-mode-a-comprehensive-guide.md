@@ -12,10 +12,8 @@ linkTitle: UEFI and Legacy
 type: blog
 prev: ""
 next: ""
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 weight: 0
 toc: true
 keywords:

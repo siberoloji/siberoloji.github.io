@@ -10,10 +10,8 @@ tags:
   - IEEE 8002.3
   - IEEE 8002.5
 categories: []
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 featured_image: /images/datacommunicaitons2.webp
 sidebar:
   open: true

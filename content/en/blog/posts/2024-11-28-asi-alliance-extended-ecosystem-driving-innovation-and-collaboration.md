@@ -14,10 +14,8 @@ categories:
   - TechLife
   - Cyber Research
 type: blog
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 featured_image: /images/artificialintelligence5.webp
 sidebar:
   open: true

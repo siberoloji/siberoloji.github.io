@@ -8,10 +8,8 @@ draft: false
 toc: true
 tags: []
 categories: []
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 featured_image: ""
 sidebar:
   open: true

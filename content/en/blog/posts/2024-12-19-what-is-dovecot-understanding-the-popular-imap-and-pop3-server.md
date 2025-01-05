@@ -10,10 +10,8 @@ tags:
   - dovecot
 categories:
   - Linux Fundamentals
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+
 featured_image: /images/mailservers.webp
 sidebar:
   open: true

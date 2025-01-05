@@ -53,8 +53,15 @@ languages:
     params:
       description: A Docsy example site
       time_format_default: 02.01.2006
-#     time_format_blog: 02.01.2006
   # cSpell:disable
+  tr:
+    languageName: Türkçe
+    contentDir: content/tr
+    title: Siberoloji
+    params:
+      description: Siberoloji faydalı içerik ve haberler.
+      time_format_default: 02.01.2006
+      time_format_blog: 02.01.2006
   
 markup:
   goldmark:
