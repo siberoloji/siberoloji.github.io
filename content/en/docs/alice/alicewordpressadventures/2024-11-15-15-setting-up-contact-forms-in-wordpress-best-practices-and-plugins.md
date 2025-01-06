@@ -9,16 +9,16 @@ tags:
 categories:
   - TechLife
   - WordPress
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 150
-toc: true
+
 keywords:
   - Contact Forms in WordPress
-excludeSearch: false
+
 
 
 featured_image: /images/alice-in-front-of-computer.webp

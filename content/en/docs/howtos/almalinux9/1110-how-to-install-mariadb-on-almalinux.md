@@ -7,22 +7,19 @@ weight: 1110
 url: install-mariadb-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - mariadb
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - mariadb
+
+
 featured_image: /images/almalinux.webp
 ---
 MariaDB, an open-source relational database management system, is a widely popular alternative to MySQL. Known for its performance, scalability, and reliability, MariaDB is a favored choice for web applications, data warehousing, and analytics. AlmaLinux, a CentOS replacement, offers a stable and secure platform for hosting MariaDB databases.

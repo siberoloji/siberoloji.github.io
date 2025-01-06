@@ -1,22 +1,17 @@
 ---
 draft: false
-
-title:  'Google’s Disavow Tool'
-date: '2024-10-12T01:20:31+03:00'
+title: Google’s Disavow Tool
+date: 2024-10-12T01:20:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /googles-disavow-tool/
- 
+url: /googles-disavow-tool/
 slim_seo:
-    - 'a:1:{s:11:"description";s:195:"Google’s Disavow Tool is a feature within Google Search Console that allows webmasters to inform Google of low-quality backlinks they wish to be disregarded when assessing their site''s ranking.";}'
+  - a:1:{s:11:"description";s:195:"Google’s Disavow Tool is a feature within Google Search Console that allows webmasters to inform Google of low-quality backlinks they wish to be disregarded when assessing their site's ranking.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'Disavow Tool'
-    - 'search engine optimization'
-    - seo
+  - Disavow Tool
+  - seo
 ---
 
 

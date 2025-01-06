@@ -5,12 +5,12 @@ description: WordPress page builders offer a user-friendly way to design stunnin
 date: 2024-11-13
 weight: 100
 draft: false
-toc: true
+
 tags:
   - blog publishing
 categories:
   - TechLife
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-interview.webp

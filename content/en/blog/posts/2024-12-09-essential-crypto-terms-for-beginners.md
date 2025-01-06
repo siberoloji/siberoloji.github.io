@@ -5,7 +5,7 @@ linkTitle: Essential Crypto Terms
 date: 2024-12-10
 type: blog
 draft: false
-toc: true
+
 tags:
   - cryptocurrency
 categories:

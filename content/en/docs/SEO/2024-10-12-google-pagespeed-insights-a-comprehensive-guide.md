@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Google PageSpeed Insights: A Comprehensive Guide'
-date: '2024-10-12T15:42:52+03:00'
+title: "Google PageSpeed Insights: A Comprehensive Guide"
+date: 2024-10-12T15:42:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /google-pagespeed-insights-a-comprehensive-guide/
- 
+url: /google-pagespeed-insights-a-comprehensive-guide/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'Google PageSpeed Insights'
-    - 'search engine optimization'
-    - seo
+  - Google PageSpeed Insights
+  - seo
 ---
 
 

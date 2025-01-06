@@ -11,15 +11,14 @@ tags:
 categories:
   - Network
   - Cybersecurity
-type: docs
-prev: null
-next: null
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
+
 keywords:
   - nmap
-excludeSearch: false
+
 
 
 featured_image: /images/kalilinux3.webp

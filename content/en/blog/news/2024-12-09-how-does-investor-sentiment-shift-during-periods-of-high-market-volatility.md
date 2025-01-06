@@ -4,7 +4,7 @@ linkTitle: investor sentiment shift during periods of high market volatility
 description: Here’s an analysis of how investor sentiment shifts during high market volatility, drawing insights from the provided research.
 date: 2024-12-10
 draft: false
-toc: true
+
 keywords: ""
 tags:
   - blog publishing

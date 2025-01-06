@@ -5,12 +5,12 @@ description: This guide will walk you through the essentials, from setting up a 
 date: 2024-11-13
 weight: 10
 draft: false
-toc: true
+
 tags:
   - blog publishing
 categories:
   - TechLife
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-taking-picture.webp

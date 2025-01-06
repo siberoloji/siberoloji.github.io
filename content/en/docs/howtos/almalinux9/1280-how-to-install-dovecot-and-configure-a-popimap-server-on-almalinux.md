@@ -7,23 +7,20 @@ weight: 1280
 url: install-dovecot-configure-pop-imap-server-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - dovecot
+  - AlmaLinux
+  - dovecot
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - dovecot
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - dovecot
+
+
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  

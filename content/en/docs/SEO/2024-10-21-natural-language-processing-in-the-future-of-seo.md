@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'Natural Language Processing in the Future of SEO'
-date: '2024-10-21T20:45:14+03:00'
+title: Natural Language Processing in the Future of SEO
+date: 2024-10-21T20:45:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'One of the most impactful changes shaping the future of SEO is the rise of Natural Language Processing. NLP is a branch of artificial intelligence (AI) that allows computers to understand, interpret, and respond to human language.' 
- 
-url:  /natural-language-processing-in-the-future-of-seo/
+description: One of the most impactful changes shaping the future of SEO is the rise of Natural Language Processing. NLP is a branch of artificial intelligence (AI) that allows computers to understand, interpret, and respond to human language.
+url: /natural-language-processing-in-the-future-of-seo/
 post_views_count:
-    - '0'
+  - "0"
 featured_image: /images/seo5.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

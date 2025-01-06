@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Update Your System to the Latest Version'
-date: '2024-10-04T14:53:09+03:00'
+title: "AlmaLinux 9: How to Update Your System to the Latest Version"
+date: 2024-10-04T14:53:09+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-update-your-system-to-the-latest-version/
- 
+url: /almalinux-9-how-to-update-your-system-to-the-latest-version/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'how-to guides'
-    - 'linux how-to'
+  - AlmaLinux
+  - how-to guides
+  - linux how-to
 ---
 
 

@@ -7,15 +7,15 @@ weight: 1630
 url: mastering-selinux-matchpathcon-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
-   - AlmaLinux
-   - SELinux
-   - matchpathcon
+  - AlmaLinux
+  - SELinux
+  - matchpathcon
 featured_image: /images/almalinux.webp
 ---
 **How to Use SELinux matchpathcon for Basic Troubleshooting on AlmaLinux**  

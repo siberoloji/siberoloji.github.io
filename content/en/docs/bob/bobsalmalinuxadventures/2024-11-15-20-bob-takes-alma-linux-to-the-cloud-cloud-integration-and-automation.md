@@ -9,17 +9,12 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 200
-toc: true
+
 keywords:
   - AlmaLinux to the Cloud Integration
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-takes-alma-linux-cloud-integration-automation

@@ -7,10 +7,9 @@ description: This blog post will explore the implications of Search Generative E
 url: /how-will-googles-search-generative-experience-affect-seo-strategies/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - Search Engine Optimisation
+  - Search Engine Optimisation
 tags:
-    - search engine optimization
-    - seo
+  - seo
 ---
 
 

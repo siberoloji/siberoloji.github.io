@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'How to Configure a WebDAV Folder on AlmaLinux 9?'
-date: '2024-11-02T13:13:14+03:00'
+title: How to Configure a WebDAV Folder on AlmaLinux 9?
+date: 2024-11-02T13:13:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'In this tutorial, well walk through configuring a WebDAV folder on AlmaLinux 9, one of the latest and most popular RHEL-based distributions.' 
- 
-url:  /how-to-configure-a-webdav-folder-on-almalinux-9/
+description: In this tutorial, well walk through configuring a WebDAV folder on AlmaLinux 9, one of the latest and most popular RHEL-based distributions.
+url: /how-to-configure-a-webdav-folder-on-almalinux-9/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
+  - AlmaLinux
 ---
 
 <!-- wp:jetpack/markdown {"source":"Web Distributed Authoring and Versioning (WebDAV) is a protocol that enables web users to manage files on a server just as if they were stored locally on their machine. WebDAV is useful in various scenarios, from collaborative file management to simple web-based file storage. In this tutorial, we'll walk through configuring a WebDAV folder on AlmaLinux 9, one of the latest and most popular RHEL-based distributions. 

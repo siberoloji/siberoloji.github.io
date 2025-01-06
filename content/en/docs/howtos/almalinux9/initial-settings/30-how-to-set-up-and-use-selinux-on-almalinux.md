@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SELinux on AlmaLinux
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
-toc: true
+
 keywords:
   - AlmaLinux
   - SELinux on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-selinux-almalinux

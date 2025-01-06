@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Why Broken Links are Important for SEO?'
-date: '2024-10-12T01:26:00+03:00'
+title: Why Broken Links are Important for SEO?
+date: 2024-10-12T01:26:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /why-broken-links-are-important-for-seo/
- 
+url: /why-broken-links-are-important-for-seo/
 slim_seo:
-    - 'a:1:{s:11:"description";s:135:"we’ll explore why broken links matter for SEO, how they impact user experience, and what steps you can take to identify and fix them.";}'
+  - a:1:{s:11:"description";s:135:"we’ll explore why broken links matter for SEO, how they impact user experience, and what steps you can take to identify and fix them.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

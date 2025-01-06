@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Configure Firewall and SELinux with Example Commands'
-date: '2024-10-04T14:40:54+03:00'
+title: "AlmaLinux 9: How to Configure Firewall and SELinux with Example Commands"
+date: 2024-10-04T14:40:54+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-configure-firewall-and-selinux-with-example-commands/
- 
+url: /almalinux-9-how-to-configure-firewall-and-selinux-with-example-commands/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'how-to guides'
-    - 'linux how-to'
-    - selinux
+  - AlmaLinux
+  - how-to guides
+  - linux how-to
+  - selinux
 ---
 
 

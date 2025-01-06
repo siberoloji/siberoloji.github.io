@@ -5,14 +5,14 @@ description: Social media integration allows Alice to promote her content, conne
 date: 2024-11-13
 weight: 90
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - Integrating Social Media
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-in-front-of-computer.webp

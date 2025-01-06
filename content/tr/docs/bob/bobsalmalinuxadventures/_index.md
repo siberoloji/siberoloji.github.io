@@ -3,7 +3,7 @@ title: Bob's AlmaLinux Adventures
 type: page
 prev: docs/bob
 next: docs/bob/bobsalmalinuxadventures/2024-11-11-1-the-alma-linux-adventures-of-bob-a-junior-system-administrator
-url: /bob-alma-linux/
+url: /tr/bob-alma-linux/
 weight: 2
 
 

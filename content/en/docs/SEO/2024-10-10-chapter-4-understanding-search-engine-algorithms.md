@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 4: Understanding Search Engine Algorithms'
-date: '2024-10-10T21:23:52+03:00'
+title: "Chapter 4: Understanding Search Engine Algorithms"
+date: 2024-10-10T21:23:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-4-understanding-search-engine-algorithms/
- 
+url: /chapter-4-understanding-search-engine-algorithms/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -9,17 +9,12 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 350
-toc: true
+
 keywords:
   - reduce Kubernetes-related cloud expenses
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-optimizes-kubernetes-cost-efficiency

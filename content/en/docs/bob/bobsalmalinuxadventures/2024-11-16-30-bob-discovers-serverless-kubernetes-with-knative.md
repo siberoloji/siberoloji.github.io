@@ -9,17 +9,12 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 300
-toc: true
+
 keywords:
   - Serverless Kubernetes with Knative
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-discovers-serverless-kubernetes-knative-alma-linux

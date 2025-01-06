@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'Passive Reconnaissance Techniques: Tools and Methods'
-date: '2024-11-02T20:04:29+03:00'
+title: "Passive Reconnaissance Techniques: Tools and Methods"
+date: 2024-11-02T20:04:29+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'In this comprehensive guide, we''ll explore various passive reconnaissance techniques, tools, and their applications in modern security practices.' 
- 
-url:  /passive-reconnaissance-techniques-tools-and-methods/
- 
+description: In this comprehensive guide, we'll explore various passive reconnaissance techniques, tools, and their applications in modern security practices.
+url: /passive-reconnaissance-techniques-tools-and-methods/
 featured_image: /images/cybersecurity4.webp
 categories:
-    - 'Information Gathering'
+  - Information Gathering
 tags:
-    - 'cyber security'
-    - 'information gathering'
-    - Reconnaissance
+  - Reconnaissance
+  - cybersecurity
+  - information gathering
 ---
 
 Passive reconnaissance is a fundamental phase of security assessment that involves gathering information about target systems without directly interacting with them. This non-intrusive approach helps security professionals understand potential attack surfaces while maintaining stealth and legal compliance. In this comprehensive guide, we'll explore various passive reconnaissance techniques, tools, and their applications in modern security practices.

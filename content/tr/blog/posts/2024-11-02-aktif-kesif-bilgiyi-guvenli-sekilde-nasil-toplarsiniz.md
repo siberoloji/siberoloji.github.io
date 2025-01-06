@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Aktif Keşif: Bilgiyi Güvenli Şekilde Nasıl Toplarsınız?'
-date: '2024-11-02T22:09:56+03:00'
+title: "Aktif Keşif: Bilgiyi Güvenli Şekilde Nasıl Toplarsınız?"
+date: 2024-11-02T22:09:56+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Bu makalede aktif keşifin ne olduğu, etik hackerlıktaki önemi, yaygın olarak kullanılan yöntemler, araçlar, en iyi uygulamalar ve güvenli bir şekilde yürütülmesiyle ilişkili zorluklar ele alınacaktır.' 
- 
-url:  /tr/aktif-kesif-bilgiyi-guvenli-sekilde-nasil-toplarsiniz/
- 
+description: Bu makalede aktif keşifin ne olduğu, etik hackerlıktaki önemi, yaygın olarak kullanılan yöntemler, araçlar, en iyi uygulamalar ve güvenli bir şekilde yürütülmesiyle ilişkili zorluklar ele alınacaktır.
+url: /tr/aktif-kesif-bilgiyi-guvenli-sekilde-nasil-toplarsiniz/
 featured_image: /images/cybersecurity6.webp
 categories:
-    - 'Bilgi Toplama'
+  - Bilgi Toplama
 tags:
-    - 'aktif keşif'
-    - 'cyber security'
+  - aktif keşif
+  - cybersecurity
 ---
 
 Etik hacklemede keşif, hedef sistemin veya ağın güçlü, zayıf yönlerini ve yapısını anlamada kritik ilk adımdır. Hedefle doğrudan etkileşime girmeden bilgi toplayan pasif keşiften farklı olarak, aktif keşif sistemle doğrudan etkileşimi içerir. Daha müdahalecidir ve kritik ayrıntıları ortaya çıkarabilir, ancak aynı zamanda tespit edilme riski de taşır. Aktif keşfi güvenli ve etik bir şekilde yürütmek beceri, stratejik planlama ve ilgili araç ve teknikler hakkında bilgi gerektirir.

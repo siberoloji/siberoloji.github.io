@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Install KVM Management Tools
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 450
-toc: true
+
 keywords:
   - AlmaLinux
   - KVM
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: install-kvm-vm-management-tools-almalinux

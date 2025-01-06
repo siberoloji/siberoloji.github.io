@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'Cumulative Layout Shift:  Why CLS Matters for Your Website?'
-date: '2024-10-24T01:00:06+03:00'
+title: "Cumulative Layout Shift:  Why CLS Matters for Your Website?"
+date: 2024-10-24T01:00:06+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Cumulative Layout Shift (CLS) has emerged as a crucial Core Web Vital that directly impacts how users interact with and perceive your website. In this comprehensive guide, we''ll explore what CLS is, why it matters, and how you can optimize your website to achieve better scores.' 
- 
-url:  /cumulative-layout-shift-why-cls-matters-for-your-website/
+description: Cumulative Layout Shift (CLS) has emerged as a crucial Core Web Vital that directly impacts how users interact with and perceive your website. In this comprehensive guide, we'll explore what CLS is, why it matters, and how you can optimize your website to achieve better scores.
+url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 featured_image: /images/seo6.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
+  - seo
 ---
 
 

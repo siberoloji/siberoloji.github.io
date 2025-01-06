@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'GTmetrix: Website Performance Optimization'
-date: '2024-10-12T15:41:17+03:00'
+title: "GTmetrix: Website Performance Optimization"
+date: 2024-10-12T15:41:17+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /gtmetrix-website-performance-optimization/
- 
+url: /gtmetrix-website-performance-optimization/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - GTmetrix
-    - 'search engine optimization'
-    - seo
+  - GTmetrix
+  - seo
 ---
 
 

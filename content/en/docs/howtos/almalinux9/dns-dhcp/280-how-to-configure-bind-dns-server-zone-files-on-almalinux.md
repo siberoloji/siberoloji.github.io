@@ -10,18 +10,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server Zone Files
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 280
-toc: true
+
 keywords:
   - AlmaLinux
   - DNS Server
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: configure-bind-dns-server-zone-files-almalinux

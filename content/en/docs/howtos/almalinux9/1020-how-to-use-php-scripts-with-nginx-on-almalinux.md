@@ -7,21 +7,18 @@ weight: 1020
 url: php-scripts-nginx-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 PHP remains one of the most popular server-side scripting languages, powering millions of websites and applications worldwide. When combined with Nginx, a high-performance web server, PHP scripts can be executed efficiently to deliver dynamic web content. AlmaLinux, a CentOS alternative built for stability and security, is an excellent foundation for hosting PHP-based websites and applications.

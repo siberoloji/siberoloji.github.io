@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Can AI Tools Predict Future Trends in Content Creation?'
-date: '2024-10-21T21:19:59+03:00'
+title: Can AI Tools Predict Future Trends in Content Creation?
+date: 2024-10-21T21:19:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'One of the most exciting possibilities emerging from this intersection of AI and content creation is the ability of AI tools to predict future trends in the industry.' 
- 
-url:  /can-ai-tools-predict-future-trends-in-content-creation/
+description: One of the most exciting possibilities emerging from this intersection of AI and content creation is the ability of AI tools to predict future trends in the industry.
+url: /can-ai-tools-predict-future-trends-in-content-creation/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - ai
-    - 'search engine optimization'
-    - seo
+  - ai
+  - seo
 ---
 
 

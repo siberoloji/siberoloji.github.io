@@ -4,23 +4,20 @@ description: Learn how to configure iSCSI targets using Targetcli on AlmaLinux.
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Configure iSCSI Target
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 390
-toc: true
+
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 url: configure-iscsi-target-targetcli-almalinux
 ---

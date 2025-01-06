@@ -11,14 +11,14 @@ tags:
    - aeskeyfind
 categories:
    - Kali Linux
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 50
-toc: true
+
 keywords:
    - aeskeyfind
-excludeSearch: false
+
 sidebar:
    open: "true"
 linkTitle: aeskeyfind

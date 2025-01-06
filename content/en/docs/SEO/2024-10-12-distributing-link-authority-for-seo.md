@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Distributing Link Authority for SEO'
-date: '2024-10-12T19:20:02+03:00'
+title: Distributing Link Authority for SEO
+date: 2024-10-12T19:20:02+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /distributing-link-authority-for-seo/
- 
+url: /distributing-link-authority-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'Distributing Link Authority'
-    - 'search engine optimization'
-    - seo
+  - Distributing Link Authority
+  - seo
 ---
 
 

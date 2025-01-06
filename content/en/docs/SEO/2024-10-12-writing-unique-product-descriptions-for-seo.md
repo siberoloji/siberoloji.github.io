@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Writing Unique Product Descriptions for SEO'
-date: '2024-10-12T11:42:00+03:00'
+title: Writing Unique Product Descriptions for SEO
+date: 2024-10-12T11:42:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /writing-unique-product-descriptions-for-seo/
- 
+url: /writing-unique-product-descriptions-for-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'unique product descriptions'
+  - seo
+  - unique product descriptions
 ---
 
 

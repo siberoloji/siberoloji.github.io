@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Leveraging Video Content for SEO Success'
-date: '2024-10-21T20:08:42+03:00'
+title: Leveraging Video Content for SEO Success
+date: 2024-10-21T20:08:42+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This comprehensive guide will explore how businesses can effectively use leveraging video content for SEO efforts.' 
- 
-url:  /leveraging-video-content-for-seo-success/
+description: This comprehensive guide will explore how businesses can effectively use leveraging video content for SEO efforts.
+url: /leveraging-video-content-for-seo-success/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

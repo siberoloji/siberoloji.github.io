@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'The Critical Importance of robots.txt: A Complete Guide for Website Owners'
-date: '2024-10-27T21:23:19+03:00'
+title: "The Critical Importance of robots.txt: A Complete Guide for Website Owners"
+date: 2024-10-27T21:23:19+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'The robots.txt file might seem like a simple text document, but it plays a crucial role in how search engines and other web robots interact with your website.' 
- 
-url:  /the-critical-importance-of-robots-txt-a-complete-guide-for-website-owners/
+description: The robots.txt file might seem like a simple text document, but it plays a crucial role in how search engines and other web robots interact with your website.
+url: /the-critical-importance-of-robots-txt-a-complete-guide-for-website-owners/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

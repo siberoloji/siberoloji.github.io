@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'AdGuard Home Application: A Comprehensive Guide to Block Ads'
-date: '2024-09-19T11:38:51+03:00'
+title: "AdGuard Home Application: A Comprehensive Guide to Block Ads"
+date: 2024-09-19T11:38:51+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /adguard-home-application-a-comprehensive-guide-to-block-ads/
- 
+url: /adguard-home-application-a-comprehensive-guide-to-block-ads/
 featured_image: /images/adguardhome.png
 categories:
-    - 'Useful Apps'
+  - Useful Apps
 tags:
-    - 'ad blocker'
-    - 'cyber security'
-    - 'dns filter'
+  - ad blocker
+  - cybersecurity
+  - dns filter
 ---
 
 

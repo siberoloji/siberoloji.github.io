@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SFTP-only with Chroot
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 170
-toc: true
+
 keywords:
   - AlmaLinux
   - Chroot on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-sftp-chroot-almalinux

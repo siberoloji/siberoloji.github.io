@@ -15,10 +15,10 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords:
   - key components of Linux file structure
-excludeSearch: false
+
 
 
 url: concepts-root-home-swap-spaces-linux

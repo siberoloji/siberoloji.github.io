@@ -4,23 +4,20 @@ description: Learn how to create KVM virtual machines on AlmaLinux using Virt-Ma
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Create KVM Virtual Machines Using GUI
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 430
-toc: true
+
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 url: create-kvm-virtual-machines-gui-almalinux
 ---

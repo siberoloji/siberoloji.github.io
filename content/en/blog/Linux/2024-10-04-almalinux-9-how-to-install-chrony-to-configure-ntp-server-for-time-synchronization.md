@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Install Chrony to Configure NTP Server for Time Synchronization'
-date: '2024-10-04T17:30:25+03:00'
+title: "AlmaLinux 9: How to Install Chrony to Configure NTP Server for Time Synchronization"
+date: 2024-10-04T17:30:25+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-install-chrony-to-configure-ntp-server-for-time-synchronization/
- 
+url: /almalinux-9-how-to-install-chrony-to-configure-ntp-server-for-time-synchronization/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'how-to guides'
-    - 'linux how-to'
-    - 'ntp server'
+  - AlmaLinux
+  - how-to guides
+  - linux how-to
+  - ntp server
 ---
 
 

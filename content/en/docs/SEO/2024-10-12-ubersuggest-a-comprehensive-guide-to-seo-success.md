@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Ubersuggest: A Comprehensive Guide to SEO Success'
-date: '2024-10-12T20:27:52+03:00'
+title: "Ubersuggest: A Comprehensive Guide to SEO Success"
+date: 2024-10-12T20:27:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /ubersuggest-a-comprehensive-guide-to-seo-success/
- 
+url: /ubersuggest-a-comprehensive-guide-to-seo-success/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

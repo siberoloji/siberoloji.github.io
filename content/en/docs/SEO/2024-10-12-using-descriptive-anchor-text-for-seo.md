@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Using Descriptive Anchor Text for SEO'
-date: '2024-10-12T19:16:58+03:00'
+title: Using Descriptive Anchor Text for SEO
+date: 2024-10-12T19:16:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /using-descriptive-anchor-text-for-seo/
- 
+url: /using-descriptive-anchor-text-for-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

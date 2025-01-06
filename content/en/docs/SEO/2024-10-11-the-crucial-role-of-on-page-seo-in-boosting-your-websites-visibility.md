@@ -5,13 +5,12 @@ date: 2024-10-11T21:03:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-crucial-role-of-on-page-seo-in-boosting-your-websites-visibility/
 slim_seo:
-    - a:1:{s:11:"description";s:171:"By implementing various on-page SEO techniques, you can enhance your website's user experience and increase its chances of appearing higher in search engine results pages.";}
+  - a:1:{s:11:"description";s:171:"By implementing various on-page SEO techniques, you can enhance your website's user experience and increase its chances of appearing higher in search engine results pages.";}
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - Search Engine Optimisation
+  - Search Engine Optimisation
 tags:
-    - search engine optimization
-    - seo
+  - seo
 ---
 
 

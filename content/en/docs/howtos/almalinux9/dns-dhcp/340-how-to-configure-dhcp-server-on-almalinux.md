@@ -4,23 +4,15 @@ description: Learn how to set up a DHCP server on AlmaLinux with this step-by-st
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Configure a DHCP Server
-type: docs
-prev: null
-next: null
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 340
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
 featured_image: /images/almalinux.webp
 url: configure-dhcp-server-almalinux
 ---

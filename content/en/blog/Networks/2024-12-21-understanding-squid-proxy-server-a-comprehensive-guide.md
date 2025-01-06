@@ -5,7 +5,7 @@ linkTitle: Squid Proxy Server
 date: 2024-12-21
 type: blog
 draft: false
-toc: true
+
 tags:
   - squid
   - proxy server

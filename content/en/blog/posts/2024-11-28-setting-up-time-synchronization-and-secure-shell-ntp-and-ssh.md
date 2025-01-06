@@ -5,7 +5,7 @@ linkTitle: Time Synchronization
 date: 2024-11-28
 type: blog
 draft: false
-toc: true
+
 tags:
   - ntp
   - ssh

@@ -269,6 +269,38 @@
     {
       "title": "Android",
       "path": "[[workspace]]/content/en/blog/Android"
+    },
+    {
+      "title": "dns-dhcp",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/dns-dhcp"
+    },
+    {
+      "title": "C++",
+      "path": "[[workspace]]/content/en/blog/C++"
+    },
+    {
+      "title": "SEO",
+      "path": "[[workspace]]/content/en/docs/SEO"
+    },
+    {
+      "title": "macOS-iOS",
+      "path": "[[workspace]]/content/en/blog/macOS-iOS"
+    },
+    {
+      "title": "Useful Apps",
+      "path": "[[workspace]]/content/en/blog/Useful Apps"
+    },
+    {
+      "title": "Podcasting",
+      "path": "[[workspace]]/content/en/blog/Podcasting"
+    },
+    {
+      "title": "Kotlin",
+      "path": "[[workspace]]/content/en/blog/Kotlin"
+    },
+    {
+      "title": "Gaming",
+      "path": "[[workspace]]/content/en/blog/Gaming"
     }
   ],
   "frontMatter.git.enabled": true

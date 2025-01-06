@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Navigating Crawl Errors for SEO Success'
-date: '2024-10-12T11:50:58+03:00'
+title: Navigating Crawl Errors for SEO Success
+date: 2024-10-12T11:50:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /navigating-crawl-errors-for-seo-success/
- 
+url: /navigating-crawl-errors-for-seo-success/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Grammarly: Your Writing Companion'
-date: '2024-10-12T20:16:04+03:00'
+title: "Grammarly: Your Writing Companion"
+date: 2024-10-12T20:16:04+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /grammarly-your-writing-companion/
- 
+url: /grammarly-your-writing-companion/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - grammarly
-    - 'search engine optimization'
-    - seo
+  - grammarly
+  - seo
 ---
 
 

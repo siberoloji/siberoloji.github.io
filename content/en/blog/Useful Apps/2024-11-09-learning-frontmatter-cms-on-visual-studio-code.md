@@ -5,7 +5,7 @@ url: learning-front-matter-cms-visual-studio-code-hugo
 date: 2024-11-09T19:43:26.995Z
 draft: false
 type: blog
-toc: true
+
 tags:
     - Hugo
 categories:

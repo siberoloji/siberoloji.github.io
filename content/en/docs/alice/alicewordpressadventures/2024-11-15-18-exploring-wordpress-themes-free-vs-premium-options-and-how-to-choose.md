@@ -9,15 +9,15 @@ tags:
 categories:
   - TechLife
   - WordPress
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 180
-toc: true
+
 keywords: ""
-excludeSearch: false
+
 
 
 featured_image: /images/alice-in-front-of-computer.webp

@@ -11,15 +11,14 @@ tags:
     - apple-bleee
 categories:
     - Kali Linux
-type: docs
+
 authors: ""
 weight: 150
-toc: true
+
 keywords:
     - apple-bleee
-excludeSearch: false
-sidebar:
-    open: "true"
+
+
 linkTitle: apple-bleee
 url: /apple-bleee-kali-linux-tool-wi-fi-security-research/
 ---

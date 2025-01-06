@@ -5,7 +5,7 @@ linkTitle: How do coins and tokens impact
 date: 2024-12-10
 type: blog
 draft: false
-toc: true
+
 tags:
   - cryptocoins
 categories:

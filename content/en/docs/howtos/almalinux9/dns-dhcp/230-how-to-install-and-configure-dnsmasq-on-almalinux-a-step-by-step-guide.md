@@ -4,24 +4,21 @@ description: In this comprehensive guide, we’ll explore how to install and con
 date: 2024-12-09
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Install and Configure Dnsmasq
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 230
-toc: true
+
 keywords:
-   - AlmaLinux
-   - Dnsmasq
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - Dnsmasq
+
+
 featured_image: /images/almalinux.webp
 url: install-configure-dnsmasq-almalinux
 ---

@@ -4,24 +4,21 @@ description: In this guide, we’ll explore the concept of port forwarding, its 
 date: 2024-12-09
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Port Forwarding
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 210
-toc: true
+
 keywords:
-   - AlmaLinux
-   - Port Forwarding
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - Port Forwarding
+
+
 featured_image: /images/almalinux.webp
 url: port-forwarding-almalinux
 ---

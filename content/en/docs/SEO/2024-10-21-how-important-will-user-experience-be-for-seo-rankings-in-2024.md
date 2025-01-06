@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How Important Will User Experience Be for SEO Rankings in 2024?'
-date: '2024-10-21T20:03:20+03:00'
+title: How Important Will User Experience Be for SEO Rankings in 2024?
+date: 2024-10-21T20:03:20+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'in the coming years, UX is set to play an even more pivotal role in determining a site''s visibility, SEO Rankings and performance in organic search results.' 
- 
-url:  /how-important-will-user-experience-be-for-seo-rankings-in-2024/
+description: in the coming years, UX is set to play an even more pivotal role in determining a site's visibility, SEO Rankings and performance in organic search results.
+url: /how-important-will-user-experience-be-for-seo-rankings-in-2024/
 featured_image: /images/seo6.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

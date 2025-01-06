@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'What Role Will Voice Search Play in Future SEO?'
-date: '2024-10-21T19:57:38+03:00'
+title: What Role Will Voice Search Play in Future SEO?
+date: 2024-10-21T19:57:38+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'More users are opting for hands-free, voice-activated search queries. This shift brings with it a significant impact on how businesses approach search engine optimization (SEO).' 
- 
-url:  /what-role-will-voice-search-play-in-future-seo/
+description: More users are opting for hands-free, voice-activated search queries. This shift brings with it a significant impact on how businesses approach search engine optimization (SEO).
+url: /what-role-will-voice-search-play-in-future-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

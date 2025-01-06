@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Konum Tespiti için Ters Görüntü İşleme'
-date: '2024-10-15T17:25:22+03:00'
+title: Konum Tespiti için Ters Görüntü İşleme
+date: 2024-10-15T17:25:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/konum-tespiti-icin-ters-goruntu-isleme/
+url: /tr/konum-tespiti-icin-ters-goruntu-isleme/
 featured_image: /images/osint3.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

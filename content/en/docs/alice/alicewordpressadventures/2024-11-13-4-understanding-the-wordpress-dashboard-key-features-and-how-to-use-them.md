@@ -5,13 +5,13 @@ description: This guide will take Alice (and any new blogger) through the essent
 date: 2024-11-13
 weight: 40
 draft: false
-toc: true
+
 tags:
   - blog publishing
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-interview.webp

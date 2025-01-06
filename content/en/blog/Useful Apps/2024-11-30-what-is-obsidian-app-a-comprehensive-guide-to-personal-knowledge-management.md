@@ -5,7 +5,7 @@ linkTitle: Obsidian
 date: 2024-11-30
 type: blog
 draft: false
-toc: true
+
 tags:
   - obsidian
 categories:

@@ -7,23 +7,20 @@ weight: 870
 url: set-basic-authentication-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - apache
+  - AlmaLinux
+  - apache
 categories:
-   - Linux
-   - Linux How-to
-   - basic authentication
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+  - basic authentication
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Basic Authentication is a simple yet effective way to restrict access to certain parts of your website or web application. It prompts users to enter a username and password to gain access, providing a layer of security without the need for complex login systems. Apache HTTP Server, paired with AlmaLinux, offers a straightforward method to implement Basic Authentication.

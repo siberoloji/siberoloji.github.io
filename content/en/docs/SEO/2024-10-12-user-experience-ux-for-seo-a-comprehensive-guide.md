@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'User Experience (UX) for SEO: A Comprehensive Guide'
-date: '2024-10-12T15:34:14+03:00'
+title: "User Experience (UX) for SEO: A Comprehensive Guide"
+date: 2024-10-12T15:34:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /user-experience-ux-for-seo-a-comprehensive-guide/
- 
+url: /user-experience-ux-for-seo-a-comprehensive-guide/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

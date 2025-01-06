@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'The Importance Of Short-Tail Keywords: Foundational Elements Of SEO Success'
-date: '2024-10-11T21:21:39+03:00'
+title: "The Importance Of Short-Tail Keywords: Foundational Elements Of SEO Success"
+date: 2024-10-11T21:21:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-importance-of-short-tail-keywords-foundational-elements-of-seo-success/
- 
+url: /the-importance-of-short-tail-keywords-foundational-elements-of-seo-success/
 slim_seo:
-    - 'a:1:{s:11:"description";s:160:"his blog post will delve into the significance of short-tail keywords, exploring their benefits, challenges, and how they fit into a comprehensive SEO approach.";}'
+  - a:1:{s:11:"description";s:160:"his blog post will delve into the significance of short-tail keywords, exploring their benefits, challenges, and how they fit into a comprehensive SEO approach.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

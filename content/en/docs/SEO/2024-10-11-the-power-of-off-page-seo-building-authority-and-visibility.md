@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'The Power of Off-Page SEO: Building Authority and Visibility'
-date: '2024-10-11T21:07:21+03:00'
+title: "The Power of Off-Page SEO: Building Authority and Visibility"
+date: 2024-10-11T21:07:21+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-power-of-off-page-seo-building-authority-and-visibility/
- 
+url: /the-power-of-off-page-seo-building-authority-and-visibility/
 slim_seo:
-    - 'a:1:{s:11:"description";s:159:"we will delve into the importance of off-page SEO, explore effective strategies, and provide practical tips to help you elevate your website''s online presence.";}'
+  - a:1:{s:11:"description";s:159:"we will delve into the importance of off-page SEO, explore effective strategies, and provide practical tips to help you elevate your website's online presence.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -7,25 +7,22 @@ weight: 1300
 url: configure-postfix-dovecot-ssl-tls-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - postfix
-   - dovecot
+  - AlmaLinux
+  - dovecot
+  - postfix
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - postfix
-   - dovecot
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - postfix
+  - dovecot
+
+
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  

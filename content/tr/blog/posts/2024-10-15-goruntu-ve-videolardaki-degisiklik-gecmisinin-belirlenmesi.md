@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Görüntü ve Videolardaki Değişiklik Geçmişinin Belirlenmesi'
-date: '2024-10-15T17:13:52+03:00'
+title: Görüntü ve Videolardaki Değişiklik Geçmişinin Belirlenmesi
+date: 2024-10-15T17:13:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
+url: /tr/goruntu-ve-videolardaki-degisiklik-gecmisinin-belirlenmesi/
 featured_image: /images/osint.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

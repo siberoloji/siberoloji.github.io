@@ -4,24 +4,21 @@ description: In this guide, we’ll walk you through the steps to install, confi
 date: 2024-12-09
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Secure Shell Filesystem (SSHFS)
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 200
-toc: true
+
 keywords:
-   - AlmaLinux
-   - SSHFS
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - SSHFS
+
+
 featured_image: /images/almalinux.webp
 url: sshfs-almalinux
 ---

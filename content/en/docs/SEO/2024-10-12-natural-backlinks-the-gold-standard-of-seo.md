@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Natural Backlinks: The Gold Standard of SEO'
-date: '2024-10-12T19:41:11+03:00'
+title: "Natural Backlinks: The Gold Standard of SEO"
+date: 2024-10-12T19:41:11+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /natural-backlinks-the-gold-standard-of-seo/
- 
+url: /natural-backlinks-the-gold-standard-of-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

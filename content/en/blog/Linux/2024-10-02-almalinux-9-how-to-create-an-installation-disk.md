@@ -1,22 +1,18 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Create an Installation Disk'
-date: '2024-10-02T21:27:42+03:00'
+title: "AlmaLinux 9: How to Create an Installation Disk"
+date: 2024-10-02T21:27:42+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-create-an-installation-disk/
- 
+url: /almalinux-9-how-to-create-an-installation-disk/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'create installation disk'
-    - 'how-to guides'
-    - linux
-    - 'linux how-to'
+  - AlmaLinux
+  - create installation disk
+  - how-to guides
+  - linux
+  - linux how-to
 ---
 
 

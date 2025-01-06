@@ -11,14 +11,14 @@ tags:
    - airgeddon
 categories:
    - Kali Linux
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 90
-toc: true
+
 keywords:
    - airgeddon
-excludeSearch: false
+
 sidebar:
    open: "true"
 linkTitle: airgeddon

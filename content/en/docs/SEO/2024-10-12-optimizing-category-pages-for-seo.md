@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Optimizing Category Pages for SEO'
-date: '2024-10-12T11:39:56+03:00'
+title: Optimizing Category Pages for SEO
+date: 2024-10-12T11:39:56+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /optimizing-category-pages-for-seo/
- 
+url: /optimizing-category-pages-for-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'category pages'
-    - 'search engine optimization'
-    - seo
+  - category pages
+  - seo
 ---
 
 

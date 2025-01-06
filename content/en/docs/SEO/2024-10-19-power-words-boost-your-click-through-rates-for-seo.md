@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Power Words: Boost Your Click-Through Rates for SEO'
-date: '2024-10-19T16:19:18+03:00'
+title: "Power Words: Boost Your Click-Through Rates for SEO"
+date: 2024-10-19T16:19:18+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'We’ll explore how to use power words in titles for SEO, offer tips to help you increase your click-through rates (CTR) while still maintaining quality content.' 
- 
-url:  /power-words-boost-your-click-through-rates-for-seo/
+description: We’ll explore how to use power words in titles for SEO, offer tips to help you increase your click-through rates (CTR) while still maintaining quality content.
+url: /power-words-boost-your-click-through-rates-for-seo/
 featured_image: /images/seo5.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

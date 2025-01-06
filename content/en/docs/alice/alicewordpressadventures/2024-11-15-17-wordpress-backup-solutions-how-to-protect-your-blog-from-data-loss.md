@@ -9,15 +9,15 @@ tags:
 categories:
   - TechLife
   - WordPress
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 170
-toc: true
+
 keywords: ""
-excludeSearch: false
+
 
 
 featured_image: /images/alice-taking-picture.webp

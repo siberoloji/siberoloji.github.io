@@ -4,24 +4,21 @@ description: Learn how to install, configure,  optimize Vim on AlmaLinux with ou
 date: 2024-12-04
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Vim Settings
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 90
-toc: true
+
 keywords:
-   - AlmaLinux
-   - Vim Settings on AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - Vim Settings on AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 url: set-vim-settings-almalinux
 ---

@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Why Google My Business Profile is Important for SEO?'
-date: '2024-10-12T15:20:36+03:00'
+title: Why Google My Business Profile is Important for SEO?
+date: 2024-10-12T15:20:36+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /why-google-my-business-profile-is-important-for-seo/
- 
+url: /why-google-my-business-profile-is-important-for-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

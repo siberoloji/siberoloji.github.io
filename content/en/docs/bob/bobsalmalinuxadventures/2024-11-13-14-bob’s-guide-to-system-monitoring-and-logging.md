@@ -9,20 +9,15 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 140
-toc: true
+
 keywords:
   - System Logging
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
-url : bobs-guide-system-monitoring-logging-alma-linux
+url: bobs-guide-system-monitoring-logging-alma-linux
 ---
 
 Alright, let’s continue with Chapter 14, *"Bob’s Guide to System Monitoring and Logging"*. In this chapter, Bob will learn how to monitor his system's health, track user activity, and analyze logs for any signs of issues on AlmaLinux.

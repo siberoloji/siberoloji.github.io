@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'What is Local SEO?'
-date: '2024-10-12T12:03:23+03:00'
+title: What is Local SEO?
+date: 2024-10-12T12:03:23+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-local-seo/
- 
+url: /what-is-local-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

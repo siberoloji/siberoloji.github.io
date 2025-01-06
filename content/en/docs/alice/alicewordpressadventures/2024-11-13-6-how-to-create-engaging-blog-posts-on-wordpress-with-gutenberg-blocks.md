@@ -5,14 +5,14 @@ description: This guide will walk Alice through how to make the most out of Gute
 date: 2024-11-13
 weight: 60
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - Gutenberg Blocks
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-interview.webp

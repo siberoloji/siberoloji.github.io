@@ -7,21 +7,18 @@ weight: 890
 url: configure-basic-authentication-pam-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Basic Authentication is a lightweight method to secure web resources by requiring users to authenticate with a username and password. By integrating Basic Authentication with **Pluggable Authentication Module (PAM)**, Apache can leverage the underlying system's authentication mechanisms, allowing for more secure and flexible access control.

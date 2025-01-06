@@ -6,14 +6,14 @@ date: 2024-11-13
 weight: 70
 
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - WordPress Performance Optimization
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-taking-picture.webp

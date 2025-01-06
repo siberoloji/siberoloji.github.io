@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Using Infographics for SEO: A Comprehensive Guide'
-date: '2024-10-12T19:28:07+03:00'
+title: "Using Infographics for SEO: A Comprehensive Guide"
+date: 2024-10-12T19:28:07+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /using-infographics-for-seo-a-comprehensive-guide/
- 
+url: /using-infographics-for-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - Infographics
-    - 'search engine optimization'
-    - seo
+  - Infographics
+  - seo
 ---
 
 

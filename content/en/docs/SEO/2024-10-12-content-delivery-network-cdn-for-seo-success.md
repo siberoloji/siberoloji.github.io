@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Content Delivery Network (CDN) for SEO Success'
-date: '2024-10-12T15:44:23+03:00'
+title: Content Delivery Network (CDN) for SEO Success
+date: 2024-10-12T15:44:23+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /content-delivery-network-cdn-for-seo-success/
- 
+url: /content-delivery-network-cdn-for-seo-success/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

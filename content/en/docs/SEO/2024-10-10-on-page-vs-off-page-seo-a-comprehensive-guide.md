@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'On-Page vs. Off-Page SEO: A Comprehensive Guide'
-date: '2024-10-10T12:55:45+03:00'
+title: "On-Page vs. Off-Page SEO: A Comprehensive Guide"
+date: 2024-10-10T12:55:45+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /on-page-vs-off-page-seo-a-comprehensive-guide/
- 
+url: /on-page-vs-off-page-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,28 +1,27 @@
 ---
+# ToDo: Enable integrated DHCP feature in Dnsmasq and Configure DHCP Server.
+
 title: How to Configure a DHCP Server on AlmaLinux
 description: This detailed guide will walk you through the installation, configuration, and management of a DHCP server on AlmaLinux.
 date: 2024-12-09
-draft: false
+draft: true
+
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
 linkTitle: Configure a DHCP Server
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 240
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
-url: configure-dhcp-server-almalinux
+url: configure-dnsmasq-dhcp-server-almalinux
 ---
 A DHCP (Dynamic Host Configuration Protocol) server is a critical component of modern networks, automating the assignment of IP addresses, gateway addresses, and DNS settings to client devices. Configuring a DHCP server on AlmaLinux ensures efficient IP address management and seamless network connectivity for devices in your environment.
 

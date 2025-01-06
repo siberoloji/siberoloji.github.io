@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'What is Google Keyword Planner?'
-date: '2024-10-11T21:34:31+03:00'
+title: What is Google Keyword Planner?
+date: 2024-10-11T21:34:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-google-keyword-planner/
- 
+url: /what-is-google-keyword-planner/
 slim_seo:
-    - 'a:1:{s:11:"description";s:118:"we''ll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.";}'
+  - a:1:{s:11:"description";s:118:"we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

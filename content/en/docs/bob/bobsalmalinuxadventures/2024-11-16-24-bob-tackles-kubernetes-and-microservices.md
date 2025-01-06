@@ -9,17 +9,12 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 240
-toc: true
+
 keywords:
   - Kubernetes and Microservices on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-tackles-kubernetes-microservices-alma-linux

@@ -7,21 +7,18 @@ weight: 1370
 url: set-basic-authentication-limit-squid-users-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Proxy servers are essential tools for managing and optimizing network traffic. **Squid**, a powerful open-source proxy server, provides features like caching, traffic filtering, and access control. One key feature of Squid is its ability to implement user-based restrictions using **basic authentication**. By enabling authentication, administrators can ensure only authorized users access the proxy, further enhancing security and control.

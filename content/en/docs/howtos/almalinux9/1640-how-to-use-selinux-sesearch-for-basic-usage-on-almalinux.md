@@ -1,26 +1,22 @@
 ---
-title: 
-linkTitle: 
-description: 
-date: 
+title: null
+linkTitle: null
+description: null
+date: null
 weight: 1640
-slug: 
+slug: null
 draft: true
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-type: docs
-prev: 
-next: 
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 ---

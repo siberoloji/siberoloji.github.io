@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Additional Repositories
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 70
-toc: true
+
 keywords:
   - AlmaLinux
   - Repositories on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: add-additional-repositories-almalinux

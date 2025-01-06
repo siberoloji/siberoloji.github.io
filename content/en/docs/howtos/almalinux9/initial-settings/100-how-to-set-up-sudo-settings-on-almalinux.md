@@ -9,22 +9,19 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Sudo Settings
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 100
-toc: true
+
 keywords:
   - AlmaLinux
   - Sudo Settings
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-sudo-settings-almalinux
---- 
+---
+ 
 AlmaLinux has quickly become a popular choice for organizations and developers seeking a reliable and secure operating system. Like many Linux distributions, AlmaLinux relies on **sudo** for managing administrative tasks securely. By configuring sudo properly, you can control user privileges and ensure the system remains protected. This guide will walk you through everything you need to know about setting up and managing sudo settings on AlmaLinux.
 
 ---

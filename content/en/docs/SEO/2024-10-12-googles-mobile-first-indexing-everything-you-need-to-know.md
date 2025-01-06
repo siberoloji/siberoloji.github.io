@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Google’s Mobile-First Indexing: Everything You Need to Know'
-date: '2024-10-12T15:55:11+03:00'
+title: "Google’s Mobile-First Indexing: Everything You Need to Know"
+date: 2024-10-12T15:55:11+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /googles-mobile-first-indexing-everything-you-need-to-know/
- 
+url: /googles-mobile-first-indexing-everything-you-need-to-know/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

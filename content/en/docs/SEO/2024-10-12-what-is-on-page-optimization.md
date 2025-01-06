@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'What is On-Page Optimization?'
-date: '2024-10-12T12:07:05+03:00'
+title: What is On-Page Optimization?
+date: 2024-10-12T12:07:05+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-on-page-optimization/
- 
+url: /what-is-on-page-optimization/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

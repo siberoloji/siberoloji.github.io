@@ -15,10 +15,10 @@ linkTitle: File Systems
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords:
   - Microsoft Windows File Systems
-excludeSearch: false
+
 
 
 url: fat32-microsoft-windows-file-systems

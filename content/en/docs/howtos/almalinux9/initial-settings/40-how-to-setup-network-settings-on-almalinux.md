@@ -9,18 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Network Settings
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 40
-toc: true
+
 keywords:
   - AlmaLinux
   - network settings on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: setup-network-settings-almalinux

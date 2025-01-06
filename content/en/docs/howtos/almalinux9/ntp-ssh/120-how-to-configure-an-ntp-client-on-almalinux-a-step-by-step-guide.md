@@ -4,24 +4,21 @@ description: we will walk through the process of configuring an NTP (Network Tim
 date: 2024-12-08
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: NTP Client
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 120
-toc: true
+
 keywords:
-   - AlmaLinux
-   - NTP Client on AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - NTP Client on AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 url: configure-ntp-client-almalinux
 ---

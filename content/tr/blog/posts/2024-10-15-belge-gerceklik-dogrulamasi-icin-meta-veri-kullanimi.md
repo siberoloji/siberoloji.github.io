@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Belge Gerçeklik Doğrulaması İçin Meta Veri Kullanımı'
-date: '2024-10-15T17:07:44+03:00'
+title: Belge Gerçeklik Doğrulaması İçin Meta Veri Kullanımı
+date: 2024-10-15T17:07:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
+url: /tr/belge-gerceklik-dogrulamasi-icin-meta-veri-kullanimi/
 featured_image: /images/osint3.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

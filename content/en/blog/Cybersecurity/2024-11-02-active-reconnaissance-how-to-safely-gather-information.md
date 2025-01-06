@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'Active Reconnaissance: How to Safely Gather Information'
-date: '2024-11-02T20:09:37+03:00'
+title: "Active Reconnaissance: How to Safely Gather Information"
+date: 2024-11-02T20:09:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Explore active reconnaissance in ethical hacking, the methods to gather information safely, and how to conduct it without triggering detection systems.' 
- 
-url:  /active-reconnaissance-how-to-safely-gather-information/
- 
+description: Explore active reconnaissance in ethical hacking, the methods to gather information safely, and how to conduct it without triggering detection systems.
+url: /active-reconnaissance-how-to-safely-gather-information/
 featured_image: /images/cybersecurity6.webp
 categories:
-    - 'Information Gathering'
+  - Information Gathering
 tags:
-    - 'cyber security'
-    - 'information gathering'
-    - Reconnaissance
+  - Reconnaissance
+  - cybersecurity
+  - information gathering
 ---
 
 In ethical hacking, reconnaissance is the critical first step in understanding a target system or network’s strengths, weaknesses, and structure. Unlike passive reconnaissance, which gathers information without interacting directly with the target, active reconnaissance involves direct engagement with the system. It’s more intrusive and can reveal critical details, but it also runs the risk of detection. Conducting active reconnaissance safely and ethically requires skill, strategic planning, and knowledge of the tools and techniques involved.

@@ -9,17 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SSH Key Pair Authentication
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 160
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-ssh-key-pair-authentication-almalinux

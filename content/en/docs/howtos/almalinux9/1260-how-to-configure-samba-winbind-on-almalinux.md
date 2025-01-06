@@ -7,23 +7,20 @@ weight: 1260
 url: configure-samba-winbind-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - samba
+  - AlmaLinux
+  - samba
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - samba
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - samba
+
+
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  

@@ -7,23 +7,20 @@ weight: 860
 url: php-scripts-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - apache
-   - php scripts
+  - AlmaLinux
+  - apache
+  - php scripts
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 PHP (Hypertext Preprocessor) is one of the most popular server-side scripting languages for building dynamic web applications. Its ease of use, extensive library support, and ability to integrate with various databases make it a preferred choice for developers. Pairing PHP with Apache on AlmaLinux creates a robust environment for hosting websites and applications.

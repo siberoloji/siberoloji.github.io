@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Manual Backlinks for SEO: A Step-by-Step Guide'
-date: '2024-10-12T19:40:20+03:00'
+title: "Manual Backlinks for SEO: A Step-by-Step Guide"
+date: 2024-10-12T19:40:20+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /manual-backlinks-for-seo-a-step-by-step-guide/
- 
+url: /manual-backlinks-for-seo-a-step-by-step-guide/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -4,7 +4,7 @@ linkTitle: Coreutils in Linux
 description: Discover the importance of GNU Coreutils in Linux. Learn how to use essential commands like `ls`, `cp`, and `echo` for system management and automation.
 date: 2024-12-05
 draft: false
-toc: true
+
 keywords:
   - Coreutils in Linux
 tags:

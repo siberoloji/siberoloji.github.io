@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Referral Traffic for SEO: How It Boosts Your Website’s Growth'
-date: '2024-10-12T20:06:22+03:00'
+title: "Referral Traffic for SEO: How It Boosts Your Website’s Growth"
+date: 2024-10-12T20:06:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /referral-traffic-for-seo-how-it-boosts-your-websites-growth/
- 
+url: /referral-traffic-for-seo-how-it-boosts-your-websites-growth/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

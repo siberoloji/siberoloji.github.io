@@ -13,7 +13,7 @@ tags:
    - kali tool
 categories:
    - Kali Linux
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 10

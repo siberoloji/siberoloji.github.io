@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Key Trends in the Future of SEO in 2024'
-date: '2024-10-21T16:38:01+03:00'
+title: Key Trends in the Future of SEO in 2024
+date: 2024-10-21T16:38:01+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'The future of SEO is poised to undergo significant transformations driven by advancements in technology, particularly artificial intelligence.' 
- 
-url:  /key-trends-in-the-future-of-seo-in-2024/
+description: The future of SEO is poised to undergo significant transformations driven by advancements in technology, particularly artificial intelligence.
+url: /key-trends-in-the-future-of-seo-in-2024/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

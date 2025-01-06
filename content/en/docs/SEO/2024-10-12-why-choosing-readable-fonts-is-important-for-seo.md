@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Why Choosing Readable Fonts is Important for SEO'
-date: '2024-10-12T15:30:41+03:00'
+title: Why Choosing Readable Fonts is Important for SEO
+date: 2024-10-12T15:30:41+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /why-choosing-readable-fonts-is-important-for-seo/
- 
+url: /why-choosing-readable-fonts-is-important-for-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'The Importance of Dwell Time for SEO: How It Affects Rankings and User Experience'
-date: '2024-10-11T22:00:15+03:00'
+title: "The Importance of Dwell Time for SEO: How It Affects Rankings and User Experience"
+date: 2024-10-11T22:00:15+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-importance-of-dwell-time-for-seo-how-it-affects-rankings-and-user-experience/
- 
+url: /the-importance-of-dwell-time-for-seo-how-it-affects-rankings-and-user-experience/
 slim_seo:
-    - 'a:1:{s:11:"description";s:124:"Dwell time is a lesser-known yet critical factor that can significantly impact your site’s performance in search rankings.";}'
+  - a:1:{s:11:"description";s:124:"Dwell time is a lesser-known yet critical factor that can significantly impact your site’s performance in search rankings.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'How Businesses to Use AI for Personalized Results'
-date: '2024-10-21T20:59:16+03:00'
+title: How Businesses to Use AI for Personalized Results
+date: 2024-10-21T20:59:16+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'As search engines continue to prioritize relevance and user satisfaction in their algorithms, the strategic use of AI for Personalized results has emerged as a key competitive differentiator.' 
- 
-url:  /how-businesses-to-use-ai-for-personalized-results/
+description: As search engines continue to prioritize relevance and user satisfaction in their algorithms, the strategic use of AI for Personalized results has emerged as a key competitive differentiator.
+url: /how-businesses-to-use-ai-for-personalized-results/
 featured_image: /images/seo6.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - ai
-    - 'search engine optimization'
-    - seo
+  - ai
+  - seo
 ---
 
 

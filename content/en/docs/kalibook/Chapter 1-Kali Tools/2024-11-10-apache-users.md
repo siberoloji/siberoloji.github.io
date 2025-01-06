@@ -9,14 +9,14 @@ draft: false
 
 tags: []
 categories: []
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 130
-toc: true
+
 keywords:
    - apache-users
-excludeSearch: false
+
 sidebar:
    open: "true"
 linkTitle: apache-users

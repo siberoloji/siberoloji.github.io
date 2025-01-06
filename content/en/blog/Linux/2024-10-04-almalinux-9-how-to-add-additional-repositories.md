@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Add Additional Repositories'
-date: '2024-10-04T14:57:07+03:00'
+title: "AlmaLinux 9: How to Add Additional Repositories"
+date: 2024-10-04T14:57:07+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-add-additional-repositories/
- 
+url: /almalinux-9-how-to-add-additional-repositories/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'Additional repositories'
-    - 'alma linux'
-    - 'how-to guides'
-    - 'linux how-to'
+  - Additional repositories
+  - AlmaLinux
+  - how-to guides
+  - linux how-to
 ---
 
 

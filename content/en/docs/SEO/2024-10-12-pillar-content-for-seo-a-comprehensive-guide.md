@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Pillar Content for SEO: A Comprehensive Guide'
-date: '2024-10-12T15:59:04+03:00'
+title: "Pillar Content for SEO: A Comprehensive Guide"
+date: 2024-10-12T15:59:04+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /pillar-content-for-seo-a-comprehensive-guide/
- 
+url: /pillar-content-for-seo-a-comprehensive-guide/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Long-tail Keywords: Use It To Drive Your Targeted Traffic'
-date: '2024-10-11T21:30:15+03:00'
+title: "Long-tail Keywords: Use It To Drive Your Targeted Traffic"
+date: 2024-10-11T21:30:15+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /long-tail-keywords-power-of-driving-targeted-traffic/
- 
+url: /long-tail-keywords-power-of-driving-targeted-traffic/
 slim_seo:
-    - 'a:1:{s:11:"description";s:176:"we will delve into the importance of long-tail keywords, explore effective strategies for identifying, provide practical tips to help you leverage their power to drive traffic.";}'
+  - a:1:{s:11:"description";s:176:"we will delve into the importance of long-tail keywords, explore effective strategies for identifying, provide practical tips to help you leverage their power to drive traffic.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

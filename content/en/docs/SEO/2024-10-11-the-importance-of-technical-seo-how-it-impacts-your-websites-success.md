@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Technical SEO: How It Insanely Doubles Your Website’s Success?'
-date: '2024-10-11T21:19:08+03:00'
+title: "Technical SEO: How It Insanely Doubles Your Website’s Success?"
+date: 2024-10-11T21:19:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-importance-of-technical-seo-how-it-impacts-your-websites-success/
- 
+url: /the-importance-of-technical-seo-how-it-impacts-your-websites-success/
 slim_seo:
-    - 'a:1:{s:11:"description";s:180:"Technical SEO plays an equally important, if not more crucial, role in ensuring your website is easily crawled, indexed, and ranked by search engines like Google, Bing, and others.";}'
+  - a:1:{s:11:"description";s:180:"Technical SEO plays an equally important, if not more crucial, role in ensuring your website is easily crawled, indexed, and ranked by search engines like Google, Bing, and others.";}
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

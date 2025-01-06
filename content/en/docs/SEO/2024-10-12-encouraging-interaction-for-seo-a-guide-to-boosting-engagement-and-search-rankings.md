@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Encouraging Interaction for SEO: A Guide to Boosting Engagement and Search Rankings'
-date: '2024-10-12T20:21:39+03:00'
+title: "Encouraging Interaction for SEO: A Guide to Boosting Engagement and Search Rankings"
+date: 2024-10-12T20:21:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /encouraging-interaction-for-seo-a-guide-to-boosting-engagement-and-search-rankings/
- 
+url: /encouraging-interaction-for-seo-a-guide-to-boosting-engagement-and-search-rankings/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

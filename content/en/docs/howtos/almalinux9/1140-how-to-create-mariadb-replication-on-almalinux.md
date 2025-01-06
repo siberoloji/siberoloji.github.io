@@ -7,21 +7,18 @@ weight: 1140
 url: create-mariadb-replication-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 **MariaDB**, an open-source relational database management system, provides powerful replication features that allow you to maintain copies of your databases on separate servers. Replication is crucial for ensuring **high availability**, **load balancing**, and **disaster recovery** in production environments. By using AlmaLinux, a robust and secure RHEL-based Linux distribution, you can set up MariaDB replication for an efficient and resilient database infrastructure.

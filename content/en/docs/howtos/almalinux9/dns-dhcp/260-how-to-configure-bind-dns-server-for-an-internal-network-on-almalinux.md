@@ -10,17 +10,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: DNS Server for an Internal Network
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 260
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: configure-bind-dns-server-internal-network-almalinux

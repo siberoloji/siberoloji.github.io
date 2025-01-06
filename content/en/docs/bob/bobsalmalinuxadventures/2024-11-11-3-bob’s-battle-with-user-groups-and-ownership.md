@@ -4,22 +4,17 @@ linkTitle: User Groups and Ownership
 description: In this post, we’ll guide Bob through organizing users, managing group permissions, and understanding file ownership—a core skill for any Linux sysadmin.
 date: 2024-11-09
 draft: false
-
-
 tags:
   - AlmaLinux
   - bob system administrator
 categories:
   - Linux
-type: docs
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
-toc: true
+
 keywords:
   - linux user groups
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: /bobs-battle-with-alma-linux-user-groups-and-ownership/

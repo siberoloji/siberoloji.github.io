@@ -7,22 +7,19 @@ weight: 1090
 url: backup-restore-postgresql-database-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - postgresql
+  - AlmaLinux
+  - postgresql
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 PostgreSQL, a powerful open-source relational database system, is widely used in modern applications for its robustness, scalability, and advanced features. However, one of the most critical aspects of database management is ensuring data integrity through regular backups and the ability to restore databases efficiently. On **AlmaLinux**, a popular CentOS replacement, managing PostgreSQL backups is straightforward when following the right procedures.

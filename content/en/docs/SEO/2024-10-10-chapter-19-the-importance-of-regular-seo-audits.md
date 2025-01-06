@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Chapter 19: The Importance of Regular SEO Audits'
-date: '2024-10-10T22:10:57+03:00'
+title: "Chapter 19: The Importance of Regular SEO Audits"
+date: 2024-10-10T22:10:57+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-19-the-importance-of-regular-seo-audits/
- 
+url: /chapter-19-the-importance-of-regular-seo-audits/
 slim_seo:
-    - 'a:1:{s:11:"description";s:140:"Regular SEO audits not only help ensure that your website remains optimized but also provide invaluable insights into areas for improvement.";}'
+  - a:1:{s:11:"description";s:140:"Regular SEO audits not only help ensure that your website remains optimized but also provide invaluable insights into areas for improvement.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

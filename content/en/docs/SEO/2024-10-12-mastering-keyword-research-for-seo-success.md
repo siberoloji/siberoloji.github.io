@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Mastering Keyword Research for SEO Success'
-date: '2024-10-12T12:05:10+03:00'
+title: Mastering Keyword Research for SEO Success
+date: 2024-10-12T12:05:10+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /mastering-keyword-research-for-seo-success/
- 
+url: /mastering-keyword-research-for-seo-success/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

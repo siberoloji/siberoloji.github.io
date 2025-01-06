@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Meta Descriptions in SEO'
-date: '2024-10-12T20:54:10+03:00'
+title: Meta Descriptions in SEO
+date: 2024-10-12T20:54:10+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /meta-descriptions-in-seo/
- 
+url: /meta-descriptions-in-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'meta descriptions'
-    - 'search engine optimization'
-    - seo
+  - meta descriptions
+  - seo
 ---
 
 

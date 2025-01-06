@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Self-Created Backlinks for SEO: A Complete Guide'
-date: '2024-10-12T19:35:22+03:00'
+title: "Self-Created Backlinks for SEO: A Complete Guide"
+date: 2024-10-12T19:35:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /self-created-backlinks-for-seo-a-complete-guide/
- 
+url: /self-created-backlinks-for-seo-a-complete-guide/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - 'Self-Created Backlinks'
-    - seo
+  - Self-Created Backlinks
+  - seo
 ---
 
 

@@ -9,16 +9,16 @@ tags:
   - autorecon
 categories:
   - Kali linux
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 260
-toc: true
+
 keywords:
   - autorecon
-excludeSearch: false
+
 
 
 featured_image: /images/kalilinux2.webp

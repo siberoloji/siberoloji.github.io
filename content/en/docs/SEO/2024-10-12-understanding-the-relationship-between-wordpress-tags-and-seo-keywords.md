@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Understanding the Relationship Between WordPress Tags and SEO Keywords'
-date: '2024-10-12T20:58:34+03:00'
+title: Understanding the Relationship Between WordPress Tags and SEO Keywords
+date: 2024-10-12T20:58:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /understanding-the-relationship-between-wordpress-tags-and-seo-keywords/
- 
+url: /understanding-the-relationship-between-wordpress-tags-and-seo-keywords/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'wordpress tags'
+  - seo
+  - wordpress tags
 ---
 
 

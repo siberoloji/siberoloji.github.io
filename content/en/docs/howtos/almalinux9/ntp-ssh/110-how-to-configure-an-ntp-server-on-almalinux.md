@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: NTP server
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 110
-toc: true
+
 keywords:
   - AlmaLinux
   - NTP server on AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: configure-ntp-server-almalinux

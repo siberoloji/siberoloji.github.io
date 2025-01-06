@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'XML Sitemaps: What They Are and Why They Matter for SEO?'
-date: '2024-10-12T20:50:37+03:00'
+title: "XML Sitemaps: What They Are and Why They Matter for SEO?"
+date: 2024-10-12T20:50:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /xml-sitemaps-what-they-are-and-why-they-matter-for-seo/
- 
+url: /xml-sitemaps-what-they-are-and-why-they-matter-for-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'xml sitemaps'
+  - seo
+  - xml sitemaps
 ---
 
 

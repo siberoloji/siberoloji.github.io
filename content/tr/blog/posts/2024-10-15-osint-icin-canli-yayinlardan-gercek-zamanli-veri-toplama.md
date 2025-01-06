@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'OSINT için canlı yayınlardan gerçek zamanlı veri toplama'
-date: '2024-10-15T12:12:01+03:00'
+title: OSINT için canlı yayınlardan gerçek zamanlı veri toplama
+date: 2024-10-15T12:12:01+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/osint-icin-canli-yayinlardan-gercek-zamanli-veri-toplama/
+url: /tr/osint-icin-canli-yayinlardan-gercek-zamanli-veri-toplama/
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

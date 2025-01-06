@@ -11,14 +11,9 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 1080
-toc: true
-excludeSearch: false
 
 
 featured_image: /images/bobs-adventures-with-alma-linux.png

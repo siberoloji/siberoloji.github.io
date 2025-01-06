@@ -3,7 +3,7 @@ title: Alice's Wordpress Adventures
 type: page
 prev: docs/alice
 next: docs/alice/alicewordpressadventures/2024-11-11-if-alice-wants-to-write-blog-posts
-url: /alice-wordpress/
+url: /tr/alice-wordpress/
 weight: 1
 
 

@@ -7,21 +7,18 @@ weight: 700
 url: configure-freeipa-client-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Centralized identity management is essential for maintaining security and streamlining user authentication across systems. **FreeIPA** (Free Identity, Policy, and Audit) provides an all-in-one solution for managing user authentication, policies, and access. Configuring a **FreeIPA Client** on AlmaLinux allows the system to authenticate users against the FreeIPA server and access its centralized resources.

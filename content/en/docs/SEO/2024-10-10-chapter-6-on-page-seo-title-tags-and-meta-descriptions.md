@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 6: On-Page SEO: Title Tags and Meta Descriptions'
-date: '2024-10-10T21:30:13+03:00'
+title: "Chapter 6: On-Page SEO: Title Tags and Meta Descriptions"
+date: 2024-10-10T21:30:13+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-6-on-page-seo-title-tags-and-meta-descriptions/
- 
+url: /chapter-6-on-page-seo-title-tags-and-meta-descriptions/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'A Deep Dive into SEMrush: Mastering the Digital Landscape'
-date: '2024-10-12T20:26:15+03:00'
+title: "A Deep Dive into SEMrush: Mastering the Digital Landscape"
+date: 2024-10-12T20:26:15+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /a-deep-dive-into-semrush-mastering-the-digital-landscape/
- 
+url: /a-deep-dive-into-semrush-mastering-the-digital-landscape/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

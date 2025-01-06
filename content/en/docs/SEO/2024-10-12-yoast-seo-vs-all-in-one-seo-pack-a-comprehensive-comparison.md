@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Yoast SEO vs. All in One SEO Pack: A Comprehensive Comparison'
-date: '2024-10-12T21:12:16+03:00'
+title: "Yoast SEO vs. All in One SEO Pack: A Comprehensive Comparison"
+date: 2024-10-12T21:12:16+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /yoast-seo-vs-all-in-one-seo-pack-a-comprehensive-comparison/
- 
+url: /yoast-seo-vs-all-in-one-seo-pack-a-comprehensive-comparison/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'seo plugins'
-    - wordpress
+  - seo
+  - seo plugins
+  - wordpress
 ---
 
 

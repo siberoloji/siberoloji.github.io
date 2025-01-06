@@ -5,7 +5,7 @@ linkTitle: macOS Screen Savers
 date: 2024-12-23
 type: blog
 draft: false
-toc: true
+
 tags:
   - macos screen saver
 categories:

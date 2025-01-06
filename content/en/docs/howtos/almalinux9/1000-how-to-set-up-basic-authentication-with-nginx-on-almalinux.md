@@ -11,16 +11,11 @@ tags:
 categories:
   - Linux
   - Linux How-to
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 ---

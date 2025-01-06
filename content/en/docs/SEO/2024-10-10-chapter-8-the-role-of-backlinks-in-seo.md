@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 8: The Role of Backlinks in SEO'
-date: '2024-10-10T21:43:46+03:00'
+title: "Chapter 8: The Role of Backlinks in SEO"
+date: 2024-10-10T21:43:46+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-8-the-role-of-backlinks-in-seo/
- 
+url: /chapter-8-the-role-of-backlinks-in-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

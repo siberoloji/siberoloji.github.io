@@ -7,21 +7,18 @@ weight: 1030
 url: set-nginx-reverse-proxy-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 A reverse proxy is a server that sits between clients and backend servers, forwarding client requests to the appropriate backend server and returning the server’s response to the client. Nginx, a high-performance web server, is a popular choice for setting up reverse proxies due to its speed, scalability, and flexibility.

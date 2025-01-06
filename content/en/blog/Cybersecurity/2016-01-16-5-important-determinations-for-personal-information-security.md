@@ -9,7 +9,6 @@ featured_image: /images/cyber6.jpg
 categories:
   - Cybersecurity
 tags:
-  - cyber security
   - cybersecurity
 ---
 

@@ -4,24 +4,21 @@ description: In this guide, we’ll delve into how to start the BIND service on 
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Start BIND and Verify Resolution
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 290
-toc: true
+
 keywords:
-   - AlmaLinux
-   - BIND
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - BIND
+
+
 featured_image: /images/almalinux.webp
 url: start-bind-verify-resolution-almalinux
 ---

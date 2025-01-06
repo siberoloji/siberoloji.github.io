@@ -7,22 +7,19 @@ weight: 1130
 url: create-mariadb-backup-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - mariadb
+  - AlmaLinux
+  - mariadb
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Backing up your database is a critical task for any database administrator. Whether for disaster recovery, migration, or simply safeguarding data, a robust backup strategy ensures the security and availability of your database. **MariaDB**, a popular open-source database, provides multiple tools and methods to back up your data effectively. **AlmaLinux**, a reliable and secure Linux distribution, serves as an excellent platform for hosting MariaDB and managing backups.

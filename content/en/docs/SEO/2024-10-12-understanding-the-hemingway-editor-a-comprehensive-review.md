@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Understanding the Hemingway Editor: A Comprehensive Review'
-date: '2024-10-12T20:17:47+03:00'
+title: "Understanding the Hemingway Editor: A Comprehensive Review"
+date: 2024-10-12T20:17:47+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /understanding-the-hemingway-editor-a-comprehensive-review/
- 
+url: /understanding-the-hemingway-editor-a-comprehensive-review/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

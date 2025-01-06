@@ -9,17 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Configure DNS Secondary Server
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 330
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: configure-bind-dns-secondary-server-almalinux

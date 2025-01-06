@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'What Do Web Crawlers Look For On Websites?'
-date: '2024-10-11T20:59:30+03:00'
+title: What Do Web Crawlers Look For On Websites?
+date: 2024-10-11T20:59:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-do-web-crawlers-look-for-on-websites/
- 
+url: /what-do-web-crawlers-look-for-on-websites/
 slim_seo:
-    - 'a:1:{s:11:"description";s:186:"what exactly are web crawlers mission for as they traverse the web? Understanding the key elements that web crawlers focus on can help website owners and developers optimize their sites.";}'
+  - a:1:{s:11:"description";s:186:"what exactly are web crawlers mission for as they traverse the web? Understanding the key elements that web crawlers focus on can help website owners and developers optimize their sites.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

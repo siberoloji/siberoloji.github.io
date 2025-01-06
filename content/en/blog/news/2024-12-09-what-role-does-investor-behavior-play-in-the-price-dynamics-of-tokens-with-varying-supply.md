@@ -5,7 +5,7 @@ linkTitle: What role does investor behavior play
 date: 2024-12-09
 type: blog
 draft: false
-toc: true
+
 tags: []
 categories:
   - Cryptocurrency

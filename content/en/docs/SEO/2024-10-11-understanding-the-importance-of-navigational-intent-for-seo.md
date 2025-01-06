@@ -1,22 +1,17 @@
 ---
 draft: false
-
-title:  'Understanding the Importance of Navigational Intent for SEO'
-date: '2024-10-11T21:46:33+03:00'
+title: Understanding the Importance of Navigational Intent for SEO
+date: 2024-10-11T21:46:33+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /understanding-the-importance-of-navigational-intent-for-seo/
- 
+url: /understanding-the-importance-of-navigational-intent-for-seo/
 slim_seo:
-    - 'a:1:{s:11:"description";s:133:"We will look into navigational intent for SEO, exploring its impact on search engine results, and overall digital marketing strategy.";}'
+  - a:1:{s:11:"description";s:133:"We will look into navigational intent for SEO, exploring its impact on search engine results, and overall digital marketing strategy.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'navigational intent'
-    - 'search engine optimization'
-    - seo
+  - navigational intent
+  - seo
 ---
 
 

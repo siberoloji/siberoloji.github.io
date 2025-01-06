@@ -4,22 +4,17 @@ linkTitle: Directories and Permissions
 description: Understanding Linux file permissions and navigating the filesystem’s depths.
 date: 2024-11-08
 draft: false
-
-
 tags:
   - AlmaLinux
   - bob system administrator
 categories:
   - Linux
-type: docs
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 20
-toc: true
+
 keywords:
   - AlmaLinux file permissions
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: /bob-explores-mysterious-world-of-directories-permissions/

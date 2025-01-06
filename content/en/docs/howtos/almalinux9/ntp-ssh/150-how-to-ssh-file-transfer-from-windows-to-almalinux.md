@@ -9,17 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SSH File Transfer from Windows
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 150
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: ssh-file-transfer-windows-almalinux

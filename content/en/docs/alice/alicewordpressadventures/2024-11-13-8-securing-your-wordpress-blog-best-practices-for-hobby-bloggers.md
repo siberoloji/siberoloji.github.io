@@ -5,13 +5,13 @@ description: This guide will walk Alice (and you) through the best practices for
 date: 2024-11-13
 weight: 80
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - securing wordpress
 categories:
   - TechLife
-type: docs
+
 keywords:
   - Securing WordPress
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

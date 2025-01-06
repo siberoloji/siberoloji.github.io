@@ -5,21 +5,19 @@ linkTitle: DNSmasq and DHCP
 date: 2024-11-28
 type: blog
 draft: false
-toc: true
-tags:
-   - DHCP
-   - DNSmasq
-   - AlmaLinux
-categories:
-   - Linux
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+tags:
+  - AlmaLinux
+  - DHCP
+  - DNSmasq
+categories:
+  - Linux
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: /images/almalinux.webp
-sidebar:
-   open: true
+
 keywords:
-   - DNSmasq
-   - DHCP
+  - DNSmasq
+  - DHCP
 url: building-local-network-dnsmasq-dhcp-almalinux-9
 ---
 #### **Introduction**

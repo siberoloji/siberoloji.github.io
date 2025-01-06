@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'OSINT için Facebook Veri Kazıma Araçları'
-date: '2024-10-15T12:15:47+03:00'
+title: OSINT için Facebook Veri Kazıma Araçları
+date: 2024-10-15T12:15:47+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/osint-icin-facebook-veri-kazima-araclari/
+url: /tr/osint-icin-facebook-veri-kazima-araclari/
 featured_image: /images/osint4.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

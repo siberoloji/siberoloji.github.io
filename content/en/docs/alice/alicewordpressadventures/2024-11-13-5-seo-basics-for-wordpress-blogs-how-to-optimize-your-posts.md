@@ -5,14 +5,14 @@ description: In this guide, we’ll walk Alice (and you) through the fundamental
 date: 2024-11-13
 weight: 50
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - SEO for Wordpress
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-taking-picture.webp

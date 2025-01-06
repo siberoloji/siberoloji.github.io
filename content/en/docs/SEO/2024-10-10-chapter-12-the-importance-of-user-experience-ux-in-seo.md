@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 12: The Importance of User Experience (UX) in SEO'
-date: '2024-10-10T21:54:30+03:00'
+title: "Chapter 12: The Importance of User Experience (UX) in SEO"
+date: 2024-10-10T21:54:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-12-the-importance-of-user-experience-ux-in-seo/
- 
+url: /chapter-12-the-importance-of-user-experience-ux-in-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

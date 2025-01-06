@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Sosyal Platformlarda Coğrafi Konum Belirleme'
-date: '2024-10-15T17:21:13+03:00'
+title: Sosyal Platformlarda Coğrafi Konum Belirleme
+date: 2024-10-15T17:21:13+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/sosyal-platformlarda-cografi-konum-belirleme/
+url: /tr/sosyal-platformlarda-cografi-konum-belirleme/
 featured_image: /images/osint1.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

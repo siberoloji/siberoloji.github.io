@@ -3,7 +3,7 @@ title: Bob's Adventures
 type: page
 prev: docs/first-page
 next: docs/bob/bobsalmalinuxadventures
-url: /bob/
+url: /tr/bob/
 weight: 4
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

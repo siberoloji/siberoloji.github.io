@@ -7,24 +7,21 @@ weight: 1150
 url: create-mariadb-galera-cluster-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - galera cluster
-   - mariadb
+  - AlmaLinux
+  - galera cluster
+  - mariadb
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - Galera Cluster
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - Galera Cluster
+
+
 featured_image: /images/almalinux.webp
 ---
 **MariaDB Galera Cluster** is a powerful solution for achieving high availability, scalability, and fault tolerance in your database environment. By creating a Galera Cluster, you enable a multi-master replication setup where all nodes in the cluster can process both read and write requests. This eliminates the single point of failure and provides real-time synchronization across nodes.

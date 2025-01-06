@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'What Are Core Web Vitals? A Comprehensive Guide for Better SEO and User Experience'
-date: '2024-10-12T20:41:50+03:00'
+title: What Are Core Web Vitals? A Comprehensive Guide for Better SEO and User Experience
+date: 2024-10-12T20:41:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-are-core-web-vitals-a-comprehensive-guide-for-better-seo-and-user-experience/
- 
+url: /what-are-core-web-vitals-a-comprehensive-guide-for-better-seo-and-user-experience/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'core web vitals'
-    - 'search engine optimization'
-    - seo
+  - core web vitals
+  - seo
 ---
 
 

@@ -15,10 +15,10 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords:
   - Understanding UEFI and Legacy Boot Mode
-excludeSearch: false
+
 
 
 featured_image: /images/programming2.webp

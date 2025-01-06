@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'High Authority Backlinks for SEO'
-date: '2024-10-12T19:32:09+03:00'
+title: High Authority Backlinks for SEO
+date: 2024-10-12T19:32:09+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /high-authority-backlinks-for-seo/
- 
+url: /high-authority-backlinks-for-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

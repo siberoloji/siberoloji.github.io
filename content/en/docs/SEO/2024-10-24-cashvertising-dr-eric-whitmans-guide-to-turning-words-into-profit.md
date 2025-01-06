@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'Cashvertising: Dr. Eric Whitman’s Guide to Turning Words into Profit'
-date: '2024-10-24T01:06:59+03:00'
+title: "Cashvertising: Dr. Eric Whitman’s Guide to Turning Words into Profit"
+date: 2024-10-24T01:06:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Whether you''re a seasoned marketer or a budding entrepreneur looking to boost your business, understanding the principles behind Cashvertising can give you a competitive edge. This post dives deep into Dr. Whitman''s concepts.' 
- 
-url:  /cashvertising-dr-eric-whitmans-guide-to-turning-words-into-profit/
+description: Whether you're a seasoned marketer or a budding entrepreneur looking to boost your business, understanding the principles behind Cashvertising can give you a competitive edge. This post dives deep into Dr. Whitman's concepts.
+url: /cashvertising-dr-eric-whitmans-guide-to-turning-words-into-profit/
 featured_image: /images/onlinemarketing.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
+  - seo
 ---
 
 

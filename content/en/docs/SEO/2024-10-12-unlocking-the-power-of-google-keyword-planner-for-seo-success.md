@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Power Of Google Keyword Planner For Boost SEO Success'
-date: '2024-10-12T20:31:42+03:00'
+title: Power Of Google Keyword Planner For Boost SEO Success
+date: 2024-10-12T20:31:42+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /unlocking-the-power-of-google-keyword-planner-for-seo-success/
- 
+url: /unlocking-the-power-of-google-keyword-planner-for-seo-success/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Belgelerden Meta Veri Çıkarma'
-date: '2024-10-15T17:17:10+03:00'
+title: Belgelerden Meta Veri Çıkarma
+date: 2024-10-15T17:17:10+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/belgelerden-meta-veri-cikarma/
+url: /tr/belgelerden-meta-veri-cikarma/
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'The Importance of Breadcrumbs for SEO'
-date: '2024-10-12T15:32:24+03:00'
+title: The Importance of Breadcrumbs for SEO
+date: 2024-10-12T15:32:24+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-importance-of-breadcrumbs-for-seo/
- 
+url: /the-importance-of-breadcrumbs-for-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

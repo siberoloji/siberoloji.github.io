@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Influencer Marketing: Harnessing the Power of People'
-date: '2024-10-12T20:52:17+03:00'
+title: "Influencer Marketing: Harnessing the Power of People"
+date: 2024-10-12T20:52:17+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /influencer-marketing-harnessing-the-power-of-people/
- 
+url: /influencer-marketing-harnessing-the-power-of-people/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'influencer marketing'
-    - 'search engine optimization'
-    - seo
+  - influencer marketing
+  - seo
 ---
 
 

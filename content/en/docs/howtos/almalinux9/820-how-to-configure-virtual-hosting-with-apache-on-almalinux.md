@@ -7,21 +7,18 @@ weight: 820
 url: configure-virtual-hosting-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Apache HTTP Server (httpd) is one of the most versatile and widely used web servers for hosting websites and applications. One of its most powerful features is **virtual hosting**, which allows a single Apache server to host multiple websites or domains from the same machine. This is especially useful for businesses, developers, and hobbyists managing multiple projects.

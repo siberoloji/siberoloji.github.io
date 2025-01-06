@@ -7,21 +7,18 @@ weight: 1360
 url: configure-linux-mac-windows-proxy-clients-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Proxy servers are indispensable tools for optimizing network performance, enhancing security, and controlling internet usage. Once you’ve set up a proxy server on AlmaLinux, the next step is configuring clients to route their traffic through the proxy. Proper configuration ensures seamless communication between devices and the proxy server, regardless of the operating system.

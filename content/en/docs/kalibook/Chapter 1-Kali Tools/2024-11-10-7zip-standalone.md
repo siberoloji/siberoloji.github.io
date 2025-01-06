@@ -12,14 +12,14 @@ tags:
    - 7zip-standalone
 categories:
    - Kali linux
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 30
-toc: true
+
 keywords:
    - 7zip-standalone
-excludeSearch: false
+
 url: /7zip-standalone-kali-linux-comprehensive-guide-file-compression-archiving/
 sidebar:
    open: "true"

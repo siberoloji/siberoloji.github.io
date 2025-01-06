@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Key Elements of Local SEO That Will Remain Relevant in 2024?'
-date: '2024-10-21T20:17:12+03:00'
+title: Key Elements of Local SEO That Will Remain Relevant in 2024?
+date: 2024-10-21T20:17:12+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'With the increasing importance of location-based queries, local SEO has become crucial for small and medium-sized businesses that rely on customers in their geographic area.' 
- 
-url:  /key-elements-of-local-seo-that-will-remain-relevant-in-2024/
+description: With the increasing importance of location-based queries, local SEO has become crucial for small and medium-sized businesses that rely on customers in their geographic area.
+url: /key-elements-of-local-seo-that-will-remain-relevant-in-2024/
 featured_image: /images/seo5.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'local seo'
-    - 'search engine optimization'
-    - seo
+  - local seo
+  - seo
 ---
 
 

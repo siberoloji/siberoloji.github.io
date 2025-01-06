@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Understanding Google’s Penguin Update: A Comprehensive Guide'
-date: '2024-10-12T20:36:49+03:00'
+title: "Understanding Google’s Penguin Update: A Comprehensive Guide"
+date: 2024-10-12T20:36:49+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /understanding-googles-penguin-update-a-comprehensive-guide/
- 
+url: /understanding-googles-penguin-update-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

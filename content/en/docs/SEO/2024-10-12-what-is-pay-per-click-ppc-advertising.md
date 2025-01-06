@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'What is Pay-Per-Click (PPC) Advertising?'
-date: '2024-10-12T12:01:03+03:00'
+title: What is Pay-Per-Click (PPC) Advertising?
+date: 2024-10-12T12:01:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-pay-per-click-ppc-advertising/
- 
+url: /what-is-pay-per-click-ppc-advertising/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - pay-per-click
-    - ppc
-    - 'search engine optimization'
-    - seo
+  - pay-per-click
+  - ppc
+  - seo
 ---
 
 

@@ -4,24 +4,21 @@ description: Learn how to configure VNC for KVM virtual machines on AlmaLinux. T
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Set Up a VNC Connection for KVM
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 460
-toc: true
+
 keywords:
-   - AlmaLinux
-   - VNC
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - VNC
+
+
 featured_image: /images/almalinux.webp
 url: set-vnc-connection-kvm-almalinux
 ---

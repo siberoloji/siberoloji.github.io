@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Meta Veri Kaldırma Araçları OSINT'
-date: '2024-10-15T17:00:59+03:00'
+title: Meta Veri Kaldırma Araçları OSINT
+date: 2024-10-15T17:00:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/meta-veri-kaldirma-araclari-osint/
+url: /tr/meta-veri-kaldirma-araclari-osint/
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

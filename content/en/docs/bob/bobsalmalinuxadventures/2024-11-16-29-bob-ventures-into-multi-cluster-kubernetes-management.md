@@ -9,16 +9,11 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 290
-toc: true
-keywords: ""
-excludeSearch: false
 
+keywords: ""
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-ventures-multi-cluster-kubernetes-management-alma-linux

@@ -8,16 +8,16 @@ tags:
    - kali tools
 categories:
    - Kali linux
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 320
-toc: true
+
 keywords:
    - Bettercap
-excludeSearch: false
+
 sidebar:
    open: true
 featured_image: /images/kalilinux2.webp

@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Transactional Intent: The Key to Driving Conversions in SEO'
-date: '2024-10-11T21:50:32+03:00'
+title: "Transactional Intent: The Key to Driving Conversions in SEO"
+date: 2024-10-11T21:50:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /transactional-intent-the-key-to-driving-conversions-in-seo/
- 
+url: /transactional-intent-the-key-to-driving-conversions-in-seo/
 slim_seo:
-    - 'a:1:{s:11:"description";s:130:"we will delve into the importance of transactional intent for SEO, explore effective strategies to help you optimize your website.";}'
+  - a:1:{s:11:"description";s:130:"we will delve into the importance of transactional intent for SEO, explore effective strategies to help you optimize your website.";}
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

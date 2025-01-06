@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: In this post, we’ll explore Asleap’s functionality, how it works, and its place in network security assessments.
 url: /asleap-on-kali-linux-cracking-leap-authentication-for-network-security-testing/
 featured_image: /images/kalilinux2.webp
-toc: true
+
 categories:
     - Kali Linux
 tags:

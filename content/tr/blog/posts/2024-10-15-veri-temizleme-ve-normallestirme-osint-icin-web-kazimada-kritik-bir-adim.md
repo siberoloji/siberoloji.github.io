@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Veri Temizleme ve Normalleştirme: OSINT için Web Kazımada Kritik Bir Adım'
-date: '2024-10-15T12:02:25+03:00'
+title: "Veri Temizleme ve Normalleştirme: OSINT için Web Kazımada Kritik Bir Adım"
+date: 2024-10-15T12:02:25+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adim/
+url: /tr/veri-temizleme-ve-normallestirme-osint-icin-web-kazimada-kritik-bir-adim/
 featured_image: /images/osint4.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

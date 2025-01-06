@@ -11,15 +11,15 @@ tags:
   - blog publishing
 categories:
   - TechLife
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
+
 keywords:
   - blog
   - wordpress
   - blog publishing preparation
-excludeSearch: false
+
 
 
 featured_image: /images/alice-in-front-of-computer.webp

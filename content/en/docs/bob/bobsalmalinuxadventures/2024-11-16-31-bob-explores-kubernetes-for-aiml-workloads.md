@@ -9,19 +9,14 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 310
-toc: true
-keywords: ""
-excludeSearch: false
 
+keywords: ""
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
-url:  bob-explores-kubernetes-ai-ml-workloads
+url: bob-explores-kubernetes-ai-ml-workloads
 ---
 Let’s dive into Chapter 31, *"Bob Explores Kubernetes for AI/ML Workloads!"*. In this chapter, Bob will learn how to deploy and manage machine learning workloads on Kubernetes using **Kubeflow**, **Jupyter notebooks**, and specialized tools for AI/ML.
 

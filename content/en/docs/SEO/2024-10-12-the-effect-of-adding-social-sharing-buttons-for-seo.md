@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'The Effect of Adding Social Sharing Buttons for SEO'
-date: '2024-10-12T11:46:51+03:00'
+title: The Effect of Adding Social Sharing Buttons for SEO
+date: 2024-10-12T11:46:51+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-effect-of-adding-social-sharing-buttons-for-seo/
- 
+url: /the-effect-of-adding-social-sharing-buttons-for-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'social sharing buttons'
+  - seo
+  - social sharing buttons
 ---
 
 

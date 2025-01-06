@@ -7,22 +7,19 @@ weight: 1160
 url: install-phpmyadmin-mariadb-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - phpmyadmin
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - phpmyadmin
+
+
 featured_image: /images/almalinux.webp
 ---
 **phpMyAdmin** is a popular web-based tool that simplifies the management of MySQL and MariaDB databases. It provides an intuitive graphical user interface (GUI) for performing tasks such as creating, modifying, and deleting databases, tables, and users without the need to execute SQL commands manually. If you are running **MariaDB** on **AlmaLinux**, phpMyAdmin can significantly enhance your database administration workflow.

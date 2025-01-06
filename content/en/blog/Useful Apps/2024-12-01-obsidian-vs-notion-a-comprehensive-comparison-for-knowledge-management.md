@@ -5,7 +5,7 @@ linkTitle: Obsidian vs Notion
 date: 2024-12-01
 type: blog
 draft: false
-toc: true
+
 tags:
   - obsidian
   - notion

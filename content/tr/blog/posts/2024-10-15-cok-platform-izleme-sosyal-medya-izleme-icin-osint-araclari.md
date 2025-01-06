@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Çok Platform İzleme: Sosyal Medya İzleme için OSINT Araçları'
-date: '2024-10-15T12:21:03+03:00'
+title: "Çok Platform İzleme: Sosyal Medya İzleme için OSINT Araçları"
+date: 2024-10-15T12:21:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/cok-platform-izleme-sosyal-medya-izleme-icin-osint-araclari/
+url: /tr/cok-platform-izleme-sosyal-medya-izleme-icin-osint-araclari/
 featured_image: /images/osint1.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

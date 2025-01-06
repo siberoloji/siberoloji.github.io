@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Domain Authority (DA) for SEO'
-date: '2024-10-12T19:21:34+03:00'
+title: Domain Authority (DA) for SEO
+date: 2024-10-12T19:21:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /domain-authority-da-for-seo/
- 
+url: /domain-authority-da-for-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

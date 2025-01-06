@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'NAP Consistency: The Cornerstone of Local SEO'
-date: '2024-10-12T20:43:53+03:00'
+title: "NAP Consistency: The Cornerstone of Local SEO"
+date: 2024-10-12T20:43:53+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /nap-consistency-the-cornerstone-of-local-seo/
- 
+url: /nap-consistency-the-cornerstone-of-local-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'nap consistency'
-    - 'search engine optimization'
-    - seo
+  - nap consistency
+  - seo
 ---
 
 

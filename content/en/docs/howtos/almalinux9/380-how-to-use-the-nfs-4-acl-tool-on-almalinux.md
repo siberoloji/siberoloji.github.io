@@ -9,17 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: NFS 4 ACL Tool
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 380
-toc: true
+
 keywords:
   - AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: nfs-4-acl-tool-almalinux

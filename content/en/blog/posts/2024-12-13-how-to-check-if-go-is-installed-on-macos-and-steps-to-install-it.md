@@ -5,7 +5,7 @@ linkTitle: Check if Go is Installed
 date: 2024-12-13
 type: blog
 draft: false
-toc: true
+
 tags: []
 categories: []
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

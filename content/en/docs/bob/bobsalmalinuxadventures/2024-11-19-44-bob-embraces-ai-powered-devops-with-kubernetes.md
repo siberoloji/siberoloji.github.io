@@ -9,18 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 440
-toc: true
+
 keywords:
   - AI-Powered DevOps with Kubernetes on AlmaLinux
   - AI-Powered DevOps
-excludeSearch: false
-
 
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-embraces-ai-powered-devops-kubernetes-alma-linux

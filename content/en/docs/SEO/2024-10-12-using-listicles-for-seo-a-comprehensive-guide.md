@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Using Listicles for SEO: A Comprehensive Guide'
-date: '2024-10-12T19:26:28+03:00'
+title: "Using Listicles for SEO: A Comprehensive Guide"
+date: 2024-10-12T19:26:28+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /using-listicles-for-seo-a-comprehensive-guide/
- 
+url: /using-listicles-for-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - listicles
-    - 'search engine optimization'
-    - seo
+  - listicles
+  - seo
 ---
 
 

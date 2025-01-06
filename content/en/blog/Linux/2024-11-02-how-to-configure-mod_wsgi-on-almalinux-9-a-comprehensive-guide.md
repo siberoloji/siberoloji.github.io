@@ -1,19 +1,16 @@
 ---
 draft: false
-
-title:  'How to Configure mod_wsgi on AlmaLinux 9: A Comprehensive Guide'
-date: '2024-11-02T13:41:15+03:00'
+title: "How to Configure mod_wsgi on AlmaLinux 9: A Comprehensive Guide"
+date: 2024-11-02T13:41:15+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This guide walks you through each step in setting up mod_wsgi on AlmaLinux 9, from installation to configuration, allowing you to serve Python applications securely and effectively.' 
- 
-url:  /how-to-configure-mod_wsgi-on-almalinux-9-a-comprehensive-guide/
+description: This guide walks you through each step in setting up mod_wsgi on AlmaLinux 9, from installation to configuration, allowing you to serve Python applications securely and effectively.
+url: /how-to-configure-mod_wsgi-on-almalinux-9-a-comprehensive-guide/
 featured_image: /images/apache-web-server.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - mod_wsgi
+  - AlmaLinux
+  - mod_wsgi
 ---
 
 <!-- wp:jetpack/markdown {"source":"Configuring **mod_wsgi** on **AlmaLinux 9** is a powerful way to deploy Python-based web applications with the Apache web server. By combining the flexibility of Python with the reliability of Apache, mod_wsgi enables smooth deployment, easy scaling, and efficient server-side processing. This guide walks you through each step in setting up mod_wsgi on AlmaLinux 9, from installation to configuration, allowing you to serve Python applications securely and effectively. 

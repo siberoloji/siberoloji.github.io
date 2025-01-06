@@ -7,21 +7,18 @@ weight: 840
 url: enable-userdir-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 The `mod_userdir` module in Apache is a useful feature that allows users on a server to host personal websites or share files from their home directories. When enabled, each user on the server can create a `public_html` directory in their home folder and serve web content through a URL such as `http://example.com/~username`.

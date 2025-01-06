@@ -10,18 +10,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Services on AlmaLinux
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 50
-toc: true
+
 keywords:
   - AlmaLinux
   - services on almalinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: list-enable-disable-services-almalinux

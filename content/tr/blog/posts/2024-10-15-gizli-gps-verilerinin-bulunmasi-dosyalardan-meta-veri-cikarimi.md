@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Gizli GPS Verilerinin Bulunması: Dosyalardan Meta Veri Çıkarımı'
-date: '2024-10-15T17:11:29+03:00'
+title: "Gizli GPS Verilerinin Bulunması: Dosyalardan Meta Veri Çıkarımı"
+date: 2024-10-15T17:11:29+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
+url: /tr/gizli-gps-verilerinin-bulunmasi-dosyalardan-meta-veri-cikarimi/
 featured_image: /images/osint3.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

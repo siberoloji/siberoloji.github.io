@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Submit to Directories for SEO'
-date: '2024-10-12T19:23:33+03:00'
+title: Submit to Directories for SEO
+date: 2024-10-12T19:23:33+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /submit-to-directories-for-seo/
- 
+url: /submit-to-directories-for-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
-    - 'Submit to Directories'
+  - Submit to Directories
+  - seo
 ---
 
 

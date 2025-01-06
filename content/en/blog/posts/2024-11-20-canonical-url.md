@@ -5,7 +5,7 @@ linkTitle: Canonical URL
 date: 2024-11-20
 type: blog
 draft: false
-toc: true
+
 tags:
   - canonical url
   - seo

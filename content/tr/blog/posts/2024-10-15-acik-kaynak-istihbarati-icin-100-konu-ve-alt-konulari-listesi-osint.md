@@ -1,22 +1,19 @@
 ---
 draft: false
-
-title:  'Açık Kaynak İstihbaratı için 100 Konu ve Alt Konuları Listesi OSINT'
-date: '2024-10-15T22:00:52+03:00'
+title: Açık Kaynak İstihbaratı için 100 Konu ve Alt Konuları Listesi OSINT
+date: 2024-10-15T22:00:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
+url: /tr/acik-kaynak-istihbarati-icin-100-konu-ve-alt-konulari-listesi-osint/
 slim_seo:
-    - 'a:1:{s:11:"description";s:121:"You will find 100 topics and subtopics about OSINT (Open Source Intelligence ) in this unique, valuable blog post. Ready?";}' 
+  - a:1:{s:11:"description";s:121:"You will find 100 topics and subtopics about OSINT (Open Source Intelligence ) in this unique, valuable blog post. Ready?";}
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

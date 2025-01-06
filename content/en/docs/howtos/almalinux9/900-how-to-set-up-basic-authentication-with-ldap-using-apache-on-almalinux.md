@@ -7,21 +7,18 @@ weight: 900
 url: set-basic-authentication-ldap-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 Configuring basic authentication with LDAP in an Apache web server on AlmaLinux can secure your application by integrating it with centralized user directories. LDAP (Lightweight Directory Access Protocol) allows you to manage user authentication in a scalable way, while Apache’s built-in modules make integration straightforward. In this guide, we’ll walk you through the process, step-by-step, with practical examples.

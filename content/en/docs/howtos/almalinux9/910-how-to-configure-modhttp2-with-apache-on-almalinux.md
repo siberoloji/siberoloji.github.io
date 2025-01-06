@@ -7,21 +7,18 @@ weight: 910
 url: configure-mod-http2-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 The HTTP/2 protocol is the modern standard for faster and more efficient communication between web servers and clients. It significantly improves web performance with features like multiplexing, header compression, and server push. Configuring `mod_http2` on Apache for AlmaLinux allows you to harness these benefits while staying up to date with industry standards.

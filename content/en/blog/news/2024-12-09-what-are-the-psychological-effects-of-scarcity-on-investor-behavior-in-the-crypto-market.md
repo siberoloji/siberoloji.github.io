@@ -5,7 +5,7 @@ linkTitle: psychological effects of scarcity
 date: 2024-12-09
 type: blog
 draft: false
-toc: true
+
 tags: []
 categories:
   - Cryptocurrency

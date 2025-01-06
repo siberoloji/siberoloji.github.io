@@ -15,10 +15,10 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords:
   - Root User in Linux
-excludeSearch: false
+
 
 
 featured_image: /images/programming2.webp

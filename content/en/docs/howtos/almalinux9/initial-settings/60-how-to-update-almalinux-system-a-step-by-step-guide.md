@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Update AlmaLinux
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 60
-toc: true
+
 keywords:
   - AlmaLinux
   - Update AlmaLinux
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: update-almalinux-system-step-step-guide

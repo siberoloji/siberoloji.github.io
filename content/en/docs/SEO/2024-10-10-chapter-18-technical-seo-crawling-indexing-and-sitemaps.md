@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Chapter 18: Technical SEO: Crawling, Indexing, and Sitemaps'
-date: '2024-10-10T22:08:53+03:00'
+title: "Chapter 18: Technical SEO: Crawling, Indexing, and Sitemaps"
+date: 2024-10-10T22:08:53+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-18-technical-seo-crawling-indexing-and-sitemaps/
- 
+url: /chapter-18-technical-seo-crawling-indexing-and-sitemaps/
 slim_seo:
-    - 'a:1:{s:11:"description";s:141:"With the help of technical SEO, focusing on crawling, indexing, and the importance of sitemaps in optimizing your website for search engines.";}'
+  - a:1:{s:11:"description";s:141:"With the help of technical SEO, focusing on crawling, indexing, and the importance of sitemaps in optimizing your website for search engines.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

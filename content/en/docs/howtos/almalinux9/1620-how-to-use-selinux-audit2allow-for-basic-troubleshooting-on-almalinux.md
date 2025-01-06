@@ -7,16 +7,16 @@ weight: 1620
 url: selinux-audit2allow-basic-troubleshooting-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - audit2allow
-   - SELinux
+  - AlmaLinux
+  - SELinux
+  - audit2allow
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
-   - AlmaLinux
-   - audit2allow
+  - AlmaLinux
+  - audit2allow
 featured_image: /images/almalinux.webp
 ---
 SELinux (Security-Enhanced Linux) is a critical part of modern Linux security, enforcing mandatory access control (MAC) policies to protect the system. However, SELinux’s strict enforcement can sometimes block legitimate operations, leading to permission denials that may hinder workflows. For such cases, **audit2allow** is a valuable tool to identify and resolve SELinux policy violations. This guide will take you through the basics of using audit2allow on AlmaLinux to address these issues effectively.

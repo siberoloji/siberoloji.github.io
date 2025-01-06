@@ -7,22 +7,19 @@ weight: 630
 url: how-to-use-docker-cli-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - docker cli
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - docker cli
+
+
 featured_image: /images/almalinux.webp
 ---
 Containers have revolutionized the way developers build, test, and deploy applications. Among container technologies, Docker remains a popular choice for its simplicity, flexibility, and powerful features. AlmaLinux, a community-driven distribution forked from CentOS, offers a stable environment for running Docker. If you're new to Docker CLI (Command-Line Interface) or AlmaLinux, this guide will walk you through the process of using Docker CLI effectively.

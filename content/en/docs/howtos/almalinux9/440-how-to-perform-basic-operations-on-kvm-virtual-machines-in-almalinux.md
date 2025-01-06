@@ -4,24 +4,21 @@ description: Learn how to manage KVM virtual machines on AlmaLinux. This guide c
 date: 2024-12-11
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
+  - Linux
+  - Linux How-to
 linkTitle: Basic KVM Operations
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 440
-toc: true
+
 keywords:
-   - AlmaLinux
-   - KVM
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - KVM
+
+
 featured_image: /images/almalinux.webp
 url: basic-kvm-virtual-machine-operations-almalinux
 ---

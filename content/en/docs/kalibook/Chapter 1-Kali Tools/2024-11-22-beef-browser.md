@@ -8,16 +8,16 @@ tags:
    - kali tools
 categories:
    - Kali linux
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 300
-toc: true
+
 keywords:
    - BeEF
-excludeSearch: false
+
 sidebar:
    open: true
 featured_image: /images/kalilinux2.webp

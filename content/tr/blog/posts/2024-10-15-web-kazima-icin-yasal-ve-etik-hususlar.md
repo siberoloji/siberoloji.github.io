@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Web Kazıma İçin Yasal ve Etik Hususlar'
-date: '2024-10-15T12:04:59+03:00'
+title: Web Kazıma İçin Yasal ve Etik Hususlar
+date: 2024-10-15T12:04:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/web-kazima-icin-yasal-ve-etik-hususlar/
+url: /tr/web-kazima-icin-yasal-ve-etik-hususlar/
 featured_image: /images/osint4.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

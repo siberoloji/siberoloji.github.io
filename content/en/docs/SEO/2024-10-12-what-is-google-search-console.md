@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'What is Google Search Console?'
-date: '2024-10-12T11:52:50+03:00'
+title: What is Google Search Console?
+date: 2024-10-12T11:52:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-google-search-console/
- 
+url: /what-is-google-search-console/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'google search console'
-    - 'search engine optimization'
-    - seo
+  - google search console
+  - seo
 ---
 
 

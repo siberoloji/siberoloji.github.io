@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 5: Keyword Research Basics'
-date: '2024-10-10T21:25:18+03:00'
+title: "Chapter 5: Keyword Research Basics"
+date: 2024-10-10T21:25:18+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-5-keyword-research-basics/
- 
+url: /chapter-5-keyword-research-basics/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -5,7 +5,7 @@ linkTitle: Session Initiation Protocol
 date: 2024-12-11
 type: blog
 draft: false
-toc: true
+
 tags:
   - RFC 3261
   - SIP

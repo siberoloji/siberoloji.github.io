@@ -5,17 +5,14 @@ linkTitle: Network Configuration with DHCP
 date: 2024-11-28
 type: blog
 draft: false
-toc: true
+
 tags:
-  - dhcp
   - AlmaLinux
+  - dhcp
 categories:
   - Linux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/almalinux.webp
-
-
 url: simplifying-network-configuration-dhcp-almalinux-9
 keywords:
   - DHCP on AlmaLinux

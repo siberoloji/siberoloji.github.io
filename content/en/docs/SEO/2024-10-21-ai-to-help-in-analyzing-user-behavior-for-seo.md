@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'AI to Help in Analyzing User Behavior for SEO'
-date: '2024-10-21T21:08:54+03:00'
+title: AI to Help in Analyzing User Behavior for SEO
+date: 2024-10-21T21:08:54+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This blog post explores how AI assists in analyzing user behavior patterns for SEO, focusing on key technologies like Natural Language Processing (NLP) and Machine Learning (ML).' 
- 
-url:  /ai-to-help-in-analyzing-user-behavior-for-seo/
+description: This blog post explores how AI assists in analyzing user behavior patterns for SEO, focusing on key technologies like Natural Language Processing (NLP) and Machine Learning (ML).
+url: /ai-to-help-in-analyzing-user-behavior-for-seo/
 featured_image: /images/artificialintelligence5.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - ai
-    - 'search engine optimization'
-    - seo
+  - ai
+  - seo
 ---
 
 

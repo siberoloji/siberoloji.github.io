@@ -10,18 +10,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: null
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 250
-toc: true
+
 keywords:
   - AlmaLinux
   - DNS Server
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: dns-server-install-almalinux

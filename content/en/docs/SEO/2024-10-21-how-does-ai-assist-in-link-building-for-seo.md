@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How Does AI Assist in Link Building for SEO?'
-date: '2024-10-21T21:26:30+03:00'
+title: How Does AI Assist in Link Building for SEO?
+date: 2024-10-21T21:26:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'the manual process of identifying, vetting, and acquiring high-quality backlinks can be time-consuming. This is where the transformative power of artificial intelligence comes into play for link building.' 
- 
-url:  /how-does-ai-assist-in-link-building-for-seo/
+description: the manual process of identifying, vetting, and acquiring high-quality backlinks can be time-consuming. This is where the transformative power of artificial intelligence comes into play for link building.
+url: /how-does-ai-assist-in-link-building-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

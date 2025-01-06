@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'What is Schema Markup: A Comprehensive Guide'
-date: '2024-10-12T11:35:23+03:00'
+title: "What is Schema Markup: A Comprehensive Guide"
+date: 2024-10-12T11:35:23+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-schema-markup-a-comprehensive-guide/
- 
+url: /what-is-schema-markup-a-comprehensive-guide/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'schema markup'
-    - 'search engine optimization'
-    - seo
+  - schema markup
+  - seo
 ---
 
 

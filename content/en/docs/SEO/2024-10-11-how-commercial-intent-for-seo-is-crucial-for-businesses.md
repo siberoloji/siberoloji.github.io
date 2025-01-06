@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'How Commercial Intent for SEO is Crucial for Businesses?'
-date: '2024-10-11T21:54:49+03:00'
+title: How Commercial Intent for SEO is Crucial for Businesses?
+date: 2024-10-11T21:54:49+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /how-commercial-intent-for-seo-is-crucial-for-businesses/
- 
+url: /how-commercial-intent-for-seo-is-crucial-for-businesses/
 slim_seo:
-    - 'a:1:{s:11:"description";s:129:"This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.";}'
+  - a:1:{s:11:"description";s:129:"This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

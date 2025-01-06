@@ -9,18 +9,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Firewalld, Ports, and Zones
-type: docs
-
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 20
-toc: true
+
 keywords:
   - AlmaLinux
   - firewalld
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-firewalld-ports-zones-almalinux

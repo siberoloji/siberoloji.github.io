@@ -4,7 +4,7 @@ linkTitle: NTP
 description: This article will dive deep into NTP, exploring its mechanisms, importance, and real-world applications.
 date: 2024-12-06
 draft: false
-toc: true
+
 keywords:
   - ntp
 tags:

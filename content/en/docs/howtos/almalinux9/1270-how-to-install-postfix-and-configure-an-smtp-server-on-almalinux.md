@@ -7,24 +7,21 @@ weight: 1270
 url: install-postfix-configure-smtp-server-almalinux
 draft: false
 tags:
-   - AlmaLinux
-   - postfix
-   - smtp
+  - AlmaLinux
+  - postfix
+  - smtp
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - postfix
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - postfix
+
+
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  

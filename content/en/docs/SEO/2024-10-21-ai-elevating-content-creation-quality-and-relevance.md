@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'AI: Elevating Content Creation Quality and Relevance'
-date: '2024-10-21T21:03:37+03:00'
+title: "AI: Elevating Content Creation Quality and Relevance"
+date: 2024-10-21T21:03:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This blog post will explore how AI is revolutionizing content creation, from keyword research to content optimization and personalization.' 
- 
-url:  /ai-elevating-content-creation-quality-and-relevance/
+description: This blog post will explore how AI is revolutionizing content creation, from keyword research to content optimization and personalization.
+url: /ai-elevating-content-creation-quality-and-relevance/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - ai
-    - 'search engine optimization'
-    - seo
+  - ai
+  - seo
 ---
 
 

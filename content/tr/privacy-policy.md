@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-type: docs
+
 description: "Our website address is: https://www.siberoloji.com. We are a bunch of bloggers trying to publish useful content and news on this website."
 date: 2025-01-04T16:23:41.710Z
 slug: privacy-policy

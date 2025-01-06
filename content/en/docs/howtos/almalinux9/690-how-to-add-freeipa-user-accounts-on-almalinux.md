@@ -7,21 +7,18 @@ weight: 690
 url: add-freeipa-user-accounts-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 User account management is a cornerstone of any secure IT infrastructure. With FreeIPA, an open-source identity and authentication solution, managing user accounts becomes a streamlined process. FreeIPA integrates components like LDAP, Kerberos, DNS, and Certificate Authority to centralize identity management. AlmaLinux, a robust and enterprise-ready Linux distribution, is an excellent platform for deploying and using FreeIPA.

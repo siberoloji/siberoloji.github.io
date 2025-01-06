@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 10: Mobile Optimization and SEO'
-date: '2024-10-10T21:49:32+03:00'
+title: "Chapter 10: Mobile Optimization and SEO"
+date: 2024-10-10T21:49:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-10-mobile-optimization-and-seo/
- 
+url: /chapter-10-mobile-optimization-and-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

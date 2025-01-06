@@ -3,7 +3,7 @@ title: Alice's Adventures
 type: page
 prev: docs/first-page
 next: docs/alice/alicewordpressadventures
-url: /alice/
+url: /tr/alice/
 weight: 3
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

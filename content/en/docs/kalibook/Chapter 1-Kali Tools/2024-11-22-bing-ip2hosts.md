@@ -8,15 +8,15 @@ tags:
    - kali tools
 categories:
    - Kali linux
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 340
-toc: true
+
 keywords: bing-ip2hosts
-excludeSearch: false
+
 sidebar:
    open: true
 featured_image: /images/kalilinux2.webp

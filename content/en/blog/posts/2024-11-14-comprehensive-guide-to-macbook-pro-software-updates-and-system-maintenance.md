@@ -12,9 +12,9 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords: ""
-excludeSearch: false
+
 
 
 featured_image: /images/macos2.webp

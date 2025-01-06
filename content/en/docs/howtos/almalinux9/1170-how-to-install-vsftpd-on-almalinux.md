@@ -7,23 +7,20 @@ weight: 1170
 url: install-vsftpd-almalinux-comprehensive-guide
 draft: false
 tags:
-   - AlmaLinux
-   - vsftpd
+  - AlmaLinux
+  - vsftpd
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - Install VSFTPD
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - Install VSFTPD
+
+
 featured_image: /images/almalinux.webp
 ---
 VSFTPD (Very Secure File Transfer Protocol Daemon) is a popular FTP server software renowned for its speed, stability, and security. AlmaLinux, a robust, community-driven distribution, is an ideal platform for hosting secure file transfer services. If you're looking to install and configure VSFTPD on AlmaLinux, this guide provides a step-by-step approach to set up and optimize it for secure and efficient file sharing.

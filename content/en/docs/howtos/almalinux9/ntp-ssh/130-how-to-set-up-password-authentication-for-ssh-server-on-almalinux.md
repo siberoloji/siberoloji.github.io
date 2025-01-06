@@ -9,18 +9,14 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Password Authentication for SSH Server
-type: docs
-prev: null
-next: null
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
+
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 130
-toc: true
+
 keywords:
   - AlmaLinux
   - password authentication
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: set-password-authentication-ssh-server-almalinux

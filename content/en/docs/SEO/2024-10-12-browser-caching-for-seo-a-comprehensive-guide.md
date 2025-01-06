@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Browser Caching for SEO: A Comprehensive Guide'
-date: '2024-10-12T15:46:12+03:00'
+title: "Browser Caching for SEO: A Comprehensive Guide"
+date: 2024-10-12T15:46:12+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /browser-caching-for-seo-a-comprehensive-guide/
- 
+url: /browser-caching-for-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

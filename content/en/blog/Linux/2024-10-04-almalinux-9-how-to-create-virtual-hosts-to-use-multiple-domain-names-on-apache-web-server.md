@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Create Virtual Hosts to Use Multiple Domain Names on Apache Web Server'
-date: '2024-10-04T18:30:49+03:00'
+title: "AlmaLinux 9: How to Create Virtual Hosts to Use Multiple Domain Names on Apache Web Server"
+date: 2024-10-04T18:30:49+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-apache-web-server/
- 
+url: /almalinux-9-how-to-create-virtual-hosts-to-use-multiple-domain-names-on-apache-web-server/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'how-to guides'
-    - 'linux how-to'
-    - 'virtual hosts'
+  - AlmaLinux
+  - how-to guides
+  - linux how-to
+  - virtual hosts
 ---
 
 

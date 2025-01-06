@@ -5,13 +5,12 @@ linkTitle: AlmaLinux
 date: 2024-11-15
 type: blog
 draft: false
-toc: true
+
 tags:
   - AlmaLinux
 categories:
   - Linux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/almalinux.webp
 url: exploring-alma-linux-enterprise-computing
 keywords:

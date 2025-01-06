@@ -1,22 +1,17 @@
 ---
 draft: false
-
-title:  'How to Drive More Organic (Unpaid) Traffic?'
-date: '2024-10-11T20:49:39+03:00'
+title: How to Drive More Organic (Unpaid) Traffic?
+date: 2024-10-11T20:49:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /how-to-drive-more-organic-unpaid-traffic/
- 
+url: /how-to-drive-more-organic-unpaid-traffic/
 slim_seo:
-    - 'a:1:{s:11:"description";s:104:"we’ll discuss practical SEO techniques that you can use to drive more organic traffic to your website.";}'
+  - a:1:{s:11:"description";s:104:"we’ll discuss practical SEO techniques that you can use to drive more organic traffic to your website.";}
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'organic traffic'
-    - 'search engine optimization'
-    - seo
+  - organic traffic
+  - seo
 ---
 
 

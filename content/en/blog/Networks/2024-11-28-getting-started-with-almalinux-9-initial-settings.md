@@ -5,16 +5,13 @@ linkTitle: AlmaLinux 9 Initial Settings
 date: 2024-11-28
 type: blog
 draft: false
-toc: true
+
 tags:
   - AlmaLinux
 categories:
   - Linux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/almalinux.webp
-
-
 keywords:
   - almalinux
 url: started-almalinux-9-initial-settings

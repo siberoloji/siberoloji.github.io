@@ -7,21 +7,18 @@ weight: 1060
 url: install-postgresql-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 PostgreSQL, often referred to as Postgres, is a powerful, open-source, object-relational database management system (RDBMS) widely used for modern web applications. Its robust feature set, scalability, and adherence to SQL standards make it a top choice for developers and businesses.

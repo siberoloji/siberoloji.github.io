@@ -5,7 +5,7 @@ linkTitle: What is Postfix?
 date: 2024-12-19
 type: blog
 draft: false
-toc: true
+
 tags:
   - postfix
 categories:

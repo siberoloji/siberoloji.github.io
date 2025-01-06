@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Activate and Use the Admin Console Cockpit'
-date: '2024-10-04T17:25:34+03:00'
+title: "AlmaLinux 9: How to Activate and Use the Admin Console Cockpit"
+date: 2024-10-04T17:25:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-activate-and-use-the-admin-console-cockpit/
- 
+url: /almalinux-9-how-to-activate-and-use-the-admin-console-cockpit/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - cockpit
-    - 'how-to guides'
-    - 'linux how-to'
+  - AlmaLinux
+  - cockpit
+  - how-to guides
+  - linux how-to
 ---
 
 

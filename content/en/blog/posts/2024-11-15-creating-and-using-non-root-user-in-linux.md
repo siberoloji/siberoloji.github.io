@@ -10,7 +10,7 @@ categories:
   - Linux
 linkTitle: Using Non-Root User
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-toc: true
+
 keywords:
   - Non-root user
 featured_image: /images/programming2.webp

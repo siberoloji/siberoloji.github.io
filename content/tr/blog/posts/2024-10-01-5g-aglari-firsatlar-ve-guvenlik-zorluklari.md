@@ -1,16 +1,12 @@
 ---
 draft: false
-
-title:  '5G Ağları: Fırsatlar ve Güvenlik Zorlukları'
-date: '2024-10-01T20:58:50+03:00'
+title: "5G Ağları: Fırsatlar ve Güvenlik Zorlukları"
+date: 2024-10-01T20:58:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/5g-aglari-firsatlar-ve-guvenlik-zorluklari/
- 
+url: /tr/5g-aglari-firsatlar-ve-guvenlik-zorluklari/
 featured_image: /images/cybersecurity.webp
 categories:
-    - 'Siber Güvenlik'
+    - Siber Güvenlik
 tags:
     - 5g
 ---

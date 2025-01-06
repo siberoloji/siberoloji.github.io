@@ -15,9 +15,9 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords: ""
-excludeSearch: false
+
 
 
 url: creating-bootable-usb-windows-linux-macos

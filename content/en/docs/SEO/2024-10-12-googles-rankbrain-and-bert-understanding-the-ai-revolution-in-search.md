@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Google'
+title: Google
 s RankBrain and BERT: Understanding the AI Revolution in Search'
-date: '2024-10-12T20:33:14+03:00'
+date: 2024-10-12T20:33:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /googles-rankbrain-and-bert-understanding-the-ai-revolution-in-search/
- 
+url: /googles-rankbrain-and-bert-understanding-the-ai-revolution-in-search/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

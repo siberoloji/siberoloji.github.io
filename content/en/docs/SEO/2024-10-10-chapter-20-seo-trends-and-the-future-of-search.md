@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'Chapter 20: SEO Trends and the Future of Search'
-date: '2024-10-10T22:15:59+03:00'
+title: "Chapter 20: SEO Trends and the Future of Search"
+date: 2024-10-10T22:15:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-20-seo-trends-and-the-future-of-search/
- 
+url: /chapter-20-seo-trends-and-the-future-of-search/
 slim_seo:
-    - 'a:1:{s:11:"description";s:110:"we will explore the key SEO trends that are emerging and how these trends will influence the future of search.";}'
+  - a:1:{s:11:"description";s:110:"we will explore the key SEO trends that are emerging and how these trends will influence the future of search.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

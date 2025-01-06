@@ -7,21 +7,18 @@ weight: 1010
 url: cgi-scripts-nginx-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 CGI (Common Gateway Interface) scripts are one of the earliest and simplest ways to generate dynamic content on a web server. They allow a server to execute scripts (written in languages like Python, Perl, or Bash) and send the output to a user's browser. Although CGI scripts are less common in modern development due to alternatives like PHP, FastCGI, and application frameworks, they remain useful for specific use cases such as small-scale web tools or legacy systems.

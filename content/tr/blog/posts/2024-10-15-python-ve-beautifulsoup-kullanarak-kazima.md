@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Python ve BeautifulSoup Kullanarak Kazıma'
-date: '2024-10-15T12:07:37+03:00'
+title: Python ve BeautifulSoup Kullanarak Kazıma
+date: 2024-10-15T12:07:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/python-ve-beautifulsoup-kullanarak-kazima/
+url: /tr/python-ve-beautifulsoup-kullanarak-kazima/
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

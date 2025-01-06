@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Engaging with Your Audience: A Cornerstone of SEO Success'
-date: '2024-10-12T19:30:58+03:00'
+title: "Engaging with Your Audience: A Cornerstone of SEO Success"
+date: 2024-10-12T19:30:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /engaging-with-your-audience-a-cornerstone-of-seo-success/
- 
+url: /engaging-with-your-audience-a-cornerstone-of-seo-success/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'Engaging with Your Audience'
-    - 'search engine optimization'
-    - seo
+  - Engaging with Your Audience
+  - seo
 ---
 
 

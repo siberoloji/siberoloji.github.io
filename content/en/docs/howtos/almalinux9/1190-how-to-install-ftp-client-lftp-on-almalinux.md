@@ -7,22 +7,19 @@ weight: 1190
 url: install-ftp-client-lftp-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-   - lftp
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+  - lftp
+
+
 featured_image: /images/almalinux.webp
 ---
 LFTP is a robust and versatile FTP client widely used for transferring files between systems. It supports a range of protocols, including FTP, HTTP, and SFTP, while offering advanced features such as mirroring, scripting, and queuing. AlmaLinux, a secure and reliable operating system, is an excellent platform for LFTP. This guide will walk you through the installation, configuration, and usage of LFTP on AlmaLinux.

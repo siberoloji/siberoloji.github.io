@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'AlmaLinux: How to Configure mod_http2 &#8211; A Comprehensive Guide'
-date: '2024-11-02T13:19:53+03:00'
+title: "AlmaLinux: How to Configure mod_http2 &#8211; A Comprehensive Guide"
+date: 2024-11-02T13:19:53+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'In this guide, we''ll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server''s performance and efficiency.' 
- 
-url:  /almalinux-how-to-configure-mod_http2-a-comprehensive-guide/
+description: In this guide, we'll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server's performance and efficiency.
+url: /almalinux-how-to-configure-mod_http2-a-comprehensive-guide/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
+  - AlmaLinux
 ---
 
 HTTP/2 represents a significant evolution in the HTTP protocol, offering improved performance through features like multiplexing, header compression, and server push. In this guide, we'll walk through the process of configuring mod_http2 on AlmaLinux, helping you optimize your web server's performance and efficiency.

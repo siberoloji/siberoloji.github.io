@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How will AI impact SEO strategies in the next few years'
-date: '2024-10-21T19:39:26+03:00'
+title: How will AI impact SEO strategies in the next few years
+date: 2024-10-21T19:39:26+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Here are the key ways "How will AI impact SEO strategies":' 
- 
-url:  /how-will-ai-impact-seo-strategies-in-the-next-few-years/
+description: 'Here are the key ways "How will AI impact SEO strategies":'
+url: /how-will-ai-impact-seo-strategies-in-the-next-few-years/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

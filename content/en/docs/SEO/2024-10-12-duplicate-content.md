@@ -1,22 +1,17 @@
 ---
 draft: false
-
-title:  'Duplicate Content'
-date: '2024-10-12T01:28:44+03:00'
+title: Duplicate Content
+date: 2024-10-12T01:28:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /duplicate-content/
- 
+url: /duplicate-content/
 slim_seo:
-    - 'a:1:{s:11:"description";s:135:"we''ll explore the importance of duplicate content for SEO, its potential consequences, and strategies to mitigate its negative effects.";}'
+  - a:1:{s:11:"description";s:135:"we'll explore the importance of duplicate content for SEO, its potential consequences, and strategies to mitigate its negative effects.";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'duplicate content'
-    - 'search engine optimization'
-    - seo
+  - duplicate content
+  - seo
 ---
 
 

@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Twitter Veri Toplama İçin Açık Kaynaklı Araçlar'
-date: '2024-10-15T12:24:27+03:00'
+title: Twitter Veri Toplama İçin Açık Kaynaklı Araçlar
+date: 2024-10-15T12:24:27+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
+url: /tr/twitter-veri-toplama-icin-acik-kaynakli-araclar/
 featured_image: /images/osint3.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

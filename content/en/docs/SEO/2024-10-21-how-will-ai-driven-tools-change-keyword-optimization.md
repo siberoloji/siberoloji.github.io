@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How Will AI-Driven Tools Change Keyword Optimization?'
-date: '2024-10-21T20:22:20+03:00'
+title: How Will AI-Driven Tools Change Keyword Optimization?
+date: 2024-10-21T20:22:20+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'One of the key areas where AI-driven tools will have a significant impact is in the realm of keyword research and optimization.' 
- 
-url:  /how-will-ai-driven-tools-change-keyword-optimization/
+description: One of the key areas where AI-driven tools will have a significant impact is in the realm of keyword research and optimization.
+url: /how-will-ai-driven-tools-change-keyword-optimization/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Click-Through Rate (CTR): A Comprehensive Guide'
-date: '2024-10-12T20:34:44+03:00'
+title: "Click-Through Rate (CTR): A Comprehensive Guide"
+date: 2024-10-12T20:34:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /click-through-rate-ctr-a-comprehensive-guide/
- 
+url: /click-through-rate-ctr-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

@@ -4,31 +4,24 @@ description: Learn how to add, remove, and modify users on AlmaLinux. Detailed e
 date: 2024-11-29
 draft: false
 tags:
-  - adduser
   - AlmaLinux
+  - adduser
   - chmod
 categories:
   - Linux
   - Linux How-to
 linkTitle: Manage Users
-type: docs
+
 prev: /docs/howtos/almalinux9/
 next: null
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 10
-toc: true
+
 keywords:
   - Manage Users
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 url: manage-users-almalinux-add-remove-modify
----
----
-Managing user accounts is a fundamental task for system administrators. AlmaLinux, a popular and stable community-driven Linux distribution, offers robust tools to create, modify, and remove users and assign permissions. In this guide, we will provide detailed instructions on managing user operations on AlmaLinux with examples for clarity.
-
 ---
 
 ### **1. Understanding User Management in AlmaLinux**

@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Single vs Multiple Categories in WordPress for SEO Performance?'
-date: '2024-10-23T21:52:25+03:00'
+title: Single vs Multiple Categories in WordPress for SEO Performance?
+date: 2024-10-23T21:52:25+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Let''s examine both approaches for categories in WordPress and their pros and cons from SEO and performance perspectives.' 
- 
-url:  /single-vs-multiple-categories-in-wordpress-for-seo-performance/
- 
+description: Let's examine both approaches for categories in WordPress and their pros and cons from SEO and performance perspectives.
+url: /single-vs-multiple-categories-in-wordpress-for-seo-performance/
 featured_image: /images/wordpress.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - wordpress
+  - seo
+  - wordpress
 ---
 
 

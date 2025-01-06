@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Chapter 11: Page Load Speed and Its Impact on SEO'
-date: '2024-10-10T21:52:06+03:00'
+title: "Chapter 11: Page Load Speed and Its Impact on SEO"
+date: 2024-10-10T21:52:06+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /chapter-11-page-load-speed-and-its-impact-on-seo/
- 
+url: /chapter-11-page-load-speed-and-its-impact-on-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

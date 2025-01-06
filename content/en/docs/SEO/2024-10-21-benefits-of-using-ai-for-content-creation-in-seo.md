@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Benefits of Using AI for Content Creation in SEO'
-date: '2024-10-21T19:46:34+03:00'
+title: Benefits of Using AI for Content Creation in SEO
+date: 2024-10-21T19:46:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Using AI for content creation in SEO offers numerous benefits that enhance efficiency, quality, and effectiveness. Here are the key advantages:' 
- 
-url:  /benefits-of-using-ai-for-content-creation-in-seo/
+description: "Using AI for content creation in SEO offers numerous benefits that enhance efficiency, quality, and effectiveness. Here are the key advantages:"
+url: /benefits-of-using-ai-for-content-creation-in-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - ai
-    - 'search engine optimization'
-    - seo
+  - ai
+  - seo
 ---
 
 

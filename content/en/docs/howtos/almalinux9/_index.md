@@ -3,9 +3,9 @@ title: AlmaLinux 9
 date: 2017-01-05
 description: AlmaLinux 9 Documentation and How-Tos for System Administrators and Developers alike.
 categories:
-    - AlmaLinux
+  - AlmaLinux
 tags:
-    - almalinux
+  - AlmaLinux
 simple_list: true
 url: almalinux-9-howtos
 ---

@@ -9,16 +9,16 @@ tags:
   - assetfinder
 categories:
   - Kali linux
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 230
-toc: true
+
 keywords:
   - assetfinder
-excludeSearch: false
+
 
 
 featured_image: /images/kalilinux2.webp

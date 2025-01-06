@@ -5,7 +5,7 @@ linkTitle: difference between a coin and a token
 date: 2024-12-09
 type: blog
 draft: false
-toc: true
+
 tags:
    - coin
    - cryptocurrency

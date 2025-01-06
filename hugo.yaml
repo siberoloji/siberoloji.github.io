@@ -85,18 +85,20 @@ outputs:
 services:
   googleAnalytics:
     id: G-Y78HNW88W6
+  disqus:
+    shortname: siberoloji.github.io  
 
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
-    taxonomyCloud: [tags, categories]
-
+    # taxonomyCloud: [tags, categories]
+    taxonomyCloud: [categories]
     # If used, must have same length as taxonomyCloud
-    taxonomyCloudTitle: [Tag Cloud, Categories]
-
+    # taxonomyCloudTitle: [Tag Cloud, Categories]
+    taxonomyCloudTitle: [Categories]
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
     taxonomyPageHeader: [tags, categories]
-
+    
   privacy_policy: https://www.siberoloji.com/privacy-policy/
 
   # First one is picked as the Twitter card image if not set on page.

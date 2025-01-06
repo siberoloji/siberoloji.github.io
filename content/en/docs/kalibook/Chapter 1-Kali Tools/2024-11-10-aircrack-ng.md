@@ -11,14 +11,14 @@ tags:
    - aircrack-ng
 categories:
    - Kali Linux
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 80
-toc: true
+
 keywords:
    - aircrack-ng
-excludeSearch: false
+
 sidebar:
    open: "true"
 linkTitle: aircrack-ng

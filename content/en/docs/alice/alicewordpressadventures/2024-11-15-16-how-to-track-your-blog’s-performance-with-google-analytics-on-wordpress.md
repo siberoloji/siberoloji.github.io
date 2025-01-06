@@ -9,16 +9,16 @@ tags:
 categories:
   - TechLife
   - WordPress
-type: docs
+
 
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 160
-toc: true
+
 keywords:
   - Google Analytics on WordPress
-excludeSearch: false
+
 
 
 featured_image: /images/alice-interview.webp

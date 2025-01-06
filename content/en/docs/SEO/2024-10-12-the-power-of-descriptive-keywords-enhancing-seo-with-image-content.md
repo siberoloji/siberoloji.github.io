@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'The Power of Descriptive Keywords: Enhancing SEO with Image Content'
-date: '2024-10-12T15:22:32+03:00'
+title: "The Power of Descriptive Keywords: Enhancing SEO with Image Content"
+date: 2024-10-12T15:22:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-power-of-descriptive-keywords-enhancing-seo-with-image-content/
- 
+url: /the-power-of-descriptive-keywords-enhancing-seo-with-image-content/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

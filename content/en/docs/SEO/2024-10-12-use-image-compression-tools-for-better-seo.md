@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Use Image Compression Tools for better SEO'
-date: '2024-10-12T15:24:18+03:00'
+title: Use Image Compression Tools for better SEO
+date: 2024-10-12T15:24:18+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /use-image-compression-tools-for-better-seo/
- 
+url: /use-image-compression-tools-for-better-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'image compression tools'
-    - 'search engine optimization'
-    - seo
+  - image compression tools
+  - seo
 ---
 
 

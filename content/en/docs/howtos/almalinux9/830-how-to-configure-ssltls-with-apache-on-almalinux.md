@@ -7,21 +7,18 @@ weight: 830
 url: configure-ssl-tls-apache-almalinux
 draft: false
 tags:
-   - AlmaLinux
+  - AlmaLinux
 categories:
-   - Linux
-   - Linux How-to
-type: docs
-prev: null
-next: null
+  - Linux
+  - Linux How-to
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
-   - AlmaLinux
-excludeSearch: false
-sidebar:
-   open: true
+  - AlmaLinux
+
+
 featured_image: /images/almalinux.webp
 ---
 In today’s digital landscape, securing web traffic is a top priority for website administrators and developers. Configuring **SSL/TLS** (Secure Sockets Layer/Transport Layer Security) on your Apache web server not only encrypts communication between your server and clients but also builds trust by displaying the "HTTPS" padlock icon in web browsers. AlmaLinux, a reliable and enterprise-grade Linux distribution, pairs seamlessly with Apache and SSL/TLS to offer a secure and efficient web hosting environment.

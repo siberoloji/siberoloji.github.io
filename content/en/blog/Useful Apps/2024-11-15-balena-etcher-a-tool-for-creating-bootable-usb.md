@@ -14,10 +14,10 @@ type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
-toc: true
+
 keywords:
   - Balena Etcher
-excludeSearch: false
+
 
 
 url: balena-etcher-tool-creating-bootable-usb

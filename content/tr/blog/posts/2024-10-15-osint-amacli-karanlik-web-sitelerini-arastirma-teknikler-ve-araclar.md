@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'OSINT Amaçlı Karanlık Web Sitelerini Araştırma: Teknikler ve Araçlar'
-date: '2024-10-15T11:53:58+03:00'
+title: "OSINT Amaçlı Karanlık Web Sitelerini Araştırma: Teknikler ve Araçlar"
+date: 2024-10-15T11:53:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/osint-amacli-karanlik-web-sitelerini-arastirma-teknikler-ve-araclar/
+url: /tr/osint-amacli-karanlik-web-sitelerini-arastirma-teknikler-ve-araclar/
 featured_image: /images/osint3.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

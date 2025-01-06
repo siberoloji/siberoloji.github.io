@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Why Asking for Reviews is Important for SEO?'
-date: '2024-10-12T15:11:11+03:00'
+title: Why Asking for Reviews is Important for SEO?
+date: 2024-10-12T15:11:11+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /why-asking-for-reviews-is-important-for-seo/
- 
+url: /why-asking-for-reviews-is-important-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'asking for review'
-    - 'search engine optimization'
-    - seo
+  - asking for review
+  - seo
 ---
 
 

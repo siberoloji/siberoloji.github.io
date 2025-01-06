@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'AlmaLinux 9: How to Install Apache httpd to Configure a Web Server'
-date: '2024-10-04T18:25:45+03:00'
+title: "AlmaLinux 9: How to Install Apache httpd to Configure a Web Server"
+date: 2024-10-04T18:25:45+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /almalinux-9-how-to-install-apache-httpd-to-configure-a-web-server/
- 
+url: /almalinux-9-how-to-install-apache-httpd-to-configure-a-web-server/
 featured_image: /images/apache-web-server.webp
 categories:
-    - 'Linux How-to'
+  - Linux How-to
 tags:
-    - 'alma linux'
-    - 'apache web server'
-    - 'how-to guides'
-    - 'linux how-to'
+  - AlmaLinux
+  - apache web server
+  - how-to guides
+  - linux how-to
 ---
 
 

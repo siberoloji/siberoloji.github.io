@@ -8,22 +8,18 @@ url: install-mail-log-report-pflogsumm-almalinux
 draft: false
 tags:
   - AlmaLinux
-  - mail
   - log
+  - mail
 categories:
   - Linux
   - Linux How-to
-type: docs
-prev: null
-next: null
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
   - AlmaLinux
   - pflogsumm
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 ---

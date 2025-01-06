@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Using Natural Language for Better SEO'
-date: '2024-10-12T15:36:08+03:00'
+title: Using Natural Language for Better SEO
+date: 2024-10-12T15:36:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /using-natural-language-for-better-seo/
- 
+url: /using-natural-language-for-better-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

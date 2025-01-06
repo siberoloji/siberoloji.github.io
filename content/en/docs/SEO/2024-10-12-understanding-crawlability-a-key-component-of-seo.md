@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Understanding Crawlability: A Key Component of SEO'
-date: '2024-10-12T20:45:43+03:00'
+title: "Understanding Crawlability: A Key Component of SEO"
+date: 2024-10-12T20:45:43+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /understanding-crawlability-a-key-component-of-seo/
- 
+url: /understanding-crawlability-a-key-component-of-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

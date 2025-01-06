@@ -11,17 +11,13 @@ tags:
 categories:
   - Linux
   - Linux How-to
-type: docs
-prev: null
-next: null
+
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-toc: true
 keywords:
   - AlmaLinux
   - FreeIPA Web Admin Console
-excludeSearch: false
-
 
 featured_image: /images/almalinux.webp
 ---

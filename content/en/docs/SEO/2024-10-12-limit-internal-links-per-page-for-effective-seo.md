@@ -1,19 +1,14 @@
 ---
 draft: false
-
-title:  'Limit Internal Links Per Page for Effective SEO'
-date: '2024-10-12T16:01:03+03:00'
+title: Limit Internal Links Per Page for Effective SEO
+date: 2024-10-12T16:01:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /limit-internal-links-per-page-for-effective-seo/
- 
+url: /limit-internal-links-per-page-for-effective-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

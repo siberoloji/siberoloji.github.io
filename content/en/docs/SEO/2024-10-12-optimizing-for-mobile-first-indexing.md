@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Optimizing for Mobile-First Indexing'
-date: '2024-10-12T01:09:39+03:00'
+title: Optimizing for Mobile-First Indexing
+date: 2024-10-12T01:09:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /optimizing-for-mobile-first-indexing/ 
+url: /optimizing-for-mobile-first-indexing/
 slim_seo:
-    - 'a:1:{s:11:"description";s:112:"what exactly is mobile-first indexing? This blog post will delve into the details, explore what it means for SEO";}'
+  - a:1:{s:11:"description";s:112:"what exactly is mobile-first indexing? This blog post will delve into the details, explore what it means for SEO";}
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

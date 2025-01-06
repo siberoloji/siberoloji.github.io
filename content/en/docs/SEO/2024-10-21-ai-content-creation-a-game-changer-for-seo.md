@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'AI Content Creation: A Game-Changer for SEO'
-date: '2024-10-21T20:25:22+03:00'
+title: "AI Content Creation: A Game-Changer for SEO"
+date: 2024-10-21T20:25:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This blog post will delve into the benefits of using AI content creation, exploring how it can enhance your SEO efforts and drive organic traffic.' 
- 
-url:  /ai-content-creation-a-game-changer-for-seo/
+description: This blog post will delve into the benefits of using AI content creation, exploring how it can enhance your SEO efforts and drive organic traffic.
+url: /ai-content-creation-a-game-changer-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
-    - seo
+  - seo
 ---
 
 

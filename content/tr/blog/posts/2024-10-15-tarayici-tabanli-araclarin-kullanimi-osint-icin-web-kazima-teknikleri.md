@@ -1,20 +1,17 @@
 ---
 draft: false
-
-title:  'Tarayıcı Tabanlı Araçların Kullanımı: OSINT için Web Kazıma Teknikleri'
-date: '2024-10-15T11:57:37+03:00'
+title: "Tarayıcı Tabanlı Araçların Kullanımı: OSINT için Web Kazıma Teknikleri"
+date: 2024-10-15T11:57:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
+url: /tr/tarayici-tabanli-araclarin-kullanimi-osint-icin-web-kazima-teknikleri/
 featured_image: /images/osint2.webp
 categories:
-    - 'Açık Kaynak İstihbaratı (AKİ)'
+  - Açık Kaynak İstihbaratı (AKİ)
 tags:
-    - aki
-    - 'cyber security'
-    - osint
-    - 'siber güvenlik'
+  - aki
+  - cybersecurity
+  - osint
+  - siber güvenlik
 ---
 
 

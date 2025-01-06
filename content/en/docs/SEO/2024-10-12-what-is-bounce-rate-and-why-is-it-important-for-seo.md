@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'What is Bounce Rate and Why is it Important for SEO?'
-date: '2024-10-12T11:49:22+03:00'
+title: What is Bounce Rate and Why is it Important for SEO?
+date: 2024-10-12T11:49:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /what-is-bounce-rate-and-why-is-it-important-for-seo/
- 
+url: /what-is-bounce-rate-and-why-is-it-important-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-    - 'Search Engine Optimisation'
+  - Search Engine Optimisation
 tags:
-    - 'bounce rate'
-    - 'search engine optimization'
-    - seo
+  - bounce rate
+  - seo
 ---
 
 

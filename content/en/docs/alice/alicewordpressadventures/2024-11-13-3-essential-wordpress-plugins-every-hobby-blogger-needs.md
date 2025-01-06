@@ -5,14 +5,14 @@ description: This guide will walk Alice and other hobby bloggers through the ess
 date: 2024-11-13
 weight: 30
 draft: false
-toc: true
+
 tags:
   - blog publishing
   - wordpress plugins
 categories:
   - TechLife
   - Wordpress
-type: docs
+
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/alice-in-front-of-computer.webp

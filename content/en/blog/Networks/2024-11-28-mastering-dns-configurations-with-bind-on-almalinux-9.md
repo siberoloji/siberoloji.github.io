@@ -5,17 +5,14 @@ linkTitle: DNS Configurations with BIND
 date: 2024-11-28
 type: blog
 draft: false
-toc: true
+
 tags:
-  - bind dns server
   - AlmaLinux
+  - bind dns server
 categories:
   - Linux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/almalinux.webp
-
-
 url: mastering-dns-configurations-bind-almalinux-9
 ---
 #### **Introduction**

@@ -6,13 +6,12 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 20
 url: /chapter-2-why-seo-matters-for-your-website/
 slim_seo:
-    - a:1:{s:11:"description";s:121:"we'll explore why SEO matters are so important for your website and how it can significantly impact your online presence.";}
+  - a:1:{s:11:"description";s:121:"we'll explore why SEO matters are so important for your website and how it can significantly impact your online presence.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-    - Search Engine Optimisation
+  - Search Engine Optimisation
 tags:
-    - search engine optimization
-    - seo
+  - seo
 ---
 
 
