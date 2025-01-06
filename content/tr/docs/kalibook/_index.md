@@ -1,12 +1,9 @@
 ---
-title: Kali Book
-type: page
-prev: docs/first-page
-next: docs/kalibook/chapter-1-kali-tools/
+title: Kali Linux Kitabı
 url: /tr/kali-book/
 weight: 2
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+simple_list: true
 ---
 
 > This Document is actively being developed as a part of ongoing Kali Linux learning efforts. Chapters will be added periodically.

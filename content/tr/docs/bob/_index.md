@@ -1,17 +1,14 @@
 ---
-title: Bob's Adventures
-type: page
-prev: docs/first-page
-next: docs/bob/bobsalmalinuxadventures
+title: Bob'un Maceraları
 url: /tr/bob/
 weight: 4
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+simple_list: true
 ---
 
-**Meet Bob, the Linux Guy**
+**Linux'a yeni başlayan Bob ile Tanışın**
 <img src="/images/bobs-adventures-with-alma-linux.png" width="400" height="200"> 
 
-Bob is a freshly minted Junior System Administrator, and like many new sysadmins, he’s both excited and a little overwhelmed by his new responsibilities. As he digs into his role, he quickly learns that mastering Linux is at the core of becoming a true pro. There’s just one small hitch—Linux is massive, and choosing where to start feels like staring into an endless sea of terminal commands and system quirks.
+Bob yeni atanmış bir Junior Sistem Yöneticisi ve birçok yeni sistem yöneticisi gibi, yeni sorumlulukları onu hem heyecanlandırıyor hem de biraz bunaltıyor. Rolünü derinlemesine inceledikçe, Linux'ta ustalaşmanın gerçek bir profesyonel olmanın özü olduğunu hemen öğreniyor. Tek bir küçük engel var: Linux devasa ve nereden başlayacağınızı seçmek, uçsuz bucaksız bir terminal komutları ve sistem tuhaflıkları denizine bakmak gibi hissettiriyor.
 
-But Bob is determined! After some research, he’s decided to dive into Linux. However, as a beginner, Bob knows he has a steep learning curve ahead.
+Ama Bob kararlı! Biraz araştırma yaptıktan sonra Linux'a dalmaya karar verdi. Ancak, Bob yeni başlayan biri olarak önünde dik bir öğrenme eğrisi olduğunu biliyor.

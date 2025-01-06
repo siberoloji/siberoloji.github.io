@@ -82,6 +82,11 @@
           "title": "simple_list",
           "name": "simple_list",
           "type": "boolean"
+        },
+        {
+          "title": "translation_key",
+          "name": "translation_key",
+          "type": "string"
         }
       ]
     }

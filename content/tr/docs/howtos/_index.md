@@ -1,11 +1,9 @@
 ---
-title: How-to Documents
-type: page
-slug: howto-documents
+title: Nasıl Yapılır Belgeleri
 simple_list: true
 url: /tr/howtos/
 ---
 
-> This Document is actively being developed as a part of ongoing Linux learning efforts. Chapters will be added periodically.
+> Bu Belge, devam eden Linux öğrenme çabalarının bir parçası olarak aktif olarak geliştirilmektedir. Bölümler periyodik olarak eklenecektir.
 
-## Explore
+## Keşfedin

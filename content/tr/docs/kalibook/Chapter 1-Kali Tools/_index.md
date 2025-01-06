@@ -1,20 +1,16 @@
 ---
-title: Chapter 1 Kali Tools
-prev: /docs/kalibook
-next: /docs/kalibook/chapter-1-kali-tools/0trace
+title: Bölüm 1 Kali Komut ve Araçları
 url: /tr/chapter-1-kali-tools/
 weight: 1
-
-
-description: This post contains the full list of Kali Linux Tools. After the relevant tool explanation page is prepared, new lines will be added.
+description: Bu gönderi Kali Linux Araçlarının tam listesini içerir. İlgili araç açıklama sayfası hazırlandıktan sonra yeni satırlar eklenecektir.
 categories:
   - Kali Linux
 draft: false
-linkTitle: Chapter 1 Kali Tools
+linkTitle: Bölüm 1 Kali Araçları
 simple_list: true
 ---
 
-This post contains the full list of Kali Linux Tools. After the relevant tool explanation page is prepared, new lines will be added. This list can be used as an index.
+Bu gönderi Kali Linux Araçlarının tam listesini içerir. İlgili araç açıklama sayfası hazırlandıktan sonra yeni satırlar eklenecektir. Bu liste bir dizin olarak kullanılabilir.
 
-## Information Gathering
+## Bilgi Toplama Araçları
 

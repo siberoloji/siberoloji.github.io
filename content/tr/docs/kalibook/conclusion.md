@@ -1,6 +1,6 @@
 ---
-title: Conclusion of Kali Book
-description: This is the Conclusion page of Kali Book
+title: Kali Linux Kitabı Son Kısım
+description: Bu sayfa son kısım sayfasıdır.
 date: 2024-11-10
 draft: false
 tags:
@@ -13,7 +13,7 @@ keywords:
     - kali book
 url: /tr/kali-book-conclusion/
 featured_image: /images/kali-linux.webp
-linkTitle: Conclusion of Kali Book
+linkTitle: Son Kısım
 ---
 
-This is the conclusion page of Our Kali Book.
+Bu sayfa Kali Linux Kitabının son kısım sayfasıdır.

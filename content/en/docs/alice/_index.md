@@ -1,12 +1,9 @@
 ---
 title: Alice's Adventures
-type: page
-prev: docs/first-page
-next: docs/alice/alicewordpressadventures
 url: /alice/
 weight: 3
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+simple_list: true
 ---
 
 **Meet Alice, the Blogger Girl**

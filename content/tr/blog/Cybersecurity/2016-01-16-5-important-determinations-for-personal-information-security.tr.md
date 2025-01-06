@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Kişisel Bilgi Güvenliği İçin 5 Önemli Tespit'
-date: '2016-01-16T13:49:00+03:00'
+title: Kişisel Bilgi Güvenliği İçin 5 Önemli Tespit
+date: 2016-01-16T13:49:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Siber saldırı ve kişisel bilgi güvenliği ihlalleri ile ilgili haberlere rastladığımızda artık şaşırmıyoruz. O kadar sıradan hale gelmeye başladılar ki, okumuyor bile olabilirsiniz. Unutmayın ki, duyduğunuz veya gördüğünüz haberlerde, bir gün siz de yer alabilirsiniz. Kişisel bilgilerinizin internette satıldığını haber alırsanız şaşırmayın.' 
- 
-url:  /tr/kisisel-bilgi-guvenligi-icin-5-onemli-tespit/
- 
+description: Siber saldırı ve kişisel bilgi güvenliği ihlalleri ile ilgili haberlere rastladığımızda artık şaşırmıyoruz. O kadar sıradan hale gelmeye başladılar ki, okumuyor bile olabilirsiniz. Unutmayın ki, duyduğunuz veya gördüğünüz haberlerde, bir gün siz de yer alabilirsiniz. Kişisel bilgilerinizin internette satıldığını haber alırsanız şaşırmayın.
+url: /tr/kisisel-bilgi-guvenligi-icin-5-onemli-tespit/
 featured_image: /images/cyber6.jpg
 categories:
-    - 'Siber Güvenlik'
+    - Siber Güvenlik
 tags:
-    - 'bilgi güvenliği'
+    - bilgi güvenliği
 ---
 
 

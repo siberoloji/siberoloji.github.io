@@ -1,16 +1,11 @@
 ---
-title: Alice's Wordpress Adventures
-type: page
-prev: docs/alice
-next: docs/alice/alicewordpressadventures/2024-11-11-if-alice-wants-to-write-blog-posts
+title: Alice'in Wordpress Maceraları
 url: /tr/alice-wordpress/
 weight: 1
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+simple_list: true
 ---
 
-## Motivation
+## Motivasyon
 
-Alice is determined! After some research, she’s decided to dive into Wordpress.
+Alice kararlı! Biraz araştırma yaptıktan sonra WordPress'e dalmaya karar verdi.

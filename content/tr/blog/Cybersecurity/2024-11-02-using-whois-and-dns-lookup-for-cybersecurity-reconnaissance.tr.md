@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Siber Güvenlik Keşif için WHOIS ve DNS Aramasını Kullanma'
-date: '2024-11-02T21:57:31+03:00'
+title: Siber Güvenlik Keşif için WHOIS ve DNS Aramasını Kullanma
+date: 2024-11-02T21:57:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir.' 
- 
-url:  /tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/
- 
+description: Alan araştırması ve analizi, siber güvenlik keşifinin temel yönleridir. Bir güvenlik uzmanının cephaneliğindeki en değerli araçlardan ikisi WHOIS ve DNS arama hizmetleridir.
+url: /tr/siber-guvenlik-kesif-icin-whois-ve-dns-aramasini-kullanma/
 featured_image: /images/cybersecurityillustration1.webp
 categories:
-    - 'Bilgi Toplama'
+    - Bilgi Toplama
 tags:
     - cybersecurity
-    - 'dns araması'
+    - dns araması
     - whois
 ---
 

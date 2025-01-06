@@ -6,7 +6,6 @@ description: Useful content and news for Tech-savvy audience interested in cyber
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
-contentDir: content/en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 # Useful when translating.
@@ -49,9 +48,10 @@ imaging:
 languages:
   en:
     languageName: English
+    contentDir: content/en
     title: Siberoloji
     params:
-      description: A Docsy example site
+      description: Useful content and news
       time_format_default: 02.01.2006
   # cSpell:disable
   tr:
