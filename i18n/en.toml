@@ -88,3 +88,6 @@ other = "Was this page helpful?"
 other = "Yes"
 [feedback_negative]
 other = "No"
+
+[share_on]
+other = "Share"

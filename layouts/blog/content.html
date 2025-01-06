@@ -21,7 +21,8 @@
 		{{- partial "disqus-comment.html" . -}}
 		<br />
 	{{ end -}}
-
+	{{ partial "sharing-buttons.html" . }}
+	{{ partial "giscus.html" . }}
 	{{ partial "pager.html" . }}
 	{{ partial "page-meta-lastmod.html" . -}}
 </div>

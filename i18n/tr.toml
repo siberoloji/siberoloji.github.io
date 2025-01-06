@@ -92,3 +92,6 @@ other = "Hayır"
 
 Tags = "Anahtar Kelime"
 Categories = "Kategoriler"
+
+[share_on]
+other = "Paylaş"

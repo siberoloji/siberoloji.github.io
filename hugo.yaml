@@ -85,8 +85,7 @@ outputs:
 services:
   googleAnalytics:
     id: G-Y78HNW88W6
-  disqus:
-    shortname: siberoloji.github.io  
+  
 
 params:
   taxonomy:
