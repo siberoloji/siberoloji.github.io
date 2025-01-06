@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Secret Locations and Hidden Gems: A Guide to Counter-Strike: Global Offensive&#8217;s World'
+title:  'Secret Locations and Hidden Gems: A Guide to Counter-Strike: Global Offensive'
+s World'
 date: '2024-10-30T22:20:04+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

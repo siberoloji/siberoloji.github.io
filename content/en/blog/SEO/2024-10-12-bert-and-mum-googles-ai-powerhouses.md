@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'BERT and MUM: Google&#8217;s AI Powerhouses'
+title:  'BERT and MUM: Google'
+s AI Powerhouses'
 date: '2024-10-12T01:17:30+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

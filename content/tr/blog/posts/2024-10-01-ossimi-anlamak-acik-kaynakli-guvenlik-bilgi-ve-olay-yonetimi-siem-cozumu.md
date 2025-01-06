@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'OSSIM&#8217;i Anlamak: Açık Kaynaklı Güvenlik Bilgi ve Olay Yönetimi (SIEM) Çözümü'
+title:  'OSSIM'
+i Anlamak: Açık Kaynaklı Güvenlik Bilgi ve Olay Yönetimi (SIEM) Çözümü'
 date: '2024-10-01T21:20:21+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

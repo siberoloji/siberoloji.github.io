@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'OSSEC&#8217;i Anlamak: Açık Kaynaklı Ana Bilgisayar Tabanlı Saldırı Algılama Sistemi (HIDS)'
+title:  'OSSEC'
+i Anlamak: Açık Kaynaklı Ana Bilgisayar Tabanlı Saldırı Algılama Sistemi (HIDS)'
 date: '2024-10-01T21:12:34+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

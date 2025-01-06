@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Obsidian&#8217;s Backward-linking Feature For Productivity'
+title:  'Obsidian'
+s Backward-linking Feature For Productivity'
 date: '2024-10-18T12:39:50+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

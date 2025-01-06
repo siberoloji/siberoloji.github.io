@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Bret Taylor&#8217;s customer service AI startup raised $175 million in funding'
+title:  'Bret Taylor'
+s customer service AI startup raised $175 million in funding'
 date: '2024-10-29T15:02:21+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

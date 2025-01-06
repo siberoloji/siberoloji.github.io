@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'How will Google&#8217;s Search Generative Experience affect SEO strategies?'
+title:  'How will Google'
+s Search Generative Experience affect SEO strategies?'
 date: '2024-10-21T20:31:50+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

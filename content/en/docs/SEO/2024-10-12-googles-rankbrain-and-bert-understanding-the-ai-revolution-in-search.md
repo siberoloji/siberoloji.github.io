@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Google&#8217;s RankBrain and BERT: Understanding the AI Revolution in Search'
+title:  'Google'
+s RankBrain and BERT: Understanding the AI Revolution in Search'
 date: '2024-10-12T20:33:14+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

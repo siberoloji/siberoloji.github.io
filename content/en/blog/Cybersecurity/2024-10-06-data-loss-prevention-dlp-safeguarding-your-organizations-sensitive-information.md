@@ -1,6 +1,7 @@
 ---
 draft: false
-title: "Data Loss Prevention (DLP): Safeguarding Your Organization&#8217;s Sensitive Information"
+title: "Data Loss Prevention (DLP): Safeguarding Your Organization'
+s Sensitive Information"
 date: 2024-10-06T14:38:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /data-loss-prevention-dlp-safeguarding-your-organizations-sensitive-information/

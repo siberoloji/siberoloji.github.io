@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'What&#8217;s New in macOS Sequoia Beta 15.1 (24B5070a): Key Features and Enhancements'
+title:  'What'
+s New in macOS Sequoia Beta 15.1 (24B5070a): Key Features and Enhancements'
 date: '2024-10-10T10:41:24+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

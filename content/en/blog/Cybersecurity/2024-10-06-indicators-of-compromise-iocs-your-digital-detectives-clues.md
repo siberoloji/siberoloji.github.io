@@ -1,6 +1,7 @@
 ---
 draft: false
-title: "Indicators of Compromise (IOCs): Your Digital Detective&#8217;s Clues"
+title: "Indicators of Compromise (IOCs): Your Digital Detective'
+s Clues"
 date: 2024-10-06T15:08:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /indicators-of-compromise-iocs-your-digital-detectives-clues/

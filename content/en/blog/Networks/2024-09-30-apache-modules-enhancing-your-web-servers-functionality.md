@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Apache Modules: Enhancing Your Web Server&#8217;s Functionality'
+title:  'Apache Modules: Enhancing Your Web Server'
+s Functionality'
 date: '2024-09-30T21:47:13+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

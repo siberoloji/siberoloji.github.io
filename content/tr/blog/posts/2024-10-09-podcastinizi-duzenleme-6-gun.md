@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Podcast&#8217;inizi Düzenleme: 6. Gün'
+title:  'Podcast'
+inizi Düzenleme: 6. Gün'
 date: '2024-10-09T01:10:43+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

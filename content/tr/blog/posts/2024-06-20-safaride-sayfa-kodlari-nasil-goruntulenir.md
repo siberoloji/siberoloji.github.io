@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Safari&#8217;de sayfa kodları nasıl görüntülenir?'
+title:  'Safari'
+de sayfa kodları nasıl görüntülenir?'
 date: '2024-06-20T14:42:52+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

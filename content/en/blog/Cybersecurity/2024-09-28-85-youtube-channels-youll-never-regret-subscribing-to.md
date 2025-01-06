@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  '85 YouTube Channels You&#8217;ll Never Regret Subscribing To'
+title:  '85 YouTube Channels You'
+ll Never Regret Subscribing To'
 date: '2024-09-28T18:31:40+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

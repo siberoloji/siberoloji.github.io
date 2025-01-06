@@ -1,7 +1,9 @@
 ---
 draft: false
 
-title:  'Metasploit Framework&#8217;ü Windows&#8217;a Yükleme'
+title:  'Metasploit Framework'
+ü Windows'
+a Yükleme'
 date: '2024-10-09T01:17:41+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

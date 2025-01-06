@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'The Top 5 Technology Trends You Can&#8217;t Ignore in 2024'
+title:  'The Top 5 Technology Trends You Can'
+t Ignore in 2024'
 date: '2024-10-10T11:06:58+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

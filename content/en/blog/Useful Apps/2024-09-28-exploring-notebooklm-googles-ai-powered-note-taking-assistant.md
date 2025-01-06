@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Exploring NotebookLM: Google&#8217;s AI-Powered Note-Taking Assistant'
+title:  'Exploring NotebookLM: Google'
+s AI-Powered Note-Taking Assistant'
 date: '2024-09-28T00:41:53+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

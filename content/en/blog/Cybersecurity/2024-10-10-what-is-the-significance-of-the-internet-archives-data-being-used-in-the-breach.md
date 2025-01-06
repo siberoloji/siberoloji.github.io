@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'What is the significance of the Internet Archive&#8217;s data being used in the breach?'
+title:  'What is the significance of the Internet Archive'
+s data being used in the breach?'
 date: '2024-10-10T16:59:33+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

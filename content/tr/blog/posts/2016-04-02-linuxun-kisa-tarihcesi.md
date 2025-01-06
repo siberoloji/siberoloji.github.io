@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Linux&#8217;un Kısa Tarihçesi'
+title:  'Linux'
+un Kısa Tarihçesi'
 date: '2016-04-02T14:13:00+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

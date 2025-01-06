@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'CrowdSec&#8217;i Anlamak: Açık Kaynaklı İşbirlikçi Bir Siber Güvenlik Çözümü'
+title:  'CrowdSec'
+i Anlamak: Açık Kaynaklı İşbirlikçi Bir Siber Güvenlik Çözümü'
 date: '2024-10-01T21:15:45+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

@@ -1,7 +1,9 @@
 ---
 draft: false
 
-title:  'Exploring the Game&#8217;s Latest Update: What&#8217;s New in Counter-Strike: Global Offensive'
+title:  'Exploring the Game'
+s Latest Update: What'
+s New in Counter-Strike: Global Offensive'
 date: '2024-10-30T22:41:35+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

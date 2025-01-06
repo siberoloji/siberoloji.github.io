@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Kotlin&#8217;de değişken isimlendirme kuralları'
+title:  'Kotlin'
+de değişken isimlendirme kuralları'
 date: '2024-01-23T17:18:03+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

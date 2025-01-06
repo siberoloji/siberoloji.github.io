@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'A Beginner&#8217;s Guide to Pop!_OS Linux Distribution'
+title:  'A Beginner'
+s Guide to Pop!_OS Linux Distribution'
 date: '2024-09-06T19:43:04+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

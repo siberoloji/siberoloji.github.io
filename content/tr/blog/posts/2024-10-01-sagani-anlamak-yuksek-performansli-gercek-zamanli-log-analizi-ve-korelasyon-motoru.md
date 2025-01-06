@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Sagan&#8217;ı Anlamak: Yüksek Performanslı, Gerçek Zamanlı Log Analizi ve Korelasyon Motoru'
+title:  'Sagan'
+ı Anlamak: Yüksek Performanslı, Gerçek Zamanlı Log Analizi ve Korelasyon Motoru'
 date: '2024-10-01T21:23:29+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

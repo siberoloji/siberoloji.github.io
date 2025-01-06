@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'AI vs. Human Intelligence: What&#8217;s the Future of Human-AI Collaboration?'
+title:  'AI vs. Human Intelligence: What'
+s the Future of Human-AI Collaboration?'
 date: '2024-10-10T00:07:01+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

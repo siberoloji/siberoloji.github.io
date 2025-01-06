@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Kotlin&#8217;de Sabitler ve değişkenler'
+title:  'Kotlin'
+de Sabitler ve değişkenler'
 date: '2024-01-17T22:45:39+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

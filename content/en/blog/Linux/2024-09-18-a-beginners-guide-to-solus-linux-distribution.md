@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'A Beginner&#8217;s Guide to Solus Linux Distribution'
+title:  'A Beginner'
+s Guide to Solus Linux Distribution'
 date: '2024-09-18T23:57:33+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

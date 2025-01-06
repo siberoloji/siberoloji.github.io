@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'AMD&#8217;s New AI Chips'
+title:  'AMD'
+s New AI Chips'
 date: '2024-10-12T22:44:47+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

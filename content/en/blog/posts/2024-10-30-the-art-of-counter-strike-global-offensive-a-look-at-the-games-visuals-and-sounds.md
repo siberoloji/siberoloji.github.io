@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'The Art of Counter-Strike: Global Offensive: A Look at the Game&#8217;s Visuals and Sounds'
+title:  'The Art of Counter-Strike: Global Offensive: A Look at the Game'
+s Visuals and Sounds'
 date: '2024-10-30T23:11:40+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

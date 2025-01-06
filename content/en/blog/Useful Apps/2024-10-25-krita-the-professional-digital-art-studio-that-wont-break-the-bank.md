@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Krita: The Professional Digital Art Studio That Won&#8217;t Break the Bank'
+title:  'Krita: The Professional Digital Art Studio That Won'
+t Break the Bank'
 date: '2024-10-25T13:43:30+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Statista: A Comprehensive Guide to the World&#8217;s Leading Statistics Portal'
+title:  'Statista: A Comprehensive Guide to the World'
+s Leading Statistics Portal'
 date: '2024-10-12T15:56:54+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  

@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'Kotlin&#8217;de Temel Veri Tipleri'
+title:  'Kotlin'
+de Temel Veri Tipleri'
 date: '2024-01-11T22:39:58+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

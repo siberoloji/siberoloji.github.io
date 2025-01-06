@@ -1,7 +1,8 @@
 ---
 draft: false
 
-title:  'What&#8217;s New in macOS Sequoia 15.1 Beta: A Comprehensive Look'
+title:  'What'
+s New in macOS Sequoia 15.1 Beta: A Comprehensive Look'
 date: '2024-09-26T17:40:09+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  
