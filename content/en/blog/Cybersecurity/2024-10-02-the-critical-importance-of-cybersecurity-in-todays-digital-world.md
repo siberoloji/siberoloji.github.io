@@ -1,7 +1,6 @@
 ---
 draft: false
-title: The Critical Importance of Cybersecurity in Today'
-s Digital World
+title: The Critical Importance of Cybersecurity in Today's Digital World
 date: 2024-10-02T14:29:42+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-critical-importance-of-cybersecurity-in-todays-digital-world/

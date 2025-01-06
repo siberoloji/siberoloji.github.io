@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Safari'
-de sayfa kodları nasıl görüntülenir?'
-date: '2024-06-20T14:42:52+03:00'
+title: Safari'de sayfa kodları nasıl görüntülenir?
+date: 2024-06-20T14:42:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Bir sayfanın kaynak kodunu görüntülemek, web tasarımcılarının ve geliştiricilerin tercih ettikleri düzeni elde etmelerini sağlar.' 
- 
-url:  /tr/safaride-sayfa-kodlari-nasil-goruntulenir/ 
+description: Bir sayfanın kaynak kodunu görüntülemek, web tasarımcılarının ve geliştiricilerin tercih ettikleri düzeni elde etmelerini sağlar.
+url: /tr/safaride-sayfa-kodlari-nasil-goruntulenir/
 featured_image: /images/how-to-speed-up-safari-main.jpg
 categories:
     - MAC/iOS
 tags:
     - safari
-    - 'web tarayıcı'
+    - web tarayıcı
 ---
 
 

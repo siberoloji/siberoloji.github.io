@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Exploring NotebookLM: Google'
-s AI-Powered Note-Taking Assistant'
-date: '2024-09-28T00:41:53+03:00'
+title: "Exploring NotebookLM: Google's AI-Powered Note-Taking Assistant"
+date: 2024-09-28T00:41:53+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /exploring-notebooklm-googles-ai-powered-note-taking-assistant/
- 
+url: /exploring-notebooklm-googles-ai-powered-note-taking-assistant/
 featured_image: /images/google-services-illustration1.webp
 categories:
-    - 'AI News'
+    - AI News
 tags:
     - ai
-    - 'ai news'
+    - ai news
     - google
     - news
     - notebooklm

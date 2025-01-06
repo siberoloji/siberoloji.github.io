@@ -1,4 +1,4 @@
 ---
-title: News
+title: Haberler
 weight: 20
 ---

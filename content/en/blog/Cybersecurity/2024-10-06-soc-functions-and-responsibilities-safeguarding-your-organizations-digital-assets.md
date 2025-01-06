@@ -1,7 +1,6 @@
 ---
 draft: false
-title: "SOC Functions and Responsibilities: Safeguarding Your Organization'
-s Digital Assets"
+title: "SOC Functions and Responsibilities: Safeguarding Your Organization's Digital Assets"
 date: 2024-10-06T20:26:09+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /soc-functions-and-responsibilities-safeguarding-your-organizations-digital-assets/

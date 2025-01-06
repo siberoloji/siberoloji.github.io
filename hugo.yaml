@@ -199,7 +199,7 @@ params:
     ul_show: 1
     sidebar_menu_foldable: true
     sidebar_cache_limit: 1000
-    sidebar_menu_truncate: 300
+    sidebar_menu_truncate: 400
     sidebar_menu_truncate_show_more: true
     sidebar_menu_truncate_show_more_text: "Show more"
     sidebar_menu_truncate_show_less_text: "Show less"

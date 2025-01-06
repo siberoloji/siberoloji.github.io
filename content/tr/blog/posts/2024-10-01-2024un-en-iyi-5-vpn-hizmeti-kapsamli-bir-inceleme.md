@@ -1,17 +1,12 @@
 ---
 draft: false
-
-title:  '2024'
-ün En İyi 5 VPN Hizmeti: Kapsamlı Bir İnceleme'
-date: '2024-10-01T21:07:08+03:00'
+title: "2024'ün En İyi 5 VPN Hizmeti: Kapsamlı Bir İnceleme"
+date: 2024-10-01T21:07:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/2024un-en-iyi-5-vpn-hizmeti-kapsamli-bir-inceleme/
- 
+url: /tr/2024un-en-iyi-5-vpn-hizmeti-kapsamli-bir-inceleme/
 featured_image: /images/encryption.webp
 categories:
-    - 'Siber Güvenlik'
+    - Siber Güvenlik
 tags:
     - vpn
 ---

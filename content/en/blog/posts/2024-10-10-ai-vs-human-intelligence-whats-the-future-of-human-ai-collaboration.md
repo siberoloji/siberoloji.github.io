@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'AI vs. Human Intelligence: What'
-s the Future of Human-AI Collaboration?'
-date: '2024-10-10T00:07:01+03:00'
+title: "AI vs. Human Intelligence: What's the Future of Human-AI Collaboration?"
+date: 2024-10-10T00:07:01+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /ai-vs-human-intelligence-whats-the-future-of-human-ai-collaboration/
- 
+url: /ai-vs-human-intelligence-whats-the-future-of-human-ai-collaboration/
 featured_image: /images/artificialintelligence4.webp
 categories:
     - AI
 tags:
     - ai
-    - 'artificial intelligence'
+    - artificial intelligence
 ---
 
 

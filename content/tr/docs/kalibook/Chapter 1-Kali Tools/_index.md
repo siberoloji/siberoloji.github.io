@@ -2,7 +2,7 @@
 title: Chapter 1 Kali Tools
 prev: /docs/kalibook
 next: /docs/kalibook/chapter-1-kali-tools/0trace
-url: /chapter-1-kali-tools/
+url: /tr/chapter-1-kali-tools/
 weight: 1
 
 

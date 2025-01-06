@@ -1,23 +1,13 @@
 ---
 draft: false
-
-title:  'Kotlin'
-de değişken isimlendirme kuralları'
-date: '2024-01-23T17:18:03+03:00'
+title: Kotlin'de değişken isimlendirme kuralları
+date: 2024-01-23T17:18:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.' 
- 
-url:  /tr/kotlinde-degisken-isimlendirme-kurallari/
-classicmag_post_sidebar_option:
-    - right-sidebar
-classicmag_header_overlay:
-    - global-layout
-burst_total_pageviews_count:
-    - '1'
+description: Seçtiğiniz değişken ismi, tam olarak değişkenin ne işe yaradığını anlatmalıdır.  Kodunuzun karmaşık ve anlaşılmaz hale gelmemesi için uymanız tavsiye edilen kuralları sırayla görelim.
+url: /tr/kotlinde-degisken-isimlendirme-kurallari/
 featured_image: /images/kotlin-1.png
 categories:
-    - 'Temel Kotlin'
+    - Temel Kotlin
 tags:
     - kotlin
     - yazılım

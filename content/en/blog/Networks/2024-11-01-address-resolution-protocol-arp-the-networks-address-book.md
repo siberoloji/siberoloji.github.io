@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Address Resolution Protocol (ARP): The Network'
-s Address Book'
-date: '2024-11-01T14:42:59+03:00'
+title: "Address Resolution Protocol (ARP): The Network's Address Book"
+date: 2024-11-01T14:42:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'In the intricate world of networking, the Address Resolution Protocol (ARP) plays a crucial role in ensuring seamless communication between devices on a local network.' 
- 
-url:  /address-resolution-protocol-arp-the-networks-address-book/
+description: In the intricate world of networking, the Address Resolution Protocol (ARP) plays a crucial role in ensuring seamless communication between devices on a local network.
+url: /address-resolution-protocol-arp-the-networks-address-book/
 featured_image: /images/datacommunicaitons2.webp
 categories:
-    - 'Data Communications'
+    - Data Communications
 tags:
-    - 'data communications'
+    - data communications
 ---
 
 

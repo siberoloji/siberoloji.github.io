@@ -1,21 +1,16 @@
 ---
 draft: false
-
-title:  'BERT and MUM: Google'
-s AI Powerhouses'
-date: '2024-10-12T01:17:30+03:00'
+title: "BERT and MUM: Google's AI Powerhouses"
+date: 2024-10-12T01:17:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /bert-and-mum-googles-ai-powerhouses/
- 
+url: /bert-and-mum-googles-ai-powerhouses/
 slim_seo:
-    - 'a:1:{s:11:"description";s:126:"Learn how these two groundbreaking models, BERT and MUM language models have revolutionized natural language processing (NLP).";}'
+    - a:1:{s:11:"description";s:126:"Learn how these two groundbreaking models, BERT and MUM language models have revolutionized natural language processing (NLP).";}
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+    - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
+    - search engine optimization
     - seo
 ---
 

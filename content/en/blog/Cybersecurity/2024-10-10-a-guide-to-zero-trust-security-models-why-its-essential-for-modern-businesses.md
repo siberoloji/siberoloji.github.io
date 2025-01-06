@@ -1,7 +1,6 @@
 ---
 draft: false
-title: "A Guide to Zero Trust Security Models: Why It'
-s Essential for Modern Businesses"
+title: "A Guide to Zero Trust Security Models: Why It's Essential for Modern Businesses"
 date: 2024-10-10T10:49:47+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /a-guide-to-zero-trust-security-models-why-its-essential-for-modern-businesses/

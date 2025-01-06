@@ -1,4 +1,4 @@
 ---
-title: Posts
+title: Yazılar
 weight: 2
 ---

@@ -1,18 +1,14 @@
 ---
 draft: false
-
-title:  'The Art of Counter-Strike: Global Offensive: A Look at the Game'
-s Visuals and Sounds'
-date: '2024-10-30T23:11:40+03:00'
+title: "The Art of Counter-Strike: Global Offensive: A Look at the Game's Visuals and Sounds"
+date: 2024-10-30T23:11:40+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /the-art-of-counter-strike-global-offensive-a-look-at-the-games-visuals-and-sounds/
+url: /the-art-of-counter-strike-global-offensive-a-look-at-the-games-visuals-and-sounds/
 featured_image: /images/counterstrikeglobaloffensive.webp
 categories:
     - Gaming
 tags:
-    - 'CS:GO'
+    - CS:GO
 ---
 
 

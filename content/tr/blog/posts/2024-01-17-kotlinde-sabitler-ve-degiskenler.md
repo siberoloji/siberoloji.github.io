@@ -1,23 +1,19 @@
 ---
 draft: false
-
-title:  'Kotlin'
-de Sabitler ve değişkenler'
-date: '2024-01-17T22:45:39+03:00'
+title: Kotlin'de Sabitler ve değişkenler
+date: 2024-01-17T22:45:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Kotlin programlama dilinde değişkenleri tanımlama ve değer atama konusuna bir önceki yazımızda giriş yapmıştık. Bu yazımızda const ve val ile değer atamaya daha yakından bakacağız.' 
- 
-url:  /tr/kotlinde-sabitler-ve-degiskenler/
+description: Kotlin programlama dilinde değişkenleri tanımlama ve değer atama konusuna bir önceki yazımızda giriş yapmıştık. Bu yazımızda const ve val ile değer atamaya daha yakından bakacağız.
+url: /tr/kotlinde-sabitler-ve-degiskenler/
 classicmag_post_sidebar_option:
     - right-sidebar
 classicmag_header_overlay:
     - global-layout
 burst_total_pageviews_count:
-    - '6'
+    - "6"
 featured_image: /images/KotlinFullColorLogoMarkRGB-250-250.png
 categories:
-    - 'Temel Kotlin'
+    - Temel Kotlin
 tags:
     - kotlin
     - yazılım

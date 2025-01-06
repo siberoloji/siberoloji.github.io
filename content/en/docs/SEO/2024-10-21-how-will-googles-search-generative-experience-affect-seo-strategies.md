@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How will Google'
-s Search Generative Experience affect SEO strategies?'
-date: '2024-10-21T20:31:50+03:00'
+title: How will Google's Search Generative Experience affect SEO strategies?
+date: 2024-10-21T20:31:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This blog post will explore the implications of Search Generative Experience on SEO, providing insights into how businesses can adapt to this new paradigm.' 
- 
-url:  /how-will-googles-search-generative-experience-affect-seo-strategies/
+description: This blog post will explore the implications of Search Generative Experience on SEO, providing insights into how businesses can adapt to this new paradigm.
+url: /how-will-googles-search-generative-experience-affect-seo-strategies/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-    - 'Search Engine Optimisation'
+    - Search Engine Optimisation
 tags:
-    - 'search engine optimization'
+    - search engine optimization
     - seo
 ---
 

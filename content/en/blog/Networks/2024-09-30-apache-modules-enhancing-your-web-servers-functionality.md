@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'Apache Modules: Enhancing Your Web Server'
-s Functionality'
-date: '2024-09-30T21:47:13+03:00'
+title: "Apache Modules: Enhancing Your Web Server's Functionality"
+date: 2024-09-30T21:47:13+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /apache-modules-enhancing-your-web-servers-functionality/
- 
+url: /apache-modules-enhancing-your-web-servers-functionality/
 featured_image: /images/apache-web-server.webp
 categories:
     - Networks
 tags:
     - apache
-    - 'apache modules'
-    - 'apache web server'
+    - apache modules
+    - apache web server
+description: In this post, we'll explore Apache modules, what they are, and provide brief descriptions of some of the most commonly used ones.
 ---
 
 

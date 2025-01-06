@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'Krita: The Professional Digital Art Studio That Won'
-t Break the Bank'
-date: '2024-10-25T13:43:30+03:00'
+title: "Krita: The Professional Digital Art Studio That Won't Break the Bank"
+date: 2024-10-25T13:43:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /krita-the-professional-digital-art-studio-that-wont-break-the-bank/
+url: /krita-the-professional-digital-art-studio-that-wont-break-the-bank/
 featured_image: /images/imageedit.webp
 categories:
-    - 'Useful Apps'
+    - Useful Apps
 tags:
     - krita
+description: ""
 ---
 
 

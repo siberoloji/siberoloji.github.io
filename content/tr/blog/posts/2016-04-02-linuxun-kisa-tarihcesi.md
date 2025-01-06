@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Linux'
-un Kısa Tarihçesi'
-date: '2016-04-02T14:13:00+03:00'
+title: Linux'un Kısa Tarihçesi
+date: 2016-04-02T14:13:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Linux İşletim Sistemlerinin kısa bir tarihsel gelişimini okumak isteyenlere göre bir yazı.' 
- 
-url:  /tr/linuxun-kisa-tarihcesi/
- 
+description: Linux İşletim Sistemlerinin kısa bir tarihsel gelişimini okumak isteyenlere göre bir yazı.
+url: /tr/linuxun-kisa-tarihcesi/
 featured_image: /images/linux2.png
 categories:
-    - 'Temel Linux'
+    - Temel Linux
 tags:
-    - 'linux tarihi'
+    - linux tarihi
 ---
 
 

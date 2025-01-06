@@ -3,7 +3,7 @@ title: Kali Book
 type: page
 prev: docs/first-page
 next: docs/kalibook/chapter-1-kali-tools/
-url: /kali-book/
+url: /tr/kali-book/
 weight: 2
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 

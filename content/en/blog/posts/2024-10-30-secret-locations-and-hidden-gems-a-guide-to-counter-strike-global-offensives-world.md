@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Secret Locations and Hidden Gems: A Guide to Counter-Strike: Global Offensive'
-s World'
-date: '2024-10-30T22:20:04+03:00'
+title: "Secret Locations and Hidden Gems: A Guide to Counter-Strike: Global Offensive's World"
+date: 2024-10-30T22:20:04+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This comprehensive guide will explore the lesser-known aspects of CS:GO''s most popular maps, revealing locations and tactics that even experienced players might have overlooked.' 
- 
-url:  /secret-locations-and-hidden-gems-a-guide-to-counter-strike-global-offensives-world/
+description: This comprehensive guide will explore the lesser-known aspects of CS:GO's most popular maps, revealing locations and tactics that even experienced players might have overlooked.
+url: /secret-locations-and-hidden-gems-a-guide-to-counter-strike-global-offensives-world/
 featured_image: /images/counterstrikeglobaloffensive.webp
 categories:
     - Gaming
 tags:
-    - 'CS:GO'
+    - CS:GO
     - gaming
 ---
 

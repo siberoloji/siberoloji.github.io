@@ -1,18 +1,14 @@
 ---
 draft: false
-
-title:  'Obsidian'
-s Backward-linking Feature For Productivity'
-date: '2024-10-18T12:39:50+03:00'
+title: Obsidian's Backward-linking Feature For Productivity
+date: 2024-10-18T12:39:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /obsidians-backward-linking-feature-for-productivity/
+url: /obsidians-backward-linking-feature-for-productivity/
 featured_image: /images/obsidian-tips-lead.jpg
 categories:
-    - 'Useful Apps'
+    - Useful Apps
 tags:
-    - 'note taking'
+    - note taking
     - obsidian
 ---
 

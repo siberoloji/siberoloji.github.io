@@ -1,20 +1,14 @@
 ---
 draft: false
-
-title:  'Metasploit Framework'
-ü Windows'
-a Yükleme'
-date: '2024-10-09T01:17:41+03:00'
+title: Metasploit Framework'ü Windows'a Yükleme
+date: 2024-10-09T01:17:41+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/metasploit-frameworku-windowsa-yukleme/
- 
+url: /tr/metasploit-frameworku-windowsa-yukleme/
 featured_image: /images/metasploitframework.webp
 categories:
-    - 'Siber Güvenlik'
+   - Siber Güvenlik
 tags:
-    - 'metasploit framework'
+   - metasploit framework
 ---
 
 

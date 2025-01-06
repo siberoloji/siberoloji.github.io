@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'Kotlin'
-de Temel Veri Tipleri'
-date: '2024-01-11T22:39:58+03:00'
+title: Kotlin'de Temel Veri Tipleri
+date: 2024-01-11T22:39:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Ne kadar karışık olursa olsun, tüm programlama dilleri işlemlerini tam sayı, karakter ve yazı dizileri vb. değerler üzerinde gerçekleştirilir. Bu değerlere Temel Değer ifadeleri adını veriyoruz.' 
- 
-url:  /tr/kotlinde-temel-veri-tipleri/
+description: Ne kadar karışık olursa olsun, tüm programlama dilleri işlemlerini tam sayı, karakter ve yazı dizileri vb. değerler üzerinde gerçekleştirilir. Bu değerlere Temel Değer ifadeleri adını veriyoruz.
+url: /tr/kotlinde-temel-veri-tipleri/
 classicmag_post_sidebar_option:
     - right-sidebar
 classicmag_header_overlay:
     - global-layout
 featured_image: /images/james-harrison-vpOeXr5wmR4-unsplash.jpg
 categories:
-    - 'Temel Kotlin'
+    - Temel Kotlin
 tags:
     - kotlin
     - yazılım

@@ -1,46 +1,31 @@
 ---
 draft: false
-
-title:  'A Beginner'
-s Guide to Pop!_OS Linux Distribution'
-date: '2024-09-06T19:43:04+03:00'
+title: A Beginner's Guide to Pop!_OS Linux Distribution
+date: 2024-09-06T19:43:04+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /a-beginners-guide-to-pop_os-linux-distribution/
- 
+url: /a-beginners-guide-to-pop_os-linux-distribution/
 featured_image: /images/pop-os-tile.jpg
 categories:
-    - 'Linux Distributions'
+    - Linux Distributions
 tags:
     - linux
-    - 'linux distros'
-    - 'Pop!_OS Linux'
+    - linux distros
+    - Pop!_OS Linux
+description: In this guide, we will cover everything a beginner needs to know about Pop!_OS—from installation to the unique features that make it stand out.
 ---
 
 
 In recent years, Linux distributions have gained a lot of popularity among users seeking open-source, privacy-focused, and customizable operating systems. Among these, **Pop!_OS** stands out as one of the most user-friendly and feature-rich distributions available. Developed by **System76**, Pop!_OS has carved a niche for itself, especially among new users and developers. In this guide, we will cover everything a beginner needs to know about Pop!_OS—from installation to the unique features that make it stand out.
 
-
-
 ## What is Pop!_OS?
-
-
 
 Pop!_OS is an open-source Linux distribution developed by **System76**, a company known for manufacturing Linux laptops and desktops. Based on **Ubuntu**, Pop!_OS inherits many of its features but adds its own customizations and improvements, especially in terms of usability and performance.
 
-
-
 Pop!_OS is widely regarded as an **easy-to-use Linux distribution**, making it a great option for beginners. It's built with developers, engineers, and computer scientists in mind, but it's equally suitable for anyone who wants a sleek, efficient, and customizable operating system.
-
-
 
 ## Why Choose Pop!_OS Over Other Linux Distributions?
 
-
-
 There are several reasons why Pop!_OS is often recommended for beginners, especially those who want to transition from Windows or macOS. Here are some key factors:
-
 
 * **User-Friendly Interface**: Pop!_OS offers a polished, modern interface that is intuitive for both beginners and experienced users. Its **GNOME desktop environment** is clean and highly customizable.
 
@@ -54,11 +39,7 @@ There are several reasons why Pop!_OS is often recommended for beginners, especi
 
 * **Pre-installed Tools for Developers**: Pop!_OS comes with development tools and features that are essential for programmers and engineers, such as easy access to **Linux terminals**, programming libraries, and command-line utilities.
 
-
-
-
 Key Features of Pop!_OS
-
 
 * **Tiling Window Manager**: Pop!_OS includes an automatic **tiling window manager**, which helps in better multitasking by automatically organizing open windows.
 
@@ -68,41 +49,23 @@ Key Features of Pop!_OS
 
 * **Built-in Encryption**: Pop!_OS provides an option to fully encrypt your drive during installation, offering enhanced security for your data.
 
-
-
-
 ## Getting Started with Pop!_OS
-
-
 
 Now that you know why Pop!_OS is an excellent choice, let's dive into how to install and get started with it.
 
-
-
 1. Downloading Pop!_OS
 
-
-
 The first step is to download the **Pop!_OS ISO** file from the <a href="https://pop.system76.com/">official website</a>. You can choose between two versions:
-
 
 * **NVIDIA version**: This version is for users with NVIDIA graphics cards and includes proprietary drivers for enhanced performance.
 
 * **AMD/Intel version**: This version works well for those using AMD or Intel integrated graphics.
 
-
-
-
 Download the appropriate ISO based on your system's hardware.
-
-
 
 2. Creating a Bootable USB Drive
 
-
-
 Once you've downloaded the ISO, the next step is to create a bootable USB drive. You can use software like **Etcher** or **Rufus** to flash the ISO file onto a USB drive.
-
 
 * Insert a USB drive (at least 4 GB in size) into your computer.
 
@@ -110,15 +73,9 @@ Once you've downloaded the ISO, the next step is to create a bootable USB drive.
 
 * Flash the ISO onto the USB drive.
 
-
-
-
 3. Installing Pop!_OS
 
-
-
 After creating the bootable USB drive, it's time to install Pop!_OS.
-
 
 * Restart your computer and boot from the USB drive. You may need to press a key like **F12** or **Esc** to enter your boot menu.
 
@@ -130,35 +87,19 @@ After creating the bootable USB drive, it's time to install Pop!_OS.
 
 * After installation, your system will reboot into Pop!_OS.
 
-
-
-
 4. Post-Installation Setup
-
-
 
 After installation, you’ll be greeted by the Pop!_OS welcome screen. Here, you'll set up basics like language preferences, keyboard layout, and time zone.
 
-
-
 Once you're in, take some time to explore the **Pop!_Shop** to install additional software and customize your desktop environment.
-
-
 
 ## Customizing and Using Pop!_OS
 
-
-
 One of the best parts of using Pop!_OS is its highly customizable nature. Here are some beginner-friendly tips to help you get the most out of your system:
-
-
 
 1. **Customizing the Desktop Environment**
 
-
-
 Pop!_OS uses a modified **GNOME desktop environment**, and there are several ways to make it your own:
-
 
 * Install **GNOME Tweaks** from the Pop!_Shop to modify things like fonts, icons, and animations.
 
@@ -166,43 +107,25 @@ Pop!_OS uses a modified **GNOME desktop environment**, and there are several way
 
 * Change the **wallpaper** and desktop theme to suit your style. You can find free themes on websites like **Gnome-look.org**.
 
-
-
-
 2. **Setting Up Workspaces**
 
-
-
 Workspaces allow you to organize open applications into separate virtual desktops. This is a fantastic feature for those who want to improve multitasking and productivity. Here's how you can use them:
-
 
 * Access the **Workspaces Overview** by pressing `Super (Windows key) + S`.
 
 * Drag windows to different workspaces or create new workspaces as needed.
 
-
-
-
 3. **Using the Tiling Window Manager**
 
-
-
 The **tiling window manager** is one of the standout features of Pop!_OS. It allows you to automatically arrange your windows side-by-side, making multitasking easier. To enable tiling:
-
 
 * Press `Super + Y` to toggle tiling mode on or off.
 
 * Once enabled, open multiple applications and watch as they tile themselves in an organized grid.
 
-
-
-
 4. **Installing Software**
 
-
-
 Installing software in Pop!_OS is simple, thanks to the **Pop!_Shop**. Here's how:
-
 
 * Open **Pop!_Shop** from the dock or applications menu.
 
@@ -210,11 +133,7 @@ Installing software in Pop!_OS is simple, thanks to the **Pop!_Shop**. Here's ho
 
 * Click **Install**, and the software will be added to your system.
 
-
-
-
 If you prefer the command line, you can also use **apt**, the package manager inherited from Ubuntu:
-
 
 ```cpp
 sudo apt update

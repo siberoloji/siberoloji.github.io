@@ -1,22 +1,18 @@
 ---
 draft: false
-
-title:  'A Beginner'
-s Guide to Solus Linux Distribution'
-date: '2024-09-18T23:57:33+03:00'
+title: "A Beginner's Guide to Solus Linux Distribution "
+date: 2024-09-18T23:57:33+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Solus Linux is a relatively new player in the Linux ecosystem but has been making waves with its polished user interface, performance, and simplicity. ' 
- 
-url:  /a-beginners-guide-to-solus-linux-distribution/ 
+description: "Solus Linux is a relatively new player in the Linux ecosystem but has been making waves with its polished user interface, performance, and simplicity. "
+url: /a-beginners-guide-to-solus-linux-distribution/
 featured_image: /images/soluslinuxillustration1.webp
 categories:
-    - 'Linux Distributions'
+    - Linux Distributions
 tags:
     - linux
-    - 'linux distributions'
-    - 'linux distros'
-    - 'Solus Linux'
+    - linux distributions
+    - linux distros
+    - Solus Linux
 ---
 
 

@@ -77,6 +77,11 @@
           "title": "excludeSearch",
           "name": "excludeSearch",
           "type": "boolean"
+        },
+        {
+          "title": "simple_list",
+          "name": "simple_list",
+          "type": "boolean"
         }
       ]
     }

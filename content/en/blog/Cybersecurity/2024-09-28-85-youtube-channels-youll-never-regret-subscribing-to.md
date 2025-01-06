@@ -1,26 +1,19 @@
 ---
 draft: false
-
-title:  '85 YouTube Channels You'
-ll Never Regret Subscribing To'
-date: '2024-09-28T18:31:40+03:00'
+title: 85 YouTube Channels You'll Never Regret Subscribing To
+date: 2024-09-28T18:31:40+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /85-youtube-channels-youll-never-regret-subscribing-to/
- 
+url: /85-youtube-channels-youll-never-regret-subscribing-to/
 featured_image: /images/youtube.jpg
 categories:
     - News
+description: This curated list of YouTube channels offers a wealth of knowledge and expertise across various tech fields.
 ---
 
 
 This curated list of YouTube channels offers a wealth of knowledge and expertise across various tech fields. Whether you're a beginner or an experienced developer, these channels will help you learn, grow, and stay up-to-date with the latest trends.
 
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Programming Languages**
-
+## **Programming Languages**
 
 * **C:** Jacob Sorber
 
@@ -54,11 +47,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **TypeScript:** basarat, TypeScriptTV
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Web Development**
-
+## **Web Development**
 
 * **JavaScript:** Akshay Saini
 
@@ -84,11 +73,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **HTML/CSS:** Kevin Powell
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Cybersecurity**
-
+## **Cybersecurity**
 
 * **Network Chuck**
 
@@ -110,11 +95,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **LiveOverFlow**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Data Structures and Algorithms (DSA)**
-
+## **Data Structures and Algorithms (DSA)**
 
 * **mycodeschool**
 
@@ -126,11 +107,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **CodeWithHarry**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Full Stack Development**
-
+## **Full Stack Development**
 
 * **Traversy Media**
 
@@ -138,29 +115,17 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **Dave Gray**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Projects**
-
+## **Projects**
 
 * **WebDevSimplified**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**UI Design**
-
+## **UI Design**
 
 * **developedbyed**
 
 * **DesignCourse**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**DevOps**
-
+## **DevOps**
 
 * **GIT:** The Modern Coder
 
@@ -180,11 +145,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **Playwright:** Jaydeep Karale
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Cloud Computing**
-
+## **Cloud Computing**
 
 * **AWS:** amazonwebservices
 
@@ -202,11 +163,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **Ansible:** Learn Linux TV
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Data Science**
-
+## **Data Science**
 
 * **Mathematics:** 3Blue1Brown, ProfRobBob, Ghrist Math
 
@@ -218,11 +175,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **PowerBI:** Guy in a Cube
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Free Education**
-
+## **Free Education**
 
 * **freecodecamp**
 
@@ -230,11 +183,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **edureka!**
 
-
-
-<!-- wp:heading {"level":3,"className":""} -->
-**Most Valuable**
-
+## **Most Valuable**
 
 * **TechWithTim**
 
@@ -261,8 +210,5 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 * **TechWorld with Nana**
 
 * **KodeKloud**
-
-
-
 
 This list provides a solid foundation for learning various tech skills. Remember to explore these channels, find the ones that resonate with your learning style, and enjoy the journey of becoming a skilled developer.

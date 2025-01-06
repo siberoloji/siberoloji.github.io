@@ -7,6 +7,7 @@ categories:
 tags:
     - almalinux
 simple_list: true
+url: almalinux-9-howtos
 ---
 
 > This Document is actively being developed as a part of ongoing AlmaLinux learning efforts. Chapters will be added periodically.
