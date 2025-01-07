@@ -119,39 +119,39 @@
 </style>
 
 <script>
-function shareMastodon() {
-  const text = `"{{ $escapedTitle }}" {{ $escapedUrl }}`;
-  const popup = window.open('about:blank', 'Share on Mastodon', 'width=500,height=300');
-  popup.document.write(`
-    <html>
-      <head>
-        <title>Share on Mastodon</title>
-        <style>
-          body { font-family: system-ui, -apple-system, sans-serif; padding: 2rem; }
-          .form { display: flex; flex-direction: column; gap: 1rem; }
-          input { padding: 0.5rem; width: 100%; }
-          button { padding: 0.5rem; background: #563ACC; color: white; border: none; border-radius: 4px; cursor: pointer; }
-          button:hover { opacity: 0.9; }
-        </style>
-      </head>
-      <body>
-        <div class="form">
-          <label for="instance">Enter your Mastodon instance URL:</label>
-          <input type="url" id="instance" placeholder="https://mastodon.social" value="https://mastodon.social" required>
-          <button onclick="share()">Continue</button>
-        </div>
-        <script>
-          function share() {
-            const instance = document.getElementById('instance').value;
-            if (instance) {
-              const shareUrl = \`\${instance}/share?text=${encodeURIComponent(text)}\`;
-              window.open(shareUrl, '_blank');
-              window.close();
+  function shareMastodon() {
+    const text = `"{{ $escapedTitle }}" {{ $escapedUrl }}`;
+    const popup = window.open('about:blank', 'Share on Mastodon', 'width=500,height=300');
+    popup.document.write(`
+      <html>
+        <head>
+          <title>Share on Mastodon</title>
+          <style>
+            body { font-family: system-ui, -apple-system, sans-serif; padding: 2rem; }
+            .form { display: flex; flex-direction: column; gap: 1rem; }
+            input { padding: 0.5rem; width: 100%; }
+            button { padding: 0.5rem; background: #563ACC; color: white; border: none; border-radius: 4px; cursor: pointer; }
+            button:hover { opacity: 0.9; }
+          </style>
+        </head>
+        <body>
+          <div class="form">
+            <label for="instance">Enter your Mastodon instance URL:</label>
+            <input type="url" id="instance" placeholder="https://mastodon.social" value="https://mastodon.social" required>
+            <button onclick="share()">Continue</button>
+          </div>
+          <scr` + `ipt>
+            function share() {
+              const instance = document.getElementById('instance').value;
+              if (instance) {
+                const shareUrl = \`\${instance}/share?text=${encodeURIComponent(text)}\`;
+                window.open(shareUrl, '_blank');
+                window.close();
+              }
             }
-          }
-        </script>
-      </body>
-    </html>
-  `);
-}
+          </scr` + `ipt>
+        </body>
+      </html>
+    `);
+  }
 </script>
