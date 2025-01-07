@@ -1,5 +1,5 @@
 ---
-title: Cyber Security
+title: Siberoloji
 ---
 
 {{< blocks/cover title="Welcome to Siberoloji: A Cyber Knowledge Project!" image_anchor="top" height="full">}}

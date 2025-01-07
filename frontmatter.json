@@ -108,28 +108,12 @@
       "path": "[[workspace]]/content/en/blog"
     },
     {
-      "title": "tasks",
-      "path": "[[workspace]]/content/en/docs/tasks"
-    },
-    {
-      "title": "tutorials",
-      "path": "[[workspace]]/content/en/docs/tutorials"
-    },
-    {
-      "title": "reference",
-      "path": "[[workspace]]/content/en/docs/reference"
-    },
-    {
       "title": "kalibook",
       "path": "[[workspace]]/content/en/docs/kalibook"
     },
     {
       "title": "howtos",
       "path": "[[workspace]]/content/en/docs/howtos"
-    },
-    {
-      "title": "getting-started",
-      "path": "[[workspace]]/content/en/docs/getting-started"
     },
     {
       "title": "bob",
@@ -152,10 +136,6 @@
       "path": "[[workspace]]/content/en/docs/howtos/nmap"
     },
     {
-      "title": "Ponycopters",
-      "path": "[[workspace]]/content/en/docs/tasks/Ponycopters"
-    },
-    {
       "title": "first-post",
       "path": "[[workspace]]/content/en/blog/news/first-post"
     },
@@ -174,14 +154,6 @@
     {
       "title": "bobsalmalinuxadventures",
       "path": "[[workspace]]/content/en/docs/bob/bobsalmalinuxadventures"
-    },
-    {
-      "title": "ntp-ssh",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/ntp-ssh"
-    },
-    {
-      "title": "initial-settings",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/initial-settings"
     },
     {
       "title": "tr",
@@ -206,14 +178,6 @@
     {
       "title": "draft",
       "path": "[[workspace]]/content/tr/blog/draft"
-    },
-    {
-      "title": "tutorials",
-      "path": "[[workspace]]/content/tr/docs/tutorials"
-    },
-    {
-      "title": "tasks",
-      "path": "[[workspace]]/content/tr/docs/tasks"
     },
     {
       "title": "initial-settings",
@@ -244,20 +208,8 @@
       "path": "[[workspace]]/content/tr/docs/alice/alicewordpressadventures"
     },
     {
-      "title": "getting-started",
-      "path": "[[workspace]]/content/tr/docs/getting-started"
-    },
-    {
       "title": "nmap",
       "path": "[[workspace]]/content/tr/docs/howtos/nmap"
-    },
-    {
-      "title": "Ponycopters",
-      "path": "[[workspace]]/content/tr/docs/tasks/Ponycopters"
-    },
-    {
-      "title": "reference",
-      "path": "[[workspace]]/content/tr/docs/reference"
     },
     {
       "title": "Cybersecurity",
@@ -274,10 +226,6 @@
     {
       "title": "Android",
       "path": "[[workspace]]/content/en/blog/Android"
-    },
-    {
-      "title": "dns-dhcp",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/dns-dhcp"
     },
     {
       "title": "C++",

@@ -1,23 +1,18 @@
 ---
 title: What is Canonical URL? Understanding the SEO Powerhouse
-description: "What is canonical URL: Canonical URLs are a fundamental strategy that can significantly impact a website's online visibility and performance."
+description: "What is canonical URL: Canonical URLs are a fundamental strategy that can significantly impact a website's online visibility and performance"
 linkTitle: Canonical URL
 date: 2024-11-20
 type: blog
 draft: false
-
 tags:
   - canonical url
   - seo
 categories:
   - Search Engine Optimization
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/Searchengine-optimization.webp
-
-
 url: canonical-url-understanding-seo-powerhouse
-slug: canonical-url-understanding-seo-powerhouse
 keywords:
   - canonical url
 ---

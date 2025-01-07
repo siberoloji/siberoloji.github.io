@@ -2,5 +2,5 @@
 title: SEO
 weight: 11
 url: /seo-search-engine-optimization/
-simple_list: true
+# simple_list: true
 ---

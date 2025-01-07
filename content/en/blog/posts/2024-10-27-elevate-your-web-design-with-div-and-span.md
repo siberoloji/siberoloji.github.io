@@ -1,19 +1,16 @@
 ---
 draft: false
-
-title:  'Elevate Your Web Design with &lt;div&gt; and &lt;span&gt;'
-date: '2024-10-27T08:57:36+03:00'
-author: 'Tarık Korucuoğlu'
-description:  'Both div and span tags are HTML elements used to group other elements, but they are designed to serve slightly different purposes:' 
- 
-url:  /elevate-your-web-design-with-div-and-span/
- 
+title: Elevate Your Web Design with div and span
+date: 2024-10-27T08:57:36+03:00
+author: Tarık Korucuoğlu
+description: "Both div and span tags are HTML elements used to group other elements, but they are designed to serve slightly different purposes:"
+url: /elevate-your-web-design-with-div-and-span/
 featured_image: /images/htmlprogramming.webp
 categories:
-    - HTML
+  - HTML
 tags:
-    - html
-    - tag
+  - html
+  - tag
 ---
 
 
@@ -47,9 +44,7 @@ In HTML, elements are generally divided into **block-level** and **inline** elem
 Understanding the behavior of block and inline elements is essential for correctly using `&lt;div&gt;` and `&lt;span&gt;` tags to achieve the desired layout.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 The `&lt;div&gt;` Tag: Structuring and Grouping Block Elements
@@ -154,9 +149,7 @@ Since `&lt;div>` tags do not have inherent styling, they often rely on CSS for a
 This styling approach enhances readability, separates content sections visually, and creates a more engaging user experience.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 The `&lt;span&gt;` Tag: Styling Inline Content
@@ -243,9 +236,7 @@ In HTML:
 This allows selective styling within the paragraph without disrupting the inline flow of text.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 `&lt;div&gt;` vs. `&lt;span&gt;`: When to Use Each Tag
@@ -273,9 +264,7 @@ The decision to use `&lt;div&gt;` or `&lt;span&gt;` depends on the nature of the
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Using `&lt;div&gt;` and `&lt;span&gt;` in WordPress
@@ -293,9 +282,7 @@ WordPress makes it easy to use `&lt;div&gt;` and `&lt;span&gt;` tags within the 
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Practical Use Cases for `&lt;div&gt;` and `&lt;span&gt;` Tags
@@ -351,9 +338,7 @@ With CSS:
 ```
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Conclusion

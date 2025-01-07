@@ -5,14 +5,13 @@ linkTitle: Updates and Upgrades in AlmaLinux
 date: 2025-01-01
 type: blog
 draft: false
-
 tags:
   - AlmaLinux
 categories:
   - Linux How-to
 author: İbrahim KORUCUOĞLU
 featured_image: /images/almalinux.webp
-slug: understanding-updates-upgrades-almalinux-comprehensive-guide
+url: understanding-updates-upgrades-almalinux-comprehensive-guide
 keywords:
   - AlmaLinux
 ---

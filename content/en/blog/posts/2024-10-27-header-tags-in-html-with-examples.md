@@ -78,9 +78,7 @@ Why Header Tags Matter
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Best Practices for Using Header Tags in WordPress
@@ -138,9 +136,7 @@ Best Practices for Using Header Tags in WordPress
 ```
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Avoid Common Mistakes
@@ -154,9 +150,7 @@ Avoid Common Mistakes
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Conclusion

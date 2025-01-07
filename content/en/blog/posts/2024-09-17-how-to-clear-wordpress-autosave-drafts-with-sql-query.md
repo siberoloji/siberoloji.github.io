@@ -27,9 +27,7 @@ WordPress automatically saves drafts of your posts and pages as you work on them
 In this post, we’ll explain how you can clear WordPress autosave drafts using an SQL query, a quick and effective method to manage your WordPress database.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 What Are WordPress Autosave Drafts?
@@ -43,9 +41,7 @@ Before diving into the technical details, it’s important to understand what au
 Autosaves are a safeguard against potential loss of content, especially if your browser crashes or if you accidentally close the editor before manually saving your work. However, WordPress does not automatically delete these autosaved drafts after publishing or updating a post, which can lead to the accumulation of unnecessary data in your database.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Why Clear Autosave Drafts?
@@ -63,9 +59,7 @@ While autosaves are beneficial during the content creation process, leftover aut
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 How to Identify Autosave Drafts in Your Database
@@ -88,9 +82,7 @@ SELECT * FROM wp_posts WHERE post_status = 'auto-draft';
 Running this query will display all the autosave drafts in your database, showing you the exact rows that are consuming unnecessary space.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 How to Clear WordPress Autosave Drafts Using an SQL Query
@@ -158,9 +150,7 @@ SELECT * FROM wp_posts WHERE post_status = 'auto-draft';
 If no results are returned, it means that the autosave drafts have been successfully deleted.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Automating the Process for Regular Cleanup
@@ -188,9 +178,7 @@ Here’s how you can automate cleanup using **WP-Optimize**:
 You can also schedule automatic cleanups to ensure your database stays optimized over time.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Additional Tips for Database Optimization
@@ -222,9 +210,7 @@ This will limit the number of revisions stored for each post to 5.
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 Conclusion

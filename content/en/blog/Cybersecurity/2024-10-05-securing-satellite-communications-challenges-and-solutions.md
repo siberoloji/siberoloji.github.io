@@ -15,12 +15,7 @@ tags:
 
 In our increasingly connected world, satellite communications play a crucial role in global connectivity, providing essential services for telecommunications, navigation, weather forecasting, and national security. However, as our reliance on these space-based systems grows, so does the need to protect them from cyber threats. This blog post explores the unique challenges of securing satellite communications and discusses potential solutions to ensure the integrity, confidentiality, and availability of these critical systems.
 
-
-<!-- wp:embed {"url":"https://youtu.be/wleZ1S8aW8E","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/wleZ1S8aW8E
-</div></figure>
-<!-- /wp:embed -->
+{{< youtube "dQw4w9WgXcQ" >}}
 
 
 ## Understanding Satellite Communications

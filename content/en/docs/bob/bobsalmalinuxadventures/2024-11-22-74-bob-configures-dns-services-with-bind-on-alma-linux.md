@@ -6,7 +6,7 @@ keywords:
   - DNS Services with BIND
 description: A DNS server translates human-readable domain names into IP addresses, making it an essential component of any network infrastructure.
 date: 2024-11-25
-slug: bob-configures-dns-services-bind-alma-linux
+url: bob-configures-dns-services-bind-alma-linux
 tags:
   - AlmaLinux
   - bob system administrator
