@@ -4,13 +4,13 @@ title: "Chapter 15: Using Google Analytics and Search Console"
 date: 2024-10-10T22:01:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-15-using-google-analytics-and-search-console/
-slim_seo:
-  - a:1:{s:11:"description";s:120:"how to effectively use google analytics to monitor your site’s performance and identify opportunities for improvement.";}
+weight: 150
 featured_image: /images/searchengineoptimization1.jpg
 categories:
   - Search Engine Optimisation
 tags:
   - seo
+description: This chapter will explore how to effectively use these tools to monitor your site’s performance and identify opportunities for improvement.
 ---
 
 

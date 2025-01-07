@@ -4,6 +4,8 @@ title: "Chapter 9: Internal Linking Strategy"
 date: 2024-10-10T21:47:05+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-9-internal-linking-strategy/
+weight: 90
+description: "In the realm of search engine optimization (SEO), internal linking is a powerful yet often overlooked strategy that can significantly enhance both user experience and search engine visibility."
 featured_image: /images/searchengineoptimization1.jpg
 categories:
   - Search Engine Optimisation

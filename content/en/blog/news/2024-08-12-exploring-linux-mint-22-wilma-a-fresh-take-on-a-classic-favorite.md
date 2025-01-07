@@ -1,19 +1,17 @@
 ---
 draft: false
-
-title:  'Exploring Linux Mint 22 &#8220;Wilma&#8221;: A Fresh Take on a Classic Favorite'
-date: '2024-08-12T14:30:34+03:00'
+title: "Exploring Linux Mint 22 Wilma: A Fresh Take on a Classic Favorite"
+date: 2024-08-12T14:30:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /exploring-linux-mint-22-wilma-a-fresh-take-on-a-classic-favorite/ 
+url: /exploring-linux-mint-22-wilma-a-fresh-take-on-a-classic-favorite/
 featured_image: /images/linux-mint.jpg
 categories:
-    - 'Linux News'
+    - Linux News
 tags:
-    - 'linux mint'
-    - 'linux news'
-    - 'linux releases'
+    - linux mint
+    - linux news
+    - linux releases
+description: ""
 ---
 
 

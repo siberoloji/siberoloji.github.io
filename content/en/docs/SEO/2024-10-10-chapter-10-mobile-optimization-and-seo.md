@@ -5,6 +5,8 @@ date: 2024-10-10T21:49:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-10-mobile-optimization-and-seo/
 featured_image: /images/searchengineoptimization2.jpg
+weight: 100
+description: "This chapter explores the significance of mobile optimization, the impact of mobile-first indexing on SEO, and provides a comprehensive checklist to help you ensure your website is mobile-friendly."
 categories:
   - Search Engine Optimisation
 tags:

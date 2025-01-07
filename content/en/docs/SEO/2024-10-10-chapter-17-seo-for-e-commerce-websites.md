@@ -4,8 +4,8 @@ title: "Chapter 17: SEO for E-Commerce Websites"
 date: 2024-10-10T22:06:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-17-seo-for-e-commerce-websites/
-slim_seo:
-  - a:1:{s:11:"description";s:125:"This chapter explores the key components of e-commerce SEO, offering practical tips to enhance your online store's visibility";}
+weight: 170
+description: This chapter explores the key components of e-commerce SEO, offering practical tips to enhance your online store's visibility and improve its performance on search engine results pages (SERPs).
 featured_image: /images/searchengineoptimization2.jpg
 categories:
   - Search Engine Optimisation

@@ -1,12 +1,11 @@
 ---
 draft: false
-title: "Chapter 3: Types of SEO &#8211; A Comprehensive Guide"
+title: "Chapter 3: Types of SEO: A Comprehensive Guide"
 date: 2024-10-10T21:20:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
 url: /chapter-3-types-of-seo-a-comprehensive-guide/
-slim_seo:
-  - "a:1:{s:11:\"description\";s:98:\"we'll explore the four main types of SEO: On-Page SEO, Off-Page SEO, Technical SEO, and Local SEO.\";}"
+description: "Search Engine Optimization (SEO) is a multifaceted approach to improving your website's visibility in search engine results. While the ultimate goal of SEO is to increase organic traffic to your site, the strategies to achieve this can be diverse and complex. In this chapter, we'll explore the four main types of SEO: On-Page SEO, Off-Page SEO, Technical SEO, and Local SEO. Understanding these different aspects will help you develop a comprehensive SEO strategy that addresses all areas of search engine performance."
 featured_image: /images/searchengineoptimization1.jpg
 categories:
   - Search Engine Optimisation
