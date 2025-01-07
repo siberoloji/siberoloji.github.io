@@ -4,13 +4,13 @@ title: "Chapter 16: Social Signals and SEO"
 date: 2024-10-10T22:04:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-16-social-signals-and-seo/
-slim_seo:
-  - a:1:{s:11:"description";s:143:"the role of social signals in SEO, how they impact search rankings to leverage social media to boost your website’s visibility and authority.";}
+weight: 160
 featured_image: /images/searchengineoptimization1.jpg
 categories:
   - Search Engine Optimisation
 tags:
   - seo
+description: This chapter will delve into the role of social signals in SEO, how they impact search rankings, and effective strategies to leverage social media to boost your website’s visibility and authority.
 ---
 
 

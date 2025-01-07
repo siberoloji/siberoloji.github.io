@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'Android Uygulamada &#8220;Geri Tuşu&#8221; Ekleme Nasıl Yapılır?'
-date: '2022-03-01T13:40:58+03:00'
+title: Android Uygulamada Geri Tuşu Ekleme Nasıl Yapılır?
+date: 2022-03-01T13:40:58+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/
-burst_total_pageviews_count:
-    - '11'
+url: /tr/android-uygulamada-geri-tusu-ekleme-nasil-yapilir/
 featured_image: /images/upbuttonhalfscreen.png
 categories:
-    - 'Android Kod Örnekleri'
+    - Android Kod Örnekleri
 tags:
     - android
-    - 'android geri tuşu'
+    - android geri tuşu
+description: ""
 ---
 
 

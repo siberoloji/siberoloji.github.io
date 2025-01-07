@@ -4,6 +4,8 @@ title: "Chapter 5: Keyword Research Basics"
 date: 2024-10-10T21:25:18+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-5-keyword-research-basics/
+weight: 50
+description: "This chapter delves into the essential aspects of keyword research, including its importance, tools to use, and a step-by-step guide to conducting effective keyword research."
 featured_image: /images/searchengineoptimization2.jpg
 categories:
   - Search Engine Optimisation

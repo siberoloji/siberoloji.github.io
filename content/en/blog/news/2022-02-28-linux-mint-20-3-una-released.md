@@ -1,19 +1,16 @@
 ---
 draft: false
-
-title:  'Linux Mint 20.3 &#8220;Una&#8221; Released'
-date: '2022-02-28T20:58:03+03:00'
+title: "Linux Mint 20.3 Una Released "
+date: 2022-02-28T20:58:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /linux-mint-20-3-una-released/
+url: /linux-mint-20-3-una-released/
 featured_image: /images/cinnamon.png
 categories:
-    - 'Linux News'
+    - Linux News
 tags:
     - linux
-    - 'linux mint'
-    - 'linux news'
+    - linux mint
+    - linux news
 ---
 
 

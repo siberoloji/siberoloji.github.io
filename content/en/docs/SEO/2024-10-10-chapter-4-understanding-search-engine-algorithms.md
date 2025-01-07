@@ -4,7 +4,9 @@ title: "Chapter 4: Understanding Search Engine Algorithms"
 date: 2024-10-10T21:23:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-4-understanding-search-engine-algorithms/
+weight: 40
 featured_image: /images/searchengineoptimization1.jpg
+description: In the vast digital landscape of the internet, search engines serve as our primary guides, helping us navigate through billions of web pages to find the information we need. At the heart of this seemingly magical process lie complex algorithms - the secret recipes that search engines use to determine which pages should appear at the top of search results. In this chapter, we'll delve into the intricacies of search engine algorithms, focusing primarily on Google's algorithm as it's the most widely used search engine worldwide.
 categories:
   - Search Engine Optimisation
 tags:

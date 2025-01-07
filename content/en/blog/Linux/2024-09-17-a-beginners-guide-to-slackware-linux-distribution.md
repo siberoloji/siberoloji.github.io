@@ -46,9 +46,7 @@ Key Features of Slackware Linux
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 ## Why Choose Slackware as a Beginner?
@@ -86,9 +84,7 @@ If you value control over your system, Slackware gives you that in spades. You d
 One of the biggest advantages of Slackware is its level of customization. You can build a system that is tailored exactly to your needs without any unnecessary software or services running in the background. For users who want a streamlined and efficient system, this is a significant benefit.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 ## Installing Slackware Linux
@@ -159,9 +155,7 @@ Once your disk is partitioned, you can proceed with the actual installation of S
 After installing the software packages, you'll need to configure a few system settings. This includes things like the root password, network settings, and bootloader installation. Slackware will prompt you through these steps, but most of the configuration is done manually by editing files in `/etc/`.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 ## Using Slackware After Installation
@@ -199,9 +193,7 @@ Learning to Configure Software
 A core part of using Slackware is learning how to configure software manually. For example, network settings can be configured by editing the `/etc/rc.d/rc.inet1.conf` file. While this might seem difficult at first, it’s a valuable skill to learn, as it gives you insight into how Linux systems work at a deeper level.
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 ## Pros and Cons of Slackware for Beginners
@@ -231,9 +223,7 @@ Cons:
 
 
 
-<!-- wp:separator -->
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-<!-- /wp:separator -->
+ 
 
 
 ## Conclusion

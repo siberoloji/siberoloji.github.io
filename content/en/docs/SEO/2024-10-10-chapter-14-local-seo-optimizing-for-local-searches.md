@@ -4,6 +4,8 @@ title: "Chapter 14: Local SEO: Optimizing for Local Searches"
 date: 2024-10-10T21:59:38+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-14-local-seo-optimizing-for-local-searches/
+weight: 140
+description: Learn the importance of local SEO, how it works, and effective strategies to optimize your website and online presence for local searches.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
   - Search Engine Optimisation

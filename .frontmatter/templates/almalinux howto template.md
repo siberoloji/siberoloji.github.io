@@ -11,18 +11,8 @@ tags:
 categories:
   - Linux
   - Linux How-to
-type: docs
-prev: 
-next: 
-authors:
-  - name: İbrahim Korucuoğlu
-    link: https://github.com/siberoloji
-    image: https://github.com/siberoloji.png
-toc: true
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - AlmaLinux
-excludeSearch: false
-sidebar:
-  open: true
 featured_image: /images/almalinux.webp
 ---

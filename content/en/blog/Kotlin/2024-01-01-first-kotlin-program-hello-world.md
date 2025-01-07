@@ -1,23 +1,16 @@
 ---
 draft: false
-
-title:  'First Kotlin Program &#8220;Hello World&#8221;'
-date: '2024-01-01T14:13:06+03:00'
+title: "First Kotlin Program Hello World "
+date: 2024-01-01T14:13:06+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'When starting to learn programming languages, we always start with the same example. Let''s start our Kotlin programming article with the "Hello World" program without breaking tradition.' 
- 
-url:  /first-kotlin-program-hello-world/
-classicmag_post_sidebar_option:
-    - right-sidebar
-classicmag_header_overlay:
-    - global-layout
+description: When starting to learn programming languages, we always start with the same example. Let's start our Kotlin programming article with the "Hello World" program without breaking tradition.
+url: /first-kotlin-program-hello-world/
 featured_image: /images/KotlinFullColorLogoMarkRGB-250-250.png
 categories:
-    - 'Kotlin Fundamentals'
+    - Kotlin Fundamentals
 tags:
     - kotlin
-    - 'kotlin fundamentals'
+    - kotlin fundamentals
     - software
 ---
 

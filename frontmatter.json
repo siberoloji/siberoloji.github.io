@@ -108,28 +108,12 @@
       "path": "[[workspace]]/content/en/blog"
     },
     {
-      "title": "tasks",
-      "path": "[[workspace]]/content/en/docs/tasks"
-    },
-    {
-      "title": "tutorials",
-      "path": "[[workspace]]/content/en/docs/tutorials"
-    },
-    {
-      "title": "reference",
-      "path": "[[workspace]]/content/en/docs/reference"
-    },
-    {
       "title": "kalibook",
       "path": "[[workspace]]/content/en/docs/kalibook"
     },
     {
       "title": "howtos",
       "path": "[[workspace]]/content/en/docs/howtos"
-    },
-    {
-      "title": "getting-started",
-      "path": "[[workspace]]/content/en/docs/getting-started"
     },
     {
       "title": "bob",
@@ -152,14 +136,6 @@
       "path": "[[workspace]]/content/en/docs/howtos/nmap"
     },
     {
-      "title": "Ponycopters",
-      "path": "[[workspace]]/content/en/docs/tasks/Ponycopters"
-    },
-    {
-      "title": "first-post",
-      "path": "[[workspace]]/content/en/blog/news/first-post"
-    },
-    {
       "title": "Chapter 1-Kali Tools",
       "path": "[[workspace]]/content/en/docs/kalibook/Chapter 1-Kali Tools"
     },
@@ -174,14 +150,6 @@
     {
       "title": "bobsalmalinuxadventures",
       "path": "[[workspace]]/content/en/docs/bob/bobsalmalinuxadventures"
-    },
-    {
-      "title": "ntp-ssh",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/ntp-ssh"
-    },
-    {
-      "title": "initial-settings",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/initial-settings"
     },
     {
       "title": "tr",
@@ -206,14 +174,6 @@
     {
       "title": "draft",
       "path": "[[workspace]]/content/tr/blog/draft"
-    },
-    {
-      "title": "tutorials",
-      "path": "[[workspace]]/content/tr/docs/tutorials"
-    },
-    {
-      "title": "tasks",
-      "path": "[[workspace]]/content/tr/docs/tasks"
     },
     {
       "title": "initial-settings",
@@ -244,20 +204,8 @@
       "path": "[[workspace]]/content/tr/docs/alice/alicewordpressadventures"
     },
     {
-      "title": "getting-started",
-      "path": "[[workspace]]/content/tr/docs/getting-started"
-    },
-    {
       "title": "nmap",
       "path": "[[workspace]]/content/tr/docs/howtos/nmap"
-    },
-    {
-      "title": "Ponycopters",
-      "path": "[[workspace]]/content/tr/docs/tasks/Ponycopters"
-    },
-    {
-      "title": "reference",
-      "path": "[[workspace]]/content/tr/docs/reference"
     },
     {
       "title": "Cybersecurity",
@@ -274,10 +222,6 @@
     {
       "title": "Android",
       "path": "[[workspace]]/content/en/blog/Android"
-    },
-    {
-      "title": "dns-dhcp",
-      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/dns-dhcp"
     },
     {
       "title": "C++",
@@ -306,6 +250,74 @@
     {
       "title": "Gaming",
       "path": "[[workspace]]/content/en/blog/Gaming"
+    },
+    {
+      "title": "1-initial-settings",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/1-initial-settings"
+    },
+    {
+      "title": "2-ntp-ssh",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/2-ntp-ssh"
+    },
+    {
+      "title": "3-dns-dhcp",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/3-dns-dhcp"
+    },
+    {
+      "title": "4-storage-server-nfs-iscsi",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/4-storage-server-nfs-iscsi"
+    },
+    {
+      "title": "5-virtualization-kvm",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/5-virtualization-kvm"
+    },
+    {
+      "title": "6-container-platform-podman",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/6-container-platform-podman"
+    },
+    {
+      "title": "7-directory-server-freeipa-openldap",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/7-directory-server-freeipa-openldap"
+    },
+    {
+      "title": "8-apache-httpd",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/8-apache-httpd"
+    },
+    {
+      "title": "9-nginx",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/9-nginx"
+    },
+    {
+      "title": "10-postgresql-mariadb",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/10-postgresql-mariadb"
+    },
+    {
+      "title": "11-ftp-samba-mail-server",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/11-ftp-samba-mail-server"
+    },
+    {
+      "title": "12-proxy-load-balance",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/12-proxy-load-balance"
+    },
+    {
+      "title": "13-monitoring",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/13-monitoring"
+    },
+    {
+      "title": "14-security",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/14-security"
+    },
+    {
+      "title": "15-development",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/15-development"
+    },
+    {
+      "title": "16-desktop-environment",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/16-desktop-environment"
+    },
+    {
+      "title": "17-other-topics",
+      "path": "[[workspace]]/content/en/docs/howtos/almalinux9/17-other-topics"
     }
   ],
   "frontMatter.git.enabled": true

@@ -6,17 +6,14 @@ keywords:
   - Quantum Computing with Kubernetes
 description: Emerging field of quantum computing, leveraging Kubernetes to manage hybrid quantum-classical workloads and integrate quantum computing frameworks
 date: 2024-11-21
-slug: bob-explores-quantum-computing-kubernetes-alma-linux
+url: bob-explores-quantum-computing-kubernetes-alma-linux
 tags:
   - AlmaLinux
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 510
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 51, *"Bob Explores Quantum Computing with Kubernetes!"*. In this chapter, Bob delves into the emerging field of **quantum computing**, leveraging Kubernetes to manage hybrid quantum-classical workloads and integrate quantum computing frameworks with traditional infrastructure.

@@ -1,25 +1,17 @@
 ---
 draft: false
-
-title:  'General Technology News Roundup for Last Week (September 2024)'
-date: '2024-09-28T01:22:08+03:00'
+title: General Technology News Roundup for Last Week (September 2024)
+date: 2024-09-28T01:22:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /general-technology-news-roundup-for-last-week-september-2024/
- 
+url: /general-technology-news-roundup-for-last-week-september-2024/
 featured_image: /images/cybersecuritynews.webp
 categories:
     - News
 tags:
-    - 'it news'
+    - it news
 ---
 
-<!-- wp:embed {"url":"https://youtu.be/PxJ74vTtK8E","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/PxJ74vTtK8E
-</div></figure>
-<!-- /wp:embed -->
+{{<youtube "JGwWNGJdvx8">}}
 
 
 The tech world experienced an eventful week in September 2024, marked by groundbreaking product announcements, AI advancements, and continued discussions on cybersecurity and privacy. Here’s a comprehensive summary of the most notable tech stories from last week:

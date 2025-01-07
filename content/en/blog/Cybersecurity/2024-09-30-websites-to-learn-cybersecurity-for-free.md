@@ -16,11 +16,7 @@ tags:
 Cybersecurity has become one of the most critical fields in today’s digital world. With the ever-increasing number of cyber threats and attacks, there’s a growing demand for professionals who are knowledgeable about securing systems, networks, and data. However, getting started in cybersecurity can seem overwhelming, especially when considering the costs associated with formal education. Fortunately, there are numerous platforms that offer free resources and courses to help you learn cybersecurity. In this blog post, we will explore 10 excellent websites where you can learn cybersecurity for free.
 
 
-<!-- wp:embed {"url":"https://youtu.be/ahfx6J9Rgbw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/ahfx6J9Rgbw
-</div></figure>
-<!-- /wp:embed -->
+{{< youtube ahfx6J9Rgbw>}}
 
 
 1. **TryHackMe**

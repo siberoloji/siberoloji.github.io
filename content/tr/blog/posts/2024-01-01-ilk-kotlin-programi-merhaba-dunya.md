@@ -1,16 +1,13 @@
 ---
 draft: false
-
-title:  'İlk Kotlin Programı &#8220;Merhaba Dünya&#8221;'
-date: '2024-01-01T13:48:45+03:00'
+title: İlk Kotlin Programı Merhaba Dünya
+date: 2024-01-01T13:48:45+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan "Merhaba Dünya" programı ile başlayalım.' 
- 
-url:  /tr/ilk-kotlin-programi-merhaba-dunya/
+description: Genel olarak programlama dillerini öğrenmeye başlarken hep aynı örnek ile başlanır. Biz de Kotlin programlama yazımıza geleneği bozmadan "Merhaba Dünya" programı ile başlayalım.
+url: /tr/ilk-kotlin-programi-merhaba-dunya/
 featured_image: /images/KotlinFullColorLogoMarkRGB-250-250.png
 categories:
-    - 'Temel Kotlin'
+    - Temel Kotlin
 tags:
     - kotlin
     - yazılım

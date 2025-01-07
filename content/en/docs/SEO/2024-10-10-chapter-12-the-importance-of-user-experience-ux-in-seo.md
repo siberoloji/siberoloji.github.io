@@ -5,6 +5,8 @@ date: 2024-10-10T21:54:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-12-the-importance-of-user-experience-ux-in-seo/
 featured_image: /images/searchengineoptimization2.jpg
+weight: 120
+description: In this chapter, we will explore the significance of UX in SEO, the key factors contributing to a positive user experience, and actionable tips to optimize your site for better UX and SEO performance.
 categories:
   - Search Engine Optimisation
 tags:

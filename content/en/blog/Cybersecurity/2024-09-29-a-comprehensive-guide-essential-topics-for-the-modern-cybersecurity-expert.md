@@ -16,12 +16,7 @@ tags:
 In today's rapidly evolving digital landscape, the role of a cybersecurity expert has never been more crucial. As cyber threats become increasingly sophisticated, it's essential for professionals in this field to maintain a broad and deep understanding of various topics. This blog post aims to provide a detailed and categorized list of subjects that every cybersecurity expert should be well-versed in.
 
 
-<!-- wp:embed {"url":"https://youtu.be/pvLesnmGvDU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/pvLesnmGvDU
-</div></figure>
-<!-- /wp:embed -->
-
+{{< youtube pvLesnmGvDU >}}
 
 ## 1. Fundamental Concepts
 

@@ -1,18 +1,16 @@
 ---
 draft: false
-
-title:  'Linux Mint 20.3 &#8220;Una&#8221; Yayınlandı'
-date: '2022-01-15T20:48:22+03:00'
+title: Linux Mint 20.3 Una Yayınlandı
+date: 2022-01-15T20:48:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/linux-mint-20-3-una-yayinlandi/
+url: /tr/linux-mint-20-3-una-yayinlandi/
 featured_image: /images/cinnamon.png
 categories:
-    - 'Linux Haberler'
+    - Linux Haberler
 tags:
     - linux
-    - 'linux mint'
+    - linux mint
+description: ""
 ---
 
 

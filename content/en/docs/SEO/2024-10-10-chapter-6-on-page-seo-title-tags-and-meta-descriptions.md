@@ -4,6 +4,8 @@ title: "Chapter 6: On-Page SEO: Title Tags and Meta Descriptions"
 date: 2024-10-10T21:30:13+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-6-on-page-seo-title-tags-and-meta-descriptions/
+weight: 60
+description: "Learn how to optimize your title tags and meta descriptions for higher click-through rates and improved search engine rankings."
 featured_image: /images/searchengineoptimization2.jpg
 categories:
   - Search Engine Optimisation

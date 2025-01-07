@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'How to Configure mod_md on AlmaLinux 9: A Step-by-Step Guide'
-date: '2024-11-02T13:31:08+03:00'
+title:  "How to Configure mod_md on AlmaLinux 9: A Step-by-Step Guide"
+date: 2024-11-02T13:31:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This guide will take you through the process, step-by-step, to ensure a smooth setup on AlmaLinux 9, an enterprise-grade, open-source Linux OS.' 
-draft: false
-
+description: This guide will take you through the process, step-by-step, to ensure a smooth setup on AlmaLinux 9, an enterprise-grade, open-source Linux OS.
 url:  /how-to-configure-mod_md-on-almalinux-9-a-step-by-step-guide/
 featured_image: /images/almalinux.webp
 categories:
-    - 'Linux How-to'
+    - Linux How-to
 tags:
-    - 'alma linux'
+    - alma linux
     - mod_md
 ---
 
