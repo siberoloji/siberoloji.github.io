@@ -30,7 +30,7 @@ Please follow us!
 We do a [Pull Request](https://github.com/siberoloji/siberoloji.github.io/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/siberoloji_ltd" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="Follow us on X!" url="https://x.com/siberoloji_ltd" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 
