@@ -25,7 +25,7 @@ The provided C++ code is a simple console application that prompts the user to e
 
 
 ```cpp
-#include &lt;iostream&gt; // Include the iostream library to enable input/output operations
+#include <iostream> // Include the iostream library to enable input/output operations
 using namespace std; // Use the standard namespace
 
 // Main function
@@ -33,16 +33,16 @@ int main() {
     int userInput; // Declare an integer variable to store user input
 
     // Prompt the user to enter an integer
-    cout &lt;&lt; "Enter an integer: ";
-    cin &gt;&gt; userInput; // Read the user input from the console
+    cout << "Enter an integer: ";
+    cin >> userInput; // Read the user input from the console
 
     // Output the entered integer
-    cout &lt;&lt; "You entered: " &lt;&lt; userInput &lt;&lt; endl;
+    cout << "You entered: " << userInput << endl;
 
     userInput = 2 * userInput; // Double the user input
 
     // Output the doubled value
-    cout &lt;&lt; "The doubled value is: " &lt;&lt; userInput &lt;&lt; endl;
+    cout << "The doubled value is: " << userInput << endl;
 
     return 0; // Return 0 to indicate that the program has run successfully
 }
@@ -62,7 +62,7 @@ The code begins with the inclusion of the `iostream` library, which is necessary
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -82,8 +82,8 @@ The program then prompts the user to enter an integer using `cout`, and reads th
 
 
 ```cpp
-cout &lt;&lt; "Enter an integer: ";
-cin &gt;&gt; userInput;
+cout << "Enter an integer: ";
+cin >> userInput;
 ```
 
 
@@ -92,7 +92,7 @@ The entered integer is then outputted to the console.
 
 
 ```cpp
-cout &lt;&lt; "You entered: " &lt;&lt; userInput &lt;&lt; endl;
+cout << "You entered: " << userInput << endl;
 ```
 
 
@@ -110,7 +110,7 @@ Finally, the doubled value is outputted to the console, and the `main` function 
 
 
 ```cpp
-cout &lt;&lt; "The doubled value is: " &lt;&lt; userInput &lt;&lt; endl;
+cout << "The doubled value is: " << userInput << endl;
 return 0;
 ```
 

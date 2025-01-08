@@ -35,20 +35,20 @@ Bu örneğimizde bir pointer tanımlayıp değerini görüntüleyip değiştirme
  *
  * @return 0 indicating successful execution of the program
  */
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
     int value = 10; // Initialize an integer variable with the value 10
     int* pointer = &amp;value; // Create a pointer that points to the memory address of value
 
-    cout &lt;&lt; "Initial value: " &lt;&lt; value &lt;&lt; endl; // Print the initial value of value
-    cout &lt;&lt; "Address of value: " &lt;&lt; &amp;value &lt;&lt; endl; // Print the memory address of value
-    cout &lt;&lt; "Value pointed to by pointer: " &lt;&lt; *pointer &lt;&lt; endl; // Print the value pointed to by pointer
+    cout << "Initial value: " << value << endl; // Print the initial value of value
+    cout << "Address of value: " << &amp;value << endl; // Print the memory address of value
+    cout << "Value pointed to by pointer: " << *pointer << endl; // Print the value pointed to by pointer
 
     *pointer = 20; // Update the value pointed to by pointer to 20
 
-    cout &lt;&lt; "New value of value: " &lt;&lt; value &lt;&lt; endl; // Print the new value of value
+    cout << "New value of value: " << value << endl; // Print the new value of value
 
     return 0; // Return 0 indicating successful execution of the program
 }

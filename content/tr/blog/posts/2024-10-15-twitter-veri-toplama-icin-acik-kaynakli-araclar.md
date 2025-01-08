@@ -57,11 +57,6 @@ Ayrıca Twitter verilerini kötü amaçlı olarak toplamanın Twitter'ın hizmet
 
 
 Twitter veri toplama için özel olarak birkaç açık kaynaklı araç geliştirilmiştir. Bu araçlar, Twitter verilerini gerçek zamanlı olarak çıkarmak, analiz etmek ve izlemek için güçlü özellikler sunar. Aşağıda, en yaygın kullanılan ve etkili çözümlerden bazılarını inceliyoruz:
-
-
-
-
-
 1. **Twarc**
 
 
@@ -86,11 +81,6 @@ Twarc, Twitter API'sini kullanarak doğrudan tweet'leri toplayan bir komut satı
 * Kriz veya olayla ilgili kamuoyunun duyarlılığının izlenmesi.
 
 * **Kurulum ve Kullanım** : Twarc, Python'da pip aracılığıyla kurulabilir. Kurulduktan sonra, kimlik doğrulama ayrıntılarını sağlayarak ve basit komutları çalıştırarak Twitter'ı taramaya başlayabilirsiniz.
-
-
-
-
-
 
 2. **snscrape**
 
@@ -117,11 +107,6 @@ Twarc, Twitter API'sini kullanarak doğrudan tweet'leri toplayan bir komut satı
 
 * **Kurulum ve Kullanım** : snscrape pip kullanılarak kolayca kurulur. Doğrudan komut satırından kullanılabilir veya otomatik kazıma için Python betiklerine entegre edilebilir.
 
-
-
-
-
-
 3. **Twint**
 
 
@@ -147,11 +132,6 @@ Twarc, Twitter API'sini kullanarak doğrudan tweet'leri toplayan bir komut satı
 
 * **Kurulum ve Kullanım** : Twint pip üzerinden kurulabilir ve komut satırından kullanımı kolaydır. Araç, bir kullanıcının tweetlerini belirli bir tarih aralığından kazımak gibi derinlemesine sorgulamalara olanak tanır.
 
-
-
-
-
-
 4. **TweetScraper**
 
 
@@ -175,11 +155,6 @@ TweetScraper, tweetleri toplu olarak toplamak için daha minimalist bir çözüm
 
 * **Kurulum ve Kullanım** : TweetScraper Python ve MongoDB gerektirir. Kurulumdan sonra, tweetleri kazımaya ve depolamaya başlamak için komut satırından çalıştırabilirsiniz.
 
-
-
-
-
-
 5. **ScrapeStorm**
 
 
@@ -200,11 +175,6 @@ ScrapeStorm, özellikle Twitter için tasarlanmamış olsa da Twitter verilerini
 * Kod yazmadan sosyal medya verilerini toplamak isteyen teknik olmayan kullanıcılar.
 
 * Kapsamlı analiz için birden fazla platformda sosyal medya verilerinin toplanması.
-
-
-
-
-
 #### Etik Hususlar
 
 

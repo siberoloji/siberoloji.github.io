@@ -25,11 +25,6 @@ AlmaLinux is a powerful, stable Linux distribution, often chosen for web hosting
 
 
 In this blog post, we’ll walk through the steps to enable and configure the UserDir module in Apache on AlmaLinux 9, allowing users to have their own web directories under `/home/username/public_html`. We'll cover everything from setting up the necessary modules, adjusting permissions, to configuring the server correctly to ensure proper security.
-
-
-
-
-
 Table of Contents
 
 
@@ -51,11 +46,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 ## 1. Introduction to UserDir in Apache
 
 
@@ -69,11 +59,6 @@ http://yourdomain.com/~username```
 
 
 This feature is beneficial when managing shared hosting environments, where multiple users or developers may need to host individual websites on a single server. Each user’s content is stored in a separate home directory, preventing conflicts and allowing for easier organization.
-
-
-
-
-
 ## 2. Prerequisites
 
 
@@ -88,11 +73,6 @@ Before we start, ensure the following requirements are met:
 * **Root or sudo user privileges** to configure the system.
 
 * Basic knowledge of terminal commands and file management.
-
-
-
-
-
 
 ## 3. Step 1: Install Apache on AlmaLinux 9
 
@@ -143,11 +123,6 @@ sudo systemctl status httpd
 
 
 You should see an output indicating that the Apache service is active and running.
-
-
-
-
-
 ## 4. Step 2: Enable the UserDir Module
 
 
@@ -180,20 +155,15 @@ In this file, you should see configuration directives that look something like t
 
 
 ```bash
-&lt;IfModule mod_userdir.c&gt;
+<IfModule mod_userdir.c>
     UserDir public_html
     UserDir disabled root
-&lt;/IfModule&gt;
+</IfModule>
 ```
 
 
 
 The `UserDir public_html` line means that users’ websites will be served from the `public_html` directory within their home directories.
-
-
-
-
-
 ## 5. Step 3: Creating User Directories
 
 
@@ -238,11 +208,6 @@ sudo chmod 755 /home/username/public_html
 
 
 The `755` permission ensures that the web server can read the files, while the user has full control over their directory.
-
-
-
-
-
 ## 6. Step 4: Configuring Apache for UserDir
 
 
@@ -281,11 +246,6 @@ Once you've made changes to the configuration file, restart Apache to apply the 
 ```bash
 sudo systemctl restart httpd
 ```
-
-
-
-
-
 ## 7. Step 5: Testing the UserDir Configuration
 
 
@@ -315,25 +275,20 @@ Add the following content:
 
 
 ```bash
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Test UserDir&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to UserDir for username&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test UserDir</title>
+</head>
+<body>
+    <h1>Welcome to UserDir for username</h1>
+</body>
+</html>
 ```
 
 
 
 Save the file, then navigate to `http://yourdomain.com/~username` in your browser. If everything is configured correctly, you should see the test HTML page.
-
-
-
-
-
 ## 8. Step 6: Adjusting Permissions for Security
 
 
@@ -371,11 +326,6 @@ Protecting Other User Directories
 
 
 It’s important to ensure that users cannot access each other’s files. The permissions we've set ensure that users have restricted access to home directories while allowing public access to `public_html`. However, always review your system’s security configuration to prevent privilege escalation.
-
-
-
-
-
 ## 9. Conclusion
 
 

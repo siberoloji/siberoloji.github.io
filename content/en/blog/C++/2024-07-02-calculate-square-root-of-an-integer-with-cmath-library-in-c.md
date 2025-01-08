@@ -25,8 +25,8 @@ The provided C++ code is a simple program that calculates the square root of a u
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;cmath&gt;
+#include <iostream>
+#include <cmath>
 using namespace std;
 
 // Main function of the program
@@ -35,18 +35,18 @@ int main() {
     float inputNumber;
 
     // Prompt the user to enter a number
-    cout &lt;&lt; "Enter a number to calculate its square root: ";
+    cout << "Enter a number to calculate its square root: ";
     // Store the user's input in the variable
-    cin &gt;&gt; inputNumber;
+    cin >> inputNumber;
 
     // Check if the input number is non-negative
-    if (inputNumber &gt;= 0.0) {
+    if (inputNumber >= 0.0) {
         // Calculate the square root of the input number
         float squareRoot = sqrt(inputNumber);
         // Print the input number
-        cout &lt;&lt; "Input number: " &lt;&lt; inputNumber &lt;&lt; " ";
+        cout << "Input number: " << inputNumber << " ";
         // Print the square root of the input number
-        cout &lt;&lt; "Square root: " &lt;&lt; squareRoot &lt;&lt; " ";
+        cout << "Square root: " << squareRoot << " ";
     }
 }
 ```
@@ -61,8 +61,8 @@ The provided C++ code is a simple program that calculates the square root of a u
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;cmath&gt;
+#include <iostream>
+#include <cmath>
 using namespace std;
 ```
 
@@ -81,8 +81,8 @@ The program then prompts the user to enter a number using `cout` and stores the 
 
 
 ```cpp
-cout &lt;&lt; "Enter a number to calculate its square root: ";
-cin &gt;&gt; inputNumber;
+cout << "Enter a number to calculate its square root: ";
+cin >> inputNumber;
 ```
 
 
@@ -91,7 +91,7 @@ The program checks if the input number is non-negative using an `if` statement. 
 
 
 ```cpp
-if (inputNumber &gt;= 0.0) {```
+if (inputNumber >= 0.0) {```
 
 
 
@@ -108,8 +108,8 @@ Finally, the program prints the input number and its square root using `cout`.
 
 
 ```cpp
-cout &lt;&lt; "Input number: " &lt;&lt; inputNumber &lt;&lt; " ";
-cout &lt;&lt; "Square root: " &lt;&lt; squareRoot &lt;&lt; " ";
+cout << "Input number: " << inputNumber << " ";
+cout << "Square root: " << squareRoot << " ";
 ```
 
 

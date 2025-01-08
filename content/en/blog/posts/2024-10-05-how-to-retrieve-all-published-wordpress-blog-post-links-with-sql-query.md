@@ -56,11 +56,6 @@ Retrieving all published WordPress blog post links using an SQL query involves d
 
 * To filter for published posts only, we'll use the `WHERE` clause and specify that the `post_status`column should equal 'publish'.
 
-
-
-
-
-
 **Basic SQL Query:**
 
 
@@ -147,10 +142,10 @@ PHP
 
 ```bash
 global $wpdb;
-$results = $wpdb-&gt;get_results("SELECT ID, post_name FROM wp_posts WHERE post_status = 'publish'");
+$results = $wpdb->get_results("SELECT ID, post_name FROM wp_posts WHERE post_status = 'publish'");
 
 foreach ($results as $post) {
-    echo $post-&gt;post_name;
+    echo $post->post_name;
 }
 ```
 

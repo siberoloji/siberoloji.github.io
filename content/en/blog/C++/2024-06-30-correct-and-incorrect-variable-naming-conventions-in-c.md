@@ -26,23 +26,23 @@ This program example demonstrates the correct and incorrect variable naming conv
  * @brief This program demonstrates the correct and incorrect variable naming conventions in C++.
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
     // Correct variable naming conventions
-    int number; ///&lt; Variable names can start with a letter
-    int Number; ///&lt; Variable names are case sensitive
-    string NUMBER; ///&lt; Variable names can be in uppercase
-    float number1; ///&lt; Variable names can contain numbers
-    bool number_1; ///&lt; Variable names can contain underscores
-    int number_1_; ///&lt; Variable names can end with an underscore
-    int _number; ///&lt; Variable names can start with an underscore
-    int _number_; ///&lt; Variable names can start and end with an underscore
-    int _1number; ///&lt; Variable names can contain numbers after an underscore
-    int _1_number; ///&lt; Variable names can contain underscores and numbers
-    int _1_number_; ///&lt; Variable names can start and end with an underscore and contain numbers
-    int number1_; ///&lt; Variable names can end with a number and an underscore
+    int number; ///< Variable names can start with a letter
+    int Number; ///< Variable names are case sensitive
+    string NUMBER; ///< Variable names can be in uppercase
+    float number1; ///< Variable names can contain numbers
+    bool number_1; ///< Variable names can contain underscores
+    int number_1_; ///< Variable names can end with an underscore
+    int _number; ///< Variable names can start with an underscore
+    int _number_; ///< Variable names can start and end with an underscore
+    int _1number; ///< Variable names can contain numbers after an underscore
+    int _1_number; ///< Variable names can contain underscores and numbers
+    int _1_number_; ///< Variable names can start and end with an underscore and contain numbers
+    int number1_; ///< Variable names can end with a number and an underscore
 
     // Incorrect variable naming conventions
     // int 1number; // Variable names cannot start with a number
@@ -70,7 +70,7 @@ The program begins with the inclusion of the `iostream` library, which is used f
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -80,9 +80,9 @@ The `main` function is where the execution of the program starts. Inside this fu
 
 
 ```cpp
-int number; ///&lt; Variable names can start with a letter
-int Number; ///&lt; Variable names are case sensitive
-string NUMBER; ///&lt; Variable names can be in uppercase```
+int number; ///< Variable names can start with a letter
+int Number; ///< Variable names are case sensitive
+string NUMBER; ///< Variable names can be in uppercase```
 
 
 
@@ -90,9 +90,9 @@ In C++, variable names can start with a letter, are case sensitive, and can be i
 
 
 ```cpp
-float number1; ///&lt; Variable names can contain numbers
-bool number_1; ///&lt; Variable names can contain underscores
-int number_1_; ///&lt; Variable names can end with an underscore```
+float number1; ///< Variable names can contain numbers
+bool number_1; ///< Variable names can contain underscores
+int number_1_; ///< Variable names can end with an underscore```
 
 
 
@@ -100,9 +100,9 @@ Variable names can also start with an underscore, and they can contain numbers a
 
 
 ```cpp
-int _number; ///&lt; Variable names can start with an underscore
-int _1number; ///&lt; Variable names can contain numbers after an underscore
-int _1_number; ///&lt; Variable names can contain underscores and numbers
+int _number; ///< Variable names can start with an underscore
+int _1number; ///< Variable names can contain numbers after an underscore
+int _1_number; ///< Variable names can contain underscores and numbers
 ```
 
 

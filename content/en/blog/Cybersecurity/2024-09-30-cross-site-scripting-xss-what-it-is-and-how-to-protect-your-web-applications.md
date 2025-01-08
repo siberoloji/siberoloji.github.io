@@ -74,11 +74,6 @@ There are several types of XSS attacks, each with its own unique way of being ex
 * **Impact**: DOM-based XSS can be harder to detect and can have significant consequences depending on the context of the attack.
 
 * **Common Targets**: JavaScript-heavy applications and single-page web apps.
-
-
-
-
-
 #### **How XSS Attacks Work**
 
 
@@ -101,7 +96,7 @@ Here’s a simplified example to illustrate how an XSS attack might occur:
 
 
 ```bash
-   &lt;script&gt;alert('Hacked!');&lt;/script&gt;
+   <script>alert('Hacked!');</script>
 ```
 
 
@@ -109,11 +104,6 @@ Here’s a simplified example to illustrate how an XSS attack might occur:
 <ol start="3" class="wp-block-list">* **Execution in the User's Browser**: When other users visit the page and load the comment, the browser interprets the script tag and executes the code. In this case, it would trigger an alert box, but more dangerous scripts could steal cookies or perform other malicious actions.
 
 * **Impact on the User**: If the script was designed to steal session cookies, the attacker could hijack the user's session and impersonate them within the web application.
-
-
-
-
-
 #### **Real-World Impact of XSS Attacks**
 
 
@@ -148,7 +138,7 @@ While XSS vulnerabilities are common, they can be effectively mitigated through 
 
 * **Input Validation**: Always validate user input to ensure it conforms to expected formats. For example, ensure that email fields contain only valid email addresses, and numeric fields contain only numbers. By restricting the types of input, you reduce the chance of malicious scripts being injected.
 
-* **Output Encoding**: Encode user-generated content before it is displayed on a web page. This ensures that any potentially dangerous characters (like `&lt;`, `&gt;`, and `&amp;`) are displayed as text rather than being interpreted as HTML or JavaScript. For example, the string `&lt;script&gt;` should be converted to `&amp;lt;script&amp;gt;` so that it’s displayed as text.
+* **Output Encoding**: Encode user-generated content before it is displayed on a web page. This ensures that any potentially dangerous characters (like `<`, `>`, and `&amp;`) are displayed as text rather than being interpreted as HTML or JavaScript. For example, the string `<script>` should be converted to `&amp;lt;script&amp;gt;` so that it’s displayed as text.
 
 * **Use Content Security Policy (CSP)**: A Content Security Policy (CSP) is a security feature that restricts the sources from which a browser can load content. By implementing a strong CSP, you can prevent the browser from executing unauthorized scripts, even if they are injected into the page.
 
@@ -156,14 +146,9 @@ While XSS vulnerabilities are common, they can be effectively mitigated through 
 
 * **HTTP-Only Cookies**: Mark session cookies as **HTTP-only**, which prevents client-side scripts from accessing them. This can mitigate the risk of session hijacking through XSS.
 
-* **Avoid Inline JavaScript**: Wherever possible, avoid including JavaScript directly within HTML (e.g., using `onclick` attributes or `&lt;script&gt;` tags within the HTML). Instead, separate your JavaScript into external files, making it easier to control and secure.
+* **Avoid Inline JavaScript**: Wherever possible, avoid including JavaScript directly within HTML (e.g., using `onclick` attributes or `<script>` tags within the HTML). Instead, separate your JavaScript into external files, making it easier to control and secure.
 
 * **Regular Code Reviews and Audits**: Regularly review your code for potential vulnerabilities and implement security audits to identify weak spots. Automated security testing tools can also help detect XSS vulnerabilities early in the development process.
-
-
-
-
-
 #### **Conclusion**
 
 

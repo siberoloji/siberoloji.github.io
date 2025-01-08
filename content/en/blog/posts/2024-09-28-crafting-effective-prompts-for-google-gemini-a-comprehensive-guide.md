@@ -76,11 +76,6 @@ To get the best results from Google Gemini, your prompts should incorporate the 
 
 * For instance, you can ask Gemini to write a story, translate a text, or summarize an article.
 
-
-
-
-
-
 **Prompt Engineering Techniques**
 
 

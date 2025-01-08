@@ -77,7 +77,7 @@ To start using Web Mentions on your WordPress site, you will need:
 
 
 
-* Go to **Settings &gt; Discussion** in your WordPress dashboard.
+* Go to **Settings > Discussion** in your WordPress dashboard.
 
 * Check the boxes for "Attempt to notify any blogs linked to from the post" and "Allow link notifications from other blogs (pingbacks and trackbacks) on new posts."
 

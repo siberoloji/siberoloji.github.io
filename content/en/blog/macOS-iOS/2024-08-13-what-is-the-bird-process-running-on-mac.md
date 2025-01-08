@@ -59,7 +59,7 @@ Yes, the bird process is entirely safe. It's an integral part of macOS and iClou
 
 * **Restart Your Mac**: Sometimes, simply restarting your Mac can resolve temporary issues with the bird process.
 
-* **Sign Out and Back Into iCloud**: Go to System Preferences &gt; Apple ID, sign out of iCloud, and then sign back in. This can help reset the sync process.
+* **Sign Out and Back Into iCloud**: Go to System Preferences > Apple ID, sign out of iCloud, and then sign back in. This can help reset the sync process.
 
 * **Check iCloud Storage**: Ensure that you have enough iCloud storage space. If your storage is full, the bird process might struggle to sync files properly.
 

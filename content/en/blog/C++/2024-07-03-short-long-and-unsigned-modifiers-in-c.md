@@ -25,7 +25,7 @@ The provided C++ code demonstrates the declaration and usage of various fundamen
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -60,18 +60,18 @@ int main() {
     long double normalLongDouble; // Range: 2.2250738585072014e-308 to 1.7976931348623157e+308
 
     // Printing the size of each data type
-    cout &lt;&lt;"The size of int is " &lt;&lt;sizeof(Integer) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of short int is " &lt;&lt;sizeof(shortInteger) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of long int is " &lt;&lt;sizeof(longInteger) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of unsigned int is " &lt;&lt;sizeof(unsignedInteger) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of unsigned short int is " &lt;&lt;sizeof(unsignedShortInteger) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of unsigned long int is " &lt;&lt;sizeof(unsignedlongInteger) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of char is " &lt;&lt;sizeof(normalChar) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of unsigned char is " &lt;&lt;sizeof(unsignedChar) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of signed char is " &lt;&lt;sizeof(signedCchar) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of float is " &lt;&lt;sizeof(normalFloat) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of double is " &lt;&lt;sizeof(normalDouble) &lt;&lt; " bytes" &lt;&lt; endl;
-    cout &lt;&lt;"The size of long double is " &lt;&lt;sizeof(normalLongDouble) &lt;&lt; " bytes" &lt;&lt; endl;
+    cout <<"The size of int is " <<sizeof(Integer) << " bytes" << endl;
+    cout <<"The size of short int is " <<sizeof(shortInteger) << " bytes" << endl;
+    cout <<"The size of long int is " <<sizeof(longInteger) << " bytes" << endl;
+    cout <<"The size of unsigned int is " <<sizeof(unsignedInteger) << " bytes" << endl;
+    cout <<"The size of unsigned short int is " <<sizeof(unsignedShortInteger) << " bytes" << endl;
+    cout <<"The size of unsigned long int is " <<sizeof(unsignedlongInteger) << " bytes" << endl;
+    cout <<"The size of char is " <<sizeof(normalChar) << " bytes" << endl;
+    cout <<"The size of unsigned char is " <<sizeof(unsignedChar) << " bytes" << endl;
+    cout <<"The size of signed char is " <<sizeof(signedCchar) << " bytes" << endl;
+    cout <<"The size of float is " <<sizeof(normalFloat) << " bytes" << endl;
+    cout <<"The size of double is " <<sizeof(normalDouble) << " bytes" << endl;
+    cout <<"The size of long double is " <<sizeof(normalLongDouble) << " bytes" << endl;
 
     return 0;
 }
@@ -83,7 +83,7 @@ int main() {
 
 
 
-The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the `&lt;iostream&gt;` header, enabling input and output operations, and uses the `std` namespace to avoid prefixing standard library entities with `std::`.
+The provided C++ code demonstrates the declaration and usage of various fundamental data types and their sizes. It begins by including the `<iostream>` header, enabling input and output operations, and uses the `std` namespace to avoid prefixing standard library entities with `std::`.
 
 
 
@@ -111,7 +111,7 @@ For instance, the size of the `int` data type is printed with the following line
 
 
 ```cpp
-cout &lt;&lt;"The size of int is " &lt;&lt;sizeof(Integer) &lt;&lt; " bytes" &lt;&lt; endl;
+cout <<"The size of int is " <<sizeof(Integer) << " bytes" << endl;
 ```
 
 

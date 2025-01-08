@@ -155,7 +155,7 @@ Birleştirme Sıralaması algoritmasının adımlarını gösteren sözde kod ş
 
 ```bash
 MergeSort(arr[], left, right)
-    If left &gt;= right
+    If left >= right
         Return
     mid = (left + right) / 2
     MergeSort(arr, left, mid)

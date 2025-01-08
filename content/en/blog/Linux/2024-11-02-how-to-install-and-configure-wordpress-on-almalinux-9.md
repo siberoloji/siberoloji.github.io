@@ -257,11 +257,11 @@ Click **Install WordPress** when done, and you’ll be able to log in to your ne
 
 ## Step 10: Configure Basic WordPress Settings
 
-After logging into the WordPress dashboard, go to **Settings &gt; General** and configure:
+After logging into the WordPress dashboard, go to **Settings > General** and configure:
 
 1. **Site Title and Tagline**
 2. **Timezone** – Match this with your location.
-3. **Permalinks** – Go to **Settings &gt; Permalinks** and choose **Post name** for an SEO-friendly URL structure.
+3. **Permalinks** – Go to **Settings > Permalinks** and choose **Post name** for an SEO-friendly URL structure.
 
 ---
 

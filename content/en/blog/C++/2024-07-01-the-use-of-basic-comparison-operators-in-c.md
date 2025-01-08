@@ -25,7 +25,7 @@ The provided C++ code is a simple console application that demonstrates the use 
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -33,60 +33,60 @@ int main() {
     int x = 0, y = 0;
 
     // Print the question: is x equal to y?
-    cout &lt;&lt; "Question: is x equal to y?" &lt;&lt; endl;
+    cout << "Question: is x equal to y?" << endl;
 
     // Check if x is equal to y
     if (x == y) {
         // If x is equal to y, print the result
-        cout &lt;&lt; "x is equal to y" &lt;&lt; endl;
+        cout << "x is equal to y" << endl;
     }
 
     // Change the values of x and y
     x = 0, y = 1;
 
     // Print the question: is x not equal to y?
-    cout &lt;&lt; "Question: is x not equal to y?" &lt;&lt; endl;
+    cout << "Question: is x not equal to y?" << endl;
 
     // Check if x is not equal to y
     if (x != y) {
         // If x is not equal to y, print the result
-        cout &lt;&lt; "x is not equal to y" &lt;&lt; endl;
+        cout << "x is not equal to y" << endl;
     }
 
     // Change the values of x and y
     x = 1, y = 0;
 
     // Print the question: is x greater than y?
-    cout &lt;&lt; "Question: is x greater than y?" &lt;&lt; endl;
+    cout << "Question: is x greater than y?" << endl;
 
     // Check if x is greater than y
-    if (x &gt; y) {
+    if (x > y) {
         // If x is greater than y, print the result
-        cout &lt;&lt; "x is greater than y" &lt;&lt; endl;
+        cout << "x is greater than y" << endl;
     }
 
     // Change the values of x and y
     x = 2, y = 1;
 
     // Print the question: is x greater than or equal to y?
-    cout &lt;&lt; "Question: is x greater than or equal to y?" &lt;&lt; endl;
+    cout << "Question: is x greater than or equal to y?" << endl;
 
     // Check if x is greater than or equal to y
-    if (x &gt;= y) {
+    if (x >= y) {
         // If x is greater than or equal to y, print the result
-        cout &lt;&lt; "x is greater than or equal to y" &lt;&lt; endl;
+        cout << "x is greater than or equal to y" << endl;
     }
 
     // Change the values of x and y
     x = 1, y = 2;
 
     // Print the question: is x less than (or equal to) y?
-    cout &lt;&lt; "Question: is x less than (or equal to) y?" &lt;&lt; endl;
+    cout << "Question: is x less than (or equal to) y?" << endl;
 
     // Check if x is less than or equal to y
-    if (x &lt;= y) {
+    if (x <= y) {
         // If x is less than or equal to y, print the result
-        cout &lt;&lt; "x is less than or equal to y" &lt;&lt; endl;
+        cout << "x is less than or equal to y" << endl;
     }
 
     // End of the program
@@ -117,7 +117,7 @@ The code then prints a question to the console asking if `x` is equal to `y`:
 
 
 ```cpp
-cout &lt;&lt; "Question: is x equal to y?" &lt;&lt; endl;
+cout << "Question: is x equal to y?" << endl;
 ```
 
 
@@ -127,13 +127,13 @@ This is followed by an `if` statement that checks if `x` is indeed equal to `y` 
 
 ```cpp
 if (x == y) {
-    cout &lt;&lt; "x is equal to y" &lt;&lt; endl;
+    cout << "x is equal to y" << endl;
 }
 ```
 
 
 
-The code then changes the values of `x` and `y` and repeats the process with different comparison operators (`!=`, `&gt;`, `&gt;=`, `&lt;`, `&lt;=`). Each time, it prints a question to the console, checks the condition, and prints a message if the condition is true.
+The code then changes the values of `x` and `y` and repeats the process with different comparison operators (`!=`, `>`, `>=`, `<`, `<=`). Each time, it prints a question to the console, checks the condition, and prints a message if the condition is true.
 
 
 
@@ -142,9 +142,9 @@ For example, after changing `x` to `0` and `y` to `1`, the code checks if `x` is
 
 ```cpp
 x = 0, y = 1;
-cout &lt;&lt; "Question: is x not equal to y?" &lt;&lt; endl;
+cout << "Question: is x not equal to y?" << endl;
 if (x != y) {
-    cout &lt;&lt; "x is not equal to y" &lt;&lt; endl;
+    cout << "x is not equal to y" << endl;
 }
 ```
 

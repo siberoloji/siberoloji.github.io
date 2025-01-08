@@ -193,11 +193,6 @@ Limitations and Considerations
 
 
 While Arjun is powerful, it has certain limitations. For instance, it does not brute-force or break access controls, meaning it won’t be effective in scenarios where authentication is required for parameter discovery. Also, it’s more effective on applications with basic web protocols but may need customization for highly complex or proprietary web frameworks.
-
-
-
-
-
 FAQs
 
 
@@ -223,9 +218,4 @@ FAQs
 
 
 **Q6: What is the output format supported by Arjun?** Arjun supports JSON output, which is easy to parse and compatible with many automation scripts.
-
-
-
-
-
 Arjun is an efficient tool for parameter discovery, perfect for penetration testers, ethical hackers, and web developers aiming to bolster the security of their web applications. By uncovering hidden HTTP parameters, Arjun reduces risks, enhances application security, and adds an extra layer of protection to web security testing.

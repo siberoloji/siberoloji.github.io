@@ -34,7 +34,7 @@ Meterpreter oturumunun sunduğu `search` komutu ile ilgili birkaç örnek incele
 
 
 ```bash
-meterpreter **&gt;** search -h
+meterpreter **>** search -h
 Usage: search **[**-d dir**]** **[**-r recurse] -f pattern
 Search **for **files.
 
@@ -72,7 +72,7 @@ Aşağıdaki örnek komut, tüm disk bölümlerinde, klasör ve alt klasörlerde
 
 
 ```bash
-meterpreter **&gt;** search -f *****.jpg
+meterpreter **>** search -f *****.jpg
 Found 418 results...
 ...snip...
     c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg **(**28521 bytes**)**
@@ -88,9 +88,9 @@ Found 418 results...
 
 
 ```bash
-meterpreter **&gt;** search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f *****.pdf
+meterpreter **>** search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f *****.pdf
 Found 2 results...
     c:\documents and settings\administrator\desktop\operations_plan.pdf **(**244066 bytes**)**
     c:\documents and settings\administrator\desktop\budget.pdf **(**244066 bytes**)**
-meterpreter **&gt;**
+meterpreter **>**
 ```

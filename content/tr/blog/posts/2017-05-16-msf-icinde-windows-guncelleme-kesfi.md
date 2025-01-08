@@ -30,8 +30,8 @@ Aşağıdaki çıktıda, `use` komutu ile modül yüklenmiş ve seçenekleri gö
 
 
 ```bash
-msf exploit**(**handler**)** **&gt;** use post/windows/gather/enum_patches
-msf post**(**enum_patches**)** **&gt;** show options
+msf exploit**(**handler**)** **>** use post/windows/gather/enum_patches
+msf post**(**enum_patches**)** **>** show options
 
 Module options **(**post/windows/gather/enum_patches**)**:
 
@@ -48,7 +48,7 @@ Modül hakkında detaylı bilgileri `show advanced` komutuyla inceleyebilirsiniz
 
 
 ```bash
-msf post**(**enum_patches**)** **&gt;** show advanced
+msf post**(**enum_patches**)** **>** show advanced
 
 Module advanced options **(**post/windows/gather/enum_patches**)**:
 
@@ -67,7 +67,7 @@ Bir `exploit` kullanarak Windows işletim sistemin Meterpreter shell açtıktan 
 
 
 ```bash
-msf post**(**enum_patches**)** **&gt;** show options
+msf post**(**enum_patches**)** **>** show options
 
 Module options **(**post/windows/gather/enum_patches**)**:
 
@@ -77,7 +77,7 @@ Module options **(**post/windows/gather/enum_patches**)**:
    **MSFLOCALS  true                  yes       Search **for **missing patchs **for **which there is a MSF local module
    SESSION    1                     yes       The session to run this module on.
 
-msf post**(**enum_patches**)** **&gt;** run
+msf post**(**enum_patches**)** **>** run
 
 **[*********]** KB2871997 applied
 **[**+] KB2928120 is missing

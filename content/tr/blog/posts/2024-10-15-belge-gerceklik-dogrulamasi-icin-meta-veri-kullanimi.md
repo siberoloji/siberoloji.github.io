@@ -262,11 +262,6 @@ Farklı belge türleri özel yaklaşımlar gerektirebilir:
 
 * Analizdeki herhangi bir sınırlamayı veya belirsizliği not edin.
 
-
-
-
-
-
 ## Meta Veri Tabanlı Belge Doğrulamada Vaka Çalışmaları
 
 

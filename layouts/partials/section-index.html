@@ -28,6 +28,7 @@
                     <a href="{{ $manualLink }}"{{ with .Params.manualLinkTitle }} title="{{ . }}"{{ end }}{{ with .Params.manualLinkTarget }} target="{{ . }}"{{ if eq . "_blank" }} rel="noopener"{{ end }}{{ end }}>{{- .Title -}}</a>
                 </h5>
                 <p>{{ .Description | markdownify -}}</p>
+                
             </div>
         {{ end -}}
     {{ end -}}

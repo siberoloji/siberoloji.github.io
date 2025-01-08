@@ -135,7 +135,7 @@ Creating Basic Rules
 To create a basic firewall rule:
 
 
-* Navigate to `Firewall &gt; Rules` in the web interface.
+* Navigate to `Firewall > Rules` in the web interface.
 
 * Select the interface (e.g., LAN).
 

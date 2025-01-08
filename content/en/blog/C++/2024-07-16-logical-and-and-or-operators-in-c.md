@@ -35,7 +35,7 @@ The provided C++ code demonstrates the use of logical operators: AND (`&amp;&amp
  * the precedence of logical operators in C++.
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -43,27 +43,27 @@ int main() {
     int x = 5, y = 10, z = 15;
 
     // Display the values of x, y, and z
-    cout &lt;&lt; "x = " &lt;&lt; x &lt;&lt; ", y = " &lt;&lt; y &lt;&lt; ", z = " &lt;&lt; z &lt;&lt; endl;
+    cout << "x = " << x << ", y = " << y << ", z = " << z << endl;
 
     // Demonstrate logical AND (&amp;&amp;)
-    cout &lt;&lt; "x &lt; y &amp;&amp; y &lt; z = " &lt;&lt; (x &lt; y &amp;&amp; y &lt; z) &lt;&lt; endl; // True, both conditions are true
-    cout &lt;&lt; "x &lt; y &amp;&amp; y &gt; z = " &lt;&lt; (x &lt; y &amp;&amp; y &gt; z) &lt;&lt; endl; // False, second condition is false
+    cout << "x < y &amp;&amp; y < z = " << (x < y &amp;&amp; y < z) << endl; // True, both conditions are true
+    cout << "x < y &amp;&amp; y > z = " << (x < y &amp;&amp; y > z) << endl; // False, second condition is false
 
     // Demonstrate logical OR (||)
-    cout &lt;&lt; "x &lt; y || y &gt; z = " &lt;&lt; (x &lt; y || y &gt; z) &lt;&lt; endl; // True, first condition is true
-    cout &lt;&lt; "x &gt; y || y &gt; z = " &lt;&lt; (x &gt; y || y &gt; z) &lt;&lt; endl; // False, both conditions are false
+    cout << "x < y || y > z = " << (x < y || y > z) << endl; // True, first condition is true
+    cout << "x > y || y > z = " << (x > y || y > z) << endl; // False, both conditions are false
 
     // Demonstrate logical NOT (!)
-    cout &lt;&lt; "!(x &lt; y) = " &lt;&lt; !(x &lt; y) &lt;&lt; endl; // False, negates true condition
-    cout &lt;&lt; "!(x &gt; y) = " &lt;&lt; !(x &gt; y) &lt;&lt; endl; // True, negates false condition
+    cout << "!(x < y) = " << !(x < y) << endl; // False, negates true condition
+    cout << "!(x > y) = " << !(x > y) << endl; // True, negates false condition
 
     // Explain operator precedence
-    cout &lt;&lt; "priority of &amp;&amp; is higher than ||" &lt;&lt; endl;
+    cout << "priority of &amp;&amp; is higher than ||" << endl;
 
     // Demonstrate precedence with examples
-    cout &lt;&lt; "x &lt; y &amp;&amp; y &lt; z || x &gt; z = " &lt;&lt; (x &lt; y &amp;&amp; y &lt; z || x &gt; z) &lt;&lt; endl;
+    cout << "x < y &amp;&amp; y < z || x > z = " << (x < y &amp;&amp; y < z || x > z) << endl;
     // True, &amp;&amp; evaluated first
-    cout &lt;&lt; "x &lt; y || y &lt; z &amp;&amp; x &gt; z = " &lt;&lt; (x &lt; y || y &lt; z &amp;&amp; x &gt; z) &lt;&lt; endl;
+    cout << "x < y || y < z &amp;&amp; x > z = " << (x < y || y < z &amp;&amp; x > z) << endl;
     // True, &amp;&amp; evaluated first despite || appearing first
 
     return 0;
@@ -93,7 +93,7 @@ The demonstration of the logical AND (`&amp;&amp;`) operator is shown through tw
 
 
 ```cpp
-cout &lt;&lt; "x &lt; y &amp;&amp; y &lt; z = " &lt;&lt; (x &lt; y &amp;&amp; y &lt; z) &lt;&lt; endl;
+cout << "x < y &amp;&amp; y < z = " << (x < y &amp;&amp; y < z) << endl;
 ```
 
 
@@ -102,16 +102,16 @@ The logical OR (`||`) operator is similarly demonstrated. An example provided ch
 
 
 ```cpp
-cout &lt;&lt; "x &lt; y || y &gt; z = " &lt;&lt; (x &lt; y || y &gt; z) &lt;&lt; endl;
+cout << "x < y || y > z = " << (x < y || y > z) << endl;
 ```
 
 
 
-The NOT (`!`) operator's demonstration negates the truth value of the condition it precedes. For instance, negating the condition `x &lt; y` results in false because `x &lt; y` is true, and NOT true is false:
+The NOT (`!`) operator's demonstration negates the truth value of the condition it precedes. For instance, negating the condition `x < y` results in false because `x < y` is true, and NOT true is false:
 
 
 ```cpp
-cout &lt;&lt; "!(x &lt; y) = " &lt;&lt; !(x &lt; y) &lt;&lt; endl;
+cout << "!(x < y) = " << !(x < y) << endl;
 ```
 
 
@@ -120,7 +120,7 @@ Lastly, the code touches upon the precedence of logical operators, stating that 
 
 
 ```cpp
-cout &lt;&lt; "x &lt; y &amp;&amp; y &lt; z || x &gt; z = " &lt;&lt; (x &lt; y &amp;&amp; y &lt; z || x &gt; z) &lt;&lt; endl;
+cout << "x < y &amp;&amp; y < z || x > z = " << (x < y &amp;&amp; y < z || x > z) << endl;
 ```
 
 
@@ -134,14 +134,14 @@ This code snippet is a straightforward demonstration aimed at those familiar wit
 
 ```cpp
 x = 5, y = 10, z = 15
-x &lt; y &amp;&amp; y &lt; z = 1
-x &lt; y &amp;&amp; y &gt; z = 0
-x &lt; y || y &gt; z = 1
-x &gt; y || y &gt; z = 0
-!(x &lt; y) = 0
-!(x &gt; y) = 1
+x < y &amp;&amp; y < z = 1
+x < y &amp;&amp; y > z = 0
+x < y || y > z = 1
+x > y || y > z = 0
+!(x < y) = 0
+!(x > y) = 1
 priority of &amp;&amp; is higher than ||
-x &lt; y &amp;&amp; y &lt; z || x &gt; z = 1
-x &lt; y || y &lt; z &amp;&amp; x &gt; z = 1
+x < y &amp;&amp; y < z || x > z = 1
+x < y || y < z &amp;&amp; x > z = 1
 
 Process finished with exit code 0```

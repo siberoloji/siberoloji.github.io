@@ -27,18 +27,18 @@ ANA etkinliğin adını ALT etkinliğine bildirebiliriz, böylece Android, Displ
 
 <!-- wp:code -->
 <pre title="Before adding UP button" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
-&lt;activity
+<activity
             android:name=".DisplayMessageActivity"
-            android:exported="false" /&gt;
-        &lt;activity
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ...```
 
 
@@ -48,24 +48,24 @@ AndroidManifest.xml dosyanızda gerekli değişiklikleri yaptıktan sonra kodunu
 
 <!-- wp:code -->
 <pre title="After declaring parent activity" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
-&lt;activity
+<activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity"
-            android:exported="false" &gt;
-        &lt;meta-data
+            android:exported="false" >
+        <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" /&gt;
-        &lt;/activity&gt;
+            android:value=".MainActivity" />
+        </activity>
 
-        &lt;activity
+        <activity
             android:name=".MainActivity"
-            android:exported="true"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ...```
 
 

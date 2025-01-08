@@ -86,7 +86,7 @@ Understanding how to use `diff` effectively involves knowing its most common use
 
 * In software development, patches are often generated using the `diff` command. A patch file contains the differences between two files or directories and can be applied to update the older version to the newer one. This is particularly useful in open-source projects where contributors submit patches for review.
 
-* Example: `bash diff -u oldfile newfile &gt; patchfile.patch`
+* Example: `bash diff -u oldfile newfile > patchfile.patch`
 
 
 
@@ -142,7 +142,7 @@ Let’s take a look at some practical examples of the `diff` command in action:
 
 * Suppose you have two text files, `file1.txt` and `file2.txt`. To compare them and see the differences, you would use: `bash diff file1.txt file2.txt`
 
-* The output will show the lines that differ between the two files, with `&lt;` indicating lines from `file1.txt` and `&gt;` indicating lines from `file2.txt`.
+* The output will show the lines that differ between the two files, with `<` indicating lines from `file1.txt` and `>` indicating lines from `file2.txt`.
 
 
 
@@ -150,7 +150,7 @@ Let’s take a look at some practical examples of the `diff` command in action:
 
 
 
-* If you want to create a patch file to update `oldfile.c` to `newfile.c`, use the following command: `bash diff -u oldfile.c newfile.c &gt; update.patch`
+* If you want to create a patch file to update `oldfile.c` to `newfile.c`, use the following command: `bash diff -u oldfile.c newfile.c > update.patch`
 
 * The patch file `update.patch` can then be used with the `patch` command to apply the changes.
 

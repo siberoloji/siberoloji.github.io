@@ -57,11 +57,6 @@ The microphone is arguably the most critical piece of equipment for any podcaste
 
 * **Rode PodMic**: Affordable and effective for multi-speaker setups.
 
-
-
-
-
-
 **2. Headphones**
 
 

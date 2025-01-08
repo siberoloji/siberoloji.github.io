@@ -24,11 +24,6 @@ The `rsync` command is a powerful tool for file synchronization and data transfe
 
 
 In this post, we’ll dive into advanced usage of the `rsync` command, covering practical examples that will help you optimize file synchronization, backups, and data migration tasks.
-
-
-
-
-
 ## What Is `rsync`?
 
 
@@ -50,11 +45,6 @@ Key features of `rsync` include:
 
 * **Bandwidth limitation:** You can throttle the speed of data transfer to conserve network resources.
 
-
-
-
-
-
 ## Basic Syntax
 
 
@@ -74,11 +64,6 @@ Here:
 * **Source**: The path to the file(s) or directory you wish to sync.
 
 * **Destination**: The target location where the files should be copied.
-
-
-
-
-
 
 ## Advanced Rsync Usage
 
@@ -241,11 +226,6 @@ rsync -av --dry-run /source/directory/ /destination/directory/```
 
 
 This shows the files that will be transferred, modified, or deleted without actually executing any changes.
-
-
-
-
-
 ## Examples of Advanced Scenarios
 
 
@@ -283,11 +263,6 @@ rsync -aH --delete /source/directory/ /backup/directory/```
 
 
 This will ensure that your backup directory is an exact copy of the source, with all hard links preserved and old files deleted.
-
-
-
-
-
 ## Conclusion
 
 

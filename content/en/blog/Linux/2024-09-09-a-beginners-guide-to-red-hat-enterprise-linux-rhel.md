@@ -193,11 +193,11 @@ One of the standout features of RHEL is its security. **SELinux** enforces manda
 RHEL uses **systemd** for system and service management. You’ll use `systemctl` to manage services, start and stop processes, and check the status of various services:
 
 
-* `systemctl start &lt;service_name&gt;`: Starts a service.
+* `systemctl start <service_name>`: Starts a service.
 
-* `systemctl stop &lt;service_name&gt;`: Stops a service.
+* `systemctl stop <service_name>`: Stops a service.
 
-* `systemctl status &lt;service_name&gt;`: Displays the status of a service.
+* `systemctl status <service_name>`: Displays the status of a service.
 
 
 

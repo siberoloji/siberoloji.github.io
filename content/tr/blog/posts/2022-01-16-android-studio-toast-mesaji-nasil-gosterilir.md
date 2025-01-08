@@ -58,8 +58,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val clkButton = findViewById&lt;Button&gt;(R.id.button)
-        val myTextView = findViewById&lt;TextView&gt;(R.id.textView)
+        val clkButton = findViewById<Button>(R.id.button)
+        val myTextView = findViewById<TextView>(R.id.textView)
         var timesClicked = 0
 
         clkButton.setOnClickListener{
@@ -83,16 +83,16 @@ Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.x
 ```
 
 
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;androidx.constraintlayout.widget.ConstraintLayout
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"&gt;
+    tools:context=".MainActivity">
 
-    &lt;TextView
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,9 +101,9 @@ Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.x
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="this is for developer" /&gt;
+        tools:text="this is for developer" />
 
-    &lt;Button
+    <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,9 +115,9 @@ Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.x
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" /&gt;
+        app:layout_constraintTop_toTopOf="parent" />
 
-&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;
+</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
 

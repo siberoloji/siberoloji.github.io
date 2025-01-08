@@ -26,9 +26,9 @@ The provided C++ code is a simple demonstration of the `static_cast` operator, w
 
 ```cpp
 // This program demonstrates the use of static_cast in C++
-// static_cast&lt;newtype&gt;(expr) is used to cast an expression to a new type
+// static_cast<newtype>(expr) is used to cast an expression to a new type
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -40,16 +40,16 @@ int main() {
     char character = 'a';
 
     // Display the character equivalent of numberOne
-    // static_cast&lt;char&gt;(numberOne) converts the integer to a character
-    cout &lt;&lt; "a" &lt;&lt; " " &lt;&lt; static_cast&lt;char&gt;(numberOne) &lt;&lt; endl;
+    // static_cast<char>(numberOne) converts the integer to a character
+    cout << "a" << " " << static_cast<char>(numberOne) << endl;
 
     // Display the character equivalent of numberTwo
-    // static_cast&lt;char&gt;(numberTwo) converts the integer to a character
-    cout &lt;&lt; "b" &lt;&lt; " " &lt;&lt; static_cast&lt;char&gt;(numberTwo) &lt;&lt; endl;
+    // static_cast<char>(numberTwo) converts the integer to a character
+    cout << "b" << " " << static_cast<char>(numberTwo) << endl;
 
     // Display the integer equivalent of character
-    // static_cast&lt;int&gt;(character) converts the character to an integer
-    cout &lt;&lt; "c" &lt;&lt; " " &lt;&lt; static_cast&lt;int&gt;(character) &lt;&lt; endl;
+    // static_cast<int>(character) converts the character to an integer
+    cout << "c" << " " << static_cast<int>(character) << endl;
 
     // End of program
     return 0;
@@ -70,7 +70,7 @@ The program begins by including the `iostream` library and declaring the `std` n
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -87,21 +87,21 @@ char character = 'a';
 
 
 
-The `static_cast` operator is then used to convert these variables to different types. The `static_cast&lt;char&gt;(numberOne)` expression converts the integer `numberOne` to a character, and its result is printed to the console. The same operation is performed for `numberTwo`.
+The `static_cast` operator is then used to convert these variables to different types. The `static_cast<char>(numberOne)` expression converts the integer `numberOne` to a character, and its result is printed to the console. The same operation is performed for `numberTwo`.
 
 
 ```cpp
-cout &lt;&lt; "a" &lt;&lt; " " &lt;&lt; static_cast&lt;char&gt;(numberOne) &lt;&lt; endl;
-cout &lt;&lt; "b" &lt;&lt; " " &lt;&lt; static_cast&lt;char&gt;(numberTwo) &lt;&lt; endl;
+cout << "a" << " " << static_cast<char>(numberOne) << endl;
+cout << "b" << " " << static_cast<char>(numberTwo) << endl;
 ```
 
 
 
-Finally, the `character` variable is converted to an integer using `static_cast&lt;int&gt;(character)`, and the result is printed to the console.
+Finally, the `character` variable is converted to an integer using `static_cast<int>(character)`, and the result is printed to the console.
 
 
 ```cpp
-cout &lt;&lt; "c" &lt;&lt; " " &lt;&lt; static_cast&lt;int&gt;(character) &lt;&lt; endl;
+cout << "c" << " " << static_cast<int>(character) << endl;
 ```
 
 

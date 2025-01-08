@@ -57,11 +57,6 @@ Common Causes of Network Errors
 
 * Configuration issues
 
-
-
-
-
-
 ## Error Detection Methods
 
 
@@ -217,11 +212,6 @@ FEC methods allow receivers to correct errors without requesting retransmission,
 
 * Excellent performance near Shannon limit
 
-
-
-
-
-
 2. Automatic Repeat Request (ARQ)
 
 
@@ -260,11 +250,6 @@ ARQ methods rely on error detection and retransmission to ensure reliable data d
 
 * More complex implementation
 
-
-
-
-
-
 ## Hybrid Methods
 
 
@@ -300,11 +285,6 @@ HARQ combines FEC and ARQ methods to provide both efficiency and reliability.
 * More efficient use of channel capacity
 
 * Higher implementation complexity
-
-
-
-
-
 
 ## Implementation Considerations
 
@@ -390,11 +370,6 @@ To ensure optimal error detection and correction:
 * Keep testing results
 
 * Update procedures as needed
-
-
-
-
-
 
 ## Future Trends
 

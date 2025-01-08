@@ -42,7 +42,7 @@ Yeni Dosyaya Yönlendirme
 
 
 
-Normalde varsayılan olarak ekrana yazdırılan STDOUT yani çıktı, sonradan kullanılmak üzere bir dosya içerisine de kaydedilebilir. Bunu yapabilmek için &gt; işareti ile bir dosya ismi tanımladığınızda sonuç bu dosya içerisine kaydedilir. Dosyanın sistemde olmaması durumunda otomatik olarak oluşturulur. Bu yönlendirme işareti (&gt;) kullanıldığında belirtilen hedef dosya sistemde önceden varsa içeriği temizlenir ve üretilen çıktı dosyaya yazdırılır.
+Normalde varsayılan olarak ekrana yazdırılan STDOUT yani çıktı, sonradan kullanılmak üzere bir dosya içerisine de kaydedilebilir. Bunu yapabilmek için > işareti ile bir dosya ismi tanımladığınızda sonuç bu dosya içerisine kaydedilir. Dosyanın sistemde olmaması durumunda otomatik olarak oluşturulur. Bu yönlendirme işareti (>) kullanıldığında belirtilen hedef dosya sistemde önceden varsa içeriği temizlenir ve üretilen çıktı dosyaya yazdırılır.
 
 
 
@@ -56,7 +56,7 @@ $ cd
 ~/redirect $ touch metin.txt resim.jpg belge.doc video.mpeg 
 ~/redirect $ ls 
 belge.doc metin.txt resim.jpg video.mpeg
-~/redirect $ ls &gt; rapor.txt 
+~/redirect $ ls > rapor.txt 
 ~/redirect $ ls 
 belge.doc metin.txt rapor.txt resim.jpg video.mpeg
 ~/redirect $ cat rapor.txt
@@ -83,7 +83,7 @@ video.mpeg```
 
 
 
-**7.Satır**: ls komutu STDOUT çıktısı rapor.txt dosyasının içerisine yönlendirildi. **ls &gt; rapor.txt**
+**7.Satır**: ls komutu STDOUT çıktısı rapor.txt dosyasının içerisine yönlendirildi. **ls > rapor.txt**
 
 
 
@@ -91,11 +91,11 @@ video.mpeg```
 
 
 
-Dikkatli kullanıcıların fark etmiş olabileceği bir diğer konu da, başlangıçta olmayan rapor.txt dosyasının da sonuçların yazıldığı rapor.txt dosyasının içeriğinde bulunmasıdır. Oysa komutu verdiğimizde (ls &gt; rapor.txt) klasörde bu dosya yoktu. Dosya içeriğinin **belge.doc ****metin.txt resim.jpg ****video.mpeg** isimlerine sahip olması beklenirken **belge.doc ****metin.txt rapor.txt resim.jpg ****video.mpeg** halinde olduğunu görebilirsiniz.
+Dikkatli kullanıcıların fark etmiş olabileceği bir diğer konu da, başlangıçta olmayan rapor.txt dosyasının da sonuçların yazıldığı rapor.txt dosyasının içeriğinde bulunmasıdır. Oysa komutu verdiğimizde (ls > rapor.txt) klasörde bu dosya yoktu. Dosya içeriğinin **belge.doc ****metin.txt resim.jpg ****video.mpeg** isimlerine sahip olması beklenirken **belge.doc ****metin.txt rapor.txt resim.jpg ****video.mpeg** halinde olduğunu görebilirsiniz.
 
 
 
-Bu durumu şöyle açıklayalım. ls &gt; rapor.txt komutu, yazım biçimiyle "listemeyi  yap, rapor.txt dosyasına yönledir" sırasıyla çalışacak algısı meydana getirir. Ancak gerçekte Shell akıllı davranır ve komutun hatasız çalışması için gerekli şartları hazırlar. Önce klasör içerine rapor.txt dosyasını oluşturur ve klasörün bu haliyle durumunu ls komut çıktısı olarak rapor.txt dosyasının içerisine yazdırır.
+Bu durumu şöyle açıklayalım. ls > rapor.txt komutu, yazım biçimiyle "listemeyi  yap, rapor.txt dosyasına yönledir" sırasıyla çalışacak algısı meydana getirir. Ancak gerçekte Shell akıllı davranır ve komutun hatasız çalışması için gerekli şartları hazırlar. Önce klasör içerine rapor.txt dosyasını oluşturur ve klasörün bu haliyle durumunu ls komut çıktısı olarak rapor.txt dosyasının içerisine yazdırır.
 
 
 
@@ -103,18 +103,18 @@ Mevcut Bir Dosyaya Yönlendirme
 
 
 
-Bir komut çıktısını &gt; işaretiyle yönlendirdiğimizde, hedef dosyanın içeriğinin silindiğini belirtmiştik. Çıktının, hedef dosyanın içeriği silinmeden, var olan bir dosyanın sonuna ilave edilmesi için &gt;&gt; yönlendirme işaretini kullanabiliriz.
+Bir komut çıktısını > işaretiyle yönlendirdiğimizde, hedef dosyanın içeriğinin silindiğini belirtmiştik. Çıktının, hedef dosyanın içeriği silinmeden, var olan bir dosyanın sonuna ilave edilmesi için >> yönlendirme işaretini kullanabiliriz.
 
 
 
-Aynı örnek klasörle devam edelim. Öncelikle echo komutu kullanarak &gt; yönlendirmesiyle **metin.txt** dosyamızın içerisine bir ifade ekleyelim. Sonra cat komutu ile dosya içeriğini görüntüleyelim ve sonucu &gt;&gt; yönlendirmesi kullanarak **rapor.txt** dosyamızın içeriğini silmeden en altına ilave edelim.
+Aynı örnek klasörle devam edelim. Öncelikle echo komutu kullanarak > yönlendirmesiyle **metin.txt** dosyamızın içerisine bir ifade ekleyelim. Sonra cat komutu ile dosya içeriğini görüntüleyelim ve sonucu >> yönlendirmesi kullanarak **rapor.txt** dosyamızın içeriğini silmeden en altına ilave edelim.
 
 
 ```bash
-~/redirect $ echo ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin &gt;metin.txt
+~/redirect $ echo ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin >metin.txt
 ~/redirect $ cat metin.txt
 ben metin.txt dosyasıyım. Beni rapor.txt dosyasının sonuna ilave edin
-~/redirect $ cat metin.txt &gt;&gt;rapor.txt
+~/redirect $ cat metin.txt >>rapor.txt
 ~/redirect $ cat rapor.txt
 belge.doc
 metin.txt
@@ -130,15 +130,15 @@ Mevcut Dosyadan Veri Alma
 
 
 
-Bir komutun çıktısını dosyaya yönlendirmenin sonrasında, şimdi de bir dosyadan veriyi girdi olarak almayı açıklayalım. Bunun için &lt; işaretini kullanıyoruz. &lt; işaretiyle belirtilen adresten alınan veri, komuta STDIN yani girdi olarak gönderilir.
+Bir komutun çıktısını dosyaya yönlendirmenin sonrasında, şimdi de bir dosyadan veriyi girdi olarak almayı açıklayalım. Bunun için < işaretini kullanıyoruz. < işaretiyle belirtilen adresten alınan veri, komuta STDIN yani girdi olarak gönderilir.
 
 
 
-Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (**&lt;** ile veri almasını) ve harfleri sayması (-**m** ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (**&gt;&gt;** ile) söylenmiştir.
+Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (**<** ile veri almasını) ve harfleri sayması (-**m** ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (**>>** ile) söylenmiştir.
 
 
 ```bash
-~/redirect $ wc -m &lt; metin.txt &gt;&gt;rapor.txt
+~/redirect $ wc -m < metin.txt >>rapor.txt
 ~/redirect $ cat rapor.txt
 belge.doc
 metin.txt
@@ -158,18 +158,18 @@ Komutlar için girdi (STDIN(0)) ve normal çıktıları (STDOUT(1)) yönlendirme
 
 
 
-Bir yönlendirme işaretinin önüne 2&gt;&gt; rakamını koyarsanız, o ifade "hatayı yönlendir" anlamına gelir. Boş bırakılması, varsayılan olarak aslında önünde 1 olduğu anlamına gelmektedir.
+Bir yönlendirme işaretinin önüne 2>> rakamını koyarsanız, o ifade "hatayı yönlendir" anlamına gelir. Boş bırakılması, varsayılan olarak aslında önünde 1 olduğu anlamına gelmektedir.
 
 
 
-Aşağıdaki örnekte, redirect/ klasöründeki **belge.doc** ve **met.txt** dosyalarının detayları listelenmek istenmekte ancak iki dosyadan var olan hakkında bilgi verilirken diğer dosya var olmadığı içn hata mesajı üretilmektedir. Üretilen hatayı ayrı bir dosyaya yönlendirmek için 2&gt;hatalar.txt ifadesi kullanılmakta ve hata kodu (STDERR(2)) ayrı bir dosyaya kaydedilmektedir.
+Aşağıdaki örnekte, redirect/ klasöründeki **belge.doc** ve **met.txt** dosyalarının detayları listelenmek istenmekte ancak iki dosyadan var olan hakkında bilgi verilirken diğer dosya var olmadığı içn hata mesajı üretilmektedir. Üretilen hatayı ayrı bir dosyaya yönlendirmek için 2>hatalar.txt ifadesi kullanılmakta ve hata kodu (STDERR(2)) ayrı bir dosyaya kaydedilmektedir.
 
 
 ```bash
 ~/redirect $ ls -l belge.doc met.txt
 ls: cannot access met.txt: No such file or directory
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
-~/redirect $ ls -l belge.doc met.txt 2&gt; hatalar.txt
+~/redirect $ ls -l belge.doc met.txt 2> hatalar.txt
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
 cat hatalar.txt
 ls: cannot access met.txt: No such file or directory
@@ -177,30 +177,30 @@ ls: cannot access met.txt: No such file or directory
 
 
 
-Yukarıdaki örnekte 2&gt; yönlendirmesiyle komutun sadece hatalı kısmı hatalar.txt dosyasına kaydedilmektedir. Bazı durumlarda, hem standart çıktının (STDOUT(1)) hem de hata kodunun aynı dosyaya kaydedilmesini isteyebiliriz. Bu durumda izlenmesi gereken yol şöyle özetlenebilir. STDERR çıktısını da STDOUT çıktısına yönlendir ve tüm yönlendirmeleri bir dosyaya kaydet.
+Yukarıdaki örnekte 2> yönlendirmesiyle komutun sadece hatalı kısmı hatalar.txt dosyasına kaydedilmektedir. Bazı durumlarda, hem standart çıktının (STDOUT(1)) hem de hata kodunun aynı dosyaya kaydedilmesini isteyebiliriz. Bu durumda izlenmesi gereken yol şöyle özetlenebilir. STDERR çıktısını da STDOUT çıktısına yönlendir ve tüm yönlendirmeleri bir dosyaya kaydet.
 
 
 
-Aşağıdaki örnekte, 2&gt;&amp;1 yönlendirmesi kullanılmıştır. Bu kullanımda, 2&gt; hata çıktısı &amp;1 kullanılarak STDOUT çıktısına yönlendirilmiş ve toplam sonuç, sonuc.txt dosyasına kaydedilmiştir. &amp;1 kullanımı, bir veri akışına ilave veri eklemekte kullanılır. DİKKAT: &amp; işaretini koymadığınız takdirde, hata kodu 1 isimli dosyaya yönlendirilir.
+Aşağıdaki örnekte, 2>&amp;1 yönlendirmesi kullanılmıştır. Bu kullanımda, 2> hata çıktısı &amp;1 kullanılarak STDOUT çıktısına yönlendirilmiş ve toplam sonuç, sonuc.txt dosyasına kaydedilmiştir. &amp;1 kullanımı, bir veri akışına ilave veri eklemekte kullanılır. DİKKAT: &amp; işaretini koymadığınız takdirde, hata kodu 1 isimli dosyaya yönlendirilir.
 
 
 
-**ls -l belge.doc met.txt&gt;sonuc.txt** komutunun sonucunda sadece hatasız olarak gerçekleşen kısım sonuc.txt dosyasına yazılır.
+**ls -l belge.doc met.txt>sonuc.txt** komutunun sonucunda sadece hatasız olarak gerçekleşen kısım sonuc.txt dosyasına yazılır.
 
 
 
-**ls -l belge.doc met.txt&gt;sonuc.txt 2&gt;&amp;1** komutu sayesinde hata kodu ve hatasız kısım birleştirilir ve sonuc.txt dosyasına yazılır.
+**ls -l belge.doc met.txt>sonuc.txt 2>&amp;1** komutu sayesinde hata kodu ve hatasız kısım birleştirilir ve sonuc.txt dosyasına yazılır.
 
 
 ```bash
 ~/redirect $ ls -l belge.doc met.txt
 ls: cannot access met.txt: No such file or directory
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
-~/redirect $ ls -l belge.doc met.txt&gt;sonuc.txt
+~/redirect $ ls -l belge.doc met.txt>sonuc.txt
 ls: cannot access met.txt: No such file or directory
 ~/redirect $ cat sonuc.txt  
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
-~/redirect $ ls -l belge.doc met.txt&gt;sonuc.txt 2&gt;&amp;1 #Hem hata hem de normal sonuç sonuc.txt dosyasına yazılmış.
+~/redirect $ ls -l belge.doc met.txt>sonuc.txt 2>&amp;1 #Hem hata hem de normal sonuç sonuc.txt dosyasına yazılmış.
 ~/redirect $ cat sonuc.txt
 ls: cannot access met.txt: No such file or directory
 -rw-r--r-- 1 umut umut 0 May 9 22:05 belge.doc
@@ -212,7 +212,7 @@ Piping
 
 
 
-Türkçe karşılığı ile tam anlamını bulmayan piping işlemi, bir programın çıktısını** dosya yerine başka bir programa yönlendirme** ile ilgilidir. Bunun yapılabilmesi için | işareti kullanılır. Bu işareti klavyelerinizde Sol taraftaki Shift tuşunun yanında bulunan &lt;&gt; işaretleri ile aynı tuş üzerinde bulabilirsiniz. AltGr tuşu ile birlikte &lt;&gt; tuşuna bastığınızda ekrana yazılır. Bu | işaretin tam olarak yaptığı, sol taraftaki programın çıktısını sağ taraftaki programa girdi olarak aktarmaktır.
+Türkçe karşılığı ile tam anlamını bulmayan piping işlemi, bir programın çıktısını** dosya yerine başka bir programa yönlendirme** ile ilgilidir. Bunun yapılabilmesi için | işareti kullanılır. Bu işareti klavyelerinizde Sol taraftaki Shift tuşunun yanında bulunan <> işaretleri ile aynı tuş üzerinde bulabilirsiniz. AltGr tuşu ile birlikte <> tuşuna bastığınızda ekrana yazılır. Bu | işaretin tam olarak yaptığı, sol taraftaki programın çıktısını sağ taraftaki programa girdi olarak aktarmaktır.
 
 
 
@@ -254,7 +254,7 @@ Piping işlemini dosya yönlendirme ile birlikte de kullanabilirsiniz.
 
 
 ```bash
-ls | head -3 | tail -1 &gt; piping.txt
+ls | head -3 | tail -1 > piping.txt
 cat piping.txt
 metin.txt
 ```

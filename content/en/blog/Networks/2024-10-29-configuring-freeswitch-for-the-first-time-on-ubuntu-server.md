@@ -148,12 +148,12 @@ The `vars.xml` file contains global variables. Edit it to match your environment
 
 
 ```
-&lt;include&gt;
-  &lt;X-PRE-PROCESS cmd="set" data="domain=your-domain.com"/&gt;
-  &lt;X-PRE-PROCESS cmd="set" data="local_ip_v4=auto"/&gt;
-  &lt;X-PRE-PROCESS cmd="set" data="external_rtp_ip=auto-nat"/&gt;
-  &lt;X-PRE-PROCESS cmd="set" data="external_sip_ip=auto-nat"/&gt;
-&lt;/include&gt;
+<include>
+  <X-PRE-PROCESS cmd="set" data="domain=your-domain.com"/>
+  <X-PRE-PROCESS cmd="set" data="local_ip_v4=auto"/>
+  <X-PRE-PROCESS cmd="set" data="external_rtp_ip=auto-nat"/>
+  <X-PRE-PROCESS cmd="set" data="external_sip_ip=auto-nat"/>
+</include>
 ```
 
 
@@ -165,15 +165,15 @@ Navigate to `/usr/local/freeswitch/conf/sip_profiles/` and modify `internal.xml`
 
 
 ```
-&lt;profile name="internal"&gt;
-  &lt;settings&gt;
-    &lt;param name="auth-calls" value="true"/&gt;
-    &lt;param name="apply-inbound-acl" value="domains"/&gt;
-    &lt;param name="local-network-acl" value="localnet.auto"/&gt;
-    &lt;param name="debug" value="0"/&gt;
-    &lt;param name="sip-port" value="5060"/&gt;
-  &lt;/settings&gt;
-&lt;/profile&gt;
+<profile name="internal">
+  <settings>
+    <param name="auth-calls" value="true"/>
+    <param name="apply-inbound-acl" value="domains"/>
+    <param name="local-network-acl" value="localnet.auto"/>
+    <param name="debug" value="0"/>
+    <param name="sip-port" value="5060"/>
+  </settings>
+</profile>
 ```
 
 
@@ -186,21 +186,21 @@ Create a new user directory file in `/usr/local/freeswitch/conf/directory/defaul
 
 
 ```
-&lt;include&gt;
-  &lt;user id="1000"&gt;
-    &lt;params&gt;
-      &lt;param name="password" value="your_secure_password"/&gt;
-      &lt;param name="vm-password" value="1000"/&gt;
-    &lt;/params&gt;
-    &lt;variables&gt;
-      &lt;variable name="toll_allow" value="domestic,international,local"/&gt;
-      &lt;variable name="accountcode" value="1000"/&gt;
-      &lt;variable name="user_context" value="default"/&gt;
-      &lt;variable name="effective_caller_id_name" value="Extension 1000"/&gt;
-      &lt;variable name="effective_caller_id_number" value="1000"/&gt;
-    &lt;/variables&gt;
-  &lt;/user&gt;
-&lt;/include&gt;
+<include>
+  <user id="1000">
+    <params>
+      <param name="password" value="your_secure_password"/>
+      <param name="vm-password" value="1000"/>
+    </params>
+    <variables>
+      <variable name="toll_allow" value="domestic,international,local"/>
+      <variable name="accountcode" value="1000"/>
+      <variable name="user_context" value="default"/>
+      <variable name="effective_caller_id_name" value="Extension 1000"/>
+      <variable name="effective_caller_id_number" value="1000"/>
+    </variables>
+  </user>
+</include>
 ```
 
 
@@ -232,14 +232,14 @@ Modify `/usr/local/freeswitch/conf/autoload_configs/acl.conf.xml`:
 
 
 ```
-&lt;configuration name="acl.conf" description="Network Lists"&gt;
-  &lt;network-lists&gt;
-    &lt;list name="trusted" default="deny"&gt;
-      &lt;node type="allow" cidr="192.168.0.0/24"/&gt;
-      &lt;node type="allow" cidr="10.0.0.0/8"/&gt;
-    &lt;/list&gt;
-  &lt;/network-lists&gt;
-&lt;/configuration&gt;
+<configuration name="acl.conf" description="Network Lists">
+  <network-lists>
+    <list name="trusted" default="deny">
+      <node type="allow" cidr="192.168.0.0/24"/>
+      <node type="allow" cidr="10.0.0.0/8"/>
+    </list>
+  </network-lists>
+</configuration>
 ```
 
 
@@ -392,10 +392,10 @@ Modify `/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml`:
 
 
 ```
-&lt;param name="max-sessions" value="1000"/&gt;
-&lt;param name="sessions-per-second" value="30"/&gt;
-&lt;param name="rtp-start-port" value="16384"/&gt;
-&lt;param name="rtp-end-port" value="32768"/&gt;
+<param name="max-sessions" value="1000"/>
+<param name="sessions-per-second" value="30"/>
+<param name="rtp-start-port" value="16384"/>
+<param name="rtp-end-port" value="32768"/>
 ```
 
 

@@ -67,11 +67,6 @@ Encoders are combinational circuits that convert a set of individual input signa
 
 * **BCD-to-Seven-Segment Decoder:** Converts a binary-coded decimal (BCD) input into a seven-segment display output.
 
-
-
-
-
-
 **Decoders**
 
 
@@ -84,11 +79,6 @@ Decoders are combinational circuits that convert a coded input into a set of ind
 * **3-to-8 Decoder:** Decodes a 3-bit input into 8 output lines.
 
 * **BCD-to-Decimal Decoder:** Decodes a BCD input into 10 output lines.
-
-
-
-
-
 
 **Applications of Combinational Logic Circuits, Encoders, and Decoders**
 

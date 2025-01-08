@@ -53,7 +53,7 @@ The following command must be run with root privileges.
 ```bash
 cd
 sudo su
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb &gt; msfinstall &amp;&amp; \
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall &amp;&amp; \
   chmod 755 msfinstall &amp;&amp; \
   ./msfinstall
 ```
@@ -152,7 +152,7 @@ If everything went well (which I'm sure it will), you will be greeted by a scree
 + -- --=[ 486 payloads - 40 encoders - 9 nops             ]
 + -- --=[ Free Metasploit Pro trial: http://r-7.co/trymsp ]
 
-msf &gt; 
+msf > 
 ```
 
 
@@ -165,11 +165,11 @@ msf &gt;
 
 
 ```bash
-msf &gt; msfdb status
+msf > msfdb status
 [*] exec: msfdb status
 
 Database started at /home/umut/.msf4/db
-msf &gt; 
+msf > 
 ```
 
 
@@ -182,7 +182,7 @@ For example, if you are looking for an exploit related to samba, the following  
 
 
 ```bash
-msf &gt; search samba
+msf > search samba
 
 Matching Modules
 ================

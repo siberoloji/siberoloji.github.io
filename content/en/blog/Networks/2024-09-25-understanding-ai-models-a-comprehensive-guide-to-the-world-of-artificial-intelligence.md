@@ -47,11 +47,6 @@ The development of AI models involves three critical stages:
 
 * **Testing and Deployment** – Assessing the model’s performance and applying it to real-world tasks.
 
-
-
-
-
-
 2. How AI Models Work
 
 

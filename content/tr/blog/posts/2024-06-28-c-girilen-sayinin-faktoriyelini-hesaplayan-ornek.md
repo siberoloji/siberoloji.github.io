@@ -21,12 +21,12 @@ Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile h
 
 
 ```bash
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int factorial(int num) {
     int result = 1;
-    for (int i = 2; i &lt;= num; i++) {
+    for (int i = 2; i <= num; i++) {
         result *= i;
     }
     return result;
@@ -34,10 +34,10 @@ int factorial(int num) {
 
 int main() {
     int number;
-    cout &lt;&lt; "Enter a number: ";
-    cin &gt;&gt; number;
+    cout << "Enter a number: ";
+    cin >> number;
     int factorialResult = factorial(number);
-    cout &lt;&lt; "Factorial: " &lt;&lt; factorialResult &lt;&lt; endl;
+    cout << "Factorial: " << factorialResult << endl;
 
     return 0;
 }

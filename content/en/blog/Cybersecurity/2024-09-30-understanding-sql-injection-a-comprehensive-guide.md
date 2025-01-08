@@ -77,11 +77,6 @@ SQL injection attacks can take several forms, each with its unique characteristi
 * **Error-Based SQL Injection**: This type of SQL injection relies on making the database generate error messages, which can contain sensitive information. By injecting SQL that triggers an error, the attacker can extract valuable information, such as the database structure.
 
 * **Union-Based SQL Injection**: In this technique, an attacker uses the `UNION` SQL operator to combine results from multiple queries. This allows them to retrieve information from different tables and columns in the database.
-
-
-
-
-
 #### **How SQL Injection Happens**
 
 
@@ -116,11 +111,6 @@ The double hyphen (`--`) indicates a comment in SQL, so everything after it is i
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* **Lack of Security Measures**: Many developers, especially beginners, may not be aware of or neglect security practices like parameterized queries or prepared statements, which can prevent SQL injection.
-
-
-
-
-
 #### **Potential Consequences of SQL Injection**
 
 
@@ -135,11 +125,6 @@ The consequences of a successful SQL injection attack can range from minor annoy
 * **Authentication Bypass**: Attackers can bypass login forms and gain administrator-level access to the system without needing valid credentials.
 
 * **Complete System Takeover**: In extreme cases, SQL injection can give attackers control over the entire database or even the underlying operating system, depending on the system configuration.
-
-
-
-
-
 #### **How to Prevent SQL Injection**
 
 
@@ -152,8 +137,8 @@ Preventing SQL injection is critical to maintaining the integrity and security o
 
 
 ```bash
-   $stmt = $pdo-&gt;prepare('SELECT * FROM users WHERE username = :username AND password = :password');
-   $stmt-&gt;execute(['username' =&gt; $username, 'password' =&gt; $password]);
+   $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
+   $stmt->execute(['username' => $username, 'password' => $password]);
 ```
 
 
@@ -184,11 +169,6 @@ By using placeholders for user input, you ensure that the database treats the in
 * **Regular Code Audits**: Conducting regular code audits and security reviews can help catch SQL injection vulnerabilities before they can be exploited.
 
 * **Error Handling**: Ensure that your application does not reveal database error messages to users. Error messages can give attackers valuable insights into your database structure and make it easier to exploit vulnerabilities.
-
-
-
-
-
 #### **Conclusion**
 
 
@@ -198,9 +178,4 @@ SQL injection is a critical security vulnerability that, despite being well-know
 
 
 Security is a continuous process. Always stay updated with the latest security practices and ensure your development team is aware of common vulnerabilities like SQL injection. By doing so, you can significantly reduce the risk of falling victim to this type of attack and safeguard your users' data.
-
-
-
-
-
 By taking these precautions, you can build robust web applications that not only provide value to users but also ensure their data remains secure.

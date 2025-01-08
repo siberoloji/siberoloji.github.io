@@ -68,7 +68,7 @@ Step 2: Prepare for Installation
 
 * **Disable Antivirus Software**: Before running the installer, temporarily disable any antivirus programs. This prevents them from mistakenly flagging Metasploit as malware.
 
-* **Disable Windows Firewall**: Go to Control Panel &gt; System and Security &gt; Windows Defender Firewall and turn off the firewall temporarily.
+* **Disable Windows Firewall**: Go to Control Panel > System and Security > Windows Defender Firewall and turn off the firewall temporarily.
 
 
 

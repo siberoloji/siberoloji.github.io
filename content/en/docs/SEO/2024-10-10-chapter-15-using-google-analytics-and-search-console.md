@@ -85,7 +85,7 @@ To effectively leverage Google Analytics and Google Search Console, it’s impor
 **How to Monitor:**
 
 
-* In Google Analytics, navigate to **Acquisition &gt; All Traffic &gt; Channels** to see the volume of organic traffic over time.
+* In Google Analytics, navigate to **Acquisition > All Traffic > Channels** to see the volume of organic traffic over time.
 
 * Use filters to segment organic traffic by device, location, or user demographics to gain deeper insights.
 
@@ -107,7 +107,7 @@ To effectively leverage Google Analytics and Google Search Console, it’s impor
 **How to Monitor:**
 
 
-* In Google Analytics, go to **Behavior &gt; Site Content &gt; All Pages** to see the bounce rate for each page.
+* In Google Analytics, go to **Behavior > Site Content > All Pages** to see the bounce rate for each page.
 
 * Analyze pages with high bounce rates to determine potential issues, such as poor content quality, slow loading times, or a lack of clear calls to action.
 

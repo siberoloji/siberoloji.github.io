@@ -89,13 +89,13 @@ jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı 
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">jpegoptim resim.jpg
 
-resim.jpg 942x1006 24bit N JFIF [OK] 105602 --&gt; 98202 bytes (7.01%), optimized.
+resim.jpg 942x1006 24bit N JFIF [OK] 105602 --> 98202 bytes (7.01%), optimized.
 
 jpegoptim graduate.jpg
 
-graduate.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.
+graduate.jpg 53x75 24bit N JFIF [OK] 709 --> 314 bytes (55.71%), optimized.
 
 jpegoptim penguin.jpg --des=/home/umut/
 
-penguin.jpg 53x75 24bit N JFIF [OK] 709 --&gt; 314 bytes (55.71%), optimized.</pre>
+penguin.jpg 53x75 24bit N JFIF [OK] 709 --> 314 bytes (55.71%), optimized.</pre>
 <!-- /wp:preformatted -->

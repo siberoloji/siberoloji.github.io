@@ -60,11 +60,6 @@ IOCs serve as digital breadcrumbs left behind by malicious actors. They can be f
 
 * **Metadata IOCs:*** Metadata associated with files or documents, such as author, creation date, or version details
 
-
-
-
-
-
 **The Importance of IOCs**
 
 

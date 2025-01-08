@@ -3,7 +3,7 @@ draft: false
 
 title:  'Understanding WYSIWYG Editors: A Complete Guide for Beginners'
 date: '2024-10-26T15:28:41+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  "In the digital age, creating content for the web has become more accessible than ever. Among the tools that facilitate this process are WYSIWYG editors.  " 
  
 url:  /understanding-wysiwyg-editors-a-complete-guide-for-beginners/

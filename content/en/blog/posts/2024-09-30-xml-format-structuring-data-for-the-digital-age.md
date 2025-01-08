@@ -59,7 +59,7 @@ An XML document typically starts with an XML declaration:
 
 
 ```bash
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<?xml version="1.0" encoding="UTF-8"?>
 ```
 
 
@@ -76,9 +76,9 @@ Every XML document must have a single root element that contains all other eleme
 
 
 ```bash
-&lt;root&gt;
-  &lt;!-- Other elements go here --&gt;
-&lt;/root&gt;
+<root>
+  <!-- Other elements go here -->
+</root>
 ```
 
 
@@ -91,7 +91,7 @@ Elements are the building blocks of XML. They consist of a start tag, content, a
 
 
 ```bash
-&lt;element&gt;Content goes here&lt;/element&gt;
+<element>Content goes here</element>
 ```
 
 
@@ -100,9 +100,9 @@ Elements can be nested to create a hierarchical structure:
 
 
 ```bash
-&lt;parent&gt;
-  &lt;child&gt;Child content&lt;/child&gt;
-&lt;/parent&gt;
+<parent>
+  <child>Child content</child>
+</parent>
 ```
 
 
@@ -115,7 +115,7 @@ Elements can have attributes, which provide additional information about the ele
 
 
 ```bash
-&lt;element attribute="value"&gt;Content&lt;/element&gt;
+<element attribute="value">Content</element>
 ```
 
 
@@ -128,7 +128,7 @@ XML supports comments, which are ignored by XML processors:
 
 
 ```bash
-&lt;!-- This is a comment --&gt;
+<!-- This is a comment -->
 ```
 
 
@@ -142,22 +142,22 @@ XML has strict syntax rules that must be followed to create valid documents:
 
 * **All elements must have a closing tag** or be self-closing.
 
-* **Tags are case-sensitive**: `&lt;Element&gt;` and `&lt;element&gt;` are different tags.
+* **Tags are case-sensitive**: `<Element>` and `<element>` are different tags.
 
 * **Elements must be properly nested**:
 
 
 
 ```bash
-   &lt;outer&gt;&lt;inner&gt;&lt;/inner&gt;&lt;/outer&gt;  &lt;!-- Correct --&gt;
-   &lt;outer&gt;&lt;inner&gt;&lt;/outer&gt;&lt;/inner&gt;  &lt;!-- Incorrect --&gt;
+   <outer><inner></inner></outer>  <!-- Correct -->
+   <outer><inner></outer></inner>  <!-- Incorrect -->
 ```
 
 
 <!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Attribute values must be quoted**: `&lt;element attribute="value"&gt;`
+<ol start="4" class="wp-block-list">* **Attribute values must be quoted**: `<element attribute="value">`
 
-* **Special characters must be escaped**: Use entities like `&amp;lt;` for &lt;, `&amp;gt;` for &gt;, `&amp;amp;` for &amp;.
+* **Special characters must be escaped**: Use entities like `&amp;lt;` for <, `&amp;gt;` for >, `&amp;amp;` for &amp;.
 
 
 

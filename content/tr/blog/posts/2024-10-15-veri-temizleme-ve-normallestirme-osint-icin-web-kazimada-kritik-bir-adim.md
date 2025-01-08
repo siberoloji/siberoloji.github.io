@@ -44,11 +44,6 @@ Veri temizleme ve normalleştirme, web kazıma sürecinde kritik adımlardır. H
 
 * **Ayrıklaştırma:**  Sürekli verileri ayrı kategorilere dönüştürme
 
-
-
-
-
-
 **Veri Temizleme ve Normalizasyonundaki Zorluklar**
 
 
@@ -119,11 +114,6 @@ Etkili veri temizleme ve normalleştirmeyi sağlamak için aşağıdaki en iyi u
 * Zaman dilimlerinin işlenmesi
 
 * Tutarsızlıkları ve hataları belirleme
-
-
-
-
-
 
 **Vaka Çalışması: Finansal Verilerin Temizlenmesi ve Normalleştirilmesi**
 

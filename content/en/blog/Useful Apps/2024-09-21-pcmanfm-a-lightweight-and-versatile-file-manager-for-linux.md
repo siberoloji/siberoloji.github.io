@@ -191,7 +191,7 @@ After installation, you can launch PCManFM from your application menu or by runn
 
 
 
-To get the most out of PCManFM, consider exploring its configuration options. You can access these by navigating to Edit &gt; Preferences in the PCManFM menu. Some key areas to customize include:
+To get the most out of PCManFM, consider exploring its configuration options. You can access these by navigating to Edit > Preferences in the PCManFM menu. Some key areas to customize include:
 
 
 * General settings: Adjust behavior for new windows, tabs, and file operations.

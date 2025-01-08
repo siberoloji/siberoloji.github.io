@@ -43,11 +43,6 @@ DNS stands for **Domain Name System**, which is essentially the phonebook of the
 
 * This system allows users to easily access websites without needing to memorize numerical IP addresses.
 
-
-
-
-
-
 2. What is a DNS Server?
 
 
@@ -73,11 +68,6 @@ A **DNS server** is a machine (server) that holds the database of domain names a
 
 
 * DNS servers are the backbone of the DNS lookup process, helping direct your computer to the right website by translating domain names into IP addresses.
-
-
-
-
-
 
 3. How Does DNS Work?
 
@@ -107,11 +97,6 @@ The process of DNS resolution involves several steps, though it typically occurs
 
 
 All of this happens in the blink of an eye, typically in milliseconds.
-
-
-
-
-
 4. Common Examples of DNS in Daily Use
 
 
@@ -138,11 +123,6 @@ Email systems also rely on DNS to function correctly. When you send an email, th
 
 
 Many mobile apps, especially those that require internet access, rely on DNS to connect to the services they offer. When you open a social media app or use a navigation service, DNS works behind the scenes to route you to the correct servers for those applications.
-
-
-
-
-
 5. Why is DNS Important?
 
 
@@ -158,11 +138,6 @@ DNS is crucial because it serves as the gateway between human-readable domain na
 * **Load Balancing**: DNS can distribute traffic among multiple servers, ensuring that websites remain accessible even during high traffic.
 
 * **Security Features**: DNS can help filter out malicious websites by blocking certain domain names associated with spam, malware, or phishing.
-
-
-
-
-
 
 6. DNS Issues and Troubleshooting
 
@@ -190,11 +165,6 @@ While DNS typically works seamlessly, users may occasionally encounter problems.
 * **Change DNS Servers**: If your ISP’s DNS servers are slow or unresponsive, you can switch to public DNS servers like Google DNS (`8.8.8.8` and `8.8.4.4`) or Cloudflare DNS (`1.1.1.1`).
 
 * **Restart Your Router**: If you’re experiencing widespread DNS issues on all devices connected to your network, a simple router restart can sometimes fix the issue.
-
-
-
-
-
 
 7. Conclusion
 

@@ -112,7 +112,7 @@ Step-by-Step Editing Process
 
 * Open Audacity.
 
-* Go to `File` &gt; `Import` &gt; `Audio...`.
+* Go to `File` > `Import` > `Audio...`.
 
 * Select your audio file to import it into the workspace.
 
@@ -124,7 +124,7 @@ Step-by-Step Editing Process
 
 * Open GarageBand and create a new project.
 
-* Drag your audio file into the timeline or use `File` &gt; `Import`.
+* Drag your audio file into the timeline or use `File` > `Import`.
 
 
 
@@ -141,7 +141,7 @@ Normalizing ensures that your audio maintains a consistent volume throughout:
 
 * Select all audio by pressing `Ctrl + A`.
 
-* Go to `Effect` &gt; `Normalize...`.
+* Go to `Effect` > `Normalize...`.
 
 * Check the box for "Remove DC offset" and set peak amplitude to -1 dB.
 
@@ -170,7 +170,7 @@ Cutting out irrelevant sections keeps your content engaging:
 
 * Use the selection tool to highlight sections you want to remove.
 
-* Press `Delete` or go to `Edit` &gt; `Remove Special` &gt; `Trim`.
+* Press `Delete` or go to `Edit` > `Remove Special` > `Trim`.
 
 
 
@@ -229,11 +229,11 @@ Once you’re satisfied with your edits, it's time to export:
 
 * In Audacity:
 
-* Go to `File` &gt; `Export` &gt; choose either `Export as MP3` or `Export as WAV`.
+* Go to `File` > `Export` > choose either `Export as MP3` or `Export as WAV`.
 
 * In GarageBand:
 
-* Click on `Share` &gt; `Export Song to Disk...`, choose your format (MP3 or AAC), and save.
+* Click on `Share` > `Export Song to Disk...`, choose your format (MP3 or AAC), and save.
 
 
 

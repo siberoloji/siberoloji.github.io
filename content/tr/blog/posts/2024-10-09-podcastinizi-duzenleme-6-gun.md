@@ -105,7 +105,7 @@ Adım Adım Düzenleme Süreci
 
 * Audacity'yi açın.
 
-* `File`&gt; `Import`&gt; adresine gidin `Audio...`.
+* `File`> `Import`> adresine gidin `Audio...`.
 
 * Çalışma alanına aktarmak için ses dosyanızı seçin.
 
@@ -117,7 +117,7 @@ Adım Adım Düzenleme Süreci
 
 * GarageBand'i açın ve yeni bir proje oluşturun.
 
-* Ses dosyanızı zaman çizelgesine sürükleyin veya `File`&gt; öğesini kullanın `Import`.
+* Ses dosyanızı zaman çizelgesine sürükleyin veya `File`> öğesini kullanın `Import`.
 
 
 
@@ -134,7 +134,7 @@ Normalleştirme, sesinizin aşağıdakiler boyunca tutarlı bir seviyede kalmas�
 
 * Tüm sesleri seçmek için tuşuna basın `Ctrl + A`.
 
-* `Effect`&gt; adresine gidin `Normalize...`.
+* `Effect`> adresine gidin `Normalize...`.
 
 * “DC ofsetini kaldır” kutusunu işaretleyin ve tepe genliğini -1 dB olarak ayarlayın.
 
@@ -163,7 +163,7 @@ Normalleştirme, sesinizin aşağıdakiler boyunca tutarlı bir seviyede kalmas�
 
 * Kaldırmak istediğiniz bölümleri vurgulamak için seçim aracını kullanın.
 
-* &gt; &gt; tuşuna basın `Delete`veya şuraya gidin .`Edit``Remove Special``Trim`
+* > > tuşuna basın `Delete`veya şuraya gidin .`Edit``Remove Special``Trim`
 
 
 
@@ -222,11 +222,11 @@ Düzenlemelerinizden memnun kaldığınızda, dışa aktarma zamanı gelir:
 
 * Audacity'de:
 
-* `File`&gt; `Export`&gt; seçeneğine gidin `Export as MP3`veya seçin `Export as WAV`.
+* `File`> `Export`> seçeneğine gidin `Export as MP3`veya seçin `Export as WAV`.
 
 * GarageBand'de:
 
-* `Share`&gt; öğesine tıklayın `Export Song to Disk...`, formatınızı (MP3 veya AAC) seçin ve kaydedin.
+* `Share`> öğesine tıklayın `Export Song to Disk...`, formatınızı (MP3 veya AAC) seçin ve kaydedin.
 
 
 

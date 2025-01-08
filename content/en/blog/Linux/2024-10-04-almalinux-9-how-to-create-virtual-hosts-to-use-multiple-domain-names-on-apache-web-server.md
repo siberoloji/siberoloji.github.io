@@ -44,11 +44,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to Apache Virtual Hosts
 
 
@@ -142,11 +137,6 @@ sudo systemctl enable httpd
 
 
 You can verify the installation by visiting your server's IP address in a web browser (`http://your_server_ip`). You should see the default Apache test page.
-
-
-
-
-
 4. How Virtual Hosting Works in Apache
 
 
@@ -168,11 +158,6 @@ Each Virtual Host is configured with directives such as:
 
 
 You will create separate configuration files for each domain, allowing Apache to serve the correct content based on the domain requested.
-
-
-
-
-
 5. Creating Directories for Each Website
 
 
@@ -235,14 +220,14 @@ Add some basic HTML content to this file:
 
 
 ```bash
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Welcome to Example1.com!&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Example1.com is working!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<html>
+    <head>
+        <title>Welcome to Example1.com!</title>
+    </head>
+    <body>
+        <h1>Example1.com is working!</h1>
+    </body>
+</html>
 ```
 
 
@@ -260,20 +245,15 @@ Add a similar HTML page for `example2.com`:
 
 
 ```bash
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Welcome to Example2.com!&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Example2.com is working!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<html>
+    <head>
+        <title>Welcome to Example2.com!</title>
+    </head>
+    <body>
+        <h1>Example2.com is working!</h1>
+    </body>
+</html>
 ```
-
-
-
-
-
 6. Configuring Virtual Hosts on Apache
 
 
@@ -305,14 +285,14 @@ Add the following content to configure the Virtual Host for `example1.com`:
 
 
 ```bash
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80>
     ServerAdmin admin@example1.com
     ServerName example1.com
     ServerAlias www.example1.com
     DocumentRoot /var/www/example1.com
     ErrorLog /var/log/httpd/example1.com-error.log
     CustomLog /var/log/httpd/example1.com-access.log combined
-&lt;/VirtualHost&gt;
+</VirtualHost>
 ```
 
 
@@ -333,14 +313,14 @@ Add the following content:
 
 
 ```bash
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80>
     ServerAdmin admin@example2.com
     ServerName example2.com
     ServerAlias www.example2.com
     DocumentRoot /var/www/example2.com
     ErrorLog /var/log/httpd/example2.com-error.log
     CustomLog /var/log/httpd/example2.com-access.log combined
-&lt;/VirtualHost&gt;
+</VirtualHost>
 ```
 
 
@@ -369,11 +349,6 @@ Restart the Apache service to apply the new configuration:
 ```bash
 sudo systemctl restart httpd
 ```
-
-
-
-
-
 7. Testing the Virtual Hosts Configuration
 
 
@@ -403,11 +378,6 @@ Replace `your_server_ip` with the actual IP address of your server.
 
 
 Now open a web browser and navigate to `http://example1.com` and `http://example2.com`. You should see the different websites you created for each domain.
-
-
-
-
-
 8. Enabling and Securing Virtual Hosts with SSL (Optional)
 
 
@@ -452,11 +422,6 @@ After installing the certificates, verify that your domains are now accessible o
 
 
 and `https://example2.com`.
-
-
-
-
-
 9. Conclusion
 
 

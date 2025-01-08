@@ -47,11 +47,6 @@ Before we dive into advanced techniques, let's cover the fundamental aspects of 
 
 * Confirm the crafting process.
 
-
-
-
-
-
 **Maximizing Your Crafting Experience**
 
 

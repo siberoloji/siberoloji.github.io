@@ -44,7 +44,7 @@ Before you dive into transferring your data, there are a few preparatory steps y
 Make sure your old iPhone is running the latest version of iOS. Apple’s data transfer features work best when both devices are on the latest software.
 
 
-* Go to **Settings &gt; General &gt; Software Update**.
+* Go to **Settings > General > Software Update**.
 
 * If an update is available, follow the on-screen instructions to install it.
 
@@ -54,7 +54,7 @@ Make sure your old iPhone is running the latest version of iOS. Apple’s data t
 
 
 
-If you’re planning to use iCloud for your data transfer, ensure you have enough iCloud storage to back up all your data. You can check your storage by going to **Settings &gt; [Your Name] &gt; iCloud &gt; Manage Storage**. If needed, you can purchase additional iCloud storage plans.
+If you’re planning to use iCloud for your data transfer, ensure you have enough iCloud storage to back up all your data. You can check your storage by going to **Settings > [Your Name] > iCloud > Manage Storage**. If needed, you can purchase additional iCloud storage plans.
 
 
 #### 3. **Ensure Both Devices Have Enough Battery**
@@ -71,7 +71,7 @@ Make sure both your old iPhone and new iPhone 16 have sufficient battery power (
 Before proceeding with any data transfer method, it’s always a good idea to back up your old iPhone. You can back up your data using <a href="https://www.icloud.com" target="_blank" rel="noopener" title="">iCloud</a>, iTunes, or Finder (for macOS Catalina and later).
 
 
-* **iCloud Backup**: Go to **Settings &gt; [Your Name] &gt; iCloud &gt; iCloud Backup** and tap **Back Up Now**.
+* **iCloud Backup**: Go to **Settings > [Your Name] > iCloud > iCloud Backup** and tap **Back Up Now**.
 
 * **iTunes or Finder Backup**: Connect your iPhone to your computer, open iTunes (or Finder on macOS Catalina and later), and click **Back Up Now**.
 
@@ -121,7 +121,7 @@ If you’ve been regularly backing up your old iPhone to iCloud, you can use thi
 <h5 class="wp-block-heading">Steps to Use iCloud Backup:</h5>
 
 
-* **Ensure a Recent iCloud Backup**: On your old iPhone, go to **Settings &gt; [Your Name] &gt; iCloud &gt; iCloud Backup**. Make sure the **Back Up Now** option has been used recently.
+* **Ensure a Recent iCloud Backup**: On your old iPhone, go to **Settings > [Your Name] > iCloud > iCloud Backup**. Make sure the **Back Up Now** option has been used recently.
 
 * **Turn on Your iPhone 16**: Follow the on-screen instructions until you reach the **Apps &amp; Data** screen.
 

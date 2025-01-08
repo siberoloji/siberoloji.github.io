@@ -34,8 +34,8 @@ Yaptığınız `smb_login` taramasında başarılı bir oturum açma gerçekleş
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/smb/smb_login
-msf auxiliary**(**smb_login**)** **&gt;** show options
+msf **>** use auxiliary/scanner/smb/smb_login
+msf auxiliary**(**smb_login**)** **>** show options
 
 Module options **(**auxiliary/scanner/smb/smb_login**)**:
 
@@ -57,15 +57,15 @@ Module options **(**auxiliary/scanner/smb/smb_login**)**:
    USER_FILE                          no        File containing usernames, one per line
    VERBOSE           true             yes       Whether to print output **for **all attempts
 
-msf auxiliary**(**smb_login**)** **&gt;** set RHOSTS 192.168.1.0/24
-RHOSTS **=&gt;** 192.168.1.0/24
-msf auxiliary**(**smb_login**)** **&gt;** set SMBUser victim
-SMBUser **=&gt;** victim
-msf auxiliary**(**smb_login**)** **&gt;** set SMBPass s3cr3t
-SMBPass **=&gt;** s3cr3t
-msf auxiliary**(**smb_login**)** **&gt;** set THREADS 50
-THREADS **=&gt;** 50
-msf auxiliary**(**smb_login**)** **&gt;** run
+msf auxiliary**(**smb_login**)** **>** set RHOSTS 192.168.1.0/24
+RHOSTS **=>** 192.168.1.0/24
+msf auxiliary**(**smb_login**)** **>** set SMBUser victim
+SMBUser **=>** victim
+msf auxiliary**(**smb_login**)** **>** set SMBPass s3cr3t
+SMBPass **=>** s3cr3t
+msf auxiliary**(**smb_login**)** **>** set THREADS 50
+THREADS **=>** 50
+msf auxiliary**(**smb_login**)** **>** run
 
 **[*********]** 192.168.1.100 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
 **[*********]** 192.168.1.111 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
@@ -74,7 +74,7 @@ msf auxiliary**(**smb_login**)** **&gt;** run
 **[*********]** 192.168.1.116 - SUCCESSFUL LOGIN **(**Unix**)**
 **[*********]** Auxiliary module execution completed
 
-msf auxiliary**(**smb_login**)** **&gt;**
+msf auxiliary**(**smb_login**)** **>**
 ```
 
 

@@ -51,18 +51,18 @@ Here is the complete code.
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;fstream&gt;
-#include &lt;string&gt;
-#include &lt;stdexcept&gt;
-#include &lt;array&gt;
-#include &lt;chrono&gt;
-#include &lt;thread&gt;
-#include &lt;unistd.h&gt;
-#include &lt;arpa/inet.h&gt;
-#include &lt;sys/socket.h&gt;
-#include &lt;netinet/in.h&gt;
-#include &lt;netinet/ip_icmp.h&gt;
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <array>
+#include <chrono>
+#include <thread>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netinet/ip_icmp.h>
 
 constexpr size_t PACKET_SIZE = 64;
 constexpr std::chrono::seconds MAX_WAIT_TIME(1);
@@ -71,21 +71,21 @@ class NetworkScanner {
 private:
     static uint16_t calculateChecksum(uint16_t *buf, int len) {
         uint32_t sum = 0;
-        while (len &gt; 1) {
+        while (len > 1) {
             sum += *buf++;
             len -= 2;
         }
         if (len == 1) {
-            sum += *reinterpret_cast&lt;uint8_t *&gt;(buf);
+            sum += *reinterpret_cast<uint8_t *>(buf);
         }
-        sum = (sum &gt;&gt; 16) + (sum &amp; 0xFFFF);
-        sum += (sum &gt;&gt; 16);
-        return static_cast&lt;uint16_t&gt;(~sum);
+        sum = (sum >> 16) + (sum &amp; 0xFFFF);
+        sum += (sum >> 16);
+        return static_cast<uint16_t>(~sum);
     }
 
     static int ping(const std::string&amp; ip_addr) {
         int sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
-        if (sockfd &lt; 0) {
+        if (sockfd < 0) {
             throw std::runtime_error("Socket creation failed");
         }
 
@@ -93,26 +93,26 @@ private:
         addr.sin_family = AF_INET;
         addr.sin_addr.s_addr = inet_addr(ip_addr.c_str());
 
-        std::array&lt;char, PACKET_SIZE&gt; packet{};
-        auto* icmp_header = reinterpret_cast&lt;struct icmp*&gt;(packet.data());
-        icmp_header-&gt;icmp_type = ICMP_ECHO;
-        icmp_header-&gt;icmp_code = 0;
-        icmp_header-&gt;icmp_id = getpid();
-        icmp_header-&gt;icmp_seq = 0;
-        icmp_header-&gt;icmp_cksum = 0;
-        icmp_header-&gt;icmp_cksum = calculateChecksum(reinterpret_cast&lt;uint16_t*&gt;(icmp_header), PACKET_SIZE);
+        std::array<char, PACKET_SIZE> packet{};
+        auto* icmp_header = reinterpret_cast<struct icmp*>(packet.data());
+        icmp_header->icmp_type = ICMP_ECHO;
+        icmp_header->icmp_code = 0;
+        icmp_header->icmp_id = getpid();
+        icmp_header->icmp_seq = 0;
+        icmp_header->icmp_cksum = 0;
+        icmp_header->icmp_cksum = calculateChecksum(reinterpret_cast<uint16_t*>(icmp_header), PACKET_SIZE);
 
         timeval tv{};
         tv.tv_sec = MAX_WAIT_TIME.count();
         tv.tv_usec = 0;
         setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &amp;tv, sizeof(tv));
 
-        if (sendto(sockfd, packet.data(), PACKET_SIZE, 0, reinterpret_cast&lt;sockaddr*&gt;(&amp;addr), sizeof(addr)) &lt;= 0) {
+        if (sendto(sockfd, packet.data(), PACKET_SIZE, 0, reinterpret_cast<sockaddr*>(&amp;addr), sizeof(addr)) <= 0) {
             close(sockfd);
             return -1;
         }
 
-        if (recvfrom(sockfd, packet.data(), packet.size(), 0, nullptr, nullptr) &lt;= 0) {
+        if (recvfrom(sockfd, packet.data(), packet.size(), 0, nullptr, nullptr) <= 0) {
             close(sockfd);
             return -1;
         }
@@ -128,26 +128,26 @@ public:
             throw std::runtime_error("Error opening file");
         }
 
-        for (int i = 1; i &lt;= 254; ++i) {
+        for (int i = 1; i <= 254; ++i) {
             std::string ip = base_ip + std::to_string(i);
-            std::cout &lt;&lt; "Pinging " &lt;&lt; ip &lt;&lt; "... ";
+            std::cout << "Pinging " << ip << "... ";
 
             try {
                 if (ping(ip) == 0) {
-                    std::cout &lt;&lt; ip &lt;&lt; " is reachable ";
-                    file &lt;&lt; ip &lt;&lt; ' ';
+                    std::cout << ip << " is reachable ";
+                    file << ip << ' ';
                 } else {
-                    std::cout &lt;&lt; ip &lt;&lt; " is not reachable ";
+                    std::cout << ip << " is not reachable ";
                 }
             } catch (const std::exception&amp; e) {
-                std::cerr &lt;&lt; "Error pinging " &lt;&lt; ip &lt;&lt; ": " &lt;&lt; e.what() &lt;&lt; ' ';
+                std::cerr << "Error pinging " << ip << ": " << e.what() << ' ';
             }
 
             // Add a small delay between pings to avoid overwhelming the network
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
 
-        std::cout &lt;&lt; "Scan complete. Results saved in scan_results.txt ";
+        std::cout << "Scan complete. Results saved in scan_results.txt ";
     }
 };
 
@@ -155,7 +155,7 @@ int main() {
     try {
         NetworkScanner::scanNetwork("192.168.1.");
     } catch (const std::exception&amp; e) {
-        std::cerr &lt;&lt; "Error: " &lt;&lt; e.what() &lt;&lt; ' ';
+        std::cerr << "Error: " << e.what() << ' ';
         return 1;
     }
     return 0;

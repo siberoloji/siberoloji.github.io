@@ -267,7 +267,7 @@ By default, Apache serves content from the `/var/www/html` directory. To host a 
 
 * You can either create a new HTML file or upload your website files. For example, create a simple `index.html` file: `sudo nano index.html`
 
-* Add your website content: `&lt;html&gt; &lt;head&gt; &lt;title&gt;My AlmaLinux Website&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Welcome to my website hosted on AlmaLinux 9!&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt;`
+* Add your website content: `<html> <head> <title>My AlmaLinux Website</title> </head> <body> <h1>Welcome to my website hosted on AlmaLinux 9!</h1> </body> </html>`
 
 * Save the file and exit. When you visit your server's IP address in a web browser, you should now see your custom web page instead of the default Apache page.
 
@@ -287,7 +287,7 @@ Virtual hosts allow you to run multiple websites on the same server. Each websit
 
 * Create a configuration file for the new site in `/etc/httpd/conf.d/`: `sudo nano /etc/httpd/conf.d/yourdomain.com.conf`
 
-* Add the following content to define the virtual host: `&lt;VirtualHost *:80&gt; ServerAdmin admin@yourdomain.com DocumentRoot /var/www/yourdomain.com ServerName yourdomain.com ErrorLog /var/log/httpd/yourdomain.com-error.log CustomLog /var/log/httpd/yourdomain.com-access.log combined &lt;/VirtualHost&gt;`
+* Add the following content to define the virtual host: `<VirtualHost *:80> ServerAdmin admin@yourdomain.com DocumentRoot /var/www/yourdomain.com ServerName yourdomain.com ErrorLog /var/log/httpd/yourdomain.com-error.log CustomLog /var/log/httpd/yourdomain.com-access.log combined </VirtualHost>`
 
 * Save the file, then restart Apache: `sudo systemctl restart httpd`
 

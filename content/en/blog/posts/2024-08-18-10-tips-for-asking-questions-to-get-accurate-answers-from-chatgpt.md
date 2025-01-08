@@ -100,9 +100,4 @@ If the response doesn’t seem to match your expectation, try rephrasing the que
 
 Try to keep your questions on one topic at a time. If you have multiple unrelated questions, ask them separately to keep the answers focused and relevant.
 
-
-
-
-
-
 These tips should help you get the most accurate and useful responses from ChatGPT!

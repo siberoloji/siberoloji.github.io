@@ -24,11 +24,6 @@ Disk partitioning is an essential task in Linux, especially for system administr
 
 
 In this blog post, we’ll explore the `cfdisk` command in detail, discussing its use cases, advantages, and practical examples to help you master disk partitioning tasks on Linux.
-
-
-
-
-
 ## What is `cfdisk`?
 
 
@@ -52,11 +47,6 @@ In this blog post, we’ll explore the `cfdisk` command in detail, discussing it
 
 
 `cfdisk` operates on block devices such as `/dev/sda`, `/dev/nvme0n1`, or `/dev/mmcblk0`, and changes are only committed when you write them to the disk. Until that point, no data is altered, making it a relatively safe tool to experiment with.
-
-
-
-
-
 ## Installing `cfdisk`
 
 
@@ -90,11 +80,6 @@ sudo pacman -S util-linux```
 
 
 The `cfdisk` tool is part of the `util-linux` package, which is widely available on almost all Linux distributions.
-
-
-
-
-
 ## Basic Usage and Interface
 
 
@@ -120,11 +105,6 @@ Key Sections of the Interface:
 * **Partition Table**: Below the disk information is a list of current partitions on the disk. Each partition is displayed with its start and end points, size, file system type, and label.
 
 * **Menu Options**: At the bottom, you’ll find a menu that provides options such as **Create**, **Delete**, **Type**, **Write**, and **Quit**. You can navigate through these options using the arrow keys and select them by pressing **Enter**.
-
-
-
-
-
 
 ## Working with Partition Tables
 
@@ -157,11 +137,6 @@ To create a new partition table:
 
 
 Choosing the correct partition table is crucial for compatibility with your system’s boot method.
-
-
-
-
-
 ## Creating Partitions with `cfdisk`
 
 
@@ -199,11 +174,6 @@ Once the partition table is set, you can begin creating partitions. Here’s an 
 
 * No special settings are required for the home partition unless you want to change the file system type.
 
-
-
-
-
-
 Example:
 
 
@@ -220,11 +190,6 @@ After completing these steps, the partition table might look something like this
 
 
 Once the partitions are set, navigate to **[Write]** to commit your changes to disk. `cfdisk` will ask you to type "yes" to confirm that you want to write the changes. Afterward, you can quit the program by selecting **[Quit]**.
-
-
-
-
-
 ## Deleting and Modifying Partitions
 
 
@@ -259,7 +224,7 @@ For example:
 
 
 ```bash
-Type -&gt; 82 (Linux swap)```
+Type -> 82 (Linux swap)```
 
 
 
@@ -267,12 +232,7 @@ or
 
 
 ```bash
-Type -&gt; EF00 (EFI system)```
-
-
-
-
-
+Type -> EF00 (EFI system)```
 ## Practical `cfdisk` Use Cases
 
 
@@ -312,11 +272,6 @@ Create a partition with the desired size and write the changes. Once done, forma
 
 ```bash
 sudo mkfs.ext4 /dev/sdb1```
-
-
-
-
-
 ## Advantages and Limitations of `cfdisk`
 
 
@@ -339,11 +294,6 @@ Limitations:
 * **Limited Features**: Compared to `parted`, `cfdisk` lacks advanced features such as resizing partitions or aligning them to sector boundaries.
 
 * **Non-Graphical**: While more user-friendly than `fdisk`, it still requires working in a text-based interface, which might not be ideal for all users.
-
-
-
-
-
 
 ## Conclusion
 

@@ -57,7 +57,7 @@ Bazı işletim sistemlerinde "Hybrit Sleep" aynı işlevi yapmamaktadır. Bazı 
 
 
 
-`BIOS ----(HDD)----&gt; MBR ----&gt; Bootloader ----&gt; OS`
+`BIOS ----(HDD)----> MBR ----> Bootloader ----> OS`
 
 
 * 
@@ -66,7 +66,7 @@ Bazı işletim sistemlerinde "Hybrit Sleep" aynı işlevi yapmamaktadır. Bazı 
 
 
 
-`UEFI ----(HDD)----&gt; Bootloader ----&gt; OS`
+`UEFI ----(HDD)----> Bootloader ----> OS`
 
 
 * 
@@ -75,7 +75,7 @@ Bazı işletim sistemlerinde "Hybrit Sleep" aynı işlevi yapmamaktadır. Bazı 
 
 
 
-`UEFI ----(HDD)----&gt; MBR ----&gt; Bootloader ----&gt; OS`
+`UEFI ----(HDD)----> MBR ----> Bootloader ----> OS`
 
 
 

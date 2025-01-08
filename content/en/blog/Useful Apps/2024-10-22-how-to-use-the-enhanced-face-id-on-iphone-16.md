@@ -76,7 +76,7 @@ Once both scans are complete, Face ID is ready to use.
 
 
 
-**Pro Tip**: You can set up an alternate appearance by going to **Settings** &gt; **Face ID &amp; Passcode** and selecting **Set Up an Alternate Appearance**. This feature is especially useful if you frequently wear different accessories that might obscure parts of your face.
+**Pro Tip**: You can set up an alternate appearance by going to **Settings** > **Face ID &amp; Passcode** and selecting **Set Up an Alternate Appearance**. This feature is especially useful if you frequently wear different accessories that might obscure parts of your face.
 
 
 
@@ -188,7 +188,7 @@ Security is a priority with Face ID. Apple has designed the system to ensure tha
 
 
 
-You can manage these security settings by going to **Settings** &gt; **Face ID &amp; Passcode**, where you can toggle **Require Attention for Face ID**.
+You can manage these security settings by going to **Settings** > **Face ID &amp; Passcode**, where you can toggle **Require Attention for Face ID**.
 
 
 
@@ -203,7 +203,7 @@ While Face ID on the iPhone 16 is extremely reliable, there are times when it ma
 
 * **Face ID Too Slow**: If Face ID feels sluggish, ensure that your iPhone is running the latest version of iOS, which often contains optimizations for Face ID performance.
 
-* **Face ID Stopped Working Altogether**: In rare cases, if Face ID stops working entirely, try resetting it by going to **Settings** &gt; **Face ID &amp; Passcode** &gt; **Reset Face ID** and set it up again.
+* **Face ID Stopped Working Altogether**: In rare cases, if Face ID stops working entirely, try resetting it by going to **Settings** > **Face ID &amp; Passcode** > **Reset Face ID** and set it up again.
 
 
 

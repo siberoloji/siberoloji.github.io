@@ -299,7 +299,7 @@ Reboot your computer, and the Wi-Fi should start working.
 
 
 
-If you’re experiencing screen resolution issues, you can adjust the display settings from the **Settings** app. Go to **Settings &gt; Displays** and choose the appropriate resolution for your monitor.
+If you’re experiencing screen resolution issues, you can adjust the display settings from the **Settings** app. Go to **Settings > Displays** and choose the appropriate resolution for your monitor.
 
 
 #### 5.3. Software Not Available

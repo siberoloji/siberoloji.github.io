@@ -151,7 +151,7 @@ This command should display the arping help page, confirming that the installati
 <hr>
 Basic Usage of ARPing
 The arping command syntax is straightforward:
-<pre><code class="language-bash">arping [options] &lt;target IP or hostname&gt;
+<pre><code class="language-bash">arping [options] <target IP or hostname>
 `</pre>
 Here’s a basic example:
 <pre><code class="language-bash">arping 192.168.1.1

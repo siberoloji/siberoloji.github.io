@@ -265,11 +265,6 @@ Different document types may require specific approaches:
 
 * Note any limitations or uncertainties in the analysis.
 
-
-
-
-
-
 ## Case Studies in Metadata-Based Document Verification
 
 

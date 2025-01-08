@@ -145,7 +145,7 @@ While more time-consuming, creating custom app icons can dramatically transform 
 The iPhone 16's enhanced Focus system allows for context-aware home screen layouts:
 
 
-* Go to Settings &gt; Focus
+* Go to Settings > Focus
 
 * Create or select a Focus mode
 
@@ -179,7 +179,7 @@ This feature lets you maintain different layouts for various scenarios:
 The iPhone 16's Dynamic Island offers enhanced customization options:
 
 
-* Go to Settings &gt; Dynamic Island
+* Go to Settings > Dynamic Island
 
 * Choose display preferences
 

@@ -67,11 +67,6 @@ Before we dive into the recording process, let's briefly discuss what 8K video e
 
 * **Slow-Motion and Time-Lapse:** Experiment with slow-motion and time-lapse modes for creative effects.
 
-
-
-
-
-
 **Editing 8K Videos on iPhone 16**
 
 
@@ -102,11 +97,6 @@ Before we dive into the recording process, let's briefly discuss what 8K video e
 
 
 * **Exporting Your Video:*** Once you've finished editing, export your video in 8K resolution to preserve the highest quality. Consider exporting in a format like ProRes or HEVC for optimal playback and editing compatibility.
-
-
-
-
-
 
 **Tips for Shooting and Editing 8K Videos**
 

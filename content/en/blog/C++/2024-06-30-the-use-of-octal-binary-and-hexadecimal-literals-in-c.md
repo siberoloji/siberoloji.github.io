@@ -28,7 +28,7 @@ This function defines three integer variables, each initialized with a different
  * @brief This program demonstrates the use of octal, binary and hexadecimal literals in C++.
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -41,15 +41,15 @@ using namespace std;
  * @return int Returns 0 upon successful execution.
  */
 int main() {
-    int a = 0x1A; ///&lt; @brief Integer variable 'a' initialized with a hexadecimal literal. The value of 'a' is 26.
-    int b = 032; ///&lt; @brief Integer variable 'b' initialized with an octal literal. The value of 'b' is 26.
-    int c = 0b1101; ///&lt; @brief Integer variable 'c' initialized with a binary literal. The value of 'c' is 13.
+    int a = 0x1A; ///< @brief Integer variable 'a' initialized with a hexadecimal literal. The value of 'a' is 26.
+    int b = 032; ///< @brief Integer variable 'b' initialized with an octal literal. The value of 'b' is 26.
+    int c = 0b1101; ///< @brief Integer variable 'c' initialized with a binary literal. The value of 'c' is 13.
 
-    cout &lt;&lt; "Hexadecimal literal: " &lt;&lt; a &lt;&lt; endl; ///&lt; Prints the value of 'a' to the console.
-    cout &lt;&lt; "Octal literal: " &lt;&lt; b &lt;&lt; endl; ///&lt; Prints the value of 'b' to the console.
-    cout &lt;&lt; "Binary literal: " &lt;&lt; c &lt;&lt; endl; ///&lt; Prints the value of 'c' to the console.
+    cout << "Hexadecimal literal: " << a << endl; ///< Prints the value of 'a' to the console.
+    cout << "Octal literal: " << b << endl; ///< Prints the value of 'b' to the console.
+    cout << "Binary literal: " << c << endl; ///< Prints the value of 'c' to the console.
 
-    return 0; ///&lt; Returns 0 upon successful execution.
+    return 0; ///< Returns 0 upon successful execution.
 }
 ```
 
@@ -67,7 +67,7 @@ The program begins by including the `iostream` library, which provides facilitie
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -92,9 +92,9 @@ The program then uses `cout` to print the values of these variables to the conso
 
 
 ```cpp
-cout &lt;&lt; "Hexadecimal literal: " &lt;&lt; a &lt;&lt; endl;
-cout &lt;&lt; "Octal literal: " &lt;&lt; b &lt;&lt; endl;
-cout &lt;&lt; "Binary literal: " &lt;&lt; c &lt;&lt; endl;
+cout << "Hexadecimal literal: " << a << endl;
+cout << "Octal literal: " << b << endl;
+cout << "Binary literal: " << c << endl;
 ```
 
 

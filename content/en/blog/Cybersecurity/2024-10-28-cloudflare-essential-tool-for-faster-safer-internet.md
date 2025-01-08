@@ -267,11 +267,6 @@ Basic Setup Process
 
 * Enable Rocket Loader
 
-
-
-
-
-
 Best Practices
 
 

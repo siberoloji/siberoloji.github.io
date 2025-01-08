@@ -72,9 +72,9 @@ module counter_4bit(
 
 always @(posedge clk or posedge reset) begin
     if (reset)
-        count &lt;= 4'b0000;
+        count <= 4'b0000;
     else
-        count &lt;= count + 1;
+        count <= count + 1;
 end
 
 endmodule```
@@ -104,18 +104,18 @@ entity counter_4bit is
 end counter_4bit;
 
 architecture Behavioral of counter_4bit is
-    signal count_temp : STD_LOGIC_VECTOR(3 downto 0) := (others =&gt; '0');
+    signal count_temp : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
 begin
     process(clk, reset)
     begin
         if reset = '1' then
-            count_temp &lt;= (others =&gt; '0');
+            count_temp <= (others => '0');
         elsif rising_edge(clk) then
-            count_temp &lt;= count_temp + 1;
+            count_temp <= count_temp + 1;
         end if;
     end process;
 
-    count &lt;= count_temp;
+    count <= count_temp;
 end Behavioral;
 ```
 
@@ -231,8 +231,8 @@ end full_adder;
 
 architecture Behavioral of full_adder is
 begin
-    sum &lt;= a xor b xor cin;
-    cout &lt;= (a and b) or (cin and (a xor b));
+    sum <= a xor b xor cin;
+    cout <= (a and b) or (cin and (a xor b));
 end Behavioral;
 
 entity ripple_carry_adder_4bit is
@@ -254,10 +254,10 @@ architecture Structural of ripple_carry_adder_4bit is
 
     signal c1, c2, c3 : STD_LOGIC;
 begin
-    FA0: full_adder port map(a =&gt; a(0), b =&gt; b(0), cin =&gt; cin, sum =&gt; sum(0), cout =&gt; c1);
-    FA1: full_adder port map(a =&gt; a(1), b =&gt; b(1), cin =&gt; c1, sum =&gt; sum(1), cout =&gt; c2);
-    FA2: full_adder port map(a =&gt; a(2), b =&gt; b(2), cin =&gt; c2, sum =&gt; sum(2), cout =&gt; c3);
-    FA3: full_adder port map(a =&gt; a(3), b =&gt; b(3), cin =&gt; c3, sum =&gt; sum(3), cout =&gt; cout);
+    FA0: full_adder port map(a => a(0), b => b(0), cin => cin, sum => sum(0), cout => c1);
+    FA1: full_adder port map(a => a(1), b => b(1), cin => c1, sum => sum(1), cout => c2);
+    FA2: full_adder port map(a => a(2), b => b(2), cin => c2, sum => sum(2), cout => c3);
+    FA3: full_adder port map(a => a(3), b => b(3), cin => c3, sum => sum(3), cout => cout);
 end Structural;
 ```
 

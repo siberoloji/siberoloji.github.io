@@ -21,14 +21,14 @@ In this example, we show how to find the sum of 2 variables of type int and floa
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 int main() {
     int firstNumber = 11;
     float secondNumber = 12.8;
     float sum = firstNumber + secondNumber;
 
-    std::cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; std::endl;
+    std::cout << "Sum: " << sum << std::endl;
 
     return 0;
 }

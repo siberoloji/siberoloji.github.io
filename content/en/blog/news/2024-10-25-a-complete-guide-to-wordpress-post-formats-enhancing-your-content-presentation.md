@@ -253,11 +253,6 @@ Using Post Formats in Your Content Strategy
 
 * Enhanced search engine understanding
 
-
-
-
-
-
 ## Best Practices for Post Formats
 
 
@@ -369,7 +364,7 @@ Using Post Formats in Your Content Strategy
 add_filter( 'the_content', 'custom_format_content' );
 function custom_format_content( $content ) {
     if ( has_post_format( 'quote' ) ) {
-        return '&lt;div class="custom-quote"&gt;' . $content . '&lt;/div&gt;';
+        return '<div class="custom-quote">' . $content . '</div>';
     }
     return $content;
 }

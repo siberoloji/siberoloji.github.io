@@ -25,7 +25,7 @@ The provided C++ code demonstrates the use of a `switch-case` statement to handl
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -38,32 +38,32 @@ using namespace std;
  * \return int Returns 0 upon successful execution.
  */
 int main() {
-    int number;  ///&lt; Variable to store the user input number.
-    cout &lt;&lt; "Enter a number between 1-7: ";
-    cin &gt;&gt; number;
+    int number;  ///< Variable to store the user input number.
+    cout << "Enter a number between 1-7: ";
+    cin >> number;
 
     switch (number) {
         case 1:
-            cout &lt;&lt; "One" &lt;&lt; endl;  ///&lt; Prints "One" if the number is 1.
+            cout << "One" << endl;  ///< Prints "One" if the number is 1.
         break;
         case 2:
-            cout &lt;&lt; "Two" &lt;&lt; endl;  ///&lt; Prints "Two" if the number is 2.
+            cout << "Two" << endl;  ///< Prints "Two" if the number is 2.
         break;
         case 3:
-            cout &lt;&lt; "Three" &lt;&lt; endl;  ///&lt; Prints "Three" if the number is 3.
+            cout << "Three" << endl;  ///< Prints "Three" if the number is 3.
         break;
         case 4:
-            cout &lt;&lt; "Four" &lt;&lt; endl;  ///&lt; Prints "Four" if the number is 4.
+            cout << "Four" << endl;  ///< Prints "Four" if the number is 4.
         break;
         case 5:
-            cout &lt;&lt; "Five" &lt;&lt; endl;  ///&lt; Prints "Five" if the number is 5.
+            cout << "Five" << endl;  ///< Prints "Five" if the number is 5.
         break;
         case 6:
         case 7:
-            cout &lt;&lt; "Six or Seven" &lt;&lt; endl;  ///&lt; Prints "Six or Seven" if the number is 6 or 7.
+            cout << "Six or Seven" << endl;  ///< Prints "Six or Seven" if the number is 6 or 7.
         break;
         default:
-            cout &lt;&lt; "Invalid number" &lt;&lt; endl;  ///&lt; Prints "Invalid number" for any other number.
+            cout << "Invalid number" << endl;  ///< Prints "Invalid number" for any other number.
     }
 
     return 0;
@@ -76,11 +76,11 @@ int main() {
 
 
 
-The provided C++ code demonstrates the use of a `switch-case` statement to handle different user inputs. The program begins by including the necessary header file `&lt;iostream&gt;` and using the `std` namespace to simplify the code.
+The provided C++ code demonstrates the use of a `switch-case` statement to handle different user inputs. The program begins by including the necessary header file `<iostream>` and using the `std` namespace to simplify the code.
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -92,8 +92,8 @@ The `main` function is the entry point of the program. It starts by declaring an
 ```cpp
 int main() {
     int number;
-    cout &lt;&lt; "Enter a number between 1-7: ";
-    cin &gt;&gt; number;
+    cout << "Enter a number between 1-7: ";
+    cin >> number;
 ```
 
 
@@ -104,10 +104,10 @@ The program then uses a `switch-case` statement to determine the output based on
 ```cpp
 switch (number) {
     case 1:
-        cout &lt;&lt; "One" &lt;&lt; endl;
+        cout << "One" << endl;
         break;
     case 2:
-        cout &lt;&lt; "Two" &lt;&lt; endl;
+        cout << "Two" << endl;
         break;
     // ... other cases
 }
@@ -121,7 +121,7 @@ For the numbers `6` and `7`, the program prints "Six or Seven". This is achieved
 ```cpp
 case 6:
 case 7:
-    cout &lt;&lt; "Six or Seven" &lt;&lt; endl;
+    cout << "Six or Seven" << endl;
     break;
 ```
 
@@ -132,7 +132,7 @@ If the user inputs any number outside the range of 1 to 7, the `default` case is
 
 ```cpp
 default:
-    cout &lt;&lt; "Invalid number" &lt;&lt; endl;
+    cout << "Invalid number" << endl;
 }
 ```
 

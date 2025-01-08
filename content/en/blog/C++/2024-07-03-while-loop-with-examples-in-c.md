@@ -25,7 +25,7 @@ The provided C++ code demonstrates various uses of the `while` loop, showcasing 
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -37,45 +37,45 @@ using namespace std;
 int main() {
     // Basic while loop example
     int i = 0;
-    while (i &lt; 10) {
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 9
+    while (i < 10) {
+        cout << i << endl; // Prints numbers from 0 to 9
         i++;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // While loop with break statement
     i = 0;
-    while (i &lt; 10) {
+    while (i < 10) {
         if (i == 5) {
             break; // Exits the loop when i equals 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 4
+        cout << i << endl; // Prints numbers from 0 to 4
         i++;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // While loop with continue statement
     i = 0;
-    while (i &lt; 10) {
+    while (i < 10) {
         if (i == 5) {
             i++; // Increment before continue to avoid infinite loop
             continue; // Skips the rest of the loop body when i equals 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 9, skipping 5
+        cout << i << endl; // Prints numbers from 0 to 9, skipping 5
         i++;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // While loop with return statement
     i = 0;
-    while (i &lt; 10) {
+    while (i < 10) {
         if (i == 5) {
             return 0; // Exits the program when i equals 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 4
+        cout << i << endl; // Prints numbers from 0 to 4
         i++;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl; // This line is never reached due to the return statement
+    cout << "Done" << endl; // This line is never reached due to the return statement
 
     return 0;
 }
@@ -96,8 +96,8 @@ Initially, the code presents a basic `while` loop example where a counter `i` is
 
 ```cpp
 int i = 0;
-while (i &lt; 10) {
-    cout &lt;&lt; i &lt;&lt; endl;
+while (i < 10) {
+    cout << i << endl;
     i++;
 }
 ```

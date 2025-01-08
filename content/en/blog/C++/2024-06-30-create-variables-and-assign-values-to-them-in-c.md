@@ -32,8 +32,8 @@ Here is an example of creating different types of variables and assigning values
 
 ```cpp
 // Include the necessary libraries
-#include &lt;iostream&gt; // for input/output operations
-#include &lt;string&gt;   // for using string data type
+#include <iostream> // for input/output operations
+#include <string>   // for using string data type
 
 // Main function where the program starts execution
 int main() {
@@ -73,8 +73,8 @@ The program begins by including necessary libraries. The `iostream` library is i
 
 
 ```cpp
-#include &lt;iostream&gt; // for input/output operations
-#include &lt;string&gt;   // for using string data type```
+#include <iostream> // for input/output operations
+#include <string>   // for using string data type```
 
 
 

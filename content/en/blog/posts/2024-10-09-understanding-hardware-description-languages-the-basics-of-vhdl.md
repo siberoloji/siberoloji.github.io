@@ -109,13 +109,13 @@ For example, the architecture for the AND gate could look like this:
 ```bash
 architecture Behavioral of AND_Gate is
 begin
-    Y &lt;= A and B;
+    Y <= A and B;
 end architecture Behavioral;
 ```
 
 
 
-In this case, we are defining the behavior of the AND gate. The statement `Y &lt;= A and B;` means that the output `Y` will be the logical AND of inputs `A` and `B`.
+In this case, we are defining the behavior of the AND gate. The statement `Y <= A and B;` means that the output `Y` will be the logical AND of inputs `A` and `B`.
 
 
 
@@ -167,7 +167,7 @@ In VHDL, concurrent statements describe operations that happen simultaneously. T
 
 
 
-For example, in the AND gate example above, the statement `Y &lt;= A and B;` is a concurrent statement, meaning that the value of `Y` is updated whenever `A` or `B` changes.
+For example, in the AND gate example above, the statement `Y <= A and B;` is a concurrent statement, meaning that the value of `Y` is updated whenever `A` or `B` changes.
 
 
 
@@ -186,7 +186,7 @@ Here’s an example of a process block:
 process (clk)
 begin
     if rising_edge(clk) then
-        Y &lt;= A and B;
+        Y <= A and B;
     end if;
 end process;
 ```

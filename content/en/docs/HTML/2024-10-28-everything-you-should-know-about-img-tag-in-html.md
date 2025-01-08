@@ -1,9 +1,9 @@
 ---
 draft: false
 
-title:  'Everything You Should Know about &lt;img&gt; Tag in HTML'
+title:  'Everything You Should Know about <img> Tag in HTML'
 date: '2024-10-28T13:33:29+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  'In this post, we''ll explore the various attributes of the "<img>" tag, best practices for using it, and some tips for optimizing images for the web.' 
  
 url:  /everything-you-should-know-about-img-tag-in-html/
@@ -16,15 +16,15 @@ tags:
 ---
 
 
-The `&lt;img&gt;` tag is an essential element in HTML that allows you to embed images into web pages. This tag is integral for creating visually appealing websites, enhancing user engagement, and conveying information effectively. In this post, we'll explore the various attributes of the `&lt;img&gt;` tag, best practices for using it, and some tips for optimizing images for the web.
+The `<img>` tag is an essential element in HTML that allows you to embed images into web pages. This tag is integral for creating visually appealing websites, enhancing user engagement, and conveying information effectively. In this post, we'll explore the various attributes of the `<img>` tag, best practices for using it, and some tips for optimizing images for the web.
 
 
 
-## What is the `&lt;img&gt;` Tag?
+## What is the `<img>` Tag?
 
 
 
-The `&lt;img&gt;` tag is a self-closing HTML element used to display images on a web page. Unlike other HTML tags, it does not have a closing tag. Instead, it contains attributes that define the source of the image, its size, and alternative text, among other properties.
+The `<img>` tag is a self-closing HTML element used to display images on a web page. Unlike other HTML tags, it does not have a closing tag. Instead, it contains attributes that define the source of the image, its size, and alternative text, among other properties.
 
 
 
@@ -32,11 +32,11 @@ Basic Syntax
 
 
 
-Here’s the basic syntax of the `&lt;img&gt;` tag:
+Here’s the basic syntax of the `<img>` tag:
 
 
 ```bash
-&lt;img src="image-url" alt="description" /&gt;
+<img src="image-url" alt="description" />
 ```
 
 
@@ -47,15 +47,15 @@ Here’s the basic syntax of the `&lt;img&gt;` tag:
 
 
 
-Example of the `&lt;img&gt;` Tag
+Example of the `<img>` Tag
 
 
 
-Here’s a simple example of how to use the `&lt;img&gt;` tag:
+Here’s a simple example of how to use the `<img>` tag:
 
 
 ```bash
-&lt;img src="https://example.com/image.jpg" alt="A beautiful landscape" /&gt;
+<img src="https://example.com/image.jpg" alt="A beautiful landscape" />
 ```
 
 
@@ -64,11 +64,11 @@ In this example, the image located at the provided URL will be displayed, and if
 
 
 
-## Important Attributes of the `&lt;img&gt;` Tag
+## Important Attributes of the `<img>` Tag
 
 
 
-Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several other attributes that can help customize how images are displayed on a webpage:
+Besides the `src` and `alt` attributes, the `<img>` tag includes several other attributes that can help customize how images are displayed on a webpage:
 
 
 * **`width` and `height`**: These attributes specify the dimensions of the image in pixels. Setting these values can help maintain the layout of your page as the image loads.
@@ -76,7 +76,7 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-  &lt;img src="image.jpg" alt="Sample Image" width="300" height="200" /&gt;
+  <img src="image.jpg" alt="Sample Image" width="300" height="200" />
 ```
 
 
@@ -85,7 +85,7 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-  &lt;img src="image.jpg" alt="Sample Image" title="This is a sample image." /&gt;
+  <img src="image.jpg" alt="Sample Image" title="This is a sample image." />
 ```
 
 
@@ -94,7 +94,7 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-  &lt;img src="image.jpg" alt="Sample Image" loading="lazy" /&gt;
+  <img src="image.jpg" alt="Sample Image" loading="lazy" />
 ```
 
 
@@ -103,12 +103,12 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-  &lt;img src="image.jpg" alt="Sample Image" class="responsive" id="featured-image" /&gt;
+  <img src="image.jpg" alt="Sample Image" class="responsive" id="featured-image" />
 ```
 
 
 
-## Best Practices for Using the `&lt;img&gt;` Tag
+## Best Practices for Using the `<img>` Tag
 
 
 * **Use Descriptive Alt Text**: Always provide meaningful alt text for your images. This not only improves accessibility but also enhances SEO by allowing search engines to understand the content of the image.
@@ -120,7 +120,7 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-   &lt;img src="small.jpg" srcset="medium.jpg 640w, large.jpg 1280w" alt="A responsive image" /&gt;
+   <img src="small.jpg" srcset="medium.jpg 640w, large.jpg 1280w" alt="A responsive image" />
 ```
 
 
@@ -143,7 +143,7 @@ Besides the `src` and `alt` attributes, the `&lt;img&gt;` tag includes several o
 
 
 ```bash
-   &lt;img src="image.jpg" alt="Sample Image" loading="lazy" /&gt;
+   <img src="image.jpg" alt="Sample Image" loading="lazy" />
 ```
 
 

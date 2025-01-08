@@ -131,7 +131,7 @@ WordPress, panonuzdan otomatik taslakları, revizyonları ve çöpe atılan öğ
 
 
 
-* Taslakları veya düzeltmeleri çöp kutusuna taşıdıktan sonra “Gönderiler” &gt; “Tüm Gönderiler” &gt; “Çöp Kutusu”na gidin.
+* Taslakları veya düzeltmeleri çöp kutusuna taşıdıktan sonra “Gönderiler” > “Tüm Gönderiler” > “Çöp Kutusu”na gidin.
 
 * Tüm öğeleri kalıcı olarak silmek için “Çöp Kutusunu Boşalt”a tıklayın.
 
@@ -212,7 +212,7 @@ WP-Sweep, WordPress veritabanınızı temizlemek için bir diğer etkili eklenti
 
 * Eklentiyi kurun ve etkinleştirin.
 
-* “Araçlar” &gt; “Süpürme” bölümüne gidin.
+* “Araçlar” > “Süpürme” bölümüne gidin.
 
 * Düzeltmeler, taslaklar, çöpe atılan gönderiler ve daha fazlası gibi çeşitli öğeler göreceksiniz.
 

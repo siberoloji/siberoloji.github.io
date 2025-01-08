@@ -67,7 +67,7 @@ Here's a simple example of pseudocode for a bubble sort algorithm:
 function bubbleSort(array)
   for i = 0 to array.length - 1
     for j = 0 to array.length - i - 1
-      if array[j] &gt; array[j+1]
+      if array[j] > array[j+1]
         swap array[j] and array[j+1]
 ```
 

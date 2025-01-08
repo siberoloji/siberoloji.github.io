@@ -19,11 +19,6 @@ tags:
 
 
 **Secure Shell (SSH)** is an essential protocol for administrators and developers to securely manage remote servers. It provides encrypted communication between client and server, ensuring that data sent over the network is protected from eavesdropping. In **AlmaLinux 9**, configuring an SSH server and using SSH clients allows you to connect, control, and manage your servers efficiently from a remote machine. This article will walk you through the process of setting up an SSH server on AlmaLinux 9 and how to use an SSH client for secure connections.
-
-
-
-
-
 Table of Contents
 
 
@@ -43,11 +38,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to SSH
 
 
@@ -65,11 +55,6 @@ Table of Contents
 
 
 SSH is a replacement for older protocols like **Telnet** and **rlogin**, which do not encrypt traffic and are vulnerable to attacks.
-
-
-
-
-
 2. Why Use SSH in AlmaLinux?
 
 
@@ -87,11 +72,6 @@ SSH is widely used because of its security and functionality. It offers:
 
 
 In AlmaLinux 9, **OpenSSH** is the default SSH implementation. It includes both the SSH server (`sshd`) and the client (`ssh`).
-
-
-
-
-
 3. Installing and Configuring SSH Server on AlmaLinux 9
 
 
@@ -151,11 +131,6 @@ sudo firewall-cmd --reload
 
 
 If you intend to change the default port for added security (as explained below), you will need to open that port in the firewall.
-
-
-
-
-
 4. Secure SSH Configuration: Best Practices
 
 
@@ -272,11 +247,6 @@ Restart the SSH service after making the changes:
 ```bash
 sudo systemctl restart sshd
 ```
-
-
-
-
-
 5. Using the SSH Client to Connect to a Remote Server
 
 
@@ -322,11 +292,6 @@ If you’ve configured SSH key-based authentication, the SSH client will automat
 ```bash
 ssh -i /path/to/private_key user@server_ip_address
 ```
-
-
-
-
-
 6. Transferring Files with SSH (SCP and SFTP)
 
 
@@ -369,11 +334,6 @@ sftp user@server_ip_address
 
 
 Once connected, you can use standard file transfer commands like `put`, `get`, `ls`, `cd`, and `exit`.
-
-
-
-
-
 7. Troubleshooting Common SSH Issues
 
 
@@ -408,11 +368,6 @@ If you encounter problems when using SSH, here are some common troubleshooting s
 
 ```bash
 UseDNS no```
-
-
-
-
-
 8. Conclusion
 
 

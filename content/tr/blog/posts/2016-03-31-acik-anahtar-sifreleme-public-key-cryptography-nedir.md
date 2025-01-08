@@ -85,7 +85,7 @@ Enigmail eklentisinin çalışması için Thunderbird Programı İngilizce kulla
 
 
 
-Tüm bunlardan sonra Thunderbird içerisinden Enigmail&gt;Kurulum sihirbazı ile kendi özel ve açık anahtarı oluşturmalısınız. Açık anahtarı insanlara yayınlamalısınız. Bunun için açık anahtarı Export seçeneği ile bir dosyaya aktarıp (pub key) <a href="http://keyserver.pgp.com/">keyserver.pgp.com</a> adresi vb. Anahtar sunuculara yükleyebilirsiniz. Posta göndermek için karşı tarafın da açık anahtarına sahip olmalısınız.
+Tüm bunlardan sonra Thunderbird içerisinden Enigmail>Kurulum sihirbazı ile kendi özel ve açık anahtarı oluşturmalısınız. Açık anahtarı insanlara yayınlamalısınız. Bunun için açık anahtarı Export seçeneği ile bir dosyaya aktarıp (pub key) <a href="http://keyserver.pgp.com/">keyserver.pgp.com</a> adresi vb. Anahtar sunuculara yükleyebilirsiniz. Posta göndermek için karşı tarafın da açık anahtarına sahip olmalısınız.
 
 
 

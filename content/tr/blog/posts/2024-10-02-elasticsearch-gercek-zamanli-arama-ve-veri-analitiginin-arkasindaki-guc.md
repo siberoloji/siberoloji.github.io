@@ -58,11 +58,6 @@ Elasticsearch, hızlı ve etkili veri arama ve analitiğine ihtiyaç duyan işle
 * **RESTful API'ler** : Elasticsearch, RESTful API'ler aracılığıyla hizmetleriyle etkileşim kurmanın basit ve erişilebilir bir yolunu sağlar. Bu, çok çeşitli uygulamalar ve hizmetlerle entegrasyonu kolaylaştırır.
 
 * **Elastic Stack ile Entegrasyon** : Elasticsearch, veri alımı için Logstash, veri görselleştirme için Kibana ve hafif veri taşıyıcıları için Beats'i içeren Elastic Stack'in bir parçasıdır. Bu entegrasyon, veri toplama, işleme, analiz ve görselleştirme için tam teşekküllü bir platform sunar.
-
-
-
-
-
 #### Elasticsearch Nasıl Çalışır?
 
 
@@ -75,11 +70,6 @@ Elasticsearch üç temel kavram üzerine kurulmuştur: indeksleme, sorgulama ve 
 * **Arama ve Sorgulama** : Elasticsearch, veri aramayı sezgisel ve güçlü hale getiren çeşitli sorgu türleri sunar. İster basit bir terim araması yapın, ister filtreler, toplamalar ve puanlama içeren karmaşık sorgular gerçekleştirin, Elasticsearch verilerinizden anlamlı içgörüler çıkarmak için ihtiyaç duyduğunuz araçları sağlar.
 
 * **Dağıtılmış Mimari** : Elasticsearch, dağıtılmış bir sistem olarak çalışmak üzere tasarlanmıştır, yani verileri küme adı verilen birden fazla düğüme yayabilir. Elasticsearch'teki veriler, parçalar adı verilen daha küçük parçalara bölünür ve her parça yedeklilik ve yüksek kullanılabilirlik için çoğaltılabilir. Bu tasarım, Elasticsearch'ün dayanıklı kalmasını ve büyük ölçekli veri işlemlerini idare edebilmesini sağlar.
-
-
-
-
-
 #### Elasticsearch için Genel Kullanım Örnekleri
 
 
@@ -94,11 +84,6 @@ Elasticsearch'ün çok yönlülüğü onu çok çeşitli kullanım durumları i�
 * **E-ticaret Ürün Araması** : E-ticaret platformları, hızlı ürün arama yeteneklerini etkinleştirmek için Elasticsearch'e güvenir. Kullanıcıların ürünleri ad, kategori veya özniteliğe göre aramasına olanak tanırken, sonuçları alaka düzeyine, fiyata veya diğer ölçütlere göre filtrelemeyi ve sıralamayı da destekler.
 
 * **İzleme ve Güvenlik Verileri** : Elasticsearch, çeşitli kaynaklardan gelen verileri toplamak ve analiz etmek için güvenlik ve izleme sistemlerinde yaygın olarak kullanılır. Ekiplerin altyapıyı izlemesine, güvenlik tehditlerini tespit etmesine ve adli analiz gerçekleştirmesine yardımcı olur.
-
-
-
-
-
 #### Elasticsearch Kullanmanın Avantajları
 
 
@@ -113,11 +98,6 @@ Elasticsearch'ün yaygın olarak benimsenmesinin birkaç nedeni vardır:
 * **Yüksek Kullanılabilirlik ve Hata Toleransı** : Elasticsearch, düğümler arasında veri çoğaltma yeteneğiyle yüksek kullanılabilirlik ve hata toleransı sağlar. Kümedeki bir düğüm çökerse, sistem diğer düğümlerden veri alarak çalışmaya devam edebilir.
 
 * **Elastic Stack ile Entegrasyon** : Logstash, Kibana ve Beats ile kusursuz entegrasyon, Elasticsearch'ü veri toplama ve depolama, analiz ve görselleştirme gibi tüm veri hattını kapsayan kapsamlı bir veri platformunun parçası haline getirir.
-
-
-
-
-
 #### Elasticsearch'ü Kurma
 
 
@@ -132,11 +112,6 @@ Elasticsearch'ü kurmak nispeten basittir. İşte sürecin üst düzey bir genel
 * **Elasticsearch'e Veri Ekleme** : Veriler, Elasticsearch'e RESTful API'si aracılığıyla JSON belgeleri olarak gönderilerek eklenebilir. Verileri manuel olarak alabilir veya Logstash veya Beats gibi araçları kullanarak işlemi otomatikleştirebilirsiniz.
 
 * **Arama ve Sorgulama** : Veriler indekslendikten sonra, Elasticsearch'ün güçlü sorgu dilini kullanarak belirli kayıtları arayabilir veya daha karmaşık analizler yapabilirsiniz.
-
-
-
-
-
 #### Elasticsearch ve Diğer Arama Motorları
 
 
@@ -147,11 +122,6 @@ Elasticsearch en popüler arama motorlarından biri olsa da, başka seçenekler 
 * **Apache Solr** : Elasticsearch gibi Solr da Apache Lucene üzerine kuruludur ve güçlü arama yetenekleri sunar. Ancak Elasticsearch'ün Elastic Stack ile entegrasyonu, gerçek zamanlı arama yetenekleri ve ölçekleme kolaylığı ona ufak bir avantaj sağlar.
 
 * **Algolia** : Algolia, özellikle daha küçük veri kümeleri için mükemmel hız ve basitlik sunan bir hizmet olarak arama platformudur. Ancak Elasticsearch daha esnek, açık kaynaklıdır ve büyük ölçekli uygulamalar için daha uygundur.
-
-
-
-
-
 #### Zorluklar ve Hususlar
 
 
@@ -166,11 +136,6 @@ bazı zorluklar:
 * **Kaynak Tüketimi** : Elasticsearch özellikle büyük miktarda veri işlerken kaynak yoğun olabilir. Verimli bir şekilde çalışmasını sağlamak için uygun yapılandırma ve ayarlama önemlidir.
 
 * **Kümeleri Yönetme** : Bir Elasticsearch kümesini, özellikle de ölçeklenebilir bir şekilde yönetmek karmaşık olabilir. Yöneticilerin küme sağlığını izlemeleri, performansı optimize etmeleri ve düğüm arızalarını ele almaları gerekir.
-
-
-
-
-
 #### Çözüm
 
 

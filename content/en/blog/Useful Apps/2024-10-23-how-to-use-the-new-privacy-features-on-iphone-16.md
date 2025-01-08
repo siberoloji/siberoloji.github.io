@@ -62,7 +62,7 @@ How to Use It
 
 * **Check Indicator Lights**: Always look for the orange or green dots when using apps that require audio or video input.
 
-* **Review App Permissions**: Regularly check which apps have permission to use your camera or microphone in Settings &gt; Privacy &amp; Security &gt; Camera/Microphone.
+* **Review App Permissions**: Regularly check which apps have permission to use your camera or microphone in Settings > Privacy &amp; Security > Camera/Microphone.
 
 
 
@@ -122,7 +122,7 @@ How to Set It Up
 
 
 
-* Go to Settings &gt; Privacy &amp; Security &gt; App Lock.
+* Go to Settings > Privacy &amp; Security > App Lock.
 
 * Select the app you want to lock and enable Face ID/Touch ID protection.
 
@@ -164,7 +164,7 @@ How to Use These Controls
 
 
 
-* Navigate to Settings &gt; Privacy &amp; Security &gt; Contacts.
+* Navigate to Settings > Privacy &amp; Security > Contacts.
 
 * Review and modify which apps have access to your contacts.
 
@@ -174,7 +174,7 @@ How to Use These Controls
 
 
 
-* Check Privacy Reports under Settings &gt; Privacy &amp; Security &gt; Privacy Reports to see data usage by apps.
+* Check Privacy Reports under Settings > Privacy &amp; Security > Privacy Reports to see data usage by apps.
 
 
 
@@ -210,7 +210,7 @@ How to Utilize This Feature
 
 
 
-* Go to Settings &gt; Bluetooth to see connected devices and manage their permissions.
+* Go to Settings > Bluetooth to see connected devices and manage their permissions.
 
 
 

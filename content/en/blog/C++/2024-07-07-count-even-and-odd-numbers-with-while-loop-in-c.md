@@ -41,7 +41,7 @@ The provided C++ code is designed to count the number of even and odd numbers en
  * Note: The program considers 0 as neither even nor odd for the purpose of this count.
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -49,8 +49,8 @@ int main() {
     int oddCount = 0;  // Counter for odd numbers
     int userInput;     // Variable to store the user's input
 
-    cout &lt;&lt; "Enter a number: ";
-    cin &gt;&gt; userInput;
+    cout << "Enter a number: ";
+    cin >> userInput;
 
     while (userInput != 0) {
         if (userInput % 2 == 1)
@@ -58,12 +58,12 @@ int main() {
         else
             evenCount++; // Increment even counter if the number is even
 
-        cout &lt;&lt; "Enter a number: ";
-        cin &gt;&gt; userInput;
+        cout << "Enter a number: ";
+        cin >> userInput;
     }
 
-    cout &lt;&lt; "Even numbers : " &lt;&lt; evenCount &lt;&lt; endl; // Display the count of even numbers
-    cout &lt;&lt; "Odd numbers : " &lt;&lt; oddCount &lt;&lt; endl;   // Display the count of odd numbers
+    cout << "Even numbers : " << evenCount << endl; // Display the count of even numbers
+    cout << "Odd numbers : " << oddCount << endl;   // Display the count of odd numbers
 
     return 0;
 }
@@ -93,8 +93,8 @@ The program then enters a loop, first prompting the user to enter a number. This
 
 
 ```cpp
-cout &lt;&lt; "Enter a number: ";
-cin &gt;&gt; userInput;
+cout << "Enter a number: ";
+cin >> userInput;
 ```
 
 
@@ -115,8 +115,8 @@ This process repeats until the user inputs 0, at which point the loop terminates
 
 
 ```cpp
-cout &lt;&lt; "Even numbers : " &lt;&lt; evenCount &lt;&lt; endl;
-cout &lt;&lt; "Odd numbers : " &lt;&lt; oddCount &lt;&lt; endl;
+cout << "Even numbers : " << evenCount << endl;
+cout << "Odd numbers : " << oddCount << endl;
 ```
 
 

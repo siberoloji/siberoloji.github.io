@@ -101,7 +101,7 @@ If you're comfortable with code, you can manually set up browser caching by modi
 
 
 ```bash
-&lt;IfModule mod_expires.c&gt;
+<IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
     ExpiresByType image/jpg "access plus 1 year"
@@ -110,7 +110,7 @@ If you're comfortable with code, you can manually set up browser caching by modi
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
-&lt;/IfModule&gt;
+</IfModule>
 ```
 
 
@@ -139,7 +139,7 @@ To install a plugin:
 
 * Go to your WordPress dashboard.
 
-* Navigate to Plugins &gt; Add New.
+* Navigate to Plugins > Add New.
 
 * Search for your desired caching plugin.
 

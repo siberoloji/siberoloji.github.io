@@ -1,6 +1,6 @@
 ---
 title: Nmap Network Mapper How-to Documents
-linktitle: Nmap How-to
+linktitle: Nmap
 type: page
 prev: docs/howtos/
 next: docs/howtos/nmap/10-understanding-nmap-the-network-mapper/

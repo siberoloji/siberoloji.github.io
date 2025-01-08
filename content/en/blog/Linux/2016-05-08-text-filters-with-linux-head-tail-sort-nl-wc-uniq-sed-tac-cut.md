@@ -1,19 +1,15 @@
 ---
 draft: false
-
-title:  'Text Filters with Linux (head tail sort nl wc uniq sed tac cut)'
-date: '2016-05-08T01:33:00+03:00'
+title: Text Filters with Linux (head tail sort nl wc uniq sed tac cut)
+date: 2016-05-08T01:33:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /text-filters-with-linux-head-tail-sort-nl-wc-uniq-sed-tac-cut/
- 
+url: /text-filters-with-linux-head-tail-sort-nl-wc-uniq-sed-tac-cut/
 featured_image: /images/cyber10.jpg
 categories:
-    - 'Linux Fundamentals'
+    - Linux Fundamentals
 tags:
     - linux
-    - 'text filters'
+    - text filters
 ---
 
 
@@ -305,7 +301,7 @@ The sed command is created from the Stream Editor statement. It uses SEARCH-FIND
 
 
 
-**Format** : sed &lt;expression&gt; [path]
+**Format** : sed <expression> [path]
 
 
 

@@ -86,11 +86,6 @@ Counter-Strike: Global Offensive (CS:GO) is a beloved game, but it's not immune 
 
 * **Clear Download Cache:** Clearing the download cache can help with download and installation issues.
 
-
-
-
-
-
 **Advanced Troubleshooting Tips**
 
 

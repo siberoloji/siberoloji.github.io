@@ -41,11 +41,6 @@ The shared responsibility model is typically divided into three layers:
 
 * **Network Security:** Configuring firewalls and other network security measures to protect against unauthorized access.
 
-
-
-
-
-
 **The Shared Responsibility Model in Different Cloud Service Models**
 
 

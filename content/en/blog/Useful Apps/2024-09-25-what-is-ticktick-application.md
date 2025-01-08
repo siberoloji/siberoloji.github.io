@@ -111,11 +111,6 @@ For those working in teams, TickTick offers collaboration features that make it 
 
 * **File Attachments:** Attach files or images directly to tasks to streamline project communication.
 
-
-
-
-
-
 3. How Does TickTick Compare to Other Productivity Apps?
 
 

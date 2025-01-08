@@ -611,11 +611,6 @@ Qtile is a tiling window manager written in Python, making it highly customizabl
 
 * Requires knowledge of Python for customization
 
-
-
-
-
-
 Choosing the Right Desktop Environment
 
 

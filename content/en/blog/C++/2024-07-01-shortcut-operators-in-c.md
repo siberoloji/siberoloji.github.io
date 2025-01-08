@@ -31,7 +31,7 @@ The provided code is a C++ program that demonstrates the use of shortcut operato
  * @return 0 indicating successful execution
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -52,11 +52,11 @@ int main() {
     num7 /= num8;
     num9 %= num10;
 
-    cout &lt;&lt; "num1 = " &lt;&lt; num1 &lt;&lt; endl;
-    cout &lt;&lt; "num3 = " &lt;&lt; num3 &lt;&lt; endl;
-    cout &lt;&lt; "num5 = " &lt;&lt; num5 &lt;&lt; endl;
-    cout &lt;&lt; "num7 = " &lt;&lt; num7 &lt;&lt; endl;
-    cout &lt;&lt; "num9 = " &lt;&lt; num9 &lt;&lt; endl;
+    cout << "num1 = " << num1 << endl;
+    cout << "num3 = " << num3 << endl;
+    cout << "num5 = " << num5 << endl;
+    cout << "num7 = " << num7 << endl;
+    cout << "num9 = " << num9 << endl;
 
     return 0;
 }
@@ -97,13 +97,13 @@ num9 %= num10;
 
 
 
-Finally, the program prints the values of `num1`, `num3`, `num5`, `num7`, and `num9` to the console using the `cout` object and the `&lt;&lt;` operator, which is used to send output to the standard output device (usually the screen).
+Finally, the program prints the values of `num1`, `num3`, `num5`, `num7`, and `num9` to the console using the `cout` object and the `<<` operator, which is used to send output to the standard output device (usually the screen).
 
 
 ```cpp
-cout &lt;&lt; "num1 = " &lt;&lt; num1 &lt;&lt; endl;
+cout << "num1 = " << num1 << endl;
 // ...
-cout &lt;&lt; "num9 = " &lt;&lt; num9 &lt;&lt; endl;
+cout << "num9 = " << num9 << endl;
 ```
 
 

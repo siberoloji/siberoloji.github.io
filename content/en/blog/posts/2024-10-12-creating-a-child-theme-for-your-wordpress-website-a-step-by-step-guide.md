@@ -48,11 +48,6 @@ A child theme inherits the styles and functionality of its parent theme. This me
 
 * You should see your newly created child theme listed. Activate it to apply your customizations.
 
-
-
-
-
-
 **Best Practices for Child Themes**
 
 

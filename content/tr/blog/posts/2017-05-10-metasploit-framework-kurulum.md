@@ -59,7 +59,7 @@ Aşağıdaki komut root yetkileriyle çalıştırılmalıdır.
 ```bash
 cd
 sudo su
-curl <a href="https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb">https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb</a> **&gt;** msfinstall **&amp;&amp;** \
+curl <a href="https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb">https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb</a> **>** msfinstall **&amp;&amp;** \
   chmod 755 msfinstall **&amp;&amp;** \
   ./msfinstall
 ```
@@ -158,7 +158,7 @@ user@mint ~ $ msfconsole
 + -- --**=[** 486 payloads - 40 encoders - 9 nops             **]**
 + -- --**=[** Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> **]**
 
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -171,11 +171,11 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** msfdb status
+msf **>** msfdb status
 **[*********]** exec: msfdb status
 
 Database started at /home/umut/.msf4/db
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -188,7 +188,7 @@ Birkaç dakika içerisinde veri tabanı exploit indeksini oluşturacaktır. Ard�
 
 
 ```bash
-msf **&gt;** search samba
+msf **>** search samba
 
 Matching Modules
 **================**

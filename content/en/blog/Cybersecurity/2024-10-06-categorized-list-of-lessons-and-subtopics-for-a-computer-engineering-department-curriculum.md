@@ -225,11 +225,6 @@ Here's a concise overview:
 * Physical unclonable functions (PUFs)
 
 * Secure boot and trusted execution environments
-
-
-
-
-
 * Computer Organization
 
 * Assembly Language Programming

@@ -101,11 +101,6 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Önemli çıkarımlarınızı ve hâlâ aklınızda olan soruları yazın.
 
-
-
-
-
-
 2. Hafta: Podcast'inizi Oluşturun
 
 
@@ -186,11 +181,6 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 * **Görev:** Haftanın görevlerini gözden geçirin.
 
 * **Alıştırma:** Daha fazla pratiğe ihtiyaç duyduğunuz alanları belirleyin.
-
-
-
-
-
 
 3. Hafta: Podcast'inizi Yayınlama ve Tanıtma
 
@@ -275,11 +265,6 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Öğrendiklerinizi temel alarak tanıtım planınızı ayarlayın.
 
-
-
-
-
-
 4. Hafta: Gelişmiş Teknikler ve Büyüme
 
 
@@ -362,11 +347,6 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 * **Görev:** Öğrenme yolculuğunuzu düşünün.
 
 * **Alıştırma:** Podcast'inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin.
-
-
-
-
-
 
 Ek Kaynaklar
 

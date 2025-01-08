@@ -360,11 +360,6 @@ Conclusion
 
 
 Installing FreeSWITCH on Alma Linux gives users access to a highly flexible telephony platform for handling voice, video, and messaging services. By following this guide, you’ll be able to successfully set up FreeSWITCH on Alma Linux, allowing your organization or personal projects to take advantage of its powerful communication capabilities. With FreeSWITCH running, you can begin configuring and customizing it to meet your specific telephony requirements.
-
-
-
-
-
 **FAQs**
 
 

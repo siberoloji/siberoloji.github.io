@@ -29,18 +29,18 @@ We can declare the PARENT activity name to the CHILD activity so Android will be
 
 <!-- wp:code -->
 <pre title="Before adding UP button" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
-&lt;activity
+<activity
             android:name=".DisplayMessageActivity"
-            android:exported="false" /&gt;
-        &lt;activity
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ...```
 
 
@@ -50,29 +50,29 @@ After making necessary changes in your AndroidManifest.xml file, your code shoul
 
 <!-- wp:code -->
 <pre title="After declaring parent activity" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
-&lt;activity
+<activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity"
-            android:exported="false" &gt;
-        &lt;meta-data
+            android:exported="false" >
+        <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" /&gt;
-        &lt;/activity&gt;
+            android:value=".MainActivity" />
+        </activity>
 
-        &lt;activity
+        <activity
             android:name=".MainActivity"
-            android:exported="true"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ...```
 
 
 
-The `android:parentActivityName` attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a <a href="https://developer.android.com/guide/topics/manifest/meta-data-element">`&lt;meta-data&gt;`</a> name-value pair, where the name is `"android.support.PARENT_ACTIVITY"` and the value is the name of the parent activity.
+The `android:parentActivityName` attribute was introduced in Android 4.1 (API level 16). To support devices with older versions of Android, define a <a href="https://developer.android.com/guide/topics/manifest/meta-data-element">`<meta-data>`</a> name-value pair, where the name is `"android.support.PARENT_ACTIVITY"` and the value is the name of the parent activity.
 
 
 <!-- wp:image {"id":198,"sizeSlug":"large","linkDestination":"none"} -->

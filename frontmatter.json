@@ -12,6 +12,11 @@
           "type": "string"
         },
         {
+          "title": "linkTitle",
+          "name": "linkTitle",
+          "type": "string"
+        },
+        {
           "title": "Description",
           "name": "description",
           "type": "string"
@@ -20,6 +25,7 @@
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
+          "dateFormat": "YYYY-MM-DD",
           "default": "{{now}}",
           "isPublishDate": true
         },
@@ -54,29 +60,9 @@
           "type": "image"
         },
         {
-          "title": "toc",
-          "name": "toc",
-          "type": "boolean"
-        },
-        {
-          "title": "linkTitle",
-          "name": "linkTitle",
-          "type": "string"
-        },
-        {
           "title": "weight",
           "name": "weight",
           "type": "number"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "string"
-        },
-        {
-          "title": "excludeSearch",
-          "name": "excludeSearch",
-          "type": "boolean"
         },
         {
           "title": "simple_list",

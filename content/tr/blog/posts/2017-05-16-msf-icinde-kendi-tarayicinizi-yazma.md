@@ -46,16 +46,16 @@ Yazması ve çalıştırması kolay dense de kodlama biliyor olmanız size çok 
 
 ```bash
 require 'msf/core'
-class Metasploit3 &lt; Msf::Auxiliary
+class Metasploit3 < Msf::Auxiliary
         include Msf::Exploit::Remote::Tcp
         include Msf::Auxiliary::Scanner
         def initialize
                 super**(**
-                        'Name'           **=&gt;** 'My custom TCP scan',
-                        'Version'        **=&gt;** '$Revision: 1 $',
-                        'Description'    **=&gt;** 'My quick scanner',
-                        'Author'         **=&gt;** 'Your name here',
-                        'License'        **=&gt;** MSF_LICENSE
+                        'Name'           **=>** 'My custom TCP scan',
+                        'Version'        **=>** '$Revision: 1 $',
+                        'Description'    **=>** 'My quick scanner',
+                        'Author'         **=>** 'Your name here',
+                        'License'        **=>** MSF_LICENSE
                 **)**
                 register_options**(**
                         **[**
@@ -88,7 +88,7 @@ Deneyeceğimiz tarayıcı modülün mesajını yakalamak için `netcat` dinleme 
 
 
 ```bash
-root@kali:~# nc -lnvp 12345 &lt; response.txt
+root@kali:~# nc -lnvp 12345 < response.txt
 listening on **[**any] 12345 ...
 ```
 
@@ -98,10 +98,10 @@ Ardından yeni modülü seçip RHOST değişkenini ayarlıyoruz ve modülü çal
 
 
 ```bash
-msf **&gt;** use scanner/simple_tcp
-msf auxiliary**(**simple_tcp**)** **&gt;** set RHOSTS 192.168.1.100
-RHOSTS **=&gt;** 192.168.1.100
-msf auxiliary**(**simple_tcp**)** **&gt;** run
+msf **>** use scanner/simple_tcp
+msf auxiliary**(**simple_tcp**)** **>** set RHOSTS 192.168.1.100
+RHOSTS **=>** 192.168.1.100
+msf auxiliary**(**simple_tcp**)** **>** run
 
 **[*********]** Received: hello metasploit from 192.168.1.100
 **[*********]** Auxiliary module execution completed
@@ -144,7 +144,7 @@ Son olarak report_note() metodunu kullanabilirsiniz.
 
 ```bash
 report_note**(**
-:host **=&gt;** rhost,
-:type **=&gt;** "myscanner_password",
-:data **=&gt;** data
+:host **=>** rhost,
+:type **=>** "myscanner_password",
+:data **=>** data
 **)**```

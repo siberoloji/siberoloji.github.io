@@ -56,11 +56,6 @@ Snort'un işlevselliği ve popülaritesi, onu saldırı tespiti ve önleme konus
 * **Protokol Analizi ve İçerik Eşleştirme** : Snort, TCP, UDP, ICMP ve diğerleri dahil olmak üzere çeşitli ağ protokollerini çözebilir ve analiz edebilir. Ek olarak, bilinen tehditlerle eşleşen imzalar veya kalıplar için paket yüklerinin içine bakarak derin içerik incelemesi gerçekleştirebilir.
 
 * **Kural Tabanlı Algılama Sistemi** : Snort'un gücü, kapsamlı kural tabanlı algılama sisteminde yatar. Bu kurallar, kullanıcıların ağ trafiğinde kötü amaçlı yazılım imzalarından alışılmadık port etkinliğine kadar arayacakları belirli davranışları tanımlamalarına olanak tanır. Önceden oluşturulmuş kuralların devasa bir kütüphanesiyle (Snort'un topluluğu ve Cisco Talos kural setlerini düzenli olarak günceller), kullanıcılar ayrıca benzersiz ağ ihtiyaçlarına uyacak şekilde kendi kurallarını özelleştirebilir ve yazabilirler.
-
-
-
-
-
 #### Snort Nasıl Çalışır?
 
 
@@ -73,11 +68,6 @@ Snort, ağ trafiğini sürekli izleyerek ve kötü amaçlı aktiviteleri tespit 
 * **Paket Kaydedici Modu** : Paket kaydedici modu, Snort'un paketleri diske kaydetmesini ve daha sonra analiz edilebilmesini sağlar. Bu mod, genellikle yöneticilerin paket içeriklerini incelemek veya adli soruşturmalar yürütmek gibi ayrıntılı analizler için ağ trafiğini depolamak istediklerinde kullanılır.
 
 * **Ağ Saldırısı Algılama Sistemi (NIDS) Modu** : En güçlü mod olan NIDS, Snort'un trafiği etkin bir şekilde izlemesini ve önceden tanımlanmış kurallara göre olası saldırıları tespit etmesini sağlar. Şüpheli etkinlik tespit ettiğinde, daha fazla araştırma için uyarılar üretir. Trafik kalıplarını, protokol anormalliklerini veya belirli saldırı imzalarını analiz ederek Snort, olası güvenlik tehditlerini erken tespit edebilir.
-
-
-
-
-
 #### Snort için Kullanım Örnekleri
 
 
@@ -92,11 +82,6 @@ Snort'un esnekliği onu çeşitli ağ güvenliği kullanım durumları için ide
 * **Olay Tepkisi** : Bir tehdit algılandığında, Snort olay tepkisi için değerli bir araç olarak hizmet verebilir. Ayrıntılı paket verilerini kaydedebilir, saldırı vektörünün net bir resmini sağlayabilir ve ekiplerin bir olayın kapsamını anlamalarına yardımcı olabilir.
 
 * **Ağ Saldırılarının Önlenmesi** : IPS modunda, Snort şüpheli trafiği engelleyerek veya etkilenen sistemleri izole ederek saldırıları etkin bir şekilde önleyebilir. Bu, yalnızca tespitin ötesinde ek bir koruma katmanı ekler.
-
-
-
-
-
 #### Snort Kullanmanın Avantajları
 
 
@@ -111,11 +96,6 @@ Açık kaynaklı bir çözüm olarak Snort'un birçok avantajı vardır:
 * **Geniş Topluluk ve Kural Seti Kütüphaneleri** : Snort, canlı bir kullanıcı ve katkıda bulunan topluluğuna sahiptir. Ayrıca, Cisco'nun Talos Intelligence grubu, Snort'un kural setlerine düzenli güncellemeler sağlayarak yeni ve ortaya çıkan tehditlerin hızla ele alınmasını sağlar.
 
 * **Çok Yönlülük** : Snort'un hem IDS hem de IPS olarak işlev görebilme yeteneği, ona ağ savunmasında çok yönlülük kazandırır. Tespit, önleme veya trafik analizi için kullanılsın, siber tehditlere karşı savunma için sağlam bir araç seti sunar.
-
-
-
-
-
 #### Zorluklar ve Sınırlamalar
 
 
@@ -128,11 +108,6 @@ Snort güçlü bir araç olmasına rağmen bazı sınırlamaları da beraberinde
 * **Yanlış Pozitifler** : Herhangi bir IDS/IPS gibi Snort da yanlış pozitiflere karşı hassastır; burada meşru trafik yanlışlıkla kötü amaçlı olarak işaretlenir. Yanlış pozitifleri en aza indirmek ve etkili bir tespit sistemini sürdürmek için düzenli kural ayarlamaları ve ayarlamaları gerekir.
 
 * **Ticari Araçlar ile Karşılaştırma** : Snort güçlü olsa da, Suricata ve Zeek gibi ticari alternatifler ölçekte daha iyi performans veya ücretli destekle gelen ek özellikler sunabilir. Bir kuruluşun özel ihtiyaçlarına bağlı olarak, bu diğer araçlar dikkate alınmaya değer olabilir.
-
-
-
-
-
 #### Snort'u Kurma
 
 
@@ -152,11 +127,6 @@ Snort'u kurmak biraz teknik bilgi gerektirir, ancak Linux veya ağ konusunda bil
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* **Kuralları Uygula ve İzlemeye Başla** : Snort yapılandırıldıktan sonra kullanıcılar ağlarını izlemeye başlamak için kural kümeleri uygulayabilir. Zamanla, kurallar algılama doğruluğunu iyileştirmek ve yanlış pozitifleri azaltmak için ince ayarlanabilir.
-
-
-
-
-
 #### Diğer IDS/IPS Çözümleriyle Karşılaştırıldığında Snort
 
 
@@ -167,11 +137,6 @@ Snort'u diğer IDS/IPS araçlarıyla karşılaştırırken, hızlı bir genel ba
 * **Snort ve Suricata** : Suricata, Snort ile rekabet eden bir diğer açık kaynaklı IDS/IPS'dir. Suricata, çok iş parçacıklı CPU'larda daha iyi performans sunarak yüksek trafikli ortamlarda daha verimli hale getirir. Ancak, Snort'un kapsamlı topluluğu ve kural kümeleri daha olgundur ve bu da onu birçok kuruluş için harika bir seçenek haline getirir.
 
 * **Snort ve Zeek** : Eskiden Bro olarak bilinen Zeek, imza tabanlı tespitten ziyade protokol analizi ve ağ davranışına daha fazla odaklanmıştır. Zeek, gelişmiş güvenlik izleme için sıklıkla Snort ile birlikte kullanılır.
-
-
-
-
-
 #### Sonuç
 
 

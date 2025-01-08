@@ -98,11 +98,6 @@ To illustrate the power of alt tags, let's examine a few case studies:
 
 * **Example 3: Portfolio Website*** A portfolio website optimized its images with alt tags that highlighted the artist's skills and techniques. This helped the website rank higher in search results and attract more potential clients.
 
-
-
-
-
-
 **Conclusion**
 
 

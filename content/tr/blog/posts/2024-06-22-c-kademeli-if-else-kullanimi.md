@@ -20,21 +20,21 @@ Aşağıda, C++ için kademeli if-else kullanım örneğini bulabilirsiniz.
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 using namespace std;
 
 int main() {
 /* cascade if else statement */
     int a;
-    cout &lt;&lt; "Enter a positive integer number: ";
-    cin &gt;&gt; a;
-    if (a &lt; 20) {
-        cout &lt;&lt; "a is less than 20 ";
+    cout << "Enter a positive integer number: ";
+    cin >> a;
+    if (a < 20) {
+        cout << "a is less than 20 ";
     } else if (a == 20) {
-        cout &lt;&lt; "a is equal to 20 ";
+        cout << "a is equal to 20 ";
     } else {
-        cout &lt;&lt; "a is greater than 20 ";
+        cout << "a is greater than 20 ";
     }
     return 0;
 }

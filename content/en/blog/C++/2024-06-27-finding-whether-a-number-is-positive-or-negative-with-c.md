@@ -21,20 +21,20 @@ In this example, we check whether the number entered from the keyboard is positi
 
 
 ```bash
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
     int number;
-    cout &lt;&lt; "Please enter a number: ";
-    cin &gt;&gt; number;
+    cout << "Please enter a number: ";
+    cin >> number;
 
-    if (number &gt; 0) {
-        cout &lt;&lt; "Number is positive";
-    } else if (number &lt; 0) {
-        cout &lt;&lt; "Number is negative";
+    if (number > 0) {
+        cout << "Number is positive";
+    } else if (number < 0) {
+        cout << "Number is negative";
     } else {
-        cout &lt;&lt; "Number is zero";
+        cout << "Number is zero";
     }
 
     return 0;

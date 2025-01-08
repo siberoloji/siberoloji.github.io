@@ -36,11 +36,6 @@ tags:
 
 * Çözüm
 
-
-
-
-
-
 ## 1. Web Kazıma Nedir?
 
 
@@ -69,11 +64,6 @@ Web Kazıma için OSINT Kullanım Örnekleri
 * **Gazetecilik** : Araştırmacı gazetecilik amacıyla birden fazla haber kuruluşundan bilgi toplamak.
 
 * **Rekabet İstihbaratı** : Rakiplerin web sitesi güncellemelerini, fiyat değişikliklerini veya yeni ürün lansmanlarını takip etme.
-
-
-
-
-
 
 ## 2. OSINT Web Kazımada Yasal ve Etik Hususlar
 
@@ -106,11 +96,6 @@ Etik Hususlar
 
 
 Bir OSINT uzmanı olarak, bu sorunlarda dikkatli bir şekilde gezinmeniz ve veri toplama faaliyetlerinizin her zaman yasal ve etik olduğundan emin olmanız önemlidir.
-
-
-
-
-
 ## 3. Python ve BeautifulSoup'a Giriş
 
 
@@ -136,11 +121,6 @@ BeautifulSoup Nedir?
 
 
 **BeautifulSoup,** HTML ve XML belgelerini ayrıştırmak için kullanılan bir Python kütüphanesidir. Web sayfalarından belirli veri parçalarını çıkarmaya ve bunları okunabilir bir biçime dönüştürmeye yardımcı olur. BeautifulSoup, bir web sitesine HTTP istekleri gönderen ve ayrıştırma için HTML içeriğini alan Python'un **istekler modülüyle birlikte çalışır.**
-
-
-
-
-
 ## 4. Python ve BeautifulSoup Kullanarak Web Kazıma Teknikleri
 
 
@@ -211,7 +191,7 @@ Adım 4: Sayfadan Verileri Çıkarın
 
 
 
-Verileri çıkarmak için, ilgilendiğiniz HTML öğelerini tanımlamanız gerekir. Örneğin, bir haber sitesinden tüm başlıkları çıkarmak istiyorsanız, uygun HTML etiketlerini (örneğin `&lt;h1&gt;`, `&lt;h2&gt;`veya `&lt;a&gt;`) hedefleyebilirsiniz.
+Verileri çıkarmak için, ilgilendiğiniz HTML öğelerini tanımlamanız gerekir. Örneğin, bir haber sitesinden tüm başlıkları çıkarmak istiyorsanız, uygun HTML etiketlerini (örneğin `<h1>`, `<h2>`veya `<a>`) hedefleyebilirsiniz.
 
 
 ```bash
@@ -223,7 +203,7 @@ for headline in headlines:
 
 
 
-`find_all()`Bu örnekte, tüm etiketleri bulmak `&lt;h2&gt;`ve içlerindeki metni yazdırmak için kullanıyoruz .
+`find_all()`Bu örnekte, tüm etiketleri bulmak `<h2>`ve içlerindeki metni yazdırmak için kullanıyoruz .
 
 
 
@@ -248,11 +228,6 @@ with open('headlines.csv', 'w', newline='') as file:
 
 
 Bu kod, kazınmış başlıkları herhangi bir elektronik tablo yazılımı kullanılarak açılıp analiz edilebilen bir CSV dosyasına kaydeder.
-
-
-
-
-
 ## 5. Web Kazımada Ortak Zorluklar
 
 
@@ -282,11 +257,6 @@ c. **IP Engelleme**
 
 
 Bir web sitesinden çok sık tarama yaparsanız, IP adresiniz engellenebilir. Bunu önlemek için, dönen proxy'ler kullanmayı veya isteklerinizi hız sınırlaması ile sınırlamayı düşünün.
-
-
-
-
-
 ## 6. BeautifulSoup ile Kazıma İçin En İyi Uygulamalar
 
 
@@ -303,11 +273,6 @@ Web kazıma çabalarınızın etkili, yasal ve etik olmasını sağlamak için �
 * **Veri Gizliliği Yasalarına Uygun Olun** : Özellikle kişisel verilerle uğraşırken, veri toplama faaliyetlerinizin veri gizliliği düzenlemelerine uygun olduğundan emin olun.
 
 * **Hataları Zarafetle Ele Alın** : Eksik öğeler, zaman aşımı veya sunucu arızaları gibi hataları ele almaya hazır olun. Sağlam hata işleme, kazıyıcınızı daha güvenilir hale getirir.
-
-
-
-
-
 
 ## 7. Sonuç
 

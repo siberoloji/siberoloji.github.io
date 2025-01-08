@@ -53,11 +53,6 @@ Network standards are a set of guidelines, protocols, and specifications that go
 
 * **Accelerated Development:** By adhering to standards, developers can focus on innovation rather than reinventing the wheel.
 
-
-
-
-
-
 **Key Network Standards Organizations**
 
 
@@ -78,11 +73,6 @@ Several organizations play a crucial role in developing and maintaining network 
 
 
 * **ANSI (American National Standards Institute):*** Coordinates the development of voluntary consensus standards for products, services, processes, systems, and personnel in the United States.
-
-
-
-
-
 
 **Common Network Standards**
 
@@ -118,11 +108,6 @@ Several organizations play a crucial role in developing and maintaining network 
 * **HTTPS:*** A secure version of HTTP that uses encryption to protect data transmitted over the internet.
 
 * Ensures the confidentiality and integrity of data, preventing unauthorized access and tampering.
-
-
-
-
-
 
 **The Future of Network Standards**
 

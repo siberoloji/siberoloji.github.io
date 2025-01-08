@@ -65,8 +65,8 @@ Bu örnekte gördüğünüz gibi cihaz bilgisinin bulunduğu satırın baş tara
 	Memory at f7400000 (64-bit, non-prefetchable) [size=4M]
 	Memory at d0000000 (64-bit, prefetchable) [size=256M]
 	I/O ports at f000 [size=64]
-	Expansion ROM at &lt;unassigned&gt; [disabled]
-	Capabilities: &lt;access denied&gt;
+	Expansion ROM at <unassigned> [disabled]
+	Capabilities: <access denied>
 	Kernel driver in use: i915
 	Kernel modules: i915</pre>
 <!-- /wp:preformatted -->

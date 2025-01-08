@@ -61,9 +61,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // val sendButton = findViewById&lt;Button&gt;(R.id.sendButton) before
+        // val sendButton = findViewById<Button>(R.id.sendButton) before
         val sendButton = binding.sendButton
-        // val myTextView = findViewById&lt;EditText&gt;(R.id.message) before
+        // val myTextView = findViewById<EditText>(R.id.message) before
         val myTextView = binding.message
 
         /** Called when the user taps the Send button */

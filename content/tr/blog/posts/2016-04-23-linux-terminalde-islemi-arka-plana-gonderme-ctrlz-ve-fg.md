@@ -52,10 +52,10 @@ Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olab
 
 
 ```bash
-**&gt;**~$ cd /tmp/
-/tmp$ echo 'Selam, ben 0 numaralı belgeyim' **&gt;**deneme1.txt
-/tmp$ echo 'Selam, ben 2 numaralı belgeyim' **&gt;**deneme2.txt
-/tmp$ echo 'Selam, ben 3 numaralı belgeyim' **&gt;**deneme3.txt
+**>**~$ cd /tmp/
+/tmp$ echo 'Selam, ben 0 numaralı belgeyim' **>**deneme1.txt
+/tmp$ echo 'Selam, ben 2 numaralı belgeyim' **>**deneme2.txt
+/tmp$ echo 'Selam, ben 3 numaralı belgeyim' **>**deneme3.txt
 ```
 
 
@@ -64,7 +64,7 @@ Bu seçeneklerden birincisi, görsel bir masaüstü ile çalışıyorsanız olab
 
 
 ```bash
-**&gt;**/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
+**>**/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
 1 txt
 
 /tmp$ nano deneme2.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
@@ -93,7 +93,7 @@ Komut satırına sadece fg yazarsanız en son kapatılan işleme geri dönersini
 
 
 ```bash
-**&gt;**$ fg 1
+**>**$ fg 1
 ```
 
 

@@ -210,7 +210,7 @@ This gesture is particularly helpful for one-handed use, as it allows you to rea
 AssistiveTouch provides an on-screen menu of customizable gestures and shortcuts. While this is not a gesture in itself, it’s a great accessibility feature for those who have difficulty performing standard gestures.
 
 
-* **How to enable it**: Go to **Settings &gt; Accessibility &gt; Touch &gt; AssistiveTouch** and toggle it on.
+* **How to enable it**: Go to **Settings > Accessibility > Touch > AssistiveTouch** and toggle it on.
 
 
 

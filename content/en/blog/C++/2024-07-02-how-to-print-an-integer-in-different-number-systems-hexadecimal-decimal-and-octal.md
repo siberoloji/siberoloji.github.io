@@ -40,23 +40,23 @@ The provided C++ code is a simple program that demonstrates how to print an inte
  *
  * @return 0 if the program runs successfully.
  */
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
+#include <iostream>
+#include <iomanip>
 
 using namespace std;
 int main() {
     int byte = 255;
-    cout &lt;&lt; hex &lt;&lt; byte &lt;&lt; endl;
-    cout &lt;&lt; byte &lt;&lt; dec &lt;&lt; byte &lt;&lt; endl;
-    cout &lt;&lt; oct &lt;&lt; byte &lt;&lt; endl;
+    cout << hex << byte << endl;
+    cout << byte << dec << byte << endl;
+    cout << oct << byte << endl;
     // we can achieve same result with setbase function
     // setbase accept only 2, 8, 10 or 16 as parameter
     // setbase requires iomanip header
 
-    cout &lt;&lt; setbase(16) &lt;&lt; byte &lt;&lt; endl;
-    cout &lt;&lt; setbase(10) &lt;&lt; byte &lt;&lt; endl;
-    cout &lt;&lt; setbase(8) &lt;&lt; byte &lt;&lt; endl;
-    cout &lt;&lt; setbase(2) &lt;&lt; byte &lt;&lt; endl;
+    cout << setbase(16) << byte << endl;
+    cout << setbase(10) << byte << endl;
+    cout << setbase(8) << byte << endl;
+    cout << setbase(2) << byte << endl;
 
     return 0;
 }
@@ -76,8 +76,8 @@ The program begins by including the necessary libraries, `iostream` for input/ou
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
+#include <iostream>
+#include <iomanip>
 using namespace std;
 ```
 
@@ -97,7 +97,7 @@ The program then prints the value of `byte` in hexadecimal format using the `hex
 
 
 ```cpp
-cout &lt;&lt; hex &lt;&lt; byte &lt;&lt; endl;
+cout << hex << byte << endl;
 ```
 
 
@@ -106,7 +106,7 @@ Next, the program prints the value of `byte` in the last used number base (which
 
 
 ```cpp
-cout &lt;&lt; byte &lt;&lt; dec &lt;&lt; byte &lt;&lt; endl;
+cout << byte << dec << byte << endl;
 ```
 
 
@@ -115,12 +115,12 @@ The number base is then changed to octal using the `oct` manipulator and the `by
 
 
 ```cpp
-cout &lt;&lt; oct &lt;&lt; byte &lt;&lt; endl;
+cout << oct << byte << endl;
 ```
 
 
 
-Finally, the program demonstrates another way to change the number base using the `setbase` function from the `iomanip` library. This function accepts only 2, 8, 10, or 16 as parameters, representing binary, octal, decimal, and hexadecimal number systems respectively. cout &lt;&lt; setbase(16) &lt;&lt; byte &lt;&lt; endl; cout &lt;&lt; setbase(10) &lt;&lt; byte &lt;&lt; endl; cout &lt;&lt; setbase(8) &lt;&lt; byte &lt;&lt; endl;
+Finally, the program demonstrates another way to change the number base using the `setbase` function from the `iomanip` library. This function accepts only 2, 8, 10, or 16 as parameters, representing binary, octal, decimal, and hexadecimal number systems respectively. cout << setbase(16) << byte << endl; cout << setbase(10) << byte << endl; cout << setbase(8) << byte << endl;
 
 
 

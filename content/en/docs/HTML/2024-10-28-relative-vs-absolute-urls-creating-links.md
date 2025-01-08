@@ -3,7 +3,7 @@ draft: false
 
 title:  'Relative vs Absolute URLs: Creating Links'
 date: '2024-10-28T11:10:30+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  'When developing websites and managing content on platforms like WordPress, understanding how to properly create links is essential.' 
  
 url:  /relative-vs-absolute-urls-creating-links/
@@ -22,21 +22,11 @@ When developing websites and managing content on platforms like WordPress, under
 
 
 In this post, we’ll dive into the concept of relative and absolute URLs, the differences between them, and the practical applications of each type in HTML.
-
-
-
-
-
 What Is a URL?
 
 
 
 Before we delve into relative and absolute URLs, let’s briefly review what a URL is. A URL is essentially the address of a specific resource, such as a webpage, image, or document, on the internet. It guides users (and search engines) to that resource. URLs are composed of various components, including the protocol (e.g., `http` or `https`), domain name (e.g., `example.com`), and the path that leads to the specific page or resource.
-
-
-
-
-
 Absolute URLs
 
 
@@ -45,7 +35,7 @@ An **absolute URL** is a complete address that specifies the exact location of a
 
 
 ```bash
-&lt;a href="https://example.com/images/logo.png"&gt;Our Logo&lt;/a&gt;
+<a href="https://example.com/images/logo.png">Our Logo</a>
 ```
 
 
@@ -66,11 +56,6 @@ The absolute URL here (`https://example.com/images/logo.png`) will always direct
 
 
 Absolute URLs are most often used for external links, canonical tags, and references that need to be accessed outside of a specific context, as they provide a fully qualified path to the resource.
-
-
-
-
-
 Relative URLs
 
 
@@ -79,7 +64,7 @@ A **relative URL**, on the other hand, provides only the path to the resource re
 
 
 ```bash
-&lt;a href="/images/logo.png"&gt;Our Logo&lt;/a&gt;
+<a href="/images/logo.png">Our Logo</a>
 ```
 
 
@@ -97,11 +82,6 @@ There are a few variations of relative URLs:
 * **Root-relative URLs**: Start with a forward slash (`/`) and specify a path from the root of the site, e.g., `/contact`.
 
 * **Document-relative URLs**: Specify a path relative to the current document, such as `images/logo.png`.
-
-
-
-
-
 
 Key Differences Between Absolute and Relative URLs
 
@@ -135,11 +115,6 @@ Both absolute and relative URLs have unique strengths and weaknesses. Here are s
 
 * **Absolute URLs**: Carry extra data (protocol and domain), which doesn’t significantly impact speed in modern browsers, but it may add a negligible delay.
 
-
-
-
-
-
 When to Use Absolute URLs in HTML
 
 
@@ -152,7 +127,7 @@ Absolute URLs are particularly useful in certain scenarios, such as:
 
 
 ```bash
-   &lt;a href="https://externaldomain.com/resource"&gt;External Resource&lt;/a&gt;
+   <a href="https://externaldomain.com/resource">External Resource</a>
 ```
 
 
@@ -162,17 +137,12 @@ Absolute URLs are particularly useful in certain scenarios, such as:
 
 
 ```bash
-   &lt;link rel="canonical" href="https://example.com/page"&gt;
+   <link rel="canonical" href="https://example.com/page">
 ```
 
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* **Social Media and Email Links**: When sharing links in email newsletters or on social media, absolute URLs are essential because they work regardless of where the link is placed.
-
-
-
-
-
 
 When to Use Relative URLs in HTML
 
@@ -186,7 +156,7 @@ Relative URLs are ideal in certain circumstances as well:
 
 
 ```bash
-   &lt;a href="/services"&gt;Our Services&lt;/a&gt;
+   <a href="/services">Our Services</a>
 ```
 
 
@@ -194,11 +164,6 @@ Relative URLs are ideal in certain circumstances as well:
 <ol start="2" class="wp-block-list">* **Development and Staging Environments**: Relative URLs can simplify development when working on a staging server or local environment, as you won’t need to adjust links to account for the live site’s domain.
 
 * **Template-Based Sites**: On platforms like WordPress, using relative URLs in templates and themes can be more flexible, as the links will adapt automatically when the site is migrated or updated.
-
-
-
-
-
 
 Best Practices for Using URLs in HTML
 
@@ -212,11 +177,6 @@ Now that we understand the differences, here are a few best practices to keep in
 * **Use SSL (HTTPS)**: Ensure your links use HTTPS, especially for absolute URLs, to avoid mixed-content errors and boost security. If your site is on HTTPS, using absolute URLs without specifying `https://` can sometimes cause browsers to pull resources over HTTP by default.
 
 * **Avoid Over-Reliance on Relative URLs**: While relative URLs are helpful for internal links, be cautious when using them for complex website structures, as they may lead to issues if your site’s directory changes or content is moved around.
-
-
-
-
-
 
 Final Thoughts
 

@@ -260,11 +260,6 @@ Having an incident response plan in place can help organizations react quickly i
 
 
 damage and downtime.
-
-
-
-
-
 ## Conclusion: The Growing Threat of Ransomware as a Service
 
 

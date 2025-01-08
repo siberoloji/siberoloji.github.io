@@ -45,11 +45,6 @@ TryHackMe’s appeal lies in its focus on learning by doing. You’re not just r
 
 * Offers free and paid content.
 
-
-
-
-
-
 2. **Coursera**
 
 
@@ -75,11 +70,6 @@ Cybersecurity courses on Coursera cover a wide range of topics—from fundamenta
 * Certificates available for a fee.
 
 * Wide range of cybersecurity topics.
-
-
-
-
-
 
 3. **Cybrary**
 
@@ -107,11 +97,6 @@ Cybrary also has a community-driven approach, which means you can engage with ot
 
 * Premium features for additional learning resources.
 
-
-
-
-
-
 4. **Open Security Training**
 
 
@@ -137,11 +122,6 @@ These courses are especially valuable for those with a background in IT or compu
 * Courses cover a wide range of security disciplines.
 
 * Self-paced learning format.
-
-
-
-
-
 
 5. **EDX**
 
@@ -169,11 +149,6 @@ The cybersecurity courses on EDX are highly regarded, covering both the theoreti
 
 * Focus on both theoretical and practical aspects.
 
-
-
-
-
-
 6. **FutureLearn**
 
 
@@ -199,11 +174,6 @@ The cybersecurity courses on FutureLearn tend to focus on practical skills, maki
 * Certificates available for a fee.
 
 * Focus on practical cybersecurity skills.
-
-
-
-
-
 
 7. **Udemy**
 
@@ -231,11 +201,6 @@ One of the key advantages of Udemy is the variety of instructors and teaching st
 
 * Flexible learning at your own pace.
 
-
-
-
-
-
 8. **Springboard**
 
 
@@ -261,11 +226,6 @@ These free resources cover topics like network security, ethical hacking, crypto
 * Free blogs, tutorials, and online courses.
 
 * Ideal for beginners looking for a starting point.
-
-
-
-
-
 
 9. **SANS Cyber Aces**
 
@@ -293,11 +253,6 @@ SANS is a respected name in the cybersecurity community, and its Cyber Aces prog
 
 * Offered by a respected name in cybersecurity.
 
-
-
-
-
-
 10. **NIST (National Institute of Standards and Technology)**
 
 
@@ -323,11 +278,6 @@ NIST’s resources include webinars, reports, and publications that cover variou
 * Comprehensive resources for technical and policy-related topics.
 
 * Offered by a respected government organization.
-
-
-
-
-
 
 Conclusion
 

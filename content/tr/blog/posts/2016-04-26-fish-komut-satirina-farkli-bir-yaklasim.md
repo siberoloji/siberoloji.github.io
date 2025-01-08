@@ -31,12 +31,12 @@ Fish, kullanıcı dostu olarak bilinen bir kabuk programıdır. Komut tamamlama,
 
 ```bash
 ---------------- Debian 8 ----------------
-echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/">http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/</a> /' &gt;&gt; /etc/apt/sources.list.d/fish.list
+echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/">http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/</a> /' >> /etc/apt/sources.list.d/fish.list
 apt-get update
 apt-get install fish
 
 ---------------- Debian 7 ----------------
-echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/">http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/</a> /' &gt;&gt; /etc/apt/sources.list.d/fish.list
+echo 'deb <a href="http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/">http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/</a> /' >> /etc/apt/sources.list.d/fish.list
 apt-get update
 apt-get install fish
 ```

@@ -79,7 +79,7 @@ FreeSWITCH allows you to create conference profiles, each with its own set of co
 sudo nano /etc/freeswitch/autoload_configs/conference.conf.xml
 ```
 
-2. Edit or add `&lt;profile&gt;` elements to define conference parameters like codec, bitrate, and maximum participants. Example configuration:
+2. Edit or add `<profile>` elements to define conference parameters like codec, bitrate, and maximum participants. Example configuration:
 ```xml
 <profile name="default">
 <param name="rate" value="8000"/>

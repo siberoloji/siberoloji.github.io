@@ -82,7 +82,7 @@ For the Enigmail add-on to work, Thunderbird must be used in English. For the En
 
 
 
-After all this, you should create your own private and public key with the Enigmail&gt;Setup wizard in Thunderbird. You must broadcast the public key to people. To do this, you can transfer the public key to a file (pub key) with the Export option and  save it at <a href="http://keyserver.pgp.com/">keyserver.pgp.com</a>  , etc. You can install it on key servers. To send mail, you must also have the public key of the other party.
+After all this, you should create your own private and public key with the Enigmail>Setup wizard in Thunderbird. You must broadcast the public key to people. To do this, you can transfer the public key to a file (pub key) with the Export option and  save it at <a href="http://keyserver.pgp.com/">keyserver.pgp.com</a>  , etc. You can install it on key servers. To send mail, you must also have the public key of the other party.
 
 
 

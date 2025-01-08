@@ -27,7 +27,7 @@ We are explaining the use of int variables with different defining ways
  * @brief Demonstrates the use of int with different defining ways in C++
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 
 /**
  * @brief Main function of the program
@@ -37,15 +37,15 @@ We are explaining the use of int variables with different defining ways
  * @return int Returns 0 upon successful execution
  */
 int main() {
-    int numberOne = 5; ///&lt; 5 is a decimal number by default in C++
-    int numberTwo = 1111111111; ///&lt; 1111111111 is a decimal number by default in C++
-    int numberThree = 1'111'111'111; ///&lt; 1'111'111'111 is a decimal number by default in C++
-    int numberFour = -1'111'111'111; ///&lt; -1'111'111'111 is a decimal number by default in C++
+    int numberOne = 5; ///< 5 is a decimal number by default in C++
+    int numberTwo = 1111111111; ///< 1111111111 is a decimal number by default in C++
+    int numberThree = 1'111'111'111; ///< 1'111'111'111 is a decimal number by default in C++
+    int numberFour = -1'111'111'111; ///< -1'111'111'111 is a decimal number by default in C++
 
-    std::cout &lt;&lt; "numberOne: " &lt;&lt; numberOne &lt;&lt; std::endl;
-    std::cout &lt;&lt; "numberTwo: " &lt;&lt; numberTwo &lt;&lt; std::endl;
-    std::cout &lt;&lt; "numberThree: " &lt;&lt; numberThree &lt;&lt; std::endl;
-    std::cout &lt;&lt; "numberFour: " &lt;&lt; numberFour &lt;&lt; std::endl;
+    std::cout << "numberOne: " << numberOne << std::endl;
+    std::cout << "numberTwo: " << numberTwo << std::endl;
+    std::cout << "numberThree: " << numberThree << std::endl;
+    std::cout << "numberFour: " << numberFour << std::endl;
 
     return 0;
 }
@@ -61,7 +61,7 @@ The code begins by including the `iostream` library, which provides facilities f
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 ```
 
 
@@ -90,7 +90,7 @@ The code then uses `std::cout` to print the values of these variables to the con
 
 
 ```cpp
-std::cout &lt;&lt; "numberOne: " &lt;&lt; numberOne &lt;&lt; std::endl;
+std::cout << "numberOne: " << numberOne << std::endl;
 ```
 
 

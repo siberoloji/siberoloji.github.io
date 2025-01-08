@@ -132,7 +132,7 @@ WordPress allows you to manually delete auto drafts, revisions, and trashed item
 
 
 
-* After moving drafts or revisions to the trash, navigate to “Posts” &gt; “All Posts” &gt; “Trash.”
+* After moving drafts or revisions to the trash, navigate to “Posts” > “All Posts” > “Trash.”
 
 * Click on “Empty Trash” to permanently delete all items.
 
@@ -213,7 +213,7 @@ WP-Sweep is another efficient plugin for cleaning up your WordPress database. It
 
 * Install and activate the plugin.
 
-* Navigate to “Tools” &gt; “Sweep.”
+* Navigate to “Tools” > “Sweep.”
 
 * You will see various items such as revisions, drafts, trashed posts, and more.
 

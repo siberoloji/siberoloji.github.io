@@ -48,11 +48,6 @@ Data cleaning and normalization are critical steps in the web scraping process. 
 
 * **Discretization:** Converting continuous data into discrete categories
 
-
-
-
-
-
 **Challenges in Data Cleaning and Normalization**
 
 
@@ -123,11 +118,6 @@ To ensure effective data cleaning and normalization, consider the following best
 * Handling time zones
 
 * Identifying inconsistencies and errors
-
-
-
-
-
 
 **Case Study: Cleaning and Normalizing Financial Data**
 

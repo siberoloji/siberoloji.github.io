@@ -23,9 +23,9 @@ Bu kod, int ve float değişkenlerinin sabit, metin değişkenin sabit olmadığ
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;cstdio&gt;
-#include &lt;string&gt;
+#include <iostream>
+#include <cstdio>
+#include <string>
 using namespace std;
 
 int main() {

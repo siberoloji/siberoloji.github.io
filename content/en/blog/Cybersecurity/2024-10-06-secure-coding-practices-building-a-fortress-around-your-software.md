@@ -350,10 +350,10 @@ XSS attacks occur when malicious scripts are injected into trusted websites. Pre
 
 ```bash
 function encodeHTML(s) {
-    return s.replace(/&amp;/g, '&amp;amp;').replace(/&lt;/g, '&amp;lt;').replace(/"/g, '&amp;quot;');
+    return s.replace(/&amp;/g, '&amp;amp;').replace(/</g, '&amp;lt;').replace(/"/g, '&amp;quot;');
 }
 
-let userComment = "&lt;script&gt;alert('XSS');&lt;/script&gt;";
+let userComment = "<script>alert('XSS');</script>";
 let safeComment = encodeHTML(userComment);
 document.getElementById('comment').innerHTML = safeComment;
 ```

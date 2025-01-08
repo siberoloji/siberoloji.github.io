@@ -76,7 +76,7 @@ Büyük O Notasyonu ((O))
 
 
 
-Bir algoritmanın , tüm (n \geq n_0) için (c &gt; 0) ve (n_0 &gt; 0) sabitleri mevcutsa **O(f(n))** olduğu söylenir :
+Bir algoritmanın , tüm (n \geq n_0) için (c > 0) ve (n_0 > 0) sabitleri mevcutsa **O(f(n))** olduğu söylenir :
 
 
 
@@ -118,7 +118,7 @@ Büyük O gösterimi üst sınıra (en kötü durum) odaklanırken, **Omega gös
 
 
 
-Bir algoritmanın , tüm (n \geq n_0) için (c &gt; 0) ve (n_0 &gt; 0) sabitleri mevcutsa **Ω(f(n))** olduğu söylenir :
+Bir algoritmanın , tüm (n \geq n_0) için (c > 0) ve (n_0 > 0) sabitleri mevcutsa **Ω(f(n))** olduğu söylenir :
 
 
 
@@ -146,7 +146,7 @@ Teta Notasyonu ((Θ))
 
 
 
-Bir algoritmanın , tüm (n \geq n_0) için (c_1 &gt; 0), (c_2 &gt; 0) ve (n_0 &gt; 0) sabitleri mevcutsa **Θ(f(n))** olduğu söylenir :
+Bir algoritmanın , tüm (n \geq n_0) için (c_1 > 0), (c_2 > 0) ve (n_0 > 0) sabitleri mevcutsa **Θ(f(n))** olduğu söylenir :
 
 
 

@@ -8,6 +8,7 @@ tags:
   - AlmaLinux
 weight: 1
 simple_list: true
+summary: This guide will help you with the initial settings for AlmaLinux 9.
 ---
 
 > This Document is actively being developed as a part of ongoing AlmaLinux learning efforts. Chapters will be added periodically.

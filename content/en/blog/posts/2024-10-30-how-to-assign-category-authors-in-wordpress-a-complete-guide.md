@@ -83,7 +83,7 @@ Add this code to your theme's `functions.php` file:
     if ($category_author) {
         $author = get_user_by('login', $category_author);
         if ($author) {
-            return $author-&gt;display_name;
+            return $author->display_name;
         }
     }
     return false;
@@ -145,13 +145,13 @@ For more advanced implementations, you can create a custom taxonomy that links a
         'author_category',
         'post',
         array(
-            'label' =&gt; 'Author Categories',
-            'hierarchical' =&gt; true,
-            'public' =&gt; true,
-            'show_ui' =&gt; true,
-            'show_admin_column' =&gt; true,
-            'query_var' =&gt; true,
-            'rewrite' =&gt; array('slug' =&gt; 'author-category'),
+            'label' => 'Author Categories',
+            'hierarchical' => true,
+            'public' => true,
+            'show_ui' => true,
+            'show_admin_column' => true,
+            'query_var' => true,
+            'rewrite' => array('slug' => 'author-category'),
         )
     );
 }
@@ -242,7 +242,7 @@ Add this code to display category-specific author archives:
         $category_author = display_category_author($category_id);
 
         if ($category_author) {
-            $query-&gt;set('author_name', $category_author);
+            $query->set('author_name', $category_author);
         }
     }
     return $query;
@@ -266,10 +266,10 @@ Enhance category pages with author details:
         $author = display_category_author($category_id);
 
         if ($author) {
-            echo '&lt;div class="category-author-info"&gt;';
-            echo '&lt;h3&gt;Category Expert: ' . esc_html($author) . '&lt;/h3&gt;';
+            echo '<div class="category-author-info">';
+            echo '<h3>Category Expert: ' . esc_html($author) . '</h3>';
             // Add additional author information here
-            echo '&lt;/div&gt;';
+            echo '</div>';
         }
     }
 }
@@ -364,11 +364,6 @@ As your WordPress site grows, consider:
 * Create workflow triggers
 
 * Implement batch processing
-
-
-
-
-
 
 ## Conclusion
 

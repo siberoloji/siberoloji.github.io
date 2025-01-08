@@ -1,11 +1,11 @@
 ---
-title: 
-linkTitle: 
-description: 
-date: 
+title: "How to Install Next.js on AlmaLinux: A Comprehensive Guide"
+linkTitle: Install Next.js
+description: By the end of this tutorial, you’ll have a functional Next.js project ready for development or deployment.
+date: 2025-01-08T11:12:24.398Z
 weight: 1810
-slug: 
-draft: true
+url: install-js-almalinux-comprehensive-guide
+draft: false
 tags:
   - AlmaLinux
 categories:
@@ -14,10 +14,9 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - AlmaLinux
+  - next.js
 featured_image: /images/almalinux.webp
 ---
-### How to Install Next.js on AlmaLinux: A Comprehensive Guide
-
 Next.js is a popular React framework for building server-rendered applications, static websites, and modern web applications with ease. Developed by Vercel, Next.js provides powerful features like server-side rendering (SSR), static site generation (SSG), and API routes, making it an excellent choice for developers who want to create scalable and high-performance web applications.
 
 If you’re running **AlmaLinux**, an enterprise-grade Linux distribution, this guide will walk you through installing and setting up Next.js on your system. By the end of this tutorial, you’ll have a functional Next.js project ready for development or deployment.
@@ -88,6 +87,7 @@ sudo reboot
 Next.js requires **Node.js** to run its development server and manage dependencies.
 
 #### Step 4.1: Add the NodeSource Repository
+
 Install the latest Long-Term Support (LTS) version of Node.js (currently Node.js 18) using the NodeSource repository:
 
 ```bash
@@ -95,6 +95,7 @@ curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 ```
 
 #### Step 4.2: Install Node.js and npm
+
 Install Node.js and its package manager npm:
 
 ```bash
@@ -102,6 +103,7 @@ sudo dnf install -y nodejs
 ```
 
 #### Step 4.3: Verify Installation
+
 After installation, verify the versions of Node.js and npm:
 
 ```bash
@@ -109,6 +111,7 @@ node -v
 ```
 
 Expected output:
+
 ```
 v18.x.x
 ```
@@ -124,6 +127,7 @@ npm -v
 With Node.js and npm installed, you can now create a new Next.js application using the `create-next-app` command.
 
 #### Step 5.1: Install Create Next App
+
 Run the following command to install the `create-next-app` tool globally:
 
 ```bash
@@ -131,6 +135,7 @@ sudo npm install -g create-next-app
 ```
 
 #### Step 5.2: Create a New Project
+
 Generate a new Next.js application by running:
 
 ```bash
@@ -145,6 +150,7 @@ You’ll be prompted to:
 Once the command finishes, it will set up a new Next.js application in the `my-nextjs-app` directory.
 
 #### Step 5.3: Navigate to the Project Directory
+
 Move into your project directory:
 
 ```bash
@@ -158,6 +164,7 @@ cd my-nextjs-app
 Next.js includes a built-in development server that you can use to test your application locally.
 
 #### Step 6.1: Start the Development Server
+
 Run the following command to start the server:
 
 ```bash
@@ -171,6 +178,7 @@ npm run dev -- --host 0.0.0.0
 ```
 
 #### Step 6.2: Access the Application
+
 Open your browser and navigate to:
 
 ```
@@ -186,6 +194,7 @@ You should see the default Next.js welcome page, confirming that your applicatio
 When your application is ready for production, you need to create a production build.
 
 #### Step 7.1: Build the Application
+
 Run the following command to generate optimized production files:
 
 ```bash
@@ -195,6 +204,7 @@ npm run build
 The build process will generate static and server-rendered files in the `.next/` directory.
 
 #### Step 7.2: Start the Production Server
+
 To serve the production build locally, use the following command:
 
 ```bash
@@ -208,6 +218,7 @@ npm run start
 For production, you’ll typically use a web server like **Nginx** to serve your Next.js application.
 
 #### Step 8.1: Install Nginx
+
 Install Nginx on AlmaLinux:
 
 ```bash
@@ -215,6 +226,7 @@ sudo dnf install nginx -y
 ```
 
 #### Step 8.2: Configure Nginx
+
 Open a new Nginx configuration file:
 
 ```bash
@@ -242,6 +254,7 @@ server {
 Replace `yourdomain.com` with your domain name or server IP.
 
 #### Step 8.3: Restart Nginx
+
 Restart Nginx to apply the configuration:
 
 ```bash
@@ -255,6 +268,7 @@ Now, your Next.js application will be accessible via your domain or server IP.
 ### **9. Step 7: Security and Firewall Considerations**
 
 #### Open Necessary Ports
+
 If you’re using a firewall, open port `3000` for development or port `80` for production:
 
 ```bash

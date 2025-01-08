@@ -3,7 +3,7 @@ draft: false
 
 title:  'Attributes in HTML: Everything You Should Know'
 date: '2024-10-28T13:47:45+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  "In this post, we’ll explore what attributes are, the different types of attributes, and how to use them effectively in your HTML code. " 
  
 url:  /attributes-in-html-everything-you-should-know/
@@ -36,7 +36,7 @@ The basic syntax for an HTML element with an attribute looks like this:
 
 
 ```bash
-&lt;tagname attributeName="attributeValue"&gt;Content&lt;/tagname&gt;
+<tagname attributeName="attributeValue">Content</tagname>
 ```
 
 
@@ -45,12 +45,12 @@ For example:
 
 
 ```bash
-&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+<a href="https://www.example.com">Visit Example</a>
 ```
 
 
 
-In this example, the `&lt;a&gt;` (anchor) tag has an attribute `href` that specifies the URL to which the link points.
+In this example, the `<a>` (anchor) tag has an attribute `href` that specifies the URL to which the link points.
 
 
 
@@ -74,7 +74,7 @@ Global attributes can be applied to any HTML element, regardless of its type. So
 
 
 ```bash
-  &lt;div class="container"&gt;Content here&lt;/div&gt;
+  <div class="container">Content here</div>
 ```
 
 
@@ -83,7 +83,7 @@ Global attributes can be applied to any HTML element, regardless of its type. So
 
 
 ```bash
-  &lt;h1 id="header"&gt;Welcome to My Website&lt;/h1&gt;
+  <h1 id="header">Welcome to My Website</h1>
 ```
 
 
@@ -92,7 +92,7 @@ Global attributes can be applied to any HTML element, regardless of its type. So
 
 
 ```bash
-  &lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;
+  <p style="color: blue;">This text is blue.</p>
 ```
 
 
@@ -101,7 +101,7 @@ Global attributes can be applied to any HTML element, regardless of its type. So
 
 
 ```bash
-  &lt;img src="image.jpg" title="A beautiful sunset" /&gt;
+  <img src="image.jpg" title="A beautiful sunset" />
 ```
 
 
@@ -113,21 +113,21 @@ Global attributes can be applied to any HTML element, regardless of its type. So
 Certain HTML elements have specific attributes relevant to their function. Here are some examples:
 
 
-* **`href`**: Used in `&lt;a&gt;` tags to specify the URL of the link.
+* **`href`**: Used in `<a>` tags to specify the URL of the link.
 
 
 
 ```bash
-  &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+  <a href="https://www.example.com">Visit Example</a>
 ```
 
 
-* **`src`**: Used in `&lt;img&gt;` tags to define the path to the image file.
+* **`src`**: Used in `<img>` tags to define the path to the image file.
 
 
 
 ```bash
-  &lt;img src="image.jpg" alt="Sample Image" /&gt;
+  <img src="image.jpg" alt="Sample Image" />
 ```
 
 
@@ -136,16 +136,16 @@ Certain HTML elements have specific attributes relevant to their function. Here 
 
 
 ```bash
-  &lt;img src="image.jpg" alt="A beautiful landscape" /&gt;
+  <img src="image.jpg" alt="A beautiful landscape" />
 ```
 
 
-* **`placeholder`**: Used in `&lt;input&gt;` fields to provide a hint to the user about what to enter.
+* **`placeholder`**: Used in `<input>` fields to provide a hint to the user about what to enter.
 
 
 
 ```bash
-  &lt;input type="text" placeholder="Enter your name" /&gt;
+  <input type="text" placeholder="Enter your name" />
 ```
 
 
@@ -162,16 +162,16 @@ Boolean attributes are attributes that are either present or absent; they do not
 
 
 ```bash
-  &lt;input type="text" disabled /&gt;
+  <input type="text" disabled />
 ```
 
 
-* **`checked`**: Used in `&lt;input type="checkbox"&gt;` or `&lt;input type="radio"&gt;` to indicate that the option is selected.
+* **`checked`**: Used in `<input type="checkbox">` or `<input type="radio">` to indicate that the option is selected.
 
 
 
 ```bash
-  &lt;input type="checkbox" checked /&gt;
+  <input type="checkbox" checked />
 ```
 
 
@@ -180,7 +180,7 @@ Boolean attributes are attributes that are either present or absent; they do not
 
 
 ```bash
-  &lt;input type="text" value="Read-only text" readonly /&gt;
+  <input type="text" value="Read-only text" readonly />
 ```
 
 

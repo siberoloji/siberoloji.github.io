@@ -322,11 +322,6 @@ simple infrastructure using Terraform.
 
 
 **Q6: Can DevOps skills be useful in other IT roles?** A6: Absolutely! Automation, CI/CD, and infrastructure management skills are valuable in many IT roles, such as cloud engineering and systems administration.
-
-
-
-
-
 **Conclusion**
 
 

@@ -38,11 +38,6 @@ Integrating these two platforms can provide several key benefits:
 
 * **Customization**: By leveraging both platforms, users can customize call flows and features, optimizing each system for the tasks it handles best.
 
-
-
-
-
-
 Prerequisites
 
 
@@ -55,11 +50,6 @@ Before beginning, ensure you have:
 * **Basic networking knowledge** and familiarity with VoIP protocols (such as SIP).
 
 * **Administrative access** to both FreeSWITCH and Asterisk servers.
-
-
-
-
-
 
 Step 1: Network and Firewall Configuration
 
@@ -114,13 +104,13 @@ A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls t
 
 
 ```
-   &lt;gateway name="asterisk"&gt;
-       &lt;param name="username" value="freeswitch"/&gt;
-       &lt;param name="password" value="strongpassword"/&gt;
-       &lt;param name="realm" value="asterisk_ip"/&gt;
-       &lt;param name="proxy" value="asterisk_ip"/&gt;
-       &lt;param name="register" value="true"/&gt;
-   &lt;/gateway&gt;
+   <gateway name="asterisk">
+       <param name="username" value="freeswitch"/>
+       <param name="password" value="strongpassword"/>
+       <param name="realm" value="asterisk_ip"/>
+       <param name="proxy" value="asterisk_ip"/>
+       <param name="register" value="true"/>
+   </gateway>
 ```
 
 
@@ -183,11 +173,6 @@ password=strongpassword
 
 ```bash
    asterisk -rx "pjsip reload"```
-
-
-
-
-
 Step 3: Setting Up Dial Plans
 
 
@@ -217,11 +202,11 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
 
 
 ```
-   &lt;extension name="to-asterisk"&gt;
-       &lt;condition field="destination_number" expression="^3\d{3}$"&gt;
-           &lt;action application="bridge" data="sofia/external/asterisk/${destination_number}"/&gt;
-       &lt;/condition&gt;
-   &lt;/extension&gt;
+   <extension name="to-asterisk">
+       <condition field="destination_number" expression="^3\d{3}$">
+           <action application="bridge" data="sofia/external/asterisk/${destination_number}"/>
+       </condition>
+   </extension>
 ```
 
 
@@ -252,8 +237,8 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
 
 ```
    [from-internal]
-   exten =&gt; _4XXX,1,Dial(PJSIP/${EXTEN}@freeswitch)
-   exten =&gt; _4XXX,n,Hangup()```
+   exten => _4XXX,1,Dial(PJSIP/${EXTEN}@freeswitch)
+   exten => _4XXX,n,Hangup()```
 
 
 <!-- wp:list {"ordered":true,"start":3} -->
@@ -267,11 +252,6 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
 
 
 With these dial plans in place, calls to numbers beginning with `3` will route from FreeSWITCH to Asterisk, and calls beginning with `4` will route from Asterisk to FreeSWITCH.
-
-
-
-
-
 Step 4: Testing the Integration
 
 
@@ -303,11 +283,6 @@ With the configurations set up, it’s time to test calls between FreeSWITCH and
 
    # Asterisk
    asterisk -rx "pjsip show endpoints"```
-
-
-
-
-
 Step 5: Advanced Configuration Options
 
 
@@ -322,11 +297,6 @@ To maximize the integration, consider some additional configurations:
 * **DTMF Handling**: Ensure both systems use compatible DTMF modes (RFC2833, Inband, or SIP INFO) to avoid issues with interactive menus or IVRs.
 
 * **SIP Security**: Enable IP filtering, strong passwords, and transport layer security (TLS) for SIP communications, especially if the servers are accessible over the internet.
-
-
-
-
-
 
 Step 6: Troubleshooting Common Issues
 
@@ -349,11 +319,6 @@ Here are some common integration challenges and tips for troubleshooting:
 
 * Asterisk: Use `pjsip set logger on` to capture detailed SIP messaging logs.
 
-
-
-
-
-
 Use Cases for FreeSWITCH and Asterisk Integration
 
 
@@ -363,21 +328,11 @@ Use Cases for FreeSWITCH and Asterisk Integration
 
 * **Custom PBX Features**: FreeSWITCH can provide complex call handling and customization, while Asterisk can support traditional PBX functionalities.
 
-
-
-
-
-
 Conclusion
 
 
 
 Integrating FreeSWITCH with Asterisk opens up a wide range of possibilities for building robust, scalable, and feature-rich telephony solutions. With careful configuration of SIP trunks, dial plans, and codecs, these two platforms can work seamlessly together, creating a hybrid solution that maximizes each system’s strengths. Whether for a business PBX, conferencing solution, or advanced VoIP system, combining FreeSWITCH and Asterisk provides flexibility, performance, and scalability for diverse communication needs.
-
-
-
-
-
 **FAQs**
 
 

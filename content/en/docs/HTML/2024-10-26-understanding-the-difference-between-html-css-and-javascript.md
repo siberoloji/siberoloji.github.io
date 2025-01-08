@@ -3,7 +3,7 @@ draft: false
 
 title:  'Understanding the Difference Between HTML, CSS, and JavaScript'
 date: '2024-10-26T13:57:28+03:00'
-author: 'Tarık Korucuoğlu' 
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544)) 
  
 url:  /understanding-the-difference-between-html-css-and-javascript/
 featured_image: /images/htmlprogramming.webp
@@ -12,11 +12,6 @@ categories:
 tags:
     - html
 ---
-
-
-
-
-
 
 Introduction
 
@@ -36,7 +31,7 @@ What is HTML? (Hypertext Markup Language)
 #### Key Functions of HTML
 
 
-* **Structuring Content**: HTML uses tags to organize content, such as headings, paragraphs, lists, and tables. Common HTML tags include `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;div&gt;`, and `&lt;a&gt;`.
+* **Structuring Content**: HTML uses tags to organize content, such as headings, paragraphs, lists, and tables. Common HTML tags include `<h1>`, `<p>`, `<div>`, and `<a>`.
 
 * **Embedding Media**: HTML can embed images, audio, and video elements to enhance the visual experience.
 
@@ -52,17 +47,17 @@ A basic HTML structure might look like this:
 
 
 ```bash
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Welcome to My Website&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to My Personal Blog&lt;/h1&gt;
-    &lt;p&gt;Hello! This is my first blog post. I’m excited to share my journey with you.&lt;/p&gt;
-    &lt;a href="about.html"&gt;Learn more about me&lt;/a&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Website</title>
+</head>
+<body>
+    <h1>Welcome to My Personal Blog</h1>
+    <p>Hello! This is my first blog post. I’m excited to share my journey with you.</p>
+    <a href="about.html">Learn more about me</a>
+</body>
+</html>
 ```
 
 
@@ -150,19 +145,19 @@ Consider the following JavaScript code, which adds a message when a button is cl
 
 
 ```bash
-&lt;button onclick="displayMessage()"&gt;Click Me&lt;/button&gt;
-&lt;p id="message"&gt;&lt;/p&gt;
+<button onclick="displayMessage()">Click Me</button>
+<p id="message"></p>
 
-&lt;script&gt;
+<script>
 function displayMessage() {
     document.getElementById("message").textContent = "Hello! Thanks for clicking the button!";
 }
-&lt;/script&gt;
+</script>
 ```
 
 
 
-In this example, JavaScript listens for a click event on the button. When clicked, JavaScript changes the content of the `&lt;p&gt;` element to display a message. This interaction is only possible with JavaScript, as neither HTML nor CSS can add this type of dynamic behavior.
+In this example, JavaScript listens for a click event on the button. When clicked, JavaScript changes the content of the `<p>` element to display a message. This interaction is only possible with JavaScript, as neither HTML nor CSS can add this type of dynamic behavior.
 
 
 
@@ -198,7 +193,7 @@ Key Differences Between HTML, CSS, and JavaScript
 
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>HTML</th><th>CSS</th><th>JavaScript</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Structures content</td><td>Styles and designs content</td><td>Adds interactivity and dynamic behavior</td></tr><tr><td>**Syntax**</td><td>Uses tags (e.g., `&lt;h1&gt;`, `&lt;p&gt;`)</td><td>Uses selectors and properties</td><td>Uses variables, functions, loops</td></tr><tr><td>**Output**</td><td>Basic, unstyled text and images</td><td>Color, layout, fonts, and spacing</td><td>Animations, data updates, event handling</td></tr><tr><td>**Capabilities**</td><td>Organizes content, adds media</td><td>Defines look and feel</td><td>Enables user interactions, complex functions</td></tr><tr><td>**File Extension**</td><td>`.html`</td><td>`.css`</td><td>`.js`</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>HTML</th><th>CSS</th><th>JavaScript</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Structures content</td><td>Styles and designs content</td><td>Adds interactivity and dynamic behavior</td></tr><tr><td>**Syntax**</td><td>Uses tags (e.g., `<h1>`, `<p>`)</td><td>Uses selectors and properties</td><td>Uses variables, functions, loops</td></tr><tr><td>**Output**</td><td>Basic, unstyled text and images</td><td>Color, layout, fonts, and spacing</td><td>Animations, data updates, event handling</td></tr><tr><td>**Capabilities**</td><td>Organizes content, adds media</td><td>Defines look and feel</td><td>Enables user interactions, complex functions</td></tr><tr><td>**File Extension**</td><td>`.html`</td><td>`.css`</td><td>`.js`</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 

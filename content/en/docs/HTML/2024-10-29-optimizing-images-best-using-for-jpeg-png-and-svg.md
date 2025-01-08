@@ -3,7 +3,7 @@ draft: false
 
 title:  'Optimizing Images: Best Using for JPEG, PNG, and SVG'
 date: '2024-10-29T13:50:51+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  'Images are essential for creating visually appealing and engaging websites, but unoptimized images can slow down your site.' 
  
 url:  /optimizing-images-best-using-for-jpeg-png-and-svg/
@@ -16,11 +16,6 @@ tags:
 
 
 Images are essential for creating visually appealing and engaging websites, but unoptimized images can slow down your site. Choosing the right image format—JPEG, PNG, or SVG—can significantly improve load times, user experience, and SEO. Below is a breakdown of each format and its best uses to help you optimize images effectively.
-
-
-
-
-
 JPEG: The Best Choice for Photographs
 
 
@@ -42,11 +37,6 @@ JPEG (Joint Photographic Experts Group) is one of the most commonly used formats
 
 
 **Optimizing JPEGs**: Use tools like TinyJPG or JPEG-Optimizer to reduce file size without losing quality. Setting quality levels at 60-80% is generally a good starting point.
-
-
-
-
-
 PNG: Best for Graphics and Transparent Images
 
 
@@ -68,11 +58,6 @@ PNG (Portable Network Graphics) is popular for images that need sharp details or
 
 
 **Optimizing PNGs**: Use tools like TinyPNG or ImageOptim to compress PNG files. Even though PNGs are lossless, these tools can help reduce file sizes without sacrificing visible quality.
-
-
-
-
-
 SVG: Ideal for Logos and Icons
 
 
@@ -94,11 +79,6 @@ SVG (Scalable Vector Graphics) is a vector-based format, meaning it uses mathema
 
 
 **Optimizing SVGs**: SVGs are generally lightweight, but you can still optimize them using tools like SVGOMG or SVGO, which remove unnecessary code to keep file sizes minimal.
-
-
-
-
-
 Key Takeaways
 
 

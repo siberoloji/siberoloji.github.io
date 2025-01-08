@@ -20,11 +20,6 @@ categories:
 
 
 Bu blog yazısında OSSEC'i derinlemesine inceleyeceğiz: nedir, nasıl çalışır, temel özellikleri, faydaları, zorlukları ve kuruluşunuzun güvenlik duruşunu iyileştirmek için neden güçlü bir araç olduğunu ele alacağız.
-
-
-
-
-
 ## OSSEC Nedir?
 
 
@@ -34,11 +29,6 @@ Bu blog yazısında OSSEC'i derinlemesine inceleyeceğiz: nedir, nasıl çalış
 
 
 Ağ trafiğini izleyen ağ tabanlı saldırı tespit sistemlerinin (NIDS) aksine, **OSSEC ana bilgisayar tabanlıdır** ; yani sistemlerdeki (veya "ana bilgisayarlardaki") etkinlikleri ve davranışları izlemeye odaklanır. Bu, OSSEC'i bireysel sunucuları, iş istasyonlarını ve diğer uç noktaları siber tehditlere karşı korumak için oldukça etkili hale getirir.
-
-
-
-
-
 ## OSSEC'in Temel Özellikleri
 
 
@@ -100,11 +90,6 @@ OSSEC, belirli olaylar meydana geldiğinde otomatik eylemler gerçekleştirmesin
 
 
 OSSEC ayrıca uyumluluk denetimi için de kullanılabilir ve sistemlerin önceden tanımlanmış güvenlik politikalarına uymasını sağlar. Sistem yapılandırmalarını ve günlüklerini izleyerek OSSEC, kuruluşların PCI-DSS, HIPAA ve GDPR gibi çerçeveler için uyumluluk gereksinimlerini karşılamasına yardımcı olur. Araç, sistem yapılandırmalarını, dosya bütünlüğünü ve güvenlik olaylarını ayrıntılı olarak açıklayan raporlar üretebilir ve bu da denetimler sırasında uyumluluğu göstermeyi kolaylaştırır.
-
-
-
-
-
 ## OSSEC Nasıl Çalışır?
 
 
@@ -136,11 +121,6 @@ Olay Korelasyonu ve Analizi
 
 
 OSSEC, güvenlik olaylarını analiz etmek için birden fazla kaynaktan veri toplar ve ilişkilendirir. Günlük girişlerini, dosya değişikliklerini ve sistem davranışını değerlendirmek için önceden oluşturulmuş **kuralları** kullanır . Bu kurallar sürekli olarak güncellenir ve bir kuruluşun belirli güvenlik ihtiyaçlarını karşılamak üzere özelleştirilebilir. OSSEC, birden fazla olayı ilişkilendirerek potansiyel tehditleri tespit etmede daha fazla bağlam ve doğruluk sağlayabilir, yanlış pozitifler ve gözden kaçan olaylar riskini azaltabilir.
-
-
-
-
-
 ## OSSEC Kullanmanın Faydaları
 
 
@@ -182,11 +162,6 @@ OSSEC son derece genişletilebilirdir ve kullanıcıların kendi özel güvenlik
 
 
 Birden fazla işletim sistemi desteğiyle OSSEC, Windows tabanlı ağlardan Linux sunucularına ve macOS uç noktalarına kadar çeşitli ortamlarda dağıtılabilir. Bu çapraz platform uyumluluğu, işletim sistemlerinden bağımsız olarak tüm sistemlerin izlenmesini ve korunmasını sağlar.
-
-
-
-
-
 ## OSSEC Kullanımının Zorlukları
 
 
@@ -212,21 +187,11 @@ OSSEC'in yerel arayüzü metin tabanlıdır ve bu, grafiksel panoları tercih ed
 
 
 Birçok saldırı tespit sistemi gibi, OSSEC de özellikle meşru değişikliklerin sıklıkla gerçekleştiği oldukça dinamik ortamlarda yanlış pozitifler üretebilir. Ancak, uygun kural ayarlaması ve yapılandırmasıyla bu yanlış pozitifler en aza indirilebilir.
-
-
-
-
-
 ## OSSEC ve Diğer Saldırı Algılama Sistemleri
 
 
 
 **OSSEC genellikle Tripwire** veya **AIDE gibi diğer HIDS çözümleriyle ve ****Snort** gibi ağ tabanlı saldırı tespit sistemleriyle (NIDS) karşılaştırılır . NIDS çözümleri ağ trafiğini izlemeye odaklanırken, OSSEC'in gücü ana bilgisayarı izleme yeteneğinde yatmaktadır ve bu da onu ağ tabanlı güvenlik araçlarının vazgeçilmez bir tamamlayıcısı haline getirir. OSSEC ayrıca açık kaynaklı yapısı, kapsamlı özellik seti ve güçlü topluluk desteğiyle öne çıkar ve daha pahalı ticari çözümlere uygulanabilir bir alternatif sunar.
-
-
-
-
-
 ## Çözüm
 
 

@@ -59,11 +59,6 @@ Here’s a list of popular computer games across major categories. Since this li
 
 * Splinter Cell: Blacklist
 
-
-
-
-
-
 2. **Adventure**
 
 
@@ -112,11 +107,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * Heavy Rain
 
 * Until Dawn
-
-
-
-
-
 
 3. **Role-Playing (RPG)**
 
@@ -167,11 +157,6 @@ Here’s a list of popular computer games across major categories. Since this li
 
 * Gears Tactics
 
-
-
-
-
-
 4. **Simulation**
 
 
@@ -220,11 +205,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * Doraemon Story of Seasons
 
 * Graveyard Keeper
-
-
-
-
-
 
 5. **Strategy**
 
@@ -275,11 +255,6 @@ Here’s a list of popular computer games across major categories. Since this li
 
 * Master of Orion
 
-
-
-
-
-
 6. **Sports**
 
 
@@ -316,11 +291,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * EA Sports UFC 3
 
 * Punch-Out!!
-
-
-
-
-
 
 7. **Puzzle**
 
@@ -359,11 +329,6 @@ Here’s a list of popular computer games across major categories. Since this li
 
 * QuizUp
 
-
-
-
-
-
 8. **Horror**
 
 
@@ -400,11 +365,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * The Forest
 
 * White Noise 2
-
-
-
-
-
 
 9. **MMO (Massively Multiplayer Online)**
 

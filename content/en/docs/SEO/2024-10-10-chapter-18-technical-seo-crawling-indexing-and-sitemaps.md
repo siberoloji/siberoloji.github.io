@@ -96,21 +96,21 @@ Creating an XML sitemap can be done manually or with the help of various tools a
 
 
 ```bash
-  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-  &lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"&gt;
-      &lt;url&gt;
-          &lt;loc&gt;https://www.example.com/&lt;/loc&gt;
-          &lt;lastmod&gt;2024-10-10&lt;/lastmod&gt;
-          &lt;changefreq&gt;monthly&lt;/changefreq&gt;
-          &lt;priority&gt;1.0&lt;/priority&gt;
-      &lt;/url&gt;
-      &lt;url&gt;
-          &lt;loc&gt;https://www.example.com/about&lt;/loc&gt;
-          &lt;lastmod&gt;2024-09-15&lt;/lastmod&gt;
-          &lt;changefreq&gt;monthly&lt;/changefreq&gt;
-          &lt;priority&gt;0.8&lt;/priority&gt;
-      &lt;/url&gt;
-  &lt;/urlset&gt;
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+      <url>
+          <loc>https://www.example.com/</loc>
+          <lastmod>2024-10-10</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+      </url>
+      <url>
+          <loc>https://www.example.com/about</loc>
+          <lastmod>2024-09-15</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+      </url>
+  </urlset>
 ```
 
 

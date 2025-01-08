@@ -58,7 +58,7 @@ Shell, açıldığında prompt olarak ifade edilen yerde durur ve komutun girilm
 
 
 <!-- wp:preformatted -->
-<pre class="wp-block-preformatted">linuks@egitim ~$&gt;</pre>
+<pre class="wp-block-preformatted">linuks@egitim ~$></pre>
 <!-- /wp:preformatted -->
 
 
@@ -192,7 +192,7 @@ Kayıtlı bulunan tüm geçmişi listelemek için history komutunu kullanırken,
 <pre class="wp-block-preformatted">linuks@egitim:~/linux$ history 10 
 1994 set +u
 1995 ls
-1996 echo merhaba &gt;dosya1.txt
+1996 echo merhaba >dosya1.txt
 1997 cat dosya1.txt
 1998 clear
 1999 touch dosya123

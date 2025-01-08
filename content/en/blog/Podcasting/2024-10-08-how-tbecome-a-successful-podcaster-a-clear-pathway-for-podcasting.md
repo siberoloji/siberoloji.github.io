@@ -119,11 +119,6 @@ Week 1: Understanding the Basics of Podcasting
 
 * **Exercise:** Write down your key takeaways and any questions you still have.
 
-
-
-
-
-
 Week 2: Creating Your Podcast
 
 
@@ -204,11 +199,6 @@ Week 2: Creating Your Podcast
 * **Task:** Reflect on the week’s tasks.
 
 * **Exercise:** Identify areas you need more practice in.
-
-
-
-
-
 
 Week 3: Publishing and Promoting Your Podcast
 
@@ -293,11 +283,6 @@ Week 3: Publishing and Promoting Your Podcast
 
 * **Exercise:** Adjust your promotional plan based on what you’ve learned.
 
-
-
-
-
-
 Week 4: Advanced Techniques and Growth
 
 
@@ -380,11 +365,6 @@ Week 4: Advanced Techniques and Growth
 * **Task:** Reflect on your learning journey.
 
 * **Exercise:** Set goals for the next 3 months regarding your podcast growth and development.
-
-
-
-
-
 
 <a href="https://www.siberoloji.com/additional-resources-for-podcasting-books-websites-and-courses-for-aspiring-podcasters/">Additional Resources</a>
 

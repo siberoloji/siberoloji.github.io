@@ -56,11 +56,6 @@ Table of Contents
 
 * **Conclusion**
 
-
-
-
-
-
 1. Why Backing Up Your WordPress is Important
 
 

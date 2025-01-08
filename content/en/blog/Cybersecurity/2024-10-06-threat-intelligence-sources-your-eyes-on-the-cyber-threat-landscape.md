@@ -77,11 +77,6 @@ Threat intelligence is the collection, analysis, and interpretation of informati
 
 * **Threat Hunting Teams:** Specialized teams can actively seek out threats within an organization's network to identify vulnerabilities and potential attacks.
 
-
-
-
-
-
 **Challenges in Threat Intelligence**
 
 

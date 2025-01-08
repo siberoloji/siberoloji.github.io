@@ -39,7 +39,7 @@ If you haven’t already set up your Raspberry Pi with OS 12 Bookworm, start by 
 2. Insert your microSD card into your computer, and use the Imager tool to flash **Raspberry Pi OS 12 Bookworm** onto the card.
 3. Boot your Raspberry Pi with the new OS, and complete the initial setup process, ensuring it’s connected to the internet.
 
-For remote management, you can enable SSH by navigating to **Settings &gt; Interfaces** and turning on SSH.
+For remote management, you can enable SSH by navigating to **Settings > Interfaces** and turning on SSH.
 
 ### Step 2: Update System Packages
 
@@ -201,7 +201,7 @@ sudo systemctl status zabbix-server zabbix-agent apache2
 
 ### Step 7: Complete Zabbix Frontend Setup
 
-1. Open a web browser and navigate to `http://&lt;Raspberry_Pi_IP&gt;/zabbix`.
+1. Open a web browser and navigate to `http://<Raspberry_Pi_IP>/zabbix`.
 2. Follow the setup wizard to complete the configuration.
 
 - **Step 1:** Welcome screen, click **Next**.

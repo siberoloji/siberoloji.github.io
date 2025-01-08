@@ -22,11 +22,6 @@ Computer networks play a pivotal role in linking devices in our interconnected w
 
 
 Let’s explore the essential features of each of these network types and gain a better understanding of how they help connect people and systems across various distances.
-
-
-
-
-
 **1. What is a Computer Network?**
 
 
@@ -36,11 +31,6 @@ A computer network is a system of interconnected devices that can communicate wi
 
 
 The primary types of networks—LAN, MAN, and WAN—differ based on their scale, the area they cover, and the specific applications they support.
-
-
-
-
-
 **2. Local Area Network (LAN)**
 
 
@@ -92,11 +82,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 
 * **Dependence on a Centralized Network**: If the central network fails, it can impact all connected devices.
 
-
-
-
-
-
 **3. Metropolitan Area Network (MAN)**
 
 
@@ -145,11 +130,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Higher Cost than LAN**: Setting up a MAN requires more infrastructure and higher bandwidth, making it more expensive than LAN.
 
 * **Moderate Latency**: MANs may experience higher latency than LANs due to the greater distances involved.
-
-
-
-
-
 
 **4. Wide Area Network (WAN)**
 
@@ -200,11 +180,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 
 * **Security Concerns**: WANs are vulnerable to security threats as they span public networks. Enhanced security measures, such as encryption and VPNs, are often required.
 
-
-
-
-
-
 **5. Comparing LAN, MAN, and WAN**
 
 
@@ -232,21 +207,11 @@ Choosing between LAN, MAN, and WAN depends on your specific needs, including the
 
 * **WAN** is suited for organizations that require international or multi-regional connectivity.
 
-
-
-
-
-
 **Conclusion**
 
 
 
 Understanding the different types of computer networks—**LAN**, **MAN**, and **WAN**—helps us appreciate how communication and data sharing happens seamlessly across various distances. Each network type has unique characteristics suited for different applications, from home setups and city infrastructures to global enterprises. Whether it’s for a household, a company, or an entire city, selecting the right network type is essential for achieving efficient and reliable connectivity.
-
-
-
-
-
 **Frequently Asked Questions (FAQs)**
 
 

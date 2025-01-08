@@ -44,11 +44,6 @@ An Internet Service Provider, or ISP, is a company that provides Internet access
 
 * **Wireless Internet:** A wireless connection using technologies like Wi-Fi, 4G, 5G, and satellite.
 
-
-
-
-
-
 **Types of ISPs**
 
 

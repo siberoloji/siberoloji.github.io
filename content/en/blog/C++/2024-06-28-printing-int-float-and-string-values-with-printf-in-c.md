@@ -23,9 +23,9 @@ This code defines a main function where the int and float variables are constant
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;cstdio&gt;
-#include &lt;string&gt;
+#include <iostream>
+#include <cstdio>
+#include <string>
 using namespace std;
 
 int main() {

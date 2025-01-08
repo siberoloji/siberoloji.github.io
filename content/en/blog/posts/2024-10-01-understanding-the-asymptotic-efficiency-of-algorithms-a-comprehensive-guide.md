@@ -76,7 +76,7 @@ Big O Notation ((O))
 
 
 
-An algorithm is said to be **O(f(n))** if there exist constants (c &gt; 0) and (n_0 &gt; 0) such that for all (n \geq n_0):
+An algorithm is said to be **O(f(n))** if there exist constants (c > 0) and (n_0 > 0) such that for all (n \geq n_0):
 
 
 
@@ -118,7 +118,7 @@ While Big O notation focuses on the upper bound (worst case), **Omega notation**
 
 
 
-An algorithm is said to be **Ω(f(n))** if there exist constants (c &gt; 0) and (n_0 &gt; 0) such that for all (n \geq n_0):
+An algorithm is said to be **Ω(f(n))** if there exist constants (c > 0) and (n_0 > 0) such that for all (n \geq n_0):
 
 
 
@@ -146,7 +146,7 @@ Theta Notation ((Θ))
 
 
 
-An algorithm is said to be **Θ(f(n))** if there exist constants (c_1 &gt; 0), (c_2 &gt; 0), and (n_0 &gt; 0) such that for all (n \geq n_0):
+An algorithm is said to be **Θ(f(n))** if there exist constants (c_1 > 0), (c_2 > 0), and (n_0 > 0) such that for all (n \geq n_0):
 
 
 

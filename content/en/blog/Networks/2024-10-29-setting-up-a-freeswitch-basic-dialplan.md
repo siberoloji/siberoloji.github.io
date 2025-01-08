@@ -52,15 +52,15 @@ Basic XML Structure
 
 
 ```xml
-&lt;include&gt;
-  &lt;context name="my_context"&gt;
-    &lt;extension name="my_extension"&gt;
-      &lt;condition field="destination_number" expression="^(\d+)$"&gt;
-        &lt;action application="bridge" data="user/${destination_number}"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
-  &lt;/context&gt;
-&lt;/include&gt;
+<include>
+  <context name="my_context">
+    <extension name="my_extension">
+      <condition field="destination_number" expression="^(\d+)$">
+        <action application="bridge" data="user/${destination_number}"/>
+      </condition>
+    </extension>
+  </context>
+</include>
 ```
 
 
@@ -93,25 +93,25 @@ Create a new file `/usr/local/freeswitch/conf/dialplan/default/01_internal.xml`:
 
 
 ```xml
-&lt;include&gt;
-  &lt;context name="default"&gt;
-    &lt;!-- Extension to Extension Calls --&gt;
-    &lt;extension name="internal"&gt;
-      &lt;condition field="destination_number" expression="^(10[01][0-9])$"&gt;
-        &lt;action application="set" data="ringback=${us-ring}"/&gt;
-        &lt;action application="bridge" data="user/$1"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
+<include>
+  <context name="default">
+    <!-- Extension to Extension Calls -->
+    <extension name="internal">
+      <condition field="destination_number" expression="^(10[01][0-9])$">
+        <action application="set" data="ringback=${us-ring}"/>
+        <action application="bridge" data="user/$1"/>
+      </condition>
+    </extension>
 
-    &lt;!-- Voicemail Access --&gt;
-    &lt;extension name="voicemail"&gt;
-      &lt;condition field="destination_number" expression="^(\*98)$"&gt;
-        &lt;action application="answer"/&gt;
-        &lt;action application="voicemail" data="check default ${domain_name} ${caller_id_number}"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
-  &lt;/context&gt;
-&lt;/include&gt;
+    <!-- Voicemail Access -->
+    <extension name="voicemail">
+      <condition field="destination_number" expression="^(\*98)$">
+        <action application="answer"/>
+        <action application="voicemail" data="check default ${domain_name} ${caller_id_number}"/>
+      </condition>
+    </extension>
+  </context>
+</include>
 ```
 
 
@@ -124,17 +124,17 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```xml
-&lt;include&gt;
-  &lt;context name="default"&gt;
-    &lt;!-- Outbound Calls --&gt;
-    &lt;extension name="outbound"&gt;
-      &lt;condition field="destination_number" expression="^(1?\d{10})$"&gt;
-        &lt;action application="set" data="effective_caller_id_number=${outbound_caller_id_number}"/&gt;
-        &lt;action application="bridge" data="sofia/gateway/my_provider/$1"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
-  &lt;/context&gt;
-&lt;/include&gt;
+<include>
+  <context name="default">
+    <!-- Outbound Calls -->
+    <extension name="outbound">
+      <condition field="destination_number" expression="^(1?\d{10})$">
+        <action application="set" data="effective_caller_id_number=${outbound_caller_id_number}"/>
+        <action application="bridge" data="sofia/gateway/my_provider/$1"/>
+      </condition>
+    </extension>
+  </context>
+</include>
 ```
 
 
@@ -147,12 +147,12 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="business_hours"&gt;
-  &lt;condition wday="2-6" hour="9-17"&gt; &lt;!-- Monday-Friday, 9 AM-5 PM --&gt;
-    &lt;action application="bridge" data="user/1000"/&gt;
-  &lt;anti-action application="voicemail" data="default ${domain_name} 1000"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="business_hours">
+  <condition wday="2-6" hour="9-17"> <!-- Monday-Friday, 9 AM-5 PM -->
+    <action application="bridge" data="user/1000"/>
+  <anti-action application="voicemail" data="default ${domain_name} 1000"/>
+  </condition>
+</extension>
 ```
 
 
@@ -161,13 +161,13 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="main_ivr"&gt;
-  &lt;condition field="destination_number" expression="^(5000)$"&gt;
-    &lt;action application="answer"/&gt;
-    &lt;action application="sleep" data="1000"/&gt;
-    &lt;action application="ivr" data="main_menu"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="main_ivr">
+  <condition field="destination_number" expression="^(5000)$">
+    <action application="answer"/>
+    <action application="sleep" data="1000"/>
+    <action application="ivr" data="main_menu"/>
+  </condition>
+</extension>
 ```
 
 
@@ -176,12 +176,12 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="conferences"&gt;
-  &lt;condition field="destination_number" expression="^(3\d{3})$"&gt;
-    &lt;action application="answer"/&gt;
-    &lt;action application="conference" data="$1@default"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="conferences">
+  <condition field="destination_number" expression="^(3\d{3})$">
+    <action application="answer"/>
+    <action application="conference" data="$1@default"/>
+  </condition>
+</extension>
 ```
 
 
@@ -194,14 +194,14 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="record_calls"&gt;
-  &lt;condition field="destination_number" expression="^(record_\d+)$"&gt;
-    &lt;action application="set" data="RECORD_STEREO=true"/&gt;
-    &lt;action application="set" data="record_file=/recordings/${strftime(%Y-%m-%d_%H-%M-%S)}_${destination_number}.wav"/&gt;
-    &lt;action application="record_session" data="${record_file}"/&gt;
-    &lt;action application="bridge" data="user/$1"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="record_calls">
+  <condition field="destination_number" expression="^(record_\d+)$">
+    <action application="set" data="RECORD_STEREO=true"/>
+    <action application="set" data="record_file=/recordings/${strftime(%Y-%m-%d_%H-%M-%S)}_${destination_number}.wav"/>
+    <action application="record_session" data="${record_file}"/>
+    <action application="bridge" data="user/$1"/>
+  </condition>
+</extension>
 ```
 
 
@@ -210,13 +210,13 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="support_queue"&gt;
-  &lt;condition field="destination_number" expression="^(7000)$"&gt;
-    &lt;action application="answer"/&gt;
-    &lt;action application="set" data="queue_moh=$${hold_music}"/&gt;
-    &lt;action application="callcenter" data="support@default"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="support_queue">
+  <condition field="destination_number" expression="^(7000)$">
+    <action application="answer"/>
+    <action application="set" data="queue_moh=$${hold_music}"/>
+    <action application="callcenter" data="support@default"/>
+  </condition>
+</extension>
 ```
 
 
@@ -225,13 +225,13 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="failover"&gt;
-  &lt;condition field="destination_number" expression="^(2\d{3})$"&gt;
-    &lt;action application="set" data="call_timeout=20"/&gt;
-    &lt;action application="set" data="hangup_after_bridge=true"/&gt;
-    &lt;action application="bridge" data="user/$1,user/${default_gateway}"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="failover">
+  <condition field="destination_number" expression="^(2\d{3})$">
+    <action application="set" data="call_timeout=20"/>
+    <action application="set" data="hangup_after_bridge=true"/>
+    <action application="bridge" data="user/$1,user/${default_gateway}"/>
+  </condition>
+</extension>
 ```
 
 
@@ -256,14 +256,14 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="limit_international"&gt;
-  &lt;condition field="destination_number" expression="^(011\d+)$"&gt;
-    &lt;condition field="${user_data(${caller_id_number} international_allowed)}" expression="^true$"&gt;
-      &lt;action application="bridge" data="sofia/gateway/my_provider/$1"/&gt;
-    &lt;anti-action application="playback" data="not_authorized.wav"/&gt;
-    &lt;/condition&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="limit_international">
+  <condition field="destination_number" expression="^(011\d+)$">
+    <condition field="${user_data(${caller_id_number} international_allowed)}" expression="^true$">
+      <action application="bridge" data="sofia/gateway/my_provider/$1"/>
+    <anti-action application="playback" data="not_authorized.wav"/>
+    </condition>
+  </condition>
+</extension>
 ```
 
 
@@ -272,11 +272,11 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 
 
 ```
-&lt;extension name="handle_failed_calls"&gt;
-  &lt;condition field="${originate_disposition}" expression="^(BUSY|NO_ANSWER|USER_NOT_REGISTERED)$"&gt;
-    &lt;action application="voicemail" data="default ${domain_name} ${dialed_extension}"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="handle_failed_calls">
+  <condition field="${originate_disposition}" expression="^(BUSY|NO_ANSWER|USER_NOT_REGISTERED)$">
+    <action application="voicemail" data="default ${domain_name} ${dialed_extension}"/>
+  </condition>
+</extension>
 ```
 
 
@@ -293,7 +293,7 @@ Add to `/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml`:
 
 
 ```
-&lt;param name="loglevel" value="debug"/&gt;
+<param name="loglevel" value="debug"/>
 ```
 
 
@@ -373,12 +373,12 @@ Verify:
 
 
 ```
-&lt;extension name="performance_monitoring"&gt;
-  &lt;condition field="destination_number" expression=".*"&gt;
-    &lt;action application="set" data="call_start=${strftime()}"/&gt;
-    &lt;action application="log" data="info Call started: ${call_start}"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="performance_monitoring">
+  <condition field="destination_number" expression=".*">
+    <action application="set" data="call_start=${strftime()}"/>
+    <action application="log" data="info Call started: ${call_start}"/>
+  </condition>
+</extension>
 ```
 
 

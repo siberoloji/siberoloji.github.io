@@ -56,7 +56,7 @@ To combine and manipulate Boolean values, we employ Boolean operations. The thre
 Boolean expressions are formed by combining Boolean values and variables using Boolean operations. They are used to represent logical conditions and evaluate to either true or false. Here are some examples of Boolean expressions:
 
 
-* `(x &gt; 5) AND (y &lt; 10)`
+* `(x > 5) AND (y < 10)`
 
 * `NOT (z = 0)`
 
@@ -161,11 +161,6 @@ Boolean algebra is a mathematical system that provides a framework for manipulat
 * **De Morgan's laws:*** `NOT (A AND B) = NOT A OR NOT B`
 
 * `NOT (A OR B) = NOT A AND NOT B`
-
-
-
-
-
 
 **Simplifying Boolean Expressions**
 

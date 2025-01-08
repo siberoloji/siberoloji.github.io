@@ -266,17 +266,17 @@ Open a new Apache configuration file for the virtual host:
 * 
 **Configure the Virtual Host**:
 In this configuration file, add the following code (replace `mydomain.com` with your actual domain):
-<pre><code class="language-apache">&lt;VirtualHost *:80&gt;
+<pre><code class="language-apache"><VirtualHost *:80>
     ServerName mydomain.com
     WSGIScriptAlias / /var/www/myapp/myapp.wsgi
 
-    &lt;Directory /var/www/myapp&gt;
+    <Directory /var/www/myapp>
         Require all granted
-    &lt;/Directory&gt;
+    </Directory>
 
     ErrorLog /var/log/httpd/myapp_error.log
     CustomLog /var/log/httpd/myapp_access.log combined
-&lt;/VirtualHost&gt;
+</VirtualHost>
 `</pre>
 This configuration tells Apache to serve your application when someone accesses `mydomain.com`.
 

@@ -25,11 +25,6 @@ PHP is one of the most widely used server-side scripting languages for building 
 
 
 In this detailed guide, we’ll cover how to configure Apache (`httpd`) on AlmaLinux 9 to use PHP scripts. This includes installing and configuring both Apache and PHP, verifying that they work together, and setting up some basic PHP scripts to test the configuration.
-
-
-
-
-
 Table of Contents
 
 
@@ -49,11 +44,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 ## 1. Introduction to PHP and Apache
 
 
@@ -67,11 +57,6 @@ Configuring Apache to use PHP scripts involves installing both Apache and PHP, e
 
 
 In this tutorial, we’ll guide you step by step to set up and configure Apache to use PHP scripts on AlmaLinux 9.
-
-
-
-
-
 ## 2. Prerequisites
 
 
@@ -84,11 +69,6 @@ Before you start, make sure you meet the following requirements:
 * **Root or sudo access** to configure Apache and PHP.
 
 * A basic understanding of how to use the Linux terminal.
-
-
-
-
-
 
 ## 3. Step 1: Installing Apache and PHP on AlmaLinux 9
 
@@ -169,11 +149,6 @@ Once PHP is installed, restart the Apache service to load the PHP module:
 ```bash
 sudo systemctl restart httpd
 ```
-
-
-
-
-
 ## 4. Step 2: Configuring Apache to Use PHP
 
 
@@ -234,9 +209,9 @@ Add the following PHP code to the file:
 
 
 ```bash
-&lt;?php
+<?php
 phpinfo();
-?&gt;
+?>
 ```
 
 
@@ -255,11 +230,6 @@ http://your-server-ip/info.php
 
 
 You should see a PHP information page showing details about your PHP installation, including loaded modules, configuration settings, and environment variables. If this page loads, it means PHP is working correctly with Apache.
-
-
-
-
-
 ## 5. Step 3: Testing PHP with Apache
 
 
@@ -281,9 +251,9 @@ Add the following PHP code:
 
 
 ```bash
-&lt;?php
+<?php
 echo "Hello, AlmaLinux! PHP is working on Apache.";
-?&gt;
+?>
 ```
 
 
@@ -298,11 +268,6 @@ http://your-server-ip/test.php
 
 
 If the PHP script works correctly, you should see the message: "Hello, AlmaLinux! PHP is working on Apache."
-
-
-
-
-
 ## 6. Step 4: Configuring PHP for Optimal Performance
 
 
@@ -388,11 +353,6 @@ Restart Apache again to apply the changes:
 ```bash
 sudo systemctl restart httpd
 ```
-
-
-
-
-
 ## 7. Step 5: Securing Your PHP Installation
 
 
@@ -449,11 +409,6 @@ Make sure the log file is only accessible by root:
 sudo touch /var/log/php_errors.log
 sudo chown root:root /var/log/php_errors.log
 sudo chmod 600 /var/log/php_errors.log```
-
-
-
-
-
 ## 8. Conclusion
 
 

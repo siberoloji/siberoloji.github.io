@@ -147,7 +147,7 @@ Example of a canonical tag:
 
 
 ```bash
-&lt;link rel="canonical" href="https://www.example.com/preferred-page/" /&gt;
+<link rel="canonical" href="https://www.example.com/preferred-page/" />
 ```
 
 
@@ -198,7 +198,7 @@ For pages that you don't want to be indexed (such as printer-friendly versions),
 
 
 ```bash
-&lt;meta name="robots" content="noindex, follow"&gt;
+<meta name="robots" content="noindex, follow">
 ```
 
 

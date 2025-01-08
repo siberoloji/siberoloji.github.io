@@ -20,11 +20,6 @@ Time synchronization is essential for maintaining the accuracy of time across mu
 
 
 This guide will walk you through the installation of **Chrony**, configuring it as an NTP server, and how to verify that time synchronization is functioning correctly on AlmaLinux 9.
-
-
-
-
-
 Table of Contents
 
 
@@ -46,11 +41,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to Time Synchronization and NTP
 
 
@@ -60,11 +50,6 @@ Table of Contents
 
 
 Traditionally, the **ntpd** daemon was used for this purpose. However, **Chrony** has emerged as a faster, more accurate, and flexible replacement, particularly in environments where systems experience periodic network outages or are connected to a network with high latency.
-
-
-
-
-
 2. Why Choose Chrony Over Other NTP Solutions?
 
 
@@ -84,11 +69,6 @@ Chrony offers several advantages over traditional NTP solutions like **ntpd**:
 
 
 Given these benefits, Chrony is a perfect fit for AlmaLinux 9, ensuring efficient and reliable time management across server fleets.
-
-
-
-
-
 3. Installing Chrony on AlmaLinux 9
 
 
@@ -147,11 +127,6 @@ sudo systemctl status chronyd
 
 
 You should see a message indicating that the Chrony service is active and running.
-
-
-
-
-
 4. Configuring Chrony as an NTP Server
 
 
@@ -210,11 +185,6 @@ After making changes to the **/etc/chrony.conf** file, restart Chrony for the ch
 ```bash
 sudo systemctl restart chronyd
 ```
-
-
-
-
-
 5. Allowing Client Systems to Sync Time with Chrony
 
 
@@ -242,11 +212,11 @@ On each client, edit the **/etc/chrony.conf** file to include your AlmaLinux 9 s
 
 
 ```bash
-server &lt;your-almalinux-server-ip&gt; iburst```
+server <your-almalinux-server-ip> iburst```
 
 
 
-Replace `&lt;your-almalinux-server-ip&gt;` with the IP address of the server you configured in Step 4.
+Replace `<your-almalinux-server-ip>` with the IP address of the server you configured in Step 4.
 
 
 #### Step 3: Start and Enable Chrony on the Client
@@ -259,11 +229,6 @@ Start the Chrony service on the client machine:
 ```bash
 sudo systemctl enable --now chronyd
 ```
-
-
-
-
-
 6. Verifying Time Synchronization
 
 
@@ -300,11 +265,6 @@ chronyc tracking```
 
 
 This command shows the current state of time synchronization, including the reference NTP server, current system time offset, and other important metrics.
-
-
-
-
-
 7. Troubleshooting Common Issues with Chrony
 
 
@@ -331,11 +291,6 @@ sudo firewall-cmd --reload
 ```bash
 journalctl -u chronyd
 ```
-
-
-
-
-
 8. Best Practices for Time Synchronization in AlmaLinux 9
 
 
@@ -348,11 +303,6 @@ To ensure reliable time synchronization, follow these best practices:
 * **Monitor Time Drift**: Use tools like **chronyc tracking** to regularly monitor time drift and ensure accurate synchronization.
 
 * **Ensure Firewall Rules**: Confirm that NTP traffic is allowed through firewalls on both server and client systems to prevent connectivity issues.
-
-
-
-
-
 
 9. Conclusion
 

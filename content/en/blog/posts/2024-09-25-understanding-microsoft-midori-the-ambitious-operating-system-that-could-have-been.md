@@ -126,9 +126,4 @@ Midori remains one of the most ambitious and intriguing projects in Microsoft’
 
 
 As we look to the future of computing, it’s clear that the challenges Midori aimed to address—such as security, scalability, and modularity—are more relevant than ever. While Midori itself may not have succeeded, the quest for a better, more secure, and more efficient operating system continues.
-
-
-
-
-
 Have you ever heard of Microsoft Midori before? What are your thoughts on the challenges of developing a new operating system in a world dominated by legacy platforms like Windows? Share your thoughts in the comments below!

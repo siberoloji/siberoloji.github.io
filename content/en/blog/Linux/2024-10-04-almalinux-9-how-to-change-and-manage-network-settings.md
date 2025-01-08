@@ -41,11 +41,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to Network Configuration in AlmaLinux 9
 
 
@@ -55,11 +50,6 @@ Configuring network settings in **AlmaLinux 9** involves managing the system's n
 
 
 AlmaLinux 9 uses **NetworkManager** as its primary tool for managing network settings. NetworkManager simplifies the task of configuring and monitoring network interfaces, allowing administrators to manage connections both through a graphical interface and via the command line.
-
-
-
-
-
 2. Understanding NetworkManager and Network Tools
 
 
@@ -79,11 +69,6 @@ AlmaLinux 9 uses **NetworkManager** as its primary tool for managing network set
 
 
 Before changing network settings, it's important to understand the current configuration, which brings us to the next step.
-
-
-
-
-
 3. Viewing Current Network Settings
 
 
@@ -147,11 +132,6 @@ cat /etc/resolv.conf```
 
 
 This file lists the nameservers your system uses to resolve domain names to IP addresses.
-
-
-
-
-
 4. Configuring Network Interfaces (Static and DHCP)
 
 
@@ -209,11 +189,6 @@ nmcli con up ens33```
 
 
 This tells NetworkManager to obtain an IP address automatically from the DHCP server.
-
-
-
-
-
 5. Configuring DNS and Hostname
 
 
@@ -255,11 +230,6 @@ Replace `new-hostname` with the desired hostname for your server. This will chan
 ```bash
 hostnamectl
 ```
-
-
-
-
-
 6. Managing Network Interfaces Using nmcli
 
 
@@ -315,11 +285,6 @@ To bring the connection back up:
 
 ```bash
 nmcli con up ens33```
-
-
-
-
-
 7. Troubleshooting Network Issues
 
 
@@ -374,11 +339,6 @@ journalctl -xe | grep NetworkManager```
 
 
 This will show detailed logs of network-related events.
-
-
-
-
-
 8. Best Practices for Network Management in AlmaLinux 9
 
 
@@ -391,11 +351,6 @@ This will show detailed logs of network-related events.
 * **Backup Configurations**: Before making any changes to your network settings, ensure you have a backup of the current configuration to revert to in case something goes wrong.
 
 * **Use NetworkManager**: Stick with **NetworkManager** as it simplifies managing complex networking setups compared to older tools like `ifconfig`.
-
-
-
-
-
 
 9. Conclusion
 

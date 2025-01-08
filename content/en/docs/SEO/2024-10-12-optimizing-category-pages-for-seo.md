@@ -82,11 +82,6 @@ Category pages are essentially landing pages that group together related product
 
 * **Canonical Tags:** Use canonical tags to indicate the preferred version of your category page if you have multiple versions (e.g., mobile and desktop).
 
-
-
-
-
-
 **Advanced Optimization Techniques:**
 
 

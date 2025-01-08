@@ -25,7 +25,7 @@ The provided C++ code demonstrates the use of `do-while` loops, a variant of loo
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -41,10 +41,10 @@ int main() {
     // This loop will execute the block at least once and then check the condition at the end.
     i = 0;
     do {
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 9
+        cout << i << endl; // Prints numbers from 0 to 9
         i++;
-    } while (i &lt; 10);
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    } while (i < 10);
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // Do-while loop with break statement
     // This loop demonstrates how to exit the loop prematurely using a break statement.
@@ -53,10 +53,10 @@ int main() {
         if (i == 5) {
             break; // Exits the loop when i equals 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 4
+        cout << i << endl; // Prints numbers from 0 to 4
         i++;
-    } while (i &lt; 10);
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    } while (i < 10);
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // Do-while loop with continue statement
     // This loop shows how to skip the rest of the loop body for the current iteration using continue.
@@ -66,10 +66,10 @@ int main() {
             i++; // Increment before continue to avoid infinite loop
             continue; // Skips printing 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 9, skipping 5
+        cout << i << endl; // Prints numbers from 0 to 9, skipping 5
         i++;
-    } while (i &lt; 10);
-    cout &lt;&lt; "Done" &lt;&lt; endl; // Indicates the end of the loop
+    } while (i < 10);
+    cout << "Done" << endl; // Indicates the end of the loop
 
     // Do-while loop with return statement
     // This loop demonstrates using return within a loop to exit the program based on a condition.
@@ -78,10 +78,10 @@ int main() {
         if (i == 5) {
             return 0; // Exits the program when i equals 5
         }
-        cout &lt;&lt; i &lt;&lt; endl; // Prints numbers from 0 to 4
+        cout << i << endl; // Prints numbers from 0 to 4
         i++;
-    } while (i &lt; 10);
-    cout &lt;&lt; "Done" &lt;&lt; endl; // This line is never reached due to the return statement
+    } while (i < 10);
+    cout << "Done" << endl; // This line is never reached due to the return statement
 
     return 0;
 }
@@ -97,14 +97,14 @@ The provided C++ code demonstrates the use of `do-while` loops, a variant of loo
 
 
 
-The first example in the code is a basic `do-while` loop that prints numbers from 0 to 9. The loop starts with `i` initialized to 0 and increments `i` in each iteration. The condition `i &lt; 10` is checked after the loop body is executed, ensuring that the loop runs at least once.
+The first example in the code is a basic `do-while` loop that prints numbers from 0 to 9. The loop starts with `i` initialized to 0 and increments `i` in each iteration. The condition `i < 10` is checked after the loop body is executed, ensuring that the loop runs at least once.
 
 
 ```cpp
 do {
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
     i++;
-} while (i &lt; 10);
+} while (i < 10);
 ```
 
 
@@ -117,9 +117,9 @@ do {
     if (i == 5) {
         break;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
     i++;
-} while (i &lt; 10);
+} while (i < 10);
 ```
 
 
@@ -133,9 +133,9 @@ do {
         i++;
         continue;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
     i++;
-} while (i &lt; 10);
+} while (i < 10);
 ```
 
 
@@ -148,9 +148,9 @@ do {
     if (i == 5) {
         return 0;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
     i++;
-} while (i &lt; 10);
+} while (i < 10);
 ```
 
 

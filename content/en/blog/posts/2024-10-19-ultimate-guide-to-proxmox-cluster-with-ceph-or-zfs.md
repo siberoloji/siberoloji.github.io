@@ -72,7 +72,7 @@ Step 1: Create the Cluster
 
 
 
-* Click on "Cluster" &gt; "Create Cluster."
+* Click on "Cluster" > "Create Cluster."
 
 * Enter a name for your cluster.
 
@@ -92,7 +92,7 @@ Step 2: Join Additional Nodes
 
 * On each additional node, access the Proxmox web interface.
 
-* Navigate to "Datacenter" &gt; "Cluster" &gt; "Join Cluster."
+* Navigate to "Datacenter" > "Cluster" > "Join Cluster."
 
 * Enter the join information provided by the first node (including IP address and join token).
 
@@ -105,7 +105,7 @@ Step 3: Verify Cluster Status
 
 
 
-After all nodes have joined successfully, verify that they are visible in the cluster overview. You should see all nodes listed under Datacenter &gt; Cluster.
+After all nodes have joined successfully, verify that they are visible in the cluster overview. You should see all nodes listed under Datacenter > Cluster.
 
 
 
@@ -146,12 +146,12 @@ On one of your nodes (preferably the one with the most resources), run
 
 
 ```bash
-`pveceph init --network &lt;your_network&gt;
+`pveceph init --network <your_network>
 ````
 
 
 
-Replace `&lt;your_network&gt;` with your actual network configuration (e.g., `10.0.0.0/24`).
+Replace `<your_network>` with your actual network configuration (e.g., `10.0.0.0/24`).
 
 
 
@@ -187,7 +187,7 @@ For each disk you want to use as an OSD:
 
 
 ```bash
-`ceph-volume lvm zap /dev/&lt;disk&gt; ceph-volume raw prepare --data /dev/&lt;disk&gt; --bluestore ceph-volume raw activate --device /dev/&lt;disk&gt;
+`ceph-volume lvm zap /dev/<disk> ceph-volume raw prepare --data /dev/<disk> --bluestore ceph-volume raw activate --device /dev/<disk>
 ````
 
 
@@ -204,7 +204,7 @@ After setting up OSDs, create pools in your Ceph cluster using:
 
 
 ```bash
-`ceph osd pool create &lt;pool_name&gt; &lt;pg_num&gt;
+`ceph osd pool create <pool_name> <pg_num>
 ````
 
 
@@ -245,7 +245,7 @@ Choose a disk or partition for your ZFS pool:
 
 
 ```bash
-`zpool create &lt;pool_name&gt; &lt;disk&gt;
+`zpool create <pool_name> <disk>
 ````
 
 
@@ -265,7 +265,7 @@ Step 11: Configure Storage in Proxmox
 
 
 
-* In the Proxmox web interface, go to Datacenter &gt; Storage &gt; Add &gt; ZFS.
+* In the Proxmox web interface, go to Datacenter > Storage > Add > ZFS.
 
 * Select your created pool from the dropdown menu.
 

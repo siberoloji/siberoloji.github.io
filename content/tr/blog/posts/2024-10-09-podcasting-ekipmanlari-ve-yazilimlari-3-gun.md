@@ -49,11 +49,6 @@ Mikrofon, herhangi bir podcaster için tartışmasız en kritik ekipman parças�
 
 * **Rode PodMic** : Çoklu hoparlör kurulumları için uygun fiyatlı ve etkili.
 
-
-
-
-
-
 **2. Kulaklıklar**
 
 
@@ -102,11 +97,6 @@ Podcast'inizi düzenlemek ve üretmek için doğru yazılımı seçmek çok öne
 * **Ücretli Yazılımlar** :* **Adobe Audition** : Profesyonel ses düzenleme için gelişmiş özellikler sunar ancak abonelik ücreti vardır.
 
 * **Hindenburg Gazeteci** : Hikaye anlatıcılığına odaklanan, özellikle podcaster'lar ve gazeteciler için tasarlanmıştır.
-
-
-
-
-
 
 **5. Pop Filtreleri ve Bom Kolları**
 

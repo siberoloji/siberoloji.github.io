@@ -21,10 +21,10 @@ We tried to explain the most simple C++ program for beginners.
 
 
 ```bash
-#include &lt;iostream&gt;
+#include <iostream>
 
 int main() {
-    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
 ```
@@ -35,7 +35,7 @@ The provided code is a simple C++ program that prints "Hello, World!" to the con
 
 
 
-The first line `#include &lt;iostream&gt;` is a preprocessor directive that includes the iostream standard library. This library allows for input/output operations. In this case, it's used to output text to the console.
+The first line `#include <iostream>` is a preprocessor directive that includes the iostream standard library. This library allows for input/output operations. In this case, it's used to output text to the console.
 
 
 
@@ -43,7 +43,7 @@ The next part is the `main` function. In C++, execution of the program begins wi
 
 
 
-Inside the `main` function, there's a statement `std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;`. Here, `std::cout` is an object of the `ostream` class from the `iostream` library. The `&lt;&lt;` operator is used to send the string "Hello, World!" to the `cout` object, which then outputs it to the console. The `std::endl` is a manipulator that inserts a newline character and flushes the output buffer.
+Inside the `main` function, there's a statement `std::cout << "Hello, World!" << std::endl;`. Here, `std::cout` is an object of the `ostream` class from the `iostream` library. The `<<` operator is used to send the string "Hello, World!" to the `cout` object, which then outputs it to the console. The `std::endl` is a manipulator that inserts a newline character and flushes the output buffer.
 
 
 

@@ -68,7 +68,7 @@ To activate Siri, simply say "Hey Siri" or press and hold the side button. Once 
 
 * **Siri Suggestions:*** Siri can suggest relevant actions based on your context and history. For instance, if you're in your car and it's about to rain, Siri might suggest turning on your windshield wipers.
 
-* To enable Siri Suggestions, go to Settings &gt; Siri &amp; Search and toggle on "Siri Suggestions."
+* To enable Siri Suggestions, go to Settings > Siri &amp; Search and toggle on "Siri Suggestions."
 
 
 
@@ -83,11 +83,6 @@ To activate Siri, simply say "Hey Siri" or press and hold the side button. Once 
 
 
 * **Siri and HomeKit:*** Siri can control your HomeKit-compatible devices, allowing you to automate your home. For example, you can say "Hey Siri, turn off the living room lights."
-
-
-
-
-
 
 **Real-World Examples of Siri's Advanced AI Capabilities**
 

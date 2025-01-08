@@ -156,7 +156,7 @@ Browser caching allows browsers to store certain elements of your website locall
 
 
 ```bash
-  &lt;IfModule mod_expires.c&gt;
+  <IfModule mod_expires.c>
       ExpiresActive On
       ExpiresDefault "access plus 1 month"
       ExpiresByType image/jpg "access plus 1 month"
@@ -165,7 +165,7 @@ Browser caching allows browsers to store certain elements of your website locall
       ExpiresByType image/png "access plus 1 month"
       ExpiresByType text/css "access plus 1 month"
       ExpiresByType application/javascript "access plus 1 month"
-  &lt;/IfModule&gt;
+  </IfModule>
 ```
 
 
@@ -208,9 +208,9 @@ Gzip compression reduces the size of files sent from your server to the user’s
 
 
 ```bash
-  &lt;IfModule mod_deflate.c&gt;
+  <IfModule mod_deflate.c>
       AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
-  &lt;/IfModule&gt;
+  </IfModule>
 ```
 
 

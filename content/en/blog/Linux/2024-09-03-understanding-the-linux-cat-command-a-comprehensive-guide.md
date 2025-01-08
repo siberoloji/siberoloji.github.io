@@ -89,7 +89,7 @@ The true power of the `cat` command comes into play when you want to concatenate
 
 
 ```bash
-cat file1.txt file2.txt &gt; combined.txt```
+cat file1.txt file2.txt > combined.txt```
 
 
 
@@ -104,7 +104,7 @@ In addition to creating new files, you can also append content to an existing fi
 
 
 ```bash
-cat file3.txt &gt;&gt; combined.txt```
+cat file3.txt >> combined.txt```
 
 
 
@@ -164,7 +164,7 @@ Interestingly, you can also use `cat` to create small text files directly from t
 
 
 ```bash
-cat &gt; newfile.txt```
+cat > newfile.txt```
 
 
 

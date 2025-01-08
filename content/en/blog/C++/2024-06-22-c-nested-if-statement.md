@@ -22,26 +22,26 @@ In this article, we share an example showing C++ nested if statement.
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 using namespace std;
 
 int main() {
 /* nested if else statement */
     int a;
-    cout &lt;&lt; "Enter a positive integer number: ";
-    cin &gt;&gt; a;
-    if (a &lt; 20) {
-        cout &lt;&lt; "a is less than 20 ";
-        if (a &lt; 10)
-            cout &lt;&lt; "a is less than 10 ";
+    cout << "Enter a positive integer number: ";
+    cin >> a;
+    if (a < 20) {
+        cout << "a is less than 20 ";
+        if (a < 10)
+            cout << "a is less than 10 ";
         else
-            cout &lt;&lt; "a is not less than 10 ";
+            cout << "a is not less than 10 ";
     } else {
         if (a == 20) {
-            cout &lt;&lt; "a is equal to 20 ";
+            cout << "a is equal to 20 ";
         } else
-            cout &lt;&lt; "a is greater than 20 ";
+            cout << "a is greater than 20 ";
     }
     return 0;
 }

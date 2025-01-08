@@ -30,13 +30,13 @@ WMAP, kullanıcılara geniş imkanlar sağlayan bir web uygulama zafiyet tarama 
 
 
 ```bash
-msf **&gt;** workspace -a wmap
+msf **>** workspace -a wmap
 **[*********]** Added workspace: wmap
-msf **&gt;** workspace 
+msf **>** workspace 
   default
   metas3
 ***** wmap
-msf **&gt;** load wmap
+msf **>** load wmap
 
 .-.-.-..-.-.-..---..---.
 | | | **||** | | **||** | **||** |-'
@@ -51,7 +51,7 @@ msf **&gt;** load wmap
 
 
 ```bash
-msf **&gt;**  help
+msf **>**  help
 
 wmap Commands
 **=============**
@@ -78,7 +78,7 @@ Web uygulama taramasına başlamadan önce, hedef URL adresini `-a` parametresiy
 
 
 ```bash
-msf **&gt;** wmap_sites -h
+msf **>** wmap_sites -h
 **[*********]**  Usage: wmap_targets **[**options]
 	-h        Display this help text
 	-a **[**url]  Add site **(**vhost,url**)**
@@ -86,9 +86,9 @@ msf **&gt;** wmap_sites -h
 	-s **[**id**]**   Display site structure **(**vhost,url|ids**)** **(**level**)**
 
 	
-msf **&gt;** wmap_sites -a <a href="http://172.16.194.172/">http://172.16.194.172</a>
+msf **>** wmap_sites -a <a href="http://172.16.194.172/">http://172.16.194.172</a>
 **[*********]** Site created.
-msf **&gt;** wmap_sites -l
+msf **>** wmap_sites -l
 **[*********]** Available sites
 **===============**
 
@@ -107,7 +107,7 @@ msf **&gt;** wmap_sites -l
 
 
 ```bash
-msf **&gt;** wmap_targets -h
+msf **>** wmap_targets -h
 **[*********]** Usage: wmap_targets **[**options]
 	-h 		Display this help text
 	-t **[**urls]	Define target sites **(**vhost1,url[space]vhost2,url**)** 
@@ -116,7 +116,7 @@ msf **&gt;** wmap_targets -h
 	-l  		List all target sites
 
 
-msf **&gt;** wmap_targets -t <a href="http://172.16.194.172/mutillidae/index.php">http://172.16.194.172/mutillidae/index.php</a>
+msf **>** wmap_targets -t <a href="http://172.16.194.172/mutillidae/index.php">http://172.16.194.172/mutillidae/index.php</a>
 ```
 
 
@@ -125,7 +125,7 @@ Modüllerde, yaptığımız değişken ayarlarını nasıl `show options` ile ko
 
 
 ```bash
-msf **&gt;** wmap_targets -l
+msf **>** wmap_targets -l
 **[*********]** Defined targets
 **===============**
 
@@ -144,7 +144,7 @@ msf **&gt;** wmap_targets -l
 
 
 ```bash
-msf **&gt;** wmap_run -h
+msf **>** wmap_run -h
 **[*********]** Usage: wmap_run **[**options]
 	-h                        Display this help text
 	-t                        Show all enabled modules
@@ -153,7 +153,7 @@ msf **&gt;** wmap_run -h
 	-e **[**/path/to/profile]     Launch profile modules against all matched targets.
 	                          **(**No profile file runs all enabled modules.**)**
 
-msf **&gt;** wmap_run -t
+msf **>** wmap_run -t
 
 **[*********]** Testing target:
 **[*********]** 	Site: 192.168.1.100 **(**192.168.1.100**)**
@@ -173,7 +173,7 @@ msf **&gt;** wmap_run -t
 **[*********]** Loaded auxiliary/admin/http/trendmicro_dlp_traversal ...
 ..snip...
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -182,7 +182,7 @@ Taramayı başlatmak için `wmap_run -e` komutunu kullandığınızda tarama ba�
 
 
 ```bash
-msf **&gt;** wmap_run -e
+msf **>** wmap_run -e
 **[*********]** Using ALL wmap enabled modules.
 **[**-] NO WMAP NODES DEFINED. Executing local modules
 **[*********]** Testing target:
@@ -245,7 +245,7 @@ Tarama tamamlandığında, bulunan zafiyetleri görmek için `wmap_vulns -l` kom
 
 
 ```bash
-msf **&gt;** wmap_vulns -l
+msf **>** wmap_vulns -l
 **[*********]** + **[**172.16.194.172] **(**172.16.194.172**)**: scraper /
 **[*********]** 	scraper Scraper
 **[*********]** 	GET Metasploitable2 - Linux
@@ -258,7 +258,7 @@ msf **&gt;** wmap_vulns -l
 
 ...snip...
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -267,10 +267,10 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** vulns
+msf **>** vulns
 **[*********]** Time: 2012-01-16 20:58:49 UTC Vuln: host**=**172.16.2.207 port**=**80 proto**=**tcp name**=**auxiliary/scanner/http/options refs**=**CVE-2005-3398,CVE-2005-3498,OSVDB-877,BID-11604,BID-9506,BID-9561
 
-msf **&gt;**
+msf **>**
 ```
 
 

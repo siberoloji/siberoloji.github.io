@@ -163,7 +163,7 @@ HTTP/2 typically requires SSL/TLS in modern browsers. Here’s how to configure 
 <ol start="2">
 * Create or modify your SSL virtual host configuration:
 
-<pre><code class="language-apache">&lt;VirtualHost *:443&gt;
+<pre><code class="language-apache"><VirtualHost *:443>
     ServerName example.com
     DocumentRoot /var/www/html
     
@@ -178,7 +178,7 @@ HTTP/2 typically requires SSL/TLS in modern browsers. Here’s how to configure 
     H2ModernTLSOnly off
     H2MaxSessionStreams 100
     H2MaxHeaderListSize 65536
-&lt;/VirtualHost&gt;
+</VirtualHost>
 `</pre>
 ## Advanced Configuration Options
 Fine-tuning Performance
@@ -197,11 +197,11 @@ H2MaxHeaderListSize 65536
 `</pre>
 Server Push Configuration
 Configure server push for specific resources:
-<pre><code class="language-apache">&lt;Location /index.html&gt;
+<pre><code class="language-apache"><Location /index.html>
     H2PushResource /css/style.css
     H2PushResource /js/script.js
     H2PushResource /images/logo.png
-&lt;/Location&gt;
+</Location>
 `</pre>
 ## Troubleshooting Common Issues
 1. Connection Problems
@@ -232,7 +232,7 @@ Verify your HTTP/2 setup using these methods:
 Browser Developer Tools:
 
 * Open Chrome DevTools (F12)
-* Network tab &gt; Protocol column
+* Network tab > Protocol column
 
 
 * 

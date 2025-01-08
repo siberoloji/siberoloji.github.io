@@ -30,7 +30,7 @@ Aşağıdaki örnekte, önceden bir tarama yaptığımız ve iki farklı IP adre
 
 
 ```bash
-msf **&gt;** services -p 22 -c name,port,proto
+msf **>** services -p 22 -c name,port,proto
 
 Services
 **========**
@@ -47,12 +47,12 @@ host            name  port  proto
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/ssh/ssh_version
+msf **>** use auxiliary/scanner/ssh/ssh_version
 
-msf  auxiliary**(**ssh_version**)** **&gt;** set RHOSTS 172.16.194.163 172.16.194.172
-RHOSTS **=&gt;** 172.16.194.163 172.16.194.172
+msf  auxiliary**(**ssh_version**)** **>** set RHOSTS 172.16.194.163 172.16.194.172
+RHOSTS **=>** 172.16.194.163 172.16.194.172
 
-msf  auxiliary**(**ssh_version**)** **&gt;** show options
+msf  auxiliary**(**ssh_version**)** **>** show options
 
 Module options **(**auxiliary/scanner/ssh/ssh_version**)**:
 
@@ -64,7 +64,7 @@ Module options **(**auxiliary/scanner/ssh/ssh_version**)**:
    TIMEOUT  30                             yes       Timeout **for **the SSH probe
 
 
-msf  auxiliary**(**ssh_version**)** **&gt;** run
+msf  auxiliary**(**ssh_version**)** **>** run
 
 **[*********]** 172.16.194.163:22, SSH server version: SSH-2.0-OpenSSH_5.3p1 Debian-3ubuntu7
 **[*********]** Scanned 1 of 2 hosts **(**050% complete**)**
@@ -91,7 +91,7 @@ Yanlış yapılandırılmış FTP servislerinin zayıf yanları kullanılarak si
 
 
 ```bash
-msf **&gt;** services -p 21 -c name,proto
+msf **>** services -p 21 -c name,proto
 
 Services
 **========**
@@ -107,12 +107,12 @@ Ardından, `auxiliary/scanner/ftp/ftp_version` modülünü kullanalım.
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/ftp/ftp_version 
+msf **>** use auxiliary/scanner/ftp/ftp_version 
 
-msf  auxiliary**(**ftp_version**)** **&gt;** set RHOSTS 172.16.194.172
-RHOSTS **=&gt;** 172.16.194.172
+msf  auxiliary**(**ftp_version**)** **>** set RHOSTS 172.16.194.172
+RHOSTS **=>** 172.16.194.172
 
-msf  auxiliary**(**anonymous**)** **&gt;** show options
+msf  auxiliary**(**anonymous**)** **>** show options
 Module options **(**auxiliary/scanner/ftp/anonymous**)**:
 
    Name     Current Setting      Required  Description
@@ -123,7 +123,7 @@ Module options **(**auxiliary/scanner/ftp/anonymous**)**:
    RPORT    21                   yes       The target port
    THREADS  1                    yes       The number of concurrent threads
 
-msf  auxiliary**(**anonymous**)** **&gt;** run
+msf  auxiliary**(**anonymous**)** **>** run
 
 **[*********]** 172.16.194.172:21 Anonymous READ **(**220 **(**vsFTPd 2.3.4**))**
 **[*********]** Scanned 1 of 1 hosts **(**100% complete**)**
@@ -136,5 +136,5 @@ Görüldüğü gibi, çok kısa zamanda SSH ve FTP servisleri hakkında bilgiler
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/
+msf **>** use auxiliary/scanner/
 Display all 485 possibilities? **(**y or n**)**```

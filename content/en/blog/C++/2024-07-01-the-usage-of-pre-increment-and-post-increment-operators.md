@@ -33,7 +33,7 @@ This code snippet demonstrates the usage of pre-increment and post-increment ope
  * @throws None
  */
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -44,26 +44,26 @@ int main() {
 
     // numberOne current value is 1
     int result = numberOne++; // Assignment and increment after the operation
-    cout &lt;&lt; "Number One: " &lt;&lt; numberOne &lt;&lt; endl;
-    cout &lt;&lt; "Result: " &lt;&lt; result &lt;&lt; endl;
-    cout &lt;&lt; "----" &lt;&lt; endl;
+    cout << "Number One: " << numberOne << endl;
+    cout << "Result: " << result << endl;
+    cout << "----" << endl;
 
     //numberTwo current value is 2
     result = ++numberTwo; // Increment and assignment before the operation
-    cout &lt;&lt; "Number Two: " &lt;&lt; numberTwo &lt;&lt; endl;
-    cout &lt;&lt; "Result: " &lt;&lt; result &lt;&lt; endl;
-    cout &lt;&lt; "----" &lt;&lt; endl;
+    cout << "Number Two: " << numberTwo << endl;
+    cout << "Result: " << result << endl;
+    cout << "----" << endl;
 
     //numberThree current value is 3
     result = numberThree--; // Assignment and decrement after the operation
-    cout &lt;&lt; "Number Three: " &lt;&lt; numberThree &lt;&lt; endl;
-    cout &lt;&lt; "Result: " &lt;&lt; result &lt;&lt; endl;
-    cout &lt;&lt; "----" &lt;&lt; endl;
+    cout << "Number Three: " << numberThree << endl;
+    cout << "Result: " << result << endl;
+    cout << "----" << endl;
 
     //numberFour current value is 4
     result = --numberFour; // Decrement and assignment before the operation
-    cout &lt;&lt; "Number Four: " &lt;&lt; numberFour &lt;&lt; endl;
-    cout &lt;&lt; "Result: " &lt;&lt; result &lt;&lt; endl;
+    cout << "Number Four: " << numberFour << endl;
+    cout << "Result: " << result << endl;
 
     return 0;
 }

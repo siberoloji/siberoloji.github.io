@@ -20,10 +20,10 @@ Başlangıç ​​seviyesindekiler için en basit C++ programını anlatmaya ç
 
 
 ```bash
-#include &lt;iostream&gt;
+#include <iostream>
 
 int main() {
-    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
 ```
@@ -34,7 +34,7 @@ Verilen kod konsola “Hello World!” yazdıran basit bir C++ programıdır.
 
 
 
-İlk satır, `#include &lt;iostream&gt;` iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir.
+İlk satır, `#include <iostream>` iostream standart kütüphanesini içeren bir önişlemci yönergesidir. Bu kütüphane giriş/çıkış işlemlerine izin verir.
 
 
 
@@ -42,7 +42,7 @@ Bir sonraki kısım `main` fonksiyond`ur`. C++'da programın yürütülmesi `mai
 
 
 
-Fonksiyonun içinde bulunan `std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;` ifadesi  “Hello World!” dizesini ekrana yazdırmak için kullanılır. 
+Fonksiyonun içinde bulunan `std::cout << "Hello, World!" << std::endl;` ifadesi  “Hello World!” dizesini ekrana yazdırmak için kullanılır. 
 
 
 

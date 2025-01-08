@@ -100,7 +100,7 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 
 
 ```bash
-  SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) &gt; 1;
+  SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) > 1;
 ```
 
 
@@ -283,10 +283,5 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 * **DATE**: Date in 'YYYY-MM-DD' format.
 
 * **DECIMAL(size, d)**: Decimal numbers, specifying precision.
-
-
-
-
-
 
 This cheat sheet covers essential SQL commands and functions for working with databases. Whether you're querying data, joining tables, or managing databases, these commands will help streamline your tasks!

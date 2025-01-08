@@ -25,7 +25,7 @@ The provided C++ code demonstrates various uses of the `for` loop, incorporating
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -39,83 +39,83 @@ int main() {
     int i = 0;
 
     // Basic for loop example: prints numbers from 0 to 9
-    for (i = 0; i &lt; 10; i++) {
-        cout &lt;&lt; i &lt;&lt; endl;
+    for (i = 0; i < 10; i++) {
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with break: exits the loop when i equals 5
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             break;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with continue: skips the current iteration when i equals 5
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             continue;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with return: exits the function when i equals 5
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             return 0;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with break and return:
     // demonstrates that break has no effect when followed by return
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             break;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with continue and return:
     // demonstrates that continue has no effect when followed by return
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             continue;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with break and continue:
     // breaks the loop when i equals 5, continue is never reached
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             break;
         }
         if (i == 7) {
             continue;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     // For loop with break, continue, and return:
     // demonstrates control flow with break, continue is never reached
-    for (i = 0; i &lt; 10; i++) {
+    for (i = 0; i < 10; i++) {
         if (i == 5) {
             break;
         }
         if (i == 7) {
             continue;
         }
-        cout &lt;&lt; i &lt;&lt; endl;
+        cout << i << endl;
     }
-    cout &lt;&lt; "Done" &lt;&lt; endl;
+    cout << "Done" << endl;
 
     return 0;
 }
@@ -135,8 +135,8 @@ Initially, a basic `for` loop is shown, which iterates from 0 to 9, printing eac
 
 
 ```cpp
-for (i = 0; i &lt; 10; i++) {
-    cout &lt;&lt; i &lt;&lt; endl;
+for (i = 0; i < 10; i++) {
+    cout << i << endl;
 }
 ```
 
@@ -146,11 +146,11 @@ Following this, the code explores using a `break` statement within a `for` loop.
 
 
 ```cpp
-for (i = 0; i &lt; 10; i++) {
+for (i = 0; i < 10; i++) {
     if (i == 5) {
         break;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
 }
 ```
 
@@ -160,11 +160,11 @@ Next, a `for` loop with a `continue` statement is introduced. This loop skips th
 
 
 ```cpp
-for (i = 0; i &lt; 10; i++) {
+for (i = 0; i < 10; i++) {
     if (i == 5) {
         continue;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
 }
 ```
 
@@ -174,11 +174,11 @@ Additionally, the code includes a `for` loop that uses a `return` statement to e
 
 
 ```cpp
-for (i = 0; i &lt; 10; i++) {
+for (i = 0; i < 10; i++) {
     if (i == 5) {
         return 0;
     }
-    cout &lt;&lt; i &lt;&lt; endl;
+    cout << i << endl;
 }
 ```
 

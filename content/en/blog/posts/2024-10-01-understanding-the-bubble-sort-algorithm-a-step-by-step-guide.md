@@ -68,13 +68,13 @@ Let’s go through the Bubble Sort process with an example. Consider the followi
 First Pass:
 
 
-* Compare the first two elements (5 and 3). Since 5 &gt; 3, we swap them: [ [3, 5, 8, 4, 2] ]
+* Compare the first two elements (5 and 3). Since 5 > 3, we swap them: [ [3, 5, 8, 4, 2] ]
 
-* Compare the next two elements (5 and 8). No swap is needed because 5 &lt; 8. [ [3, 5, 8, 4, 2] ]
+* Compare the next two elements (5 and 8). No swap is needed because 5 < 8. [ [3, 5, 8, 4, 2] ]
 
-* Compare the next two elements (8 and 4). Since 8 &gt; 4, we swap them: [ [3, 5, 4, 8, 2] ]
+* Compare the next two elements (8 and 4). Since 8 > 4, we swap them: [ [3, 5, 4, 8, 2] ]
 
-* Compare the last two elements (8 and 2). Since 8 &gt; 2, we swap them: [ [3, 5, 4, 2, 8] ]
+* Compare the last two elements (8 and 2). Since 8 > 2, we swap them: [ [3, 5, 4, 2, 8] ]
 
 
 
@@ -86,11 +86,11 @@ At the end of the first pass, the largest element (8) has "bubbled" to its corre
 Second Pass:
 
 
-* Compare the first two elements (3 and 5). No swap is needed because 3 &lt; 5. [ [3, 5, 4, 2, 8] ]
+* Compare the first two elements (3 and 5). No swap is needed because 3 < 5. [ [3, 5, 4, 2, 8] ]
 
-* Compare the next two elements (5 and 4). Since 5 &gt; 4, we swap them: [ [3, 4, 5, 2, 8] ]
+* Compare the next two elements (5 and 4). Since 5 > 4, we swap them: [ [3, 4, 5, 2, 8] ]
 
-* Compare the next two elements (5 and 2). Since 5 &gt; 2, we swap them: [ [3, 4, 2, 5, 8] ]
+* Compare the next two elements (5 and 2). Since 5 > 2, we swap them: [ [3, 4, 2, 5, 8] ]
 
 
 
@@ -102,9 +102,9 @@ At the end of the second pass, the second-largest element (5) has moved to its c
 Third Pass:
 
 
-* Compare the first two elements (3 and 4). No swap is needed because 3 &lt; 4. [ [3, 4, 2, 5, 8] ]
+* Compare the first two elements (3 and 4). No swap is needed because 3 < 4. [ [3, 4, 2, 5, 8] ]
 
-* Compare the next two elements (4 and 2). Since 4 &gt; 2, we swap them: [ [3, 2, 4, 5, 8] ]
+* Compare the next two elements (4 and 2). Since 4 > 2, we swap them: [ [3, 2, 4, 5, 8] ]
 
 
 
@@ -116,7 +116,7 @@ At the end of the third pass, the third-largest element (4) is in its correct po
 Fourth Pass:
 
 
-* Compare the first two elements (3 and 2). Since 3 &gt; 2, we swap them: [ [2, 3, 4, 5, 8] ]
+* Compare the first two elements (3 and 2). Since 3 > 2, we swap them: [ [2, 3, 4, 5, 8] ]
 
 
 
@@ -136,7 +136,7 @@ Here’s the pseudocode for Bubble Sort to give a clearer idea of the algorithm:
 BubbleSort(arr[], n)
     for i = 0 to n-1 do
         for j = 0 to n-i-2 do
-            if arr[j] &gt; arr[j+1] then
+            if arr[j] > arr[j+1] then
                 Swap arr[j] and arr[j+1]```
 
 
@@ -189,7 +189,7 @@ OptimizedBubbleSort(arr[], n)
     for i = 0 to n-1 do
         swapped = false
         for j = 0 to n-i-2 do
-            if arr[j] &gt; arr[j+1] then
+            if arr[j] > arr[j+1] then
                 Swap arr[j] and arr[j+1]
                 swapped = true
         if swapped == false

@@ -40,11 +40,6 @@ Key Features of Hemingway Editor
 * **Purple**: Highlights adverbs.
 
 * **Blue**: Identifies complex phrases.
-
-
-
-
-
 * **Readability Score**:
 
 

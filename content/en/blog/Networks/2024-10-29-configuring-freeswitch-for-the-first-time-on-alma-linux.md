@@ -37,11 +37,6 @@ To follow along with this guide, you should have:
 
 * **Basic understanding of SIP and VoIP concepts** for effective configuration.
 
-
-
-
-
-
 Step 1: Directory Structure and Configuration Files Overview
 
 
@@ -59,11 +54,6 @@ FreeSWITCH’s configurations are stored in the `/usr/local/freeswitch/conf` dir
 
 
 Familiarizing yourself with these directories will make configuration easier and more organized.
-
-
-
-
-
 Step 2: Setting Global Variables
 
 
@@ -85,9 +75,9 @@ The `vars.xml` file in `/usr/local/freeswitch/conf` is the primary configuration
 
 
 
-* **Domain Name**: Set this to the server’s IP or domain name for identification purposes. `xml &lt;X-PRE-PROCESS cmd="set" data="domain_name=your.domain.com"/&gt;`
+* **Domain Name**: Set this to the server’s IP or domain name for identification purposes. `xml <X-PRE-PROCESS cmd="set" data="domain_name=your.domain.com"/>`
 
-* **SIP Ports**: You can specify custom SIP ports if desired: `xml &lt;X-PRE-PROCESS cmd="set" data="external_sip_port=5060"/&gt; &lt;X-PRE-PROCESS cmd="set" data="internal_sip_port=5061"/&gt;`
+* **SIP Ports**: You can specify custom SIP ports if desired: `xml <X-PRE-PROCESS cmd="set" data="external_sip_port=5060"/> <X-PRE-PROCESS cmd="set" data="internal_sip_port=5061"/>`
 
 
 
@@ -98,11 +88,6 @@ After making these changes, save the file and restart FreeSWITCH to apply them:
 ```bash
 sudo systemctl restart freeswitch
 ```
-
-
-
-
-
 Step 3: Configuring SIP Profiles
 
 
@@ -123,7 +108,7 @@ FreeSWITCH organizes SIP configurations in “profiles” to separate internal a
 ````
 
 
-* Set the bind address to the local IP, or leave it as `0.0.0.0` to allow connections on any network interface: `xml &lt;param name="sip-ip" value="0.0.0.0"/&gt;`
+* Set the bind address to the local IP, or leave it as `0.0.0.0` to allow connections on any network interface: `xml <param name="sip-ip" value="0.0.0.0"/>`
 
 
 
@@ -140,17 +125,12 @@ FreeSWITCH organizes SIP configurations in “profiles” to separate internal a
 ````
 
 
-* Update the external IP and port values if needed: `xml &lt;param name="sip-ip" value="public.ip.address"/&gt; &lt;param name="rtp-ip" value="public.ip.address"/&gt;`
+* Update the external IP and port values if needed: `xml <param name="sip-ip" value="public.ip.address"/> <param name="rtp-ip" value="public.ip.address"/>`
 
 
 
 
 Save and close each file, then restart FreeSWITCH to enable these settings.
-
-
-
-
-
 Step 4: Setting Up Dialplans
 
 
@@ -173,7 +153,7 @@ Dialplans control how calls are routed and handled within FreeSWITCH. The defaul
 ````
 
 
-* Add custom extensions, routing rules, and call-handling logic as needed: `xml &lt;extension name="example_extension"&gt; &lt;condition field="destination_number" expression="^1001$"&gt; &lt;action application="answer"/&gt; &lt;action application="playback" data="ivr/ivr-welcome_to_freeswitch.wav"/&gt; &lt;action application="hangup"/&gt; &lt;/condition&gt; &lt;/extension&gt;`
+* Add custom extensions, routing rules, and call-handling logic as needed: `xml <extension name="example_extension"> <condition field="destination_number" expression="^1001$"> <action application="answer"/> <action application="playback" data="ivr/ivr-welcome_to_freeswitch.wav"/> <action application="hangup"/> </condition> </extension>`
 
 
 
@@ -183,11 +163,6 @@ Dialplans control how calls are routed and handled within FreeSWITCH. The defaul
 
 ```bash
    fs_cli -x "reloadxml"```
-
-
-
-
-
 Step 5: Codec Configuration
 
 
@@ -199,7 +174,7 @@ Codec selection impacts call quality and bandwidth. FreeSWITCH supports a range 
 
 
 
-* Edit `internal.xml` and `external.xml` profiles to set preferred codecs: `xml &lt;param name="codec-prefs" value="OPUS,PCMU,PCMA"/&gt;`
+* Edit `internal.xml` and `external.xml` profiles to set preferred codecs: `xml <param name="codec-prefs" value="OPUS,PCMU,PCMA"/>`
 
 
 
@@ -212,11 +187,6 @@ Codec selection impacts call quality and bandwidth. FreeSWITCH supports a range 
 ```bash
    sofia status profile internal
 ```
-
-
-
-
-
 Step 6: Configuring NAT Settings
 
 
@@ -229,9 +199,9 @@ Network Address Translation (NAT) can cause connectivity issues, especially in e
 
 
 ```bash
-   &lt;param name="ext-sip-ip" value="external.ip.address"/&gt;
-   &lt;param name="ext-rtp-ip" value="external.ip.address"/&gt;
-   &lt;param name="rtp-timeout-sec" value="300"/&gt;
+   <param name="ext-sip-ip" value="external.ip.address"/>
+   <param name="ext-rtp-ip" value="external.ip.address"/>
+   <param name="rtp-timeout-sec" value="300"/>
 ```
 
 
@@ -241,14 +211,9 @@ Network Address Translation (NAT) can cause connectivity issues, especially in e
 
 
 ```bash
-   &lt;X-PRE-PROCESS cmd="set" data="external_rtp_ip=your.external.ip"/&gt;
-   &lt;X-PRE-PROCESS cmd="set" data="external_sip_ip=your.external.ip"/&gt;
+   <X-PRE-PROCESS cmd="set" data="external_rtp_ip=your.external.ip"/>
+   <X-PRE-PROCESS cmd="set" data="external_sip_ip=your.external.ip"/>
 ```
-
-
-
-
-
 Step 7: Implementing Security Measures
 
 
@@ -263,8 +228,8 @@ FreeSWITCH is highly customizable for security, and securing SIP and RTP traffic
 
 
 ```bash
-   &lt;param name="auth-calls" value="true"/&gt;
-   &lt;param name="apply-inbound-acl" value="trusted"/&gt;
+   <param name="auth-calls" value="true"/>
+   <param name="apply-inbound-acl" value="trusted"/>
 ```
 
 
@@ -274,8 +239,8 @@ FreeSWITCH is highly customizable for security, and securing SIP and RTP traffic
 
 
 ```bash
-   &lt;param name="tls" value="true"/&gt;
-   &lt;param name="tls-bind-params" value="transport=tls"/&gt;
+   <param name="tls" value="true"/>
+   <param name="tls-bind-params" value="transport=tls"/>
 ```
 
 
@@ -305,11 +270,6 @@ With configurations complete, test the setup to ensure everything works as expec
 
 ```bash
    tail -f /usr/local/freeswitch/log/freeswitch.log```
-
-
-
-
-
 Step 9: Automating Startup and Shutdown
 
 
@@ -338,11 +298,6 @@ Conclusion
 
 
 Setting up and configuring FreeSWITCH on Alma Linux offers a comprehensive telephony platform suitable for a range of VoIP and unified communication needs. By following these initial configuration steps, including setting up SIP profiles, dialing plans, codecs, and security options, you’ll be able to make the most of FreeSWITCH’s powerful capabilities. This guide provides a foundation for configuring FreeSWITCH to ensure efficient and secure communication across your network.
-
-
-
-
-
 **FAQs**
 
 
@@ -359,7 +314,7 @@ Setting up and configuring FreeSWITCH on Alma Linux offers a comprehensive telep
 
 
 
-**4. How do I troubleshoot SIP connectivity issues?** Use the `sofia status` and `sofia status profile &lt;profile_name&gt;` commands in `fs
+**4. How do I troubleshoot SIP connectivity issues?** Use the `sofia status` and `sofia status profile <profile_name>` commands in `fs
 
 
 

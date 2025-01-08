@@ -3,7 +3,7 @@ draft: false
 
 title:  'The Evolution of HTML: From HTML 1.0 to 5.0'
 date: '2024-10-26T13:37:22+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  "From simple beginnings to today’s highly interactive websites, HTML has evolved remarkably over the decades. But how did it start? " 
  
 url:  /the-evolution-of-html-from-html-1-0-to-5-0/
@@ -114,7 +114,7 @@ HTML5 introduced significant advancements, such as:
 
 * **Enhanced form controls** and **new input types**, making forms more versatile and user-friendly.
 
-* **New semantic elements** (e.g., `&lt;header&gt;`, `&lt;footer&gt;`, `&lt;article&gt;`, `&lt;section&gt;`) that improve readability and SEO.
+* **New semantic elements** (e.g., `<header>`, `<footer>`, `<article>`, `<section>`) that improve readability and SEO.
 
 * **Local storage and session storage**, allowing data to be stored on the client side without cookies.
 

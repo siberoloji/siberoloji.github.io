@@ -149,7 +149,7 @@ Poorly implemented animations can cause layout shifts, especially if they affect
 
 
 ```bash
-&lt;img src="image.jpg" width="800" height="600" alt="Description"&gt;
+<img src="image.jpg" width="800" height="600" alt="Description">
 ```
 
 
@@ -277,9 +277,9 @@ Use transform instead of properties that trigger layout changes.
 
 
 ```bash
-&lt;div class="placeholder"&gt;
-    &lt;div class="animated-background"&gt;&lt;/div&gt;
-&lt;/div&gt;
+<div class="placeholder">
+    <div class="animated-background"></div>
+</div>
 ```
 
 

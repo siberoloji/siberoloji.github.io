@@ -65,13 +65,13 @@ Bubble Sort sürecini bir örnekle inceleyelim. Aşağıdaki sıralanmamış diz
 İlk Geçiş:
 
 
-* İlk iki öğeyi (5 ve 3) karşılaştırın. 5 &gt; 3 olduğundan, bunları değiştiriyoruz: [ [3, 5, 8, 4, 2] ]
+* İlk iki öğeyi (5 ve 3) karşılaştırın. 5 > 3 olduğundan, bunları değiştiriyoruz: [ [3, 5, 8, 4, 2] ]
 
-* Sonraki iki öğeyi (5 ve 8) karşılaştırın. 5 &lt; 8 olduğundan takas gerekmez. [ [3, 5, 8, 4, 2] ]
+* Sonraki iki öğeyi (5 ve 8) karşılaştırın. 5 < 8 olduğundan takas gerekmez. [ [3, 5, 8, 4, 2] ]
 
-* Sonraki iki öğeyi (8 ve 4) karşılaştırın. 8 &gt; 4 olduğundan, bunları değiştiriyoruz: [ [3, 5, 4, 8, 2] ]
+* Sonraki iki öğeyi (8 ve 4) karşılaştırın. 8 > 4 olduğundan, bunları değiştiriyoruz: [ [3, 5, 4, 8, 2] ]
 
-* Son iki öğeyi (8 ve 2) karşılaştırın. 8 &gt; 2 olduğundan, bunları değiştiriyoruz: [ [3, 5, 4, 2, 8] ]
+* Son iki öğeyi (8 ve 2) karşılaştırın. 8 > 2 olduğundan, bunları değiştiriyoruz: [ [3, 5, 4, 2, 8] ]
 
 
 
@@ -83,11 +83,11 @@ Bubble Sort sürecini bir örnekle inceleyelim. Aşağıdaki sıralanmamış diz
 İkinci Geçiş:
 
 
-* İlk iki öğeyi (3 ve 5) karşılaştırın. 3 &lt; 5 olduğundan takas gerekmez. [ [3, 5, 4, 2, 8] ]
+* İlk iki öğeyi (3 ve 5) karşılaştırın. 3 < 5 olduğundan takas gerekmez. [ [3, 5, 4, 2, 8] ]
 
-* Sonraki iki öğeyi (5 ve 4) karşılaştırın. 5 &gt; 4 olduğundan, bunları değiştiriyoruz: [ [3, 4, 5, 2, 8] ]
+* Sonraki iki öğeyi (5 ve 4) karşılaştırın. 5 > 4 olduğundan, bunları değiştiriyoruz: [ [3, 4, 5, 2, 8] ]
 
-* Sonraki iki öğeyi (5 ve 2) karşılaştırın. 5 &gt; 2 olduğundan, bunları değiştiriyoruz: [ [3, 4, 2, 5, 8] ]
+* Sonraki iki öğeyi (5 ve 2) karşılaştırın. 5 > 2 olduğundan, bunları değiştiriyoruz: [ [3, 4, 2, 5, 8] ]
 
 
 
@@ -99,9 +99,9 @@ Bubble Sort sürecini bir örnekle inceleyelim. Aşağıdaki sıralanmamış diz
 Üçüncü Geçiş:
 
 
-* İlk iki öğeyi (3 ve 4) karşılaştırın. 3 &lt; 4 olduğundan takas gerekmez. [ [3, 4, 2, 5, 8] ]
+* İlk iki öğeyi (3 ve 4) karşılaştırın. 3 < 4 olduğundan takas gerekmez. [ [3, 4, 2, 5, 8] ]
 
-* Sonraki iki öğeyi (4 ve 2) karşılaştırın. 4 &gt; 2 olduğundan, bunları değiştiriyoruz: [ [3, 2, 4, 5, 8] ]
+* Sonraki iki öğeyi (4 ve 2) karşılaştırın. 4 > 2 olduğundan, bunları değiştiriyoruz: [ [3, 2, 4, 5, 8] ]
 
 
 
@@ -113,7 +113,7 @@ Bubble Sort sürecini bir örnekle inceleyelim. Aşağıdaki sıralanmamış diz
 Dördüncü Geçiş:
 
 
-* İlk iki öğeyi (3 ve 2) karşılaştırın. 3 &gt; 2 olduğundan, bunları değiştiriyoruz: [ [2, 3, 4, 5, 8] ]
+* İlk iki öğeyi (3 ve 2) karşılaştırın. 3 > 2 olduğundan, bunları değiştiriyoruz: [ [2, 3, 4, 5, 8] ]
 
 
 
@@ -133,7 +133,7 @@ Algoritma hakkında daha net bir fikir vermek için Bubble Sort'un sözde kodu �
 BubbleSort(arr[], n)
     for i = 0 to n-1 do
         for j = 0 to n-i-2 do
-            if arr[j] &gt; arr[j+1] then
+            if arr[j] > arr[j+1] then
                 Swap arr[j] and arr[j+1]```
 
 
@@ -186,7 +186,7 @@ OptimizedBubbleSort(arr[], n)
     for i = 0 to n-1 do
         swapped = false
         for j = 0 to n-i-2 do
-            if arr[j] &gt; arr[j+1] then
+            if arr[j] > arr[j+1] then
                 Swap arr[j] and arr[j+1]
                 swapped = true
         if swapped == false

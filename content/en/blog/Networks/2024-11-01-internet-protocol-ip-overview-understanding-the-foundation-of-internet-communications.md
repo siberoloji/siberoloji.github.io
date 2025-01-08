@@ -96,11 +96,6 @@ When you send data across the internet, IP breaks it down into smaller units cal
 
 * **Payload*** The actual data being transmitted
 
-
-
-
-
-
 The journey of a data packet involves several steps:
 
 
@@ -200,11 +195,6 @@ Several protocols work alongside IP to ensure reliable network communications:
 
 * Prevents address conflicts
 
-
-
-
-
-
 ## IP Security Considerations
 
 
@@ -280,11 +270,6 @@ As the internet continues to evolve, IP faces new challenges and opportunities:
 
 * Enhanced security controls
 
-
-
-
-
-
 ## Best Practices for IP Management
 
 
@@ -313,11 +298,6 @@ To maintain a healthy network infrastructure:
 * Monitor network traffic
 
 * Identify potential issues early
-
-
-
-
-
 
 ## Conclusion
 

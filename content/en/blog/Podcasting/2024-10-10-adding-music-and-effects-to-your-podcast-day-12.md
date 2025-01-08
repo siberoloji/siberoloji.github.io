@@ -140,7 +140,7 @@ Once you’ve chosen your music and sound effects, it’s time to integrate them
 
 
 
-* In **Audacity**, click **File** &gt; **Import** &gt; **Audio**, and select the music file from your computer.
+* In **Audacity**, click **File** > **Import** > **Audio**, and select the music file from your computer.
 
 * In **GarageBand**, drag and drop the music file directly into your project workspace.
 
@@ -172,7 +172,7 @@ Once you’ve chosen your music and sound effects, it’s time to integrate them
 
 
 
-* In **Audacity**, select the part of the music you want to fade, then click **Effect** &gt; **Fade In** or **Fade Out**.
+* In **Audacity**, select the part of the music you want to fade, then click **Effect** > **Fade In** or **Fade Out**.
 
 * In **GarageBand**, use the **automation** feature to manually create fades by adjusting the audio curve at the beginning and end of the track.
 

@@ -61,11 +61,6 @@ A corporate supply chain is a network of interconnected businesses involved in t
 
 * **Supply Chain Transparency Initiatives:** Analyze data from initiatives like the CDP Supply Chain Program and the Higg Index to assess a company's environmental and social impact.
 
-
-
-
-
-
 **Ethical Considerations**
 
 

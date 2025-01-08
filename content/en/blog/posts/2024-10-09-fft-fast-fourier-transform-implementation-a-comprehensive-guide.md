@@ -110,7 +110,7 @@ Let's look at a basic implementation of the radix-2 Cooley-Tukey FFT algorithm i
 
 def fft(x):
     N = len(x)
-    if N &lt;= 1:
+    if N <= 1:
         return x
     else:
         X_even = fft(x[0::2])
@@ -191,12 +191,12 @@ def fft_optimized(x):
     # Bit-reversal permutation
     for i in range(N):
         j = bit_reverse(i, bits)
-        if i &lt; j:
+        if i < j:
             x[i], x[j] = x[j], x[i]
 
     # FFT computation
     for stage in range(1, bits + 1):
-        m = 1 &lt;&lt; stage
+        m = 1 << stage
         wm = np.exp(-2j * np.pi / m)
         for k in range(0, N, m):
             w = 1

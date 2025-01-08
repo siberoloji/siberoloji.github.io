@@ -3,7 +3,7 @@ draft: false
 
 title:  'What Is HTML? Understanding The Foundation Of The Web'
 date: '2024-10-26T11:47:48+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  'In this post, we’ll explore what HTML is, why it’s essential, and some basics of how it works to give you a solid foundation in this crucial web technology.' 
  
 url:  /what-is-html-understanding-the-foundation-of-the-web/
@@ -39,11 +39,6 @@ Table of Contents
 
 * Learning HTML: Resources and Next Steps
 
-
-
-
-
-
 1. What is HTML?
 
 
@@ -53,11 +48,6 @@ HTML, which stands for HyperText Markup Language, is a markup language used to c
 
 
 In essence, HTML is like the skeleton of a webpage. It defines what the content is (text, images, videos, etc.) and its hierarchy (headings, paragraphs, lists). By structuring content with HTML, web developers and designers can organize text, add links, insert images, and create forms that users can interact with online.
-
-
-
-
-
 2. A Brief History of HTML
 
 
@@ -79,56 +69,41 @@ HTML was first developed in 1991 by Tim Berners-Lee, the father of the World Wid
 
 
 HTML5 is now the standard and has enhanced capabilities that make it easier to embed audio, video, and complex interactive elements, keeping pace with modern web development needs.
-
-
-
-
-
 3. How HTML Works
 
 
 
-HTML works by using “tags” and “elements” to define parts of a webpage. Each tag describes a different aspect of the content. For example, there’s a tag for headings (`&lt;h1&gt;`) and another for paragraphs (`&lt;p&gt;`). When you open a webpage, the browser reads the HTML and translates it into the structured page you see. The HTML file includes tags that outline the content’s purpose and structure, while other languages like CSS (Cascading Style Sheets) and JavaScript enhance the design and functionality.
-
-
-
-
-
+HTML works by using “tags” and “elements” to define parts of a webpage. Each tag describes a different aspect of the content. For example, there’s a tag for headings (`<h1>`) and another for paragraphs (`<p>`). When you open a webpage, the browser reads the HTML and translates it into the structured page you see. The HTML file includes tags that outline the content’s purpose and structure, while other languages like CSS (Cascading Style Sheets) and JavaScript enhance the design and functionality.
 4. Basic HTML Structure
 
 
 
-Let’s look at a basic HTML document structure. Each HTML file is composed of two main sections: the `&lt;head&gt;` and the `&lt;body&gt;`. Here’s a simple HTML file:
+Let’s look at a basic HTML document structure. Each HTML file is composed of two main sections: the `<head>` and the `<body>`. Here’s a simple HTML file:
 
 
 ```bash
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My First HTML Page&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, World!&lt;/h1&gt;
-    &lt;p&gt;Welcome to my first HTML page.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>Welcome to my first HTML page.</p>
+  </body>
+</html>
 ```
 
 
-* **`&lt;!DOCTYPE html&gt;`**: This line tells the browser which version of HTML to expect.
+* **`<!DOCTYPE html>`**: This line tells the browser which version of HTML to expect.
 
-* **`&lt;html&gt;`**: The root element that encompasses the entire HTML document.
+* **`<html>`**: The root element that encompasses the entire HTML document.
 
-* **`&lt;head&gt;`**: Contains metadata (data about data), like the title of the page and links to CSS or scripts.
+* **`<head>`**: Contains metadata (data about data), like the title of the page and links to CSS or scripts.
 
-* **`&lt;title&gt;`**: Sets the title that appears on the browser tab.
+* **`<title>`**: Sets the title that appears on the browser tab.
 
-* **`&lt;body&gt;`**: Contains the visible content of the webpage, such as text, images, and links.
-
-
-
-
-
+* **`<body>`**: Contains the visible content of the webpage, such as text, images, and links.
 
 5. Key HTML Elements and Tags
 
@@ -137,27 +112,22 @@ Let’s look at a basic HTML document structure. Each HTML file is composed of t
 HTML is full of different tags, each with a specific role. Here are some of the most common ones you’ll come across:
 
 
-* **Headings (`&lt;h1&gt;`, `&lt;h2&gt;`, etc.)**: Used for section headers. `&lt;h1&gt;` is typically the main heading, while `&lt;h2&gt;` to `&lt;h6&gt;` are subheadings.
+* **Headings (`<h1>`, `<h2>`, etc.)**: Used for section headers. `<h1>` is typically the main heading, while `<h2>` to `<h6>` are subheadings.
 
-* **Paragraphs (`&lt;p&gt;`)**: Defines paragraphs, or blocks of text.
+* **Paragraphs (`<p>`)**: Defines paragraphs, or blocks of text.
 
-* **Links (`&lt;a href="URL"&gt;`)**: Creates hyperlinks, allowing users to navigate to other pages or websites.
+* **Links (`<a href="URL">`)**: Creates hyperlinks, allowing users to navigate to other pages or websites.
 
-* **Images (`&lt;img src="URL" alt="description"&gt;`)**: Embed images, using the `src` attribute to specify the image’s location.
+* **Images (`<img src="URL" alt="description">`)**: Embed images, using the `src` attribute to specify the image’s location.
 
-* **Lists (`&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`)**: Organizes items in either unordered (`&lt;ul&gt;`) or ordered (`&lt;ol&gt;`) lists, with `&lt;li&gt;` for each list item.
+* **Lists (`<ul>`, `<ol>`, `<li>`)**: Organizes items in either unordered (`<ul>`) or ordered (`<ol>`) lists, with `<li>` for each list item.
 
-* **Divs and Spans (`&lt;div&gt;`, `&lt;span&gt;`)**: Used to divide the webpage into sections or to group content, often for styling purposes.
+* **Divs and Spans (`<div>`, `<span>`)**: Used to divide the webpage into sections or to group content, often for styling purposes.
 
 
 
 
 Each tag plays a crucial role in building a coherent, user-friendly webpage.
-
-
-
-
-
 6. HTML Attributes
 
 
@@ -165,11 +135,11 @@ Each tag plays a crucial role in building a coherent, user-friendly webpage.
 Attributes are additional information added to HTML tags to provide more context or functionality. Common attributes include:
 
 
-* **`href`**: Used in the `&lt;a&gt;` tag to define the URL for a link.
+* **`href`**: Used in the `<a>` tag to define the URL for a link.
 
-* **`src`**: Used in `&lt;img&gt;` and `&lt;script&gt;` tags to specify the source file.
+* **`src`**: Used in `<img>` and `<script>` tags to specify the source file.
 
-* **`alt`**: An important attribute in `&lt;img&gt;` tags that provide alternative text for images.
+* **`alt`**: An important attribute in `<img>` tags that provide alternative text for images.
 
 * **`class`** and **`id`**: These are used to target elements with CSS or JavaScript, helping with styling and interactivity.
 
@@ -177,11 +147,6 @@ Attributes are additional information added to HTML tags to provide more context
 
 
 Attributes allow developers to fine-tune how HTML elements function and interact within the webpage.
-
-
-
-
-
 7. Why HTML is Important
 
 
@@ -201,11 +166,6 @@ HTML is the fundamental building block of the internet. Here are a few reasons w
 
 
 Without HTML, web pages would lack structure, and web browsers would struggle to interpret and display content consistently.
-
-
-
-
-
 8. Learning HTML: Resources and Next Steps
 
 
@@ -223,11 +183,6 @@ Learning HTML is a fantastic first step for anyone interested in web development
 
 
 Once you’re comfortable with HTML, you can start learning CSS to design and style your pages, and JavaScript to add dynamic, interactive elements.
-
-
-
-
-
 Final Thoughts
 
 

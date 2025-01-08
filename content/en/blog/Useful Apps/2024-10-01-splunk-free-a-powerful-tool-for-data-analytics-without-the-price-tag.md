@@ -105,11 +105,6 @@ Splunk Free provides a rich set of features for users who need a tool for collec
 * Splunk Free users have access to many free apps and add-ons available through the Splunkbase marketplace. These apps extend the capabilities of Splunk and offer integrations with a variety of technologies and platforms, such as AWS, Microsoft 365, Cisco, and many more.
 
 * Using these apps, users can quickly integrate data from various services, enhance their searches, and gain deeper insights into specific technologies.
-
-
-
-
-
 #### Splunk Free vs. Splunk Enterprise: What's the Difference?
 
 
@@ -164,11 +159,6 @@ While Splunk Free provides access to many of Splunk’s core features, it differ
 * With Splunk Enterprise, users receive professional support from Splunk’s customer service team, as well as access to official documentation, training, and professional services.
 
 * Splunk Free relies primarily on community support. While there’s an active user community and plenty of online resources, organizations may find that the lack of official support could be a downside, especially for mission-critical deployments.
-
-
-
-
-
 #### Why Choose Splunk Free?
 
 
@@ -203,11 +193,6 @@ Splunk Free is an excellent choice for a variety of use cases, especially for in
 * Splunk Free is ideal for testing and proof-of-concept projects. If you’re developing a solution that requires log analysis or data monitoring, you can use Splunk Free in the early stages to validate your approach before scaling up to a paid version.
 
 * This makes it a valuable tool for startups and developers who want to integrate data analytics into their products without incurring additional costs.
-
-
-
-
-
 #### Setting Up and Using Splunk Free
 
 
@@ -242,11 +227,6 @@ Getting started with Splunk Free is a simple process. Here are the basic steps t
 * Once your data is ingested, you can begin using SPL to query the data and analyze patterns, events, and anomalies. The search interface is intuitive, allowing you to filter results and drill down into specific details.
 
 * Additionally, you can create dashboards to visualize your data, making it easier to understand and share insights with others.
-
-
-
-
-
 #### Limitations of Splunk Free
 
 
@@ -265,11 +245,6 @@ While Splunk Free is a fantastic tool for many use cases, it does come with cert
 
 
 * **Lack of Official Support**: While community support is robust, organizations relying on Splunk for mission-critical operations may need the professional support offered in Splunk’s paid tiers.
-
-
-
-
-
 #### Conclusion
 
 

@@ -25,7 +25,7 @@ The provided C++ code demonstrates the use of various bitwise operators.
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 /**
@@ -36,8 +36,8 @@ using namespace std;
  * - | (OR)
  * - ^ (XOR)
  * - ~ (NOT)
- * - &lt;&lt; (LEFT SHIFT)
- * - &gt;&gt; (RIGHT SHIFT)
+ * - << (LEFT SHIFT)
+ * - >> (RIGHT SHIFT)
  *
  * The program performs bitwise operations on two integers and prints the results.
  *
@@ -48,22 +48,22 @@ int main() {
     int j = 22; // Second integer
 
     // Perform bitwise AND operation and print the result
-    cout &lt;&lt; (i &amp; j) &lt;&lt; endl; // Expected output: 6
+    cout << (i &amp; j) << endl; // Expected output: 6
 
     // Perform bitwise OR operation and print the result
-    cout &lt;&lt; (i | j) &lt;&lt; endl; // Expected output: 31
+    cout << (i | j) << endl; // Expected output: 31
 
     // Perform bitwise XOR operation and print the result
-    cout &lt;&lt; (i ^ j) &lt;&lt; endl; // Expected output: 25
+    cout << (i ^ j) << endl; // Expected output: 25
 
     // Perform bitwise NOT operation on the first integer and print the result
-    cout &lt;&lt; (~i) &lt;&lt; endl; // Expected output: -16
+    cout << (~i) << endl; // Expected output: -16
 
     // Perform left shift operation on the first integer and print the result
-    cout &lt;&lt; (i &lt;&lt; 2) &lt;&lt; endl; // Expected output: 60
+    cout << (i << 2) << endl; // Expected output: 60
 
     // Perform right shift operation on the second integer and print the result
-    cout &lt;&lt; (j &gt;&gt; 2) &lt;&lt; endl; // Expected output: 5
+    cout << (j >> 2) << endl; // Expected output: 5
 
     return 0;
 }
@@ -79,7 +79,7 @@ The provided C++ code demonstrates the use of various bitwise operators. The pro
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 ```
 
@@ -102,7 +102,7 @@ The program then performs several bitwise operations on these integers and print
 
 
 ```cpp
-cout &lt;&lt; (i &amp; j) &lt;&lt; endl; // Expected output: 6```
+cout << (i &amp; j) << endl; // Expected output: 6```
 
 
 <!-- wp:list {"ordered":true,"start":2} -->
@@ -111,7 +111,7 @@ cout &lt;&lt; (i &amp; j) &lt;&lt; endl; // Expected output: 6```
 
 
 ```cpp
-cout &lt;&lt; (i | j) &lt;&lt; endl; // Expected output: 31```
+cout << (i | j) << endl; // Expected output: 31```
 
 
 <!-- wp:list {"ordered":true,"start":3} -->
@@ -120,7 +120,7 @@ cout &lt;&lt; (i | j) &lt;&lt; endl; // Expected output: 31```
 
 
 ```cpp
-cout &lt;&lt; (i ^ j) &lt;&lt; endl; // Expected output: 25```
+cout << (i ^ j) << endl; // Expected output: 25```
 
 
 <!-- wp:list {"ordered":true,"start":4} -->
@@ -129,25 +129,25 @@ cout &lt;&lt; (i ^ j) &lt;&lt; endl; // Expected output: 25```
 
 
 ```cpp
-cout &lt;&lt; (~i) &lt;&lt; endl; // Expected output: -16```
+cout << (~i) << endl; // Expected output: -16```
 
 
 <!-- wp:list {"ordered":true,"start":5} -->
-<ol start="5" class="wp-block-list">* **Left Shift (`&lt;&lt;`)**: This operation shifts the bits of `i` to the left by 2 positions, effectively multiplying `i` by 2^2 (or 4). The result of `i &lt;&lt; 2` is 60.
+<ol start="5" class="wp-block-list">* **Left Shift (`<<`)**: This operation shifts the bits of `i` to the left by 2 positions, effectively multiplying `i` by 2^2 (or 4). The result of `i << 2` is 60.
 
 
 
 ```cpp
-cout &lt;&lt; (i &lt;&lt; 2) &lt;&lt; endl; // Expected output: 60```
+cout << (i << 2) << endl; // Expected output: 60```
 
 
 <!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **Right Shift (`&gt;&gt;`)**: This operation shifts the bits of `j` to the right by 2 positions, effectively dividing `j` by 2^2 (or 4). The result of `j &gt;&gt; 2` is 5.
+<ol start="6" class="wp-block-list">* **Right Shift (`>>`)**: This operation shifts the bits of `j` to the right by 2 positions, effectively dividing `j` by 2^2 (or 4). The result of `j >> 2` is 5.
 
 
 
 ```cpp
-cout &lt;&lt; (j &gt;&gt; 2) &lt;&lt; endl; // Expected output: 5```
+cout << (j >> 2) << endl; // Expected output: 5```
 
 
 

@@ -127,7 +127,7 @@ Basic Usage Syntax
 
 
 ```bash
-aeskeyfind [options] &lt;memory_dump&gt;
+aeskeyfind [options] <memory_dump>
 ```
 
 

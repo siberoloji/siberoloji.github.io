@@ -28,10 +28,10 @@ In this short note, you can see an example of when() usage with data type. The t
 <!-- wp:code -->
 <pre title="when condition is the type of data" class="wp-block-code"><code lang="kotlin" class="language-kotlin"> val x : Any = 12.75
     when(x){
-        is Int -&gt; println("$x is an Integer")
-        is Double -&gt; println("$x is a Double")
-        is String -&gt; println("$x is a String")
-        else -&gt; println("$x is not Int,Double or String")
+        is Int -> println("$x is an Integer")
+        is Double -> println("$x is a Double")
+        is String -> println("$x is a String")
+        else -> println("$x is not Int,Double or String")
 
     }
 ```

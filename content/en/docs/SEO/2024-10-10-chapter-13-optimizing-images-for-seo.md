@@ -135,15 +135,15 @@ With the growing use of mobile devices, it's essential to ensure that your image
 **How to Implement Responsive Images:**
 
 
-* Use the `&lt;img&gt;` tag's `srcset` attribute to specify different image sizes for various screen resolutions. This allows the browser to choose the most appropriate size based on the device.
+* Use the `<img>` tag's `srcset` attribute to specify different image sizes for various screen resolutions. This allows the browser to choose the most appropriate size based on the device.
 
 
 
 ```bash
-  &lt;img src="red-sneakers-small.jpg" 
+  <img src="red-sneakers-small.jpg" 
        srcset="red-sneakers-medium.jpg 600w,
                red-sneakers-large.jpg 1200w"
-       alt="Red sneakers on display"&gt;
+       alt="Red sneakers on display">
 ```
 
 

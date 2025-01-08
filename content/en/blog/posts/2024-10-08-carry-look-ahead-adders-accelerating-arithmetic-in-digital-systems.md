@@ -280,19 +280,19 @@ architecture Behavioral of cla_4bit is
     signal C : STD_LOGIC_VECTOR(4 downto 0);
 begin
     -- Generate and Propagate terms
-    G &lt;= A and B;
-    P &lt;= A xor B;
+    G <= A and B;
+    P <= A xor B;
 
     -- Carry look-ahead logic
-    C(0) &lt;= Cin;
-    C(1) &lt;= G(0) or (P(0) and C(0));
-    C(2) &lt;= G(1) or (P(1) and G(0)) or (P(1) and P(0) and C(0));
-    C(3) &lt;= G(2) or (P(2) and G(1)) or (P(2) and P(1) and G(0)) or (P(2) and P(1) and P(0) and C(0));
-    C(4) &lt;= G(3) or (P(3) and G(2)) or (P(3) and P(2) and G(1)) or (P(3) and P(2) and P(1) and G(0)) or (P(3) and P(2) and P(1) and P(0) and C(0));
+    C(0) <= Cin;
+    C(1) <= G(0) or (P(0) and C(0));
+    C(2) <= G(1) or (P(1) and G(0)) or (P(1) and P(0) and C(0));
+    C(3) <= G(2) or (P(2) and G(1)) or (P(2) and P(1) and G(0)) or (P(2) and P(1) and P(0) and C(0));
+    C(4) <= G(3) or (P(3) and G(2)) or (P(3) and P(2) and G(1)) or (P(3) and P(2) and P(1) and G(0)) or (P(3) and P(2) and P(1) and P(0) and C(0));
 
     -- Sum generation
-    Sum &lt;= P xor C(3 downto 0);
-    Cout &lt;= C(4);
+    Sum <= P xor C(3 downto 0);
+    Cout <= C(4);
 end Behavioral;
 ```
 

@@ -59,11 +59,6 @@ When your VPN is on, your ISP is restricted from seeing the specifics of your in
 * **Your Location on the Internet:** VPNs assign you a new IP address, which hides your original location from websites and your ISP. This means your ISP can’t tell what country or city you appear to be browsing from when your VPN is on.
 
 * **Application and Service Data:** Normally, ISPs can detect the apps and services you use, as each has distinct traffic patterns. VPNs encrypt these patterns, so the ISP can’t identify what apps or services you’re using.
-
-
-
-
-
 #### What Your ISP **Can** See When You’re Using a VPN
 
 
@@ -96,11 +91,6 @@ While a VPN effectively hides your browsing content, it’s not a total shield. 
 
 
 * **Protocol Fingerprinting:** VPNs use various protocols, like OpenVPN, IKEv2, or WireGuard. Each protocol has a unique signature that ISPs can sometimes detect. This doesn’t give them access to content but does indicate that a VPN protocol is being used.
-
-
-
-
-
 #### How VPN Logging Policies Affect What ISPs Can Infer
 
 
@@ -196,11 +186,6 @@ For those seeking to maximize privacy from ISPs while using a VPN, here are a fe
 * **Monitor Data Usage:** Be mindful of your data usage patterns to avoid potential throttling.
 
 * **Enable Multi-Hop or Double VPN (if available):** Some VPNs offer multi-hop connections, routing your data through two servers for additional privacy.
-
-
-
-
-
 #### Conclusion: What’s the Bottom Line?
 
 

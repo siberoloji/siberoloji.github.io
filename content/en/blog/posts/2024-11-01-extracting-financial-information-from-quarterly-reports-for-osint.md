@@ -67,11 +67,6 @@ Quarterly reports are financial documents that publicly traded companies are req
 
 * **Machine Learning:** Machine learning algorithms can be trained on historical data to predict future financial performance.
 
-
-
-
-
-
 **Tools for Extracting Financial Information**
 
 

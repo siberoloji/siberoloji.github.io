@@ -48,11 +48,6 @@ Table of Contents:
 
 * **Conclusion: Enhancing User Experience with Core Web Vitals**
 
-
-
-
-
-
 1. What Are Core Web Vitals?
 
 
@@ -74,11 +69,6 @@ The three key metrics that make up Core Web Vitals are:
 
 
 Together, these metrics focus on the user experience elements that are most likely to affect how users perceive your website. If a site is slow to load, difficult to interact with, or visually unstable (e.g., elements shifting unexpectedly while loading), users are more likely to leave, which negatively affects engagement and SEO rankings.
-
-
-
-
-
 2. Why Are Core Web Vitals Important for SEO?
 
 
@@ -100,11 +90,6 @@ Incorporating Core Web Vitals into SEO strategy is important for several reasons
 
 
 Optimizing for Core Web Vitals isn’t just about pleasing search engines; it’s about creating a better experience for the people who visit your website.
-
-
-
-
-
 3. Breaking Down the Core Web Vitals Metrics
 
 
@@ -149,11 +134,6 @@ Let’s take a closer look at each of the three Core Web Vitals metrics, what th
 
 * **Why CLS Matters:** Unexpected shifts in a webpage’s layout can lead to poor user experiences, especially when users try to click on a button or link, only to have it shift elsewhere on the page. Reducing layout shifts improves the overall flow and stability of a site, making it easier and more enjoyable to use.
 
-
-
-
-
-
 4. How to Measure Core Web Vitals
 
 
@@ -187,11 +167,6 @@ Lighthouse is a tool built into Chrome’s DevTools that provides a comprehensiv
 
 
 For a quick view of Core Web Vitals metrics, you can use the Web Vitals Chrome extension. It provides real-time feedback on LCP, FID, and CLS for any page you visit.
-
-
-
-
-
 5. Common Issues That Affect Core Web Vitals and How to Fix Them
 
 
@@ -262,11 +237,6 @@ Unexpected layout shifts that hurt your CLS score are often caused by images or 
 
 * Avoiding inserting new content above existing content unless absolutely necessary.
 
-
-
-
-
-
 6. Tools to Improve Core Web Vitals
 
 
@@ -285,11 +255,6 @@ Improving Core Web Vitals isn’t just about identifying problems; it’s about 
 * **Image Optimization**: Tools like <a href="https://shortpixel.com/">ShortPixel</a> and <a href="https://tinypng.com/">TinyPNG</a> compress images without sacrificing quality, helping improve both LCP and CLS scores.
 
 * **JavaScript Optimization**: Consider using tools like <a href="https://webpack.js.org/">Webpack</a> to bundle and minimize JavaScript, reducing page load times and improving FID.
-
-
-
-
-
 
 7. Conclusion: Enhancing User Experience with Core Web Vitals
 

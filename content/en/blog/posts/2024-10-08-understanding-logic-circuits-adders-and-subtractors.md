@@ -108,11 +108,6 @@ Types of Subtractors
 * The logic equations are:* D = A ⊕ B
 
 * B = Ā⋅B
-
-
-
-
-
 * **Full Subtractor**
 
 
@@ -126,11 +121,6 @@ Types of Subtractors
 * The logic equations are:* D = A ⊕ B ⊕Borrow-in
 
 * B =(Ā ⋅ B) + (Borrow-in .  overline(A ⊕ B))
-
-
-
-
-
 
 Applications of Adders and Subtractors
 
@@ -177,11 +167,6 @@ Adders and subtractors are fundamental components in digital electronics that en
 
 
 By grasping how these circuits operate, engineers can innovate new applications that leverage their capabilities in increasingly complex digital environments. Whether you're designing a simple calculator or developing sophisticated algorithms for artificial intelligence, mastering adders and subtractors is a vital step in your journey through digital electronics.
-
-
-
-
-
 This post provides an overview of adders and subtractors within logic circuits while emphasizing their importance in various applications. By understanding these basic components, readers can appreciate their role in the broader context of digital systems design.
 
 

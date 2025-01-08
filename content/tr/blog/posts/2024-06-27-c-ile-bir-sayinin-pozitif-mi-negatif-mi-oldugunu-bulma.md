@@ -20,20 +20,20 @@ Bu örneğimizde, klavyeden girilen sayının pozitif, negatif veya sıfır mı 
 
 
 ```bash
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
     int number;
-    cout &lt;&lt; "Please enter a number: ";
-    cin &gt;&gt; number;
+    cout << "Please enter a number: ";
+    cin >> number;
 
-    if (number &gt; 0) {
-        cout &lt;&lt; "Number is positive";
-    } else if (number &lt; 0) {
-        cout &lt;&lt; "Number is negative";
+    if (number > 0) {
+        cout << "Number is positive";
+    } else if (number < 0) {
+        cout << "Number is negative";
     } else {
-        cout &lt;&lt; "Number is zero";
+        cout << "Number is zero";
     }
 
     return 0;

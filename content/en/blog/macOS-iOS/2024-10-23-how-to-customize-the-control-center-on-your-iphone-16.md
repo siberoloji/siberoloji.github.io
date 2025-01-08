@@ -43,11 +43,6 @@ To access Control Center, simply swipe down from the top right corner of your iP
 
 * **Removing Toggles:** Tap on the "-" button next to the toggles you want to remove.
 
-
-
-
-
-
 **Rearranging Toggles**
 
 
@@ -56,11 +51,6 @@ To access Control Center, simply swipe down from the top right corner of your iP
 * **Navigate to Control Center:** Scroll down and tap on "Control Center."
 
 * **Rearrange Toggles:*** **Drag and Drop:** Press and hold a toggle and drag it to your desired position within Control Center.
-
-
-
-
-
 
 **Creating Custom Toggles**
 
@@ -88,11 +78,6 @@ To access Control Center, simply swipe down from the top right corner of your iP
 * **Add Toggles:** Drag and drop the toggles you want to include in the group.
 
 * **Rename the Group:** Tap on the group name and enter a new name.
-
-
-
-
-
 
 **Using Third-Party Apps**
 

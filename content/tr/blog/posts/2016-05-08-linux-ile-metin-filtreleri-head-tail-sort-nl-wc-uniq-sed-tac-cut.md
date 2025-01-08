@@ -305,7 +305,7 @@ sed komutu Stream Editor ifadesinden oluşturulmuştur. ARA-BUL/DEĞİŞTİR man
 
 
 
-**Format**: sed &lt;expression&gt; [path]
+**Format**: sed <expression> [path]
 
 
 

@@ -50,15 +50,15 @@ Pivot makinede meterpreter oturum açık durumdayken `portfwd –h` komutu ile `
 
 
 ```bash
-meterpreter **&gt;** portfwd -h
+meterpreter **>** portfwd -h
 Usage: portfwd **[**-h**]** **[**add | delete | list | flush] **[**args]
 OPTIONS:
-     -L **&gt;**opt&gt;  The local host to listen on **(**optional**)**.
+     -L **>**opt>  The local host to listen on **(**optional**)**.
      -h        Help banner.
-     -l **&gt;**opt&gt;  The local port to listen on.
-     -p **&gt;**opt&gt;  The remote port to connect on.
-     -r **&gt;**opt&gt;  The remote host to connect on.
-meterpreter **&gt;**
+     -l **>**opt>  The local port to listen on.
+     -p **>**opt>  The remote port to connect on.
+     -r **>**opt>  The remote host to connect on.
+meterpreter **>**
 ```
 
 
@@ -115,7 +115,7 @@ Meterpreter shell oturumunu açtığımız **pivot** bilgisayarda iken vereceği
 
 
 ```bash
-meterpreter **&gt;** portfwd add –l 3389 –p 3389 –r  **[**target host]
+meterpreter **>** portfwd add –l 3389 –p 3389 –r  **[**target host]
 ```
 
 
@@ -136,9 +136,9 @@ meterpreter **&gt;** portfwd add –l 3389 –p 3389 –r  **[**target host]
 
 
 ```bash
-meterpreter **&gt;** portfwd add –l 3389 –p 3389 –r 172.16.194.191
-**[*********]** Local TCP relay created: 0.0.0.0:3389 **&gt;**-&gt; 172.16.194.191:3389
-meterpreter **&gt;** 
+meterpreter **>** portfwd add –l 3389 –p 3389 –r 172.16.194.191
+**[*********]** Local TCP relay created: 0.0.0.0:3389 **>**-> 172.16.194.191:3389
+meterpreter **>** 
 ```
 
 
@@ -151,9 +151,9 @@ Silme işlemini de **pivot** bilgisayar oturumunda iken aşağıdaki örnekte ol
 
 
 ```bash
-meterpreter **&gt;** portfwd delete –l 3389 –p 3389 –r 172.16.194.191
+meterpreter **>** portfwd delete –l 3389 –p 3389 –r 172.16.194.191
 **[*********]** Successfully stopped TCP relay on 0.0.0.0:3389
-meterpreter **&gt;** 
+meterpreter **>** 
 ```
 
 
@@ -166,13 +166,13 @@ Aktif olan yönlendirmeleri `portfwd list` komutuyla yapabiliriz.
 
 
 ```bash
-meterpreter **&gt;** portfwd list
-0: 0.0.0.0:3389 -&gt; 172.16.194.191:3389
-1: 0.0.0.0:1337 -&gt; 172.16.194.191:1337
-2: 0.0.0.0:2222 -&gt; 172.16.194.191:2222
+meterpreter **>** portfwd list
+0: 0.0.0.0:3389 -> 172.16.194.191:3389
+1: 0.0.0.0:1337 -> 172.16.194.191:1337
+2: 0.0.0.0:2222 -> 172.16.194.191:2222
 
 3 total local port forwards.
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -185,15 +185,15 @@ Sistemde aktif olan tüm yönlendirmeleri `portfwd flush` komutuyla iptal edebil
 
 
 ```bash
-meterpreter **&gt;** portfwd flush
+meterpreter **>** portfwd flush
 **[*********]** Successfully stopped TCP relay on 0.0.0.0:3389
 **[*********]** Successfully stopped TCP relay on 0.0.0.0:1337
 **[*********]** Successfully stopped TCP relay on 0.0.0.0:2222
 **[*********]** Successfully flushed 3 rules
-meterpreter **&gt;** portfwd list
+meterpreter **>** portfwd list
 
 0 total local port forwards
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -214,7 +214,7 @@ Aşağıdaki komut çıktısında görüldüğü gibi, hedef bilgisayar `172.16.
 
 
 ```bash
-C:\&gt; ipconfig
+C:\> ipconfig
 
 Windows IP Configuration
 
@@ -225,7 +225,7 @@ Ethernet adapter Local Area Connection 3:
    Subnet Mask.  .  . .  .  .  .  .  . 255.255.255.0
    Default Gateway. . .  .  .  .  .  . 172.16.194.2
 
-C:\&gt;
+C:\>
 ```
 
 
@@ -238,7 +238,7 @@ C:\&gt;
 
 
 ```bash
-meterpreter **&gt;** ipconfig
+meterpreter **>** ipconfig
 
 MS TCP Loopback interface
 Hardware MAC: 00:00:00:00:00:00
@@ -305,7 +305,7 @@ Peki bu haberleşmeyi nasıl başardık?
 
 
 ```bash
-meterpreter **&gt;** portfwd add –l 3389 –p 3389 –r 172.16.194.141
+meterpreter **>** portfwd add –l 3389 –p 3389 –r 172.16.194.141
 ```
 
 

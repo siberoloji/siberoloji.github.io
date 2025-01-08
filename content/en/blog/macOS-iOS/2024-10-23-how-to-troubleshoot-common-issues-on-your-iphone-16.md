@@ -54,7 +54,7 @@ Some users have reported that the iPhone 16's display seems to be locked at a lo
 
 
 
-* Navigate to **Settings &gt; Display &amp; Brightness**.
+* Navigate to **Settings > Display &amp; Brightness**.
 
 * Ensure that **ProMotion** is enabled if available.
 
@@ -72,7 +72,7 @@ Some users have reported that the iPhone 16's display seems to be locked at a lo
 
 
 
-* Ensure your device is running the latest version of iOS. Go to **Settings &gt; General &gt; Software Update**.
+* Ensure your device is running the latest version of iOS. Go to **Settings > General > Software Update**.
 
 
 
@@ -80,7 +80,7 @@ Some users have reported that the iPhone 16's display seems to be locked at a lo
 
 
 
-* If the issue persists, consider resetting all settings under **Settings &gt; General &gt; Reset &gt; Reset All Settings**. This won’t delete your data but will reset system settings.
+* If the issue persists, consider resetting all settings under **Settings > General > Reset > Reset All Settings**. This won’t delete your data but will reset system settings.
 
 
 
@@ -143,7 +143,7 @@ Users have reported that the camera app may freeze or show a black screen when o
 
 
 
-* Go to **Settings &gt; Camera**, and check if any settings may be causing issues.
+* Go to **Settings > Camera**, and check if any settings may be causing issues.
 
 
 
@@ -167,7 +167,7 @@ Battery drain or charging problems are frequent complaints among new iPhone user
 
 
 
-* Go to **Settings &gt; Battery &gt; Battery Health**, and ensure your battery is functioning optimally.
+* Go to **Settings > Battery > Battery Health**, and ensure your battery is functioning optimally.
 
 
 
@@ -175,7 +175,7 @@ Battery drain or charging problems are frequent complaints among new iPhone user
 
 
 
-* Enable Low Power Mode under **Settings &gt; Battery &gt; Low Power Mode** when needed.
+* Enable Low Power Mode under **Settings > Battery > Low Power Mode** when needed.
 
 
 
@@ -215,9 +215,9 @@ Wi-Fi or Bluetooth connectivity issues can be frustrating but are often easily r
 
 
 
-* For Wi-Fi issues, go to **Settings &gt; Wi-Fi**, select your network, and choose “Forget This Network.” Reconnect by entering the password again.
+* For Wi-Fi issues, go to **Settings > Wi-Fi**, select your network, and choose “Forget This Network.” Reconnect by entering the password again.
 
-* For Bluetooth problems, go to **Settings &gt; Bluetooth**, tap on the “i” next to your device, and select “Forget This Device.” Then reconnect.
+* For Bluetooth problems, go to **Settings > Bluetooth**, tap on the “i” next to your device, and select “Forget This Device.” Then reconnect.
 
 
 
@@ -225,7 +225,7 @@ Wi-Fi or Bluetooth connectivity issues can be frustrating but are often easily r
 
 
 
-* If problems persist, reset your network settings under **Settings &gt; General &gt; Reset &gt; Reset Network Settings**.
+* If problems persist, reset your network settings under **Settings > General > Reset > Reset Network Settings**.
 
 
 
@@ -257,7 +257,7 @@ If you experience general performance lags or app crashes:
 
 
 
-* Check available storage under **Settings &gt; General &gt; iPhone Storage**, and delete unnecessary files or apps if storage is low.
+* Check available storage under **Settings > General > iPhone Storage**, and delete unnecessary files or apps if storage is low.
 
 
 

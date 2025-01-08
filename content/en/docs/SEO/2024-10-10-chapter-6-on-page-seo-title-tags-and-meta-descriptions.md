@@ -26,7 +26,7 @@ What Are Title Tags?
 
 
 
-Title tags, also known as page titles, are HTML elements that specify the title of a web page. They appear as the clickable headline for a given result on SERPs and are also displayed at the top of web browsers. In HTML, they're defined using the `&lt;title&gt;` tag.
+Title tags, also known as page titles, are HTML elements that specify the title of a web page. They appear as the clickable headline for a given result on SERPs and are also displayed at the top of web browsers. In HTML, they're defined using the `<title>` tag.
 
 
 

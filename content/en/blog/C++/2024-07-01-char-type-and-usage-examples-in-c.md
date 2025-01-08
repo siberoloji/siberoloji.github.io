@@ -25,7 +25,7 @@ The provided C++ code is a demonstration of how to manipulate and display charac
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 // Main function
@@ -33,27 +33,27 @@ int main() {
     // Declare a character variable
     char character = 'A';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign ASCII value of 'A' to the character
     character = 65;
     // Print the character
-    cout &lt;&lt; "Character (65 in ASCII): " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character (65 in ASCII): " << character << endl;
     // Assign escape character for single quote to the character
     character = '\'';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign escape character for backslash to the character
     character = '\\';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign hexadecimal value for single quote to the character
     character = '\x27';
     // Print the character
-    cout &lt;&lt; "Character (hexadecimal \\x27): " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character (hexadecimal \\x27): " << character << endl;
     // Assign octal value for single quote to the character
     character = '\047';
     // Print the character
-    cout &lt;&lt; "Character (octal \\047): " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character (octal \\047): " << character << endl;
 
     // Char types as int values
     /*
@@ -67,27 +67,27 @@ int main() {
     // Assign 'A' + 32 to the character
     character = 'A' + 32;
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign 'A' + ' ' to the character
     character = 'A' + ' ';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign 65 + ' ' to the character
     character = 65 + ' ';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign 97 - ' ' to the character
     character = 97 - ' ';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign 'a' - 32 to the character
     character = 'a' - 32;
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
     // Assign 'a' - ' ' to the character
     character = 'a' - ' ';
     // Print the character
-    cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;
+    cout << "Character: " << character << endl;
 
     // Return 0 to indicate successful execution
     return 0;
@@ -104,7 +104,7 @@ The provided C++ code is a demonstration of how to manipulate and display charac
 
 
 
-The main function begins by declaring a character variable `char character = 'A';`. This character is then printed to the console using `cout &lt;&lt; "Character: " &lt;&lt; character &lt;&lt; endl;`.
+The main function begins by declaring a character variable `char character = 'A';`. This character is then printed to the console using `cout << "Character: " << character << endl;`.
 
 
 

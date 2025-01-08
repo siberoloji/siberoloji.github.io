@@ -31,8 +31,8 @@ Bu yazımızda, Metasploit Framework içerisinde kullanılan temel komutları in
 
 
 ```bash
-msf auxiliary**(**ms09_001_write**)** **&gt;** back
-msf **&gt;**
+msf auxiliary**(**ms09_001_write**)** **>** back
+msf **>**
 ```
 
 
@@ -45,7 +45,7 @@ Rastgele seçilen bir banner görüntüler.
 
 
 ```bash
-msf **&gt;** banner
+msf **>** banner
  _                                                    _
 /     /         __                         _   __  /_/ __
 | |  / | _____               ___   _____ | | /   _    
@@ -71,7 +71,7 @@ Bu komutu her exploit desteklemese de ne işe yaradığını açıklayalım. Bir
 
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** **&gt;** show options
+msf exploit**(**ms08_067_netapi**)** **>** show options
 
 Module options **(**exploit/windows/smb/ms08_067_netapi**)**:
 
@@ -87,12 +87,12 @@ Exploit target:
    --  ----
    0   Automatic Targeting
 
-msf exploit**(**ms08_067_netapi**)** **&gt;** check
+msf exploit**(**ms08_067_netapi**)** **>** check
 
 **[*********]** Verifying vulnerable status... **(**path: 0x0000005a**)**
 **[*********]** System is not vulnerable **(**status: 0x00000000**)**
 **[*********]** The target is not exploitable.
-msf  exploit**(**ms08_067_netapi**)** **&gt;**
+msf  exploit**(**ms08_067_netapi**)** **>**
 ```
 
 
@@ -105,8 +105,8 @@ msfconsole içinden alacağınız çıktı ve bilgilerin renklendirilmesini sağ
 
 
 ```bash
-msf **&gt;** color
-Usage: color **&gt;**'true'|'false'|'auto'**&gt;**
+msf **>** color
+Usage: color **>**'true'|'false'|'auto'**>**
 
 Enable or disable color output.
 ```
@@ -121,7 +121,7 @@ Küçük bir telnet veya netcat programıdır diyebiliriz. SSL desteği vardır 
 
 
 ```bash
-msf **&gt;** connect 192.168.1.1 23
+msf **>** connect 192.168.1.1 23
 **[*********]** Connected to 192.168.1.1:23
 DD-WRT v24 std **(**c**)** 2008 NewMedia-NET GmbH
 Release: 07/27/08 **(**SVN revision: 10011**)**
@@ -134,7 +134,7 @@ DD-WRT login:
 
 
 ```bash
-msf **&gt;** connect -h
+msf **>** connect -h
 Usage: connect **[**options]  
 
 Communicate with a host, similar to interacting via netcat, taking advantage of
@@ -143,18 +143,18 @@ any configured session pivoting.
 OPTIONS:
 
     -C        Try to use CRLF **for **EOL sequence.
-    -P &lt;opt&gt;  Specify source port.
-    -S &lt;opt&gt;  Specify source address.
-    -c &lt;opt&gt;  Specify which Comm to use.
+    -P <opt>  Specify source port.
+    -S <opt>  Specify source address.
+    -c <opt>  Specify which Comm to use.
     -h        Help banner.
-    -i &lt;opt&gt;  Send the contents of a file.
-    -p &lt;opt&gt;  List of proxies to use.
+    -i <opt>  Send the contents of a file.
+    -p <opt>  List of proxies to use.
     -s        Connect with SSL.
     -u        Switch to a UDP socket.
-    -w &lt;opt&gt;  Specify connect timeout.
+    -w <opt>  Specify connect timeout.
     -z        Just try to connect, **then return**.
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -167,7 +167,7 @@ Aktif olarak seçilmiş modülün kodlarında değişiklik yapmak isterseniz `ed
 
 
 ```bash
-msf exploit**(**ms10_061_spoolss**)** **&gt;** edit
+msf exploit**(**ms10_061_spoolss**)** **>** edit
 **[*********]** Launching /usr/bin/vim /usr/share/metasploit-framework/modules/exploits/windows/smb/ms10_061_spoolss.rb
 
 ##
@@ -178,7 +178,7 @@ msf exploit**(**ms10_061_spoolss**)** **&gt;** edit
 require 'msf/core'
 require 'msf/windows_error'
 
-class Metasploit3 **&gt;** Msf::Exploit::Remote
+class Metasploit3 **>** Msf::Exploit::Remote
   Rank **=** ExcellentRanking
 
   include Msf::Exploit::Remote::DCERPC
@@ -199,7 +199,7 @@ msfconsole’dan çıkmaya yarar.
 
 
 ```bash
-msf exploit**(**ms10_061_spoolss**)** **&gt;** exit
+msf exploit**(**ms10_061_spoolss**)** **>** exit
 root@kali:~#
 ```
 
@@ -213,7 +213,7 @@ Kullanılabilir durumda olan komutların listesini ve kısa açıklamalarını e
 
 
 ```bash
-msf **&gt;** help
+msf **>** help
 
 Core Commands
 **=============**
@@ -251,7 +251,7 @@ Database Backend Commands
 
 
 ```bash
-msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **&gt;** info exploit/windows/smb/ms09_050_smb2_negotiate_func_index 
+msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **>** info exploit/windows/smb/ms09_050_smb2_negotiate_func_index 
 
        Name: Microsoft SRV2.SYS SMB Negotiate ProcessID Function Table Dereference
      Module: exploit/windows/smb/ms09_050_smb2_negotiate_func_index
@@ -262,9 +262,9 @@ msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **&gt;** info exploit/w
        Rank: Good
 
 Provided by:
-  Laurent Gaffie &lt;laurent.gaffie@gmail.com&gt;
-  hdm &lt;hdm@metasploit.com&gt;
-  sf &lt;stephen_fewer@harmonysecurity.com&gt;
+  Laurent Gaffie <laurent.gaffie@gmail.com>
+  hdm <hdm@metasploit.com>
+  sf <stephen_fewer@harmonysecurity.com>
 
 Available targets:
   Id  Name
@@ -296,7 +296,7 @@ References:
   <a href="http://seclists.org/fulldisclosure/2009/Sep/0039.html">http://seclists.org/fulldisclosure/2009/Sep/0039.html</a>
   <a href="http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx">http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx</a>
 
-msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **&gt;**
+msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **>**
 ```
 
 
@@ -309,14 +309,14 @@ Bu komutu verdiğinizde doğrudan Ruby komut girişimcisine gidersiniz. msfconso
 
 
 ```bash
-msf **&gt;** irb
+msf **>** irb
 **[*********]** Starting IRB shell...
 
-**&gt;&gt;** puts "Hello, metasploit!"
+**>>** puts "Hello, metasploit!"
 Hello, metasploit!
-**=&gt;** nil
-**&gt;&gt;** Framework::Version
-**=&gt;** "4.8.2-2014022601"
+**=>** nil
+**>>** Framework::Version
+**=>** "4.8.2-2014022601"
 ```
 
 
@@ -329,7 +329,7 @@ Arka planda çalışır durumdaki modülleri listeleme, kapatma vb. işlemleri l
 
 
 ```bash
-msf **&gt;** jobs -h
+msf **>** jobs -h
 Usage: jobs **[**options]
 
 Active job manipulation and interaction.
@@ -338,12 +338,12 @@ OPTIONS:
 
     -K        Terminate all running jobs.
     -h        Help banner.
-    -i &lt;opt&gt;  Lists detailed information about a running job.
-    -k &lt;opt&gt;  Terminate the specified job name.
+    -i <opt>  Lists detailed information about a running job.
+    -k <opt>  Terminate the specified job name.
     -l        List all running jobs.
     -v        Print more detailed info.  Use with -i and -l
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -356,7 +356,7 @@ msf **&gt;**
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** **&gt;** kill 0
+msf exploit**(**ms10_002_aurora**)** **>** kill 0
 Stopping job: 0...
 
 **[*********]** Server stopped.
@@ -372,8 +372,8 @@ Metasploit klasörlerinden plugin (eklenti) yüklemenizi sağlar. Parametreler, 
 
 
 ```bash
-msf **&gt;** load
-Usage: load &lt;path&gt; **[**var**=**val var**=**val ...]
+msf **>** load
+Usage: load <path> **[**var**=**val var**=**val ...]
 ```
 
 
@@ -382,7 +382,7 @@ Usage: load &lt;path&gt; **[**var**=**val var**=**val ...]
 
 
 ```bash
-msf **&gt;** load pcap_log
+msf **>** load pcap_log
 **[*********]** PcapLog plugin loaded.
 **[*********]** Successfully loaded plugin: pcap_log
 ```
@@ -397,7 +397,7 @@ msfconsole çalışır durumda iken, istediğiniz bir modülü yüklemenizi sağ
 
 
 ```bash
-msf **&gt;** loadpath /home/secret/modules
+msf **>** loadpath /home/secret/modules
 
 Loaded 0 modules.
 ```
@@ -412,7 +412,7 @@ Loaded 0 modules.
 
 
 ```bash
-msf **&gt;** unload pcap_log
+msf **>** unload pcap_log
 Unloading plugin pcap_log...unloaded.
 ```
 
@@ -426,16 +426,16 @@ Bazı modüller, script komutlarının içinden dış kaynaklara atıfta bulunur
 
 
 ```bash
-msf **&gt;** resource
+msf **>** resource
 Usage: resource path1 **[**path2 ...]
 ```
 
 
 ```bash
-msf **&gt;** resource karma.rc
+msf **>** resource karma.rc
 **[*********]** Processing karma.rc **for **ERB directives.
-resource **(**karma.rc_.txt**)&gt;** db_connect postgres:toor@127.0.0.1/msfbook
-resource **(**karma.rc_.txt**)&gt;** use auxiliary/server/browser_autopwn
+resource **(**karma.rc_.txt**)>** db_connect postgres:toor@127.0.0.1/msfbook
+resource **(**karma.rc_.txt**)>** use auxiliary/server/browser_autopwn
 ...snip...
 ```
 
@@ -445,7 +445,7 @@ Bu tür resource dosyaları, işlerinizi oldukça hızlandırabilir. msfconsole 
 
 
 ```bash
-root@kali:~# echo version **&gt;** version.rc
+root@kali:~# echo version **>** version.rc
 root@kali:~# msfconsole -r version.rc
 
  _                                                    _
@@ -463,10 +463,10 @@ Metasploit Pro -- type 'go_pro' to launch it now.
 + -- --**=[** 330 payloads - 32 encoders - 8 nops      **]**
 
 **[*********]** Processing version.rc **for **ERB directives.
-resource **(**version.rc**)&gt;** version
+resource **(**version.rc**)>** version
 Framework: 4.8.2-2014022601
 Console  : 4.8.2-2014022601.15168
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -479,7 +479,7 @@ msf **&gt;**
 
 
 ```bash
-meterpreter **&gt;** route -h
+meterpreter **>** route -h
 Usage: route **[**-h**]** command **[**args]
 ```
 
@@ -495,8 +495,8 @@ Supported commands:
    delete **[**subnet] **[**netmask] **[**gateway]
    list
 
-meterpreter **&gt;**
-meterpreter **&gt;** route
+meterpreter **>**
+meterpreter **>** route
 
 Network routes
 **==============**
@@ -522,7 +522,7 @@ msfconsole içerisinde arama yapmanızı sağlar. Basitçe aradığınız herhan
 
 
 ```bash
-msf **&gt;** search usermap_script
+msf **>** search usermap_script
 
 Matching Modules
 **================**
@@ -531,7 +531,7 @@ Matching Modules
    ----                                ---------------  ----       -----------
    exploit/multi/samba/usermap_script  2007-05-14       excellent  Samba "username map script" Command Execution
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -544,7 +544,7 @@ Anahtar kelimeleri kullanarak aramalarınızı çeşitlendirebilirsiniz.
 
 
 ```bash
-msf **&gt;** help search
+msf **>** help search
 Usage: search **[**keywords]
 
 Keywords:
@@ -558,7 +558,7 @@ Keywords:
   bid       :  Modules with a matching Bugtraq ID
   osvdb     :  Modules with a matching OSVDB ID
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -571,7 +571,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** search name:mysql
+msf **>** search name:mysql
 
 Matching Modules
 **================**
@@ -590,7 +590,7 @@ Matching Modules
    exploit/linux/mysql/mysql_yassl_hello              2008-01-04       good       MySQL yaSSL SSL Hello Message Buffer Overflow
    exploit/windows/mysql/mysql_payload                2009-01-16       excellent  Oracle MySQL **for **Microsoft Windows Payload Execution
    exploit/windows/mysql/mysql_yassl_hello            2008-01-04       average    MySQL yaSSL SSL Hello Message Buffer Overflow
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -603,7 +603,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** search path:scada
+msf **>** search path:scada
 
 Matching Modules
 **================**
@@ -625,7 +625,7 @@ Matching Modules
 
 
 ```bash
-msf **&gt;** search platform:aix
+msf **>** search platform:aix
 
 Matching Modules
 **================**
@@ -648,7 +648,7 @@ Matching Modules
 
 
 ```bash
-msf **&gt;** search type:exploit
+msf **>** search type:exploit
 
 Matching Modules
 **================**
@@ -671,7 +671,7 @@ Matching Modules
 
 
 ```bash
-msf **&gt;** search author:dookie
+msf **>** search author:dookie
 
 Matching Modules
 **================**
@@ -694,7 +694,7 @@ Birden fazla anahtar kelime kriteri girerek arama yapabilirsiniz.
 
 
 ```bash
-msf **&gt;** search cve:2011 author:jduck platform:linux
+msf **>** search cve:2011 author:jduck platform:linux
 
 Matching Modules
 **================**
@@ -714,7 +714,7 @@ Matching Modules
 
 
 ```bash
-msf &gt; sessions -h
+msf > sessions -h
 Usage: sessions [options]
 
 Active session manipulation and interaction.
@@ -722,16 +722,16 @@ Active session manipulation and interaction.
 OPTIONS:
 
     -K        Terminate all sessions
-    -c &lt;opt&gt;  Run a command on the session given with -i, or all
-    -d &lt;opt&gt;  Detach an interactive session
+    -c <opt>  Run a command on the session given with -i, or all
+    -d <opt>  Detach an interactive session
     -h        Help banner
-    -i &lt;opt&gt;  Interact with the supplied session ID
-    -k &lt;opt&gt;  Terminate session
+    -i <opt>  Interact with the supplied session ID
+    -k <opt>  Terminate session
     -l        List all active sessions
     -q        Quiet mode
     -r        Reset the ring buffer for the session given with -i, or all
-    -s &lt;opt&gt;  Run a script on the session given with -i, or all
-    -u &lt;opt&gt;  Upgrade a win32 shell to a meterpreter session
+    -s <opt>  Run a script on the session given with -i, or all
+    -u <opt>  Upgrade a win32 shell to a meterpreter session
     -v        List verbose fields
 ```
 
@@ -741,20 +741,20 @@ O anda bulunan tüm session (oturum) listesini görmek için `-l` parametresini 
 
 
 ```bash
-msf exploit**(**3proxy**)** **&gt;** sessions -l
+msf exploit**(**3proxy**)** **>** sessions -l
 
 Active sessions
 **===============**
 
   Id  Description    Tunnel
   --  -----------    ------
-  1   Command shell  192.168.1.101:33191 -&gt; 192.168.1.104:4444
+  1   Command shell  192.168.1.101:33191 -> 192.168.1.104:4444
 To interact with a given session, you just need to use the ‘-i’ switch followed by the Id number of the session.
 
-msf exploit**(**3proxy**)** **&gt;** sessions -i 1
+msf exploit**(**3proxy**)** **>** sessions -i 1
 **[*********]** Starting interaction with 1...
 
-C:WINDOWSsystem32&gt;
+C:WINDOWSsystem32>
 ```
 
 
@@ -767,9 +767,9 @@ C:WINDOWSsystem32&gt;
 
 
 ```bash
-msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** **&gt;** set RHOST 172.16.194.134
-RHOST **=&gt;** 172.16.194.134
-msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** **&gt;** show options
+msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** **>** set RHOST 172.16.194.134
+RHOST **=>** 172.16.194.134
+msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** **>** show options
 
 Module options **(**exploit/windows/smb/ms09_050_smb2_negotiate_func_index**)**:
 
@@ -792,7 +792,7 @@ Exploit target:
 
 
 ```bash
-msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **&gt;** show encoders
+msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** **>** show encoders
 
 Compatible Encoders
 **===================**
@@ -828,11 +828,11 @@ Compatible Encoders
 
 
 ```bash
-msf **&gt;** set RHOSTS 192.168.1.0/24
-RHOSTS **=&gt;** 192.168.1.0/24
-msf **&gt;** set THREADS 50
-THREADS **=&gt;** 50
-msf **&gt;** set
+msf **>** set RHOSTS 192.168.1.0/24
+RHOSTS **=>** 192.168.1.0/24
+msf **>** set THREADS 50
+THREADS **=>** 50
+msf **>** set
 
 Global
 **======**
@@ -842,18 +842,18 @@ Global
   RHOSTS   192.168.1.0/24
   THREADS  50
 
-msf **&gt;** unset THREADS
+msf **>** unset THREADS
 Unsetting THREADS...
-msf **&gt;** unset all
+msf **>** unset all
 Flushing datastore...
-msf **&gt;** set
+msf **>** set
 
 Global
 **======**
 
 No entries **in **data store.
 
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -866,12 +866,12 @@ Bir modül seçtiniz ve aktif hale getirdiniz. Muhtemelen o modülün RHOST değ
 
 
 ```bash
-msf **&gt;** setg LHOST 192.168.1.101
-LHOST **=&gt;** 192.168.1.101
-msf **&gt;** setg RHOSTS 192.168.1.0/24
-RHOSTS **=&gt;** 192.168.1.0/24
-msf **&gt;** setg RHOST 192.168.1.136
-RHOST **=&gt;** 192.168.1.136
+msf **>** setg LHOST 192.168.1.101
+LHOST **=>** 192.168.1.101
+msf **>** setg RHOSTS 192.168.1.0/24
+RHOSTS **=>** 192.168.1.0/24
+msf **>** setg RHOST 192.168.1.136
+RHOST **=>** 192.168.1.136
 ```
 
 
@@ -884,9 +884,9 @@ Tüm ayarlamaları yaptınız ve msfconsole dan çıkmak istiyorsunuz. Tekrar gi
 
 
 ```bash
-msf **&gt;** save
+msf **>** save
 Saved configuration to: /root/.msf4/config
-msf **&gt;**
+msf **>**
 ```
 
 
@@ -899,7 +899,7 @@ msf **&gt;**
 
 
 ```bash
-msf **&gt;** show
+msf **>** show
 
 Encoders
 **========**
@@ -922,7 +922,7 @@ Encoders
 
 
 ```bash
-msf **&gt;** show auxiliary
+msf **>** show auxiliary
 Auxiliary
 **=========**
 
@@ -940,7 +940,7 @@ Auxiliary
 
 
 ```bash
-msf **&gt;** show exploits
+msf **>** show exploits
 
 Exploits
 **========**
@@ -959,7 +959,7 @@ Exploits
 
 
 ```bash
-msf **&gt;** show payloads
+msf **>** show payloads
 
 Payloads
 **========**
@@ -974,7 +974,7 @@ Payloads
 
 
 ```bash
-msf  exploit**(**ms08_067_netapi**)** **&gt;** show payloads
+msf  exploit**(**ms08_067_netapi**)** **>** show payloads
 
 Compatible Payloads
 **===================**
@@ -993,7 +993,7 @@ Compatible Payloads
 
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** **&gt;** show options
+msf exploit**(**ms08_067_netapi**)** **>** show options
 
 Module options:
 
@@ -1016,7 +1016,7 @@ Seçtiğiniz modülün hangi işletim sistemlerinde kullanabileceğinden emin de
 
 
 ```bash
-msf  exploit**(**ms08_067_netapi**)** **&gt;** show targets
+msf  exploit**(**ms08_067_netapi**)** **>** show targets
 
 Exploit targets:
 
@@ -1036,7 +1036,7 @@ Modül hakkında en detaylı bilgiyi görmek için `show advanced` komutunu kull
 
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** **&gt;** show advanced
+msf exploit**(**ms08_067_netapi**)** **>** show advanced
 
 Module advanced options:
 
@@ -1061,7 +1061,7 @@ Metasploit içerisindeki kullanabileceğiniz tüm encoder listesini görmek içi
 
 
 ```bash
-msf **&gt;** show encoders
+msf **>** show encoders
 Compatible Encoders
 **===================**
 
@@ -1106,7 +1106,7 @@ NOP Generator denilen kod üreticilerinin listesini `show nops` komutu ile ile g
 
 
 ```bash
-msf **&gt;** show nops
+msf **>** show nops
 NOP Generators
 **==============**
 
@@ -1132,8 +1132,8 @@ Yaptığınız aramalar sonunda bir modülü kullanmaya karar verdiniz. İşte b
 
 
 ```bash
-msf **&gt;** use dos/windows/smb/ms09_001_write
-msf auxiliary**(**ms09_001_write**)** **&gt;** show options
+msf **>** use dos/windows/smb/ms09_001_write
+msf auxiliary**(**ms09_001_write**)** **>** show options
 
 Module options:
 
@@ -1142,7 +1142,7 @@ Module options:
    RHOST                   yes       The target address
    RPORT  445              yes       Set the SMB service port
 
-msf auxiliary**(**ms09_001_write**)** **&gt;**
+msf auxiliary**(**ms09_001_write**)** **>**
 ```
 
 

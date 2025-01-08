@@ -17,21 +17,11 @@ tags:
 
 
 Gizlilik endişeleri daha yaygın hale geldikçe, birçok kullanıcı web'de gezinirken kişisel bilgilerini korumanın yollarını arıyor. İster sonsuz reklamları görmekten bıkmış olun, ister izleyicilerden endişe ediyor olun veya sadece daha temiz bir tarama deneyiminin tadını çıkarmak istiyor olun, AdGuard Home uygulaması paha biçilmez bir araç olabilir. Bu blog yazısında, AdGuard Home'un ne olduğunu, nasıl çalıştığını ve ortalama bir kullanıcının bile nasıl kurup bundan faydalanabileceğini inceleyeceğiz.
-
-
-
-
-
 AdGuard Home Nedir?
 
 
 
 AdGuard Home, reklamları ve izleyicileri engellemek için ağ genelinde bir yazılımdır. Esasen, ağınıza bağlı tüm cihazlarda istenmeyen içerikleri filtreleyebilen yerel bir DNS sunucusu olarak işlev görür. Tarayıcı tabanlı reklam engelleyicilerin aksine, AdGuard Home ağ düzeyinde çalışır, yani akıllı telefonlardan ve tabletlerden akıllı TV'lere ve oyun konsollarına kadar her cihazda reklamları engelleyebilir. Bu, gizliliğini artırmak ve tüm cihazlarında dikkat dağıtıcı unsurları azaltmak isteyen kişiler için güçlü ve çok yönlü bir çözüm olmasını sağlar.
-
-
-
-
-
 Neden AdGuard Home'u Kullanmalısınız?
 
 
@@ -48,11 +38,6 @@ Gizliliğinizi korumak için başka bir yazılıma ihtiyacınız olup olmadığ�
 * **Özelleştirilebilir Filtreler** AdGuard Home ile hangi içerik türlerini engelleyeceğinizi seçerek deneyiminizi kişiselleştirebilirsiniz. Belirli web sitelerini, belirli reklam türlerini veya yetişkin siteleri veya sosyal medya gibi içerik kategorilerini bile engelleyebilirsiniz.
 
 * **Açık Kaynaklı ve Ücretsiz** AdGuard Home açık kaynaklı bir projedir, yani şeffaftır ve geliştiricilerden oluşan bir topluluk tarafından düzenli olarak geliştirilir. Ayrıca kullanımı ücretsizdir, bu da onu çok çeşitli kullanıcılar için erişilebilir kılar.
-
-
-
-
-
 
 AdGuard Home Nasıl Çalışır?
 
@@ -84,11 +69,6 @@ AdGuard Home, internete bağlanmak için DNS'e güvenen her türlü cihazla çal
 
 
 AdGuard Home, düzenli olarak güncellenen önceden tanımlanmış bir filtre setiyle birlikte gelir. Ayrıca, özel ihtiyaçlarınıza göre özel kurallar da oluşturabilirsiniz. Örneğin, belirli etki alanlarını engellemek, favori web sitelerinizden belirli reklamlara izin vermek veya kumar veya yetişkin web siteleri gibi belirli içerik kategorilerine erişimi kısıtlamak isteyebilirsiniz.
-
-
-
-
-
 Ortalama Kullanıcılar İçin AdGuard Home Kurulumu
 
 
@@ -150,11 +130,6 @@ Cihazlarınız bağlandıktan sonra filtreleri özelleştirmeye başlayabilirsin
 
 * DNS isteklerinin ve engellenen sorguların günlüklerini görüntüleyin
 
-
-
-
-
-
 AdGuard Home'u Kullanmak İçin En İyi Uygulamalar
 
 
@@ -167,11 +142,6 @@ AdGuard Home'dan en iyi şekilde yararlanmanıza yardımcı olacak birkaç ipucu
 * **Önemli Siteleri Beyaz Listeye Alın** Bazı web siteleri reklamlar veya belirli betikler engellendiğinde düzgün çalışmayabilir. Bu durumlarda, AdGuard Home'u tamamen devre dışı bırakmadan, bu sitelerde reklamlara veya izlemeye izin vermek için belirli etki alanlarını beyaz listeye alabilirsiniz.
 
 * **Şüpheli Aktiviteler İçin Günlükleri İzleyin** AdGuard Home panosu, DNS isteklerinin gerçek zamanlı günlüklerini sağlar. Bu, şüpheli sorguları veya kötü amaçlı etki alanlarına erişim girişimlerini belirlemenize yardımcı olabilir.
-
-
-
-
-
 
 AdGuard Home Sizin İçin Doğru Seçim mi?
 
@@ -190,11 +160,6 @@ AdGuard Home, gizliliğini artırmak, reklamları engellemek ve birden fazla cih
 
 
 Kurulum süreci nispeten basittir ve özelleştirme seçenekleri geniştir, bu da deneyimi özel ihtiyaçlarınıza göre uyarlamanıza olanak tanır. Ortalama bir kullanıcı için bile AdGuard Home, basitlik ve gücün sağlam bir karışımını sunarak onu ağ genelinde reklam engelleme ve gizlilik koruması için en iyi seçeneklerden biri yapar.
-
-
-
-
-
 Çözüm
 
 

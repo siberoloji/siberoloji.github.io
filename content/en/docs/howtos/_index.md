@@ -1,7 +1,7 @@
 ---
-title: How-to Documents
+title: How-tos
 type: page
-slug: howto-documents
+url: howto-documents
 simple_list: true
 ---
 

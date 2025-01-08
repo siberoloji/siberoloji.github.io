@@ -163,12 +163,12 @@ Open Apache’s configuration file or create a new configuration file specifical
 
 * 
 Add the following configuration:
-<pre><code class="language-apache">&lt;Directory /var/www/html/webdav&gt;
+<pre><code class="language-apache"><Directory /var/www/html/webdav>
     Dav On
     Options Indexes FollowSymLinks
     AllowOverride None
     Require valid-user
-&lt;/Directory&gt;
+</Directory>
 
 Alias /webdav /var/www/html/webdav
 `</pre>
@@ -190,7 +190,7 @@ Enter a password when prompted. To add more users, omit the `-c` flag:
 <pre><code class="language-bash">sudo htpasswd /etc/httpd/.htpasswd another_user
 `</pre>
 #### Step 3: Update Apache Configuration for Authentication
-In your `webdav.conf` file, add the following lines within the `&lt;Directory&gt;` block:
+In your `webdav.conf` file, add the following lines within the `<Directory>` block:
 <pre><code class="language-apache">AuthType Basic
 AuthName &quot;Restricted WebDAV Folder&quot;
 AuthUserFile /etc/httpd/.htpasswd

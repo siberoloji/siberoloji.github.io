@@ -209,7 +209,7 @@ Starting database at /home/umut/.msf4/db...success
 + -- --**=[** 486 payloads - 40 encoders - 9 nops             **]**
 + -- --**=[** Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> **]**
 
-msf **&gt;** 
+msf **>** 
 ```
 
 
@@ -222,9 +222,9 @@ MSF programını `msfconsole` komutuyla başlattınız ve bir takım işlemlerin
 
 
 ```bash
-msf **&gt;** loadpath /home/umut/.msf4/modules
+msf **>** loadpath /home/umut/.msf4/modules
 Loaded 0 modules:
-msf **&gt;** ```
+msf **>** ```
 
 
 

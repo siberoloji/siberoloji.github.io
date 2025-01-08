@@ -22,11 +22,6 @@ In the world of penetration testing and ethical hacking, the ability to trace ro
 
 
 In this blog post, we’ll dive deep into what **0trace** is, how it works, and why it is essential for network analysts and security professionals. We’ll also walk through practical steps for using **0trace** in Kali Linux, while exploring the key scenarios where this tool shines. You may want to look our <a href="https://www.siberoloji.com/full-list-of-kali-linux-tools/" target="_blank" rel="noopener" title="">full list of Kali Linux Tools</a> page.
-
-
-
-
-
 **1. What is 0trace?**
 
 
@@ -192,7 +187,7 @@ Once **0trace** is installed, using it to trace routes is relatively straightfor
 
 
 ```bash
-   sudo 0trace.sh &lt;target_host&gt; &lt;target_port&gt;
+   sudo 0trace.sh <target_host> <target_port>
 ```
 
 

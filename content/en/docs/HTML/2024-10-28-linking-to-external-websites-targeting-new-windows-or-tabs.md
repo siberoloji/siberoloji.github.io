@@ -3,7 +3,7 @@ draft: false
 
 title:  'Linking to External Websites: Targeting New Windows or Tabs'
 date: '2024-10-28T11:18:51+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  'In this post, we’ll explore how target="_blank" works, when to use it, its benefits and drawbacks, and some best practices to ensure an optimal user experience.' 
  
 url:  /linking-to-external-websites-targeting-new-windows-or-tabs/
@@ -16,30 +16,20 @@ tags:
 
 
 When linking to external websites in your content, an essential consideration is deciding whether the links should open in the same window or a new one. This choice, commonly implemented by using the `target="_blank"` attribute in HTML, can significantly affect user experience and has both pros and cons depending on the context of your content. In this post, we’ll explore how `target="_blank"` works, when to use it, its benefits and drawbacks, and some best practices to ensure an optimal user experience.
-
-
-
-
-
 What Does `target="_blank"` Mean?
 
 
 
-In HTML, links are typically created with the `&lt;a&gt;` (anchor) tag, where the `href` attribute specifies the URL destination. Adding `target="_blank"` to a link tells the browser to open the link in a new tab or window, depending on the user’s settings and browser. Here’s an example:
+In HTML, links are typically created with the `<a>` (anchor) tag, where the `href` attribute specifies the URL destination. Adding `target="_blank"` to a link tells the browser to open the link in a new tab or window, depending on the user’s settings and browser. Here’s an example:
 
 
 ```bash
-&lt;a href="https://example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;
+<a href="https://example.com" target="_blank">Visit Example.com</a>
 ```
 
 
 
 When applied, this attribute opens the link in a new tab, allowing the user to view the external site without leaving the original page.
-
-
-
-
-
 Benefits of Opening External Links in a New Tab
 
 
@@ -66,11 +56,6 @@ Opening links in a new tab helps maintain the continuity of a user’s experienc
 
 
 If your content includes numerous external citations or reference links, opening these in a new tab can be beneficial. Users can quickly refer to these sources without losing track of the main content, which is especially helpful in research-based articles, guides, and academic content.
-
-
-
-
-
 Potential Drawbacks of `target="_blank"`
 
 
@@ -97,11 +82,6 @@ Opening multiple links in new tabs can quickly clutter a user’s browser, espec
 
 
 For users who rely on screen readers or other accessibility tools, opening new tabs can cause confusion, as they may not be aware that a new tab has opened. This can be mitigated by adding a visual indicator, such as an icon or text, that informs users the link will open in a new tab.
-
-
-
-
-
 Best Practices for Using `target="_blank"`
 
 
@@ -131,7 +111,7 @@ When using `target="_blank"`, add `rel="noopener noreferrer"` to the link. This 
 
 
 ```bash
-&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Visit Example.com&lt;/a&gt;
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Example.com</a>
 ```
 
 
@@ -140,11 +120,6 @@ When using `target="_blank"`, add `rel="noopener noreferrer"` to the link. This 
 
 
 Think about your audience’s needs when deciding whether to use `target="_blank"`. For content aimed at a general audience, consider using it only when linking to websites or resources where users may want to keep the original page open.
-
-
-
-
-
 Final Thoughts
 
 

@@ -34,11 +34,11 @@ A comparator is a logic circuit that compares two binary inputs and produces an 
 In its simplest form, a comparator will compare two binary values, A and B, and generate three possible outcomes:
 
 
-* **A &gt; B** (A is greater than B)
+* **A > B** (A is greater than B)
 
 * **A = B** (A is equal to B)
 
-* **A &lt; B** (A is less than B)
+* **A < B** (A is less than B)
 
 
 
@@ -73,9 +73,9 @@ A 1-bit comparator compares two single-bit binary inputs, A and B. For each bit 
 
 * If A = B, the output will be 1 for equality.
 
-* If A &gt; B, the output will indicate that A is greater.
+* If A > B, the output will indicate that A is greater.
 
-* If A &lt; B, the output will indicate that A is smaller.
+* If A < B, the output will indicate that A is smaller.
 
 
 
@@ -84,7 +84,7 @@ A truth table can represent the 1-bit comparator:
 
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Input A</th><th>Input B</th><th>A &gt; B</th><th>A = B</th><th>A &lt; B</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Input A</th><th>Input B</th><th>A > B</th><th>A = B</th><th>A < B</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 
@@ -98,11 +98,11 @@ This simple table outlines the basic operation of a 1-bit comparator, and the co
 For comparing larger numbers, an N-bit comparator is needed. An N-bit comparator compares two binary numbers, A and B, which each have N bits. It will output three signals:
 
 
-* **A &gt; B**: This is true when the binary value of A is greater than B.
+* **A > B**: This is true when the binary value of A is greater than B.
 
 * **A = B**: This is true when both binary values are equal.
 
-* **A &lt; B**: This is true when A is less than B.
+* **A < B**: This is true when A is less than B.
 
 
 
@@ -133,7 +133,7 @@ For two binary numbers to be equal, all corresponding bits must be equal. An XNO
 For an N-bit comparator, equality is achieved when all bit comparisons are true (i.e., all XNOR outputs are 1).
 
 
-#### b. **Greater and Less Comparison (A &gt; B, A &lt; B)**
+#### b. **Greater and Less Comparison (A > B, A < B)**
 
 
 

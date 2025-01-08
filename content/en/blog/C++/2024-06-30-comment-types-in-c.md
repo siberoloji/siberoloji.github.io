@@ -21,12 +21,12 @@ We are demontrating single line and multi line comments in C++
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 // we will demonstrate the use of comments  in this program
 int main() {
     // This is a single line comment
-    cout &lt;&lt; "Hello, World!" &lt;&lt; endl; // This is also a single line comment
+    cout << "Hello, World!" << endl; // This is also a single line comment
     /* This is a multi-line comment
     This is a multi-line comment
     This is a multi-line comment

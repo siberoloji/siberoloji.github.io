@@ -136,13 +136,13 @@ Verilog supports a wide range of operators, including:
 
 * Logical operators: &amp;&amp;, ||, !
 
-* Relational operators: &lt;, &gt;, &lt;=, &gt;=, ==, !=
+* Relational operators: <, >, <=, >=, ==, !=
 
 * Bitwise operators: &amp;, |, ^, ~
 
 * Reduction operators: &amp;, ~&amp;, |, ~|, ^, ~^
 
-* Shift operators: &lt;&lt;, &gt;&gt;
+* Shift operators: <<, >>
 
 * Concatenation operator: {}
 

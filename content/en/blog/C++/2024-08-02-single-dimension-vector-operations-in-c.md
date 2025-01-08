@@ -25,8 +25,8 @@ The provided code demonstrates various operations on a `std::vector` in C++.
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;vector&gt;
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -43,71 +43,71 @@ using namespace std;
  * \return int Exit status of the program.
  */
 int main() {
-    vector&lt;int&gt; numbers(5);
-    cout &lt;&lt; "Initial vector elements: " &lt;&lt; endl;
+    vector<int> numbers(5);
+    cout << "Initial vector elements: " << endl;
 
     // Fill the vector with numbers
-    for (int i = 0; i &lt; numbers.size(); i++) {
+    for (int i = 0; i < numbers.size(); i++) {
         numbers[i] = i;
-        cout &lt;&lt; numbers[i] &lt;&lt; endl;
+        cout << numbers[i] << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Add a number to the end of the vector
     numbers.push_back(5);
-    cout &lt;&lt; "5 added as the last element: " &lt;&lt; numbers.back() &lt;&lt; endl;
+    cout << "5 added as the last element: " << numbers.back() << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Remove the last number from the vector
     numbers.pop_back();
-    cout &lt;&lt; "5 removed, now the last element is: " &lt;&lt; numbers[numbers.size() - 1] &lt;&lt; endl;
+    cout << "5 removed, now the last element is: " << numbers[numbers.size() - 1] << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Insert a number at the beginning of the vector
     numbers.insert(numbers.begin(), 10);
-    cout &lt;&lt; "10 added as front number. Now the front number of the vector is: " &lt;&lt; numbers.front() &lt;&lt; endl;
+    cout << "10 added as front number. Now the front number of the vector is: " << numbers.front() << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Remove the first number from the vector
     numbers.erase(numbers.begin());
-    cout &lt;&lt; "Front number removed. The new front is: " &lt;&lt; numbers.front() &lt;&lt; endl;
+    cout << "Front number removed. The new front is: " << numbers.front() << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Insert a number at the 3rd position of the vector
     numbers.insert(numbers.begin() + 2, 20);
-    cout &lt;&lt; "20 added to the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;
+    cout << "20 added to the 3rd position: " << numbers[2] << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Remove the number at the 3rd position of the vector
     numbers.erase(numbers.begin() + 2);
-    cout &lt;&lt; "20 removed from the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;
+    cout << "20 removed from the 3rd position: " << numbers[2] << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     // Clear the vector
     numbers.clear();
-    cout &lt;&lt; "Numbers in the vector after clearing: " &lt;&lt; endl;
+    cout << "Numbers in the vector after clearing: " << endl;
     for (const int number : numbers) {
-        cout &lt;&lt; number &lt;&lt; endl;
+        cout << number << endl;
     }
-    cout &lt;&lt; "-------------------" &lt;&lt; endl;
+    cout << "-------------------" << endl;
 
     return 0;
 }
@@ -123,10 +123,10 @@ The provided code demonstrates various operations on a `std::vector` in C++. The
 
 
 ```cpp
-vector&lt;int&gt; numbers(5);
-for (int i = 0; i &lt; numbers.size(); i++) {
+vector<int> numbers(5);
+for (int i = 0; i < numbers.size(); i++) {
     numbers[i] = i;
-    cout &lt;&lt; numbers[i] &lt;&lt; endl;
+    cout << numbers[i] << endl;
 }
 ```
 
@@ -137,7 +137,7 @@ Next, the code adds an element to the end of the vector using `push_back` and pr
 
 ```cpp
 numbers.push_back(5);
-cout &lt;&lt; "5 added as the last element: " &lt;&lt; numbers.back() &lt;&lt; endl;
+cout << "5 added as the last element: " << numbers.back() << endl;
 ```
 
 
@@ -147,7 +147,7 @@ The last element is then removed using `pop_back`, and the code prints the new l
 
 ```cpp
 numbers.pop_back();
-cout &lt;&lt; "5 removed, now the last element is: " &lt;&lt; numbers[numbers.size() - 1] &lt;&lt; endl;
+cout << "5 removed, now the last element is: " << numbers[numbers.size() - 1] << endl;
 ```
 
 
@@ -157,7 +157,7 @@ The code proceeds to insert an element at the beginning of the vector using `ins
 
 ```cpp
 numbers.insert(numbers.begin(), 10);
-cout &lt;&lt; "10 added as front number. Now the front number of the vector is: " &lt;&lt; numbers.front() &lt;&lt; endl;
+cout << "10 added as front number. Now the front number of the vector is: " << numbers.front() << endl;
 ```
 
 
@@ -167,7 +167,7 @@ The first element is then removed using `erase`, and the new first element is pr
 
 ```cpp
 numbers.erase(numbers.begin());
-cout &lt;&lt; "Front number removed. The new front is: " &lt;&lt; numbers.front() &lt;&lt; endl;
+cout << "Front number removed. The new front is: " << numbers.front() << endl;
 ```
 
 
@@ -177,7 +177,7 @@ An element is inserted at the third position, and the element at that position i
 
 ```cpp
 numbers.insert(numbers.begin() + 2, 20);
-cout &lt;&lt; "20 added to the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;
+cout << "20 added to the 3rd position: " << numbers[2] << endl;
 ```
 
 
@@ -187,7 +187,7 @@ The element at the third position is removed, and the new element at that positi
 
 ```cpp
 numbers.erase(numbers.begin() + 2);
-cout &lt;&lt; "20 removed from the 3rd position: " &lt;&lt; numbers[2] &lt;&lt; endl;
+cout << "20 removed from the 3rd position: " << numbers[2] << endl;
 ```
 
 
@@ -197,9 +197,9 @@ Finally, the vector is cleared using `clear`, and the code prints the contents o
 
 ```cpp
 numbers.clear();
-cout &lt;&lt; "Numbers in the vector after clearing: " &lt;&lt; endl;
+cout << "Numbers in the vector after clearing: " << endl;
 for (const int number : numbers) {
-    cout &lt;&lt; number &lt;&lt; endl;
+    cout << number << endl;
 }
 ```
 
@@ -284,9 +284,9 @@ Common operations performed on `std::vector` in C++ include:
 
 
 ```cpp
-   std::vector&lt;int&gt; vec; // Empty vector
-   std::vector&lt;int&gt; vec(5); // Vector with 5 default-initialized elements
-   std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5}; // Vector initialized with a list of elements
+   std::vector<int> vec; // Empty vector
+   std::vector<int> vec(5); // Vector with 5 default-initialized elements
+   std::vector<int> vec = {1, 2, 3, 4, 5}; // Vector initialized with a list of elements
 ```
 
 
@@ -340,16 +340,16 @@ Common operations performed on `std::vector` in C++ include:
 
 
 ```cpp
-   for (int i = 0; i &lt; vec.size(); ++i) {
-       std::cout &lt;&lt; vec[i] &lt;&lt; std::endl;
+   for (int i = 0; i < vec.size(); ++i) {
+       std::cout << vec[i] << std::endl;
    }
 
    for (int elem : vec) {
-       std::cout &lt;&lt; elem &lt;&lt; std::endl;
+       std::cout << elem << std::endl;
    }
 
    for (auto it = vec.begin(); it != vec.end(); ++it) {
-       std::cout &lt;&lt; *it &lt;&lt; std::endl;
+       std::cout << *it << std::endl;
    }
 ```
 
@@ -373,7 +373,7 @@ Common operations performed on `std::vector` in C++ include:
 
 
 ```cpp
-   std::vector&lt;int&gt; vec2 = {7, 8, 9};
+   std::vector<int> vec2 = {7, 8, 9};
    vec.swap(vec2); // Swap contents with another vector
    vec = vec2; // Assign contents from another vector```
 

@@ -36,11 +36,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to Firewalls and SELinux
 
 
@@ -60,11 +55,6 @@ A **firewall** is a system that monitors and controls incoming and outgoing netw
 
 
 Both firewall and SELinux are crucial for server security. While the firewall focuses on network traffic, SELinux controls permissions within the operating system. Let's start with configuring the firewall on AlmaLinux 9.
-
-
-
-
-
 2. Installing and Enabling the Firewall
 
 
@@ -103,11 +93,6 @@ sudo firewall-cmd --state```
 
 
 If everything is configured correctly, it should display `running`.
-
-
-
-
-
 3. Configuring Firewall with Example Commands
 
 
@@ -210,11 +195,6 @@ sudo firewall-cmd --list-all
 
 
 This will show a detailed breakdown of the services, ports, and protocols in the active zone.
-
-
-
-
-
 4. Understanding SELinux in AlmaLinux 9
 
 
@@ -244,11 +224,6 @@ sestatus
 
 
 This will display whether SELinux is enforcing, permissive, or disabled.
-
-
-
-
-
 5. Configuring SELinux with Example Commands
 
 
@@ -329,11 +304,6 @@ sudo ausearch -m avc```
 
 
 This will show a log of denied actions, which is helpful for troubleshooting when SELinux is blocking legitimate processes.
-
-
-
-
-
 6. Best Practices for Managing Firewall and SELinux
 
 
@@ -350,11 +320,6 @@ To ensure maximum security and efficiency, consider the following best practices
 * **Test Before Enforcing:** When configuring SELinux policies, use permissive mode to test before switching to enforcing mode.
 
 * **Regular Updates:** Keep both your firewall rules and SELinux policies up to date with the latest security patches.
-
-
-
-
-
 
 7. Conclusion
 

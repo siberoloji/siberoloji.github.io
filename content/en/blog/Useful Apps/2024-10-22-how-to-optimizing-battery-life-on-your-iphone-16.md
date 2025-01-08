@@ -59,7 +59,7 @@ When your battery is running low, **Low Power Mode** is a handy tool. It tempora
 #### How to Enable Low Power Mode:
 
 
-* Go to **Settings** &gt; **Battery**.
+* Go to **Settings** > **Battery**.
 
 * Toggle **Low Power Mode** on.
 
@@ -82,7 +82,7 @@ The display is one of the biggest power consumers on the iPhone 16, especially w
 
 * **Reduce Brightness**: Swipe down from the top-right corner of your screen to open **Control Center**, then drag the brightness slider down.
 
-* **Auto-Brightness**: Go to **Settings** &gt; **Accessibility** &gt; **Display &amp; Text Size** and toggle on **Auto-Brightness**. This setting automatically adjusts the screen brightness based on ambient light.
+* **Auto-Brightness**: Go to **Settings** > **Accessibility** > **Display &amp; Text Size** and toggle on **Auto-Brightness**. This setting automatically adjusts the screen brightness based on ambient light.
 
 
 
@@ -101,7 +101,7 @@ The OLED screen on the iPhone 16 benefits from **Dark Mode**, which reduces the 
 #### How to Enable Dark Mode:
 
 
-* Go to **Settings** &gt; **Display &amp; Brightness**.
+* Go to **Settings** > **Display &amp; Brightness**.
 
 * Choose **Dark** under the Appearance section.
 
@@ -122,7 +122,7 @@ Alternatively, you can schedule Dark Mode to turn on automatically at night, fur
 #### How to Manage Background App Refresh:
 
 
-* Go to **Settings** &gt; **General** &gt; **Background App Refresh**.
+* Go to **Settings** > **General** > **Background App Refresh**.
 
 * You can disable it for individual apps or turn it off completely.
 
@@ -143,7 +143,7 @@ Location Services are important for apps like Maps, but having multiple apps acc
 #### How to Adjust Location Services:
 
 
-* Go to **Settings** &gt; **Privacy &amp; Security** &gt; **Location Services**.
+* Go to **Settings** > **Privacy &amp; Security** > **Location Services**.
 
 * Disable location for apps that don’t need it, or set them to **While Using the App** instead of **Always**.
 
@@ -164,7 +164,7 @@ Push notifications activate your screen and can wake up the processor, draining 
 #### How to Manage Notifications:
 
 
-* Open **Settings** &gt; **Notifications**.
+* Open **Settings** > **Notifications**.
 
 * Select individual apps and toggle off **Allow Notifications** if they aren’t important.
 
@@ -185,7 +185,7 @@ The iPhone 16 supports **5G** connectivity, which offers blazing-fast internet s
 #### How to Manage 5G Settings:
 
 
-* Go to **Settings** &gt; **Cellular** &gt; **Cellular Data Options** &gt; **Voice &amp; Data**.
+* Go to **Settings** > **Cellular** > **Cellular Data Options** > **Voice &amp; Data**.
 
 * Select **LTE** to disable 5G or choose **5G Auto**, which allows the iPhone to use 5G only when it won’t significantly affect battery life.
 
@@ -229,7 +229,7 @@ Apple’s iOS includes various animations and visual effects that, while appeali
 #### How to Reduce Motion and Visual Effects:
 
 
-* Go to **Settings** &gt; **Accessibility** &gt; **Motion**.
+* Go to **Settings** > **Accessibility** > **Motion**.
 
 * Enable **Reduce Motion** to limit animations.
 
@@ -252,7 +252,7 @@ Apple regularly releases software updates that include improvements to power man
 #### How to Check for Software Updates:
 
 
-* Go to **Settings** &gt; **General** &gt; **Software Update**.
+* Go to **Settings** > **General** > **Software Update**.
 
 * If an update is available, tap **Download and Install**.
 
@@ -273,9 +273,9 @@ If you're still experiencing poor battery life after trying the above methods, r
 #### How to Reset All Settings:
 
 
-* Go to **Settings** &gt; **General** &gt; **Transfer or Reset iPhone**.
+* Go to **Settings** > **General** > **Transfer or Reset iPhone**.
 
-* Tap **Reset** &gt; **Reset All Settings**.
+* Tap **Reset** > **Reset All Settings**.
 
 
 

@@ -29,16 +29,16 @@ Add this code to the activity.
 
 
 ```kotlin
-&lt;activity
+<activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="fullSensor"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 ```

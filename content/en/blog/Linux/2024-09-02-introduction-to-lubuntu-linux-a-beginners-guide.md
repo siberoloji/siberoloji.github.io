@@ -226,7 +226,7 @@ sudo apt install vlc```
 One of the key advantages of Lubuntu is its ability to run smoothly on older hardware while still offering customization options. While LXQt is designed to be lightweight, it also allows you to personalize your desktop environment to better suit your preferences.
 
 
-* **Themes:** Lubuntu comes with several built-in themes that you can apply to change the look and feel of your desktop. You can access and change themes through **Preferences &gt; LXQt Settings &gt; Appearance**.
+* **Themes:** Lubuntu comes with several built-in themes that you can apply to change the look and feel of your desktop. You can access and change themes through **Preferences > LXQt Settings > Appearance**.
 
 * **Panels:** You can add, remove, or customize panels (the bars at the top or bottom of your screen) to organize your desktop the way you like. Right-click on a panel to access the configuration options.
 
@@ -245,7 +245,7 @@ LXQt, the desktop environment used by Lubuntu, offers a range of features that e
 
 * **QuickLaunch:** Lubuntu’s QuickLaunch feature allows you to add frequently used applications to your panel for easy access. Simply drag and drop applications onto the panel or use the panel settings to configure QuickLaunch.
 
-* **Power Management:** Lubuntu includes power management tools that help you optimize battery life on laptops or manage power settings on desktops. You can access these settings through **Preferences &gt; LXQt Settings &gt; Power Management**.
+* **Power Management:** Lubuntu includes power management tools that help you optimize battery life on laptops or manage power settings on desktops. You can access these settings through **Preferences > LXQt Settings > Power Management**.
 
 
 
@@ -281,7 +281,7 @@ Reboot your computer, and the Wi-Fi should start working.
 
 
 
-If you’re experiencing screen resolution issues, you can adjust the display settings from **Preferences &gt; LXQt Settings &gt; Monitor Settings**. Choose the appropriate resolution for your monitor and apply the changes.
+If you’re experiencing screen resolution issues, you can adjust the display settings from **Preferences > LXQt Settings > Monitor Settings**. Choose the appropriate resolution for your monitor and apply the changes.
 
 
 #### 5.3. Software Not Available

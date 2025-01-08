@@ -63,7 +63,7 @@ Adım 2: Kuruluma Hazırlık
 
 * **Antivirüs  Yazılımını** Devre Dışı Bırakın : Yükleyiciyi çalıştırmadan önce, herhangi bir antivirüs programını geçici olarak devre dışı bırakın. Bu, Metasploit'i yanlışlıkla kötü amaçlı yazılım olarak işaretlemelerini önler.
 
-* **Windows Güvenlik Duvarını devre dışı bırakın** : Denetim Masası &gt; Sistem ve Güvenlik &gt; Windows Defender Güvenlik Duvarı'na gidin ve güvenlik duvarını geçici olarak kapatın.
+* **Windows Güvenlik Duvarını devre dışı bırakın** : Denetim Masası > Sistem ve Güvenlik > Windows Defender Güvenlik Duvarı'na gidin ve güvenlik duvarını geçici olarak kapatın.
 
 
 

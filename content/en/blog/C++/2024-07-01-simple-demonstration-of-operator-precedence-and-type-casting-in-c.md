@@ -27,7 +27,7 @@ The provided C++ code is a simple demonstration of operator precedence and type 
 ```cpp
 // Let's demonstrate how to use operator priority in C++
 
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -36,20 +36,20 @@ int main() {
     int num3 = 3;
     int num4 = 4;
 
-    double result1 = static_cast&lt;double&gt;(num1 + num2 * num3) / num4;
-    double result2 = static_cast&lt;double&gt;((num1 + num2) * num3) / num4;
-    double result3 = static_cast&lt;double&gt;((num1 + num2) * (num3 / num4));
+    double result1 = static_cast<double>(num1 + num2 * num3) / num4;
+    double result2 = static_cast<double>((num1 + num2) * num3) / num4;
+    double result3 = static_cast<double>((num1 + num2) * (num3 / num4));
 
-    double result4 = static_cast&lt;double&gt;((num1 + num2) * num3) / static_cast&lt;double&gt;(num4);
-    double result5 = static_cast&lt;double&gt;((num1 + num2) * num3) / static_cast&lt;double&gt;(num4);
-    double result6 = static_cast&lt;double&gt;((num1 + num2) * num3) / static_cast&lt;double&gt;(num4);
+    double result4 = static_cast<double>((num1 + num2) * num3) / static_cast<double>(num4);
+    double result5 = static_cast<double>((num1 + num2) * num3) / static_cast<double>(num4);
+    double result6 = static_cast<double>((num1 + num2) * num3) / static_cast<double>(num4);
 
-    cout &lt;&lt; result1 &lt;&lt; endl;
-    cout &lt;&lt; result2 &lt;&lt; endl;
-    cout &lt;&lt; result3 &lt;&lt; endl;
-    cout &lt;&lt; result4 &lt;&lt; endl;
-    cout &lt;&lt; result5 &lt;&lt; endl;
-    cout &lt;&lt; result6 &lt;&lt; endl;
+    cout << result1 << endl;
+    cout << result2 << endl;
+    cout << result3 << endl;
+    cout << result4 << endl;
+    cout << result5 << endl;
+    cout << result6 << endl;
 
     return 0;
 }
@@ -85,7 +85,7 @@ For example, `result1` is calculated as follows:
 
 
 ```cpp
-double result1 = static_cast&lt;double&gt;(num1 + num2 * num3) / num4;
+double result1 = static_cast<double>(num1 + num2 * num3) / num4;
 ```
 
 
@@ -102,12 +102,12 @@ Finally, the values of all `result` variables are printed to the console using `
 
 
 ```cpp
-cout &lt;&lt; result1 &lt;&lt; endl;
-cout &lt;&lt; result2 &lt;&lt; endl;
-cout &lt;&lt; result3 &lt;&lt; endl;
-cout &lt;&lt; result4 &lt;&lt; endl;
-cout &lt;&lt; result5 &lt;&lt; endl;
-cout &lt;&lt; result6 &lt;&lt; endl;
+cout << result1 << endl;
+cout << result2 << endl;
+cout << result3 << endl;
+cout << result4 << endl;
+cout << result5 << endl;
+cout << result6 << endl;
 ```
 
 
@@ -146,9 +146,9 @@ In C++, operators have a specific order in which they are evaluated when an expr
 
 * **Additive operators `+`, `-`**: These operators are used for addition and subtraction operations.
 
-* **Shift operators `&lt;&lt;`, `&gt;&gt;`**: These operators are used to shift bits to the left or right.
+* **Shift operators `<<`, `>>`**: These operators are used to shift bits to the left or right.
 
-* **Relational operators `&lt;`, `&lt;=`, `&gt;`, `&gt;=`**: These operators are used to compare two values.
+* **Relational operators `<`, `<=`, `>`, `>=`**: These operators are used to compare two values.
 
 * **Equality operators `==`, `!=`**: These operators are used to check the equality or inequality of two operands.
 
@@ -164,7 +164,7 @@ In C++, operators have a specific order in which they are evaluated when an expr
 
 * **Conditional operator `?:`**: This operator works as a simple `if-else` statement.
 
-* **Assignment operators `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&lt;&lt;=`, `&gt;&gt;=`, `&amp;=`, `^=`, `|=`**: These operators are used to assign values to variables.
+* **Assignment operators `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&amp;=`, `^=`, `|=`**: These operators are used to assign values to variables.
 
 * **Comma operator `,`**: This operator is used to link related expressions together.
 

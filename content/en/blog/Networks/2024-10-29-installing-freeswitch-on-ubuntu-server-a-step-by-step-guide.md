@@ -39,11 +39,6 @@ Before starting the installation, make sure you have the following:
 
 * **Root or Sudo Access**: Ensure you have administrative privileges.
 
-
-
-
-
-
 ## Updating the Ubuntu Server
 
 
@@ -58,11 +53,6 @@ sudo apt update &amp;&amp; sudo apt upgrade -y
 
 
 This command updates your package lists and installs the latest versions of all packages.
-
-
-
-
-
 ## Installing Dependencies
 
 
@@ -81,11 +71,6 @@ libspeexdsp-dev libspeex-dev libogg-dev libvorbis-dev libtiff-dev libtiff5-dev l
 
 
 This command installs all required libraries and tools needed to compile and run FreeSWITCH.
-
-
-
-
-
 ## Cloning the FreeSWITCH Source Code
 
 
@@ -119,11 +104,6 @@ sudo git checkout v1.10
 
 
 This command switches to the latest stable release, which is currently **v1.10**.
-
-
-
-
-
 ## Building and Compiling FreeSWITCH
 
 
@@ -157,11 +137,6 @@ sudo make install
 
 
 This process may take some time depending on your system’s resources. The `make` command compiles FreeSWITCH and `make install` installs it onto your system.
-
-
-
-
-
 ## Installing FreeSWITCH Modules
 
 
@@ -182,11 +157,6 @@ sudo make all cd-sounds-install cd-moh-install
 
 
 These modules are essential for a fully operational FreeSWITCH instance.
-
-
-
-
-
 ## Configuring FreeSWITCH
 
 
@@ -214,11 +184,6 @@ FreeSWITCH comes with a default configuration suitable for most basic setups. Ho
 
 
 Adjust settings based on your network and user needs, including parameters for IP addresses, ports, and protocol settings.
-
-
-
-
-
 ## Starting FreeSWITCH
 
 
@@ -249,11 +214,6 @@ To run FreeSWITCH as a background process, use:
 
 
 The `-nc` flag runs FreeSWITCH in non-console mode, making it ideal for production servers.
-
-
-
-
-
 ## Testing the Installation
 
 
@@ -282,11 +242,6 @@ Try using the following commands within the CLI to confirm the setup:
 * `sofia status`: Shows SIP profiles and registration status.
 
 * `reloadxml`: Reloads XML configuration files without restarting FreeSWITCH.
-
-
-
-
-
 
 ## Setting Up FreeSWITCH as a System Service
 
@@ -338,11 +293,6 @@ To simplify management, set up FreeSWITCH as a system service:
 
 
 This configuration file allows you to manage FreeSWITCH with `systemctl`, making it easier to control FreeSWITCH at boot.
-
-
-
-
-
 ## Troubleshooting Common Installation Issues
 
 
@@ -360,11 +310,6 @@ Service Not Starting
 
 
 If FreeSWITCH fails to start as a service, use `journalctl -xe` to check for errors in the system logs. Adjust the configuration as needed and restart the service.
-
-
-
-
-
 ## Security and Best Practices
 
 
@@ -373,11 +318,6 @@ If FreeSWITCH fails to start as a service, use `journalctl -xe` to check for err
 * **Enable Logging:** Enable detailed logging to monitor activity and troubleshoot issues.
 
 * **Regular Updates:** Keep FreeSWITCH and your Ubuntu server up to date to protect against security vulnerabilities.
-
-
-
-
-
 
 ## Conclusion
 

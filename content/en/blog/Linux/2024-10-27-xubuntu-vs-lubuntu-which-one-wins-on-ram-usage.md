@@ -81,11 +81,6 @@ The primary difference between Xubuntu and Lubuntu is the desktop environment—
 
 * Since it’s focused on efficiency, you may find fewer customization options and less visual polish than XFCE, but it excels in providing a quick, responsive experience on older or limited hardware.
 
-
-
-
-
-
 RAM Usage Comparison: Xubuntu vs. Lubuntu
 
 
@@ -155,11 +150,6 @@ To get a practical sense of how each distribution handles RAM usage, let’s loo
 
 * **Lubuntu**: Lubuntu, under similar multitasking conditions, generally uses about **1-1.5 GB** of RAM. Again, LXQt’s efficiency shows through, making Lubuntu a great option if your device has limited RAM capacity.
 
-
-
-
-
-
 Performance and Responsiveness
 
 
@@ -170,11 +160,6 @@ When comparing the two, performance goes beyond simple RAM usage. It also involv
 * **Xubuntu**: With XFCE, Xubuntu feels smooth and visually appealing, especially on systems with at least 2 GB of RAM. XFCE’s more polished interface makes it ideal for users who want a functional, responsive system without sacrificing usability and aesthetics. The additional memory consumption compared to Lubuntu is often offset by a more feature-rich experience.
 
 * **Lubuntu**: Lubuntu, with its LXQt desktop, feels incredibly snappy, even on machines with as little as 1 GB of RAM. Its minimalistic setup and reduced visual effects provide a barebones experience, but this is often what users with low-spec hardware are looking for. For systems with very limited memory, Lubuntu offers one of the best performance options available.
-
-
-
-
-
 
 Choosing the Right Distribution Based on Your RAM and Needs
 
@@ -210,11 +195,6 @@ In deciding between Xubuntu and Lubuntu, here are a few factors to consider:
 
 
 * Both distributions come with similar software repositories, so you’ll have access to the same applications. However, Xubuntu’s XFCE might be slightly better for users who prefer a more polished experience for office work and multimedia.
-
-
-
-
-
 
 Final Thoughts: Xubuntu or Lubuntu?
 

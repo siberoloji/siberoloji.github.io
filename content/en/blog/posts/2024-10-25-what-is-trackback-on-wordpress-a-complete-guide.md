@@ -280,7 +280,7 @@ For New Posts
 For Existing Posts
 
 
-* Navigate to Settings &gt; Discussion
+* Navigate to Settings > Discussion
 
 * Look for the trackback options
 
@@ -296,7 +296,7 @@ Site-Wide Settings
 To manage trackbacks across your entire site:
 
 
-* Go to Settings &gt; Discussion
+* Go to Settings > Discussion
 
 * Find the default article settings
 

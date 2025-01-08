@@ -19,11 +19,6 @@ Keeping your operating system up to date is essential for system security, stabi
 
 
 **AlmaLinux 9**, an enterprise-grade Linux distribution, is designed to be stable, secure, and reliable. Itâ€™s a popular choice for businesses, system administrators, and developers who require a robust environment. AlmaLinux inherits its legacy from CentOS and, like other RHEL-based distributions, it uses the **dnf** package manager for updates and system management.
-
-
-
-
-
 Table of Contents
 
 
@@ -47,11 +42,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Why Keeping AlmaLinux 9 Updated is Important
 
 
@@ -66,11 +56,6 @@ Updating your system ensures that it stays secure and functions optimally. Hereâ
 * **New Features**: System and software updates may introduce new features, enhancing functionality and performance.
 
 * **Improved Compatibility**: Updates can improve compatibility with newer hardware or software packages, ensuring your system remains future-proof.
-
-
-
-
-
 
 2. Prerequisites Before Updating
 
@@ -131,11 +116,6 @@ Before starting the update, refresh the package metadata so you can download the
 
 ```bash
 sudo dnf makecache```
-
-
-
-
-
 3. How to Check Your Current AlmaLinux Version
 
 
@@ -168,11 +148,6 @@ uname -r```
 
 
 This command will display the kernel version you are using, which is helpful if you plan to upgrade the kernel.
-
-
-
-
-
 4. Updating System Packages Using DNF
 
 
@@ -223,11 +198,6 @@ sudo reboot```
 
 
 This ensures the updated kernel and other critical services are running correctly.
-
-
-
-
-
 5. Applying Security Updates
 
 
@@ -265,11 +235,6 @@ sudo dnf upgrade --security
 
 
 This command focuses only on updating packages related to security vulnerabilities, leaving other non-essential updates untouched.
-
-
-
-
-
 6. Upgrading the Kernel
 
 
@@ -322,11 +287,6 @@ uname -r```
 
 
 The kernel version displayed should now reflect the most recent installation.
-
-
-
-
-
 7. Automating Updates with DNF-Automatic
 
 
@@ -373,11 +333,6 @@ sudo systemctl enable --now dnf-automatic.timer```
 
 
 This will ensure that the system periodically checks for updates and applies them based on the configuration.
-
-
-
-
-
 8. Best Practices for System Updates
 
 
@@ -400,11 +355,6 @@ sudo dnf history
 
 ```bash
 journalctl -xe```
-
-
-
-
-
 9. Troubleshooting Common Update Issues
 
 
@@ -452,11 +402,6 @@ This clears the package cache and refreshes the repository metadata.
 
 
 If your system fails to boot after a kernel update, you can select a previous kernel from the boot menu (GRUB). You can make an older kernel the default if necessary by editing the GRUB configuration file.
-
-
-
-
-
 10. Conclusion
 
 

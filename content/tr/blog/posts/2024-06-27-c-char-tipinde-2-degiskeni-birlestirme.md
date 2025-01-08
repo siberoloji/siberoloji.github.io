@@ -21,8 +21,8 @@ Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişk
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;cstring&gt;
+#include <iostream>
+#include <cstring>
 using namespace std;
 
 int main() {
@@ -30,12 +30,12 @@ int main() {
     char firstString[bufferSize] = "abc";
     char secondString[bufferSize] = "def";
 
-    cout &lt;&lt; "First string: " &lt;&lt; firstString &lt;&lt; ' ';
-    cout &lt;&lt; "Second string: " &lt;&lt; secondString &lt;&lt; ' ';
+    cout << "First string: " << firstString << ' ';
+    cout << "Second string: " << secondString << ' ';
 
     strcat(firstString, secondString);
 
-    cout &lt;&lt; "Concatenated string: " &lt;&lt; firstString &lt;&lt; ' ';
+    cout << "Concatenated string: " << firstString << ' ';
 
     return 0;
 }

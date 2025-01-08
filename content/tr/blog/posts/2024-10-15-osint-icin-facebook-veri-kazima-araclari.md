@@ -34,11 +34,6 @@ Dijital çağda, Facebook gibi sosyal medya platformları işletmeler, araştır
 
 * Facebook verilerini toplamada karşılaşılan zorluklar ve sınırlamalar
 
-
-
-
-
-
 ## 1. OSINT nedir?
 
 
@@ -62,11 +57,6 @@ OSINT'in Temel Amaçları
 
 * **Rekabet istihbaratı** : Rakipleri ve sektör eğilimlerini analiz etmek.
 
-
-
-
-
-
 ## 2. Sosyal Medya İzlemenin Önemi
 
 
@@ -86,11 +76,6 @@ OSINT'in Temel Amaçları
 
 
 Facebook'taki veri miktarının çok büyük olması göz önüne alındığında, verileri etkin bir şekilde toplayıp analiz için organize etmek amacıyla **veri tarama araçlarının kullanılması önem arz ediyor.**
-
-
-
-
-
 ## 3. Facebook Veri Toplama İşleminin Yasal ve Etik Hususları
 
 
@@ -122,11 +107,6 @@ Etik Hususlar
 
 
 Bu zorluklar göz önüne alındığında, OSINT uzmanlarının Facebook verilerini toplarken yasal alanda dikkatli bir şekilde hareket etmeleri ve hem yasalara hem de etik standartlara uyduklarından emin olmaları büyük önem taşıyor.
-
-
-
-
-
 ## 4. Popüler Facebook Veri Toplama Araçları
 
 
@@ -232,11 +212,6 @@ e.Scrapy**​**
 
 * Gelişmiş veri çıkarma ve işleme yetenekleri
 
-
-
-
-
-
 ## 5. Facebook Veri Toplama Araçlarını Kullanmak İçin En İyi Uygulamalar
 
 
@@ -254,11 +229,6 @@ Facebook veri kazıma OSINT için güçlü bir araç olabilse de, etik ve yasal 
 
 * **Yasal Güncellemeleri Düzenli Olarak Takip Edin** : Veri toplama konusundaki yasalar ve düzenlemeler sürekli olarak gelişiyor, bu nedenle en son yasal gereklilikler hakkında bilgi sahibi olmak çok önemlidir.
 
-
-
-
-
-
 ## 6. Facebook Verilerinin Toplanmasındaki Zorluklar ve Sınırlamalar
 
 
@@ -273,11 +243,6 @@ Facebook verilerini kazımak, özellikle Facebook'un kazımayı sınırlama ve k
 * **Dinamik İçerik** : Facebook platformunu sık sık günceller ve bu durum veri toplama araçlarının tutarlı bir şekilde çalışmasını zorlaştırır.
 
 * **Eksik Veri** : Kamuya açık veriler sınırlıdır ve pek çok değerli öngörü gizlilik ayarlarının ardında saklı kalabilir.
-
-
-
-
-
 
 ## Sonuç
 

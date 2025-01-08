@@ -53,10 +53,10 @@ Step 1: First, let's create test1.txt, test2.txt and test3.txt files.
 
 
 ```bash
-&gt;~$ cd /tmp/
-/tmp$ echo 'Selam, ben 0 numaralı belgeyim' &gt;deneme1.txt
-/tmp$ echo 'Selam, ben 2 numaralı belgeyim' &gt;deneme2.txt
-/tmp$ echo 'Selam, ben 3 numaralı belgeyim' &gt;deneme3.txt
+>~$ cd /tmp/
+/tmp$ echo 'Selam, ben 0 numaralı belgeyim' >deneme1.txt
+/tmp$ echo 'Selam, ben 2 numaralı belgeyim' >deneme2.txt
+/tmp$ echo 'Selam, ben 3 numaralı belgeyim' >deneme3.txt
 ```
 
 
@@ -65,7 +65,7 @@ Step 2: We open the documents with the Nano editor and send them to the backgrou
 
 
 ```bash
-&gt;/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
+>/tmp$ nano deneme1.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
 1 txt
 
 /tmp$ nano deneme2.txt    //Nano açıldığında Ctrl+Z ile geri plana gönderin.
@@ -94,7 +94,7 @@ If you just type fg on the command line, you will return to the last closed proc
 
 
 ```bash
-&gt;$ fg 1
+>$ fg 1
 ```
 
 

@@ -251,7 +251,7 @@ Geçici olaylar `wp_options` tablosunda saklanır . Süresi dolan geçici olayla
 
 
 ```bash
-   DELETE FROM wp_options WHERE option_name LIKE '_transient_%' AND option_value &lt; NOW();
+   DELETE FROM wp_options WHERE option_name LIKE '_transient_%' AND option_value < NOW();
 ```
 
 

@@ -53,9 +53,9 @@ Anahtar Terimler:
 İkinci dereceden bir fonksiyonun grafiği **parabol** adı verilen U şeklinde bir eğridir . Parabolün yönü katsayıya ( a ) bağlıdır.
 
 
-* Eğer (a &gt; 0) ise parabol U harfine benzer şekilde **yukarı doğru açılır.**
+* Eğer (a > 0) ise parabol U harfine benzer şekilde **yukarı doğru açılır.**
 
-* ( a &lt; 0 ) ise parabol **aşağıya doğru** açılır ve ters U harfine benzer.
+* ( a < 0 ) ise parabol **aşağıya doğru** açılır ve ters U harfine benzer.
 
 
 

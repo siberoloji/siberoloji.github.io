@@ -260,7 +260,7 @@ Here’s an example configuration:
 
 
 ```bash
-&lt;VirtualHost *:443&gt;
+<VirtualHost *:443>
     ServerName yourdomain.com
     ServerAlias www.yourdomain.com
 
@@ -270,7 +270,7 @@ Here’s an example configuration:
     SSLCertificateFile /etc/letsencrypt/live/yourdomain.com/fullchain.pem
     SSLCertificateKeyFile /etc/letsencrypt/live/yourdomain.com/privkey.pem
     Include /etc/letsencrypt/options-ssl-apache.conf
-&lt;/VirtualHost&gt;
+</VirtualHost>
 ```
 
 
@@ -295,12 +295,12 @@ To ensure that all traffic to your site uses HTTPS, you can set up a redirect fr
 
 
 ```bash
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80>
     ServerName yourdomain.com
     ServerAlias www.yourdomain.com
 
     Redirect permanent / https://yourdomain.com/
-&lt;/VirtualHost&gt;
+</VirtualHost>
 ```
 
 

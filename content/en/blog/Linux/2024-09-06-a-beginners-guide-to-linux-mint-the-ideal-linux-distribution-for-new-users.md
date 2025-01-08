@@ -109,11 +109,6 @@ One of the most exciting aspects of Linux Mint is its customizability. Whether y
 
 
 Linux Mint is inherently more secure than Windows and macOS, thanks to Linux’s robust security architecture. Additionally, Linux Mint avoids including unnecessary background services or telemetry, helping you maintain your privacy. Its security features include regular updates, easy-to-use firewalls, and protection against viruses and malware.
-
-
-
-
-
 **How to Install Linux Mint: Step-by-Step Guide**
 
 
@@ -182,11 +177,6 @@ The installation wizard will guide you through the process:
 
 
 After installation, you’ll be prompted to restart your computer. Make sure to remove the USB drive when your system reboots.
-
-
-
-
-
 **Post-Installation Setup: What to Do Next**
 
 

@@ -157,7 +157,7 @@ Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu 
 
 ```bash
 packer
-usage: packer **[**--version**]** **[**--help**]** &lt;command**&gt;** **[**&lt;args&gt;]
+usage: packer **[**--version**]** **[**--help**]** <command**>** **[**<args>]
 Available commands are:
 build build image**(**s**)** from template
 fix fixes templates from old versions of packer
@@ -254,9 +254,9 @@ All requirements found. Proceeding...
 Building the Vagrant box...
 virtualbox-iso output will be **in **this color.
 
-**==&gt;** virtualbox-iso: Downloading or copying Guest additions
+**==>** virtualbox-iso: Downloading or copying Guest additions
     virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso
-**==&gt;** virtualbox-iso: Downloading or copying ISO
+**==>** virtualbox-iso: Downloading or copying ISO
     virtualbox-iso: Downloading or copying: <a href="http://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso">http://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso</a>
     virtualbox-iso: Download progress: 0%
     virtualbox-iso: Download progress: 0%
@@ -274,14 +274,14 @@ virtualbox-iso output will be **in **this color.
     virtualbox-iso **(**vagrant**)**: Compressing: packer-virtualbox-iso-1494433445-disk001.vmdk
 Build 'virtualbox-iso' finished.
 
-**==&gt;** Builds finished. The artifacts of successful builds are:
---**&gt;** virtualbox-iso: 'virtualbox' provider box: windows_2008_r2_virtualbox.box
+**==>** Builds finished. The artifacts of successful builds are:
+--**>** virtualbox-iso: 'virtualbox' provider box: windows_2008_r2_virtualbox.box
 Box successfully built by Packer.
 Attempting to add the box to Vagrant...
-**==&gt;** box: Box file was not detected as metadata. Adding it directly...
-**==&gt;** box: Adding box 'metasploitable3' **(**v0**)** **for **provider: 
+**==>** box: Box file was not detected as metadata. Adding it directly...
+**==>** box: Adding box 'metasploitable3' **(**v0**)** **for **provider: 
     box: Unpacking necessary files from: file:///home/umut/git/metasploitable3/windows_2008_r2_virtualbox.box
-**==&gt;** box: Successfully added box 'metasploitable3' **(**v0**)** **for** 'virtualbox'**!**
+**==>** box: Successfully added box 'metasploitable3' **(**v0**)** **for** 'virtualbox'**!**
 Box successfully added to Vagrant.
 ---------------------------------------------------------------------
 SUCCESS: Run 'vagrant up' to provision and start metasploitable3.
@@ -302,14 +302,14 @@ Gerekli tüm indirmeler ve inşa faaliyetleri artık tamamlandı. Sanal işletim
 sudo vagrant up
 **[**sudo**]** password **for **umut: 
 Bringing machine 'default' up with 'virtualbox' provider...
-**==&gt;** default: Importing base box 'metasploitable3'...
-**==&gt;** default: Matching MAC address **for **NAT networking...
-**==&gt;** default: Setting the name of the VM: metasploitable3_default_1494436809723_60405
-**==&gt;** default: Clearing any previously set network interfaces...
-**==&gt;** default: Preparing network interfaces based on configuration...
+**==>** default: Importing base box 'metasploitable3'...
+**==>** default: Matching MAC address **for **NAT networking...
+**==>** default: Setting the name of the VM: metasploitable3_default_1494436809723_60405
+**==>** default: Clearing any previously set network interfaces...
+**==>** default: Preparing network interfaces based on configuration...
     default: Adapter 1: nat
     default: Adapter 2: hostonly
-**==&gt;** default: Forwarding ports...
+**==>** default: Forwarding ports...
 ....
 ```
 

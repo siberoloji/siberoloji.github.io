@@ -38,11 +38,6 @@ Bu blog yazısında, OSINT amaçları için karanlık web sitelerini kazımak i�
 
 * Çözüm
 
-
-
-
-
-
 ## 1. Dark Web Nedir?
 
 
@@ -65,11 +60,6 @@ Karanlık Web'in Temel Bileşenleri
 * **Çalınan Veri Dökümleri** : Kullanıcıların çalınan kredi kartı bilgileri, oturum açma bilgileri veya kişisel veriler gibi hassas bilgileri satın aldığı, sattığı veya takas ettiği siteler.
 
 * **Muhabir Siteleri** : İnsanların hassas belgeleri anonim olarak paylaşmalarına olanak tanıyan SecureDrop veya WikiLeaks gibi platformlar.
-
-
-
-
-
 
 ## 2. OSINT için Dark Web'i Neden Taramalıyız?
 
@@ -108,11 +98,6 @@ d. **Dolandırıcılık Tespiti**
 
 
 Finansal kuruluşlar, çalıntı kredi kartlarının, sahte hesapların veya sahte finansal ürünlerin satışını tespit etmek için karanlık web kazıma kullanabilir. Bu faaliyetleri erken tespit ederek, dolandırıcılığı önleyebilir ve müşterilerini koruyabilirler.
-
-
-
-
-
 ## 3. Yasal ve Etik Hususlar
 
 
@@ -139,11 +124,6 @@ Etik Hususlar
 * **Kullanıcı Gizliliği** : Anonimlik karanlık web'in temel bir özelliği olsa da, karanlık web verilerini toplamak yine de bireyler hakkında hassas bilgiler toplamayı içerebilir. Topladığınız verilerin, özellikle de kişisel nitelikteyse, kullanıcı gizliliğine saygı gösterip göstermediğini göz önünde bulundurun.
 
 * **Veri Kötüye Kullanımı** : Karanlık web kazıma yoluyla toplanan veriler yalnızca suçu önlemek veya güvenliği artırmak gibi meşru amaçlar için kullanılmalıdır. Kazınan verileri kötü amaçlı olarak kötüye kullanmak veya yetkisiz taraflarla paylaşmak hem etik dışı hem de potansiyel olarak yasadışıdır.
-
-
-
-
-
 
 ## 4. Karanlık Web Sitelerini Kazımak İçin Araçlar
 
@@ -209,11 +189,6 @@ e. **Sezgisel**
 
 
 **Hunchly,** hem yüzey web hem de karanlık web içeriği dahil olmak üzere, gezinirken web sayfalarını yakalayan ve dizine ekleyen bir araçtır. Özellikle karanlık web araştırmaları için kullanışlıdır çünkü tarama geçmişinizin ayrıntılı bir günlüğünü oluşturur ve web sayfalarının anlık görüntülerini otomatik olarak kaydeder.
-
-
-
-
-
 ## 5. Karanlık Web'i Kazıma Teknikleri
 
 
@@ -251,11 +226,6 @@ d. **Oran Sınırlarına Saygı Göstermek**
 
 
 Çok agresif bir şekilde kazıma yapmak IP'nizin engellenmesine yol açabilir. Bunu önlemek için, istekler arasında gecikmeler koyarak ve daha yavaş bir hızda kazıma yaparak oran sınırlarına uyun. Bu, tespit şansını azaltır ve sitenin kullanılabilirliğini korur.
-
-
-
-
-
 ## 6. Dark Web Verilerini Kazımada Karşılaşılan Zorluklar
 
 
@@ -289,11 +259,6 @@ Karanlık web'i taramak, hassas bilgileri istemeden açığa çıkarabilir veya 
 
 
 meşru sebeplerle karanlık ağı kullanan kişiler. Veri toplayıcılar kendilerini anonimleştirmek ve topladıkları verilerin gizliliği ihlal etmediğinden emin olmak için ekstra özen göstermelidir.
-
-
-
-
-
 ## 7. Karanlık Web Sitelerini Kazımak İçin En İyi Uygulamalar
 
 
@@ -310,11 +275,6 @@ Başarılı ve etik karanlık web kazıma işlemini garantilemek için OSINT pro
 * **Otomatik Kazımayı Dikkatli Bir Şekilde Yapın** : Otomasyon yararlı olsa da, siteyi aşırı yüklememeye veya bot karşıtı önlemleri tetiklememeye dikkat edin.
 
 * **Yasalara Uygunluğu Sağlayın** : Kazıma faaliyetlerinizin ilgili yasa ve yönetmeliklere uygun olduğundan emin olmak için hukuk müşavirinize danışın.
-
-
-
-
-
 
 ## 8. Sonuç
 

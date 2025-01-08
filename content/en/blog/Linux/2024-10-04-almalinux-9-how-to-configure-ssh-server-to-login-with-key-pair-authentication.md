@@ -146,7 +146,7 @@ The easiest way to transfer the public key is by using the `ssh-copy-id` command
 If `ssh-copy-id` is not available, you can manually copy the public key using `scp` (secure copy) or by pasting it directly.
 
 
-* Copy the public key to your server using `scp`: `scp ~/.ssh/id_rsa.pub username@your_server_ip:/home/username/.ssh/authorized_keys` Ensure the `.ssh` directory exists in your home directory on the server, and set the correct permissions: `ssh username@your_server_ip mkdir -p ~/.ssh chmod 700 ~/.ssh cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys`
+* Copy the public key to your server using `scp`: `scp ~/.ssh/id_rsa.pub username@your_server_ip:/home/username/.ssh/authorized_keys` Ensure the `.ssh` directory exists in your home directory on the server, and set the correct permissions: `ssh username@your_server_ip mkdir -p ~/.ssh chmod 700 ~/.ssh cat ~/id_rsa.pub >> ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys`
 
 
 

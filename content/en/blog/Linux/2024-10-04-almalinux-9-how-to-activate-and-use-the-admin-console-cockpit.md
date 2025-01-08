@@ -20,11 +20,6 @@ tags:
 
 
 In this blog post, we'll cover how to activate and use the **Cockpit Admin Console** in AlmaLinux 9, walking you through everything from installation to its various use cases.
-
-
-
-
-
 Table of Contents
 
 
@@ -48,11 +43,6 @@ Table of Contents
 
 * Conclusion
 
-
-
-
-
-
 1. Introduction to Cockpit in AlmaLinux 9
 
 
@@ -72,11 +62,6 @@ For AlmaLinux 9, Cockpit offers the following features:
 
 * Log management and troubleshooting.
 
-
-
-
-
-
 2. Why Use Cockpit?
 
 
@@ -91,11 +76,6 @@ While many administrators prefer the command-line interface (CLI) for system man
 * **Live Updates**: Cockpit offers real-time monitoring of system status, including logs, system metrics, and storage information.
 
 * **No Learning Curve for New Users**: Beginners or users unfamiliar with Linux can easily navigate the interface to manage the system without diving deep into complex CLI commands.
-
-
-
-
-
 
 3. How to Install and Activate Cockpit in AlmaLinux 9
 
@@ -153,11 +133,6 @@ sudo firewall-cmd --reload
 
 
 With Cockpit installed, enabled, and the firewall configured, you are now ready to access the web interface.
-
-
-
-
-
 4. Accessing the Cockpit Web Interface
 
 
@@ -173,11 +148,11 @@ Open a browser and navigate to the following URL:
 
 
 ```bash
-https://&lt;your-server-ip&gt;:9090```
+https://<your-server-ip>:9090```
 
 
 
-Replace `&lt;your-server-ip&gt;` with the IP address or hostname of your AlmaLinux 9 server. If you’re working locally, you can use `https://localhost:9090`.
+Replace `<your-server-ip>` with the IP address or hostname of your AlmaLinux 9 server. If you’re working locally, you can use `https://localhost:9090`.
 
 
 #### Step 2: Log in to Cockpit
@@ -189,11 +164,6 @@ You will be prompted to enter the **root** credentials or a user account with **
 
 
 You may also see a warning about the security certificate. Since Cockpit uses a self-signed certificate by default, you can proceed by adding an exception in your browser.
-
-
-
-
-
 5. Managing Services Using Cockpit
 
 
@@ -223,11 +193,6 @@ For example, if you want to restart the **Apache HTTP Server** (`httpd`), you ca
 ```bash
 sudo systemctl restart httpd
 ```
-
-
-
-
-
 6. Monitoring System Resources
 
 
@@ -247,11 +212,6 @@ One of the key features of Cockpit is real-time system monitoring. This includes
 
 
 This section is particularly useful for diagnosing performance bottlenecks or monitoring long-term resource usage trends.
-
-
-
-
-
 7. Networking and Firewall Management with Cockpit
 
 
@@ -295,11 +255,6 @@ Cockpit integrates firewall management, allowing you to:
 
 
 Instead of running commands like `firewall-cmd`, you can handle all firewall settings visually through the web interface.
-
-
-
-
-
 8. Storage and File System Management
 
 
@@ -324,11 +279,6 @@ In the **Storage** section, you can:
 
 
 Additionally, you can configure LVM (Logical Volume Management) to manage volumes, making it easier to resize file systems without using the CLI.
-
-
-
-
-
 9. Security Features in Cockpit
 
 
@@ -363,11 +313,6 @@ The **Logs** section aggregates all system logs in one place, allowing you to re
 
 
 Cockpit also allows you to manage system updates. You can check for updates, apply them, and even schedule updates to ensure that your system remains secure and up to date.
-
-
-
-
-
 10. Conclusion
 
 

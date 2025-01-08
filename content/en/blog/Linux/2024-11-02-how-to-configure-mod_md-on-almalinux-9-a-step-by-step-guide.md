@@ -205,13 +205,13 @@ Visit `https://yourdomain.com` in your web browser to confirm the SSL certificat
 * 
 **Set HTTPS as the Default Protocol**:
 Edit the Virtual Host configuration for your domain in `/etc/httpd/conf.d/ssl.conf`, adding the following:
-<pre><code class="language-apache">&lt;VirtualHost *:443&gt;
+<pre><code class="language-apache"><VirtualHost *:443>
     ServerName yourdomain.com
     DocumentRoot /var/www/html
     SSLEngine on
     SSLCertificateFile /path/to/fullchain.pem
     SSLCertificateKeyFile /path/to/privkey.pem
-&lt;/VirtualHost&gt;
+</VirtualHost>
 `</pre>
 Be sure to replace `/path/to/fullchain.pem` and `/path/to/privkey.pem` with the actual paths where mod_md stores certificates (typically under `/var/www/.well-known/acme-challenge`).
 

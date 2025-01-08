@@ -42,11 +42,6 @@ ORDER BY column_name;
 
 
 While this order is syntactically correct, it doesn’t reflect how SQL interprets or processes the query. The **SQL query logical order** follows a different pattern to process data. Understanding this logical order can help you construct queries in a way that aligns with how the database engine works, leading to better performance and fewer bugs.
-
-
-
-
-
 2. The 9 Logical Steps of an SQL Query
 
 
@@ -115,11 +110,6 @@ The `DISTINCT` clause eliminates any duplicate rows in the result set. It’s ap
 
 
 In the last step, SQL **orders the result set** according to the specified columns in the `ORDER BY` clause. This step organizes the final output, which can significantly affect performance when dealing with large datasets.
-
-
-
-
-
 3. Visualizing the SQL Query Logical Order (Infographic)
 
 
@@ -147,11 +137,6 @@ When working with SQL, knowing the logical order of query execution has several 
 
 * **Avoiding Errors**: By understanding that clauses like `GROUP BY` come before `SELECT`, you can avoid errors such as trying to reference columns in the `SELECT` clause that aren’t included in the grouping.
 
-
-
-
-
-
 5. Common Mistakes and Misconceptions
 
 
@@ -164,11 +149,6 @@ Many developers, especially beginners, struggle with some of the intricacies of 
 * **Confusion Between `ON` and `WHERE`**: In `JOIN` queries, it's common to confuse `ON` and `WHERE`. Remember, `ON` applies the condition to the join itself, while `WHERE` filters the result of the joined tables.
 
 * **Not Understanding Aggregation**: Developers may try to use aggregate functions like `COUNT()` or `SUM()` in the `WHERE` clause, leading to errors. These functions can only be used after the grouping, which happens later in the logical order.
-
-
-
-
-
 
 6. Optimizing Queries by Leveraging Logical Order
 
@@ -183,11 +163,6 @@ By structuring queries with the SQL logical order in mind, you can enhance both 
 
 * **Use `GROUP BY` and Aggregations Wisely**: Don’t perform unnecessary groupings. Group only when needed, and consider indexing the grouped columns to improve performance.
 
-
-
-
-
-
 7. Conclusion
 
 
@@ -197,9 +172,4 @@ Understanding the SQL query logical order is an essential skill for anyone worki
 
 
 Keep the logical order in mind next time you write a query, and you’ll start to see improvements in both performance and clarity. Be sure to bookmark this guide and use the infographic as a quick reference whenever you need it.
-
-
-
-
-
 By mastering the logical order of SQL query execution, you can write more efficient, maintainable, and error-free SQL queries that scale with your application.

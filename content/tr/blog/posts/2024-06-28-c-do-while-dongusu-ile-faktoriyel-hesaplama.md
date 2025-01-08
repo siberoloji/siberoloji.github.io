@@ -22,12 +22,12 @@ Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nas
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 using namespace std;
 
 int calculateFactorial(int number) {
     int result = 1;
-    for (int i = 1; i &lt;= number; i++) {
+    for (int i = 1; i <= number; i++) {
         result *= i;
     }
     return result;
@@ -38,20 +38,20 @@ int main() {
     char exitKey;
     
     do {
-        cout &lt;&lt; "Enter a number between 1 and 10: ";
-        cin &gt;&gt; inputNumber;
+        cout << "Enter a number between 1 and 10: ";
+        cin >> inputNumber;
         
-        if (inputNumber &lt; 1) {
-            cout &lt;&lt; "Number must be greater than 0. ";
-        } else if (inputNumber &gt; 10) {
-            cout &lt;&lt; "Number must be less than or equal to 10. ";
+        if (inputNumber < 1) {
+            cout << "Number must be greater than 0. ";
+        } else if (inputNumber > 10) {
+            cout << "Number must be less than or equal to 10. ";
         } else {
             int factorial = calculateFactorial(inputNumber);
-            cout &lt;&lt; "Result: " &lt;&lt; factorial &lt;&lt; endl;
+            cout << "Result: " << factorial << endl;
         }
         
-        cout &lt;&lt; "Press 'h' to exit, any other key to continue: ";
-        cin &gt;&gt; exitKey;
+        cout << "Press 'h' to exit, any other key to continue: ";
+        cin >> exitKey;
     } while (exitKey != 'h');
     
     return 0;

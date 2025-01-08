@@ -262,11 +262,6 @@ A docking station is a device that expands the connectivity of a laptop by provi
 
 
 A flash drive is a small, portable storage device that uses flash memory to store data. It is often connected via USB and is commonly used for transferring files between computers. Flash drives are popular due to their compact size, durability, and ease of use.
-
-
-
-
-
 Conclusion
 
 

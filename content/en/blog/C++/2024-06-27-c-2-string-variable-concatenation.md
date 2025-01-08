@@ -23,15 +23,15 @@ In this article, we show an example of combining 2 string variables.
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;string&gt;
+#include <iostream>
+#include <string>
 
 int main() {
     std::string firstString = "prs";
     std::string secondString = "def";
     std::string result;
     result = firstString + secondString;
-    std::cout &lt;&lt; result &lt;&lt; std::endl;
+    std::cout << result << std::endl;
     return 0;
 }
 ```

@@ -98,11 +98,6 @@ Splunk Free, veri toplama, arama ve analiz etme aracına ihtiyaç duyan kullanı
 * Splunk Free kullanıcıları, Splunkbase pazar yeri aracılığıyla sunulan birçok ücretsiz uygulamaya ve eklentiye erişebilir. Bu uygulamalar Splunk'un yeteneklerini genişletir ve AWS, Microsoft 365, Cisco ve daha fazlası gibi çeşitli teknolojiler ve platformlarla entegrasyonlar sunar.
 
 * Kullanıcılar bu uygulamaları kullanarak çeşitli servislerden gelen verileri hızla entegre edebilir, aramalarını geliştirebilir ve belirli teknolojiler hakkında daha derinlemesine bilgi edinebilirler.
-
-
-
-
-
 #### Splunk Free ve Splunk Enterprise: Farkları Nelerdir?
 
 
@@ -157,11 +152,6 @@ Splunk Free, Splunk'un birçok temel özelliğine erişim sağlarken, **Splunk E
 * Splunk Enterprise ile kullanıcılar, Splunk'un müşteri hizmetleri ekibinden profesyonel destek almanın yanı sıra resmi belgelere, eğitimlere ve profesyonel hizmetlere erişim imkânına sahip oluyorlar.
 
 * Splunk Free, öncelikle topluluk desteğine dayanır. Aktif bir kullanıcı topluluğu ve bol miktarda çevrimiçi kaynak olmasına rağmen, kuruluşlar resmi desteğin eksikliğinin, özellikle görev açısından kritik dağıtımlar için bir dezavantaj olabileceğini görebilir.
-
-
-
-
-
 #### Neden Splunk Free'yi Seçmelisiniz?
 
 
@@ -196,11 +186,6 @@ Splunk Free, özellikle veri analitiğini, sorun gidermeyi veya performans izlem
 * Splunk Free, test ve kavram kanıtı projeleri için idealdir. Günlük analizi veya veri izleme gerektiren bir çözüm geliştiriyorsanız, ücretli bir sürüme ölçeklendirmeden önce yaklaşımınızı doğrulamak için erken aşamalarda Splunk Free'yi kullanabilirsiniz.
 
 * Bu, ek maliyetlere katlanmadan ürünlerine veri analitiğini entegre etmek isteyen yeni başlayan şirketler ve geliştiriciler için değerli bir araç haline getiriyor.
-
-
-
-
-
 #### Splunk Free'yi Kurma ve Kullanma
 
 
@@ -235,11 +220,6 @@ Splunk Free'ye başlamak basit bir işlemdir. Platformu kurmak ve kullanmaya ba�
 * Verileriniz alındıktan sonra, verileri sorgulamak ve kalıpları, olayları ve anormallikleri analiz etmek için SPL'yi kullanmaya başlayabilirsiniz. Arama arayüzü sezgiseldir ve sonuçları filtrelemenize ve belirli ayrıntılara inmenize olanak tanır.
 
 * Ayrıca verilerinizi görselleştirmek için panolar oluşturabilir, böylece verilerinizi daha kolay anlayabilir ve başkalarıyla fikir paylaşabilirsiniz.
-
-
-
-
-
 #### Splunk Free'nin Sınırlamaları
 
 
@@ -258,11 +238,6 @@ Splunk Free birçok kullanım durumu için harika bir araç olsa da, uzun vadeli
 
 
 * **Resmi Desteğin Eksikliği** : Topluluk desteği güçlü olsa da, kritik görev operasyonları için Splunk'a güvenen kuruluşların Splunk'un ücretli kademelerinde sunulan profesyonel desteğe ihtiyaç duymaları gerekebilir.
-
-
-
-
-
 #### Çözüm
 
 

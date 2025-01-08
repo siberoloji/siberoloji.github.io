@@ -85,11 +85,6 @@ SEMrush is a leading all-in-one digital marketing toolkit that provides valuable
 
 * **Social Media Audit:** Analyze your social media performance and identify areas for improvement.
 
-
-
-
-
-
 **Key Benefits of Using SEMrush**
 
 

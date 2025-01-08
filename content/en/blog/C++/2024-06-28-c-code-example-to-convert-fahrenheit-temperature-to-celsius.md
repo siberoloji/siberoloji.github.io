@@ -21,9 +21,9 @@ In this example, the entered Fahrenheit temperature value is converted to Celsiu
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
-#include &lt;limits&gt;
+#include <iostream>
+#include <iomanip>
+#include <limits>
 
 float temperatureConversion(const float temperatureInFahrenheit) {
     constexpr float conversionFactor = 5.0 / 9.0;
@@ -32,12 +32,12 @@ float temperatureConversion(const float temperatureInFahrenheit) {
 
 int main() {
     float fahrenheitTemperature;
-    std::cout &lt;&lt; "Enter the Fahrenheit temperature: ";
-    std::cin &gt;&gt; fahrenheitTemperature;
+    std::cout << "Enter the Fahrenheit temperature: ";
+    std::cin >> fahrenheitTemperature;
 
     float celsiusTemperature = temperatureConversion(fahrenheitTemperature);
-    std::cout &lt;&lt; std::fixed &lt;&lt; std::setprecision(std::numeric_limits&lt;float&gt;::digits10) &lt;&lt; "Celsius value: " &lt;&lt;
-            celsiusTemperature &lt;&lt; std::endl;
+    std::cout << std::fixed << std::setprecision(std::numeric_limits<float>::digits10) << "Celsius value: " <<
+            celsiusTemperature << std::endl;
 
     return 0;
 }

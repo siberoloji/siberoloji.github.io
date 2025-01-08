@@ -30,11 +30,11 @@ Bu çağrıları kendi dosyanızı oluşturarak deneyebileceğiniz gibi Meterpre
 
 
 ```bash
-meterpreter **&gt;** irb
+meterpreter **>** irb
 **[*********]** Starting IRB shell
 **[*********]** The 'client' variable holds the meterpreter client
 
-**&gt;&gt;**
+**>>**
 ```
 
 
@@ -47,9 +47,9 @@ Bu komut, sistem hakkında bir takım bilgileri öğrenmemizi sağlar. Aşağıd
 
 
 ```bash
-**&gt;&gt;** client.sys.config.sysinfo
-**=&gt;** **{**"OS"**=&gt;**"Windows XP (Build 2600, Service Pack 3).", "Computer"**=&gt;**"WINXPVM01"**}**
-**&gt;&gt;**
+**>>** client.sys.config.sysinfo
+**=>** **{**"OS"**=>**"Windows XP (Build 2600, Service Pack 3).", "Computer"**=>**"WINXPVM01"**}**
+**>>**
 ```
 
 
@@ -58,16 +58,16 @@ Komut çıktısında görüldüğü gibi, ekrana getirilen bilginin aslında far
 
 
 ```bash
-**&gt;&gt;** client.sys.config.sysinfo.class
-**=&gt;** Hash
-**&gt;&gt;**
+**>>** client.sys.config.sysinfo.class
+**=>** Hash
+**>>**
 ```
 
 
 ```bash
-**&gt;&gt;** client.sys.config.sysinfo['OS'**]**
-**=&gt;** "Windows XP (Build 2600, Service Pack 3)."
-**&gt;&gt;**
+**>>** client.sys.config.sysinfo['OS'**]**
+**=>** "Windows XP (Build 2600, Service Pack 3)."
+**>>**
 ```
 
 
@@ -80,9 +80,9 @@ Bu çağrı kullanıcı bilgilerini elde etmek için kullanılır.
 
 
 ```bash
-**&gt;&gt;** client.sys.config.getuid
-**=&gt;** "WINXPVM01\labuser"
-**&gt;&gt;**
+**>>** client.sys.config.getuid
+**=>** "WINXPVM01\labuser"
+**>>**
 ```
 
 
@@ -95,18 +95,18 @@ Bu çağrı sayesinde, Meterpreter oturumunun hangi program içine gömülü ola
 
 
 ```bash
-**&gt;&gt;** client.sys.process.getpid
-**=&gt;** 684
+**>>** client.sys.process.getpid
+**=>** 684
 
 ## client.net.config.interfaces
 
 Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde edebilirsiniz.
 
 ```sh
-**&gt;&gt;** client.net.config.interfaces
-**=&gt;** **[**#, #]
-**&gt;&gt;** client.net.config.interfaces.class
-**=&gt;** Array
+**>>** client.net.config.interfaces
+**=>** **[**#, #]
+**>>** client.net.config.interfaces.class
+**=>** Array
 ```
 
 
@@ -115,11 +115,11 @@ Gördüğünüz gibi, API çağrısı array tipi bir değişken kullanmaktadır.
 
 
 ```bash
- **&gt;&gt;** interfaces **=** client.net.config.interfaces
- **=&gt;** **[**#, #]
- **&gt;&gt;** interfaces.each **do** |i|
- ?&gt; puts i.pretty
- **&gt;&gt;** end
+ **>>** interfaces **=** client.net.config.interfaces
+ **=>** **[**#, #]
+ **>>** interfaces.each **do** |i|
+ ?> puts i.pretty
+ **>>** end
  MS TCP Loopback interface
  Hardware MAC: 00:00:00:00:00:00
  IP Address  : 127.0.0.1

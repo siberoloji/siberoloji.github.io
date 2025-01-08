@@ -92,7 +92,7 @@ The OR gate is represented by a shape that looks like a pointed shield:
 ```bash
     A
      \
-      &gt;
+      >
      /
     b
 ```
@@ -131,7 +131,7 @@ The NOT gate is represented by a triangle with a small circle at its output:
 
 
 ```bash
-    A --&gt;O--&gt; Output```
+    A -->O--> Output```
 
 
 
@@ -210,7 +210,7 @@ The NOR gate is represented like an OR gate with a small circle at its output:
 ```bash
     A
      \
-      &gt;o
+      >o
      /
     b
 ```

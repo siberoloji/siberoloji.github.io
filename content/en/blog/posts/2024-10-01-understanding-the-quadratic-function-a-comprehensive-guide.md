@@ -56,9 +56,9 @@ Understanding the Graph of a Quadratic Function
 The graph of a quadratic function is a U-shaped curve called a **parabola**. The direction of the parabola depends on the coefficient ( a ).
 
 
-* If ( a &gt; 0 ), the parabola opens **upward**, resembling a U.
+* If ( a > 0 ), the parabola opens **upward**, resembling a U.
 
-* If ( a &lt; 0 ), the parabola opens **downward**, resembling an upside-down U.
+* If ( a < 0 ), the parabola opens **downward**, resembling an upside-down U.
 
 
 

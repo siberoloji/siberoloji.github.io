@@ -30,12 +30,12 @@ Fish is a shell program known for being user-friendly. Command completion has th
 
 ```bash
 ---------------- Debian 8 ----------------
-echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' &gt;&gt; /etc/apt/sources.list.d/fish.list
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' >> /etc/apt/sources.list.d/fish.list
 apt-get update
 apt-get install fish
 
 ---------------- Debian 7 ----------------
-echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/ /' &gt;&gt; /etc/apt/sources.list.d/fish.list
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_7.0/ /' >> /etc/apt/sources.list.d/fish.list
 apt-get update
 apt-get install fish
 ```

@@ -54,17 +54,17 @@ Create a new file in `/usr/local/freeswitch/conf/sip_profiles/external/`:
 
 
 ```
-&lt;include&gt;
-  &lt;gateway name="my_provider"&gt;
-    &lt;param name="username" value="your_username"/&gt;
-    &lt;param name="password" value="your_password"/&gt;
-    &lt;param name="proxy" value="sip.provider.com"/&gt;
-    &lt;param name="register" value="true"/&gt;
-    &lt;param name="context" value="public"/&gt;
-    &lt;param name="caller-id-in-from" value="false"/&gt;
-    &lt;param name="register-transport" value="udp"/&gt;
-  &lt;/gateway&gt;
-&lt;/include&gt;
+<include>
+  <gateway name="my_provider">
+    <param name="username" value="your_username"/>
+    <param name="password" value="your_password"/>
+    <param name="proxy" value="sip.provider.com"/>
+    <param name="register" value="true"/>
+    <param name="context" value="public"/>
+    <param name="caller-id-in-from" value="false"/>
+    <param name="register-transport" value="udp"/>
+  </gateway>
+</include>
 ```
 
 
@@ -77,15 +77,15 @@ Modify `/usr/local/freeswitch/conf/sip_profiles/external.xml`:
 
 
 ```
-&lt;profile name="external"&gt;
-  &lt;settings&gt;
-    &lt;param name="ext-sip-ip" value="auto-nat"/&gt;
-    &lt;param name="ext-rtp-ip" value="auto-nat"/&gt;
-    &lt;param name="context" value="public"/&gt;
-    &lt;param name="sip-port" value="5080"/&gt;
-    &lt;param name="rtp-timer-name" value="soft"/&gt;
-  &lt;/settings&gt;
-&lt;/profile&gt;
+<profile name="external">
+  <settings>
+    <param name="ext-sip-ip" value="auto-nat"/>
+    <param name="ext-rtp-ip" value="auto-nat"/>
+    <param name="context" value="public"/>
+    <param name="sip-port" value="5080"/>
+    <param name="rtp-timer-name" value="soft"/>
+  </settings>
+</profile>
 ```
 
 
@@ -98,14 +98,14 @@ Modify `/usr/local/freeswitch/conf/sip_profiles/external.xml`:
 
 
 ```
-&lt;gateway name="secure_provider"&gt;
-  &lt;param name="realm" value="sip.provider.com"/&gt;
-  &lt;param name="from-domain" value="sip.provider.com"/&gt;
-  &lt;param name="register-proxy" value="proxy.provider.com"/&gt;
-  &lt;param name="expire-seconds" value="3600"/&gt;
-  &lt;param name="register-transport" value="tls"/&gt;
-  &lt;param name="retry-seconds" value="30"/&gt;
-&lt;/gateway&gt;
+<gateway name="secure_provider">
+  <param name="realm" value="sip.provider.com"/>
+  <param name="from-domain" value="sip.provider.com"/>
+  <param name="register-proxy" value="proxy.provider.com"/>
+  <param name="expire-seconds" value="3600"/>
+  <param name="register-transport" value="tls"/>
+  <param name="retry-seconds" value="30"/>
+</gateway>
 ```
 
 
@@ -114,12 +114,12 @@ Modify `/usr/local/freeswitch/conf/sip_profiles/external.xml`:
 
 
 ```
-&lt;gateway name="codec_specific"&gt;
-  &lt;param name="inbound-codec-prefs" value="PCMU,PCMA,G729"/&gt;
-  &lt;param name="outbound-codec-prefs" value="PCMU,PCMA,G729"/&gt;
-  &lt;param name="inbound-codec-negotiation" value="greedy"/&gt;
-  &lt;param name="codec-fallback" value="PCMU"/&gt;
-&lt;/gateway&gt;
+<gateway name="codec_specific">
+  <param name="inbound-codec-prefs" value="PCMU,PCMA,G729"/>
+  <param name="outbound-codec-prefs" value="PCMU,PCMA,G729"/>
+  <param name="inbound-codec-negotiation" value="greedy"/>
+  <param name="codec-fallback" value="PCMU"/>
+</gateway>
 ```
 
 
@@ -136,17 +136,17 @@ Create `/usr/local/freeswitch/conf/dialplan/default/03_outbound.xml`:
 
 
 ```
-&lt;include&gt;
-  &lt;context name="default"&gt;
-    &lt;extension name="outbound_calls"&gt;
-      &lt;condition field="destination_number" expression="^(\d{11})$"&gt;
-        &lt;action application="set" data="effective_caller_id_number=${outbound_caller_id_number}"/&gt;
-        &lt;action application="set" data="hangup_after_bridge=true"/&gt;
-        &lt;action application="bridge" data="sofia/gateway/my_provider/$1"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
-  &lt;/context&gt;
-&lt;/include&gt;
+<include>
+  <context name="default">
+    <extension name="outbound_calls">
+      <condition field="destination_number" expression="^(\d{11})$">
+        <action application="set" data="effective_caller_id_number=${outbound_caller_id_number}"/>
+        <action application="set" data="hangup_after_bridge=true"/>
+        <action application="bridge" data="sofia/gateway/my_provider/$1"/>
+      </condition>
+    </extension>
+  </context>
+</include>
 ```
 
 
@@ -159,16 +159,16 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;include&gt;
-  &lt;context name="public"&gt;
-    &lt;extension name="inbound_did"&gt;
-      &lt;condition field="destination_number" expression="^(1\d{10})$"&gt;
-        &lt;action application="set" data="domain_name=$${domain}"/&gt;
-        &lt;action application="transfer" data="1000 XML default"/&gt;
-      &lt;/condition&gt;
-    &lt;/extension&gt;
-  &lt;/context&gt;
-&lt;/include&gt;
+<include>
+  <context name="public">
+    <extension name="inbound_did">
+      <condition field="destination_number" expression="^(1\d{10})$">
+        <action application="set" data="domain_name=$${domain}"/>
+        <action application="transfer" data="1000 XML default"/>
+      </condition>
+    </extension>
+  </context>
+</include>
 ```
 
 
@@ -181,17 +181,17 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;include&gt;
-  &lt;gateway name="primary_provider"&gt;
-    &lt;param name="proxy" value="sip1.provider.com"/&gt;
-    &lt;param name="register" value="true"/&gt;
-  &lt;/gateway&gt;
+<include>
+  <gateway name="primary_provider">
+    <param name="proxy" value="sip1.provider.com"/>
+    <param name="register" value="true"/>
+  </gateway>
 
-  &lt;gateway name="backup_provider"&gt;
-    &lt;param name="proxy" value="sip2.provider.com"/&gt;
-    &lt;param name="register" value="true"/&gt;
-  &lt;/gateway&gt;
-&lt;/include&gt;
+  <gateway name="backup_provider">
+    <param name="proxy" value="sip2.provider.com"/>
+    <param name="register" value="true"/>
+  </gateway>
+</include>
 ```
 
 
@@ -200,12 +200,12 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;extension name="outbound_with_failover"&gt;
-  &lt;condition field="destination_number" expression="^(\d{11})$"&gt;
-    &lt;action application="set" data="hangup_after_bridge=true"/&gt;
-    &lt;action application="bridge" data="sofia/gateway/primary_provider/$1,sofia/gateway/backup_provider/$1"/&gt;
-  &lt;/condition&gt;
-&lt;/extension&gt;
+<extension name="outbound_with_failover">
+  <condition field="destination_number" expression="^(\d{11})$">
+    <action application="set" data="hangup_after_bridge=true"/>
+    <action application="bridge" data="sofia/gateway/primary_provider/$1,sofia/gateway/backup_provider/$1"/>
+  </condition>
+</extension>
 ```
 
 
@@ -218,14 +218,14 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;gateway name="secure_trunk"&gt;
-  &lt;param name="register-transport" value="tls"/&gt;
-  &lt;param name="secure-sip" value="true"/&gt;
-  &lt;param name="secure-rtp" value="true"/&gt;
-  &lt;param name="ssl-cacert" value="/etc/freeswitch/tls/ca.crt"/&gt;
-  &lt;param name="ssl-cert" value="/etc/freeswitch/tls/client.crt"/&gt;
-  &lt;param name="ssl-key" value="/etc/freeswitch/tls/client.key"/&gt;
-&lt;/gateway&gt;
+<gateway name="secure_trunk">
+  <param name="register-transport" value="tls"/>
+  <param name="secure-sip" value="true"/>
+  <param name="secure-rtp" value="true"/>
+  <param name="ssl-cacert" value="/etc/freeswitch/tls/ca.crt"/>
+  <param name="ssl-cert" value="/etc/freeswitch/tls/client.crt"/>
+  <param name="ssl-key" value="/etc/freeswitch/tls/client.key"/>
+</gateway>
 ```
 
 
@@ -234,14 +234,14 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;configuration name="acl.conf" description="Network Lists"&gt;
-  &lt;network-lists&gt;
-    &lt;list name="trusted_providers" default="deny"&gt;
-      &lt;node type="allow" cidr="203.0.113.0/24"/&gt;
-      &lt;node type="allow" cidr="198.51.100.0/24"/&gt;
-    &lt;/list&gt;
-  &lt;/network-lists&gt;
-&lt;/configuration&gt;
+<configuration name="acl.conf" description="Network Lists">
+  <network-lists>
+    <list name="trusted_providers" default="deny">
+      <node type="allow" cidr="203.0.113.0/24"/>
+      <node type="allow" cidr="198.51.100.0/24"/>
+    </list>
+  </network-lists>
+</configuration>
 ```
 
 
@@ -254,14 +254,14 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;gateway name="qos_enabled"&gt;
-  &lt;param name="rtp-timer-name" value="soft"/&gt;
-  &lt;param name="rtp-ip" value="auto"/&gt;
-  &lt;param name="apply-inbound-acl" value="trusted_providers"/&gt;
-  &lt;param name="dtmf-type" value="rfc2833"/&gt;
-  &lt;param name="rtp-timeout-sec" value="300"/&gt;
-  &lt;param name="rtp-hold-timeout-sec" value="1800"/&gt;
-&lt;/gateway&gt;
+<gateway name="qos_enabled">
+  <param name="rtp-timer-name" value="soft"/>
+  <param name="rtp-ip" value="auto"/>
+  <param name="apply-inbound-acl" value="trusted_providers"/>
+  <param name="dtmf-type" value="rfc2833"/>
+  <param name="rtp-timeout-sec" value="300"/>
+  <param name="rtp-hold-timeout-sec" value="1800"/>
+</gateway>
 ```
 
 
@@ -270,12 +270,12 @@ Create `/usr/local/freeswitch/conf/dialplan/public/01_inbound.xml`:
 
 
 ```
-&lt;gateway name="bandwidth_managed"&gt;
-  &lt;param name="inbound-codec-prefs" value="PCMU@20i,PCMA@20i,G729@20i"/&gt;
-  &lt;param name="outbound-codec-prefs" value="PCMU@20i,PCMA@20i,G729@20i"/&gt;
-  &lt;param name="suppress-cng" value="true"/&gt;
-  &lt;param name="rtp-digit-delay" value="20"/&gt;
-&lt;/gateway&gt;
+<gateway name="bandwidth_managed">
+  <param name="inbound-codec-prefs" value="PCMU@20i,PCMA@20i,G729@20i"/>
+  <param name="outbound-codec-prefs" value="PCMU@20i,PCMA@20i,G729@20i"/>
+  <param name="suppress-cng" value="true"/>
+  <param name="rtp-digit-delay" value="20"/>
+</gateway>
 ```
 
 
@@ -302,10 +302,10 @@ sofia loglevel all 9```
 
 
 ```
-&lt;param name="sip-trace" value="true"/&gt;
-&lt;param name="log-auth-failures" value="true"/&gt;
-&lt;param name="debug-presence" value="0"/&gt;
-&lt;param name="debug-sla" value="0"/&gt;
+<param name="sip-trace" value="true"/>
+<param name="log-auth-failures" value="true"/>
+<param name="debug-presence" value="0"/>
+<param name="debug-sla" value="0"/>
 ```
 
 

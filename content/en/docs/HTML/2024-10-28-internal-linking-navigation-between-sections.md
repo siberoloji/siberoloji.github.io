@@ -64,14 +64,14 @@ You’ll need to add an `id` to each section header. This `id` acts as a referen
 
 
 ```bash
-&lt;h2 id="getting-started"&gt;Getting Started&lt;/h2&gt;
-&lt;p&gt;This section covers the basics of starting your garden.&lt;/p&gt;
+<h2 id="getting-started">Getting Started</h2>
+<p>This section covers the basics of starting your garden.</p>
 
-&lt;h2 id="choosing-plants"&gt;Choosing Plants&lt;/h2&gt;
-&lt;p&gt;Here’s how to select the right plants for your garden.&lt;/p&gt;
+<h2 id="choosing-plants">Choosing Plants</h2>
+<p>Here’s how to select the right plants for your garden.</p>
 
-&lt;h2 id="caring-for-garden"&gt;Caring for Your Garden&lt;/h2&gt;
-&lt;p&gt;This section provides tips for maintaining your garden.&lt;/p&gt;
+<h2 id="caring-for-garden">Caring for Your Garden</h2>
+<p>This section provides tips for maintaining your garden.</p>
 ```
 
 
@@ -87,11 +87,11 @@ Next, create links that point to these sections using the `id` in the `href` att
 
 
 ```bash
-&lt;ul&gt;
-    &lt;li&gt;&lt;a href="#getting-started"&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#choosing-plants"&gt;Choosing Plants&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#caring-for-garden"&gt;Caring for Your Garden&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#choosing-plants">Choosing Plants</a></li>
+    <li><a href="#caring-for-garden">Caring for Your Garden</a></li>
+</ul>
 ```
 
 
@@ -111,21 +111,21 @@ For lengthy articles, consider adding a Table of Contents (TOC) at the top. This
 
 
 ```bash
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;a href="#getting-started"&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#choosing-plants"&gt;Choosing Plants&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#caring-for-garden"&gt;Caring for Your Garden&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#choosing-plants">Choosing Plants</a></li>
+    <li><a href="#caring-for-garden">Caring for Your Garden</a></li>
+</ul>
 
-&lt;h2 id="getting-started"&gt;Getting Started&lt;/h2&gt;
-&lt;p&gt;This section covers the basics of starting your garden.&lt;/p&gt;
+<h2 id="getting-started">Getting Started</h2>
+<p>This section covers the basics of starting your garden.</p>
 
-&lt;h2 id="choosing-plants"&gt;Choosing Plants&lt;/h2&gt;
-&lt;p&gt;Here’s how to select the right plants for your garden.&lt;/p&gt;
+<h2 id="choosing-plants">Choosing Plants</h2>
+<p>Here’s how to select the right plants for your garden.</p>
 
-&lt;h2 id="caring-for-garden"&gt;Caring for Your Garden&lt;/h2&gt;
-&lt;p&gt;This section provides tips for maintaining your garden.&lt;/p&gt;
+<h2 id="caring-for-garden">Caring for Your Garden</h2>
+<p>This section provides tips for maintaining your garden.</p>
 ```
 
 

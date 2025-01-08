@@ -66,11 +66,11 @@ Metasploit içerisinde bildiğiniz klasik `nmap` komutunu kullanabileceğiniz gi
 
 
 
-Aşağıda, nmap komutunun kullanımına bir örnek görebilirsiniz. İşletim sisteminin komut satırından `nmap` komutunu kullanabileceğiniz gibi `msf &gt;` komut satırından da `nmap` kullanılabilir. Örnekteki `nmap` komutu, sonuçları `subnet_1` isimli dosyalara kaydedecektir. Bu dosyaları isterseniz Metasploit’ed aktarabilirsiniz. Bunun yerine `db_nmap -v -sV 192.168.1.0/24` komutunu verirseniz, sonuçlar otomatik olarak `hosts` tablosuna kayıt edilir.
+Aşağıda, nmap komutunun kullanımına bir örnek görebilirsiniz. İşletim sisteminin komut satırından `nmap` komutunu kullanabileceğiniz gibi `msf >` komut satırından da `nmap` kullanılabilir. Örnekteki `nmap` komutu, sonuçları `subnet_1` isimli dosyalara kaydedecektir. Bu dosyaları isterseniz Metasploit’ed aktarabilirsiniz. Bunun yerine `db_nmap -v -sV 192.168.1.0/24` komutunu verirseniz, sonuçlar otomatik olarak `hosts` tablosuna kayıt edilir.
 
 
 ```bash
-msf **&gt;** nmap -v -sV 192.168.1.0/24 -oA subnet_1
+msf **>** nmap -v -sV 192.168.1.0/24 -oA subnet_1
 **[*********]** exec: nmap -v -sV 192.168.1.0/24 -oA subnet_1
 
 Starting Nmap 5.00 **(** <a href="http://nmap.org/">http://nmap.org</a> **)** at 2009-08-13 19:29 MDT
@@ -92,7 +92,7 @@ Port tarama için sadece `nmap` veya `db_nmap` kullanmak zorunda değilsiniz. Me
 
 
 ```bash
-msf **&gt;** search portscan
+msf **>** search portscan
 
 Matching Modules
 **================**
@@ -117,7 +117,7 @@ Matching Modules
 
 
 ```bash
-msf **&gt;** cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
+msf **>** cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 **[*********]** exec: cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 
 192.168.1.1
@@ -134,8 +134,8 @@ msf **&gt;** cat subnet_1.gnmap | grep 80/open | awk '{print $2}'
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/portscan/syn
-msf auxiliary**(**syn**)** **&gt;** show options
+msf **>** use auxiliary/scanner/portscan/syn
+msf auxiliary**(**syn**)** **>** show options
 
 Module options **(**auxiliary/scanner/portscan/syn**)**:
 
@@ -151,15 +151,15 @@ Module options **(**auxiliary/scanner/portscan/syn**)**:
    THREADS    1                yes       The number of concurrent THREADS
    TIMEOUT    500              yes       The reply read timeout **in **milliseconds
 
-msf auxiliary**(**syn**)** **&gt;** set INTERFACE eth0
-INTERFACE **=&gt;** eth0
-msf auxiliary**(**syn**)** **&gt;** set PORTS 80
-PORTS **=&gt;** 80
-msf auxiliary**(**syn**)** **&gt;** set RHOSTS 192.168.1.0/24
-RHOSTS **=&gt;** 192.168.1.0/24
-msf auxiliary**(**syn**)** **&gt;** set THREADS 50
-THREADS **=&gt;** 50
-msf auxiliary**(**syn**)** **&gt;** run
+msf auxiliary**(**syn**)** **>** set INTERFACE eth0
+INTERFACE **=>** eth0
+msf auxiliary**(**syn**)** **>** set PORTS 80
+PORTS **=>** 80
+msf auxiliary**(**syn**)** **>** set RHOSTS 192.168.1.0/24
+RHOSTS **=>** 192.168.1.0/24
+msf auxiliary**(**syn**)** **>** set THREADS 50
+THREADS **=>** 50
+msf auxiliary**(**syn**)** **>** run
 
 **[*********]** TCP OPEN 192.168.1.1:80
 **[*********]** TCP OPEN 192.168.1.2:80
@@ -177,8 +177,8 @@ Metasploit `auxiliary/scanner/portscan/syn` modülü ile yukarıda yaptığımı
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/portscan/tcp
-msf  auxiliary**(**tcp**)** **&gt;** show options
+msf **>** use auxiliary/scanner/portscan/tcp
+msf  auxiliary**(**tcp**)** **>** show options
 
 Module options **(**auxiliary/scanner/portscan/tcp**)**:
 
@@ -192,7 +192,7 @@ Module options **(**auxiliary/scanner/portscan/tcp**)**:
    THREADS      1                yes       The number of concurrent THREADS
    TIMEOUT      1000             yes       The socket connect timeout **in **milliseconds
 
-msf  auxiliary**(**tcp**)** **&gt;** hosts -R
+msf  auxiliary**(**tcp**)** **>** hosts -R
 
 Hosts
 **=====**
@@ -201,9 +201,9 @@ address         mac                name  os_name  os_flavor  os_sp  purpose  inf
 -------         ---                ----  -------  ---------  -----  -------  ----  --------
 172.16.194.172  00:0C:29:D1:62:80        Linux    Ubuntu            server         
 
-RHOSTS **=&gt;** 172.16.194.172
+RHOSTS **=>** 172.16.194.172
 
-msf  auxiliary**(**tcp**)** **&gt;** show options
+msf  auxiliary**(**tcp**)** **>** show options
 
 Module options **(**auxiliary/scanner/portscan/tcp**)**:
 
@@ -219,7 +219,7 @@ Module options **(**auxiliary/scanner/portscan/tcp**)**:
    THREADS      10                yes       The number of concurrent THREADS
    TIMEOUT      1000             yes       The socket connect timeout **in **milliseconds
 
-msf  auxiliary**(**tcp**)** **&gt;** run
+msf  auxiliary**(**tcp**)** **>** run
 
 **[*********]** 172.16.194.172:25 - TCP OPEN
 **[*********]** 172.16.194.172:23 - TCP OPEN
@@ -235,7 +235,7 @@ msf  auxiliary**(**tcp**)** **&gt;** run
 **[*********]** 172.16.194.172:512 - TCP OPEN
 **[*********]** Scanned 1 of 1 hosts **(**100% complete**)**
 **[*********]** Auxiliary module execution completed
-msf  auxiliary**(**tcp**)** **&gt;** 
+msf  auxiliary**(**tcp**)** **>** 
 ```
 
 
@@ -252,12 +252,12 @@ Yaptığımız SYN ve TCP taramalarında bir kısım IP adreslerinin açık oldu
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/smb/smb_version
-msf auxiliary**(**smb_version**)** **&gt;** set RHOSTS 192.168.1.200-210
-RHOSTS **=&gt;** 192.168.1.200-210
-msf auxiliary**(**smb_version**)** **&gt;** set THREADS 11
-THREADS **=&gt;** 11
-msf auxiliary**(**smb_version**)** **&gt;** run
+msf **>** use auxiliary/scanner/smb/smb_version
+msf auxiliary**(**smb_version**)** **>** set RHOSTS 192.168.1.200-210
+RHOSTS **=>** 192.168.1.200-210
+msf auxiliary**(**smb_version**)** **>** set THREADS 11
+THREADS **=>** 11
+msf auxiliary**(**smb_version**)** **>** run
 
 **[*********]** 192.168.1.209:445 is running Windows 2003 R2 Service Pack 2 **(**language: Unknown**)** **(**name:XEN-2K3-FUZZ**)** **(**domain:WORKGROUP**)**
 **[*********]** 192.168.1.201:445 is running Windows XP Service Pack 3 **(**language: English**)** **(**name:V-XP-EXPLOIT**)** **(**domain:WORKGROUP**)**
@@ -274,7 +274,7 @@ msf auxiliary**(**smb_version**)** **&gt;** run
 
 
 ```bash
-msf auxiliary**(**smb_version**)** **&gt;** hosts
+msf auxiliary**(**smb_version**)** **>** hosts
 
 Hosts
 **=====**
@@ -296,8 +296,8 @@ Nmap tarafından kullanıcıya sağlanan tarama türlerinden bir tanesi de Idle 
 
 
 ```bash
-msf **&gt;** use auxiliary/scanner/ip/ipidseq
-msf auxiliary**(**ipidseq**)** **&gt;** show options
+msf **>** use auxiliary/scanner/ip/ipidseq
+msf auxiliary**(**ipidseq**)** **>** show options
 
 Module options **(**auxiliary/scanner/ip/ipidseq**)**:
 
@@ -310,11 +310,11 @@ Module options **(**auxiliary/scanner/ip/ipidseq**)**:
    THREADS    1                yes       The number of concurrent THREADS
    TIMEOUT    500              yes       The reply read timeout **in **milliseconds
 
-msf auxiliary**(**ipidseq**)** **&gt;** set RHOSTS 192.168.1.0/24
-RHOSTS **=&gt;** 192.168.1.0/24
-msf auxiliary**(**ipidseq**)** **&gt;** set THREADS 50
-THREADS **=&gt;** 50
-msf auxiliary**(**ipidseq**)** **&gt;** run
+msf auxiliary**(**ipidseq**)** **>** set RHOSTS 192.168.1.0/24
+RHOSTS **=>** 192.168.1.0/24
+msf auxiliary**(**ipidseq**)** **>** set THREADS 50
+THREADS **=>** 50
+msf auxiliary**(**ipidseq**)** **>** run
 
 **[*********]** 192.168.1.1's IPID sequence class: All zeros
 [*] 192.168.1.2's IPID sequence class: Incremental!
@@ -338,7 +338,7 @@ msf auxiliary**(**ipidseq**)** **&gt;** run
 
 
 ```bash
-msf auxiliary**(**ipidseq**)** **&gt;** nmap -PN -sI 192.168.1.109 192.168.1.114
+msf auxiliary**(**ipidseq**)** **>** nmap -PN -sI 192.168.1.109 192.168.1.114
 **[*********]** exec: nmap -PN -sI 192.168.1.109 192.168.1.114
 
 Starting Nmap 5.00 **(** <a href="http://nmap.org/">http://nmap.org</a> **)** at 2009-08-14 05:51 MDT

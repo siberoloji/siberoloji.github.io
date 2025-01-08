@@ -58,7 +58,7 @@ Bir XML belgesi genellikle bir XML bildirimiyle başlar:
 
 
 ```bash
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<?xml version="1.0" encoding="UTF-8"?>
 ```
 
 
@@ -75,9 +75,9 @@ Her XML belgesinin, diğer tüm öğeleri içeren tek bir kök öğesi olmalıd�
 
 
 ```bash
-&lt;root&gt;
-  &lt;!-- Other elements go here --&gt;
-&lt;/root&gt;
+<root>
+  <!-- Other elements go here -->
+</root>
 ```
 
 
@@ -90,7 +90,7 @@ Her XML belgesinin, diğer tüm öğeleri içeren tek bir kök öğesi olmalıd�
 
 
 ```bash
-&lt;element&gt;Content goes here&lt;/element&gt;
+<element>Content goes here</element>
 ```
 
 
@@ -99,9 +99,9 @@ Hiyerarşik bir yapı oluşturmak için öğeler iç içe yerleştirilebilir:
 
 
 ```bash
-&lt;parent&gt;
-  &lt;child&gt;Child content&lt;/child&gt;
-&lt;/parent&gt;
+<parent>
+  <child>Child content</child>
+</parent>
 ```
 
 
@@ -114,7 +114,7 @@ Hiyerarşik bir yapı oluşturmak için öğeler iç içe yerleştirilebilir:
 
 
 ```bash
-&lt;element attribute="value"&gt;Content&lt;/element&gt;
+<element attribute="value">Content</element>
 ```
 
 
@@ -127,7 +127,7 @@ XML, XML işlemcileri tarafından göz ardı edilen yorumları destekler:
 
 
 ```bash
-&lt;!-- This is a comment --&gt;
+<!-- This is a comment -->
 ```
 
 
@@ -141,22 +141,22 @@ XML'in geçerli belgeler oluşturmak için uyulması gereken katı sözdizimi ku
 
 * **Tüm elemanların bir kapanış etiketi olmalı** veya kendi kendine kapanmalıdır.
 
-* **Etiketler büyük/küçük harfe duyarlıdır** : `&lt;Element&gt;`ve `&lt;element&gt;`farklı etiketlerdir.
+* **Etiketler büyük/küçük harfe duyarlıdır** : `<Element>`ve `<element>`farklı etiketlerdir.
 
 * **Öğeler düzgün bir şekilde iç içe yerleştirilmelidir** :
 
 
 
 ```bash
-   &lt;outer&gt;&lt;inner&gt;&lt;/inner&gt;&lt;/outer&gt;  &lt;!-- Correct --&gt;
-   &lt;outer&gt;&lt;inner&gt;&lt;/outer&gt;&lt;/inner&gt;  &lt;!-- Incorrect --&gt;
+   <outer><inner></inner></outer>  <!-- Correct -->
+   <outer><inner></outer></inner>  <!-- Incorrect -->
 ```
 
 
 <!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Öznitelik değerleri tırnak işareti içinde olmalıdır** :`&lt;element attribute="value"&gt;`
+<ol start="4" class="wp-block-list">* **Öznitelik değerleri tırnak işareti içinde olmalıdır** :`<element attribute="value">`
 
-* **Özel karakterler kaçırılmalıdır** : `&amp;lt;`for &lt;, `&amp;gt;`for &gt;, `&amp;amp;`for &amp; gibi varlıkları kullanın.
+* **Özel karakterler kaçırılmalıdır** : `&amp;lt;`for <, `&amp;gt;`for >, `&amp;amp;`for &amp; gibi varlıkları kullanın.
 
 
 

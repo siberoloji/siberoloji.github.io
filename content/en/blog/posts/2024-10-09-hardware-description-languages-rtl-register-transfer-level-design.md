@@ -115,9 +115,9 @@ Example of RTL in Verilog:
 ```bash
 always @(posedge clk) begin
     if (reset) begin
-        register &lt;= 0;
+        register <= 0;
     end else begin
-        register &lt;= data_in;
+        register <= data_in;
     end
 end
 ```
@@ -155,9 +155,9 @@ process(clk)
 begin
     if rising_edge(clk) then
         if reset = '1' then
-            register &lt;= (others =&gt; '0');
+            register <= (others => '0');
         else
-            register &lt;= data_in;
+            register <= data_in;
         end if;
     end if;
 end process;

@@ -64,11 +64,6 @@ When a device needs to send data to another device on the same network, it knows
 
 * This cached information is used for future communications with the same destination device.
 
-
-
-
-
-
 **ARP Cache**
 
 

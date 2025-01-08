@@ -20,14 +20,14 @@ Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gös
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 int main() {
     int firstNumber = 11;
     float secondNumber = 12.8;
     float sum = firstNumber + secondNumber;
 
-    std::cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; std::endl;
+    std::cout << "Sum: " << sum << std::endl;
 
     return 0;
 }

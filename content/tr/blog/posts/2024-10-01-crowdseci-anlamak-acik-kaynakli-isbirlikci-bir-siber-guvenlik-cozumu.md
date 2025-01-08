@@ -22,11 +22,6 @@ Giderek daha fazla birbirine bağlı dijital dünyada,  siber güvenliğe yönel
 
 
 CrowdSec, siber tehditlerle mücadele etmek için kitle kaynak kullanımının gücünden yararlanan, modern, topluluk destekli bir siber güvenlik çözümü olarak ivme kazanıyor. Bu blog yazısında CrowdSec'i ayrıntılı olarak inceleyeceğiz: nasıl çalıştığını, temel özelliklerini, sunduğu avantajları ve işbirlikçi siber güvenliğin geleceğine nasıl katkıda bulunduğunu ele alacağız.
-
-
-
-
-
 ## CrowdSec Nedir?
 
 
@@ -44,11 +39,6 @@ CrowdSec'in Arkasındaki Vizyon
 
 
 CrowdSec'in arkasındaki ekip, geleneksel siber güvenlik çözümlerinin genellikle bilinen tehditlere karşı savunmaya odaklandığını, ancak yeni ve gelişen saldırılara hızlı bir şekilde uyum sağlamadığını fark etti. Dahası, birçok kuruluş, özellikle de daha küçük olanlar, gelişmiş tehdit algılama araçlarını dağıtmak için kaynaklara sahip değil. CrowdSec, etkili, iş birlikçi ve kolayca dağıtılabilir bir çözümü herkesin erişimine açarak siber güvenliği demokratikleştirmeyi hedefliyor.
-
-
-
-
-
 ## CrowdSec'in Temel Özellikleri
 
 
@@ -120,11 +110,6 @@ CrowdSec ölçeklenebilirlik düşünülerek tasarlanmıştır. İster küçük 
 
 
 Birden fazla siteye veya sunucuya sahip kuruluşlar için CrowdSec, dağıtılmış bir ağ genelinde tehditlerin izlenmesini ve engellenmesini basitleştiren merkezi bir yönetime olanak tanır.
-
-
-
-
-
 ## CrowdSec Nasıl Çalışır?
 
 
@@ -158,11 +143,6 @@ Kötü Amaçlı Faaliyetleri Engellemek İçin Bouncer'lar
 
 
 Gelecekteki saldırıları önlemek için CrowdSec, web sunucusu, güvenlik duvarı veya CDN (İçerik Dağıtım Ağı) gibi çeşitli düzeylerde kötü amaçlı IP'leri otomatik olarak engelleyen **Bouncers** kullanır . Kullanıcılar, altyapılarına bağlı olarak hangi Bouncers'ın dağıtılacağını seçebilir ve tehdidin ciddiyetine göre engellemelerin veya diğer savunma önlemlerinin süresini özelleştirebilir.
-
-
-
-
-
 ## CrowdSec Kullanmanın Faydaları
 
 
@@ -204,11 +184,6 @@ CrowdSec, kullanıcı dostu ve dağıtımı kolay olacak şekilde tasarlanmışt
 
 
 Daha fazla kullanıcı CrowdSec'i benimsedikçe, platform gelişmeye ve iyileşmeye devam ediyor. Topluluktan gelen katkılar (hem tehdit verileri hem de kod geliştirme açısından) CrowdSec'in siber güvenlik inovasyonunun ön saflarında kalmasına yardımcı oluyor.
-
-
-
-
-
 ## CrowdSec'in Potansiyel Zorlukları
 
 
@@ -221,11 +196,6 @@ CrowdSec çok sayıda avantaj sunarken, dikkate alınması gereken birkaç zorlu
 * **Yanlış Pozitifler** : Birçok otomatik güvenlik aracı gibi CrowdSec de zaman zaman yanlış pozitifler üretebilir; meşru aktiviteleri kötü amaçlı olarak işaretleyebilir. Kullanıcıların bu oluşumları en aza indirmek için uyarıları dikkatlice incelemeleri ve algılama kurallarını ayarlamaları gerekir.
 
 * **Teknik Uzmanlık** : Platform kullanıcı dostu olacak şekilde tasarlanmış olsa da, CrowdSec'i daha karmaşık ortamlar için tam olarak optimize etmek ve yapılandırmak için belirli düzeyde teknik uzmanlık gerekebilir.
-
-
-
-
-
 
 ## Çözüm
 

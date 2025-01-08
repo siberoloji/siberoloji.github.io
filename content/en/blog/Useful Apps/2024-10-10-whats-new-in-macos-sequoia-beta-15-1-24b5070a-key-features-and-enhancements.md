@@ -158,11 +158,6 @@ In addition to the headline features, macOS Sequoia Beta 15.1 introduces several
 
 * **Finder and Dock Enhancements**: The Finder app has received subtle UI changes, offering a more intuitive file management experience. The Dock has also been optimized, with smoother animations and the ability to group applications by category.
 
-
-
-
-
-
 ## Conclusion: A Solid Beta Update with Meaningful Changes
 
 

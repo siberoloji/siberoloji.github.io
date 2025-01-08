@@ -3,7 +3,7 @@ draft: false
 
 title:  'Tags and Elements: Proper Use of Opening and Closing Tags'
 date: '2024-10-26T16:49:46+03:00'
-author: 'Tarık Korucuoğlu'
+author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
 description:  "Learn the essential HTML tag rules for creating clean, functional web pages. Proper use of tags improves structure, accessibility, and SEO for any website. " 
  
 url:  /tags-and-elements-proper-use-of-opening-and-closing-tags/
@@ -26,16 +26,11 @@ In web development, particularly in HTML (Hypertext Markup Language), understand
 
 
 In this guide, we’ll take an in-depth look at HTML tags and elements, focusing on the correct use of opening and closing tags, the purpose they serve, and best practices for ensuring that your code is clean, readable, and functional.
-
-
-
-
-
 What Are HTML Tags and Elements?
 
 
 
-HTML tags are pieces of code that tell the browser how to display and structure content. These tags are enclosed within angle brackets, like `&lt;tagname&gt;`. When placed within HTML code, tags create elements, which combine to form the complete structure of a webpage.
+HTML tags are pieces of code that tell the browser how to display and structure content. These tags are enclosed within angle brackets, like `<tagname>`. When placed within HTML code, tags create elements, which combine to form the complete structure of a webpage.
 
 
 #### Tags
@@ -45,9 +40,9 @@ HTML tags are pieces of code that tell the browser how to display and structure 
 HTML tags come in two main types:
 
 
-* **Opening tags**: `&lt;tagname&gt;`, which signal the start of an element.
+* **Opening tags**: `<tagname>`, which signal the start of an element.
 
-* **Closing tags**: `&lt;/tagname&gt;`, which indicate the end of an element.
+* **Closing tags**: `</tagname>`, which indicate the end of an element.
 
 
 
@@ -56,24 +51,19 @@ An element is formed by pairing an opening tag with its corresponding closing ta
 
 
 ```bash
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
+<p>This is a paragraph.</p>
 ```
 
 
 
-In this example, `&lt;p&gt;` is the opening tag, and `&lt;/p&gt;` is the closing tag. Together, they form a paragraph element that contains the text "This is a paragraph."
+In this example, `<p>` is the opening tag, and `</p>` is the closing tag. Together, they form a paragraph element that contains the text "This is a paragraph."
 
 
 #### Self-Closing Tags
 
 
 
-Not all tags require a closing counterpart. Tags like `&lt;img&gt;`, `&lt;br&gt;`, and `&lt;hr&gt;` are self-closing, meaning they don’t need a closing tag because they don’t encapsulate content. In HTML5, self-closing tags don’t require the trailing slash (`&lt;img src="image.jpg"&gt;`), but it’s still commonly used for readability and compatibility, especially when transitioning from XHTML.
-
-
-
-
-
+Not all tags require a closing counterpart. Tags like `<img>`, `<br>`, and `<hr>` are self-closing, meaning they don’t need a closing tag because they don’t encapsulate content. In HTML5, self-closing tags don’t require the trailing slash (`<img src="image.jpg">`), but it’s still commonly used for readability and compatibility, especially when transitioning from XHTML.
 The Importance of Proper Tagging
 
 
@@ -93,11 +83,6 @@ Moreover, correct tag usage is crucial for:
 
 * **Maintaining Standards**: Ensuring adherence to W3C (World Wide Web Consortium) standards.
 
-
-
-
-
-
 A Closer Look at Opening and Closing Tags
 
 
@@ -105,19 +90,19 @@ A Closer Look at Opening and Closing Tags
 
 
 
-Every HTML document starts with a `&lt;!DOCTYPE html&gt;` declaration, followed by the `&lt;html&gt;` element, which contains everything else in the document. It generally looks like this:
+Every HTML document starts with a `<!DOCTYPE html>` declaration, followed by the `<html>` element, which contains everything else in the document. It generally looks like this:
 
 
 ```bash
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Title of the document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Hello, world!&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <p>Hello, world!</p>
+  </body>
+</html>
 ```
 
 
@@ -125,11 +110,11 @@ Every HTML document starts with a `&lt;!DOCTYPE html&gt;` declaration, followed 
 Here’s a breakdown:
 
 
-* `&lt;html&gt;` wraps the entire document.
+* `<html>` wraps the entire document.
 
-* `&lt;head&gt;` contains metadata and links to stylesheets and scripts.
+* `<head>` contains metadata and links to stylesheets and scripts.
 
-* `&lt;body&gt;` holds the visible content of the page.
+* `<body>` holds the visible content of the page.
 
 
 
@@ -141,22 +126,22 @@ Each of these tags must be opened and closed properly to ensure that the documen
 
 
 
-The `&lt;p&gt;` tag is one of the most basic HTML tags, used for paragraphs. It requires an opening and a closing tag around the text content:
+The `<p>` tag is one of the most basic HTML tags, used for paragraphs. It requires an opening and a closing tag around the text content:
 
 
 ```bash
-&lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+<p>This is a sample paragraph.</p>
 ```
 
 
 
-Headings, represented by `&lt;h1&gt;` to `&lt;h6&gt;` tags, create a hierarchy on the page, with `&lt;h1&gt;` as the main heading and `&lt;h6&gt;` as the smallest subheading. Each heading tag also needs a closing tag to function correctly:
+Headings, represented by `<h1>` to `<h6>` tags, create a hierarchy on the page, with `<h1>` as the main heading and `<h6>` as the smallest subheading. Each heading tag also needs a closing tag to function correctly:
 
 
 ```bash
-&lt;h1&gt;Main Heading&lt;/h1&gt;
-&lt;h2&gt;Subheading&lt;/h2&gt;
-&lt;p&gt;Some paragraph text under the subheading.&lt;/p&gt;
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<p>Some paragraph text under the subheading.</p>
 ```
 
 
@@ -164,72 +149,62 @@ Headings, represented by `&lt;h1&gt;` to `&lt;h6&gt;` tags, create a hierarchy o
 
 
 
-HTML supports ordered and unordered lists using `&lt;ul&gt;` and `&lt;ol&gt;`, respectively, with `&lt;li&gt;` tags for each list item. All these tags need proper opening and closing:
+HTML supports ordered and unordered lists using `<ul>` and `<ol>`, respectively, with `<li>` tags for each list item. All these tags need proper opening and closing:
 
 
 ```bash
-&lt;ul&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item&lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
 ```
 
 
 
-Failure to close a `&lt;li&gt;` tag can disrupt the list formatting, which can break the page layout or cause rendering issues.
+Failure to close a `<li>` tag can disrupt the list formatting, which can break the page layout or cause rendering issues.
 
 
 #### 4. **Links**
 
 
 
-Links are created with the `&lt;a&gt;` tag, which takes an `href` attribute to specify the URL destination:
+Links are created with the `<a>` tag, which takes an `href` attribute to specify the URL destination:
 
 
 ```bash
-&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+<a href="https://example.com">Visit Example</a>
 ```
 
 
 
-The `&lt;a&gt;` tag should always be closed, as leaving it unclosed can result in incorrectly formatted links or unclickable text.
+The `<a>` tag should always be closed, as leaving it unclosed can result in incorrectly formatted links or unclickable text.
 
 
 #### 5. **Images**
 
 
 
-Images in HTML are represented by the `&lt;img&gt;` tag. Since `&lt;img&gt;` is a self-closing tag, it doesn’t need a separate closing tag but requires attributes like `src` for the image source and `alt` for accessibility:
+Images in HTML are represented by the `<img>` tag. Since `<img>` is a self-closing tag, it doesn’t need a separate closing tag but requires attributes like `src` for the image source and `alt` for accessibility:
 
 
 ```bash
-&lt;img src="image.jpg" alt="Description of image"&gt;
+<img src="image.jpg" alt="Description of image">
 ```
 
 
 
 Remembering to add `alt` text improves accessibility by allowing screen readers to interpret the image content.
-
-
-
-
-
 Common Mistakes in Using Opening and Closing Tags
 
 
-* **Unclosed Tags**: Forgetting to close tags is a common mistake, especially in nested tags. For instance, failing to close a `&lt;div&gt;` tag can cause layout issues.
+* **Unclosed Tags**: Forgetting to close tags is a common mistake, especially in nested tags. For instance, failing to close a `<div>` tag can cause layout issues.
 
-* **Incorrect Nesting**: HTML requires tags to be opened and closed in a specific order. If `&lt;div&gt;&lt;p&gt;&lt;/div&gt;&lt;/p&gt;` is used, it creates a nesting error. Tags should close in the reverse order in which they were opened.
+* **Incorrect Nesting**: HTML requires tags to be opened and closed in a specific order. If `<div><p></div></p>` is used, it creates a nesting error. Tags should close in the reverse order in which they were opened.
 
-* **Extra Closing Tags**: Adding an extra closing tag like `&lt;/p&gt;` when it isn’t needed can lead to validation errors.
+* **Extra Closing Tags**: Adding an extra closing tag like `</p>` when it isn’t needed can lead to validation errors.
 
 * **Case Sensitivity**: Although HTML tags are not case-sensitive, it’s good practice to keep all tags in lowercase for consistency and readability.
-
-
-
-
-
 
 Tips for Correct Tag Usage
 
@@ -245,17 +220,12 @@ Tips for Correct Tag Usage
 
 
 ```bash
-&lt;!-- Header Section --&gt;
-&lt;header&gt;
-  &lt;h1&gt;Website Title&lt;/h1&gt;
-&lt;/header&gt;
-&lt;!-- End of Header Section --&gt;
+<!-- Header Section -->
+<header>
+  <h1>Website Title</h1>
+</header>
+<!-- End of Header Section -->
 ```
-
-
-
-
-
 Conclusion
 
 

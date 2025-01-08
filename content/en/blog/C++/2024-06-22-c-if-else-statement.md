@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'C++ if else statement'
-date: '2024-06-22T23:39:06+03:00'
+title: C++ if else statement
+date: 2024-06-22
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'In this article, you can examine the use of C++ if else statement.' 
- 
-url:  /c-if-else-statement/
- 
+description: In this article, you can examine the use of C++ if else statement.
+url: /c-if-else-statement/
 featured_image: /images/cpp.png
 categories:
-    - 'C++ Code Samples'
+    - C++ Code Samples
 tags:
     - c++
-    - 'c++ code samples'
-    - 'c++ if else statement'
+    - c++ code samples
+    - c++ if else statement
 ---
 
 
@@ -23,19 +19,19 @@ In this article, you can examine the use of C++ if else statement.
 
 
 ```cpp
-#include &lt;iostream&gt;
+#include <iostream>
 
 using namespace std;
 
 int main() {
 /* if else statement */
     int a;
-    cout &lt;&lt; "Enter a positive integer number: ";
-    cin &gt;&gt; a;
-    if (a &lt; 20) {
-        cout &lt;&lt; "a is less than 20 ";
+    cout << "Enter a positive integer number: ";
+    cin >> a;
+    if (a < 20) {
+        cout << "a is less than 20 ";
     } else {
-        cout &lt;&lt; "a is not less than 20 ";
+        cout << "a is not less than 20 ";
     }
     return 0;
 }

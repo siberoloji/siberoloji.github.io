@@ -21,8 +21,8 @@ The provided C++ code is a demonstration of how to use and display floating poin
 
 
 ```cpp
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -32,44 +32,44 @@ int main() {
     float i = 3.14e2;
     float j = 3.14e+2;
 
-    cout &lt;&lt; "f: " &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g: " &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h: " &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i: " &lt;&lt; i &lt;&lt; endl;
-    cout &lt;&lt; "j: " &lt;&lt; j &lt;&lt; endl;
+    cout << "f: " << f << endl;
+    cout << "g: " << g << endl;
+    cout << "h: " << h << endl;
+    cout << "i: " << i << endl;
+    cout << "j: " << j << endl;
 
-    cout &lt;&lt; "f (precision 10): " &lt;&lt; setprecision(10) &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (precision 10): " &lt;&lt; setprecision(10) &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (precision 10): " &lt;&lt; setprecision(10) &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (precision 10): " &lt;&lt; setprecision(10) &lt;&lt; i &lt;&lt; endl;
-    cout &lt;&lt; "j: " &lt;&lt; setprecision(10) &lt;&lt; j &lt;&lt; endl;
+    cout << "f (precision 10): " << setprecision(10) << f << endl;
+    cout << "g (precision 10): " << setprecision(10) << g << endl;
+    cout << "h (precision 10): " << setprecision(10) << h << endl;
+    cout << "i (precision 10): " << setprecision(10) << i << endl;
+    cout << "j: " << setprecision(10) << j << endl;
 
-    cout &lt;&lt; "f (scientific): " &lt;&lt; scientific &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (scientific): " &lt;&lt; scientific &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (scientific): " &lt;&lt; scientific &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (scientific): " &lt;&lt; scientific &lt;&lt; i &lt;&lt; endl;
-    cout &lt;&lt; "j (scientific): " &lt;&lt; scientific &lt;&lt; j &lt;&lt; endl;
+    cout << "f (scientific): " << scientific << f << endl;
+    cout << "g (scientific): " << scientific << g << endl;
+    cout << "h (scientific): " << scientific << h << endl;
+    cout << "i (scientific): " << scientific << i << endl;
+    cout << "j (scientific): " << scientific << j << endl;
 
-    cout &lt;&lt; "f (fixed): " &lt;&lt; fixed &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (fixed): " &lt;&lt; fixed &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (fixed): " &lt;&lt; fixed &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (fixed): " &lt;&lt; fixed &lt;&lt; i &lt;&lt; endl;
-    cout &lt;&lt; "j (fixed): " &lt;&lt; fixed &lt;&lt; j &lt;&lt; endl;
+    cout << "f (fixed): " << fixed << f << endl;
+    cout << "g (fixed): " << fixed << g << endl;
+    cout << "h (fixed): " << fixed << h << endl;
+    cout << "i (fixed): " << fixed << i << endl;
+    cout << "j (fixed): " << fixed << j << endl;
 
-    cout &lt;&lt; "f (precision 10 and scientific): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (precision 10 and scientific): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (precision 10 and scientific): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (precision 10 and scientific): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; i &lt;&lt; endl;
+    cout << "f (precision 10 and scientific): " << setprecision(10) << scientific << f << endl;
+    cout << "g (precision 10 and scientific): " << setprecision(10) << scientific << g << endl;
+    cout << "h (precision 10 and scientific): " << setprecision(10) << scientific << h << endl;
+    cout << "i (precision 10 and scientific): " << setprecision(10) << scientific << i << endl;
 
-    cout &lt;&lt; "f (precision 10 and fixed): " &lt;&lt; setprecision(10) &lt;&lt; fixed &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (precision 10 and fixed): " &lt;&lt; setprecision(10) &lt;&lt; fixed &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (precision 10 and fixed): " &lt;&lt; setprecision(10) &lt;&lt; fixed &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (precision 10 and fixed): " &lt;&lt; setprecision(10) &lt;&lt; fixed &lt;&lt; i &lt;&lt; endl;
+    cout << "f (precision 10 and fixed): " << setprecision(10) << fixed << f << endl;
+    cout << "g (precision 10 and fixed): " << setprecision(10) << fixed << g << endl;
+    cout << "h (precision 10 and fixed): " << setprecision(10) << fixed << h << endl;
+    cout << "i (precision 10 and fixed): " << setprecision(10) << fixed << i << endl;
 
-    cout &lt;&lt; "f (precision 10, scientific and uppercase): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; uppercase &lt;&lt; f &lt;&lt; endl;
-    cout &lt;&lt; "g (precision 10, scientific and uppercase): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; uppercase &lt;&lt; g &lt;&lt; endl;
-    cout &lt;&lt; "h (precision 10, scientific and uppercase): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; uppercase &lt;&lt; h &lt;&lt; endl;
-    cout &lt;&lt; "i (precision 10, scientific and uppercase): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; uppercase &lt;&lt; i &lt;&lt; endl;
+    cout << "f (precision 10, scientific and uppercase): " << setprecision(10) << scientific << uppercase << f << endl;
+    cout << "g (precision 10, scientific and uppercase): " << setprecision(10) << scientific << uppercase << g << endl;
+    cout << "h (precision 10, scientific and uppercase): " << setprecision(10) << scientific << uppercase << h << endl;
+    cout << "i (precision 10, scientific and uppercase): " << setprecision(10) << scientific << uppercase << i << endl;
 
 
     return 0;
@@ -92,7 +92,7 @@ Initially, five floating point variables `f`, `g`, `h`, `i`, and `j` are declare
 ```cpp
 float f = 3.14159;
 // ... other variable declarations
-cout &lt;&lt; "f: " &lt;&lt; f &lt;&lt; endl;
+cout << "f: " << f << endl;
 // ... other print statements
 ```
 
@@ -102,7 +102,7 @@ The code then uses the `setprecision` function from the `iomanip` library to con
 
 
 ```cpp
-cout &lt;&lt; "f (precision 10): " &lt;&lt; setprecision(10) &lt;&lt; f &lt;&lt; endl;
+cout << "f (precision 10): " << setprecision(10) << f << endl;
 // ... other print statements
 ```
 
@@ -112,9 +112,9 @@ The `scientific` and `fixed` manipulators are then used to change the format in 
 
 
 ```cpp
-cout &lt;&lt; "f (scientific): " &lt;&lt; scientific &lt;&lt; f &lt;&lt; endl;
+cout << "f (scientific): " << scientific << f << endl;
 // ... other print statements
-cout &lt;&lt; "f (fixed): " &lt;&lt; fixed &lt;&lt; f &lt;&lt; endl;
+cout << "f (fixed): " << fixed << f << endl;
 // ... other print statements
 ```
 
@@ -124,7 +124,7 @@ Finally, the `uppercase` manipulator is used in conjunction with the `scientific
 
 
 ```cpp
-cout &lt;&lt; "f (precision 10, scientific and uppercase): " &lt;&lt; setprecision(10) &lt;&lt; scientific &lt;&lt; uppercase &lt;&lt; f &lt;&lt; endl;
+cout << "f (precision 10, scientific and uppercase): " << setprecision(10) << scientific << uppercase << f << endl;
 // ... other print statements
 ```
 

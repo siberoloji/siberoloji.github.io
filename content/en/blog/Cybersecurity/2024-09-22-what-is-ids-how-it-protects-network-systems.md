@@ -14,11 +14,6 @@ tags:
 
 
 In an era where cyber threats have become increasingly sophisticated, organizations must implement effective security measures to safeguard their network systems. One such measure is an **Intrusion Detection System (IDS)**, a critical component of modern network security. This blog post will explore **what an IDS is**, its types, how it works, and how it can be used to protect network systems from unauthorized access and cyberattacks.
-
-
-
-
-
 What is an Intrusion Detection System (IDS)?
 
 
@@ -28,11 +23,6 @@ An **Intrusion Detection System (IDS)** is a network security technology designe
 
 
 Unlike firewalls, which prevent unauthorized access, an IDS focuses on **detecting** and **alerting** about potential intrusions, making it a **passive defense tool** rather than an active one. Its primary role is to act as an **early warning system**, notifying administrators about potential security incidents before they turn into severe breaches.
-
-
-
-
-
 How IDS Works
 
 
@@ -49,11 +39,6 @@ IDS can use different detection methods:
 * **Anomaly-Based Detection**: Instead of relying on known signatures, this method establishes a baseline for normal network activity. The IDS raises alerts when it detects deviations from this baseline. Anomaly-based detection is excellent for catching new or unknown threats but may generate false positives if legitimate activity is mistaken for a threat.
 
 * **Hybrid Detection**: Many modern IDS solutions use a combination of both signature and anomaly-based detection to maximize their accuracy and detection capabilities.
-
-
-
-
-
 
 Types of Intrusion Detection Systems
 
@@ -126,11 +111,6 @@ A **Host-Based Intrusion Detection System (HIDS)** operates on individual hosts 
 
 
 The downside of HIDS is that it only monitors individual devices, making it unsuitable for network-wide monitoring. Additionally, it may place a performance burden on the host system.
-
-
-
-
-
 How IDS Protects Network Systems
 
 
@@ -180,11 +160,6 @@ While traditional IDS systems can sometimes generate a large number of false pos
 
 
 For instance, if a network experiences high traffic during a specific time of day, a machine-learning-enhanced IDS will learn this pattern and adjust its detection rules, avoiding unnecessary alerts.
-
-
-
-
-
 IDS vs. IPS: What’s the Difference?
 
 
@@ -194,11 +169,6 @@ It’s worth noting that while IDS is a **detection tool**, its close cousin, **
 
 
 While IDS is passive and generates alerts for administrators to act on, IPS actively intercepts and prevents malicious traffic from entering the network. Many modern security appliances combine both IDS and IPS functionalities, known as **IDPS (Intrusion Detection and Prevention Systems)**, to provide comprehensive protection.
-
-
-
-
-
 Conclusion
 
 

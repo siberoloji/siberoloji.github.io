@@ -21,11 +21,6 @@ tags:
 
 
 In today’s data-driven world, visualizing complex data clearly and actionably is essential for efficient decision-making and monitoring. Grafana, an open-source analytics and interactive visualization tool, has become a go-to solution for many organizations. It empowers users to transform raw data into insightful, customizable dashboards that can monitor, analyze, and alert across diverse data sources. This guide dives into what makes Grafana a powerful tool, its features, setup process, data source integrations, and practical uses for effective data monitoring and visualization.
-
-
-
-
-
 1. What is Grafana?
 
 
@@ -115,11 +110,6 @@ If you prefer Docker, Grafana’s official Docker image provides a simple deploy
 
 
 After installation, access Grafana by navigating to `http://localhost:3000`. The default login credentials are usually `admin` for both username and password.
-
-
-
-
-
 4. Connecting Data Sources in Grafana
 
 
@@ -139,11 +129,6 @@ Grafana’s power lies in its compatibility with multiple data sources. Here are
 * Select **Prometheus** from the list, then configure the URL (usually `http://localhost:9090`).
 
 * Save &amp; Test to confirm the connection.
-
-
-
-
-
 #### MySQL and PostgreSQL
 
 
@@ -151,14 +136,9 @@ Grafana’s power lies in its compatibility with multiple data sources. Here are
 
 
 
-* **Add the Database as a Data Source**:* In Grafana, go to **Data Sources** &gt; **Add data source** and select either MySQL or PostgreSQL.
+* **Add the Database as a Data Source**:* In Grafana, go to **Data Sources** > **Add data source** and select either MySQL or PostgreSQL.
 
 * Configure the connection details, including the host, database name, and credentials.
-
-
-
-
-
 #### Elasticsearch
 
 
@@ -172,11 +152,6 @@ Grafana’s power lies in its compatibility with multiple data sources. Here are
 
 * Save &amp; Test to establish the connection.
 
-
-
-
-
-
 5. Building a Dashboard in Grafana
 
 
@@ -187,7 +162,7 @@ Once your data sources are configured, you’re ready to create dashboards. Foll
 #### Step 1: Create a New Dashboard
 
 
-* Navigate to **Dashboards** &gt; **New Dashboard** &gt; **Add new panel**.
+* Navigate to **Dashboards** > **New Dashboard** > **Add new panel**.
 
 
 

@@ -260,7 +260,7 @@ After your system reboots:
 
 * Open a terminal and run `sudo dnf update` to ensure your system is up-to-date
 
-* Install any additional software you need using `sudo dnf install &lt;package-name&gt;`
+* Install any additional software you need using `sudo dnf install <package-name>`
 
 * Configure your firewall settings using `firewall-cmd` if necessary
 

@@ -43,11 +43,6 @@ tags:
 
 * Bu sistem kullanıcıların sayısal IP adreslerini ezberlemeye gerek kalmadan web sitelerine kolayca erişebilmelerini sağlıyor.
 
-
-
-
-
-
 2. DNS Sunucusu Nedir?
 
 
@@ -73,11 +68,6 @@ DNS **sunucusu,** etki alanı adlarının ve bunlara karşılık gelen IP adresl
 
 
 * DNS sunucuları, DNS arama sürecinin omurgasını oluşturur ve alan adlarını IP adreslerine çevirerek bilgisayarınızı doğru web sitesine yönlendirmeye yardımcı olur.
-
-
-
-
-
 
 3. DNS Nasıl Çalışır?
 
@@ -107,11 +97,6 @@ DNS çözümleme süreci birkaç adımdan oluşur, ancak genellikle o kadar hız
 
 
 Bütün bunlar göz açıp kapayıncaya kadar, genellikle milisaniyeler içinde gerçekleşir.
-
-
-
-
-
 4. Günlük Kullanımda DNS'nin Yaygın Örnekleri
 
 
@@ -138,11 +123,6 @@ E-posta sistemleri de düzgün bir şekilde çalışmak için DNS'e güvenir. Bi
 
 
 Birçok mobil uygulama, özellikle internet erişimi gerektirenler, sundukları hizmetlere bağlanmak için DNS'e güvenir. Bir sosyal medya uygulamasını açtığınızda veya bir navigasyon hizmeti kullandığınızda, DNS sizi bu uygulamalar için doğru sunuculara yönlendirmek için perde arkasında çalışır.
-
-
-
-
-
 5. DNS Neden Önemlidir?
 
 
@@ -158,11 +138,6 @@ DNS, insan tarafından okunabilen etki alanı adları ile bilgisayarların birbi
 * **Yük Dengeleme** : DNS, trafiği birden fazla sunucu arasında dağıtabilir ve böylece web sitelerinin yoğun trafik sırasında bile erişilebilir kalmasını sağlar.
 
 * **Güvenlik Özellikleri** : DNS, spam, kötü amaçlı yazılım veya kimlik avı ile ilişkili belirli alan adlarını engelleyerek kötü amaçlı web sitelerini filtrelemeye yardımcı olabilir.
-
-
-
-
-
 
 6. DNS Sorunları ve Sorun Giderme
 
@@ -190,11 +165,6 @@ DNS genellikle sorunsuz bir şekilde çalışırken, kullanıcılar zaman zaman 
 * **DNS Sunucularını Değiştirin** : İSS'nizin DNS sunucuları yavaşsa veya yanıt vermiyorsa, Google DNS (`8.8.8.8` ve `8.8.4.4`) veya Cloudflare DNS (`1.1.1.`1) gibi genel DNS sunucularına geçebilirsiniz.
 
 * **Yönlendiricinizi Yeniden Başlatın** : Ağınıza bağlı tüm cihazlarda yaygın DNS sorunları yaşıyorsanız, bazen basit bir yönlendirici yeniden başlatması sorunu çözebilir.
-
-
-
-
-
 
 7. Sonuç
 

@@ -117,7 +117,7 @@ You can add multiple cards to Apple Pay, but you’ll need to select one as your
 
 
 
-You can also change your default card by going to **Settings** &gt; **Wallet &amp; Apple Pay** &gt; **Default Card** and selecting the card you want to use by default.
+You can also change your default card by going to **Settings** > **Wallet &amp; Apple Pay** > **Default Card** and selecting the card you want to use by default.
 
 
 
@@ -238,7 +238,7 @@ Receiving money works similarly—when someone sends you money, it will be store
 
 
 
-You can manage various settings related to Apple Pay directly on your iPhone 16 by going to **Settings** &gt; **Wallet &amp; Apple Pay**. Here, you can:
+You can manage various settings related to Apple Pay directly on your iPhone 16 by going to **Settings** > **Wallet &amp; Apple Pay**. Here, you can:
 
 
 * **Add or remove cards**.
