@@ -4,22 +4,17 @@ description: Learn how to configure a DHCP client on AlmaLinux. This guide cover
 date: 2024-12-11
 draft: false
 tags:
-  - AlmaLinux
+   - AlmaLinux
 categories:
-  - Linux
-  - Linux How-to
+   - Linux
+   - Linux How-to
 linkTitle: Configure a DHCP Client
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 350
-
 keywords:
-  - AlmaLinux
-
-
+   - AlmaLinux
 featured_image: /images/almalinux.webp
-url: null
+url: configure-dhcp-client-almalinux
 ---
 ### How to Configure DHCP Client on AlmaLinux
 
