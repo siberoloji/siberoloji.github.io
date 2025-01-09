@@ -80,7 +80,7 @@ Before making changes, check the system’s current locale settings.
 
    Example output:
 
-   ```
+   ```bash
    System Locale: LANG=en_US.UTF-8
        VC Keymap: us
       X11 Layout: us
@@ -95,7 +95,7 @@ Before making changes, check the system’s current locale settings.
 
    Example output:
 
-   ```
+   ```bash
    LANG=en_US.UTF-8
    LC_CTYPE="en_US.UTF-8"
    LC_NUMERIC="en_US.UTF-8"
@@ -124,7 +124,7 @@ locale -a
 
 Example output:
 
-```
+```bash
 C
 C.UTF-8
 en_US.utf8
@@ -197,13 +197,13 @@ To make locale changes permanent, use `localectl` or manually edit the configura
 
 2. Add or update the `LANG` variable:
 
-   ```
+   ```bash
    LANG=<locale>
    ```
 
    Example:
 
-   ```
+   ```bash
    LANG=es_ES.UTF-8
    ```
 
@@ -271,13 +271,13 @@ If a desired locale is not available, you may need to generate it.
 2. **Uncomment the Desired Locale:**
    Find the line corresponding to your desired locale and remove the `#`:
 
-   ```
+   ```bash
    # en_US.UTF-8 UTF-8
    ```
 
    After editing:
 
-   ```
+   ```bash
    en_US.UTF-8 UTF-8
    ```
 

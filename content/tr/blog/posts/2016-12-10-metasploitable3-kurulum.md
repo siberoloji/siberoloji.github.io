@@ -157,7 +157,7 @@ Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu 
 
 ```bash
 packer
-usage: packer **[**--version**]** **[**--help**]** <command**>** **[**<args>]
+usage: packer **[**--version**]** **[**--help**]** <command> **[**<args>]
 Available commands are:
 build build image**(**s**)** from template
 fix fixes templates from old versions of packer
@@ -275,7 +275,7 @@ virtualbox-iso output will be **in **this color.
 Build 'virtualbox-iso' finished.
 
 **==>** Builds finished. The artifacts of successful builds are:
---**>** virtualbox-iso: 'virtualbox' provider box: windows_2008_r2_virtualbox.box
+--> virtualbox-iso: 'virtualbox' provider box: windows_2008_r2_virtualbox.box
 Box successfully built by Packer.
 Attempting to add the box to Vagrant...
 **==>** box: Box file was not detected as metadata. Adding it directly...

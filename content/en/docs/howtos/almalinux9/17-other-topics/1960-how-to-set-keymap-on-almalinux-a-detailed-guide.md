@@ -69,7 +69,7 @@ Before making changes, you may want to check the current keymap configuration.
 
    The output will include lines like:
 
-   ```
+   ```bash
    System Locale: LANG=en_US.UTF-8
    VC Keymap: us
    X11 Layout: us
@@ -223,7 +223,7 @@ Understanding the keymap-related files and directories helps when troubleshootin
    - `/etc/vconsole.conf` for console settings.
    - Example content:
 
-     ```
+     ```bash
      KEYMAP=us
      ```
 
