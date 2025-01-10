@@ -12,7 +12,7 @@ categories:
 tags:
   - cybersecurity
   - metasploit framework
-linkTitle: Database Kullanımı
+linkTitle: Database Usage
 translation_key: msf-database-usage
 ---
 Within the Metasploit Framework, the database feature offered with Postgresql support is very useful and records the scan results in one place. Recording the results found makes it easier to transfer information such as IP addresses, port numbers or Hash Dump etc. to exploits to be used in the next steps.

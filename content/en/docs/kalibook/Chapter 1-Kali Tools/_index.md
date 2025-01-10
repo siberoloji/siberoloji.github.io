@@ -6,7 +6,7 @@ description: This post contains the full list of Kali Linux Tools. After the rel
 categories:
   - Kali Linux
 draft: false
-linkTitle: Chapter 1 Kali Tools
+linkTitle: Kali Tools
 simple_list: false
 ---
 

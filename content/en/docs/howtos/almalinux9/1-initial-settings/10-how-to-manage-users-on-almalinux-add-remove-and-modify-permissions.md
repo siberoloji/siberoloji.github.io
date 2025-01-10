@@ -53,8 +53,11 @@ sudo useradd -m -s /bin/bash newusername
 sudo passwd newusername
 
 ```
+{{% alert title="Warning" color="warning" %}}
+ [The danger of passwordless accounts](/security-implications-passwordless-user-accounts-almalinux/) is that anyone can log in without a password.
+{{% /alert %}}
 
-4. Verify the user has been created:
+1. Verify the user has been created:
 
 ```bash
 cat /etc/passwd | grep newusername

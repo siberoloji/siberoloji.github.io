@@ -183,10 +183,14 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: Twitter
+      - name: X
         url: https://x.com/siberoloji_ltd
-        icon: fab fa-twitter
+        icon: fab fa-x-twitter
         desc: Follow us on Twitter to get the latest news!
+      - name: Mastodon
+        url: https://mastodon.social/@siberoloji
+        icon: fab fa-mastodon
+        desc: Follow us on Mastodon!
       
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:

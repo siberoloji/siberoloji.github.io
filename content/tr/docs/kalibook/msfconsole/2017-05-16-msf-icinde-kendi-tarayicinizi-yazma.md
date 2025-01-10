@@ -1,35 +1,28 @@
 ---
 draft: false
-
-title:  'MSF İçinde Kendi Tarayıcınızı Yazma'
-date: '2017-05-16T12:58:00+03:00'
+title: MSF İçinde Kendi Tarayıcınızı Yazma
+weight: 100
+translation_key: creation-of-your-own-scanner
+date: 2017-05-16T12:58:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.' 
- 
-url:  /tr/msf-icinde-kendi-tarayicinizi-yazma/
- 
+description: Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
+url: /tr/msf-icinde-kendi-tarayicinizi-yazma/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+        - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+        - cybersecurity
+        - metasploit framework
+linkTitle: Kendi Tarayıcınızı Yazma
+keywords:
+        - exploit
 ---
-
-
 Bazen yapmak istediğiniz işleme tam olarak uyan bir modül bulamazsınız. 2-3 farklı modülün yaptığı işlemleri tek modülde toplamak istersiniz. Örneğin, evinizdeki ağınızı zafiyetlere karşı taramak ve kayıt altına almak isteyebilirsiniz. Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.
-
-
 
 Programlama diliyle söyleyecek olursak, Metasploit Framework içinde kullanılan bütün sınıflara (class) erişim ve kullanım imkanınız bulunmaktadır.
 
-
-
 ## Tarayıcıların bazı özellikleri
 
-
-* 
 * Tüm exploit sınıf ve modüllerine erişim sağlarlar.
 
 * Proxy, SSL ve raporlama desteği bulunur.
@@ -38,11 +31,7 @@ Programlama diliyle söyleyecek olursak, Metasploit Framework içinde kullanıla
 
 * Yazması ve çalıştırması çok kolaydır.
 
-
-
-
 Yazması ve çalıştırması kolay dense de kodlama biliyor olmanız size çok zaman kazandıracaktır. Bunu da ifade edelim. Aşağıdaki örnekte, TCP Exploit Modülü, `include` komutu ile sisteme dahil edilmekte ve bu modülün TCP bağlantı değişkenleri, istenen IP adresine bağlanmak için kullanılmaktadır. 12345 Portuna bağlantı sağlandıktan sonra sunucuya “HELLO SERVE” mesajı gönderilmektedir. Son olarak da sunucunun verdiği cevap ekrana yazdırılmaktadır.
-
 
 ```bash
 require 'msf/core'
@@ -74,28 +63,18 @@ class Metasploit3 < Msf::Auxiliary
 end
 ```
 
-
-
 ## Yazdığınız Tarayıcıyı Kaydetme
 
-
-
-Yazdığınız tarayıcıyı doğru yere kaydetmelisiniz. `msfconsole` başlarken modüller `./modules/auxuliary/scanner` klasöründen yüklenirler. O zaman yeni yazdığımız modülü `./modules/auxiliary/scanner/http/` klsörünün için simple_tcp.rb dosya adıyla Ruby uzantılı kayıt etmeliyiz. Ayrıntılı bilgi için <a href="https://siberoloji.github.io/Metasploit-temel-komutlar-ve-acikalamalari/">Metasploit Temel Komutlar -loadpath-</a> başlığını okuyabilirsiniz.
-
-
+Yazdığınız tarayıcıyı doğru yere kaydetmelisiniz. `msfconsole` başlarken modüller `./modules/auxuliary/scanner` klasöründen yüklenirler. O zaman yeni yazdığımız modülü `./modules/auxiliary/scanner/http/` klsörünün için simple_tcp.rb dosya adıyla Ruby uzantılı kayıt etmeliyiz. Ayrıntılı bilgi için [Metasploit Temel Komutlar -loadpath-](/tr/metasploit-framework-temel-komutlar/#loadpath) başlığını okuyabilirsiniz.
 
 Deneyeceğimiz tarayıcı modülün mesajını yakalamak için `netcat` dinleme oturumu açabilirsiniz.
-
 
 ```bash
 root@kali:~# nc -lnvp 12345 < response.txt
 listening on **[**any] 12345 ...
 ```
 
-
-
 Ardından yeni modülü seçip RHOST değişkenini ayarlıyoruz ve modülü çalıştırıyoruz.
-
 
 ```bash
 msf > use scanner/simple_tcp
@@ -107,44 +86,29 @@ msf auxiliary**(**simple_tcp**)** > run
 > Auxiliary module execution completed
 ```
 
-
-
 Detaylı kullanım örnekleri için Metasploit içerisinde bulunan modülleri incelemeniz tavsiye ediyorum.
-
-
 
 ## Sonuçları Kaydetme
 
-
-
 Raporlama metodu `report_*()` kullanıcıya aşağıdaki imkanları sunar. Bunun için veri tabanı kullanıyor olmalısınız.
 
-
-* 
 * Veri tabanı bağlantısı olup olmadığını kontrol eder.
 
 * Çift kayıt olup olmadığını kontrol eder.
 
 * Bulunan bir kaydı tabloya yazar.
 
-
-
-
 report.*() metodunu kullanmak için aşağıdaki `include` satırını tarayıcı dosyanıza dahil etmelisiniz.
-
 
 ```bash
 include Msf::Auxiliary::Report
 ```
 
-
-
 Son olarak report_note() metodunu kullanabilirsiniz.
 
-
 ```bash
-report_note**(**
-:host **=>** rhost,
-:type **=>** "myscanner_password",
-:data **=>** data
-**)**```
+report_note()
+:host => rhost,
+:type => "myscanner_password",
+:data => data
+```

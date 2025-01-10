@@ -1,6 +1,6 @@
 ---
 title: Chapter 2 Metasploit Framework
-url: /metasploit-framwork-section/
+url: /metasploit-framework-section/
 weight: 2
 description: >-
   Metasploit Framework is a powerful open-source tool for penetration testing, exploit development, and vulnerability research. It is the most widely used penetration testing framework in the world.
@@ -13,7 +13,7 @@ simple_list: true
 author: "author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))"
 tags:
   - msfconsole
-translationKey: msfsection
+translation_key: msfsection
 ---
 
 ## ToDo 

@@ -6,7 +6,7 @@ description: Bu gönderi Kali Linux Araçlarının tam listesini içerir. İlgil
 categories:
   - Kali Linux
 draft: false
-linkTitle: Bölüm 1 Kali Araçları
+linkTitle: Kali Araçları
 simple_list: true
 ---
 

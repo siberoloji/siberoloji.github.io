@@ -14,7 +14,7 @@ tags:
    - metasploit framework
 weight: 30
 translation_key: basic-metasploit-framework-commands
-linkTitle: Temel Komutlar
+linkTitle: Basic Commands
 ---
 
 
