@@ -38,7 +38,7 @@ Before diving into the techniques for monitoring trends and hashtags, it's impor
 
 
 
-**The Importance of Monitoring Trends and Hashtags for OSINT**
+the Importance of Monitoring Trends and Hashtags for OSINT**
 
 
 

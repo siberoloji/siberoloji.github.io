@@ -32,7 +32,7 @@ A robots.txt file is a simple text file placed in the root directory of your web
 The format of a robots.txt file is straightforward, and it uses specific rules or "directives" to communicate with web crawlers. These directives can either allow or disallow access to certain parts of your site. For example, you can block search engines from indexing pages that contain sensitive data, pages under development, or duplicate content.
 
 
-#### **The Structure of a Robots.txt File**
+#### the Structure of a Robots.txt File**
 
 
 

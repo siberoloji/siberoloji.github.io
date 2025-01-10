@@ -249,7 +249,7 @@ For SEO, the single-category approach generally provides better results:
 ## Final Recommendations
 
 
-* **For New Sites*** Start with single categories
+* for New Sites*** Start with single categories
 
 * Establish a clear content hierarchy
 
@@ -259,7 +259,7 @@ For SEO, the single-category approach generally provides better results:
 
 
 
-* **For Existing Sites*** Audit current category usage
+* for Existing Sites*** Audit current category usage
 
 * Consider gradual migration to single categories
 

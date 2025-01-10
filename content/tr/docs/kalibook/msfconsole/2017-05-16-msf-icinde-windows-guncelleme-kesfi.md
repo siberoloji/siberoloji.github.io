@@ -30,15 +30,15 @@ Aşağıdaki çıktıda, `use` komutu ile modül yüklenmiş ve seçenekleri gö
 
 
 ```bash
-msf exploit**(**handler**)** > use post/windows/gather/enum_patches
-msf post**(**enum_patches**)** > show options
+msf exploit(handler) > use post/windows/gather/enum_patches
+msf post(enum_patches) > show options
 
-Module options **(**post/windows/gather/enum_patches**)**:
+Module options (post/windows/gather/enum_patches):
 
    Name       Current Setting       Required  Description
    ----       ---------------       --------  -----------
-   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search **for
-   **MSFLOCALS  true                  yes       Search **for **missing patchs **for **which there is a MSF local module
+   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search for
+   **MSFLOCALS  true                  yes       Search for **missing patchs for **which there is a MSF local module
    SESSION                          yes       The session to run this module on.
 ```
 
@@ -48,9 +48,9 @@ Modül hakkında detaylı bilgileri `show advanced` komutuyla inceleyebilirsiniz
 
 
 ```bash
-msf post**(**enum_patches**)** > show advanced
+msf post(enum_patches) > show advanced
 
-Module advanced options **(**post/windows/gather/enum_patches**)**:
+Module advanced options (post/windows/gather/enum_patches):
 
    Name           : VERBOSE
    Current Setting: true
@@ -58,7 +58,7 @@ Module advanced options **(**post/windows/gather/enum_patches**)**:
 
    Name           : WORKSPACE
    Current Setting: 
-   Description    : Specify the workspace **for **this module
+   Description    : Specify the workspace for **this module
 ```
 
 
@@ -67,21 +67,21 @@ Bir `exploit` kullanarak Windows işletim sistemin Meterpreter shell açtıktan 
 
 
 ```bash
-msf post**(**enum_patches**)** > show options
+msf post(enum_patches) > show options
 
-Module options **(**post/windows/gather/enum_patches**)**:
+Module options (post/windows/gather/enum_patches):
 
    Name       Current Setting       Required  Description
    ----       ---------------       --------  -----------
-   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search **for
-   **MSFLOCALS  true                  yes       Search **for **missing patchs **for **which there is a MSF local module
+   KB         KB2871997, KB2928120  yes       A comma separated list of KB patches to search for
+   **MSFLOCALS  true                  yes       Search for **missing patchs for **which there is a MSF local module
    SESSION    1                     yes       The session to run this module on.
 
-msf post**(**enum_patches**)** > run
+msf post(enum_patches) > run
 
 > KB2871997 applied
 **[**+] KB2928120 is missing
-**[**+] KB977165 - Possibly vulnerable to MS10-015 kitrap0d **if **Windows 2K SP4 - Windows 7 **(**x86**)**
+**[**+] KB977165 - Possibly vulnerable to MS10-015 kitrap0d **if **Windows 2K SP4 - Windows 7 (x86)
 > KB2305420 applied
 **[**+] KB2592799 - Possibly vulnerable to MS11-080 afdjoinleaf **if **XP SP2/SP3 Win 2k3 SP2
 **[**+] KB2778930 - Possibly vulnerable to MS13-005 hwnd_broadcast, elevates from Low to Medium integrity

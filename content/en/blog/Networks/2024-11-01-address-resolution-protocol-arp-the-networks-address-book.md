@@ -31,7 +31,7 @@ Before delving into ARP, let's clarify the distinction between IP and MAC addres
 
 
 
-**The Role of ARP**
+the Role of ARP**
 
 
 
@@ -39,7 +39,7 @@ When a device needs to send data to another device on the same network, it knows
 
 
 
-**The ARP Process**
+the ARP Process**
 
 
 * **ARP Request:*** A device needs to send a packet to another device on the same network.

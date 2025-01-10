@@ -164,7 +164,7 @@ Transitioning from today’s PKI systems to quantum-resistant systems will not b
 
 
 
-4.3. **The Role of Standards Organizations**
+4.3. the Role of Standards Organizations**
 
 
 
@@ -173,7 +173,7 @@ Organizations like the **National Institute of Standards and Technology (NIST)**
 
 
 The development of these standards will be critical for ensuring that quantum-resistant PKI systems are secure, interoperable, and widely adopted.
-## 5. **The Road Ahead: Challenges and Opportunities**
+## 5. the Road Ahead: Challenges and Opportunities**
 
 
 

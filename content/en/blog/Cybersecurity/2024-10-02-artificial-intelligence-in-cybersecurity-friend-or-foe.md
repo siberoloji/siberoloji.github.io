@@ -92,7 +92,7 @@ One of the risks associated with AI in cybersecurity is the potential for data p
 This can result in an AI system failing to recognize legitimate threats or even flagging benign activity as malicious. Data poisoning represents a significant risk for organizations that rely heavily on AI-driven defenses, as it can undermine the very system meant to protect them.
 
 
-#### 3. **The Problem of Over-Reliance on AI**
+#### 3. the Problem of Over-Reliance on AI**
 
 
 

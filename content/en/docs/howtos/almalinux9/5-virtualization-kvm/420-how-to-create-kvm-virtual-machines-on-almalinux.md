@@ -108,7 +108,7 @@ Virt-Manager is a graphical tool that simplifies VM creation and management.
 
 3. **Start the New VM Wizard**:
    - Click **Create a New Virtual Machine**.
-   - Select **Local install media (ISO image or CDROM)** and click **Forward**.
+   - Select **Local install media (ISO image or CDROM)** and click forward**.
 
 4. **Choose Installation Media**:
    - Browse and select the ISO file of your desired operating system.

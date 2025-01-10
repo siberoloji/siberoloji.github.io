@@ -22,7 +22,7 @@ However, with this increased reliance comes an under-recognized but growing chal
 
 
 In this blog post, we will explore the key issues surrounding cybersecurity in space, the unique challenges of protecting space infrastructure, and what steps can be taken to safeguard satellites and other critical assets.
-## 1. **The Importance of Space Infrastructure**
+## 1. the Importance of Space Infrastructure**
 
 
 
@@ -188,7 +188,7 @@ New satellites and space systems must be built with **cybersecurity in mind** fr
 
 
 Cybersecurity in space is a global issue, and it requires **international cooperation**. Governments, space agencies, and private space companies must work together to establish common standards for satellite security. Organizations like the **United Nations Office for Outer Space Affairs (UNOOSA)** and the **International Telecommunication Union (ITU)** can play a crucial role in facilitating dialogue and cooperation between stakeholders.
-## 5. **The Road Ahead: Preparing for Future Space Cybersecurity Threats**
+## 5. the Road Ahead: Preparing for Future Space Cybersecurity Threats**
 
 
 

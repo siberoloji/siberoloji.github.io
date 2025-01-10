@@ -60,7 +60,7 @@ Asimptotik gösterimler, algoritmaların zaman veya uzay karmaşıklığını ta
 
 * **Omega Notasyonu ((Ω))** : En iyi durum senaryosunu temsil eden **alt sınırı tanımlar.**
 
-* **Theta Notasyonu ((Θ))** : Algoritmanın hem üst hem de alt sınırlarını temsil eden **sıkı sınırı** tanımlar .
+* theta Notasyonu ((Θ))** : Algoritmanın hem üst hem de alt sınırlarını temsil eden **sıkı sınırı** tanımlar .
 
 
 
@@ -139,7 +139,7 @@ Teta Notasyonu ((Θ))
 
 
 
-**Theta gösterimi ((Θ)) bir algoritmanın zaman karmaşıklığı üzerinde ****sıkı** bir sınır sağlar , yani hem üst hem de alt sınırları tanımlar. Bir algoritmanın zaman karmaşıklığı (Θ(f(n))) ise, bu zaman karmaşıklığının hem en iyi hem de en kötü durumlarda (f(n)) oranında arttığı anlamına gelir.
+theta gösterimi ((Θ)) bir algoritmanın zaman karmaşıklığı üzerinde ****sıkı** bir sınır sağlar , yani hem üst hem de alt sınırları tanımlar. Bir algoritmanın zaman karmaşıklığı (Θ(f(n))) ise, bu zaman karmaşıklığının hem en iyi hem de en kötü durumlarda (f(n)) oranında arttığı anlamına gelir.
 
 
 #### Resmi Tanım:

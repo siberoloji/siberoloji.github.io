@@ -226,7 +226,7 @@ sudo apt install vlc```
 One of the key advantages of Lubuntu is its ability to run smoothly on older hardware while still offering customization options. While LXQt is designed to be lightweight, it also allows you to personalize your desktop environment to better suit your preferences.
 
 
-* **Themes:** Lubuntu comes with several built-in themes that you can apply to change the look and feel of your desktop. You can access and change themes through **Preferences > LXQt Settings > Appearance**.
+* themes:** Lubuntu comes with several built-in themes that you can apply to change the look and feel of your desktop. You can access and change themes through **Preferences > LXQt Settings > Appearance**.
 
 * **Panels:** You can add, remove, or customize panels (the bars at the top or bottom of your screen) to organize your desktop the way you like. Right-click on a panel to access the configuration options.
 

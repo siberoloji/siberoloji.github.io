@@ -80,7 +80,7 @@ The reliance on third-party vendors is growing across all industries. Whether th
 Several high-profile security incidents have drawn attention to the vulnerabilities within the supply chain:
 
 
-* **The SolarWinds breach** in 2020: Hackers compromised software from SolarWinds, a widely-used IT management company, which gave them access to thousands of organizations, including government agencies and Fortune 500 companies.
+* the SolarWinds breach** in 2020: Hackers compromised software from SolarWinds, a widely-used IT management company, which gave them access to thousands of organizations, including government agencies and Fortune 500 companies.
 
 * **Target’s 2013 data breach**: Hackers gained access to the retailer’s systems through a third-party HVAC vendor, exposing the personal and financial information of over 40 million customers.
 

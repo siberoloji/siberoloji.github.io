@@ -42,7 +42,7 @@ This alternating pattern of work and rest helps maintain focus and prevent burno
 The Pomodoro Timer is rooted in several key principles of neuroscience and psychology:
 
 
-#### a) **The Power of Time-Limited Focus**
+#### a) the Power of Time-Limited Focus**
 
 
 
@@ -217,7 +217,7 @@ A web-based timer designed specifically for Pomodoro sessions. It’s straightfo
 Though primarily a task manager, TickTick has an integrated Pomodoro Timer feature. It’s great for those who want to organize their tasks and use the Pomodoro Technique simultaneously.
 
 
-#### d) **Forest**
+#### d) forest**
 
 
 

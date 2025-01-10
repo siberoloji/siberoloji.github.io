@@ -62,7 +62,7 @@ Finally, it’s installation time! Bob boots his system from the USB and follows
 
 - **Setting Up the Root Password**: Bob’s also prompted to set a password for the “root” user, which has [superuser privileges](/understanding-root-user-linux-important-role-security/). He carefully chooses a secure password, knowing how critical it is to protect this account.
 
-- **The GRUB Loader**: Just as he’s feeling confident, Bob hits a roadblock—the system throws a vague error about “GRUB installation.” After a bit of searching, he finds that this error can sometimes occur if the BIOS settings aren’t configured correctly. Following advice from a troubleshooting guide, he switches his boot mode from [UEFI to Legacy](/understanding-uefi-legacy-boot-mode-comprehensive-guide/). Success! AlmaLinux continues to install without a hitch.
+- the GRUB Loader**: Just as he’s feeling confident, Bob hits a roadblock—the system throws a vague error about “GRUB installation.” After a bit of searching, he finds that this error can sometimes occur if the BIOS settings aren’t configured correctly. Following advice from a troubleshooting guide, he switches his boot mode from [UEFI to Legacy](/understanding-uefi-legacy-boot-mode-comprehensive-guide/). Success! AlmaLinux continues to install without a hitch.
 
 ---
 

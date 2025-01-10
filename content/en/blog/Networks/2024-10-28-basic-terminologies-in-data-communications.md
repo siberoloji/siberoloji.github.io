@@ -277,7 +277,7 @@ The loss of signal strength as data travels through the transmission medium. Fac
 Unwanted signals that interfere with data transmission:
 
 
-* **Thermal Noise**: Caused by electronic component temperature
+* thermal Noise**: Caused by electronic component temperature
 
 * **Electromagnetic Interference**: From nearby electronic devices
 
@@ -325,7 +325,7 @@ Error Detection
 Error Correction
 
 
-* **Forward Error Correction (FEC)**: Adds redundant data for correction
+* forward Error Correction (FEC)**: Adds redundant data for correction
 
 * **Automatic Repeat Request (ARQ)**: Requests retransmission of corrupt data
 

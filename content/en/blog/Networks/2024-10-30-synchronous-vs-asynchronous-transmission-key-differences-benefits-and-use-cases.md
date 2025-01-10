@@ -181,9 +181,9 @@ Asynchronous transmission is often chosen for applications where simplicity, fle
 Choosing between synchronous and asynchronous transmission depends on specific factors such as data volume, transfer speed, cost, and network complexity:
 
 
-* **For High-Speed Data Transfer**: Synchronous transmission is typically the better choice.
+* for High-Speed Data Transfer**: Synchronous transmission is typically the better choice.
 
-* **For Sporadic Data Transfer**: Asynchronous transmission is suitable for low-speed and infrequent data transfer needs.
+* for Sporadic Data Transfer**: Asynchronous transmission is suitable for low-speed and infrequent data transfer needs.
 
 * **Complexity and Cost Considerations**: If simplicity and cost are important, asynchronous transmission may be the most practical option.
 

@@ -139,7 +139,7 @@ Advanced firewalls, like **Next-Generation Firewalls**, can mitigate DoS attacks
 
 
 
-Firewalls provide **detailed logs** of all traffic that passes through them. This helps network administrators monitor activity, detect suspicious patterns, and trace the origins of any security incidents. Logging and monitoring are critical for **incident response** and **forensic analysis** after an attack.
+Firewalls provide **detailed logs** of all traffic that passes through them. This helps network administrators monitor activity, detect suspicious patterns, and trace the origins of any security incidents. Logging and monitoring are critical for **incident response** and forensic analysis** after an attack.
 
 
 

@@ -172,7 +172,7 @@ By default, iSCSI connections are not persistent across reboots. To make them pe
 
 Once connected, the iSCSI device behaves like a locally attached disk. To use it:
 
-1. **Format the Device:**
+1. format the Device:**
 
    ```bash
    sudo mkfs.ext4 /dev/sdX

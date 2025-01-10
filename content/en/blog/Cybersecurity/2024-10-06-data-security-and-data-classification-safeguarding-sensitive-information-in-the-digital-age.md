@@ -207,7 +207,7 @@ Manually classifying data can be a time-consuming and error-prone process, espec
 
 
 
-Popular tools for automated data classification include **Microsoft Information Protection (MIP)**, **Varonis**, and **Forcepoint**.
+Popular tools for automated data classification include **Microsoft Information Protection (MIP)**, **Varonis**, and forcepoint**.
 
 
 
@@ -254,7 +254,7 @@ Several tools can help organizations classify and secure their data. Here are a 
 
 * **Varonis**: A data security platform that offers automated data classification, monitoring, and access control to protect sensitive information.
 
-* **Forcepoint Data Loss Prevention (DLP)**: A tool that prevents data breaches by classifying and securing sensitive data, whether on-premises or in the cloud.
+* forcepoint Data Loss Prevention (DLP)**: A tool that prevents data breaches by classifying and securing sensitive data, whether on-premises or in the cloud.
 
 * **Symantec Data Loss Prevention**: A comprehensive solution for identifying and protecting sensitive data across a variety of endpoints, networks, and storage systems.
 

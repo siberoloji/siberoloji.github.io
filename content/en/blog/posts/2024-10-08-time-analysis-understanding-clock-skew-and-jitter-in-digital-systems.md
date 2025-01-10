@@ -130,7 +130,7 @@ Jitter can be caused by a variety of factors, both internal to the system and ex
 
 * **Electromagnetic Interference (EMI)**: External sources of electromagnetic interference, such as nearby electrical devices or radio signals, can cause fluctuations in the clock signal, leading to jitter.
 
-* **Thermal Noise**: At the microscopic level, thermal noise in electronic components can cause slight variations in the timing of signals, contributing to jitter.
+* thermal Noise**: At the microscopic level, thermal noise in electronic components can cause slight variations in the timing of signals, contributing to jitter.
 
 * **Crosstalk**: In densely packed circuits, signals on adjacent wires can interfere with each other, causing small timing variations in the clock signal.
 

@@ -48,7 +48,7 @@ WordPress offers a variety of plugins to create and manage contact forms. Here a
 - **WPForms (Recommended for Beginners):** Offers a drag-and-drop form builder, making it easy to create forms without coding. WPForms Lite is available for free, while the Pro version offers more features like file uploads and payment integrations.
 - **Contact Form 7:** A lightweight and widely used plugin that offers flexibility and customization. While the interface is basic, it’s powerful and extendable through third-party plugins.
 - **Ninja Forms:** Known for its user-friendly interface, Ninja Forms allows Alice to create customizable forms with advanced features like conditional logic.
-- **Formidable Forms:** Ideal for more complex forms, such as surveys or multi-page forms.
+- formidable Forms:** Ideal for more complex forms, such as surveys or multi-page forms.
 - **Gravity Forms:** A premium plugin with robust features, including conditional logic, payment integration, and more.
 
 **Tip:** Alice should choose a plugin that aligns with her needs and budget. For simple contact forms, WPForms or Contact Form 7 are great starting points.
@@ -134,7 +134,7 @@ Managing form submissions effectively helps Alice stay responsive and build a co
 To improve her contact form’s effectiveness, Alice should track form submissions and analyze user interactions.
 
 - **Integration with Google Analytics:** Tools like **MonsterInsights** allow Alice to track form submissions directly in Google Analytics, helping her understand user behavior.
-- **Form Conversion Rates:** Monitoring how many visitors fill out and submit the form can highlight areas for improvement.
+- form Conversion Rates:** Monitoring how many visitors fill out and submit the form can highlight areas for improvement.
 
 ---
 

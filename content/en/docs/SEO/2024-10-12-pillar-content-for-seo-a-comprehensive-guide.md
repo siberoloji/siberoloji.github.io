@@ -40,7 +40,7 @@ Pillar content is a comprehensive, in-depth piece of content that serves as a fo
 
 
 
-**The Role of Pillar Content in SEO**
+the Role of Pillar Content in SEO**
 
 
 

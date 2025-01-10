@@ -259,7 +259,7 @@ Bob encountered a few hiccups, but he was ready to troubleshoot:
      sudo journalctl -u httpd
      ```
 
-2. **Forbidden error (403)**:
+2. forbidden error (403)**:
    - Ensure proper permissions:
 
      ```bash

@@ -42,7 +42,7 @@ Think of patterns as modular units that can be combined and rearranged to form d
 
 
 
-**The Benefits of Using Patterns**
+the Benefits of Using Patterns**
 
 
 * **Speeds up Development:** By leveraging pre-built patterns, developers can significantly reduce the time it takes to create a theme. Instead of starting from scratch, they can simply select and customize existing patterns to suit their needs.
@@ -101,9 +101,9 @@ In addition to creating your patterns, you can also explore popular pattern libr
 
 * **Advanced Custom Fields (ACF):** ACF offers a powerful tool for creating custom fields and patterns.
 
-* **ThemeIsle Patterns:** ThemeIsle provides a collection of free and premium patterns for their themes.
+* themeIsle Patterns:** ThemeIsle provides a collection of free and premium patterns for their themes.
 
-* **Themify Builder Patterns:** Themify Builder offers a library of pre-designed patterns that can be easily customized.
+* themify Builder Patterns:** Themify Builder offers a library of pre-designed patterns that can be easily customized.
 
 
 

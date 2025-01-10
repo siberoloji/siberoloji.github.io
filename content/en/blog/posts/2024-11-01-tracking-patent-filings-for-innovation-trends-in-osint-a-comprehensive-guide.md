@@ -117,7 +117,7 @@ Several tools can make the process of tracking and analyzing patent filings more
 
 * **Google Patents** Google Patents is free, with a user-friendly interface. It provides a wide search range across multiple countries and includes PDF viewing for patents filed in various languages.
 
-* **The Lens** The Lens offers free access to global patent data, biological sequence information, and scientific research. It also provides tools for linking patents to scholarly articles, making it ideal for R&amp;D purposes.
+* the Lens** The Lens offers free access to global patent data, biological sequence information, and scientific research. It also provides tools for linking patents to scholarly articles, making it ideal for R&amp;D purposes.
 
 * **PatentScout** PatentScout is a commercial tool that offers advanced analytics and visualization options, making it easier to identify trends and perform competitor analysis.
 

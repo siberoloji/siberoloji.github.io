@@ -13,7 +13,7 @@ tags:
    - metasploit
    - metasploit framework
 weight: 30
-translation_key: basic-metasploit-framework-commands
+translationKey:: basic-metasploit-framework-commands
 linkTitle: Basic Commands
 ---
 
@@ -25,7 +25,7 @@ In this article, we will examine the basic commands used in the Metasploit Frame
 When you activate a module you have selected using the `use` command, you can stop using the module. In this case, when you want to go back to a higher folder, the `back` command is used. Technically, it is not very necessary because when you select a new module in the module you are in, you exit that module.
 
 ```bash
-msf auxiliary**(**ms09_001_write**)** > back
+msf auxiliary(ms09_001_write) > back
 msf >
 ```
 
@@ -55,15 +55,15 @@ Metasploit Pro -- type 'go_pro' to launch it now.
 Although not every exploit supports this command, let's explain what it does. You have chosen a module and are wondering if it will work on the target system before applying it. After making the necessary settings with the `set` command, you can do a preliminary test with the `check` command.
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** > show options
+msf exploit(ms08_067_netapi) > show options
 
-Module options **(**exploit/windows/smb/ms08_067_netapi**)**:
+Module options (exploit/windows/smb/ms08_067_netapi):
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
    RHOST    172.16.194.134   yes       The target address
    RPORT    445              yes       Set the SMB service port
-   SMBPIPE  BROWSER          yes       The pipe name to use **(**BROWSER, SRVSVC**)**
+   SMBPIPE  BROWSER          yes       The pipe name to use (BROWSER, SRVSVC)
 
 Exploit target:
 
@@ -71,12 +71,12 @@ Exploit target:
    --  ----
    0   Automatic Targeting
 
-msf exploit**(**ms08_067_netapi**)** > check
+msf exploit(ms08_067_netapi) > check
 
-> Verifying vulnerable status... **(**path: 0x0000005a**)**
-> System is not vulnerable **(**status: 0x00000000**)**
+> Verifying vulnerable status... (path: 0x0000005a)
+> System is not vulnerable (status: 0x00000000)
 > The target is not exploitable.
-msf  exploit**(**ms08_067_netapi**)** >
+msf  exploit(ms08_067_netapi) >
 ```
 
 ## color
@@ -97,8 +97,8 @@ We can say that it is a small telnet or netcat program. It has SSL support and y
 ```bash
 msf > connect 192.168.1.1 23
 > Connected to 192.168.1.1:23
-DD-WRT v24 std **(**c**)** 2008 NewMedia-NET GmbH
-Release: 07/27/08 **(**SVN revision: 10011**)**
+DD-WRT v24 std (c) 2008 NewMedia-NET GmbH
+Release: 07/27/08 (SVN revision: 10011)
 DD-WRT login:
 ```
 
@@ -112,7 +112,7 @@ Communicate with a host, similar to interacting via netcat, taking advantage of 
 
 OPTIONS:
 
-    -C        Try to use CRLF **for **EOL sequence.
+    -C        Try to use CRLF for **EOL sequence.
     -P <opt>  Specify source port.
     -S <opt>  Specify source address.
     -c <opt>  Specify which Comm to use.
@@ -122,7 +122,7 @@ OPTIONS:
     -s        Connect with SSL.
     -u        Switch to a UDP socket.
     -w <opt>  Specify connect timeout.
-    -z        Just try to connect, **then return**.
+    -z        Just try to connect, then return**.
 
 msf >
 ```
@@ -132,7 +132,7 @@ msf >
 If you want to make changes to the code of the actively selected module, you can open the text editor with the `edit` command and perform the necessary operations. The Vim editor will open by default.
 
 ```bash
-msf exploit**(**ms10_061_spoolss**)** > edit
+msf exploit(ms10_061_spoolss) > edit
 > Launching /usr/bin/vim /usr/share/metasploit-framework/modules/exploits/windows/smb/ms10_061_spoolss.rb
 
 require 'msf/core'
@@ -154,7 +154,7 @@ class Metasploit3 > Msf::Exploit::Remote
 Used to exit msfconsole.
 
 ```bash
-msf exploit**(**ms10_061_spoolss**)** > exit
+msf exploit(ms10_061_spoolss) > exit
 root@kali:~#
 ```
 
@@ -183,11 +183,11 @@ Database Backend Commands
 
     Command           Description
     -------           -----------
-    creds             List all credentials **in **the database
+    creds             List all credentials **in the database
     db_connect        Connect to an existing database
     db_disconnect     Disconnect from the current database instance
     db_export         Export a file containing the contents of the database
-    db_import         Import a scan result file **(**filetype will be auto-detected**)**
+    db_import         Import a scan result file (filetype will be auto-detected)
 ...snip...
 ```
 
@@ -221,15 +221,15 @@ Basic options:
   ----   ---------------  --------  -----------
   RHOST                   yes       The target address
   RPORT  445              yes       The target port
-  WAIT   180              yes       The number of seconds to wait **for **the attack to complete.
+  WAIT   180              yes       The number of seconds to wait for the attack to complete.
 
 Payload information:
   Space: 1024
 
 Description:
   This module exploits an out of bounds **function **table dereference **in 
-  **the SMB request validation code of the SRV2.SYS driver included with 
-  Windows Vista, Windows 7 release candidates **(**not RTM**)**, and Windows 
+  the SMB request validation code of the SRV2.SYS driver included with 
+  Windows Vista, Windows 7 release candidates (not RTM), and Windows 
   2008 Server prior to R2. Windows Vista without SP1 does not seem 
   affected by this flaw.
 
@@ -241,7 +241,7 @@ References:
   <a href="http://seclists.org/fulldisclosure/2009/Sep/0039.html">http://seclists.org/fulldisclosure/2009/Sep/0039.html</a>
   <a href="http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx">http://www.microsoft.com/technet/security/Bulletin/MS09-050.mspx</a>
 
-msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** >
+msf  exploit(ms09_050_smb2_negotiate_func_index) >
 ```
 
 ## irb
@@ -254,9 +254,9 @@ msf > irb
 
 **>>** puts "Hello, metasploit!"
 Hello, metasploit!
-**=>** nil
+=> nil
 **>>** Framework::Version
-**=>** "4.8.2-2014022601"
+=> "4.8.2-2014022601"
 ```
 
 ## jobs
@@ -286,7 +286,7 @@ msf >
 If you give the `job id` number of a running process, it will cause the process to be closed.
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** > kill 0
+msf exploit(ms10_002_aurora) > kill 0
 Stopping job: 0...
 
 > Server stopped.
@@ -365,8 +365,8 @@ Metasploit Pro -- type 'go_pro' to launch it now.
 + -- --**=[** 1265 exploits - 695 auxiliary - 202 post **]**
 + -- --**=[** 330 payloads - 32 encoders - 8 nops      **]**
 
-> Processing version.rc **for **ERB directives.
-resource **(**version.rc**)>** version
+> Processing version.rc for **ERB directives.
+resource (version.rc**)>** version
 Framework: 4.8.2-2014022601
 Console  : 4.8.2-2014022601.15168
 msf >
@@ -436,7 +436,7 @@ Keywords:
   name      :  Modules with a matching descriptive name
   path      :  Modules with a matching path or reference name
   platform  :  Modules affecting this platform
-  type      :  Modules of a specific type **(**exploit, auxiliary, or post**)**
+  type      :  Modules of a specific type (exploit, auxiliary, or post)
   app       :  Modules that are client or server attacks
   author    :  Modules written by this author
   cve       :  Modules with a matching CVE ID
@@ -468,7 +468,7 @@ Matching Modules
    auxiliary/scanner/mysql/mysql_version                               normal     MySQL Server Version Enumeration
    exploit/linux/mysql/mysql_yassl_getname            2010-01-25       good       MySQL yaSSL CertDecoder::GetName Buffer Overflow
    exploit/linux/mysql/mysql_yassl_hello              2008-01-04       good       MySQL yaSSL SSL Hello Message Buffer Overflow
-   exploit/windows/mysql/mysql_payload                2009-01-16       excellent  Oracle MySQL **for **Microsoft Windows Payload Execution
+   exploit/windows/mysql/mysql_payload                2009-01-16       excellent  Oracle MySQL for **Microsoft Windows Payload Execution
    exploit/windows/mysql/mysql_yassl_hello            2008-01-04       average    MySQL yaSSL SSL Hello Message Buffer Overflow
 msf >
 ```
@@ -504,7 +504,7 @@ Matching Modules
    ----                                  ---------------  ----    -----------
    payload/aix/ppc/shell_bind_tcp                         normal  AIX Command Shell, Bind TCP Inline
    payload/aix/ppc/shell_find_port                        normal  AIX Command Shell, Find Port Inline
-   payload/aix/ppc/shell_interact                         normal  AIX execve shell **for **inetd
+   payload/aix/ppc/shell_interact                         normal  AIX execve shell for **inetd
 ...snip...
 ```
 
@@ -588,7 +588,7 @@ OPTIONS:
 You can use the `-l` parameter to see the list of all currently existing sessions.
 
 ```bash
-msf exploit**(**3proxy**)** > sessions -l
+msf exploit(3proxy) > sessions -l
 
 Active sessions
 **===============**
@@ -598,7 +598,7 @@ Active sessions
   1   Command shell  192.168.1.101:33191 -> 192.168.1.104:4444
 To interact with a given session, you just need to use the ‘-i’ switch followed by the Id number of the session.
 
-msf exploit**(**3proxy**)** > sessions -i 1
+msf exploit(3proxy) > sessions -i 1
 > Starting interaction with 1...
 
 C:WINDOWSsystem32>
@@ -609,29 +609,29 @@ C:WINDOWSsystem32>
 The `set` command is used to edit the options and parameters that need to be set for the module you have selected and activated with the `use` command.
 
 ```bash
-msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** > set RHOST 172.16.194.134
-RHOST **=>** 172.16.194.134
-msf auxiliary**(**ms09_050_smb2_negotiate_func_index**)** > show options
+msf auxiliary(ms09_050_smb2_negotiate_func_index) > set RHOST 172.16.194.134
+RHOST => 172.16.194.134
+msf auxiliary(ms09_050_smb2_negotiate_func_index) > show options
 
-Module options **(**exploit/windows/smb/ms09_050_smb2_negotiate_func_index**)**:
+Module options (exploit/windows/smb/ms09_050_smb2_negotiate_func_index):
 
    Name   Current Setting  Required  Description
    ----   ---------------  --------  -----------
    RHOST  172.16.194.134   yes       The target address
    RPORT  445              yes       The target port
-   WAIT   180              yes       The number of seconds to wait **for **the attack to complete.
+   WAIT   180              yes       The number of seconds to wait for the attack to complete.
 
 Exploit target:
 
    Id  Name
    --  ----
-   0   Windows Vista SP1/SP2 and Server 2008 **(**x86**)**
+   0   Windows Vista SP1/SP2 and Server 2008 (x86)
 ```
 
 While you can make the necessary adjustments with the `set` command, you may also want to see the list of `encoders` that the active module can use.
 
 ```bash
-msf  exploit**(**ms09_050_smb2_negotiate_func_index**)** > show encoders
+msf  exploit(ms09_050_smb2_negotiate_func_index) > show encoders
 
 Compatible Encoders
 **===================**
@@ -663,9 +663,9 @@ It is the opposite of the `set` command and cancels the parameter you set in the
 
 ```bash
 msf > set RHOSTS 192.168.1.0/24
-RHOSTS **=>** 192.168.1.0/24
+RHOSTS => 192.168.1.0/24
 msf > set THREADS 50
-THREADS **=>** 50
+THREADS => 50
 msf > set
 
 Global
@@ -696,11 +696,11 @@ You have selected a module and activated it. You will probably set the RHOST var
 
 ```bash
 msf > setg LHOST 192.168.1.101
-LHOST **=>** 192.168.1.101
+LHOST => 192.168.1.101
 msf > setg RHOSTS 192.168.1.0/24
-RHOSTS **=>** 192.168.1.0/24
+RHOSTS => 192.168.1.0/24
 msf > setg RHOST 192.168.1.136
-RHOST **=>** 192.168.1.136
+RHOST => 192.168.1.136
 ```
 
 ## save
@@ -727,7 +727,7 @@ Encoders
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
    cmd/ifs                                  low        Generic **${**IFS**}** Substitution Command Encoder
-   cmd/printf_php_mq                        manual     printf**(**1**)** via PHP magic_quotes Utility Command Encoder
+   cmd/printf_php_mq                        manual     printf(1) via PHP magic_quotes Utility Command Encoder
 ...snip...
 ```
 
@@ -758,8 +758,8 @@ Exploits
 
    Name                                                           Disclosure Date  Rank       Description
    ----                                                           ---------------  ----       -----------
-   aix/rpc_cmsd_opcode21                                          2009-10-07       great      AIX Calendar Manager Service Daemon **(**rpc.cmsd**)** Opcode 21 Buffer Overflow
-   aix/rpc_ttdbserverd_realpath                                   2009-06-17       great      ToolTalk rpc.ttdbserverd _tt_internal_realpath Buffer Overflow **(**AIX**)**
+   aix/rpc_cmsd_opcode21                                          2009-10-07       great      AIX Calendar Manager Service Daemon (rpc.cmsd) Opcode 21 Buffer Overflow
+   aix/rpc_ttdbserverd_realpath                                   2009-06-17       great      ToolTalk rpc.ttdbserverd _tt_internal_realpath Buffer Overflow (AIX)
    bsdi/softcart/mercantec_softcart                               2004-08-19       great      Mercantec SoftCart CGI Overflow
 ...snip...
 ```
@@ -776,12 +776,12 @@ Payloads
    ----                                             ---------------  ----    -----------
    aix/ppc/shell_bind_tcp                                            normal  AIX Command Shell, Bind TCP Inline
    aix/ppc/shell_find_port                                           normal  AIX Command Shell, Find Port Inline
-   aix/ppc/shell_interact                                            normal  AIX execve shell **for **inetd
+   aix/ppc/shell_interact                                            normal  AIX execve shell for **inetd
 ...snip...
 ```
 
 ```bash
-msf  exploit**(**ms08_067_netapi**)** > show payloads
+msf  exploit(ms08_067_netapi) > show payloads
 
 Compatible Payloads
 **===================**
@@ -797,7 +797,7 @@ Compatible Payloads
 The `show options` command shows the options and variables that can be set for the active module.
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** > show options
+msf exploit(ms08_067_netapi) > show options
 
 Module options:
 
@@ -805,7 +805,7 @@ Module options:
    ----     ---------------  --------  -----------
    RHOST                     yes       The target address
    RPORT    445              yes       Set the SMB service port
-   SMBPIPE  BROWSER          yes       The pipe name to use **(**BROWSER, SRVSVC**)**
+   SMBPIPE  BROWSER          yes       The pipe name to use (BROWSER, SRVSVC)
 
 Exploit target:
 
@@ -817,7 +817,7 @@ Exploit target:
 If you are not sure which operating systems can use the module you selected, you can use the `show targets` command.
 
 ```bash
-msf  exploit**(**ms08_067_netapi**)** > show targets
+msf  exploit(ms08_067_netapi) > show targets
 
 Exploit targets:
 
@@ -825,16 +825,16 @@ Exploit targets:
    --  ----
    0   Automatic Targeting
    1   Windows 2000 Universal
-   10  Windows 2003 SP1 Japanese **(**NO NX**)**
-   11  Windows 2003 SP2 English **(**NO NX**)**
-   12  Windows 2003 SP2 English **(**NX**)**
+   10  Windows 2003 SP1 Japanese (NO NX)
+   11  Windows 2003 SP2 English (NO NX)
+   12  Windows 2003 SP2 English (NX)
 ...snip...
 ```
 
 You can use the `show advanced` command to see the most detailed information about the module.
 
 ```bash
-msf exploit**(**ms08_067_netapi**)** > show advanced
+msf exploit(ms08_067_netapi) > show advanced
 
 Module advanced options:
 
@@ -862,7 +862,7 @@ Compatible Encoders
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
    cmd/ifs                                  low        Generic **${**IFS**}** Substitution Command Encoder
-   cmd/printf_php_mq                        manual     printf**(**1**)** via PHP magic_quotes Utility Command Encoder
+   cmd/printf_php_mq                        manual     printf(1) via PHP magic_quotes Utility Command Encoder
    generic/none                             normal     The "none" Encoder
    mipsbe/longxor                           normal     XOR Encoder
    mipsle/longxor                           normal     XOR Encoder
@@ -876,8 +876,8 @@ Compatible Encoders
    x86/avoid_utf8_tolower                   manual     Avoid UTF8/tolower
    x86/call4_dword_xor                      normal     Call+4 Dword XOR Encoder
    x86/context_cpuid                        manual     CPUID-based Context Keyed Payload Encoder
-   x86/context_stat                         manual     stat**(**2**)**-based Context Keyed Payload Encoder
-   x86/context_time                         manual     time**(**2**)**-based Context Keyed Payload Encoder
+   x86/context_stat                         manual     stat(2)-based Context Keyed Payload Encoder
+   x86/context_time                         manual     time(2)-based Context Keyed Payload Encoder
    x86/countdown                            normal     Single-byte XOR Countdown Encoder
    x86/fnstenv_mov                          normal     Variable-length Fnstenv/mov Dword XOR Encoder
    x86/jmp_call_additive                    normal     Jump/Call XOR Additive Feedback Encoder
@@ -916,7 +916,7 @@ After your searches, you have decided to use a module. At this point, you can ac
 
 ```bash
 msf > use dos/windows/smb/ms09_001_write
-msf auxiliary**(**ms09_001_write**)** > show options
+msf auxiliary(ms09_001_write) > show options
 
 Module options:
 
@@ -925,7 +925,7 @@ Module options:
    RHOST                   yes       The target address
    RPORT  445              yes       Set the SMB service port
 
-msf auxiliary**(**ms09_001_write**)** >
+msf auxiliary(ms09_001_write) >
 ```
 
 When you want to get help with a command during any operation, you can use the `help` command.

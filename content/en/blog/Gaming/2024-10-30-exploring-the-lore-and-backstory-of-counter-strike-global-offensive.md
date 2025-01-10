@@ -22,12 +22,12 @@ Since its launch in 2012, Counter-Strike: Global Offensive (CS:GO) has dominated
 
 
 In this guide, we’ll delve into CS:GO's lore, uncovering the origins of its factions, the settings of its famous maps, and the characters who fight these clandestine battles. Whether you're a seasoned player or a newcomer curious about the lore, this exploration will provide insight into the game’s hidden narrative layers.
-**The Roots of Counter-Strike: Where It All Began**
+the Roots of Counter-Strike: Where It All Began**
 
 
 
 Counter-Strike first emerged in 1999 as a mod for Valve’s iconic game Half-Life, created by Minh Le and Jess Cliffe. Unlike other first-person shooters, Counter-Strike focused on objective-based gameplay with two opposing teams: Terrorists and Counter-Terrorists. Over the years, Valve polished this mod into the refined tactical shooter it is today with Counter-Strike: Global Offensive. While the game isn’t structured around a linear storyline, its evolution reveals its subtle backstory of worldwide conflict and counter-terrorism efforts.
-**The Two Main Factions in CS:GO**
+the Two Main Factions in CS:GO**
 
 
 
@@ -113,7 +113,7 @@ Train is set in a Soviet-era rail depot, where Counter-Terrorists fight to prote
 
 
 In Office, a hostage scenario unfolds in a snowy urban office building. Unlike the bomb-defusal maps, the Office emphasizes hostage rescue, showcasing the Counter-Terrorists’ efforts to protect civilians. The map’s design suggests a corporate setting, disrupted by violence, that could mirror real-world threats faced by businesses globally.
-**The Characters: Player Models and Skins with Hidden Stories**
+the Characters: Player Models and Skins with Hidden Stories**
 
 
 
@@ -122,7 +122,7 @@ Valve has added a layer of personalization with character models and skins, many
 
 * **Agent Ava (SEAL Team 6)**: One of the most popular skins, Ava’s design reflects a sleek, modern approach to counter-terrorism. With tactical gear and a determined expression, she represents the professionalism and precision expected of elite units.
 
-* **The ‘Bloody Darryl’ (Phoenix Connexion)**: This skin, complete with rugged attire and a menacing appearance, hints at the Phoenix Connexion's brutal and uncompromising approach.
+* the ‘Bloody Darryl’ (Phoenix Connexion)**: This skin, complete with rugged attire and a menacing appearance, hints at the Phoenix Connexion's brutal and uncompromising approach.
 
 * **Lieutenant Rex Krikey (GIGN)**: With a look inspired by military veterans, Krikey’s model represents the experience and tactical prowess of the GIGN, highlighting the unit's role in high-risk operations.
 
@@ -130,7 +130,7 @@ Valve has added a layer of personalization with character models and skins, many
 
 
 These skins not only add cosmetic value but also reflect the unique identities of CS:GO's factions and players.
-**The Evolving Lore through Operations**
+the Evolving Lore through Operations**
 
 
 

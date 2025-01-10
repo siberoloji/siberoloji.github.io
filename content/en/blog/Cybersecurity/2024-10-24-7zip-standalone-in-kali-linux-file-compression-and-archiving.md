@@ -246,7 +246,7 @@ For additional security:
 7zip-standalone integrates seamlessly with other Kali Linux tools and workflows:
 
 
-* **Forensics**
+* forensics**
 
 
 

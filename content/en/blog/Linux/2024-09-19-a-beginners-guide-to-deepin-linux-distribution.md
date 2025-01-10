@@ -214,7 +214,7 @@ The **Deepin Control Center** is your one-stop-shop for managing system settings
 
 * **Display Settings**: Adjust resolution, refresh rate, and other display-related settings.
 
-* **Theme Settings**: Deepin offers several built-in themes and wallpapers. You can also download more from the Deepin Store.
+* theme Settings**: Deepin offers several built-in themes and wallpapers. You can also download more from the Deepin Store.
 
 
 

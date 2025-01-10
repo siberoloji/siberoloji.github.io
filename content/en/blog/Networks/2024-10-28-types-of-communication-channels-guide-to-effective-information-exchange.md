@@ -222,7 +222,7 @@ Visual communication includes the use of imagery, videos, and graphics to convey
 Formal and informal channels determine the tone and structure of communication. The choice between the two depends on the context, audience, and purpose.
 
 
-#### **Formal Communication**
+#### formal Communication**
 
 
 * Includes structured, official communication such as company announcements, policies, and professional interactions.

@@ -35,15 +35,15 @@ uname --help
 Usage: uname **[**OPTION]...
 Print certain system information.  With no OPTION, same as -s.
 
-  -a, --all                print all information, **in **the following order,
+  -a, --all                print all information, **in the following order,
                              except omit -p and -i **if **unknown:
   -s, --kernel-name        print the kernel name
   -n, --nodename           print the network node hostname
   -r, --kernel-release     print the kernel release
   -v, --kernel-version     print the kernel version
   -m, --machine            print the machine hardware name
-  -p, --processor          print the processor type **(**non-portable**)**
-  -i, --hardware-platform  print the hardware platform **(**non-portable**)**
+  -p, --processor          print the processor type (non-portable)
+  -i, --hardware-platform  print the hardware platform (non-portable)
   -o, --operating-system   print the operating system
       --help     display this help and exit
       --version  output version information and exit
@@ -190,11 +190,11 @@ Bu komutun çıktılarını, değişken olarak atayarak, yazacağınız komut ve
 
 ```bash
 sudo apt-get install linux-headers-$(uname -r)
-**[**sudo**]** password **for **umut: 
+**[**sudo**]** password for **umut: 
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-linux-headers-4.8.0-42-generic is already the newest version **(**4.8.0-42.45~16.04.1**)**.
+linux-headers-4.8.0-42-generic is already the newest version (4.8.0-42.45~16.04.1).
 ```
 
 

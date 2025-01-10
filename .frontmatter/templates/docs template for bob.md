@@ -14,5 +14,5 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 0
 featured_image: /images/bobs-adventures-with-alma-linux.png
-translation_key: ""
+translationKey:: ""
 ---

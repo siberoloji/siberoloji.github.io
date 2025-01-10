@@ -70,8 +70,8 @@
           "type": "boolean"
         },
         {
-          "title": "translation_key",
-          "name": "translation_key",
+          "title": "translationKey",
+          "name": "translationKey",
           "type": "string"
         }
       ]

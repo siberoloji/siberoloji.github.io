@@ -93,7 +93,7 @@ Table of Contents
 
 * **Gas Fee**: A fee paid to execute transactions or smart contracts on blockchain platforms like Ethereum.
 
-* **Fork**: A change or split in a blockchain’s protocol that creates two separate versions of the blockchain. Forks can be "hard" (permanent) or "soft" (temporary).
+* fork**: A change or split in a blockchain’s protocol that creates two separate versions of the blockchain. Forks can be "hard" (permanent) or "soft" (temporary).
 
 * **Ledger**: A record of transactions. In cryptocurrency, a ledger is usually maintained in a decentralized manner using blockchain technology.
 

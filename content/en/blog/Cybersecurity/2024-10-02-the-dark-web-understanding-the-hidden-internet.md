@@ -81,7 +81,7 @@ Tor’s encryption and traffic-routing technology make it difficult for authorit
 
 
 
-## 3. **The Legal Uses of the Dark Web**
+## 3. the Legal Uses of the Dark Web**
 
 
 
@@ -129,7 +129,7 @@ While the dark web is often associated with illicit activities, it plays a cruci
 
 
 
-## 4. **The Dark Web's Role in Illegal Activities**
+## 4. the Dark Web's Role in Illegal Activities**
 
 
 
@@ -177,7 +177,7 @@ While the dark web facilitates privacy and freedom for legitimate users, it is a
 
 
 
-## 5. **The Risks of Exploring the Dark Web**
+## 5. the Risks of Exploring the Dark Web**
 
 
 
@@ -241,7 +241,7 @@ The technologies that power the dark web, such as Tor, have also become critical
 
 
 
-6.3 **The Balance Between Privacy and Security**
+6.3 the Balance Between Privacy and Security**
 
 
 

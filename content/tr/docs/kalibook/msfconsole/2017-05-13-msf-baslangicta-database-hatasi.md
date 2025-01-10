@@ -13,7 +13,7 @@ tags:
     - metasploit framework
 linkTitle: Database Hatası
 weight: 40
-translation_key: msf-database-error
+translationKey:: msf-database-error
 ---
 
 

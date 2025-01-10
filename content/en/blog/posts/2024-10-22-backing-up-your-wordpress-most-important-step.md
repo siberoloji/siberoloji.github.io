@@ -95,7 +95,7 @@ A WordPress website consists of multiple components, each of which should be inc
 
 * **Database**: The WordPress database contains all your website’s content, such as posts, pages, comments, and user information.
 
-* **Themes**: Custom themes or premium themes need to be backed up in case they are lost or become corrupted.
+* themes**: Custom themes or premium themes need to be backed up in case they are lost or become corrupted.
 
 * **Plugins**: Plugins add functionality to your site. Backing up your plugins ensures you can restore them if something goes wrong.
 

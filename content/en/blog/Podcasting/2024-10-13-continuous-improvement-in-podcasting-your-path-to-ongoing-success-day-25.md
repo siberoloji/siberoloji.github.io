@@ -58,7 +58,7 @@ Now that we understand the 'why', let's explore the 'how'. Here are some valuabl
 Listening to podcasts about podcasting is a meta but incredibly effective way to stay updated. Here are some top recommendations:
 
 
-* **The Feed: The Official Libsyn Podcast** - Hosted by Elsie Escobar and Rob Walch, this show offers insights into podcast industry news, trends, and best practices.
+* the Feed: The Official Libsyn Podcast** - Hosted by Elsie Escobar and Rob Walch, this show offers insights into podcast industry news, trends, and best practices.
 
 * **School of Podcasting** - Dave Jackson's long-running show is packed with practical advice for podcasters at all levels.
 
@@ -146,7 +146,7 @@ Subscribing to podcasting newsletters can help you stay informed about the lates
 
 * **Hot Pod** - Offers in-depth analysis of the podcast industry.
 
-* **The Pod Report** - A weekly newsletter featuring curated podcasting news and resources.
+* the Pod Report** - A weekly newsletter featuring curated podcasting news and resources.
 
 
 
@@ -158,7 +158,7 @@ Subscribing to podcasting newsletters can help you stay informed about the lates
 As part of today's exercise, we're asking you to subscribe to 2-3 podcasts that focus on podcasting tips. To help you choose, here's a more detailed look at some top contenders:
 
 
-* **The Feed: The Official Libsyn Podcast**
+* the Feed: The Official Libsyn Podcast**
 
 
 
@@ -230,7 +230,7 @@ As part of today's exercise, we're asking you to subscribe to 2-3 podcasts that 
 
 
 
-* **The Podcast Host Show**
+* the Podcast Host Show**
 
 
 
@@ -326,7 +326,7 @@ Now that we understand the 'why', let's explore the 'how'. Here are some valuabl
 Listening to podcasts about podcasting is a meta but incredibly effective way to stay updated. Here are some top recommendations:
 
 
-* **The Feed: The Official Libsyn Podcast** - Hosted by Elsie Escobar and Rob Walch, this show offers insights into podcast industry news, trends, and best practices.
+* the Feed: The Official Libsyn Podcast** - Hosted by Elsie Escobar and Rob Walch, this show offers insights into podcast industry news, trends, and best practices.
 
 * **School of Podcasting** - Dave Jackson's long-running show is packed with practical advice for podcasters at all levels.
 
@@ -414,7 +414,7 @@ Subscribing to podcasting newsletters can help you stay informed about the lates
 
 * **Hot Pod** - Offers in-depth analysis of the podcast industry.
 
-* **The Pod Report** - A weekly newsletter featuring curated podcasting news and resources.
+* the Pod Report** - A weekly newsletter featuring curated podcasting news and resources.
 
 
 
@@ -426,7 +426,7 @@ Subscribing to podcasting newsletters can help you stay informed about the lates
 As part of today's exercise, we're asking you to subscribe to 2-3 podcasts that focus on podcasting tips. To help you choose, here's a more detailed look at some top contenders:
 
 
-* **The Feed: The Official Libsyn Podcast**
+* the Feed: The Official Libsyn Podcast**
 
 
 
@@ -498,7 +498,7 @@ As part of today's exercise, we're asking you to subscribe to 2-3 podcasts that 
 
 
 
-* **The Podcast Host Show**
+* the Podcast Host Show**
 
 
 

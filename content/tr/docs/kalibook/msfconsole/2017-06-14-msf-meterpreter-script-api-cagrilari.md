@@ -48,7 +48,7 @@ Bu komut, sistem hakkında bir takım bilgileri öğrenmemizi sağlar. Aşağıd
 
 ```bash
 **>>** client.sys.config.sysinfo
-**=>** **{**"OS"**=>**"Windows XP (Build 2600, Service Pack 3).", "Computer"**=>**"WINXPVM01"**}**
+=> **{**"OS"=>"Windows XP (Build 2600, Service Pack 3).", "Computer"=>"WINXPVM01"**}**
 **>>**
 ```
 
@@ -59,14 +59,14 @@ Komut çıktısında görüldüğü gibi, ekrana getirilen bilginin aslında far
 
 ```bash
 **>>** client.sys.config.sysinfo.class
-**=>** Hash
+=> Hash
 **>>**
 ```
 
 
 ```bash
 **>>** client.sys.config.sysinfo['OS'**]**
-**=>** "Windows XP (Build 2600, Service Pack 3)."
+=> "Windows XP (Build 2600, Service Pack 3)."
 **>>**
 ```
 
@@ -81,7 +81,7 @@ Bu çağrı kullanıcı bilgilerini elde etmek için kullanılır.
 
 ```bash
 **>>** client.sys.config.getuid
-**=>** "WINXPVM01\labuser"
+=> "WINXPVM01\labuser"
 **>>**
 ```
 
@@ -96,7 +96,7 @@ Bu çağrı sayesinde, Meterpreter oturumunun hangi program içine gömülü ola
 
 ```bash
 **>>** client.sys.process.getpid
-**=>** 684
+=> 684
 
 ## client.net.config.interfaces
 
@@ -104,9 +104,9 @@ Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde
 
 ```sh
 **>>** client.net.config.interfaces
-**=>** **[**#, #]
+=> **[**#, #]
 **>>** client.net.config.interfaces.class
-**=>** Array
+=> Array
 ```
 
 
@@ -116,7 +116,7 @@ Gördüğünüz gibi, API çağrısı array tipi bir değişken kullanmaktadır.
 
 ```bash
  **>>** interfaces **=** client.net.config.interfaces
- **=>** **[**#, #]
+ => **[**#, #]
  **>>** interfaces.each **do** |i|
  ?> puts i.pretty
  **>>** end

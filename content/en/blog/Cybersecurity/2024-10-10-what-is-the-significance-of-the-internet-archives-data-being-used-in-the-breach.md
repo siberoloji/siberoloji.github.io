@@ -36,7 +36,7 @@ Moreover, this incident underscores the importance of collaboration between cybe
 
 ## Moving Forward: Recommendations for Users and Organizations
 
-**For Users**
+for Users**
 
 * **Change Passwords Immediately**: Users should change their passwords on the Internet Archive and any other platforms where they may have reused credentials.
 
@@ -46,7 +46,7 @@ Moreover, this incident underscores the importance of collaboration between cybe
 
 * **Use Identity Monitoring Services**: Consider enrolling in identity theft protection services that alert users when their personal information is found on dark web forums or other illicit platforms.
 
-**For Organizations**
+for Organizations**
 
 * **Invest in Cybersecurity**: Allocate resources towards advanced security technologies and regular audits to identify vulnerabilities.
 

@@ -91,7 +91,7 @@ Managing VM power states is one of the fundamental operations.
    sudo virsh shutdown testvm
    ```
 
-4. **Force Stop a VM**:
+4. force Stop a VM**:
    If the VM doesn’t respond to shutdown:
 
    ```bash

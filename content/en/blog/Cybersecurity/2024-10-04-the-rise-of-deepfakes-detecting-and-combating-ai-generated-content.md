@@ -158,7 +158,7 @@ Blockchain technology has also been proposed as a solution to the deepfake probl
 
 
 
-3. **Forensic Analysis**
+3. forensic Analysis**
 
 
 

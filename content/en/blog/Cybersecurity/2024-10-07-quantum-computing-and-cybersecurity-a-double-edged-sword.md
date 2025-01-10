@@ -29,7 +29,7 @@ Quantum computing operates on the principles of quantum mechanics, a branch of p
 
 
 
-**The Threat to Cybersecurity**
+the Threat to Cybersecurity**
 
 
 
@@ -49,7 +49,7 @@ Another algorithm, Grover's algorithm, can search an unsorted database quadratic
 
 
 
-**The Post-Quantum Cryptography Era**
+the Post-Quantum Cryptography Era**
 
 
 

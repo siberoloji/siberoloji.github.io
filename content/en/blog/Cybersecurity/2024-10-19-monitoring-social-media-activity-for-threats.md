@@ -43,7 +43,7 @@ Before diving into monitoring techniques, it's essential to understand the commo
 
 
 
-**The Importance of Monitoring**
+the Importance of Monitoring**
 
 
 

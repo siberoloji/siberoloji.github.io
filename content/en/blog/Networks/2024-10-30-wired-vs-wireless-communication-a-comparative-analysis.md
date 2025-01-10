@@ -119,7 +119,7 @@ The choice between wired and wireless communication depends on various factors, 
 
 
 
-**The Future of Communication**
+the Future of Communication**
 
 
 

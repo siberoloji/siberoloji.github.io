@@ -35,13 +35,13 @@ Before we dive into advanced techniques, let's cover the fundamental aspects of 
 
 
 
-* **The Crafting Menu:*** Access the crafting menu from your inventory.
+* the Crafting Menu:*** Access the crafting menu from your inventory.
 
 * Here, you can view your materials, and craft items, and dismantle existing skins.
 
 
 
-* **The Crafting Process:*** Select the desired skin you want to craft.
+* the Crafting Process:*** Select the desired skin you want to craft.
 
 * Ensure you have the necessary materials.
 

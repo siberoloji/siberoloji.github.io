@@ -206,15 +206,15 @@ Implement schema markup to help search engines better understand the context and
 As with any advanced technology, there are several misconceptions about RankBrain and BERT:
 
 
-* **They're the Same Thing**: While both use AI, RankBrain and BERT serve different functions in Google's search algorithm.
+* they're the Same Thing**: While both use AI, RankBrain and BERT serve different functions in Google's search algorithm.
 
 * **You Can Directly Optimize for Them**: You can't optimize specifically for RankBrain or BERT. Instead, focus on creating high-quality, relevant content.
 
-* **They've Made Traditional SEO Obsolete**: While these technologies have changed SEO, fundamental practices like technical SEO and quality content creation remain crucial.
+* they've Made Traditional SEO Obsolete**: While these technologies have changed SEO, fundamental practices like technical SEO and quality content creation remain crucial.
 
-* **They Only Affect Certain Types of Queries**: Both RankBrain and BERT impact a wide range of queries, not just long-tail or conversational searches.
+* they Only Affect Certain Types of Queries**: Both RankBrain and BERT impact a wide range of queries, not just long-tail or conversational searches.
 
-* **They're Finished Products**: Both technologies continue to learn and evolve, constantly improving their understanding and processing of queries.
+* they're Finished Products**: Both technologies continue to learn and evolve, constantly improving their understanding and processing of queries.
 
 
 

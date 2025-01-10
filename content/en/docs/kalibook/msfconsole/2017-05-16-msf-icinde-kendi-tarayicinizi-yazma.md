@@ -2,7 +2,7 @@
 draft: false
 title: Creating Your Own Scanner in Metasploit Framework
 weight: 100
-translation_key: creation-of-your-own-scanner
+translationKey:: creation-of-your-own-scanner
 date: 2017-05-16T12:58:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework allows you to write your own scanner module for such purposes.
@@ -39,25 +39,25 @@ class Metasploit3 < Msf::Auxiliary
  include Msf::Exploit::Remote::Tcp
  include Msf::Auxiliary::Scanner
  def initialize
- Super**(**
+ Super(
  'Name' => 'My custom TCP scan',
  'Version' => '$Revision: 1$,
- 'Description' **=>** 'My quick scanner',
- 'Author' **=>** 'Your name here',
- 'License' **=>** MSF_LICENSE
- **)**
- register_options**(**
+ 'Description' => 'My quick scanner',
+ 'Author' => 'Your name here',
+ 'License' => MSF_LICENSE
+ )
+ register_options(
  ****[**
- Opt::RPORT**(**12345**)**
- **]**, self.class**)**
+ Opt::RPORT(12345)
+ **]**, self.class)
  end
 
- def run_host**(**ip**)**
+ def run_host(ip)
  connect**()**
  greeting **=** "HELLO SERVER"
-sock.puts**(**greeting**)**
-data **=** sock.recv**(**1024**)**
-print_status**(**"Received: #{data} from #{ip}"**)**
+sock.puts(greeting)
+data **=** sock.recv(1024)
+print_status("Received: #{data} from #{ip}")
 disconnect**()**
 end
 end
@@ -78,9 +78,9 @@ Then we select the new module, set the RHOST variable and run the module.
 
 ```bash
 msf > use scanner/simple_tcp
-msf auxiliary**(**simple_tcp**)** > set RHOSTS 192.168.1.100
-RHOSTS **=>** 192.168.1.100
-msf auxiliary**(**simple_tcp**)** > run
+msf auxiliary(simple_tcp) > set RHOSTS 192.168.1.100
+RHOSTS => 192.168.1.100
+msf auxiliary(simple_tcp) > run
 
 > Received: hello metasploit from 192.168.1.100
 > Auxiliary module execution completed

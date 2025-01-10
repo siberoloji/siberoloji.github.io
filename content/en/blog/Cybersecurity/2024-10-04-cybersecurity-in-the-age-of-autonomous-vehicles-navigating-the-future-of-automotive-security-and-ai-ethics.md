@@ -134,7 +134,7 @@ The Ethical Implications of AI in Autonomous Vehicles
 As autonomous vehicles become more prevalent, we must also address the ethical implications of AI in their design and operation. The ethical challenges surrounding AVs go beyond cybersecurity; they touch on questions of decision-making, accountability, and societal impact.
 
 
-#### 1. **The Dilemma of AI Decision-Making**
+#### 1. the Dilemma of AI Decision-Making**
 
 
 

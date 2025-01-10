@@ -109,11 +109,11 @@ Although Midori never became a commercial product, its influence can still be se
 The Midori project offers several lessons for both developers and organizations looking to innovate in the realm of operating systems and software development.
 
 
-* **The Challenge of Legacy Systems:** Innovating in an environment with significant legacy constraints is difficult. Organizations need to balance the need for backward compatibility with the desire to push technology forward.
+* the Challenge of Legacy Systems:** Innovating in an environment with significant legacy constraints is difficult. Organizations need to balance the need for backward compatibility with the desire to push technology forward.
 
 * **Importance of Vision and Focus:** While it’s essential to explore new ideas, projects like Midori show the importance of having a clear vision and focus. For Midori, conflicting priorities within Microsoft hindered its progress.
 
-* **The Role of Research Projects:** Midori’s cancellation doesn’t mean it was a failure. Research projects like these are crucial for exploring new ideas and pushing the boundaries of what’s possible, even if they don’t always lead to a commercial product.
+* the Role of Research Projects:** Midori’s cancellation doesn’t mean it was a failure. Research projects like these are crucial for exploring new ideas and pushing the boundaries of what’s possible, even if they don’t always lead to a commercial product.
 
 
 

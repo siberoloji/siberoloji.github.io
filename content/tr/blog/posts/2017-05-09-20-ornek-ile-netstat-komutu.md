@@ -36,7 +36,7 @@ Aşağıda, `netstat` komutuna ait 20 farklı örnek gösterilmiştir. `netstat 
 ```bash
 netstat -a | more
 
-Active Internet connections **(**servers and established**)**
+Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address         Foreign Address         State
 tcp        0      0 *****:sunrpc              *****:*****                     LISTEN
 tcp        0     52 192.168.0.2:ssh       192.168.0.1:egs         ESTABLISHED
@@ -45,7 +45,7 @@ tcp        0      0 localhost:smtp        *****:*****                     LISTEN
 tcp        0      0 *****:59482               *****:*****                     LISTEN
 udp        0      0 *****:35036               *****:*****
 udp        0      0 *****:npmp-local          *****:*****
-Active UNIX domain sockets **(**servers and established**)**
+Active UNIX domain sockets (servers and established)
 Proto RefCnt Flags       Type       State         I-Node Path
 unix  2      **[** ACC **]**     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
 unix  2      **[** ACC **]**     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
@@ -61,7 +61,7 @@ unix  2      **[** ACC **]**     STREAM     LISTENING     15938  /tmp/orbit-root
 ```bash
 netstat -at
 
-Active Internet connections **(**servers and established**)**
+Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address          Foreign Address    State
 tcp        0      0 *****:ssh                  *****:*****                LISTEN
 tcp        0      0 localhost:ipp          *****:*****                LISTEN
@@ -78,7 +78,7 @@ tcp        1      0 192.168.0.2:59292      <a href="http://www.gov.com:http/">ww
 ```bash
 netstat -au
 
-Active Internet connections **(**servers and established**)**
+Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address        Foreign Address    State
 udp        0      0 *****:35036              *****:*****
 udp        0      0 *****:npmp-local         *****:*****
@@ -93,14 +93,14 @@ udp        0      0 *****:mdns               *****:*****
 ```bash
 netstat -l
 
-Active Internet connections **(**only servers**)**
+Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address       Foreign Address     State
 tcp        0      0 *****:sunrpc            *****:*****                 LISTEN
 tcp        0      0 *****:58642             *****:*****                 LISTEN
 tcp        0      0 *****:ssh               *****:*****                 LISTEN
 udp        0      0 *****:35036             *****:*****
 udp        0      0 *****:npmp-local        *****:*****
-Active UNIX domain sockets **(**only servers**)**
+Active UNIX domain sockets (only servers)
 Proto RefCnt Flags       Type       State         I-Node Path
 unix  2      **[** ACC **]**     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
 unix  2      **[** ACC **]**     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
@@ -116,7 +116,7 @@ unix  2      **[** ACC **]**     STREAM     LISTENING     15938  /tmp/orbit-root
 ```bash
 netstat -lt
 
-Active Internet connections **(**only servers**)**
+Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address               Foreign Address  State
 tcp        0      0 *****:dctp                      *****:*****              LISTEN
 tcp        0      0 *****:mysql                     *****:*****              LISTEN
@@ -138,7 +138,7 @@ tcp        0      0 *****:https                     *****:*****              LIS
 ```bash
 netstat -lu
 
-Active Internet connections **(**only servers**)**
+Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address               Foreign Address    State
 udp        0      0 *****:39578                     *****:*****
 udp        0      0 *****:meregister                *****:*****
@@ -159,7 +159,7 @@ udp        0      0 *****:mdns                      *****:*****
 ```bash
 netstat -lx
 
-Active UNIX domain sockets **(**only servers**)**
+Active UNIX domain sockets (only servers)
 Proto RefCnt Flags       Type       State         I-Node Path
 unix  2      **[** ACC **]**     STREAM     LISTENING     4171   @ISCSIADM_ABSTRACT_NAMESPACE
 unix  2      **[** ACC **]**     STREAM     LISTENING     5767   /var/run/cups/cups.sock
@@ -261,7 +261,7 @@ Udp:
 ```bash
 netstat -tp
 
-Active Internet connections **(**w/o servers**)**
+Active Internet connections (w/o servers)
 Proto Recv-Q Send-Q Local Address         Foreign Address    State       PID/Program name
 tcp        0      0 192.168.0.2:ssh       192.168.0.1:egs    ESTABLISHED 2179/sshd
 tcp        1      0 192.168.0.2:59292     <a href="http://www.gov.com:http/">www.gov.com:http</a>   CLOSE_WAIT  1939/clock-applet
@@ -333,7 +333,7 @@ UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
 RX packets:4486 errors:0 dropped:0 overruns:0 frame:0
 TX packets:4077 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:1000
-RX bytes:2720253 **(**2.5 MiB**)**  TX bytes:1161745 **(**1.1 MiB**)**
+RX bytes:2720253 (2.5 MiB)  TX bytes:1161745 (1.1 MiB)
 Interrupt:18 Base address:0x2000
 lo        Link encap:Local Loopback
 inet addr:127.0.0.1  Mask:255.0.0.0
@@ -342,7 +342,7 @@ UP LOOPBACK RUNNING  MTU:16436  Metric:1
 RX packets:8 errors:0 dropped:0 overruns:0 frame:0
 TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:0
-RX bytes:480 **(**480.0 b**)**  TX bytes:480 **(**480.0 b**)**
+RX bytes:480 (480.0 b)  TX bytes:480 (480.0 b)
 ```
 
 
@@ -373,7 +373,7 @@ eth0            1      ff02::1
 ```bash
 netstat -c
 
-Active Internet connections **(**w/o servers**)**
+Active Internet connections (w/o servers)
 Proto Recv-Q Send-Q Local Address               Foreign Address             State
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg007.shr.prod.s:36944 TIME_WAIT
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg010.shr.prod.s:42110 TIME_WAIT
@@ -393,9 +393,9 @@ tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg
 ```bash
 netstat --verbose
 
-netstat: no support **for** `AF IPX' on this system.
+netstat: no support for** `AF IPX' on this system.
 netstat: no support for `AF AX25' on this system.
-netstat: no support **for** `AF X25' on this system.
+netstat: no support for** `AF X25' on this system.
 netstat: no support for `AF NETROM' on this system.
 ```
 
@@ -427,9 +427,9 @@ unix  2      **[** **]**         STREAM     CONNECTED     88586726 10394/httpd
 netstat -tulpn
 
 netstat -tulpn
-**(**Not all processes could be identified, non-owned process info
- will not be shown, you would have to be root to see it all.**)**
-Active Internet connections **(**only servers**)**
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address   State       PID/Program name
 tcp        0      0 127.0.1.1:53            0.0.0.0:*****         LISTEN      -               
 tcp        0      0 127.0.0.1:631           0.0.0.0:*****         LISTEN      -               

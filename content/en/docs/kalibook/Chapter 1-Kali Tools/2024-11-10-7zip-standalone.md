@@ -136,7 +136,7 @@ For additional security:
 
 7zip-standalone integrates seamlessly with other Kali Linux tools and workflows:
 
-1. **Forensics**
+1. forensics**
    - Compress evidence files while maintaining file integrity
    - Create encrypted archives of sensitive findings
    - Split large disk images into manageable chunks

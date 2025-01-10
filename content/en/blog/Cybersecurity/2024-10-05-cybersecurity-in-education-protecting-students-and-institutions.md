@@ -190,9 +190,9 @@ Educational institutions must also ensure that their cybersecurity practices com
 For example:
 
 
-* **The Family Educational Rights and Privacy Act (FERPA)** in the United States protects the privacy of student education records and gives parents and students certain rights concerning those records.
+* the Family Educational Rights and Privacy Act (FERPA)** in the United States protects the privacy of student education records and gives parents and students certain rights concerning those records.
 
-* **The General Data Protection Regulation (GDPR)** in Europe imposes strict guidelines on how organizations collect, store, and process personal data, including data from students.
+* the General Data Protection Regulation (GDPR)** in Europe imposes strict guidelines on how organizations collect, store, and process personal data, including data from students.
 
 
 

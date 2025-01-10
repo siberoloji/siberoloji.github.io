@@ -81,9 +81,9 @@ Web uygulama taramasına başlamadan önce, hedef URL adresini `-a` parametresiy
 msf > wmap_sites -h
 >  Usage: wmap_targets **[**options]
 	-h        Display this help text
-	-a **[**url]  Add site **(**vhost,url**)**
+	-a **[**url]  Add site (vhost,url)
 	-l        List all available sites
-	-s **[**id**]**   Display site structure **(**vhost,url|ids**)** **(**level**)**
+	-s **[**id**]**   Display site structure (vhost,url|ids) (level)
 
 	
 msf > wmap_sites -a <a href="http://172.16.194.172/">http://172.16.194.172</a>
@@ -110,8 +110,8 @@ msf > wmap_sites -l
 msf > wmap_targets -h
 > Usage: wmap_targets **[**options]
 	-h 		Display this help text
-	-t **[**urls]	Define target sites **(**vhost1,url[space]vhost2,url**)** 
-	-d **[**ids]	Define target sites **(**id1, id2, id3 ...**)**
+	-t **[**urls]	Define target sites (vhost1,url[space]vhost2,url) 
+	-d **[**ids]	Define target sites (id1, id2, id3 ...)
 	-c 		Clean target sites list
 	-l  		List all target sites
 
@@ -151,12 +151,12 @@ msf > wmap_run -h
 	-m **[**regex]                Launch only modules that name match provided regex.
 	-p **[**regex]                Only test path defined by regex.
 	-e **[**/path/to/profile]     Launch profile modules against all matched targets.
-	                          **(**No profile file runs all enabled modules.**)**
+	                          (No profile file runs all enabled modules.)
 
 msf > wmap_run -t
 
 > Testing target:
-> 	Site: 192.168.1.100 **(**192.168.1.100**)**
+> 	Site: 192.168.1.100 (192.168.1.100)
 > 	Port: 80 SSL: false
 > **============================================================**
 > Testing started. 2012-01-16 15:46:42 -0500
@@ -186,7 +186,7 @@ msf > wmap_run -e
 > Using ALL wmap enabled modules.
 **[**-] NO WMAP NODES DEFINED. Executing local modules
 > Testing target:
-> 	Site: 172.16.194.172 **(**172.16.194.172**)**
+> 	Site: 172.16.194.172 (172.16.194.172)
 > 	Port: 80 SSL: false
 **============================================================**
 > Testing started. 2012-06-27 09:29:13 -0400
@@ -199,7 +199,7 @@ msf > wmap_run -e
 **============================================================**
 > Module auxiliary/scanner/http/http_version
 
-> 172.16.194.172:80 Apache/2.2.8 **(**Ubuntu**)** DAV/2 **(** Powered by PHP/5.2.4-2ubuntu5.10 **)**
+> 172.16.194.172:80 Apache/2.2.8 (Ubuntu) DAV/2 ( Powered by PHP/5.2.4-2ubuntu5.10 )
 > Module auxiliary/scanner/http/open_proxy
 > Module auxiliary/scanner/http/robots_txt
 
@@ -211,7 +211,7 @@ msf > wmap_run -e
 
 > Module auxiliary/scanner/http/soap_xml
 > Path: /
-> Server 172.16.194.172:80 returned HTTP 404 **for** /.  Use a different one.
+> Server 172.16.194.172:80 returned HTTP 404 for** /.  Use a different one.
 > Module auxiliary/scanner/http/trace_axd
 > Path: /
 > Module auxiliary/scanner/http/verb_auth_bypass
@@ -246,13 +246,13 @@ Tarama tamamlandığında, bulunan zafiyetleri görmek için `wmap_vulns -l` kom
 
 ```bash
 msf > wmap_vulns -l
-> + **[**172.16.194.172] **(**172.16.194.172**)**: scraper /
+> + **[**172.16.194.172] (172.16.194.172): scraper /
 > 	scraper Scraper
 > 	GET Metasploitable2 - Linux
-> + **[**172.16.194.172] **(**172.16.194.172**)**: directory /dav/
+> + **[**172.16.194.172] (172.16.194.172): directory /dav/
 > 	directory Directory found.
 > 	GET Res code: 200
-> + **[**172.16.194.172] **(**172.16.194.172**)**: directory /cgi-bin/
+> + **[**172.16.194.172] (172.16.194.172): directory /cgi-bin/
 > 	directory Directoy found.
 > 	GET Res code: 403
 

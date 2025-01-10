@@ -51,7 +51,7 @@ The output of the command given above is normally much more detailed and longer,
 
 
 
-To get detailed information about the problem shown with a red warning in the output of the command,  we will use **the status** unit command of **the systemctl**  tool  and the name of the unit we want to get information about.
+To get detailed information about the problem shown with a red warning in the output of the command,  we will use the status** unit command of the systemctl**  tool  and the name of the unit we want to get information about.
 
 
 ```bash

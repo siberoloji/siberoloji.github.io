@@ -53,7 +53,7 @@ Pivot makinede meterpreter oturum açık durumdayken `portfwd –h` komutu ile `
 meterpreter > portfwd -h
 Usage: portfwd **[**-h**]** **[**add | delete | list | flush] **[**args]
 OPTIONS:
-     -L >opt>  The local host to listen on **(**optional**)**.
+     -L >opt>  The local host to listen on (optional).
      -h        Help banner.
      -l >opt>  The local port to listen on.
      -p >opt>  The remote port to connect on.
@@ -274,12 +274,12 @@ eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f
          RX packets:1357685 errors:0 dropped:0 overruns:0 frame:0
          TX packets:823428 errors:0 dropped:0 overruns:0 carrier:0
          collisions:0 txqueuelen:1000 
-         RX bytes:318385612 **(**303.6 MiB**)**  TX bytes:133752114 **(**127.5 MiB**)**
+         RX bytes:318385612 (303.6 MiB)  TX bytes:133752114 (127.5 MiB)
          Interrupt:19 Base address:0x2000
 
 
 root@kali:~# ping 172.16.194.141
-PING 172.16.194.141 **(**172.16.194.141**)** 56**(**84**)** bytes of data.
+PING 172.16.194.141 (172.16.194.141) 56(84) bytes of data.
 64 bytes from 172.16.194.141: icmp_req**=**1 ttl**=**128 time**=**240 ms
 64 bytes from 172.16.194.141: icmp_req**=**2 ttl**=**128 time**=**117 ms
 64 bytes from 172.16.194.141: icmp_req**=**3 ttl**=**128 time**=**119 ms
@@ -315,7 +315,7 @@ Yönlendirme komutunu **pivot** bilgisayarda verdikten sonra yerel bilgisayarım
 
 ```bash
 root@kali:~# netstat -antp
-Active Internet connections **(**servers and established**)**
+Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 0.0.0.0:22              0.0.0.0:*****               LISTEN      8397/sshd  
 .....

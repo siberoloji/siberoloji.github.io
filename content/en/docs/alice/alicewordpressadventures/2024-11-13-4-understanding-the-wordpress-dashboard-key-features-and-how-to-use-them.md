@@ -124,7 +124,7 @@ The left-hand side of the dashboard features the **Admin Menu**, the main naviga
 To create her first post, Alice can go to *Posts > Add New*. Here’s a quick overview of key elements:
 
 - **Title and Content Editor:** Alice can add a title and start writing in the main content editor. The Gutenberg block editor offers flexibility to add text, images, galleries, embeds, and more as individual blocks.
-- **Formatting Options:** Alice can use headings, lists, quotes, and media blocks to create engaging content.
+- formatting Options:** Alice can use headings, lists, quotes, and media blocks to create engaging content.
 - **Publish Settings:** Alice can save drafts, preview posts, schedule publishing, and set visibility (public, private, or password-protected).
 - **Categories and Tags:** Assigning categories and tags helps readers navigate related content.
 

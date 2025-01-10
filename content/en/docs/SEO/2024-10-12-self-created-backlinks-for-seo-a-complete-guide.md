@@ -34,7 +34,7 @@ Self-created backlinks are links that you place on other websites manually, with
 
 * **Blog comments**: Leaving a comment on a blog post and including a link back to your website.
 
-* **Forum posts**: Participating in relevant discussions on forums and linking to your website in your posts or signatures.
+* forum posts**: Participating in relevant discussions on forums and linking to your website in your posts or signatures.
 
 * **Directory submissions**: Submitting your site to online directories that list businesses, blogs, or resources.
 
@@ -64,11 +64,11 @@ Before diving deeper into self-created backlinks, it's important to understand w
 Not all backlinks are created equal, though. Search engines consider factors like:
 
 
-* **The authority of the linking site**: Links from high-authority websites carry more weight than those from low-authority sites.
+* the authority of the linking site**: Links from high-authority websites carry more weight than those from low-authority sites.
 
-* **The relevance of the linking site**: A backlink from a relevant website within your industry or niche is more valuable than a link from an unrelated site.
+* the relevance of the linking site**: A backlink from a relevant website within your industry or niche is more valuable than a link from an unrelated site.
 
-* **The anchor text**: The clickable text in a hyperlink can influence how search engines perceive the relevance of the linked content.
+* the anchor text**: The clickable text in a hyperlink can influence how search engines perceive the relevance of the linked content.
 
 
 

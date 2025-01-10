@@ -81,7 +81,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **David Bombal**
 
-* **The XSS Rat**
+* the XSS Rat**
 
 * **Cyrill Gossi**
 
@@ -193,7 +193,7 @@ This curated list of YouTube channels offers a wealth of knowledge and expertise
 
 * **BroCodez**
 
-* **thenewboston**
+* thenewboston**
 
 * **Telusko**
 

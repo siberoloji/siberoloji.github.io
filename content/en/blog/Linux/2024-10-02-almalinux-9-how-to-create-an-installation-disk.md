@@ -65,7 +65,7 @@ Before we write the AlmaLinux 9 ISO file to the USB drive, make sure your USB dr
 
 * **Back up your data**: Writing the ISO file to the USB drive will erase all the data currently on the drive. If you have important files on it, be sure to back them up elsewhere before proceeding.
 
-* **Format the USB drive**: Although many disk-writing tools will format the drive for you, it’s a good idea to format it manually before starting. You can use your operating system’s built-in disk utility for this.
+* format the USB drive**: Although many disk-writing tools will format the drive for you, it’s a good idea to format it manually before starting. You can use your operating system’s built-in disk utility for this.
 
 
 
@@ -76,7 +76,7 @@ Before we write the AlmaLinux 9 ISO file to the USB drive, make sure your USB dr
 
 * Open **File Explorer** and right-click on the USB drive.
 
-* Select **Format**, choose the **FAT32** or **NTFS** file system, and click **Start**.
+* Select format**, choose the **FAT32** or **NTFS** file system, and click **Start**.
 
 
 

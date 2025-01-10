@@ -13,5 +13,5 @@ weight: 0
 keywords: ""
 featured_image: /images/kalilinux2.webp
 url: 
-translation_key: ""
+translationKey:: ""
 ---

@@ -92,7 +92,7 @@ In the realm of sustainability, **Altice Dominicana** launched a recycling progr
 
 
 
-AI’s role in cybersecurity continues to grow as companies like **Fortinet** leverage **AI-driven automation** to counter evolving threats. With **zero-day vulnerabilities** on the rise, AI’s ability to detect and neutralize cyber threats is becoming increasingly crucial for both businesses and governments. Experts emphasize that AI-powered security systems will likely dominate future cybersecurity strategies​(<a href="https://digitopia.co/blog/top-10-in-tech-september-2024/" target="_blank" rel="noreferrer noopener">Digitopia</a>).
+AI’s role in cybersecurity continues to grow as companies like fortinet** leverage **AI-driven automation** to counter evolving threats. With **zero-day vulnerabilities** on the rise, AI’s ability to detect and neutralize cyber threats is becoming increasingly crucial for both businesses and governments. Experts emphasize that AI-powered security systems will likely dominate future cybersecurity strategies​(<a href="https://digitopia.co/blog/top-10-in-tech-september-2024/" target="_blank" rel="noreferrer noopener">Digitopia</a>).
 
 
 

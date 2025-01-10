@@ -99,7 +99,7 @@ Another common issue involves the touchscreen becoming unresponsive, particularl
 
 
 
-* **Force Restart**:
+* force Restart**:
 
 
 
@@ -123,7 +123,7 @@ Camera Glitches
 Users have reported that the camera app may freeze or show a black screen when opened. Here’s how to troubleshoot:
 
 
-* **Force Quit Camera App**:
+* force Quit Camera App**:
 
 
 
@@ -211,7 +211,7 @@ Wi-Fi or Bluetooth connectivity issues can be frustrating but are often easily r
 
 
 
-* **Forget Network/Device**:
+* forget Network/Device**:
 
 
 

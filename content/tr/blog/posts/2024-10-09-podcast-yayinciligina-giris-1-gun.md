@@ -118,7 +118,7 @@ Podcasting, yaratıcıların çok çeşitli türleri kapsamasına olanak tanır.
 
 * **Röportaj/Sohbet** : Birçok podcast, ilginç veya önemli konuklarla yapılan röportajlara odaklanır. Dax Shepard'ın The Tim Ferriss Show ve Armchair Expert'i bu türün örnekleridir ve çok çeşitli konularda derin sohbetler sunar.
 
-* **Hikaye Anlatımı ve Sesli Dramalar : **The Moth veya Welcome to Night Vale gibi hikaye anlatımı podcast'leri inanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır.
+* **Hikaye Anlatımı ve Sesli Dramalar : the Moth veya Welcome to Night Vale gibi hikaye anlatımı podcast'leri inanılmaz derecede popülerdir. Bu şovlar, kişisel hikayeleri paylaşmak veya tamamen yeni kurgusal dünyalar yaratmak için podcast formatını kullanır.
 
 
 

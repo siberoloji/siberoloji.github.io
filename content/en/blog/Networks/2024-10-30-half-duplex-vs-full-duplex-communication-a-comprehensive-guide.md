@@ -112,7 +112,7 @@ In some cases, hybrid communication modes are employed to combine the benefits o
 
 
 
-**The Future of Communication Modes**
+the Future of Communication Modes**
 
 
 

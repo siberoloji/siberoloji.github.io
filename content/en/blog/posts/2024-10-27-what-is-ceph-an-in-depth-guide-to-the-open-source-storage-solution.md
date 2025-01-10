@@ -93,7 +93,7 @@ The Metadata Server is only necessary when Ceph is used to provide CephFS, a POS
 
 
 
-5. **The CRUSH Algorithm**
+5. the CRUSH Algorithm**
 
 
 

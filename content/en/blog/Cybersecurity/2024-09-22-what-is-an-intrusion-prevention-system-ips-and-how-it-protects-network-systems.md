@@ -56,7 +56,7 @@ Here’s a breakdown of how IPS works:
 
 
 
-* **Logging and Reporting**: After a threat is detected and mitigated, the IPS logs the incident. These logs are valuable for future **forensic analysis** and help administrators understand the types of threats targeting their systems.
+* **Logging and Reporting**: After a threat is detected and mitigated, the IPS logs the incident. These logs are valuable for future forensic analysis** and help administrators understand the types of threats targeting their systems.
 
 Types of Intrusion Prevention Systems
 

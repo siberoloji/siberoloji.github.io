@@ -76,11 +76,11 @@ To understand podcasting fully, it’s essential to appreciate its history and h
 Podcasting is a relatively new form of media that emerged in the early 2000s. The concept of downloadable audio content existed before, but the term "podcasting" and the associated technology came into prominence with the rise of Apple’s iPod and RSS feeds.
 
 
-* **The Coining of the Term**: The term "podcasting" is a combination of "iPod" (Apple's popular media player) and "broadcasting." However, it’s worth noting that while the term is derived from "iPod," podcasting is not exclusive to Apple devices. It can be consumed on any internet-connected device.
+* the Coining of the Term**: The term "podcasting" is a combination of "iPod" (Apple's popular media player) and "broadcasting." However, it’s worth noting that while the term is derived from "iPod," podcasting is not exclusive to Apple devices. It can be consumed on any internet-connected device.
 
 * **RSS Feeds and Syndication**: The real breakthrough for podcasting came with the integration of **RSS (Really Simple Syndication)** feeds. This technology allowed content creators to syndicate their audio files, enabling listeners to subscribe to a podcast feed. As new episodes were added, subscribers would automatically receive updates.
 
-* **The Role of Dave Winer and Adam Curry**: In 2004, Dave Winer, a software developer and RSS pioneer, and former MTV video jockey Adam Curry developed a way to deliver audio files through an RSS feed. Curry is often credited with creating one of the first popular podcasts, "The Daily Source Code," which documented the process of podcast creation.
+* the Role of Dave Winer and Adam Curry**: In 2004, Dave Winer, a software developer and RSS pioneer, and former MTV video jockey Adam Curry developed a way to deliver audio files through an RSS feed. Curry is often credited with creating one of the first popular podcasts, "The Daily Source Code," which documented the process of podcast creation.
 
 
 

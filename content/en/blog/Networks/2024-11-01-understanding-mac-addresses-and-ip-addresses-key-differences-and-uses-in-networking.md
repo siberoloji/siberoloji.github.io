@@ -34,7 +34,7 @@ A **MAC Address** (Media Access Control Address) is a unique identifier assigned
 
 * **Permanence**: MAC addresses are typically permanent and hardcoded by the device manufacturer. They do not change over time, even if the device is connected to different networks.
 
-* **Format**: MAC addresses are represented in hexadecimal form, commonly shown as six pairs of alphanumeric characters (e.g., `00:1A:2B:3C:4D:5E`).
+* format**: MAC addresses are represented in hexadecimal form, commonly shown as six pairs of alphanumeric characters (e.g., `00:1A:2B:3C:4D:5E`).
 
 * **Layer 2 Address**: The MAC address operates at Layer 2 (Data Link Layer) of the OSI model, responsible for local network communication.
 
@@ -69,7 +69,7 @@ An **IP Address** (Internet Protocol Address) is a unique identifier assigned to
 
 * **Dynamic and Static Options**: IP addresses can be static (fixed) or dynamic (changing). Dynamic IPs are more common and are typically assigned by a DHCP (Dynamic Host Configuration Protocol) server.
 
-* **Format**: IP addresses can be IPv4 or IPv6. IPv4 uses four groups of numbers separated by dots (e.g., `192.168.1.1`), while IPv6 uses a more complex format with alphanumeric characters separated by colons.
+* format**: IP addresses can be IPv4 or IPv6. IPv4 uses four groups of numbers separated by dots (e.g., `192.168.1.1`), while IPv6 uses a more complex format with alphanumeric characters separated by colons.
 
 * **Layer 3 Address**: The IP address operates at Layer 3 (Network Layer) of the OSI model, allowing communication across different networks.
 
@@ -87,7 +87,7 @@ An **IP Address** (Internet Protocol Address) is a unique identifier assigned to
 
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>MAC Address</th><th>IP Address</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Identifies device within a local network</td><td>Identifies device on a broader network or internet</td></tr><tr><td>**Format**</td><td>Hexadecimal, six pairs (e.g., `00:1A:2B:3C:4D:5E`)</td><td>IPv4 (four groups), IPv6 (eight groups)</td></tr><tr><td>**Layer**</td><td>Operates on Layer 2 (Data Link)</td><td>Operates on Layer 3 (Network)</td></tr><tr><td>**Assignment**</td><td>Set by manufacturer, usually permanent</td><td>Can be static or dynamic, assigned by network or DHCP</td></tr><tr><td>**Scope**</td><td>Local network only</td><td>Global network or internet</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>MAC Address</th><th>IP Address</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Identifies device within a local network</td><td>Identifies device on a broader network or internet</td></tr><tr><td>format**</td><td>Hexadecimal, six pairs (e.g., `00:1A:2B:3C:4D:5E`)</td><td>IPv4 (four groups), IPv6 (eight groups)</td></tr><tr><td>**Layer**</td><td>Operates on Layer 2 (Data Link)</td><td>Operates on Layer 3 (Network)</td></tr><tr><td>**Assignment**</td><td>Set by manufacturer, usually permanent</td><td>Can be static or dynamic, assigned by network or DHCP</td></tr><tr><td>**Scope**</td><td>Local network only</td><td>Global network or internet</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 
@@ -138,7 +138,7 @@ The traditional IP addressing system, **IPv4**, has been widely used since the e
 
 * **Address Capacity**: IPv4 supports about 4.3 billion addresses, whereas IPv6 can handle approximately 340 undecillion addresses.
 
-* **Format**: IPv4 uses four numerical octets (e.g., `192.168.1.1`), while IPv6 uses eight alphanumeric groups separated by colons.
+* format**: IPv4 uses four numerical octets (e.g., `192.168.1.1`), while IPv6 uses eight alphanumeric groups separated by colons.
 
 
 
@@ -231,7 +231,7 @@ These protocols help streamline communication processes across networks, ensurin
 
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Address Type</th><th>MAC Address</th><th>IP Address</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Identifies devices on a local network</td><td>Locates devices on global network or internet</td></tr><tr><td>**Layer**</td><td>Data Link Layer (Layer 2)</td><td>Network Layer (Layer 3)</td></tr><tr><td>**Format**</td><td>Hexadecimal</td><td>IPv4 (numeric), IPv6 (alphanumeric)</td></tr><tr><td>**Example**</td><td>`00:1A:2B:3C:4D:5E`</td><td>IPv4: `192.168.1.1`, IPv6: `2001:0db8::7334`</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Address Type</th><th>MAC Address</th><th>IP Address</th></tr></thead><tbody><tr><td>**Purpose**</td><td>Identifies devices on a local network</td><td>Locates devices on global network or internet</td></tr><tr><td>**Layer**</td><td>Data Link Layer (Layer 2)</td><td>Network Layer (Layer 3)</td></tr><tr><td>format**</td><td>Hexadecimal</td><td>IPv4 (numeric), IPv6 (alphanumeric)</td></tr><tr><td>**Example**</td><td>`00:1A:2B:3C:4D:5E`</td><td>IPv4: `192.168.1.1`, IPv6: `2001:0db8::7334`</td></tr></tbody></table></figure>
 <!-- /wp:table -->
 
 

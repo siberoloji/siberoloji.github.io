@@ -264,13 +264,13 @@ From an ethical standpoint, some hacktivist groups argue that DDoS can be a form
 As DDoS attacks continue to evolve, ongoing education and training are crucial:
 
 
-* **For IT Professionals**: Stay updated on the latest attack trends and defense mechanisms.
+* for IT Professionals**: Stay updated on the latest attack trends and defense mechanisms.
 
-* **For Employees**: Understand basic cybersecurity principles to prevent devices from being compromised and used in botnets.
+* for Employees**: Understand basic cybersecurity principles to prevent devices from being compromised and used in botnets.
 
-* **For Management**: Recognize the potential impact of DDoS attacks and prioritize cybersecurity investments.
+* for Management**: Recognize the potential impact of DDoS attacks and prioritize cybersecurity investments.
 
-* **For the Public**: Raise awareness about the importance of device security and the potential consequences of cyberattacks.
+* for the Public**: Raise awareness about the importance of device security and the potential consequences of cyberattacks.
 
 
 

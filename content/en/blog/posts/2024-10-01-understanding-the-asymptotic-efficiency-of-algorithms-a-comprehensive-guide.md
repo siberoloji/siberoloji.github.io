@@ -60,7 +60,7 @@ Asymptotic notations are mathematical tools that describe the time or space comp
 
 * **Omega Notation ((Ω))**: Describes the **lower bound**, representing the best-case scenario.
 
-* **Theta Notation ((Θ))**: Describes the **tight bound**, which represents both the upper and lower bounds of the algorithm.
+* theta Notation ((Θ))**: Describes the **tight bound**, which represents both the upper and lower bounds of the algorithm.
 
 
 
@@ -139,7 +139,7 @@ Theta Notation ((Θ))
 
 
 
-**Theta notation** ((Θ)) provides a **tight bound** on the time complexity of an algorithm, meaning that it describes both the upper and lower bounds. If an algorithm has a time complexity of (Θ(f(n))), it means that the time complexity grows at the rate of (f(n)) in both the best and worst cases.
+theta notation** ((Θ)) provides a **tight bound** on the time complexity of an algorithm, meaning that it describes both the upper and lower bounds. If an algorithm has a time complexity of (Θ(f(n))), it means that the time complexity grows at the rate of (f(n)) in both the best and worst cases.
 
 
 #### Formal Definition:

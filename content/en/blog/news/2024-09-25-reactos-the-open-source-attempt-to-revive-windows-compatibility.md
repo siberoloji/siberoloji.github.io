@@ -34,7 +34,7 @@ ReactOS is an open-source operating system designed to be binary-compatible with
 
 
 
-#### 2. **The Vision Behind ReactOS**
+#### 2. the Vision Behind ReactOS**
 
 
 
@@ -100,7 +100,7 @@ The success of any open-source project relies heavily on community support, and 
 
 
 
-#### 6. **The Future of ReactOS**
+#### 6. the Future of ReactOS**
 
 
 

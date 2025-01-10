@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework Kali vb. dağıtımlarda kurulu olarak gelmektedir. Kali kullanmıyor olsanız bile kendi Linux dağıtımınıza kurulum yapabilisiniz. Bu yazıda Community sürümü olan ve komut satırından çalışan ücretsiz sürümü kurmayı inceleyeceğiz. Anlatımda kullanılan komutların Ubuntu temelli tüm dağıtımlarda çalışacağı tahmin edilmektedir. Biz testlerimizi ve denemeyi Linux Mint 18.1 Cinnamon Linux dağıtımında gerçekleştirdik.
 url: /tr/metasploit-framework-kurulum/
 weight: 10
-translation_key: metasploit-framework-installation
+translationKey:: metasploit-framework-installation
 featured_image: /images/metasploit.jpg
 categories:
   - Metasploit Framework
@@ -56,7 +56,7 @@ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/t
                                  Dload  Upload   Total   Spent    Left  Speed
 100  5394  100  5394    0     0   9248      0 --:--:-- --:--:-- --:--:--  9252
 Updating package cache..OK
-Checking **for **and installing update..
+Checking for **and installing update..
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -89,7 +89,7 @@ user@mint ~ $ msfconsole
 
      Please answer a few questions to get started.
 
- Would you like to use and setup a new database **(**recommended**)**? yes
+ Would you like to use and setup a new database (recommended)? yes
 
  Creating database at /home/user/.msf4/db
 
@@ -110,7 +110,7 @@ user@mint ~ $ msfconsole
      ,           ,
     /             \
    **((**__---,,,---__**))**
-      **(**_**)** O O **(**_**)**_________
+      (_) O O (_)_________
          \ _ /            |\
           o_o \   M S F   | \
                \   _____  |  *****
@@ -156,17 +156,17 @@ Matching Modules
    auxiliary/dos/samba/read_nttrans_ea_list                         normal     Samba read_nttrans_ea_list Integer Overflow
    auxiliary/scanner/rsync/modules_list                             normal     List Rsync Modules
    auxiliary/scanner/smb/smb_uninit_cred                            normal     Samba _netr_ServerPasswordSet Uninitialized Credential State
-   exploit/freebsd/samba/trans2open                2003-04-07       great      Samba trans2open Overflow **(*******BSD x86**)**
-   exploit/linux/samba/chain_reply                 2010-06-16       good       Samba chain_reply Memory Corruption **(**Linux x86**)**
+   exploit/freebsd/samba/trans2open                2003-04-07       great      Samba trans2open Overflow (*****BSD x86)
+   exploit/linux/samba/chain_reply                 2010-06-16       good       Samba chain_reply Memory Corruption (Linux x86)
    exploit/linux/samba/lsa_transnames_heap         2007-05-14       good       Samba lsa_io_trans_names Heap Overflow
    exploit/linux/samba/setinfopolicy_heap          2012-04-10       normal     Samba SetInformationPolicy AuditEventsInfo Heap Overflow
-   exploit/linux/samba/trans2open                  2003-04-07       great      Samba trans2open Overflow **(**Linux x86**)**
+   exploit/linux/samba/trans2open                  2003-04-07       great      Samba trans2open Overflow (Linux x86)
    exploit/multi/samba/nttrans                     2003-04-07       average    Samba 2.2.2 - 2.2.6 nttrans Buffer Overflow
    exploit/multi/samba/usermap_script              2007-05-14       excellent  Samba "username map script" Command Execution
    exploit/osx/samba/lsa_transnames_heap           2007-05-14       average    Samba lsa_io_trans_names Heap Overflow
-   exploit/osx/samba/trans2open                    2003-04-07       great      Samba trans2open Overflow **(**Mac OS X PPC**)**
+   exploit/osx/samba/trans2open                    2003-04-07       great      Samba trans2open Overflow (Mac OS X PPC)
    exploit/solaris/samba/lsa_transnames_heap       2007-05-14       average    Samba lsa_io_trans_names Heap Overflow
-   exploit/solaris/samba/trans2open                2003-04-07       great      Samba trans2open Overflow **(**Solaris SPARC**)**
+   exploit/solaris/samba/trans2open                2003-04-07       great      Samba trans2open Overflow (Solaris SPARC)
    exploit/unix/misc/distcc_exec                   2002-02-01       excellent  DistCC Daemon Command Execution
    exploit/unix/webapp/citrix_access_gateway_exec  2010-12-21       excellent  Citrix Access Gateway Command Execution
    exploit/windows/fileformat/ms14_060_sandworm    2014-10-14       excellent  MS14-060 Microsoft Windows OLE Package Manager Code Execution

@@ -12,7 +12,7 @@ tags:
 ---
 
 
-Our articles explaining Penetration Testing processes continue. In this study, we will explain **the targets** to be discussed in the Coordination article, which is the 1st Phase of the Penetration Testing Phases   .
+Our articles explaining Penetration Testing processes continue. In this study, we will explain the targets** to be discussed in the Coordination article, which is the 1st Phase of the Penetration Testing Phases   .
 
 
 

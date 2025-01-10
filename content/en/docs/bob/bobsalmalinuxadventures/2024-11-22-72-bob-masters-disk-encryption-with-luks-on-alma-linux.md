@@ -39,7 +39,7 @@ Bob’s next task was to implement **disk encryption** to secure sensitive data.
    - Initializing LUKS on the disk.
    - Creating and verifying a passphrase.
 
-4. **Formatting and Mounting the Encrypted Disk**
+4. formatting and Mounting the Encrypted Disk**
    - Creating a file system within the encrypted container.
    - Mounting the encrypted disk.
 

@@ -30,8 +30,8 @@ Sistem yöneticisi iseniz, servislerinizi yapılandırırken, bu tür açıklar�
 
 
 ```bash
-msf auxiliary**(**vnc_none_auth**)** > use auxiliary/scanner/vnc/vnc_none_auth
-msf auxiliary**(**vnc_none_auth**)** > show options
+msf auxiliary(vnc_none_auth) > use auxiliary/scanner/vnc/vnc_none_auth
+msf auxiliary(vnc_none_auth) > show options
 
 Module options:
 
@@ -41,11 +41,11 @@ Module options:
    RPORT    5900             yes       The target port
    THREADS  1                yes       The number of concurrent threads
 
-msf auxiliary**(**vnc_none_auth**)** > set RHOSTS 192.168.1.0/24
-RHOSTS **=>** 192.168.1.0/24
-msf auxiliary**(**vnc_none_auth**)** > set THREADS 50
-THREADS **=>** 50
-msf auxiliary**(**vnc_none_auth**)** > run
+msf auxiliary(vnc_none_auth) > set RHOSTS 192.168.1.0/24
+RHOSTS => 192.168.1.0/24
+msf auxiliary(vnc_none_auth) > set THREADS 50
+THREADS => 50
+msf auxiliary(vnc_none_auth) > run
 
 > 192.168.1.121:5900, VNC server protocol version : RFB 003.008
 > 192.168.1.121:5900, VNC server security types supported : None, free access!

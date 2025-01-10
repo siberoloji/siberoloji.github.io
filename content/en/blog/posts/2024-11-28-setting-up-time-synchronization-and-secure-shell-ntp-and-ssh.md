@@ -100,7 +100,7 @@ Ensure your time synchronization works correctly:
    timedatectl
    ```
 
-2. **Force synchronization** (optional):
+2. force synchronization** (optional):
 
    ```bash
    sudo chronyc -a makestep

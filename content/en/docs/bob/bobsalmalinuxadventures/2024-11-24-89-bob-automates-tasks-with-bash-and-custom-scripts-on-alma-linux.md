@@ -135,7 +135,7 @@ fi
 
 #### **Step 2: Using Loops**
 
-- **For Loop**: Bob automated file processing:
+- for Loop**: Bob automated file processing:
 
   ```bash
   for file in *.txt; do

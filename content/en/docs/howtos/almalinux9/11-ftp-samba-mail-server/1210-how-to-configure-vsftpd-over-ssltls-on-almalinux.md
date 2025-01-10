@@ -139,8 +139,8 @@ Edit the VSFTPD configuration file to enable SSL/TLS and customize the server se
    ```
 
    - **ssl_enable=YES**: Enables SSL/TLS.
-   - **force_local_data_ssl=YES**: Forces encryption for data transfer.
-   - **force_local_logins_ssl=YES**: Forces encryption for user authentication.
+   - force_local_data_ssl=YES**: Forces encryption for data transfer.
+   - force_local_logins_ssl=YES**: Forces encryption for user authentication.
    - **ssl_tlsv1=YES**: Enables the TLSv1 protocol.
    - **ssl_sslv2=NO** and **ssl_sslv3=NO**: Disables outdated SSL protocols.
 

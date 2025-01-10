@@ -49,27 +49,27 @@ host            name  port  proto
 ```bash
 msf > use auxiliary/scanner/ssh/ssh_version
 
-msf  auxiliary**(**ssh_version**)** > set RHOSTS 172.16.194.163 172.16.194.172
-RHOSTS **=>** 172.16.194.163 172.16.194.172
+msf  auxiliary(ssh_version) > set RHOSTS 172.16.194.163 172.16.194.172
+RHOSTS => 172.16.194.163 172.16.194.172
 
-msf  auxiliary**(**ssh_version**)** > show options
+msf  auxiliary(ssh_version) > show options
 
-Module options **(**auxiliary/scanner/ssh/ssh_version**)**:
+Module options (auxiliary/scanner/ssh/ssh_version):
 
    Name     Current Setting                Required  Description
    ----     ---------------                --------  -----------
    RHOSTS   172.16.194.163 172.16.194.172  yes       The target address range or CIDR identifier
    RPORT    22                             yes       The target port
    THREADS  1                              yes       The number of concurrent threads
-   TIMEOUT  30                             yes       Timeout **for **the SSH probe
+   TIMEOUT  30                             yes       Timeout for the SSH probe
 
 
-msf  auxiliary**(**ssh_version**)** > run
+msf  auxiliary(ssh_version) > run
 
 > 172.16.194.163:22, SSH server version: SSH-2.0-OpenSSH_5.3p1 Debian-3ubuntu7
-> Scanned 1 of 2 hosts **(**050% complete**)**
+> Scanned 1 of 2 hosts (050% complete)
 > 172.16.194.172:22, SSH server version: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
-> Scanned 2 of 2 hosts **(**100% complete**)**
+> Scanned 2 of 2 hosts (100% complete)
 > Auxiliary module execution completed
 ```
 
@@ -109,24 +109,24 @@ Ardından, `auxiliary/scanner/ftp/ftp_version` modülünü kullanalım.
 ```bash
 msf > use auxiliary/scanner/ftp/ftp_version 
 
-msf  auxiliary**(**ftp_version**)** > set RHOSTS 172.16.194.172
-RHOSTS **=>** 172.16.194.172
+msf  auxiliary(ftp_version) > set RHOSTS 172.16.194.172
+RHOSTS => 172.16.194.172
 
-msf  auxiliary**(**anonymous**)** > show options
-Module options **(**auxiliary/scanner/ftp/anonymous**)**:
+msf  auxiliary(anonymous) > show options
+Module options (auxiliary/scanner/ftp/anonymous):
 
    Name     Current Setting      Required  Description
    ----     ---------------      --------  -----------
-   FTPPASS  mozilla@example.com  no        The password **for **the specified username
+   FTPPASS  mozilla@example.com  no        The password for the specified username
    FTPUSER  anonymous            no        The username to authenticate as
    RHOSTS   172.16.194.172       yes       The target address range or CIDR identifier
    RPORT    21                   yes       The target port
    THREADS  1                    yes       The number of concurrent threads
 
-msf  auxiliary**(**anonymous**)** > run
+msf  auxiliary(anonymous) > run
 
-> 172.16.194.172:21 Anonymous READ **(**220 **(**vsFTPd 2.3.4**))**
-> Scanned 1 of 1 hosts **(**100% complete**)**
+> 172.16.194.172:21 Anonymous READ (220 (vsFTPd 2.3.4**))**
+> Scanned 1 of 1 hosts (100% complete)
 > Auxiliary module execution completed
 ```
 
@@ -137,4 +137,4 @@ Görüldüğü gibi, çok kısa zamanda SSH ve FTP servisleri hakkında bilgiler
 
 ```bash
 msf > use auxiliary/scanner/
-Display all 485 possibilities? **(**y or n**)**```
+Display all 485 possibilities? (y or n)```

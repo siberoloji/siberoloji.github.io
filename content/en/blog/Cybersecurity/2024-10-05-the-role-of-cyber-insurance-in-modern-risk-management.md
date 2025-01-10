@@ -47,7 +47,7 @@ A typical cyber insurance policy may cover a variety of expenses related to a cy
 
 * **Reputation Management**: Cyber incidents can damage a company’s reputation. Cyber insurance may cover public relations efforts to mitigate the damage and restore trust with customers.
 
-* **Forensic Investigation**: Policies often include coverage for the costs of investigating the attack to determine how the breach occurred and prevent future incidents.
+* forensic Investigation**: Policies often include coverage for the costs of investigating the attack to determine how the breach occurred and prevent future incidents.
 
 ## The Growing Importance of Cyber Insurance in Risk Management
 

@@ -54,7 +54,7 @@ Starting a WordPress blog involves a few crucial steps. Here’s a step-by-step 
 The WordPress dashboard is the control center where Alice can manage all aspects of her blog. Here’s a brief overview:
 
 - **Posts and Pages:** This section allows Alice to create and manage blog posts and static pages (e.g., About, Contact).
-- **Themes and Appearance:** Alice can change her site's look using themes found under *Appearance > Themes*.
+- themes and Appearance:** Alice can change her site's look using themes found under *Appearance > Themes*.
 - **Plugins:** These add extra functionality, like SEO tools or social sharing buttons. Alice can install plugins from *Plugins > Add New*.
 - **Settings:** Basic site settings, such as site title, tagline, and permalink structure, are managed here.
 

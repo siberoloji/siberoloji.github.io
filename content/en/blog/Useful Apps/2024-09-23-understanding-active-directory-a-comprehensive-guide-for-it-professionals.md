@@ -42,7 +42,7 @@ To understand how Active Directory functions, it's essential to familiarize your
 
 * **Domain Controllers**: These are servers that run Active Directory Domain Services (AD DS). They store a copy of the AD database and handle authentication requests within the domain.
 
-* **Forests**: A forest is the highest level of organization in AD. It consists of one or more domains that share a common schema, configuration, and global catalog.
+* forests**: A forest is the highest level of organization in AD. It consists of one or more domains that share a common schema, configuration, and global catalog.
 
 * **Domains**: Domains are collections of objects (such as users, devices, and groups) that share the same AD database. They form the core administrative units in an AD structure.
 

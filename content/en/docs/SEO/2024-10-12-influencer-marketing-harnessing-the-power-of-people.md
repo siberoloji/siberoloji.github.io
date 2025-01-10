@@ -25,7 +25,7 @@ Influencer marketing is essentially a form of word-of-mouth marketing, amplified
 
 
 
-**The Benefits of Influencer Marketing**
+the Benefits of Influencer Marketing**
 
 
 * **Increased Brand Awareness:** Influencers can introduce your brand to a wider audience, helping you reach new potential customers.

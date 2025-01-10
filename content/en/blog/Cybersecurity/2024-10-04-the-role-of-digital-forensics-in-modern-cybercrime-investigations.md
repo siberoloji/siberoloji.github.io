@@ -103,7 +103,7 @@ Tools and Techniques Used in Digital Forensics
 To effectively gather and analyze evidence, digital forensic experts use a wide range of tools and techniques, each suited to different aspects of cybercrime investigation.
 
 
-#### 1. **Forensic Imaging**
+#### 1. forensic Imaging**
 
 
 

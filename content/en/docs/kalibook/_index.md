@@ -71,7 +71,7 @@ One of the most appealing aspects of Kali Linux is its extensive toolkit. Below 
 - **Hydra**: A tool for performing brute force attacks against various protocols, including HTTP, SMTP, and FTP.
 - **Hashcat**: Known for its efficiency, Hashcat can crack various types of hashes with GPU acceleration, making it one of the fastest password recovery tools available.
 
-#### 5. **Forensics Tools**
+#### 5. forensics Tools**
 
 - **Autopsy**: A digital forensics tool that allows analysts to retrieve and examine data from digital devices.
 - **Bulk Extractor**: A tool that processes files and extracts useful information, such as emails, URLs, and phone numbers.

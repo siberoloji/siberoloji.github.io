@@ -185,7 +185,7 @@ SIP is a protocol used to establish voice and video calls over the internet. Itâ
 
 
 
-**The Importance of Securing Network Ports**
+the Importance of Securing Network Ports**
 
 
 

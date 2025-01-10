@@ -36,8 +36,8 @@ Hedef bilgisayarda meterpreter oturum açtığınızı farz ediyoruz. Öncelikle
 ```bash
 > Started bind handler
 > Trying target Windows XP SP2 - English...
-> Sending stage **(**719360 bytes**)**
-> Meterpreter session 1 opened **(**192.168.1.101:34117 -> 192.168.1.104:4444**)**
+> Sending stage (719360 bytes)
+> Meterpreter session 1 opened (192.168.1.101:34117 -> 192.168.1.104:4444)
 
 meterpreter > ps
 

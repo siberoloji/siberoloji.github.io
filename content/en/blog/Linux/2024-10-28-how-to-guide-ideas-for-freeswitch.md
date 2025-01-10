@@ -201,7 +201,7 @@ Here are 50 top how-to guide ideas for FreeSWITCH, covering various aspects of i
 
 
 <!-- wp:list {"ordered":true,"start":47} -->
-<ol start="47" class="wp-block-list">* **The Future of Open Source Telephony Solutions like FreeSWITCH**: Insights into upcoming trends in telephony technology.
+<ol start="47" class="wp-block-list">* the Future of Open Source Telephony Solutions like FreeSWITCH**: Insights into upcoming trends in telephony technology.
 
 
 

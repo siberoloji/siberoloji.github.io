@@ -14,5 +14,5 @@ weight: 0
 keywords: ""
 featured_image: /images/alice-in-front-of-computer.webp
 url: 
-translation_key: ""
+translationKey:: ""
 ---

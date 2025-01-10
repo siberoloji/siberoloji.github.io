@@ -49,7 +49,7 @@ Bu komut, istenilen dokümanın baş tarafından itibaren istenen sayıda satır
 
 
 
-**Format**: head [-number of lines to print] [path]
+format**: head [-number of lines to print] [path]
 
 
 ```bash
@@ -87,7 +87,7 @@ Tail komutu, head komutunun tam tersi olarak dokümanın sonundan itibaren taram
 
 
 
-**Format**: tail [-number of lines to print] [path]
+format**: tail [-number of lines to print] [path]
 
 
 ```bash
@@ -124,7 +124,7 @@ Kendisine verilen metin girdisini, varsayılan olarak alfabetik sıraya dizer. B
 
 
 
-**Format**: sort [-options] [path]
+format**: sort [-options] [path]
 
 
 ```bash
@@ -153,7 +153,7 @@ Bu komut ismini, number lines yani satırları numaralandır anlamına gelen ifa
 
 
 
-**Format**: nl [-options] [path]
+format**: nl [-options] [path]
 
 
 ```bash
@@ -207,7 +207,7 @@ wc komutu word count (kelime say) ifadesinin baş harflerinden oluşur ve girile
 
 
 
-**Format**: wc [-options] [path]
+format**: wc [-options] [path]
 
 
 ```bash
@@ -254,7 +254,7 @@ Bizim kullandığımız örnek dosyada veriler boşluk ile ayrılmıştır. İlk
 
 
 
-**Format**: cut [-options] [path]
+format**: cut [-options] [path]
 
 
 ```bash
@@ -305,7 +305,7 @@ sed komutu Stream Editor ifadesinden oluşturulmuştur. ARA-BUL/DEĞİŞTİR man
 
 
 
-**Format**: sed <expression> [path]
+format**: sed <expression> [path]
 
 
 
@@ -404,7 +404,7 @@ Komutun uygulanmasından sonra ise tekrarlanan satırların temizlendiği görü
 
 
 
-**Format**: uniq [options] [path]
+format**: uniq [options] [path]
 
 
 ```bash
@@ -436,7 +436,7 @@ Bazen kayıtlar tutulurken, yeni kayıtlar dosyanın en altına yazılıyor olab
 
 
 
-**Format**: tac [path]
+format**: tac [path]
 
 
 ```bash

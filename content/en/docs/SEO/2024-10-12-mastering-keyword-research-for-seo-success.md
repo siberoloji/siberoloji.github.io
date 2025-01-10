@@ -24,7 +24,7 @@ Keyword research involves identifying the relevant keywords and phrases that you
 
 
 
-**The Importance of Keyword Research**
+the Importance of Keyword Research**
 
 
 * **Improved Search Engine Visibility:** By targeting relevant keywords, you can increase your website's chances of appearing in the top search results for those terms.

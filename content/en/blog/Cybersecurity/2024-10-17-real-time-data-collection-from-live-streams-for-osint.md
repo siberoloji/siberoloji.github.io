@@ -40,7 +40,7 @@ Open Source Intelligence (OSINT) involves gathering information from publicly av
 
 
 
-**The Importance of Real-Time Data in OSINT**
+the Importance of Real-Time Data in OSINT**
 
 
 

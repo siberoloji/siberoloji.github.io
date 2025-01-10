@@ -21,7 +21,7 @@ The anticipation surrounding the future of Counter-Strike: Global Offensive (CS:
 
 
 
-## 1. **The Transition to Counter-Strike 2**
+## 1. the Transition to Counter-Strike 2**
 
 
 

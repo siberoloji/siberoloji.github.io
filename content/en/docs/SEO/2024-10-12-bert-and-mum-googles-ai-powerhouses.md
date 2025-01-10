@@ -58,7 +58,7 @@ BERT, which stands for Bidirectional Encoder Representations from Transformers, 
 
 
 
-**The Rise of MUM**
+the Rise of MUM**
 
 
 
@@ -90,7 +90,7 @@ While BERT has been a game-changer, Google has continued to push the boundaries 
 
 
 
-**The Future of BERT and MUM**
+the Future of BERT and MUM**
 
 
 

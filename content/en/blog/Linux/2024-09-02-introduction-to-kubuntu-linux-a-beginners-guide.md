@@ -222,7 +222,7 @@ sudo apt install vlc```
 One of the key advantages of Kubuntu is the ability to customize your desktop environment. KDE Plasma allows you to change almost every aspect of the user interface. Here are a few things you can customize:
 
 
-* **Themes:** Change the look and feel of your desktop by selecting from a variety of themes available in the System Settings.
+* themes:** Change the look and feel of your desktop by selecting from a variety of themes available in the System Settings.
 
 * **Widgets:** Add widgets to your desktop or panel to display information like the weather, system performance, or a clock.
 

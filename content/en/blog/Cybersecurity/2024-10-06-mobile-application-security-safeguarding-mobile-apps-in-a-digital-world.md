@@ -205,7 +205,7 @@ Regular testing is essential for identifying potential vulnerabilities in a mobi
 
 
 
-Additionally, developers should conduct regular **penetration testing** and **fuzz testing** to identify security flaws that may not be visible through routine testing. Automated tools such as **AppScan** and **Fortify** can help identify potential security issues and provide actionable insights for fixing them.
+Additionally, developers should conduct regular **penetration testing** and **fuzz testing** to identify security flaws that may not be visible through routine testing. Automated tools such as **AppScan** and fortify** can help identify potential security issues and provide actionable insights for fixing them.
 
 
 
@@ -242,7 +242,7 @@ There are several tools available to help developers and security professionals 
 
 * **AppScan**: A tool that provides both static and dynamic analysis of mobile apps, identifying security vulnerabilities and suggesting fixes.
 
-* **Fortify on Demand**: A cloud-based service that provides application security testing for mobile and web applications.
+* fortify on Demand**: A cloud-based service that provides application security testing for mobile and web applications.
 
 * **Mobile Security Framework (MobSF)**: An open-source framework for analyzing mobile apps and identifying vulnerabilities in Android, iOS, and Windows platforms.
 

@@ -24,7 +24,7 @@ A CDN is a geographically distributed network of servers that work together to d
 
 
 
-**The Impact of CDN on SEO**
+the Impact of CDN on SEO**
 
 
 

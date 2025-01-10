@@ -90,7 +90,7 @@ Additional Tips
 
 
 
-**For more detailed instructions and troubleshooting tips, refer to the official Apple Podcasts Connect documentation:** <a target="_blank" rel="noreferrer noopener" href="https://podcastsconnect.apple.com/">https://podcastsconnect.apple.com/</a>
+for more detailed instructions and troubleshooting tips, refer to the official Apple Podcasts Connect documentation:** <a target="_blank" rel="noreferrer noopener" href="https://podcastsconnect.apple.com/">https://podcastsconnect.apple.com/</a>
 
 
 

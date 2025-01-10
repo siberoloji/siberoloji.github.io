@@ -45,7 +45,7 @@ Before Alice dives into adding blocks, she needs to write an engaging title. The
 
 The Paragraph block is the most basic block for writing text. Here’s how Alice can make the most of it:
 
-- **Formatting Options:** Alice can format text as bold, italic, or strikethrough. She can also create links, change alignment, or add drop caps for a stylistic touch.
+- formatting Options:** Alice can format text as bold, italic, or strikethrough. She can also create links, change alignment, or add drop caps for a stylistic touch.
 - **Short Paragraphs for Readability:** Breaking text into short, digestible paragraphs improves readability and keeps readers engaged.
 
 **Tip:** Alice can add blocks of text interspersed with images, videos, or other elements to maintain reader interest.

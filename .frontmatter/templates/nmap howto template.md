@@ -15,5 +15,5 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - nmap
 featured_image: /images/kalilinux3.webp
-translation_key: ""
+translationKey:: ""
 ---

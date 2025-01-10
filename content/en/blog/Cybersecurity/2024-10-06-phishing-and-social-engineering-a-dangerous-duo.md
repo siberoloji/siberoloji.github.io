@@ -41,7 +41,7 @@ Phishing is a type of cybercrime where attackers attempt to trick individuals in
 
 
 
-**The Psychology of Social Engineering**
+the Psychology of Social Engineering**
 
 
 
@@ -61,7 +61,7 @@ Social engineering is the art of manipulating people into performing actions or 
 
 
 
-**The Dangers of Phishing and Social Engineering**
+the Dangers of Phishing and Social Engineering**
 
 
 

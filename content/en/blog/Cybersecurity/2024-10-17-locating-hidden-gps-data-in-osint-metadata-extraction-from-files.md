@@ -246,7 +246,7 @@ This script allows OSINT investigators to extract latitude, longitude, and altit
 
 
 
-3. **Forensic Analysis Tools**
+3. forensic Analysis Tools**
 
 
 

@@ -1,13 +1,13 @@
 ---
 draft: false
-title: MSF İçinde Parola Dinleme
+title: Password Listening in MSF
 linkTitle: Parola Dinleme
 weight: 120
 translationKey: password-listening-in-msf
 date: 2017-05-16T12:56:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit kullanarak, ağda bulunan pop3, imap, ftp ve HTTP protokolleri üzerinden gönderilen parolaları dinleyebilirsiniz. Bu amaçla ‘psnuffle‘ modülü bulunmaktadır.
-url: /tr/msf-icinde-parola-dinleme/
+url: /msf-icinde-parola-dinleme/
 featured_image: /images/metasploit.jpg
 categories:
     - Metasploit Framework

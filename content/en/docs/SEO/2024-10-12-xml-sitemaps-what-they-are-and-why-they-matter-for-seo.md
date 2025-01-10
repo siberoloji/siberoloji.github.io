@@ -160,7 +160,7 @@ An index sitemap is a collection of multiple sitemaps. Large websites, especiall
 Creating an XML sitemap can be done in several ways, depending on your website’s platform and the complexity of your content. Here’s a step-by-step guide on how to create an XML sitemap:
 
 
-#### a) **For WordPress Sites**
+#### a) for WordPress Sites**
 
 
 
@@ -177,7 +177,7 @@ WordPress users have a variety of plugins that simplify the process of generatin
 Simply install the plugin, activate the sitemap feature, and it will generate the sitemap for you. The plugin will also handle the updates to your sitemap whenever you publish new content.
 
 
-#### b) **For Non-WordPress Sites**
+#### b) for Non-WordPress Sites**
 
 
 
@@ -190,7 +190,7 @@ For websites that don’t use WordPress, there are alternative ways to create an
 
 
 
-#### c) **For Large Websites**
+#### c) for Large Websites**
 
 
 

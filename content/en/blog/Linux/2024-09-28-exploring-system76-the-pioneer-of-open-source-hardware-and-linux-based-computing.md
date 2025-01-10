@@ -76,7 +76,7 @@ Pop!_OS has become known for its **user-friendly design**, making it a preferred
 
 
 
-In 2018, System76 took a major step toward hardware openness with the introduction of **Thelio**, a line of desktop computers designed and manufactured in-house. The Thelio series represents the company’s first venture into open-source hardware, as it is designed using **open hardware schematics**. This means that users can see the inner workings of their machines and even modify or improve upon them if they wish. This level of transparency is rare in the hardware market and gives users unprecedented control over their systems.
+In 2018, System76 took a major step toward hardware openness with the introduction of thelio**, a line of desktop computers designed and manufactured in-house. The Thelio series represents the company’s first venture into open-source hardware, as it is designed using **open hardware schematics**. This means that users can see the inner workings of their machines and even modify or improve upon them if they wish. This level of transparency is rare in the hardware market and gives users unprecedented control over their systems.
 
 
 
@@ -119,7 +119,7 @@ What makes System76 laptops unique is the fact that they are optimized for Linux
 The company offers a range of desktop computers designed for power users who need high-performance machines for tasks like data science, AI, gaming, and creative work:
 
 
-* **Thelio**: A customizable desktop tower available in various configurations. The Thelio series includes models like **Thelio Major**, **Thelio Mega**, and **Thelio Mira**, each designed for different levels of performance.
+* thelio**: A customizable desktop tower available in various configurations. The Thelio series includes models like thelio Major**, thelio Mega**, and thelio Mira**, each designed for different levels of performance.
 
 * **Meerkat**: A compact desktop computer that packs a punch despite its small form factor. The Meerkat is ideal for users who need a minimalist setup without compromising on power.
 
@@ -134,11 +134,11 @@ System76 also caters to enterprise users with a line of servers designed for sca
 
 
 
-4. **Thelio Io**
+4. thelio Io**
 
 
 
-Recently, System76 expanded into **embedded systems** with **Thelio Io**, a custom-built motherboard for the Thelio desktop series. Thelio Io is designed specifically for Linux, with advanced cooling and power management features. It’s a significant step toward fully open-source hardware, as this move gives System76 even more control over their hardware’s design and manufacturing.
+Recently, System76 expanded into **embedded systems** with thelio Io**, a custom-built motherboard for the Thelio desktop series. Thelio Io is designed specifically for Linux, with advanced cooling and power management features. It’s a significant step toward fully open-source hardware, as this move gives System76 even more control over their hardware’s design and manufacturing.
 
 
 
@@ -226,7 +226,7 @@ As the world shifts toward more open, transparent, and customizable technologies
 
 
 
-System76’s continued work on open hardware, such as the **Thelio Io** motherboard, could inspire other companies to follow suit. By making their hardware designs open-source, System76 is challenging the traditional closed-box approach that dominates the industry.
+System76’s continued work on open hardware, such as the thelio Io** motherboard, could inspire other companies to follow suit. By making their hardware designs open-source, System76 is challenging the traditional closed-box approach that dominates the industry.
 
 
 

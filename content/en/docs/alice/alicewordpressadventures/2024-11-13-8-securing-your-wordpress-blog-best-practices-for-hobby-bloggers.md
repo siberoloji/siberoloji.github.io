@@ -32,7 +32,7 @@ This guide will walk Alice (and you) through the best practices for securing a W
 The most fundamental step to securing a WordPress site is keeping the software up-to-date.
 
 - **Core Updates:** WordPress regularly releases updates to address security vulnerabilities, improve functionality, and enhance performance. Alice can update her WordPress core files directly from the dashboard by navigating to *Dashboard > Updates*.
-- **Themes and Plugins Updates:** Outdated themes and plugins are common entry points for hackers. Alice should update them frequently and remove any that are no longer in use.
+- themes and Plugins Updates:** Outdated themes and plugins are common entry points for hackers. Alice should update them frequently and remove any that are no longer in use.
 - **Automatic Updates:** To make things easier, Alice can enable automatic updates for minor releases by adding this line to her `wp-config.php` file:
 
   ```php

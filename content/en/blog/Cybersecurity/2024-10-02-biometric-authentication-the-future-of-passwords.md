@@ -81,7 +81,7 @@ Biometric authentication systems rely on **algorithms** to analyze and compare b
 
 
 
-## 3. **The Advantages of Biometric Authentication**
+## 3. the Advantages of Biometric Authentication**
 
 
 

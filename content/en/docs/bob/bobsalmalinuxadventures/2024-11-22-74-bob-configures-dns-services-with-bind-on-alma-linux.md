@@ -125,7 +125,7 @@ Bob edited the main configuration file `/etc/named.conf` to set up a basic DNS s
 
 ### **Part 3: Configuring a Forward Lookup Zone**
 
-Bob set up a **forward lookup zone** to resolve names to IP addresses for the `example.com` domain.
+Bob set up a forward lookup zone** to resolve names to IP addresses for the `example.com` domain.
 
 #### **Step 1: Define the Zone in `named.conf`**
 

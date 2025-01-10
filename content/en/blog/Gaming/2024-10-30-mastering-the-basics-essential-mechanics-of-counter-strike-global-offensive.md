@@ -50,7 +50,7 @@ CS:GO’s movement mechanics directly influence shooting accuracy and positionin
 
 
 Developing a solid movement base helps with positioning, peeking, and avoiding unnecessary risks in each match.
-3. **The Importance of the Economy System**
+3. the Importance of the Economy System**
 
 
 
@@ -59,7 +59,7 @@ CS:GO’s economy mechanics are unique and integral to strategic success. Each r
 
 * **Full Buy Rounds:** This allows you to purchase rifles, armor, and utility grenades.
 
-* **Force Buy:** Typically used when funds are low but the team still needs weapons and armor to stay competitive.
+* force Buy:** Typically used when funds are low but the team still needs weapons and armor to stay competitive.
 
 * **Eco Rounds:** A round where players intentionally save money, often using pistols only, to afford a full buy in the next round.
 
@@ -118,7 +118,7 @@ Utility grenades are a key component of CS:GO’s strategic play, allowing you t
 
 
 Learning common grenade spots on popular maps like Dust 2 and Mirage gives you a significant advantage, helping you outsmart opponents and coordinate with your team.
-7. **The Importance of Map Knowledge and Callouts**
+7. the Importance of Map Knowledge and Callouts**
 
 
 

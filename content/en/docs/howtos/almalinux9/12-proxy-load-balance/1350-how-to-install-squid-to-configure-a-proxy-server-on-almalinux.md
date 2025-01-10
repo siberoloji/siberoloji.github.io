@@ -180,12 +180,12 @@ sudo squid -k parse
 
 To route client traffic through Squid, configure the proxy settings on client devices.
 
-#### **For Windows:**
+#### for Windows:**
 1. Open **Control Panel** > **Internet Options**.
 2. Navigate to the **Connections** tab and click **LAN settings**.
 3. Check the box for **Use a proxy server** and enter the server’s IP address and port (e.g., 3128).
 
-#### **For Linux:**
+#### for Linux:**
 Set the proxy settings in the network manager or use the terminal:
 ```bash
 export http_proxy="http://<server-ip>:3128"

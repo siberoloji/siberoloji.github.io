@@ -110,7 +110,7 @@ Attackers may call and impersonate trusted entities to extract information. Know
 
 * **Example**: A hacker calls a receptionist, claiming to be a manager from the IT department, and requests the names of team members and their roles.
 
-**The Psychology Behind Social Engineering**
+the Psychology Behind Social Engineering**
 
 
 

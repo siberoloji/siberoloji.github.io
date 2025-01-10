@@ -4,7 +4,7 @@ title: Introduction to Meterpreter in Metasploit
 date: 2017-05-14T12:44:00+03:00
 linkTitle: Meterpreter
 weight: 90
-translation_key: meterpreter-introduction-in-metasploit
+translationKey:: meterpreter-introduction-in-metasploit
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: In this article, we will briefly introduce Meterpreter, known as the command line environment provided to the user by the Metasploit Framework.
 url: /meterpreter-introduction-in-metasploit/

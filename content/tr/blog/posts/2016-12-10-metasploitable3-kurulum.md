@@ -159,7 +159,7 @@ Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu 
 packer
 usage: packer **[**--version**]** **[**--help**]** <command> **[**<args>]
 Available commands are:
-build build image**(**s**)** from template
+build build image(s) from template
 fix fixes templates from old versions of packer
 inspect see components of a template
 push push a template and supporting files to a Packer build service
@@ -182,10 +182,10 @@ Vagrant programı, .deb uzantılı dağıtılmaktadır. <a href="https://www.vag
 
 ```bash
 sudo dpkg -i vagrant_1.9.4_x86_64.deb 
-**(**Reading database ... 318960 files and directories currently installed.**)**
+(Reading database ... 318960 files and directories currently installed.)
 Preparing to unpack vagrant_1.9.4_x86_64.deb ...
-Unpacking vagrant **(**1:1.9.4**)** ...
-Setting up vagrant **(**1:1.9.4**)** ...
+Unpacking vagrant (1:1.9.4) ...
+Setting up vagrant (1:1.9.4) ...
 ```
 
 
@@ -204,7 +204,7 @@ Vagrant sanal işletim sistemi yönetimi esnasında çalışacak scriptlerin her
 ```bash
 vagrant plugin install vagrant-reload
 Installing the 'vagrant-reload' plugin. This can take a few minutes...
-Fetching: vagrant-reload-0.0.1.gem **(**100%**)**
+Fetching: vagrant-reload-0.0.1.gem (100%)
 Installed the plugin 'vagrant-reload (0.0.1)'**!**
 ```
 
@@ -268,10 +268,10 @@ virtualbox-iso output will be **in **this color.
     virtualbox-iso: Download progress: 1%
     ...
     ...
-    virtualbox-iso **(**vagrant**)**: Compressing: Vagrantfile
-    virtualbox-iso **(**vagrant**)**: Compressing: box.ovf
-    virtualbox-iso **(**vagrant**)**: Compressing: metadata.json
-    virtualbox-iso **(**vagrant**)**: Compressing: packer-virtualbox-iso-1494433445-disk001.vmdk
+    virtualbox-iso (vagrant): Compressing: Vagrantfile
+    virtualbox-iso (vagrant): Compressing: box.ovf
+    virtualbox-iso (vagrant): Compressing: metadata.json
+    virtualbox-iso (vagrant): Compressing: packer-virtualbox-iso-1494433445-disk001.vmdk
 Build 'virtualbox-iso' finished.
 
 **==>** Builds finished. The artifacts of successful builds are:
@@ -279,9 +279,9 @@ Build 'virtualbox-iso' finished.
 Box successfully built by Packer.
 Attempting to add the box to Vagrant...
 **==>** box: Box file was not detected as metadata. Adding it directly...
-**==>** box: Adding box 'metasploitable3' **(**v0**)** **for **provider: 
+**==>** box: Adding box 'metasploitable3' (v0) for **provider: 
     box: Unpacking necessary files from: file:///home/umut/git/metasploitable3/windows_2008_r2_virtualbox.box
-**==>** box: Successfully added box 'metasploitable3' **(**v0**)** **for** 'virtualbox'**!**
+**==>** box: Successfully added box 'metasploitable3' (v0) for** 'virtualbox'**!**
 Box successfully added to Vagrant.
 ---------------------------------------------------------------------
 SUCCESS: Run 'vagrant up' to provision and start metasploitable3.
@@ -300,10 +300,10 @@ Gerekli tüm indirmeler ve inşa faaliyetleri artık tamamlandı. Sanal işletim
 
 ```bash
 sudo vagrant up
-**[**sudo**]** password **for **umut: 
+**[**sudo**]** password for **umut: 
 Bringing machine 'default' up with 'virtualbox' provider...
 **==>** default: Importing base box 'metasploitable3'...
-**==>** default: Matching MAC address **for **NAT networking...
+**==>** default: Matching MAC address for **NAT networking...
 **==>** default: Setting the name of the VM: metasploitable3_default_1494436809723_60405
 **==>** default: Clearing any previously set network interfaces...
 **==>** default: Preparing network interfaces based on configuration...

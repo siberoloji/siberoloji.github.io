@@ -18,5 +18,5 @@ authors:
       image: https://github.com/siberoloji.png
 featured_image: /images/alice-in-front-of-computer.webp
 url: ""
-translation_key: ""
+translationKey:: ""
 ---

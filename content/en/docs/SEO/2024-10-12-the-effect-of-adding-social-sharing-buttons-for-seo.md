@@ -33,7 +33,7 @@ When a user clicks on one of these buttons, the content from your website is sha
 
 
 
-**The Relationship Between Social Media and SEO**
+the Relationship Between Social Media and SEO**
 
 
 

@@ -37,7 +37,7 @@ Alt tags, or alternative text, are HTML attributes that provide a textual descri
 
 
 
-**The Importance of Alt Tags for SEO**
+the Importance of Alt Tags for SEO**
 
 
 * **Image Search Visibility:** Search engines like Google use alt tags to identify the content of images. By including relevant keywords in your alt tags, you can improve your website's ranking in image search results.

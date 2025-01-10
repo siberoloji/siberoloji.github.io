@@ -258,7 +258,7 @@ This command compresses the file into a **.tar** archive.
 In a Kali Linux environment, 7zip can be leveraged in several ways:
 
 
-#### 1. **Forensic Data Collection**
+#### 1. forensic Data Collection**
 
 
 

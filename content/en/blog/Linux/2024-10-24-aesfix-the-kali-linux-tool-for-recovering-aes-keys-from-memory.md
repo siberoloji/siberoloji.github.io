@@ -202,7 +202,7 @@ There are several real-world scenarios where AESFix can prove invaluable:
 Imagine you’ve gained access to a compromised system and retrieved a memory dump. The system is using full-disk encryption (FDE) with AES. By running AESFix on the memory dump, you may be able to recover the AES encryption key and decrypt the disk, allowing you to further investigate its contents.
 
 
-#### 2. **Forensic Recovery in Incident Response**
+#### 2. forensic Recovery in Incident Response**
 
 
 

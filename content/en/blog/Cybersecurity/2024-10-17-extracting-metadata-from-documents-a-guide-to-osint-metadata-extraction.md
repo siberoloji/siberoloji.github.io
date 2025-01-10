@@ -44,7 +44,7 @@ Metadata is embedded within documents to provide information about their creatio
 
 
 
-**The Importance of Metadata Extraction in OSINT**
+the Importance of Metadata Extraction in OSINT**
 
 
 

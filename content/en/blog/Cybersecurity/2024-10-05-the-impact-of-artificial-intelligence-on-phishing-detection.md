@@ -164,7 +164,7 @@ AI can also enhance user training programs by simulating phishing attacks in rea
 
 * **Improve Long-Term Awareness**: Continuous phishing simulations and training can reinforce employees' ability to recognize and avoid phishing attempts, strengthening the overall security posture of an organization.
 
-## 4. **The Advantages of AI in Phishing Detection**
+## 4. the Advantages of AI in Phishing Detection**
 
 
 

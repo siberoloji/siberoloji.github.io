@@ -87,7 +87,7 @@ Garuda Linux uses the Btrfs file system by default, which offers several advanta
 This system of automatic snapshots provides peace of mind for users who are still learning the ropes. No matter what goes wrong, you can quickly restore your system to a functional state without losing any important files or settings.
 
 
-#### 5. **The Garuda Assistant**
+#### 5. the Garuda Assistant**
 
 
 

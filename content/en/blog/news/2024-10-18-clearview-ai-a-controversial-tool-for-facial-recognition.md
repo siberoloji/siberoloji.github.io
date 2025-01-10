@@ -46,7 +46,7 @@ Clearview AI's facial recognition process involves several key steps:
 
 
 
-**The Controversies Surrounding Clearview AI**
+the Controversies Surrounding Clearview AI**
 
 
 
@@ -64,7 +64,7 @@ Clearview AI has faced significant backlash and legal challenges due to its data
 
 
 
-**The Future of Facial Recognition Technology**
+the Future of Facial Recognition Technology**
 
 
 

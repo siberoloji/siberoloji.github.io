@@ -171,7 +171,7 @@ Despite its immense potential, IoT faces several challenges:
 
 
 
-**The Future of IoT**
+the Future of IoT**
 
 
 

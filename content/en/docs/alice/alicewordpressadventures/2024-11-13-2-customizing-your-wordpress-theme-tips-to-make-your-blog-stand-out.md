@@ -31,7 +31,7 @@ This guide is for hobby bloggers like Alice who want to go beyond default settin
 Before jumping into customization, Alice needs to understand her theme’s capabilities:
 
 - **Built-In Customizer:** Most themes come with the WordPress Customizer, accessible from *Appearance > Customize*. It offers real-time previews of changes to colors, layouts, fonts, and more.
-- **Theme Settings Panel:** Some themes include a dedicated settings page for more detailed control over features.
+- theme Settings Panel:** Some themes include a dedicated settings page for more detailed control over features.
 - **Child Themes:** Alice should consider using a child theme if she plans extensive modifications to preserve changes during updates.
 
 ---

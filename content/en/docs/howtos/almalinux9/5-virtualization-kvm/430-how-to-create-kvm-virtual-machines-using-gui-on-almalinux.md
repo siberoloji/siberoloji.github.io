@@ -115,7 +115,7 @@ Now that the environment is set up, let’s create a new virtual machine.
    - In the Virt-Manager interface, click the **Create a new virtual machine** button.
 
 2. **Choose Installation Method**:
-   - Select **Local install media (ISO image or CDROM)** and click **Forward**.
+   - Select **Local install media (ISO image or CDROM)** and click forward**.
 
 3. **Provide Installation Media**:
    - Click **Browse** to locate the ISO file of the operating system you want to install (e.g., AlmaLinux, CentOS, or Ubuntu).

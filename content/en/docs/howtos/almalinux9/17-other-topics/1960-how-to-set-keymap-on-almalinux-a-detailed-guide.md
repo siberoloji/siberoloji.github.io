@@ -48,7 +48,7 @@ Setting the correct keymap is important for several reasons:
 
 AlmaLinux uses `systemd` tools to manage keymaps, including both temporary and permanent configurations. Keymaps can be configured for:
 
-1. **The Console** (TTY sessions).
+1. the Console** (TTY sessions).
 2. **Graphical Environments** (desktop sessions).
 3. **Remote Sessions** (SSH or terminal emulators).
 
@@ -75,10 +75,10 @@ Before making changes, you may want to check the current keymap configuration.
    X11 Layout: us
    ```
 
-2. **For Console Keymap:**
+2. for Console Keymap:**
    The line `VC Keymap` shows the keymap used in virtual consoles (TTY sessions).
 
-3. **For Graphical Keymap:**
+3. for Graphical Keymap:**
    The line `X11 Layout` shows the layout used in graphical environments like GNOME or KDE.
 
 ---

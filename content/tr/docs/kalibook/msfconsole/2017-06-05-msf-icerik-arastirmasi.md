@@ -36,14 +36,14 @@ Meterpreter oturumunun sunduğu `search` komutu ile ilgili birkaç örnek incele
 ```bash
 meterpreter > search -h
 Usage: search **[**-d dir**]** **[**-r recurse] -f pattern
-Search **for **files.
+Search for **files.
 
 OPTIONS:
 
-    -d   The directory/drive to begin searching from. Leave empty to search all drives. **(**Default: **)**
-    -f   The file pattern glob to search **for**. **(**e.g. *****secret*****.doc?**)**
+    -d   The directory/drive to begin searching from. Leave empty to search all drives. (Default: )
+    -f   The file pattern glob to search for**. (e.g. *****secret*****.doc?)
     -h   Help Banner.
-    -r   Recursivly search sub directories. **(**Default: true**)**
+    -r   Recursivly search sub directories. (Default: true)
 ```
 
 
@@ -75,10 +75,10 @@ Aşağıdaki örnek komut, tüm disk bölümlerinde, klasör ve alt klasörlerde
 meterpreter > search -f *****.jpg
 Found 418 results...
 ...snip...
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg **(**28521 bytes**)**
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg **(**71189 bytes**)**
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg **(**83794 bytes**)**
-    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg **(**105542 bytes**)**
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg (28521 bytes)
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg (71189 bytes)
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg (83794 bytes)
+    c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg (105542 bytes)
 ...snip...
 ```
 
@@ -90,7 +90,7 @@ Found 418 results...
 ```bash
 meterpreter > search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f *****.pdf
 Found 2 results...
-    c:\documents and settings\administrator\desktop\operations_plan.pdf **(**244066 bytes**)**
-    c:\documents and settings\administrator\desktop\budget.pdf **(**244066 bytes**)**
+    c:\documents and settings\administrator\desktop\operations_plan.pdf (244066 bytes)
+    c:\documents and settings\administrator\desktop\budget.pdf (244066 bytes)
 meterpreter >
 ```

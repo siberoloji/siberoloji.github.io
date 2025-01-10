@@ -37,7 +37,7 @@ Referral traffic sources include:
 
 * **Online directories** or niche listings that feature your site or services.
 
-* **Forums or community boards** where your content is recommended or linked to.
+* forums or community boards** where your content is recommended or linked to.
 
 * **Guest posts** published on other websites that include a backlink to your content.
 
