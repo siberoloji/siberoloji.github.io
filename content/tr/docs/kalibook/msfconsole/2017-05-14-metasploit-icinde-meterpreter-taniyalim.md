@@ -4,7 +4,7 @@ title: Metasploit İçinde Meterpreter Tanıyalım
 date: 2017-05-14T12:44:00+03:00
 linkTitle: Meterpreter
 weight: 90
-translationKey:: meterpreter-introduction-in-metasploit
+translationKey: meterpreter-introduction-in-metasploit
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework tarafından kullanıcıya sağlanan komut satırı ortamı olarak bilinen Meterpreter’in kısaca tanımaya çalışacağız.
 url: /tr/metasploit-icinde-meterpreter-taniyalim/

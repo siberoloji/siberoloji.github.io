@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework Kali vb. dağıtımlarda kurulu olarak gelmektedir. Kali kullanmıyor olsanız bile kendi Linux dağıtımınıza kurulum yapabilisiniz. Bu yazıda Community sürümü olan ve komut satırından çalışan ücretsiz sürümü kurmayı inceleyeceğiz. Anlatımda kullanılan komutların Ubuntu temelli tüm dağıtımlarda çalışacağı tahmin edilmektedir. Biz testlerimizi ve denemeyi Linux Mint 18.1 Cinnamon Linux dağıtımında gerçekleştirdik.
 url: /tr/metasploit-framework-kurulum/
 weight: 10
-translationKey:: metasploit-framework-installation
+translationKey: metasploit-framework-installation
 featured_image: /images/metasploit.jpg
 categories:
   - Metasploit Framework

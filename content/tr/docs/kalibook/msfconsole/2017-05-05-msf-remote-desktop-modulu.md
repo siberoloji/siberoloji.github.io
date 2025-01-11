@@ -12,7 +12,7 @@ tags:
     - cybersecurity
     - metasploit framework
 linkTitle: MSF Remote Desktop
-translationKey:: msfremotedesktop
+translationKey: msfremotedesktop
 weight: 1
 ---
 

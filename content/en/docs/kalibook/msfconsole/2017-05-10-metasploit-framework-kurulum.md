@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework is a software used in penetration testing and security testing. 
 url: /metasploit-framework-installation/
 weight: 10
-translationKey:: metasploit-framework-installation
+translationKey: metasploit-framework-installation
 featured_image: /images/metasploit.jpg
 categories:
   - Metasploit Framework

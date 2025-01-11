@@ -13,7 +13,7 @@ tags:
   - cybersecurity
   - metasploit framework
 linkTitle: Database Kullanımı
-translationKey:: msf-database-usage
+translationKey: msf-database-usage
 ---
 Metasploit Framework içerisinde, Postgresql desteğiyle sunulan veri tabanı özelliği çok kullanışlıdır ve yapılacak tarama sonuçlarını bir yerde kayıt altına alır. Bulunan sonuçların kayıt altına alınması, sonraki adımlarda kullanılacak IP adresleri, Port numaraları veya Hash Dump vb. bilgilerin exploitlere aktarılmasına kolaylık sağlar.
 

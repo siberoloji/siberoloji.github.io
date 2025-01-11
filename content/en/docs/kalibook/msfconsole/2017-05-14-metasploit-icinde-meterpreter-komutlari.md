@@ -2,7 +2,7 @@
 draft: false
 title: Meterpreter Commands
 linkTitle: Meterpreter Commands
-translationKey:: metasploit-meterpreter-commands
+translationKey: metasploit-meterpreter-commands
 date: 2017-05-14T12:47:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Meterpreter is a powerful tool that allows you to control a remote computer. In this article, we will examine the commands that can be used in Meterpreter.

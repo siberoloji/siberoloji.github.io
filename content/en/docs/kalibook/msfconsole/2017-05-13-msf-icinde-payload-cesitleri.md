@@ -5,7 +5,7 @@ date: 2017-05-13T12:37:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Payload refers to a type of exploit module. There are 3 different groups of payload modules in the Metasploit Framework.
 weight: 70
-translationKey:: msf-payload-types
+translationKey: msf-payload-types
 url: /msf-payload-types/
 featured_image: /images/metasploit.jpg
 categories:

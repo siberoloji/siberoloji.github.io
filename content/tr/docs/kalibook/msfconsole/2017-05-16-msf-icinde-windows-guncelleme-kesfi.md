@@ -1,14 +1,10 @@
 ---
 draft: false
-
 title:  'MSF İçinde Windows Güncelleme Keşfi'
 date: '2017-05-16T13:01:00+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 description:  'Metasploit Framework içerisinden bir Windows işletim sistemine Meterpreter shell açtığınızda, işletim sisteminin hangi güncellemeleri ve yamaları yaptığını, hangilerini yapmadığını keşfetmek isteyebilirsiniz.' 
- 
 url:  /tr/msf-icinde-windows-guncelleme-kesfi/
- 
 featured_image: /images/metasploit.jpg
 categories:
     - 'Metasploit Framework'

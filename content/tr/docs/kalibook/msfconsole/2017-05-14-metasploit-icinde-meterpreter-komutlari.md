@@ -2,7 +2,7 @@
 draft: false
 title: Metasploit İçinde Meterpreter Komutları
 linkTitle: Meterpreter Komutları
-translationKey:: metasploit-meterpreter-commands
+translationKey: metasploit-meterpreter-commands
 date: 2017-05-14T12:47:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit içinde kullanılabilecek Meterpreter komutları hakkında bilgi verir.

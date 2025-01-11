@@ -1,14 +1,10 @@
 ---
 draft: false
-
 title:  'MSF İçinde Servis Tarama'
 date: '2017-05-16T12:54:00+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Metasploit Framework içerisinde, belirli Portlarda çalışan servisleri bulmak ve bunların versiyon numaralarını tespit etmek için bir takım modüller bulunur.\_nmap\_ile yapılan servis taraması gibi bir takım bilgi toplama faaliyetlerinde bunları kullanabilirsiniz." 
- 
+description:  "Metasploit Framework içerisinde, belirli Portlarda çalışan servisleri bulmak ve bunların versiyon numaralarını tespit etmek için bir takım modüller bulunur. nmap ile yapılan servis taraması gibi bir takım bilgi toplama faaliyetlerinde bunları kullanabilirsiniz." 
 url:  /tr/msf-icinde-servis-tarama/
- 
 featured_image: /images/metasploit.jpg
 categories:
     - 'Metasploit Framework'

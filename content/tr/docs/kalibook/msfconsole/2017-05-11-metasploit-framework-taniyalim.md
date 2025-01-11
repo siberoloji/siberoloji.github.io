@@ -5,7 +5,7 @@ date: 2017-05-11T02:13:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework’ü etkin ve tam kapasiteli kullanabilmek için ihtiyaç duyabileceğiniz temel bilgilere ve komutlara birlikte bakalım.
 url: /tr/metasploit-framework-taniyalim/
-translationKey:: metasploit-framework-basics
+translationKey: metasploit-framework-basics
 featured_image: /images/metasploit.jpg
 weight: 20
 categories:

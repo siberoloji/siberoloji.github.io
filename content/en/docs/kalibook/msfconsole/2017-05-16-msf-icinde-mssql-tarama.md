@@ -3,7 +3,7 @@ draft: false
 title: MSSQL Scanning with MSF
 linkTitle: MSSQL Scanning
 weight: 110
-translationKey:: mssql-scanning-with-msf
+translationKey: mssql-scanning-with-msf
 date: 2017-05-16T12:52:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework provides an ability to search for MSSQL installations on other IP addresses in the network you are on.

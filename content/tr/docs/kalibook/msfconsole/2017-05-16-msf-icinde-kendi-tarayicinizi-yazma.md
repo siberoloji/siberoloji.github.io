@@ -2,7 +2,7 @@
 draft: false
 title: MSF İçinde Kendi Tarayıcınızı Yazma
 weight: 100
-translationKey:: creation-of-your-own-scanner
+translationKey: creation-of-your-own-scanner
 date: 2017-05-16T12:58:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework, bu tür amaçlar için kendi tarayıcı modülünüzü yazma imkanı sağlıyor.

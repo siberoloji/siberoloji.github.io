@@ -3,7 +3,7 @@ draft: false
 title: MSF İçinde MSSQL Tarama
 linkTitle: MSSQL Tarama
 weight: 110
-translationKey:: mssql-scanning-with-msf
+translationKey: mssql-scanning-with-msf
 date: 2017-05-16T12:52:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Metasploit Framework bulunduğunuz ağdaki diğer Ip adreslerinde MSSQL kurulumunun olup olmadığını araştırabilir. 

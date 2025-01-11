@@ -13,7 +13,7 @@ tags:
    - metasploit
    - metasploit framework
 weight: 30
-translationKey:: basic-metasploit-framework-commands
+translationKey: basic-metasploit-framework-commands
 linkTitle: Temel Komutlar
 ---
 

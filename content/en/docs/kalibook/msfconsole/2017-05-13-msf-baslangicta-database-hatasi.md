@@ -13,7 +13,7 @@ tags:
     - metasploit framework
 linkTitle: Database Error on Startup
 weight: 40
-translationKey:: msf-database-error
+translationKey: msf-database-error
 ---
 
 

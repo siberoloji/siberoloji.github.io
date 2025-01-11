@@ -5,7 +5,7 @@ date: 2017-05-13T12:37:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur.
 weight: 70
-translationKey:: msf-payload-types
+translationKey: msf-payload-types
 url: /tr/msf-icinde-payload-cesitleri/
 featured_image: /images/metasploit.jpg
 categories:
