@@ -32,7 +32,7 @@ Bu yazıda, Linux İşletim sisteminizde kullanabileceğiniz uname komutunu aç�
 ```bash
 uname --help
 
-Usage: uname **[**OPTION]...
+Usage: uname [OPTION]...
 Print certain system information.  With no OPTION, same as -s.
 
   -a, --all                print all information, **in the following order,
@@ -190,7 +190,7 @@ Bu komutun çıktılarını, değişken olarak atayarak, yazacağınız komut ve
 
 ```bash
 sudo apt-get install linux-headers-$(uname -r)
-**[**sudo**]** password for **umut: 
+[sudo] password for **umut: 
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done

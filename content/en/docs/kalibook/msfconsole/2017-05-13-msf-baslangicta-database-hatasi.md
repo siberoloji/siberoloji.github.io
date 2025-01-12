@@ -46,8 +46,8 @@ ss -lntp | grep post
 You will probably get a result similar to the output below. If you see 5433 as the listening port, we can move on to the next step.
 
 ```bash
-LISTEN 0 128 127.0.0.1:5433 *****:***** users:**((**"postgres",pid**=**2732,fd**=**6**))**
-LISTEN 0 128 ::1:5433 :::***** users:**((**"postgres",pid**=**2732,fd**=**3**))**
+LISTEN 0 128 127.0.0.1:5433 *****:***** users:**((**"postgres",pid=2732,fd=6**))**
+LISTEN 0 128 ::1:5433 :::***** users:**((**"postgres",pid=2732,fd=3**))**
 ```
 
 * Let's Look at the Settings:

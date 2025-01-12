@@ -47,16 +47,16 @@ class Metasploit3 < Msf::Auxiliary
  'License' => MSF_LICENSE
  )
  register_options(
- ****[**
+ **[
  Opt::RPORT(12345)
- **]**, self.class)
+ ], self.class)
  end
 
  def run_host(ip)
  connect**()**
- greeting **=** "HELLO SERVER"
+ greeting = "HELLO SERVER"
 sock.puts(greeting)
-data **=** sock.recv(1024)
+data = sock.recv(1024)
 print_status("Received: #{data} from #{ip}")
 disconnect**()**
 end
@@ -71,7 +71,7 @@ You can open a `netcat` listening session to capture the message of the browser 
 
 ```bash
 root@kali:~# nc -lnvp 12345 < response.txt
-listening on **[**any] 12345 ...
+listening on [any] 12345 ...
 ```
 
 Then we select the new module, set the RHOST variable and run the module.

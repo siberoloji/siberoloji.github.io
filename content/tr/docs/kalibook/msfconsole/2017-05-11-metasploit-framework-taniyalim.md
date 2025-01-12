@@ -126,10 +126,10 @@ Starting database at /home/umut/.msf4/db...success
 
 
 
-       **=[** metasploit v4.14.17-dev-                        **]**
-+ -- --**=[** 1648 exploits - 946 auxiliary - 291 post        **]**
-+ -- --**=[** 486 payloads - 40 encoders - 9 nops             **]**
-+ -- --**=[** Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> **]**
+       [ metasploit v4.14.17-dev-                        ]
++ -- --[ 1648 exploits - 946 auxiliary - 291 post        ]
++ -- --[ 486 payloads - 40 encoders - 9 nops             ]
++ -- --[ Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> ]
 
 msf > 
 ```

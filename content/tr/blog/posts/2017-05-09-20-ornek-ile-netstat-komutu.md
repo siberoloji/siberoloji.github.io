@@ -47,10 +47,10 @@ udp        0      0 *****:35036               *****:*****
 udp        0      0 *****:npmp-local          *****:*****
 Active UNIX domain sockets (servers and established)
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      **[** ACC **]**     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
-unix  2      **[** ACC **]**     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
-unix  2      **[** ACC **]**     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
-unix  2      **[** ACC **]**     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
+unix  2      [ ACC ]     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
+unix  2      [ ACC ]     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
+unix  2      [ ACC ]     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
+unix  2      [ ACC ]     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 ```
 
 
@@ -102,10 +102,10 @@ udp        0      0 *****:35036             *****:*****
 udp        0      0 *****:npmp-local        *****:*****
 Active UNIX domain sockets (only servers)
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      **[** ACC **]**     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
-unix  2      **[** ACC **]**     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
-unix  2      **[** ACC **]**     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
-unix  2      **[** ACC **]**     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
+unix  2      [ ACC ]     STREAM     LISTENING     16972  /tmp/orbit-root/linc-76b-0-6fa08790553d6
+unix  2      [ ACC ]     STREAM     LISTENING     17149  /tmp/orbit-root/linc-794-0-7058d584166d2
+unix  2      [ ACC ]     STREAM     LISTENING     17161  /tmp/orbit-root/linc-792-0-546fe905321cc
+unix  2      [ ACC ]     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 ```
 
 
@@ -161,20 +161,20 @@ netstat -lx
 
 Active UNIX domain sockets (only servers)
 Proto RefCnt Flags       Type       State         I-Node Path
-unix  2      **[** ACC **]**     STREAM     LISTENING     4171   @ISCSIADM_ABSTRACT_NAMESPACE
-unix  2      **[** ACC **]**     STREAM     LISTENING     5767   /var/run/cups/cups.sock
-unix  2      **[** ACC **]**     STREAM     LISTENING     7082   @/tmp/fam-root-
-unix  2      **[** ACC **]**     STREAM     LISTENING     6157   /dev/gpmctl
-unix  2      **[** ACC **]**     STREAM     LISTENING     6215   @/var/run/hald/dbus-IcefTIUkHm
-unix  2      **[** ACC **]**     STREAM     LISTENING     6038   /tmp/.font-unix/fs7100
-unix  2      **[** ACC **]**     STREAM     LISTENING     6175   /var/run/avahi-daemon/socket
-unix  2      **[** ACC **]**     STREAM     LISTENING     4157   @ISCSID_UIP_ABSTRACT_NAMESPACE
-unix  2      **[** ACC **]**     STREAM     LISTENING     60835836 /var/lib/mysql/mysql.sock
-unix  2      **[** ACC **]**     STREAM     LISTENING     4645   /var/run/audispd_events
-unix  2      **[** ACC **]**     STREAM     LISTENING     5136   /var/run/dbus/system_bus_socket
-unix  2      **[** ACC **]**     STREAM     LISTENING     6216   @/var/run/hald/dbus-wsUBI30V2I
-unix  2      **[** ACC **]**     STREAM     LISTENING     5517   /var/run/acpid.socket
-unix  2      **[** ACC **]**     STREAM     LISTENING     5531   /var/run/pcscd.comm
+unix  2      [ ACC ]     STREAM     LISTENING     4171   @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     5767   /var/run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     LISTENING     7082   @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     6157   /dev/gpmctl
+unix  2      [ ACC ]     STREAM     LISTENING     6215   @/var/run/hald/dbus-IcefTIUkHm
+unix  2      [ ACC ]     STREAM     LISTENING     6038   /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     6175   /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     4157   @ISCSID_UIP_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     60835836 /var/lib/mysql/mysql.sock
+unix  2      [ ACC ]     STREAM     LISTENING     4645   /var/run/audispd_events
+unix  2      [ ACC ]     STREAM     LISTENING     5136   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     6216   @/var/run/hald/dbus-wsUBI30V2I
+unix  2      [ ACC ]     STREAM     LISTENING     5517   /var/run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     5531   /var/run/pcscd.comm
 ```
 
 
@@ -415,7 +415,7 @@ tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg008.shr.prod.s:35270 TIME_WAIT   -
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg009.shr.prod.s:41637 TIME_WAIT   -
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg009.shr.prod.s:41614 TIME_WAIT   -
-unix  2      **[** **]**         STREAM     CONNECTED     88586726 10394/httpd
+unix  2      [ ]         STREAM     CONNECTED     88586726 10394/httpd
 ```
 
 

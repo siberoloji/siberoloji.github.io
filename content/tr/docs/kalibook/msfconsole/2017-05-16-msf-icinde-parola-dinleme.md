@@ -71,12 +71,12 @@ Aşağıda, POP3 modülünün Düzenli ifadeler kısmı görülmektedir. Bu düz
 
 
 ```bash
-self.sigs **=** **{**
+self.sigs = {
 :ok => /^(+OK[^n]*****)n/si,
-:err => /^(-ERR**[**^n]*****)n/si,
+:err => /^(-ERR[^n]*****)n/si,
 :user => /^USERs+**([**^n]+)n/si,
 :pass => /^PASSs+**([**^n]+)n/si,
-:quit => /^(QUITs*******[**^n]*****)n/si **}**
+:quit => /^(QUITs*****[^n]*****)n/si }
 ```
 
 
@@ -113,9 +113,9 @@ Her modül için mutlaka tanımlanması gereken kısım, hangi Portlar ile ilgil
 
 #Ensure that the session hash stays the same for both way of communication
 **if** (pkt[:tcp].dst_port **==** 6667) # When packet is sent to server
-s **=** find_session("#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}-#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}")
+s = find_session("#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}-#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}")
 **else** # When packet is coming from the server
-s **=** find_session("#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}-#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}")
+s = find_session("#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}-#{pkt[:ip].dst_ip}:#{pkt[:tcp].dst_port}")
 end
 ```
 
@@ -127,10 +127,10 @@ end
 ```bash
 **case** matched
 when :user # when the pattern "/^(NICKs+[^n]+)/si" is matching the packet content
-s[:user]**=**matches #Store the name into the session hash s for later use
+s[:user]=matches #Store the name into the session hash s for later use
 # Do whatever you like here... maybe a puts if you need to
 when :pass # When the pattern "/b(IDENTIFYs+[^n]+)/si" is matching
-s[:pass]**=**matches # Store the password into the session hash s as well
+s[:pass]=matches # Store the password into the session hash s as well
 **if** (s[:user] and s[:pass]) # When we have the name and the pass sniffed, print it
 print "-> IRC login sniffed: #{s[:session]} >> username:#{s[:user]} password:#{s[:pass]}n"
 end

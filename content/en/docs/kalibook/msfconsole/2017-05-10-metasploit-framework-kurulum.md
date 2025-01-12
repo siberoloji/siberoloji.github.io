@@ -116,10 +116,10 @@ If things went well (which I'm sure they will), you will be greeted with a scree
                 **||**|     **||**|
 
 
-       **=[** metasploit v4.14.17-dev-                        **]**
-+ -- --**=[** 1647 exploits - 945 auxiliary - 291 post        **]**
-+ -- --**=[** 486 payloads - 40 encoders - 9 nops             **]**
-+ -- --**=[** Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> **]**
+       [ metasploit v4.14.17-dev-                        ]
++ -- --[ 1647 exploits - 945 auxiliary - 291 post        ]
++ -- --[ 486 payloads - 40 encoders - 9 nops             ]
++ -- --[ Free Metasploit Pro trial: <a href="http://r-7.co/trymsp">http://r-7.co/trymsp</a> ]
 
 msf > 
 ```

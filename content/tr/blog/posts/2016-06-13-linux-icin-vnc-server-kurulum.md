@@ -81,14 +81,14 @@ sudo xed /lib/systemd/system/x11vnc.service
 
 
 ```bash
-**[**Unit]
-Description**=**Start x11vnc at startup.
-After**=**multi-user.target
-**[**Service]
-Type**=**simple
-ExecStart**=**/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
-**[**Install]
-WantedBy**=**multi-user.target
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -auth guess -forever -noxdamage -repeat -rfbauth /etc/x11vnc/vncpwd -rfbport 5900 -shared
+[Install]
+WantedBy=multi-user.target
 ```
 
 

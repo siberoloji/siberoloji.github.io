@@ -137,7 +137,7 @@ Packer klasörünün içerisinde sadece 1 dosya bulunur. Bu dosyanın yolunu şi
 
 
 ```bash
-export PATH**=**$PATH:/home/kullacıadınız/packer/
+export PATH=$PATH:/home/kullacıadınız/packer/
 ```
 
 
@@ -157,7 +157,7 @@ Artık packer kurulumu bitti. Test etmek için komut satırına packer komutunu 
 
 ```bash
 packer
-usage: packer **[**--version**]** **[**--help**]** <command> **[**<args>]
+usage: packer [--version] [--help] <command> [<args>]
 Available commands are:
 build build image(s) from template
 fix fixes templates from old versions of packer
@@ -300,7 +300,7 @@ Gerekli tüm indirmeler ve inşa faaliyetleri artık tamamlandı. Sanal işletim
 
 ```bash
 sudo vagrant up
-**[**sudo**]** password for **umut: 
+[sudo] password for **umut: 
 Bringing machine 'default' up with 'virtualbox' provider...
 **==>** default: Importing base box 'metasploitable3'...
 **==>** default: Matching MAC address for **NAT networking...

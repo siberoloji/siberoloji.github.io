@@ -44,16 +44,16 @@ root@kali:/var/www# wget <a href="http://the.earth.li/~sgtatham/putty/latest/x86
 Resolving the.earth.li (the.earth.li)... 46.43.34.31, 2001:41c8:10:b1f:c0ff:ee:15:900d
 Connecting to the.earth.li (the.earth.li)|46.43.34.31|:80... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: <a href="http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe">http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe</a> **[**following]
+Location: <a href="http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe">http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe</a> [following]
 --2015-07-21 12:01:27--  <a href="http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe">http://the.earth.li/~sgtatham/putty/0.64/x86/putty.exe</a>
 Reusing existing connection to the.earth.li:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 524288 (512K) **[**application/x-msdos-program]
+Length: 524288 (512K) [application/x-msdos-program]
 Saving to: `putty.exe'
 
 100%[=========================================================================================================>] 524,288      815K/s   in 0.6s    
 
-2015-07-21 12:01:28 (815 KB/s) - `putty.exe' saved **[**524288/524288]
+2015-07-21 12:01:28 (815 KB/s) - `putty.exe' saved [524288/524288]
 
 root@kali:/var/www#
 ```

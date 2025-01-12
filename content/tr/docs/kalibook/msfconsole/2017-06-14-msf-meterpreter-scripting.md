@@ -76,17 +76,17 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
  >    
  >     Domain profile configuration:
  >     -------------------------------------------------------------------
- >     Operational mode                  **=** Disable
- >     Exception mode                    **=** Enable
+ >     Operational mode                  = Disable
+ >     Exception mode                    = Enable
  >    
  >     Standard profile configuration:
  >     -------------------------------------------------------------------
- >     Operational mode                  **=** Disable
- >     Exception mode                    **=** Enable
+ >     Operational mode                  = Disable
+ >     Exception mode                    = Enable
  >    
  >     Local Area Connection 6 firewall configuration:
  >     -------------------------------------------------------------------
- >     Operational mode                  **=** Disable
+ >     Operational mode                  = Disable
  >    
  > Checking DEP Support Policy...
 ```
@@ -104,7 +104,7 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
  meterpreter > run getgui 
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/enable_rdp.
-**[!]** Example: run post/windows/manage/enable_rdp OPTION**=**value **[**...]
+**[!]** Example: run post/windows/manage/enable_rdp OPTION=value [...]
 Windows Remote Desktop Enabler Meterpreter Script
 Usage: getgui -u  -p 
 Or:    getgui -e
@@ -182,7 +182,7 @@ meterpreter > run gettelnet -e
 meterpreter > run hostsedit 
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/manage/inject_host.
-**[!]** Example: run post/windows/manage/inject_host OPTION**=**value **[**...]
+**[!]** Example: run post/windows/manage/inject_host OPTION=value [...]
 This Meterpreter script is for **adding entries **in **to the Windows Hosts file.
 Since Windows will check first the Hosts file instead of the configured DNS Server
 it will assist **in **diverting traffic to the fake entry or entries. Either a single
@@ -233,7 +233,7 @@ run hostsedit -l /tmp/fakednsentries.txt meterpreter > run hostsedit -e 10.211.5
 meterpreter > run remotewinenum
 
 **[!]** Meterpreter scripts are deprecated. Try post/windows/gather/wmic_command.
-**[!]** Example: run post/windows/gather/wmic_command OPTION**=**value **[**...]
+**[!]** Example: run post/windows/gather/wmic_command OPTION=value [...]
 Remote Windows Enumeration Meterpreter Script
 This script will enumerate windows hosts **in the target enviroment
 given a username and password or using the credential under witch

@@ -87,12 +87,12 @@ RHOSTS => 10.211.55.1/24
 msf auxiliary(mssql_ping) > exploit
 
 > SQL Server information for **10.211.55.128:
-> tcp **=** 1433
-> np **=** SSHACKTHISBOX-0pipesqlquery
-> Version **=** 8.00.194
-> InstanceName **=** MSSQLSERVER
-> IsClustered **=** No
-> ServerName **=** SSHACKTHISBOX-0
+> tcp = 1433
+> np = SSHACKTHISBOX-0pipesqlquery
+> Version = 8.00.194
+> InstanceName = MSSQLSERVER
+> IsClustered = No
+> ServerName = SSHACKTHISBOX-0
 > Auxiliary module execution completed
 ```
 

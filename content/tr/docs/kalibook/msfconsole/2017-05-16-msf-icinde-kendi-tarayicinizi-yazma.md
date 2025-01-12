@@ -47,16 +47,16 @@ class Metasploit3 < Msf::Auxiliary
                         'License'        => MSF_LICENSE
                 )
                 register_options(
-                        **[**
+                        [
                                 Opt::RPORT(12345)
-                        **]**, self.class)
+                        ], self.class)
         end
 
         def run_host(ip)
                 connect**()**
-      greeting **=** "HELLO SERVER" 
+      greeting = "HELLO SERVER" 
       sock.puts(greeting)
-                data **=** sock.recv(1024)
+                data = sock.recv(1024)
                 print_status("Received: #{data} from #{ip}")
                 disconnect**()**
         end
@@ -71,7 +71,7 @@ Deneyeceğimiz tarayıcı modülün mesajını yakalamak için `netcat` dinleme 
 
 ```bash
 root@kali:~# nc -lnvp 12345 < response.txt
-listening on **[**any] 12345 ...
+listening on [any] 12345 ...
 ```
 
 Ardından yeni modülü seçip RHOST değişkenini ayarlıyoruz ve modülü çalıştırıyoruz.

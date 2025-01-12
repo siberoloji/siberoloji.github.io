@@ -51,7 +51,7 @@ Pivot makinede meterpreter oturum açık durumdayken `portfwd –h` komutu ile `
 
 ```bash
 meterpreter > portfwd -h
-Usage: portfwd **[**-h**]** **[**add | delete | list | flush] **[**args]
+Usage: portfwd [-h] [add | delete | list | flush] [args]
 OPTIONS:
      -L >opt>  The local host to listen on (optional).
      -h        Help banner.
@@ -115,7 +115,7 @@ Meterpreter shell oturumunu açtığımız **pivot** bilgisayarda iken vereceği
 
 
 ```bash
-meterpreter > portfwd add –l 3389 –p 3389 –r  **[**target host]
+meterpreter > portfwd add –l 3389 –p 3389 –r  [target host]
 ```
 
 
@@ -280,13 +280,13 @@ eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f
 
 root@kali:~# ping 172.16.194.141
 PING 172.16.194.141 (172.16.194.141) 56(84) bytes of data.
-64 bytes from 172.16.194.141: icmp_req**=**1 ttl**=**128 time**=**240 ms
-64 bytes from 172.16.194.141: icmp_req**=**2 ttl**=**128 time**=**117 ms
-64 bytes from 172.16.194.141: icmp_req**=**3 ttl**=**128 time**=**119 ms
+64 bytes from 172.16.194.141: icmp_req=1 ttl=128 time=240 ms
+64 bytes from 172.16.194.141: icmp_req=2 ttl=128 time=117 ms
+64 bytes from 172.16.194.141: icmp_req=3 ttl=128 time=119 ms
 ^C
 --- 172.16.194.141 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
-rtt min/avg/max/mdev **=** 117.759/159.378/240.587/57.430 ms
+rtt min/avg/max/mdev = 117.759/159.378/240.587/57.430 ms
 
 root@kali:~#
 ```

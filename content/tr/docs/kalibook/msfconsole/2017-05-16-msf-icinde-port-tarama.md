@@ -54,7 +54,7 @@ msf > nmap -v -sV 192.168.1.0/24 -oA subnet_1
 Starting Nmap 5.00 ( <a href="http://nmap.org/">http://nmap.org</a> ) at 2009-08-13 19:29 MDT
 NSE: Loaded 3 scripts for **scanning.
 Initiating ARP Ping Scan at 19:29
-Scanning 101 hosts **[**1 port/host]
+Scanning 101 hosts [1 port/host]
 ...
 Nmap **done**: 256 IP addresses (16 hosts up) scanned **in **499.41 seconds
 Raw packets sent: 19973 (877.822KB) | Rcvd: 15125 (609.512KB)

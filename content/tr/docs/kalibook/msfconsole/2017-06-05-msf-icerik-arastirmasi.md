@@ -35,7 +35,7 @@ Meterpreter oturumunun sunduğu `search` komutu ile ilgili birkaç örnek incele
 
 ```bash
 meterpreter > search -h
-Usage: search **[**-d dir**]** **[**-r recurse] -f pattern
+Usage: search [-d dir] [-r recurse] -f pattern
 Search for **files.
 
 OPTIONS:

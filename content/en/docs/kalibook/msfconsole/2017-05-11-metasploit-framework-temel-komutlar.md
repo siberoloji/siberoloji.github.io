@@ -45,9 +45,9 @@ msf > banner
 Frustrated with proxy pivoting? Upgrade to layer-2 VPN pivoting with
 Metasploit Pro -- type 'go_pro' to launch it now.
 
-       **=[** metasploit v4.11.4-2015071402                   **]**
-+ -- --**=[** 1467 exploits - 840 auxiliary - 232 post        **]**
-+ -- --**=[** 432 payloads - 37 encoders - 8 nops             **]**
+       [ metasploit v4.11.4-2015071402                   ]
++ -- --[ 1467 exploits - 840 auxiliary - 232 post        ]
++ -- --[ 432 payloads - 37 encoders - 8 nops             ]
 ```
 
 ## check
@@ -106,7 +106,7 @@ You can see detailed options for the `connect` command with the `-h` parameter.
 
 ```bash
 msf > connect -h
-Usage: connect **[**options]  
+Usage: connect [options]  
 
 Communicate with a host, similar to interacting via netcat, taking advantage of any configured session pivoting.
 
@@ -235,7 +235,7 @@ Description:
 
 References:
   <a href="http://www.microsoft.com/technet/security/bulletin/MS09-050.mspx">http://www.microsoft.com/technet/security/bulletin/MS09-050.mspx</a>
-  <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name">http://cve.mitre.org/cgi-bin/cvename.cgi?name</a>**=**2009-3103
+  <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name">http://cve.mitre.org/cgi-bin/cvename.cgi?name</a>=2009-3103
   <a href="http://www.securityfocus.com/bid/36299">http://www.securityfocus.com/bid/36299</a>
   <a href="http://www.osvdb.org/57799">http://www.osvdb.org/57799</a>
   <a href="http://seclists.org/fulldisclosure/2009/Sep/0039.html">http://seclists.org/fulldisclosure/2009/Sep/0039.html</a>
@@ -265,7 +265,7 @@ It allows you to list the modules running in the background, shutdown, etc.
 
 ```bash
 msf > jobs -h
-Usage: jobs **[**options]
+Usage: jobs [options]
 
 Active job manipulation and interaction.
 
@@ -334,7 +334,7 @@ Some modules reference external resources from within script commands. For examp
 
 ```bash
 msf > resource
-Usage: resource path1 **[**path2 ...]
+Usage: resource path1 [path2 ...]
 ```
 
 ```bash
@@ -361,9 +361,9 @@ root@kali:~# msfconsole -r version.rc
 Frustrated with proxy pivoting? Upgrade to layer-2 VPN pivoting with
 Metasploit Pro -- type 'go_pro' to launch it now.
 
-       **=[** metasploit v4.8.2-2014021901 **[**core:4.8 api:1.0] **]**
-+ -- --**=[** 1265 exploits - 695 auxiliary - 202 post **]**
-+ -- --**=[** 330 payloads - 32 encoders - 8 nops      **]**
+       [ metasploit v4.8.2-2014021901 [core:4.8 api:1.0] ]
++ -- --[ 1265 exploits - 695 auxiliary - 202 post ]
++ -- --[ 330 payloads - 32 encoders - 8 nops      ]
 
 > Processing version.rc for **ERB directives.
 resource (version.rc**)>** version
@@ -378,7 +378,7 @@ The `route` command is used to change the route of communication on the target c
 
 ```bash
 meterpreter > route -h
-Usage: route **[**-h**]** command **[**args]
+Usage: route [-h] command [args]
 ```
 
 When you open a meterpreter session on the target computer, you can see the current communication table if you give the `route` command without parameters.
@@ -386,8 +386,8 @@ When you open a meterpreter session on the target computer, you can see the curr
 ```bash
 Supported commands:
 
-   add    **[**subnet] **[**netmask] **[**gateway]
-   delete **[**subnet] **[**netmask] **[**gateway]
+   add    [subnet] [netmask] [gateway]
+   delete [subnet] [netmask] [gateway]
    list
 
 meterpreter >
@@ -430,7 +430,7 @@ We can diversify your searches by using keywords.
 
 ```bash
 msf > help search
-Usage: search **[**keywords]
+Usage: search [keywords]
 
 Keywords:
   name      :  Modules with a matching descriptive name
@@ -726,7 +726,7 @@ Encoders
    Name                    Disclosure Date  Rank       Description
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
-   cmd/ifs                                  low        Generic **${**IFS**}** Substitution Command Encoder
+   cmd/ifs                                  low        Generic **${**IFS} Substitution Command Encoder
    cmd/printf_php_mq                        manual     printf(1) via PHP magic_quotes Utility Command Encoder
 ...snip...
 ```
@@ -861,7 +861,7 @@ Compatible Encoders
    Name                    Disclosure Date  Rank       Description
    ----                    ---------------  ----       -----------
    cmd/generic_sh                           good       Generic Shell Variable Substitution Command Encoder
-   cmd/ifs                                  low        Generic **${**IFS**}** Substitution Command Encoder
+   cmd/ifs                                  low        Generic **${**IFS} Substitution Command Encoder
    cmd/printf_php_mq                        manual     printf(1) via PHP magic_quotes Utility Command Encoder
    generic/none                             normal     The "none" Encoder
    mipsbe/longxor                           normal     XOR Encoder

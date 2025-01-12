@@ -48,7 +48,7 @@ Bu komut, sistem hakkında bir takım bilgileri öğrenmemizi sağlar. Aşağıd
 
 ```bash
 **>>** client.sys.config.sysinfo
-=> **{**"OS"=>"Windows XP (Build 2600, Service Pack 3).", "Computer"=>"WINXPVM01"**}**
+=> {"OS"=>"Windows XP (Build 2600, Service Pack 3).", "Computer"=>"WINXPVM01"}
 **>>**
 ```
 
@@ -65,7 +65,7 @@ Komut çıktısında görüldüğü gibi, ekrana getirilen bilginin aslında far
 
 
 ```bash
-**>>** client.sys.config.sysinfo['OS'**]**
+**>>** client.sys.config.sysinfo['OS']
 => "Windows XP (Build 2600, Service Pack 3)."
 **>>**
 ```
@@ -104,7 +104,7 @@ Bu çağrı ile hedef sistemin ağ kartları ve arayüzleri hakkında bilgi elde
 
 ```sh
 **>>** client.net.config.interfaces
-=> **[**#, #]
+=> [#, #]
 **>>** client.net.config.interfaces.class
 => Array
 ```
@@ -115,8 +115,8 @@ Gördüğünüz gibi, API çağrısı array tipi bir değişken kullanmaktadır.
 
 
 ```bash
- **>>** interfaces **=** client.net.config.interfaces
- => **[**#, #]
+ **>>** interfaces = client.net.config.interfaces
+ => [#, #]
  **>>** interfaces.each **do** |i|
  ?> puts i.pretty
  **>>** end

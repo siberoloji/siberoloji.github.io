@@ -46,8 +46,8 @@ ss -lntp | grep post
 Muhtemelen aşağıdaki çıktıya benzer bir sonuç elde edeceksiniz. Dinleme portu olarak 5433 görüyorsanız bir sonraki adıma geçebiliriz.
 
 ```bash
-LISTEN     0      128    127.0.0.1:5433                     *****:*****                   users:**((**"postgres",pid**=**2732,fd**=**6**))**
-LISTEN     0      128        ::1:5433                    :::*****                   users:**((**"postgres",pid**=**2732,fd**=**3**))**
+LISTEN     0      128    127.0.0.1:5433                     *****:*****                   users:**((**"postgres",pid=2732,fd=6**))**
+LISTEN     0      128        ::1:5433                    :::*****                   users:**((**"postgres",pid=2732,fd=3**))**
 ```
 
 * Ayarlara Bakalım:

