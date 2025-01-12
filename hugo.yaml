@@ -85,7 +85,6 @@ outputs:
 services:
   googleAnalytics:
     id: G-Y78HNW88W6
-  
 
 params:
   taxonomy:
@@ -149,6 +148,14 @@ params:
 
   # User interface configuration
   ui:
+    ul_show: 1
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    sidebar_menu_truncate: 400
+    sidebar_menu_truncate_show_more: true
+    sidebar_menu_truncate_show_more_text: "Show more"
+    sidebar_menu_truncate_show_less_text: "Show less"
+    showLightDarkModeMenu: true
     # Set to true to disable breadcrumb navigation.
     breadcrumb_disable: false
     # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
@@ -159,7 +166,6 @@ params:
     sidebar_menu_compact: true
     # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
     sidebar_search_disable: false
-
     # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
     # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
@@ -198,20 +204,6 @@ params:
         url: https://github.com/siberoloji/siberoloji.github.io
         icon: fab fa-github
         desc: Development takes place here!
-      
-  ui:
-    sidebar_menu_compact: true
-    ul_show: 1
-    sidebar_menu_foldable: true
-    sidebar_cache_limit: 1000
-    sidebar_menu_truncate: 400
-    sidebar_menu_truncate_show_more: true
-    sidebar_menu_truncate_show_more_text: "Show more"
-    sidebar_menu_truncate_show_less_text: "Show less"
-
-    showLightDarkModeMenu: true
-
-    
 
 sitemap:
   changefreq: daily

