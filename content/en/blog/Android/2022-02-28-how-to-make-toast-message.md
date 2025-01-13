@@ -1,18 +1,18 @@
 ---
 draft: false
-
-title:  'How to make Toast message?'
-date: '2022-02-28T20:43:12+03:00'
+title: How to make Toast message?
+date: 2022-02-28T20:43:12+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /how-to-make-toast-message/
+url: /how-to-make-toast-message/
 featured_image: /images/Android_Robot_original.png
 categories:
-    - 'Android Code Samples'
+    - Android Code Samples
 tags:
     - android
-    - 'toast message'
+    - toast message
+linkTitle: Toast Message
+description: You can find a code sample to make a Toast message in Android Studio
+translationKey: how-to-make-toast-message
 ---
 You can find a code sample to make a Toast message in Android Studio
 
