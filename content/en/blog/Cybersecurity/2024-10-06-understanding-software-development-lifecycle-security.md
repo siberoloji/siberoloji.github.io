@@ -36,10 +36,6 @@ The SDLC consists of several phases, each crucial for producing high-quality sof
 * **Deployment**: Releasing the software to users.
 
 * **Maintenance**: Ongoing support and updates.
-
-
-
-
 The primary goal of the SDLC is to ensure that software meets customer expectations while being delivered on time and within budget[1][4].
 
 
@@ -56,10 +52,6 @@ As cyber threats continue to evolve, integrating security into the SDLC has beco
 * **Compliance**: Many industries are subject to regulatory requirements that mandate secure coding practices.
 
 * **Customer Trust**: Delivering secure software helps maintain customer confidence and loyalty[1][2].
-
-
-
-
 Organizations often face significant challenges in managing their software supply chains, as many attack vectors can compromise developer accounts, repositories, or tools[1]. Therefore, a proactive approach to security throughout the SDLC is essential.
 
 
@@ -173,10 +165,6 @@ Security doesn’t end at deployment; continuous monitoring and updates are nece
 * Establish a process for regular updates and patches.
 
 * Monitor application performance for unusual activity that may indicate a breach[4][5].
-
-
-
-
 Best Practices for Implementing SSDLC
 
 
@@ -193,10 +181,6 @@ To effectively integrate security into your SDLC, consider adopting these best p
 * **Implement Continuous Integration/Continuous Deployment (CI/CD)**: Integrating security checks within CI/CD pipelines allows teams to catch vulnerabilities early and often[6].
 
 * **Use Frameworks and Standards**: Leverage established frameworks like NIST’s Secure Software Development Framework (SSDF) or OWASP’s Software Assurance Maturity Model (SAMM) for guidance on best practices in software security[4][5].
-
-
-
-
 Conclusion
 
 

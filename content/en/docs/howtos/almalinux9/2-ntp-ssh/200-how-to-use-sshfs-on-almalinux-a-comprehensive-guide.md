@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Secure Shell Filesystem (SSHFS)
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 200
 
 keywords:
   - AlmaLinux
   - SSHFS
-
-
 featured_image: /images/almalinux.webp
 url: sshfs-almalinux
 ---

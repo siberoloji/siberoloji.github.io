@@ -2,11 +2,7 @@
 title: Apple-bleee the Kali Linux Tool for Wi-Fi Security Research
 description: One such tool available in Kali Linux is apple-bleee, a specialized utility designed for analyzing Wi-Fi probe requests from Apple devices.
 date: 2024-11-10
-
-
 draft: false
-
-
 tags:
     - apple-bleee
 categories:
@@ -17,8 +13,6 @@ weight: 150
 
 keywords:
     - apple-bleee
-
-
 linkTitle: apple-bleee
 url: /apple-bleee-kali-linux-tool-wi-fi-security-research/
 ---

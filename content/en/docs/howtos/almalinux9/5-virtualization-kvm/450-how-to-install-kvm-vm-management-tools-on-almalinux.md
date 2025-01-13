@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Install KVM Management Tools
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 450
 

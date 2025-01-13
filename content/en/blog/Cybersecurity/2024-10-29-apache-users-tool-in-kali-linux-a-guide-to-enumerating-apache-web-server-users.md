@@ -46,10 +46,6 @@ Apache web servers are widely used for hosting websites, making them a common ta
 * **Misconfigured permissions** may expose sensitive data or administrative functions to unauthorized users.
 
 * **Network mapping and threat modeling** benefit from understanding user accounts and associated roles.
-
-
-
-
 The Apache-Users tool thus plays a role in identifying these usernames, aiding in better understanding potential attack surfaces.
 ## Installing Apache-Users on Kali Linux
 
@@ -108,10 +104,6 @@ Key Options
 * `-d`: Specify a directory or file for additional settings.
 
 * `-v`: Enable verbose mode to view detailed output.
-
-
-
-
 Example:
 
 
@@ -138,10 +130,6 @@ This command runs Apache-Users against  `example.com`, displaying detailed resul
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* **Analyze Output:** The tool will attempt to list usernames associated with the server. If successful, it will display the usernames it found. If unsuccessful, it may indicate that no usernames were detected or that the server has countermeasures against such scans.
-
-
-
-
 Adding a Directory for Better Enumeration
 
 
@@ -222,10 +210,6 @@ Solution:
 * **Specify a Directory:** Try using the `-d` option with a directory path where user data may be stored.
 
 * **Increase Verbosity:** Use `-v` to see if there are any error messages or hints about misconfigurations.
-
-
-
-
 Connectivity Errors
 
 

@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Configure iSCSI Initiator
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 400
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-iscsi-initiator-almalinux
 ---

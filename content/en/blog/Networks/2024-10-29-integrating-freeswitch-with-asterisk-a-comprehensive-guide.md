@@ -61,10 +61,6 @@ For seamless communication, start by allowing network access between the Asteris
 * **SIP Port**: 5060 (UDP) for SIP communication
 
 * **RTP Ports**: 16384-32768 (UDP) for media traffic
-
-
-
-
 To configure the firewall on both servers:
 
 

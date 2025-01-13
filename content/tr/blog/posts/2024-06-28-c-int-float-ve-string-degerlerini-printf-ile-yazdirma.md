@@ -17,11 +17,7 @@ tags:
     - c++
     - printf
 ---
-
-
 Bu kod, int ve float değişkenlerinin sabit, metin değişkenin sabit olmadığı bir main işlevi tanımlar. number, realNumber ve text değerlerini yazdırır ve ardından 0 değerini döndürür.
-
-
 ```cpp
 #include <iostream>
 #include <cstdio>

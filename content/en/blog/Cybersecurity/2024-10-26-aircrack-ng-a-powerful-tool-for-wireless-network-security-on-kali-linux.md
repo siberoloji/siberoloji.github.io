@@ -38,10 +38,6 @@ What is Aircrack-ng?
 * **WEP, WPA, and WPA2 Cracking**: Supports cracking of various encryption protocols, making it versatile for wireless auditing.
 
 * **Modular structure**: Composed of multiple utilities, each focused on a specific aspect of wireless security.
-
-
-
-
 Aircrack-ng is a staple tool in the cybersecurity world and is often one of the first utility security testers learn to use when diving into wireless security.
 Why Use Aircrack-ng on Kali Linux?
 
@@ -112,10 +108,6 @@ Aircrack-ng isn’t just a single program; it’s a suite composed of several sp
 * **Aireplay-ng**: A packet injection tool that can send forged packets to Wi-Fi networks, useful for performing de-authentication attacks to capture handshakes.
 
 * **Airdecap-ng**: A utility for decrypting WEP/WPA/WPA2 capture files, allowing for further analysis of encrypted traffic.
-
-
-
-
 Each of these tools contributes to Aircrack-ng's effectiveness in analyzing and testing wireless network security.
 Basic Workflow: How to Use Aircrack-ng for Wi-Fi Auditing
 
@@ -215,10 +207,6 @@ Aircrack-ng is a powerful tool, but it must be used ethically. Unauthorized acce
 * **Report Findings**: If testing for a client or organization, provide a detailed report of findings and recommendations.
 
 * **Respect Privacy**: Do not capture or analyze personal data unless required and authorized by the scope of your testing.
-
-
-
-
 Using Aircrack-ng responsibly ensures its potential is harnessed positively, strengthening network security rather than compromising it.
 Advantages and Limitations of Aircrack-ng
 

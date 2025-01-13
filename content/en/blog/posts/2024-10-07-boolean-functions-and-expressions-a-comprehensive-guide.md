@@ -45,10 +45,6 @@ To combine and manipulate Boolean values, we employ Boolean operations. The thre
 * **OR (`||` or `OR`):** The OR operation returns true if at least one operand is true. It returns false only if both operands are false.
 
 * **NOT (`!` or `NOT`):** The NOT operation negates the value of its operand. It returns true if the operand is false, and vice versa.
-
-
-
-
 **Boolean Expressions**
 
 
@@ -61,10 +57,6 @@ Boolean expressions are formed by combining Boolean values and variables using B
 * `NOT (z = 0)`
 
 * `(a OR b) AND (c OR d)`
-
-
-
-
 **Truth Tables**
 
 
@@ -95,10 +87,6 @@ A Boolean function is a mathematical function that maps a set of Boolean inputs 
 * **NOT function:** `f(A) = NOT A`
 
 * **XOR (exclusive OR) function:** `f(A, B) = (A OR B) AND NOT (A AND B)`
-
-
-
-
 **Applications of Boolean Functions and Expressions**
 
 
@@ -113,10 +101,6 @@ Boolean logic has widespread applications in various fields, including:
 * **Database systems:** Boolean operators are used for query optimization and retrieval.
 
 * **Artificial intelligence:** Boolean logic is employed in knowledge representation and reasoning.
-
-
-
-
 **Boolean Algebra**
 
 

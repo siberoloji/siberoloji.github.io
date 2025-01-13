@@ -45,10 +45,6 @@ Some common applications of DSP include:
 * **Radar and sonar signal processing**
 
 * **Communication systems** (e.g., data transmission, error detection)
-
-
-
-
 To process a signal digitally, we first need to convert the continuous-time (analog) signal into a digital format. This conversion involves two critical stages: **sampling** and **quantization**.
 
 
@@ -121,10 +117,6 @@ For example:
 * A 3-bit quantizer has ( 2<sup>3</sup> = 8 ) quantization levels.
 
 * A 16-bit quantizer has ( 2<sup>16</sup>= 65,536 ) levels, allowing for much finer amplitude resolution.
-
-
-
-
 As the resolution increases, the **Signal-to-Noise Ratio (SNR)** of the system improves, meaning that the quantized signal more accurately represents the original analog signal. However, higher resolution also requires more storage space and greater processing power.
 
 
@@ -152,10 +144,6 @@ When designing digital signal processing systems, engineers must balance various
 * **Higher quantization resolution** reduces quantization noise but increases the number of bits per sample, requiring more bandwidth and memory.
 
 * **Lowering sampling rates or using fewer bits** can reduce data and processing requirements but may degrade signal quality.
-
-
-
-
 In many cases, the ideal solution is to use a sampling rate and quantization resolution that offer acceptable signal quality without overwhelming the system's resources. For instance, audio signals typically use a sampling rate of 44.1 kHz and 16-bit quantization, providing a good balance between quality and efficiency.
 
 
@@ -174,10 +162,6 @@ DSP is ubiquitous in modern technology, and the processes of sampling and quanti
 * **Communication Systems**: In telecommunications, signals (like voice or data) are sampled and quantized to be transmitted over digital communication channels. Techniques like **Pulse Code Modulation (PCM)** and **Delta Modulation** are widely used to encode analog signals into digital form.
 
 * **Medical Imaging**: In medical devices such as MRI or CT scanners, signals are sampled and quantized to produce digital images that doctors can analyze. Higher sampling rates and quantization levels result in more detailed and accurate medical images.
-
-
-
-
 Conclusion
 
 

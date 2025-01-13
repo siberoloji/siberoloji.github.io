@@ -47,10 +47,6 @@ A multiplexer has:
 * **Select Lines**: These are control lines used to choose which input should be forwarded to the output. The number of select lines is based on the number of inputs and is given by (2^n = m), where n is the number of select lines and m is the number of inputs.
 
 * **Single Output**: The selected input is sent to the output based on the control signals.
-
-
-
-
 For example, in a **2-to-1 MUX**, there are two data inputs (D0 and D1), one select line (S), and one output (Y). The value on the select line determines whether the output is D0 or D1. If S = 0, Y = D0, and if S = 1, Y = D1.
 
 
@@ -129,10 +125,6 @@ A demultiplexer has:
 * **Select Lines**: These control the routing of the input to one of the output lines.
 
 * **Multiple Outputs (n outputs)**: The input signal is routed to one of the multiple output lines depending on the select lines. The number of select lines required is given by (2^n = m), where n is the number of select lines and m is the number of outputs.
-
-
-
-
 For example, a **1-to-4 DEMUX** has one input, two select lines (S0, S1), and four outputs (Y0 to Y3). Based on the combination of select lines, the input is directed to one of the four outputs.
 
 

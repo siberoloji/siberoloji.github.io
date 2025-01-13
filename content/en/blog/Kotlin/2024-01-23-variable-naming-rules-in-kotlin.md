@@ -41,10 +41,6 @@ If you want the code you write to be easy to read and follow, it is very importa
 * Names cannot have a number at the beginning (1month is the wrong usage.)
 
 * Keywords that the Kotlin software reserves for itself (val, var, fun, etc.) cannot be used as variable names.
-
-
-
-
 ## Recommended Naming Conventions
 
 
@@ -56,10 +52,6 @@ If you want the code you write to be easy to read and follow, it is very importa
 * Although it is not prohibited, you should not start the variable name with an underscore _.
 
 * You must give meaningful names to the variable. As a variable name, the `color` name will be more descriptive and meaningful than the `c` expression.
-
-
-
-
 ## Magic Numbers
 
 

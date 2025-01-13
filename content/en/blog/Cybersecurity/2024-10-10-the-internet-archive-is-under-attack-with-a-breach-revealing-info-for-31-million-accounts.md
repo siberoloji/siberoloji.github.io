@@ -93,10 +93,6 @@ To mitigate risks associated with cyberattacks, nonprofits should consider imple
 * **Incident Response Plans**: Developing clear protocols for responding to data breaches can help organizations manage crises more effectively.
 
 * **Investing in Technology**: Allocating budget towards advanced security technologies can enhance protection against cyber threats.
-
-
-
-
 ## Conclusion
 
 

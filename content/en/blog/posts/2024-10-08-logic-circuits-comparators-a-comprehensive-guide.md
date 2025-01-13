@@ -39,10 +39,6 @@ In its simplest form, a comparator will compare two binary values, A and B, and 
 * **A = B** (A is equal to B)
 
 * **A < B** (A is less than B)
-
-
-
-
 These outcomes can be represented by three binary signals, often labeled as G (Greater), E (Equal), and L (Less).
 
 
@@ -57,10 +53,6 @@ Comparators are generally classified into two categories:
 * **1-Bit Comparators:** These comparators compare two binary bits, A and B.
 
 * **N-Bit Comparators:** These are used for comparing binary numbers with multiple bits (N represents the number of bits).
-
-
-
-
 Let's break these down:
 
 
@@ -76,10 +68,6 @@ A 1-bit comparator compares two single-bit binary inputs, A and B. For each bit 
 * If A > B, the output will indicate that A is greater.
 
 * If A < B, the output will indicate that A is smaller.
-
-
-
-
 A truth table can represent the 1-bit comparator:
 
 
@@ -103,10 +91,6 @@ For comparing larger numbers, an N-bit comparator is needed. An N-bit comparator
 * **A = B**: This is true when both binary values are equal.
 
 * **A < B**: This is true when A is less than B.
-
-
-
-
 The design of an N-bit comparator becomes more complex as it requires multiple logic gates to compare each bit of A with B, starting from the most significant bit (MSB) and working down to the least significant bit (LSB).
 
 
@@ -126,10 +110,6 @@ For two binary numbers to be equal, all corresponding bits must be equal. An XNO
 
 
 * **A = B** for two 1-bit inputs can be written as ( A \odot B ), where ( \odot ) is the XNOR operation.
-
-
-
-
 For an N-bit comparator, equality is achieved when all bit comparisons are true (i.e., all XNOR outputs are 1).
 
 
@@ -143,10 +123,6 @@ Comparing whether A is greater than or less than B is slightly more complex. Sta
 * If the MSB of A is greater than the MSB of B, then A is greater than B.
 
 * If the MSB of A is less than B, then A is smaller, and there is no need to compare the lower bits.
-
-
-
-
 For this, a series of AND, OR, and NOT gates are used to propagate the comparison down through each bit position, stopping as soon as the relationship is determined.
 
 

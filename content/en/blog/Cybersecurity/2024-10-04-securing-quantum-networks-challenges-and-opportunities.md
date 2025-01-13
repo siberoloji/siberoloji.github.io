@@ -34,10 +34,6 @@ Quantum internet has the potential to revolutionize several key areas:
 * **Quantum Computing Integration**: Quantum networks could connect quantum computers, allowing them to share resources and computational tasks, potentially solving complex problems far beyond the capacity of classical computers.
 
 * **Scientific Research**: Quantum networks could enable new forms of communication and data sharing that allow for faster scientific breakthroughs, particularly in fields that require massive computational power, like drug discovery and climate modeling.
-
-
-
-
 However, with these advancements come significant challenges, particularly when it comes to securing quantum networks against both classical and quantum-based cyber threats.
 How Quantum Networks Work
 

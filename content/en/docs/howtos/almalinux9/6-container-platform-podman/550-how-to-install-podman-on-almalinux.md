@@ -10,8 +10,6 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:

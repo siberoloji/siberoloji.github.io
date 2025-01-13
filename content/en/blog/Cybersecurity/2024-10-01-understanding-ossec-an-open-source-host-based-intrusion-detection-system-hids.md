@@ -106,10 +106,6 @@ OSSEC operates in two main modes: **agent-based** and **agentless** monitoring.
 * **Agent-based monitoring** involves installing an OSSEC agent on the host machine. This agent collects data, such as log files, file integrity information, and system activity, and sends it to the OSSEC server (often referred to as the **OSSEC Manager**) for analysis. The agent-based approach provides more comprehensive monitoring and is preferred for systems that require deep visibility.
 
 * **Agentless monitoring** does not require the installation of an agent on the host. Instead, OSSEC relies on remote log collection and other monitoring mechanisms to gather data from systems like network devices, firewalls, and printers. While this mode offers less granular control than agent-based monitoring, it is useful for devices where installing an agent is impractical.
-
-
-
-
 Centralized Management and Scalability
 
 

@@ -57,10 +57,6 @@ Before exploring the tools, it is important to know the types of threats that th
 * **Man-in-the-Middle Attacks (MitM)**: Hackers intercept communication between two parties, potentially gaining access to sensitive information.
 
 * **Unauthorized Access**: This occurs when individuals or entities without permission try to gain access to network resources.
-
-
-
-
 ## Key Network Security Tools
 
 
@@ -79,10 +75,6 @@ A firewall is a crucial first line of defense in network security. It acts as a 
 * **Packet-filtering firewalls**: These inspect packets of data being sent over the network and determine if they should be allowed through based on predefined rules.
 
 * **Next-generation firewalls (NGFW)**: These offer advanced features such as deep packet inspection, intrusion prevention, and encrypted traffic inspection.
-
-
-
-
 A well-configured firewall can prevent unauthorized users and malicious programs from accessing a network, making it an indispensable security tool.
 
 
@@ -97,10 +89,6 @@ An Intrusion Detection System (IDS) monitors network traffic for suspicious acti
 * **Host-based IDS (HIDS)**: Monitors a single device or endpoint for malicious activity.
 
 * **Network-based IDS (NIDS)**: Scans the network traffic as a whole for signs of malicious behavior.
-
-
-
-
 IDPS systems are essential for detecting unusual patterns, identifying potential breaches, and stopping them before they escalate.
 
 
@@ -135,10 +123,6 @@ Data Loss Prevention solutions help to prevent unauthorized access to sensitive 
 * **Endpoint DLP**: Monitors data on user devices to prevent leaks or theft.
 
 * **Network DLP**: Monitors network traffic to ensure that sensitive data is not being transmitted outside authorized channels.
-
-
-
-
 DLP solutions ensure that data remains within the confines of a secure network and is only accessible to authorized individuals.
 
 
@@ -165,10 +149,6 @@ Encryption is one of the most effective ways to protect sensitive data. By conve
 * **File encryption**: Protects individual files or folders.
 
 * **Full-disk encryption (FDE)**: Encrypts all data on a device, ensuring that unauthorized users can’t access it, even if the physical device is stolen.
-
-
-
-
 Encryption is especially important for sensitive data stored on mobile devices, laptops, or cloud storage systems.
 
 

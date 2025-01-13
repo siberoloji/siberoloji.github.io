@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 990
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to explore **machine learning (ML) at scale** using AlmaLinux. By leveraging distributed computing frameworks and efficient resource management, Bob aimed to train complex models and process massive datasets.

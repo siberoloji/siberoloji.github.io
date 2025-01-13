@@ -64,10 +64,6 @@ To represent unsigned numbers in binary, we simply convert the decimal number to
 * The smallest value: `00000000₂ = 0`
 
 * The largest value: `11111111₂ = 255`
-
-
-
-
 In an n-bit system, the range of unsigned numbers is from **0** to **2ⁿ - 1**. This means that in an 8-bit system, there are 256 possible values (0 to 255).
 
 
@@ -115,20 +111,12 @@ In signed binary representation, one bit (usually the leftmost bit) is reserved 
 * **0** indicates a positive number.
 
 * **1** indicates a negative number.
-
-
-
-
 For example, in an 8-bit signed number, the first bit is the sign bit, and the remaining 7 bits represent the magnitude of the number. The range of signed numbers in an n-bit system is from **−(2ⁿ⁻¹)** to **(2ⁿ⁻¹ - 1)**. In an 8-bit signed system, the range is:
 
 
 * The smallest value: `10000000₂ = -128`
 
 * The largest value: `01111111₂ = 127`
-
-
-
-
 This provides a total of 256 possible values, just like unsigned numbers, but the range is split between negative and positive values.
 
 
@@ -149,10 +137,6 @@ To represent a negative number in two’s complement:
 * Invert all the bits (i.e., change 0s to 1s and 1s to 0s).
 
 * Add 1 to the result.
-
-
-
-
 For example, to represent -5 in an 8-bit system:
 
 
@@ -161,10 +145,6 @@ For example, to represent -5 in an 8-bit system:
 * Invert the bits: `11111010₂`.
 
 * Add 1: `11111011₂`.
-
-
-
-
 Thus, the two’s complement representation of -5 is `11111011₂`.
 
 
@@ -274,10 +254,6 @@ The choice between signed and unsigned numbers depends on the specific requireme
 * If you only need to represent non-negative values (e.g., counts, addresses), **unsigned numbers** are more appropriate because they allow you to use the full range of available bits for magnitude.
 
 * If your application involves negative values (e.g., financial data, temperature measurements), **signed numbers** are necessary to capture both positive and negative ranges.
-
-
-
-
 Additionally, many modern programming languages allow you to specify whether a variable should be signed or unsigned. For example, in C/C++, you can use `int` for signed integers and `unsigned int` for unsigned integers.
 
 

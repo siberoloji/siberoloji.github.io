@@ -15,11 +15,7 @@ categories:
 tags:
     - 'içiçe if'
 ---
-
-
 Bu yazımızda C++ iç içe geçmiş if ifadesini gösteren bir örnek paylaşıyoruz.
-
-
 ```cpp
 #include <iostream>
 

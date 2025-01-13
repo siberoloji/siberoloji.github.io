@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Use VirtualBMC on KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 540
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: virtualbmc-kvm-almalinux
 ---

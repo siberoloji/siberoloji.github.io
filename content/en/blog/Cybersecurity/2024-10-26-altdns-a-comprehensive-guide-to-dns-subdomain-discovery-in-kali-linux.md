@@ -43,10 +43,6 @@ The tool operates by following these key steps:
 * Resolves the generated names to verify their existence
 
 * Outputs the discovered valid subdomains
-
-
-
-
 AltDNS uses word lists and patterns to create these permutations, making it particularly effective at finding development, staging, and test environments that follow common naming conventions.
 
 
@@ -83,10 +79,6 @@ altdns -h
 * Supports custom word lists for permutation
 
 * Generates combinations based on organizational naming conventions
-
-
-
-
 2. Performance Optimization
 
 
@@ -95,10 +87,6 @@ altdns -h
 * Configurable thread count for system resource management
 
 * Efficient DNS resolution handling
-
-
-
-
 3. Flexible Input/Output
 
 
@@ -107,10 +95,6 @@ altdns -h
 * Supports various output formats
 
 * Can be integrated into larger automation workflows
-
-
-
-
 ## Practical Usage
 
 
@@ -135,10 +119,6 @@ Where:
 * `-o`: Output file for results
 
 * `-w`: Word list file for generating permutations
-
-
-
-
 Advanced Usage Examples
 
 
@@ -178,10 +158,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Add organization-specific terminology
 
 * Consider industry-standard naming conventions
-
-
-
-
 2. Resource Management
 
 
@@ -190,10 +166,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Monitor system resources during the execution
 
 * Use appropriate timeouts for DNS resolution
-
-
-
-
 3. Output Handling
 
 
@@ -202,10 +174,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Verify discovered subdomains
 
 * Document findings systematically
-
-
-
-
 ## Use Cases and Applications
 
 
@@ -218,10 +186,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Identifying forgotten test servers
 
 * Finding Shadow IT infrastructure
-
-
-
-
 2. Bug Bounty Hunting
 
 
@@ -230,10 +194,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Finding unique attack vectors
 
 * Identifying misconfigurations
-
-
-
-
 3. Infrastructure Auditing
 
 
@@ -242,10 +202,6 @@ subfinder -d example.com | altdns -w words.txt -o output.txt```
 * Identifying unauthorized subdomains
 
 * Validating DNS configurations
-
-
-
-
 ## Limitations and Considerations
 
 
@@ -258,10 +214,6 @@ Technical Limitations
 * False positives are possible
 
 * Resource intensive for large-scale scans
-
-
-
-
 Legal Considerations
 
 
@@ -272,10 +224,6 @@ Legal Considerations
 * Respect scope boundaries
 
 * Adhere to applicable regulations
-
-
-
-
 ## Integration with Security Workflows
 
 
@@ -316,10 +264,6 @@ AltDNS can be effectively integrated into larger security testing workflows:
 * Generating reports
 
 * Maintaining audit trails
-
-
-
-
 ## Conclusion
 
 

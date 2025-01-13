@@ -38,10 +38,6 @@ The shortcomings of this centralized model are clear:
 * **Lack of user control**: In most systems, individuals have little to no control over how their personal data is collected, stored, and shared. Users must trust organizations to handle their data responsibly, but they often have limited visibility into how their information is being used.
 
 * **Identity theft**: Identity theft is a growing problem worldwide. Once a hacker gains access to someone’s personal information, they can assume that person’s identity to open fraudulent accounts, apply for loans, or even commit crimes.
-
-
-
-
 Blockchain technology offers a decentralized, secure, and user-centric approach to digital identity management that addresses many of these issues.
 
 

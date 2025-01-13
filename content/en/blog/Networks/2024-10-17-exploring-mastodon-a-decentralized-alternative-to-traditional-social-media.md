@@ -46,10 +46,6 @@ Key Features of Mastodon:
 * **Open-source**: Mastodon’s code is open-source, meaning anyone can inspect, modify, or contribute to its development.
 
 * **Greater privacy**: Users have more control over their data and privacy settings on Mastodon.
-
-
-
-
 ## How Does Mastodon Work?
 
 
@@ -194,10 +190,6 @@ Getting started on Mastodon is relatively simple:
 * **Follow Users**: Start following users both within your instance and from other instances to build your feed.
 
 * **Explore and Engage**: Interact with posts by tooting, boosting, and replying. Engage with your instance’s community and discover new people through Mastodon’s federated network.
-
-
-
-
 ## Conclusion
 
 

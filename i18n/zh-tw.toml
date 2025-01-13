@@ -26,8 +26,6 @@ other = "保留所有權利"
 
 [footer_privacy_policy]
 other = "隱私政策"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "作者："

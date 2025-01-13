@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 580
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 58, *"Bob Optimizes Smart Manufacturing with Kubernetes!"*. In this chapter, Bob takes on the challenge of modernizing manufacturing operations using **Kubernetes**, integrating IoT devices, robotics, and AI to enable **smart factories**.

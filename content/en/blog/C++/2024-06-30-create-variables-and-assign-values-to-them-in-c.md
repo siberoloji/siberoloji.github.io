@@ -23,10 +23,6 @@ In C++, you can create variables and assign values to them in the following way:
 *  Declare a variable by specifying its type followed by the variable name. For example, `int myVariable;` declares a variable named `myVariable` of type `int`.
 
 * Assign a value to the variable using the assignment operator `=`. For example, `myVariable = 5;` assigns the value `5` to `myVariable`.
-
-
-
-
 Here is an example of creating different types of variables and assigning values to them:
 
 

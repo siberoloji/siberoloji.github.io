@@ -68,8 +68,6 @@ msf > wmap_sites -h
  -a [url] Add site (vhost,url)
  -l List all available sites
  -s [id] Display site structure (vhost,url|ids) (level)
-
-
 msf > wmap_sites -a <a href="http://172.16.194.172/">http://172.16.194.172</a>
 > Site created.
 msf > wmap_sites -l
@@ -93,8 +91,6 @@ msf > wmap_targets -h
  -d [ids] Define target sites (id1, id2, id3 ...)
  -c Clean target sites list
  -l List all target sites
-
-
 msf > wmap_targets -t <a href="http://172.16.194.172/mutillidae/index.php">http://172.16.194.172/mutillidae/index.php</a>
 ```
 
@@ -170,13 +166,9 @@ msf > wmap_run -e
 > 172.16.194.172:80 Apache/2.2.8 (Ubuntu) DAV/2 ( Powered by PHP/5.2.4-2ubuntu5.10 )
 > Module auxiliary/scanner/http/open_proxy
 > Module auxiliary/scanner/http/robots_txt
-
-
 ..snip...
 ..snip...
 ..snip...
-
-
 > Module auxiliary/scanner/http/soap_xml
 > Path: /
 >Server 172.16.194.172:80 returned HTTP 404 for /. Use a different one.

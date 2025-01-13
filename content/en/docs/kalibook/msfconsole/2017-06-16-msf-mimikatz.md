@@ -215,8 +215,6 @@ list - Affiche les handles du système (pour le moment juste les processus et to
 processStop - Essaye de stopper un ou plusieurs processus en utilisant d'autres handles
 tokenImpersonate - Essaye d'impersonaliser un token en utilisant d'autres handles
 nullAcl - Positionne une ACL null sur des Handles
-
-
 meterpreter > mimikatz_command -f handle::list
 ...snip...
  760 lsass.exe -> 1004 Token NT AUTHORITY ETWORK SERVICE

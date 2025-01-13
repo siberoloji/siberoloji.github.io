@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SSHPass
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 190
 
 keywords:
   - AlmaLinux
   - SSHPass
-
-
 featured_image: /images/almalinux.webp
 url: sshpass-almalinux
 ---

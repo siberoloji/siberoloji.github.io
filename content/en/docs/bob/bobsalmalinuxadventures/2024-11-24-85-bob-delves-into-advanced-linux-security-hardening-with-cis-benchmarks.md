@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 850
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to implement **advanced security hardening** on AlmaLinux using the **CIS (Center for Internet Security) Benchmarks**. These benchmarks provide detailed recommendations to secure Linux systems against modern threats while maintaining usability.

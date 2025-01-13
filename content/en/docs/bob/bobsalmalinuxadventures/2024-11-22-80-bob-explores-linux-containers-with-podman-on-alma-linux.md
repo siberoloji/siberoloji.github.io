@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 800
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to dive into **Linux containers** using **Podman**, a daemonless container engine built for running, managing, and building containers. Containers allow for lightweight, portable applications, and Bob knew mastering them would future-proof his sysadmin skills.

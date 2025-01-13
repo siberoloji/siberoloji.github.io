@@ -16,8 +16,6 @@ weight: 30
 translationKey: basic-metasploit-framework-commands
 linkTitle: Temel Komutlar
 ---
-
-
 Bu yazımızda, Metasploit Framework içerisinde kullanılan temel komutları inceleyeceğiz. Komutların, başlangıçta çok fazla ve karışık olduğunu düşünebilirsiniz ancak kendinize zaman tanımanızı tavsiye ediyorum. Kullandıkça aşina olacak ve artık otomatik olarak yazar hale geleceksiniz. Komutları yazarken, komutun bir kaç harfini yazıp TAB tuşu ile gerisini otomatik tamamlayabilirsiniz. msfconsole içerisinde komut ve klasör yolu tamamlama, aynen Linux komut satırındaki gibi çalışır.
 
 ## back

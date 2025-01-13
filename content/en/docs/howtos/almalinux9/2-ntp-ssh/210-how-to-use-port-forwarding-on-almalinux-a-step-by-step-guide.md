@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Port Forwarding
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 210
 
 keywords:
   - AlmaLinux
   - Port Forwarding
-
-
 featured_image: /images/almalinux.webp
 url: port-forwarding-almalinux
 ---

@@ -25,10 +25,6 @@ In today’s data-driven world, the ability to search, analyze, and extract insi
 
 
 From its origins as part of the Elastic Stack (ELK Stack), Elasticsearch has grown to become a central tool for developers, data engineers, and IT professionals alike. This blog will dive deep into what Elasticsearch is, how it works, its features, and why it has become such an integral part of modern data infrastructures.
-
-
-
-
 #### What is Elasticsearch?
 
 
@@ -42,10 +38,6 @@ At its core, Elasticsearch is designed to index and search large volumes of data
 
 
 Originally created in 2010 by Shay Banon, Elasticsearch has become one of the most popular search engines today, trusted by thousands of organizations across various industries.
-
-
-
-
 #### Key Features of Elasticsearch
 
 

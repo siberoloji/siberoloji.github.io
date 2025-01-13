@@ -45,10 +45,6 @@ Fedora's Key Features
 * **Open Source Philosophy**: Fedora only includes open-source software in its default repositories, aligning with its commitment to open-source principles.
 
 * **Regular Release Cycle**: Fedora releases a new version every six months, providing consistent updates and improvements.
-
-
-
-
 Now that we have a general idea of what Fedora is, let's examine whether it is suited for beginners.
 
 
@@ -203,10 +199,6 @@ If you’ve decided to take the plunge into Fedora, here are a few tips to make 
 * **Learn Basic Terminal Commands**: While Fedora can be used without relying heavily on the command line, learning a few basic terminal commands will help you troubleshoot issues and manage your system more effectively.
 
 * **Use Fedora Documentation**: Fedora has excellent documentation. The Fedora Project’s official guides cover installation, basic system usage, and advanced topics, which are helpful for both beginners and experienced users.
-
-
-
-
 ## Conclusion: Is Fedora Good for Beginners?
 
 

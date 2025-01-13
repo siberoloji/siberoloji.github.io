@@ -53,10 +53,6 @@ Key milestones in PAL history include:
 * 1985: Introduction of the 22V10, one of the most popular PAL devices
 
 * Late 1980s: Development of more complex PLDs, leading to CPLDs and FPGAs
-
-
-
-
 PALs quickly gained popularity due to their flexibility and ease of use compared to discrete logic components, becoming a staple in electronic design throughout the 1980s and early 1990s.
 
 
@@ -79,10 +75,6 @@ A typical PAL consists of two main components:
 * **AND-plane**: A programmable array of AND gates that receives inputs and creates product terms.
 
 * **OR-plane**: A fixed array of OR gates that combines the product terms to create outputs.
-
-
-
-
 The AND-plane is programmable, allowing designers to specify which inputs contribute to each product term. The OR-plane, being fixed, simply combines these product terms to produce the final outputs.
 
 
@@ -99,10 +91,6 @@ PALs are typically programmed using the following steps:
 * **Translation**: The design is translated into a fusemap or a set of equations.
 
 * **Programming**: The fusemap is burned into the PAL using a PAL programmer device.
-
-
-
-
 Programming a PAL involves selectively "blowing" fuses in the AND-plane to create the desired connections. Once programmed, a PAL becomes a custom logic device tailored to the specific application.
 
 
@@ -121,10 +109,6 @@ Several types of PALs have been developed to cater to different needs:
 * **Complex PALs**: Offer more inputs, outputs, and product terms (e.g., 22V10).
 
 * **Generic Array Logic (GAL)**: Erasable and reprogrammable version of PALs.
-
-
-
-
 Each type offers different levels of complexity and functionality, allowing designers to choose the most appropriate device for their specific needs.
 
 
@@ -149,10 +133,6 @@ PALs have found applications in various fields of electronics, including:
 * **Industrial Control**: Creating specialized control circuits for machinery and processes.
 
 * **Consumer Electronics**: Implementing custom functions in TVs, DVD players, and other devices.
-
-
-
-
 The versatility of PALs makes them suitable for a wide range of applications where custom logic is required.
 
 
@@ -177,10 +157,6 @@ Advantages:
 * **Simplified Inventory**: One PAL can replace multiple discrete logic ICs.
 
 * **Improved Reliability**: Fewer components and connections lead to higher reliability.
-
-
-
-
 Limitations:
 
 
@@ -191,10 +167,6 @@ Limitations:
 * **Speed**: Generally slower than custom ASICs for the same function.
 
 * **Power Consumption**: May consume more power than equivalent custom logic.
-
-
-
-
 ## Programming PALs
 
 
@@ -211,10 +183,6 @@ Programming PALs involves several steps and tools:
 * **Fuse Map Generation**: A fuse map is created, specifying which fuses need to be blown.
 
 * **Device Programming**: A PAL programmer device is used to physically program the PAL chip.
-
-
-
-
 Modern PAL programming often uses software tools that integrate these steps, simplifying the process for designers.
 
 
@@ -245,10 +213,6 @@ Key features of CPLDs:
 * Faster speed compared to basic PALs
 
 * Non-volatile configuration (retains programming when powered off)
-
-
-
-
 Field-Programmable Gate Arrays (FPGAs)
 
 
@@ -263,10 +227,6 @@ FPGAs represent a further evolution, offering even greater flexibility and capac
 * Often include specialized blocks (e.g., DSP blocks, memory blocks)
 
 * Suitable for implementing entire systems-on-chip
-
-
-
-
 While CPLDs and FPGAs have largely supplanted PALs in new designs, the principles behind PALs continue to influence modern programmable logic devices.
 
 
@@ -285,10 +245,6 @@ Although PALs are less common in new designs today, their impact on the field of
 * **Education**: PALs remain an excellent tool for teaching digital logic design principles.
 
 * **Ongoing Use**: PALs are still used in certain applications, particularly in maintaining legacy systems.
-
-
-
-
 ## Conclusion
 
 

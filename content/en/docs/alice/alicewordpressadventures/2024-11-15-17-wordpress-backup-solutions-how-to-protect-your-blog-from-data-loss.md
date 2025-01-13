@@ -10,15 +10,11 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 170
 
 keywords: ""
-
-
 
 featured_image: /images/alice-taking-picture.webp
 url: wordpress-backup-solutions-protect-blog-data-loss

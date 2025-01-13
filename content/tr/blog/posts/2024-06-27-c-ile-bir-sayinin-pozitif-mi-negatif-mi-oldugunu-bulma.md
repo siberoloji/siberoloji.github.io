@@ -14,11 +14,7 @@ categories:
 tags:
     - c++
 ---
-
-
 Bu örneğimizde, klavyeden girilen sayının pozitif, negatif veya sıfır mı olduğunu if- else if kullanımı ile kontrol ediyoruz.
-
-
 ```bash
 #include <iostream>
 using namespace std;

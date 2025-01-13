@@ -54,10 +54,6 @@ The very nature of IoT introduces unique security challenges that make these dev
 * **Complex Attack Surface**: IoT devices often operate in a complex and distributed environment. From smart thermostats in homes to industrial sensors in factories, these devices are often spread across various physical locations, making them difficult to monitor and secure.
 
 * **Interconnectivity**: IoT devices rarely operate in isolation. They communicate with other devices and systems, making the network more vulnerable. A breach in one device could serve as an entry point for attackers to compromise the entire network.
-
-
-
-
 Common Threats Facing IoT Networks
 
 
@@ -193,10 +189,6 @@ Many IoT devices come with additional features and services that may not be need
 * **Turn Off Unused Protocols**: Disable any unnecessary communication protocols (such as Telnet or FTP) to minimize the risk of exploitation.
 
 * **Limit Device Functions**: Configure IoT devices to perform only the tasks they are intended for. For example, a smart camera may not need internet access if it only needs to stream video locally.
-
-
-
-
 Conclusion
 
 

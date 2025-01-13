@@ -34,10 +34,6 @@ The first step in analyzing public health databases is to collect and prepare th
 * **Data Cleaning and Standardization:** Data cleaning involves identifying and correcting errors, inconsistencies, and missing values. Standardization ensures that data from different sources is consistent and comparable.
 
 * **Variable Creation:** Creating appropriate variables is essential for analyzing demographic risks. This may involve combining multiple variables to create new variables, such as socioeconomic status or health outcomes.
-
-
-
-
 **Descriptive Statistics**
 
 
@@ -50,10 +46,6 @@ Descriptive statistics can be used to summarize the characteristics of the data 
 * **Measures of Central Tendency:** Measures of central tendency, such as the mean, median, and mode, provide information about the typical value of a variable.
 
 * **Measures of Dispersion:** Measures of dispersion, such as the standard deviation and variance, provide information about the variability of a variable.
-
-
-
-
 **Exploratory Data Analysis**
 
 
@@ -66,10 +58,6 @@ Exploratory data analysis (EDA) can be used to identify relationships between va
 * **Regression Analysis:** Regression analysis can be used to model the relationship between a dependent variable and one or more independent variables.
 
 * **Data Visualization:** Data visualization techniques, such as charts and graphs, can help to identify patterns and trends in the data.
-
-
-
-
 **Risk Assessment**
 
 
@@ -82,10 +70,6 @@ Once the data has been analyzed, public health officials can assess the demograp
 * **Risk Quantification:** Risk quantification involves estimating the magnitude of health risks for different populations. This may involve calculating mortality rates, morbidity rates, or other relevant metrics.
 
 * **Prioritization of Interventions:** Prioritizing interventions involves identifying the most effective and efficient strategies for addressing demographic risks. This may involve considering factors such as the severity of the risk, the feasibility of interventions, and the potential benefits and costs.
-
-
-
-
 **Case Studies**
 
 

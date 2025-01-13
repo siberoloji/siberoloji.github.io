@@ -16,23 +16,13 @@ tags:
     - 'linux nasıl'
     - netstat
 ---
-
-
 Netstat (network statistics) komut satırından ağ bağlantılarını kontrol etmeye yarayan yardımcı bir programdır. Gelen ve giden bağlantılarla birlikte rotalama tablolarını da görmemizi sağlar. Ağ kartlarına ait istatistiklerle beraber sisteminizdeki açık Portları kontrol etmenize yardımcı olur.
-
-
 
 Aşağıda, `netstat` komutuna ait 20 farklı örnek gösterilmiştir. `netstat -h` komutuyla yardım dokümanını görüntüleyebilirsiniz. CentOS vb. dağıtımlarda `net-tools` paketi kullanım dışı bırakıldığından `netstat` programını bulamayabilirsiniz. `netstat` yerine `ss` komutunu da kullanabilirsiniz.
 
-
-
 Şimdi, sırayla örneklere bakalım.
 
-
-
 ## 1. TCP ve UDP Protokolünde Dinleme Yapan Tüm Portlar
-
-
 ```bash
 netstat -a | more
 
@@ -53,11 +43,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     17161  /tmp/orbit-root/linc-79
 unix  2      [ ACC ]     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 ```
 
-
-
 ## 2. Sadece TCP Portları Listeleme
-
-
 ```bash
 netstat -at
 
@@ -70,11 +56,7 @@ tcp        0     52 192.168.0.2:ssh        192.168.0.1:egs    ESTABLISHED
 tcp        1      0 192.168.0.2:59292      <a href="http://www.gov.com:http/">www.gov.com:http</a>   CLOSE_WAIT
 ```
 
-
-
 ## 3. UDP Portları Listeleme
-
-
 ```bash
 netstat -au
 
@@ -85,11 +67,7 @@ udp        0      0 *****:npmp-local         *****:*****
 udp        0      0 *****:mdns               *****:*****
 ```
 
-
-
 ## 4. Dinleme Yapan Tüm Bağlantıları Listeleme
-
-
 ```bash
 netstat -l
 
@@ -108,11 +86,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     17161  /tmp/orbit-root/linc-79
 unix  2      [ ACC ]     STREAM     LISTENING     15938  /tmp/orbit-root/linc-74b-0-415135cb6aeab
 ```
 
-
-
 ## 5. TCP Dinleme Yapan Portları Listeleme
-
-
 ```bash
 netstat -lt
 
@@ -130,11 +104,7 @@ tcp        0      0 *****:ssh                       *****:*****              LIS
 tcp        0      0 *****:https                     *****:*****              LISTEN
 ```
 
-
-
 ## 6. UDP Dinleme Yapan Portları Listeleme
-
-
 ```bash
 netstat -lu
 
@@ -151,11 +121,7 @@ udp        0      0 *****:60222                     *****:*****
 udp        0      0 *****:mdns                      *****:*****
 ```
 
-
-
 ## 7. UNIX Protokolünde Dinleme Yapan Portları Listeleme
-
-
 ```bash
 netstat -lx
 
@@ -177,11 +143,7 @@ unix  2      [ ACC ]     STREAM     LISTENING     5517   /var/run/acpid.socket
 unix  2      [ ACC ]     STREAM     LISTENING     5531   /var/run/pcscd.comm
 ```
 
-
-
 ## 8. İstatistikleri Protokole Göre Görüntüleme
-
-
 ```bash
 netstat -s
 
@@ -217,11 +179,7 @@ Udp:
 281 packets sent
 ```
 
-
-
 ## 9. TCP Protokol İstatistiklerini Gösterme
-
-
 ```bash
 netstat -st
 
@@ -238,11 +196,7 @@ Tcp:
 17580 resets sent
 ```
 
-
-
 ## 10. UDP Protokol İstatistiklerini Gösterme
-
-
 ```bash
 netstat -su
 
@@ -253,11 +207,7 @@ Udp:
 2968722 packets sent
 ```
 
-
-
 ## 11. PID Numarasıyla Portu Kullanan Servisi Görüntüleme
-
-
 ```bash
 netstat -tp
 
@@ -267,11 +217,7 @@ tcp        0      0 192.168.0.2:ssh       192.168.0.1:egs    ESTABLISHED 2179/ss
 tcp        1      0 192.168.0.2:59292     <a href="http://www.gov.com:http/">www.gov.com:http</a>   CLOSE_WAIT  1939/clock-applet
 ```
 
-
-
 ## 12. Promiscuous Mod Görüntüleme
-
-
 ```bash
 netstat -ac 5 | grep tcp
 
@@ -289,11 +235,7 @@ tcp        0      0 localhost:smtp              *****:*****                     
 tcp        0      0 *****:59482                     *****:*****                         LISTEN
 ```
 
-
-
 ## 13. Kernel IP Rotalamayı Görüntüleme
-
-
 ```bash
 netstat -r
 
@@ -304,11 +246,7 @@ link-local      *****               255.255.0.0     U         0 0          0 eth
 default         192.168.0.1     0.0.0.0         UG        0 0          0 eth0
 ```
 
-
-
 ## 14. Ağ Kartın Veri Aktarımlarını Görüntüleme
-
-
 ```bash
 netstat -i
 Kernel Interface table
@@ -317,11 +255,7 @@ eth0       1500   0     4459      0      0      0     4057      0      0      0 
 lo        16436   0        8      0      0      0        8      0      0      0 LRU
 ```
 
-
-
 ## 15. Kernel Ağ Arayüz Tablosunu Görüntüleme
-
-
 ```bash
 netstat -ie
 
@@ -345,11 +279,7 @@ collisions:0 txqueuelen:0
 RX bytes:480 (480.0 b)  TX bytes:480 (480.0 b)
 ```
 
-
-
 ## 16. IPv4 ve IPv6 Bilgilerini Görüntüleme
-
-
 ```bash
 netstat -g
 
@@ -365,11 +295,7 @@ eth0            1      ff02::1:ffb4:da21
 eth0            1      ff02::1
 ```
 
-
-
 ## 17. Netstat Bilgilerini Sürekli Görüntüleme
-
-
 ```bash
 netstat -c
 
@@ -385,11 +311,7 @@ tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg
 tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg007.shr.prod.s:36998 TIME_WAIT
 ```
 
-
-
 ## 18. Desteklenmeyen ve Yapılandırılmamış Adres Türleri
-
-
 ```bash
 netstat --verbose
 
@@ -399,11 +321,7 @@ netstat: no support for** `AF X25' on this system.
 netstat: no support for `AF NETROM' on this system.
 ```
 
-
-
 ## 19. Dinleme Yapan Programları Listelemek
-
-
 ```bash
 netstat -ap | grep http
 
@@ -418,11 +336,7 @@ tcp        0      0 <a href="http://tecmint.com/">tecmint.com</a>:http   sg2nlhg
 unix  2      [ ]         STREAM     CONNECTED     88586726 10394/httpd
 ```
 
-
-
 ## 20. Sistem Özetini ve Açık UDP / TCP Portları Görme
-
-
 ```bash
 netstat -tulpn
 

@@ -46,10 +46,6 @@ There are several compelling reasons to use Verilog in digital design:
 * **Standardization**: As an IEEE standard, Verilog is widely supported by various tools and platforms in the industry.
 
 * **Modularity**: Verilog supports hierarchical design, allowing complex systems to be broken down into manageable modules.
-
-
-
-
 Now that we understand the importance of Verilog, let's dive into its basic concepts and syntax.
 
 
@@ -90,10 +86,6 @@ Verilog supports several data types to represent different kinds of signals and 
 * **Real**: A double-precision floating-point number.
 
 * **Time**: Used for simulation timekeeping.
-
-
-
-
 Here's an example of how to declare these data types:
 
 
@@ -121,10 +113,6 @@ Verilog uses a four-value system to represent logic levels:
 * x: Unknown logic value
 
 * z: High impedance state
-
-
-
-
 Operators
 
 
@@ -147,10 +135,6 @@ Verilog supports a wide range of operators, including:
 * Concatenation operator: {}
 
 * Conditional operator: ?:
-
-
-
-
 Behavioral Modeling
 
 
@@ -307,10 +291,6 @@ While we've covered the basics, Verilog offers many more advanced features for c
 * **Interfaces**: Simplify the connections between modules in complex designs.
 
 * **Assertions**: Help in verifying design properties and catching bugs early in the design process.
-
-
-
-
 ## Conclusion
 
 

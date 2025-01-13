@@ -17,18 +17,10 @@ tags:
     - dp
     - sp
 ---
-
-
 ## dp - Mesafeler için kullanılır
-
-
 
 Kullanıcı arayüzündeki kenar boşlukları ve diğer mesafeler için kullanılan santimetreye benzer bir ölçü birimidir. Android, bu değeri her cihaz için uygun sayıda gerçek piksele çevirir. Temel olarak, 1dp yaklaşık 1/160 inçtir, ancak bazı cihazlar için daha büyük veya daha küçük olabilir.
 
-
-
 ## sp - Yazı tipi boyutlandırma için kullanılır
-
-
 
 Tıpkı dp'nin ekrandaki mesafeler için bir ölçü birimi olması gibi, sp de yazı tipi boyutu için bir ölçü birimidir. Android uygulamalarındaki kullanıcı arabirimi öğeleri, daha önce düzen için kullandığınız yoğunluktan bağımsız pikseller (dp) ve metnin boyutunu ayarlarken kullanılan ölçeklenebilir pikseller (sp) olmak üzere iki farklı ölçü birimi kullanır. Varsayılan olarak sp, dp ile aynı boyuttadır, ancak kullanıcının tercih ettiği metin boyutuna göre yeniden boyutlandırılır.

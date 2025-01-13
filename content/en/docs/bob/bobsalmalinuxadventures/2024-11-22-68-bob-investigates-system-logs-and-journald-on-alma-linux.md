@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 680
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 After mastering Systemd, Bob turned his attention to **system logs**. He knew logs were a vital tool for troubleshooting and auditing, and mastering them would make him a more effective administrator.

@@ -22,8 +22,6 @@ There should be whitespace between paragraphs. There should be whitespace betwee
 
 This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.  Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
 
-
-
 Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
 
 On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.
@@ -122,8 +120,6 @@ Birthplace
 
 Color
 : Green
-
-
 ----------------
 
 Tables should have bold headings and alternating shaded rows.
@@ -203,8 +199,6 @@ Large images should always scale down and fit in the content container.
 {{< alert type="success" >}}This is a successful alert.{{< /alert >}}
 {{< alert type="warning" >}}This is a warning!{{< /alert >}}
 {{< alert type="warning" title="Warning!" >}}This is a warning with a title!{{< /alert >}}
-
-
 ## Sizing
 
 Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
@@ -236,8 +230,6 @@ Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta ch
 ### Used RAM
 
 Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
-
-
 
 ```
 This is the final element on the page and there should be no margin below this.

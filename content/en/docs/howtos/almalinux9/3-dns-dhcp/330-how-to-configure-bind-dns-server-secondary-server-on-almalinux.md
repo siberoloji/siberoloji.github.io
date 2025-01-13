@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Configure DNS Secondary Server
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 330
 

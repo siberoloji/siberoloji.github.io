@@ -42,8 +42,6 @@ Açık IP adresleri, açık portlar veya servis afişleri, saldırganların bir 
 Saldırganlar, yazılım güvenlik açıklarını belirlemek ve yama uygulanmamış sistemleri istismar etmek için sızdırılan bilgileri kullanabilir. Saldırganlar güvenlik açığı veritabanlarına erişebiliyorsa, güncel olmayan bir yazılım sürümü gibi küçük ayrıntılar bile istismar edilebilir.
  	* **Saldırı İçin Gereken Zaman ve Kaynaklar Azalır**
 Saldırganlar hedefin güvenlik ortamı hakkında ayrıntılı bilgileri erken bir aşamada elde ederse, uzun deneme-yanılma süreçlerinden kaçınabilir, saldırıları daha hızlı ve etkili hale getirebilirler.
-
-
 ---
 
 **Keşif Sırasında Bilgi Sızıntısının Yaygın Kaynakları**
@@ -107,8 +105,6 @@ Kamusal kod depoları, kimlik bilgileri gibi hassas bilgilerin ifşa edilmediği
 * **Nmap** : BT ekiplerinin ağlarını bir saldırganın bakış açısından görmelerine, açık portları ve servisleri belirlemelerine yardımcı olabilen bir ağ tarama aracıdır.
 * **SpiderFoot** : Birden fazla kaynaktan veri toplayarak, alan adları, IP'ler ve daha fazlasıyla ilgili açığa çıkmış bilgileri ortaya çıkaran bir OSINT aracıdır.
 * **Maltego** : Bir kuruluşun dijital ayak izini haritalandırır ve veri noktaları arasındaki ilişkileri görselleştirerek hassas verilerin nereye sızabileceğini belirlemeye yardımcı olur.
-
-
 ---
 
 **Çalışan Eğitimi: Bilgi Sızıntısını Önlemede Önemli Bir Faktör**
@@ -118,8 +114,6 @@ Kamusal kod depoları, kimlik bilgileri gibi hassas bilgilerin ifşa edilmediği
 * **Veri İşleme Politikaları** : Personeli, hassas bilgilerin herkese açık veya güvenli olmayan kanallarda paylaşılmasından kaçınmak da dahil olmak üzere, verileri düzgün bir şekilde yönetme ve sınıflandırma konusunda eğitin.
 * **Belge ve Meta Veri Farkındalığı** : Çalışanlar, dosyaları harici olarak paylaşmadan önce meta verilerin nasıl kaldırılacağını bilmelidir.
 * **Sosyal Medya Güvenliği** : Çalışanlarınızı, özellikle dikkat çekebilecek belirli rolleri veya projeleri ortaya koyan iş bilgilerini sosyal medyada paylaşma konusunda dikkatli olmaları konusunda teşvik edin.
-
-
 ---
 
 **Keşif Sırasında Bilgi Sızıntısını Önlemedeki Zorluklar**
@@ -128,8 +122,6 @@ En iyi çabalara rağmen, bilgi sızıntısını tamamen önlemek zor olabilir. 
  * **İnsan Hatası** : Çalışanlar eğitim almış olsalar bile, gözetimsizlik nedeniyle hassas bilgileri istemeden paylaşabilirler.
  * **Hızla Gelişen Saldırı Teknikleri** : Saldırganlar yeni yöntemler geliştirdikçe, geleneksel güvenlik önlemleri bu teknikleri tespit etmede ve engellemede geride kalabilir.
  * **Sürekli İzleme Gereksinimleri** : Bilgi sızıntısına karşı güvenlik sağlamak, birçok kuruluş için kaynak yoğun olabilen sürekli izleme ve denetim gerektirir.
-
-
 ---
 
 **Sonuç**

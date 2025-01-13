@@ -324,8 +324,6 @@ msf > nessus_scan_new
 > Usage:
 >        nessus_scan_new policy id scan name targets
 >        use nessus_policy_list to list all available policies
-
-
 msf > nessus_scan_new 1 pwnage 192.168.1.161
 > Creating scan from policy number 1, called "pwnage" and scanning 192.168.1.161
 > Scan started.  uid is 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
@@ -343,8 +341,6 @@ msf > nessus_scan_status
 Scan ID Name Owner Started Status Current Hosts Total Hosts
 ------- ---- ----- ------- ------ ------------- -----------
 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f pwnage dook 19:39 Sep 27 2010 running 0 1
-
-
 >You can:
 [+] Import Nessus report to database : nessus_report_get reportid
 [+] Pause a nessus scan : nessus_scan_pause scanid
@@ -370,14 +366,10 @@ ID Name Status Date
 
 >You can:
 > Get a list of hosts from the report: nessus_report_hosts report id
-
-
 msf > nessus_report_get
 >Usage:
 > nessus_report_get report id
 > use nessus_report_list to list all available reports for **importing
-
-
 msf > nessus_report_get 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 > importing 9d337e9b-82c7-89a1-a194-4ef154b82f624de2444e6ad18a1f
 msf >

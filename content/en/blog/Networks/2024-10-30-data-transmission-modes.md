@@ -33,10 +33,6 @@ Data transmission modes refer to the directionality of data flow between two con
 * **Half-Duplex Mode**
 
 * **Full-Duplex Mode**
-
-
-
-
 Simplex Mode
 
 
@@ -53,10 +49,6 @@ In **Simplex Mode**, data transmission occurs in one direction only. This means 
 * **Bandwidth Usage:** Utilizes maximum bandwidth since all available capacity is dedicated to one direction.
 
 * **Error Handling:** Limited error checking since there is no return path for acknowledgments.
-
-
-
-
 **Examples:**
 
 
@@ -65,30 +57,18 @@ In **Simplex Mode**, data transmission occurs in one direction only. This means 
 * **Keyboards:** Data flows from the keyboard to the computer, with no need for the keyboard to receive any data back.
 
 * **Sensors:** Devices like temperature sensors that send readings to a central monitoring system.
-
-
-
-
 **Advantages:**
 
 
 * High efficiency in scenarios where only one-way communication is needed.
 
 * Minimal complexity in design and implementation.
-
-
-
-
 **Disadvantages:**
 
 
 * Lack of feedback can lead to challenges in error detection and correction.
 
 * Not suitable for interactive applications where two-way communication is essential.
-
-
-
-
 Half-Duplex Mode
 
 
@@ -105,10 +85,6 @@ Half-Duplex Mode
 * **Bandwidth Usage:** More efficient than simplex as it allows for two-way communication without requiring additional channels.
 
 * **Error Handling:** Improved error detection capabilities since both devices can communicate back and forth.
-
-
-
-
 **Examples:**
 
 
@@ -117,30 +93,18 @@ Half-Duplex Mode
 * **CB Radios:** Similar to walkie-talkies, where users communicate in turns.
 
 * **Fax Machines:** Sending documents in one direction at a time.
-
-
-
-
 **Advantages:**
 
 
 * Allows for two-way communication without needing separate channels.
 
 * More efficient use of bandwidth compared to simplex mode.
-
-
-
-
 **Disadvantages:**
 
 
 * Slower communication as devices must wait for their turn to transmit.
 
 * Potential delays in communication can occur if multiple messages are queued.
-
-
-
-
 Full-Duplex Mode
 
 
@@ -157,10 +121,6 @@ In **Full-Duplex Mode**, data can be transmitted in both directions simultaneous
 * **Bandwidth Usage:** Requires more bandwidth since both channels are utilized at once.
 
 * **Error Handling:** Enhanced error detection due to continuous feedback between devices.
-
-
-
-
 **Examples:**
 
 
@@ -169,30 +129,18 @@ In **Full-Duplex Mode**, data can be transmitted in both directions simultaneous
 * **Video Conferencing Systems:** Participants can interact without waiting for turns.
 
 * **Modern Local Area Networks (LANs):** Devices communicate simultaneously over a shared medium.
-
-
-
-
 **Advantages:**
 
 
 * Fast and efficient communication as there are no delays between responses.
 
 * Ideal for applications requiring real-time interaction, such as voice calls or online gaming.
-
-
-
-
 **Disadvantages:**
 
 
 * Increased complexity in design and implementation due to simultaneous data handling.
 
 * Requires more sophisticated hardware to manage concurrent transmissions effectively.
-
-
-
-
 ## Comparison Table of Transmission Modes
 
 
@@ -213,10 +161,6 @@ When selecting a data transmission mode, several factors should be considered:
 * **Network Infrastructure:** Assess whether existing hardware supports full-duplex capabilities or if half-duplex would be more feasible.
 
 * **Cost Considerations:** Evaluate budget constraints as full-duplex systems may require more investment in technology and infrastructure.
-
-
-
-
 ## Synchronization Types
 
 

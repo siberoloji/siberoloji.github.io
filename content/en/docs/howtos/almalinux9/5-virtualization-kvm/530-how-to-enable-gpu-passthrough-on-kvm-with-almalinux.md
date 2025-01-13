@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Enable GPU Passthrough on KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 530
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: enable-gpu-passthrough-kvm-almalinux
 ---

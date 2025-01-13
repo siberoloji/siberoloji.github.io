@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Apache HTTP Server (httpd) is one of the most versatile and widely used web servers for hosting websites and applications. One of its most powerful features is **virtual hosting**, which allows a single Apache server to host multiple websites or domains from the same machine. This is especially useful for businesses, developers, and hobbyists managing multiple projects.

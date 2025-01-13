@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server View Statement
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 300
 

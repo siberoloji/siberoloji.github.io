@@ -48,10 +48,6 @@ Key Characteristics of PLAs:
 * **Customizable Logic**: Designers can implement various Boolean functions within the same PLA by configuring the connections between the input lines, AND gates, and OR gates.
 
 * **Efficiency**: PLAs allow for the implementation of multiple logic functions within a single device, reducing the need for large, complex circuits made up of many individual gates.
-
-
-
-
 Structure of a PLA
 
 
@@ -64,10 +60,6 @@ To understand how a PLA works, it’s essential to dive into its internal struct
 * **AND Plane**: This is the first programmable layer of the PLA. In this layer, the input lines are connected to an array of AND gates. Each AND gate performs the logical AND operation on one or more inputs or their complements, allowing for the creation of product terms.
 
 * **OR Plane**: The output of the AND gates is fed into the programmable OR plane, where these product terms are combined using OR gates to form the final output. This OR plane allows for the creation of a sum-of-products (SOP) expression for the desired Boolean logic function.
-
-
-
-
 The general operation of a PLA can be represented as follows:
 
 
@@ -91,30 +83,18 @@ To illustrate how a PLA works, let’s consider an example where we want to impl
 * **F1** = A'B + AB'
 
 * **F2** = A'B + AB + AB'
-
-
-
-
 In a PLA, the first step is to define the product terms. In this case, the product terms would be:
 
 
 * A'B
 
 * AB'
-
-
-
-
 The next step is to configure the AND plane to generate these product terms, and then the OR plane combines these product terms to form the final outputs for **F1** and **F2**.
 
 
 * For **F1**, we can create the SOP expression by OR-ing A'B and AB'.
 
 * For **F2**, we can create the SOP expression by OR-ing A'B and AB.
-
-
-
-
 This illustrates the flexibility of PLAs: you can implement multiple Boolean functions with the same AND terms, saving space and increasing efficiency.
 
 

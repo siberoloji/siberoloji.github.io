@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 900
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to master **database management** on AlmaLinux. From setting up relational databases like MySQL and PostgreSQL to managing backups, scaling, and tuning performance, he aimed to build robust and efficient database systems.

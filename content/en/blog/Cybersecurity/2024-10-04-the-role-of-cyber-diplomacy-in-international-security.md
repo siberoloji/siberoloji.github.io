@@ -37,10 +37,6 @@ Cyber diplomacy, also known as digital diplomacy, refers to the use of diplomati
 * Fostering international cooperation on digital economy issues
 
 * Advocating for an open, secure, and interoperable internet
-
-
-
-
 Historical Context
 
 

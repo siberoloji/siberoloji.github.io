@@ -50,10 +50,6 @@ The primary operations in Boolean algebra include:
 * **NOR (↑)**: The result is true only if both operands are false.
 
 * **XNOR (↔)**: The result is true if both operands are the same.
-
-
-
-
 These operations can be represented using truth tables, which systematically display the output for every possible combination of inputs.
 
 
@@ -76,10 +72,6 @@ A truth table typically includes:
 * **Input Columns**: Each column represents an input variable (e.g., A, B).
 
 * **Output Column**: One or more columns show the output for each combination of inputs based on the logical operation performed.
-
-
-
-
 For example, consider a simple truth table for the expression A **∧** B (A AND B):
 
 
@@ -92,10 +84,6 @@ In this table:
 
 
 * The output A **∧** B is only true when both A and B are true.
-
-
-
-
 Constructing Truth Tables
 
 
@@ -211,10 +199,6 @@ Advantages
 * **Systematic Evaluation**: They facilitate systematic evaluation of all possible input combinations.
 
 * **Error Detection**: By laying out all possibilities, they help identify potential errors in reasoning or programming logic.
-
-
-
-
 Limitations
 
 
@@ -225,10 +209,6 @@ Despite their advantages, truth tables do have limitations:
 * **Scalability**: As the number of variables increases, the size of the truth table grows exponentially, making it cumbersome for complex systems.
 
 * **Complexity**: For very complex logical expressions, constructing a truth table may become impractical without additional tools or methods.
-
-
-
-
 ## Conclusion
 
 

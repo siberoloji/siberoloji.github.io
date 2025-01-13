@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 950
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to optimize AlmaLinux for **real-time applications**, where ultra-low latency and deterministic response times are critical. From configuring the real-time kernel to tuning the system, Bob aimed to create an environment suitable for industrial automation, telecommunications, and other time-sensitive workloads.

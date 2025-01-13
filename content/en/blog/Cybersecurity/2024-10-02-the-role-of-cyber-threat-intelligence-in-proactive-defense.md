@@ -139,10 +139,6 @@ Key elements of a CTI program include:
 * **Analysis Capabilities**: Develop the capability to analyze raw threat data and turn it into actionable intelligence. This may involve using automated tools, as well as human analysts to contextualize and interpret the data.
 
 * **Dissemination and Action**: Define how threat intelligence will be shared across teams and how it will be acted upon. For example, intelligence might be shared with SOC teams, network administrators, or executives to inform security decisions.
-
-
-
-
 2. **Leverage Threat Intelligence Platforms (TIPs)**
 
 

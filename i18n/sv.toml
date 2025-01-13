@@ -26,8 +26,6 @@ other = "Alla rättigheter förbehållna"
 
 [footer_privacy_policy]
 other = "Integritetspolicy"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "Av"

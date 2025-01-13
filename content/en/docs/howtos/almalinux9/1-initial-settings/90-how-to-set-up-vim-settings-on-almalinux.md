@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Vim Settings
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 90
 
 keywords:
   - AlmaLinux
   - Vim Settings on AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: set-vim-settings-almalinux
 ---

@@ -176,10 +176,6 @@ If you encounter problems while using the `softwareupdate` command, here are som
 * **Check for disk space:** Make sure you have enough free disk space to download and install updates.
 
 * **Consult Apple support:** If you're still having trouble, contact Apple support for assistance.
-
-
-
-
 **Conclusion**
 
 

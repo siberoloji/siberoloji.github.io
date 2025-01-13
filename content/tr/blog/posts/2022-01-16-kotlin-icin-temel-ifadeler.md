@@ -14,15 +14,7 @@ tags:
     - kotlin
     - 'temel kotlin kavramları'
 ---
-
-
 Programlama dokümanlarını okuduğunuzda bazen kavramların karıştığını farkedersiniz. Kotlin Programlama Dili Temel terminolojisini başlangıçta öğrenmeliyiz.
-
-
-<!-- wp:more -->
-<!--more-->
-<!-- /wp:more -->
-
 * 
 * Bir **program**, birbiri ardına öngörülebilir bir şekilde yürütülen bir dizi talimattır (statements -deyimler olarak adlandırılır). Sıralı akış, ifadelerin yazıldığı sırayla, yani yukarıdan aşağıya, birbiri ardına yürütüldüğü en yaygın ve anlaşılır durumdur;
 
@@ -39,8 +31,4 @@ Programlama dokümanlarını okuduğunuzda bazen kavramların karıştığını 
 * **Comment** - **Yorum**: program yürütülürken göz ardı edilen bir metin parçasıdır – yalnızca kodun bir bölümünü açıklar. Yorumlar `//` ile başlar;
 
 * **Whitespace** - **Boşluk**: boş bir alan, sekme veya yeni satırdır; programda kelimeleri ayırmak ve okunabilirliği arttırmak için kullanılır.
-
-
-
-
  Credit: <a href="https://hyperskill.org/" target="_blank" rel="noreferrer noopener">https://hyperskill.org/</a> 

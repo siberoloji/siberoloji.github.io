@@ -188,10 +188,6 @@ APKTool’s primary function is to decompile Android applications into a readabl
 * **res folder**: Stores XML files and other resources.
 
 * **AndroidManifest.xml**: Contains critical information about permissions and app components.
-
-
-
-
 This format allows easy modification, analysis, and security assessments on any Android app.
 ## 8. Analyzing APK Permissions and Resources
 
@@ -238,10 +234,6 @@ When working with APKTool, some common issues may arise, such as:
 * **Recompilation Issues**: Missing or incorrect file modifications can prevent APKTool from reassembling the APK.
 
 * **Resource Errors**: Sometimes, APKTool cannot decode certain resources, which may require version-specific patches or workarounds.
-
-
-
-
 Using APKTool’s verbose output and checking forums like Stack Overflow can help troubleshoot specific issues.
 ## 11. Security and Ethical Considerations
 

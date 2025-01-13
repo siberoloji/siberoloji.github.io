@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Parallel SSH
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 220
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: parallel-ssh-almalinux
 ---

@@ -41,10 +41,6 @@ Key Definitions:
 * **Deep Web:** Includes all web content not indexed by search engines, such as private databases and password-protected websites.
 
 * **Dark Web:** A subset of the deep web that is intentionally hidden and often associated with anonymity and illicit activities.
-
-
-
-
 Key Point:
 
 
@@ -69,10 +65,6 @@ Here’s a brief overview of how Tor works:
 * **Onion Layers:** The Tor network uses "onion routing," meaning that each data packet is wrapped in multiple layers of encryption, like the layers of an onion. Only the final server in the sequence can decrypt the data, allowing the user to access the website anonymously.
 
 * **.onion Websites:** Unlike regular websites, dark web addresses often end in ".onion" and are not discoverable through normal search engines. These websites offer a level of anonymity not possible on the surface web.
-
-
-
-
 Key Point:
 
 

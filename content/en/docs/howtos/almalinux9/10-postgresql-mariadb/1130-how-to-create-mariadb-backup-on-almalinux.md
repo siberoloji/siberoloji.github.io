@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Backing up your database is a critical task for any database administrator. Whether for disaster recovery, migration, or simply safeguarding data, a robust backup strategy ensures the security and availability of your database. **MariaDB**, a popular open-source database, provides multiple tools and methods to back up your data effectively. **AlmaLinux**, a reliable and secure Linux distribution, serves as an excellent platform for hosting MariaDB and managing backups.

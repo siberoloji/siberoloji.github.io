@@ -16,45 +16,27 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Script Yazma
 
-
-
 Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve `helloworld.rb` olarak `/usr/share/metasploit-framework/scripts/meterpreter` klasörüne kayıt edelim.
-
-
 ```bash
 root@kali:~# echo “print_status(“Hello World”)” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 ```
 
-
-
 Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
-
-
 ```bash
 meterpreter > run helloworld
 > Hello World
 meterpreter >
 ```
 
-
-
 Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını `helloworld.rb` dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.
-
-
 ```bash
 print_error(“this is an error!”)
 print_line(“this is a line”)
 ```
 
-
-
 Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.
-
-
 ```bash
 meterpreter > run helloworld
 > Hello World
@@ -63,26 +45,16 @@ this is a line
 meterpreter >
 ```
 
-
-
 ## helloworld.rb
 
-
-
 Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.
-
-
 ```bash
 print_status("Hello World")
 print_error("this is an error!")
 print_line("This is a line")
 ```
 
-
-
 Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.
-
-
 ```bash
  def geninfo(session)
     begin
@@ -93,11 +65,7 @@ print_line("This is a line")
  end
 ```
 
-
-
 Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra `helloworld.rb` dosyamızın içeriği aşağıdaki gibi olacaktır.
-
-
 ```bash
  def getinfo(session)
     begin
@@ -113,19 +81,11 @@ Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeter
  end
 ```
 
-
-
 Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, değerleri `session` değişkeninden alan `getinfo(session)` isimli bir foksiyon tanımladık. Bu session değişkeni, bir takım metodları ihtiva etmektedir. `sysnfo = session.sys.config.sysinfo` satırı sistem bilgisini getirirken `runpriv = session.sys.config.getuid` kullanıcı bilgisini elde etmekte kullanılmaktadır. Ayrıca, hata durumlarını yönetici istisna yöneticisi bulunmaktadır.
-
-
 
 ## helloworld2.rb
 
-
-
 İlk oluşturduğumuz dosyaya ufak bir ilave yaparak `helloworld2.rb` dosyası üretelim. `helloworld2.rb` dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı `helloworld2.rb` olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.
-
-
 ```bash
  def getinfo(session)
     begin
@@ -143,11 +103,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
  getinfo(client)
 ```
 
-
-
 Şimdi hazırladığımız `helloworld2.rb` dosyamızı Meterpreter oturumunda çalıştıralım.
-
-
 ```bash
  meterpreter > run helloworld2
  > Getting system information ...
@@ -156,19 +112,11 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
  >     Script running as WINXPVM01labuser
 ```
 
-
-
 Gördüğünüz gibi `helloworld2.rb` scripti ile bir takım sistem bigilerini ele etmiş olduk.
-
-
 
 ## helloworld3.rb
 
-
-
 Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.
-
-
 ```bash
 def list_exec(session,cmdlst)
     print_status("Running Command List ...")
@@ -191,30 +139,18 @@ def list_exec(session,cmdlst)
     "arp -a"] list_exec(client,commands)
 ```
 
-
-
 Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, `list_exec` isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, `session` ve `cmdlist` isimli iki değişken almaktadır. `cmdlist` değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak `cmd.exe` üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için `session.response_timeout=120` 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.
 
-
-
 `cmdlist` dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.
-
-
 ```bash
  commands = [ “set”,
     “ipconfig  /all”,
     “arp –a”]
 ```
 
-
-
 Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list_exec(client,commands)` bulunmaktadır.
 
-
-
 Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.
-
-
 ```bash
  meterpreter > run helloworld3
  > Running Command List ...
@@ -271,7 +207,5 @@ Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list
  172.16.104.2          00-50-56-eb-db-06     dynamic   
  172.16.104.150        00-0c-29-a7-f1-c5     dynamic    meterpreter >
 ```
-
-
 
 Gördüğünüz gibi, Ruby kodlarıyla script oluşturmak aslında çok kolay. İlk başta kodlar biraz karışık gelebilir ancak mevcut koldarı biraz çalıştığınızda aşinalık kazanacaksınız. Devamında yapmanız gereken, kod örneklerinden faydalanarak kendi script dosyanızı oluşturmak ve denemektir.

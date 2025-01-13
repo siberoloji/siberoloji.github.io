@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 840
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to simplify system management by learning **Ansible**, a powerful automation tool for configuring systems, deploying applications, and managing infrastructure. By mastering Ansible, Bob aimed to reduce manual tasks and ensure consistency across his AlmaLinux servers.

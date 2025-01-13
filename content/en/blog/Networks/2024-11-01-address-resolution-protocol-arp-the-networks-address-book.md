@@ -27,10 +27,6 @@ Before delving into ARP, let's clarify the distinction between IP and MAC addres
 * **IP Address:** A logical address assigned to a device on a network, allowing it to communicate with other devices.
 
 * **MAC Address:** A unique physical address assigned to a network interface card (NIC), identifying the device's hardware.
-
-
-
-
 the Role of ARP**
 
 
@@ -110,10 +106,6 @@ To protect against ARP attacks, consider the following measures:
 * **ARP Inspection:** Use network security devices with ARP inspection capabilities to monitor ARP traffic and detect and block malicious ARP packets.
 
 * **Network Segmentation:** Segmenting the network into smaller subnets can limit the impact of ARP attacks.
-
-
-
-
 **Conclusion**
 
 

@@ -43,10 +43,6 @@ Several pistols have also seen adjustments:
 * The Five-SeveN's armor penetration has been marginally reduced
 
 * The P250 has received a small buff to its running accuracy
-
-
-
-
 These changes collectively aim to create more balanced force-buy rounds and early-game engagements.
 
 
@@ -75,10 +71,6 @@ The beloved Mirage has received its most substantial update in years. Key change
 * Enhanced visibility in dark corners
 
 * Updated textures throughout the map
-
-
-
-
 These modifications preserve Mirage's core layout while introducing new strategic possibilities and improving overall gameplay flow.
 
 
@@ -97,10 +89,6 @@ Following player feedback, Ancient has received several quality-of-life improvem
 * Improved lighting in the cave area
 
 * Modified cover positions in the mid
-
-
-
-
 These changes address common criticisms while maintaining the map's unique character.
 
 
@@ -123,10 +111,6 @@ Graphics and Performance
 * Improved particle effects optimization
 
 * Better CPU utilization in high-player scenarios
-
-
-
-
 These optimizations result in smoother gameplay, particularly on mid-range systems, with some users reporting up to 15% better frame rates in demanding situations.
 
 
@@ -145,10 +129,6 @@ The update brings refined audio positioning:
 * Better distinction between near and far gunfire
 
 * Modified flashbang ringing effect
-
-
-
-
 These audio adjustments provide players with clearer acoustic information, crucial for competitive play.
 
 
@@ -171,10 +151,6 @@ UI Updates
 * New damage report system
 
 * More detailed post-match statistics
-
-
-
-
 Social Features
 
 
@@ -185,10 +161,6 @@ Social Features
 * New quick-communication options
 
 * Updated team management tools
-
-
-
-
 These changes make the game more accessible while providing veteran players with additional tools for strategy and communication.
 
 
@@ -211,10 +183,6 @@ Economy Adjustments
 * Refined round-time variables
 
 * Updated overtime money rules
-
-
-
-
 These economic changes encourage more diverse strategies and purchasing decisions throughout matches.
 
 
@@ -229,10 +197,6 @@ Matchmaking Improvements
 * Improved team balancing algorithm
 
 * Updated anti-cheat measures
-
-
-
-
 These adjustments aim to create more balanced and enjoyable competitive experiences across all skill levels.
 
 

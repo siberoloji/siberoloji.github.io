@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 670
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next task was to master **Systemd**, the default service manager on AlmaLinux. As a junior sysadmin, he realized that understanding Systemd was crucial for managing services, troubleshooting boot issues, and creating custom workflows.

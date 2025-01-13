@@ -10,8 +10,6 @@ path */}}
 {{ else }}
 	{{ $.Scratch.Set "fparameter" ( .Get 0 ) }}
 {{ end }}
-
-
 {{/* If the first character is "/", the path is absolute from the site's
 `baseURL`. Otherwise, construct an absolute path using the current directory */}}
 
@@ -22,8 +20,6 @@ path */}}
   {{ $.Scratch.Add "filepath" $.Page.File.Dir }}
   {{ $.Scratch.Add "filepath" ($.Scratch.Get "fparameter") }}
 {{ end }}
-
-
 {{/* If the file exists, read it and highlight it if it's code.
 Throw a compile error or print an error on the page if the file is not found */}}
 

@@ -12,19 +12,11 @@ tags:
     - android geri tuşu
 description: ""
 ---
-
-
 Android yazılımında, MainActivity dışında, kullanıcı navigasyonu için YUKARI düğmesini eklemeniz gerekecektir. Projenizin AndroidManifest.xml dosyasına gerekli kodları ekleyerek işlem çubuğunda YUKARI butonunu görüntüleyebilirsiniz.
-
-
 
 Projemizde iki aktivitemiz var. Biri MainActivity, diğeri DisplayMessageActivity. Kullanıcı MainActivity ekranındaki düğmeye dokunduğunda, program DisplayMessageActiviy'e girer. Kullanıcı nasıl GERİ gidebilir?
 
-
-
 ANA etkinliğin adını ALT etkinliğine bildirebiliriz, böylece Android, DisplayMessageActivity'de YUKARI(Geri) düğmesini gösterebilir.
-
-
 <!-- wp:code -->
 <pre title="Before adding UP button" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
 <activity
@@ -41,11 +33,7 @@ ANA etkinliğin adını ALT etkinliğine bildirebiliriz, böylece Android, Displ
         </activity>
 ...```
 
-
-
 AndroidManifest.xml dosyanızda gerekli değişiklikleri yaptıktan sonra kodunuz bu şekilde olmalıdır.
-
-
 <!-- wp:code -->
 <pre title="After declaring parent activity" class="wp-block-code"><code lang="kotlin" class="language-kotlin">...
 <activity
@@ -68,11 +56,7 @@ AndroidManifest.xml dosyanızda gerekli değişiklikleri yaptıktan sonra kodunu
         </activity>
 ...```
 
-
-
 android:parentActivityName özelliği Android 4.1'de (API düzeyi 16) kullanıma sunuldu. Android'in eski sürümlerine sahip cihazları desteklemek için, adın "android.support.PARENT_ACTIVITY" olduğu ve değerin üst etkinliğin adı olduğu bir  ad-değer çifti tanımlayın.
-
-
 <!-- wp:image {"id":198,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://www.siberoloji.com/wp-content/uploads/2022/03/upbuttonscreenshot-524x1024.png" alt="up button for Android" class="wp-image-198" /><figcaption class="wp-element-caption">Screenshot after adding UP button.</figcaption></figure>
 <!-- /wp:image -->

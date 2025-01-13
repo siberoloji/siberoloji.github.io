@@ -45,10 +45,6 @@ Key Points About Asymptotic Efficiency:
 * **Ignore Constant Factors**: Asymptotic analysis disregards constant factors and lower-order terms, focusing on how performance scales with the input size.
 
 * **Compare Algorithms**: It provides a way to compare the performance of different algorithms, regardless of implementation details or hardware.
-
-
-
-
 ## Types of Asymptotic Notations
 
 
@@ -61,10 +57,6 @@ Asymptotic notations are mathematical tools that describe the time or space comp
 * **Omega Notation ((Ω))**: Describes the **lower bound**, representing the best-case scenario.
 
 * theta Notation ((Θ))**: Describes the **tight bound**, which represents both the upper and lower bounds of the algorithm.
-
-
-
-
 Big O Notation ((O))
 
 
@@ -103,10 +95,6 @@ Where:
 * **O(n)**: Linear time. The algorithm’s execution time grows linearly with the input size. For instance, searching for an element in an unsorted array has a time complexity of (O(n)).
 
 * **O(n^2)**: Quadratic time. The execution time grows quadratically with the input size. Sorting algorithms like Bubble Sort and Selection Sort have a worst-case time complexity of (O(n^2)).
-
-
-
-
 Omega Notation ((Ω))
 
 
@@ -131,10 +119,6 @@ An algorithm is said to be **Ω(f(n))** if there exist constants (c > 0) and (n_
 * **Ω(1)**: The best-case scenario where an algorithm takes constant time, such as checking the first element in an array.
 
 * **Ω(n)**: For example, in the best-case scenario, linear search still requires inspecting all elements in the worst case, so the best-case complexity could also be linear, depending on where the target is found.
-
-
-
-
 Theta Notation ((Θ))
 
 
@@ -163,10 +147,6 @@ In other words, (T(n)) grows asymptotically at the same rate as (f(n)).
 * **Θ(n)**: Linear growth in both the best and worst cases. For example, traversing through an array of (n) elements requires exactly (n) operations in both the best and worst cases.
 
 * **Θ(n log n)**: This is common in efficient sorting algorithms like Merge Sort and Quick Sort, which have a time complexity that scales with the input size as (n) grows, but in a logarithmic way.
-
-
-
-
 ## Why Asymptotic Efficiency Matters
 
 
@@ -183,10 +163,6 @@ Key Benefits of Asymptotic Analysis:
 * **Compare Algorithms**: Asymptotic efficiency allows for objective comparison between algorithms, making it easier to choose the most efficient algorithm for a given problem.
 
 * **Scalability**: Analyzing the asymptotic efficiency helps ensure that the algorithm scales well as the input size increases, making it suitable for large-scale systems.
-
-
-
-
 ## Common Algorithmic Time Complexities
 
 
@@ -207,10 +183,6 @@ Understanding common time complexities and their asymptotic notations is essenti
 * **O(2^n) – Exponential Time**: The performance doubles with each increase in the input size. Example: Recursive algorithms for the Fibonacci sequence, where each function call spawns two more calls.
 
 * **O(n!) – Factorial Time**: The algorithm’s performance grows extremely fast, making it impractical for even small input sizes. Example: Solving the traveling salesman problem using brute force.
-
-
-
-
 ## Real-World Examples of Asymptotic Efficiency
 
 
@@ -229,10 +201,6 @@ When sorting large datasets, choosing the right algorithm is crucial. For small 
 * **Bubble Sort**: This algorithm has a time complexity of **O(n^2)**, which makes it inefficient for large datasets. Asymptotically, its performance degrades quickly.
 
 * **Merge Sort**: With a time complexity of **O(n log n)**, Merge Sort is far more efficient for large datasets, scaling better than algorithms with higher time complexities.
-
-
-
-
 2. **Searching Algorithms**
 
 
@@ -243,10 +211,6 @@ Search algorithms are another area where asymptotic efficiency plays a crucial r
 * **Linear Search**: With a time complexity of **O(n)**, linear search requires scanning every element of the input in the worst case, making it inefficient for large datasets.
 
 * **Binary Search**: On the other hand, binary search has a time complexity of **O(log n)**, making it much faster for large, sorted datasets since it reduces the search space by half with each comparison.
-
-
-
-
 ## Conclusion
 
 

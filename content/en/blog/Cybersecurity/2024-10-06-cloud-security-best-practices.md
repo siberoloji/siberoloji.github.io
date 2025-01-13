@@ -34,10 +34,6 @@ Key Components of Cloud Security
 * **Network Security**: Configuring secure network settings to prevent unauthorized access.
 
 * **Compliance**: Adhering to regulatory requirements relevant to the organization's industry.
-
-
-
-
 ## Best Practices for Cloud Security
 
 

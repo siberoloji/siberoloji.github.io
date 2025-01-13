@@ -35,8 +35,4 @@ C++ supports several different data types. Here are some of the most common ones
 * **Pointer types**: These are used to store memory addresses.
 
 * **User-defined types (classes, structs, unions, enums)**: These allow users to define their own data types.
-
-
-
-
 Each of these types has its own characteristics and uses, and understanding them is fundamental to programming in C++.

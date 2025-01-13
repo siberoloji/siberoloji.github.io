@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 930
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ### **Bob Ventures into High-Performance Computing (HPC) with AlmaLinux**

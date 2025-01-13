@@ -10,16 +10,12 @@ categories:
   - Linux
 linkTitle: Linux file structure
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords:
   - key components of Linux file structure
-
-
 
 url: concepts-root-home-swap-spaces-linux
 ---

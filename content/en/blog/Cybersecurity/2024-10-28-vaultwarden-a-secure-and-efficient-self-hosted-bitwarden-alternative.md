@@ -144,10 +144,6 @@ For secure access, it’s important to set up HTTPS. The easiest way to do this 
 * **Configure a Reverse Proxy** in NGINX to direct traffic to the Vaultwarden container.
 
 * Use **Certbot** to generate and manage your SSL certificate.
-
-
-
-
 Example NGINX configuration for Vaultwarden:
 
 

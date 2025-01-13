@@ -43,10 +43,6 @@ Before installing the Metasploit Framework on Windows, ensure that your system m
 * **System Requirements**: A minimum of 4 GB RAM and sufficient disk space (at least 1 GB).
 
 * **Firewall and Antivirus Settings**: Disable any active firewalls or antivirus software temporarily during installation, as they may interfere with the installation process.
-
-
-
-
 ## Step-by-Step Installation Guide
 
 
@@ -59,20 +55,12 @@ Step 1: Download the Installer
 * Click on the link for the latest Windows installer (usually named `metasploit-latest.msi`).
 
 * Save the installer file to a location you can easily access, such as your Downloads folder.
-
-
-
-
 Step 2: Prepare for Installation
 
 
 * **Disable Antivirus Software**: Before running the installer, temporarily disable any antivirus programs. This prevents them from mistakenly flagging Metasploit as malware.
 
 * **Disable Windows Firewall**: Go to Control Panel > System and Security > Windows Defender Firewall and turn off the firewall temporarily.
-
-
-
-
 Step 3: Run the Installer
 
 
@@ -81,10 +69,6 @@ Step 3: Run the Installer
 * Right-click on `metasploit-latest.msi` and select **Run as Administrator**.
 
 * When prompted by User Account Control (UAC), click **Yes** to allow changes.
-
-
-
-
 Step 4: Follow Installation Prompts
 
 
@@ -97,10 +81,6 @@ Step 4: Follow Installation Prompts
 * Click **Install** to start the installation process. This may take several minutes depending on your system's performance.
 
 * Once installation is complete, click **Finish**.
-
-
-
-
 Step 5: Initial Setup of Metasploit Framework
 
 
@@ -143,10 +123,6 @@ Step 5: Initial Setup of Metasploit Framework
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list">* Wait for msfconsole to load completely; this may take a few moments.
-
-
-
-
 ## Post-Installation Configuration
 
 
@@ -187,10 +163,6 @@ Metasploit uses a database to store information about vulnerabilities and exploi
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* If it shows "connected," your database setup is successful.
-
-
-
-
 Update Metasploit Framework
 
 
@@ -208,10 +180,6 @@ To ensure you have the latest exploits and features:
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list">* This command will check for updates and install them if available.
-
-
-
-
 Re-enable Security Features
 
 
@@ -222,10 +190,6 @@ Once you have completed the installation and initial setup:
 * Re-enable your antivirus software and configure it to allow Metasploit if necessary.
 
 * Turn your Windows Firewall back on for security.
-
-
-
-
 ## Common Issues During Installation
 
 
@@ -238,10 +202,6 @@ While installing Metasploit on Windows, users may encounter several common issue
 * **Database Connection Issues**: If msfconsole reports that it cannot connect to the database, verify that PostgreSQL is running properly.
 
 * **Slow Performance**: Running Metasploit on Windows can be slower than on Linux systems due to resource management differences; ensure your system meets minimum requirements.
-
-
-
-
 ## Conclusion
 
 

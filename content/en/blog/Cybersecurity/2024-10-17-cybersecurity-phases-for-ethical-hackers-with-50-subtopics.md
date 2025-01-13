@@ -43,10 +43,6 @@ Here are 50 subtopics that you can explore in relation to the cybersecurity phas
 * <a href="https://www.siberoloji.com/common-mistakes-during-reconnaissance-and-how-to-avoid-them/">Common Mistakes During Reconnaissance and How to Avoid Them</a>
 
 * <a href="https://www.siberoloji.com/tools-for-effective-reconnaissance-shodan-maltego-and-google-dorking/">Tools for Effective Reconnaissance: Shodan, Maltego, and Google Dorking</a>
-
-
-
-
 **2. Scanning Subtopics:**
 
 
@@ -70,10 +66,6 @@ Here are 50 subtopics that you can explore in relation to the cybersecurity phas
 * Protecting Systems Against Common Scanning Techniques
 
 * Using Automated Tools for Scanning: Advantages and Disadvantages
-
-
-
-
 **3. Gaining Access Subtopics:**
 
 
@@ -97,10 +89,6 @@ Here are 50 subtopics that you can explore in relation to the cybersecurity phas
 * Case Study: Gaining Access Through Unpatched Software
 
 * Ethical Considerations When Exploiting Vulnerabilities
-
-
-
-
 **4. Maintaining Access (Persistence) Subtopics:**
 
 
@@ -124,10 +112,6 @@ Here are 50 subtopics that you can explore in relation to the cybersecurity phas
 * Ethical Hacking: Demonstrating Persistence Without Causing Harm
 
 * How Attackers Evade Detection While Maintaining Access
-
-
-
-
 **5. Covering Tracks Subtopics:**
 
 

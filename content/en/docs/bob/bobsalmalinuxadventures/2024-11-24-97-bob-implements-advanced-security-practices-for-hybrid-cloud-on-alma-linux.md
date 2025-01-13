@@ -13,8 +13,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 970
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-implements-advanced-security-practices-hybrid-cloud
 ---

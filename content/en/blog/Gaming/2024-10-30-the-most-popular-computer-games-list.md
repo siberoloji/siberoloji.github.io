@@ -378,10 +378,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * Black Desert Online
 
 * Runescape
-
-
-
-
 10. **Sandbox**
 
 
@@ -394,10 +390,6 @@ Here’s a list of popular computer games across major categories. Since this li
 * Garry's Mod
 
 * No Man's Sky
-
-
-
-
 11. **Multiplayer Online Battle Arena (MOBA)**
 
 

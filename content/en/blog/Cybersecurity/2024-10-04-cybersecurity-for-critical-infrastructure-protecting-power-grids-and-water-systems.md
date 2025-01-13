@@ -56,10 +56,6 @@ Supervisory Control and Data Acquisition (SCADA) systems are essential for monit
 * **Control**: Operators can remotely control machinery, adjust operational parameters, and manage system performance through SCADA software.
 
 * **Automation**: These systems can automatically trigger certain actions, such as opening or closing valves in water systems or managing load distribution in power grids, based on pre-set conditions.
-
-
-
-
 SCADA systems are crucial for ensuring the stability and functionality of critical infrastructure. However, their role as the nerve center of power grids and water systems makes them attractive targets for cybercriminals.
 3. Cybersecurity Risks Facing Power Grids and Water Systems
 

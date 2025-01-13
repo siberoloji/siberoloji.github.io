@@ -220,8 +220,6 @@ module:
     - path: github.com/google/docsy
       disable: false
 
-
-
 # no:
 #    languageName: Norsk
 #    contentDir: content/no

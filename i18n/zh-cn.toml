@@ -26,8 +26,6 @@ other = "保留所有权利"
 
 [footer_privacy_policy]
 other = "隐私政策"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "借由"

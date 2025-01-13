@@ -56,10 +56,6 @@ Here’s a simplified step-by-step of how 0trace works:
 * **Capture Responses**: As each TTL-limited packet reaches a router or gateway, the intermediate devices send an ICMP “Time Exceeded” message back to the source (much like the traditional traceroute). These messages allow **0trace** to map the route without alerting firewalls.
 
 * **Continue Tracing**: **0trace** continues this process until it maps the entire path or reaches the destination.
-
-
-
-
 This process is highly effective in evading standard security mechanisms, making **0trace** a preferred tool for penetration testers who need to perform covert network reconnaissance.
 
 
@@ -201,10 +197,6 @@ For example, to trace the route to a web server running on port 80, you would us
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* **Interpret Results**: As **0trace** runs, it will output the network path in a similar manner to `traceroute`, showing each hop along the way.
-
-
-
-
 **6. Real-World Applications of 0trace**
 
 
@@ -217,10 +209,6 @@ For example, to trace the route to a web server running on port 80, you would us
 * **Bypassing Network Restrictions**: In environments where direct probes like ICMP or UDP are blocked, **0trace** can provide an alternate way to conduct route discovery.
 
 * **Network Auditing**: Administrators can use **0trace** to audit internal networks, identify points of failure, and locate misconfigurations in routing protocols.
-
-
-
-
 **7. Limitations and Alternatives**
 
 
@@ -242,10 +230,6 @@ While **0trace** is a powerful tool, it has some limitations:
 * **Hping3**: A packet crafting tool that can be used for customized tracerouting.
 
 * **Tcptraceroute**: A TCP-based version of the traditional traceroute.
-
-
-
-
 **8. Conclusion**
 
 

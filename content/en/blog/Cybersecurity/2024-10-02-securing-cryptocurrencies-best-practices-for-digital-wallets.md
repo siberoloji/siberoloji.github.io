@@ -49,10 +49,6 @@ Examples of hot wallets include:
 * **Mobile Wallets**: Apps installed on smartphones, like Coinbase or Trust Wallet.
 
 * **Desktop Wallets**: Software downloaded and installed on your computer, like Exodus or Electrum.
-
-
-
-
 2. **Cold Wallets**
 
 
@@ -67,10 +63,6 @@ Examples of cold wallets include:
 * **Hardware Wallets**: Physical devices, such as Ledger Nano S or Trezor, which store your private keys offline.
 
 * **Paper Wallets**: A physical piece of paper where your private and public keys are printed. This is extremely secure from online threats but vulnerable to physical damage or theft.
-
-
-
-
 ## Best Practices for Securing Your Cryptocurrency Wallet
 
 

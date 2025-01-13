@@ -14,11 +14,7 @@ categories:
 tags:
     - c++
 ---
-
-
 Bu örnekte, girilen Fahrenheit sıcaklık değeri bir fonksiyon yardımı ile Celsius değerine dönüştürülmektedir.
-
-
 ```cpp
 #include <iostream>
 #include <iomanip>

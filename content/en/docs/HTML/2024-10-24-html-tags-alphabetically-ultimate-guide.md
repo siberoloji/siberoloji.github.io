@@ -56,8 +56,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<body>`**: Contains the main content of the HTML document. Everything visible on the page goes inside the `<body>` tag.
 
 * **`<br>`**: Inserts a line break, used to move text or elements onto the next line.
-
-
 ### C
 * **`<button>`**: Represents a clickable button that can trigger an action or event on a web page.
 
@@ -72,8 +70,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<col>`**: Specifies column properties for an HTML table. Works with the `<colgroup>` tag.
 
 * **`<colgroup>`**: Groups columns in a table for applying style or layout properties.
-
-
 ### D
 * **`<data>`**: Links content with a machine-readable equivalent, typically through a `value` attribute.
 
@@ -94,14 +90,10 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<dl>`**: Defines a description list, containing terms and their descriptions.
 
 * **`<dt>`**: Represents a term in a description list, used inside `<dl>`.
-
-
 ### E
 * **`<em>`**: Emphasizes text, typically displayed in italics. Emphasis carries semantic meaning, unlike the `<i>` tag.
 
 * **`<embed>`**: Embed external content, such as multimedia or interactive elements.
-
-
 ### F
 * **`<fieldset>`**: Groups related elements within a form.
 
@@ -112,8 +104,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<footer>`**: Represents the footer of a document or section, typically containing copyright, contact, or navigation information.
 
 * **`<form>`**: Creates an HTML form for user input, typically including input fields, checkboxes, and buttons.
-
-
 ### H
 * **`<h1> to <h6>`**: Defines headings, with `<h1>` being the highest level and `<h6>` the lowest.
 
@@ -124,8 +114,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<hr>`**: Inserts a horizontal rule (a line) to visually separate content.
 
 * **`<html>`**: The root element of an HTML document, containing all other elements.
-
-
 ### I
 * **`<i>`**: Italicizes text for stylistic purposes, without adding semantic emphasis. Use `<em>` for emphasizing text.
 
@@ -136,12 +124,8 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<input>`**: Represents an input field in a form, allowing users to enter data.
 
 * **`<ins>`**: Indicates inserted text, typically underlined to show the addition.
-
-
 ### K
 * **`<kbd>`**: Defines keyboard input, typically displayed in a monospaced font to represent user interaction.
-
-
 ### L
 * **`<label>`**: Labels a control element, like an input field, making the form more accessible.
 
@@ -150,8 +134,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<li>`**: Defines an item in an ordered (`<ol>`) or unordered (`<ul>`) list.
 
 * **`<link>`**: Links external resources, such as stylesheets, to the HTML document.
-
-
 ### M
 * **`<main>`**: Indicates the main content of the document, distinguishing it from sidebars or navigation.
 
@@ -162,14 +144,10 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<meta>`**: Provides metadata about the document, like its description, keywords, and viewport settings.
 
 * **`<meter>`**: Represents a scalar measurement within a known range, such as a gauge or progress indicator.
-
-
 ### N
 * **`<nav>`**: Defines a section of navigation links.
 
 * **`<noscript>`**: Provides fallback content for users who have JavaScript disabled in their browser.
-
-
 ### O
 * **`<object>`**: Embeds external content, such as multimedia, into the HTML document.
 
@@ -180,8 +158,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<option>`**: Defines an item in a dropdown list.
 
 * **`<output>`**: Represents the result of a calculation or user action.
-
-
 ### P
 * **`<p>`**: Defines a paragraph of text.
 
@@ -190,12 +166,8 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<pre>`**: Displays preformatted text, preserving whitespace and line breaks.
 
 * **`<progress>`**: Displays the progress of a task, like a download or file upload.
-
-
 ### Q
 * **`<q>`**: Represents a short inline quotation.
-
-
 ### S
 * **`<s>`**: Strikes through text, indicating something that is no longer relevant or has been removed.
 
@@ -214,8 +186,6 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<strong>`**: Denotes text with strong importance, usually rendered in bold.
 
 * **`<style>`**: Contains CSS styles for the document.
-
-
 ### T
 * **`<table>`**: Defines a table.
 
@@ -240,20 +210,14 @@ Here’s a list of common HTML tags, ordered alphabetically, along with a brief 
 * **`<tr>`**: Defines a row in a table.
 
 * **`<track>`**: Specifies text tracks for `<video>` or`<audio>`, like subtitles.
-
-
 ### U
 * **`<u>`**: Underlines text. Unlike `<em>` or `<strong>`, `<u>` is for stylistic purposes only.
 
 * **`<ul>`**: Represents an unordered (bulleted) list.
-
-
 ### V
 * **`<var>`**: Represents a variable in a mathematical expression or programming context.
 
 * **`<video>`**: Embeds a video file on the page.
-
-
 ### W
 * **`<wbr>`**: Suggests a line break opportunity for browsers, allowing the text to wrap more efficiently.
 

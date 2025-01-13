@@ -151,8 +151,6 @@ sudo systemctl enable httpd
 
 * 
 **Confirm Apache Installation**: Open your browser and navigate to your server’s IP address. You should see the Apache test page if it’s working correctly.
-
-
 <hr>
 **5. Step 2: Installing Python and Python Development Packages**
 mod_wsgi requires Python development headers for installation, so let’s ensure they’re available.
@@ -172,8 +170,6 @@ mod_wsgi requires Python development headers for installation, so let’s ensure
 <pre><code class="language-bash">python3 --version
 `</pre>
 This should return your Python version, confirming a successful installation.
-
-
 <hr>
 **6. Step 3: Installing mod_wsgi Using pip**
 While mod_wsgi can sometimes be available as a package, it’s often preferable to install it via `pip` to ensure compatibility with the latest Python version.
@@ -194,8 +190,6 @@ After installation, run the following command to check the installed mod_wsgi ve
 <pre><code class="language-bash">mod_wsgi-express --version
 `</pre>
 This should confirm that mod_wsgi is correctly installed.
-
-
 <hr>
 **7. Step 4: Configuring Apache to Load mod_wsgi**
 Now, we need to configure Apache to load the mod_wsgi module.
@@ -222,8 +216,6 @@ Copy the `LoadModule` and `WSGIPythonHome` lines from the previous command’s o
 
 * 
 **Save and Close** the configuration file.
-
-
 <hr>
 **8. Step 5: Setting Up Your First Python Application**
 To demonstrate the mod_wsgi setup, let’s create a simple “Hello World” Python application.
@@ -251,8 +243,6 @@ Add the following code:
 
 * 
 **Save and Close** the file.
-
-
 <hr>
 **9. Step 6: Configuring mod_wsgi to Serve Your Application**
 Now that the application is ready, let’s configure Apache to serve it.
@@ -282,8 +272,6 @@ This configuration tells Apache to serve your application when someone accesses 
 
 * 
 **Save and Close** the file.
-
-
 <hr>
 **10. Step 7: Testing the Configuration**
 With everything set up, it’s time to test the configuration.
@@ -296,8 +284,6 @@ With everything set up, it’s time to test the configuration.
 * 
 **Test the Application**:
 Open a browser and navigate to `http://mydomain.com`. You should see the message “Hello, World!” indicating that your application is being served correctly.
-
-
 <hr>
 **11. Common Errors and Troubleshooting**
 **Issue**: 500 Internal Server Error 

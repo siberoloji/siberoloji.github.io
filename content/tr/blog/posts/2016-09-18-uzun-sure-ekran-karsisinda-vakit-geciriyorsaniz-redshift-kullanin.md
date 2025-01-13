@@ -15,69 +15,37 @@ categories:
 tags:
     - linux
 ---
-
-
 Bilgisayar veya Akıllı Telefon ekranına geç saatlere kadar baktıktan sonra uykuya dalma problemi yaşadığınız oluyor mu? Hemen hemen bütün ekranlar, kullanıcısına doğala yakın bir görüntü sağlamak amacıyla gün ışığını taklit eder ve mavi ışık yayarlar. Bu yayılan mavi ışığın bir yan etkisi de bulunmaktadır.
-
-
 
 İnsan vücudunun uyku işlemi, salgılanan melatonin hormonu sayesinde düzenlenir. Melatonin hormonu, gün ışığının yokluğunda yani karanlıkta salgılanır. Sabah güneş doğduğunda veya gökyüzü aydınlandığında melatonin hormonu salgılanımı durur ve vücut uyku halinden çıkar.
 
-
-
 Bilgisayar ekranının yaydığı mavi ışık, melatonin hormonu salgılanmasını engellediği için uykuya dalmanız ve fizyolojinizin normale dönmesi biraz zaman alır. Geç saatlere kadar bilgisayar ekranına baktınız ve ekranı kapattınız. Muhtemelen uykuya dalmanız normalden daha uzun sürecektir. Sadece uykuya dalma süresi değil, uyku kalitesi de bariz şekilde düşecektir.
-
-
 
 Bu duruma bir miktar engel olmak için, bilgisayarınızın ekranından yayılan renklerin içerisinde bulunan mavi ışık oranını azaltmalısınız. Bu amaçla geliştirilen Redshift programını mutlaka denemelisiniz. Program, saate ve bulunduğunuz konumda güneşin durumuna göre ekran renklerinin sıcaklığını otomatik olarak ayarlayarak rahat bir deneyim yaşamanızı sağlıyor.
 
-
-
 Ekran sıcaklığını Kelvin (3500K-6500K vb.) cinsinden değerlerle ayarlayan programı ilk günlerde biraz garip bulabilirsiniz. Ekranın kırmızı bir ton aldığını fark edip şaşırmayın. Kendinize biraz zaman tanıyın ve yavaş yavaş alışmaya çalışın. Bir kaç gün sonra artık gözlerinizin eskisi gibi kurumadığını ve bilgisayar başından ayrılınca daha kısa sürede uyuyabildiğinizi göreceksiniz.
-
-
 
 Redshift programı, neredeyse bütün Linux dağıtımlarının paket depolarında bulunmaktadır. Kurulum için aşağıdaki komutları kullanmanız yeterli.
 
-
-
 ## Redshift Ubuntu - Debian Kurulum
-
-
 ```bash
 sudo apt install redshift redshift-gtk```
 
-
-
 ## Redshift CentOS - Fedora Kurulum
-
-
 ```bash
 sudo yum install redshift gtk-redshift```
 
-
-
 ## Redshift Yardım
 
-
-
 Redshift programını, komut satırından kontrol etmeniz de mümkün. Aşağıdaki yardım komutu ile açıklamaları okuyabilirsiniz.
-
-
 ```bash
 redshift -h 
 
 ```
 
-
-
 ## Redshift Ayarlar Dosyası
 
-
-
 Programın ayarlarının bulunduğu dosyayı, ~/.config/redshift.conf adresinde bulabilirsiniz.
-
-
 ```bash
 ; Global settings for redshift
 [redshift]

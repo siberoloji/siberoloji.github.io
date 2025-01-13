@@ -81,10 +81,6 @@ Some of the common behaviors CrowdSec monitors include:
 * **Web scraping**
 
 * **Suspicious authentication attempts**
-
-
-
-
 By analyzing these behaviors, CrowdSec can alert administrators and take action against potential threats before they cause damage.
 
 

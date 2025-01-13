@@ -44,10 +44,6 @@ Metadata is often described as "data about data." It provides information about 
 * **Location Data:** GPS coordinates where the image or video was captured.
 
 * **Device Information:** Details about the device used to create the file.
-
-
-
-
 This data can be critical for various applications, including forensic investigations, security assessments, and even legal matters.
 
 
@@ -64,10 +60,6 @@ In an era where digital footprints can lead to significant insights about indivi
 * **Security Vulnerabilities:** Author names and software used can be exploited in social engineering attacks.
 
 * **Legal Implications:** Modification dates can be critical in legal disputes regarding intellectual property.
-
-
-
-
 ## Tools for Metadata Extraction
 
 

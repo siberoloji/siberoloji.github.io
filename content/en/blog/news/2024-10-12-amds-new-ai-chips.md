@@ -11,8 +11,6 @@ tags:
     - amd ai chips
 description: ""
 ---
-
-
 AMD has made significant strides in the AI landscape with the launch of its latest products at the Advancing AI 2024 event in San Francisco. The centerpiece of this unveiling is the **AMD Instinct MI325X accelerator**, which promises to redefine performance standards for AI workloads.
 
 Key Features of the AMD Instinct MI325X

@@ -12,15 +12,11 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
   - samba
-
-
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  

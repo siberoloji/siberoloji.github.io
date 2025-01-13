@@ -45,10 +45,6 @@ One of USDC's distinguishing characteristics is its strong focus on regulatory c
 * **Regulated Institutions**: Reserves are held in US-regulated financial institutions
 
 * **Transparent Operations**: Clear reporting and disclosure of reserve composition
-
-
-
-
 Technical Infrastructure
 
 
@@ -67,10 +63,6 @@ USDC operates across multiple blockchain networks, including:
 * Tron
 
 * Stellar
-
-
-
-
 This multi-chain presence enables broader accessibility and varied use cases while maintaining consistent security standards across platforms.
 
 

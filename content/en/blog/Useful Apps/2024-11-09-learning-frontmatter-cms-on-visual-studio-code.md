@@ -18,8 +18,6 @@ sidebar:
     open: true
 linkTitle: Learning Front Matter CMS on Visual Studio Code with HUGO
 ---
-
-
 ## **Introduction to Learning Front Matter CMS on Visual Studio Code with HUGO**
 
 Building modern static websites requires efficiency, flexibility, and robust content management tools. Combining Hugo—a powerful static site generator—with Visual Studio Code (VS Code) and Front Matter CMS simplifies content creation and editing for both technical and non-technical users. In this guide, we’ll explore how to seamlessly integrate and work with Front Matter CMS within Visual Studio Code while developing sites using Hugo.

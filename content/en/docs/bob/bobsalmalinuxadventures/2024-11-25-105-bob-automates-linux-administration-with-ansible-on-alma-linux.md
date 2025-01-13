@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 1050
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next goal was to master **Linux automation** with **Ansible**. By streamlining repetitive tasks like configuration management, software deployment, and system updates, he aimed to improve efficiency and eliminate manual errors in system administration.

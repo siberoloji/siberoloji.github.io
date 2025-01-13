@@ -38,10 +38,6 @@ Space infrastructure plays a crucial role in maintaining the global economy and 
 * **Military Satellites**: Defense agencies rely on space assets for intelligence gathering, reconnaissance, and secure communications.
 
 * **Scientific Research Satellites**: These collect data on climate change, space phenomena, and planetary exploration.
-
-
-
-
 Given the pivotal role that these systems play, **any disruption** to space infrastructure could have devastating consequences for communications, national security, and economic stability. The cybersecurity of space assets is, therefore, more important than ever.
 ## 2. **Emerging Cyber Threats to Space Infrastructure**
 
@@ -57,10 +53,6 @@ While the physical threats to satellites—such as space debris or potential mis
 * **Jamming** involves the intentional disruption of satellite signals, rendering them unusable. Hackers can overload the communication frequency of a satellite, preventing it from transmitting or receiving signals. For instance, **GPS jamming** can lead to chaos in air travel, shipping, and even military operations.
 
 * **Spoofing** is a more sophisticated attack where a hacker tricks a satellite into receiving fake signals. In a **GPS spoofing attack**, for example, a hacker can manipulate the coordinates transmitted by a satellite, potentially leading ships or aircraft off course or causing other forms of disruption.
-
-
-
-
 2.2. **Satellite Hijacking**
 
 

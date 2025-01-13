@@ -15,11 +15,7 @@ tags:
     - 'how-to guides'
     - 'kali tools'
 ---
-
-
 You can find the full list of Kali Linux Tools in this post. New lines will be added after the relevant tool explanation page is prepared. This list can be used as an index.
-
-
 * Information Gathering* <a href="https://www.siberoloji.com/how-to-use-0trace-kali-linux-tool/" target="_blank" rel="noopener" title="">0trace</a>
 
 * <a href="https://www.siberoloji.com/7zip-kali-linux-tool-with-useful-examples/" target="_blank" rel="noopener" title="">7zip</a>
@@ -65,6 +61,4 @@ You can find the full list of Kali Linux Tools in this post. New lines will be a
 * <a href="https://www.siberoloji.com/asleap-on-kali-linux-cracking-leap-authentication-for-network-security-testing/">asleap</a>
 
 * 
-
-
 

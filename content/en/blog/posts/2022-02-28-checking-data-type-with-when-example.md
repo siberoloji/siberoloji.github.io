@@ -19,12 +19,6 @@ tags:
 
 
 In this short note, you can see an example of when() usage with data type. The type of data will determine the code to run.
-
-
-<!-- wp:more -->
-<!--more-->
-<!-- /wp:more -->
-
 <!-- wp:code -->
 <pre title="when condition is the type of data" class="wp-block-code"><code lang="kotlin" class="language-kotlin"> val x : Any = 12.75
     when(x){

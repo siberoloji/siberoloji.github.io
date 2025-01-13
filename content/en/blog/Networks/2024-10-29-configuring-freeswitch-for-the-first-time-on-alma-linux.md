@@ -49,10 +49,6 @@ FreeSWITCH’s configurations are stored in the `/usr/local/freeswitch/conf` dir
 * **sip_profiles**: Holds configurations for SIP profiles, which manage SIP connections.
 
 * **vars.xml**: A core file defining global variables for the FreeSWITCH environment.
-
-
-
-
 Familiarizing yourself with these directories will make configuration easier and more organized.
 Step 2: Setting Global Variables
 
@@ -78,10 +74,6 @@ The `vars.xml` file in `/usr/local/freeswitch/conf` is the primary configuration
 * **Domain Name**: Set this to the server’s IP or domain name for identification purposes. `xml <X-PRE-PROCESS cmd="set" data="domain_name=your.domain.com"/>`
 
 * **SIP Ports**: You can specify custom SIP ports if desired: `xml <X-PRE-PROCESS cmd="set" data="external_sip_port=5060"/> <X-PRE-PROCESS cmd="set" data="internal_sip_port=5061"/>`
-
-
-
-
 After making these changes, save the file and restart FreeSWITCH to apply them:
 
 
@@ -126,10 +118,6 @@ FreeSWITCH organizes SIP configurations in “profiles” to separate internal a
 
 
 * Update the external IP and port values if needed: `xml <param name="sip-ip" value="public.ip.address"/> <param name="rtp-ip" value="public.ip.address"/>`
-
-
-
-
 Save and close each file, then restart FreeSWITCH to enable these settings.
 Step 4: Setting Up Dialplans
 

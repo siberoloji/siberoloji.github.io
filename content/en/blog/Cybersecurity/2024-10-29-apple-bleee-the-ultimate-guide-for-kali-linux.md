@@ -41,10 +41,6 @@ apple-bleee works by analyzing BLE advertisements from Apple devices. These are 
 * **Password-sharing requests** made via BLE
 
 * **Basic data interception** through hash identification and network configurations
-
-
-
-
 By capturing and decoding these BLE messages, apple-bleee can reveal device presence, signal requests, and other BLE-based communications. Some scripts even attempt to capture identifying data, like portions of hashed phone numbers.
 
 
@@ -73,10 +69,6 @@ To run Apple-BLEEE effectively, you’ll need:
 * **A Wi-Fi card** that supports active monitor mode with frame injection (often necessary for certain scripts that work with AirDrop, a protocol using Apple’s AWDL technology).
 
 * **Kali Linux Environment**: Preloaded with essential utilities like Python 3 and other libraries required for Apple-BLEEE’s scripts.
-
-
-
-
 For hardware, the Atheros AR9280 Wi-Fi chip is commonly recommended for its monitor mode support, which is crucial for capturing AirDrop data packets.
 
 
@@ -151,10 +143,6 @@ Apple-BLEEE contains multiple scripts, each with a unique function:
 * **`airdrop_leak.py`**: Intercepts AirDrop transmissions, potentially revealing the sender’s phone number or IP address.
 
 * **`adv_wifi.py`**: Simulates Wi-Fi password-sharing requests, triggering pop-ups on nearby devices under specific conditions.
-
-
-
-
 7. Running the Tool for BLE Traffic Analysis
 
 
@@ -184,10 +172,6 @@ Apple-BLEEE offers several advanced command-line options:
 * **AirDrop Monitoring**: To track AirDrop attempts and view sender details, use the `airdrop_leak.py` script with monitoring mode enabled.
 
 * **SSID and Region Info**: Some options enable extraction of network SSIDs or regional details about device locations.
-
-
-
-
 Example command:
 
 

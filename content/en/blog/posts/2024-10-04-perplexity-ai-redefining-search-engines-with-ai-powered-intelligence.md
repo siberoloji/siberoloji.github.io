@@ -101,10 +101,6 @@ Perplexity.ai excels in several areas where traditional search engines may fall 
 * **Contextual Accuracy**: Thanks to its NLP capabilities, Perplexity.ai can better understand the context behind a query, delivering more accurate and relevant information.
 
 * **Sourced Responses**: The clear citation of sources makes it more reliable for academic, professional, and fact-checking purposes.
-
-
-
-
 These features make Perplexity.ai an attractive choice for those who need comprehensive, well-sourced information quickly.
 **Challenges and Limitations**
 
@@ -118,10 +114,6 @@ While Perplexity.ai offers many benefits, it is not without its limitations:
 * **Niche Searches**: Perplexity.ai may not perform as well for commercial or highly niche queries, such as finding products or services.
 
 * **Potential Bias**: As it aggregates data from the web, the tool could potentially reflect biases inherent in its sources, which could skew some results.
-
-
-
-
 Nonetheless, as the platform evolves, these limitations could be mitigated, especially with continuous improvements to AI technology and data sourcing.
 **Use Cases for Perplexity.ai**
 

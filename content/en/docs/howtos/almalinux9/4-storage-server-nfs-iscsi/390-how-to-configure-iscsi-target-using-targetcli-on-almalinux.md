@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Configure iSCSI Target
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 390
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-iscsi-target-targetcli-almalinux
 ---

@@ -10,8 +10,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server for an External Network
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 270
 

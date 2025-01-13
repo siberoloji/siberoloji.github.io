@@ -120,10 +120,6 @@ Below is an infographic that illustrates the SQL query logical order. Use it as 
 <!-- wp:image {"id":1830,"width":"840px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large is-resized"><img src="https://www.siberoloji.com/wp-content/uploads/2024/09/GXA4Av-WEAAKLnj-789x1024.jpeg" alt="" class="wp-image-1830" style="width:840px;height:auto" /><figcaption class="wp-element-caption">Source : Thanks to ByteBytego</figcaption></figure>
 <!-- /wp:image -->
-
-
-
-
 4. Why Understanding Logical Order Matters
 
 

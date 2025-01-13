@@ -39,10 +39,6 @@ Merge Sort has two main characteristics:
 * **Stable Sorting**: It maintains the relative order of equal elements, making it a stable sort.
 
 * **Divide and Conquer**: Merge Sort recursively divides the problem into smaller subproblems (smaller arrays), solves them, and combines the results.
-
-
-
-
 The key strength of Merge Sort is its consistency. Unlike other sorting algorithms, Merge Sort performs efficiently even in the worst-case scenario, making it a reliable choice for large datasets.
 
 
@@ -55,10 +51,6 @@ Key Concepts
 * **Conquer**: The single-element arrays are trivially sorted. They are then merged back together in pairs to form larger sorted arrays.
 
 * **Combine**: The sorted subarrays are merged step by step, ultimately producing a fully sorted array.
-
-
-
-
 ## How Does Merge Sort Work?
 
 
@@ -133,10 +125,6 @@ Here’s how the merging works:
 * Merge ( [27, 38] ) and ( [3, 43] ) to get ( [3, 27, 38, 43] )
 
 * Merge ( [9, 82] ) and ( [10] ) to get ( [9, 10, 82] )
-
-
-
-
 Finally, merge ( [3, 27, 38, 43] ) and ( [9, 10, 82] ) to get the fully sorted array:
 
 
@@ -184,10 +172,6 @@ One of the biggest advantages of Merge Sort is its time complexity. Let's analyz
 * **Time Complexity**: Merge Sort divides the array into two halves recursively. This results in **O(log n)** divisions. The merging step requires **O(n)** comparisons to merge two subarrays. Therefore, the total time complexity of Merge Sort is **O(n log n)**. This time complexity holds true for the best, worst, and average cases, making Merge Sort a highly efficient algorithm for large datasets.
 
 * **Space Complexity**: Merge Sort requires additional space for temporary subarrays, making its space complexity **O(n)**. This is because we need extra space to store the divided arrays during the merging process.
-
-
-
-
 While the additional space requirement is a drawback, Merge Sort’s guaranteed **O(n log n)** time complexity makes it a reliable choice when dealing with large datasets, especially when consistent performance is critical.
 
 
@@ -217,10 +201,6 @@ Both Merge Sort and **Quick Sort** use a divide-and-conquer approach, but they d
 * **Space Complexity**: Quick Sort uses **O(log n)** additional space, while Merge Sort requires **O(n)** due to its merging process. Quick Sort is often preferred for in-place sorting, where minimal extra memory is needed.
 
 * **Stability**: Merge Sort is stable, preserving the relative order of equal elements. Quick Sort is not inherently stable, though it can be made stable with modifications.
-
-
-
-
 Merge Sort vs. Heap Sort
 
 
@@ -233,10 +213,6 @@ Merge Sort vs. Heap Sort
 * **Stability**: Merge Sort is stable, while Heap Sort is not.
 
 * **Practical Performance**: Heap Sort is often slower in practice compared to Merge Sort due to the overhead of maintaining the heap structure during sorting. Merge Sort is generally preferred for scenarios where stability and consistent performance are essential.
-
-
-
-
 Merge Sort vs. Insertion Sort
 
 
@@ -252,10 +228,6 @@ Merge Sort vs. Insertion Sort
 * **Space Complexity**: Insertion Sort is an in-place algorithm and uses **O(1)** additional memory, while Merge Sort requires **O(n)** space.
 
 * **Use Case**: Insertion Sort is often preferred for small arrays or nearly sorted data due to its simplicity and low overhead. Merge Sort is better for larger datasets where efficiency is more critical.
-
-
-
-
 ## Advantages of Merge Sort
 
 
@@ -316,10 +288,6 @@ Merge Sort is used in various applications where large datasets need to be sorte
 * **Sorting Linked Lists**: Unlike arrays, linked lists don’t have random access, making algorithms like Quick Sort less effective. Merge Sort is well-suited for linked lists because it only requires sequential access to the data.
 
 * **Parallel Sorting**: The independent nature of the subproblems makes Merge Sort a natural candidate for parallel sorting, often used in high-performance computing.
-
-
-
-
 ## Conclusion
 
 

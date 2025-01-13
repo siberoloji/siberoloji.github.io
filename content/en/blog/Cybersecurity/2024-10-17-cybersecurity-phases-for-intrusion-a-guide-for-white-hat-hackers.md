@@ -51,10 +51,6 @@ Reconnaissance can be broken down into two main types:
 * **Ping sweeps**
 
 * **Traceroutes** While active reconnaissance provides more specific data, it also risks detection by the target’s intrusion detection systems (IDS). Therefore, ethical hackers must be cautious and strategic when conducting this stage.
-
-
-
-
 The goal of reconnaissance is to understand the target's infrastructure, software versions, IP addresses, and even personnel that could be used for social engineering attacks.
 
 
@@ -77,10 +73,6 @@ During scanning, ethical hackers use tools to look for vulnerabilities in the ne
 * **Vulnerability Scanning**: White hat hackers may use vulnerability scanners such as **Nessus** or **OpenVAS** to detect known vulnerabilities in software and services running on the network. Vulnerabilities might include outdated software versions, misconfigured services, or unpatched systems.
 
 * **Network Mapping**: Ethical hackers often use scanning tools to map out a target's internal network, identifying key systems and relationships between different network components. Understanding the network architecture helps to design attack strategies in later stages.
-
-
-
-
 This phase is typically more aggressive than reconnaissance and may trigger alerts, so ethical hackers need to be careful when simulating attacks in a production environment.
 
 
@@ -99,10 +91,6 @@ The next stage of intrusion is **gaining access**. After identifying potential v
 * **Password Cracking**: If login credentials have been exposed, a hacker may use brute force attacks, dictionary attacks, or more sophisticated tools like **John the Ripper** or **Hashcat** to crack passwords and gain access to the system.
 
 * **Social Engineering**: Sometimes the easiest way to access a system is through the people that use it. Social engineering tactics, like **phishing**, aim to trick users into providing sensitive information, such as login credentials or security tokens.
-
-
-
-
 This phase is where white hat hackers show their skills in simulating real-world attacks, all while maintaining ethical standards and informing the organization of their actions.
 
 
@@ -127,10 +115,6 @@ Methods for maintaining access include:
 * **Rootkits**: A more sophisticated approach, a rootkit hides the hacker’s presence within the operating system by modifying system-level processes, making detection by antivirus software more difficult.
 
 * **Remote Access Trojans (RATs)**: These trojans allow hackers to remotely control infected systems, maintaining long-term access without physically being present.
-
-
-
-
 While white hat hackers demonstrate how these methods could be used in an attack, they refrain from causing any damage. The goal is to illustrate the potential threat while preserving the integrity of the target system.
 
 
@@ -153,10 +137,6 @@ During this phase, white hat hackers will:
 * **Clear Command Histories**: If an attacker uses the command line, they may clear histories to ensure their commands are not logged.
 
 * **Modify Time Stamps**: Ethical hackers might also alter file or log timestamps to mislead any forensic investigations.
-
-
-
-
 Covering tracks is a crucial step for attackers who want to prolong their stay undetected. By simulating this phase, ethical hackers can help organizations enhance their incident response plans and forensic readiness.
 
 
@@ -183,10 +163,6 @@ The post-intrusion report should include:
 * How tracks were covered to avoid detection
 
 * Recommendations for improving security, such as patching vulnerabilities, updating software, improving password policies, or enhancing employee awareness through training
-
-
-
-
 This phase is one of the most important because it provides actionable insights that help the organization prevent real attacks in the future. White hat hackers may also recommend continuous monitoring tools and improved detection mechanisms to catch future intrusion attempts early.
 
 

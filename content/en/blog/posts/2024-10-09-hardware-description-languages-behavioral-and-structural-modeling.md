@@ -52,10 +52,6 @@ Characteristics of Behavioral Modeling
 * **Concise**: Complex functionality can often be described more concisely than with structural models.
 
 * **Easier to Understand**: For complex systems, behavioral models can be easier to read and understand.
-
-
-
-
 Example in Verilog
 
 
@@ -135,10 +131,6 @@ Advantages of Behavioral Modeling
 * **Flexibility**: Easier to modify and experiment with different algorithms or approaches.
 
 * **Readability**: Often more intuitive and easier to understand, especially for non-hardware specialists.
-
-
-
-
 Limitations of Behavioral Modeling
 
 
@@ -147,10 +139,6 @@ Limitations of Behavioral Modeling
 * **Performance**: May not always result in the most efficient hardware implementation.
 
 * **Control**: Less direct control over the resulting hardware structure.
-
-
-
-
 ## Structural Modeling
 
 
@@ -169,10 +157,6 @@ Characteristics of Structural Modeling
 * **Closer to Hardware**: More directly represents the actual hardware structure.
 
 * **Explicit Connections**: Signal flow and connections between components are explicitly defined.
-
-
-
-
 Example in Verilog
 
 
@@ -277,10 +261,6 @@ Advantages of Structural Modeling
 * **Reusability**: Encourages creation of reusable components.
 
 * **Fine-grained Control**: Allows precise control over hardware implementation.
-
-
-
-
 Limitations of Structural Modeling
 
 
@@ -289,10 +269,6 @@ Limitations of Structural Modeling
 * **Less Flexible**: Changes to the design may require significant rewiring of components.
 
 * **Lower Level of Abstraction**: May be harder to understand the overall functionality at a glance.
-
-
-
-
 ## Choosing Between Behavioral and Structural Modeling
 
 
@@ -311,10 +287,6 @@ The choice between behavioral and structural modeling often depends on several f
 * **Synthesis Tools**: Some synthesis tools may handle behavioral models better than others, influencing the choice of modeling style.
 
 * **Design Complexity**: Very complex systems may be easier to describe behaviorally, while simpler systems or specific components may be better described structurally.
-
-
-
-
 ## Mixed Modeling Approaches
 
 

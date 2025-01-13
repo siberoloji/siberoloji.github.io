@@ -82,10 +82,6 @@ Let's take an example: Suppose we want to represent the number 5.75 in this syst
 * Combining these: 101.11
 
 * In our 16-bit system, this would be represented as: 00000101.11000000
-
-
-
-
 Advantages of Fixed-Point
 
 
@@ -94,10 +90,6 @@ Advantages of Fixed-Point
 * **Precision**: For a given range of numbers, fixed-point can provide more precision than floating-point with the same number of bits.
 
 * **Simplicity**: The implementation of fixed-point arithmetic is simpler than floating-point.
-
-
-
-
 Limitations of Fixed-Point
 
 
@@ -106,10 +98,6 @@ Limitations of Fixed-Point
 * **Fixed Precision**: The precision is fixed and may not be suitable for all applications.
 
 * **Overflow and Underflow**: These can occur more easily than in floating-point systems.
-
-
-
-
 Applications of Fixed-Point
 
 
@@ -122,10 +110,6 @@ Fixed-point representation is commonly used in:
 * Embedded systems with limited resources
 
 * Financial calculations where exact decimal representations are required
-
-
-
-
 ## Floating-Point Representation
 
 
@@ -150,10 +134,6 @@ The most common floating-point representation is defined by the IEEE 754 standar
 * Exponent (E): Represents the power of 2
 
 * Mantissa (M): Represents the significant digits of the number
-
-
-
-
 The general form is:
 
 
@@ -187,10 +167,6 @@ Let's represent 5.75 in 32-bit floating-point:
 * Exponent (E) = 2 + 127 (bias) = 129 = 10000001
 
 * Mantissa (M) = 0111 (drop the leading 1)
-
-
-
-
 So 5.75 in 32-bit floating-point is:
 
 
@@ -207,10 +183,6 @@ Advantages of Floating-Point
 * **Flexibility**: Adapts its precision based on the magnitude of the number.
 
 * **Standardization**: IEEE 754 provides a standard implemented in most hardware.
-
-
-
-
 Limitations of Floating-Point
 
 
@@ -219,10 +191,6 @@ Limitations of Floating-Point
 * **Speed**: Floating-point operations are generally slower than fixed-point or integer operations.
 
 * **Complexity**: The implementation and understanding of floating-point arithmetic is more complex.
-
-
-
-
 Special Values in Floating-Point
 
 
@@ -235,10 +203,6 @@ Floating-point representation allows for some special values:
 * **NaN (Not a Number)**: When the exponent is all 1s and the mantissa is non-zero.
 
 * **Denormalized Numbers**: Allow for gradual underflow, representing very small numbers.
-
-
-
-
 Applications of Floating-Point
 
 
@@ -253,10 +217,6 @@ Floating-point representation is widely used in:
 * Machine learning and AI applications
 
 * Any application requiring a wide range of numerical values
-
-
-
-
 ## Comparing Fixed-Point and Floating-Point
 
 
@@ -281,10 +241,6 @@ Now that we've explored both fixed-point and floating-point representations, let
 * Fixed-point is often used in embedded systems, DSP, and financial calculations.
 
 * Floating-point is used in scientific computing, graphics, and general-purpose computing.
-
-
-
-
 ## Practical Considerations
 
 
@@ -303,10 +259,6 @@ When deciding between fixed-point and floating-point representations, consider t
 * **Memory Constraints**: Fixed-point representations often require less memory than floating-point.
 
 * **Ease of Implementation**: If you're working on a simple system and want to avoid the complexities of floating-point, fixed-point might be preferable.
-
-
-
-
 ## The Future of Number Representation
 
 
@@ -319,10 +271,6 @@ As computing continues to evolve, so do our methods of representing numbers. Som
 * **Posit Numbers**: A proposed alternative to floating-point that promises more accuracy and a larger dynamic range.
 
 * **Quantum Computing**: Quantum computers operate on qubits, which require entirely new ways of thinking about number representation.
-
-
-
-
 ## Conclusion
 
 

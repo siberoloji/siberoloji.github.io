@@ -26,8 +26,6 @@ other = "(C)"
 
 [footer_privacy_policy]
 other = "Tietosuojalauseke"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "Kirjoittanut"

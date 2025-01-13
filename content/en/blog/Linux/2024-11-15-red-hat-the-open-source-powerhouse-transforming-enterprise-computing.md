@@ -9,16 +9,12 @@ categories:
   - Linux
 linkTitle: Red Hat
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords:
   - Red Hat
-
-
 
 featured_image: /images/redhatlinuxillustration1.webp
 url: red-hat-open-source-powerhouse-transforming-enterprise-computing

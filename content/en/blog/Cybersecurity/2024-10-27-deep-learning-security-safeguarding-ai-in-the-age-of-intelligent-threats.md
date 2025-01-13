@@ -37,10 +37,6 @@ In this post, we’ll delve into what deep learning security entails, the types 
 * **Data Sensitivity**: Deep learning models often rely on large datasets containing sensitive or private information, making them a target for attackers.
 
 * **Model Integrity**: Deep learning models that operate autonomously can produce incorrect predictions if manipulated, with significant consequences for systems reliant on their accuracy.
-
-
-
-
 As AI continues to integrate into essential services, ensuring its security will be crucial to protecting both end-users and organizational interests.
 2. Major Security Threats in Deep Learning
 

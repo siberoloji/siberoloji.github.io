@@ -32,10 +32,6 @@ This code snippet demonstrates various operators in C++:
 * Bitwise operators: AND, OR, XOR, NOT
 
 * Logical operators: AND, OR
-
-
-
-
 It also includes output statements to display the results of these operations.
 
 

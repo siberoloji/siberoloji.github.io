@@ -52,10 +52,6 @@ The integration of real-time data collection into OSINT tools enhances their eff
 * **Relevance:** Allowing analysts to focus on current discussions and sentiments.
 
 * **Accuracy:** Providing up-to-date information that reflects the latest developments.
-
-
-
-
 ## Technologies Enabling Real-Time Data Collection
 
 

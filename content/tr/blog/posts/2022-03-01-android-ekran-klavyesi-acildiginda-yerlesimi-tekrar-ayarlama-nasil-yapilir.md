@@ -17,19 +17,11 @@ tags:
     - 'android kod Örnekleri'
     - 'ekran klavyesi'
 ---
-
-
 Bazen, ekranda yazılım klavyesi göründüğünde düzeni değiştirmeniz gerekir. AndroidManifest.xml dosyasında ilgili aktivite bölümüne bir kod satırı ekleyerek bunu düzeltebilirsiniz.
-
-
 ```kotlin
 android:windowSoftInputMode="adjustResize"```
 
-
-
 Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne eklemeniz yeterli olacaktır.
-
-
 ```kotlin
 <activity
             android:name=".MainActivity"
@@ -44,7 +36,3 @@ Yukarıdaki kodu AndroidManifest.xml dosyanızda ilgili aktivite bölümüne ekl
             </intent-filter>
         </activity>
 ```
-
-
-
-

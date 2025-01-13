@@ -15,15 +15,9 @@ categories:
 tags:
     - 'linux nasıl'
 ---
-
-
 Bilgisayarınız ana kartına takılan Çevresel Donanımların Bağlantısı anlamında kullanılan PCI(Peripheral Component Interconnect), 1992 yılında Intel tarafından geliştirilmiştir. PCI Slot adıyla ifade edilen bağlantı noktalarına takılan cihazların ana kartla ve birbirleriyle haberleşmesini sağlayan bir teknolojidir. Zamanla PCI Express haline dönüşen bu standart, bilgisayarınıza katılı bulunan donanımların çalışıp çalışmadığını ve hataları tespit etmekte de kullanılır. Örneğin Ses kartınız, ekran kartınız PCI bağlantısı ile bilgisayarınıza bağlıdır. Bu yazıda, Linux İşletim Sisteminde PCI cihazlarını listeleme, hafıza boyutu ve kullandığı kernel modüllerinin neler olduğunu tespit etmeyi açıklayacağım.
 
-
-
 Öncelikle bilgisayarımızda hangi PCI donanımlarının bulunduğunu görelim. Bu listede bulunan donanımların varlığı, sisteminizde doğru çalıştığı anlamına gelmez. Örneğin, ses kartınız çalışmıyor olabilir. Birazdan göreceğimiz listede, Ses donanımı bulunuyor ise bu çalışıyor anlamına gelmez. Sadece donanımınızda bulunan PCI cihazlarının Model, Üretici bilgilerinin listesi olarak düşünün. Aşağıdaki komut ile donanımı listeleyelim.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">lspci
 00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor DRAM Controller (rev 06)
@@ -44,19 +38,11 @@ Bilgisayarınız ana kartına takılan Çevresel Donanımların Bağlantısı an
 04:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. Device 5287 (rev 01)
 04:00.1 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 12)</pre>
 <!-- /wp:preformatted -->
-
-
 Şimdi bu donanımlardan incelemek istediğimiz bir tanesini seçelim. Bu örnekte, aşağıdaki donanımı ele alacağız.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">00:02.0 VGA compatible controller: Intel Corporation 4th Gen Core Processor Integrated Graphics Controller (rev 06)</pre>
 <!-- /wp:preformatted -->
-
-
 Bu örnekte gördüğünüz gibi cihaz bilgisinin bulunduğu satırın baş tarafında numaralardan oluşan bir kod bulunuyor (00:02.0). Bu kod, cihazın takılı bulunduğu domain, bus, cihaz tipini bize bildirmektedir. Bu kodu kullanarak cihazın detaylı bilgisine ulaşabiliriz. Aşağıdaki komut bu işlemi gerçekleştirir.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">lspci -v -s 00:02.0
 00:02.0 VGA compatible controller: Intel Corporation 4th Gen Core Processor Integrated Graphics Controller (rev 06) (prog-if 00 [VGA controller])
@@ -70,15 +56,9 @@ Bu örnekte gördüğünüz gibi cihaz bilgisinin bulunduğu satırın baş tara
 	Kernel driver in use: i915
 	Kernel modules: i915</pre>
 <!-- /wp:preformatted -->
-
-
 Bu bilgileri, donanımınızla ilgili bir problem yaşadığınızda yardım etmek isteyen destek ekibine ulaştırmak, oldukça faydalı olacaktır. Kullanıcı olarak donanımınızla ilgili detaylı bilgi sahibi olmak isterseniz de oldukça kullanışlıdır. Dikkat ederseniz, bus ve driver yani otobüs ve sürücü kavramları bu cihazlarda oldukça sık kullanılıyor. Cihazın takılı olduğu bağlantı noktasına BUS yani otobüs deniyor. Bu noktada takılı cihazı kullanıp işletim sistemine yardımcı olacak yazılıma da DRIVER yani sürücü adı veriliyor.
 
-
-
 Son olarak bilgisayarınızda bulunan tüm PCI cihazlarının her birinin hangi Kernel sürücüsünü kullandığını görelim. Bunun için lspci komutunun -k parametresini kullanacağız.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">lspci -k
 00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor DRAM Controller (rev 06)
@@ -140,11 +120,7 @@ Son olarak bilgisayarınızda bulunan tüm PCI cihazlarının her birinin hangi 
 	Kernel modules: rtsx_pci
 04:00.1 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 12)</pre>
 <!-- /wp:preformatted -->
-
-
 Burada anlatılanların daha ilerisine geçmek isteyenlere bir ipucu verelim. Bu PCI Donanım bilgileri, Linux İşletim Sisteminde /sys/bus/pci/devices/ klasöründe ayrı klasörler halinde tutulurlar. Bu klasörlerin içerisinde de dosyalar bulunur. Bu dosyaların her birince üretici bilgisi, cihaz numara ve ID bilgileri tutulur. Örneğin, bizim incelediğimiz donanımın bilgileri aşağıda adresi yazılı klasörde bulunmaktadır.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">/sys/bus/pci/devices/0000:00:02.0/</pre>
 <!-- /wp:preformatted -->

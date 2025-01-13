@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 500
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 50, *"Bob Builds Serverless AI Applications with Kubernetes!"*. In this chapter, Bob explores how to combine **serverless architecture** and **AI-powered services** on Kubernetes, enabling scalable, cost-efficient, and intelligent applications.

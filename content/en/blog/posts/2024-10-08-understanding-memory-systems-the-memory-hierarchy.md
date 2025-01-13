@@ -50,10 +50,6 @@ The hierarchy is generally structured as follows:
 * **Secondary Storage** (Hard Drives, SSDs)
 
 * **Tertiary Storage** (Archival storage, cloud storage)
-
-
-
-
 Levels of the Memory Hierarchy
 
 
@@ -73,10 +69,6 @@ At the very top of the memory hierarchy are **registers**, which are the fastest
 * **Size**: They are also the smallest form of memory, usually storing only a few bytes at a time. Common types of registers include data registers, address registers, and status registers.
 
 * **Cost**: Registers are expensive to manufacture, primarily due to their high speed and proximity to the CPU.
-
-
-
-
 **Function**: Registers store immediate results or temporary data that the CPU needs while performing calculations or executing instructions. Due to their limited size, registers can only hold a very small portion of the data being processed at any given moment.
 
 
@@ -92,10 +84,6 @@ At the very top of the memory hierarchy are **registers**, which are the fastest
 * **L2 Cache**: Slightly larger and slower than L1, L2 cache can either be dedicated to a single core or shared across cores.
 
 * **L3 Cache**: The largest and slowest of the three, L3 cache is typically shared across all cores in a multi-core processor.
-
-
-
-
 **Key characteristics of cache memory:**
 
 
@@ -104,10 +92,6 @@ At the very top of the memory hierarchy are **registers**, which are the fastest
 * **Size**: The size of cache memory is relatively small, ranging from a few kilobytes for L1 to several megabytes for L3.
 
 * **Cost**: Cache memory is expensive, though less so than registers.
-
-
-
-
 **Function**: Cache memory helps reduce the time it takes for the CPU to access data from main memory by storing frequently used data and instructions. When the CPU needs data, it first checks the cache. If the data is found (a **cache hit**), it can be accessed much more quickly than if the CPU had to fetch it from the slower main memory.
 
 
@@ -127,10 +111,6 @@ At the very top of the memory hierarchy are **registers**, which are the fastest
 * **Size**: RAM is significantly larger than cache memory, with modern computers typically having between 4GB and 64GB of RAM.
 
 * **Cost**: RAM is cheaper than cache memory and registers but still more expensive than secondary storage.
-
-
-
-
 **Function**: RAM stores data that is actively being used or processed by the CPU. When you open applications or files, they are loaded into RAM so that the CPU can access them quickly. The more RAM a system has, the more data it can store in active memory, which improves multitasking and overall performance.
 
 
@@ -150,10 +130,6 @@ Secondary storage refers to non-volatile storage devices like **hard drives (HDD
 * **Size**: These storage devices offer much larger capacities, ranging from hundreds of gigabytes to several terabytes.
 
 * **Cost**: Secondary storage is relatively inexpensive compared to the higher levels of the memory hierarchy.
-
-
-
-
 **Function**: Secondary storage is used to store long-term data, including the operating system, applications, files, and other persistent information. When the CPU needs data from secondary storage, it is loaded into RAM for quicker access.
 
 
@@ -173,10 +149,6 @@ Tertiary storage is the slowest and least expensive form of memory. It is often 
 * **Size**: It typically offers vast storage capacity, sometimes reaching petabytes or more, particularly in the case of cloud storage.
 
 * **Cost**: This is the most cost-effective storage solution, making it ideal for archival purposes.
-
-
-
-
 **Function**: Tertiary storage is primarily used for long-term data storage and backups. In cases where data is needed from tertiary storage, it often takes longer to retrieve, but the low cost makes it valuable for storing large amounts of infrequently accessed data.
 
 
@@ -201,10 +173,6 @@ When the CPU needs data, it follows a **hierarchical access pattern**:
 * **Secondary Storage**: If the data is not found in RAM, the CPU then retrieves it from the secondary storage (e.g., an SSD or hard drive). Data from secondary storage is loaded into RAM first, where it can be accessed more quickly by the CPU.
 
 * **Tertiary Storage**: Finally, if data is not found in secondary storage, the CPU may have to retrieve it from archival tertiary storage, a much slower process.
-
-
-
-
 Why the Memory Hierarchy Matters
 
 

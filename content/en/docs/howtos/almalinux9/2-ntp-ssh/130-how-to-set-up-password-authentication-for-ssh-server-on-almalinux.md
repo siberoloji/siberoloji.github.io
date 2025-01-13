@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Password Authentication for SSH Server
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 130
 

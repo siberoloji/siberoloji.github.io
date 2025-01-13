@@ -53,10 +53,6 @@ K-Maps are essentially a visual representation of a truth table. For each Boolea
 * **4-variable K-Map**: A 4x4 grid
 
 * **5-variable K-Map**: A 4x8 grid
-
-
-
-
 Each cell in the map corresponds to a row in the truth table, and its value is filled with a 1 or 0 based on the Boolean function’s output for that particular combination of variables.
 
 
@@ -83,10 +79,6 @@ Each cell corresponds to a particular combination of A and B:
 * Bottom-right cell: A=1, B=1
 
 * Bottom-left cell: A=1, B=0
-
-
-
-
 In this case, the cells where the output is 1 (True) are filled, and those where the output is 0 (False) are left blank or filled with 0s.
 
 

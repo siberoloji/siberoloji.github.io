@@ -76,10 +76,6 @@ The race to develop **quantum-resistant cryptography** is gaining momentum. Seve
 * **Multivariate Polynomial Cryptography**: This method involves solving systems of multivariate quadratic equations, which remain difficult for both classical and quantum computers to solve efficiently. While this approach is still being researched, it shows potential for quantum resistance.
 
 * **Code-based Cryptography**: Based on error-correcting codes, this approach is another candidate for post-quantum cryptography. **McEliece encryption**, for example, is resistant to both classical and quantum attacks, though its practical implementation poses challenges due to large key sizes.
-
-
-
-
 In response to the quantum threat, the **National Institute of Standards and Technology (NIST)** has launched a global effort to standardize quantum-resistant algorithms, with a final selection expected by the mid-2020s.
 
 

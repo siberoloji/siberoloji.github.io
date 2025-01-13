@@ -111,10 +111,6 @@ OLLVM can perform function inlining or outlining to obscure the structure of the
 * **Inlining** involves taking the body of a function and placing it directly into the code that calls it. This removes function calls, which can be easier to identify and analyze.
 
 * **Outlining** is the opposite, where sections of code are extracted into separate functions, making it harder to map out the program's logic.
-
-
-
-
 These techniques make it harder for attackers to recognize reusable code patterns or function boundaries.
 
 
@@ -203,10 +199,6 @@ OLLVM has found applications in various industries. Some common examples include
 * **DRM (Digital Rights Management)**: Software that manages access to digital content, like movies or music, frequently uses OLLVM to prevent circumvention of its protection mechanisms.
 
 * **Commercial Software**: Proprietary algorithms, especially in fields like AI, cybersecurity, or financial software, are often protected using OLLVM to make reverse engineering more difficult for competitors.
-
-
-
-
 ## Conclusion
 
 

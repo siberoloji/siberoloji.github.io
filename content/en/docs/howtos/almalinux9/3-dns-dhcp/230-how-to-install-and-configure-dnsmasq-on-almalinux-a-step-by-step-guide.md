@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Install and Configure Dnsmasq
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 230
 
 keywords:
   - AlmaLinux
   - Dnsmasq
-
-
 featured_image: /images/almalinux.webp
 url: install-configure-dnsmasq-almalinux
 ---

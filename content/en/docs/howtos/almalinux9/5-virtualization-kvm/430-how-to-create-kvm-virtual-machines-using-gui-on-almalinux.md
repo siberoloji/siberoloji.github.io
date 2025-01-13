@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Create KVM Virtual Machines Using GUI
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 430
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: create-kvm-virtual-machines-gui-almalinux
 ---

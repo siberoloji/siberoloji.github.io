@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Enable TPM 2.0
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 520
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: enable-tpm-2-0-kvm-almalinux
 ---

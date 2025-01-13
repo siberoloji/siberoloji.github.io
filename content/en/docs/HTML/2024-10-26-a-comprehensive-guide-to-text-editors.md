@@ -12,8 +12,6 @@ tags:
     - html
     - 'Text editor'
 ---
-
-
 ## What is a Text Editor?
 
 A text editor is software that allows users to create and edit plain text files. Unlike word processors that focus on formatting, text editors prioritize simplicity and functionality, making them essential for coding, scripting, and quick note-taking.

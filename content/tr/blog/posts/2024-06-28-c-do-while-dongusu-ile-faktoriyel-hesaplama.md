@@ -16,11 +16,7 @@ tags:
     - c++
     - 'do while'
 ---
-
-
 Bu örneğimizde, do while döngüsünü kullanarak faktöriyel hesaplaması nasıl yapılır konusunu gösteriyoruz.
-
-
 ```cpp
 #include <iostream>
 using namespace std;

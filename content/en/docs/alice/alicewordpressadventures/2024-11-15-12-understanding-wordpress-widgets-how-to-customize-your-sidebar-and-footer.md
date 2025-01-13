@@ -10,16 +10,12 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 120
 
 keywords:
   - "WordPress Widgets: How to Customize Your Sidebar and Footer"
-
-
 
 featured_image: /images/alice-interview.webp
 url: understanding-wordpress-widgets-customize-sidebar-footer

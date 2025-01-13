@@ -26,8 +26,6 @@ other = "সমস্ত অধিকার সংরক্ষিত"
 
 [footer_privacy_policy]
 other = "গোপনীয়তা নীতি"
-
-
 # পোস্ট (ব্লগ, নিবন্ধ ইত্যাদি)
 [post_byline_by]
 other = "দ্বারা"

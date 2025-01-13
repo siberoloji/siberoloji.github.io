@@ -41,10 +41,6 @@ Key Characteristics of Bubble Sort:
 * **Stable Sorting**: Bubble Sort is a stable sorting algorithm, meaning that it preserves the relative order of equal elements.
 
 * **Simplicity**: The algorithm is simple to understand and implement, making it a common choice for teaching the fundamentals of sorting.
-
-
-
-
 ## How Does Bubble Sort Work?
 
 
@@ -75,10 +71,6 @@ First Pass:
 * Compare the next two elements (8 and 4). Since 8 > 4, we swap them: [ [3, 5, 4, 8, 2] ]
 
 * Compare the last two elements (8 and 2). Since 8 > 2, we swap them: [ [3, 5, 4, 2, 8] ]
-
-
-
-
 At the end of the first pass, the largest element (8) has "bubbled" to its correct position at the end of the list.
 
 
@@ -91,10 +83,6 @@ Second Pass:
 * Compare the next two elements (5 and 4). Since 5 > 4, we swap them: [ [3, 4, 5, 2, 8] ]
 
 * Compare the next two elements (5 and 2). Since 5 > 2, we swap them: [ [3, 4, 2, 5, 8] ]
-
-
-
-
 At the end of the second pass, the second-largest element (5) has moved to its correct position.
 
 
@@ -105,10 +93,6 @@ Third Pass:
 * Compare the first two elements (3 and 4). No swap is needed because 3 < 4. [ [3, 4, 2, 5, 8] ]
 
 * Compare the next two elements (4 and 2). Since 4 > 2, we swap them: [ [3, 2, 4, 5, 8] ]
-
-
-
-
 At the end of the third pass, the third-largest element (4) is in its correct position.
 
 
@@ -117,10 +101,6 @@ Fourth Pass:
 
 
 * Compare the first two elements (3 and 2). Since 3 > 2, we swap them: [ [2, 3, 4, 5, 8] ]
-
-
-
-
 Now the list is fully sorted, and no more passes are needed.
 
 
@@ -161,10 +141,6 @@ Bubble Sort is known for its simplicity, but it is not the most efficient sortin
 * **Average Case**: In the average case, Bubble Sort performs **O(n^2)** comparisons and swaps, making it inefficient for large datasets.
 
 * **Space Complexity**: Bubble Sort is an in-place sorting algorithm, so it only uses **O(1)** additional memory, which is an advantage when memory is limited.
-
-
-
-
 ## Optimizing Bubble Sort
 
 
@@ -217,10 +193,6 @@ Bubble Sort vs. Selection Sort
 * **Stability**: Bubble Sort is stable, while Selection Sort is not. This means that Bubble Sort preserves the relative order of equal elements, whereas Selection Sort does not.
 
 * **Practical Use**: Due to fewer swaps, Selection Sort may perform better than Bubble Sort in practice, but both algorithms are inefficient for large datasets.
-
-
-
-
 Bubble Sort vs. Insertion Sort
 
 
@@ -233,10 +205,6 @@ Bubble Sort vs. Insertion Sort
 * **Stability**: Both Bubble Sort and Insertion Sort are stable.
 
 * **Practical Use**: Insertion Sort is generally preferred over Bubble Sort, especially for small or nearly sorted arrays, because of its better performance in the average and best cases.
-
-
-
-
 Bubble Sort vs. Quick Sort
 
 
@@ -249,10 +217,6 @@ Bubble Sort vs. Quick Sort
 * **Space Complexity**: Quick Sort is also an in-place sorting algorithm, but its worst-case time complexity is **O(n^2)**. However, with proper pivot selection, this worst-case scenario can be avoided.
 
 * **Practical Use**: Quick Sort is widely used in real-world applications due to its efficiency, while Bubble Sort is primarily used for educational purposes.
-
-
-
-
 ## Advantages of Bubble Sort
 
 
@@ -325,10 +289,6 @@ Given its inefficiency, Bubble Sort is rarely used in real-world applications wh
 * **Small Datasets**: For small arrays or lists where the size of the dataset is minimal, Bubble Sort can be a reasonable choice because its inefficiency is less noticeable for small inputs.
 
 * **Nearly Sorted Data**: When the data is nearly sorted, Bubble Sort (with the early termination optimization) can sort the array efficiently, achieving **O(n)** time complexity.
-
-
-
-
 ## Conclusion
 
 

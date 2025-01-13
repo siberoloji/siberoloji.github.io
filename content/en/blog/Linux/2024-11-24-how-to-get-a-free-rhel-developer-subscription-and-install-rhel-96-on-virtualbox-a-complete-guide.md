@@ -14,8 +14,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/redhatlinuxillustration1.webp
-
-
 url: free-rhel-developer-subscription
 keywords:
   - RHEL Developer Subscription

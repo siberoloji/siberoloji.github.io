@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SELinux on AlmaLinux
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
 

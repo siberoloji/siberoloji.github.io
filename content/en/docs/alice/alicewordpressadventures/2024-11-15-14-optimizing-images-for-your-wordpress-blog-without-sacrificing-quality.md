@@ -10,16 +10,12 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 140
 
 keywords:
   - Optimizing Images for Your WordPress Blog Without Sacrificing Quality
-
-
 
 featured_image: /images/alice-interview.webp
 url: optimizing-images-wordpress-blog-sacrificing-quality

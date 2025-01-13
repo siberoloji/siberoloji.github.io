@@ -10,15 +10,11 @@ categories:
   - Linux
 linkTitle: Creating a Bootable USB
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords: ""
-
-
 
 url: creating-bootable-usb-windows-linux-macos
 ---

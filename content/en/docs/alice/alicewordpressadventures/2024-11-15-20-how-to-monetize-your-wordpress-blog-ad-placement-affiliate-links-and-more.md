@@ -10,15 +10,11 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 200
 
 keywords: ""
-
-
 
 featured_image: /images/alice-taking-picture.webp
 url: monetize-wordpress-blog-ad-placement-affiliate-links

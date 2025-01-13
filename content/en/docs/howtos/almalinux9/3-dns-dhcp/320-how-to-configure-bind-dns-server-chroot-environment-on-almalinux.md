@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server Chroot Environment
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 320
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-bind-dns-server-chroot-environment-almalinux
 ---

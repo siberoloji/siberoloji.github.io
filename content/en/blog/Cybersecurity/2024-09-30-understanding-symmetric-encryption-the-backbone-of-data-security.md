@@ -51,10 +51,6 @@ To better understand symmetric encryption, let’s break down the process into c
 * **Transmission of Ciphertext**: The ciphertext is transmitted over a network or stored securely. Without the secret key, anyone intercepting the ciphertext would not be able to decipher its contents.
 
 * **Decryption**: The recipient, who also has access to the secret key, uses the same encryption algorithm in reverse to decrypt the ciphertext back into its original form (plaintext).
-
-
-
-
 The success of symmetric encryption relies entirely on keeping the secret key secure. If the key is intercepted, the encrypted data can easily be compromised.
 **Common Symmetric Encryption Algorithms**
 

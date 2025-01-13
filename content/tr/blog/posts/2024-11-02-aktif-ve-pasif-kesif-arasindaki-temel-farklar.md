@@ -40,8 +40,6 @@ Yaygın Teknikler
  	* Haber makaleleri
  	* Kurumsal belgeler
  	* İş ilanları
-
-
  	* DNS Bilgileri
 
 <ul class="wp-block-list">
@@ -49,8 +47,6 @@ Yaygın Teknikler
  	* DNS kayıt analizi
  	* Tarihsel DNS verileri
  	* Ters DNS aramaları
-
-
  	* Arama Motoru Sonuçları
 
 <ul class="wp-block-list">
@@ -58,8 +54,6 @@ Yaygın Teknikler
  	* Önbelleğe alınmış sayfalar
  	* Dizinli belgeler
  	* Site yapı analizi
-
-
  	* Kamu Veritabanları
 
 <ul class="wp-block-list">
@@ -94,8 +88,6 @@ Yaygın Teknikler
  	* Hizmet sayımı
  	* Sürüm tespiti
  	* Banner kapma
-
-
  	* Ana Bilgisayar Keşfi
 
 <ul class="wp-block-list">
@@ -103,8 +95,6 @@ Yaygın Teknikler
  	* ARP taraması
  	* TCP/UDP taraması
  	* ICMP araştırması
-
-
  	* Güvenlik Açığı Değerlendirmesi
 
 <ul class="wp-block-list">
@@ -112,8 +102,6 @@ Yaygın Teknikler
  	* Yapılandırma analizi
  	* Güvenlik testi
  	* Uygunluk denetimi
-
-
  	* Uygulama Analizi
 
 <ul class="wp-block-list">
@@ -215,8 +203,6 @@ Her İki Yaklaşımın Birleştirilmesi
  	* Potansiyel hedefleri belirleyin
  	* Kapsamı anlayın
  	* Aktif fazı planla
-
-
  	* Aktif Keşfe Geçiş
 
 <ul class="wp-block-list">
@@ -251,8 +237,6 @@ Güvenlik Değerlendirmeleri
  	* Harita bilinen altyapı
  	* Anahtar sistemleri tanımlayın
  	* Ayrıntılı değerlendirme planlayın
-
-
  	* Detaylı Analiz
 
 <ul class="wp-block-list">
@@ -270,8 +254,6 @@ Olay Müdahalesi
  	* Tarihsel veri analizi
  	* Saldırı deseni tanıma
  	* Atıf araştırması
-
-
  	* Aktif Tepki
 
 <ul class="wp-block-list">

@@ -43,10 +43,6 @@ Unlike traditional detection methods that passively monitor network traffic or s
 * **Lures**: False information, such as bogus credentials or misleading system configurations, that draw attackers toward decoys.
 
 * **Traps**: Mechanisms that contain and isolate an attacker within the decoy, preventing them from advancing to real assets.
-
-
-
-
 These components work in tandem to slow down attackers and expose their actions, often revealing hidden threats that traditional detection methods might miss.
 ## 2. **Honeypots: A Deep Dive**
 
@@ -78,10 +74,6 @@ There are several types of honeypots, each designed for different purposes:
 * **Low-Interaction Honeypots**: These are limited in their functionality and only simulate the basic aspects of a target system. While easy to deploy, they gather less data compared to high-interaction honeypots.
 
 * **High-Interaction Honeypots**: These are more sophisticated and simulate a fully functioning system. Attackers can interact with them extensively, providing valuable data for threat intelligence. However, high-interaction honeypots are more resource-intensive to maintain.
-
-
-
-
 2.3. **How Honeypots Detect and Prevent Cyber Threats**
 
 
@@ -105,10 +97,6 @@ An IDS is a monitoring system designed to detect unauthorized access or maliciou
 * **Network-based IDS (NIDS)**: Monitors traffic across the entire network, identifying unusual activity or deviations from normal traffic patterns.
 
 * **Host-based IDS (HIDS)**: Focuses on a specific system or host, detecting signs of unauthorized access or file manipulation on that machine.
-
-
-
-
 While traditional IDS systems are highly effective, they often rely on **signature-based detection**. This means that the system can only detect known threats that have been previously cataloged. If an attacker uses a new or modified method, it may go unnoticed by the IDS.
 
 

@@ -15,19 +15,11 @@ categories:
 tags:
     - 'linux nasıl'
 ---
-
-
 Bilgisayarınızın donanım bilgilerini öğrenmek için Linux içerisinde kullanabileceğiniz eşitli komutlar bulunmaktadır. Bu yazımızda RAM kapasitesini, tipi nasıl öğrenebileceğimizi açıklayacağız. Bununla birlikte bilgisayarınızdaki donanımların hepsinin özet bilgisini de elde etmenin yolunu göstereceğiz.
-
-
 
 ## free
 
-
-
 free  komutunu kullanarak, o anda sisteminizin RAM yük durumunu, boş kapasiteyi görebilirsiniz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">free
               total        used        free      shared  buff/cache   available
@@ -35,19 +27,11 @@ Mem:        8061380     1342316     5356816       42872     1362248     6370836
 Swap:             0           0           0
 </pre>
 <!-- /wp:preformatted -->
-
-
 total sütunu toplam kapasiteyi, used kullanımda olan miktarı, free ise boşta bulunan RAM miktarını gösterir.
-
-
 
 ## cat /proc/meminfo
 
-
-
 meminfo  dosyasının içeriği, işletim tarafından sürekli güncellenen dinamik bir içeriğe sahiptir ve içindeki bilgileri cat komutuyla ekrana yazdırabilirsiniz. Bu komut sayesinde free  komutundan daha detaylı bilgileri elde etmek mümkündür.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">cat /proc/meminfo
 MemTotal:        8061380 kB
@@ -97,15 +81,9 @@ DirectMap4k:      282052 kB
 DirectMap2M:     4847616 kB
 DirectMap1G:     3145728 kB</pre>
 <!-- /wp:preformatted -->
-
-
 ## vmstat -s
 
-
-
 vmstat -s  komutu, sisteminizin başladığından itibaren kaydedilen istatistikleri görüntülemenizi sağlar. Bu komut, diskleriniz hakkında da istatistikler gösterebilir. Detaylı parametreler için vmstat --help  komutunu kullanabilirsiniz. Aşağıdaki çıktıda, en üst satırda RAM bilgilerini görebilirsiniz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">vmstat -s
       8061380 K total memory
@@ -135,23 +113,13 @@ vmstat -s  komutu, sisteminizin başladığından itibaren kaydedilen istatistik
    1483203820 boot time
          6796 forks</pre>
 <!-- /wp:preformatted -->
-
-
 ## dmidecode -t 16
-
-
 
 dmidecode -t 16  komutu, sisteminizde bulunan toplam RAM sayısını ve sisteminizin desteklediği maksimum RAM kapasitesini gösterir. Burada ilave etmemiz gereken bir konu bulunuyor. Özellikle Dizüstü bilgisayarlarda bu komutun çıktısında RAM kapasitesi gerçekte olduğundan daha yüksek görünebilir. dmidecode  doğrudan BIOS bilgilerini gösterir ve Ana kartınızın desteklediği kapasiteyi listeler. Aşağıda örneği verilen çıktıda, Maksimum Capacity: 32 GB  ve Number of Devices : 4  görünse de gerçekte bu bilgisayara, maksimum 2 adet ve toplam 8 GB RAM takılabilmektedir.
 
-
-
 **Soru**: O halde komut çıktısı neden böyle gösteriyor?
 
-
-
 **Cevap**: Ana kartınızın teknolojisi, maksimum değerleri destekliyor olsa da üretici firma, RAM takılabilecek SLOT, yuva sayısını 2 adet üretmiştir. Böyle durumlarda gerçekte kaç SLOT bulunduğunu cihazın kapağını açmadan bilmek zordur.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo dmidecode -t 16
 # dmidecode 3.0
@@ -167,19 +135,11 @@ Maximum Capacity: 32 GB
 Error Information Handle: Not Provided
 Number Of Devices: 4</pre>
 <!-- /wp:preformatted -->
-
-
 ## dmidecode -t 17
-
-
 
 Bu komut ile, bir önceki komutta öğrendiğimiz RAM bilgilerinin detaylarını görebilirsiniz. Komut çıktısını incelediğimizde BANK 0, BANK 1, BANK 2 ve BANK 3 olarak 4 adet SLOT bulunduğu anlaşılmaktadır. Bunlardan BANK 0 ve BANK 2'de 4 GB büyüklüğünde RAM takılı olduğu görülmektedir. Type: DDR3  bölümü RAM tipi, Speed: 1600 Mhz ise RAM hızını göstermektedir.
 
-
-
 BANK 1 ve BANK 3 Slotları komut çıktısında görülse de üretici firma, Ana Karta monte etmediğinden gerçekte kullanılamamaktadır.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo dmidecode -t 17
 
@@ -271,15 +231,9 @@ Memory Device
 	Rank: Unknown
 	Configured Clock Speed: Unknown</pre>
 <!-- /wp:preformatted -->
-
-
 ## lshw
 
-
-
 Donanımınız ile ilgili detaylı bilgilerin tamamını lshw  komutu ile elde edebilirsiniz. Aşağıdaki örnekte, memory  bilgileri gösterilmiştir. sudo lshw  komutuyla tüm bilgileri elde etmeniz mümkündür.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo lshw -short -C memory
 
@@ -295,6 +249,4 @@ H/W path         Device      Class          Description
 /0/b/2                       memory         4GiB SODIMM DDR3 Synchronous 1600 MHz (0,6 ns)
 /0/b/3                       memory         DIMM [empty]</pre>
 <!-- /wp:preformatted -->
-
-
 Cihazınızın gerçekte kullanılabilir kapasitesini, üreticinin web sitesinde yayınlanan sayfalardan da kontrol etmenizi tavsiye ediyoruz.

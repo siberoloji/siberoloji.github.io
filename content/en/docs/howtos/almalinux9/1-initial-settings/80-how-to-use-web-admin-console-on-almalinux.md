@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Web Admin Console
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 80
 

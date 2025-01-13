@@ -29,10 +29,6 @@ We will investigate the subject under the following headings. In the rest of the
 * Covert Information Collection
 
 * Identifying Protection Mechanisms
-
-
-
-
 # Basic Approach
 
 

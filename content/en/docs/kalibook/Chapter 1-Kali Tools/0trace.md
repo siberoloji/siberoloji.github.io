@@ -3,8 +3,6 @@ title: 0trace Kali Linux Tool
 linkTitle: 0trace
 description: In this blog post, we’ll dive deep into what **0trace** is, how it works, and why it is essential for network analysts and security professionals.
 date: 2024-11-10T10:38:02.752Z
-
-
 draft: false
 prev: docs/kalibook/chapter-1-kali-tools/
 next: null

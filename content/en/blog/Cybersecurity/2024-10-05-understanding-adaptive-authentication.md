@@ -30,10 +30,6 @@ At its core, adaptive authentication dynamically adjusts the authentication proc
 * **Time of Access**: The timing of the login attempt.
 
 * **User Behavior Patterns**: Historical data on how the user typically interacts with systems.
-
-
-
-
 This approach allows organizations to impose stricter security measures when risk levels are elevated while providing a seamless experience for low-risk situations.
 
 
@@ -52,10 +48,6 @@ Adaptive authentication employs real-time data analysis to assess the risk assoc
 * **Continuous Monitoring**: Even after successful login, the system continues to monitor user behavior in real time. If suspicious activity is detected post-login, it can trigger further verification or terminate the session altogether.
 
 * **User-Specific Adaptation**: Over time, adaptive authentication systems learn from individual user behaviors, refining their risk assessments and minimizing unnecessary authentication prompts.
-
-
-
-
 ## Enhancing User Experience
 
 

@@ -36,10 +36,6 @@ While **EDR (Endpoint Detection and Response)** focuses solely on endpoints (suc
 * **Cloud security**
 
 * **Identity and access management (IAM)**
-
-
-
-
 By integrating these disparate data sources into a single system, XDR provides a more comprehensive view of the organization’s security landscape and enables more efficient detection of complex, multi-stage attacks.
 ## The Evolution of Threat Detection and Response: From EDR to XDR
 
@@ -237,10 +233,6 @@ While XDR offers many benefits, organizations should also be aware of the challe
 
 
 * **Complexity of Deployment**
-
-
-
-
 : XDR solutions can be complex to deploy, particularly in organizations with legacy systems or a large number of existing security tools. Integrating all of these components into a single platform may require careful planning and execution.
 
 

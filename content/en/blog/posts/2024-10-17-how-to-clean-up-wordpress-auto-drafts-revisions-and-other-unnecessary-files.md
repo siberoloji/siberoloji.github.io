@@ -82,10 +82,6 @@ Now that you understand why it's essential to clean up WordPress, let's look at 
 * **Unused Media Files:** Over time, your WordPress media library can become full of images, videos, and other media files that are no longer in use.
 
 * **Spam and Unapproved Comments:** These comments can accumulate quickly, and if left unattended, can add to the clutter in your database.
-
-
-
-
 ## How to Clean Up Auto Drafts and Revisions in WordPress
 
 
@@ -135,10 +131,6 @@ WordPress allows you to manually delete auto drafts, revisions, and trashed item
 * After moving drafts or revisions to the trash, navigate to “Posts” > “All Posts” > “Trash.”
 
 * Click on “Empty Trash” to permanently delete all items.
-
-
-
-
 This method works, but it's not efficient for larger sites. If you manage a site with hundreds or thousands of posts, using a plugin or a more automated method will save you significant time and effort.
 
 
@@ -168,10 +160,6 @@ WP-Optimize is one of the most widely-used WordPress cleanup plugins. It can hel
 * Under the “Database” tab, you’ll see options for cleaning up revisions, auto drafts, trashed items, and more.
 
 * Select the items you want to clean and click “Run Optimization.”
-
-
-
-
 The plugin will automatically clean up all selected database tables, making the process quick and hassle-free.
 
 
@@ -193,10 +181,6 @@ Advanced Database Cleaner is another excellent plugin that focuses on cleaning y
 * You can schedule automatic cleanups or manually select items like revisions, drafts, and comments to be deleted.
 
 * Click “Clean” to remove the selected items.
-
-
-
-
 The plugin also allows you to schedule regular cleanups, so your database stays optimized over time.
 
 
@@ -218,10 +202,6 @@ WP-Sweep is another efficient plugin for cleaning up your WordPress database. It
 * You will see various items such as revisions, drafts, trashed posts, and more.
 
 * Click the “Sweep” button next to each category you want to clean up.
-
-
-
-
 The plugin will automatically remove the selected items, keeping your database lean and optimized.
 
 

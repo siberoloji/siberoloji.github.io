@@ -54,10 +54,6 @@ To understand how VDFS operates, we need to grasp a few key concepts that define
 * **Fault Tolerance**: Since data is distributed across multiple nodes and often replicated, VDFS can tolerate failures of individual nodes without affecting the overall system. This ensures reliability and data integrity.
 
 * **Access Transparency**: A key feature of VDFS is that it provides a unified namespace for users and applications. Regardless of where a file is physically stored in the system, it can be accessed using a consistent path, making file access simple and transparent.
-
-
-
-
 **How Does VDFS Work?**
 
 

@@ -14,8 +14,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/linuxdistributions.webp
-
-
 url: linux-distributions-server-usage-comprehensive-comparison
 keywords:
   - linux

@@ -35,10 +35,6 @@ What is 5G?
 * **Lower latency**: Reduced delay in data transmission, as low as 1 millisecond.
 
 * **Greater capacity**: Ability to connect millions of devices per square kilometer.
-
-
-
-
 These advancements make 5G an essential enabler for a more connected world, paving the way for technologies like autonomous vehicles, smart cities, and widespread IoT adoption.
 
 

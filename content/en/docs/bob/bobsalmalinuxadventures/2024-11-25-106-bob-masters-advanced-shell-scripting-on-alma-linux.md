@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 1060
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to dive deeper into **shell scripting**, mastering techniques to automate complex workflows and optimize system administration. By writing advanced scripts, he aimed to save time, enhance precision, and solve problems efficiently.

@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 **PostgreSQL**, an advanced open-source relational database system, supports robust replication features that allow high availability, scalability, and fault tolerance. **Streaming replication**, in particular, is widely used for maintaining a near-real-time replica of the primary database. In this article, we’ll guide you through setting up streaming replication on **PostgreSQL** running on **AlmaLinux**, a reliable RHEL-based distribution.

@@ -66,10 +66,6 @@ To start using Web Mentions on your WordPress site, you will need:
 * **Use Bridgy**: A service that connects your social media interactions (like Mastodon) back to your WordPress site.
 
 * **Install Semantic Linkbacks**: This enhances how mentions and likes are displayed on your site[4][5].
-
-
-
-
 **Step-by-Step Guide**
 
 
@@ -106,10 +102,6 @@ To start using Web Mentions on your WordPress site, you will need:
 
 
 * Publish a post with links to other sites and check if Webmentions appear as intended.
-
-
-
-
 ## Challenges with Web Mentions
 
 
@@ -154,10 +146,6 @@ As more websites adopt decentralized standards like Web Mentions, we may see a r
 * **Improved User Experience**: With direct interactions across sites, users may find more meaningful ways to engage with content creators.
 
 * **Increased Adoption of IndieWeb Principles**: More platforms may embrace decentralization, giving users greater control over their online identities and interactions[1][2].
-
-
-
-
 ## Conclusion
 
 

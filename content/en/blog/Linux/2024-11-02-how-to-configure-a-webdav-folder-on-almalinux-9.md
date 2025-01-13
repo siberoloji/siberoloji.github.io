@@ -172,8 +172,6 @@ Add the following configuration:
 
 Alias /webdav /var/www/html/webdav
 `</pre>
-
-
 This configuration enables WebDAV on the `/webdav` directory and requires authentication.
 <hr>
 5. Setting Up Authentication
@@ -227,8 +225,6 @@ Install `davfs2`:
 Mount the WebDAV folder:
 <pre><code class="language-bash">sudo mount -t davfs http://your-server-ip/webdav /mnt/webdav
 `</pre>
-
-
 #### On Windows
 
 * Open File Explorer.

@@ -15,8 +15,6 @@ linkTitle: Database Error on Startup
 weight: 40
 translationKey: msf-database-error
 ---
-
-
 If you are using Metasploit framework software on Kali Operating System, you may have started to receive the following error at the start of `msfconsole` after the latest update. Using database in msfconsole is very useful for saving and reusing the scans you have made. The reason for this error is Postgresql 9.6 version installed in Kali with the latest update.
 
 ## ERROR MESSAGE

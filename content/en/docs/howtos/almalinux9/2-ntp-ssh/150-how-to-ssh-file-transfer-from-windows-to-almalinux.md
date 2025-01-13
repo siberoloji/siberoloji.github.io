@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SSH File Transfer from Windows
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 150
 

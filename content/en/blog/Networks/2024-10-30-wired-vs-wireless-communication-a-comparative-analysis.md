@@ -39,10 +39,6 @@ Wired communication involves the transmission of data over physical cables or wi
 * **Speed:** Wired connections can offer higher data transfer speeds, especially for long distances.
 
 * **Cost-Effective:** Wired infrastructure can be relatively inexpensive to install and maintain, especially for short distances.
-
-
-
-
 **Types of Wired Communication:**
 
 
@@ -51,10 +47,6 @@ Wired communication involves the transmission of data over physical cables or wi
 * **Fiber Optic:** Fiber optic cables use light pulses to transmit data at extremely high speeds. They are ideal for long-distance communication and high-bandwidth applications.
 
 * **Coaxial Cable:** Coaxial cables are used for cable television and internet connections. They offer good performance and are relatively affordable.
-
-
-
-
 **Wireless Communication**
 
 
@@ -73,10 +65,6 @@ Wireless communication, on the other hand, involves the transmission of data ove
 * **Scalability:** Wireless networks can be easily expanded to accommodate more devices.
 
 * **Cost-Effective:** Wireless technologies can be more cost-effective to install and maintain, especially for large areas.
-
-
-
-
 **Types of Wireless Communication:**
 
 
@@ -87,10 +75,6 @@ Wireless communication, on the other hand, involves the transmission of data ove
 * **Bluetooth:** Bluetooth is a short-range wireless technology used for connecting devices such as headphones, keyboards, and mice.
 
 * **Satellite Communication:** Satellite communication involves the transmission of data via satellites orbiting the Earth. It is used for global communication and remote areas.
-
-
-
-
 **Comparing Wired and Wireless Communication**
 
 
@@ -115,10 +99,6 @@ The choice between wired and wireless communication depends on various factors, 
 * **Cost:** Wired infrastructure can be expensive to install, especially for large areas. Wireless technologies can be more cost-effective, but they may require ongoing subscription fees.
 
 * **Interference:** Wireless connections can be susceptible to interference from other devices and environmental factors.
-
-
-
-
 the Future of Communication**
 
 

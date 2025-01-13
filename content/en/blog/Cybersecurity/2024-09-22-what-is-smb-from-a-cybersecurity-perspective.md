@@ -37,10 +37,6 @@ In a nutshell, SMB facilitates:
 * Inter-process communication for networked computers
 
 * User access control to resources based on permissions
-
-
-
-
 Despite its utility, SMB is infamous for vulnerabilities that have been exploited by hackers over the years, making it a significant focus area in cybersecurity.
 
 
@@ -67,10 +63,6 @@ SMBv2 was introduced with Windows Vista and Windows Server 2008, bringing improv
 * Increased scalability and performance
 
 * Enhanced message signing, preventing man-in-the-middle (MITM) attacks
-
-
-
-
 SMBv3 (introduced in Windows 8 and Server 2012) further fortified security with features like:
 
 
@@ -79,10 +71,6 @@ SMBv3 (introduced in Windows 8 and Server 2012) further fortified security with 
 * Pre-authentication integrity: Ensures that the client and server are communicating through a secure channel from the start
 
 * Improved performance optimizations, including faster reconnections and reduced latency
-
-
-
-
 SMBv3.1.1, introduced in Windows 10 and Windows Server 2016, added even stricter security measures, such as mandatory encryption negotiation and AES-128 encryption.
 
 
@@ -182,10 +170,6 @@ Poorly configured SMB shares are a common issue. Administrators may inadvertentl
 * Regularly audit user access rights and permissions.
 
 * Configure SMB shares to require **strong authentication**.
-
-
-
-
 5. Best Practices for Securing SMB
 
 

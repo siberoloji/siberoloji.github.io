@@ -31,10 +31,6 @@ Boolean algebra is a branch of mathematics named after George Boole, an English 
 * **0** typically represents the value "false."
 
 * **1** typically represents the value "true."
-
-
-
-
 Boolean algebra uses three primary operations to manipulate binary values: **AND**, **OR**, and **NOT**. These operations, combined with the laws and properties of Boolean algebra, form the basis of digital logic and the design of digital circuits.
 
 
@@ -46,10 +42,6 @@ Let's take a closer look at the three fundamental Boolean operations:
 
 
 * **AND Operation (∧):**
-
-
-
-
 The AND operation outputs true (1) only if both input variables are true. In all other cases, it outputs false (0).
 
 
@@ -66,10 +58,6 @@ In practical terms, think of the AND operation as a requirement that both condit
 
 
 * **OR Operation (∨):**
-
-
-
-
 The OR operation outputs true (1) if at least one of the input variables is true. It only outputs false (0) when both input variables are false.
 
 
@@ -179,10 +167,6 @@ Boolean algebra, like conventional algebra, follows a set of rules and laws that
 * A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)
 
 * A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)
-
-
-
-
 These laws are invaluable for simplifying Boolean expressions, which is crucial when designing digital circuits, where minimizing the number of gates and connections reduces both cost and complexity.
 
 
@@ -297,10 +281,6 @@ This expression can be implemented with:
 * Another AND gate for (¬A ∧ C)
 
 * An OR gate to combine the two AND gate outputs
-
-
-
-
 This is how Boolean algebra translates into physical logic gates, forming the foundation of digital systems.
 
 

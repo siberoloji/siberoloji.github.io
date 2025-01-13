@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 780
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-secures-almalinux-security-auditing-hardening
 ---

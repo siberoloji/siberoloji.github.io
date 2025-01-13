@@ -69,10 +69,6 @@ We have examined the general structure of the coordination processes, which is t
 * Will static analyzes be performed on the application?
 
 * What are the other topics requested?
-
-
-
-
 # Wireless Network Test
 
 
@@ -89,10 +85,6 @@ We have examined the general structure of the coordination processes, which is t
 * What are the broadcast distances of wireless networks?
 
 * How many people on average use these wireless networks?
-
-
-
-
 # Physical Security Tests
 
 
@@ -117,10 +109,6 @@ We have examined the general structure of the coordination processes, which is t
 * Will the testing team test access to video recorders?
 
 * Is there an alarm system?
-
-
-
-
 # Social Engineering Test
 
 
@@ -129,8 +117,4 @@ We have examined the general structure of the coordination processes, which is t
 * Will a list of phone numbers be provided for Social Engineering tests?
 
 * Is physical access to the system granted as a result of social engineering?
-
-
-
-
 Questions related to the above mentioned tests can be expanded. It is also possible to differentiate based on experience.

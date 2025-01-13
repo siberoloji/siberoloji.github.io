@@ -15,15 +15,9 @@ categories:
 tags:
     - 'linux nasıl'
 ---
-
-
 Bilgisayarınıza indirdiğiniz dosyaların bir kısmını, sonradan işime yarar diyerek tutuyor olabilirsiniz. Bir süre sonra diskinizin kapasitesi azalmaya başlar. Siz de bu dosyaları silmek için, yüzlerce dosya arasında araştırma yapmaya başlarsınız. Bu yazıda find komutunu kullanarak, bilgisayarınızda bulunan büyük dosyaları bulmanın yolunu açıklamak istiyorum.
 
-
-
 Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux filtreleme komutları yardımıyla listeliyoruz ve en büyük 5 dosyayı ekrana yazdırıyoruz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">find . -xdev -ls | sort -n -k 7 | tail -5
 
@@ -35,38 +29,20 @@ Aşağıdaki örnekte, find komutunu kullanarak elde ettiğimiz sonucu, Linux fi
 
 </pre>
 <!-- /wp:preformatted -->
-
-
 ## Açıklama:
-
-
 
 find .  : Yukarıda vermiş olduğumuz komut, bulunduğumuz klasörü ve alt klasörlerindeki tüm dosyaları arar. Komutu verdiğiniz yer önemlidir. Bu örnekte, komut home klasöründe ve sudo yetkisi olmadan verilmiştir. Baş tarafına sudo yetkisi eklediğinizde sonuçlar değişebilir.
 
-
-
 -xdev  : find komutua ait bu parametre, sadece üzerinde çalıştığımız diskte işlem yapılmasını sağlar. Sisteminize bağlı diğer disk bölümlerinin aranmasını engeller.
-
-
 
 -ls  : Sonuçların listelenmesini sağlar.
 
-
-
 sort  : Elde ettiğimiz sonuçlara sıralama işlemi yapmamızı sağlar.
-
-
 
 -n  : Sıralamanın sayılar değerlerle yapılacağını belirtir.
 
-
-
 -k 7  : Sıralamanın, bir kriter girilerek yapılmasını sağlar. Bizim örneğimizde 7. sütun olan boyut (size) sütunu kullanılmıştır.
 
-
-
 tail -5  : Sort komutu ile küçükten büyüğe yapılan sıralamanın sonucunda, en büyük dosyalar listenin en sonunda yer alacaktır. tail -5  komutu ile en son 5 satırın ekranda görüntülenmesi sağlanır. İsterseniz, tail -10  şeklinde değiştirerek en büyük 10 dosyayı da bulabilirsiniz.
-
-
 
 Size sadece, bulunan dosyaların hangilerinin yedekleme diskine aktarılacağını, hangilerinin sileceğine karar vermek kalıyor. Sizin de kullandığınız faydalı komutlar varsa, bize bildirebilirsiniz. Burada açıklamaları ile birlikte yayınlayabiliriz.

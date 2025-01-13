@@ -18,51 +18,27 @@ tags:
     - 'linux komut'
     - 'linux nasıl'
 ---
-
-
 Linux işletim sisteminizde bir bağlantı problemi olduğunda veya IP ayarlarını değiştirdiğinizde ağ kartınızı tekrar başlatmanız gerekebilir. Bunu yapmak için bilgisayar veya sunucunuzu tekrar başlatmanıza gerek yoktur. Aşağıda açıkladığımız komutlar sayesinde ağ kartınızı kapatıp açabilirsiniz.
-
-
 
 **UYARI: Bu yöntem, bilgisayarınıza doğrudan erişiminiz varsa kullanılır. Sunucunuza SSH vb yöntemle uzaktan bağlıysanız, ağ kartınız devre dışı kalacağı için erişiminiz kaybedersiniz. UYARI!!!**
 
-
-
 ## Ağ kartını durdurmak için
-
-
 ```bash
 # nmcli networking off```
 
-
-
 ## Ağ kartını başlatmak için
-
-
 ```bash
 # nmcli networking on
 ```
 
-
-
 Sunucunuza doğrudan erişimiz yoksa kapat / aç yöntemi yerine "yeniden başlat" yöntemini deneyebilirsiniz.
 
-
-
 ## Ağ kartını Yeniden Başlatmak için
-
-
 ```bash
 # systemctl restart NetworkManager```
 
-
-
 ## Ağ kartını durumunu kontrol etmek için
-
-
 ```bash
 # systemctl status NetworkManager```
-
-
 
 Yukarıda listelenen komutlar hemen hemen tüm Linux sistemlerinde çalışır. Sisteminizde farklı bir ağ yöneticisi bulunuyorsa, man sayfalarına bakabilirsiniz.

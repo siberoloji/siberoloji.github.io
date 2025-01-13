@@ -16,11 +16,7 @@ tags:
     - c++
     - 'string birleştirme'
 ---
-
-
 Bu yazımızda, 2 adet string değişkeni birleştirme örneğini gösteriyoruz.
-
-
 ```cpp
 #include <iostream>
 #include <string>

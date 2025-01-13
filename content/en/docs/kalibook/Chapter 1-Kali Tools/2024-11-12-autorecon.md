@@ -10,16 +10,12 @@ tags:
 categories:
   - Kali linux
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 260
 
 keywords:
   - autorecon
-
-
 
 featured_image: /images/kalilinux2.webp
 url: autorecon-kali-linux-tool-comprehensive-guide

@@ -117,10 +117,6 @@ Several factors contribute to latency in a network. Some common causes include:
 * **Device Processing Time**: Routers and switches require time to process packets, contributing to processing latency.
 
 * **Bandwidth Limitations**: Lower bandwidth can increase transmission latency, as data packets take longer to pass through limited-capacity channels.
-
-
-
-
 ## 8. Causes of Jitter in Networks
 
 
@@ -135,10 +131,6 @@ Jitter is mainly caused by irregularities in data packet transmission. Common ca
 * **Interference**: Wireless networks are particularly susceptible to interference from other devices, causing packet delays and increased jitter.
 
 * **Device Performance Variability**: Variations in processing speed among network devices, such as routers and switches, can lead to inconsistent packet delivery times.
-
-
-
-
 ## 9. Impacts of Latency and Jitter on Network Performance
 
 
@@ -153,10 +145,6 @@ Both latency and jitter have significant impacts on network performance and user
 * **Online Gaming**: High latency results in lag, while jitter creates unpredictable delays, making real-time reactions challenging.
 
 * **Data Transfers**: Latency affects the overall time taken to upload or download files, but jitter has minimal impact on non-real-time data transfers.
-
-
-
-
 ## 10. Latency and Jitter in Real-Time Applications
 
 
@@ -167,10 +155,6 @@ Real-time applications, such as online gaming, video calls, and VoIP services, a
 * **Latency**: For most real-time applications, a latency below 100 ms is ideal. Above this, users start to experience noticeable delays that can hinder the interactive experience.
 
 * **Jitter**: Ideally, jitter should be kept below 30 ms for real-time applications. High jitter creates inconsistency in data arrival times, disrupting the quality and clarity of audio and video.
-
-
-
-
 ## 11. How to Reduce Latency
 
 
@@ -187,10 +171,6 @@ Reducing latency can significantly improve network performance and user satisfac
 * **Implement Quality of Service (QoS)**: QoS can prioritize high-priority traffic, reducing queuing latency for critical applications.
 
 * **Switch to Wired Connections**: Wired connections, such as fiber optics, have lower latency compared to wireless connections.
-
-
-
-
 ## 12. How to Reduce Jitter
 
 
@@ -205,10 +185,6 @@ Jitter can be minimized by managing network stability and ensuring consistent da
 * **Optimize Network Devices**: Ensure routers and switches are up to date and capable of handling traffic without causing delays.
 
 * **Minimize Wireless Interference**: Reduce interference in wireless networks by limiting the number of connected devices and avoiding physical obstacles that can disrupt signal strength.
-
-
-
-
 ## 13. Latency and Jitter in 5G and Next-Gen Networks
 
 
@@ -221,10 +197,6 @@ With the rollout of 5G, latency and jitter are expected to reduce drastically, p
 * **Autonomous Vehicles**: Ultra-low latency in 5G allows for near-instantaneous communication between vehicles and infrastructure, essential for safe autonomous navigation.
 
 * **IoT Applications**: Industrial IoT applications benefit from 5G’s reduced latency and jitter, allowing for real-time monitoring and automation.
-
-
-
-
 ## 14. Frequently Asked Questions (FAQs)
 
 

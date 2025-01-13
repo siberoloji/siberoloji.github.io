@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 480
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: high-performance-computing-kubernetes-alma-linux
 ---

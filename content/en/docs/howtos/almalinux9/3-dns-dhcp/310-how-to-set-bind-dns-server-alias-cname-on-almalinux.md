@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server Alias (CNAME)
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 310
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: set-bind-dns-server-alias-cname-almalinux
 ---

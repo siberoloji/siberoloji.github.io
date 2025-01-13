@@ -72,10 +72,6 @@ Twisted pair cabling remains one of the most commonly used transmission media in
 * Requires proper grounding
 
 * Commonly used in industrial settings
-
-
-
-
 Coaxial Cable
 
 
@@ -105,10 +101,6 @@ Coaxial cables offer superior protection against noise and higher bandwidth capa
 * Radio frequency transmission
 
 * Computer network connections
-
-
-
-
 Fiber Optic Cable
 
 
@@ -165,10 +157,6 @@ Fiber optic cables represent the pinnacle of guided transmission media, using li
 * Easier to install and maintain
 
 * Suitable for local area networks
-
-
-
-
 ## Unguided (Wireless) Transmission Media
 
 
@@ -205,10 +193,6 @@ Radio waves form the basis of many wireless communication systems, offering flex
 * Bluetooth devices
 
 * IoT devices
-
-
-
-
 Microwaves
 
 
@@ -241,10 +225,6 @@ Microwave transmission operates at higher frequencies than radio waves, offering
 * Wireless broadband
 
 * Radar systems
-
-
-
-
 Infrared
 
 
@@ -277,10 +257,6 @@ Infrared transmission offers short-range, high-bandwidth communication options.
 * Indoor wireless networks
 
 * Industrial automation
-
-
-
-
 ## Factors Affecting Transmission Media Selection
 
 
@@ -301,10 +277,6 @@ When choosing transmission media for specific applications, several factors must
 * Error rates
 
 * Latency considerations
-
-
-
-
 2. Installation Environment
 
 
@@ -317,10 +289,6 @@ When choosing transmission media for specific applications, several factors must
 * Electromagnetic interference levels
 
 * Security requirements
-
-
-
-
 3. Cost Considerations
 
 
@@ -333,10 +301,6 @@ When choosing transmission media for specific applications, several factors must
 * Upgrade potential
 
 * Lifetime value
-
-
-
-
 4. Regulatory Compliance
 
 
@@ -347,10 +311,6 @@ When choosing transmission media for specific applications, several factors must
 * Environmental regulations
 
 * Safety requirements
-
-
-
-
 ## Future Trends in Transmission Media
 
 
@@ -371,10 +331,6 @@ Emerging Technologies
 * Advanced wireless standards
 
 * Quantum communication channels
-
-
-
-
 Environmental Considerations
 
 
@@ -385,10 +341,6 @@ Environmental Considerations
 * Reduced electromagnetic pollution
 
 * Sustainable manufacturing processes
-
-
-
-
 ## Best Practices for Implementation
 
 
@@ -435,10 +387,6 @@ To ensure optimal performance and longevity of transmission media installations:
 * Update documentation
 
 * Plan for upgrades
-
-
-
-
 ## Conclusion
 
 

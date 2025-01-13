@@ -15,8 +15,6 @@ tags:
    - cybersecurity
    - metasploit framework
 ---
-
-
 Bu yazımızda, Metasploit içerisinde sağlanan Port tarama modüllerine kısaca bakacağız. Nmap ve diğer port tarama seçeneklerinin yanında, Metasploit tarafından sağlanan Port tarama modüllerinin, kullanıcıya ne gibi esneklikler sağladığını göreceğiz.
 
 ## Metasploit İçinde Port Tarama

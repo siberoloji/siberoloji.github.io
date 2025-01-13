@@ -16,19 +16,11 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Kullanışlı Fonksiyonlar
-
-
 
 Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
 
-
-
 ## Kullanılabilir WMIC Komutları
-
-
 ```bash
 def wmicexec(session,wmiccmds= nil)
         windr = ''
@@ -75,11 +67,7 @@ def wmicexec(session,wmiccmds= nil)
 end
 ```
 
-
-
 ## Dosyaların MAC Zamanlarını Değiştirme
-
-
 ```bash
 def chmace(session,cmds)
     windir = ''
@@ -101,11 +89,7 @@ def chmace(session,cmds)
 end
 ```
 
-
-
 ## UAC Kontrolü
-
-
 ```bash
 def checkuac(session)
     uac = false
@@ -132,11 +116,7 @@ def checkuac(session)
 end
 ```
 
-
-
 ## Tüm Olay Loglarını Temizleme
-
-
 ```bash
 def clrevtlgs(session)
     evtlogs = [
@@ -162,11 +142,7 @@ def clrevtlgs(session)
 end
 ```
 
-
-
 ## Bir Komut Listesini Çalıştırma
-
-
 ```bash
 def list_exec(session,cmdlst)
     **if **cmdlst.kind_of? String
@@ -192,11 +168,7 @@ def list_exec(session,cmdlst)
 end
 ```
 
-
-
 ## Dosyaları Karşı Tarafa Yükleme
-
-
 ```bash
 def upload(session,file,trgloc = nil)
     **if **not ::File.exists?(file)
@@ -225,11 +197,7 @@ def upload(session,file,trgloc = nil)
 end
 ```
 
-
-
 ## Bir Dosyaya Veri Yazma
-
-
 ```bash
 def filewrt(file2wrt, data2wrt)
         output = ::File.open(file2wrt, "a")

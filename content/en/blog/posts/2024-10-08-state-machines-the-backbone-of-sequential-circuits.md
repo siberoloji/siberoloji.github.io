@@ -53,10 +53,6 @@ A Mealy machine is a type of finite state machine where the output is a function
 * **Potential for glitches:** Due to asynchronous outputs, Mealy machines can be susceptible to glitches if not designed carefully.
 
 * **Fewer states:** Mealy machines often require fewer states compared to Moore machines for the same functionality.
-
-
-
-
 **Moore Machines**
 
 
@@ -75,10 +71,6 @@ A Moore machine is another type of finite state machine where the output is sole
 * **More states:** Moore machines often require more states compared to Mealy machines for the same functionality.
 
 * **Simpler design:** Moore machines are generally easier to design and analyze due to their simpler structure.
-
-
-
-
 **Comparison of Mealy and Moore Machines**
 
 
@@ -101,10 +93,6 @@ State machines are used in a wide range of applications, including:
 * **Hardware design:** State machines are used to design digital circuits, such as finite state machines (FSMs) and sequential logic circuits.
 
 * **Communication systems:** State machines are used to implement protocols and control the behavior of communication devices.
-
-
-
-
 **Design and Implementation**
 
 
@@ -117,10 +105,6 @@ State machines can be designed and implemented using various methods, including:
 * **State tables:** State tables are tabular representations of state machines, listing the states, inputs, outputs, and next states.
 
 * **Hardware description languages (HDLs):** HDLs like Verilog and VHDL can be used to describe state machines in a textual format.
-
-
-
-
 **Conclusion**
 
 

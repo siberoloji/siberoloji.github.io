@@ -57,10 +57,6 @@ SELECT * FROM users WHERE username = 'johndoe' OR '1'='1';
 
 
 This query will return **all users** in the database because the condition `'1'='1'` is always true. This is just one example of how SQL injection can be used to manipulate the database to expose sensitive information.
-
-
-
-
 #### **Types of SQL Injection Attacks**
 
 

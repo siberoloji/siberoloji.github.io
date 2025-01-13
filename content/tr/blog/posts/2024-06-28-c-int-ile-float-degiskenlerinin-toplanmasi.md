@@ -14,11 +14,7 @@ categories:
 tags:
     - c++
 ---
-
-
 Bu örneğimizde int ve float türünde 2 değişkenin toplamını bulmayı gösteriyoruz.
-
-
 ```cpp
 #include <iostream>
 

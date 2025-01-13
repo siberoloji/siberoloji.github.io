@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: File Transfer with SSH
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 140
 

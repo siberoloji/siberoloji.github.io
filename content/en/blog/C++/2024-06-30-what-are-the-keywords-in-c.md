@@ -206,8 +206,4 @@ C++ has a set of reserved keywords that have special meanings to the compiler. T
 * `xor`
 
 * `xor_eq`
-
-
-
-
 Please note that some of these keywords are only available in newer versions of C++.

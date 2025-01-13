@@ -85,10 +85,6 @@ The principles of responsible disclosure typically include:
 * **Time for Remediation**: Hackers give the organization an appropriate amount of time to fix the problem, which can range from a few days to several months, depending on the severity and complexity of the vulnerability.
 
 * **Public Disclosure**: Once the issue is fixed, the ethical hacker can disclose the vulnerability publicly, often as part of a research paper or advisory. If the organization fails to respond or address the issue in a reasonable time, the hacker may still choose to disclose it responsibly, alerting users and the broader security community.
-
-
-
-
 The goal of responsible disclosure is to balance the needs of all parties: allowing the organization to protect its users while giving hackers the recognition they deserve for their discoveries.
 4. Ethical Considerations for Hackers and Organizations
 

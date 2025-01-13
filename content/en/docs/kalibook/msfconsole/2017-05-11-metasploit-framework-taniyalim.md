@@ -122,8 +122,6 @@ Starting database at /home/umut/.msf4/db...success
 
                         Press SPACE BAR to **continue**
 
-
-
        [ metasploit v4.14.17-dev-                        ]
 + -- --[ 1648 exploits - 946 auxiliary - 291 post        ]
 + -- --[ 486 payloads - 40 encoders - 9 nops             ]

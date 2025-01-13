@@ -40,10 +40,6 @@ The key principles of modular design include:
 * Reusability: Well-designed modules can be used in multiple projects or systems.
 
 * Encapsulation: The internal workings of a module should be hidden from other parts of the system.
-
-
-
-
 ## Benefits of Modular Design in Digital Systems
 
 

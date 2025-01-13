@@ -15,11 +15,7 @@ tags:
     - c++
     - strcat
 ---
-
-
 Bu örneğimizde, uzunluğu 50 karakter olarak belirlenmiş 2 adet char değişkenini, strcat metodu ile birleştirmeyi görebilirsiniz.
-
-
 ```cpp
 #include <iostream>
 #include <cstring>

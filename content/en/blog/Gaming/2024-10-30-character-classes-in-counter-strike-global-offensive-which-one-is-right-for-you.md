@@ -40,10 +40,6 @@ Unlike class-based games such as Overwatch or Rainbow Six Siege, CS:GO relies on
 * **Lurker**
 
 * **Rifler**
-
-
-
-
 Each of these roles has a distinct function on the team and can significantly influence a match's outcome.
 **1. Entry Fragger**
 
@@ -78,10 +74,6 @@ The **Entry Fragger** is the spearhead of the team, typically the first to push 
 * **Ideal for Aggressive Teams**: When your team thrives on fast, aggressive gameplay, the Entry Fragger becomes indispensable.
 
 * **Great in Close-Quarters Maps**: On smaller maps like Inferno or Dust II, Entry Fraggers can exploit tight angles for faster kills.
-
-
-
-
 **2. Support**
 
 
@@ -115,10 +107,6 @@ A **Support** player in CS:GO focuses on assisting teammates with utilities and 
 * **Ideal for Structured Teams**: Support players shine when teammates communicate well and coordinate strategies.
 
 * **Best on Defensive Maps**: Support players are especially valuable on maps that require area control, such as Mirage or Overpass.
-
-
-
-
 **3. AWPer**
 
 
@@ -152,10 +140,6 @@ The **AWPer** specializes in using the AWP sniper rifle, a high-risk, high-rewar
 * **Ideal on Large, Open Maps**: Maps like Dust II and Train favor AWPers due to long sightlines.
 
 * **Effective in Slower Matches**: AWPers excel when the game is slow and tactical, as they can control key areas with ease.
-
-
-
-
 **4. In-Game Leader (IGL)**
 
 
@@ -189,10 +173,6 @@ The **In-Game Leader (IGL)** is the strategist and shot-caller of the team. This
 * **Ideal for Well-Coordinated Teams**: IGLs shine when teammates are disciplined and receptive to strategies.
 
 * **Crucial for Competitive Matches**: In high-stakes matches, an IGL’s ability to counter-strategize is invaluable.
-
-
-
-
 **5. Lurker**
 
 
@@ -226,10 +206,6 @@ A **Lurker** is a player who operates independently from the rest of the team, o
 * **Effective in Distracted Opponents**: When the enemy is focused on your teammates, lurking can be deadly.
 
 * **Ideal on Flank-Friendly Maps**: Maps with accessible flanking routes, like Nuke, benefit from a good lurker.
-
-
-
-
 **6. Rifler**
 
 

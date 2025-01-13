@@ -56,10 +56,6 @@ In practice, 2FA works by requiring users to authenticate their identity through
 * **First Factor: Password** This is the traditional login credential, something only the user knows. The password serves as the first layer of security.
 
 * **Second Factor: Additional Verification** The second factor is an additional form of authentication, which could be something the user has (like a phone or hardware token) or something inherent to the user (such as a fingerprint).
-
-
-
-
 Once the password is entered correctly, the second factor is requested. Only after successfully completing this second step does the system grant access to the user.
 Types of Two-Factor Authentication
 
@@ -82,10 +78,6 @@ SMS-based 2FA sends a one-time code to the user’s mobile phone via text messag
 * Convenient, as no additional app is needed.
 
 * Accessible to most users with a mobile phone.
-
-
-
-
 **Cons**:
 
 
@@ -107,10 +99,6 @@ Authenticator apps like Google Authenticator, Microsoft Authenticator, and Authy
 * More secure than SMS, as codes are generated locally on the device.
 
 * Works without an internet connection.
-
-
-
-
 **Cons**:
 
 
@@ -132,10 +120,6 @@ Email-based 2FA sends a code to the user’s registered email address. Users the
 * Easy for users who may not have access to a phone.
 
 * Convenient for users with secure email accounts.
-
-
-
-
 **Cons**:
 
 
@@ -157,10 +141,6 @@ Push-based 2FA sends a notification to a user’s device, prompting them to conf
 * Quick and convenient; users can simply approve the notification.
 
 * Less prone to phishing since there’s no code to enter.
-
-
-
-
 **Cons**:
 
 
@@ -182,10 +162,6 @@ Hardware tokens are physical devices, like YubiKey or Google Titan Security Key,
 * Extremely secure and less susceptible to phishing attacks.
 
 * Does not rely on a phone or internet connection.
-
-
-
-
 **Cons**:
 
 
@@ -209,10 +185,6 @@ Biometric 2FA uses unique biological traits, like a fingerprint or facial recogn
 * Highly secure and convenient for users.
 
 * No device dependency.
-
-
-
-
 **Cons**:
 
 

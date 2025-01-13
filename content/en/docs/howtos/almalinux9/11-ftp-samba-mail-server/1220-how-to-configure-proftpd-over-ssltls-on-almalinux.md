@@ -11,15 +11,11 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
   - proftpd
-
-
 featured_image: /images/almalinux.webp
 ---
 ProFTPD is a powerful and flexible FTP server that can be easily configured to secure file transfers using SSL/TLS. By encrypting data and credentials during transmission, SSL/TLS ensures security and confidentiality. This guide will walk you through the step-by-step process of setting up and configuring ProFTPD over SSL/TLS on AlmaLinux.

@@ -12,8 +12,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: ""
-
-
 url: psychological-effects-scarcity-investor-behavior-crypto-market
 ---
 Investor behavior in the cryptocurrency market is significantly influenced by psychological effects related to scarcity. The perception of limited availability of tokens can lead to various emotional and cognitive responses that ultimately affect buying and selling decisions. Here’s an exploration of the psychological effects of scarcity on investor behavior in the crypto market, drawing from recent research and observations.

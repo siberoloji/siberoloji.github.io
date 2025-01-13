@@ -117,10 +117,6 @@ Sorting algorithms are central to computer science, and this section provides a 
 * **Heap Sort**: This section includes an in-depth discussion of heap structures and their use in sorting.
 
 * **Counting, Radix, and Bucket Sort**: Non-comparison-based sorting methods are explored, particularly their use in specialized scenarios.
-
-
-
-
 Each algorithm is explained in detail with pseudocode, performance analysis, and real-world applications, making this section crucial for anyone studying computer science.
 
 

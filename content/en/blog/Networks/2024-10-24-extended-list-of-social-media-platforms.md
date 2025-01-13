@@ -62,10 +62,6 @@ General Social Media Platforms
 * **Ello** (Ad-free and creative community)
 
 * **Diaspora** (Decentralized, privacy-focused platform)
-
-
-
-
 Visual and Video Platforms
 
 
@@ -89,10 +85,6 @@ Visual and Video Platforms
 * **Bigo Live** (Video and live streaming)
 
 * **Caffeine** (Live streaming, focused on gaming)
-
-
-
-
 Niche or Specialized Networks
 
 
@@ -138,10 +130,6 @@ Niche or Specialized Networks
 * **Ko-fi** (Tipping and support platform for creators)
 
 * **Fanfiction.net** (Fan fiction writing and community)
-
-
-
-
 Regional or Specialized Platforms
 
 
@@ -173,10 +161,6 @@ Regional or Specialized Platforms
 * **Gaia Online** (Anime-themed social network)
 
 * **Odnoklassniki** (Popular in Russia for reconnecting with classmates)
-
-
-
-
 Professional and Work-Focused Platforms
 
 
@@ -200,10 +184,6 @@ Professional and Work-Focused Platforms
 * **Academia.edu** (Academics sharing papers and research)
 
 * **Polywork** (Professional networking with project focus)
-
-
-
-
 Dating and Networking Platforms
 
 
@@ -227,10 +207,6 @@ Dating and Networking Platforms
 * **Coffee Meets Bagel**
 
 * **Happn** (Location-based social discovery)
-
-
-
-
 Fitness, Sports, and Lifestyle Platforms
 
 
@@ -244,10 +220,6 @@ Fitness, Sports, and Lifestyle Platforms
 * **Runkeeper** (Fitness tracking with social features)
 
 * **MyFitnessPal** (Social elements in diet and fitness tracking)
-
-
-
-
 Gaming and Esports Platforms
 
 
@@ -261,10 +233,6 @@ Gaming and Esports Platforms
 * **GG** (Esports and gaming community)
 
 * **Kongregate** (Online games with community features)
-
-
-
-
 Pet and Animal Communities
 
 

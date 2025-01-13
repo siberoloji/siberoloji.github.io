@@ -49,10 +49,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Low Latency**: The short physical distance in a LAN minimizes data transmission delays, providing near-instantaneous access to network resources.
 
 * **Private Network**: LANs are typically privately owned, meaning access is restricted to users within the organization or household.
-
-
-
-
 **Common Applications of LAN**:
 
 
@@ -61,20 +57,12 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Home Networks**: Many homes set up LANs to connect personal devices, gaming consoles, and smart home gadgets.
 
 * **School and Campus Networks**: Educational institutions rely on LANs to connect student computers, faculty systems, and administrative tools for resource sharing and collaboration.
-
-
-
-
 **Benefits of LAN**:
 
 
 * **Cost-Effective**: LANs are relatively inexpensive to set up, using minimal hardware and infrastructure.
 
 * **Security**: As a closed network, LANs are easier to secure with firewalls and access controls.
-
-
-
-
 **Limitations of LAN**:
 
 
@@ -98,10 +86,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Moderate Speed**: While generally slower than LANs, MANs still offer high data transfer rates suitable for medium-scale data sharing.
 
 * **Backbone Network**: MANs often serve as a backbone network connecting smaller LANs within a region, such as connecting different offices of a company spread across a city.
-
-
-
-
 **Common Applications of MAN**:
 
 
@@ -110,20 +94,12 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **University Campuses**: Large educational institutions may deploy MANs to connect different faculties, dormitories, and research centers scattered across a city.
 
 * **Corporate Branches**: Companies with multiple locations within a city use MANs to ensure seamless communication and data access across all sites.
-
-
-
-
 **Benefits of MAN**:
 
 
 * **Scalability**: MANs are scalable, allowing multiple LANs to interconnect and expand the network without complex configurations.
 
 * **Centralized Management**: MANs can manage data and resources across various branches efficiently through centralized control.
-
-
-
-
 **Limitations of MAN**:
 
 
@@ -147,10 +123,6 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Slower Speeds Compared to LAN and MAN**: Data transfer rates in WANs tend to be lower due to the significant distances involved, though high-speed connections are increasingly available.
 
 * **Complex Infrastructure**: WANs rely on a combination of private and public communication channels, including satellite links, leased lines, and fiber optics.
-
-
-
-
 **Common Applications of WAN**:
 
 
@@ -159,20 +131,12 @@ The primary types of networks—LAN, MAN, and WAN—differ based on their scale,
 * **Internet**: The Internet itself is a global WAN, connecting millions of private, public, corporate, and government networks worldwide.
 
 * **Cloud Services**: Cloud providers rely on WANs to offer storage, computing, and applications accessible from anywhere globally.
-
-
-
-
 **Benefits of WAN**:
 
 
 * **Broad Reach**: WANs enable communication and resource sharing over great distances, critical for global businesses and organizations.
 
 * **Reliable Connectivity**: WANs provide consistent connectivity between remote locations, ensuring that users have continuous access to information.
-
-
-
-
 **Limitations of WAN**:
 
 
@@ -190,10 +154,6 @@ To better understand the differences between LAN, MAN, and WAN, here’s a quick
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>LAN (Local Area Network)</th><th>MAN (Metropolitan Area Network)</th><th>WAN (Wide Area Network)</th></tr></thead><tbody><tr><td>**Geographical Area**</td><td>Small (single building or campus)</td><td>Medium (city or large campus)</td><td>Large (countrywide or global)</td></tr><tr><td>**Speed**</td><td>High</td><td>Moderate</td><td>Moderate to low</td></tr><tr><td>**Latency**</td><td>Very low</td><td>Low to moderate</td><td>Moderate to high</td></tr><tr><td>**Cost**</td><td>Low</td><td>Moderate</td><td>High</td></tr><tr><td>**Ownership**</td><td>Private</td><td>Mixed (often public/private)</td><td>Often public infrastructure</td></tr><tr><td>**Examples**</td><td>Office network, home network</td><td>City government network, university campus</td><td>Corporate WAN, internet</td></tr></tbody></table></figure>
 <!-- /wp:table -->
-
-
-
-
 **6. Which Network Type is Right for You?**
 
 
@@ -220,42 +180,22 @@ Understanding the different types of computer networks—**LAN**, **MAN**, and *
 
 
 * LAN covers small areas with high speed and low latency, MAN covers cities with moderate speeds, and WAN spans large distances at lower speeds and higher costs.
-
-
-
-
 **Q2: Can I use a LAN for a city-wide network?**
 
 
 * LANs are not ideal for city-wide connections. For such purposes, MANs or WANs are more suitable due to their broader reach.
-
-
-
-
 **Q3: Why is WAN slower than LAN?**
 
 
 * WANs cover longer distances, and the infrastructure, such as satellite and telecommunication links, can introduce latency compared to the local infrastructure of LANs.
-
-
-
-
 **Q4: How secure is a WAN compared to LAN?**
 
 
 * WANs are more vulnerable due to public infrastructure but can be secured with VPNs, encryption, and additional firewalls, whereas LANs are inherently more secure due to limited access.
-
-
-
-
 **Q5: Are MANs typically private or public networks?**
 
 
 * MANs can be both, often having public elements like city fiber optics but controlled access within specific organizations.
-
-
-
-
 **Q6: Do all computer networks require internet access?**
 
 

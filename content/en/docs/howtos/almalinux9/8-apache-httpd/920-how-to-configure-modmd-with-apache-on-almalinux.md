@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 The `mod_md` module, or **Mod_MD**, is an Apache module designed to simplify the process of managing SSL/TLS certificates via the ACME protocol, which is the standard for automated certificate issuance by services like Let's Encrypt. By using `mod_md`, you can automate certificate requests, renewals, and updates directly from your Apache server, eliminating the need for third-party tools like Certbot. This guide will walk you through the process of configuring `mod_md` with Apache on AlmaLinux.

@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 760
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ### **Bob Explores Advanced Networking on AlmaLinux**

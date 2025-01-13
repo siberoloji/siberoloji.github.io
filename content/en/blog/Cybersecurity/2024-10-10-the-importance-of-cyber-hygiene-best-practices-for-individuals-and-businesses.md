@@ -38,10 +38,6 @@ Cyber hygiene encompasses a wide range of activities and habits that help mainta
 * **Compliance**: For businesses, maintaining good cyber hygiene is often a requirement for compliance with various data protection regulations and industry standards.
 
 * **Reputation Management**: Good cyber hygiene practices help protect both personal and business reputations by reducing the risk of embarrassing or damaging security incidents.
-
-
-
-
 ## Best Practices for Individuals
 
 
@@ -58,10 +54,6 @@ One of the most fundamental aspects of cyber hygiene is the use of strong, uniqu
 * Includes a mix of uppercase and lowercase letters, numbers, and special characters
 
 * Avoids common words or easily guessable information (like birthdays or names)
-
-
-
-
 Additionally, use a different password for each account. This way, if one account is compromised, your other accounts remain secure.
 
 

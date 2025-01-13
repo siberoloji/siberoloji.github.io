@@ -32,10 +32,6 @@ Insertion sort is a simple sorting algorithm that works by repeatedly inserting 
 * **Insert:** Insert the current element into the empty position.
 
 * **Repeat:** Repeat steps 2-4 for all remaining elements in the array.
-
-
-
-
 **Visual Example**
 
 
@@ -52,42 +48,22 @@ Let's sort the array `[5, 2, 4, 6, 1, 3]` using insertion sort:
 
 
 * Array: `[2, 5, 4, 6, 1, 3]`
-
-
-
-
 **Step 3:** Compare 4 with 5. 4 is smaller, so shift 5 to the right and insert 4 in its place.
 
 
 * Array: `[2, 4, 5, 6, 1, 3]`
-
-
-
-
 **Step 4:** Compare 6 with 5. 6 is larger, so it remains in its position.
 
 
 * Array: `[2, 4, 5, 6, 1, 3]`
-
-
-
-
 **Step 5:** Compare 1 with 5. 1 is smaller, so shift 5, 6, and 3 to the right and insert 1 in its place.
 
 
 * Array: `[1, 2, 4, 5, 6, 3]`
-
-
-
-
 **Step 6:** Compare 3 with 5. 3 is smaller, so shift 5 and 6 to the right and insert 3 in its place.
 
 
 * Array: `[1, 2, 3, 4, 5, 6]`
-
-
-
-
 The array is now sorted.
 
 
@@ -130,10 +106,6 @@ for i in range(len(arr)):
 * **Average case:** The time complexity is O(n^2).
 
 * **Worst case:** The array is sorted in reverse order. The time complexity is O(n^2).
-
-
-
-
 **Space Complexity**
 
 
@@ -152,20 +124,12 @@ The space complexity of insertion sort is O(1) as it only requires a constant am
 * **Online algorithm:** It can process elements one at a time as they arrive.
 
 * **Stable:** It preserves the relative order of elements with equal keys.
-
-
-
-
 **Disadvantages of Insertion Sort**
 
 
 * **Inefficient for large datasets:** It's not suitable for large arrays due to its quadratic time complexity.
 
 * **Slow for nearly sorted arrays:** While it's efficient for sorted arrays, it can be slow for nearly sorted arrays.
-
-
-
-
 **Conclusion**
 
 

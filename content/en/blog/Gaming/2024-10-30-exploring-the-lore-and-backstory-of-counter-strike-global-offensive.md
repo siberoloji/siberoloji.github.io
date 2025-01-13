@@ -125,10 +125,6 @@ Valve has added a layer of personalization with character models and skins, many
 * the ‘Bloody Darryl’ (Phoenix Connexion)**: This skin, complete with rugged attire and a menacing appearance, hints at the Phoenix Connexion's brutal and uncompromising approach.
 
 * **Lieutenant Rex Krikey (GIGN)**: With a look inspired by military veterans, Krikey’s model represents the experience and tactical prowess of the GIGN, highlighting the unit's role in high-risk operations.
-
-
-
-
 These skins not only add cosmetic value but also reflect the unique identities of CS:GO's factions and players.
 the Evolving Lore through Operations**
 

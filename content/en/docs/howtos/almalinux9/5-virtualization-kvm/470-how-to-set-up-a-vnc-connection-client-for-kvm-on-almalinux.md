@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Set Up a VNC Client for KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 470
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: set-vnc-client-kvm-almalinux
 ---

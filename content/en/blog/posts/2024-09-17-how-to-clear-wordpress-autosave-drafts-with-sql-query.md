@@ -171,10 +171,6 @@ Here’s how you can automate cleanup using **WP-Optimize**:
 * Under the "Database" tab, you’ll see options to clean up various types of data, including autosave drafts and post revisions.
 
 * Select the **Auto Drafts** checkbox and click **Run Optimization**.
-
-
-
-
 You can also schedule automatic cleanups to ensure your database stays optimized over time.
 
 

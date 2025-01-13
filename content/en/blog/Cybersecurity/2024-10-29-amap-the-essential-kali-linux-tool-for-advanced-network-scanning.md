@@ -93,10 +93,6 @@ amap [options] [target] [port(s)]```
 * **Target:** The IP address or hostname you want to scan.
 
 * **Port(s):** The specific ports to scan (can be a single port or a range).
-
-
-
-
 Common Amap Options
 
 
@@ -128,10 +124,6 @@ In this command:
 * `192.168.1.1`: The target IP.
 
 * `80`: The port you want to scan.
-
-
-
-
 Amap will then attempt to identify the application running on port 80 of the target.
 
 
@@ -163,10 +155,6 @@ Amap offers advanced features that allow for customized scanning based on specif
 * **Custom Signature Matching:** You can create or modify signatures to identify proprietary services.
 
 * **File-Based Scanning:** Amap supports input from files, allowing you to define multiple targets in a file and scan them all at once.
-
-
-
-
 Example of using a target file:
 
 

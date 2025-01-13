@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Proxy servers are indispensable tools for optimizing network performance, enhancing security, and controlling internet usage. Once you’ve set up a proxy server on AlmaLinux, the next step is configuring clients to route their traffic through the proxy. Proper configuration ensures seamless communication between devices and the proxy server, regardless of the operating system.

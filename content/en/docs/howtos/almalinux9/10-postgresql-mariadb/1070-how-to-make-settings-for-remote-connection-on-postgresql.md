@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 PostgreSQL, often referred to as Postgres, is a powerful, open-source relational database system that offers extensibility and SQL compliance. Setting up a remote connection to PostgreSQL is a common task for developers and system administrators, enabling them to interact with the database from remote machines. This guide will focus on configuring remote connections for PostgreSQL on **AlmaLinux**, a popular CentOS replacement that’s gaining traction in enterprise environments.

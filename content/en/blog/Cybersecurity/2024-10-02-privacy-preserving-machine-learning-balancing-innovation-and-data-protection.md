@@ -63,18 +63,10 @@ In practice, this means that even if someone were to access the output of a diff
 * Strong privacy guarantees.
 
 * Allows for useful analysis while safeguarding individuals' data.
-
-
-
-
 **Challenges**:
 
 
 * Adding noise can reduce the accuracy of machine learning models, particularly when small datasets are involved.
-
-
-
-
 2. **Federated Learning**
 
 
@@ -93,20 +85,12 @@ By keeping the data on individual devices and sharing only the model's learned p
 * Data never leaves the device, improving privacy and reducing the risk of data breaches.
 
 * Models can be continuously updated without accessing raw data.
-
-
-
-
 **Challenges**:
 
 
 * Requires significant computational resources on edge devices.
 
 * Communication overhead can be high due to frequent model updates.
-
-
-
-
 3. **Homomorphic Encryption**
 
 
@@ -125,20 +109,12 @@ Homomorphic encryption is a powerful tool for privacy-preserving machine learnin
 * Strong privacy protection by keeping data encrypted at all times.
 
 * Allows secure computation on sensitive data without revealing the raw information.
-
-
-
-
 **Challenges**:
 
 
 * Computationally expensive, requiring significant resources and time for encryption and decryption.
 
 * Not yet widely adopted due to performance constraints.
-
-
-
-
 4. **Secure Multi-Party Computation (MPC)**
 
 
@@ -157,10 +133,6 @@ MPC is particularly useful in collaborative settings where different organizatio
 * Preserves privacy even in multi-party collaborations.
 
 * Allows organizations to share insights without compromising data security.
-
-
-
-
 **Challenges**:
 
 

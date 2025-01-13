@@ -167,8 +167,4 @@ In C++, operators have a specific order in which they are evaluated when an expr
 * **Assignment operators `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&amp;=`, `^=`, `|=`**: These operators are used to assign values to variables.
 
 * **Comma operator `,`**: This operator is used to link related expressions together.
-
-
-
-
 Remember, when operators have the same precedence, the rule of associativity (left-to-right or right-to-left) is used to determine the order of operations.

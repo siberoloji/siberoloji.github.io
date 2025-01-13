@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SSH Key Pair Authentication
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 160
 

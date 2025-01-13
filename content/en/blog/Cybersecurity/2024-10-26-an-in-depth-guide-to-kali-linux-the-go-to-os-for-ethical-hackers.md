@@ -175,10 +175,6 @@ For those new to Kali Linux, here are a few basic commands to familiarize yourse
 * `nmap [IP Address]`: Runs a network scan on a specific IP address.
 
 * `sudo [command]`: Runs a command with administrative privileges.
-
-
-
-
 Learning these basic commands is essential as Kali Linux relies heavily on command-line input for many tasks.
 8. Best Practices for Using Kali Linux
 

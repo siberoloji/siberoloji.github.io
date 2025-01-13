@@ -37,10 +37,6 @@ Some of the most widely used classical encryption methods include:
 * **Elliptic curve cryptography (ECC)**: Relies on the complex mathematics of elliptic curves to secure data.
 
 * **Advanced Encryption Standard (AES)**: A symmetric encryption method that uses the same key for both encryption and decryption.
-
-
-
-
 These methods have served us well for decades, but they are not impervious to future threats. As quantum computers evolve, they may soon become powerful enough to break classical encryption by solving the complex mathematical problems that these algorithms are based on. For example, **Shor's algorithm**, a quantum algorithm, could theoretically factor large numbers exponentially faster than the best-known classical algorithms, putting RSA encryption at risk.
 
 
@@ -197,10 +193,6 @@ Despite the challenges, quantum encryption holds tremendous potential for future
 * **Critical Infrastructure**: Power grids, transportation systems, and water supply networks are all increasingly reliant on interconnected digital systems. Quantum encryption could help protect these critical infrastructures from cyberattacks that could cause widespread disruption.
 
 * **Space Communication**: Researchers are already exploring the potential of quantum encryption for secure satellite communication. Quantum satellites, such as China’s **Micius satellite**, have demonstrated the feasibility of quantum key distribution over long distances in space, offering a secure communication channel for global applications.
-
-
-
-
 ## Conclusion
 
 

@@ -87,10 +87,6 @@ Serial multipliers work by processing one bit of the multiplier at a time. These
 * Add the result to an accumulated sum.
 
 * Shift the multiplier and multiplicand, and repeat the process for the next bit.
-
-
-
-
 Serial multipliers are often used in low-cost and low-power applications where performance is not critical.
 
 
@@ -160,10 +156,6 @@ In **restoring division**, the process involves:
 * If the result is negative, the subtraction is undone (restored), and a **0** is placed in the quotient.
 
 * The remainder is updated, and the divisor is shifted to process the next bit.
-
-
-
-
 While restoring division is conceptually simple, it requires extra steps to restore the original value of the dividend when the result of the subtraction is negative, making it less efficient.
 
 
@@ -179,10 +171,6 @@ While restoring division is conceptually simple, it requires extra steps to rest
 * The next subtraction is performed, but instead of subtracting the divisor, it **adds** the divisor (since the previous step produced a negative result).
 
 * This process repeats, and the quotient is built bit by bit, as in restoring division.
-
-
-
-
 Non-restoring division is faster than restoring division because it skips the restoration step, making it more efficient in hardware implementations.
 
 
@@ -214,10 +202,6 @@ While both multiplication and division circuits perform essential arithmetic ope
 <!-- wp:table -->
 <figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Feature</th><th>Multiplication Circuits</th><th>Division Circuits</th></tr></thead><tbody><tr><td>**Complexity**</td><td>Relatively simple (serial) to complex (parallel)</td><td>More complex, due to remainder handling</td></tr><tr><td>**Operation Time**</td><td>Faster with parallel multipliers (e.g., Wallace tree)</td><td>Slower due to iterative nature</td></tr><tr><td>**Algorithm Examples**</td><td>Booth's Algorithm, Wallace Tree</td><td>Restoring, Non-Restoring, SRT</td></tr><tr><td>**Application**</td><td>Common in DSP, graphics, AI</td><td>Used in floating-point arithmetic, error correction</td></tr></tbody></table></figure>
 <!-- /wp:table -->
-
-
-
-
 Applications of Multiplication and Division Circuits
 
 

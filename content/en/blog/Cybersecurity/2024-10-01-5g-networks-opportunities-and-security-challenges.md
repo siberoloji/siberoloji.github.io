@@ -37,10 +37,6 @@ What is 5G?
 * Ultra-Reliable Low Latency Communications (URLLC): Providing latency as low as 1 millisecond.
 
 * Massive Machine Type Communications (mMTC): Supporting up to 1 million connected devices per square kilometer.
-
-
-
-
 How 5G Works
 
 
@@ -53,10 +49,6 @@ How 5G Works
 * Beamforming: Focusing radio signals directly to connected devices rather than broadcasting in all directions.
 
 * Network Slicing: Creating multiple virtual networks within a single physical network to optimize resources for different use cases.
-
-
-
-
 ## Opportunities Presented by 5G
 
 

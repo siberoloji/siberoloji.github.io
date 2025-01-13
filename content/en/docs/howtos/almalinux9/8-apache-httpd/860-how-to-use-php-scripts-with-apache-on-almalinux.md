@@ -13,14 +13,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 PHP (Hypertext Preprocessor) is one of the most popular server-side scripting languages for building dynamic web applications. Its ease of use, extensive library support, and ability to integrate with various databases make it a preferred choice for developers. Pairing PHP with Apache on AlmaLinux creates a robust environment for hosting websites and applications.

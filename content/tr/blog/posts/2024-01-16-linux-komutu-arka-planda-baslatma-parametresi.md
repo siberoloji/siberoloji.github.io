@@ -22,15 +22,9 @@ tags:
     - 'linux nasıl'
     - 'temel linux'
 ---
-
-
 Linux komut satırında çalışırken bir komut giriş yaptığınızda, o komut işlemi bitene kadar başka bir komut daha girmek isterseniz beklemeniz gerekir. Bunu çözmek için yeni pencereler, yeni bağlantılar yapabilirsiniz ancak bir çözüm daha var. 
 
-
-
 Vereceğiniz komutu en başta, arka planda başlatabilirsiniz. Örneğin uzun sürecek bir kopyalama işlemini arka planda başlatıp diğer işlerle ilgilenmek isterseniz komutun sonuna &amp; işareti koymanız yeterli olacaktır.
-
-
 ```bash
 linux@rpi4:~ $ sudo apt update &amp;
 [1] 7336
@@ -50,10 +44,6 @@ All packages are up to date.
 linux@rpi4:~ $ 
 ```
 
-
-
 Yukarıda gördüğünüz gibi `sudo apt update &amp;` komutu ile güncelleme işlemini arka planda başlattık. Bu durumda sistem bize arka planda başlayan işin iş numarasını `[1]` olarak gösterdi. Arka planda birden fazla iş yapılıyorsa bunların listesini `jobs` komutuyla görebiliriz. fg 1 komutuyla da arka plandaki bir işlemi ön plana geri getirebiliriz. Tam tersini yapmak istersek, çalışan bir işi arka plan <kbd>Ctrl+z</kbd> tuşları yardımıyla gönderebiliriz.
-
-
 
 Burada vurgulanması gereken en önemli kolaylık, komutu &amp; işaretiyle verir vermez komut satırının bizim kullanımımıza geri gelmesidir.

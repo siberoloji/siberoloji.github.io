@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 In today’s digital landscape, securing your website with SSL/TLS is not optional—it’s essential. SSL/TLS encryption not only protects sensitive user data but also enhances search engine rankings and builds user trust. If you’re running a server with AlmaLinux and Nginx, setting up SSL/TLS certificates is straightforward and crucial for securing your web traffic.

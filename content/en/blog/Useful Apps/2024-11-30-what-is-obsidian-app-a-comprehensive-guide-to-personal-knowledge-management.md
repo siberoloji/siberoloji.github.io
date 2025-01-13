@@ -13,8 +13,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/obsidian-tips-lead.jpg
-
-
 url: obsidian-app-comprehensive-guide-personal-knowledge-management
 keywords:
   - obsidian

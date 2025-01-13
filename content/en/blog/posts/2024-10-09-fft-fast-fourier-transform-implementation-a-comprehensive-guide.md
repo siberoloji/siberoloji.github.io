@@ -62,10 +62,6 @@ Where:
 * N is the number of samples
 
 * j is the imaginary unit
-
-
-
-
 The direct computation of the DFT requires N^2 complex multiplications, which becomes computationally expensive for large N.
 
 
@@ -94,10 +90,6 @@ The key ideas behind the FFT are:
 * Recursively breaking down the problem into smaller subproblems.
 
 * Reusing intermediate results to avoid redundant calculations.
-
-
-
-
 ## Implementing the FFT
 
 
@@ -131,10 +123,6 @@ This recursive implementation demonstrates the core idea of the FFT algorithm:
 * We recursively compute the FFT of these subsequences.
 
 * We combine the results using the twiddle factors (complex exponentials).
-
-
-
-
 While this implementation is clear and demonstrates the principle, it's not the most efficient in practice. Let's explore some practical considerations and optimizations.
 
 
@@ -221,10 +209,6 @@ This implementation includes several optimizations:
 * It uses an iterative approach, avoiding the overhead of recursive function calls.
 
 * It computes twiddle factors on the fly, which can be further optimized by using a pre-computed lookup table for larger FFTs.
-
-
-
-
 ## Variants and Extensions of FFT
 
 
@@ -279,10 +263,6 @@ The FFT has a wide range of applications across various fields:
 * **Scientific Computing**: Solving partial differential equations and fast multiplication of large integers.
 
 * **Data Analysis**: Identifying periodicities in time series data.
-
-
-
-
 ## Performance Considerations
 
 
@@ -297,10 +277,6 @@ When implementing or using FFT algorithms, several factors can affect performanc
 * **Numerical Precision**: The choice between single and double precision can affect both accuracy and speed.
 
 * **Specialized Hardware**: Many modern processors include specialized instructions for FFT computations. Libraries like FFTW can automatically select the best implementation for the given hardware.
-
-
-
-
 ## Conclusion
 
 

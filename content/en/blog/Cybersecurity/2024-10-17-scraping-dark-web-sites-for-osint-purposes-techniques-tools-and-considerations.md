@@ -113,10 +113,6 @@ Legal Considerations
 * **Terms of Service Violations**: Even though most dark web sites do not have official terms of service, scraping any web content can potentially breach data privacy laws or cybersecurity regulations. Ensure compliance with relevant laws such as the **General Data Protection Regulation (GDPR)** or **Computer Fraud and Abuse Act (CFAA)**.
 
 * **Illicit Content**: Be cautious when scraping dark web sites as many host illegal content, such as child exploitation material or illegal drugs. Accessing or storing this content, even unintentionally, could expose you to legal risks.
-
-
-
-
 Ethical Considerations
 
 

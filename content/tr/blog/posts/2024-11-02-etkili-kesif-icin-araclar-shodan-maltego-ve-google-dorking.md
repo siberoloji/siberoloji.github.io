@@ -52,8 +52,6 @@ Shodan'ın gücü, kullanıcıların arama sonuçlarını konuma, porta, ürüne
  	* **Geniş Aramalarla Başlayın** : Hedef kitlenin ağına genel bir bakış elde etmek için daha geniş aramalarla başlayın.
  	* **Açık Portlara ve Güvenlik Açığı Olan Servislere Odaklanın** : Saldırılar için giriş noktası olabileceklerinden, açık portlara ve bu portlarda çalışan servislere özellikle dikkat edin.
  	* **Aramaları Yetkili IP Aralıklarıyla Sınırlandırın** : Yetkili keşif yaparken, aramaları kuruluş tarafından sağlanan belirli IP aralıklarıyla sınırladığınızdan emin olun.
-
-
 ---
 
 **2. Maltego: Veri Görselleştirme ve Bağlantıları Eşleme Aracı**
@@ -84,8 +82,6 @@ Maltego, farklı veri türlerini toplamak için çeşitli dönüşümler sağlar
  	* **Öncelikle Önemli Varlıklara Odaklanın** : Alan adları veya IP adresleri gibi önemli veri noktalarıyla başlayın ve oradan ilgili varlıkları ortaya çıkarmak için genişletin.
  	* **Derin Analiz İçin Çoklu Dönüşümler Kullanın** : Kapsamlı bilgi toplamak için tek bir veri noktasında birden fazla dönüşüm çalıştırın.
  	* **Verileri Görsel Olarak Organize Edin** : Maltego'nun gücü veri görselleştirmesinde yatmaktadır, bu nedenle veri ilişkilerini etkili bir şekilde bağlamak ve analiz etmek için grafik özelliğini kullanın.
-
-
 ---
 
 **3. Google Dorking: Hedeflenen Bilgiler İçin Gelişmiş Arama Operatörlerinden Yararlanma**
@@ -116,8 +112,6 @@ Google Dorking için bazı yararlı operatörler şunlardır:
  	* **Operatörleri Birleştirme** : Birden fazla operatör kullanmak sonuçları daraltabilir ve daha kesin bilgiler elde etmenizi sağlayabilir.
  	* **Hassas Verilere Erişimden Kaçının** : Google Dorking çok sayıda bilgiyi ortaya çıkarsa da, etik hackerlar potansiyel olarak hassas verilere erişmekten veya bunları indirmekten kaçınmalıdır.
  	* **Dikkatli ve İzinli Kullanın** : Tüm keşif araçlarında olduğu gibi, Google Dorking'i kurumsal verileri keşfetmek için kullanmadan önce yetkilendirildiğinizden emin olun.
-
-
 ---
 
 **Shodan, Maltego ve Google Dorking'i karşılaştırma**

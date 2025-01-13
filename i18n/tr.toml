@@ -88,8 +88,6 @@ other = "Bu sayfa yararlı oldu mu?"
 other = "Evet"
 [feedback_negative]
 other = "Hayır"
-
-
 Tags = "Anahtar Kelime"
 Categories = "Kategoriler"
 

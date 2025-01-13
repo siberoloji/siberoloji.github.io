@@ -37,10 +37,6 @@ Key Features of Starlink Satellites
 * **Large Constellation**: As of now, there are thousands of Starlink satellites in orbit, with plans for many more. This extensive network ensures robust coverage and redundancy[1].
 
 * **Continuous Upgrades**: SpaceX has the unique capability to launch its own satellites frequently and cost-effectively, allowing for continuous updates and improvements in technology[7].
-
-
-
-
 ## How Starlink Internet Works
 
 
@@ -51,10 +47,6 @@ Starlink's internet service operates through a combination of satellite technolo
 * **Plug it in**: Connect the terminal to power.
 
 * **Point at the sky**: Position the dish for an unobstructed view of the sky using the Starlink app for guidance.
-
-
-
-
 Once set up, the terminal communicates with the satellites overhead, which relay data back to ground stations connected to the broader internet network[4][5].
 
 
@@ -71,10 +63,6 @@ Starlink offers various service plans catering to different user needs:
 * **Starlink for RVs**: This plan allows users to take their service on the road but may experience deprioritized speeds compared to fixed-location users.
 
 * **Starlink Maritime**: Designed for vessels at sea, offering speeds up to 350 Mbps but requiring a more expensive terminal and monthly fee[2][5].
-
-
-
-
 ## Advantages of Using Starlink
 
 

@@ -9,16 +9,12 @@ categories:
   - Linux
 linkTitle: SSH Service on Linux
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords:
   - SSH Service
-
-
 
 featured_image: /images/programming2.webp
 url: understanding-ssh-service-linux

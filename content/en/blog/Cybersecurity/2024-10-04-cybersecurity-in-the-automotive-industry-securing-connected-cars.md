@@ -31,10 +31,6 @@ Connected cars, also known as smart cars or IoT (Internet of Things) vehicles, a
 * **Vehicle-to-Everything (V2X) Communication**: Modern connected cars can now communicate with infrastructure, other vehicles, and even pedestrians, paving the way for autonomous driving.
 
 * **Over-the-Air (OTA) Updates**: Many vehicles can now receive software updates remotely, similar to smartphones.
-
-
-
-
 While these advancements offer numerous benefits, they also expand the attack surface for potential cyber threats.
 
 
@@ -109,10 +105,6 @@ Automotive manufacturers are increasingly adopting a "security by design" approa
 * Designing systems with the principle of least privilege
 
 * Building in redundancies and fail-safes for critical systems
-
-
-
-
 2. Over-the-Air (OTA) Updates
 
 
@@ -165,10 +157,6 @@ Recognizing the importance of automotive cybersecurity, regulators around the wo
 * **European Union**: The EU has included connected cars in its Network and Information Security (NIS) Directive, requiring manufacturers to implement appropriate security measures.
 
 * **United States**: The National Highway Traffic Safety Administration (NHTSA) has issued cybersecurity best practices for the automotive industry, though these are currently non-binding.
-
-
-
-
 ## The Role of Consumers
 
 
@@ -181,10 +169,6 @@ While much of the responsibility for automotive cybersecurity lies with manufact
 * **Practicing Good Cyber Hygiene**: Using strong, unique passwords for vehicle-related accounts and being cautious about connecting personal devices to the vehicle can help maintain security.
 
 * **Being Informed**: Understanding the connected features of their vehicles and the associated risks empowers consumers to make informed decisions.
-
-
-
-
 ## Future Trends and Challenges
 
 

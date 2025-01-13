@@ -245,10 +245,6 @@ There are several tools available to help developers and security professionals 
 * fortify on Demand**: A cloud-based service that provides application security testing for mobile and web applications.
 
 * **Mobile Security Framework (MobSF)**: An open-source framework for analyzing mobile apps and identifying vulnerabilities in Android, iOS, and Windows platforms.
-
-
-
-
 ## Conclusion
 
 

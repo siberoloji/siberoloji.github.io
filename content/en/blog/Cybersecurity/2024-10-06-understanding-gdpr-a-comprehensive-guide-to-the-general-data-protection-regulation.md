@@ -48,10 +48,6 @@ To understand GDPR, it’s important to grasp the key terms that the regulation 
 * **Data Processor**: Any third party that processes personal data on behalf of the data controller. Examples include cloud service providers, payment processors, and other vendors that handle data on behalf of a business.
 
 * **Processing**: Any operation performed on personal data, such as collecting, storing, using, or erasing it.
-
-
-
-
 The Core Principles of GDPR
 
 
@@ -72,10 +68,6 @@ GDPR is based on seven fundamental principles that govern the processing of pers
 * **Integrity and Confidentiality**: Data must be processed in a way that ensures appropriate security, including protection against unauthorized access, loss, or damage. Organizations must implement robust security measures to safeguard personal data.
 
 * **Accountability**: The data controller is responsible for ensuring and demonstrating compliance with GDPR. This includes maintaining records of processing activities, conducting data protection impact assessments (DPIAs), and ensuring proper oversight of data processors.
-
-
-
-
 Individual Rights Under GDPR
 
 

@@ -233,12 +233,8 @@ Browser Developer Tools:
 
 * Open Chrome DevTools (F12)
 * Network tab > Protocol column
-
-
 * 
 Command-line testing:
-
-
 <pre><code class="language-bash">curl -I --http2 -k https://your-domain.com
 `</pre>
 <ol start="3">
@@ -246,8 +242,6 @@ Command-line testing:
 
 * KeyCDN HTTP/2 Test
 * HTTP/2 Test Tool (https://tools.keycdn.com/http2-test)
-
-
 
 ## Monitoring and Maintenance
 Regular maintenance ensures optimal performance:

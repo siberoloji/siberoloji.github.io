@@ -198,8 +198,6 @@ msf > db_nmap -A 172.16.194.134
 > Nmap: OS and Service detection performed. Please report any incorrect results at <a href="http://nmap.org/submit/">http://nmap.org/submit/</a> .
 > Nmap: Nmap **done**: 1 IP address (1 host up) scanned **in **14.91 seconds
 msf >
-
-
 msf > hosts
 
 Hosts
@@ -582,8 +580,6 @@ msf auxiliary(mysql_login) > run
 > 172.16.194.172:3306 - SUCCESSFUL LOGIN 'root' : ''
 > Scanned 1 of 1 hosts (100% complete)
 > Auxiliary module execution completed
-
-
 msf auxiliary(mysql_login) > creds
 
 Credentials

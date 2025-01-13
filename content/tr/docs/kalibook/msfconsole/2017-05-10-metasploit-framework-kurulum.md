@@ -16,8 +16,6 @@ tags:
   - siber güvenlik
 linkTitle: Metasploit Framework Kurulum
 ---
-
-
 Metasploit Framework sızma testlerinde ve güvenlik testlerinde kullanılan bir yazılımdır. Rapid7 firması tarafından geliştirilen yazılımın Pro sürümü, ücretli olarak dağıtılmakta ve görsel arayüz desteği bulunmaktadır.
 
 Metasploit Framework Kali vb. dağıtımlarda kurulu olarak gelmektedir. Kali kullanmıyor olsanız bile kendi Linux dağıtımınıza kurulum yapabilisiniz. Bu yazıda Community sürümü olan ve komut satırından çalışan ücretsiz sürümü kurmayı inceleyeceğiz. Anlatımda kullanılan komutların Ubuntu temelli tüm dağıtımlarda çalışacağı tahmin edilmektedir. Biz testlerimizi ve denemeyi Linux Mint 18.1 Cinnamon Linux dağıtımında gerçekleştirdik.
@@ -116,8 +114,6 @@ user@mint ~ $ msfconsole
                \   _____  |  *****
                 **||**|   WW|||
                 **||**|     **||**|
-
-
        [ metasploit v4.14.17-dev-                        ]
 + -- --[ 1647 exploits - 945 auxiliary - 291 post        ]
 + -- --[ 486 payloads - 40 encoders - 9 nops             ]

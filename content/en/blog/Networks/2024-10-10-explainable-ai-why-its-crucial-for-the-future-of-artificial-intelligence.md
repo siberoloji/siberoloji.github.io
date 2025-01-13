@@ -39,10 +39,6 @@ At its core, Explainable AI has two key objectives:
 * **Interpretability** – Ensuring that humans can understand how a model arrives at its decisions.
 
 * **Transparency** – Providing clear, understandable reasons behind the actions or outputs of AI systems.
-
-
-
-
 Explainable AI becomes even more important as AI models are increasingly used in high-stakes environments such as healthcare, legal judgments, financial transactions, and autonomous systems, where the consequences of incorrect or biased decisions can have significant impacts on people’s lives.
 
 
@@ -61,10 +57,6 @@ AI systems, especially those relying on deep learning or neural networks, have m
 * **Compliance**: As AI systems are increasingly governed by regulations and ethical frameworks, transparency becomes essential for meeting compliance requirements. Regulatory bodies may require organizations to demonstrate that their AI systems are not discriminatory and are operating within the legal bounds.
 
 * **Fairness and Bias Mitigation**: AI systems trained on biased datasets can perpetuate or even amplify societal biases, leading to unfair treatment of certain groups. Explainable AI can help identify and address these biases by shedding light on how the model makes decisions.
-
-
-
-
 Why Explainable AI is Crucial for the Future
 
 
@@ -163,10 +155,6 @@ Explainable AI is achieved through a combination of techniques designed to make 
 * **Model Simplification**: Sometimes, simplifying a complex model to a more interpretable one—such as using decision trees instead of deep neural networks—can make AI systems more transparent, even if it sacrifices some predictive power.
 
 * **Visualization Tools**: Tools that allow users to visualize the inner workings of AI models, such as heat maps for image recognition or attention maps for natural language processing, can provide valuable insights into how AI systems make decisions.
-
-
-
-
 ## Conclusion: A Transparent Future for AI
 
 

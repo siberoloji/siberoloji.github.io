@@ -115,10 +115,6 @@ While Bitcoin remains the dominant player, many other cryptocurrencies—collect
 * **Litecoin**: Often called the "silver to Bitcoin's gold," Litecoin was designed to offer faster transaction times and lower fees than Bitcoin.
 
 * **Ripple (XRP)**: Ripple focuses on facilitating cross-border payments and is used by financial institutions for efficient money transfers.
-
-
-
-
 Altcoins have added a layer of innovation to the cryptocurrency world, with many offering features beyond simple peer-to-peer transactions.
 
 

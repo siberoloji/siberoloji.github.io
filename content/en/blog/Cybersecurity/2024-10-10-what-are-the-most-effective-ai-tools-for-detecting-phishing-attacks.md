@@ -28,10 +28,6 @@ Graphus employs a patented TrustGraph algorithm that analyzes email communicatio
 * **EmployeeShield Alerts**: Provides alerts for suspicious emails from unexpected sources, allowing users to classify messages easily.
 
 * **Continuous Learning**: The system improves over time as it learns from detected phishing attempts and user interactions[1].
-
-
-
-
 ## 2. **Lepide Data Security Platform**
 
 
@@ -42,10 +38,6 @@ Lepide utilizes machine learning techniques to establish a baseline of normal us
 * **Real-Time Alerts**: Sends notifications to relevant personnel when suspicious activities are detected.
 
 * **Sensitive Data Discovery**: Monitors and classifies sensitive data to prevent exfiltration through phishing attacks[2].
-
-
-
-
 ## 3. **Perception Point**
 
 
@@ -56,10 +48,6 @@ This solution combines advanced AI-powered threat prevention with managed incide
 * **Multi-Layered Architecture**: Intercepts various types of threats, including social engineering and file-based attacks.
 
 * **Dynamic Scanning**: Provides real-time analysis and detection across different platforms[3].
-
-
-
-
 ## 4. **VISUA's Visual-AI**
 
 
@@ -70,10 +58,6 @@ VISUA employs computer vision technology to analyze emails and web pages at mach
 * **Human-Like Analysis**: Detects visual cues that may indicate phishing attempts, such as logos and brand impersonation.
 
 * **Integration with Existing Systems**: Works alongside traditional detection methods to enhance overall effectiveness[4].
-
-
-
-
 ## 5. **Cofense Managed Phishing Defense**
 
 
@@ -84,10 +68,6 @@ Cofense focuses on automating detection and response to phishing threats using A
 * **Phishing Threat Analysis**: Provides insights into emerging threats based on real-time data.
 
 * **User Reporting Tool**: Streamlines the process for employees to report suspicious emails[5].
-
-
-
-
 ## 6. **IRONSCALES**
 
 
@@ -98,10 +78,6 @@ IRONSCALES combines AI with human expertise to detect various phishing threats i
 * **Credential Theft Detection**: Identifies fake login pages where victims might reveal sensitive information.
 
 * **User Education Tools**: Offers training resources alongside detection capabilities to improve employee awareness[5].
-
-
-
-
 ## 7. **DTonomy AIR for Phishing**
 
 
@@ -112,10 +88,6 @@ DTonomy provides an easy-to-use tool for analyzing suspicious emails directly wi
 * **Automated Email Scanning**: Quickly scans emails for potential threats.
 
 * **Detailed Analysis Tools**: Offers insights into WHOIS domain information, email routing paths, and other critical data points related to suspicious URLs[6].
-
-
-
-
 ## Conclusion
 
 

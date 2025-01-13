@@ -14,8 +14,6 @@ tags:
     - linux distros
     - manjaro
 ---
-
-
 Manjaro Linux is an increasingly popular Linux distribution, known for being beginner-friendly while offering the power and flexibility of its parent distribution, Arch Linux. For new users looking to explore Linux, Manjaro strikes an ideal balance between ease of use and customizability, making it a great choice for those seeking a Linux experience without needing to go through the complexities associated with Arch. In this post, we'll introduce you to Manjaro Linux, explore its key features, explain why it's an excellent option for beginners, and guide you through the process of getting started with this powerful distribution.
 
 ## What is Manjaro Linux?

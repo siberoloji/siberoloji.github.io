@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Securing database connections is a critical aspect of modern database administration. Using **SSL/TLS** (Secure Sockets Layer / Transport Layer Security) to encrypt connections between MariaDB servers and their clients is essential to protect sensitive data in transit. AlmaLinux, a stable and secure RHEL-based distribution, is an excellent platform for hosting MariaDB with SSL/TLS enabled.

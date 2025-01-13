@@ -46,10 +46,6 @@ The primary cause of metastability is timing violations related to setup and hol
 * **Clock Skew**: Variations in the timing of clock signals can lead to metastable states if the rise and fall times exceed acceptable limits.
 
 * **Simultaneous Transitions**: When multiple inputs transition at nearly the same time, they can push a flip-flop into a metastable state [6].
-
-
-
-
 Understanding Setup and Hold Times
 
 
@@ -60,10 +56,6 @@ To grasp metastability fully, one must understand setup and hold times:
 * **Setup Time**: The minimum time before the clock edge during which the input signal must remain stable.
 
 * **Hold Time**: The minimum time after the clock edge during which the input signal must also remain stable.
-
-
-
-
 If an input signal transitions during these critical periods, it can lead to metastability. For instance, if a data signal changes state just before or after the clock edge, the flip-flop may enter an uncertain state where its output remains indeterminate for an extended period [6].
 
 
@@ -80,10 +72,6 @@ The "metastability window" is defined as the time interval during which an input
 * The clock frequency.
 
 * The characteristics of the flip-flop being used.
-
-
-
-
 To quantify this phenomenon, designers often calculate the mean time between failures (MTBF) due to metastability. A higher MTBF indicates a more robust design capable of minimizing failures caused by metastable events [3][4].
 
 
@@ -100,10 +88,6 @@ Metastability can have severe implications for digital systems:
 * **Propagation of Errors**: If one component enters a metastable state, it can propagate errors through subsequent stages in the circuit.
 
 * **System Failures**: In critical applications such as medical devices or aerospace systems, metastability can lead to catastrophic failures if not adequately managed.
-
-
-
-
 Measuring Metastability
 
 
@@ -114,10 +98,6 @@ To analyze metastability quantitatively, engineers often employ various measurem
 * **Failure Rate Calculation**: By determining the rate at which metastable events occur and their likelihood of resolution, designers can estimate failure rates.
 
 * **MTBF Analysis**: Calculating MTBF involves assessing how often failures due to metastability are expected over time [3][4].
-
-
-
-
 For example, if a design has a failure rate of 0.001 per year due to metastability, it suggests that on average, one failure will occur every 1,000 years under normal operating conditions.
 
 

@@ -50,10 +50,6 @@ A floating-point number is represented by three main components:
 * **Exponent (E)**: Encodes the position of the decimal point, which allows the number to represent very large or very small values. The exponent is typically stored in a **biased** format, meaning it includes an offset to handle both positive and negative exponents.
 
 * **Mantissa or Significand (M)**: Contains the actual digits of the number. It is normalized to ensure that the leading digit is non-zero, allowing for consistent precision across a wide range of values.
-
-
-
-
 For example, the number 6.75 can be represented as:
 
 
@@ -109,10 +105,6 @@ The most commonly used formats defined by IEEE 754 include:
 * **Double Precision**: This format uses 64 bits, with 1 bit for the sign, 11 bits for the exponent, and 52 bits for the significand. Double precision offers higher accuracy and is often used in scientific and financial applications where precision is critical.
 
 * **Extended Precision**: Some systems support extended precision formats that provide even greater accuracy by using additional bits for the exponent and significand.
-
-
-
-
 By adhering to the IEEE 754 standard, FPUs can produce consistent results, even when running on different hardware platforms or operating systems.
 How Floating-Point Arithmetic Units Work
 
@@ -163,10 +155,6 @@ Floating-point arithmetic often results in numbers that cannot be represented ex
 * **Round Toward Zero**: The result is rounded toward zero (truncated).
 
 * **Round Toward Positive or Negative Infinity**: The result is rounded toward the nearest infinity, either positive or negative.
-
-
-
-
 Rounding ensures that the FPU can efficiently handle operations without requiring infinite precision, which would be impractical in hardware.
 
 
@@ -248,10 +236,6 @@ While FPUs are powerful tools for handling floating-point calculations, there ar
 * **Rounding Errors**: Due to the finite number of bits used to represent floating-point numbers, rounding errors are inevitable. In critical applications, these errors must be carefully managed to avoid inaccuracies.
 
 * **Energy Efficiency**: As processors become more powerful, energy efficiency becomes a significant concern, especially in large-scale computing systems like data centers. Optimizing FPUs for power efficiency while maintaining high performance is an ongoing area of research.
-
-
-
-
 Looking ahead, the demand for more efficient and powerful FPUs will continue to grow, especially in fields like artificial intelligence, high-performance computing, and real-time data analysis. Advancements in quantum computing and other emerging technologies may also influence the future design and capabilities of floating-point arithmetic units.
 Conclusion
 

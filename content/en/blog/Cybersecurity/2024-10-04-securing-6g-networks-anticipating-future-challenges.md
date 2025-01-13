@@ -29,10 +29,6 @@ What is 6G Technology?
 * **Massive Device Connectivity**: 6G will support an expanded **Internet of Things (IoT)** ecosystem, connecting billions of devices, from smart appliances to autonomous vehicles, creating a highly intelligent and connected world.
 
 * **AI and Edge Computing Integration**: Artificial intelligence (AI) will be a key enabler of 6G, helping manage the massive amounts of data and making real-time decisions at the network edge. Edge computing will reduce reliance on centralized cloud systems by processing data closer to the source.
-
-
-
-
 While 6G holds transformative potential, it also presents a host of new security concerns. As these networks grow in complexity, so too will the methods used by cybercriminals to exploit them.
 Emerging Security Challenges with 6G Networks
 

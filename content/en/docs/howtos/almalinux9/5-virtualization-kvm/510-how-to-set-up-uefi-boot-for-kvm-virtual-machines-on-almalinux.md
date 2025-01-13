@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Set Up UEFI Boot for KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 510
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: set-uefi-boot-kvm-virtual-machines-almalinux
 ---

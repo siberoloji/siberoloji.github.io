@@ -89,10 +89,6 @@ While red team exercises and penetration testing are both valuable security asse
 * Penetration tests follow a more structured methodology.
 
 * Red team exercises are more fluid, adapting tactics based on the organization's responses and defenses.
-
-
-
-
 ## The Red Team Exercise Process
 
 
@@ -113,10 +109,6 @@ The red team begins by gathering intelligence on the target organization. This m
 * Social engineering reconnaissance
 
 * Network and infrastructure mapping
-
-
-
-
 2. Initial Access
 
 
@@ -129,10 +121,6 @@ The team attempts to gain a foothold in the organization's systems. This could i
 * Exploiting external-facing vulnerabilities
 
 * Physical intrusion attempts
-
-
-
-
 3. Lateral Movement
 
 

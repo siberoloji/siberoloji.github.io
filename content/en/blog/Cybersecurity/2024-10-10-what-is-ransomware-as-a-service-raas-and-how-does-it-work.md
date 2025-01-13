@@ -39,10 +39,6 @@ There are two main types of ransomware:
 * **Locker Ransomware**: This type locks the victim out of their device entirely, making it impossible to access any files or functions.
 
 * **Crypto Ransomware**: This type encrypts files on the victim's device, leaving the operating system functional but making the data inaccessible.
-
-
-
-
 In both cases, attackers usually demand payment to restore access. Even if victims pay the ransom, there’s no guarantee that the files will be recovered.
 
 
@@ -107,10 +103,6 @@ Once they have access to the ransomware, affiliates are responsible for distribu
 * **Exploiting Vulnerabilities**: Affiliates may use known software vulnerabilities to gain access to a victim’s network and deploy ransomware directly.
 
 * **Malvertising**: This technique involves placing malicious ads on legitimate websites. When users click on these ads, they unknowingly download the ransomware.
-
-
-
-
 5. **Ransom Demands and Payment**
 
 

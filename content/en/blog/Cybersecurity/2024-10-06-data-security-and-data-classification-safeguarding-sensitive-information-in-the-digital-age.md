@@ -123,10 +123,6 @@ Benefits of Data Classification
 * **Efficient Data Management**: Data classification enables organizations to manage their data more efficiently by determining which data needs to be stored, archived, or deleted.
 
 * **Cost Savings**: By focusing security resources on high-value data, organizations can reduce costs associated with protecting low-risk or non-sensitive information.
-
-
-
-
 ## Data Classification Levels
 
 
@@ -257,10 +253,6 @@ Several tools can help organizations classify and secure their data. Here are a 
 * forcepoint Data Loss Prevention (DLP)**: A tool that prevents data breaches by classifying and securing sensitive data, whether on-premises or in the cloud.
 
 * **Symantec Data Loss Prevention**: A comprehensive solution for identifying and protecting sensitive data across a variety of endpoints, networks, and storage systems.
-
-
-
-
 ## Conclusion
 
 

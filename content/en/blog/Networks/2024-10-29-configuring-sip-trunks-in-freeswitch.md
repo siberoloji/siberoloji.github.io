@@ -38,10 +38,6 @@ A SIP trunk is a virtual connection between your <a href="https://signalwire.com
 * Cost-effective long-distance calling
 
 * Multiple concurrent call channels
-
-
-
-
 ## Basic SIP Trunk Configuration
 
 
@@ -324,10 +320,6 @@ sofia loglevel all 9```
 * Document configurations
 
 * Regular backup of configurations
-
-
-
-
 2. Security Measures
 
 
@@ -338,10 +330,6 @@ sofia loglevel all 9```
 * Regular security audits
 
 * Monitor for suspicious activity
-
-
-
-
 3. Performance Optimization
 
 
@@ -352,10 +340,6 @@ sofia loglevel all 9```
 * Codec optimization
 
 * Connection testing
-
-
-
-
 ## Testing and Verification
 
 
@@ -385,10 +369,6 @@ fs_cli -x "sofia global siptrace on"```
 * Performance metrics collection
 
 * Log analysis
-
-
-
-
 ## Conclusion
 
 
@@ -405,10 +385,6 @@ Properly configured SIP trunks are essential for a reliable FreeSWITCH system. K
 * Document all changes
 
 * Test thoroughly before production deployment
-
-
-
-
 As your system grows, consider:
 
 
@@ -421,8 +397,4 @@ As your system grows, consider:
 * Quality of service optimization
 
 * Regular audits and updates
-
-
-
-
 Keep your FreeSWITCH system up to date and regularly check for security advisories and best practices from your ITSP and the FreeSWITCH community.

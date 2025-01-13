@@ -108,10 +108,6 @@ Several techniques can be employed to reduce or manage clock skew in digital sys
 * **Use of Synchronous Design**: Synchronous design principles can help to reduce the impact of clock skew by ensuring that all components operate in sync with the clock signal. Synchronous systems are less sensitive to small variations in clock timing.
 
 * **Clock Tree Synthesis (CTS)**: CTS is a technique used in integrated circuit design to optimize the distribution of the clock signal. By carefully designing the clock tree, engineers can minimize skew and ensure that the clock signal arrives at all components with minimal delay.
-
-
-
-
 What is Jitter?
 
 
@@ -182,10 +178,6 @@ Several techniques can be employed to reduce jitter and minimize its impact on d
 * **Clock Signal Filtering**: Low-pass filters can be used to remove high-frequency noise from the clock signal, reducing the impact of random jitter.
 
 * **Jitter Measurement and Compensation**: Measuring jitter and compensating for it in the design process can help to ensure that the system operates reliably. Tools such as oscilloscopes and spectrum analyzers can be used to measure jitter, and design adjustments can be made to compensate for any observed deviations.
-
-
-
-
 Conclusion
 
 

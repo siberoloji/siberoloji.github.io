@@ -62,10 +62,6 @@ Data cleaning and normalization can be challenging due to several factors:
 * **Data volume:** Large datasets can require significant computational resources and time for cleaning and normalization.
 
 * **Data inconsistencies:** Inconsistent data formats, missing values, and errors can make it difficult to standardize and normalize the data.
-
-
-
-
 **Best Practices for Data Cleaning and Normalization**
 
 
@@ -84,10 +80,6 @@ To ensure effective data cleaning and normalization, consider the following best
 * **Validate your data:** Regularly validate your cleaned and normalized data to ensure accuracy and consistency.
 
 * **Consider domain-specific techniques:** For certain types of data (e.g., text, images), specialized techniques may be required.
-
-
-
-
 **Common Data Cleaning and Normalization Techniques**
 
 
@@ -133,10 +125,6 @@ Suppose you're scraping financial data from multiple websites. To make the data 
 * **Normalize numerical data:** Scale numerical values to a common range (e.g., 0-1) to make them comparable.
 
 * **Handle categorical data:** Encode categorical variables (e.g., company names, stock exchanges) for analysis.
-
-
-
-
 **Conclusion**
 
 

@@ -24,8 +24,6 @@ other = "Todos os direitos reservados"
 
 [footer_privacy_policy]
 other = "Política de Privacidade"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "Por"

@@ -81,10 +81,6 @@ ZFS's architecture significantly influences its performance characteristics:
 * Can be accelerated with dedicated SSDs (SLOG)
 
 * Critical for database workloads
-
-
-
-
 Ceph Architecture
 
 
@@ -113,10 +109,6 @@ Ceph's distributed nature creates different performance characteristics:
 * Enables efficient scaling
 
 * Can create temporary hotspots during rebalancing
-
-
-
-
 ## Performance Comparison by Workload Type
 
 
@@ -135,10 +127,6 @@ Random Read Performance
 * Single-system performance can exceed Ceph for cached data
 
 * Typical random read IOPS: 10,000-100,000 (hardware dependent)
-
-
-
-
 **Ceph:**
 
 
@@ -149,10 +137,6 @@ Random Read Performance
 * Better aggregate performance in large clusters
 
 * Typical random read IOPS: 1,000-10,000 per OSD
-
-
-
-
 Sequential Read Performance
 
 
@@ -165,10 +149,6 @@ Sequential Read Performance
 * Prefetching algorithms improve streaming performance
 
 * Typical throughput: 500MB/s - 2GB/s per pool
-
-
-
-
 **Ceph:**
 
 
@@ -177,10 +157,6 @@ Sequential Read Performance
 * Scales linearly with additional nodes
 
 * Typical throughput: 100MB/s - 500MB/s per OSD
-
-
-
-
 Write Performance
 
 
@@ -195,10 +171,6 @@ Write Performance
 * Compression can improve effective write speeds
 
 * Typical write IOPS: 5,000-50,000 (hardware dependent)
-
-
-
-
 **Ceph:**
 
 
@@ -209,10 +181,6 @@ Write Performance
 * Better scaling for multiple simultaneous writers
 
 * Typical write IOPS: 500-5,000 per OSD
-
-
-
-
 ## Factors Affecting Performance
 
 
@@ -229,10 +197,6 @@ Memory Usage
 * Deduplication requires ~5GB RAM per 1TB of storage
 
 * ARC cache can significantly improve performance
-
-
-
-
 **Ceph:**
 
 
@@ -241,10 +205,6 @@ Memory Usage
 * Additional memory needs for monitors and managers
 
 * Less dependent on caching for basic operation
-
-
-
-
 Network Impact
 
 
@@ -257,10 +217,6 @@ Network Impact
 * The network mainly impacts client access
 
 * Minimal internal network requirements
-
-
-
-
 **Ceph:**
 
 
@@ -269,10 +225,6 @@ Network Impact
 * Requires low-latency, high-bandwidth connections
 
 * Network bottlenecks can significantly impact performance
-
-
-
-
 Scaling Characteristics
 
 
@@ -285,10 +237,6 @@ Scaling Characteristics
 * Limited by single-system resources
 
 * Linear performance improvement with additional drives
-
-
-
-
 **Ceph:**
 
 
@@ -297,10 +245,6 @@ Scaling Characteristics
 * Near-linear performance scaling with additional nodes
 
 * Better suited for large-scale deployments
-
-
-
-
 ## Real-World Performance Scenarios
 
 
@@ -319,10 +263,6 @@ Virtual Machine Storage
 * Good snapshot performance
 
 * Typical VM IOPS: 5,000-20,000 per host
-
-
-
-
 **Ceph:**
 
 
@@ -333,10 +273,6 @@ Virtual Machine Storage
 * More flexible scaling
 
 * Typical VM IOPS: 2,000-10,000 per VM
-
-
-
-
 Database Workloads
 
 
@@ -351,10 +287,6 @@ Database Workloads
 * Excellent data integrity guarantees
 
 * Typical database IOPS: 10,000-50,000
-
-
-
-
 **Ceph:**
 
 
@@ -365,10 +297,6 @@ Database Workloads
 * Good for scale-out database solutions
 
 * Typical database IOPS: 5,000-20,000 per node
-
-
-
-
 ## Optimization Strategies
 
 
@@ -397,10 +325,6 @@ ZFS Optimization
 * Configure compression appropriately
 
 * Optimize ARC size
-
-
-
-
 Ceph Optimization
 
 
@@ -425,10 +349,6 @@ Ceph Optimization
 * Balanced OSD distribution
 
 * Appropriate replica count
-
-
-
-
 ## Making the Choice
 
 
@@ -443,10 +363,6 @@ Choose ZFS if you:
 * Can allocate sufficient RAM
 
 * Require advanced features like compression and snapshots
-
-
-
-
 Choose Ceph if you:
 
 
@@ -457,10 +373,6 @@ Choose Ceph if you:
 * Require high availability
 
 * Need object storage capabilities
-
-
-
-
 ## Conclusion
 
 
@@ -481,10 +393,6 @@ The choice between them should be based on your specific requirements:
 * Budget constraints
 
 * Existing infrastructure
-
-
-
-
 Remember that raw performance numbers don't tell the whole story – factors like data integrity, ease of management, and scalability should all factor into your decision-making process.
 
 

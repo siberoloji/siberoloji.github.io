@@ -10,15 +10,11 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 130
 
 keywords: ""
-
-
 
 featured_image: /images/alice-taking-picture.webp
 url: building-email-list-wordpress-tips-plugins-started

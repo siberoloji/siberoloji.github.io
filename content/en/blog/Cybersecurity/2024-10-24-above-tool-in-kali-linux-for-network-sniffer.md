@@ -47,10 +47,6 @@ Key Features of Above
 * **Protocol Support**: The tool supports various discovery protocols such as FHRP (First Hop Redundancy Protocol), STP (Spanning Tree Protocol), LLMNR (Link-Local Multicast Name Resolution), and NBT-NS (NetBIOS Name Service).
 
 * **Automation**: The `above` automates the identification of vulnerabilities in network hardware, which can significantly speed up the penetration testing process.
-
-
-
-
 ## Installation of Above
 
 

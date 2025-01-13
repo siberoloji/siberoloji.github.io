@@ -15,8 +15,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/linuxcommandsillustration1.webp
-
-
 keywords:
   - SSH Server on Linux
 url: ssh-server-linux-comprehensive-guide

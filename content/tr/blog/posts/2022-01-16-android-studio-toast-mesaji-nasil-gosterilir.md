@@ -16,42 +16,24 @@ tags:
     - android
     - 'toast mesajı nasıl gösterilir?'
 ---
-
-
 Android Studio'da Toast mesajı yapmak için kod örneğini bulabilirsiniz.
 
-
-
 ## Örnek-1
-
-
 ```kotlin
 val text = "Hello toast!"
 val duration = Toast.LENGTH_SHORT
 val toast = Toast.makeText(applicationContext, text, duration)
 toast.show()```
 
-
-
 veya direk çağırabilirsiniz.
 
-
-
 ## Örnek-2
-
-
 ```kotlin
 Toast.makeText(context, text, duration).show()```
 
-
-
 ## Örnek-3
 
-
-
 Bu örnekte, bir butona basınca sayacı arttırıp ekrana Toast mesajı görüntüleyen kod bulunmaktadır.
-
-
 ```kotlin
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,18 +53,10 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-
-
 ## Önemli
 
-
-
 Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.xml dosyanızda bir button ve bir textView elemanının önceden tanımlanmış olması gerekiyor.  activity_main.xml  dosyanızın içini aşağıdaki kod ile değiştirebilirsiniz.
-
-
 ```
-
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -119,8 +93,6 @@ Gördüğünüz gibi, yukarıda örneğin çalışabilmesi için activity_main.x
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/siberolojibilisim/Button-Click-Counter-with-toast-message" target="_blank" rel="noreferrer noopener">Github Görüntüle</a></div>

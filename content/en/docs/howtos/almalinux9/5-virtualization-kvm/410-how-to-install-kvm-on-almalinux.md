@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Install KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 410
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: how-to-install-kvm-almalinux
 ---

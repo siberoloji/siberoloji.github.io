@@ -70,10 +70,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   DELETE FROM table WHERE condition;
 ```
-
-
-
-
 #### **2. SQL Clauses**
 
 
@@ -111,10 +107,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   SELECT * FROM table LIMIT 10;
 ```
-
-
-
-
 #### **3. Joins**
 
 
@@ -156,10 +148,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
   SELECT * FROM table1
   FULL OUTER JOIN table2 ON table1.column = table2.column;
 ```
-
-
-
-
 #### **4. Aggregate Functions**
 
 
@@ -197,10 +185,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   SELECT MAX(column), MIN(column) FROM table;
 ```
-
-
-
-
 #### **5. Subqueries**
 
 
@@ -211,10 +195,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   SELECT * FROM table1 WHERE column IN (SELECT column FROM table2);
 ```
-
-
-
-
 #### **6. Table Management**
 
 
@@ -246,10 +226,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   DROP TABLE table_name;
 ```
-
-
-
-
 #### **7. Indexes**
 
 
@@ -269,10 +245,6 @@ Here's a detailed **SQL Cheat Sheet** you can use for your blog post:
 ```bash
   DROP INDEX index_name;
 ```
-
-
-
-
 #### **8. Data Types (Commonly Used)**
 
 

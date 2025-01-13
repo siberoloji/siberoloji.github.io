@@ -49,10 +49,6 @@ There are different standards for Ethernet ports, and they vary based on speed a
 * **Gigabit Ethernet (10/100/1000 Mbps)**: The most common type of Ethernet port on modern devices, Gigabit Ethernet supports speeds up to 1 Gbps (1000 Mbps). It’s the standard for most home and office networking devices.
 
 * **10 Gigabit Ethernet**: Used mainly in enterprise environments, this Ethernet standard supports speeds of up to 10 Gbps and requires specialized network cabling and hardware to achieve these speeds.
-
-
-
-
 Ethernet ports provide the physical connection that supports network communication, but the underlying protocols and services are governed by network ports. Let’s dive into the concept of network ports.
 
 
@@ -77,10 +73,6 @@ Ports are split into three broad categories:
 * **Registered Ports (1024-49151)**: Registered ports are those that IANA registers for use by application developers. These ports are not as strictly defined as well-known ports, but common services still rely on them.
 
 * **Dynamic or Private Ports (49152-65535)**: These ports are used for private or temporary purposes. Many services dynamically assign ports from this range for internal connections.
-
-
-
-
 Let’s explore some of the most commonly used ports for services across networks.
 
 
@@ -102,10 +94,6 @@ FTP is one of the oldest network protocols used for transferring files between d
 * **Port 21**: Used to establish the connection and control communication between the client and the server.
 
 * **Port 20**: Used to transfer data once the connection is established.
-
-
-
-
 While FTP is effective, it lacks security features, so secure alternatives like SFTP (Secure File Transfer Protocol) and FTPS (FTP Secure) are often used.
 
 
@@ -181,10 +169,6 @@ SIP is a protocol used to establish voice and video calls over the internet. It�
 * **Port 5060**: For non-encrypted communication.
 
 * **Port 5061**: For encrypted communication via Transport Layer Security (TLS).
-
-
-
-
 the Importance of Securing Network Ports**
 
 
@@ -203,10 +187,6 @@ Here are a few tips for securing network ports:
 * **Enable Encryption**: Use encrypted protocols like HTTPS, SSH, and SFTP to protect sensitive data.
 
 * **Change Default Ports**: Changing default ports (such as using a port other than 22 for SSH) can add an extra layer of security by obscuring common entry points.
-
-
-
-
 **Conclusion**
 
 

@@ -16,8 +16,6 @@ weight: 30
 translationKey: basic-metasploit-framework-commands
 linkTitle: Basic Commands
 ---
-
-
 In this article, we will examine the basic commands used in the Metasploit Framework. You may think that the commands are too many and complicated at first, but I recommend that you give yourself time. You will become familiar with them as you use them and you will start typing them automatically. When writing commands, you can type a few letters of the command and complete the rest automatically with the TAB key. Command and folder path completion in msfconsole works exactly like in the Linux command line.
 
 ## back

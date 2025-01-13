@@ -37,10 +37,6 @@ Retrieving all published WordPress blog post links using an SQL query involves d
 * **Database Access:** You'll need access to your WordPress database, including its username, password, and hostname.
 
 * **SQL Editor:** A tool like phpMyAdmin or a direct SQL client can be used to execute the query.
-
-
-
-
 **Steps Involved:**
 
 
@@ -77,10 +73,6 @@ SELECT ID, post_name FROM wp_posts WHERE post_status = 'publish';
 * `FROM wp_posts`: This indicates that we're querying the `wp_posts` table.
 
 * `WHERE post_status = 'publish'`: This filters the results to include only published posts.
-
-
-
-
 **Retrieving Full URLs:**
 
 
@@ -108,10 +100,6 @@ SELECT ID, CONCAT('your_site_url/', post_name) AS post_url FROM wp_posts WHERE p
 * **Pagination:** For large datasets, you might want to implement pagination to avoid overwhelming your database.
 
 * **Performance Optimization:** Consider using indexes on frequently queried columns (like `post_status`) to improve query performance.
-
-
-
-
 **Example with Pagination:**
 
 

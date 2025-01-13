@@ -42,10 +42,6 @@ It’s easy to confuse pingbacks with trackbacks, as they both serve a similar p
 * **Trackbacks** are a manual notification process that requires the sender to paste a specific URL into a trackback field on their post. They were first used by Movable Type, a blogging platform that preceded WordPress.
 
 * **Pingbacks** are automated notifications. They don't require the sender to manually add anything beyond a link to your post, and the process is handled through the CMS.
-
-
-
-
 The consensus is that pingbacks are easier to use and more reliable, as they automate the notification process without manual intervention.
 
 
@@ -64,10 +60,6 @@ Pingbacks are embedded into WordPress’s DNA, and the platform handles the enti
 * **Step 3:** User B’s CMS (assuming it’s set to accept pingbacks) receives the pingback and will display it as a comment or a notification.
 
 * **Step 4:** User B can then approve or deny the pingback, controlling what appears in their comment section.
-
-
-
-
 For WordPress sites, enabling and managing pingbacks is usually a simple process, though some may choose to disable them to avoid potential spam.
 
 
@@ -131,10 +123,6 @@ If you’d prefer to control pingbacks on a per-post basis, you can do this dire
 * **Edit the Post:** In the post editor, navigate to the **Discussion** panel (this may need to be enabled in the **Screen Options** dropdown if you don’t see it).
 
 * **Allow or Disallow Pingbacks:** Check or uncheck the option that says **Allow pingbacks and trackbacks on this page**.
-
-
-
-
 This granular control lets you decide which posts can receive pingbacks, which can be useful for prioritizing specific pieces of content for engagement.
 
 

@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Installing and configuring a web server is one of the first steps to hosting your own website or application. On AlmaLinux, a popular enterprise-grade Linux distribution, the httpd service (commonly known as Apache HTTP Server) is a reliable and widely used option for serving web content. In this guide, we’ll walk you through the process of installing and configuring the httpd web server on AlmaLinux.

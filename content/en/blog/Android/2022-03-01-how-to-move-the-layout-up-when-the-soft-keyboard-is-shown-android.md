@@ -15,19 +15,11 @@ tags:
     - 'move layout up'
     - 'soft keyboard'
 ---
-
-
 Sometimes, you need to change the layout when the soft keyboard appeared on the screen. You can fix this by adding a line of code into the AndroidManifest.xml file within the relevant activity section.
-
-
 <!-- wp:code -->
 <pre title="Code to xml file" class="wp-block-code"><code lang="kotlin" class="language-kotlin">android:windowSoftInputMode="adjustResize"```
 
-
-
 Add this code to the activity.
-
-
 ```kotlin
 <activity
             android:name=".MainActivity"

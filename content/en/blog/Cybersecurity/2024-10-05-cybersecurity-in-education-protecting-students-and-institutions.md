@@ -150,10 +150,6 @@ No matter how robust an institution’s cybersecurity measures are, there is alw
 * Notifying affected parties, including students, parents, and regulatory bodies
 
 * Restoring affected systems and data
-
-
-
-
 Regular drills and simulations should be conducted to ensure that the IT team and other stakeholders know how to respond quickly and effectively in the event of a real attack.
 
 
@@ -193,10 +189,6 @@ For example:
 * the Family Educational Rights and Privacy Act (FERPA)** in the United States protects the privacy of student education records and gives parents and students certain rights concerning those records.
 
 * the General Data Protection Regulation (GDPR)** in Europe imposes strict guidelines on how organizations collect, store, and process personal data, including data from students.
-
-
-
-
 Failing to comply with these regulations can result in legal penalties and severe reputational damage. Schools and universities should ensure that their cybersecurity policies align with applicable laws and that staff are trained on compliance requirements.
 ## Conclusion
 

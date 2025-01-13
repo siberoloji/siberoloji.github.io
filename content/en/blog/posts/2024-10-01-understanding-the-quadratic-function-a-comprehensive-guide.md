@@ -45,10 +45,6 @@ Key Terms:
 * **Linear Term**: ( bx ) is the linear term. It affects the slope and direction of the curve.
 
 * **Constant Term**: ( c ) is the constant term, representing the function's y-intercept.
-
-
-
-
 Understanding the Graph of a Quadratic Function
 
 
@@ -59,10 +55,6 @@ The graph of a quadratic function is a U-shaped curve called a **parabola**. The
 * If ( a > 0 ), the parabola opens **upward**, resembling a U.
 
 * If ( a < 0 ), the parabola opens **downward**, resembling an upside-down U.
-
-
-
-
 The shape of the parabola is symmetrical, and its highest or lowest point is known as the **vertex**.
 
 
@@ -139,10 +131,6 @@ There are three possible outcomes when solving a quadratic equation for its root
 * **One real root**: The parabola just touches the x-axis at one point (vertex).
 
 * **No real roots**: The parabola does not intersect the x-axis.
-
-
-
-
 The quadratic formula is the most common way to find the roots of a quadratic equation:
 
 
@@ -255,10 +243,6 @@ To complete the square for the equation ( ax^2 + bx + c = 0 ), follow these step
 * Divide the linear term's coefficient by 2, square it, and add it to both sides.
 
 * Factor the left side as a perfect square.
-
-
-
-
 4. **Graphing**
 
 
@@ -279,10 +263,6 @@ Quadratic functions are not just theoretical; they appear in many real-life scen
 * **Economics**: In economics, quadratic functions are used to model profit maximization and cost minimization. For example, a company might use a quadratic function to determine the quantity of products to produce in order to maximize profits.
 
 * **Engineering**: Engineers often use quadratic equations to calculate stresses, material strengths, and design curves in structures.
-
-
-
-
 ## Conclusion
 
 

@@ -35,10 +35,6 @@ Before diving into specific weapons, it's crucial to understand CS:GO's economic
 * Kill rewards vary by weapon ($300 for most rifles, $600 for SMGs)
 
 * Starting money: $800 (competitive matches)
-
-
-
-
 ## Primary Weapons
 
 
@@ -62,10 +58,6 @@ The AK-47 stands as one of the most iconic weapons in CS:GO:
 * Excellent cost-effectiveness
 
 * Best used in medium to long-range engagements
-
-
-
-
 **When to Buy**: During full-buy rounds when your team has sufficient economy ($4,000+)
 
 
@@ -83,10 +75,6 @@ These rifles serve as the Counter-Terrorist counterpart to the AK-47:
 * Requires two headshots for kill (except at very close range)
 
 * M4A1-S offers stealth advantage but limited ammo
-
-
-
-
 **When to Buy**: During full-buy rounds with adequate utility money remaining
 
 
@@ -107,10 +95,6 @@ The most powerful sniper rifle in the game:
 * Significant movement penalty
 
 * Limited effectiveness in close-quarters
-
-
-
-
 **When to Buy**: When team economy allows for full utility alongside the purchase
 
 
@@ -132,10 +116,6 @@ Excellent second-round or force-buy weapons:
 * Higher kill reward ($600)
 
 * Effective at close to medium range
-
-
-
-
 **When to Buy**: Anti-eco rounds or force-buy situations
 
 
@@ -158,10 +138,6 @@ The most powerful pistol in CS:GO:
 * Excellent for eco rounds
 
 * Viable against armored opponents
-
-
-
-
 **When to Buy**: Eco rounds or as a sidearm for AWPers
 
 
@@ -178,10 +154,6 @@ Starting pistols with distinct characteristics:
 * P2000: Higher capacity, no silencer
 
 * Glock: Larger magazine, lower damage, burst-fire mode
-
-
-
-
 ## Essential Equipment
 
 
@@ -203,10 +175,6 @@ Perhaps the most crucial utility item:
 * Can be used defensively or offensively
 
 * Crucial for site takes and retakes
-
-
-
-
 **Usage Tips**:
 
 
@@ -230,10 +198,6 @@ Tactical support grenade with multiple uses:
 * Can be thrown overhand or underhand
 
 * Pop-flashes require practice but are highly effective
-
-
-
-
 **Maximum Carry**: 2 flashbangs per player
 
 
@@ -264,10 +228,6 @@ Area denial tool with strategic importance:
 * Delays pushes and rotations
 
 * Useful for post-plant situations
-
-
-
-
 Armor
 
 
@@ -298,10 +258,6 @@ Full protection against headshots:
 * Can be skipped against AK-47/AWP
 
 * Critical for anti-eco rounds
-
-
-
-
 ## How to Build Your Loadout
 
 
@@ -320,10 +276,6 @@ Typical full loadout includes:
 * Full utility (Smoke, 2x Flash, HE, Molotov/Incendiary)
 
 * Defuse kit (CT side)
-
-
-
-
 Force Buy Setup ($2,000 - $3,000)
 
 
@@ -336,10 +288,6 @@ When the economy is limited:
 * Armor (possibly without helmet)
 
 * Limited utility (Smoke + Flash)
-
-
-
-
 Eco Round Setup ($0 - $800)
 
 
@@ -352,10 +300,6 @@ Saving money for future rounds:
 * Minimal or no utility
 
 * No armor
-
-
-
-
 ## Finding and Trading Weapon Skins
 
 
@@ -374,10 +318,6 @@ The primary marketplace for CS:GO items:
 * Transaction fees apply
 
 * Seven-day trade hold on purchases
-
-
-
-
 Trading Websites
 
 
@@ -392,10 +332,6 @@ Third-party trading platforms:
 * Use only well-known, reputable sites
 
 * Always enable two-factor authentication
-
-
-
-
 Trading Tips
 
 
@@ -406,10 +342,6 @@ Trading Tips
 * Document all significant trades
 
 * Check wear values and patterns
-
-
-
-
 ## Conclusion
 
 
@@ -426,10 +358,6 @@ Mastering CS:GO's weapon economy and understanding when to buy specific weapons 
 * Always consider utility alongside weapons
 
 * Stay informed about game updates and changes
-
-
-
-
 The key to success lies not just in choosing the right weapons, but in knowing when and how to use them effectively. Regular practice, especially in deathmatch and workshop maps, will help you master the weapons that best suit your playstyle.
 
 

@@ -45,10 +45,6 @@ Hazards are broadly classified into two categories:
 * **Static Hazards**
 
 * **Dynamic Hazards**
-
-
-
-
 1. Static Hazards
 
 
@@ -172,10 +168,6 @@ Eliminating dynamic hazards requires careful attention to the timing of the circ
 * **Delay Insertion**: In some cases, inserting delays into specific paths can help synchronize the timing of different inputs, reducing the likelihood of dynamic hazards. By slowing down faster paths, designers can ensure that all input signals reach the output at the same time, reducing oscillations.
 
 * **Synchronous Design**: Using synchronous design techniques can help mitigate the impact of dynamic hazards. By ensuring that the circuit operates based on a clock signal, the output is only sampled at specific intervals, reducing the risk of capturing an incorrect output during a glitch.
-
-
-
-
 Static vs. Dynamic Hazards: Key Differences
 
 
@@ -186,10 +178,6 @@ While both static and dynamic hazards arise from timing discrepancies in digital
 * **Static Hazards** occur when the output is supposed to remain constant but momentarily glitches to an incorrect value. They typically involve a single, brief transition and are relatively easy to identify and mitigate.
 
 * **Dynamic Hazards** occur when the output is transitioning between two logic states and experiences multiple unwanted transitions or oscillations. They are more complex to handle and can have a more significant impact on the circuit's performance.
-
-
-
-
 Practical Considerations in Hazard Mitigation
 
 
@@ -204,10 +192,6 @@ In real-world digital design, hazard mitigation is a crucial aspect of ensuring 
 * **Signal Integrity**: Proper management of signal integrity, including controlling noise and minimizing crosstalk between adjacent wires, can help reduce the chances of hazards.
 
 * **Proper Testing**: Post-design testing is essential to ensure that hazards are properly mitigated. Both static and dynamic hazards can be subtle and may only appear under specific input conditions or timing constraints.
-
-
-
-
 Conclusion
 
 

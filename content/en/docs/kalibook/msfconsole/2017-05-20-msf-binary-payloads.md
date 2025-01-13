@@ -36,8 +36,6 @@ We will use the `windows/shell/reverse_tcp` module to create a payload for the t
 ```bash
 root@kali:~# msfvenom --payload-options -p windows/shell/reverse_tcp
 Options for **payload/windows/shell/reverse_tcp:
-
-
  Name: Windows Command Shell, Reverse TCP Stager
  Module: payload/windows/shell/reverse_tcp
  Platform: Windows
@@ -114,8 +112,6 @@ Module options:
 
  Name Current Setting Required Description
  ---- --------------- -------- -----------
-
-
 Payload options (windows/shell/reverse_tcp):
 
  Name Current Setting Required Description
@@ -123,8 +119,6 @@ Payload options (windows/shell/reverse_tcp):
  EXITFUNC thread yes Exit technique: seh, thread, process
  LHOST yes The local address
  LPORT 4444 yes The local port
-
-
 Exploit target:
 
  Id Name

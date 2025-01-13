@@ -10,8 +10,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Services on AlmaLinux
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 50
 

@@ -34,10 +34,6 @@ A robust DR plan allows businesses to recover from unplanned downtime, hardware 
 * **Recovery Point Objective (RPO)**: The maximum allowable data loss, typically measured in time (e.g., 15 minutes of data).
 
 * **Scalability**: The ability to apply the disaster recovery plan to large and complex infrastructures.
-
-
-
-
 VMware and Proxmox both provide DR solutions, but their approaches differ in architecture, scalability, and ease of use.
 Overview of VMware’s Disaster Recovery Features
 

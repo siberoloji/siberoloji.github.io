@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Basic KVM Operations
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 440
 
 keywords:
   - AlmaLinux
   - KVM
-
-
 featured_image: /images/almalinux.webp
 url: basic-kvm-virtual-machine-operations-almalinux
 ---

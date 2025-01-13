@@ -16,11 +16,7 @@ tags:
     - c++
     - pointer
 ---
-
-
 Bu örneğimizde bir pointer tanımlayıp değerini görüntüleyip değiştirmeyi gösteriyoruz.
-
-
 ```cpp
 /**
 * @brief Main function that demonstrates pointer manipulation.

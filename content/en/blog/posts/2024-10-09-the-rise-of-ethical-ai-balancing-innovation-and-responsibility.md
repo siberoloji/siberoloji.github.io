@@ -49,10 +49,6 @@ The key pillars of ethical AI include:
 * **Accountability:** Those who create and deploy AI systems should be held accountable for their actions and the outcomes of the systems they build.
 
 * **Safety:** AI should be designed to avoid causing physical, emotional, or societal harm.
-
-
-
-
 The Rapid Growth of AI and Its Ethical Challenges
 
 

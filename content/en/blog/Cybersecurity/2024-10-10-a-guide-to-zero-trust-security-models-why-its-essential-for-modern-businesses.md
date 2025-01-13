@@ -32,10 +32,6 @@ Core Principles of Zero Trust
 * **Use Least-Privilege Access**: Users should only have access to the resources necessary for their roles. By implementing just-in-time (JIT) and just-enough-access (JEA) policies, organizations can minimize potential damage from compromised accounts[1][2].
 
 * **Assume Breach**: Organizations should operate under the assumption that breaches will occur. This mindset encourages proactive measures to limit the impact of any breaches that do happen, such as segmenting access and employing end-to-end encryption[1][3].
-
-
-
-
 The Importance of Continuous Verification
 
 
@@ -140,10 +136,6 @@ While the benefits of a Zero Trust model are compelling, organizations may face 
 * **User Experience**: Striking a balance between stringent security measures and user convenience is crucial; overly complex systems may lead to frustration among employees.
 
 * **Cultural Shift**: Adopting a Zero Trust mindset requires a cultural shift within the organization where all employees understand their role in maintaining security.
-
-
-
-
 ## Conclusion
 
 

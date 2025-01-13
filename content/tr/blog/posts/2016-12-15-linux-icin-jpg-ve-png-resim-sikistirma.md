@@ -15,77 +15,41 @@ categories:
 tags:
     - 'linux nasıl'
 ---
-
-
 Resim sıkıştırma, sadece bilgisayarınızda değil internette kullandığınız Wordpress benzeri içerik yönetim sistemleri içinde tavsiye edilen bir tekniktir. İçerik yönetim sistemleri, resim sıkıştırma işlemlerini, eklentiler kullanarak yükleme anında yapabilmektedir. Sıkıştırmayı, eklenti kullanmadan bilgisayarınızda da yapabilirsiniz. Bu yazıda, bilgisayarınızda bulunan jpg ve png uzantılı dosyaları sıkıştırabileceğiniz iki ayrı programı tanıtacağım.
-
-
 
 1. pngquant
 
-
-
 2. jpegoptim
-
-
 
 ## pngquant kurulum:
 
-
-
 Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install pngquant</pre>
 <!-- /wp:preformatted -->
-
-
 ## pngquant kullanım:
 
-
-
 png sıkıştırma işlem için komutu kullandığınızda, program sıkıştırmak istediğiniz png uzantılı dosyanıza yeni bir isim vererek kaydeder. Orijinal dosyanızın üzerine yazılmaz. Otomatik isim yerine yeni dosyanın ismini kendiniz -o  parametresi kullanarak belirleyebilirsiniz. Her iki durum için de aşağıda örnek komutları veriyorum.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">pngquant resim.png #yeni resim, resim-f81.png gibi bir isim ile kaydedilir.
 
 pngquant resim.png -o resimzip.png #yeni resim, resimzip.png ismi ile kaydedilir.</pre>
 <!-- /wp:preformatted -->
-
-
 --force  parametresini kullandığınızda, bulunduğunuz klasörde aynı isimli dosya varsa üzerine yazabilirsiniz.
-
-
 
 --skip-if-larger  parametresi, yeni üretilen resim, orjinalinden daha büyük boyutlu ise sıkıştırma işlemi yapılmaz.
 
-
-
 Detaylı yardım açıklamalarını komut satırında pngquant komutunu vererek inceleyebilirsiniz.
-
-
 
 ## Jpegoptim Kurulum:
 
-
-
 Programın kurulumunu aşağıdaki komutu uygulayarak yapabilirsiniz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">sudo apt install jpegoptim</pre>
 <!-- /wp:preformatted -->
-
-
 ## jpegoptim kullanım:
 
-
-
 jpegoptim programı, varsayılan olarak orijinal resmin üzerine yazar. Farklı bir isimle kullanabilmek için, --des= parametresini kullanalarak orijinal resmin bulunduğu klasör haricinde bir hedef klasör belirtmeniz gerekmektedir. -n parametresini kullanarak, sıkşıtırma işlemini gerçekten yapmadan simülasyonunu yaparak resmin ne kadar başarıyla sıkıştırılacağını test edebilirsiniz. Aşağıda, bu kullanımlar için örnek komutları bulabilirsiniz.
-
-
 <!-- wp:preformatted -->
 <pre class="wp-block-preformatted">jpegoptim resim.jpg
 

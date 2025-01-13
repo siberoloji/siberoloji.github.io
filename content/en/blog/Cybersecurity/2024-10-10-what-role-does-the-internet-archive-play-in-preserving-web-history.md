@@ -36,10 +36,6 @@ One of the most significant features of the Internet Archive is the **Wayback Ma
 * **Cultural Preservation**: Many websites that were once popular, such as GeoCities, have been preserved through this service. Without the Internet Archive, much of this cultural history would be lost.
 
 * **Legal and Government Accountability**: The Wayback Machine has been used by various entities, including congressional committees, to retrieve documents and articles relevant to significant events, such as the January 6 uprising in the U.S.
-
-
-
-
 **2. Comprehensive Digital Library**
 
 
@@ -52,10 +48,6 @@ Beyond archiving web pages, the Internet Archive hosts an extensive collection o
 * **Audio and Video**: The Archive contains **14 million audio files** and **13 million videos**, including music, documentaries, and educational content.
 
 * **Software**: It also archives over **1.2 million software programs**, allowing users to access historical software applications that may no longer be available.
-
-
-
-
 **3. Advocacy for Open Access**
 
 
@@ -100,10 +92,6 @@ The effectiveness of web archiving is inherently limited by several factors:
 * **Dynamic Content**: Websites that rely heavily on dynamic content (e.g., social media platforms) are more challenging to archive effectively.
 
 * **Temporal Nature of Web Content**: Research indicates that around **25% of web pages posted between 2013 and 2023 have vanished**, emphasizing the urgency of capturing content before it disappears.
-
-
-
-
 ## Conclusion
 
 

@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Web Distributed Authoring and Versioning (WebDAV) is a protocol that allows users to collaboratively edit and manage files on a remote server. Built into the HTTP protocol, WebDAV is commonly used for file sharing, managing resources, and supporting collaborative workflows. When paired with Apache on AlmaLinux, WebDAV provides a powerful solution for creating shared folders accessible over the web.

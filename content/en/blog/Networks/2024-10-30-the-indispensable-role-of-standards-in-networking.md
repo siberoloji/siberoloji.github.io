@@ -125,8 +125,4 @@ Some of the key trends in network standards include:
 * **Network Function Virtualization (NFV):** NFV allows network functions to be virtualized, reducing hardware costs and increasing agility.
 
 * **5G and Beyond** : 5G and future generations of wireless technology will require new standards to support higher data rates, lower latency, and greater capacity.
-
-
-
-
 By understanding the importance of network standards and staying up-to-date with the latest developments, organizations can ensure the reliability, security, and efficiency of their networks. As the world becomes increasingly interconnected, standards will continue to be the foundation of a robust and innovative digital landscape.

@@ -15,8 +15,6 @@ tags:
    - cybersecurity
    - metasploit framework
 ---
-
-
 Metasploit Framework’ün kullanıcıya sağladığı imkanlardan bir tanesi de dahil bulunduğunuz ağdaki diğer Ip adreslerinde MSSQL kurulumunun olup olmadığını araştırabilmenizdir. Bunun için UDP tarama ile iz araması yapılır.
 
 MSSQL ilk kurulduğunda varsayılan olara 1433 numaralı porttan dinleme yapar. Dinlemenin, 1433 portundan değil de rastgele seçilen portlardan yapılması ayarlanmış olabilir. Bu durumda da 1434 numaralı porta, dinlemenin hangi porttan yapıldığı sorulabilir.
@@ -115,8 +113,6 @@ Module options (auxiliary/admin/mssql/mssql_exec):
    TDSENCRYPTION        false                                 yes       Use TLS/SSL for TDS data "Force Encryption"
    USERNAME             sa                                    no        The username to authenticate as
    USE_WINDOWS_AUTHENT  false                                 yes       Use windows authentification (requires DOMAIN option set)
-
-
 msf auxiliary(mssql_exec) > set RHOST 10.211.55.128
 RHOST => 10.211.55.128
 msf auxiliary(mssql_exec) > set MSSQL_PASS password

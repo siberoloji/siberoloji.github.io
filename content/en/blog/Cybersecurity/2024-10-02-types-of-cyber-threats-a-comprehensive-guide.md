@@ -36,10 +36,6 @@ Viruses are malicious programs that attach themselves to clean files and spread 
 * Replicate themselves
 
 * Slow down system resources
-
-
-
-
 b. Worms
 
 
@@ -52,10 +48,6 @@ Unlike viruses, worms are standalone software that don't need to attach themselv
 * Replicate themselves without human intervention
 
 * Consume bandwidth, slowing down networks
-
-
-
-
 c. Trojans
 
 
@@ -68,10 +60,6 @@ Named after the Greek myth, Trojans disguise themselves as legitimate software b
 * Steal sensitive data
 
 * Give attackers control over your system
-
-
-
-
 d. Ransomware
 
 
@@ -92,10 +80,6 @@ This type of malware collects information about a user's activities without thei
 * Access webcams
 
 * Monitor browsing habits
-
-
-
-
 ## 2. Phishing
 
 
@@ -222,10 +206,6 @@ This technique exploits vulnerabilities in database-driven websites to manipulat
 * Modify database contents
 
 * Execute administrative operations on the database
-
-
-
-
 ## 6. Cross-Site Scripting (XSS)
 
 
@@ -270,10 +250,6 @@ These attacks take advantage of previously unknown vulnerabilities in software o
 * They can remain undetected for extended periods
 
 * They're often used in advanced persistent threats (APTs)
-
-
-
-
 ## 8. Password Attacks
 
 
@@ -374,10 +350,6 @@ As the Internet of Things (IoT) grows, so do the associated security risks. IoT 
 * Hijacked to form botnets for DDoS attacks
 
 * Exploited to steal personal data
-
-
-
-
 ## 12. AI-Powered Attacks
 
 
@@ -390,10 +362,6 @@ Artificial Intelligence is increasingly being used by cybercriminals to:
 * Automate and scale attacks
 
 * Develop more sophisticated malware
-
-
-
-
 ## Conclusion
 
 
@@ -416,8 +384,4 @@ To stay protected:
 * Use reputable antivirus and anti-malware software
 
 * Educate yourself and your team about the latest cyber threats and best practices
-
-
-
-
 By staying informed and vigilant, we can all contribute to a safer digital environment. Remember, in the world of cybersecurity, prevention is always better than cure.

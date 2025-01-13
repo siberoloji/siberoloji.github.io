@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 720
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next task was to implement **disk encryption** to secure sensitive data. His manager emphasized the importance of protecting data at rest, especially on portable devices or backup drives. Bob decided to use **LUKS (Linux Unified Key Setup)**, the standard for disk encryption on Linux.

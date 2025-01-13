@@ -36,10 +36,6 @@ Pseudocode is a simplified, informal language used to describe algorithms and pr
 * **Abstraction:** Pseudocode abstracts away from the specific syntax of a programming language, allowing you to focus on the algorithmic concepts.
 
 * **Independence:** Pseudocode is not tied to a particular programming language, making it a versatile tool for describing algorithms that can be implemented in various languages.
-
-
-
-
 **Basic Pseudocode Constructs**
 
 
@@ -52,10 +48,6 @@ Pseudocode is a simplified, informal language used to describe algorithms and pr
 * **Procedures and Functions:** Subroutines that can be called from other parts of the code.
 
 * **Comments:** Used to explain the purpose of specific code sections.
-
-
-
-
 **Example of Pseudocode**
 
 
@@ -85,10 +77,6 @@ function bubbleSort(array)
 * **Code Generation:** Once the pseudocode is finalized, it can be translated into a specific programming language.
 
 * **Learning Aid:** Pseudocode is a valuable tool for learning programming concepts and understanding how algorithms work.
-
-
-
-
 **Best Practices for Writing Pseudocode**
 
 
@@ -101,10 +89,6 @@ function bubbleSort(array)
 * **Break Down Complex Problems:** Divide large problems into smaller, more manageable subproblems.
 
 * **Test Your Pseudocode:** Run through the pseudocode with sample inputs to ensure it produces the correct output.
-
-
-
-
 **Common Pseudocode Constructs and Their Equivalents in Programming Languages**
 
 

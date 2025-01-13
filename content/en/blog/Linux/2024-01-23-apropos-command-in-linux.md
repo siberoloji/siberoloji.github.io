@@ -22,19 +22,11 @@ tags:
     - 'linux fundamentals'
     - os
 ---
-
-
 You may sometimes have problems remembering ready-made commands on the Linux command line. You may not remember which command is related to what. In such a case, you can search the definitions on the command manual pages with the "apropos" command and find what you are looking for more easily. In this article, we will give examples of the use of the "apropos" command.
-
-
 
 ## apropos command
 
-
-
 You can think of the "apropos" command as the search engine for man pages. This command searches command names and short descriptions. It does not search all help pages. Below is a simple example. This command will list all commands that contain "unzip" anywhere in their help page descriptions or command names.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos unzip
 bunzip2 (1)          - a block-sorting file compressor, v1.0.8
@@ -44,11 +36,7 @@ unzip (1)            - list, test and extract compressed files in a ZIP archive
 unzipsfx (1)         - self-extracting stub for prepending to ZIP archives
 ```
 
-
-
 Beyond the simple usage seen in this example, it is possible to use the command at an advanced level by using some options. You can see the options available to you in the list below.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -h
 Usage: apropos [OPTION...] KEYWORD...
@@ -71,15 +59,9 @@ Usage: apropos [OPTION...] KEYWORD...
   -V, --version              print program version
 ```
 
-
-
 ## -e, --exact
 
-
-
 The phrase you are looking for must match exactly. Below you can see the use of the expression "partiti" with and without the -e option.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -e partiti
 partiti: nothing appropriate.
@@ -105,30 +87,18 @@ systemd-repart (8)   - Automatically grow and add partitions
 systemd-repart.service (8) - Automatically grow and add partitions
 ```
 
-
-
 ## -r, --regex
 
-
-
 If you want to include regular expressions in your search expression, you can use them. For example, ^ means "head side" in regular expressions. Let's try to find the commands that start with "tar". As you can see, the apropos command found 2 commands whose command name starts with "tar" and also found another command whose description begins with Tar.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -r '^tar'
 systemd.target (5)   - Target unit configuration
 tar (1)              - an archiving utility
 tarcat (1)           - concatenates the pieces of a GNU tar multi-volume archive```
 
-
-
 ## -a, --and
 
-
-
 You can use it when all the expressions you are searching for must be found. Let's search for help pages that contain "tar" and "file" in the command name or description.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -a tar file
 gpgtar (1)           - Encrypt or sign files into an archive
@@ -139,15 +109,9 @@ swapon (2)           - start/stop swapping to file/device
 systemd-xdg-autostart-generator (8) - User unit generator for XDG autostart files
 ```
 
-
-
 ## -w, --wildcard
 
-
-
 It indicates that you are using wildcard characters in the expression you want to search. For example, it is used when you want to find all expressions that start with "color" and whatever follows. In our example, all comments containing "color", "colorization", "color-name", "colormap" were found.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -w color*
 cd-create-profile (1) - Color Manager Profile Creation Tool
@@ -164,7 +128,5 @@ XcupGetReservedColormapEntries (3) - list colormap entries reserved by the syste
 XcupStoreColors (3)  - initialize shareable colormap entries at specific locations
 xstdcmap (1)         - X standard colormap utility
 ```
-
-
 
 In this article, we explained the "apropos" command and frequently used options. For more detailed information, you can look at the help pages with the "man apropos" command.

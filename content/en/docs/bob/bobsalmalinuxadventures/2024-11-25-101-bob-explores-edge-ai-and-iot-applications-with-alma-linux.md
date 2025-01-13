@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 1010
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ### **Bob Explores Edge AI and IoT Applications with AlmaLinux**

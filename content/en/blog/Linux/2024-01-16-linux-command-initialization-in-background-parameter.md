@@ -21,15 +21,9 @@ tags:
     - os
     - software
 ---
-
-
 When you enter a command while working on the Linux command line, you have to wait until that command is finished if you want to enter another command. To solve this, you can make new windows and new connections, but there is another solution.
 
-
-
 You can start the command you will give first, in the background. For example, if you want to start a long copy process in the background and deal with other tasks, it will be sufficient to put an &amp; sign at the end of the command.
-
-
 ```bash
 linux@rpi4:~ $ sudo apt update &amp;
 [1] 7336
@@ -49,10 +43,6 @@ All packages are up to date.
 linux@rpi4:~ $ 
 ```
 
-
-
 As you can see above, we started the update process in the background with the `sudo apt update &amp;` command. In this case, the system showed us the job number of the job that started in the background as `[1]`. If more than one job is being done in the background, we can see their list with the jobs command. We can also bring a background process back to the foreground with the `fg 1` command. If we want to do the opposite, we can send a running job to the background using the <kbd>Ctrl+z </kbd>keys.
-
-
 
 The most important convenience that should be emphasized here is that the command line comes back to our use as soon as we give the command with the `&amp;` sign.

@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 640
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure took him into the world of web services. His team needed a reliable web server to host the company’s website, and Apache was the obvious choice. Known for its flexibility and stability, Apache on AlmaLinux was a perfect fit.  

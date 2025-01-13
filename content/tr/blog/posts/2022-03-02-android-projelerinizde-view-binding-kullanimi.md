@@ -24,16 +24,10 @@ tags:
 <blockquote class="wp-block-quote">
 viewBinding, görünümlerle etkileşime giren kodu daha kolay yazmanıza olanak tanıyan bir özelliktir. Bir modülde görünüm bağlama etkinleştirildiğinde, o modülde bulunan her XML düzeni dosyası için bir bağlama sınıfı oluşturur. Bir bağlama sınıfının bir örneği, karşılık gelen düzende bir kimliği olan tüm görünümlere doğrudan başvurular içerir.
 
-
-
 Çoğu durumda, viewBinding, findViewById'nin yerini alır
 <cite>Credit: <a rel="noreferrer noopener" href="https://developer.android.com/topic/libraries/view-binding" target="_blank">developer.android.com</a></cite></blockquote>
 <!-- /wp:quote -->
-
-
 ViewBinding'i etkinleştirmek için, modül düzeyinde build.gradle dosyasına bir derleme seçeneği eklememiz gerekiyor. build.gradle (Modül) dosyanızı aşağıda gösterildiği gibi değiştirin.
-
-
 <!-- wp:code -->
 <pre title="Build.gradle code" class="wp-block-code"><code lang="kotlin" class="language-kotlin">android {
     compileSdk 32
@@ -45,11 +39,7 @@ ViewBinding'i etkinleştirmek için, modül düzeyinde build.gradle dosyasına b
 }
 ```
 
-
-
 Örneğin, başlangıçta bir Activity_main.xml layout dosyamız var. View Binding'i etkinleştirdikten sonra ActivityMainBinding adlı yeni bir Sınıf oluşturulacaktır. Artık bu sınıfı aktivite dosyamızda kullanabiliriz.
-
-
 <!-- wp:code -->
 <pre title="After changing findViewById lines" class="wp-block-code"><code lang="kotlin" class="language-kotlin">const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
 

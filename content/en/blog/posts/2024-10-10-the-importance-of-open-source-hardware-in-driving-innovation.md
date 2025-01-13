@@ -48,10 +48,6 @@ Open-source hardware covers a broad range of devices and technologies, including
 * **Open-source chips** like RISC-V
 
 * **Networking equipment** and DIY consumer electronics
-
-
-
-
 While open-source hardware has long existed in niches, its mainstream adoption is now growing rapidly, offering a wide range of benefits to engineers, manufacturers, hobbyists, and enterprises alike.
 
 

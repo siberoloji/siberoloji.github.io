@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: NFS 4 ACL Tool
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 380
 

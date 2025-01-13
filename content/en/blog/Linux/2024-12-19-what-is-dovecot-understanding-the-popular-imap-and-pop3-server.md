@@ -13,8 +13,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/mailservers.webp
-
-
 url: dovecot-understanding-popular-imap-pop3-server
 ---
 Dovecot has established itself as one of the leading open-source IMAP and POP3 servers in the email infrastructure landscape. Since its initial release in 2002, Dovecot has become renowned for its security, performance, and standards compliance, making it the preferred choice for organizations worldwide.

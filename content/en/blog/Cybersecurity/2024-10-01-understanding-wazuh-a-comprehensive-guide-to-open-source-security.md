@@ -144,10 +144,6 @@ Wazuh operates through a multi-component architecture that includes the followin
 * **Elasticsearch**: Wazuh uses Elasticsearch to store, search, and analyze data. This component allows security teams to visualize large volumes of data quickly and efficiently.
 
 * **Kibana**: Wazuh integrates with Kibana to provide powerful visualizations and dashboards for monitoring security events and alerts. This integration makes it easy to track trends, generate reports, and identify potential threats.
-
-
-
-
 Why Choose Wazuh?
 
 

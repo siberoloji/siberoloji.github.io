@@ -11,15 +11,11 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
   - phpmyadmin
-
-
 featured_image: /images/almalinux.webp
 ---
 **phpMyAdmin** is a popular web-based tool that simplifies the management of MySQL and MariaDB databases. It provides an intuitive graphical user interface (GUI) for performing tasks such as creating, modifying, and deleting databases, tables, and users without the need to execute SQL commands manually. If you are running **MariaDB** on **AlmaLinux**, phpMyAdmin can significantly enhance your database administration workflow.

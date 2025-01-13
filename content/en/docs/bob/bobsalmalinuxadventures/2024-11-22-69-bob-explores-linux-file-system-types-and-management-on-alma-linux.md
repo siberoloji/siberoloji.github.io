@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 690
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s manager tasked him with organizing and managing the server’s storage effectively. To do so, Bob needed to understand the **Linux file system**, its types, and how to manage partitions, mounts, and attributes.

@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 790
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-masters-linux-backup-strategies-almalinux
 ---

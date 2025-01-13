@@ -10,16 +10,12 @@ tags:
 categories:
   - Kali linux
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 230
 
 keywords:
   - assetfinder
-
-
 
 featured_image: /images/kalilinux2.webp
 url: assetfinder-kali-linux-tool-informative-guide

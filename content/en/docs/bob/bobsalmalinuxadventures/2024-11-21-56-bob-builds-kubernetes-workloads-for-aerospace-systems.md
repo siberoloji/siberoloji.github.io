@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 560
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Let’s dive into Chapter 56, *"Bob Builds Kubernetes Workloads for Aerospace Systems!"*. In this chapter, Bob takes on the exciting challenge of managing workloads for **aerospace systems**, including satellite communication, mission control, and space exploration, leveraging Kubernetes for orchestration, scalability, and data processing.

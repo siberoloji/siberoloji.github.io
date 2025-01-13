@@ -113,8 +113,6 @@ Module options (auxiliary/admin/mssql/mssql_exec):
  TDSENCRYPTION false yes Use TLS/SSL for TDS data "Force Encryption"
  USERNAME sa no The username to authenticate as
  USE_WINDOWS_AUTHENT false yes Use windows authentification (requires DOMAIN option set)
-
-
 msf auxiliary(mssql_exec) > set RHOST 10.211. 55.128
 RHOST => 10.211. 55.128
 msf auxiliary(mssql_exec) > set MSSQL_PASS password

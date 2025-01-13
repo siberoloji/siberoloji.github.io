@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 HAProxy is a widely used open-source solution for load balancing and high availability. Among its robust features is a built-in statistics web interface that provides detailed metrics on server performance, connections, and backend health. This post delves into how to set up and refer to the HAProxy statistics web interface on AlmaLinux, a popular choice for server environments due to its stability and RHEL compatibility.

@@ -65,10 +65,6 @@ The tool supports an impressive array of compression formats, including:
 * ISO
 
 * RAR (extraction only)
-
-
-
-
 3. Strong Encryption
 
 
@@ -235,10 +231,6 @@ For additional security:
 * Adjust based on your system's capabilities
 
 * Default settings are usually sufficient for most uses
-
-
-
-
 ## Integration with Kali Linux Workflows
 
 
@@ -279,10 +271,6 @@ For additional security:
 * Can be integrated into backup solutions
 
 * Works well in automated reporting systems
-
-
-
-
 ## Troubleshooting Common Issues
 
 
@@ -319,10 +307,6 @@ For additional security:
 * Use error correction when available
 
 * Keep source files until verification is complete
-
-
-
-
 ## Conclusion
 
 

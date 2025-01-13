@@ -42,10 +42,6 @@ There are multiple levels of sentiment analysis:
 * **Sentence-level** sentiment analysis: Focuses on identifying the sentiment of individual sentences within a text.
 
 * **Aspect-based** sentiment analysis: Dives deeper to detect the sentiment associated with specific aspects of a topic (e.g., sentiment about a product’s features).
-
-
-
-
 By applying sentiment analysis to social media platforms, OSINT practitioners can gauge public sentiment regarding various topics, such as political events, corporate brands, emerging social issues, or even geopolitical conflicts.
 
 
@@ -66,10 +62,6 @@ Sentiment analysis automates the process of understanding the general mood of th
 * **Corporate intelligence:** Companies can analyze sentiment to understand how their brand is perceived or to detect PR crises early.
 
 * **Crisis management:** Identifying public reactions during natural disasters or political upheavals can assist in faster, more informed responses.
-
-
-
-
 By tapping into sentiment analysis, OSINT practitioners can focus on the most relevant content and avoid information overload, directing resources to areas that are most likely to yield actionable intelligence.
 
 
@@ -92,10 +84,6 @@ Rule-based systems rely on pre-defined sets of rules, including lexicons (word l
 * Use word lists to assign positive or negative sentiment values to terms.
 
 * Employ language rules (e.g., negations like "not happy" become negative) to determine context.
-
-
-
-
 While rule-based systems are relatively straightforward to implement, they can struggle with complex language, such as sarcasm, slang, or nuanced emotional tones. For instance, a rule-based system may fail to capture the negative connotation in the sentence “Great, another software crash,” as the word "great" is usually positive.
 
 
@@ -112,10 +100,6 @@ Machine learning-based sentiment analysis utilizes algorithms to automatically l
 * **Naïve Bayes**
 
 * **Random Forest**
-
-
-
-
 Machine learning methods generally perform better than rule-based approaches due to their ability to handle more nuanced sentiments, such as sarcasm, irony, or colloquial expressions. However, they require large labeled datasets to train effectively and may need ongoing adjustments as new slang or trends emerge.
 
 
@@ -170,10 +154,6 @@ While sentiment analysis offers a powerful way to analyze social media for OSINT
 * **Multilingual Analysis:** Social media is a global platform, with users communicating in hundreds of languages. Handling multilingual sentiment analysis requires language-specific models, and errors can occur when tools are not properly trained for specific languages or dialects.
 
 * **Noise and Spamming:** Social media platforms contain a significant amount of irrelevant, spammy, or noisy data. Analysts must be able to filter out this content to focus on meaningful posts and comments.
-
-
-
-
 ## Tools for Sentiment Analysis in OSINT
 
 

@@ -36,10 +36,6 @@ What is Bandwidth?
 * **Measurement**: Bandwidth is measured at the physical layer of the OSI model, which includes the hardware technologies that facilitate communication over a network.
 
 * **Influence on Speed**: While higher bandwidth can lead to faster data transfer rates, it does not automatically equate to improved performance due to other limiting factors such as network congestion and latency.
-
-
-
-
 What is Throughput?
 
 
@@ -55,10 +51,6 @@ What is Throughput?
 * **Affected by Network Conditions**: Unlike bandwidth, throughput can vary significantly based on network congestion, interference, and transmission errors.
 
 * **Measurement Across OSI Layers**: Throughput can be assessed at various layers of the OSI model, providing insights into performance across different aspects of a network.
-
-
-
-
 Key Differences Between Bandwidth and Throughput
 
 
@@ -97,10 +89,6 @@ Several elements can impact throughput:
 * **Errors and Retransmissions**: If packets are lost or corrupted during transmission, they need to be retransmitted, which reduces overall throughput.
 
 * **Protocol Overheads**: Different networking protocols have varying levels of overhead that can affect how efficiently data is transmitted.
-
-
-
-
 Real-World Implications
 
 
@@ -113,10 +101,6 @@ Understanding bandwidth and throughput is crucial for both individuals and organ
 * **Network Administrators** need to monitor both metrics to identify bottlenecks and optimize configurations for better performance.
 
 * For businesses relying on cloud services or remote work solutions, ensuring adequate bandwidth and monitoring throughput can lead to smoother operations and improved productivity.
-
-
-
-
 Improving Bandwidth and Throughput
 
 
@@ -131,10 +115,6 @@ To enhance both bandwidth and throughput in your network environment, consider i
 * **Reduce Interference**: Minimize physical barriers and electronic interference that could affect wireless signals.
 
 * **Regular Testing**: Use tools like Iperf or speed test utilities to regularly measure both bandwidth and throughput for ongoing optimization.
-
-
-
-
 Conclusion
 
 

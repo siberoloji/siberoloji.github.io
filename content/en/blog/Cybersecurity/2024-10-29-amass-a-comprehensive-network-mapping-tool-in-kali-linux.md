@@ -51,10 +51,6 @@ The tool performs DNS enumeration and automated deep scanning to discover subdom
 * DNS wildcard detection
 
 * Alterations and permutations of names
-
-
-
-
 2. Data Sources Integration
 
 
@@ -73,10 +69,6 @@ Amass can collect data from numerous external sources, including:
 * Web archives
 
 * WHOIS records
-
-
-
-
 3. Advanced Features
 
 
@@ -89,10 +81,6 @@ Amass can collect data from numerous external sources, including:
 * Active and passive information-gathering methods
 
 * Output in multiple formats (JSON, CSV, GraphML)
-
-
-
-
 ## Installation and Setup in Kali Linux
 
 
@@ -173,10 +161,6 @@ Amass can be resource-intensive, especially during large scans. Consider these o
 * Implement appropriate timeouts using `-timeout`
 
 * Utilize the `-df` flag for specific domain scope
-
-
-
-
 2. Output Management
 
 
@@ -269,10 +253,6 @@ When using Amass, it's crucial to:
 * Document all testing activities
 
 * Handle discovered information responsibly
-
-
-
-
 ## Limitations and Considerations
 
 
@@ -287,10 +267,6 @@ While Amass is powerful, users should be aware of its limitations:
 * Dependency on external data sources
 
 * Need for proper configuration for optimal results
-
-
-
-
 ## Integration with Other Tools
 
 
@@ -305,10 +281,6 @@ Amass works well with other security tools:
 * Metasploit for exploitation
 
 * Custom scripts through API integration
-
-
-
-
 ## Conclusion
 
 

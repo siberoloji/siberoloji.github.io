@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 890
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to master **Bash scripting**, the cornerstone of Linux automation. By writing scripts to streamline repetitive tasks, he aimed to enhance his productivity and reduce manual work across his AlmaLinux systems.

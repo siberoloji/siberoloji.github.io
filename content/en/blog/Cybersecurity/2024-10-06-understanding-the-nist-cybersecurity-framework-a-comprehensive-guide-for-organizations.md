@@ -41,10 +41,6 @@ The framework consists of three main components:
 * Implementation Tiers
 
 * Profiles
-
-
-
-
 Let's delve into each of these components to understand their roles and significance.
 
 
@@ -65,10 +61,6 @@ The Core is the heart of the NIST Cybersecurity Framework. It provides a set of 
 * Respond
 
 * Recover
-
-
-
-
 These functions are not meant to form a linear path or lead to a static desired end state. Rather, they should be performed concurrently and continuously to form an operational culture that addresses dynamic cybersecurity risks.
 
 
@@ -158,10 +150,6 @@ The final function, Recover, identifies appropriate activities to maintain plans
 * Improvements: Implementing lessons learned into future activities, including improvements to recovery plans.
 
 * Communications: Coordinating restoration activities with internal and external parties.
-
-
-
-
 2. Implementation Tiers
 
 
@@ -176,10 +164,6 @@ The Implementation Tiers provide context on how an organization views cybersecur
 * Tier 3 (Repeatable): The organization's risk management practices are formally approved and expressed as policy.
 
 * Tier 4 (Adaptive): The organization adapts its cybersecurity practices based on lessons learned and predictive indicators derived from previous and current cybersecurity activities.
-
-
-
-
 These tiers reflect a progression from informal, reactive responses to approaches that are agile and risk-informed. It's important to note that these tiers do not represent maturity levels. Instead, they're meant to support organizational decision-making about how to manage cybersecurity risk, as well as which dimensions of the organization are higher priority and could receive additional resources.
 
 
@@ -200,10 +184,6 @@ Profiles can be used to:
 * Identify opportunities for improving cybersecurity posture by comparing a "Current" Profile with a "Target" Profile.
 
 * Establish a roadmap for reducing cybersecurity risk.
-
-
-
-
 ## Benefits of Implementing the NIST Cybersecurity Framework
 
 
@@ -224,10 +204,6 @@ Adopting the NIST Cybersecurity Framework offers several benefits to organizatio
 * **Alignment with Industry Standards**: It incorporates and references globally recognized standards and guidelines, helping organizations align with industry best practices.
 
 * **Enhanced Communication**: The framework facilitates better communication about cybersecurity risk management with internal and external stakeholders, including partners and suppliers.
-
-
-
-
 ## Challenges in Implementing the NIST Cybersecurity Framework
 
 
@@ -244,10 +220,6 @@ While the benefits are significant, organizations may face some challenges when 
 * **Measuring Effectiveness**: Quantifying the impact of the framework implementation on overall cybersecurity posture can be difficult.
 
 * **Keeping Pace with Threats**: As cyber threats evolve rapidly, organizations need to continuously update their implementation of the framework.
-
-
-
-
 ## Conclusion
 
 

@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 630
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ### **Securing SSH with Fail2Ban and Two-Factor Authentication (2FA)**

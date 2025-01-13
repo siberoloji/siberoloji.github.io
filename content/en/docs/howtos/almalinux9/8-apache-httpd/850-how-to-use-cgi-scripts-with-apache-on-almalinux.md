@@ -13,14 +13,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Common Gateway Interface (CGI) is a standard protocol used to enable web servers to execute external programs, often scripts, to generate dynamic content. While CGI has been largely supplanted by modern alternatives like PHP, Python frameworks, and Node.js, it remains a valuable tool for specific applications and learning purposes. Apache HTTP Server (httpd), paired with AlmaLinux, offers a robust environment to run CGI scripts efficiently.

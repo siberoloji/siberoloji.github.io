@@ -67,10 +67,6 @@ In anticipation of the quantum computing threat, researchers and standards bodie
 * **Isogeny-based cryptography:** This relies on the difficulty of computing isogenies between elliptic curves. Examples include SIDH and CSIDH.
 
 * **Hash-based cryptography:** This approach uses cryptographic hash functions to construct digital signatures. Examples include XMSS and SPHINCS+.
-
-
-
-
 **Implementing PQC: Challenges and Considerations**
 
 
@@ -85,10 +81,6 @@ Transitioning to PQC will require careful planning and execution. Key challenges
 * **Migration costs:** The cost of upgrading existing systems to use PQC can be significant.
 
 * **Quantum-safe key exchange:** Establishing secure key exchange protocols in a post-quantum world is essential.
-
-
-
-
 **Beyond Encryption: Quantum Threats and Defenses**
 
 
@@ -109,10 +101,6 @@ Defending against quantum threats requires a multi-layered approach, including:
 * **Quantum-safe key management:** Protecting cryptographic keys from quantum attacks.
 
 * **Quantum-safe random number generation:** Ensuring the quality of random numbers used in cryptographic operations.
-
-
-
-
 **Conclusion**
 
 

@@ -12,8 +12,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: ""
-
-
 url: data-transmission-speeds-ieee-802-3-ieee-802-5-networks-compare
 ---
 The data transmission speeds of IEEE 802.3 (Ethernet) and IEEE 802.5 (Token Ring) differ significantly, reflecting their respective design philosophies and technological advancements. Here’s a detailed comparison of their data transmission speeds:

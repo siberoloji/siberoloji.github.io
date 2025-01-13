@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 830
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to set up **virtual machines (VMs)** using **KVM (Kernel-based Virtual Machine)** on AlmaLinux. Virtualization allows a single physical server to run multiple isolated operating systems, making it a cornerstone of modern IT infrastructure.

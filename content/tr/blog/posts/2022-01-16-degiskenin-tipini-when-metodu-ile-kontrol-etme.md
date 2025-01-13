@@ -15,11 +15,7 @@ tags:
     - 'değişken kontrolü'
     - 'when() ile değişken kontrolü'
 ---
-
-
 Bu yazıda, veri tipi ile When() kullanımına bir örnek görebilirsiniz. Veri türü, çalıştırılacak kodu belirleyecektir.
-
-
 ```bash
  val x : Any = 12.75
     when(x){
@@ -31,8 +27,6 @@ Bu yazıda, veri tipi ile When() kullanımına bir örnek görebilirsiniz. Veri 
     }
 
 ```
-
-
 <!-- wp:image {"id":157,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://www.siberoloji.com/wp-content/uploads/2022/02/when_datatype_check_kotlin.png-1024x593.webp" alt="" class="wp-image-157" /></figure>
 <!-- /wp:image -->

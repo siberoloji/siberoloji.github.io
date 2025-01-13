@@ -12,14 +12,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 PostgreSQL is a robust and open-source relational database system renowned for its reliability and advanced features. One critical aspect of database security is ensuring secure communication between the server and clients. Configuring PostgreSQL to use **SSL/TLS** (Secure Sockets Layer / Transport Layer Security) on **AlmaLinux** is a vital step in safeguarding data in transit against eavesdropping and tampering.

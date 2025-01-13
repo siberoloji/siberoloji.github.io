@@ -42,10 +42,6 @@ The OSI Model is a theoretical framework developed by the International Organiza
 * **Data Link Layer**: Facilitates node-to-node data transfer and handles error correction from the physical layer.
 
 * **Physical Layer**: The lowest layer that deals with the physical connection between devices, including cables, switches, and electrical signals.
-
-
-
-
 The OSI Model is often praised for its clear separation of functions, making it an excellent educational tool for understanding network protocols.
 
 
@@ -64,10 +60,6 @@ In contrast, the TCP/IP Model was developed in the 1970s by the U.S. Department 
 * **Internet Layer**: Corresponds to the OSI's Network Layer; it manages packet routing using IP.
 
 * **Network Interface (Link) Layer**: Combines functionalities of both OSI's Data Link and Physical layers.
-
-
-
-
 The TCP/IP Model is widely adopted due to its simplicity and practicality in real-world applications.
 
 
@@ -86,10 +78,6 @@ The most apparent difference lies in their architecture:
 * The **OSI Model** has seven layers.
 
 * The **TCP/IP Model** has four layers.
-
-
-
-
 This difference affects how networking functions are categorized and implemented [1][2].
 
 
@@ -100,30 +88,18 @@ Development Philosophy
 * The OSI Model was designed as a theoretical framework aimed at promoting interoperability across diverse systems.
 
 * The TCP/IP Model was developed based on existing protocols to meet immediate communication needs over the Internet [3][5].
-
-
-
-
 Protocol Specification
 
 
 * The OSI Model is protocol-independent; it provides guidelines for network communication without tying itself to specific protocols.
 
 * The TCP/IP Model is inherently protocol-specific; it defines how data is transmitted over the internet using established protocols like TCP and IP [1][4].
-
-
-
-
 Focus on Functionality
 
 
 * The OSI Model emphasizes a clear separation of services, interfaces, and protocols at each layer.
 
 * The TCP/IP Model combines certain functions within its layers for simplicity [2][3].
-
-
-
-
 ## Practical Implications
 
 
@@ -142,10 +118,6 @@ When designing networks:
 * The OSI Model provides a comprehensive framework that can help ensure all necessary functions are considered.
 
 * The TCP/IP Model allows for more straightforward implementation since it aligns closely with real-world protocols used on the internet [4][5].
-
-
-
-
 Troubleshooting
 
 
@@ -156,10 +128,6 @@ For troubleshooting:
 * The OSI Model’s detailed layering can help pinpoint issues at specific layers (e.g., identifying whether a problem lies in application software or physical connections).
 
 * The TCP/IP Model’s simplicity can facilitate quicker diagnostics since fewer layers mean fewer potential points of failure [1][3].
-
-
-
-
 ## Security Considerations
 
 
@@ -178,10 +146,6 @@ The OSI model allows for detailed security implementations across its seven laye
 * At the Application Layer, security measures include SSL/TLS encryption and application firewalls.
 
 * At lower layers, additional protections can be implemented to secure data as it travels through various mediums [4][5].
-
-
-
-
 Security in the TCP/IP Model
 
 
@@ -192,10 +156,6 @@ In contrast:
 * The TCP/IP model integrates security measures more broadly across its four layers but may lack granularity compared to the OSI model.
 
 * For instance, while encryption can occur at multiple levels within TCP/IP (application-level encryption through HTTPS), it may not specify distinct security measures at each layer as clearly as OSI does [4][5].
-
-
-
-
 ## Conclusion
 
 

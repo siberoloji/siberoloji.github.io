@@ -30,10 +30,6 @@ IoT devices are often deployed in environments that lack robust physical securit
 * **Lack of Updates**: Many devices do not receive regular firmware updates, leaving them vulnerable to known exploits.
 
 * **Physical Tampering**: Devices placed in unprotected locations can be physically accessed and compromised.
-
-
-
-
 Understanding these vulnerabilities is the first step toward effective hardening.
 
 

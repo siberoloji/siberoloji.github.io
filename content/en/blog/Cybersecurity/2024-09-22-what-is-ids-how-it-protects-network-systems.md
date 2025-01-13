@@ -63,20 +63,12 @@ A **Network-Based Intrusion Detection System (NIDS)** monitors the entire networ
 * It compares packet data to a database of known attack signatures or checks for unusual traffic patterns.
 
 * If a potential threat is detected, NIDS raises an alert and logs the event for further investigation.
-
-
-
-
 **Benefits of NIDS:**
 
 
 * **Wide coverage**: Monitors all network traffic, providing an overarching view of the network’s security.
 
 * **Scalability**: Suitable for large networks where monitoring individual systems would be inefficient.
-
-
-
-
 However, NIDS has its limitations. It may struggle with encrypted traffic and can have difficulty identifying attacks targeting a specific host if it is not positioned to monitor internal traffic between hosts.
 
 
@@ -96,20 +88,12 @@ A **Host-Based Intrusion Detection System (HIDS)** operates on individual hosts 
 * It compares this activity to a known baseline or attack signatures to detect intrusions.
 
 * If suspicious activity is found, HIDS generates an alert and stores the logs for further analysis.
-
-
-
-
 **Benefits of HIDS:**
 
 
 * **Detailed monitoring**: Provides granular insights into the security of individual devices.
 
 * **Direct access to logs**: Since it operates on the host itself, HIDS has access to system-level data, making it effective at detecting attacks that evade network monitoring.
-
-
-
-
 The downside of HIDS is that it only monitors individual devices, making it unsuitable for network-wide monitoring. Additionally, it may place a performance burden on the host system.
 How IDS Protects Network Systems
 

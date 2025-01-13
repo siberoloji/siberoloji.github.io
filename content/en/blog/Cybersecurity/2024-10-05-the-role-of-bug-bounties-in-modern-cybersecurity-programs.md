@@ -36,10 +36,6 @@ Bug bounty programs are generally run on specialized platforms, such as:
 * **Synack**
 
 * **Open Bug Bounty**
-
-
-
-
 These platforms serve as intermediaries, connecting organizations with a global community of security researchers.
 
 
@@ -131,10 +127,6 @@ The scope also outlines **what types of vulnerabilities** are eligible for rewar
 * Authentication bypass
 
 * Data leakage
-
-
-
-
 2. **Set Reward Tiers**
 
 

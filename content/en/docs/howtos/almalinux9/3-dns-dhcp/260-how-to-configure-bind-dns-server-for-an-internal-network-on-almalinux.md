@@ -10,8 +10,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: DNS Server for an Internal Network
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 260
 

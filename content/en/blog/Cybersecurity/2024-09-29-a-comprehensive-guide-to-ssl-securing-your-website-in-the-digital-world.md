@@ -44,10 +44,6 @@ The SSL process is built on encryption and authentication, which work together t
 * **Session encryption begins**: Once the certificate is validated, the browser generates a session key (a symmetric encryption key) and encrypts it using the server's public key. The server then decrypts the session key using its private key, and the secure session begins.
 
 * **Secure data exchange**: From this point onward, all data exchanged between the browser and server is encrypted, ensuring that no third party can intercept or tamper with the information.
-
-
-
-
 This entire process happens almost instantaneously, which is why most users aren’t even aware it’s taking place. However, it's this invisible process that ensures the security of sensitive data like passwords, credit card numbers, and personal information.
 Why is SSL Important?
 

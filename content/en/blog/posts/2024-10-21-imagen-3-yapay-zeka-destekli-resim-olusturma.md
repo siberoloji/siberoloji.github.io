@@ -36,10 +36,6 @@ Yapay zekanın sürekli gelişen manzarasında, metinden görüntüye modeller �
 * **Gelişmiş Metin Anlayışı:**  Imagen 3, doğal dilin daha derin bir şekilde anlaşılmasını sağlayarak, metin isteminin anlamını ve bağlamını doğru şekilde yansıtan görseller üretmesini sağlar. Bu gelişmiş anlayış, daha alakalı ve görsel olarak daha çekici sonuçlara yol açar.
 
 * **Gerçekçi Görüntü Oluşturma:**  Model, genellikle insanların oluşturduklarından ayırt edilemeyen oldukça gerçekçi görüntüler üretme yeteneğine sahiptir. Bu gerçekçilik düzeyinin, içerik oluşturma, tasarım ve araştırma gibi çeşitli uygulamalar için önemli etkileri vardır.
-
-
-
-
 **Mimarlık ve Eğitim**
 
 
@@ -58,10 +54,6 @@ Imagen 3'ün mimarisi, doğal dil işleme görevlerinde etkili olduğu kanıtlan
 * **Araştırma ve Geliştirme:**  Imagen 3, bilgisayar görüşü, doğal dil işleme ve yapay zeka gibi çeşitli araştırma alanlarında kullanılabilir. Araştırmacıların dil ve görsel algı arasındaki ilişkiyi incelemelerine ve yapay zeka için yeni uygulamalar geliştirmelerine yardımcı olabilir.
 
 * **Eğitim ve Öğretim:**  Model, öğrenmeyi ve anlamayı geliştirebilecek çizimler ve diyagramlar gibi eğitim materyalleri oluşturmak için kullanılabilir. Ayrıca, nesne tanıma veya görüntü sınıflandırması gibi diğer görevlerde AI modellerini eğitmek için de kullanılabilir.
-
-
-
-
 **Etik Hususlar**
 
 

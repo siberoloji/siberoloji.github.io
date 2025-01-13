@@ -15,8 +15,6 @@ linkTitle: MSF Remote Desktop
 translationKey: msfremotedesktop
 weight: 1
 ---
-
-
 Metasploit Framework içerisinde Meterpreter ile bir shell açtığınızda yapılabilecek işlemlerden bir tanesi de uzak masaüstü bağlantısını hayata geçirmek olabilir. Bunun için `getgui` komutu oldukça kullanışlıdır.
 
 Bu yazımızda `getgui` komutunu kullanarak sistemde bir kullanıcı oluşturup ardından `rdesktop` komutu ile bu bilgisayara nasıl bağlanabileceğimizi göreceğiz.

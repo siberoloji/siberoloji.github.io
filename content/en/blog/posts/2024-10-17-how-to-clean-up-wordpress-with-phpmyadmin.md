@@ -38,10 +38,6 @@ Your WordPress database stores all the content and settings of your website, inc
 * **Reduced Disk Usage**: Database bloat consumes server storage space, especially on shared hosting where storage is often limited. By removing unnecessary files, you free up space for more critical files and data.
 
 * **Security and Maintenance**: A clean database is easier to manage, troubleshoot, and secure. Irrelevant files can create opportunities for errors and potential vulnerabilities.
-
-
-
-
 Now that you know why it’s crucial to keep your WordPress database clean, let's discuss the unnecessary files that tend to accumulate over time.
 
 
@@ -136,10 +132,6 @@ Auto drafts are saved in the `wp_posts` table of your WordPress database. To del
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* Click **Go** to execute the query.
-
-
-
-
 This will remove all auto-draft posts from your database.
 
 
@@ -163,10 +155,6 @@ Revisions are also stored in the `wp_posts` table. To remove post revisions:
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* Click **Go**.
-
-
-
-
 This will delete all post revisions from your database.
 
 
@@ -188,10 +176,6 @@ To remove trashed posts:
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list">* Click **Go**.
-
-
-
-
 To remove trashed comments:
 
 
@@ -258,10 +242,6 @@ Transients are stored in the `wp_options` table. To remove expired transients:
 
 <!-- wp:list {"ordered":true,"start":2} -->
 <ol start="2" class="wp-block-list">* Click **Go**.
-
-
-
-
 This will remove expired transients from your database.
 
 
@@ -293,10 +273,6 @@ Orphaned metadata can accumulate over time. To clean up orphaned metadata:
 
 <!-- wp:list {"ordered":true,"start":3} -->
 <ol start="3" class="wp-block-list">* Click **Go** for each query.
-
-
-
-
 Best Practices for Database Maintenance
 
 
@@ -319,10 +295,6 @@ This limits the number of revisions saved per post to three.
 
 <!-- wp:list {"ordered":true,"start":4} -->
 <ol start="4" class="wp-block-list">* **Regular Cleanup**: Clean your WordPress database periodically to prevent it from becoming cluttered. Running regular cleanups ensures better performance and more efficient database management.
-
-
-
-
 Conclusion
 
 

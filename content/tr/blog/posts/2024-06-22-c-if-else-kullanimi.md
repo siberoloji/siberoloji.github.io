@@ -15,11 +15,7 @@ categories:
 tags:
     - 'c++ if else'
 ---
-
-
 Bu yazımızda, C++ if else kullanımını inceleyebilirsiniz. 
-
-
 ```cpp
 #include <iostream>
 

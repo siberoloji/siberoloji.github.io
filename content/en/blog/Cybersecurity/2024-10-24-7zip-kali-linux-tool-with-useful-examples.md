@@ -70,10 +70,6 @@ There are several compelling reasons to use 7zip on Kali Linux:
 * **Cross-Platform Compatibility**: While primarily used in Windows environments, 7zip is highly effective on Linux, making it an excellent choice for Kali Linux users who might need to work across platforms.
 
 * **Secure**: 7zip offers encryption options, including AES-256 encryption for .7z files, ensuring that sensitive data remains protected when compressed.
-
-
-
-
 Given the security-conscious nature of Kali Linux, having a reliable and secure compression tool is a must. Whether you're archiving log files or encrypting sensitive data for transfer, 7zip proves to be a powerful ally.
 3. How to Install 7zip on Kali Linux
 
@@ -107,10 +103,6 @@ sudo apt install p7zip-full p7zip-rar```
 * **p7zip-full**: Provides 7z and other common formats (ZIP, TAR, etc.).
 
 * **p7zip-rar**: Adds support for RAR files.
-
-
-
-
 Once installed, 7zip can be used through the **7z** command in the terminal.
 4. Basic 7zip Commands and Their Usage
 

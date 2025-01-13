@@ -14,8 +14,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 910
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to set up and manage **web servers** using **Apache** and **Nginx** on AlmaLinux. Web servers form the backbone of modern applications, and mastering them would make Bob an indispensable system administrator.

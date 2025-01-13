@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 Proxy servers are essential tools for managing and optimizing network traffic. **Squid**, a powerful open-source proxy server, provides features like caching, traffic filtering, and access control. One key feature of Squid is its ability to implement user-based restrictions using **basic authentication**. By enabling authentication, administrators can ensure only authorized users access the proxy, further enhancing security and control.

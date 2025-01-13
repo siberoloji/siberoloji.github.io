@@ -49,10 +49,6 @@ To better understand how CSRF works, it helps to break down the attack step by s
 * the Server Processes the Request**: The target server receives the forged request, and because it comes with the user’s valid session information, it processes the request as if it were from the authenticated user.
 
 * the Attack is Complete**: The attacker’s goal is accomplished, whether it’s stealing money, changing account settings, or some other malicious activity, without the victim’s knowledge.
-
-
-
-
 In most cases, the user will remain completely unaware that the attack has occurred until the damage is already done.
 **Real-World Consequences of CSRF Attacks**
 
@@ -70,10 +66,6 @@ The potential consequences of a successful CSRF attack can range from minor anno
 * **Exploitation of Social Media Accounts**: CSRF attacks can be used to post unauthorized messages, change privacy settings, or even send friend requests on social media platforms. This can damage a user’s reputation or be used as part of a larger phishing campaign.
 
 * **Compromised Security Settings**: In certain cases, attackers can exploit CSRF vulnerabilities to disable security features such as two-factor authentication, making future attacks easier to execute.
-
-
-
-
 These attacks are particularly dangerous because they exploit the trust between a user’s browser and a website, and they can often occur without any visible signs to the user.
 **What Makes CSRF So Dangerous?**
 

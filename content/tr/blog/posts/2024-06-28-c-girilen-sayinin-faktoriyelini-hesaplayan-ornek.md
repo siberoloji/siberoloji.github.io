@@ -15,11 +15,7 @@ categories:
 tags:
     - c++
 ---
-
-
 Bu örneğimizde, girilen sayının faktöriyelini bir fonksiyon yardımı ile hesaplamayı gösteriyoruz.
-
-
 ```bash
 #include <iostream>
 using namespace std;

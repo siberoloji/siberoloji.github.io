@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 In a modern enterprise environment, integrating different identity management systems is often necessary for seamless operations. FreeIPA, a robust open-source identity management system, can be configured to establish trust with Microsoft Active Directory (AD). This enables users from AD domains to access resources managed by FreeIPA, facilitating centralized authentication and authorization across hybrid environments.

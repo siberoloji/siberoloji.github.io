@@ -47,20 +47,12 @@ Parity check is a basic error detection technique that involves adding an extra 
 * **Data Reception:** The receiver checks the parity of the received data word.
 
 * **Error Detection:** If the parity is incorrect, an error is detected.
-
-
-
-
 **Limitations of Parity Check:**
 
 
 * **Single-Bit Error Detection:** Parity check can only detect single-bit errors. It cannot detect multiple-bit errors or burst errors.
 
 * **Limited Error Correction:** Parity check does not provide error correction capabilities.
-
-
-
-
 **Checksum: A More Robust Error Detection Technique**
 
 
@@ -77,20 +69,12 @@ Checksum is a more advanced error detection technique that involves calculating 
 * **Internet Checksum:** The Internet checksum is a 16-bit checksum used in various network protocols, such as TCP/IP. It involves adding the 16-bit words of the data, discarding carries, and then taking the one's complement of the sum.
 
 * **Cyclic Redundancy Check (CRC):** CRC is a powerful error detection technique that uses polynomial division to generate a checksum. It can detect multiple-bit errors and burst errors.
-
-
-
-
 **Advantages of Checksum:**
 
 
 * **Multiple-Bit Error Detection:** Checksum can detect multiple-bit errors and burst errors, making it more robust than parity checks.
 
 * **Error Correction:** Some checksum algorithms, such as CRC, can be used for error correction.
-
-
-
-
 **Combining Parity Check and Checksum**
 
 
@@ -109,10 +93,6 @@ In some applications, parity check and checksum can be combined to provide more 
 * **File Transfer Protocols:** FTP and SFTP use checksums to verify the integrity of transferred files.
 
 * **Data Compression:** Compression algorithms often use checksums to verify the integrity of compressed data.
-
-
-
-
 **Conclusion**
 
 

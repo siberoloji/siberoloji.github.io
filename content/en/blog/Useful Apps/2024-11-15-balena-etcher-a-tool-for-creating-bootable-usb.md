@@ -9,16 +9,12 @@ categories:
   - Useful Apps
 linkTitle: Balena Etcher
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords:
   - Balena Etcher
-
-
 
 url: balena-etcher-tool-creating-bootable-usb
 ---

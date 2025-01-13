@@ -45,10 +45,6 @@ Key provisions of GDPR include:
 * **Data Breach Notification**: Organizations must notify authorities and affected individuals of a data breach within 72 hours of its discovery.
 
 * **Data Protection Officer (DPO)**: Some organizations are required to appoint a DPO to oversee GDPR compliance.
-
-
-
-
 Non-compliance with GDPR can result in significant penalties, with fines of up to €20 million or 4% of a company’s global annual turnover—whichever is higher.
 
 
@@ -77,10 +73,6 @@ For example:
 * **Japan** revised its **Act on the Protection of Personal Information (APPI)** to include provisions similar to GDPR, enabling it to be recognized as having an "adequate" level of protection by the EU, facilitating the transfer of personal data between the two regions.
 
 * **California's Consumer Privacy Act (CCPA)**, though not identical to GDPR, shares several principles, including giving consumers more control over their personal data and how it is used by businesses.
-
-
-
-
 Countries across Africa, the Asia-Pacific region, and even parts of the U.S. are moving toward GDPR-like regulations, ensuring that global data protection standards are increasingly aligned.
 
 
@@ -101,10 +93,6 @@ Under GDPR, organizations are required to demonstrate accountability. This means
 * **Strengthen Data Security Measures**: To comply with GDPR's data protection requirements, companies have invested in stronger encryption methods, secured access controls, and enhanced data storage practices.
 
 * **Empower Data Subjects**: Companies must offer more transparency around how personal data is collected, stored, and used, allowing individuals greater control over their information.
-
-
-
-
 Even businesses outside of the EU that serve EU citizens have adopted these practices to avoid potential penalties, creating a ripple effect in corporate data governance worldwide.
 
 
@@ -165,10 +153,6 @@ Some notable fines include:
 * **British Airways** faced a fine of £20 million after a data breach compromised the personal data of over 400,000 customers.
 
 * **Marriott International** was fined £18.4 million following a cyberattack that exposed the personal details of millions of guests.
-
-
-
-
 These penalties underscore the importance of complying with GDPR and have prompted companies worldwide to prioritize data protection to avoid similar fines.
 
 

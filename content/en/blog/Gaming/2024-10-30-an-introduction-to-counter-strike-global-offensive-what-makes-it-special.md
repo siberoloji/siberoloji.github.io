@@ -194,42 +194,22 @@ Valve’s anti-cheat system, VAC (Valve Anti-Cheat), has also helped keep the ga
 
 
 * Yes, CS:GO is free to download and play on Steam. However, there is an option to purchase Prime Status, which provides benefits such as access to exclusive matchmaking with other Prime players.
-
-
-
-
 2. **What are the system requirements for CS:GO?**
 
 
 * CS:GO can run on most modern computers. Minimum requirements include a dual-core processor, 2GB of RAM, and a DirectX 9-compatible graphics card.
-
-
-
-
 3. **What is Prime Status in CS:GO?**
 
 
 * Prime Status is a paid feature that provides players with certain advantages, such as exclusive matchmaking, item drops, and a better matchmaking experience.
-
-
-
-
 4. **How does CS:GO’s ranking system work?**
 
 
 * CS:GO uses a skill group ranking system, where players are ranked from Silver I up to Global Elite based on their performance in competitive matches.
-
-
-
-
 5. **Can I play CS:GO on consoles?**
 
 
 * CS:GO was initially released on consoles, but updates are no longer provided for those versions. The PC version remains the most popular and is actively updated.
-
-
-
-
 6. **What are some of the best strategies for new players?**
 
 

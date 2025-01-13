@@ -379,10 +379,6 @@ As we move forward, it will be essential to:
 * Maintain a clear distinction between AI and human relationships
 
 * Promote digital literacy and healthy attitudes towards AI interactions
-
-
-
-
 Ultimately, the decision to form emotional bonds with AI will likely be a personal one, influenced by individual circumstances, cultural norms, and societal trends. As a society, our role should be to create an environment where these choices can be made responsibly, with full awareness of both the potential benefits and the risks involved.
 
 

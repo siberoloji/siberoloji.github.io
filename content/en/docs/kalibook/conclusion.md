@@ -2,8 +2,6 @@
 title: Conclusion of Kali Book
 description: This is the Conclusion page of Kali Book
 date: 2024-11-10
-
-
 draft: false
 prev: 
 next: docs/kalibook/

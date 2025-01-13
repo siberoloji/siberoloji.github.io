@@ -44,10 +44,6 @@ Key Features of Arjun
 * **Proxy Support:** Integrates with proxies, allowing users to intercept requests.
 
 * **JSON Output Support:** The output can be saved in JSON format, making it easy for later analysis or automation.
-
-
-
-
 Importance of Arjun in Web Security
 
 
@@ -60,10 +56,6 @@ Hidden parameters are potential entry points for attackers, making their discove
 * **Enable Comprehensive Testing:** Goes beyond surface-level scanning by probing for deep, nested parameters often missed by generic scanners.
 
 * **Enhance Vulnerability Detection:** Supports reconnaissance, a critical first step in security, particularly for application layers.
-
-
-
-
 How Does Arjun Work?
 
 
@@ -154,10 +146,6 @@ Arjun Command-Line Options and Parameters
 * **-m / --method**: Define the HTTP method (GET, POST, etc.).
 
 * **-p / --proxy**: Integrate with a proxy for intercepting requests, ideal for tracking and modifying requests manually.
-
-
-
-
 These options give Arjun great flexibility, allowing it to be customized for varying target server configurations and security requirements.
 
 
@@ -170,10 +158,6 @@ Real-World Use Cases for Arjun
 * **Security Testing for Development Teams**: Allows development teams to identify insecure or unnecessary parameters in early-stage applications.
 
 * **Penetration Testing in E-Commerce**: E-commerce websites often use various hidden parameters; Arjun can help ensure these are secure.
-
-
-
-
 Tips and Best Practices for Using Arjun
 
 
@@ -184,10 +168,6 @@ Tips and Best Practices for Using Arjun
 * **Combine with Other Tools**: Arjun can be paired with tools like Nikto, Nmap, and Dirbuster for a multi-faceted security assessment.
 
 * **Review JSON Outputs**: JSON outputs are more structured and easier to review; saving results in this format aids automation.
-
-
-
-
 Limitations and Considerations
 
 

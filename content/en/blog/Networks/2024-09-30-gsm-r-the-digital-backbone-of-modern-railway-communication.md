@@ -55,10 +55,6 @@ GSM-R isn't just a simple adaptation of GSM for railways. It comes with several 
 * **High-Speed Operation**: GSM-R is designed to work at speeds up to 500 km/h, maintaining reliable communication even on high-speed rail lines.
 
 * **Enhanced Data Rates**: While based on GSM, GSM-R supports higher data rates to accommodate advanced railway applications.
-
-
-
-
 ## The Role of GSM-R in Railway Operations
 
 
@@ -79,10 +75,6 @@ Safety is paramount in railway operations, and GSM-R significantly enhances it:
 * **Driver-Controller Communication**: Continuous and reliable communication between train drivers and traffic controllers ensures safe train movements.
 
 * **Trackside Worker Safety**: GSM-R helps in alerting trackside workers of approaching trains and allows them to communicate any safety concerns quickly.
-
-
-
-
 2. Operational Efficiency
 
 
@@ -95,10 +87,6 @@ GSM-R contributes to operational efficiency in several ways:
 * **Traffic Management**: Controllers can use GSM-R to manage traffic more effectively, reducing delays and improving punctuality.
 
 * **Maintenance Coordination**: GSM-R facilitates better coordination of maintenance activities, minimizing disruptions to regular services.
-
-
-
-
 3. Passenger Information
 
 
@@ -109,10 +97,6 @@ While not directly accessible to passengers, GSM-R indirectly improves passenger
 * **Accurate Announcements**: Station staff can receive real-time updates about train movements, allowing for more accurate passenger announcements.
 
 * **Service Updates**: Information about service disruptions or changes can be quickly communicated to relevant staff, who can then inform passengers.
-
-
-
-
 4. Integration with ETCS
 
 
@@ -123,10 +107,6 @@ GSM-R forms an integral part of the European Train Control System (ETCS), the si
 * **Data Transmission**: GSM-R provides the communication channel for ETCS data, allowing for the transmission of movement authorities, speed restrictions, and other crucial signaling information.
 
 * **Position Reporting**: Trains can report their position via GSM-R, enabling more accurate traffic management.
-
-
-
-
 ## Technical Aspects of GSM-R
 
 
@@ -143,10 +123,6 @@ While based on GSM technology, GSM-R has several technical specificities:
 * **Reliability**: GSM-R networks are designed with high redundancy and reliability, often with overlapping coverage to ensure continuous communication.
 
 * **Security**: GSM-R incorporates enhanced security features to protect against eavesdropping and unauthorized access.
-
-
-
-
 ## Challenges and Future of GSM-R
 
 
@@ -161,10 +137,6 @@ Despite its success, GSM-R faces several challenges:
 * **Technology Evolution**: As GSM is phased out in public networks, maintaining GSM-R equipment may become more challenging and expensive.
 
 * **Data Speed**: While sufficient for current needs, the data speeds offered by GSM-R may not be adequate for future applications.
-
-
-
-
 To address these challenges, the railway industry is looking towards the future. The successor to GSM-R is already in development: Future Railway Mobile Communication System (FRMCS). Based on 5G technology, FRMCS aims to provide higher capacity, faster data speeds, and support for advanced applications like remote driving and artificial intelligence-based traffic management.
 
 

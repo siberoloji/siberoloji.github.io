@@ -50,20 +50,12 @@ The message is the information to be communicated. It can take various forms:
 * Video (streaming content)
 
 * Any combination of these types
-
-
-
-
 2. Sender and Receiver
 
 
 * **Sender**: The device that generates and transmits the data
 
 * **Receiver**: The device that accepts and processes the transmitted data These devices can be computers, smartphones, servers, or any other device capable of data transmission and reception.
-
-
-
-
 3. Transmission Medium
 
 
@@ -90,10 +82,6 @@ The physical path through which data travels from sender to receiver. Common typ
 * **Microwaves**: Employed in satellite communications
 
 * **Infrared**: Found in short-range communications like TV remotes
-
-
-
-
 ## Essential Terminology
 
 
@@ -110,10 +98,6 @@ Bandwidth represents the amount of data that can be transmitted through a commun
 * Megabits per second (Mbps)
 
 * Gigabits per second (Gbps)
-
-
-
-
 Protocol
 
 
@@ -128,10 +112,6 @@ A protocol is a set of rules governing data communication. Think of it as a lang
 * FTP (File Transfer Protocol)
 
 * SMTP (Simple Mail Transfer Protocol)
-
-
-
-
 Network Topology
 
 
@@ -148,10 +128,6 @@ The physical or logical arrangement of devices in a network. Basic topologies in
 * **Mesh**: Devices interconnect with multiple paths
 
 * **Hybrid**: Combination of two or more topologies
-
-
-
-
 Transmission Modes
 
 
@@ -186,10 +162,6 @@ The direction of data flow between devices:
 * Simultaneous two-way communication
 
 * Example: Phone calls
-
-
-
-
 Data Encoding
 
 
@@ -204,10 +176,6 @@ The process of converting data into a format suitable for transmission. Common e
 * Non-Return to Zero (NRZ)
 
 * ASCII encoding
-
-
-
-
 ## Important Networking Concepts
 
 
@@ -222,10 +190,6 @@ A unique numerical identifier is assigned to each device on a network. Two main 
 * IPv4 (e.g., 192.168.1.1)
 
 * IPv6 (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
-
-
-
-
 MAC Address
 
 
@@ -246,10 +210,6 @@ Units of data that are routed between an origin and destination. Each packet con
 * Payload (actual data)
 
 * Trailer (error checking information)
-
-
-
-
 ## Data Transmission Characteristics
 
 
@@ -266,10 +226,6 @@ The loss of signal strength as data travels through the transmission medium. Fac
 * Medium quality
 
 * Environmental conditions
-
-
-
-
 2. Noise
 
 
@@ -282,10 +238,6 @@ Unwanted signals that interfere with data transmission:
 * **Electromagnetic Interference**: From nearby electronic devices
 
 * **Crosstalk**: Signal interference between adjacent channels
-
-
-
-
 3. Latency
 
 
@@ -298,10 +250,6 @@ The time delay between sending and receiving data. Important aspects include:
 * **Processing Delay**: Time for data processing at nodes
 
 * **Queuing Delay**: Time spent waiting in network device queues
-
-
-
-
 ## Error Detection and Correction
 
 
@@ -318,20 +266,12 @@ Error Detection
 * **Checksum**: More comprehensive error detection
 
 * **Cyclic Redundancy Check (CRC)**: Advanced error detection
-
-
-
-
 Error Correction
 
 
 * forward Error Correction (FEC)**: Adds redundant data for correction
 
 * **Automatic Repeat Request (ARQ)**: Requests retransmission of corrupt data
-
-
-
-
 ## Conclusion
 
 

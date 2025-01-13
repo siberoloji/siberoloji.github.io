@@ -18,8 +18,6 @@ keywords:
     - msf
     - payload
 ---
-
-
 ## Payload Grupları Nelerdir?
 
 Payload, bir exploit modül türünü ifade eder. Metasploit Framework içerisinde 3 farklı grup payload modülü bulunur. Tekil, Sahneleyiciler ve Sahneler (Singles, Stagers ve Stages) olarak ayırabileceğimiz bu modüllere bakacağız.

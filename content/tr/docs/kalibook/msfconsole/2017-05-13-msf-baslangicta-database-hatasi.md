@@ -15,8 +15,6 @@ linkTitle: Database Hatası
 weight: 40
 translationKey: msf-database-error
 ---
-
-
 Metasploit framework yazılımını Kali İşletim sisteminde kullanıyorsanız, en son güncellemeden sonra `msfconsole` başlangıcında aşağıdaki hatayı almaya başlamış olabilirsiniz. msfconsole içerisinde veritabanı kulanımı, yaptığınız taramaların kayıt edilmesi ve tekrar kullanılmasında oldukça fayda sağlar. Bu hatanın sebebi de en son güncelleme ile Kali içerisine kurulan Postgresql 9.6 sürümüdür.
 
 ## HATA MESAJI

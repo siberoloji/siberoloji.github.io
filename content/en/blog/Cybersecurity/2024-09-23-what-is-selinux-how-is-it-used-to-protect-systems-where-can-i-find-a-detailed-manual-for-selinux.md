@@ -42,10 +42,6 @@ SELinux operates using three main components:
 * **Labels**: Every object in SELinux, including files, processes, and devices, is given a security context label. These labels tell SELinux how the object should be treated by the system.
 
 * **Modes**: SELinux can operate in different modes, allowing administrators to adjust how strict the security enforcement is.
-
-
-
-
 To understand how SELinux protects your system, let’s look at its modes and the general workflow.
 
 
@@ -57,10 +53,6 @@ To understand how SELinux protects your system, let’s look at its modes and th
 * **Permissive Mode**: In this mode, SELinux will not block any actions, but it will still log policy violations. This is a useful mode for troubleshooting and determining what would be blocked if SELinux were in enforcing mode.
 
 * **Disabled Mode**: In this mode, SELinux is completely turned off. The system operates without any SELinux protection. While this might seem tempting for those who are unfamiliar with SELinux, disabling it is not recommended as it leaves your system without a critical layer of defense.
-
-
-
-
 How SELinux Protects Systems
 
 
@@ -158,10 +150,6 @@ SELINUXTYPE=targeted
 * **SELINUX=enforcing**: This line sets SELinux to enforcing mode. Change this to **permissive** or **disabled** depending on your needs.
 
 * **SELINUXTYPE=targeted**: This specifies the type of policy. "Targeted" is the most common policy, which focuses on protecting specific services.
-
-
-
-
 After modifying the configuration, reboot your system for the changes to take effect.
 
 
@@ -189,10 +177,6 @@ While this guide provides an overview, SELinux is a powerful tool with many opti
 * **Man Pages**: On any Linux system, the command `man selinux` will bring up a manual page for SELinux, giving you a detailed description of its functions and commands.
 
 * **Books and Online Courses**: Several books and courses are available online that provide step-by-step instructions and real-world examples of SELinux usage. Look for titles like SELinux System Administration by Sven Vermeulen or video courses on platforms like Udemy and Coursera.
-
-
-
-
 Conclusion
 
 

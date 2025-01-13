@@ -10,16 +10,12 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 160
 
 keywords:
   - Google Analytics on WordPress
-
-
 
 featured_image: /images/alice-interview.webp
 url: track-blog’s-performance-google-analytics-wordpress

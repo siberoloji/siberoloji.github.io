@@ -22,8 +22,6 @@ other = "تمام حقوق محفوظ است."
 
 [footer_privacy_policy]
 other = "سیاست حفظ حریم خصوصی"
-
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "توسط"
@@ -47,8 +45,6 @@ other = "نوشته ها در"
 other = "دقیقه برای خواندن"
 [post_less_than_a_minute_read]
 other = "کمتر از یک دقیقه"
-
-
 # Print support
 [print_printable_section]
 other = "این حالت نمایش چند صفحه ای قابل پرینت این قسمت می‌باشد."

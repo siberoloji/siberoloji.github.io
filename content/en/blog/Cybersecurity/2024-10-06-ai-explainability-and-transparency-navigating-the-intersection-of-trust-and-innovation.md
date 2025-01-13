@@ -40,10 +40,6 @@ There are two main types of explainability in AI:
 * **Global Explainability**: This refers to understanding how the entire AI model functions as a whole. In global explainability, we aim to explain the overall structure, decision rules, and logic that the model follows to produce outputs.
 
 * **Local Explainability**: This focuses on explaining individual decisions or predictions made by the AI model. Local explainability seeks to answer questions like, "Why did the model classify this image as a cat?" or "Why was this individual denied a loan?"
-
-
-
-
 Both types of explainability are essential for different stakeholders. For developers and data scientists, global explainability is crucial for debugging, optimizing, and improving the AI model. On the other hand, end-users and regulators often need local explainability to understand the rationale behind specific AI decisions, particularly when those decisions have real-world consequences.
 
 
@@ -68,10 +64,6 @@ Transparency in AI can be achieved through several means:
 * **Clarifying Data Sources**: Providing insights into the datasets used to train the model, including any potential biases in the data.
 
 * **Explaining Decision-Making Processes**: Offering clear and understandable explanations of how the AI system makes decisions.
-
-
-
-
 By fostering transparency, organizations can ensure that their AI systems are accountable, especially when things go wrong. When AI models make errors or produce unexpected results, transparency allows developers and stakeholders to trace the problem back to its source and correct it.
 
 

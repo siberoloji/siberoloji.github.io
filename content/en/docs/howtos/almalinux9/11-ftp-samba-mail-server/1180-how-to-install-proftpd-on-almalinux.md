@@ -12,15 +12,11 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
   - Install ProFTPD
-
-
 featured_image: /images/almalinux.webp
 ---
 ProFTPD is a highly configurable and secure FTP server that is widely used for transferring files between servers and clients. Its ease of use, flexible configuration, and compatibility make it a great choice for administrators. AlmaLinux, a stable and community-driven Linux distribution, is an excellent platform for hosting ProFTPD. This guide will walk you through the installation, configuration, and optimization of ProFTPD on AlmaLinux.

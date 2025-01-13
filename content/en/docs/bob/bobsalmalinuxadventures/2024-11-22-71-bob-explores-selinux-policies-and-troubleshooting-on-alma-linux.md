@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 710
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next challenge was to master **SELinux (Security-Enhanced Linux)**. Though daunting at first glance, Bob learned that SELinux is a powerful tool for protecting servers by enforcing strict access control policies.  

@@ -10,16 +10,12 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 110
 
 keywords:
   - "WordPress Content Strategy: How to Plan and Schedule Posts Effectively"
-
-
 
 featured_image: /images/alice-taking-picture.webp
 url: wordpress-content-strategy-plan-schedule-posts-effectively

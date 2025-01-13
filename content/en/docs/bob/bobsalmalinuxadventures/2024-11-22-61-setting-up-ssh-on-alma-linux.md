@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 610
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 ## **Introduction: Bob Discovers SSH**

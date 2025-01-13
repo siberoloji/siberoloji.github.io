@@ -38,10 +38,6 @@ Before beginning the installation, make sure you have:
 * **Basic understanding of Linux commands**.
 
 * **An internet connection** to download necessary packages.
-
-
-
-
 Step 1: Update the Alma Linux System
 
 
@@ -279,10 +275,6 @@ To allow external access to FreeSWITCH, open the necessary ports on your firewal
 * **5061 (UDP)** for secure SIP (SIP-TLS)
 
 * **16384–32768 (UDP)** for RTP (Real-Time Protocol)
-
-
-
-
 Use the following commands to open these ports:
 
 
@@ -335,10 +327,6 @@ FreeSWITCH’s default configuration may not suit all needs. Here are a few tips
 * **Configure NAT**: If behind NAT, add your public IP and local network information in the SIP profiles.
 
 * **Add Security Features**: Enable password protections, and consider limiting IP access to the FreeSWITCH server.
-
-
-
-
 Troubleshooting Common Issues
 
 
@@ -351,10 +339,6 @@ Here are a few common issues that might arise during installation and their solu
 * **Firewall Blocks**: Confirm all required ports are open on the firewall.
 
 * **FreeSWITCH Doesn’t Start**: Check the system log (`journalctl -xe`) for details on errors-preventing startup.
-
-
-
-
 Conclusion
 
 

@@ -10,16 +10,12 @@ categories:
   - Linux
 linkTitle: UEFI and Legacy
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 0
 
 keywords:
   - Understanding UEFI and Legacy Boot Mode
-
-
 
 featured_image: /images/programming2.webp
 url: understanding-uefi-legacy-boot-mode-comprehensive-guide

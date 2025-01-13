@@ -256,10 +256,6 @@ Airgeddon is a powerful tool, but its use requires a responsible and ethical app
 * **Report Findings Responsibly**: When conducting tests for a client or employer, provide detailed and actionable reports without sharing unauthorized data.
 
 * **Operate Within Legal Boundaries**: Always adhere to legal regulations in your country or region regarding penetration testing.
-
-
-
-
 Following these guidelines helps maintain ethical standards and prevents misuse of Airgeddon’s capabilities.
 Advantages and Limitations of Airgeddon
 

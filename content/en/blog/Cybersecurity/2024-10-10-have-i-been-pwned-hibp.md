@@ -49,10 +49,6 @@ HIBP compiles information from numerous data breaches, including well-known inci
 * **Yahoo (2013-2014)**: Affected over 3 billion accounts.
 
 * **Ashley Madison (2015)**: Leaked data from over 30 million users.
-
-
-
-
 These breaches are cataloged and updated regularly, ensuring that users have access to the most current information regarding their potential exposure[1][2].
 
 

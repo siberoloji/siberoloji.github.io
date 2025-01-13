@@ -32,10 +32,6 @@ Here’s how it works:
 * **Public Key**: This key is shared openly and can be distributed to anyone. It is used by others to encrypt messages that are intended for the private key holder.
 
 * **Private Key**: This key is kept secret and is only accessible to the intended recipient. It is used to decrypt messages that were encrypted using the corresponding public key.
-
-
-
-
 The beauty of asymmetric encryption lies in the fact that even though the public key is available to everyone, only the person with the private key can decrypt the encrypted data. This concept forms the backbone of many secure communication systems, such as **SSL/TLS**, **PGP**, and **cryptocurrencies** like Bitcoin.
 **How Does Asymmetric Encryption Work?**
 
@@ -54,10 +50,6 @@ The first step in asymmetric encryption is generating a key pair. The process in
 * A **public key**: Can be shared with anyone.
 
 * A **private key**: Must be kept secure by the owner.
-
-
-
-
 These keys are typically generated using algorithms like **RSA (Rivest–Shamir–Adleman)**, **ECC (Elliptic Curve Cryptography)**, or **DSA (Digital Signature Algorithm)**.
 
 

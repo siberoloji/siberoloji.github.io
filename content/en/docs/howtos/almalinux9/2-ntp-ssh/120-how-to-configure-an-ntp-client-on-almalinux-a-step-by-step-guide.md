@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: NTP Client
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 120
 
 keywords:
   - AlmaLinux
   - NTP Client on AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-ntp-client-almalinux
 ---

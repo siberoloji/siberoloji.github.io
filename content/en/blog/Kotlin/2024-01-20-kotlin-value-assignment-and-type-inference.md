@@ -48,10 +48,6 @@ val/var identifier: Type = initialization
 * Type: We write the type of the variable here. Expressions that express the type of the value, such as String, Int, Boolean, start with a capital letter. Type is written after writing a colon after the name of the variable.
 
 * Initialization: We assign the initial value to our variable. It means initial value. When the type of the variable is determined, the initial value does not have to be assigned immediately. We will give examples of correct and incorrect usage below.
-
-
-
-
 Now let's write an example according to this template. The example below has a structure that fulfills all the rules completely.
 
 

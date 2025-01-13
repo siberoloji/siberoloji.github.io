@@ -18,12 +18,6 @@ tags:
 
 
 In Object-Oriented Programming Languages, the classes are important. You can find a simple Class creating example in this post.
-
-
-<!-- wp:more -->
-<!--more-->
-<!-- /wp:more -->
-
 ```kotlin
 fun main() {
     var personA = Person("Mike","Sunshine")

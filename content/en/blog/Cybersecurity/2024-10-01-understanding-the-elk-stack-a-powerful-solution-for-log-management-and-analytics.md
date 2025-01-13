@@ -121,10 +121,6 @@ Though not part of the original ELK Stack, **Beats** is often considered a valua
 * **Packetbeat**: Monitors network traffic and sends data to Elasticsearch.
 
 * **Winlogbeat**: Collects Windows event logs and forwards them to Elasticsearch or Logstash.
-
-
-
-
 By using Beats, organizations can collect data from numerous endpoints without consuming excessive resources on those devices.
 
 
@@ -143,10 +139,6 @@ When deployed, the ELK Stack works as a cohesive solution for ingesting, process
 * **Storage and Indexing**: Once the logs are processed, they are stored in Elasticsearch, where they are indexed and made searchable. Elasticsearch’s distributed architecture ensures that even as data grows, queries remain fast and efficient.
 
 * **Visualization and Monitoring**: Kibana is used to visualize the processed logs. By creating dashboards and visualizations, users can monitor key metrics in real time, detect anomalies, and gain deeper insights into the performance and security of their applications or systems.
-
-
-
-
 Use Cases of the ELK Stack
 
 

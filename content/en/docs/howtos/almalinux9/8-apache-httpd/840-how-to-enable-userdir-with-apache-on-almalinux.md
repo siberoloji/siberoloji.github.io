@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 The `mod_userdir` module in Apache is a useful feature that allows users on a server to host personal websites or share files from their home directories. When enabled, each user on the server can create a `public_html` directory in their home folder and serve web content through a URL such as `http://example.com/~username`.

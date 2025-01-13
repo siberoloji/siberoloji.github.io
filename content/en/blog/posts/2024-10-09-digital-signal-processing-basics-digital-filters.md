@@ -41,10 +41,6 @@ Unlike analog filters, which are implemented using physical components like resi
 * **Accuracy**: They offer precise control over filter characteristics.
 
 * **Stability**: Digital filters are less affected by temperature, aging, or environmental factors compared to analog filters.
-
-
-
-
 How Digital Filters Work
 
 
@@ -77,10 +73,6 @@ Before diving into the different types of digital filters, it’s important to u
 * **Poles and Zeros**: These are mathematical terms used in the design and analysis of digital filters. Poles determine the stability and frequency response of the filter, while zeros determine the frequencies that the filter attenuates or blocks.
 
 * **Causal and Non-Causal Filters**: A **causal filter** processes the current input and past inputs to produce the current output. A **non-causal filter** processes future inputs as well, but these are typically used only in offline processing where future data is already available.
-
-
-
-
 Types of Digital Filters
 
 
@@ -197,10 +189,6 @@ Where:
 * **Control Systems**: In control systems, IIR filters are used to smooth sensor data and improve the stability of the control loop.
 
 * **Biomedical Signal Processing**: IIR filters are commonly used in medical devices such as ECG monitors to remove noise and enhance the signal of interest.
-
-
-
-
 Filter Design Considerations
 
 
@@ -215,10 +203,6 @@ When designing digital filters, several factors need to be considered to ensure 
 * **Stability**: For IIR filters, stability is a critical concern. The poles of the filter must lie within the unit circle in the z-plane to ensure stability.
 
 * **Phase Distortion**: For applications where maintaining the shape of the waveform is important (such as audio processing), FIR filters are preferred due to their linear phase characteristics.
-
-
-
-
 Real-World Applications of Digital Filters
 
 

@@ -11,14 +11,10 @@ tags:
 categories:
   - Linux
   - Linux How-to
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 ---
 VSFTPD (Very Secure File Transfer Protocol Daemon) is a reliable, lightweight, and highly secure FTP server for Unix-like operating systems. By default, FTP transmits data in plain text, making it vulnerable to interception. Configuring VSFTPD with SSL/TLS ensures encrypted data transfers, providing enhanced security for your FTP server. This guide will walk you through the process of setting up VSFTPD with SSL/TLS on AlmaLinux.

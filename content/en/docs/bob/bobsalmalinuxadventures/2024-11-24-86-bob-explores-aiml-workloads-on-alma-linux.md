@@ -15,8 +15,6 @@ categories:
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 860
-
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 ---
 Bob’s next adventure was to delve into **artificial intelligence (AI)** and **machine learning (ML)** workloads on AlmaLinux. With growing interest in data-driven applications, Bob aimed to configure his AlmaLinux server to handle data processing, model training, and inference tasks efficiently.

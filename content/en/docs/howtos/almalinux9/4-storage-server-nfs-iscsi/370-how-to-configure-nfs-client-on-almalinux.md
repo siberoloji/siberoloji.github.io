@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Configure NFS Client
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 370
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-nfs-client-almalinux
 ---

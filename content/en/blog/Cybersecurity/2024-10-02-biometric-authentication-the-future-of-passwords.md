@@ -41,10 +41,6 @@ Some of the most common forms of biometric authentication include:
 * **Voice Recognition:** Identifies individuals based on unique voice patterns, tone, and pitch.
 
 * **Hand Geometry:** Measures the shape, size, and position of your hand and fingers.
-
-
-
-
 Each of these methods offers a high level of security, since duplicating someone's biological features is far more difficult than stealing a password.
 
 
@@ -69,10 +65,6 @@ Biometric systems function by capturing and storing a user's biometric data and 
 * **Storage:** The system stores this biometric data securely in a database or on a user’s device, often encrypted to prevent tampering or theft.
 
 * **Verification:** During each login attempt, the system compares the new biometric sample to the stored data. If there’s a match, the user is granted access.
-
-
-
-
 Key Point:
 
 

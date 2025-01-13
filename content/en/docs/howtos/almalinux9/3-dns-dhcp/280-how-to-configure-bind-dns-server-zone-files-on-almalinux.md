@@ -10,8 +10,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: BIND DNS Server Zone Files
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 280
 

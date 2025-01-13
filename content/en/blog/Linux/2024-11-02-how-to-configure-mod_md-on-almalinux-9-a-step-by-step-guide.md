@@ -131,8 +131,6 @@ If the output shows `md_module`, mod_md is already enabled. If it isn’t, you m
 <pre><code class="language-bash">sudo systemctl start httpd
 sudo systemctl enable httpd
 `</pre>
-
-
 <hr>
 **5. Step 2: Configuring mod_md**
 The core configuration for mod_md occurs within the Apache configuration files. Follow these steps to ensure mod_md is set up properly:
@@ -159,8 +157,6 @@ The core configuration for mod_md occurs within the Apache configuration files. 
 
 * 
 **Save and Close** the configuration file.
-
-
 <hr>
 **6. Step 3: Setting up Domain Management (MDomain)**
 The `MDomain` directive defines which domains mod_md should manage. If you have multiple domains, you can add them in the same directive:
@@ -182,8 +178,6 @@ This example sets the renewal window to 33% of the certificate’s lifetime, whi
 <pre><code class="language-apache">MDChallengeHttp01 on
 `</pre>
 This lets mod_md validate domains via HTTP, which is the most common method.
-
-
 <hr>
 **8. Step 5: Testing and Enabling HTTPS**
 With mod_md set up, you can test it by requesting a certificate manually. Follow these steps:
@@ -214,8 +208,6 @@ Edit the Virtual Host configuration for your domain in `/etc/httpd/conf.d/ssl.co
 </VirtualHost>
 `</pre>
 Be sure to replace `/path/to/fullchain.pem` and `/path/to/privkey.pem` with the actual paths where mod_md stores certificates (typically under `/var/www/.well-known/acme-challenge`).
-
-
 <hr>
 **9. Troubleshooting Common Issues**
 
@@ -223,20 +215,14 @@ Be sure to replace `/path/to/fullchain.pem` and `/path/to/privkey.pem` with the 
 **Issue**: Certificate renewal fails.
 
 * **Solution**: Verify DNS settings and domain ownership. Ensure Apache is configured to listen on ports 80 and 443.
-
-
 * 
 **Issue**: Permission denied errors when renewing certificates.
 
 * **Solution**: Check permissions on the challenge directories. Ensure Apache has write access to `.well-known/acme-challenge`.
-
-
 * 
 **Issue**: HTTP challenges failing.
 
 * **Solution**: Confirm port 80 is open and no firewall is blocking access. This can usually be checked using `firewalld`.
-
-
 
 <hr>
 **10. FAQ on mod_md Configuration for AlmaLinux 9**

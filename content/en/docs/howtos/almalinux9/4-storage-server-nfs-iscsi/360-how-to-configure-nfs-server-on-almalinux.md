@@ -9,15 +9,11 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: null
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 360
 
 keywords:
   - AlmaLinux
-
-
 featured_image: /images/almalinux.webp
 url: configure-nfs-server-almalinux
 ---

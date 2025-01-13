@@ -53,10 +53,6 @@ Before starting the setup process, ensure that you have the following:
 * **Sufficient hardware resources**: Each node should have adequate CPU, RAM, and disk space. For Ceph, consider using SSDs for OSDs (Object Storage Daemons) to enhance performance.
 
 * **Network configuration**: A dedicated network for cluster communication is recommended to minimize latency and maximize throughput.
-
-
-
-
 ## Setting Up a Proxmox Cluster
 
 
@@ -79,10 +75,6 @@ Step 1: Create the Cluster
 * Select the network interface that will be used for cluster communication.
 
 * Click "Create" to initialize the cluster.
-
-
-
-
 Step 2: Join Additional Nodes
 
 
@@ -97,10 +89,6 @@ Step 2: Join Additional Nodes
 * Enter the join information provided by the first node (including IP address and join token).
 
 * Click "Join" to add the node to the cluster.
-
-
-
-
 Step 3: Verify Cluster Status
 
 
@@ -117,10 +105,6 @@ Step 4: Install Ceph
 
 
 * **Install Ceph on Each Node**:
-
-
-
-
 On each node in the cluster, run:
 
 
@@ -138,10 +122,6 @@ Step 5: Initialize Ceph Configuration
 
 
 * **Initialize Ceph on One Node**:
-
-
-
-
 On one of your nodes (preferably the one with the most resources), run
 
 
@@ -159,10 +139,6 @@ Step 6: Create Monitors and Managers
 
 
 * **Create Monitor and Manager Daemons**:
-
-
-
-
 Run these commands on each node:
 
 
@@ -175,10 +151,6 @@ Step 7: Create OSDs
 
 
 * **Prepare Disks for OSDs**:
-
-
-
-
 Identify disks on each node that will be used for Ceph OSDs.
 
 
@@ -196,10 +168,6 @@ Step 8: Create Pools
 
 
 * **Create Storage Pools**:
-
-
-
-
 After setting up OSDs, create pools in your Ceph cluster using:
 
 
@@ -221,10 +189,6 @@ Step 9: Install ZFS
 
 
 * **Install ZFS on Each Node**:
-
-
-
-
 Ensure that ZFS is installed on all nodes by running:
 
 
@@ -237,10 +201,6 @@ Step 10: Create ZFS Pool
 
 
 * **Create a ZFS Pool on One Node**:
-
-
-
-
 Choose a disk or partition for your ZFS pool:
 
 
@@ -254,10 +214,6 @@ Choose a disk or partition for your ZFS pool:
 
 
 * For high availability with ZFS, consider setting up replication between nodes using `zfs send` and `zfs receive`.
-
-
-
-
 Step 11: Configure Storage in Proxmox
 
 
@@ -270,10 +226,6 @@ Step 11: Configure Storage in Proxmox
 * Select your created pool from the dropdown menu.
 
 * Configure options such as content types (e.g., VMs, backups).
-
-
-
-
 ## Best Practices for Management
 
 
@@ -282,10 +234,6 @@ Step 11: Configure Storage in Proxmox
 * **Regular Backups**: Implement a robust backup strategy for both VMs and storage configurations.
 
 * **Performance Tuning**: Adjust settings based on workload requirements; consider tuning parameters like I/O scheduler settings or network configurations.
-
-
-
-
 ## Conclusion
 
 

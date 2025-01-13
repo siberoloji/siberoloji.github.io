@@ -50,10 +50,6 @@ Combinational logic circuits are digital circuits whose outputs depend solely on
 * **Multiplexers:** Multiplexers are used to select one of multiple input signals based on a control signal.
 
 * **Demultiplexers:** Demultiplexers are used to distribute a single input signal to multiple output lines based on a control signal.
-
-
-
-
 **Encoders**
 
 
@@ -96,10 +92,6 @@ These components are widely used in various digital systems, including:
 * **Communication systems:** They are used for modulation, demodulation, and error detection/correction.
 
 * **Digital signal processing:** They are used for filtering, sampling, and quantization.
-
-
-
-
 **Design and Implementation**
 
 
@@ -114,10 +106,6 @@ Combinational logic circuits, encoders, and decoders can be designed using vario
 * **Karnaugh maps:** Karnaugh maps are a graphical tool for simplifying Boolean expressions.
 
 * **Hardware description languages (HDLs):** HDLs like Verilog and VHDL can be used to describe the circuit's behavior in a textual format.
-
-
-
-
 **Conclusion**
 
 

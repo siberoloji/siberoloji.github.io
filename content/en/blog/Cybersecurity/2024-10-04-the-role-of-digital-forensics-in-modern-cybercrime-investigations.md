@@ -38,10 +38,6 @@ Here are the main phases of digital forensics:
 * **Analysis** – Interpreting the collected data to establish timelines, discover anomalies, or link evidence to specific individuals.
 
 * **Reporting** – Summarizing findings in a way that can be understood by non-experts, such as law enforcement or the judicial system, and possibly testifying in court.
-
-
-
-
 Modern cybercrime investigations often rely heavily on this process to gather irrefutable evidence, support legal claims, and track the individuals or organizations responsible for cyber attacks.
 The Role of Digital Forensics in Combatting Cybercrime
 

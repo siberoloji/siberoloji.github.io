@@ -21,19 +21,11 @@ tags:
     - linux
     - 'temel linux'
 ---
-
-
 Linux komut satırında kullanıma hazır komutları hatırlamakta bazen problem yaşayabilirsiniz. Hangi komutun ne ile ilgili olduğu hatırınıza gelmeyebilir. Böyle bir durumda "apropos" komutu ile komut kılavuz sayfalarındaki tanımlarda arama yapabilir ve aradığınızı daha kolay bulabilirsiniz. Bu yazımızda "apropos" komutunun kullanımı ile ilgili örnekler vereceğiz.
-
-
 
 ## apropos komutu
 
-
-
 "apropos" komutunu yardım sayfalarının (man pages)  arama motoru olarak düşünebilirsiniz. Bu komut, komut isimlerinde ve kısa tanımlarında arama yapar. Yardım sayfalarının tamamında arama yapmaz. Aşağıda basit bir örnek verilmiştir. Bu komut, yardım sayfalarının tanımlarının herhangi bir yerinde veya komut adlarında "`unzip`" ifadesi geçen tüm komutların listesini verecektir.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos unzip
 bunzip2 (1)          - a block-sorting file compressor, v1.0.8
@@ -43,11 +35,7 @@ unzip (1)            - list, test and extract compressed files in a ZIP archive
 unzipsfx (1)         - self-extracting stub for prepending to ZIP archives
 ```
 
-
-
 Bu örnekte görülen basit kullanımın ötesinde, bazı seçenekler kullanarak komutu ileri düzeyde de kullanmanız mümkündür. Aşağıdaki listede kullanabileceğiniz seçenekleri görebilirsiniz.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -h
 Usage: apropos [OPTION...] KEYWORD...
@@ -70,15 +58,9 @@ Usage: apropos [OPTION...] KEYWORD...
   -V, --version              print program version
 ```
 
-
-
 ## -e, --exact
 
-
-
 Aradığınız ifadenin tam olarak eşleşmesi gerekir. Aşağıda "partiti" ifadesini -e seçeneği ile ve -e seçeneği olmadan kullanımını görebilirsiniz.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -e partiti
 partiti: nothing appropriate.
@@ -104,30 +86,18 @@ systemd-repart (8)   - Automatically grow and add partitions
 systemd-repart.service (8) - Automatically grow and add partitions
 ```
 
-
-
 ## -r, --regex
 
-
-
 Arama ifadenizde düzenli ifadeler bulundurmak isterseniz kullanabilirsiniz. Örneğin ^ifadesi düzenli ifadelerde "baş taraf" anlamına gelmektedir. Baş tarafı "tar" ile başlayan komutları bulmaya çalışalım. Gördüğünüz gibi apropos komutu komut adı "tar" ile başlayan  2 komut ve ayrıca, açıklama bölümü Tar ile başlayan başka bir komut daha bulmuştur.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -r '^tar'
 systemd.target (5)   - Target unit configuration
 tar (1)              - an archiving utility
 tarcat (1)           - concatenates the pieces of a GNU tar multi-volume archive```
 
-
-
 ## -a, --and
 
-
-
 Arama yapacağınız tüm ifadelerin mutlaka bulunması gerektiğinde kullanabilirsiniz. Komut adında veya açıklamasında "tar" ve "file" geçen yardım sayfalarını aratalım.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -a tar file
 gpgtar (1)           - Encrypt or sign files into an archive
@@ -138,15 +108,9 @@ swapon (2)           - start/stop swapping to file/device
 systemd-xdg-autostart-generator (8) - User unit generator for XDG autostart files
 ```
 
-
-
 ## -w, --wildcard
 
-
-
 Aramak istediğiniz ifadenin içerisinde joker karakterler kullandığınızı belirtir. Örneğin baş tarafı "color" ile başlayan ve devamında ne olursa olsun tüm ifadeleri bulmak istediğinizde kullanılır. Örneğimizde, içerisinde "color", "colorization", "color-name", "colormap" geçen tüm açıklamalar bulunmuştur.
-
-
 ```kotlin
 linux@rpi4:~ $ apropos -w color*
 cd-create-profile (1) - Color Manager Profile Creation Tool
@@ -163,7 +127,5 @@ XcupGetReservedColormapEntries (3) - list colormap entries reserved by the syste
 XcupStoreColors (3)  - initialize shareable colormap entries at specific locations
 xstdcmap (1)         - X standard colormap utility
 ```
-
-
 
 Bu yazımızda "apropos" komutu ve sıklıkla kullanılan seçenekleri açıkladık. Daha detaylı bilgi için "man apropos" komutu ile yardım sayfalarına bakabilirsiniz.

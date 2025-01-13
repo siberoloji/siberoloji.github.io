@@ -16,11 +16,7 @@ tags:
     - 'kotlin class'
     - 'kotlin class oluşturma örneği'
 ---
-
-
 Nesne Yönelimli Programlama Dillerinde sınıflar önemlidir. Bu gönderide basit bir Sınıf oluşturma örneği bulabilirsiniz.
-
-
 ```kotlin
 fun main() {
     var personA = Person("Mike","Sunshine")
@@ -37,8 +33,6 @@ class Person (firstName:String ="John" , lastName:String="Doe"){
     }
 }
 ```
-
-
 <!-- wp:code -->
 <pre title="Sonuç" class="wp-block-code"><code lang="kotlin" class="language-kotlin">A new person object created with First Name: Mike and Last Name: Sunshine
 A new person object created with First Name: John and Last Name: Doe

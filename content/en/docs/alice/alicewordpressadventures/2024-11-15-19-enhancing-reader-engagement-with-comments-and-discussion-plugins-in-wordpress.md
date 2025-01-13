@@ -10,15 +10,11 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 190
 
 keywords: ""
-
-
 
 featured_image: /images/alice-interview.webp
 url: enhancing-reader-engagement-comments-discussion-plugins-wordpress

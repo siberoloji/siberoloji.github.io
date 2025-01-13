@@ -158,10 +158,6 @@ This early insight allowed key players to:
 * Position themselves as leaders in 5G development and deployment
 
 * Acquire relevant smaller companies that held essential patents for 5G technology
-
-
-
-
 Through tracking and analyzing patent filings, companies could position themselves at the forefront of a technology that has reshaped entire industries.
 **Challenges in Patent Tracking and How to Overcome Them**
 

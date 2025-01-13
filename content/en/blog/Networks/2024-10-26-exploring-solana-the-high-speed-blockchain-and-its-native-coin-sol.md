@@ -66,10 +66,6 @@ Solana’s architecture is built on a combination of **Proof of Stake (PoS)** an
 * **Proof of Stake (PoS)**: Like other PoS blockchains, Solana relies on validators who stake SOL, the network’s native cryptocurrency, to secure the network and validate transactions. Validators earn rewards for participating in the consensus process, helping maintain the network’s integrity.
 
 * **Proof of History (PoH)**: PoH is a novel consensus mechanism unique to Solana. Instead of each transaction being timestamped individually, PoH generates a historical record that shows events in sequence. This approach enables validators to agree on the order of events quickly, drastically reducing the time it takes to confirm transactions. PoH essentially acts as a “clock” for the blockchain, ensuring a common, trustworthy timestamp for all nodes in the network.
-
-
-
-
 By combining PoS with PoH, Solana can process around **65,000 transactions per second (TPS)**, a remarkable achievement compared to Ethereum’s 15-30 TPS. This scalability allows Solana to support high-demand applications without experiencing network congestion or rising transaction fees.
 
 

@@ -80,10 +80,6 @@ Application vulnerabilities are weaknesses or flaws in software that can be expl
 
 
 * **Lack of Visibility:** Inadequate logging and monitoring can make it difficult to detect and respond to security incidents in a timely manner.
-
-
-
-
 **Mitigating Application Vulnerabilities**
 
 

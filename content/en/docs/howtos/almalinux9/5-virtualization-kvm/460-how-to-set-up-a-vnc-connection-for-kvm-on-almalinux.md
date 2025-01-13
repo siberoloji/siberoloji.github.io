@@ -9,16 +9,12 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Set Up a VNC Connection for KVM
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 460
 
 keywords:
   - AlmaLinux
   - VNC
-
-
 featured_image: /images/almalinux.webp
 url: set-vnc-connection-kvm-almalinux
 ---

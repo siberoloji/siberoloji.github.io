@@ -36,10 +36,6 @@ TCP is a connection-oriented protocol, meaning it establishes a connection betwe
 * **SYN-ACK**: The receiver acknowledges the request and sends back a synchronization acknowledgment.
 
 * **ACK**: The sender confirms the acknowledgment.
-
-
-
-
 Once this connection is established, TCP guarantees that data packets are delivered in order and without errors. If any packets are lost or corrupted during transmission, TCP will automatically retransmit them until they are received correctly. This reliability comes with some overhead, as TCP must manage error checking, flow control, and congestion control.
 
 
@@ -110,10 +106,6 @@ Given its characteristics, TCP is best suited for applications where reliability
 * **File Transfers**: Protocols like FTP use TCP to guarantee complete file transfers.
 
 * **Secure Transactions**: Online banking and shopping require secure connections provided by TCP to protect sensitive information.
-
-
-
-
 ## Use Cases for UDP
 
 
@@ -128,10 +120,6 @@ UDP shines in scenarios where speed is more critical than reliability:
 * **Online Gaming**: Many multiplayer games utilize UDP to ensure fast-paced interactions between players without delays caused by packet retransmissions.
 
 * **DNS Queries**: The Domain Name System often uses UDP because queries are small and can be resent easily if lost.
-
-
-
-
 ## Conclusion
 
 

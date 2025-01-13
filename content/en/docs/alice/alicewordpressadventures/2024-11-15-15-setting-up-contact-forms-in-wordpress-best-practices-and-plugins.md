@@ -10,16 +10,12 @@ categories:
   - TechLife
   - WordPress
 
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 weight: 150
 
 keywords:
   - Contact Forms in WordPress
-
-
 
 featured_image: /images/alice-in-front-of-computer.webp
 url: setting-contact-forms-wordpress-practices-plugins

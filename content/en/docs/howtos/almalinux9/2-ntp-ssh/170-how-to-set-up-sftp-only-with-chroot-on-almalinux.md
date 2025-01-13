@@ -9,8 +9,6 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: SFTP-only with Chroot
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 170
 

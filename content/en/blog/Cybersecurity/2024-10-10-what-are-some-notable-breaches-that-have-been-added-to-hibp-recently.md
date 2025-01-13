@@ -28,10 +28,6 @@ Recently, several notable breaches have been added to the Have I Been Pwned (HIB
 * **Compromised Accounts:** Approximately 31,081,179
 
 * **Compromised Data:** Email addresses, screen names, bcrypt-hashed passwords, and other internal data.
-
-
-
-
 The Internet Archive's Wayback Machine suffered a significant breach that exposed data from over 31 million users. The breach was confirmed after hackers defaced the site and left a taunting message regarding the incident. Troy Hunt, the creator of HIBP, received the compromised data and incorporated it into the database shortly after verifying its authenticity[3][4][5].
 
 
@@ -46,10 +42,6 @@ The Internet Archive's Wayback Machine suffered a significant breach that expose
 * **Compromised Accounts:** 3,184,010
 
 * **Compromised Data:** Email addresses, names, phone numbers, physical addresses, and partial credit card data.
-
-
-
-
 In April 2024, it was reported that records from Blooms Today were being sold on a hacking forum. The breach included sensitive information but did not expose enough credit card data to facilitate fraudulent purchases[1].
 
 

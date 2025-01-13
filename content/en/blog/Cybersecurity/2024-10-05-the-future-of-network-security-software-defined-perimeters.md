@@ -37,10 +37,6 @@ Key Components of SDP
 * **Client**: Software installed on user devices that communicates with the controller and initiates connections.
 
 * **Gateway**: Acts as an intermediary between clients and protected resources, enforcing access policies.
-
-
-
-
 ## How SDP Works
 
 
@@ -59,10 +55,6 @@ The SDP process typically follows these steps:
 * **Dynamic Tunnel Creation**: If access is granted, a secure, encrypted tunnel is created between the client and the specific resources the user is authorized to access.
 
 * **Continuous Monitoring**: The connection is monitored throughout the session, with the ability to terminate access if any suspicious activity is detected or if the device's security posture changes.
-
-
-
-
 ## Advantages of Software-Defined Perimeters
 
 
@@ -127,10 +119,6 @@ While VPNs have been a staple of remote access for years, they have several limi
 * They can be complex to configure and manage, especially in large organizations.
 
 * Performance can be affected, particularly when accessing resources across long distances.
-
-
-
-
 In contrast, SDP:
 
 
@@ -139,10 +127,6 @@ In contrast, SDP:
 * Offers a simpler user experience with seamless authentication.
 
 * Can improve performance by optimizing traffic routing.
-
-
-
-
 Firewalls vs. SDP
 
 
@@ -159,10 +143,6 @@ SDP addresses these limitations by:
 * Providing dynamic access control based on real-time context.
 
 * Reducing the attack surface by making resources invisible to unauthorized users.
-
-
-
-
 ## Implementing SDP: Challenges and Considerations
 
 

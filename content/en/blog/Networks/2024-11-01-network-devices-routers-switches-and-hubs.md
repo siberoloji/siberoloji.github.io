@@ -51,10 +51,6 @@ Hubs can be categorized into three main types:
 * **Active Hubs**: These hubs regenerate signals before transmitting them to other ports, thus extending the distance over which data can travel.
 
 * **Intelligent Hubs**: These offer additional features such as management capabilities and monitoring functions.
-
-
-
-
 **Advantages and Disadvantages**
 
 
@@ -75,10 +71,6 @@ While hubs are inexpensive and easy to set up, they have significant drawbacks:
 * Increased chances of data collisions.
 
 * Lack of security since all devices see all traffic.
-
-
-
-
 2. Switches
 
 
@@ -101,10 +93,6 @@ Switches can be classified into two main types:
 * **Unmanaged Switches**: These are basic plug-and-play devices that require no configuration.
 
 * **Managed Switches**: These offer advanced features such as VLAN support, traffic prioritization, and network monitoring capabilities.
-
-
-
-
 **Advantages and Disadvantages**
 
 
@@ -125,10 +113,6 @@ Switches provide several benefits over hubs:
 * Higher cost compared to hubs.
 
 * More complex setup and management for managed switches.
-
-
-
-
 3. Routers
 
 
@@ -153,10 +137,6 @@ Routers can be divided into several categories based on their application:
 * **Enterprise Routers**: Designed for larger networks with advanced features such as traffic management and security protocols.
 
 * **Core Routers**: Operate within the backbone of large networks, managing high-speed data transmission.
-
-
-
-
 **Advantages and Disadvantages**
 
 
@@ -177,10 +157,6 @@ Routers offer numerous advantages but also come with some challenges:
 * Higher cost compared to switches and hubs.
 
 * More complex configuration requirements.
-
-
-
-
 ## Comparison Table: Hubs vs Switches vs Routers
 
 
@@ -229,10 +205,6 @@ Understanding the differences between routers, switches, and hubs is vital for a
 * **Switches** enhance performance by intelligently directing traffic within a LAN.
 
 * **Routers** connect multiple networks while managing data flow based on IP addresses.
-
-
-
-
 As networking technology continues to evolve, integrated devices that combine functionalities are becoming more common. However, understanding each device's unique role remains essential for designing efficient networks tailored to specific needs. Whether you are setting up a home network or managing an enterprise-level infrastructure, knowing when to use each type of device will lead to better performance, security, and overall user satisfaction in your networking endeavors.
 
 

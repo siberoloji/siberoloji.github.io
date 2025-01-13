@@ -14,11 +14,7 @@ categories:
 tags:
     - c++
 ---
-
-
 Aşağıda, C++ için kademeli if-else kullanım örneğini bulabilirsiniz.
-
-
 ```cpp
 #include <iostream>
 

@@ -78,10 +78,6 @@ In phpMyAdmin:
 * Paste the query into the SQL window.
 
 * Click the **Go** button to execute the query.
-
-
-
-
 In the command line:
 
 
@@ -135,16 +131,8 @@ After running the query, check your WordPress site to ensure that the comment st
 * **Custom Table Prefixes**: If you’re using a custom table prefix, replace `wp_` with your actual prefix in the SQL query.
 
 * **Selective Updates**: If you want to update the comment status for specific posts or categories, you can modify the `WHERE` clause of the query to include additional conditions.
-
-
-
-
 For example, to update only posts in a specific category, you would need to join with the `wp_term_relationships` table and add a condition based on `term_id`.
 
 
 * **Safety**: Directly modifying the database can be risky. Ensure you understand the query and its impact before executing it. Always have a backup ready.
-
-
-
-
 By following these steps, you should be able to update the comment status of your WordPress posts from "closed" to "open" efficiently and safely.

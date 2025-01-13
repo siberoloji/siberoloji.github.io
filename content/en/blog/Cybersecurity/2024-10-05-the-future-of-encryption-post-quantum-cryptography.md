@@ -37,20 +37,12 @@ The two primary forms of encryption used today are:
 * **Example Algorithm**: AES (Advanced Encryption Standard)
 
 * **How It Works**: In symmetric encryption, the same key is used to both encrypt and decrypt data. AES is widely used in applications like securing data in storage and protecting communication channels.
-
-
-
-
 2. **Asymmetric Encryption**
 
 
 * **Example Algorithms**: RSA, ECC
 
 * **How It Works**: Asymmetric encryption uses a pair of keys—one public and one private. The public key encrypts data, while only the private key can decrypt it. This is widely used in securing internet communications, such as SSL/TLS protocols.
-
-
-
-
 While these encryption methods have served the digital world well, their security relies on the fact that classical computers cannot solve the underlying mathematical problems efficiently. This changes dramatically with the rise of **quantum computing**.
 ## Quantum Computing: A Threat to Current Encryption
 
@@ -74,10 +66,6 @@ Quantum computers can potentially break current encryption algorithms in two mai
 * **Shor’s Algorithm**: Developed by mathematician Peter Shor, this quantum algorithm can efficiently factor large numbers. Since RSA and ECC rely on the difficulty of factoring or solving discrete logarithms, Shor’s algorithm can break these encryption methods in polynomial time. In other words, a sufficiently powerful quantum computer could decrypt data that is currently protected by RSA or ECC encryption.
 
 * **Grover’s Algorithm**: This quantum algorithm is less powerful than Shor’s but can speed up brute-force attacks on symmetric encryption by searching through possible keys more efficiently. While Grover’s algorithm doesn’t entirely break symmetric encryption like AES, it reduces its security level, potentially necessitating longer key lengths to maintain the same level of protection.
-
-
-
-
 The arrival of **large-scale quantum computers** could make the encryption methods we rely on today vulnerable, creating the need for new cryptographic algorithms that can withstand quantum attacks.
 ## What Is Post-Quantum Cryptography?
 

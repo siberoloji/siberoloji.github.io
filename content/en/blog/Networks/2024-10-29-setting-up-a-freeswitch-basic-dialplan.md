@@ -14,23 +14,13 @@ categories:
 tags:
     - freeswitch
 ---
-
-
 Dialplans are the heart of FreeSWITCH, determining how calls are routed and processed within your system. In this comprehensive guide, we'll explore how to create and configure a FreeSWITCH basic dialplan that handles common calling scenarios. Whether you're new to FreeSWITCH or looking to enhance your existing setup, this guide will help you understand and implement effective call routing strategies.
-
-
 
 ## Understanding Dialplan Basics
 
-
-
 What is a Dialplan?
 
-
-
 A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. It's essentially a routing table that determines what happens when someone makes a call through your system. Dialplans in FreeSWITCH are written in XML and consist of several key components:
-
-
 * Contexts
 
 * Extensions
@@ -40,17 +30,9 @@ A dialplan is a set of instructions that tells FreeSWITCH how to handle calls. I
 * Actions
 
 * Anti-Actions
-
-
-
-
 ## Dialplan Structure
 
-
-
 Basic XML Structure
-
-
 ```xml
 <include>
   <context name="my_context">
@@ -63,11 +45,7 @@ Basic XML Structure
 </include>
 ```
 
-
-
 Key Components Explained
-
-
 * **Context**: A logical grouping of extensions
 
 * **Extension**: A set of rules for handling specific calls
@@ -77,21 +55,11 @@ Key Components Explained
 * **Action**: What happens when conditions are met
 
 * **Anti-Action**: What happens when conditions are not met
-
-
-
-
 ## Creating Your First Dialplan
-
-
 
 1. Basic Internal Calls
 
-
-
 Create a new file `/usr/local/freeswitch/conf/dialplan/default/01_internal.xml`:
-
-
 ```xml
 <include>
   <context name="default">
@@ -114,15 +82,9 @@ Create a new file `/usr/local/freeswitch/conf/dialplan/default/01_internal.xml`:
 </include>
 ```
 
-
-
 2. Adding External Calls
 
-
-
 Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
-
-
 ```xml
 <include>
   <context name="default">
@@ -137,15 +99,9 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </include>
 ```
 
-
-
 ## Common Dialplan Features
 
-
-
 1. Time-Based Routing
-
-
 ```
 <extension name="business_hours">
   <condition wday="2-6" hour="9-17"> <!-- Monday-Friday, 9 AM-5 PM -->
@@ -155,11 +111,7 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 2. IVR (Interactive Voice Response)
-
-
 ```
 <extension name="main_ivr">
   <condition field="destination_number" expression="^(5000)$">
@@ -170,11 +122,7 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 3. Conference Rooms
-
-
 ```
 <extension name="conferences">
   <condition field="destination_number" expression="^(3\d{3})$">
@@ -184,15 +132,9 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 ## Advanced Dialplan Techniques
 
-
-
 1. Call Recording
-
-
 ```
 <extension name="record_calls">
   <condition field="destination_number" expression="^(record_\d+)$">
@@ -204,11 +146,7 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 2. Call Queues
-
-
 ```
 <extension name="support_queue">
   <condition field="destination_number" expression="^(7000)$">
@@ -219,11 +157,7 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 3. Failover Routing
-
-
 ```
 <extension name="failover">
   <condition field="destination_number" expression="^(2\d{3})$">
@@ -234,27 +168,15 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 ## Best Practices
 
-
-
 1. Organization
-
-
 * Use numbered files for loading order (01_internal.xml, 02_external.xml, etc.)
 
 * Group similar extensions together
 
 * Comment your dialplan thoroughly
-
-
-
-
 2. Security
-
-
 ```
 <extension name="limit_international">
   <condition field="destination_number" expression="^(011\d+)$">
@@ -266,11 +188,7 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 3. Error Handling
-
-
 ```
 <extension name="handle_failed_calls">
   <condition field="${originate_disposition}" expression="^(BUSY|NO_ANSWER|USER_NOT_REGISTERED)$">
@@ -279,51 +197,29 @@ Create `/usr/local/freeswitch/conf/dialplan/default/02_external.xml`:
 </extension>
 ```
 
-
-
 ## Testing and Debugging
-
-
 
 1. Log Configuration
 
-
-
 Add to `/usr/local/freeswitch/conf/autoload_configs/switch.conf.xml`:
-
-
 ```
 <param name="loglevel" value="debug"/>
 ```
 
-
-
 2. Testing Commands
 
-
-
 In fs_cli:
-
-
 ```
 reloadxml
 show dialplan
 eval ${destination_number}
 ```
 
-
-
 ## Common Troubleshooting
-
-
 
 1. Dialplan Not Working
 
-
-
 Check these common issues:
-
-
 * XML syntax errors
 
 * Regular expression patterns
@@ -331,17 +227,9 @@ Check these common issues:
 * File permissions
 
 * Context names matching the user's context
-
-
-
-
 2. Call Routing Issues
 
-
-
 Verify:
-
-
 * Gateway configurations
 
 * User directory settings
@@ -349,17 +237,9 @@ Verify:
 * Network connectivity
 
 * SIP profile settings
-
-
-
-
 ## Monitoring and Maintenance
 
-
-
 1. Regular Checks
-
-
 ```bash
 # Check dialplan syntax
 /usr/local/freeswitch/bin/fs_cli -x "xml_validate"
@@ -367,11 +247,7 @@ Verify:
 # Monitor active calls
 /usr/local/freeswitch/bin/fs_cli -x "show calls"```
 
-
-
 2. Performance Monitoring
-
-
 ```
 <extension name="performance_monitoring">
   <condition field="destination_number" expression=".*">
@@ -381,15 +257,9 @@ Verify:
 </extension>
 ```
 
-
-
 ## Conclusion
 
-
-
 Creating an effective dialplan is crucial for a well-functioning FreeSWITCH system. Start with basic call routing and gradually add more complex features as needed. Remember to:
-
-
 * Keep your dialplan organized and well-documented
 
 * Test thoroughly before deploying changes
@@ -399,13 +269,7 @@ Creating an effective dialplan is crucial for a well-functioning FreeSWITCH syst
 * Implement security measures
 
 * Plan for scalability
-
-
-
-
 As your system grows, you can expand your dialplan to include more advanced features like:
-
-
 * Multi-tenant configurations
 
 * Advanced IVR systems
@@ -413,8 +277,4 @@ As your system grows, you can expand your dialplan to include more advanced feat
 * Custom applications
 
 * Integration with external systems
-
-
-
-
 Regular maintenance and updates will ensure your <a href="https://signalwire.com/freeswitch" target="_blank" rel="noopener" title="">FreeSWITCH</a> system continues to handle calls efficiently and reliably.

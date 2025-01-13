@@ -146,10 +146,6 @@ To facilitate seamless data communication, protocols, and standards are essentia
 * **Hypertext Transfer Protocol (HTTP/HTTPS)**: Primarily used for web-based communication, allowing users to access and browse websites securely.
 
 * **Simple Mail Transfer Protocol (SMTP)**: Essential for email communication, enabling the sending and receiving of messages across networks.
-
-
-
-
 the OSI Model in Data Communication**
 
 

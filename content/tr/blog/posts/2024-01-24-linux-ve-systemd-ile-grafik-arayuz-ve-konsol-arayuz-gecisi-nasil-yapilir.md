@@ -21,15 +21,9 @@ tags:
     - linux
     - 'linux nasıl'
 ---
-
-
 Linux işletim sistemini başlattığınızda, sırasıyla gerçekleşen açılış işlemlerini kontrol eden sisteme "init sistem" adı verilir. Bir takım Linux dağıtımları SysV başlatıcı, bir kısım dağıtımlar ise systemd kullanırlar. Masaüstü bilgisayar kullanıyorsanız, başlangıç işlemleri tamamlandığında grafik arayüze ulaşmak istersiniz. Sunucu bilgisayarda ise masaüstü ihtiyacınız yoksa, grafik arayüze değil komut satırına ulaşmak istersiniz. Bu yazımızda, systemd yönetim sistemini kullanan Linux dağıtımında grafik ve konsol arasında geçişler ve varsayılan açılış hedefini nasıl ayarlayabileceğimizi göreceğiz.
 
-
-
 Öncelikle, sistemimizde yüklü ve aktif olan hedef durumlarını görelim. Bunun için "systemctl list-units --type=target" komutunu kullanabilirsiniz.
-
-
 ```bash
 linux@rpi4:~ $ systemctl list-units --type=target
   UNIT                   LOAD   ACTIVE SUB    DESCRIPTION                        
@@ -65,71 +59,39 @@ SUB    = The low-level unit activation state, values depend on unit type.
 To show all installed unit files use 'systemctl list-unit-files'.
 ```
 
-
-
 Yukarıda listelenen bir çok durum, aslında varılmak istenen nihai hedefin (grafik arayüz, konsol arayüzü vb. ) bir gerekliliğidir. Bizim şu an için ilgilendiğimiz durumlar, "graphical.target", "multi-user.target" olduğu için diğerlerini dikkate almıyoruz.
 
-
-
 Öncelikle sistemimizde varsayılan olarak ayarlı açılış hedefini görelim. Bunun için "`systemctl get-default`" komutunu kullanıyoruz.
-
-
 ```bash
 $ systemctl get-default 
 graphical.target
 ```
 
-
-
 Sistemimizde ayarlanmış varsayılan açılış hedefinin grafik arayüz "`graphical.target`" olduğunu görebilirsiniz. Buradan çıkaracağımız sonuç, sistemimiz başladığında bütün servisler sırasıyla çalıştırılacak ve grafik arayüz ile masaüstü yöneticisine ulaşacaksınız. 
-
-
 
 Peki masaüstüne ihtiyacınız yoksa veya ihtiyacınız kalmadı ise durdurup sistem kaynak kullanımını azaltmak isteyebilirsiniz. Bu durumda grafik arayüzünü durdurup konsol dediğimiz, komut satırı olarak da tabir edilen, komutlarımızda "multi-user.target" şeklinde ifade edeceğimiz ekrana nasıl geçeceğiz.
 
-
-
 ## graphical.target tan multiuser-target a geçiş
 
-
-
 Sistemimiz şu an graphical.target dediğimiz grafik arayüzde çalışıyor.  Burada yapılan işlem masaüstü ekranında Terminal penceresi açmak değildir. Masaüstü yöneticisini tamamen durdurmaktır. Dikkat etmelisiniz. Aşağıdaki komut sayesinde artık masaüstü yöneticisi ve grafik arayüz kullanan programlar tamamen durduruldu. Komut satırındasınız. 
-
-
 ```bash
 sudo systemctl isolate multi-user.target
 ```
 
-
-
 ## multiuser-target tan graphical.target a geçiş
 
-
-
 Grafik arayüzü tekrar başlatmak isterseniz aşağıdaki komutu kullanabilirsiniz. Bu komut sonucunda grafik arayüz ve masaüstü yöneticisi tekrar başlatılacaktır
-
-
 ```bash
 sudo systemctl isolate graphical.target
 ```
 
-
-
 ## İlk açılış varsayılan hedef ayarı
 
-
-
 Yukarıda verdiğimiz geçiş komutları, sistem açıldıktan sonra başlatma, sonlandırma ve geçiş işlemleri için kullanılmaktadır. Şimdi ise, sisteminiz ilk açıldığında hangi durumu hedef almasını istediğimizi ayarlayalım. Bunun için "systemctl set-default " komutunu kullanacağız.
-
-
 ```bash
 sudo systemctl set-default multi-user.target
 ```
-
-
 ```bash
 sudo systemctl set-default graphical.target```
-
-
 
 Bu komutlar sayesinde istediğiniz zaman grafik arayüzü durdurarak kaynak kullanımını azaltabilir, ihtiyacınız olduğunda birbirleri arasında geçiş yapabilirsiniz.

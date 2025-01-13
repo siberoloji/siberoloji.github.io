@@ -15,8 +15,6 @@ tags:
     - cybersecurity
     - metasploit framework
 ---
-
-
 Metasploit Framework içerisinde, belirli Portlarda çalışan servisleri bulmak ve bunların versiyon numaralarını tespit etmek için bir takım modüller bulunur. `nmap` ile yapılan servis taraması gibi bir takım bilgi toplama faaliyetlerinde bunları kullanabilirsiniz.
 
 ## SSH Servisi
@@ -53,8 +51,6 @@ Module options (auxiliary/scanner/ssh/ssh_version):
    RPORT    22                             yes       The target port
    THREADS  1                              yes       The number of concurrent threads
    TIMEOUT  30                             yes       Timeout for the SSH probe
-
-
 msf  auxiliary(ssh_version) > run
 
 > 172.16.194.163:22, SSH server version: SSH-2.0-OpenSSH_5.3p1 Debian-3ubuntu7
