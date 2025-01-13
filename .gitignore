@@ -1,6 +1,7 @@
 /public
 resources/
 node_modules/
+/content/.obsidian/
 package-lock.json
 .hugo_build.lock
 content/.DS_Store*
