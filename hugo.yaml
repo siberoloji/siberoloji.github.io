@@ -3,6 +3,10 @@ title: Siberoloji
 languageCode: en-us
 description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.
 
+# set up the number of blog post summary in the list page.
+pagination:
+  pagerSize: 20
+
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings

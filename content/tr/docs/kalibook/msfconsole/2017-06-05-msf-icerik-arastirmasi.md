@@ -1,20 +1,19 @@
 ---
 draft: false
-
-title:  'MSF İçerik Araştırması'
-date: '2017-06-05T13:40:00+03:00'
+title: MSF İçerik Araştırması
+linkTitle: MSF İçerik Araştırması
+translationKey: msf-content-research
+weight: 260
+date: 2017-06-05T13:40:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Hedef bilgisayarda meterpreter shell açtıktan sonra yapılacak işlemlerden birisi de bilgisayar bulunan dosyaları araştırmaktır. Firmalar, kullanıcılarını bilgilerinin güvenliğini sağlamaları konusunda eğitirler. Bu eğitim konularından birisi de hassas bilgileri paylaşımlı sunucularda değil de yerel bilgisayarlarda tutmaktır. İçerik araştırması da genelde bu tarz hassas bilgilerin olduğu dosya ve klasörleri keşfetmek için yapılır.' 
- 
-url:  /tr/msf-icerik-arastirmasi/
- 
+description: Hedef bilgisayarda meterpreter shell açtıktan sonra yapılacak işlemlerden birisi de bilgisayar bulunan dosyaları araştırmaktır.
+url: /tr/msf-icerik-arastirmasi/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
 ## İçerik Araştırması
 
@@ -23,6 +22,7 @@ Hedef bilgisayarda meterpreter shell açtıktan sonra yapılacak işlemlerden bi
 Meterpreter oturumunun sunduğu `search` komutu ile ilgili birkaç örnek inceleyelim.
 
 `search -h` komutuyla search hakkında yardım bilgilerini görüntüleyebilirsiniz.
+
 ```bash
 meterpreter > search -h
 Usage: search [-d dir] [-r recurse] -f pattern
@@ -47,6 +47,7 @@ OPTIONS:
 `-r`: Arama, belirtilen klasör ve tüm alt klasörlerinde gerçekleştirilir. Varsayılan olarak zaten aktif durumdadır.
 
 Aşağıdaki örnek komut, tüm disk bölümlerinde, klasör ve alt klasörlerde `.jpg` uzantılı dosyaları arayacaktır.
+
 ```bash
 meterpreter > search -f *****.jpg
 Found 418 results...
@@ -59,6 +60,7 @@ Found 418 results...
 ```
 
 `search` komutunda varsayılan olarak tüm klasörler aranmaktadır ancak bu işlem çok zaman alır. Ayrıca, hedef bilgisayar kullanıcısı bilgisayarının yavaşladığını fark edebilir. Bu nedenle, `-d` seçeneğini kullanarak arama yapılacak klasörü belirtmek hem zaman kazandırır hem de sistemin işlem yükünü hafifletir. Aşağıda buna bir örnek kullanımı görebilirsiniz. Komutu girerken klasör ayırıcı işaretini `\\` şeklinde girdiğimize dikkat edin.
+
 ```bash
 meterpreter > search -d c:\\documents\ and\ settings\\administrator\\desktop\\ -f *****.pdf
 Found 2 results...
