@@ -6,7 +6,7 @@ translationKey: msf-privilage-escalation
 weight: 240
 date: 2017-05-25T13:16:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: yetki yükseltme olarak ifade edilen ( Privilege Escalation) kavramı inceleyeceğiz.
+description: Bu yazıda, yetki yükseltme olarak ifade edilen Privilege Escalation kavramı inceleyeceğiz.
 url: /tr/msf-yetki-yukseltme/
 featured_image: /images/metasploit.jpg
 categories:

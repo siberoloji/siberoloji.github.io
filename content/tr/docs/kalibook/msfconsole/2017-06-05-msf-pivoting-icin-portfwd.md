@@ -1,27 +1,27 @@
 ---
 draft: false
-
-title:  'MSF Pivoting İçin Portfwd'
-date: '2017-06-05T13:35:00+03:00'
+title: MSF Pivoting İçin Portfwd
+linkTitle: Pivoting İçin Portfwd
+translationKey: msf-pivoting-portfwd
+weight: 310
+date: 2017-06-05T13:35:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Port Yönlendirme olarak kullanılan\_portfwd\_komutu, Meterpreter’in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir\_pivot\_bilgisayara ihtiyacımız bulunmaktadır." 
- 
-url:  /tr/msf-pivoting-icin-portfwd/
- 
+description: Port Yönlendirme olarak kullanılan portfwd komutu, Meterpreter’in sağladığı imkanlardan bir tanesidir.
+url: /tr/msf-pivoting-icin-portfwd/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
 ## Portfwd
 
 Port Yönlendirme olarak kullanılan `portfwd` komutu, Meterpreter’in sağladığı imkanlardan bir tanesidir. Normalde ağda bulunan fakat doğrudan iletişim kurulamayan cihazlarla iletişim kurmaya yarar. Bunun gerçekleşebilmesi için öncelikle bir **pivot** bilgisayara ihtiyacımız bulunmaktadır.
 
 Pivot olarak adlandırdığımız bilgisayarın bağlanabildiği bir ağ cihazına, port yönlendirme yaparak kendi yerel makinemizden bağlanmamızı sağlar. Bunun nasıl gerçekleştiğini bir örnekle açıklamaya çalışalım. Bu anlatımda 3 adet bilgisayar olduğunu baştan belirtmekte fayda var.
-*  Kendi bilgisayarımız: 192.168.1.162 veya 0.0.0.0
+
+* Kendi bilgisayarımız: 192.168.1.162 veya 0.0.0.0
 
 * Pivot bilgisayar : 172.16.194.144
 
@@ -31,6 +31,7 @@ Bizim burada yapmaya çalıştığımız işlem, bir şekilde meterpreter oturum
 ## Yardımı Görüntüleme
 
 Pivot makinede meterpreter oturum açık durumdayken `portfwd –h` komutu ile `portfwd` ile ilgili yardımı görüntüleyebilirsiniz.
+
 ```bash
 meterpreter > portfwd -h
 Usage: portfwd [-h] [add | delete | list | flush] [args]
@@ -68,6 +69,7 @@ Flush: Tüm aktif yönlendirmeleri iptal etmeye yarar.
 ## Yönlendirme Ekleme
 
 Meterpreter shell oturumunu açtığımız **pivot** bilgisayarda iken vereceğimiz komut aşağıdaki formattadır.
+
 ```bash
 meterpreter > portfwd add –l 3389 –p 3389 –r  [target host]
 ```
@@ -79,6 +81,7 @@ meterpreter > portfwd add –l 3389 –p 3389 –r  [target host]
 `-r [target host]` hedef bilgisayar IP adresidir.
 
 Şimdi port yönlendirmeyi yapalım.
+
 ```bash
 meterpreter > portfwd add –l 3389 –p 3389 –r 172.16.194.191
 > Local TCP relay created: 0.0.0.0:3389 >-> 172.16.194.191:3389
@@ -88,6 +91,7 @@ meterpreter >
 ## Yönlendirme Silme
 
 Silme işlemini de **pivot** bilgisayar oturumunda iken aşağıdaki örnekte olduğu gibi yapabiliriz.
+
 ```bash
 meterpreter > portfwd delete –l 3389 –p 3389 –r 172.16.194.191
 > Successfully stopped TCP relay on 0.0.0.0:3389
@@ -97,6 +101,7 @@ meterpreter >
 ## Yönlendirmeleri Listeleme
 
 Aktif olan yönlendirmeleri `portfwd list` komutuyla yapabiliriz.
+
 ```bash
 meterpreter > portfwd list
 0: 0.0.0.0:3389 -> 172.16.194.191:3389
@@ -110,6 +115,7 @@ meterpreter >
 ## Tüm Yönlendirmeleri Temizleme
 
 Sistemde aktif olan tüm yönlendirmeleri `portfwd flush` komutuyla iptal edebiliriz.
+
 ```bash
 meterpreter > portfwd flush
 > Successfully stopped TCP relay on 0.0.0.0:3389
@@ -129,6 +135,7 @@ Aşağıda örnek olarak bir senaryoyu bulabilirsiniz.
 ## Hedef Bilgisayar
 
 Aşağıdaki komut çıktısında görüldüğü gibi, hedef bilgisayar `172.16.194.141` IP adresine sahiptir.
+
 ```bash
 C:\> ipconfig
 
@@ -147,6 +154,7 @@ C:\>
 ## Pivot Bilgisayar
 
 **Pivot** bilgisayar aşağıdaki çıktıda görüldüğü gibi, hem `172.16.194.0/24` ağına hem de `192.168.1.0/24` ağına bağlanabilmektedir. Bizim yerel bilgisayarımızda bu `192.168.1.0/24` ağında bulunuyor.
+
 ```bash
 meterpreter > ipconfig
 
@@ -169,6 +177,7 @@ Netmask     : 255.0.0.0
 ## Yerel Bilgisayar
 
 Birazdan aşağıda göreceğiniz yönlendirme sonucunda yerel bilgisayarımızın (192.168.1.162 IP numaralı), **pivot** makine üzerinden `172.16.194.141` IP adresine `ping` sinyali gönderebildiğini görebiliyoruz.
+
 ```bash
 root@kali:~# ifconfig eth1
 eth1     Link encap:Ethernet  HWaddr 0a:0b:0c:0d:0e:0f  
@@ -198,11 +207,13 @@ Peki bu haberleşmeyi nasıl başardık?
 ## Yönlendirme Yapalım
 
 **pivot** bilgisayarda açtığımız meterpreter shell içerisinde iken aşağıdaki yönlendirme işlemini gerçekleştirdik.
+
 ```bash
 meterpreter > portfwd add –l 3389 –p 3389 –r 172.16.194.141
 ```
 
 Yönlendirme komutunu **pivot** bilgisayarda verdikten sonra yerel bilgisayarımızda `netstat -antp` komutuyla bizim de dinlemeyi `3389` numaralı port üzerinden yaptığımızı kontrol edebilirsiniz.
+
 ```bash
 root@kali:~# netstat -antp
 Active Internet connections (servers and established)
