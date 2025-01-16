@@ -8,8 +8,6 @@ services:
         id: G-EXGYZTJ3G7  # www.siberoloji.com
         #id: G-Y78HNW88W6  # blog.siberoloji.com
         
-
-
 # set up the number of blog post summary in the list page.
 pagination:
   pagerSize: 20
@@ -113,10 +111,12 @@ params:
   # This menu appears only if you have at least one [params.versions] set.
   version_menu: Releases
   version: 1.0.0
+
   # Flag used in the "version-banner" partial to decide whether to display a
   # banner on every page indicating that this is an archived version of the docs.
   # Set this flag to "true" if you want to display the banner.
   archived_version: false
+
   # Google Custom Search Engine ID. Remove or comment out to disable search.
   gcs_engine_id: 000688360185781879140:cem3-i2iayy # www.siberoloji.com
   # gcs_engine_id: 818c7b31ab3c04650 # blog.siberoloji.com
