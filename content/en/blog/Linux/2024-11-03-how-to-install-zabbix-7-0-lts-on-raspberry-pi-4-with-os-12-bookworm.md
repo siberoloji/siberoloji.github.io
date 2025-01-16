@@ -1,18 +1,18 @@
 ---
 draft: false
-
-title:  'How to Install Zabbix 7.0 LTS on Raspberry Pi 4 with OS 12 Bookworm'
-date: '2024-11-03T00:47:03+03:00'
+title: How to Install Zabbix 7.0 on Raspberry Pi 4 OS 12 Bookworm
+translationKey: how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm
+date: 2024-11-03T00:47:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This guide provides a step-by-step approach to installing **Zabbix 7.0 LTS on Raspberry Pi 4 running OS 12 Bookworm' 
- 
-url:  /how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm/
- 
+description: This guide provides a step-by-step approach to installing Zabbix 7.0 LTS on Raspberry Pi 4 running OS 12 Bookworm
+url: /how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm/
 featured_image: /images/zabbixhero.webp
 categories:
-    - 'Raspberry Pi'
+    - Raspberry Pi
 tags:
+    - zabbix
+linkTitle: Install Zabbix 7.0 LTS
+keywords:
     - zabbix
 ---
 
@@ -211,6 +211,7 @@ sudo systemctl status zabbix-server zabbix-agent apache2
 - **Step 5:** Confirm configuration.
 
 3. After the setup, log in to the Zabbix front end using the default credentials:
+
 - **Username:** `Admin`
 - **Password:** `zabbix`
 
@@ -245,19 +246,24 @@ With Zabbix 7.0 LTS successfully installed on Raspberry Pi OS 12 Bookworm, you c
 
 ---
 
-**FAQs**
+## FAQs
 
 1. **Can Zabbix run efficiently on Raspberry Pi 4?**
+
 - Yes, especially with 4GB or 8GB RAM. For small networks, Zabbix is very effective on Raspberry Pi.
 
 2. **Do I need a static IP for Zabbix?**
+
 - While not mandatory, a static IP makes it easier to access your Zabbix server consistently.
 
 3. **What if I encounter PHP errors during setup?**
+
 - Ensure PHP modules are correctly installed and PHP settings are optimized in `php.ini`.
 
 4. **How secure is Zabbix on a Raspberry Pi?**
+
 - Basic security involves securing the MySQL instance and ensuring the server is behind a firewall. For internet exposure, consider adding SSL.
 
 5. **Can I use Zabbix to monitor IoT devices?**
+
 - Zabbix is highly compatible with IoT monitoring and can track metrics via SNMP or custom scripts.

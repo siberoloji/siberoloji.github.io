@@ -1,54 +1,40 @@
 ---
 draft: false
-
-title:  'Local Network Scanner C++'
-date: '2024-10-04T21:56:55+03:00'
+title: Local Network Scanner C++
+translationKey: local-network-scanner-c
+date: 2024-10-04T21:56:55+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /local-network-scanner-c/
- 
+url: /local-network-scanner-c/
 featured_image: /images/cpp.png
 categories:
-    - 'C++ Code Samples'
+    - C++ Code Samples
 tags:
     - c++
-    - 'c++ code samples'
+    - c++ code samples
+linkTitle: Network Scanner
+description: If you want to scan your own network to find out live IP addresses, you can use the code below.
 ---
 
 
 If you want to scan your own network to find out live IP addresses, you can use the code below. Use this code with caution, use it only with the network you own.
 
-
-
 To compile and run this program:
-
-
 
 Save the updated code to a file, e.g., `network_scanner.cpp`
 
-
-
-Compile it: 
-
+Compile it:
 
 ```bash
-`g++ -std=c++17 -o network_scanner network_scanner.cpp
-````
-
-
+`g++ -std=c++17 -o network_scanner network_scanner.cpp`
+```
 
 Run it with sudo:
-
 
 ```bash
 sudo ./network_scanner
 ```
 
-
-
 Here is the complete code.
-
 
 ```cpp
 #include <iostream>
@@ -78,12 +64,12 @@ private:
         if (len == 1) {
             sum += *reinterpret_cast<uint8_t *>(buf);
         }
-        sum = (sum >> 16) + (sum &amp; 0xFFFF);
+        sum = (sum >> 16) + (sum & 0xFFFF);
         sum += (sum >> 16);
         return static_cast<uint16_t>(~sum);
     }
 
-    static int ping(const std::string&amp; ip_addr) {
+    static int ping(const std::string& ip_addr) {
         int sockfd = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
         if (sockfd < 0) {
             throw std::runtime_error("Socket creation failed");
@@ -105,9 +91,9 @@ private:
         timeval tv{};
         tv.tv_sec = MAX_WAIT_TIME.count();
         tv.tv_usec = 0;
-        setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &amp;tv, sizeof(tv));
+        setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
 
-        if (sendto(sockfd, packet.data(), PACKET_SIZE, 0, reinterpret_cast<sockaddr*>(&amp;addr), sizeof(addr)) <= 0) {
+        if (sendto(sockfd, packet.data(), PACKET_SIZE, 0, reinterpret_cast<sockaddr*>(&addr), sizeof(addr)) <= 0) {
             close(sockfd);
             return -1;
         }
@@ -122,7 +108,7 @@ private:
     }
 
 public:
-    static void scanNetwork(const std::string&amp; base_ip) {
+    static void scanNetwork(const std::string& base_ip) {
         std::ofstream file("scan_results.txt");
         if (!file) {
             throw std::runtime_error("Error opening file");
@@ -139,7 +125,7 @@ public:
                 } else {
                     std::cout << ip << " is not reachable ";
                 }
-            } catch (const std::exception&amp; e) {
+            } catch (const std::exception& e) {
                 std::cerr << "Error pinging " << ip << ": " << e.what() << ' ';
             }
 
@@ -154,7 +140,7 @@ public:
 int main() {
     try {
         NetworkScanner::scanNetwork("192.168.1.");
-    } catch (const std::exception&amp; e) {
+    } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << ' ';
         return 1;
     }

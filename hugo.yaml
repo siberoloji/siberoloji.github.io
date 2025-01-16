@@ -3,6 +3,13 @@ title: Siberoloji
 languageCode: en-us
 description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.
 
+services:
+  googleAnalytics:
+        id: G-EXGYZTJ3G7  # www.siberoloji.com
+        #id: G-Y78HNW88W6  # blog.siberoloji.com
+        
+
+
 # set up the number of blog post summary in the list page.
 pagination:
   pagerSize: 20
@@ -86,10 +93,6 @@ markup:
 outputs:
   section: [HTML, print, RSS]
 
-services:
-  googleAnalytics:
-    id: G-Y78HNW88W6
-
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
@@ -114,7 +117,10 @@ params:
   # banner on every page indicating that this is an archived version of the docs.
   # Set this flag to "true" if you want to display the banner.
   archived_version: false
-
+  # Google Custom Search Engine ID. Remove or comment out to disable search.
+  gcs_engine_id: 000688360185781879140:cem3-i2iayy # www.siberoloji.com
+  # gcs_engine_id: 818c7b31ab3c04650 # blog.siberoloji.com
+  
   # The version number for the version of the docs represented in this doc set.
   # Used in the "version-banner" partial to display a version number for the
   # current doc set.
@@ -136,9 +142,6 @@ params:
   # Uncomment this if your GitHub repo does not have "main" as the default branch,
   # or specify a new value if you want to reference another branch in your GitHub links
   github_branch: main
-
-  # Google Custom Search Engine ID. Remove or comment out to disable search.
-  gcs_engine_id: 818c7b31ab3c04650
 
   # Enable Lunr.js offline search
   offlineSearch: false
