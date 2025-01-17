@@ -250,10 +250,10 @@ When you issue this command, you go directly to the Ruby script operator. It all
 msf > irb
 > Starting IRB shell...
 
-**>>** puts "Hello, metasploit!"
+> puts "Hello, metasploit!"
 Hello, metasploit!
 => nil
-**>>** Framework::Version
+> Framework::Version
 => "4.8.2-2014022601"
 ```
 

@@ -251,10 +251,10 @@ Bu komutu verdiğinizde doğrudan Ruby komut girişimcisine gidersiniz. msfconso
 msf > irb
 > Starting IRB shell...
 
-**>>** puts "Hello, metasploit!"
+> puts "Hello, metasploit!"
 Hello, metasploit!
 => nil
-**>>** Framework::Version
+> Framework::Version
 => "4.8.2-2014022601"
 ```
 

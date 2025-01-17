@@ -92,7 +92,7 @@ To effectively use the Eisenhower Matrix, follow these simple steps:
 
 * **Take Action:** Once your tasks are organized, you can start taking action.
 
-* **Do** the tasks in Quadrant 1 first.
+* do the tasks in Quadrant 1 first.
 
 * **Schedule** the tasks in Quadrant 2 for later.
 

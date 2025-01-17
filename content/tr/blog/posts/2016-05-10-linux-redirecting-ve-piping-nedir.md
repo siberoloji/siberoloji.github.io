@@ -86,7 +86,7 @@ Mevcut Dosyadan Veri Alma
 
 Bir komutun çıktısını dosyaya yönlendirmenin sonrasında, şimdi de bir dosyadan veriyi girdi olarak almayı açıklayalım. Bunun için < işaretini kullanıyoruz. < işaretiyle belirtilen adresten alınan veri, komuta STDIN yani girdi olarak gönderilir.
 
-Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (**<** ile veri almasını) ve harfleri sayması (-**m** ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (**>>** ile) söylenmiştir.
+Aşağıdaki örnekte, wc komutuna, metin.txt dosyasından okuma yapması (**<** ile veri almasını) ve harfleri sayması (-**m** ile ), sonucunu da raport.txt dosyasının sonuna ilave etmesi (> ile) söylenmiştir.
 ```bash
 ~/redirect $ wc -m < metin.txt >>rapor.txt
 ~/redirect $ cat rapor.txt

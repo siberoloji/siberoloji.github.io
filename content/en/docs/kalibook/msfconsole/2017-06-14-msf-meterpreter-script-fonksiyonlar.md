@@ -1,13 +1,13 @@
 ---
 draft: false
-title: MSF Meterpreter Script Fonksiyonlar
-linkTitle: Meterpreter Script Fonksiyonlar
+title: MSF Meterpreter Script Functions
+linkTitle: Meterpreter Script Functions
 translationKey: msf-meterpreter-script-functions
 weight: 360
 date: 2017-06-14T13:51:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız.
-url: /tr/msf-meterpreter-script-fonksiyonlar/
+description: In this article, we will look at some useful function examples that you can use in your script files.
+url: /msf-meterpreter-script-functions/
 featured_image: /images/metasploit.jpg
 categories:
     - Metasploit Framework
@@ -15,11 +15,11 @@ tags:
     - cybersecurity
     - metasploit framework
 ---
-## Kullanışlı Fonksiyonlar
+## Useful Functions
 
-Bu yazıda, script dosyalarınızda kullanabileceğiniz kullanışlı bazı fonksiyon örneklerine toplu halde bakacağız. Bu fonksiyonları ihtiyacınıza göre kullanabilirsiniz. Komutları inceleyerek ne gibi işlemler yapıldığını inceleyebilirsiniz.
+In this article, we will look at some useful function examples that you can use in your script files. You can use these functions according to your needs. You can examine the commands and see what kind of operations they do.
 
-## Kullanılabilir WMIC Komutları
+## Usable WMIC Commands
 
 ```bash
 def wmicexec(session,wmiccmds= nil)
@@ -67,7 +67,7 @@ def wmicexec(session,wmiccmds= nil)
 end
 ```
 
-## Dosyaların MAC Zamanlarını Değiştirme
+## Changing File MACE Attributes
 
 ```bash
 def chmace(session,cmds)
@@ -90,7 +90,7 @@ def chmace(session,cmds)
 end
 ```
 
-## UAC Kontrolü
+## UAC Control
 
 ```bash
 def checkuac(session)
@@ -118,7 +118,7 @@ def checkuac(session)
 end
 ```
 
-## Tüm Olay Loglarını Temizleme
+## Clearing Event Logs
 
 ```bash
 def clrevtlgs(session)
@@ -145,7 +145,7 @@ def clrevtlgs(session)
 end
 ```
 
-## Bir Komut Listesini Çalıştırma
+## Running Command List
 
 ```bash
 def list_exec(session,cmdlst)
@@ -172,7 +172,7 @@ def list_exec(session,cmdlst)
 end
 ```
 
-## Dosyaları Karşı Tarafa Yükleme
+## Uploading a File
 
 ```bash
 def upload(session,file,trgloc = nil)
@@ -202,7 +202,7 @@ def upload(session,file,trgloc = nil)
 end
 ```
 
-## Bir Dosyaya Veri Yazma
+## Writing to a File
 
 ```bash
 def filewrt(file2wrt, data2wrt)

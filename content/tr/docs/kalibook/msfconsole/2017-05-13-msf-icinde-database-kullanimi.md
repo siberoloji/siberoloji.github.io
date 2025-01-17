@@ -230,16 +230,16 @@ Usage:
 ```bash
 msf > db_export -f xml /root/msfu/Exported.xml
 > Starting export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
->     **>>** Starting export of report
->     **>>** Starting export of hosts
->     **>>** Starting export of events
->     **>>** Starting export of services
->     **>>** Starting export of credentials
->     **>>** Starting export of web sites
->     **>>** Starting export of web pages
->     **>>** Starting export of web forms
->     **>>** Starting export of web vulns
->     **>>** Finished export of report
+>     > Starting export of report
+>     > Starting export of hosts
+>     > Starting export of events
+>     > Starting export of services
+>     > Starting export of credentials
+>     > Starting export of web sites
+>     > Starting export of web pages
+>     > Starting export of web forms
+>     > Starting export of web vulns
+>     > Finished export of report
 > Finished export of workspace msfu to /root/msfu/Exported.xml [ xml ]...
 ```
 

