@@ -304,6 +304,22 @@
     {
       "title": "17-other-topics",
       "path": "[[workspace]]/content/en/docs/howtos/almalinux9/17-other-topics"
+    },
+    {
+      "title": "HTML",
+      "path": "[[workspace]]/content/en/docs/HTML"
+    },
+    {
+      "title": "raspberrypios",
+      "path": "[[workspace]]/content/en/docs/howtos/raspberrypios"
+    },
+    {
+      "title": "Digital Logic",
+      "path": "[[workspace]]/content/en/blog/Digital Logic"
+    },
+    {
+      "title": "msfconsole",
+      "path": "[[workspace]]/content/en/docs/kalibook/msfconsole"
     }
   ],
   "frontMatter.git.enabled": true

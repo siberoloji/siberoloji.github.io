@@ -1,20 +1,18 @@
 ---
 draft: false
-
-title:  'How to Create a NAS Server with a Raspberry Pi 4'
-date: '2024-10-17T16:48:44+03:00'
+title: How to Create a NAS Server with a Raspberry Pi 4
+linkTitle: Create NAS Server
+translationKey: how-to-create-a-nas-server-with-a-raspberry-pi-4
+weight: 10
+description: In this detailed guide, we’ll walk you through the process of setting up a NAS server using a Raspberry Pi 4.
+date: 2024-10-17T16:48:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /how-to-create-a-nas-server-with-a-raspberry-pi-4/
- 
-post_views_count:
-    - '1'
+url: /how-to-create-a-nas-server-with-a-raspberry-pi-4/
 featured_image: /images/raspberrypi.webp
 categories:
-    - 'Raspberry Pi'
+    - Raspberry Pi
 tags:
-    - 'raspberry pi'
+    - raspberry pi
 ---
 In today’s digital world, the need for centralized storage solutions is growing. Whether you want to store media files, backups, or documents, a Network Attached Storage (NAS) server offers a convenient way to access files across devices on a local network or even remotely. While commercial NAS devices are available, they can be expensive. Fortunately, with a Raspberry Pi 4, you can build your own budget-friendly NAS server.
 
@@ -23,6 +21,7 @@ In this detailed guide, we’ll walk you through the process of setting up a NAS
 What is a NAS Server?
 
 A Network Attached Storage (NAS) server is a specialized device connected to a network, providing centralized data storage and file sharing across devices. With a NAS, multiple users can access and share data seamlessly over the network. NAS servers are commonly used for:
+
 * **Media streaming** (movies, music, photos)
 
 * **Backup storage** for computers and mobile devices
@@ -35,6 +34,7 @@ Creating a NAS server with a Raspberry Pi 4 is cost-effective, energy-efficient,
 Why Raspberry Pi 4?
 
 The Raspberry Pi 4 is an excellent candidate for a NAS server due to its improved hardware compared to earlier models. Key features include:
+
 * **Quad-core 64-bit processor**: Provides better performance for handling network traffic and file management.
 
 * **Up to 8GB RAM**: Ample memory for managing multiple users and file operations.
@@ -47,6 +47,7 @@ The Raspberry Pi 4 also runs on low power, which is ideal for a NAS server that 
 What You Will Need
 
 Before starting, make sure you have the following components ready:
+
 * **Raspberry Pi 4** (4GB or 8GB model recommended for better performance)
 
 * **MicroSD card** (16GB or more) for the Raspberry Pi’s operating system
@@ -65,7 +66,9 @@ Before starting, make sure you have the following components ready:
 Now, let's proceed with the step-by-step process to create your NAS server.
 
 Step 1: Set Up Raspberry Pi 4
+
 #### 1.1 Install Raspberry Pi OS
+
 * Download the latest **Raspberry Pi OS** from the official Raspberry Pi website.
 
 * Use software like **Raspberry Pi Imager** or **Balena Etcher** to write the OS image to your MicroSD card.
@@ -75,34 +78,44 @@ Step 1: Set Up Raspberry Pi 4
 #### 1.2 Update and Upgrade
 
 Once Raspberry Pi OS is installed and running, it’s important to update your system. Open a terminal window and enter the following commands:
+
 ```bash
 sudo apt update
-sudo apt upgrade```
+sudo apt upgrade
+```
 
 This ensures that you have the latest software updates and security patches.
 
 Step 2: Install and Configure Samba for File Sharing
 
 We will use **Samba** to enable file sharing across different devices. Samba is a popular software suite that allows file and print sharing between Linux and Windows devices.
+
 #### 2.1 Install Samba
 
 To install Samba, run the following command:
+
 ```bash
 sudo apt install samba samba-common-bin
 ```
+
 #### 2.2 Create a Directory for File Storage
 
 Create a folder where you will store your shared files. For example, let’s create a folder named `shared` in the `/home/pi` directory:
+
 ```bash
 mkdir /home/pi/shared
 ```
+
 #### 2.3 Configure Samba
 
 Next, we need to edit Samba’s configuration file to specify the settings for file sharing. Open the configuration file using a text editor:
+
 ```bash
-sudo nano /etc/samba/smb.conf```
+sudo nano /etc/samba/smb.conf
+```
 
 Scroll to the bottom of the file and add the following configuration:
+
 ```bash
 [Shared]
    comment = Shared Folder
@@ -112,16 +125,21 @@ Scroll to the bottom of the file and add the following configuration:
    only guest = no
    create mask = 0777
    directory mask = 0777
-   public = no```
+   public = no
+```
 
 This configuration will create a shared folder that’s accessible over the network. The permissions allow read and write access to the folder.
+
 #### 2.4 Create Samba User
 
 To secure your NAS server, create a Samba user who can access the shared files. Use the following command to add a user (replace `pi` with your username if necessary):
+
 ```bash
-sudo smbpasswd -a pi```
+sudo smbpasswd -a pi
+```
 
 You’ll be prompted to set a password for the user. Once done, restart the Samba service to apply the changes:
+
 ```bash
 sudo systemctl restart smbd
 ```
@@ -129,50 +147,64 @@ sudo systemctl restart smbd
 Step 3: Mount External Hard Drive
 
 A NAS server typically relies on an external hard drive to store files. Let’s mount your external drive to the Raspberry Pi 4.
+
 #### 3.1 Identify the External Drive
 
 First, plug your external hard drive into one of the USB 3.0 ports on the Raspberry Pi 4. To find the drive’s name, run:
+
 ```bash
 sudo fdisk -l
 ```
 
 Look for your external hard drive in the list (it’s typically named `/dev/sda1` or similar).
+
 #### 3.2 Mount the Drive
 
 Create a mount point for the drive:
+
 ```bash
 sudo mkdir /mnt/external
 ```
 
 Mount the drive to this directory:
+
 ```bash
 sudo mount /dev/sda1 /mnt/external
 ```
 
 To make the mount permanent (i.e., mounted automatically at boot), you need to add the drive to the `/etc/fstab` file. Open the file:
+
 ```bash
 sudo nano /etc/fstab
 ```
 
 Add the following line at the bottom:
+
 ```bash
-/dev/sda1 /mnt/external auto defaults 0 0```
+/dev/sda1 /mnt/external auto defaults 0 0
+```
 
 Save and exit. Now, your external drive will be mounted automatically on startup.
 
 Step 4: Configure Access to NAS from Other Devices
+
 #### 4.1 Access NAS from Windows
 
 On a Windows computer, open **File Explorer** and type the Raspberry Pi’s IP address in the address bar, like so:
+
 ```bash
-\\192.168.X.XXX```
+\\192.168.X.XXX
+```
 
 You will be prompted to enter your Samba username and password. After authentication, you’ll have access to the shared folder.
+
 #### 4.2 Access NAS from macOS
 
 On a macOS device, open **Finder**, press `Cmd + K`, and enter the Raspberry Pi’s IP address like this:
+
 ```bash
-smb://192.168.X.XXX```
+smb://192.168.X.XXX
+```
 
 You’ll be asked for the Samba credentials, and once authenticated, the shared folder will be accessible.
 
@@ -183,6 +215,7 @@ If you want to access your NAS server remotely, outside your home or office netw
 Step 6: Optimize Your NAS Setup
 
 While the basic setup is complete, there are several optimizations and improvements you can make:
+
 * **Add more storage**: Connect additional external drives to expand your storage capacity. You can even set up a RAID configuration for redundancy.
 
 * **Automatic backups**: Use software like **rsync** to automate backups to your NAS.

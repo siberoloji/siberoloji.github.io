@@ -10,15 +10,11 @@ categories:
 draft: false
 linkTitle: Metasploit Framework
 simple_list: true
-author: "author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))"
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 tags:
   - msfconsole
-translationKey:: msfsection
+translationKey: msfsection
 ---
-
-## ToDo
-
-* [ ] Metasploit Framework translation to English
 
 ## Metasploit Framework
 

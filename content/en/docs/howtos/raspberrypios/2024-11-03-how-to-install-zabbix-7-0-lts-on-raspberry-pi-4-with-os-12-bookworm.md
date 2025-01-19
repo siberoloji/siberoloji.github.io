@@ -2,6 +2,7 @@
 draft: false
 title: How to Install Zabbix 7.0 on Raspberry Pi 4 OS 12 Bookworm
 translationKey: how-to-install-zabbix-7-0-lts-on-raspberry-pi-4-with-os-12-bookworm
+weight: 20
 date: 2024-11-03T00:47:03+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 description: This guide provides a step-by-step approach to installing Zabbix 7.0 LTS on Raspberry Pi 4 running OS 12 Bookworm
