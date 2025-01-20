@@ -2,7 +2,7 @@
 draft: true
 title: 
 linkTitle: 
-translationKey: ""
+translationKey: null
 weight: 0
 description: 
 date: 

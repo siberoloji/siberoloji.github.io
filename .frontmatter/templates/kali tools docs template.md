@@ -1,17 +1,17 @@
 ---
+draft: true
 title: 
 linkTitle: 
+translationKey: null
+weight: 0
 description: 
 date: 
-draft: true
+slug:
 tags:
   - kali tools
 categories:
   - Kali linux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-weight: 0
-keywords: ""
+keywords: 
 featured_image: /images/kalilinux2.webp
-url: 
-translationKey:: ""
 ---

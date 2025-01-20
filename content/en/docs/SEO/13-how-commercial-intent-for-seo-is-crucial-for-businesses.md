@@ -1,17 +1,19 @@
 ---
 draft: false
 title: How Commercial Intent for SEO is Crucial for Businesses?
+linkTitle: Commercial Intent
+weight: 13
 date: 2024-10-11T21:54:49+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /how-commercial-intent-for-seo-is-crucial-for-businesses/
-slim_seo:
-  - a:1:{s:11:"description";s:129:"This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.";}
 featured_image: /images/searchengineoptimization1.jpg
+description: This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.
 categories:
   - Search Engine Optimisation
 tags:
   - seo
 ---
+
 Understanding the importance of commercial intent for SEO is crucial for businesses aiming to optimize their online presence and drive conversions. Commercial intent keywords are those search terms that indicate a user is in the consideration phase of their buying journey, often looking for specific products or services. This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.
 
 ## What is Commercial Intent?

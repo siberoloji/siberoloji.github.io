@@ -1,10 +1,12 @@
 ---
+draft: true
 title: ""
 linkTitle: ""
+translationKey: ""
+weight: 0
 description: ""
+slug: ""
 date: 
-draft: true
-toc: true
 keywords: ""
 tags: 
   - blog publishing
@@ -17,6 +19,4 @@ authors:
       link: https://github.com/siberoloji
       image: https://github.com/siberoloji.png
 featured_image: /images/alice-in-front-of-computer.webp
-url: ""
-translationKey:: ""
 ---

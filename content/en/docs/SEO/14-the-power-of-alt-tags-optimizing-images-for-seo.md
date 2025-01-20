@@ -1,11 +1,12 @@
 ---
 draft: false
 title: "The Power of Alt Tags: Optimizing Images for SEO"
+linkTitle: Alt Tags
+weight: 14
 date: 2024-10-11T22:09:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-power-of-alt-tags-optimizing-images-for-seo/
-slim_seo:
-  - a:1:{s:11:"description";s:129:"we will delve into the importance of alt tags, provide practical tips to help you optimize your images for SEO and accessibility.";}
+description: In this comprehensive guide, we will delve into the importance of alt tags, explore best practices for writing effective alt text, and provide practical tips to help you optimize your images for SEO and accessibility.
 featured_image: /images/searchengineoptimization1.jpg
 categories:
   - Search Engine Optimisation

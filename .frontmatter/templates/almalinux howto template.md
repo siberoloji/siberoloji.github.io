@@ -1,11 +1,12 @@
 ---
+draft: true
 title: 
 linkTitle: 
+translationKey: 
+weight: 0
 description: 
 date: 
-weight: 0
 slug: 
-draft: true
 tags:
   - AlmaLinux
 categories:
@@ -15,5 +16,4 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
-translationKey::  ""
 ---

@@ -1,11 +1,12 @@
 ---
+draft: true
 title: null
 linkTitle: null
+translationKey: null
+weight: 0
 description: null
 date: null
-weight: 0
 slug: null
-draft: true
 tags:
   - nmap
 categories:
@@ -15,5 +16,4 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - nmap
 featured_image: /images/kalilinux3.webp
-translationKey:: ""
 ---
