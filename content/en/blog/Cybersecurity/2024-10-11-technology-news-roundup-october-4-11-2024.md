@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Technology News Roundup (October 4-11, 2024)'
-date: '2024-10-11T17:24:59+03:00'
+title: Technology News Roundup (October 4-11, 2024)
+date: 2024-10-11T17:24:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /technology-news-roundup-october-4-11-2024/ 
-slim_seo:
-    - 'a:1:{s:11:"description";s:236:"the technology landscape has seen significant developments across various sectors, from artificial intelligence breakthroughs to cybersecurity incidents. Here’s a comprehensive roundup of the most impactful stories. October 4-11, 2024";}'
+url: /technology-news-roundup-october-4-11-2024/
 featured_image: /images/cybersecuritynews.webp
 categories:
     - News
 tags:
-    - 'it new'
-    - 'news roundup'
+    - it new
+    - news roundup
 ---
 
 

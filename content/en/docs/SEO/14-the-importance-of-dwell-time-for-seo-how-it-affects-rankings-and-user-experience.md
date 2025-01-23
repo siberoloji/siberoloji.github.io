@@ -11,7 +11,7 @@ categories:
   - Search Engine Optimisation
 tags:
   - seo
-description: In this blog post, we’ll explore what dwell time is, why it’s important for SEO, and how you can improve it to boost your website’s rankings and user experience.
+description: We will explore what dwell time is, why it’s important for SEO, and how you can improve it to boost your website’s rankings and user experience.
 ---
 In the competitive world of Search Engine Optimization (SEO), there are numerous factors that determine your website's ranking on search engine results pages (SERPs). While keywords, backlinks, and technical SEO often receive much of the attention, **user engagement metrics**—such as dwell time—are just as important. Dwell time is a lesser-known yet critical factor that can significantly impact your site’s performance in search rankings.
 

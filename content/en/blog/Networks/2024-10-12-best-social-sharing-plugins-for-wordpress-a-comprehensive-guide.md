@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Best Social Sharing Plugins for WordPress: A Comprehensive Guide'
-date: '2024-10-12T22:09:22+03:00'
+title: "Best Social Sharing Plugins for WordPress: A Comprehensive Guide"
+date: 2024-10-12T22:09:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /best-social-sharing-plugins-for-wordpress-a-comprehensive-guide/ 
-slim_seo:
-    - 'a:1:{s:5:"title";s:24:"wordpress social sharing";}'
+url: /best-social-sharing-plugins-for-wordpress-a-comprehensive-guide/
 featured_image: /images/wordpress.webp
 categories:
     - Wordpress
 tags:
-    - 'how-to guides'
-    - 'social sharing plugins'
+    - how-to guides
+    - social sharing plugins
     - wordpress
 ---
 **Introduction**
