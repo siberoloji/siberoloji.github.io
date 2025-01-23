@@ -1,6 +1,10 @@
 ---
 draft: false
 title: What is On-Page Optimization?
+linkTitle: On-Page Optimization
+translationKey: what-is-on-page-optimization
+weight: 21
+description: In this article, we will explore on-page optimization, its importance, and effective strategies to implement.
 date: 2024-10-12T12:07:05+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /what-is-on-page-optimization/
@@ -15,6 +19,7 @@ On-page optimization, often referred to as on-page SEO, is a crucial aspect of s
 Understanding On-Page Optimization
 
 On-page optimization encompasses a variety of techniques aimed at optimizing both the content and HTML source code of a webpage. The goal is to make the page more relevant to specific keywords and improve user experience. Key elements include:
+
 * **Content Quality**: The primary focus of on-page SEO is to create high-quality, relevant content that meets user intent. This includes using keywords strategically while ensuring that the content remains engaging and informative.
 
 * **HTML Tags**: Elements like title tags, header tags (H1, H2, etc.), and meta descriptions play a significant role in conveying the topic of your page to search engines. Properly formatted HTML helps search engines understand the structure and relevance of your content.

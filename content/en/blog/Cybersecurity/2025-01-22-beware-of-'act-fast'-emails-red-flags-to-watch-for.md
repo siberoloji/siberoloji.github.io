@@ -15,7 +15,7 @@ tags:
 categories:
   - Cybersecurity
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-featured_image: /images/cyber5.jpg
+featured_image: /images/phishingattacks.webp
 ---
 
 In our fast-paced digital world, urgency has become a powerful tool in the hands of scammers and cybercriminals. The pressure to "act fast" or respond immediately to emails can cloud our judgment and lead to costly mistakes. Understanding why these urgent messages are dangerous and how to protect yourself is crucial in today's interconnected environment.
