@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /meta-descriptions-in-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - meta descriptions
   - seo

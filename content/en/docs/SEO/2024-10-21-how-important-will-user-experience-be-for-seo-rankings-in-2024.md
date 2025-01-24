@@ -7,7 +7,7 @@ description: in the coming years, UX is set to play an even more pivotal role in
 url: /how-important-will-user-experience-be-for-seo-rankings-in-2024/
 featured_image: /images/seo6.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

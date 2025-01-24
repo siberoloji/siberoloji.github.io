@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /use-image-compression-tools-for-better-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - image compression tools
   - seo

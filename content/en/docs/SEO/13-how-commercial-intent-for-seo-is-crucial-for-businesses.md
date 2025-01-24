@@ -9,7 +9,7 @@ url: /how-commercial-intent-for-seo-is-crucial-for-businesses/
 featured_image: /images/searchengineoptimization1.jpg
 description: This blog post will delve into what commercial intent is, why it matters for SEO, and how businesses can leverage it effectively.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

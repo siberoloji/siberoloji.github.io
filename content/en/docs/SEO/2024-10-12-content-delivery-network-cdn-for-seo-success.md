@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /content-delivery-network-cdn-for-seo-success/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

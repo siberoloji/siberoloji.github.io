@@ -7,7 +7,7 @@ description: This blog post explores how AI assists in analyzing user behavior p
 url: /ai-to-help-in-analyzing-user-behavior-for-seo/
 featured_image: /images/artificialintelligence5.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - ai
   - seo

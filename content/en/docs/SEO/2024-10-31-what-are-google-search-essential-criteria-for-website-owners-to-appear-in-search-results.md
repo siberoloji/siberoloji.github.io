@@ -1,19 +1,16 @@
 ---
 draft: false
-
-title:  'What are Google Search Essential Criteria for Website Owners to Appear in Search Results'
-date: '2024-10-31T11:39:04+03:00'
+title: What are Google Search Essential Criteria for Website Owners to Appear in Search Results
+date: 2024-10-31T11:39:04+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This guide covers Google’s essential criteria for website owners, helping you navigate the key factors that influence your site’s visibility in search results.' 
- 
-url:  /what-are-google-search-essential-criteria-for-website-owners-to-appear-in-search-results/
+description: This guide covers Google’s essential criteria for website owners, helping you navigate the key factors that influence your site’s visibility in search results.
+url: /what-are-google-search-essential-criteria-for-website-owners-to-appear-in-search-results/
 featured_image: /images/googlesearch.jpg
 categories:
-    - 'Search Engine Optimisation'
+  - SEO
 tags:
-    - 'google search'
-    - seo
+  - google search
+  - seo
 ---
 As the digital landscape grows ever more competitive, understanding how to make your website visible on Google is vital. Google uses various complex algorithms to decide which pages to display in response to search queries, and meeting these criteria can be a game changer for your online presence. This guide covers Google’s essential criteria for website owners, helping you navigate the key factors that influence your site’s visibility in search results.
 **1. Quality Content: The Core of SEO**

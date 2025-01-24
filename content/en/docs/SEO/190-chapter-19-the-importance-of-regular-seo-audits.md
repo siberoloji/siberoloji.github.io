@@ -5,10 +5,10 @@ date: 2024-10-10T22:10:57+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-19-the-importance-of-regular-seo-audits/
 weight: 190
-description: "This chapter explores the importance of SEO audits, key components of an audit, and how to effectively conduct one to enhance your online presence."
+description: This chapter explores the importance of SEO audits, key components of an audit, and how to effectively conduct one to enhance your online presence.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

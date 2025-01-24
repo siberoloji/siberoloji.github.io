@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /writing-unique-product-descriptions-for-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
   - unique product descriptions

@@ -9,7 +9,7 @@ url: /the-power-of-alt-tags-optimizing-images-for-seo/
 description: In this comprehensive guide, we will delve into the importance of alt tags, explore best practices for writing effective alt text, and provide practical tips to help you optimize your images for SEO and accessibility.
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - alt tags
   - seo

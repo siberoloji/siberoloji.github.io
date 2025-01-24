@@ -10,7 +10,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /what-is-on-page-optimization/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

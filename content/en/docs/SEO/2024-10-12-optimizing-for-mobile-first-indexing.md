@@ -8,7 +8,7 @@ slim_seo:
   - a:1:{s:11:"description";s:112:"what exactly is mobile-first indexing? This blog post will delve into the details, explore what it means for SEO";}
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

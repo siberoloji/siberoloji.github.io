@@ -1,16 +1,13 @@
 ---
 draft: false
-
-title:  'Yoast SEO vs All in One SEO Pack: A Comparison for WordPress Users'
-date: '2024-10-27T20:58:02+03:00'
+title: "Yoast SEO vs All in One SEO Pack: A Comparison for WordPress Users"
+date: 2024-10-27T20:58:02+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Yoast SEO vs All in One SEO Pack. Both have earned their reputation as powerful tools for improving website visibility, but which one is right for your needs?' 
- 
-url:  /yoast-seo-vs-all-in-one-seo-pack-a-comparison-for-wordpress-users/
+description: Yoast SEO vs All in One SEO Pack. Both have earned their reputation as powerful tools for improving website visibility, but which one is right for your needs?
+url: /yoast-seo-vs-all-in-one-seo-pack-a-comparison-for-wordpress-users/
 featured_image: /images/seo5.webp
 categories:
-    - 'Search Engine Optimisation'
+  - SEO
 ---
 When it comes to optimizing your WordPress website for search engines, two plugins consistently stand out as industry leaders: Yoast SEO vs All in One SEO Pack. Both have earned their reputation as powerful tools for improving website visibility, but which one is right for your needs? Let's dive into a detailed comparison to help you make an informed decision.
 

@@ -7,7 +7,7 @@ description: the manual process of identifying, vetting, and acquiring high-qual
 url: /how-does-ai-assist-in-link-building-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

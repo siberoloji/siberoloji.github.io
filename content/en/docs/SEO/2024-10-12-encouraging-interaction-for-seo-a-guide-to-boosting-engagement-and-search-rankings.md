@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /encouraging-interaction-for-seo-a-guide-to-boosting-engagement-and-search-rankings/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

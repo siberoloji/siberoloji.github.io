@@ -7,7 +7,7 @@ description: One of the most exciting possibilities emerging from this intersect
 url: /can-ai-tools-predict-future-trends-in-content-creation/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - ai
   - seo

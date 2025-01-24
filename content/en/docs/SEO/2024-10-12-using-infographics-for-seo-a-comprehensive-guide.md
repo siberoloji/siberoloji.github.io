@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /using-infographics-for-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - Infographics
   - seo

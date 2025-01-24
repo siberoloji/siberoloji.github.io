@@ -1,18 +1,18 @@
 ---
 draft: false
 title: HTML Programming Learning Topics for Beginners
+linkTitle: HTML Programming
+translationKey: html-programming-learning-topics
 date: 2024-10-24T17:03:41+03:00
 author: Tarık Korucuoğlu ([@taro544](https://github.com/taro544))
-weight: 10
-description: we’ll cover 100 HTML programming learning topics, breaking them down into subtopics to help you organize your study plan effectively.
+weight: 1
+description: We will cover 100 HTML programming learning topics, breaking them down into subtopics to help you organize your study plan effectively.
 url: /html-programming-learning-topics/
 featured_image: /images/html6-1.webp
 categories:
     - HTML
 tags:
     - html
-linkTitle: HTML Learning
-translationKey: html-learning
 ---
 
 HTML (Hypertext Markup Language) serves as the backbone of web development. It is essential for structuring and presenting content on the web, and it is one of the first languages beginner developers learn. Whether you're just starting your journey into web development or looking to deepen your knowledge, mastering HTML opens doors to more advanced languages like CSS and JavaScript. In this blog post, we’ll cover HTML programming learning topics , breaking them down into subtopics to help you organize your study plan effectively.

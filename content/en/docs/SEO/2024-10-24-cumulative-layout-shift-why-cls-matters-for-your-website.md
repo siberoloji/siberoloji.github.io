@@ -7,7 +7,7 @@ description: Cumulative Layout Shift (CLS) has emerged as a crucial Core Web Vit
 url: /cumulative-layout-shift-why-cls-matters-for-your-website/
 featured_image: /images/seo6.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

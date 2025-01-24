@@ -7,7 +7,7 @@ description: This blog post will delve into the benefits of using AI content cre
 url: /ai-content-creation-a-game-changer-for-seo/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

@@ -10,7 +10,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /understanding-crawlability-a-key-component-of-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

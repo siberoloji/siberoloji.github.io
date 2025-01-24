@@ -9,7 +9,7 @@ url: /transactional-intent-the-key-to-driving-conversions-in-seo/
 featured_image: /images/Searchengine-optimization.webp
 description: In this comprehensive guide, we will delve into the importance of transactional intent for SEO, explore effective strategies for identifying and targeting transactional queries
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

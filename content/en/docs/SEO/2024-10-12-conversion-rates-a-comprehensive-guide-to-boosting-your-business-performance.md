@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /conversion-rates-a-comprehensive-guide-to-boosting-your-business-performance/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

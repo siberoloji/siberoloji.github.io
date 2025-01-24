@@ -5,10 +5,10 @@ date: 2024-10-10T22:15:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-20-seo-trends-and-the-future-of-search/
 weight: 200
-description: "The world of search engine optimization (SEO) is in constant flux. Just when we think we’ve mastered the game, new trends and technologies shift the landscape."
+description: The world of search engine optimization (SEO) is in constant flux. Just when we think we’ve mastered the game, new trends and technologies shift the landscape.
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

@@ -8,7 +8,7 @@ weight: 140
 description: Learn the importance of local SEO, how it works, and effective strategies to optimize your website and online presence for local searches.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

@@ -10,7 +10,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /why-google-my-business-profile-is-important-for-seo/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

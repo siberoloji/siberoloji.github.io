@@ -8,7 +8,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-importance-of-technical-seo-how-it-impacts-your-websites-success/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: It is essential to understand what technical SEO is, why it's important, and how to implement it to improve your website's performance.

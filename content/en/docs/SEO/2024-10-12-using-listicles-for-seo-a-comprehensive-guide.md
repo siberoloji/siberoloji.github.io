@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /using-listicles-for-seo-a-comprehensive-guide/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - listicles
   - seo

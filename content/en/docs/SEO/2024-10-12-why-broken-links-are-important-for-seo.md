@@ -8,7 +8,7 @@ slim_seo:
   - a:1:{s:11:"description";s:135:"we’ll explore why broken links matter for SEO, how they impact user experience, and what steps you can take to identify and fix them.";}
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

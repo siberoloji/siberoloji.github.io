@@ -7,7 +7,7 @@ url: /chapter-16-social-signals-and-seo/
 weight: 160
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: This chapter will delve into the role of social signals in SEO, how they impact search rankings, and effective strategies to leverage social media to boost your website’s visibility and authority.

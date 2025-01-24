@@ -10,7 +10,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /nap-consistency-the-cornerstone-of-local-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - nap consistency
   - seo

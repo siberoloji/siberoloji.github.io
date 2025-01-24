@@ -9,7 +9,7 @@ featured_image: /images/searchengineoptimization2.jpg
 weight: 1
 pinned: true
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: This blog post will provide a comprehensive guide to SEO, broken down into 20 critical chapters.

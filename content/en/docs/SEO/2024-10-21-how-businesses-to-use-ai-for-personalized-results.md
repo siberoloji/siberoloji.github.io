@@ -7,7 +7,7 @@ description: As search engines continue to prioritize relevance and user satisfa
 url: /how-businesses-to-use-ai-for-personalized-results/
 featured_image: /images/seo6.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - ai
   - seo

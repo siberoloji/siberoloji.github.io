@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /what-is-schema-markup-a-comprehensive-guide/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - schema markup
   - seo

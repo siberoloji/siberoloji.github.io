@@ -10,7 +10,7 @@ url: /chapter-2-why-seo-matters-for-your-website/
 description: In this chapter, we will explore why SEO is so important for your website and how it can significantly impact your online presence.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

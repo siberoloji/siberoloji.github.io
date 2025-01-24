@@ -9,7 +9,7 @@ url: /the-importance-of-how-to-guides-for-seo-boosting-your-online-visibility-an
 description: This blog post will explore the importance of how-to guides for SEO, discussing their benefits, best practices for creation, and how they fit into a comprehensive digital marketing strategy.
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - how-to guides
   - seo

@@ -8,7 +8,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-importance-of-dwell-time-for-seo-how-it-affects-rankings-and-user-experience/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: We will explore what dwell time is, why it’s important for SEO, and how you can improve it to boost your website’s rankings and user experience.

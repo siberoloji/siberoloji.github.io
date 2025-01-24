@@ -10,7 +10,7 @@ url: /the-importance-of-short-tail-keywords-foundational-elements-of-seo-success
 featured_image: /images/searchengineoptimization1.jpg
 description: we will delve into the significance of short-tail keywords, exploring their benefits, challenges, and how they fit into a comprehensive SEO approach.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

@@ -9,7 +9,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /why-organic-traffic-is-important-for-seo/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: We will dive deep into why organic traffic is important for SEO, how it affects your website’s success, and what strategies can help you increase it.

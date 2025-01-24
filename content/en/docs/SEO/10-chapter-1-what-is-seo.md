@@ -9,7 +9,7 @@ weight: 10
 url: /chapter-1-what-is-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: At its core, SEO is about making your website easily understandable and accessible to both users and search engines.

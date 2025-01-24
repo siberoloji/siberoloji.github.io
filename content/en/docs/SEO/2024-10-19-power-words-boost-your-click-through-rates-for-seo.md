@@ -7,7 +7,7 @@ description: We’ll explore how to use power words in titles for SEO, offer tip
 url: /power-words-boost-your-click-through-rates-for-seo/
 featured_image: /images/seo5.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

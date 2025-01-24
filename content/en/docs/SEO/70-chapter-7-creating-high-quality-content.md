@@ -5,10 +5,10 @@ date: 2024-10-10T21:41:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-7-creating-high-quality-content/
 weight: 70
-description: "Creating high-quality content is essential for improving your website's SEO performance. Learn why quality content matters and how to craft compelling content that resonates with your audience."
+description: Creating high-quality content is essential for improving your website's SEO performance. Learn why quality content matters and how to craft compelling content that resonates with your audience.
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

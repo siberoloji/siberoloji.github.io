@@ -9,7 +9,7 @@ post_views_count:
   - "0"
 featured_image: /images/seo5.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

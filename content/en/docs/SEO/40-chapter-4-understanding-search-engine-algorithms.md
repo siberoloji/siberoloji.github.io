@@ -10,7 +10,7 @@ url: /chapter-4-understanding-search-engine-algorithms/
 featured_image: /images/searchengineoptimization1.jpg
 description: We will delve into the intricacies of search engine algorithms, focusing primarily on Google's algorithm as it's the most widely used search engine worldwide.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

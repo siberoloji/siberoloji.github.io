@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /keyword-optimization-for-seo-a-comprehensive-guide-to-boosting-your-search-rankings/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

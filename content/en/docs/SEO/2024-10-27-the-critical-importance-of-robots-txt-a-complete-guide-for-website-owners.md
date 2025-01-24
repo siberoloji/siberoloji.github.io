@@ -7,7 +7,7 @@ description: The robots.txt file might seem like a simple text document, but it 
 url: /the-critical-importance-of-robots-txt-a-complete-guide-for-website-owners/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

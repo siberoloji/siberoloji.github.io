@@ -7,7 +7,7 @@ description: "Using AI for content creation in SEO offers numerous benefits that
 url: /benefits-of-using-ai-for-content-creation-in-seo/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - ai
   - seo

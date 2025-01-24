@@ -7,7 +7,7 @@ description: This blog post will explore how AI is revolutionizing content creat
 url: /ai-elevating-content-creation-quality-and-relevance/
 featured_image: /images/searchengineoptimization4.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - ai
   - seo

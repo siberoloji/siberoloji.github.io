@@ -10,7 +10,7 @@ url: /the-crucial-role-of-on-page-seo-in-boosting-your-websites-visibility/
 weight: 11
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

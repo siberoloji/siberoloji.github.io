@@ -7,7 +7,7 @@ description: With the increasing importance of location-based queries, local SEO
 url: /key-elements-of-local-seo-that-will-remain-relevant-in-2024/
 featured_image: /images/seo5.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - local seo
   - seo

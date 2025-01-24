@@ -7,7 +7,7 @@ description: More users are opting for hands-free, voice-activated search querie
 url: /what-role-will-voice-search-play-in-future-seo/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

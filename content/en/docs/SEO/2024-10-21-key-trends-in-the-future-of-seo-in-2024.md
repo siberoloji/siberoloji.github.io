@@ -7,7 +7,7 @@ description: The future of SEO is poised to undergo significant transformations 
 url: /key-trends-in-the-future-of-seo-in-2024/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

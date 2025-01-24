@@ -1,19 +1,16 @@
 ---
 draft: false
-
-title:  'What is Google Tag Manager, and How to Use It?'
-date: '2024-10-31T12:05:30+03:00'
+title: What is Google Tag Manager, and How to Use It?
+date: 2024-10-31T12:05:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This guide will explain what Google Tag Manager is, why it’s useful, and provide a step-by-step walkthrough on how to get started with it.' 
- 
-url:  /what-is-google-tag-manager-and-how-to-use-it/
+description: This guide will explain what Google Tag Manager is, why it’s useful, and provide a step-by-step walkthrough on how to get started with it.
+url: /what-is-google-tag-manager-and-how-to-use-it/
 featured_image: /images/googletagmanager.webp
 categories:
-    - 'Search Engine Optimisation'
+  - SEO
 tags:
-    - 'google tag manager'
-    - seo
+  - google tag manager
+  - seo
 ---
 In the fast-paced world of digital marketing, understanding tools that help track website performance is essential for website owners, marketers, and developers. One such powerful tool is **Google Tag Manager (GTM)**. It allows you to efficiently manage and deploy tracking tags without needing to write code directly on your site. This guide will explain what Google Tag Manager is, why it’s useful, and provide a step-by-step walkthrough on how to get started with it.
 **1. What is Google Tag Manager?**

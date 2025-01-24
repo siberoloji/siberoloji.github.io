@@ -7,7 +7,7 @@ description: Let's examine both approaches for categories in WordPress and their
 url: /single-vs-multiple-categories-in-wordpress-for-seo-performance/
 featured_image: /images/wordpress.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
   - wordpress

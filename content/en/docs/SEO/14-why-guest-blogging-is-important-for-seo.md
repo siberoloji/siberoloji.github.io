@@ -9,7 +9,7 @@ url: /why-guest-blogging-is-important-for-seo/
 featured_image: /images/searchengineoptimization2.jpg
 description: In this comprehensive guide, we will delve into the multifaceted benefits of guest blogging for SEO, exploring how it can improve website authority, drive traffic, and foster community engagement.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - guest blogging
   - seo

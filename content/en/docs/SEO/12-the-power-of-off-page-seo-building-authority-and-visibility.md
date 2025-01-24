@@ -9,7 +9,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-power-of-off-page-seo-building-authority-and-visibility/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: In this comprehensive guide, we will delve into the importance of off-page SEO, explore effective strategies, and provide practical tips to help you elevate your website's online presence.

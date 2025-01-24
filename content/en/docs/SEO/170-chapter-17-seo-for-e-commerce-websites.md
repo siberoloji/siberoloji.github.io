@@ -8,7 +8,7 @@ weight: 170
 description: This chapter explores the key components of e-commerce SEO, offering practical tips to enhance your online store's visibility and improve its performance on search engine results pages (SERPs).
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

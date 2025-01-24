@@ -7,7 +7,7 @@ description: One of the key areas where AI-driven tools will have a significant 
 url: /how-will-ai-driven-tools-change-keyword-optimization/
 featured_image: /images/searcengineoptimization3.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

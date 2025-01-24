@@ -10,7 +10,7 @@ weight: 50
 description: This chapter delves into the essential aspects of keyword research, including its importance, tools to use, and a step-by-step guide to conducting effective keyword research.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

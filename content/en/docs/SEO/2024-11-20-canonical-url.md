@@ -9,7 +9,7 @@ tags:
   - canonical url
   - seo
 categories:
-  - Search Engine Optimization
+  - SEO
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: /images/Searchengine-optimization.webp
 url: canonical-url-understanding-seo-powerhouse

@@ -8,7 +8,7 @@ slim_seo:
   - a:1:{s:11:"description";s:127:"The rise of voice search is closely tied to advancements in natural language processing (NLP) and artificial intelligence (AI).";}
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

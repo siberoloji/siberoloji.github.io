@@ -7,7 +7,7 @@ url: /chapter-15-using-google-analytics-and-search-console/
 weight: 150
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: This chapter will explore how to effectively use these tools to monitor your site’s performance and identify opportunities for improvement.

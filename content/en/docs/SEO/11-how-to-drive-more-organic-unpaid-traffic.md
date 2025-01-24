@@ -10,7 +10,7 @@ description: Learn how to drive more organic (unpaid) traffic to your website us
 weight: 11
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - organic traffic
   - seo

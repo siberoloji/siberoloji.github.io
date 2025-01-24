@@ -9,7 +9,7 @@ url: /what-is-google-keyword-planner/
 description: In this blog post, we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

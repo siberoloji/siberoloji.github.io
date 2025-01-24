@@ -6,7 +6,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /statista-a-comprehensive-guide-to-the-worlds-leading-statistics-portal/
 featured_image: /images/searchengineoptimization2.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 description: This comprehensive guide will delve into what Statista is, its features, benefits, and how it can be leveraged effectively for research and business insights.

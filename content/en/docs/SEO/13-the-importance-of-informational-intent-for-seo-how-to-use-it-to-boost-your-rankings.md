@@ -7,9 +7,9 @@ date: 2024-10-11T21:43:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /the-importance-of-informational-intent-for-seo-how-to-use-it-to-boost-your-rankings/
 featured_image: /images/Searchengine-optimization.webp
-description: In this blog post, we’ll dive into what informational intent is, why it’s important for SEO, and how you can optimize your content to target this intent effectively. 
+description: In this blog post, we’ll dive into what informational intent is, why it’s important for SEO, and how you can optimize your content to target this intent effectively.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - informational intent
   - seo

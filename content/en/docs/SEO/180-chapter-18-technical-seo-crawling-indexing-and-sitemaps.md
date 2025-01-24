@@ -5,10 +5,10 @@ date: 2024-10-10T22:08:53+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-18-technical-seo-crawling-indexing-and-sitemaps/
 weight: 180
-description: "This chapter delves into the fundamentals of technical SEO, focusing on crawling, indexing, and the importance of sitemaps in optimizing your website for search engines."
+description: This chapter delves into the fundamentals of technical SEO, focusing on crawling, indexing, and the importance of sitemaps in optimizing your website for search engines.
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

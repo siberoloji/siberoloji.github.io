@@ -7,7 +7,7 @@ description: This comprehensive guide will explore how businesses can effectivel
 url: /leveraging-video-content-for-seo-success/
 featured_image: /images/searchengineoptimization1.jpg
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

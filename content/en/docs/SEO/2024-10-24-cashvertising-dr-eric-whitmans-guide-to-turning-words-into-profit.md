@@ -7,7 +7,7 @@ description: Whether you're a seasoned marketer or a budding entrepreneur lookin
 url: /cashvertising-dr-eric-whitmans-guide-to-turning-words-into-profit/
 featured_image: /images/onlinemarketing.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

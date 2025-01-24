@@ -7,7 +7,7 @@ description: 'Here are the key ways "How will AI impact SEO strategies":'
 url: /how-will-ai-impact-seo-strategies-in-the-next-few-years/
 featured_image: /images/Searchengine-optimization.webp
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

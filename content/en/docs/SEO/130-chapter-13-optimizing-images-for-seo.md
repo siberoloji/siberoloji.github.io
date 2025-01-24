@@ -8,7 +8,7 @@ featured_image: /images/searchengineoptimization1.jpg
 weight: 130
 description: In this chapter, we will delve into the importance of image optimization for SEO, explore best practices, and provide actionable tips to ensure your images work in harmony with your overall SEO strategy.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---

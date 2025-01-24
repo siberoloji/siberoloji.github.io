@@ -8,7 +8,7 @@ featured_image: /images/searchengineoptimization1.jpg
 weight: 110
 description: In this chapter, we will delve into the importance of page load speed, its impact on SEO, and effective techniques to optimize speed for better performance.
 categories:
-  - Search Engine Optimisation
+  - SEO
 tags:
   - seo
 ---
