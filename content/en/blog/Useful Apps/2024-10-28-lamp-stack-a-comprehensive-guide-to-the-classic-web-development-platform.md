@@ -150,20 +150,26 @@ Basic Installation Steps
 ```bash
 sudo apt update
 sudo apt upgrade```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Install Apache**
+
+
+
+* **Install Apache**
 
 ```bash
 sudo apt install apache2```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Install MySQL**
+
+
+
+* **Install MySQL**
 
 ```bash
 sudo apt install mysql-server
 sudo mysql_secure_installation
 ```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Install PHP**
+
+
+
+* **Install PHP**
 
 ```bash
 sudo apt install php libapache2-mod-php php-mysql

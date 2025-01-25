@@ -47,15 +47,19 @@ Setting up Grafana is a straightforward process, especially for users familiar w
 <pre class="wp-block-code">`   sudo apt-get update
    sudo apt-get install -y software-properties-common
    sudo apt-add-repository "deb https://packages.grafana.com/oss/deb stable main"```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Install Grafana**:
+
+
+
+* **Install Grafana**:
 
 <!-- wp:code -->
 <pre class="wp-block-code">`   sudo apt-get update
    sudo apt-get install grafana
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Start and Enable Grafana**:
+
+
+
+* **Start and Enable Grafana**:
 
 <!-- wp:code -->
 <pre class="wp-block-code">`   sudo systemctl start grafana-server

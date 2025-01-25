@@ -105,8 +105,10 @@ The program then performs several bitwise operations on these integers and print
 cout << (i &amp; j) << endl; // Expected output: 6```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Bitwise OR (`|`)**: This operation compares each bit of `i` and `j` and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of `i` or `j` is 1. The result of `i | j` is 31.
+
+
+
+* **Bitwise OR (`|`)**: This operation compares each bit of `i` and `j` and returns a new integer where each bit is set to 1 if at least one of the corresponding bits of `i` or `j` is 1. The result of `i | j` is 31.
 
 
 
@@ -114,8 +116,10 @@ cout << (i &amp; j) << endl; // Expected output: 6```
 cout << (i | j) << endl; // Expected output: 31```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Bitwise XOR (`^`)**: This operation compares each bit of `i` and `j` and returns a new integer where each bit is set to 1 if only one of the corresponding bits of `i` or `j` is 1. The result of `i ^ j` is 25.
+
+
+
+* **Bitwise XOR (`^`)**: This operation compares each bit of `i` and `j` and returns a new integer where each bit is set to 1 if only one of the corresponding bits of `i` or `j` is 1. The result of `i ^ j` is 25.
 
 
 
@@ -123,8 +127,10 @@ cout << (i | j) << endl; // Expected output: 31```
 cout << (i ^ j) << endl; // Expected output: 25```
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Bitwise NOT (`~`)**: This operation inverts all the bits of `i`, turning 1s into 0s and vice versa. The result of `~i` is -16.
+
+
+
+* **Bitwise NOT (`~`)**: This operation inverts all the bits of `i`, turning 1s into 0s and vice versa. The result of `~i` is -16.
 
 
 
@@ -132,8 +138,10 @@ cout << (i ^ j) << endl; // Expected output: 25```
 cout << (~i) << endl; // Expected output: -16```
 
 
-<!-- wp:list {"ordered":true,"start":5} -->
-<ol start="5" class="wp-block-list">* **Left Shift (`<<`)**: This operation shifts the bits of `i` to the left by 2 positions, effectively multiplying `i` by 2^2 (or 4). The result of `i << 2` is 60.
+
+
+
+* **Left Shift (`<<`)**: This operation shifts the bits of `i` to the left by 2 positions, effectively multiplying `i` by 2^2 (or 4). The result of `i << 2` is 60.
 
 
 
@@ -141,8 +149,10 @@ cout << (~i) << endl; // Expected output: -16```
 cout << (i << 2) << endl; // Expected output: 60```
 
 
-<!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **Right Shift (`>>`)**: This operation shifts the bits of `j` to the right by 2 positions, effectively dividing `j` by 2^2 (or 4). The result of `j >> 2` is 5.
+
+
+
+* **Right Shift (`>>`)**: This operation shifts the bits of `j` to the right by 2 positions, effectively dividing `j` by 2^2 (or 4). The result of `j >> 2` is 5.
 
 
 

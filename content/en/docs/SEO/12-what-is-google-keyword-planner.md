@@ -2,6 +2,7 @@
 draft: false
 title: What is Google Keyword Planner?
 linkTitle: Google Keyword Planner
+translationKey: the-importance-of-technical-seo-how-it-impacts-your-websites-success
 weight: 12
 date: 2024-10-11T21:34:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

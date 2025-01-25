@@ -94,8 +94,10 @@ In the command line:
 Replace `username` with your MySQL username and enter your password when prompted.
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Select your WordPress database:
+
+
+
+* Select your WordPress database:
 
 
 
@@ -104,8 +106,10 @@ Replace `username` with your MySQL username and enter your password when prompte
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Run the SQL query:
+
+
+
+* Run the SQL query:
 
 
 

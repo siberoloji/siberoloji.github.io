@@ -2,6 +2,7 @@
 draft: false
 title: Why Guest Blogging is Important for SEO?
 linkTitle: Guest Blogging
+translationKey: the-importance-of-informational-intent-for-seo-how-to-use-it-to-boost-your-rankings
 weight: 14
 date: 2024-10-11T22:13:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

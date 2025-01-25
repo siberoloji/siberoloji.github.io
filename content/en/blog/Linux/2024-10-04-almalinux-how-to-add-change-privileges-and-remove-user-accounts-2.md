@@ -73,18 +73,24 @@ The `usermod` command is versatile for modifying user accounts. Here are some co
 For example, to add "johndoe" to the "wheel" group (which typically grants sudo privileges):
 ```bash
    sudo usermod -aG wheel johndoe```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Changing a user's primary group**:
+
+
+
+* **Changing a user's primary group**:
 
 ```bash
    sudo usermod -g newgroup username```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Changing a user's home directory**:
+
+
+
+* **Changing a user's home directory**:
 
 ```bash
    sudo usermod -d /new/home/directory username```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Changing a user's shell**:
+
+
+
+* **Changing a user's shell**:
 
 ```bash
    sudo usermod -s /bin/new-shell username```
@@ -96,8 +102,10 @@ To give a user sudo privileges, you can add them to the sudoers file:
 
 ```bash
    sudo visudo```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Add the following line to grant full sudo access:
+
+
+
+* Add the following line to grant full sudo access:
 
 ```bash
    johndoe ALL=(ALL) ALl
@@ -107,8 +115,10 @@ Or, for passwordless sudo:
 ```bash
    johndoe ALL=(ALL) NOPASSWD: ALl
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Save and exit the file.
+
+
+
+* Save and exit the file.
 Managing Group Memberships
 
 You can also manage privileges by adding or removing users from specific groups:

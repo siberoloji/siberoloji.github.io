@@ -2,6 +2,7 @@
 draft: false
 title: "The Importance of Informational Intent for SEO: How to Use it to Boost Your Rankings"
 linkTitle: Informational Intent
+translationKey: the-importance-of-informational-intent-for-seo-how-to-use-it-to-boost-your-rankings
 weight: 13
 date: 2024-10-11T21:43:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

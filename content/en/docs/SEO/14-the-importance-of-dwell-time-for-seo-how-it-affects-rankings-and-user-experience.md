@@ -2,6 +2,7 @@
 draft: false
 title: "The Importance of Dwell Time for SEO: How It Affects Rankings and User Experience"
 linkTitle: Dwell Time for SEO
+translationKey: the-importance-of-dwell-time-for-seo-how-it-affects-rankings-and-user-experience
 weight: 14
 date: 2024-10-11T22:00:15+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

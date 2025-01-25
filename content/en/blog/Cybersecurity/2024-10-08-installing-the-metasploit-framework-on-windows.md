@@ -103,8 +103,10 @@ Step 5: Initial Setup of Metasploit Framework
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Launch Metasploit by typing:
+
+
+
+* Launch Metasploit by typing:
 
 
 
@@ -112,8 +114,10 @@ Step 5: Initial Setup of Metasploit Framework
    msfconsole.bat```
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* Upon first launch, you will be prompted to set up a new database:
+
+
+
+* Upon first launch, you will be prompted to set up a new database:
 
 
 
@@ -121,8 +125,10 @@ Step 5: Initial Setup of Metasploit Framework
 
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* Wait for msfconsole to load completely; this may take a few moments.
+
+
+
+* Wait for msfconsole to load completely; this may take a few moments.
 ## Post-Installation Configuration
 
 
@@ -161,8 +167,10 @@ Metasploit uses a database to store information about vulnerabilities and exploi
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* If it shows "connected," your database setup is successful.
+
+
+
+* If it shows "connected," your database setup is successful.
 Update Metasploit Framework
 
 
@@ -178,8 +186,10 @@ To ensure you have the latest exploits and features:
    msfupdate```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* This command will check for updates and install them if available.
+
+
+
+* This command will check for updates and install them if available.
 Re-enable Security Features
 
 

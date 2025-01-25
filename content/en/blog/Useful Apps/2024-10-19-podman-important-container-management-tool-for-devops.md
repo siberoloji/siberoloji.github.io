@@ -81,16 +81,20 @@ If you're interested in trying out Podman, here are the basic steps to get start
 ```
 
 For other distributions, consult the Podman documentation for specific installation instructions.
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Running a Container: Once installed, you can run a container using a command similar to Docker:
+
+
+
+* Running a Container: Once installed, you can run a container using a command similar to Docker:
 
 ```bash
    podman run -it --name mycontainer ubuntu bash
 ```
 
 This command will download the Ubuntu image if it's not already present and start an interactive bash session in the container.
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Managing Containers: Podman provides commands for managing containers that are very similar to Docker:
+
+
+
+* Managing Containers: Podman provides commands for managing containers that are very similar to Docker:
 
 * List running containers: `podman ps`
 
@@ -98,8 +102,10 @@ This command will download the Ubuntu image if it's not already present and star
 
 * Remove a container: `podman rm mycontainer`
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Working with Pods: To create a pod with Podman:
+
+
+
+* Working with Pods: To create a pod with Podman:
 
 ```bash
    podman pod create --name mypod

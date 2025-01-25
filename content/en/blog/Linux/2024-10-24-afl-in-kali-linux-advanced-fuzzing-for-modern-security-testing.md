@@ -51,14 +51,18 @@ Installing AFL++ in Kali Linux
 ```bash
 sudo apt update
 sudo apt upgrade```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Install AFL++:
+
+
+
+* Install AFL++:
 
 ```bash
 sudo apt install aflplusplus
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Install additional dependencies:
+
+
+
+* Install additional dependencies:
 
 ```bash
 sudo apt install clang llvm gcc make build-essential

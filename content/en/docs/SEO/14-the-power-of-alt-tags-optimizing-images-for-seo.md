@@ -2,6 +2,7 @@
 draft: false
 title: "The Power of Alt Tags: Optimizing Images for SEO"
 linkTitle: Alt Tags
+translationKey: the-power-of-alt-tags-optimizing-images-for-seo
 weight: 14
 date: 2024-10-11T22:09:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

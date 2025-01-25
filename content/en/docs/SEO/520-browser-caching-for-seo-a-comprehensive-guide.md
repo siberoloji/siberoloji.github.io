@@ -1,6 +1,10 @@
 ---
 draft: false
 title: "Browser Caching for SEO: A Comprehensive Guide"
+linkTitle: Browser Caching for SEO
+description: "This guide delves into what browser caching is, why it matters for SEO, and how to implement it effectively on your WordPress site."
+translationKey: "browser-caching-for-seo-a-comprehensive-guide"
+weight: 520
 date: 2024-10-12T15:46:12+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /browser-caching-for-seo-a-comprehensive-guide/

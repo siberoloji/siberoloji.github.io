@@ -130,8 +130,10 @@ Auto drafts are saved in the `wp_posts` table of your WordPress database. To del
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Click **Go** to execute the query.
+
+
+
+* Click **Go** to execute the query.
 This will remove all auto-draft posts from your database.
 
 
@@ -153,8 +155,10 @@ Revisions are also stored in the `wp_posts` table. To remove post revisions:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Click **Go**.
+
+
+
+* Click **Go**.
 This will delete all post revisions from your database.
 
 
@@ -174,8 +178,10 @@ To remove trashed posts:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Click **Go**.
+
+
+
+* Click **Go**.
 To remove trashed comments:
 
 
@@ -188,8 +194,10 @@ To remove trashed comments:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Click **Go**.
+
+
+
+* Click **Go**.
 
 
 
@@ -209,8 +217,10 @@ To remove spam and unapproved comments from your database:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* To delete unapproved comments, use this query:
+
+
+
+* To delete unapproved comments, use this query:
 
 
 
@@ -219,8 +229,10 @@ To remove spam and unapproved comments from your database:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Click **Go** for each query.
+
+
+
+* Click **Go** for each query.
 
 
 
@@ -240,8 +252,10 @@ Transients are stored in the `wp_options` table. To remove expired transients:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Click **Go**.
+
+
+
+* Click **Go**.
 This will remove expired transients from your database.
 
 
@@ -261,8 +275,10 @@ Orphaned metadata can accumulate over time. To clean up orphaned metadata:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* For orphaned comment metadata, run this query:
+
+
+
+* For orphaned comment metadata, run this query:
 
 
 
@@ -271,8 +287,10 @@ Orphaned metadata can accumulate over time. To clean up orphaned metadata:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Click **Go** for each query.
+
+
+
+* Click **Go** for each query.
 Best Practices for Database Maintenance
 
 
@@ -293,8 +311,10 @@ Best Practices for Database Maintenance
 This limits the number of revisions saved per post to three.
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Regular Cleanup**: Clean your WordPress database periodically to prevent it from becoming cluttered. Running regular cleanups ensures better performance and more efficient database management.
+
+
+
+* **Regular Cleanup**: Clean your WordPress database periodically to prevent it from becoming cluttered. Running regular cleanups ensures better performance and more efficient database management.
 Conclusion
 
 

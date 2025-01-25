@@ -113,8 +113,10 @@ For experienced Linux users, the `dd` command is a powerful way to write ISO fil
    sudo dd if=/path/to/almalinux9.iso of=/dev/sdX bs=4M status=progress &amp;&amp; sync```
 
 Replace `/path/to/almalinux9.iso` with the path to the downloaded ISO file, and `/dev/sdX` with the device path for your USB drive.
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Wait for the process to complete**: The `dd` command will take some time to complete, and there won't be much visual feedback. Once it finishes, you’ll see a message indicating the number of bytes written.
+
+
+
+* **Wait for the process to complete**: The `dd` command will take some time to complete, and there won't be much visual feedback. Once it finishes, you’ll see a message indicating the number of bytes written.
 
 * **Eject the USB drive**: Use the following command to safely eject the USB drive:
 

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: What is a Robots.txt File and Why is it Important for SEO?
-linkTitle: What is a Robots.txt File and Why is it Important for SEO?
+linkTitle: Robots.txt
 translationKey: what-is-a-robots-txt-file-and-why-is-it-important-for-seo
 description: Learn what a robots.txt file is, why it’s essential for SEO, and how to check and optimize your robots.txt file.
 weight: 31

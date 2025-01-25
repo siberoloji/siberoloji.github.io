@@ -2,6 +2,7 @@
 draft: false
 title: Understanding the Importance of Navigational Intent for SEO
 linkTitle: Navigational Intent
+translationKey: the-importance-of-navigational-intent-for-seo
 weight: 13
 date: 2024-10-11T21:46:33+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

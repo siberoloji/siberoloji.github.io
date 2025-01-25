@@ -1,6 +1,8 @@
 ---
 draft: false
 title: "Chapter 20: SEO Trends and the Future of Search"
+LinkTitle: SEO Trends and the Future of Search
+translationKey: seo-trends-and-the-future-of-search
 date: 2024-10-10T22:15:59+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-20-seo-trends-and-the-future-of-search/

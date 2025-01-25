@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Understanding Crawlability: A Key Component of SEO"
-linkTitle: "Understanding Crawlability: A Key Component of SEO"
+linkTitle: Crawlability
 translationKey: understanding-crawlability-a-key-component-of-seo
 weight: 31
 description: In this blog post, we will discuss the concept of Crawlability, its importance, and the steps you can take to enhance it on your WordPress site.

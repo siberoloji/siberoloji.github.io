@@ -2,6 +2,7 @@
 draft: false
 title: "Long-tail Keywords: Use It To Drive Your Targeted Traffic"
 linkTitle: Long-tail Keywords
+translationKey: long-tail-keywords-power-of-driving-targeted-traffic
 weight: 12
 description: We will delve into the importance of long-tail keywords, explore effective strategies for identifying and targeting them.
 date: 2024-10-11T21:30:15+03:00

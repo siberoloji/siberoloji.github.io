@@ -197,8 +197,10 @@ Beyond clearing autosave drafts, here are some additional tips to keep your Word
 This will limit the number of revisions stored for each post to 5.
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Delete Unused Plugins and Themes:** Unused plugins and themes can create additional database entries, which may slow down your website. Regularly remove any plugins or themes that you no longer use.
+
+
+
+* **Delete Unused Plugins and Themes:** Unused plugins and themes can create additional database entries, which may slow down your website. Regularly remove any plugins or themes that you no longer use.
 
 * **Use a Caching Plugin:** Plugins like **W3 Total Cache** or **WP Super Cache** can improve website performance by storing static versions of your content, reducing the load on your database.
 

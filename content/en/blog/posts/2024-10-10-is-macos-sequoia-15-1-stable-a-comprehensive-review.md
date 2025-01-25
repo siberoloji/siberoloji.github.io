@@ -90,18 +90,24 @@ As with any major software release, user feedback is one of the best indicators 
 However, it’s important to note that some niche cases report specific app crashes, especially for third-party software that has not yet been optimized for this latest macOS version. For example, some older versions of creative tools like Adobe Photoshop or certain virtualization software may experience occasional bugs.
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **App Compatibility** A concern when upgrading to any new macOS version is whether your apps will continue to function properly. macOS Sequoia 15.1 maintains strong backward compatibility with most widely used apps. Native applications from Apple have seen seamless transitions with no reports of crashes or performance issues.
+
+
+
+* **App Compatibility** A concern when upgrading to any new macOS version is whether your apps will continue to function properly. macOS Sequoia 15.1 maintains strong backward compatibility with most widely used apps. Native applications from Apple have seen seamless transitions with no reports of crashes or performance issues.
 For third-party apps, the situation is largely positive, though there have been reports of instability in some applications that have not yet been fully optimized for the new OS. Most developers, however, are quick to release updates, and users can expect patches to address these early issues.
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Hardware Compatibility and Driver Issues** In terms of hardware compatibility, macOS Sequoia 15.1 is well-optimized for newer Macs. For Macs using the Apple Silicon chips (M1 and later), the system performs exceptionally well, taking full advantage of the chip architecture. However, users with older Intel-based Macs have reported mixed experiences. While the OS runs smoothly for basic tasks, some have noticed a decline in performance when running resource-heavy applications or managing large data sets. This suggests that while Sequoia 15.1 is backward compatible, older machines may not get the same fluid experience as newer models.
+
+
+
+* **Hardware Compatibility and Driver Issues** In terms of hardware compatibility, macOS Sequoia 15.1 is well-optimized for newer Macs. For Macs using the Apple Silicon chips (M1 and later), the system performs exceptionally well, taking full advantage of the chip architecture. However, users with older Intel-based Macs have reported mixed experiences. While the OS runs smoothly for basic tasks, some have noticed a decline in performance when running resource-heavy applications or managing large data sets. This suggests that while Sequoia 15.1 is backward compatible, older machines may not get the same fluid experience as newer models.
 Another minor issue reported by some users is related to peripheral drivers, specifically for older printers, scanners, and external devices. While Apple has provided updated drivers for many popular peripherals, niche devices may require manual driver updates or may not function optimally without additional setup.
 
 
-<!-- wp:list {"ordered":true,"start":5} -->
-<ol start="5" class="wp-block-list">* **Battery Life: Mixed Feedback** One of the most discussed aspects of macOS Sequoia 15.1 is battery performance. While Apple claims improved battery life, user feedback is somewhat mixed. Many MacBook users report better battery longevity, especially during light use like browsing, watching videos, or using productivity apps. However, a subset of users, especially those using more demanding applications like Final Cut Pro or running virtual machines, report shorter battery life compared to previous macOS versions. This variability could be due to app-specific optimizations or the way macOS manages power during intensive tasks.
+
+
+
+* **Battery Life: Mixed Feedback** One of the most discussed aspects of macOS Sequoia 15.1 is battery performance. While Apple claims improved battery life, user feedback is somewhat mixed. Many MacBook users report better battery longevity, especially during light use like browsing, watching videos, or using productivity apps. However, a subset of users, especially those using more demanding applications like Final Cut Pro or running virtual machines, report shorter battery life compared to previous macOS versions. This variability could be due to app-specific optimizations or the way macOS manages power during intensive tasks.
 
 * **Connectivity and Networking Issues** A few users have reported intermittent Wi-Fi drops or slower-than-expected internet speeds after upgrading to Sequoia 15.1. While these issues seem to be isolated cases, they can be frustrating for users who rely heavily on uninterrupted internet access for work or streaming. Apple has acknowledged some of these problems and is expected to release fixes in subsequent minor updates (such as 15.1.1 or 15.2).
 ## Addressing Common Concerns

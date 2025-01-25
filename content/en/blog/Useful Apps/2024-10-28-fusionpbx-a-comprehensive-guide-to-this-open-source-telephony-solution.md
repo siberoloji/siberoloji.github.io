@@ -70,26 +70,34 @@ FusionPBX installation requires a basic understanding of server environments. Be
 
 ```bash
    sudo apt update &amp;&amp; sudo apt upgrade```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Install Required Dependencies** Install the necessary dependencies and packages that FusionPBX requires.
+
+
+
+* **Install Required Dependencies** Install the necessary dependencies and packages that FusionPBX requires.
 
 ```bash
    sudo apt install -y git wget```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Clone FusionPBX Repository** Use Git to clone the FusionPBX repository.
+
+
+
+* **Clone FusionPBX Repository** Use Git to clone the FusionPBX repository.
 
 ```bash
    git clone https://github.com/fusionpbx/fusionpbx.git /usr/src/fusionpbx```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Install FreeSWITCH** FreeSWITCH is the backbone of FusionPBX. Follow the official installation guide for FreeSWITCH to set it up properly.
+
+
+
+* **Install FreeSWITCH** FreeSWITCH is the backbone of FusionPBX. Follow the official installation guide for FreeSWITCH to set it up properly.
 
 * **Run the Installation Script** FusionPBX provides a shell script to automate the setup. Run the script and follow the prompts.
 
 ```bash
    cd /usr/src/fusionpbx &amp;&amp; ./install.sh
 ```
-<!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **Access FusionPBX** Once installed, open a web browser and navigate to the server’s IP address followed by `/fusionpbx` to access the web interface.
+
+
+
+* **Access FusionPBX** Once installed, open a web browser and navigate to the server’s IP address followed by `/fusionpbx` to access the web interface.
 
 Configuration and Setup
 

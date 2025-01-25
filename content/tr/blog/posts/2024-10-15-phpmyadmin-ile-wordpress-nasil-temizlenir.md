@@ -71,8 +71,10 @@ Otomatik taslaklar WordPress veritabanınızın `wp_posts` tablosuna kaydedilir.
 ```bash
    DELETE FROM wp_posts WHERE post_status = 'auto-draft';
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Sorguyu yürütmek için **Git'e** tıklayın .
+
+
+
+* Sorguyu yürütmek için **Git'e** tıklayın .
 Bu, veritabanınızdan tüm otomatik taslak gönderilerini kaldıracaktır.
 #### Adım 3: Gönderi Revizyonlarını Silme
 
@@ -84,8 +86,10 @@ Revizyonlar da `wp_posts` tablosunda saklanır. Gönderi revizyonlarını kaldı
 ```bash
    DELETE FROM wp_posts WHERE post_type = 'revision';
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Git'e** tıklayın .
+
+
+
+* **Git'e** tıklayın .
 Bu, veritabanınızdaki tüm gönderi revizyonlarını silecektir.
 #### Adım 4: Gönderiler ve Yorumlar İçin Çöp Kutusunu Boşaltma
 
@@ -95,16 +99,20 @@ Bu, veritabanınızdaki tüm gönderi revizyonlarını silecektir.
 ```bash
    DELETE FROM wp_posts WHERE post_status = 'trash';
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Git'e** tıklayın .
+
+
+
+* **Git'e** tıklayın .
 Çöp kutusuna atılan yorumları kaldırmak için:
 * Aşağıdaki sorguyu çalıştırın:
 
 ```bash
    DELETE FROM wp_comments WHERE comment_approved = 'trash';
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Git'e** tıklayın .
+
+
+
+* **Git'e** tıklayın .
 
 #### Adım 5: Spam ve Onaylanmamış Yorumları Silme
 
@@ -114,14 +122,18 @@ Spam ve onaylanmamış yorumları veritabanınızdan kaldırmak için:
 ```bash
    DELETE FROM wp_comments WHERE comment_approved = 'spam';
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Onaylanmamış yorumları silmek için şu sorguyu kullanın:
+
+
+
+* Onaylanmamış yorumları silmek için şu sorguyu kullanın:
 
 ```bash
    DELETE FROM wp_comments WHERE comment_approved = '0';
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Her sorgu için **Git'e** tıklayın .
+
+
+
+* Her sorgu için **Git'e** tıklayın .
 
 #### Adım 6: Süresi Dolan Geçicileri Kaldırma
 
@@ -131,8 +143,10 @@ Geçici olaylar `wp_options` tablosunda saklanır . Süresi dolan geçici olayla
 ```bash
    DELETE FROM wp_options WHERE option_name LIKE '_transient_%' AND option_value < NOW();
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Git'e** tıklayın .
+
+
+
+* **Git'e** tıklayın .
 Bu, süresi dolmuş geçici verileri veritabanınızdan kaldıracaktır.
 #### Adım 7: Yetim Meta Verilerin Silinmesi
 
@@ -142,14 +156,18 @@ Yetim meta veriler zamanla birikebilir. Yetim meta verileri temizlemek için:
 ```bash
    DELETE pm FROM wp_postmeta pm LEFT JOIN wp_posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL;
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Yetim yorum meta verileri için şu sorguyu çalıştırın:
+
+
+
+* Yetim yorum meta verileri için şu sorguyu çalıştırın:
 
 ```bash
    DELETE FROM wp_commentmeta WHERE comment_id NOT IN (SELECT comment_ID FROM wp_comments);
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Her sorgu için **Git'e** tıklayın .
+
+
+
+* Her sorgu için **Git'e** tıklayın .
 Veritabanı Bakımı İçin En İyi Uygulamalar
 * **Düzenli Yedeklemeler** : Herhangi bir değişiklik yapmadan önce veritabanınızı her zaman yedekleyin. Düzenli yedeklemeler planlamak da iyi bir alışkanlıktır.
 
@@ -162,8 +180,10 @@ Veritabanı Bakımı İçin En İyi Uygulamalar
 ```
 
 Bu, gönderi başına kaydedilen revizyon sayısını üçle sınırlar.
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Düzenli Temizlik** : WordPress veritabanınızı düzenli olarak temizleyin ve dağınık hale gelmesini önleyin. Düzenli temizlikler çalıştırmak daha iyi performans ve daha verimli veritabanı yönetimi sağlar.
+
+
+
+* **Düzenli Temizlik** : WordPress veritabanınızı düzenli olarak temizleyin ve dağınık hale gelmesini önleyin. Düzenli temizlikler çalıştırmak daha iyi performans ve daha verimli veritabanı yönetimi sağlar.
 Sonuç
 
 WordPress veritabanınızı temizlemek web sitenizin performansını önemli ölçüde iyileştirebilir, depolama kullanımını azaltabilir ve yedeklemeleri daha yönetilebilir hale getirebilir. Veritabanı bakımına yardımcı olmak için eklentiler mevcut olsa da, phpMyAdmin kullanmak daha fazla kontrol sunar ve belirli dosyaları hedeflemek için özel SQL sorguları yürütmenize olanak tanır. Otomatik taslakları, revizyonları veya geçicileri kaldırıyor olun, phpMyAdmin veritabanınızı yalın ve optimize edilmiş tutmak için güçlü bir yol sağlar.

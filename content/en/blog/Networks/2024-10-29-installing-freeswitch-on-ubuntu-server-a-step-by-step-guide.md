@@ -104,8 +104,10 @@ FreeSWITCH comes with a default configuration suitable for most basic setups. Ho
 
 ```bash
    cd /usr/local/freeswitch/conf```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Edit Core Configuration Files:** Use any text editor to modify the configuration files, such as `vars.xml` or `sip_profiles` for SIP settings:
+
+
+
+* **Edit Core Configuration Files:** Use any text editor to modify the configuration files, such as `vars.xml` or `sip_profiles` for SIP settings:
 
 ```bash
    sudo nano vars.xml
@@ -152,8 +154,10 @@ To simplify management, set up FreeSWITCH as a system service:
 
 ```bash
    sudo nano /etc/systemd/system/freeswitch.service```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Add Service Configuration:** Paste the following configuration into the file:
+
+
+
+* **Add Service Configuration:** Paste the following configuration into the file:
 
 ```bash
    [Unit]
@@ -170,8 +174,10 @@ To simplify management, set up FreeSWITCH as a system service:
 
    [Install]
    WantedBy=multi-user.target```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Enable and Start the Service:**
+
+
+
+* **Enable and Start the Service:**
 
 ```bash
    sudo systemctl enable freeswitch

@@ -46,19 +46,25 @@ Armitage comes pre-installed on Kali Linux, though some users may need to config
 
 ```bash
    sudo apt update &amp;&amp; sudo apt upgrade```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Install Armitage (if not pre-installed)**:
+
+
+
+* **Install Armitage (if not pre-installed)**:
 
 ```bash
    sudo apt install armitage```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Start Metasploit and Database Services**: Armitage requires Metasploit and PostgreSQL services to be running.
+
+
+
+* **Start Metasploit and Database Services**: Armitage requires Metasploit and PostgreSQL services to be running.
 
 ```bash
    sudo service postgresql start
    sudo service metasploit start```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Launch Armitage**: Use the following command to start Armitage:
+
+
+
+* **Launch Armitage**: Use the following command to start Armitage:
 
 ```bash
    armitage```

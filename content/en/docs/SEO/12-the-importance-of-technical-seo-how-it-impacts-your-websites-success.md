@@ -2,6 +2,7 @@
 draft: false
 title: "Technical SEO: How It Insanely Doubles Your Website’s Success?"
 linkTitle: Technical SEO
+translationKey: the-importance-of-technical-seo-how-it-impacts-your-websites-success
 weight: 12
 date: 2024-10-11T21:19:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

@@ -92,8 +92,10 @@ Here’s a simplified example to illustrate how an XSS attack might occur:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Execution in the User's Browser**: When other users visit the page and load the comment, the browser interprets the script tag and executes the code. In this case, it would trigger an alert box, but more dangerous scripts could steal cookies or perform other malicious actions.
+
+
+
+* **Execution in the User's Browser**: When other users visit the page and load the comment, the browser interprets the script tag and executes the code. In this case, it would trigger an alert box, but more dangerous scripts could steal cookies or perform other malicious actions.
 
 * **Impact on the User**: If the script was designed to steal session cookies, the attacker could hijack the user's session and impersonate them within the web application.
 #### **Real-World Impact of XSS Attacks**

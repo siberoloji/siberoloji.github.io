@@ -86,29 +86,37 @@ Step 3: Booting and Installing NixOS
    mount /dev/sda2 /mnt
    mkdir /mnt/boot
    mount /dev/sda1 /mnt/boot```
-<!-- wp:list {"ordered":true,"start":5} -->
-<ol start="5" class="wp-block-list">* **Generate the Configuration File**: NixOS uses a configuration file to define your system. Generate this file by running:
+
+
+
+* **Generate the Configuration File**: NixOS uses a configuration file to define your system. Generate this file by running:
 
 ```cpp
    nixos-generate-config --root /mnt```
 
 This will create two files: `/mnt/etc/nixos/configuration.nix` (where you define your system) and `/mnt/etc/nixos/hardware-configuration.nix` (which is auto-generated based on your hardware).
-<!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **Edit the Configuration**: Open `/mnt/etc/nixos/configuration.nix` in your favorite text editor and make any necessary changes. For example, you can define which desktop environment you want to install or which services to enable. The file is well-commented, so it’s easy to understand what each section does. For example, to install GNOME, add this line:
+
+
+
+* **Edit the Configuration**: Open `/mnt/etc/nixos/configuration.nix` in your favorite text editor and make any necessary changes. For example, you can define which desktop environment you want to install or which services to enable. The file is well-commented, so it’s easy to understand what each section does. For example, to install GNOME, add this line:
 
 ```cpp
    services.xserver.desktopManager.gnome.enable = true;
 ```
-<!-- wp:list {"ordered":true,"start":7} -->
-<ol start="7" class="wp-block-list">* **Install NixOS**: Once the configuration is ready, run the installation command:
+
+
+
+* **Install NixOS**: Once the configuration is ready, run the installation command:
 
 ```cpp
    nixos-install
 ```
 
 This will install NixOS based on the configuration file you edited.
-<!-- wp:list {"ordered":true,"start":8} -->
-<ol start="8" class="wp-block-list">* **Set a Root Password**: During installation, you’ll be prompted to set a root password for your system. Make sure to set a strong password.
+
+
+
+* **Set a Root Password**: During installation, you’ll be prompted to set a root password for your system. Make sure to set a strong password.
 
 * **Reboot**: After the installation is complete, reboot your system by running:
 

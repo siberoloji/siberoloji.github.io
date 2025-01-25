@@ -118,16 +118,20 @@ The process of configuring MPMs varies depending on how Apache was installed and
 ```bash
    apache2ctl -V | grep MPm
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Enabling an MPM**: On Debian-based systems, you can enable an MPM using:
+
+
+
+* **Enabling an MPM**: On Debian-based systems, you can enable an MPM using:
 
 ```bash
    sudo a2dismod mpm_prefork
    sudo a2enmod mpm_event```
 
 Replace `mpm_event` with your desired MPM.
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Configuring MPM Settings**: MPM settings are typically configured in the Apache configuration file. For example, on Ubuntu, you might edit `/etc/apache2/mods-available/mpm_event.conf` for the Event MPM.
+
+
+
+* **Configuring MPM Settings**: MPM settings are typically configured in the Apache configuration file. For example, on Ubuntu, you might edit `/etc/apache2/mods-available/mpm_event.conf` for the Event MPM.
 
 * **Restarting Apache**: After making changes, restart Apache to apply them:
 

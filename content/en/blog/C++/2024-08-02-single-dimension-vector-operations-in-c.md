@@ -290,8 +290,10 @@ Common operations performed on `std::vector` in C++ include:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Accessing Elements**:
+
+
+
+* **Accessing Elements**:
 
 
 
@@ -301,8 +303,10 @@ Common operations performed on `std::vector` in C++ include:
    int element = vec[2]; // Access the element at index 2```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Modifying Elements**:
+
+
+
+* **Modifying Elements**:
 
 
 
@@ -310,8 +314,10 @@ Common operations performed on `std::vector` in C++ include:
    vec[2] = 10; // Modify the element at index 2```
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Adding Elements**:
+
+
+
+* **Adding Elements**:
 
 
 
@@ -321,8 +327,10 @@ Common operations performed on `std::vector` in C++ include:
    vec.insert(vec.begin() + 2, 15); // Insert an element at index 2```
 
 
-<!-- wp:list {"ordered":true,"start":5} -->
-<ol start="5" class="wp-block-list">* **Removing Elements**:
+
+
+
+* **Removing Elements**:
 
 
 
@@ -334,8 +342,10 @@ Common operations performed on `std::vector` in C++ include:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **Iterating Over Elements**:
+
+
+
+* **Iterating Over Elements**:
 
 
 
@@ -354,8 +364,10 @@ Common operations performed on `std::vector` in C++ include:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":7} -->
-<ol start="7" class="wp-block-list">* **Size and Capacity**:
+
+
+
+* **Size and Capacity**:
 
 
 
@@ -367,8 +379,10 @@ Common operations performed on `std::vector` in C++ include:
 ```
 
 
-<!-- wp:list {"ordered":true,"start":8} -->
-<ol start="8" class="wp-block-list">* **Swapping and Assigning**:
+
+
+
+* **Swapping and Assigning**:
 
 
 

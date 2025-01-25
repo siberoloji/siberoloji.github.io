@@ -1,6 +1,8 @@
 ---
 draft: false
 title: "Chapter 13: Optimizing Images for SEO"
+linkTitle: "Optimizing Images for SEO"
+translationKey: optimizing-images-for-seo
 date: 2024-10-10T21:57:33+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /chapter-13-optimizing-images-for-seo/

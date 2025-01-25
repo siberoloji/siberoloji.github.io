@@ -94,8 +94,10 @@ A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls t
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Define a new gateway for Asterisk with its IP address:
+
+
+
+* Define a new gateway for Asterisk with its IP address:
 
 
 
@@ -110,8 +112,10 @@ A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls t
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Save and exit. Then reload the FreeSWITCH configuration to apply the changes:
+
+
+
+* Save and exit. Then reload the FreeSWITCH configuration to apply the changes:
 
 
 
@@ -130,8 +134,10 @@ A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls t
    sudo nano /etc/asterisk/pjsip.conf```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Add a configuration for a SIP trunk to FreeSWITCH:
+
+
+
+* Add a configuration for a SIP trunk to FreeSWITCH:
 
 
 
@@ -144,8 +150,10 @@ A SIP trunk between FreeSWITCH and Asterisk enables each system to route calls t
    aors=freeswitch_aor```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Specify the address and authentication details for the FreeSWITCH SIP trunk:
+
+
+
+* Specify the address and authentication details for the FreeSWITCH SIP trunk:
 
 
 
@@ -162,8 +170,10 @@ password=strongpassword
 ```
 
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* Save the file and reload Asterisk’s PJSIP module:
+
+
+
+* Save the file and reload Asterisk’s PJSIP module:
 
 
 
@@ -192,8 +202,10 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Add a new extension that matches calls destined for Asterisk:
+
+
+
+* Add a new extension that matches calls destined for Asterisk:
 
 
 
@@ -206,8 +218,10 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Save and exit the file, then reload the dial plan:
+
+
+
+* Save and exit the file, then reload the dial plan:
 
 
 
@@ -226,8 +240,10 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
    sudo nano /etc/asterisk/extensions.conf```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Define a new context to route calls from Asterisk to FreeSWITCH:
+
+
+
+* Define a new context to route calls from Asterisk to FreeSWITCH:
 
 
 
@@ -237,8 +253,10 @@ Edit the default dial plan on FreeSWITCH to route calls intended for Asterisk.
    exten => _4XXX,n,Hangup()```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Save the file and reload the Asterisk dial plan:
+
+
+
+* Save the file and reload the Asterisk dial plan:
 
 
 

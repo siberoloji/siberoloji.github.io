@@ -91,8 +91,10 @@ XML'in geçerli belgeler oluşturmak için uyulması gereken katı sözdizimi ku
    <outer><inner></inner></outer>  <!-- Correct -->
    <outer><inner></outer></inner>  <!-- Incorrect -->
 ```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* **Öznitelik değerleri tırnak işareti içinde olmalıdır** :`<element attribute="value">`
+
+
+
+* **Öznitelik değerleri tırnak işareti içinde olmalıdır** :`<element attribute="value">`
 
 * **Özel karakterler kaçırılmalıdır** : `&amp;lt;`for <, `&amp;gt;`for >, `&amp;amp;`for &amp; gibi varlıkları kullanın.
 ## XML'in Avantajları

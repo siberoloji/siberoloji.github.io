@@ -1,6 +1,10 @@
 ---
 draft: false
 title: "On-Page vs. Off-Page SEO: A Comprehensive Guide"
+LinkTitle: "On-Page vs. Off-Page SEO"
+translationKey: on-page-vs-off-page-seo-a-comprehensive-guide
+description: "Learn the differences between on-page and off-page SEO, their importance, and how to implement effective strategies for both."
+weight: 510
 date: 2024-10-10T12:55:45+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /on-page-vs-off-page-seo-a-comprehensive-guide/

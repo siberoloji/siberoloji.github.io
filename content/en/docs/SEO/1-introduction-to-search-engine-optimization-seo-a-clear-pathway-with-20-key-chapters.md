@@ -2,6 +2,7 @@
 draft: false
 title: Awesome 20 Chapters For Search Engine Optimization (SEO)
 linkTitle: Introduction to SEO
+translationKey: introduction-to-search-engine-optimization-seo-a-clear-pathway-with-20-key-chapters
 date: 2024-10-10T21:10:22+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /introduction-to-search-engine-optimization-seo-a-clear-pathway-with-20-key-chapters/

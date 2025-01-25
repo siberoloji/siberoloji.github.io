@@ -2,6 +2,7 @@
 draft: false
 title: "Transactional Intent: The Key to Driving Conversions in SEO"
 LinkTitle: Transactional Intent
+translationKey: the-importance-of-informational-intent-for-seo-how-to-use-it-to-boost-your-rankings
 weight: 13
 date: 2024-10-11T21:50:32+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

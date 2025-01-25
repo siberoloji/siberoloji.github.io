@@ -1,6 +1,10 @@
 ---
 draft: false
 title: What Do Web Crawlers Look For On Websites?
+LinkTitle: Web Crawlers
+translationKey: what-do-web-crawlers-look-for-on-websites
+description: Understanding the key elements that web crawlers focus on can help website owners and developers optimize their sites for better visibility.
+weight: 500
 date: 2024-10-11T20:59:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /what-do-web-crawlers-look-for-on-websites/
@@ -22,7 +26,7 @@ Major search engines like Google, Bing, and Yahoo all use web crawlers to keep t
 
 Now that we understand the basics, let's explore the primary elements that web crawlers focus on when visiting websites:
 
-1. Content Quality and Relevance
+### 1. Content Quality and Relevance
 
 One of the most important aspects that web crawlers analyze is the quality and relevance of a website's content. They look for:
 
@@ -34,7 +38,7 @@ One of the most important aspects that web crawlers analyze is the quality and r
 
 * **Depth and comprehensiveness**: In-depth, thorough coverage of topics is often favored over shallow or thin content.
 
-2. Website Structure and Navigation
+### 2. Website Structure and Navigation
 
 Crawlers pay close attention to how a website is structured and how easily they can navigate through its pages. They look for:
 
@@ -46,7 +50,7 @@ Crawlers pay close attention to how a website is structured and how easily they 
 
 * **URL structure**: Clean, descriptive URLs that reflect your site's hierarchy can aid in crawling and indexing.
 
-3. Technical SEO Elements
+### 3. Technical SEO Elements
 
 Several technical aspects of a website are crucial for effective crawling and indexing:
 
@@ -60,7 +64,7 @@ Several technical aspects of a website are crucial for effective crawling and in
 
 * **Mobile-friendliness**: With the increasing importance of mobile search, crawlers pay attention to how well your site performs on mobile devices.
 
-4. Backlink Profile
+### 4. Backlink Profile
 
 While crawlers primarily focus on on-page elements, they also follow external links to and from your site. They look at:
 
@@ -70,7 +74,7 @@ While crawlers primarily focus on on-page elements, they also follow external li
 
 * **Diversity of link sources**: A natural, diverse backlink profile is generally seen as more valuable than a small number of high-volume links.
 
-5. User Experience Signals
+### 5. User Experience Signals
 
 Although crawlers can't directly measure user experience, they look for signals that indicate a positive user experience:
 
@@ -80,7 +84,7 @@ Although crawlers can't directly measure user experience, they look for signals 
 
 * **Accessibility**: Features like alt text for images and proper heading structure improve accessibility for both users and crawlers.
 
-6. Security and Trust Signals
+### 6. Security and Trust Signals
 
 Crawlers also pay attention to elements that indicate a site's trustworthiness and security:
 
@@ -90,7 +94,7 @@ Crawlers also pay attention to elements that indicate a site's trustworthiness a
 
 * **Contact information**: Clear, easily accessible contact details can improve a site's credibility.
 
-7. Social Signals
+### 7. Social Signals
 
 While the direct impact of social media on search rankings is debated, crawlers do pay attention to:
 

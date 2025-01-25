@@ -66,8 +66,10 @@ The `vars.xml` file in `/usr/local/freeswitch/conf` is the primary configuration
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Modify key variables such as:
+
+
+
+* Modify key variables such as:
 
 
 
@@ -193,8 +195,10 @@ Network Address Translation (NAT) can cause connectivity issues, especially in e
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Set IPs in vars.xml**: Also set external IPs in `vars.xml` to ensure correct media routing:
+
+
+
+* **Set IPs in vars.xml**: Also set external IPs in `vars.xml` to ensure correct media routing:
 
 
 
@@ -221,8 +225,10 @@ FreeSWITCH is highly customizable for security, and securing SIP and RTP traffic
 ```
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Enable TLS for SIP**: Encrypt SIP communications by enabling TLS in the `internal.xml` and `external.xml` profiles:
+
+
+
+* **Enable TLS for SIP**: Encrypt SIP communications by enabling TLS in the `internal.xml` and `external.xml` profiles:
 
 
 
@@ -249,8 +255,10 @@ With configurations complete, test the setup to ensure everything works as expec
 ```
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Test Calls Between Extensions**: Try making calls between extensions configured in the dialplan to ensure call routing works.
+
+
+
+* **Test Calls Between Extensions**: Try making calls between extensions configured in the dialplan to ensure call routing works.
 
 * **Review Logs for Errors**: Logs are stored in `/usr/local/freeswitch/log/`. For example:
 

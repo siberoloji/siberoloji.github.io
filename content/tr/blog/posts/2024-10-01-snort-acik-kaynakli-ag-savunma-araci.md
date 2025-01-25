@@ -77,8 +77,10 @@ Snort'u kurmak biraz teknik bilgi gerektirir, ancak Linux veya ağ konusunda bil
 
 * **Snort'u yapılandırın
 **: Yapılandırma, kullanıcıların ağ değişkenlerini, kural kümelerini ve günlükleme seçeneklerini tanımladığı snort.conf dosyasının kurulumunu içerir. Snort'un kuralları, trafiğin nasıl analiz edileceğini ve şüpheli etkinliğe yanıt olarak hangi eylemlerin gerçekleştirileceğini belirler.
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Kuralları Uygula ve İzlemeye Başla** : Snort yapılandırıldıktan sonra kullanıcılar ağlarını izlemeye başlamak için kural kümeleri uygulayabilir. Zamanla, kurallar algılama doğruluğunu iyileştirmek ve yanlış pozitifleri azaltmak için ince ayarlanabilir.
+
+
+
+* **Kuralları Uygula ve İzlemeye Başla** : Snort yapılandırıldıktan sonra kullanıcılar ağlarını izlemeye başlamak için kural kümeleri uygulayabilir. Zamanla, kurallar algılama doğruluğunu iyileştirmek ve yanlış pozitifleri azaltmak için ince ayarlanabilir.
 #### Diğer IDS/IPS Çözümleriyle Karşılaştırıldığında Snort
 
 Snort'u diğer IDS/IPS araçlarıyla karşılaştırırken, hızlı bir genel bakış şu şekildedir:

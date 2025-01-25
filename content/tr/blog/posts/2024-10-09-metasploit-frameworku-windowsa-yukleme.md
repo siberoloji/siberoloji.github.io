@@ -66,18 +66,24 @@ Adım 5: Metasploit Framework'ün İlk Kurulumu
 ```bash
    cd C:\metasploit-framework\bin
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Aşağıdaki komutu yazarak Metasploit'i başlatın:
+
+
+
+* Aşağıdaki komutu yazarak Metasploit'i başlatın:
 
 ```bash
    msfconsole.bat```
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* İlk başlatmada yeni bir veritabanı kurmanız istenecektir:
+
+
+
+* İlk başlatmada yeni bir veritabanı kurmanız istenecektir:
 
 * Veritabanı yapılandırmasını başlatmak için `y`veya yazın .`yes`
 
-<!-- wp:list {"ordered":true,"start":4} -->
-<ol start="4" class="wp-block-list">* Msfconsole'un tamamen yüklenmesini bekleyin; bu birkaç dakika sürebilir.
+
+
+
+* Msfconsole'un tamamen yüklenmesini bekleyin; bu birkaç dakika sürebilir.
 ## Kurulum Sonrası Yapılandırma
 
 Metasploit'i başarıyla kurduktan sonra, optimum performans için birkaç ayarı yapılandırmak önemlidir:
@@ -98,8 +104,10 @@ net start postgresql-x64-12```
 ```bash
    db_status
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* Eğer “bağlandı” yazıyorsa, veritabanı kurulumunuz başarılıdır.
+
+
+
+* Eğer “bağlandı” yazıyorsa, veritabanı kurulumunuz başarılıdır.
 Metasploit Çerçevesini Güncelle
 
 En son exploitlere ve özelliklere sahip olduğunuzdan emin olmak için:
@@ -107,8 +115,10 @@ En son exploitlere ve özelliklere sahip olduğunuzdan emin olmak için:
 
 ```bash
    msfupdate```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* Bu komut güncellemeleri kontrol edecek ve varsa yükleyecektir.
+
+
+
+* Bu komut güncellemeleri kontrol edecek ve varsa yükleyecektir.
 Güvenlik Özelliklerini Yeniden Etkinleştir
 
 Kurulum ve ilk ayarları tamamladıktan sonra:

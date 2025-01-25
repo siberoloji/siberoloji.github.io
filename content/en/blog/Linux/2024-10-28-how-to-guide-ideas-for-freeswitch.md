@@ -29,8 +29,10 @@ Here are 50 top how-to guide ideas for FreeSWITCH, covering various aspects of i
 
 * **<a href="https://www.siberoloji.com/configuring-sip-trunks-in-freeswitch/" target="_blank" rel="noopener" title="">Configuring SIP Trunks in FreeSWITCH</a>**: Steps to set up and manage SIP trunks.
 ## Advanced Features
-<!-- wp:list {"ordered":true,"start":6} -->
-<ol start="6" class="wp-block-list">* **<a href="https://www.siberoloji.com/freeswitch-how-to-set-up-and-manage-conference-calls/">Creating Conference Rooms</a>**: How to set up and manage conference calls.
+
+
+
+* **<a href="https://www.siberoloji.com/freeswitch-how-to-set-up-and-manage-conference-calls/">Creating Conference Rooms</a>**: How to set up and manage conference calls.
 
 * **Implementing Call Recording**: Steps to enable call recording features.
 

@@ -55,8 +55,10 @@ lsblk --discard
 ```
 
 Look for non-zero values in the DISC-GRAN (discard granularity) and DISC-MAX (discard maximum bytes) columns.
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Check File System Support**:
+
+
+
+* **Check File System Support**:
 
 ```bash
 findmnt -O discard
@@ -71,14 +73,18 @@ Setting Up Periodic TRIM
 
 ```bash
 systemctl status fstrim.timer```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Enable the timer**:
+
+
+
+* **Enable the timer**:
 
 ```bash
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Verify the timer schedule**:
+
+
+
+* **Verify the timer schedule**:
 
 ```bash
 systemctl list-timers --all | grep fstrim
@@ -148,16 +154,20 @@ sudo fstrim -av
 ```
 
 This command manually runs TRIM and provides feedback.
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Monitoring SSD Health**:
+
+
+
+* **Monitoring SSD Health**:
 
 ```bash
 sudo smartctl -a /dev/sda
 ```
 
 Use this to check SSD health metrics regularly.
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Verifying TRIM Operations**:
+
+
+
+* **Verifying TRIM Operations**:
 
 ```bash
 journalctl -u fstrim
@@ -174,8 +184,10 @@ Optimal system configuration for SSDs:
 echo "mq-deadline" | sudo tee /sys/block/sda/queue/scheduler```
 
 Use appropriate I/O schedulers for SSDs.
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Swappiness**:
+
+
+
+* **Swappiness**:
 
 ```bash
 echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.conf```
@@ -210,13 +222,17 @@ If you experience performance problems:
 ```bash
 dmesg | grep -i trim
 ```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Monitor I/O Performance**:
+
+
+
+* **Monitor I/O Performance**:
 
 ```bash
 iostat -x 1```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Verify TRIM Operations**:
+
+
+
+* **Verify TRIM Operations**:
 
 ```bash
 sudo fstrim -v /```
@@ -230,8 +246,10 @@ When using LVM or LUKS encryption, additional configuration may be necessary:
 
 ```bash
 echo 'issue_discards = 1' | sudo tee -a /etc/lvm/lvm.conf```
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **LUKS Configuration**:
+
+
+
+* **LUKS Configuration**:
 
 ```bash
 sudo cryptsetup --allow-discards --perf-no_read_workqueue --perf-no_write_workqueue refresh /dev/mapper/your-device```

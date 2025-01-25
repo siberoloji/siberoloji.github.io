@@ -118,8 +118,10 @@ Setting up Snort requires some technical knowledge, but it’s straightforward f
 **: Configuration involves setting up the snort.conf file, where users define network variables, rule sets, and logging options. Snort’s rules determine how traffic is analyzed and what actions are taken in response to suspicious activity.
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Apply Rules and Start Monitoring**: Once Snort is configured, users can apply rule sets to start monitoring their network. Over time, the rules can be fine-tuned to improve detection accuracy and reduce false positives.
+
+
+
+* **Apply Rules and Start Monitoring**: Once Snort is configured, users can apply rule sets to start monitoring their network. Over time, the rules can be fine-tuned to improve detection accuracy and reduce false positives.
 #### Snort in Comparison to Other IDS/IPS Solutions
 
 

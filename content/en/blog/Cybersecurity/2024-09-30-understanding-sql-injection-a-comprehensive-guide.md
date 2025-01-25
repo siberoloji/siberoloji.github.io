@@ -105,8 +105,10 @@ If an attacker inputs `admin' --` as the username and leaves the password field 
 The double hyphen (`--`) indicates a comment in SQL, so everything after it is ignored. This query would essentially allow the attacker to bypass the password check, as only the username needs to match.
 
 
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Lack of Security Measures**: Many developers, especially beginners, may not be aware of or neglect security practices like parameterized queries or prepared statements, which can prevent SQL injection.
+
+
+
+* **Lack of Security Measures**: Many developers, especially beginners, may not be aware of or neglect security practices like parameterized queries or prepared statements, which can prevent SQL injection.
 #### **Potential Consequences of SQL Injection**
 
 
@@ -142,8 +144,10 @@ Preventing SQL injection is critical to maintaining the integrity and security o
 By using placeholders for user input, you ensure that the database treats the input as data rather than executable code.
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Input Validation**: Always validate user input. This can include:
+
+
+
+* **Input Validation**: Always validate user input. This can include:
 
 
 
@@ -155,8 +159,10 @@ By using placeholders for user input, you ensure that the database treats the in
 
 
 
-<!-- wp:list {"ordered":true,"start":2} -->
-<ol start="2" class="wp-block-list">* **Stored Procedures**: Stored procedures are precompiled SQL commands that can accept parameters, making them more secure than dynamic SQL queries. However, they must be implemented correctly to prevent injection.
+
+
+
+* **Stored Procedures**: Stored procedures are precompiled SQL commands that can accept parameters, making them more secure than dynamic SQL queries. However, they must be implemented correctly to prevent injection.
 
 * **Least Privilege Principle**: Ensure that your database accounts have the minimal necessary privileges. For example, the account used by your web application to query the database should not have administrative privileges.
 

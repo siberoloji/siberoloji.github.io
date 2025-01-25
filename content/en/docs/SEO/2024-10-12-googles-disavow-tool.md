@@ -28,8 +28,10 @@ The Disavow Tool enables users to create a text file listing URLs or domains the
    http://spammywebsite.com/bad-link
    domain:anotherbadwebsite.com
 ```
-<!-- wp:list {"ordered":true,"start":3} -->
-<ol start="3" class="wp-block-list">* **Submit the File**: After creating your disavow file, go to the Disavow Tool in Google Search Console, select your property, and upload the file.
+
+
+
+* **Submit the File**: After creating your disavow file, go to the Disavow Tool in Google Search Console, select your property, and upload the file.
 **When to Use the Disavow Tool**
 
 Using the Disavow Tool is recommended in specific scenarios:

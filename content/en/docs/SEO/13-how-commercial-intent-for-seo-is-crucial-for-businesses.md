@@ -2,6 +2,7 @@
 draft: false
 title: How Commercial Intent for SEO is Crucial for Businesses?
 linkTitle: Commercial Intent
+translationKey: the-importance-of-technical-seo-how-it-impacts-your-websites-success
 weight: 13
 date: 2024-10-11T21:54:49+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
