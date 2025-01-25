@@ -8,15 +8,17 @@ tags:
    - kali tools
 categories:
    - Kali linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 340
-
-keywords: bing-ip2hosts
-
-sidebar:
-   open: true
+keywords: 
+   - bing-ip2hosts
+   - reconnaissance
+   - Kali Linux
+   - OSINT
+   - penetration testing
+   - ethical hacking
+   - information gathering
+   - web scraper
 featured_image: /images/kalilinux2.webp
 url: bing-ip2hosts-powerful-reconnaissance-tool-kali-linux
 ---
@@ -40,7 +42,7 @@ By scraping Bing's search results, bing-ip2hosts efficiently identifies hostname
 
 1. **Smart Scraping Behavior**:
    - Continues scraping until no new results are found or a user-defined threshold is reached.
-   - Adds a dot (`%2e`) to queries to avoid empty search results.
+   - Adds a dot (`.`) to queries to avoid empty search results.
 
 2. **Versatility**:
    - Works with both IP addresses and hostnames.
