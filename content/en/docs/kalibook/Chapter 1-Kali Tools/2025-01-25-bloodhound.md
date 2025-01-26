@@ -1,7 +1,7 @@
 ---
 draft: false
 title: BloodHound on Kali Linux Tools
-linkTitle: BloodHound
+linkTitle: bloodHound
 translationKey: bloodhound-on-kali-linux-tools
 weight: 360
 description: This post delves into BloodHound, exploring its features, installation, while also discussing its real-world applications in penetration testing.
