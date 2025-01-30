@@ -4,8 +4,6 @@ title: How to update WordPress blog posts comment status from closed to open wit
 date: 2024-08-12T14:58:47+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /how-to-update-wordpress-blog-posts-comment-status-from-closed-to-open-with-sql-query/
-lim_seo:
-    - a:1:{s:5:"title";s:18:"wordpress comments";}s
 featured_image: /images/Sql_data_base_with_logo.png
 categories:
     - Wordpress

@@ -4,7 +4,6 @@ linkTitle: The Internet Engineering Task Force
 description: This blog post will explore the IETF's history, structure, mission, and its profound impact on the digital infrastructure we rely on every day.
 date: 2024-12-11
 draft: false
-
 keywords:
   - IETF
 tags:
@@ -14,10 +13,7 @@ categories:
   - Networks
 type: blog
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: null
-
-
 url: internet-engineering-task-force-ietf-architects-internet-evolution
 ---
 In the vast and complex world of internet technology, one organization stands out as a critical force in shaping how the internet works: the Internet Engineering Task Force (IETF). Often operating behind the scenes, the IETF plays a pivotal role in developing and maintaining the standards that make global internet communication possible. This blog post will explore the IETF's history, structure, mission, and its profound impact on the digital infrastructure we rely on every day.

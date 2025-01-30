@@ -17,7 +17,7 @@ featured_image: /images/kali-linux.webp
 url: metasploit-framework-setup-apple-silicon-macs
 ---
 
-Special thanks to : [tyrell](https://gist.github.com/tyrell) 
+Special thanks to : [tyrell](https://gist.github.com/tyrell)
 
 ## Introduction
 

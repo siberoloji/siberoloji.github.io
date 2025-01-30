@@ -114,10 +114,6 @@
       "path": "[[workspace]]/content/en/blog/news"
     },
     {
-      "title": "posts",
-      "path": "[[workspace]]/content/en/blog/posts"
-    },
-    {
       "title": "nmap",
       "path": "[[workspace]]/content/en/docs/howtos/nmap"
     },
@@ -194,16 +190,8 @@
       "path": "[[workspace]]/content/tr/docs/howtos/nmap"
     },
     {
-      "title": "Linux",
-      "path": "[[workspace]]/content/en/blog/Linux"
-    },
-    {
       "title": "SEO",
       "path": "[[workspace]]/content/en/docs/SEO"
-    },
-    {
-      "title": "macOS-iOS",
-      "path": "[[workspace]]/content/en/blog/macOS-iOS"
     },
     {
       "title": "Useful Apps",
@@ -314,24 +302,8 @@
       "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity"
     },
     {
-      "title": "C++",
-      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/C++"
-    },
-    {
-      "title": "Android",
-      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/Android"
-    },
-    {
-      "title": "Kotlin",
-      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/Kotlin"
-    },
-    {
       "title": "Networks",
       "path": "[[workspace]]/content/en/blog/engineering/Networks"
-    },
-    {
-      "title": "Digital Logic",
-      "path": "[[workspace]]/content/en/blog/engineering/Digital Logic"
     },
     {
       "title": "msfconsole",
@@ -340,6 +312,34 @@
     {
       "title": "ai",
       "path": "[[workspace]]/content/en/blog/engineering/ai"
+    },
+    {
+      "title": "Linux",
+      "path": "[[workspace]]/content/en/blog/engineering/operatingsystems/Linux"
+    },
+    {
+      "title": "Digital Logic",
+      "path": "[[workspace]]/content/en/blog/engineering/computerarchitecture/Digital Logic"
+    },
+    {
+      "title": "macOS-iOS",
+      "path": "[[workspace]]/content/en/blog/engineering/operatingsystems/macOS-iOS"
+    },
+    {
+      "title": "C++",
+      "path": "[[workspace]]/content/en/blog/engineering/programming/C++"
+    },
+    {
+      "title": "Android",
+      "path": "[[workspace]]/content/en/blog/engineering/programming/Android"
+    },
+    {
+      "title": "Kotlin",
+      "path": "[[workspace]]/content/en/blog/engineering/programming/Kotlin"
+    },
+    {
+      "title": "SoftwareEngineering",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering"
     }
   ],
   "frontMatter.git.enabled": true,

@@ -3,20 +3,15 @@ title: Comprehensive Guide to MacBook Pro Software Updates and System Maintenanc
 description: This guide covers both graphical user interface (GUI) and command-line methods to maintain your system effectively.
 date: 2024-11-13
 draft: false
-tags: []
-categories: []
+tags:
+   - macos
+categories:
+   - MAC/iOS
 linkTitle: ""
 type: blog
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 0
-
 keywords: ""
-
-
-
 featured_image: /images/macos2.webp
 url: macbook-pro-software-updates-system-maintenance
 ---

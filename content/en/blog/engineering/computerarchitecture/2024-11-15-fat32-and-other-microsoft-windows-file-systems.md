@@ -10,17 +10,10 @@ tags:
 categories:
   - Computer Architecture
 linkTitle: File Systems
-
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 weight: 0
-
 keywords:
   - Microsoft Windows File Systems
-
-
-
 url: fat32-microsoft-windows-file-systems
 ---
 Understanding file systems is crucial for anyone working with computers, as they determine how data is stored, accessed, and managed on storage devices. Among the various file systems available, FAT32 (File Allocation Table 32) is one of the most widely used, especially for removable media. However, it is not the only option available on Windows operating systems. This blog post will delve into FAT32, compare it with other Windows file systems like NTFS (New Technology File System) and exFAT (Extended File Allocation Table), and discuss their respective advantages and disadvantages.
