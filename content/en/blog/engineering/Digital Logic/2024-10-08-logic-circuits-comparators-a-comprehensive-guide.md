@@ -1,23 +1,18 @@
 ---
 draft: false
-
-title:  'Logic Circuits: Comparators – A Comprehensive Guide'
-date: '2024-10-08T10:13:12+03:00'
+title: "Logic Circuits: Comparators – A Comprehensive Guide"
+date: 2024-10-08T10:13:12+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /logic-circuits-comparators-a-comprehensive-guide/
- 
+url: /logic-circuits-comparators-a-comprehensive-guide/
 featured_image: /images/digital-logic-design2.webp
 categories:
-    - 'Digital Logic Design'
+    - Digital Logic Design
 tags:
     - comparators
-    - 'computer engineering'
-    - 'computer enginnering'
-    - 'digital logic design'
+    - computer engineering
+    - computer enginnering
+    - digital logic design
 ---
-
 
 Logic circuits are fundamental building blocks of digital systems, and one of the key types of circuits used extensively in computing and electronics is the comparator. Comparators are used to compare two binary numbers and determine their relationship, whether they are equal, greater than, or less than each other. In this blog post, we will dive into the details of comparators, their types, operations, practical uses, and their role in digital logic design.
 

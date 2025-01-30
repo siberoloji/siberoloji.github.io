@@ -1,20 +1,15 @@
 ---
 draft: false
-
-title:  'Free Python Course from Harvard University'
-date: '2023-06-18T18:28:39+03:00'
+title: Free Python Course from Harvard University
+date: 2023-06-18T18:28:39+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Harvard University has the "Harvard CS50" program, which includes programs within the scope of introductory computer science training.' 
- 
-url:  /free-python-course-from-harvard-university/
-burst_total_pageviews_count:
-    - '2'
+description: Harvard University has the "Harvard CS50" program, which includes programs within the scope of introductory computer science training.
+url: /free-python-course-from-harvard-university/
 featured_image: /images/Screen-Shot-2023-06-18-at-18.17.27.png
 categories:
-    - 'Software Engineering'
+    - Software Engineering
 tags:
-    - 'free course'
+    - free course
     - harvard
     - python
 ---

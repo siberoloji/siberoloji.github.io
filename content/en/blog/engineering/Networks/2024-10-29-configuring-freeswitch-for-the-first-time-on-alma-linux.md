@@ -1,18 +1,15 @@
 ---
 draft: false
-
-title:  'Configuring FreeSWITCH for the First Time on Alma Linux'
-date: '2024-10-29T13:51:00+03:00'
+title: Configuring FreeSWITCH for the First Time on Alma Linux
+date: 2024-10-29T13:51:00+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Learn configuring FreeSWITCH for the first time on Alma Linux with this detailed guide. Discover essential setup tips and configuration options to start using FreeSWITCH effectively.' 
- 
-url:  /configuring-freeswitch-for-the-first-time-on-alma-linux/
+description: Learn configuring FreeSWITCH for the first time on Alma Linux with this detailed guide. Discover essential setup tips and configuration options to start using FreeSWITCH effectively.
+url: /configuring-freeswitch-for-the-first-time-on-alma-linux/
 featured_image: /images/freeswitch1.webp
 categories:
-    - Networks
+   - Networks
 tags:
-    - freeswitch
+   - freeswitch
 ---
 
 

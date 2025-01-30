@@ -1,14 +1,13 @@
 ---
 draft: true
-title: ""
+title: 
 linkTitle:
-translationKey: ""
-weight: 0
-description: ""
-slug: ""
+translationKey: 
+description: 
+slug: 
 date: 
 tags: []
 categories: []
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-featured_image: ""
+featured_image: 
 ---

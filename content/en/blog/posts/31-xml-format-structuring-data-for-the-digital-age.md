@@ -3,7 +3,6 @@ draft: false
 title: "XML Format: Structuring Data for the Digital Age"
 linkTitle: XML Format
 translationKey: xml-format-structuring-data-for-the-digital-age
-weight: 31
 description: In this comprehensive guide, we'll explore the XML format, its features, applications, and why it continues to be relevant in today's digital ecosystem.
 date: 2024-09-30T22:07:05+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

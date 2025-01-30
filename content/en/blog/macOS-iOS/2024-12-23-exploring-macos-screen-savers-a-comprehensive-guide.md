@@ -5,16 +5,12 @@ linkTitle: macOS Screen Savers
 date: 2024-12-23
 type: blog
 draft: false
-
 tags:
   - macos screen saver
 categories:
   - MAC/iOS
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
 featured_image: /images/apple-macbook-pro-mlh32tua-notebook-75816.webp
-
-
 url: understanding-macos-screen-savers-technical-deep-dive
 ---
 Screen savers have evolved from their original purpose of preventing phosphor burn-in on CRT monitors to become an aesthetic element of modern operating systems. Let's explore how they function on macOS, their system impact, and their location within the OS architecture.

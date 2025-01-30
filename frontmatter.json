@@ -194,24 +194,8 @@
       "path": "[[workspace]]/content/tr/docs/howtos/nmap"
     },
     {
-      "title": "Cybersecurity",
-      "path": "[[workspace]]/content/en/blog/Cybersecurity"
-    },
-    {
-      "title": "Networks",
-      "path": "[[workspace]]/content/en/blog/Networks"
-    },
-    {
       "title": "Linux",
       "path": "[[workspace]]/content/en/blog/Linux"
-    },
-    {
-      "title": "Android",
-      "path": "[[workspace]]/content/en/blog/Android"
-    },
-    {
-      "title": "C++",
-      "path": "[[workspace]]/content/en/blog/C++"
     },
     {
       "title": "SEO",
@@ -224,10 +208,6 @@
     {
       "title": "Useful Apps",
       "path": "[[workspace]]/content/en/blog/Useful Apps"
-    },
-    {
-      "title": "Kotlin",
-      "path": "[[workspace]]/content/en/blog/Kotlin"
     },
     {
       "title": "Gaming",
@@ -310,13 +290,58 @@
       "path": "[[workspace]]/content/en/docs/howtos/raspberrypios"
     },
     {
+      "title": "msfconsole",
+      "path": "[[workspace]]/content/en/docs/kalibook/msfconsole"
+    },
+    {
+      "title": "techlife",
+      "path": "[[workspace]]/content/en/blog/techlife"
+    },
+    {
+      "title": "Cybersecurity",
+      "path": "[[workspace]]/content/tr/blog/Cybersecurity"
+    },
+    {
+      "title": "Podcasting",
+      "path": "[[workspace]]/content/en/docs/Podcasting"
+    },
+    {
+      "title": "engineering",
+      "path": "[[workspace]]/content/en/blog/engineering"
+    },
+    {
+      "title": "Cybersecurity",
+      "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity"
+    },
+    {
+      "title": "C++",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/C++"
+    },
+    {
+      "title": "Android",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/Android"
+    },
+    {
+      "title": "Kotlin",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/Kotlin"
+    },
+    {
+      "title": "Networks",
+      "path": "[[workspace]]/content/en/blog/engineering/Networks"
+    },
+    {
       "title": "Digital Logic",
-      "path": "[[workspace]]/content/en/blog/Digital Logic"
+      "path": "[[workspace]]/content/en/blog/engineering/Digital Logic"
     },
     {
       "title": "msfconsole",
-      "path": "[[workspace]]/content/en/docs/kalibook/msfconsole"
+      "path": "[[workspace]]/content/tr/docs/kalibook/msfconsole"
+    },
+    {
+      "title": "ai",
+      "path": "[[workspace]]/content/en/blog/engineering/ai"
     }
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": true,
+  "frontMatter.website.host": "https://www.siberoloji.com"
 }

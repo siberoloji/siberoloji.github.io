@@ -1,20 +1,16 @@
 ---
 draft: false
-
-title:  'BCD, Gray Code, and Other Encoding Schemes: Unraveling the World of Digital Data Representation'
-date: '2024-10-07T21:49:56+03:00'
+title: "BCD, Gray Code, and Other Encoding Schemes: Unraveling the World of Digital Data Representation"
+date: 2024-10-07T21:49:56+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /bcd-gray-code-and-other-encoding-schemes-unraveling-the-world-of-digital-data-representation/
- 
+url: /bcd-gray-code-and-other-encoding-schemes-unraveling-the-world-of-digital-data-representation/
 featured_image: /images/digital-logic-design.webp
 categories:
-    - 'Digital Logic Design'
+    - Digital Logic Design
 tags:
     - bcd
-    - 'computer engineering'
-    - 'digital logic design'
+    - computer engineering
+    - digital logic design
 ---
 
 

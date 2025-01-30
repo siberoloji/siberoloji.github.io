@@ -1,20 +1,13 @@
 ---
 draft: false
-
-title:  '7 Important Tips for Learning Programming'
-date: '2024-01-09T14:31:50+03:00'
+title: 7 Important Tips for Learning Programming
+date: 2024-01-09T14:31:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'If you are going to start learning a programming language, whether with your own effort, with help, or through school, we have compiled some rules and tips for you that we think will be very useful to you. ' 
- 
-url:  /7-important-tips-for-learning-computer-programming/
-classicmag_post_sidebar_option:
-    - right-sidebar
-classicmag_header_overlay:
-    - global-layout
+description: "If you are going to start learning a programming language, whether with your own effort, with help, or through school, we have compiled some rules and tips for you that we think will be very useful to you. "
+url: /7-important-tips-for-learning-computer-programming/
 featured_image: /images/altumcode-XMFZqrGyV-Q-unsplash.jpg
 categories:
-    - 'Software Engineering'
+    - Software Engineering
 tags:
     - software
 ---
