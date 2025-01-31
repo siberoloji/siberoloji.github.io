@@ -1,16 +1,12 @@
 ---
 draft: false
-
-title:  'MozDef: An Open-Source Security Tool for Modern Threat Detection and Response'
-date: '2024-10-01T17:22:40+03:00'
+title: "MozDef: An Open-Source Security Tool for Modern Threat Detection and Response"
+date: 2024-10-01T17:22:40+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /mozdef-an-open-source-security-tool/
- 
+url: /mozdef-an-open-source-security-tool/
 featured_image: /images/application1.webp
 categories:
-    - 'Useful Apps'
+    - Useful Apps
 tags:
     - application
     - cybersecurity

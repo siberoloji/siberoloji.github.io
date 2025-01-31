@@ -1,14 +1,11 @@
 ---
 draft: false
-
-title:  'Is Zero Positive or Negative? Understanding the Role of Zero in Mathematics'
-date: '2024-10-27T21:31:30+03:00'
+title: Is Zero Positive or Negative? Understanding the Role of Zero in Mathematics
+date: 2024-10-27T21:31:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'This article will dive into the origins of zero, its properties, and its classification to answer the question: Is zero positive or negative?' 
- 
-url:  /is-zero-positive-or-negative-understanding-the-role-of-zero-in-mathematics/
-featured_image: /images/digital-logic-design4-e1730067141777.webp
+description: "This article will dive into the origins of zero, its properties, and its classification to answer the question: Is zero positive or negative?"
+url: /is-zero-positive-or-negative-understanding-the-role-of-zero-in-mathematics/
+featured_image: /images/digital-logic-design4.webp
 categories:
     - Engineering
 tags:

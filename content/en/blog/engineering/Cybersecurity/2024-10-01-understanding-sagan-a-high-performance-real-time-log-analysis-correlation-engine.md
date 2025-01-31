@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Understanding Sagan: A High-Performance, Real-Time Log Analysis &amp; Correlation Engine"
+title: "Understanding Sagan: A High-Performance, Real-Time Log Analysis and Correlation Engine"
 date: 2024-10-01T17:44:43+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /understanding-sagan-a-high-performance-real-time-log-analysis-correlation-engine/

@@ -8,7 +8,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  
 url:  /a-comprehensive-guide-to-fpgas-field-programmable-gate-arrays/
  
-featured_image: /images/digital-logic-design4-e1730067141777.webp
+featured_image: /images//images/digital-logic-design4.webp
 categories:
     - 'Digital Logic Design'
 tags:

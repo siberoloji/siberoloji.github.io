@@ -1,14 +1,10 @@
 ---
 draft: false
-
-title:  'How-to Guide Ideas for FreeSWITCH'
-date: '2024-10-28T15:29:13+03:00'
+title: "How-to Guide Ideas for FreeSWITCH "
+date: 2024-10-28T15:29:13+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Here are 50 top how-to guide ideas for FreeSWITCH, covering various aspects of its functionality and use cases' 
- 
-url:  /how-to-guide-ideas-for-freeswitch/
- 
+description: Here are 50 top how-to guide ideas for FreeSWITCH, covering various aspects of its functionality and use cases
+url: /how-to-guide-ideas-for-freeswitch/
 featured_image: /images/pbxsoftswitches.webp
 categories:
     - Networks

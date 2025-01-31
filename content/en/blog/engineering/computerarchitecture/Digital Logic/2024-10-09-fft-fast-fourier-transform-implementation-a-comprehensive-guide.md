@@ -1,21 +1,17 @@
 ---
 draft: false
-
-title:  'FFT (Fast Fourier Transform) Implementation: A Comprehensive Guide'
-date: '2024-10-09T12:36:01+03:00'
+title: "FFT (Fast Fourier Transform) Implementation: A Comprehensive Guide"
+date: 2024-10-09T12:36:01+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering.' 
- 
-url:  /fft-fast-fourier-transform-implementation-a-comprehensive-guide/
- 
-featured_image: /images/digital-logic-design4-e1730067141777.webp
+description: The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering.
+url: /fft-fast-fourier-transform-implementation-a-comprehensive-guide/
+featured_image: /images/digital-logic-design.webp
 categories:
-    - 'Digital Logic Design'
+    - Digital Logic Design
 tags:
-    - 'computer engineering'
-    - 'digital logic design'
-    - 'fast Fourier transform'
+    - computer engineering
+    - digital logic design
+    - fast Fourier transform
     - fft
 ---
 
