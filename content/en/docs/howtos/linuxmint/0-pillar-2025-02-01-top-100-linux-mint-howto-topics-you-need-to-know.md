@@ -33,12 +33,12 @@ featured_image: /images/linuxmint1.webp
 9. [How to set up user accounts and passwords](/setting-up-user-accounts-and-passwords-on-linux-mint/)
 10. [How to configure system language and regional settings](/how-to-configure-system-language-and-regional-settings/)
 11. [How to set up keyboard layouts and input methods](/complete-guide-to-setting-up-keyboard-layouts-and-input-methods-on-linux-mint/)
-12. How to configure display resolution and multiple monitors
-13. How to install proprietary drivers
-14. How to set up printer and scanner support
-15. How to configure touchpad settings
-16. How to set up Bluetooth devices
-17. How to configure Wi-Fi and network connections
+12. [How to configure display resolution and multiple monitors](/how-to-configure-display-resolution-and-multiple-monitors-on-linux-mint/)
+13. [How to install proprietary drivers](/installing-proprietary-drivers-on-linux-mint/)
+14. [How to set up printer and scanner support](/how-to-set-up-printer-and-scanner-support-on-linux-mint/)
+15. [How to configure touchpad settings](/how-to-configure-touchpad-settings-on-linux-mint/)
+16. [How to set up Bluetooth devices](/complete-guide-to-setting-up-bluetooth-devices-on-linux-mint/)
+17. [How to configure Wi-Fi and network connections](/how-to-configure-wi-fi-and-network-connections-on-linux-mint/)
 18. How to set up system sounds and audio devices
 19. How to customize login screen settings
 20. How to configure power management options
