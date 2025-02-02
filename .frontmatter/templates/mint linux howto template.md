@@ -16,6 +16,5 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - Linux Mint
-  - how-to guides
 featured_image: /images/linuxmint1.webp
 ---

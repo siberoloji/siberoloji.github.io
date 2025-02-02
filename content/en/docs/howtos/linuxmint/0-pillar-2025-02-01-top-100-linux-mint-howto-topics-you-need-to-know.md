@@ -24,15 +24,15 @@ featured_image: /images/linuxmint1.webp
 
 1. [How to download Linux Mint ISO files and verify their integrity](/how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint/)
 2. [How to create a bootable USB drive with Linux Mint](/how-to-create-a-bootable-usb-drive-with-linux-mint/)
-3. How to perform a clean installation of Linux Mint
-4. How to set up dual boot with Windows
-5. How to configure UEFI/BIOS settings for Linux Mint installation
-6. How to choose the right Linux Mint edition (Cinnamon, MATE, or Xfce)
-7. How to partition your hard drive during installation
-8. How to encrypt your Linux Mint installation
-9. How to set up user accounts and passwords
-10. How to configure system language and regional settings
-11. How to set up keyboard layouts and input methods
+3. [How to perform a clean installation of Linux Mint](/how-to-perform-a-clean-installation-of-linux-mint-a-step-by-step-guide/)
+4. [How to set up dual boot with Windows](/how-to-set-up-a-dual-boot-with-windows-and-linux-mint-a-comprehensive-guide/)
+5. [How to configure UEFI/BIOS settings for Linux Mint installation](/how-to-configure-uefibios-settings-for-linux-mint-installation/)
+6. [How to choose the right Linux Mint edition (Cinnamon, MATE, or Xfce)](/how-to-choose-the-right-linux-mint-edition-cinnamon-mate-or-xfce/)
+7. [How to partition your hard drive during installation](/how-to-partition-your-hard-drive-during-installation/)
+8. [How to encrypt your Linux Mint installation](/how-to-encrypt-your-linux-mint-installation/)
+9. [How to set up user accounts and passwords](/setting-up-user-accounts-and-passwords-on-linux-mint/)
+10. [How to configure system language and regional settings](/how-to-configure-system-language-and-regional-settings/)
+11. [How to set up keyboard layouts and input methods](/complete-guide-to-setting-up-keyboard-layouts-and-input-methods-on-linux-mint/)
 12. How to configure display resolution and multiple monitors
 13. How to install proprietary drivers
 14. How to set up printer and scanner support

@@ -340,6 +340,46 @@
     {
       "title": "SoftwareEngineering",
       "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering"
+    },
+    {
+      "title": "cyberresearch",
+      "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity/cyberresearch"
+    },
+    {
+      "title": "pentest",
+      "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity/pentest"
+    },
+    {
+      "title": "osint",
+      "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity/osint"
+    },
+    {
+      "title": "datacommunications",
+      "path": "[[workspace]]/content/en/blog/engineering/Networks/datacommunications"
+    },
+    {
+      "title": "installation-setup",
+      "path": "[[workspace]]/content/en/docs/howtos/linuxmint/installation-setup"
+    },
+    {
+      "title": "cryptocurrency",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/cryptocurrency"
+    },
+    {
+      "title": "virtualization",
+      "path": "[[workspace]]/content/en/blog/engineering/SoftwareEngineering/virtualization"
+    },
+    {
+      "title": "algorithms",
+      "path": "[[workspace]]/content/en/blog/engineering/programming/algorithms"
+    },
+    {
+      "title": "sql",
+      "path": "[[workspace]]/content/en/blog/engineering/programming/sql"
+    },
+    {
+      "title": "howto",
+      "path": "[[workspace]]/content/en/blog/howto"
     }
   ],
   "frontMatter.git.enabled": true,
