@@ -55,21 +55,21 @@ featured_image: /images/linuxmint1.webp
 
 ## System Management (40 topics)
 
-1. How to update Linux Mint and manage software sources
-2. How to use the Update Manager effectively
-3. How to install and remove software using Software Manager
-4. How to use Synaptic Package Manager
-5. How to manage PPAs (Personal Package Archives)
-6. How to install applications from .deb files
-7. How to install applications from Flatpak
-8. How to manage system services
-9. How to monitor system resources
-10. How to clean up system storage
-11. How to manage user groups and permissions
-12. How to schedule system tasks with cron
-13. How to manage disk partitions with GParted
-14. How to check system logs
-15. How to troubleshoot boot issues
+1. [How to update Linux Mint and manage software sources](/how-to-update-linux-mint-and-manage-software-sources/)
+2. [How to use the Update Manager effectively](/mastering-the-update-manager-in-linux-mint/)
+3. [How to install and remove software using Software Manager](/how-to-install-and-remove-software-using-software-manager-on-linux-mint/)
+4. [How to use Synaptic Package Manager](/how-to-use-synaptic-package-manager-on-linux-mint/)
+5. [How to manage PPAs (Personal Package Archives)](/how-to-manage-ppas-personal-package-archives-on-linux-mint/)
+6. [How to install applications from .deb files](/how-to-install-applications-from-deb-files-on-linux-mint/)
+7. [How to install applications from Flatpak](/how-to-install-applications-from-flatpak-on-linux-mint/)
+8. [How to manage system services](/mastering-system-services-in-linux-mint/)
+9. [How to monitor system resources](/how-to-monitor-system-resources-on-linux-mint/)
+10. [How to clean up system storage](/optimize-system-storage-on-linux-mint/)
+11. [How to manage user groups and permissions](/managing-user-groups-and-permissions-in-linux-mint/)
+12. [How to schedule system tasks with cron](/scheduling-system-tasks-with-cron-in-linux-mint/)
+13. [How to manage disk partitions with GParted](/managing-disk-partitions-with-gparted-in-linux-mint/)
+14. [How to check system logs](/how-to-check-system-logs-on-linux-mint/)
+15. [How to troubleshoot boot issues](/fixing-boot-problems-in-linux-mint/)
 16. How to repair broken packages
 17. How to manage kernels
 18. How to create system restore points
