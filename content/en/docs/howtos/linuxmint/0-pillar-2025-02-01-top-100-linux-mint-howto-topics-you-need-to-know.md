@@ -1,12 +1,12 @@
 ---
 draft: false
-title: Top 100 Linux Mint How-to Topics You Need to Know
-linkTitle: Top 100 Topics
-translationKey: top-100-linux-mint-howto-topics-you-need-to-know
+title: Top 300 Linux Mint How-to Topics You Need to Know
+linkTitle: Top 300 Topics
+translationKey: top-300-linux-mint-howto-topics-you-need-to-know
 weight: 1
 description: A comprehensive list of the top 100 Linux Mint how-to topics you need to know to master your Linux Mint system.
 date: 2025-02-01
-url: /top-100-linux-mint-howto-topics-you-need-to-know/
+url: /top-300-linux-mint-howto-topics-you-need-to-know/
 tags:
   - Linux Mint
   - how-to guides
@@ -39,19 +39,19 @@ featured_image: /images/linuxmint1.webp
 15. [How to configure touchpad settings](/how-to-configure-touchpad-settings-on-linux-mint/)
 16. [How to set up Bluetooth devices](/complete-guide-to-setting-up-bluetooth-devices-on-linux-mint/)
 17. [How to configure Wi-Fi and network connections](/how-to-configure-wi-fi-and-network-connections-on-linux-mint/)
-18. How to set up system sounds and audio devices
-19. How to customize login screen settings
-20. How to configure power management options
-21. How to set up automatic system updates
-22. How to configure startup applications
-23. How to set up system backups
-24. How to configure system time and date
-25. How to set up file sharing
-26. How to configure firewall settings
-27. How to set up remote desktop access
-28. How to optimize SSD settings
-29. How to configure swap space
-30. How to set up hardware acceleration
+18. [How to set up system sounds and audio devices](/how-to-set-up-system-sounds-and-audio-devices-on-linux-mint/)
+19. [How to customize login screen settings](/customizing-the-login-screen-settings-on-linux-mint-a-comprehensive-guide/)
+20. [How to configure power management options](/configuring-power-management-options-on-linux-mint/)
+21. [How to set up automatic system updates](/how-to-set-up-automatic-system-updates-on-linux-mint/)
+22. [How to configure startup applications](/how-to-configure-startup-applications-on-linux-mint/)
+23. [How to set up system backups](/a-comprehensive-guide-to-setting-up-system-backups-on-linux-mint/)
+24. [How to configure system time and date](/how-to-configure-system-time-and-date-on-linux-mint/)
+25. [How to set up file sharing](/how-to-set-up-file-sharing-on-linux-mint/)
+26. [How to configure firewall settings](/configuring-firewall-settings-on-linux-mint/)
+27. [How to set up remote desktop access](/how-to-set-up-remote-desktop-access-on-linux-mint/)
+28. [How to optimize SSD settings](/boosting-ssd-speed-on-linux-mint/)
+29. [How to configure swap space](/configuring-swap-space-on-linux-mint-made-easy/)
+30. [How to set up hardware acceleration](/how-to-set-up-hardware-acceleration-on-linux-mint/)
 
 ## System Management (40 topics)
 

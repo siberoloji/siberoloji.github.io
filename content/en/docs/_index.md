@@ -20,3 +20,13 @@ Documentation section is being actively developed. Here is the list of recent pr
     How-to guides for AlmaLinux 9.
   {{< /card >}}
 {{< /cardpane >}}
+
+{{< cardpane>}}
+  {{< card header="Linux Mint" footer="[Docs Page](/linuxmint-howtos/)">}}
+    How-to guides for Linux Mint.
+  {{< /card >}}
+  {{< card header="Podcasting" footer="[Docs Page](/podcasting/)">}}
+    Easy steps for Successful Podcasting.
+  {{< /card >}}
+{{< /cardpane>}}
+ 

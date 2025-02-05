@@ -1,6 +1,7 @@
 ---
 draft: false
-title: Categorized List Of Lessons And Subtopics For A Computer Engineering Department Curriculum. 
+title: Categorized List Of Lessons And Subtopics For A Computer Engineering Department Curriculum.
+linkTitle: Computer Engineering Curriculum
 date: 2024-10-06T18:08:23+03:00
 weight: 1
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
