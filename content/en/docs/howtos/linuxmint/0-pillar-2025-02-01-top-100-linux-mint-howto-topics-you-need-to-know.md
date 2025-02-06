@@ -70,31 +70,31 @@ featured_image: /images/linuxmint1.webp
 13. [How to manage disk partitions with GParted](/managing-disk-partitions-with-gparted-in-linux-mint/)
 14. [How to check system logs](/how-to-check-system-logs-on-linux-mint/)
 15. [How to troubleshoot boot issues](/fixing-boot-problems-in-linux-mint/)
-16. How to repair broken packages
-17. How to manage kernels
-18. How to create system restore points
-19. How to optimize system performance
-20. How to manage startup applications
-21. How to configure system notifications
-22. How to manage system fonts
-23. How to handle package dependencies
-24. How to use the terminal effectively
-25. How to manage disk quotas
-26. How to set up disk encryption
-27. How to configure system backups
-28. How to manage system snapshots
-29. How to handle software conflicts
-30. How to manage system themes
-31. How to configure system sounds
-32. How to manage system shortcuts
-33. How to handle hardware drivers
-34. How to manage system processes
-35. How to configure system security
-36. How to manage file associations
-37. How to handle system updates
-38. How to manage system repositories
-39. How to configure system firewall
-40. How to optimize system resources
+16. [How to repair broken packages](/fixing-broken-packages-in-linux-mint-a-stepby-step-guide/)
+17. [How to manage kernels](/how-to-manage-kernels-on-linux-mint/)
+18. [How to create system restore points](/how-to-create-system-restore-points-on-linux-mint/)
+19. [How to optimize system performance](/how-to-optimize-system-performance-on-linux-mint/)
+20. [How to manage startup applications](/how-to-manage-startup-applications-on-linux-mint/)
+21. [How to configure system notifications](/how-to-configure-system-notifications-on-linux-mint/)
+22. [How to manage system fonts](/how-to-manage-system-fonts-on-linux-mint/)
+23. [How to handle package dependencies](/how-to-handle-package-dependencies/)
+24. [How to use the terminal effectively](/how-to-use-the-terminal-effectively-on-linux-mint/)
+25. [How to manage disk quotas](/how-to-manage-disk-quotas-on-linux-mint/)
+26. [How to set up disk encryption](/how-to-set-up-disk-encryption-on-linux-mint/)
+27. [How to configure system backups](/how-to-configure-system-backups-on-linux-mint/)
+28. [How to manage system snapshots](/how-to-manage-system-snapshots-on-linux-mint/)
+29. [How to handle software conflicts](/how-to-handle-software-conflicts-on-linux-mint/)
+30. [How to manage system themes](/how-to-manage-system-themes-on-linux-mint/)
+31. [How to configure system sounds](/how-to-configure-system-sounds-on-linux-mint/)
+32. [How to manage system shortcuts](/managing-system-shortcuts-in-linux-mint/)
+33. [How to handle hardware drivers](/managing-hardware-drivers-in-linux-mint/)
+34. [How to manage system processes](/managing-system-processes-in-linux-mint/)
+35. [How to configure system security](/configuring-system-security-on-linux-mint/)
+36. [How to manage file associations](/managing-file-associations-in-linux-mint/)
+37. [How to handle system updates](/managing-system-updates-in-linux-mint/)
+38. [How to manage system repositories](/managing-system-repositories-in-linux-mint/)
+39. [How to configure system firewall](/how-to-configure-system-firewall-on-linux-mint/)
+40. [How to optimize system resources](/how-to-optimize-system-resources-on-linux-mint/)
 
 ## Desktop Environment (35 topics)
 
