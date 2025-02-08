@@ -1,21 +1,22 @@
 ---
 draft: false
-title: null
-linkTitle: null
-translationKey: null
-description: null
-slug: null
-weight: 0
-date: null
+title: Kotlin Learning Curriculum
+linkTitle: Kotlin Learning Curriculum
+translationKey: kotlin-learning-curriculum
+description: A comprehensive guide to learning Kotlin programming from basics to advanced concepts
+url: kotlin-learning-curriculum
+weight: 1
+date: 2025-02-08
 tags:
-  - kotlin
-  - programming
+   - kotlin
+   - programming
 categories:
-  - Kotlin
-  - Programming
+   - Kotlin
+   - Programming
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
-  - Linux Mint
+   - kotlin
+   - programming
 featured_image: /images/kotlin-1.png
 ---
 
@@ -32,13 +33,13 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 ### Week 1: Getting Started
 
 1. Introduction to Kotlin
-   - History and purpose
-   - Kotlin vs Java
-   - Setting up development environment
+   - [History and purpose](/history-and-purpose-of-kotlin/)
+   - [Kotlin vs Java](/kotlin-vs-java-a-comprehensive-guide-to-understanding-their-differences/)
+   - [Setting up development environment](/setting-up-kotlin-development-environment/)
 
 2. Basic Syntax
-   - Variables and data types
-   - val vs var
+   - [Variables and data types](/variables-and-data-types-in-kotlin/)
+   - [val vs var](/val-vs-var-detailed-explanation-in-kotlin-programming-language/)
    - Type inference
    - Basic operators
    - String templates

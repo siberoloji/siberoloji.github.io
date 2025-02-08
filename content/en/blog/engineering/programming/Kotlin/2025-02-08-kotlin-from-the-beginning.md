@@ -17,20 +17,20 @@ featured_image: /images/Kotlin-Full-Color-Logo-on-White-RGB.png
 Kotlin is a modern programming language that is easy to learn, especially if you already know Java[1]. Kotlin is used to develop Android apps and server-side apps[1][2].
 
 Here is a plan to learn Kotlin from the beginning:
-1. **Kotlin Basics**:
- *   Start with Kotlin Docs[6].
- *   Learn the basics of Kotlin, including data types, operators, variables, control structures, and nullable versus non-nullable variables[5].
- *   Take a Kotlin quiz to gauge your knowledge[1].
+## [Kotlin Basics](https://www.w3schools.com/KOTLIN/index.php)
+ *   [Start with Kotlin Docs](https://discuss.kotlinlang.org/t/ability-to-learn-kotlin-for-1st-lang/25183)
+ *   [Learn the basics of Kotlin](https://developer.android.com/courses/pathways/android-development-with-kotlin-1), including data types, operators, variables, control structures, and nullable versus non-nullable variables.
+ *   Take a Kotlin quiz to gauge your knowledge.
 2. **Kotlin environment setup**
- *   Install the required IDE and other software that are essential for Kotlin[7].
- *   For larger projects, writing and managing Kotlin code on your local machine is important[9]. This allows you to work efficiently with multiple files and dependencies[9].
- *   Set up and use Kotlin on your computer for larger development projects[9].
+ *   Install the required IDE and other software that are essential for [Kotlin](https://www.tutorialspoint.com/kotlin/index.htm).
+ *   For larger projects, writing and managing Kotlin code on your local machine is [important](https://www.programiz.com/kotlin-programming). This allows you to work efficiently with multiple files and dependencies.
+ *   Set up and use Kotlin on your computer for larger development projects.
 3. **Learn Kotlin with examples**
  *   Learn by example with clarifying examples[1].
- *   Use the "Try it Yourself" editor to learn Kotlin. You can edit the code and view the result in your browser[1].
+ *   Use the "Try it Yourself" editor to learn Kotlin. You can edit the code and view the result in your browser.
 4. **Practice Kotlin**
- *   Develop small software or projects using Kotlin[7].
- *   Create Android apps[2][8].
+ *   [Develop small software](https://www.tutorialspoint.com/kotlin/index.htm) or projects using Kotlin.
+ *   Create [Android](https://android-developers.googleblog.com/2020/07/learn-android-and-kotlin-with-no-experience.html) [apps](https://www.youtube.com/watch?v=EExSSotojVI).
 5. **Advanced Kotlin topics**
  *   Object-oriented programming[2].
  *   Generics and Lambda functions[2].
