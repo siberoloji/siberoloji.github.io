@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Mastering bruteforcesalted-openssl on Kali Linux
 linkTitle: bruteforcesalted-openssl
 translationKey: mastering-bruteforcesalted-openssl

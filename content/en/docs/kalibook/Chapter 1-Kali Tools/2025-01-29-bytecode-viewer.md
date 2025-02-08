@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Bytecode Viewer on Kali Linux: A Comprehensive Guide"
 linkTitle: bytecode-viewer
 translationKey: bytecode-viewer-on-kali-linux-a-comprehensive-guide
