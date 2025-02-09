@@ -40,39 +40,39 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 2. Basic Syntax
    - [Variables and data types](/variables-and-data-types-in-kotlin/)
    - [val vs var](/val-vs-var-detailed-explanation-in-kotlin-programming-language/)
-   - Type inference
-   - Basic operators
-   - String templates
+   - [Type inference](/kotlin-type-inference-in-kotlin/)
+   - [Basic operators](/mastering-basic-operators-in-kotlin/)
+   - [String templates](/string-templates-in-kotlin/)
 
 3. Control Flow
-   - if/else expressions
-   - when expressions
-   - Loops (for, while, do-while)
-   - Ranges
-   - Jump expressions (break, continue, return)
+   - [if/else expressions](/ifelse-expressions-in-kotlin/)
+   - [when expressions](/when-expressions-in-kotlin/)
+   - [Loops (for, while, do-while)](/loops-in-kotlin/)
+   - [Ranges](/ranges-in-kotlin/)
+   - [Jump expressions (break, continue, return)](/jump-expressions-in-kotlin/)
 
 ### Week 2-3: Core Concepts
 
 1. Functions
-   - Function declarations
-   - Parameters and return types
-   - Single-expression functions
-   - Default arguments
-   - Named arguments
-   - Extension functions
+   - [Function declarations](/understanding-function-declarations-in-kotlin/)
+   - [Parameters and return types](/parameters-and-return-types-in-kotlin/)
+   - [Single-expression functions](/single-expression-functions-in-kotlin/)
+   - [Default arguments](/default-arguments-in-kotlin-functions/)
+   - [Named arguments](/named-arguments-in-kotlin/)
+   - [Extension functions](/extension-functions-in-kotlin/)
 
 2. Collections
-   - Lists, Sets, Maps
-   - Mutable vs Immutable collections
-   - Collection operations
-   - Sequences
+   - [Lists, Sets, Maps](/collections-in-kotlin-lists-sets-and-maps/)
+   - [Mutable vs Immutable collections](/mutable-vs-immutable-collections-in-kotlin/)
+   - [Collection operations](/collection-operations-in-kotlin/)
+   - [Sequences](/sequences-in-kotlin-collections/)
 
 3. Null Safety
-   - Nullable types
-   - Safe calls
-   - Elvis operator
-   - Not-null assertions
-   - Smart casts
+   - [Nullable types](/nullable-types-and-null-safety-in-kotlin/)
+   - [Safe calls](/safe-calls-in-kotlin-null-safety/)
+   - [Elvis operator](/the-elvis-operator-in-kotlin/)
+   - [Not-null assertions](/not-null-assertions-in-kotlin/)
+   - [Smart casts](/smart-casts-in-kotlin/)
 
 ## Level 2: Object-Oriented Programming (3-4 weeks)
 
