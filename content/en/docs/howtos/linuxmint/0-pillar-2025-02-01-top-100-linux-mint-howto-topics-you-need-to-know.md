@@ -98,26 +98,26 @@ featured_image: /images/linuxmint1.webp
 
 ## Desktop Environment (35 topics)
 
-1. How to customize the Cinnamon desktop
-2. How to manage desktop panels
-3. How to add and configure applets
-4. How to create custom desktop shortcuts
-5. How to manage desktop themes
-6. How to customize window behavior
-7. How to set up workspaces
-8. How to configure desktop effects
-9. How to manage desktop icons
-10. How to customize panel layouts
-11. How to set up hot corners
-12. How to manage window tiling
-13. How to customize system tray
-14. How to configure desktop notifications
-15. How to manage desktop widgets
-16. How to customize menu layouts
-17. How to set up keyboard shortcuts
-18. How to manage desktop backgrounds
-19. How to configure screen savers
-20. How to customize login screen
+1. [How to customize the Cinnamon desktop](/how-to-customize-the-cinnamon-desktop/)
+2. [How to manage desktop panels](/how-to-manage-desktop-panels/)
+3. [How to add and configure applets](/how-to-add-and-configure-applets/)
+4. [How to create custom desktop shortcuts](/how-to-create-custom-desktop-shortcuts-with-cinnamon/)
+5. [How to manage desktop themes](/how-to-manage-desktop-themes-with-cinnamon/)
+6. [How to customize window behavior](/how-to-customize-window-behavior-with-cinnamon/)
+7. [How to set up workspaces](/how-to-set-up-workspaces-with-cinnamon-desktop/)
+8. [How to configure desktop effects](/how-to-configure-desktop-effects-with-cinnamon-desktop/)
+9. [How to manage desktop icons](/desktop-icons-cinnamon-linux-mint/)
+10. [How to customize panel layouts](/customizing-panel-layouts-in-linux-mint-s-cinnamon-desktop/)
+11. [How to set up hot corners](/setting-up-and-mastering-hot-corners-in-linux-mint/)
+12. [How to manage window tiling](/managing-window-tiling-in-linux-mint-cinnamon-desktop/)
+13. [How to customize system tray](/customizing-the-system-tray-in-linux-mint-cinnamon-desktop/)
+14. [How to configure desktop notifications](/configuring-desktop-notifications-in-linux-mint-cinnamon-desktop/)
+15. [How to manage desktop widgets](/managing-desktop-widgets-in-linux-mint-cinnamon/)
+16. [How to customize menu layouts](/how-to-customize-menu-layouts-with-cinnamon-desktop/)
+17. [How to set up keyboard shortcuts](/conquer-your-keyboard-setting-up-keyboard-shortcuts-in-cinnamon-desktop/)
+18. [How to manage desktop backgrounds](/managing-backgrounds-in-cinnamon-on-linux-mint/)
+19. [How to configure screen savers](/configuring-screensavers-in-cinnamon-on-linux-mint/)
+20. [How to customize login screen](/customizing-the-login-screen-settings-on-linux-mint-a-comprehensive-guide/)
 21. How to manage desktop fonts
 22. How to configure desktop animations
 23. How to set up desktop zoom
