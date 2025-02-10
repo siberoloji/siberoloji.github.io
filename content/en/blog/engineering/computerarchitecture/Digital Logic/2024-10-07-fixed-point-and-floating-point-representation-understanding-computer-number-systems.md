@@ -1,6 +1,8 @@
 ---
 draft: false
 title: Fixed-Point and Floating-Point Representation
+description: Understanding fixed-point and floating-point representations
+translationKey: fixed-point-and-floating-point-representation
 date: 2024-10-07T21:47:18+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /fixed-point-and-floating-point-representation-understanding-computer-number-systems/

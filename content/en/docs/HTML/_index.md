@@ -1,6 +1,6 @@
 ---
 title: HTML
-weight: 13
+weight: 80
 url: /hypertext-markup-language/
 # simple_list: true
 ---

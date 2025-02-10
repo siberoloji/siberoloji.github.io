@@ -4,7 +4,7 @@ type: page
 prev: docs/first-page
 next: docs/bob/bobsalmalinuxadventures
 url: /bob/
-weight: 4
+weight: 30
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 ---

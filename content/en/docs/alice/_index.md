@@ -1,7 +1,7 @@
 ---
 title: Alice's Adventures
 url: /alice/
-weight: 3
+weight: 20
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 simple_list: true
 ---

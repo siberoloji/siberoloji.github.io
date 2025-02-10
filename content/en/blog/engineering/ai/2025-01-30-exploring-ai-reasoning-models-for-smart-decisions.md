@@ -4,7 +4,7 @@ title: Exploring AI Reasoning Models for Smart Decisions
 linkTitle: Reasoning Models
 translationKey: exploring-ai-reasoning-models-for-smart-decisions
 description: Learn what reasoning models are, how they work, their applications, and the challenges they face in shaping the future of AI.
-slug: exploring-ai-reasoning-models-for-smart-decisions
+url: exploring-ai-reasoning-models-for-smart-decisions
 date: 2025-01-30
 tags:
     - AI

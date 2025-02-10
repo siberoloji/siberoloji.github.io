@@ -2,6 +2,7 @@
 title: How-tos
 type: page
 url: howto-documents
+weight: 100
 simple_list: true
 ---
 

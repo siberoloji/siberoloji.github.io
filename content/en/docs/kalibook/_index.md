@@ -1,7 +1,7 @@
 ---
 title: Kali Book
 url: /kali-book/
-weight: 2
+weight: 10
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 ---
