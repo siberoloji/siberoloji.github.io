@@ -79,26 +79,26 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 ### Week 4-5: Classes and Objects
 
 1. Classes and Properties
-   - Class declaration
-   - Primary and secondary constructors
-   - Properties and backing fields
-   - Getters and setters
-   - Late-initialized properties
+   - [Class declaration](/class-declaration-and-properties-in-kotlin/)
+   - [Primary and secondary constructors](/primary-and-secondary-constructors-in-classes-and-properties-in-kotlin/)
+   - [Properties and backing fields](/properties-and-backing-fields-in-kotlin/)
+   - [Getters and setters](/getters-and-setters-in-kotlin/)
+   - [Late-initialized properties](/late-initialized-properties-in-kotlin/)
 
 2. Inheritance and Interfaces
-   - Open classes
-   - Abstract classes
-   - Interfaces
-   - Method overriding
-   - Property overriding
+   - [Open classes](/open-classes-in-kotlin/)
+   - [Abstract classes](/abstract-classes-in-kotlin/)
+   - [Interfaces](/interfaces-in-kotlin/)
+   - [Method overriding](/method-overriding-in-kotlin/)
+   - [Property overriding](/property-overriding-in-kotlin/)
 
 3. Object-Oriented Concepts
-   - Visibility modifiers
-   - Data classes
-   - Sealed classes
-   - Enum classes
-   - Object declarations
-   - Companion objects
+   - [Visibility modifiers](/visibility-modifiers-in-kotlin/)
+   - [Data classes](/data-classes-in-kotlin/)
+   - [Sealed classes](/sealed-classes-in-kotlin/)
+   - [Enum classes](/enum-classes-in-kotlin/)
+   - [Object declarations](/understanding-object-declarations-in-kotlin/)
+   - [Companion objects](/companion-objects-in-kotlin/)
 
 ### Week 6-7: Advanced OOP
 
