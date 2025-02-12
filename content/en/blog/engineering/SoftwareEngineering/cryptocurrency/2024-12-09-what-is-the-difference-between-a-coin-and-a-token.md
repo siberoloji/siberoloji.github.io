@@ -15,8 +15,9 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 featured_image: /images/cryptocurrency5.webp
-sidebar:
-   open: true
+
+
+
 url: difference-coin-token
 ---
 The distinction between coins and tokens is fundamental in the cryptocurrency landscape, and understanding this difference is crucial for anyone venturing into the world of digital assets. Here’s a breakdown of the key differences between coins and tokens based on the provided search results.
