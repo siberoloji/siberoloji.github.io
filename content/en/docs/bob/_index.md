@@ -1,10 +1,8 @@
 ---
 title: Bob's Adventures
-type: page
-prev: docs/first-page
-next: docs/bob/bobsalmalinuxadventures
 url: /bob/
 weight: 30
+translationKey: bob-s-adventures
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 ---

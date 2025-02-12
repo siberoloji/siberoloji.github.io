@@ -4,6 +4,7 @@ url: /alice/
 weight: 20
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 simple_list: true
+translationKey: alice-s-adventures
 ---
 
 **Meet Alice, the Blogger Girl**
