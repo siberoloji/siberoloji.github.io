@@ -21,12 +21,14 @@
 	</header>
 	{{ .Content }}
 	{{ partial "feedback.html" . -}}
+	{{ partial "pager.html" . }}
 	{{ if (.Site.Config.Services.Disqus.Shortname) -}}
 		<br />
 		{{- partial "disqus-comment.html" . -}}
 	{{ end -}}
 	{{ partial "social-share.html" . }}
 	{{ partial "giscus.html" . }}
+	
 	{{ partial "page-meta-lastmod.html" . }}
 </div> 
 {{/**/ -}}

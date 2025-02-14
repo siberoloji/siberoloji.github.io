@@ -3,6 +3,8 @@ title: Siberoloji
 languageCode: en-us
 description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics. With clear, detailed explanations that provide practical insights into complex concepts.
 
+
+
 services:
   googleAnalytics:
         id: G-EXGYZTJ3G7  # www.siberoloji.com
@@ -11,6 +13,8 @@ services:
 # set up the number of blog post summary in the list page.
 pagination:
   pagerSize: 20
+  reversePagination: true
+
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
