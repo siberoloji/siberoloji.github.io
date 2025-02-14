@@ -118,21 +118,21 @@ featured_image: /images/linuxmint1.webp
 18. [How to manage desktop backgrounds](/managing-backgrounds-in-cinnamon-on-linux-mint/)
 19. [How to configure screen savers](/configuring-screensavers-in-cinnamon-on-linux-mint/)
 20. [How to customize login screen](/customizing-the-login-screen-settings-on-linux-mint-a-comprehensive-guide/)
-21. How to manage desktop fonts
-22. How to configure desktop animations
-23. How to set up desktop zoom
-24. How to manage desktop accessibility
-25. How to customize desktop colors
-26. How to configure desktop scaling
-27. How to manage desktop shadows
-28. How to customize window decorations
-29. How to set up desktop transitions
-30. How to manage desktop transparency
-31. How to configure desktop compositing
-32. How to customize desktop cursors
-33. How to manage desktop sounds
-34. How to set up desktop gestures
-35. How to configure desktop power settings
+21. [How to manage desktop fonts](/how-to-manage-desktop-fonts-with-cinnamon-desktop-on-linux-mint/)
+22. [How to configure desktop animations](/how-to-configure-desktop-animations-with-cinnamon-desktop-on-linux-mint/)
+23. [How to set up desktop zoom](/how-to-set-up-desktop-zoom-with-cinnamon-desktop-on-linux-mint/)
+24. [How to manage desktop accessibility](/how-to-manage-desktop-accessibility-with-cinnamon-desktop-on-linux-mint/)
+25. [How to customize desktop colors](/how-to-customize-desktop-colors-with-cinnamon-desktop-on-linux-mint/)
+26. [How to configure desktop scaling](/how-to-configure-desktop-scaling-with-cinnamon-desktop-on-linux-mint/)
+27. [How to manage desktop shadows](/how-to-manage-desktop-shadows-with-cinnamon-desktop-on-linux-mint/)
+28. [How to customize window decorations](/how-to-customize-window-decorations-with-cinnamon/)
+29. [How to set up desktop transitions](/how-to-set-up-desktop-transitions-with-cinnamon-desktop/)
+30. [How to manage desktop transparency](/how-to-manage-desktop-transparency-with-cinnamon-desktop-on-linux-mint/)
+31. [How to configure desktop compositing](/how-to-configure-desktop-compositing-with-cinnamon-desktop-on-linux-mint/)
+32. [How to customize desktop cursors](/how-to-customize-desktop-cursors-with-cinnamon-desktop-on-linux-mint/)
+33. [How to manage desktop sounds](/how-to-manage-desktop-sounds-with-cinnamon-desktop-on-linux-mint/)
+34. [How to set up desktop gestures](/how-to-set-up-desktop-gestures-with-cinnamon-desktop/)
+35. [How to configure desktop power settings](/how-to-configure-desktop-power-settings-with-cinnamon-desktop-on-linux-mint/)
 
 ## File Management (30 topics)
 

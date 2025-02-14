@@ -1,9 +1,10 @@
 ---
 title: Alice'in Maceraları
 url: /tr/alice/
-weight: 3
+weight: 20
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 simple_list: true
+translationKey: alice-s-adventures
 ---
 
 **Blog Yazarı Alice ile tanışın**

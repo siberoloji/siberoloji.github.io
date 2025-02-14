@@ -103,18 +103,18 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 ### Week 6-7: Advanced OOP
 
 1. Generics
-   - Generic classes
-   - Generic functions
-   - Type projections
-   - Variance (in/out)
-   - Reified type parameters
+   - [Generic classes](/generic-classes-in-kotlin/)
+   - [Generic functions](/generic-functions-in-kotlin/)
+   - [Type projections](/type-projections-in-kotlin/)
+   - [Variance (in/out)](/variance-inout-in-kotlin/)
+   - [Reified type parameters](/reified-type-parameters-in-kotlin/)
 
 2. Delegation
-   - Class delegation
-   - Property delegation
-   - Observable properties
-   - Lazy properties
-   - Delegates.observable()
+   - [Class delegation](/class-delegation-in-kotlin/)
+   - [Property delegation](/property-delegation-in-kotlin/)
+   - [Observable properties](/observable-properties-in-kotlin/)
+   - [Lazy properties](/lazy-properties-in-kotlin/)
+   - [Delegates.observable()](/delegates-observable-in-kotlin/)
 
 ## Level 3: Functional Programming (3-4 weeks)
 

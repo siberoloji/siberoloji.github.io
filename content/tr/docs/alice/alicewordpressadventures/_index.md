@@ -3,7 +3,7 @@ title: Alice'in Wordpress Maceraları
 url: /tr/alice-wordpress/
 weight: 1
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-simple_list: true
+translationKey: alice-s-wordpress-adventures
 ---
 
 ## Motivasyon

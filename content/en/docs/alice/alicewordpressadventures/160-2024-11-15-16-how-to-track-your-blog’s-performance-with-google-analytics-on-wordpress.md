@@ -14,7 +14,7 @@ weight: 160
 keywords:
   - Google Analytics on WordPress
 featured_image: /images/alice-interview.webp
-url: track-blog’s-performance-google-analytics-wordpress
+url: track-blogs-performance-google-analytics-wordpress
 translationKey: track-blogs-performance-google-analytics-wordpress
 ---
 Alice has put a lot of effort into creating engaging content for her WordPress blog, sharing her passion with readers and building a loyal following. But now she’s wondering—how can she tell if her blog is truly resonating with her audience? The answer lies in data. By tracking her blog’s performance with Google Analytics, Alice can gain valuable insights into how visitors interact with her site, which posts perform best, and how to optimize her content strategy.
