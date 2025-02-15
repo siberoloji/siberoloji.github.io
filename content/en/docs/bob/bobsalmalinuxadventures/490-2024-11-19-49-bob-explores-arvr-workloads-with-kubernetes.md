@@ -12,10 +12,10 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 490
 featured_image: /images/bobs-adventures-with-alma-linux.png
+translationKey: bob-explores-ar-vr-workloads-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 49, *"Bob Explores AR/VR Workloads with Kubernetes!"*. In this chapter, Bob tackles the complexities of deploying and managing **Augmented Reality (AR)** and **Virtual Reality (VR)** workloads on Kubernetes, focusing on real-time rendering, low latency, and scalable deployment for immersive experiences.
 

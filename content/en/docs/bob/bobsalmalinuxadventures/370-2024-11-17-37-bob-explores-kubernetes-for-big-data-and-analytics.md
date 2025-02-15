@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 370
-
 keywords:
   - Kubernetes for Big Data and Analytics
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-explores-kubernetes-big-data-analytics-alma-linux
+translationKey: bob-explores-kubernetes-big-data-analytics-alma-linux
 ---
 Let’s dive into Chapter 37, *"Bob Explores Kubernetes for Big Data and Analytics!"*. In this chapter, Bob will learn how to use Kubernetes for managing and processing large-scale data workloads using tools like **Apache Spark**, **Hadoop**, and **Presto**, leveraging the scalability and resilience of Kubernetes for data analytics.
 

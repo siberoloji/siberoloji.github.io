@@ -11,11 +11,11 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 480
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: high-performance-computing-kubernetes-alma-linux
+translationKey: high-performance-computing-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 48, *"Bob Tackles High-Performance Computing with Kubernetes!"*. In this chapter, Bob explores how to leverage Kubernetes for **High-Performance Computing (HPC)** workloads, including scientific simulations, machine learning training, and other compute-intensive tasks.
 

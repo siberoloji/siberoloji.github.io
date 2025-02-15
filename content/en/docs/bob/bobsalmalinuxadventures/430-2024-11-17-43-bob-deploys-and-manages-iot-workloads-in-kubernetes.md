@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 430
-
 keywords:
   - IoT Workloads in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-deploys-manages-iot-workloads-kubernetes-alma-linux
+translationKey: bob-deploys-manages-iot-workloads-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 43, *"Bob Deploys and Manages IoT Workloads in Kubernetes!"*. In this chapter, Bob explores how to design and deploy IoT workloads using Kubernetes, managing sensor data pipelines, real-time processing, and integration with edge devices.
 

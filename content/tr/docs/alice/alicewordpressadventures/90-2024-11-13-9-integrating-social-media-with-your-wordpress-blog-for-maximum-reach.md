@@ -4,7 +4,7 @@ linkTitle: Sosyal Medya Entegrasyonu
 description: Sosyal medya entegrasyonu Alice'in içeriğini tanıtmasına, benzer düşünen kişilerle bağlantı kurmasına ve Facebook, Twitter, Instagram, Pinterest gibi platformlarda hedef kitlesiyle etkileşime girmesine olanak tanır.
 date: 2024-11-13
 weight: 90
-draft: true
+draft: false
 tags:
   - blog publishing
   - Integrating Social Media
@@ -29,7 +29,7 @@ Bu kılavuz Alice'i (ve sizi) maksimum erişim için sosyal medyayı bir WordPre
 Sosyal paylaşımı teşvik etmenin en kolay yollarından biri blog gönderilerine paylaşım düğmeleri eklemektir.
 
 - **Sosyal Paylaşım İçin Eklentiler:** WordPress, sosyal paylaşım düğmeleri eklemek için çok sayıda eklenti sunar. Popüler seçenekler şunlardır:
-- **Sosyal Savaş**: Alice'in gönderilerine dikkat çekici, özelleştirilebilir düğmeler eklemesini sağlar.
+- **Social Warfare**: Alice'in gönderilerine dikkat çekici, özelleştirilebilir düğmeler eklemesini sağlar.
 - **AddToAny Share Buttons**: Bu eklenti 100'den fazla sosyal medya platformunu destekler ve içerik paylaşmanın basit bir yolunu sunar.
 - **Monarch by Elegant Themes**: Kayan kenar çubukları ve açılır pencereler dahil olmak üzere güzel ve esnek düğme yerleşimleri sunar.
 - **Düğme Yerleşimi Önemlidir:** Alice, okuyucuların içeriğini paylaşmasını kolaylaştırmak için gönderilerinin üstüne, altına veya yanına stratejik olarak düğmeler yerleştirmelidir. Bazı eklentiler, Alice'e gönderilerinin nasıl paylaşılacağı konusunda maksimum kontrol sağlayarak içeriğin içine de yerleştirmeye izin verir.
@@ -41,7 +41,8 @@ Sosyal paylaşımı teşvik etmenin en kolay yollarından biri blog gönderileri
 Sosyal medya akışlarını WordPress bloguna yerleştirmek, Alice'in en son güncellemelerini sergilemesini ve okuyucuları sosyal medya profillerini takip etmeye teşvik etmesini sağlar.
 
 - **Sosyal Akışlar için Eklentileri Kullanma:**
-- **Smash Balloon Sosyal Fotoğraf Akışı** (Instagram için): Alice'in Instagram fotoğraflarının özelleştirilebilir akışlarını görüntüler, görsel olarak çekici hobiler için mükemmeldir. - **Smash Balloon Tarafından Özel Twitter Akışları**: Alice'in Twitter akışını entegre ederek tweet'lerini ve yanıtlarını gerçek zamanlı olarak gösterir.
+- **Smash Balloon Sosyal Fotoğraf Akışı** (Instagram için): Alice'in Instagram fotoğraflarının özelleştirilebilir akışlarını görüntüler, görsel olarak çekici hobiler için mükemmeldir.
+- **Smash Balloon Tarafından Özel Twitter Akışları**: Alice'in Twitter akışını entegre ederek tweet'lerini ve yanıtlarını gerçek zamanlı olarak gösterir.
 - **Facebook Feed Pro**: Alice'in Facebook sayfasından veya grubundan gönderileri görüntüler.
 - **Neden Etkilidir:** Canlı akışlar Alice'in bloguna dinamik içerik ekleyerek onu taze tutar ve okuyucuları sosyal platformlarda etkileşime girmeye teşvik eder.
 
@@ -52,7 +53,8 @@ Sosyal medya akışlarını WordPress bloguna yerleştirmek, Alice'in en son gü
 Alice, erişimi en üst düzeye çıkarmak için yeni gönderilerini yayınlanır yayınlanmaz birden fazla platformda otomatik olarak paylaşabilir.
 
 - **Jetpack'in Duyuru Özelliği:** Jetpack, gönderileri Facebook, Twitter, LinkedIn ve daha fazlasında otomatik olarak paylaşmayı kolaylaştırır.
-- **Blog2Social Eklentisi:** Zamanlama yetenekleriyle kapsamlı otomatik paylaşım seçenekleri sunar ve Alice'in gönderilerinin ne zaman ve nerede görüneceğini optimize etmesini sağlar. - **IFTTT (If This Then That) Otomasyonları:** Alice, "Yeni bir blog yazısı yayınlandığında Twitter'da paylaş" gibi özel kurallar ayarlayabilir.
+- **Blog2Social Eklentisi:** Zamanlama yetenekleriyle kapsamlı otomatik paylaşım seçenekleri sunar ve Alice'in gönderilerinin ne zaman ve nerede görüneceğini optimize etmesini sağlar.
+- **IFTTT (If This Then That) Otomasyonları:** Alice, "Yeni bir blog yazısı yayınlandığında Twitter'da paylaş" gibi özel kurallar ayarlayabilir.
 
 ---
 
@@ -96,7 +98,7 @@ Takip düğmeleri, okuyucuların onu doğrudan blogdan takip etmesini kolaylaşt
 
 Tıkla-Tweet kutuları, okuyucuları bir gönderiden belirli alıntılar veya önemli çıkarımlar paylaşmaya teşvik eder.
 
-- **Tıkla-Tweet Eklentileri:** Alice, özelleştirilebilir mesajlarla çekici kutular oluşturmak için **Daha İyi Tıkla-Tweet**'i kullanabilir.
+- **Tıkla-Tweet Eklentileri:** Alice, özelleştirilebilir mesajlarla çekici kutular oluşturmak için **Better Click to Tweet** gibi eklentiler kullanabilir.
 - **Önemli Noktaları Vurgula:** Alıntılar, istatistikler veya ilgi çekici kesitler seçmek sosyal paylaşım şansını artırır.
 
 ---
@@ -105,7 +107,8 @@ Tıkla-Tweet kutuları, okuyucuları bir gönderiden belirli alıntılar veya ö
 
 Alice, yalnızca bağlantıları paylaşmak yerine, içeriğini her sosyal platform için özelleştirebilir.
 
-- **Özel Gönderiler:** Mesajı farklı platformlar için ayarlayın (örneğin, Twitter için daha kısa gönderiler, Instagram için resim ağırlıklı gönderiler). - **Hikayeleri ve Reels'i Kullanın:** Alice, Instagram ve Facebook gibi platformlarda sahne arkası bakışlarla yeni blog içeriklerini tanıtmak için Hikayeleri veya Reels'i kullanabilir.
+- **Özel Gönderiler:** Mesajı farklı platformlar için ayarlayın (örneğin, Twitter için daha kısa gönderiler, Instagram için resim ağırlıklı gönderiler).
+- **Hikayeleri ve Reels'i Kullanın:** Alice, Instagram ve Facebook gibi platformlarda sahne arkası bakışlarla yeni blog içeriklerini tanıtmak için Hikayeleri veya Reels'i kullanabilir.
 
 ---
 

@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 420
-
 keywords:
   - Disaster Recovery in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-ensures-high-availability-disaster-recovery-kubernetes-alma-linux
+translationKey: bob-ensures-high-availability-disaster-recovery-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 42, *"Bob Ensures High Availability and Disaster Recovery in Kubernetes!"*. In this chapter, Bob will focus on strategies to make his Kubernetes cluster resilient against outages, ensuring minimal downtime and data loss during disasters.
 

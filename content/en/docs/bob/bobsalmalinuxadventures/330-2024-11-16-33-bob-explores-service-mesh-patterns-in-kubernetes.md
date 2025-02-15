@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 330
-
 keywords:
   - Service Mesh Patterns
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-explores-service-mesh-patterns-kubernetes-alma-linux
+translationKey: bob-explores-service-mesh-patterns-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 33, *"Bob Explores Service Mesh Patterns in Kubernetes!"*. In this chapter, Bob will learn how to use **service mesh tools** like Istio and Linkerd to implement advanced traffic control, security, and observability for microservices running in his Kubernetes cluster.
 

@@ -3,7 +3,7 @@ title: WordPress'te Yorumlar ve Tartışma Eklentileriyle Okuyucu Katılımını
 linkTitle: Tartışma Eklentileri
 description: Bu kılavuz Alice'e (ve size) WordPress yorumlarını kullanarak okuyucu etkileşimini artırmak için en iyi uygulamaları anlatacak ve etkileşimleri yönetmek ve optimize etmek için en iyi tartışma eklentilerinden bazılarını inceleyecektir.
 date: 2024-11-15
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -29,7 +29,8 @@ Bu kılavuz, Alice'i (ve sizi) WordPress yorumlarını kullanarak okuyucu etkile
 
 Yorumlar, Alice ile okuyucuları arasında bir köprü görevi görür. Yorumları etkinleştirmenin ve geliştirmenin neden önemli olduğunu açıklıyoruz:
 
-- **Topluluk Oluşturur:** İlgi çekici yorumlar, bir aidiyet duygusu yaratır ve okuyucuları düşüncelerini ve deneyimlerini paylaşmaya teşvik eder. - **Etkileşimi Artırır:** Düşünceli tartışmalar, okuyucuların Alice'in blogunda daha uzun süre kalmasını sağlayarak, kalma süresini ve genel etkileşimi artırır.
+- **Topluluk Oluşturur:** İlgi çekici yorumlar, bir aidiyet duygusu yaratır ve okuyucuları düşüncelerini ve deneyimlerini paylaşmaya teşvik eder.
+- **Etkileşimi Artırır:** Düşünceli tartışmalar, okuyucuların Alice'in blogunda daha uzun süre kalmasını sağlayarak, kalma süresini ve genel etkileşimi artırır.
 - **Değerli Geri Bildirim Sağlar:** Yorumlar, okuyucuların nelerden hoşlandığına dair içgörüler sunarak Alice'in içerik stratejisini geliştirmesine yardımcı olabilir.
 - **SEO'yu Artırır:** Etkileşimli yorumlar, içerik alaka düzeyini artırabilir ve SEO için elverişli olan yeni içerik güncellemeleri sağlayabilir.
 
@@ -42,7 +43,8 @@ Varsayılan olarak, WordPress, Alice'in gönderileri için etkinleştirebileceğ
 ##### **a. Yorumları Etkinleştirme**
 
 - **Adım 1:** WordPress panosunda *Ayarlar > Tartışma* bölümüne gidin.
-- **Adım 2:** *Kişilerin yeni makalelere yorum göndermesine izin ver* yazan kutuyu işaretleyin. - **Adım 3:** Yeni yorumlar için onay gerektirme, yorum denetimini etkinleştirme ve kimlerin gönderi yapabileceğini kontrol etme gibi ek seçenekleri yapılandırın.
+- **Adım 2:** *Kişilerin yeni makalelere yorum göndermesine izin ver* yazan kutuyu işaretleyin.
+- **Adım 3:** Yeni yorumlar için onay gerektirme, yorum denetimini etkinleştirme ve kimlerin gönderi yapabileceğini kontrol etme gibi ek seçenekleri yapılandırın.
 
 ##### **b. Yorumları Denetleme**
 
@@ -96,7 +98,8 @@ Yerel WordPress yorum sistemi temel yorumlar için yeterli olsa da, Alice eklent
 - Dahili moderasyon araçları ve analizler.
 - Kullanıcılar sosyal medya hesaplarıyla oturum açabilir.
 - **Eksileri:**
-- Reklam görüntüler (ücretli bir planla kaldırılabilir). - Bazı kullanıcılar Disqus hesabı oluşturmayı tercih etmeyebilir.
+- Reklam görüntüler (ücretli bir planla kaldırılabilir).
+- Bazı kullanıcılar Disqus hesabı oluşturmayı tercih etmeyebilir.
 
 ##### **b. wpDiscuz**
 

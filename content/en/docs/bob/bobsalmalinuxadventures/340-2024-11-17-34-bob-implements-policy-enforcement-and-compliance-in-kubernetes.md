@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 340
-
 keywords:
   - Policy Enforcement and Compliance in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-implements-policy-enforcement-compliance-kubernetes-alma-linux
+translationKey: bob-implements-policy-enforcement-compliance-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 34, "Bob Implements Policy Enforcement and Compliance in Kubernetes!". In this chapter, Bob will explore tools and strategies to enforce policies and ensure compliance with organizational and regulatory requirements in his Kubernetes cluster.
 

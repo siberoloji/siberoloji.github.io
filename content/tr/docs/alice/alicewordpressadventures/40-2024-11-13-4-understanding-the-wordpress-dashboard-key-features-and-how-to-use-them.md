@@ -4,7 +4,7 @@ linkTitle: Wordpress Kontrol Paneli
 description: Bu rehber Alice'e (ve tüm yeni blog yazarlarına) WordPress panelinin temel özelliklerini ve bunları etkili bir şekilde nasıl kullanacağını öğretecektir.
 date: 2024-11-13
 weight: 40
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -17,7 +17,7 @@ keywords:
 url: /tr/understanding-wordpress-dashboard-key-features
 translationKey: understanding-wordpress-dashboard-key-features
 ---
-Alice blog yolculuğuna başlamaya hazır ve WordPress'e ilk kez giriş yaptığında, kendisini WordPress panosuyla karşılanmış buluyor. İlk bakışta, pano menüleri, ayarları ve seçenekleriyle bunaltıcı görünebilir. Ancak, Alice'in blogunun her yönünü yönetebileceği merkezi bir merkez görevi görerek sezgisel olacak şekilde tasarlanmıştır.
+Alice blog yolculuğuna başlamaya hazır ve WordPress'e ilk kez giriş yaptığında, kendisini WordPress panosuyla karşılanmış buluyor. İlk bakışta, pano menüleri, ayarları ve seçenekleriyle bunaltıcı görünebilir. Ancak bu pano, Alice'in blogunun her yönünü yönetebileceği bir merkez görevi görerek sezgisel olacak şekilde tasarlanmıştır.
 
 Bu kılavuz Alice'i (ve herhangi bir yeni blog yazarını) WordPress panosunun temel özellikleri ve bunları etkili bir şekilde nasıl kullanacağı konusunda bilgilendirecektir. Sonunda Alice panoda gezinme, sitesini özelleştirme ve içeriği kolayca yönetme konusunda rahat olacaktır.
 
@@ -75,7 +75,8 @@ Göstergenin sol tarafında WordPress için ana gezinme menüsü olan **Yönetic
 
 ##### **e. Görünüm**
 
-- **Amaç:** Alice'in blogunun görünümünü ve hissini kontrol eder. - **Tema Seçenekleri:**
+- **Amaç:** Alice'in blogunun görünümünü ve hissini kontrol eder. 
+- **Tema Seçenekleri:**
 - *Temalar*: Alice'in temaları yüklemesine, etkinleştirmesine ve özelleştirmesine izin verir.
 - *Özelleştir*: Alice'in site kimliğini, menüleri, widget'ları, renkleri ve daha fazlasını gerçek zamanlı önizlemelerle ayarlayabildiği WordPress Özelleştiricisini açar.
 - *Widget'lar*: Widget'lar kenar çubuklarına ve diğer widget'a hazır alanlara içerik ve işlevsellik ekler.
@@ -119,7 +120,7 @@ Göstergenin sol tarafında WordPress için ana gezinme menüsü olan **Yönetic
 Alice ilk yazısını oluşturmak için *Yazılar > Yeni Ekle*'ye gidebilir. İşte temel unsurların kısa bir özeti:
 
 - **Başlık ve İçerik Düzenleyicisi:** Alice bir başlık ekleyebilir ve ana içerik düzenleyicisinde yazmaya başlayabilir. Gutenberg blok düzenleyicisi, metin, resim, galeri, yerleştirme ve daha fazlasını ayrı bloklar olarak ekleme esnekliği sunar.
-- Biçimlendirme Seçenekleri:** Alice ilgi çekici içerik oluşturmak için başlıkları, listeleri, alıntıları ve medya bloklarını kullanabilir.
+- **Biçimlendirme Seçenekleri:** Alice ilgi çekici içerik oluşturmak için başlıkları, listeleri, alıntıları ve medya bloklarını kullanabilir.
 - **Yayınlama Ayarları:** Alice taslakları kaydedebilir, yazıları önizleyebilir, yayınlamayı planlayabilir ve görünürlüğü (genel, özel veya parola korumalı) ayarlayabilir.
 - **Kategoriler ve Etiketler:** Kategoriler ve etiketler atamak, okuyucuların ilgili içerikte gezinmesine yardımcı olur.
 
@@ -143,7 +144,8 @@ Eklentileri yüklemek için Alice, *Eklentiler > Yeni Ekle*'ye gidebilir, istedi
 
 Düzenli güncellemeler siteyi güvenli ve işlevsel tutar. Panonun üst çubuğu genellikle WordPress çekirdeği, temalar ve eklentiler için güncelleme bildirimleri görüntüler. Alice şunları yapmalıdır:
 
-- **Güncellemelerden Önce Yedekleme:** Büyük güncellemeler yapmadan önce siteyi her zaman yedekleyin. - **Otomatik Güncellemeler:** Bazı barındırma sağlayıcıları ve eklentiler daha fazla kolaylık için otomatik güncellemeleri destekler.
+- **Güncellemelerden Önce Yedekleme:** Büyük güncellemeler yapmadan önce siteyi her zaman yedekleyin. 
+- **Otomatik Güncellemeler:** Bazı barındırma sağlayıcıları ve eklentiler daha fazla kolaylık için otomatik güncellemeleri destekler.
 
 ---
 
@@ -155,4 +157,4 @@ Düzenli güncellemeler siteyi güvenli ve işlevsel tutar. Panonun üst çubuğ
 
 ### **Sonuç**
 
-WordPress panosunu ve temel özelliklerini anlayarak Alice blogunu etkili bir şekilde yönetebilir, ilgi çekici içerikler oluşturabilir ve sitesini benzersiz stilini yansıtacak şekilde özelleştirebilir. Pano ilk başta karmaşık görünse de, hızla ikinci doğası haline gelir. Zamanla Alice, WordPress sitesinin her yönünde gezinirken ve ustalaşırken kendine güvenecektir.
+WordPress panosunu ve temel özelliklerini anlayarak Alice blogunu etkili bir şekilde yönetebilir, ilgi çekici içerikler oluşturabilir ve sitesini benzersiz stilini yansıtacak şekilde özelleştirebilir. Pano ilk başta karmaşık görünse de, zamanla daha işlevsel hale gelir. Zamanla Alice, WordPress sitesinin her yönünde gezinirken ve ustalaşırken kendine güven de kazanacaktır.

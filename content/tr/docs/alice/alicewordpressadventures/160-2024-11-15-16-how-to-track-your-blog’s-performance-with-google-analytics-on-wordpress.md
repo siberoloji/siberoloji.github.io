@@ -3,7 +3,7 @@ title: WordPress'te Google Analytics ile Blogunuzun Performansını Nasıl Takip
 linkTitle: Wordpress Google Analytics
 description: Bu kılavuz Alice'i (ve sizi) bir WordPress blogunda Google Analytics'i kurma ve bunu kullanarak önemli ölçümleri izleme, iyileştirme fırsatlarını belirleme ve sonuç olarak hedef kitlesini büyütme konusunda yönlendirecektir.
 date: 2024-11-15
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -27,7 +27,8 @@ Bu kılavuz Alice'i (ve sizi) bir WordPress blogunda Google Analytics'i kurma ve
 
 Google Analytics, blog yazarlarının hedef kitlelerini anlamalarına ve içeriklerinin etkinliğini ölçmelerine yardımcı olan güçlü bir araçtır. Alice'in bunu kullanmasının nedenleri şunlardır:
 
-- **Ziyaretçi Davranışını Anlayın:** Ziyaretçilerin sitede nasıl gezindiğini, hangi sayfaları ziyaret ettiklerini ve ne kadar süre kaldıklarını görün. - **Blog Trafiğini Takip Et:** Ziyaretçi sayısı, sayfa görüntülemeleri ve trafik kaynakları dahil olmak üzere genel trafiği izleyin.
+- **Ziyaretçi Davranışını Anlayın:** Ziyaretçilerin sitede nasıl gezindiğini, hangi sayfaları ziyaret ettiklerini ve ne kadar süre kaldıklarını görün.
+- **Blog Trafiğini Takip Et:** Ziyaretçi sayısı, sayfa görüntülemeleri ve trafik kaynakları dahil olmak üzere genel trafiği izleyin.
 
 - **En İyi Performans Gösteren İçeriği Belirle:** Hangi gönderilerin en fazla etkileşimi yarattığını keşfedin ve başarısını tekrar edin.
 
@@ -81,7 +82,8 @@ Google Analytics bağlandıktan sonra Alice, önemli raporlara ve içgörülere 
 
 - **Demografi:** Ziyaretçilerin yaşını, cinsiyetini ve ilgi alanlarını öğrenin.
 - **Coğrafi:** Ziyaretçilerin coğrafi olarak nereden geldiğini görün.
-- **Davranış:** Yeni ve geri dönen ziyaretçileri, oturum süresini ve daha fazlasını izleyin. - **Alice için Kullanım Örneği:** Alice, hedef kitlesinin demografik özelliklerini anlayarak belirli gruplarda yankı uyandıran içerikler hazırlayabilir.
+- **Davranış:** Yeni ve geri dönen ziyaretçileri, oturum süresini ve daha fazlasını izleyin.
+- **Alice için Kullanım Örneği:** Alice, hedef kitlesinin demografik özelliklerini anlayarak belirli gruplarda yankı uyandıran içerikler hazırlayabilir.
 
 ##### **c. Edinme Raporları**
 
@@ -93,7 +95,8 @@ Google Analytics bağlandıktan sonra Alice, önemli raporlara ve içgörülere 
 
 - **Site İçeriği:** Sayfa görüntülemeleri, sayfada geçirilen ortalama süre ve hemen çıkma oranı dahil olmak üzere tek tek sayfaların performansını analiz edin.
 - **Açılış Sayfaları:** Ziyaretçilerin en sık hangi sayfalara geldiğini görün.
-- **Çıkış Sayfaları:** Ziyaretçilerin siteden nerede ayrıldığını belirleyin. - **Alice için Kullanım Örneği:** Bu rapor, Alice'in hangi gönderilerin okuyucuların ilgisini çektiğini ve hangilerinin ilgi çekici olduğunu görmesine yardımcı olur.
+- **Çıkış Sayfaları:** Ziyaretçilerin siteden nerede ayrıldığını belirleyin.
+- **Alice için Kullanım Örneği:** Bu rapor, Alice'in hangi gönderilerin okuyucuların ilgisini çektiğini ve hangilerinin ilgi çekici olduğunu görmesine yardımcı olur.
 
 ##### **e. Dönüşüm Raporları**
 
@@ -130,7 +133,8 @@ Alice, verilerini analiz ederek içerik stratejisini iyileştirmek için veri od
 
 Daha ayrıntılı içgörüler için Alice, gelişmiş izleme özellikleri ayarlayabilir:
 
-- **Etkinlik İzleme:** Düğme tıklamaları, video oynatmaları veya indirmeler gibi belirli etkileşimleri izleyin. Bunun için **Google Etiket Yöneticisi** aracılığıyla özel etkinlik etiketlerinin eklenmesi gerekir. - **Gelişmiş E-ticaret Takibi:** Alice ürün satıyorsa, bu özellik satın alma davranışı, ürün performansı ve daha fazlası hakkında ayrıntılı bilgiler sunar.
+- **Etkinlik İzleme:** Düğme tıklamaları, video oynatmaları veya indirmeler gibi belirli etkileşimleri izleyin. Bunun için **Google Etiket Yöneticisi** aracılığıyla özel etkinlik etiketlerinin eklenmesi gerekir.
+- **Gelişmiş E-ticaret Takibi:** Alice ürün satıyorsa, bu özellik satın alma davranışı, ürün performansı ve daha fazlası hakkında ayrıntılı bilgiler sunar.
 
 - **Özel Panolar:** En önemli ölçümleri tek bakışta görüntüleyen widget'larla özel panolar oluşturun.
 

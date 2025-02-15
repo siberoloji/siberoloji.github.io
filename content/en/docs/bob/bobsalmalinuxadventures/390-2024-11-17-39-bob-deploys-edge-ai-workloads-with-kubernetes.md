@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 390
-
 keywords:
   - Edge AI Workloads with Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-deploys-edge-ai-workloads-kubernetes-alma-linux
+translationKey: bob-deploys-edge-ai-workloads-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 39, *"Bob Deploys Edge AI Workloads with Kubernetes!"*. In this chapter, Bob will explore how to deploy and manage machine learning applications on edge devices using Kubernetes. He’ll learn to balance resource constraints, optimize latency, and ensure seamless integration with central systems.
 

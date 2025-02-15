@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 320
-
 keywords:
   - Edge Computing with Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-ventures-edge-computing-kubernetes-alma-linux
+translationKey: bob-ventures-edge-computing-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 32, *"Bob Ventures into Edge Computing with Kubernetes!"*. In this chapter, Bob will learn how to extend Kubernetes to edge devices, leveraging lightweight distributions like **K3s** and tools for managing workloads at the edge while ensuring efficient communication with the central cloud cluster.
 

@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 470
-
 keywords:
   - Multi-Cloud Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-masters-multi-cloud-kubernetes-deployments-alma-linux
+translationKey: bob-masters-multi-cloud-kubernetes-deployments-alma-linux
 ---
 Let’s dive into Chapter 47, *"Bob Masters Multi-Cloud Kubernetes Deployments!"*. In this chapter, Bob tackles the complexities of deploying and managing Kubernetes workloads across multiple cloud providers, ensuring resilience, scalability, and cost optimization.
 

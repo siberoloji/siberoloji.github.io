@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 400
-
 keywords:
   - Data with Encryption in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-secures-data-encryption-kubernetes-alma-linux
+translationKey: bob-secures-data-encryption-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 40, *"Bob Secures Data with Encryption in Kubernetes!"*. In this chapter, Bob will learn how to protect sensitive information by using encryption for data at rest and in transit, as well as securely managing secrets in Kubernetes.
 

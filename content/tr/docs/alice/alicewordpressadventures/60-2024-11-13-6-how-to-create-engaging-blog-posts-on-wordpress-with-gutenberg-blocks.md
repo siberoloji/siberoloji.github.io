@@ -4,7 +4,7 @@ linkTitle: Gutenberg Blokları
 description: Bu rehber Alice'e Gutenberg bloklarından en iyi şekilde nasıl yararlanacağını gösterecek ve okuyucularının daha fazlası için geri gelmesini sağlayacak yazılar hazırlamasını sağlayacak.
 date: 2024-11-13
 weight: 60
-draft: true
+draft: false
 tags:
   - blog publishing
   - Gutenberg Blocks
@@ -17,7 +17,7 @@ url: /tr/create-engaging-blog-posts-wordpress-gutenberg-blocks
 translationKey: create-engaging-blog-posts-wordpress-gutenberg-blocks
 ---
 
-Alice, birçok hobi blog yazarı gibi, WordPress blogunun ilgi çekici ve ilgi çekici içeriklerle öne çıkmasını istiyor. WordPress 5.0'da tanıtılan Gutenberg blok düzenleyicisi, blog yazıları oluşturmak için esnek ve modern bir yol sunuyor. Alice'in kapsamlı teknik becerilere veya kodlama bilgisine ihtiyaç duymadan görsel olarak çekici ve etkileşimli içerikler oluşturmasını sağlıyor. Bu kılavuz, Alice'e Gutenberg bloklarından en iyi şekilde nasıl yararlanacağını gösterecek ve okuyucularının daha fazlası için geri gelmesini sağlayacak yazılar hazırlamasını sağlayacak.
+Alice, birçok hobi blog yazarı gibi, WordPress blogunun ilgi çekici içeriklerle öne çıkmasını istiyor. WordPress 5.0'da tanıtılan Gutenberg blok düzenleyicisi, blog yazıları oluşturmak için esnek ve modern bir yol sunuyor. Alice'in kapsamlı teknik becerilere veya kodlama bilgisine ihtiyaç duymadan görsel olarak çekici ve etkileşimli içerikler oluşturmasını sağlıyor. Bu kılavuz, Alice'e Gutenberg bloklarından en iyi şekilde nasıl yararlanacağını gösterecek ve okuyucularının daha fazlası için geri gelmesini sağlayacak yazılar hazırlamasını sağlayacak.
 
 ---
 
@@ -41,9 +41,9 @@ Alice blok eklemeye başlamadan önce ilgi çekici bir başlık yazmalıdır. Ba
 
 #### **3. Metin İçeriği İçin Paragraf Bloğunu Kullanma**
 
-Paragraf bloğu, metin yazmak için en temel bloktur. Alice'in bundan en iyi şekilde nasıl yararlanabileceği şöyledir:
+Paragraf bloğu, metin yazmak için en temel bloktur. Alice'in bundan en iyi şekilde nasıl yararlanabileceği şöyle açıklayalım:
 
-- Biçimlendirme Seçenekleri:** Alice metni kalın, italik veya üstü çizili olarak biçimlendirebilir. Ayrıca bağlantılar oluşturabilir, hizalamayı değiştirebilir veya stilistik bir dokunuş için büyük harf ekleyebilir.
+- **Biçimlendirme Seçenekleri:** Alice metni kalın, italik veya üstü çizili olarak biçimlendirebilir. Ayrıca bağlantılar oluşturabilir, hizalamayı değiştirebilir veya stilistik bir dokunuş için büyük harf ekleyebilir.
 - **Okunabilirlik İçin Kısa Paragraflar:** Metni kısa, sindirilebilir paragraflara bölmek okunabilirliği artırır ve okuyucuların ilgisini canlı tutar.
 
 **İpucu:** Alice okuyucunun ilgisini canlı tutmak için resim, video veya diğer öğelerle serpiştirilmiş metin blokları ekleyebilir.
@@ -54,7 +54,8 @@ Paragraf bloğu, metin yazmak için en temel bloktur. Alice'in bundan en iyi şe
 
 Başlıklar içeriği yapılandırmada önemli bir rol oynar. Okuyucuları yönlendirir ve arama motorlarının gönderinin organizasyonunu anlamasına yardımcı olur.
 
-- **Hiyerarşi Önemlidir:** Başlıklar H1, H2, H3 vb. şeklinde yapılandırılır ve H1 genellikle ana başlık için ayrılır. Alice ana bölümler için H2'yi, alt bölümler için H3'ü vb. kullanabilir. - **Kolay Gezinme:** İyi yapılandırılmış başlıklar okuyucuların içeriği taramasını ve aradıklarını bulmasını kolaylaştırır.
+- **Hiyerarşi Önemlidir:** Başlıklar H1, H2, H3 vb. şeklinde yapılandırılır ve H1 genellikle ana başlık için ayrılır. Alice ana bölümler için H2'yi, alt bölümler için H3'ü vb. kullanabilir.
+- **Kolay Gezinme:** İyi yapılandırılmış başlıklar okuyucuların içeriği taramasını ve aradıklarını bulmasını kolaylaştırır.
 
 ---
 
@@ -70,7 +71,7 @@ Resimler metni böler ve görsel ilgi katar. Gutenberg ile resim eklemek ve öze
 
 #### **6. Liste Bloklarıyla Liste Oluşturma**
 
-Listeler, bilgileri kolayca sindirilebilir noktalara ayırmak için harikadır.
+Listeler, bilgileri kolayca özetlemek için alt noktalara ayırmak için harikadır.
 
 - **Madde İşaretli veya Numaralandırılmış Listeler:** Alice, sunduğu bilgi türüne bağlı olarak madde işaretli veya numaralı listeler arasında seçim yapabilir.
 - **İç İçe Listeler:** Alice alt noktalara ihtiyaç duyarsa, karmaşık bilgileri düzenlemek için iç içe listeler oluşturabilir.

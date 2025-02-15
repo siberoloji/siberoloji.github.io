@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 360
-
 keywords:
   - Kubernetes with CI/CD Workflows
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-integrates-kubernetes-ci-cd-workflows-alma-linux
+translationKey: bob-integrates-kubernetes-ci-cd-workflows-alma-linux
 ---
 Let’s dive into Chapter 36, *"Bob Integrates Kubernetes with CI/CD Workflows!"*. In this chapter, Bob will explore how to leverage Kubernetes for automating Continuous Integration and Continuous Deployment (CI/CD) pipelines, enabling faster and more reliable software delivery.
 

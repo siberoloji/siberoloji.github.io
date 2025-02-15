@@ -3,7 +3,7 @@ title: "WordPress Widget'larını Anlamak: Kenar Çubuğunuzu ve Alt Bilginizi N
 linkTitle: WordPress Widget
 description: Bu kılavuz Alice'i (ve sizi) WordPress widget'larının temelleri konusunda bilgilendirecek, kenar çubuklarının ve alt bilgilerin nasıl özelleştirileceğini açıklayacak ve ilgi çekici bir blog düzeni için bunların potansiyelini en üst düzeye çıkarmak için ipuçları sunacaktır.
 date: 2024-11-15
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -53,7 +53,8 @@ Alice Widget'lar alanına girdiğinde, uygun gördüğü şekilde widget'ları e
 
 - **Widget Ekleme:**
 - **Adım 1:** Kullanılabilir Widget'lar listesinde widget'ı bulun.
-- **Adım 2:** Widget'ı istediğiniz widget alanına (örneğin, Kenar Çubuğu veya Alt Bilgi) sürükleyin veya widget'a tıklayın ve açılır menüden alanı seçin. - **Adım 3:** Widget'a özgü ayarları yapılandırın (örneğin, Son Gönderiler widget'ı için görüntülenecek gönderi sayısı) ve *Kaydet*'e tıklayın.
+- **Adım 2:** Widget'ı istediğiniz widget alanına (örneğin, Kenar Çubuğu veya Alt Bilgi) sürükleyin veya widget'a tıklayın ve açılır menüden alanı seçin.
+- **Adım 3:** Widget'a özgü ayarları yapılandırın (örneğin, Son Gönderiler widget'ı için görüntülenecek gönderi sayısı) ve *Kaydet*'e tıklayın.
 - **Widget'ları Yeniden Düzenleme:** Alice, sıralarını değiştirmek için widget'ları widget alanına sürükleyip bırakabilir.
 - **Widget'ları Kaldırma:** Bir widget'ı kaldırmak için Alice onu widget alanından dışarı sürükleyebilir veya widget ayarlarındaki *Sil* düğmesine tıklayabilir.
 
@@ -64,7 +65,8 @@ Alice Widget'lar alanına girdiğinde, uygun gördüğü şekilde widget'ları e
 Kenar çubukları, Alice'in kullanıcı deneyimini geliştiren ek içerik ve gezinme seçeneklerini görüntülemesi için harika bir yerdir.
 
 - **Arama Widget'ı:** Bir arama çubuğu eklemek, ziyaretçilerin blogunda belirli içerikleri bulmasını kolaylaştırır.
-- **Son Gönderiler Widget'ı:** Bu widget, Alice'in en son blog gönderilerini görüntüler ve okuyucuları daha fazla içerik keşfetmeye teşvik eder. - **Kategoriler Widget'ı:** Gönderileri kategoriye göre düzenler ve okuyucuların ilgi alanlarına uyan içerikleri bulmalarına yardımcı olur.
+- **Son Gönderiler Widget'ı:** Bu widget, Alice'in en son blog gönderilerini görüntüler ve okuyucuları daha fazla içerik keşfetmeye teşvik eder. 
+- **Kategoriler Widget'ı:** Gönderileri kategoriye göre düzenler ve okuyucuların ilgi alanlarına uyan içerikleri bulmalarına yardımcı olur.
 - **Sosyal Medya Simgeleri Widget'ı:** Alice, sosyal medya takip düğmeleri eklemek için **Basit Sosyal Simgeler** gibi eklentileri kullanabilir.
 - **Özel HTML Widget'ı:** Bu widget, Alice'in gömülü formlar, reklamlar veya hatta özel komut dosyaları gibi özel kodlar eklemesine olanak tanır.
 - **Hakkımda Widget'ı:** Kenar çubuğunda kısa bir biyografi paylaşmak, Alice'in okuyucularla bağlantı kurmasına yardımcı olur.
@@ -148,7 +150,8 @@ Kenar çubuklarından ve alt bilgilerden en iyi şekilde yararlanmak için Alice
 Alice, widget'ları özelleştirirken bazen sorunlarla karşılaşabilir.
 
 - **Widget'lar Düzgün Görüntülenmiyor:** Bunun nedeni tema sınırlamaları veya eklenti çakışmaları olabilir. Alice, sorunun kaynağını belirlemek için temaları geçici olarak değiştirmeyi veya eklentileri devre dışı bırakmayı deneyebilir.
-- **Widget Ayarları Kaydedilmiyor:** Tarayıcı önbelleğini temizlemek veya tarayıcının geliştirici konsolunda JavaScript hatalarını kontrol etmek sorunu teşhis etmeye yardımcı olabilir. - **Duyarlı Tasarım Sorunları:** Widget'lar mobilde iyi görünmüyorsa, Alice görünümlerini ayarlamak için özel CSS veya duyarlı eklentiler kullanabilir.
+- **Widget Ayarları Kaydedilmiyor:** Tarayıcı önbelleğini temizlemek veya tarayıcının geliştirici konsolunda JavaScript hatalarını kontrol etmek sorunu teşhis etmeye yardımcı olabilir.
+- **Duyarlı Tasarım Sorunları:** Widget'lar mobilde iyi görünmüyorsa, Alice görünümlerini ayarlamak için özel CSS veya duyarlı eklentiler kullanabilir.
 
 ---
 

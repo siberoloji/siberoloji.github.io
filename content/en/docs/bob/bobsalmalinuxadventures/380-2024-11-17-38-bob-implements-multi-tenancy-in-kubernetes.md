@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 380
-
 keywords:
   - Multi-Tenancy in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-implements-multi-tenancy-kubernetes
+translationKey: bob-implements-multi-tenancy-kubernetes
 ---
 Let’s dive into Chapter 38, *"Bob Implements Multi-Tenancy in Kubernetes!"*. In this chapter, Bob will explore how to create a multi-tenant Kubernetes environment, isolating and managing workloads for different teams, departments, or customers securely and efficiently.
 

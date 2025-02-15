@@ -3,7 +3,7 @@ title: "WordPress Yedekleme Çözümleri: Blogunuzu Veri Kaybından Nasıl Korur
 linkTitle: Yedekleme Çözümleri
 description: Bu rehber Alice'e (ve size) yedeklemenin önemini anlatacak, çeşitli yedekleme çözümlerini inceleyecek ve WordPress blogunu korumak için en iyi uygulamaları vurgulayacaktır.
 date: 2024-11-15
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -28,7 +28,8 @@ Güvenilir bir WordPress yedeklemesi, bir felaket durumunda Alice'in sitesini mi
 
 Yedekleme çözümlerine dalmadan önce, yedeklemelerin neden hayati önem taşıdığını anlamak çok önemlidir:
 
-- **Veri Kaybına Karşı Koruma:** Donanım arızaları, sunucu sorunları veya hatta kullanıcı hataları veri kaybına yol açabilir. Yedeklemeler, Alice'in blogunun içeriğini kurtarabilmesini sağlar. - **Hack'e Karşı Savunma:** Siber saldırılar yaygındır ve hack'lenen bir site veri kaybına veya dosyaların bozulmasına neden olabilir. Bir yedekleme, Alice'in blogunu hızla geri yüklemesini sağlar.
+- **Veri Kaybına Karşı Koruma:** Donanım arızaları, sunucu sorunları veya hatta kullanıcı hataları veri kaybına yol açabilir. Yedeklemeler, Alice'in blogunun içeriğini kurtarabilmesini sağlar.
+- **Hack'e Karşı Savunma:** Siber saldırılar yaygındır ve hack'lenen bir site veri kaybına veya dosyaların bozulmasına neden olabilir. Bir yedekleme, Alice'in blogunu hızla geri yüklemesini sağlar.
 - **Eklenti veya Tema Çatışmaları:** Eklentileri, temaları veya WordPress çekirdeğini güncellemek bazen bir siteyi bozabilir. Yedeklemeler, Alice'in önceki bir duruma geri dönmesini sağlar.
 - **İç Huzuru:** Bir yedeklemeyle Alice, bir güvenlik ağı olduğunu bilerek blogunda güvenle değişiklikler veya güncellemeler yapabilir.
 
@@ -39,7 +40,8 @@ Yedekleme çözümlerine dalmadan önce, yedeklemelerin neden hayati önem taş�
 Alice'in yedeklemesi, WordPress sitesinin tüm temel yönlerini kapsamalıdır:
 
 - **Veritabanı:** Gönderileri, sayfaları, yorumları, kullanıcı verilerini ve site ayarlarını içerir.
-- **Dosyalar:** Temaları, eklentileri, yüklemeleri (örneğin, resimler, videolar) ve WordPress çekirdek dosyalarını içerir. - **Yapılandırma Dosyaları:** `wp-config.php` ve `.htaccess` gibi önemli dosyaların da yedeklenmesi gerekebilir.
+- **Dosyalar:** Temaları, eklentileri, yüklemeleri (örneğin, resimler, videolar) ve WordPress çekirdek dosyalarını içerir.
+- **Yapılandırma Dosyaları:** `wp-config.php` ve `.htaccess` gibi önemli dosyaların da yedeklenmesi gerekebilir.
 
 ---
 
@@ -68,7 +70,8 @@ Birkaç eklenti bir WordPress sitesini yedeklemeyi kolaylaştırır. Alice'in de
 - **Kullanım Şekli:**
 - Eklentiyi *Eklentiler > Yeni Ekle*'den yükleyin ve etkinleştirin.
 - *Ayarlar > UpdraftPlus Yedeklemeleri*'ne gidin.
-- Hemen yedekleme için *Şimdi Yedekle*'ye tıklayın veya *Ayarlar* sekmesi altında bir yedekleme planı yapılandırın. - **Neden UpdraftPlus'ı Seçmelisiniz:** Kullanımı kolay arayüz, geniş depolama seçenekleri ve ücretsiz sürümü çoğu kullanıcı için yeterlidir.
+- Hemen yedekleme için *Şimdi Yedekle*'ye tıklayın veya *Ayarlar* sekmesi altında bir yedekleme planı yapılandırın.
+- **Neden UpdraftPlus'ı Seçmelisiniz:** Kullanımı kolay arayüz, geniş depolama seçenekleri ve ücretsiz sürümü çoğu kullanıcı için yeterlidir.
 
 ##### **b. BackupBuddy**
 
@@ -79,7 +82,8 @@ Birkaç eklenti bir WordPress sitesini yedeklemeyi kolaylaştırır. Alice'in de
 ##### **c. Jetpack Backup (Eski Adıyla VaultPress)**
 
 - **Özellikler:** Gerçek zamanlı yedeklemeler, kötü amaçlı yazılım taraması ve kolay geri yüklemeler sunar.
-- **En İyisi:** Gerçek zamanlı yedeklemeler, sık güncelleme yapan bloglar veya e-ticaret siteleri için idealdir. - **Fiyatlandırma:** Ücretli bir plan gerektirir, ancak otomasyon ve güvenlik özellikleri gönül rahatlığı için harikadır.
+- **En İyisi:** Gerçek zamanlı yedeklemeler, sık güncelleme yapan bloglar veya e-ticaret siteleri için idealdir.
+- **Fiyatlandırma:** Ücretli bir plan gerektirir, ancak otomasyon ve güvenlik özellikleri gönül rahatlığı için harikadır.
 
 ##### **d. Duplicator**
 
@@ -152,7 +156,8 @@ Büyük miktarda medya veya içerik barındıran bloglar için Alice, yedekleme 
 Yedeklemeler Alice'in felaket kurtarma planının önemli bir bileşenidir, ancak ek adımları da göz önünde bulundurmalıdır:
 
 - **Düzenli Güncellemeler:** WordPress'i, temaları ve eklentileri güncel tutmak güvenlik açığı riskini azaltır.
-- **Güvenlik Eklentileri:** Kötü amaçlı yazılımlara ve saldırı girişimlerine karşı ek koruma için **Wordfence** veya **Sucuri Security** gibi eklentileri kullanın. - **Hosting Desteği ile İletişime Geçin:** Büyük bir sorun olması durumunda, hosting sağlayıcıları ek yedekleme ve kurtarma desteği sunabilir.
+- **Güvenlik Eklentileri:** Kötü amaçlı yazılımlara ve saldırı girişimlerine karşı ek koruma için **Wordfence** veya **Sucuri Security** gibi eklentileri kullanın.
+- **Hosting Desteği ile İletişime Geçin:** Büyük bir sorun olması durumunda, hosting sağlayıcıları ek yedekleme ve kurtarma desteği sunabilir.
 
 ---
 

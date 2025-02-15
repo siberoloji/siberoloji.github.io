@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 460
-
 keywords:
   - Edge Analytics with Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-deploys-edge-analytics-kubernetes-alma-linux
+translationKey: bob-deploys-edge-analytics-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 46, *"Bob Deploys Edge Analytics with Kubernetes!"*. In this chapter, Bob explores how to use Kubernetes for deploying analytics workloads at the edge, enabling near real-time insights from data collected by sensors and devices in remote locations.
 

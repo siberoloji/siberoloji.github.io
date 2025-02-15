@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 410
-
 keywords:
   - Event-Driven Architecture in Kubernetes
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-builds-event-driven-architecture-kubernetes-alma-linux
+translationKey: bob-builds-event-driven-architecture-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 41, *"Bob Builds Event-Driven Architecture in Kubernetes!"*. In this chapter, Bob will explore how to design and deploy event-driven systems using Kubernetes, leveraging tools like **Apache Kafka**, **Knative Eventing**, and **NATS** to create scalable and responsive architectures.
 

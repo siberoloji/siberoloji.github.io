@@ -9,15 +9,13 @@ tags:
   - bob system administrator
 categories:
   - Linux
-
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 450
-
 keywords:
   - Blockchain Applications
-
 featured_image: /images/bobs-adventures-with-alma-linux.png
 url: bob-explores-blockchain-applications-kubernetes-alma-linux
+translationKey: bob-explores-blockchain-applications-kubernetes-alma-linux
 ---
 Let’s dive into Chapter 45, *"Bob Explores Blockchain Applications with Kubernetes!"*. In this chapter, Bob explores how to use Kubernetes to deploy and manage blockchain networks, leveraging its scalability and orchestration capabilities for decentralized applications (dApps) and distributed ledgers.
 

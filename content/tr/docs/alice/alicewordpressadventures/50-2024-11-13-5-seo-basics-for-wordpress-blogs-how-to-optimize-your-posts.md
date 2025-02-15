@@ -4,7 +4,7 @@ linkTitle: SEO Temelleri
 description: Bu kılavuzda, Alice'e (ve size) WordPress blogları için SEO'nun temellerini anlatacağız ve her yazıyı daha iyi sıralamalar için optimize etmeye yönelik uygulanabilir adımlar atacağız.
 date: 2024-11-13
 weight: 50
-draft: true
+draft: false
 tags:
   - blog publishing
   - SEO for Wordpress
@@ -17,7 +17,7 @@ url: /tr/seo-basics-wordpress-blogs-optimize-posts
 translationKey: seo-basics-wordpress-blogs-optimize-posts
 ---
 
-Alice, en sevdiği hobisini dünyayla paylaşmak için WordPress bloguna başladığında, harika içeriklere sahip olmanın işin sadece yarısı olduğunu hemen fark etti. Okuyucuları çekmek için gönderilerinin Google gibi arama motorlarında keşfedilebilir olduğundan emin olması gerekiyor. İşte Arama Motoru Optimizasyonu (SEO) burada devreye giriyor. SEO bunaltıcı görünebilir, ancak birkaç temel stratejiyle Alice blogunun görünürlüğünü artırabilir, daha fazla trafik çekebilir ve nihayetinde tutkusunu daha geniş bir kitleyle paylaşabilir.
+Alice, en sevdiği hobisini dünyayla paylaşmak için WordPress bloguna başladığında, harika içeriklere sahip olmanın işin sadece yarısı olduğunu hemen fark etti. Okuyucuları çekmek için gönderilerinin Google gibi arama motorlarında keşfedilebilir olduğundan emin olması gerekiyordu. İşte Arama Motoru Optimizasyonu (SEO) burada devreye giriyor. SEO bunaltıcı görünebilir, ancak birkaç temel stratejiyle Alice blogunun görünürlüğünü artırabilir, daha fazla trafik çekebilir ve nihayetinde tutkusunu daha geniş bir kitleyle paylaşabilir.
 
 Bu kılavuzda, Alice'i (ve sizi) WordPress blogları için SEO'nun temelleri boyunca yönlendireceğiz ve her gönderiyi daha iyi sıralamalar için optimize etmeye yönelik uygulanabilir adımlar atacağız.
 
@@ -27,7 +27,8 @@ Bu kılavuzda, Alice'i (ve sizi) WordPress blogları için SEO'nun temelleri boy
 
 Alice, bir gönderi yazmadan önce hedef kitlesinin içeriğini bulmak için kullanabileceği alakalı anahtar kelimeleri belirlemelidir. Anahtar kelimeler, insanların arama motorlarına yazdığı ifadelerdir.
 
-- **Anahtar Kelime Araştırma Araçlarını Kullanın:** Google Anahtar Kelime Planlayıcı, Ubersuggest ve Ahrefs gibi araçlar Alice'in konusuyla ilgili popüler ve alakalı anahtar kelimeleri bulmasına yardımcı olur. - **Uzun Kuyruklu Anahtar Kelimelere Odaklanın:** Uzun kuyruklu anahtar kelimeler, geniş terimlerden daha spesifik ve daha az rekabetçidir. Örneğin, Alice "örgü" hedeflemek yerine "atkılar için başlangıç ​​örgü ipuçları"nı kullanabilir.
+- **Anahtar Kelime Araştırma Araçlarını Kullanın:** Google Anahtar Kelime Planlayıcı, Ubersuggest ve Ahrefs gibi araçlar Alice'in konusuyla ilgili popüler ve alakalı anahtar kelimeleri bulmasına yardımcı olur.
+- **Uzun Anahtar Kelimelere Odaklanın:** Uzun anahtar kelimeler, geniş terimlerden daha spesifik ve daha az rekabetçidir. Örneğin, Alice "örgü" hedeflemek yerine "atkılar için başlangıç ​​örgü ipuçları"nı kullanabilir.
 - **Arama Amacını Değerlendirin:** Alice, içeriğinin amaçlarıyla uyumlu olduğundan emin olmak için insanların bir anahtar kelimeyi (örneğin, bilgilendirici, işlemsel) neden aradığını anlamalıdır.
 
 ---
@@ -110,7 +111,8 @@ Google kullanıcı deneyimine öncelik verir, bu da Alice'in yüksek kaliteli, o
 
 Kullanıcıların önemli bir yüzdesi web sitelerine mobil cihazlardan eriştiğinden, Alice'in sitesinin mobil uyumlu olduğundan emin olmak çok önemlidir.
 
-- **Duyarlı Bir Tema Seçin:** Çoğu modern WordPress teması varsayılan olarak mobil uyumludur. - **Google'ın Mobil Uyumluluk Test Aracını kullanın:** Alice, blogunun mobil uyumlu olup olmadığını kontrol edebilir ve iyileştirme önerileri alabilir.
+- **Duyarlı Bir Tema Seçin:** Çoğu modern WordPress teması varsayılan olarak mobil uyumludur.
+- **Google'ın Mobil Uyumluluk Test Aracını kullanın:** Alice, blogunun mobil uyumlu olup olmadığını kontrol edebilir ve iyileştirme önerileri alabilir.
 - **Pop-Up'ları En Aza İndirin:** Rahatsız edici pop-up'lar kullanıcı deneyimini olumsuz etkileyebilir ve Google'dan ceza almanıza yol açabilir.
 
 ---
@@ -138,7 +140,7 @@ Site hızı önemli bir sıralama faktörüdür. Yavaş yüklenen sayfalar daha 
 
 SEO stratejilerinin etkinliğini izlemek, Alice'in yaklaşımını zaman içinde iyileştirmesine yardımcı olur.
 
-- **Google Analytics:** Ziyaretçi davranışını, sayfa görüntülemelerini, hemen çıkma oranlarını ve daha fazlasını izler.
+- **Google Analytics:** Ziyaretçi davranışını, sayfa görüntülemelerini, hemen terketme oranlarını ve daha fazlasını izler.
 - **Google Search Console:** Arama performansı, dizin kapsamı ve olası sorunlar hakkında içgörüler sağlar.
 - **Anahtar Kelime Sıralamalarını İzleyin:** Alice, SEMrush veya Ahrefs gibi araçları kullanarak hedef anahtar kelimelerinin zaman içinde nasıl performans gösterdiğini izleyebilir.
 

@@ -27,7 +27,8 @@ Alice, WordPress blog yazılarında yüksek kaliteli görseller eklemeyi sever. 
 
 Görüntüleri optimize etmek, site performansını ve kullanıcı deneyimini iyileştirmek için olmazsa olmazdır. İşte neden önemli olduğu:
 
-- **Daha Hızlı Yükleme Süreleri:** Büyük, optimize edilmemiş görseller sayfa yükleme hızlarını yavaşlatır ve ziyaretçilerin sayfa tamamen yüklenmeden önce siteden ayrılmasına neden olur. - **Geliştirilmiş SEO:** Sayfa hızı arama motorları için bir sıralama faktörüdür, bu nedenle görselleri optimize etmek Alice'in blogunun arama sonuçlarında daha üst sıralarda görünmesine yardımcı olabilir.
+- **Daha Hızlı Yükleme Süreleri:** Büyük, optimize edilmemiş görseller sayfa yükleme hızlarını yavaşlatır ve ziyaretçilerin sayfa tamamen yüklenmeden önce siteden ayrılmasına neden olur.
+- **Geliştirilmiş SEO:** Sayfa hızı arama motorları için bir sıralama faktörüdür, bu nedenle görselleri optimize etmek Alice'in blogunun arama sonuçlarında daha üst sıralarda görünmesine yardımcı olabilir.
 - **Azaltılmış Bant Genişliği Kullanımı:** Optimize edilmiş görseller daha az veri kullanır, siteyi Alice'in ziyaretçileri için daha verimli hale getirir ve barındırma maliyetlerini azaltır.
 - **Daha İyi Kullanıcı Deneyimi:** Daha hızlı web siteleri ziyaretçilerin ilgisini canlı tutar ve daha yüksek tutma oranlarına yol açar.
 
@@ -51,7 +52,8 @@ Gereksiz yere büyük boyutlara sahip görseller yüklemek Alice'in blogunu yava
 
 - **En İyi Boyutları Belirleyin:** Görselin boyutu web sitesindeki görüntüleme boyutuyla eşleşmelidir. Örneğin, öne çıkan bir görsel 800 piksel genişliğinde görüntüleniyorsa, 4000 piksel genişliğinde bir görsel yüklemeye gerek yoktur.
 - **Yeniden Boyutlandırma Araçları:**
-- **Masaüstü Yazılımları:** Görselleri yeniden boyutlandırmak için Adobe Photoshop, GIMP (ücretsiz) veya **Canva** gibi çevrimiçi hizmetleri kullanın. - **Çevrimiçi Yeniden Boyutlandırıcılar:** **PicResize** veya **ImageResizer** gibi web siteleri Alice'in ek bir yazılıma ihtiyaç duymadan görüntüleri hızla yeniden boyutlandırmasına olanak tanır.
+- **Masaüstü Yazılımları:** Görselleri yeniden boyutlandırmak için Adobe Photoshop, GIMP (ücretsiz) veya **Canva** gibi çevrimiçi hizmetleri kullanın.
+- **Çevrimiçi Yeniden Boyutlandırıcılar:** **PicResize** veya **ImageResizer** gibi web siteleri Alice'in ek bir yazılıma ihtiyaç duymadan görüntüleri hızla yeniden boyutlandırmasına olanak tanır.
 
 ---
 
@@ -65,7 +67,8 @@ Görüntü sıkıştırma, önemli bir kalite kaybı olmadan dosya boyutunu azal
 **WordPress için Görüntü Sıkıştırma Araçları ve Eklentileri:**
 
 - **Smush:** Alice yükledikçe görüntüleri otomatik olarak sıkıştırır ve optimize eder. Smush ayrıca toplu optimizasyon sunar ve tembel yüklemeyi destekler.
-- **ShortPixel:** Görüntüleri WebP formatına dönüştürme desteğiyle kayıpsız ve kayıplı sıkıştırma için popüler bir eklenti. - **Imagify:** Kalite ve boyutu dengelemek için esnek sıkıştırma seviyeleri (Normal, Agresif ve Ultra) sağlar.
+- **ShortPixel:** Görüntüleri WebP formatına dönüştürme desteğiyle kayıpsız ve kayıplı sıkıştırma için popüler bir eklenti.
+- **Imagify:** Kalite ve boyutu dengelemek için esnek sıkıştırma seviyeleri (Normal, Agresif ve Ultra) sağlar.
 
 **İpucu:** Alice, dosya boyutu ve görüntü kalitesi arasında bir denge bulmak için farklı sıkıştırma seviyeleri deneyebilir.
 

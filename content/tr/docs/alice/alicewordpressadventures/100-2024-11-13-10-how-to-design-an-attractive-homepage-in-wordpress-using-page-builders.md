@@ -4,7 +4,7 @@ linkTitle: Sayfa Oluşturucular
 description: WordPress sayfa oluşturucuları, Alice'e kod bilmeye gerek kalmadan tasarım özgürlüğü vererek, sürükle ve bırak işleviyle çarpıcı ana sayfalar tasarlamak için kullanıcı dostu bir yol sunuyor.
 date: 2024-11-13
 weight: 100
-draft: true
+draft: false
 tags:
   - blog publishing
 categories:
@@ -17,7 +17,7 @@ keywords:
   - Page Builders
   - homepage
 ---
-Alice, WordPress blogunu görsel olarak daha çekici ve ilgi çekici hale getirmek için heyecanlı. Ana sayfanın ziyaretçilerin gördüğü ilk şey olduğunu biliyor; blogunun dijital yüzü. İyi tasarlanmış bir ana sayfa yalnızca güçlü bir ilk izlenim yaratmakla kalmaz, aynı zamanda okuyucuları en çok ilgilendikleri içeriğe yönlendirmeye yardımcı olur. Neyse ki, WordPress sayfa oluşturucuları, Alice'e kod bilmeye gerek kalmadan oluşturma özgürlüğü veren sürükle ve bırak işleviyle çarpıcı ana sayfalar tasarlamak için kullanıcı dostu bir yol sunar.
+Alice, WordPress blogunu görsel olarak daha çekici ve ilgi çekici hale getirmek için heyecanlı. Ana sayfanın ziyaretçilerin gördüğü ilk unsur olduğunu, blogunun dijital yüzü olduğunu biliyor. İyi tasarlanmış bir ana sayfa yalnızca güçlü bir ilk izlenim yaratmakla kalmaz, aynı zamanda okuyucuları en çok ilgilendikleri içeriğe yönlendirmeye yardımcı olur. Neyse ki, WordPress sayfa oluşturucuları, Alice'e kod bilmeye gerek kalmadan oluşturma özgürlüğü veren sürükle ve bırak işleviyle çarpıcı ana sayfalar tasarlamak için kullanıcı dostu bir yol sunar.
 
 Bu kılavuz Alice'i (ve sizi) WordPress sayfa oluşturucularını kullanarak çekici bir ana sayfa tasarlama konusunda yönlendirecektir. Okuyucuların daha fazlası için geri gelmesini sağlayacak bir ana sayfa oluşturmak için farklı sayfa oluşturucu seçeneklerini, adım adım talimatları ve tasarım ipuçlarını keşfedeceğiz.
 
@@ -52,7 +52,8 @@ Elementor'u kullanmaya başlamak için Alice'in eklentiyi yüklemesi ve etkinle�
 Tasarıma dalmadan önce Alice'in ana sayfası olarak hizmet edecek bir sayfa oluşturması gerekir.
 
 - **Adım 1:** WordPress panosunda *Sayfalar > Yeni Ekle*'ye gidin.
-- **Adım 2:** Sayfaya bir başlık verin (örneğin, "Ana Sayfa") ve *Yayınla*'ya tıklayın. - **Adım 3:** Bu sayfayı *Ayarlar > Okuma* bölümüne gidip "Statik bir sayfa" seçeneğini belirleyerek ana sayfa olarak ayarlayın, ardından açılır menüden yeni oluşturulan ana sayfayı seçin.
+- **Adım 2:** Sayfaya bir başlık verin (örneğin, "Ana Sayfa") ve *Yayınla*'ya tıklayın.
+- **Adım 3:** Bu sayfayı *Ayarlar > Okuma* bölümüne gidip "Statik bir sayfa" seçeneğini belirleyerek ana sayfa olarak ayarlayın, ardından açılır menüden yeni oluşturulan ana sayfayı seçin.
 
 ---
 

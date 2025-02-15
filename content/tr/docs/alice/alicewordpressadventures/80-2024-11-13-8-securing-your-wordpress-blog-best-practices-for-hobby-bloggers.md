@@ -4,7 +4,7 @@ linkTitle: Wordpress Güvenliği
 description: Bu rehber Alice'e (ve size) WordPress blogunuzu güvenli hale getirmek için en iyi uygulamaları anlatacak.
 date: 2024-11-13
 weight: 80
-draft: true
+draft: false
 tags:
   - blog publishing
   - securing wordpress
@@ -17,7 +17,7 @@ featured_image: /images/alice-interview.webp
 url: /tr/securing-wordpress-blog-practices-hobby-bloggers
 translationKey: securing-wordpress-blog-practices-hobby-bloggers
 ---
-Alice, birçok hobi blog yazarı gibi, tutkusunu paylaşmak için ilgi çekici bir WordPress blogu oluşturmaya tüm kalbini ve ruhunu verdi. Ancak web siteleriyle karşı karşıya kalan siber tehditlerin sayısı arttıkça, blogunu güvence altına almak kaliteli içerik oluşturmak kadar önemlidir. Bilgisayar korsanları, kötü amaçlı yazılımlar ve kaba kuvvet saldırıları, yıllarca süren sıkı çalışmayı bozabilir veya hatta yok edebilir. Neyse ki Alice'in blogunu korumak için bir teknoloji uzmanı olması gerekmiyor.
+Alice, birçok hobi blog yazarı gibi, tutkusunu paylaşmak için ilgi çekici bir WordPress blogu oluşturmaya tüm kalbini ve ruhunu verdi. Ancak web sitelerinin karşı karşıya kaldığı siber tehditlerin sayısı arttıkça, blogunu güvence altına almak kaliteli içerik oluşturmak kadar önemlidir. Bilgisayar korsanları, kötü amaçlı yazılımlar ve kaba kuvvet saldırıları, yıllarca süren sıkı çalışmayı bozabilir veya hatta yok edebilir. Neyse ki Alice'in blogunu korumak için bir teknoloji uzmanı olması gerekmiyor.
 
 Bu kılavuz Alice'i (ve sizi) bir WordPress blogunu güvence altına almak için en iyi uygulamalarda yönlendirecektir. Bu adımları izleyerek saldırı riskini en aza indirebilir, içeriğini koruyabilir ve okuyucularının verilerini güvende tutabilir.
 
@@ -27,7 +27,8 @@ Bu kılavuz Alice'i (ve sizi) bir WordPress blogunu güvence altına almak için
 
 Bir WordPress sitesini güvence altına almanın en temel adımı, yazılımı güncel tutmaktır.
 
-- **Temel Güncellemeler:** WordPress, güvenlik açıklarını gidermek, işlevselliği iyileştirmek ve performansı artırmak için düzenli olarak güncellemeler yayınlar. Alice, WordPress temel dosyalarını doğrudan *Pano > Güncellemeler* bölümüne giderek panodan güncelleyebilir. - Temalar ve Eklenti Güncellemeleri:** Güncel olmayan temalar ve eklentiler, bilgisayar korsanları için yaygın giriş noktalarıdır. Alice bunları sık sık güncellemeli ve artık kullanılmayanları kaldırmalıdır.
+- **Temel Güncellemeler:** WordPress, güvenlik açıklarını gidermek, işlevselliği iyileştirmek ve performansı artırmak için düzenli olarak güncellemeler yayınlar. Alice, WordPress temel dosyalarını doğrudan *Pano > Güncellemeler* bölümüne giderek panodan güncelleyebilir.
+- **Temalar ve Eklenti Güncellemeleri:** Güncel olmayan temalar ve eklentiler, bilgisayar korsanları için yaygın giriş noktalarıdır. Alice bunları sık sık güncellemeli ve artık kullanılmayanları kaldırmalıdır.
 - **Otomatik Güncellemeler:** İşleri kolaylaştırmak için Alice, `wp-config.php` dosyasına şu satırı ekleyerek küçük sürümler için otomatik güncellemeleri etkinleştirebilir:
 
 ```php
@@ -42,7 +43,8 @@ Birçok barındırma sağlayıcısı otomatik güncellemeler de sunar.
 
 Barındırma ortamı, bir WordPress blogunun genel güvenliğinde önemli bir rol oynar.
 
-- **Yönetilen WordPress Barındırma:** Kinsta veya WP Engine gibi bu sağlayıcılar, günlük yedeklemeler, otomatik güncellemeler ve yerleşik güvenlik özellikleri dahil olmak üzere optimize edilmiş güvenlik sunar. - **Paylaşımlı Barındırma Hususları:** Alice paylaşımlı barındırma kullanıyorsa, site izolasyonu, güvenlik duvarları ve proaktif tehdit izleme gibi güçlü güvenlik uygulamalarına sahip saygın bir sağlayıcı seçmelidir.
+- **Yönetilen WordPress Barındırma:** Kinsta veya WP Engine gibi bu sağlayıcılar, günlük yedeklemeler, otomatik güncellemeler ve yerleşik güvenlik özellikleri dahil olmak üzere optimize edilmiş güvenlik sunar.
+- **Paylaşımlı Barındırma Hususları:** Alice paylaşımlı barındırma kullanıyorsa, site izolasyonu, güvenlik duvarları ve proaktif tehdit izleme gibi güçlü güvenlik uygulamalarına sahip saygın bir sağlayıcı seçmelidir.
 - **SSL Sertifikası:** Çoğu saygın barındırıcı, Let's Encrypt gibi hizmetler aracılığıyla ücretsiz SSL sertifikaları sunar. Bir SSL sertifikası, Alice'in sitesi ile ziyaretçileri arasındaki verileri şifreleyerek güvenliği artırır ve arama sıralamalarını yükseltir.
 
 ---
@@ -90,7 +92,7 @@ Düzenli yedeklemeler, Alice'in veri kaybı, saldırı veya diğer sorunlar duru
 Alice blogunda başkalarıyla işbirliği yapıyorsa, güvenli kullanıcı rolleri ve izinleri kullanmak önemlidir.
 
 - **Rolleri Dikkatlice Atayın:** WordPress, Yönetici, Editör, Yazar, Katkıda Bulunan ve Abone gibi roller sunar. Alice, yalnızca güvenilir kullanıcılara Yönetici erişimi vermeli ve mümkün olduğunda daha düşük roller atamalıdır.
-- **Kullanıcı İzinlerini Düzenli Olarak İnceleyin:** Periyodik olarak
+- **Kullanıcı İzinlerini Düzenli Olarak İnceleyin:** Periyodik olarak kullanıcı rollerini gözden geçirin ve gerekli olmayanları kısıtlayın.
 
 ---
 
@@ -110,7 +112,8 @@ define('DISALLOW_FILE_EDIT', true);
 
 `wp-config.php` dosyası Alice'in WordPress kurulumu için önemli yapılandırma bilgilerini içerir.
 
-- **Dosyayı Taşıyın:** Alice, ek güvenlik için `wp-config.php` dosyasını WordPress kök dizininin bir üst dizinine taşıyabilir. - **Erişim Kısıtlamaları Ekleme:** Erişimi engellemek için `.htaccess` dosyasına şu satırları ekleyebilir:
+- **Dosyayı Taşıyın:** Alice, ek güvenlik için `wp-config.php` dosyasını WordPress kök dizininin bir üst dizinine taşıyabilir.
+- **Erişim Kısıtlamaları Ekleme:** Erişimi engellemek için `.htaccess` dosyasına şu satırları ekleyebilir:
 
 ```apache
 <Files wp-config.php>
@@ -158,7 +161,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 Kötü amaçlı veya güncel olmayan eklentiler ve temalar güvenlik riskleri oluşturabilir.
 
 - **Güvenilir Kaynakları Kullanın:** Alice eklentileri ve temaları yalnızca WordPress deposu veya ThemeForest gibi doğrulanmış pazar yerleri gibi saygın kaynaklardan indirmelidir.
-- **Etkin Olmayan Eklentileri ve Temaları Silin:** Kullanılmayan temalar ve eklentiler etkin olmasalar bile risk oluşturabilir. - **Güncellemeleri Sık Sık Kontrol Edin:** Her şeyi güncel tutmak güvenlik açıklarını azaltır.
+- **Etkin Olmayan Eklentileri ve Temaları Silin:** Kullanılmayan temalar ve eklentiler etkin olmasalar bile risk oluşturabilir.
+- **Güncellemeleri Sık Sık Kontrol Edin:** Her şeyi güncel tutmak güvenlik açıklarını azaltır.
 
 ---
 

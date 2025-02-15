@@ -3,7 +3,7 @@ title: "Understanding Nmap: The Network Mapper - An Essential Tool for Network D
 linkTitle: Nmap The Network Mapper
 description: In this comprehensive guide, we'll explore what Nmap is, how it works, and why it has become an indispensable tool in the network administrator's arsenal.
 date: 2024-12-21
-weight: 2
+weight: 10
 url: understanding-nmap-network-mapper-essential-tool-network-discovery-security-assessment
 draft: false
 tags:
@@ -15,6 +15,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - nmap
 featured_image: /images/kalilinux3.webp
+translationKey: understanding-nmap-network-mapper-essential-tool-network-discovery-security-assessment
 ---
 Network security professionals and system administrators have long relied on powerful tools to understand, monitor, and secure their networks. Among these tools, Nmap (Network Mapper) stands out as one of the most versatile and widely-used utilities for network discovery and security auditing. In this comprehensive guide, we'll explore what Nmap is, how it works, and why it has become an indispensable tool in the network administrator's arsenal.
 

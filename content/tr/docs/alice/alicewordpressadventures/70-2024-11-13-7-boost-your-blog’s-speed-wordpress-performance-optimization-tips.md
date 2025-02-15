@@ -4,7 +4,7 @@ linkTitle: WordPress Performans Optimizasyonu
 description: Okuyucularının mümkün olan en iyi deneyimi yaşamasını sağlamak için Alice, WordPress sitesini hız ve performans açısından optimize etmelidir.
 date: 2024-11-13
 weight: 70
-draft: true
+draft: false
 tags:
   - blog publishing
   - WordPress Performance Optimization
@@ -83,7 +83,8 @@ Gzip sıkıştırması, sunucudan tarayıcıya gönderilen dosyaların boyutunu 
 
 Zamanla, WordPress veritabanları, performansı yavaşlatan gönderi revizyonları, geçici veriler ve diğer verilerle dolup taşabilir.
 
-- **Veritabanı Optimizasyon Eklentileri:** **WP-Optimize** veya **Advanced Database Cleaner** gibi eklentiler Alice'in gereksiz verileri temizlemesine ve veritabanı performansını iyileştirmesine yardımcı olabilir. - **Gönderi Revizyonlarını Sınırla:** Alice, `wp-config.php` dosyasına bir satır ekleyerek depolanan revizyon sayısını sınırlayabilir:
+- **Veritabanı Optimizasyon Eklentileri:** **WP-Optimize** veya **Advanced Database Cleaner** gibi eklentiler Alice'in gereksiz verileri temizlemesine ve veritabanı performansını iyileştirmesine yardımcı olabilir. 
+- **Gönderi Revizyonlarını Sınırla:** Alice, `wp-config.php` dosyasına bir satır ekleyerek depolanan revizyon sayısını sınırlayabilir:
 
 ```php
 define('WP_POST_REVISIONS', 5);
