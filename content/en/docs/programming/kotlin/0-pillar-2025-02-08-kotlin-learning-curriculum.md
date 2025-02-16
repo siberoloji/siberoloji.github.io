@@ -48,6 +48,10 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
    - [if/else expressions](/ifelse-expressions-in-kotlin/)
    - [when expressions](/when-expressions-in-kotlin/)
    - [Loops (for, while, do-while)](/loops-in-kotlin/)
+     - [For loops detailed explanation](/mastering-kotlin-for-loops-a-comprehensive-guide/)
+     - [While loops detailed explanation](/while-loops-in-kotlin/)
+     - [Do-while loops detailed explanation](/do-while-loops-in-kotlin/)
+     - [Nested loops](/nested-loops-in-kotlin/)
    - [Ranges](/ranges-in-kotlin/)
    - [Jump expressions (break, continue, return)](/jump-expressions-in-kotlin/)
 
