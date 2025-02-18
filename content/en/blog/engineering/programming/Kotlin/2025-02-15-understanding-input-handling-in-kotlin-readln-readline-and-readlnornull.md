@@ -8,8 +8,7 @@ slug: understanding-input-handling-in-kotlin-readln-readline-and-readlnornull
 date: 2025-02-15
 tags:
    - kotlin
-   - input
-   - handling
+   - input handling
 categories:
    - programming
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
