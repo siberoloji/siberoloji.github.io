@@ -1,21 +1,21 @@
 ---
 draft: false
-
-title:  'Time Analysis: Understanding Static and Dynamic Hazards in Digital Logic Circuits'
-date: '2024-10-08T21:34:02+03:00'
+title: "Time Analysis: Understanding Static and Dynamic Hazards in Digital Logic Circuits"
+description: This article explores the concepts of static and dynamic hazards in digital logic circuits, their causes, potential effects, and strategies to mitigate them.
+date: 2024-10-08T21:34:02+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /time-analysis-understanding-static-and-dynamic-hazards-in-digital-logic-circuits/
- 
+url: /time-analysis-understanding-static-and-dynamic-hazards-in-digital-logic-circuits/
 featured_image: /images/digital-logic-design3.webp
 categories:
-    - 'Digital Logic Design'
+    - Digital Logic Design
 tags:
-    - 'computer engineering'
-    - 'digital logic design'
-    - 'Static and dynamic hazards'
-    - 'time analysis'
+    - computer engineering
+    - digital logic design
+    - Static and dynamic hazards
+    - time analysis
+translationKey: time-analysis-understanding-static-and-dynamic-hazards-in-digital-logic-circuits
+keywords:
+    - static hazards
 ---
 
 

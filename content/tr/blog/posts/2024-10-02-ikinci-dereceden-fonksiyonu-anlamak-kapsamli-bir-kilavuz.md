@@ -1,13 +1,10 @@
 ---
 draft: false
-
-title:  'İkinci Dereceden Fonksiyonu Anlamak: Kapsamlı Bir Kılavuz'
-date: '2024-10-02T00:32:44+03:00'
+title: "İkinci Dereceden Fonksiyonu Anlamak: Kapsamlı Bir Kılavuz"
+description: Bu kılavuz ikinci dereceden fonksiyonlar hakkında bilmeniz gerekenleri anlatmaktadır.
+date: 2024-10-02T00:32:44+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
- 
+url: /tr/ikinci-dereceden-fonksiyonu-anlamak-kapsamli-bir-kilavuz/
 featured_image: /images/bash-1.jpeg
 categories:
     - Programlama

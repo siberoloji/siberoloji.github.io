@@ -125,32 +125,32 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 ### Week 8-9: Functional Concepts
 
 1. Lambda Expressions
-   - Lambda syntax
-   - Higher-order functions
-   - Function types
-   - Function literals
-   - Closures
+   - [Lambda syntax](/understanding-lambda-syntax-in-kotlin-programming-language/)
+   - [Higher-order functions](/higher-order-functions-in-kotlin/)
+   - [Function types](/function-types-in-kotlin/)
+   - [Function literals](/function-literals-in-kotlin/)
+   - [Closures](/closures-in-kotlin/)
 
 2. Collections Processing
-   - map, filter, reduce
-   - fold and reduce operations
-   - zip, flatten, groupBy
-   - take, drop operations
-   - Sequence operations
+   - [map, filter, reduce](/understanding-map-filter-and-reduce-in-kotlin/)
+   - [fold and reduce operations](/fold-and-reduce-operations-in-kotlin/)
+   - [zip, flatten, groupBy](/zip-flatten-and-groupby-in-kotlin/)
+   - [take, drop operations](/take-and-drop-operations-in-kotlin/)
+   - [Sequence operations](/sequence-operations-in-kotlin/)
 
 ### Week 10-11: Advanced Functional Programming
 
 1. Scope Functions
-   - let, run, with
-   - apply, also
-   - Choosing between scope functions
+   - [let, run, with](/understanding-kotlin-scope-functions-let-run-with/)
+   - [apply, also](/understanding-kotlin-scope-functions-apply-and-also/)
+   - [Choosing between scope functions](/a-comprehensive-guide-to-choosing-between-kotlin-scope-functions7)
 
 2. Advanced Functions
-   - Inline functions
-   - Infix functions
-   - Operator overloading
-   - Tail recursion
-   - Type aliases
+   - [Inline functions](/inline-functions-in-kotlin/)
+   - [Infix functions](/infix-functions-in-kotlin/)
+   - [Operator overloading](/understanding-operator-overloading-in-kotlin/)
+   - [Tail recursion](/understanding-tail-recursion-in-kotlin/)
+   - [Type aliases](/type-aliases-in-kotlin/)
 
 ## Level 4: Advanced Topics (4-5 weeks)
 

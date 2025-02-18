@@ -1,20 +1,21 @@
 ---
 draft: false
-
-title:  'Special Tools for Scraping Dark Web Sites'
-date: '2024-10-17T16:50:37+03:00'
+title: Special Tools for Scraping Dark Web Sites
+description: We will explore the methods and tools used for scraping dark web sites for OSINT purposes, as well as the legal and ethical considerations.
+date: 2024-10-17T16:50:37+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/
+url: /scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/
 featured_image: /images/osint3.webp
 categories:
-    - 'Open Source Intelligence (OSINT)'
+    - Open Source Intelligence (OSINT)
 tags:
     - cybersecurity
-    - 'information gathering'
-    - 'open source intelligence'
+    - information gathering
+    - open source intelligence
     - osint
+translationKey: scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations
+keywords:
+    - scraping
 ---
 
 
