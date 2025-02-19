@@ -151,21 +151,21 @@ featured_image: /images/linuxmint1.webp
 13. [How to manage bookmarks in file manager](/managing-bookmarks-in-linux-mint-cinnamon-desktop-file-manager/)
 14. [How to set up file templates](/setting-up-file-templates-in-linux-mint-cinnamon-desktop/)
 15. [How to manage trash settings](/how-to-manage-trash-settings-with-cinnamon-desktop-on-linux-mint/)
-16. How to configure file previews
-17. How to manage file compression
-18. How to set up file backups
-19. How to manage file ownership
-20. How to configure file sharing
-21. How to manage file timestamps
-22. How to set up file monitoring
-23. How to configure file indexing
-24. How to manage file extensions
-25. How to set up file encryption
-26. How to configure file sorting
-27. How to manage file types
-28. How to set up file versioning
-29. How to configure file paths
-30. How to manage file system links
+16. [How to configure file previews](/how-to-configure-file-previews-with-cinnamon-desktop-on-linux-mint/)
+17. [How to manage file compression](/how-to-manage-file-compression-with-cinnamon-desktop-on-linux-mint/)
+18. [How to set up file backups](/how-to-set-up-file-backups-with-cinnamon-desktop-on-linux-mint/)
+19. [How to manage file ownership](/how-to-manage-file-ownership-with-cinnamon-desktop-on-linux-mint/)
+20. [How to configure file sharing](/how-to-configure-file-sharing-with-cinnamon-desktop-on-linux-mint/)
+21. [How to manage file timestamps](/how-to-manage-file-timestamps-with-cinnamon-desktop-on-linux-mint/)
+22. [How to set up file monitoring](/how-to-set-up-file-monitoring-with-cinnamon-desktop-on-linux-mint/)
+23. [How to configure file indexing](/how-to-configure-file-indexing-with-cinnamon-desktop-on-linux-mint/)
+24. [How to manage file extensions](/how-to-manage-file-extensions-with-cinnamon-desktop-on-linux-mint/)
+25. [How to set up file encryption](/how-to-set-up-file-encryption-with-cinnamon-desktop-on-linux-mint/)
+26. [How to configure file sorting](/how-to-configure-file-sorting-with-cinnamon-desktop-on-linux-mint/)
+27. [How to manage file types](/ow-to-manage-file-types-with-cinnamon-desktop-on-linux-mint/)
+28. [How to set up file versioning](/how-to-set-up-file-versioning-with-cinnamon-desktop-on-linux-mint/)
+29. [How to configure file paths](/how-to-configure-file-paths-with-cinnamon-desktop-on-linux-mint/)
+30. [How to manage file system links](/how-to-manage-file-system-links-with-cinnamon-desktop-on-linux-mint/)
 
 ## Internet & Networking (35 topics)
 
