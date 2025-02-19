@@ -4,6 +4,7 @@ linkTitle: Docs
 simple_list: true
 reading_time: false
 menu: {main: {weight: 20}}
+url: docs
 ---
 
 {{% pageinfo %}}

@@ -9,6 +9,7 @@ tags:
   - Linux Mint
 weight: 20
 simple_list: true
+url: linuxmint-howtos-system-management
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.

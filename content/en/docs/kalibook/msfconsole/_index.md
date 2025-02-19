@@ -2,8 +2,7 @@
 title: Chapter 2 Metasploit Framework
 url: /metasploit-framework-section/
 weight: 2
-description: >-
-  Metasploit Framework is a powerful open-source tool for penetration testing, exploit development, and vulnerability research.
+description: Metasploit Framework is a powerful open-source tool for penetration testing, exploit development, and vulnerability research.
 categories:
   - Kali Linux
   - Cybersecurity
