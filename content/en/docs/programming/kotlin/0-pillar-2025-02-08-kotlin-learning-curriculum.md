@@ -157,26 +157,26 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
 ### Week 12-13: Coroutines
 
 1. Basic Coroutines
-   - Coroutine basics
-   - Launching coroutines
-   - Jobs and cancellation
-   - Coroutine context
-   - Dispatchers
+   - [Coroutine basics](/coroutine-basics-in-kotlin/)
+   - [Launching coroutines](/coroutine-basics-in-kotlin/)
+   - [Jobs and cancellation](/jobs-and-cancellation-in-kotlin/)
+   - [Coroutine context](/coroutine-context-in-kotlin/)
+   - [Dispatchers](/dispatchers-in-kotlin/)
 
 2. Advanced Coroutines
-   - Channels
-   - Flow API
-   - Exception handling
-   - Testing coroutines
-   - Structured concurrency
+   - [Channels](/channels-in-kotlin-programming-language/)
+   - [Flow API](/flow-api-in-kotlin-programming-language/)
+   - [Exception handling](/exception-handling-in-kotlin/)
+   - [Testing coroutines](/testing-coroutines-in-kotlin/)
+   - [Structured concurrency](/structured-concurrency-in-kotlin/)
 
 ### Week 14-15: Platform Integration
 
 1. Java Interoperability
-   - Calling Java from Kotlin
-   - Calling Kotlin from Java
-   - Platform types
-   - SAM conversions
+   - [Calling Java from Kotlin](/calling-java-from-kotlin/)
+   - [Calling Kotlin from Java](/calling-kotlin-from-java/)
+   - [Platform types](/platform-types-in-kotlin/)
+   - [SAM conversions](/sam-conversions-in-kotlin/)
    - @JvmStatic and @JvmField
 
 2. Modern Development

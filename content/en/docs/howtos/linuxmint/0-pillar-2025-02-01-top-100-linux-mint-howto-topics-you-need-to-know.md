@@ -169,26 +169,26 @@ featured_image: /images/linuxmint1.webp
 
 ## Internet & Networking (35 topics)
 
-1. How to configure network connections
-2. How to set up VPN connections
-3. How to manage network security
-4. How to configure proxy settings
-5. How to manage network shares
-6. How to set up remote access
-7. How to configure network protocols
-8. How to manage network interfaces
-9. How to set up network monitoring
-10. How to configure network printing
-11. How to manage network services
-12. How to set up network storage
-13. How to configure network firewall
-14. How to manage network traffic
-15. How to set up network diagnostics
-16. How to configure network ports
-17. How to manage network drives
-18. How to set up network scanning
-19. How to configure network backup
-20. How to manage network permissions
+1. [How to configure network connections](/configuring-network-connections-with-cinnamon-desktop-on-linux-mint/)
+2. [How to set up VPN connections](/how-to-set-up-vpn-connections-with-cinnamon-desktop-on-linux-mint/)
+3. [How to manage network security](/how-to-manage-network-security-with-cinnamon-desktop-on-linux-mint/)
+4. [How to configure proxy settings](/how-to-configure-proxy-settings-with-cinnamon-desktop-on-linux-mint/)
+5. [How to manage network shares](/how-to-manage-network-shares-with-cinnamon-desktop-on-linux-mint/)
+6. [How to set up remote access](/how-to-set-up-remote-access-with-cinnamon-desktop-on-linux-mint/)
+7. [How to configure network protocols](/how-to-configure-network-protocols-with-cinnamon-desktop-on-linux-mint/)
+8. [How to manage network interfaces](/manage-network-interfaces-with-cinnamon-desktop-on-linux-mint/)
+9. [How to set up network monitoring](/how-to-set-up-network-monitoring-with-cinnamon-desktop-on-linux-mint/)
+10. [How to configure network printing](/how-to-configure-network-printing-with-cinnamon-desktop-on-linux-mint/)
+11. [How to manage network services](/how-to-manage-network-services-with-cinnamon-desktop-on-linux-mint/)
+12. [How to set up network storage](/how-to-set-up-network-storage-with-cinnamon-desktop-on-linux-mint/)
+13. [How to configure network firewall](/configuring-your-network-firewall-on-linux-mint-with-cinnamon-desktop/)
+14. [How to manage network traffic](/network-traffic-management-on-linux-mint-with-cinnamon-desktop/)
+15. [How to set up network diagnostics](/setting-up-network-diagnostics-on-linux-mint-with-cinnamon-desktop/)
+16. [How to configure network ports](/network-port-configuration-on-linux-mint-with-cinnamon-desktop/)
+17. [How to manage network drives](/managing-network-drives-on-linux-mint-with-cinnamon-desktop/)
+18. [How to set up network scanning](/network-scanning-on-linux-mint-with-cinnamon-desktop/)
+19. [How to configure network backup](/network-backup-configuration-on-linux-mint-with-cinnamon-desktop/)
+20. [How to manage network permissions](/managing-network-permissions-on-linux-mint-with-cinnamon-desktop/)
 21. How to set up network authentication
 22. How to configure network encryption
 23. How to manage network bandwidth
