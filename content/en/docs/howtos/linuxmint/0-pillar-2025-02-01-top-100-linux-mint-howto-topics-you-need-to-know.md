@@ -4,7 +4,7 @@ title: Top 300 Linux Mint How-to Topics You Need to Know
 linkTitle: Top 300 Topics
 translationKey: top-300-linux-mint-howto-topics-you-need-to-know
 weight: 1
-description: A comprehensive list of the top 100 Linux Mint how-to topics you need to know to master your Linux Mint system.
+description: A comprehensive list of the top 300 Linux Mint how-to topics you need to know to master your Linux Mint system.
 date: 2025-02-01
 url: /top-300-linux-mint-howto-topics-you-need-to-know/
 tags:

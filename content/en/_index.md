@@ -1,12 +1,15 @@
 ---
 title: Siberoloji
+description: Useful content and news for Tech-savvy audience interested in cybersecurity, technology trends, and related topics.
+date: 2021-10-01
+draft: false
 ---
 
 {{< blocks/cover title="Welcome to Siberoloji: A Cyber Knowledge Project!" image_anchor="top" height="full">}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Documents <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/blog">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="/blog/">
   Blog <i class="fab fa-github ms-2 "></i>
 </a>
 <p class="lead mt-5">Useful contents and news</p>

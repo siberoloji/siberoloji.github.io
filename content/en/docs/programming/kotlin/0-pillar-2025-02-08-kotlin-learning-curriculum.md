@@ -177,31 +177,31 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
    - [Calling Kotlin from Java](/calling-kotlin-from-java/)
    - [Platform types](/platform-types-in-kotlin/)
    - [SAM conversions](/sam-conversions-in-kotlin/)
-   - @JvmStatic and @JvmField
+   - [@JvmStatic and @JvmField](/understanding-jvmstatic-and-jvmfield-in-kotlin/)
 
 2. Modern Development
-   - DSL building
-   - Multiplatform development
-   - Testing in Kotlin
-   - Dependency injection
-   - Build tools (Gradle)
+   - [DSL building](/dsl-building-on-kotlin-programming-language/)
+   - [Multiplatform development](/multiplatform-development-on-kotlin/)
+   - [Testing in Kotlin](/testing-in-kotlin-programming-language/)
+   - [Dependency injection](/dependency-injection-in-kotlin/)
+   - [Build tools (Gradle)](/build-tools-gradle-in-kotlin/)
 
 ### Week 16: Real-world Applications
 
 1. Project Development
-   - Architecture patterns
-   - Best practices
-   - Code organization
-   - Performance optimization
-   - Documentation
+   - [Architecture patterns](/architecture-patterns-in-kotlin-programming-language/)
+   - [Best practices](/best-practices-in-kotlin-programming-language/)
+   - [Code organization](/code-organization-in-kotlin-programming-language/)
+   - [Performance optimization](/code-organization-in-kotlin-programming-language/)
+   - [Documentation](/documentation-in-kotlin-programming-language/)
 
 ## Practice Projects
 
 ### Beginner Level
 
-1. Console Calculator
-2. Todo List Application
-3. Simple File Parser
+1. [Console Calculator](/building-a-console-calculator-in-kotlin/)
+2. [Todo List Application](/todo-list-application-in-kotlin/)
+3. [Simple File Parser](/simple-file-parser-implementation-in-kotlin/)
 
 ### Intermediate Level
 

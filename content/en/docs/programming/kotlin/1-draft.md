@@ -12,23 +12,6 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: 
 ---
 
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  @JvmStatic and @JvmField  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  DSL building  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Multiplatform development  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Testing in Kotlin  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Dependency injection  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Build tools (Gradle)  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Architecture patterns  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Best practices  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Code organization  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Performance optimization  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Documentation  on Kotlin Programming Language "
-
-beginner level projects
-
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Console Calculator  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Todo List Application  on Kotlin Programming Language "
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about "  Simple File Parser  on Kotlin Programming Language "
 
 intermediate level projects
 
