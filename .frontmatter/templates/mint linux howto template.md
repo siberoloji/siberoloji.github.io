@@ -1,12 +1,12 @@
 ---
 draft: true
-title: null
-linkTitle: null
-translationKey: null
-description: null
-slug: null
+title:
+linkTitle:
+translationKey:
+description:
+slug:
 weight: 0
-date: null
+date:
 tags:
   - Linux Mint
   - how-to guides

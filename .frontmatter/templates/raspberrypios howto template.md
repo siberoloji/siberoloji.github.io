@@ -1,12 +1,12 @@
 ---
 draft: true
-title: 
-linkTitle: 
-translationKey: null
+title:
+linkTitle:
+translationKey:
 weight: 0
-description: 
-date: 
-slug: 
+description:
+date:
+slug:
 tags:
   - Raspberry Pi
 categories:

@@ -1,11 +1,11 @@
 ---
 draft: true
-title: 
-linkTitle: 
-translationKey: null
+title:
+linkTitle:
+translationKey:
 weight: 0
-description: 
-date: 
+description:
+date:
 slug:
 tags:
   - kali tools

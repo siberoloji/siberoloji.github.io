@@ -1,12 +1,12 @@
 ---
 draft: true
-title: null
-linkTitle: null
-translationKey: null
+title:
+linkTitle:
+translationKey:
 weight: 0
-description: null
-date: null
-slug: null
+description:
+date:
+slug:
 tags:
   - Kotlin
 categories:

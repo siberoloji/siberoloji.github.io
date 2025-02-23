@@ -1,12 +1,12 @@
 ---
 draft: true
-title: 
-linkTitle: 
-translationKey: 
+title:
+linkTitle:
+translationKey:
 weight: 0
-description: 
-date: 
-slug: 
+description:
+date:
+slug:
 tags:
   - AlmaLinux
 categories:
