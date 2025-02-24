@@ -7,10 +7,11 @@
 		{{ with .Params.author }}{{ T "post_byline_by" }} <b>{{ . | markdownify }}</b> |{{ end}}
 		<time datetime="{{  $.Date.Format "2006-01-02" }}" class="text-body-secondary"> {{ $.Date.Format $.Site.Params.time_format_blog  }}</time>
 	</div>
-	    <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2">
+<!--	    <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2">
 		{{ with .Params.featured_image }} <img src="{{ . }}" style="margin-left:0rem;width:20%;height:20%;" class="img">
 		{{ end }}
 	  </div>
+	-->
 <!-- Author and featured image has been added to docs style. -->	  
 
 	<header class="article-meta">

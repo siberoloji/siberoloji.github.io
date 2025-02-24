@@ -189,25 +189,25 @@ featured_image: /images/linuxmint1.webp
 18. [How to set up network scanning](/network-scanning-on-linux-mint-with-cinnamon-desktop/)
 19. [How to configure network backup](/network-backup-configuration-on-linux-mint-with-cinnamon-desktop/)
 20. [How to manage network permissions](/managing-network-permissions-on-linux-mint-with-cinnamon-desktop/)
-21. How to set up network authentication
-22. How to configure network encryption
-23. How to manage network bandwidth
-24. How to set up network routing
-25. How to configure network addressing
-26. How to manage network profiles
-27. How to set up network bridging
-28. How to configure network discovery
-29. How to manage network certificates
-30. How to set up network monitoring
-31. How to configure network time
-32. How to manage network protocols
-33. How to set up network tunneling
-34. How to configure network mapping
-35. How to manage network security
+21. [How to set up network authentication](/how-to-set-up-network-authentication-with-cinnamon-desktop-on-linux-mint/)
+22. [How to configure network encryption](/how-to-configure-network-encryption-with-cinnamon-desktop-on-linux-mint/)
+23. [How to manage network bandwidth](/how-to-manage-network-bandwidth-with-cinnamon-desktop-on-linux-mint/)
+24. [How to set up network routing](/how-to-set-up-network-routing-with-cinnamon-desktop-on-linux-mint/)
+25. [How to configure network addressing](/how-to-configure-network-addressing-with-cinnamon-desktop-on-linux-mint/)
+26. [How to manage network profiles](/manage-network-profiles-with-cinnamon-desktop-on-linux-mint/)
+27. [How to set up network bridging](/how-to-set-up-network-bridging-with-cinnamon-desktop-on-linux-mint/)
+28. [How to configure network discovery](/how-to-configure-network-discovery-with-cinnamon-desktop-on-linux-mint/)
+29. [How to manage network certificates](/managing-network-certificates-with-cinnamon-desktop-on-linux-mint/)
+30. [How to set up network monitoring](/setting-up-network-monitoring-with-cinnamon-desktop-on-linux-mint/)
+31. [How to configure network time](/configuring-network-time-with-cinnamon-desktop-on-linux-mint/)
+32. [How to manage network protocols](/managing-network-protocols-with-cinnamon-desktop-on-linux-mint/)
+33. [How to set up network tunneling](/setting-up-network-tunneling-with-cinnamon-desktop-on-linux-mint/)
+34. [How to configure network mapping](/configuring-network-mapping-with-cinnamon-desktop-on-linux-mint/)
+35. [How to manage network security](/managing-network-security-with-cinnamon-desktop-on-linux-mint/)
 
 ## Security & Privacy (30 topics)
 
-1. How to configure system firewall
+1. [How to configure system firewall](/configuring-system-firewall-with-cinnamon-desktop-on-linux-mint/)
 2. How to set up user authentication
 3. How to manage system permissions
 4. How to configure disk encryption

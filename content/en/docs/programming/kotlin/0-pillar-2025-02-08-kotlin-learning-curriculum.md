@@ -64,6 +64,7 @@ A comprehensive guide to learning Kotlin programming from basics to advanced con
    - [Default arguments](/default-arguments-in-kotlin-functions/)
    - [Named arguments](/named-arguments-in-kotlin/)
    - [Extension functions](/extension-functions-in-kotlin/)
+     - [Code Example](/kotlin-code-example-for-extension-functions/)
 
 2. Collections
    - [Lists, Sets, Maps](/collections-in-kotlin-lists-sets-and-maps/)

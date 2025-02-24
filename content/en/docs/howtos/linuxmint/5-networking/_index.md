@@ -8,7 +8,7 @@ categories:
   - Linux
 tags:
   - Linux Mint
-weight: 40
+weight: 50
 simple_list: true
 url: linuxmint-howtos-internet-and-networking
 ---
