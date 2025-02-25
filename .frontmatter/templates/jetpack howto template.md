@@ -8,8 +8,12 @@ slug:
 weight: 0
 date:
 tags:
+  - Compose
+  - Jetpack
 categories:
+  - Programming
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
-featured_image: /images/kotlin-1.png
+  - Jetpack Compose
+featured_image: /images/linuxmint1.webp
 ---
