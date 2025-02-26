@@ -1,14 +1,16 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false 
+title: How to Configure RAID1 (Mirroring) with ZFS on FreeBSD Operating System
+linkTitle: How to Configure RAID1 (Mirroring) with ZFS
+translationKey: how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system
+description: This guide walks you through the process of configuring RAID1 (mirroring) with ZFS on FreeBSD, from planning and preparation to verification and maintenance.
+url: how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system
+date: 2025-02-26
+weight: 120
 keywords:
   - FreeBSD
+  - RAID1
+  - ZFS
 tags:
   - FreeBSD
   - how-to guides
@@ -16,8 +18,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-# How to Configure RAID1 (Mirroring) with ZFS on FreeBSD Operating System
-
 Data integrity and redundancy are critical aspects of any storage system, particularly for servers and mission-critical workstations. The Z File System (ZFS) integrated into FreeBSD provides native support for various RAID configurations, including RAID1 (mirroring), which maintains identical copies of data across multiple disks. This redundancy ensures that if one disk fails, your data remains accessible and intact.
 
 This comprehensive guide will walk you through the process of configuring RAID1 with ZFS on FreeBSD, from planning and preparation to verification and maintenance. Whether you're setting up a new system or adding redundancy to an existing one, you'll learn how to leverage ZFS's powerful features to create a robust storage solution.

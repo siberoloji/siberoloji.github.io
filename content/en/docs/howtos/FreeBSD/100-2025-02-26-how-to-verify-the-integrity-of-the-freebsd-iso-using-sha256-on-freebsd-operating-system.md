@@ -1,14 +1,15 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: How to Verify the Integrity of the FreeBSD ISO Using SHA256 on FreeBSD Operating System
+linkTitle: Integrity Verification with SHA256
+translationKey: how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system
+description: Learn how to verify the integrity of the FreeBSD ISO using SHA256 on FreeBSD Operating System, ensuring you're installing legitimate software.
+url: how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system
+date: 2025-02-26
+weight: 100
 keywords:
   - FreeBSD
+  - integrity
 tags:
   - FreeBSD
   - how-to guides
@@ -16,8 +17,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-# How to Verify the Integrity of the FreeBSD ISO Using SHA256 on FreeBSD Operating System
-
 In the world of operating systems, security begins before installation. Verifying the integrity of your FreeBSD installation media is a crucial first step that helps ensure you're installing legitimate, unmodified software. This verification process protects against corrupted downloads, tampered distribution files, and potential security compromises.
 
 This guide will walk you through the complete process of verifying a FreeBSD ISO using SHA256 checksums, explaining not just how to perform the verification but why each step matters and what happens behind the scenes.

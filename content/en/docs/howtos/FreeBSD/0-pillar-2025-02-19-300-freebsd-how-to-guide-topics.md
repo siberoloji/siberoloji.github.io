@@ -27,15 +27,15 @@ Here’s an expanded, categorized, and **numbered list** of **300+ FreeBSD how-t
 1.1. [How to create a FreeBSD bootable USB drive on Windows/macOS/Linux.](/how-to-create-a-freebsd-bootable-usb-drive-on-windows-macos-and-linux/)
 1.2. [How to install FreeBSD in UEFI mode with Secure Boot.](/installing-freebsd-in-uefi-mode-with-secure-boot/)
 1.3. [How to dual-boot FreeBSD with Windows using GRUB.](/how-to-dual-boot-freebsd-with-windows-using-grub-on-freebsd-operating-system/)
-1.4. How to partition disks using ZFS during installation.
-1.5. How to configure wireless networking during installation.
-1.6. How to install FreeBSD on a Raspberry Pi 4/5.
-1.7. How to use the FreeBSD text-based installer for headless setups.
-1.8. How to enable full-disk encryption with GELI during installation.
-1.9. How to recover from a corrupted installation.
-1.10. How to verify the integrity of the FreeBSD ISO using SHA256.
-1.11. How to install FreeBSD on a virtual machine (VirtualBox/VMware).
-1.12. How to configure RAID1 (mirroring) with ZFS.
+1.4. [How to partition disks using ZFS during installation.](/how-to-partition-disks-using-zfs-during-installation-on-freebsd-operating-system/)
+1.5. [How to configure wireless networking during installation.](/how-to-configure-wireless-networking-during-installation-on-freebsd-operating-system/)
+1.6. [How to install FreeBSD on a Raspberry Pi 4/5.](/installing-freebsd-on-a-raspberry-pi-4-or-5/)
+1.7. [How to use the FreeBSD text-based installer for headless setups.](/how-to-use-the-freebsd-text-based-installer-for-headless-setups/)
+1.8. [How to enable full-disk encryption with GELI during installation.](/how-to-enable-full-disk-encryption-with-geli-during-freebsd-installation/)
+1.9. [How to recover from a corrupted installation.](/how-to-recover-from-a-corrupted-installation-on-freebsd-operating-system/)
+1.10. [How to verify the integrity of the FreeBSD ISO using SHA256.](/how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system/)
+1.11. [How to install FreeBSD on a virtual machine (VirtualBox/VMware).](/how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system/)
+1.12. [How to configure RAID1 (mirroring) with ZFS.](/how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system/)
 1.13. How to set up a minimal FreeBSD server (no GUI).
 1.14. How to customize the installer with advanced partitioning.
 1.15. How to troubleshoot "No Bootable Device" errors.

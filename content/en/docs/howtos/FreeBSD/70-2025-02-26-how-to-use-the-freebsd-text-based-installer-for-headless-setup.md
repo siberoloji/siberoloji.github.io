@@ -1,14 +1,15 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: How to Use the FreeBSD Text-Based Installer for Headless Setups on FreeBSD Operating System
+linkTitle: Text-Based Installer for Headless Setups
+translationKey: text-based-installer-for-headless-setups-freebsd
+description: This guide explains how to use the FreeBSD text-based installer for headless setups on FreeBSD operating system.
+url: how-to-use-the-freebsd-text-based-installer-for-headless-setups
+date: 2025-02-26
+weight: 70
 keywords:
   - FreeBSD
+  - text-based installer
 tags:
   - FreeBSD
   - how-to guides
@@ -16,8 +17,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-## How to Use the FreeBSD Text-Based Installer for Headless Setups on FreeBSD Operating System  
-
 ### Introduction  
 
 FreeBSD is a powerful, open-source UNIX-like operating system known for its advanced networking, security, and performance features. While many users install FreeBSD using a graphical or interactive interface, there are scenarios where a **headless setup** is required. A headless setup refers to installing and managing an operating system on a system **without a directly attached keyboard, mouse, or monitor**. This is common for **servers, embedded systems, and remote deployments**.  

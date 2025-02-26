@@ -1,14 +1,15 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: How to Configure Wireless Networking During Installation on FreeBSD Operating System
+linkTitle: Configuring Wireless Networking
+translationKey: how-to-configure-wireless-networking-during-installation-on-freebsd-operating-system
+description: Learn how to configure wireless networking during the installation of FreeBSD, including detecting your wireless device, setting up authentication, and ensuring persistent connections.
+url: how-to-configure-wireless-networking-during-installation-on-freebsd-operating-system
+date: 2025-02-26
+weight: 50
 keywords:
   - FreeBSD
+  - Wireless Networking
 tags:
   - FreeBSD
   - how-to guides
@@ -16,8 +17,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-# How to Configure Wireless Networking During Installation on FreeBSD Operating System  
-
 FreeBSD is a powerful, open-source operating system known for its performance, security, and flexibility. While it is widely used in servers and networking environments, FreeBSD is also suitable for desktop and embedded systems. One essential step during installation is configuring wireless networking, especially when installing FreeBSD on a laptop or a system without a wired Ethernet connection.
 
 In this guide, we will walk you through the process of configuring wireless networking during the installation of FreeBSD. This tutorial covers detecting your wireless device, configuring the network interface, setting up authentication, and ensuring that your connection remains persistent after installation.

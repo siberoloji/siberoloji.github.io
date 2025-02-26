@@ -1,14 +1,15 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: Installing FreeBSD on a Raspberry Pi 4 or 5
+linkTitle: Install FreeBSD
+translationKey: installing-freebsd-on-a-raspberry-pi-4-or-5
+description: This guide provides a step-by-step walkthrough for setting up FreeBSD on a Raspberry Pi 4 or 5, including preparation, installation, and post-installation steps.
+url: installing-freebsd-on-a-raspberry-pi-4-or-5
+date: 2025-02-26
+weight: 60
 keywords:
   - FreeBSD
+  - Raspberry Pi
 tags:
   - FreeBSD
   - how-to guides
@@ -16,121 +17,290 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-Installing FreeBSD on a Raspberry Pi 4 or 5 allows you to explore a robust, Unix-like operating system on versatile hardware. This guide provides a comprehensive walkthrough for setting up FreeBSD on these devices, covering preparation, installation, and post-installation steps.
+FreeBSD is a powerful Unix-like operating system known for its performance, stability, and security. Installing FreeBSD on a Raspberry Pi 4 or 5 allows users to take advantage of these benefits on a small, energy-efficient device. This guide walks you through the entire process, from downloading FreeBSD to configuring it for optimal performance.
 
-**Table of Contents**
+---
 
-1. **Introduction to FreeBSD and Raspberry Pi**
-2. **Prerequisites**
-3. **Downloading the FreeBSD Image**
-4. **Preparing the Storage Medium**
-5. **Modifying Configuration Files**
-6. **Booting the Raspberry Pi**
-7. **Initial System Configuration**
-8. **Network Setup**
-9. **Updating the System**
-10. **Installing Additional Packages**
-11. **Enabling Graphical Interface**
-12. **Setting Up External Storage**
-13. **Configuring System Services**
-14. **Performance Optimization**
-15. **Troubleshooting Common Issues**
-16. **Frequently Asked Questions (FAQs)**
+## **1. Introduction to FreeBSD and Raspberry Pi**  
 
-## 1. Introduction to FreeBSD and Raspberry Pi
+FreeBSD is a free, open-source operating system with a strong focus on performance, security, and advanced networking features. Raspberry Pi is a low-cost, single-board computer designed for hobbyists, students, and professionals alike. Running FreeBSD on a Raspberry Pi is an excellent way to explore the power of Unix-based systems in an efficient and compact setup.  
 
-FreeBSD is an open-source operating system derived from the Berkeley Software Distribution (BSD), renowned for its performance, advanced networking features, and security. The Raspberry Pi 4 and 5 are compact, affordable single-board computers popular among hobbyists and professionals for various applications, from simple educational tools to complex server setups. Combining FreeBSD with Raspberry Pi hardware offers a powerful platform for learning and development.
+---
 
-## 2. Prerequisites
+## **2. Prerequisites**  
 
-Before beginning the installation, ensure you have the following:
+Before you begin, make sure you have the following:  
 
-- **Hardware:**
-  - Raspberry Pi 4 or 5
-  - MicroSD card (minimum 8GB recommended)
-  - Power supply compatible with your Raspberry Pi
-  - HDMI monitor and cable
-  - USB keyboard and mouse
-  - (Optional) Ethernet cable for network connectivity
+### **Hardware Requirements:**  
 
-- **Software:**
-  - Computer with an SD card reader
-  - Image writing tool (e.g., `dd` for Unix-like systems or balenaEtcher for cross-platform use)
+- Raspberry Pi 4 or Raspberry Pi 5  
+- MicroSD card (at least 16GB, preferably 32GB for more storage)  
+- SD card reader  
+- Power supply (USB-C for Pi 4/5)  
+- HDMI monitor  
+- USB keyboard and mouse  
+- Ethernet cable or Wi-Fi connection  
 
-## 3. Downloading the FreeBSD Image
+### **Software Requirements:**  
 
-Obtain the latest FreeBSD image suitable for the Raspberry Pi from the official FreeBSD release page. For Raspberry Pi 4, download the `FreeBSD-14.0-RELEASE-arm64-aarch64-RPI.img.xz` file. For Raspberry Pi 5, ensure you have the appropriate image, as support may vary. Refer to the FreeBSD Wiki for the most recent information on Raspberry Pi 5 support. citeturn0search1
+- A computer running FreeBSD, Linux, Windows, or macOS  
+- A disk imaging tool (`dd`, `Etcher`, or `Raspberry Pi Imager`)  
 
-## 4. Preparing the Storage Medium
+---
 
-1. **Insert the MicroSD Card:**
-   - Connect the MicroSD card to your computer using an SD card reader.
+## **3. Downloading the FreeBSD Image**  
 
-2. **Write the FreeBSD Image:**
-   - **On Unix-like Systems:**
-     - Open a terminal and navigate to the directory containing the downloaded image.
-     - Use the `dd` command to write the image to the MicroSD card:
-       ```sh
-       xz -dc FreeBSD-14.0-RELEASE-arm64-aarch64-RPI.img.xz | sudo dd of=/dev/rdiskX bs=64M status=progress
-       ```
-       Replace `/dev/rdiskX` with the appropriate device identifier for your MicroSD card.
-   - **On Windows or macOS:**
-     - Utilize balenaEtcher to select the image file and target device, then proceed with flashing.
+FreeBSD provides pre-built images for Raspberry Pi. You can download the latest version from the official FreeBSD website:  
 
-## 5. Modifying Configuration Files
+- Visit: [https://www.freebsd.org/where/](https://www.freebsd.org/where/)  
+- Look for **Raspberry Pi (arm64) images**  
+- Download the latest **FreeBSD-RELEASE-arm64-aarch64-RPI.img.xz**  
 
-After writing the image, modify the configuration files to ensure proper booting:
+---
 
-1. **Mount the Boot Partition:**
-   - Eject and reinsert the MicroSD card to mount the boot partition automatically.
+## **4. Writing the Image to a MicroSD Card**  
 
-2. **Edit `config.txt`:**
-   - Open the `config.txt` file located in the boot partition.
-   - For Raspberry Pi 4, add or modify the following lines to set the HDMI output to 1080p:
-     ```sh
-     hdmi_group=1
-     hdmi_mode=16
-     ```
-   - For Raspberry Pi 5, additional configurations may be necessary. Refer to the FreeBSD Wiki for detailed instructions. citeturn0search1
+Once the FreeBSD image is downloaded, it must be written to a microSD card.  
 
-3. **Save and Unmount:**
-   - Save the changes and safely eject the MicroSD card from your computer.
+### **Using `dd` (FreeBSD/Linux/macOS)**  
 
-## 6. Booting the Raspberry Pi
+1. Insert the microSD card into your computer.  
+2. Identify the correct device using:  
 
-1. **Insert the MicroSD Card:**
-   - Place the prepared MicroSD card into the Raspberry Pi's card slot.
+   ```sh
+   lsblk (Linux) or diskutil list (macOS)
+   ```
 
-2. **Connect Peripherals:**
-   - Attach the HDMI monitor, keyboard, mouse, and network cable (if using wired networking).
+3. Write the image:  
 
-3. **Power Up:**
-   - Connect the power supply to boot the Raspberry Pi.
+   ```sh
+   xz -dc FreeBSD-RELEASE-arm64-aarch64-RPI.img.xz | sudo dd of=/dev/sdX bs=4M status=progress
+   ```
 
-Upon successful boot, you should see the FreeBSD login prompt on the screen.
+   *(Replace `/dev/sdX` with your microSD card's device name.)*  
 
-## 7. Initial System Configuration
+### **Using Raspberry Pi Imager (Windows/macOS/Linux)**  
 
-1. **Login:**
-   - Use the default `root` user.
-   - Set a password for the `root` account:
-     ```sh
-     passwd
-     ```
+1. Download and install **Raspberry Pi Imager** from [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)  
+2. Open the software and select **Use custom image**  
+3. Select your downloaded FreeBSD image  
+4. Choose your microSD card as the target device  
+5. Click **Write**  
 
-2. **Create a New User:**
-   - Add a regular user account:
-     ```sh
-     adduser
-     ```
-   - Follow the prompts to set up the new user.
+---
 
-3. **Configure `sudo`:**
-   - Install the `sudo` package:
-     ```sh
-     pkg install sudo
-     ```
-   - Add the new user to the `wheel` group to grant administrative privileges:
-     ```sh
-     pw usermod [username] -G wheel
- 
+## **5. Booting FreeBSD on the Raspberry Pi**  
+
+1. Insert the microSD card into the Raspberry Pi.  
+2. Connect the monitor, keyboard, and power supply.  
+3. Power on the Raspberry Pi.  
+4. The system should boot into the FreeBSD command-line interface.  
+
+---
+
+## **6. Initial Setup and Configuration**  
+
+### **Setting a Root Password**  
+
+After booting, log in as `root` (no password by default). Set a new password:  
+
+```sh
+passwd
+```
+
+### **Creating a New User**  
+
+It is recommended to create a non-root user:  
+
+```sh
+adduser
+```
+
+Follow the prompts and add the user to the `wheel` group for administrative privileges:  
+
+```sh
+pw usermod yourusername -G wheel
+```
+
+### **Enabling `sudo`**  
+
+Install and configure `sudo`:  
+
+```sh
+pkg install sudo
+echo "yourusername ALL=(ALL) ALL" >> /usr/local/etc/sudoers
+```
+
+---
+
+## **7. Setting Up Networking**  
+
+### **Wired (Ethernet)**  
+
+If using a wired connection, it should work automatically. Verify with:  
+
+```sh
+ifconfig
+```
+
+### **Wi-Fi Setup**  
+
+1. Edit the `/etc/wpa_supplicant.conf` file:  
+
+   ```sh
+   ee /etc/wpa_supplicant.conf
+   ```
+
+2. Add your network details:  
+
+   ```bash
+   network={
+       ssid="YourWiFiSSID"
+       psk="YourWiFiPassword"
+   }
+   ```
+
+3. Enable Wi-Fi at boot:  
+
+   ```sh
+   sysrc ifconfig_wlan0="WPA DHCP"
+   service netif restart
+   ```
+
+---
+
+## **8. Updating FreeBSD**  
+
+Run the following command to update system packages:  
+
+```sh
+freebsd-update fetch install
+pkg update && pkg upgrade
+```
+
+---
+
+## **9. Installing and Managing Software Packages**  
+
+Use `pkg` to install additional software:  
+
+```sh
+pkg install nano htop tmux git
+```
+
+For a list of available software:  
+
+```sh
+pkg search keyword
+```
+
+---
+
+## **10. Enabling a Graphical User Interface (Optional)**  
+
+To install the **Xfce** desktop environment:  
+
+```sh
+pkg install xfce slim xorg
+```
+
+Enable the display manager:  
+
+```sh
+sysrc slim_enable="YES"
+```
+
+Start the GUI with:  
+
+```sh
+startx
+```
+
+---
+
+## **11. Configuring System Services**  
+
+Enable services at boot with `sysrc`:  
+
+```sh
+sysrc sshd_enable="YES"
+sysrc ntpd_enable="YES"
+```
+
+Start them manually:  
+
+```sh
+service sshd start
+service ntpd start
+```
+
+---
+
+## **12. Setting Up External Storage**  
+
+1. List available drives:  
+
+   ```sh
+   gpart show
+   ```
+
+2. Mount a USB drive:  
+
+   ```sh
+   mount /dev/da0s1 /mnt
+   ```
+
+3. Add to `/etc/fstab` for auto-mounting.
+
+---
+
+## **13. Performance Optimization**  
+
+- **Increase swap space (if needed):**  
+
+  ```sh
+  dd if=/dev/zero of=/swapfile bs=1M count=1024
+  chmod 600 /swapfile
+  mdconfig -a -t vnode -f /swapfile -u 0
+  swapon /dev/md0
+  ```
+
+---
+
+## **14. Troubleshooting Common Issues**  
+
+- **Raspberry Pi not booting?**  
+  - Ensure the microSD card is properly written and inserted.  
+  - Try a different power supply.  
+  - Check the `config.txt` file in the boot partition.  
+
+- **No internet?**  
+  - Check `ifconfig` to see if an IP address is assigned.  
+  - Restart the networking service:  
+
+    ```sh
+    service netif restart
+    ```
+
+---
+
+## **15. FAQs**  
+
+**Q1: Can I run FreeBSD on Raspberry Pi 5?**  
+Yes, but support is still evolving. Check the FreeBSD Wiki for updates.  
+
+**Q2: How do I install a web server on FreeBSD?**  
+You can install Apache with:  
+
+```sh
+pkg install apache24
+service apache24 enable
+service apache24 start
+```
+
+**Q3: Is FreeBSD better than Linux for Raspberry Pi?**  
+It depends on your needs. FreeBSD offers better security and networking but has less hardware support than Linux.  
+
+---
+
+With this guide, you now have a fully functional FreeBSD installation on your Raspberry Pi. Experiment, explore, and enjoy the power of BSD on your compact Raspberry Pi! 🚀

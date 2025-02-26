@@ -1,14 +1,15 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: How to Enable Full-Disk Encryption with GELI During FreeBSD Installation
+linkTitle: How to Enable Full-Disk Encryption with GELI During FreeBSD Installation
+translationKey: how-to-enable-full-disk-encryption-with-geli-during-freebsd-installation
+description: How to Enable Full-Disk Encryption with GELI During FreeBSD Installation
+url: how-to-enable-full-disk-encryption-with-geli-during-freebsd-installation
+date: 2025-02-26
+weight: 80
 keywords:
   - FreeBSD
+  - GELI
 tags:
   - FreeBSD
   - how-to guides
@@ -16,7 +17,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-# How to Enable Full-Disk Encryption with GELI During FreeBSD Installation
 
 Full-disk encryption is a crucial security measure that protects your data from unauthorized access if your computer is lost, stolen, or improperly decommissioned. FreeBSD provides robust disk encryption through GELI (GEOM-based disk encryption), which allows you to encrypt partitions or entire disks with strong cryptographic algorithms.
 
@@ -106,6 +106,7 @@ geli attach /dev/ada0p2
 ```
 
 You'll be prompted to enter a passphrase. Choose a strong passphrase that is:
+
 - At least 12 characters long
 - Contains uppercase and lowercase letters, numbers, and symbols
 - Not used for any other accounts
@@ -145,6 +146,7 @@ Type `exit` to return to the FreeBSD installer.
 ### 9. Select Manual Partitioning
 
 In the installer's partitioning section:
+
 - Choose "Manual" partitioning
 - When prompted for the root filesystem, specify `/dev/ada0p2.eli`
 - For any additional partitions, assign their mount points to the corresponding encrypted devices
@@ -152,6 +154,7 @@ In the installer's partitioning section:
 ### 10. Complete the Installation
 
 Proceed with the rest of the installation as normal:
+
 - Select components to install
 - Configure network
 - Set the root password

@@ -24,20 +24,20 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 
 ### **1. Understanding Jetpack Compose**
 
-- What is Jetpack Compose?
-- Differences between Jetpack Compose and XML-based UI.
-- Benefits of using Jetpack Compose.
-- How Compose integrates with existing Android applications.
+- [What is Jetpack Compose?](/understanding-jetpack-compose-for-android-ui-design/)
+- [Differences between Jetpack Compose and XML-based UI.](/jetpack-compose-vs-xml-based-ui/)
+- [Benefits of using Jetpack Compose.](/benefits-of-using-jetpack-compose/)
+- [How Compose integrates with existing Android applications.](/integrating-jetpack-compose-with-existing-android-apps/)
 
 ### **2. Setting Up Your Development Environment**
 
-- Installing Android Studio with Jetpack Compose support.
-- Creating a new Jetpack Compose project.
-- Understanding project structure in Jetpack Compose.
+- [Installing Android Studio with Jetpack Compose support.](/installing-android-studio-with-jetpack-compose-support/)
+- [Creating a new Jetpack Compose project.](/creating-a-new-jetpack-compose-project/)
+- [Understanding project structure in Jetpack Compose.](/understanding-project-structure-in-jetpack-compose/)
 
 ### **3. First Steps with Jetpack Compose**
 
-- Writing your first Composable function.
+- [Writing your first Composable function.](/writing-your-first-android-studio-jetpack-composable-function/)
 - Understanding @Composable annotation.
 - Using Preview functions to visualize UI components.
 

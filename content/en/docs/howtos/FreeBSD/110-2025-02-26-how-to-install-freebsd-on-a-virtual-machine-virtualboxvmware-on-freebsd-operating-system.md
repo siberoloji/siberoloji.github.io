@@ -1,12 +1,12 @@
 ---
-draft: true
-title:
-linkTitle:
-translationKey:
-description:
-slug:
-date:
-weight: 0
+draft: false
+title: How to Install FreeBSD on a Virtual Machine (VirtualBox/VMware) on FreeBSD Operating System
+linkTitle: How to Install FreeBSD on a Virtual Machine (VirtualBox/VMware)
+translationKey: how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system
+description: A step-by-step guide to installing FreeBSD as a guest operating system inside VirtualBox or VMware Workstation/Fusion while running FreeBSD as your host system.
+url: how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system
+date: 2025-02-26
+weight: 110
 keywords:
   - FreeBSD
 tags:
@@ -16,8 +16,6 @@ categories:
   - Unix
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---
-# How to Install FreeBSD on a Virtual Machine (VirtualBox/VMware) on FreeBSD Operating System
-
 Virtualization has become an essential technology for system administrators, developers, and even casual users who want to experiment with different operating systems without dedicated hardware. For FreeBSD users who want to test new versions, create development environments, or run multiple instances for various purposes, setting up FreeBSD as a guest within FreeBSD presents a powerful solution.
 
 This comprehensive guide will walk you through the process of installing FreeBSD as a guest operating system inside VirtualBox or VMware Workstation/Fusion while running FreeBSD as your host system. We'll cover everything from preparing your host system to post-installation configurations that optimize your virtualized FreeBSD experience.
@@ -235,7 +233,7 @@ freebsd-update install
 
 To improve performance and enable features like shared folders and better mouse integration, install the guest additions:
 
-#### For VirtualBox:
+#### For VirtualBox
 
 ```bash
 # Install VirtualBox Guest Additions
@@ -246,7 +244,7 @@ echo 'vboxguest_enable="YES"' >> /etc/rc.conf
 echo 'vboxservice_enable="YES"' >> /etc/rc.conf
 ```
 
-#### For VMware:
+#### For VMware
 
 ```bash
 # Install VMware Tools
@@ -282,7 +280,7 @@ pkg install vim-console bash tmux git rsync wget curl sudo
 
 If you want to share files between your host and guest FreeBSD systems:
 
-#### For VirtualBox:
+#### For VirtualBox
 
 1. Power off the VM
 2. In VirtualBox settings, go to "Shared Folders"
@@ -298,7 +296,7 @@ mkdir -p /mnt/shared
 mount -t vboxvfs sharename /mnt/shared
 ```
 
-#### For VMware:
+#### For VMware
 
 1. In VMware settings, configure a shared folder
 2. In the guest FreeBSD system:
@@ -334,6 +332,7 @@ noatime,softdep
 ```
 
 For example:
+
 ```
 /dev/ada0p2    /    ufs    rw,noatime,softdep    1    1
 ```
