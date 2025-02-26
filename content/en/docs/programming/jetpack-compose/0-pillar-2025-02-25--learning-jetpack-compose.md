@@ -15,7 +15,6 @@ categories:
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 keywords:
   - Jetpack Compose
-featured_image: /images/linuxmint1.webp
 ---
 Jetpack Compose is a modern, declarative UI framework for Android development, making UI building more intuitive and efficient. Whether you're a beginner or an experienced Android developer transitioning from XML-based layouts, a structured learning approach is crucial for mastering Jetpack Compose. This curriculum outlines a step-by-step guide to learning Jetpack Compose, from foundational concepts to advanced topics.
 

@@ -5,14 +5,14 @@ linkTitle:
 translationKey:
 description:
 slug:
-weight: 0
 date:
-tags:
-  - Compose
-  - Jetpack
-categories:
-  - Programming
-author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
+weight: 0
 keywords:
-  - Jetpack Compose
+  - FreeBSD
+tags:
+  - FreeBSD
+  - how-to guides
+categories:
+  - Unix
+author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 ---

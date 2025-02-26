@@ -11,18 +11,7 @@ categories: []
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: 
 ---
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to create a FreeBSD bootable USB drive on Windows/macOS/Linux  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to install FreeBSD in UEFI mode with Secure Boot  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to dual-boot FreeBSD with Windows using GRUB  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to partition disks using ZFS during installation  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to configure wireless networking during installation  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to install FreeBSD on a Raspberry Pi 4/5  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to use the FreeBSD text-based installer for headless setups  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to enable full-disk encryption with GELI during installation  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to recover from a corrupted installation  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to verify the integrity of the FreeBSD ISO using SHA256  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to install FreeBSD on a virtual machine (VirtualBox/VMware)  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to configure RAID1 (mirroring) with ZFS  on FreeBSD Operating System"
+
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to set up a minimal FreeBSD server (no GUI)  on FreeBSD Operating System"
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to customize the installer with advanced partitioning  on FreeBSD Operating System"
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to troubleshoot "No Bootable Device" errors  on FreeBSD Operating System"
