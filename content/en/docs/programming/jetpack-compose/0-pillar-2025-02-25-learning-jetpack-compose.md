@@ -4,8 +4,8 @@ title: Curriculum for Learning Jetpack Compose
 linkTitle: Learning Jetpack Compose
 translationKey: learning-jetpack-compose
 description: A structured curriculum for learning Jetpack Compose, a modern UI framework for Android development.
-slug: learning-jetpack-compose
-weight: 0
+url: learning-jetpack-compose
+weight: 1
 date: 2025-02-25
 tags:
   - Compose
@@ -38,8 +38,8 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 ### **3. First Steps with Jetpack Compose**
 
 - [Writing your first Composable function.](/writing-your-first-android-studio-jetpack-composable-function/)
-- Understanding @Composable annotation.
-- Using Preview functions to visualize UI components.
+- [Understanding @Composable annotation.](/understanding-composable-annotation-in-jetpack-compose/)
+- [Using Preview functions to visualize UI components.](/using-preview-functions-to-visualize-ui-components-on-jetpack-compose/)
 
 ---
 
@@ -47,26 +47,26 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 
 ### **4. Understanding Composables and UI Components**
 
-- Basic composables: Text, Button, Image, etc.
-- Using Modifiers to customize UI components.
-- Understanding recomposition and how it affects performance.
+- [Basic composables: Text, Button, Image, etc.](/basic-composables-in-jetpack-compose-text-button-image-and-more/)
+- [Using Modifiers to customize UI components.](/using-modifiers-to-customize-ui-components-on-jetpack-compose/)
+- [Understanding recomposition and how it affects performance.](/understanding-recomposition-and-how-it-affects-performance-in-jetpack-compose/)
 
 ### **5. Layouts and UI Hierarchy**
 
-- Column, Row, and Box layouts.
-- Using LazyColumn and LazyRow for lists.
-- Alignments and arrangements.
+- [Column, Row, and Box layouts.](/column-row-and-box-layouts-in-jetpack-compose/)
+- [Using LazyColumn and LazyRow for lists.](/using-lazycolumn-and-lazyrow-for-lists-in-jetpack-compose/)
+- [Alignments and arrangements.](/alignments-and-arrangements-in-jetpack-compose/)
 
 ### **6. State Management in Jetpack Compose**
 
-- Understanding state in Compose.
-- Using `remember` and `mutableStateOf`.
-- Handling state changes efficiently.
-- ViewModel integration with Jetpack Compose.
+- [Understanding state in Compose.](/understanding-state-in-jetpack-compose/)
+- [Using `remember` and `mutableStateOf`.](/using-remember-and-mutablestateof-in-jetpack-compose/)
+- [Handling state changes efficiently.](/handling-state-changes-efficiently-in-jetpack-compose/)
+- [ViewModel integration with Jetpack Compose.](/viewmodel-integration-with-jetpack-compose/)
 
 ### **7. Handling User Input and Interactions**
 
-- Clickable components.
+- [Clickable components.](/clickable-components-in-jetpack-compose/)
 - Handling gestures and touch events.
 - Working with text fields and form validation.
 

@@ -17,7 +17,7 @@ tags:
 
 HTML (Hypertext Markup Language) serves as the backbone of web development. It is essential for structuring and presenting content on the web, and it is one of the first languages beginner developers learn. Whether you're just starting your journey into web development or looking to deepen your knowledge, mastering HTML opens doors to more advanced languages like CSS and JavaScript. In this blog post, we’ll cover HTML programming learning topics , breaking them down into subtopics to help you organize your study plan effectively.
 
-1. Introduction to HTML
+## Introduction to HTML
 
 * [What is HTML?:](/what-is-html-understanding-the-foundation-of-the-web/) The language that forms the structure of web pages.
 
@@ -27,7 +27,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [Basic Document Structure](/understanding-the-basic-document-structure-in-html/): DOCTYPE, `<html>`, `<head>`, and `<body>` tags.
 
-1. HTML Editors
+## HTML Editors
 
 * [Text Editors:](/a-comprehensive-guide-to-text-editors/) Notepad, VS Code, Sublime Text, and Atom.
 
@@ -35,7 +35,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [Code Formatters](/the-ultimate-guide-to-code-formatters-for-html/): Prettier, Beautify HTML.
 
-3. HTML Syntax Rules
+## HTML Syntax Rules
 
 * [Tags and Elements](/tags-and-elements-proper-use-of-opening-and-closing-tags/): Proper use of opening and closing tags.
 
@@ -43,7 +43,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [Nesting Elements](/the-art-of-nesting-elements-in-html-a-comprehensive-guide/): Proper element hierarchy.
 
-4. Basic HTML Tags
+## Basic HTML Tags
 
 * [The `<p>` Tag](/everything-you-need-to-know-about-the-p-tag/): Paragraph element.
 
@@ -51,7 +51,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [the `<div>` and `<span>` Tags](/elevate-your-web-design-with-div-and-span/): Differences and use cases.
 
-5. Creating Links in HTML
+## Creating Links in HTML
 
 * [the `<a>` Tag: Structure and usage](/ultimate-guide-about-a-tagstructure-and-usage/)
 
@@ -61,7 +61,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [Internal Linking](/internal-linking-navigation-between-sections/): Creating navigation between sections.
 
-6. Images in HTML
+## Images in HTML
 
 * [the `<img>` Tag](/everything-you-should-know-about-img-tag-in-html/): Adding images to a webpage.
 
@@ -69,7 +69,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * [Optimizing Images](/optimizing-images-best-using-for-jpeg-png-and-svg/): Best practices for image formats (JPEG, PNG, SVG).
 
-7. Lists in HTML
+## Lists in HTML
 
 * Ordered Lists (`<ol>`): Numbered items.
 
@@ -77,7 +77,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Nested Lists: Lists inside of lists.
 
-8. HTML Forms
+## HTML Forms
 
 * the `<form>` Tag: Basic form structure.
 
@@ -87,7 +87,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * form Validation: Required fields, input patterns, and validation messages.
 
-9. Tables in HTML
+## Tables in HTML
 
 * the `<table>` Tag: Basic table structure.
 
@@ -97,7 +97,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Styling Tables: Border, padding, and spacing adjustments.
 
-10. HTML5 Semantic Elements
+## HTML5 Semantic Elements
 
 * Introduction to Semantic HTML: Benefits of better readability and accessibility.
 
@@ -105,7 +105,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * SEO Benefits: How semantics help search engines.
 
-11. HTML Multimedia
+## HTML Multimedia
 
 * Audio (`<audio>` Tag): Embedding and controlling audio files.
 
@@ -113,13 +113,13 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Attributes for Control: Autoplay, loop, and controls.
 
-12. Character Entities
+## Character Entities
 
 * What are Character Entities?: Understanding how to insert special characters like `&amp;copy;`, `&amp;lt;`, and `&amp;amp;`.
 
 * Commonly Used Entities: List of essential entities for web development.
 
-13. HTML Metadata
+## HTML Metadata
 
 * the `<meta>` Tag: Understanding metadata for the document head.
 
@@ -127,7 +127,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Viewport for Mobile: Responsive design and the `<meta name="viewport">` tag.
 
-14. HTML Inline vs Block Elements
+## HTML Inline vs Block Elements
 
 * Inline Elements: `<span>`, `<a>`, `<img>`, etc.
 
@@ -135,7 +135,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * When to Use Inline or Block: Context and best practices.
 
-15. HTML iframes
+## HTML iframes
 
 * the `<iframe>` Tag: Embedding external content like videos or Google Maps.
 
@@ -143,7 +143,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Responsive iframes: Making them scale on different devices.
 
-16. HTML5 APIs
+## HTML5 APIs
 
 * Canvas API: Drawing graphics using JavaScript.
 
@@ -151,7 +151,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Web Storage API: Using local and session storage.
 
-17. HTML Forms and Input Validations
+## HTML Forms and Input Validations
 
 * Client-side vs Server-side Validation: Pros and cons.
 
@@ -159,7 +159,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Custom Validation: Using JavaScript for deeper control.
 
-18. Responsive Web Design with HTML
+## Responsive Web Design with HTML
 
 * Viewport Meta Tag: Introduction to responsive design.
 
@@ -167,13 +167,13 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Media Queries: Linking CSS for different screen sizes.
 
-19. HTML5 Offline Features
+## HTML5 Offline Features
 
 * Using Service Workers: How HTML5 can create offline applications.
 
 * Caching with Manifest: Ensuring your website works without internet.
 
-20. HTML and SEO
+## HTML and SEO
 
 * Using `<h1>` and Semantic Tags: Organizing content for SEO.
 
@@ -181,7 +181,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Image SEO: Proper alt tags and image compression.
 
-21. HTML Accessibility
+## HTML Accessibility
 
 * ARIA (Accessible Rich Internet Applications): How ARIA works with HTML.
 
@@ -189,25 +189,25 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * form Accessibility: Labeling and instructions for better accessibility.
 
-22. HTML Entities and Symbols
+## HTML Entities and Symbols
 
 * Inserting Symbols: Learning to use `&amp;copy;`, `&amp;euro;`, and other symbols.
 
 * Non-breaking Spaces: How and when to use `&amp;nbsp;`.
 
-23. Comments in HTML
+## Comments in HTML
 
 * Syntax: The proper way to comment (`<!-- comment -->`).
 
 * Best Practices: When and why to comment code.
 
-24. HTML Templates
+## HTML Templates
 
 * Using the `<template>` Tag: What are templates and how to use them.
 
 * Shadow DOM: Introduction to encapsulating parts of the DOM.
 
-25. HTML and CSS Integration
+## HTML and CSS Integration
 
 * the `<style>` Tag: How to add internal CSS styles.
 
@@ -215,19 +215,19 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 * Linking External Stylesheets: The best way to separate HTML and CSS.
 
-26. Deprecated HTML Tags
+## Deprecated HTML Tags
 
 * Understanding Obsolete Tags: Examples like `<center>`, `<font>`, and `<marquee>`.
 
 * Why They’re Deprecated: Evolution of web standards.
 
-27. HTML Sitemap
+## HTML Sitemap
 
 * the Importance of a Sitemap: For both users and search engines.
 
 * Creating an HTML Sitemap: Organizing links in a structured format.
 
-Final Thoughts
+## Final Thoughts
 
 HTML forms the foundation of web development, and a thorough understanding of its elements, tags, and features is crucial for anyone looking to build a career or hobby in this field. This list of HTML programming topics, complete with subtopics, offers a detailed roadmap for learning HTML. As you move through these topics, remember to practice often by building small projects, creating sample pages, and experimenting with different tags and attributes.
 
