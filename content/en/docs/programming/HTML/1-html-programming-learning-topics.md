@@ -223,7 +223,7 @@ HTML (Hypertext Markup Language) serves as the backbone of web development. It i
 
 ## HTML Sitemap
 
-* the Importance of a Sitemap: For both users and search engines.
+* The Importance of a Sitemap: For both users and search engines.
 
 * Creating an HTML Sitemap: Organizing links in a structured format.
 

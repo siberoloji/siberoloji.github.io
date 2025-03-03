@@ -1,9 +1,13 @@
 ---
 draft: false
-title: "List of the 100 OSINT topics with subtopics:"
-date: 2024-10-13T11:33:02+03:00
+title: List of the 100 OSINT topics with subtopics
+linkTitle: List of the 100 OSINT topics with subtopics
+translationKey: list-of-the-100-osint-topics-with-subtopics
+description: List of the 100 OSINT topics with subtopics
+date: 2024-10-13
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /list-of-the-100-osint-topics-with-subtopics/
+url: list-of-the-100-osint-topics-with-subtopics
+weight: 1
 featured_image: /images/osint2.webp
 categories:
     - Open Source Intelligence (OSINT)
@@ -19,75 +23,75 @@ Here's an expanded list of the 100 OSINT topics with subtopics:
 
 1. **Social Media Analysis (e.g., Twitter, Facebook)**
 
-* <a href="https://www.siberoloji.com/analyzing-sentiment-from-posts-and-comments-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Analyzing sentiment from posts and comments</a>
+* [Analyzing sentiment from posts and comments](/analyzing-sentiment-from-posts-and-comments-for-osint-social-media-analysis/)
 
-* <a href="https://www.siberoloji.com/identifying-fake-or-bot-accounts-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Identifying fake or bot accounts</a>
+* [Identifying fake or bot accounts](/identifying-fake-or-bot-accounts-for-osint-social-media-analysis/)
 
-* <a href="https://www.siberoloji.com/monitoring-trends-and-hashtags-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Monitoring trends and hashtags</a>
+* [Monitoring trends and hashtags](/monitoring-trends-and-hashtags-for-osint-social-media-analysis/)
 
-* <a href="https://www.siberoloji.com/analyzing-social-networks-and-connections-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Analyzing social networks and connections</a>
+* [Analyzing social networks and connections](/analyzing-social-networks-and-connections-for-osint-social-media-analysis/)
 
-* <a href="https://www.siberoloji.com/data-extraction-from-public-profiles-for-osint-social-media-analysis/" target="_blank" rel="noreferrer noopener">Data extraction from public profiles</a>
+* [Data extraction from public profiles](/data-extraction-from-public-profiles-for-osint-social-media-analysis/)
 
 2. **Geolocation Tracking from Images**
 
-* [Analyzing EXIF metadata in images](https://www.siberoloji.com/analyzing-exif-metadata-in-images-for-osint-geolocation-tracking/)
+* [Analyzing EXIF metadata in images](/analyzing-exif-metadata-in-images-for-osint-geolocation-tracking/)
 
-* <a href="https://www.siberoloji.com/satellite-imagery-for-location-identification-a-deep-dive-into-osint-geolocation-tracking/" target="_blank" rel="noreferrer noopener">Satellite imagery for location identification</a>
+* [Satellite imagery for location identification](/satellite-imagery-for-location-identification-a-deep-dive-into-osint-geolocation-tracking/)
 
-* <a href="https://www.siberoloji.com/cross-referencing-visual-landmarks-in-images-for-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Cross-referencing visual landmarks in images</a>
+* [Cross-referencing visual landmarks in images](/cross-referencing-visual-landmarks-in-images-for-osint-geolocation-tracking-from-images/)
 
-* <a href="https://www.siberoloji.com/reverse-image-search-for-location-discovery-osint-geolocation-tracking-from-images/" target="_blank" rel="noreferrer noopener">Reverse image search for location discovery</a>
+* [Reverse image search for location discovery](/reverse-image-search-for-location-discovery-osint-geolocation-tracking-from-images/)
 
-* <a href="https://www.siberoloji.com/crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking/" target="_blank" rel="noreferrer noopener">Crowdsourcing geolocation on social platforms</a>
+* [Crowdsourcing geolocation on social platforms](/crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking/)
 
 3. **Metadata Extraction from Files**
 
-* <a href="https://www.siberoloji.com/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Extracting metadata from documents</a> (PDF, Word, etc.)
+* [Extracting metadata from documents](/extracting-metadata-from-documents-a-guide-to-osint-metadata-extraction/) (PDF, Word, etc.)
 
-* <a href="https://www.siberoloji.com/identifying-modification-history-in-images-and-videos-for-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Identifying modification history in images and videos</a>
+* [Identifying modification history in images and videos](/identifying-modification-history-in-images-and-videos-for-osint-metadata-extraction-from-files/)
 
-* <a href="https://www.siberoloji.com/locating-hidden-gps-data-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Locating hidden GPS data in photos</a>
+* [Locating hidden GPS data in photos](/locating-hidden-gps-data-in-osint-metadata-extraction-from-files/)
 
-* <a href="https://www.siberoloji.com/using-metadata-for-document-authenticity-verification-in-osint-metadata-extraction-from-files/" target="_blank" rel="noreferrer noopener">Using metadata for document authenticity verification</a>
+* [Using metadata for document authenticity verification](/using-metadata-for-document-authenticity-verification-in-osint-metadata-extraction-from-files/)
 
-* <a href="https://www.siberoloji.com/tools-for-metadata-removal-protecting-privacy-in-osint-metadata-extraction/" target="_blank" rel="noreferrer noopener">Tools for metadata removal to protect privacy</a>
+* [Tools for metadata removal to protect privacy](/tools-for-metadata-removal-protecting-privacy-in-osint-metadata-extraction/)
 
 4. **OSINT Tools for Social Media Monitoring**
 
-* <a href="https://www.siberoloji.com/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Open-source tools for Twitter scraping</a> (e.g., Twint)
+* [Open-source tools for Twitter scraping](/open-source-tools-for-twitter-scraping-a-key-resource-for-osint-and-social-media-monitoring/) (e.g., Twint)
 
-* <a href="https://www.siberoloji.com/facebook-data-scraping-tools-for-osint/" target="_blank" rel="noreferrer noopener">Facebook data scraping tools</a>
+* [Facebook data scraping tools](/facebook-data-scraping-tools-for-osint/)
 
-* <a href="https://www.siberoloji.com/mastering-the-multi-platform-monitor-a-guide-to-osint-tools-for-social-media-monitoring/" target="_blank" rel="noreferrer noopener">Tools for monitoring multiple platforms simultaneously</a>
+* [Tools for monitoring multiple platforms simultaneously](/mastering-the-multi-platform-monitor-a-guide-to-osint-tools-for-social-media-monitoring/)
 
-* <a href="https://www.siberoloji.com/real-time-data-collection-from-live-streams-for-osint/" target="_blank" rel="noreferrer noopener">Real-time data collection from live streams</a>
+* [Real-time data collection from live streams](/real-time-data-collection-from-live-streams-for-osint/)
 
-* <a href="https://www.siberoloji.com/automating-alerts-for-specific-keywords-for-osint/" target="_blank" rel="noreferrer noopener">Automating alerts for specific keywords or phrases</a>
+* [Automating alerts for specific keywords or phrases](/automating-alerts-for-specific-keywords-for-osint/)
 
 5. **Web Scraping Techniques for OSINT**
 
-* <a href="https://www.siberoloji.com/scraping-using-python-and-beautifulsoup/" target="_blank" rel="noreferrer noopener">Scraping using Python and BeautifulSoup</a>
+* [Scraping using Python and BeautifulSoup](/scraping-using-python-and-beautifulsoup/)
 
-* <a href="https://www.siberoloji.com/legal-and-ethical-considerations-for-web-scraping/" target="_blank" rel="noreferrer noopener">Legal and ethical considerations for web scraping</a>
+* [Legal and ethical considerations for web scraping](/legal-and-ethical-considerations-for-web-scraping/)
 
-* <a href="https://www.siberoloji.com/data-cleaning-and-normalization-a-critical-step-in-web-scraping-for-osint/" target="_blank" rel="noreferrer noopener">Data cleaning and normalization after scraping</a>
+* [Data cleaning and normalization after scraping](/data-cleaning-and-normalization-a-critical-step-in-web-scraping-for-osint/)
 
-* <a href="https://www.siberoloji.com/using-browser-based-tools-web-scraping-techniques-for-osint/" target="_blank" rel="noreferrer noopener">Using browser-based tools</a> (e.g., Scrapy, Selenium)
+* [Using browser-based tools](/using-browser-based-tools-web-scraping-techniques-for-osint/) (e.g., Scrapy, Selenium)
 
-* <a href="https://www.siberoloji.com/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/" target="_blank" rel="noreferrer noopener">Scraping dark web sites for OSINT purposes</a>
+* [Scraping dark web sites for OSINT purposes](/scraping-dark-web-sites-for-osint-purposes-techniques-tools-and-considerations/)
 
 6. **OSINT in Law Enforcement**
 
-* <a href="https://www.siberoloji.com/gathering-evidence-from-online-forums/" target="_blank" rel="noopener" title="">Gathering evidence from public online forums</a>
+* [Gathering evidence from public online forums](/gathering-evidence-from-online-forums/)
 
-* <a href="https://www.siberoloji.com/investigating-digital-footprints-for-criminal-cases/" target="_blank" rel="noopener" title="">Investigating digital footprints for criminal cases</a>
+* [Investigating digital footprints for criminal cases](/investigating-digital-footprints-for-criminal-cases/)
 
-* <a href="https://www.siberoloji.com/monitoring-social-media-activity-for-threats/" target="_blank" rel="noopener" title="">Monitoring social media activity for threats</a>
+* [Monitoring social media activity for threats](/monitoring-social-media-activity-for-threats/)
 
-* <a href="https://www.siberoloji.com/unique-osint-tools-used-by-law-enforcement/" target="_blank" rel="noopener" title="">Tools used by law enforcement agencies</a>
+* [Tools used by law enforcement agencies](/unique-osint-tools-used-by-law-enforcement/)
 
-* <a href="https://www.siberoloji.com/cross-referencing-social-media-with-public-records/" target="_blank" rel="noopener" title="">Cross-referencing social media with public records</a>
+* 300 [Cross-referencing social media with public records](/cross-referencing-social-media-with-public-records/)
 
 7. **Analyzing Publicly Available Databases**
 
@@ -103,15 +107,15 @@ Here's an expanded list of the 100 OSINT topics with subtopics:
 
 8. **Corporate Espionage using OSINT**
 
-* <a href="https://www.siberoloji.com/investigating-competitors-public-facing-documents-for-osint-uncovering-competitive-insights/">Investigating competitors' public-facing documents</a>
+* 360[Investigating competitors' public-facing documents](/investigating-competitors-public-facing-documents-for-osint-uncovering-competitive-insights/)
 
-* <a href="https://www.siberoloji.com/extracting-financial-information-from-quarterly-reports-for-osint/">Extracting financial information from quarterly reports</a>
+* [Extracting financial information from quarterly reports](/extracting-financial-information-from-quarterly-reports-for-osint/)
 
-* <a href="https://www.siberoloji.com/monitoring-employee-linkedin-profiles-for-osint/">Monitoring employee LinkedIn profiles</a>
+* [Monitoring employee LinkedIn profiles](/monitoring-employee-linkedin-profiles-for-osint/)
 
-* <a href="https://www.siberoloji.com/tracking-patent-filings-for-innovation-trends-in-osint-a-comprehensive-guide/">Tracking patent filings for innovation trends</a>
+* [Tracking patent filings for innovation trends](/tracking-patent-filings-for-innovation-trends-in-osint-a-comprehensive-guide/)
 
-* <a href="https://www.siberoloji.com/reverse-engineering-corporate-supply-chains-for-osint/">Reverse-engineering corporate supply chains</a>
+* [Reverse-engineering corporate supply chains](/reverse-engineering-corporate-supply-chains-for-osint/)
 
 9. **Tracking Cryptocurrency Transactions**
 
@@ -765,13 +769,13 @@ Here's an expanded list of the 100 OSINT topics with subtopics:
 
 * Scraping publicly available epidemiological data
 
-* Cross-referencing health trends with public news reports
+* [Cross-referencing health trends with public news reports](/cross-referencing-health-trends-with-public-news-reports-for-osint/)
 
-* Monitoring social media for disease outbreaks
+* [Monitoring social media for disease outbreaks](/monitoring-social-media-for-disease-outbreaks/)
 
-* Analyzing public health databases for demographic risks
+* [Analyzing public health databases for demographic risks](/analyzing-public-health-databases-for-demographic-risks/)
 
-* Investigating pharmaceutical trials using open data
+* [Investigating pharmaceutical trials using open data](/investigating-pharmaceutical-trials-using-open-data/)
 
 64. **Tracking Wildlife Trafficking through OSINT**
 

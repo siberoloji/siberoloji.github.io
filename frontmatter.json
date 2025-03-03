@@ -346,10 +346,6 @@
       "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity/pentest"
     },
     {
-      "title": "osint",
-      "path": "[[workspace]]/content/en/blog/engineering/Cybersecurity/osint"
-    },
-    {
       "title": "datacommunications",
       "path": "[[workspace]]/content/en/blog/engineering/Networks/datacommunications"
     },

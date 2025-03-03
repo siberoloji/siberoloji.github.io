@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "A Comprehensive Guide: Essential Topics for the Modern Cybersecurity Expert"
+title: "Essential Topics for the Modern Cybersecurity Expert"
 date: 2024-09-29T17:16:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /a-comprehensive-guide-essential-topics-for-the-modern-cybersecurity-expert/

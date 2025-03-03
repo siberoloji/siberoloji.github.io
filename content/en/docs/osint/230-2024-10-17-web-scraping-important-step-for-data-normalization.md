@@ -6,7 +6,7 @@ date: '2024-10-17T16:50:35+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
  
  
-url:  /web-scraping-important-step-for-data-normalization/
+url:  /data-cleaning-and-normalization-a-critical-step-in-web-scraping-for-osint/
  
 featured_image: /images/osint4.webp
 categories:

@@ -208,28 +208,28 @@ featured_image: /images/linuxmint1.webp
 ## Security & Privacy (30 topics)
 
 1. [How to configure system firewall](/configuring-system-firewall-with-cinnamon-desktop-on-linux-mint/)
-2. How to set up user authentication
-3. How to manage system permissions
-4. How to configure disk encryption
-5. How to set up secure browsing
-6. How to manage password policies
-7. How to configure system auditing
-8. How to set up network security
-9. How to manage secure boot
-10. How to configure access controls
-11. How to set up data encryption
-12. How to manage security updates
-13. How to configure privacy settings
-14. How to set up secure shell
-15. How to manage security logs
-16. How to configure security policies
-17. How to set up intrusion detection
-18. How to manage security certificates
-19. How to configure secure storage
-20. How to set up two-factor authentication
-21. How to manage security backups
-22. How to configure security monitoring
-23. How to set up secure networking
+2. [How to set up user authentication](/how-to-set-up-user-authentication-with-cinnamon-desktop-on-linux-mint/)
+3. [How to manage system permissions](/how-to-manage-system-permissions-with-cinnamon-desktop-on-linux-mint/)
+4. [How to configure disk encryption](/how-to-configure-disk-encryption-with-cinnamon-desktop-on-linux-mint/)
+5. [How to set up secure browsing](/how-to-set-up-secure-browsing-with-cinnamon-desktop-on-linux-mint/)
+6. [How to manage password policies](/how-to-manage-password-policies-with-cinnamon-desktop-on-linux-mint/)
+7. [How to configure system auditing](/how-to-configure-system-auditing-with-cinnamon-desktop-on-linux-mint/)
+8. [How to set up network security](/how-to-set-up-network-security-with-cinnamon-desktop-on-linux-mint/)
+9. [How to manage secure boot](/managing-secure-boot-with-cinnamon-desktop-on-linux-mint/)
+10. [How to configure access controls](/configuring-access-controls-with-cinnamon-desktop-on-linux-mint/)
+11. [How to set up data encryption](/setting-up-data-encryption-with-cinnamon-desktop-on-linux-mint/)
+12. [How to manage security updates](/managing-security-updates-with-cinnamon-desktop-on-linux-mint/)
+13. [How to configure privacy settings](/how-to-configure-privacy-settings-with-cinnamon-desktop-on-linux-mint/)
+14. [How to set up secure shell](/how-to-set-up-secure-shell-ssh-with-cinnamon-desktop-on-linux-mint/)
+15. [How to manage security logs](/how-to-manage-security-logs-with-cinnamon-desktop-on-linux-mint/)
+16. [How to configure security policies](/how-to-configure-security-policies-with-cinnamon-desktop-on-linux-mint/)
+17. [How to set up intrusion detection](/how-to-set-up-intrusion-detection-with-cinnamon-desktop-on-linux-mint/)
+18. [How to manage security certificates](/how-to-manage-security-certificates-with-cinnamon-desktop-on-linux-mint/)
+19. [How to configure secure storage](/how-to-configure-secure-storage-with-cinnamon-desktop-on-linux-mint/)
+20. [How to set up two-factor authentication](/how-to-set-up-two-factor-authentication-with-cinnamon-desktop-on-linux-mint/)
+21. [How to manage security backups](/how-to-manage-security-backups-with-cinnamon-desktop-on-linux-mint/)
+22. [How to configure security monitoring](/how-to-configure-security-monitoring-with-cinnamon-desktop-on-linux-mint/)
+23. [How to set up secure networking](/how-to-set-up-secure-networking-with-cinnamon-desktop-on-linux-mint/)
 24. How to manage security patches
 25. How to configure security scanning
 26. How to set up security alerts
