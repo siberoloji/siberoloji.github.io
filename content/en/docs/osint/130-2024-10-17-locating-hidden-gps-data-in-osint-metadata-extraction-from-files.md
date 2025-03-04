@@ -1,20 +1,23 @@
 ---
 draft: false
-
-title:  'Locating Hidden GPS Data in OSINT: Metadata Extraction from Files'
-date: '2024-10-17T16:50:24+03:00'
+title: Locating Hidden GPS Data with Metadata Extraction from Files in OSINT
+linkTitle: Locating Hidden GPS Data
+description: This blog post explores how OSINT analysts can locate and extract hidden GPS data from various files, the tools they use, and the challenges and ethical considerations involved in this process.
+translationKey: locating-hidden-gps-data-with-metadata-extraction-from-files-in-osint
+weight: 130
+date: 2024-10-17T16:50:24+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /locating-hidden-gps-data-in-osint-metadata-extraction-from-files/
+url: /locating-hidden-gps-data-in-osint-metadata-extraction-from-files/
 featured_image: /images/osint3.webp
 categories:
-    - 'Open Source Intelligence (OSINT)'
+    - Open Source Intelligence (OSINT)
 tags:
     - cybersecurity
-    - 'information gathering'
-    - 'open source intelligence'
+    - information gathering
+    - open source intelligence
     - osint
+keywords:
+    - gps data
 ---
 
 

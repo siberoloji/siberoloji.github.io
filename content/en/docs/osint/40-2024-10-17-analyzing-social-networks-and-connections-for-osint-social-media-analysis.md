@@ -98,11 +98,12 @@ Analyzing social networks and connections through OSINT offers invaluable insigh
 In summary, whether you are a law enforcement officer investigating cybercrime or a corporate security analyst assessing threats against your organization, mastering the art of social media OSINT will enhance your ability to gather actionable intelligence from the vast ocean of publicly available information online.
 
 Citations:
-[1] <https://osintteam.blog/the-art-of-social-media-osint-a-beginners-guide-46267b6dd74f?gi=a5cb45ee9af1>
-[2] <https://osintteam.blog/social-media-osint-a-comprehensive-guide-to-gathering-intelligence-from-social-media-platforms-b5dbb8d83f14?gi=2a203792469f>
-[3] <https://publicagencytrainingcouncil.arlo.co/w/seminars/357-social-media-and-osint-investigative-techniques>
-[4] <https://www.liferaftinc.com/blog/7-best-osint-tools-for-social-media>
-[5] <https://www.maltego.com/blog/everything-about-social-media-intelligence-socmint-and-investigations/>
-[6] <https://github.com/osintambition/Social-Media-OSINT-Tools-Collection>
-[7] <https://www.imperva.com/learn/application-security/open-source-intelligence-osint/>
+
+[1] <https://osintteam.blog/the-art-of-social-media-osint-a-beginners-guide-46267b6dd74f?gi=a5cb45ee9af1>  
+[2] <https://osintteam.blog/social-media-osint-a-comprehensive-guide-to-gathering-intelligence-from-social-media-platforms-b5dbb8d83f14?gi=2a203792469f>  
+[3] <https://publicagencytrainingcouncil.arlo.co/w/seminars/357-social-media-and-osint-investigative-techniques>  
+[4] <https://www.liferaftinc.com/blog/7-best-osint-tools-for-social-media>  
+[5] <https://www.maltego.com/blog/everything-about-social-media-intelligence-socmint-and-investigations/>  
+[6] <https://github.com/osintambition/Social-Media-OSINT-Tools-Collection>  
+[7] <https://www.imperva.com/learn/application-security/open-source-intelligence-osint/>  
 [8] <https://www.neotas.com/osint-sources-social-media-osint/>

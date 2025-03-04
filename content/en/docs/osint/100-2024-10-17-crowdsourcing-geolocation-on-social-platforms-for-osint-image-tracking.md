@@ -7,7 +7,7 @@ translationKey: crowdsourcing-geolocation-on-social-platforms-for-osint-image-tr
 weight: 100
 date: 2024-10-17T16:50:21+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking/
+url: crowdsourcing-geolocation-on-social-platforms-for-osint-image-tracking
 featured_image: /images/osint1.webp
 categories:
     - Open Source Intelligence (OSINT)

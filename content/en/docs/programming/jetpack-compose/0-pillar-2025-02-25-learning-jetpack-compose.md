@@ -67,8 +67,8 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 ### **7. Handling User Input and Interactions**
 
 - [Clickable components.](/clickable-components-in-jetpack-compose/)
-- Handling gestures and touch events.
-- Working with text fields and form validation.
+- [Handling gestures and touch events.](/handling-gestures-and-touch-events-in-jetpack-compose/)
+- [Working with text fields and form validation.](/working-with-text-fields-and-form-validation-in-jetpack-compose/)
 
 ---
 
@@ -76,27 +76,27 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 
 ### **8. Navigation in Jetpack Compose**
 
-- Setting up Navigation Compose.
-- Passing arguments between composables.
-- Navigation with ViewModels and state preservation.
+- [Setting up Navigation Compose.](/setting-up-navigation-compose-in-jetpack-compose/)
+- [Passing arguments between composables.](/passing-arguments-between-composables-in-jetpack-compose/)
+- [Navigation with ViewModels and state preservation.](/navigation-with-viewmodels-and-state-preservation-in-jetpack-compose/)
 
 ### **9. Animations in Jetpack Compose**
 
-- Basic animations with `animate*AsState`.
-- Transition animations between screens.
-- Custom animations using `rememberInfiniteTransition`.
+- [Basic animations with `animate*AsState`.](/basic-animations-with-animateasstate-in-jetpack-compose/)
+- [Transition animations between screens.](/transition-animations-between-screens-in-jetpack-compose/)
+- [Custom animations using `rememberInfiniteTransition`.](/custom-animations-using-rememberinfinitetransition-in-jetpack-compose/)
 
 ### **10. Theming and Styling**
 
-- Understanding Material Design principles in Jetpack Compose.
-- Implementing dark mode and dynamic theming.
-- Creating custom themes and typography.
+- [Understanding Material Design principles in Jetpack Compose.](/understanding-material-design-principles-in-jetpack-compose/)
+- [Implementing dark mode and dynamic theming.](/implementing-dark-mode-and-dynamic-theming-in-jetpack-compose/)
+- [Creating custom themes and typography.](/creating-custom-themes-and-typography-in-jetpack-compose/)
 
 ### **11. Working with Lists and Lazy Components**
 
-- Understanding LazyColumn and LazyRow optimizations.
-- Using item keys for efficient recomposition.
-- Implementing sticky headers and grid lists.
+- [Understanding LazyColumn and LazyRow optimizations.](/understanding-lazycolumn-and-lazyrow-optimizations-in-jetpack-compose/)
+- [Using item keys for efficient recomposition.](/using-item-keys-for-efficient-recomposition-in-jetpack-compose/)
+- [Implementing sticky headers and grid lists.](/implementing-sticky-headers-and-grid-lists-in-jetpack-compose/)
 
 ---
 
@@ -104,15 +104,15 @@ Jetpack Compose is a modern, declarative UI framework for Android development, m
 
 ### **12. Interoperability with XML-Based UI**
 
-- Using Compose inside existing XML-based projects.
-- Embedding XML Views in Compose using AndroidView.
-- Migrating an existing XML-based app to Jetpack Compose.
+- [Using Compose inside existing XML-based projects.](/using-compose-inside-existing-xml-based-projects-in-jetpack-compose/)
+- [Embedding XML Views in Compose using AndroidView.](/embedding-xml-views-in-compose-using-androidview-in-jetpack-compose/)
+- [Migrating an existing XML-based app to Jetpack Compose.](/migrating-an-existing-xml-based-app-to-jetpack-compose-a-comprehensive-guide/)
 
 ### **13. Working with Jetpack Libraries**
 
-- Integration with Room database.
-- Using Hilt for dependency injection in Compose.
-- Handling network requests with Retrofit and Compose.
+- [Integration with Room database.](/integration-with-room-database-in-jetpack-compose/)
+- [Using Hilt for dependency injection in Compose.](/using-hilt-for-dependency-injection-in-jetpack-compose/)
+- [Handling network requests with Retrofit and Compose.](/handling-network-requests-with-retrofit-and-compose-in-jetpack-compose/)
 
 ### **14. Performance Optimization**
 
