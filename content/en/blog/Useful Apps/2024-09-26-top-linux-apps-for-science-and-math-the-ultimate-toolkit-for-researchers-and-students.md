@@ -18,7 +18,7 @@ tags:
 ---
 Linux has long been a preferred platform for scientists, researchers, and students involved in STEM (Science, Technology, Engineering, and Mathematics) fields. Its open-source nature, customizability, and vast array of specialized software make it a perfect choice for technical users. Whether you're solving complex mathematical problems, simulating scientific models, or visualizing data, Linux offers a variety of Linux Apps for Science with powerful tools to meet your needs.
 
-In this blog post, we will explore some of the most popular and essential science and math applications available on Linux. These tools cater to a wide range of disciplines, from physics and chemistry to engineering and data analysis. Best of all, most of these are open-source and freely available for anyone to use.
+In this article, we will explore some of the most popular and essential science and math applications available on Linux. These tools cater to a wide range of disciplines, from physics and chemistry to engineering and data analysis. Best of all, most of these are open-source and freely available for anyone to use.
 
 **1. SciPy (Scientific Python)**
 

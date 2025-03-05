@@ -1,7 +1,7 @@
 ---
 title: "How to Install CakePHP on AlmaLinux: A Comprehensive Guide"
 linkTitle: Install CakePHP
-description: This blog post will walk you through installing and configuring CakePHP on AlmaLinux step-by-step.
+description: This article will walk you through installing and configuring CakePHP on AlmaLinux step-by-step.
 date: 2025-01-08T11:05:11.506Z
 weight: 1760
 url: install-cakephp-almalinux-comprehensive-guide
@@ -19,7 +19,7 @@ featured_image: /images/almalinux.webp
 ---
 CakePHP is a widely used PHP framework that simplifies the development of web applications by offering a well-organized structure, built-in tools, and conventions for coding. If you're running AlmaLinux—a community-driven, enterprise-level Linux distribution based on RHEL (Red Hat Enterprise Linux)—you can set up CakePHP as a reliable foundation for your web projects.
 
-This blog post will walk you through installing and configuring CakePHP on AlmaLinux step-by-step. By the end of this guide, you’ll have a functional CakePHP installation ready for development.
+This article will walk you through installing and configuring CakePHP on AlmaLinux step-by-step. By the end of this guide, you’ll have a functional CakePHP installation ready for development.
 
 ---
 

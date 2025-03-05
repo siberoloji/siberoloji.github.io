@@ -21,7 +21,7 @@ However, with this increased reliance comes an under-recognized but growing chal
 
 
 
-In this blog post, we will explore the key issues surrounding cybersecurity in space, the unique challenges of protecting space infrastructure, and what steps can be taken to safeguard satellites and other critical assets.
+In this article, we will explore the key issues surrounding cybersecurity in space, the unique challenges of protecting space infrastructure, and what steps can be taken to safeguard satellites and other critical assets.
 ## 1. the Importance of Space Infrastructure**
 
 

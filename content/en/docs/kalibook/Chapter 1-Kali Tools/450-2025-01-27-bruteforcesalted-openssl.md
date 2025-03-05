@@ -23,7 +23,7 @@ OpenSSL is a widely used open-source tool for implementing secure cryptographic 
 
 Bruteforce-Salted-OpenSSL is a specialized tool included in Kali Linux, designed to recover passwords used to encrypt data with OpenSSL. While its primary use is in password recovery and security auditing, understanding its capabilities and responsible use is crucial for ethical security practices.  
 
-In this blog post, we’ll explore Bruteforce-Salted-OpenSSL, its features, use cases, and how to responsibly implement it in penetration testing or password recovery scenarios. By the end, you’ll have a comprehensive understanding of how this tool works and its role in the larger context of cybersecurity.
+In this article, we’ll explore Bruteforce-Salted-OpenSSL, its features, use cases, and how to responsibly implement it in penetration testing or password recovery scenarios. By the end, you’ll have a comprehensive understanding of how this tool works and its role in the larger context of cybersecurity.
 
 ---
 

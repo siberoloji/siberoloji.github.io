@@ -18,7 +18,7 @@ tags:
 ---
 Podcasting is more than just recording great content. It’s about building a brand that resonates with your audience, making your podcast recognizable among thousands of others. On Day 8 of your podcasting journey, we’ll dive into **branding** and the importance of **cover art**, both crucial components of a successful podcast.
 
-By the end of this blog post, you will understand how branding impacts your podcast’s identity, learn about the tools available to help you design an eye-catching cover, and gain tips on how to create your own cover art using tools like **Canva**.
+By the end of This article, you will understand how branding impacts your podcast’s identity, learn about the tools available to help you design an eye-catching cover, and gain tips on how to create your own cover art using tools like **Canva**.
 
 ## Why Podcast Branding Matters
 

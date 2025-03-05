@@ -18,7 +18,7 @@ keywords:
   - Text Fields
   - Form Validation
 ---
-Jetpack Compose is revolutionizing the way Android developers build user interfaces by making UI development more declarative, concise, and intuitive. One crucial aspect of many Android applications is the use of text fields and form validation. In this blog post, we’ll explore how to work with text fields in Jetpack Compose, implement form validation, and provide a better user experience by handling errors effectively.
+Jetpack Compose is revolutionizing the way Android developers build user interfaces by making UI development more declarative, concise, and intuitive. One crucial aspect of many Android applications is the use of text fields and form validation. In this article, we’ll explore how to work with text fields in Jetpack Compose, implement form validation, and provide a better user experience by handling errors effectively.
 
 ## Introduction to Text Fields in Jetpack Compose
 

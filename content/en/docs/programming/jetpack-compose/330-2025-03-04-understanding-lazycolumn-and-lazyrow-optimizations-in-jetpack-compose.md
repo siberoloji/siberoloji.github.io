@@ -20,7 +20,7 @@ keywords:
 ---
 Jetpack Compose, Android’s modern toolkit for building native UI, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. Among its many powerful components, `LazyColumn` and `LazyRow` stand out as essential tools for displaying large lists or grids of items. However, to fully leverage their potential, it’s crucial to understand how they work under the hood and how to optimize their performance.
 
-In this blog post, we’ll dive deep into the inner workings of `LazyColumn` and `LazyRow`, explore their optimizations, and provide practical tips to ensure your Compose-based apps run smoothly, even with large datasets.
+In this article, we’ll dive deep into the inner workings of `LazyColumn` and `LazyRow`, explore their optimizations, and provide practical tips to ensure your Compose-based apps run smoothly, even with large datasets.
 
 ---
 

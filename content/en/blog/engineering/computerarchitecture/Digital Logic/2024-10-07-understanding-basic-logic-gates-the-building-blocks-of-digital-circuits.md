@@ -17,7 +17,7 @@ tags:
 ---
 
 
-In the realm of digital electronics and computer science, logic gates serve as the fundamental building blocks of all digital circuits. These simple yet powerful components form the foundation upon which complex digital systems are built, from the microprocessor in your smartphone to the supercomputers driving scientific research. In this blog post, we'll dive deep into the world of basic logic gates, exploring their functions, symbols, and real-world applications.
+In the realm of digital electronics and computer science, logic gates serve as the fundamental building blocks of all digital circuits. These simple yet powerful components form the foundation upon which complex digital systems are built, from the microprocessor in your smartphone to the supercomputers driving scientific research. In this article, we'll dive deep into the world of basic logic gates, exploring their functions, symbols, and real-world applications.
 
 
 

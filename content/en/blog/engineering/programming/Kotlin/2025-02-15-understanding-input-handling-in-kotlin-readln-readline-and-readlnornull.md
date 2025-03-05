@@ -17,7 +17,7 @@ keywords:
    - input handling
 ---
 
-Input handling is a fundamental aspect of programming, enabling interaction between users and applications. In Kotlin, the standard library provides several functions to read input from the console, including `readLine()`, `readln()`, and `readlnOrNull()`. While these functions serve similar purposes, they differ in behavior, return types, and error-handling strategies. This blog post explores their distinctions, use cases, and best practices for leveraging them effectively.
+Input handling is a fundamental aspect of programming, enabling interaction between users and applications. In Kotlin, the standard library provides several functions to read input from the console, including `readLine()`, `readln()`, and `readlnOrNull()`. While these functions serve similar purposes, they differ in behavior, return types, and error-handling strategies. This article explores their distinctions, use cases, and best practices for leveraging them effectively.
 
 ---
 

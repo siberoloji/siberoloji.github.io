@@ -21,7 +21,7 @@ url: virtualbmc-kvm-almalinux
 
 As virtualization continues to grow in popularity, tools that enhance the management and functionality of virtualized environments are becoming essential. VirtualBMC (Virtual Baseboard Management Controller) is one such tool. It simulates the functionality of a physical BMC, enabling administrators to manage virtual machines (VMs) as though they were physical servers through protocols like Intelligent Platform Management Interface (IPMI).
 
-In this blog post, we’ll explore how to set up and use VirtualBMC (vBMC) on KVM with AlmaLinux. From installation to configuration and practical use cases, we’ll cover everything you need to know to integrate vBMC into your virtualized infrastructure.
+In this article, we’ll explore how to set up and use VirtualBMC (vBMC) on KVM with AlmaLinux. From installation to configuration and practical use cases, we’ll cover everything you need to know to integrate vBMC into your virtualized infrastructure.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Enable Integrated DHCP Feature in Dnsmasq and Configure DHCP Server on AlmaLinux
-description: This blog post will provide a step-by-step guide on enabling the integrated DHCP feature in Dnsmasq and configuring it as a DHCP server on AlmaLinux.
+description: This article will provide a step-by-step guide on enabling the integrated DHCP feature in Dnsmasq and configuring it as a DHCP server on AlmaLinux.
 date: 2024-12-09
 draft: false
 tags:
@@ -21,7 +21,7 @@ url: configure-dnsmasq-dhcp-server-almalinux
 
 Dnsmasq is a lightweight, versatile tool commonly used for DNS caching and as a DHCP server. It is widely adopted in small to medium-sized network environments because of its simplicity and efficiency. AlmaLinux, an enterprise-grade Linux distribution derived from Red Hat Enterprise Linux (RHEL), is ideal for deploying Dnsmasq as a DHCP server. By enabling Dnsmasq's integrated DHCP feature, you can streamline network configurations, efficiently allocate IP addresses, and manage DNS queries simultaneously.
 
-This blog post will provide a step-by-step guide on enabling the integrated DHCP feature in Dnsmasq and configuring it as a DHCP server on AlmaLinux.
+This article will provide a step-by-step guide on enabling the integrated DHCP feature in Dnsmasq and configuring it as a DHCP server on AlmaLinux.
 
 ---
 

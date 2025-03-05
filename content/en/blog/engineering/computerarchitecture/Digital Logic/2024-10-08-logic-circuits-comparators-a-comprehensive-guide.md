@@ -14,7 +14,7 @@ tags:
     - digital logic design
 ---
 
-Logic circuits are fundamental building blocks of digital systems, and one of the key types of circuits used extensively in computing and electronics is the comparator. Comparators are used to compare two binary numbers and determine their relationship, whether they are equal, greater than, or less than each other. In this blog post, we will dive into the details of comparators, their types, operations, practical uses, and their role in digital logic design.
+Logic circuits are fundamental building blocks of digital systems, and one of the key types of circuits used extensively in computing and electronics is the comparator. Comparators are used to compare two binary numbers and determine their relationship, whether they are equal, greater than, or less than each other. In this article, we will dive into the details of comparators, their types, operations, practical uses, and their role in digital logic design.
 
 
 

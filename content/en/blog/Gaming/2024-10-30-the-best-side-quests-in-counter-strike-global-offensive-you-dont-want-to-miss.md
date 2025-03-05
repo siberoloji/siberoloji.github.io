@@ -5,7 +5,7 @@ title:  'The Best Side Quests in Counter-Strike: Global Offensive You Don’t Wa
 date: '2024-10-30T22:47:50+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'In this blog post, we''ll delve into some of the most captivating side quests that have captured the imagination of the CS:GO community.' 
+description:  'In this article, we''ll delve into some of the most captivating side quests that have captured the imagination of the CS:GO community.' 
  
 url:  /the-best-side-quests-in-counter-strike-global-offensive-you-dont-want-to-miss/
 featured_image: /images/counterstrikeglobaloffensive.webp
@@ -25,7 +25,7 @@ Counter-Strike: Global Offensive (CS:GO) is renowned for its intense, competitiv
 
 
 
-In this blog post, we'll delve into some of the most captivating side quests that have captured the imagination of the CS:GO community. From intricate map challenges to creative game modes, these side quests offer a wealth of entertainment and challenge for players of all skill levels.
+In this article, we'll delve into some of the most captivating side quests that have captured the imagination of the CS:GO community. From intricate map challenges to creative game modes, these side quests offer a wealth of entertainment and challenge for players of all skill levels.
 
 
 

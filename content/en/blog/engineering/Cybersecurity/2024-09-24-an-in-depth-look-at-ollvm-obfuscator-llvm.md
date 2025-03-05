@@ -211,4 +211,4 @@ As with any security measure, OLLVM should be used alongside other best practice
 
 
 
-This blog post provides an overview of OLLVM, touching on its core features, benefits, and challenges. If you're interested in implementing it or have further questions about code obfuscation techniques, feel free to reach out in the comments!
+This article provides an overview of OLLVM, touching on its core features, benefits, and challenges. If you're interested in implementing it or have further questions about code obfuscation techniques, feel free to reach out in the comments!

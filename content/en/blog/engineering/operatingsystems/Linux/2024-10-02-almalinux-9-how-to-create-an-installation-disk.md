@@ -16,7 +16,7 @@ tags:
 ---
 AlmaLinux is a popular, community-driven open-source Linux distribution that offers a stable, secure, and reliable alternative to CentOS. After CentOS shifted to its new rolling release model (CentOS Stream), AlmaLinux has become a go-to choice for users who need a Red Hat Enterprise Linux (RHEL) compatible operating system. AlmaLinux 9 brings several improvements in performance, security, and usability, making it an excellent choice for both server and desktop environments.
 
-One of the first steps in setting up AlmaLinux is creating an installation disk. In this blog post, we’ll guide you through the process of creating an AlmaLinux 9 installation disk. Whether you're a Linux beginner or an experienced user, this guide will cover everything you need, from downloading the ISO file to writing it onto a USB drive, ensuring you’re ready to install AlmaLinux 9 on your system.
+One of the first steps in setting up AlmaLinux is creating an installation disk. In this article, we’ll guide you through the process of creating an AlmaLinux 9 installation disk. Whether you're a Linux beginner or an experienced user, this guide will cover everything you need, from downloading the ISO file to writing it onto a USB drive, ensuring you’re ready to install AlmaLinux 9 on your system.
 ## Prerequisites
 
 Before we dive into the steps for creating an installation disk for AlmaLinux 9, let’s cover the prerequisites you'll need:

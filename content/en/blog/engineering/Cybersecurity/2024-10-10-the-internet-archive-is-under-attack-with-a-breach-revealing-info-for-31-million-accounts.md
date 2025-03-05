@@ -17,7 +17,7 @@ tags:
 ---
 
 
-The recent data breach affecting the Internet Archive has raised significant concerns about cybersecurity and the protection of user data. This incident, which exposed the personal information of approximately 31 million accounts, highlights vulnerabilities in digital platforms that serve critical roles in preserving internet history and access to information. In this blog post, we will delve into the details of the breach, its implications for users, and the broader context of cybersecurity in nonprofit organizations.
+The recent data breach affecting the Internet Archive has raised significant concerns about cybersecurity and the protection of user data. This incident, which exposed the personal information of approximately 31 million accounts, highlights vulnerabilities in digital platforms that serve critical roles in preserving internet history and access to information. In this article, we will delve into the details of the breach, its implications for users, and the broader context of cybersecurity in nonprofit organizations.
 
 
 

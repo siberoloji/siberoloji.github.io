@@ -22,7 +22,7 @@ WordPress is one of the most popular content management systems (CMS) for buildi
 
 
 
-In this blog post, we'll walk you through how to clean up your WordPress site by removing auto drafts, revisions, and other superfluous files. Keeping your site clean will help improve performance, reduce database size, and make it easier to manage. Let’s dive into the details.
+In this article, we'll walk you through how to clean up your WordPress site by removing auto drafts, revisions, and other superfluous files. Keeping your site clean will help improve performance, reduce database size, and make it easier to manage. Let’s dive into the details.
 
 
 

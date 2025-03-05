@@ -1,7 +1,7 @@
 ---
 title: How to Add Audit Rules for Auditd on AlmaLinux
 linkTitle: Add Audit Rules for Auditd
-description: In this blog post, we’ll explore how to add audit rules for auditd on AlmaLinux.
+description: In this article, we’ll explore how to add audit rules for auditd on AlmaLinux.
 date: 2025-01-07T09:35:58.182Z
 weight: 1530
 url: add-audit-rules-auditd-almalinux
@@ -19,7 +19,7 @@ featured_image: /images/almalinux.webp
 ---
 System administrators and security professionals often face the challenge of monitoring critical activities on their Linux systems. **Auditd**, the Linux Audit daemon, is a vital tool that logs system events, making it invaluable for compliance, security, and troubleshooting. A core feature of auditd is its ability to enforce **audit rules**, which specify what activities should be monitored on a system.  
 
-In this blog post, we’ll explore how to add audit rules for auditd on AlmaLinux. From setting up auditd to defining custom rules, you’ll learn how to harness auditd’s power to keep your system secure and compliant.
+In this article, we’ll explore how to add audit rules for auditd on AlmaLinux. From setting up auditd to defining custom rules, you’ll learn how to harness auditd’s power to keep your system secure and compliant.
 
 ---
 

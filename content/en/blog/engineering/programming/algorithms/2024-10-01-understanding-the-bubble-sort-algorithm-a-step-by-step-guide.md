@@ -21,7 +21,7 @@ Sorting algorithms are essential in computer science, as they are used to organi
 
 
 
-In this blog post, we’ll explore what the Bubble Sort algorithm is, how it works, its advantages and disadvantages, and how it compares to other sorting algorithms. We’ll also discuss real-world applications and scenarios where Bubble Sort can still be useful despite its inefficiencies.
+In this article, we’ll explore what the Bubble Sort algorithm is, how it works, its advantages and disadvantages, and how it compares to other sorting algorithms. We’ll also discuss real-world applications and scenarios where Bubble Sort can still be useful despite its inefficiencies.
 
 
 

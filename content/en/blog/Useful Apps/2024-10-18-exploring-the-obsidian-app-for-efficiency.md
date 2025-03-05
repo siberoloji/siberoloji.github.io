@@ -14,7 +14,7 @@ tags:
     - 'note taking'
     - obsidian
 ---
-Obsidian is rapidly gaining popularity among writers, researchers, and note-takers for its unique approach to knowledge management. Unlike traditional note-taking applications, Obsidian operates as a powerful Markdown editor that allows users to create a personal knowledge base using plain text files. This blog post will delve into the features, benefits, and practical applications of Obsidian, particularly focusing on its capabilities for blogging and content creation.
+Obsidian is rapidly gaining popularity among writers, researchers, and note-takers for its unique approach to knowledge management. Unlike traditional note-taking applications, Obsidian operates as a powerful Markdown editor that allows users to create a personal knowledge base using plain text files. This article will delve into the features, benefits, and practical applications of Obsidian, particularly focusing on its capabilities for blogging and content creation.
 
 What is Obsidian?
 

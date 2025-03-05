@@ -22,7 +22,7 @@ In the heart of every computer, from the most basic microcontroller to the most 
 
 
 
-In this blog post, we will explore the **basic operations of an ALU**, the role it plays within the Central Processing Unit (CPU), and how it serves as the building block of computing functionality.
+In this article, we will explore the **basic operations of an ALU**, the role it plays within the Central Processing Unit (CPU), and how it serves as the building block of computing functionality.
 What is an ALU?
 
 

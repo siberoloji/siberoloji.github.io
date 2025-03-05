@@ -2,7 +2,7 @@
 draft: false
 title: Identifying modification history in images and videos
 linkTitle: Modification History in Images and Videos
-description: This blog post explores the significance of metadata in digital files, the tools available for extracting this data.
+description: This article explores the significance of metadata in digital files, the tools available for extracting this data.
 translationKey: identifying-modification-history-in-images-and-videos-for-osint-metadata-extraction-from-files
 weight: 120
 date: 2024-10-17T16:50:23+03:00
@@ -21,7 +21,7 @@ keywords:
 ---
 
 
-Identifying modification history in images and videos for OSINT metadata extraction from files is an essential skill for cybersecurity professionals, investigators, and anyone involved in open-source intelligence (OSINT). This blog post will delve into the significance of metadata in digital files, the tools available for extracting this data, and practical applications of this information in various fields.
+Identifying modification history in images and videos for OSINT metadata extraction from files is an essential skill for cybersecurity professionals, investigators, and anyone involved in open-source intelligence (OSINT). This article will delve into the significance of metadata in digital files, the tools available for extracting this data, and practical applications of this information in various fields.
 
 ## Understanding Metadata
 

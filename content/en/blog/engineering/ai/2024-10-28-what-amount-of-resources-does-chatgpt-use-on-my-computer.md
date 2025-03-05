@@ -3,7 +3,7 @@ draft: false
 title: What Amount of Resources Does ChatGPT Use on My Computer?
 date: 2024-10-28T14:08:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-description: In this blog post, we’ll explore the specific ways ChatGPT interacts with your computer and what impact it has on your device’s performance.
+description: In this article, we’ll explore the specific ways ChatGPT interacts with your computer and what impact it has on your device’s performance.
 url: /what-amount-of-resources-does-chatgpt-use-on-my-computer/
 featured_image: /images/artificialintelligence4.webp
 categories:
@@ -17,7 +17,7 @@ translationKey: what-amount-of-resources-does-chatgpt-use-on-my-computer
 
 ## **Introduction**
 
-As the popularity of ChatGPT has grown, so has the curiosity around how it functions and what resources it utilizes on your computer. Unlike traditional software that runs entirely on your system, [ChatGPT](https://openai.com/index/chatgpt/) operates mainly through cloud-based processing. In this blog post, we’ll explore the specific ways ChatGPT interacts with your computer and what impact it has on your device’s performance.
+As the popularity of ChatGPT has grown, so has the curiosity around how it functions and what resources it utilizes on your computer. Unlike traditional software that runs entirely on your system, [ChatGPT](https://openai.com/index/chatgpt/) operates mainly through cloud-based processing. In this article, we’ll explore the specific ways ChatGPT interacts with your computer and what impact it has on your device’s performance.
 
 ## **Understanding How ChatGPT Works**
 

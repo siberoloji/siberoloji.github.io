@@ -4,7 +4,7 @@ title: Not-Null Assertions in Kotlin
 linkTitle: NotNull Assertions
 translationKey: not-null-assertions-in-kotlin
 weight: 270
-description: This blog post explores not-null assertions in Kotlin, a feature that allows developers to override the null safety checks made by the compiler.
+description: This article explores not-null assertions in Kotlin, a feature that allows developers to override the null safety checks made by the compiler.
 date: 2025-02-09
 url: not-null-assertions-in-kotlin
 tags:

@@ -18,7 +18,7 @@ tags:
 ---
 
 
-In an era where information spreads as rapidly as viruses, social media has emerged as a powerful tool for detecting and tracking disease outbreaks. This blog post explores the methods, challenges, and potential of using social media platforms to monitor public health trends and identify emerging health threats.
+In an era where information spreads as rapidly as viruses, social media has emerged as a powerful tool for detecting and tracking disease outbreaks. This article explores the methods, challenges, and potential of using social media platforms to monitor public health trends and identify emerging health threats.
 
 
 

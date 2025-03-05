@@ -17,7 +17,7 @@ In today’s increasingly interconnected world, cybercrime has evolved into a si
 
 
 
-Digital forensics involves the process of uncovering, analyzing, and preserving digital evidence from electronic devices to support criminal investigations. In this blog post, we will explore the critical role digital forensics plays in modern cybercrime investigations, how forensic experts trace cybercriminals, and the challenges they face as cyber threats continue to evolve.
+Digital forensics involves the process of uncovering, analyzing, and preserving digital evidence from electronic devices to support criminal investigations. In this article, we will explore the critical role digital forensics plays in modern cybercrime investigations, how forensic experts trace cybercriminals, and the challenges they face as cyber threats continue to evolve.
 Understanding Digital Forensics: What It Entails
 
 

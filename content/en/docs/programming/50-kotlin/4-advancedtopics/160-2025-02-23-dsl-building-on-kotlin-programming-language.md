@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 
 Domain-Specific Languages (DSLs) are specialized programming languages designed for a particular domain or purpose. Unlike general-purpose languages (GPLs), which aim to be versatile and applicable across multiple domains, DSLs optimize for expressiveness and simplicity in specific areas like database querying, build automation, and UI design.
 
-Kotlin, a modern and expressive programming language developed by JetBrains, provides robust support for DSL construction. Its features, such as extension functions, lambdas, infix notation, and type-safe builders, make it an excellent choice for DSL development. This blog post explores the concepts of DSLs, why Kotlin is well-suited for DSL building, and how you can create a custom DSL in Kotlin step by step.
+Kotlin, a modern and expressive programming language developed by JetBrains, provides robust support for DSL construction. Its features, such as extension functions, lambdas, infix notation, and type-safe builders, make it an excellent choice for DSL development. This article explores the concepts of DSLs, why Kotlin is well-suited for DSL building, and how you can create a custom DSL in Kotlin step by step.
 
 ---
 

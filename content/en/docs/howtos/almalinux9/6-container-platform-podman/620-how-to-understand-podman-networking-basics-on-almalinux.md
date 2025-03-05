@@ -1,7 +1,7 @@
 ---
 title: How to Understand Podman Networking Basics on AlmaLinux
 linkTitle: Podman Networking Basics
-description: In this blog post, we’ll delve into Podman networking basics, with a focus on AlmaLinux.
+description: In this article, we’ll delve into Podman networking basics, with a focus on AlmaLinux.
 date: 2024-12-11
 weight: 620
 draft: false
@@ -20,7 +20,7 @@ url: understand-podman-networking-basics-almalinux
 ---
 Podman is an increasingly popular container management tool, offering a secure and daemonless alternative to Docker. One of its key features is robust and flexible networking capabilities, which are critical for containerized applications that need to communicate with each other or external services. Networking in Podman allows containers to connect internally, access external resources, or expose services to users.
 
-In this blog post, we’ll delve into Podman networking basics, with a focus on AlmaLinux. You’ll learn about default networking modes, configuring custom networks, and troubleshooting common networking issues.
+In this article, we’ll delve into Podman networking basics, with a focus on AlmaLinux. You’ll learn about default networking modes, configuring custom networks, and troubleshooting common networking issues.
 
 ---
 

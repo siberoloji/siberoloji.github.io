@@ -2,7 +2,7 @@
 draft: false
 title: Using Metadata for Document Authenticity Verification with Metadata Extraction from Files
 linkTitle: Metadata for Document Authenticity Verification
-description: This blog post delves into the intricate world of metadata analysis for document authenticity verification, exploring techniques, tools, and considerations for OSINT practitioners.
+description: This article delves into the intricate world of metadata analysis for document authenticity verification, exploring techniques, tools, and considerations for OSINT practitioners.
 translationKey: using-metadata-for-document-authenticity-verification-in-osint-metadata-extraction-from-files
 weight: 140
 date: 2024-10-17T16:50:26+03:00
@@ -21,7 +21,7 @@ keywords:
 ---
 
 
-In the realm of Open Source Intelligence (OSINT), the ability to verify the authenticity of documents is crucial. As digital documents become increasingly prevalent, metadata has emerged as a powerful tool for analysts to determine the genuineness and origins of files. This blog post delves into the intricate world of metadata analysis for document authenticity verification, exploring techniques, tools, and considerations for OSINT practitioners.
+In the realm of Open Source Intelligence (OSINT), the ability to verify the authenticity of documents is crucial. As digital documents become increasingly prevalent, metadata has emerged as a powerful tool for analysts to determine the genuineness and origins of files. This article delves into the intricate world of metadata analysis for document authenticity verification, exploring techniques, tools, and considerations for OSINT practitioners.
 
 ## Understanding Metadata in Document Analysis
 

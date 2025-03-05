@@ -19,7 +19,7 @@ tags:
 ---
 Disk partitioning is an essential task in Linux, especially for system administrators or users managing multiple drives. One of the tools available for partition management is the `cfdisk` command, a simple yet powerful text-based partition editor. While graphical partition editors like GParted provide a user-friendly interface, `cfdisk` offers greater control through the command line, making it ideal for advanced users who prefer working without a graphical environment.
 
-In this blog post, we’ll explore the `cfdisk` command in detail, discussing its use cases, advantages, and practical examples to help you master disk partitioning tasks on Linux.
+In this article, we’ll explore the `cfdisk` command in detail, discussing its use cases, advantages, and practical examples to help you master disk partitioning tasks on Linux.
 ## What is `cfdisk`?
 
 `cfdisk` stands for **curses-based fdisk**. It is a simplified version of the more traditional `fdisk` command but with a menu-driven interface based on the curses library. This allows users to interactively manage disk partitions in a text-based environment.

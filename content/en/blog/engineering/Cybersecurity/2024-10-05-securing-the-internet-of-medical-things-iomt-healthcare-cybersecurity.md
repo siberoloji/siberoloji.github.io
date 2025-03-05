@@ -16,7 +16,7 @@ In recent years, the healthcare industry has witnessed a technological revolutio
 
 
 
-In this blog post, we'll delve into the critical aspects of securing the Internet of Medical Things, exploring the unique challenges faced by healthcare IT professionals and the strategies they can employ to protect these vital systems.
+In this article, we'll delve into the critical aspects of securing the Internet of Medical Things, exploring the unique challenges faced by healthcare IT professionals and the strategies they can employ to protect these vital systems.
 
 
 <!-- wp:embed {"url":"https://youtu.be/IP9Pj1EwEa8","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->

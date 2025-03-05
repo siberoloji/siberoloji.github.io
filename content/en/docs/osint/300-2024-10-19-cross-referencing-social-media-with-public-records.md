@@ -23,7 +23,7 @@ In today’s interconnected world, social media has become an invaluable source 
 
 
 
-This blog post delves into the importance of cross-referencing social media data with public records, the best methods for doing so, and the ethical considerations involved.
+This article delves into the importance of cross-referencing social media data with public records, the best methods for doing so, and the ethical considerations involved.
 
 
 

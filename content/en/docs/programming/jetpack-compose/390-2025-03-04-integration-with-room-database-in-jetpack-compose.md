@@ -19,7 +19,7 @@ keywords:
 ---
 In modern Android development, Jetpack Compose has emerged as a powerful toolkit for building native UIs. Its declarative approach simplifies UI development, making it easier to create dynamic and responsive applications. However, building a robust app often requires more than just a beautiful UI—it also needs efficient data management. This is where **Room**, a part of Android Jetpack, comes into play. Room is a persistence library that provides an abstraction layer over SQLite, making database operations more intuitive and less error-prone.
 
-In this blog post, we’ll explore how to integrate **Room database** with **Jetpack Compose** to create a seamless data-driven UI. We’ll cover the basics of Room, how to set it up, and how to use it effectively in a Compose-based application. By the end, you’ll have a solid understanding of how to combine these two powerful tools to build modern Android apps.
+In this article, we’ll explore how to integrate **Room database** with **Jetpack Compose** to create a seamless data-driven UI. We’ll cover the basics of Room, how to set it up, and how to use it effectively in a Compose-based application. By the end, you’ll have a solid understanding of how to combine these two powerful tools to build modern Android apps.
 
 ---
 

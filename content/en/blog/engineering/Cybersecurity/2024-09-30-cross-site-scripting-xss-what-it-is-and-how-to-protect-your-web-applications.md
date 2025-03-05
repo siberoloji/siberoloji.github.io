@@ -18,7 +18,7 @@ Web security is a critical concern for developers, businesses, and users alike. 
 
 
 
-In this blog post, we will delve into the world of XSS, explaining what it is, how it works, the different types, and, most importantly, how you can protect your web applications from this threat.
+In this article, we will delve into the world of XSS, explaining what it is, how it works, the different types, and, most importantly, how you can protect your web applications from this threat.
 #### **What is Cross-Site Scripting (XSS)?**
 
 

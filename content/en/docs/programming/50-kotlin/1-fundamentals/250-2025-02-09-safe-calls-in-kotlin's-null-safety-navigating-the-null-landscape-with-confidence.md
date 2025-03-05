@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 ## Safe Calls in Kotlin's Null Safety: Navigating the Null Landscape with Confidence
 
-Kotlin's null safety system is a game-changer, significantly reducing the risk of NullPointerExceptions. It forces developers to explicitly consider whether a variable can hold a null value, leading to more robust and predictable code. A cornerstone of this system is the safe call operator (`?.`), a powerful tool that allows you to access properties and methods of potentially null objects without fear of crashes. This blog post delves deep into safe calls, exploring their mechanics, use cases, and best practices, empowering you to write safer and more elegant Kotlin code.
+Kotlin's null safety system is a game-changer, significantly reducing the risk of NullPointerExceptions. It forces developers to explicitly consider whether a variable can hold a null value, leading to more robust and predictable code. A cornerstone of this system is the safe call operator (`?.`), a powerful tool that allows you to access properties and methods of potentially null objects without fear of crashes. This article delves deep into safe calls, exploring their mechanics, use cases, and best practices, empowering you to write safer and more elegant Kotlin code.
 
 ### Understanding Nullability in Kotlin
 

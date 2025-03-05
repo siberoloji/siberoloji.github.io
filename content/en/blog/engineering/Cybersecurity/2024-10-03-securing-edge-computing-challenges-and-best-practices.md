@@ -17,7 +17,7 @@ Edge computing is revolutionizing the way data is processed, analyzed, and store
 
 
 
-This blog post explores the security challenges associated with edge computing, the risks it presents, and best practices for securing edge devices and networks.
+This article explores the security challenges associated with edge computing, the risks it presents, and best practices for securing edge devices and networks.
 
 
 #### What is Edge Computing?

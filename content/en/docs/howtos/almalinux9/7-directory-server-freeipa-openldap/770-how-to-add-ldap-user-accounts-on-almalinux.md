@@ -20,7 +20,7 @@ featured_image: /images/almalinux.webp
 ---
 Lightweight Directory Access Protocol (LDAP) is a powerful solution for managing user authentication and maintaining a centralized directory of user accounts in networked environments. Setting up LDAP on AlmaLinux is a significant step toward streamlined user management, but understanding how to add and manage user accounts is equally crucial.
 
-In this blog post, we’ll explore how to add LDAP user accounts on AlmaLinux step by step, ensuring that you can efficiently manage users in your LDAP directory.
+In this article, we’ll explore how to add LDAP user accounts on AlmaLinux step by step, ensuring that you can efficiently manage users in your LDAP directory.
 
 ---
 

@@ -21,7 +21,7 @@ keywords:
 ---
 
 
-In the ever-evolving world of Open Source Intelligence (OSINT), the power of collective knowledge has emerged as a formidable tool for geolocation tracking. Crowdsourcing geolocation on social platforms has become an increasingly popular and effective method for OSINT practitioners to pinpoint the locations depicted in images. This blog post delves into the intricacies of this technique, exploring its methodologies, benefits, challenges, and ethical considerations.
+In the ever-evolving world of Open Source Intelligence (OSINT), the power of collective knowledge has emerged as a formidable tool for geolocation tracking. Crowdsourcing geolocation on social platforms has become an increasingly popular and effective method for OSINT practitioners to pinpoint the locations depicted in images. This article delves into the intricacies of this technique, exploring its methodologies, benefits, challenges, and ethical considerations.
 
 ## Understanding Crowdsourced Geolocation
 

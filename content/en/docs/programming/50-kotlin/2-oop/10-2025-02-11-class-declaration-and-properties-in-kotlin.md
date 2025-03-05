@@ -5,7 +5,7 @@ linkTitle: Class Declaration and Properties
 translationKey: class-declaration-and-properties-in-kotlin
 url: class-declaration-and-properties-in-kotlin
 weight: 10
-description: In this blog post, we will explore class declarations in Kotlin, how properties are defined and managed, and key features that make Kotlin a preferred choice over Java.
+description: In this article, we will explore class declarations in Kotlin, how properties are defined and managed, and key features that make Kotlin a preferred choice over Java.
 date: 2025-02-11
 tags:
   - Kotlin

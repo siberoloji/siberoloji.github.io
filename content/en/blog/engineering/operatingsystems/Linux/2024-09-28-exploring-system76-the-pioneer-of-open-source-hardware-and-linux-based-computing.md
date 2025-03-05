@@ -18,7 +18,7 @@ tags:
 ---
 When you think about personal computing, names like Dell, HP, and Apple likely come to mind. However, a lesser-known but equally innovative company is making waves, particularly in the world of open-source enthusiasts **System76**. Based in Denver, Colorado, <a href="https://system76.com" target="_blank" rel="noopener" title="">System76</a> is a trailblazer in creating high-performance laptops, desktops, and servers with a focus on **Linux-based operating systems**.
 
-In this blog post, we'll explore:
+In this article, we'll explore:
 * The history and vision behind System76
 
 * System76’s commitment to open-source software and hardware

@@ -15,7 +15,7 @@ tags:
     - 'bird process on mac'
     - 'mac tips'
 ---
-If you're a Mac user, you might have noticed a process called "bird" running in the background on your system. This process can sometimes use a significant amount of CPU and memory, leading to questions about what exactly it does and whether it's safe to have it running. In this blog post, we'll explore what the bird process is, why it runs on your Mac, and whether you should be concerned about it.
+If you're a Mac user, you might have noticed a process called "bird" running in the background on your system. This process can sometimes use a significant amount of CPU and memory, leading to questions about what exactly it does and whether it's safe to have it running. In this article, we'll explore what the bird process is, why it runs on your Mac, and whether you should be concerned about it.
 #### Understanding the Bird Process
 
 The bird process is a part of Apple's iCloud service, specifically responsible for managing and syncing files between your Mac and iCloud. The name "bird" might seem unusual, but it’s likely an abbreviation of the term "biRD," which stands for "Remote Daemon." Daemons are background processes that handle various tasks without direct user interaction.

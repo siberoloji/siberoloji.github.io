@@ -16,7 +16,7 @@ tags:
 ---
 
 
-The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering. It provides an efficient way to compute the Discrete Fourier Transform (DFT) of a sequence, reducing the computational complexity from O(N^2) to O(N log N), where N is the number of points in the sequence. This blog post will delve into implementing the FFT algorithm, exploring its principles, variants, and practical considerations.
+The Fast Fourier Transform (FFT) is a powerful algorithm that has revolutionized signal processing and many other fields of science and engineering. It provides an efficient way to compute the Discrete Fourier Transform (DFT) of a sequence, reducing the computational complexity from O(N^2) to O(N log N), where N is the number of points in the sequence. This article will delve into implementing the FFT algorithm, exploring its principles, variants, and practical considerations.
 
 
 

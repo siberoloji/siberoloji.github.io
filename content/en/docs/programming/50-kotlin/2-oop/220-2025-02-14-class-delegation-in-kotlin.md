@@ -4,7 +4,7 @@ title: "Class Delegation in Kotlin: A Powerful Alternative to Inheritance"
 linkTitle: Class Delegation
 translationKey: class-delegation-in-kotlin
 weight: 220
-description: This blog post explores class delegation in Kotlin, its advantages, and practical use cases.
+description: This article explores class delegation in Kotlin, its advantages, and practical use cases.
 date: 2025-02-14
 url: class-delegation-in-kotlin
 tags:
@@ -20,7 +20,7 @@ featured_image: /images/kotlin-1.png
 ---
 ## Introduction
 
-Kotlin, a modern and expressive programming language developed by JetBrains, provides numerous advanced features that simplify development and improve code maintainability. One such feature is **class delegation**, which allows for a more flexible approach to code reuse compared to traditional inheritance. In this blog post, we will explore class delegation in Kotlin, its advantages, and how it can be used effectively in real-world applications.
+Kotlin, a modern and expressive programming language developed by JetBrains, provides numerous advanced features that simplify development and improve code maintainability. One such feature is **class delegation**, which allows for a more flexible approach to code reuse compared to traditional inheritance. In this article, we will explore class delegation in Kotlin, its advantages, and how it can be used effectively in real-world applications.
 
 ## Understanding Class Delegation
 

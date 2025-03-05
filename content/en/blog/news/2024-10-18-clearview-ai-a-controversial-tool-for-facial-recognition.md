@@ -14,7 +14,7 @@ tags:
     - 'ai news'
     - news
 ---
-In the age of digital ubiquity, facial recognition technology has emerged as a powerful tool with both immense potential and significant ethical implications. One such tool that has captured widespread attention and sparked heated debates is Clearview AI. This blog post will delve into the intricacies of Clearview AI, exploring its capabilities, controversies, and the broader implications of facial recognition technology.
+In the age of digital ubiquity, facial recognition technology has emerged as a powerful tool with both immense potential and significant ethical implications. One such tool that has captured widespread attention and sparked heated debates is Clearview AI. This article will delve into the intricacies of Clearview AI, exploring its capabilities, controversies, and the broader implications of facial recognition technology.
 
 **What is Clearview AI?**
 

@@ -5,7 +5,7 @@ title:  'Data Transmission Modes'
 date: '2024-10-30T12:09:12+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post delves into the three primary data transmission modes: Simplex, Half-Duplex, and Full-Duplex. Each mode has unique characteristics, advantages, and applications, making them suitable for different scenarios.' 
+description:  'This article delves into the three primary data transmission modes: Simplex, Half-Duplex, and Full-Duplex. Each mode has unique characteristics, advantages, and applications, making them suitable for different scenarios.' 
  
 url:  /data-transmission-modes/
 featured_image: /images/datacommunications1webp.webp
@@ -17,7 +17,7 @@ tags:
 ---
 
 
-Data transmission is a fundamental aspect of computer networking, facilitating communication between devices. Understanding the various modes of data transmission is essential for optimizing network performance and ensuring efficient communication. This blog post delves into the three primary data transmission modes: **Simplex**, **Half-Duplex**, and **Full-Duplex**. Each mode has unique characteristics, advantages, and applications, making them suitable for different scenarios.
+Data transmission is a fundamental aspect of computer networking, facilitating communication between devices. Understanding the various modes of data transmission is essential for optimizing network performance and ensuring efficient communication. This article delves into the three primary data transmission modes: **Simplex**, **Half-Duplex**, and **Full-Duplex**. Each mode has unique characteristics, advantages, and applications, making them suitable for different scenarios.
 
 
 

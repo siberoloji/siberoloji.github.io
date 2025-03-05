@@ -4,7 +4,7 @@ title: Variance (in/out) in Kotlin Programming Language
 linkTitle: Variance (in/out)
 translationKey: variance-inout-in-kotlin
 weight: 200
-description: This blog post explores variance in Kotlin, a powerful feature that allows developers to handle subtyping relationships in generic types.
+description: This article explores variance in Kotlin, a powerful feature that allows developers to handle subtyping relationships in generic types.
 date: 2025-02-14
 url: variance-inout-in-kotlin
 tags:
@@ -25,7 +25,7 @@ Variance is a crucial concept in Kotlin's type system that helps manage subtypin
 
 Kotlin introduces two keywords—**`in`** and **`out`**—to define how generic type parameters behave in terms of subtyping. These keywords allow for more flexible and safe use of generics compared to Java's wildcard types.
 
-In this blog post, we'll explore:
+In this article, we'll explore:
 
 - What variance is
 - Covariance (`out` keyword)

@@ -5,7 +5,7 @@ title:  'Investigating Digital Footprints for Criminal Cases'
 date: '2024-10-19T20:15:03+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post delves into the fascinating world of investigating digital footprints and its crucial role in solving modern crimes.' 
+description:  'This article delves into the fascinating world of investigating digital footprints and its crucial role in solving modern crimes.' 
  
 url:  /investigating-digital-footprints-for-criminal-cases/
 featured_image: /images/osint3.webp
@@ -19,7 +19,7 @@ tags:
 ---
 
 
-In today's interconnected world, our daily activities leave behind a trail of digital breadcrumbs. From social media posts to online purchases, every click and swipe creates a digital footprint. For law enforcement and digital forensics experts, these footprints have become invaluable tools in criminal investigations. This blog post delves into the fascinating world of investigating digital footprints and its crucial role in solving modern crimes.
+In today's interconnected world, our daily activities leave behind a trail of digital breadcrumbs. From social media posts to online purchases, every click and swipe creates a digital footprint. For law enforcement and digital forensics experts, these footprints have become invaluable tools in criminal investigations. This article delves into the fascinating world of investigating digital footprints and its crucial role in solving modern crimes.
 
 
 

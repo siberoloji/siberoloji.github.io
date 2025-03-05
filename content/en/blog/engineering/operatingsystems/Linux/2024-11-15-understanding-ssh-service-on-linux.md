@@ -1,6 +1,6 @@
 ---
 title: Understanding SSH Service on Linux
-description: This blog post will explore the SSH service on Linux, covering its installation, configuration, security practices, and practical usage.
+description: This article will explore the SSH service on Linux, covering its installation, configuration, security practices, and practical usage.
 date: 2024-11-15
 draft: false
 tags: 
@@ -21,7 +21,7 @@ url: understanding-ssh-service-linux
 ---
 ## Understanding SSH Service on Linux
 
-Secure Shell (SSH) is a critical protocol in the realm of network security, particularly for Linux systems. It provides a secure method for remote access and management of servers over unsecured networks. This blog post will explore the SSH service on Linux, covering its installation, configuration, security practices, and practical usage.
+Secure Shell (SSH) is a critical protocol in the realm of network security, particularly for Linux systems. It provides a secure method for remote access and management of servers over unsecured networks. This article will explore the SSH service on Linux, covering its installation, configuration, security practices, and practical usage.
 
 ### What is SSH?
 

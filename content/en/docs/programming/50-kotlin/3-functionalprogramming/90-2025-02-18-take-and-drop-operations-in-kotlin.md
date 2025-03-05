@@ -4,7 +4,7 @@ title: Take and Drop Operations in Kotlin
 linkTitle: Take and Drop Operations
 translationKey: take-and-drop-operations-in-kotlin
 weight: 90
-description: This blog post explains how to use the `take` and `drop` functions in Kotlin for efficient data processing.
+description: This article explains how to use the `take` and `drop` functions in Kotlin for efficient data processing.
 date: 2025-02-18
 url: take-and-drop-operations-in-kotlin
 tags:
@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin is a modern programming language known for its simplicity, conciseness, and powerful standard library. Among its many features, the `take` and `drop` operations stand out as convenient ways to manipulate collections and sequences efficiently. These functions help developers handle lists and sequences more effectively by extracting or excluding elements based on specified conditions.
 
-In this blog post, we will explore how `take` and `drop` work in Kotlin, their various use cases, and how they can simplify data manipulation in your applications.
+In this article, we will explore how `take` and `drop` work in Kotlin, their various use cases, and how they can simplify data manipulation in your applications.
 
 ---
 

@@ -23,7 +23,7 @@ keywords:
 
 In the ever-evolving landscape of Open Source Intelligence (OSINT), one of the most powerful yet underutilized techniques is **reverse image search** for location discovery, also known as **geolocation tracking from images**. With the rise of smartphones and social media, images containing visual clues about locations are uploaded online daily. By leveraging these images, OSINT analysts can extract geographic information, trace locations, and gather actionable intelligence.
 
-This blog post will provide a detailed look at the reverse image search technique in OSINT, explaining how it is used for geolocation tracking, the tools and strategies involved, and the challenges and ethical considerations surrounding this process.
+This article will provide a detailed look at the reverse image search technique in OSINT, explaining how it is used for geolocation tracking, the tools and strategies involved, and the challenges and ethical considerations surrounding this process.
 
 ## What is Reverse Image Search?
 

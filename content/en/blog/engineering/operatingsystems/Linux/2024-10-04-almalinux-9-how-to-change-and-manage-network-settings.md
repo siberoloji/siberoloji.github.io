@@ -14,7 +14,7 @@ tags:
   - how-to guides
   - linux how-to
 ---
-Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. **AlmaLinux 9**, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this blog post, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.
+Network configuration is a critical aspect of managing a server, especially in environments where performance, security, and connectivity are paramount. **AlmaLinux 9**, a stable and reliable CentOS alternative, offers several tools and methods to configure and manage network settings, ranging from command-line utilities to graphical tools. In this article, we will walk through how to change and manage network settings in AlmaLinux 9, focusing on both basic and advanced configurations.
 
 Table of Contents
 * Introduction to Network Configuration in AlmaLinux 9

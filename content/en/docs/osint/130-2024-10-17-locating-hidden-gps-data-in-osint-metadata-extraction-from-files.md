@@ -2,7 +2,7 @@
 draft: false
 title: Locating Hidden GPS Data with Metadata Extraction from Files in OSINT
 linkTitle: Locating Hidden GPS Data
-description: This blog post explores how OSINT analysts can locate and extract hidden GPS data from various files, the tools they use, and the challenges and ethical considerations involved in this process.
+description: This article explores how OSINT analysts can locate and extract hidden GPS data from various files, the tools they use, and the challenges and ethical considerations involved in this process.
 translationKey: locating-hidden-gps-data-with-metadata-extraction-from-files-in-osint
 weight: 130
 date: 2024-10-17T16:50:24+03:00
@@ -25,7 +25,7 @@ In the digital world, every file—whether it’s a photo, document, or video—
 
 
 
-In this blog post, we’ll explore how OSINT analysts can locate and extract hidden GPS data from various files, the tools they use, and the challenges and ethical considerations involved in this process.
+In this article, we’ll explore how OSINT analysts can locate and extract hidden GPS data from various files, the tools they use, and the challenges and ethical considerations involved in this process.
 
 
 

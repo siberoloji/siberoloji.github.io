@@ -22,7 +22,7 @@ In the world of **Open Source Intelligence (OSINT)**, collecting information fro
 
 
 
-In this blog post, we will explore the use of **Python and BeautifulSoup for web scraping**, focusing on how these techniques can be applied for **OSINT**.
+In this article, we will explore the use of **Python and BeautifulSoup for web scraping**, focusing on how these techniques can be applied for **OSINT**.
 ## 1. What is Web Scraping?
 
 

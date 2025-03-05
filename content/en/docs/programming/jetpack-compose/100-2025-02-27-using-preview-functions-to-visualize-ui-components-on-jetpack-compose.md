@@ -19,7 +19,7 @@ keywords:
 ---
 Jetpack Compose is Google's modern UI toolkit for Android development, offering a declarative approach to building user interfaces. One of the standout features of Jetpack Compose is the ability to preview UI components in Android Studio without running the entire application. The `@Preview` annotation allows developers to visualize and fine-tune UI components efficiently, improving development speed and productivity.
 
-In this blog post, we will explore how to use the preview function in Jetpack Compose, its benefits, best practices, and advanced techniques to make the most out of this powerful feature.
+In this article, we will explore how to use the preview function in Jetpack Compose, its benefits, best practices, and advanced techniques to make the most out of this powerful feature.
 
 ## What is the `@Preview` Annotation?
 

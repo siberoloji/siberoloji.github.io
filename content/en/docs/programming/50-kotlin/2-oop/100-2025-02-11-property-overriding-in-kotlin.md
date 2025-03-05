@@ -4,7 +4,7 @@ title: Property Overriding in Kotlin Programming Language
 linkTitle: Property Overriding
 translationKey: property-overriding-in-kotlin
 weight: 100
-description: This blog post explores the concept of property overriding in Kotlin, including its syntax, rules, and practical use cases.
+description: This article explores the concept of property overriding in Kotlin, including its syntax, rules, and practical use cases.
 url: property-overriding-in-kotlin
 date: 2025-02-11
 tags:
@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, as a modern programming language, offers a variety of powerful features to make software development more efficient and expressive. One such feature is **property overriding**, which allows developers to redefine properties in subclasses, providing greater flexibility and control over inheritance.
 
-In this blog post, we will explore the concept of **property overriding** in Kotlin, including its syntax, rules, and practical use cases.
+In this article, we will explore the concept of **property overriding** in Kotlin, including its syntax, rules, and practical use cases.
 
 ## Understanding Property Overriding in Kotlin
 

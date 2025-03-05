@@ -25,7 +25,7 @@ featured_image: /images/kotlin-1.png
 
 Testing is an essential aspect of software development, ensuring that applications function correctly and meet requirements before deployment. Kotlin, a modern, expressive, and concise programming language developed by JetBrains, offers powerful tools and frameworks for testing applications. Whether you're working on Android applications, backend services, or general Kotlin projects, having a strong testing strategy can improve software reliability and maintainability.
 
-This blog post will explore the different types of testing in Kotlin, popular testing frameworks, and best practices to follow when writing tests.
+This article will explore the different types of testing in Kotlin, popular testing frameworks, and best practices to follow when writing tests.
 
 ## Why Testing is Important in Kotlin
 

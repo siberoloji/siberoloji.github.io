@@ -12,7 +12,7 @@ tags:
 ---
 
 
-In an increasingly interconnected world, the security of our critical infrastructure has never been more important. Among these vital systems, the power grid stands out as a prime target for cyber attacks due to its fundamental role in powering our modern society. This blog post delves into the cybersecurity challenges facing the energy sector, with a particular focus on protecting the power grid from evolving cyber threats.
+In an increasingly interconnected world, the security of our critical infrastructure has never been more important. Among these vital systems, the power grid stands out as a prime target for cyber attacks due to its fundamental role in powering our modern society. This article delves into the cybersecurity challenges facing the energy sector, with a particular focus on protecting the power grid from evolving cyber threats.
 
 
 

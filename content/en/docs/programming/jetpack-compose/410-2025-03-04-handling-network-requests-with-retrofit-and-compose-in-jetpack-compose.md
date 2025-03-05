@@ -19,7 +19,7 @@ keywords:
 ---
 In the ever-evolving world of Android development, Jetpack Compose has emerged as a modern toolkit for building native UIs. It simplifies and accelerates UI development on Android with a declarative approach, allowing developers to create dynamic and responsive interfaces with less code. However, building a modern app often involves more than just creating a beautiful UI. Most apps need to interact with backend services, fetch data, and display it to the user. This is where Retrofit, a popular HTTP client for Android, comes into play.
 
-In this blog post, we’ll explore how to handle network requests using Retrofit in a Jetpack Compose application. We’ll cover the basics of Retrofit, how to integrate it with Compose, and best practices for managing network states and displaying data in a Compose UI.
+In this article, we’ll explore how to handle network requests using Retrofit in a Jetpack Compose application. We’ll cover the basics of Retrofit, how to integrate it with Compose, and best practices for managing network states and displaying data in a Compose UI.
 
 ---
 

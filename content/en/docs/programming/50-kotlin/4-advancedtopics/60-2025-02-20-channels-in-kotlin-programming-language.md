@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, an expressive and modern programming language, is widely used for Android development, backend services, and other applications. One of its powerful concurrency tools is **Channels**, a feature provided by **Kotlin Coroutines**. Channels help in passing data between coroutines efficiently and safely, avoiding the pitfalls of shared mutable state.
 
-In this blog post, we will dive deep into **Channels in Kotlin**, exploring their types, implementation, use cases, and best practices.
+In this article, we will dive deep into **Channels in Kotlin**, exploring their types, implementation, use cases, and best practices.
 
 ---
 

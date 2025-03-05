@@ -5,7 +5,7 @@ title:  'Network Devices: Routers, Switches, and Hubs'
 date: '2024-11-01T12:22:13+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will explore each of these devices in detail, outlining their roles, how they operate, and their applications in modern networking.' 
+description:  'This article will explore each of these devices in detail, outlining their roles, how they operate, and their applications in modern networking.' 
  
 url:  /network-devices-routers-switches-and-hubs/
 featured_image: /images/pexels-photo-4682189.jpeg
@@ -19,7 +19,7 @@ tags:
 ---
 
 
-Network devices play a crucial role in the functioning of computer networks, facilitating communication between various devices. Among these devices, **routers**, **switches**, and **hubs** are fundamental components that serve different purposes within a network. Understanding the differences and functionalities of these devices is essential for anyone involved in networking, whether for personal use or in a professional environment. This blog post will explore each of these devices in detail, outlining their roles, how they operate, and their applications in modern networking.
+Network devices play a crucial role in the functioning of computer networks, facilitating communication between various devices. Among these devices, **routers**, **switches**, and **hubs** are fundamental components that serve different purposes within a network. Understanding the differences and functionalities of these devices is essential for anyone involved in networking, whether for personal use or in a professional environment. This article will explore each of these devices in detail, outlining their roles, how they operate, and their applications in modern networking.
 
 
 

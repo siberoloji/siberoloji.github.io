@@ -20,7 +20,7 @@ The **supply chain**—once viewed primarily in the context of physical goods—
 
 
 
-In this blog post, we’ll discuss the importance of supply chain security, the risks posed by third-party vendors, and strategies for mitigating these risks through effective vendor management.
+In this article, we’ll discuss the importance of supply chain security, the risks posed by third-party vendors, and strategies for mitigating these risks through effective vendor management.
 Table of Contents:
 
 

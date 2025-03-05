@@ -19,7 +19,7 @@ keywords:
 ---
 Jetpack Compose has revolutionized Android UI development by providing a modern, declarative approach to building user interfaces. At the core of this framework lies the `@Composable` annotation, which enables developers to create reusable UI components with ease. Understanding the `@Composable` annotation is crucial for anyone looking to build efficient, scalable, and maintainable Android applications.
 
-In this blog post, we will delve deep into what `@Composable` functions are, how they work, best practices for using them, and common pitfalls to avoid. By the end of this article, you should have a solid grasp of how to leverage Jetpack Compose for your Android UI needs.
+In this article, we will delve deep into what `@Composable` functions are, how they work, best practices for using them, and common pitfalls to avoid. By the end of this article, you should have a solid grasp of how to leverage Jetpack Compose for your Android UI needs.
 
 ## What is @Composable?
 

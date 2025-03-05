@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and concise programming language developed by JetBrains, has gained significant popularity for its expressive syntax and interoperability with Java. One of the fundamental concepts in object-oriented programming (OOP) is **method overriding**, which allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
 
-This blog post explores method overriding in Kotlin, covering its syntax, rules, use cases, and key differences from Java. By the end of this post, you will have a solid understanding of method overriding in Kotlin and how to leverage it effectively in your projects.
+This article explores method overriding in Kotlin, covering its syntax, rules, use cases, and key differences from Java. By the end of this post, you will have a solid understanding of method overriding in Kotlin and how to leverage it effectively in your projects.
 
 ## Understanding Method Overriding
 

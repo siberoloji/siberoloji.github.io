@@ -21,7 +21,7 @@ keywords:
 ---
 Jetpack Compose, Google's modern toolkit for building native Android UIs, introduces powerful tools for handling lists efficiently. One of the key components for displaying lists is `LazyColumn` and `LazyRow`, which enable efficient rendering of large datasets without sacrificing performance.
 
-In this blog post, we will explore what `LazyColumn` and `LazyRow` are, how they work, and how you can use them to create smooth and efficient lists in your Jetpack Compose applications.
+In this article, we will explore what `LazyColumn` and `LazyRow` are, how they work, and how you can use them to create smooth and efficient lists in your Jetpack Compose applications.
 
 ---
 

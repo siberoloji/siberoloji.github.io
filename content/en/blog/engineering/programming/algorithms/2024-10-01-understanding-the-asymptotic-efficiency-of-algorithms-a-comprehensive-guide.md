@@ -21,7 +21,7 @@ In computer science, the efficiency of algorithms is one of the most critical fa
 
 
 
-Asymptotic efficiency helps us understand how the performance of an algorithm changes as the input size becomes very large, and it provides a way to express the worst-case, best-case, and average-case behavior of algorithms in a mathematical form. In this blog post, we will explore the concept of asymptotic efficiency in detail, including its importance, types of asymptotic notations, and examples of how to apply this concept to various algorithms.
+Asymptotic efficiency helps us understand how the performance of an algorithm changes as the input size becomes very large, and it provides a way to express the worst-case, best-case, and average-case behavior of algorithms in a mathematical form. In this article, we will explore the concept of asymptotic efficiency in detail, including its importance, types of asymptotic notations, and examples of how to apply this concept to various algorithms.
 
 
 

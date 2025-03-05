@@ -21,7 +21,7 @@ When discussing some of the most influential books in the field of computer scie
 
 
 
-This blog post will introduce you to these distinguished writers, delve into the structure and content of the book, and explain how their combined expertise has resulted in what many consider to be the definitive guide to algorithms.
+This article will introduce you to these distinguished writers, delve into the structure and content of the book, and explain how their combined expertise has resulted in what many consider to be the definitive guide to algorithms.
 
 
 

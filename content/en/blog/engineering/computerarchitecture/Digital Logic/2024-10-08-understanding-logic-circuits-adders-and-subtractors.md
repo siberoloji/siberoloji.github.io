@@ -20,7 +20,7 @@ tags:
 ---
 
 
-Logic circuits form the backbone of digital electronics, enabling computers and various electronic devices to perform arithmetic operations. Among these circuits, **adders** and **subtractors** play crucial roles in arithmetic logic units (ALUs), which are fundamental components of processors. This blog post will delve into the design, types, and applications of adders and subtractors, providing a comprehensive understanding of their significance in digital systems.
+Logic circuits form the backbone of digital electronics, enabling computers and various electronic devices to perform arithmetic operations. Among these circuits, **adders** and **subtractors** play crucial roles in arithmetic logic units (ALUs), which are fundamental components of processors. This article will delve into the design, types, and applications of adders and subtractors, providing a comprehensive understanding of their significance in digital systems.
 
 
 

@@ -17,7 +17,7 @@ In the complex and ever-evolving world of web security, **Cross-Site Request For
 
 
 
-This blog post will explore the world of CSRF in detail, explaining what it is, how it works, the potential damage it can cause, and, most importantly, how you can protect your web applications and users from this threat.
+This article will explore the world of CSRF in detail, explaining what it is, how it works, the potential damage it can cause, and, most importantly, how you can protect your web applications and users from this threat.
 **What is Cross-Site Request Forgery (CSRF)?**
 
 

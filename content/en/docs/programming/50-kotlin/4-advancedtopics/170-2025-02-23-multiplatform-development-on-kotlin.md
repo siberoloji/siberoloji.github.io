@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 
 In today's fast-paced software development landscape, the need for efficient, cross-platform solutions has become more pronounced than ever. Businesses and developers are increasingly looking for ways to streamline development processes, reduce costs, and maximize code reusability while delivering high-quality applications across various platforms. One of the most effective solutions to achieve this is **Kotlin Multiplatform (KMP)**, a feature of the Kotlin programming language that enables developers to write shared code for multiple platforms while maintaining platform-specific implementations where necessary.
 
-In this blog post, we will explore the concept of multiplatform development in Kotlin, its benefits, use cases, architecture, and how to get started with Kotlin Multiplatform.
+In this article, we will explore the concept of multiplatform development in Kotlin, its benefits, use cases, architecture, and how to get started with Kotlin Multiplatform.
 
 ## What is Kotlin Multiplatform?
 

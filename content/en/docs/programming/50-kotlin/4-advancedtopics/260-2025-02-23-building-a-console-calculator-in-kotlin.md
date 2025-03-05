@@ -18,7 +18,7 @@ keywords:
   - Programming
 featured_image: /images/kotlin-1.png
 ---
-Kotlin is a powerful and concise programming language that has gained popularity for its simplicity, interoperability with Java, and modern syntax. One of the best ways to get started with Kotlin is by creating a simple project, such as a console-based calculator. In this blog post, we will walk through building a console calculator in Kotlin that performs basic arithmetic operations.
+Kotlin is a powerful and concise programming language that has gained popularity for its simplicity, interoperability with Java, and modern syntax. One of the best ways to get started with Kotlin is by creating a simple project, such as a console-based calculator. In this article, we will walk through building a console calculator in Kotlin that performs basic arithmetic operations.
 
 ---
 

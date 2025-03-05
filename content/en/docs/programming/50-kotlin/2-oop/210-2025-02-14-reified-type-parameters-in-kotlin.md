@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 # Reified Type Parameters in Kotlin: A Deep Dive
 
-Kotlin, a modern programming language developed by JetBrains, is known for its expressive syntax, safety features, and interoperability with Java. One of the powerful features of Kotlin is **reified type parameters**, which provide a way to work with generics more effectively at runtime. In this blog post, we will explore what reified type parameters are, how they work, and where they can be useful.
+Kotlin, a modern programming language developed by JetBrains, is known for its expressive syntax, safety features, and interoperability with Java. One of the powerful features of Kotlin is **reified type parameters**, which provide a way to work with generics more effectively at runtime. In this article, we will explore what reified type parameters are, how they work, and where they can be useful.
 
 ## Understanding Generics in Kotlin
 

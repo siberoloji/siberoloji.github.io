@@ -23,7 +23,7 @@ In digital electronics, two fundamental building blocks—registers and counters
 
 
 
-This blog post will provide a detailed explanation of registers and counters, their significance in digital systems, and how they are implemented in real-world applications.
+This article will provide a detailed explanation of registers and counters, their significance in digital systems, and how they are implemented in real-world applications.
 1. **Introduction to Registers and Counters**
 
 

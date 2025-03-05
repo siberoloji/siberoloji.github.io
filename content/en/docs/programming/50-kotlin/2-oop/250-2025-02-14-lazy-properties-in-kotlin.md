@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern programming language developed by JetBrains, has become increasingly popular due to its concise syntax, safety features, and strong interoperability with Java. Among the many powerful features that Kotlin offers, **lazy properties** stand out as an elegant and efficient way to initialize objects only when they are needed. This can help improve performance and reduce unnecessary computations in an application.
 
-In this blog post, we will explore what lazy properties are, how they work in Kotlin, their benefits, common use cases, and best practices for their implementation.
+In this article, we will explore what lazy properties are, how they work in Kotlin, their benefits, common use cases, and best practices for their implementation.
 
 ## What are Lazy Properties?
 

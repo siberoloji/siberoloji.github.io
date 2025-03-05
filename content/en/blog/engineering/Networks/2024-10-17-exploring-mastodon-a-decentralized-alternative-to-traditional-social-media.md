@@ -20,7 +20,7 @@ In recent years, the social media landscape has experienced growing concerns abo
 
 
 
-In this blog post, we’ll take a deep dive into Mastodon—what it is, how it works, its decentralized structure, and why it’s become an attractive alternative to mainstream social networks. We’ll also explore its benefits, limitations, and how users can get started on this innovative platform.
+In this article, we’ll take a deep dive into Mastodon—what it is, how it works, its decentralized structure, and why it’s become an attractive alternative to mainstream social networks. We’ll also explore its benefits, limitations, and how users can get started on this innovative platform.
 
 
 

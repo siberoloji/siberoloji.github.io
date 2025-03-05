@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and expressive programming language developed by JetBrains, provides several powerful features that enhance developer productivity. One such feature is **string templates**, which allow developers to embed variables and expressions directly within strings, making string manipulation more readable and efficient.
 
-In this blog post, we will explore **string templates** in Kotlin in detail. We will discuss how they work, their advantages, and best practices, along with practical examples to help you master this feature.
+In this article, we will explore **string templates** in Kotlin in detail. We will discuss how they work, their advantages, and best practices, along with practical examples to help you master this feature.
 
 ## What Are String Templates?
 

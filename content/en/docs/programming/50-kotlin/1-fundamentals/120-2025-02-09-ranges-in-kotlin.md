@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern programming language developed by JetBrains, offers a wide range of powerful and expressive features. One such feature is **ranges**, which provide an elegant way to represent a sequence of values. Ranges are particularly useful in loops, conditional expressions, and collection processing.
 
-In this blog post, we will explore **ranges in Kotlin** in detail, covering their syntax, different types, use cases, and best practices to help you leverage them effectively in your Kotlin programs.
+In this article, we will explore **ranges in Kotlin** in detail, covering their syntax, different types, use cases, and best practices to help you leverage them effectively in your Kotlin programs.
 
 ---
 

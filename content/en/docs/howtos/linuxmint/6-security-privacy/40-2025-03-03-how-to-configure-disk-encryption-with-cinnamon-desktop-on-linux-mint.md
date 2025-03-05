@@ -23,7 +23,7 @@ featured_image: /images/linuxmint1.webp
 
 Linux Mint is a popular and user-friendly Linux distribution based on Ubuntu and Debian. It is well-regarded for its ease of use, stability, and customization options. One essential aspect of security in modern computing is disk encryption, which ensures that your data remains protected even if your device is lost or stolen.
 
-Disk encryption scrambles the contents of a drive, making it unreadable without the correct decryption key. This blog post will guide you through configuring disk encryption on Linux Mint with the Cinnamon Desktop, covering full-disk encryption (FDE) during installation and encrypting specific directories post-installation.
+Disk encryption scrambles the contents of a drive, making it unreadable without the correct decryption key. This article will guide you through configuring disk encryption on Linux Mint with the Cinnamon Desktop, covering full-disk encryption (FDE) during installation and encrypting specific directories post-installation.
 
 ---
 

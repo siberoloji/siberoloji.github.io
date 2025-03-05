@@ -17,7 +17,7 @@ tags:
 ---
 Search engine optimization (SEO) is an essential aspect of digital marketing, aimed at improving a website’s visibility on search engine results pages (SERPs). One of the lesser-known but equally important aspects of SEO is the use of a **robots.txt file**. This file can significantly impact how search engines interact with your website, which, in turn, can influence your rankings.
 
-In this blog post, we’ll delve into the details of what a robots.txt file is, how it works, why it’s essential for SEO, and how to check and optimize your robots.txt file to ensure your site is being crawled correctly by search engines.
+In this article, we’ll delve into the details of what a robots.txt file is, how it works, why it’s essential for SEO, and how to check and optimize your robots.txt file to ensure your site is being crawled correctly by search engines.
 
 ## **What is a Robots.txt File?**
 

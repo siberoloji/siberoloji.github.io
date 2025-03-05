@@ -18,7 +18,7 @@ In recent years, the rapid advancement of artificial intelligence (AI) has been 
 
 
 
-In this blog post, we'll explore the profound impact of AI on cybersecurity job roles and skills, examining how the landscape is evolving and what professionals need to know to stay ahead in this dynamic field.
+In this article, we'll explore the profound impact of AI on cybersecurity job roles and skills, examining how the landscape is evolving and what professionals need to know to stay ahead in this dynamic field.
 
 
 <!-- wp:embed {"url":"https://youtu.be/WYnxnnDCNBI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->

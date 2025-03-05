@@ -20,7 +20,7 @@ featured_image: /images/kotlin-1.png
 ---
 ## Introduction
 
-A **To-Do List Application** is a simple yet practical project for learning the fundamentals of Kotlin, including data handling, user input, and file management. Kotlin is a modern, concise, and expressive programming language that can be used to build console-based applications. In this blog post, we will walk through the steps of building a **To-Do List Console Application** using Kotlin.
+A **To-Do List Application** is a simple yet practical project for learning the fundamentals of Kotlin, including data handling, user input, and file management. Kotlin is a modern, concise, and expressive programming language that can be used to build console-based applications. In this article, we will walk through the steps of building a **To-Do List Console Application** using Kotlin.
 
 ## Prerequisites
 

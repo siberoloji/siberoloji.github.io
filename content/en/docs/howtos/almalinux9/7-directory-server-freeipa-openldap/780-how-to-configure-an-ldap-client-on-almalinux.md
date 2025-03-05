@@ -22,7 +22,7 @@ featured_image: /images/almalinux.webp
 
 Lightweight Directory Access Protocol (LDAP) simplifies user management in networked environments by enabling centralized authentication. While setting up an LDAP server is a vital step, configuring an LDAP client is equally important to connect systems to the server for authentication and directory services. AlmaLinux, a robust and enterprise-grade Linux distribution, is well-suited for integrating LDAP clients into your infrastructure.
 
-In this blog post, we will walk you through configuring an LDAP client on AlmaLinux to seamlessly authenticate users against an LDAP directory.
+In this article, we will walk you through configuring an LDAP client on AlmaLinux to seamlessly authenticate users against an LDAP directory.
 
 ---
 

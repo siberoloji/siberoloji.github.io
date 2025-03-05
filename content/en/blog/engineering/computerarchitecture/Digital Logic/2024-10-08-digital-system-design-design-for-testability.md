@@ -22,7 +22,7 @@ In the ever-evolving landscape of digital systems, designing robust, scalable, a
 
 
 
-DFT is an essential concept in digital system design that aims to make the testing process more efficient and cost-effective. A system might be impeccably designed in terms of functionality and performance, but without proper testability, identifying defects or ensuring the reliability of the system becomes a daunting task. In this blog post, we'll explore the importance of **Design for Testability** in digital systems, common testing challenges, DFT techniques, and why implementing DFT early in the design phase is critical to success.
+DFT is an essential concept in digital system design that aims to make the testing process more efficient and cost-effective. A system might be impeccably designed in terms of functionality and performance, but without proper testability, identifying defects or ensuring the reliability of the system becomes a daunting task. In this article, we'll explore the importance of **Design for Testability** in digital systems, common testing challenges, DFT techniques, and why implementing DFT early in the design phase is critical to success.
 
 
 

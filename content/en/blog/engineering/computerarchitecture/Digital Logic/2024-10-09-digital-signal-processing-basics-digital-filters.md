@@ -21,7 +21,7 @@ Digital Signal Processing (DSP) is essential in modern technology, enabling devi
 
 
 
-In this blog post, we’ll explore the basics of digital filters, how they work, different types of digital filters, their applications, and key concepts for understanding their role in digital signal processing.
+In this article, we’ll explore the basics of digital filters, how they work, different types of digital filters, their applications, and key concepts for understanding their role in digital signal processing.
 
 
 

@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin is a modern, statically typed programming language designed to be fully interoperable with Java while offering a more concise and expressive syntax. One of its many powerful features includes properties with built-in **getters and setters**, which make it easier to work with encapsulation and data manipulation.
 
-Getters and setters are used in object-oriented programming to provide controlled access to class properties. In Kotlin, properties have default getter and setter implementations, reducing boilerplate code significantly compared to Java. This blog post will explore getters and setters in Kotlin, their benefits, customization options, and best practices.
+Getters and setters are used in object-oriented programming to provide controlled access to class properties. In Kotlin, properties have default getter and setter implementations, reducing boilerplate code significantly compared to Java. This article will explore getters and setters in Kotlin, their benefits, customization options, and best practices.
 
 ---
 

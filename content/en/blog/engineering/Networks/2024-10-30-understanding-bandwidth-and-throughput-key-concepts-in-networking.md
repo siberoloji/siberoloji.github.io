@@ -5,7 +5,7 @@ title:  'Understanding Bandwidth and Throughput: Key Concepts in Networking'
 date: '2024-10-30T12:24:36+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will delve into the definitions, differences, and implications of bandwidth and throughput, as well as their significance in real-world applications.' 
+description:  'This article will delve into the definitions, differences, and implications of bandwidth and throughput, as well as their significance in real-world applications.' 
  
 url:  /understanding-bandwidth-and-throughput-key-concepts-in-networking/
 featured_image: /images/datanetworkandcomponents.webp
@@ -17,7 +17,7 @@ tags:
 ---
 
 
-In the realm of networking, two terms often come up that are crucial for understanding how data is transmitted over networks: **bandwidth** and **throughput**. While they are related, they represent different aspects of network performance. This blog post will delve into the definitions, differences, and implications of bandwidth and throughput, as well as their significance in real-world applications.
+In the realm of networking, two terms often come up that are crucial for understanding how data is transmitted over networks: **bandwidth** and **throughput**. While they are related, they represent different aspects of network performance. This article will delve into the definitions, differences, and implications of bandwidth and throughput, as well as their significance in real-world applications.
 
 
 

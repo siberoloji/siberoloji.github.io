@@ -23,7 +23,7 @@ Cryptocurrency has revolutionized the way we think about money, privacy, and sec
 
 Enter **Bruteforce-Wallet**, a specialized tool available in Kali Linux designed to recover lost or forgotten cryptocurrency wallet passwords. This powerful utility, while niche, is a valuable addition to the toolkit of penetration testers and forensic investigators working on cryptocurrency-related cases.
 
-In this blog post, we’ll take a deep dive into Bruteforce-Wallet, exploring its features, use cases, installation, and ethical considerations. By the end, you’ll have a clear understanding of how this tool works and when it’s appropriate to use it.
+In this article, we’ll take a deep dive into Bruteforce-Wallet, exploring its features, use cases, installation, and ethical considerations. By the end, you’ll have a clear understanding of how this tool works and when it’s appropriate to use it.
 
 ---
 

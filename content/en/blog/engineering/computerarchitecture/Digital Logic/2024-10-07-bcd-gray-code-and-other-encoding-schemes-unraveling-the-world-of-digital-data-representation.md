@@ -14,7 +14,7 @@ tags:
 ---
 
 
-In the realm of digital systems and computer science, the way we represent data is crucial. While binary is the fundamental language of computers, there are numerous encoding schemes designed for specific purposes or to overcome particular challenges. In this blog post, we'll explore some of these encoding schemes, focusing on Binary-Coded Decimal (BCD), Gray code, and touching on several other important encoding methods. We'll delve into how they work, their advantages, limitations, and real-world applications.
+In the realm of digital systems and computer science, the way we represent data is crucial. While binary is the fundamental language of computers, there are numerous encoding schemes designed for specific purposes or to overcome particular challenges. In this article, we'll explore some of these encoding schemes, focusing on Binary-Coded Decimal (BCD), Gray code, and touching on several other important encoding methods. We'll delve into how they work, their advantages, limitations, and real-world applications.
 
 ## Binary: The Foundation of Digital Encoding
 

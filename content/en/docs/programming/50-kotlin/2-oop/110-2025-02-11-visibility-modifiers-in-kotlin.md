@@ -19,7 +19,7 @@ keywords:
   - Visibility Modifiers
 featured_image: /images/kotlin-1.png
 ---
-Kotlin, a modern and expressive programming language, offers robust visibility control mechanisms to manage access to classes, functions, and properties. Visibility modifiers determine how different components of a Kotlin program interact with each other, ensuring encapsulation and modularity. In this blog post, we will explore the various visibility modifiers available in Kotlin, their applications, and best practices for using them effectively.
+Kotlin, a modern and expressive programming language, offers robust visibility control mechanisms to manage access to classes, functions, and properties. Visibility modifiers determine how different components of a Kotlin program interact with each other, ensuring encapsulation and modularity. In this article, we will explore the various visibility modifiers available in Kotlin, their applications, and best practices for using them effectively.
 
 ## Understanding Visibility Modifiers
 

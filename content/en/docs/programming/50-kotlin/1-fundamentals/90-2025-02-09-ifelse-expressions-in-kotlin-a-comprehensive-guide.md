@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and expressive programming language developed by JetBrains, offers several powerful features that enhance code readability and efficiency. One such feature is **if/else expressions**, which allow developers to control the flow of execution based on conditions. Unlike traditional imperative languages where `if/else` is a statement, in Kotlin, `if/else` is an expression, meaning it can return a value and be assigned to a variable.
 
-In this blog post, we will explore **if/else expressions** in Kotlin in detail. We will discuss their syntax, various use cases, and best practices, along with examples to help you master this essential concept.
+In this article, we will explore **if/else expressions** in Kotlin in detail. We will discuss their syntax, various use cases, and best practices, along with examples to help you master this essential concept.
 
 ## Understanding If/Else Expressions in Kotlin
 

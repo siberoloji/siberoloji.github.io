@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and expressive programming language, provides powerful features for handling functions. One of the most versatile aspects of Kotlin is its support for function types, which allow developers to treat functions as first-class citizens. This means functions can be assigned to variables, passed as arguments, and returned from other functions. Understanding function types is crucial for writing clean, concise, and functional Kotlin code.
 
-In this blog post, we will explore Kotlin's function types, their syntax, and use cases, covering everything from basic function types to higher-order functions and lambda expressions.
+In this article, we will explore Kotlin's function types, their syntax, and use cases, covering everything from basic function types to higher-order functions and lambda expressions.
 
 ## What Are Function Types?
 

@@ -1,7 +1,7 @@
 ---
 title: How to Display Auditd Summary Logs with aureport on AlmaLinux
 linkTitle: Auditd Summary Logs with aureport
-description: In this blog post, we’ll explore how to use aureport, a companion utility of auditd, to display summary logs on AlmaLinux.
+description: In this article, we’ll explore how to use aureport, a companion utility of auditd, to display summary logs on AlmaLinux.
 date: 2025-01-07T09:34:08.543Z
 weight: 1520
 url: display-auditd-summary-logs-aureport-almalinux
@@ -18,7 +18,7 @@ featured_image: /images/almalinux.webp
 ---
 System administrators rely on robust tools to monitor, secure, and troubleshoot their Linux systems. AlmaLinux, a popular RHEL-based distribution, offers excellent capabilities for audit logging through **auditd**, the Linux Audit daemon. While tools like `ausearch` allow for detailed, event-specific queries, sometimes a higher-level summary of audit logs is more useful for gaining quick insights. This is where **aureport** comes into play.  
 
-In this blog post, we’ll explore how to use **aureport**, a companion utility of auditd, to display summary logs on AlmaLinux. From generating user activity reports to identifying anomalies, we’ll cover everything you need to know to effectively use aureport.
+In this article, we’ll explore how to use **aureport**, a companion utility of auditd, to display summary logs on AlmaLinux. From generating user activity reports to identifying anomalies, we’ll cover everything you need to know to effectively use aureport.
 
 ---
 

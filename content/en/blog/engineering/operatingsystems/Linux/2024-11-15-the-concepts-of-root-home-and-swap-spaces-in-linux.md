@@ -19,7 +19,7 @@ keywords:
 
 url: concepts-root-home-swap-spaces-linux
 ---
-Linux is renowned for its powerful file system structure, which allows users to manage files and directories efficiently. Among the key components of this structure are the root directory, user home directories, and swap space. Understanding these elements is essential for effective Linux usage, whether you are a beginner or an experienced user. In this blog post, we will explore the concepts of `/root`, `/home`, and swap spaces in detail.
+Linux is renowned for its powerful file system structure, which allows users to manage files and directories efficiently. Among the key components of this structure are the root directory, user home directories, and swap space. Understanding these elements is essential for effective Linux usage, whether you are a beginner or an experienced user. In this article, we will explore the concepts of `/root`, `/home`, and swap spaces in detail.
 
 ## The Linux File System Hierarchy
 

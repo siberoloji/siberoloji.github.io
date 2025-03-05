@@ -1,7 +1,7 @@
 ---
 title: How to Use Registry with Podman on AlmaLinux
 linkTitle: Use Registry with Podman
-description: In this blog post, we’ll explore how to use a registry with Podman on AlmaLinux.
+description: In this article, we’ll explore how to use a registry with Podman on AlmaLinux.
 date: 2024-12-11
 weight: 610
 draft: false
@@ -20,7 +20,7 @@ url: registry-podman-almalinux
 ---
 Podman has emerged as a strong alternative to Docker for managing containers, thanks to its secure and rootless architecture. When working with containerized environments, managing images efficiently is critical. A container image registry allows you to store, retrieve, and share container images seamlessly across environments. Whether you're setting up a private registry for internal use or interacting with public registries, Podman provides all the necessary tools.
 
-In this blog post, we’ll explore how to use a registry with Podman on AlmaLinux. This guide includes setup, configuration, and usage of both private and public registries to streamline your container workflows.
+In this article, we’ll explore how to use a registry with Podman on AlmaLinux. This guide includes setup, configuration, and usage of both private and public registries to streamline your container workflows.
 
 ---
 

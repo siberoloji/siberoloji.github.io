@@ -1,7 +1,7 @@
 ---
 title: How to Access Services on Podman Containers on AlmaLinux
 linkTitle: Services on Podman Containers
-description: This blog post will guide you through configuring and accessing services hosted on Podman containers in AlmaLinux.
+description: This article will guide you through configuring and accessing services hosted on Podman containers in AlmaLinux.
 date: 2024-12-11
 weight: 570
 draft: false
@@ -18,7 +18,7 @@ keywords:
 featured_image: /images/almalinux.webp
 url: access-services-podman-containers-almalinux
 ---
-Podman has become a popular choice for running containerized workloads due to its rootless and daemonless architecture. When using Podman on AlmaLinux, a powerful, stable, and enterprise-grade Linux distribution, accessing services running inside containers is a common requirement. This blog post will guide you through configuring and accessing services hosted on Podman containers in AlmaLinux.
+Podman has become a popular choice for running containerized workloads due to its rootless and daemonless architecture. When using Podman on AlmaLinux, a powerful, stable, and enterprise-grade Linux distribution, accessing services running inside containers is a common requirement. This article will guide you through configuring and accessing services hosted on Podman containers in AlmaLinux.
 
 ---
 

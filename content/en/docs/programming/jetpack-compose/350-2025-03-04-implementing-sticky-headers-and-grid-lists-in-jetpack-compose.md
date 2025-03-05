@@ -18,7 +18,7 @@ keywords:
   - Sticky Headers
   - Grid Lists
 ---
-Jetpack Compose, Android’s modern toolkit for building native UI, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. One of the common UI patterns in mobile applications is the use of sticky headers and grid lists. These components are essential for organizing content in a structured and visually appealing manner. In this blog post, we’ll explore how to implement sticky headers and grid lists in Jetpack Compose, providing you with a comprehensive guide to enhance your app’s UI.
+Jetpack Compose, Android’s modern toolkit for building native UI, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. One of the common UI patterns in mobile applications is the use of sticky headers and grid lists. These components are essential for organizing content in a structured and visually appealing manner. In this article, we’ll explore how to implement sticky headers and grid lists in Jetpack Compose, providing you with a comprehensive guide to enhance your app’s UI.
 
 ## Understanding Sticky Headers and Grid Lists
 
@@ -194,6 +194,6 @@ When you run the app, you’ll see a grid list with sticky headers. As you scrol
 
 ## Conclusion
 
-Implementing sticky headers and grid lists in Jetpack Compose can significantly enhance the user experience of your app. While Jetpack Compose does not provide built-in support for sticky headers, you can achieve this functionality with a combination of `LazyColumn`, `LazyVerticalGrid`, and custom logic. By following the steps outlined in this blog post, you can create a visually appealing and user-friendly UI that organizes content effectively.
+Implementing sticky headers and grid lists in Jetpack Compose can significantly enhance the user experience of your app. While Jetpack Compose does not provide built-in support for sticky headers, you can achieve this functionality with a combination of `LazyColumn`, `LazyVerticalGrid`, and custom logic. By following the steps outlined In this article, you can create a visually appealing and user-friendly UI that organizes content effectively.
 
 As you continue to explore Jetpack Compose, you’ll discover even more ways to create dynamic and responsive UIs. The declarative nature of Compose makes it easier than ever to experiment with different layouts and components, allowing you to build apps that are both functional and beautiful.

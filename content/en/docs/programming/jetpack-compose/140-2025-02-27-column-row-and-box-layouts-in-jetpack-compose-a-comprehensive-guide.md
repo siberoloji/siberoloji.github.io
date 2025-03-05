@@ -19,7 +19,7 @@ keywords:
   - Row
   - Box
 ---
-Jetpack Compose is revolutionizing UI development in Android by offering a declarative approach to designing interfaces. Among the many powerful tools it provides, the `Column`, `Row`, and `Box` layouts are fundamental building blocks for structuring UI elements efficiently. In this blog post, we’ll dive deep into these layout components, exploring their usage, properties, and best practices.
+Jetpack Compose is revolutionizing UI development in Android by offering a declarative approach to designing interfaces. Among the many powerful tools it provides, the `Column`, `Row`, and `Box` layouts are fundamental building blocks for structuring UI elements efficiently. In this article, we’ll dive deep into these layout components, exploring their usage, properties, and best practices.
 
 ## Introduction to Jetpack Compose Layouts
 

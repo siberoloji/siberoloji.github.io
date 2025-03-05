@@ -19,7 +19,7 @@ keywords:
 ---
 Jetpack Compose has revolutionized Android UI development by introducing a declarative and reactive approach to building user interfaces. With Compose, developers can create complex UIs with less code, improved readability, and better maintainability. However, despite its many advantages, there are scenarios where you might need to integrate existing XML-based views into your Compose UI. This is where the `AndroidView` API comes into play.
 
-In this blog post, we’ll explore how to embed XML views in Jetpack Compose using the `AndroidView` API. We’ll discuss why you might need to do this, how it works, and provide a step-by-step guide to implementing it in your app. By the end of this post, you’ll have a solid understanding of how to bridge the gap between traditional XML-based views and modern Compose UIs.
+In this article, we’ll explore how to embed XML views in Jetpack Compose using the `AndroidView` API. We’ll discuss why you might need to do this, how it works, and provide a step-by-step guide to implementing it in your app. By the end of this post, you’ll have a solid understanding of how to bridge the gap between traditional XML-based views and modern Compose UIs.
 
 ---
 

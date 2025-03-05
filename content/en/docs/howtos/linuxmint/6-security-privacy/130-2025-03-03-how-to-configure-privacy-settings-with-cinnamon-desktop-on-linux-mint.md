@@ -21,7 +21,7 @@ featured_image: /images/linuxmint1.webp
 ---
 Linux Mint is one of the most popular Linux distributions, renowned for its user-friendly interface, stability, and robust performance. At the heart of Linux Mint is the Cinnamon Desktop Environment, which provides a sleek, modern, and highly customizable user experience. While Linux Mint is known for its security and privacy features out of the box, it’s important for users to understand how to configure privacy settings to ensure their system is tailored to their specific needs.
 
-In this blog post, we’ll walk you through the steps to configure privacy settings in the Cinnamon Desktop Environment on Linux Mint. Whether you’re a seasoned Linux user or a newcomer, this guide will help you take control of your privacy and enhance your overall system security.
+In this article, we’ll walk you through the steps to configure privacy settings in the Cinnamon Desktop Environment on Linux Mint. Whether you’re a seasoned Linux user or a newcomer, this guide will help you take control of your privacy and enhance your overall system security.
 
 ---
 

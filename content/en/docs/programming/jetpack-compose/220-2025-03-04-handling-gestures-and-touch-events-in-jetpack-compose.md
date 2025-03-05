@@ -18,7 +18,7 @@ keywords:
   - Gestures
   - Touch Events
 ---
-Jetpack Compose, Google’s modern UI toolkit for Android, offers a powerful and flexible way to handle gestures and touch events. With a declarative approach to UI development, Compose simplifies interactions while providing fine-grained control over gesture recognition and event handling. In this blog post, we will explore the fundamentals of handling gestures and touch events in Jetpack Compose, covering everything from basic click handling to more advanced gestures like drag, swipe, and multi-touch interactions.
+Jetpack Compose, Google’s modern UI toolkit for Android, offers a powerful and flexible way to handle gestures and touch events. With a declarative approach to UI development, Compose simplifies interactions while providing fine-grained control over gesture recognition and event handling. In this article, we will explore the fundamentals of handling gestures and touch events in Jetpack Compose, covering everything from basic click handling to more advanced gestures like drag, swipe, and multi-touch interactions.
 
 ## Understanding Gesture Detection in Jetpack Compose
 

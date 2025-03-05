@@ -21,7 +21,7 @@ Proxmox Virtual Environment (PVE) is an open-source platform designed for runnin
 
 
 
-In this blog post, we will explore the **live migration** feature in Proxmox, how it works under the hood, its benefits, and step-by-step instructions on how to perform a live migration in Proxmox.
+In this article, we will explore the **live migration** feature in Proxmox, how it works under the hood, its benefits, and step-by-step instructions on how to perform a live migration in Proxmox.
 What Is Live Migration?
 
 

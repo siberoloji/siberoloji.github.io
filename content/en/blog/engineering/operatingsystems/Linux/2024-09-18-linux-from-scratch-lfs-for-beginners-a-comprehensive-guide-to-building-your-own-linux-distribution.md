@@ -19,7 +19,7 @@ tags:
 ---
 The world of Linux is vast, with hundreds of distributions (or distros) designed for different use cases and users. Most Linux distros come with pre-configured software, desktop environments, and package managers, ready for installation. However, if you're a beginner eager to learn Linux from the ground up, there’s a unique project tailored for enthusiasts who want to build a Linux system from scratch: **Linux From Scratch (LFS)**.
 
-In this blog post, we'll explore **<a href="https://www.linuxfromscratch.org" target="_blank" rel="noopener" title="">Linux From Scratch</a>**, why it’s both challenging and rewarding for beginners, and how to get started with this project. By the end, you'll understand what LFS is, what benefits it offers, and how you can approach building your own custom Linux system.
+In this article, we'll explore **<a href="https://www.linuxfromscratch.org" target="_blank" rel="noopener" title="">Linux From Scratch</a>**, why it’s both challenging and rewarding for beginners, and how to get started with this project. By the end, you'll understand what LFS is, what benefits it offers, and how you can approach building your own custom Linux system.
  
 ## What is Linux From Scratch (LFS)?
 

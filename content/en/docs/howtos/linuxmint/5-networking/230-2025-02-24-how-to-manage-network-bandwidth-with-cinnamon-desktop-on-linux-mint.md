@@ -21,7 +21,7 @@ featured_image: /images/linuxmint1.webp
 ---
 Efficiently managing network bandwidth is crucial for maintaining a smooth and responsive Linux Mint system, especially when running multiple applications that consume internet resources. The Cinnamon Desktop Environment provides a user-friendly interface, and combined with various Linux Mint tools and utilities, you can monitor, control, and optimize network bandwidth effectively.
 
-In this blog post, we will explore different methods to manage network bandwidth on Linux Mint with Cinnamon Desktop, covering both graphical and command-line approaches.
+In this article, we will explore different methods to manage network bandwidth on Linux Mint with Cinnamon Desktop, covering both graphical and command-line approaches.
 
 ## 1. Understanding Network Bandwidth Usage
 

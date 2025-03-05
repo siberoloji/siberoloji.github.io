@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, a modern and expressive programming language developed by JetBrains, has gained significant traction due to its concise syntax, null safety, and interoperability with Java. Among its many powerful features, **data classes** stand out as a highly useful construct for handling immutable data. Data classes reduce boilerplate code, enhance readability, and improve efficiency when working with data-centric applications.
 
-This blog post explores data classes in Kotlin, their use cases, benefits, and best practices for implementation.
+This article explores data classes in Kotlin, their use cases, benefits, and best practices for implementation.
 
 ## What are Data Classes in Kotlin?
 

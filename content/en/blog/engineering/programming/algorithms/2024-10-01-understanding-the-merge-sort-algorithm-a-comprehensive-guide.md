@@ -21,7 +21,7 @@ In computer science, efficient sorting is essential for organizing and analyzing
 
 
 
-In this blog post, we’ll explore the Merge Sort algorithm in detail, including how it works, its advantages, and how it compares to other sorting techniques. We’ll also discuss practical applications of Merge Sort and why it’s a popular choice for sorting large datasets.
+In this article, we’ll explore the Merge Sort algorithm in detail, including how it works, its advantages, and how it compares to other sorting techniques. We’ll also discuss practical applications of Merge Sort and why it’s a popular choice for sorting large datasets.
 
 
 

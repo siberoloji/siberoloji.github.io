@@ -14,7 +14,7 @@ tags:
     - bsd
     - unix
 ---
-When people discuss open-source operating systems, **Linux** is often the first to come to mind. However, another family of operating systems, the **BSD (Berkeley Software Distribution)** lineage, offers robust alternatives. BSD has a long history and is known for its focus on stability, security, and performance. It forms the basis for some popular operating systems like FreeBSD, OpenBSD, and NetBSD, each catering to different needs and preferences. In this blog post, we'll dive deep into **BSD distributions**, examining their features, strengths, and target audiences.
+When people discuss open-source operating systems, **Linux** is often the first to come to mind. However, another family of operating systems, the **BSD (Berkeley Software Distribution)** lineage, offers robust alternatives. BSD has a long history and is known for its focus on stability, security, and performance. It forms the basis for some popular operating systems like FreeBSD, OpenBSD, and NetBSD, each catering to different needs and preferences. In this article, we'll dive deep into **BSD distributions**, examining their features, strengths, and target audiences.
 
 What is BSD?
 

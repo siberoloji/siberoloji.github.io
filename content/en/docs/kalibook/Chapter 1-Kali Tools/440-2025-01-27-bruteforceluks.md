@@ -21,7 +21,7 @@ featured_image: /images/kalilinux2.webp
 ---
 Encryption is a cornerstone of data security in today’s digital landscape. For Linux users, the **Linux Unified Key Setup (LUKS)** is a popular choice for encrypting disks and protecting sensitive data. However, as with any security mechanism, mismanagement or weak configurations can leave encrypted systems vulnerable to attack. This is where tools like **Bruteforce-LUKS**, included in Kali Linux, come into play.  
 
-In this blog post, we’ll take an in-depth look at Bruteforce-LUKS: its purpose, capabilities, installation, and practical usage. We’ll also discuss its ethical implications, along with best practices for using it responsibly.
+In this article, we’ll take an in-depth look at Bruteforce-LUKS: its purpose, capabilities, installation, and practical usage. We’ll also discuss its ethical implications, along with best practices for using it responsibly.
 
 ---
 

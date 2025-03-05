@@ -17,7 +17,7 @@ In today's digital world, where data breaches and cyberattacks are commonplace, 
 
 
 
-In this blog post, we’ll explore what symmetric encryption is, how it works, its advantages and limitations, and its common use cases in modern cybersecurity.
+In this article, we’ll explore what symmetric encryption is, how it works, its advantages and limitations, and its common use cases in modern cybersecurity.
 **What is Symmetric Encryption?**
 
 

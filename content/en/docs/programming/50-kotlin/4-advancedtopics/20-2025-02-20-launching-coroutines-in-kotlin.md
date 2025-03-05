@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin coroutines have revolutionized asynchronous programming, offering a more structured and concise way to handle concurrency. Unlike traditional multithreading, coroutines provide an efficient and lightweight alternative, making it easier to manage background tasks without blocking the main thread.  
 
-In this blog post, we'll explore how to launch coroutines in Kotlin, the different coroutine builders available, and best practices for using them effectively. By the end, you'll have a solid understanding of how to work with coroutines and improve the performance of your Kotlin applications.  
+In this article, we'll explore how to launch coroutines in Kotlin, the different coroutine builders available, and best practices for using them effectively. By the end, you'll have a solid understanding of how to work with coroutines and improve the performance of your Kotlin applications.  
 
 ---
 

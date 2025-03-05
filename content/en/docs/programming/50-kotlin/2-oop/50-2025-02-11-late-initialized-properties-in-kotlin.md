@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, as a modern programming language, introduces various property types and initialization techniques to enhance developer productivity and safety. One such feature is **late-initialized properties**, which allow properties to be initialized at a later stage, avoiding the need for nullable types in some scenarios. Understanding late-initialized properties in Kotlin is crucial for efficient class design and avoiding common pitfalls related to property initialization.
 
-This blog post explores **late-initialized properties**, their usage, alternatives, and best practices when working with properties in Kotlin classes.
+This article explores **late-initialized properties**, their usage, alternatives, and best practices when working with properties in Kotlin classes.
 
 ## Understanding Properties in Kotlin
 

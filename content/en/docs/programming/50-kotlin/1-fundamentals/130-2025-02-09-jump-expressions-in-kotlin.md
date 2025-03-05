@@ -31,7 +31,7 @@ Kotlin, a modern and expressive programming language developed by JetBrains, pro
 - `continue` – Skips the current iteration of a loop and moves to the next.
 - `return` – Exits a function and optionally returns a value.
 
-Jump expressions allow developers to control how loops and functions execute, making code more readable and efficient. In this blog post, we will explore **break, continue, and return** in detail, their syntax, use cases, and best practices, with practical examples.
+Jump expressions allow developers to control how loops and functions execute, making code more readable and efficient. In this article, we will explore **break, continue, and return** in detail, their syntax, use cases, and best practices, with practical examples.
 
 ---
 

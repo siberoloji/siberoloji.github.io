@@ -19,7 +19,7 @@ keywords:
   - Function Literals
 featured_image: /images/kotlin-1.png
 ---
-Kotlin, a modern and expressive programming language, has gained significant traction due to its concise syntax, safety features, and seamless interoperability with Java. One of Kotlin’s powerful features is its support for function literals, which allow developers to write more expressive and flexible code. In this blog post, we will explore function literals in Kotlin, their types, usage, and best practices.
+Kotlin, a modern and expressive programming language, has gained significant traction due to its concise syntax, safety features, and seamless interoperability with Java. One of Kotlin’s powerful features is its support for function literals, which allow developers to write more expressive and flexible code. In this article, we will explore function literals in Kotlin, their types, usage, and best practices.
 
 ## What are Function Literals?
 

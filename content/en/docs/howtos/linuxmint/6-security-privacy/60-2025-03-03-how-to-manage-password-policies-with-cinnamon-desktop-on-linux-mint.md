@@ -21,7 +21,7 @@ featured_image: /images/linuxmint1.webp
 ---
 Linux Mint, particularly with its flagship Cinnamon desktop environment, is a popular choice for users who seek a balance between stability, ease of use, and customization. Security is a fundamental concern for any Linux user, and managing password policies effectively is crucial to ensuring both personal and system-wide security.
 
-This blog post will guide you through managing password policies on Linux Mint running Cinnamon Desktop, covering system-wide password policies, user password management, and additional security measures to enhance your password strategy.
+This article will guide you through managing password policies on Linux Mint running Cinnamon Desktop, covering system-wide password policies, user password management, and additional security measures to enhance your password strategy.
 
 ---
 

@@ -5,7 +5,7 @@ title:  'AFFLIB-Tools: A Comprehensive Guide for Kali Linux Users'
 date: '2024-10-24T12:49:07+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'In this blog post, we’ll dive deep into AFFLIB tools, their role in digital forensics, how to use them in Kali Linux, and their core features.' 
+description:  'In this article, we’ll dive deep into AFFLIB tools, their role in digital forensics, how to use them in Kali Linux, and their core features.' 
  
 url:  /afflib-tools-a-comprehensive-guide-for-kali-linux-users/
 featured_image: /images/kalilinux2.webp
@@ -17,7 +17,7 @@ tags:
 ---
 When conducting digital forensics or incident response, acquiring, storing, and analyzing disk images is a crucial task. One of the most commonly used formats for these disk images is the **Advanced Forensic Format (AFF)**. The AFF format is designed specifically for the forensic community, providing a reliable way to capture and store evidence. **AFFLIB-Tools**, a suite of utilities, comes bundled with Kali Linux, offering powerful functionality for working with AFF files.
 
-In this blog post, we’ll dive deep into <a href="https://github.com/sshock/AFFLIBv3" target="_blank" rel="noopener" title="">AFFLIB</a> tools, their role in digital forensics, how to use them in Kali Linux, and their core features. By the end of this post, you will have a solid understanding of AFFLIB tools and how to leverage them for forensic analysis and disk image handling.
+In this article, we’ll dive deep into <a href="https://github.com/sshock/AFFLIBv3" target="_blank" rel="noopener" title="">AFFLIB</a> tools, their role in digital forensics, how to use them in Kali Linux, and their core features. By the end of this post, you will have a solid understanding of AFFLIB tools and how to leverage them for forensic analysis and disk image handling.
 Table of Contents:
 * What Is AFFLIB-Tools?
 

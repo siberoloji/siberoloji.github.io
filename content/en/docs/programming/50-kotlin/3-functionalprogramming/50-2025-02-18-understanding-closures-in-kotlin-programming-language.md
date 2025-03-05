@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin is a modern, expressive programming language that runs on the Java Virtual Machine (JVM) and is widely used for Android development, backend services, and even multi-platform applications. One of its powerful features is the concept of **closures**, which play a crucial role in functional programming and higher-order functions. Closures allow developers to write cleaner, more concise, and more efficient code, especially when working with lambda expressions and anonymous functions.
 
-This blog post will provide a comprehensive overview of closures in Kotlin, explaining their purpose, how they work, and their practical applications. By the end of this article, you will have a deep understanding of closures and how to use them effectively in your Kotlin programs.
+This article will provide a comprehensive overview of closures in Kotlin, explaining their purpose, how they work, and their practical applications. By the end of this article, you will have a deep understanding of closures and how to use them effectively in your Kotlin programs.
 
 ## What is a Closure?
 
@@ -191,7 +191,7 @@ fun main() {
 
 Closures are a fundamental concept in Kotlin that enable functions to retain access to variables outside their immediate scope. By leveraging closures, developers can write more expressive and efficient code, particularly in functional programming and higher-order functions.
 
-In this blog post, we explored:
+In this article, we explored:
 
 - What closures are and how they work in Kotlin.
 - How to use lambda expressions and anonymous functions to create closures.

@@ -20,7 +20,7 @@ Confidential computing aims to secure data in use by leveraging hardware-based t
 
 
 
-In this blog post, we will explore the rise of confidential computing, its role in enhancing data privacy, its underlying technology, and how it is reshaping the future of data security.
+In this article, we will explore the rise of confidential computing, its role in enhancing data privacy, its underlying technology, and how it is reshaping the future of data security.
 
 
 #### Understanding Confidential Computing

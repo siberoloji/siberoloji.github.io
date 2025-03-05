@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin is a powerful and modern programming language that offers various tools and features to make development more efficient and readable. One such feature is **sequences**, which provide a flexible way to perform operations on collections efficiently. Unlike lists or arrays, sequences process elements lazily, which can significantly improve performance when working with large data sets.
 
-In this blog post, we will explore **sequence operations in Kotlin**, their advantages, how to use them effectively, and best practices to optimize performance.
+In this article, we will explore **sequence operations in Kotlin**, their advantages, how to use them effectively, and best practices to optimize performance.
 
 ## What Are Sequences in Kotlin?
 

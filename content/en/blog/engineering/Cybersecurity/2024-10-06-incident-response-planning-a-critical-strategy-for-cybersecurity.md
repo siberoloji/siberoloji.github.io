@@ -17,7 +17,7 @@ In an era where cyberattacks have become increasingly frequent and sophisticated
 
 
 
-In this blog post, we’ll explore the importance of incident response planning, the phases of an effective plan, and best practices for creating a resilient incident response framework. Whether you’re a small business or a large enterprise, incident response planning should be an essential part of your cybersecurity strategy.
+In this article, we’ll explore the importance of incident response planning, the phases of an effective plan, and best practices for creating a resilient incident response framework. Whether you’re a small business or a large enterprise, incident response planning should be an essential part of your cybersecurity strategy.
 
 
 

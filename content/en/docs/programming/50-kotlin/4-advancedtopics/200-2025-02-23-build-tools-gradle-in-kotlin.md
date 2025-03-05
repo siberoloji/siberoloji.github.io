@@ -25,7 +25,7 @@ When developing applications in Kotlin, managing dependencies, compiling source 
 
 Gradle is a powerful build automation tool that allows developers to define project configurations, manage dependencies, and create workflows using a concise scripting language. Initially, Gradle supported Groovy-based scripting, but as Kotlin gained traction, **Kotlin DSL (Domain-Specific Language) for Gradle** was introduced, offering a more type-safe and intuitive way to write build scripts.
 
-In this blog post, we'll explore the essentials of Gradle in Kotlin development, including its advantages, setup, project configuration, dependency management, and best practices.
+In this article, we'll explore the essentials of Gradle in Kotlin development, including its advantages, setup, project configuration, dependency management, and best practices.
 
 ---
 

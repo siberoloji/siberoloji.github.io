@@ -15,7 +15,7 @@ tags:
 ---
 **AlmaLinux 9**, a popular RHEL-based Linux distribution, is known for its stability, enterprise-ready environment, and security features. One powerful tool that administrators can leverage for managing AlmaLinux systems is the **Cockpit Admin Console**. Cockpit provides a web-based graphical interface that simplifies system monitoring and management tasks. Whether you're managing a single server or an entire fleet of systems, Cockpit makes essential tasks like managing storage, services, logs, and network settings more accessible.
 
-In this blog post, we'll cover how to activate and use the **Cockpit Admin Console** in AlmaLinux 9, walking you through everything from installation to its various use cases.
+In this article, we'll cover how to activate and use the **Cockpit Admin Console** in AlmaLinux 9, walking you through everything from installation to its various use cases.
 Table of Contents
 * Introduction to Cockpit in AlmaLinux 9
 

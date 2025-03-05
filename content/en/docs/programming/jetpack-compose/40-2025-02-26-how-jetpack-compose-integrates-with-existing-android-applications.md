@@ -18,7 +18,7 @@ keywords:
 ---
 Jetpack Compose is Google's modern UI toolkit for building native Android applications. Its declarative approach, built entirely in Kotlin, simplifies UI development compared to the traditional View-based system. However, many developers face the challenge of integrating Compose into their existing Android applications, which are often built using XML layouts and the View system. The good news is that Jetpack Compose is designed to coexist with legacy components, allowing for gradual migration without the need to rewrite entire applications.
 
-In this blog post, we'll explore the various ways Jetpack Compose integrates with existing Android applications, covering key aspects such as embedding Compose in Views, using Views inside Compose, state management, navigation, and performance considerations.
+In this article, we'll explore the various ways Jetpack Compose integrates with existing Android applications, covering key aspects such as embedding Compose in Views, using Views inside Compose, state management, navigation, and performance considerations.
 
 ---
 

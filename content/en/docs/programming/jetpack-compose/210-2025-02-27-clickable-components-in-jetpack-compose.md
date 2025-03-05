@@ -17,7 +17,7 @@ keywords:
   - Jetpack Compose
 ---
 
-User interaction forms the cornerstone of modern Android applications, and Jetpack Compose revolutionizes how developers implement interactive UI elements. At the heart of this interaction paradigm are clickable components that respond to user touches, taps, and gestures. This blog post explores the various approaches to creating clickable elements in Jetpack Compose, best practices for implementing them, and techniques to enhance user experience through proper feedback mechanisms.
+User interaction forms the cornerstone of modern Android applications, and Jetpack Compose revolutionizes how developers implement interactive UI elements. At the heart of this interaction paradigm are clickable components that respond to user touches, taps, and gestures. This article explores the various approaches to creating clickable elements in Jetpack Compose, best practices for implementing them, and techniques to enhance user experience through proper feedback mechanisms.
 
 ## Understanding Clickable Components in Compose
 

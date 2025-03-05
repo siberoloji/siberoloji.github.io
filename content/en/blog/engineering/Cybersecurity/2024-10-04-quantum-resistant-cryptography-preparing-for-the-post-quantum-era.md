@@ -14,7 +14,7 @@ tags:
 ---
 
 
-In the ever-evolving landscape of cybersecurity, a new challenge looms on the horizon: the advent of quantum computing. While quantum computers promise to revolutionize many fields, they also pose a significant threat to our current cryptographic systems. This blog post delves into the world of quantum-resistant cryptography, exploring why it's necessary and how we can prepare for the post-quantum era.
+In the ever-evolving landscape of cybersecurity, a new challenge looms on the horizon: the advent of quantum computing. While quantum computers promise to revolutionize many fields, they also pose a significant threat to our current cryptographic systems. This article delves into the world of quantum-resistant cryptography, exploring why it's necessary and how we can prepare for the post-quantum era.
 
 
 

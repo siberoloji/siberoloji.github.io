@@ -20,7 +20,7 @@ tags:
 ---
 When it comes to Linux distributions, **Arch Linux** stands out as one of the most customizable and flexible options. Known for its minimalist design and focus on simplicity, Arch Linux is a lightweight distribution that offers full control to its users. However, it is also often seen as a distribution that requires a higher level of expertise due to its hands-on installation process and lack of a graphical installer.
 
-While Arch Linux might seem daunting at first, it can be an incredibly rewarding experience for beginners who want to learn how Linux works from the ground up. In this blog post, we will guide you through what Arch Linux is, why it’s unique, its key features, and how to get started with it, even if you are new to Linux.
+While Arch Linux might seem daunting at first, it can be an incredibly rewarding experience for beginners who want to learn how Linux works from the ground up. In this article, we will guide you through what Arch Linux is, why it’s unique, its key features, and how to get started with it, even if you are new to Linux.
 
 ## What is Arch Linux?
 

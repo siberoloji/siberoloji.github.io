@@ -18,7 +18,7 @@ In an increasingly interconnected digital world, network security has become a p
 
 
 
-This blog post will explore the role of machine learning in network traffic anomaly detection, how it works, the most commonly used algorithms, and the benefits it brings to modern network security.
+This article will explore the role of machine learning in network traffic anomaly detection, how it works, the most commonly used algorithms, and the benefits it brings to modern network security.
 
 
 

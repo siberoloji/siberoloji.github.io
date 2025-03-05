@@ -18,7 +18,7 @@ featured_image: /images/kalilinux2.webp
 ---
 Kali Linux is a powerful penetration testing and security auditing distribution widely used by ethical hackers, cybersecurity professionals, and researchers. It provides a suite of tools that allow users to test and secure systems effectively. One such tool in the Kali Linux arsenal is "Certi," a lesser-known but highly useful utility for handling and analyzing digital certificates.
 
-In this blog post, we will explore Certi in depth, understanding its purpose, how it fits into Kali Linux, its installation process, and practical use cases. Whether you're an aspiring ethical hacker or a seasoned cybersecurity professional, understanding Certi can add another powerful tool to your security testing repertoire.
+In this article, we will explore Certi in depth, understanding its purpose, how it fits into Kali Linux, its installation process, and practical use cases. Whether you're an aspiring ethical hacker or a seasoned cybersecurity professional, understanding Certi can add another powerful tool to your security testing repertoire.
 
 ## What is Certi in Kali Linux?
 

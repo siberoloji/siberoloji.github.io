@@ -21,7 +21,7 @@ keywords:
 ---
 In today’s hyperconnected world, social media platforms have become rich repositories of public information. With billions of active users, platforms like Facebook, Twitter, Instagram, LinkedIn, and TikTok host vast amounts of data that can be publicly accessed for various purposes. One such purpose is **Open Source Intelligence (OSINT)**, where publicly available information is collected, analyzed, and used to derive actionable insights, often for security, investigative, or corporate intelligence purposes.
 
-This blog post delves into the role of **data extraction from public profiles** as part of OSINT in social media analysis. We will explore what this process entails, the types of data that can be extracted, key tools and techniques, and the ethical considerations surrounding the practice.
+This article delves into the role of **data extraction from public profiles** as part of OSINT in social media analysis. We will explore what this process entails, the types of data that can be extracted, key tools and techniques, and the ethical considerations surrounding the practice.
 
 ## What is OSINT?
 

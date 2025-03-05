@@ -5,7 +5,7 @@ title:  'Monitoring employee LinkedIn profiles for OSINT'
 date: '2024-11-01T21:01:23+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post explores the techniques, tools, and ethical considerations involved in monitoring employee LinkedIn profiles for OSINT.' 
+description:  'This article explores the techniques, tools, and ethical considerations involved in monitoring employee LinkedIn profiles for OSINT.' 
  
 url:  /monitoring-employee-linkedin-profiles-for-osint/
 featured_image: /images/osint1.webp
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-Monitoring employee LinkedIn profiles for Open Source Intelligence (OSINT) is a critical practice in today's digital landscape. As organizations increasingly rely on social media platforms for professional networking, the information shared on these platforms can be leveraged for both beneficial and malicious purposes. This blog post explores the techniques, tools, and ethical considerations involved in monitoring employee LinkedIn profiles for OSINT.
+Monitoring employee LinkedIn profiles for Open Source Intelligence (OSINT) is a critical practice in today's digital landscape. As organizations increasingly rely on social media platforms for professional networking, the information shared on these platforms can be leveraged for both beneficial and malicious purposes. This article explores the techniques, tools, and ethical considerations involved in monitoring employee LinkedIn profiles for OSINT.
 
 
 

@@ -21,7 +21,7 @@ In computer science, algorithm design is a critical area that helps solve comple
 
 
 
-In this blog post, we will explore the divide-and-conquer method in detail, how it works, its advantages, common applications, and examples of algorithms that rely on this strategy.
+In this article, we will explore the divide-and-conquer method in detail, how it works, its advantages, common applications, and examples of algorithms that rely on this strategy.
 
 
 

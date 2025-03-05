@@ -5,7 +5,7 @@ title:  'AESFix: The Kali Linux Tool for Recovering AES Keys from Memory'
 date: '2024-10-24T12:34:45+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'In this blog post, we will take an in-depth look at AESFix, its function, its relevance in digital forensics, how to use it effectively on Kali Linux, and practical scenarios where this tool proves indispensable.' 
+description:  'In this article, we will take an in-depth look at AESFix, its function, its relevance in digital forensics, how to use it effectively on Kali Linux, and practical scenarios where this tool proves indispensable.' 
  
 url:  /aesfix-the-kali-linux-tool-for-recovering-aes-keys-from-memory/
 featured_image: /images/kalilinux2.webp
@@ -17,7 +17,7 @@ tags:
 ---
 When it comes to digital forensics and penetration testing, particularly in the realm of encryption analysis, **AESFix** is a specialized tool that helps recover Advanced Encryption Standard (AES) keys from corrupted or partially overwritten memory images. As a part of the Kali Linux distribution, AESFix plays a crucial role in cracking encryption when there’s evidence of AES being used, which is especially valuable for forensic analysts dealing with encrypted systems.
 
-In this blog post, we will take an in-depth look at <a href="https://citp.princeton.edu/our-work/memory/code/" target="_blank" rel="noopener" title="">AESFix</a>, its function, its relevance in digital forensics, how to use it effectively on Kali Linux, and practical scenarios where this tool proves indispensable.
+In this article, we will take an in-depth look at <a href="https://citp.princeton.edu/our-work/memory/code/" target="_blank" rel="noopener" title="">AESFix</a>, its function, its relevance in digital forensics, how to use it effectively on Kali Linux, and practical scenarios where this tool proves indispensable.
 #### Table of Contents
 * Introduction to AESFix
 

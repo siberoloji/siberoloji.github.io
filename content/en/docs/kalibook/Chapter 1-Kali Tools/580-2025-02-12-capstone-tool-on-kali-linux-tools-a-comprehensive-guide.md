@@ -18,7 +18,7 @@ featured_image: /images/kalilinux2.webp
 ---
 ## Introduction
 
-Kali Linux is a powerful penetration testing and security auditing distribution that comes equipped with numerous tools to assist cybersecurity professionals, ethical hackers, and security researchers. Among these tools is **capstone-tool**, an advanced disassembly framework designed for reverse engineering applications. This blog post explores capstone-tool in-depth, its functionalities, installation on Kali Linux, and its various use cases.
+Kali Linux is a powerful penetration testing and security auditing distribution that comes equipped with numerous tools to assist cybersecurity professionals, ethical hackers, and security researchers. Among these tools is **capstone-tool**, an advanced disassembly framework designed for reverse engineering applications. This article explores capstone-tool in-depth, its functionalities, installation on Kali Linux, and its various use cases.
 
 ## What is Capstone-Tool?
 

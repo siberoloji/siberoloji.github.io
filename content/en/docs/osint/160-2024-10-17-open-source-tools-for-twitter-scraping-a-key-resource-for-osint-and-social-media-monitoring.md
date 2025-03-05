@@ -21,7 +21,7 @@ keywords:
 ---
 In the digital age, social media platforms like Twitter serve as a treasure trove of real-time data, making them invaluable for open-source intelligence (OSINT) and social media monitoring. Whether it's tracking public sentiment, uncovering trends, or gathering information on breaking news and geopolitical events, Twitter data offers deep insights. However, accessing and analyzing this information can be challenging due to platform limitations, privacy policies, and the sheer volume of data. This is where open-source tools for Twitter scraping come into play.
 
-Twitter scraping allows users to collect data from public Twitter accounts, tweets, and associated metadata without relying on the Twitter API, which often has strict usage limits and other restrictions. In this blog post, we will explore several open-source tools designed for Twitter scraping, and how they can be integrated into OSINT (Open-Source Intelligence) workflows and social media monitoring tasks.
+Twitter scraping allows users to collect data from public Twitter accounts, tweets, and associated metadata without relying on the Twitter API, which often has strict usage limits and other restrictions. In this article, we will explore several open-source tools designed for Twitter scraping, and how they can be integrated into OSINT (Open-Source Intelligence) workflows and social media monitoring tasks.
 
 #### Why Scrape Twitter for OSINT?
 

@@ -20,7 +20,7 @@ featured_image: /images/kalilinux2.webp
 
 In the world of cybersecurity and penetration testing, attacking Active Directory (AD) environments is a key focus for ethical hackers and security professionals. Microsoft Active Directory is widely used by organizations to manage users, computers, and resources, making it a prime target for adversaries. Kali Linux, a premier penetration testing distribution, offers a variety of tools for assessing AD security. Among these tools, **Certipy-AD** has emerged as a crucial utility for exploiting AD Certificate Services.
 
-This blog post will explore **Certipy-AD**, its functionalities, installation, and how to use it effectively in penetration testing scenarios on Kali Linux.
+This article will explore **Certipy-AD**, its functionalities, installation, and how to use it effectively in penetration testing scenarios on Kali Linux.
 
 ---
 

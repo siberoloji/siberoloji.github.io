@@ -19,7 +19,7 @@ keywords:
   - Lambda syntax
 featured_image: /images/kotlin-1.png
 ---
-Kotlin, developed by JetBrains, is a modern programming language that runs on the Java Virtual Machine (JVM) and is fully interoperable with Java. One of the most powerful features of Kotlin is its support for functional programming, including lambda expressions. Lambda expressions, or simply lambdas, allow for concise and expressive code, making development faster and more readable. In this blog post, we will delve deep into the lambda syntax in Kotlin, exploring its structure, usage, and best practices.
+Kotlin, developed by JetBrains, is a modern programming language that runs on the Java Virtual Machine (JVM) and is fully interoperable with Java. One of the most powerful features of Kotlin is its support for functional programming, including lambda expressions. Lambda expressions, or simply lambdas, allow for concise and expressive code, making development faster and more readable. In this article, we will delve deep into the lambda syntax in Kotlin, exploring its structure, usage, and best practices.
 
 ## What is a Lambda Expression?
 

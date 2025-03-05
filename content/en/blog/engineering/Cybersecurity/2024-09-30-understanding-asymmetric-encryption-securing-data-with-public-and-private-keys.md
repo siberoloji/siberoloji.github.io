@@ -17,7 +17,7 @@ In the world of data security, encryption plays a crucial role in protecting sen
 
 
 
-Asymmetric encryption provides a robust and versatile solution for securing digital communication, ensuring confidentiality, integrity, and authentication. This blog post will dive into the details of asymmetric encryption, how it works, its advantages, challenges, and its applications in modern cybersecurity.
+Asymmetric encryption provides a robust and versatile solution for securing digital communication, ensuring confidentiality, integrity, and authentication. This article will dive into the details of asymmetric encryption, how it works, its advantages, challenges, and its applications in modern cybersecurity.
 **What is Asymmetric Encryption?**
 
 

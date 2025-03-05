@@ -4,7 +4,7 @@ weight: 180
 title: "Promoting Your Podcast: Day 18"
 linkTitle: Promoting Your Podcast
 translationKey: promoting-your-podcast
-description: In this blog post, we explore various strategies for promoting your podcast and provide actionable insights for creating a comprehensive promotional plan.
+description: In this article, we explore various strategies for promoting your podcast and provide actionable insights for creating a comprehensive promotional plan.
 date: 2024-10-13T21:46:25+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /promoting-your-podcast-day-18/

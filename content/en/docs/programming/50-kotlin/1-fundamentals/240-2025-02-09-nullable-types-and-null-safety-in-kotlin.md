@@ -4,7 +4,7 @@ title: Nullable Types and Null Safety in Kotlin
 linkTitle: Nullable Types and Null Safety
 translationKey: nullable-types-and-null-safety-in-kotlin
 weight: 240
-description: this blog post explores nullable types, null safety, and best practices for handling nullability in Kotlin
+description: This article explores nullable types, null safety, and best practices for handling nullability in Kotlin
 date: 2025-02-09
 url: nullable-types-and-null-safety-in-kotlin
 tags:
@@ -19,7 +19,7 @@ keywords:
   - Null Safety
 featured_image: /images/kotlin-1.png
 ---
-Null references, often referred to as the "billion-dollar mistake," have been a source of runtime errors and bugs in many programming languages. Kotlin, a modern and expressive programming language, addresses this issue head-on with its robust **null safety** features. By introducing **nullable types** and a suite of tools to handle them, Kotlin ensures that null-related errors are caught at compile time rather than at runtime. This blog post explores nullable types, null safety, and best practices for handling nullability in Kotlin.
+Null references, often referred to as the "billion-dollar mistake," have been a source of runtime errors and bugs in many programming languages. Kotlin, a modern and expressive programming language, addresses this issue head-on with its robust **null safety** features. By introducing **nullable types** and a suite of tools to handle them, Kotlin ensures that null-related errors are caught at compile time rather than at runtime. This article explores nullable types, null safety, and best practices for handling nullability in Kotlin.
 
 ---
 

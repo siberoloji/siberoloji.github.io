@@ -1,6 +1,6 @@
 ---
 title: Creating and Using Non-Root User in Linux
-description: In this blog post, we'll explore the process of creating and using non-root user in Linux.
+description: In this article, we'll explore the process of creating and using non-root user in Linux.
 date: 2024-11-15T18:54:24.613Z
 draft: false
 tags:
@@ -20,7 +20,7 @@ url: creating-non-root-user-linux
 
 When working in a Linux environment, it's important to understand the concept of user privileges and the distinction between the root user and non-root users. The root user, also known as the superuser, has the highest level of access and control over the system. While the root user can perform any action, including potentially destructive ones, it's generally considered best practice to avoid logging in and performing day-to-day tasks as the root user.
 
-Instead, Linux system administrators and users should create and utilize non-root user accounts for most activities. Non-root users have limited permissions and access, which helps prevent accidental or unauthorized modifications to the system. In this blog post, we'll explore the process of creating and using non-root user accounts in Linux.
+Instead, Linux system administrators and users should create and utilize non-root user accounts for most activities. Non-root users have limited permissions and access, which helps prevent accidental or unauthorized modifications to the system. In this article, we'll explore the process of creating and using non-root user accounts in Linux.
 
 ## Understanding User Privileges in Linux
 
@@ -136,4 +136,4 @@ Using non-root user accounts offers several benefits:
 
 ## Conclusion
 
-In this blog post, we've explored the importance of creating and using non-root user accounts in a Linux environment. By understanding user privileges, creating non-root user accounts, and properly managing their permissions, you can enhance the security, stability, and maintainability of your Linux systems. Remember, the principle of least privilege is a fundamental security best practice, and using non-root user accounts is a crucial part of that approach.
+In this article, we've explored the importance of creating and using non-root user accounts in a Linux environment. By understanding user privileges, creating non-root user accounts, and properly managing their permissions, you can enhance the security, stability, and maintainability of your Linux systems. Remember, the principle of least privilege is a fundamental security best practice, and using non-root user accounts is a crucial part of that approach.

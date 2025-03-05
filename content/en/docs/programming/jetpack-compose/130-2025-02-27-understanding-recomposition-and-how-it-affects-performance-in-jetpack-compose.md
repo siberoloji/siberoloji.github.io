@@ -19,7 +19,7 @@ keywords:
 ---
 Jetpack Compose is Google's modern UI toolkit for Android development, designed to simplify UI creation with declarative programming. One of the core concepts in Jetpack Compose is **recomposition**, which refers to the process of re-executing composable functions when state changes. While recomposition allows UI to stay reactive and dynamic, it can also impact performance if not managed properly. Understanding recomposition and how to optimize it is crucial for creating efficient Jetpack Compose applications.
 
-In this blog post, we will explore the concept of recomposition, how it affects performance, common pitfalls that lead to unnecessary recompositions, and best practices for optimizing UI performance in Jetpack Compose.
+In this article, we will explore the concept of recomposition, how it affects performance, common pitfalls that lead to unnecessary recompositions, and best practices for optimizing UI performance in Jetpack Compose.
 
 ## What Is Recomposition in Jetpack Compose?
 

@@ -17,7 +17,7 @@ The advent of quantum computing is set to revolutionize technology in unpreceden
 
 
 
-In this blog post, we will explore what quantum networks are, how they work, the security challenges they face, and the opportunities they offer for building more secure communication systems.
+In this article, we will explore what quantum networks are, how they work, the security challenges they face, and the opportunities they offer for building more secure communication systems.
 What is the Quantum Internet?
 
 

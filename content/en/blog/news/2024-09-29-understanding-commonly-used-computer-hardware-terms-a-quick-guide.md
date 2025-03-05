@@ -17,7 +17,7 @@ tags:
 ---
 In the world of technology, computer hardware plays a critical role in how we interact with our devices. Whether you’re a tech enthusiast, a casual user, or someone working in IT, understanding the common hardware terms can significantly improve your overall knowledge and experience with computers. However, the tech world is filled with acronyms and jargon that can often seem overwhelming.
 
-This blog post provides a list of frequently used computer hardware expressions, along with short explanations to help demystify some of the key terms. These explanations are designed to give you a quick, easy-to-understand overview of various hardware components and their roles in modern computing.
+This article provides a list of frequently used computer hardware expressions, along with short explanations to help demystify some of the key terms. These explanations are designed to give you a quick, easy-to-understand overview of various hardware components and their roles in modern computing.
 
 1. **USB (Universal Serial Bus)**
 

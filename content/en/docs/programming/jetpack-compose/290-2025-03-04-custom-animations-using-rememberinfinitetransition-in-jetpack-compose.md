@@ -18,7 +18,7 @@ keywords:
   - Compose
   - Animation
 ---
-Jetpack Compose has revolutionized Android UI development with its declarative approach, making it easier to create complex and dynamic user interfaces. One of its powerful features is the ability to create animations seamlessly. In this blog post, we'll dive into `rememberInfiniteTransition`, a composable function that allows you to create continuous, smooth animations that loop indefinitely.
+Jetpack Compose has revolutionized Android UI development with its declarative approach, making it easier to create complex and dynamic user interfaces. One of its powerful features is the ability to create animations seamlessly. In this article, we'll dive into `rememberInfiniteTransition`, a composable function that allows you to create continuous, smooth animations that loop indefinitely.
 
 ## Understanding `rememberInfiniteTransition`
 

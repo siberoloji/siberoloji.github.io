@@ -17,7 +17,7 @@ The rise of cloud-native architecture has fundamentally changed how applications
 
 
 
-In this blog post, we’ll explore the unique security considerations of cloud-native architectures, focusing on microservices and serverless applications, and the best practices to protect them.
+In this article, we’ll explore the unique security considerations of cloud-native architectures, focusing on microservices and serverless applications, and the best practices to protect them.
 ## Introduction to Cloud-Native Architecture
 
 

@@ -5,7 +5,7 @@ title:  'TCP vs. UDP: Differences and Use Cases'
 date: '2024-11-01T14:23:30+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will explore the characteristics of TCP and UDP, compare their functionalities, and provide examples of scenarios where each protocol is best suited.' 
+description:  'This article will explore the characteristics of TCP and UDP, compare their functionalities, and provide examples of scenarios where each protocol is best suited.' 
  
 url:  /tcp-vs-udp-differences-and-use-cases/
 featured_image: /images/pexels-photo-4682189.jpeg
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for data transmission over the Internet. Understanding their differences, advantages, and appropriate use cases is crucial for anyone involved in network technology or application development. This blog post will explore the characteristics of TCP and UDP, compare their functionalities, and provide examples of scenarios where each protocol is best suited.
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for data transmission over the Internet. Understanding their differences, advantages, and appropriate use cases is crucial for anyone involved in network technology or application development. This article will explore the characteristics of TCP and UDP, compare their functionalities, and provide examples of scenarios where each protocol is best suited.
 
 
 

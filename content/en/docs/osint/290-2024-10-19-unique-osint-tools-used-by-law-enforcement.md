@@ -5,7 +5,7 @@ title:  'Unique OSINT Tools Used by Law Enforcement'
 date: '2024-10-19T20:37:05+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post explores the significance of OSINT tools in law enforcement, the methodologies employed, and the various tools that facilitate its application.' 
+description:  'This article explores the significance of OSINT tools in law enforcement, the methodologies employed, and the various tools that facilitate its application.' 
  
 url:  /unique-osint-tools-used-by-law-enforcement/
  
@@ -20,7 +20,7 @@ tags:
 ---
 
 
-Open Source Intelligence (OSINT) has emerged as a pivotal tool for law enforcement agencies worldwide, enabling them to gather actionable intelligence from publicly available data. This blog post explores the significance of OSINT tools in law enforcement, the methodologies employed, and the various tools that facilitate its application.
+Open Source Intelligence (OSINT) has emerged as a pivotal tool for law enforcement agencies worldwide, enabling them to gather actionable intelligence from publicly available data. This article explores the significance of OSINT tools in law enforcement, the methodologies employed, and the various tools that facilitate its application.
 
 
 

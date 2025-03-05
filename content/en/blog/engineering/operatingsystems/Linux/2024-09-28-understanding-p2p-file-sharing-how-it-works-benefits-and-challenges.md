@@ -17,7 +17,7 @@ tags:
 ---
 In the digital world, **file sharing** has become a fundamental activity. Whether it's sharing photos, documents, or even large media files like movies and software, most people regularly engage in some form of file transfer. One popular method for file sharing is **P2P file sharing** or **Peer-to-Peer file sharing**. Over the years, P2P technology has transformed how we exchange files online, offering both remarkable advantages and some notable risks.
 
-This blog post will explore:
+This article will explore:
 * What is P2P file sharing?
 
 * How P2P file sharing works

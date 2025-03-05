@@ -23,7 +23,7 @@ keywords:
 
 In today’s digital age, the vast and ever-evolving landscape of social media offers invaluable insights into public opinions, emerging trends, and global sentiments. Organizations, government agencies, and even private individuals are leveraging these platforms to extract actionable intelligence. One significant approach within this field is **Open Source Intelligence (OSINT)**, which involves collecting and analyzing publicly available information to gain a better understanding of a situation or to enhance decision-making processes.
 
-Sentiment analysis, which focuses on understanding emotions and attitudes within posts and comments, has emerged as a key tool for OSINT in social media analysis. This method enables analysts to sift through the sheer volume of online conversations, revealing valuable patterns, insights, and potentially uncovering threats or trends that would otherwise go unnoticed. In this blog post, we’ll explore what sentiment analysis is, how it applies to OSINT, and the key techniques and tools involved in conducting sentiment analysis on social media data.
+Sentiment analysis, which focuses on understanding emotions and attitudes within posts and comments, has emerged as a key tool for OSINT in social media analysis. This method enables analysts to sift through the sheer volume of online conversations, revealing valuable patterns, insights, and potentially uncovering threats or trends that would otherwise go unnoticed. In this article, we’ll explore what sentiment analysis is, how it applies to OSINT, and the key techniques and tools involved in conducting sentiment analysis on social media data.
 
 ## What is Sentiment Analysis?
 

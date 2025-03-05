@@ -20,7 +20,7 @@ keywords:
 
 Jetpack Compose is Google's modern UI toolkit designed to simplify and accelerate Android UI development. Unlike the traditional XML-based layouts, Jetpack Compose uses a declarative programming model that makes UI creation more intuitive and flexible. Whether you're a beginner or an experienced Android developer, getting started with Jetpack Compose can significantly enhance your app development workflow.
 
-In this blog post, we'll walk through the process of creating a new Jetpack Compose project, from setting up the development environment to writing your first Composable function. By the end, you'll have a basic understanding of how to start building UIs with Jetpack Compose.
+In this article, we'll walk through the process of creating a new Jetpack Compose project, from setting up the development environment to writing your first Composable function. By the end, you'll have a basic understanding of how to start building UIs with Jetpack Compose.
 
 ## Prerequisites
 

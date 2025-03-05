@@ -17,7 +17,7 @@ keywords:
   - Jetpack Compose
   - Material Design
 ---
-Jetpack Compose, Google's modern UI toolkit for Android, has revolutionized the way developers build native applications. One of the key aspects of crafting an intuitive and visually appealing Android UI is Material Design. Material Design provides a comprehensive framework for designing user interfaces that are consistent, accessible, and aesthetically pleasing. In this blog post, we’ll explore Material Design principles in Jetpack Compose, understand its core concepts, and learn how to effectively implement them in your Android applications.
+Jetpack Compose, Google's modern UI toolkit for Android, has revolutionized the way developers build native applications. One of the key aspects of crafting an intuitive and visually appealing Android UI is Material Design. Material Design provides a comprehensive framework for designing user interfaces that are consistent, accessible, and aesthetically pleasing. In this article, we’ll explore Material Design principles in Jetpack Compose, understand its core concepts, and learn how to effectively implement them in your Android applications.
 
 ## What is Material Design?
 

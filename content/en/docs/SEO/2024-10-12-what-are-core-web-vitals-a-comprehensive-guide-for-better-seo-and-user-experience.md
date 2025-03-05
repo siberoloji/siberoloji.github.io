@@ -13,7 +13,7 @@ tags:
 ---
 In today’s digital landscape, website performance is more important than ever. Users expect fast, seamless experiences, and search engines are paying attention. In 2020, Google introduced a set of metrics known as **Core Web Vitals** to help site owners measure and improve key aspects of their website's user experience. These metrics focus on crucial elements like loading time, interactivity, and visual stability—factors that have a direct impact on both user satisfaction and search engine rankings.
 
-Understanding and optimizing for Core Web Vitals is essential if you want to improve your site’s performance and climb higher on search engine results pages (SERPs). In this blog post, we’ll dive into what Core Web Vitals are, why they matter for SEO, how they are measured, and strategies for improving your website's scores.
+Understanding and optimizing for Core Web Vitals is essential if you want to improve your site’s performance and climb higher on search engine results pages (SERPs). In this article, we’ll dive into what Core Web Vitals are, why they matter for SEO, how they are measured, and strategies for improving your website's scores.
 
 Table of Contents:
 * **What Are Core Web Vitals?**

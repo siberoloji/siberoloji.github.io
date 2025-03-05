@@ -22,7 +22,7 @@ As AI systems become more complex, particularly with the rise of deep learning a
 
 
 
-In this blog post, we will explore the concepts of AI explainability and transparency, the challenges and ethical concerns surrounding them, and the best practices for fostering trust in AI systems through more interpretable models.
+In this article, we will explore the concepts of AI explainability and transparency, the challenges and ethical concerns surrounding them, and the best practices for fostering trust in AI systems through more interpretable models.
 
 
 

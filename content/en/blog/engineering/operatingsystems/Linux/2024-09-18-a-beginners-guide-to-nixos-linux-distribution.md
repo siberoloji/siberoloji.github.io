@@ -17,7 +17,7 @@ tags:
     - 'linux distros'
     - nixos
 ---
-When it comes to Linux distributions, the options are numerous. Whether you’re looking for something user-friendly like Ubuntu or highly customizable like Arch, there’s a flavor for every type of user. However, there’s a Linux distribution that stands out due to its unique approach to package management and system configuration—**NixOS**. While it’s not as widely known as some other distros, NixOS Linux offers an innovative way to manage your system with a focus on reproducibility and isolation. In this blog post, we’ll explore NixOS and explain why beginners might find it interesting, despite its initially steep learning curve.
+When it comes to Linux distributions, the options are numerous. Whether you’re looking for something user-friendly like Ubuntu or highly customizable like Arch, there’s a flavor for every type of user. However, there’s a Linux distribution that stands out due to its unique approach to package management and system configuration—**NixOS**. While it’s not as widely known as some other distros, NixOS Linux offers an innovative way to manage your system with a focus on reproducibility and isolation. In this article, we’ll explore NixOS and explain why beginners might find it interesting, despite its initially steep learning curve.
 
 ## What is NixOS?
 

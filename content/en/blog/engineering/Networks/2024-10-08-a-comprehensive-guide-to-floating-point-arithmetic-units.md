@@ -22,7 +22,7 @@ In the world of modern computing, handling numbers with extreme precision is cri
 
 
 
-This blog post provides an in-depth look at floating-point arithmetic units, how they work, their role in computing systems, and why they are essential for a wide range of applications.
+This article provides an in-depth look at floating-point arithmetic units, how they work, their role in computing systems, and why they are essential for a wide range of applications.
 What is Floating-Point Arithmetic?
 
 

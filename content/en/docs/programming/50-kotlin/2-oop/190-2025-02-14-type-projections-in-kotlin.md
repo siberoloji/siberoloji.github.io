@@ -20,7 +20,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin is a modern programming language that is widely used for Android development, backend services, and cross-platform applications. One of its key strengths is its robust type system, which includes features like null safety, type inference, and generics.
 
-When working with generics in Kotlin, we often encounter situations where we need to restrict how types are used. This is where **type projections** come into play. Type projections provide a way to enforce type safety while still allowing flexibility in working with generic classes. In this blog post, we will explore type projections in Kotlin, their use cases, and how they compare to Java's approach to generics.
+When working with generics in Kotlin, we often encounter situations where we need to restrict how types are used. This is where **type projections** come into play. Type projections provide a way to enforce type safety while still allowing flexibility in working with generic classes. In this article, we will explore type projections in Kotlin, their use cases, and how they compare to Java's approach to generics.
 
 ## Understanding Generics in Kotlin
 

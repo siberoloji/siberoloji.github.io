@@ -13,7 +13,7 @@ tags:
 ---
 
 
-In an era where cyber threats have become increasingly sophisticated, organizations must implement effective security measures to safeguard their network systems. One such measure is an **Intrusion Detection System (IDS)**, a critical component of modern network security. This blog post will explore **what an IDS is**, its types, how it works, and how it can be used to protect network systems from unauthorized access and cyberattacks.
+In an era where cyber threats have become increasingly sophisticated, organizations must implement effective security measures to safeguard their network systems. One such measure is an **Intrusion Detection System (IDS)**, a critical component of modern network security. This article will explore **what an IDS is**, its types, how it works, and how it can be used to protect network systems from unauthorized access and cyberattacks.
 What is an Intrusion Detection System (IDS)?
 
 

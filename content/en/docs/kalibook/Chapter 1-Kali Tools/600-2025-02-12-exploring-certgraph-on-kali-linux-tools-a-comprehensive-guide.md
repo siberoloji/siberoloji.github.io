@@ -4,7 +4,7 @@ title: Certgraph on Kali Linux Tools
 linkTitle: certgraph
 translationKey: certgraph-on-kali-linux-tools
 weight: 600
-description: This blog post delves into Certgraph, exploring its features, installation, while also discussing its real-world applications in penetration testing.
+description: This article delves into Certgraph, exploring its features, installation, while also discussing its real-world applications in penetration testing.
 date: 2025-02-12
 url: certgraph-on-kali-linux-tools
 tags:
@@ -20,7 +20,7 @@ featured_image: /images/kalilinux2.webp
 
 Kali Linux is one of the most widely used penetration testing distributions, packed with powerful tools designed for cybersecurity professionals. Among its vast toolkit is **Certgraph**, a tool used for certificate transparency (CT) log analysis, allowing users to enumerate subdomains and gain insights into SSL/TLS certificates. This makes it a valuable asset for reconnaissance and security assessments.
 
-In this blog post, we will delve deep into Certgraph, exploring its functionality, installation, and practical applications. Whether you're a penetration tester, a security researcher, or someone interested in ethical hacking, this guide will equip you with the knowledge to leverage Certgraph effectively.
+In this article, we will delve deep into Certgraph, exploring its functionality, installation, and practical applications. Whether you're a penetration tester, a security researcher, or someone interested in ethical hacking, this guide will equip you with the knowledge to leverage Certgraph effectively.
 
 ## What is Certgraph?
 

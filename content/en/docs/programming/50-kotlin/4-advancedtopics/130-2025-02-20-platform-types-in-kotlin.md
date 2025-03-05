@@ -4,7 +4,7 @@ title: Platform Types in Kotlin
 linkTitle: Platform Types
 translationKey: platform-types-in-kotlin
 weight: 130
-description: This blog post explores platform types, their behavior, and best practices for handling them effectively
+description: This article explores platform types, their behavior, and best practices for handling them effectively
 date: 2025-02-20
 url: platform-types-in-kotlin
 tags:

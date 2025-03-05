@@ -19,7 +19,7 @@ tags:
 keywords:
     - data collection
 ---
-Real-time data collection from live streams has become a pivotal aspect of Open Source Intelligence (OSINT) tools, especially for social media monitoring. This blog post will delve into the intricacies of real-time data collection, its significance in OSINT, the technologies involved, and practical applications for social media monitoring.
+Real-time data collection from live streams has become a pivotal aspect of Open Source Intelligence (OSINT) tools, especially for social media monitoring. This article will delve into the intricacies of real-time data collection, its significance in OSINT, the technologies involved, and practical applications for social media monitoring.
 
 ## Understanding Real-Time Data Collection
 

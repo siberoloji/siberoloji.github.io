@@ -20,7 +20,7 @@ url: null
 ---
 The **BIND DNS server** is a widely-used, highly flexible software package for managing DNS on Linux systems. AlmaLinux, an open-source enterprise Linux distribution, is a popular choice for server environments. One of BIND's advanced features is the **view statement**, which allows administrators to serve different DNS responses based on the client’s IP address or other criteria. This capability is particularly useful for split DNS configurations, where internal and external users receive different DNS records.
 
-In this blog post, we’ll cover the essentials of setting up and using the view statement in BIND on AlmaLinux, step by step. By the end, you’ll be equipped to configure your server to manage DNS queries with fine-grained control.
+In this article, we’ll cover the essentials of setting up and using the view statement in BIND on AlmaLinux, step by step. By the end, you’ll be equipped to configure your server to manage DNS queries with fine-grained control.
 
 ---
 

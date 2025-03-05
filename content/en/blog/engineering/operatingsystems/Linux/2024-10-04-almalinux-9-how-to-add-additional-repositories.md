@@ -15,7 +15,7 @@ tags:
 ---
 **AlmaLinux 9** is a powerful, enterprise-level Linux distribution that offers stability, security, and reliability. One of the key aspects of managing a Linux system like AlmaLinux is installing and updating software. While AlmaLinux comes with a default set of repositories that provide essential packages, there may be times when you need to install software that isn't available in the default repositories.
 
-Adding **additional repositories** can provide access to a wider range of software, giving system administrators and users more flexibility and options. In this blog post, we'll walk through the process of adding third-party or custom repositories to AlmaLinux 9, covering topics such as enabling extra repositories, verifying GPG keys, and managing repository configurations.
+Adding **additional repositories** can provide access to a wider range of software, giving system administrators and users more flexibility and options. In this article, we'll walk through the process of adding third-party or custom repositories to AlmaLinux 9, covering topics such as enabling extra repositories, verifying GPG keys, and managing repository configurations.
 Table of Contents
 * Introduction to Repositories in AlmaLinux 9
 

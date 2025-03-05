@@ -20,7 +20,7 @@ keywords:
   - secondary constructor
 featured_image: /images/kotlin-1.png
 ---
-Kotlin is a modern programming language that offers many features to make development more efficient and expressive. One of the key aspects of Kotlin's object-oriented programming capabilities is its support for **constructors in classes** and **properties**. Understanding **primary and secondary constructors** is essential for designing classes effectively. This blog post will provide an in-depth look into these concepts, how they differ, and when to use them.
+Kotlin is a modern programming language that offers many features to make development more efficient and expressive. One of the key aspects of Kotlin's object-oriented programming capabilities is its support for **constructors in classes** and **properties**. Understanding **primary and secondary constructors** is essential for designing classes effectively. This article will provide an in-depth look into these concepts, how they differ, and when to use them.
 
 ## Understanding Classes and Constructors in Kotlin
 

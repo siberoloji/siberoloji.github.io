@@ -1,7 +1,7 @@
 ---
 title: How to Use Dockerfiles with Podman on AlmaLinux
 linkTitle: Dockerfiles with Podman
-description: In this blog post, we’ll dive into the steps to use Dockerfiles with Podman on AlmaLinux.
+description: In this article, we’ll dive into the steps to use Dockerfiles with Podman on AlmaLinux.
 date: 2024-12-11
 weight: 580
 draft: false
@@ -18,7 +18,7 @@ keywords:
 featured_image: /images/almalinux.webp
 url: dockerfiles-podman-almalinux
 ---
-Podman is an increasingly popular alternative to Docker for managing containers, and it is fully compatible with OCI (Open Container Initiative) standards. If you’re running AlmaLinux, a community-supported, enterprise-grade Linux distribution, you can leverage Podman to build, manage, and deploy containers efficiently using Dockerfiles. In this blog post, we’ll dive into the steps to use Dockerfiles with Podman on AlmaLinux.
+Podman is an increasingly popular alternative to Docker for managing containers, and it is fully compatible with OCI (Open Container Initiative) standards. If you’re running AlmaLinux, a community-supported, enterprise-grade Linux distribution, you can leverage Podman to build, manage, and deploy containers efficiently using Dockerfiles. In this article, we’ll dive into the steps to use Dockerfiles with Podman on AlmaLinux.
 
 ---
 

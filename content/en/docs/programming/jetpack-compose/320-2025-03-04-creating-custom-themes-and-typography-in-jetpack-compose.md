@@ -18,7 +18,7 @@ keywords:
   - Custom Themes
   - Typography
 ---
-Jetpack Compose, Android’s modern toolkit for building native UIs, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. One of the key aspects of building a cohesive and visually appealing app is theming and typography. In this blog post, we’ll dive deep into creating custom themes and typography in Jetpack Compose, exploring how to tailor these elements to fit your app’s unique design language.
+Jetpack Compose, Android’s modern toolkit for building native UIs, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. One of the key aspects of building a cohesive and visually appealing app is theming and typography. In this article, we’ll dive deep into creating custom themes and typography in Jetpack Compose, exploring how to tailor these elements to fit your app’s unique design language.
 
 ---
 

@@ -4,7 +4,7 @@ title: "CeWL on Kali Linux Tools: A Powerful Custom Wordlist Generator"
 linkTitle: cewl
 translationKey: cewl-on-kali-linux-tools-a-powerful-custom-wordlist-generator
 weight: 630
-description: In this blog post, we'll explore CeWL, a powerful tool for generating custom wordlists from websites, and how it can be used in Kali Linux for password cracking.
+description: In this article, we'll explore CeWL, a powerful tool for generating custom wordlists from websites, and how it can be used in Kali Linux for password cracking.
 date: 2023-02-12
 url: cewl-on-kali-linux-tools-a-powerful-custom-wordlist-generator
 tags:
@@ -20,7 +20,7 @@ featured_image: /images/kalilinux2.webp
 
 When it comes to penetration testing, password cracking is an essential component of security assessments. Attackers and ethical hackers alike rely on custom wordlists to increase their chances of successful password discovery. One of the most effective tools for generating these wordlists is **CeWL (Custom Word List Generator)**, a utility included in **Kali Linux**. This tool is particularly useful for **gathering words from a target website** and crafting a more **context-specific** wordlist for password cracking.
 
-In this blog post, we'll dive deep into **CeWL**, exploring its functionalities, use cases, and how you can leverage it effectively in your security assessments.
+In this article, we'll dive deep into **CeWL**, exploring its functionalities, use cases, and how you can leverage it effectively in your security assessments.
 
 ## What is CeWL?
 

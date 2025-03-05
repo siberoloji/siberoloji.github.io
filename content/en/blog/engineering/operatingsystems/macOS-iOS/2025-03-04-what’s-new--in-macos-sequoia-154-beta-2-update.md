@@ -16,7 +16,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: null
 ---
 
-Apple’s macOS Sequoia 15.4 Beta 2 has arrived, and with it comes a host of new features, improvements, and bug fixes. As part of Apple’s ongoing commitment to refining its operating system, this beta release offers developers and early adopters a glimpse into the future of macOS. In this blog post, we’ll dive deep into what’s new in macOS Sequoia 15.4 Beta 2, explore the release notes, and discuss how these changes might impact users.
+Apple’s macOS Sequoia 15.4 Beta 2 has arrived, and with it comes a host of new features, improvements, and bug fixes. As part of Apple’s ongoing commitment to refining its operating system, this beta release offers developers and early adopters a glimpse into the future of macOS. In this article, we’ll dive deep into what’s new in macOS Sequoia 15.4 Beta 2, explore the release notes, and discuss how these changes might impact users.
 
 ---
 

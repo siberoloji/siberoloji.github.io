@@ -16,7 +16,7 @@ tags:
 ---
 
 
-In the early 2000s, Microsoft embarked on an ambitious project known as Midori, which aimed to rethink the way operating systems were designed and implemented. While most people are familiar with Windows, Microsoft’s flagship operating system, few know about Midori, a project that could have potentially redefined computing. In this blog post, we’ll explore what Midori was, its groundbreaking features, why it never saw the light of day, and its lasting impact on modern operating systems.
+In the early 2000s, Microsoft embarked on an ambitious project known as Midori, which aimed to rethink the way operating systems were designed and implemented. While most people are familiar with Windows, Microsoft’s flagship operating system, few know about Midori, a project that could have potentially redefined computing. In this article, we’ll explore what Midori was, its groundbreaking features, why it never saw the light of day, and its lasting impact on modern operating systems.
 
 
 #### 1. **What Was Midori?**

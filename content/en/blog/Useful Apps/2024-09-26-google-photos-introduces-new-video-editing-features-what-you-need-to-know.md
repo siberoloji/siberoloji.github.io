@@ -18,7 +18,7 @@ tags:
 ---
 Google Photos has long been a favorite app for organizing, storing, and editing images. Its user-friendly interface, deep integration with Google's cloud services, and powerful editing tools have made it indispensable for many users. However, until recently, the app’s video editing capabilities lagged behind other dedicated editing apps. In 2023, Google rolled out significant updates to its video editing suite, giving users more robust tools for crafting visually stunning video content directly within Google Photos.
 
-In this blog post, we will take an in-depth look at these new video editing features, how they enhance the overall user experience, and why they matter for everyday users and content creators alike.
+In this article, we will take an in-depth look at these new video editing features, how they enhance the overall user experience, and why they matter for everyday users and content creators alike.
 **1. A New Era of Video Editing on Google Photos**
 
 Traditionally, Google Photos has focused more on image storage and editing, offering advanced photo tools like color adjustment, filters, and cropping options. For videos, the editing tools were basic, limited mostly to trimming, rotating, or stabilizing video clips. The recent update marks a new era for Google Photos, significantly expanding its video editing capabilities.

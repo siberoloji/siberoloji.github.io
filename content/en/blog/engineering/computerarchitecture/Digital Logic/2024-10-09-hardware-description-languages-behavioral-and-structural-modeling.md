@@ -18,7 +18,7 @@ tags:
 ---
 
 
-In the world of digital design and electronic engineering, Hardware Description Languages (HDLs) play a crucial role in describing and simulating complex digital systems. Two fundamental approaches to modeling digital circuits in HDLs are behavioral modeling and structural modeling. In this blog post, we'll explore these two modeling techniques, their characteristics, advantages, and use cases, with a focus on their implementation in popular HDLs like Verilog and VHDL.
+In the world of digital design and electronic engineering, Hardware Description Languages (HDLs) play a crucial role in describing and simulating complex digital systems. Two fundamental approaches to modeling digital circuits in HDLs are behavioral modeling and structural modeling. In this article, we'll explore these two modeling techniques, their characteristics, advantages, and use cases, with a focus on their implementation in popular HDLs like Verilog and VHDL.
 
 
 

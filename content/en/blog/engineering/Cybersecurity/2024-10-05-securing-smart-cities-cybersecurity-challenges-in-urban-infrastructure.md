@@ -17,7 +17,7 @@ The rise of smart city technology marks an exciting new era of urban development
 
 
 
-In this blog post, we’ll explore the cybersecurity challenges that smart cities face, the potential risks to urban infrastructure, and the strategies needed to secure these digital urban ecosystems.
+In this article, we’ll explore the cybersecurity challenges that smart cities face, the potential risks to urban infrastructure, and the strategies needed to secure these digital urban ecosystems.
 ## What Is a Smart City?
 
 

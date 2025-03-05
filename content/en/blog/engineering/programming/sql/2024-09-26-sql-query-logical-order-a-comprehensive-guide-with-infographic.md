@@ -20,7 +20,7 @@ When writing SQL queries, it’s common to think about the order in which you ty
 
 
 
-In this blog post, we will break down the **logical execution order** of SQL queries and provide you with a handy infographic to visualize this process. This knowledge will deepen your SQL expertise, especially if you are looking to improve query performance or understand complex queries.
+In this article, we will break down the **logical execution order** of SQL queries and provide you with a handy infographic to visualize this process. This knowledge will deepen your SQL expertise, especially if you are looking to improve query performance or understand complex queries.
 
 
 

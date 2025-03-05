@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, the modern and expressive programming language developed by JetBrains, has gained immense popularity due to its conciseness and powerful features. One such feature that enhances code reusability and type safety is **generic functions**. Generic functions allow developers to write flexible and reusable code while ensuring compile-time type safety.
 
-In this blog post, we will explore what generic functions are, how they work, and the benefits they offer. We will also discuss their syntax, use cases, and best practices for writing clean and efficient generic functions in Kotlin.
+In this article, we will explore what generic functions are, how they work, and the benefits they offer. We will also discuss their syntax, use cases, and best practices for writing clean and efficient generic functions in Kotlin.
 
 ---
 

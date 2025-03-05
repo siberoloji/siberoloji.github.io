@@ -18,7 +18,7 @@ tags:
 ---
 
 
-In the world of computing and digital systems, numbers play a crucial role. However, the way computers understand and process numbers is quite different from how we typically think about them in our day-to-day lives. While we're accustomed to the decimal system (base-10), computers operate using different number systems, primarily binary (base-2), but also octal (base-8) and hexadecimal (base-16). In this blog post, we'll explore these number systems, understand their significance, and learn how to convert between them.
+In the world of computing and digital systems, numbers play a crucial role. However, the way computers understand and process numbers is quite different from how we typically think about them in our day-to-day lives. While we're accustomed to the decimal system (base-10), computers operate using different number systems, primarily binary (base-2), but also octal (base-8) and hexadecimal (base-16). In this article, we'll explore these number systems, understand their significance, and learn how to convert between them.
 
 
 

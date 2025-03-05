@@ -16,7 +16,7 @@ tags:
 ---
 If you’re a Linux beginner looking for a clean, efficient, and beginner-friendly operating system, **Solus Linux distribution** is an excellent choice. <a href="https://getsol.us" target="_blank" rel="noopener" title="">Solus Linux </a>is a relatively new player in the Linux ecosystem but has been making waves with its polished user interface, performance, and simplicity. It is built from scratch, independent of other distributions, and is well-optimized for desktops, making it a perfect entry point for people who are transitioning from other operating systems like Windows or macOS.
 
-In this blog post, we'll take you through the basics of the Solus Linux distribution and explain why it's a great option for beginners. You'll learn about its features, how to install it, and how to get started with the software that will make your computing experience better and more efficient.
+In this article, we'll take you through the basics of the Solus Linux distribution and explain why it's a great option for beginners. You'll learn about its features, how to install it, and how to get started with the software that will make your computing experience better and more efficient.
 
 ## 1. What is Solus Linux?
 

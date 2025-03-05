@@ -21,7 +21,7 @@ Artificial Intelligence (AI) is playing an increasingly prominent role in shapin
 
 
 
-In this blog post, we will explore the concept of Explainable AI, its importance for the future of artificial intelligence, and why it is crucial for ensuring user trust, accountability, and fairness in AI-driven systems.
+In this article, we will explore the concept of Explainable AI, its importance for the future of artificial intelligence, and why it is crucial for ensuring user trust, accountability, and fairness in AI-driven systems.
 
 
 

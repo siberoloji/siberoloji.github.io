@@ -18,7 +18,7 @@ tags:
 ---
 
 
-Public health databases contain a wealth of information that can be used to identify and address demographic risks. By analyzing these databases, public health officials and researchers can gain valuable insights into the health disparities that exist within different populations. This blog post will explore some of the key methods and techniques for analyzing public health databases to identify demographic risks.
+Public health databases contain a wealth of information that can be used to identify and address demographic risks. By analyzing these databases, public health officials and researchers can gain valuable insights into the health disparities that exist within different populations. This article will explore some of the key methods and techniques for analyzing public health databases to identify demographic risks.
 
 
 

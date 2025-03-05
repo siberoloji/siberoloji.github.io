@@ -16,7 +16,7 @@ tags:
     - linux
     - 'linux how-to'
 ---
-In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. **SCP (Secure Copy Protocol)** is a command-line utility that allows you to securely transfer files between a local machine and a remote server using **SSH (Secure Shell)**. By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this blog post, we will explore how to use SCP for basic and advanced file operations in **AlmaLinux 9**, covering multiple scenarios and examples.
+In modern Linux environments, secure file transfers between systems are crucial for efficient system administration and data management. **SCP (Secure Copy Protocol)** is a command-line utility that allows you to securely transfer files between a local machine and a remote server using **SSH (Secure Shell)**. By leveraging SSH encryption, SCP ensures that your data remains secure during transmission. In this article, we will explore how to use SCP for basic and advanced file operations in **AlmaLinux 9**, covering multiple scenarios and examples.
 Table of Contents
 * Introduction to SCP and SSH
 

@@ -13,7 +13,7 @@ tags:
 ---
 
 
-Have I Been Pwned (HIBP) is a vital resource for anyone concerned about their online security. Created by security expert Troy Hunt in December 2013, HIBP allows users to check if their personal data has been compromised in data breaches. This blog post will delve into the functionality, significance, and implications of HIBP, providing a comprehensive overview of its features and how it can help users protect their sensitive information.
+Have I Been Pwned (HIBP) is a vital resource for anyone concerned about their online security. Created by security expert Troy Hunt in December 2013, HIBP allows users to check if their personal data has been compromised in data breaches. This article will delve into the functionality, significance, and implications of HIBP, providing a comprehensive overview of its features and how it can help users protect their sensitive information.
 
 
 

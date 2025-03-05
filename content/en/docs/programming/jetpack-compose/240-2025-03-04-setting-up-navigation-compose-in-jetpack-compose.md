@@ -17,7 +17,7 @@ keywords:
   - Jetpack Compose
   - Navigation Compose
 ---
-Jetpack Compose has revolutionized UI development in Android by providing a declarative and reactive approach to building interfaces. One of the key components of any modern Android app is navigation, and Jetpack Compose provides an intuitive way to handle this with **Navigation Compose**. This blog post will guide you through setting up **Navigation Compose**, handling arguments, and using advanced navigation patterns in Jetpack Compose.
+Jetpack Compose has revolutionized UI development in Android by providing a declarative and reactive approach to building interfaces. One of the key components of any modern Android app is navigation, and Jetpack Compose provides an intuitive way to handle this with **Navigation Compose**. This article will guide you through setting up **Navigation Compose**, handling arguments, and using advanced navigation patterns in Jetpack Compose.
 
 ---
 

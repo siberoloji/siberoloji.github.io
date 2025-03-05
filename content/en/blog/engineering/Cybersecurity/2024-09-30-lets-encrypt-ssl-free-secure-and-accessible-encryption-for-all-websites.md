@@ -18,7 +18,7 @@ In the digital age, data security is a paramount concern for website owners, bus
 
 
 
-Let’s Encrypt is a revolutionary Certificate Authority (CA) that offers **free SSL/TLS certificates** to enable HTTPS on websites, promoting a safer and more secure internet. In this blog post, we will explore what Let’s Encrypt is, how it works, the benefits it offers, and how you can implement it on your own website.
+Let’s Encrypt is a revolutionary Certificate Authority (CA) that offers **free SSL/TLS certificates** to enable HTTPS on websites, promoting a safer and more secure internet. In this article, we will explore what Let’s Encrypt is, how it works, the benefits it offers, and how you can implement it on your own website.
 **What is Let’s Encrypt?**
 
 

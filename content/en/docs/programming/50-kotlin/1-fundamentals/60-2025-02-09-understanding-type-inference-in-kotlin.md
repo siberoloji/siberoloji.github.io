@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and statically typed programming language developed by JetBrains, has gained significant traction among developers due to its expressive syntax and safety features. One of the core strengths of Kotlin is **type inference**, a feature that enables the compiler to determine the type of a variable or expression automatically, reducing the need for explicit type declarations. This results in cleaner and more readable code while maintaining strong type safety.
 
-In this blog post, we will explore how type inference works in Kotlin, its benefits, limitations, and best practices to follow for efficient usage.
+In this article, we will explore how type inference works in Kotlin, its benefits, limitations, and best practices to follow for efficient usage.
 
 ## What is Type Inference?
 

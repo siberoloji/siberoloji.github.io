@@ -21,7 +21,7 @@ keywords:
 ---
 
 
-In the realm of Open Source Intelligence (OSINT), the ability to extract and analyze information from digital images has become an invaluable skill. One of the most powerful techniques in an OSINT analyst's toolkit is the examination of EXIF (Exchangeable Image File Format) metadata, particularly for geolocation tracking. This blog post will dive deep into the world of EXIF data analysis, exploring its applications, methods, and implications for OSINT investigations.
+In the realm of Open Source Intelligence (OSINT), the ability to extract and analyze information from digital images has become an invaluable skill. One of the most powerful techniques in an OSINT analyst's toolkit is the examination of EXIF (Exchangeable Image File Format) metadata, particularly for geolocation tracking. This article will dive deep into the world of EXIF data analysis, exploring its applications, methods, and implications for OSINT investigations.
 
 ## Understanding EXIF Metadata
 

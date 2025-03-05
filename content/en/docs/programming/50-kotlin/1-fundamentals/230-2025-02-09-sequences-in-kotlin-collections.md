@@ -20,7 +20,7 @@ keywords:
   - Sequences
 featured_image: /images/kotlin-1.png
 ---
-Kotlin, a modern and expressive programming language, provides a rich set of tools for working with collections. Among these tools, **sequences** stand out as a powerful feature for optimizing performance and enabling lazy evaluation. Sequences allow developers to process large datasets efficiently by deferring computations until absolutely necessary. This blog post explores sequences in Kotlin, their benefits, use cases, and how they differ from regular collections.
+Kotlin, a modern and expressive programming language, provides a rich set of tools for working with collections. Among these tools, **sequences** stand out as a powerful feature for optimizing performance and enabling lazy evaluation. Sequences allow developers to process large datasets efficiently by deferring computations until absolutely necessary. This article explores sequences in Kotlin, their benefits, use cases, and how they differ from regular collections.
 
 ---
 

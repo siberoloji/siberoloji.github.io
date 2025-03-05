@@ -5,7 +5,7 @@ title:  'Imagen 3: High Quality Image Generation'
 date: '2024-10-21T14:16:23+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will delve into the intricacies of Imagen 3, exploring its architecture, capabilities, and potential applications.' 
+description:  'This article will delve into the intricacies of Imagen 3, exploring its architecture, capabilities, and potential applications.' 
  
 url:  /imagen-3-high-quality-image-genera/
 featured_image: /images/imagen3.jpg
@@ -15,7 +15,7 @@ tags:
     - image
     - 'image generation'
 ---
-In the ever-evolving landscape of artificial intelligence, text-to-image models have been making significant strides. One such model, Imagen 3, developed by Google DeepMind, has captured the attention of researchers and enthusiasts alike. This blog post will delve into the intricacies of Imagen 3, exploring its architecture, capabilities, and potential applications.
+In the ever-evolving landscape of artificial intelligence, text-to-image models have been making significant strides. One such model, Imagen 3, developed by Google DeepMind, has captured the attention of researchers and enthusiasts alike. This article will delve into the intricacies of Imagen 3, exploring its architecture, capabilities, and potential applications.
 
 **Understanding Imagen 3**
 

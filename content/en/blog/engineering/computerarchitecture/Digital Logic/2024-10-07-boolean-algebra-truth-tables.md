@@ -16,7 +16,7 @@ translationKey: boolean-algebra-truth-tables
 ---
 
 
-Boolean algebra and truth tables are foundational concepts in logic, mathematics, and computer science. They provide a systematic way to analyze and represent logical expressions and functions. This blog post will delve into the principles of Boolean algebra, the construction of truth tables, their applications, and their significance in various fields.
+Boolean algebra and truth tables are foundational concepts in logic, mathematics, and computer science. They provide a systematic way to analyze and represent logical expressions and functions. This article will delve into the principles of Boolean algebra, the construction of truth tables, their applications, and their significance in various fields.
 
 ## Understanding Boolean Algebra
 

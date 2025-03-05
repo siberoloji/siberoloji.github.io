@@ -7,14 +7,14 @@ weight: 12
 date: 2024-10-11T21:34:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /what-is-google-keyword-planner/
-description: In this blog post, we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.
+description: In this article, we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.
 featured_image: /images/searchengineoptimization2.jpg
 categories:
   - SEO
 tags:
   - seo
 ---
-In the ever-evolving landscape of digital marketing, understanding how to effectively reach your audience is crucial. One of the key tools that marketers leverage for this purpose is **Google Keyword Planner**. This free tool, part of the Google Ads platform, serves as a gateway to discovering relevant keywords that can enhance both paid and organic search strategies. In this blog post, we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.
+In the ever-evolving landscape of digital marketing, understanding how to effectively reach your audience is crucial. One of the key tools that marketers leverage for this purpose is **Google Keyword Planner**. This free tool, part of the Google Ads platform, serves as a gateway to discovering relevant keywords that can enhance both paid and organic search strategies. In this article, we'll explore what Google Keyword Planner is, how it works, and how you can use it to optimize your marketing efforts.
 
 ## Understanding Google Keyword Planner
 

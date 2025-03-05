@@ -15,7 +15,7 @@ tags:
     - 'file manager'
     - linux
 ---
-In the world of Linux, file managers play a crucial role in helping users navigate their systems efficiently. Among the various options available, PCManFM stands out as a lightweight yet powerful file manager that has gained popularity among Linux enthusiasts. In this blog post, we'll dive deep into PCManFM, exploring its features, benefits, and why it might be the perfect file manager for your Linux system.
+In the world of Linux, file managers play a crucial role in helping users navigate their systems efficiently. Among the various options available, PCManFM stands out as a lightweight yet powerful file manager that has gained popularity among Linux enthusiasts. In this article, we'll dive deep into PCManFM, exploring its features, benefits, and why it might be the perfect file manager for your Linux system.
 
 ## What is PCManFM?
 

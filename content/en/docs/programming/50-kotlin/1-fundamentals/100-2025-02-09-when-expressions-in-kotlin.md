@@ -25,7 +25,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and expressive programming language developed by JetBrains, offers various control flow structures that make code more readable and concise. One such feature is the `when` expression, which serves as a powerful replacement for traditional `switch` statements found in languages like Java and C.
 
-Unlike `switch`, which is limited to constant values, Kotlin’s `when` expression supports a wide range of conditions, making it highly flexible. In this blog post, we will explore `when` expressions in detail, including their syntax, use cases, and best practices, along with examples to help you master this feature.
+Unlike `switch`, which is limited to constant values, Kotlin’s `when` expression supports a wide range of conditions, making it highly flexible. In this article, we will explore `when` expressions in detail, including their syntax, use cases, and best practices, along with examples to help you master this feature.
 
 ## Understanding When Expressions in Kotlin
 

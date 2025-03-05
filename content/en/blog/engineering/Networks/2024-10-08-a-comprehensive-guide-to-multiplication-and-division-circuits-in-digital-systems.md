@@ -22,7 +22,7 @@ In the realm of digital electronics, circuits that perform arithmetic operations
 
 
 
-This blog post delves into the fundamental principles behind **multiplication and division circuits**, exploring how they work, the types of algorithms used to implement them, and their applications in digital systems.
+This article delves into the fundamental principles behind **multiplication and division circuits**, exploring how they work, the types of algorithms used to implement them, and their applications in digital systems.
 Understanding the Basics: Binary Arithmetic
 
 

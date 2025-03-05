@@ -18,7 +18,7 @@ In the digital age, encryption is the backbone of online security, ensuring that
 
 
 
-In this blog post, we’ll explore the importance of post-quantum cryptography, the challenges it addresses, and the future of encryption in a quantum-powered world.
+In this article, we’ll explore the importance of post-quantum cryptography, the challenges it addresses, and the future of encryption in a quantum-powered world.
 ## The Current State of Encryption
 
 

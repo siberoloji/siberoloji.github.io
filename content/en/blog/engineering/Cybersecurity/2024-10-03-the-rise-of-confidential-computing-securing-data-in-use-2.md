@@ -21,7 +21,7 @@ Confidential computing represents a paradigm shift in data privacy and security.
 
 
 
-In this blog post, we'll explore the rise of confidential computing, how it works, the challenges it addresses, and the potential impact it has on securing data in use across different industries.
+In this article, we'll explore the rise of confidential computing, how it works, the challenges it addresses, and the potential impact it has on securing data in use across different industries.
 
 
 #### What is Confidential Computing?

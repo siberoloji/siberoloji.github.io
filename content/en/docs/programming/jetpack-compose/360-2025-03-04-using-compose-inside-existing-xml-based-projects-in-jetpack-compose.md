@@ -17,7 +17,7 @@ keywords:
   - Jetpack Compose
   - XML-based projects
 ---
-Jetpack Compose, Android’s modern toolkit for building native UIs, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. However, many existing Android projects are built using the traditional XML-based UI framework. Migrating an entire project to Jetpack Compose can be a daunting task, especially for large applications. Fortunately, Jetpack Compose is designed to be interoperable with the existing XML-based UI system, allowing developers to adopt Compose incrementally. In this blog post, we’ll explore how to use Compose inside existing XML-based projects, the benefits of doing so, and best practices for a seamless integration.
+Jetpack Compose, Android’s modern toolkit for building native UIs, has revolutionized the way developers create user interfaces. With its declarative approach, Compose simplifies UI development, making it more intuitive and efficient. However, many existing Android projects are built using the traditional XML-based UI framework. Migrating an entire project to Jetpack Compose can be a daunting task, especially for large applications. Fortunately, Jetpack Compose is designed to be interoperable with the existing XML-based UI system, allowing developers to adopt Compose incrementally. In this article, we’ll explore how to use Compose inside existing XML-based projects, the benefits of doing so, and best practices for a seamless integration.
 
 ---
 

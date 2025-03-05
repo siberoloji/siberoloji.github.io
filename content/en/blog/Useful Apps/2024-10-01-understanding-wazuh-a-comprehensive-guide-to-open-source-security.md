@@ -20,7 +20,7 @@ In today’s rapidly evolving digital landscape, cybersecurity is a top concern 
 
 
 
-In this blog post, we will dive deep into what Wazuh is, its key features, how it works, and why it might be the perfect solution for your security needs.
+In this article, we will dive deep into what Wazuh is, its key features, how it works, and why it might be the perfect solution for your security needs.
 
 
 

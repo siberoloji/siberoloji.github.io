@@ -20,7 +20,7 @@ featured_image: /images/kotlin-1.png
 ---
 ## Introduction
 
-Parsing files is a common task in software development, especially when dealing with structured or semi-structured data. Kotlin, a modern, expressive, and concise programming language, offers powerful libraries and features that make file parsing efficient and straightforward. In this blog post, we will create a simple file parser console application using Kotlin. We will cover reading files, parsing content, handling errors, and implementing basic operations to extract and display structured information.
+Parsing files is a common task in software development, especially when dealing with structured or semi-structured data. Kotlin, a modern, expressive, and concise programming language, offers powerful libraries and features that make file parsing efficient and straightforward. In this article, we will create a simple file parser console application using Kotlin. We will cover reading files, parsing content, handling errors, and implementing basic operations to extract and display structured information.
 
 ## Prerequisites
 

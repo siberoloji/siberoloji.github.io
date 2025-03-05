@@ -18,7 +18,7 @@ tags:
 ---
 
 
-In the world of digital design and electronic engineering, Hardware Description Languages (HDLs) play a crucial role in describing and modeling complex digital systems. Among these languages, Verilog stands out as one of the most widely used and powerful tools for designing and simulating digital circuits. In this blog post, we'll delve into the basics of Verilog, exploring its fundamental concepts, syntax, and applications.
+In the world of digital design and electronic engineering, Hardware Description Languages (HDLs) play a crucial role in describing and modeling complex digital systems. Among these languages, Verilog stands out as one of the most widely used and powerful tools for designing and simulating digital circuits. In this article, we'll delve into the basics of Verilog, exploring its fundamental concepts, syntax, and applications.
 
 
 

@@ -19,7 +19,7 @@ keywords:
 ---
 Jetpack Compose, Android’s modern toolkit for building native UI, has revolutionized the way developers create user interfaces. By leveraging a declarative approach, Compose simplifies UI development and makes it more intuitive. However, as with any powerful tool, understanding its inner workings is crucial to unlocking its full potential. One of the most important concepts in Jetpack Compose is **recomposition**—the process by which Compose updates the UI in response to state changes. Efficient recomposition is key to building performant applications, and one of the most effective ways to achieve this is by using **item keys**.
 
-In this blog post, we’ll dive deep into the concept of item keys, explore why they are important, and demonstrate how to use them effectively to optimize recomposition in Jetpack Compose.
+In this article, we’ll dive deep into the concept of item keys, explore why they are important, and demonstrate how to use them effectively to optimize recomposition in Jetpack Compose.
 
 ---
 

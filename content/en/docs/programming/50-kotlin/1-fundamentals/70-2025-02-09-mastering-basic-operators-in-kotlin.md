@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 
 Kotlin, a modern and expressive programming language developed by JetBrains, is widely adopted for Android development and general-purpose programming. One of Kotlin's strengths is its support for a variety of operators that enable developers to perform operations efficiently. Operators in Kotlin are categorized based on their functionalities, such as arithmetic, relational, logical, assignment, and bitwise operations. Understanding these operators is essential for writing concise and effective Kotlin programs.
 
-This blog post explores the fundamental operators in Kotlin, their syntax, and practical usage examples to help you master the basics of Kotlin programming.
+This article explores the fundamental operators in Kotlin, their syntax, and practical usage examples to help you master the basics of Kotlin programming.
 
 ## 1. Arithmetic Operators
 

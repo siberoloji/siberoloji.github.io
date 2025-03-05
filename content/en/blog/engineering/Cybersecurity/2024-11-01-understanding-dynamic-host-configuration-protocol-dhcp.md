@@ -5,7 +5,7 @@ title:  'Understanding Dynamic Host Configuration Protocol (DHCP)'
 date: '2024-11-01T14:46:28+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post delves into the workings of DHCP, its components, benefits, and common configurations.' 
+description:  'This article delves into the workings of DHCP, its components, benefits, and common configurations.' 
  
 url:  /understanding-dynamic-host-configuration-protocol-dhcp/
 featured_image: /images/datacommunications3.webp
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-Dynamic Host Configuration Protocol (DHCP) is a crucial network management protocol that automates the assignment of Internet Protocol (IP) addresses to devices on a network. By eliminating the need for manual IP address configuration, DHCP streamlines network management, making it essential for both small and large networks. This blog post delves into the workings of DHCP, its components, benefits, and common configurations.
+Dynamic Host Configuration Protocol (DHCP) is a crucial network management protocol that automates the assignment of Internet Protocol (IP) addresses to devices on a network. By eliminating the need for manual IP address configuration, DHCP streamlines network management, making it essential for both small and large networks. This article delves into the workings of DHCP, its components, benefits, and common configurations.
 
 
 

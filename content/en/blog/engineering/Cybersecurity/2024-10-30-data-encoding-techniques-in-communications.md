@@ -5,7 +5,7 @@ title:  'Data Encoding Techniques in Communications'
 date: '2024-10-30T13:22:09+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will explore different types of data encoding techniques, their applications, and their significance in ensuring data integrity and security.' 
+description:  'This article will explore different types of data encoding techniques, their applications, and their significance in ensuring data integrity and security.' 
  
 url:  /data-encoding-techniques-in-communications/
 featured_image: /images/datanetworkandcomponents.webp
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-Data encoding techniques are essential in various fields, including data science, web development, and cybersecurity. This blog post will explore different types of data encoding techniques, their applications, and their significance in ensuring data integrity and security.
+Data encoding techniques are essential in various fields, including data science, web development, and cybersecurity. This article will explore different types of data encoding techniques, their applications, and their significance in ensuring data integrity and security.
 
 
 

@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, the modern programming language developed by JetBrains, offers a variety of powerful features that make development more efficient and expressive. One such feature is **property delegation**, which allows developers to delegate the responsibility of property management to another class or function. This feature enables better code reuse, cleaner implementation, and reduced boilerplate code.
 
-In this blog post, we will explore property delegation in Kotlin, its use cases, built-in delegates, and how to create custom delegates.
+In this article, we will explore property delegation in Kotlin, its use cases, built-in delegates, and how to create custom delegates.
 
 ---
 

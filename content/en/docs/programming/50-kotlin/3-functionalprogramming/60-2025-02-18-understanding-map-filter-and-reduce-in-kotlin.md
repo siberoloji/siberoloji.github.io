@@ -4,7 +4,7 @@ title: Understanding `map`, `filter`, and `reduce` in Kotlin
 linkTitle:  map, filter, and reduce
 translationKey: understanding-map-filter-and-reduce-in-kotlin
 weight: 60
-description: This blog post explores `map`, `filter`, and `reduce` in Kotlin, their syntax, use cases, and practical examples.
+description: This article explores `map`, `filter`, and `reduce` in Kotlin, their syntax, use cases, and practical examples.
 date: 2025-02-18
 url: understanding-map-filter-and-reduce-in-kotlin
 tags:
@@ -23,7 +23,7 @@ featured_image: /images/kotlin-1.png
 ---
 Functional programming has gained immense popularity due to its concise, expressive, and efficient coding techniques. Kotlin, a modern programming language, embraces functional programming principles and provides a variety of higher-order functions to simplify common operations on collections. Among these functions, `map`, `filter`, and `reduce` stand out as essential tools for transforming and processing data.
 
-In this blog post, we will explore `map`, `filter`, and `reduce` in Kotlin, understand their syntax and use cases, and see practical examples to demonstrate their power and efficiency.
+In this article, we will explore `map`, `filter`, and `reduce` in Kotlin, understand their syntax and use cases, and see practical examples to demonstrate their power and efficiency.
 
 ## 1. The `map` Function in Kotlin
 

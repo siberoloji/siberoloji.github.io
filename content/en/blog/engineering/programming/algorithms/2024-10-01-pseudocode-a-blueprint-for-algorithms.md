@@ -101,4 +101,4 @@ function bubbleSort(array)
 
 
 
-Pseudocode is a valuable tool for understanding, designing, and communicating algorithms. By following the guidelines outlined in this blog post, you can effectively use pseudocode to enhance your problem-solving skills and improve your programming abilities.
+Pseudocode is a valuable tool for understanding, designing, and communicating algorithms. By following the guidelines outlined In this article, you can effectively use pseudocode to enhance your problem-solving skills and improve your programming abilities.

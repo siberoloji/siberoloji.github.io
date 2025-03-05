@@ -4,7 +4,7 @@ title: The Elvis Operator in Kotlin
 linkTitle: The Elvis Operator
 translationKey: the-elvis-operator-in-kotlin
 weight: 260
-description: This blog post explores the Elvis operator in Kotlin, a concise way to handle nulls with grace and style
+description: This article explores the Elvis operator in Kotlin, a concise way to handle nulls with grace and style
 date: 2025-02-09
 url: the-elvis-operator-in-kotlin
 tags:
@@ -22,7 +22,7 @@ featured_image: /images/kotlin-1.png
 ---
 ## The Elvis Operator in Kotlin: Handling Nulls with Grace and Style
 
-Kotlin's null safety system is a powerful feature that helps developers avoid the dreaded `NullPointerException`.  It encourages explicit handling of null values, leading to more robust and reliable code. While safe calls (`?.`) allow you to access properties and methods of nullable objects without crashing, the Elvis operator (`?:`) provides a concise and elegant way to provide default values or execute alternative logic when encountering nulls. This blog post explores the Elvis operator in detail, demonstrating its usage, benefits, and best practices.
+Kotlin's null safety system is a powerful feature that helps developers avoid the dreaded `NullPointerException`.  It encourages explicit handling of null values, leading to more robust and reliable code. While safe calls (`?.`) allow you to access properties and methods of nullable objects without crashing, the Elvis operator (`?:`) provides a concise and elegant way to provide default values or execute alternative logic when encountering nulls. This article explores the Elvis operator in detail, demonstrating its usage, benefits, and best practices.
 
 ### Understanding Nullability in Kotlin
 

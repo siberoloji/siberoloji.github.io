@@ -17,7 +17,7 @@ tags:
 ---
 In today’s tech-driven world, USB drives have become indispensable tools for storing and transferring data. However, their utility doesn’t stop there. One of the most powerful uses of a USB drive is to create a bootable media to install operating systems or troubleshoot computer issues. When it comes to creating bootable USB drives, **Rufus** is one of the most popular, reliable, and lightweight tools available.
 
-In this blog post, we’ll explore what Rufus is, why it’s such a valuable tool for users, how to use it, and why beginners and experienced users alike should consider adding it to their toolkit.
+In this article, we’ll explore what Rufus is, why it’s such a valuable tool for users, how to use it, and why beginners and experienced users alike should consider adding it to their toolkit.
 ## What is Rufus?
 
 **Rufus** is a free, open-source utility designed to format and create bootable USB drives. It’s widely used for installing operating systems like Windows, Linux, and others directly from a USB drive. Rufus is known for its simplicity, speed, and ability to handle various bootable image formats, such as ISO files.

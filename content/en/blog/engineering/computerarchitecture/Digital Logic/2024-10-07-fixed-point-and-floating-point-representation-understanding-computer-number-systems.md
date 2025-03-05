@@ -16,7 +16,7 @@ tags:
 ---
 
 
-In the world of computer science and digital systems, representing numbers is a fundamental task. While we humans are accustomed to working with decimal numbers, computers operate in binary. This leads to some interesting challenges when it comes to representing and manipulating numbers, especially when dealing with fractional or very large values. Two primary methods have emerged to address these challenges: fixed-point and floating-point representation. In this blog post, we'll dive deep into these two number systems, exploring their characteristics, advantages, limitations, and applications.
+In the world of computer science and digital systems, representing numbers is a fundamental task. While we humans are accustomed to working with decimal numbers, computers operate in binary. This leads to some interesting challenges when it comes to representing and manipulating numbers, especially when dealing with fractional or very large values. Two primary methods have emerged to address these challenges: fixed-point and floating-point representation. In this article, we'll dive deep into these two number systems, exploring their characteristics, advantages, limitations, and applications.
 
 ## The Basics of Binary Number Representation
 

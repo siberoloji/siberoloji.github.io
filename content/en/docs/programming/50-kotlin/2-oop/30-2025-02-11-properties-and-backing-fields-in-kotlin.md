@@ -21,7 +21,7 @@ featured_image: /images/kotlin-1.png
 ---
 Kotlin, a modern and expressive programming language, provides an intuitive and powerful way to work with classes and properties. Unlike Java, where you need to create explicit getter and setter methods, Kotlin simplifies property handling by introducing built-in property declarations, accessors, and backing fields. Understanding these concepts is crucial for writing clean, maintainable, and efficient Kotlin code.
 
-In this blog post, we will explore properties and backing fields in Kotlin, covering their usage, benefits, and best practices.
+In this article, we will explore properties and backing fields in Kotlin, covering their usage, benefits, and best practices.
 
 ## Understanding Properties in Kotlin
 

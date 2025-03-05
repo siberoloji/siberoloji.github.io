@@ -20,7 +20,7 @@ tags:
 ---
 AlmaLinux is a powerful, stable Linux distribution, often chosen for web hosting and server management due to its similarity with CentOS. One of the most useful features you can set up on an Apache web server is **user directories** (UserDir). This allows individual users to host personal websites on a shared server environment without interfering with one another’s content.
 
-In this blog post, we’ll walk through the steps to enable and configure the UserDir module in Apache on AlmaLinux 9, allowing users to have their own web directories under `/home/username/public_html`. We'll cover everything from setting up the necessary modules, adjusting permissions, to configuring the server correctly to ensure proper security.
+In this article, we’ll walk through the steps to enable and configure the UserDir module in Apache on AlmaLinux 9, allowing users to have their own web directories under `/home/username/public_html`. We'll cover everything from setting up the necessary modules, adjusting permissions, to configuring the server correctly to ensure proper security.
 Table of Contents
 * Introduction to UserDir in Apache
 

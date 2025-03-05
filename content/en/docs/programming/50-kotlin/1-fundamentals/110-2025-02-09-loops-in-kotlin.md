@@ -32,7 +32,7 @@ Kotlin, a modern and expressive programming language developed by JetBrains, pro
 - `while` loop
 - `do-while` loop
 
-Each of these loops has its own unique use cases and advantages. In this blog post, we will explore these looping structures in detail, discuss their syntax, use cases, and best practices, and provide examples to help you master loops in Kotlin.
+Each of these loops has its own unique use cases and advantages. In this article, we will explore these looping structures in detail, discuss their syntax, use cases, and best practices, and provide examples to help you master loops in Kotlin.
 
 ---
 

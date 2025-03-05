@@ -19,7 +19,7 @@ keywords:
   - hardware acceleration
 featured_image: /images/linuxmint1.webp
 ---
-Linux Mint is a popular, user-friendly Linux distribution that’s known for its stability and performance. However, to fully leverage your system’s capabilities, especially when dealing with graphics-intensive tasks like video playback, gaming, or complex graphical applications, enabling hardware acceleration can make a significant difference. This blog post will guide you through the process of setting up hardware acceleration on Linux Mint, ensuring smoother performance and better resource management.
+Linux Mint is a popular, user-friendly Linux distribution that’s known for its stability and performance. However, to fully leverage your system’s capabilities, especially when dealing with graphics-intensive tasks like video playback, gaming, or complex graphical applications, enabling hardware acceleration can make a significant difference. This article will guide you through the process of setting up hardware acceleration on Linux Mint, ensuring smoother performance and better resource management.
 
 ## What is Hardware Acceleration?
 

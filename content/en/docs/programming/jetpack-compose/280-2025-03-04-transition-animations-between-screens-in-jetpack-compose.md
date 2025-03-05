@@ -22,7 +22,7 @@ keywords:
 
 Smooth transitions between screens are crucial in mobile app development as they enhance user experience and provide a sense of continuity. Jetpack Compose, Google’s modern UI toolkit for Android, simplifies UI development by using a declarative approach. It also offers powerful animation APIs, making it easier to create seamless transitions between screens.
 
-In this blog post, we’ll explore how to implement transition animations in Jetpack Compose, covering key concepts, essential APIs, and practical examples.
+In this article, we’ll explore how to implement transition animations in Jetpack Compose, covering key concepts, essential APIs, and practical examples.
 
 ---
 

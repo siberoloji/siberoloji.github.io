@@ -18,7 +18,7 @@ keywords:
   - Navigation with ViewModels
   - State Preservation
 ---
-Jetpack Compose has revolutionized Android UI development by providing a declarative UI framework that simplifies state management and UI updates. However, managing navigation and preserving state across composable screens remains a challenge, especially in dynamic applications where users interact with multiple screens and data persists across configuration changes. In this blog post, we’ll explore how to navigate using ViewModels and effectively preserve state in Jetpack Compose applications.
+Jetpack Compose has revolutionized Android UI development by providing a declarative UI framework that simplifies state management and UI updates. However, managing navigation and preserving state across composable screens remains a challenge, especially in dynamic applications where users interact with multiple screens and data persists across configuration changes. In this article, we’ll explore how to navigate using ViewModels and effectively preserve state in Jetpack Compose applications.
 
 ---
 

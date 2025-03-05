@@ -1,7 +1,7 @@
 ---
 title: How to Configure Xrdp Server on AlmaLinux
 linkTitle: Configure Xrdp Server
-description: This blog post will guide you through the step-by-step process of installing and configuring an Xrdp server on AlmaLinux.
+description: This article will guide you through the step-by-step process of installing and configuring an Xrdp server on AlmaLinux.
 date: 2025-01-08T11:38:40.113Z
 weight: 1870
 url: configure-xrdp-server-almalinux
@@ -19,7 +19,7 @@ featured_image: /images/almalinux.webp
 ---
 Xrdp is an open-source Remote Desktop Protocol (RDP) server that allows users to access a graphical desktop environment on a Linux server from a remote machine using any RDP client. Configuring Xrdp on AlmaLinux provides a seamless way to manage your server with a graphical interface, making it particularly useful for those who prefer GUI over CLI or need remote desktop access for specific applications.
 
-This blog post will guide you through the step-by-step process of installing and configuring an Xrdp server on AlmaLinux.
+This article will guide you through the step-by-step process of installing and configuring an Xrdp server on AlmaLinux.
 
 ---
 

@@ -16,7 +16,7 @@ The world of cybersecurity is constantly evolving to keep up with new threats, a
 
 
 
-In this blog post, we'll explore what quantum computing is, how it impacts PKI, and what steps organizations can take to prepare for the quantum era.
+In this article, we'll explore what quantum computing is, how it impacts PKI, and what steps organizations can take to prepare for the quantum era.
 ## 1. **Understanding Quantum Computing**
 
 

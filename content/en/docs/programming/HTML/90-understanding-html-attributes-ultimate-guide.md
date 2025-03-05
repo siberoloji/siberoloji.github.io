@@ -220,4 +220,4 @@ Using semantic HTML tags like `<header>`, `<footer>`, `<article>`, and `<section
 HTML attributes are essential for enriching your web pages, providing the necessary context and functionality to HTML elements. By understanding the different types of attributes and following best practices, you can create accessible, user-friendly websites that are easy to maintain and search-engine optimized.
 
 As you continue to develop your web skills, remember that the careful use of HTML attributes enhances not only the appearance but also the usability and accessibility of your web content. With this knowledge, you’ll be well on your way to building high-quality web applications that meet the needs of your users.
-This blog post serves as a comprehensive guide to understanding and effectively using HTML attributes, offering you the knowledge needed to enhance your web development projects.
+This article serves as a comprehensive guide to understanding and effectively using HTML attributes, offering you the knowledge needed to enhance your web development projects.

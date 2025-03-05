@@ -5,7 +5,7 @@ title:  'Easter Eggs and Secrets: Things You Might Have Missed in Counter-Strike
 date: '2024-10-30T23:03:46+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'In this blog post, we''ll explore some of the most intriguing Easter eggs and secrets that you might have missed in CS:GO.' 
+description:  'In this article, we''ll explore some of the most intriguing Easter eggs and secrets that you might have missed in CS:GO.' 
  
 url:  /easter-eggs-and-secrets-things-you-might-have-missed-in-counter-strike-global-offensive/
 featured_image: /images/counterstrikeglobaloffensive.webp
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-Counter-Strike: Global Offensive (CS:GO) is not just a competitive shooter; it's a world filled with hidden secrets, Easter eggs, and surprising details. From quirky references to hidden mechanics, these hidden gems add an extra layer of depth and fun to the game. In this blog post, we'll explore some of the most intriguing Easter eggs and secrets that you might have missed in CS:GO.
+Counter-Strike: Global Offensive (CS:GO) is not just a competitive shooter; it's a world filled with hidden secrets, Easter eggs, and surprising details. From quirky references to hidden mechanics, these hidden gems add an extra layer of depth and fun to the game. In this article, we'll explore some of the most intriguing Easter eggs and secrets that you might have missed in CS:GO.
 
 
 

@@ -12,7 +12,7 @@ tags:
 ---
 The rise of mobile usage has dramatically reshaped how people access information on the internet. As more users switch to mobile devices for searching, shopping, and browsing, search engines like Google have adapted their algorithms to reflect this shift. Enter **Google’s Mobile-First Indexing**, a major change that prioritizes the mobile version of websites for indexing and ranking.
 
-In this blog post, we’ll explore what mobile-first indexing is, why it matters for your website, how it impacts your SEO strategy, and what you can do to optimize your site for this new approach.
+In this article, we’ll explore what mobile-first indexing is, why it matters for your website, how it impacts your SEO strategy, and what you can do to optimize your site for this new approach.
 
 ## 1. What is Mobile-First Indexing?
 

@@ -5,7 +5,7 @@ title:  'Understanding Network Security Basics'
 date: '2024-11-01T20:44:13+03:00'
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
-description:  'This blog post will explore the key concepts, practices, and technologies that form the foundation of effective network security.' 
+description:  'This article will explore the key concepts, practices, and technologies that form the foundation of effective network security.' 
  
 url:  /understanding-network-security-basics/
 featured_image: /images/pexels-photo-4682189.jpeg
@@ -16,7 +16,7 @@ tags:
 ---
 
 
-In today's digital landscape, network security has become a critical component of safeguarding data and maintaining the integrity of systems. As cyber threats evolve in sophistication and frequency, understanding the fundamentals of network security is essential for both individuals and organizations. This blog post will explore the key concepts, practices, and technologies that form the foundation of effective network security.
+In today's digital landscape, network security has become a critical component of safeguarding data and maintaining the integrity of systems. As cyber threats evolve in sophistication and frequency, understanding the fundamentals of network security is essential for both individuals and organizations. This article will explore the key concepts, practices, and technologies that form the foundation of effective network security.
 
 
 
