@@ -33,34 +33,34 @@ Here’s an expanded, categorized, and **numbered list** of **300+ FreeBSD how-t
 1.10. [How to verify the integrity of the FreeBSD ISO using SHA256.](/how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system/)  
 1.11. [How to install FreeBSD on a virtual machine (VirtualBox/VMware).](/how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system/)  
 1.12. [How to configure RAID1 (mirroring) with ZFS.](/how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system/)  
-1.13. How to set up a minimal FreeBSD server (no GUI).  
-1.14. How to customize the installer with advanced partitioning.  
-1.15. How to troubleshoot "No Bootable Device" errors.  
-1.16. How to install FreeBSD alongside Linux (e.g., Ubuntu).  
-1.17. How to enable SSH access during the first boot.  
-1.18. How to use the FreeBSD installer in non-interactive mode.  
-1.19. How to install FreeBSD on a USB drive for portable use.  
-1.20. How to configure a static IP during installation.  
-1.21. How to set up a BIOS vs. UEFI installation.  
-1.22. How to install FreeBSD on a legacy system (MBR partitioning).  
-1.23. How to use the FreeBSD live CD for system recovery.  
-1.24. How to enable TRIM support for SSDs during installation.  
-1.25. How to install FreeBSD on a NAS device.  
+1.13. [How to set up a minimal FreeBSD server (no GUI).](/how-to-set-up-a-minimal-freebsd-server-no-gui/)  
+1.14. [How to customize the installer with advanced partitioning.](/how-to-customize-the-installer-with-advanced-partitioning-on-freebsd/)  
+1.15. [How to troubleshoot "No Bootable Device" errors.](/how-to-troubleshoot-no-bootable-device-errors-on-freebsd-operating-system/)  
+1.16. [How to install FreeBSD alongside Linux (e.g., Ubuntu).](/how-to-install-freebsd-alongside-linux-eg-ubuntu-on-freebsd-operating-system/)  
+1.17. [How to enable SSH access during the first boot.](/how-to-enable-ssh-access-during-the-first-boot-on-freebsd-operating-system/)  
+1.18. [How to use the FreeBSD installer in non-interactive mode.](/how-to-use-the-freebsd-installer-in-non-interactive-mode/)  
+1.19. [How to install FreeBSD on a USB drive for portable use.](/how-to-install-freebsd-on-a-usb-drive-for-portable-use-on-freebsd-operating-system/)  
+1.20. [How to configure a static IP during installation.](/configuring-a-static-ip-during-freebsd-installation/)  
+1.21. [How to set up a BIOS vs. UEFI installation.](/bios-vs-uefi-installation-on-freebsd/)  
+1.22. [How to install FreeBSD on a legacy system (MBR partitioning).](/installing-freebsd-on-legacy-systems/)  
+1.23. [How to use the FreeBSD live CD for system recovery.](/mastering-system-recovery-on-freebsd-live-cd/)  
+1.24. [How to enable TRIM support for SSDs during installation.](/maximizing-ssd-performance-with-trim-support-in-freebsd/)  
+1.25. [How to install FreeBSD on a NAS device.](/how-to-install-freebsd-on-a-nas-device/)  
 
 ---
 
 ### **2. Basic System Administration**  
 
-2.1. How to add and remove user accounts via the command line.  
-2.2. How to grant sudo privileges to users.  
-2.3. How to update FreeBSD with `freebsd-update fetch install`.  
-2.4. How to schedule tasks with `cron` and `crontab`.  
-2.5. How to view system logs using `dmesg` and `/var/log/messages`.  
-2.6. How to manage services with `service` and `/etc/rc.conf`.  
-2.7. How to change the system hostname permanently.  
-2.8. How to set the timezone using `tzsetup`.  
-2.9. How to monitor CPU/RAM usage with `top` and `htop`.  
-2.10. How to configure static IP addresses in `/etc/rc.conf`.  
+2.1. [How to add and remove user accounts via the command line.](/how-to-add-and-remove-user-accounts-via-the-command-line-on-freebsd-operating-system/)  
+2.2. [How to grant sudo privileges to users.](/how-to-grant-sudo-privileges-to-users-on-freebsd-operating-system/)  
+2.3. [How to update FreeBSD with `freebsd-update fetch install`.](/how-to-update-freebsd-with-freebsd-update-fetch-install-on-freebsd-operating-system/)  
+2.4. [How to schedule tasks with `cron` and `crontab`.](/how-to-schedule-tasks-with-cron-and-crontab-on-freebsd-operating-system/)  
+2.5. [How to view system logs using `dmesg` and `/var/log/messages`.](/how-to-view-system-logs-using-dmesg-and-varlogmessages-on-freebsd-operating-system/)  
+2.6. [How to manage services with `service` and `/etc/rc.conf`.](/how-to-manage-services-with-service-and-etcrcconf-on-freebsd-operating-system/)  
+2.7. [How to change the system hostname permanently.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
+2.8. [How to set the timezone using `tzsetup`.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
+2.9. [How to monitor CPU/RAM usage with `top` and `htop`.](/how-to-monitor-cpuram-usage-with-top-and-htop-on-freebsd-operating-system/)  
+2.10. [How to configure static IP addresses in `/etc/rc.conf`.](/how-to-configure-static-ip-addresses-in-etcrcconf-on-freebsd-operating-system/)  
 2.11. How to reset a forgotten root password.  
 2.12. How to check disk space with `df` and `du`.  
 2.13. How to manage kernel modules with `kldload` and `kldstat`.  

@@ -20,7 +20,7 @@ Understanding file systems is crucial for anyone working with computers, as they
 
 ## What is FAT32?
 
-FAT32 is an evolution of the original FAT file system, which was developed by Microsoft in the late 1970s. Introduced with Windows 95 OSR2, FAT32 was designed to overcome the limitations of its predecessors, FAT12 and FAT16. It allows for larger disk sizes and supports more files than earlier versions. 
+FAT32 is an evolution of the original FAT file system, which was developed by Microsoft in the late 1970s. Introduced with Windows 95 OSR2, FAT32 was designed to overcome the limitations of its predecessors, FAT12 and FAT16. It allows for larger disk sizes and supports more files than earlier versions.
 
 ### Key Features of FAT32
 

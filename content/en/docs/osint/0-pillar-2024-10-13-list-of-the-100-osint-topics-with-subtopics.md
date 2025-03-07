@@ -91,7 +91,7 @@ Here's an expanded list of the 100 OSINT topics with subtopics:
 
 * [Tools used by law enforcement agencies](/unique-osint-tools-used-by-law-enforcement/)
 
-* 300 [Cross-referencing social media with public records](/cross-referencing-social-media-with-public-records/)
+* [Cross-referencing social media with public records](/cross-referencing-social-media-with-public-records/)
 
 7. **Analyzing Publicly Available Databases**
 
@@ -107,7 +107,7 @@ Here's an expanded list of the 100 OSINT topics with subtopics:
 
 8. **Corporate Espionage using OSINT**
 
-* 360[Investigating competitors' public-facing documents](/investigating-competitors-public-facing-documents-for-osint-uncovering-competitive-insights/)
+* [Investigating competitors' public-facing documents](/investigating-competitors-public-facing-documents-for-osint-uncovering-competitive-insights/)
 
 * [Extracting financial information from quarterly reports](/extracting-financial-information-from-quarterly-reports-for-osint/)
 
