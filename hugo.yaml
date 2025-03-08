@@ -153,6 +153,9 @@ params:
 
   # Enable syntax highlighting and copy buttons on code blocks with Prism
   prism_syntax_highlighting: true
+  
+  katex:
+    enable: true
 
   copyright:
     authors: Siberoloji | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
