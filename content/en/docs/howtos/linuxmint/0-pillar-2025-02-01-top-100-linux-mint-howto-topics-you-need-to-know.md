@@ -230,29 +230,29 @@ featured_image: /images/linuxmint1.webp
 21. [How to manage security backups](/how-to-manage-security-backups-with-cinnamon-desktop-on-linux-mint/)
 22. [How to configure security monitoring](/how-to-configure-security-monitoring-with-cinnamon-desktop-on-linux-mint/)
 23. [How to set up secure networking](/how-to-set-up-secure-networking-with-cinnamon-desktop-on-linux-mint/)
-24. How to manage security patches
-25. How to configure security scanning
-26. How to set up security alerts
-27. How to manage security tokens
-28. How to configure security groups
-29. How to set up security profiles
-30. How to manage security compliance
+24. [How to manage security patches](/how-to-manage-security-patches-with-cinnamon-desktop-on-linux-mint/)
+25. [How to configure security scanning](/how-to-configure-security-scanning-with-cinnamon-desktop-on-linux-mint/)
+26. [How to set up security alerts](/how-to-set-up-security-alerts-with-cinnamon-desktop-on-linux-mint/)
+27. [How to manage security tokens](/how-to-manage-security-tokens-with-cinnamon-desktop-on-linux-mint/)
+28. [How to configure security groups](/how-to-configure-security-groups-with-cinnamon-desktop-on-linux-mint/)
+29. [How to set up security profiles](/how-to-set-up-security-profiles-with-cinnamon-desktop-on-linux-mint/)
+30. [How to manage security compliance](/how-to-manage-security-compliance-with-cinnamon-desktop-on-linux-mint/)
 
 ## Troubleshooting (35 topics)
 
-1. How to fix boot problems
-2. How to resolve package conflicts
-3. How to fix network issues
-4. How to troubleshoot sound problems
-5. How to resolve display issues
-6. How to fix printer problems
-7. How to troubleshoot system crashes
-8. How to resolve driver issues
-9. How to fix package manager problems
-10. How to troubleshoot login issues
-11. How to resolve update errors
-12. How to fix performance problems
-13. How to troubleshoot file system issues
+1. [How to fix boot problems](/how-to-fix-boot-problems-with-cinnamon-desktop-on-linux-mint/)
+2. [How to resolve package conflicts](/how-to-resolve-package-conflicts-with-cinnamon-desktop-on-linux-mint/)
+3. [How to fix network issues](/how-to-fix-network-issues-with-cinnamon-desktop-on-linux-mint/)
+4. [How to troubleshoot sound problems](/how-to-troubleshoot-sound-problems-with-cinnamon-desktop-on-linux-mint/)
+5. [How to resolve display issues](/how-to-resolve-display-issues-with-cinnamon-desktop-on-linux-mint/)
+6. [How to fix printer problems](/how-to-fix-printer-problems-with-cinnamon-desktop-on-linux-mint/)
+7. [How to troubleshoot system crashes](/how-to-troubleshoot-system-crashes-with-cinnamon-desktop-on-linux-mint/)
+8. [How to resolve driver issues](/how-to-resolve-driver-issues-with-cinnamon-desktop-on-linux-mint/)
+9. [How to fix package manager problems](/how-to-fix-package-manager-problems-with-cinnamon-desktop-on-linux-mint/)
+10. [How to troubleshoot login issues](/how-to-troubleshoot-login-issues-with-cinnamon-desktop-on-linux-mint/)
+11. [How to resolve update errors](/how-to-resolve-update-errors-with-cinnamon-desktop-on-linux-mint/)
+12. [How to fix performance problems](/how-to-fix-performance-problems-with-cinnamon-desktop-on-linux-mint/)
+13. [How to troubleshoot file system issues](/how-to-troubleshoot-file-system-issues-with-cinnamon-desktop-on-linux-mint/)
 14. How to resolve hardware conflicts
 15. How to fix desktop environment problems
 16. How to troubleshoot application crashes

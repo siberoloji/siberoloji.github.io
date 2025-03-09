@@ -1,19 +1,21 @@
 ---
 draft: false
-
-title:  'Boolean Functions and Expressions: A Comprehensive Guide'
-date: '2024-10-07T21:03:48+03:00'
+title: "Boolean Functions and Expressions: A Comprehensive Guide"
+description: A comprehensive guide to understanding Boolean functions and expressions in computer science.
+linkTitle: Boolean Functions and Expressions
+translationKey: boolean-functions-and-expressions
+weight: 30
+date: 2024-10-07T21:03:48+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
- 
- 
-url:  /boolean-functions-and-expressions-a-comprehensive-guide/
- 
+url: /boolean-functions-and-expressions-a-comprehensive-guide/
 featured_image: /images/digital-logic-design.webp
 categories:
-    - 'Digital Logic Design'
+    - Digital Logic Design
 tags:
-    - 'computer engineering'
-    - 'digital logic design'
+    - computer engineering
+    - digital logic design
+keywords:
+    - boolean functions
 ---
 
 

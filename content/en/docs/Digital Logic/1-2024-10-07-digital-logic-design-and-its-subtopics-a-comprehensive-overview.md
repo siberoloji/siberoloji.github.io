@@ -1,6 +1,10 @@
 ---
 draft: false
-title: "Digital Logic Design and Its Subtopics: A Comprehensive Overview"
+title: What is Digital Logic Design?
+description: This article provides a comprehensive overview of digital logic design and its various subtopics, offering insights into this crucial field for both students and professionals alike.
+linkTitle: Digital Logic Design
+translationKey: digital-logic-design-and-its-subtopics-a-comprehensive-overview
+weight: 2
 date: 2024-10-07T20:56:30+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /digital-logic-design-and-its-subtopics-a-comprehensive-overview/
@@ -10,8 +14,8 @@ categories:
 tags:
     - computer engineering
     - digital logic design
-weight: 1
-translationKey: digital-logic-design-and-its-subtopics-a-comprehensive-overview
+keywords:
+    - digital logic design
 ---
 
 

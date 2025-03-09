@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Boolean Algebra Truth Tables
+linkTitle: Boolean Algebra Truth Tables
 description: Understanding Boolean Algebra and Truth Tables in Logic, Mathematics, and Computer Science for Digital Logic Design.
 date: 2024-10-07T21:08:47+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
@@ -13,8 +14,10 @@ tags:
     - digital logic design
     - truth tables
 translationKey: boolean-algebra-truth-tables
+weight: 40
+keywords:
+    - boolean algebra
 ---
-
 
 Boolean algebra and truth tables are foundational concepts in logic, mathematics, and computer science. They provide a systematic way to analyze and represent logical expressions and functions. This article will delve into the principles of Boolean algebra, the construction of truth tables, their applications, and their significance in various fields.
 
@@ -159,11 +162,19 @@ Boolean algebra and truth tables are foundational concepts that play crucial rol
 Mastering Boolean algebra and truth tables not only improves analytical skills but also equips individuals with essential tools for problem-solving in technical domains. Whether you're designing digital circuits or evaluating logical arguments, understanding these concepts will undoubtedly enrich your comprehension of logic and reasoning.
 
 Citations:
+
 [1] <https://en.wikipedia.org/wiki/Truth_table>
+
 [2] <https://www.geeksforgeeks.org/boolean-algebra/>
+
 [3] <https://www.electronics-lab.com/article/boolean-algebra-truth-tables/>
+
 [4] <https://byjus.com/maths/boolean-algebra/>
+
 [5] <https://codecoda.com/en/blog/entry/truth-tables-and-conditional-statements-in-programming>
+
 [6] <https://www.allaboutcircuits.com/textbook/digital/chpt-7/converting-truth-tables-boolean-expressions/>
-[7] <https://math.libretexts.org/Courses/Prince_Georges_Community_College/MAT_1130_Mathematical_Ideas_Mirtova_Jones_(PGCC:_Fall_2022)/02:_Logic/2.02:_Introduction_to_Truth_Tables>
+
+[7] <https://math.libretexts.org/Courses/Prince_Georges_Community_College/>
+
 [8] <http://mathmisery.com/wp/2015/03/08/truth-tables-a-gripe/>

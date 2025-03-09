@@ -1,6 +1,9 @@
 ---
 draft: false
 title: "Boolean Algebra and Logic Gates: The Foundation of Digital Systems"
+description: In this article, we will explore the core principles of Boolean algebra and logic gates, how they work, and their importance in digital systems.
+linkTitle: Boolean Algebra and Logic Gates
+weight: 10
 date: 2024-10-07T21:00:20+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 url: /boolean-algebra-and-logic-gates-the-foundation-of-digital-systems/
