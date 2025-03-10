@@ -253,39 +253,39 @@ featured_image: /images/linuxmint1.webp
 11. [How to resolve update errors](/how-to-resolve-update-errors-with-cinnamon-desktop-on-linux-mint/)
 12. [How to fix performance problems](/how-to-fix-performance-problems-with-cinnamon-desktop-on-linux-mint/)
 13. [How to troubleshoot file system issues](/how-to-troubleshoot-file-system-issues-with-cinnamon-desktop-on-linux-mint/)
-14. How to resolve hardware conflicts
-15. How to fix desktop environment problems
-16. How to troubleshoot application crashes
-17. How to resolve permission issues
-18. How to fix repository problems
-19. How to troubleshoot memory issues
-20. How to resolve disk space problems
-21. How to fix USB device issues
-22. How to troubleshoot graphics problems
-23. How to resolve network connection issues
-24. How to fix system freezes
-25. How to troubleshoot kernel issues
-26. How to resolve authentication problems
-27. How to fix software dependencies
-28. How to troubleshoot backup issues
-29. How to resolve file corruption
-30. How to fix system slowdown
-31. How to troubleshoot security issues
-32. How to resolve configuration problems
-33. How to fix system startup issues
-34. How to troubleshoot driver conflicts
-35. How to resolve software compatibility issues
+14. [How to resolve hardware conflicts](/how-to-resolve-hardware-conflicts-with-cinnamon-desktop-on-linux-mint/)
+15. [How to fix desktop environment problems](/how-to-fix-desktop-environment-problems-with-cinnamon-desktop-on-linux-mint/)
+16. [How to troubleshoot application crashes](/how-to-troubleshoot-application-crashes-with-cinnamon-desktop-on-linux-mint/)
+17. [How to resolve permission issues](/how-to-resolve-permission-issues-with-cinnamon-desktop-on-linux-mint/)
+18. [How to fix repository problems](/how-to-fix-repository-problems-with-cinnamon-desktop-on-linux-mint/)
+19. [How to troubleshoot memory issues](/how-to-troubleshoot-memory-issues-with-cinnamon-desktop-on-linux-mint/)
+20. [How to resolve disk space problems](/how-to-resolve-disk-space-problems-with-cinnamon-desktop-on-linux-mint/)
+21. [How to fix USB device issues](/troubleshooting-usb-device-issues-with-cinnamon-desktop-on-linux-mint/)
+22. [How to troubleshoot graphics problems](/how-to-troubleshoot-graphics-problems-with-cinnamon-desktop-on-linux-mint/)
+23. [How to resolve network connection issues](/how-to-resolve-network-connection-issues-with-cinnamon-desktop-on-linux-mint/)
+24. [How to fix system freezes](/how-to-fix-system-freezes-with-cinnamon-desktop-on-linux-mint/)
+25. [How to troubleshoot kernel issues](/how-to-troubleshoot-kernel-issues-with-cinnamon-desktop-on-linux-mint/)
+26. [How to resolve authentication problems](/how-to-resolve-authentication-problems-with-cinnamon-desktop-on-linux-mint/)
+27. [How to fix software dependencies](/how-to-fix-software-dependencies-with-cinnamon-desktop-on-linux-mint/)
+28. [How to troubleshoot backup issues](/how-to-troubleshoot-backup-issues-with-cinnamon-desktop-on-linux-mint/)
+29. [How to resolve file corruption](/how-to-resolve-file-corruption-with-cinnamon-desktop-on-linux-mint/)
+30. [How to fix system slowdown](/how-to-fix-system-slowdown-with-cinnamon-desktop-on-linux-mint/)
+31. [How to troubleshoot security issues](/how-to-troubleshoot-security-issues-with-cinnamon-desktop-on-linux-mint/)
+32. [How to resolve configuration problems](/how-to-resolve-configuration-problems-with-cinnamon-desktop-on-linux-mint/)
+33. [How to fix system startup issues](/how-to-fix-system-startup-issues-with-cinnamon-desktop-on-linux-mint/)
+34. [How to troubleshoot driver conflicts](/how-to-troubleshoot-driver-conflicts-with-cinnamon-desktop-on-linux-mint/)
+35. [How to resolve software compatibility issues](/how-to-resolve-software-compatibility-issues-with-cinnamon-desktop-on-linux-mint/)
 
 ## Advanced Topics (35 topics)
 
-1. How to compile software from source
-2. How to use the command line effectively
-3. How to write shell scripts
-4. How to configure system services
-5. How to manage virtual machines
-6. How to set up development environments
-7. How to configure server applications
-8. How to manage system resources
+1. [How to compile software from source](/how-to-compile-software-from-source-with-cinnamon-desktop-on-linux-mint/)
+2. [How to use the command line effectively](/how-to-use-the-command-line-effectively-with-cinnamon-desktop-on-linux-mint/)
+3. [How to write shell scripts](/how-to-write-shell-scripts-with-cinnamon-desktop-on-linux-mint/)
+4. [How to configure system services](/how-to-configure-system-services-with-cinnamon-desktop-on-linux-mint/)
+5. [How to manage virtual machines](/how-to-manage-virtual-machines-with-cinnamon-desktop-on-linux-mint/)
+6. [How to set up development environments](/how-to-set-up-development-environments-with-cinnamon-desktop/)
+7. [How to configure server applications](/how-to-configure-server-applications-with-cinnamon-desktop-on-linux-mint/)
+8. [How to manage system resources](/how-to-manage-system-resources-with-cinnamon-desktop/)
 9. How to customize kernel parameters
 10. How to set up automated tasks
 11. How to configure system logging
