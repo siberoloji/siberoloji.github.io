@@ -2,6 +2,8 @@
 title: Initial Settings
 date: 2024-11-05
 description: Initial Settings for AlmaLinux 9
+translationKey: initial-settings-almalinux9
+url: initial-settings-almalinux9
 categories:
   - Linux
 tags:

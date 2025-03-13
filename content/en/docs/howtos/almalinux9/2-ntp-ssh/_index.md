@@ -2,6 +2,8 @@
 title: NTP / SSH Settings
 date: 2024-11-05
 description: "AlmaLinux 9: NTP / SSH Settings"
+url: ntp-ssh-settings-almalinux9
+translationKey: ntp-ssh-settings-almalinux9
 categories:
   - AlmaLinux 9
 tags:
