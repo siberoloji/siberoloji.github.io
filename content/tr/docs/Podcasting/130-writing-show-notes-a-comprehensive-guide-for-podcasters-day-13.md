@@ -1,13 +1,13 @@
 ---
-draft: true
+draft: false
 weight: 130
-title: "Writing Show Notes: Day 13"
-linkTitle: Writing Show Notes
+title: "Gösteri Notları Yazma: 13. Gün"
+linkTitle: Gösteri Notları Yazma
 translationKey: writing-show-notes
-description: Writing show notes for your podcast is an essential part of podcast production. Learn how to create effective show notes that enhance your podcast.
+description: Podcast'iniz için gösteri notları yazmak, podcast prodüksiyonunun önemli bir parçasıdır. Podcast'inizi geliştiren etkili gösteri notları oluşturmayı öğrenin.
 date: 2024-10-10T20:53:34+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /writing-show-notes-a-comprehensive-guide-for-podcasters-day-13/
+url: /tr/writing-show-notes-a-comprehensive-guide-for-podcasters-day-13/
 featured_image: /images/podcast.webp
 categories:
     - Podcasting
@@ -16,151 +16,150 @@ tags:
     - Podcaster
     - podcasting
 ---
-Welcome to Day 13 of our 30-day podcast launch journey! Today, we're diving into an often overlooked but crucial aspect of podcast production: writing show notes. While your audio content is the star of the show, well-crafted show notes can significantly enhance your podcast's discoverability, accessibility, and overall value to your audience. Let's explore why show notes matter and how to create them effectively.
+30 günlük podcast lansman yolculuğumuzun 13. Gününe hoş geldiniz! Bugün, podcast prodüksiyonunun genellikle göz ardı edilen ancak önemli bir yönüne, gösteri notları yazmaya dalıyoruz. Sesli içeriğiniz gösterinin yıldızı olsa da, iyi hazırlanmış gösteri notları podcast'inizin keşfedilebilirliğini, erişilebilirliğini ve izleyicileriniz için genel değerini önemli ölçüde artırabilir. Gösteri notlarının neden önemli olduğunu ve bunların etkili bir şekilde nasıl oluşturulacağını inceleyelim.
 
-## What Are Show Notes?
+## Gösteri Notları Nedir?
 
-Before we delve into the importance and creation of show notes, let's define what they are:
+Gösteri notlarının önemine ve oluşturulmasına dalmadan önce, bunların ne olduğunu tanımlayalım:
 
-Show notes are written summaries or descriptions that accompany each episode of your podcast. They typically include an overview of the episode's content, key points discussed, timestamps for different segments, links to resources mentioned, and any other relevant information.
+Gösteri notları, podcast'inizin her bölümüne eşlik eden yazılı özetler veya açıklamalardır. Genellikle bölümün içeriğinin genel bir görünümünü, tartışılan önemli noktaları, farklı bölümler için zaman damgalarını, bahsedilen kaynaklara bağlantıları ve diğer ilgili bilgileri içerirler.
 
-## The Importance of Show Notes
+## Gösteri Notlarının Önemi
 
-You might be wondering why you should spend time crafting show notes when your primary content is audio. Here are several compelling reasons:
+Birincil içeriğiniz ses olduğunda gösteri notları hazırlamak için neden zaman harcamanız gerektiğini merak ediyor olabilirsiniz. İşte birkaç ikna edici neden:
 
-* **Improved SEO**: Search engines can't crawl audio content, but they can index your show notes. Well-written show notes can help your podcast appear in search results, increasing discoverability.
+* **Gelişmiş SEO**: Arama motorları sesli içeriği tarayamaz, ancak gösteri notlarınızı dizine ekleyebilir. İyi yazılmış gösteri notları, podcast'inizin arama sonuçlarında görünmesine yardımcı olarak keşfedilebilirliği artırabilir.
 
-* **Accessibility**: Show notes make your content accessible to those who are deaf or hard of hearing, as well as to those who prefer reading to listening.
+* **Erişilebilirlik**: Gösteri notları, içeriğinizi sağır veya işitme güçlüğü çeken kişiler ve dinlemektense okumayı tercih eden kişiler için erişilebilir hale getirir.
 
-* **Episode Preview**: Potential listeners can quickly scan your show notes to decide if an episode interests them, potentially increasing your listener base.
+* **Bölüm Önizlemesi**: Potansiyel dinleyiciler, bir bölümün kendilerini ilgilendirip ilgilendirmediğine karar vermek için gösteri notlarınızı hızla tarayabilir ve böylece dinleyici tabanınızı artırabilir.
 
-* **Reference Material**: Listeners can refer back to show notes to find specific information, links, or resources mentioned in your podcast without having to relisten to the entire episode.
+* **Referans Malzemesi**: Dinleyiciler, tüm bölümü yeniden dinlemek zorunda kalmadan podcast'inizde bahsedilen belirli bilgileri, bağlantıları veya kaynakları bulmak için gösteri notlarına geri dönebilir.
 
-* **Content Repurposing**: Good show notes can serve as a basis for blog posts, social media content, or other marketing materials.
+* **İçerik Yeniden Kullanımı**: İyi gösteri notları, blog yazıları, sosyal medya içerikleri veya diğer pazarlama materyalleri için bir temel oluşturabilir.
 
-* **Engagement Boost**: Including links, resources, and calls-to-action in your show notes can drive listener engagement beyond just listening to your podcast.
+* **Etkileşimi Artırma**: Gösteri notlarınıza bağlantılar, kaynaklar ve harekete geçirici mesajlar eklemek, dinleyicilerin katılımını yalnızca podcast'inizi dinlemenin ötesine taşıyabilir.
 
-* **Professionalism**: Comprehensive show notes demonstrate your commitment to providing value to your audience, enhancing your podcast's professional image.
-Now that we understand why show notes are important, let's look at how to create effective ones.
+* **Profesyonellik**: Kapsamlı gösteri notları, izleyicilerinize değer sağlama konusundaki kararlılığınızı gösterir ve podcast'inizin profesyonel imajını geliştirir.
+Gösteri notlarının neden önemli olduğunu anladığımıza göre, etkili olanların nasıl oluşturulacağına bakalım.
 
-## Elements of Effective Show Notes
+## Etkili Gösteri Notlarının Unsurları
 
-While the exact content of your show notes may vary depending on your podcast's style and subject matter, here are some key elements to consider including:
+Gösteri notlarınızın tam içeriği, podcast'inizin tarzına ve konusuna bağlı olarak değişebilse de, dikkate alınması gereken bazı önemli unsurlar şunlardır:
 
-* **Episode Title**: A clear, descriptive title that accurately represents the episode's content.
+* **Bölüm Başlığı**: Bölümün içeriğini doğru bir şekilde temsil eden net, açıklayıcı bir başlık.
 
-* **Episode Number**: For easy reference and to help listeners track their progress through your series.
+* **Bölüm Numarası**: Kolay başvuru için ve dinleyicilerin dizinizdeki ilerlemelerini takip etmelerine yardımcı olmak için.
 
-* **Publication Date**: To keep your content organized chronologically.
+* **Yayın Tarihi**: İçeriğinizi kronolojik olarak düzenli tutmak için.
 
-* **Brief Description**: A one or two-sentence overview of what the episode is about.
+* **Kısa Açıklama**: Bölümün ne hakkında olduğuna dair bir veya iki cümlelik bir genel bakış.
 
-* **Detailed Summary**: A more in-depth description of the episode's content, main topics, and key takeaways.
+* **Ayrıntılı Özet**: Bölümün içeriği, ana konuları ve önemli çıkarımların daha derinlemesine bir açıklaması.
 
-* **Timestamps**: Markers indicating when specific topics or segments begin in the episode.
+* **Zaman Damgaları**: Bölümde belirli konuların veya bölümlerin ne zaman başladığını gösteren işaretler.
 
-* **Guest Information**: If applicable, include the name, title, and brief bio of any guests featured in the episode.
+* **Konuk Bilgileri**: Uygunsa, bölümde yer alan tüm konukların adını, unvanını ve kısa biyografisini ekleyin.
 
-* **Links and Resources**: Any websites, books, articles, or other resources mentioned during the episode.
+* **Bağlantılar ve Kaynaklar**: Bölüm sırasında bahsedilen tüm web siteleri, kitaplar, makaleler veya diğer kaynaklar.
 
-* **Quotes**: Notable or shareable quotes from the episode.
+* **Alıntılar**: Bölümden önemli veya paylaşılabilir alıntılar.
 
-* **Call-to-Action**: Encourage listeners to subscribe, leave a review, or engage with your podcast in some way.
+* **Harekete Geçirici Mesaj**: Dinleyicileri abone olmaya, yorum bırakmaya veya bir şekilde podcast'inizle etkileşime girmeye teşvik edin.
 
-* **Transcription**: While not always necessary, a full transcription can be valuable for accessibility and SEO.
+* **Transkript**: Her zaman gerekli olmasa da, tam bir transkripsiyon erişilebilirlik ve SEO açısından değerli olabilir.
 
-## Tips for Writing Effective Show Notes
+## Etkili Gösteri Notları Yazmak İçin İpuçları
 
-Now that we know what to include, here are some tips on how to write show notes that truly enhance your podcast:
+Neleri dahil edeceğimizi öğrendiğimize göre, podcast'inizi gerçekten geliştirecek gösteri notları yazmak için bazı ipuçları:
 
-* **Be Concise Yet Informative**: Provide enough detail to be useful, but keep it brief enough that readers can quickly scan the content.
+* **Özlü Ama Bilgilendirici Olun**: Yararlı olacak kadar ayrıntı sağlayın, ancak okuyucuların içeriği hızlıca tarayabileceği kadar kısa tutun.
 
-* **Use Formatting for Readability**: Utilize headings, bullet points, and paragraph breaks to make your show notes easy to read and navigate.
+* **Okunabilirlik İçin Biçimlendirme Kullanın**: Gösteri notlarınızın okunmasını ve gezinmesini kolaylaştırmak için başlıklar, madde işaretleri ve paragraf sonları kullanın.
 
-* **Optimize for SEO**: Include relevant keywords naturally throughout your show notes, especially in the title and opening paragraph.
+* **SEO İçin Optimize Edin**: Gösteri notlarınızda, özellikle başlıkta ve açılış paragrafında, doğal olarak ilgili anahtar kelimeleri ekleyin.
 
-* **Make it Scannable**: Use bold text or subheadings to highlight key points or segment titles.
+* **Taranabilir Hale Getirin**: Önemli noktaları vurgulamak veya başlıkları segmentlere ayırmak için kalın metin veya alt başlıklar kullanın.
 
-* **Include Relevant Links**: Make sure all links are working and lead to valuable, relevant content.
+* **İlgili Bağlantılar Ekleyin**: Tüm bağlantıların çalıştığından ve değerli, ilgili içeriğe yönlendirdiğinden emin olun.
 
-* **Be Consistent**: Develop a template or format for your show notes and stick to it across episodes for a professional look.
+* **Tutarlı Olun**: Gösteri notlarınız için bir şablon veya biçim geliştirin ve profesyonel bir görünüm için bölümler boyunca buna sadık kalın.
 
-* **Proofread**: Ensure your show notes are free of spelling and grammatical errors.
+* **Düzeltme**: Gösteri notlarınızın yazım ve dilbilgisi hatalarından arınmış olduğundan emin olun.
+* **İlgi Çekici Bir Dil Kullanın**: Podcast'inizin tonuna uyan ve okuyucuları bölümün tamamını dinlemeye teşvik eden bir üslupla yazın.
 
-* **Use Engaging Language**: Write in a style that matches your podcast's tone and encourages readers to listen to the full episode.
+* **Görsel Öğeler Ekleyin**: Uygun durumlarda, anlayışı ve etkileşimi artırmak için görseller, grafikler veya diğer görsel öğeler ekleyin.
 
-* **Include Visual Elements**: Where appropriate, add images, charts, or other visual elements to enhance understanding and engagement.
+* **Gerektiğinde Güncelleyin**: Bilgiler güncelliğini yitirirse veya bağlantılar değişirse, güncel tutmak için gösteri notlarınızı güncelleyin.
 
-* **Update as Necessary**: If information becomes outdated or links change, update your show notes to keep them current.
+## Etkili Gösteri Notlarına Örnekler
 
-## Examples of Effective Show Notes
+Popüler podcast'lerden iyi hazırlanmış gösteri notlarına birkaç örnek inceleyelim:
 
-Let's look at a few examples of well-crafted show notes from popular podcasts:
+* **This American Life**: Bu podcast, net bir bölüm açıklaması, zaman damgalarıyla bölüm bölüm dökümü ve ilgili içeriklere bağlantılar sağlar. Ayrıca tam bir transkript de içerirler. Örnek: [This American Life](https://www.thisamericanlife.org/758/talking-while-black)
 
-* **This American Life**: This podcast provides a clear episode description, act-by-act breakdown with timestamps, and links to related content. They also include a full transcript. Example: [This American Life](https://www.thisamericanlife.org/758/talking-while-black)
+* **TED Radio Hour**: Gösteri notları kısa bir bölüm açıklaması, zaman damgalı bölümler, atıfta bulunulan tam TED konuşmalarına bağlantılar ve konuk bilgileri içerir. Örnek: [TED Radio Hour](https://www.npr.org/programs/ted-radio-hour/1174796558/how-were-doing)
 
-* **TED Radio Hour**: Their show notes include a brief episode description, segments with timestamps, links to full TED talks referenced, and guest information. Example: [TED Radio Hour](https://www.npr.org/programs/ted-radio-hour/1174796558/how-were-doing)
+* **Freakonomics Radio**: Ayrıntılı bir bölüm açıklaması, tam metin ve gösteride bahsedilen kaynaklara bağlantılar sağlarlar. Örnek: [Freakonomics Radio](https://freakonomics.com/podcast/why-do-we-really-follow-the-news-rebroadcast/)
+Bu örnekler, her biri podcast'in ve hedef kitlesinin özel ihtiyaçlarına göre uyarlanmış, gösteri notlarına yönelik farklı yaklaşımları gösterir. Kendi fikirleriniz için fikir edinmek üzere nişinizdeki podcast'lerden gösteri notlarını inceleyin.
 
-* **Freakonomics Radio**: They provide a detailed episode description, full transcript, and links to resources mentioned in the show. Example: [Freakonomics Radio](https://freakonomics.com/podcast/why-do-we-really-follow-the-news-rebroadcast/)
-These examples demonstrate different approaches to show notes, each tailored to the specific needs of the podcast and its audience. Study show notes from podcasts in your niche to get ideas for your own.
+## Alıştırma: İlk Bölümünüz İçin Gösteri Notları Yazma
 
-## Exercise: Writing Show Notes for Your First Episode
+Teoriyi ele aldığımıza ve bazı örneklere baktığımıza göre, bu bilgiyi pratiğe dökmenin zamanı geldi. İlk bölümünüz için gösteri notları oluşturmak üzere şu adımları izleyin:
 
-Now that we've covered the theory and looked at some examples, it's time to put this knowledge into practice. Follow these steps to create show notes for your first episode:
+* **Bölümünüzü Dinleyin**: Daha önce yapmadıysanız, ilk bölümünüzü baştan sona dinleyin ve ilerledikçe notlar alın.
 
-* **Listen to Your Episode**: If you haven't already, listen to your first episode in full, taking notes as you go.
+* **Bir Ana Hat Oluşturun**: Notlarınıza dayanarak bölümünüzde ele alınan ana konuların bir ana hatlarını oluşturun.
 
-* **Create an Outline**: Based on your notes, create an outline of the main topics covered in your episode.
+* **Kısa Bir Açıklama Yazın**: Bir veya iki cümlede bölümünüzün ne hakkında olduğunu özetleyin.
 
-* **Write a Brief Description**: In one or two sentences, summarize what your episode is about.
+* **Ayrıntılı Bir Özet Geliştirin**: Kısa açıklamanızı genişletin, önemli noktaları ve çıkarımları vurgulayın.
 
-* **Develop a Detailed Summary**: Expand on your brief description, highlighting key points and takeaways.
+* **Zaman Damgaları Ekleyin**: Bölümünüzü tekrar gözden geçirin ve yeni konuların veya bölümlerin başladığı zamanları not edin.
 
-* **Add Timestamps**: Go through your episode again, noting the times when new topics or segments begin.
+* **Bağlantılar ve Kaynaklar Ekleyin**: Bölümünüzde bahsedilen tüm web sitelerini, kitapları veya diğer kaynakları listeleyin.
 
-* **Include Links and Resources**: List any websites, books, or other resources mentioned in your episode.
+* **Harekete Geçirici Mesaj Ekleyin**: İzleyicilerinizi podcast'inizle daha fazla etkileşime girmeye teşvik edin.
 
-* **Insert a Call-to-Action**: Encourage your audience to engage further with your podcast.
-
-* **Proofread and Format**: Review your show notes for errors and format them for easy reading.
-Here's a template you can use:
+* **Düzeltme ve Biçimlendirme**: Gösteri notlarınızı hatalara karşı inceleyin ve kolay okunacak şekilde biçimlendirin.
+Kullanabileceğiniz bir şablon:
 
 ```bash
-[Episode Number]: [Episode Title]
-[Publication Date]
+[Bölüm Numarası]: [Bölüm Başlığı]
+[Yayın Tarihi]
 
-[Brief Description]
+[Kısa Açıklama]
 
-In this episode of [Podcast Name], we explore [main topic]. [Guest name, if applicable] joins us to discuss [specific aspects of the topic]. We delve into [key points] and offer insights on [main takeaways].
+[Podcast Adı]'nın bu bölümünde [ana konu]'yu ele alıyoruz. [Konuk adı, varsa] [konunun belirli yönlerini] tartışmak için bize katılıyor. [Temel noktalara] dalıyoruz ve [ana çıkarımlar] hakkında içgörüler sunuyoruz.
 
-Episode Highlights:
-[Timestamp] - [Topic 1]
-[Timestamp] - [Topic 2]
-[Timestamp] - [Topic 3]
+Bölüm Özetleri:
+[Zaman Damgası] - [Konu 1]
+[Zaman Damgası] - [Konu 2]
+[Zaman Damgası] - [Konu 3]
 
-Key Takeaways:
-1. [Takeaway 1]
-2. [Takeaway 2]
-3. [Takeaway 3]
+Önemli Çıkarımlar:
+1. [Çıkarım 1]
+2. [Çıkarım 2]
+3. [Çıkarım 3]
 
-Resources Mentioned:
-- [Resource 1]: [Link]
-- [Resource 2]: [Link]
-- [Resource 3]: [Link]
+Bahsedilen Kaynaklar:
+- [Kaynak 1]: [Bağlantı]
+- [Kaynak 2]: [Bağlantı]
+- [Kaynak 3]: [Bağlantı]
 
-Connect with us:
-[Social Media Links]
-[Website]
+Bizimle iletişime geçin:
+[Sosyal Medya Bağlantıları]
+[Web Sitesi]
 
-Don't forget to subscribe to [Podcast Name] on your favorite podcast platform and leave us a review if you enjoyed this episode!
+Bu bölümü beğendiyseniz, en sevdiğiniz podcast platformunda [Podcast Adı]'na abone olmayı ve bize bir yorum bırakmayı unutmayın!
 ```
 
-## Conclusion
+## Sonuç
 
-Writing effective show notes is an art that combines concise writing, strategic thinking, and a deep understanding of your audience's needs. While it may seem like extra work on top of producing your podcast, well-crafted show notes can significantly enhance your podcast's reach, accessibility, and overall value to your listeners.
+Etkili gösteri notları yazmak, özlü yazmayı, stratejik düşünmeyi ve izleyicilerinizin ihtiyaçlarına dair derin bir anlayışı birleştiren bir sanattır. Podcast'inizi üretmenin yanı sıra ekstra bir iş gibi görünse de, iyi hazırlanmış gösteri notları podcast'inizin erişimini, erişilebilirliğini ve dinleyicileriniz için genel değerini önemli ölçüde artırabilir.
 
-Remember, your show notes are often the first point of contact between your podcast and potential new listeners. They're also a valuable resource for your existing audience. By investing time in creating comprehensive, engaging show notes, you're not just supporting your current content—you're building a robust, searchable archive that can continue to attract and serve listeners long after the episode has been published.
+Unutmayın, gösteri notlarınız genellikle podcast'iniz ile potansiyel yeni dinleyiciler arasındaki ilk temas noktasıdır. Ayrıca mevcut kitleniz için de değerli bir kaynaktır. Kapsamlı, ilgi çekici gösteri notları oluşturmaya zaman ayırarak yalnızca mevcut içeriğinizi desteklemiyorsunuz; bölüm yayınlandıktan uzun süre sonra bile dinleyicileri çekmeye ve onlara hizmet etmeye devam edebilecek sağlam, aranabilir bir arşiv oluşturuyorsunuz.
 
-As you continue your podcasting journey, you'll likely develop your own style and format for show notes that best serves your specific podcast and audience. The key is to be consistent, informative, and always focused on providing value to your listeners.
+Podcasting yolculuğunuza devam ederken, muhtemelen belirli podcast'inize ve kitlenize en iyi şekilde hizmet eden gösteri notları için kendi tarzınızı ve formatınızı geliştireceksiniz. Önemli olan tutarlı, bilgilendirici olmak ve her zaman dinleyicilerinize değer sağlamaya odaklanmaktır.
 
-Happy writing, and we'll see you tomorrow for Day 14 of our 30-day podcast launch challenge!
+İyi yazılar ve yarın 30 günlük podcast lansman mücadelemizin 14. Gününde görüşmek üzere!

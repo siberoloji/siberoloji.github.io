@@ -1,13 +1,13 @@
 ---
-draft: true
+draft: false
 weight: 160
-title: "Uploading Your Podcast: Day 16"
-linkTitle: Uploading Your Podcast
+title: "Podcast'inizi Yükleme: 16. Gün"
+linkTitle: "Podcast'inizi Yükleme"
 translationKey: uploading-your-podcast
-description: We will cover essential podcast uploading techniques, tips for using the software effectively, and a step-by-step guide to uploading a 5-minute audio clip.
+description: Temel podcast yükleme tekniklerini, yazılımı etkili bir şekilde kullanma ipuçlarını ve 5 dakikalık bir ses klibi yüklemek için adım adım bir kılavuzu ele alacağız.
 date: 2024-10-13T21:42:42+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /uploading-your-podcast-a-comprehensive-guide-day-16/
+url: /tr/uploading-your-podcast-a-comprehensive-guide-day-16/
 featured_image: /images/podcast.webp
 categories:
     - Podcasting
@@ -16,174 +16,173 @@ tags:
     - Podcaster
     - podcasting
 ---
-Welcome to Day 16 of our podcasting journey! Today, we're tackling a crucial step in your podcasting adventure: uploading your episode to your hosting platform. This process might seem daunting at first, but with the right guidance, you'll find it's quite manageable. Let's dive into the world of podcast hosting and get your voice out there for the world to hear.
+Podcasting yolculuğumuzun 16. gününe hoş geldiniz! Bugün, podcasting maceranızda kritik bir adıma geçiyoruz: bölümünüzü barındırma platformunuza yüklemek. Bu süreç ilk başta göz korkutucu görünebilir, ancak doğru rehberlikle oldukça yönetilebilir olduğunu göreceksiniz. Podcast barındırma dünyasına dalalım ve sesinizi dünyaya duyuralım.
 
-## Understanding Podcast Hosting
+## Podcast Barındırmayı Anlamak
 
-Before we jump into the upload process, it's essential to understand what podcast hosting is and why it's necessary. Podcast hosting is a service that stores your audio files and generates an RSS feed for your podcast. This RSS feed is what podcast directories like Apple Podcasts, Spotify, and Google Podcasts use to distribute your content to listeners.
+Yükleme sürecine geçmeden önce, podcast barındırmanın ne olduğunu ve neden gerekli olduğunu anlamak önemlidir. Podcast barındırma, ses dosyalarınızı depolayan ve podcast'iniz için bir RSS akışı oluşturan bir hizmettir. Bu RSS akışı, Apple Podcasts, Spotify ve Google Podcasts gibi podcast dizinlerinin içeriğinizi dinleyicilere dağıtmak için kullandığı şeydir.
 
-Choosing the right hosting platform is crucial for several reasons:
+Doğru barındırma platformunu seçmek birkaç nedenden dolayı önemlidir:
 
-* **Storage and Bandwidth:** Podcast files can be large, and hosting platforms provide the necessary storage space and bandwidth to deliver your episodes to listeners.
+* **Depolama ve Bant Genişliği:** Podcast dosyaları büyük olabilir ve barındırma platformları bölümlerinizi dinleyicilere sunmak için gerekli depolama alanını ve bant genişliğini sağlar.
 
-* **RSS Feed Generation:** The RSS feed is the backbone of podcast distribution. A good hosting platform automates this process, making it easier for you to focus on content creation.
+* **RSS Feed Oluşturma:** RSS feed, podcast dağıtımının omurgasıdır. İyi bir barındırma platformu bu süreci otomatikleştirerek içerik oluşturmaya odaklanmanızı kolaylaştırır.
 
-* **Analytics:** Most hosting platforms offer detailed analytics, helping you understand your audience and track your podcast's growth.
+* **Analizler:** Çoğu barındırma platformu, hedef kitlenizi anlamanıza ve podcast'inizin büyümesini izlemenize yardımcı olan ayrıntılı analizler sunar.
 
-* **Monetization Options:** Some platforms provide tools for sponsorships, donations, or premium content, which can be valuable as your podcast grows.
+* **Para Kazanma Seçenekleri:** Bazı platformlar, podcast'iniz büyüdükçe değerli olabilecek sponsorluklar, bağışlar veya premium içerikler için araçlar sağlar.
 
-## Preparing Your Episode for Upload
+## Bölümünüzü Yüklemeye Hazırlama
 
-Before you begin the upload process, ensure your episode is ready. Here are some pre-upload steps:
+Yükleme sürecine başlamadan önce bölümünüzün hazır olduğundan emin olun. İşte bazı ön yükleme adımları:
 
-* **Final Edit:** Give your episode one last listen to catch any errors or issues.
+* **Son Düzenleme:** Herhangi bir hata veya sorunu yakalamak için bölümünüzü son bir kez dinleyin.
 
-* **File Format:** Most hosting platforms prefer MP3 files. Ensure your episode is exported in this format.
+* **Dosya Biçimi:** Çoğu barındırma platformu MP3 dosyalarını tercih eder. Bölümünüzün bu biçimde dışa aktarıldığından emin olun.
 
-* **File Naming:** Use a consistent naming convention for your episodes. For example: "ShowName_EpisodeNumber_EpisodeTitle.mp3"
+* **Dosya Adlandırma:** Bölümleriniz için tutarlı bir adlandırma kuralı kullanın. Örneğin: "ShowName_EpisodeNumber_EpisodeTitle.mp3"
 
-* **Metadata:** Prepare your episode title, description, show notes, and any other relevant information you'll need during the upload process.
+* **Meta Veri:** Bölüm başlığınızı, açıklamanızı, gösteri notlarınızı ve yükleme işlemi sırasında ihtiyaç duyacağınız diğer ilgili bilgileri hazırlayın.
 
-## Step-by-Step Upload Guide
+## Adım Adım Yükleme Kılavuzu
 
-Now that you're prepared, let's walk through the typical steps for uploading your podcast episode. While the exact process may vary slightly depending on your chosen hosting platform, these steps generally apply:
+Artık hazır olduğunuza göre, podcast bölümünüzü yüklemek için tipik adımları inceleyelim. Tam işlem, seçtiğiniz barındırma platformuna bağlı olarak biraz değişiklik gösterebilse de, genellikle şu adımlar geçerlidir:
 
-* **Log in to Your Hosting Platform**
+* **Barındırma Platformunuzda Oturum Açın**
 
-* Navigate to your hosting platform's website and log in to your account.
+* Barındırma platformunuzun web sitesine gidin ve hesabınızda oturum açın.
 
-* Look for an option like "New Episode" or "Upload Episode" - this is usually prominently displayed on your dashboard.
+* "Yeni Bölüm" veya "Bölüm Yükle" gibi bir seçenek arayın - bu genellikle panonuzda belirgin bir şekilde görüntülenir.
 
-* **Choose Your File**
+* **Dosyanızı Seçin**
 
-* Click on the upload button and select your prepared MP3 file from your computer.
+* Yükleme düğmesine tıklayın ve bilgisayarınızdan hazırladığınız MP3 dosyasını seçin.
 
-* Some platforms offer a drag-and-drop interface, which can be even more convenient.
+* Bazı platformlar, daha da kullanışlı olabilen sürükle ve bırak arayüzü sunar.
 
-* **Add Episode Details**
+* **Bölüm Ayrıntılarını Ekleyin**
 
-* While the file is uploading (which may take a few minutes depending on your internet speed and file size), you can start filling in the episode details.
+* Dosya yüklenirken (internet hızınıza ve dosya boyutunuza bağlı olarak birkaç dakika sürebilir), bölüm ayrıntılarını doldurmaya başlayabilirsiniz.
 
-* Episode Title: Make it catchy and descriptive. Remember, this is what potential listeners will see first.
+* Bölüm Başlığı: Akılda kalıcı ve açıklayıcı yapın. Unutmayın, potansiyel dinleyiciler ilk önce bunu görecektir.
 
-* Episode Description: Write a compelling summary of your episode. Include key points, guest names if applicable, and any time stamps for different segments.
+* Bölüm Açıklaması: Bölümünüzün ilgi çekici bir özetini yazın. Önemli noktaları, varsa konuk adlarını ve farklı bölümler için zaman damgalarını ekleyin.
 
-* Show Notes: This is where you can add links mentioned in the episode, additional resources, or a more detailed breakdown of the content.
+* Gösteri Notları: Burada bölümde bahsedilen bağlantıları, ek kaynakları veya içeriğin daha ayrıntılı bir dökümünü ekleyebilirsiniz.
+* Bölüm Numarası: Podcast'iniz numaralandırılmış bir format izliyorsa, bunu eklemeyi unutmayın.
 
-* Episode Number: If your podcast follows a numbered format, don't forget to include this.
+* Sezon Numarası: Podcast yapınız için geçerliyse.
 
-* Season Number: If applicable to your podcast structure.
+* Yayın Tarihi: Hemen yayınlamayı veya gelecekteki bir tarih ve saate planlamayı seçebilirsiniz.
 
-* Publication Date: You can choose to publish immediately or schedule for a future date and time.
+* **Kapak Resmi Ekle**
 
-* **Add Cover Art**
+* Podcast'iniz için muhtemelen standart bir kapak resminiz olsa da, bazı platformlar bölüme özgü sanat eseri eklemenize izin verir.
 
-* While you likely have a standard cover art for your podcast, some platforms allow you to add episode-specific artwork.
+* Bu bölüm için benzersiz bir sanat eseri kullanıyorsanız, buraya yükleyin.
 
-* If you're using unique art for this episode, upload it here.
+* **Bölüm Türünü Ayarla**
 
-* **Set Episode Type**
+* Çoğu platform bölümünüzü kategorize etmenize izin verir. Yaygın seçenekler şunlardır:* Tam Bölüm
 
-* Most platforms allow you to categorize your episode. Common options include:* Full Episode
+* Fragman
 
-* Trailer
+* Bonus İçerik
+* **Gelişmiş Ayarlar**
 
-* Bonus Content
-* **Advanced Settings**
+* Barındırma platformunuza bağlı olarak ek seçenekleriniz olabilir:* Açık İçerik Etiketi: Bölümünüz yetişkin dili veya temaları içeriyorsa, açık olarak işaretleyin.
 
-* Depending on your hosting platform, you might have additional options:* Explicit Content Tag: If your episode contains adult language or themes, mark it as explicit.
+* Bölüm Etiketleri: Aranabilirliğe yardımcı olmak için ilgili anahtar sözcükler ekleyin.
 
-* Episode Tags: Add relevant keywords to help with searchability.
+* Özel URL: Bazı platformlar her bölüm için özel bir URL ayarlamanıza izin verir.
+* **Para Kazanma Ayarları**
 
-* Custom URL: Some platforms allow you to set a custom URL for each episode.
-* **Monetization Settings**
+* Platformunuz ve podcast kurulumunuz para kazanmayı içeriyorsa, şunları ayarlamanız gerekebilir:* Reklam ekleme noktaları
 
-* If your platform and podcast setup includes monetization, you might need to set:* Ad insertion points
+* Premium içerik ayarları (özel içerik sunuyorsanız)
 
-* Premium content settings (if offering exclusive content)
+* Bağış veya destek bağlantıları
+* **İncele ve Yayınla**
 
-* Donation or support links
-* **Review and Publish**
+* Yayınla düğmesine basmadan önce, girdiğiniz tüm bilgileri incelemek için bir dakikanızı ayırın.
 
-* Before hitting that publish button, take a moment to review all the information you've entered.
+* Doğru sürümü yüklediğinizden emin olmak için ses dosyasını iki kez kontrol edin.
 
-* Double-check the audio file to ensure you've uploaded the correct version.
+* Her şey yolunda görünüyorsa, yayınla'ya basın!
 
-* If everything looks good, hit publish!
+## Yükleme Sonrası Adımlar
 
-## Post-Upload Steps
+Tebrikler! Bölümünüz artık yayında. Ancak işiniz henüz bitmedi. İşte yükleme sonrası bazı önemli adımlar:
 
-Congratulations! Your episode is now live. But your work isn't quite done yet. Here are some important post-upload steps:
+* **Yüklemeyi Doğrulayın**
 
-* **Verify the Upload**
+* Doğru şekilde yüklendiğinden emin olmak için bölümünüzün en azından başını ve sonunu barındırma platformunda dinleyin.
 
-* Listen to at least the beginning and end of your episode on the hosting platform to ensure it uploaded correctly.
+* Girdiğiniz tüm ayrıntıların doğru şekilde görüntülendiğinden emin olun.
 
-* Check that all the details you entered are displaying correctly.
+* **Dağıtım Kontrolü**
 
-* **Distribution Check**
+* Bu ilk bölümünüzse, çeşitli podcast dizinlerinde görünmesi biraz zaman alabilir (genellikle 24-48 saat).
 
-* If this is your first episode, it may take some time (usually 24-48 hours) for it to appear on various podcast directories.
+* Sonraki bölümler için dağıtım çok daha hızlı olmalı, genellikle bir saat içinde.
 
-* For subsequent episodes, the distribution should be much faster, often within an hour.
+* **Bölümünüzü Tanıtın**
 
-* **Promote Your Episode**
+* Bölüm bağlantısını sosyal medya kanallarınızda paylaşın.
 
-* Share the episode link on your social media channels.
+* Bir e-posta listeniz varsa, yeni bölümü duyuran bir haber bülteni gönderin.
 
-* If you have an email list, send out a newsletter announcing the new episode.
+* Bölümde yer alan konuklara ulaşarak onları da paylaşmaya teşvik etmeyi düşünün.
 
-* Consider reaching out to any guests featured in the episode to encourage them to share as well.
+* **Analitikleri İzleyin**
 
-* **Monitor Analytics**
+* Bölümünüzün yayınlandıktan sonraki ilk birkaç gün içindeki performansını takip edin.
 
-* Keep an eye on your episode's performance in the first few days after release.
+* İndirme sayısı, dinleyici coğrafyası ve dinleme süresi gibi metriklere dikkat edin.
 
-* Pay attention to metrics like number of downloads, listener geography, and listening duration.
+* **Hedef Kitlenizle Etkileşim Kurun**
 
-* **Engage with Your Audience**
+* Bölüm hakkında aldığınız tüm yorumlara veya geri bildirimlere yanıt verin.
 
-* Respond to any comments or feedback you receive about the episode.
+* Bu geri bildirimi gelecekteki bölümleri veya içerikleri bilgilendirmek için kullanmayı düşünün.
 
-* Consider using this feedback to inform future episodes or content.
+## Yaygın Yükleme Sorunlarını Giderme
 
-## Troubleshooting Common Upload Issues
+Dikkatli bir hazırlık yapsanız bile yükleme işlemi sırasında bazı sorunlarla karşılaşabilirsiniz. İşte bazı yaygın sorunlar ve çözümleri:
 
-Even with careful preparation, you might encounter some issues during the upload process. Here are some common problems and their solutions:
+* **Dosya Çok Büyük**
 
-* **File Too Large**
+* Çoğu barındırma platformunun dosya boyutu sınırlamaları vardır. Dosyanız çok büyükse, daha fazla sıkıştırmayı veya birden fazla bölüme bölmeyi deneyin.
 
-* Most hosting platforms have file size limits. If your file is too large, try compressing it further or splitting it into multiple episodes.
+* **Yükleme Hatası**
 
-* **Upload Failure**
+* İnternet bağlantınızı kontrol edin ve tekrar deneyin.
 
-* Check your internet connection and try again.
+* Sorun devam ederse, farklı bir tarayıcıdan veya cihazdan yüklemeyi deneyin.
 
-* If the problem persists, try uploading from a different browser or device.
+* **Yanlış Meta Veri Görüntüleme**
 
-* **Incorrect Metadata Display**
+* Bölüm ayrıntılarınız doğru şekilde görüntülenmiyorsa, tarayıcınızın önbelleğini temizlemeyi veya barındırma platformunuzdan çıkış yapıp tekrar oturum açmayı deneyin.
 
-* If your episode details aren't displaying correctly, try clearing your browser cache or logging out and back in to your hosting platform.
+* **Ses Kalitesi Sorunları**
 
-* **Audio Quality Issues**
+* Yüklenen ses doğru gelmiyorsa, sorun muhtemelen dışa aktarma işlemi sırasında oluşmuştur. Bölümünüzü yeniden dışa aktarın ve tekrar yüklemeyi deneyin.
 
-* If the uploaded audio doesn't sound right, the issue likely occurred during the export process. Re-export your episode and try uploading again.
+* **RSS Beslemesi Güncellenmiyor**
 
-* **RSS Feed Not Updating**
+* Bazen RSS beslemesi güncellemelerinde gecikme olur. Bölümünüz podcast uygulamalarında görünmüyorsa, biraz zaman verin ve birkaç saat sonra tekrar kontrol edin.
 
-* Sometimes there's a delay in RSS feed updates. If your episode isn't appearing in podcast apps, give it some time and check again in a few hours.
+## Sonuç
 
-## Conclusion
+Podcast bölümünüzü yüklemek, podcasting yolculuğunuzda önemli bir dönüm noktasıdır. Bu, sıkı çalışmanızın kitleniz için erişilebilir hale geldiği andır. Süreç ilk başta teknik görünse de, pratik yaptıkça ikinci doğanız haline gelecektir.
 
-Uploading your podcast episode is a significant milestone in your podcasting journey. It's the moment when your hard work becomes accessible to your audience. While the process might seem technical at first, with practice, it will become second nature.
+Unutmayın, podcasting'te tutarlılık önemlidir. Düzenli bir yükleme programı oluşturun ve buna sadık kalın. Kitleniz yeni bölümlerinizi beklemeye ve sabırsızlıkla beklemeye başlayacaktır.
 
-Remember, consistency is key in podcasting. Establish a regular upload schedule and stick to it. Your audience will come to expect and look forward to your new episodes.
+Bölümler oluşturmaya ve yüklemeye devam ettikçe, muhtemelen kendi iş akışınızı ve en iyi uygulamalarınızı geliştireceksiniz. Denemekten ve sizin ve podcast'iniz için en iyi olanı bulmaktan korkmayın.
 
-As you continue to create and upload episodes, you'll likely develop your own workflow and best practices. Don't be afraid to experiment and find what works best for you and your podcast.
+Mutlu yüklemeler ve önünüzde birçok başarılı bölüm olsun!
+Umarız bu kılavuz, podcast bölümünüzü yükleme sürecini gizemden arındırmanızda yardımcı olmuştur. Unutmayın, her podcaster şu anda bulunduğunuz yerden başladı. Her yüklemeyle yalnızca içeriğinizi paylaşmıyorsunuz; becerilerinizi geliştiriyor ve podcasting uzmanlığınızı oluşturuyorsunuz.
 
-Happy uploading, and here's to many successful episodes ahead!
-We hope this guide has been helpful in demystifying the process of uploading your podcast episode. Remember, every podcaster started where you are now. With each upload, you're not just sharing your content; you're honing your skills and building your podcasting expertise.
+Yükleme süreci hakkında sorularınız mı var? En çok hangi yönler sizi heyecanlandırıyor veya endişelendiriyor? Düşüncelerinizi ve deneyimlerinizi aşağıdaki yorumlarda paylaşın - diğer podcaster'ların paylaşacak ek ipuçları olabilir!
 
-Do you have any questions about the upload process? What aspects are you most excited or nervous about? Share your thoughts and experiences in the comments below – your fellow podcasters might have additional tips to share!
-
-Next week, we'll be diving into strategies for growing your podcast audience. Until then, happy podcasting!
+Gelecek hafta, podcast kitlenizi büyütmek için stratejilere dalacağız. O zamana kadar, keyifli podcast'ler!

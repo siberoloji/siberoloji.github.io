@@ -1,13 +1,13 @@
 ---
-draft: true
-title: "Editing Your Episode: Day 11"
-linkTitle: Editing Your Episode
+draft: false
+title: "Podcast Bölümünüzü Düzenleme: 11. Gün"
+linkTitle: Podcast Bölümünüzü Düzenleme
 translationKey: editing-your-episode
-description: We will cover essential podcast editing techniques, tips for using the software effectively, and a step-by-step guide to editing a 5-minute audio clip.
+description: Temel podcast düzenleme tekniklerini, yazılımı etkili bir şekilde kullanma ipuçlarını ve 5 dakikalık bir ses klibini düzenlemeyiele alacağız.
 weight: 110
 date: 2024-10-10T20:48:31+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /editing-your-episode-a-comprehensive-guide-for-podcastersday-11/
+url: /tr/editing-your-episode-a-comprehensive-guide-for-podcastersday-11/
 featured_image: /images/podcast.webp
 categories:
     - Podcasting
@@ -16,171 +16,170 @@ tags:
     - Podcaster
     - podcasting
 ---
-Welcome to Day 11 of our 30-day podcast launch journey! Today, we're diving into a crucial aspect of podcast production: editing your episode. Whether you're a perfectionist aiming for polished professionalism or prefer a more raw and authentic sound, understanding the basics of podcast editing is essential for creating a high-quality show that keeps listeners coming back for more.
+30 günlük podcast lansman yolculuğumuzun 11. gününe hoş geldiniz! Bugün, podcast prodüksiyonunun önemli bir yönüne dalacağız: bölümünüzü düzenlemek. İster cilalı profesyonellik hedefleyen bir mükemmeliyetçi olun, ister daha ham ve otantik bir ses tercih edin, podcast düzenlemenin temellerini anlamak, dinleyicilerin daha fazlası için geri gelmesini sağlayan yüksek kaliteli bir şov oluşturmak için olmazsa olmazdır.
 
-## Why Editing Matters
+## Düzenlemenin Önemi
 
-Before we jump into the how-to, let's briefly discuss why editing is so important:
+Nasıl yapılır kısmına geçmeden önce, düzenlemenin neden bu kadar önemli olduğunu kısaca tartışalım:
 
-* **Quality Control**: Editing allows you to remove mistakes, unnecessary pauses, and filler words, resulting in a more professional-sounding podcast.
+* **Kalite Kontrolü**: Düzenleme, hataları, gereksiz duraklamaları ve dolgu sözcüklerini kaldırmanıza olanak tanır ve daha profesyonel sesli bir podcast ile sonuçlanır.
 
-* **Pacing**: Through editing, you can adjust the rhythm and flow of your episode, keeping listeners engaged.
+* **Tempo**: Düzenleme yoluyla bölümünüzün ritmini ve akışını ayarlayabilir, dinleyicilerin ilgisini canlı tutabilirsiniz.
 
-* **Clarity**: You can emphasize key points by removing distractions or rearranging content for better understanding.
+* **Netlik**: Dikkat dağıtıcı unsurları kaldırarak veya içeriği daha iyi anlamak için yeniden düzenleyerek önemli noktaları vurgulayabilirsiniz.
 
-* **Consistency**: Editing helps maintain a consistent sound quality and volume level throughout your episode and across your podcast series.
+* **Tutarlılık**: Düzenleme, bölümünüz ve podcast seriniz boyunca tutarlı bir ses kalitesi ve ses seviyesi sağlamaya yardımcı olur.
 
-* **Time Management**: You can trim your content to fit your desired episode length, respecting your listeners' time.
-Now, let's explore some essential editing techniques and tips to elevate your podcast's sound quality.
+* **Zaman Yönetimi**: İçeriğinizi, dinleyicilerinizin zamanına saygı göstererek istediğiniz bölüm uzunluğuna uyacak şekilde kısaltabilirsiniz.
+Şimdi, podcast'inizin ses kalitesini yükseltmek için bazı temel düzenleme tekniklerini ve ipuçlarını inceleyelim.
 
-## Editing Techniques for Podcasters
+## Podcast Yayıncıları İçin Düzenleme Teknikleri
 
-1. Removing Mistakes and Flubs
+1. Hataları ve Hataları Giderme
 
-One of the primary tasks in editing is cutting out mistakes, verbal flubs, and false starts. Here's how to approach this:
+Düzenlemedeki temel görevlerden biri hataları, sözel hataları ve yanlış başlangıçları kesmektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
-* Listen through your recording and mark areas that need to be removed.
+* Kaydınızı dinleyin ve kaldırılması gereken alanları işaretleyin.
 
-* Use your editing software's cut or delete function to remove these sections.
+* Bu bölümleri kaldırmak için düzenleme yazılımınızın kesme veya silme işlevini kullanın.
 
-* Ensure the cuts are clean and don't disrupt the flow of conversation.
+* Kesmelerin temiz olduğundan ve konuşma akışını bozmadığından emin olun.
 
-2. Reducing Background Noise
+2. Arka Plan Gürültüsünü Azaltma
 
-Background noise can be distracting for listeners. Here are some ways to address it:
+Arka plan gürültüsü dinleyiciler için dikkat dağıtıcı olabilir. Bunu ele almanın bazı yolları şunlardır:
 
-* Use your editing software's noise reduction tool to minimize consistent background noise.
+* Tutarlı arka plan gürültüsünü en aza indirmek için düzenleme yazılımınızın gürültü azaltma aracını kullanın.
 
-* For intermittent noises (like a dog barking), you can cut these out or reduce their volume.
+* Aralıklı sesler (köpek havlaması gibi) için bunları kesebilir veya ses seviyelerini azaltabilirsiniz.
 
-* Be careful not to overuse noise reduction, as it can affect the quality of the main audio.
+* Gürültü azaltmayı aşırı kullanmamaya dikkat edin, çünkü bu ana sesin kalitesini etkileyebilir.
 
-3. Adjusting Levels and Volume
+3. Seviyeleri ve Sesi Ayarlama
 
-Consistent audio levels are crucial for a professional-sounding podcast:
+Profesyonel ses veren bir podcast için tutarlı ses seviyeleri çok önemlidir:
 
-* Use compression to even out volume differences between loud and soft parts.
+* Yüksek ve yumuşak bölümler arasındaki ses seviyesi farklarını dengelemek için sıkıştırmayı kullanın.
 
-* Normalize your audio to ensure a consistent volume across different segments and episodes.
+* Farklı bölümler ve bölümler arasında tutarlı bir ses seviyesi sağlamak için sesinizi normalleştirin.
 
-* Pay attention to the overall loudness of your podcast, aiming for an integrated loudness of around -16 LUFS for most streaming platforms.
+* Çoğu yayın platformu için yaklaşık -16 LUFS'lik entegre bir ses seviyesini hedefleyerek podcast'inizin genel ses yüksekliğine dikkat edin.
 
-4. Adding Music and Sound Effects
+4. Müzik ve Ses Efektleri Ekleme
 
-Music and sound effects can enhance your podcast, but use them judiciously:
+Müzik ve ses efektleri podcast'inizi geliştirebilir, ancak bunları akıllıca kullanın:
 
-* Add intro and outro music to brand your podcast.
+* Podcast'inizi markalamak için giriş ve çıkış müziği ekleyin.
 
-* Use subtle background music or sound effects to transition between segments.
+* Bölümler arasında geçiş yapmak için ince arka plan müziği veya ses efektleri kullanın.
 
-* Ensure any added audio doesn't overpower your voice.
+* Eklenen herhangi bir sesin sesinizi bastırmadığından emin olun.
 
-5. Cutting and Rearranging Content
+5. İçeriği Kesme ve Yeniden Düzenleme
 
-Sometimes, you might need to restructure your content for better flow:
+Bazen, daha iyi bir akış için içeriğinizi yeniden yapılandırmanız gerekebilir:
 
-* Identify sections that might work better in a different order.
+* Farklı bir sırayla daha iyi çalışabilecek bölümleri belirleyin.
 
-* Use your editing software to cut and move these sections.
+* Bu bölümleri kesmek ve taşımak için düzenleme yazılımınızı kullanın.
 
-* Ensure transitions between moved sections sound natural.
+* Taşınan bölümler arasındaki geçişlerin doğal olduğundan emin olun.
 
-6. Cleaning Up Speech
+6. Konuşmayı Temizleme
 
-For a more polished sound, consider these techniques:
+Daha cilalı bir ses için şu teknikleri göz önünde bulundurun:
 
-* Remove filler words like "um," "uh," and excessive use of "like" or "you know."
+* "Şey", "uh" gibi dolgu sözcüklerini ve "gibi" veya "bilirsin" gibi aşırı kullanımları kaldırın.
 
-* Shorten long pauses, but be careful not to make the conversation sound unnatural.
+* Uzun duraklamaları kısaltın, ancak konuşmanın doğal olmayan bir şekilde duyulmasını sağlamamaya dikkat edin.
 
-* If you have multiple takes of a section, choose the best one.
+* Bir bölümün birden fazla çekimi varsa, en iyisini seçin.
 
-## Improving Sound Quality
+## Ses Kalitesini İyileştirme
 
-Great editing can significantly improve your podcast, but starting with high-quality audio makes the process much easier. Here are some tips for capturing better sound:
+Harika düzenleme, podcast'inizi önemli ölçüde iyileştirebilir, ancak yüksek kaliteli sesle başlamak süreci çok daha kolaylaştırır. Daha iyi ses yakalamak için bazı ipuçları şunlardır:
 
-* **Use a Good Microphone**: Invest in a quality microphone suited for podcasting. USB microphones like the Blue Yeti or Audio-Technica ATR2100x are popular choices for beginners.
+* **İyi Bir Mikrofon Kullanın**: Podcasting için uygun kaliteli bir mikrofona yatırım yapın. Blue Yeti veya Audio-Technica ATR2100x gibi USB mikrofonlar yeni başlayanlar için popüler seçeneklerdir.
 
-* **Create a Proper Recording Environment**: Record in a quiet room with minimal echo. Use sound-absorbing materials like curtains, carpets, or acoustic panels if needed.
+* **Uygun Bir Kayıt Ortamı Oluşturun**: Minimum yankıya sahip sessiz bir odada kayıt yapın. Gerekirse perde, halı veya akustik paneller gibi sesi emen malzemeler kullanın.
 
-* **Maintain Proper Mic Technique**: Keep a consistent distance from the microphone (usually about 6-8 inches) and speak directly into it.
+* **Uygun Mikrofon Tekniğini Koruyun**: Mikrofondan tutarlı bir mesafe bırakın (genellikle yaklaşık 6-8 inç) ve doğrudan mikrofona konuşun.
 
-* **Use a Pop Filter**: This helps reduce plosive sounds (like "p" and "b" sounds) that can cause audio spikes.
+* **Pop Filtresi Kullanın**: Bu, ses yükselmelerine neden olabilecek patlayıcı sesleri ("p" ve "b" sesleri gibi) azaltmaya yardımcı olur.
 
-* **Record Separate Tracks**: If you're interviewing guests or have a co-host, record each person's audio on a separate track for more control during editing.
+* **Ayrı Parçaları Kaydedin**: Konuklarla röportaj yapıyorsanız veya bir yardımcı sunucunuz varsa, düzenleme sırasında daha fazla kontrol için her kişinin sesini ayrı bir parçaya kaydedin.
 
-* **Do a Test Recording**: Always do a short test recording and listen back to it before starting your main recording session.
+* **Test Kaydı Yapın**: Ana kayıt oturumunuza başlamadan önce her zaman kısa bir test kaydı yapın ve tekrar dinleyin.
 
-## Editing Tips and Tricks
+## Düzenleme İpuçları ve Püf Noktaları
 
-Now that we've covered the basics, here are some pro tips to take your editing to the next level:
+Artık temelleri ele aldığımıza göre, düzenlemenizi bir üst seviyeye taşımak için bazı profesyonel ipuçları:
 
-* **Less is More**: Don't over-edit. Your podcast should sound natural and conversational.
+* **Daha Azı Daha Fazladır**: Aşırı düzenleme yapmayın. Podcast'iniz doğal ve sohbet havasında olmalıdır.
 
-* **Use Keyboard Shortcuts**: Learn the keyboard shortcuts for your editing software to speed up your workflow.
+* **Klavye Kısayollarını Kullanın**: İş akışınızı hızlandırmak için düzenleme yazılımınızın klavye kısayollarını öğrenin.
 
-* **Edit in Passes**: Instead of trying to perfect everything in one go, do multiple editing passes focusing on different aspects (e.g., content, then pacing, then sound quality).
+* **Geçişlerde Düzenleme**: Her şeyi tek seferde mükemmelleştirmeye çalışmak yerine, farklı yönlere odaklanarak birden fazla düzenleme geçişi yapın (örneğin, içerik, ardından hız, ardından ses kalitesi).
 
-* **Save Multiple Versions**: Keep backups of your project at different stages of editing.
+* **Birden Fazla Sürümü Kaydedin**: Projenizin farklı düzenleme aşamalarında yedeklerini tutun.
 
-* **Listen on Different Devices**: Check how your podcast sounds on various devices (headphones, car speakers, phone speakers) to ensure it sounds good everywhere.
+* **Farklı Cihazlarda Dinleyin**: Podcast'inizin her yerde iyi ses verdiğinden emin olmak için çeşitli cihazlarda (kulaklık, araç hoparlörleri, telefon hoparlörleri) nasıl ses çıkardığını kontrol edin.
 
-* **Create Templates**: Set up project templates in your editing software with your intro, outro, and commonly used effects to save time on future episodes.
+* **Şablonlar Oluşturun**: Gelecek bölümlerde zamandan tasarruf etmek için düzenleme yazılımınızda giriş, çıkış ve sık kullanılan efektlerinizle proje şablonları oluşturun.
+* **Çapraz Geçişleri Kullanın**: Farklı ses klipleri arasında geçiş yaparken, geçişleri daha akıcı hale getirmek için kısa çapraz geçişler kullanın.
 
-* **Use Crossfades**: When cutting between different audio clips, use short crossfades to make transitions smoother.
+* **Nefeslerinize Dikkat Edin**: Biraz nefes sesi duymak doğal olsa da, aşırı veya yüksek sesli nefesler dikkat dağıtıcı olabilir. Nefes seslerinin seviyesini düşürün veya çok belirginlerse kaldırın.
 
-* **Mind Your Breaths**: While it's natural to hear some breathing, excessive or loud breaths can be distracting. Lower the volume of breath sounds or remove them if they're too prominent.
+* **Tutarlılığı Koruyun**: Tüm bölümlerinizde tutarlı bir düzenleme stili sürdürmeye çalışın. Bu, podcast'inizin kimliğini oluşturmanıza yardımcı olur.
 
-* **Maintain Consistency**: Try to keep a consistent editing style across all your episodes. This helps in building your podcast's identity.
+* **Molalar Verin**: Düzenleme odaklanmayı gerektirir. Kulaklarınızı dinlendirmek ve nesnelliğinizi korumak için düzenli molalar verin.
 
-* **Take Breaks**: Editing requires focus. Take regular breaks to rest your ears and maintain objectivity.
+## Düzenleme Yazılımı Seçimi
 
-## Choosing Editing Software
+Ücretsizden profesyonel seviyeye kadar birçok podcast düzenleme yazılımı seçeneği vardır. İşte birkaç popüler seçenek:
 
-There are many options for podcast editing software, ranging from free to professional-grade. Here are a few popular choices:
+* **Audacity**: Yeni başlayanlar için harika olan ücretsiz, açık kaynaklı yazılım.
 
-* **Audacity**: Free, open-source software that's great for beginners.
+* **GarageBand**: Mac kullanıcıları için ücretsiz, birçok yerleşik efekte sahip kullanıcı dostu.
 
-* **GarageBand**: Free for Mac users, user-friendly with many built-in effects.
+* **Hindenburg Journalist**: Özellikle podcaster'lar ve radyo yapımcıları için tasarlanmıştır.
 
-* **Hindenburg Journalist**: Designed specifically for podcasters and radio producers.
+* **Adobe Audition**: Güçlü özelliklere sahip profesyonel düzeyde yazılım.
 
-* **Adobe Audition**: Professional-grade software with powerful features.
+* **Reaper**: Profesyonel yeteneklere sahip uygun fiyatlı seçenek.
+Bütçenize ve beceri seviyenize uygun bir yazılım seçin. Unutmayın, önemli olan en gelişmiş araçlara sahip olmak değil, sahip olduğunuz araçları ne kadar etkili kullandığınızdır.
 
-* **Reaper**: Affordable option with professional capabilities.
-Choose software that fits your budget and skill level. Remember, it's not about having the most advanced tools, but about how effectively you use the tools you have.
+## Egzersiz: İlk Bölümünüzü Düzenleme
 
-## Exercise: Editing Your First Episode
+Teoriyi ele aldığımıza göre, şimdi onu pratiğe dökme zamanı. İlk bölümünüzü düzenlemek için adım adım bir egzersiz:
 
-Now that we've covered the theory, it's time to put it into practice. Here's a step-by-step exercise to edit your first episode:
+* **Sesinizi İçe Aktarın**: Seçtiğiniz düzenleme yazılımını açın ve ham ses dosyanızı/dosyalarınızı içe aktarın.
 
-* **Import Your Audio**: Open your chosen editing software and import your raw audio file(s).
+* **Dinleyin**: Düzenleme gerektiren bölümlerin notlarını alarak tüm kaydınızı çalın.
 
-* **Listen Through**: Play through your entire recording, making notes of sections that need editing.
+* **Önemli Kesimler Yapın**: Gösteri öncesi sohbet veya uzun teğetler gibi ihtiyaç duyulmayan büyük bölümleri kaldırın.
 
-* **Make Major Cuts**: Remove any large sections that aren't needed, such as pre-show chatter or long tangents.
+* **Diyalogları Temizle**: Hataları, hataları ve aşırı dolgu sözcüklerini gözden geçirip kaldırın.
 
-* **Clean Up Dialogue**: Go through and remove mistakes, flubs, and excessive filler words.
+* **Seviyeleri Ayarla**: Ses seviyelerinizi eşitlemek için sıkıştırma ve normalleştirme kullanın.
 
-* **Adjust Levels**: Use compression and normalization to even out your audio levels.
+* **Giriş ve Çıkış Ekle**: Giriş ve çıkış müziğinizi ekleyin ve yumuşak geçişler sağlayın.
 
-* **Add Intro and Outro**: Insert your intro and outro music, ensuring smooth transitions.
+* **İnce Ayarla**: Zamanlama ve geçişlerde küçük ayarlamalar yaparak tekrar dinleyin.
 
-* **Fine-tune**: Listen through again, making small adjustments to timing and transitions.
+* **Efektleri Uygula**: Gerekirse gürültü azaltmayı ve ses kalitesini artırmak için EQ gibi diğer efektleri kullanın.
 
-* **Apply Effects**: Use noise reduction if needed, and any other effects like EQ to enhance sound quality.
+* **Son Dinleme**: Bir mola verdikten sonra tercihen yeni kulaklarla son bir dinleme yapın.
 
-* **Final Listen**: Do a final listen-through, preferably with fresh ears after taking a break.
+* **Dışa Aktar**: Memnun kaldığınızda bölümünüzü yüksek kaliteli bir formatta (WAV veya yüksek bit hızına sahip MP3) dışa aktarın.
+Unutmayın, düzenleme pratik yaptıkça gelişen bir beceridir. İlk denemenizde mükemmellik beklemeyin - her bölümü bir öncekinden biraz daha iyi hale getirmeye odaklanın.
 
-* **Export**: Once you're satisfied, export your episode in a high-quality format (WAV or high bitrate MP3).
-Remember, editing is a skill that improves with practice. Don't expect perfection on your first try – focus on making each episode a little better than the last.
+## Sonuç
 
-## Conclusion
+Düzenleme, podcast'inizin gerçekten canlandığı yerdir. Ham kaydınızı dinleyicilerinizin zamanına saygı duyan ve onları meşgul eden cilalı, profesyonel sesli bir bölüme dönüştüren süreçtir. Özellikle yeni başlıyorsanız zaman alıcı olabilse de sonuçlar çabaya değer.
 
-Editing is where your podcast truly comes to life. It's the process that transforms your raw recording into a polished, professional-sounding episode that respects your listeners' time and keeps them engaged. While it can be time-consuming, especially when you're just starting out, the results are well worth the effort.
+Podcasting yolculuğunuza devam ederken kendi düzenleme stilinizi ve iş akışınızı geliştireceksiniz. Düzenlemenin hangi yönlerinin belirli podcast'iniz ve kitleniz için en önemli olduğunu öğreneceksiniz. Önemli olan tutarlı kalmak ve her zaman mümkün olan en iyi dinleme deneyimini sağlamayı hedeflemektir.
 
-As you continue your podcasting journey, you'll develop your own editing style and workflow. You'll learn which aspects of editing are most important for your particular podcast and audience. The key is to stay consistent, always aiming to provide the best possible listening experience.
+Unutmayın, amaç mükemmel, kusursuz bir ürün yaratmak değil; kitlenizle bağlantı kuran otantik, ilgi çekici bir podcast yaratmaktır. Bazen, birkaç doğal öğeyi dahil etmek podcast'inizin daha gerçek ve ilişkilendirilebilir hissettirmesini sağlayabilir.
 
-Remember, the goal isn't to create a perfect, flawless product – it's to create an authentic, engaging podcast that connects with your audience. Sometimes, leaving in a few natural elements can make your podcast feel more real and relatable.
-
-Happy editing, and we'll see you tomorrow for Day 12 of our 30-day podcast launch challenge!
+İyi düzenlemeler ve yarın 30 günlük podcast lansman mücadelemizin 12. Gününde görüşmek üzere!

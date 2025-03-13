@@ -3,7 +3,7 @@ draft: false
 title: "Podcastinizi Düzenleme: 6. Gün"
 linkTitle: Podcastinizi Düzenleme
 translationKey: make-sure-podcast-editing
-description: Temel podcast düzenleme tekniklerini, yazılımı etkili bir şekilde kullanma ipuçlarını ve 5 dakikalık bir ses klibini düzenlemek için adım adım bir kılavuzu ele alacağız.
+description: Temel podcast düzenleme tekniklerini, yazılımı etkili bir şekilde kullanma ipuçlarını ve 5 dakikalık bir ses klibini düzenlemeyi ele alacağız.
 weight: 60
 date: 2024-10-08T22:14:52+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))

@@ -1,13 +1,13 @@
 ---
-draft: true
+draft: false
 weight: 190
-title: "Social Media and Engagement: Day 19"
-linkTitle: Social Media and Engagement
-description: How to promote your podcast effectively through social media
+title: "Sosyal Medya ve Etkileşim: 19. Gün"
+linkTitle: Sosyal Medya ve Etkileşim
+description: "Podcast'inizi sosyal medya aracılığıyla etkili bir şekilde nasıl tanıtırsınız?"
 translationKey: promote-your-podcast-effectively
 date: 2024-10-13T21:50:51+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /social-media-and-engagement-how-to-promote-your-podcast-effectively-day-19/
+url: /tr/social-media-and-engagement-how-to-promote-your-podcast-effectively-day-19/
 featured_image: /images/podcast.webp
 categories:
     - Podcasting
@@ -16,140 +16,139 @@ tags:
     - Podcaster
     - podcasting
 ---
-As a podcaster, content creation is only part of the equation for success. Once you’ve produced a great episode, you need to make sure people know about it and are eager to listen. That’s where social media comes in. Social media platforms provide podcasters with invaluable tools to grow their audience, engage with listeners, and build a loyal community around their show.
+Bir podcaster olarak, içerik oluşturma başarının denkleminin yalnızca bir parçasıdır. Harika bir bölüm ürettiğinizde, insanların bunu bilmesini ve dinlemeye istekli olmasını sağlamalısınız. İşte sosyal medya burada devreye giriyor. Sosyal medya platformları, podcaster'lara kitlelerini büyütmeleri, dinleyicilerle etkileşim kurmaları ve şovları etrafında sadık bir topluluk oluşturmaları için paha biçilmez araçlar sağlar.
 
-In today’s blog post, we’ll explore the importance of social media in podcast promotion, offer practical tips to maximize your efforts, and walk you through how to set up social media accounts for your podcast. By the end of this post, you’ll be ready to launch a social media strategy that boosts your podcast's visibility and engagement.
+Bugünkü blog yazımızda, podcast tanıtımında sosyal medyanın önemini inceleyecek, çabalarınızı en üst düzeye çıkarmak için pratik ipuçları sunacak ve podcast'iniz için sosyal medya hesaplarının nasıl kurulacağı konusunda size yol göstereceğiz. Bu yazının sonunda, podcast'inizin görünürlüğünü ve etkileşimini artıran bir sosyal medya stratejisi başlatmaya hazır olacaksınız.
 
-## Why Social Media Matters for Podcasters
+## Sosyal Medyanın Podcast Yayıncıları İçin Önemi
 
-Social media has revolutionized how creators connect with their audiences. With over 4.9 billion active users across various platforms, it's one of the most effective ways to market your podcast. Here are a few reasons why social media is essential for podcasters:
+Sosyal medya, içerik oluşturucuların kitleleriyle bağlantı kurma biçiminde devrim yarattı. Çeşitli platformlarda 4,9 milyardan fazla aktif kullanıcıyla, podcast'inizi pazarlamanın en etkili yollarından biridir. İşte sosyal medyanın podcaster'lar için neden önemli olduğuna dair birkaç neden:
 
-1. **Reach a Larger Audience**
+1. **Daha Geniş Bir Kitleye Ulaşın**
 
-Podcast directories like Apple Podcasts or Spotify help people discover new shows, but they have limitations. Social media, on the other hand, can extend your reach far beyond what podcast platforms alone can do. It allows you to connect with potential listeners who may never find you through traditional directories.
+Apple Podcasts veya Spotify gibi podcast dizinleri, insanların yeni şovları keşfetmesine yardımcı olur, ancak sınırlamaları vardır. Öte yandan sosyal medya, erişiminizi podcast platformlarının tek başına yapabileceğinin çok ötesine genişletebilir. Geleneksel dizinler aracılığıyla sizi asla bulamayacak potansiyel dinleyicilerle bağlantı kurmanızı sağlar.
 
-2. **Build a Community**
+2. **Bir Topluluk Oluşturun**
 
-Podcasting is a highly personal medium. Listeners develop connections with hosts and other fans, creating a sense of community around your show. Social media provides a space for that community to thrive, where listeners can engage directly with you, share episodes, and discuss their favorite moments. Platforms like Facebook Groups or Reddit allow for ongoing interaction beyond just listening to episodes.
+Podcasting son derece kişisel bir ortamdır. Dinleyiciler sunucular ve diğer hayranlarla bağlantılar kurarak şovunuzun etrafında bir topluluk duygusu yaratır. Sosyal medya, dinleyicilerin doğrudan sizinle etkileşime girebileceği, bölümleri paylaşabileceği ve en sevdikleri anları tartışabileceği bu topluluğun gelişmesi için bir alan sağlar. Facebook Grupları veya Reddit gibi platformlar, yalnızca bölümleri dinlemenin ötesinde sürekli etkileşime olanak tanır.
 
-3. **Boost Engagement and Retention**
+3. **Etkileşimi ve Tutmayı Artırın**
 
-Regularly engaging with your audience on social media keeps your podcast top of mind. People are more likely to listen to your latest episode if you share consistent updates, offer behind-the-scenes content, or respond to listener feedback. Additionally, it helps keep listeners engaged between episodes, increasing loyalty and retention over time.
+Sosyal medyada kitlenizle düzenli olarak etkileşim kurmak, podcast'inizin akılda kalmasını sağlar. Tutarlı güncellemeler paylaşırsanız, sahne arkası içerikler sunarsanız veya dinleyici geri bildirimlerine yanıt verirseniz, insanların son bölümünüzü dinleme olasılığı daha yüksektir. Ayrıca, bölümler arasında dinleyicilerin etkileşimini sürdürmesine yardımcı olarak zamanla sadakati ve elde tutmayı artırır.
 
-4. **Increase Episode Visibility**
+4. **Bölüm Görünürlüğünü Artırın**
 
-Social media algorithms can work in your favor by promoting your posts to wider audiences. A post about your latest episode could get shared, liked, or commented on by users outside your current fan base, increasing the chances that your podcast will be discovered by new listeners.
+Sosyal medya algoritmaları, gönderilerinizi daha geniş kitlelere tanıtarak sizin lehinize çalışabilir. Son bölümünüzle ilgili bir gönderi, mevcut hayran kitlenizin dışındaki kullanıcılar tarafından paylaşılabilir, beğenilebilir veya yorumlanabilir ve podcast'inizin yeni dinleyiciler tarafından keşfedilme şansını artırır.
 
-5. **Cross-Promote with Other Creators**
+5. **Diğer İçerik Üreticileriyle Çapraz Tanıtım Yapın**
 
-Social media is a great tool for collaboration. You can cross-promote with other podcasters by sharing each other’s content, participating in joint projects, or featuring guest appearances. Platforms like Twitter and Instagram make it easy to network with fellow creators and build mutually beneficial relationships.
+Sosyal medya, iş birliği için harika bir araçtır. Birbirinizin içeriğini paylaşarak, ortak projelere katılarak veya konuk görünümler sunarak diğer podcast yayıncılarıyla çapraz tanıtım yapabilirsiniz. Twitter ve Instagram gibi platformlar, diğer içerik üreticilerle ağ kurmayı ve karşılıklı olarak faydalı ilişkiler kurmayı kolaylaştırır.
 
-## Choosing the Right Social Media Platforms
+## Doğru Sosyal Medya Platformlarını Seçmek
 
-Not all social media platforms are created equal, and each one offers unique benefits for podcasters. Here’s a breakdown of the most popular platforms and how you can use them effectively for podcast promotion:
+Tüm sosyal medya platformları eşit yaratılmamıştır ve her biri podcast yayıncıları için benzersiz avantajlar sunar. İşte en popüler platformların bir dökümü ve bunları podcast tanıtımı için etkili bir şekilde nasıl kullanabileceğiniz:
 
 1. **Twitter**
 
-Twitter is known for real-time conversation and community engagement. It’s a great platform to build buzz for new episodes, engage with fans, and share your thoughts in short, impactful posts.
+Twitter, gerçek zamanlı sohbet ve topluluk katılımıyla bilinir. Yeni bölümler için ilgi çekmek, hayranlarla etkileşim kurmak ve düşüncelerinizi kısa, etkili gönderilerle paylaşmak için harika bir platformdur.
 
-* **Use hashtags** to reach a wider audience by using trending or niche podcast-related hashtags (e.g., #Podcaster, #PodcastRecommendations).
+* Trend olan veya niş podcast ile ilgili hashtag'leri (örneğin, #Podcaster, #PodcastRecommendations) kullanarak daha geniş bir kitleye ulaşmak için **hashtag'leri kullanın**.
 
-* **Tweet snippets** or teasers from your latest episode to spark curiosity and get followers to tune in.
+* Merak uyandırmak ve takipçilerinizin sizi izlemesini sağlamak için en son bölümünüzden **kısa tweetler** veya fragmanlar gönderin.
 
-* **Engage with listeners** by responding to comments, retweeting fan feedback, or running polls to get audience input for future episodes.
+* Yorumlara yanıt vererek, hayran geri bildirimlerini retweet ederek veya gelecekteki bölümler için izleyicilerden girdi almak üzere anketler düzenleyerek **dinleyicilerle etkileşim kurun**.
 
 2. **Instagram**
 
-Instagram’s focus on visual content makes it an excellent platform for promoting your podcast, especially if you can get creative with graphics, behind-the-scenes photos, or video clips.
+Instagram'ın görsel içeriklere odaklanması, özellikle grafikler, sahne arkası fotoğrafları veya video kliplerle yaratıcı olabiliyorsanız, podcast'inizi tanıtmak için mükemmel bir platform olmasını sağlar.
 
-* **Create quote graphics** using memorable lines or key takeaways from your episodes.
+* Bölümlerinizden akılda kalıcı replikler veya önemli çıkarımlar kullanarak **alıntı grafikleri** oluşturun.
 
-* **Post short video clips** or audiograms to give followers a taste of your content without needing to leave the platform.
+* Takipçilerinize platformdan ayrılmadan içeriğinizin tadını vermek için **kısa video klipler** veya sesli mesajlar yayınlayın.
 
-* **Use Instagram Stories** to post timely updates, polls, or behind-the-scenes content that disappears after 24 hours.
+* 24 saat sonra kaybolan zamanında güncellemeler, anketler veya sahne arkası içerikleri yayınlamak için **Instagram Hikayeleri**'ni kullanın.
 
-* **Leverage Instagram Reels** for bite-sized video content, including fun promotional trailers for new episodes.
+* Yeni bölümler için eğlenceli tanıtım fragmanları da dahil olmak üzere, küçük video içerikleri için **Instagram Reels**'ten yararlanın.
 
 3. **Facebook**
 
-Facebook remains one of the most versatile platforms for podcast promotion, offering everything from business pages to private groups where fans can engage with each other.
+Facebook, hayranların birbirleriyle etkileşime girebileceği iş sayfalarından özel gruplara kadar her şeyi sunan, podcast tanıtımı için en çok yönlü platformlardan biri olmaya devam ediyor.
 
-* **Set up a Facebook Page** for your podcast to provide a dedicated space for your episodes, updates, and announcements.
+* Podcast'iniz için bir **Facebook Sayfası** kurun ve bölümleriniz, güncellemeleriniz ve duyurularınız için özel bir alan sağlayın.
 
-* **Start a Facebook Group** to build a community around your podcast. This allows listeners to engage with you and other fans in a more personal, interactive environment.
-
-* **Share episodes** with direct links to streaming platforms, making it easy for users to access your content.
+* Podcast'iniz etrafında bir topluluk oluşturmak için **Bir Facebook Grubu** başlatın. Bu, dinleyicilerin sizinle ve diğer hayranlarla daha kişisel, etkileşimli bir ortamda etkileşim kurmasını sağlar.
+* **Bölümleri** doğrudan akış platformlarına bağlantılar ile paylaşın, böylece kullanıcıların içeriğinize erişimi kolaylaşır.
 
 4. **TikTok**
 
-If your podcast appeals to a younger audience, TikTok’s short-form video content can be a game-changer. While promoting an audio-first medium on a visual platform may seem tricky, creative podcasters have found ways to thrive here.
+Podcast'iniz daha genç bir kitleye hitap ediyorsa, TikTok'un kısa biçimli video içeriği oyunun kurallarını değiştirebilir. Görsel bir platformda ses odaklı bir ortamı tanıtmak zor görünebilirken, yaratıcı podcast yayıncıları burada başarılı olmanın yollarını bulmuşlardır.
 
-* **Create engaging short clips** summarizing interesting or funny moments from your podcast.
+* **Podcast'inizden ilginç veya komik anları özetleyen ilgi çekici kısa klipler** oluşturun.
 
-* **Hop on trends** by participating in TikTok challenges or using popular audio snippets relevant to your podcast’s theme.
+* **TikTok yarışmalarına katılarak veya podcast'inizin temasıyla ilgili popüler ses parçacıklarını kullanarak** trendlere ayak uydurun.
 
-* **Show your personality** by sharing behind-the-scenes videos or personal insights about your podcasting journey.
+* **Podcast yolculuğunuzla ilgili sahne arkası videoları veya kişisel içgörüler paylaşarak** **kişiliğinizi gösterin.
 
 5. **YouTube**
 
-YouTube can be used not just for video podcasts, but also for marketing traditional audio podcasts. You can upload full episodes or create promotional content that complements your podcast.
+YouTube yalnızca video podcast'leri için değil, aynı zamanda geleneksel sesli podcast'leri pazarlamak için de kullanılabilir. Podcast'inizi tamamlayan tam bölümleri yükleyebilir veya tanıtım içeriği oluşturabilirsiniz.
 
-* **Post video versions** of your episodes if you record them on camera.
+* Bölümlerinizi kameraya kaydediyorsanız **video versiyonlarını** yayınlayın.
 
-* **Upload audiograms** with your podcast artwork and subtitles, allowing YouTube users to listen to your show.
+* Podcast görselleriniz ve altyazılarınızla **audiogramlar** yükleyin ve YouTube kullanıcılarının programınızı dinlemesini sağlayın.
 
-* **Engage with your audience** through YouTube comments and community posts, keeping the conversation going even after your episodes end.
+* YouTube yorumları ve topluluk gönderileri aracılığıyla izleyicilerinizle **etkileşim kurun** ve bölümleriniz bittikten sonra bile sohbeti sürdürün.
 
-## Social Media Tips for Podcasters
+## Podcast Yayıncıları İçin Sosyal Medya İpuçları
 
-Now that you understand the strengths of each platform, let’s dive into some actionable tips to help you make the most of social media:
+Artık her platformun güçlü yönlerini anladığınıza göre, sosyal medyadan en iyi şekilde yararlanmanıza yardımcı olacak bazı uygulanabilir ipuçlarına dalalım:
 
-1. **Create Consistent Branding**
+1. **Tutarlı Markalaşma Oluşturun**
 
-Branding is critical to building recognition and loyalty. Ensure your podcast has a cohesive look and feel across all your social media platforms. Use the same logo, color scheme, and tone of voice so that your audience knows it’s you, no matter where they find you. This consistency creates a professional image that builds trust.
+Markalaşma, tanınırlık ve sadakat oluşturmak için kritik öneme sahiptir. Podcast'inizin tüm sosyal medya platformlarınızda tutarlı bir görünüme ve hisse sahip olduğundan emin olun. İzleyicilerinizin sizi nerede bulurlarsa bulsunlar, sizin olduğunuzu bilmeleri için aynı logoyu, renk şemasını ve ses tonunu kullanın. Bu tutarlılık, güven oluşturan profesyonel bir imaj yaratır.
 
-2. **Post Regularly**
+2. **Düzenli Olarak Paylaşın**
 
-Consistency is key on social media. Develop a posting schedule and stick to it. Regular updates keep your followers engaged and coming back for more. Tools like Hootsuite or Buffer can help you schedule posts in advance and ensure you’re maintaining a steady presence without having to manually post every day.
+Sosyal medyada tutarlılık çok önemlidir. Bir paylaşım programı geliştirin ve buna sadık kalın. Düzenli güncellemeler takipçilerinizin ilgisini çeker ve daha fazlası için geri gelmelerini sağlar. Hootsuite veya Buffer gibi araçlar gönderileri önceden planlamanıza ve her gün manuel olarak gönderi paylaşmanıza gerek kalmadan istikrarlı bir varlık sürdürmenize yardımcı olabilir.
 
-3. **Engage with Your Audience**
+3. **Hedef Kitlenizle Etkileşim Kurun**
 
-Engagement is more important than simply posting content. Social media is a two-way street, so be sure to respond to comments, like posts, and thank listeners for their feedback. Ask questions, start conversations, and make your followers feel like they’re part of your podcast journey.
+Etkileşim, yalnızca içerik paylaşmaktan daha önemlidir. Sosyal medya iki yönlü bir yoldur, bu nedenle yorumlara yanıt verdiğinizden, gönderileri beğendiğinizden ve dinleyicilere geri bildirimleri için teşekkür ettiğinizden emin olun. Sorular sorun, sohbetler başlatın ve takipçilerinizin podcast yolculuğunuzun bir parçası olduklarını hissetmelerini sağlayın.
 
-4. **Share Episode Highlights**
+4. **Bölüm Özetlerini Paylaşın**
 
-You don’t need to promote each episode in the same way. Mix things up by sharing different types of content: a teaser video, a powerful quote, or a behind-the-scenes photo from your recording process. Audiograms (short clips of your podcast audio paired with visual elements) are especially effective at giving followers a preview of what’s inside the episode.
+Her bölümü aynı şekilde tanıtmanıza gerek yok. Farklı türde içerikler paylaşarak işleri karıştırın: bir fragman videosu, etkili bir alıntı veya kayıt sürecinizden sahne arkası bir fotoğraf. Odyogramlar (görsel öğelerle eşleştirilmiş podcast sesinizin kısa klipleri), takipçilere bölümün içinde ne olduğuna dair bir ön izleme sunmada özellikle etkilidir.
 
-5. **Use Hashtags Strategically**
+5. **Hashtag'leri Stratejik Olarak Kullanın**
 
-Hashtags help your content get discovered by people who aren’t already following you. Use podcast-related hashtags and ones specific to your niche (e.g., #TrueCrimePodcast, #HealthAndWellness) to attract listeners who are interested in your topic. Be strategic, though—too many hashtags can make your posts look cluttered.
+Hashtag'ler, sizi halihazırda takip etmeyen kişiler tarafından içeriğinizin keşfedilmesine yardımcı olur. Konunuzla ilgilenen dinleyicileri çekmek için podcast ile ilgili hashtag'ler ve nişinize özgü hashtag'ler (örneğin, #TrueCrimePodcast, #HealthAndWellness) kullanın. Ancak stratejik olun; çok fazla hashtag gönderilerinizin karmaşık görünmesine neden olabilir.
 
-6. **Run Giveaways and Contests**
+6. **Çekilişler ve Yarışmalar Düzenleyin**
 
-Everyone loves free stuff, and contests are a great way to generate excitement around your podcast. You can ask listeners to share your podcast for a chance to win merch, a guest spot, or other incentives. This not only builds engagement but also encourages your audience to spread the word about your show.
+Herkes ücretsiz şeyleri sever ve yarışmalar podcast'iniz etrafında heyecan yaratmanın harika bir yoludur. Dinleyicilerden, ürün kazanma şansı, konuk noktası veya diğer teşvikler için podcast'inizi paylaşmalarını isteyebilirsiniz. Bu yalnızca etkileşimi artırmakla kalmaz, aynı zamanda izleyicilerinizi şovunuz hakkında bilgi yaymaya teşvik eder.
 
-7. **Collaborate with Other Creators**
+7. **Diğer İçerik Üreticileriyle İş Birliği Yapın**
 
-Collaborating with other podcasters or creators in your niche can expose your show to new audiences. Consider doing cross-promotions, where you both share each other’s content, or feature guest appearances from creators your audience would enjoy.
+Nişinizdeki diğer podcaster'lar veya içerik üreticileriyle iş birliği yapmak şovunuzu yeni kitlelere duyurabilir. Birbirinizin içeriklerini paylaştığınız veya izleyicilerinizin hoşuna gidecek içerik oluşturuculardan konuk görünümler sunduğunuz çapraz promosyonlar yapmayı düşünün.
 
-## Exercise: Setting Up Social Media Accounts for Your Podcast
+## Egzersiz: Podcast'iniz için Sosyal Medya Hesapları Kurma
 
-Now that you know how powerful social media can be, it’s time to set up accounts for your podcast. Here’s a step-by-step guide to help you get started:
+Artık sosyal medyanın ne kadar güçlü olabileceğini bildiğinize göre, podcast'iniz için hesaplar kurmanın zamanı geldi. Başlamanıza yardımcı olacak adım adım bir kılavuz:
 
-* **Pick Your Platforms**: Choose the social media platforms that align best with your podcast’s target audience. Are they active on Instagram? Do they prefer YouTube or Twitter? Start with 2-3 platforms and build from there.
+* **Platformlarınızı Seçin**: Podcast'inizin hedef kitlesiyle en iyi uyum sağlayan sosyal medya platformlarını seçin. Instagram'da aktifler mi? YouTube veya Twitter'ı mı tercih ediyorlar? 2-3 platformla başlayın ve oradan devam edin.
 
-* **Create Your Accounts**: Sign up for business or creator accounts on your chosen platforms. Make sure to use your podcast name, logo, and consistent branding across all platforms.
+* **Hesaplarınızı Oluşturun**: Seçtiğiniz platformlarda işletme veya içerik oluşturucu hesaplarına kaydolun. Podcast adınızı, logonuzu ve tüm platformlarda tutarlı markanızı kullandığınızdan emin olun.
 
-* **Write a Clear Bio**: In your bio, briefly explain what your podcast is about, who it’s for, and where new listeners can find it. Include a link to your podcast or a landing page where people can easily subscribe.
+* **Net Bir Biyografi Yazın**: Biyografinizde, podcast'inizin ne hakkında olduğunu, kime yönelik olduğunu ve yeni dinleyicilerin onu nerede bulabileceğini kısaca açıklayın. Podcast'inize veya insanların kolayca abone olabileceği bir açılış sayfasına bir bağlantı ekleyin.
 
-* **Start Posting**: Begin by introducing yourself and your podcast, then post about your episodes and share teasers or behind-the-scenes content. Don’t be afraid to experiment with different types of posts to see what resonates with your audience.
+* **Gönderi Göndermeye Başlayın**: Kendinizi ve podcast'inizi tanıtarak başlayın, ardından bölümleriniz hakkında gönderi yapın ve fragmanlar veya sahne arkası içerikleri paylaşın. Hedef kitlenizde neyin yankı uyandırdığını görmek için farklı türde gönderiler denemekten korkmayın.
 
-* **Engage Right Away**: Follow other creators in your niche, respond to comments, and start engaging with potential listeners from day one. Building relationships from the outset will help grow your audience over time.
+* **Hemen Etkileşim Kurun**: Nişinizdeki diğer içerik oluşturucuları takip edin, yorumlara yanıt verin ve ilk günden itibaren potansiyel dinleyicilerle etkileşime girmeye başlayın. En baştan ilişkiler kurmak, zamanla hedef kitlenizin büyümesine yardımcı olacaktır.
 
-## Conclusion
+## Sonuç
 
-Social media is an invaluable tool for podcast promotion. It helps you reach new listeners, engage with your community, and build your brand in a way that keeps your podcast top of mind. By leveraging the unique strengths of platforms like Twitter, Instagram, Facebook, and others, you can expand your audience, increase episode visibility, and foster a loyal listener base.
+Sosyal medya, podcast tanıtımı için paha biçilmez bir araçtır. Yeni dinleyicilere ulaşmanıza, topluluğunuzla etkileşime girmenize ve podcast'inizin akıllarda kalmasını sağlayacak şekilde markanızı oluşturmanıza yardımcı olur. Twitter, Instagram, Facebook ve diğerleri gibi platformların benzersiz güçlü yönlerinden yararlanarak kitlenizi genişletebilir, bölüm görünürlüğünüzü artırabilir ve sadık bir dinleyici kitlesi oluşturabilirsiniz.
 
-Remember, social media is about more than just broadcasting content—it’s about building relationships and engaging with your audience. Consistency, creativity, and authenticity are key to making the most of your social media efforts. As you set up your accounts and begin sharing content, don’t be afraid to experiment with different strategies and adapt to what works best for your audience.
+Unutmayın, sosyal medya yalnızca içerik yayınlamaktan ibaret değildir; ilişkiler kurmak ve kitlenizle etkileşim kurmakla ilgilidir. Tutarlılık, yaratıcılık ve özgünlük, sosyal medya çabalarınızdan en iyi şekilde yararlanmanın anahtarıdır. Hesaplarınızı kurarken ve içerik paylaşmaya başladığınızda, farklı stratejiler denemekten ve kitleniz için en iyi işe yarayan şeye uyum sağlamaktan korkmayın.
 
-By following the steps outlined in today’s post, you’re on your way to developing a strong social media presence that will help your podcast grow and thrive. Now, it’s time to get started—create your accounts, connect with your audience, and watch your podcast community flourish!
+Bugünkü gönderide özetlenen adımları izleyerek, podcast'inizin büyümesine ve gelişmesine yardımcı olacak güçlü bir sosyal medya varlığı geliştirme yolundasınız. Şimdi, başlama zamanı; hesaplarınızı oluşturun, kitlenizle bağlantı kurun ve podcast topluluğunuzun gelişmesini izleyin!

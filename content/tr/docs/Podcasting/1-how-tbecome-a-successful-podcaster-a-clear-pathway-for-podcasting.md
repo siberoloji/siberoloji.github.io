@@ -25,7 +25,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 ## 1. Hafta: Podcasting'in Temellerini Anlamak
 
-### **1. Gün: Podcasting'e Giriş**
+### **1. Gün: [Podcasting'e Giriş](/tr/introduction-to-podcasting-day-1/)**
 
 * **Görev:** Podcasting'in ne olduğunu ve tarihini okuyun.
 
@@ -33,7 +33,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** En sevdiğiniz podcast'leri listeleyin ve bunlarda neleri sevdiğinizi analiz edin.
   
-###  **2. Gün: Podcast Formatları ve Türleri**
+###  **2. Gün: [Podcast Formatları ve Türleri](/tr/podcast-formats-and-genres-day-2/)**
 
 * **Görev:** Farklı podcast formatlarını (röportajlar, hikaye anlatımı, eğitim) keşfedin.
 
@@ -41,7 +41,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Stilinize ve hedeflerinize uygun formatın hangisi olduğunu belirleyin.
 
-### **3. Gün: Ekipman ve  Yazılım**
+### **3. Gün: [Ekipman ve  Yazılım](/tr/podcasting-equipment-and-software-day-3/)**
 
 * **Görev:** Podcast için gereken ekipmanları araştırın.
 
@@ -49,7 +49,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** İhtiyacınız olan ekipman/yazılımların alışveriş listesini oluşturun.
 
-### **4. Gün: Podcast'inizi Planlama**
+### **4. Gün: [Podcast'inizi Planlama](/tr/planning-your-podcast-day-4/)**
 
 * **Görev:** Podcast planlama ve bölüm yapısı hakkında bilgi edinin.
 
@@ -57,7 +57,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** İlk üç bölümünüz için bir taslak hazırlayın.
 
-### **5. Gün: Kayıt Temelleri**
+### **5. Gün: [Kayıt Temelleri](/tr/podcast-recording-basics-day-5/)**
 
 * **Görev:** Ses kaydının temellerini anlamak.
 
@@ -65,7 +65,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Seçtiğiniz yazılımla sesinizi kaydetme pratiği yapın.
 
-### **6. Gün: Podcast'inizi Düzenleme**
+### **6. Gün: [Podcast'inizi Düzenleme](//tr/editing-your-podcast-day-6//)**
 
 * **Görev:** Podcast düzenleme yazılımlarını öğrenin.
 
@@ -81,7 +81,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 ##  2. Hafta: Podcast'inizi Oluşturun
 
-### **8. Gün: Markalaşma ve Kapak Tasarımı**
+### **8. Gün: [Markalaşma ve Kapak Tasarımı](/tr/branding-and-cover-art-for-your-podcast-day-8/)**
 
 * **Görev:** Podcast markalama ve kapak resmi oluşturma hakkında bilgi edinin.
 
@@ -89,7 +89,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast kapak resminizi tasarlayın.
 
-### **9. Gün: Senaryonuzu Yazma**
+### **9. Gün: [Senaryonuzu Yazma](/tr/writing-your-script-a-guide-for-podcasters-day-9/)**
 
 * **Görev:** Bir podcast metni veya taslağının nasıl yazılacağını öğrenin.
 
@@ -97,13 +97,13 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** İlk bölümünüz için bir senaryo yazın.
 
-### **10. Gün: İlk Bölümünüzü Kaydetme**
+### **10. Gün: [İlk Bölümünüzü Kaydetme](/tr/recording-your-first-podcast-episodeday-10/)**
 
 * **Görev:** Kayıt ortamınızı ayarlayın.
 
 * **Alıştırma:** Yazdığınız senaryoyu kullanarak ilk bölümünüzü kaydedin.
 
-### **11. Gün: Bölümünüzü Düzenleme**
+### **11. Gün: [Bölümünüzü Düzenleme](/tr/editing-your-episode-a-comprehensive-guide-for-podcastersday-11/)**
 
 * **Görev:** Düzenleme tekniklerine ve ses kalitesine odaklanın.
 
@@ -111,7 +111,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** İlk bölümünüzü düzenleyin.
 
-### **12. Gün: Müzik ve Efekt Ekleme**
+### **12. Gün: [Müzik ve Efekt Ekleme](/tr/adding-music-and-effects-to-your-podcast-day-12/)**
 
 * **Görev:** Müzik ve ses efektlerini birleştirmeyi öğrenin.
 
@@ -119,7 +119,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Düzenlediğiniz bölüme müzik ekleyin.
 
-### **13. Gün: Gösteri Notlarını Yazma**
+### **13. Gün: [Gösteri Notlarını Yazma](/tr/writing-show-notes-a-comprehensive-guide-for-podcasters-day-13/)**
 
 * **Görev:** Gösteri notlarının önemini anlamak.
 
@@ -135,7 +135,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 ## 3. Hafta: Podcast'inizi Yayınlama ve Tanıtma
 
-### **15. Gün: Podcast Barındırma Platformları**
+### **15. Gün: [Podcast Barındırma Platformları](/tr/podcast-hosting-platforms-researching-and-choosing-the-right-one-for-you-day-15/)**
 
 * **Görev:** Podcast barındırma seçeneklerini araştırın.
 
@@ -143,7 +143,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Bir barındırma platformu seçin ve hesabınızı kurun.
 
-### **16. Gün: Podcast'inizi Yükleme**
+### **16. Gün: [Podcast'inizi Yükleme](/tr/uploading-your-podcast-a-comprehensive-guide-day-16/)**
 
 * **Görev:** Bölümünüzü barındırma platformunuza nasıl yükleyeceğinizi öğrenin.
 
@@ -151,7 +151,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** İlk bölümünüzü yükleyin.
 
-### **17. Gün: RSS Beslemeleri ve Dağıtımı**
+### **17. Gün: [RSS Beslemeleri ve Dağıtımı](/tr/rss-feeds-and-podcast-distribution-day-17/)**
 
 * **Görev:** RSS beslemelerinin podcast dağıtımında nasıl çalıştığını anlamak.
 
@@ -159,7 +159,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** RSS besleme ayarlarınızı yapılandırın.
 
-### **18. Gün: Podcast'inizi Tanıtın**
+### **18. Gün: [Podcast'inizi Tanıtın](/tr/promoting-your-podcast-day-18/)**
 
 * **Görev:** Podcast'ler için pazarlama stratejilerini öğrenin.
 
@@ -167,7 +167,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast'iniz için bir tanıtım planı oluşturun.
 
-### **19. Gün: Sosyal Medya ve Etkileşim**
+### **19. Gün: [Sosyal Medya ve Etkileşim](/tr/social-media-and-engagement-how-to-promote-your-podcast-effectively-day-19/)**
 
 * **Görev:** Podcast'inizi tanıtmak için sosyal medyayı nasıl kullanabileceğinizi keşfedin.
 
@@ -175,7 +175,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast'iniz için sosyal medya hesapları kurun.
 
-### **20. Gün: Diğer Podcast Yayıncılarıyla Ağ Oluşturma**
+### **20. Gün: [Diğer Podcast Yayıncılarıyla Ağ Oluşturma](/tr/networking-with-other-podcasters-building-your-community-day-20/)**
 
 * **Görev:** Podcast topluluğuyla bağlantı kurmanın yollarını araştırın.
 
@@ -191,7 +191,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 ## 4. Hafta: Gelişmiş Teknikler ve Büyüme
 
-### **22. Gün: Metriklerin Analizi**
+### **22. Gün: [Metriklerin Analizi](/tr/analyzing-metrics-a-deep-dive-into-podcast-analytics-day-22/)**
 
 * **Görev:** Podcast ölçümleri ve analizleri hakkında bilgi edinin.
 
@@ -199,7 +199,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Barındırma platformunuzun analizlerini inceleyin.
 
-### **23. Gün: Geribildirim Arama**
+### **23. Gün: [Geribildirim Arama](/tr/seeking-feedback-for-your-podcast-day-23/)**
 
 * **Görev:** Dinleyici geri bildiriminin önemini anlayın.
 
@@ -207,7 +207,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Bir geri bildirim formu oluşturun ve bunu arkadaşlarınızla/ailenizle paylaşın.
 
-### **24. Gün: Para Kazanma Stratejileri**
+### **24. Gün: [Para Kazanma Stratejileri](/tr/monetization-strategies-how-to-turn-your-podcast-into-a-revenue-stream-day-24/)**
 
 * **Görev:** Podcast'inizden para kazanmanın yollarını keşfedin.
 
@@ -215,7 +215,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Potansiyel sponsorluklar veya ürünler için bir plan taslağı hazırlayın.
 
-### **25. Gün: Sürekli İyileştirme**
+### **25. Gün: [Sürekli İyileştirme](/tr/continuous-improvement-in-podcasting-your-path-to-ongoing-success-day-25/)**
 
 * **Görev:** Sürekli öğrenme kaynaklarını öğrenin.
 
@@ -223,7 +223,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast ipuçlarına odaklanan 2-3 podcaste abone olun.
 
-### **26. Gün: Misafirlerle İşbirliği Yapmak**
+### **26. Gün: [Misafirlerle İşbirliği Yapmak](/tr/collaborating-with-guests-elevating-your-podcast-day-26/)**
 
 * **Görev:** Konuklarla görüşme sürecini anlayın.
 
@@ -231,7 +231,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast'iniz için potansiyel konukların bir listesini hazırlayın.
 
-### **27. Gün: Canlı Bölümlere Ev Sahipliği Yapmak**
+### **27. Gün: [Canlı Bölümlere Ev Sahipliği Yapmak](/tr/hosting-live-episodes-day-27/)**
 
 * **Görev:** Canlı podcasting seçeneklerini keşfedin.
 
@@ -245,7 +245,7 @@ Podcast yayıncılığında ustalaşmak için kişiselleştirilmiş bir öğrenm
 
 * **Alıştırma:** Podcast'inizin büyümesi ve gelişmesiyle ilgili önümüzdeki 3 ay için hedefler belirleyin.
 
-## Ek Kaynaklar
+## [Ek Kaynaklar](/tr/additional-resources-for-podcasting-books-websites-and-courses-for-aspiring-podcasters/)
 
 * **Kitaplar:** John Lee Dumas'ın "Podcast Launch" adlı kitabı, Jessica Abel'ın "Out on the Wire" adlı kitabı
 

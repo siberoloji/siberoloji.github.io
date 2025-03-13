@@ -1,13 +1,13 @@
 ---
-draft: true
+draft: false
 weight: 290
-title: Creating and Registering Your Podcast on Apple Podcasts
+title: "Apple Podcasts'te Podcast'inizi Oluşturma ve Kaydetme"
 linkTitle: Apple Podcasts
 translationKey: creating-and-registering-your-podcast-on-apple-podcasts
-description: Learn how to create and register your podcast on Apple Podcasts, reaching a wide audience of potential listeners.
+description: Apple Podcasts'te podcast'inizi nasıl oluşturacağınızı ve kaydedeceğinizi öğrenerek geniş bir potansiyel dinleyici kitlesine ulaşın.
 date: 2024-09-29T00:16:50+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-url: /creating-and-registering-your-podcast-on-apple-podcasts/
+url: /tr/creating-and-registering-your-podcast-on-apple-podcasts/
 featured_image: /images/apple-podcasts.jpg
 categories:
     - Podcasting
@@ -18,49 +18,49 @@ tags:
     - podcasting
     - podcasts
 ---
-1. **Create Your Podcast**
+1. **Podcast'inizi Oluşturun**
 
-* **Choose a Topic:** Decide on the niche or subject matter of your podcast.
+* **Bir Konu Seçin:** Podcast'inizin nişini veya konusunu belirleyin.
 
-* **Record Episodes:** Use recording equipment and software to capture your content.
+* **Bölümleri Kaydedin:** İçeriğinizi yakalamak için kayıt ekipmanı ve yazılımı kullanın.
 
-* **Edit and Produce:** Edit your audio, add music, sound effects, and intros/outros.
+* **Düzenleyin ve Üretin:** Sesinizi düzenleyin, müzik, ses efektleri ve girişler/çıkışlar ekleyin.
 
-2. **Set Up Your RSS Feed**
+2. **RSS Beslemenizi Ayarlayın**
 
-* **Choose a Hosting Platform:** Select a podcast hosting service like Anchor, Buzzsprout, or Podbean.
+* **Bir Barındırma Platformu Seçin:** Anchor, Buzzsprout veya Podbean gibi bir podcast barındırma hizmeti seçin.
 
-* **Create an RSS Feed:** Your hosting platform will generate an RSS feed for your podcast. This is the essential link that directs listeners and podcast directories to your content.
+* **Bir RSS Beslemesi Oluşturun:** Barındırma platformunuz podcast'iniz için bir RSS beslemesi oluşturacaktır. Bu, dinleyicileri ve podcast dizinlerini içeriğinize yönlendiren temel bağlantıdır.
 
-3. **Join Apple Podcasts Connect**
+3. **Apple Podcasts Connect'e Katılın**
 
-* **Create an Apple ID:** If you don't have one already, create an Apple ID.
+* **Bir Apple Kimliği Oluşturun:** Henüz bir tane yoksa, bir Apple Kimliği oluşturun.
 
-* **Visit Apple Podcasts Connect:** Go to [https://podcastsconnect.apple.com/](https://podcastsconnect.apple.com/)
+* **Apple Podcasts Connect'i ziyaret edin:** [https://podcastsconnect.apple.com/](https://podcastsconnect.apple.com/) adresine gidin
 
-* **Sign Up:** Follow the prompts to create a new account.
+* **Kaydolun:** Yeni bir hesap oluşturmak için istemleri izleyin.
 
-4. **Submit Your Podcast**
+4. **Podcast'inizi Gönderin**
 
-* **Add Show Information:** Provide details about your podcast, including title, description, artwork, and category.
+* **Gösteri Bilgileri Ekleyin:** Başlık, açıklama, sanat eseri ve kategori dahil olmak üzere podcast'iniz hakkında ayrıntılar sağlayın.
 
-* **Enter RSS Feed URL:** Paste the RSS feed URL you generated from your hosting platform.
+* **RSS Besleme URL'sini Girin:** Barındırma platformunuzdan oluşturduğunuz RSS besleme URL'sini yapıştırın.
 
-* **Submit for Review:** Apple will review your podcast to ensure it complies with their guidelines.
+* **İnceleme İçin Gönder:** Apple, yönergelerine uygun olduğundan emin olmak için podcast'inizi inceleyecektir.
 
-5. **Wait for Approval**
+5. **Onayı Bekleyin**
 
-* **Review Time:** The review process typically takes a few days.
+* **İnceleme Süresi:** İnceleme süreci genellikle birkaç gün sürer.
 
-* **Receive Notification:** You'll receive a notification once your podcast is approved or if there are issues to address.
-Additional Tips
-* **Optimize Metadata:** Use keywords in your title, description, and tags to improve discoverability.
+* **Bildirim Alın:** Podcast'iniz onaylandığında veya ele alınması gereken sorunlar olduğunda bir bildirim alacaksınız. Ek İpuçları
+* **Meta Verileri Optimize Edin:** Keşfedilebilirliği artırmak için başlığınızda, açıklamanızda ve etiketlerinizde anahtar sözcükler kullanın.
 
-* **Create Engaging Artwork:** Design eye-catching artwork that represents your podcast's theme.
+* **İlgi Çekici Sanat Eserleri Oluşturun:** Podcast'inizin temasını temsil eden dikkat çekici sanat eserleri tasarlayın.
 
-* **Promote Your Podcast:** Share your podcast on social media, websites, and through email marketing.
+* **Podcast'inizi Tanıtın:** Podcast'inizi sosyal medyada, web sitelerinde ve e-posta pazarlaması yoluyla paylaşın.
 
-* **Interact with Listeners:** Respond to comments and reviews to build a community.
-for more detailed instructions and troubleshooting tips, refer to the official Apple Podcasts Connect documentation:** [https://podcastsconnect.apple.com/](https://podcastsconnect.apple.com/)
+* **Dinleyicilerle Etkileşim Kurun:** Bir topluluk oluşturmak için yorumlara ve incelemelere yanıt verin.
 
-By following these steps, you can successfully create and register your podcast on Apple Podcasts, reaching a wide audience of potential listeners.
+Daha ayrıntılı talimatlar ve sorun giderme ipuçları için resmi Apple Podcasts Connect belgelerine bakın:** [https://podcastsconnect.apple.com/](https://podcastsconnect.apple.com/)
+
+Bu adımları izleyerek, podcast'inizi Apple Podcasts'te başarıyla oluşturabilir ve kaydedebilir, potansiyel dinleyicilerden oluşan geniş bir kitleye ulaşabilirsiniz.
