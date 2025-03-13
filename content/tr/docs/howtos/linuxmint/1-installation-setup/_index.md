@@ -1,17 +1,18 @@
 ---
-title: Installation and Setup
+title: Kurulum ve Ayarlama
 date: 2025-02-01
-description: Learn how to install and setup Linux Mint with this step-by-step guide.
-draft: true
+description: Bu kılavuzla Linux Mint'i nasıl kuracağınızı ve ayarlayacağınızı öğrenin.
+translationKey: installation-and-setup
+draft: false
 categories:
   - Linux
 tags:
   - Linux Mint
 weight: 10
 simple_list: true
-url: linuxmint-howtos-installation-setup
+url: /tr/linuxmint-howtos-installation-setup
 ---
 
-> This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.
+> Bu Belge, devam eden Linux Mint öğrenme çabalarının bir parçası olarak aktif olarak geliştirilmektedir. Bölümler periyodik olarak eklenecektir.
 
-## Linux Mint: Installation and Setup
+## Linux Mint: Kurulum ve Ayarlama

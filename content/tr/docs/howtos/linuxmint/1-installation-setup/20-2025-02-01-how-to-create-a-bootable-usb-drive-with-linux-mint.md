@@ -1,10 +1,10 @@
 ---
-draft: true
-title: How to Create a Bootable USB Drive with Linux Mint
-linkTitle: Create a Bootable USB
+draft: false
+title: Linux Mint ile Önyüklenebilir USB Sürücü Nasıl Oluşturulur
+linkTitle: Önyüklenebilir bir USB oluşturun
 translationKey: how-to-create-a-bootable-usb-drive-with-linux-mint
-description: Learn how to create a bootable USB drive with Linux Mint.
-url: how-to-create-a-bootable-usb-drive-with-linux-mint
+description: Linux Mint ile önyüklenebilir bir USB sürücüsü oluşturmak, yalnızca birkaç araç ve ayrıntılara dikkat gerektiren basit bir işlemdir.
+url: /tr/how-to-create-a-bootable-usb-drive-with-linux-mint
 weight: 20
 date: 2025-02-01
 tags:
@@ -19,120 +19,130 @@ keywords:
   - Linux Mint
 featured_image: /images/linuxmint1.webp
 ---
+Linux Mint ile önyüklenebilir bir USB sürücü oluşturmak, Linux Mint'i bir bilgisayara denemek veya yüklemek isteyen herkes için olmazsa olmaz bir beceridir. Başka bir işletim sisteminden geçiş yapıyor, Linux Mint'i birden fazla makineye kuruyor veya bir kurtarma aracı oluşturuyor olun, önyüklenebilir bir USB sürücü en kullanışlı ve güvenilir yöntemdir. Bu kılavuz, Linux Mint'te kolayca bulunabilen araçları kullanarak sizi adım adım süreçte yönlendirecektir.
 
-Creating a bootable USB drive with Linux Mint is an essential skill for anyone interested in trying out or installing Linux Mint on a computer. Whether you're switching from another operating system, setting up Linux Mint on multiple machines, or creating a recovery tool, a bootable USB drive is the most convenient and reliable method. This guide will walk you through the process step-by-step, using tools readily available in Linux Mint.
+## Neden Önyüklenebilir Bir USB Sürücü Kullanmalısınız?
 
-## Why Use a Bootable USB Drive?
+Önyüklenebilir USB sürücüler çeşitli avantajlar sunar:
 
-Bootable USB drives offer several advantages:
+1. **Taşınabilirlik:** İşletim sisteminizi istediğiniz yere götürebilir ve farklı bilgisayarlarda kullanabilirsiniz.
+2. **Hız:** USB sürücüler, CD veya DVD'lere kıyasla daha hızlı okuma/yazma hızları sunar.
+3. **Kullanışlılık:** Farklı dağıtımlar veya sürümler için oluşturulması, değiştirilmesi ve yeniden kullanılması kolaydır.
+4. **Kurtarma:** Mevcut kurulumlarda sorun giderme ve onarım için kullanışlıdır.
 
-1. **Portability:** You can carry your OS anywhere and use it on different computers.
-2. **Speed:** USB drives offer faster read/write speeds compared to CDs or DVDs.
-3. **Convenience:** Easy to create, modify, and reuse for different distributions or versions.
-4. **Recovery:** Handy for troubleshooting and repairing existing installations.
+## Önkoşullar
 
-## Prerequisites
+Başlamadan önce şunlara ihtiyacınız olacak:
 
-Before starting, you'll need the following:
+- En az **4 GB** depolama alanına sahip bir **USB flash sürücü** (8 GB veya daha fazlası önerilir).
+- Bir **Linux Mint ISO** dosyası (resmi web sitesinden indirilir).
+- Linux Mint çalıştıran bir bilgisayar.
 
-- A **USB flash drive** with at least **4 GB** of storage (8 GB or more recommended).
-- A **Linux Mint ISO** file (downloaded from the official website).
-- A computer running Linux Mint.
+İşlem mevcut tüm içeriği sileceğinden, USB sürücüdeki tüm önemli verileri yedeklediğinizden emin olun.
 
-Ensure that you've backed up any important data on the USB drive, as the process will erase all existing content.
+## Adım 1: Linux Mint ISO Dosyasını İndirin
 
-## Step 1: Download the Linux Mint ISO File
+1. **Resmi Linux Mint Web Sitesini Ziyaret Edin:**
 
-1. **Visit the Official Linux Mint Website:**
-   - Go to [https://www.linuxmint.com/download.php](https://www.linuxmint.com/download.php).
-   - Select your preferred edition (Cinnamon, MATE, or Xfce).
-   - Download the ISO file from a nearby mirror or via torrent for faster downloads.
+- [https://www.linuxmint.com/download.php](https://www.linuxmint.com/download.php) adresine gidin.
+- Tercih ettiğiniz sürümü seçin (Cinnamon, MATE veya Xfce).
+- Daha hızlı indirmeler için ISO dosyasını yakındaki bir aynadan veya torrent üzerinden indirin.
 
-2. **Verify the ISO File:**
-   - It's crucial to verify the integrity of the ISO file using SHA256 checksums and GPG signatures to ensure it's authentic and not corrupted. (Refer to our guide on [verifying Linux Mint ISO files](/how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint/) for detailed instructions.)
+2. **ISO Dosyasını Doğrulayın:**
 
-## Step 2: Install the USB Creation Tool
+- Orijinal olduğundan ve bozulmadığından emin olmak için SHA256 toplam kontrolleri ve GPG imzaları kullanarak ISO dosyasının bütünlüğünü doğrulamak çok önemlidir. (Ayrıntılı talimatlar için [Linux Mint ISO dosyalarını doğrulama](/how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint/) kılavuzumuza bakın.)
 
-Linux Mint comes with a built-in tool called **USB Image Writer**, which simplifies the process of creating a bootable USB. Alternatively, you can use third-party tools like **[balenaEtcher](/balena-etcher-tool-creating-bootable-usb/)** or **UNetbootin**.
+## 2. Adım: USB Oluşturma Aracını Yükleyin
 
-### Option 1: Using USB Image Writer (Recommended)
+Linux Mint, önyüklenebilir bir USB oluşturma sürecini basitleştiren **USB Image Writer** adlı yerleşik bir araçla birlikte gelir. Alternatif olarak, **[balenaEtcher](/balena-etcher-tool-creating-bootable-usb/)** veya **UNetbootin** gibi üçüncü taraf araçları kullanabilirsiniz.
 
-1. **Open USB Image Writer:**
-   - Go to the Mint menu.
-   - Search for "USB Image Writer" and launch the application.
+### Seçenek 1: USB Image Writer'ı Kullanma (Önerilir)
 
-2. **Insert the USB Drive:**
-   - Plug your USB drive into an available USB port.
+1. **USB Image Writer'ı açın:**
 
-3. **Select the ISO File:**
-   - In USB Image Writer, click the "Select Image" button.
-   - Navigate to your downloaded Linux Mint ISO file and select it.
+- Mint menüsüne gidin.
+- "USB Image Writer"ı arayın ve uygulamayı başlatın.
 
-4. **Choose the Target USB Drive:**
-   - Ensure the correct USB drive is selected to avoid accidentally erasing other drives.
+2. **USB Sürücüyü takın:**
 
-5. **Write the ISO to USB:**
-   - Click the "Write" button.
-   - Enter your password if prompted.
-   - Wait for the process to complete. This may take several minutes.
+- USB sürücünüzü kullanılabilir bir USB portuna takın.
 
-### Option 2: Using balenaEtcher
+3. **ISO Dosyasını seçin:**
 
-If you prefer a cross-platform tool:
+- USB Image Writer'da "Görüntü Seç" düğmesine tıklayın.
+- İndirdiğiniz Linux Mint ISO dosyasına gidin ve seçin.
 
-1. **Install balenaEtcher:**
-   - Download it from [https://www.balena.io/etcher/](https://www.balena.io/etcher/).
-   - Install it using your package manager or the provided AppImage.
+4. **Hedef USB Sürücüyü seçin:**
 
-2. **Create the Bootable USB:**
-   - Open Etcher.
-   - Click "Flash from file" and select the Linux Mint ISO.
-   - Choose your USB drive.
-   - Click "Flash!" and wait for the process to finish.
+- Diğer sürücüleri yanlışlıkla silmemek için doğru USB sürücüsünün seçildiğinden emin olun.
 
-## Step 3: Booting from the USB Drive
+5. **ISO'yu USB'ye yazın:**
 
-Once you've created the bootable USB, it's time to test it:
+- "Yaz" düğmesine tıklayın.
+- İstenirse parolanızı girin.
+- İşlemin tamamlanmasını bekleyin. Bu birkaç dakika sürebilir.
 
-1. **Restart Your Computer:**
-   - Leave the USB drive plugged in.
-   - Reboot the system.
+### Seçenek 2: balenaEtcher Kullanımı
 
-2. **Access the Boot Menu:**
-   - During startup, press the key to access the boot menu (commonly **F12**, **Esc**, **F2**, or **Del**, depending on your computer's manufacturer).
+Eğer platformlar arası bir araç tercih ediyorsanız:
 
-3. **Select the USB Drive:**
-   - Use the arrow keys to select your USB drive from the list.
-   - Press **Enter** to boot.
+1. **BalenaEtcher'ı yükleyin:**
 
-4. **Try or Install Linux Mint:**
-   - You'll see the Linux Mint boot menu.
-   - Choose "Start Linux Mint" to try it without installing, or select "Install Linux Mint" to proceed with the installation.
+- [https://www.balena.io/etcher/](https://www.balena.io/etcher/) adresinden indirin.
+- Paket yöneticinizi veya sağlanan AppImage'ı kullanarak yükleyin.
 
-## Troubleshooting Common Issues
+2. **Önyüklenebilir USB'yi oluşturun:**
 
-### 1. USB Drive Not Recognized
+- Etcher'ı açın.
+- "Dosyadan flaşla"ya tıklayın ve Linux Mint ISO'yu seçin.
+- USB sürücünüzü seçin.
+- "Flaşla!"ya tıklayın ve işlemin bitmesini bekleyin.
 
-- **Check USB Ports:** Try a different port, preferably a USB 2.0 port.
-- **Recreate the Bootable USB:** The ISO might not have been written correctly.
-- **BIOS Settings:** Ensure USB boot is enabled in your BIOS/UEFI settings.
+## Adım 3: USB Sürücüsünden Önyükleme
 
-### 2. Boot Menu Not Accessible
+Önyüklenebilir USB'yi oluşturduktan sonra, onu test etme zamanı:
 
-- **Different Key:** Refer to your computer's manual for the correct boot key.
-- **Fast Boot/ Secure Boot:** Disable these features in BIOS/UEFI if they're causing issues.
+1. **Bilgisayarınızı Yeniden Başlatın:**
 
-### 3. "Missing Operating System" Error
+- USB sürücüsünü takılı bırakın.
+- Sistemi yeniden başlatın.
 
-- **Reformat USB:** Format the USB drive using FAT32 and recreate the bootable USB.
-- **Re-download ISO:** The ISO might be corrupted.
+2. **Önyükleme Menüsüne Erişim:**
 
-## Additional Tips
+- Başlatma sırasında, önyükleme menüsüne erişmek için tuşa basın (genellikle bilgisayarınızın üreticisine bağlı olarak **F12**, **Esc**, **F2** veya **Del**).
 
-- **Persistent Storage:** If you want to save data between sessions, consider creating a persistent live USB using tools like **UNetbootin** or **mkusb**.
-- **Use High-Quality USB Drives:** Cheap, low-quality drives can cause errors during the boot process.
-- **Keep Software Updated:** Ensure your USB creation tools are up-to-date to avoid compatibility issues.
+3. **USB Sürücüsünü Seçin:**
 
-## Conclusion
+- Listeden USB sürücünüzü seçmek için ok tuşlarını kullanın.
+- Önyükleme yapmak için **Enter** tuşuna basın.
 
-Creating a bootable USB drive with Linux Mint is a straightforward process that requires just a few tools and careful attention to detail. Whether you're a beginner or an experienced user, this guide provides all the necessary steps to ensure a smooth and successful setup. By following these instructions, you'll be ready to install or test Linux Mint on any compatible system efficiently and securely.
+4. **Linux Mint'i Deneyin veya Kurun:**
+
+- Linux Mint önyükleme menüsünü göreceksiniz.
+- Yüklemeden denemek için "Linux Mint'i Başlat"ı seçin veya yüklemeye devam etmek için "Linux Mint'i Yükle"yi seçin.
+
+## Yaygın Sorunları Giderme
+
+### 1. USB Sürücü Tanınmıyor
+
+- **USB Bağlantı Noktalarını Kontrol Edin:** Farklı bir bağlantı noktası, tercihen bir USB 2.0 bağlantı noktası deneyin.
+- **Önyüklenebilir USB'yi Yeniden Oluşturun:** ISO doğru yazılmamış olabilir. - **BIOS Ayarları:** BIOS/UEFI ayarlarınızda USB önyüklemesinin etkinleştirildiğinden emin olun.
+
+### 2. Önyükleme Menüsüne Erişilemiyor
+
+- **Farklı Anahtar:** Doğru önyükleme anahtarı için bilgisayarınızın kılavuzuna bakın.
+- **Hızlı Önyükleme/Güvenli Önyükleme:** Sorun yaratıyorlarsa bu özellikleri BIOS/UEFI'de devre dışı bırakın.
+
+### 3. "Eksik İşletim Sistemi" Hatası
+
+- **USB'yi Yeniden Biçimlendir:** USB sürücüsünü FAT32 kullanarak biçimlendirin ve önyüklenebilir USB'yi yeniden oluşturun.
+- **ISO'yu Yeniden İndir:** ISO bozulmuş olabilir.
+
+## Ek İpuçları
+
+- **Kalıcı Depolama:** Oturumlar arasında veri kaydetmek istiyorsanız, **UNetbootin** veya **mkusb** gibi araçları kullanarak kalıcı bir canlı USB oluşturmayı düşünün.
+- **Yüksek Kaliteli USB Sürücüler Kullanın:** Ucuz, düşük kaliteli sürücüler önyükleme işlemi sırasında hatalara neden olabilir. - **Yazılımı Güncel Tutun:** Uyumluluk sorunlarından kaçınmak için USB oluşturma araçlarınızın güncel olduğundan emin olun.
+
+## Sonuç
+
+Linux Mint ile önyüklenebilir bir USB sürücüsü oluşturmak, yalnızca birkaç araç ve ayrıntılara dikkat gerektiren basit bir işlemdir. İster yeni başlayan ister deneyimli bir kullanıcı olun, bu kılavuz sorunsuz ve başarılı bir kurulum sağlamak için gereken tüm adımları sağlar. Bu talimatları izleyerek, Linux Mint'i herhangi bir uyumlu sisteme verimli ve güvenli bir şekilde kurmaya veya test etmeye hazır olacaksınız.

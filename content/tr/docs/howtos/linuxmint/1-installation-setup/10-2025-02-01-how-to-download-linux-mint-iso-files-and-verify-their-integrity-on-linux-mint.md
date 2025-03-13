@@ -1,10 +1,10 @@
 ---
-draft: true
-title: How to Download Linux Mint ISO Files and Verify Their Integrity on Linux Mint
-linkTitle: Download ISO Files
+draft: false
+title: "Linux Mint ISO Dosyaları Nasıl İndirilir ve Linux Mint'te Bütünlükleri Nasıl Doğrulanır"
+linkTitle: ISO Dosyalarını İndirin
 translationKey: how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint
-description: In this guide, you will learn how to download Linux Mint ISO files and verify their integrity on Linux Mint.
-url: how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint
+description: Bu yazımızda Linux Mint ISO dosyalarını indirme ve bütünlüklerini doğrulama kısımlarını anlatacağız.
+url: /tr/how-to-download-linux-mint-iso-files-and-verify-their-integrity-on-linux-mint
 weight: 10
 date: 2025-02-01
 tags:
@@ -20,126 +20,122 @@ keywords:
   - download Linux Mint ISO files
 featured_image: /images/linuxmint1.webp
 ---
+Linux Mint, kullanıcı dostu arayüzü ve sağlam performansıyla bilinen en popüler Linux dağıtımlarından biridir. İster Linux Mint'i ilk kez kurmak isteyen yeni bir kullanıcı olun, ister yükseltmeyi veya önyüklenebilir bir USB oluşturmayı planlayan deneyimli bir kullanıcı olun, ISO dosyasını indirmek ve bütünlüğünü doğrulamak çok önemlidir. Bu kılavuz, güvenli ve sorunsuz bir kurulum deneyimi sağlamak için sizi adım adım süreçte yönlendirecektir.
 
-Linux Mint is one of the most popular Linux distributions, known for its user-friendly interface and robust performance. Whether you're a new user looking to install Linux Mint for the first time or an experienced user planning to upgrade or create a bootable USB, downloading the ISO file and verifying its integrity is crucial. This guide will walk you through the process step-by-step, ensuring a secure and hassle-free installation experience.
+## ISO Bütünlüğünü Doğrulamanın Önemi
 
-## Why Verifying ISO Integrity Is Important
+İndirme ve doğrulama sürecine dalmadan önce, ISO dosyasının bütünlüğünü doğrulamanın neden kritik olduğunu anlamak önemlidir:
 
-Before diving into the download and verification process, it's essential to understand why verifying the ISO file's integrity is critical:
+1. **Güvenlik:** ISO'yu doğrulamak, dosyanın kurcalanmadığından emin olmanızı sağlar ve bu da güvenlik açıklarını önlemeye yardımcı olur.
+2. **Veri Bütünlüğü:** Dosyanın doğru bir şekilde indirildiğini ve ağ sorunları nedeniyle bozulmadığını doğrular.
+3. **Gerçeklik:** ISO'nun Linux Mint'ten resmi bir sürüm olduğunu, değiştirilmiş veya kötü amaçlı bir sürüm olmadığını garanti eder.
 
-1. **Security:** Verifying the ISO ensures that the file hasn't been tampered with, which helps prevent security vulnerabilities.
-2. **Data Integrity:** It confirms that the file was downloaded correctly, free from corruption due to network issues.
-3. **Authenticity:** It guarantees that the ISO is an official release from Linux Mint, not a modified or malicious version.
+## Adım 1: Linux Mint ISO Dosyasını İndirme
 
-## Step 1: Downloading the Linux Mint ISO File
+### 1. Resmi Linux Mint Web Sitesini ziyaret edin
 
-### 1. Visit the Official Linux Mint Website
+- Web tarayıcınızı açın ve [https://www.linuxmint.com/download.php](https://www.linuxmint.com/download.php) adresine gidin.
+- Tercih ettiğiniz sürümü seçin: **Cinnamon**, **MATE** veya **Xfce**. Her biri çeşitli kullanıcı tercihlerine hitap eden farklı masaüstü ortamları sunar.
 
-- Open your web browser and go to [https://www.linuxmint.com/download.php](https://www.linuxmint.com/download.php).
-- Choose the edition you prefer: **Cinnamon**, **MATE**, or **Xfce**. Each offers different desktop environments catering to various user preferences.
+### 2. Bir İndirme Aynası Seçin
 
-### 2. Select a Download Mirror
+- İstediğiniz sürümü tıklayın, bu sizi indirme aynalarının listesine götürecektir.
+- Daha hızlı indirme hızları için coğrafi konumunuza yakın bir ayna seçin.
+- Alternatif olarak, büyük dosyalar için genellikle daha hızlı ve daha güvenilir olan **Torrent** seçeneğini kullanabilirsiniz.
 
-- Click on the version you want, which will lead you to a list of download mirrors.
-- Choose a mirror close to your geographical location for faster download speeds.
-- Alternatively, you can use the **Torrent** option, which is often faster and more reliable for large files.
+### 3. ISO Dosyasını Kaydedin
 
-### 3. Save the ISO File
+- Aynayı seçtikten sonra indirmeyi başlatmak için indirme bağlantısına tıklayın. - ISO dosyasını daha sonra kolayca erişebileceğiniz bir dizine, örneğin `İndirilenler` dizinine kaydedin.
 
-- After selecting the mirror, click the download link to start the download.
-- Save the ISO file in a directory where you can easily access it later, such as `Downloads`.
+## 2. Adım: Denetim Dosyalarını İndirin
 
-## Step 2: Download the Checksum Files
+ISO'nun bütünlüğünü doğrulamak için, karşılık gelen denetim dosyalarına ihtiyacınız olacak:
 
-To verify the ISO's integrity, you'll need the corresponding checksum files:
+- **SHA256 Denetim Dosyası:** Bu dosya, veri bütünlüğünü doğrulamak için kullanılan karma değerini içerir.
+- **GPG İmza Dosyası:** Denetim dosyasının gerçekliğini doğrulamak için kullanılır.
 
-- **SHA256 Checksum File:** This file contains the hash value used to verify data integrity.
-- **GPG Signature File:** Used to verify the authenticity of the checksum file.
+### 1. Denetim ve İmza Dosyalarını İndirin
 
-### 1. Download the Checksum and Signature Files
+- Aynı indirme sayfasında, `sha256sum.txt` ve `sha256sum.txt.gpg` etiketli bağlantıları arayın.
+- Her iki dosyayı da indirin ve ISO dosyanızla aynı dizine yerleştirin.
 
-- On the same download page, look for links labeled `sha256sum.txt` and `sha256sum.txt.gpg`.
-- Download both files and place them in the same directory as your ISO file.
+## Adım 3: ISO Dosyasının Bütünlüğünü Doğrulama
 
-## Step 3: Verifying the ISO File's Integrity
+### 1. Terminali açın
 
-### 1. Open the Terminal
+- Linux Mint'te terminali açmak için `Ctrl + Alt + T` tuşlarına basın.
 
-- Press `Ctrl + Alt + T` to open the terminal in Linux Mint.
+### 2. İndirme Dizinine gidin
 
-### 2. Navigate to the Download Directory
-
-If your files are in the `Downloads` folder:
+Dosyalarınız `Downloads` klasöründeyse:
 
 ```bash
 cd ~/Downloads
 ```
 
-### 3. Verify the SHA256 Checksum
+### 3. SHA256 Kontrol Toplamını Doğrulayın
 
-Run the following command to calculate the ISO's checksum:
+ISO'nun kontrol toplamını hesaplamak için aşağıdaki komutu çalıştırın:
 
 ```bash
 sha256sum linuxmint-21.1-cinnamon-64bit.iso
 ```
 
-Replace `linuxmint-21.1-cinnamon-64bit.iso` with the actual filename of your ISO.
+`linuxmint-21.1-cinnamon-64bit.iso` ifadesini ISO'nuzun gerçek dosya adıyla değiştirin.
 
-- The output will be a long string of characters (the hash value).
-- Compare this value with the one listed in the `sha256sum.txt` file:
+- Çıktı, uzun bir karakter dizisi (karma değer) olacaktır. - Bu değeri `sha256sum.txt` dosyasında listelenen değerle karşılaştırın:
 
 ```bash
 cat sha256sum.txt
 ```
 
-- If both values match, the ISO file is intact and uncorrupted.
+- Her iki değer de eşleşirse, ISO dosyası sağlam ve bozulmamış demektir.
 
-### 4. Verify the Authenticity with GPG
+### 4. GPG ile Doğrulamayı Doğrulayın
 
-#### a. Import the Linux Mint Public Key
+#### a. Linux Mint Genel Anahtarını İçeri Aktarın
 
-First, import the Linux Mint GPG key:
+Öncelikle, Linux Mint GPG anahtarını içeri aktarın:
 
 ```bash
 gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys A25BAE09EF0A2B526D6478F5F7D0A4C4B6EF6B31
 ```
 
-#### b. Verify the Checksum File
+#### b. Denetim Dosyasını Doğrulayın
 
-Run this command to verify the authenticity:
+Doğrulamayı doğrulamak için şu komutu çalıştırın:
 
 ```bash
 gpg --verify sha256sum.txt.gpg sha256sum.txt
 ```
 
-- If the output includes `Good signature from "Linux Mint ISO Signing Key"`, the file is authentic.
-- A warning about an "untrusted signature" may appear, which is normal unless you've explicitly set the key as trusted.
+- Çıktıda `"Linux Mint ISO İmza Anahtarından İyi İmza" ifadesi yer alıyorsa, dosya doğru demektir. - "Güvenilmeyen imza" hakkında bir uyarı görünebilir, ancak anahtarı açıkça güvenilir olarak ayarlamadıysanız bu normaldir.
 
-## Troubleshooting Common Issues
+## Yaygın Sorunları Giderme
 
-### 1. Mismatched Checksums
+### 1. Eşleşmeyen Denetim Toplamları
 
-If the checksum doesn't match:
+Denetim toplamı eşleşmiyorsa:
 
-- **Re-download the ISO file:** Network errors can cause data corruption.
-- **Use a different mirror:** The mirror server might have an outdated or corrupted file.
-- **Verify download tools:** If using a download manager, ensure it's configured correctly.
+- **ISO dosyasını yeniden indirin:** Ağ hataları veri bozulmasına neden olabilir.
+- **Farklı bir yansıtma kullanın:** Yansıtma sunucusunda güncel olmayan veya bozuk bir dosya olabilir.
+- **İndirme araçlarını doğrulayın:** Bir indirme yöneticisi kullanıyorsanız, doğru şekilde yapılandırıldığından emin olun.
 
-### 2. GPG Verification Failures
+### 2. GPG Doğrulama Hataları
 
-If the GPG verification fails:
+GPG doğrulaması başarısız olursa:
 
-- **Check for typos:** Ensure you're using the correct file names in commands.
-- **Update GPG keys:** The signing key may have changed. Verify the key from the official Linux Mint website.
-- **Re-download signature files:** Corruption during download can cause verification failures.
+- **Yazım hatalarını kontrol edin:** Komutlarda doğru dosya adlarını kullandığınızdan emin olun.
+- **GPG anahtarlarını güncelleyin:** İmza anahtarı değişmiş olabilir. Anahtarı resmi Linux Mint web sitesinden doğrulayın.
+- **İmza dosyalarını yeniden indirin:** İndirme sırasında bozulma doğrulama hatalarına neden olabilir.
 
-## Best Practices for Secure Downloads
+## Güvenli İndirmeler İçin En İyi Uygulamalar
 
-- **Always download from official sources:** Avoid third-party sites.
-- **Verify both checksum and GPG signature:** This double layer ensures both file integrity and authenticity.
-- **Keep your system updated:** Regular updates improve security tools like GPG.
-- **Use a secure network:** Avoid public Wi-Fi when downloading large, critical files.
+- **Her zaman resmi kaynaklardan indirin:** Üçüncü taraf sitelerden kaçının.
+- **Hem sağlama toplamını hem de GPG imzasını doğrulayın:** Bu çift katman hem dosya bütünlüğünü hem de özgünlüğünü sağlar.
+- **Sisteminizi güncel tutun:** Düzenli güncellemeler GPG gibi güvenlik araçlarını iyileştirir.
+- **Güvenli bir ağ kullanın:** Büyük, kritik dosyaları indirirken genel Wi-Fi'den kaçının.
 
-## Conclusion
+## Sonuç
 
-Downloading and verifying Linux Mint ISO files is a straightforward but essential process to ensure a secure and reliable installation. By following these steps—downloading from official sources, checking SHA256 checksums, and verifying GPG signatures—you protect your system from corrupted or malicious files. Regularly practicing these verification methods strengthens your security awareness, making your Linux Mint experience both safe and smooth.
+Linux Mint ISO dosyalarını indirmek ve doğrulamak, güvenli ve güvenilir bir kurulum sağlamak için basit ancak gerekli bir işlemdir. Bu adımları izleyerek (resmi kaynaklardan indirme, SHA256 sağlama toplamlarını kontrol etme ve GPG imzalarını doğrulama) sisteminizi bozuk veya kötü amaçlı dosyalardan korursunuz. Bu doğrulama yöntemlerini düzenli olarak uygulamak güvenlik farkındalığınızı güçlendirir ve Linux Mint deneyiminizi hem güvenli hem de sorunsuz hale getirir.

@@ -2,6 +2,7 @@
 title: Installation and Setup
 date: 2025-02-01
 description: Learn how to install and setup Linux Mint with this step-by-step guide.
+translationKey: installation-and-setup
 draft: false
 categories:
   - Linux

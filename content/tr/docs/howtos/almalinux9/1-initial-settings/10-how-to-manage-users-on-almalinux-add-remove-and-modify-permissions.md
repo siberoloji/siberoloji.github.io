@@ -1,8 +1,8 @@
 ---
-title: How to Manage Users on AlmaLinux Add, Remove, and Modify
-description: Learn how to add, remove, and modify users on AlmaLinux. Detailed examples and best practices for permissions, quotas, and user management.
+title: "AlmaLinux'ta Kullanıcılar Nasıl Yönetilir, Eklenir, Kaldırılır ve Değiştirilir"
+description: AlmaLinux'ta kullanıcı eklemeyi, kaldırmayı ve değiştirmeyi öğrenin. İzinler, kotalar ve kullanıcı yönetimi için ayrıntılı örnekler ve en iyi uygulamalar.
 date: 2024-11-29
-draft: true
+draft: false
 tags:
   - AlmaLinux
   - adduser
@@ -10,91 +10,89 @@ tags:
 categories:
   - Linux
   - Linux How-to
-linkTitle: Manage Users
+linkTitle: Kullanıcı Yönetimi
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 10
 keywords:
   - Manage Users
 featured_image: /images/almalinux.webp
-url: manage-users-almalinux-add-remove-modify
+url: /tr/manage-users-almalinux-add-remove-modify
 translationKey: manage-users-almalinux-add-remove-modify
 ---
+### **1. AlmaLinux'ta Kullanıcı Yönetimini Anlamak**
 
-### **1. Understanding User Management in AlmaLinux**
-
-User management in AlmaLinux involves controlling who can access the system, what they can do, and managing their resources. This includes adding new users, setting passwords, assigning permissions, and removing users when no longer needed. AlmaLinux uses the Linux kernel's built-in user management commands like `adduser`, `usermod`, `passwd`, and `deluser`.
+AlmaLinux'ta kullanıcı yönetimi, sisteme kimin erişebileceğini, ne yapabileceklerini ve kaynaklarını yönetmeyi içerir. Buna yeni kullanıcılar eklemek, parolalar ayarlamak, izinler atamak ve artık ihtiyaç duyulmadığında kullanıcıları kaldırmak dahildir. AlmaLinux, `adduser`, `usermod`, `passwd` ve `deluser` gibi Linux çekirdeğinin yerleşik kullanıcı yönetimi komutlarını kullanır.
 
 ---
 
-### **2. Adding a New User**
+### **2. Yeni Bir Kullanıcı Ekleme**
 
-AlmaLinux provides the `useradd` command for creating a new user. This command allows you to add a user while specifying their home directory, default shell, and other options.
+AlmaLinux, yeni bir kullanıcı oluşturmak için `useradd` komutunu sağlar. Bu komut, ana dizinini, varsayılan kabuğunu ve diğer seçenekleri belirterek bir kullanıcı eklemenize olanak tanır.
 
-### **Steps to Add a New User:**
+### **Yeni Bir Kullanıcı Ekleme Adımları:**
 
-1. Open your terminal and switch to the root user or a user with sudo privileges.
-2. Run the following command to add a user:
+1. Terminalinizi açın ve kök kullanıcıya veya sudo ayrıcalıklarına sahip bir kullanıcıya geçin. 2. Bir kullanıcı eklemek için aşağıdaki komutu çalıştırın:
 
 ```bash
 sudo useradd -m -s /bin/bash newusername
 
 ```
 
-- `m`: Creates a home directory for the user.
-- `s`: Specifies the shell (default: `/bin/bash`).
+- `m`: Kullanıcı için bir ana dizin oluşturur.
+- `s`: Kabuğu belirtir (varsayılan: `/bin/bash`).
 
-3. Set a password for the new user:
+3. Yeni kullanıcı için bir parola ayarlayın:
 
 ```bash
 sudo passwd newusername
 
 ```
 
-{{% alert title="Warning" color="warning" %}}
- [The danger of passwordless accounts](/security-implications-passwordless-user-accounts-almalinux/) is that anyone can log in without a password.
+{{% alert title="Uyarı" color="uyarı" %}}
+[Parolasız hesapların tehlikesi](/security-implications-passwordless-user-accounts-almalinux/) herkesin parola olmadan oturum açabilmesidir.
 {{% /alert %}}
 
-1. Verify the user has been created:
+1. Kullanıcının oluşturulduğunu doğrulayın:
 
 ```bash
 cat /etc/passwd | grep newusername
 
 ```
 
-This displays details of the newly created user, including their username, home directory, and shell.
+Bu, kullanıcı adı, ana dizin ve kabuk dahil olmak üzere yeni oluşturulan kullanıcının ayrıntılarını görüntüler.
 
 ---
 
-### **3. Modifying User Details**
+### **3. Kullanıcı Ayrıntılarını Değiştirme**
 
-Sometimes, you need to update user information such as their shell, username, or group. AlmaLinux uses the `usermod` command for this.
+Bazen, kabuk, kullanıcı adı veya grup gibi kullanıcı bilgilerini güncellemeniz gerekir. AlmaLinux bunun için `usermod` komutunu kullanır.
 
-### **Changing a User’s Shell**
+### **Bir Kullanıcının Kabuğunu Değiştirme**
 
-To change the shell of an existing user:
+Mevcut bir kullanıcının kabuğunu değiştirmek için:
 
 ```bash
 sudo usermod -s /usr/bin/zsh newusername
 
 ```
 
-Verify the change:
+Değişikliği doğrulayın:
 
 ```bash
 cat /etc/passwd | grep newusername
 
 ```
 
-### **Renaming a User**
+### **Bir Kullanıcıyı Yeniden Adlandırma**
 
-To rename a user:
+Bir kullanıcıyı yeniden adlandırmak için:
 
 ```bash
 sudo usermod -l newusername oldusername
 
 ```
 
-Additionally, rename their home directory:
+Ek olarak, ana dizinlerini yeniden adlandırın:
 
 ```bash
 sudo mv /home/oldusername /home/newusername
@@ -102,16 +100,16 @@ sudo usermod -d /home/newusername newusername
 
 ```
 
-### **Adding a User to a Group**
+### **Bir Kullanıcıyı Bir Gruba Ekleme**
 
-Groups allow better management of permissions. To add a user to an existing group:
+Gruplar izinlerin daha iyi yönetilmesini sağlar. Mevcut bir gruba kullanıcı eklemek için:
 
 ```bash
 sudo usermod -aG groupname newusername
 
 ```
 
-For example, to add the user `newusername` to the `wheel` group (which provides sudo access):
+Örneğin, `newusername` kullanıcısını `wheel` grubuna (sudo erişimi sağlayan) eklemek için:
 
 ```bash
 sudo usermod -aG wheel newusername
@@ -120,27 +118,27 @@ sudo usermod -aG wheel newusername
 
 ---
 
-### **4. Removing a User**
+### **4. Bir Kullanıcıyı Kaldırma**
 
-Removing a user from AlmaLinux involves deleting their account and optionally their home directory. Use the `userdel` command for this purpose.
+Bir kullanıcıyı AlmaLinux'tan kaldırmak, hesabını ve isteğe bağlı olarak ana dizinini silmeyi içerir. Bu amaçla `userdel` komutunu kullanın.
 
-### **Steps to Remove a User:**
+### **Kullanıcıyı Kaldırma Adımları:**
 
-1. To delete a user without deleting their home directory:
+1. Ana dizinini silmeden bir kullanıcıyı silmek için:
 
 ```bash
 sudo userdel newusername
 
 ```
 
-2. To delete a user along with their home directory:
+2. Ana diziniyle birlikte bir kullanıcıyı silmek için:
 
 ```bash
 sudo userdel -r newusername
 
 ```
 
-3. Verify the user has been removed:
+3. Kullanıcının kaldırıldığını doğrulayın:
 
 ```bash
 cat /etc/passwd | grep newusername
@@ -149,45 +147,45 @@ cat /etc/passwd | grep newusername
 
 ---
 
-### **5. Managing User Permissions**
+### **5. Kullanıcı İzinlerini Yönetme**
 
-User permissions in Linux are managed using file permissions, which are categorized as **read (r)**, **write (w)**, and **execute (x)** for three entities: **owner**, **group**, and **others**.
+Linux'taki kullanıcı izinleri, üç varlık için **okuma (r)**, **yazma (w)** ve **yürütme (x)** olarak kategorilendirilen dosya izinleri kullanılarak yönetilir: **sahip**, **grup** ve **diğerleri**.
 
-### **Checking Permissions**
+### **İzinleri Kontrol Etme**
 
-Use the `ls -l` command to view file permissions:
+Dosya izinlerini görüntülemek için `ls -l` komutunu kullanın:
 
 ```bash
-ls -l filename
+ls -l dosya adı
 
 ```
 
-The output might look like:
+Çıktı şu şekilde görünebilir:
 
 ```bash
--rw-r--r-- 1 owner group 1234 Nov 28 10:00 filename
+-rw-r--r-- 1 sahip grubu 1234 28 Kas 10:00 dosya adı
 
 ```
 
-- `rw-`: Owner can read and write.
-- `r--`: Group members can only read.
-- `r--`: Others can only read.
+- `rw-`: Sahip okuyabilir ve yazabilir.
+- `r--`: Grup üyeleri yalnızca okuyabilir.
+- `r--`: Diğerleri yalnızca okuyabilir.
 
-### **Changing Permissions**
+### **İzinleri Değiştirme**
 
-- Use `chmod` to modify file permissions:
+- Dosya izinlerini değiştirmek için `chmod` komutunu kullanın:
 
 ```bash
-sudo chmod 750 filename
+sudo chmod 750 dosya adı
 
 ```
 
-- `750` sets permissions to:
-  - Owner: read, write, execute.
-  - Group: read and execute.
-  - Others: no access.
+- `750` izinleri şu şekilde ayarlar:
+- Sahip: okuma, yazma, yürütme.
+- Grup: okuma ve yürütme.
+- Diğerleri: erişim yok.
 
-- Use `chown` to change file ownership:
+- Dosya sahipliğini değiştirmek için `chown` kullanın:
 
 ```bash
 sudo chown newusername:groupname filename
@@ -196,97 +194,96 @@ sudo chown newusername:groupname filename
 
 ---
 
-### **6. Advanced User Management**
+### **6. Gelişmiş Kullanıcı Yönetimi**
 
-### **Managing User Quotas**
+### **Kullanıcı Kotalarını Yönetme**
 
-AlmaLinux supports user quotas to restrict disk space usage. To enable quotas:
+AlmaLinux, disk alanı kullanımını kısıtlamak için kullanıcı kotalarını destekler. Kotaları etkinleştirmek için:
 
-- Install the quota package:
+- Kota paketini yükleyin:
 
 ```bash
 sudo dnf install quota
 
 ```
 
-- Edit `/etc/fstab` to enable quotas on a filesystem. For example:
+- Bir dosya sisteminde kotaları etkinleştirmek için `/etc/fstab` dosyasını düzenleyin. Örneğin:
 
 ```bash
 /dev/sda1 / ext4 defaults,usrquota,grpquota 0 1
 
 ```
 
-- Remount the filesystem:
+- Dosya sistemini yeniden bağlayın:
 
 ```bash
 sudo mount -o remount /
 
 ```
 
-- Initialize quota tracking:
+- Kota izlemeyi başlatın:
 
 ```bash
 sudo quotacheck -cug /
 
 ```
 
-- Assign a quota to a user:
+- Bir kullanıcıya kota atayın:
 
 ```bash
 sudo setquota -u newusername 50000 55000 0 0 /
 
 ```
 
-This sets a soft limit of 50MB and a hard limit of 55MB for the user.
+Bu, kullanıcı için 50 MB'lık yumuşak bir sınır ve 55 MB'lık sabit bir sınır belirler.
 
 ---
 
-### **7. Creating and Using Scripts for User Management**
+### **7. Kullanıcı Yönetimi için Komut Dosyaları Oluşturma ve Kullanma**
 
-For repetitive tasks like adding multiple users, scripts can save time.
+Birden fazla kullanıcı eklemek gibi tekrarlayan görevler için komut dosyaları zamandan tasarruf sağlayabilir.
 
-### **Example Script to Add Multiple Users**
+### **Birden Fazla Kullanıcı Eklemek İçin Örnek Komut Dosyası**
 
-Create a script file:
+Bir komut dosyası dosyası oluşturun:
 
 ```bash
 sudo nano add_users.sh
 
 ```
 
-Add the following code:
+Aşağıdaki kodu ekleyin:
 
 ```bash
 #!/bin/bash
 while read username; do
-    sudo useradd -m -s /bin/bash "$username"
-    echo "User $username added successfully!"
+sudo useradd -m -s /bin/bash "$username"
+echo "Kullanıcı $username başarıyla eklendi!"
 done < user_list.txt
 
 ```
 
-Save and exit, then make the script executable:
+Kaydedin ve çıkın, ardından komut dosyasını yürütülebilir hale getirin:
 
 ```bash
 chmod +x add_users.sh
 
 ```
 
-Run the script with a file containing a list of usernames (`user_list.txt`).
+Kullanıcı adları listesini içeren bir dosyayla (`user_list.txt`) komut dosyasını çalıştırın.
 
 ---
 
-### **8. Best Practices for User Management**
+### **8. Kullanıcı Yönetimi İçin En İyi Uygulamalar**
 
-1. **Use Groups:** Assign users to groups for better permission management.
-2. **Enforce Password Policies:** Use tools like `pam_pwquality` to enforce strong passwords.
-3. **Audit User Accounts:** Periodically check for inactive or unnecessary accounts.
-4. **Backup Configurations:** Before making major changes, back up important files like `/etc/passwd` and `/etc/shadow`.
+1. **Grupları Kullanın:** Daha iyi izin yönetimi için kullanıcıları gruplara atayın. 2. **Parola Politikalarını Uygulayın:** Güçlü parolaları uygulamak için `pam_pwquality` gibi araçları kullanın.
+3. **Kullanıcı Hesaplarını Denetleyin:** Etkin olmayan veya gereksiz hesapları periyodik olarak kontrol edin.
+4. **Yapılandırmaları Yedekleyin:** Büyük değişiklikler yapmadan önce `/etc/passwd` ve `/etc/shadow` gibi önemli dosyaları yedekleyin.
 
 ---
 
-### **Conclusion**
+### **Sonuç**
 
-Managing users on AlmaLinux is straightforward when you understand the commands and concepts involved. By following the steps and examples provided, you can effectively add, modify, and remove users, as well as manage permissions and quotas. AlmaLinux's flexibility ensures that administrators have the tools they need to maintain a secure and organized system.
+AlmaLinux'ta kullanıcıları yönetmek, ilgili komutları ve kavramları anladığınızda basittir. Sağlanan adımları ve örnekleri izleyerek, kullanıcıları etkili bir şekilde ekleyebilir, değiştirebilir ve kaldırabilir, ayrıca izinleri ve kotaları yönetebilirsiniz. AlmaLinux'un esnekliği, yöneticilerin güvenli ve düzenli bir sistemi sürdürmek için ihtiyaç duydukları araçlara sahip olmalarını sağlar.
 
-Do you have any specific user management challenges on AlmaLinux? Let us know in the comments below!
+AlmaLinux'ta belirli bir kullanıcı yönetimi zorluğunuz var mı? Aşağıdaki yorumlarda bize bildirin!

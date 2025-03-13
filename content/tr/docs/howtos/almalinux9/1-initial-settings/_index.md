@@ -1,18 +1,18 @@
 ---
-title: Initial Settings
+title: Temel Ayarlar
 date: 2024-11-05
-description: Initial Settings for AlmaLinux 9
+description: AlmaLinux 9 için Temel Ayarlar
 translationKey: initial-settings-almalinux9
-url: initial-settings-almalinux9
+url: /tr/initial-settings-almalinux9
 categories:
   - Linux
 tags:
   - AlmaLinux
 weight: 1
 simple_list: true
-summary: This guide will help you with the initial settings for AlmaLinux 9.
+summary: AlmaLinux 9 için Temel Ayarlar
 ---
 
-> This Document is actively being developed as a part of ongoing AlmaLinux learning efforts. Chapters will be added periodically.
+> Bu Belge, devam eden AlmaLinux öğrenme çabalarının bir parçası olarak aktif olarak geliştirilmektedir. Bölümler periyodik olarak eklenecektir.
 
-## AlmaLinux 9: Initial Settings
+## AlmaLinux 9: Temel Ayarlar

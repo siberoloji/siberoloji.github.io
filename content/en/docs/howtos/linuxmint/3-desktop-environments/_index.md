@@ -11,6 +11,7 @@ tags:
 weight: 30
 simple_list: true
 url: linuxmint-howtos-cinnamon-desktop-environment
+translationKey: linuxmint-howtos-cinnamon-desktop-environment
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.

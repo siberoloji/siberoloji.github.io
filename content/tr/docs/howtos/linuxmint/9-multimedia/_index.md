@@ -11,6 +11,7 @@ tags:
 weight: 90
 simple_list: true
 url: linuxmint-howtos-multimedia-entertainment-topics
+translationKey: linuxmint-howtos-multimedia-entertainment-topics
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.

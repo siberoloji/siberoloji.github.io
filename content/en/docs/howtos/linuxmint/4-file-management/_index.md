@@ -11,6 +11,7 @@ tags:
 weight: 40
 simple_list: true
 url: linuxmint-howtos-file-management
+translationKey: linuxmint-howtos-file-management
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.

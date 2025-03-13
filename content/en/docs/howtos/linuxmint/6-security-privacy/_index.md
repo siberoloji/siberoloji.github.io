@@ -11,6 +11,7 @@ tags:
 weight: 60
 simple_list: true
 url: linuxmint-howtos-security-privacy
+translationKey: linuxmint-howtos-security-privacy
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.

@@ -11,6 +11,7 @@ tags:
 weight: 50
 simple_list: true
 url: linuxmint-howtos-internet-and-networking
+translationKey: linuxmint-howtos-internet-and-networking
 ---
 
 > This Document is actively being developed as a part of ongoing Linux Mint learning efforts. Chapters will be added periodically.
