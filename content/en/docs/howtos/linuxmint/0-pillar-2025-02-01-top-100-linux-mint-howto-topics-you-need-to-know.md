@@ -286,63 +286,63 @@ featured_image: /images/linuxmint1.webp
 6. [How to set up development environments](/how-to-set-up-development-environments-with-cinnamon-desktop/)
 7. [How to configure server applications](/how-to-configure-server-applications-with-cinnamon-desktop-on-linux-mint/)
 8. [How to manage system resources](/how-to-manage-system-resources-with-cinnamon-desktop/)
-9. How to customize kernel parameters
-10. How to set up automated tasks
-11. How to configure system logging
-12. How to manage system backups
-13. How to set up monitoring tools
-14. How to configure system security
-15. How to manage network services
-16. How to set up development tools
-17. How to configure system optimization
-18. How to manage system recovery
-19. How to set up virtualization
-20. How to configure system automation
-21. How to manage system integration
-22. How to set up development frameworks
-23. How to configure system monitoring
-24. How to manage system deployment
-25. How to set up continuous integration
-26. How to configure system testing
-27. How to manage system documentation
-28. How to set up development workflows
-29. How to configure system maintenance
-30. How to manage system updates
-31. How to set up system migration
-32. How to configure system scaling
-33. How to manage system performance
-34. How to set up system hardening
-35. How to configure system redundancy
+9. [How to customize kernel parameters](/how-to-customize-kernel-parameters-with-cinnamon-desktop-on-linux-mint/)
+10. [How to set up automated tasks](/how-to-set-up-automated-tasks-with-cinnamon-desktop-on-linux-mint/)
+11. [How to configure system logging](/how-to-configure-system-logging-with-cinnamon-desktop-on-linux-mint/)
+12. [How to manage system backups](/how-to-manage-system-backups-with-cinnamon-desktop-on-linux-mint/)
+13. [How to set up monitoring tools](/how-to-set-up-monitoring-tools-with-cinnamon-desktop-on-linux-mint/)
+14. [How to configure system security](/how-to-configure-system-security-with-cinnamon-desktop-on-linux-mint/)
+15. [How to manage network services](/managing-network-services-with-cinnamon-desktop-on-linux-mint/)
+16. [How to set up development tools](/how-to-set-up-development-tools-with-cinnamon-desktop-on-linux-mint/)
+17. [How to configure system optimization](/how-to-configure-system-optimization-with-cinnamon-desktop-on-linux-mint/)
+18. [How to manage system recovery](/how-to-manage-system-recovery-with-cinnamon-desktop-on-linux-mint/)
+19. [How to set up virtualization](/how-to-set-up-virtualization-with-cinnamon-desktop-on-linux-mint/)
+20. [How to configure system automation](/how-to-configure-system-automation-with-cinnamon-desktop-on-linux-mint/)
+21. [How to manage system integration](/how-to-manage-system-integration-with-cinnamon-desktop-on-linux-mint/)
+22. [How to set up development frameworks](/how-to-set-up-development-frameworks-with-cinnamon-desktop-on-linux-mint/)
+23. [How to configure system monitoring](/how-to-configure-system-monitoring-with-cinnamon-desktop-on-linux-mint/)
+24. [How to manage system deployment](/how-to-manage-system-deployment-with-cinnamon-desktop-on-linux-mint/)
+25. [How to set up continuous integration](/how-to-set-up-continuous-integration-with-cinnamon-desktop-on-linux-mint/)
+26. [How to configure system testing](/how-to-configure-system-testing-with-cinnamon-desktop-on-linux-mint/)
+27. [How to manage system documentation](/how-to-manage-system-documentation-with-cinnamon-desktop-on-linux-mint/)
+28. [How to set up development workflows](/how-to-set-up-development-workflows-with-cinnamon-desktop-on-linux-mint/)
+29. [How to configure system maintenance](/how-to-configure-system-maintenance-with-cinnamon-desktop-on-linux-mint/)
+30. [How to manage system updates](/how-to-manage-system-updates-with-cinnamon-desktop-on-linux-mint/)
+31. [How to set up system migration](/how-to-set-up-system-migration-with-cinnamon-desktop-on-linux-mint/)
+32. [How to configure system scaling](/how-to-configure-system-scaling-with-cinnamon-desktop-on-linux-mint/)
+33. [How to manage system performance](/managing-system-performance-with-cinnamon-desktop-on-linux-mint/)
+34. [How to set up system hardening](/managing-system-performance-with-cinnamon-desktop-on-linux-mint/)
+35. [How to configure system redundancy](/how-to-configure-system-redundancy-with-cinnamon-desktop-on-linux-mint/)
 
 ## Multimedia & Entertainment (30 topics)
 
-1. How to set up media players
-2. How to configure audio settings
-3. How to manage video codecs
-4. How to set up streaming services
-5. How to configure gaming settings
-6. How to manage media libraries
-7. How to set up screen recording
-8. How to configure webcam settings
-9. How to manage audio plugins
-10. How to set up media servers
-11. How to configure graphics settings
-12. How to manage media formats
-13. How to set up video editing
-14. How to configure audio recording
-15. How to manage gaming platforms
-16. How to set up media streaming
-17. How to configure video playback
-18. How to manage audio effects
-19. How to set up gaming controllers
-20. How to configure media sharing
-21. How to manage video filters
-22. How to set up audio mixing
-23. How to configure gaming profiles
-24. How to manage media conversion
-25. How to set up video capture
-26. How to configure audio output
-27. How to manage gaming performance
-28. How to set up media synchronization
-29. How to configure video settings
-30. How to manage audio devices
+1. [How to set up media players](/how-to-set-up-media-players-with-cinnamon-desktop-on-linux-mint/)
+2. [How to configure audio settings](/how-to-configure-audio-settings-with-cinnamon-desktop-on-linux-mint/)
+3. [How to manage video codecs](/how-to-manage-video-codecs-with-cinnamon-desktop-on-linux-mint/)
+4. [How to set up streaming services](/how-to-set-up-streaming-services-with-cinnamon-desktop-on-linux-mint/)
+5. [How to configure gaming settings](/how-to-configure-gaming-settings-with-cinnamon-desktop-on-linux-mint/)
+6. [How to manage media libraries](/how-to-manage-media-libraries-with-cinnamon-desktop-on-linux-mint/)
+7. [How to set up screen recording](/how-to-set-up-screen-recording-with-cinnamon-desktop-on-linux-mint/)
+8. [How to configure webcam settings](/how-to-configure-webcam-settings-with-cinnamon-desktop-on-linux-mint/)
+9. [How to manage audio plugins](/how-to-manage-audio-plugins-with-cinnamon-desktop-on-linux-mint/)
+10. [How to set up media servers](/how-to-set-up-media-servers-with-cinnamon-desktop-on-linux-mint/)
+11. [How to configure graphics settings](/how-to-configure-graphics-settings-with-cinnamon-desktop-on-linux-mint/)
+12. [How to manage media formats](/how-to-manage-media-formats-with-cinnamon-desktop-on-linux-mint/)
+13. [How to set up video editing](/how-to-set-up-video-editing-with-cinnamon-desktop-on-linux-mint/)
+14. [How to configure audio recording](/how-to-configure-audio-recording-with-cinnamon-desktop-on-linux-mint/)
+15. [How to manage gaming platforms](/how-to-manage-gaming-platforms-with-cinnamon-desktop-on-linux-mint/)
+16. [How to set up media streaming](/how-to-set-up-media-streaming-with-cinnamon-desktop-on-linux-mint/)
+17. [How to configure video playback](/how-to-configure-video-playback-with-cinnamon-desktop-on-linux-mint/)
+18. [How to manage audio effects](/how-to-manage-audio-effects-with-cinnamon-desktop-on-linux-mint/)
+19. [How to set up gaming controllers](/how-to-set-up-gaming-controllers-with-cinnamon-desktop-on-linux-mint/)
+20. [How to configure media sharing](/how-to-configure-media-sharing-with-cinnamon-desktop-on-linux-mint/)
+21. [How to manage video filters](/how-to-manage-video-filters-with-cinnamon-desktop-on-linux-mint/)
+22. [How to set up audio mixing](/how-to-set-up-audio-mixing-with-cinnamon-desktop-on-linux-mint/)
+23. [How to configure gaming profiles](/how-to-configure-gaming-profiles-with-cinnamon-desktop-on-linux-mint/)
+24. [How to manage media conversion](/how-to-manage-media-conversion-with-cinnamon-desktop-on-linux-mint/)
+25. [How to set up video capture](/how-to-set-up-video-capture-with-cinnamon-desktop-on-linux-mint/)
+26. [How to configure audio output](/how-to-configure-audio-output-with-cinnamon-desktop-on-linux-mint/)
+27. [How to manage gaming performance](/how-to-manage-gaming-performance-with-cinnamon-desktop-on-linux-mint/)
+28. [How to set up media synchronization](/how-to-set-up-media-synchronization-with-cinnamon-desktop-on-linux-mint/)
+29. [How to configure video settings](/how-to-configure-video-settings-with-cinnamon-desktop-on-linux-mint/)
+30. [How to manage audio devices](/how-to-manage-audio-devices-with-cinnamon-desktop-on-linux-mint/)
