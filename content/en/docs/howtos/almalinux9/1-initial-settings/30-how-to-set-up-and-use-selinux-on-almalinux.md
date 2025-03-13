@@ -11,7 +11,7 @@ categories:
 linkTitle: SELinux on AlmaLinux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
-
+translationKey: how-to-set-up-and-use-selinux-on-almalinux
 keywords:
   - AlmaLinux
   - SELinux on AlmaLinux

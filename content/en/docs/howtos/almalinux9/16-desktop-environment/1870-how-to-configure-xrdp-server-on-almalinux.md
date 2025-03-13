@@ -5,6 +5,7 @@ description: This article will guide you through the step-by-step process of ins
 date: 2025-01-08T11:38:40.113Z
 weight: 1870
 url: configure-xrdp-server-almalinux
+translationKey: configure-xrdp-server-almalinux
 draft: false
 tags:
    - AlmaLinux
@@ -59,6 +60,7 @@ sudo dnf update -y
 If your AlmaLinux server doesn’t already have a graphical desktop environment, you need to install one. GNOME is the default choice for AlmaLinux, but you can also use lightweight environments like XFCE.
 
 #### Install GNOME Desktop Environment
+
 Run the following command to install GNOME:
 
 ```bash
@@ -66,6 +68,7 @@ sudo dnf groupinstall -y "Server with GUI"
 ```
 
 #### Set the Graphical Target
+
 Ensure the system starts in graphical mode:
 
 ```bash
@@ -126,6 +129,7 @@ If the service is running, you should see an output indicating that Xrdp is acti
 To allow RDP connections to your server, open port `3389`, which is the default port for Xrdp.
 
 #### Open Port 3389
+
 Run the following commands to update the firewall:
 
 ```bash
@@ -140,6 +144,7 @@ sudo firewall-cmd --reload
 By default, Xrdp uses the `Xvnc` backend to connect users to the desktop environment. For a smoother experience with GNOME or XFCE, configure Xrdp to use the appropriate session.
 
 #### Configure GNOME Session
+
 Edit the Xrdp startup script for the GNOME session:
 
 ```bash
@@ -157,6 +162,7 @@ exec /usr/bin/gnome-session
 Save the file and exit.
 
 #### Configure XFCE Session (Optional)
+
 If you installed XFCE instead of GNOME, update the startup script:
 
 ```bash
@@ -180,6 +186,7 @@ Save the file and exit.
 If SELinux is enabled on your system, you need to configure it to allow Xrdp connections.
 
 #### Allow Xrdp with SELinux
+
 Run the following command to allow Xrdp through SELinux:
 
 ```bash
@@ -222,6 +229,7 @@ For better performance, especially on slow networks, consider the following opti
 While Xrdp is functional after installation, securing the server is crucial to prevent unauthorized access.
 
 #### Restrict Access by IP
+
 Limit access to trusted IP addresses using the firewall:
 
 ```bash
@@ -232,6 +240,7 @@ sudo firewall-cmd --reload
 Replace `192.168.1.0/24` with your trusted IP range.
 
 #### Use SSH Tunneling
+
 For encrypted connections, use SSH tunneling. Run the following command on your local machine:
 
 ```bash
@@ -241,6 +250,7 @@ ssh -L 3389:localhost:3389 user@server_ip
 Then connect to `localhost:3389` using your RDP client.
 
 #### Change the Default Port
+
 To reduce the risk of unauthorized access, change the default port in the Xrdp configuration:
 
 ```bash

@@ -5,6 +5,7 @@ description: Learn how to install the latest Ruby version on AlmaLinux using DNF
 date: 2025-01-08T10:46:27.390Z
 weight: 1670
 url: install-latest-ruby-version-almalinux
+translationKey: install-latest-ruby-version-almalinux
 draft: false
 tags:
    - AlmaLinux

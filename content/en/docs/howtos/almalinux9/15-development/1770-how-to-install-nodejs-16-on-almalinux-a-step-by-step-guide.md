@@ -5,6 +5,7 @@ description: In this guide, we’ll walk through the steps to install Node.js 16
 date: 2025-01-08T11:06:12.405Z
 weight: 1770
 url: install-node-js-16-almalinux-step-step-guide
+translationKey: install-node-js-16-almalinux-step-step-guide
 draft: false
 tags:
   - AlmaLinux
@@ -24,6 +25,7 @@ In this guide, we’ll walk through the steps to install **Node.js 16** on AlmaL
 ---
 
 ### **Table of Contents**
+
 1. Introduction
 2. Prerequisites
 3. Step 1: Update Your System
@@ -74,6 +76,7 @@ sudo reboot
 AlmaLinux’s default repositories may not always include the latest Node.js versions. To install Node.js 16, we’ll use the **NodeSource** repository.
 
 #### Step 2.1: Add the NodeSource Repository
+
 NodeSource provides a script to set up the repository for Node.js. Download and execute the setup script for Node.js 16:
 
 ```bash
@@ -81,6 +84,7 @@ curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
 ```
 
 #### Step 2.2: Install Node.js
+
 After adding the repository, install Node.js with the following command:
 
 ```bash
@@ -88,6 +92,7 @@ sudo dnf install -y nodejs
 ```
 
 #### Step 2.3: Install Build Tools (Optional but Recommended)
+
 Some Node.js packages require compilation during installation. Install the necessary build tools to avoid errors:
 
 ```bash
@@ -120,6 +125,7 @@ This command will display the version of **npm**, which ships with Node.js.
 If you want the flexibility to switch between different Node.js versions, the **Node Version Manager (NVM)** is a useful tool. Here’s how to set it up:
 
 #### Step 4.1: Install NVM
+
 Download and install NVM using the official script:
 
 ```bash
@@ -133,6 +139,7 @@ source ~/.bashrc
 ```
 
 #### Step 4.2: Install Node.js 16 with NVM
+
 With NVM installed, use it to install Node.js 16:
 
 ```bash
@@ -146,6 +153,7 @@ node -v
 ```
 
 #### Step 4.3: Switch Between Node.js Versions
+
 You can list all installed Node.js versions:
 
 ```bash
@@ -165,6 +173,7 @@ nvm use 16
 Now that Node.js 16 is installed, test your setup by building and running a simple Node.js application.
 
 #### Step 5.1: Create a New Project Directory
+
 Create a new directory for your project and navigate to it:
 
 ```bash
@@ -173,6 +182,7 @@ cd my-node-app
 ```
 
 #### Step 5.2: Initialize a Node.js Project
+
 Run the following command to create a `package.json` file:
 
 ```bash
@@ -182,6 +192,7 @@ npm init -y
 This file holds the project’s metadata and dependencies.
 
 #### Step 5.3: Create a Simple Application
+
 Use a text editor to create a file named `app.js`:
 
 ```bash
@@ -210,6 +221,7 @@ server.listen(port, hostname, () => {
 Save and close the file.
 
 #### Step 5.4: Run the Application
+
 Run the application using Node.js:
 
 ```bash
@@ -217,6 +229,7 @@ node app.js
 ```
 
 You should see the message:
+
 ```
 Server running at http://127.0.0.1:3000/
 ```
@@ -229,13 +242,15 @@ Open a browser and navigate to `http://127.0.0.1:3000/` to see your application 
 
 If your server uses a firewall, ensure the necessary ports are open. For the above example, you need to open port 3000.
 
-#### Open Port 3000:
+#### Open Port 3000
+
 ```bash
 sudo firewall-cmd --permanent --add-port=3000/tcp
 sudo firewall-cmd --reload
 ```
 
-#### Use a Process Manager (Optional):
+#### Use a Process Manager (Optional)
+
 For production environments, use a process manager like **PM2** to manage your Node.js application. Install PM2 globally:
 
 ```bash

@@ -11,7 +11,7 @@ categories:
 linkTitle: NFS 4 ACL Tool
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 380
-
+translationKey: how-to-use-the-nfs-4-acl-tool-on-almalinux
 keywords:
   - AlmaLinux
 

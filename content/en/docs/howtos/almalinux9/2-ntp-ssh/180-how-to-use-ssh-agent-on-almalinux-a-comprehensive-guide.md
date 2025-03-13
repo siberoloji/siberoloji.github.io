@@ -11,7 +11,7 @@ categories:
 linkTitle: SSH-Agent
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 180
-
+translationKey: how-to-use-ssh-agent-on-almalinux9
 keywords:
   - AlmaLinux
 

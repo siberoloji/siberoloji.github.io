@@ -13,7 +13,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-vsftpd-on-almalinux
 keywords:
   - AlmaLinux
   - Install VSFTPD
@@ -102,24 +102,28 @@ To customize VSFTPD to your requirements, edit its configuration file located at
 
    - **Allow Local User Logins:**
      Uncomment the following line to allow local system users to log in:  
+
      ```plaintext
      local_enable=YES
      ```
 
    - **Enable File Uploads:**  
      Ensure file uploads are enabled by uncommenting the line:  
+
      ```plaintext
      write_enable=YES
      ```
 
    - **Restrict Users to Their Home Directories:**  
      Prevent users from navigating outside their home directories by uncommenting this:  
+
      ```plaintext
      chroot_local_user=YES
      ```
 
    - **Enable Passive Mode:**  
      Add or modify the following lines to enable passive mode (essential for NAT/firewall environments):  
+
      ```plaintext
      pasv_enable=YES
      pasv_min_port=30000
@@ -128,6 +132,7 @@ To customize VSFTPD to your requirements, edit its configuration file located at
 
    - **Disable Anonymous Login:**  
      For better security, disable anonymous login by ensuring:  
+
      ```plaintext
      anonymous_enable=NO
      ```
@@ -159,12 +164,14 @@ To enable FTP access, open the required ports in the AlmaLinux firewall:
 
 2. **Allow Passive Ports:**  
    Match the range defined in your VSFTPD configuration:  
+
    ```bash
    sudo firewall-cmd --permanent --add-port=30000-31000/tcp
    ```
 
 3. **Reload Firewall Rules:**  
    Apply the changes by reloading the firewall:  
+
    ```bash
    sudo firewall-cmd --reload
    ```
@@ -177,12 +184,14 @@ Use an FTP client to test the server's functionality:
 
 1. **Install FTP Client:**  
    If you're testing locally, install an FTP client:  
+
    ```bash
    sudo dnf install ftp -y
    ```
 
 2. **Connect to the FTP Server:**  
    Run the following command, replacing `your_server_ip` with the server's IP address:  
+
    ```bash
    ftp your_server_ip
    ```
@@ -206,6 +215,7 @@ For enhanced security, configure VSFTPD to use SSL/TLS encryption:
 
 2. **Edit VSFTPD Configuration:**  
    Add the following lines to `/etc/vsftpd/vsftpd.conf` to enable SSL:  
+
    ```plaintext
    ssl_enable=YES
    rsa_cert_file=/etc/ssl/certs/vsftpd.crt
@@ -219,6 +229,7 @@ For enhanced security, configure VSFTPD to use SSL/TLS encryption:
    ```
 
 3. **Restart VSFTPD Service:**  
+
    ```bash
    sudo systemctl restart vsftpd
    ```
@@ -238,6 +249,7 @@ Keep your VSFTPD server secure and functional by:
 
 2. **Updating AlmaLinux and VSFTPD:**  
    Regularly update the system to patch vulnerabilities:  
+
    ```bash
    sudo dnf update -y
    ```

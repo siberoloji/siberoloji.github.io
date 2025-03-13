@@ -5,6 +5,7 @@ description: Learn how to configure Auditd on AlmaLinux to transfer logs to a re
 date: 2025-01-07T09:30:30.879Z
 weight: 1500
 url: transfer-auditd-logs-remote-host-almalinux
+translationKey: transfer-auditd-logs-remote-host-almalinux
 draft: false
 tags:
    - AlmaLinux

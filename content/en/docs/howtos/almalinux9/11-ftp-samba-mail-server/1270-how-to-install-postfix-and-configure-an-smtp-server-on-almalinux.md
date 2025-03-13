@@ -14,7 +14,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-postfix-configure-smtp-server-almalinux
 keywords:
   - AlmaLinux
   - postfix

@@ -11,7 +11,7 @@ categories:
 linkTitle: Parallel SSH
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 220
-
+translationKey: how-to-use-parallel-ssh-on-almalinux-a-step-by-step-guide
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

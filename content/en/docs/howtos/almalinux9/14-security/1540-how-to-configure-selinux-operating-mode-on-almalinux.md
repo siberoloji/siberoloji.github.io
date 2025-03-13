@@ -5,6 +5,7 @@ description: In this detailed guide, we’ll explore SELinux’s operating modes
 date: 2025-01-07T09:39:30.040Z
 weight: 1540
 url: configure-selinux-operating-mode-almalinux
+translationKey: configure-selinux-operating-mode-almalinux
 draft: false
 tags:
    - AlmaLinux

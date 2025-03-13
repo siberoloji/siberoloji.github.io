@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-set-basic-authentication-and-limit-squid-for-users-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

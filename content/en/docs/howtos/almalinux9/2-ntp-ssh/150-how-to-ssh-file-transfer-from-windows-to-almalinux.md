@@ -11,7 +11,7 @@ categories:
 linkTitle: SSH File Transfer from Windows
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 150
-
+translationKey: how-to-ssh-file-transfer-from-windows-to-almalinux
 keywords:
   - AlmaLinux
 

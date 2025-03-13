@@ -5,6 +5,7 @@ description: In this guide, we’ll walk you through the step-by-step process of
 date: 2025-01-08T11:39:57.475Z
 weight: 1880
 url: set-vnc-client-novnc-almalinux
+translationKey: how-to-set-up-vnc-client-novnc-on-almalinux
 draft: false
 tags:
    - AlmaLinux
@@ -60,6 +61,7 @@ sudo dnf update -y
 noVNC requires several dependencies, including Python and web server tools, to function correctly.
 
 #### Install Python and pip
+
 Install Python 3 and pip:
 
 ```bash
@@ -74,6 +76,7 @@ pip3 --version
 ```
 
 #### Install Websockify
+
 Websockify acts as a bridge between noVNC and the VNC server, enabling the use of WebSockets. Install it using pip:
 
 ```bash
@@ -85,6 +88,7 @@ sudo pip3 install websockify
 ### **Step 3: Download and Set Up noVNC**
 
 #### Clone the noVNC Repository
+
 Download the latest noVNC source code from its GitHub repository:
 
 ```bash
@@ -98,6 +102,7 @@ cd noVNC
 ```
 
 #### Verify the Files
+
 Ensure the `utils` directory exists, as it contains important scripts such as `novnc_proxy`:
 
 ```bash
@@ -115,6 +120,7 @@ sudo dnf install -y tigervnc-server
 ```
 
 #### Start a VNC Session
+
 Start a VNC session for a user (e.g., `vncuser`):
 
 ```bash
@@ -137,6 +143,7 @@ For detailed configuration, refer to the [How to Configure VNC Server on AlmaLin
 ### **Step 5: Run noVNC**
 
 #### Start the Websockify Proxy
+
 To connect noVNC to the VNC server, start the Websockify proxy. Replace `5901` with the port your VNC server is running on:
 
 ```bash
@@ -150,10 +157,12 @@ http://0.0.0.0:6080
 ```
 
 Here:
+
 - `6080` is the default port for noVNC.
 - The URL allows you to access the VNC server from any modern browser.
 
 #### Test the Connection
+
 Open a web browser and navigate to:
 
 ```
@@ -169,6 +178,7 @@ Replace `<server-ip>` with the IP address of your AlmaLinux server. Enter the VN
 To ensure noVNC runs automatically on boot, set it up as a systemd service.
 
 #### Create a Service File
+
 Create a systemd service file for noVNC:
 
 ```bash
@@ -195,6 +205,7 @@ WantedBy=multi-user.target
 Replace `/path/to/noVNC` with the path to your noVNC directory.
 
 #### Reload Systemd and Start the Service
+
 Reload the systemd daemon to recognize the new service:
 
 ```bash
@@ -232,6 +243,7 @@ sudo firewall-cmd --reload
 For secure access, configure noVNC to use SSL encryption.
 
 #### Generate an SSL Certificate
+
 Use OpenSSL to generate a self-signed SSL certificate:
 
 ```bash
@@ -242,6 +254,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 - This generates `novnc.key` and `novnc.crt` in the specified directories.
 
 #### Modify the noVNC Service
+
 Update the noVNC service file to include SSL:
 
 ```plaintext
@@ -256,6 +269,7 @@ sudo systemctl restart novnc
 ```
 
 #### Test Secure Access
+
 Access the noVNC client using `https`:
 
 ```

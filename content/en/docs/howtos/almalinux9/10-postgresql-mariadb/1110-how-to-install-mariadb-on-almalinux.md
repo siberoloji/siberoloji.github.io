@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-mariadb-almalinux
 keywords:
   - AlmaLinux
   - mariadb

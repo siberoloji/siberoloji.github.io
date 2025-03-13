@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: haproxy-configure-http-load-balancing-server-almalinux
 keywords:
   - AlmaLinux
 

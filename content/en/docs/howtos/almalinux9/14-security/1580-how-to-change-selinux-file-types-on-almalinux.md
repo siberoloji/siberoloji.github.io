@@ -5,6 +5,7 @@ description: This guide will provide a comprehensive overview of SELinux file ty
 date: 2025-01-07T09:45:47.748Z
 weight: 1580
 url: change-selinux-file-types-almalinux
+translationKey: change-selinux-file-types-almalinux
 draft: false
 tags:
    - AlmaLinux

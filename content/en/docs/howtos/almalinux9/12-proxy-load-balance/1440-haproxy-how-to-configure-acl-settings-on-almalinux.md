@@ -5,6 +5,7 @@ description: Learn how to configure ACL settings in HAProxy on AlmaLinux. A deta
 date: 2025-01-07T09:14:28.934Z
 weight: 1440
 url: configuring-haproxy-acl-settings-almalinux
+translationKey: configuring-haproxy-acl-settings-almalinux
 draft: false
 tags:
     - AlmaLinux

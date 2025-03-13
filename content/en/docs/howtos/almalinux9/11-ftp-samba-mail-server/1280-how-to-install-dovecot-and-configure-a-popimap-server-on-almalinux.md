@@ -13,13 +13,14 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-dovecot-configure-pop-imap-server-almalinux
 keywords:
   - AlmaLinux
   - dovecot
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  
+
 Dovecot is a lightweight, high-performance, and secure IMAP (Internet Message Access Protocol) and POP3 (Post Office Protocol) server for Unix-like operating systems. It is designed to handle email retrieval efficiently while offering robust security features, making it an excellent choice for email servers.  
 
 AlmaLinux, a reliable enterprise-grade Linux distribution, is a great platform for hosting Dovecot. With Dovecot, users can retrieve their emails using either POP3 or IMAP, depending on their preferences for local or remote email storage. This guide walks you through installing and configuring Dovecot on AlmaLinux, transforming your server into a fully functional POP/IMAP email server.
@@ -48,6 +49,7 @@ Before beginning, ensure you have:
 ### **Step 1: Update Your System**  
 
 Start by updating the system to ensure all packages are current:  
+
 ```bash
 sudo dnf update -y
 ```  
@@ -58,12 +60,14 @@ sudo dnf update -y
 
 1. **Install the Dovecot Package**:  
    Install Dovecot and its dependencies using the following command:  
+
    ```bash
    sudo dnf install dovecot -y
    ```  
 
 2. **Start and Enable Dovecot**:  
    Once installed, start the Dovecot service and enable it to run at boot:  
+
    ```bash
    sudo systemctl start dovecot
    sudo systemctl enable dovecot
@@ -71,6 +75,7 @@ sudo dnf update -y
 
 3. **Verify Installation**:  
    Check the status of the Dovecot service to ensure it’s running:  
+
    ```bash
    sudo systemctl status dovecot
    ```  
@@ -81,12 +86,14 @@ sudo dnf update -y
 
 1. **Edit the Dovecot Configuration File**:  
    The main configuration file is located at `/etc/dovecot/dovecot.conf`. Open it with a text editor:  
+
    ```bash
    sudo nano /etc/dovecot/dovecot.conf
    ```  
 
 2. **Basic Configuration**:  
    Ensure the following lines are included or modified in the configuration file:  
+
    ```plaintext
    protocols = imap pop3 lmtp
    listen = *, ::
@@ -104,11 +111,13 @@ sudo dnf update -y
 
 1. **Edit Mail Location**:  
    Open the `/etc/dovecot/conf.d/10-mail.conf` file:  
+
    ```bash
    sudo nano /etc/dovecot/conf.d/10-mail.conf
    ```  
 
    Set the mail location directive to define where user emails will be stored:  
+
    ```plaintext
    mail_location = maildir:/var/mail/%u
    ```  
@@ -118,11 +127,13 @@ sudo dnf update -y
 
 2. **Configure Authentication**:  
    Open the authentication configuration file:  
+
    ```bash
    sudo nano /etc/dovecot/conf.d/10-auth.conf
    ```  
 
    Enable plain text authentication:  
+
    ```plaintext
    disable_plaintext_auth = no
    auth_mechanisms = plain login
@@ -142,11 +153,13 @@ To secure IMAP and POP3 communication, configure SSL/TLS encryption.
 
 1. **Edit SSL Configuration**:  
    Open the SSL configuration file:  
+
    ```bash
    sudo nano /etc/dovecot/conf.d/10-ssl.conf
    ```  
 
    Update the following directives:  
+
    ```plaintext
    ssl = yes
    ssl_cert = </etc/ssl/certs/ssl-cert-snakeoil.pem
@@ -160,6 +173,7 @@ To secure IMAP and POP3 communication, configure SSL/TLS encryption.
 
 3. **Restart Dovecot**:  
    Apply the changes by restarting the Dovecot service:  
+
    ```bash
    sudo systemctl restart dovecot
    ```  
@@ -170,16 +184,19 @@ To secure IMAP and POP3 communication, configure SSL/TLS encryption.
 
 1. **Test Using Telnet**:  
    Install the `telnet` package for testing:  
+
    ```bash
    sudo dnf install telnet -y
    ```  
 
    Test the POP3 service:  
+
    ```bash
    telnet localhost 110
    ```  
 
    Test the IMAP service:  
+
    ```bash
    telnet localhost 143
    ```  
@@ -188,6 +205,7 @@ To secure IMAP and POP3 communication, configure SSL/TLS encryption.
 
 2. **Test Secure Connections**:  
    Use `openssl` to test encrypted connections:  
+
    ```bash
    openssl s_client -connect localhost:995  # POP3S
    openssl s_client -connect localhost:993  # IMAPS
@@ -200,6 +218,7 @@ To secure IMAP and POP3 communication, configure SSL/TLS encryption.
 To allow POP3 and IMAP traffic, update the firewall rules:  
 
 1. **Open Necessary Ports**:  
+
    ```bash
    sudo firewall-cmd --add-service=pop3 --permanent
    sudo firewall-cmd --add-service=pop3s --permanent
@@ -210,6 +229,7 @@ To allow POP3 and IMAP traffic, update the firewall rules:
 
 2. **Verify Open Ports**:  
    Check that the ports are open and accessible:  
+
    ```bash
    sudo firewall-cmd --list-all
    ```  
@@ -220,16 +240,20 @@ To allow POP3 and IMAP traffic, update the firewall rules:
 
 1. **Authentication Fails**:  
    - Verify the user exists on the system:  
+
      ```bash
      sudo ls /var/mail
      ```  
+
    - Check the `/var/log/maillog` file for authentication errors.  
 
 2. **Connection Refused**:  
    - Ensure Dovecot is running:  
+
      ```bash
      sudo systemctl status dovecot
      ```  
+
    - Confirm the firewall is correctly configured.  
 
 3. **SSL Errors**:  

@@ -5,6 +5,7 @@ description: In this detailed guide, we’ll explore what system locales are, wh
 date: 2025-01-08
 weight: 1970
 url: set-system-locale-almalinux-comprehensive-guide
+translationKey: set-system-locale-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux

@@ -5,6 +5,7 @@ description: In this article, we’ll explore how to use aureport, a companion u
 date: 2025-01-07T09:34:08.543Z
 weight: 1520
 url: display-auditd-summary-logs-aureport-almalinux
+translationKey: display-auditd-summary-logs-aureport-almalinux
 draft: false
 tags:
    - AlmaLinux

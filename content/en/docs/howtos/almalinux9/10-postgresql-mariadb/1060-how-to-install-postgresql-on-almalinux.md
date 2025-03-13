@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-postgresql-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

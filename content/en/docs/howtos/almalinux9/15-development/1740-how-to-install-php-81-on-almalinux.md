@@ -5,6 +5,7 @@ description: Learn how to install PHP 8.1 on AlmaLinux with this detailed step-b
 date: 2025-01-08T11:01:35.489Z
 weight: 1740
 url: install-php-8-1-almalinux
+translationKey: install-php-8-1-almalinux
 draft: false
 tags:
    - AlmaLinux

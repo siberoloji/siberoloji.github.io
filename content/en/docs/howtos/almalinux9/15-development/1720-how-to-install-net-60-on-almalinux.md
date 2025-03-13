@@ -5,6 +5,7 @@ description: Learn how to install .NET 6.0 on AlmaLinux with this comprehensive 
 date: 2025-01-08T10:54:11.711Z
 weight: 1720
 url: install-net-6-0-almalinux
+translationKey: install-net-6-0-almalinux
 draft: false
 tags:
    - AlmaLinux

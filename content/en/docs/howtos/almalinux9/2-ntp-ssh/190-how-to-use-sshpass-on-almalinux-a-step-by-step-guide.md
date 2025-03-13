@@ -11,7 +11,7 @@ categories:
 linkTitle: SSHPass
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 190
-
+translationKey: how-to-use-sshpass-on-almalinux9
 keywords:
   - AlmaLinux
   - SSHPass

@@ -5,6 +5,7 @@ description: This guide will walk you through the basics of using sesearch on Al
 date: 2025-01-07T09:50:08.477Z
 weight: 1640
 url: selinux-sesearch-basic-usage-almalinux
+translationKey: selinux-sesearch-basic-usage-almalinux
 draft: false
 tags:
    - AlmaLinux

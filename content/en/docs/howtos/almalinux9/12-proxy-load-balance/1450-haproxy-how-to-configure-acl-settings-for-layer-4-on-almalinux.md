@@ -5,6 +5,7 @@ description: Learn how to configure Layer 4 ACL settings in HAProxy on AlmaLinux
 date: 2025-01-07T09:18:45.702Z
 weight: 1450
 url: configuring-layer-4-acl-settings-haproxy-almalinux
+translationKey: configuring-layer-4-acl-settings-haproxy-almalinux
 draft: false
 tags:
     - AlmaLinux

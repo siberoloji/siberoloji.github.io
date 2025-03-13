@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-set-up-basic-authentication-with-ldap-using-apache-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

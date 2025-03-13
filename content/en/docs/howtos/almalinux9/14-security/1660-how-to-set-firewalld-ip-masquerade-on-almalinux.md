@@ -5,6 +5,7 @@ description: Learn how to configure IP masquerading with Firewalld on AlmaLinux 
 date: 2025-01-08T10:39:41.003Z
 weight: 1660
 url: set-firewalld-ip-masquerade-almalinux
+translationKey: set-firewalld-ip-masquerade-almalinux
 draft: false
 tags:
   - AlmaLinux

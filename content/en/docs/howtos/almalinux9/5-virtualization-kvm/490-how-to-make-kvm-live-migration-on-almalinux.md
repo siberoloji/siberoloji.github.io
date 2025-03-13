@@ -11,7 +11,7 @@ categories:
 linkTitle: Make KVM Live Migration
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 490
-
+translationKey: how-to-make-kvm-live-migration-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

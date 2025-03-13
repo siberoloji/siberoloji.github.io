@@ -11,7 +11,7 @@ categories:
 linkTitle: File Transfer with SSH
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 140
-
+translationKey: file-transfer-with-ssh-on-almalinux-a-comprehensive-guide
 keywords:
   - AlmaLinux
 

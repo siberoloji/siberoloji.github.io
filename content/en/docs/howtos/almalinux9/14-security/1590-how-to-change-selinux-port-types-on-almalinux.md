@@ -5,6 +5,7 @@ description: This article will guide you through understanding SELinux port type
 date: 2025-01-07T09:46:46.808Z
 weight: 1590
 url: change-selinux-port-types-almalinux
+translationKey: change-selinux-port-types-almalinux
 draft: false
 tags:
    - AlmaLinux

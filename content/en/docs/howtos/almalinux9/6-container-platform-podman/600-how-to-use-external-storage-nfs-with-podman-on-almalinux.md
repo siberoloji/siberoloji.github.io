@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-use-external-storage-nfs-with-podman-on-almalinux
 featured_image: /images/almalinux.webp
 url: external-storage-nfs-podman-almalinux
 ---

@@ -5,6 +5,7 @@ description: In this article, we’ll cover the importance of setting the correc
 date: 2025-01-08
 weight: 1950
 url: set-system-timezone-almalinux-comprehensive-guide
+translationKey: set-system-timezone-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux
@@ -19,7 +20,7 @@ keywords:
    - timedatectl
 featured_image: /images/almalinux.webp
 ---
-### 
+###
 
 Setting the correct timezone on a server or workstation is critical for ensuring accurate timestamps on logs, scheduled tasks, and other time-dependent operations. AlmaLinux, a popular RHEL-based Linux distribution, provides robust tools and straightforward methods for managing the system timezone.
 

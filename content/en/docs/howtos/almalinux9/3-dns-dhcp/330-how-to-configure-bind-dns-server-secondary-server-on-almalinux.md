@@ -11,7 +11,7 @@ categories:
 linkTitle: Configure DNS Secondary Server
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 330
-
+translationKey: how-to-configure-bind-dns-secondary-server-on-almalinux
 keywords:
   - AlmaLinux
 

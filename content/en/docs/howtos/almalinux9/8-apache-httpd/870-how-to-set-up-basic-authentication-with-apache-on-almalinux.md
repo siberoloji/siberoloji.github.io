@@ -14,7 +14,7 @@ categories:
   - Linux How-to
   - basic authentication
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-set-up-basic-authentication-with-apache-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

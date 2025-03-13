@@ -5,6 +5,7 @@ description: If you’re using AlmaLinux, a robust, community-driven Linux distr
 date: 2025-01-08T11:13:48.532Z
 weight: 1820
 url: set-node-js-typescript-almalinux
+translationKey: set-node-js-typescript-almalinux
 draft: false
 tags:
   - AlmaLinux
@@ -57,6 +58,7 @@ This command updates all installed packages and ensures you have the latest secu
 There are multiple ways to install Node.js on AlmaLinux, but the recommended method is using the NodeSource repository to get the latest version.
 
 #### Add the NodeSource Repository
+
 NodeSource provides RPM packages for Node.js. Use the following commands to add the repository and install Node.js:
 
 ```bash
@@ -66,6 +68,7 @@ curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 Replace `18.x` with the version you want to install. This script sets up the Node.js repository.
 
 #### Install Node.js
+
 After adding the repository, install Node.js with:
 
 ```bash
@@ -73,6 +76,7 @@ sudo dnf install -y nodejs
 ```
 
 #### Verify the Installation
+
 Check if Node.js and npm (Node Package Manager) were installed successfully:
 
 ```bash
@@ -107,6 +111,7 @@ The `tsc` command is the TypeScript compiler, and its version number confirms a 
 Once Node.js and TypeScript are installed, you can create a new TypeScript project.
 
 #### Create a Project Directory
+
 Navigate to your workspace and create a new directory for your project:
 
 ```bash
@@ -115,6 +120,7 @@ cd my-typescript-app
 ```
 
 #### Initialize a Node.js Project
+
 Run the following command to generate a `package.json` file, which manages your project’s dependencies:
 
 ```bash
@@ -124,6 +130,7 @@ npm init -y
 This creates a default `package.json` file with basic settings.
 
 #### Install TypeScript Locally
+
 While TypeScript is installed globally, it’s good practice to also include it as a local dependency for the project:
 
 ```bash
@@ -131,6 +138,7 @@ npm install typescript --save-dev
 ```
 
 #### Generate a TypeScript Configuration File
+
 The `tsconfig.json` file configures the TypeScript compiler. Generate it with:
 
 ```bash
@@ -159,6 +167,7 @@ A basic `tsconfig.json` file will look like this:
 - `include` and `exclude`: Define which files should be included or excluded from compilation.
 
 #### Create the Project Structure
+
 Organize your project files by creating a `src` directory for TypeScript files:
 
 ```bash
@@ -266,12 +275,14 @@ This generates `.map` files, linking the compiled JavaScript back to the origina
 When deploying Node.js applications on AlmaLinux, consider these additional steps:
 
 1. **Process Management**: Use a process manager like [PM2](https://pm2.keymetrics.io/) to keep your application running:
+
    ```bash
    sudo npm install -g pm2
    pm2 start dist/index.js
    ```
 
 2. **Firewall Configuration**: Open necessary ports for your application using `firewalld`:
+
    ```bash
    sudo firewall-cmd --permanent --add-port=3000/tcp
    sudo firewall-cmd --reload

@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-use-podman-containers-by-common-users-on-almalinux
 keywords:
   - AlmaLinux
   - Podman Containers by Common Users

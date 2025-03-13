@@ -5,6 +5,7 @@ description: This blog will guide you through understanding, configuring, and ma
 date: 2025-01-07T09:40:51.173Z
 weight: 1550
 url: configure-selinux-policy-type-almalinux
+translationKey: configure-selinux-policy-type-almalinux
 draft: false
 tags:
    - AlmaLinux

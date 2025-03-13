@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-access-services-on-podman-containers-on-almalinux
 featured_image: /images/almalinux.webp
 url: access-services-podman-containers-almalinux
 ---

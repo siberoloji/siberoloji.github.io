@@ -12,12 +12,13 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-add-mail-user-accounts-using-os-user-accounts-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
 ---
 #### **Introduction**  
+
 Managing email services on a Linux server can be streamlined by linking mail user accounts to operating system (OS) user accounts. This approach allows system administrators to manage email users and their settings using standard Linux tools, simplifying configuration and ensuring consistency.  
 
 AlmaLinux, a community-driven enterprise-grade Linux distribution, is a popular choice for hosting mail servers. By configuring your email server (e.g., Postfix and Dovecot) to use OS user accounts for mail authentication and storage, you can create a robust and secure email infrastructure.  
@@ -60,12 +61,14 @@ Before adding users, ensure that your mail server is configured to use system ac
 
 1. **Edit Postfix Main Configuration File**:  
    Open `/etc/postfix/main.cf`:  
+
    ```bash
    sudo nano /etc/postfix/main.cf
    ```  
 
 2. **Set Up the Home Mailbox Directive**:  
    Add or modify the following line to define the location of mailboxes:  
+
    ```plaintext
    home_mailbox = Maildir/
    ```  
@@ -74,6 +77,7 @@ Before adding users, ensure that your mail server is configured to use system ac
 
 3. **Reload Postfix**:  
    Apply changes by reloading the Postfix service:  
+
    ```bash
    sudo systemctl reload postfix
    ```  
@@ -82,17 +86,20 @@ Before adding users, ensure that your mail server is configured to use system ac
 
 1. **Edit the Mail Location**:  
    Open `/etc/dovecot/conf.d/10-mail.conf`:  
+
    ```bash
    sudo nano /etc/dovecot/conf.d/10-mail.conf
    ```  
 
    Configure the `mail_location` directive:  
+
    ```plaintext
    mail_location = maildir:~/Maildir
    ```  
 
 2. **Restart Dovecot**:  
    Restart Dovecot to apply the changes:  
+
    ```bash
    sudo systemctl restart dovecot
    ```  
@@ -107,6 +114,7 @@ To create a new mail user, you simply need to create an OS user account.
 
 1. **Add a New User**:  
    Use the `adduser` command to create a new user:  
+
    ```bash
    sudo adduser johndoe
    ```  
@@ -115,6 +123,7 @@ To create a new mail user, you simply need to create an OS user account.
 
 2. **Set a Password**:  
    Assign a password to the new user:  
+
    ```bash
    sudo passwd johndoe
    ```  
@@ -125,12 +134,14 @@ To create a new mail user, you simply need to create an OS user account.
 
 1. **Check the Home Directory**:  
    Verify that the user’s home directory exists:  
+
    ```bash
    ls -l /home/johndoe
    ```  
 
 2. **Create a Maildir Directory (If Not Already Present)**:  
    If the `Maildir` folder is not created automatically, initialize it manually:  
+
    ```bash
    sudo mkdir -p /home/johndoe/Maildir/{cur,new,tmp}
    sudo chown -R johndoe:johndoe /home/johndoe/Maildir
@@ -146,6 +157,7 @@ To create a new mail user, you simply need to create an OS user account.
 
 1. **Use the `mail` Command**:  
    Send a test email to the new user:  
+
    ```bash
    echo "This is a test email." | mail -s "Test Email" johndoe@example.com
    ```  
@@ -154,6 +166,7 @@ To create a new mail user, you simply need to create an OS user account.
 
 2. **Verify Mail Delivery**:  
    Check the user’s mailbox to confirm the email was delivered:  
+
    ```bash
    sudo ls /home/johndoe/Maildir/new
    ```  
@@ -183,17 +196,20 @@ To ensure `Maildir` is created automatically for new users:
 
 1. **Install `maildirmake` Utility**:  
    Install the `dovecot` package if not already installed:  
+
    ```bash
    sudo dnf install dovecot -y
    ```  
 
 2. **Edit the User Add Script**:  
    Modify the default user creation script to include Maildir initialization:  
+
    ```bash
    sudo nano /etc/skel/.bashrc
    ```  
 
    Add the following lines:  
+
    ```bash
    if [ ! -d ~/Maildir ]; then
        maildirmake ~/Maildir
@@ -212,12 +228,14 @@ To ensure `Maildir` is created automatically for new users:
 
 2. **Restrict User Access**:  
    If necessary, restrict shell access for mail users to prevent them from logging in to the server directly:  
+
    ```bash
    sudo usermod -s /sbin/nologin johndoe
    ```  
 
 3. **Monitor Logs**:  
    Regularly monitor email server logs to identify any unauthorized access attempts:  
+
    ```bash
    sudo tail -f /var/log/maillog
    ```  
@@ -228,10 +246,13 @@ To ensure `Maildir` is created automatically for new users:
 
 1. **Emails Not Delivered**:  
    - Verify that the Postfix service is running:  
+
      ```bash
      sudo systemctl status postfix
      ```  
+
    - Check the logs for errors:  
+
      ```bash
      sudo tail -f /var/log/maillog
      ```  

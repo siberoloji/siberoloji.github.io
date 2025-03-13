@@ -5,6 +5,7 @@ description: Learn how to use SysStat on AlmaLinux to monitor CPU, memory, and d
 date: 2025-01-07T09:27:15.266Z
 weight: 1480
 url: sysstat-almalinux-comprehensive-guide
+translationKey: how-to-use-sysstat-on-almalinux-a-comprehensive-guide
 draft: false
 tags:
   - AlmaLinux

@@ -12,7 +12,7 @@ categories:
 linkTitle: BIND DNS Server for an External Network
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 270
-
+translationKey: how-to-configure-bind-dns-server-for-an-external-network-on-almalinux
 keywords:
   - AlmaLinux
   - BIND DNS Server

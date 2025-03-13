@@ -5,6 +5,7 @@ description: Learn how to set up Layer 4 load balancing with HAProxy on AlmaLinu
 date: 2025-01-07T07:25:07.489Z
 weight: 1430
 url: haproxy-implement-layer-4-mode-load-balancing-almalinux
+translationKey: haproxy-implement-layer-4-mode-load-balancing-almalinux
 draft: false
 tags:
   - AlmaLinux

@@ -5,6 +5,7 @@ description: By the end of this tutorial, you’ll have a functional Next.js pro
 date: 2025-01-08T11:12:24.398Z
 weight: 1810
 url: install-js-almalinux-comprehensive-guide
+translationKey: install-nextjs-almalinux-comprehensive-guide
 draft: false
 tags:
   - AlmaLinux

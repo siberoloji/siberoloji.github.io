@@ -5,6 +5,7 @@ description: If you're looking to set up Laravel on AlmaLinux, this guide will t
 date: 2025-01-08T11:03:30.306Z
 weight: 1750
 url: install-laravel-almalinux-step-step-guide
+translationKey: install-laravel-almalinux-step-step-guide
 draft: false
 tags:
    - AlmaLinux

@@ -11,7 +11,7 @@ categories:
 linkTitle: Additional Repositories
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 70
-
+translationKey: how-to-add-additional-repositories-on-almalinux
 keywords:
   - AlmaLinux
   - Repositories on AlmaLinux

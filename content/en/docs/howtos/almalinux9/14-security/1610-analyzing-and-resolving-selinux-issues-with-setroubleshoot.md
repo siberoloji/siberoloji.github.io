@@ -5,6 +5,7 @@ description: This guide will walk you through everything you need to know about 
 date: 2025-01-07T09:48:59.642Z
 weight: 1610
 url: selinux-setroubleshoot-almalinux-comprehensive-guide
+translationKey: selinux-setroubleshoot-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux

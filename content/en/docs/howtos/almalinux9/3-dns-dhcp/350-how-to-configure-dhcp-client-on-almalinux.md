@@ -11,6 +11,7 @@ categories:
 linkTitle: Configure a DHCP Client
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 350
+translationKey: how-to-configure-a-dhcp-client-on-almalinux
 keywords:
    - AlmaLinux
 featured_image: /images/almalinux.webp

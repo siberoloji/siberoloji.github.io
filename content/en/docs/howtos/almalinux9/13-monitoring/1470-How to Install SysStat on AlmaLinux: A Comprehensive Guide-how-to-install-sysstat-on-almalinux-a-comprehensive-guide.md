@@ -5,6 +5,7 @@ description: Learn how to install SysStat on AlmaLinux with this detailed guide.
 date: 2025-01-07T09:22:09.281Z
 weight: 1470
 url: install-sysstat-almalinux-step-step-guide
+translationKey: install-sysstat-almalinux-step-step-guide
 draft: false
 tags:
    - AlmaLinux

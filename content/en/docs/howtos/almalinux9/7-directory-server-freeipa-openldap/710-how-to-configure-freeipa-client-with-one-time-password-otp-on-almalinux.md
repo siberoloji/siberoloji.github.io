@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-configure-freeipa-client-with-one-time-password-on-almalinux
 keywords:
   - AlmaLinux
 

@@ -5,6 +5,7 @@ description: Learn how to install PHP 8.0 on AlmaLinux with this step-by-step gu
 date: 2025-01-08T10:51:53.447Z
 weight: 1730
 url: install-php-8-0-almalinux
+translationKey: install-php-8-0-almalinux
 draft: false
 tags:
    - AlmaLinux

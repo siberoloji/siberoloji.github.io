@@ -13,7 +13,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-configure-samba-winbind-on-almalinux
 keywords:
   - AlmaLinux
   - samba

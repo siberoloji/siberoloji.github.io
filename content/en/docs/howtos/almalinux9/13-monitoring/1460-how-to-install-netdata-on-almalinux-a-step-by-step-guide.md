@@ -5,6 +5,7 @@ description: Learn how to install and configure Netdata on AlmaLinux with this c
 date: 2025-01-07T09:20:41.474Z
 weight: 1460
 url: install-netdata-almalinux-step-step-guide
+translationKey: install-netdata-almalinux-step-step-guide
 draft: false
 tags:
    - AlmaLinux

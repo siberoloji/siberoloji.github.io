@@ -5,6 +5,7 @@ description: This guide will walk you through the process of installing Python 3
 date: 2025-01-08T11:15:15.964Z
 weight: 1830
 url: install-python-3-9-almalinux
+translationKey: install-python-3-9-almalinux
 draft: false
 tags:
   - AlmaLinux

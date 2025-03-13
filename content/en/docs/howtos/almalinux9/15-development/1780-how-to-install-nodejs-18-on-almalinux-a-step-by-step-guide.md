@@ -5,6 +5,7 @@ description: This detailed guide will walk you through installing Node.js 18 on 
 date: 2025-01-08T11:07:41.806Z
 weight: 1780
 url: install-node-js-18-almalinux-step-step-guide
+translationKey: how-to-install-nodejs-18-on-almalinux-a-step-by-step-guide
 draft: false
 tags:
   - AlmaLinux
@@ -24,6 +25,7 @@ This detailed guide will walk you through installing Node.js 18 on AlmaLinux, ma
 ---
 
 ### **Table of Contents**
+
 1. Introduction to Node.js 18
 2. Prerequisites
 3. Step 1: Update Your System
@@ -82,6 +84,7 @@ sudo reboot
 AlmaLinux’s default repositories may not include the latest Node.js version. To install Node.js 18, we’ll use the official NodeSource repository.
 
 #### Step 4.1: Add the NodeSource Repository
+
 NodeSource provides a script to set up its repository for specific Node.js versions. Download and execute the setup script for Node.js 18:
 
 ```bash
@@ -89,6 +92,7 @@ curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 ```
 
 #### Step 4.2: Install Node.js 18
+
 Once the repository is added, install Node.js 18 with the following command:
 
 ```bash
@@ -96,6 +100,7 @@ sudo dnf install -y nodejs
 ```
 
 #### Step 4.3: Install Development Tools (Optional)
+
 Some Node.js packages require compilation during installation. Install development tools to ensure compatibility:
 
 ```bash
@@ -109,16 +114,20 @@ sudo dnf install -y gcc-c++ make
 
 To confirm that Node.js and its package manager **npm** were installed correctly, check their versions:
 
-#### Check Node.js Version:
+#### Check Node.js Version
+
 ```bash
 node -v
 ```
+
 Expected output:
+
 ```
 v18.x.x
 ```
 
-#### Check npm Version:
+#### Check npm Version
+
 ```bash
 npm -v
 ```
@@ -132,6 +141,7 @@ npm is installed automatically with Node.js and allows you to manage JavaScript 
 The **Node Version Manager (NVM)** is a useful tool for managing multiple Node.js versions on the same system. This is particularly helpful for developers working on projects that require different Node.js versions.
 
 #### Step 6.1: Install NVM
+
 Install NVM using its official script:
 
 ```bash
@@ -139,6 +149,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 #### Step 6.2: Load NVM
+
 Activate NVM by sourcing your shell configuration file:
 
 ```bash
@@ -146,6 +157,7 @@ source ~/.bashrc
 ```
 
 #### Step 6.3: Install Node.js 18 Using NVM
+
 Use NVM to install Node.js 18:
 
 ```bash
@@ -153,6 +165,7 @@ nvm install 18
 ```
 
 #### Step 6.4: Verify Installation
+
 Check the installed Node.js version:
 
 ```bash
@@ -160,6 +173,7 @@ node -v
 ```
 
 #### Step 6.5: Switch Between Versions
+
 If you have multiple Node.js versions installed, you can list them:
 
 ```bash
@@ -179,6 +193,7 @@ nvm use 18
 Now that Node.js 18 is installed, test it by creating and running a simple Node.js application.
 
 #### Step 7.1: Create a Project Directory
+
 Create a directory for your Node.js application and navigate to it:
 
 ```bash
@@ -187,6 +202,7 @@ cd my-node-app
 ```
 
 #### Step 7.2: Initialize a Node.js Project
+
 Run the following command to generate a `package.json` file:
 
 ```bash
@@ -194,6 +210,7 @@ npm init -y
 ```
 
 #### Step 7.3: Write a Simple Node.js Application
+
 Create a file named `app.js`:
 
 ```bash
@@ -222,6 +239,7 @@ server.listen(port, hostname, () => {
 Save and close the file.
 
 #### Step 7.4: Run the Application
+
 Execute the application using Node.js:
 
 ```bash
@@ -229,11 +247,13 @@ node app.js
 ```
 
 You should see the following message in the terminal:
+
 ```
 Server running at http://127.0.0.1:3000/
 ```
 
 #### Step 7.5: Test the Application
+
 Open a web browser or use `curl` to visit `http://127.0.0.1:3000/`. You should see the message:
 
 ```
@@ -246,13 +266,15 @@ Hello, Node.js 18 on AlmaLinux!
 
 If your server is secured with a firewall, ensure the necessary port (e.g., 3000) is open for your Node.js application.
 
-#### Open Port 3000:
+#### Open Port 3000
+
 ```bash
 sudo firewall-cmd --permanent --add-port=3000/tcp
 sudo firewall-cmd --reload
 ```
 
-#### Use PM2 for Process Management:
+#### Use PM2 for Process Management
+
 For production environments, use **PM2**, a process manager for Node.js applications. Install PM2 globally:
 
 ```bash

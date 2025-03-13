@@ -5,6 +5,7 @@ description: In this article, we’ll focus on **ausearch**, a command-line util
 date: 2025-01-07T09:32:40.104Z
 weight: 1510
 url: search-auditd-logs-ausearch-almalinux
+translationKey: search-auditd-logs-ausearch-almalinux
 draft: false
 tags:
   - AlmaLinux

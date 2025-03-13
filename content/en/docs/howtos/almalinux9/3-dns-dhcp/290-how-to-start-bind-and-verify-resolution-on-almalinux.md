@@ -11,7 +11,7 @@ categories:
 linkTitle: Start BIND and Verify Resolution
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 290
-
+translationKey: how-to-start-bind-and-verify-resolution-on-almalinux
 keywords:
   - AlmaLinux
   - BIND

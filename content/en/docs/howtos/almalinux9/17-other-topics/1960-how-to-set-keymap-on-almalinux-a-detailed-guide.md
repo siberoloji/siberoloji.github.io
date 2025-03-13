@@ -5,6 +5,7 @@ description: This guide explains everything you need to know about keymaps on Al
 date: 2025-01-08
 weight: 1960
 url: set-keymap-almalinux-detailed-guide
+translationKey: set-keymap-almalinux-detailed-guide
 draft: false
 tags:
   - AlmaLinux

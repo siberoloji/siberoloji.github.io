@@ -12,7 +12,7 @@ categories:
 linkTitle: BIND DNS Server Zone Files
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 280
-
+translationKey: how-to-configure-bind-dns-server-zone-files-on-almalinux
 keywords:
   - AlmaLinux
   - DNS Server

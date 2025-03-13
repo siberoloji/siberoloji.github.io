@@ -158,14 +158,6 @@
       "path": "[[workspace]]/content/tr/blog/draft"
     },
     {
-      "title": "initial-settings",
-      "path": "[[workspace]]/content/tr/docs/howtos/almalinux9/initial-settings"
-    },
-    {
-      "title": "ntp-ssh",
-      "path": "[[workspace]]/content/tr/docs/howtos/almalinux9/ntp-ssh"
-    },
-    {
       "title": "bobsalmalinuxadventures",
       "path": "[[workspace]]/content/tr/docs/bob/bobsalmalinuxadventures"
     },

@@ -5,6 +5,7 @@ description: This guide provides a detailed walkthrough for setting up and confi
 date: 2025-01-08T11:36:43.115Z
 weight: 1860
 url: configure-vnc-server-almalinux
+translationKey: how-to-configure-vnc-server-on-almalinux
 draft: false
 tags:
   - AlmaLinux
@@ -60,6 +61,7 @@ This ensures you have the latest versions of the software and dependencies.
 AlmaLinux supports the TigerVNC server, which is reliable and widely used.
 
 #### Install TigerVNC Server
+
 Run the following command to install the TigerVNC server:
 
 ```bash
@@ -73,6 +75,7 @@ sudo dnf install -y tigervnc-server
 It's recommended to create a dedicated user for the VNC session to avoid running it as the root user.
 
 #### Add a New User
+
 Create a new user (e.g., `vncuser`) and set a password:
 
 ```bash
@@ -81,6 +84,7 @@ sudo passwd vncuser
 ```
 
 #### Assign User Permissions
+
 Ensure the user has access to the graphical desktop environment. For GNOME, no additional configuration is usually required.
 
 ---
@@ -90,6 +94,7 @@ Ensure the user has access to the graphical desktop environment. For GNOME, no a
 Each VNC user needs a configuration file to define their VNC session.
 
 #### Create a VNC Configuration File
+
 Create a VNC configuration file for the user. Replace `vncuser` with your username:
 
 ```bash
@@ -122,6 +127,7 @@ WantedBy=multi-user.target
 Save and exit the file.
 
 #### Reload the Systemd Daemon
+
 Reload the systemd configuration to recognize the new service:
 
 ```bash
@@ -181,6 +187,7 @@ sudo systemctl status vncserver@:1
 To allow VNC connections, open the required ports in the firewall. By default, VNC uses port `5900` + display number. For display `:1`, the port is `5901`.
 
 #### Open VNC Ports
+
 Run the following command to open port `5901`:
 
 ```bash
@@ -197,6 +204,7 @@ If you are using multiple VNC sessions, open additional ports as needed (e.g., `
 VNC connections are not encrypted by default. For secure access, use SSH tunneling.
 
 #### Create an SSH Tunnel
+
 On your local machine, establish an SSH tunnel to the server. Replace `user`, `server_ip`, and `5901` with appropriate values:
 
 ```bash
@@ -206,6 +214,7 @@ ssh -L 5901:localhost:5901 user@server_ip
 This command forwards the local port `5901` to the server's port `5901` securely.
 
 #### Connect via VNC Client
+
 Open your VNC client and connect to `localhost:5901`. The SSH tunnel encrypts the connection, ensuring secure remote access.
 
 ---
@@ -224,6 +233,7 @@ With the VNC server configured and running, you can connect from your local mach
 ### **Step 10: Manage and Troubleshoot the VNC Server**
 
 #### Stopping the VNC Server
+
 To stop a VNC session, use:
 
 ```bash
@@ -231,6 +241,7 @@ sudo systemctl stop vncserver@:1
 ```
 
 #### Restarting the VNC Server
+
 To restart the VNC server:
 
 ```bash
@@ -238,6 +249,7 @@ sudo systemctl restart vncserver@:1
 ```
 
 #### Logs for Debugging
+
 If you encounter issues, check the VNC server logs for details:
 
 ```bash

@@ -11,17 +11,13 @@ categories:
   - Linux
   - Linux How-to
 linkTitle: Manage Users
-
-prev: /docs/howtos/almalinux9/
-next: null
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 10
-
 keywords:
   - Manage Users
-
 featured_image: /images/almalinux.webp
 url: manage-users-almalinux-add-remove-modify
+translationKey: manage-users-almalinux-add-remove-modify
 ---
 
 ### **1. Understanding User Management in AlmaLinux**
@@ -53,6 +49,7 @@ sudo useradd -m -s /bin/bash newusername
 sudo passwd newusername
 
 ```
+
 {{% alert title="Warning" color="warning" %}}
  [The danger of passwordless accounts](/security-implications-passwordless-user-accounts-almalinux/) is that anyone can log in without a password.
 {{% /alert %}}

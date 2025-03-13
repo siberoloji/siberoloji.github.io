@@ -11,7 +11,7 @@ categories:
 linkTitle: Update AlmaLinux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 60
-
+translationKey: how-to-update-almalinux-system
 keywords:
   - AlmaLinux
   - Update AlmaLinux

@@ -5,6 +5,7 @@ description: Learn the essential Firewalld operations on AlmaLinux, including ad
 date: 2025-01-08T10:36:32.549Z
 weight: 1650
 url: firewalld-basic-operations-almalinux
+translationKey: how-to-perform-basic-firewalld-operations-on-almalinux
 draft: false
 tags:
    - AlmaLinux

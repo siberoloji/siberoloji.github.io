@@ -5,6 +5,7 @@ description: Learn how to install and configure Auditd on AlmaLinux for system m
 date: 2025-01-07T09:29:36.762Z
 weight: 1490
 url: install-auditd-almalinux-step-step-guide
+translationKey: install-auditd-almalinux-step-step-guide
 draft: false
 tags:
    - AlmaLinux

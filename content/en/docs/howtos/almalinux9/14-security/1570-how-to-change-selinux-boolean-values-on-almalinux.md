@@ -5,6 +5,7 @@ description: In this guide, we’ll explore SELinux Boolean values, their signif
 date: 2025-01-07T09:44:43.310Z
 weight: 1570
 url: change-selinux-boolean-values-almalinux
+translationKey: change-selinux-boolean-values-almalinux
 draft: false
 tags:
   - AlmaLinux

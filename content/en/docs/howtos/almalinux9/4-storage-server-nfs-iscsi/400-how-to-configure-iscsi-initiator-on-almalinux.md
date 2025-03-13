@@ -11,7 +11,7 @@ categories:
 linkTitle: Configure iSCSI Initiator
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 400
-
+translationKey: configure-iscsi-initiator-almalinux9
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

@@ -5,6 +5,7 @@ description: In this guide, we’ll walk you through the steps required to join 
 date: 2025-01-08T11:44:30.435Z
 weight: 1910
 url: join-active-directory-domain-almalinux
+translationKey: how-to-join-active-directory-domain-on-almalinux
 draft: false
 tags:
    - AlmaLinux
@@ -98,6 +99,7 @@ hostnamectl
 Ensure your AlmaLinux system can resolve the AD domain name by pointing to the domain controller’s DNS server.
 
 #### Update `/etc/resolv.conf`
+
 Edit the DNS configuration file:
 
 ```bash
@@ -113,6 +115,7 @@ nameserver <domain-controller-ip>
 Replace `<domain-controller-ip>` with the IP address of your AD domain controller.
 
 #### Test DNS Resolution
+
 Verify that the AlmaLinux system can resolve the AD domain and domain controller:
 
 ```bash
@@ -150,6 +153,7 @@ sudo realm join --user=Administrator example.com
 You’ll be prompted to enter the password for the AD administrator account.
 
 #### Verify Domain Membership
+
 Check if the system has successfully joined the domain:
 
 ```bash
@@ -165,6 +169,7 @@ The output should show the domain name and configuration details.
 The System Security Services Daemon (SSSD) handles authentication and user access to AD resources.
 
 #### Edit SSSD Configuration
+
 Edit the SSSD configuration file:
 
 ```bash
@@ -198,6 +203,7 @@ sudo chmod 600 /etc/sssd/sssd.conf
 ```
 
 #### Restart SSSD
+
 Restart the SSSD service to apply the changes:
 
 ```bash
@@ -229,6 +235,7 @@ su - 'domain_user@example.com'
 Replace `domain_user@example.com` with a valid AD username. If successful, a home directory will be created automatically.
 
 #### Verify User Information
+
 Use the `id` command to confirm that AD user information is correctly retrieved:
 
 ```bash
@@ -242,6 +249,7 @@ id domain_user@example.com
 By default, all AD users can log in to the AlmaLinux system. You can restrict access to specific groups or users.
 
 #### Allow Specific Groups
+
 To allow only members of a specific AD group (e.g., `LinuxAdmins`), update the realm configuration:
 
 ```bash
@@ -249,6 +257,7 @@ sudo realm permit -g LinuxAdmins
 ```
 
 #### Revoke All Users
+
 To revoke access for all users:
 
 ```bash

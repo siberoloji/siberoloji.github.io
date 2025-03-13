@@ -11,7 +11,7 @@ categories:
 linkTitle: Password Authentication for SSH Server
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 130
-
+translationKey: how-to-set-up-password-authentication-for-ssh-server-on-almalinux
 keywords:
   - AlmaLinux
   - password authentication

@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: generate-systemd-unit-files-auto-start-containers-almalinux
 keywords:
   - AlmaLinux
 

@@ -5,6 +5,7 @@ description: This guide will walk you through the process of searching SELinux l
 date: 2025-01-07T09:48:04.169Z
 weight: 1600
 url: search-selinux-logs-almalinux
+translationKey: search-selinux-logs-almalinux
 draft: false
 tags:
    - AlmaLinux

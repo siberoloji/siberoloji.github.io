@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-install-podman-on-almalinux
 featured_image: /images/almalinux.webp
 url: install-podman-almalinux
 ---

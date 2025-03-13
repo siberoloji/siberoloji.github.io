@@ -11,7 +11,7 @@ categories:
 linkTitle: Configure NFS Client
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 370
-
+translationKey: how-to-configure-nfs-client-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
@@ -235,10 +235,13 @@ If you encounter access issues, ensure that the firewall and SELinux settings ar
 1. **NFS Share Not Mounting**
    - Verify the server and share path are correct.
    - Ensure the server is running and accessible:
+
      ```bash
      ping 192.168.1.100
      ```
+
    - Check if the NFS server is exporting the directory:
+
      ```bash
      showmount -e 192.168.1.100
      ```
@@ -249,6 +252,7 @@ If you encounter access issues, ensure that the firewall and SELinux settings ar
 
 3. **Slow Performance**
    - Use the `async` option in the `/etc/fstab` file for better performance:
+
      ```plaintext
      192.168.1.100:/srv/nfs/shared  /mnt/nfs/shared  nfs  defaults,async  0  0
      ```
@@ -256,6 +260,7 @@ If you encounter access issues, ensure that the firewall and SELinux settings ar
 4. **Mount Fails After Reboot**
    - Verify the `/etc/fstab` entry is correct.
    - Check system logs for errors:
+
      ```bash
      sudo journalctl -xe
      ```

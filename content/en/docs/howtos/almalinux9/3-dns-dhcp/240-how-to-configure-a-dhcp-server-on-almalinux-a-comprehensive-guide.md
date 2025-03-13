@@ -11,6 +11,7 @@ categories:
 linkTitle: Configure a Dnsmasq DHCP Server
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 240
+translationKey: enable-integrated-dhcp-feature-in-dnsmasq-and-configure-dhcp-server-on-almalinux
 keywords:
   - AlmaLinux
   - dnsmasq

@@ -11,7 +11,7 @@ categories:
 linkTitle: Port Forwarding
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 210
-
+translationKey: how-to-use-port-forwarding-on-almalinux9
 keywords:
   - AlmaLinux
   - Port Forwarding

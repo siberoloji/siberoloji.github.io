@@ -16,7 +16,7 @@ weight: 20
 keywords:
   - AlmaLinux
   - firewalld
-
+translationKey: how-to-set-up-firewalld-ports-and-zones-on-almalinux
 featured_image: /images/almalinux.webp
 url: set-firewalld-ports-zones-almalinux
 ---

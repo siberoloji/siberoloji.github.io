@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: haproxy-configure-ssl-tls-settings-almalinux
 keywords:
   - AlmaLinux
 
@@ -27,6 +27,7 @@ In this guide, we will walk you through configuring **SSL/TLS settings on HAProx
 ## **What is SSL/TLS?**
 
 SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are cryptographic protocols that encrypt communication between a client (e.g., a web browser) and a server. This encryption ensures:
+
 - **Confidentiality**: Prevents eavesdropping on data.
 - **Integrity**: Protects data from being tampered with.
 - **Authentication**: Confirms the identity of the server and optionally the client.
@@ -36,6 +37,7 @@ SSL (Secure Sockets Layer) and its successor TLS (Transport Layer Security) are 
 ## **Why Use SSL/TLS with HAProxy?**
 
 Integrating SSL/TLS with HAProxy provides several benefits:
+
 1. **SSL Termination**: Decrypts incoming traffic, reducing the computational load on backend servers.
 2. **SSL Passthrough**: Allows encrypted traffic to pass directly to backend servers.
 3. **Improved Security**: Ensures encrypted connections between clients and the proxy.
@@ -46,6 +48,7 @@ Integrating SSL/TLS with HAProxy provides several benefits:
 ## **Prerequisites**
 
 Before configuring SSL/TLS in HAProxy, ensure:
+
 1. **AlmaLinux** is installed and updated.
 2. **HAProxy** is installed and running.
 3. You have an **SSL certificate** and private key for your domain.
@@ -58,22 +61,26 @@ Before configuring SSL/TLS in HAProxy, ensure:
 If HAProxy isn’t already installed, follow these steps:
 
 ### **Update System Packages**
+
 ```bash
 sudo dnf update -y
 ```
 
 ### **Install HAProxy**
+
 ```bash
 sudo dnf install haproxy -y
 ```
 
 ### **Start and Enable HAProxy**
+
 ```bash
 sudo systemctl start haproxy
 sudo systemctl enable haproxy
 ```
 
 ### **Verify Installation**
+
 ```bash
 haproxy -v
 ```
@@ -83,18 +90,24 @@ haproxy -v
 ## **Step 2: Obtain and Prepare SSL Certificates**
 
 ### **2.1 Obtain SSL Certificates**
+
 You can get an SSL certificate from:
+
 - A trusted Certificate Authority (e.g., Let's Encrypt, DigiCert).
 - Self-signed certificates (for testing purposes).
 
 ### **2.2 Combine Certificate and Private Key**
+
 HAProxy requires the certificate and private key to be combined into a single `.pem` file. If your certificate and key are separate:
+
 ```bash
 cat example.com.crt example.com.key > /etc/haproxy/certs/example.com.pem
 ```
 
 ### **2.3 Secure the Certificates**
+
 Set appropriate permissions to protect your private key:
+
 ```bash
 sudo mkdir -p /etc/haproxy/certs
 sudo chmod 700 /etc/haproxy/certs
@@ -109,7 +122,9 @@ sudo chmod 600 /etc/haproxy/certs/example.com.pem
 SSL termination decrypts incoming HTTPS traffic at HAProxy, sending unencrypted traffic to backend servers.
 
 ### **3.1 Update the Configuration File**
+
 Edit the HAProxy configuration file:
+
 ```bash
 sudo nano /etc/haproxy/haproxy.cfg
 ```
@@ -117,6 +132,7 @@ sudo nano /etc/haproxy/haproxy.cfg
 Add or modify the following sections:
 
 #### **Frontend Configuration**
+
 ```text
 frontend https_front
     bind *:443 ssl crt /etc/haproxy/certs/example.com.pem
@@ -128,6 +144,7 @@ frontend https_front
 - **default_backend**: Specifies the backend server pool.
 
 #### **Backend Configuration**
+
 ```text
 backend web_servers
     mode http
@@ -143,12 +160,15 @@ backend web_servers
 ---
 
 ### **3.2 Restart HAProxy**
+
 Apply the changes by restarting HAProxy:
+
 ```bash
 sudo systemctl restart haproxy
 ```
 
 ### **3.3 Test SSL Termination**
+
 Open a browser and navigate to your domain using HTTPS (e.g., `https://example.com`). Verify that the connection is secure.
 
 ---
@@ -158,7 +178,9 @@ Open a browser and navigate to your domain using HTTPS (e.g., `https://example.c
 In SSL passthrough mode, HAProxy does not terminate SSL traffic. Instead, it forwards encrypted traffic to the backend servers.
 
 ### **4.1 Update the Configuration File**
+
 Edit the configuration file:
+
 ```bash
 sudo nano /etc/haproxy/haproxy.cfg
 ```
@@ -166,6 +188,7 @@ sudo nano /etc/haproxy/haproxy.cfg
 Modify the `frontend` and `backend` sections as follows:
 
 #### **Frontend Configuration**
+
 ```text
 frontend https_passthrough
     bind *:443
@@ -176,6 +199,7 @@ frontend https_passthrough
 - **mode tcp**: Ensures that SSL traffic is passed as-is to the backend.
 
 #### **Backend Configuration**
+
 ```text
 backend web_servers
     mode tcp
@@ -189,11 +213,13 @@ backend web_servers
 ---
 
 ### **4.2 Restart HAProxy**
+
 ```bash
 sudo systemctl restart haproxy
 ```
 
 ### **4.3 Test SSL Passthrough**
+
 Ensure that backend servers handle SSL decryption by visiting your domain over HTTPS.
 
 ---
@@ -201,7 +227,9 @@ Ensure that backend servers handle SSL decryption by visiting your domain over H
 ## **Step 5: Advanced SSL/TLS Settings**
 
 ### **5.1 Enforce TLS Versions**
+
 Restrict the use of older protocols (e.g., SSLv3, TLSv1) to improve security:
+
 ```text
 frontend https_front
     bind *:443 ssl crt /etc/haproxy/certs/example.com.pem alpn h2,http/1.1 no-sslv3 no-tlsv10 no-tlsv11
@@ -211,13 +239,17 @@ frontend https_front
 - **no-tlsv10**: Disables TLSv1.0.
 
 ### **5.2 Configure Cipher Suites**
+
 Define strong cipher suites to enhance encryption:
+
 ```text
 bind *:443 ssl crt /etc/haproxy/certs/example.com.pem ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH no-sslv3
 ```
 
 ### **5.3 Enable HTTP/2**
+
 HTTP/2 improves performance by multiplexing multiple requests over a single connection:
+
 ```text
 bind *:443 ssl crt /etc/haproxy/certs/example.com.pem alpn h2,http/1.1
 ```
@@ -227,14 +259,18 @@ bind *:443 ssl crt /etc/haproxy/certs/example.com.pem alpn h2,http/1.1
 ## **Step 6: Monitor and Test the Configuration**
 
 ### **6.1 Check Logs**
+
 Monitor HAProxy logs to ensure proper operation:
+
 ```bash
 sudo tail -f /var/log/haproxy.log
 ```
 
 ### **6.2 Test with Tools**
+
 - Use **SSL Labs** to analyze your SSL configuration: [https://www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/).
 - Verify HTTP/2 support using `curl`:
+
   ```bash
   curl -I --http2 https://example.com
   ```
@@ -244,6 +280,7 @@ sudo tail -f /var/log/haproxy.log
 ## **Step 7: Troubleshooting**
 
 ### **Common Issues**
+
 1. **Certificate Errors**: Ensure the `.pem` file contains the full certificate chain.
 2. **Unreachable Backend**: Verify backend server IPs, ports, and firewall rules.
 3. **Protocol Errors**: Check for unsupported TLS versions or ciphers.

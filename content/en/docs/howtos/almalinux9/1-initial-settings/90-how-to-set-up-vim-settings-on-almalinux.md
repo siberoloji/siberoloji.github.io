@@ -11,7 +11,7 @@ categories:
 linkTitle: Vim Settings
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 90
-
+translationKey: how-to-set-up-vim-settings-on-almalinux
 keywords:
   - AlmaLinux
   - Vim Settings on AlmaLinux

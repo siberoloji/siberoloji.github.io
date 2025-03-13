@@ -11,7 +11,7 @@ categories:
 linkTitle: NTP server
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 110
-
+translationKey: how-to-configure-an-ntp-server-on-almalinux
 keywords:
   - AlmaLinux
   - NTP server on AlmaLinux

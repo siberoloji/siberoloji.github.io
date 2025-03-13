@@ -11,6 +11,7 @@ categories:
 linkTitle: Configure a DHCP Server
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 340
+translationKey: how-to-configure-dhcp-server-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

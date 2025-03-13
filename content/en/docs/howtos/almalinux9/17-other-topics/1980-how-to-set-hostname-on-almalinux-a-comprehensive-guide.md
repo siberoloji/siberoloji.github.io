@@ -5,6 +5,7 @@ description: In this detailed guide, we’ll explore the concept of hostnames, w
 date: 2025-01-08
 weight: 1980
 url: set-hostname-almalinux-comprehensive-guide
+translationKey: set-hostname-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux

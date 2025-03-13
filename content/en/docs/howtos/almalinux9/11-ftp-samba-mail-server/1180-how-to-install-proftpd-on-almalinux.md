@@ -13,7 +13,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-install-proftpd-on-almalinux
 keywords:
   - AlmaLinux
   - Install ProFTPD

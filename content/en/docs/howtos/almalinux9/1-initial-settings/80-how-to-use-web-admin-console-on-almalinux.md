@@ -11,7 +11,7 @@ categories:
 linkTitle: Web Admin Console
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 80
-
+translationKey: how-to-use-web-admin-console-on-almalinux
 keywords:
   - AlmaLinux
   - Web Admin Console

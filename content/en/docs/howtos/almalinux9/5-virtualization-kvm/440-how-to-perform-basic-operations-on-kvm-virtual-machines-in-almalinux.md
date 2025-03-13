@@ -11,7 +11,7 @@ categories:
 linkTitle: Basic KVM Operations
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 440
-
+translationKey: how-to-perform-basic-operations-on-kvm-virtual-machines-in-almalinux
 keywords:
   - AlmaLinux
   - KVM

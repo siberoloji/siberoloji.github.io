@@ -12,7 +12,7 @@ categories:
 linkTitle: Services on AlmaLinux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 50
-
+translationKey: how-to-list-enable-or-disable-services-on-almalinux
 keywords:
   - AlmaLinux
   - services on almalinux

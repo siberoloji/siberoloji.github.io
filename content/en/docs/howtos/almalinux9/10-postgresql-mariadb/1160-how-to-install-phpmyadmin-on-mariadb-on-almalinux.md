@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-phpmyadmin-mariadb-almalinux
 keywords:
   - AlmaLinux
   - phpmyadmin

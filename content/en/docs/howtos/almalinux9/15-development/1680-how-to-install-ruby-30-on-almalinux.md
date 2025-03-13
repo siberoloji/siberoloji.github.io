@@ -5,6 +5,7 @@ description: Learn step-by-step how to install Ruby 3.0 on AlmaLinux using RVM, 
 date: 2025-01-08T10:44:54.833Z
 weight: 1680
 url: install-ruby-3-0-almalinux
+translationKey: install-ruby-3-0-almalinux
 draft: false
 tags:
    - AlmaLinux

@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-use-dockerfiles-with-podman-on-almalinux
 featured_image: /images/almalinux.webp
 url: dockerfiles-podman-almalinux
 ---
@@ -290,6 +290,6 @@ sudo setenforce 0
 
 Using Dockerfiles with Podman on AlmaLinux is an efficient way to build and manage container images. This guide has shown you how to create a Dockerfile, build an image with Podman, and run containers from that image. With Podman’s compatibility with Dockerfile syntax and AlmaLinux’s enterprise-grade stability, you have a powerful platform for containerization.
 
-By mastering these steps, you’ll be well-equipped to streamline your workflows, automate container deployments, and take full advantage of Podman’s capabilities. Whether you’re new to containers or transitioning from Docker, Podman offers a secure and flexible environment for modern development. 
+By mastering these steps, you’ll be well-equipped to streamline your workflows, automate container deployments, and take full advantage of Podman’s capabilities. Whether you’re new to containers or transitioning from Docker, Podman offers a secure and flexible environment for modern development.
 
 Let us know about your experiences with Podman and AlmaLinux in the comments below!

@@ -11,7 +11,7 @@ categories:
 linkTitle: Create KVM Virtual Machines
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 420
-
+translationKey: how-to-create-kvm-virtual-machines-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

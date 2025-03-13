@@ -5,6 +5,7 @@ description: This article will guide you through everything you need to know abo
 date: 2025-01-08
 weight: 1940
 url: change-run-level-almalinux-comprehensive-guide
+translationKey: change-run-level-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux

@@ -5,6 +5,7 @@ description: This guide provides an in-depth look at using matchpathcon on AlmaL
 date: 2025-01-05T19:38:18.943Z
 weight: 1630
 url: mastering-selinux-matchpathcon-almalinux
+translationKey: mastering-selinux-matchpathcon-almalinux
 draft: false
 tags:
   - AlmaLinux

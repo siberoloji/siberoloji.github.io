@@ -11,7 +11,7 @@ categories:
 linkTitle: BIND DNS Server View Statement
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 300
-
+translationKey: how-to-use-bind-dns-server-view-statement-on-almalinux
 keywords:
   - AlmaLinux
 

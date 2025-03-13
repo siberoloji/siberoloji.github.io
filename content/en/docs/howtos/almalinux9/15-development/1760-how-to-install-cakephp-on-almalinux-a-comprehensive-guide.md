@@ -5,6 +5,7 @@ description: This article will walk you through installing and configuring CakeP
 date: 2025-01-08T11:05:11.506Z
 weight: 1760
 url: install-cakephp-almalinux-comprehensive-guide
+translationKey: install-cakephp-almalinux-comprehensive-guide
 draft: false
 tags:
   - AlmaLinux
@@ -24,6 +25,7 @@ This article will walk you through installing and configuring CakePHP on AlmaLin
 ---
 
 ### **Table of Contents**
+
 1. Introduction to CakePHP and AlmaLinux
 2. Prerequisites
 3. Step 1: Update Your System
@@ -73,34 +75,41 @@ sudo dnf upgrade -y
 
 CakePHP requires a web server and PHP to function. This guide will use Apache as the web server.
 
-#### Install Apache:
+#### Install Apache
+
 ```bash
 sudo dnf install httpd -y
 ```
 
 Start and enable Apache to ensure it runs on boot:
+
 ```bash
 sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
 
-#### Install PHP and Required Extensions:
+#### Install PHP and Required Extensions
+
 CakePHP requires PHP 8.1 or later. Install PHP and its necessary extensions as follows:
+
 ```bash
 sudo dnf install php php-cli php-common php-mbstring php-intl php-xml php-opcache php-curl php-mysqlnd php-zip -y
 ```
 
 Verify the PHP installation:
+
 ```bash
 php -v
 ```
 
 Expected output:
+
 ```
 PHP 8.1.x (cli) (built: ...)
 ```
 
 Restart Apache to load PHP modules:
+
 ```bash
 sudo systemctl restart httpd
 ```
@@ -111,18 +120,22 @@ sudo systemctl restart httpd
 
 Composer is an essential tool for managing PHP dependencies, including CakePHP.
 
-#### Install Composer:
+#### Install Composer
+
 1. Download the Composer installer:
+
    ```bash
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
    ```
 
 2. Install Composer globally:
+
    ```bash
    sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
    ```
 
 3. Verify the installation:
+
    ```bash
    composer --version
    ```
@@ -133,30 +146,37 @@ Composer is an essential tool for managing PHP dependencies, including CakePHP.
 
 CakePHP requires a database to manage application data. You can use either MySQL or MariaDB. For this guide, we'll use MariaDB.
 
-#### Install MariaDB:
+#### Install MariaDB
+
 ```bash
 sudo dnf install mariadb-server -y
 ```
 
-#### Start and Enable MariaDB:
+#### Start and Enable MariaDB
+
 ```bash
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
 
-#### Secure the Installation:
+#### Secure the Installation
+
 Run the security script to set up a root password and other configurations:
+
 ```bash
 sudo mysql_secure_installation
 ```
 
-#### Create a Database for CakePHP:
+#### Create a Database for CakePHP
+
 Log in to MariaDB and create a database and user for your CakePHP application:
+
 ```bash
 sudo mysql -u root -p
 ```
 
 Execute the following SQL commands:
+
 ```sql
 CREATE DATABASE cakephp_db;
 CREATE USER 'cakephp_user'@'localhost' IDENTIFIED BY 'secure_password';
@@ -169,22 +189,28 @@ EXIT;
 
 ### **7. Step 5: Download and Set Up CakePHP**
 
-#### Create a Directory for CakePHP:
+#### Create a Directory for CakePHP
+
 Navigate to the web server's root directory and create a folder for your CakePHP project:
+
 ```bash
 cd /var/www
 sudo mkdir cakephp-app
 cd cakephp-app
 ```
 
-#### Download CakePHP:
+#### Download CakePHP
+
 Use Composer to create a new CakePHP project:
+
 ```bash
 composer create-project --prefer-dist cakephp/app:~4.0 .
 ```
 
-#### Set Correct Permissions:
+#### Set Correct Permissions
+
 Ensure that the web server has proper access to the CakePHP files:
+
 ```bash
 sudo chown -R apache:apache /var/www/cakephp-app
 sudo chmod -R 775 /var/www/cakephp-app/tmp /var/www/cakephp-app/logs
@@ -194,7 +220,8 @@ sudo chmod -R 775 /var/www/cakephp-app/tmp /var/www/cakephp-app/logs
 
 ### **8. Step 6: Configure Apache for CakePHP**
 
-#### Create a Virtual Host Configuration:
+#### Create a Virtual Host Configuration
+
 Set up a virtual host for your CakePHP application:
 
 ```bash
@@ -202,6 +229,7 @@ sudo nano /etc/httpd/conf.d/cakephp-app.conf
 ```
 
 Add the following configuration:
+
 ```apache
 <VirtualHost *:80>
     ServerName yourdomain.com
@@ -219,14 +247,17 @@ Add the following configuration:
 
 Save and exit the file.
 
-#### Enable Apache mod_rewrite:
+#### Enable Apache mod_rewrite
+
 CakePHP requires URL rewriting to work. Enable `mod_rewrite`:
+
 ```bash
 sudo dnf install mod_rewrite -y
 sudo systemctl restart httpd
 ```
 
 Test your configuration:
+
 ```bash
 sudo apachectl configtest
 ```
@@ -238,6 +269,7 @@ sudo apachectl configtest
 Open your web browser and navigate to your server's IP address or domain. If everything is configured correctly, you should see CakePHP's default welcome page.
 
 If you encounter any issues, check the Apache logs for debugging:
+
 ```bash
 sudo tail -f /var/log/httpd/cakephp-app-error.log
 ```
@@ -246,7 +278,7 @@ sudo tail -f /var/log/httpd/cakephp-app-error.log
 
 ### **10. Conclusion**
 
-Congratulations! You've successfully installed CakePHP on AlmaLinux. With this setup, you now have a solid foundation for building web applications using CakePHP's powerful features. 
+Congratulations! You've successfully installed CakePHP on AlmaLinux. With this setup, you now have a solid foundation for building web applications using CakePHP's powerful features.
 
 From here, you can start creating your models, controllers, and views to develop dynamic and interactive web applications. AlmaLinux's stability and CakePHP's flexibility make for an excellent combination, ensuring reliable performance for your projects.
 

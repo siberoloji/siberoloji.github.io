@@ -5,6 +5,7 @@ description: Learn how to install Ruby on Rails 7 on AlmaLinux with this step-by
 date: 2025-01-08T10:59:59.544Z
 weight: 1700
 url: install-ruby-rails-7-almalinux
+translationKey: install-ruby-rails-7-almalinux
 draft: false
 tags:
    - AlmaLinux

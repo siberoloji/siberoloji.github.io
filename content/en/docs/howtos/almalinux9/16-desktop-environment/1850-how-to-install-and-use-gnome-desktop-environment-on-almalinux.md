@@ -5,6 +5,7 @@ description: This detailed guide walks you through installing and using the GNOM
 date: 2025-01-08T11:34:32.550Z
 weight: 1850
 url: install-gnome-desktop-environment-almalinux
+translationKey: install-gnome-desktop-environment-almalinux
 draft: false
 tags:
   - AlmaLinux

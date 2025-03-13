@@ -5,6 +5,7 @@ description: This guide will take you through the basics of using audit2allow on
 date: 2025-01-05T19:42:42.132Z
 weight: 1620
 url: selinux-audit2allow-basic-troubleshooting-almalinux
+translationKey: selinux-audit2allow-basic-troubleshooting-almalinux
 draft: false
 tags:
   - AlmaLinux

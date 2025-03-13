@@ -11,7 +11,7 @@ categories:
 linkTitle: Install KVM
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 410
-
+translationKey: how-to-install-kvm-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
@@ -30,6 +30,7 @@ In this guide, we’ll walk you through the steps to install KVM on AlmaLinux, i
 KVM (Kernel-based Virtual Machine) is an open-source hypervisor that allows Linux systems to run VMs. It integrates seamlessly with the Linux kernel, leveraging modern CPU hardware extensions such as Intel VT-x and AMD-V to deliver efficient virtualization.
 
 **Key Features of KVM:**
+
 - Full virtualization for Linux and Windows guests.
 - Scalability and performance for enterprise workloads.
 - Integration with tools like Virt-Manager for GUI-based management.
@@ -46,9 +47,11 @@ Before installing KVM on AlmaLinux, ensure the following prerequisites are met:
 
 2. **Verify Virtualization Support:**
    Use the `lscpu` command to check if your CPU supports virtualization:
+
    ```bash
    lscpu | grep Virtualization
    ```
+
    Output should indicate `VT-x` (Intel) or `AMD-V` (AMD).
 
    If not, enable virtualization in the BIOS/UEFI settings.
@@ -64,18 +67,21 @@ KVM installation involves setting up several components, including the hyperviso
 
 1. **Update the System:**
    Begin by updating the system:
+
    ```bash
    sudo dnf update -y
    ```
 
 2. **Install KVM and Dependencies:**
    Run the following command to install KVM, libvirt, and Virt-Manager:
+
    ```bash
    sudo dnf install -y qemu-kvm libvirt libvirt-devel virt-install virt-manager
    ```
 
 3. **Enable and Start Libvirt Service:**
    Enable the `libvirtd` service to start on boot:
+
    ```bash
    sudo systemctl enable libvirtd
    sudo systemctl start libvirtd
@@ -83,6 +89,7 @@ KVM installation involves setting up several components, including the hyperviso
 
 4. **Verify Installation:**
    Check if KVM modules are loaded:
+
    ```bash
    lsmod | grep kvm
    ```
@@ -96,17 +103,20 @@ KVM installation involves setting up several components, including the hyperviso
 To allow VMs to connect to external networks, configure a network bridge:
 
 1. **Install Bridge Utils:**
+
    ```bash
    sudo dnf install bridge-utils -y
    ```
 
 2. **Create a Bridge Configuration:**
    Edit the network configuration file (replace `eth0` with your network interface):
+
    ```bash
    sudo nano /etc/sysconfig/network-scripts/ifcfg-br0
    ```
 
    Add the following content:
+
    ```plaintext
    DEVICE=br0
    TYPE=Bridge
@@ -116,6 +126,7 @@ To allow VMs to connect to external networks, configure a network bridge:
 
 3. **Edit the Physical Interface:**
    Update the interface configuration (e.g., `/etc/sysconfig/network-scripts/ifcfg-eth0`) to link it to the bridge:
+
    ```plaintext
    DEVICE=eth0
    TYPE=Ethernet
@@ -125,6 +136,7 @@ To allow VMs to connect to external networks, configure a network bridge:
    ```
 
 4. **Restart Networking:**
+
    ```bash
    sudo systemctl restart network
    ```
@@ -137,13 +149,16 @@ With KVM installed, you can now create VMs using the `virt-install` command or V
 
 1. **Using Virt-Manager (GUI):**
    - Launch Virt-Manager:
+
      ```bash
      virt-manager
      ```
+
    - Connect to the local hypervisor and follow the wizard to create a new VM.
 
 2. **Using virt-install (Command Line):**
    Create a VM with the following command:
+
    ```bash
    sudo virt-install \
      --name testvm \
@@ -163,27 +178,33 @@ With KVM installed, you can now create VMs using the `virt-install` command or V
 
 1. **Listing VMs:**
    To see a list of running VMs:
+
    ```bash
    sudo virsh list
    ```
 
 2. **Starting and Stopping VMs:**
    Start a VM:
+
    ```bash
    sudo virsh start testvm
    ```
+
    Stop a VM:
+
    ```bash
    sudo virsh shutdown testvm
    ```
 
 3. **Editing VM Configuration:**
    Modify a VM’s settings:
+
    ```bash
    sudo virsh edit testvm
    ```
 
 4. **Deleting a VM:**
+
    ```bash
    sudo virsh undefine testvm
    sudo rm -f /var/lib/libvirt/images/testvm.qcow2
@@ -195,17 +216,20 @@ With KVM installed, you can now create VMs using the `virt-install` command or V
 
 1. **Enable Nested Virtualization:**
    Check if nested virtualization is enabled:
+
    ```bash
    cat /sys/module/kvm_intel/parameters/nested
    ```
 
    If disabled, enable it by editing `/etc/modprobe.d/kvm.conf`:
+
    ```plaintext
    options kvm_intel nested=1
    ```
 
 2. **Optimize Disk I/O:**
    Use VirtIO drivers for improved performance when creating VMs:
+
    ```bash
    --disk path=/var/lib/libvirt/images/testvm.qcow2,bus=virtio
    ```
@@ -223,12 +247,14 @@ With KVM installed, you can now create VMs using the `virt-install` command or V
 
 2. **Issue: "Permission Denied" When Managing VMs**
    - Ensure your user is part of the `libvirt` group:
+
      ```bash
      sudo usermod -aG libvirt $(whoami)
      ```
 
 3. **Issue: Networking Problems**
    - Check firewall settings to ensure proper traffic flow:
+
      ```bash
      sudo firewall-cmd --add-service=libvirt --permanent
      sudo firewall-cmd --reload

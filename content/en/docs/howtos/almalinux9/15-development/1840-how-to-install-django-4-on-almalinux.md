@@ -5,6 +5,7 @@ description: In this guide, we will walk you through the steps to install Django
 date: 2025-01-08T11:16:16.195Z
 weight: 1840
 url: install-django-4-almalinux
+translationKey: install-django-4-almalinux
 draft: false
 tags:
   - AlmaLinux

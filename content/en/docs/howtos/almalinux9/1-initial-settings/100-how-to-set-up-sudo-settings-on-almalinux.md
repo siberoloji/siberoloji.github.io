@@ -11,7 +11,7 @@ categories:
 linkTitle: Sudo Settings
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 100
-
+translationKey: how-to-set-up-sudo-settings-on-almalinux
 keywords:
   - AlmaLinux
   - Sudo Settings

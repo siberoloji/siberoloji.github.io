@@ -11,7 +11,7 @@ categories:
 linkTitle: null
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 360
-
+translationKey: how-to-configure-nfs-server-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

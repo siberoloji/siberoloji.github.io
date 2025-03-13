@@ -5,6 +5,7 @@ description: This guide will walk you through the step-by-step process of config
 date: 2025-01-08T11:41:47.691Z
 weight: 1890
 url: configure-network-teaming-almalinux
+translationKey: configure-network-teaming-almalinux
 draft: false
 tags:
    - AlmaLinux
@@ -62,6 +63,7 @@ This ensures you have the latest bug fixes and features.
 Network teaming on AlmaLinux uses the `NetworkManager` utility, which is installed by default. However, you should verify its presence and install the necessary tools for managing network configurations.
 
 #### Verify NetworkManager
+
 Ensure that `NetworkManager` is installed and running:
 
 ```bash
@@ -75,6 +77,7 @@ sudo dnf install -y NetworkManager
 ```
 
 #### Install nmcli (Optional)
+
 The `nmcli` command-line tool is used for managing network configurations. It’s included with `NetworkManager`, but verify its availability:
 
 ```bash
@@ -108,6 +111,7 @@ Identify the NICs (e.g., `enp0s3` and `enp0s8`) that you want to include in the 
 Create a new network team interface using the `nmcli` command.
 
 #### Create the Team Interface
+
 Run the following command to create a new team interface:
 
 ```bash
@@ -124,6 +128,7 @@ sudo nmcli connection add type team con-name team0 ifname team0 config '{"runner
 Add the physical interfaces to the team interface.
 
 #### Add an Interface
+
 Add each interface (e.g., `enp0s3` and `enp0s8`) to the team:
 
 ```bash
@@ -141,6 +146,7 @@ sudo nmcli connection add type team-slave con-name team0-slave2 ifname enp0s8 ma
 Assign an IP address to the team interface.
 
 #### Static IP Address
+
 To assign a static IP, use the following command:
 
 ```bash
@@ -150,6 +156,7 @@ sudo nmcli connection modify team0 ipv4.addresses 192.168.1.100/24 ipv4.method m
 Replace `192.168.1.100/24` with the appropriate IP address and subnet mask for your network.
 
 #### Dynamic IP Address (DHCP)
+
 To configure the team interface to use DHCP:
 
 ```bash
@@ -186,6 +193,7 @@ nmcli connection show team0
 To ensure the team is working correctly, use the following commands:
 
 #### Check Team Status
+
 View the team configuration and status:
 
 ```bash
@@ -195,6 +203,7 @@ sudo teamdctl team0 state
 The output provides detailed information about the team, including active interfaces and the runner mode.
 
 #### Check Connectivity
+
 Ping an external host to verify connectivity:
 
 ```bash
@@ -202,6 +211,7 @@ ping -c 4 8.8.8.8
 ```
 
 #### Simulate Failover
+
 Test the failover mechanism by disconnecting one of the physical interfaces and observing if traffic continues through the remaining interface.
 
 ---

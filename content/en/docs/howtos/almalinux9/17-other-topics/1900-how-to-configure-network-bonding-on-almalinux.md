@@ -5,6 +5,7 @@ description: This guide explains how to configure network bonding on AlmaLinux, 
 date: 2025-01-08T11:42:54.222Z
 weight: 1900
 url: configure-network-bonding-almalinux
+translationKey: configure-network-bonding-almalinux
 draft: false
 tags:
    - AlmaLinux
@@ -92,6 +93,7 @@ sudo dnf install -y NetworkManager
 Create a bond interface using `nmcli`, the command-line tool for managing networks.
 
 #### Add the Bond Interface
+
 Run the following command to create a bond interface named `bond0`:
 
 ```bash
@@ -122,6 +124,7 @@ sudo nmcli connection add type bond-slave con-name bond0-slave2 ifname enp0s8 ma
 Assign an IP address to the bond interface. You can configure either a static IP address or use DHCP.
 
 #### Static IP Address
+
 To assign a static IP, use the following command:
 
 ```bash
@@ -133,6 +136,7 @@ sudo nmcli connection modify bond0 ipv4.dns 8.8.8.8
 Replace `192.168.1.100/24` with your desired IP address and subnet mask, `192.168.1.1` with your gateway, and `8.8.8.8` with your preferred DNS server.
 
 #### Dynamic IP Address (DHCP)
+
 To use DHCP:
 
 ```bash
@@ -162,6 +166,7 @@ nmcli connection show bond0
 ### **Step 8: Verify Network Bonding**
 
 #### Check Bond Status
+
 Use the following command to verify the bond status and its slave interfaces:
 
 ```bash
@@ -175,6 +180,7 @@ The output provides detailed information, including:
 - Link status of each interface.
 
 #### Check Connectivity
+
 Test network connectivity by pinging an external host:
 
 ```bash
@@ -182,6 +188,7 @@ ping -c 4 8.8.8.8
 ```
 
 #### Test Failover
+
 Simulate a failover by disconnecting one of the physical interfaces and observing if traffic continues through the remaining interface.
 
 ---

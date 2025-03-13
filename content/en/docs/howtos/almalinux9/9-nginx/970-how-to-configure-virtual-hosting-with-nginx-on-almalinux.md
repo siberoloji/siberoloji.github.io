@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: how-to-configure-virtual-hosting-with-nginx-on-almalinux
 keywords:
   - AlmaLinux
 

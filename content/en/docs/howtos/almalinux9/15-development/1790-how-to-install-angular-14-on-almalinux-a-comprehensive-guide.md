@@ -5,6 +5,7 @@ description: If you are using AlmaLinux, a robust and enterprise-grade Linux dis
 date: 2025-01-08T11:09:29.549Z
 weight: 1790
 url: install-angular-14-almalinux-comprehensive-guide
+translationKey: install-angular-14-almalinux-comprehensive-guide
 draft: false
 tags:
    - AlmaLinux
@@ -81,6 +82,7 @@ sudo reboot
 Angular requires **Node.js** to run its development server and manage dependencies. For Angular 14, you’ll need Node.js version **16.x** or higher.
 
 #### Step 4.1: Add the NodeSource Repository
+
 Install Node.js 16 (or later) from the official NodeSource repository:
 
 ```bash
@@ -88,6 +90,7 @@ curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
 ```
 
 #### Step 4.2: Install Node.js
+
 Install Node.js along with npm (Node Package Manager):
 
 ```bash
@@ -95,12 +98,15 @@ sudo dnf install -y nodejs
 ```
 
 #### Step 4.3: Verify Installation
+
 After installation, verify the versions of Node.js and npm:
 
 ```bash
 node -v
 ```
+
 Expected output:
+
 ```
 v16.x.x
 ```
@@ -116,6 +122,7 @@ npm -v
 The **Angular CLI** (Command Line Interface) is a powerful tool that simplifies Angular project creation, management, and builds.
 
 #### Step 5.1: Install Angular CLI
+
 Install Angular CLI globally using npm:
 
 ```bash
@@ -123,12 +130,15 @@ sudo npm install -g @angular/cli
 ```
 
 #### Step 5.2: Verify Angular CLI Installation
+
 Check the installed version of Angular CLI to confirm it’s set up correctly:
 
 ```bash
 ng version
 ```
+
 Expected output:
+
 ```
 Angular CLI: 14.x.x
 ```
@@ -140,6 +150,7 @@ Angular CLI: 14.x.x
 Once the Angular CLI is installed, you can create a new Angular project.
 
 #### Step 6.1: Generate a New Angular Project
+
 Run the following command to create a new project. Replace `my-angular-app` with your desired project name:
 
 ```bash
@@ -147,10 +158,12 @@ ng new my-angular-app
 ```
 
 The CLI will prompt you to:
+
 1. Choose whether to add Angular routing (type `Yes` or `No` based on your requirements).
 2. Select a stylesheet format (e.g., CSS, SCSS, or LESS).
 
 #### Step 6.2: Navigate to the Project Directory
+
 After the project is created, move into the project directory:
 
 ```bash
@@ -164,6 +177,7 @@ cd my-angular-app
 With the project set up, you can now serve it locally and test it.
 
 #### Step 7.1: Start the Development Server
+
 Run the following command to start the Angular development server:
 
 ```bash
@@ -177,6 +191,7 @@ ng serve --host 0.0.0.0 --port 4200
 ```
 
 #### Step 7.2: Access the Application
+
 Open a web browser and navigate to:
 
 ```
@@ -192,6 +207,7 @@ You should see the default Angular welcome page. This confirms that your Angular
 Before deploying your Angular application, it’s essential to build it for production.
 
 #### Step 8.1: Build the Application
+
 Use the following command to create a production-ready build of your Angular application:
 
 ```bash
@@ -201,10 +217,13 @@ ng build --configuration production
 This command will generate optimized files in the `dist/` directory.
 
 #### Step 8.2: Deploy the Application
+
 You can deploy the contents of the `dist/` folder to a web server like Apache, Nginx, or a cloud platform.
 
 ##### Example: Deploying with Apache
+
 1. Install Apache on AlmaLinux:
+
    ```bash
    sudo dnf install httpd -y
    sudo systemctl start httpd
@@ -212,16 +231,19 @@ You can deploy the contents of the `dist/` folder to a web server like Apache, N
    ```
 
 2. Copy the built files to the Apache root directory:
+
    ```bash
    sudo cp -r dist/my-angular-app/* /var/www/html/
    ```
 
 3. Adjust permissions:
+
    ```bash
    sudo chown -R apache:apache /var/www/html/
    ```
 
 4. Restart Apache to serve the application:
+
    ```bash
    sudo systemctl restart httpd
    ```

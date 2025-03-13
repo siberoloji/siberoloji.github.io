@@ -5,6 +5,7 @@ description: Step-by-step guide to installing .NET Core 3.1 on AlmaLinux. Learn 
 date: 2025-01-08T10:58:09.608Z
 weight: 1710
 url: install-net-core-3-1-almalinux
+translationKey: install-net-core-3-1-almalinux
 draft: false
 tags:
    - AlmaLinux

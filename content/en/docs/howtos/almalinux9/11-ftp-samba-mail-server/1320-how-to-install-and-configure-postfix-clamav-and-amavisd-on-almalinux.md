@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-configure-postfix-clamav-amavisd-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
@@ -42,6 +42,7 @@ Before starting, ensure the following:
 ### **Step 1: Update Your System**  
 
 Start by updating the AlmaLinux packages to their latest versions:  
+
 ```bash
 sudo dnf update -y
 ```  
@@ -53,17 +54,20 @@ sudo dnf update -y
 Postfix is the Mail Transfer Agent (MTA) responsible for sending and receiving emails.  
 
 1. **Install Postfix**:  
+
    ```bash
    sudo dnf install postfix -y
    ```  
 
 2. **Configure Postfix**:  
    Open the Postfix configuration file:  
+
    ```bash
    sudo nano /etc/postfix/main.cf
    ```  
 
    Update the following lines to reflect your mail server’s domain:  
+
    ```plaintext
    myhostname = mail.example.com
    mydomain = example.com
@@ -82,6 +86,7 @@ Postfix is the Mail Transfer Agent (MTA) responsible for sending and receiving e
    ```  
 
 3. **Start and Enable Postfix**:  
+
    ```bash
    sudo systemctl start postfix
    sudo systemctl enable postfix
@@ -89,9 +94,11 @@ Postfix is the Mail Transfer Agent (MTA) responsible for sending and receiving e
 
 4. **Verify Postfix Installation**:  
    Send a test email:  
+
    ```bash
    echo "Postfix test email" | mail -s "Test Email" user@example.com
    ```  
+
    Replace `user@example.com` with your email address.  
 
 ---
@@ -101,22 +108,27 @@ Postfix is the Mail Transfer Agent (MTA) responsible for sending and receiving e
 ClamAV is a powerful open-source antivirus engine used to scan incoming and outgoing emails for viruses.  
 
 1. **Install ClamAV**:  
+
    ```bash
    sudo dnf install clamav clamav-update -y
    ```  
 
 2. **Update Virus Definitions**:  
    Run the following command to update ClamAV’s virus database:  
+
    ```bash
    sudo freshclam
    ```  
 
 3. **Configure ClamAV**:  
    Edit the ClamAV configuration file:  
+
    ```bash
    sudo nano /etc/clamd.d/scan.conf
    ```  
+
    Uncomment the following lines:  
+
    ```plaintext
    LocalSocket /var/run/clamd.scan/clamd.sock
    TCPSocket 3310
@@ -124,6 +136,7 @@ ClamAV is a powerful open-source antivirus engine used to scan incoming and outg
    ```  
 
 4. **Start and Enable ClamAV**:  
+
    ```bash
    sudo systemctl start clamd@scan
    sudo systemctl enable clamd@scan
@@ -131,6 +144,7 @@ ClamAV is a powerful open-source antivirus engine used to scan incoming and outg
 
 5. **Test ClamAV**:  
    Scan a file to verify the installation:  
+
    ```bash
    clamscan /path/to/testfile
    ```  
@@ -142,16 +156,20 @@ ClamAV is a powerful open-source antivirus engine used to scan incoming and outg
 Amavisd is an interface between Postfix and ClamAV, handling email filtering and virus scanning.  
 
 1. **Install Amavisd and Dependencies**:  
+
    ```bash
    sudo dnf install amavisd-new -y
    ```  
 
 2. **Configure Amavisd**:  
    Edit the Amavisd configuration file:  
+
    ```bash
    sudo nano /etc/amavisd/amavisd.conf
    ```  
+
    Update the following lines to enable ClamAV integration:  
+
    ```perl
    @bypass_virus_checks_maps = (0);  # Enable virus scanning
    $virus_admin = 'postmaster@example.com';  # Replace with your email
@@ -161,11 +179,13 @@ Amavisd is an interface between Postfix and ClamAV, handling email filtering and
 
 3. **Enable Amavisd in Postfix**:  
    Open the Postfix master configuration file:  
+
    ```bash
    sudo nano /etc/postfix/master.cf
    ```  
 
    Add the following lines:  
+
    ```plaintext
    smtp-amavis unix - - n - 2 smtp
        -o smtp_data_done_timeout=1200
@@ -187,6 +207,7 @@ Amavisd is an interface between Postfix and ClamAV, handling email filtering and
 
 4. **Restart Services**:  
    Restart the Postfix and Amavisd services to apply changes:  
+
    ```bash
    sudo systemctl restart postfix
    sudo systemctl restart amavisd
@@ -198,21 +219,25 @@ Amavisd is an interface between Postfix and ClamAV, handling email filtering and
 
 1. **Send a Test Email**:  
    Use the `mail` command to send a test email:  
+
    ```bash
    echo "Test email through Postfix and Amavisd" | mail -s "Test Email" user@example.com
    ```  
 
 2. **Verify Logs**:  
    Check the logs to confirm emails are being scanned by ClamAV:  
+
    ```bash
    sudo tail -f /var/log/maillog
    ```  
 
 3. **Test Virus Detection**:  
    Download the EICAR test file (a harmless file used to test antivirus):  
+
    ```bash
    curl -O https://secure.eicar.org/eicar.com
    ```  
+
    Send the file as an attachment and verify that it is detected and quarantined.  
 
 ---
@@ -220,6 +245,7 @@ Amavisd is an interface between Postfix and ClamAV, handling email filtering and
 ### **Step 6: Configure Firewall Rules**  
 
 Ensure that your firewall allows SMTP and Amavisd traffic:  
+
 ```bash
 sudo firewall-cmd --add-service=smtp --permanent
 sudo firewall-cmd --add-port=10024/tcp --permanent
@@ -233,6 +259,7 @@ sudo firewall-cmd --reload
 
 1. **Update ClamAV Virus Definitions**:  
    Automate updates by scheduling a `cron` job:  
+
    ```bash
    echo "0 3 * * * /usr/bin/freshclam" | sudo tee -a /etc/crontab
    ```  

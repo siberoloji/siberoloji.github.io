@@ -11,7 +11,7 @@ categories:
 linkTitle: Configure iSCSI Target
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 390
-
+translationKey: how-to-configure-iscsi-target-using-targetcli-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
@@ -19,7 +19,7 @@ url: configure-iscsi-target-targetcli-almalinux
 ---
 ### How to Configure iSCSI Target Using Targetcli on AlmaLinux
 
-The iSCSI (Internet Small Computer Systems Interface) protocol allows users to access storage devices over a network as if they were local. On AlmaLinux, configuring an iSCSI target is straightforward with the **targetcli** tool, a modern and user-friendly interface for setting up storage backends. 
+The iSCSI (Internet Small Computer Systems Interface) protocol allows users to access storage devices over a network as if they were local. On AlmaLinux, configuring an iSCSI target is straightforward with the **targetcli** tool, a modern and user-friendly interface for setting up storage backends.
 
 This guide provides a step-by-step tutorial on configuring an iSCSI target using Targetcli on AlmaLinux. We’ll cover prerequisites, installation, configuration, and testing to ensure your setup works seamlessly.
 
@@ -34,6 +34,7 @@ Before diving into the setup, let’s understand the key components:
 - **Targetcli**: A command-line utility that simplifies configuring the Linux kernel’s built-in target subsystem.
 
 Benefits of iSCSI include:
+
 - Centralized storage management.
 - Easy scalability and flexibility.
 - Compatibility with various operating systems.
@@ -81,6 +82,7 @@ targetcli --version
 
 1. **Start Targetcli:**
    Launch the Targetcli shell:
+
    ```bash
    sudo targetcli
    ```
@@ -89,17 +91,20 @@ targetcli --version
    A backstore is the storage resource that will be exported to clients. You can create one using a block device or file.
 
    - For a block device (e.g., `/dev/sdb`):
+
      ```bash
      /backstores/block create name=block1 dev=/dev/sdb
      ```
 
    - For a file-based backstore:
+
      ```bash
      /backstores/fileio create name=file1 file_or_dev=/srv/iscsi/file1.img size=10G
      ```
 
 3. **Create an iSCSI Target:**
    Create an iSCSI target with a unique name:
+
    ```bash
    /iscsi create iqn.2024-12.com.example:target1
    ```
@@ -108,12 +113,14 @@ targetcli --version
 
 4. **Add a LUN (Logical Unit Number):**
    Link the backstore to the target as a LUN:
+
    ```bash
    /iscsi/iqn.2024-12.com.example:target1/tpg1/luns create /backstores/block/block1
    ```
 
 5. **Configure Network Access:**
    Define which clients can access the target by setting up an ACL (Access Control List):
+
    ```bash
    /iscsi/iqn.2024-12.com.example:target1/tpg1/acls create iqn.2024-12.com.example:initiator1
    ```
@@ -122,6 +129,7 @@ targetcli --version
 
 6. **Enable Listening on the Network Interface:**
    Ensure the portal listens on the desired IP address and port:
+
    ```bash
    /iscsi/iqn.2024-12.com.example:target1/tpg1/portals create 192.168.1.100 3260
    ```
@@ -130,6 +138,7 @@ targetcli --version
 
 7. **Save the Configuration:**
    Save the current configuration:
+
    ```bash
    saveconfig
    ```
@@ -186,12 +195,15 @@ lsblk
 ### **Step 6: Testing and Verification**
 
 To ensure the iSCSI target is functional:
+
 1. On the client, format the device:
+
    ```bash
    sudo mkfs.ext4 /dev/sdX
    ```
 
 2. Mount the device:
+
    ```bash
    sudo mount /dev/sdX /mnt
    ```
@@ -204,12 +216,14 @@ To ensure the iSCSI target is functional:
 
 1. **Issue: Targetcli Fails to Start**
    - Check for SELinux restrictions and disable temporarily for testing:
+
      ```bash
      sudo setenforce 0
      ```
 
 2. **Issue: Client Cannot Discover Target**
    - Ensure the target server’s firewall allows iSCSI traffic on port 3260:
+
      ```bash
      sudo firewall-cmd --add-port=3260/tcp --permanent
      sudo firewall-cmd --reload

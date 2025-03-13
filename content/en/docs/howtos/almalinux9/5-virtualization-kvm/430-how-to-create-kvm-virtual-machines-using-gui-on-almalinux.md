@@ -11,7 +11,7 @@ categories:
 linkTitle: Create KVM Virtual Machines Using GUI
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 430
-
+translationKey: how-to-create-kvm-virtual-machines-using-gui-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
@@ -47,9 +47,11 @@ Before you start, ensure the following requirements are met:
 
 2. **Verify Virtualization Support**:
    Check if your CPU supports virtualization:
+
    ```bash
    lscpu | grep Virtualization
    ```
+
    Ensure virtualization is enabled in the BIOS/UEFI settings if the above command does not show `VT-x` (Intel) or `AMD-V` (AMD).
 
 3. **Administrative Access**:
@@ -63,18 +65,21 @@ To create and manage KVM virtual machines using a GUI, you need to install KVM, 
 
 1. **Update Your System**:
    Run the following command to ensure your system is up to date:
+
    ```bash
    sudo dnf update -y
    ```
 
 2. **Install KVM and Virt-Manager**:
    Install the required packages:
+
    ```bash
    sudo dnf install -y qemu-kvm libvirt libvirt-devel virt-install virt-manager
    ```
 
 3. **Start and Enable Libvirt**:
    Enable the libvirt service to start at boot and launch it immediately:
+
    ```bash
    sudo systemctl enable libvirtd
    sudo systemctl start libvirtd
@@ -82,9 +87,11 @@ To create and manage KVM virtual machines using a GUI, you need to install KVM, 
 
 4. **Verify Installation**:
    Check if the KVM modules are loaded:
+
    ```bash
    lsmod | grep kvm
    ```
+
    You should see `kvm_intel` (for Intel CPUs) or `kvm_amd` (for AMD CPUs).
 
 ---
@@ -93,9 +100,11 @@ To create and manage KVM virtual machines using a GUI, you need to install KVM, 
 
 1. **Start Virt-Manager**:
    Open Virt-Manager by running the following command:
+
    ```bash
    virt-manager
    ```
+
    Alternatively, search for “Virtual Machine Manager” in your desktop environment’s application menu.
 
 2. **Connect to the Hypervisor**:
@@ -185,18 +194,21 @@ After creating the virtual machine, you can manage it using Virt-Manager:
 
 1. **Issue: "KVM Not Found"**:
    - Ensure the KVM modules are loaded:
+
      ```bash
      sudo modprobe kvm
      ```
 
 2. **Issue: Virtual Machine Won’t Start**:
    - Check for errors in the system log:
+
      ```bash
      sudo journalctl -xe
      ```
 
 3. **Issue: Network Not Working**:
    - Verify that the `virbr0` interface is active:
+
      ```bash
      sudo virsh net-list
      ```

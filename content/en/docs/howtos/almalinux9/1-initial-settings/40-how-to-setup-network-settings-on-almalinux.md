@@ -12,7 +12,7 @@ linkTitle: Network Settings
 
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 40
-
+translationKey: how-to-setup-network-settings-on-almalinux
 keywords:
   - AlmaLinux
   - network settings on AlmaLinux

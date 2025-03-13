@@ -11,7 +11,7 @@ categories:
 linkTitle: Nested KVM Settings
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 480
-
+translationKey: how-to-enable-nested-kvm-settings-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

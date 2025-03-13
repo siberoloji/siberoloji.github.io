@@ -12,7 +12,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: install-ftp-client-lftp-almalinux
 keywords:
   - AlmaLinux
   - lftp
@@ -110,26 +110,31 @@ Before proceeding to advanced configurations, test the LFTP installation by conn
    Once connected, try the following commands:  
 
    - **List Files**:  
+
      ```bash
      ls
      ```
 
    - **Change Directory**:  
+
      ```bash
      cd <directory_name>
      ```
 
    - **Download a File**:  
+
      ```bash
      get <file_name>
      ```
 
    - **Upload a File**:  
+
      ```bash
      put <file_name>
      ```
 
    - **Exit LFTP**:  
+
      ```bash
      exit
      ```
@@ -152,6 +157,7 @@ LFTP can be customized through its configuration file located at `~/.lftp/rc`.
 
    - **Set Default Username and Password**:  
      To automate login for a specific server, add the following:  
+
      ```plaintext
      set ftp:default-user "your_username"
      set ftp:default-password "your_password"
@@ -159,12 +165,14 @@ LFTP can be customized through its configuration file located at `~/.lftp/rc`.
 
    - **Enable Passive Mode**:  
      Passive mode is essential for NAT and firewall environments:  
+
      ```plaintext
      set ftp:passive-mode on
      ```
 
    - **Set Download Directory**:  
      Define a default directory for downloads:  
+
      ```plaintext
      set xfer:clobber on
      set xfer:destination-directory /path/to/your/downloads
@@ -172,6 +180,7 @@ LFTP can be customized through its configuration file located at `~/.lftp/rc`.
 
    - **Configure Transfer Speed**:  
      To limit bandwidth usage, set a maximum transfer rate:  
+
      ```plaintext
      set net:limit-rate 100K
      ```

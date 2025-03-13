@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-add-podman-container-images-on-almalinux
 featured_image: /images/almalinux.webp
 url: add-podman-container-images-almalinux
 ---

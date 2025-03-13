@@ -14,7 +14,7 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 
 keywords:
   - AlmaLinux
-
+translationKey: how-to-understand-podman-networking-basics-on-almalinux
 featured_image: /images/almalinux.webp
 url: understand-podman-networking-basics-almalinux
 ---

@@ -14,7 +14,7 @@ categories:
   - Linux
   - Linux How-to
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
+translationKey: create-mariadb-galera-cluster-almalinux
 keywords:
   - AlmaLinux
   - Galera Cluster

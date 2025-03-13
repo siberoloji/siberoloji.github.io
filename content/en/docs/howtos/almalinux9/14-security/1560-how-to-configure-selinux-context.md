@@ -5,6 +5,7 @@ description: In this comprehensive guide, we’ll delve into SELinux contexts, h
 date: 2025-01-07T09:43:07.551Z
 weight: 1560
 url: configure-selinux-context-almalinux
+translationKey: configure-selinux-context-almalinux
 draft: false
 tags:
    - AlmaLinux

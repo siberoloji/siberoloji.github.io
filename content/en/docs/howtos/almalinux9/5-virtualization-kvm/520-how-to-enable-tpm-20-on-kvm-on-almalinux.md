@@ -11,7 +11,7 @@ categories:
 linkTitle: Enable TPM 2.0
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 520
-
+translationKey: how-to-enable-tpm-20-on-kvm-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

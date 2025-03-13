@@ -5,6 +5,7 @@ description: This article explores how to refer to and utilize the HAProxy stati
 date: 2025-01-06T20:49:47.280Z
 weight: 1420
 url: haproxy-refer-statistics-cui-almalinux
+translationKey: haproxy-refer-statistics-cui-almalinux
 draft: false
 tags:
   - AlmaLinux

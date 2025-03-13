@@ -11,7 +11,7 @@ categories:
 linkTitle: Perform KVM Storage Migration
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 500
-
+translationKey: how-to-perform-kvm-storage-migration-on-almalinux
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp

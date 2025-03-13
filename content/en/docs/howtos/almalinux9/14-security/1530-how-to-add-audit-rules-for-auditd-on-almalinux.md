@@ -5,6 +5,7 @@ description: In this article, we’ll explore how to add audit rules for auditd 
 date: 2025-01-07T09:35:58.182Z
 weight: 1530
 url: add-audit-rules-auditd-almalinux
+translationKey: add-audit-rules-auditd-almalinux
 draft: false
 tags:
    - AlmaLinux

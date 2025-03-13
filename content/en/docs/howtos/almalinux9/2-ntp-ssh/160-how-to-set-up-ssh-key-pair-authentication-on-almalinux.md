@@ -11,7 +11,7 @@ categories:
 linkTitle: SSH Key Pair Authentication
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 160
-
+translationKey: how-to-set-up-ssh-key-pair-authentication-on-almalinux
 keywords:
   - AlmaLinux
 

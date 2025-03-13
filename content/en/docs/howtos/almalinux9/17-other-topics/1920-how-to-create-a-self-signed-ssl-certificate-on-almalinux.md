@@ -5,6 +5,7 @@ description: In this guide, we’ll walk you through creating a self-signed SSL 
 date: 2025-01-08
 weight: 1920
 url: create-signed-ssl-certificate-almalinux
+translationKey: create-signed-ssl-certificate-almalinux
 draft: false
 tags:
    - AlmaLinux
