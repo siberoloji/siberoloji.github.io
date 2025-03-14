@@ -1,14 +1,14 @@
 ---
-title: How to Use Web Admin Console on AlmaLinux
-description: In this article, we’ll walk you through the process of setting up and using the Web Admin Console on AlmaLinux.
+title: AlmaLinux Cockpit ile Web Yönetim Konsolu Kullanma
+description: Bu yazımızda AlmaLinux'taki Web Yönetici Konsolu'nun kullanımını kolaylaştırıyoruz.
 date: 2024-12-04
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Web Admin Console
+linkTitle: Web Yönetim Konsolu Kullanma
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 80
 translationKey: how-to-use-web-admin-console-on-almalinux
@@ -17,332 +17,169 @@ keywords:
   - Web Admin Console
 
 featured_image: /images/almalinux.webp
-url: web-admin-console-almalinux
+url: /tr/web-admin-console-almalinux
 ---
-AlmaLinux, a community-driven Linux distribution, has become a popular choice for users looking for a stable and secure operating system. Its compatibility with Red Hat Enterprise Linux (RHEL) makes it ideal for enterprise environments. One of the tools that simplifies managing AlmaLinux servers is the **Web Admin Console**. This browser-based interface allows administrators to manage system settings, monitor performance, and configure services without needing to rely solely on the command line.
+Topluluk odaklı bir Linux dağıtımı olan AlmaLinux, istikrarlı ve güvenli bir işletim sistemi arayan kullanıcılar için popüler bir seçim haline geldi. Red Hat Enterprise Linux (RHEL) ile uyumluluğu onu kurumsal ortamlar için ideal hale getiriyor. AlmaLinux sunucularını yönetmeyi kolaylaştıran araçlardan biri de **Web Admin Console**'dur. Bu tarayıcı tabanlı arayüz, yöneticilerin yalnızca komut satırına güvenmek zorunda kalmadan sistem ayarlarını yönetmelerine, performansı izlemelerine ve hizmetleri yapılandırmalarına olanak tanır.
 
-In this article, we’ll walk you through the process of setting up and using the Web Admin Console on AlmaLinux, helping you streamline server administration tasks with ease.
-
----
-
-### What Is the Web Admin Console?
-
-The Web Admin Console, commonly powered by **Cockpit**, is a lightweight and user-friendly web-based interface for server management. Cockpit provides an intuitive dashboard where you can perform tasks such as:
-
-- Viewing system logs and resource usage.
-- Managing user accounts and permissions.
-- Configuring network settings.
-- Installing and updating software packages.
-- Monitoring and starting/stopping services.
-
-It is especially useful for system administrators who prefer a graphical interface or need quick, remote access to manage servers.
+Bu makalede, AlmaLinux'ta Web Admin Console'u kurma ve kullanma sürecinde size yol göstereceğiz ve sunucu yönetim görevlerini kolaylıkla kolaylaştırmanıza yardımcı olacağız.
 
 ---
 
-### Why Use the Web Admin Console on AlmaLinux?
+### Web Yönetici Konsolu Nedir?
 
-While AlmaLinux is robust and reliable, its command-line-centric nature can be daunting for beginners. The Web Admin Console bridges this gap, offering:
+Genellikle **Cockpit** tarafından desteklenen Web Yönetici Konsolu, sunucu yönetimi için hafif ve kullanıcı dostu bir web tabanlı arayüzdür. Cockpit, aşağıdaki gibi görevleri gerçekleştirebileceğiniz sezgisel bir pano sağlar:
 
-1. **Ease of Use**: No steep learning curve for managing basic system operations.
-2. **Efficiency**: Centralized interface for real-time monitoring and quick system adjustments.
-3. **Remote Management**: Access your server from any device with a browser.
-4. **Security**: Supports HTTPS for secure communications.
+- Sistem günlüklerini ve kaynak kullanımını görüntüleme.
+- Kullanıcı hesaplarını ve izinlerini yönetme.
+- Ağ ayarlarını yapılandırma.
+- Yazılım paketlerini yükleme ve güncelleme.
+- Hizmetleri izleme ve başlatma/durdurma.
+
+Özellikle grafiksel bir arayüz tercih eden veya sunucuları yönetmek için hızlı, uzaktan erişime ihtiyaç duyan sistem yöneticileri için faydalıdır.
 
 ---
 
-### Step-by-Step Guide to Setting Up and Using the Web Admin Console on AlmaLinux
+### AlmaLinux'ta Web Yönetici Konsolu Neden Kullanılır?
 
-#### Step 1: Ensure Your AlmaLinux System is Updated
+AlmaLinux sağlam ve güvenilir olsa da, komut satırı merkezli yapısı yeni başlayanlar için göz korkutucu olabilir. Web Yönetici Konsolu bu boşluğu kapatarak şunları sunar:
 
-Before installing the Web Admin Console, ensure your system is up to date. Open a terminal and run the following commands:
+1. **Kullanım Kolaylığı**: Temel sistem işlemlerini yönetmek için dik bir öğrenme eğrisi yoktur. 2. **Verimlilik**: Gerçek zamanlı izleme ve hızlı sistem ayarlamaları için merkezi arayüz.
+3. **Uzaktan Yönetim**: Sunucunuza tarayıcısı olan herhangi bir cihazdan erişin.
+4. **Güvenlik**: Güvenli iletişimler için HTTPS'yi destekler.
+
+---
+
+### AlmaLinux'ta Web Yönetici Konsolunu Kurma ve Kullanma Adım Adım Kılavuzu
+
+#### 1. Adım: AlmaLinux Sisteminizin Güncel Olduğundan Emin Olun
+
+Web Yönetici Konsolunu yüklemeden önce sisteminizin güncel olduğundan emin olun. Bir terminal açın ve aşağıdaki komutları çalıştırın:
 
 ```bash
 sudo dnf update -y
 ```
 
-This will update all installed packages to their latest versions.
+Bu, yüklü tüm paketleri en son sürümlerine güncelleyecektir.
 
 ---
 
-#### Step 2: Install Cockpit on AlmaLinux
+#### 2. Adım: AlmaLinux'a Cockpit'i yükleyin
 
-The Web Admin Console on AlmaLinux is powered by Cockpit, which is included in AlmaLinux’s default repositories. To install it, use the following command:
+AlmaLinux'taki Web Admin Console, AlmaLinux'un varsayılan depolarında bulunan Cockpit tarafından desteklenmektedir. Yüklemek için şu komutu kullanın:
 
 ```bash
 sudo dnf install cockpit -y
 ```
 
-Once the installation is complete, you need to start and enable the Cockpit service:
+Yükleme tamamlandıktan sonra Cockpit hizmetini başlatmanız ve etkinleştirmeniz gerekir:
 
 ```bash
 sudo systemctl enable --now cockpit.socket
 ```
 
-The `--now` flag ensures that the service starts immediately after being enabled.
+`--now` bayrağı, hizmetin etkinleştirildikten hemen sonra başlatılmasını sağlar.
 
 ---
 
-#### Step 3: Configure Firewall Settings
+#### 3. Adım: Güvenlik Duvarı Ayarlarını Yapılandırın
 
-To access the Web Admin Console remotely, ensure that the appropriate firewall rules are in place. By default, Cockpit listens on port `9090`. You’ll need to allow traffic on this port:
+Web Admin Console'a uzaktan erişmek için uygun güvenlik duvarı kurallarının yerinde olduğundan emin olun. Varsayılan olarak Cockpit `9090` portunu dinler. Bu portta trafiğe izin vermeniz gerekir:
 
 ```bash
 sudo firewall-cmd --permanent --add-service=cockpit
 sudo firewall-cmd --reload
 ```
 
-This ensures that the Web Admin Console is accessible from other devices on your network.
+Bu, Web Admin Console'un ağınızdaki diğer cihazlardan erişilebilir olmasını sağlar.
 
 ---
 
-#### Step 4: Access the Web Admin Console
+#### 4. Adım: Web Admin Console'a Erişim
 
-With Cockpit installed and the firewall configured, you can now access the Web Admin Console. Open your web browser and navigate to:
+Cockpit yüklenmiş ve güvenlik duvarı yapılandırılmışsa artık Web Admin Console'a erişebilirsiniz. Web tarayıcınızı açın ve şuraya gidin:
 
 ```text
 https://<your-server-ip>:9090
 ```
 
-For example, if your server’s IP address is `192.168.1.100`, type:
+Örneğin, sunucunuzun IP adresi `192.168.1.100` ise şunu yazın:
 
 ```text
 https://192.168.1.100:9090
 ```
 
-When accessing the console for the first time, you might encounter a browser warning about an untrusted SSL certificate. This is normal since Cockpit uses a self-signed certificate. You can proceed by accepting the warning.
+Konsola ilk kez eriştiğinizde, güvenilmeyen bir SSL sertifikası hakkında bir tarayıcı uyarısıyla karşılaşabilirsiniz. Cockpit kendi kendine imzalanmış bir sertifika kullandığı için bu normaldir. Uyarıyı kabul ederek devam edebilirsiniz.
 
 ---
 
-#### Step 5: Log In to the Web Admin Console
+#### Adım 5: Web Yönetim Konsoluna Giriş Yapın
 
-You’ll be prompted to log in with your server’s credentials. Use the username and password of a user with administrative privileges. If your AlmaLinux server is integrated with Active Directory or other authentication mechanisms, you can use those credentials as well.
-
----
-
-### Navigating the Web Admin Console: Key Features
-
-Once logged in, you’ll see a dashboard displaying an overview of your ### How to Use Web Admin Console on AlmaLinux: A Step-by-Step Guide
-
-AlmaLinux, a community-driven Linux distribution, has become a popular choice for users looking for a stable and secure operating system. Its compatibility with Red Hat Enterprise Linux (RHEL) makes it ideal for enterprise environments. One of the tools that simplifies managing AlmaLinux servers is the **Web Admin Console**. This browser-based interface allows administrators to manage system settings, monitor performance, and configure services without needing to rely solely on the command line.
-
-In this article, we’ll walk you through the process of setting up and using the Web Admin Console on AlmaLinux, helping you streamline server administration tasks with ease.
+Sunucunuzun kimlik bilgileriyle giriş yapmanız istenecektir. Yönetici ayrıcalıklarına sahip bir kullanıcının kullanıcı adını ve parolasını kullanın. AlmaLinux sunucunuz Active Directory veya diğer kimlik doğrulama mekanizmalarıyla entegreyse, bu kimlik bilgilerini de kullanabilirsiniz.
 
 ---
 
-### What Is the Web Admin Console?
+### Web Yönetim Konsolunda Gezinme: Temel Özellikler
 
-The Web Admin Console, commonly powered by **Cockpit**, is a lightweight and user-friendly web-based interface for server management. Cockpit provides an intuitive dashboard where you can perform tasks such as:
+Giriş yaptıktan sonra, sisteminizin genel görünümünü gösteren bir pano göreceksiniz. Aşağıda Web Yönetim Konsolunun bazı temel özellikleri verilmiştir:
 
-- Viewing system logs and resource usage.
-- Managing user accounts and permissions.
-- Configuring network settings.
-- Installing and updating software packages.
-- Monitoring and starting/stopping services.
+#### 1. **Sistem Durumu**
 
-It is especially useful for system administrators who prefer a graphical interface or need quick, remote access to manage servers.
+- CPU, bellek ve disk kullanımını gerçek zamanlı olarak görüntüleyin.
+- Sistem çalışma süresini ve çalışan işlemleri izleyin.
 
----
+#### 2. **Hizmet Yönetimi**
 
-### Why Use the Web Admin Console on AlmaLinux?
+- Hizmetleri doğrudan arayüzden başlatın, durdurun, etkinleştirin veya devre dışı bırakın.
+- Sorun giderme için belirli hizmetlere ilişkin günlükleri görüntüleyin.
 
-While AlmaLinux is robust and reliable, its command-line-centric nature can be daunting for beginners. The Web Admin Console bridges this gap, offering:
+#### 3. **Ağ**
 
-1. **Ease of Use**: No steep learning curve for managing basic system operations.
-2. **Efficiency**: Centralized interface for real-time monitoring and quick system adjustments.
-3. **Remote Management**: Access your server from any device with a browser.
-4. **Security**: Supports HTTPS for secure communications.
+- IP adreslerini, rotaları ve DNS ayarlarını yapılandırın.
+- Ağ arayüzlerini yönetin ve trafiği izleyin.
 
----
+#### 4. **Kullanıcı Yönetimi**
 
-### Step-by-Step Guide to Setting Up and Using the Web Admin Console on AlmaLinux
+- Kullanıcı hesapları ekleyin veya kaldırın.
+- Kullanıcı rollerini değiştirin ve parolaları sıfırlayın.
 
-#### Step 1: Ensure Your AlmaLinux System is Updated
+#### 5. **Yazılım Yönetimi**
 
-Before installing the Web Admin Console, ensure your system is up to date. Open a terminal and run the following commands:
+- Birkaç tıklamayla paketleri yükleyin veya kaldırın.
+- Sistem yazılımını güncelleyin ve mevcut güncellemeleri kontrol edin.
 
-```bash
-sudo dnf update -y
-```
+#### 6. **Terminal Erişimi**
 
-This will update all installed packages to their latest versions.
+- Gelişmiş komut satırı işlemleri için yerleşik bir web terminaline erişin.
 
 ---
 
-#### Step 2: Install Cockpit on AlmaLinux
+### Web Yönetici Konsolunu Etkili Şekilde Kullanma İpuçları
 
-The Web Admin Console on AlmaLinux is powered by Cockpit, which is included in AlmaLinux’s default repositories. To install it, use the following command:
+1. **Bağlantınızı Güvence Altına Alın**: Gelişmiş güvenlik için varsayılan kendi kendine imzalı sertifikayı güvenilir bir SSL sertifikasıyla değiştirin.
+2. **İki Faktörlü Kimlik Doğrulamayı (2FA) Etkinleştirin**: Uygunsa, oturum açma sürecinize ekstra bir koruma katmanı ekleyin.
+3. **Günlükleri Düzenli Olarak İzleyin**: Olası sorunların önüne geçmek için konsolun günlük tutma özelliğini kullanarak uyarı işaretlerini erken yakalayın.
 
-```bash
-sudo dnf install cockpit -y
-```
-
-Once the installation is complete, you need to start and enable the Cockpit service:
-
-```bash
-sudo systemctl enable --now cockpit.socket
-```
-
-The `--now` flag ensures that the service starts immediately after being enabled.
+4. **Erişimi Sınırlayın**: IP beyaz listelerini yapılandırarak veya bir VPN kurarak Web Yönetici Konsoluna erişimi kısıtlayın.
 
 ---
 
-#### Step 3: Configure Firewall Settings
+### Yaygın Sorunları Giderme
 
-To access the Web Admin Console remotely, ensure that the appropriate firewall rules are in place. By default, Cockpit listens on port `9090`. You’ll need to allow traffic on this port:
+1. **Cockpit'e Erişilemiyor:**
 
-```bash
-sudo firewall-cmd --permanent --add-service=cockpit
-sudo firewall-cmd --reload
-```
+- Hizmetin çalıştığını doğrulayın: `sudo systemctl status cockpit.socket`.
+- `9090` portunun açık olduğundan emin olmak için güvenlik duvarı kurallarını kontrol edin.
 
-This ensures that the Web Admin Console is accessible from other devices on your network.
+2. **Tarayıcı Uyarıları:**
 
----
+- Güvenli olmayan bağlantılarla ilgili uyarıları ortadan kaldırmak için geçerli bir SSL sertifikası içe aktarın.
 
-#### Step 4: Access the Web Admin Console
+3. **Performans Sorunları:**
 
-With Cockpit installed and the firewall configured, you can now access the Web Admin Console. Open your web browser and navigate to:
-
-```text
-https://<your-server-ip>:9090
-```
-
-For example, if your server’s IP address is `192.168.1.100`, type:
-
-```text
-https://192.168.1.100:9090
-```
-
-When accessing the console for the first time, you might encounter a browser warning about an untrusted SSL certificate. This is normal since Cockpit uses a self-signed certificate. You can proceed by accepting the warning.
-
----
-
-#### Step 5: Log In to the Web Admin Console
-
-You’ll be prompted to log in with your server’s credentials. Use the username and password of a user with administrative privileges. If your AlmaLinux server is integrated with Active Directory or other authentication mechanisms, you can use those credentials as well.
-
----
-
-### Navigating the Web Admin Console: Key Features
-
-Once logged in, you’ll see a dashboard displaying an overview of your system. Below are some key features of the Web Admin Console:
-
-#### 1. **System Status**
-
-- View CPU, memory, and disk usage in real-time.
-- Monitor system uptime and running processes.
-
-#### 2. **Service Management**
-
-- Start, stop, enable, or disable services directly from the interface.
-- View logs for specific services for troubleshooting.
-
-#### 3. **Networking**
-
-- Configure IP addresses, routes, and DNS settings.
-- Manage network interfaces and monitor traffic.
-
-#### 4. **User Management**
-
-- Add or remove user accounts.
-- Change user roles and reset passwords.
-
-#### 5. **Software Management**
-
-- Install or remove packages with a few clicks.
-- Update system software and check for available updates.
-
-#### 6. **Terminal Access**
-
-- Access a built-in web terminal for advanced command-line operations.
-
----
-
-### Tips for Using the Web Admin Console Effectively
-
-1. **Secure Your Connection**: Replace the default self-signed certificate with a trusted SSL certificate for enhanced security.
-2. **Enable Two-Factor Authentication (2FA)**: If applicable, add an extra layer of protection to your login process.
-3. **Monitor Logs Regularly**: Use the console’s logging feature to stay ahead of potential issues by catching warning signs early.
-4. **Limit Access**: Restrict access to the Web Admin Console by configuring IP whitelists or setting up a VPN.
-
----
-
-### Troubleshooting Common Issues
-
-1. **Unable to Access Cockpit:**
-   - Verify that the service is running: `sudo systemctl status cockpit.socket`.
-   - Check firewall rules to ensure port `9090` is open.
-
-2. **Browser Warnings:**
-   - Import a valid SSL certificate to eliminate warnings about insecure connections.
-
-3. **Performance Issues:**
-   - Ensure your server meets the hardware requirements to run both AlmaLinux and Cockpit efficiently.
+- Sunucunuzun hem AlmaLinux'u hem de Cockpit'i verimli bir şekilde çalıştırmak için donanım gereksinimlerini karşıladığından emin olun.
 
 ---
 
 ### Conclusion
 
-The Web Admin Console on AlmaLinux, powered by Cockpit, is an invaluable tool for both novice and experienced administrators. Its graphical interface simplifies server management, providing a centralized platform for monitoring and configuring system resources, services, and more. By following the steps outlined in this guide, you’ll be able to set up and use the Web Admin Console with confidence, streamlining your administrative tasks and improving efficiency.
-
-AlmaLinux continues to shine as a go-to choice for enterprises, and tools like the Web Admin Console ensure that managing servers doesn’t have to be a daunting task. Whether you’re a seasoned sysadmin or just starting, this tool is worth exploring.system. Below are some key features of the Web Admin Console:
-
-#### 1. **System Status**
-
-- View CPU, memory, and disk usage in real-time.
-- Monitor system uptime and running processes.
-
-#### 2. **Service Management**
-
-- Start, stop, enable, or disable services directly from the interface.
-- View logs for specific services for troubleshooting.
-
-#### 3. **Networking**
-
-- Configure IP addresses, routes, and DNS settings.
-- Manage network interfaces and monitor traffic.
-
-#### 4. **User Management**
-
-- Add or remove user accounts.
-- Change user roles and reset passwords.
-
-#### 5. **Software Management**
-
-- Install or remove packages with a few clicks.
-- Update system software and check for available updates.
-
-#### 6. **Terminal Access**
-
-- Access a built-in web terminal for advanced command-line operations.
-
----
-
-### Tips for Using the Web Admin Console Effectively
-
-1. **Secure Your Connection**: Replace the default self-signed certificate with a trusted SSL certificate for enhanced security.
-2. **Enable Two-Factor Authentication (2FA)**: If applicable, add an extra layer of protection to your login process.
-3. **Monitor Logs Regularly**: Use the console’s logging feature to stay ahead of potential issues by catching warning signs early.
-4. **Limit Access**: Restrict access to the Web Admin Console by configuring IP whitelists or setting up a VPN.
-
----
-
-### Troubleshooting Common Issues
-
-1. **Unable to Access Cockpit:**
-   - Verify that the service is running: `sudo systemctl status cockpit.socket`.
-   - Check firewall rules to ensure port `9090` is open.
-
-2. **Browser Warnings:**
-   - Import a valid SSL certificate to eliminate warnings about insecure connections.
-
-3. **Performance Issues:**
-   - Ensure your server meets the hardware requirements to run both AlmaLinux and Cockpit efficiently.
-
----
-
-### Conclusion
-
-The Web Admin Console on AlmaLinux, powered by Cockpit, is an invaluable tool for both novice and experienced administrators. Its graphical interface simplifies server management, providing a centralized platform for monitoring and configuring system resources, services, and more. By following the steps outlined in this guide, you’ll be able to set up and use the Web Admin Console with confidence, streamlining your administrative tasks and improving efficiency.
-
-AlmaLinux continues to shine as a go-to choice for enterprises, and tools like the Web Admin Console ensure that managing servers doesn’t have to be a daunting task. Whether you’re a seasoned sysadmin or just starting, this tool is worth exploring.
+Cockpit tarafından desteklenen AlmaLinux'taki Web Admin Console, hem acemi hem de deneyimli yöneticiler için paha biçilmez bir araçtır. Grafiksel arayüzü sunucu yönetimini basitleştirir, sistem kaynaklarını, hizmetleri ve daha fazlasını izlemek ve yapılandırmak için merkezi bir platform sağlar. Bu kılavuzda özetlenen adımları izleyerek Web Admin Console'u güvenle kurabilir ve kullanabilir, idari görevlerinizi kolaylaştırabilir ve verimliliği artırabilirsiniz.

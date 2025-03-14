@@ -1,14 +1,14 @@
 ---
-title: How to Set Up Vim Settings on AlmaLinux
-description: Learn how to install, configure,  optimize Vim on AlmaLinux with our guide. From basic settings to advanced customizations, master Vim settings on AlmaLinux.
+title: AlmaLinux Vim Ayarları
+description: Bu yazımızda Vim'i AlmaLinux'ta kurma, yapılandırma ve optimize etme adımlarını kolaylaştırıyoruz.
 date: 2024-12-04
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Vim Settings
+linkTitle: Vim Ayarları
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 90
 translationKey: how-to-set-up-vim-settings-on-almalinux
@@ -16,262 +16,263 @@ keywords:
   - AlmaLinux
   - Vim Settings on AlmaLinux
 featured_image: /images/almalinux.webp
-url: set-vim-settings-almalinux
+url: /tr/set-vim-settings-almalinux
 ---
-Vim is one of the most powerful and flexible text editors available, making it a favorite among developers and system administrators. If you’re working on **AlmaLinux**, a secure, stable, and community-driven RHEL-based Linux distribution, setting up and customizing Vim can greatly enhance your productivity. This guide will walk you through the steps to install, configure, and optimize Vim for AlmaLinux.
-
----
-
-### Introduction to Vim and AlmaLinux
-
-Vim, short for “Vi Improved,” is an advanced text editor renowned for its efficiency. AlmaLinux, on the other hand, is a popular alternative to CentOS, offering robust support for enterprise workloads. By mastering Vim on AlmaLinux, you can streamline tasks like editing configuration files, writing code, or managing server scripts.
+Vim, geliştiriciler ve sistem yöneticileri arasında favori haline gelen, mevcut en güçlü ve esnek metin düzenleyicilerinden biridir. Güvenli, kararlı ve topluluk odaklı RHEL tabanlı bir Linux dağıtımı olan **AlmaLinux** üzerinde çalışıyorsanız, Vim'i kurmak ve özelleştirmek üretkenliğinizi büyük ölçüde artırabilir. Bu kılavuz, Vim'i AlmaLinux için kurma, yapılandırma ve optimize etme adımlarında size yol gösterecektir.
 
 ---
 
-### Step 1: Installing Vim on AlmaLinux
+### Vim ve AlmaLinux'a Giriş
 
-Vim is often included in default AlmaLinux installations. However, if it’s missing or you need the enhanced version, follow these steps:
-
-1. **Update the System**  
-   Begin by ensuring your system is up-to-date:
-
-   ```bash
-   sudo dnf update -y
-   ```
-
-2. **Install Vim**  
-   Install the enhanced version of Vim to unlock all features:
-
-   ```bash
-   sudo dnf install vim-enhanced -y
-   ```
-
-   Confirm the installation by checking the version:
-
-   ```bash
-   vim --version
-   ```
-
-3. **Verify Installation**  
-   Open Vim to confirm it’s properly installed:
-
-   ```bash
-   vim
-   ```
-
-   You should see a welcome screen with details about Vim.
+“Vi Improved”ın kısaltması olan Vim, verimliliğiyle ünlü gelişmiş bir metin düzenleyicisidir. Öte yandan AlmaLinux, kurumsal iş yükleri için sağlam destek sunan CentOS'a popüler bir alternatiftir. AlmaLinux'ta Vim'de ustalaşarak, yapılandırma dosyalarını düzenleme, kod yazma veya sunucu betiklerini yönetme gibi görevleri kolaylaştırabilirsiniz.
 
 ---
 
-### Step 2: Understanding the `.vimrc` Configuration File
+### 1. Adım: AlmaLinux'a Vim Kurulumu
 
-The `.vimrc` file is where all your Vim configurations are stored. It allows you to customize Vim to suit your workflow.
+Vim genellikle varsayılan AlmaLinux kurulumlarına dahildir. Ancak, eksikse veya gelişmiş sürüme ihtiyacınız varsa, şu adımları izleyin:
 
-- **Location of `.vimrc`**  
-  Typically, `.vimrc` resides in the home directory of the current user:
+1. **Sistemi Güncelleyin**
+Sisteminizin güncel olduğundan emin olarak başlayın:
 
-  ```bash
-  ~/.vimrc
-  ```
+```bash
+sudo dnf update -y
+```
 
-  If it doesn’t exist, create it:
+2. **Vim'i Yükleyin**
+Tüm özelliklerin kilidini açmak için Vim'in gelişmiş sürümünü yükleyin:
 
-  ```bash
-  touch ~/.vimrc
-  ```
+```bash
+sudo dnf install vim-enhanced -y
+```
 
-- **Global Configurations**  
-  For system-wide settings, the global Vim configuration file is located at:
+Sürümü kontrol ederek kurulumu onaylayın:
 
-  ```bash
-  /etc/vimrc
-  ```
+```bash
+vim --version
+```
 
-  Note: Changes to this file require root permissions.
+3. **Kurulumu Doğrulayın**
+Vim'in düzgün bir şekilde kurulduğunu onaylamak için açın:
 
----
+```bash
+vim
+```
 
-### Step 3: Essential Vim Configurations
-
-Here are some basic configurations you can add to your `.vimrc` file:
-
-1. **Enable Syntax Highlighting**  
-   Syntax highlighting makes code easier to read and debug:
-
-   ```vim
-   syntax on
-   ```
-
-2. **Set Line Numbers**  
-   Display line numbers for better navigation:
-
-   ```vim
-   set number
-   ```
-
-3. **Enable Auto-Indentation**  
-   Improve code formatting with auto-indentation:
-
-   ```vim
-   set autoindent
-   set smartindent
-   ```
-
-4. **Show Matching Brackets**  
-   Make coding more intuitive by showing matching brackets:
-
-   ```vim
-   set showmatch
-   ```
-
-5. **Customize Tabs and Spaces**  
-   Set the width of tabs and spaces:
-
-   ```vim
-   set tabstop=4
-   set shiftwidth=4
-   set expandtab
-   ```
-
-6. **Search Options**  
-   Enable case-insensitive search and highlight search results:
-
-   ```vim
-   set ignorecase
-   set hlsearch
-   set incsearch
-   ```
-
-7. **Add a Status Line**  
-   Display useful information in the status line:
-
-   ```vim
-   set laststatus=2
-   ```
+Vim hakkında ayrıntıların yer aldığı bir karşılama ekranı görmelisiniz.
 
 ---
 
-### Step 4: Advanced Customizations for Productivity
+### Adım 2: `.vimrc` Yapılandırma Dosyasını Anlama
 
-To maximize Vim’s potential, consider these advanced tweaks:
+`.vimrc` dosyası tüm Vim yapılandırmalarınızın saklandığı yerdir. Vim'i iş akışınıza uyacak şekilde özelleştirmenize olanak tanır.
 
-1. **Install Plugins with a Plugin Manager**  
-   Plugins can supercharge Vim’s functionality. Use a plugin manager like **vim-plug**:
-   - Install vim-plug:
+- **`.vimrc` Konumu**
+Genellikle, `.vimrc` geçerli kullanıcının ana dizininde bulunur:
 
-     ```bash
-     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-     ```
+```bash
+~/.vimrc
+```
 
-   - Add this to your `.vimrc`:
+Mevcut değilse, oluşturun:
 
-     ```vim
-     call plug#begin('~/.vim/plugged')
-     " Add plugins here
-     call plug#end()
-     ```
+```bash
+touch ~/.vimrc
+```
 
-   - Example Plugin: **NERDTree** for file browsing:
+- **Genel Yapılandırmalar**
+Sistem genelindeki ayarlar için, genel Vim yapılandırma dosyası şu konumda bulunur:
 
-     ```vim
-     Plug 'preservim/nerdtree'
-     ```
+```bash
+/etc/vimrc
+```
 
-2. **Set up Auto-Saving**  
-   Reduce the risk of losing work with an auto-save feature:
-
-   ```vim
-   autocmd BufLeave,FocusLost * silent! wall
-   ```
-
-3. **Create Custom Key Bindings**  
-   Define shortcuts for frequently used commands:
-
-   ```vim
-   nnoremap <leader>w :w<CR>
-   nnoremap <leader>q :q<CR>
-   ```
-
-4. **Improve Performance for Large Files**  
-   Optimize Vim for handling large files:
-
-   ```vim
-   set lazyredraw
-   set noswapfile
-   ```
+Not: Bu dosyada değişiklik yapmak için kök izinleri gerekir.
 
 ---
 
-### Step 5: Testing and Debugging Your Configuration
+### Adım 3: Temel Vim Yapılandırmaları
 
-After updating `.vimrc`, reload the configuration without restarting Vim:
+`.vimrc` dosyanıza ekleyebileceğiniz bazı temel yapılandırmalar şunlardır:
+
+1. **Sözdizimi Vurgulamayı Etkinleştir**
+Sözdizimi vurgulama, kodun okunmasını ve hata ayıklamasını kolaylaştırır:
+
+```vim
+sözdizimi açık
+```
+
+2. **Satır Numaralarını Ayarla**
+Daha iyi gezinme için satır numaralarını görüntüle:
+
+```vim
+set number
+```
+
+3. **Otomatik Girintiyi Etkinleştir**
+Otomatik girinti ile kod biçimlendirmesini iyileştir:
+
+```vim
+set autoindent
+set smartindent
+```
+
+4. **Eşleşen Parantezleri Göster**
+Eşleşen parantezleri göstererek kodlamayı daha sezgisel hale getirin:
+
+```vim
+set showmatch
+```
+
+5. **Sekmeleri ve Boşlukları Özelleştir**
+Sekmelerin ve boşlukların genişliğini ayarla:
+
+```vim
+set tabstop=4
+set shiftwidth=4
+set expandtab
+```
+
+6. **Arama Seçenekleri**
+Büyük/küçük harfe duyarlı olmayan aramayı etkinleştir ve arama sonuçlarını vurgula:
+
+```vim
+set ignorecase
+set hlsearch
+set incsearch
+```
+
+7. **Bir Durum Satırı**
+Durum satırında yararlı bilgileri görüntüleyin:
+
+```vim
+set laststatus=2
+```
+
+---
+
+### 4. Adım: Üretkenlik için Gelişmiş Özelleştirmeler
+
+Vim'in potansiyelini en üst düzeye çıkarmak için şu gelişmiş ince ayarları göz önünde bulundurun:
+
+1. **Eklenti Yöneticisi ile Eklentileri Yükleyin**
+Eklentiler, Vim'in işlevselliğini artırabilir. **vim-plug** gibi bir eklenti yöneticisi kullanın:
+
+- vim-plug'u yükleyin:
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+- Bunu `.vimrc`'nize ekleyin:
+
+```vim
+call plug#begin('~/.vim/plugged')
+" Eklentileri buraya ekleyin
+call plug#end()
+```
+
+- Örnek Eklenti: Dosya tarama için **NERDTree**:
+
+```vim
+Plug 'preservim/nerdtree'
+```
+
+2. **Otomatik Kaydetmeyi Ayarlayın**
+Otomatik kaydetme özelliğiyle işinizi kaybetme riskini azaltın:
+
+```vim
+autocmd BufLeave,FocusLost * silent! wall
+```
+
+3. **Özel Tuş Bağlantıları Oluştur**
+Sık kullanılan komutlar için kısayollar tanımlayın:
+
+```vim
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+```
+
+4. **Büyük Dosyalar İçin Performansı İyileştirin**
+Vim'i büyük dosyaları işlemek için optimize edin:
+
+```vim
+set lazyredraw
+set noswapfile
+```
+
+---
+
+### Adım 5: Yapılandırmanızı Test Etme ve Hata Ayıklama
+
+`.vimrc`'yi güncelledikten sonra, Vim'i yeniden başlatmadan yapılandırmayı yeniden yükleyin:
 
 ```vim
 :source ~/.vimrc
 ```
 
-If errors occur, check the `.vimrc` file for typos or conflicting commands.
+Hatalar oluşursa, `.vimrc` dosyasını yazım hataları veya çakışan komutlar açısından kontrol edin.
 
 ---
 
-### Step 6: Syncing Vim Configurations Across Systems
+### Adım 6: Vim Yapılandırmalarını Sistemler Arasında Senkronize Etme
 
-For consistency across multiple AlmaLinux systems, store your `.vimrc` file in a Git repository:
+Birden fazla AlmaLinux sisteminde tutarlılık için, `.vimrc` dosyanızı bir Git deposunda saklayın:
 
-1. **Initialize a Git Repository**  
-   Create a repository to store your Vim configurations:
+1. **Bir Git Deposu Başlatın**
+Vim yapılandırmalarınızı saklamak için bir depo oluşturun:
 
-   ```bash
-   git init vim-config
-   cd vim-config
-   cp ~/.vimrc .
-   ```
+```bash
+git init vim-config
+cd vim-config
+cp ~/.vimrc .
+```
 
-2. **Push to a Remote Repository**  
-   Upload the repository to GitHub or a similar platform for easy access:
+2. **Uzak Bir Depoya Gönder**
+Kolay erişim için deponuzu GitHub'a veya benzer bir platforma yükleyin:
 
-   ```bash
-   git add .vimrc
-   git commit -m "Initial Vim config"
-   git push origin main
-   ```
+```bash
+git add .vimrc
+git commit -m "Initial Vim config"
+git push origin main
+```
 
-3. **Clone on Other Systems**  
-   Clone the repository and link the `.vimrc` file:
+3. **Diğer Sistemlerde Klonla**
+Deponuzu klonlayın ve `.vimrc` dosyasını bağlayın:
 
-   ```bash
-   git clone <repo_url>
-   ln -s ~/vim-config/.vimrc ~/.vimrc
-   ```
-
----
-
-### Troubleshooting Common Issues
-
-Here are solutions to some common problems:
-
-- **Vim Commands Not Recognized**  
-  Ensure Vim is properly installed by verifying the package:
-
-  ```bash
-  sudo dnf reinstall vim-enhanced
-  ```
-
-- **Plugins Not Loading**  
-  Check for errors in the plugin manager section of your `.vimrc`.
-
-- **Syntax Highlighting Not Working**  
-  Confirm that the file type supports syntax highlighting:
-
-  ```vim
-  :set filetype=<your_filetype>
-  ```
+```bash
+git clone <repo_url>
+ln -s ~/vim-config/.vimrc ~/.vimrc
+```
 
 ---
 
-### Conclusion
+### Yaygın Sorunların Giderilmesi
 
-Configuring Vim on AlmaLinux empowers you with a highly efficient editing environment tailored to your needs. From essential settings like syntax highlighting and indentation to advanced features like plugins and custom key mappings, Vim can dramatically improve your productivity. By following this guide, you’ve taken a significant step toward mastering one of the most powerful tools in the Linux ecosystem.
+Bazı yaygın sorunların çözümleri şunlardır:
 
-Let us know how these settings worked for you, or share your own tips in the comments below. Happy editing!
+- **Vim Komutları Tanınmıyor**
+Paketi doğrulayarak Vim'in düzgün bir şekilde yüklendiğinden emin olun:
+
+```bash
+sudo dnf reinstall vim-enhanced
+```
+
+- **Eklentiler Yüklenmiyor**
+`.vimrc` dosyanızın eklenti yöneticisi bölümündeki hataları kontrol edin.
+
+- **Sözdizimi Vurgulama Çalışmıyor**
+Dosya türünün sözdizimi vurgulamayı desteklediğini doğrulayın:
+
+```vim
+:set filetype=<your_filetype>
+```
+
+---
+
+### Sonuç
+
+Vim'i AlmaLinux'ta yapılandırmak, ihtiyaçlarınıza göre uyarlanmış son derece verimli bir düzenleme ortamı sağlar. Sözdizimi vurgulama ve girintileme gibi temel ayarlardan eklentiler ve özel tuş eşlemeleri gibi gelişmiş özelliklere kadar, Vim üretkenliğinizi önemli ölçüde artırabilir. Bu kılavuzu izleyerek, Linux ekosistemindeki en güçlü araçlardan birinde ustalaşma yolunda önemli bir adım attınız.
+
+Bu ayarların sizin için nasıl çalıştığını bize bildirin veya aşağıdaki yorumlarda kendi ipuçlarınızı paylaşın. İyi düzenlemeler!

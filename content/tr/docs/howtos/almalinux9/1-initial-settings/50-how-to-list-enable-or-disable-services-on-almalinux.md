@@ -1,15 +1,15 @@
 ---
-title: How to List, Enable, or Disable Services on AlmaLinux
-description: This guide walks you through listing, enabling, disabling, and managing services on AlmaLinux.
+title: "AlmaLinux'ta Hizmetler Nasıl Listelenir, Etkinleştirilir veya Devre Dışı Bırakılır"
+description: Bu yazımızda AlmaLinux'ta hizmetlerin listelenmesi, etkinleştirilmesi ve devre dışı bırakılması konularını inceleyecegiz.
 date: 2024-11-30
-draft: true
+draft: false
 tags:
   - AlmaLinux
   - systemd
 categories:
   - Linux
   - Linux How-to
-linkTitle: Services on AlmaLinux
+linkTitle: AlmaLinux Servisleri
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 50
 translationKey: how-to-list-enable-or-disable-services-on-almalinux
@@ -18,69 +18,69 @@ keywords:
   - services on almalinux
 
 featured_image: /images/almalinux.webp
-url: list-enable-disable-services-almalinux
+url: /tr/list-enable-disable-services-almalinux
 ---
-When managing a server running AlmaLinux, understanding how to manage system services is crucial. Services are the backbone of server functionality, running everything from web servers and databases to networking tools. AlmaLinux, being an RHEL-based distribution, utilizes **systemd** for managing these services. This guide walks you through listing, enabling, disabling, and managing services effectively on AlmaLinux.
-
----
-
-### What Are Services in AlmaLinux?
-
-A service in AlmaLinux is essentially a program or process running in the background to perform a specific function. For example, Apache (`httpd`) serves web pages, and MySQL or MariaDB manages databases. These services can be controlled using **systemd**, the default init system, and service manager in most modern Linux distributions.
+AlmaLinux çalıştıran bir sunucuyu yönetirken, sistem hizmetlerinin nasıl yönetileceğini anlamak çok önemlidir. Hizmetler, web sunucularından ve veritabanlarından ağ araçlarına kadar her şeyi çalıştıran sunucu işlevselliğinin omurgasıdır. RHEL tabanlı bir dağıtım olan AlmaLinux, bu hizmetleri yönetmek için **systemd** kullanır. Bu kılavuz, AlmaLinux'ta hizmetleri etkili bir şekilde listeleme, etkinleştirme, devre dışı bırakma ve yönetme konusunda size yol gösterir.
 
 ---
 
-### Prerequisites for Managing Services
+### AlmaLinux'taki Hizmetler Nelerdir?
 
-Before diving into managing services on AlmaLinux, ensure you have the following:
-
-- **Access to the Terminal**: You need either direct access or SSH access to the server.
-- **Sudo Privileges**: Administrative rights are required to manage services.
-- **Basic Command-Line Knowledge**: Familiarity with the terminal and common commands will be helpful.
+AlmaLinux'taki bir hizmet, esasen belirli bir işlevi gerçekleştirmek için arka planda çalışan bir program veya işlemdir. Örneğin, Apache (`httpd`) web sayfalarına hizmet eder ve MySQL veya MariaDB veritabanlarını yönetir. Bu hizmetler, çoğu modern Linux dağıtımında varsayılan başlatma sistemi ve hizmet yöneticisi olan **systemd** kullanılarak kontrol edilebilir.
 
 ---
 
-### 1. How to List Services on AlmaLinux
+### Hizmetleri Yönetmek İçin Önkoşullar
 
-Listing services allows you to see which ones are active, inactive, or enabled at startup. To do this, use the `systemctl` command.
+AlmaLinux'ta hizmetleri yönetmeye başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-#### List All Services
+- **Terminale Erişim**: Sunucuya doğrudan erişim veya SSH erişiminiz olması gerekir.
+- **Sudo Ayrıcalıkları**: Hizmetleri yönetmek için yönetimsel haklar gerekir.
+- **Temel Komut Satırı Bilgisi**: Terminal ve genel komutlarla ilgili bilgi sahibi olmak faydalı olacaktır.
 
-To list all available services, run:
+---
+
+### 1. AlmaLinux'ta Hizmetleri Listeleme
+
+Hizmetleri listelemek, başlangıçta hangilerinin etkin, etkin olmayan veya etkinleştirilmiş olduğunu görmenizi sağlar. Bunu yapmak için `systemctl` komutunu kullanın.
+
+#### Tüm Hizmetleri Listele
+
+Kullanılabilir tüm hizmetleri listelemek için şunu çalıştırın:
 
 ```bash
 systemctl list-units --type=service
 ```
 
-This displays all loaded service units, their status, and other details. The key columns to look at are:
+Bu, yüklenen tüm hizmet birimlerini, durumlarını ve diğer ayrıntıları görüntüler. Bakılacak temel sütunlar şunlardır:
 
-- **LOAD**: Indicates if the service is loaded properly.
-- **ACTIVE**: Shows if the service is running (active) or stopped (inactive).
-- **SUB**: Provides detailed status (e.g., running, exited, or failed).
+- **LOAD**: Hizmetin düzgün yüklenip yüklenmediğini gösterir.
+- **ACTIVE**: Hizmetin çalıştığını (aktif) veya durdurulduğunu (etkin değil) gösterir.
+- **SUB**: Ayrıntılı durum sağlar (örneğin, çalışıyor, çıkıldı veya başarısız oldu).
 
-#### Filter Services by Status
+#### Hizmetleri Duruma Göre Filtrele
 
-To list only active services:
+Yalnızca etkin hizmetleri listelemek için:
 
 ```bash
 systemctl list-units --type=service --state=active
 ```
 
-To list only failed services:
+Yalnızca başarısız hizmetleri listelemek için:
 
 ```bash
 systemctl --failed
 ```
 
-#### Display Specific Service Status
+#### Belirli Hizmet Durumunu Görüntüle
 
-To check the status of a single service, use:
+Tek bir hizmetin durumunu kontrol etmek için şunu kullanın:
 
 ```bash
-systemctl status [service-name]
+systemctl status [hizmet-adı]
 ```
 
-For example, to check the status of the Apache web server:
+Örneğin, Apache web sunucusunun durumunu kontrol etmek için:
 
 ```bash
 systemctl status httpd
@@ -88,169 +88,169 @@ systemctl status httpd
 
 ---
 
-### 2. How to Enable Services on AlmaLinux
+### 2. AlmaLinux'ta Hizmetler Nasıl Etkinleştirilir
 
-Enabling a service ensures it starts automatically when the system boots. This is crucial for services you rely on regularly, such as web or database servers.
+Bir hizmeti etkinleştirmek, sistem önyüklendiğinde otomatik olarak başlamasını sağlar. Bu, web veya veritabanı sunucuları gibi düzenli olarak güvendiğiniz hizmetler için çok önemlidir.
 
-#### Enable a Service
+#### Bir Hizmeti Etkinleştir
 
-To enable a service at boot time, use:
+Önyükleme sırasında bir hizmeti etkinleştirmek için şunu kullanın:
 
 ```bash
-sudo systemctl enable [service-name]
+sudo systemctl enable [hizmet-adı]
 ```
 
-Example:
+Örnek:
 
 ```bash
 sudo systemctl enable httpd
 ```
 
-#### Verify Enabled Services
+#### Etkinleştirilmiş Hizmetleri Doğrula
 
-To confirm that a service is enabled:
+Bir hizmetin etkinleştirildiğini doğrulamak için:
 
 ```bash
-systemctl is-enabled [service-name]
+systemctl is-enabled [hizmet-adı]
 ```
 
-#### Enable All Required Dependencies
+#### Tüm Gerekli Bağımlılıkları Etkinleştir
 
-When enabling a service, systemd automatically handles its dependencies. However, you can manually specify dependencies if needed.
+Bir hizmeti etkinleştirirken, systemd bağımlılıklarını otomatik olarak işler. Ancak, gerekirse bağımlılıkları manuel olarak belirtebilirsiniz.
 
-#### Enable a Service for the Current Boot Target
+#### Geçerli Önyükleme Hedefi için Bir Hizmeti Etkinleştir
 
-To enable a service specifically for the current runlevel:
+Bir hizmeti özellikle geçerli çalışma düzeyi için etkinleştirmek için:
 
 ```bash
-sudo systemctl enable [service-name] --now
+sudo systemctl enable [hizmet-adı] --now
 ```
 
 ---
 
-### 3. How to Disable Services on AlmaLinux
+### 3. AlmaLinux'ta Hizmetler Nasıl Devre Dışı Bırakılır
 
-Disabling a service prevents it from starting automatically on boot. This is useful for services you no longer need or want to stop from running unnecessarily.
+Bir hizmeti devre dışı bırakmak, önyükleme sırasında otomatik olarak başlamasını önler. Bu, artık ihtiyaç duymadığınız veya gereksiz yere çalışmasını durdurmak istemediğiniz hizmetler için yararlıdır.
 
-#### Disable a Service
+#### Bir Hizmeti Devre Dışı Bırak
 
-To disable a service:
+Bir hizmeti devre dışı bırakmak için:
 
 ```bash
 sudo systemctl disable [service-name]
 ```
 
-Example:
+Örnek:
 
 ```bash
 sudo systemctl disable httpd
 ```
 
-#### Disable and Stop a Service Simultaneously
+#### Bir Hizmeti Aynı Anda Devre Dışı Bırakma ve Durdurma
 
-To disable a service and stop it immediately:
+Bir hizmeti devre dışı bırakmak ve hemen durdurmak için:
 
 ```bash
 sudo systemctl disable [service-name] --now
 ```
 
-#### Verify Disabled Services
+#### Devre Dışı Bırakılan Hizmetleri Doğrulama
 
-To ensure the service is disabled:
+Hizmetin devre dışı bırakıldığından emin olmak için:
 
 ```bash
 systemctl is-enabled [service-name]
 ```
 
-If the service is disabled, this command will return `disabled`.
+Hizmet devre dışı bırakılmışsa, bu komut `disabled` değerini döndürür.
 
 ---
 
-### 4. How to Start or Stop Services
+### 4. Hizmetleri Başlatma veya Durdurma
 
-In addition to enabling or disabling services, you may need to start or stop them manually.
+Hizmetleri etkinleştirmeye veya devre dışı bırakmaya ek olarak, bunları manuel olarak başlatmanız veya durdurmanız gerekebilir.
 
-#### Start a Service
+#### Bir Hizmeti Başlat
 
-To start a service manually:
+Bir hizmeti manuel olarak başlatmak için:
 
 ```bash
-sudo systemctl start [service-name]
+sudo systemctl start [hizmet-adı]
 ```
 
-#### Stop a Service
+#### Bir Hizmeti Durdur
 
-To stop a running service:
+Çalışan bir hizmeti durdurmak için:
 
 ```bash
-sudo systemctl stop [service-name]
+sudo systemctl stop [hizmet-adı]
 ```
 
-#### Restart a Service
+#### Bir Hizmeti Yeniden Başlat
 
-To restart a service, which stops and then starts it:
+Bir hizmeti durduran ve sonra başlatan bir hizmeti yeniden başlatmak için:
 
 ```bash
-sudo systemctl restart [service-name]
+sudo systemctl restart [hizmet-adı]
 ```
 
-#### Reload a Service
+#### Bir Hizmeti Yeniden Yükle
 
-If a service supports reloading without restarting (e.g., reloading configuration files):
-
-```bash
-sudo systemctl reload [service-name]
-```
-
----
-
-### 5. Checking Logs for Services
-
-System logs can help troubleshoot services that fail to start or behave unexpectedly. The `journalctl` command provides detailed logs.
-
-#### View Logs for a Specific Service
-
-To see logs for a particular service:
+Bir hizmet yeniden başlatmadan yeniden yüklemeyi destekliyorsa (örneğin, yapılandırma dosyalarını yeniden yükleme):
 
 ```bash
-sudo journalctl -u [service-name]
-```
-
-#### View Recent Logs
-
-To see only the latest logs:
-
-```bash
-sudo journalctl -u [service-name] --since "1 hour ago"
+sudo systemctl reload [hizmet-adı]
 ```
 
 ---
 
-### 6. Masking and Unmasking Services
+### 5. Hizmetler İçin Günlükleri Kontrol Etme
 
-Masking a service prevents it from being started manually or automatically. This is useful for disabling services that should never run.
+Sistem günlükleri, başlatılamayan veya beklenmedik şekilde davranan hizmetlerin sorunlarını gidermeye yardımcı olabilir. `journalctl` komutu ayrıntılı günlükler sağlar.
 
-#### Mask a Service
+#### Belirli Bir Hizmet İçin Günlükleri Görüntüle
 
-To mask a service:
+Belirli bir hizmet için günlükleri görmek için:
 
 ```bash
-sudo systemctl mask [service-name]
+sudo journalctl -u [hizmet-adı]
 ```
 
-#### Unmask a Service
+#### Son Günlükleri Görüntüle
 
-To unmask a service:
+Yalnızca en son günlükleri görmek için:
 
 ```bash
-sudo systemctl unmask [service-name]
+sudo journalctl -u [hizmet-adı] --since "1 saat önce"
 ```
 
 ---
 
-### 7. Using Aliases for Commands
+### 6. Hizmetleri Maskeleme ve Maskelemeyi Kaldırma
 
-For convenience, you can create aliases for frequently used commands. For example, add the following to your `.bashrc` file:
+Bir hizmeti maskelemek, manuel veya otomatik olarak başlatılmasını önler. Bu, asla çalışmaması gereken hizmetleri devre dışı bırakmak için yararlıdır.
+
+#### Bir Hizmeti Maskeleyin
+
+Bir hizmeti maskelemek için:
+
+```bash
+sudo systemctl mask [hizmet-adı]
+```
+
+#### Bir Hizmeti Maskelemeyi Kaldırın
+
+Bir hizmeti maskelemeyi kaldırmak için:
+
+```bash
+sudo systemctl unmask [hizmet-adı]
+```
+
+---
+
+### 7. Komutlar İçin Takma Adlar Kullanma
+
+Kolaylık olması açısından, sık kullanılan komutlar için takma adlar oluşturabilirsiniz. Örneğin, `.bashrc` dosyanıza şunu ekleyin:
 
 ```bash
 alias start-service='sudo systemctl start'
@@ -259,7 +259,7 @@ alias restart-service='sudo systemctl restart'
 alias status-service='systemctl status'
 ```
 
-Reload the shell to apply changes:
+Değişiklikleri uygulamak için kabuğu yeniden yükleyin:
 
 ```bash
 source ~/.bashrc
@@ -267,8 +267,8 @@ source ~/.bashrc
 
 ---
 
-### Conclusion
+### Sonuç
 
-Managing services on AlmaLinux is straightforward with **systemd**. Whether you're listing, enabling, disabling, or troubleshooting services, mastering these commands ensures your system runs efficiently. Regularly auditing services to enable only necessary ones can improve performance and security. By following this guide, you’ll know how to effectively manage services on your AlmaLinux system.
+AlmaLinux'ta hizmetleri yönetmek **systemd** ile basittir. Hizmetleri listeliyor, etkinleştiriyor, devre dışı bırakıyor veya sorun gideriyor olun, bu komutlarda ustalaşmak sisteminizin verimli bir şekilde çalışmasını sağlar. Hizmetleri düzenli olarak denetleyerek yalnızca gerekli olanları etkinleştirmek performansı ve güvenliği artırabilir. Bu kılavuzu izleyerek AlmaLinux sisteminizde hizmetleri etkili bir şekilde nasıl yöneteceğinizi öğreneceksiniz.
 
-For more in-depth exploration, consult the official [AlmaLinux documentation](https://wiki.almalinux.org/) or the `man` pages for `systemctl` and `journalctl`.
+Daha derinlemesine inceleme için resmi [AlmaLinux belgelerine](https://wiki.almalinux.org/) veya `systemctl` ve `journalctl` için `man` sayfalarına bakın.

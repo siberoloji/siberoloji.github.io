@@ -1,14 +1,14 @@
 ---
-title: "How to Update AlmaLinux System: Step-by-Step Guide"
-description: Learn how to update your AlmaLinux system with this detailed step-by-step guide. Ensure security, stability, and performance with these essential tips.
+title: "AlmaLinux Sistemi Nasıl Güncellenir: Adım Adım Kılavuz"
+description: Bu yazıda AlmaLinux sisteminizi güncellemek için adım adım kılavuz bulunmaktadır.
 date: 2024-11-30
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Update AlmaLinux
+linkTitle: AlmaLinux Güncelleme Kılavuzu
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 60
 translationKey: how-to-update-almalinux-system
@@ -17,134 +17,134 @@ keywords:
   - Update AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: update-almalinux-system-step-step-guide
+url: /tr/update-almalinux-system-step-step-guide
 ---
-AlmaLinux is a popular open-source Linux distribution built to offer long-term support and reliability, making it an excellent choice for servers and development environments. Keeping your AlmaLinux system up to date is essential to ensure security, functionality, and access to the latest features. In this guide, we’ll walk you through the steps to update your AlmaLinux system effectively.
-
----
-
-#### Why Keeping AlmaLinux Updated Is Essential
-
-Before diving into the steps, it’s worth understanding why updates are critical:
-
-1. **Security**: Regular updates patch vulnerabilities that could be exploited by attackers.
-2. **Performance Enhancements**: Updates often include optimizations for better performance.
-3. **New Features**: Updating your system ensures you’re using the latest features and software improvements.
-4. **Bug Fixes**: Updates resolve known issues, improving overall system stability.
-
-Now that we’ve covered the "why," let’s move on to the "how."
+AlmaLinux, uzun vadeli destek ve güvenilirlik sunmak için oluşturulmuş popüler bir açık kaynaklı Linux dağıtımıdır ve bu da onu sunucular ve geliştirme ortamları için mükemmel bir seçim haline getirir. AlmaLinux sisteminizi güncel tutmak, güvenliği, işlevselliği ve en son özelliklere erişimi sağlamak için önemlidir. Bu kılavuzda, AlmaLinux sisteminizi etkili bir şekilde güncellemek için atmanız gereken adımlarda size yol göstereceğiz.
 
 ---
 
-### Preparing for an Update
+#### AlmaLinux'u Güncel Tutmanın Neden Önemli Olduğu
 
-Before updating your AlmaLinux system, take the following preparatory steps to ensure a smooth process:
+Adımlara dalmadan önce, güncellemelerin neden kritik olduğunu anlamakta fayda var:
 
-#### 1. **Check Current System Information**
+1. **Güvenlik**: Düzenli güncellemeler, saldırganlar tarafından istismar edilebilecek güvenlik açıklarını kapatır.
+2. **Performans Geliştirmeleri**: Güncellemeler genellikle daha iyi performans için iyileştirmeler içerir.
+3. **Yeni Özellikler**: Sisteminizi güncellemek, en son özellikleri ve yazılım geliştirmelerini kullandığınızdan emin olmanızı sağlar.
+4. **Hata Düzeltmeleri**: Güncellemeler bilinen sorunları çözerek genel sistem kararlılığını artırır.
 
-Before proceeding, it's a good practice to verify your current system version. Use the following command:
+Artık "neden"i ele aldığımıza göre, "nasıl"a geçelim.
+
+---
+
+### Güncellemeye Hazırlık
+
+AlmaLinux sisteminizi güncellemeden önce, sorunsuz bir süreç sağlamak için aşağıdaki hazırlık adımlarını izleyin:
+
+#### 1. **Mevcut Sistem Bilgilerini Kontrol Edin**
+
+Devam etmeden önce, mevcut sistem sürümünüzü doğrulamak iyi bir uygulamadır. Aşağıdaki komutu kullanın:
 
 ```bash
 cat /etc/os-release
 ```
 
-This command displays detailed information about your AlmaLinux version. Note this for reference.
+Bu komut, AlmaLinux sürümünüz hakkında ayrıntılı bilgi görüntüler. Bunu referans olarak not edin.
 
-#### 2. **Back Up Your Data**
+#### 2. **Verilerinizi Yedekleyin**
 
-While updates are generally safe, there’s always a risk of data loss, especially for critical systems. Use tools like `rsync` or a third-party backup solution to secure your data.
+Güncellemeler genellikle güvenli olsa da, özellikle kritik sistemler için her zaman veri kaybı riski vardır. Verilerinizi güvence altına almak için `rsync` veya üçüncü taraf bir yedekleme çözümü kullanın.
 
-Example:
+Örnek:
 
 ```bash
 rsync -avz /important/data /backup/location
 ```
 
-#### 3. **Ensure Root Access**
+#### 3. **Kök Erişimini Sağlayın**
 
-You’ll need root privileges or a user with `sudo` access to perform system updates. Verify access by running:
+Sistem güncellemelerini gerçekleştirmek için kök ayrıcalıklarına veya `sudo` erişimi olan bir kullanıcıya ihtiyacınız olacak. Erişimi şu komutu çalıştırarak doğrulayın:
 
 ```bash
 sudo whoami
 ```
 
-If the output is "root," you’re good to go.
+Çıktı "kök" ise, hazırsınız demektir.
 
 ---
 
-### Step-by-Step Guide to Updating AlmaLinux
+### AlmaLinux'u Güncellemek İçin Adım Adım Kılavuz
 
-#### Step 1: **Update Package Manager Repositories**
+#### Adım 1: **Paket Yöneticisi Depolarını Güncelleyin**
 
-The first step is to refresh the repository metadata. This ensures you have the latest package information from AlmaLinux’s repositories.
+İlk adım depo meta verilerini yenilemektir. Bu, AlmaLinux depolarından en son paket bilgilerine sahip olmanızı sağlar.
 
-Run the following command:
+Aşağıdaki komutu çalıştırın:
 
 ```bash
 sudo dnf makecache
 ```
 
-This command will download the latest repository metadata and store it in a local cache, ensuring package information is up to date.
+Bu komut en son depo meta verilerini indirecek ve yerel bir önbelleğe kaydedecek ve paket bilgilerinin güncel olduğundan emin olacaktır.
 
 ---
 
-#### Step 2: **Check for Available Updates**
+#### 2. Adım: **Kullanılabilir Güncellemeleri Kontrol Et**
 
-Next, check for any available updates using the command:
+Ardından, şu komutu kullanarak kullanılabilir güncellemeleri kontrol edin:
 
 ```bash
 sudo dnf check-update
 ```
 
-This command lists all packages with available updates, showing details like package name, version, and repository source.
+Bu komut, paket adı, sürüm ve depo kaynağı gibi ayrıntıları göstererek kullanılabilir güncellemeleri olan tüm paketleri listeler.
 
 ---
 
-#### Step 3: **Install Updates**
+#### 3. Adım: **Güncellemeleri Yükle**
 
-Once you’ve reviewed the available updates, proceed to install them. Use the following command to update all packages:
+Kullanılabilir güncellemeleri inceledikten sonra yüklemeye devam edin. Tüm paketleri güncellemek için şu komutu kullanın:
 
 ```bash
 sudo dnf update -y
 ```
 
-The `-y` flag automatically confirms the installation of updates, saving you from manual prompts. Depending on the number of packages to update, this process may take a while.
+`-y` bayrağı güncellemelerin kurulumunu otomatik olarak onaylar ve sizi manuel istemlerden kurtarır. Güncellenecek paket sayısına bağlı olarak bu işlem biraz zaman alabilir.
 
 ---
 
-#### Step 4: **Upgrade the System**
+#### 4. Adım: **Sistemi Yükseltin**
 
-For more comprehensive updates, including major version upgrades, use the `dnf upgrade` command:
+Büyük sürüm yükseltmeleri de dahil olmak üzere daha kapsamlı güncellemeler için `dnf upgrade` komutunu kullanın:
 
 ```bash
 sudo dnf upgrade --refresh
 ```
 
-This command ensures your system is fully updated and includes additional improvements not covered by `update`.
+Bu komut, sisteminizin tamamen güncel olduğundan ve `update` tarafından kapsanmayan ek iyileştirmeler içerdiğinden emin olmanızı sağlar.
 
 ---
 
-#### Step 5: **Clean Up Unused Packages**
+#### 5. Adım: **Kullanılmayan Paketleri Temizleyin**
 
-During updates, old or unnecessary packages can accumulate, taking up disk space. Clean them up using:
+Güncellemeler sırasında eski veya gereksiz paketler birikerek disk alanı kaplayabilir. Bunları şu şekilde temizleyin:
 
 ```bash
 sudo dnf autoremove
 ```
 
-This command removes unused dependencies and obsolete packages, keeping your system tidy.
+Bu komut, kullanılmayan bağımlılıkları ve eski paketleri kaldırarak sisteminizi düzenli tutar.
 
 ---
 
-#### Step 6: **Reboot if Necessary**
+#### 6. Adım: **Gerekirse Yeniden Başlatın**
 
-Some updates, especially those related to the kernel or system libraries, require a reboot to take effect. Check if a reboot is needed with:
+Bazı güncellemeler, özellikle çekirdek veya sistem kitaplıklarıyla ilgili olanlar, etkili olması için yeniden başlatma gerektirir. Yeniden başlatmanın gerekip gerekmediğini şu şekilde kontrol edin:
 
 ```bash
 sudo needs-restarting
 ```
 
-If it’s necessary, reboot your system with:
+Gerekiyorsa, sisteminizi şu şekilde yeniden başlatın:
 
 ```bash
 sudo reboot
@@ -152,80 +152,80 @@ sudo reboot
 
 ---
 
-### Automating AlmaLinux Updates
+### AlmaLinux Güncellemelerini Otomatikleştirme
 
-If manual updates feel tedious, consider automating the process with DNF Automatic, a tool that handles package updates and notifications.
+Manuel güncellemeler sıkıcı geliyorsa, paket güncellemelerini ve bildirimlerini işleyen bir araç olan DNF Automatic ile işlemi otomatikleştirmeyi düşünün.
 
-#### Step 1: **Install DNF Automatic**
+#### Adım 1: **DNF Automatic'i yükleyin**
 
-Install the tool by running:
+Aracı şu şekilde çalıştırarak yükleyin:
 
 ```bash
 sudo dnf install -y dnf-automatic
 ```
 
-#### Step 2: **Configure DNF Automatic**
+#### Adım 2: **DNF Automatic'i yapılandırın**
 
-After installation, edit its configuration file:
+Yüklemeden sonra, yapılandırma dosyasını düzenleyin:
 
 ```bash
 sudo nano /etc/dnf/automatic.conf
 ```
 
-Modify settings to enable automatic updates. Key sections include:
+Otomatik güncellemeleri etkinleştirmek için ayarları değiştirin. Önemli bölümler şunlardır:
 
-- `[commands]` to define actions (e.g., download, install).
-- `[emitters]` to configure email notifications for update logs.
+- Eylemleri tanımlamak için `[komutlar]` (örneğin, indirme, yükleme).
+- Güncelleme günlükleri için e-posta bildirimlerini yapılandırmak için `[emitters]`.
 
-#### Step 3: **Enable and Start the Service**
+#### Adım 3: **Hizmeti Etkinleştirin ve Başlatın**
 
-Enable and start the DNF Automatic service:
+DNF Otomatik hizmetini etkinleştirin ve başlatın:
 
 ```bash
 sudo systemctl enable --now dnf-automatic
 ```
 
-This ensures the service starts automatically on boot and handles updates.
+Bu, hizmetin önyüklemede otomatik olarak başlamasını ve güncellemeleri işlemesini sağlar.
 
 ---
 
-### Troubleshooting Common Update Issues
+### Yaygın Güncelleme Sorunlarını Giderme
 
-While updates are usually straightforward, issues can arise. Here’s how to tackle some common problems:
+Güncellemeler genellikle basit olsa da sorunlar ortaya çıkabilir. İşte bazı yaygın sorunları çözmenin yolu:
 
-#### 1. **Network Connectivity Errors**
+#### 1. **Ağ Bağlantı Hataları**
 
-Ensure your system has a stable internet connection. Test connectivity with:
+Sisteminizin kararlı bir internet bağlantısına sahip olduğundan emin olun. Bağlantıyı şu şekilde test edin:
 
 ```bash
 ping -c 4 google.com
 ```
 
-If there’s no connection, check your network settings or contact your provider.
+Bağlantı yoksa, ağ ayarlarınızı kontrol edin veya sağlayıcınızla iletişime geçin.
 
-#### 2. **Repository Errors**
+#### 2. **Depo Hataları**
 
-If repository errors occur, clean the cache and retry:
+Depo hataları oluşursa, önbelleği temizleyin ve yeniden deneyin:
 
 ```bash
 sudo dnf clean all
 sudo dnf makecache
 ```
 
-#### 3. **Broken Dependencies**
+#### 3. **Bozuk Bağımlılıklar**
 
-Resolve dependency issues with:
+Bağımlılık sorunlarını şu şekilde çözün:
 
 ```bash
 sudo dnf --best --allowerasing install <package-name>
 ```
 
-This command installs packages while resolving conflicts.
+Bu komut, çakışmaları çözerken paketleri yükler.
 
 ---
 
-### Conclusion
+### Sonuç
 
-Keeping your AlmaLinux system updated is vital for security, stability, and performance. By following the steps outlined in this guide, you can ensure a smooth update process while minimizing potential risks. Whether you prefer manual updates or automated tools like DNF Automatic, staying on top of updates is a simple yet crucial task for system administrators and users alike.
+AlmaLinux sisteminizi güncel tutmak, güvenlik, istikrar ve performans açısından hayati önem taşır. Bu kılavuzda özetlenen adımları izleyerek, olası riskleri en aza indirirken sorunsuz bir güncelleme süreci sağlayabilirsiniz. İster manuel güncellemeleri ister DNF Automatic gibi otomatik araçları tercih edin, güncellemelerin üstünde kalmak sistem yöneticileri ve kullanıcılar için basit ancak önemli bir görevdir.
 
-With these tips in hand, you’re ready to maintain your AlmaLinux system with confidence.
+Bu ipuçlarını elinizde bulundurduğunuzda, AlmaLinux sisteminizi güvenle korumaya hazırsınız.

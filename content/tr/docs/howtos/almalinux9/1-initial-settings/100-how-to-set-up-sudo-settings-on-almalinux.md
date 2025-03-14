@@ -1,14 +1,14 @@
 ---
-title: How to Set Up Sudo Settings on AlmaLinux
-description: Learn how to configure sudo settings on AlmaLinux for enhanced security and control. Follow our detailed step-by-step guide to manage user privileges effectively.
+title: AlmaLinux Sudo Ayarları
+description: Bu kılavuz AlmaLinux'ta sudo ayarlarının kurulumu ve değiştirilmesi hakkında detaylı bir açıklama sunmaktadır.
 date: 2024-12-05
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Sudo Settings
+linkTitle: Sudo Ayarları
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 100
 translationKey: how-to-set-up-sudo-settings-on-almalinux
@@ -17,48 +17,50 @@ keywords:
   - Sudo Settings
 
 featured_image: /images/almalinux.webp
-url: set-sudo-settings-almalinux
+url: /tr/set-sudo-settings-almalinux
 ---
  
-AlmaLinux has quickly become a popular choice for organizations and developers seeking a reliable and secure operating system. Like many Linux distributions, AlmaLinux relies on **sudo** for managing administrative tasks securely. By configuring sudo properly, you can control user privileges and ensure the system remains protected. This guide will walk you through everything you need to know about setting up and managing sudo settings on AlmaLinux.
+AlmaLinux, güvenilir ve güvenli bir işletim sistemi arayan kuruluşlar ve geliştiriciler için hızla popüler bir seçim haline geldi. Birçok Linux dağıtımı gibi AlmaLinux da yönetim görevlerini güvenli bir şekilde yönetmek için **sudo**'ya güvenir. Sudo'yu düzgün bir şekilde yapılandırarak kullanıcı ayrıcalıklarını kontrol edebilir ve sistemin korunmasını sağlayabilirsiniz. Bu kılavuz, AlmaLinux'ta sudo ayarlarını kurma ve yönetme hakkında bilmeniz gereken her şeyi size anlatacaktır.
 
 ---
 
-### What is Sudo, and Why is It Important?  
+### Sudo Nedir ve Neden Önemlidir?
 
-Sudo, short for "superuser do," is a command-line utility that allows users to execute commands with superuser (root) privileges. Instead of logging in as the root user, which can pose security risks, sudo grants temporary elevated permissions to specified users or groups for specific tasks. Key benefits include:  
+"Superuser do"nun kısaltması olan Sudo, kullanıcıların süper kullanıcı (kök) ayrıcalıklarıyla komutları yürütmesine olanak tanıyan bir komut satırı yardımcı programıdır. Güvenlik riskleri oluşturabilen kök kullanıcı olarak oturum açmak yerine, sudo belirli görevler için belirtilen kullanıcılara veya gruplara geçici olarak yükseltilmiş izinler verir. Başlıca avantajları şunlardır:
 
-- **Enhanced Security:** Prevents unauthorized users from gaining full control of the system.  
-- **Better Auditing:** Tracks which users execute administrative commands.  
-- **Granular Control:** Allows fine-tuned permissions for users based on need.  
+- **Gelişmiş Güvenlik:** Yetkisiz kullanıcıların sistemin tam kontrolünü ele geçirmesini önler.
+- **Daha İyi Denetim:** Hangi kullanıcıların yönetim komutlarını yürüttüğünü izler.
+- **Granüler Kontrol:** Kullanıcılar için ihtiyaca göre ince ayarlı izinler sağlar.
 
-With AlmaLinux, configuring sudo settings ensures your system remains secure and manageable, especially in multi-user environments.  
-
----
-
-### Prerequisites  
-
-Before diving into sudo configuration, ensure the following:  
-
-1. **AlmaLinux Installed:** You should have AlmaLinux installed on your machine or server.  
-2. **User Account with Root Access:** Either direct root access or a user with sudo privileges is needed to configure sudo.  
-3. **Terminal Access:** Familiarity with the Linux command line is helpful.  
+AlmaLinux ile sudo ayarlarını yapılandırmak, özellikle çok kullanıcılı ortamlarda sisteminizin güvenli ve yönetilebilir kalmasını sağlar.
 
 ---
 
-### Step 1: Log in as a Root User or Use an Existing Sudo User  
+### Önkoşullar
 
-To begin setting up sudo, you’ll need root access. You can either log in as the root user or switch to a user account that already has sudo privileges.  
+Sudo yapılandırmasına dalmadan önce, aşağıdakilerden emin olun:
 
-#### Example: Logging in as Root
+1. **AlmaLinux Kurulu:** Makinenizde veya sunucunuzda AlmaLinux kurulu olmalıdır.
+
+2. **Kök Erişimli Kullanıcı Hesabı:** Sudo'yu yapılandırmak için doğrudan kök erişimi veya sudo ayrıcalıklarına sahip bir kullanıcı gerekir.
+
+3. **Terminal Erişimi:** Linux komut satırına aşinalık faydalıdır.
+
+---
+
+### 1. Adım: Kök Kullanıcı Olarak Oturum Açın veya Mevcut Bir Sudo Kullanıcısını Kullanın
+
+Sudo'yu kurmaya başlamak için kök erişiminiz olması gerekir. Kök kullanıcı olarak oturum açabilir veya halihazırda sudo ayrıcalıklarına sahip bir kullanıcı hesabına geçebilirsiniz.
+
+#### Örnek: Root olarak oturum açma
 
 ```bash
 ssh root@your-server-ip
 ```
 
-#### Switching to Root User  
+#### Root Kullanıcısına Geçiş
 
-If you are logged in as a regular user:  
+Normal kullanıcı olarak oturum açtıysanız:
 
 ```bash
 su -
@@ -66,88 +68,88 @@ su -
 
 ---
 
-### Step 2: Install the Sudo Package  
+### 2. Adım: Sudo Paketini Yükleyin
 
-In many cases, sudo is already pre-installed on AlmaLinux. However, if it is missing, you can install it using the following command:  
+Çoğu durumda, sudo AlmaLinux'a önceden yüklenmiştir. Ancak, eksikse, aşağıdaki komutu kullanarak yükleyebilirsiniz:
 
 ```bash
 dnf install sudo -y
 ```
 
-To verify that sudo is installed:  
+Sudo'nun yüklendiğini doğrulamak için:
 
 ```bash
 sudo --version
 ```
 
-You should see the version of sudo displayed.  
+Sudo sürümünün görüntülendiğini görmelisiniz.
 
 ---
 
-### Step 3: Add a User to the Sudo Group  
+### 3. Adım: Sudo Grubuna Bir Kullanıcı Ekleyin
 
-To grant sudo privileges to a user, add them to the sudo group. By default, AlmaLinux uses the **wheel group** for managing sudo permissions.  
+Bir kullanıcıya sudo ayrıcalıkları vermek için, onu sudo grubuna ekleyin. Varsayılan olarak, AlmaLinux sudo izinlerini yönetmek için **wheel grubunu** kullanır.
 
-#### Adding a User to the Wheel Group  
+#### Wheel Grubuna Bir Kullanıcı Ekleme
 
-Replace `username` with the actual user account name:  
+`username` ifadesini gerçek kullanıcı hesap adıyla değiştirin:
 
 ```bash
 usermod -aG wheel username
 ```
 
-You can verify the user’s group membership with:  
+Kullanıcının grup üyeliğini şu şekilde doğrulayabilirsiniz:
 
 ```bash
 groups username
 ```
 
-The output should include `wheel`, indicating that the user has sudo privileges.  
+Çıktı, kullanıcının sudo ayrıcalıklarına sahip olduğunu belirten `wheel` ifadesini içermelidir.
 
 ---
 
-### Step 4: Test Sudo Access  
+### 4. Adım: Sudo Erişimini Test Et
 
-Once the user is added to the sudo group, it’s important to confirm their access. Switch to the user and run a sudo command:  
+Kullanıcı sudo grubuna eklendikten sonra, erişimini onaylamak önemlidir. Kullanıcıya geçin ve bir sudo komutu çalıştırın:
 
 ```bash
 su - username
 sudo whoami
 ```
 
-If everything is configured correctly, the output should display:  
+Her şey doğru şekilde yapılandırıldıysa, çıktı şunu göstermelidir:
 
 ```bash
 root
-```  
+```
 
-This indicates that the user can execute commands with elevated privileges.  
+Bu, kullanıcının yükseltilmiş ayrıcalıklarla komutları yürütebileceğini gösterir.
 
 ---
 
-### Step 5: Modify Sudo Permissions  
+### 5. Adım: Sudo İzinlerini Değiştirin
 
-For more granular control, you can customize sudo permissions using the **sudoers file**. This file defines which users or groups have access to sudo and under what conditions.  
+Daha ayrıntılı denetim için, **sudoers dosyasını** kullanarak sudo izinlerini özelleştirebilirsiniz. Bu dosya, hangi kullanıcıların veya grupların sudo'ya hangi koşullar altında erişebileceğini tanımlar.
 
-#### Editing the Sudoers File Safely  
+#### Sudoers Dosyasını Güvenli Şekilde Düzenleme
 
-Always use the `visudo` command to edit the sudoers file. This command checks for syntax errors, preventing accidental misconfigurations:  
+Sudoers dosyasını düzenlemek için her zaman `visudo` komutunu kullanın. Bu komut, sözdizimi hatalarını kontrol ederek yanlışlıkla yanlış yapılandırmaları önler:
 
 ```bash
 visudo
 ```
 
-You will see the sudoers file in your preferred text editor.  
+Sudoers dosyasını tercih ettiğiniz metin düzenleyicide göreceksiniz.
 
-#### Adding Custom Permissions  
+#### Özel İzinler Ekleme
 
-For example, to allow a user to run all commands without entering a password, add the following line:  
+Örneğin, bir kullanıcının parola girmeden tüm komutları çalıştırmasına izin vermek için aşağıdaki satırı ekleyin:
 
 ```plaintext
 username ALL=(ALL) NOPASSWD: ALL
 ```
 
-Alternatively, to restrict a user to specific commands:  
+Alternatif olarak, bir kullanıcıyı belirli komutlarla sınırlamak için:
 
 ```plaintext
 username ALL=(ALL) /path/to/command
@@ -155,84 +157,84 @@ username ALL=(ALL) /path/to/command
 
 ---
 
-### Step 6: Create Drop-In Files for Custom Configurations  
+### 6. Adım: Özel Yapılandırmalar için Drop-In Dosyaları Oluşturma
 
-Instead of modifying the main sudoers file, you can create custom configuration files in the `/etc/sudoers.d/` directory. This approach helps keep configurations modular and avoids conflicts.  
+Ana sudoers dosyasını değiştirmek yerine, `/etc/sudoers.d/` dizininde özel yapılandırma dosyaları oluşturabilirsiniz. Bu yaklaşım, yapılandırmaların modüler kalmasına yardımcı olur ve çakışmaları önler.
 
-#### Example: Creating a Custom Configuration  
+#### Örnek: Özel Yapılandırma Oluşturma
 
-1. Create a new file in `/etc/sudoers.d/`:  
+1. `/etc/sudoers.d/` dizininde yeni bir dosya oluşturun:
 
-   ```bash
-   sudo nano /etc/sudoers.d/username
-   ```
+```bash
+sudo nano /etc/sudoers.d/username
+```
 
-2. Add the desired permissions, such as:  
+2. Aşağıdakiler gibi istenen izinleri ekleyin:
 
-   ```plaintext
-   username ALL=(ALL) NOPASSWD: /usr/bin/systemctl
-   ```
+```plaintext
+username ALL=(ALL) NOPASSWD: /usr/bin/systemctl
+```
 
-3. Save the file and exit.  
+3. Dosyayı kaydedin ve çıkın.
 
-4. Validate the configuration:  
+4. Yapılandırmayı doğrulayın:
 
-   ```bash
-   sudo visudo -c
-   ```
-
----
-
-### Step 7: Secure the Sudo Configuration  
-
-To ensure that sudo remains secure, follow these best practices:  
-
-1. **Limit Sudo Access:** Only grant privileges to trusted users.  
-2. **Enable Logging:** Use sudo logs to monitor command usage. Check logs with:  
-
-   ```bash
-   cat /var/log/secure | grep sudo
-   ```
-
-3. **Regular Audits:** Periodically review the sudoers file and user permissions.  
-4. **Use Defaults:** Leverage sudo defaults for additional security, such as locking out users after failed attempts:  
-
-   ```plaintext
-   Defaults    passwd_tries=3
-   ```
+```bash
+sudo visudo -c
+```
 
 ---
 
-### Troubleshooting Common Issues  
+### 7. Adım: Sudo Yapılandırmasını Güvence Altına Alın
 
-#### 1. **User Not Recognized as Sudoer**  
+Sudo'nun güvenli kalmasını sağlamak için şu en iyi uygulamaları izleyin:
 
-- Ensure the user is part of the wheel group:  
+1. **Sudo Erişimini Sınırla:** Yalnızca güvenilir kullanıcılara ayrıcalıklar verin.
+2. **Günlük Kaydını Etkinleştir:** Komut kullanımını izlemek için sudo günlüklerini kullanın. Günlükleri şu şekilde kontrol edin:
 
-  ```bash
-  groups username
-  ```
+```bash
+cat /var/log/secure | grep sudo
+```
 
-- Confirm the sudo package is installed.
+3. **Düzenli Denetimler:** sudoers dosyasını ve kullanıcı izinlerini düzenli olarak inceleyin.
+4. **Varsayılanları Kullanın:** Başarısız girişimlerden sonra kullanıcıları kilitlemek gibi ek güvenlik için sudo varsayılanlarından yararlanın:
 
-#### 2. **Syntax Errors in Sudoers File**  
-
-- Use the `visudo` command to check for errors:  
-
-  ```bash
-  sudo visudo -c
-  ```
-
-#### 3. **Command Denied**  
-
-- Check if specific commands are restricted for the user in the sudoers file.  
+```plaintext
+Varsayılanlar passwd_tries=3
+```
 
 ---
 
-### Conclusion  
+### Yaygın Sorunları Giderme
 
-Setting up and configuring sudo on AlmaLinux is a straightforward process that enhances system security and administrative control. By following this guide, you can ensure that only authorized users have access to critical commands, maintain a secure environment, and streamline your system's management.  
+#### 1. **Kullanıcı Sudoer Olarak Tanınmıyor**
 
-By applying best practices and regularly reviewing permissions, you can maximize the benefits of sudo and keep your AlmaLinux system running smoothly and securely.  
+- Kullanıcının tekerlek grubunun bir parçası olduğundan emin olun:
 
-Feel free to share your experiences or ask questions about sudo configurations in the comments below!  
+```bash
+groups username
+```
+
+- sudo paketinin kurulu olduğunu doğrulayın.
+
+#### 2. **Sudoers Dosyasındaki Sözdizimi Hataları**
+
+- Hataları kontrol etmek için `visudo` komutunu kullanın:
+
+```bash
+sudo visudo -c
+```
+
+#### 3. **Komut Reddedildi**
+
+- sudoers dosyasında kullanıcı için belirli komutların kısıtlanıp kısıtlanmadığını kontrol edin.
+
+---
+
+### Sonuç
+
+AlmaLinux'ta sudo'yu kurmak ve yapılandırmak, sistem güvenliğini ve yönetim kontrolünü artıran basit bir işlemdir. Bu kılavuzu izleyerek, yalnızca yetkili kullanıcıların kritik komutlara erişebildiğinden, güvenli bir ortam sağladığından ve sisteminizin yönetimini kolaylaştırdığınızdan emin olabilirsiniz.
+
+En iyi uygulamaları uygulayarak ve izinleri düzenli olarak inceleyerek, sudo'nun faydalarını en üst düzeye çıkarabilir ve AlmaLinux sisteminizin sorunsuz ve güvenli bir şekilde çalışmasını sağlayabilirsiniz.
+
+Aşağıdaki yorumlarda sudo yapılandırmalarıyla ilgili deneyimlerinizi paylaşmaktan veya soru sormaktan çekinmeyin!

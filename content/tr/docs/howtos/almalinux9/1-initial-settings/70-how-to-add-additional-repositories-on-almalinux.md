@@ -1,14 +1,14 @@
 ---
-title: How to Add Additional Repositories on AlmaLinux
-description: This article walks you through the steps to add, configure, and manage repositories on AlmaLinux.
+title: AlmaLinux İlave Paket Depoları Ekleme
+description: Bu yazımızda AlmaLinux'ta depoları ekleme, yapılandırma ve yönetme konularını inceleyecegiz.
 date: 2024-11-30
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Additional Repositories
+linkTitle: İlave Paket Depoları Ekleme
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 70
 translationKey: how-to-add-additional-repositories-on-almalinux
@@ -17,255 +17,258 @@ keywords:
   - Repositories on AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: add-additional-repositories-almalinux
+url: /tr/add-additional-repositories-almalinux
 ---
-AlmaLinux is a popular open-source Linux distribution designed to fill the gap left by CentOS after its shift to CentOS Stream. Its robust, enterprise-grade stability makes it a favorite for servers and production environments. However, the base repositories may not include every software package or the latest versions of specific applications you need.  
+AlmaLinux, CentOS'un CentOS Stream'e geçişinden sonra bıraktığı boşluğu doldurmak için tasarlanmış popüler bir açık kaynaklı Linux dağıtımıdır. Sağlam, kurumsal düzeydeki kararlılığı onu sunucular ve üretim ortamları için favori yapar. Ancak, temel depolar her yazılım paketini veya ihtiyaç duyduğunuz belirli uygulamaların en son sürümlerini içermeyebilir.
 
-To address this, AlmaLinux allows you to add additional repositories, which can provide access to a broader range of software. This article walks you through the steps to add, configure, and manage repositories on AlmaLinux.
-
----
-
-### **What Are Repositories in Linux?**
-
-Repositories are storage locations where software packages are stored and managed. AlmaLinux uses the YUM and DNF package managers to interact with these repositories, enabling users to search, install, update, and manage software effortlessly.  
-
-There are three main types of repositories:  
-
-1. **Base Repositories**: Officially provided by AlmaLinux, containing the core packages.  
-2. **Third-Party Repositories**: Maintained by external communities or organizations, offering specialized software.  
-3. **Custom Repositories**: Created by users or organizations to host proprietary or internally developed packages.  
-
-Adding additional repositories can be helpful for:  
-
-- Accessing newer versions of software.  
-- Installing applications not available in the base repositories.  
-- Accessing third-party or proprietary tools.  
+Bunu ele almak için AlmaLinux, daha geniş bir yazılım yelpazesine erişim sağlayabilen ek depolar eklemenize olanak tanır. Bu makale, AlmaLinux'ta depoları ekleme, yapılandırma ve yönetme adımlarında size yol gösterir.
 
 ---
 
-### **Preparation Before Adding Repositories**  
+### **Linux'ta Depolar Nelerdir?**
 
-Before diving into repository management, take these preparatory steps:  
+Depolar, yazılım paketlerinin depolandığı ve yönetildiği depolama konumlarıdır. AlmaLinux, bu depolarla etkileşim kurmak için YUM ve DNF paket yöneticilerini kullanır ve kullanıcıların yazılımları zahmetsizce aramasını, yüklemesini, güncellemesini ve yönetmesini sağlar.
 
-#### 1. **Ensure System Updates**  
+Üç ana depo türü vardır:
 
-Update your system to minimize compatibility issues:  
+1. **Temel Depolar**: AlmaLinux tarafından resmi olarak sağlanır ve çekirdek paketleri içerir.
+2. **Üçüncü Taraf Depoları**: Harici topluluklar veya kuruluşlar tarafından sürdürülür ve özel yazılımlar sunar.
+3. **Özel Depolar**: Kullanıcılar veya kuruluşlar tarafından tescilli veya dahili olarak geliştirilen paketleri barındırmak için oluşturulur.
 
-```bash  
-sudo dnf update -y  
-```  
+Ek depolar eklemek şunlar için yararlı olabilir:
 
-#### 2. **Verify AlmaLinux Version**  
-
-Check your AlmaLinux version to ensure compatibility with repository configurations:  
-
-```bash  
-cat /etc/os-release  
-```  
-
-#### 3. **Install Essential Tools**  
-
-Ensure you have tools like `dnf-plugins-core` installed:  
-
-```bash  
-sudo dnf install dnf-plugins-core -y  
-```  
+- Yazılımın daha yeni sürümlerine erişim.
+- Temel depolarda bulunmayan uygulamaları yükleme.
+- Üçüncü taraf veya tescilli araçlara erişim.
 
 ---
 
-### **Adding Additional Repositories on AlmaLinux**
+### **Depo Eklemeden Önce Hazırlık**
 
-#### **1. Enabling Official Repositories**  
+Depo yönetimine dalmadan önce şu hazırlık adımlarını izleyin:
 
-AlmaLinux comes with built-in repositories that may be disabled by default. You can enable them using the following command:  
+#### 1. **Sistem Güncellemelerini Sağlayın**
 
-```bash  
-sudo dnf config-manager --set-enabled <repository-name>  
-```  
+Uyumluluk sorunlarını en aza indirmek için sisteminizi güncelleyin:
 
-For example, to enable the `PowerTools` repository:  
+```bash
+sudo dnf update -y
+```
 
-```bash  
-sudo dnf config-manager --set-enabled powertools  
-```  
+#### 2. **AlmaLinux Sürümünü Doğrulayın**
 
-To verify if the repository is enabled:  
+Depo yapılandırmalarıyla uyumluluğu sağlamak için AlmaLinux sürümünüzü kontrol edin:
 
-```bash  
-sudo dnf repolist enabled  
-```  
+```bash
+cat /etc/os-release
+```
 
----
+#### 3. **Temel Araçları Yükleyin**
 
-#### **2. Adding EPEL Repository**  
+`dnf-plugins-core` gibi araçların yüklü olduğundan emin olun:
 
-The Extra Packages for Enterprise Linux (EPEL) repository provides additional software packages for AlmaLinux. To add EPEL:  
-
-```bash  
-sudo dnf install epel-release -y  
-```  
-
-Verify the addition:  
-
-```bash  
-sudo dnf repolist  
-```  
-
-You can now install software from the EPEL repository.  
+```bash
+sudo dnf install dnf-plugins-core -y
+```
 
 ---
 
-#### **3. Adding RPM Fusion Repository**  
+### **AlmaLinux'a Ek Depolar Ekleme**
 
-For multimedia and non-free packages, RPM Fusion is a popular choice.  
+#### **1. Resmi Depoları Etkinleştirme**
 
-##### Add the free repository  
+AlmaLinux, varsayılan olarak devre dışı bırakılabilen yerleşik depolarla birlikte gelir. Aşağıdaki komutu kullanarak bunları etkinleştirebilirsiniz:
 
-```bash  
-sudo dnf install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm  
-```  
+```bash
+sudo dnf config-manager --set-enabled <depo-adı>
+```
 
-##### Add the non-free repository  
+Örneğin, `PowerTools` deposunu etkinleştirmek için:
 
-```bash  
-sudo dnf install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm  
-```  
+```bash
+sudo dnf config-manager --set-enabled powertools
+```
 
-After installation, confirm that RPM Fusion is added:  
+Deponun etkin olup olmadığını doğrulamak için:
 
-```bash  
-sudo dnf repolist  
-```  
-
----
-
-#### **4. Adding a Custom Repository**  
-
-You can create a custom `.repo` file to add a repository manually.  
-
-1. **Create a `.repo` file in `/etc/yum.repos.d/`:**  
-
-```bash  
-sudo nano /etc/yum.repos.d/custom.repo  
-```  
-
-2. **Add the repository details:**  
-For example:  
-
-```ini  
-[custom-repo]  
-name=Custom Repository  
-baseurl=http://example.com/repo/  
-enabled=1  
-gpgcheck=1  
-gpgkey=http://example.com/repo/RPM-GPG-KEY  
-```  
-
-3. **Save the file and update the repository list:**  
-
-```bash  
-sudo dnf makecache  
-```  
-
-4. **Test the repository:**  
-Install a package from the custom repository:  
-
-```bash  
-sudo dnf install <package-name>  
-```  
+```bash
+sudo dnf repolist enabled
+```
 
 ---
 
-#### **5. Adding Third-Party Repositories**  
+#### **2. EPEL Deposu Ekleme**
 
-Third-party repositories, like Remi or MySQL repositories, often provide newer versions of popular software.  
+Ekstra Paketler Enterprise Linux (EPEL) deposu AlmaLinux için ek yazılım paketleri sağlar. EPEL eklemek için:
 
-##### Add the Remi repository  
+```bash
+sudo dnf install epel-release -y
+```
 
-1. Install the repository:  
+Eklemeyi doğrulayın:
 
-```bash  
-sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-$(rpm -E %rhel).rpm  
-```  
+```bash
+sudo dnf repolist
+```
 
-2. Enable a specific repository branch (e.g., PHP 8.2):  
-
-```bash  
-sudo dnf module enable php:remi-8.2  
-```  
-
-3. Install the package:  
-
-```bash  
-sudo dnf install php  
-```  
+Artık EPEL deposundan yazılım yükleyebilirsiniz.
 
 ---
 
-### **Managing Repositories**  
+#### **3. RPM Fusion Deposu Ekleme**
 
-#### **1. Listing Repositories**  
+Multimedya ve ücretsiz olmayan paketler için RPM Fusion popüler bir seçimdir.
 
-View all enabled repositories:  
+##### Ücretsiz deponun eklenmesi
 
-```bash  
-sudo dnf repolist enabled  
-```  
+```bash
+sudo dnf install https://download1.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm
+```
 
-View all repositories (enabled and disabled):  
+##### Ücretsiz olmayan deponun eklenmesi
 
-```bash  
-sudo dnf repolist all  
-```  
+```bash
+sudo dnf install https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+```
 
-#### **2. Enabling/Disabling Repositories**  
+Kurulumdan sonra, RPM Fusion'ın eklendiğini doğrulayın:
 
-Enable a repository:  
-
-```bash  
-sudo dnf config-manager --set-enabled <repository-name>  
-```  
-
-Disable a repository:  
-
-```bash  
-sudo dnf config-manager --set-disabled <repository-name>  
-```  
-
-#### **3. Removing a Repository**  
-
-To remove a repository, delete its `.repo` file:  
-
-```bash  
-sudo rm /etc/yum.repos.d/<repository-name>.repo  
-```  
-
-Clear the cache afterward:  
-
-```bash  
-sudo dnf clean all  
-```  
+```bash
+sudo dnf repolist
+```
 
 ---
 
-### **Best Practices for Repository Management**  
+#### **4. Özel Depo Ekleme**
 
-1. **Use Trusted Sources**: Only add repositories from reliable sources to avoid security risks.  
-2. **Verify GPG Keys**: Always validate GPG keys to ensure the integrity of packages.  
-3. **Avoid Repository Conflicts**: Multiple repositories providing the same packages can cause conflicts. Use priority settings if necessary.  
-4. **Regular Updates**: Keep your repositories updated to avoid compatibility issues.  
-5. **Backup Configurations**: Backup `.repo` files before making changes.  
+Manuel olarak bir depo eklemek için özel bir `.repo` dosyası oluşturabilirsiniz.
+
+1. **`/etc/yum.repos.d/` dizininde bir `.repo` dosyası oluşturun:**
+
+```bash
+sudo nano /etc/yum.repos.d/custom.repo
+```
+
+2. **Depo ayrıntılarını ekleyin:**
+Örneğin:
+
+```ini
+[custom-repo]
+name=Custom Repository
+baseurl=http://example.com/repo/
+enabled=1
+gpgcheck=1
+gpgkey=http://example.com/repo/RPM-GPG-KEY
+```
+
+3. **Dosyayı kaydedin ve depo listesini güncelleyin:**
+
+```bash
+sudo dnf makecache
+```
+
+4. **Depoyu test edin:**
+Özel depo:
+
+```bash
+sudo dnf install <paket-adı>
+```
 
 ---
 
-### **Conclusion**  
+#### **5. Üçüncü Taraf Depoları Ekleme**
 
-Adding additional repositories in AlmaLinux unlocks a wealth of software and ensures you can tailor your system to meet specific needs. By following the steps outlined in this guide, you can easily add, manage, and maintain repositories while adhering to best practices for system stability and security.  
+Remi veya MySQL depoları gibi üçüncü taraf depoları genellikle popüler yazılımların daha yeni sürümlerini sağlar.
 
-Whether you're installing packages from trusted third-party sources like EPEL and RPM Fusion or setting up custom repositories for internal use, AlmaLinux provides the flexibility you need to enhance your system.  
+##### Remi deposunu ekleyin
 
-Explore the potential of AlmaLinux by integrating the right repositories into your setup today!  
+1. Depoyu yükleyin:
+
+```bash
+sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-$(rpm -E %rhel).rpm
+```
+
+2. Belirli bir depo dalını etkinleştirin (örneğin, PHP 8.2):
+
+```bash
+sudo dnf module enable php:remi-8.2
+```
+
+3. Paketi yükleyin:
+
+```bash
+sudo dnf install php
+```
 
 ---
 
-*Do you have a favorite repository or experience with adding repositories on AlmaLinux? Share your thoughts in the comments below!*  
+### **Depoları Yönetme**
+
+#### **1. Depoları Listeleme**
+
+Etkinleştirilmiş tüm depoları görüntüle:
+
+```bash
+sudo dnf repolist enabled
+```
+
+Etkinleştirilmiş ve devre dışı bırakılmış tüm depoları görüntüle:
+
+```bash
+sudo dnf repolist all
+```
+
+#### **2. Depoları Etkinleştirme/Devre Dışı Bırakma**
+
+Bir depoyu etkinleştir:
+
+```bash
+sudo dnf config-manager --set-enabled <depo-adı>
+```
+
+Bir depoyu devre dışı bırak:
+
+```bash
+sudo dnf config-manager --set-disabled <depo-adı>
+```
+
+#### **3. Bir Depoyu Kaldırma**
+
+Bir depoyu kaldırmak için, `.repo` dosyasını silin:
+
+```bash
+sudo rm /etc/yum.repos.d/<depo-adı>.repo
+```
+
+Ardından önbelleği temizleyin:
+
+```bash
+sudo dnf clean all
+```
+
+---
+
+### **Depo Yönetimi İçin En İyi Uygulamalar**
+
+1. **Güvenilir Kaynakları Kullanın**: Güvenlik risklerinden kaçınmak için yalnızca güvenilir kaynaklardan depolar ekleyin.
+
+2. **GPG Anahtarlarını Doğrulayın**: Paketlerin bütünlüğünü sağlamak için her zaman GPG anahtarlarını doğrulayın.
+
+3. **Depo Çakışmalarından Kaçının**: Aynı paketleri sağlayan birden fazla depo çakışmalara neden olabilir. Gerekirse öncelik ayarlarını kullanın.
+
+4. **Düzenli Güncellemeler**: Uyumluluk sorunlarından kaçınmak için depolarınızı güncel tutun.
+5. **Yedekleme Yapılandırmaları**: Değişiklik yapmadan önce `.repo` dosyalarını yedekleyin.
+
+---
+
+### **Sonuç**
+
+AlmaLinux'a ek depolar eklemek, çok sayıda yazılımın kilidini açar ve sisteminizi belirli ihtiyaçları karşılayacak şekilde uyarlayabilmenizi sağlar. Bu kılavuzda özetlenen adımları izleyerek, sistem kararlılığı ve güvenliği için en iyi uygulamalara bağlı kalırken depoları kolayca ekleyebilir, yönetebilir ve koruyabilirsiniz.
+
+EPEL ve RPM Fusion gibi güvenilir üçüncü taraf kaynaklardan paketler yüklüyor veya dahili kullanım için özel depolar kuruyor olun, AlmaLinux sisteminizi geliştirmek için ihtiyaç duyduğunuz esnekliği sağlar.
+
+Bugün kurulumunuza doğru depoları entegre ederek AlmaLinux'un potansiyelini keşfedin!
+
+---
+
+*AlmaLinux'a depo ekleme konusunda favori bir deponuz veya deneyiminiz var mı? Düşüncelerinizi aşağıdaki yorumlarda paylaşın!*
