@@ -6,7 +6,7 @@ translationKey: how-to-update-freebsd-with-freebsd-update-fetch-install-on-freeb
 description: This article provides a step-by-step guide on how to update FreeBSD using the `freebsd-update fetch install` command.
 url: how-to-update-freebsd-with-freebsd-update-fetch-install-on-freebsd-operating-system
 date: 2025-03-05
-weight: 280
+weight: 30
 keywords:
   - FreeBSD
   - update

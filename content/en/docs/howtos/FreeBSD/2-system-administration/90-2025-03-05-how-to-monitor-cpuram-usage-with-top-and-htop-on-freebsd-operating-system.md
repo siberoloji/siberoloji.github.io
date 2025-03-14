@@ -6,7 +6,7 @@ translationKey: how-to-monitor-cpuram-usage-with-top-and-htop-on-freebsd-operati
 description: This article explains how to use the `top` and `htop` commands to monitor CPU and RAM usage on FreeBSD.
 url: how-to-monitor-cpuram-usage-with-top-and-htop-on-freebsd-operating-system
 date: 2023-03-05
-weight: 340
+weight: 90
 keywords:
   - FreeBSD
 tags:

@@ -1,105 +1,104 @@
 ---
-title: How to Set Up and Use SELinux on AlmaLinux
-description: This guide walks you through the process of setting up, configuring, and using SELinux on AlmaLinux to secure your system effectively.
+title: AlmaLinux'ta SELinux Nasıl Kurulur ve Kullanılır
+description: Bu kılavuz, sisteminizi etkili bir şekilde güvence altına almak için AlmaLinux'ta SELinux'u kurma, yapılandırma ve kullanma sürecinde size yol gösterir.
 date: 2024-11-30
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: SELinux on AlmaLinux
+linkTitle: AlmaLinux'ta SELinux
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 30
 translationKey: how-to-set-up-and-use-selinux-on-almalinux
 keywords:
   - AlmaLinux
   - SELinux on AlmaLinux
-
 featured_image: /images/almalinux.webp
-url: set-selinux-almalinux
+url: /tr/set-selinux-almalinux
 ---
-Security-Enhanced Linux (SELinux) is a mandatory access control (MAC) security mechanism implemented in the Linux kernel. It provides an additional layer of security by enforcing access policies that regulate how processes and users interact with system resources. AlmaLinux, a robust, open-source alternative to CentOS, comes with SELinux enabled by default, but understanding its configuration and management is crucial for optimizing your system's security.
+Güvenlik Geliştirilmiş Linux (SELinux), Linux çekirdeğinde uygulanan zorunlu bir erişim denetimi (MAC) güvenlik mekanizmasıdır. İşlemlerin ve kullanıcıların sistem kaynaklarıyla nasıl etkileşime girdiğini düzenleyen erişim politikalarını uygulayarak ek bir güvenlik katmanı sağlar. CentOS'a sağlam, açık kaynaklı bir alternatif olan AlmaLinux, varsayılan olarak SELinux etkin olarak gelir, ancak yapılandırmasını ve yönetimini anlamak sisteminizin güvenliğini optimize etmek için çok önemlidir.
 
-This guide walks you through the process of setting up, configuring, and using SELinux on AlmaLinux to secure your system effectively.
-
----
-
-### **What Is SELinux and Why Is It Important?**
-
-SELinux enhances security by restricting what actions processes can perform on a system. Unlike traditional discretionary access control (DAC) systems, SELinux applies strict policies that limit potential damage from exploited vulnerabilities. For example, if a web server is compromised, SELinux can prevent it from accessing sensitive files or making unauthorized changes to the system.
-
-**Key Features of SELinux:**
-
-1. **Mandatory Access Control (MAC):** Strict policies dictate access rights.
-2. **Confined Processes:** Processes run with the least privilege necessary.
-3. **Logging and Auditing:** Monitors unauthorized access attempts.
+Bu kılavuz, sisteminizi etkili bir şekilde güvence altına almak için AlmaLinux'ta SELinux'u kurma, yapılandırma ve kullanma sürecinde size yol gösterir.
 
 ---
 
-### **Step 1: Check SELinux Status**
+### **SELinux Nedir ve Neden Önemlidir?**
 
-Before configuring SELinux, determine its current status using the `sestatus` command:
+SELinux, işlemlerin bir sistemde gerçekleştirebileceği eylemleri kısıtlayarak güvenliği artırır. Geleneksel takdir yetkisine bağlı erişim denetimi (DAC) sistemlerinin aksine, SELinux, istismar edilen güvenlik açıklarından kaynaklanan olası hasarı sınırlayan katı politikalar uygular. Örneğin, bir web sunucusu tehlikeye atılırsa, SELinux hassas dosyalara erişmesini veya sistemde yetkisiz değişiklikler yapmasını önleyebilir.
+
+**SELinux'un Temel Özellikleri:**
+
+1. **Zorunlu Erişim Kontrolü (MAC):** Sıkı politikalar erişim haklarını belirler.
+2. **Sınırlı İşlemler:** İşlemler gereken en az ayrıcalıkla çalışır.
+3. **Günlük Kaydı ve Denetim:** Yetkisiz erişim girişimlerini izler.
+
+---
+
+### **Adım 1: SELinux Durumunu Kontrol Etme**
+
+SELinux'u yapılandırmadan önce, `sestatus` komutunu kullanarak geçerli durumunu belirleyin:
 
 ```bash
 sestatus
 ```
 
-The output will show:
+Çıktı şunları gösterecektir:
 
-- **SELinux status:** Enabled or disabled.
-- **Current mode:** Enforcing, permissive, or disabled.
-- **Policy:** The active SELinux policy in use.
+- **SELinux durumu:** Etkin veya devre dışı.
+- **Geçerli mod:** Zorlayıcı, izin verici veya devre dışı.
+- **Politika:** Kullanımda olan etkin SELinux politikası.
 
 ---
 
-### **Step 2: Understand SELinux Modes**
+### **Adım 2: SELinux Modlarını Anlayın**
 
-SELinux operates in three modes:
+SELinux üç modda çalışır:
 
-1. **Enforcing:** Fully enforces SELinux policies. Unauthorized actions are blocked and logged.
-2. **Permissive:** SELinux policies are not enforced but violations are logged. Ideal for testing.
-3. **Disabled:** SELinux is completely turned off.
+1. **Uygulama:** SELinux politikalarını tamamen uygular. Yetkisiz eylemler engellenir ve kaydedilir.
+2. **İzin Verici:** SELinux politikaları uygulanmaz ancak ihlaller kaydedilir. Test için idealdir.
+3. **Devre Dışı:** SELinux tamamen kapatılır.
 
-To check the current mode:
+Mevcut modu kontrol etmek için:
 
 ```bash
 getenforce
 ```
 
-To switch between modes temporarily:
+Modlar arasında geçici olarak geçiş yapmak için:
 
-- Set to permissive:
+- İzin verici olarak ayarlayın:
 
-  ```bash
-  sudo setenforce 0
-  ```
+```bash
+sudo setenforce 0
+```
 
-- Set to enforcing:
+- Zorlayıcı olarak ayarlayın:
 
-  ```bash
-  sudo setenforce 1
-  ```
+```bash
+sudo setenforce 1
+```
 
 ---
 
-### **Step 3: Enable or Disable SELinux**
+### **Adım 3: SELinux'u Etkinleştirin veya Devre Dışı Bırakın**
 
-SELinux should always be enabled unless you have a specific reason to disable it. To configure SELinux settings permanently, edit the `/etc/selinux/config` file:
+SELinux, devre dışı bırakmak için özel bir nedeniniz olmadığı sürece her zaman etkinleştirilmelidir. SELinux ayarlarını kalıcı olarak yapılandırmak için `/etc/selinux/config` dosyasını düzenleyin:
 
 ```bash
 sudo nano /etc/selinux/config
 ```
 
-Modify the `SELINUX` directive as needed:
+`SELINUX` yönergesini gerektiği gibi değiştirin:
 
 ```plaintext
-SELINUX=enforcing    # Enforces SELinux policies
-SELINUX=permissive   # Logs violations without enforcement
-SELINUX=disabled     # Turns off SELinux
+SELINUX=enforcing # SELinux politikalarını uygular
+SELINUX=permissive # Uygulama olmadan ihlalleri günlüğe kaydeder
+SELINUX=disabled # SELinux'u kapatır
 ```
 
-Save the file and reboot the system to apply changes:
+Dosyayı kaydedin ve değişiklikleri uygulamak için sistemi yeniden başlatın:
 
 ```bash
 sudo reboot
@@ -107,14 +106,14 @@ sudo reboot
 
 ---
 
-### **Step 4: SELinux Policy Types**
+### **Adım 4: SELinux Politika Türleri**
 
-SELinux uses policies to define access rules for various services and processes. The most common policy types are:
+SELinux, çeşitli hizmetler ve işlemler için erişim kurallarını tanımlamak üzere politikalar kullanır. En yaygın politika türleri şunlardır:
 
-- **Targeted:** Only specific processes are confined. This is the default policy in AlmaLinux.
-- **MLS (Multi-Level Security):** A more complex policy, typically used in highly sensitive environments.
+- **Hedeflenen:** Yalnızca belirli işlemler sınırlandırılır. Bu, AlmaLinux'taki varsayılan politikadır.
+- **MLS (Çok Düzeyli Güvenlik):** Genellikle son derece hassas ortamlarda kullanılan daha karmaşık bir politikadır.
 
-To view the active policy:
+Etkin politikayı görüntülemek için:
 
 ```bash
 sestatus
@@ -122,30 +121,30 @@ sestatus
 
 ---
 
-### **Step 5: Manage File and Directory Contexts**
+### **Adım 5: Dosya ve Dizin Bağlamlarını Yönetin**
 
-SELinux assigns security contexts to files and directories to control access. Contexts consist of four attributes:
+SELinux, erişimi kontrol etmek için dosyalara ve dizinlere güvenlik bağlamları atar. Bağlamlar dört nitelikten oluşur:
 
-1. **User:** SELinux user (e.g., `system_u`, `unconfined_u`).
-2. **Role:** Defines the role of the user or process.
-3. **Type:** Determines how a resource is accessed (e.g., `httpd_sys_content_t` for web server files).
-4. **Level:** Used in MLS policies.
+1. **Kullanıcı:** SELinux kullanıcısı (örn. `system_u`, `unconfined_u`).
+2. **Rol:** Kullanıcının veya işlemin rolünü tanımlar.
+3. **Tür:** Bir kaynağa nasıl erişileceğini belirler (örn. web sunucusu dosyaları için `httpd_sys_content_t`).
+4. **Seviye:** MLS politikalarında kullanılır.
 
-To check the context of a file:
+Bir dosyanın bağlamını kontrol etmek için:
 
 ```bash
 ls -Z /path/to/file
 ```
 
-#### **Changing SELinux Contexts:**
+#### **SELinux Bağlamlarını Değiştirme:**
 
-To change the context of a file or directory, use the `chcon` command:
+Bir dosya veya dizinin bağlamını değiştirmek için `chcon` komutunu kullanın:
 
 ```bash
 sudo chcon -t type /path/to/file
 ```
 
-For example, to assign the `httpd_sys_content_t` type to a web directory:
+Örneğin, `httpd_sys_content_t` türünü bir web dizinine atamak için:
 
 ```bash
 sudo chcon -R -t httpd_sys_content_t /var/www/html
@@ -153,34 +152,34 @@ sudo chcon -R -t httpd_sys_content_t /var/www/html
 
 ---
 
-### **Step 6: Using SELinux Booleans**
+### **Adım 6: SELinux Boolean'larını Kullanma**
 
-SELinux Booleans allow you to toggle specific policy rules on or off without modifying the policy itself. This provides flexibility for administrators to enable or disable features dynamically.
+SELinux Boolean'ları, politikanın kendisini değiştirmeden belirli politika kurallarını açmanıza veya kapatmanıza olanak tanır. Bu, yöneticilere özellikleri dinamik olarak etkinleştirme veya devre dışı bırakma esnekliği sağlar.
 
-#### **Viewing Booleans:**
+#### **Boolean'ları Görüntüleme:**
 
-To list all SELinux Booleans:
+Tüm SELinux Boolean'larını listelemek için:
 
 ```bash
 getsebool -a
 ```
 
-#### **Modifying Booleans:**
+#### **Boolean'ları Değiştirme:**
 
-To enable or disable a Boolean temporarily:
+Bir Boolean'ı geçici olarak etkinleştirmek veya devre dışı bırakmak için:
 
 ```bash
 sudo setsebool boolean_name on
 sudo setsebool boolean_name off
 ```
 
-To make changes persistent across reboots:
+Değişiklikleri yeniden başlatmalar boyunca kalıcı hale getirmek için:
 
 ```bash
 sudo setsebool -P boolean_name on
 ```
 
-Example: Allowing HTTPD to connect to a database:
+Örnek: HTTPD'nin bir veritabanına bağlanmasına izin verme:
 
 ```bash
 sudo setsebool -P httpd_can_network_connect_db on
@@ -188,21 +187,21 @@ sudo setsebool -P httpd_can_network_connect_db on
 
 ---
 
-### **Step 7: Troubleshooting SELinux Issues**
+### **Adım 7: SELinux Sorunlarını Giderme**
 
-SELinux logs all violations in the `/var/log/audit/audit.log` file. These logs are invaluable for diagnosing and resolving issues.
+SELinux, tüm ihlalleri `/var/log/audit/audit.log` dosyası. Bu günlükler sorunları teşhis etmek ve çözmek için paha biçilmezdir.
 
-#### **Analyzing Logs with `ausearch`:**
+#### **`ausearch` ile Günlükleri Analiz Etme:**
 
-The `ausearch` tool simplifies log analysis:
+`ausearch` aracı günlük analizini basitleştirir:
 
 ```bash
 sudo ausearch -m avc -ts recent
 ```
 
-#### **Using `sealert`:**
+#### **`sealert` Kullanımı:**
 
-The `sealert` tool, part of the `setroubleshoot-server` package, provides detailed explanations and solutions for SELinux denials:
+`setroubleshoot-server` paketinin bir parçası olan `sealert` aracı, SELinux redleri için ayrıntılı açıklamalar ve çözümler sağlar:
 
 ```bash
 sudo yum install setroubleshoot-server
@@ -211,9 +210,9 @@ sudo sealert -a /var/log/audit/audit.log
 
 ---
 
-### **Step 8: Restoring Default Contexts**
+### **Adım 8: Varsayılan Bağlamları Geri Yükleme**
 
-If a file or directory has an incorrect context, SELinux may deny access. Restore the default context with the `restorecon` command:
+Bir dosya veya dizinin yanlış bir bağlamı varsa, SELinux erişimi reddedebilir. Varsayılan bağlamı `restorecon` komutuyla geri yükleyin:
 
 ```bash
 sudo restorecon -R /path/to/directory
@@ -221,50 +220,49 @@ sudo restorecon -R /path/to/directory
 
 ---
 
-### **Step 9: SELinux for Common Services**
+### **Adım 9: Ortak Hizmetler için SELinux**
 
 #### **1. Apache (HTTPD):**
 
-- Ensure web content has the correct type:
+- Web içeriğinin doğru türde olduğundan emin olun:
 
-  ```bash
-  sudo chcon -R -t httpd_sys_content_t /var/www/html
-  ```
+```bash
+sudo chcon -R -t httpd_sys_content_t /var/www/html
+```
 
-- Allow HTTPD to listen on non-standard ports:
+- HTTPD'nin standart olmayan bağlantı noktalarını dinlemesine izin verin:
 
-  ```bash
-  sudo semanage port -a -t http_port_t -p tcp 8080
-  ```
+```bash
+sudo semanage port -a -t http_port_t -p tcp 8080
+```
 
 #### **2. SSH:**
 
-- Restrict SSH access to certain users using SELinux roles.
-- Allow SSH to use custom ports:
+- SSH erişimini SELinux rollerini kullanan belirli kullanıcılarla sınırlayın. - SSH'nin özel portları kullanmasına izin ver:
 
-  ```bash
-  sudo semanage port -a -t ssh_port_t -p tcp 2222
-  ```
+```bash
+sudo semanage port -a -t ssh_port_t -p tcp 2222
+```
 
 #### **3. NFS:**
 
-- Use the appropriate SELinux type (`nfs_t`) for shared directories:
+- Paylaşılan dizinler için uygun SELinux türünü (`nfs_t`) kullanın:
 
-  ```bash
-  sudo chcon -R -t nfs_t /shared/directory
-  ```
+```bash
+sudo chcon -R -t nfs_t /shared/directory
+```
 
 ---
 
-### **Step 10: Disabling SELinux Temporarily**
+### **Adım 10: SELinux'u Geçici Olarak Devre Dışı Bırakma**
 
-In rare cases, you may need to disable SELinux temporarily for troubleshooting:
+Nadir durumlarda, sorun giderme için SELinux'u geçici olarak devre dışı bırakmanız gerekebilir:
 
 ```bash
 sudo setenforce 0
 ```
 
-Remember to revert it back to enforcing mode once the issue is resolved:
+Sorun çözüldükten sonra zorlama moduna geri döndürmeyi unutmayın:
 
 ```bash
 sudo setenforce 1
@@ -272,6 +270,6 @@ sudo setenforce 1
 
 ---
 
-### **Conclusion**
+### **Sonuç**
 
-SELinux is a powerful tool for securing your AlmaLinux system, but it requires a good understanding of its policies and management techniques. By enabling and configuring SELinux properly, you can significantly enhance your server’s security posture. Use this guide as a starting point to implement SELinux effectively in your environment, and remember to regularly audit and review your SELinux policies to adapt to evolving security needs.
+SELinux, AlmaLinux sisteminizi güvence altına almak için güçlü bir araçtır, ancak politikaları ve yönetim teknikleri hakkında iyi bir anlayış gerektirir. SELinux'u düzgün bir şekilde etkinleştirerek ve yapılandırarak sunucunuzun güvenlik duruşunu önemli ölçüde iyileştirebilirsiniz. Bu kılavuzu, SELinux'u ortamınızda etkili bir şekilde uygulamak için bir başlangıç ​​noktası olarak kullanın ve gelişen güvenlik gereksinimlerine uyum sağlamak için SELinux politikalarınızı düzenli olarak denetlemeyi ve incelemeyi unutmayın.

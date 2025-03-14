@@ -3,7 +3,7 @@ draft: false
 title: List of 500 Computer Algorithms from Simple to Complex
 linkTitle: List of 500 Computer Algorithms
 translationKey: algorithms-500-computer-algorithms
-description: A list of 500 computer algorithms from simple to complex with brief explanations. Includes basic, intermediate, advanced, specialized, and domain-specific algorithms.
+description: A list of 500 computer algorithms from simple to complex with brief explanations. Includes basic, intermediate, advanced, specialized algorithms.
 url: 500-computer-algorithms-from-simple-to-complex
 weight: 1
 date: 2025-02-24
@@ -29,19 +29,19 @@ Computer algorithms are step-by-step procedures for solving problems or accompli
 5. **[Exponential Search](/exponential-search-in-computer-algorithms/)**: This method finds a range where the element might exist and then applies a binary search. It is useful for unbounded or infinite arrays.
 6. **[Ternary Search](/ternary-search-in-computer-algorithms/)**: Similar to binary search but divides the array into three parts instead of two. Useful for finding extrema in unimodal functions.
 7. **[Fibonacci Search](/fibonacci-search-in-computer-algorithms/)**: Uses Fibonacci numbers to divide the array, requiring only addition operations. Works well with arrays that can't be randomly accessed.
-8. **Sentinel Linear Search**: Enhances linear search by adding the target at the end to eliminate boundary checks. Slightly more efficient than a standard linear search.
-9. **Ubiquitous Binary Search**: A binary search implementation designed to avoid common pitfalls and edge cases. Handles special cases like duplicates elegantly.
-10. **Meta Binary Search**: A variant of binary search that uses fewer comparisons. Also known as one-sided binary search.
+8. **[Sentinel Linear Search](/sentinel-linear-search-in-computer-algorithms/)**: Enhances linear search by adding the target at the end to eliminate boundary checks. Slightly more efficient than a standard linear search.
+9. **[Ubiquitous Binary Search](/ubiquitous-binary-search-in-computer-algorithms/)**: A binary search implementation designed to avoid common pitfalls and edge cases. Handles special cases like duplicates elegantly.
+10. **[Meta Binary Search](/meta-binary-search-in-computer-algorithms/)**: A variant of binary search that uses fewer comparisons. Also known as one-sided binary search.
 
 ### Sorting Algorithms
 
-1. **Bubble Sort**: Repeated steps through the list, comparing adjacent elements and swapping them if in the wrong order. Simple but inefficient for large lists.
-2. **Selection Sort**: Finds the minimum element and puts it at the beginning, then repeats for the remaining elements. Simple but inefficient for large datasets.
-3. **Insertion Sort**: Builds the sorted array one item at a time by inserting each element in its proper position. Efficient for small or nearly sorted datasets.
-4. **Merge Sort**: Divides the array into halves, sorts them recursively, then merges them. Offers consistent O(n log n) performance regardless of input.
-5. **Quick Sort**: Selects a pivot element and partitions the array around it, then recursively sorts the partitions. Fast in practice but has worst-case scenarios.
-6. **Heap Sort**: Uses a binary heap data structure to build a max/min heap and sort elements. Combines the speed of quick sort with the consistency of merge sort.
-7. **Counting Sort**: Counts occurrences of each value and reconstructs the sorted array. Very efficient for small integer ranges but uses extra space.
+1. **[Bubble Sort](/bubble-sort-in-computer-algorithms/)**: Repeated steps through the list, comparing adjacent elements and swapping them if in the wrong order. Simple but inefficient for large lists.
+2. **[Selection Sort](/selection-sort-in-computer-algorithms/)**: Finds the minimum element and puts it at the beginning, then repeats for the remaining elements. Simple but inefficient for large datasets.
+3. **[Insertion Sort](/insertion-sort-in-computer-algorithms/)**: Builds the sorted array one item at a time by inserting each element in its proper position. Efficient for small or nearly sorted datasets.
+4. **[Merge Sort](/merge-sort-in-computer-algorithms/)**: Divides the array into halves, sorts them recursively, then merges them. Offers consistent O(n log n) performance regardless of input.
+5. **[Quick Sort](/quick-sort-in-computer-algorithms/)**: Selects a pivot element and partitions the array around it, then recursively sorts the partitions. Fast in practice but has worst-case scenarios.
+6. **[Heap Sort](/heap-sort-in-computer-algorithms/)**: Uses a binary heap data structure to build a max/min heap and sort elements. Combines the speed of quick sort with the consistency of merge sort.
+7. **[Counting Sort](/counting-sort-in-computer-algorithms/)**: Counts occurrences of each value and reconstructs the sorted array. Very efficient for small integer ranges but uses extra space.
 8. **Radix Sort**: Sort numbers by processing individual digits from least to most significant. Linear time complexity but requires extra space.
 9. **Bucket Sort**: Distributes elements into buckets, sorts the buckets, and then concatenates them. Works well with uniformly distributed data.
 10. **Shell Sort**: Improves insertion sort by comparing elements separated by gaps. A practical algorithm for medium-sized arrays.

@@ -6,7 +6,7 @@ translationKey: how-to-set-the-timezone-using-tzsetup-on-freebsd-operating-syste
 description: How to Set the Timezone Using `tzsetup`
 url: how-to-set-the-timezone-using-tzsetup-on-freebsd-operating-system
 date: 2025-03-05
-weight: 330
+weight: 80
 keywords:
   - FreeBSD
   - timezone

@@ -1,46 +1,44 @@
 ---
-title: How to Set Up Firewalld, Ports, and Zones on AlmaLinux
-description: Learn how to configure firewalld on AlmaLinux. Open ports, manage zones, and apply advanced firewall rules with this comprehensive guide.
+title: AlmaLinux'ta Güvenlik Duvarı, Portlar ve Bölgeler Nasıl Kurulur
+description: AlmaLinux'ta güvenlik duvarını nasıl yapılandıracağınızı öğrenin. Bu kapsamlı kılavuzla portları açın, bölgeleri yönetin ve gelişmiş güvenlik duvarı kurallarını uygulayın.
 date: 2024-11-29
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Firewalld, Ports, and Zones
-
+linkTitle: Güvenlik Duvarı, Portlar ve Bölgeler
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 20
-
 keywords:
   - AlmaLinux
   - firewalld
 translationKey: how-to-set-up-firewalld-ports-and-zones-on-almalinux
 featured_image: /images/almalinux.webp
-url: set-firewalld-ports-zones-almalinux
+url: /tr/set-firewalld-ports-zones-almalinux
 ---
-A properly configured firewall is essential for securing any Linux system, including AlmaLinux. Firewalls control the flow of traffic to and from your system, ensuring that only authorized communications are allowed. AlmaLinux leverages the powerful and flexible **firewalld** service to manage firewall settings. This guide will walk you through setting up and managing firewalls, ports, and zones on AlmaLinux with detailed examples.
-
----
-
-## **1. Introduction to firewalld**
-
-Firewalld is the default firewall management tool on AlmaLinux. It uses the concept of **zones** to group rules and manage network interfaces, making it easy to configure complex firewall settings. Here's a quick breakdown:
-
-- **Zones** define trust levels for network connections (e.g., public, private, trusted).
-
-- **Ports** control the allowed traffic based on specific services or applications.
-
-- **Rich Rules** enable advanced configurations like IP whitelisting or time-based access.
-
-Before proceeding, ensure that firewalld is installed and running on your AlmaLinux system.
+AlmaLinux dahil olmak üzere herhangi bir Linux sistemini güvence altına almak için düzgün yapılandırılmış bir güvenlik duvarı olmazsa olmazdır. Güvenlik duvarları, sisteminize giden ve sisteminizden giden trafiği kontrol ederek yalnızca yetkili iletişimlere izin verilmesini sağlar. AlmaLinux, güvenlik duvarı ayarlarını yönetmek için güçlü ve esnek **firewalld** hizmetinden yararlanır. Bu kılavuz, AlmaLinux'ta güvenlik duvarlarını, bağlantı noktalarını ve bölgeleri ayrıntılı örneklerle kurma ve yönetme konusunda size yol gösterecektir.
 
 ---
 
-## **2. Installing and Starting firewalld**
+## **1. Firewalld'ye giriş**
 
-Firewalld is typically pre-installed on AlmaLinux. If it isn’t, you can install it using the following commands:
+Firewalld, AlmaLinux'taki varsayılan güvenlik duvarı yönetim aracıdır. Kuralları gruplamak ve ağ arayüzlerini yönetmek için **bölgeler** kavramını kullanır ve karmaşık güvenlik duvarı ayarlarını yapılandırmayı kolaylaştırır. İşte kısa bir döküm:
+
+- **Bölgeler** ağ bağlantıları için güven düzeylerini tanımlar (ör. genel, özel, güvenilir).
+
+- **Bağlantı noktaları** belirli hizmetlere veya uygulamalara göre izin verilen trafiği kontrol eder.
+
+- **Zengin Kurallar** IP beyaz listeleme veya zamana dayalı erişim gibi gelişmiş yapılandırmaları etkinleştirir.
+
+Devam etmeden önce, AlmaLinux sisteminizde firewalld'nin kurulu ve çalışır durumda olduğundan emin olun.
+
+---
+
+## **2. Firewalld'yi Kurma ve Başlatma**
+
+Firewalld genellikle AlmaLinux'a önceden kurulur. Değilse, aşağıdaki komutları kullanarak kurabilirsiniz:
 
 ```bash
 
@@ -48,37 +46,37 @@ sudo dnf install firewalld
 
 ```
 
-Once installed, start and enable the firewalld service to ensure it runs on boot:
+Kurulumdan sonra, önyükleme sırasında çalıştığından emin olmak için firewalld hizmetini başlatın ve etkinleştirin:
 
 ```bash
 
-sudo systemctl start firewalld
+sudo systemctl start fired
 
-sudo systemctl enable firewalld
+sudo systemctl enable fired
 
 ```
 
-To verify its status, use:
+Durumunu doğrulamak için şunu kullanın:
 
 ```bash
 
-sudo systemctl status firewalld
+sudo systemctl status fired
 
 ```
 
 ---
 
-## **3. Understanding Zones in firewalld**
+## **3. Firewalld'deki Bölgeleri Anlama**
 
-Firewalld zones represent trust levels assigned to network interfaces. Common zones include:
+Firewalld bölgeleri, ağ arayüzlerine atanan güven düzeylerini temsil eder. Yaygın bölgeler şunlardır:
 
-- **Public:** Minimal trust; typically used for public networks.
+- **Genel:** Minimum güven; genellikle genel ağlar için kullanılır.
 
-- **Private:** Trusted zone for personal or private networks.
+- **Özel:** Kişisel veya özel ağlar için güvenilir bölge.
 
-- **Trusted:** Highly trusted zone; allows all connections.
+- **Güvenilir:** Son derece güvenilir bölge; tüm bağlantılara izin verir.
 
-To view all available zones, run:
+Kullanılabilir tüm bölgeleri görüntülemek için şunu çalıştırın:
 
 ```bash
 
@@ -86,7 +84,7 @@ sudo firewall-cmd --get-zones
 
 ```
 
-To check the current zone of your active network interface:
+Etkin ağ arayüzünüzün geçerli bölgesini kontrol etmek için:
 
 ```bash
 
@@ -94,9 +92,9 @@ sudo firewall-cmd --get-active-zones
 
 ```
 
-### **Assigning a Zone to an Interface**
+### **Bir Arayüze Bölge Atama**
 
-To assign a specific zone to a network interface (e.g., `eth0`):
+Bir ağ arayüzüne belirli bir bölge atamak için (örneğin, `eth0`):
 
 ```bash
 
@@ -106,17 +104,17 @@ sudo firewall-cmd --reload
 
 ```
 
-The `--permanent` flag ensures the change persists after reboots.
+`--permanent` bayrağı, değişikliğin yeniden başlatmalardan sonra da devam etmesini sağlar.
 
 ---
 
-## **4. Opening and Managing Ports**
+## **4. Bağlantı Noktalarını Açma ve Yönetme**
 
-A firewall controls access to services using **ports**. For example, SSH uses port 22, while HTTP and HTTPS use ports 80 and 443 respectively.
+Bir güvenlik duvarı, **bağlantı noktalarını** kullanarak hizmetlere erişimi kontrol eder. Örneğin, SSH 22 numaralı bağlantı noktasını kullanırken, HTTP ve HTTPS sırasıyla 80 ve 443 numaralı bağlantı noktalarını kullanır.
 
-### **Opening a Port**
+### **Bir Port Açma**
 
-To open a specific port, such as HTTP (port 80):
+HTTP (port 80) gibi belirli bir portu açmak için:
 
 ```bash
 
@@ -124,7 +122,7 @@ sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
 
 ```
 
-Reload the firewall to apply the change:
+Değişikliği uygulamak için güvenlik duvarını yeniden yükleyin:
 
 ```bash
 
@@ -132,9 +130,9 @@ sudo firewall-cmd --reload
 
 ```
 
-### **Listing Open Ports**
+### **Açık Portları Listeleme**
 
-To view all open ports in a specific zone:
+Belirli bir bölgedeki tüm açık portları görüntülemek için:
 
 ```bash
 
@@ -142,9 +140,9 @@ sudo firewall-cmd --zone=public --list-ports
 
 ```
 
-### **Closing a Port**
+### **Bir Portu Kapatma**
 
-To remove a previously opened port:
+Daha önce açılmış bir portu kaldırmak için:
 
 ```bash
 
@@ -156,9 +154,9 @@ sudo firewall-cmd --reload
 
 ---
 
-## **5. Enabling and Disabling Services**
+## **5. Hizmetleri Etkinleştirme ve Devre Dışı Bırakma**
 
-Instead of opening ports manually, you can allow services by name. For example, to enable SSH:
+Portları manuel olarak açmak yerine, hizmetlere adlarına göre izin verebilirsiniz. Örneğin, SSH'yi etkinleştirmek için:
 
 ```bash
 
@@ -168,7 +166,7 @@ sudo firewall-cmd --reload
 
 ```
 
-To view enabled services for a zone:
+Bir bölge için etkinleştirilmiş hizmetleri görüntülemek için:
 
 ```bash
 
@@ -176,7 +174,7 @@ sudo firewall-cmd --zone=public --list-services
 
 ```
 
-To disable a service:
+Bir hizmeti devre dışı bırakmak için:
 
 ```bash
 
@@ -188,13 +186,13 @@ sudo firewall-cmd --reload
 
 ---
 
-## **6. Advanced Configurations with Rich Rules**
+## **6. Zengin Kurallarla Gelişmiş Yapılandırmalar**
 
-Rich rules provide granular control over traffic, allowing advanced configurations like IP whitelisting, logging, or time-based rules.
+Zengin kurallar, trafik üzerinde ayrıntılı denetim sağlayarak IP beyaz listeleme, günlük kaydı veya zaman tabanlı kurallar gibi gelişmiş yapılandırmalara izin verir.
 
-### **Example 1: Allow Traffic from a Specific IP**
+### **Örnek 1: Belirli Bir IP'den Gelen Trafiğe İzin Ver**
 
-To allow traffic only from a specific IP address:
+Yalnızca belirli bir IP adresinden gelen trafiğe izin vermek için:
 
 ```bash
 
@@ -204,13 +202,13 @@ sudo firewall-cmd --reload
 
 ```
 
-### **Example 2: Log Dropped Packets**
+### **Örnek 2: Bırakılan Paketleri Kaydetme**
 
-To log packets dropped by the firewall for debugging:
+Hata ayıklama için güvenlik duvarı tarafından bırakılan paketleri kaydetmek için:
 
 ```bash
 
-sudo firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="192.168.1.0/24" log prefix="Firewall:" level="info" drop' --permanent
+sudo firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="192.168.1.0/24" log prefix="Güvenlik Duvarı:" level="info" drop' --permanent
 
 sudo firewall-cmd --reload
 
@@ -218,9 +216,9 @@ sudo firewall-cmd --reload
 
 ---
 
-## **7. Using firewalld in GUI (Optional)**
+## **7. GUI'de Firewalld Kullanımı (İsteğe bağlı)**
 
-For those who prefer a graphical interface, firewalld provides a GUI tool. Install it using:
+Grafiksel bir arayüz tercih edenler için, Firewalld bir GUI aracı sağlar. Şunu kullanarak yükleyin:
 
 ```bash
 
@@ -228,7 +226,7 @@ sudo dnf install firewall-config
 
 ```
 
-Launch the GUI tool:
+GUI aracını başlatın:
 
 ```bash
 
@@ -236,15 +234,15 @@ firewall-config
 
 ```
 
-The GUI allows you to manage zones, ports, and services visually.
+GUI, bölgeleri, bağlantı noktalarını ve hizmetleri görsel olarak yönetmenizi sağlar.
 
 ---
 
-## **8. Backing Up and Restoring Firewall Configurations**
+## **8. Güvenlik Duvarı Yapılandırmalarını Yedekleme ve Geri Yükleme**
 
-It’s a good practice to back up your firewall settings to avoid reconfiguring in case of system issues.
+Sistem sorunları durumunda yeniden yapılandırmayı önlemek için güvenlik duvarı ayarlarınızı yedeklemek iyi bir uygulamadır.
 
-### **Backup**
+### **Yedekleme**
 
 ```bash
 
@@ -254,7 +252,7 @@ tar -czf firewall-backup.tar.gz /etc/firewalld
 
 ```
 
-### **Restore**
+### **Geri Yükleme**
 
 ```bash
 
@@ -266,11 +264,11 @@ sudo systemctl restart firewalld
 
 ---
 
-## **9. Testing and Troubleshooting Firewalls**
+## **9. Güvenlik Duvarlarını Test Etme ve Sorun Giderme**
 
-### **Testing Open Ports**
+### **Açık Bağlantı Noktalarını Test Etme**
 
-You can use tools like `telnet` or `nmap` to verify open ports:
+Açık bağlantı noktalarını doğrulamak için `telnet` veya `nmap` gibi araçları kullanabilirsiniz:
 
 ```bash
 
@@ -278,9 +276,9 @@ nmap -p 80 localhost
 
 ```
 
-### **Checking Logs**
+### **Günlükleri Kontrol Etme**
 
-Firewall logs are helpful for troubleshooting. Check them using:
+Güvenlik duvarı günlükleri sorun gidermede yardımcı olur. Bunları kullanarak kontrol edin:
 
 ```bash
 
@@ -290,22 +288,22 @@ sudo journalctl -xe | grep firewalld
 
 ---
 
-## **10. Best Practices for Firewall Management on AlmaLinux**
+## **10. AlmaLinux'ta Güvenlik Duvarı Yönetimi İçin En İyi Uygulamalar**
 
-1. **Minimize Open Ports:** Only open necessary ports for your applications.
+1. **Açık Bağlantı Noktalarını En Aza İndirin:** Uygulamalarınız için yalnızca gerekli bağlantı noktalarını açın.
 
-2. **Use Appropriate Zones:** Assign interfaces to zones based on trust level.
+2. **Uygun Bölgeleri Kullanın:** Bölgelere güven düzeyine göre arayüzler atayın.
 
-3. **Enable Logging:** Use logging for troubleshooting and monitoring unauthorized access attempts.
+3. **Günlük Kaydını Etkinleştirin:** Yetkisiz erişim girişimlerini gidermek ve izlemek için günlük kaydını kullanın.
 
-4. **Automate with Scripts:** For repetitive tasks, create scripts to manage firewall rules.
+4. **Komut Dosyalarıyla Otomatikleştirin:** Tekrarlayan görevler için güvenlik duvarı kurallarını yönetmek üzere komut dosyaları oluşturun.
 
-5. **Regularly Audit Settings:** Periodically review firewall rules and configurations.
+5. **Ayarları Düzenli Olarak Denetleyin:** Güvenlik duvarı kurallarını ve yapılandırmalarını periyodik olarak inceleyin.
 
 ---
 
-## **Conclusion**
+## **Sonuç**
 
-Configuring the firewall, ports, and zones on AlmaLinux is crucial for maintaining a secure system. Firewalld’s flexibility and zone-based approach simplify the process, whether you’re managing a single server or a complex network. By following this guide, you can set up and use firewalld effectively, ensuring your AlmaLinux system remains secure and functional.
+AlmaLinux'ta güvenlik duvarını, bağlantı noktalarını ve bölgeleri yapılandırmak, güvenli bir sistemi sürdürmek için çok önemlidir. Firewalld'nin esnekliği ve bölge tabanlı yaklaşımı, ister tek bir sunucuyu ister karmaşık bir ağı yönetiyor olun, süreci basitleştirir. Bu kılavuzu izleyerek, AlmaLinux sisteminizin güvenli ve işlevsel kalmasını sağlayarak güvenlik duvarını etkili bir şekilde kurabilir ve kullanabilirsiniz.
 
-Do you have any questions or tips for managing firewalls on AlmaLinux? Share them in the comments below!
+AlmaLinux'ta güvenlik duvarlarını yönetmek için herhangi bir sorunuz veya ipucunuz var mı? Aşağıdaki yorumlarda paylaşın!

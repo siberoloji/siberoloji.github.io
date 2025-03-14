@@ -6,7 +6,7 @@ translationKey: how-to-change-the-system-hostname-permanently-on-freebsd-operati
 description: This article will guide you through the process of changing the system hostname permanently on FreeBSD.
 url: how-to-change-the-system-hostname-permanently-on-freebsd-operating-system
 date: 2025-03-05
-weight: 320
+weight: 70
 keywords:
   - FreeBSD
   - change hostname

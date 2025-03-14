@@ -12,26 +12,6 @@ author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 featured_image: 
 ---
 
-
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to reset a forgotten root password  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to check disk space with `df` and `du`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to manage kernel modules with `kldload` and `kldstat`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to set up a swap partition/file  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to use `sysctl` to tune kernel parameters  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to shut down/reboot the system gracefully  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to enable/disable IPv6  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to configure NTP for time synchronization  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to create and manage groups  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to check hardware details with `pciconf` and `usbconfig`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to set file permissions with `chmod` and `chown`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to archive files with `tar` and `gzip`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to use `tmux` or `screen` for terminal multiplexing  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to configure locale settings  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to back up critical system files  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to install packages using `pkg install`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to update the package repository with `pkg update`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to upgrade all packages with `pkg upgrade`  on FreeBSD Operating System"
-Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to build software from the Ports Collection  on FreeBSD Operating System"
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to create a local package repository with `pkg repo`  on FreeBSD Operating System"
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to resolve "package conflicts" during installation  on FreeBSD Operating System"
 Write me a detailed blog post of at least 1200 words with an informative and moderate tone about " How to uninstall packages and clean dependencies  on FreeBSD Operating System"

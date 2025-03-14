@@ -6,7 +6,7 @@ translationKey: how-to-schedule-tasks-with-cron-and-crontab-on-freebsd-operating
 description: This article explains how to use `cron` and `crontab` to schedule tasks on FreeBSD.
 url: how-to-schedule-tasks-with-cron-and-crontab-on-freebsd-operating-system
 date: 2025-03-05
-weight: 290
+weight: 40
 keywords:
   - FreeBSD
   - cron

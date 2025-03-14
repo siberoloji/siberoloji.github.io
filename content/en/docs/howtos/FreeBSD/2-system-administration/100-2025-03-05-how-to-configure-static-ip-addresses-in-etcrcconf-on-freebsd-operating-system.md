@@ -6,7 +6,7 @@ translationKey: how-to-configure-static-ip-addresses-in-etcrcconf-on-freebsd-ope
 description: This article explains how to configure static IP addresses in FreeBSD using the `/etc/rc.conf` file.
 url: how-to-configure-static-ip-addresses-in-etcrcconf-on-freebsd-operating-system
 date: 2023-03-05
-weight: 350
+weight: 100
 keywords:
   - FreeBSD
   - static IP address

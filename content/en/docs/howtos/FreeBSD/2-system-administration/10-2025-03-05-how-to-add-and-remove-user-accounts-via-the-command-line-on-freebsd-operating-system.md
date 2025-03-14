@@ -6,7 +6,7 @@ translationKey: how-to-add-and-remove-user-accounts-via-the-command-line-on-free
 description: This article provides a step-by-step guide on how to add and remove user accounts via the command line on FreeBSD operating system.
 url: how-to-add-and-remove-user-accounts-via-the-command-line-on-freebsd-operating-system
 date: 2023-03-05
-weight: 260
+weight: 10
 keywords:
   - FreeBSD
   - adduser

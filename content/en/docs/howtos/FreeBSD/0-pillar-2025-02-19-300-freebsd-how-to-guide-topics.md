@@ -21,91 +21,91 @@ Here’s an expanded, categorized, and **numbered list** of **300+ FreeBSD how-t
 
 ### **1. Installation & Setup**
 
-1.1. [How to create a FreeBSD bootable USB drive on Windows/macOS/Linux.](/how-to-create-a-freebsd-bootable-usb-drive-on-windows-macos-and-linux/)  
-1.2. [How to install FreeBSD in UEFI mode with Secure Boot.](/installing-freebsd-in-uefi-mode-with-secure-boot/)  
-1.3. [How to dual-boot FreeBSD with Windows using GRUB.](/how-to-dual-boot-freebsd-with-windows-using-grub-on-freebsd-operating-system/)  
-1.4. [How to partition disks using ZFS during installation.](/how-to-partition-disks-using-zfs-during-installation-on-freebsd-operating-system/)  
-1.5. [How to configure wireless networking during installation.](/how-to-configure-wireless-networking-during-installation-on-freebsd-operating-system/)  
-1.6. [How to install FreeBSD on a Raspberry Pi 4/5.](/installing-freebsd-on-a-raspberry-pi-4-or-5/)  
-1.7. [How to use the FreeBSD text-based installer for headless setups.](/how-to-use-the-freebsd-text-based-installer-for-headless-setups/)  
-1.8. [How to enable full-disk encryption with GELI during installation.](/how-to-enable-full-disk-encryption-with-geli-during-freebsd-installation/)  
-1.9. [How to recover from a corrupted installation.](/how-to-recover-from-a-corrupted-installation-on-freebsd-operating-system/)  
-1.10. [How to verify the integrity of the FreeBSD ISO using SHA256.](/how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system/)  
-1.11. [How to install FreeBSD on a virtual machine (VirtualBox/VMware).](/how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system/)  
-1.12. [How to configure RAID1 (mirroring) with ZFS.](/how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system/)  
-1.13. [How to set up a minimal FreeBSD server (no GUI).](/how-to-set-up-a-minimal-freebsd-server-no-gui/)  
-1.14. [How to customize the installer with advanced partitioning.](/how-to-customize-the-installer-with-advanced-partitioning-on-freebsd/)  
-1.15. [How to troubleshoot "No Bootable Device" errors.](/how-to-troubleshoot-no-bootable-device-errors-on-freebsd-operating-system/)  
-1.16. [How to install FreeBSD alongside Linux (e.g., Ubuntu).](/how-to-install-freebsd-alongside-linux-eg-ubuntu-on-freebsd-operating-system/)  
-1.17. [How to enable SSH access during the first boot.](/how-to-enable-ssh-access-during-the-first-boot-on-freebsd-operating-system/)  
-1.18. [How to use the FreeBSD installer in non-interactive mode.](/how-to-use-the-freebsd-installer-in-non-interactive-mode/)  
-1.19. [How to install FreeBSD on a USB drive for portable use.](/how-to-install-freebsd-on-a-usb-drive-for-portable-use-on-freebsd-operating-system/)  
-1.20. [How to configure a static IP during installation.](/configuring-a-static-ip-during-freebsd-installation/)  
-1.21. [How to set up a BIOS vs. UEFI installation.](/bios-vs-uefi-installation-on-freebsd/)  
-1.22. [How to install FreeBSD on a legacy system (MBR partitioning).](/installing-freebsd-on-legacy-systems/)  
-1.23. [How to use the FreeBSD live CD for system recovery.](/mastering-system-recovery-on-freebsd-live-cd/)  
-1.24. [How to enable TRIM support for SSDs during installation.](/maximizing-ssd-performance-with-trim-support-in-freebsd/)  
-1.25. [How to install FreeBSD on a NAS device.](/how-to-install-freebsd-on-a-nas-device/)  
+1. [How to create a FreeBSD bootable USB drive on Windows/macOS/Linux.](/how-to-create-a-freebsd-bootable-usb-drive-on-windows-macos-and-linux/)  
+2. [How to install FreeBSD in UEFI mode with Secure Boot.](/installing-freebsd-in-uefi-mode-with-secure-boot/)  
+3. [How to dual-boot FreeBSD with Windows using GRUB.](/how-to-dual-boot-freebsd-with-windows-using-grub-on-freebsd-operating-system/)  
+4. [How to partition disks using ZFS during installation.](/how-to-partition-disks-using-zfs-during-installation-on-freebsd-operating-system/)  
+5. [How to configure wireless networking during installation.](/how-to-configure-wireless-networking-during-installation-on-freebsd-operating-system/)  
+6. [How to install FreeBSD on a Raspberry Pi 4/5.](/installing-freebsd-on-a-raspberry-pi-4-or-5/)  
+7. [How to use the FreeBSD text-based installer for headless setups.](/how-to-use-the-freebsd-text-based-installer-for-headless-setups/)  
+8. [How to enable full-disk encryption with GELI during installation.](/how-to-enable-full-disk-encryption-with-geli-during-freebsd-installation/)  
+9. [How to recover from a corrupted installation.](/how-to-recover-from-a-corrupted-installation-on-freebsd-operating-system/)  
+10. [How to verify the integrity of the FreeBSD ISO using SHA256.](/how-to-verify-the-integrity-of-the-freebsd-iso-using-sha256-on-freebsd-operating-system/)  
+11. [How to install FreeBSD on a virtual machine (VirtualBox/VMware).](/how-to-install-freebsd-on-a-virtual-machine-virtualboxvmware-on-freebsd-operating-system/)  
+12. [How to configure RAID1 (mirroring) with ZFS.](/how-to-configure-raid1-mirroring-with-zfs-on-freebsd-operating-system/)  
+13. [How to set up a minimal FreeBSD server (no GUI).](/how-to-set-up-a-minimal-freebsd-server-no-gui/)  
+14. [How to customize the installer with advanced partitioning.](/how-to-customize-the-installer-with-advanced-partitioning-on-freebsd/)  
+15. [How to troubleshoot "No Bootable Device" errors.](/how-to-troubleshoot-no-bootable-device-errors-on-freebsd-operating-system/)  
+16. [How to install FreeBSD alongside Linux (e.g., Ubuntu).](/how-to-install-freebsd-alongside-linux-eg-ubuntu-on-freebsd-operating-system/)  
+17. [How to enable SSH access during the first boot.](/how-to-enable-ssh-access-during-the-first-boot-on-freebsd-operating-system/)  
+18. [How to use the FreeBSD installer in non-interactive mode.](/how-to-use-the-freebsd-installer-in-non-interactive-mode/)  
+19. [How to install FreeBSD on a USB drive for portable use.](/how-to-install-freebsd-on-a-usb-drive-for-portable-use-on-freebsd-operating-system/)  
+20. [How to configure a static IP during installation.](/configuring-a-static-ip-during-freebsd-installation/)  
+21. [How to set up a BIOS vs. UEFI installation.](/bios-vs-uefi-installation-on-freebsd/)  
+22. [How to install FreeBSD on a legacy system (MBR partitioning).](/installing-freebsd-on-legacy-systems/)  
+23. [How to use the FreeBSD live CD for system recovery.](/mastering-system-recovery-on-freebsd-live-cd/)  
+24. [How to enable TRIM support for SSDs during installation.](/maximizing-ssd-performance-with-trim-support-in-freebsd/)  
+25. [How to install FreeBSD on a NAS device.](/how-to-install-freebsd-on-a-nas-device/)  
 
 ---
 
 ### **2. Basic System Administration**  
 
-2.1. [How to add and remove user accounts via the command line.](/how-to-add-and-remove-user-accounts-via-the-command-line-on-freebsd-operating-system/)  
-2.2. [How to grant sudo privileges to users.](/how-to-grant-sudo-privileges-to-users-on-freebsd-operating-system/)  
-2.3. [How to update FreeBSD with `freebsd-update fetch install`.](/how-to-update-freebsd-with-freebsd-update-fetch-install-on-freebsd-operating-system/)  
-2.4. [How to schedule tasks with `cron` and `crontab`.](/how-to-schedule-tasks-with-cron-and-crontab-on-freebsd-operating-system/)  
-2.5. [How to view system logs using `dmesg` and `/var/log/messages`.](/how-to-view-system-logs-using-dmesg-and-varlogmessages-on-freebsd-operating-system/)  
-2.6. [How to manage services with `service` and `/etc/rc.conf`.](/how-to-manage-services-with-service-and-etcrcconf-on-freebsd-operating-system/)  
-2.7. [How to change the system hostname permanently.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
-2.8. [How to set the timezone using `tzsetup`.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
-2.9. [How to monitor CPU/RAM usage with `top` and `htop`.](/how-to-monitor-cpuram-usage-with-top-and-htop-on-freebsd-operating-system/)  
-2.10. [How to configure static IP addresses in `/etc/rc.conf`.](/how-to-configure-static-ip-addresses-in-etcrcconf-on-freebsd-operating-system/)  
-2.11. How to reset a forgotten root password.  
-2.12. How to check disk space with `df` and `du`.  
-2.13. How to manage kernel modules with `kldload` and `kldstat`.  
-2.14. How to set up a swap partition/file.  
-2.15. How to use `sysctl` to tune kernel parameters.  
-2.16. How to shut down/reboot the system gracefully.  
-2.17. How to enable/disable IPv6.  
-2.18. How to configure NTP for time synchronization.  
-2.19. How to create and manage groups.  
-2.20. How to check hardware details with `pciconf` and `usbconfig`.  
-2.21. How to set file permissions with `chmod` and `chown`.  
-2.22. How to archive files with `tar` and `gzip`.  
-2.23. How to use `tmux` or `screen` for terminal multiplexing.  
-2.24. How to configure locale settings.  
-2.25. How to back up critical system files.  
+1. [How to add and remove user accounts via the command line.](/how-to-add-and-remove-user-accounts-via-the-command-line-on-freebsd-operating-system/)  
+2. [How to grant sudo privileges to users.](/how-to-grant-sudo-privileges-to-users-on-freebsd-operating-system/)  
+3. [How to update FreeBSD with `freebsd-update fetch install`.](/how-to-update-freebsd-with-freebsd-update-fetch-install-on-freebsd-operating-system/)  
+4. [How to schedule tasks with `cron` and `crontab`.](/how-to-schedule-tasks-with-cron-and-crontab-on-freebsd-operating-system/)  
+5. [How to view system logs using `dmesg` and `/var/log/messages`.](/how-to-view-system-logs-using-dmesg-and-varlogmessages-on-freebsd-operating-system/)  
+6. [How to manage services with `service` and `/etc/rc.conf`.](/how-to-manage-services-with-service-and-etcrcconf-on-freebsd-operating-system/)  
+7. [How to change the system hostname permanently.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
+8. [How to set the timezone using `tzsetup`.](/how-to-change-the-system-hostname-permanently-on-freebsd-operating-system/)  
+9. [How to monitor CPU/RAM usage with `top` and `htop`.](/how-to-monitor-cpuram-usage-with-top-and-htop-on-freebsd-operating-system/)  
+10. [How to configure static IP addresses in `/etc/rc.conf`.](/how-to-configure-static-ip-addresses-in-etcrcconf-on-freebsd-operating-system/)  
+11. [How to reset a forgotten root password.](/how-to-reset-a-forgotten-root-password/)  
+12. [How to check disk space with `df` and `du`](/how-to-check-disk-space-with-df-and-du-on-freebsd-operating-system/).  
+13. [How to manage kernel modules with `kldload` and `kldstat`.](/how-to-manage-kernel-modules-with-kldload-and-kldstat-on-freebsd/)  
+14. [How to set up a swap partition/file.](/how-to-set-up-a-swap-partition-or-file/)  
+15. [How to use `sysctl` to tune kernel parameters.](/how-to-use-sysctl-to-tune-kernel-parameters-on-freebsd/)  
+16. [How to shut down/reboot the system gracefully.](/how-to-shut-down-or-reboot-a-freebsd-system-gracefully/)  
+17. [How to enable/disable IPv6.](/how-to-enable-or-disable-ipv6-on-freebsd-operating-system/)  
+18. [How to configure NTP for time synchronization.](/how-to-configure-ntp-for-time-synchronization-on-freebsd-operating-system/)  
+19. [How to create and manage groups.](/how-to-create-and-manage-groups-on-freebsd-operating-system/)  
+20. [How to check hardware details with `pciconf` and `usbconfig`.](/how-to-check-hardware-details-with-pciconf-and-usbconfig-on-freebsd/)  
+21. [How to set file permissions with `chmod` and `chown`.](/how-to-set-file-permissions-with-chmod-and-chown-on-freebsd/)  
+22. [How to archive files with `tar` and `gzip`.](/how-to-archive-files-with-tar-and-gzip-on-freebsd/)  
+23. [How to use `tmux` or `screen` for terminal multiplexing.](/how-to-use-tmux-or-screen-for-terminal-multiplexing-on-freebsd/)  
+24. [How to configure locale settings.](/how-to-configure-locale-settings-on-freebsd-operating-system/)  
+25. [How to back up critical system files.](/how-to-back-up-critical-system-files-on-freebsd/)  
 
 ---
 
 ### **3. Package Management**  
 
-3.1. How to install packages using `pkg install`.  
-3.2. How to update the package repository with `pkg update`.  
-3.3. How to upgrade all packages with `pkg upgrade`.  
-3.4. How to build software from the Ports Collection.  
-3.5. How to create a local package repository with `pkg repo`.  
-3.6. How to resolve "package conflicts" during installation.  
-3.7. How to uninstall packages and clean dependencies.  
-3.8. How to audit packages for vulnerabilities with `pkg audit`.  
-3.9. How to install GUI applications (e.g., Firefox, VLC).  
-3.10. How to lock packages to specific versions.  
-3.11. How to search for packages with `pkg search`.  
-3.12. How to reinstall a corrupted package.  
-3.13. How to list installed packages with `pkg info`.  
-3.14. How to enable the "latest" package repository branch.  
-3.15. How to use `portmaster` to manage ports.  
-3.16. How to install precompiled packages vs. compiling from source.  
-3.17. How to troubleshoot "missing dependencies" errors.  
-3.18. How to install 32-bit compatibility libraries.  
-3.19. How to exclude packages from updates.  
-3.20. How to use `pkg-provides` to find which package owns a file.  
-3.21. How to set up a poudriere build server for custom packages.  
-3.22. How to install development tools (GCC, CMake, etc.).  
-3.23. How to manage Python/Ruby/Node.js modules via `pkg`.  
-3.24. How to configure proxy settings for `pkg` downloads.  
-3.25. How to clean the package cache with `pkg clean`.  
+1. [How to install packages using `pkg install`.](/how-to-install-packages-using-pkg-install-on-freebsd-operating-system/)  
+2. [How to update the package repository with `pkg update`.](/how-to-update-the-package-repository-with-pkg-update-on-freebsd/)  
+3. How to upgrade all packages with `pkg upgrade`.  
+4. How to build software from the Ports Collection.  
+5. How to create a local package repository with `pkg repo`.  
+6. How to resolve "package conflicts" during installation.  
+7. How to uninstall packages and clean dependencies.  
+8. How to audit packages for vulnerabilities with `pkg audit`.  
+9. How to install GUI applications (e.g., Firefox, VLC).  
+10. How to lock packages to specific versions.  
+11. How to search for packages with `pkg search`.  
+12. How to reinstall a corrupted package.  
+13. How to list installed packages with `pkg info`.  
+14. How to enable the "latest" package repository branch.  
+15. How to use `portmaster` to manage ports.  
+16. How to install precompiled packages vs. compiling from source.  
+17. How to troubleshoot "missing dependencies" errors.  
+18. How to install 32-bit compatibility libraries.  
+19. How to exclude packages from updates.  
+20. How to use `pkg-provides` to find which package owns a file.  
+21. How to set up a poudriere build server for custom packages.  
+22. How to install development tools (GCC, CMake, etc.).  
+23. How to manage Python/Ruby/Node.js modules via `pkg`.  
+24. How to configure proxy settings for `pkg` downloads.  
+25. How to clean the package cache with `pkg clean`.  
 
 ---
 

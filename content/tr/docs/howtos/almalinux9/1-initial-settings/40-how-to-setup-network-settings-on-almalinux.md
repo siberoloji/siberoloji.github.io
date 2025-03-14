@@ -1,110 +1,108 @@
 ---
-title: How to Set up Network Settings on AlmaLinux
-description: This guide provides a detailed walkthrough on setting up and manipulating network settings on AlmaLinux.
+title: AlmaLinux'ta Ağ Ayarları Nasıl Yapılır
+description: Bu kılavuz AlmaLinux'ta ağ ayarlarının kurulumu ve değiştirilmesi hakkında detaylı bir açıklama sunmaktadır.
 date: 2024-11-30
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Network Settings
-
+linkTitle: Ağ Ayarları
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 40
 translationKey: how-to-setup-network-settings-on-almalinux
 keywords:
   - AlmaLinux
   - network settings on AlmaLinux
-
 featured_image: /images/almalinux.webp
-url: setup-network-settings-almalinux
+url: /tr/setup-network-settings-almalinux
 ---
-AlmaLinux, a popular open-source alternative to CentOS, is widely recognized for its stability, reliability, and flexibility in server environments. System administrators must manage network settings efficiently to ensure seamless communication between devices and optimize network performance. This guide provides a detailed walkthrough on setting up and manipulating network settings on AlmaLinux.
-
----
-
-#### **Introduction to Network Configuration on AlmaLinux**
-
-Networking is the backbone of any system that needs connectivity to the outside world, whether for internet access, file sharing, or remote management. AlmaLinux, like many Linux distributions, uses `NetworkManager` as its default network configuration tool. Additionally, administrators can use CLI tools like `nmcli` or modify configuration files directly for more granular control.
-
-By the end of this guide, you will know how to:
-
-- Configure a network interface.
-- Set up static IP addresses.
-- Manipulate DNS settings.
-- Enable network bonding or bridging.
-- Troubleshoot common network issues.
+CentOS'a popüler bir açık kaynaklı alternatif olan AlmaLinux, sunucu ortamlarında istikrarı, güvenilirliği ve esnekliğiyle yaygın olarak tanınır. Sistem yöneticileri, cihazlar arasında sorunsuz iletişimi sağlamak ve ağ performansını optimize etmek için ağ ayarlarını verimli bir şekilde yönetmelidir. Bu kılavuz, AlmaLinux'ta ağ ayarlarını kurma ve değiştirme konusunda ayrıntılı bir açıklama sunar.
 
 ---
 
-### **Step 1: Checking the Network Configuration**
+#### **AlmaLinux'ta Ağ Yapılandırmasına Giriş**
 
-Before making changes, it's essential to assess the current network settings. You can do this using either the command line or GUI tools.
+Ağ, ister internet erişimi, ister dosya paylaşımı veya uzaktan yönetim için olsun, dış dünyaya bağlanmaya ihtiyaç duyan herhangi bir sistemin omurgasıdır. AlmaLinux, birçok Linux dağıtımı gibi, varsayılan ağ yapılandırma aracı olarak `NetworkManager` kullanır. Ayrıca, yöneticiler `nmcli` gibi CLI araçlarını kullanabilir veya daha ayrıntılı kontrol için yapılandırma dosyalarını doğrudan değiştirebilir.
 
-#### **Command Line Method:**
+Bu kılavuzun sonunda şunları nasıl yapacağınızı öğrenmiş olacaksınız:
 
-1. Open a terminal session.
-2. Use the `ip` command to check the active network interfaces:
-
-   ```bash
-   ip addr show
-   ```
-
-3. To get detailed information about all connections managed by `NetworkManager`, use:
-
-   ```bash
-   nmcli connection show
-   ```
-
-#### **GUI Method:**
-
-If you have the GNOME desktop environment installed, navigate to **Settings > Network** to view and manage connections.
+- Bir ağ arayüzünü yapılandırma.
+- Statik IP adresleri ayarlama.
+- DNS ayarlarını değiştirme.
+- Ağ bağlamayı veya köprülemeyi etkinleştirme. - Yaygın ağ sorunlarını giderin.
 
 ---
 
-### **Step 2: Configuring Network Interfaces**
+### **Adım 1: Ağ Yapılandırmasını Kontrol Etme**
 
-Network interfaces can be set up either dynamically (using DHCP) or statically. Below is how to achieve both.
+Değişiklik yapmadan önce, geçerli ağ ayarlarını değerlendirmek önemlidir. Bunu komut satırı veya GUI araçlarını kullanarak yapabilirsiniz.
 
-#### **Configuring DHCP (Dynamic Host Configuration Protocol):**
+#### **Komut Satırı Yöntemi:**
 
-1. Identify the network interface (e.g., `eth0`, `ens33`) using the `ip addr` command.
-2. Use `nmcli` to set the interface to use DHCP:
+1. Bir terminal oturumu açın.
+2. Etkin ağ arayüzlerini kontrol etmek için `ip` komutunu kullanın:
 
-   ```bash
-   nmcli con mod "Connection Name" ipv4.method auto
-   nmcli con up "Connection Name"
-   ```
+```bash
+ip addr show
+```
 
-   Replace `"Connection Name"` with the actual connection name.
+3. `NetworkManager` tarafından yönetilen tüm bağlantılar hakkında ayrıntılı bilgi almak için şunu kullanın:
 
-#### **Setting a Static IP Address:**
+```bash
+nmcli connection show
+```
 
-1. Use `nmcli` to modify the connection:
+#### **GUI Yöntemi:**
 
-   ```bash
-   nmcli con mod "Connection Name" ipv4.addresses 192.168.1.100/24
-   nmcli con mod "Connection Name" ipv4.gateway 192.168.1.1
-   nmcli con mod "Connection Name" ipv4.dns "8.8.8.8,8.8.4.4"
-   nmcli con mod "Connection Name" ipv4.method manual
-   ```
+GNOME masaüstü ortamınız yüklüyse, bağlantıları görüntülemek ve yönetmek için **Ayarlar > Ağ**'a gidin.
 
-2. Bring the connection back online:
+---
 
-   ```bash
-   nmcli con up "Connection Name"
-   ```
+### **Adım 2: Ağ Arayüzlerini Yapılandırma**
 
-#### **Manual Configuration via Configuration Files:**
+Ağ arayüzleri dinamik olarak (DHCP kullanılarak) veya statik olarak ayarlanabilir. Her ikisinin de nasıl gerçekleştirileceği aşağıda açıklanmıştır.
 
-Alternatively, you can configure network settings directly by editing the configuration files in `/etc/sysconfig/network-scripts/`. Each interface has a corresponding file named `ifcfg-<interface>`. For example:
+#### **DHCP'yi (Dinamik Ana Bilgisayar Yapılandırma Protokolü) Yapılandırma:**
+
+1. `ip addr` komutunu kullanarak ağ arayüzünü (örn. `eth0`, `ens33`) tanımlayın.
+
+2. Arayüzü DHCP kullanacak şekilde ayarlamak için `nmcli` kullanın:
+
+```bash
+nmcli con mod "Connection Name" ipv4.method auto
+nmcli con up "Connection Name"
+```
+
+`"Connection Name"` ifadesini gerçek bağlantı adıyla değiştirin.
+
+#### **Statik IP Adresi Ayarlama:**
+
+1. Bağlantıyı değiştirmek için `nmcli` kullanın:
+
+```bash
+nmcli con mod "Connection Name" ipv4.addresses 192.168.1.100/24
+nmcli con mod "Connection Name" ipv4.gateway 192.168.1.1
+nmcli con mod "Connection Name" ipv4.dns "8.8.8.8,8.8.4.4"
+nmcli con mod "Connection Name" ipv4.method manual
+```
+
+2. Bağlantıyı tekrar çevrimiçi hale getirin:
+
+```bash
+nmcli con up "Connection Name"
+```
+
+#### **Yapılandırma Dosyaları Üzerinden Manuel Yapılandırma:**
+
+Alternatif olarak, yapılandırma dosyalarını düzenleyerek doğrudan ağ ayarlarını yapılandırabilirsiniz `/etc/sysconfig/network-scripts/`. Her arayüzün `ifcfg-<interface>` adlı karşılık gelen bir dosyası vardır. Örneğin:
 
 ```bash
 sudo nano /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-A typical static IP configuration might look like this:
+Tipik bir statik IP yapılandırması şu şekilde görünebilir:
 
 ```bash
 BOOTPROTO=none
@@ -117,7 +115,7 @@ DNS2=8.8.4.4
 DEVICE=ens33
 ```
 
-After saving the changes, restart the network service:
+Değişiklikleri kaydettikten sonra ağ hizmetini yeniden başlatın:
 
 ```bash
 sudo systemctl restart network
@@ -125,45 +123,45 @@ sudo systemctl restart network
 
 ---
 
-### **Step 3: Managing DNS Settings**
+### **Adım 3: DNS Ayarlarını Yönetme**
 
-DNS (Domain Name System) is essential for resolving domain names to IP addresses. To configure DNS on AlmaLinux:
+DNS (Alan Adı Sistemi), alan adlarını IP adreslerine çözümlemek için gereklidir. AlmaLinux'ta DNS'i yapılandırmak için:
 
-#### **Via `nmcli`:**
+#### **`nmcli` yoluyla:**
 
 ```bash
 nmcli con mod "Connection Name" ipv4.dns "8.8.8.8,8.8.4.4"
 nmcli con up "Connection Name"
 ```
 
-#### **Manual Configuration:**
+#### **Manuel Yapılandırma:**
 
-Edit the `/etc/resolv.conf` file (though this is often managed dynamically by `NetworkManager`):
+`/etc/resolv.conf` dosyasını düzenleyin (ancak bu genellikle `NetworkManager` tarafından dinamik olarak yönetilir):
 
 ```bash
 sudo nano /etc/resolv.conf
 ```
 
-Add your preferred DNS servers:
+Tercih ettiğiniz DNS sunucularını ekleyin:
 
 ```plaintext
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-To make changes persistent, disable dynamic updates by `NetworkManager`:
+Değişiklikleri kalıcı hale getirmek için `NetworkManager` tarafından dinamik güncellemeleri devre dışı bırakın:
 
 ```bash
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
 
-Add or modify the following line:
+Aşağıdaki satırı ekleyin veya değiştirin:
 
 ```plaintext
 dns=none
 ```
 
-Restart the service:
+Hizmeti yeniden başlatın:
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -171,115 +169,115 @@ sudo systemctl restart NetworkManager
 
 ---
 
-### **Step 4: Advanced Network Configurations**
+### **Adım 4: Gelişmiş Ağ Yapılandırmaları**
 
-#### **Network Bonding:**
+#### **Ağ Bağlantısı:**
 
-Network bonding aggregates multiple network interfaces to improve redundancy and throughput.
+Ağ bağlantısı, yedekliliği ve verimi artırmak için birden fazla ağ arayüzünü bir araya getirir.
 
-1. Install necessary tools:
+1. Gerekli araçları yükleyin:
 
-   ```bash
-   sudo yum install teamd
-   ```
+```bash
+sudo yum install teamd
+```
 
-2. Create a new bonded connection:
+2. Yeni bir bağlı bağlantı oluşturun:
 
-   ```bash
-   nmcli con add type bond ifname bond0 mode active-backup
-   ```
+```bash
+nmcli con add type bond ifname bond0 mode active-backup
+```
 
-3. Add slave interfaces:
+3. Bağımlı arayüzler ekleyin:
 
-   ```bash
-   nmcli con add type ethernet slave-type bond ifname ens33 master bond0
-   nmcli con add type ethernet slave-type bond ifname ens34 master bond0
-   ```
+```bash
+nmcli con add type ethernet slave-type bond ifname ens33 master bond0
+nmcli con add type ethernet slave-type bond ifname ens34 master bond0
+```
 
-4. Configure the bond interface with an IP:
+4. Bağ arayüzünü bir IP ile yapılandırın:
 
-   ```bash
-   nmcli con mod bond0 ipv4.addresses 192.168.1.100/24 ipv4.method manual
-   nmcli con up bond0
-   ```
+```bash
+nmcli con mod bond0 ipv4.addresses 192.168.1.100/24 ​​ipv4.method manual
+nmcli con up bond0
+```
 
-#### **Bridging Interfaces:**
+#### **Köprüleme Arayüzleri:**
 
-Bridging is often used in virtualization to allow VMs to access the network.
+Köprüleme, sanallaştırmada genellikle VM'lere izin vermek için kullanılır ağa erişmek için.
 
-1. Create a bridge interface:
+1. Bir köprü arayüzü oluşturun:
 
-   ```bash
-   nmcli con add type bridge ifname br0
-   ```
+```bash
+nmcli con add type bridge ifname br0
+```
 
-2. Add a slave interface to the bridge:
+2. Köprüye bir slave arayüzü ekleyin:
 
-   ```bash
-   nmcli con add type ethernet slave-type bridge ifname ens33 master br0
-   ```
+```bash
+nmcli con add type ethernet slave-type bridge ifname ens33 master br0
+```
 
-3. Set IP for the bridge:
+3. Köprü için IP ayarlayın:
 
-   ```bash
-   nmcli con mod br0 ipv4.addresses 192.168.1.200/24 ipv4.method manual
-   nmcli con up br0
-   ```
-
----
-
-### **Step 5: Troubleshooting Common Issues**
-
-#### **1. Connection Not Working:**
-
-- Ensure the network service is running:
-
-  ```bash
-  sudo systemctl status NetworkManager
-  ```
-
-- Restart the network service if necessary:
-
-  ```bash
-  sudo systemctl restart NetworkManager
-  ```
-
-#### **2. IP Conflicts:**
-
-- Check for duplicate IP addresses on the network using `arp-scan`:
-
-  ```bash
-  sudo yum install arp-scan
-  sudo arp-scan --localnet
-  ```
-
-#### **3. DNS Resolution Fails:**
-
-- Verify the contents of `/etc/resolv.conf`.
-- Ensure the DNS servers are reachable using `ping`:
-
-  ```bash
-  ping 8.8.8.8
-  ```
-
-#### **4. Interface Does Not Come Up:**
-
-- Confirm the interface is enabled:
-
-  ```bash
-  nmcli device status
-  ```
-
-- Bring the interface online:
-
-  ```bash
-  nmcli con up "Connection Name"
-  ```
+```bash
+nmcli con mod br0 ipv4.addresses 192.168.1.200/24 ​​ipv4.method manual
+nmcli con up br0
+```
 
 ---
 
-### **Conclusion**
+### **Adım 5: Yaygın Sorunları Giderme**
 
-Setting up and manipulating network settings on AlmaLinux requires a good understanding of basic and advanced network configuration techniques. Whether configuring a simple DHCP connection or implementing network bonding for redundancy, AlmaLinux provides a robust and flexible set of tools to meet your needs. By mastering `nmcli`, understanding configuration files, and utilizing troubleshooting strategies, you can ensure optimal network performance in your AlmaLinux environment.
+#### **1. Bağlantı Çalışmıyor:**
 
-Remember to document your network setup and backup configuration files before making significant changes to avoid downtime or misconfigurations.
+- Ağ hizmetinin çalıştığından emin olun:
+
+```bash
+sudo systemctl status NetworkManager
+```
+
+- Gerekirse ağ hizmetini yeniden başlatın:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+#### **2. IP Çakışmaları:**
+
+- `arp-scan` kullanarak ağda yinelenen IP adreslerini kontrol edin:
+
+```bash
+sudo yum install arp-scan
+sudo arp-scan --localnet
+```
+
+#### **3. DNS Çözümlemesi Başarısız:**
+
+- `/etc/resolv.conf` içeriğini doğrulayın.
+- `ping` kullanarak DNS sunucularının erişilebilir olduğundan emin olun:
+
+```bash
+ping 8.8.8.8
+```
+
+#### **4. Arayüz Açılmıyor:**
+
+- Arayüzün etkinleştirildiğini doğrulayın:
+
+```bash
+nmcli device status
+```
+
+- Arayüzü çevrimiçi hale getirin:
+
+```bash
+nmcli con up "Connection Name"
+```
+
+---
+
+### **Sonuç**
+
+AlmaLinux'ta ağ ayarlarını kurmak ve düzenlemek, temel ve gelişmiş ağ yapılandırma tekniklerinin iyi anlaşılmasını gerektirir. Basit bir DHCP bağlantısı yapılandırmak veya yedeklilik için ağ bağlamayı uygulamak olsun, AlmaLinux ihtiyaçlarınızı karşılamak için sağlam ve esnek bir araç seti sunar. `nmcli`'de ustalaşarak, yapılandırma dosyalarını anlayarak ve sorun giderme stratejilerini kullanarak AlmaLinux ortamınızda optimum ağ performansını sağlayabilirsiniz.
+
+Önemli değişiklikler yapmadan önce ağ kurulumunuzu belgelemeyi ve yapılandırma dosyalarını yedeklemeyi unutmayın, böylece kesinti veya yanlış yapılandırmalardan kaçınabilirsiniz.

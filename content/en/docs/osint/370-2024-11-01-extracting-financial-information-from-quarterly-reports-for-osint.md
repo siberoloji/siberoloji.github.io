@@ -1,16 +1,16 @@
 ---
 draft: false
-
-title:  'Extracting Financial Information from Quarterly Reports for OSINT'
-date: '2024-11-01T20:58:14+03:00'
+title: Extracting Financial Information from Quarterly Reports for OSINT
+linkTitle: Extracting Financial Information from Quarterly Reports for OSINT
+translationKey: extracting-financial-information-from-quarterly-reports-for-osint
+weight: 370
+date: 2024-11-01T20:58:14+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'Open-source intelligence (OSINT) is a powerful technique for gathering information from publicly available sources. One rich source of data for OSINT analysts is quarterly reports, which companies release to disclose their financial performance.' 
- 
-url:  /extracting-financial-information-from-quarterly-reports-for-osint/
+description: Open-source intelligence (OSINT) is a powerful technique for gathering information from publicly available sources. One rich source of data for OSINT analysts is quarterly reports, which companies release to disclose their financial performance.
+url: /extracting-financial-information-from-quarterly-reports-for-osint/
 featured_image: /images/osint3.webp
 categories:
-    - 'Open Source Intelligence (OSINT)'
+    - Open Source Intelligence (OSINT)
 tags:
     - osint
 ---

@@ -6,7 +6,7 @@ translationKey: how-to-manage-services-with-service-and-etcrcconf-on-freebsd-ope
 description: This article explains how to manage services on FreeBSD using the `service` command and the `/etc/rc.conf` file.
 url: how-to-manage-services-with-service-and-etcrcconf-on-freebsd-operating-system
 date: 2025-03-05
-weight: 310
+weight: 60
 keywords:
   - FreeBSD
   - manage services

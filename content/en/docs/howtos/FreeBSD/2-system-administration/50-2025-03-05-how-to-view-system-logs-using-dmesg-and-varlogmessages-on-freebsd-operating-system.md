@@ -6,7 +6,7 @@ translationKey: how-to-view-system-logs-using-dmesg-and-varlogmessages-on-freebs
 description: Ths article provides step-by-step instructions on how to view system logs using dmesg and /var/log/messages on FreeBSD operating system.
 url: how-to-view-system-logs-using-dmesg-and-varlogmessages-on-freebsd-operating-system
 date: 2025-03-05
-weight: 300
+weight: 50
 keywords:
   - FreeBSD
   - system logs

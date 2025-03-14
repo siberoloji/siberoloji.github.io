@@ -6,7 +6,7 @@ translationKey: how-to-grant-sudo-privileges-to-users-on-freebsd-operating-syste
 description: This article provides a step-by-step guide on how to grant sudo privileges to users on a FreeBSD operating system.
 url: how-to-grant-sudo-privileges-to-users-on-freebsd-operating-system
 date: 2025-03-05
-weight: 270
+weight: 20
 keywords:
   - FreeBSD
   - sudo privileges

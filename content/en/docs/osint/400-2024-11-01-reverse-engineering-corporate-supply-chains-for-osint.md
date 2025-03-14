@@ -1,16 +1,16 @@
 ---
 draft: false
-
-title:  'Reverse-Engineering Corporate Supply Chains for OSINT'
-date: '2024-11-01T21:10:08+03:00'
+title: Reverse-Engineering Corporate Supply Chains for OSINT
+linkTitle: Reverse-Engineering Corporate Supply Chains
+translationKey: reverse-engineering-corporate-supply-chains-for-osint
+weight: 400
+date: 2024-11-01T21:10:08+03:00
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
-
-description:  'By understanding a company''s supply chain, analysts can identify potential targets for cyberattacks, assess geopolitical risks, and uncover hidden connections between organizations.' 
- 
-url:  /reverse-engineering-corporate-supply-chains-for-osint/
+description: By understanding a company's supply chain, analysts can identify potential targets for cyberattacks, assess geopolitical risks, and uncover hidden connections between organizations.
+url: /reverse-engineering-corporate-supply-chains-for-osint/
 featured_image: /images/osint.webp
 categories:
-    - 'Open Source Intelligence (OSINT)'
+    - Open Source Intelligence (OSINT)
 tags:
     - osint
 ---
