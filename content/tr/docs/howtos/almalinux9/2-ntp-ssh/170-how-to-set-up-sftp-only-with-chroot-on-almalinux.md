@@ -1,14 +1,14 @@
 ---
-title: How to Set Up SFTP-only with Chroot on AlmaLinux
-description: This guide will walk you through configuring SFTP-only access with Chroot on AlmaLinux, ensuring a secure and isolated file transfer environment.
+title: AlmaLinux'ta Chroot ile SFTP-only Nasıl Kurulur
+description: Bu kılavuz, AlmaLinux'ta SFTP-only'in nasıl kurulacağını, kurulumunu, komutlarını ve en iyi uygulamaları ayrıntılı olarak açıklayacaktır.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: SFTP-only with Chroot
+linkTitle: Chroot ile SFTP-only Nasıl Kurulur
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 170
 translationKey: how-to-set-up-sftp-only-with-chroot-on-almalinux
@@ -17,125 +17,123 @@ keywords:
   - Chroot on AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: set-sftp-chroot-almalinux
+url: /tr/set-sftp-chroot-almalinux
 ---
-**Secure File Transfer Protocol (SFTP)** is a secure way to transfer files over a network, leveraging SSH for encryption and authentication. Setting up an **SFTP-only environment with Chroot** enhances security by restricting users to specific directories and preventing them from accessing sensitive areas of the server. This guide will walk you through configuring SFTP-only access with Chroot on AlmaLinux, ensuring a secure and isolated file transfer environment.
+**Güvenli Dosya Aktarım Protokolü (SFTP)**, şifreleme ve kimlik doğrulama için SSH'den yararlanarak dosyaları bir ağ üzerinden aktarmanın güvenli bir yoludur. Chroot ile **yalnızca SFTP ortamı** kurmak, kullanıcıları belirli dizinlerle sınırlayarak ve sunucunun hassas alanlarına erişmelerini önleyerek güvenliği artırır. Bu kılavuz, AlmaLinux'ta Chroot ile yalnızca SFTP erişimini yapılandırma konusunda size yol gösterecek ve güvenli ve izole bir dosya aktarım ortamı sağlayacaktır.
 
 ---
 
-### **1. What is SFTP and Chroot?**
+### **1. SFTP ve Chroot nedir?**
 
 #### **SFTP**
 
-SFTP is a secure file transfer protocol that uses SSH to encrypt communications. Unlike FTP, which transfers data in plaintext, SFTP ensures that files and credentials are protected during transmission.
+SFTP, iletişimleri şifrelemek için SSH kullanan güvenli bir dosya aktarım protokolüdür. Verileri düz metin olarak aktaran FTP'nin aksine, SFTP aktarım sırasında dosyaların ve kimlik bilgilerinin korunmasını sağlar.
 
 #### **Chroot**
 
-Chroot, short for "change root," confines a user or process to a specific directory, creating a "jail" environment. When a user logs in, they can only access their designated directory and its subdirectories, effectively isolating them from the rest of the system.
+"Kök değiştir" ifadesinin kısaltması olan Chroot, bir kullanıcıyı veya işlemi belirli bir dizine hapsederek bir "hapishane" ortamı yaratır. Bir kullanıcı oturum açtığında, yalnızca belirlenen dizinine ve alt dizinlerine erişebilir ve bu da onları sistemin geri kalanından etkili bir şekilde izole eder.
 
 ---
 
-### **2. Prerequisites**
+### **2. Önkoşullar**
 
-Before setting up SFTP with Chroot, ensure the following:
+SFTP'yi Chroot ile kurmadan önce, aşağıdakileri sağlayın:
 
-1. **AlmaLinux Server:** A running instance with administrative privileges.
-2. **OpenSSH Installed:** Verify that the SSH server is installed and running:
+1. **AlmaLinux Sunucusu:** Yönetici ayrıcalıklarına sahip çalışan bir örnek.
+2. **OpenSSH Kurulu:** SSH sunucusunun kurulu ve çalışır durumda olduğunu doğrulayın:
 
-   ```bash
-   sudo dnf install openssh-server -y
-   sudo systemctl start sshd
-   sudo systemctl enable sshd
-   ```
+```bash
+sudo dnf install openssh-server -y
+sudo systemctl start sshd
+sudo systemctl enable sshd
+```
 
-3. **User Accounts:** Create or identify users who will have SFTP access.
+3. **Kullanıcı Hesapları:** SFTP erişimi olacak kullanıcıları oluşturun veya tanımlayın.
 
 ---
 
-### **3. Step-by-Step Setup**
+### **3. Adım Adım Kurulum**
 
-#### **Step 1: Install and Configure SSH**
+#### **Adım 1: SSH'yi Kurun ve Yapılandırın**
 
-Ensure OpenSSH is installed and up-to-date:
+OpenSSH'nin kurulu ve güncel olduğundan emin olun:
 
 ```bash
 sudo dnf update -y
 sudo dnf install openssh-server -y
 ```
 
-#### **Step 2: Create the SFTP Group**
+#### **Adım 2: SFTP Grubunu Oluşturun**
 
-Create a dedicated group for SFTP users:
+SFTP kullanıcıları için özel bir grup oluşturun:
 
 ```bash
 sudo groupadd sftpusers
 ```
 
-#### **Step 3: Create SFTP-Only Users**
+#### **Adım 3: Yalnızca SFTP Kullanıcıları Oluşturun**
 
-Create a user and assign them to the SFTP group:
+Bir kullanıcı oluşturun ve onu SFTP grubuna atayın:
 
 ```bash
 sudo useradd -m -s /sbin/nologin -G sftpusers sftpuser
 ```
 
-- `-m`: Creates a home directory for the user.
-- `-s /sbin/nologin`: Prevents SSH shell access.
-- `-G sftpusers`: Adds the user to the SFTP group.
+- `-m`: Kullanıcı için bir ana dizin oluşturur. - `-s /sbin/nologin`: SSH kabuğuna erişimi engeller.
+- `-G sftpusers`: Kullanıcıyı SFTP grubuna ekler.
 
-Set a password for the user:
+Kullanıcı için bir parola belirleyin:
 
 ```bash
 sudo passwd sftpuser
 ```
 
-#### **Step 4: Configure the SSH Server for SFTP**
+#### **4. Adım: SFTP için SSH Sunucusunu Yapılandırın**
 
-Edit the SSH server configuration file:
+SSH sunucusu yapılandırma dosyasını düzenleyin:
 
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-Add or modify the following lines at the end of the file:
+Dosyanın sonuna aşağıdaki satırları ekleyin veya değiştirin:
 
 ```plaintext
 # SFTP-only Configuration
 Match Group sftpusers
-    ChrootDirectory %h
-    ForceCommand internal-sftp
-    AllowTcpForwarding no
-    X11Forwarding no
+ChrootDirectory %h
+ForceCommand internal-sftp
+AllowTcpForwarding no
+X11Forwarding no
 ```
 
-- `Match Group sftpusers`: Applies the rules to the SFTP group.
-- `ChrootDirectory %h`: Restricts users to their home directory (`%h` represents the user’s home directory).
-- `ForceCommand internal-sftp`: Restricts users to SFTP-only access.
-- `AllowTcpForwarding no` and `X11Forwarding no`: Disable unnecessary features for added security.
+- `Match Group sftpusers`: Kuralları SFTP grubuna uygular. - `ChrootDirectory %h`: Kullanıcıları ana dizinleriyle sınırlar (`%h` kullanıcının ana dizinini temsil eder).
+- `ForceCommand internal-sftp`: Kullanıcıları yalnızca SFTP erişimiyle sınırlar.
+- `AllowTcpForwarding no` ve `X11Forwarding no`: Ek güvenlik için gereksiz özellikleri devre dışı bırakın.
 
-Save and close the file.
+Dosyayı kaydedin ve kapatın.
 
-#### **Step 5: Set Permissions on User Directories**
+#### **Adım 5: Kullanıcı Dizinlerinde İzinleri Ayarlayın**
 
-Set the ownership and permissions for the Chroot environment:
+Chroot ortamı için sahipliği ve izinleri ayarlayın:
 
 ```bash
 sudo chown root:root /home/sftpuser
 sudo chmod 755 /home/sftpuser
 ```
 
-Create a subdirectory for file storage:
+Dosya depolama için bir alt dizin oluşturun:
 
 ```bash
 sudo mkdir /home/sftpuser/uploads
 sudo chown sftpuser:sftpusers /home/sftpuser/uploads
 ```
 
-This ensures that the user can upload files only within the designated `uploads` directory.
+Bu, kullanıcının yalnızca belirtilen `uploads` dizinine dosya yükleyebildiğinden emin olur.
 
-#### **Step 6: Restart the SSH Service**
+#### **Adım 6: SSH Hizmetini Yeniden Başlatın**
 
-Apply the changes by restarting the SSH service:
+SSH hizmetini yeniden başlatarak değişiklikleri uygulayın:
 
 ```bash
 sudo systemctl restart sshd
@@ -143,103 +141,104 @@ sudo systemctl restart sshd
 
 ---
 
-### **4. Testing the Configuration**
+### **4. Yapılandırmayı Test Etme**
 
-1. **Connect via SFTP:**
-   From a client machine, connect to the server using an SFTP client:
+1. **SFTP ile Bağlan:**
+Bir istemci makinesinden, bir SFTP istemcisi kullanarak sunucuya bağlanın:
 
-   ```bash
-   sftp sftpuser@server-ip
-   ```
+```bash
+sftp sftpuser@server-ip
+```
 
-2. **Verify Access Restrictions:**
-   - Ensure the user can only access the `uploads` directory and cannot navigate outside their Chroot environment.
-   - Attempting SSH shell access should result in a "permission denied" error.
+2. **Erişim Kısıtlamalarını Doğrulayın:**
+
+- Kullanıcının yalnızca `uploads` dizinine erişebildiğinden ve Chroot ortamının dışına çıkamadığından emin olun.
+- SSH kabuğuna erişim denemesi "izin reddedildi" hatasıyla sonuçlanmalıdır.
 
 ---
 
-### **5. Advanced Configurations**
+### **5. Gelişmiş Yapılandırmalar**
 
-#### **1. Limit File Upload Sizes**
+#### **1. Dosya Yükleme Boyutlarını Sınırla**
 
-To limit upload sizes, modify the user’s shell limits:
+Yükleme boyutlarını sınırlamak için kullanıcının kabuk sınırlarını değiştirin:
 
 ```bash
 sudo nano /etc/security/limits.conf
 ```
 
-Add the following lines:
+Aşağıdaki satırları ekleyin:
 
 ```plaintext
-sftpuser hard fsize 10485760  # 10MB limit
+sftpuser hard fsize 10485760 # 10MB limit
 ```
 
-#### **2. Enable Logging for SFTP Sessions**
+#### **2. SFTP Oturumları için Günlük Kaydını Etkinleştir**
 
-Enable logging to track user activities:
+Kullanıcı etkinliklerini izlemek için günlük kaydını etkinleştirin:
 
-1. Edit the SSH configuration file to include:
+1. SSH yapılandırma dosyasını aşağıdakileri içerecek şekilde düzenleyin:
 
-   ```plaintext
-   Subsystem sftp /usr/libexec/openssh/sftp-server -l INFO
-   ```
+```plaintext
+Alt sistem sftp /usr/libexec/openssh/sftp-server -l BİLGİ
+```
 
-2. Restart SSH:
+2. SSH'yi yeniden başlatın:
 
-   ```bash
-   sudo systemctl restart sshd
-   ```
+```bash
+sudo systemctl restart sshd
+```
 
-Logs will be available in `/var/log/secure`.
-
----
-
-### **6. Troubleshooting Common Issues**
-
-1. **SFTP Login Fails:**
-   - Verify the user’s home directory ownership:
-
-     ```bash
-     sudo chown root:root /home/sftpuser
-     ```
-
-   - Check for typos in `/etc/ssh/sshd_config`.
-
-2. **Permission Denied for File Uploads:**
-   Ensure the `uploads` directory is writable by the user:
-
-   ```bash
-   sudo chmod 755 /home/sftpuser/uploads
-   sudo chown sftpuser:sftpusers /home/sftpuser/uploads
-   ```
-
-3. **ChrootDirectory Error:**
-   Verify that the Chroot directory permissions meet SSH requirements:
-
-   ```bash
-   sudo chmod 755 /home/sftpuser
-   sudo chown root:root /home/sftpuser
-   ```
+Günlükler `/var/log/secure` dizininde mevcut olacaktır.
 
 ---
 
-### **7. Security Best Practices**
+### **6. Yaygın Sorunları Giderme**
 
-1. **Restrict User Access:**
-   Ensure users are confined to their designated directories and have minimal permissions.
-2. **Enable Two-Factor Authentication (2FA):**
-   Add an extra layer of security by enabling 2FA for SFTP users.
-3. **Monitor Logs Regularly:**
-   Review `/var/log/secure` for suspicious activities.
-4. **Use a Non-Standard SSH Port:**
-   Change the default SSH port in `/etc/ssh/sshd_config` to reduce automated attacks:
+1. **SFTP Girişi Başarısız Oluyor:**
 
-   ```plaintext
-   Port 2222
-   ```
+- Kullanıcının ana dizin sahipliğini doğrulayın:
+
+```bash
+sudo chown root:root /home/sftpuser
+```
+
+- `/etc/ssh/sshd_config` dosyasında yazım hatalarını kontrol edin.
+
+2. **Dosya Yüklemeleri İçin İzin Reddedildi:**
+`uploads` dizininin kullanıcı tarafından yazılabilir olduğundan emin olun:
+
+```bash
+sudo chmod 755 /home/sftpuser/uploads
+sudo chown sftpuser:sftpusers /home/sftpuser/uploads
+```
+
+3. **ChrootDirectory Hatası:**
+Chroot dizin izinlerinin SSH gereksinimlerini karşıladığını doğrulayın:
+
+```bash
+sudo chmod 755 /home/sftpuser
+sudo chown root:root /home/sftpuser
+```
 
 ---
 
-### **Conclusion**
+### **7. Güvenlik En İyi Uygulamaları**
 
-Configuring SFTP-only access with Chroot on AlmaLinux is a powerful way to secure your server and ensure users can only access their designated directories. By following this guide, you can set up a robust file transfer environment that prioritizes security and usability. Implementing advanced configurations and adhering to security best practices will further enhance your server's protection.
+1. **Kullanıcı Erişimini Kısıtla:**
+Kullanıcıların belirlenen dizinlerle sınırlı olduğundan ve asgari izinlere sahip olduğundan emin olun. 2. **İki Faktörlü Kimlik Doğrulamayı (2FA) Etkinleştirin:**
+SFTP kullanıcıları için 2FA'yı etkinleştirerek ekstra bir güvenlik katmanı ekleyin.
+3. **Günlükleri Düzenli Olarak İzleyin:**
+Şüpheli etkinlikler için `/var/log/secure` dosyasını inceleyin.
+4. **Standart Olmayan Bir SSH Bağlantı Noktası Kullanın:**
+Otomatik saldırıları azaltmak için `/etc/ssh/sshd_config` dosyasındaki varsayılan SSH bağlantı noktasını değiştirin:
+
+```plaintext
+Bağlantı Noktası 2222
+```
+
+---
+
+### **Sonuç**
+
+AlmaLinux'ta Chroot ile yalnızca SFTP erişimini yapılandırmak, sunucunuzu güvence altına almanın ve kullanıcıların yalnızca belirlenen dizinlerine erişebilmelerini sağlamanın güçlü bir yoludur. Bu kılavuzu izleyerek, güvenliğe ve kullanılabilirliğe öncelik veren sağlam bir dosya aktarım ortamı kurabilirsiniz. Gelişmiş yapılandırmaları uygulamak ve güvenlik en iyi uygulamalarına uymak, sunucunuzun korumasını daha da artıracaktır.

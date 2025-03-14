@@ -1,8 +1,8 @@
 ---
-title: How to Use SSHPass on AlmaLinux
-description: In this guide, we’ll explore how to install, configure, and use SSHPass on AlmaLinux.
+title: AlmaLinux'ta SSHPass Nasıl Kullanılır
+description: Bu kılavuzda, AlmaLinux'ta SSHPass'ı nasıl kuracağınızı, yapılandıracağınızı ve kullanacağınızı inceleyeceğiz.
 date: 2024-12-09
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
@@ -16,100 +16,100 @@ keywords:
   - AlmaLinux
   - SSHPass
 featured_image: /images/almalinux.webp
-url: sshpass-almalinux
+url: /tr/sshpass-almalinux
 ---
-SSH is a cornerstone of secure communication for Linux users, enabling encrypted access to remote systems. However, there are scenarios where automated scripts require password-based SSH logins without manual intervention. **SSHPass** is a utility designed for such cases, allowing users to pass passwords directly through a command-line interface.
+SSH, Linux kullanıcıları için güvenli iletişimin temel taşıdır ve uzak sistemlere şifreli erişim sağlar. Ancak, otomatik komut dosyalarının manuel müdahale olmadan parola tabanlı SSH oturum açma işlemleri gerektirdiği senaryolar vardır. **SSHPass**, kullanıcıların parolaları doğrudan bir komut satırı arayüzü üzerinden geçirmelerine olanak tanıyan bu tür durumlar için tasarlanmış bir yardımcı programdır.
 
-In this guide, we’ll explore how to install, configure, and use SSHPass on AlmaLinux, a robust enterprise Linux distribution based on CentOS.
-
----
-
-### What Is SSHPass?
-
-SSHPass is a simple, lightweight tool that enables password-based SSH logins from the command line, bypassing the need to manually input a password. This utility is especially useful for:
-
-- **Automation**: Running scripts that require SSH or SCP commands without user input.
-- **Legacy systems**: Interfacing with systems that only support password authentication.
-
-However, **SSHPass should be used cautiously**, as storing passwords in scripts or commands can expose security vulnerabilities.
+Bu kılavuzda, CentOS tabanlı sağlam bir kurumsal Linux dağıtımı olan AlmaLinux'ta SSHPass'ı nasıl kuracağınızı, yapılandıracağınızı ve kullanacağınızı inceleyeceğiz.
 
 ---
 
-### Why Use SSHPass?
+### SSHPass Nedir?
 
-SSHPass is ideal for:
+SSHPass, parola tabanlı SSH oturum açma işlemlerini komut satırından etkinleştiren ve parolayı manuel olarak girme gereksinimini ortadan kaldıran basit ve hafif bir araçtır. Bu yardımcı program özellikle şunlar için yararlıdır:
 
-- **Automating repetitive SSH tasks**: Avoid manually entering passwords for each connection.
-- **Legacy setups**: Working with servers that lack public-key authentication.
-- **Quick testing**: Streamlining temporary setups or environments.
+- **Otomasyon**: Kullanıcı girişi olmadan SSH veya SCP komutları gerektiren komut dosyalarını çalıştırma.
+- **Eski sistemler**: Yalnızca parola kimlik doğrulamasını destekleyen sistemlerle arayüz oluşturma.
 
-That said, it’s always recommended to prioritize **key-based authentication** over password-based methods wherever possible.
-
----
-
-### Step-by-Step Guide to Using SSHPass on AlmaLinux
-
-#### Prerequisites
-
-Before starting, ensure:
-
-1. AlmaLinux is installed and updated.
-2. You have administrative privileges (`sudo` access).
-3. You have SSH access to the target system.
+Ancak, **SSHPass dikkatli kullanılmalıdır**, çünkü parolaları betiklerde veya komutlarda saklamak güvenlik açıklarını ortaya çıkarabilir.
 
 ---
 
-### 1. **Installing SSHPass on AlmaLinux**
+### Neden SSHPass Kullanmalısınız?
 
-SSHPass is not included in AlmaLinux's default repositories due to security considerations. However, it can be installed from alternative repositories or by compiling from source.
+SSHPass şunlar için idealdir:
 
-#### Option 1: Install from the EPEL Repository
+- **Tekrarlayan SSH görevlerini otomatikleştirme**: Her bağlantı için parolaları manuel olarak girmekten kaçının.
+- **Eski kurulumlar**: Açık anahtar kimlik doğrulaması olmayan sunucularla çalışma.
+- **Hızlı test**: Geçici kurulumları veya ortamları düzenleme.
 
-1. **Enable EPEL** (Extra Packages for Enterprise Linux):
+Bununla birlikte, mümkün olan her yerde parola tabanlı yöntemler yerine **anahtar tabanlı kimlik doğrulamayı** önceliklendirmeniz her zaman önerilir.
 
-   ```bash
-   sudo dnf install epel-release
-   ```
+---
 
-2. **Install SSHPass**:
+### AlmaLinux'ta SSHPass Kullanmaya Yönelik Adım Adım Kılavuz
 
-   ```bash
-   sudo dnf install sshpass
-   ```
+#### Önkoşullar
 
-#### Option 2: Compile from Source
+Başlamadan önce şunlardan emin olun:
 
-If SSHPass is unavailable in your configured repositories:
+1. AlmaLinux kurulu ve güncel.
+2. Yönetici ayrıcalıklarına (`sudo` erişimi) sahip olmalısınız.
+3. Hedef sisteme SSH erişiminiz olmalı.
 
-1. **Install build tools**:
+---
 
-   ```bash
-   sudo dnf groupinstall "Development Tools"
-   sudo dnf install wget
-   ```
+### 1. **SSHPass'ı AlmaLinux'a Yükleme**
 
-2. **Download the source code**:
+SSHPass, güvenlik kaygıları nedeniyle AlmaLinux'un varsayılan depolarına dahil edilmemiştir. Ancak alternatif depolarından veya kaynaktan derlenerek yüklenebilir.
 
-   ```bash
-   wget https://sourceforge.net/projects/sshpass/files/latest/download -O sshpass.tar.gz
-   ```
+#### Seçenek 1: EPEL Deposundan Yükle
 
-3. **Extract the archive**:
+1. **EPEL'i Etkinleştir** (Enterprise Linux için Ek Paketler):
 
-   ```bash
-   tar -xvzf sshpass.tar.gz
-   cd sshpass-*
-   ```
+```bash
+sudo dnf install epel-release
+```
 
-4. **Compile and install SSHPass**:
+2. **SSHPass'i Yükle**:
 
-   ```bash
-   ./configure
-   make
-   sudo make install
-   ```
+```bash
+sudo dnf install sshpass
+```
 
-Verify the installation by running:
+#### Seçenek 2: Kaynaktan Derle
+
+Yapılandırılmış depolarınızda SSHPass yoksa:
+
+1. **Derleme araçlarını yükle**:
+
+```bash
+sudo dnf groupinstall "Geliştirme Araçları"
+sudo dnf install wget
+```
+
+2. **Kaynak kodunu indir**:
+
+```bash
+wget https://sourceforge.net/projects/sshpass/files/latest/download -O sshpass.tar.gz
+```
+
+3. **Arşivi çıkarın**:
+
+```bash
+tar -xvzf sshpass.tar.gz
+cd sshpass-*
+```
+
+4. **SSHPass'ı derleyin ve yükleyin**:
+
+```bash
+./configure
+make
+sudo make install
+```
+
+Yüklemeyi şu komutu çalıştırarak doğrulayın:
 
 ```bash
 sshpass -V
@@ -117,48 +117,48 @@ sshpass -V
 
 ---
 
-### 2. **Basic Usage of SSHPass**
+### 2. **SSHPass'ın Temel Kullanımı**
 
-SSHPass requires the password to be passed as part of the command. Below are common use cases.
+SSHPass, komutun bir parçası olarak parolanın iletilmesini gerektirir. Aşağıda yaygın kullanım örnekleri verilmiştir.
 
-#### Example 1: Basic SSH Connection
+#### Örnek 1: Temel SSH Bağlantısı
 
-To connect to a remote server using a password:
+Uzak bir sunucuya parola kullanarak bağlanmak için:
 
 ```bash
 sshpass -p 'your_password' ssh user@remote-server
 ```
 
-Replace:
+Şunu değiştirin:
 
-- `your_password` with the remote server's password.
-- `user@remote-server` with the appropriate username and hostname/IP.
+- `your_password` uzak sunucunun parolasıyla.
+- `user@remote-server` uygun kullanıcı adı ve ana bilgisayar adı/IP ile.
 
-#### Example 2: Using SCP for File Transfers
+#### Örnek 2: Dosya Aktarımı için SCP Kullanımı
 
-SSHPass simplifies file transfers via SCP:
+SSHPass, SCP üzerinden dosya aktarımlarını basitleştirir:
 
 ```bash
 sshpass -p 'your_password' scp local_file user@remote-server:/remote/directory/
 ```
 
-#### Example 3: Reading Passwords from a File
+#### Örnek 3: Bir Dosyadan Parolaları Okuma
 
-For enhanced security, avoid directly typing passwords in the command line. Store the password in a file:
+Gelişmiş güvenlik için, komut satırına doğrudan parola yazmaktan kaçının. Parolayı bir dosyada saklayın:
 
-1. Create a file with the password:
+1. Parolayı içeren bir dosya oluşturun:
 
-   ```bash
-   echo "your_password" > password.txt
-   ```
+```bash
+echo "your_password" > password.txt
+```
 
-2. Use SSHPass to read the password:
+2. Parolayı okumak için SSHPass'i kullanın:
 
-   ```bash
-   sshpass -f password.txt ssh user@remote-server
-   ```
+```bash
+sshpass -f password.txt ssh user@remote-server
+```
 
-Ensure the password file is secure:
+Parola dosyasının güvenli olduğundan emin olun:
 
 ```bash
 chmod 600 password.txt
@@ -166,26 +166,26 @@ chmod 600 password.txt
 
 ---
 
-### 3. **Automating SSH Tasks with SSHPass**
+### 3. **SSHPass ile SSH Görevlerini Otomatikleştirme**
 
-SSHPass is particularly useful for automating tasks in scripts. Here's an example:
+SSHPass, özellikle betiklerdeki görevleri otomatikleştirmek için kullanışlıdır. İşte bir örnek:
 
-#### Example: Automate Remote Commands
+#### Örnek: Uzaktan Komutları Otomatikleştirin
 
-Create a script to execute commands on a remote server:
+Uzak bir sunucuda komutları yürütmek için bir betik oluşturun:
 
 ```bash
 #!/bin/bash
 
-PASSWORD="your_password"
-REMOTE_USER="user"
-REMOTE_SERVER="remote-server"
+PASSWORD="şifreniz"
+REMOTE_USER="kullanıcı"
+REMOTE_SERVER="uzak-sunucu"
 COMMAND="ls -la"
 
 sshpass -p "$PASSWORD" ssh "$REMOTE_USER@$REMOTE_SERVER" "$COMMAND"
 ```
 
-Save the script and execute it:
+Betiği kaydedin ve yürütün:
 
 ```bash
 bash automate_ssh.sh
@@ -193,57 +193,56 @@ bash automate_ssh.sh
 
 ---
 
-### 4. **Security Considerations**
+### 4. **Güvenlik Hususları**
 
-While SSHPass is convenient, it comes with inherent security risks. Follow these best practices to mitigate risks:
+SSHPass kullanışlı olsa da, beraberinde getirdiği güvenlik riskleri vardır. Riskleri azaltmak için şu en iyi uygulamaları izleyin:
 
-- **Avoid hardcoding passwords**: Use environment variables or secure storage solutions.
-- **Limit permissions**: Restrict access to scripts or files containing sensitive data.
-- **Use key-based authentication**: Whenever possible, switch to SSH key pairs for a more secure and scalable solution.
-- **Secure password files**: Use restrictive permissions (`chmod 600`) to protect password files.
-
----
-
-### 5. **Troubleshooting SSHPass**
-
-#### Issue 1: "Permission denied"
-
-- Ensure the remote server allows password authentication. Edit the SSH server configuration (`/etc/ssh/sshd_config`) if needed:
-
-  ```bash
-  PasswordAuthentication yes
-  ```
-
-  Restart the SSH service:
-
-  ```bash
-  sudo systemctl restart sshd
-  ```
-
-#### Issue 2: SSHPass not found
-
-- Confirm SSHPass is installed correctly. Reinstall or compile from source if necessary.
-
-#### Issue 3: Security warnings
-
-- SSHPass may trigger warnings related to insecure password handling. These can be ignored if security practices are followed.
+- **Şifreleri sabit kodlamaktan kaçının**: Ortam değişkenleri veya güvenli depolama çözümleri kullanın. - **İzinleri sınırla**: Hassas veriler içeren betiklere veya dosyalara erişimi kısıtlayın.
+- **Anahtar tabanlı kimlik doğrulamayı kullanın**: Mümkün olduğunda, daha güvenli ve ölçeklenebilir bir çözüm için SSH anahtar çiftlerine geçin.
+- **Şifre dosyalarını güvenli hale getirin**: Şifre dosyalarını korumak için kısıtlayıcı izinler (`chmod 600`) kullanın.
 
 ---
 
-### Alternative Tools to SSHPass
+### 5. **SSHPass Sorun Giderme**
 
-For more secure or feature-rich alternatives:
+#### Sorun 1: "İzin reddedildi"
 
-- **Expect**: Automates interactions with command-line programs.
-- **Ansible**: Automates configuration management and SSH tasks at scale.
-- **Keychain**: Manages SSH keys securely.
+- Uzak sunucunun şifre kimlik doğrulamasına izin verdiğinden emin olun. Gerekirse SSH sunucusu yapılandırmasını (`/etc/ssh/sshd_config`) düzenleyin:
+
+```bash
+PasswordAuthentication yes
+```
+
+SSH hizmetini yeniden başlatın:
+
+```bash
+sudo systemctl restart sshd
+```
+
+#### Sorun 2: SSHPass bulunamadı
+
+- SSHPass'in doğru şekilde yüklendiğini doğrulayın. Gerekirse kaynaktan yeniden yükleyin veya derleyin.
+
+#### Sorun 3: Güvenlik uyarıları
+
+- SSHPass, güvenli olmayan parola kullanımıyla ilgili uyarıları tetikleyebilir. Güvenlik uygulamaları izlenirse bunlar göz ardı edilebilir.
 
 ---
 
-### Conclusion
+### SSHPass'a Alternatif Araçlar
 
-SSHPass is a versatile tool for scenarios where password-based SSH access is unavoidable, such as automation tasks or legacy systems. With this guide, you can confidently install and use SSHPass on AlmaLinux while adhering to security best practices.
+Daha güvenli veya özellik açısından zengin alternatifler için:
 
-While SSHPass offers convenience, always aim to transition to more secure authentication methods, such as SSH keys, to protect your systems and data in the long run.
+- **Bekleyin**: Komut satırı programlarıyla etkileşimleri otomatikleştirir.
+- **Ansible**: Yapılandırma yönetimini ve SSH görevlerini ölçekte otomatikleştirir.
+- **Anahtar Zinciri**: SSH anahtarlarını güvenli bir şekilde yönetir.
 
-Feel free to share your use cases or additional tips in the comments below! Happy automating!
+---
+
+### Sonuç
+
+SSHPass, otomasyon görevleri veya eski sistemler gibi parola tabanlı SSH erişiminin kaçınılmaz olduğu senaryolar için çok yönlü bir araçtır. Bu kılavuzla, güvenlik en iyi uygulamalarına uyarak AlmaLinux'a SSHPass'ı güvenle yükleyebilir ve kullanabilirsiniz.
+
+SSHPass kolaylık sağlarken, sistemlerinizi ve verilerinizi uzun vadede korumak için her zaman SSH anahtarları gibi daha güvenli kimlik doğrulama yöntemlerine geçiş yapmayı hedefleyin.
+
+Aşağıdaki yorumlarda kullanım durumlarınızı veya ek ipuçlarınızı paylaşmaktan çekinmeyin!

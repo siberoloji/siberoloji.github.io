@@ -1,183 +1,182 @@
 ---
-title: How to Use Parallel SSH on AlmaLinux
-description: In this guide, we’ll explore what Parallel SSH is, its benefits, and how to install and use it effectively on AlmaLinux.
+title: AlmaLinux'ta Paralel SSH Nasıl Kullanılır
+description: Bu kılavuzda, AlmaLinux'ta Paralel SSH'ı nasıl kuracağınızı, yapılandıracağınızı ve kullanacağınızı inceleyeceğiz.
 date: 2024-12-09
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Parallel SSH
+linkTitle: AlmaLinux'ta Paralel SSH Nasıl Kullanılır
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 220
 translationKey: how-to-use-parallel-ssh-on-almalinux-a-step-by-step-guide
 keywords:
   - AlmaLinux
 featured_image: /images/almalinux.webp
-url: parallel-ssh-almalinux
+url: /tr/parallel-ssh-almalinux
 ---
-Managing multiple servers simultaneously can be a daunting task, especially when executing repetitive commands or deploying updates. Parallel SSH (PSSH) is a powerful tool that simplifies this process by enabling you to run commands on multiple remote systems concurrently. If you’re using AlmaLinux, a secure and enterprise-grade Linux distribution, learning to use Parallel SSH can greatly enhance your efficiency and productivity.
+Birden fazla sunucuyu aynı anda yönetmek, özellikle tekrarlayan komutları yürütürken veya güncellemeleri dağıtırken zorlu bir görev olabilir. Paralel SSH (PSSH), birden fazla uzak sistemde aynı anda komut çalıştırmanızı sağlayarak bu süreci basitleştiren güçlü bir araçtır. Güvenli ve kurumsal düzeyde bir Linux dağıtımı olan AlmaLinux kullanıyorsanız, Paralel SSH kullanmayı öğrenmek verimliliğinizi ve üretkenliğinizi büyük ölçüde artırabilir.
 
-In this guide, we’ll explore what Parallel SSH is, its benefits, and how to install and use it effectively on AlmaLinux.
-
----
-
-### What Is Parallel SSH?
-
-Parallel SSH is a command-line tool that allows users to execute commands, copy files, and manage multiple servers simultaneously. It is part of the PSSH suite, which includes additional utilities like:
-
-- `pssh`: Run commands in parallel on multiple servers.
-- `pscp`: Copy files to multiple servers.
-- `pslurp`: Fetch files from multiple servers.
-- `pnuke`: Kill processes on multiple servers.
+Bu kılavuzda, Paralel SSH'nin ne olduğunu, faydalarını ve AlmaLinux'a nasıl etkili bir şekilde kurulup kullanılacağını inceleyeceğiz.
 
 ---
 
-### Benefits of Using Parallel SSH
+### Paralel SSH Nedir?
 
-PSSH is particularly useful in scenarios like:
+Paralel SSH, kullanıcıların komutları yürütmesine, dosyaları kopyalamasına ve birden fazla sunucuyu aynı anda yönetmesine olanak tanıyan bir komut satırı aracıdır. Aşağıdakiler gibi ek yardımcı programları içeren PSSH paketinin bir parçasıdır:
 
-1. **System Administration**: Automate administrative tasks across multiple servers.
-2. **DevOps**: Streamline deployment processes for applications or updates.
-3. **Cluster Management**: Manage high-performance computing (HPC) clusters.
-4. **Consistency**: Ensure the same command or script runs uniformly across all servers.
-
----
-
-### Prerequisites
-
-Before diving into Parallel SSH, ensure the following:
-
-1. AlmaLinux is installed and updated:
-
-   ```bash
-   sudo dnf update
-   ```
-
-2. You have SSH access to all target servers.
-3. Passwordless SSH authentication is set up for seamless connectivity.
+- `pssh`: Birden fazla sunucuda paralel olarak komutları çalıştırın.
+- `pscp`: Dosyaları birden fazla sunucuya kopyalayın. - `pslurp`: Birden fazla sunucudan dosya alın.
+- `pnuke`: Birden fazla sunucudaki işlemleri sonlandırın.
 
 ---
 
-### Step-by-Step Guide to Using Parallel SSH on AlmaLinux
+### Paralel SSH Kullanmanın Avantajları
+
+PSSH özellikle şu senaryolarda faydalıdır:
+
+1. **Sistem Yönetimi**: Birden fazla sunucuda yönetim görevlerini otomatikleştirin.
+2. **DevOps**: Uygulamalar veya güncellemeler için dağıtım süreçlerini kolaylaştırın.
+3. **Küme Yönetimi**: Yüksek performanslı bilgi işlem (HPC) kümelerini yönetin.
+4. **Tutarlılık**: Aynı komutun veya betiğin tüm sunucularda düzgün şekilde çalıştığından emin olun.
 
 ---
 
-### 1. **Install Parallel SSH**
+### Önkoşullar
 
-Parallel SSH is not included in the default AlmaLinux repositories, but you can install it using Python's package manager, `pip`.
+Paralel SSH'ye dalmadan önce aşağıdakilerden emin olun:
 
-#### Step 1: Install Python and Pip
+1. AlmaLinux kurulu ve güncellenmiş:
 
-1. Ensure Python is installed:
+```bash
+sudo dnf update
+```
 
-   ```bash
-   sudo dnf install python3 python3-pip
-   ```
-
-2. Verify the installation:
-
-   ```bash
-   python3 --version
-   pip3 --version
-   ```
-
-#### Step 2: Install PSSH
-
-1. Install Parallel SSH via `pip`:
-
-   ```bash
-   pip3 install parallel-ssh
-   ```
-
-2. Verify the installation:
-
-   ```bash
-   pssh --version
-   ```
+2. Tüm hedef sunuculara SSH erişiminiz var.
+3. Sorunsuz bağlantı için parolasız SSH kimlik doğrulaması ayarlandı.
 
 ---
 
-### 2. **Set Up Passwordless SSH Authentication**
-
-Passwordless SSH authentication is crucial for PSSH to work seamlessly.
-
-1. **Generate an SSH key pair**:
-
-   ```bash
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-   ```
-
-2. **Copy the public key to each target server**:
-
-   ```bash
-   ssh-copy-id user@remote-server
-   ```
-
-   Replace `user@remote-server` with the appropriate username and hostname/IP for each server.
-
-3. Test the connection:
-
-   ```bash
-   ssh user@remote-server
-   ```
-
-   Ensure no password is required for login.
+### AlmaLinux'ta Paralel SSH Kullanımına İlişkin Adım Adım Kılavuz
 
 ---
 
-### 3. **Create a Hosts File**
+### 1. **Paralel SSH Kurulumu**
 
-Parallel SSH requires a list of target servers, provided in a hosts file.
+Paralel SSH, varsayılan AlmaLinux depolarında yer almaz, ancak Python'un paket yöneticisi `pip` kullanarak kurabilirsiniz.
 
-1. **Create the hosts file**:
+#### Adım 1: Python ve Pip'i yükleyin
 
-   ```bash
-   nano ~/hosts.txt
-   ```
+1. Python'un yüklendiğinden emin olun:
 
-2. **Add server details**:
-   Add one server per line in the following format:
+```bash
+sudo dnf install python3 python3-pip
+```
 
-   ```bash
-   user@server1
-   user@server2
-   user@server3
-   ```
+2. Kurulumu doğrulayın:
 
-   Save the file and exit.
+```bash
+python3 --version
+pip3 --version
+```
+
+#### Adım 2: PSSH'yi yükleyin
+
+1. `pip` aracılığıyla Parallel SSH'yi yükleyin:
+
+```bash
+pip3 install parallel-ssh
+```
+
+2. Kurulumu doğrulayın:
+
+```bash
+pssh --version
+```
 
 ---
 
-### 4. **Run Commands Using PSSH**
+### 2. **Şifresiz SSH Kimlik Doğrulamasını Ayarlayın**
 
-With the hosts file ready, you can start using PSSH to run commands across multiple servers.
+Şifresiz SSH kimlik doğrulaması, PSSH'nin sorunsuz çalışması için çok önemlidir.
 
-#### Example 1: Execute a Simple Command
+1. **Bir SSH anahtar çifti oluşturun**:
 
-Run the `uptime` command on all servers:
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+2. **Her hedef sunucuya genel anahtarı kopyalayın**:
+
+```bash
+ssh-copy-id user@remote-server
+```
+
+`user@remote-server` ifadesini her sunucu için uygun kullanıcı adı ve ana bilgisayar adı/IP ile değiştirin.
+
+3. Bağlantıyı test edin:
+
+```bash
+ssh user@remote-server
+```
+
+Oturum açmak için parola gerekmediğinden emin olun.
+
+---
+
+### 3. **Bir Hosts Dosyası Oluştur**
+
+Paralel SSH, hosts dosyasında sağlanan hedef sunucuların bir listesini gerektirir.
+
+1. **Hosts dosyasını oluştur**:
+
+```bash
+nano ~/hosts.txt
+```
+
+2. **Sunucu ayrıntılarını ekle**:
+Aşağıdaki biçimde her satıra bir sunucu ekleyin:
+
+```bash
+user@server1
+user@server2
+user@server3
+```
+
+Dosyayı kaydedin ve çıkın.
+
+---
+
+### 4. **PSSH Kullanarak Komut Çalıştır**
+
+Hosts dosyası hazır olduğunda, PSSH'yi kullanarak birden fazla sunucuda komut çalıştırmaya başlayabilirsiniz.
+
+#### Örnek 1: Basit Bir Komut Çalıştırın
+
+`uptime` komutunu tüm sunucularda çalıştırın:
 
 ```bash
 pssh -h ~/hosts.txt -i "uptime"
 ```
 
-Explanation:
+Açıklama:
 
-- `-h`: Specifies the hosts file.
-- `-i`: Outputs results interactively.
+- `-h`: Hosts dosyasını belirtir.
+- `-i`: Sonuçları etkileşimli olarak çıktı olarak verir.
 
-#### Example 2: Run a Command as Root
+#### Örnek 2: Root Olarak Bir Komut Çalıştırın
 
-If the command requires `sudo`, use the `-A` option to enable interactive password prompts:
+Komut `sudo` gerektiriyorsa, etkileşimli parola istemlerini etkinleştirmek için `-A` seçeneğini kullanın:
 
 ```bash
 pssh -h ~/hosts.txt -A -i "sudo apt update"
 ```
 
-#### Example 3: Use a Custom SSH Key
+#### Örnek 3: Özel Bir SSH Anahtarı Kullanın
 
-Specify a custom SSH key with the `-x` option:
+`-x` seçeneğiyle özel bir SSH anahtarı belirtin:
 
 ```bash
 pssh -h ~/hosts.txt -x "-i /path/to/private-key" -i "uptime"
@@ -185,24 +184,24 @@ pssh -h ~/hosts.txt -x "-i /path/to/private-key" -i "uptime"
 
 ---
 
-### 5. **Transfer Files Using PSSH**
+### 5. **PSSH Kullanarak Dosyaları Aktarın**
 
-Parallel SCP (PSCP) allows you to copy files to multiple servers simultaneously.
+Paralel SCP (PSCP), dosyaları aynı anda birden fazla sunucuya kopyalamanıza olanak tanır.
 
-#### Example: Copy a File to All Servers
+#### Örnek: Bir Dosyayı Tüm Sunuculara Kopyala
 
 ```bash
 pscp -h ~/hosts.txt local-file /remote/destination/path
 ```
 
-Explanation:
+Açıklama:
 
-- `local-file`: Path to the file on your local machine.
-- `/remote/destination/path`: Destination path on the remote servers.
+- `local-file`: Yerel makinenizdeki dosyanın yolu.
+- `/remote/destination/path`: Uzak sunuculardaki hedef yolu.
 
-#### Example: Retrieve Files from All Servers
+#### Örnek: Tüm Sunuculardan Dosyaları Al
 
-Use `pslurp` to download files:
+Dosyaları indirmek için `pslurp` kullanın:
 
 ```bash
 pslurp -h ~/hosts.txt /remote/source/path local-destination/
@@ -210,29 +209,29 @@ pslurp -h ~/hosts.txt /remote/source/path local-destination/
 
 ---
 
-### 6. **Advanced Options and Use Cases**
+### 6. **Gelişmiş Seçenekler ve Kullanım Örnekleri**
 
-#### Run Commands with a Timeout
+#### Komutları Zaman Aşımıyla Çalıştır
 
-Set a timeout to terminate long-running commands:
+Uzun süre çalışan komutları sonlandırmak için bir zaman aşımı ayarlayın:
 
 ```bash
 pssh -h ~/hosts.txt -t 30 -i "ping -c 4 google.com"
 ```
 
-#### Parallel Execution Limit
+#### Paralel Yürütme Sınırı
 
-Limit the number of simultaneous connections:
+Eş zamanlı bağlantı sayısını sınırlayın:
 
 ```bash
 pssh -h ~/hosts.txt -p 5 -i "uptime"
 ```
 
-This example processes only five servers at a time.
+Bu örnek aynı anda yalnızca beş sunucuyu işler.
 
-#### Log Command Output
+#### Log Komut Çıktısı
 
-Save the output of each server to a log file:
+Her sunucunun çıktısını bir günlük dosyasına kaydedin:
 
 ```bash
 pssh -h ~/hosts.txt -o /path/to/logs "df -h"
@@ -240,57 +239,64 @@ pssh -h ~/hosts.txt -o /path/to/logs "df -h"
 
 ---
 
-### 7. **Best Practices for Using Parallel SSH**
+### 7. **Paralel SSH Kullanımı İçin En İyi Uygulamalar**
 
-To maximize the effectiveness of PSSH:
+PSSH'nin etkinliğini en üst düzeye çıkarmak için:
 
-1. **Use descriptive host files**: Maintain separate host files for different server groups.
-2. **Test commands**: Run commands on a single server before executing them across all systems.
-3. **Monitor output**: Use the logging feature to debug errors.
-4. **Ensure uptime**: Verify all target servers are online before running commands.
-
----
-
-### 8. **Troubleshooting Common Issues**
-
-#### Issue 1: "Permission Denied"
-
-- **Cause**: SSH keys are not set up correctly.
-- **Solution**: Reconfigure passwordless SSH authentication.
-
-#### Issue 2: "Command Not Found"
-
-- **Cause**: Target servers lack the required command or software.
-- **Solution**: Ensure the command is available on all servers.
-
-#### Issue 3: "Connection Refused"
-
-- **Cause**: Firewall or network issues.
-- **Solution**: Verify SSH access and ensure the `sshd` service is running:
-
-  ```bash
-  sudo systemctl status sshd
-  ```
+1. **Açıklayıcı ana bilgisayar dosyaları kullanın**: Farklı sunucu grupları için ayrı ana bilgisayar dosyaları tutun.
+2. **Komutları test edin**: Komutları tüm sistemlerde yürütmeden önce tek bir sunucuda çalıştırın.
+3. **Çıktıyı izleyin**: Hataları ayıklamak için günlük özelliğini kullanın.
+4. **Çalışma süresini sağlayın**: Komutları çalıştırmadan önce tüm hedef sunucuların çevrimiçi olduğundan emin olun.
 
 ---
 
-### Real-World Applications of Parallel SSH
+### 8. **Genel Sorunları Giderme**
 
-1. **System Updates**:
-   - Simultaneously update all servers in a cluster.
-2. **Application Deployment**:
-   - Deploy code or restart services across multiple servers.
-3. **Data Collection**:
-   - Fetch logs or performance metrics from distributed systems.
-4. **Testing Environments**:
-   - Apply configuration changes to multiple test servers.
+#### Sorun 1: "İzin Reddedildi"
+
+- **Neden**: SSH anahtarları doğru şekilde ayarlanmamış.
+- **Çözüm**: Parolasız SSH kimlik doğrulamasını yeniden yapılandırın.
+
+#### Sorun 2: "Komut Bulunamadı"
+
+- **Neden**: Hedef sunucularda gerekli komut veya yazılım bulunmuyor.
+- **Çözüm**: Komutun tüm sunucularda mevcut olduğundan emin olun.
+
+#### Sorun 3: "Bağlantı Reddedildi"
+
+- **Neden**: Güvenlik duvarı veya ağ sorunları.
+- **Çözüm**: SSH erişimini doğrulayın ve `sshd` hizmetinin çalıştığından emin olun:
+
+```bash
+sudo systemctl status sshd
+```
 
 ---
 
-### Conclusion
+### Paralel SSH'nin Gerçek Dünya Uygulamaları
 
-Parallel SSH is an indispensable tool for managing multiple servers efficiently. By enabling command execution, file transfers, and process management across systems simultaneously, PSSH simplifies complex administrative tasks. AlmaLinux users, especially system administrators and DevOps professionals, can greatly benefit from incorporating PSSH into their workflows.
+1. **Sistem Güncellemeleri**:
 
-With this guide, you’re equipped to install, configure, and use Parallel SSH on AlmaLinux. Whether you’re updating servers, deploying applications, or managing clusters, PSSH offers a powerful, scalable solution to streamline your operations.
+- Bir kümedeki tüm sunucuları aynı anda güncelleyin.
 
-If you’ve used Parallel SSH or have additional tips, feel free to share them in the comments below. Happy automating!
+2. **Uygulama Dağıtımı**:
+
+- Birden fazla sunucuya kod dağıtın veya hizmetleri yeniden başlatın.
+
+3. **Veri Toplama**:
+
+- Dağıtılmış sistemlerden günlükleri veya performans ölçümlerini alın.
+
+4. **Test Ortamları**:
+
+- Yapılandırma değişikliklerini birden fazla test sunucusuna uygulayın.
+
+---
+
+### Sonuç
+
+Paralel SSH, birden fazla sunucuyu verimli bir şekilde yönetmek için vazgeçilmez bir araçtır. PSSH, sistemler arasında komut yürütmeyi, dosya transferlerini ve işlem yönetimini aynı anda etkinleştirerek karmaşık yönetim görevlerini basitleştirir. AlmaLinux kullanıcıları, özellikle sistem yöneticileri ve DevOps profesyonelleri, PSSH'yi iş akışlarına dahil ederek büyük fayda sağlayabilirler.
+
+Bu kılavuzla, AlmaLinux'ta Parallel SSH'yi kurmak, yapılandırmak ve kullanmak için donanımlısınız. Sunucuları güncelliyor, uygulamaları dağıtıyor veya kümeleri yönetiyor olun, PSSH operasyonlarınızı kolaylaştırmak için güçlü ve ölçeklenebilir bir çözüm sunar.
+
+Parallel SSH kullandıysanız veya ek ipuçlarınız varsa, bunları aşağıdaki yorumlarda paylaşmaktan çekinmeyin. İyi otomasyonlar!

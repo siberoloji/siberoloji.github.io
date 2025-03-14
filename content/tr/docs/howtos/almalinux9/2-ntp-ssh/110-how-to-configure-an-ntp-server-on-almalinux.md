@@ -1,195 +1,192 @@
 ---
-title: How to Configure an NTP Server on AlmaLinux
-description: This guide will walk you through configuring an NTP server on AlmaLinux, step by step.
+title: AlmaLinux'ta NTP Sunucusu Nasıl Yapılandırılır
+description: Bu kılavuz AlmaLinux'ta bir NTP sunucusunu adım adım yapılandırma konusunda size yol gösterecektir.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: NTP server
+linkTitle: NTP Sunucusu Nasıl Yapılandırılır
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 110
 translationKey: how-to-configure-an-ntp-server-on-almalinux
 keywords:
   - AlmaLinux
   - NTP server on AlmaLinux
-
 featured_image: /images/almalinux.webp
-url: configure-ntp-server-almalinux
+url: /tr/configure-ntp-server-almalinux
 ---
-Accurate timekeeping on servers is crucial for ensuring consistent logging, security protocols, and system operations. AlmaLinux, a robust and enterprise-grade Linux distribution, relies on **Chrony** as its default Network Time Protocol (NTP) implementation. This guide will walk you through configuring an NTP server on AlmaLinux step by step.
-
----
-
-### 1. **What is NTP, and Why is it Important?**
-
-**Network Time Protocol (NTP)** synchronizes system clocks over a network. Accurate time synchronization is essential for:
-
-- Coordinating events across distributed systems.
-- Avoiding issues with log timestamps.
-- Maintaining secure communication protocols.
+Sunucularda doğru zaman takibi, tutarlı günlük kaydı, güvenlik protokolleri ve sistem operasyonlarını sağlamak için çok önemlidir. Sağlam ve kurumsal düzeyde bir Linux dağıtımı olan AlmaLinux, varsayılan Ağ Zaman Protokolü (NTP) uygulaması olarak **Chrony**'ye güvenir. Bu kılavuz, AlmaLinux'ta bir NTP sunucusunu adım adım yapılandırma konusunda size yol gösterecektir.
 
 ---
 
-### 2. **Prerequisites**
+### 1. **NTP Nedir ve Neden Önemlidir?**
 
-Before you begin, ensure:
+**Ağ Zaman Protokolü (NTP)**, bir ağ üzerinden sistem saatlerini senkronize eder. Doğru zaman senkronizasyonu şunlar için önemlidir:
 
-1. **A fresh AlmaLinux installation** with sudo privileges.
-2. **Firewall configuration** is active and manageable.
-3. The **Chrony package** is installed. Chrony is ideal for systems with intermittent connections due to its faster synchronization and better accuracy.
+- Dağıtılmış sistemler arasında olayları koordine etme.
+- Günlük zaman damgalarıyla ilgili sorunlardan kaçınma.
+- Güvenli iletişim protokollerini sürdürme.
 
 ---
 
-### 3. **Steps to Configure an NTP Server**
+### 2. **Önkoşullar**
 
-#### **Step 1: Update Your System**
+Başlamadan önce şunlardan emin olun:
 
-Start by updating the system to ensure all packages are up to date:
+1. **Sudo ayrıcalıklarına sahip yeni bir AlmaLinux kurulumu**.
+2. **Güvenlik duvarı yapılandırması** etkin ve yönetilebilir. 3. **Chrony paketi** kurulur. Chrony, daha hızlı senkronizasyonu ve daha iyi doğruluğu nedeniyle aralıklı bağlantıları olan sistemler için idealdir.
+
+---
+
+### 3. **NTP Sunucusunu Yapılandırma Adımları**
+
+#### **1. Adım: Sisteminizi Güncelleyin**
+
+Tüm paketlerin güncel olduğundan emin olmak için sistemi güncelleyerek başlayın:
 
 ```bash
 sudo dnf update -y
 ```
 
-#### **Step 2: Install Chrony**
+#### **2. Adım: Chrony'yi Yükleyin**
 
-Install Chrony, the default NTP daemon for AlmaLinux:
+AlmaLinux için varsayılan NTP daemon'u olan Chrony'yi yükleyin:
 
 ```bash
 sudo dnf install chrony -y
 ```
 
-Verify the installation:
+Kurulumu doğrulayın:
 
 ```bash
 chronyd -v
 ```
 
-#### **Step 3: Configure Chrony**
+#### **3. Adım: Chrony'yi Yapılandırın**
 
-Edit the Chrony configuration file to set up your NTP server:
+NTP sunucunuzu kurmak için Chrony yapılandırma dosyasını düzenleyin:
 
 ```bash
 sudo nano /etc/chrony.conf
 ```
 
-Make the following changes:
+Aşağıdaki değişiklikleri yapın:
 
-- Comment out the default NTP pool by adding `#`:
+- Varsayılan NTP havuzunu yorum satırına alın `#` ekleyerek:
 
-  ```bash
-  #pool 2.almalinux.pool.ntp.org iburst
-  ```
+```bash
+#pool 2.almalinux.pool.ntp.org iburst
+```
 
-- Add custom NTP servers near your location:
+- Konumunuzun yakınındaki özel NTP sunucularını ekleyin:
 
-  ```bash
-  server 0.pool.ntp.org iburst
-  server 1.pool.ntp.org iburst
-  server 2.pool.ntp.org iburst
-  server 3.pool.ntp.org iburst
-  ```
+```bash
+server 0.pool.ntp.org iburst
+server 1.pool.ntp.org iburst
+server 2.pool.ntp.org iburst
+server 3.pool.ntp.org iburst
+```
 
-- Allow NTP requests from your local network:
+- Yerel ağınızdan gelen NTP isteklerine izin verin:
 
-  ```bash
-  allow 192.168.1.0/24
-  ```
+```bash
+allow 192.168.1.0/24
+```
 
-- (Optional) Enable the server to act as a fallback source:
+- (İsteğe bağlı) Sunucunun geri dönüş kaynağı olarak hareket etmesini etkinleştirin:
 
-  ```bash
-  local stratum 10
-  ```
+```bash
+local stratum 10
+```
 
-Save and exit the file.
+Dosyayı kaydedin ve çıkın.
 
-#### **Step 4: Start and Enable Chrony**
+#### **4. Adım: Chrony'yi Başlatın ve Etkinleştirin**
 
-Start the Chrony service and enable it to start on boot:
+Chrony hizmetini başlatın ve önyüklemede başlamasını sağlayın:
 
 ```bash
 sudo systemctl start chronyd
 sudo systemctl enable chronyd
 ```
 
-Check the service status:
+Hizmet durumunu kontrol edin:
 
 ```bash
 sudo systemctl status chronyd
 ```
 
-#### **Step 5: Adjust Firewall Settings**
+#### **5. Adım: Güvenlik Duvarı Ayarlarını Ayarlayın**
 
-To allow NTP traffic through the firewall, open port 123/UDP:
+Güvenlik duvarı üzerinden NTP trafiğine izin vermek için 123/UDP portunu açın:
 
 ```bash
 sudo firewall-cmd --permanent --add-service=ntp
 sudo firewall-cmd --reload
 ```
 
-#### **Step 6: Verify Configuration**
+#### **6. Adım: Yapılandırmayı Doğrulayın**
 
-Use Chrony commands to ensure your server is configured correctly:
+Sunucunuzun doğru şekilde yapılandırıldığından emin olmak için Chrony komutlarını kullanın:
 
-1. View the active time sources:
+1. Etkin zaman kaynaklarını görüntüleyin:
 
-   ```bash
-   chronyc sources
-   ```
+```bash
+chronyc resources
+```
 
-2. Check synchronization status:
+2. Kontrol edin senkronizasyon durumu:
 
-   ```bash
-   chronyc tracking
-   ```
-
----
-
-### 4. **Testing the NTP Server**
-
-To confirm that other systems can sync with your NTP server:
-
-1. Set up a client system with Chrony installed.
-2. Edit the client's `/etc/chrony.conf` file, pointing it to your NTP server's IP address:
-
-   ```bash
-   server <NTP-server-IP>
-   ```
-
-3. Restart the Chrony service:
-
-   ```bash
-   sudo systemctl restart chronyd
-   ```
-
-4. Verify time synchronization on the client:
-
-   ```bash
-   chronyc sources
-   ```
+```bash
+chronyc izleme
+```
 
 ---
 
-### 5. **Troubleshooting Tips**
+### 4. **NTP Sunucusunu Test Etme**
 
-1. **Chrony not starting:**  
-   Check logs for details:
+Diğer sistemlerin NTP sunucunuzla senkronize olabileceğini doğrulamak için:
 
-   ```bash
-   journalctl -xe | grep chronyd
-   ```
+1. Chrony yüklü bir istemci sistemi kurun. 2. İstemcinin `/etc/chrony.conf` dosyasını düzenleyin ve NTP sunucunuzun IP adresine yönlendirin:
 
-2. **Firewall blocking traffic:**  
-   Ensure port 123/UDP is open and correctly configured.
+```bash
+server <NTP-server-IP>
+```
 
-3. **Clients not syncing:**  
-   Verify the `allow` directive in the server’s Chrony configuration and confirm network connectivity.
+3. Chrony hizmetini yeniden başlatın:
+
+```bash
+sudo systemctl restart chronyd
+```
+
+4. İstemcide zaman senkronizasyonunu doğrulayın:
+
+```bash
+chronyc resources
+```
 
 ---
 
-### Conclusion
+### 5. **Sorun Giderme İpuçları**
 
-Configuring an NTP server on AlmaLinux using Chrony is straightforward. With these steps, you can maintain precise time synchronization across your network, ensuring smooth operations and enhanced security. Whether you’re running a small network or an enterprise environment, this setup will provide the reliable timekeeping needed for modern systems.
+1. **Chrony başlamıyor:**
+Ayrıntılar için günlükleri kontrol edin:
+
+```bash
+journalctl -xe | grep chronyd
+```
+
+2. **Güvenlik duvarı trafiği engelliyor:**
+123/UDP portunun açık ve doğru şekilde yapılandırıldığından emin olun.
+
+3. **İstemciler senkronize olmuyor:**
+Sunucunun Chrony yapılandırmasındaki `allow` yönergesini doğrulayın ve ağ bağlantısını onaylayın.
+
+---
+
+### Sonuç
+
+AlmaLinux'ta Chrony kullanarak bir NTP sunucusu yapılandırmak basittir. Bu adımlarla, ağınız genelinde hassas zaman senkronizasyonunu koruyabilir, sorunsuz işlemler ve gelişmiş güvenlik sağlayabilirsiniz. İster küçük bir ağ, ister bir kurumsal ortam çalıştırın, bu kurulum modern sistemler için gereken güvenilir zaman tutmayı sağlayacaktır.

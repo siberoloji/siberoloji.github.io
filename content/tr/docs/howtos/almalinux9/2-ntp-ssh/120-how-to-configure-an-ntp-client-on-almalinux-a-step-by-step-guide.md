@@ -1,14 +1,14 @@
 ---
-title: How to Configure an NTP Client on AlmaLinux
-description: we will walk through the process of configuring an NTP (Network Time Protocol) client on AlmaLinux, ensuring your system is in sync with a reliable time server.
+title: AlmaLinux'ta NTP İstemcisi Nasıl Yapılandırılır
+description: Bu kılavuz AlmaLinux'ta bir NTP istemcisini adım adım yapılandırma konusunda size yol gösterecektir.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: NTP Client
+linkTitle: NTP İstemcisi Nasıl Yapılandırılır
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 120
 translationKey: how-to-configure-an-ntp-client-on-almalinux-a-step-by-step-guide
@@ -16,31 +16,30 @@ keywords:
   - AlmaLinux
   - NTP Client on AlmaLinux
 featured_image: /images/almalinux.webp
-url: configure-ntp-client-almalinux
+url: /tr/configure-ntp-client-almalinux
 ---
-In modern computing environments, maintaining precise system time is critical. From security protocols to log accuracy, every aspect of your system depends on accurate synchronization. In this guide, we will walk through the process of configuring an **NTP (Network Time Protocol) client** on AlmaLinux, ensuring your system is in sync with a reliable time server.
-
----
-
-### **What is NTP?**
-
-NTP is a protocol used to synchronize the clocks of computers to a reference time source, like an atomic clock or a stratum-1 NTP server. Configuring your AlmaLinux system as an NTP client enables it to maintain accurate time by querying a specified NTP server.
+Modern bilgi işlem ortamlarında, hassas sistem zamanını korumak kritik öneme sahiptir. Güvenlik protokollerinden günlük doğruluğuna kadar, sisteminizin her yönü doğru senkronizasyona bağlıdır. Bu kılavuzda, AlmaLinux'ta bir **NTP (Ağ Zaman Protokolü) istemcisi** yapılandırma sürecini ele alacağız ve sisteminizin güvenilir bir zaman sunucusuyla senkronize olduğundan emin olacağız.
 
 ---
 
-### **Prerequisites**
+### **NTP nedir?**
 
-Before diving into the configuration process, ensure the following:
-
-1. **AlmaLinux is installed** and up-to-date.
-2. You have **sudo privileges** on the system.
-3. Your server has **network access to an NTP server**, either a public server or one in your local network.
+NTP, bilgisayarların saatlerini bir atom saati veya bir stratum-1 NTP sunucusu gibi bir referans zaman kaynağına senkronize etmek için kullanılan bir protokoldür. AlmaLinux sisteminizi bir NTP istemcisi olarak yapılandırmak, belirtilen bir NTP sunucusuna sorgu göndererek doğru zamanı korumasını sağlar.
 
 ---
 
-### **Step 1: Update Your System**
+### **Önkoşullar**
 
-Begin by updating your AlmaLinux system to ensure all installed packages are current:
+Yapılandırma sürecine dalmadan önce, aşağıdakilerden emin olun:
+
+1. **AlmaLinux kurulu** ve güncel.
+2. Sistemde **sudo ayrıcalıklarına** sahip olmalısınız. 3. Sunucunuzun **NTP sunucusuna** ağ erişimi var, bu genel bir sunucu veya yerel ağınızdaki bir sunucu olabilir.
+
+---
+
+### **1. Adım: Sisteminizi Güncelleyin**
+
+Tüm yüklü paketlerin güncel olduğundan emin olmak için AlmaLinux sisteminizi güncelleyerek başlayın:
 
 ```bash
 sudo dnf update -y
@@ -48,17 +47,17 @@ sudo dnf update -y
 
 ---
 
-### **Step 2: Install Chrony**
+### **2. Adım: Chrony'yi Yükleyin**
 
-AlmaLinux uses Chrony as its default NTP implementation. Chrony is efficient, fast, and particularly suitable for systems with intermittent connections.
+AlmaLinux, varsayılan NTP uygulaması olarak Chrony'yi kullanır. Chrony verimli, hızlıdır ve özellikle aralıklı bağlantıları olan sistemler için uygundur.
 
-To install Chrony, run:
+Chrony'yi yüklemek için şunu çalıştırın:
 
 ```bash
 sudo dnf install chrony -y
 ```
 
-Verify the installation by checking the version:
+Sürümü kontrol ederek kurulumu doğrulayın:
 
 ```bash
 chronyd -v
@@ -66,79 +65,80 @@ chronyd -v
 
 ---
 
-### **Step 3: Configure Chrony as an NTP Client**
+### **Adım 3: Chrony'yi NTP İstemcisi Olarak Yapılandırın**
 
-Chrony’s main configuration file is located at `/etc/chrony.conf`. Open this file with your preferred text editor:
+Chrony'nin ana yapılandırma dosyası `/etc/chrony.conf` konumunda bulunur. Bu dosyayı tercih ettiğiniz metin düzenleyicisiyle açın:
 
 ```bash
 sudo nano /etc/chrony.conf
 ```
 
-#### Key Configurations
+#### Önemli Yapılandırmalar
 
-1. **Specify the NTP Servers**  
-By default, Chrony includes public NTP pool servers. Replace or append your desired NTP servers:
+1. **NTP Sunucularını Belirleyin**
+Varsayılan olarak, Chrony genel NTP havuz sunucularını içerir. İstediğiniz NTP sunucularını değiştirin veya ekleyin:
 
-   ```bash
-   server 0.pool.ntp.org iburst
-   server 1.pool.ntp.org iburst
-   server 2.pool.ntp.org iburst
-   server 3.pool.ntp.org iburst
-   ```
+```bash
+server 0.pool.ntp.org iburst
+server 1.pool.ntp.org iburst
+server 2.pool.ntp.org iburst
+server 3.pool.ntp.org iburst
+```
 
-   The `iburst` option ensures faster initial synchronization.
+`iburst` seçeneği daha hızlı ilk senkronizasyon sağlar.
 
-2. **Set Time Zone (Optional)**  
-Ensure your system time zone is correct:
+2. **Saat Dilimini Ayarla (İsteğe bağlı)**
+Sistem saat diliminizin doğru olduğundan emin olun:
 
-   ```bash
-   timedatectl set-timezone <your-time-zone>
-   ```
+```bash
+timedatectl set-timezone <your-time-zone>
+```
 
-   Replace `<your-time-zone>` with your region, such as `America/New_York`.
+`<your-time-zone>` ifadesini `America/New_York` gibi bölgenizle değiştirin.
 
-3. **Optional: Add Local Server**  
-If you have an NTP server in your network, replace the pool servers with your server's IP:
+3. **İsteğe bağlı: Yerel Sunucu Ekle**
+Ağınızda bir NTP sunucunuz varsa, havuz sunucularını sunucunuzun IP'siyle değiştirin:
 
-   ```bash
-   server 192.168.1.100 iburst
-   ```
+```bash
+server 192.168.1.100 iburst
+```
 
-4. **Other Useful Parameters**  
-   - **Minimizing jitter:** Adjust poll intervals to reduce variations:
+4. **Diğer Faydalı Parametreler**
 
-     ```bash
-     maxpoll 10
-     minpoll 6
-     ```
+- **Titremeyi en aza indirme:** Varyasyonları azaltmak için anket aralıklarını ayarlayın:
 
-   - **Enabling NTP authentication** (for secure environments):
+```bash
+maxpoll 10
+minpoll 6
+```
 
-     ```bash
-     keyfile /etc/chrony.keys
-     ```
+- **NTP kimlik doğrulamasını etkinleştirme** (güvenli ortamlar için):
 
-     Configure keys for your setup.
+```bash
+keyfile /etc/chrony.keys
+```
 
-Save and exit the editor.
+Kurulumunuz için anahtarları yapılandırın.
+
+Kaydedin ve düzenleyiciden çıkın.
 
 ---
 
-### **Step 4: Start and Enable Chrony Service**
+### **4. Adım: Chrony Hizmetini Başlatın ve Etkinleştirin**
 
-Start the Chrony service to activate the configuration:
+Yapılandırmayı etkinleştirmek için Chrony hizmetini başlatın:
 
 ```bash
 sudo systemctl start chronyd
 ```
 
-Enable the service to start at boot:
+Hizmetin önyüklemede başlamasını etkinleştirin:
 
 ```bash
 sudo systemctl enable chronyd
 ```
 
-Check the service status to ensure it’s running:
+Çalıştığından emin olmak için hizmet durumunu kontrol edin:
 
 ```bash
 sudo systemctl status chronyd
@@ -146,47 +146,47 @@ sudo systemctl status chronyd
 
 ---
 
-### **Step 5: Test NTP Synchronization**
+### **5. Adım: NTP Senkronizasyonunu Test Edin**
 
-Verify that your client is correctly synchronizing with the configured NTP servers.
+İstemcinizin yapılandırılmış NTP sunucularıyla doğru şekilde senkronize olduğunu doğrulayın.
 
-1. **Check Time Sources:**
+1. **Zaman Kaynaklarını Kontrol Et:**
 
-   ```bash
-   chronyc sources
-   ```
+```bash
+chronyc kaynakları
+```
 
-   This command will display a list of NTP servers and their synchronization status:
+Bu komut, NTP sunucularının ve senkronizasyon durumlarının bir listesini görüntüler:
 
-   ```bash
-   MS Name/IP address         Stratum Poll Reach LastRx Last sample
-   ===============================================================================
-   ^* 0.pool.ntp.org               2     6    37    8   -0.543ms   +/- 1.234ms
-   ```
+```bash
+MS Adı/IP adresi Stratum Poll Reach LastRx Son örnek
+============================================================================================
+^* 0.pool.ntp.org 2 6 37 8 -0,543ms +/- 1,234ms
+```
 
-   - `^*` indicates the server is the current synchronization source.
-   - `Reach` shows the number of recent responses (value up to 377 indicates stable communication).
+- `^*` sunucunun geçerli senkronizasyon kaynağı olduğunu belirtir.
+- `Reach` son yanıtların sayısını gösterir (377'ye kadar olan değerler kararlı iletişimi belirtir).
 
-2. **Track Synchronization Progress:**
+2. **Senkronizasyon İlerlemesini İzle:**
 
-   ```bash
-   chronyc tracking
-   ```
+```bash
+chronyc tracking
+```
 
-   This provides detailed information about synchronization, including the server’s stratum, offset, and drift.
+Bu, sunucunun katmanı, ofseti ve kayması dahil olmak üzere senkronizasyon hakkında ayrıntılı bilgi sağlar.
 
-3. **Sync Time Manually:**
-   If immediate synchronization is needed:
+3. **Zamanı Manuel Olarak Senkronize Et:**
+Hemen senkronizasyon gerekiyorsa:
 
-   ```bash
-   sudo chronyc -a makestep
-   ```
+```bash
+sudo chronyc -a makestep
+```
 
 ---
 
-### **Step 6: Configure Firewall (If Applicable)**
+### **Adım 6: Güvenlik Duvarını Yapılandırın (Uygulanabilirse)**
 
-If your server runs a firewall, ensure it allows NTP traffic through port 123 (UDP):
+Sunucunuz bir güvenlik duvarı çalıştırıyorsa, 123 (UDP) portu üzerinden NTP trafiğine izin verdiğinden emin olun:
 
 ```bash
 sudo firewall-cmd --permanent --add-service=ntp
@@ -195,9 +195,9 @@ sudo firewall-cmd --reload
 
 ---
 
-### **Step 7: Automate Time Sync with Boot**
+### **Adım 7: Önyüklemeyle Zaman Senkronizasyonunu Otomatikleştirin**
 
-Ensure your AlmaLinux client synchronizes time automatically after boot. Run:
+AlmaLinux istemcinizin önyüklemeden sonra zamanı otomatik olarak senkronize ettiğinden emin olun. Çalıştır:
 
 ```bash
 sudo timedatectl set-ntp true
@@ -205,34 +205,38 @@ sudo timedatectl set-ntp true
 
 ---
 
-### **Troubleshooting Common Issues**
+### **Genel Sorunları Giderme**
 
-1. **No Time Sync:**
-   - Check the network connection to the NTP server.
-   - Verify `/etc/chrony.conf` for correct server addresses.
+1. **Zaman Senkronizasyonu Yok:**
 
-2. **Chrony Service Fails to Start:**
-   - Inspect logs for errors:
+- NTP sunucusuna olan ağ bağlantısını kontrol edin.
+- Doğru sunucu adresleri için `/etc/chrony.conf` dosyasını doğrulayın.
 
-     ```bash
-     journalctl -xe | grep chronyd
-     ```
+2. **Chrony Hizmeti Başlatılamıyor:**
 
-3. **Client Can’t Reach NTP Server:**
-   - Ensure port 123/UDP is open on the server-side firewall.
-   - Verify the client has access to the server via `ping <server-ip>`.
+- Hatalar için günlükleri inceleyin:
 
-4. **Offset Too High:**
-   - Force synchronization:
+```bash
+journalctl -xe | grep chronyd
+```
 
-     ```bash
-     sudo chronyc -a burst
-     ```
+3. **İstemci NTP Sunucusuna Ulaşamıyor:**
+
+- Sunucu tarafındaki güvenlik duvarında 123/UDP portunun açık olduğundan emin olun.
+- İstemcinin sunucuya `ping <sunucu-ip>` yoluyla erişimi olduğunu doğrulayın.
+
+4. **Ofset Çok Yüksek:**
+
+- Senkronizasyonu zorla:
+
+```bash
+sudo chronyc -a burst
+```
 
 ---
 
-### **Conclusion**
+### **Sonuç**
 
-Configuring an NTP client on AlmaLinux using Chrony ensures that your system maintains accurate time synchronization. Following this guide, you’ve installed Chrony, configured it to use reliable NTP servers, and verified its functionality. Whether you’re working in a small network or a larger infrastructure, precise timekeeping is now one less thing to worry about!
+Chrony kullanarak AlmaLinux'ta bir NTP istemcisi yapılandırmak, sisteminizin doğru zaman senkronizasyonunu korumasını sağlar. Bu kılavuzu izleyerek, Chrony'yi yüklediniz, güvenilir NTP sunucuları kullanacak şekilde yapılandırdınız ve işlevselliğini doğruladınız. İster küçük bir ağda ister daha büyük bir altyapıda çalışın, hassas zaman takibi artık endişeleneceğiniz bir şey daha az!
 
-For additional customization or troubleshooting, refer to [Chrony documentation](https://chrony.tuxfamily.org/documentation.html).
+Ek özelleştirme veya sorun giderme için [Chrony belgelerine](https://chrony.tuxfamily.org/documentation.html) bakın.

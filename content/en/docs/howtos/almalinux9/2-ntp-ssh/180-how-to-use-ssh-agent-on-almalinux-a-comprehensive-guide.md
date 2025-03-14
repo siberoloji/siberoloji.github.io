@@ -16,7 +16,7 @@ keywords:
   - AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: null
+url: how-to-use-ssh-agent-on-almalinux9
 ---
 SSH-Agent is a powerful tool that simplifies secure access to remote systems by managing your SSH keys effectively. If you're using AlmaLinux, a popular CentOS alternative with a focus on stability and enterprise readiness, setting up and using SSH-Agent can significantly enhance your workflow. In this guide, we’ll walk you through the steps to install, configure, and use SSH-Agent on AlmaLinux.
 

@@ -1,219 +1,220 @@
 ---
-title: How to Use SSH-Agent on AlmaLinux
-description: In this guide, we’ll walk you through the steps to install, configure, and use SSH-Agent on AlmaLinux.
+title: AlmaLinux'ta SSH-Agent Nasıl Kullanılır
+description: Bu kılavuz, AlmaLinux'ta SSH-Agent'ı kullanma, yapılandırma ve kullanma konusunda size yol gösterecektir.
 date: 2024-12-09
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: SSH-Agent
+linkTitle: SSH-Agent AlmaLinux'ta Nasıl Kullanılır
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 180
 translationKey: how-to-use-ssh-agent-on-almalinux9
 keywords:
   - AlmaLinux
-
+  - SSH-Agent
 featured_image: /images/almalinux.webp
-url: null
+url: /tr/how-to-use-ssh-agent-on-almalinux9
 ---
-SSH-Agent is a powerful tool that simplifies secure access to remote systems by managing your SSH keys effectively. If you're using AlmaLinux, a popular CentOS alternative with a focus on stability and enterprise readiness, setting up and using SSH-Agent can significantly enhance your workflow. In this guide, we’ll walk you through the steps to install, configure, and use SSH-Agent on AlmaLinux.
-
----
-
-#### What Is SSH-Agent?
-
-SSH-Agent is a background program that holds your private SSH keys in memory, so you don't need to repeatedly enter your passphrase when connecting to remote servers. This utility is especially beneficial for system administrators, developers, and anyone managing multiple SSH connections daily.
-
-Some key benefits include:
-
-- **Convenience**: Automates authentication without compromising security.
-- **Security**: Keeps private keys encrypted in memory rather than exposed on disk.
-- **Efficiency**: Speeds up workflows, particularly when using automation tools or managing multiple servers.
+SSH-Agent, SSH anahtarlarınızı etkili bir şekilde yöneterek uzak sistemlere güvenli erişimi kolaylaştıran güçlü bir araçtır. Kararlılık ve kurumsal hazırlığa odaklanan popüler bir CentOS alternatifi olan AlmaLinux kullanıyorsanız, SSH-Agent'ı kurmak ve kullanmak iş akışınızı önemli ölçüde iyileştirebilir. Bu kılavuzda, AlmaLinux'ta SSH-Agent'ı kurma, yapılandırma ve kullanma adımlarında size yol göstereceğiz.
 
 ---
 
-#### Step-by-Step Guide to Using SSH-Agent on AlmaLinux
+#### SSH-Agent Nedir?
 
-Below, we’ll guide you through the process of setting up and using SSH-Agent on AlmaLinux, ensuring your setup is secure and efficient.
+SSH-Agent, özel SSH anahtarlarınızı bellekte tutan bir arka plan programıdır, böylece uzak sunuculara bağlanırken parolanızı tekrar tekrar girmenize gerek kalmaz. Bu yardımcı program, sistem yöneticileri, geliştiriciler ve günlük olarak birden fazla SSH bağlantısını yöneten herkes için özellikle faydalıdır.
 
----
+Bazı önemli avantajlar şunlardır:
 
-### 1. **Install SSH and Check Dependencies**
-
-Most AlmaLinux installations come with SSH pre-installed. However, it’s good practice to verify its presence and update it if necessary.
-
-1. **Check if SSH is installed**:
-
-   ```bash
-   ssh -V
-   ```
-
-   This command should return the version of OpenSSH installed. If not, install the SSH package:
-
-   ```bash
-   sudo dnf install openssh-clients
-   ```
-
-2. **Ensure AlmaLinux is up-to-date**:
-   Regular updates ensure security and compatibility.
-
-   ```bash
-   sudo dnf update
-   ```
+- **Kolaylık**: Güvenliği tehlikeye atmadan kimlik doğrulamayı otomatikleştirir.
+- **Güvenlik**: Özel anahtarları diskte açığa çıkarmak yerine bellekte şifrelenmiş halde tutar. - **Verimlilik**: Özellikle otomasyon araçları kullanırken veya birden fazla sunucuyu yönetirken iş akışlarını hızlandırır.
 
 ---
 
-### 2. **Generate an SSH Key (If You Don’t Have One)**
+#### AlmaLinux'ta SSH-Agent'ı Kullanmaya Yönelik Adım Adım Kılavuz
 
-Before using SSH-Agent, you’ll need a private-public key pair. If you already have one, you can skip this step.
-
-1. **Create a new SSH key pair**:
-
-   ```bash
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-   ```
-
-   This command generates a 4096-bit RSA key. You can substitute `"your_email@example.com"` with your email address for identification.
-
-2. **Follow the prompts**:
-   - Specify a file to save the key (or press Enter for the default location, `~/.ssh/id_rsa`).
-   - Enter a strong passphrase when prompted.
-
-3. **Check your keys**:
-   Verify the keys are in the default directory:
-
-   ```bash
-   ls ~/.ssh
-   ```
+Aşağıda, kurulumunuzun güvenli ve verimli olduğundan emin olarak AlmaLinux'ta SSH-Agent'ı kurma ve kullanma sürecinde size rehberlik edeceğiz.
 
 ---
 
-### 3. **Start and Add Keys to SSH-Agent**
+### 1. **SSH'yi Kurun ve Bağımlılıkları Kontrol Edin**
 
-Now that your keys are ready, you can initialize SSH-Agent and load your keys.
+Çoğu AlmaLinux kurulumu SSH önceden kurulu olarak gelir. Ancak, varlığını doğrulamak ve gerekirse güncellemek iyi bir uygulamadır.
 
-1. **Start SSH-Agent**:
-   In most cases, SSH-Agent is started automatically. To manually start it:
+1. **SSH'nin kurulu olup olmadığını kontrol edin**:
 
-   ```bash
-   eval "$(ssh-agent -s)"
-   ```
+```bash
+ssh -V
+```
 
-   This command will output the process ID of the running SSH-Agent.
+Bu komut, kurulu OpenSSH sürümünü döndürmelidir. Aksi takdirde, SSH paketini yükleyin:
 
-2. **Add your private key to SSH-Agent**:
+```bash
+sudo dnf install openssh-clients
+```
 
-   ```bash
-   ssh-add ~/.ssh/id_rsa
-   ```
+2. **AlmaLinux'un güncel olduğundan emin olun**:
+Düzenli güncellemeler güvenliği ve uyumluluğu garanti eder.
 
-   Enter your passphrase when prompted. SSH-Agent will now store your decrypted private key in memory.
-
-3. **Verify keys added**:
-   Use the following command to confirm your keys are loaded:
-
-   ```bash
-   ssh-add -l
-   ```
+```bash
+sudo dnf update
+```
 
 ---
 
-### 4. **Configure Automatic SSH-Agent Startup**
+### 2. **Bir SSH Anahtarı Oluşturun (Eğer Yoksa)**
 
-To avoid manually starting SSH-Agent each time, you can configure it to launch automatically upon login.
+SSH-Agent'ı kullanmadan önce, özel-genel bir anahtar çiftine ihtiyacınız olacak. Zaten bir tane varsa, bu adımı atlayabilirsiniz.
 
-1. **Modify your shell configuration file**:
-   Depending on your shell (e.g., Bash), edit the corresponding configuration file (`~/.bashrc`, `~/.zshrc`, etc.):
+1. **Yeni bir SSH anahtar çifti oluşturun**:
 
-   ```bash
-   nano ~/.bashrc
-   ```
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
-2. **Add the following lines**:
+Bu komut, 4096 bitlik bir RSA anahtarı oluşturur. Tanımlama için `"your_email@example.com"` yerine e-posta adresinizi koyabilirsiniz.
 
-   ```bash
-   # Start SSH-Agent if not running
-   if [ -z "$SSH_AUTH_SOCK" ]; then
-       eval "$(ssh-agent -s)"
-   fi
-   ```
+2. **İstemleri izleyin**:
 
-3. **Reload the shell configuration**:
+- Anahtarı kaydetmek için bir dosya belirtin (veya varsayılan konum olan `~/.ssh/id_rsa` için Enter'a basın).
+- İstendiğinde güçlü bir parola girin.
 
-   ```bash
-   source ~/.bashrc
-   ```
+3. **Anahtarlarınızı kontrol edin**:
+Anahtarların varsayılan dizinde olduğunu doğrulayın:
 
-This setup ensures SSH-Agent is always available without manual intervention.
+```bash
+ls ~/.ssh
+```
 
 ---
 
-### 5. **Use SSH-Agent with Remote Connections**
+### 3. **SSH-Agent'a Anahtarları Başlatın ve Ekleyin**
 
-With SSH-Agent running, you can connect to remote servers seamlessly.
+Artık anahtarlarınız hazır olduğuna göre, SSH-Agent'ı başlatabilir ve anahtarlarınızı yükleyebilirsiniz.
 
-1. **Ensure your public key is added to the remote server**:
-   Copy your public key (`~/.ssh/id_rsa.pub`) to the remote server:
+1. **SSH-Agent'ı Başlatın**:
+Çoğu durumda, SSH-Agent otomatik olarak başlatılır. Manuel olarak başlatmak için:
 
-   ```bash
-   ssh-copy-id user@remote-server
-   ```
+```bash
+eval "$(ssh-agent -s)"
+```
 
-   Replace `user@remote-server` with the appropriate username and server address.
+Bu komut, çalışan SSH-Agent'ın işlem kimliğini çıktı olarak verecektir.
 
-2. **Connect to the server**:
+2. **Özel anahtarınızı SSH-Agent'a ekleyin**:
 
-   ```bash
-   ssh user@remote-server
-   ```
+```bash
+ssh-add ~/.ssh/id_rsa
+```
 
-   SSH-Agent handles the authentication using the loaded keys.
+İstendiğinde parolanızı girin. SSH-Agent artık şifresi çözülmüş özel anahtarınızı bellekte saklayacaktır.
 
----
+3. **Eklenen anahtarları doğrulayın**:
+Anahtarlarınızın yüklendiğini doğrulamak için aşağıdaki komutu kullanın:
 
-### 6. **Security Best Practices**
-
-While SSH-Agent is convenient, maintaining a secure setup is crucial.
-
-- **Use strong passphrases**: Always protect your private key with a passphrase.
-- **Set key expiration**: Use `ssh-add -t` to set a timeout for your keys:
-
-   ```bash
-   ssh-add -t 3600 ~/.ssh/id_rsa
-   ```
-
-   This example unloads the key after one hour.
-- **Limit agent forwarding**: Avoid agent forwarding (`-A` flag) unless absolutely necessary, as it can expose your keys to compromised servers.
+```bash
+ssh-add -l
+```
 
 ---
 
-#### Troubleshooting SSH-Agent on AlmaLinux
+### 4. **Otomatik SSH-Agent Başlatmasını Yapılandır**
 
-**Issue 1: SSH-Agent not running**
+SSH-Agent'ı her seferinde manuel olarak başlatmaktan kaçınmak için, oturum açıldığında otomatik olarak başlatılacak şekilde yapılandırabilirsiniz.
 
-- Ensure the agent is started with:
+1. **Kabuk yapılandırma dosyanızı değiştirin**:
+Kabuğunuza (örneğin, Bash) bağlı olarak, ilgili yapılandırma dosyasını (`~/.bashrc`, `~/.zshrc`, vb.) düzenleyin:
 
-  ```bash
-  eval "$(ssh-agent -s)"
-  ```
+```bash
+nano ~/.bashrc
+```
 
-**Issue 2: Keys not persisting after reboot**
+2. **Aşağıdaki satırları ekleyin**:
 
-- Check your `~/.bashrc` or equivalent configuration file for the correct startup commands.
+```bash
+# Çalışmıyorsa SSH-Agent'ı başlatın
+if [ -z "$SSH_AUTH_SOCK" ]; then
+eval "$(ssh-agent -s)"
+fi
+```
 
-**Issue 3: Permission denied errors**
+3. **Kabuk yapılandırmasını yeniden yükleyin**:
 
-- Ensure correct permissions for your `~/.ssh` directory:
+```bash
+source ~/.bashrc
+```
 
-  ```bash
-  chmod 700 ~/.ssh
-  chmod 600 ~/.ssh/id_rsa
-  ```
+Bu kurulum, SSH-Agent'ın manuel müdahale olmadan her zaman kullanılabilir olmasını sağlar.
 
 ---
 
-### Conclusion
+### 5. **Uzak Bağlantılarla SSH-Agent'ı Kullanın**
 
-SSH-Agent is a must-have utility for managing SSH keys efficiently, and its integration with AlmaLinux is straightforward. By following the steps in this guide, you can streamline secure connections, automate authentication, and enhance your productivity. Whether you’re managing servers or developing applications, SSH-Agent ensures a secure and hassle-free experience on AlmaLinux.
+SSH-Agent çalışırken, uzak sunuculara sorunsuz bir şekilde bağlanabilirsiniz.
+
+1. **Ortak anahtarınızın uzak sunucuya eklendiğinden emin olun**:
+Ortak anahtarınızı (`~/.ssh/id_rsa.pub`) uzak sunucuya kopyalayın:
+
+```bash
+ssh-copy-id user@remote-server
+```
+
+`user@remote-server`'ı uygun kullanıcı adı ve sunucu adresiyle değiştirin.
+
+2. **Sunucuya bağlan**:
+
+```bash
+ssh user@remote-server
+```
+
+SSH-Agent, yüklenen anahtarları kullanarak kimlik doğrulamasını gerçekleştirir.
+
+---
+
+### 6. **Güvenlik En İyi Uygulamaları**
+
+SSH-Agent kullanışlı olsa da, güvenli bir kurulumu sürdürmek çok önemlidir.
+
+- **Güçlü parolalar kullanın**: Özel anahtarınızı her zaman bir parola ile koruyun.
+- **Anahtar son kullanma tarihini ayarlayın**: Anahtarlarınız için bir zaman aşımı ayarlamak üzere `ssh-add -t` kullanın:
+
+```bash
+ssh-add -t 3600 ~/.ssh/id_rsa
+```
+
+Bu örnek, anahtarı bir saat sonra boşaltır.
+
+- **Aracı yönlendirmeyi sınırla**: Anahtarlarınızı tehlikeye atılmış sunuculara ifşa edebileceğinden, kesinlikle gerekli olmadığı sürece aracı yönlendirmeyi (`-A` bayrağı) önleyin.
+
+---
+
+#### AlmaLinux'ta SSH-Agent Sorun Giderme
+
+**Sorun 1: SSH-Agent çalışmıyor**
+
+- Ajanın şu şekilde başlatıldığından emin olun:
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+**Sorun 2: Anahtarlar yeniden başlatmadan sonra kalıcı olmuyor**
+
+- Doğru başlatma komutları için `~/.bashrc` veya eşdeğer yapılandırma dosyanızı kontrol edin.
+
+**Sorun 3: İzin reddedildi hataları**
+
+- `~/.ssh` dizininiz için doğru izinleri sağlayın:
+
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+```
+
+---
+
+### Sonuç
+
+SSH-Agent, SSH anahtarlarını verimli bir şekilde yönetmek için olmazsa olmaz bir yardımcı programdır ve AlmaLinux ile entegrasyonu basittir. Bu kılavuzdaki adımları izleyerek güvenli bağlantıları kolaylaştırabilir, kimlik doğrulamayı otomatikleştirebilir ve üretkenliğinizi artırabilirsiniz. İster sunucuları yönetiyor olun ister uygulamalar geliştiriyor olun, SSH-Agent AlmaLinux'ta güvenli ve sorunsuz bir deneyim sağlar.

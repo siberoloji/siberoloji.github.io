@@ -1,222 +1,228 @@
 ---
-title: How to SSH File Transfer from Windows to AlmaLinux
-description: This guide walks through several methods for SSH file transfer from Windows to AlmaLinux.
+title: Windows'dan AlmaLinux'a SSH Dosya Transferi Nasıl Yapılır
+description: Bu kılavuz, Windows'tan AlmaLinux'a SSH dosya aktarımı için çeşitli yöntemleri ele almaktadır.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: SSH File Transfer from Windows
+linkTitle: Windows'dan AlmaLinux'a SSH Dosya Transferi Nasıl Yapılır
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 150
 translationKey: how-to-ssh-file-transfer-from-windows-to-almalinux
 keywords:
   - AlmaLinux
-
+  - SSH
 featured_image: /images/almalinux.webp
-url: ssh-file-transfer-windows-almalinux
+url: /tr/ssh-file-transfer-windows-almalinux
 ---
-Securely transferring files between a Windows machine and an AlmaLinux server can be accomplished using SSH (Secure Shell). SSH provides an encrypted connection to ensure data integrity and security. Windows users can utilize tools like **WinSCP**, **PuTTY**, or native PowerShell commands to perform file transfers. This guide walks through several methods for SSH file transfer from Windows to AlmaLinux.
-
----
-
-### 1. Prerequisites
-
-Before initiating file transfers:
-
-1. **AlmaLinux Server:**
-   - Ensure the SSH server (`sshd`) is installed and running:
-
-     ```bash
-     sudo dnf install openssh-server -y
-     sudo systemctl start sshd
-     sudo systemctl enable sshd
-     ```
-
-   - Confirm that SSH is accessible:
-
-     ```bash
-     ssh username@server-ip
-     ```
-
-2. **Windows System:**
-   - Install a tool for SSH file transfers, such as **WinSCP** or **PuTTY** (both free).
-   - Ensure the AlmaLinux server's IP address or hostname is reachable from Windows.
-
-3. **Network Configuration:**
-   - Open port 22 (default SSH port) on the AlmaLinux server firewall:
-
-     ```bash
-     sudo firewall-cmd --permanent --add-service=ssh
-     sudo firewall-cmd --reload
-     ```
+Bir Windows makinesi ile bir AlmaLinux sunucusu arasında dosyaları güvenli bir şekilde aktarmak SSH (Güvenli Kabuk) kullanılarak gerçekleştirilebilir. SSH, veri bütünlüğünü ve güvenliğini sağlamak için şifreli bir bağlantı sağlar. Windows kullanıcıları, dosya transferlerini gerçekleştirmek için **WinSCP**, **PuTTY** veya yerel PowerShell komutları gibi araçları kullanabilir. Bu kılavuz, Windows'tan AlmaLinux'a SSH dosya transferi için çeşitli yöntemleri ele almaktadır.
 
 ---
 
-### 2. Method 1: Using WinSCP
+### 1. Önkoşullar
 
-#### Step 1: Install WinSCP
+Dosya transferlerini başlatmadan önce:
 
-1. Download **WinSCP** from the [official website](https://winscp.net/).
-2. Install it on your Windows system.
+1. **AlmaLinux Sunucusu:**
 
-#### Step 2: Connect to AlmaLinux
+- SSH sunucusunun (`sshd`) kurulu ve çalışır durumda olduğundan emin olun:
 
-1. Open WinSCP and create a new session:
-   - **File Protocol:** SFTP (or SCP).
-   - **Host Name:** AlmaLinux server's IP address or hostname.
-   - **Port Number:** 22 (default SSH port).
-   - **User Name:** Your AlmaLinux username.
-   - **Password:** Your password or SSH key (if configured).
+```bash
+sudo dnf install openssh-server -y
+sudo systemctl start sshd
+sudo systemctl enable sshd
+```
 
-2. Click **Login** to establish the connection.
+- SSH'nin erişilebilir olduğunu doğrulayın:
 
-#### Step 3: Transfer Files
+```bash
+ssh username@server-ip
+```
 
-- **Upload Files:** Drag and drop files from the left panel (Windows) to the right panel (AlmaLinux).
-- **Download Files:** Drag files from the AlmaLinux panel to your local Windows directory.
-- **Change Permissions:** Right-click a file on the server to modify permissions.
+2. **Windows Sistemi:**
 
-#### Additional Features
+- **WinSCP** veya **PuTTY** (ikisi de ücretsiz) gibi SSH dosya transferleri için bir araç yükleyin.
+- AlmaLinux sunucusunun IP adresinin veya ana bilgisayar adının Windows'tan erişilebilir olduğundan emin olun.
 
-- Synchronize directories for batch file transfers.
-- Configure saved sessions for quick access.
+3. **Ağ Yapılandırması:**
 
----
+- AlmaLinux sunucusu güvenlik duvarında 22 numaralı portu (varsayılan SSH portu) açın:
 
-### 3. Method 2: Using PuTTY (PSCP)
-
-PuTTY's SCP client (`pscp`) enables command-line file transfers.
-
-#### Step 1: Download PuTTY Tools
-
-1. Download PuTTY from the [official site](https://www.putty.org/).
-2. Ensure the **pscp.exe** file is added to your system's PATH environment variable for easy command-line access.
-
-#### Step 2: Use PSCP to Transfer Files
-
-1. Open the Windows Command Prompt or PowerShell.
-2. To copy a file from Windows to AlmaLinux:
-
-   ```bash
-   pscp C:\path\to\file.txt username@server-ip:/remote/directory/
-   ```
-
-3. To copy a file from AlmaLinux to Windows:
-
-   ```bash
-   pscp username@server-ip:/remote/directory/file.txt C:\local\path\
-   ```
-
-#### Advantages
-
-- Lightweight and fast for single-file transfers.
-- Integrates well with scripts for automation.
+```bash
+sudo firewall-cmd --permanent --add-service=ssh
+sudo firewall-cmd --reload
+```
 
 ---
 
-### 4. Method 3: Native PowerShell SCP
+### 2. Yöntem 1: WinSCP Kullanımı
 
-Windows 10 and later versions include an OpenSSH client, allowing SCP commands directly in PowerShell.
+#### 1. Adım: WinSCP'yi Yükleyin
 
-#### Step 1: Verify OpenSSH Client Installation
+1. **WinSCP'yi** [resmi web sitesinden](https://winscp.net/) indirin.
+2. Windows sisteminize yükleyin.
 
-1. Open PowerShell and run:
+#### 2. Adım: AlmaLinux'a Bağlanın
 
-   ```bash
-   ssh
-   ```
+1. WinSCP'yi açın ve yeni bir oturum oluşturun:
 
-   If SSH commands are unavailable, install the OpenSSH client:
-   - Go to **Settings > Apps > Optional Features**.
-   - Search for **OpenSSH Client** and install it.
+- **Dosya Protokolü:** SFTP (veya SCP).
+- **Ana Bilgisayar Adı:** AlmaLinux sunucusunun IP adresi veya ana bilgisayar adı.
+- **Bağlantı Noktası Numarası:** 22 (varsayılan SSH portu). - **Kullanıcı Adı:** AlmaLinux kullanıcı adınız.
+- **Şifre:** Şifreniz veya SSH anahtarınız (yapılandırılmışsa).
 
-#### Step 2: Use SCP for File Transfers
+2. Bağlantıyı kurmak için **Oturum Aç**'a tıklayın.
 
-1. To upload a file to AlmaLinux:
+#### 3. Adım: Dosyaları Aktar
 
-   ```bash
-   scp C:\path\to\file.txt username@server-ip:/remote/directory/
-   ```
+- **Dosyaları Yükle:** Dosyaları sol panelden (Windows) sağ panele (AlmaLinux) sürükleyip bırakın.
+- **Dosyaları İndir:** Dosyaları AlmaLinux panelinden yerel Windows dizininize sürükleyin.
+- **İzinleri Değiştir:** İzinleri değiştirmek için sunucudaki bir dosyaya sağ tıklayın.
 
-2. To download a file from AlmaLinux:
+#### Ek Özellikler
 
-   ```bash
-   scp username@server-ip:/remote/directory/file.txt C:\local\path\
-   ```
-
-#### Advantages
-
-- No additional software required.
-- Familiar syntax for users of Unix-based systems.
+- Toplu dosya aktarımları için dizinleri senkronize edin.
+- Hızlı erişim için kaydedilmiş oturumları yapılandırın.
 
 ---
 
-### 5. Method 4: Using FileZilla
+### 3. Yöntem 2: PuTTY (PSCP) Kullanımı
 
-**FileZilla** is a graphical SFTP client supporting SSH file transfers.
+PuTTY'nin SCP istemcisi (`pscp`) komut satırı dosya aktarımlarını etkinleştirir.
 
-### Step 1: Install FileZilla**
+#### Adım 1: PuTTY Araçlarını İndirin
 
-1. Download FileZilla from the [official website](https://filezilla-project.org/).
-2. Install it on your Windows system.
+1. PuTTY'yi [resmi siteden](https://www.putty.org/) indirin.
+2. Kolay komut satırı erişimi için **pscp.exe** dosyasının sisteminizin PATH ortam değişkenine eklendiğinden emin olun.
 
-### Step 2: Configure the Connection**
+#### Adım 2: Dosyaları Aktarmak İçin PSCP Kullanın
 
-1. Open FileZilla and go to **File > Site Manager**.
-2. Create a new site with the following details:
-   - **Protocol:** SFTP - SSH File Transfer Protocol.
-   - **Host:** AlmaLinux server's IP address.
-   - **Port:** 22.
-   - **Logon Type:** Normal or Key File.
-   - **User:** AlmaLinux username.
-   - **Password:** Password or path to your private SSH key.
+1. Windows Komut İstemi'ni veya PowerShell'i açın.
+2. Bir dosyayı Windows'tan AlmaLinux'a kopyalamak için:
 
-3. Click **Connect** to access your AlmaLinux server.
+```bash
+pscp C:\path\to\file.txt username@server-ip:/remote/directory/
+```
 
-### Step 3: Transfer Files
+3. Bir dosyayı AlmaLinux'tan Windows'a kopyalamak için:
 
-- Use the drag-and-drop interface to transfer files between Windows and AlmaLinux.
-- Monitor transfer progress in the FileZilla transfer queue.
+```bash
+pscp username@server-ip:/remote/directory/file.txt C:\local\path\
+```
 
----
+#### Avantajlar
 
-### **6. Best Practices for Secure File Transfers**
-
-1. **Use Strong Passwords:** Ensure all accounts use complex, unique passwords.
-2. **Enable SSH Key Authentication:** Replace password-based authentication with SSH keys for enhanced security.
-3. **Limit SSH Access:** Restrict SSH access to specific IP addresses.
-
-   ```bash
-   sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
-   sudo firewall-cmd --reload
-   ```
-
-4. **Change the Default SSH Port:** Reduce exposure to brute-force attacks by using a non-standard port.
+- Tek dosyalı aktarımlar için hafif ve hızlı.
+- Otomasyon için betiklerle iyi bütünleşir.
 
 ---
 
-### **7. Troubleshooting Common Issues**
+### 4. Yöntem 3: Yerel PowerShell SCP
 
-1. **Connection Timeout:**
-   - Verify network connectivity with `ping server-ip`.
-   - Check that port 22 is open on the server firewall.
+Windows 10 ve sonraki sürümler, SCP komutlarının doğrudan PowerShell'de kullanılmasına izin veren bir OpenSSH istemcisi içerir.
 
-2. **Authentication Failures:**
-   - Ensure the correct username and password are used.
-   - If using keys, confirm the key pair matches and permissions are set properly.
+#### Adım 1: OpenSSH İstemci Kurulumunu Doğrulayın
 
-3. **Transfer Interruptions:**
-   - Use `rsync` for large files to resume transfers automatically:
+1. PowerShell'i açın ve çalıştırın:
 
-     ```bash
-     rsync -avz -e ssh C:\path\to\file.txt username@server-ip:/remote/directory/
-     ```
+```bash
+ssh
+```
+
+SSH komutları kullanılamıyorsa, OpenSSH istemcisini yükleyin:
+
+- **Ayarlar > Uygulamalar > İsteğe Bağlı Özellikler**'e gidin.
+- **OpenSSH İstemcisi**'ni arayın ve yükleyin.
+
+#### Adım 2: Dosya Aktarımları için SCP Kullanın
+
+1. AlmaLinux'a bir dosya yüklemek için:
+
+```bash
+scp C:\path\to\file.txt username@server-ip:/remote/directory/
+```
+
+2. AlmaLinux'tan bir dosya indirmek için:
+
+```bash
+scp username@server-ip:/remote/directory/file.txt C:\local\path\
+```
+
+#### Avantajlar
+
+- Ek yazılım gerekmez. - Unix tabanlı sistemlerin kullanıcıları için bilindik sözdizimi.
 
 ---
 
-### **Conclusion**
+### 5. Yöntem 4: FileZilla Kullanımı
 
-Transferring files between Windows and AlmaLinux using SSH ensures secure and efficient communication. With tools like WinSCP, PuTTY, FileZilla, or native SCP commands, you can choose a method that best suits your workflow. By following the steps and best practices outlined in this guide, you’ll be able to perform secure file transfers confidently.
+**FileZilla**, SSH dosya transferlerini destekleyen grafiksel bir SFTP istemcisidir.
+
+### 1. Adım: FileZilla'yı yükleyin**
+
+1. FileZilla'yı [resmi web sitesinden](https://filezilla-project.org/) indirin.
+2. Windows sisteminize yükleyin.
+
+### 2. Adım: Bağlantıyı Yapılandırın**
+
+1. FileZilla'yı açın ve **Dosya > Site Yöneticisi**'ne gidin.
+2. Aşağıdaki ayrıntılarla yeni bir site oluşturun:
+
+- **Protokol:** SFTP - SSH Dosya Transfer Protokolü.
+- **Ana Bilgisayar:** AlmaLinux sunucusunun IP adresi.
+- **Bağlantı Noktası:** 22.
+- **Oturum Açma Türü:** Normal veya Anahtar Dosyası.
+- **Kullanıcı:** AlmaLinux kullanıcı adı. - **Parola:** Özel SSH anahtarınızın parolası veya yolu.
+
+3. AlmaLinux sunucunuza erişmek için **Bağlan**'a tıklayın.
+
+### 3. Adım: Dosyaları Aktar
+
+- Windows ve AlmaLinux arasında dosya aktarmak için sürükle ve bırak arayüzünü kullanın.
+- FileZilla aktarım kuyruğunda aktarım ilerlemesini izleyin.
+
+---
+
+### **6. Güvenli Dosya Aktarımları için En İyi Uygulamalar**
+
+1. **Güçlü Parolalar Kullanın:** Tüm hesapların karmaşık, benzersiz parolalar kullandığından emin olun.
+2. **SSH Anahtar Kimlik Doğrulamasını Etkinleştirin:** Gelişmiş güvenlik için parola tabanlı kimlik doğrulamayı SSH anahtarlarıyla değiştirin.
+3. **SSH Erişimini Sınırlayın:** SSH erişimini belirli IP adresleriyle sınırlayın.
+
+```bash
+sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
+sudo firewall-cmd --reload
+```
+
+4. **Varsayılan SSH Portunu Değiştirin:** Standart olmayan bir port kullanarak kaba kuvvet saldırılarına maruz kalmayı azaltın.
+
+---
+
+### **7. Yaygın Sorunları Giderme**
+
+1. **Bağlantı Zaman Aşımı:**
+
+- `ping server-ip` ile ağ bağlantısını doğrulayın.
+- Sunucu güvenlik duvarında 22 numaralı portun açık olduğundan emin olun.
+
+2. **Kimlik Doğrulama Hataları:**
+
+- Doğru kullanıcı adı ve parolanın kullanıldığından emin olun.
+- Anahtarlar kullanılıyorsa, anahtar çiftinin eşleştiğini ve izinlerin düzgün şekilde ayarlandığını doğrulayın.
+
+3. **Aktarım Kesintileri:**
+
+- Büyük dosyalar için aktarımları otomatik olarak sürdürmek üzere `rsync` kullanın:
+
+```bash
+rsync -avz -e ssh C:\path\to\file.txt username@server-ip:/remote/directory/
+```
+
+---
+
+### **Sonuç**
+
+SSH kullanarak Windows ve AlmaLinux arasında dosya aktarımı yapmak güvenli ve verimli iletişimi garanti eder. WinSCP, PuTTY, FileZilla veya yerel SCP komutları gibi araçlarla iş akışınıza en uygun yöntemi seçebilirsiniz. Bu kılavuzda özetlenen adımları ve en iyi uygulamaları izleyerek güvenli dosya aktarımlarını güvenle gerçekleştirebileceksiniz.

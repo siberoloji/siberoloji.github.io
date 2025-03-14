@@ -1,8 +1,8 @@
 ---
-title: How to Use SSHFS on AlmaLinux
-description: In this guide, we’ll walk you through the steps to install, configure, and use SSHFS on AlmaLinux.
+title: AlmaLinux'ta SSHFS Nasıl Kullanılır
+description: Bu kılavuzda, AlmaLinux'ta SSHFS'ı nasıl kuracağınızı, yapılandıracağınızı ve kullanacağınızı inceleyeceğiz.
 date: 2024-12-09
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
@@ -16,147 +16,146 @@ keywords:
   - AlmaLinux
   - SSHFS
 featured_image: /images/almalinux.webp
-url: sshfs-almalinux
+url: /tr/sshfs-almalinux
 ---
-Secure Shell Filesystem (SSHFS) is a powerful utility that enables users to mount and interact with remote file systems securely over an SSH connection. With SSHFS, you can treat a remote file system as if it were local, allowing seamless access to files and directories on remote servers. This functionality is particularly useful for system administrators, developers, and anyone working with distributed systems.
+Güvenli Kabuk Dosya Sistemi (SSHFS), kullanıcıların uzak dosya sistemlerini bir SSH bağlantısı üzerinden güvenli bir şekilde bağlamasını ve bunlarla etkileşim kurmasını sağlayan güçlü bir yardımcı programdır. SSHFS ile uzak bir dosya sistemini yerel bir sistemmiş gibi ele alabilir ve uzak sunuculardaki dosyalara ve dizinlere sorunsuz erişim sağlayabilirsiniz. Bu işlevsellik özellikle sistem yöneticileri, geliştiriciler ve dağıtılmış sistemlerle çalışan herkes için faydalıdır.
 
-In this guide, we’ll walk you through the steps to install, configure, and use SSHFS on AlmaLinux, a stable and secure Linux distribution built for enterprise environments.
-
----
-
-### What Is SSHFS?
-
-SSHFS is a FUSE (Filesystem in Userspace) implementation that leverages the SSH protocol to mount remote file systems. It provides a secure and convenient way to interact with files on a remote server, making it a great tool for tasks such as:
-
-- **File Management**: Simplify remote file access without needing SCP or FTP transfers.
-- **Collaboration**: Share directories across systems in real-time.
-- **Development**: Edit and test files directly on remote servers.
+Bu kılavuzda, kurumsal ortamlar için oluşturulmuş kararlı ve güvenli bir Linux dağıtımı olan AlmaLinux'ta SSHFS'yi kurma, yapılandırma ve kullanma adımlarında size yol göstereceğiz.
 
 ---
 
-### Why Use SSHFS?
+### SSHFS Nedir?
 
-SSHFS offers several advantages:
+SSHFS, uzak dosya sistemlerini bağlamak için SSH protokolünü kullanan bir FUSE (Kullanıcı Alanında Dosya Sistemi) uygulamasıdır. Uzak bir sunucudaki dosyalarla etkileşim kurmanın güvenli ve kullanışlı bir yolunu sağlar ve bu da onu şu gibi görevler için harika bir araç haline getirir:
 
-- **Ease of Use**: Minimal setup and no need for additional server-side software beyond SSH.
-- **Security**: Built on the robust encryption of SSH.
-- **Convenience**: Provides a local-like file system interface for remote resources.
-- **Portability**: Works across various Linux distributions and other operating systems.
-
----
-
-### Step-by-Step Guide to Using SSHFS on AlmaLinux
-
-#### Prerequisites
-
-Before you start:
-
-1. Ensure AlmaLinux is installed and updated:
-
-   ```bash
-   sudo dnf update
-   ```
-
-2. Have SSH access to a remote server.
-3. Install required dependencies (explained below).
+- **Dosya Yönetimi**: SCP veya FTP transferlerine ihtiyaç duymadan uzak dosya erişimini basitleştirin. 
+- **İş birliği**: Dizinleri gerçek zamanlı olarak sistemler arasında paylaşın.
+- **Geliştirme**: Dosyaları doğrudan uzak sunucularda düzenleyin ve test edin.
 
 ---
 
-### 1. **Install SSHFS on AlmaLinux**
+### Neden SSHFS Kullanmalısınız?
 
-SSHFS is part of the `fuse-sshfs` package, which is available in the default AlmaLinux repositories.
+SSHFS çeşitli avantajlar sunar:
 
-1. **Install the SSHFS package**:
-
-   ```bash
-   sudo dnf install fuse-sshfs
-   ```
-
-2. **Verify the installation**:
-   Check the installed version:
-
-   ```bash
-   sshfs --version
-   ```
-
-   This command should return the installed version, confirming SSHFS is ready for use.
+- **Kullanım Kolaylığı**: Minimum kurulum ve SSH'nin ötesinde ek sunucu tarafı yazılımına gerek yoktur.
+- **Güvenlik**: SSH'nin sağlam şifrelemesi üzerine kurulmuştur.
+- **Kolaylık**: Uzak kaynaklar için yerel benzeri bir dosya sistemi arayüzü sağlar.
+- **Taşınabilirlik**: Çeşitli Linux dağıtımlarında ve diğer işletim sistemlerinde çalışır.
 
 ---
 
-### 2. **Create a Mount Point for the Remote File System**
+### AlmaLinux'ta SSHFS Kullanmaya Yönelik Adım Adım Kılavuz
 
-A mount point is a local directory where the remote file system will appear.
+#### Önkoşullar
 
-1. **Create a directory**:
-   Choose a location for the mount point. For example:
+Başlamadan önce:
 
-   ```bash
-   mkdir ~/remote-files
-   ```
+1. AlmaLinux'un kurulu ve güncel olduğundan emin olun:
 
-   This directory will act as the access point for the remote file system.
+```bash
+sudo dnf update
+```
 
----
-
-### 3. **Mount the Remote File System**
-
-Once SSHFS is installed, you can mount the remote file system using a simple command.
-
-#### Basic Mount Command
-
-1. Use the following syntax:
-
-   ```bash
-   sshfs user@remote-server:/remote/directory ~/remote-files
-   ```
-
-   Replace:
-   - `user` with your SSH username.
-   - `remote-server` with the hostname or IP address of the server.
-   - `/remote/directory` with the path to the directory you want to mount.
-   - `~/remote-files` with your local mount point.
-
-2. **Example**:
-   If your username is `admin`, the remote server’s IP is `192.168.1.10`, and you want to mount `/var/www`, the command would be:
-
-   ```bash
-   sshfs admin@192.168.1.10:/var/www ~/remote-files
-   ```
-
-3. **Verify the mount**:
-   After running the command, list the contents of the local mount point:
-
-   ```bash
-   ls ~/remote-files
-   ```
-
-   You should see the contents of the remote directory.
+2. Uzak bir sunucuya SSH erişiminiz olsun. 3. Gerekli bağımlılıkları yükleyin (aşağıda açıklanmıştır).
 
 ---
 
-### 4. **Mount with Additional Options**
+### 1. **AlmaLinux'a SSHFS yükleyin**
 
-SSHFS supports various options to customize the behavior of the mounted file system.
+SSHFS, varsayılan AlmaLinux depolarında bulunan `fuse-sshfs` paketinin bir parçasıdır.
 
-#### Example: Mount with Specific Permissions
+1. **SSHFS paketini yükleyin**:
 
-To specify file and directory permissions, use:
+```bash
+sudo dnf install fuse-sshfs
+```
+
+2. **Kurulumu doğrulayın**:
+Yüklü sürümü kontrol edin:
+
+```bash
+sshfs --version
+```
+
+Bu komut, SSHFS'nin kullanıma hazır olduğunu doğrulayarak yüklü sürümü döndürmelidir.
+
+---
+
+### 2. **Uzak Dosya Sistemi için Bir Bağlama Noktası Oluşturun**
+
+Bağlama noktası, uzak dosya sisteminin görüneceği yerel bir dizindir.
+
+1. **Bir dizin oluşturun**:
+Bağlama noktası için bir konum seçin. Örneğin:
+
+```bash
+mkdir ~/remote-files
+```
+
+Bu dizin, uzak dosya sistemi için erişim noktası görevi görecektir.
+
+---
+
+### 3. **Uzak Dosya Sistemini Bağlayın**
+
+SSHFS yüklendikten sonra, basit bir komut kullanarak uzak dosya sistemini bağlayabilirsiniz.
+
+#### Temel Bağlama Komutu
+
+1. Aşağıdaki sözdizimini kullanın:
+
+```bash
+sshfs user@remote-server:/remote/directory ~/remote-files
+```
+
+Şunu değiştirin:
+
+- `user`'ı SSH kullanıcı adınızla.
+- `remote-server`'ı sunucunun ana bilgisayar adı veya IP adresiyle.
+- `/remote/directory`'yi bağlamak istediğiniz dizinin yoluyla. - Yerel bağlama noktanızla `~/remote-files`.
+
+2. **Örnek**:
+Kullanıcı adınız `admin` ise, uzak sunucunun IP'si `192.168.1.10` ise ve `/var/www` bağlamak istiyorsanız, komut şu şekilde olacaktır:
+
+```bash
+sshfs admin@192.168.1.10:/var/www ~/remote-files
+```
+
+3. **Bağlantıyı doğrulayın**:
+Komutu çalıştırdıktan sonra, yerel bağlama noktasının içeriğini listeleyin:
+
+```bash
+ls ~/remote-files
+```
+
+Uzak dizinin içeriğini görmelisiniz.
+
+---
+
+### 4. **Ek Seçeneklerle Bağlama**
+
+SSHFS, bağlanan dosya sisteminin davranışını özelleştirmek için çeşitli seçenekleri destekler.
+
+#### Örnek: Belirli İzinlerle Bağlama
+
+Dosya ve dizin izinlerini belirtmek için şunu kullanın:
 
 ```bash
 sshfs -o uid=$(id -u) -o gid=$(id -g) user@remote-server:/remote/directory ~/remote-files
 ```
 
-#### Example: Enable Caching
+#### Örnek: Önbelleğe Almayı Etkinleştir
 
-For better performance, enable caching with:
+Daha iyi performans için önbelleğe almayı şununla etkinleştirin:
 
 ```bash
 sshfs -o cache=yes user@remote-server:/remote/directory ~/remote-files
 ```
 
-#### Example: Use a Specific SSH Key
+#### Örnek: Belirli Bir SSH Anahtarı Kullan
 
-If your SSH connection requires a custom private key:
+SSH bağlantınız özel bir özel anahtar gerektiriyorsa:
 
 ```bash
 sshfs -o IdentityFile=/path/to/private-key user@remote-server:/remote/directory ~/remote-files
@@ -164,99 +163,97 @@ sshfs -o IdentityFile=/path/to/private-key user@remote-server:/remote/directory 
 
 ---
 
-### 5. **Unmount the File System**
+### 5. **Dosya Sistemini Ayırın**
 
-When you’re done working with the remote file system, unmount it to release the connection.
+Uzak dosya sistemiyle çalışmayı bitirdiğinizde, bağlantıyı serbest bırakmak için onu ayırın.
 
-1. **Unmount the file system**:
+1. **Dosya sistemini ayırın**:
 
-   ```bash
-   fusermount -u ~/remote-files
-   ```
+```bash
+fusermount -u ~/remote-files
+```
 
-2. **Verify unmounting**:
-   Check the mount point to ensure it’s empty:
+2. **Ayırma işlemini doğrulayın**:
+Boş olduğundan emin olmak için bağlama noktasını kontrol edin:
 
-   ```bash
-   ls ~/remote-files
-   ```
-
----
-
-### 6. **Automate Mounting with fstab**
-
-For frequent use, you can automate the mounting process by adding the configuration to `/etc/fstab`.
-
-#### Step 1: Edit the fstab File
-
-1. Open `/etc/fstab` in a text editor:
-
-   ```bash
-   sudo nano /etc/fstab
-   ```
-
-2. Add the following line:
-
-   ```bash
-   user@remote-server:/remote/directory ~/remote-files fuse.sshfs defaults 0 0
-   ```
-
-   Adjust the parameters for your setup.
-
-#### Step 2: Test the Configuration
-
-1. Unmount the file system if it’s already mounted:
-
-   ```bash
-   fusermount -u ~/remote-files
-   ```
-
-2. Re-mount using `mount`:
-
-   ```bash
-   sudo mount -a
-   ```
+```bash
+ls ~/remote-files
+```
 
 ---
 
-### 7. **Troubleshooting Common Issues**
+### 6. **fstab ile Bağlamayı Otomatikleştirin**
 
-#### Issue 1: "Permission Denied"
+Sık kullanım için, yapılandırmayı `/etc/fstab`'a ekleyerek bağlama sürecini otomatikleştirebilirsiniz.
 
-- **Cause**: SSH key authentication or password issues.
-- **Solution**: Verify your SSH credentials and server permissions. Ensure password authentication is enabled on the server (`PasswordAuthentication yes` in `/etc/ssh/sshd_config`).
+#### Adım 1: fstab Dosyasını Düzenleyin
 
-#### Issue 2: "Transport Endpoint is Not Connected"
+1. Bir metin düzenleyicide `/etc/fstab`'ı açın:
 
-- **Cause**: Network interruption or server timeout.
-- **Solution**: Unmount the file system and remount it:
+```bash
+sudo nano /etc/fstab
+```
 
-  ```bash
-  fusermount -u ~/remote-files
-  sshfs user@remote-server:/remote/directory ~/remote-files
-  ```
+2. Aşağıdaki satırı ekleyin:
 
-#### Issue 3: "SSHFS Command Not Found"
+```bash
+user@remote-server:/remote/directory ~/remote-files fuse.sshfs defaults 0 0
+```
 
-- **Cause**: SSHFS is not installed.
-- **Solution**: Reinstall SSHFS:
+Kurulumunuz için parametreleri ayarlayın.
 
-  ```bash
-  sudo dnf install fuse-sshfs
-  ```
+#### Adım 2: Yapılandırmayı Test Et
+
+1. Zaten bağlanmışsa dosya sistemini ayırın:
+
+```bash
+fusermount -u ~/remote-files
+```
+
+2. `mount` kullanarak yeniden bağlayın:
+
+```bash
+sudo mount -a
+```
 
 ---
 
-### Benefits of Using SSHFS on AlmaLinux
+### 7. **Genel Sorunları Giderme**
 
-1. **Security**: SSHFS inherits the encryption and authentication features of SSH, ensuring safe file transfers.
-2. **Ease of Access**: No additional server-side setup is required beyond SSH.
-3. **Integration**: Works seamlessly with other Linux tools and file managers.
+#### Sorun 1: "İzin Reddedildi"
+
+- **Neden**: SSH anahtar kimlik doğrulaması veya parola sorunları.
+- **Çözüm**: SSH kimlik bilgilerinizi ve sunucu izinlerinizi doğrulayın. Sunucuda parola kimlik doğrulamasının etkin olduğundan emin olun (`/etc/ssh/sshd_config` dosyasında `PasswordAuthentication yes`).
+
+#### Sorun 2: "Taşıma Uç Noktası Bağlı Değil"
+
+- **Neden**: Ağ kesintisi veya sunucu zaman aşımı. - **Çözüm**: Dosya sistemini kaldırın ve yeniden bağlayın:
+
+```bash
+fusermount -u ~/remote-files
+sshfs user@remote-server:/remote/directory ~/remote-files
+```
+
+#### Sorun 3: "SSHFS Komutu Bulunamadı"
+
+- **Neden**: SSHFS yüklü değil.
+- **Çözüm**: SSHFS'yi yeniden yükleyin:
+
+```bash
+sudo dnf install fuse-sshfs
+```
 
 ---
 
-### Conclusion
+### AlmaLinux'ta SSHFS Kullanmanın Avantajları
 
-SSHFS is an excellent tool for securely accessing and managing remote file systems on AlmaLinux. By following this guide, you can install, configure, and use SSHFS effectively for your tasks. Whether you’re managing remote servers, collaborating with teams, or streamlining your development environment, SSHFS provides a reliable and secure solution.
+1. **Güvenlik**: SSHFS, güvenli dosya transferlerini garanti ederek SSH'nin şifreleme ve kimlik doğrulama özelliklerini devralır.
+2. **Erişim Kolaylığı**: SSH'nin ötesinde ek bir sunucu tarafı kurulumu gerekmez. 3. **Entegrasyon**: Diğer Linux araçları ve dosya yöneticileriyle sorunsuz bir şekilde çalışır.
 
-If you have any tips or experiences with SSHFS, feel free to share them in the comments below. Happy mounting!
+---
+
+### Sonuç
+
+SSHFS, AlmaLinux'ta uzak dosya sistemlerine güvenli bir şekilde erişmek ve bunları yönetmek için mükemmel bir araçtır. Bu kılavuzu izleyerek, görevleriniz için SSHFS'yi etkili bir şekilde kurabilir, yapılandırabilir ve kullanabilirsiniz. Uzak sunucuları yönetiyor, ekiplerle işbirliği yapıyor veya geliştirme ortamınızı kolaylaştırıyor olun, SSHFS güvenilir ve güvenli bir çözüm sunar.
+
+SSHFS ile ilgili herhangi bir ipucunuz veya deneyiminiz varsa, bunları aşağıdaki yorumlarda paylaşmaktan çekinmeyin. 

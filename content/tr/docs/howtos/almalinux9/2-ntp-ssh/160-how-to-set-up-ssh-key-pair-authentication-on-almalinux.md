@@ -1,14 +1,14 @@
 ---
-title: How to Set Up SSH Key Pair Authentication on AlmaLinux
-description: This guide will walk you through setting up SSH key pair authentication on AlmaLinux, improving your server's security while simplifying your login process.
+title: SSH Anahtar Çifti Kimlik Doğrulaması AlmaLinux'ta Ayarlama
+description: Bu kılavuz, AlmaLinux'taki SSH sunucunuzda SSH anahtar çifti kimlik doğrulamasının nasıl ayarlanacağını gösterir.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: SSH Key Pair Authentication
+linkTitle: SSH Anahtar Çifti Kimlik Doğrulaması AlmaLinux'ta Ayarlama
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 160
 translationKey: how-to-set-up-ssh-key-pair-authentication-on-almalinux
@@ -16,205 +16,207 @@ keywords:
   - AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: set-ssh-key-pair-authentication-almalinux
+url: /tr/set-ssh-key-pair-authentication-almalinux
 ---
-Secure Shell (SSH) is an indispensable tool for secure remote server management. While password-based authentication is straightforward, it has inherent vulnerabilities. **SSH key pair authentication** provides a more secure and convenient alternative. This guide will walk you through setting up SSH key pair authentication on AlmaLinux, improving your server's security while simplifying your login process.
-
----
-
-### **1. What is SSH Key Pair Authentication?**
-
-SSH key pair authentication replaces traditional password-based login with cryptographic keys. It involves two keys:
-
-- **Public Key:** Stored on the server and shared with others.
-- **Private Key:** Kept securely on the client system. Never share this key.
-
-The client proves its identity by using the private key, and the server validates it against the stored public key. This method offers:
-
-- Stronger security compared to passwords.
-- Resistance to brute-force attacks.
-- The ability to disable password logins entirely.
+Güvenli Kabuk (SSH), güvenli uzak sunucu yönetimi için vazgeçilmez bir araçtır. Parola tabanlı kimlik doğrulama basit olsa da, içsel güvenlik açıkları vardır. **SSH anahtar çifti kimlik doğrulaması** daha güvenli ve kullanışlı bir alternatif sunar. Bu kılavuz, AlmaLinux'ta SSH anahtar çifti kimlik doğrulamasını ayarlama, sunucunuzun güvenliğini artırma ve oturum açma işleminizi basitleştirme konusunda size yol gösterecektir.
 
 ---
 
-### **2. Prerequisites**
+### **1. SSH Anahtar Çifti Kimlik Doğrulaması Nedir?**
 
-Before configuring SSH key authentication:
+SSH anahtar çifti kimlik doğrulaması, geleneksel parola tabanlı oturum açmayı kriptografik anahtarlarla değiştirir. İki anahtar içerir:
 
-1. A running AlmaLinux server with SSH enabled.
-2. Administrative access to the server (root or sudo user).
-3. SSH installed on the client system (Linux, macOS, or Windows with OpenSSH or tools like PuTTY).
+- **Genel Anahtar:** Sunucuda saklanır ve başkalarıyla paylaşılır.
+- **Özel Anahtar:** İstemci sisteminde güvenli bir şekilde saklanır. Bu anahtarı asla paylaşmayın.
+
+İstemci kimliğini özel anahtarı kullanarak kanıtlar ve sunucu bunu saklanan genel anahtara göre doğrular. Bu yöntem şunları sunar:
+
+- Parolalara kıyasla daha güçlü güvenlik.
+- Kaba kuvvet saldırılarına karşı direnç.
+- Parola oturum açma işlemlerini tamamen devre dışı bırakma yeteneği.
 
 ---
 
-### **3. Step-by-Step Guide to Setting Up SSH Key Pair Authentication**
+### **2. Önkoşullar**
 
-#### **Step 1: Generate an SSH Key Pair**
+SSH anahtar kimlik doğrulamasını yapılandırmadan önce:
 
-On your local machine, generate an SSH key pair using the following command:
+1. SSH etkinleştirilmiş çalışan bir AlmaLinux sunucusu.
+2. Sunucuya yönetici erişimi (root veya sudo kullanıcısı).
+3. İstemci sistemine yüklenmiş SSH (Linux, macOS veya OpenSSH veya PuTTY gibi araçlara sahip Windows).
+
+---
+
+### **3. SSH Anahtar Çifti Kimlik Doğrulamasını Ayarlamak İçin Adım Adım Kılavuz**
+
+#### **1. Adım: Bir SSH Anahtar Çifti Oluşturun**
+
+Yerel makinenizde, aşağıdaki komutu kullanarak bir SSH anahtar çifti oluşturun:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-- `-t rsa`: Specifies the RSA algorithm.
-- `-b 4096`: Generates a 4096-bit key for enhanced security.
-- `-C "your_email@example.com"`: Adds a comment to the key (optional).
+- `-t rsa`: RSA algoritmasını belirtir. - `-b 4096`: Gelişmiş güvenlik için 4096 bitlik bir anahtar üretir.
+- `-C "your_email@example.com"`: Anahtara bir yorum ekler (isteğe bağlı).
 
-Follow the prompts:
+İstemleri izleyin:
 
-1. Specify a file to save the key pair (default: `~/.ssh/id_rsa`).
-2. (Optional) Set a passphrase for added security. Press Enter to skip.
+1. Anahtar çiftini kaydetmek için bir dosya belirtin (varsayılan: `~/.ssh/id_rsa`).
+2. (İsteğe bağlı) Ek güvenlik için bir parola belirleyin. Atlamak için Enter'a basın.
 
-This creates two files:
+Bu iki dosya oluşturur:
 
-- **Private Key:** `~/.ssh/id_rsa` (keep this secure).
-- **Public Key:** `~/.ssh/id_rsa.pub` (shareable).
+- **Özel Anahtar:** `~/.ssh/id_rsa` (bunu güvenli tutun).
+- **Genel Anahtar:** `~/.ssh/id_rsa.pub` (paylaşılabilir).
 
-#### **Step 2: Copy the Public Key to the AlmaLinux Server**
+#### **Adım 2: Genel Anahtarı AlmaLinux Sunucusuna Kopyalayın**
 
-To transfer the public key to the server, use:
+Genel anahtarı sunucuya aktarmak için şunu kullanın:
 
 ```bash
 ssh-copy-id username@server-ip
 ```
 
-Replace:
+Şunu değiştirin:
 
-- `username` with your AlmaLinux username.
-- `server-ip` with your server's IP address.
+- `username`'i AlmaLinux kullanıcı adınızla.
+- `server-ip`'i sunucunuzun IP adresiyle.
 
-This command:
+Bu komut:
 
-1. Appends the public key to the `~/.ssh/authorized_keys` file on the server.
-2. Sets the correct permissions for the `.ssh` directory and the `authorized_keys` file.
+1. Genel anahtarı sunucudaki `~/.ssh/authorized_keys` dosyasına ekler.
+2. `.ssh` dizini ve `authorized_keys` dosyası için doğru izinleri ayarlar.
 
-Alternatively, manually copy the key:
+Alternatif olarak, anahtarı elle kopyalayın:
 
-1. Display the public key:
+1. Genel anahtarı görüntüleyin:
 
-   ```bash
-   cat ~/.ssh/id_rsa.pub
-   ```
+```bash
+cat ~/.ssh/id_rsa.pub
+```
 
-2. On the server, paste it into the `~/.ssh/authorized_keys` file:
+2. Sunucuda, `~/.ssh/authorized_keys` dosyasına yapıştırın:
 
-   ```bash
-   echo "your-public-key-content" >> ~/.ssh/authorized_keys
-   ```
+```bash
+echo "your-public-key-content" >> ~/.ssh/authorized_keys
+```
 
-#### **Step 3: Configure Permissions on the Server**
+#### **Adım 3: Sunucuda İzinleri Yapılandırın**
 
-Ensure the correct permissions for the `.ssh` directory and the `authorized_keys` file:
+`.ssh` dizini ve `authorized_keys` dosyası için doğru izinleri sağlayın:
 
 ```bash
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-#### **Step 4: Test the Key-Based Authentication**
+#### **Adım 4: Anahtar Tabanlı Kimlik Doğrulamayı Test Edin**
 
-From your local machine, connect to the server using:
+Yerel makinenizden sunucuya bağlanın kullanarak:
 
 ```bash
 ssh username@server-ip
 ```
 
-If configured correctly, you won’t be prompted for a password. If a passphrase was set during key generation, you’ll be asked to enter it.
+Doğru şekilde yapılandırılırsa, sizden parola istenmeyecektir. Anahtar oluşturma sırasında bir parola ifadesi ayarlanmışsa, bunu girmeniz istenecektir.
 
 ---
 
-### **4. Enhancing Security with SSH Keys**
+### **4. SSH Anahtarlarıyla Güvenliği Geliştirme**
 
-#### **1. Disable Password Authentication**
+#### **1. Parola Kimlik Doğrulamasını Devre Dışı Bırakın**
 
-Once key-based authentication works, disable password login to prevent brute-force attacks:
+Anahtar tabanlı kimlik doğrulama çalıştığında, kaba kuvvet saldırılarını önlemek için parola girişini devre dışı bırakın:
 
-1. Open the SSH configuration file on the server:
+1. Sunucudaki SSH yapılandırma dosyasını açın:
 
-   ```bash
-   sudo nano /etc/ssh/sshd_config
-   ```
+```bash
+sudo nano /etc/ssh/sshd_config
+```
 
-2. Find and set the following options:
+2. Aşağıdaki seçenekleri bulun ve ayarlayın:
 
-   ```bash
-   PasswordAuthentication no
-   ChallengeResponseAuthentication no
-   ```
+```bash
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+```
 
-3. Restart the SSH service:
+3. SSH hizmetini yeniden başlatın:
 
-   ```bash
-   sudo systemctl restart sshd
-   ```
+```bash
+sudo systemctl restart sshd
+```
 
-#### **2. Use SSH Agent for Key Management**
+#### **2. Anahtar Yönetimi için SSH Aracısını Kullanın**
 
-To avoid repeatedly entering your passphrase, use the SSH agent:
+Parolanızı tekrar tekrar girmekten kaçınmak için SSH aracısını kullanın:
 
 ```bash
 ssh-add ~/.ssh/id_rsa
 ```
 
-The agent stores the private key in memory, allowing seamless connections during your session.
+Aracı özel anahtarı bellekte saklar ve oturumunuz sırasında sorunsuz bağlantılara izin verir.
 
-#### **3. Restrict Access to Specific IPs**
+#### **3. Belirli IP'lere Erişimi Kısıtlayın**
 
-Restrict SSH access to trusted IPs using the firewall:
+Güvenlik duvarını kullanarak güvenilir IP'lere SSH erişimini kısıtlayın:
 
 ```bash
 sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
 sudo firewall-cmd --reload
 ```
 
-#### **4. Configure Two-Factor Authentication (Optional)**
+#### **4. İki Faktörlü Kimlik Doğrulamayı Yapılandırın (İsteğe Bağlı)**
 
-For added security, set up two-factor authentication (2FA) with SSH key-based login.
-
----
-
-### **5. Troubleshooting Common Issues**
-
-1. **Key-Based Authentication Fails:**
-   - Verify the public key is correctly added to `~/.ssh/authorized_keys`.
-   - Check permissions on the `.ssh` directory and `authorized_keys` file.
-
-2. **Connection Refused:**
-   - Ensure the SSH service is running:
-
-     ```bash
-     sudo systemctl status sshd
-     ```
-
-   - Check the firewall rules to allow SSH.
-
-3. **Passphrase Issues:**
-   - Use the SSH agent to cache the passphrase:
-
-     ```bash
-     ssh-add
-     ```
-
-4. **Debugging:**
-   Use the `-v` option for verbose output:
-
-   ```bash
-   ssh -v username@server-ip
-   ```
+Ek güvenlik için SSH anahtar tabanlı oturum açma ile iki faktörlü kimlik doğrulamayı (2FA) ayarlayın.
 
 ---
 
-### **6. Benefits of SSH Key Authentication**
+### **5. Yaygın Sorunları Giderme**
 
-1. **Enhanced Security:** Stronger than passwords and resistant to brute-force attacks.
-2. **Convenience:** Once set up, logging in is quick and seamless.
-3. **Scalability:** Ideal for managing multiple servers with centralized keys.
+1. **Anahtar Tabanlı Kimlik Doğrulama Başarısız Oluyor:**
+
+- Genel anahtarın `~/.ssh/authorized_keys` dizinine doğru şekilde eklendiğini doğrulayın.
+- `.ssh` dizini ve `authorized_keys` dosyasındaki izinleri kontrol edin.
+
+2. **Bağlantı Reddedildi:**
+
+- SSH hizmetinin çalıştığından emin olun:
+
+```bash
+sudo systemctl status sshd
+```
+
+- SSH'ye izin vermek için güvenlik duvarı kurallarını kontrol edin.
+
+3. **Parola Sorunları:**
+
+- Parolayı önbelleğe almak için SSH aracısını kullanın:
+
+```bash
+ssh-add
+```
+
+4. **Hata Ayıklama:**
+Ayrıntılı çıktı için `-v` seçeneğini kullanın:
+
+```bash
+ssh -v username@server-ip
+```
 
 ---
 
-### **Conclusion**
+### **6. SSH Anahtar Kimlik Doğrulamasının Avantajları**
 
-SSH key pair authentication is a must-have for anyone managing servers on AlmaLinux. It not only enhances security but also simplifies the login process, saving time and effort. By following this guide, you can confidently transition from password-based authentication to a more secure and efficient SSH key-based setup.
+1. **Gelişmiş Güvenlik:** Parolalardan daha güçlüdür ve kaba kuvvet saldırılarına karşı dayanıklıdır.
+2. **Kolaylık:** Kurulduktan sonra oturum açma hızlı ve sorunsuzdur.
+3. **Ölçeklenebilirlik:** Merkezi anahtarlarla birden fazla sunucuyu yönetmek için idealdir.
 
-Let me know if you need help with additional configurations or troubleshooting!
+---
+
+### **Sonuç**
+
+SSH anahtar çifti kimlik doğrulaması, AlmaLinux'ta sunucu yöneten herkes için olmazsa olmazdır. Sadece güvenliği artırmakla kalmaz, aynı zamanda oturum açma sürecini basitleştirerek zamandan ve emekten tasarruf sağlar. Bu kılavuzu izleyerek, parola tabanlı kimlik doğrulamasından daha güvenli ve verimli bir SSH anahtar tabanlı kuruluma güvenle geçiş yapabilirsiniz.
+
+Ek yapılandırmalar veya sorun giderme konusunda yardıma ihtiyacınız olursa bana bildirin!

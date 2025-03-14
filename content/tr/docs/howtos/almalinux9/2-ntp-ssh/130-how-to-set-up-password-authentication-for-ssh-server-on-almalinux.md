@@ -1,104 +1,102 @@
 ---
-title: How to Set Up Password Authentication for SSH Server on AlmaLinux
-description: This guide will show you how to set up password authentication for your SSH server on AlmaLinux.
+title: AlmaLinux'ta SSH Sunucusu için Parola Kimlik Doğrulaması Nasıl Kurulur
+description: Bu kılavuz, AlmaLinux'taki SSH sunucunuz için parola doğrulamasının nasıl ayarlanacağını gösterecektir.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: Password Authentication for SSH Server
+linkTitle: SSH Sunucusu için Parola Kimlik Doğrulaması Nasıl Kurulur
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 130
 translationKey: how-to-set-up-password-authentication-for-ssh-server-on-almalinux
 keywords:
   - AlmaLinux
   - password authentication
-
 featured_image: /images/almalinux.webp
-url: set-password-authentication-ssh-server-almalinux
+url: /tr/set-password-authentication-ssh-server-almalinux
 ---
-SSH (Secure Shell) is a foundational tool for securely accessing and managing remote servers. While public key authentication is recommended for enhanced security, **password authentication** is a straightforward and commonly used method for SSH access, especially for smaller deployments or testing environments. This guide will show you how to set up password authentication for your SSH server on AlmaLinux.
-
----
-
-### **1. What is Password Authentication in SSH?**
-
-Password authentication allows users to access an SSH server by entering a username and password. It’s simpler than key-based authentication but can be less secure if not configured properly. Strengthening your password policies and enabling other security measures can mitigate risks.
+SSH (Güvenli Kabuk), uzak sunuculara güvenli bir şekilde erişmek ve onları yönetmek için temel bir araçtır. Gelişmiş güvenlik için genel anahtar kimlik doğrulaması önerilirken, **parola kimlik doğrulaması** özellikle daha küçük dağıtımlar veya test ortamları için SSH erişimi için basit ve yaygın olarak kullanılan bir yöntemdir. Bu kılavuz, AlmaLinux'taki SSH sunucunuz için parola kimlik doğrulamasını nasıl ayarlayacağınızı gösterecektir.
 
 ---
 
-### **2. Prerequisites**
+### **1. SSH'de Parola Kimlik Doğrulaması Nedir?**
 
-Before setting up password authentication:
-
-1. Ensure **AlmaLinux** is installed and up-to-date.
-2. Have administrative access (root or a user with `sudo` privileges).
-3. Open access to your SSH server's default port (22) or the custom port being used.
+Parola kimlik doğrulaması, kullanıcıların bir kullanıcı adı ve parola girerek bir SSH sunucusuna erişmesini sağlar. Anahtar tabanlı kimlik doğrulamasından daha basittir ancak düzgün şekilde yapılandırılmazsa daha az güvenli olabilir. Parola politikalarınızı güçlendirmek ve diğer güvenlik önlemlerini etkinleştirmek riskleri azaltabilir.
 
 ---
 
-### **3. Step-by-Step Guide to Enable Password Authentication**
+### **2. Önkoşullar**
 
-#### **Step 1: Install the OpenSSH Server**
+Parola kimlik doğrulamasını ayarlamadan önce:
 
-If SSH isn’t already installed, you can install it using the package manager:
+1. **AlmaLinux**'un kurulu ve güncel olduğundan emin olun.
+2. Yönetici erişimine sahip olun (root veya `sudo` ayrıcalıklarına sahip bir kullanıcı). 3. SSH sunucunuzun varsayılan portuna (22) veya kullanılan özel porta erişimi açın.
+
+---
+
+### **3. Adım Adım Parola Kimlik Doğrulamasını Etkinleştirme Kılavuzu**
+
+#### **Adım 1: OpenSSH Sunucusunu Yükleyin**
+
+SSH henüz yüklü değilse, paket yöneticisini kullanarak yükleyebilirsiniz:
 
 ```bash
 sudo dnf install openssh-server -y
 ```
 
-Start and enable the SSH service:
+SSH hizmetini başlatın ve etkinleştirin:
 
 ```bash
 sudo systemctl start sshd
 sudo systemctl enable sshd
 ```
 
-Check the SSH service status to ensure it’s running:
+Çalıştığından emin olmak için SSH hizmetinin durumunu kontrol edin:
 
 ```bash
 sudo systemctl status sshd
 ```
 
-#### **Step 2: Configure SSH to Allow Password Authentication**
+#### **Adım 2: SSH'yi Parola Kimlik Doğrulamasına İzin Verecek Şekilde Yapılandırın**
 
-The SSH server configuration file is located at `/etc/ssh/sshd_config`. Edit this file to enable password authentication:
+SSH sunucusu yapılandırma dosyası `/etc/ssh/sshd_config` konumunda bulunur. Parola doğrulamasını etkinleştirmek için bu dosyayı düzenleyin:
 
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-Look for the following lines in the file:
+Dosyada aşağıdaki satırları arayın:
 
 ```plaintext
 #PasswordAuthentication yes
 ```
 
-Uncomment the line and ensure it reads:
+Satırın yorumunu kaldırın ve şunu yazdığından emin olun:
 
 ```plaintext
 PasswordAuthentication yes
 ```
 
-Also, ensure the `ChallengeResponseAuthentication` is set to `no` to avoid conflicts:
+Ayrıca, çakışmaları önlemek için `ChallengeResponseAuthentication` öğesinin `no` olarak ayarlandığından emin olun:
 
 ```plaintext
 ChallengeResponseAuthentication no
 ```
 
-If the `PermitRootLogin` setting is present, it’s recommended to disable root login for security reasons:
+`PermitRootLogin` ayarı mevcutsa, güvenlik nedeniyle kök oturum açmayı devre dışı bırakmanız önerilir:
 
 ```plaintext
 PermitRootLogin no
 ```
 
-Save and close the file.
+Dosyayı kaydedin ve kapatın.
 
-#### **Step 3: Restart the SSH Service**
+#### **Adım 3: SSH Hizmetini Yeniden Başlatın**
 
-After modifying the configuration file, restart the SSH service to apply the changes:
+Yapılandırma dosyasını değiştirdikten sonra, değişiklikleri uygulamak için SSH hizmetini yeniden başlatın:
 
 ```bash
 sudo systemctl restart sshd
@@ -106,54 +104,53 @@ sudo systemctl restart sshd
 
 ---
 
-### **4. Verifying Password Authentication**
+### **4. Parola Kimlik Doğrulamasını Doğrulama**
 
-#### **Step 1: Test SSH Login**
+#### **Adım 1: SSH Oturum Açmayı Test Etme**
 
-From a remote system, try logging into your server using SSH:
+Uzak bir sistemden, SSH kullanarak sunucunuza oturum açmayı deneyin:
 
 ```bash
 ssh username@server-ip
 ```
 
-When prompted, enter your password. If the configuration is correct, you should be able to log in.
+İstendiğinde parolanızı girin. Yapılandırma doğruysa, oturum açabilmeniz gerekir.
 
-#### **Step 2: Debugging Login Issues**
+#### **Adım 2: Oturum Açma Sorunlarını Ayıklama**
 
-If the login fails:
+Oturum açma başarısız olursa:
 
-1. Confirm that the username and password are correct.
-2. Check for errors in the SSH logs on the server:
+1. Kullanıcı adı ve parolanın doğru olduğunu onaylayın. 2. Sunucudaki SSH günlüklerinde hata olup olmadığını kontrol edin:
 
-   ```bash
-   sudo journalctl -u sshd
-   ```
+```bash
+sudo journalctl -u sshd
+```
 
-3. Verify the firewall settings to ensure port 22 (or your custom port) is open.
+3. 22 numaralı bağlantı noktasının (veya özel bağlantı noktanızın) açık olduğundan emin olmak için güvenlik duvarı ayarlarını doğrulayın.
 
 ---
 
-### **5. Securing Password Authentication**
+### **5. Parola Kimlik Doğrulamasını Güvence Altına Alma**
 
-While password authentication is convenient, it’s inherently less secure than key-based authentication. Follow these best practices to improve its security:
+Parola kimlik doğrulaması kullanışlı olsa da, anahtar tabanlı kimlik doğrulamasından doğası gereği daha az güvenlidir. Güvenliğini artırmak için şu en iyi uygulamaları izleyin:
 
-#### **1. Use Strong Passwords**
+#### **1. Güçlü Parolalar Kullanın**
 
-Encourage users to set strong passwords that combine letters, numbers, and special characters. Consider installing a password quality checker:
+Kullanıcıları harfleri, sayıları ve özel karakterleri birleştiren güçlü parolalar belirlemeye teşvik edin. Bir parola kalite denetleyicisi yüklemeyi düşünün:
 
 ```bash
 sudo dnf install cracklib-dicts
 ```
 
-#### **2. Limit Login Attempts**
+#### **2. Giriş Denemelerini Sınırla**
 
-Install and configure tools like **Fail2Ban** to block repeated failed login attempts:
+Tekrarlanan başarısız giriş denemelerini engellemek için **Fail2Ban** gibi araçları yükleyin ve yapılandırın:
 
 ```bash
 sudo dnf install fail2ban -y
 ```
 
-Configure a basic SSH filter in `/etc/fail2ban/jail.local`:
+`/etc/fail2ban/jail.local` dizininde temel bir SSH filtresi yapılandırın:
 
 ```plaintext
 [sshd]
@@ -162,47 +159,47 @@ maxretry = 5
 bantime = 3600
 ```
 
-Restart the Fail2Ban service:
+Fail2Ban hizmetini yeniden başlatın:
 
 ```bash
 sudo systemctl restart fail2ban
 ```
 
-#### **3. Change the Default SSH Port**
+#### **3. Varsayılan SSH Portunu Değiştirin**
 
-Using a non-standard port for SSH can reduce automated attacks:
+SSH için standart olmayan bir port kullanmak otomatik saldırıları azaltabilir:
 
-1. Edit the SSH configuration file:
+1. SSH yapılandırma dosyasını düzenleyin:
 
-   ```bash
-   sudo nano /etc/ssh/sshd_config
-   ```
+```bash
+sudo nano /etc/ssh/sshd_config
+```
 
-2. Change the port:
+2. Portu değiştirin:
 
-   ```plaintext
-   Port 2222
-   ```
+```plaintext
+Port 2222
+```
 
-3. Update the firewall to allow the new port:
+3. Güvenlik duvarını yeni porta izin verecek şekilde güncelleyin:
 
-   ```bash
-   sudo firewall-cmd --permanent --add-port=2222/tcp
-   sudo firewall-cmd --reload
-   ```
+```bash
+sudo firewall-cmd --permanent --add-port=2222/tcp
+sudo firewall-cmd --reload
+```
 
-#### **4. Allow Access Only from Specific IPs**
+#### **4. Yalnızca Belirli IP'lerden Erişime İzin Ver**
 
-Restrict SSH access to known IP ranges using firewall rules:
+Güvenlik duvarı kurallarını kullanarak bilinen IP aralıklarıyla SSH erişimini sınırlayın:
 
 ```bash
 sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
 sudo firewall-cmd --reload
 ```
 
-#### **5. Enable Two-Factor Authentication (Optional)**
+#### **5. İki Faktörlü Kimlik Doğrulamayı Etkinleştir (İsteğe Bağlı)**
 
-For added security, configure two-factor authentication (2FA) using a tool like Google Authenticator:
+Ek güvenlik için Google Authenticator gibi bir araç kullanarak iki faktörlü kimlik doğrulamayı (2FA) yapılandırın:
 
 ```bash
 sudo dnf install google-authenticator -y
@@ -210,31 +207,31 @@ sudo dnf install google-authenticator -y
 
 ---
 
-### **6. Troubleshooting Common Issues**
+### **6. Yaygın Sorunları Giderme**
 
-1. **SSH Service Not Running:**  
-   Check the service status:
+1. **SSH Hizmeti Çalışmıyor:**
+Hizmet durumunu kontrol edin:
 
-   ```bash
-   sudo systemctl status sshd
-   ```
+```bash
+sudo systemctl status sshd
+```
 
-2. **Authentication Fails:**  
-   Verify the settings in `/etc/ssh/sshd_config` and ensure there are no typos.
+2. **Kimlik Doğrulama Başarısız:**
+`/etc/ssh/sshd_config` içindeki ayarları doğrulayın ve yazım yanlışı olmadığından emin olun.
 
-3. **Firewall Blocking SSH:**  
-   Ensure the firewall allows SSH traffic:
+3. **Güvenlik Duvarı SSH'yi Engelliyor:**
+Güvenlik duvarının SSH trafiğine izin verdiğinden emin olun:
 
-   ```bash
-   sudo firewall-cmd --permanent --add-service=ssh
-   sudo firewall-cmd --reload
-   ```
+```bash
+sudo firewall-cmd --permanent --add-service=ssh
+sudo firewall-cmd --reload
+```
 
-4. **Connection Timeout:**  
-   Test network connectivity to the server using `ping` or `telnet`.
+4. **Bağlantı Zaman Aşımı:**
+`ping` veya `telnet` kullanarak sunucuya olan ağ bağlantısını test edin.
 
 ---
 
-### **Conclusion**
+### **Sonuç**
 
-Setting up password authentication for an SSH server on AlmaLinux is straightforward and provides a simple method for secure remote access. While convenient, it’s crucial to pair it with strong security measures like limiting login attempts, using strong passwords, and enabling two-factor authentication where possible. By following the steps and best practices outlined in this guide, you can confidently configure and secure your SSH server.
+AlmaLinux'ta bir SSH sunucusu için parola kimlik doğrulaması ayarlamak basittir ve güvenli uzaktan erişim için basit bir yöntem sağlar. Kullanışlı olsa da, oturum açma girişimlerini sınırlama, güçlü parolalar kullanma ve mümkün olduğunda iki faktörlü kimlik doğrulamayı etkinleştirme gibi güçlü güvenlik önlemleriyle eşleştirmek önemlidir. Bu kılavuzda özetlenen adımları ve en iyi uygulamaları izleyerek SSH sunucunuzu güvenle yapılandırabilir ve güvence altına alabilirsiniz.

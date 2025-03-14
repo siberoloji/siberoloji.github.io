@@ -1,14 +1,14 @@
 ---
-title: File Transfer with SSH on AlmaLinux
-description: This guide will walk you through how to use SSH for file transfers on AlmaLinux, detailing the setup, commands, and best practices.
+title: AlmaLinux'ta SSH ile Dosya Transferinizi Kolaylaştırın
+description: Bu kılavuz, AlmaLinux'ta dosya transferleri için SSH'nin nasıl kullanılacağını, kurulumunu, komutlarını ve en iyi uygulamaları ayrıntılı olarak açıklayacaktır.
 date: 2024-12-08
-draft: true
+draft: false
 tags:
   - AlmaLinux
 categories:
   - Linux
   - Linux How-to
-linkTitle: File Transfer with SSH
+linkTitle: SSH ile Dosya Transferi
 author: İbrahim Korucuoğlu ([@siberoloji](https://github.com/siberoloji))
 weight: 140
 translationKey: file-transfer-with-ssh-on-almalinux-a-comprehensive-guide
@@ -16,231 +16,234 @@ keywords:
   - AlmaLinux
 
 featured_image: /images/almalinux.webp
-url: file-transfer-ssh-almalinux
+url: /tr/file-transfer-ssh-almalinux
 ---
-Transferring files securely between systems is a critical task for developers, system administrators, and IT professionals. SSH (Secure Shell) provides a secure and efficient way to transfer files using protocols like SCP (Secure Copy Protocol) and SFTP (SSH File Transfer Protocol). This guide will walk you through how to use SSH for file transfers on AlmaLinux, detailing the setup, commands, and best practices.
-
----
-
-### **1. What is SSH and How Does it Facilitate File Transfer?**
-
-SSH is a cryptographic protocol that secures communication over an unsecured network. Along with its primary use for remote system access, SSH supports file transfers through:
-
-- **SCP (Secure Copy Protocol):** A straightforward way to transfer files securely between systems.
-- **SFTP (SSH File Transfer Protocol):** A more feature-rich file transfer protocol built into SSH.
-
-Both methods encrypt the data during transfer, ensuring confidentiality and integrity.
+Dosyaları sistemler arasında güvenli bir şekilde aktarmak geliştiriciler, sistem yöneticileri ve BT profesyonelleri için kritik bir görevdir. SSH (Güvenli Kabuk), SCP (Güvenli Kopyalama Protokolü) ve SFTP (SSH Dosya Aktarım Protokolü) gibi protokolleri kullanarak dosyaları aktarmak için güvenli ve etkili bir yol sağlar. Bu kılavuz, AlmaLinux'ta dosya aktarımları için SSH'nin nasıl kullanılacağını, kurulumu, komutları ve en iyi uygulamaları ayrıntılı olarak açıklayacaktır.
 
 ---
 
-### **2. Prerequisites for SSH File Transfers**
+### **1. SSH Nedir ve Dosya Aktarımını Nasıl Kolaylaştırır?**
 
-Before transferring files:
+SSH, güvenli olmayan bir ağ üzerinden iletişimi güvence altına alan bir kriptografik protokoldür. SSH, birincil olarak uzak sistem erişimi için kullanılmasının yanı sıra, dosya aktarımlarını şu şekilde destekler:
 
-1. Ensure that **OpenSSH Server** is installed and running on the remote AlmaLinux system:
+- **SCP (Güvenli Kopyalama Protokolü):** Dosyaları sistemler arasında güvenli bir şekilde aktarmanın basit bir yolu.
+- **SFTP (SSH Dosya Aktarım Protokolü):** SSH'ye yerleştirilmiş daha fazla özellik içeren bir dosya aktarım protokolü.
 
-   ```bash
-   sudo dnf install openssh-server -y
-   sudo systemctl start sshd
-   sudo systemctl enable sshd
-   ```
-
-2. The SSH client must be installed on the local system (most Linux distributions include this by default).
-3. The systems must have network connectivity and firewall access for SSH (default port: 22).
+Her iki yöntem de aktarım sırasında verileri şifreleyerek gizliliği ve bütünlüğü garanti eder.
 
 ---
 
-### **3. Using SCP for File Transfers**
+### **2. SSH Dosya Transferleri için Önkoşullar**
 
-#### **What is SCP?**
+Dosyaları transfer etmeden önce:
 
-SCP is a command-line tool that allows secure file copying between local and remote systems. It uses the SSH protocol to encrypt both the data and authentication.
-
-#### **Basic SCP Syntax**
-
-The basic structure of the SCP command is:
+1. Uzak AlmaLinux sisteminde **OpenSSH Server**'ın kurulu ve çalışır durumda olduğundan emin olun:
 
 ```bash
-scp [options] source destination
+sudo dnf install openssh-server -y
+sudo systemctl start sshd
+sudo systemctl enable sshd
 ```
 
-#### **Examples of SCP Commands**
-
-1. **Copy a File from Local to Remote:**
-
-   ```bash
-   scp file.txt username@remote-ip:/remote/path/
-   ```
-
-   - `file.txt`: The local file to transfer.
-   - `username`: SSH user on the remote system.
-   - `remote-ip`: IP address or hostname of the remote system.
-   - `/remote/path/`: Destination directory on the remote system.
-
-2. **Copy a File from Remote to Local:**
-
-   ```bash
-   scp username@remote-ip:/remote/path/file.txt /local/path/
-   ```
-
-3. **Copy a Directory Recursively:**
-   Use the `-r` flag to copy directories:
-
-   ```bash
-   scp -r /local/directory username@remote-ip:/remote/path/
-   ```
-
-4. **Using a Custom SSH Port:**
-   If the remote system uses a non-standard SSH port (e.g., 2222):
-
-   ```bash
-   scp -P 2222 file.txt username@remote-ip:/remote/path/
-   ```
+2. SSH istemcisi yerel sisteme kurulu olmalıdır (çoğu Linux dağıtımı bunu varsayılan olarak içerir).
+3. Sistemlerde SSH için ağ bağlantısı ve güvenlik duvarı erişimi olmalıdır (varsayılan bağlantı noktası: 22).
 
 ---
 
-### **4. Using SFTP for File Transfers**
+### **3. Dosya Transferleri için SCP Kullanımı**
 
-#### **What is SFTP?**
+#### **SCP Nedir?**
 
-SFTP provides a secure method to transfer files, similar to FTP, but encrypted with SSH. It allows browsing remote directories, resuming transfers, and changing file permissions.
+SCP, yerel ve uzak sistemler arasında güvenli dosya kopyalamaya izin veren bir komut satırı aracıdır. Hem verileri hem de kimlik doğrulamasını şifrelemek için SSH protokolünü kullanır.
 
-#### **Starting an SFTP Session**
+#### **Temel SCP Sözdizimi**
 
-Connect to a remote system using:
+SCP komutunun temel yapısı şöyledir:
+
+```bash
+scp [seçenekler] kaynak hedef
+```
+
+#### **SCP Komutlarına Örnekler**
+
+1. **Bir Dosyayı Yerelden Uzaktakine Kopyala:**
+
+```bash
+scp file.txt username@remote-ip:/remote/path/
+```
+
+- `file.txt`: Aktarılacak yerel dosya.
+- `username`: Uzak sistemdeki SSH kullanıcısı.
+- `remote-ip`: Uzak sistemin IP adresi veya ana bilgisayar adı.
+- `/remote/path/`: Uzak sistemdeki hedef dizin.
+
+2. **Uzaktaki Bir Dosyayı Yerel'e Kopyala:**
+
+```bash
+scp username@remote-ip:/remote/path/file.txt /local/path/
+```
+
+3. **Bir Dizini Yinelemeli Olarak Kopyala:**
+Dizinleri kopyalamak için `-r` bayrağını kullanın:
+
+```bash
+scp -r /local/directory username@remote-ip:/remote/path/
+```
+
+4. **Özel Bir SSH Bağlantı Noktası Kullanma:**
+Uzak sistem standart dışı bir SSH bağlantı noktası kullanıyorsa (örneğin, 2222):
+
+```bash
+scp -P 2222 file.txt username@remote-ip:/remote/path/
+```
+
+---
+
+### **4. Dosya Transferleri için SFTP Kullanımı**
+
+#### **SFTP Nedir?**
+
+SFTP, FTP'ye benzer ancak SSH ile şifrelenmiş güvenli bir dosya transfer yöntemi sağlar. Uzak dizinlere göz atmanıza, transferleri sürdürmenize ve dosya izinlerini değiştirmenize olanak tanır.
+
+#### **Bir SFTP Oturumu Başlatma**
+
+Uzak bir sisteme şu şekilde bağlanın:
 
 ```bash
 sftp username@remote-ip
 ```
 
-Once connected, you can use various commands within the SFTP prompt:
+Bağlandıktan sonra, SFTP isteminde çeşitli komutları kullanabilirsiniz:
 
-#### **Common SFTP Commands**
+#### **Genel SFTP Komutları**
 
-1. **List Files:**
+1. **Dosyaları Listele:**
 
-   ```bash
-   ls
-   ```
+```bash
+ls
+```
 
-2. **Navigate Directories:**
-   - Change local directory:
+2. **Dizinlerde Gezinme:**
 
-     ```bash
-     lcd /local/path/
-     ```
+- Yerel dizini değiştir:
 
-   - Change remote directory:
+```bash
+lcd /local/path/
+```
 
-     ```bash
-     cd /remote/path/
-     ```
+- Uzak dizini değiştir:
 
-3. **Upload Files:**
+```bash
+cd /remote/path/
+```
 
-   ```bash
-   put localfile.txt /remote/path/
-   ```
+3. **Dosyaları Yükle:**
 
-4. **Download Files:**
+```bash
+put localfile.txt /remote/path/
+```
 
-   ```bash
-   get /remote/path/file.txt /local/path/
-   ```
+4. **Dosyaları İndir:**
 
-5. **Download/Upload Directories:**
-   Use the `-r` flag with `get` or `put` to transfer directories.
+```bash
+get /remote/path/file.txt /local/path/
+```
 
-6. **Exit SFTP:**
+5. **Dizinleri İndir/Yükle:**
+Dizinleri aktarmak için `-r` bayrağını `get` veya `put` ile kullanın.
 
-   ```bash
-   exit
-   ```
+6. **SFTP'den Çık:**
+
+```bash
+exit
+```
 
 ---
 
-### **5. Automating File Transfers with SSH Keys**
+### **5. SSH Anahtarlarıyla Dosya Transferlerini Otomatikleştirme**
 
-For frequent file transfers, you can configure **password-less authentication** using SSH keys. This eliminates the need to enter a password for every transfer.
+Sık dosya transferleri için, SSH anahtarlarını kullanarak **şifresiz kimlik doğrulamayı** yapılandırabilirsiniz. Bu, her transfer için bir şifre girme gereksinimini ortadan kaldırır.
 
-#### **Generate an SSH Key Pair**
+#### **Bir SSH Anahtar Çifti Oluştur**
 
-On the local system, generate a key pair:
+Yerel sistemde bir anahtar çifti oluşturun:
 
 ```bash
 ssh-keygen
 ```
 
-Save the key pair to the default location (`~/.ssh/id_rsa`).
+Anahtar çiftini varsayılan konuma (`~/.ssh/id_rsa`) kaydedin.
 
-#### **Copy the Public Key to the Remote System**
+#### **Genel Anahtarı Uzak Sisteme Kopyalayın**
 
-Transfer the public key to the remote system:
+Genel anahtarı uzak sisteme aktarın:
 
 ```bash
 ssh-copy-id username@remote-ip
 ```
 
-Now, you can use SCP or SFTP without entering a password.
+Artık parola girmeden SCP veya SFTP kullanabilirsiniz.
 
 ---
 
-### **6. Securing SSH File Transfers**
+### **6. SSH Dosya Aktarımlarını Güvence Altına Alma**
 
-To ensure secure file transfers:
+Güvenli dosya aktarımlarını sağlamak için:
 
-1. **Use Strong Passwords or SSH Keys:** Passwords should be complex, and SSH keys are a preferred alternative.
-2. **Restrict SSH Access:** Limit SSH to specific IP addresses using firewall rules.
+1. **Güçlü Parolalar veya SSH Anahtarları Kullanın:** Parolalar karmaşık olmalı ve SSH anahtarları tercih edilen bir alternatiftir.
+2. **SSH Erişimini Kısıtlayın:** Güvenlik duvarı kurallarını kullanarak SSH'yi belirli IP adresleriyle sınırlayın.
 
-   ```bash
-   sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
-   sudo firewall-cmd --reload
-   ```
+```bash
+sudo firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.1.100" service name="ssh" accept' --permanent
+sudo firewall-cmd --reload
+```
 
-3. **Change the Default SSH Port:** Modify the SSH port in `/etc/ssh/sshd_config` to reduce exposure to automated attacks.
-
----
-
-### **7. Advanced SSH File Transfer Techniques**
-
-1. **Compress Files During Transfer:**
-   Use the `-C` flag with SCP to compress files during transfer:
-
-   ```bash
-   scp -C largefile.tar.gz username@remote-ip:/remote/path/
-   ```
-
-2. **Batch File Transfers with Rsync:**
-   For advanced synchronization and large file transfers, use **rsync** over SSH:
-
-   ```bash
-   rsync -avz -e "ssh -p 22" /local/path/ username@remote-ip:/remote/path/
-   ```
-
-3. **Limit Transfer Speed:**
-   Use the `-l` flag with SCP to control bandwidth:
-
-   ```bash
-   scp -l 1000 file.txt username@remote-ip:/remote/path/
-   ```
+3. **Varsayılan SSH Portunu Değiştirin:** Otomatik saldırılara maruz kalmayı azaltmak için `/etc/ssh/sshd_config` içindeki SSH portunu değiştirin.
 
 ---
 
-### **8. Troubleshooting SSH File Transfers**
+### **7. Gelişmiş SSH Dosya Aktarım Teknikleri**
 
-1. **Authentication Failures:**
-   - Verify the username and IP address.
-   - Ensure the SSH key is added using `ssh-add` if using key-based authentication.
+1. **Aktarım Sırasında Dosyaları Sıkıştırın:**
+Aktarım sırasında dosyaları sıkıştırmak için SCP ile `-C` bayrağını kullanın:
 
-2. **Connection Timeout:**
-   - Test connectivity with `ping` or `telnet`.
-   - Check the firewall settings on the remote system.
+```bash
+scp -C largefile.tar.gz username@remote-ip:/remote/path/
+```
 
-3. **Permission Issues:**
-   Ensure the user has write permissions on the destination directory.
+2. **Rsync ile Toplu Dosya Aktarımları:**
+Gelişmiş senkronizasyon ve büyük dosya aktarımları için SSH üzerinden **rsync** kullanın:
+
+```bash
+rsync -avz -e "ssh -p 22" /local/path/ username@remote-ip:/remote/path/
+```
+
+3. **Aktarım Hızını Sınırlayın:**
+Bant genişliğini kontrol etmek için SCP ile `-l` bayrağını kullanın:
+
+```bash
+scp -l 1000 file.txt username@remote-ip:/remote/path/
+```
 
 ---
 
-### **Conclusion**
+### **8. SSH Dosya Aktarımlarında Sorun Giderme**
 
-File transfers using SSH on AlmaLinux are secure, efficient, and versatile. Whether you prefer the simplicity of SCP or the advanced features of SFTP, mastering these tools can significantly streamline your workflows. By following this guide and implementing security best practices, you can confidently transfer files between systems with ease.
+1. **Kimlik Doğrulama Hataları:**
+
+- Kullanıcı adını ve IP adresini doğrulayın.
+- Anahtar tabanlı kimlik doğrulama kullanılıyorsa `ssh-add` kullanılarak SSH anahtarının eklendiğinden emin olun.
+
+2. **Bağlantı Zaman Aşımı:**
+
+- Bağlantıyı `ping` veya `telnet` ile test edin.
+- Uzak sistemdeki güvenlik duvarı ayarlarını kontrol edin.
+
+3. **İzin Sorunları:**
+Kullanıcının hedef dizinde yazma izinlerine sahip olduğundan emin olun.
+
+---
+
+### **Sonuç**
+
+AlmaLinux'ta SSH kullanarak yapılan dosya aktarımları güvenli, verimli ve çok yönlüdür. SCP'nin basitliğini veya SFTP'nin gelişmiş özelliklerini tercih ediyor olun, bu araçlarda ustalaşmak iş akışlarınızı önemli ölçüde hızlandırabilir. Bu kılavuzu izleyerek ve güvenlik en iyi uygulamalarını uygulayarak, sistemler arasında dosyaları güvenle ve kolayca aktarabilirsiniz.
